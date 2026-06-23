@@ -5,9 +5,9 @@ import type { SpatialAttributeInterpolator } from '../../../../net/minecraft/wor
 import type { LootContext } from '../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export interface EnvironmentAttributeReader extends Object{
-    getDimensionValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>): Value;
-    getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: BlockPos): Value;
-    getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: Vec3): Value;
-    getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: Vec3, biomeInterpolator: SpatialAttributeInterpolator): Value;
-    getValue<Value extends Object | number | string | boolean>(context: LootContext, attribute: EnvironmentAttribute<Value>): Value;
+    getDimensionValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>): Value;
+    getValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>, pos: BlockPos): Value;
+    getValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>, pos: Vec3): Value;
+    getValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>, pos: Vec3, biomeInterpolator: SpatialAttributeInterpolator): Value;
+    getValue<Value extends unknown>(context: LootContext, attribute: EnvironmentAttribute<Value>): Value;
 }

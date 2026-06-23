@@ -3,5 +3,5 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { RegistryOps$RegistryInfo } from '../../../net/minecraft/resources/RegistryOps$RegistryInfo.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 export interface RegistryOps$RegistryInfoLookup extends Object{
-    lookup<T extends Object | number | string | boolean>(registryKey: ResourceKey<T[]>): Optional<RegistryOps$RegistryInfo<T>>;
+    lookup<T extends unknown>(registryKey: ResourceKey<T[]>): Optional<RegistryOps$RegistryInfo<T>>;
 }

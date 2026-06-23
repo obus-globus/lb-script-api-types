@@ -20,7 +20,7 @@ import type { Dynamic } from '../../../../com/mojang/serialization/Dynamic.d.ts'
 import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class Type<A extends Object | number | string | boolean> extends Object implements App<Type$Mu, A> {
+export abstract class Type<A extends unknown> extends Object implements App<Type$Mu, A> {
     static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
     static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
     constructor()
@@ -29,7 +29,7 @@ export abstract class Type<A extends Object | number | string | boolean> extends
     all(arg0: TypeRewriteRule, arg1: boolean, arg2: boolean): RewriteResult<A, Object>;
     buildCodec(): Codec<A>;
     buildTemplate(): TypeTemplate;
-    // private capWrite<T extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: Type<Object>, arg2: T, arg3: A, arg4: View<A, B>): DataResult<T>;
+    // private capWrite<T extends unknown, B extends unknown>(arg0: DynamicOps<T>, arg1: Type<Object>, arg2: T, arg3: A, arg4: View<A, B>): DataResult<T>;
     codec(): Codec<A>;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
     equals(arg0: Object | null): boolean;
@@ -39,26 +39,26 @@ export abstract class Type<A extends Object | number | string | boolean> extends
     findField(arg0: string): OpticFinder<Object>;
     findFieldType(arg0: string): Type<Object>;
     findFieldTypeOpt(arg0: string): Optional<Type<Object>>;
-    findType<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
-    findTypeCached<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
-    findTypeInChildren<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
+    findType<FT extends unknown, FR extends unknown>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
+    findTypeCached<FT extends unknown, FR extends unknown>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
+    findTypeInChildren<FT extends unknown, FR extends unknown>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
     finder(): OpticFinder<A>;
-    getSetType<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: OpticFinder<FT>, arg1: Type<FR>): Type<Object>;
-    ifSame<B extends Object | number | string | boolean>(arg0: Typed<B>): Optional<A>;
-    ifSame<B extends Object | number | string | boolean>(arg0: Type<B>, arg1: B): Optional<A>;
-    ifSame<B extends Object | number | string | boolean>(arg0: Type<B>, arg1: RewriteResult<B, Object>): Optional<RewriteResult<A, Object>>;
+    getSetType<FT extends unknown, FR extends unknown>(arg0: OpticFinder<FT>, arg1: Type<FR>): Type<Object>;
+    ifSame<B extends unknown>(arg0: Typed<B>): Optional<A>;
+    ifSame<B extends unknown>(arg0: Type<B>, arg1: B): Optional<A>;
+    ifSame<B extends unknown>(arg0: Type<B>, arg1: RewriteResult<B, Object>): Optional<RewriteResult<A, Object>>;
     one(arg0: TypeRewriteRule): Optional<RewriteResult<A, Object>>;
     point(arg0: DynamicOps<Object>): Optional<A>;
     pointTyped(arg0: DynamicOps<Object>): Optional<Typed<A>>;
-    read<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<A, Dynamic<T>>>;
-    read<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: TypeRewriteRule, arg2: PointFreeRule, arg3: T): DataResult<Pair<Optional<Object>, T>>;
-    readAndWrite<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: Type<Object>, arg2: TypeRewriteRule, arg3: PointFreeRule, arg4: T): DataResult<T>;
-    readTyped<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<Typed<A>, T>>;
-    readTyped<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<Typed<A>, T>>;
+    read<T extends unknown>(arg0: Dynamic<T>): DataResult<Pair<A, Dynamic<T>>>;
+    read<T extends unknown>(arg0: DynamicOps<T>, arg1: TypeRewriteRule, arg2: PointFreeRule, arg3: T): DataResult<Pair<Optional<Object>, T>>;
+    readAndWrite<T extends unknown>(arg0: DynamicOps<T>, arg1: Type<Object>, arg2: TypeRewriteRule, arg3: PointFreeRule, arg4: T): DataResult<T>;
+    readTyped<T extends unknown>(arg0: Dynamic<T>): DataResult<Pair<Typed<A>, T>>;
+    readTyped<T extends unknown>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<Typed<A>, T>>;
     rewrite(arg0: TypeRewriteRule, arg1: PointFreeRule): Optional<RewriteResult<A, Object>>;
     rewriteOrNop(arg0: TypeRewriteRule): RewriteResult<A, Object>;
     template(): TypeTemplate;
     updateMu(arg0: RecursiveTypeFamily): Type<Object>;
-    write<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: A): DataResult<T>;
-    writeDynamic<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: A): DataResult<Dynamic<T>>;
+    write<T extends unknown>(arg0: DynamicOps<T>, arg1: A): DataResult<T>;
+    writeDynamic<T extends unknown>(arg0: DynamicOps<T>, arg1: A): DataResult<Dynamic<T>>;
 }

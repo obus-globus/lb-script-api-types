@@ -3,5 +3,5 @@ export class Symbol extends Object {
     constructor(symbol: string)
     symbol: string;
     toString(): string;
-    unbox<T extends Object | number | string | boolean>(value: Object | null): T;
+    unbox<T extends unknown>(value: Object | null): T;
 }

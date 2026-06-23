@@ -42,12 +42,12 @@ export class Item$Properties extends Object implements FabricItem$Properties {
     // private requiredFeatures: FeatureFlagSet;
     attributes(attributes: ItemAttributeModifiers): Item$Properties;
     axe(material: ToolMaterial, attackDamageBaseline: number, attackSpeedBaseline: number): Item$Properties;
-    component<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): Item$Properties;
+    component<T extends unknown>(type: DataComponentType<T>, value: T): Item$Properties;
     craftRemainder(craftingRemainingItem: Item): Item$Properties;
     craftRemainder(craftingRemainingItem: ItemStackTemplate): Item$Properties;
     customDamage(arg0: (param0: ItemStack, param1: number, param2: LivingEntity, param3: EquipmentSlot, param4: () => void) => number): Item$Properties;
-    delayedComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, initializer: (param0: HolderLookup$Provider) => T): Item$Properties;
-    delayedHolderComponent<T extends Object | number | string | boolean>(type: DataComponentType<Holder<T>>, valueKey: ResourceKey<T>): Item$Properties;
+    delayedComponent<T extends unknown>(type: DataComponentType<T>, initializer: (param0: HolderLookup$Provider) => T): Item$Properties;
+    delayedHolderComponent<T extends unknown>(type: DataComponentType<Holder<T>>, valueKey: ResourceKey<T>): Item$Properties;
     durability(maxDamage: number): Item$Properties;
     effectiveDescriptionId(): string;
     effectiveModel(): Identifier;

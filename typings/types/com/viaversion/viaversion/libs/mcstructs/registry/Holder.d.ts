@@ -3,7 +3,7 @@ import type { Either } from '../../../../../../com/viaversion/viaversion/libs/mc
 import type { Registry } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/registry/Registry.d.ts'
 import type { RegistryEntry } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/registry/RegistryEntry.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class Holder<T extends Object | number | string | boolean> extends Object {
+export class Holder<T extends unknown> extends Object {
     static fileCodec(paramarg0: Registry, paramarg1: Codec<Object>): Codec<Holder<Object>>;
     static fixedCodec(paramarg0: Registry): Codec<Holder<Object>>;
     constructor(arg0: T)

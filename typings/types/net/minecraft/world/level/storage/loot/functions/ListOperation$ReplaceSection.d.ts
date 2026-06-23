@@ -10,8 +10,8 @@ export class ListOperation$ReplaceSection extends Record implements ListOperatio
     static codec(parammaxSize: number): MapCodec<ListOperation>;
     // private offset: number;
     // private size: Optional<number>;
-    apply<T extends Object | number | string | boolean>(original: T[], replacement: T[]): T[];
-    apply<T extends Object | number | string | boolean>(original: T[], replacement: T[], maxSize: number): T[];
+    apply<T extends unknown>(original: T[], replacement: T[]): T[];
+    apply<T extends unknown>(original: T[], replacement: T[], maxSize: number): T[];
     equals(o: Object | null): boolean;
     hashCode(): number;
     mode(): ListOperation$Type;

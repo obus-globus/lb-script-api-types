@@ -36,7 +36,7 @@ export interface ChronoLocalDate extends Temporal, TemporalAdjuster, Object, Com
     plus(arg0: TemporalAmount): ChronoLocalDate;
     plus(arg0: number, arg1: TemporalUnit): ChronoLocalDate;
     plus(arg0: TemporalAmount): Temporal;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     toEpochDay(): number;
     until(arg0: ChronoLocalDate): ChronoPeriod;
     until(arg0: Temporal, arg1: TemporalUnit): number;

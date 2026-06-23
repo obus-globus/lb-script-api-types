@@ -1,5 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Pool<E extends Object | number | string | boolean> extends Object{
+export interface Pool<E extends unknown> extends Object{
     borrow(): E;
     borrowInto(destination: E[], count: number): void;
     clear(): number;

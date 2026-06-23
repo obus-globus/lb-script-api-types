@@ -5,7 +5,7 @@ import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { AtomicInteger } from '../../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { JsonEventLogReader } from '../../../../net/minecraft/util/eventlog/JsonEventLogReader.d.ts'
-export class JsonEventLog<T extends Object | number | string | boolean> extends Object implements Closeable {
+export class JsonEventLog<T extends unknown> extends Object implements Closeable {
     static open(paramcodec: Codec<Object>, parampath: Path[][]): JsonEventLog<Object>;
     constructor(codec: Codec<T>, channel: FileChannel)
     // private channel: FileChannel;

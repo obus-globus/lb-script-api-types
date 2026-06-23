@@ -26,7 +26,7 @@ export interface LongStream extends BaseStream<number, LongStream>, Object {
     average(): OptionalDouble;
     boxed(): Stream<number>;
     close(): void;
-    collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: number) => void, arg2: (param0: R, param1: R) => void): R;
+    collect<R extends unknown>(arg0: () => R, arg1: (param0: R, param1: number) => void, arg2: (param0: R, param1: R) => void): R;
     count(): number;
     distinct(): LongStream;
     dropWhile(arg0: (param0: number) => boolean): LongStream;
@@ -42,7 +42,7 @@ export interface LongStream extends BaseStream<number, LongStream>, Object {
     mapMulti(arg0: (param0: number, param1: (param0: number) => void) => void): LongStream;
     mapToDouble(arg0: (param0: number) => number): DoubleStream;
     mapToInt(arg0: (param0: number) => number): IntStream;
-    mapToObj<U extends Object | number | string | boolean>(arg0: (param0: number) => U): Stream<U>;
+    mapToObj<U extends unknown>(arg0: (param0: number) => U): Stream<U>;
     max(): OptionalLong;
     min(): OptionalLong;
     noneMatch(arg0: (param0: number) => boolean): boolean;

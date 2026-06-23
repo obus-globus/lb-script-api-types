@@ -4,9 +4,9 @@ import type { Suggestions } from '../../../../com/mojang/brigadier/suggestion/Su
 import type { SuggestionsBuilder } from '../../../../com/mojang/brigadier/suggestion/SuggestionsBuilder.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface ArgumentType<T extends Object | number | string | boolean> extends Object{
+export interface ArgumentType<T extends unknown> extends Object{
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
     parse(arg0: StringReader): T;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): T;
 }

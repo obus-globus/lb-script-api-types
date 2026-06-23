@@ -7,7 +7,7 @@ import type { Flow } from '../../../kotlinx/coroutines/flow/Flow.d.ts'
 import type { FlowCollector } from '../../../kotlinx/coroutines/flow/FlowCollector.d.ts'
 import type { SharedFlow } from '../../../kotlinx/coroutines/flow/SharedFlow.d.ts'
 import type { FusibleFlow } from '../../../kotlinx/coroutines/flow/internal/FusibleFlow.d.ts'
-export class ReadonlySharedFlow<T extends Object | number | string | boolean> extends Object implements CancellableFlow<T>, SharedFlow<T>, FusibleFlow<T> {
+export class ReadonlySharedFlow<T extends unknown> extends Object implements CancellableFlow<T>, SharedFlow<T>, FusibleFlow<T> {
     constructor(flow: SharedFlow<T>, job: Job | null)
     // private job: Job | null;
     readonly replayCache: T[];

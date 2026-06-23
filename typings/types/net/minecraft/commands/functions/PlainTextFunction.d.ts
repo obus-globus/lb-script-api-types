@@ -10,7 +10,7 @@ import type { CommandFunction } from '../../../../net/minecraft/commands/functio
 import type { InstantiatedFunction } from '../../../../net/minecraft/commands/functions/InstantiatedFunction.d.ts'
 import type { CompoundTag } from '../../../../net/minecraft/nbt/CompoundTag.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
-export class PlainTextFunction<T extends Object | number | string | boolean> extends Record implements CommandFunction<T>, InstantiatedFunction<T> {
+export class PlainTextFunction<T extends unknown> extends Record implements CommandFunction<T>, InstantiatedFunction<T> {
     static checkCommandLineLength(paramline: CharSequence): void;
     static fromLines(paramid: Identifier, paramdispatcher: CommandDispatcher<Object>, paramcompilationContext: Object | null, paramlines: string[]): CommandFunction<Object>;
     static parseCommand(paramdispatcher: CommandDispatcher<Object>, paramcompilationContext: Object | null, paraminput: StringReader): (param0: Object | null, param1: ExecutionContext<Object>, param2: Frame) => void;

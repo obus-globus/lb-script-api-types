@@ -7,8 +7,8 @@ import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { DataComponentType } from '../../../../../net/minecraft/core/component/DataComponentType.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 export interface ItemParser$Visitor extends Object {
-    visitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): void;
+    visitComponent<T extends unknown>(type: DataComponentType<T>, value: T): void;
     visitItem(item: Holder<Item>): void;
-    visitRemovedComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>): void;
+    visitRemovedComponent<T extends unknown>(type: DataComponentType<T>): void;
     visitSuggestions(suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>): void;
 }

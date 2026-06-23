@@ -3,7 +3,7 @@ import type { PolyglotInstrument } from '../../../../com/oracle/truffle/polyglot
 import type { PolyglotLocals$AbstractContextLocal } from '../../../../com/oracle/truffle/polyglot/PolyglotLocals$AbstractContextLocal.d.ts'
 import type { PolyglotLocals$LocalLocation } from '../../../../com/oracle/truffle/polyglot/PolyglotLocals$LocalLocation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class PolyglotLocals$InstrumentContextLocal<T extends Object | number | string | boolean> extends PolyglotLocals$AbstractContextLocal<T> {
+export class PolyglotLocals$InstrumentContextLocal<T extends unknown> extends PolyglotLocals$AbstractContextLocal<T> {
     constructor(factory: Object)
     // private factory: Object;
     // private instrument: PolyglotInstrument;

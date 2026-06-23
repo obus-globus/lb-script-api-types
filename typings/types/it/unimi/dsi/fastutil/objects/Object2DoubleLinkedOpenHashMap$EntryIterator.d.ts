@@ -8,10 +8,10 @@ export class Object2DoubleLinkedOpenHashMap$EntryIterator extends Object2DoubleL
     constructor(null_: Object2DoubleLinkedOpenHashMap$EntryIterator)
     constructor(null_: Object2DoubleLinkedOpenHashMap$EntryIterator)
     // private entry: Object2DoubleLinkedOpenHashMap$MapEntry;
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Object2DoubleMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: Object2DoubleMap$Entry<K>): void;
-    next<K extends Object | number | string | boolean>(): Object2DoubleLinkedOpenHashMap$MapEntry;
-    previous<K extends Object | number | string | boolean>(): Object2DoubleLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends unknown>(arg0: (param0: Object2DoubleMap$Entry<K>) => void, arg1: number): void;
+    add<K extends unknown>(arg0: Object2DoubleMap$Entry<K>): void;
+    next<K extends unknown>(): Object2DoubleLinkedOpenHashMap$MapEntry;
+    previous<K extends unknown>(): Object2DoubleLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: Object2DoubleMap$Entry<K>): void;
+    set<K extends unknown>(arg0: Object2DoubleMap$Entry<K>): void;
 }

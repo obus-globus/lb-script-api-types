@@ -8,9 +8,9 @@ import type { TypeHandle } from '../../../../../org/spongepowered/tools/obfuscat
 export interface IObfuscationDataProvider extends Object{
     getObfClass(arg0: string): ObfuscationType[];
     getObfClass(arg0: TypeHandle): ObfuscationType[];
-    getObfEntry<T extends Object | number | string | boolean>(arg0: ITargetSelectorRemappable): ObfuscationType[];
-    getObfEntry<T extends Object | number | string | boolean>(arg0: IMapping<T>): ObfuscationType[];
-    getObfEntryRecursive<T extends Object | number | string | boolean>(arg0: ITargetSelectorRemappable): ObfuscationType[];
+    getObfEntry<T extends unknown>(arg0: ITargetSelectorRemappable): ObfuscationType[];
+    getObfEntry<T extends unknown>(arg0: IMapping<T>): ObfuscationType[];
+    getObfEntryRecursive<T extends unknown>(arg0: ITargetSelectorRemappable): ObfuscationType[];
     getObfField(arg0: ITargetSelectorRemappable): ObfuscationType[];
     getObfField(arg0: MappingField): ObfuscationType[];
     getObfFieldRecursive(arg0: ITargetSelectorRemappable): ObfuscationType[];

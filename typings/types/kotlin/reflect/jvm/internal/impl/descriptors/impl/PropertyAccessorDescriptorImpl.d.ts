@@ -40,7 +40,7 @@ export abstract class PropertyAccessorDescriptorImpl extends DeclarationDescript
     getOverriddenDescriptors(arg0: boolean): PropertyAccessorDescriptor[];
     getReturnType(): KotlinType;
     getTypeParameters(): TypeParameterDescriptor[];
-    getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>): V;
     getVisibility(): DescriptorVisibility;
     hasSynthesizedParameterNames(): boolean;
     isActual(): boolean;

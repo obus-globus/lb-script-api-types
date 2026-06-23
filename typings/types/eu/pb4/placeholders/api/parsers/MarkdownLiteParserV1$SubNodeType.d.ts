@@ -1,7 +1,7 @@
 import type { TextNode } from '../../../../../eu/pb4/placeholders/api/node/TextNode.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class MarkdownLiteParserV1$SubNodeType<T extends Object | number | string | boolean> extends Record {
+export class MarkdownLiteParserV1$SubNodeType<T extends unknown> extends Record {
     static BACK_TICK: MarkdownLiteParserV1$SubNodeType<string>;
     static BRACKET_CLOSE: MarkdownLiteParserV1$SubNodeType<string>;
     static BRACKET_OPEN: MarkdownLiteParserV1$SubNodeType<string>;

@@ -2,7 +2,7 @@ import type { StructuredData } from '../../../../../../com/viaversion/viaversion
 import type { StructuredDataKey } from '../../../../../../com/viaversion/viaversion/api/minecraft/data/StructuredDataKey.d.ts'
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class FilledStructuredData<T extends Object | number | string | boolean> extends Object implements StructuredData<T> {
+export class FilledStructuredData<T extends unknown> extends Object implements StructuredData<T> {
     static empty(paramarg0: StructuredDataKey<Object>, paramarg1: number): StructuredData<Object>;
     static of(paramarg0: StructuredDataKey<Object>, paramarg1: Object | null, paramarg2: number): StructuredData<Object>;
     constructor(arg0: StructuredDataKey<T>, arg1: T, arg2: number)

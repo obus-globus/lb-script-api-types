@@ -14,12 +14,12 @@ export class Product extends Record implements TypeTemplate {
     // private f: TypeTemplate;
     // private g: TypeTemplate;
     apply(arg0: TypeFamily): TypeFamily;
-    applyO<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
-    // private cap<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: FamilyOptic<A, B>, arg1: FamilyOptic<A, B>, arg2: number): TypedOptic<Object, Object, A, B>;
-    // private cap<L extends Object | number | string | boolean, R extends Object | number | string | boolean>(arg0: Type<Object>, arg1: RewriteResult<L, Object>, arg2: RewriteResult<R, Object>): RewriteResult<Object, Object>;
+    applyO<A extends unknown, B extends unknown>(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
+    // private cap<A extends unknown, B extends unknown>(arg0: FamilyOptic<A, B>, arg1: FamilyOptic<A, B>, arg2: number): TypedOptic<Object, Object, A, B>;
+    // private cap<L extends unknown, R extends unknown>(arg0: Type<Object>, arg1: RewriteResult<L, Object>, arg2: RewriteResult<R, Object>): RewriteResult<Object, Object>;
     equals(arg0: Object | null): boolean;
     f(): TypeTemplate;
-    findFieldOrType<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: number, arg1: string, arg2: Type<FT>, arg3: Type<FR>): Either<TypeTemplate, Type$FieldNotFoundException>;
+    findFieldOrType<FT extends unknown, FR extends unknown>(arg0: number, arg1: string, arg2: Type<FT>, arg3: Type<FR>): Either<TypeTemplate, Type$FieldNotFoundException>;
     g(): TypeTemplate;
     hashCode(): number;
     hmap(arg0: TypeFamily, arg1: (param0: number) => RewriteResult<Object, Object>): (param0: number) => RewriteResult<Object, Object>;

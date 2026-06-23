@@ -5,7 +5,7 @@ import type { Brain } from '../../../../../../../net/minecraft/world/entity/ai/B
 import type { MemoryAccessor } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor.d.ts'
 import type { MemoryModuleType } from '../../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 import type { MemoryStatus } from '../../../../../../../net/minecraft/world/entity/ai/memory/MemoryStatus.d.ts'
-export interface MemoryCondition<F extends K1, Value extends Object | number | string | boolean> extends Object{
+export interface MemoryCondition<F extends K1, Value extends unknown> extends Object{
     condition(): MemoryStatus;
     createAccessor(brain: Brain<any>, value: Optional<Value>): MemoryAccessor<F, Value>;
     memory(): MemoryModuleType<Value>;

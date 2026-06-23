@@ -5,7 +5,7 @@ import type { AtomicInteger } from '../../../../java/util/concurrent/atomic/Atom
 import type { AtomicReferenceArray } from '../../../../java/util/concurrent/atomic/AtomicReferenceArray.d.ts'
 import type { ReentrantLock } from '../../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class MapMakerInternalMap$Segment<K extends Object | number | string | boolean, V extends Object | number | string | boolean, E extends MapMakerInternalMap$InternalEntry<K, V, E>, S extends MapMakerInternalMap$Segment<K, V, E, S>> extends ReentrantLock {
+export abstract class MapMakerInternalMap$Segment<K extends unknown, V extends unknown, E extends MapMakerInternalMap$InternalEntry<K, V, E>, S extends MapMakerInternalMap$Segment<K, V, E, S>> extends ReentrantLock {
     constructor(map: Map<K, V>, initialCapacity: number)
     // private count: number;
     // private map: Map<K, V>;
@@ -15,7 +15,7 @@ export abstract class MapMakerInternalMap$Segment<K extends Object | number | st
     // private threshold: number;
     castForTesting(entry: MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, any>>): E;
     clear(): void;
-    clearReferenceQueue<T extends Object | number | string | boolean>(referenceQueue: ReferenceQueue<T>): void;
+    clearReferenceQueue<T extends unknown>(referenceQueue: ReferenceQueue<T>): void;
     clearValueForTesting(key: K, hash: number, valueReference: MapMakerInternalMap$WeakValueReference<K, V, MapMakerInternalMap$InternalEntry<K, V, MapMakerInternalMap$InternalEntry<Object, Object, any>>>): boolean;
     containsKey(key: Object, hash: number): boolean;
     containsValue(value: Object): boolean;

@@ -9,7 +9,7 @@ import type { TranslatorFactory } from '../../../../ai/djl/translate/TranslatorF
 import type { Progress } from '../../../../ai/djl/util/Progress.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Criteria<I extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Object {
+export class Criteria<I extends unknown, O extends unknown> extends Object {
     static builder(): Criteria$Builder<Object, Object>;
     constructor(arg0: Criteria$Builder<I, O>)
     readonly application: Application;

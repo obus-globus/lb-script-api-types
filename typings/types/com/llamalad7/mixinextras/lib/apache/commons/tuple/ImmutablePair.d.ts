@@ -1,6 +1,6 @@
 import type { Pair } from '../../../../../../../com/llamalad7/mixinextras/lib/apache/commons/tuple/Pair.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class ImmutablePair<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Pair<L, R> {
+export class ImmutablePair<L extends unknown, R extends unknown> extends Pair<L, R> {
     static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
     constructor(arg0: L, arg1: R)
     readonly left: L;

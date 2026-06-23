@@ -1,7 +1,7 @@
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class ImmutableMap$Builder<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export class ImmutableMap$Builder<K extends unknown, V extends unknown> extends Object {
     constructor()
     constructor(initialCapacity: number)
     // private entries: Map$Entry<K, V>[];

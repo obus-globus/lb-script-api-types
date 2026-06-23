@@ -3,7 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { MethodInfo } from '../../../../../net/minecraft/server/jsonrpc/api/MethodInfo.d.ts'
-export class MethodInfo$Named<Params extends Object | number | string | boolean, Result extends Object | number | string | boolean> extends Record {
+export class MethodInfo$Named<Params extends unknown, Result extends unknown> extends Record {
     static CODEC: Codec<MethodInfo$Named<Object, Object>>;
     static typedCodec(): Codec<MethodInfo$Named<Object, Object>>;
     constructor(name: Identifier, contents: MethodInfo<Params, Result>)

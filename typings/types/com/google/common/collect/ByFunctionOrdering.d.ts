@@ -3,7 +3,7 @@ import type { Ordering } from '../../../../com/google/common/collect/Ordering.d.
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ByFunctionOrdering<F extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Ordering<F> implements Serializable {
+export class ByFunctionOrdering<F extends unknown, T extends unknown> extends Ordering<F> implements Serializable {
     static allEqual(): Ordering<Object>;
     static arbitrary(): Ordering<Object>;
     static compound(paramcomparators: (param0: Object) => boolean[]): Ordering<Object>;

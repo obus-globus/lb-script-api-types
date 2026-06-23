@@ -8,5 +8,5 @@ export class SynchedEntityData$Builder extends Object {
     // private entity: SyncedDataHolder;
     // private itemsById: SynchedEntityData$DataItem<Object>[];
     build(): SynchedEntityData;
-    define<T extends Object | number | string | boolean>(accessor: EntityDataAccessor<T>, value: T): SynchedEntityData$Builder;
+    define<T extends unknown>(accessor: EntityDataAccessor<T>, value: T): SynchedEntityData$Builder;
 }

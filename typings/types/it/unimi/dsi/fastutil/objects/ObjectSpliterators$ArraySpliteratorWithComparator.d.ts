@@ -1,7 +1,7 @@
 import type { ObjectSpliterators$ArraySpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterators$ArraySpliterator.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectSpliterators$ArraySpliteratorWithComparator<K extends Object | number | string | boolean> extends ObjectSpliterators$ArraySpliterator<K> {
+export class ObjectSpliterators$ArraySpliteratorWithComparator<K extends unknown> extends ObjectSpliterators$ArraySpliterator<K> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

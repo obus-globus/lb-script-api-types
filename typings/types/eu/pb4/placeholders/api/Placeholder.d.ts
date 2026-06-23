@@ -5,7 +5,7 @@ import type { PlaceholderResult } from '../../../../eu/pb4/placeholders/api/Plac
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
-export class Placeholder<Ctx extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Record {
+export class Placeholder<Ctx extends unknown, T extends unknown> extends Record {
     constructor(identifier: Identifier, argumentParser: ArgumentParser<T>, handler: (param0: Ctx, param1: T) => PlaceholderResult)
     // private argumentParser: ArgumentParser<T>;
     // private handler: (param0: Ctx, param1: T) => PlaceholderResult;

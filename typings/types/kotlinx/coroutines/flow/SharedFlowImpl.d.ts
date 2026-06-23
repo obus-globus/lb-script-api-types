@@ -10,7 +10,7 @@ import type { SharedFlowImpl$Emitter } from '../../../kotlinx/coroutines/flow/Sh
 import type { SharedFlowSlot } from '../../../kotlinx/coroutines/flow/SharedFlowSlot.d.ts'
 import type { AbstractSharedFlow } from '../../../kotlinx/coroutines/flow/internal/AbstractSharedFlow.d.ts'
 import type { FusibleFlow } from '../../../kotlinx/coroutines/flow/internal/FusibleFlow.d.ts'
-export class SharedFlowImpl<T extends Object | number | string | boolean> extends AbstractSharedFlow<SharedFlowSlot> implements CancellableFlow<T>, MutableSharedFlow<T>, FusibleFlow<T> {
+export class SharedFlowImpl<T extends unknown> extends AbstractSharedFlow<SharedFlowSlot> implements CancellableFlow<T>, MutableSharedFlow<T>, FusibleFlow<T> {
     constructor(replay: number, bufferCapacity: number, onBufferOverflow: BufferOverflow)
     // private buffer: (Object | null)[] | null;
     // private bufferCapacity: number;

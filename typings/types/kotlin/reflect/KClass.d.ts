@@ -7,7 +7,7 @@ import type { KFunction } from '../../kotlin/reflect/KFunction.d.ts'
 import type { KType } from '../../kotlin/reflect/KType.d.ts'
 import type { KTypeParameter } from '../../kotlin/reflect/KTypeParameter.d.ts'
 import type { KVisibility } from '../../kotlin/reflect/KVisibility.d.ts'
-export interface KClass<T extends Object | number | string | boolean> extends Object, KAnnotatedElement, KClassifier, KDeclarationContainer{
+export interface KClass<T extends unknown> extends Object, KAnnotatedElement, KClassifier, KDeclarationContainer{
     readonly constructors: KFunction<T>[];
     /*not mapped: */ isAbstract(): boolean;
     /*not mapped: */ isCompanion(): boolean;

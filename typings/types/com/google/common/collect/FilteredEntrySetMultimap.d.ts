@@ -4,7 +4,7 @@ import type { FilteredSetMultimap } from '../../../../com/google/common/collect/
 import type { SetMultimap } from '../../../../com/google/common/collect/SetMultimap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class FilteredEntrySetMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends FilteredEntryMultimap<K, V> implements FilteredSetMultimap<K, V> {
+export class FilteredEntrySetMultimap<K extends unknown, V extends unknown> extends FilteredEntryMultimap<K, V> implements FilteredSetMultimap<K, V> {
     constructor(unfiltered: SetMultimap<K, V>, predicate: (param0: Object) => boolean)
     createEntries(): Map$Entry<K, V>[];
     entries(): Map$Entry<K, V>[];

@@ -44,7 +44,7 @@ export abstract class AFServerSocket<A extends AFSocketAddress> extends ServerSo
     getInetAddress(): InetAddress;
     getLocalPort(): number;
     getLocalSocketAddress(): A;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     getReceiveBufferSize(): number;
     getReuseAddress(): boolean;
     getSoTimeout(): number;
@@ -58,7 +58,7 @@ export abstract class AFServerSocket<A extends AFSocketAddress> extends ServerSo
     removeCloseable(arg0: Closeable): void;
     setBoundEndpoint(arg0: A): void;
     setDeleteOnClose(arg0: boolean): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): ServerSocket;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): ServerSocket;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): void;
     setReceiveBufferSize(arg0: number): void;
     setReuseAddress(arg0: boolean): void;

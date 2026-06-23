@@ -85,7 +85,7 @@ export class EngineData extends Object {
     getCallTargets(): OptimizedCallTarget[];
     // private getCompileOnly(): Pair<string[], string[]>;
     getCompilerOptions(): { [key: string]: string };
-    getEngineLocal<T extends Object | number | string | boolean>(symbol: Class<T>): T;
+    getEngineLocal<T extends unknown>(symbol: Class<T>): T;
     getEngineLock(): Object;
     getEngineLogHandler(): Object;
     getEngineLogger(): TruffleLogger;
@@ -104,7 +104,7 @@ export class EngineData extends Object {
     onEnginePatch(newRuntimeOptions: OptionValues, newLoggerFactory: (param0: string) => TruffleLogger, sandboxPolicy: SandboxPolicy): void;
     onStoreCache(targetPath: Path[], cancelledWord: number): boolean;
     preinitializeContext(): void;
-    putEngineLocal<T extends Object | number | string | boolean>(symbol: Class<T>, value: T): void;
+    putEngineLocal<T extends unknown>(symbol: Class<T>, value: T): void;
     restoreStore(finalizationResult: Object): void;
     // private updateCompilerOptions(options: { [key: string]: string }): void;
     // private validateOptions(sandboxPolicy: SandboxPolicy): void;

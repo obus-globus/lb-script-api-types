@@ -14,7 +14,7 @@ export class BinaryNode extends Expression implements Assignment<Expression> {
     readonly lhs: Expression;
     readonly rhs: Expression;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getAssignmentDest(): Expression;
     getAssignmentSource(): Expression;
     getLhs(): Expression;

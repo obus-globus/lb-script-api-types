@@ -2,7 +2,7 @@ import type { AbstractFloat2ReferenceFunction } from '../../../../../it/unimi/ds
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Float2ReferenceFunctions$EmptyFunction<V extends Object | number | string | boolean> extends AbstractFloat2ReferenceFunction<V> implements Serializable, Cloneable {
+export class Float2ReferenceFunctions$EmptyFunction<V extends unknown> extends AbstractFloat2ReferenceFunction<V> implements Serializable, Cloneable {
     constructor()
     clear(): void;
     clone(): Object;

@@ -44,7 +44,7 @@ export class VectorType$ArrayVector extends VectorType {
     equals(arg0: Object | null): boolean;
     getValue(arg0: Object, arg1: number, arg2: FunctionReturn): void;
     hashCode(): number;
-    map<T1 extends Object | number | string | boolean, T2 extends Object | number | string | boolean>(arg0: T1, arg1: T2, arg2: FunctionReturn, arg3: VectorType$ArrayVector$IntObjectObjectObjectConsumer<T1, T2, FunctionReturn>): void;
+    map<T1 extends unknown, T2 extends unknown>(arg0: T1, arg1: T2, arg2: FunctionReturn, arg3: VectorType$ArrayVector$IntObjectObjectObjectConsumer<T1, T2, FunctionReturn>): void;
     setValue(arg0: Object, arg1: number, arg2: FunctionReturn): void;
     toString(): string;
 }

@@ -6,9 +6,9 @@ export class StoredEntityDataImpl extends Object implements StoredEntityData {
     constructor(arg0: EntityType)
     // private storedObjects: Map<Class<Object>, Object>;
     // private type: EntityType;
-    get<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    get<T extends unknown>(arg0: Class<T>): T;
     has(arg0: Class<Object>): boolean;
     put(arg0: Object): void;
-    remove<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    remove<T extends unknown>(arg0: Class<T>): T;
     type(): EntityType;
 }

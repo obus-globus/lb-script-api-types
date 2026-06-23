@@ -10,5 +10,5 @@ import type { NamedEntityWriteReadFix } from '../../../../../net/minecraft/util/
 export class PrimedTntBlockStateFixer extends NamedEntityWriteReadFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
-    fix<T extends Object | number | string | boolean>(input: Dynamic<T>): Dynamic<T>;
+    fix<T extends unknown>(input: Dynamic<T>): Dynamic<T>;
 }

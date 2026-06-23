@@ -162,13 +162,13 @@ export class Cat extends TamableAnimal {
     // private relaxStateOneAmountO: number;
     // private temptGoal: TemptGoal;
     addAdditionalSaveData(output: ValueOutput): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     canMate(partner: Animal): boolean;
     customServerAiStep(level: ServerLevel): void;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getAmbientSoundInterval(): number;
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): Cat;

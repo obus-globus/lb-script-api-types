@@ -12,7 +12,7 @@ import type { FileChannel } from '../../../java/nio/channels/FileChannel.d.ts'
 import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringByteChannel.d.ts'
 import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class PooledByteBuf<T extends Object | number | string | boolean> extends AbstractReferenceCountedByteBuf {
+export abstract class PooledByteBuf<T extends unknown> extends AbstractReferenceCountedByteBuf {
     constructor(arg0: ObjectPool$Handle<PooledByteBuf<T>>, arg1: number)
     // private allocator: ByteBufAllocator;
     // private cache: PoolThreadCache;

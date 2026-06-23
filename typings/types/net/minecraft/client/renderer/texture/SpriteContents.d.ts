@@ -40,7 +40,7 @@ export class SpriteContents extends Object implements AutoCloseable, SpriteConte
     computeTransparency(u0: number, v0: number, u1: number, v1: number): Transparency;
     // private createAnimatedTexture(frameSize: FrameSize, fullWidth: number, fullHeight: number, metadata: AnimationMetadataSection): SpriteContents$AnimatedTexture;
     createAnimationState(uboSlice: GpuBufferSlice, spriteUboSize: number): SpriteContents$AnimationState;
-    getAdditionalMetadata<T extends Object | number | string | boolean>(type: MetadataSectionType<T>): Optional<T>;
+    getAdditionalMetadata<T extends unknown>(type: MetadataSectionType<T>): Optional<T>;
     getAnimatedTexture(): SpriteContents$AnimatedTexture;
     // private getFrameCount(): number;
     getOrCreatePBRHolder(): PBRSpriteHolder;

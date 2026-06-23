@@ -19,5 +19,5 @@ export class NestedInitializer extends Initializer {
     exitNode(arg0: ASTListener): void;
     getInitializerType(): Initializer$InitializerType;
     getInitializers(): Initializer[];
-    initializerAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    initializerAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

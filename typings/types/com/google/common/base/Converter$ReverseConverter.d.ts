@@ -2,7 +2,7 @@ import type { Converter } from '../../../../com/google/common/base/Converter.d.t
 import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Converter$ReverseConverter<A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends Converter<B, A> implements Serializable {
+export class Converter$ReverseConverter<A extends unknown, B extends unknown> extends Converter<B, A> implements Serializable {
     static from(paramforwardFunction: (param0: Object) => boolean, parambackwardFunction: (param0: Object) => boolean): Converter<Object, Object>;
     static identity(): Converter<Object, Object>;
     constructor(original: Converter<A, B>)

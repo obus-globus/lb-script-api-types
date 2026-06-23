@@ -10,6 +10,6 @@ export class UnboundLocalDateTime extends Object {
     readonly nanosecond: number;
     readonly second: number;
     readonly year: number;
-    toInstant<T extends Object | number | string | boolean>(offsetSeconds: number, buildInstant: (param0: number, param1: number) => T): T;
+    toInstant<T extends unknown>(offsetSeconds: number, buildInstant: (param0: number, param1: number) => T): T;
     toString(): string;
 }

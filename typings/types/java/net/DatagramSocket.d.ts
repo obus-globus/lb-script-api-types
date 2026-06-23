@@ -29,7 +29,7 @@ export class DatagramSocket extends Object implements Closeable {
     getLocalAddress(): InetAddress;
     getLocalPort(): number;
     getLocalSocketAddress(): SocketAddress;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     getPort(): number;
     getReceiveBufferSize(): number;
     getRemoteSocketAddress(): SocketAddress;
@@ -45,7 +45,7 @@ export class DatagramSocket extends Object implements Closeable {
     receive(arg0: DatagramPacket): void;
     send(arg0: DatagramPacket): void;
     setBroadcast(arg0: boolean): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): DatagramSocket;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): DatagramSocket;
     setReceiveBufferSize(arg0: number): void;
     setReuseAddress(arg0: boolean): void;
     setSendBufferSize(arg0: number): void;

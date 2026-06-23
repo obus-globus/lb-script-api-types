@@ -12,7 +12,7 @@ export class ThrowNode extends Statement {
     readonly expression: Expression;
     // private isSyntheticRethrow: boolean;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getExpression(): Expression;
     isCompletionValueNeverEmpty(): boolean;
     isSyntheticRethrow(): boolean;

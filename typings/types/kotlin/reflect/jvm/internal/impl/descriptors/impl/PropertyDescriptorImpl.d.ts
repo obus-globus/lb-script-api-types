@@ -44,7 +44,7 @@ export class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     readonly setterProjectedOut: boolean;
     readonly typeParameters: TypeParameterDescriptor[];
     readonly visibility: DescriptorVisibility;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     copy(arg0: DeclarationDescriptor, arg1: Modality, arg2: DescriptorVisibility, arg3: CallableMemberDescriptor$Kind, arg4: boolean): PropertyDescriptor;
     createSubstitutedCopy(arg0: DeclarationDescriptor, arg1: Modality, arg2: DescriptorVisibility, arg3: PropertyDescriptor, arg4: CallableMemberDescriptor$Kind, arg5: Name, arg6: SourceElement): PropertyDescriptorImpl;
     doSubstitute(arg0: PropertyDescriptorImpl$CopyConfiguration): PropertyDescriptor;
@@ -63,7 +63,7 @@ export class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     getSetter(): PropertySetterDescriptor;
     // private getSourceToUseForCopy(arg0: boolean, arg1: PropertyDescriptor): SourceElement;
     getTypeParameters(): TypeParameterDescriptor[];
-    getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>): V;
     getVisibility(): DescriptorVisibility;
     initialize(arg0: PropertyGetterDescriptorImpl, arg1: PropertySetterDescriptor): void;
     initialize(arg0: PropertyGetterDescriptorImpl, arg1: PropertySetterDescriptor, arg2: FieldDescriptor, arg3: FieldDescriptor): void;

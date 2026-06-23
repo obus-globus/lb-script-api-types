@@ -154,7 +154,7 @@ export class Llama extends AbstractChestedHorse implements RangedAttackMob {
     // private caravanTail: Llama;
     // private didSpit: boolean;
     addAdditionalSaveData(output: ValueOutput): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     canEatGrass(): boolean;
     canMate(partner: Animal): boolean;
@@ -165,7 +165,7 @@ export class Llama extends AbstractChestedHorse implements RangedAttackMob {
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
     followLeashSpeed(): number;
     followMommy(level: ServerLevel): void;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getAngrySound(): SoundEvent;
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): Llama;

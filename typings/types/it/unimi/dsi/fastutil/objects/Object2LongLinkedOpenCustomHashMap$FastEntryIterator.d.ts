@@ -8,10 +8,10 @@ export class Object2LongLinkedOpenCustomHashMap$FastEntryIterator extends Object
     constructor(null_: Object2LongLinkedOpenCustomHashMap$FastEntryIterator)
     constructor(null_: Object2LongLinkedOpenCustomHashMap$FastEntryIterator)
     // private entry: Object2LongLinkedOpenCustomHashMap$MapEntry;
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Object2LongMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: Object2LongMap$Entry<K>): void;
-    next<K extends Object | number | string | boolean>(): Object2LongLinkedOpenCustomHashMap$MapEntry;
-    previous<K extends Object | number | string | boolean>(): Object2LongLinkedOpenCustomHashMap$MapEntry;
+    acceptOnIndex<K extends unknown>(arg0: (param0: Object2LongMap$Entry<K>) => void, arg1: number): void;
+    add<K extends unknown>(arg0: Object2LongMap$Entry<K>): void;
+    next<K extends unknown>(): Object2LongLinkedOpenCustomHashMap$MapEntry;
+    previous<K extends unknown>(): Object2LongLinkedOpenCustomHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: Object2LongMap$Entry<K>): void;
+    set<K extends unknown>(arg0: Object2LongMap$Entry<K>): void;
 }

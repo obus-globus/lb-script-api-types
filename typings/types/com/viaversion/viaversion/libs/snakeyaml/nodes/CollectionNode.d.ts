@@ -3,7 +3,7 @@ import type { Mark } from '../../../../../../com/viaversion/viaversion/libs/snak
 import type { Node } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/nodes/Node.d.ts'
 import type { Tag } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/nodes/Tag.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class CollectionNode<T extends Object | number | string | boolean> extends Node {
+export abstract class CollectionNode<T extends unknown> extends Node {
     constructor(arg0: Tag, arg1: Mark, arg2: Mark, arg3: DumperOptions$FlowStyle)
     readonly flowStyle: DumperOptions$FlowStyle;
     getFlowStyle(): DumperOptions$FlowStyle;

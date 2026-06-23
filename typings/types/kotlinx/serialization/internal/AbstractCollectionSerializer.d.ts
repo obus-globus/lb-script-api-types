@@ -3,7 +3,7 @@ import type { KSerializer } from '../../../kotlinx/serialization/KSerializer.d.t
 import type { CompositeDecoder } from '../../../kotlinx/serialization/encoding/CompositeDecoder.d.ts'
 import type { Decoder } from '../../../kotlinx/serialization/encoding/Decoder.d.ts'
 import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.ts'
-export class AbstractCollectionSerializer<Element extends Object | number | string | boolean, Collection extends Object | number | string | boolean, Builder extends Object | number | string | boolean> extends Object implements KSerializer<Collection> {
+export class AbstractCollectionSerializer<Element extends unknown, Collection extends unknown, Builder extends unknown> extends Object implements KSerializer<Collection> {
     protected constructor()
     protected builder(): Builder;
     deserialize(decoder: Decoder): Collection;

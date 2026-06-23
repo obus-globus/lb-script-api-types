@@ -55,7 +55,7 @@ export abstract class WebSocketClient extends AbstractWebSocket implements WebSo
     connect(): void;
     connectBlocking(): boolean;
     connectBlocking(arg0: number, arg1: TimeUnit): boolean;
-    getAttachment<T extends Object | number | string | boolean>(): T;
+    getAttachment<T extends unknown>(): T;
     getConnection(): WebSocket;
     getConnections(): WebSocket[];
     getDraft(): Draft;
@@ -107,7 +107,7 @@ export abstract class WebSocketClient extends AbstractWebSocket implements WebSo
     sendFrame(arg0: Framedata[]): void;
     // private sendHandshake(): void;
     sendPing(): void;
-    setAttachment<T extends Object | number | string | boolean>(arg0: T): void;
+    setAttachment<T extends unknown>(arg0: T): void;
     setDnsResolver(arg0: DnsResolver): void;
     setProxy(arg0: Proxy): void;
     setSocket(arg0: Socket): void;

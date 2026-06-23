@@ -1,4 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface ToLongFunction<T extends Object | number | string | boolean> extends Object{
+export interface ToLongFunction<T extends unknown> extends Object{
     applyAsLong(arg0: T): number;
 }

@@ -7,12 +7,12 @@ export class CharObjectHashMap$PrimitiveIterator extends Object implements CharO
     // private entryIndex: number;
     // private nextIndex: number;
     // private prevIndex: number;
-    forEachRemaining<V extends Object | number | string | boolean>(arg0: (param0: CharObjectMap$PrimitiveEntry<V>) => void): void;
+    forEachRemaining<V extends unknown>(arg0: (param0: CharObjectMap$PrimitiveEntry<V>) => void): void;
     hasNext(): boolean;
     key(): string;
-    next<V extends Object | number | string | boolean>(): CharObjectMap$PrimitiveEntry<V>;
+    next<V extends unknown>(): CharObjectMap$PrimitiveEntry<V>;
     remove(): void;
     // private scanNext(): void;
-    setValue<V extends Object | number | string | boolean>(arg0: V): void;
-    value<V extends Object | number | string | boolean>(): V;
+    setValue<V extends unknown>(arg0: V): void;
+    value<V extends unknown>(): V;
 }

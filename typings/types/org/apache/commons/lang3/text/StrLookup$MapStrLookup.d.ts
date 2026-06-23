@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { StrLookup } from '../../../../../org/apache/commons/lang3/text/StrLookup.d.ts'
-export class StrLookup$MapStrLookup<V extends Object | number | string | boolean> extends StrLookup<V> {
+export class StrLookup$MapStrLookup<V extends unknown> extends StrLookup<V> {
     static mapLookup(paramarg0: { [key: string]: Object | null }): StrLookup<Object>;
     static noneLookup(): StrLookup<Object>;
     static systemPropertiesLookup(): StrLookup<string>;

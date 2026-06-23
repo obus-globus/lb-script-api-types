@@ -8,7 +8,7 @@ import type { File } from '../../../../../java/io/File.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Logger } from '../../../../../java/util/logging/Logger.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ViaPlatform<T extends Object | number | string | boolean> extends Object {
+export interface ViaPlatform<T extends unknown> extends Object {
     couldBeReloading(): boolean;
     createLogger(arg0: string): Logger;
     getApi(): ViaAPI<T>;

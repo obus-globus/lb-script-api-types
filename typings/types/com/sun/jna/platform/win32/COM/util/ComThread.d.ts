@@ -13,7 +13,7 @@ export class ComThread extends Object {
     // private requiresInitialisation: boolean;
     // private timeoutMilliseconds: number;
     // private uncaughtExceptionHandler: (param0: Thread, param1: Throwable) => void;
-    execute<T extends Object | number | string | boolean>(arg0: () => T): T;
+    execute<T extends unknown>(arg0: () => T): T;
     finalize(): void;
     terminate(arg0: number): void;
 }

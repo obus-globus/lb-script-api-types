@@ -28,11 +28,11 @@ export class CommandPermissionContext extends Object implements PermissionContex
     static offlinePlayer(paramarg0: NameAndId, paramarg1: MinecraftServer): CompletableFuture<MutablePermissionContext>;
     constructor(arg0: CommandSourceStack)
     // private source: CommandSourceStack;
-    get<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>): T;
+    get<T extends unknown>(arg0: PermissionContext$Key<T>): T;
     getPermissionContext(): PermissionContext;
     keys(): PermissionContext$Key<Object>[];
     mutable(): MutablePermissionContext;
-    orElse<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>, arg1: T): T;
+    orElse<T extends unknown>(arg0: PermissionContext$Key<T>, arg1: T): T;
     permissionLevel(): PermissionLevel;
     type(): PermissionContext$Type;
     uuid(): UUID;

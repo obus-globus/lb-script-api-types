@@ -5,7 +5,7 @@ import type { ImmutableNetwork$Builder } from '../../../../com/google/common/gra
 import type { MutableNetwork } from '../../../../com/google/common/graph/MutableNetwork.d.ts'
 import type { Network } from '../../../../com/google/common/graph/Network.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class NetworkBuilder<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends AbstractGraphBuilder<N> {
+export class NetworkBuilder<N extends unknown, E extends unknown> extends AbstractGraphBuilder<N> {
     static directed(): NetworkBuilder<Object, Object>;
     static from(paramnetwork: Network<Object, Object>): NetworkBuilder<Object, Object>;
     static undirected(): NetworkBuilder<Object, Object>;

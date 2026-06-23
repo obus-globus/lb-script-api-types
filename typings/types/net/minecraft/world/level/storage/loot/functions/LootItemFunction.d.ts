@@ -8,7 +8,7 @@ import type { LootContext } from '../../../../../../../net/minecraft/world/level
 import type { LootContextUser } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContextUser.d.ts'
 import type { ValidationContext } from '../../../../../../../net/minecraft/world/level/storage/loot/ValidationContext.d.ts'
 export interface LootItemFunction extends BiFunction<ItemStack, LootContext, ItemStack>, Object, LootContextUser {
-    andThen<V extends Object | number | string | boolean>(arg0: (param0: ItemStack) => V): (param0: ItemStack, param1: LootContext) => V;
+    andThen<V extends unknown>(arg0: (param0: ItemStack) => V): (param0: ItemStack, param1: LootContext) => V;
     codec(): MapCodec<LootItemFunction>;
     getReferencedContextParams(): ContextKey<Object>[];
     validate(context: ValidationContext): void;

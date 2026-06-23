@@ -17,7 +17,7 @@ export class PropertyGetterDescriptorImpl extends PropertyAccessorDescriptorImpl
     constructor(arg0: PropertyDescriptor, arg1: AnnotationDescriptor[], arg2: Modality, arg3: DescriptorVisibility, arg4: boolean, arg5: boolean, arg6: boolean, arg7: CallableMemberDescriptor$Kind, arg8: PropertyGetterDescriptor, arg9: SourceElement)
     readonly original: PropertyGetterDescriptor;
     readonly returnType: KotlinType;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getOriginal(): PropertyGetterDescriptor;
     getOverriddenDescriptors(): PropertyGetterDescriptor[];
     getOverriddenDescriptors(arg0: boolean): PropertyAccessorDescriptor[];

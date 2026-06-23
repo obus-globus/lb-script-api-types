@@ -5,7 +5,7 @@ import type { OptionSet } from '../joptsimple/OptionSet.d.ts'
 import type { OptionSpec } from '../joptsimple/OptionSpec.d.ts'
 import type { ValueConverter } from '../joptsimple/ValueConverter.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
-export abstract class AbstractOptionSpec<V extends Object | number | string | boolean> extends Object implements OptionDescriptor, OptionSpec<V> {
+export abstract class AbstractOptionSpec<V extends unknown> extends Object implements OptionDescriptor, OptionSpec<V> {
     constructor(arg0: string)
     constructor(arg0: string[], arg1: string)
     // private description: string;

@@ -11,5 +11,5 @@ export class AreaEffectCloudPotionFix extends NamedEntityFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
     fix(entity: Typed<Object>): Typed<Object>;
-    // private fix<T extends Object | number | string | boolean>(entity: Dynamic<T>): Dynamic<T>;
+    // private fix<T extends unknown>(entity: Dynamic<T>): Dynamic<T>;
 }

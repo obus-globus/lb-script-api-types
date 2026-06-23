@@ -83,7 +83,7 @@ export interface CommonLevelAccessor extends Object, EntityGetter, LevelReader, 
     hasChunksAt(x0: number, y0: number, z0: number, x1: number, y1: number, z1: number): boolean;
     hasChunksAt(pos0: BlockPos, pos1: BlockPos): boolean;
     hasNearbyAlivePlayer(x: number, y: number, z: number, range: number): boolean;
-    holderLookup<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): HolderLookup<T>;
+    holderLookup<T extends unknown>(key: ResourceKey<T[]>): HolderLookup<T>;
     isClientSide(): boolean;
     isEmptyBlock(pos: BlockPos): boolean;
     isUnobstructed(ignore: Entity): boolean;

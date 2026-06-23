@@ -3,7 +3,7 @@ import type { CommandContextBuilder } from '../../../com/mojang/brigadier/contex
 import type { CommandSyntaxException } from '../../../com/mojang/brigadier/exceptions/CommandSyntaxException.d.ts'
 import type { CommandNode } from '../../../com/mojang/brigadier/tree/CommandNode.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ParseResults<S extends Object | number | string | boolean> extends Object {
+export class ParseResults<S extends unknown> extends Object {
     constructor(arg0: CommandContextBuilder<S>)
     constructor(arg0: CommandContextBuilder<S>, arg1: ImmutableStringReader, arg2: Map<CommandNode<S>, CommandSyntaxException>)
     readonly context: CommandContextBuilder<S>;

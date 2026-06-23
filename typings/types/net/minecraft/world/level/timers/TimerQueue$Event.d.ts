@@ -2,7 +2,7 @@ import type { UnsignedLong } from '../../../../../com/google/common/primitives/U
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TimerCallback } from '../../../../../net/minecraft/world/level/timers/TimerCallback.d.ts'
-export class TimerQueue$Event<T extends Object | number | string | boolean> extends Record {
+export class TimerQueue$Event<T extends unknown> extends Record {
     // private callback: TimerCallback<T>;
     // private id: string;
     // private sequentialId: UnsignedLong;

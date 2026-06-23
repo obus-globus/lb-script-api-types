@@ -1,7 +1,7 @@
 import type { ReferenceBytePair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceBytePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ReferenceByteMutablePair<K extends Object | number | string | boolean> extends Object implements ReferenceBytePair<K>, Serializable {
+export class ReferenceByteMutablePair<K extends unknown> extends Object implements ReferenceBytePair<K>, Serializable {
     static of(paramarg0: Object | null, paramarg1: number): ReferenceByteMutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ReferenceBytePair<Object>;
     constructor(arg0: K, arg1: number)

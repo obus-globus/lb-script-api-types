@@ -1,4 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface IrisFunctions$QuadConsumer<T extends Object | number | string | boolean, U extends Object | number | string | boolean, V extends Object | number | string | boolean, W extends Object | number | string | boolean> extends Object{
+export interface IrisFunctions$QuadConsumer<T extends unknown, U extends unknown, V extends unknown, W extends unknown> extends Object{
     accept(arg0: T, arg1: U, arg2: V, arg3: W): void;
 }

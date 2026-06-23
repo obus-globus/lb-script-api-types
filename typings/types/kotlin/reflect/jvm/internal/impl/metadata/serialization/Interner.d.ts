@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class Interner<T extends Object | number | string | boolean> extends Object {
+export class Interner<T extends unknown> extends Object {
     // private firstIndex: number;
     // private interned: Map<T, number>;
     // private parent: Interner<T>;

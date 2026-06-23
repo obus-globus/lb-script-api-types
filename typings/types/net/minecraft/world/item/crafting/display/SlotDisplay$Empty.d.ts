@@ -19,7 +19,7 @@ export class SlotDisplay$Empty extends Object implements SlotDisplay {
     static TYPE: SlotDisplay$Type<SlotDisplay$Empty>;
     private constructor()
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    resolve<T extends Object | number | string | boolean>(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
+    resolve<T extends unknown>(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
     resolveForFirstStack(context: ContextMap): ItemStack;
     resolveForStacks(context: ContextMap): ItemStack[];
     toString(): string;

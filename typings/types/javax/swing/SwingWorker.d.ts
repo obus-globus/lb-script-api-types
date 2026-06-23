@@ -7,7 +7,7 @@ import type { TimeUnit } from '../../java/util/concurrent/TimeUnit.d.ts'
 import type { SwingWorker$StateValue } from '../../javax/swing/SwingWorker$StateValue.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { AccumulativeRunnable } from '../../sun/swing/AccumulativeRunnable.d.ts'
-export abstract class SwingWorker<T extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements RunnableFuture<T> {
+export abstract class SwingWorker<T extends unknown, V extends unknown> extends Object implements RunnableFuture<T> {
     constructor()
     // private doNotifyProgressChange: AccumulativeRunnable<number>;
     // private doProcess: AccumulativeRunnable<V>;

@@ -6,7 +6,7 @@ import type { CountedCompleter } from '../../../java/util/concurrent/CountedComp
 import type { ForkJoinPool } from '../../../java/util/concurrent/ForkJoinPool.d.ts'
 import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class ConcurrentHashMap$BulkTask<K extends Object | number | string | boolean, V extends Object | number | string | boolean, R extends Object | number | string | boolean> extends CountedCompleter<R> {
+export abstract class ConcurrentHashMap$BulkTask<K extends unknown, V extends unknown, R extends unknown> extends CountedCompleter<R> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

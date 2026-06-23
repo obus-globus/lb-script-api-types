@@ -1,7 +1,7 @@
 import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { UnmodifiableIterator } from '../../../../com/google/common/collect/UnmodifiableIterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class TreeTraverser<T extends Object | number | string | boolean> extends Object {
+export abstract class TreeTraverser<T extends unknown> extends Object {
     static using(paramnodeToChildrenFunction: (param0: Object) => boolean): TreeTraverser<Object>;
     constructor()
     breadthFirstTraversal(root: T): T[];

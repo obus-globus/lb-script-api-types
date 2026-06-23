@@ -5,7 +5,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Document } from '../../../../org/w3c/dom/Document.d.ts'
 import type { Node } from '../../../../org/w3c/dom/Node.d.ts'
-export class Param<T extends Object | number | string | boolean> extends Object implements Serializable {
+export class Param<T extends unknown> extends Object implements Serializable {
     static load(paramarg0: InputStream): Param<Object>;
     static load(paramarg0: Node): Param<Object>;
     constructor()

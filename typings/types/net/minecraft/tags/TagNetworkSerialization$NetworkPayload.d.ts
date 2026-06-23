@@ -8,7 +8,7 @@ export class TagNetworkSerialization$NetworkPayload extends Object {
     constructor(tags: Map<Identifier, (Object | null)[]>)
     // private tags: Map<Identifier, (Object | null)[]>;
     isEmpty(): boolean;
-    resolve<T extends Object | number | string | boolean>(registry: T[]): TagLoader$LoadResult<T>;
+    resolve<T extends unknown>(registry: T[]): TagLoader$LoadResult<T>;
     size(): number;
     write(buf: FriendlyByteBuf): void;
 }

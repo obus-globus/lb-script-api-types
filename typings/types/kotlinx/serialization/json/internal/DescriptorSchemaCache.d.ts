@@ -4,7 +4,7 @@ import type { DescriptorSchemaCache$Key } from '../../../../kotlinx/serializatio
 export class DescriptorSchemaCache extends Object {
     constructor()
     // private map: Map<SerialDescriptor, Map<DescriptorSchemaCache$Key<Object>, Object>>;
-    get<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, key: DescriptorSchemaCache$Key<T>): T | null;
-    getOrPut<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, key: DescriptorSchemaCache$Key<T>, defaultValue: () => T): T;
-    set<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, key: DescriptorSchemaCache$Key<T>, value: T): void;
+    get<T extends unknown>(descriptor: SerialDescriptor, key: DescriptorSchemaCache$Key<T>): T | null;
+    getOrPut<T extends unknown>(descriptor: SerialDescriptor, key: DescriptorSchemaCache$Key<T>, defaultValue: () => T): T;
+    set<T extends unknown>(descriptor: SerialDescriptor, key: DescriptorSchemaCache$Key<T>, value: T): void;
 }

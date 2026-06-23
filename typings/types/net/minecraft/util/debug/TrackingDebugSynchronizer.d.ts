@@ -7,7 +7,7 @@ import type { ServerPlayer } from '../../../../net/minecraft/server/level/Server
 import type { DebugSubscription } from '../../../../net/minecraft/util/debug/DebugSubscription.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.ts'
-export abstract class TrackingDebugSynchronizer<T extends Object | number | string | boolean> extends Object {
+export abstract class TrackingDebugSynchronizer<T extends unknown> extends Object {
     constructor(subscription: DebugSubscription<T>)
     // private subscribedPlayers: UUID[];
     // private subscription: DebugSubscription<T>;

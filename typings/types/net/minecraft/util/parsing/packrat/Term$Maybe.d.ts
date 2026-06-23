@@ -6,7 +6,7 @@ import type { NamedRule } from '../../../../../net/minecraft/util/parsing/packra
 import type { ParseState } from '../../../../../net/minecraft/util/parsing/packrat/ParseState.d.ts'
 import type { Scope } from '../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
 import type { Term } from '../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
-export class Term$Maybe<S extends Object | number | string | boolean> extends Record implements Term<S> {
+export class Term$Maybe<S extends unknown> extends Record implements Term<S> {
     static alternative(paramterms: Object | null): Term<Object>;
     static cut(): Term<Object>;
     static empty(): Term<Object>;

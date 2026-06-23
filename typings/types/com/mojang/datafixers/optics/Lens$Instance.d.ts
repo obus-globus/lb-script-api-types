@@ -12,13 +12,13 @@ import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Lens$Instance<A2 extends Object | number | string | boolean, B2 extends Object | number | string | boolean> extends Object implements Cartesian<Lens$Mu<A2, B2>, Cartesian$Mu> {
+export class Lens$Instance<A2 extends unknown, B2 extends unknown> extends Object implements Cartesian<Lens$Mu<A2, B2>, Cartesian$Mu> {
     static unbox(paramarg0: App<Cartesian$Mu, K2>): Cartesian<K2, Cartesian$Mu>;
     constructor()
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Lens$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Lens$Mu<A2, B2>, C, D>;
-    dimap<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Lens$Mu<A2, B2>, A, B>, App2<Lens$Mu<A2, B2>, C, D>>;
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<Lens$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Lens$Mu<A2, B2>, C, D>;
-    first<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Lens$Mu<A2, B2>, A, B>): App2<Lens$Mu<A2, B2>, Pair<A, C>, Pair<B, C>>;
-    second<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Lens$Mu<A2, B2>, A, B>): App2<Lens$Mu<A2, B2>, Pair<C, A>, Pair<C, B>>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<Lens$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Lens$Mu<A2, B2>, C, D>;
+    dimap<A extends unknown, B extends unknown, C extends unknown, D extends unknown>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Lens$Mu<A2, B2>, A, B>, App2<Lens$Mu<A2, B2>, C, D>>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: () => App2<Lens$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Lens$Mu<A2, B2>, C, D>;
+    first<A extends unknown, C extends unknown, B extends unknown>(arg0: App2<Lens$Mu<A2, B2>, A, B>): App2<Lens$Mu<A2, B2>, Pair<A, C>, Pair<B, C>>;
+    second<C extends unknown, A extends unknown, B extends unknown>(arg0: App2<Lens$Mu<A2, B2>, A, B>): App2<Lens$Mu<A2, B2>, Pair<C, A>, Pair<C, B>>;
     toFP2(): FunctorProfunctor<CartesianLike$Mu, Lens$Mu<A2, B2>, FunctorProfunctor$Mu<CartesianLike$Mu>>;
 }

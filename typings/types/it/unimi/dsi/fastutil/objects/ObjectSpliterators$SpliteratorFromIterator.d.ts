@@ -2,7 +2,7 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { ObjectSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectSpliterators$SpliteratorFromIterator<K extends Object | number | string | boolean> extends Object implements ObjectSpliterator<K> {
+export class ObjectSpliterators$SpliteratorFromIterator<K extends unknown> extends Object implements ObjectSpliterator<K> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

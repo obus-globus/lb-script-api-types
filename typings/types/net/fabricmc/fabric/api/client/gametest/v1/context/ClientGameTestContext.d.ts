@@ -19,7 +19,7 @@ export interface ClientGameTestContext extends Object {
     assertScreenshotEquals(arg0: string): void;
     assertScreenshotEquals(arg0: TestScreenshotComparisonOptions): void;
     clickScreenButton(arg0: string): void;
-    computeOnClient<T extends Object | number | string | boolean, E extends Throwable>(arg0: (param0: Minecraft) => T): T;
+    computeOnClient<T extends unknown, E extends Throwable>(arg0: (param0: Minecraft) => T): T;
     getInput(): TestInput;
     restoreDefaultGameOptions(): void;
     runOnClient<E extends Throwable>(arg0: (param0: Minecraft) => void): void;

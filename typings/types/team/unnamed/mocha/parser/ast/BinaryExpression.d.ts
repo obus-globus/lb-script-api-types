@@ -15,5 +15,5 @@ export class BinaryExpression extends Object implements Expression {
     right(): Expression;
     right(arg0: Expression): void;
     toString(): string;
-    visit<R extends Object | number | string | boolean>(arg0: ExpressionVisitor<R>): R;
+    visit<R extends unknown>(arg0: ExpressionVisitor<R>): R;
 }

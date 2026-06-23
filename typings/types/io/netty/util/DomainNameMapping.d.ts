@@ -1,6 +1,6 @@
 import type { Mapping } from '../../../io/netty/util/Mapping.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class DomainNameMapping<V extends Object | number | string | boolean> extends Object implements Mapping<string, V> {
+export class DomainNameMapping<V extends unknown> extends Object implements Mapping<string, V> {
     constructor(arg0: V)
     constructor(arg0: number, arg1: V)
     constructor(arg0: { [key: string]: V }, arg1: V)

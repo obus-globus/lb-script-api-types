@@ -16,7 +16,7 @@ import type { Value as Value_2 } from '../../../../../org/graalvm/polyglot/Value
  *
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/Value.kt:59}
  */
-export class Value<T extends Object | number | string | boolean> extends Object {
+export class Value<T extends unknown> extends Object {
     constructor(name: string, aliases: string[], defaultValue: T, valueType: ValueType, independentDescription: boolean)
     readonly aliases: string[];
     // private changedListeners: (param0: T) => void[];

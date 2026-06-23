@@ -2,7 +2,7 @@ import type { ForwardingNetwork } from '../../../../com/google/common/graph/Forw
 import type { Network } from '../../../../com/google/common/graph/Network.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Graphs$TransposedNetwork<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends ForwardingNetwork<N, E> {
+export class Graphs$TransposedNetwork<N extends unknown, E extends unknown> extends ForwardingNetwork<N, E> {
     constructor(network: Network<N, E>)
     // private network: Network<N, E>;
     delegate(): Network<N, E>;

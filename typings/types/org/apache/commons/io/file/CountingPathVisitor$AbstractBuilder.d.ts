@@ -6,7 +6,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Counters$PathCounters } from '../../../../../org/apache/commons/io/file/Counters$PathCounters.d.ts'
 import type { PathFilter } from '../../../../../org/apache/commons/io/file/PathFilter.d.ts'
 import type { SimplePathVisitor$AbstractBuilder } from '../../../../../org/apache/commons/io/file/SimplePathVisitor$AbstractBuilder.d.ts'
-export abstract class CountingPathVisitor$AbstractBuilder<T extends Object | number | string | boolean, B extends CountingPathVisitor$AbstractBuilder<T, B>> extends SimplePathVisitor$AbstractBuilder<T, B> {
+export abstract class CountingPathVisitor$AbstractBuilder<T extends unknown, B extends CountingPathVisitor$AbstractBuilder<T, B>> extends SimplePathVisitor$AbstractBuilder<T, B> {
     constructor()
     // private directoryFilter: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult;
     // private directoryPostTransformer: (param0: Path[]) => Object | null;

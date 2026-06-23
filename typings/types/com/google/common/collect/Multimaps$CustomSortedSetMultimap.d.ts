@@ -4,7 +4,7 @@ import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Multimaps$CustomSortedSetMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractSortedSetMultimap<K, V> {
+export class Multimaps$CustomSortedSetMultimap<K extends unknown, V extends unknown> extends AbstractSortedSetMultimap<K, V> {
     constructor(map: Map<K, V[]>, factory: () => V[])
     // private factory: () => V[];
     // private valueComparator: (param0: Object) => boolean;

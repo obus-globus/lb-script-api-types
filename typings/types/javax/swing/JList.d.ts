@@ -21,7 +21,7 @@ import type { ComponentUI } from '../../javax/swing/plaf/ComponentUI.d.ts'
 import type { ListUI } from '../../javax/swing/plaf/ListUI.d.ts'
 import type { Position$Bias } from '../../javax/swing/text/Position$Bias.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export class JList<E extends Object | number | string | boolean> extends JComponent implements Accessible, Scrollable {
+export class JList<E extends unknown> extends JComponent implements Accessible, Scrollable {
     static ABORT: number;
     static ALLBITS: number;
     static BOTTOM_ALIGNMENT: number;

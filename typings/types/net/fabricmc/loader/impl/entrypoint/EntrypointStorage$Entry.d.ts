@@ -4,6 +4,6 @@ import type { ModContainerImpl } from '../../../../../net/fabricmc/loader/impl/M
 export interface EntrypointStorage$Entry extends Object{
     getDefinition(): string;
     getModContainer(): ModContainerImpl;
-    getOrCreate<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    getOrCreate<T extends unknown>(arg0: Class<T>): T;
     isOptional(): boolean;
 }

@@ -6,7 +6,7 @@ import type { SerializationStrategy } from '../../../kotlinx/serialization/Seria
 import type { CompositeDecoder } from '../../../kotlinx/serialization/encoding/CompositeDecoder.d.ts'
 import type { Decoder } from '../../../kotlinx/serialization/encoding/Decoder.d.ts'
 import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.ts'
-export abstract class AbstractPolymorphicSerializer<T extends Object | number | string | boolean> extends Object implements KSerializer<T> {
+export abstract class AbstractPolymorphicSerializer<T extends unknown> extends Object implements KSerializer<T> {
     constructor()
     readonly baseClass: KClass<T>;
     // private decodeSequentially(compositeDecoder: CompositeDecoder): T;

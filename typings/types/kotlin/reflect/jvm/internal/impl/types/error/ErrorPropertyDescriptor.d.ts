@@ -22,7 +22,7 @@ import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/interna
 import type { TypeSubstitutor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitutor.d.ts'
 export class ErrorPropertyDescriptor extends Object implements PropertyDescriptor {
     constructor()
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     copy(arg0: DeclarationDescriptor, arg1: Modality, arg2: DescriptorVisibility, arg3: CallableMemberDescriptor$Kind, arg4: boolean): CallableMemberDescriptor;
     getAccessors(): PropertyAccessorDescriptor[];
     getAnnotations(): AnnotationDescriptor[];
@@ -44,7 +44,7 @@ export class ErrorPropertyDescriptor extends Object implements PropertyDescripto
     getSource(): SourceElement;
     getType(): KotlinType;
     getTypeParameters(): TypeParameterDescriptor[];
-    getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>): V;
     getValueParameters(): ValueParameterDescriptor[];
     getVisibility(): DescriptorVisibility;
     hasSynthesizedParameterNames(): boolean;

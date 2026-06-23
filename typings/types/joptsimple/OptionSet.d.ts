@@ -11,8 +11,8 @@ export class OptionSet extends Object {
     add(arg0: AbstractOptionSpec<Object>): void;
     addWithArgument(arg0: AbstractOptionSpec<Object>, arg1: string): void;
     asMap(): Map<OptionSpec<Object>, (Object | null)[]>;
-    // private defaultValueFor<V extends Object | number | string | boolean>(arg0: OptionSpec<V>): V[];
-    // private defaultValuesFor<V extends Object | number | string | boolean>(arg0: string): V[];
+    // private defaultValueFor<V extends unknown>(arg0: OptionSpec<V>): V[];
+    // private defaultValuesFor<V extends unknown>(arg0: string): V[];
     equals(arg0: Object | null): boolean;
     has(arg0: OptionSpec<Object>): boolean;
     has(arg0: string): boolean;
@@ -22,8 +22,8 @@ export class OptionSet extends Object {
     hashCode(): number;
     nonOptionArguments(): (Object | null)[];
     specs(): OptionSpec<Object>[];
-    valueOf<V extends Object | number | string | boolean>(arg0: OptionSpec<V>): V;
+    valueOf<V extends unknown>(arg0: OptionSpec<V>): V;
     valueOf(arg0: string): Object;
-    valuesOf<V extends Object | number | string | boolean>(arg0: OptionSpec<V>): V[];
+    valuesOf<V extends unknown>(arg0: OptionSpec<V>): V[];
     valuesOf(arg0: string): (Object | null)[];
 }

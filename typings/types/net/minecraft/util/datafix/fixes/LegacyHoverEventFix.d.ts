@@ -12,7 +12,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LegacyHoverEventFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
-    // private createFixer<C extends Object | number | string | boolean, H extends Pair<string, Object>>(rawTextComponentType: Type<C>, hoverEventType: Type<H>): TypeRewriteRule;
-    // private fixHoverEvent<H extends Object | number | string | boolean>(hoverEventType: Type<H>, action: string, oldHoverEvent: Dynamic<Object>): H;
+    // private createFixer<C extends unknown, H extends Pair<string, Object>>(rawTextComponentType: Type<C>, hoverEventType: Type<H>): TypeRewriteRule;
+    // private fixHoverEvent<H extends unknown>(hoverEventType: Type<H>, action: string, oldHoverEvent: Dynamic<Object>): H;
     makeRule(): TypeRewriteRule;
 }

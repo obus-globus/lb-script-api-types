@@ -4,7 +4,7 @@ import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.
 import type { AbstractCoroutine } from '../../kotlinx/coroutines/AbstractCoroutine.d.ts'
 import type { EventLoop } from '../../kotlinx/coroutines/EventLoop.d.ts'
 import type { Job$Key } from '../../kotlinx/coroutines/Job$Key.d.ts'
-export class BlockingCoroutine<T extends Object | number | string | boolean> extends AbstractCoroutine<T> {
+export class BlockingCoroutine<T extends unknown> extends AbstractCoroutine<T> {
     static Key: Job$Key;
     constructor(parentContext: CoroutineContext, blockedThread: Thread, eventLoop: EventLoop | null)
     // private blockedThread: Thread;

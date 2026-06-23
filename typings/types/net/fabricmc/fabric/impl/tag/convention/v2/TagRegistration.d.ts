@@ -10,7 +10,7 @@ import type { Biome } from '../../../../../../../net/minecraft/world/level/biome
 import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { Structure } from '../../../../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 import type { Fluid } from '../../../../../../../net/minecraft/world/level/material/Fluid.d.ts'
-export class TagRegistration<T extends Object | number | string | boolean> extends Record {
+export class TagRegistration<T extends unknown> extends Record {
     static BIOME_TAG: TagRegistration<Biome>;
     static BLOCK_TAG: TagRegistration<Block>;
     static ENCHANTMENT_TAG: TagRegistration<Enchantment>;

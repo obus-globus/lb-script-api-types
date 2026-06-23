@@ -25,7 +25,7 @@ export class VarNode extends Statement implements Assignment<IdentNode> {
     readonly name: IdentNode;
     readonly sourceOrder: number;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getAssignmentDest(): IdentNode;
     getAssignmentSource(): Expression;
     getFlag(flag: number): boolean;

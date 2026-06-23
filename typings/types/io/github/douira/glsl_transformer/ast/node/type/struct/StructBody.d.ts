@@ -11,7 +11,7 @@ export class StructBody extends ListASTNode<StructMember> {
     static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: Stream<StructMember>)
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): StructBody;
     cloneInto(arg0: Root): StructBody;
     enterNode(arg0: ASTListener): void;

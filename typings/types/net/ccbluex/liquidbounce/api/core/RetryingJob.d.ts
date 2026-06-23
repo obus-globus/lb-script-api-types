@@ -4,7 +4,7 @@ import type { Job } from '../../../../../kotlinx/coroutines/Job.d.ts'
 import type { StateFlow } from '../../../../../kotlinx/coroutines/flow/StateFlow.d.ts'
 import type { RetryingJob$State } from '../../../../../net/ccbluex/liquidbounce/api/core/RetryingJob$State.d.ts'
 import type { RetryingJob$State$Final } from '../../../../../net/ccbluex/liquidbounce/api/core/RetryingJob$State$Final.d.ts'
-export class RetryingJob<T extends Object | number | string | boolean> extends Record {
+export class RetryingJob<T extends unknown> extends Record {
     constructor(stateFlow: StateFlow<RetryingJob$State<T>>, producerJob: Job)
     // private producerJob: Job;
     /*not mapped: */ producerJob(): Job;

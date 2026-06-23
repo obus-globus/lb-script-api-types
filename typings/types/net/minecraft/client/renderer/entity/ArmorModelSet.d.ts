@@ -7,7 +7,7 @@ import type { ModelLayerLocation } from '../../../../../net/minecraft/client/mod
 import type { ModelPart } from '../../../../../net/minecraft/client/model/geom/ModelPart.d.ts'
 import type { LayerDefinition } from '../../../../../net/minecraft/client/model/geom/builders/LayerDefinition.d.ts'
 import type { EquipmentSlot } from '../../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
-export class ArmorModelSet<T extends Object | number | string | boolean> extends Record {
+export class ArmorModelSet<T extends unknown> extends Record {
     static bake(paramlocations: ArmorModelSet<ModelLayerLocation>, parammodelSet: EntityModelSet, paramfactory: (param0: ModelPart) => Object | null): ArmorModelSet<Object>;
     constructor(head: T, chest: T, legs: T, feet: T)
     // private chest: T;
@@ -21,7 +21,7 @@ export class ArmorModelSet<T extends Object | number | string | boolean> extends
     hashCode(): number;
     head(): T;
     legs(): T;
-    map<U extends Object | number | string | boolean>(mapper: (param0: T) => U): ArmorModelSet<U>;
+    map<U extends unknown>(mapper: (param0: T) => U): ArmorModelSet<U>;
     putFrom(values: ArmorModelSet<LayerDefinition>, output: ImmutableMap$Builder<T, LayerDefinition>): void;
     toString(): string;
 }

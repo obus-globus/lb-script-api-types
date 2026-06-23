@@ -2,7 +2,7 @@ import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Predicates$CompositionPredicate<A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends Object implements Predicate<A>, Serializable {
+export class Predicates$CompositionPredicate<A extends unknown, B extends unknown> extends Object implements Predicate<A>, Serializable {
     private constructor(p: (param0: Object) => boolean, f: (param0: Object) => boolean)
     // private f: (param0: Object) => boolean;
     // private p: (param0: Object) => boolean;

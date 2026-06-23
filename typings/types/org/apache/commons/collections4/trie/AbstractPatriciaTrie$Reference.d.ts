@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractPatriciaTrie$Reference<E extends Object | number | string | boolean> extends Object {
+export class AbstractPatriciaTrie$Reference<E extends unknown> extends Object {
     private constructor()
     // private item: E;
     get(): E;

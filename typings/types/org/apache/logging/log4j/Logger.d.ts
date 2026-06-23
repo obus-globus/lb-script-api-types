@@ -121,7 +121,7 @@ export interface Logger extends Object {
     error(messageSupplier: () => Object | null): void;
     error(messageSupplier: () => Object | null, throwable: Throwable): void;
     exit(): void;
-    exit<R extends Object | number | string | boolean>(result: R): R;
+    exit<R extends unknown>(result: R): R;
     fatal(message: Object): void;
     fatal(message: Object, throwable: Throwable): void;
     fatal(message: CharSequence): void;
@@ -343,11 +343,11 @@ export interface Logger extends Object {
     traceEntry(format: string, paramSuppliers: () => Object | null[]): EntryMessage;
     traceEntry(message: Message): EntryMessage;
     traceExit(): void;
-    traceExit<R extends Object | number | string | boolean>(result: R): R;
-    traceExit<R extends Object | number | string | boolean>(format: string, result: R): R;
+    traceExit<R extends unknown>(result: R): R;
+    traceExit<R extends unknown>(format: string, result: R): R;
     traceExit(message: EntryMessage): void;
-    traceExit<R extends Object | number | string | boolean>(message: EntryMessage, result: R): R;
-    traceExit<R extends Object | number | string | boolean>(message: Message, result: R): R;
+    traceExit<R extends unknown>(message: EntryMessage, result: R): R;
+    traceExit<R extends unknown>(message: Message, result: R): R;
     warn(message: Object): void;
     warn(message: Object, throwable: Throwable): void;
     warn(message: CharSequence): void;

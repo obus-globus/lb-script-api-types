@@ -3,7 +3,7 @@ import type { Holder } from '../../../../../../com/viaversion/viaversion/libs/mc
 import type { Registry } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/registry/Registry.d.ts'
 import type { TagKey } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/registry/TagKey.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class TypedTagEntryList<T extends Object | number | string | boolean> extends Object {
+export class TypedTagEntryList<T extends unknown> extends Object {
     static codec(paramarg0: Registry, paramarg1: Codec<Object>, paramarg2: boolean): Codec<TypedTagEntryList<Object>>;
     constructor(arg0: TagKey)
     constructor(arg0: Holder<T>[])

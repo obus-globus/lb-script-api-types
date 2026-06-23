@@ -1,6 +1,6 @@
 import type { Int2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fastutil/ints/Int2DoubleMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Int2DoubleLinkedOpenHashMap$MapIterator<ConsumerType extends Object | number | string | boolean> extends Object {
+export abstract class Int2DoubleLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: Int2DoubleLinkedOpenHashMap$MapIterator<ConsumerType>)
     private constructor(null_: Int2DoubleLinkedOpenHashMap$MapIterator<ConsumerType>, arg1: number)
     // private curr: number;

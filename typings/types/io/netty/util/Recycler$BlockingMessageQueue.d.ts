@@ -4,7 +4,7 @@ import type { MessagePassingQueue$ExitCondition } from '../../../io/netty/util/i
 import type { MessagePassingQueue$Supplier } from '../../../io/netty/util/internal/shaded/org/jctools/queues/MessagePassingQueue$Supplier.d.ts'
 import type { MessagePassingQueue$WaitStrategy } from '../../../io/netty/util/internal/shaded/org/jctools/queues/MessagePassingQueue$WaitStrategy.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class Recycler$BlockingMessageQueue<T extends Object | number | string | boolean> extends Object implements MessagePassingQueue<T> {
+export class Recycler$BlockingMessageQueue<T extends unknown> extends Object implements MessagePassingQueue<T> {
     static UNBOUNDED_CAPACITY: number;
     constructor(arg0: number)
     // private deque: T[];

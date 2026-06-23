@@ -17,18 +17,18 @@ export class Short2ObjectOpenHashMap$MapEntry extends Object implements Short2Ob
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;
-    first<V extends Object | number | string | boolean>(arg0: number): ShortObjectPair<V>;
+    first<V extends unknown>(arg0: number): ShortObjectPair<V>;
     firstShort(): number;
     getShortKey(): number;
     hashCode(): number;
     key(): number;
-    key<V extends Object | number | string | boolean>(arg0: number): ShortObjectPair<V>;
+    key<V extends unknown>(arg0: number): ShortObjectPair<V>;
     keyShort(): number;
     left(): number;
-    left<V extends Object | number | string | boolean>(arg0: number): ShortObjectPair<V>;
+    left<V extends unknown>(arg0: number): ShortObjectPair<V>;
     leftShort(): number;
-    right<V extends Object | number | string | boolean>(): V;
-    right<V extends Object | number | string | boolean>(arg0: V): ShortObjectPair<V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    right<V extends unknown>(): V;
+    right<V extends unknown>(arg0: V): ShortObjectPair<V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

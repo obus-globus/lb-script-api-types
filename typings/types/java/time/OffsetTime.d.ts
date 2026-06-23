@@ -68,7 +68,7 @@ export class OffsetTime extends Object implements Serializable, Temporal, Tempor
     plusMinutes(arg0: number): OffsetTime;
     plusNanos(arg0: number): OffsetTime;
     plusSeconds(arg0: number): OffsetTime;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     // private toEpochNano(): number;

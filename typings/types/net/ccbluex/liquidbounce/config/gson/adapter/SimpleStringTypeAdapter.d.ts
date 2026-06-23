@@ -8,7 +8,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Regex } from '../../../../../../kotlin/text/Regex.d.ts'
 import type { SimpleStringTypeAdapter$Companion } from '../../../../../../net/ccbluex/liquidbounce/config/gson/adapter/SimpleStringTypeAdapter$Companion.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export class SimpleStringTypeAdapter<T extends Object | number | string | boolean> extends TypeAdapter<T> {
+export class SimpleStringTypeAdapter<T extends unknown> extends TypeAdapter<T> {
     static Companion: SimpleStringTypeAdapter$Companion;
     static FILE: SimpleStringTypeAdapter<File>;
     static IDENTIFIER: SimpleStringTypeAdapter<Identifier>;

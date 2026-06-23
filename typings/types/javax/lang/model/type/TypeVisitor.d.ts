@@ -11,7 +11,7 @@ import type { TypeVariable } from '../../../../javax/lang/model/type/TypeVariabl
 import type { UnionType } from '../../../../javax/lang/model/type/UnionType.d.ts'
 import type { WildcardType } from '../../../../javax/lang/model/type/WildcardType.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface TypeVisitor<R extends Object | number | string | boolean, P extends Object | number | string | boolean> extends Object{
+export interface TypeVisitor<R extends unknown, P extends unknown> extends Object{
     visit(arg0: TypeMirror): R;
     visit(arg0: TypeMirror, arg1: P): R;
     visitArray(arg0: ArrayType, arg1: P): R;

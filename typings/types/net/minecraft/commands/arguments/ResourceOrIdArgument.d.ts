@@ -27,7 +27,7 @@ import type { Grammar } from '../../../../net/minecraft/util/parsing/packrat/com
 import type { LootTable } from '../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 import type { LootItemFunction } from '../../../../net/minecraft/world/level/storage/loot/functions/LootItemFunction.d.ts'
 import type { LootItemCondition } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
-export class ResourceOrIdArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<Holder<T>> {
+export class ResourceOrIdArgument<T extends unknown> extends Object implements ArgumentType<Holder<T>> {
     static ERROR_FAILED_TO_PARSE: DynamicCommandExceptionType;
     static ERROR_NO_SUCH_ELEMENT: Dynamic2CommandExceptionType;
     static OPS: DynamicOps<Tag>;
@@ -47,9 +47,9 @@ export class ResourceOrIdArgument<T extends Object | number | string | boolean> 
     // private registryKey: ResourceKey<T[]>;
     // private registryLookup: HolderLookup$Provider;
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Holder<T>;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends unknown>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): Holder<T>;
     parse(reader: StringReader): Holder<T>;
-    // private parse<O extends Object | number | string | boolean>(reader: StringReader, grammar: Grammar<ResourceOrIdArgument$Result<T, O>>, ops: DynamicOps<O>): Holder<T>;
+    // private parse<O extends unknown>(reader: StringReader, grammar: Grammar<ResourceOrIdArgument$Result<T, O>>, ops: DynamicOps<O>): Holder<T>;
 }

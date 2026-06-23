@@ -1,7 +1,7 @@
 import type { AbstractObject2BooleanMap$BasicEntry } from '../../../../../it/unimi/dsi/fastutil/objects/AbstractObject2BooleanMap$BasicEntry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Object2BooleanRBTreeMap$Entry<K extends Object | number | string | boolean> extends AbstractObject2BooleanMap$BasicEntry<K> implements Cloneable {
+export class Object2BooleanRBTreeMap$Entry<K extends unknown> extends AbstractObject2BooleanMap$BasicEntry<K> implements Cloneable {
     constructor()
     constructor(arg0: K, arg1: boolean)
     // private info: number;

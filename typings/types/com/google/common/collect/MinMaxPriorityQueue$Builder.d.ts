@@ -1,7 +1,7 @@
 import type { Ordering } from '../../../../com/google/common/collect/Ordering.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class MinMaxPriorityQueue$Builder<B extends Object | number | string | boolean> extends Object {
+export class MinMaxPriorityQueue$Builder<B extends unknown> extends Object {
     private constructor(comparator: (param0: Object) => boolean)
     // private comparator: (param0: Object) => boolean;
     // private expectedSize: number;

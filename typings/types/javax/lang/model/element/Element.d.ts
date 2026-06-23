@@ -9,7 +9,7 @@ import type { TypeMirror } from '../../../../javax/lang/model/type/TypeMirror.d.
 import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface Element extends AnnotatedConstruct, Object{
-    accept<R extends Object | number | string | boolean, P extends Object | number | string | boolean>(arg0: ElementVisitor<R, P>, arg1: P): R;
+    accept<R extends unknown, P extends unknown>(arg0: ElementVisitor<R, P>, arg1: P): R;
     asType(): TypeMirror;
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;
     getAnnotationMirrors(): AnnotationMirror[];

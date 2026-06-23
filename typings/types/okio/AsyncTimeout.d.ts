@@ -21,5 +21,5 @@ export class AsyncTimeout extends Timeout {
     sink(sink: Sink): Sink;
     source(source: Source): Source;
     protected timedOut(): void;
-    withTimeout<T extends Object | number | string | boolean>(block: () => T): T;
+    withTimeout<T extends unknown>(block: () => T): T;
 }

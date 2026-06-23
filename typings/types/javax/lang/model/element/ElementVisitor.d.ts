@@ -7,7 +7,7 @@ import type { TypeElement } from '../../../../javax/lang/model/element/TypeEleme
 import type { TypeParameterElement } from '../../../../javax/lang/model/element/TypeParameterElement.d.ts'
 import type { VariableElement } from '../../../../javax/lang/model/element/VariableElement.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface ElementVisitor<R extends Object | number | string | boolean, P extends Object | number | string | boolean> extends Object{
+export interface ElementVisitor<R extends unknown, P extends unknown> extends Object{
     visit(arg0: Element): R;
     visit(arg0: Element, arg1: P): R;
     visitExecutable(arg0: ExecutableElement, arg1: P): R;

@@ -12,5 +12,5 @@ export class HorseBodyArmorItemFix extends NamedEntityWriteReadFix {
     constructor(outputSchema: Schema, entityName: string, previousBodyArmorTag: string, clearArmorItems: boolean)
     // private clearArmorItems: boolean;
     // private previousBodyArmorTag: string;
-    fix<T extends Object | number | string | boolean>(input: Dynamic<T>): Dynamic<T>;
+    fix<T extends unknown>(input: Dynamic<T>): Dynamic<T>;
 }

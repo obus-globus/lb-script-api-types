@@ -22,7 +22,7 @@ export abstract class AbstractTypeParameterDescriptor extends DeclarationDescrip
     readonly storageManager: StorageManager;
     readonly typeConstructor: NotNullLazyValue<TypeConstructor>;
     readonly variance: Variance;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getDefaultType(): SimpleType;
     getIndex(): number;
     getOriginal(): TypeParameterDescriptor;

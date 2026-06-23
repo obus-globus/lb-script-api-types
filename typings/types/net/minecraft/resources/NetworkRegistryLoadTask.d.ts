@@ -12,7 +12,7 @@ import type { RegistryOps$RegistryInfoLookup } from '../../../net/minecraft/reso
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Resource } from '../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceProvider } from '../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
-export class NetworkRegistryLoadTask<T extends Object | number | string | boolean> extends RegistryLoadTask<T> {
+export class NetworkRegistryLoadTask<T extends unknown> extends RegistryLoadTask<T> {
     constructor(data: RegistryDataLoader$RegistryData<T>, lifecycle: Lifecycle, loadingErrors: Map<ResourceKey<Object>, Exception>, entries: Map<ResourceKey<(Object | null)[]>, RegistryDataLoader$NetworkedRegistryData>, knownDataSource: (param0: Identifier) => Optional<Resource>)
     // private entries: Map<ResourceKey<(Object | null)[]>, RegistryDataLoader$NetworkedRegistryData>;
     // private knownDataSource: (param0: Identifier) => Optional<Resource>;

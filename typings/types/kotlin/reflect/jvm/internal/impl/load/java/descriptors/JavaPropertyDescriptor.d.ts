@@ -22,7 +22,7 @@ export class JavaPropertyDescriptor extends PropertyDescriptorImpl implements Ja
     // private singleUserData: Pair<CallableDescriptor$UserDataKey<Object>, Object>;
     createSubstitutedCopy(arg0: DeclarationDescriptor, arg1: Modality, arg2: DescriptorVisibility, arg3: PropertyDescriptor, arg4: CallableMemberDescriptor$Kind, arg5: Name, arg6: SourceElement): PropertyDescriptorImpl;
     enhance(arg0: KotlinType, arg1: KotlinType[], arg2: KotlinType, arg3: Pair<CallableDescriptor$UserDataKey<Object>, Object>): JavaCallableMemberDescriptor;
-    getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>): V;
     hasSynthesizedParameterNames(): boolean;
     isConst(): boolean;
     setInType(arg0: KotlinType): void;

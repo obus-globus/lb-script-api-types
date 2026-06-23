@@ -13,7 +13,7 @@ export class GLSLParser$TypeAndInitDeclarationContext extends GLSLParser$Declara
     COMMA(): TerminalNode[];
     COMMA(arg0: number): TerminalNode;
     SEMICOLON(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     declarationMember(): GLSLParser$DeclarationMemberContext[];
     declarationMember(arg0: number): GLSLParser$DeclarationMemberContext;
     enterRule(arg0: ParseTreeListener): void;

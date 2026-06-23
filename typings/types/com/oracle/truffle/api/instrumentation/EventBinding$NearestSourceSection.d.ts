@@ -12,7 +12,7 @@ import type { SourceSection } from '../../../../../com/oracle/truffle/api/source
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EconomicMap } from '../../../../../org/graalvm/collections/EconomicMap.d.ts'
-export abstract class EventBinding$NearestSourceSection<T extends Object | number | string | boolean> extends EventBinding$Source<T> {
+export abstract class EventBinding$NearestSourceSection<T extends unknown> extends EventBinding$Source<T> {
     constructor(instrumenter: InstrumentationHandler$AbstractInstrumenter, nearestFilter: NearestSectionFilter, filterSourceSection: SourceSectionFilter, element: T, attached: boolean)
     // private nearestFilter: NearestSectionFilter;
     // private nearestSourceSections: EconomicMap<Source, NearestNodesCollector$NodeListSection>;

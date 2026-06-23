@@ -3,7 +3,7 @@ import type { AnnotationValue } from '../../../../javax/lang/model/element/Annot
 import type { VariableElement } from '../../../../javax/lang/model/element/VariableElement.d.ts'
 import type { TypeMirror } from '../../../../javax/lang/model/type/TypeMirror.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface AnnotationValueVisitor<R extends Object | number | string | boolean, P extends Object | number | string | boolean> extends Object{
+export interface AnnotationValueVisitor<R extends unknown, P extends unknown> extends Object{
     visit(arg0: AnnotationValue): R;
     visit(arg0: AnnotationValue, arg1: P): R;
     visitAnnotation(arg0: AnnotationMirror, arg1: P): R;

@@ -33,5 +33,5 @@ export class MinecraftApi extends Object {
     serverSettingsService(): MinecraftServerSettingsService;
     serverStateService(): MinecraftServerStateService;
     submit(runnable: () => void): CompletableFuture<void>;
-    submit<V extends Object | number | string | boolean>(supplier: () => V): CompletableFuture<V>;
+    submit<V extends unknown>(supplier: () => V): CompletableFuture<V>;
 }

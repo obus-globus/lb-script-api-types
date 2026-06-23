@@ -1,6 +1,6 @@
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ReferenceDoublePair<K extends Object | number | string | boolean> extends Pair<K, number>, Object{
+export interface ReferenceDoublePair<K extends unknown> extends Pair<K, number>, Object{
     first(): K;
     first(arg0: K): Pair<K, number>;
     key(): K;

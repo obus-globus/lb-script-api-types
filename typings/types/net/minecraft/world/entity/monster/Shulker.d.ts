@@ -150,7 +150,7 @@ export class Shulker extends AbstractGolem implements Enemy {
     // private currentPeekAmount: number;
     // private currentPeekAmountO: number;
     addAdditionalSaveData(output: ValueOutput): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     canBeCollidedWith(other: Entity): boolean;
     // private canStayAt(target: BlockPos, face: Direction): boolean;
@@ -159,7 +159,7 @@ export class Shulker extends AbstractGolem implements Enemy {
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
     findAttachableSurface(target: BlockPos): Direction;
     // private findNewAttachment(): void;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getAttachFace(): Direction;
     getClientPeekAmount(a: number): number;

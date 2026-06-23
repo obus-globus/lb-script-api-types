@@ -7,8 +7,8 @@ export class DataComponentPatch$Builder extends Object {
     private constructor()
     // private map: Map<DataComponentType<Object>, Optional<Object>>;
     build(): DataComponentPatch;
-    remove<T extends Object | number | string | boolean>(type: DataComponentType<T>): DataComponentPatch$Builder;
+    remove<T extends unknown>(type: DataComponentType<T>): DataComponentPatch$Builder;
     set(components: TypedDataComponent<Object>[]): DataComponentPatch$Builder;
-    set<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): DataComponentPatch$Builder;
-    set<T extends Object | number | string | boolean>(component: TypedDataComponent<T>): DataComponentPatch$Builder;
+    set<T extends unknown>(type: DataComponentType<T>, value: T): DataComponentPatch$Builder;
+    set<T extends unknown>(component: TypedDataComponent<T>): DataComponentPatch$Builder;
 }

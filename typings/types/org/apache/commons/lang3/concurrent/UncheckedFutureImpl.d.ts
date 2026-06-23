@@ -4,7 +4,7 @@ import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractFutureProxy } from '../../../../../org/apache/commons/lang3/concurrent/AbstractFutureProxy.d.ts'
 import type { UncheckedFuture } from '../../../../../org/apache/commons/lang3/concurrent/UncheckedFuture.d.ts'
-export class UncheckedFutureImpl<V extends Object | number | string | boolean> extends AbstractFutureProxy<V> implements UncheckedFuture<V> {
+export class UncheckedFutureImpl<V extends unknown> extends AbstractFutureProxy<V> implements UncheckedFuture<V> {
     static map(paramarg0: Future<Object>[]): Stream<UncheckedFuture<Object>>;
     static on(paramarg0: Future<Object>[]): UncheckedFuture<Object>[];
     static on(paramarg0: Future<Object>): UncheckedFuture<Object>;

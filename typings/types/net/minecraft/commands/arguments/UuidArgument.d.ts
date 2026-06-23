@@ -14,7 +14,7 @@ export class UuidArgument extends Object implements ArgumentType<UUID> {
     static uuid(): UuidArgument;
     constructor()
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): UUID;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): UUID;
     parse(reader: StringReader): UUID;
 }

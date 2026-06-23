@@ -4,7 +4,7 @@ import type { ListenableFuture } from '../../../../../com/google/common/util/con
 import type { Future } from '../../../../../java/util/concurrent/Future.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
-export abstract class AggregateFuture<InputT extends Object | number | string | boolean, OutputT extends Object | number | string | boolean> extends AggregateFutureState<OutputT> {
+export abstract class AggregateFuture<InputT extends unknown, OutputT extends unknown> extends AggregateFutureState<OutputT> {
     constructor(futures: ListenableFuture<InputT>[], allMustSucceed: boolean, collectsValues: boolean)
     // private allMustSucceed: boolean;
     // private collectsValues: boolean;

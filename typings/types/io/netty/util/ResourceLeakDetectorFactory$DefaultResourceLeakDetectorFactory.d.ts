@@ -9,7 +9,7 @@ export class ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory exte
     constructor()
     // private customClassConstructor: Constructor<Object>;
     // private obsoleteCustomClassConstructor: Constructor<Object>;
-    newResourceLeakDetector<T extends Object | number | string | boolean>(arg0: Class<T>): ResourceLeakDetector<T>;
-    newResourceLeakDetector<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: number): ResourceLeakDetector<T>;
-    newResourceLeakDetector<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: number, arg2: number): ResourceLeakDetector<T>;
+    newResourceLeakDetector<T extends unknown>(arg0: Class<T>): ResourceLeakDetector<T>;
+    newResourceLeakDetector<T extends unknown>(arg0: Class<T>, arg1: number): ResourceLeakDetector<T>;
+    newResourceLeakDetector<T extends unknown>(arg0: Class<T>, arg1: number, arg2: number): ResourceLeakDetector<T>;
 }

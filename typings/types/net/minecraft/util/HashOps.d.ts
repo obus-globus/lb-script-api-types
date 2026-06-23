@@ -29,9 +29,9 @@ export class HashOps extends Object implements DynamicOps<HashCode> {
     // private hashFunction: HashFunction;
     // private trueHash: HashCode;
     compressMaps(): boolean;
-    convertList<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: HashCode): U;
-    convertMap<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: HashCode): U;
-    convertTo<U extends Object | number | string | boolean>(outOps: DynamicOps<U>, input: HashCode): U;
+    convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: HashCode): U;
+    convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: HashCode): U;
+    convertTo<U extends unknown>(outOps: DynamicOps<U>, input: HashCode): U;
     createBoolean(arg0: boolean): HashCode;
     createBoolean(value: boolean): HashCode;
     createByte(arg0: number): HashCode;
@@ -105,7 +105,7 @@ export class HashOps extends Object implements DynamicOps<HashCode> {
     update(input: HashCode, key: string, function_: (param0: HashCode) => HashCode): HashCode;
     updateGeneric(arg0: HashCode, arg1: HashCode, arg2: (param0: HashCode) => HashCode): HashCode;
     updateGeneric(input: HashCode, key: HashCode, function_: (param0: HashCode) => HashCode): HashCode;
-    withDecoder<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: HashCode) => DataResult<Pair<E, HashCode>>;
-    withEncoder<E extends Object | number | string | boolean>(arg0: Encoder<E>): (param0: E) => DataResult<HashCode>;
-    withParser<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: HashCode) => DataResult<E>;
+    withDecoder<E extends unknown>(arg0: Decoder<E>): (param0: HashCode) => DataResult<Pair<E, HashCode>>;
+    withEncoder<E extends unknown>(arg0: Encoder<E>): (param0: E) => DataResult<HashCode>;
+    withParser<E extends unknown>(arg0: Decoder<E>): (param0: HashCode) => DataResult<E>;
 }

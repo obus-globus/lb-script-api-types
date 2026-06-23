@@ -4,7 +4,7 @@ import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class PointFree<T extends Object | number | string | boolean> extends Object {
+export abstract class PointFree<T extends unknown> extends Object {
     static indent(paramarg0: number): string;
     constructor()
     // private initialized: boolean;

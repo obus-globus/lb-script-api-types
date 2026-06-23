@@ -12,5 +12,5 @@ export class RangeArgument$Ints extends Object implements RangeArgument<MinMaxBo
     constructor()
     getExamples(): string[];
     parse(reader: StringReader): MinMaxBounds$Ints;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): MinMaxBounds$Ints;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): MinMaxBounds$Ints;
 }

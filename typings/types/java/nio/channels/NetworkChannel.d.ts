@@ -6,8 +6,8 @@ export interface NetworkChannel extends Channel, Object{
     bind(arg0: SocketAddress): NetworkChannel;
     close(): void;
     getLocalAddress(): SocketAddress;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     isOpen(): boolean;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): NetworkChannel;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): NetworkChannel;
     supportedOptions(): SocketOption<Object>[];
 }

@@ -4,7 +4,7 @@ import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineConte
 import type { AtomicArray } from '../../../kotlinx/atomicfu/AtomicArray.d.ts'
 import type { BufferedChannel } from '../../../kotlinx/coroutines/channels/BufferedChannel.d.ts'
 import type { Segment } from '../../../kotlinx/coroutines/internal/Segment.d.ts'
-export class ChannelSegment<E extends Object | number | string | boolean> extends Segment<ChannelSegment<E>> {
+export class ChannelSegment<E extends unknown> extends Segment<ChannelSegment<E>> {
     constructor(id: number, prev: ChannelSegment<E> | null, channel: BufferedChannel<E> | null, pointers: number)
     casState(index: number, from: Object | null, to: Object | null): boolean;
     cleanElement(index: number): void;

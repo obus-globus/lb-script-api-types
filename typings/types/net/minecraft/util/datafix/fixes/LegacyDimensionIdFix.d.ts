@@ -11,8 +11,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LegacyDimensionIdFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
-    // private fixDimensionId<T extends Object | number | string | boolean>(id: Dynamic<T>): Dynamic<T>;
-    // private fixMap<T extends Object | number | string | boolean>(remainder: Dynamic<T>): Dynamic<T>;
-    // private fixPlayer<T extends Object | number | string | boolean>(remainder: Dynamic<T>): Dynamic<T>;
+    // private fixDimensionId<T extends unknown>(id: Dynamic<T>): Dynamic<T>;
+    // private fixMap<T extends unknown>(remainder: Dynamic<T>): Dynamic<T>;
+    // private fixPlayer<T extends unknown>(remainder: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
 }

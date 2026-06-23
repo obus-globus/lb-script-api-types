@@ -15,7 +15,7 @@ import type { ProtoContainer } from '../../../../../../../kotlin/reflect/jvm/int
 import type { MemoizedFunctionToNotNull } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/MemoizedFunctionToNotNull.d.ts'
 import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
 import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
-export abstract class AbstractBinaryClassAnnotationAndConstantLoader<A extends Object | number | string | boolean, C extends Object | number | string | boolean> extends AbstractBinaryClassAnnotationLoader<A, AnnotationsContainerWithConstants<A, C>> implements AnnotationAndConstantLoader<A, C> {
+export abstract class AbstractBinaryClassAnnotationAndConstantLoader<A extends unknown, C extends unknown> extends AbstractBinaryClassAnnotationLoader<A, AnnotationsContainerWithConstants<A, C>> implements AnnotationAndConstantLoader<A, C> {
     static Companion: AbstractBinaryClassAnnotationLoader$Companion;
     constructor(arg0: StorageManager, arg1: KotlinClassFinder)
     // private storage: MemoizedFunctionToNotNull<KotlinJvmBinaryClass, AnnotationsContainerWithConstants<A, C>>;

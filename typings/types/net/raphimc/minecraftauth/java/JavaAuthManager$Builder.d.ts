@@ -21,6 +21,6 @@ export class JavaAuthManager$Builder extends Object {
     login(arg0: string): JavaAuthManager;
     login(arg0: MsaToken): JavaAuthManager;
     login(arg0: (param0: HttpClient, param1: MsaApplicationConfig) => MsaAuthService): JavaAuthManager;
-    login<T extends Object | number | string | boolean>(arg0: (param0: HttpClient, param1: MsaApplicationConfig, param2: T) => MsaAuthService, arg1: T): JavaAuthManager;
+    login<T extends unknown>(arg0: (param0: HttpClient, param1: MsaApplicationConfig, param2: T) => MsaAuthService, arg1: T): JavaAuthManager;
     msaApplicationConfig(arg0: MsaApplicationConfig): JavaAuthManager$Builder;
 }

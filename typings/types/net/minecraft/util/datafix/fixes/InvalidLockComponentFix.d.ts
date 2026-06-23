@@ -11,5 +11,5 @@ export class InvalidLockComponentFix extends DataComponentRemainderFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     static fixLock(paraminput: Dynamic<Object>): Dynamic<Object>;
     constructor(outputSchema: Schema)
-    fixComponent<T extends Object | number | string | boolean>(input: Dynamic<T>): Dynamic<T>;
+    fixComponent<T extends unknown>(input: Dynamic<T>): Dynamic<T>;
 }

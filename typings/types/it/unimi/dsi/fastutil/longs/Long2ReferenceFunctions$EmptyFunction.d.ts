@@ -2,7 +2,7 @@ import type { AbstractLong2ReferenceFunction } from '../../../../../it/unimi/dsi
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Long2ReferenceFunctions$EmptyFunction<V extends Object | number | string | boolean> extends AbstractLong2ReferenceFunction<V> implements Serializable, Cloneable {
+export class Long2ReferenceFunctions$EmptyFunction<V extends unknown> extends AbstractLong2ReferenceFunction<V> implements Serializable, Cloneable {
     constructor()
     clear(): void;
     clone(): Object;

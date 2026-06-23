@@ -16,8 +16,8 @@ export class Node extends Object {
     getAttributes(): { [key: string]: string };
     getChildren(): Node[];
     getName(): string;
-    getObject<T extends Object | number | string | boolean>(): T;
-    getObject<T extends Object | number | string | boolean>(clazz: Class<T>): T;
+    getObject<T extends unknown>(): T;
+    getObject<T extends unknown>(clazz: Class<T>): T;
     getParent(): Node;
     getType(): PluginType<Object>;
     getValue(): string;

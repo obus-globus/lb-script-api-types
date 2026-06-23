@@ -3,7 +3,7 @@ import type { FloatObjectPair } from '../../../../../it/unimi/dsi/fastutil/float
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class FloatObjectImmutablePair<V extends Object | number | string | boolean> extends Object implements FloatObjectPair<V>, Serializable {
+export class FloatObjectImmutablePair<V extends unknown> extends Object implements FloatObjectPair<V>, Serializable {
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: Object | null): FloatObjectImmutablePair<Object>;
     static of(paramarg0: number, paramarg1: Object | null): FloatObjectPair<Object>;

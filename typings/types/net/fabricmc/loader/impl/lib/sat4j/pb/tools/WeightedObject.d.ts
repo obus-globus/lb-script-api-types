@@ -1,7 +1,7 @@
 import type { BigInteger } from '../../../../../../../../java/math/BigInteger.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../../../java/lang/Comparable.d.ts'
-export class WeightedObject<T extends Object | number | string | boolean> extends Object implements Comparable<WeightedObject<T>> {
+export class WeightedObject<T extends unknown> extends Object implements Comparable<WeightedObject<T>> {
     static newWO(paramarg0: Object | null, paramarg1: BigInteger): WeightedObject<Object>;
     private constructor(arg0: T, arg1: BigInteger)
     thing: T;

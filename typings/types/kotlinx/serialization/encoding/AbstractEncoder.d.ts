@@ -27,10 +27,10 @@ export abstract class AbstractEncoder extends Object implements CompositeEncoder
     encodeLongElement(descriptor: SerialDescriptor, index: number, value: number): void;
     encodeNotNullMark(): void;
     encodeNull(): void;
-    encodeNullableSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
-    encodeNullableSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T | null): void;
-    encodeSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T): void;
-    encodeSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): void;
+    encodeNullableSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
+    encodeNullableSerializableValue<T extends unknown>(serializer: SerializationStrategy<T>, value: T | null): void;
+    encodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T): void;
+    encodeSerializableValue<T extends unknown>(serializer: SerializationStrategy<T>, value: T): void;
     encodeShort(value: number): void;
     encodeShortElement(descriptor: SerialDescriptor, index: number, value: number): void;
     encodeString(value: string): void;

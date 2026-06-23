@@ -14,10 +14,10 @@ export class Procompose$ProfunctorInstance<F extends K2, G extends K2> extends O
     constructor(arg0: Profunctor<F, Profunctor$Mu>, arg1: Profunctor<G, Profunctor$Mu>)
     // private p1: Profunctor<F, Profunctor$Mu>;
     // private p2: Profunctor<G, Profunctor$Mu>;
-    // private cap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean, E extends Object | number | string | boolean>(arg0: Procompose<F, G, A, B, E>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Procompose$Mu<F, G>, C, D>;
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Procompose$Mu<F, G>, C, D>;
-    dimap<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Procompose$Mu<F, G>, A, B>, App2<Procompose$Mu<F, G>, C, D>>;
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Procompose$Mu<F, G>, C, D>;
-    lmap<C extends Object | number | string | boolean, B extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: C) => A): App2<Procompose$Mu<F, G>, C, B>;
-    rmap<A extends Object | number | string | boolean, D extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: B) => D): App2<Procompose$Mu<F, G>, A, D>;
+    // private cap<C extends unknown, D extends unknown, A extends unknown, B extends unknown, E extends unknown>(arg0: Procompose<F, G, A, B, E>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Procompose$Mu<F, G>, C, D>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Procompose$Mu<F, G>, C, D>;
+    dimap<A extends unknown, B extends unknown, C extends unknown, D extends unknown>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Procompose$Mu<F, G>, A, B>, App2<Procompose$Mu<F, G>, C, D>>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: () => App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Procompose$Mu<F, G>, C, D>;
+    lmap<C extends unknown, B extends unknown, A extends unknown>(arg0: App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: C) => A): App2<Procompose$Mu<F, G>, C, B>;
+    rmap<A extends unknown, D extends unknown, B extends unknown>(arg0: App2<Procompose$Mu<F, G>, A, B>, arg1: (param0: B) => D): App2<Procompose$Mu<F, G>, A, D>;
 }

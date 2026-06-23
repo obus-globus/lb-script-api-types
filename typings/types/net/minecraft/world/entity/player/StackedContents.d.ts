@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { StackedContents$IngredientInfo } from '../../../../../net/minecraft/world/entity/player/StackedContents$IngredientInfo.d.ts'
 import type { StackedContents$Output } from '../../../../../net/minecraft/world/entity/player/StackedContents$Output.d.ts'
-export class StackedContents<T extends Object | number | string | boolean> extends Object {
+export class StackedContents<T extends unknown> extends Object {
     constructor()
     amounts: { [key: string]: any };
     account(item: T, count: number): void;

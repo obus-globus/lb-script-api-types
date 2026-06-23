@@ -1,7 +1,7 @@
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectIterators$ArrayIterator<K extends Object | number | string | boolean> extends Object implements ObjectListIterator<K> {
+export class ObjectIterators$ArrayIterator<K extends unknown> extends Object implements ObjectListIterator<K> {
     constructor(arg0: K[], arg1: number, arg2: number)
     // private array: K[];
     // private curr: number;

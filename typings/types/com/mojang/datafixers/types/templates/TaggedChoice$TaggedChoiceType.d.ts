@@ -18,7 +18,7 @@ import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TaggedChoiceTypeExtension } from '../../../../../net/fabricmc/fabric/impl/dimension/TaggedChoiceTypeExtension.d.ts'
-export class TaggedChoice$TaggedChoiceType<K extends Object | number | string | boolean> extends Type<Pair<K, Object>> implements TaggedChoiceTypeExtension {
+export class TaggedChoice$TaggedChoiceType<K extends unknown> extends Type<Pair<K, Object>> implements TaggedChoiceTypeExtension {
     static elementResult(paramarg0: Object | null, paramarg1: TaggedChoice$TaggedChoiceType<Object>, paramarg2: RewriteResult<Object, Object>): RewriteResult<Pair<Object, Object>, Pair<Object, Object>>;
     static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
     static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
@@ -31,14 +31,14 @@ export class TaggedChoice$TaggedChoiceType<K extends Object | number | string | 
     all(arg0: TypeRewriteRule, arg1: boolean, arg2: boolean): RewriteResult<Pair<K, Object>, Object>;
     buildCodec(): Codec<Pair<K, Object>>;
     buildTemplate(): TypeTemplate;
-    // private cap<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean, S extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: TaggedChoice$TaggedChoiceType<K>, arg1: K, arg2: TypedOptic<S, T, FT, FR>): TypedOptic<Pair<K, Object>, Pair<K, Object>, FT, FR>;
+    // private cap<FT extends unknown, FR extends unknown, S extends unknown, T extends unknown>(arg0: TaggedChoice$TaggedChoiceType<K>, arg1: K, arg2: TypedOptic<S, T, FT, FR>): TypedOptic<Pair<K, Object>, Pair<K, Object>, FT, FR>;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
     equals(arg0: Object | null): boolean;
     fabric$setFailSoft(arg0: boolean): void;
     findCheckedType(arg0: number): Optional<Type<Object>>;
     findChoiceType(arg0: string, arg1: number): Optional<TaggedChoice$TaggedChoiceType<Object>>;
     findFieldTypeOpt(arg0: string): Optional<Type<Object>>;
-    findTypeInChildren<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<Pair<K, Object>, Object, FT, FR>, Type$FieldNotFoundException>;
+    findTypeInChildren<FT extends unknown, FR extends unknown>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<Pair<K, Object>, Object, FT, FR>, Type$FieldNotFoundException>;
     getKeyType(): Type<K>;
     // private getMapCodec(arg0: K): DataResult<MapCodec<Object>>;
     getName(): string;

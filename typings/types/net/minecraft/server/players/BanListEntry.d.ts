@@ -4,7 +4,7 @@ import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { StoredUserEntry } from '../../../../net/minecraft/server/players/StoredUserEntry.d.ts'
-export abstract class BanListEntry<T extends Object | number | string | boolean> extends StoredUserEntry<T> {
+export abstract class BanListEntry<T extends unknown> extends StoredUserEntry<T> {
     static DATE_FORMAT: SimpleDateFormat;
     static EXPIRES_NEVER: string;
     constructor(user: T, object: JsonObject)

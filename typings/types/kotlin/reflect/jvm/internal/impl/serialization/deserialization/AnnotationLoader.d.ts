@@ -10,7 +10,7 @@ import type { MessageLite } from '../../../../../../../kotlin/reflect/jvm/intern
 import type { AnnotatedCallableKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/AnnotatedCallableKind.d.ts'
 import type { ProtoContainer } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/ProtoContainer.d.ts'
 import type { ProtoContainer$Class } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/ProtoContainer$Class.d.ts'
-export interface AnnotationLoader<A extends Object | number | string | boolean> extends Object{
+export interface AnnotationLoader<A extends unknown> extends Object{
     loadAnnotation(arg0: ProtoBuf$Annotation, arg1: NameResolver): A;
     loadCallableAnnotations(arg0: ProtoContainer, arg1: MessageLite, arg2: AnnotatedCallableKind): A[];
     loadClassAnnotations(arg0: ProtoContainer$Class): A[];

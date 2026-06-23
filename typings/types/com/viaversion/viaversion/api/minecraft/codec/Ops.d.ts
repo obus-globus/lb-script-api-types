@@ -7,7 +7,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts'
 export interface Ops extends Object {
     context(): CodecContext;
-    write<V extends Object | number | string | boolean>(arg0: Type<V>, arg1: V): void;
+    write<V extends unknown>(arg0: Type<V>, arg1: V): void;
     writeBoolean(arg0: boolean): void;
     writeByte(arg0: number): void;
     writeBytes(arg0: number[]): void;

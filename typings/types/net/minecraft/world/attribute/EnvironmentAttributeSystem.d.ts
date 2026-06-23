@@ -13,14 +13,14 @@ export class EnvironmentAttributeSystem extends Object implements EnvironmentAtt
     static builder(): EnvironmentAttributeSystem$Builder;
     private constructor(layersByAttribute: Map<EnvironmentAttribute<Object>, EnvironmentAttributeLayer<Object>[]>)
     // private attributeSamplers: Map<EnvironmentAttribute<Object>, EnvironmentAttributeSystem$ValueSampler<Object>>;
-    // private bakeLayerSampler<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, untypedLayers: EnvironmentAttributeLayer<Object>[]): EnvironmentAttributeSystem$ValueSampler<Value>;
-    getConstantBaseValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>): Value;
-    getDimensionValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>): Value;
-    getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: BlockPos): Value;
-    getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: Vec3): Value;
-    getValue<Value extends Object | number | string | boolean>(context: LootContext, attribute: EnvironmentAttribute<Value>): Value;
-    getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, pos: Vec3, biomeInterpolator: SpatialAttributeInterpolator): Value;
-    // private getValueSampler<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>): EnvironmentAttributeSystem$ValueSampler<Value>;
+    // private bakeLayerSampler<Value extends unknown>(attribute: EnvironmentAttribute<Value>, untypedLayers: EnvironmentAttributeLayer<Object>[]): EnvironmentAttributeSystem$ValueSampler<Value>;
+    getConstantBaseValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>): Value;
+    getDimensionValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>): Value;
+    getValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>, pos: BlockPos): Value;
+    getValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>, pos: Vec3): Value;
+    getValue<Value extends unknown>(context: LootContext, attribute: EnvironmentAttribute<Value>): Value;
+    getValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>, pos: Vec3, biomeInterpolator: SpatialAttributeInterpolator): Value;
+    // private getValueSampler<Value extends unknown>(attribute: EnvironmentAttribute<Value>): EnvironmentAttributeSystem$ValueSampler<Value>;
     invalidateTickCache(): void;
     isAffectedByPosition(attribute: EnvironmentAttribute<Object>): boolean;
 }

@@ -8,7 +8,7 @@ import type { RegistryLoadTask } from '../../../net/minecraft/resources/Registry
 import type { RegistryOps$RegistryInfoLookup } from '../../../net/minecraft/resources/RegistryOps$RegistryInfoLookup.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ResourceManager } from '../../../net/minecraft/server/packs/resources/ResourceManager.d.ts'
-export class ResourceManagerRegistryLoadTask<T extends Object | number | string | boolean> extends RegistryLoadTask<T> {
+export class ResourceManagerRegistryLoadTask<T extends unknown> extends RegistryLoadTask<T> {
     constructor(data: RegistryDataLoader$RegistryData<T>, lifecycle: Lifecycle, loadingErrors: Map<ResourceKey<Object>, Exception>, resourceManager: ResourceManager)
     // private resourceManager: ResourceManager;
     load(context: RegistryOps$RegistryInfoLookup, executor: Executor): CompletableFuture<Object>;

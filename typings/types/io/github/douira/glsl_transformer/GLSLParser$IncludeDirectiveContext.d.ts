@@ -18,7 +18,7 @@ export class GLSLParser$IncludeDirectiveContext extends ParserRuleContext {
     NR_STRING_START_ANGLE(): TerminalNode;
     NR_S_CONTENT(): TerminalNode;
     NR_S_STRING_END(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     getRuleIndex(): number;

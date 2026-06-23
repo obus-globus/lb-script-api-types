@@ -13,7 +13,7 @@ import type { AtomicInteger } from '../../../java/util/concurrent/atomic/AtomicI
 import type { LongAdder } from '../../../java/util/concurrent/atomic/LongAdder.d.ts'
 import type { ReentrantLock } from '../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class PoolArena<T extends Object | number | string | boolean> extends Object implements PoolArenaMetric {
+export abstract class PoolArena<T extends unknown> extends Object implements PoolArenaMetric {
     constructor(arg0: PooledByteBufAllocator, arg1: SizeClasses)
     // private activeBytesHuge: LongAdder;
     // private allocationsHuge: LongAdder;

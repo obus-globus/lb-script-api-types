@@ -5,7 +5,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
-export abstract class AbstractCatchingFuture<V extends Object | number | string | boolean, X extends Throwable, F extends Object | number | string | boolean, T extends Object | number | string | boolean> extends FluentFuture$TrustedFuture<V> implements Runnable {
+export abstract class AbstractCatchingFuture<V extends unknown, X extends Throwable, F extends unknown, T extends unknown> extends FluentFuture$TrustedFuture<V> implements Runnable {
     static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
     static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
     constructor(inputFuture: ListenableFuture<V>, exceptionType: Class<X>, fallback: F)

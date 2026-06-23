@@ -15,7 +15,7 @@ export class DensityFunctions$Spline$Coordinate extends Record implements Bounde
     constructor(function_: Holder<DensityFunction>)
     // private function: Holder<DensityFunction>;
     apply(point: DensityFunctions$Spline$Point): number;
-    comap<C2 extends Object | number | string | boolean>(function_: (param0: C2) => DensityFunctions$Spline$Point): BoundedFloatFunction<C2>;
+    comap<C2 extends unknown>(function_: (param0: C2) => DensityFunctions$Spline$Point): BoundedFloatFunction<C2>;
     equals(o: Object | null): boolean;
     function(): Holder<DensityFunction>;
     hashCode(): number;

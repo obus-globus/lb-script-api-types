@@ -20,7 +20,7 @@ export class DataComponentPatch extends Object {
     entrySet(): Map$Entry<DataComponentType<Object>, Optional<Object>>[];
     equals(obj: Object | null): boolean;
     forget(test: (param0: DataComponentType<Object>) => boolean): DataComponentPatch;
-    get<T extends Object | number | string | boolean>(prototype: DataComponentGetter, type: DataComponentType<T>): T;
+    get<T extends unknown>(prototype: DataComponentGetter, type: DataComponentType<T>): T;
     hashCode(): number;
     isEmpty(): boolean;
     size(): number;

@@ -16,6 +16,6 @@ export class BooleanAndExpression extends BinaryExpression {
     cloneInto(arg0: Root): BooleanAndExpression;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
-    expressionAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    expressionAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     getExpressionType(): Expression$ExpressionType;
 }

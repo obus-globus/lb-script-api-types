@@ -3,7 +3,7 @@ import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ArrayListMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractListMultimap<K, V> {
+export class ArrayListMultimap<K extends unknown, V extends unknown> extends AbstractListMultimap<K, V> {
     static create(): ArrayListMultimap<Object, Object>;
     static create(parammultimap: Multimap<Object, Object>): ArrayListMultimap<Object, Object>;
     static create(paramexpectedKeys: number, paramexpectedValuesPerKey: number): ArrayListMultimap<Object, Object>;

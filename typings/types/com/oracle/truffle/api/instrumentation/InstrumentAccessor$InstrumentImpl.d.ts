@@ -24,7 +24,7 @@ export class InstrumentAccessor$InstrumentImpl extends Accessor$InstrumentSuppor
     disposeInstrument(instrumentationHandler: Object, polyglotInstrument: Object, cleanupRequired: boolean): void;
     finalizeInstrument(instrumentationHandler: Object, polyglotInstrument: Object): void;
     getEngineInstrumenter(instrumentationHandler: Object): Object;
-    getInstrumentationHandlerService<T extends Object | number | string | boolean>(instrumentationHandler: Object, key: Object, type: Class<T>): T;
+    getInstrumentationHandlerService<T extends unknown>(instrumentationHandler: Object, key: Object, type: Class<T>): T;
     getLoadedCallTargets(instrumentationHandler: Object): CallTarget[];
     getPolyglotInstrument(instrumentEnv: Object): Object;
     hasContextBindings(engine: Object): boolean;

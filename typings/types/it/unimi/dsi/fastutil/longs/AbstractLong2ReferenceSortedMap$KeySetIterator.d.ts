@@ -2,7 +2,7 @@ import type { Long2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastut
 import type { LongBidirectionalIterator } from '../../../../../it/unimi/dsi/fastutil/longs/LongBidirectionalIterator.d.ts'
 import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBidirectionalIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractLong2ReferenceSortedMap$KeySetIterator<V extends Object | number | string | boolean> extends Object implements LongBidirectionalIterator {
+export class AbstractLong2ReferenceSortedMap$KeySetIterator<V extends unknown> extends Object implements LongBidirectionalIterator {
     constructor(arg0: ObjectBidirectionalIterator<Long2ReferenceMap$Entry<V>>)
     // private i: ObjectBidirectionalIterator<Long2ReferenceMap$Entry<V>>;
     back(arg0: number): number;

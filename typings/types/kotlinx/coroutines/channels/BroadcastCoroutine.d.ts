@@ -10,7 +10,7 @@ import type { ProducerScope } from '../../../kotlinx/coroutines/channels/Produce
 import type { ReceiveChannel } from '../../../kotlinx/coroutines/channels/ReceiveChannel.d.ts'
 import type { SendChannel } from '../../../kotlinx/coroutines/channels/SendChannel.d.ts'
 import type { SelectClause2 } from '../../../kotlinx/coroutines/selects/SelectClause2.d.ts'
-export class BroadcastCoroutine<E extends Object | number | string | boolean> extends AbstractCoroutine<void> implements BroadcastChannel<E>, ProducerScope<E> {
+export class BroadcastCoroutine<E extends unknown> extends AbstractCoroutine<void> implements BroadcastChannel<E>, ProducerScope<E> {
     static Key: Job$Key;
     constructor(parentContext: CoroutineContext, _channel: BroadcastChannel<E>, active: boolean)
     // private _channel: BroadcastChannel<E>;

@@ -211,7 +211,7 @@ export class PolyglotContextImpl extends Object implements PolyglotImpl$VMObject
     // private isAdditionalTransitionConditionSatisfied(fromState: PolyglotContextImpl$State, toState: PolyglotContextImpl$State): boolean;
     isSingleThreaded(): boolean;
     // private isTransitionAllowed(fromState: PolyglotContextImpl$State, toState: PolyglotContextImpl$State): boolean;
-    leaveAndEnter<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => R, object: T, mustSucceed: boolean): R;
+    leaveAndEnter<R extends unknown, T extends unknown>(interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => R, object: T, mustSucceed: boolean): R;
     leaveThreadChanged(prev: Object[], entered: boolean, finalizeAndDispose: boolean): void;
     // private logCloseOnCollectedError(exception: Throwable): void;
     // private lookupLanguageContext(languageId: string): PolyglotLanguageContext;

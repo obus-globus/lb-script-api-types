@@ -2,7 +2,7 @@ import type { AbstractShort2ObjectFunction } from '../../../../../it/unimi/dsi/f
 import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Short2ObjectFunctions$UnmodifiableFunction<V extends Object | number | string | boolean> extends AbstractShort2ObjectFunction<V> implements Serializable {
+export class Short2ObjectFunctions$UnmodifiableFunction<V extends unknown> extends AbstractShort2ObjectFunction<V> implements Serializable {
     constructor(arg0: (param0: number) => V)
     // private function: (param0: number) => V;
     clear(): void;

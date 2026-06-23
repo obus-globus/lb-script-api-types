@@ -27,10 +27,10 @@ export class StructuredDataConverter extends Object {
     // private getBlockEntityTag(arg0: Map$Entry<string, Tag>[], arg1: string): Map$Entry<string, Tag>[];
     // private itemToTag(arg0: UserConnection, arg1: Item): Map$Entry<string, Tag>[];
     // private putHideFlag(arg0: Map$Entry<string, Tag>[], arg1: number): void;
-    // private register<T extends Object | number | string | boolean>(arg0: StructuredDataKey<T>, arg1: (param0: UserConnection, param1: T, param2: Map$Entry<string, Tag>[]) => void): void;
-    // private register<T extends Object | number | string | boolean>(arg0: StructuredDataKey<T>, arg1: (param0: T, param1: Map$Entry<string, Tag>[]) => void): void;
+    // private register<T extends unknown>(arg0: StructuredDataKey<T>, arg1: (param0: UserConnection, param1: T, param2: Map$Entry<string, Tag>[]) => void): void;
+    // private register<T extends unknown>(arg0: StructuredDataKey<T>, arg1: (param0: T, param1: Map$Entry<string, Tag>[]) => void): void;
     // private serializeBlockPredicate(arg0: BlockPredicate, arg1: string): StringTag;
     // private toMappedItemName(arg0: number): string;
     // private unmappedItemId(arg0: number): number;
-    writeToTag<T extends Object | number | string | boolean>(arg0: UserConnection, arg1: StructuredData<T>, arg2: Map$Entry<string, Tag>[]): void;
+    writeToTag<T extends unknown>(arg0: UserConnection, arg1: StructuredData<T>, arg2: Map$Entry<string, Tag>[]): void;
 }

@@ -10,7 +10,7 @@ import type { InjectionInfo } from '../../../../org/spongepowered/asm/mixin/inje
 export class MixinVersionImpl_v0_8_4 extends MixinVersionImpl_v0_8_3 {
     static getInstance(): MixinVersion;
     constructor()
-    getDecoration<T extends Object | number | string | boolean>(arg0: IMixinConfig, arg1: string, arg2: T): T;
+    getDecoration<T extends unknown>(arg0: IMixinConfig, arg1: string, arg2: T): T;
     makeInvalidInjectionException(arg0: InjectionInfo, arg1: string): RuntimeException;
     makeLvtContext(arg0: InjectionInfo, arg1: Type, arg2: boolean, arg3: AbstractInsnNode[], arg4: AbstractInsnNode): LocalVariableDiscriminator$Context;
 }

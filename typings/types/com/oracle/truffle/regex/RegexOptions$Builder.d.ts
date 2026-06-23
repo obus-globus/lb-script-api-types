@@ -25,7 +25,7 @@ export class RegexOptions$Builder extends Object {
     encoding(encoding: Encodings$Encoding): RegexOptions$Builder;
     // private expectEncodingValue(enc: Encodings$Encoding): Encodings$Encoding;
     // private expectOptionName(key: string): void;
-    // private expectValue<T extends Object | number | string | boolean>(returnValue: T, value: string, expected: string[]): T;
+    // private expectValue<T extends unknown>(returnValue: T, value: string, expected: string[]): T;
     // private findValueEndPos(errorMsg: string): number;
     flavor(flavor: RegexFlavor): RegexOptions$Builder;
     getEncoding(): Encodings$Encoding;

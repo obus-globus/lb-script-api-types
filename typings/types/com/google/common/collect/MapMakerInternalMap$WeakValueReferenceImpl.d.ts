@@ -3,7 +3,7 @@ import type { MapMakerInternalMap$WeakValueReference } from '../../../../com/goo
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { WeakReference } from '../../../../java/lang/ref/WeakReference.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class MapMakerInternalMap$WeakValueReferenceImpl<K extends Object | number | string | boolean, V extends Object | number | string | boolean, E extends MapMakerInternalMap$InternalEntry<K, V, E>> extends WeakReference<V> implements MapMakerInternalMap$WeakValueReference<K, V, E> {
+export class MapMakerInternalMap$WeakValueReferenceImpl<K extends unknown, V extends unknown, E extends MapMakerInternalMap$InternalEntry<K, V, E>> extends WeakReference<V> implements MapMakerInternalMap$WeakValueReference<K, V, E> {
     static reachabilityFence(paramarg0: Object): void;
     constructor(queue: ReferenceQueue<V>, referent: V, entry: E)
     readonly entry: E;

@@ -16,7 +16,7 @@ export class DefaultDatagramChannelConfig extends DefaultChannelConfig implement
     // private javaSocket: DatagramSocket;
     getInterface(): InetAddress;
     getNetworkInterface(): NetworkInterface;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
@@ -39,7 +39,7 @@ export class DefaultDatagramChannelConfig extends DefaultChannelConfig implement
     setMaxMessagesPerWrite(arg0: number): DatagramChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): DatagramChannelConfig;
     setNetworkInterface(arg0: NetworkInterface): DatagramChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setReceiveBufferSize(arg0: number): DatagramChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): DatagramChannelConfig;
     setReuseAddress(arg0: boolean): DatagramChannelConfig;

@@ -17,18 +17,18 @@ export class Float2ObjectOpenHashMap$MapEntry extends Object implements Float2Ob
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;
-    first<V extends Object | number | string | boolean>(arg0: number): FloatObjectPair<V>;
+    first<V extends unknown>(arg0: number): FloatObjectPair<V>;
     firstFloat(): number;
     getFloatKey(): number;
     hashCode(): number;
     key(): number;
-    key<V extends Object | number | string | boolean>(arg0: number): FloatObjectPair<V>;
+    key<V extends unknown>(arg0: number): FloatObjectPair<V>;
     keyFloat(): number;
     left(): number;
-    left<V extends Object | number | string | boolean>(arg0: number): FloatObjectPair<V>;
+    left<V extends unknown>(arg0: number): FloatObjectPair<V>;
     leftFloat(): number;
-    right<V extends Object | number | string | boolean>(): V;
-    right<V extends Object | number | string | boolean>(arg0: V): FloatObjectPair<V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    right<V extends unknown>(): V;
+    right<V extends unknown>(arg0: V): FloatObjectPair<V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

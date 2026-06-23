@@ -5,7 +5,7 @@ import type { ServerProtocolVersion } from '../../../../com/viaversion/viaversio
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface ViaAPI<T extends Object | number | string | boolean> extends Object{
+export interface ViaAPI<T extends unknown> extends Object{
     apiVersion(): number;
     getConnection(arg0: UUID): UserConnection;
     getFullSupportedProtocolVersions(): ProtocolVersion[];

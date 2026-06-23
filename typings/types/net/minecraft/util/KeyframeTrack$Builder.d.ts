@@ -3,7 +3,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { EasingType } from '../../../net/minecraft/util/EasingType.d.ts'
 import type { Keyframe } from '../../../net/minecraft/util/Keyframe.d.ts'
 import type { KeyframeTrack } from '../../../net/minecraft/util/KeyframeTrack.d.ts'
-export class KeyframeTrack$Builder<T extends Object | number | string | boolean> extends Object {
+export class KeyframeTrack$Builder<T extends unknown> extends Object {
     constructor()
     // private easing: EasingType;
     // private keyframes: ImmutableList$Builder<Keyframe<T>>;

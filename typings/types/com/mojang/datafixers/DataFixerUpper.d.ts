@@ -18,5 +18,5 @@ export class DataFixerUpper extends Object implements DataFixer {
     getRule(arg0: number, arg1: number): TypeRewriteRule;
     getSchema(arg0: number): Schema;
     getType(arg0: DSL$TypeReference, arg1: number): Type<Object>;
-    update<T extends Object | number | string | boolean>(arg0: DSL$TypeReference, arg1: Dynamic<T>, arg2: number, arg3: number): Dynamic<T>;
+    update<T extends unknown>(arg0: DSL$TypeReference, arg1: Dynamic<T>, arg2: number, arg3: number): Dynamic<T>;
 }

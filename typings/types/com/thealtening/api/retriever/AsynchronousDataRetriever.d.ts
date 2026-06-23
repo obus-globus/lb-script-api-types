@@ -17,7 +17,7 @@ export class AsynchronousDataRetriever extends BasicDataRetriever {
     static PRIVATE_ACC_URL: string;
     static gson: Gson;
     constructor(arg0: string)
-    // private completeTask<T extends Object | number | string | boolean>(arg0: (param0: BasicDataRetriever) => T): CompletableFuture<T>;
+    // private completeTask<T extends unknown>(arg0: (param0: BasicDataRetriever) => T): CompletableFuture<T>;
     getAccountDataAsync(): CompletableFuture<Account>;
     getFavoritedAccountsAsync(): CompletableFuture<Account[]>;
     getLicenseDataAsync(): CompletableFuture<License>;

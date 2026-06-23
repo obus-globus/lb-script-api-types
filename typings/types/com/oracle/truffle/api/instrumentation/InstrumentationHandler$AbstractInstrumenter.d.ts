@@ -50,7 +50,7 @@ export abstract class InstrumentationHandler$AbstractInstrumenter extends Instru
     isInstrumentableRoot(rootNode: RootNode): boolean;
     isInstrumentableSource(source: Source): boolean;
     isReadyForContextEvents(): boolean;
-    lookup<T extends Object | number | string | boolean>(handler: InstrumentationHandler, type: Class<T>): T;
+    lookup<T extends unknown>(handler: InstrumentationHandler, type: Class<T>): T;
     lookupExecutionEventNode(node: Node, binding: EventBinding<Object>): ExecutionEventNode;
     queryTagsImpl(node: Node, onlyLanguage: LanguageInfo): Class<Object>[];
     verifyFilter(nearestFilter: NearestSectionFilter, sourceSectionFilter: SourceSectionFilter): void;

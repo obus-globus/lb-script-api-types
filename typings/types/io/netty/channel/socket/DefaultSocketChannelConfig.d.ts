@@ -12,7 +12,7 @@ export class DefaultSocketChannelConfig extends DefaultChannelConfig implements 
     constructor(arg0: SocketChannel, arg1: Socket)
     readonly allowHalfClosure: boolean;
     // private javaSocket: Socket;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
@@ -31,7 +31,7 @@ export class DefaultSocketChannelConfig extends DefaultChannelConfig implements 
     setKeepAlive(arg0: boolean): SocketChannelConfig;
     setMaxMessagesPerRead(arg0: number): SocketChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): SocketChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): SocketChannelConfig;
     setReceiveBufferSize(arg0: number): SocketChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): SocketChannelConfig;

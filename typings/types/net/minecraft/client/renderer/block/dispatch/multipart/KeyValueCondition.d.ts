@@ -13,7 +13,7 @@ export class KeyValueCondition extends Record implements Condition {
     // private tests: { [key: string]: KeyValueCondition$Terms };
     equals(o: Object | null): boolean;
     hashCode(): number;
-    instantiate<S extends StateHolder<O, S>, O extends Object | number | string | boolean>(definition: StateDefinition<O, S>): (param0: S) => boolean;
+    instantiate<S extends StateHolder<O, S>, O extends unknown>(definition: StateDefinition<O, S>): (param0: S) => boolean;
     tests(): { [key: string]: KeyValueCondition$Terms };
     toString(): string;
 }

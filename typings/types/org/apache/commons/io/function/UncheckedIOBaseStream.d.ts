@@ -4,7 +4,7 @@ import type { BaseStream } from '../../../../../java/util/stream/BaseStream.d.ts
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { IOBaseStream } from '../../../../../org/apache/commons/io/function/IOBaseStream.d.ts'
-export class UncheckedIOBaseStream<T extends Object | number | string | boolean, S extends IOBaseStream<T, S, B>, B extends BaseStream<T, B>> extends Object implements BaseStream<T, B> {
+export class UncheckedIOBaseStream<T extends unknown, S extends IOBaseStream<T, S, B>, B extends BaseStream<T, B>> extends Object implements BaseStream<T, B> {
     constructor(arg0: S)
     // private delegate: S;
     close(): void;

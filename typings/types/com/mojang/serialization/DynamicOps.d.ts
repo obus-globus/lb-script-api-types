@@ -14,11 +14,11 @@ import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
-export interface DynamicOps<T extends Object | number | string | boolean> extends Object {
+export interface DynamicOps<T extends unknown> extends Object {
     compressMaps(): boolean;
-    convertList<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: T): U;
-    convertMap<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: T): U;
-    convertTo<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: T): U;
+    convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: T): U;
+    convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: T): U;
+    convertTo<U extends unknown>(arg0: DynamicOps<U>, arg1: T): U;
     createBoolean(arg0: boolean): T;
     createByte(arg0: number): T;
     createByteList(arg0: ByteBuffer): T;
@@ -63,7 +63,7 @@ export interface DynamicOps<T extends Object | number | string | boolean> extend
     set(arg0: T, arg1: string, arg2: T): T;
     update(arg0: T, arg1: string, arg2: (param0: T) => T): T;
     updateGeneric(arg0: T, arg1: T, arg2: (param0: T) => T): T;
-    withDecoder<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: T) => DataResult<Pair<E, T>>;
-    withEncoder<E extends Object | number | string | boolean>(arg0: Encoder<E>): (param0: E) => DataResult<T>;
-    withParser<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: T) => DataResult<E>;
+    withDecoder<E extends unknown>(arg0: Decoder<E>): (param0: T) => DataResult<Pair<E, T>>;
+    withEncoder<E extends unknown>(arg0: Encoder<E>): (param0: E) => DataResult<T>;
+    withParser<E extends unknown>(arg0: Decoder<E>): (param0: T) => DataResult<E>;
 }

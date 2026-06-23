@@ -10,12 +10,12 @@ export class ScopedValue$Carrier extends Object {
     // private key: ScopedValue<Object>;
     // private prev: ScopedValue$Carrier;
     // private value: Object;
-    call<R extends Object | number | string | boolean, X extends Throwable>(arg0: () => R): R;
+    call<R extends unknown, X extends Throwable>(arg0: () => R): R;
     get(): Object;
-    get<T extends Object | number | string | boolean>(arg0: ScopedValue<T>): T;
+    get<T extends unknown>(arg0: ScopedValue<T>): T;
     getKey(): ScopedValue<Object>;
     run(arg0: () => void): void;
     // private runWith(arg0: ScopedValue$Snapshot, arg1: () => void): void;
-    // private runWith<R extends Object | number | string | boolean, X extends Throwable>(arg0: ScopedValue$Snapshot, arg1: () => R): R;
-    where<T extends Object | number | string | boolean>(arg0: ScopedValue<T>, arg1: T): ScopedValue$Carrier;
+    // private runWith<R extends unknown, X extends Throwable>(arg0: ScopedValue$Snapshot, arg1: () => R): R;
+    where<T extends unknown>(arg0: ScopedValue<T>, arg1: T): ScopedValue$Carrier;
 }

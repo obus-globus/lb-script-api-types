@@ -36,5 +36,5 @@ export class OptionInstance$ClampingLazyMaxIntRange extends Record implements Op
     toString(): string;
     validateValue(value: number): Optional<number>;
     valueListSupplier(): CycleButton$ValueListSupplier<number>;
-    xmap<R extends Object | number | string | boolean>(to: (param0: number) => R, from: (param0: R) => number, discrete: boolean): OptionInstance$SliderableValueSet<R>;
+    xmap<R extends unknown>(to: (param0: number) => R, from: (param0: R) => number, discrete: boolean): OptionInstance$SliderableValueSet<R>;
 }

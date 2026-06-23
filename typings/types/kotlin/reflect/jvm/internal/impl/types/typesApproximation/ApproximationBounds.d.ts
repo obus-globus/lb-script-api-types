@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class ApproximationBounds<T extends Object | number | string | boolean> extends Object {
+export class ApproximationBounds<T extends unknown> extends Object {
     constructor(arg0: T, arg1: T)
     readonly lower: T;
     readonly upper: T;

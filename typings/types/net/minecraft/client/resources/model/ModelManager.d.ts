@@ -46,7 +46,7 @@ export class ModelManager extends Object implements FabricModelManager, FabricRe
     getFluidStateModelSet(): FluidStateModelSet;
     getItemModel(id: Identifier): ItemModel;
     getItemProperties(id: Identifier): ClientItem$Properties;
-    getModel<T extends Object | number | string | boolean>(arg0: ExtraModelKey<T>): T;
+    getModel<T extends unknown>(arg0: ExtraModelKey<T>): T;
     getModel(arg0: ExtraModelKey<Object>): Object;
     getName(): string;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;

@@ -7,7 +7,7 @@ import type { ModelBaker } from '../../../../../../../../net/minecraft/client/re
 import type { ResolvableModel$Resolver } from '../../../../../../../../net/minecraft/client/resources/model/ResolvableModel$Resolver.d.ts'
 import type { ResolvedModel } from '../../../../../../../../net/minecraft/client/resources/model/ResolvedModel.d.ts'
 import type { Identifier } from '../../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export class SimpleUnbakedExtraModel<T extends Object | number | string | boolean> extends Object implements UnbakedExtraModel<T> {
+export class SimpleUnbakedExtraModel<T extends unknown> extends Object implements UnbakedExtraModel<T> {
     static blockStateModel(paramarg0: Identifier): SimpleUnbakedExtraModel<BlockStateModel>;
     static blockStateModel(paramarg0: Identifier, paramarg1: ModelState): SimpleUnbakedExtraModel<BlockStateModel>;
     constructor(arg0: Identifier, arg1: (param0: ResolvedModel, param1: ModelBaker) => T)

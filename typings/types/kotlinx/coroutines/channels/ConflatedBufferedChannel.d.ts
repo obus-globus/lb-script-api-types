@@ -4,7 +4,7 @@ import type { BufferedChannel } from '../../../kotlinx/coroutines/channels/Buffe
 import type { Channel$Factory } from '../../../kotlinx/coroutines/channels/Channel$Factory.d.ts'
 import type { ChannelResult } from '../../../kotlinx/coroutines/channels/ChannelResult.d.ts'
 import type { SelectInstance } from '../../../kotlinx/coroutines/selects/SelectInstance.d.ts'
-export class ConflatedBufferedChannel<E extends Object | number | string | boolean> extends BufferedChannel<E> {
+export class ConflatedBufferedChannel<E extends unknown> extends BufferedChannel<E> {
     static BUFFERED: number;
     static CONFLATED: number;
     static DEFAULT_BUFFER_PROPERTY_NAME: string;

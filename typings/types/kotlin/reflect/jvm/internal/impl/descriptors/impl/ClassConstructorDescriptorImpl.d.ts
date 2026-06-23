@@ -25,7 +25,7 @@ export class ClassConstructorDescriptorImpl extends FunctionDescriptorImpl imple
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: ClassDescriptor, arg1: ConstructorDescriptor, arg2: AnnotationDescriptor[], arg3: boolean, arg4: CallableMemberDescriptor$Kind, arg5: SourceElement)
     // private isPrimary: boolean;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     // private calculateContextReceiverParameters(): ReceiverParameterDescriptor[];
     calculateDispatchReceiverParameter(): ReceiverParameterDescriptor;
     copy(arg0: DeclarationDescriptor, arg1: Modality, arg2: DescriptorVisibility, arg3: CallableMemberDescriptor$Kind, arg4: boolean): ClassConstructorDescriptor;

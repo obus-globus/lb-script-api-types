@@ -29,7 +29,7 @@ export class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     // private originalSubstitutor: TypeSubstitutor;
     readonly typeConstructor: TypeConstructor;
     // private typeConstructorParameters: TypeParameterDescriptor[];
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getAnnotations(): AnnotationDescriptor[];
     getCompanionObjectDescriptor(): ClassDescriptor;
     getConstructors(): ClassConstructorDescriptor[];

@@ -11,5 +11,5 @@ export class AccessExpression extends Object implements Expression {
     object(arg0: Expression): void;
     property(): string;
     toString(): string;
-    visit<R extends Object | number | string | boolean>(arg0: ExpressionVisitor<R>): R;
+    visit<R extends unknown>(arg0: ExpressionVisitor<R>): R;
 }

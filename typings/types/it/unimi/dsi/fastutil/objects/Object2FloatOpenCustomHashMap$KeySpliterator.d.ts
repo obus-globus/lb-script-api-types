@@ -13,8 +13,8 @@ export class Object2FloatOpenCustomHashMap$KeySpliterator extends Object2FloatOp
     static SUBSIZED: number;
     constructor(null_: Object2FloatOpenCustomHashMap$KeySpliterator)
     constructor(null_: Object2FloatOpenCustomHashMap$KeySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: K) => void, arg1: number): void;
+    acceptOnIndex<K extends unknown>(arg0: (param0: K) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<K extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Object2FloatOpenCustomHashMap$KeySpliterator;
+    makeForSplit<K extends unknown>(arg0: number, arg1: number, arg2: boolean): Object2FloatOpenCustomHashMap$KeySpliterator;
     skip(arg0: number): number;
 }

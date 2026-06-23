@@ -13,7 +13,7 @@ import type { Rule$SimpleRuleAction } from '../../../../../../net/minecraft/util
 import type { Scope } from '../../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
 import type { Term } from '../../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 import type { ResourceSuggestion } from '../../../../../../net/minecraft/util/parsing/packrat/commands/ResourceSuggestion.d.ts'
-export abstract class ResourceLookupRule<C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Rule<StringReader, V>, ResourceSuggestion {
+export abstract class ResourceLookupRule<C extends unknown, V extends unknown> extends Object implements Rule<StringReader, V>, ResourceSuggestion {
     static fromTerm(paramchild: Term<Object>, paramaction: (param0: ParseState<Object>) => Object | null): Rule<Object, Object>;
     static fromTerm(paramchild: Term<Object>, paramaction: (param0: Scope) => Object | null): Rule<Object, Object>;
     constructor(idParser: NamedRule<StringReader, Identifier>, context: C)

@@ -14,8 +14,8 @@ export class Short2ObjectOpenHashMap$EntrySpliterator extends Short2ObjectOpenHa
     static SUBSIZED: number;
     constructor(null_: Short2ObjectOpenHashMap$EntrySpliterator)
     constructor(null_: Short2ObjectOpenHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Short2ObjectMap$Entry<V>) => void, arg1: number): void;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Short2ObjectMap$Entry<V>) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Short2ObjectOpenHashMap$EntrySpliterator;
+    makeForSplit<V extends unknown>(arg0: number, arg1: number, arg2: boolean): Short2ObjectOpenHashMap$EntrySpliterator;
     skip(arg0: number): number;
 }

@@ -16,10 +16,10 @@ export class NBTList extends NBTTag<NBTTag<Object>[]> {
     get(arg0: number): NBTTag<Object>;
     get<T extends NBTTag<Object>>(arg0: number, arg1: Class<T>): T;
     getElement(arg0: number): Object;
-    getElement<T extends Object | number | string | boolean>(arg0: number, arg1: Class<T>): T;
+    getElement<T extends unknown>(arg0: number, arg1: Class<T>): T;
     getElementType(): number;
     getElements(): Object[];
-    getElements<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
+    getElements<T extends unknown>(arg0: Class<T>): T[];
     getValue(): NBTTag<Object>[];
     getValue<T extends NBTTag<Object>>(arg0: Class<T>): T[];
     isEmpty(): boolean;

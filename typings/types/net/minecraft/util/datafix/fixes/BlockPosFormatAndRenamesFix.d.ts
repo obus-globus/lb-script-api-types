@@ -16,6 +16,6 @@ export class BlockPosFormatAndRenamesFix extends DataFix {
     // private addEntityRules(rules: TypeRewriteRule[]): void;
     // private createEntityFixer(type: DSL$TypeReference, entityName: string, fields: { [key: string]: string }): TypeRewriteRule;
     // private fixFields(typed: Typed<Object>, fields: { [key: string]: string }): Typed<Object>;
-    // private fixMapSavedData<T extends Object | number | string | boolean>(data: Dynamic<T>): Dynamic<T>;
+    // private fixMapSavedData<T extends unknown>(data: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
 }

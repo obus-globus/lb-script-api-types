@@ -108,8 +108,8 @@ export class PlainText extends Record implements CharSequence, Component, Format
     toFlatList(rootStyle: Style): Component[];
     toString(): string;
     tryCollapseToString(): string;
-    visit<T extends Object | number | string | boolean>(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit<T extends Object | number | string | boolean>(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
+    visit<T extends unknown>(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends unknown>(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
 }

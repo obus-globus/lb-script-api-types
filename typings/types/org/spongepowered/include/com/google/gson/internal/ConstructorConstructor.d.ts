@@ -7,9 +7,9 @@ import type { TypeToken } from '../../../../../../../org/spongepowered/include/c
 export class ConstructorConstructor extends Object {
     constructor(arg0: Map<Type, InstanceCreator<Object>>)
     // private instanceCreators: Map<Type, InstanceCreator<Object>>;
-    get<T extends Object | number | string | boolean>(arg0: TypeToken<T>): ObjectConstructor<T>;
-    // private newDefaultConstructor<T extends Object | number | string | boolean>(arg0: Class<T>): ObjectConstructor<T>;
-    // private newDefaultImplementationConstructor<T extends Object | number | string | boolean>(arg0: Type, arg1: Class<T>): ObjectConstructor<T>;
-    // private newUnsafeAllocator<T extends Object | number | string | boolean>(arg0: Type, arg1: Class<T>): ObjectConstructor<T>;
+    get<T extends unknown>(arg0: TypeToken<T>): ObjectConstructor<T>;
+    // private newDefaultConstructor<T extends unknown>(arg0: Class<T>): ObjectConstructor<T>;
+    // private newDefaultImplementationConstructor<T extends unknown>(arg0: Type, arg1: Class<T>): ObjectConstructor<T>;
+    // private newUnsafeAllocator<T extends unknown>(arg0: Type, arg1: Class<T>): ObjectConstructor<T>;
     toString(): string;
 }

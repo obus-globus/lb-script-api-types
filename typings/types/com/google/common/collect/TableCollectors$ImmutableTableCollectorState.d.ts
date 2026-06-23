@@ -3,7 +3,7 @@ import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
 import type { TableCollectors$MutableCell } from '../../../../com/google/common/collect/TableCollectors$MutableCell.d.ts'
 import type { BinaryOperator } from '../../../../java/util/function/BinaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class TableCollectors$ImmutableTableCollectorState<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export class TableCollectors$ImmutableTableCollectorState<R extends unknown, C extends unknown, V extends unknown> extends Object {
     private constructor()
     // private insertionOrder: TableCollectors$MutableCell<R, C, V>[];
     // private table: Table<R, C, TableCollectors$MutableCell<R, C, V>>;

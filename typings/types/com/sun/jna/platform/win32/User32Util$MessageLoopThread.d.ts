@@ -37,6 +37,6 @@ export class User32Util$MessageLoopThread extends Thread {
     exit(): void;
     getMessageFailed(): boolean;
     run(): void;
-    runAsync<V extends Object | number | string | boolean>(arg0: () => V): Future<V>;
-    runOnThread<V extends Object | number | string | boolean>(arg0: () => V): V;
+    runAsync<V extends unknown>(arg0: () => V): Future<V>;
+    runOnThread<V extends unknown>(arg0: () => V): V;
 }

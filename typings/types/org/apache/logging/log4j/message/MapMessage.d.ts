@@ -7,7 +7,7 @@ import type { IndexedReadOnlyStringMap } from '../../../../../org/apache/logging
 import type { IndexedStringMap } from '../../../../../org/apache/logging/log4j/util/IndexedStringMap.d.ts'
 import type { MultiFormatStringBuilderFormattable } from '../../../../../org/apache/logging/log4j/util/MultiFormatStringBuilderFormattable.d.ts'
 import type { TriConsumer } from '../../../../../org/apache/logging/log4j/util/TriConsumer.d.ts'
-export class MapMessage<M extends MapMessage<M, V>, V extends Object | number | string | boolean> extends Object implements MultiFormatStringBuilderFormattable {
+export class MapMessage<M extends MapMessage<M, V>, V extends unknown> extends Object implements MultiFormatStringBuilderFormattable {
     constructor()
     constructor(initialCapacity: number)
     constructor(map: { [key: string]: V })
@@ -23,8 +23,8 @@ export class MapMessage<M extends MapMessage<M, V>, V extends Object | number | 
     clear(): void;
     containsKey(key: string): boolean;
     equals(o: Object | null): boolean;
-    forEach<CV extends Object | number | string | boolean>(action: (param0: string, param1: CV) => void): void;
-    forEach<CV extends Object | number | string | boolean, S extends Object | number | string | boolean>(action: TriConsumer<string, CV, S>, state: S): void;
+    forEach<CV extends unknown>(action: (param0: string, param1: CV) => void): void;
+    forEach<CV extends unknown, S extends unknown>(action: TriConsumer<string, CV, S>, state: S): void;
     // private format(format: MapMessage$MapFormat, sb: StringBuilder): StringBuilder;
     formatTo(buffer: StringBuilder): void;
     formatTo(formats: string[], buffer: StringBuilder): void;

@@ -32,7 +32,7 @@ export interface RakChannel extends Channel, Object{
     disconnect(): ChannelFuture;
     disconnect(arg0: ChannelPromise): ChannelFuture;
     flush(): Channel;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     id(): ChannelId;
     isActive(): boolean;
     isOpen(): boolean;
@@ -48,7 +48,7 @@ export interface RakChannel extends Channel, Object{
     rakPipeline(): Map$Entry<string, ChannelHandler>[];
     read(): Channel;
     remoteAddress(): SocketAddress;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     unsafe(): Channel$Unsafe;
     voidPromise(): ChannelPromise;
     write(arg0: Object): ChannelFuture;

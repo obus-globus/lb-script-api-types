@@ -4,7 +4,7 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder$Reference } from '../../../../net/minecraft/core/Holder$Reference.d.ts'
 import type { OutgoingRpcMethod } from '../../../../net/minecraft/server/jsonrpc/OutgoingRpcMethod.d.ts'
-export class PendingRpcRequest<Result extends Object | number | string | boolean> extends Record {
+export class PendingRpcRequest<Result extends unknown> extends Record {
     // private method: Holder$Reference<OutgoingRpcMethod<Object, Result>>;
     // private resultFuture: CompletableFuture<Result>;
     // private timeoutTime: number;

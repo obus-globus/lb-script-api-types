@@ -5,7 +5,7 @@ import type { CoroutineContext$Key } from '../../kotlin/coroutines/CoroutineCont
 export abstract class AbstractCoroutineContextElement extends Object implements CoroutineContext$Element {
     constructor(key: CoroutineContext$Key<any>)
     readonly key: CoroutineContext$Key<any>;
-    fold<R extends Object | number | string | boolean>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
+    fold<R extends unknown>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
     minusKey(key: CoroutineContext$Key<any>): CoroutineContext;
 }

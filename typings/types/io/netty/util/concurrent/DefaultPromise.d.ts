@@ -7,7 +7,7 @@ import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-export class DefaultPromise<V extends Object | number | string | boolean> extends AbstractFuture<V> implements Promise<V> {
+export class DefaultPromise<V extends unknown> extends AbstractFuture<V> implements Promise<V> {
     static PROPERTY_MAX_LISTENER_STACK_DEPTH: string;
     constructor()
     constructor(arg0: (Object | null)[])

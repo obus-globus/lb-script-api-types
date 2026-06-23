@@ -1,5 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Table$Cell<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object{
+export interface Table$Cell<R extends unknown, C extends unknown, V extends unknown> extends Object{
     getColumnKey(): C;
     getRowKey(): R;
     getValue(): V;

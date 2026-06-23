@@ -1,6 +1,6 @@
 import type { ObjectSpliterators$AbstractIndexBasedSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterators$AbstractIndexBasedSpliterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class ObjectSpliterators$EarlyBindingSizeIndexBasedSpliterator<K extends Object | number | string | boolean> extends ObjectSpliterators$AbstractIndexBasedSpliterator<K> {
+export abstract class ObjectSpliterators$EarlyBindingSizeIndexBasedSpliterator<K extends unknown> extends ObjectSpliterators$AbstractIndexBasedSpliterator<K> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

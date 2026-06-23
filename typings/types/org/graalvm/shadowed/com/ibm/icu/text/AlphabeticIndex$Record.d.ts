@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
-export class AlphabeticIndex$Record<V extends Object | number | string | boolean> extends Object {
+export class AlphabeticIndex$Record<V extends unknown> extends Object {
     private constructor(name: CharSequence, data: V)
     readonly data: V;
     readonly name: CharSequence;

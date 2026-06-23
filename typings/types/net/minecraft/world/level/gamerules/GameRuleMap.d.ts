@@ -14,14 +14,14 @@ export class GameRuleMap extends SavedData {
     private constructor(map: Map<GameRule<Object>, Object>)
     // private map: Map<GameRule<Object>, Object>;
     equals(obj: Object | null): boolean;
-    get<T extends Object | number | string | boolean>(gameRule: GameRule<T>): T;
+    get<T extends unknown>(gameRule: GameRule<T>): T;
     has(gameRule: GameRule<Object>): boolean;
     hashCode(): number;
     keySet(): GameRule<Object>[];
     // private map(): Map<GameRule<Object>, Object>;
-    remove<T extends Object | number | string | boolean>(gameRule: GameRule<T>): T;
-    reset<T extends Object | number | string | boolean>(gameRule: GameRule<T>): void;
-    set<T extends Object | number | string | boolean>(gameRule: GameRule<T>, value: T): void;
+    remove<T extends unknown>(gameRule: GameRule<T>): T;
+    reset<T extends unknown>(gameRule: GameRule<T>): void;
+    set<T extends unknown>(gameRule: GameRule<T>, value: T): void;
     setFromIf(other: GameRuleMap, predicate: (param0: GameRule<Object>) => boolean): void;
     size(): number;
     toString(): string;

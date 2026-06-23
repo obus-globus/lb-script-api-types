@@ -1,6 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ListIterator } from '../../../java/util/ListIterator.d.ts'
-export class ListBuilder$Itr<E extends Object | number | string | boolean> extends Object implements ListIterator<E> {
+export class ListBuilder$Itr<E extends unknown> extends Object implements ListIterator<E> {
     constructor(list: E[], index: number)
     // private expectedModCount: number;
     // private index: number;

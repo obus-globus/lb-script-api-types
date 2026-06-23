@@ -13,6 +13,6 @@ export class ScopedValueContainer extends StackableScope {
     static popAll(): void;
     static run(paramarg0: () => void): void;
     private constructor()
-    // private doCall<V extends Object | number | string | boolean, X extends Throwable>(arg0: () => V): V;
+    // private doCall<V extends unknown, X extends Throwable>(arg0: () => V): V;
     // private doRun(arg0: () => void): void;
 }

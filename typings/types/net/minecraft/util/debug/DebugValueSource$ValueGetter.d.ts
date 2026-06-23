@@ -1,4 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface DebugValueSource$ValueGetter<T extends Object | number | string | boolean> extends Object{
+export interface DebugValueSource$ValueGetter<T extends unknown> extends Object{
     get(): T;
 }

@@ -13,14 +13,14 @@ export abstract class AbstractListeningExecutorService extends AbstractExecutorS
     awaitTermination(timeout: Duration): boolean;
     awaitTermination(arg0: number, arg1: TimeUnit): boolean;
     execute(arg0: () => void): void;
-    invokeAll<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(tasks: () => T[], timeout: Duration): T;
+    invokeAll<T extends unknown>(tasks: () => T[], timeout: Duration): Future<T>[];
+    invokeAny<T extends unknown>(tasks: () => T[], timeout: Duration): T;
     isShutdown(): boolean;
     isTerminated(): boolean;
-    newTaskFor<T extends Object | number | string | boolean>(runnable: () => void, value: T): RunnableFuture<T>;
-    newTaskFor<T extends Object | number | string | boolean>(callable: () => T): RunnableFuture<T>;
+    newTaskFor<T extends unknown>(runnable: () => void, value: T): RunnableFuture<T>;
+    newTaskFor<T extends unknown>(callable: () => T): RunnableFuture<T>;
     shutdown(): void;
     submit(task: () => void): ListenableFuture<Object>;
-    submit<T extends Object | number | string | boolean>(task: () => void, result: T): ListenableFuture<T>;
-    submit<T extends Object | number | string | boolean>(task: () => T): ListenableFuture<T>;
+    submit<T extends unknown>(task: () => void, result: T): ListenableFuture<T>;
+    submit<T extends unknown>(task: () => T): ListenableFuture<T>;
 }

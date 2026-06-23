@@ -9,13 +9,13 @@ export class LinkedListMultimap$ValueForKeyIterator extends Object implements Li
     // private next: LinkedListMultimap$Node<K, V>;
     // private nextIndex: number;
     // private previous: LinkedListMultimap$Node<K, V>;
-    add<V extends Object | number | string | boolean>(value: V): void;
+    add<V extends unknown>(value: V): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    next<V extends Object | number | string | boolean>(): V;
+    next<V extends unknown>(): V;
     nextIndex(): number;
-    previous<V extends Object | number | string | boolean>(): V;
+    previous<V extends unknown>(): V;
     previousIndex(): number;
     remove(): void;
-    set<V extends Object | number | string | boolean>(value: V): void;
+    set<V extends unknown>(value: V): void;
 }

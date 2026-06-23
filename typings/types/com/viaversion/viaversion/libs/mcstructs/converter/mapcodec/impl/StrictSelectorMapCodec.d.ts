@@ -9,7 +9,7 @@ import type { Function } from '../../../../../../../../java/util/function/Functi
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-export class StrictSelectorMapCodec<T extends Object | number | string | boolean> extends Object implements MapCodec<T> {
+export class StrictSelectorMapCodec<T extends unknown> extends Object implements MapCodec<T> {
     static UNIT: MapCodec<boolean>;
     static either(paramarg0: MapCodec<Object>, paramarg1: MapCodec<Object>): MapCodec<Either<Object, Object>>;
     static failing(paramarg0: string): MapCodec<Object>;
@@ -26,11 +26,11 @@ export class StrictSelectorMapCodec<T extends Object | number | string | boolean
     asCodec(): Codec<T>;
     defaulted(arg0: T): MapCodec<T>;
     defaulted(arg0: (param0: T) => boolean, arg1: () => T): MapCodec<T>;
-    deserialize<S extends Object | number | string | boolean>(arg0: DataConverter<S>, arg1: Map<S, S>): Result<T>;
+    deserialize<S extends unknown>(arg0: DataConverter<S>, arg1: Map<S, S>): Result<T>;
     elseGet(arg0: () => T): MapCodec<T>;
     field(arg0: string): FieldMapCodec$Builder$Stage1<T>;
-    map<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
-    mapThrowing<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
-    serialize<S extends Object | number | string | boolean>(arg0: DataConverter<S>, arg1: Map<S, S>, arg2: T): Result<Map<S, S>>;
+    map<N extends unknown>(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
+    mapThrowing<N extends unknown>(arg0: (param0: N) => T, arg1: (param0: T) => N): MapCodec<N>;
+    serialize<S extends unknown>(arg0: DataConverter<S>, arg1: Map<S, S>, arg2: T): Result<Map<S, S>>;
     verified(arg0: (param0: T) => Result<void>): MapCodec<T>;
 }

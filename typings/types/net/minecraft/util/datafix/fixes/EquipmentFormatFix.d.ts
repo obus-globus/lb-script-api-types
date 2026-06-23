@@ -11,6 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class EquipmentFormatFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
-    // private fix<ItemStackOld extends Object | number | string | boolean, ItemStackNew extends Object | number | string | boolean>(oldItemStackType: Type<ItemStackOld>, newItemStackType: Type<ItemStackNew>, idFinder: OpticFinder<Object>): TypeRewriteRule;
+    // private fix<ItemStackOld extends unknown, ItemStackNew extends unknown>(oldItemStackType: Type<ItemStackOld>, newItemStackType: Type<ItemStackNew>, idFinder: OpticFinder<Object>): TypeRewriteRule;
     makeRule(): TypeRewriteRule;
 }

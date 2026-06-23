@@ -7,7 +7,7 @@ import type { ResourceOrIdArgument$Result } from '../../../../net/minecraft/comm
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { HolderLookup$Provider } from '../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { HolderLookup$RegistryLookup } from '../../../../net/minecraft/core/HolderLookup$RegistryLookup.d.ts'
-export class ResourceOrIdArgument$InlineResult<T extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Record implements ResourceOrIdArgument$Result<T, O> {
+export class ResourceOrIdArgument$InlineResult<T extends unknown, O extends unknown> extends Record implements ResourceOrIdArgument$Result<T, O> {
     constructor(value: O)
     // private value: O;
     equals(o: Object | null): boolean;

@@ -5,7 +5,7 @@ import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fa
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractObject2FloatSortedMap$ValuesIterator<K extends Object | number | string | boolean> extends Object implements FloatIterator {
+export class AbstractObject2FloatSortedMap$ValuesIterator<K extends unknown> extends Object implements FloatIterator {
     constructor(arg0: ObjectBidirectionalIterator<Object2FloatMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Object2FloatMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;

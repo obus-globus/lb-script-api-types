@@ -9,5 +9,5 @@ export class DebugContext extends Object {
     // private executionLifecycle: DebuggerExecutionLifecycle;
     evaluate(code: string, languageId: string): DebugValue;
     getParent(): DebugContext;
-    runInContext<T extends Object | number | string | boolean>(run: () => T): T;
+    runInContext<T extends unknown>(run: () => T): T;
 }

@@ -7,7 +7,7 @@ import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export class CompletableFuture$MinimalStage<T extends Object | number | string | boolean> extends CompletableFuture<T> {
+export class CompletableFuture$MinimalStage<T extends unknown> extends CompletableFuture<T> {
     static allOf(paramarg0: Object | null): CompletableFuture<void>;
     static anyOf(paramarg0: Object | null): CompletableFuture<Object>;
     static completedFuture(paramarg0: Object | null): CompletableFuture<Object>;
@@ -37,7 +37,7 @@ export class CompletableFuture$MinimalStage<T extends Object | number | string |
     isCompletedExceptionally(): boolean;
     isDone(): boolean;
     join(): T;
-    newIncompleteFuture<U extends Object | number | string | boolean>(): CompletableFuture<U>;
+    newIncompleteFuture<U extends unknown>(): CompletableFuture<U>;
     obtrudeException(arg0: Throwable): void;
     obtrudeValue(arg0: T): void;
     orTimeout(arg0: number, arg1: TimeUnit): CompletableFuture<T>;

@@ -6,7 +6,7 @@ import type { PreparableReloadListener$PreparationBarrier } from '../../../../..
 import type { PreparableReloadListener$SharedState } from '../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
 import type { ResourceManager } from '../../../../../net/minecraft/server/packs/resources/ResourceManager.d.ts'
 import type { ProfilerFiller } from '../../../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
-export abstract class SimplePreparableReloadListener<T extends Object | number | string | boolean> extends Object implements PreparableReloadListener {
+export abstract class SimplePreparableReloadListener<T extends unknown> extends Object implements PreparableReloadListener {
     constructor()
     apply(preparations: T, manager: ResourceManager, profiler: ProfilerFiller): void;
     getName(): string;

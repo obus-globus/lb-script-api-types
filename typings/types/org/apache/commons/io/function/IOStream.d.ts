@@ -24,19 +24,19 @@ import type { IOPredicate } from '../../../../../org/apache/commons/io/function/
 import type { IORunnable } from '../../../../../org/apache/commons/io/function/IORunnable.d.ts'
 import type { IOSpliterator } from '../../../../../org/apache/commons/io/function/IOSpliterator.d.ts'
 import type { IOSupplier } from '../../../../../org/apache/commons/io/function/IOSupplier.d.ts'
-export interface IOStream<T extends Object | number | string | boolean> extends Object, IOBaseStream<T, IOStream<T>, Stream<T>> {
+export interface IOStream<T extends unknown> extends Object, IOBaseStream<T, IOStream<T>, Stream<T>> {
     allMatch(arg0: (param0: T) => boolean): boolean;
     anyMatch(arg0: (param0: T) => boolean): boolean;
     asBaseStream(): BaseStream<T, Stream<T>>;
     close(): void;
-    collect<R extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: Collector<T, A, R>): R;
-    collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: T) => void, arg2: (param0: R, param1: R) => void): R;
+    collect<R extends unknown, A extends unknown>(arg0: Collector<T, A, R>): R;
+    collect<R extends unknown>(arg0: () => R, arg1: (param0: R, param1: T) => void, arg2: (param0: R, param1: R) => void): R;
     count(): number;
     distinct(): IOStream<T>;
     filter(arg0: (param0: T) => boolean): IOStream<T>;
     findAny(): Optional<T>;
     findFirst(): Optional<T>;
-    flatMap<R extends Object | number | string | boolean>(arg0: (param0: T) => IOStream<R>): IOStream<R>;
+    flatMap<R extends unknown>(arg0: (param0: T) => IOStream<R>): IOStream<R>;
     flatMapToDouble(arg0: (param0: T) => DoubleStream): DoubleStream;
     flatMapToInt(arg0: (param0: T) => IntStream): IntStream;
     flatMapToLong(arg0: (param0: T) => LongStream): LongStream;
@@ -47,7 +47,7 @@ export interface IOStream<T extends Object | number | string | boolean> extends 
     isParallel(): boolean;
     iterator(): IOIterator<T>;
     limit(arg0: number): IOStream<T>;
-    map<R extends Object | number | string | boolean>(arg0: (param0: T) => R): IOStream<R>;
+    map<R extends unknown>(arg0: (param0: T) => R): IOStream<R>;
     mapToDouble(arg0: (param0: T) => number): DoubleStream;
     mapToInt(arg0: (param0: T) => number): IntStream;
     mapToLong(arg0: (param0: T) => number): LongStream;
@@ -58,7 +58,7 @@ export interface IOStream<T extends Object | number | string | boolean> extends 
     parallel(): IOStream<T>;
     peek(arg0: (param0: T) => void): IOStream<T>;
     reduce(arg0: T, arg1: (param0: T, param1: Object | null) => Object | null): T;
-    reduce<U extends Object | number | string | boolean>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: Object | null) => Object | null): U;
+    reduce<U extends unknown>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: Object | null) => Object | null): U;
     reduce(arg0: (param0: T, param1: Object | null) => Object | null): Optional<T>;
     sequential(): IOStream<T>;
     skip(arg0: number): IOStream<T>;
@@ -66,6 +66,6 @@ export interface IOStream<T extends Object | number | string | boolean> extends 
     sorted(arg0: (param0: T, param1: T) => number): IOStream<T>;
     spliterator(): IOSpliterator<T>;
     toArray(): Object[];
-    toArray<A extends Object | number | string | boolean>(arg0: (param0: number) => A[]): A[];
+    toArray<A extends unknown>(arg0: (param0: number) => A[]): A[];
     unordered(): IOStream<T>;
 }

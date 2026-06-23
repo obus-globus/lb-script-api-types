@@ -28,7 +28,7 @@ export abstract class AbstractChannelHandlerContext extends Object implements Ch
     // private prev: AbstractChannelHandlerContext;
     // private succeededFuture: ChannelFuture;
     alloc(): ByteBufAllocator;
-    attr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): Attribute<T>;
+    attr<T extends unknown>(arg0: AttributeKey<T>): Attribute<T>;
     bind(arg0: SocketAddress): ChannelFuture;
     bind(arg0: SocketAddress, arg1: ChannelPromise): ChannelFuture;
     callHandlerAdded(): void;
@@ -59,7 +59,7 @@ export abstract class AbstractChannelHandlerContext extends Object implements Ch
     flush(): ChannelHandlerContext;
     getInvokeTasks(): AbstractChannelHandlerContext$Tasks;
     handler(): ChannelHandler;
-    hasAttr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): boolean;
+    hasAttr<T extends unknown>(arg0: AttributeKey<T>): boolean;
     // private invokeBind(arg0: SocketAddress, arg1: ChannelPromise): void;
     // private invokeClose(arg0: ChannelPromise): void;
     // private invokeConnect(arg0: SocketAddress, arg1: SocketAddress, arg2: ChannelPromise): void;

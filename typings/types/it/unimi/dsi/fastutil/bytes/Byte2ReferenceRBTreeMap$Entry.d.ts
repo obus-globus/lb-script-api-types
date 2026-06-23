@@ -1,7 +1,7 @@
 import type { AbstractByte2ReferenceMap$BasicEntry } from '../../../../../it/unimi/dsi/fastutil/bytes/AbstractByte2ReferenceMap$BasicEntry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Byte2ReferenceRBTreeMap$Entry<V extends Object | number | string | boolean> extends AbstractByte2ReferenceMap$BasicEntry<V> implements Cloneable {
+export class Byte2ReferenceRBTreeMap$Entry<V extends unknown> extends AbstractByte2ReferenceMap$BasicEntry<V> implements Cloneable {
     constructor()
     constructor(arg0: number, arg1: V)
     // private info: number;

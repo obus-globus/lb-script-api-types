@@ -16,7 +16,7 @@ export class GLSLParser$WhileStatementContext extends ParserRuleContext {
     LPAREN(): TerminalNode;
     RPAREN(): TerminalNode;
     WHILE(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     attribute(): GLSLParser$AttributeContext;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;

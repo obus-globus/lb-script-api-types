@@ -1,6 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export interface Get<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object{
+export interface Get<K extends unknown, V extends unknown> extends Object{
     containsKey(arg0: Object): boolean;
     containsValue(arg0: Object): boolean;
     entrySet(): Map$Entry<K, V>[];

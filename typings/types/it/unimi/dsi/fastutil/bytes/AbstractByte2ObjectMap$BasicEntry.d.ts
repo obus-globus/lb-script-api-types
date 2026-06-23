@@ -1,6 +1,6 @@
 import type { Byte2ObjectMap$Entry } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2ObjectMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractByte2ObjectMap$BasicEntry<V extends Object | number | string | boolean> extends Object implements Byte2ObjectMap$Entry<V> {
+export class AbstractByte2ObjectMap$BasicEntry<V extends unknown> extends Object implements Byte2ObjectMap$Entry<V> {
     constructor()
     constructor(arg0: number, arg1: V)
     constructor(arg0: number, arg1: V)

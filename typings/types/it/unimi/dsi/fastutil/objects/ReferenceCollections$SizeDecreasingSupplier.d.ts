@@ -2,7 +2,7 @@ import type { AtomicInteger } from '../../../../../java/util/concurrent/atomic/A
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ReferenceCollections$SizeDecreasingSupplier<K extends Object | number | string | boolean, C extends K[]> extends Object implements Supplier<C> {
+export class ReferenceCollections$SizeDecreasingSupplier<K extends unknown, C extends K[]> extends Object implements Supplier<C> {
     constructor(arg0: number, arg1: (param0: number) => C)
     // private builder: (param0: number) => C;
     // private expectedFinalSize: number;

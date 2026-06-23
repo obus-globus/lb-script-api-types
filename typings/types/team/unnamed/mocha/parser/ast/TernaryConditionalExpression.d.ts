@@ -15,5 +15,5 @@ export class TernaryConditionalExpression extends Object implements Expression {
     toString(): string;
     trueExpression(): Expression;
     trueExpression(arg0: Expression): void;
-    visit<R extends Object | number | string | boolean>(arg0: ExpressionVisitor<R>): R;
+    visit<R extends unknown>(arg0: ExpressionVisitor<R>): R;
 }

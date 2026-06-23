@@ -1,6 +1,6 @@
 import type { ObjectBigSpliterators$LateBindingSizeIndexBasedSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBigSpliterators$LateBindingSizeIndexBasedSpliterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractReferenceBigList$IndexBasedSpliterator<K extends Object | number | string | boolean> extends ObjectBigSpliterators$LateBindingSizeIndexBasedSpliterator<K> {
+export class AbstractReferenceBigList$IndexBasedSpliterator<K extends unknown> extends ObjectBigSpliterators$LateBindingSizeIndexBasedSpliterator<K> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

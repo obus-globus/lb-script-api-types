@@ -18,10 +18,10 @@ export class JsonConverter_v1_20_3 extends Object implements DataConverter<JsonE
     asNumber(arg0: JsonElement): Result<Number>;
     asString(arg0: JsonElement): Result<string>;
     asStringTypeMap(arg0: JsonElement): Result<{ [key: string]: JsonElement }>;
-    convertFrom<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: N): JsonElement;
-    convertList<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: JsonElement): N;
-    convertMap<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: JsonElement): N;
-    convertTo<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: JsonElement): N;
+    convertFrom<N extends unknown>(arg0: DataConverter<N>, arg1: N): JsonElement;
+    convertList<N extends unknown>(arg0: DataConverter<N>, arg1: JsonElement): N;
+    convertMap<N extends unknown>(arg0: DataConverter<N>, arg1: JsonElement): N;
+    convertTo<N extends unknown>(arg0: DataConverter<N>, arg1: JsonElement): N;
     createBoolean(arg0: boolean): JsonElement;
     createByte(arg0: number): JsonElement;
     createByteArray(arg0: number[]): JsonElement;
@@ -41,7 +41,7 @@ export class JsonConverter_v1_20_3 extends Object implements DataConverter<JsonE
     empty(): JsonElement;
     emptyList(): JsonElement;
     emptyMap(): JsonElement;
-    fork<O extends Object | number | string | boolean>(arg0: DataConverter<O>): DataConverter<O>;
+    fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<JsonElement>;
     mergeList(arg0: JsonElement, arg1: JsonElement[]): Result<JsonElement>;
     mergeMap(arg0: JsonElement, arg1: JsonElement, arg2: JsonElement): Result<JsonElement>;

@@ -11,7 +11,7 @@ export class GLSLParser$ParameterDeclarationContext extends ParserRuleContext {
     constructor(arg0: ParserRuleContext, arg1: number)
     parameterName: Token;
     IDENTIFIER(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     arraySpecifier(): GLSLParser$ArraySpecifierContext;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;

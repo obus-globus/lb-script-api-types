@@ -4,7 +4,7 @@ import type { ScheduledFuture } from '../../../../../../java/util/concurrent/Sch
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CronScheduledFuture$FutureData } from '../../../../../../org/apache/logging/log4j/core/config/CronScheduledFuture$FutureData.d.ts'
-export class CronScheduledFuture<V extends Object | number | string | boolean> extends Object implements ScheduledFuture<V> {
+export class CronScheduledFuture<V extends unknown> extends Object implements ScheduledFuture<V> {
     constructor(future: ScheduledFuture<V>, runDate: Date)
     // private futureData: CronScheduledFuture$FutureData;
     cancel(mayInterruptIfRunning: boolean): boolean;

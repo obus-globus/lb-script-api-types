@@ -7,9 +7,9 @@ export class AnnotationConstruct extends Object {
     constructor(arg0: AnnotationElement[])
     readonly annotationElements: AnnotationElement[];
     // private unsignedFlag: number;
-    getAnnotation<T extends Object | number | string | boolean>(arg0: Class<Annotation>): T;
+    getAnnotation<T extends unknown>(arg0: Class<Annotation>): T;
     getAnnotationElement(arg0: Class<Annotation>): AnnotationElement;
-    getAnnotationValue<T extends Object | number | string | boolean>(arg0: Class<Annotation>, arg1: T): T;
+    getAnnotationValue<T extends unknown>(arg0: Class<Annotation>, arg1: T): T;
     getDescription(): string;
     getLabel(): string;
     getUnmodifiableAnnotationElements(): AnnotationElement[];

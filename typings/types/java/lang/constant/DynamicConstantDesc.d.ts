@@ -3,7 +3,7 @@ import type { ConstantDesc } from '../../../java/lang/constant/ConstantDesc.d.ts
 import type { DirectMethodHandleDesc } from '../../../java/lang/constant/DirectMethodHandleDesc.d.ts'
 import type { MethodHandles$Lookup } from '../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class DynamicConstantDesc<T extends Object | number | string | boolean> extends Object implements ConstantDesc {
+export abstract class DynamicConstantDesc<T extends unknown> extends Object implements ConstantDesc {
     static of(paramarg0: DirectMethodHandleDesc): DynamicConstantDesc<Object>;
     static of(paramarg0: DirectMethodHandleDesc, paramarg1: (Object | null)[]): DynamicConstantDesc<Object>;
     static ofCanonical(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: (Object | null)[]): ConstantDesc;

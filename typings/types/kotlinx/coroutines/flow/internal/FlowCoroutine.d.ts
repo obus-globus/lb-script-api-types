@@ -4,7 +4,7 @@ import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.
 import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { Job$Key } from '../../../../kotlinx/coroutines/Job$Key.d.ts'
 import type { ScopeCoroutine } from '../../../../kotlinx/coroutines/internal/ScopeCoroutine.d.ts'
-export class FlowCoroutine<T extends Object | number | string | boolean> extends ScopeCoroutine<T> {
+export class FlowCoroutine<T extends unknown> extends ScopeCoroutine<T> {
     static Key: Job$Key;
     constructor(context: CoroutineContext, uCont: Continuation<T>)
     childCancelled(cause: Throwable): boolean;

@@ -28,5 +28,5 @@ export class StructSpecifier extends TypeSpecifier {
     getStructBody(): StructBody;
     setName(arg0: Identifier): void;
     setStructBody(arg0: StructBody): void;
-    typeSpecifierAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    typeSpecifierAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

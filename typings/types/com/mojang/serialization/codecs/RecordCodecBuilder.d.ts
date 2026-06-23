@@ -8,7 +8,7 @@ import type { RecordCodecBuilder$Instance } from '../../../../com/mojang/seriali
 import type { RecordCodecBuilder$Mu } from '../../../../com/mojang/serialization/codecs/RecordCodecBuilder$Mu.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class RecordCodecBuilder<O extends Object | number | string | boolean, F extends Object | number | string | boolean> extends Object implements App<RecordCodecBuilder$Mu<O>, F> {
+export class RecordCodecBuilder<O extends unknown, F extends unknown> extends Object implements App<RecordCodecBuilder$Mu<O>, F> {
     static build(paramarg0: App<RecordCodecBuilder$Mu<Object>, Object>): MapCodec<Object>;
     static create(paramarg0: (param0: RecordCodecBuilder$Instance<Object>) => App<RecordCodecBuilder$Mu<Object>, Object>): Codec<Object>;
     static deprecated(paramarg0: Object | null, paramarg1: number): RecordCodecBuilder<Object, Object>;
@@ -24,5 +24,5 @@ export class RecordCodecBuilder<O extends Object | number | string | boolean, F 
     // private decoder: MapDecoder<F>;
     // private encoder: (param0: O) => MapEncoder<F>;
     // private getter: (param0: O) => F;
-    dependent<E extends Object | number | string | boolean>(arg0: (param0: O) => E, arg1: MapEncoder<E>, arg2: (param0: F) => MapDecoder<E>): RecordCodecBuilder<O, E>;
+    dependent<E extends unknown>(arg0: (param0: O) => E, arg1: MapEncoder<E>, arg2: (param0: F) => MapDecoder<E>): RecordCodecBuilder<O, E>;
 }

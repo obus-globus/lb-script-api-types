@@ -58,7 +58,7 @@ export class ArmorComparator extends Object implements Comparator<ArmorPiece> {
     reversed(): (param0: Object) => boolean;
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparing<U extends Comparable<U>>(arg0: (param0: ArmorPiece) => U): (param0: Object) => boolean;
-    thenComparing<U extends Object | number | string | boolean>(arg0: (param0: ArmorPiece) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparing<U extends unknown>(arg0: (param0: ArmorPiece) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparingDouble(arg0: (param0: ArmorPiece) => number): (param0: Object) => boolean;
     thenComparingInt(arg0: (param0: ArmorPiece) => number): (param0: Object) => boolean;
     thenComparingLong(arg0: (param0: ArmorPiece) => number): (param0: Object) => boolean;

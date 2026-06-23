@@ -28,9 +28,9 @@ export class LiteralNode$ArrayLiteralNode extends LiteralNode<Expression[]> impl
     // private hasSpread: boolean;
     // private hasTrailingComma: boolean;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getElementExpressions(): Expression[];
     hasSpread(): boolean;
     hasTrailingComma(): boolean;

@@ -2,7 +2,7 @@ import type { Serializable } from '../java/io/Serializable.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
 import type { Result$Companion } from '../kotlin/Result$Companion.d.ts'
 import type { Throwable } from '../java/lang/Throwable.d.ts'
-export class Result<T extends Object | number | string | boolean> extends Object implements Serializable {
+export class Result<T extends unknown> extends Object implements Serializable {
     static Companion: Result$Companion;
 // (invalid TS: name contains '-')     static box-impl(paramarg0: Object): Result<Object>;
 // (invalid TS: name contains '-')     static constructor-impl(paramarg0: Object): Object;

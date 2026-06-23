@@ -15,6 +15,6 @@ export abstract class DataComponentRemainderFix extends DataFix {
     // private componentId: string;
     // private name: string;
     // private newComponentId: string;
-    fixComponent<T extends Object | number | string | boolean>(input: Dynamic<T>): Dynamic<T>;
+    fixComponent<T extends unknown>(input: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
 }

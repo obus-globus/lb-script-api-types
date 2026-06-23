@@ -16,7 +16,7 @@ import type { JSFunctionObject } from '../../../../../com/oracle/truffle/js/runt
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { PromiseCapabilityRecord } from '../../../../../com/oracle/truffle/js/runtime/objects/PromiseCapabilityRecord.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$AsyncIteratorRootNode<T extends Object | number | string | boolean> extends JavaScriptRootNode implements AsyncHandlerRootNode {
+export abstract class AsyncIteratorPrototypeBuiltins$AsyncIteratorAwaitNode$AsyncIteratorRootNode<T extends unknown> extends JavaScriptRootNode implements AsyncHandlerRootNode {
     static MODULE_DUMMY_FRAMEDESCRIPTOR: FrameDescriptor;
     static createConstantNode(paramconstant: Object): RootNode;
     static findAsynchronousFrames(paramrootNode: JavaScriptRootNode, paramframe: Frame): TruffleStackTraceElement[];

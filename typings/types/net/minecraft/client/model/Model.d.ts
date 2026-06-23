@@ -7,7 +7,7 @@ import type { ModelExtensions } from '../../../../net/fabricmc/fabric/impl/clien
 import type { ModelPart } from '../../../../net/minecraft/client/model/geom/ModelPart.d.ts'
 import type { RenderType } from '../../../../net/minecraft/client/renderer/rendertype/RenderType.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
-export abstract class Model<S extends Object | number | string | boolean> extends Object implements FabricModel<S>, ModelExtensions {
+export abstract class Model<S extends unknown> extends Object implements FabricModel<S>, ModelExtensions {
     constructor(root: ModelPart, renderType: (param0: Identifier) => RenderType)
     // private allParts: ModelPart[];
     // private childPartMap: Map<Object | null, Object | null>;

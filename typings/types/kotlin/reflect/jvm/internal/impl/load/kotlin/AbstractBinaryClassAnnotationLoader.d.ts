@@ -22,7 +22,7 @@ import type { AnnotatedCallableKind } from '../../../../../../../kotlin/reflect/
 import type { AnnotationLoader } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/AnnotationLoader.d.ts'
 import type { ProtoContainer } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/ProtoContainer.d.ts'
 import type { ProtoContainer$Class } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/ProtoContainer$Class.d.ts'
-export abstract class AbstractBinaryClassAnnotationLoader<A extends Object | number | string | boolean, S extends AbstractBinaryClassAnnotationLoader$AnnotationsContainer<A>> extends Object implements AnnotationLoader<A> {
+export abstract class AbstractBinaryClassAnnotationLoader<A extends unknown, S extends AbstractBinaryClassAnnotationLoader$AnnotationsContainer<A>> extends Object implements AnnotationLoader<A> {
     static Companion: AbstractBinaryClassAnnotationLoader$Companion;
     constructor(arg0: KotlinClassFinder)
     // private kotlinClassFinder: KotlinClassFinder;

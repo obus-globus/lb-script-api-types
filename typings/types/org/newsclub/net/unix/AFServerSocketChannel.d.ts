@@ -23,13 +23,13 @@ export abstract class AFServerSocketChannel<A extends AFSocketAddress> extends S
     getFileDescriptor(): FileDescriptor;
     getLocalAddress(): A;
     getLocalSocketAddress(): A;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     implCloseSelectableChannel(): void;
     implConfigureBlocking(arg0: boolean): void;
     isDeleteOnClose(): boolean;
     isLocalSocketAddressValid(): boolean;
     setDeleteOnClose(arg0: boolean): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): AFServerSocketChannel<A>;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): AFServerSocketChannel<A>;
     setShutdownOnClose(arg0: boolean): void;
     socket(): AFServerSocket<A>;
     supportedOptions(): SocketOption<Object>[];

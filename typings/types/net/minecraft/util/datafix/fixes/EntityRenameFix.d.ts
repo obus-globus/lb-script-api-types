@@ -14,6 +14,6 @@ export abstract class EntityRenameFix extends DataFix {
     constructor(name: string, outputSchema: Schema, changesType: boolean)
     // private name: string;
     fix(name: string, entity: Typed<Object>): Pair<string, Typed<Object>>;
-    // private getEntity<A extends Object | number | string | boolean>(input: Object, ops: DynamicOps<Object>, oldEntityType: Type<A>): Typed<A>;
+    // private getEntity<A extends unknown>(input: Object, ops: DynamicOps<Object>, oldEntityType: Type<A>): Typed<A>;
     makeRule(): TypeRewriteRule;
 }

@@ -39,11 +39,11 @@ export class CustomIngredientStreamCodec extends Object implements StreamCodec<R
     static unit(paraminstance: Object | null): StreamCodec<Object, Object>;
     constructor(arg0: StreamCodec<RegistryFriendlyByteBuf, Ingredient>)
     // private fallback: StreamCodec<RegistryFriendlyByteBuf, Ingredient>;
-    apply<O extends Object | number | string | boolean>(operation: (param0: StreamCodec<RegistryFriendlyByteBuf, Ingredient>) => StreamCodec<RegistryFriendlyByteBuf, O>): StreamCodec<RegistryFriendlyByteBuf, O>;
+    apply<O extends unknown>(operation: (param0: StreamCodec<RegistryFriendlyByteBuf, Ingredient>) => StreamCodec<RegistryFriendlyByteBuf, O>): StreamCodec<RegistryFriendlyByteBuf, O>;
     cast<S extends B>(): StreamCodec<S, Ingredient>;
     decode(arg0: RegistryFriendlyByteBuf): Ingredient;
-    dispatch<U extends Object | number | string | boolean>(type: (param0: U) => Ingredient, codec: (param0: Ingredient) => StreamCodec<RegistryFriendlyByteBuf, U>): StreamCodec<RegistryFriendlyByteBuf, U>;
+    dispatch<U extends unknown>(type: (param0: U) => Ingredient, codec: (param0: Ingredient) => StreamCodec<RegistryFriendlyByteBuf, U>): StreamCodec<RegistryFriendlyByteBuf, U>;
     encode(arg0: RegistryFriendlyByteBuf, arg1: Ingredient): void;
-    map<O extends Object | number | string | boolean>(to: (param0: Ingredient) => O, from: (param0: O) => Ingredient): StreamCodec<RegistryFriendlyByteBuf, O>;
+    map<O extends unknown>(to: (param0: Ingredient) => O, from: (param0: O) => Ingredient): StreamCodec<RegistryFriendlyByteBuf, O>;
     mapStream<O extends ByteBuf>(operation: (param0: O) => RegistryFriendlyByteBuf): StreamCodec<O, Ingredient>;
 }

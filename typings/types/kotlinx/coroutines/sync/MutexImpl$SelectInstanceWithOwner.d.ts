@@ -3,7 +3,7 @@ import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineConte
 import type { DisposableHandle } from '../../../kotlinx/coroutines/DisposableHandle.d.ts'
 import type { Segment } from '../../../kotlinx/coroutines/internal/Segment.d.ts'
 import type { SelectInstanceInternal } from '../../../kotlinx/coroutines/selects/SelectInstanceInternal.d.ts'
-export class MutexImpl$SelectInstanceWithOwner<Q extends Object | number | string | boolean> extends Object implements SelectInstanceInternal<Q> {
+export class MutexImpl$SelectInstanceWithOwner<Q extends unknown> extends Object implements SelectInstanceInternal<Q> {
     constructor(null_: MutexImpl$SelectInstanceWithOwner<Q>, select: SelectInstanceInternal<Q>, owner: Object | null)
     readonly context: CoroutineContext;
     owner: Object | null;

@@ -13,7 +13,7 @@ import type { BehaviorBuilder$Mu } from '../../../../../../../net/minecraft/worl
 import type { MemoryAccessor } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor.d.ts'
 import type { MemoryCondition } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/MemoryCondition.d.ts'
 import type { Trigger } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/Trigger.d.ts'
-export class BehaviorBuilder$PureMemory<E extends LivingEntity, F extends K1, Value extends Object | number | string | boolean> extends BehaviorBuilder<E, MemoryAccessor<F, Value>> {
+export class BehaviorBuilder$PureMemory<E extends LivingEntity, F extends K1, Value extends unknown> extends BehaviorBuilder<E, MemoryAccessor<F, Value>> {
     static create(parambuilder: (param0: BehaviorBuilder$Instance<LivingEntity>) => App<BehaviorBuilder$Mu<LivingEntity>, Trigger<LivingEntity>>): OneShot<LivingEntity>;
     static instance(): BehaviorBuilder$Instance<LivingEntity>;
     static sequence(paramfirst: Trigger<any>, paramsecond: OneShot<any>): OneShot<LivingEntity>;

@@ -31,11 +31,11 @@ export class EntityPermissionContext extends Object implements PermissionContext
     // private keys: PermissionContext$Key<Object>[];
     // private server: MinecraftServer;
     // private type: PermissionContext$Type;
-    get<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>): T;
+    get<T extends unknown>(arg0: PermissionContext$Key<T>): T;
     getPermissionContext(): PermissionContext;
     keys(): PermissionContext$Key<Object>[];
     mutable(): MutablePermissionContext;
-    orElse<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>, arg1: T): T;
+    orElse<T extends unknown>(arg0: PermissionContext$Key<T>, arg1: T): T;
     permissionLevel(): PermissionLevel;
     type(): PermissionContext$Type;
     uuid(): UUID;

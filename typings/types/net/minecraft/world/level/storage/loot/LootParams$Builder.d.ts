@@ -16,10 +16,10 @@ export class LootParams$Builder extends Object {
     // private params: ContextMap$Builder;
     create(contextKeySet: ContextKeySet): LootParams;
     getLevel(): ServerLevel;
-    getOptionalParameter<T extends Object | number | string | boolean>(param: ContextKey<T>): T;
-    getParameter<T extends Object | number | string | boolean>(param: ContextKey<T>): T;
+    getOptionalParameter<T extends unknown>(param: ContextKey<T>): T;
+    getParameter<T extends unknown>(param: ContextKey<T>): T;
     withDynamicDrop(location: Identifier, dynamicDrop: (param0: (param0: ItemStack) => void) => void): LootParams$Builder;
     withLuck(luck: number): LootParams$Builder;
-    withOptionalParameter<T extends Object | number | string | boolean>(param: ContextKey<T>, value: T): LootParams$Builder;
-    withParameter<T extends Object | number | string | boolean>(param: ContextKey<T>, value: T): LootParams$Builder;
+    withOptionalParameter<T extends unknown>(param: ContextKey<T>, value: T): LootParams$Builder;
+    withParameter<T extends unknown>(param: ContextKey<T>, value: T): LootParams$Builder;
 }

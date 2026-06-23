@@ -4,7 +4,7 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { HolderType } from '../../../../../../../com/viaversion/viaversion/api/type/types/misc/HolderType.d.ts'
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class EitherHolderType<T extends Object | number | string | boolean> extends Type<EitherHolder<T>> {
+export class EitherHolderType<T extends unknown> extends Type<EitherHolder<T>> {
     static read(paramarg0: ByteBuf, paramarg1: HolderType<Object>): EitherHolder<Object>;
     static write(paramarg0: Ops, paramarg1: EitherHolder<Object>, paramarg2: HolderType<Object>): void;
     static write(paramarg0: ByteBuf, paramarg1: EitherHolder<Object>, paramarg2: HolderType<Object>): void;

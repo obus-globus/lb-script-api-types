@@ -8,7 +8,7 @@ import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-export class LocalCache$LoadingValueReference<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements LocalCache$ValueReference<K, V> {
+export class LocalCache$LoadingValueReference<K extends unknown, V extends unknown> extends Object implements LocalCache$ValueReference<K, V> {
     constructor()
     constructor(oldValue: LocalCache$ValueReference<K, V>)
     // private futureValue: SettableFuture<V>;

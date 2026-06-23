@@ -12,7 +12,7 @@ export class GLSLParser$StructMemberContext extends ParserRuleContext {
     COMMA(): TerminalNode[];
     COMMA(arg0: number): TerminalNode;
     SEMICOLON(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     fullySpecifiedType(): GLSLParser$FullySpecifiedTypeContext;

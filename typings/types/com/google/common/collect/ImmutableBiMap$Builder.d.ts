@@ -2,7 +2,7 @@ import type { ImmutableMap$Builder } from '../../../../com/google/common/collect
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class ImmutableBiMap$Builder<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ImmutableMap$Builder<K, V> {
+export class ImmutableBiMap$Builder<K extends unknown, V extends unknown> extends ImmutableMap$Builder<K, V> {
     constructor()
     constructor(size: number)
     build(): Map<K, V>;

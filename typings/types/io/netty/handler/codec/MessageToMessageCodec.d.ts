@@ -6,7 +6,7 @@ import type { MessageToMessageEncoder } from '../../../../io/netty/handler/codec
 import type { TypeParameterMatcher } from '../../../../io/netty/util/internal/TypeParameterMatcher.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class MessageToMessageCodec<INBOUND_IN extends Object | number | string | boolean, OUTBOUND_IN extends Object | number | string | boolean> extends ChannelDuplexHandler {
+export abstract class MessageToMessageCodec<INBOUND_IN extends unknown, OUTBOUND_IN extends unknown> extends ChannelDuplexHandler {
     constructor()
     constructor(arg0: Class<INBOUND_IN>, arg1: Class<OUTBOUND_IN>)
     // private decoder: MessageToMessageDecoder<Object>;

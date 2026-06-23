@@ -9,7 +9,7 @@ export class Configuration$Global extends Record implements Configuration {
     alwaysRepack(): boolean;
     bitsInMemory(): number;
     bitsInStorage(): number;
-    createPalette<T extends Object | number | string | boolean>(strategy: Strategy<T>, paletteEntries: T[]): Palette<T>;
+    createPalette<T extends unknown>(strategy: Strategy<T>, paletteEntries: T[]): Palette<T>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     toString(): string;

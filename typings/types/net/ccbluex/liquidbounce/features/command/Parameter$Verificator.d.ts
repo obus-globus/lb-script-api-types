@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Parameter$Verificator$Result } from '../../../../../net/ccbluex/liquidbounce/features/command/Parameter$Verificator$Result.d.ts'
-export interface Parameter$Verificator<T extends Object | number | string | boolean> extends Object{
+export interface Parameter$Verificator<T extends unknown> extends Object{
     /**
      * Verifies and parses parameter.
      *

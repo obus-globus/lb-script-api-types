@@ -15,7 +15,7 @@ export class ValueProfile$Identity extends ValueProfile {
     getCachedValue(): Object;
     isGeneric(): boolean;
     isUninitialized(): boolean;
-    profile<T extends Object | number | string | boolean>(newValue: T): T;
+    profile<T extends unknown>(newValue: T): T;
     reset(): void;
     toString(): string;
     toString(profileClass: Class<Object>, uninitialized: boolean, generic: boolean, specialization: string): string;

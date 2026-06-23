@@ -4,7 +4,7 @@ import type { Gson } from '../../../../../../../../org/spongepowered/include/com
 import type { TypeAdapter } from '../../../../../../../../org/spongepowered/include/com/google/gson/TypeAdapter.d.ts'
 import type { JsonReader } from '../../../../../../../../org/spongepowered/include/com/google/gson/stream/JsonReader.d.ts'
 import type { JsonWriter } from '../../../../../../../../org/spongepowered/include/com/google/gson/stream/JsonWriter.d.ts'
-export class TypeAdapterRuntimeTypeWrapper<T extends Object | number | string | boolean> extends TypeAdapter<T> {
+export class TypeAdapterRuntimeTypeWrapper<T extends unknown> extends TypeAdapter<T> {
     constructor(arg0: Gson, arg1: TypeAdapter<T>, arg2: Type)
     // private context: Gson;
     // private delegate: TypeAdapter<T>;

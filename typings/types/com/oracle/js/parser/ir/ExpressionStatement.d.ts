@@ -11,7 +11,7 @@ export class ExpressionStatement extends Statement {
     constructor(lineNumber: number, token: number, finish: number, expression: Expression)
     readonly expression: Expression;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getExpression(): Expression;
     isCompletionValueNeverEmpty(): boolean;
     setExpression(expression: Expression): ExpressionStatement;

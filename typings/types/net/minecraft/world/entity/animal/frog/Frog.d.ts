@@ -155,7 +155,7 @@ export class Frog extends Animal {
     swimIdleAnimationState: AnimationState;
     tongueAnimationState: AnimationState;
     addAdditionalSaveData(output: ValueOutput): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     calculateFallDamage(fallDistance: number, damageModifier: number): number;
     createNavigation(level: Level): PathNavigation;
@@ -163,7 +163,7 @@ export class Frog extends Animal {
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     eraseTongueTarget(): void;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getBrain(): Brain<Frog>;
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): AgeableMob;

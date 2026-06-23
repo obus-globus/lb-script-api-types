@@ -9,7 +9,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
-export class PolyglotIterator<T extends Object | number | string | boolean> extends Object implements PolyglotWrapper, Iterator<T> {
+export class PolyglotIterator<T extends unknown> extends Object implements PolyglotWrapper, Iterator<T> {
     static asInstance(paramv: Object): PolyglotWrapper;
     static equals(paramcontext: Object, paramreceiver: Object, paramobj: Object): boolean;
     static equalsProxy(paramwrapper: PolyglotWrapper, paramother: Object): boolean;

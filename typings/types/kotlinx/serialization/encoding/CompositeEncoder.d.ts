@@ -13,8 +13,8 @@ export interface CompositeEncoder extends Object{
     encodeInlineElement(descriptor: SerialDescriptor, index: number): Encoder;
     encodeIntElement(descriptor: SerialDescriptor, index: number, value: number): void;
     encodeLongElement(descriptor: SerialDescriptor, index: number, value: number): void;
-    encodeNullableSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
-    encodeSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T): void;
+    encodeNullableSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
+    encodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T): void;
     encodeShortElement(descriptor: SerialDescriptor, index: number, value: number): void;
     encodeStringElement(descriptor: SerialDescriptor, index: number, value: string): void;
     endStructure(descriptor: SerialDescriptor): void;

@@ -5,7 +5,7 @@ import type { TransactionContext } from '../../../../../../../net/fabricmc/fabri
 export interface ContainerItemContext extends Object{
     exchange(arg0: ItemVariant, arg1: number, arg2: TransactionContext): number;
     extract(arg0: ItemVariant, arg1: number, arg2: TransactionContext): number;
-    find<A extends Object | number | string | boolean>(arg0: ItemApiLookup<A, ContainerItemContext>): A;
+    find<A extends unknown>(arg0: ItemApiLookup<A, ContainerItemContext>): A;
     getAdditionalSlots(): ItemVariant[][];
     getAmount(): number;
     getItemVariant(): ItemVariant;

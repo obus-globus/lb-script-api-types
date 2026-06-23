@@ -1,7 +1,7 @@
 import type { Either } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/Either.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class Either$Right<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object implements Either<L, R> {
+export class Either$Right<L extends unknown, R extends unknown> extends Object implements Either<L, R> {
     static left(paramarg0: Object | null): Either<Object, Object>;
     static right(paramarg0: Object | null): Either<Object, Object>;
     static unwrap(paramarg0: Either<Object, Object>): Object | null;
@@ -14,8 +14,8 @@ export class Either$Right<L extends Object | number | string | boolean, R extend
     hashCode(): number;
     isLeft(): boolean;
     isRight(): boolean;
-    map<ML extends Object | number | string | boolean, MR extends Object | number | string | boolean>(arg0: (param0: L) => ML, arg1: (param0: R) => MR): Either<ML, MR>;
+    map<ML extends unknown, MR extends unknown>(arg0: (param0: L) => ML, arg1: (param0: R) => MR): Either<ML, MR>;
     swap(): Either<R, L>;
     toString(): string;
-    xmap<T extends Object | number | string | boolean>(arg0: (param0: L) => T, arg1: (param0: R) => T): T;
+    xmap<T extends unknown>(arg0: (param0: L) => T, arg1: (param0: R) => T): T;
 }

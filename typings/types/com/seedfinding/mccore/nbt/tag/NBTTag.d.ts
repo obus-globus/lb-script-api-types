@@ -1,7 +1,7 @@
 import type { ByteBuffer } from '../../../../../com/seedfinding/mccore/net/ByteBuffer.d.ts'
 import type { IByteSerializable } from '../../../../../com/seedfinding/mccore/net/IByteSerializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class NBTTag<T extends Object | number | string | boolean> extends Object implements IByteSerializable {
+export abstract class NBTTag<T extends unknown> extends Object implements IByteSerializable {
     static create(paramarg0: ByteBuffer): NBTTag<Object>;
     constructor(arg0: T)
     readonly name: string;

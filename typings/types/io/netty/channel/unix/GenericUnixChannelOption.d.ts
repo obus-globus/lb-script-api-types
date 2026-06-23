@@ -9,7 +9,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { InetAddress } from '../../../../java/net/InetAddress.d.ts'
 import type { NetworkInterface } from '../../../../java/net/NetworkInterface.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class GenericUnixChannelOption<T extends Object | number | string | boolean> extends UnixChannelOption<T> {
+export abstract class GenericUnixChannelOption<T extends unknown> extends UnixChannelOption<T> {
     static ALLOCATOR: ChannelOption<ByteBufAllocator>;
     static ALLOW_HALF_CLOSURE: ChannelOption<boolean>;
     static AUTO_CLOSE: ChannelOption<boolean>;

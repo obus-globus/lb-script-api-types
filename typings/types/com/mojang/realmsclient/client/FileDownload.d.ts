@@ -27,6 +27,6 @@ export class FileDownload extends Object {
     isError(): boolean;
     isExtracting(): boolean;
     isFinished(): boolean;
-    // private joinCancellableRequest<T extends Object | number | string | boolean>(pendingRequest: CompletableFuture<T>): T;
+    // private joinCancellableRequest<T extends unknown>(pendingRequest: CompletableFuture<T>): T;
     // private untarGzipArchive(name: string, file: File, levelStorageSource: LevelStorageSource): void;
 }

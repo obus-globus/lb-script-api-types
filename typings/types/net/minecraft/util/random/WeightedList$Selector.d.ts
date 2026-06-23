@@ -1,4 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface WeightedList$Selector<E extends Object | number | string | boolean> extends Object{
+export interface WeightedList$Selector<E extends unknown> extends Object{
     get(selection: number): E;
 }

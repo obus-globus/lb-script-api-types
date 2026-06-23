@@ -5,7 +5,7 @@ import type { HolderLookup$RegistryLookup } from '../../../net/minecraft/core/Ho
 import type { RegistrySetBuilder$UniversalOwner } from '../../../net/minecraft/core/RegistrySetBuilder$UniversalOwner.d.ts'
 import type { RegistrySetBuilder$ValueAndHolder } from '../../../net/minecraft/core/RegistrySetBuilder$ValueAndHolder.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
-export class RegistrySetBuilder$RegistryContents<T extends Object | number | string | boolean> extends Record {
+export class RegistrySetBuilder$RegistryContents<T extends unknown> extends Record {
     private constructor(key: ResourceKey<T[]>, lifecycle: Lifecycle, values: Map<ResourceKey<T>, RegistrySetBuilder$ValueAndHolder<T>>)
     // private key: ResourceKey<T[]>;
     // private lifecycle: Lifecycle;

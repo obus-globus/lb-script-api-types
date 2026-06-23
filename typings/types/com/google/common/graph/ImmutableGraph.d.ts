@@ -3,7 +3,7 @@ import type { ElementOrder } from '../../../../com/google/common/graph/ElementOr
 import type { ForwardingGraph } from '../../../../com/google/common/graph/ForwardingGraph.d.ts'
 import type { Graph } from '../../../../com/google/common/graph/Graph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ImmutableGraph<N extends Object | number | string | boolean> extends ForwardingGraph<N> {
+export class ImmutableGraph<N extends unknown> extends ForwardingGraph<N> {
     static copyOf(paramgraph: Graph<Object>): ImmutableGraph<Object>;
     static copyOf(paramgraph: ImmutableGraph<Object>): ImmutableGraph<Object>;
     constructor(backingGraph: BaseGraph<N>)

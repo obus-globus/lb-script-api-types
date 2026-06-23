@@ -9,7 +9,7 @@ import type { Vocabulary } from '../../../../org/antlr/v4/runtime/Vocabulary.d.t
 import type { ATN } from '../../../../org/antlr/v4/runtime/atn/ATN.d.ts'
 import type { ATNSimulator } from '../../../../org/antlr/v4/runtime/atn/ATNSimulator.d.ts'
 import type { ParseInfo } from '../../../../org/antlr/v4/runtime/atn/ParseInfo.d.ts'
-export abstract class Recognizer<Symbol extends Object | number | string | boolean, ATNInterpreter extends ATNSimulator> extends Object {
+export abstract class Recognizer<Symbol extends unknown, ATNInterpreter extends ATNSimulator> extends Object {
     static EOF: number;
     constructor()
     // private _interp: ATNInterpreter;

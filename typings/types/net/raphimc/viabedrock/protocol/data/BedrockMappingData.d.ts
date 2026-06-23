@@ -149,6 +149,6 @@ export class BedrockMappingData extends MappingDataBase {
     // private parseJavaItemData(arg0: JsonObject): BedrockMappingData$JavaItemMapping;
     // private parseJavaParticle(arg0: JsonObject): BedrockMappingData$JavaParticle;
     // private readJson(arg0: string): JsonObject;
-    // private readJson<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T;
+    // private readJson<T extends unknown>(arg0: string, arg1: Class<T>): T;
     // private readNBT(arg0: string): Map$Entry<string, Tag>[];
 }

@@ -3,7 +3,7 @@ import type { DoubledDigraph } from '../../../../de/odysseus/ithaka/digraph/Doub
 import type { EdgeWeights } from '../../../../de/odysseus/ithaka/digraph/EdgeWeights.d.ts'
 import type { OptionalInt } from '../../../../java/util/OptionalInt.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class EmptyDigraph<V extends Object | number | string | boolean> extends Object implements DoubledDigraph<V> {
+export class EmptyDigraph<V extends unknown> extends Object implements DoubledDigraph<V> {
     static UNIT_WEIGHT: OptionalInt;
     static UNIT_WEIGHTS: EdgeWeights<Object>;
     constructor()

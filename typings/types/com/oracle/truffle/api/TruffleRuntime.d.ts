@@ -19,10 +19,10 @@ export interface TruffleRuntime extends Object{
     createMaterializedFrame(arguments: Object[]): MaterializedFrame;
     createMaterializedFrame(arguments: Object[], frameDescriptor: FrameDescriptor): MaterializedFrame;
     createVirtualFrame(arguments: Object[], frameDescriptor: FrameDescriptor): VirtualFrame;
-    getCapability<T extends Object | number | string | boolean>(capability: Class<T>): T;
+    getCapability<T extends unknown>(capability: Class<T>): T;
     getName(): string;
     isProfilingEnabled(): boolean;
-    iterateFrames<T extends Object | number | string | boolean>(visitor: FrameInstanceVisitor<T>): T;
-    iterateFrames<T extends Object | number | string | boolean>(visitor: FrameInstanceVisitor<T>, skipFrames: number): T;
+    iterateFrames<T extends unknown>(visitor: FrameInstanceVisitor<T>): T;
+    iterateFrames<T extends unknown>(visitor: FrameInstanceVisitor<T>, skipFrames: number): T;
     notifyTransferToInterpreter(): void;
 }

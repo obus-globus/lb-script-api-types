@@ -3,7 +3,7 @@ import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.
 import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class EncoderCache$Key<A extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Record {
+export class EncoderCache$Key<A extends unknown, T extends unknown> extends Record {
     private constructor(codec: Codec<A>, value: A, ops: DynamicOps<T>)
     // private codec: Codec<A>;
     // private ops: DynamicOps<T>;

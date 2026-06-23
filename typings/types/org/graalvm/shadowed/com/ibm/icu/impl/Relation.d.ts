@@ -4,7 +4,7 @@ import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../../java/util/Map$Entry.d.ts'
 import type { Freezable } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/Freezable.d.ts'
-export class Relation<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Freezable<Relation<K, V>> {
+export class Relation<K extends unknown, V extends unknown> extends Object implements Freezable<Relation<K, V>> {
     static of(parammap: Map<Object | null, (Object | null)[]>, paramsetCreator: Class<Object>): Relation<Object, Object>;
     static of(parammap: Map<Object | null, (Object | null)[]>, paramsetCreator: Class<Object>, paramsetComparator: (param0: Object) => boolean): Relation<Object, Object>;
     constructor(map: Map<K, V[]>, setCreator: Class<Object>)

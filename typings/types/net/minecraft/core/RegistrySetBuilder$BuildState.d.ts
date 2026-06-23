@@ -18,7 +18,7 @@ export class RegistrySetBuilder$BuildState extends Record {
     // private owner: RegistrySetBuilder$UniversalOwner;
     // private registeredValues: Map<ResourceKey<Object>, RegistrySetBuilder$RegisteredValue<Object>>;
     // private registries: Map<Identifier, HolderGetter<Object>>;
-    bootstrapContext<T extends Object | number | string | boolean>(): BootstrapContext<T>;
+    bootstrapContext<T extends unknown>(): BootstrapContext<T>;
     equals(o: Object | null): boolean;
     errors(): RuntimeException[];
     hashCode(): number;

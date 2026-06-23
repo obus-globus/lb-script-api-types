@@ -67,7 +67,7 @@ export abstract class AbstractChannel extends DefaultAttributeMap implements Cha
     eventLoop(): (Object | null)[];
     filterOutboundMessage(arg0: Object): Object;
     flush(): Channel;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     hashCode(): number;
     id(): ChannelId;
     invalidateLocalAddress(): void;
@@ -93,7 +93,7 @@ export abstract class AbstractChannel extends DefaultAttributeMap implements Cha
     read(): Channel;
     remoteAddress(): SocketAddress;
     remoteAddress0(): SocketAddress;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     toString(): string;
     unsafe(): Channel$Unsafe;
     validateFileRegion(arg0: DefaultFileRegion, arg1: number): void;

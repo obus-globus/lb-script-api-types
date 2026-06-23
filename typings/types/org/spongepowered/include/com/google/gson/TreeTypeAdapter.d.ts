@@ -7,7 +7,7 @@ import type { TypeAdapterFactory } from '../../../../../../org/spongepowered/inc
 import type { TypeToken } from '../../../../../../org/spongepowered/include/com/google/gson/reflect/TypeToken.d.ts'
 import type { JsonReader } from '../../../../../../org/spongepowered/include/com/google/gson/stream/JsonReader.d.ts'
 import type { JsonWriter } from '../../../../../../org/spongepowered/include/com/google/gson/stream/JsonWriter.d.ts'
-export class TreeTypeAdapter<T extends Object | number | string | boolean> extends TypeAdapter<T> {
+export class TreeTypeAdapter<T extends unknown> extends TypeAdapter<T> {
     static newFactory(paramarg0: TypeToken<Object>, paramarg1: Object): TypeAdapterFactory;
     private constructor(arg0: JsonSerializer<T>, arg1: JsonDeserializer<T>, arg2: Gson, arg3: TypeToken<T>, arg4: TypeAdapterFactory)
     // private delegate: TypeAdapter<T>;

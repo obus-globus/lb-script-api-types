@@ -6,7 +6,7 @@ import type { KSerializer } from '../../../kotlinx/serialization/KSerializer.d.t
 import type { ClassValueReferences } from '../../../kotlinx/serialization/internal/ClassValueReferences.d.ts'
 import type { ParametrizedCacheEntry } from '../../../kotlinx/serialization/internal/ParametrizedCacheEntry.d.ts'
 import type { ParametrizedSerializerCache } from '../../../kotlinx/serialization/internal/ParametrizedSerializerCache.d.ts'
-export class ClassValueParametrizedCache<T extends Object | number | string | boolean> extends Object implements ParametrizedSerializerCache<T> {
+export class ClassValueParametrizedCache<T extends unknown> extends Object implements ParametrizedSerializerCache<T> {
     constructor(compute: (param0: KClass<Object>, param1: KType[]) => KSerializer<T> | null)
     // private classValue: ClassValueReferences<ParametrizedCacheEntry<T>>;
     // private compute: (param0: KClass<Object>, param1: KType[]) => KSerializer<T> | null;

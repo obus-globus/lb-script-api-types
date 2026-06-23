@@ -16,8 +16,8 @@ export class StringArgumentType extends Object implements ArgumentType<string> {
     readonly type: StringArgumentType$StringType;
     getExamples(): string[];
     getType(): StringArgumentType$StringType;
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): string;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): string;
     parse(arg0: StringReader): string;
     toString(): string;
 }

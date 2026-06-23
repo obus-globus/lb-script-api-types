@@ -5,7 +5,7 @@ import type { ReferenceQueue } from '../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { WeakReference } from '../../../java/lang/ref/WeakReference.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export class ResourceLeakDetector$DefaultResourceLeak<T extends Object | number | string | boolean> extends WeakReference<Object> implements ResourceLeak, ResourceLeakTracker<T> {
+export class ResourceLeakDetector$DefaultResourceLeak<T extends unknown> extends WeakReference<Object> implements ResourceLeak, ResourceLeakTracker<T> {
     static reachabilityFence(paramarg0: Object): void;
     constructor(arg0: Object, arg1: ReferenceQueue<Object>, arg2: ResourceLeakDetector$DefaultResourceLeak<Object>[], arg3: Object)
     // private allLeaks: ResourceLeakDetector$DefaultResourceLeak<Object>[];

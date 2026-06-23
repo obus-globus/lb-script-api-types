@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ItemListValue$NamedItem<T extends Object | number | string | boolean> extends Object {
+export class ItemListValue$NamedItem<T extends unknown> extends Object {
     constructor(name: string, value: T, icon: string | null)
     readonly icon: string | null;
     readonly name: string;

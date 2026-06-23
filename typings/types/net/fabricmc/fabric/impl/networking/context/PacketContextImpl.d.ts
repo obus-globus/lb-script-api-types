@@ -32,8 +32,8 @@ export class PacketContextImpl extends Object implements PacketContext {
     constructor(arg0: Connection)
     // private contextMap: Map<PacketContext$Key<Object>, Object>;
     // private lock: ReadWriteLock;
-    get<T extends Object | number | string | boolean>(arg0: PacketContext$ReadKey<T>): T;
-    orElse<T extends Object | number | string | boolean>(arg0: PacketContext$ReadKey<T>, arg1: T): T;
-    orElseThrow<T extends Object | number | string | boolean>(arg0: PacketContext$ReadKey<T>): T;
-    set<T extends Object | number | string | boolean>(arg0: PacketContext$Key<T>, arg1: T): void;
+    get<T extends unknown>(arg0: PacketContext$ReadKey<T>): T;
+    orElse<T extends unknown>(arg0: PacketContext$ReadKey<T>, arg1: T): T;
+    orElseThrow<T extends unknown>(arg0: PacketContext$ReadKey<T>): T;
+    set<T extends unknown>(arg0: PacketContext$Key<T>, arg1: T): void;
 }

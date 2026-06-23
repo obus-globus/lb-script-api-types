@@ -10,6 +10,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class EntityRidingToPassengersFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, changesType: boolean)
-    // private cap<OldEntityTree extends Object | number | string | boolean, NewEntityTree extends Object | number | string | boolean, Entity extends Object | number | string | boolean>(inputSchema: Schema, outputType: Schema, oldEntityTreeType: Type<OldEntityTree>, newEntityTreeType: Type<NewEntityTree>, entityType: Type<Entity>): TypeRewriteRule;
+    // private cap<OldEntityTree extends unknown, NewEntityTree extends unknown, Entity extends unknown>(inputSchema: Schema, outputType: Schema, oldEntityTreeType: Type<OldEntityTree>, newEntityTreeType: Type<NewEntityTree>, entityType: Type<Entity>): TypeRewriteRule;
     makeRule(): TypeRewriteRule;
 }

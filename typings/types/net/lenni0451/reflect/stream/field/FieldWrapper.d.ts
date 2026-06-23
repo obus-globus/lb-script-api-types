@@ -17,8 +17,8 @@ export class FieldWrapper extends Object {
     copy(arg0: Object, arg1: Object): void;
     equals(arg0: Object | null): boolean;
     genericTypes(): Type[];
-    get<T extends Object | number | string | boolean>(): T;
-    get<T extends Object | number | string | boolean>(arg0: Object): T;
+    get<T extends unknown>(): T;
+    get<T extends unknown>(arg0: Object): T;
     hashCode(): number;
     modifier(): ModifierWrapper;
     name(): string;

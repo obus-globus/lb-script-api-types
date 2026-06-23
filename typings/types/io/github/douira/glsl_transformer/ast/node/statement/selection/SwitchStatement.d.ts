@@ -15,7 +15,7 @@ export class SwitchStatement extends Statement {
     constructor(arg0: Expression, arg1: CompoundStatement)
     expression: Expression;
     statement: CompoundStatement;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): SwitchStatement;
     cloneInto(arg0: Root): SwitchStatement;
     enterNode(arg0: ASTListener): void;
@@ -25,5 +25,5 @@ export class SwitchStatement extends Statement {
     getStatementType(): Statement$StatementType;
     setExpression(arg0: Expression): void;
     setStatement(arg0: CompoundStatement): void;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

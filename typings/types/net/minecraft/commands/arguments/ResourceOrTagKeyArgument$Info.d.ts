@@ -4,7 +4,7 @@ import type { ResourceOrTagKeyArgument } from '../../../../net/minecraft/command
 import type { ResourceOrTagKeyArgument$Info$Template } from '../../../../net/minecraft/commands/arguments/ResourceOrTagKeyArgument$Info$Template.d.ts'
 import type { ArgumentTypeInfo } from '../../../../net/minecraft/commands/synchronization/ArgumentTypeInfo.d.ts'
 import type { FriendlyByteBuf } from '../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
-export class ResourceOrTagKeyArgument$Info<T extends Object | number | string | boolean> extends Object implements ArgumentTypeInfo<ResourceOrTagKeyArgument<T>, ResourceOrTagKeyArgument$Info$Template> {
+export class ResourceOrTagKeyArgument$Info<T extends unknown> extends Object implements ArgumentTypeInfo<ResourceOrTagKeyArgument<T>, ResourceOrTagKeyArgument$Info$Template> {
     constructor()
     deserializeFromNetwork(in_: FriendlyByteBuf): ResourceOrTagKeyArgument$Info$Template;
     serializeToJson(template: ResourceOrTagKeyArgument$Info$Template, out: JsonObject): void;

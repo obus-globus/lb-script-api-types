@@ -11,8 +11,8 @@ import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
 export interface ItemInstance extends Object, TypedInstance<Item>, DataComponentGetter{
     count(): number;
     getMaxStackSize(): number;
-    getOrDefault<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T): T;
-    getTyped<T extends Object | number | string | boolean>(type: DataComponentType<T>): TypedDataComponent<T>;
+    getOrDefault<T extends unknown>(type: DataComponentType<T>, defaultValue: T): T;
+    getTyped<T extends unknown>(type: DataComponentType<T>): TypedDataComponent<T>;
     is(rawType: Item): boolean;
     is(type: Holder<Item>): boolean;
     is(set: Holder<Item>[]): boolean;

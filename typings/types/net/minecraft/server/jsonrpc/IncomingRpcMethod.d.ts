@@ -4,7 +4,7 @@ import type { IncomingRpcMethod$Attributes } from '../../../../net/minecraft/ser
 import type { MethodInfo } from '../../../../net/minecraft/server/jsonrpc/api/MethodInfo.d.ts'
 import type { MinecraftApi } from '../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftApi.d.ts'
 import type { ClientInfo } from '../../../../net/minecraft/server/jsonrpc/methods/ClientInfo.d.ts'
-export interface IncomingRpcMethod<Params extends Object | number | string | boolean, Result extends Object | number | string | boolean> extends Object{
+export interface IncomingRpcMethod<Params extends unknown, Result extends unknown> extends Object{
     apply(minecraftApi: MinecraftApi, paramsJson: JsonElement, clientInfo: ClientInfo): JsonElement;
     attributes(): IncomingRpcMethod$Attributes;
     info(): MethodInfo<Params, Result>;

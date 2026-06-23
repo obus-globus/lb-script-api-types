@@ -31,7 +31,7 @@ export class DayOfWeek extends Enum<DayOfWeek> implements TemporalAccessor, Temp
     isSupported(arg0: TemporalField): boolean;
     minus(arg0: number): DayOfWeek;
     plus(arg0: number): DayOfWeek;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     name(): "MONDAY" | "TUESDAY" | "WEDNESDAY" | "THURSDAY" | "FRIDAY" | "SATURDAY" | "SUNDAY";
 }

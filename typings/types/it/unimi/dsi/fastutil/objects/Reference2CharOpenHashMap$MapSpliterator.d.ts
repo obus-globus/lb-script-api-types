@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Reference2CharOpenHashMap$MapSpliterator<ConsumerType extends Object | number | string | boolean, SplitType extends Reference2CharOpenHashMap$MapSpliterator<Object, any>> extends Object {
+export abstract class Reference2CharOpenHashMap$MapSpliterator<ConsumerType extends unknown, SplitType extends Reference2CharOpenHashMap$MapSpliterator<Object, any>> extends Object {
     constructor(null_: Reference2CharOpenHashMap$MapSpliterator<Object, any>)
     constructor(null_: Reference2CharOpenHashMap$MapSpliterator<Object, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;

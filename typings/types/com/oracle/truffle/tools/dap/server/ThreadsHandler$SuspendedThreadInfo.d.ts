@@ -9,7 +9,7 @@ export class ThreadsHandler$SuspendedThreadInfo extends Object {
     // private id2Refs: { [key: number]: Object };
     // private ref2Ids: Map<Object, number>;
     readonly threadId: number;
-    getById<T extends Object | number | string | boolean>(cls: Class<T>, id: number): T;
+    getById<T extends unknown>(cls: Class<T>, id: number): T;
     getId(ref: Object): number;
     getSuspendedEvent(): SuspendedEvent;
     getThreadId(): number;

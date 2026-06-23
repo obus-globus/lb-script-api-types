@@ -3,7 +3,7 @@ import type { StatisticsListener$TargetIntStatistics } from '../../../../../com/
 import type { PrintWriter } from '../../../../../java/io/PrintWriter.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class StatisticsListener$IdentityStatistics<T extends Object | number | string | boolean> extends Object {
+export class StatisticsListener$IdentityStatistics<T extends unknown> extends Object {
     private constructor()
     // private elementCount: number;
     // private types: Map<T, StatisticsListener$TargetIntStatistics>;

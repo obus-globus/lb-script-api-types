@@ -11,7 +11,7 @@ import type { ParameterizedType } from '../../../../java/lang/reflect/Parameteri
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { TypeVariable } from '../../../../java/lang/reflect/TypeVariable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class TypeToken<T extends Object | number | string | boolean> extends TypeCapture<T> implements Serializable {
+export abstract class TypeToken<T extends unknown> extends TypeCapture<T> implements Serializable {
     static of(paramtype: Class<Object>): TypeToken<Object>;
     static of(paramtype: Type): TypeToken<Object>;
     constructor()
@@ -61,8 +61,8 @@ export abstract class TypeToken<T extends Object | number | string | boolean> ex
     // private someRawTypeIsSubclassOf(superclass: Class<Object>): boolean;
     toString(): string;
     unwrap(): TypeToken<T>;
-    where<X extends Object | number | string | boolean>(typeParam: TypeParameter<X>, typeArg: TypeToken<X>): TypeToken<T>;
-    where<X extends Object | number | string | boolean>(typeParam: TypeParameter<X>, typeArg: Class<X>): TypeToken<T>;
+    where<X extends unknown>(typeParam: TypeParameter<X>, typeArg: TypeToken<X>): TypeToken<T>;
+    where<X extends unknown>(typeParam: TypeParameter<X>, typeArg: Class<X>): TypeToken<T>;
     wrap(): TypeToken<T>;
     writeReplace(): Object;
 }

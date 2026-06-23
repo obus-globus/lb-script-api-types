@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ReferenceOpenHashMap$FastEntryIterator extends Short2ReferenceOpenHashMap$MapIterator<Object> implements ObjectIterator<Short2ReferenceMap$Entry<V>> {
     private constructor(null_: Short2ReferenceOpenHashMap$FastEntryIterator)
     // private entry: Short2ReferenceOpenHashMap$MapEntry;
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Short2ReferenceMap$Entry<V>) => void, arg1: number): void;
-    next<V extends Object | number | string | boolean>(): Short2ReferenceOpenHashMap$MapEntry;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Short2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    next<V extends unknown>(): Short2ReferenceOpenHashMap$MapEntry;
     skip(arg0: number): number;
 }

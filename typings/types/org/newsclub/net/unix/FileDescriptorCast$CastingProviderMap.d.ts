@@ -6,11 +6,11 @@ export abstract class FileDescriptorCast$CastingProviderMap extends Object {
     constructor()
     // private classes: Class<Object>[];
     // private providers: Map<Class<Object>, (param0: FileDescriptorCast, param1: Class<Object>) => Object | null>;
-    addProvider<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: (param0: FileDescriptorCast, param1: Class<Object>) => Object | null): void;
+    addProvider<T extends unknown>(arg0: Class<T>, arg1: (param0: FileDescriptorCast, param1: Class<Object>) => Object | null): void;
     // private addProvider0(arg0: Class<Object>, arg1: (param0: FileDescriptorCast, param1: Class<Object>) => Object | null): void;
     addProviders(): void;
     addProviders(arg0: FileDescriptorCast$CastingProviderMap): void;
-    get<T extends Object | number | string | boolean>(arg0: Class<T>): (param0: FileDescriptorCast, param1: Class<Object>) => T;
+    get<T extends unknown>(arg0: Class<T>): (param0: FileDescriptorCast, param1: Class<Object>) => T;
     registerGenericDatagramSocketProviders(): void;
     registerGenericSocketProviders(): void;
 }

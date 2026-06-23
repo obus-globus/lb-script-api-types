@@ -3,7 +3,7 @@ import type { ChannelInboundHandlerAdapter } from '../../../io/netty/channel/Cha
 import type { TypeParameterMatcher } from '../../../io/netty/util/internal/TypeParameterMatcher.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class SimpleChannelInboundHandler<I extends Object | number | string | boolean> extends ChannelInboundHandlerAdapter {
+export abstract class SimpleChannelInboundHandler<I extends unknown> extends ChannelInboundHandlerAdapter {
     constructor()
     constructor(arg0: Class<I>)
     constructor(arg0: Class<I>, arg1: boolean)

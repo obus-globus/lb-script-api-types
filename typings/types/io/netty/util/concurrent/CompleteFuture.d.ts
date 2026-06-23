@@ -3,7 +3,7 @@ import type { Future } from '../../../../io/netty/util/concurrent/Future.d.ts'
 import type { GenericFutureListener } from '../../../../io/netty/util/concurrent/GenericFutureListener.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class CompleteFuture<V extends Object | number | string | boolean> extends AbstractFuture<V> {
+export abstract class CompleteFuture<V extends unknown> extends AbstractFuture<V> {
     constructor(arg0: (Object | null)[])
     // private executor: (Object | null)[];
     addListener(arg0: GenericFutureListener<Future<V>>): Future<V>;

@@ -3,7 +3,7 @@ import type { StrategyAccessor } from '../../../../../net/caffeinemc/mods/lithiu
 import type { Configuration } from '../../../../../net/minecraft/world/level/chunk/Configuration.d.ts'
 import type { GlobalPalette } from '../../../../../net/minecraft/world/level/chunk/GlobalPalette.d.ts'
 import type { Palette$Factory } from '../../../../../net/minecraft/world/level/chunk/Palette$Factory.d.ts'
-export abstract class Strategy<T extends Object | number | string | boolean> extends Object implements StrategyAccessor {
+export abstract class Strategy<T extends unknown> extends Object implements StrategyAccessor {
     static LINEAR_PALETTE_FACTORY: Palette$Factory;
     static SINGLE_VALUE_PALETTE_FACTORY: Palette$Factory;
     static createForBiomes(paramregistry: (Object | null)[]): Strategy<Object>;

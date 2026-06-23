@@ -11,7 +11,7 @@ import type { TagsProvider$TagLookup } from '../../../../net/minecraft/data/tags
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
-export abstract class IntrinsicHolderTagsProvider<T extends Object | number | string | boolean> extends TagsProvider<T> {
+export abstract class IntrinsicHolderTagsProvider<T extends unknown> extends TagsProvider<T> {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;

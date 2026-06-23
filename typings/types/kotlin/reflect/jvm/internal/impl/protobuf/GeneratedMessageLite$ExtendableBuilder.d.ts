@@ -10,7 +10,7 @@ export abstract class GeneratedMessageLite$ExtendableBuilder<MessageType extends
     constructor()
     // private extensions: FieldSet<GeneratedMessageLite$ExtensionDescriptor>;
     // private extensionsIsMutable: boolean;
-    addExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>, arg1: Type): BuilderType;
+    addExtension<Type extends unknown>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>, arg1: Type): BuilderType;
     // private buildExtensions(): FieldSet<GeneratedMessageLite$ExtensionDescriptor>;
     clone(): BuilderType;
     // private ensureExtensionsIsMutable(): void;
@@ -18,6 +18,6 @@ export abstract class GeneratedMessageLite$ExtendableBuilder<MessageType extends
     getDefaultInstanceForType(): MessageLite;
     isInitialized(): boolean;
     mergeExtensionFields(arg0: MessageType): void;
-    setExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>, arg1: Type): BuilderType;
+    setExtension<Type extends unknown>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>, arg1: Type): BuilderType;
     // private verifyExtensionContainingType(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Object>): void;
 }

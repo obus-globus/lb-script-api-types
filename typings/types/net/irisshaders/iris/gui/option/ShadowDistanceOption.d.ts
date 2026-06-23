@@ -9,7 +9,7 @@ import type { Options } from '../../../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { Tooltip } from '../../../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
-export class ShadowDistanceOption<T extends Object | number | string | boolean> extends OptionInstance<T> {
+export class ShadowDistanceOption<T extends unknown> extends OptionInstance<T> {
     static BOOLEAN_TO_STRING: OptionInstance$CaptionBasedToString<boolean>;
     static BOOLEAN_VALUES: OptionInstance$Enum<boolean>;
     static cachedConstantTooltip(paramtooltipComponent: Component): (param0: Object | null) => Tooltip;

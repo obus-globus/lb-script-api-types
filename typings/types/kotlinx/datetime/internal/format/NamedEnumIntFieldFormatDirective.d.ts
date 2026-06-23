@@ -3,7 +3,7 @@ import type { FieldFormatDirective } from '../../../../kotlinx/datetime/internal
 import type { FieldSpec } from '../../../../kotlinx/datetime/internal/format/FieldSpec.d.ts'
 import type { FormatterStructure } from '../../../../kotlinx/datetime/internal/format/formatter/FormatterStructure.d.ts'
 import type { ParserStructure } from '../../../../kotlinx/datetime/internal/format/parser/ParserStructure.d.ts'
-export abstract class NamedEnumIntFieldFormatDirective<Target extends Object | number | string | boolean, Type extends Object | number | string | boolean> extends Object implements FieldFormatDirective<Target> {
+export abstract class NamedEnumIntFieldFormatDirective<Target extends unknown, Type extends unknown> extends Object implements FieldFormatDirective<Target> {
     constructor(field: FieldSpec<Target, Type>, mapping: Map<Type, string>, name: string)
     readonly field: FieldSpec<Target, Type>;
     // private mapping: Map<Type, string>;

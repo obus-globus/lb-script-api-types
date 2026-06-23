@@ -2,7 +2,7 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class Consumable1_21_2$ConsumeEffect<T extends Object | number | string | boolean> extends Record {
+export class Consumable1_21_2$ConsumeEffect<T extends unknown> extends Record {
     static ARRAY_TYPE: Type<Object>;
     static TYPE: Type<Consumable1_21_2$ConsumeEffect<Object>>;
     // private id: number;

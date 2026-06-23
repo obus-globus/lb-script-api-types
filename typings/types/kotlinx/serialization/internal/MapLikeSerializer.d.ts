@@ -5,7 +5,7 @@ import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptor
 import type { CompositeDecoder } from '../../../kotlinx/serialization/encoding/CompositeDecoder.d.ts'
 import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.ts'
 import type { AbstractCollectionSerializer } from '../../../kotlinx/serialization/internal/AbstractCollectionSerializer.d.ts'
-export class MapLikeSerializer<Key extends Object | number | string | boolean, Value extends Object | number | string | boolean, Collection extends Object | number | string | boolean, Builder extends Map<Key, Value>> extends AbstractCollectionSerializer<Map$Entry<Key, Value>, Collection, Builder> {
+export class MapLikeSerializer<Key extends unknown, Value extends unknown, Collection extends unknown, Builder extends Map<Key, Value>> extends AbstractCollectionSerializer<Map$Entry<Key, Value>, Collection, Builder> {
     protected constructor(keySerializer: KSerializer<Key>, valueSerializer: KSerializer<Value>)
     readonly descriptor: SerialDescriptor;
     readonly keySerializer: KSerializer<Key>;

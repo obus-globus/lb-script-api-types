@@ -2,7 +2,7 @@ import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { CharReferencePair } from '../../../../../it/unimi/dsi/fastutil/chars/CharReferencePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class CharReferenceImmutablePair<V extends Object | number | string | boolean> extends Object implements CharReferencePair<V>, Serializable {
+export class CharReferenceImmutablePair<V extends unknown> extends Object implements CharReferencePair<V>, Serializable {
     static of(paramarg0: string, paramarg1: Object | null): CharReferenceImmutablePair<Object>;
     static of(paramarg0: string, paramarg1: Object | null): CharReferencePair<Object>;
     constructor(arg0: string, arg1: V)

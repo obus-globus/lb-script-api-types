@@ -16,7 +16,7 @@ export class FunctionPrototype extends ListASTNode<FunctionParameter> {
     constructor(arg0: FullySpecifiedType, arg1: Identifier, arg2: Stream<FunctionParameter>)
     name: Identifier;
     returnType: FullySpecifiedType;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): FunctionPrototype;
     cloneInto(arg0: Root): FunctionPrototype;
     enterNode(arg0: ASTListener): void;

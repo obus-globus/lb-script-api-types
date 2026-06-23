@@ -17,7 +17,7 @@ export interface Hasher extends PrimitiveSink, Object{
     putFloat(f: number): Hasher;
     putInt(i: number): Hasher;
     putLong(l: number): Hasher;
-    putObject<T extends Object | number | string | boolean>(instance: T, funnel: Funnel<T>): Hasher;
+    putObject<T extends unknown>(instance: T, funnel: Funnel<T>): Hasher;
     putShort(s: number): Hasher;
     putString(charSequence: CharSequence, charset: Charset): Hasher;
     putUnencodedChars(charSequence: CharSequence): Hasher;

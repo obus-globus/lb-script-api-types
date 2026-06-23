@@ -10,7 +10,7 @@ import type { JsonReader } from '../../../../../com/google/gson/stream/JsonReade
 import type { JsonWriter } from '../../../../../com/google/gson/stream/JsonWriter.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class TreeTypeAdapter<T extends Object | number | string | boolean> extends SerializationDelegatingTypeAdapter<T> {
+export class TreeTypeAdapter<T extends unknown> extends SerializationDelegatingTypeAdapter<T> {
     static newFactory(paramarg0: TypeToken<Object>, paramarg1: Object): TypeAdapterFactory;
     static newFactoryWithMatchRawType(paramarg0: TypeToken<Object>, paramarg1: Object): TypeAdapterFactory;
     static newTypeHierarchyFactory(paramarg0: Class<Object>, paramarg1: Object): TypeAdapterFactory;

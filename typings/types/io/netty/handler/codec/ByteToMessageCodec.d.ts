@@ -7,7 +7,7 @@ import type { MessageToByteEncoder } from '../../../../io/netty/handler/codec/Me
 import type { TypeParameterMatcher } from '../../../../io/netty/util/internal/TypeParameterMatcher.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ByteToMessageCodec<I extends Object | number | string | boolean> extends ChannelDuplexHandler {
+export abstract class ByteToMessageCodec<I extends unknown> extends ChannelDuplexHandler {
     constructor()
     constructor(arg0: Class<I>)
     constructor(arg0: Class<I>, arg1: boolean)

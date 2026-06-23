@@ -3,5 +3,5 @@ import type { ObjectHandle } from '../../../org/graalvm/nativeimage/ObjectHandle
 export interface ObjectHandles extends Object{
     create(object: Object): ObjectHandle;
     destroy(handle: ObjectHandle): void;
-    get<T extends Object | number | string | boolean>(handle: ObjectHandle): T;
+    get<T extends unknown>(handle: ObjectHandle): T;
 }

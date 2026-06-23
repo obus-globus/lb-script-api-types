@@ -18,7 +18,7 @@ export class DefaultRakSessionConfig extends DefaultChannelConfig implements Rak
     getGuid(): number;
     getMetrics(): RakChannelMetrics;
     getMtu(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getOrderingChannels(): number;
@@ -30,7 +30,7 @@ export class DefaultRakSessionConfig extends DefaultChannelConfig implements Rak
     setGuid(arg0: number): RakChannelConfig;
     setMetrics(arg0: RakChannelMetrics): RakChannelConfig;
     setMtu(arg0: number): RakChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setOrderingChannels(arg0: number): RakChannelConfig;
     setProtocolVersion(arg0: number): RakChannelConfig;
     setSessionTimeout(arg0: number): RakChannelConfig;

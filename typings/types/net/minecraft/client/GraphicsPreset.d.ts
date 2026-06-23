@@ -32,6 +32,6 @@ export class GraphicsPreset extends Enum<GraphicsPreset> implements StringRepres
     apply(minecraft: Minecraft): void;
     getKey(): string;
     getSerializedName(): string;
-    set<T extends Object | number | string | boolean>(screen: OptionsSubScreen, option: OptionInstance<T>, value: T): void;
+    set<T extends unknown>(screen: OptionsSubScreen, option: OptionInstance<T>, value: T): void;
     name(): "FAST" | "FANCY" | "FABULOUS" | "CUSTOM";
 }

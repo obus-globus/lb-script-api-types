@@ -10,7 +10,7 @@ import type { Translator } from '../../../ai/djl/translate/Translator.d.ts'
 import type { TranslatorContext } from '../../../ai/djl/translate/TranslatorContext.d.ts'
 import type { AutoCloseable } from '../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class Predictor<I extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Object implements AutoCloseable {
+export class Predictor<I extends unknown, O extends unknown> extends Object implements AutoCloseable {
     constructor(arg0: Model, arg1: Translator<I, O>, arg2: Device, arg3: boolean)
     // private block: Block;
     // private dimension: Dimension;

@@ -7,7 +7,7 @@ import type { DescriptorKProperty$Companion } from '../../../../kotlin/reflect/j
 import type { DescriptorKProperty1$Getter } from '../../../../kotlin/reflect/jvm/internal/DescriptorKProperty1$Getter.d.ts'
 import type { KDeclarationContainerImpl } from '../../../../kotlin/reflect/jvm/internal/KDeclarationContainerImpl.d.ts'
 import type { PropertyDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
-export class DescriptorKProperty1<T extends Object | number | string | boolean, V extends Object | number | string | boolean> extends DescriptorKProperty<V> implements KProperty1<T, V> {
+export class DescriptorKProperty1<T extends unknown, V extends unknown> extends DescriptorKProperty<V> implements KProperty1<T, V> {
     static Companion: DescriptorKProperty$Companion;
     constructor(container: KDeclarationContainerImpl, name: string, signature: string, boundReceiver: Object | null)
     constructor(container: KDeclarationContainerImpl, descriptor: PropertyDescriptor)

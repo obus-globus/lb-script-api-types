@@ -39,11 +39,11 @@ export abstract class BlockableEventLoop<R extends Runnable> extends Object impl
     runAllTasks(): void;
     schedule(r: R): void;
     scheduleExecutables(): boolean;
-    scheduleWithResult<Source extends Object | number | string | boolean>(futureConsumer: (param0: CompletableFuture<Source>) => void): CompletableFuture<Source>;
+    scheduleWithResult<Source extends unknown>(futureConsumer: (param0: CompletableFuture<Source>) => void): CompletableFuture<Source>;
     shouldRun(task: R): boolean;
     shouldRunAllTasks(): boolean;
     submit(runnable: () => void): CompletableFuture<void>;
-    submit<V extends Object | number | string | boolean>(supplier: () => V): CompletableFuture<V>;
+    submit<V extends unknown>(supplier: () => V): CompletableFuture<V>;
     // private submitAsync(runnable: () => void): CompletableFuture<void>;
     // private throwDelayedException(): void;
     waitForTasks(): void;

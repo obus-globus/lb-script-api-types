@@ -8,7 +8,7 @@ export class HashOps$ListHashBuilder extends HashOps$CollectionHashBuilder imple
     private constructor(null_: HashOps$ListHashBuilder)
     // private entries: (Object | null)[];
     applyHashToParent(): void;
-    write<T extends Object | number | string | boolean>(arg0: Type<T>, arg1: T): Ops$ListSerializer;
+    write<T extends unknown>(arg0: Type<T>, arg1: T): Ops$ListSerializer;
     writeList(arg0: (param0: Ops$ListSerializer) => void): Ops$ListSerializer;
     writeMap(arg0: (param0: Ops$MapSerializer) => void): Ops$ListSerializer;
 }

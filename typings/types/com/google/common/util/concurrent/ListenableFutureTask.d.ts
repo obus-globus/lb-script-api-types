@@ -6,7 +6,7 @@ import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts
 import type { FutureTask } from '../../../../../java/util/concurrent/FutureTask.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ListenableFutureTask<V extends Object | number | string | boolean> extends FutureTask<V> implements ListenableFuture<V> {
+export class ListenableFutureTask<V extends unknown> extends FutureTask<V> implements ListenableFuture<V> {
     static create(paramrunnable: () => void, paramresult: Object | null): ListenableFutureTask<Object>;
     static create(paramcallable: () => Object | null): ListenableFutureTask<Object>;
     constructor(runnable: () => void, result: V)

@@ -6,7 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotValueDispatch$HostNull extends PolyglotValueDispatch {
     constructor(polyglot: PolyglotImpl)
     // private polyglot: PolyglotImpl;
-    asClass<T extends Object | number | string | boolean>(languageContext: Object, receiver: Object, targetType: Class<T>): T;
-    asTypeLiteral<T extends Object | number | string | boolean>(languageContext: Object, receiver: Object, rawType: Class<T>, type: Type): T;
+    asClass<T extends unknown>(languageContext: Object, receiver: Object, targetType: Class<T>): T;
+    asTypeLiteral<T extends unknown>(languageContext: Object, receiver: Object, rawType: Class<T>, type: Type): T;
     isNull(languageContext: Object, receiver: Object): boolean;
 }

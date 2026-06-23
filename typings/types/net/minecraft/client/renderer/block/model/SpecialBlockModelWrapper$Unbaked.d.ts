@@ -7,7 +7,7 @@ import type { BlockModel$BakingContext } from '../../../../../../net/minecraft/c
 import type { BlockModel$Unbaked } from '../../../../../../net/minecraft/client/renderer/block/model/BlockModel$Unbaked.d.ts'
 import type { SpecialModelRenderer$Unbaked } from '../../../../../../net/minecraft/client/renderer/special/SpecialModelRenderer$Unbaked.d.ts'
 import type { Matrix4fc } from '../../../../../../org/joml/Matrix4fc.d.ts'
-export class SpecialBlockModelWrapper$Unbaked<T extends Object | number | string | boolean> extends Record implements BlockModel$Unbaked {
+export class SpecialBlockModelWrapper$Unbaked<T extends unknown> extends Record implements BlockModel$Unbaked {
     constructor(model: SpecialModelRenderer$Unbaked<T>, transformation: Optional<Transformation>)
     // private model: SpecialModelRenderer$Unbaked<T>;
     // private transformation: Optional<Transformation>;

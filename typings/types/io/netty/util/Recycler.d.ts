@@ -3,7 +3,7 @@ import type { Recycler$LocalPool } from '../../../io/netty/util/Recycler$LocalPo
 import type { FastThreadLocal } from '../../../io/netty/util/concurrent/FastThreadLocal.d.ts'
 import type { Thread } from '../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class Recycler<T extends Object | number | string | boolean> extends Object {
+export abstract class Recycler<T extends unknown> extends Object {
     static unpinOwner(paramarg0: Recycler<Object>): void;
     constructor()
     constructor(arg0: Thread, arg1: boolean)

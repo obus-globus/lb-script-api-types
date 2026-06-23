@@ -8,10 +8,10 @@ export class Short2ReferenceLinkedOpenHashMap$EntryIterator extends Short2Refere
     constructor(null_: Short2ReferenceLinkedOpenHashMap$EntryIterator)
     constructor(null_: Short2ReferenceLinkedOpenHashMap$EntryIterator, arg1: number)
     // private entry: Short2ReferenceLinkedOpenHashMap$MapEntry;
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Short2ReferenceMap$Entry<V>) => void, arg1: number): void;
-    add<V extends Object | number | string | boolean>(arg0: Short2ReferenceMap$Entry<V>): void;
-    next<V extends Object | number | string | boolean>(): Short2ReferenceLinkedOpenHashMap$MapEntry;
-    previous<V extends Object | number | string | boolean>(): Short2ReferenceLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Short2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    add<V extends unknown>(arg0: Short2ReferenceMap$Entry<V>): void;
+    next<V extends unknown>(): Short2ReferenceLinkedOpenHashMap$MapEntry;
+    previous<V extends unknown>(): Short2ReferenceLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<V extends Object | number | string | boolean>(arg0: Short2ReferenceMap$Entry<V>): void;
+    set<V extends unknown>(arg0: Short2ReferenceMap$Entry<V>): void;
 }

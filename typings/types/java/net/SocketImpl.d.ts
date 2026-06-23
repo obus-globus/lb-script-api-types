@@ -41,13 +41,13 @@ export abstract class SocketImpl extends Object implements SocketOptions {
     getInetAddress(): InetAddress;
     getInputStream(): InputStream;
     getLocalPort(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     getOutputStream(): OutputStream;
     getPort(): number;
     listen(arg0: number): void;
     reset(): void;
     sendUrgentData(arg0: number): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): void;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): void;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): void;
     shutdownInput(): void;
     shutdownOutput(): void;

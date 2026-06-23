@@ -15,9 +15,9 @@ export interface CompositeDecoder extends Object{
     decodeInlineElement(descriptor: SerialDescriptor, index: number): Decoder;
     decodeIntElement(descriptor: SerialDescriptor, index: number): number;
     decodeLongElement(descriptor: SerialDescriptor, index: number): number;
-    decodeNullableSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T | null;
+    decodeNullableSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T | null;
     decodeSequentially(): boolean;
-    decodeSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeShortElement(descriptor: SerialDescriptor, index: number): number;
     decodeStringElement(descriptor: SerialDescriptor, index: number): string;
     endStructure(descriptor: SerialDescriptor): void;

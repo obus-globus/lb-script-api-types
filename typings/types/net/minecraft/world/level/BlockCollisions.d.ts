@@ -9,7 +9,7 @@ import type { CollisionGetter } from '../../../../net/minecraft/world/level/Coll
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { CollisionContext } from '../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
-export class BlockCollisions<T extends Object | number | string | boolean> extends AbstractIterator<T> {
+export class BlockCollisions<T extends unknown> extends AbstractIterator<T> {
     constructor(collisionGetter: CollisionGetter, source: Entity, box: AABB, onlySuffocatingBlocks: boolean, resultProvider: (param0: BlockPos$MutableBlockPos, param1: VoxelShape) => T)
     constructor(collisionGetter: CollisionGetter, context: CollisionContext, box: AABB, onlySuffocatingBlocks: boolean, resultProvider: (param0: BlockPos$MutableBlockPos, param1: VoxelShape) => T)
     // private box: AABB;

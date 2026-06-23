@@ -30,7 +30,7 @@ export abstract class AFDatagramChannel<A extends AFSocketAddress> extends Datag
     getFileDescriptor(): FileDescriptor;
     getLocalAddress(): A;
     getLocalSocketAddress(): A;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     getRemoteAddress(): A;
     getRemoteSocketAddress(): A;
     implCloseSelectableChannel(): void;
@@ -47,7 +47,7 @@ export abstract class AFDatagramChannel<A extends AFSocketAddress> extends Datag
     send(arg0: ByteBuffer, arg1: SocketAddress): number;
     setAncillaryReceiveBufferSize(arg0: number): void;
     setDeleteOnClose(arg0: boolean): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): AFDatagramChannel<A>;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): AFDatagramChannel<A>;
     setShutdownOnClose(arg0: boolean): void;
     socket(): AFDatagramSocket<A>;
     supportedOptions(): SocketOption<Object>[];

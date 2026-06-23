@@ -5,9 +5,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ShortRBTreeMap$EntryIterator extends Object2ShortRBTreeMap$TreeIterator implements ObjectListIterator<Object2ShortMap$Entry<K>> {
     constructor(null_: Object2ShortRBTreeMap$EntryIterator)
     constructor(null_: Object2ShortRBTreeMap$EntryIterator)
-    add<K extends Object | number | string | boolean>(arg0: Object2ShortMap$Entry<K>): void;
-    next<K extends Object | number | string | boolean>(): Object2ShortMap$Entry<K>;
-    previous<K extends Object | number | string | boolean>(): Object2ShortMap$Entry<K>;
+    add<K extends unknown>(arg0: Object2ShortMap$Entry<K>): void;
+    next<K extends unknown>(): Object2ShortMap$Entry<K>;
+    previous<K extends unknown>(): Object2ShortMap$Entry<K>;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: Object2ShortMap$Entry<K>): void;
+    set<K extends unknown>(arg0: Object2ShortMap$Entry<K>): void;
 }

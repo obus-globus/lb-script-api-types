@@ -5,8 +5,8 @@ import type { Suggestions } from '../../../../com/mojang/brigadier/suggestion/Su
 import type { SuggestionsBuilder } from '../../../../com/mojang/brigadier/suggestion/SuggestionsBuilder.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface SignedArgument<T extends Object | number | string | boolean> extends ArgumentType<T>, Object{
+export interface SignedArgument<T extends unknown> extends ArgumentType<T>, Object{
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): T;
 }

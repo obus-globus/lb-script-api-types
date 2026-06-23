@@ -21,12 +21,12 @@ export class GarbageFreeSortedArrayThreadContextMap extends Object implements Ob
     getImmutableMapOrNull(): { [key: string]: string };
     getReadOnlyContextData(): StringMap;
     // private getThreadLocalMap(): StringMap;
-    getValue<V extends Object | number | string | boolean>(key: string): V;
+    getValue<V extends unknown>(key: string): V;
     hashCode(): number;
     isEmpty(): boolean;
     put(key: string, value: string): void;
     putAll(values: { [key: string]: string }): void;
-    putAllValues<V extends Object | number | string | boolean>(values: { [key: string]: V }): void;
+    putAllValues<V extends unknown>(values: { [key: string]: V }): void;
     putValue(key: string, value: Object): void;
     remove(key: string): void;
     removeAll(keys: string[]): void;

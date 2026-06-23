@@ -20,7 +20,7 @@ export interface Model extends AutoCloseable, Object {
     describeInput(): Pair<string, Shape>[];
     describeOutput(): Pair<string, Shape>[];
     getArtifact(arg0: string): URL;
-    getArtifact<T extends Object | number | string | boolean>(arg0: string, arg1: (param0: InputStream) => T): T;
+    getArtifact<T extends unknown>(arg0: string, arg1: (param0: InputStream) => T): T;
     getArtifactAsStream(arg0: string): InputStream;
     getArtifactNames(): string[];
     getBlock(): Block;
@@ -38,8 +38,8 @@ export interface Model extends AutoCloseable, Object {
     load(arg0: Path[], arg1: string): void;
     load(arg0: Path[], arg1: string, arg2: { [key: string]: Object | null }): void;
     longProperty(arg0: string, arg1: number): number;
-    newPredictor<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Translator<I, O>): Predictor<I, O>;
-    newPredictor<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Translator<I, O>, arg1: Device): Predictor<I, O>;
+    newPredictor<I extends unknown, O extends unknown>(arg0: Translator<I, O>): Predictor<I, O>;
+    newPredictor<I extends unknown, O extends unknown>(arg0: Translator<I, O>, arg1: Device): Predictor<I, O>;
     newTrainer(arg0: TrainingConfig): Trainer;
     quantize(): void;
     save(arg0: Path[], arg1: string): void;

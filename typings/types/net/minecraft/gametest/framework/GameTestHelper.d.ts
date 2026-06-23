@@ -69,9 +69,9 @@ export class GameTestHelper extends Object {
     assertContainerEmpty(pos: BlockPos): void;
     assertEntitiesPresent(entityType: EntityType<any>, expectedEntities: number): void;
     assertEntitiesPresent(entityType: EntityType<any>, pos: BlockPos, numOfExpectedEntities: number, distance: number): void;
-    assertEntityData<E extends Entity, T extends Object | number | string | boolean>(pos: BlockPos, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
+    assertEntityData<E extends Entity, T extends unknown>(pos: BlockPos, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
     assertEntityData<E extends Entity>(pos: BlockPos, entityType: EntityType<E>, test: (param0: E) => boolean): void;
-    assertEntityData<E extends Entity, T extends Object | number | string | boolean>(box: AABB, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
+    assertEntityData<E extends Entity, T extends unknown>(box: AABB, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
     assertEntityInstancePresent(entity: Entity, x: number, y: number, z: number): void;
     assertEntityInstancePresent(entity: Entity, pos: BlockPos): void;
     assertEntityInstancePresent(entity: Entity, pos: BlockPos, inflate: number): void;
@@ -88,7 +88,7 @@ export class GameTestHelper extends Object {
     assertEntityPresent(entityType: EntityType<any>, pos: BlockPos, distance: number): void;
     assertEntityPresent(entityType: EntityType<any>, relativeAABB: AABB): void;
     assertEntityPresent(entityType: EntityType<any>, relativeAABB: AABB, message: Component): void;
-    assertEntityProperty<E extends Entity, T extends Object | number | string | boolean>(entity: E, test: (param0: E) => T, expected: T, description: Component): void;
+    assertEntityProperty<E extends Entity, T extends unknown>(entity: E, test: (param0: E) => T, expected: T, description: Component): void;
     assertEntityProperty<E extends Entity>(entity: E, test: (param0: E) => boolean, description: Component): void;
     assertEntityTouching(entityType: EntityType<any>, x: number, y: number, z: number): void;
     assertFalse(condition: boolean, errorMessage: string): void;
@@ -104,8 +104,8 @@ export class GameTestHelper extends Object {
     assertSameBlockStates(sourceBoundingBox: BoundingBox, targetBoundingBoxCorner: BlockPos): void;
     assertTrue(condition: boolean, errorMessage: string): void;
     assertTrue(condition: boolean, errorMessage: Component): void;
-    assertValueEqual<N extends Object | number | string | boolean>(value: N, expected: N, valueName: string): void;
-    assertValueEqual<N extends Object | number | string | boolean>(value: N, expected: N, valueName: Component): void;
+    assertValueEqual<N extends unknown>(value: N, expected: N, valueName: string): void;
+    assertValueEqual<N extends unknown>(value: N, expected: N, valueName: Component): void;
     assertionException(descriptionId: string, arguments: Object[]): GameTestAssertException;
     assertionException(pos: BlockPos, descriptionId: string, arguments: Object[]): GameTestAssertPosException;
     assertionException(pos: BlockPos, description: Component): GameTestAssertPosException;
@@ -192,7 +192,7 @@ export class GameTestHelper extends Object {
     succeedWhen(asserter: () => void): void;
     succeedWhenBlockPresent(block: Block, x: number, y: number, z: number): void;
     succeedWhenBlockPresent(block: Block, pos: BlockPos): void;
-    succeedWhenEntityData<E extends Entity, T extends Object | number | string | boolean>(pos: BlockPos, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
+    succeedWhenEntityData<E extends Entity, T extends unknown>(pos: BlockPos, entityType: EntityType<E>, dataAccessor: (param0: E) => T, data: T): void;
     succeedWhenEntityNotPresent(entityType: EntityType<any>, x: number, y: number, z: number): void;
     succeedWhenEntityNotPresent(entityType: EntityType<any>, pos: BlockPos): void;
     succeedWhenEntityPresent(entityType: EntityType<any>, x: number, y: number, z: number): void;

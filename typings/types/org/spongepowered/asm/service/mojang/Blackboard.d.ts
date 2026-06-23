@@ -3,8 +3,8 @@ import type { IGlobalPropertyService } from '../../../../../org/spongepowered/as
 import type { IPropertyKey } from '../../../../../org/spongepowered/asm/service/IPropertyKey.d.ts'
 export class Blackboard extends Object implements IGlobalPropertyService {
     constructor()
-    getProperty<T extends Object | number | string | boolean>(arg0: IPropertyKey): T;
-    getProperty<T extends Object | number | string | boolean>(arg0: IPropertyKey, arg1: T): T;
+    getProperty<T extends unknown>(arg0: IPropertyKey): T;
+    getProperty<T extends unknown>(arg0: IPropertyKey, arg1: T): T;
     getPropertyString(arg0: IPropertyKey, arg1: string): string;
     resolveKey(arg0: string): IPropertyKey;
     setProperty(arg0: IPropertyKey, arg1: Object): void;

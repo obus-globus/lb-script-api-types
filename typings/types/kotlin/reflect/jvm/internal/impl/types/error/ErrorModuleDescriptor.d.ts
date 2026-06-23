@@ -11,10 +11,10 @@ import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl
 export class ErrorModuleDescriptor extends Object implements ModuleDescriptor {
     static INSTANCE: ErrorModuleDescriptor;
     private constructor()
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getAnnotations(): AnnotationDescriptor[];
     getBuiltIns(): KotlinBuiltIns;
-    getCapability<T extends Object | number | string | boolean>(arg0: ModuleCapability<T>): T;
+    getCapability<T extends unknown>(arg0: ModuleCapability<T>): T;
     getContainingDeclaration(): DeclarationDescriptor;
     getExpectedByModules(): ModuleDescriptor[];
     getName(): Name;

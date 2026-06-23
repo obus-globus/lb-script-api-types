@@ -7,7 +7,7 @@ import type { Spliterator } from '../../../../java/util/Spliterator.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export abstract class ImmutableMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends BaseImmutableMultimap<K, V> implements Serializable {
+export abstract class ImmutableMultimap<K extends unknown, V extends unknown> extends BaseImmutableMultimap<K, V> implements Serializable {
     static builder(): ImmutableMultimap$Builder<Object, Object>;
     static builderWithExpectedKeys(paramexpectedKeys: number): ImmutableMultimap$Builder<Object, Object>;
     static copyOf(parammultimap: Multimap<Object, Object>): ImmutableMultimap<Object, Object>;

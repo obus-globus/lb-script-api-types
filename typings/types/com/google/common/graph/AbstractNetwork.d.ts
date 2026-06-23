@@ -3,7 +3,7 @@ import type { Graph } from '../../../../com/google/common/graph/Graph.d.ts'
 import type { Network } from '../../../../com/google/common/graph/Network.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class AbstractNetwork<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends Object implements Network<N, E> {
+export abstract class AbstractNetwork<N extends unknown, E extends unknown> extends Object implements Network<N, E> {
     constructor()
     adjacentEdges(edge: E): E[];
     asGraph(): Graph<N>;
@@ -13,7 +13,7 @@ export abstract class AbstractNetwork<N extends Object | number | string | boole
     edgeConnecting(endpoints: N[]): Optional<E>;
     edgeConnectingOrNull(nodeU: N, nodeV: N): E;
     edgeConnectingOrNull(endpoints: N[]): E;
-    edgeInvalidatableSet<T extends Object | number | string | boolean>(set: T[], edge: E): T[];
+    edgeInvalidatableSet<T extends unknown>(set: T[], edge: E): T[];
     edgesConnecting(nodeU: N, nodeV: N): E[];
     edgesConnecting(endpoints: N[]): E[];
     equals(obj: Object | null): boolean;
@@ -22,8 +22,8 @@ export abstract class AbstractNetwork<N extends Object | number | string | boole
     hashCode(): number;
     inDegree(node: N): number;
     isOrderingCompatible(endpoints: Object[]): boolean;
-    nodeInvalidatableSet<T extends Object | number | string | boolean>(set: T[], node: N): T[];
-    nodePairInvalidatableSet<T extends Object | number | string | boolean>(set: T[], nodeU: N, nodeV: N): T[];
+    nodeInvalidatableSet<T extends unknown>(set: T[], node: N): T[];
+    nodePairInvalidatableSet<T extends unknown>(set: T[], nodeU: N, nodeV: N): T[];
     outDegree(node: N): number;
     toString(): string;
     validateEndpoints(endpoints: Object[]): void;

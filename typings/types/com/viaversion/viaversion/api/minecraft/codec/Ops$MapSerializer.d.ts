@@ -3,12 +3,12 @@ import type { Type } from '../../../../../../com/viaversion/viaversion/api/type/
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface Ops$MapSerializer extends Object {
-    write<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Type<K>, arg1: K, arg2: Type<V>, arg3: V): Ops$MapSerializer;
-    write<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V): Ops$MapSerializer;
-    write<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V, arg3: V): Ops$MapSerializer;
-    writeInlinedMap<T extends Object | number | string | boolean>(arg0: Type<T>, arg1: T): Ops$MapSerializer;
+    write<K extends unknown, V extends unknown>(arg0: Type<K>, arg1: K, arg2: Type<V>, arg3: V): Ops$MapSerializer;
+    write<V extends unknown>(arg0: string, arg1: Type<V>, arg2: V): Ops$MapSerializer;
+    write<V extends unknown>(arg0: string, arg1: Type<V>, arg2: V, arg3: V): Ops$MapSerializer;
+    writeInlinedMap<T extends unknown>(arg0: Type<T>, arg1: T): Ops$MapSerializer;
     writeList(arg0: string, arg1: (param0: Ops$ListSerializer) => void): Ops$MapSerializer;
     writeMap(arg0: string, arg1: (param0: Ops$MapSerializer) => void): Ops$MapSerializer;
-    writeOptional<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V): Ops$MapSerializer;
-    writeOptional<V extends Object | number | string | boolean>(arg0: string, arg1: Type<V>, arg2: V, arg3: V): Ops$MapSerializer;
+    writeOptional<V extends unknown>(arg0: string, arg1: Type<V>, arg2: V): Ops$MapSerializer;
+    writeOptional<V extends unknown>(arg0: string, arg1: Type<V>, arg2: V, arg3: V): Ops$MapSerializer;
 }

@@ -8,5 +8,5 @@ export class ScriptCommandBuilder extends Object {
     build(): Command;
     // private createCommand(commandObject: Value): Command;
     // private createParameter(parameterObject: Value): Parameter<Object>;
-    // private toObject<T extends Object | number | string | boolean>(v: Value): T;
+    // private toObject<T extends unknown>(v: Value): T;
 }

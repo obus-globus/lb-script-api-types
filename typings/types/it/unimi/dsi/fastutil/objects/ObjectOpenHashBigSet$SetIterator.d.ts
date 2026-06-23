@@ -9,7 +9,7 @@ export class ObjectOpenHashBigSet$SetIterator extends Object implements ObjectIt
     // private mustReturnNull: boolean;
     // private wrapped: K[];
     hasNext(): boolean;
-    next<K extends Object | number | string | boolean>(): K;
+    next<K extends unknown>(): K;
     remove(): void;
     // private shiftKeys(arg0: number): void;
     skip(arg0: number): number;

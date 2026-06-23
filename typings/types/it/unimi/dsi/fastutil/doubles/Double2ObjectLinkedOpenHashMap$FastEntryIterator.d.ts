@@ -8,10 +8,10 @@ export class Double2ObjectLinkedOpenHashMap$FastEntryIterator extends Double2Obj
     constructor(null_: Double2ObjectLinkedOpenHashMap$FastEntryIterator)
     constructor(null_: Double2ObjectLinkedOpenHashMap$FastEntryIterator, arg1: number)
     // private entry: Double2ObjectLinkedOpenHashMap$MapEntry;
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Double2ObjectMap$Entry<V>) => void, arg1: number): void;
-    add<V extends Object | number | string | boolean>(arg0: Double2ObjectMap$Entry<V>): void;
-    next<V extends Object | number | string | boolean>(): Double2ObjectLinkedOpenHashMap$MapEntry;
-    previous<V extends Object | number | string | boolean>(): Double2ObjectLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Double2ObjectMap$Entry<V>) => void, arg1: number): void;
+    add<V extends unknown>(arg0: Double2ObjectMap$Entry<V>): void;
+    next<V extends unknown>(): Double2ObjectLinkedOpenHashMap$MapEntry;
+    previous<V extends unknown>(): Double2ObjectLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<V extends Object | number | string | boolean>(arg0: Double2ObjectMap$Entry<V>): void;
+    set<V extends unknown>(arg0: Double2ObjectMap$Entry<V>): void;
 }

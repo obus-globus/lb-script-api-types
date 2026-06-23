@@ -4,5 +4,5 @@ import type { LineProcessor } from '../../../../../../../org/spongepowered/inclu
 export abstract class CharSource extends Object {
     constructor()
     openStream(): Reader;
-    readLines<T extends Object | number | string | boolean>(arg0: LineProcessor<T>): T;
+    readLines<T extends unknown>(arg0: LineProcessor<T>): T;
 }

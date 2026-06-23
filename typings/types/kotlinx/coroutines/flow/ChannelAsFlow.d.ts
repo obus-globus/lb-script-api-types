@@ -8,7 +8,7 @@ import type { ReceiveChannel } from '../../../kotlinx/coroutines/channels/Receiv
 import type { Flow } from '../../../kotlinx/coroutines/flow/Flow.d.ts'
 import type { FlowCollector } from '../../../kotlinx/coroutines/flow/FlowCollector.d.ts'
 import type { ChannelFlow } from '../../../kotlinx/coroutines/flow/internal/ChannelFlow.d.ts'
-export class ChannelAsFlow<T extends Object | number | string | boolean> extends ChannelFlow<T> {
+export class ChannelAsFlow<T extends unknown> extends ChannelFlow<T> {
     constructor(channel: ReceiveChannel<T>, consume: boolean, context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow)
     protected additionalToStringProps(): string;
     collect(collector: FlowCollector<T>): void;

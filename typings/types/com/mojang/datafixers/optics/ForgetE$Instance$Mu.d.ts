@@ -4,7 +4,7 @@ import type { Cartesian$Mu } from '../../../../com/mojang/datafixers/optics/prof
 import type { Cocartesian$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/Cocartesian$Mu.d.ts'
 import type { Profunctor$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/Profunctor$Mu.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ForgetE$Instance$Mu<R extends Object | number | string | boolean> extends Object implements AffineP$Mu {
+export class ForgetE$Instance$Mu<R extends unknown> extends Object implements AffineP$Mu {
     static TYPE_TOKEN: TypeToken<AffineP$Mu>;
     static TYPE_TOKEN: TypeToken<Cartesian$Mu>;
     static TYPE_TOKEN: TypeToken<Cocartesian$Mu>;

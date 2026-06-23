@@ -9,7 +9,7 @@ import type { Annotation } from '../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { GenericsFactory } from '../../../sun/reflect/generics/factory/GenericsFactory.d.ts'
 import type { ConstructorRepository } from '../../../sun/reflect/generics/repository/ConstructorRepository.d.ts'
-export class Constructor<T extends Object | number | string | boolean> extends Executable {
+export class Constructor<T extends unknown> extends Executable {
     static DECLARED: number;
     static PUBLIC: number;
     static setAccessible(paramarg0: (Object | null)[], paramarg1: boolean): void;

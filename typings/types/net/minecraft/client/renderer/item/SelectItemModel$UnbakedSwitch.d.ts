@@ -10,7 +10,7 @@ import type { SelectItemModelProperty } from '../../../../../net/minecraft/clien
 import type { ResolvableModel$Resolver } from '../../../../../net/minecraft/client/resources/model/ResolvableModel$Resolver.d.ts'
 import type { RegistryContextSwapper } from '../../../../../net/minecraft/util/RegistryContextSwapper.d.ts'
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
-export class SelectItemModel$UnbakedSwitch<P extends SelectItemModelProperty<T>, T extends Object | number | string | boolean> extends Record {
+export class SelectItemModel$UnbakedSwitch<P extends SelectItemModelProperty<T>, T extends unknown> extends Record {
     static MAP_CODEC: MapCodec<SelectItemModel$UnbakedSwitch<any, Object>>;
     constructor(property: P, cases: SelectItemModel$SwitchCase<T>[])
     // private cases: SelectItemModel$SwitchCase<T>[];

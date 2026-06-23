@@ -23,7 +23,7 @@ export class PropertyNode extends Node {
     readonly setter: FunctionNode;
     readonly value: Expression;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getGetter(): FunctionNode;
     getKey(): Expression;
     getKeyName(): string;

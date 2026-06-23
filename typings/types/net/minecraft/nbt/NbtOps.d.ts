@@ -20,9 +20,9 @@ export class NbtOps extends Object implements DynamicOps<Tag> {
     static INSTANCE: NbtOps;
     private constructor()
     compressMaps(): boolean;
-    convertList<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Tag): U;
-    convertMap<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Tag): U;
-    convertTo<U extends Object | number | string | boolean>(outOps: DynamicOps<U>, input: Tag): U;
+    convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: Tag): U;
+    convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: Tag): U;
+    convertTo<U extends unknown>(outOps: DynamicOps<U>, input: Tag): U;
     createBoolean(arg0: boolean): Tag;
     createBoolean(value: boolean): Tag;
     createByte(arg0: number): Tag;
@@ -87,7 +87,7 @@ export class NbtOps extends Object implements DynamicOps<Tag> {
     toString(): string;
     update(arg0: Tag, arg1: string, arg2: (param0: Tag) => Tag): Tag;
     updateGeneric(arg0: Tag, arg1: Tag, arg2: (param0: Tag) => Tag): Tag;
-    withDecoder<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: Tag) => DataResult<Pair<E, Tag>>;
-    withEncoder<E extends Object | number | string | boolean>(arg0: Encoder<E>): (param0: E) => DataResult<Tag>;
-    withParser<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: Tag) => DataResult<E>;
+    withDecoder<E extends unknown>(arg0: Decoder<E>): (param0: Tag) => DataResult<Pair<E, Tag>>;
+    withEncoder<E extends unknown>(arg0: Encoder<E>): (param0: E) => DataResult<Tag>;
+    withParser<E extends unknown>(arg0: Decoder<E>): (param0: Tag) => DataResult<E>;
 }

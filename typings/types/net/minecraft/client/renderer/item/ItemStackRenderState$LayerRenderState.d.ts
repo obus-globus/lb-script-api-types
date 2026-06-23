@@ -42,13 +42,13 @@ export class ItemStackRenderState$LayerRenderState extends Object implements Fab
     clearExtraData(): void;
     emitter(): QuadEmitter;
     fabric_getMutableMesh(): MutableMesh;
-    getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
+    getData<T extends unknown>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;
-    getDataOrDefault<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): T;
+    getDataOrDefault<T extends unknown>(arg0: RenderStateDataKey<T>, arg1: T): T;
     getDataOrDefault(arg0: RenderStateDataKey<Object>, arg1: Object): Object;
     // private iris$setupId(arg0: Item, arg1: Identifier): void;
     prepareQuadList(): BakedQuad[];
-    setData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): void;
+    setData<T extends unknown>(arg0: RenderStateDataKey<T>, arg1: T): void;
     setData(arg0: RenderStateDataKey<Object>, arg1: Object): void;
     setExtents(extents: () => Vector3fc[]): void;
     setFoilType(foilType: ItemStackRenderState$FoilType): void;
@@ -56,7 +56,7 @@ export class ItemStackRenderState$LayerRenderState extends Object implements Fab
     setLocalTransform(transform: Matrix4fc): void;
     setParticleMaterial(particleMaterial: Material$Baked): void;
     setUsesBlockLight(usesBlockLight: boolean): void;
-    setupSpecialModel<T extends Object | number | string | boolean>(renderer: SpecialModelRenderer<T>, argument: T): void;
+    setupSpecialModel<T extends unknown>(renderer: SpecialModelRenderer<T>, argument: T): void;
     // private submit(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, outlineColor: number): void;
     tintLayers(): (Object | null)[];
 }

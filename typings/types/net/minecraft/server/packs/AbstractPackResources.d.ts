@@ -15,7 +15,7 @@ export abstract class AbstractPackResources extends Object implements PackResour
     // private location: PackLocationInfo;
     // private metadata: ResourceMetadata;
     close(): void;
-    getMetadataSection<T extends Object | number | string | boolean>(metadataSerializer: MetadataSectionType<T>): T;
+    getMetadataSection<T extends unknown>(metadataSerializer: MetadataSectionType<T>): T;
     knownPackInfo(): Optional<KnownPack>;
     listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
     location(): PackLocationInfo;

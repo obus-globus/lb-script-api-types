@@ -22,9 +22,9 @@ export class JsonOps extends Object implements DynamicOps<JsonElement> {
     constructor(arg0: boolean)
     // private compressed: boolean;
     compressMaps(): boolean;
-    convertList<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: JsonElement): U;
-    convertMap<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: JsonElement): U;
-    convertTo<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: JsonElement): U;
+    convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: JsonElement): U;
+    convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: JsonElement): U;
+    convertTo<U extends unknown>(arg0: DynamicOps<U>, arg1: JsonElement): U;
     createBoolean(arg0: boolean): JsonElement;
     createByte(arg0: number): JsonElement;
     createByteList(arg0: ByteBuffer): JsonElement;
@@ -70,7 +70,7 @@ export class JsonOps extends Object implements DynamicOps<JsonElement> {
     toString(): string;
     update(arg0: JsonElement, arg1: string, arg2: (param0: JsonElement) => JsonElement): JsonElement;
     updateGeneric(arg0: JsonElement, arg1: JsonElement, arg2: (param0: JsonElement) => JsonElement): JsonElement;
-    withDecoder<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: JsonElement) => DataResult<Pair<E, JsonElement>>;
-    withEncoder<E extends Object | number | string | boolean>(arg0: Encoder<E>): (param0: E) => DataResult<JsonElement>;
-    withParser<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: JsonElement) => DataResult<E>;
+    withDecoder<E extends unknown>(arg0: Decoder<E>): (param0: JsonElement) => DataResult<Pair<E, JsonElement>>;
+    withEncoder<E extends unknown>(arg0: Encoder<E>): (param0: E) => DataResult<JsonElement>;
+    withParser<E extends unknown>(arg0: Decoder<E>): (param0: JsonElement) => DataResult<E>;
 }

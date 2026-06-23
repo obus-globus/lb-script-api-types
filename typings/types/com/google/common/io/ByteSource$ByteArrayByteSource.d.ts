@@ -26,7 +26,7 @@ export class ByteSource$ByteArrayByteSource extends ByteSource {
     openBufferedStream(): InputStream;
     openStream(): InputStream;
     read(): number[];
-    read<T extends Object | number | string | boolean>(processor: ByteProcessor<T>): T;
+    read<T extends unknown>(processor: ByteProcessor<T>): T;
     size(): number;
     sizeIfKnown(): Optional<number>;
     slice(offset: number, length: number): ByteSource;

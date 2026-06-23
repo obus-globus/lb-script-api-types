@@ -55,8 +55,8 @@ export class NBTCompound extends NBTTag< { [key: string]: NBTTag<Object> }> {
     getList(arg0: string): NBTTag<Object>[];
     getList<T extends NBTTag<Object>>(arg0: string, arg1: Class<T>): T[];
     getListElements(arg0: string): Object[];
-    getListElements<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T[];
-    getListElementsOrDefault<T extends Object | number | string | boolean>(arg0: string, arg1: T[], arg2: Class<T>): T[];
+    getListElements<T extends unknown>(arg0: string, arg1: Class<T>): T[];
+    getListElementsOrDefault<T extends unknown>(arg0: string, arg1: T[], arg2: Class<T>): T[];
     getListElementsOrDefault(arg0: string, arg1: Object[]): Object[];
     getListOrDefault<T extends NBTTag<Object>>(arg0: string, arg1: T[], arg2: Class<T>): T[];
     getListOrDefault(arg0: string, arg1: NBTTag<Object>[]): NBTTag<Object>[];

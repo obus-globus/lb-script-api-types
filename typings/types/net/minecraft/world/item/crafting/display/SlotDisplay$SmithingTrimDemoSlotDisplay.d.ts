@@ -29,7 +29,7 @@ export class SlotDisplay$SmithingTrimDemoSlotDisplay extends Record implements S
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
     material(): SlotDisplay;
     pattern(): Holder<TrimPattern>;
-    resolve<T extends Object | number | string | boolean>(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
+    resolve<T extends unknown>(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
     resolveForFirstStack(context: ContextMap): ItemStack;
     resolveForStacks(context: ContextMap): ItemStack[];
     toString(): string;

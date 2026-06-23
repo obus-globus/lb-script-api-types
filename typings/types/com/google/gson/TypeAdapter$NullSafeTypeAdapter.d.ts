@@ -4,7 +4,7 @@ import type { JsonWriter } from '../../../com/google/gson/stream/JsonWriter.d.ts
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class TypeAdapter$NullSafeTypeAdapter extends TypeAdapter<T> {
     private constructor(null_: TypeAdapter$NullSafeTypeAdapter)
-    read<T extends Object | number | string | boolean>(arg0: JsonReader): T;
+    read<T extends unknown>(arg0: JsonReader): T;
     toString(): string;
-    write<T extends Object | number | string | boolean>(arg0: JsonWriter, arg1: T): void;
+    write<T extends unknown>(arg0: JsonWriter, arg1: T): void;
 }

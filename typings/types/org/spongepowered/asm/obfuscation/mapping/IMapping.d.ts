@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { IMapping$Type } from '../../../../../org/spongepowered/asm/obfuscation/mapping/IMapping$Type.d.ts'
-export interface IMapping<TMapping extends Object | number | string | boolean> extends Object{
+export interface IMapping<TMapping extends unknown> extends Object{
     copy(): TMapping;
     getDesc(): string;
     getName(): string;

@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ResettableStorage<T extends Object | number | string | boolean> extends Object {
+export class ResettableStorage<T extends unknown> extends Object {
     constructor()
     constructor(arg0: T)
     // private value: T;

@@ -8,7 +8,7 @@ import type { HolderLookup$RegistryLookup } from '../../../net/minecraft/core/Ho
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 import type { FeatureFlagSet } from '../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
-export interface HolderLookup$RegistryLookup$Delegate<T extends Object | number | string | boolean> extends Object, HolderLookup$RegistryLookup<T> {
+export interface HolderLookup$RegistryLookup$Delegate<T extends unknown> extends Object, HolderLookup$RegistryLookup<T> {
     filterElements(filter: (param0: T) => boolean): HolderLookup$RegistryLookup<T>;
     filterFeatures(enabledFeatures: FeatureFlagSet): HolderLookup$RegistryLookup<T>;
     get(id: ResourceKey<T>): Optional<Holder$Reference<T>>;

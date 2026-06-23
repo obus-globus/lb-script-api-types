@@ -13,5 +13,5 @@ export class TreeTypeAdapter$SingleTypeFactory extends Object implements TypeAda
     // private hierarchyType: Class<Object>;
     // private matchRawType: boolean;
     // private serializer: JsonSerializer<Object>;
-    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends unknown>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
 }

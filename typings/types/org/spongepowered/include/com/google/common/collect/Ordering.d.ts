@@ -6,7 +6,7 @@ import type { ToLongFunction } from '../../../../../../../java/util/function/ToL
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { Function as Function_2 } from '../../../../../../../org/spongepowered/include/com/google/common/base/Function.d.ts'
-export abstract class Ordering<T extends Object | number | string | boolean> extends Object implements Comparator<T> {
+export abstract class Ordering<T extends unknown> extends Object implements Comparator<T> {
     static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
     static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object) => boolean): (param0: Object) => boolean;
     static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
@@ -19,12 +19,12 @@ export abstract class Ordering<T extends Object | number | string | boolean> ext
     static reverseOrder(): (param0: Object) => boolean;
     constructor()
     compare(arg0: T, arg1: T): number;
-    onResultOf<F extends Object | number | string | boolean>(arg0: (param0: Object) => boolean): Ordering<F>;
+    onResultOf<F extends unknown>(arg0: (param0: Object) => boolean): Ordering<F>;
     reverse<S extends T>(): Ordering<S>;
     reversed(): (param0: Object) => boolean;
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparing<U extends Comparable<U>>(arg0: (param0: T) => U): (param0: Object) => boolean;
-    thenComparing<U extends Object | number | string | boolean>(arg0: (param0: T) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparing<U extends unknown>(arg0: (param0: T) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparingDouble(arg0: (param0: T) => number): (param0: Object) => boolean;
     thenComparingInt(arg0: (param0: T) => number): (param0: Object) => boolean;
     thenComparingLong(arg0: (param0: T) => number): (param0: Object) => boolean;

@@ -11,11 +11,11 @@ export abstract class ExternalDeclaration extends InnerASTNode {
     static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor()
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): ExternalDeclaration;
     cloneInto(arg0: Root): ExternalDeclaration;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
-    externalDeclarationAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    externalDeclarationAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     getExternalDeclarationType(): ExternalDeclaration$ExternalDeclarationType;
 }

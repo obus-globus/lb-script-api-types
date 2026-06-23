@@ -5,7 +5,7 @@ import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Either$Left<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Either<L, R> {
+export class Either$Left<L extends unknown, R extends unknown> extends Either<L, R> {
     static left(paramarg0: Object | null): Either<Object, Object>;
     static right(paramarg0: Object | null): Either<Object, Object>;
     static unbox(paramarg0: App<Either$Mu<Object>, Object>): Either<Object, Object>;
@@ -17,8 +17,8 @@ export class Either$Left<L extends Object | number | string | boolean, R extends
     ifLeft(arg0: (param0: L) => void): Either<L, R>;
     ifRight(arg0: (param0: R) => void): Either<L, R>;
     left(): Optional<L>;
-    map<T extends Object | number | string | boolean>(arg0: (param0: L) => T, arg1: (param0: R) => T): T;
-    mapBoth<C extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: (param0: L) => C, arg1: (param0: R) => D): Either<C, D>;
+    map<T extends unknown>(arg0: (param0: L) => T, arg1: (param0: R) => T): T;
+    mapBoth<C extends unknown, D extends unknown>(arg0: (param0: L) => C, arg1: (param0: R) => D): Either<C, D>;
     right(): Optional<R>;
     toString(): string;
 }

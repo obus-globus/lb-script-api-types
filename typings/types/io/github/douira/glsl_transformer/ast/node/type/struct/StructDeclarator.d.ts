@@ -15,7 +15,7 @@ export class StructDeclarator extends InnerASTNode {
     constructor(arg0: Identifier, arg1: ArraySpecifier)
     arraySpecifier: ArraySpecifier;
     name: Identifier;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): StructDeclarator;
     cloneInto(arg0: Root): StructDeclarator;
     enterNode(arg0: ASTListener): void;

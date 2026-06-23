@@ -9,7 +9,7 @@ import type { EntityType } from '../../../../../../net/minecraft/world/entity/En
 import type { MenuType } from '../../../../../../net/minecraft/world/inventory/MenuType.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
-export class IdentifierWithRegistryAdapter<T extends Object | number | string | boolean> extends TypeAdapter<T> {
+export class IdentifierWithRegistryAdapter<T extends unknown> extends TypeAdapter<T> {
     static BLOCK: IdentifierWithRegistryAdapter<Block>;
     static Companion: IdentifierWithRegistryAdapter$Companion;
     static ENTITY_TYPE: IdentifierWithRegistryAdapter<EntityType<any>>;

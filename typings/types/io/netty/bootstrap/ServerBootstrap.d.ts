@@ -14,12 +14,12 @@ export class ServerBootstrap extends AbstractBootstrap<ServerBootstrap, ServerCh
     // private childHandler: ChannelHandler;
     // private childOptions: Map<ChannelOption<Object>, Object>;
     // private config: ServerBootstrapConfig;
-    childAttr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>, arg1: T): ServerBootstrap;
+    childAttr<T extends unknown>(arg0: AttributeKey<T>, arg1: T): ServerBootstrap;
     childAttrs(): Map<AttributeKey<Object>, Object>;
     childGroup(): (Object | null)[];
     childHandler(): ChannelHandler;
     childHandler(arg0: ChannelHandler): ServerBootstrap;
-    childOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): ServerBootstrap;
+    childOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): ServerBootstrap;
     childOptions(): Map<ChannelOption<Object>, Object>;
     clone(): ServerBootstrap;
     config(): ServerBootstrapConfig;

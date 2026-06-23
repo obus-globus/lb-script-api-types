@@ -8,9 +8,9 @@ export class ReferenceOpenHashSet$SetIterator extends Object implements ObjectIt
     // private mustReturnNull: boolean;
     // private pos: number;
     // private wrapped: K[];
-    forEachRemaining<K extends Object | number | string | boolean>(arg0: (param0: K) => void): void;
+    forEachRemaining<K extends unknown>(arg0: (param0: K) => void): void;
     hasNext(): boolean;
-    next<K extends Object | number | string | boolean>(): K;
+    next<K extends unknown>(): K;
     remove(): void;
     // private shiftKeys(arg0: number): void;
     skip(arg0: number): number;

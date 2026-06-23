@@ -15,7 +15,7 @@ export class ModelBakery$ModelBakerImpl extends Object implements ModelBaker {
     // private materials: MaterialBaker;
     // private missingModels: ModelBakery$MissingModels;
     // private operationCache: Map<(param0: ModelBaker) => Object, Object>;
-    compute<T extends Object | number | string | boolean>(key: (param0: ModelBaker) => T): T;
+    compute<T extends unknown>(key: (param0: ModelBaker) => T): T;
     getModel(location: Identifier): ResolvedModel;
     interner(): ModelBaker$Interner;
     materials(): MaterialBaker;

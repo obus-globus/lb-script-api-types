@@ -34,7 +34,7 @@ export interface DomainDatagramChannel extends Channel, UnixChannel, Object{
     disconnect(arg0: ChannelPromise): ChannelFuture;
     fd(): FileDescriptor;
     flush(): Channel;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     id(): ChannelId;
     isActive(): boolean;
     isConnected(): boolean;
@@ -50,7 +50,7 @@ export interface DomainDatagramChannel extends Channel, UnixChannel, Object{
     parent(): Channel;
     read(): Channel;
     remoteAddress(): DomainSocketAddress;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     unsafe(): Channel$Unsafe;
     voidPromise(): ChannelPromise;
     write(arg0: Object): ChannelFuture;

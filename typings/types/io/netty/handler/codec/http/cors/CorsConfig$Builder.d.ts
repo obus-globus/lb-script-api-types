@@ -18,7 +18,7 @@ export class CorsConfig$Builder extends Object {
     maxAge(arg0: number): CorsConfig$Builder;
     noPreflightResponseHeaders(): CorsConfig$Builder;
     preflightResponseHeader(arg0: CharSequence, arg1: Object[]): CorsConfig$Builder;
-    preflightResponseHeader<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: T[]): CorsConfig$Builder;
-    preflightResponseHeader<T extends Object | number | string | boolean>(arg0: string, arg1: () => T): CorsConfig$Builder;
+    preflightResponseHeader<T extends unknown>(arg0: CharSequence, arg1: T[]): CorsConfig$Builder;
+    preflightResponseHeader<T extends unknown>(arg0: string, arg1: () => T): CorsConfig$Builder;
     shortCurcuit(): CorsConfig$Builder;
 }

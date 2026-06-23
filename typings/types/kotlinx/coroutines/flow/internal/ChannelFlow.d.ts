@@ -7,7 +7,7 @@ import type { ReceiveChannel } from '../../../../kotlinx/coroutines/channels/Rec
 import type { Flow } from '../../../../kotlinx/coroutines/flow/Flow.d.ts'
 import type { FlowCollector } from '../../../../kotlinx/coroutines/flow/FlowCollector.d.ts'
 import type { FusibleFlow } from '../../../../kotlinx/coroutines/flow/internal/FusibleFlow.d.ts'
-export abstract class ChannelFlow<T extends Object | number | string | boolean> extends Object implements FusibleFlow<T> {
+export abstract class ChannelFlow<T extends unknown> extends Object implements FusibleFlow<T> {
     constructor(context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow)
     capacity: number;
     /*not mapped: */ getCollectToFun$kotlinx_coroutines_core(): (param0: ProducerScope<T>) => void;

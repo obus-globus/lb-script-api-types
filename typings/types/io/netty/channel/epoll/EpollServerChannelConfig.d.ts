@@ -13,7 +13,7 @@ export class EpollServerChannelConfig extends EpollChannelConfig implements Serv
     readonly backlog: number;
     // private pendingFastOpenRequestsThreshold: number;
     getBacklog(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
@@ -26,7 +26,7 @@ export class EpollServerChannelConfig extends EpollChannelConfig implements Serv
     setEpollMode(arg0: EpollMode): EpollServerChannelConfig;
     setMaxMessagesPerRead(arg0: number): EpollServerChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): EpollServerChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): EpollServerChannelConfig;
     setReceiveBufferSize(arg0: number): EpollServerChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): EpollServerChannelConfig;

@@ -38,8 +38,8 @@ export class StreamingJsonEncoder extends AbstractEncoder implements JsonEncoder
     encodeJsonElement(element: JsonElement): void;
     encodeLong(value: number): void;
     encodeNull(): void;
-    encodeNullableSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
-    encodeSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): void;
+    encodeNullableSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
+    encodeSerializableValue<T extends unknown>(serializer: SerializationStrategy<T>, value: T): void;
     encodeShort(value: number): void;
     encodeString(value: string): void;
     // private encodeTypeInfo(discriminator: string, serialName: string): void;

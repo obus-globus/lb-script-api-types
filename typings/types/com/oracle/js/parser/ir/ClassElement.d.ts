@@ -19,7 +19,7 @@ export class ClassElement extends PropertyNode {
     readonly decorators: Expression[];
     // private kind: number;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getDecorators(): Expression[];
     isAccessor(): boolean;
     isAutoAccessor(): boolean;

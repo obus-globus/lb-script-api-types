@@ -10,5 +10,5 @@ export class DoubleExpression extends Object implements Expression {
     hashCode(): number;
     toString(): string;
     value(): number;
-    visit<R extends Object | number | string | boolean>(arg0: ExpressionVisitor<R>): R;
+    visit<R extends unknown>(arg0: ExpressionVisitor<R>): R;
 }

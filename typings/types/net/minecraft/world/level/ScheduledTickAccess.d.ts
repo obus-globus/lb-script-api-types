@@ -6,8 +6,8 @@ import type { LevelTickAccess } from '../../../../net/minecraft/world/ticks/Leve
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPriority.d.ts'
 export interface ScheduledTickAccess extends Object{
-    createTick<T extends Object | number | string | boolean>(pos: BlockPos, type: T, tickDelay: number): ScheduledTick<T>;
-    createTick<T extends Object | number | string | boolean>(pos: BlockPos, type: T, tickDelay: number, priority: TickPriority): ScheduledTick<T>;
+    createTick<T extends unknown>(pos: BlockPos, type: T, tickDelay: number): ScheduledTick<T>;
+    createTick<T extends unknown>(pos: BlockPos, type: T, tickDelay: number, priority: TickPriority): ScheduledTick<T>;
     getBlockTicks(): LevelTickAccess<Block>;
     getFluidTicks(): LevelTickAccess<Fluid>;
     scheduleTick(pos: BlockPos, type: Block, tickDelay: number): void;

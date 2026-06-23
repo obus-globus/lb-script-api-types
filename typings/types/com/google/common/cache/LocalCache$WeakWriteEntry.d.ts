@@ -2,7 +2,7 @@ import type { LocalCache$WeakEntry } from '../../../../com/google/common/cache/L
 import type { ReferenceEntry } from '../../../../com/google/common/cache/ReferenceEntry.d.ts'
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class LocalCache$WeakWriteEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends LocalCache$WeakEntry<K, V> {
+export class LocalCache$WeakWriteEntry<K extends unknown, V extends unknown> extends LocalCache$WeakEntry<K, V> {
     static reachabilityFence(paramarg0: Object): void;
     constructor(queue: ReferenceQueue<K>, key: K, hash: number, next: ReferenceEntry<K, V>)
     // private nextWrite: ReferenceEntry<K, V>;

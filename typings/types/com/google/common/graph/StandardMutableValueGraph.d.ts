@@ -4,7 +4,7 @@ import type { GraphConnections } from '../../../../com/google/common/graph/Graph
 import type { MutableValueGraph } from '../../../../com/google/common/graph/MutableValueGraph.d.ts'
 import type { StandardValueGraph } from '../../../../com/google/common/graph/StandardValueGraph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class StandardMutableValueGraph<N extends Object | number | string | boolean, V extends Object | number | string | boolean> extends StandardValueGraph<N, V> implements MutableValueGraph<N, V> {
+export class StandardMutableValueGraph<N extends unknown, V extends unknown> extends StandardValueGraph<N, V> implements MutableValueGraph<N, V> {
     constructor(builder: AbstractGraphBuilder<N>)
     // private incidentEdgeOrder: ElementOrder<N>;
     addNode(node: N): boolean;

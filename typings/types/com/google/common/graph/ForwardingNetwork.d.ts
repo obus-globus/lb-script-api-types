@@ -3,7 +3,7 @@ import type { ElementOrder } from '../../../../com/google/common/graph/ElementOr
 import type { Network } from '../../../../com/google/common/graph/Network.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ForwardingNetwork<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends AbstractNetwork<N, E> {
+export abstract class ForwardingNetwork<N extends unknown, E extends unknown> extends AbstractNetwork<N, E> {
     constructor()
     adjacentEdges(edge: E): E[];
     adjacentNodes(node: N): N[];

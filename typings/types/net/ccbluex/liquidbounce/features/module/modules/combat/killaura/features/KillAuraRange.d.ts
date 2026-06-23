@@ -23,5 +23,5 @@ export class KillAuraRange extends RangeValueGroup implements MinecraftShortcuts
      */
     migrateFromValues(map: { [key: string]: JsonObject }): void;
     update(): void;
-    // private withDummy<T extends Object | number | string | boolean>(name: string, jsonObject: JsonObject, value: T): T;
+    // private withDummy<T extends unknown>(name: string, jsonObject: JsonObject, value: T): T;
 }

@@ -6,7 +6,7 @@ import type { TypeVisitor } from '../../../../javax/lang/model/type/TypeVisitor.
 import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface TypeMirror extends AnnotatedConstruct, Object{
-    accept<R extends Object | number | string | boolean, P extends Object | number | string | boolean>(arg0: TypeVisitor<R, P>, arg1: P): R;
+    accept<R extends unknown, P extends unknown>(arg0: TypeVisitor<R, P>, arg1: P): R;
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;
     getAnnotationMirrors(): AnnotationMirror[];
     getAnnotationsByType<A extends Annotation>(arg0: Class<A>): A[];

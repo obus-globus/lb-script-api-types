@@ -6,7 +6,7 @@ import type { RegistrySetBuilder$RegistryBootstrap } from '../../../net/minecraf
 import type { RegistrySetBuilder$RegistryContents } from '../../../net/minecraft/core/RegistrySetBuilder$RegistryContents.d.ts'
 import type { BootstrapContext } from '../../../net/minecraft/data/worldgen/BootstrapContext.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
-export class RegistrySetBuilder$RegistryStub<T extends Object | number | string | boolean> extends Record {
+export class RegistrySetBuilder$RegistryStub<T extends unknown> extends Record {
     constructor(key: ResourceKey<T[]>, lifecycle: Lifecycle, bootstrap: (param0: BootstrapContext<T>) => void)
     // private bootstrap: (param0: BootstrapContext<T>) => void;
     // private key: ResourceKey<T[]>;

@@ -11,6 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ChunkBedBlockEntityInjecterFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, changesType: boolean)
-    // private cap<TE extends Object | number | string | boolean>(levelType: Type<Object>, tileEntityListType: List$ListType<TE>): TypeRewriteRule;
+    // private cap<TE extends unknown>(levelType: Type<Object>, tileEntityListType: List$ListType<TE>): TypeRewriteRule;
     makeRule(): TypeRewriteRule;
 }

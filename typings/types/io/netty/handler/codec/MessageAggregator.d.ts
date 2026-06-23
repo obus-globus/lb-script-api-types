@@ -7,7 +7,7 @@ import type { MessageToMessageDecoder } from '../../../../io/netty/handler/codec
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export abstract class MessageAggregator<I extends Object | number | string | boolean, S extends Object | number | string | boolean, C extends ByteBufHolder, O extends ByteBufHolder> extends MessageToMessageDecoder<I> {
+export abstract class MessageAggregator<I extends unknown, S extends unknown, C extends ByteBufHolder, O extends ByteBufHolder> extends MessageToMessageDecoder<I> {
     constructor(arg0: number)
     constructor(arg0: number, arg1: Class<I>)
     // private aggregating: boolean;

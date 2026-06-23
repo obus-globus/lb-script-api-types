@@ -9,7 +9,7 @@ import type { ResultInfo } from '../../../../net/minecraft/server/jsonrpc/api/Re
 import type { Schema } from '../../../../net/minecraft/server/jsonrpc/api/Schema.d.ts'
 import type { MinecraftApi } from '../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftApi.d.ts'
 import type { ClientInfo } from '../../../../net/minecraft/server/jsonrpc/methods/ClientInfo.d.ts'
-export class IncomingRpcMethod$IncomingRpcMethodBuilder<Params extends Object | number | string | boolean, Result extends Object | number | string | boolean> extends Object {
+export class IncomingRpcMethod$IncomingRpcMethodBuilder<Params extends unknown, Result extends unknown> extends Object {
     constructor(supplier: (param0: MinecraftApi) => Result)
     constructor(function_: (param0: MinecraftApi, param1: ClientInfo) => Result)
     constructor(function_: (param0: MinecraftApi, param1: Params, param2: ClientInfo) => Result)

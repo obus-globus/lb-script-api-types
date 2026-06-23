@@ -11,5 +11,5 @@ export class RegistryOps$HolderLookupAdapter extends Object implements RegistryO
     // private createLookup(key: ResourceKey<(Object | null)[]>): Optional<RegistryOps$RegistryInfo<Object>>;
     equals(obj: Object | null): boolean;
     hashCode(): number;
-    lookup<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<RegistryOps$RegistryInfo<E>>;
+    lookup<E extends unknown>(registryKey: ResourceKey<E[]>): Optional<RegistryOps$RegistryInfo<E>>;
 }

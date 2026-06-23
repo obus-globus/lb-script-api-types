@@ -7,7 +7,7 @@ import type { LegacyAPI } from '../../../com/viaversion/viaversion/legacy/Legacy
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { UUID } from '../../../java/util/UUID.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class ViaAPIBase<T extends Object | number | string | boolean> extends Object implements ViaAPI<T> {
+export abstract class ViaAPIBase<T extends unknown> extends Object implements ViaAPI<T> {
     constructor()
     // private legacy: LegacyAPI<T>;
     apiVersion(): number;

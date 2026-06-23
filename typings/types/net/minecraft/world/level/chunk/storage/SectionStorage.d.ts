@@ -20,7 +20,7 @@ import type { LevelHeightAccessor } from '../../../../../../net/minecraft/world/
 import type { ChunkIOErrorReporter } from '../../../../../../net/minecraft/world/level/chunk/storage/ChunkIOErrorReporter.d.ts'
 import type { SectionStorage$PackedChunk } from '../../../../../../net/minecraft/world/level/chunk/storage/SectionStorage$PackedChunk.d.ts'
 import type { SimpleRegionStorage } from '../../../../../../net/minecraft/world/level/chunk/storage/SimpleRegionStorage.d.ts'
-export class SectionStorage<R extends Object | number | string | boolean, P extends Object | number | string | boolean> extends Object implements AutoCloseable, RegionBasedStorageSectionExtended<Object> {
+export class SectionStorage<R extends unknown, P extends unknown> extends Object implements AutoCloseable, RegionBasedStorageSectionExtended<Object> {
     constructor(simpleRegionStorage: SimpleRegionStorage, codec: Codec<P>, packer: (param0: R) => P, unpacker: (param0: P, param1: () => void) => R, factory: (param0: () => void) => R, registryAccess: RegistryAccess, errorReporter: ChunkIOErrorReporter, levelHeightAccessor: LevelHeightAccessor)
     // private codec: Codec<P>;
     // private columns: { [key: string]: any };
@@ -61,5 +61,5 @@ export class SectionStorage<R extends Object | number | string | boolean, P exte
     // private unpackChunk(pos: ChunkPos, packedChunk: SectionStorage$PackedChunk<P>): void;
     // private unpackPendingLoads(): void;
     // private writeChunk(chunkPos: ChunkPos): void;
-    // private writeChunk<T extends Object | number | string | boolean>(chunkPos: ChunkPos, ops: DynamicOps<T>): Dynamic<T>;
+    // private writeChunk<T extends unknown>(chunkPos: ChunkPos, ops: DynamicOps<T>): Dynamic<T>;
 }

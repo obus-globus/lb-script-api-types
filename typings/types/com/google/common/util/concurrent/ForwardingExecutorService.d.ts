@@ -11,15 +11,15 @@ export abstract class ForwardingExecutorService extends ForwardingObject impleme
     close(): void;
     delegate(): ExecutorService;
     execute(command: () => void): void;
-    invokeAll<T extends Object | number | string | boolean>(tasks: () => T[]): Future<T>[];
-    invokeAll<T extends Object | number | string | boolean>(tasks: () => T[], timeout: number, unit: TimeUnit): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(tasks: () => T[]): T;
-    invokeAny<T extends Object | number | string | boolean>(tasks: () => T[], timeout: number, unit: TimeUnit): T;
+    invokeAll<T extends unknown>(tasks: () => T[]): Future<T>[];
+    invokeAll<T extends unknown>(tasks: () => T[], timeout: number, unit: TimeUnit): Future<T>[];
+    invokeAny<T extends unknown>(tasks: () => T[]): T;
+    invokeAny<T extends unknown>(tasks: () => T[], timeout: number, unit: TimeUnit): T;
     isShutdown(): boolean;
     isTerminated(): boolean;
     shutdown(): void;
     shutdownNow(): () => void[];
     submit(task: () => void): Future<Object>;
-    submit<T extends Object | number | string | boolean>(task: () => void, result: T): Future<T>;
-    submit<T extends Object | number | string | boolean>(task: () => T): Future<T>;
+    submit<T extends unknown>(task: () => void, result: T): Future<T>;
+    submit<T extends unknown>(task: () => T): Future<T>;
 }

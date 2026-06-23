@@ -17,18 +17,18 @@ export class Double2ObjectLinkedOpenHashMap$MapEntry extends Object implements D
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;
-    first<V extends Object | number | string | boolean>(arg0: number): DoubleObjectPair<V>;
+    first<V extends unknown>(arg0: number): DoubleObjectPair<V>;
     firstDouble(): number;
     getDoubleKey(): number;
     hashCode(): number;
     key(): number;
-    key<V extends Object | number | string | boolean>(arg0: number): DoubleObjectPair<V>;
+    key<V extends unknown>(arg0: number): DoubleObjectPair<V>;
     keyDouble(): number;
     left(): number;
-    left<V extends Object | number | string | boolean>(arg0: number): DoubleObjectPair<V>;
+    left<V extends unknown>(arg0: number): DoubleObjectPair<V>;
     leftDouble(): number;
-    right<V extends Object | number | string | boolean>(): V;
-    right<V extends Object | number | string | boolean>(arg0: V): DoubleObjectPair<V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    right<V extends unknown>(): V;
+    right<V extends unknown>(arg0: V): DoubleObjectPair<V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

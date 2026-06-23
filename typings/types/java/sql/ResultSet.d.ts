@@ -77,10 +77,10 @@ export interface ResultSet extends AutoCloseable, Wrapper, Object{
     getNString(arg0: number): string;
     getNString(arg0: string): string;
     getObject(arg0: number): Object;
-    getObject<T extends Object | number | string | boolean>(arg0: number, arg1: Class<T>): T;
+    getObject<T extends unknown>(arg0: number, arg1: Class<T>): T;
     getObject(arg0: number, arg1: { [key: string]: Class<Object> }): Object;
     getObject(arg0: string): Object;
-    getObject<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T;
+    getObject<T extends unknown>(arg0: string, arg1: Class<T>): T;
     getObject(arg0: string, arg1: { [key: string]: Class<Object> }): Object;
     getRef(arg0: number): Ref;
     getRef(arg0: string): Ref;

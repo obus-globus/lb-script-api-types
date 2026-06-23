@@ -13,7 +13,7 @@ import type { ReflectKCallable } from '../../../../kotlin/reflect/jvm/internal/R
 import type { ReflectProperties$LazySoftVal } from '../../../../kotlin/reflect/jvm/internal/ReflectProperties$LazySoftVal.d.ts'
 import type { CallableMemberDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableMemberDescriptor.d.ts'
 import type { DescriptorKType } from '../../../../kotlin/reflect/jvm/internal/types/DescriptorKType.d.ts'
-export abstract class DescriptorKCallable<R extends Object | number | string | boolean> extends Object implements KTypeParameterOwnerImpl, ReflectKCallable<R> {
+export abstract class DescriptorKCallable<R extends unknown> extends Object implements KTypeParameterOwnerImpl, ReflectKCallable<R> {
     constructor()
     // private _absentArguments: ReflectProperties$LazySoftVal<(Object | null)[]>;
     // private _annotations: ReflectProperties$LazySoftVal<Annotation[]>;

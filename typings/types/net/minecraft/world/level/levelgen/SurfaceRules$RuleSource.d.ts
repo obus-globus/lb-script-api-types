@@ -4,7 +4,7 @@ import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/Key
 import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$Context.d.ts'
 import type { SurfaceRules$SurfaceRule } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$SurfaceRule.d.ts'
 export interface SurfaceRules$RuleSource extends Function<SurfaceRules$Context, SurfaceRules$SurfaceRule>, Object {
-    andThen<V extends Object | number | string | boolean>(arg0: (param0: SurfaceRules$SurfaceRule) => V): (param0: SurfaceRules$Context) => V;
+    andThen<V extends unknown>(arg0: (param0: SurfaceRules$SurfaceRule) => V): (param0: SurfaceRules$Context) => V;
     codec(): KeyDispatchDataCodec<SurfaceRules$RuleSource>;
-    compose<V extends Object | number | string | boolean>(arg0: (param0: V) => SurfaceRules$Context): (param0: V) => SurfaceRules$SurfaceRule;
+    compose<V extends unknown>(arg0: (param0: V) => SurfaceRules$Context): (param0: V) => SurfaceRules$SurfaceRule;
 }

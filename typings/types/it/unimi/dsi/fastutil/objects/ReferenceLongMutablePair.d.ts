@@ -1,7 +1,7 @@
 import type { ReferenceLongPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceLongPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ReferenceLongMutablePair<K extends Object | number | string | boolean> extends Object implements ReferenceLongPair<K>, Serializable {
+export class ReferenceLongMutablePair<K extends unknown> extends Object implements ReferenceLongPair<K>, Serializable {
     static of(paramarg0: Object | null, paramarg1: number): ReferenceLongMutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ReferenceLongPair<Object>;
     constructor(arg0: K, arg1: number)

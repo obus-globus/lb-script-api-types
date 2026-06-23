@@ -6,6 +6,6 @@ import type { AttributeModifier } from '../../../../../../net/minecraft/world/at
 export interface BiomeModificationContext$AttributesContext extends Object{
     addAll(arg0: EnvironmentAttributeMap): void;
     addAll(arg0: EnvironmentAttributeMap$Builder): void;
-    set<T extends Object | number | string | boolean>(arg0: EnvironmentAttribute<T>, arg1: T): void;
-    setModifier<T extends Object | number | string | boolean, M extends Object | number | string | boolean>(arg0: EnvironmentAttribute<T>, arg1: AttributeModifier<T, M>, arg2: M): void;
+    set<T extends unknown>(arg0: EnvironmentAttribute<T>, arg1: T): void;
+    setModifier<T extends unknown, M extends unknown>(arg0: EnvironmentAttribute<T>, arg1: AttributeModifier<T, M>, arg2: M): void;
 }

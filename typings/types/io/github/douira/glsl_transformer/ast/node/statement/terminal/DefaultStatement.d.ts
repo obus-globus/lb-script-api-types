@@ -15,5 +15,5 @@ export class DefaultStatement extends CaseLabelStatement {
     cloneInto(arg0: Root): DefaultStatement;
     getCaseLabelType(): CaseLabelStatement$CaseLabelType;
     getStatementType(): Statement$StatementType;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

@@ -6,8 +6,8 @@ export class TrustedListenableFutureTask$TrustedFutureInterruptibleTask extends 
     constructor(null_: TrustedListenableFutureTask$TrustedFutureInterruptibleTask)
     // private callable: () => V;
     afterRanInterruptiblyFailure(error: Throwable): void;
-    afterRanInterruptiblySuccess<V extends Object | number | string | boolean>(result: V): void;
+    afterRanInterruptiblySuccess<V extends unknown>(result: V): void;
     isDone(): boolean;
-    runInterruptibly<V extends Object | number | string | boolean>(): V;
+    runInterruptibly<V extends unknown>(): V;
     toPendingString(): string;
 }

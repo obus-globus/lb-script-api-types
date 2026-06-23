@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DiffBuilder } from '../../../../../org/apache/commons/lang3/builder/DiffBuilder.d.ts'
 import type { ReflectionDiffBuilder } from '../../../../../org/apache/commons/lang3/builder/ReflectionDiffBuilder.d.ts'
-export class ReflectionDiffBuilder$Builder<T extends Object | number | string | boolean> extends Object {
+export class ReflectionDiffBuilder$Builder<T extends unknown> extends Object {
     constructor()
     // private diffBuilder: DiffBuilder<T>;
     // private excludeFieldNames: string[];

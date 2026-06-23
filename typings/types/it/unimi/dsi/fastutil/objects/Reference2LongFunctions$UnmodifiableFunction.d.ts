@@ -2,7 +2,7 @@ import type { AbstractReference2LongFunction } from '../../../../../it/unimi/dsi
 import type { Reference2LongFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2LongFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2LongFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractReference2LongFunction<K> implements Serializable {
+export class Reference2LongFunctions$UnmodifiableFunction<K extends unknown> extends AbstractReference2LongFunction<K> implements Serializable {
     constructor(arg0: (param0: Object) => number)
     // private function: (param0: Object) => number;
     clear(): void;

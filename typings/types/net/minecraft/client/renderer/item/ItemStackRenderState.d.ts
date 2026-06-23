@@ -29,9 +29,9 @@ export class ItemStackRenderState extends Object implements FabricRenderState, I
     clearExtraData(): void;
     ensureCapacity(requestedCount: number): void;
     // private firstLayer(): ItemStackRenderState$LayerRenderState;
-    getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
+    getData<T extends unknown>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;
-    getDataOrDefault<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): T;
+    getDataOrDefault<T extends unknown>(arg0: RenderStateDataKey<T>, arg1: T): T;
     getDataOrDefault(arg0: RenderStateDataKey<Object>, arg1: Object): Object;
     getDisplayItem(): Item;
     getDisplayItemModel(): Identifier;
@@ -42,7 +42,7 @@ export class ItemStackRenderState extends Object implements FabricRenderState, I
     newLayer(): ItemStackRenderState$LayerRenderState;
     pickParticleMaterial(randomSource: RandomSource): Material$Baked;
     setAnimated(): void;
-    setData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): void;
+    setData<T extends unknown>(arg0: RenderStateDataKey<T>, arg1: T): void;
     setData(arg0: RenderStateDataKey<Object>, arg1: Object): void;
     setDisplayItem(arg0: Item, arg1: Identifier): void;
     setOversizedInGui(oversizedInGui: boolean): void;

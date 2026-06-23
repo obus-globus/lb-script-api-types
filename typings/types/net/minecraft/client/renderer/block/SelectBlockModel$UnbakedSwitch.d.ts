@@ -5,7 +5,7 @@ import type { BlockModel } from '../../../../../net/minecraft/client/renderer/bl
 import type { BlockModel$BakingContext } from '../../../../../net/minecraft/client/renderer/block/model/BlockModel$BakingContext.d.ts'
 import type { SelectBlockModelProperty } from '../../../../../net/minecraft/client/renderer/block/model/properties/select/SelectBlockModelProperty.d.ts'
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
-export class SelectBlockModel$UnbakedSwitch<P extends SelectBlockModelProperty<T>, T extends Object | number | string | boolean> extends Record {
+export class SelectBlockModel$UnbakedSwitch<P extends SelectBlockModelProperty<T>, T extends unknown> extends Record {
     constructor(property: P, cases: SelectBlockModel$SwitchCase<T>[])
     // private cases: SelectBlockModel$SwitchCase<T>[];
     // private property: P;

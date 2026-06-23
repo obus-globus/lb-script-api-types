@@ -8,7 +8,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DebuggerNode extends Statement {
     constructor(lineNumber: number, token: number, finish: number)
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;
     toString(includeTypeInfo: boolean): string;

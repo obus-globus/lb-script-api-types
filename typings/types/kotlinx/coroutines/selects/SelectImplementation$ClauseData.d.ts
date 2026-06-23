@@ -15,7 +15,7 @@ export class SelectImplementation$ClauseData extends Object {
     // private regFunc: (param0: Object, param1: SelectInstance<Object>, param2: Object | null) => void;
     createOnCancellationAction(select: SelectInstance<Object>, internalResult: Object | null): ((param0: Throwable, param1: Object | null, param2: CoroutineContext) => void) | null;
     dispose(): void;
-    invokeBlock<R extends Object | number | string | boolean>(argument: Object | null): R;
+    invokeBlock<R extends unknown>(argument: Object | null): R;
     processResult(result: Object | null): Object | null;
-    tryRegisterAsWaiter<R extends Object | number | string | boolean>(select: SelectImplementation<R>): boolean;
+    tryRegisterAsWaiter<R extends unknown>(select: SelectImplementation<R>): boolean;
 }

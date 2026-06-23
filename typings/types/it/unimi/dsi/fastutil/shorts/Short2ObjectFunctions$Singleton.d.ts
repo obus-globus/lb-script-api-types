@@ -2,7 +2,7 @@ import type { AbstractShort2ObjectFunction } from '../../../../../it/unimi/dsi/f
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Short2ObjectFunctions$Singleton<V extends Object | number | string | boolean> extends AbstractShort2ObjectFunction<V> implements Serializable, Cloneable {
+export class Short2ObjectFunctions$Singleton<V extends unknown> extends AbstractShort2ObjectFunction<V> implements Serializable, Cloneable {
     constructor(arg0: number, arg1: V)
     // private key: number;
     // private value: V;

@@ -11,7 +11,7 @@ import type { StatementExpression } from '../../../../../team/unnamed/mocha/pars
 import type { StringExpression } from '../../../../../team/unnamed/mocha/parser/ast/StringExpression.d.ts'
 import type { TernaryConditionalExpression } from '../../../../../team/unnamed/mocha/parser/ast/TernaryConditionalExpression.d.ts'
 import type { UnaryExpression } from '../../../../../team/unnamed/mocha/parser/ast/UnaryExpression.d.ts'
-export interface ExpressionVisitor<R extends Object | number | string | boolean> extends Object{
+export interface ExpressionVisitor<R extends unknown> extends Object{
     visit(arg0: Expression): R;
     visitAccess(arg0: AccessExpression): R;
     visitArrayAccess(arg0: ArrayAccessExpression): R;

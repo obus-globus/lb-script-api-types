@@ -18,8 +18,8 @@ export class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements S
     // private executeExistingDelayedTasksAfterShutdown: boolean;
     // private removeOnCancel: boolean;
     canRunInCurrentRunState(arg0: RunnableScheduledFuture<Object>): boolean;
-    decorateTask<V extends Object | number | string | boolean>(arg0: () => void, arg1: RunnableScheduledFuture<V>): RunnableScheduledFuture<V>;
-    decorateTask<V extends Object | number | string | boolean>(arg0: () => V, arg1: RunnableScheduledFuture<V>): RunnableScheduledFuture<V>;
+    decorateTask<V extends unknown>(arg0: () => void, arg1: RunnableScheduledFuture<V>): RunnableScheduledFuture<V>;
+    decorateTask<V extends unknown>(arg0: () => V, arg1: RunnableScheduledFuture<V>): RunnableScheduledFuture<V>;
     // private delayedExecute(arg0: RunnableScheduledFuture<Object>): void;
     execute(arg0: () => void): void;
     getContinueExistingPeriodicTasksAfterShutdownPolicy(): boolean;
@@ -29,7 +29,7 @@ export class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements S
     onShutdown(): void;
     reExecutePeriodic(arg0: RunnableScheduledFuture<Object>): void;
     schedule(arg0: () => void, arg1: number, arg2: TimeUnit): ScheduledFuture<Object>;
-    schedule<V extends Object | number | string | boolean>(arg0: () => V, arg1: number, arg2: TimeUnit): ScheduledFuture<V>;
+    schedule<V extends unknown>(arg0: () => V, arg1: number, arg2: TimeUnit): ScheduledFuture<V>;
     scheduleAtFixedRate(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ScheduledFuture<Object>;
     scheduleWithFixedDelay(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ScheduledFuture<Object>;
     setContinueExistingPeriodicTasksAfterShutdownPolicy(arg0: boolean): void;
@@ -38,8 +38,8 @@ export class ScheduledThreadPoolExecutor extends ThreadPoolExecutor implements S
     shutdown(): void;
     shutdownNow(): () => void[];
     submit(arg0: () => void): Future<Object>;
-    submit<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): Future<T>;
-    submit<T extends Object | number | string | boolean>(arg0: () => T): Future<T>;
+    submit<T extends unknown>(arg0: () => void, arg1: T): Future<T>;
+    submit<T extends unknown>(arg0: () => T): Future<T>;
     triggerTime(arg0: number): number;
     // private triggerTime(arg0: number, arg1: TimeUnit): number;
 }

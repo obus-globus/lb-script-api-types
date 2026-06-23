@@ -4,5 +4,5 @@ import type { RegistryDataLoader$RegistryData } from '../../../net/minecraft/res
 import type { RegistryLoadTask } from '../../../net/minecraft/resources/RegistryLoadTask.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 export interface RegistryDataLoader$LoaderFactory extends Object{
-    create<T extends Object | number | string | boolean>(data: RegistryDataLoader$RegistryData<T>, loadingErrors: Map<ResourceKey<Object>, Exception>): RegistryLoadTask<T>;
+    create<T extends unknown>(data: RegistryDataLoader$RegistryData<T>, loadingErrors: Map<ResourceKey<Object>, Exception>): RegistryLoadTask<T>;
 }

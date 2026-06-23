@@ -2,7 +2,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { LongBinaryOperator } from '../../../../../java/util/function/LongBinaryOperator.d.ts'
 import type { LongUnaryOperator } from '../../../../../java/util/function/LongUnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AtomicLongMap<K extends Object | number | string | boolean> extends Object implements Serializable {
+export class AtomicLongMap<K extends unknown> extends Object implements Serializable {
     static create(): AtomicLongMap<Object>;
     static create(paramm: Map<Object | null, number>): AtomicLongMap<Object>;
     private constructor(map: Map<K, number>)

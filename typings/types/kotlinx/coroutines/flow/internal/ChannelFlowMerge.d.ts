@@ -6,7 +6,7 @@ import type { ProducerScope } from '../../../../kotlinx/coroutines/channels/Prod
 import type { ReceiveChannel } from '../../../../kotlinx/coroutines/channels/ReceiveChannel.d.ts'
 import type { Flow } from '../../../../kotlinx/coroutines/flow/Flow.d.ts'
 import type { ChannelFlow } from '../../../../kotlinx/coroutines/flow/internal/ChannelFlow.d.ts'
-export class ChannelFlowMerge<T extends Object | number | string | boolean> extends ChannelFlow<T> {
+export class ChannelFlowMerge<T extends unknown> extends ChannelFlow<T> {
     constructor(flow: Flow<Flow<T>>, concurrency: number, context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow)
     // private concurrency: number;
     // private flow: Flow<Flow<T>>;

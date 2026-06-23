@@ -11,6 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class OptionsProgrammerArtFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
-    // private fixList<T extends Object | number | string | boolean>(entry: Dynamic<T>): Dynamic<T>;
+    // private fixList<T extends unknown>(entry: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
 }

@@ -5,7 +5,7 @@ import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ProfilerNode<T extends Object | number | string | boolean> extends Object {
+export class ProfilerNode<T extends unknown> extends Object {
     constructor()
     constructor(parent: ProfilerNode<T>, sourceLocation: StackTraceEntry, payload: T)
     children: Map<StackTraceEntry, ProfilerNode<T>>;

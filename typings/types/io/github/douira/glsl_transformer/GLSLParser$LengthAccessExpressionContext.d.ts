@@ -9,7 +9,7 @@ export class GLSLParser$LengthAccessExpressionContext extends GLSLParser$FiniteE
     constructor(arg0: GLSLParser$FiniteExpressionContext)
     operand: GLSLParser$FiniteExpressionContext;
     DOT_LENGTH_METHOD_CALL(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     finiteExpression(): GLSLParser$FiniteExpressionContext;

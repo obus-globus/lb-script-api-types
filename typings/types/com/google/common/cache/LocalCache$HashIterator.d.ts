@@ -5,7 +5,7 @@ import type { AtomicReferenceArray } from '../../../../java/util/concurrent/atom
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export abstract class LocalCache$HashIterator<T extends Object | number | string | boolean> extends Object implements Iterator<T> {
+export abstract class LocalCache$HashIterator<T extends unknown> extends Object implements Iterator<T> {
     constructor(null_: LocalCache$HashIterator<Object>)
     // private currentSegment: LocalCache$Segment<K, V>;
     // private currentTable: AtomicReferenceArray<ReferenceEntry<K, V>>;
@@ -15,11 +15,11 @@ export abstract class LocalCache$HashIterator<T extends Object | number | string
     // private nextSegmentIndex: number;
     // private nextTableIndex: number;
     advance(): void;
-    advanceTo<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(entry: ReferenceEntry<K, V>): boolean;
+    advanceTo<K extends unknown, V extends unknown>(entry: ReferenceEntry<K, V>): boolean;
     forEachRemaining(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     next(): T;
-    nextEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): LocalCache$WriteThroughEntry;
+    nextEntry<K extends unknown, V extends unknown>(): LocalCache$WriteThroughEntry;
     nextInChain(): boolean;
     nextInTable(): boolean;
     remove(): void;

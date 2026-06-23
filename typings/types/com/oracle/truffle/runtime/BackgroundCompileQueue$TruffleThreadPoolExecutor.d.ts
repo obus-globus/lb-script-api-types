@@ -22,11 +22,11 @@ export class BackgroundCompileQueue$TruffleThreadPoolExecutor extends ThreadPool
     flush(engine: EngineData): void;
     getAllTargets(engine: EngineData): OptimizedCallTarget[];
     getQueuedTargets(engine: EngineData): OptimizedCallTarget[];
-    newTaskFor<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): RunnableFuture<T>;
-    newTaskFor<T extends Object | number | string | boolean>(callable: () => T): RunnableFuture<T>;
+    newTaskFor<T extends unknown>(arg0: () => void, arg1: T): RunnableFuture<T>;
+    newTaskFor<T extends unknown>(callable: () => T): RunnableFuture<T>;
     remove(task: () => void): boolean;
     // private scaleThresholds(): void;
     submit(arg0: () => void): Future<Object>;
-    submit<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): Future<T>;
-    submit<T extends Object | number | string | boolean>(task: () => T): Future<T>;
+    submit<T extends unknown>(arg0: () => void, arg1: T): Future<T>;
+    submit<T extends unknown>(task: () => T): Future<T>;
 }

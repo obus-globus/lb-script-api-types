@@ -3,7 +3,7 @@ import type { PreProcessor } from '../../../../../../ai/djl/translate/PreProcess
 import type { TranslatorContext } from '../../../../../../ai/djl/translate/TranslatorContext.d.ts'
 import type { URL } from '../../../../../../java/net/URL.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class UrlImagePreProcessor<T extends Object | number | string | boolean> extends Object implements PreProcessor<URL> {
+export class UrlImagePreProcessor<T extends unknown> extends Object implements PreProcessor<URL> {
     constructor(arg0: PreProcessor<Image>)
     // private preProcessor: PreProcessor<Image>;
     processInput(arg0: TranslatorContext, arg1: URL): (Object | null)[];

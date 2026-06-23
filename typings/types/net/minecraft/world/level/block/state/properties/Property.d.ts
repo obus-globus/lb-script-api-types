@@ -26,7 +26,7 @@ export abstract class Property<T extends Comparable<T>> extends Object {
     getValue(name: string): Optional<T>;
     getValueClass(): Class<T>;
     hashCode(): number;
-    parseValue<S extends StateHolder<Object, S>, U extends Object | number | string | boolean>(ops: DynamicOps<U>, state: S, value: U): DataResult<S>;
+    parseValue<S extends StateHolder<Object, S>, U extends unknown>(ops: DynamicOps<U>, state: S, value: U): DataResult<S>;
     toString(): string;
     value(value: T): Property$Value<T>;
     value(stateHolder: StateHolder<Object, Object>): Property$Value<T>;

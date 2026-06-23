@@ -4,7 +4,7 @@ import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { EconomicMap } from '../../../../../org/graalvm/collections/EconomicMap.d.ts'
-export class EconomicTransitionMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends TransitionMap<K, V> {
+export class EconomicTransitionMap<K extends unknown, V extends unknown> extends TransitionMap<K, V> {
     static create(): TransitionMap<Object, Object>;
     constructor()
     // private map: EconomicMap<Object, StrongKeyWeakValueEntry<Object, V>>;

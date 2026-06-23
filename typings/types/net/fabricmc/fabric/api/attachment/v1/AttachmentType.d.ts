@@ -2,7 +2,7 @@ import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.t
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface AttachmentType<A extends Object | number | string | boolean> extends Object {
+export interface AttachmentType<A extends unknown> extends Object {
     copyOnDeath(): boolean;
     identifier(): Identifier;
     initializer(): () => A;

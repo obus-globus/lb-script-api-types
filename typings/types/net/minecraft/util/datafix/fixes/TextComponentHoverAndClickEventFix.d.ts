@@ -11,6 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TextComponentHoverAndClickEventFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
-    // private createFixer<C1 extends Object | number | string | boolean, C2 extends Object | number | string | boolean, H extends Pair<string, Object>>(oldRawTextComponentType: Type<C1>, newTextComponentType: Type<C2>, hoverEventType: Type<H>): TypeRewriteRule;
+    // private createFixer<C1 extends unknown, C2 extends unknown, H extends Pair<string, Object>>(oldRawTextComponentType: Type<C1>, newTextComponentType: Type<C2>, hoverEventType: Type<H>): TypeRewriteRule;
     makeRule(): TypeRewriteRule;
 }

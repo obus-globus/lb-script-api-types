@@ -34,7 +34,7 @@ export interface Configuration extends Object, Filterable{
     getAppenders(): { [key: string]: Appender };
     getAsyncLoggerConfigDelegate(): AsyncLoggerConfigDelegate;
     getAsyncWaitStrategyFactory(): AsyncWaitStrategyFactory;
-    getComponent<T extends Object | number | string | boolean>(name: string): T;
+    getComponent<T extends unknown>(name: string): T;
     getConfigurationSource(): ConfigurationSource;
     getConfigurationStrSubstitutor(): StrSubstitutor;
     getCustomLevels(): CustomLevelConfig[];

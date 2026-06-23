@@ -5,7 +5,7 @@ import type { ListenableFuture } from '../../../../../com/google/common/util/con
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
-export class AbstractCatchingFuture$CatchingFuture<V extends Object | number | string | boolean, X extends Throwable> extends AbstractCatchingFuture<V, X, (param0: Object) => boolean, V> {
+export class AbstractCatchingFuture$CatchingFuture<V extends unknown, X extends Throwable> extends AbstractCatchingFuture<V, X, (param0: Object) => boolean, V> {
     static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
     static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
     constructor(input: ListenableFuture<V>, exceptionType: Class<X>, fallback: (param0: Object) => boolean)

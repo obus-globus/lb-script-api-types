@@ -4,5 +4,5 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BackgroundInitializer$InitializationTask extends Object implements Callable<T> {
     constructor(null_: BackgroundInitializer$InitializationTask, arg1: ExecutorService)
     // private execFinally: ExecutorService;
-    call<T extends Object | number | string | boolean>(): T;
+    call<T extends unknown>(): T;
 }

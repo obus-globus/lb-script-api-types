@@ -1,7 +1,7 @@
 import type { Digraph } from '../../../../../../de/odysseus/ithaka/digraph/Digraph.d.ts'
 import type { DotAttribute } from '../../../../../../de/odysseus/ithaka/digraph/io/dot/DotAttribute.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface DotProvider<V extends Object | number | string | boolean, G extends Digraph<V>> extends Object{
+export interface DotProvider<V extends unknown, G extends Digraph<V>> extends Object{
     getDefaultEdgeAttributes(arg0: G): DotAttribute[];
     getDefaultGraphAttributes(arg0: G): DotAttribute[];
     getDefaultNodeAttributes(arg0: G): DotAttribute[];

@@ -6,12 +6,12 @@ import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts
 import type { MapDecoder } from '../../../com/mojang/serialization/MapDecoder.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class MapDecoder$Implementation<A extends Object | number | string | boolean> extends CompressorHolder implements MapDecoder<A> {
+export abstract class MapDecoder$Implementation<A extends unknown> extends CompressorHolder implements MapDecoder<A> {
     constructor()
-    ap<E extends Object | number | string | boolean>(arg0: MapDecoder<(param0: A) => E>): MapDecoder<E>;
-    compressedDecode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<A>;
+    ap<E extends unknown>(arg0: MapDecoder<(param0: A) => E>): MapDecoder<E>;
+    compressedDecode<T extends unknown>(arg0: DynamicOps<T>, arg1: T): DataResult<A>;
     decoder(): Decoder<A>;
-    flatMap<B extends Object | number | string | boolean>(arg0: (param0: A) => DataResult<B>): MapDecoder<B>;
-    map<B extends Object | number | string | boolean>(arg0: (param0: A) => B): MapDecoder<B>;
+    flatMap<B extends unknown>(arg0: (param0: A) => DataResult<B>): MapDecoder<B>;
+    map<B extends unknown>(arg0: (param0: A) => B): MapDecoder<B>;
     withLifecycle(arg0: Lifecycle): MapDecoder<A>;
 }

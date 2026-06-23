@@ -8,15 +8,15 @@ export class ObjectLinkedOpenCustomHashSet$SetIterator extends Object implements
     // private index: number;
     // private next: number;
     // private prev: number;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add<K extends unknown>(arg0: K): void;
     // private ensureIndexKnown(): void;
-    forEachRemaining<K extends Object | number | string | boolean>(arg0: (param0: K) => void): void;
+    forEachRemaining<K extends unknown>(arg0: (param0: K) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    next<K extends Object | number | string | boolean>(): K;
+    next<K extends unknown>(): K;
     nextIndex(): number;
-    previous<K extends Object | number | string | boolean>(): K;
+    previous<K extends unknown>(): K;
     previousIndex(): number;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends unknown>(arg0: K): void;
 }

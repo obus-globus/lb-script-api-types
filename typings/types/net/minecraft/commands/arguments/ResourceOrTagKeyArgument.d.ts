@@ -9,14 +9,14 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CommandSourceStack } from '../../../../net/minecraft/commands/CommandSourceStack.d.ts'
 import type { ResourceOrTagKeyArgument$Result } from '../../../../net/minecraft/commands/arguments/ResourceOrTagKeyArgument$Result.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
-export class ResourceOrTagKeyArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<ResourceOrTagKeyArgument$Result<T>> {
+export class ResourceOrTagKeyArgument<T extends unknown> extends Object implements ArgumentType<ResourceOrTagKeyArgument$Result<T>> {
     static getResourceOrTagKey(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<(Object | null)[]>, paramexceptionType: DynamicCommandExceptionType): ResourceOrTagKeyArgument$Result<Object>;
     static resourceOrTagKey(paramkey: ResourceKey<(Object | null)[]>): ResourceOrTagKeyArgument<Object>;
     constructor(registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): ResourceOrTagKeyArgument$Result<T>;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends unknown>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): ResourceOrTagKeyArgument$Result<T>;
     parse(reader: StringReader): ResourceOrTagKeyArgument$Result<T>;
 }

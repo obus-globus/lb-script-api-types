@@ -13,7 +13,7 @@ import type { Display } from '../../../../../net/minecraft/world/entity/Display.
 import type { Display$RenderState } from '../../../../../net/minecraft/world/entity/Display$RenderState.d.ts'
 import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Quaternionf } from '../../../../../org/joml/Quaternionf.d.ts'
-export abstract class DisplayRenderer<T extends Display, S extends Object | number | string | boolean, ST extends DisplayEntityRenderState> extends EntityRenderer<T, ST> {
+export abstract class DisplayRenderer<T extends Display, S extends unknown, ST extends DisplayEntityRenderState> extends EntityRenderer<T, ST> {
     static BLOCK_DISPLAY_CONTEXT: BlockDisplayContext;
     static NAMETAG_SCALE: number;
     constructor(context: EntityRendererProvider$Context)

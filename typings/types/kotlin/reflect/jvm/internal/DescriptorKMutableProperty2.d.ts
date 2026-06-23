@@ -6,7 +6,7 @@ import type { DescriptorKProperty$Companion } from '../../../../kotlin/reflect/j
 import type { DescriptorKProperty2 } from '../../../../kotlin/reflect/jvm/internal/DescriptorKProperty2.d.ts'
 import type { KDeclarationContainerImpl } from '../../../../kotlin/reflect/jvm/internal/KDeclarationContainerImpl.d.ts'
 import type { PropertyDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
-export class DescriptorKMutableProperty2<D extends Object | number | string | boolean, E extends Object | number | string | boolean, V extends Object | number | string | boolean> extends DescriptorKProperty2<D, E, V> implements KMutableProperty2<D, E, V> {
+export class DescriptorKMutableProperty2<D extends unknown, E extends unknown, V extends unknown> extends DescriptorKProperty2<D, E, V> implements KMutableProperty2<D, E, V> {
     static Companion: DescriptorKProperty$Companion;
     constructor(container: KDeclarationContainerImpl, name: string, signature: string)
     constructor(container: KDeclarationContainerImpl, descriptor: PropertyDescriptor)

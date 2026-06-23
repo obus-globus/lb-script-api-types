@@ -8,7 +8,7 @@ import type { GenericDistanceHSBColorMode$Companion } from '../../../../net/ccbl
 import type { Color4b } from '../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { ToFloatFunction } from '../../../../net/minecraft/util/ToFloatFunction.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
-export class GenericDistanceHSBColorMode<T extends Object | number | string | boolean> extends GenericColorMode<T> {
+export class GenericDistanceHSBColorMode<T extends unknown> extends GenericColorMode<T> {
     static Companion: Tagged$Companion;
     static Companion: GenericDistanceHSBColorMode$Companion;
     static entity(paramarg0: ModeValueGroup<any>): GenericDistanceHSBColorMode<Entity>;

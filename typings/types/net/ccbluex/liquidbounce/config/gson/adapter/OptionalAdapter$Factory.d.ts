@@ -4,5 +4,5 @@ import type { TypeAdapterFactory } from '../../../../../../com/google/gson/TypeA
 import type { TypeToken } from '../../../../../../com/google/gson/reflect/TypeToken.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class OptionalAdapter$Factory extends Object implements TypeAdapterFactory {
-    create<T extends Object | number | string | boolean>(gson: Gson, type: TypeToken<T>): TypeAdapter<T> | null;
+    create<T extends unknown>(gson: Gson, type: TypeToken<T>): TypeAdapter<T> | null;
 }

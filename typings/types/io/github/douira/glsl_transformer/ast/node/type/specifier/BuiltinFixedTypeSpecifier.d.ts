@@ -20,5 +20,5 @@ export class BuiltinFixedTypeSpecifier extends TypeSpecifier {
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getSpecifierType(): TypeSpecifier$SpecifierType;
-    typeSpecifierAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    typeSpecifierAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

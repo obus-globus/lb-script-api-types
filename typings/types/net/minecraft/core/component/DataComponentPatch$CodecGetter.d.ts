@@ -3,5 +3,5 @@ import type { DataComponentType } from '../../../../net/minecraft/core/component
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export interface DataComponentPatch$CodecGetter extends Object{
-    apply<T extends Object | number | string | boolean>(type: DataComponentType<T>): StreamCodec<RegistryFriendlyByteBuf, T>;
+    apply<T extends unknown>(type: DataComponentType<T>): StreamCodec<RegistryFriendlyByteBuf, T>;
 }

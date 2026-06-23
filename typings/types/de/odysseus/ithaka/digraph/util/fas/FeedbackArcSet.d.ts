@@ -4,7 +4,7 @@ import type { UnmodifiableDigraph } from '../../../../../../de/odysseus/ithaka/d
 import type { FeedbackArcSetPolicy } from '../../../../../../de/odysseus/ithaka/digraph/util/fas/FeedbackArcSetPolicy.d.ts'
 import type { OptionalInt } from '../../../../../../java/util/OptionalInt.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class FeedbackArcSet<V extends Object | number | string | boolean> extends UnmodifiableDigraph<V> {
+export class FeedbackArcSet<V extends unknown> extends UnmodifiableDigraph<V> {
     static UNIT_WEIGHT: OptionalInt;
     static UNIT_WEIGHTS: EdgeWeights<Object>;
     static empty(paramarg0: FeedbackArcSetPolicy): FeedbackArcSet<Object>;

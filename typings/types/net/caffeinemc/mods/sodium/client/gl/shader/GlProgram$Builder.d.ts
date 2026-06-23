@@ -11,5 +11,5 @@ export class GlProgram$Builder extends Object {
     attachShader(arg0: GlShader): GlProgram$Builder;
     bindAttribute(arg0: string, arg1: number): GlProgram$Builder;
     bindFragmentData(arg0: string, arg1: number): GlProgram$Builder;
-    link<U extends Object | number | string | boolean>(arg0: (param0: ShaderBindingContext) => U): GlProgram<U>;
+    link<U extends unknown>(arg0: (param0: ShaderBindingContext) => U): GlProgram<U>;
 }

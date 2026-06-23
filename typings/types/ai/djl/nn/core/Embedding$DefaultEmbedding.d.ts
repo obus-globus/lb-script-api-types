@@ -5,10 +5,10 @@ import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Embedding$DefaultEmbedding extends Object implements AbstractIndexedEmbedding<T> {
     constructor(null_: Embedding$DefaultEmbedding)
-    decode<T extends Object | number | string | boolean>(arg0: number[]): T;
-    embed<T extends Object | number | string | boolean>(arg0: T): number;
-    embed<T extends Object | number | string | boolean>(arg0: NDManager, arg1: T[]): NDArray;
-    encode<T extends Object | number | string | boolean>(arg0: T): number[];
-    hasItem<T extends Object | number | string | boolean>(arg0: T): boolean;
-    unembed<T extends Object | number | string | boolean>(arg0: number): Optional<T>;
+    decode<T extends unknown>(arg0: number[]): T;
+    embed<T extends unknown>(arg0: T): number;
+    embed<T extends unknown>(arg0: NDManager, arg1: T[]): NDArray;
+    encode<T extends unknown>(arg0: T): number[];
+    hasItem<T extends unknown>(arg0: T): boolean;
+    unembed<T extends unknown>(arg0: number): Optional<T>;
 }

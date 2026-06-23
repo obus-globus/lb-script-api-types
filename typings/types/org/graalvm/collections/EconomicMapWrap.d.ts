@@ -4,7 +4,7 @@ import type { EconomicMap } from '../../../org/graalvm/collections/EconomicMap.d
 import type { Equivalence } from '../../../org/graalvm/collections/Equivalence.d.ts'
 import type { MapCursor } from '../../../org/graalvm/collections/MapCursor.d.ts'
 import type { UnmodifiableEconomicMap } from '../../../org/graalvm/collections/UnmodifiableEconomicMap.d.ts'
-export class EconomicMapWrap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements EconomicMap<K, V> {
+export class EconomicMapWrap<K extends unknown, V extends unknown> extends Object implements EconomicMap<K, V> {
     static create(): EconomicMap<Object, Object>;
     static create(paraminitialCapacity: number): EconomicMap<Object, Object>;
     static create(paramstrategy: Equivalence): EconomicMap<Object, Object>;

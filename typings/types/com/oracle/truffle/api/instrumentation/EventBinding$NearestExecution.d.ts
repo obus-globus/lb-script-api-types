@@ -3,7 +3,7 @@ import type { InstrumentationHandler$AbstractInstrumenter } from '../../../../..
 import type { NearestSectionFilter } from '../../../../../com/oracle/truffle/api/instrumentation/NearestSectionFilter.d.ts'
 import type { SourceSectionFilter } from '../../../../../com/oracle/truffle/api/instrumentation/SourceSectionFilter.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class EventBinding$NearestExecution<T extends Object | number | string | boolean> extends EventBinding$NearestSourceSection<T> {
+export class EventBinding$NearestExecution<T extends unknown> extends EventBinding$NearestSourceSection<T> {
     constructor(instrumenter: InstrumentationHandler$AbstractInstrumenter, nearestFilter: NearestSectionFilter, filterSourceSection: SourceSectionFilter, element: T)
     isExecutionEvent(): boolean;
 }

@@ -1,6 +1,6 @@
 import type { ObjectSpliterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ObjectSpliterator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class AbstractObjectSpliterator<K extends Object | number | string | boolean> extends Object implements ObjectSpliterator<K> {
+export abstract class AbstractObjectSpliterator<K extends unknown> extends Object implements ObjectSpliterator<K> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

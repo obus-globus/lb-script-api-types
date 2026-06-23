@@ -101,7 +101,7 @@ export class LocalDateTime extends Object implements Serializable, ChronoLocalDa
     plusWeeks(arg0: number): LocalDateTime;
     // private plusWithOverflow(arg0: LocalDate, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): LocalDateTime;
     plusYears(arg0: number): LocalDateTime;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toEpochSecond(arg0: ZoneOffset): number;

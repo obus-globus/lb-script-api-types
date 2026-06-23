@@ -4,7 +4,7 @@ import type { ResourceKeyArgument } from '../../../../net/minecraft/commands/arg
 import type { ResourceKeyArgument$Info$Template } from '../../../../net/minecraft/commands/arguments/ResourceKeyArgument$Info$Template.d.ts'
 import type { ArgumentTypeInfo } from '../../../../net/minecraft/commands/synchronization/ArgumentTypeInfo.d.ts'
 import type { FriendlyByteBuf } from '../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
-export class ResourceKeyArgument$Info<T extends Object | number | string | boolean> extends Object implements ArgumentTypeInfo<ResourceKeyArgument<T>, ResourceKeyArgument$Info$Template> {
+export class ResourceKeyArgument$Info<T extends unknown> extends Object implements ArgumentTypeInfo<ResourceKeyArgument<T>, ResourceKeyArgument$Info$Template> {
     constructor()
     deserializeFromNetwork(in_: FriendlyByteBuf): ResourceKeyArgument$Info$Template;
     serializeToJson(template: ResourceKeyArgument$Info$Template, out: JsonObject): void;

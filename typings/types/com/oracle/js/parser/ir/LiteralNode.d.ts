@@ -10,7 +10,7 @@ import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../java/lang/Number.d.ts'
-export abstract class LiteralNode<T extends Object | number | string | boolean> extends Expression {
+export abstract class LiteralNode<T extends unknown> extends Expression {
     static newInstance(paramtoken: number, paramvalue: TruffleString): LiteralNode$PrimitiveLiteralNode<TruffleString>;
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: Lexer$LexerToken): LiteralNode<Lexer$LexerToken>;
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: (Object | null)[]): LiteralNode<(Object | null)[]>;
@@ -25,7 +25,7 @@ export abstract class LiteralNode<T extends Object | number | string | boolean> 
     constructor(token: number, finish: number, value: T)
     readonly value: T;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getElementExpressions(): Expression[];
     getObject(): Object;
     getString(): string;

@@ -12,7 +12,7 @@ import type { CustomPacketPayload$FallbackProvider } from '../../../../../net/mi
 import type { CustomPacketPayload$Type } from '../../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload$Type.d.ts'
 import type { CustomPacketPayload$TypeAndCodec } from '../../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload$TypeAndCodec.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export class Networking$OpenScreenPayload<D extends Object | number | string | boolean> extends Record implements CustomPacketPayload {
+export class Networking$OpenScreenPayload<D extends unknown> extends Record implements CustomPacketPayload {
     static CODEC: StreamCodec<RegistryFriendlyByteBuf, Networking$OpenScreenPayload<Object>>;
     static ID: CustomPacketPayload$Type<Networking$OpenScreenPayload<Object>>;
     static codec(paramwriter: (param0: CustomPacketPayload | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => CustomPacketPayload | null): StreamCodec<ByteBuf, CustomPacketPayload>;

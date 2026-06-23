@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Double2ReferenceOpenHashMap$MapIterator<ConsumerType extends Object | number | string | boolean> extends Object {
+export abstract class Double2ReferenceOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     private constructor(null_: Double2ReferenceOpenHashMap$MapIterator<Object>)
     // private c: number;
     // private last: number;

@@ -12,8 +12,8 @@ export abstract class Registry extends Object {
     equals(arg0: Object | null): boolean;
     getEntry(arg0: Identifier): RegistryEntry;
     getEntry(arg0: number): RegistryEntry;
-    getHolder<T extends Object | number | string | boolean>(arg0: Identifier): Holder<T>;
-    getHolder<T extends Object | number | string | boolean>(arg0: number): Holder<T>;
+    getHolder<T extends unknown>(arg0: Identifier): Holder<T>;
+    getHolder<T extends unknown>(arg0: number): Holder<T>;
     getId(arg0: number): Identifier;
     getName(): Identifier;
     getNetworkId(arg0: Identifier): number;

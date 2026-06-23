@@ -9,7 +9,7 @@ export class GLSLParser$IgnoreIntersectionStatementContext extends GLSLParser$Ju
     constructor(arg0: GLSLParser$JumpStatementContext)
     IGNORE_INTERSECTION_EXT(): TerminalNode;
     SEMICOLON(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
 }

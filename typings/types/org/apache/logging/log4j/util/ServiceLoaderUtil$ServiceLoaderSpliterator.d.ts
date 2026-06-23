@@ -4,7 +4,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
-export class ServiceLoaderUtil$ServiceLoaderSpliterator<S extends Object | number | string | boolean> extends Spliterators$AbstractSpliterator<S> {
+export class ServiceLoaderUtil$ServiceLoaderSpliterator<S extends unknown> extends Spliterators$AbstractSpliterator<S> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

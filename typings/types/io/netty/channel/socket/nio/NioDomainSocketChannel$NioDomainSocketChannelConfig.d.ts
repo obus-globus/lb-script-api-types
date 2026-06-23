@@ -16,7 +16,7 @@ export class NioDomainSocketChannel$NioDomainSocketChannelConfig extends Default
     autoReadCleared(): void;
     // private calculateMaxBytesPerGatheringWrite(): void;
     getMaxBytesPerGatheringWrite(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     // private getReceiveBufferSize(): number;
@@ -31,7 +31,7 @@ export class NioDomainSocketChannel$NioDomainSocketChannelConfig extends Default
     setMaxBytesPerGatheringWrite(arg0: number): void;
     setMaxMessagesPerRead(arg0: number): NioDomainSocketChannel$NioDomainSocketChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): NioDomainSocketChannel$NioDomainSocketChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     // private setReceiveBufferSize(arg0: number): NioDomainSocketChannel$NioDomainSocketChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): NioDomainSocketChannel$NioDomainSocketChannelConfig;
     // private setSendBufferSize(arg0: number): NioDomainSocketChannel$NioDomainSocketChannelConfig;

@@ -18,7 +18,7 @@ export class FunctionParameter extends InnerASTNode {
     arraySpecifier: ArraySpecifier;
     name: Identifier;
     type: FullySpecifiedType;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): FunctionParameter;
     cloneInto(arg0: Root): FunctionParameter;
     enterNode(arg0: ASTListener): void;

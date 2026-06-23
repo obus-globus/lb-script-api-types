@@ -4,7 +4,7 @@ import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class TransformingType<F extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Type<T> {
+export class TransformingType<F extends unknown, T extends unknown> extends Type<T> {
     static of(paramarg0: Type<Object>, paramarg1: Class<Object>, paramarg2: (param0: Object | null) => Object | null, paramarg3: (param0: Object | null) => Object | null): Type<Object>;
     constructor(arg0: Type<F>, arg1: Class<T>, arg2: (param0: F) => T, arg3: (param0: T) => F)
     // private from: Type<F>;

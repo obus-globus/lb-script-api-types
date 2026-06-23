@@ -5,7 +5,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { MinecraftServer } from '../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { ExtraCodecs$LateBoundIdMapper } from '../../../../../net/minecraft/util/ExtraCodecs$LateBoundIdMapper.d.ts'
 import type { TimerCallback } from '../../../../../net/minecraft/world/level/timers/TimerCallback.d.ts'
-export class TimerCallbacks<C extends Object | number | string | boolean> extends Object {
+export class TimerCallbacks<C extends unknown> extends Object {
     static SERVER_CALLBACKS: TimerCallbacks<MinecraftServer>;
     constructor()
     // private codec: Codec<TimerCallback<C>>;

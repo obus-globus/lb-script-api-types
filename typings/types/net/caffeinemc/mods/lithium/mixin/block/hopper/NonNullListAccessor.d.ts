@@ -1,4 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export interface NonNullListAccessor<T extends Object | number | string | boolean> extends Object{
+export interface NonNullListAccessor<T extends unknown> extends Object{
     getDelegate(): T[];
 }

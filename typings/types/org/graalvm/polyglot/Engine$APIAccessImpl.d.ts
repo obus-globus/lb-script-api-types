@@ -69,8 +69,8 @@ export class Engine$APIAccessImpl extends AbstractPolyglotImpl$APIAccess {
     callProxyObjectRemoveMember(proxy: Object, member: string): boolean;
     callProxyTimeAsTime(proxy: Object): LocalTime;
     callProxyTimeZoneAsTimeZone(proxy: Object): ZoneId;
-    callValueAs<T extends Object | number | string | boolean>(delegateBindings: Object, targetType: Class<T>): T;
-    callValueAs<T extends Object | number | string | boolean>(delegateBindings: Object, rawType: Class<T>, type: Type): T;
+    callValueAs<T extends unknown>(delegateBindings: Object, targetType: Class<T>): T;
+    callValueAs<T extends unknown>(delegateBindings: Object, rawType: Class<T>, type: Type): T;
     callValueAsString(value: Object): string;
     callValueGetArrayElement(value: Object, i: number): Object;
     callValueGetArraySize(value: Object): number;

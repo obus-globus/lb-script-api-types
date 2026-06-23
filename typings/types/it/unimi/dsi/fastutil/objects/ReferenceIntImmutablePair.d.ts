@@ -2,7 +2,7 @@ import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { ReferenceIntPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceIntPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ReferenceIntImmutablePair<K extends Object | number | string | boolean> extends Object implements ReferenceIntPair<K>, Serializable {
+export class ReferenceIntImmutablePair<K extends unknown> extends Object implements ReferenceIntPair<K>, Serializable {
     static of(paramarg0: Object | null, paramarg1: number): ReferenceIntImmutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ReferenceIntPair<Object>;
     constructor(arg0: K, arg1: number)

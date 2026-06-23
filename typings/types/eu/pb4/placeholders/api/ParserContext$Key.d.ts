@@ -3,7 +3,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { HolderLookup$Provider } from '../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
-export class ParserContext$Key<T extends Object | number | string | boolean> extends Record {
+export class ParserContext$Key<T extends unknown> extends Record {
     static COMPACT_COMPONENT: ParserContext$Key<boolean>;
     static DEFAULT_SHADOW_STYLER: ParserContext$Key<DynamicShadowNode$Transformer>;
     static HOLDER_LOOKUP: ParserContext$Key<HolderLookup$Provider>;

@@ -11,7 +11,7 @@ export abstract class LoopStatement extends Statement {
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: Statement)
     statement: Statement;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): LoopStatement;
     cloneInto(arg0: Root): LoopStatement;
     enterNode(arg0: ASTListener): void;

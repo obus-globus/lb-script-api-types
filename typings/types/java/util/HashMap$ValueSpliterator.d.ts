@@ -3,7 +3,7 @@ import type { HashMap$HashMapSpliterator } from '../../java/util/HashMap$HashMap
 import type { Spliterator } from '../../java/util/Spliterator.d.ts'
 import type { Consumer } from '../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export class HashMap$ValueSpliterator<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends HashMap$HashMapSpliterator<K, V> implements Spliterator<V> {
+export class HashMap$ValueSpliterator<K extends unknown, V extends unknown> extends HashMap$HashMapSpliterator<K, V> implements Spliterator<V> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

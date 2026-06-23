@@ -451,6 +451,6 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     tick(): void;
     // private updateLevelChunk(x: number, z: number, chunkData: ClientboundLevelChunkPacketData): void;
     updateSearchTrees(): void;
-    // private updateTags<T extends Object | number | string | boolean>(registryKey: ResourceKey<T[]>, payload: TagNetworkSerialization$NetworkPayload): Registry$PendingTags<T>;
+    // private updateTags<T extends unknown>(registryKey: ResourceKey<T[]>, payload: TagNetworkSerialization$NetworkPayload): Registry$PendingTags<T>;
     // private verifyCommand(command: string): ClientPacketListener$CommandCheckResult;
 }

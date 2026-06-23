@@ -14,11 +14,11 @@ export class ObfuscationDataProvider extends Object implements IObfuscationDataP
     // private environments: ObfuscationEnvironment[];
     getObfClass(arg0: string): ObfuscationType[];
     getObfClass(arg0: TypeHandle): ObfuscationType[];
-    getObfEntry<T extends Object | number | string | boolean>(arg0: ITargetSelectorRemappable): ObfuscationType[];
-    getObfEntry<T extends Object | number | string | boolean>(arg0: IMapping<T>): ObfuscationType[];
-    getObfEntryRecursive<T extends Object | number | string | boolean>(arg0: ITargetSelectorRemappable): ObfuscationType[];
-    // private getObfEntryRecursive<T extends Object | number | string | boolean>(arg0: ITargetSelectorRemappable, arg1: string[]): ObfuscationType[];
-    // private getObfEntryUsing<T extends Object | number | string | boolean>(arg0: ITargetSelectorRemappable, arg1: TypeHandle): ObfuscationType[];
+    getObfEntry<T extends unknown>(arg0: ITargetSelectorRemappable): ObfuscationType[];
+    getObfEntry<T extends unknown>(arg0: IMapping<T>): ObfuscationType[];
+    getObfEntryRecursive<T extends unknown>(arg0: ITargetSelectorRemappable): ObfuscationType[];
+    // private getObfEntryRecursive<T extends unknown>(arg0: ITargetSelectorRemappable, arg1: string[]): ObfuscationType[];
+    // private getObfEntryUsing<T extends unknown>(arg0: ITargetSelectorRemappable, arg1: TypeHandle): ObfuscationType[];
     getObfField(arg0: ITargetSelectorRemappable): ObfuscationType[];
     getObfField(arg0: MappingField): ObfuscationType[];
     getObfFieldRecursive(arg0: ITargetSelectorRemappable): ObfuscationType[];

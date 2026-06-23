@@ -7,7 +7,7 @@ import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.
 import type { LongBinaryOperator } from '../../../java/util/function/LongBinaryOperator.d.ts'
 import type { ToLongBiFunction } from '../../../java/util/function/ToLongBiFunction.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ConcurrentHashMap$MapReduceMappingsToLongTask<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ConcurrentHashMap$BulkTask<K, V, number> {
+export class ConcurrentHashMap$MapReduceMappingsToLongTask<K extends unknown, V extends unknown> extends ConcurrentHashMap$BulkTask<K, V, number> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

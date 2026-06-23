@@ -11,7 +11,7 @@ import type { TypedDataComponent } from '../../../net/minecraft/core/component/T
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
-export class Holder$Reference<T extends Object | number | string | boolean> extends Object implements Holder<T> {
+export class Holder$Reference<T extends unknown> extends Object implements Holder<T> {
     static createIntrusive(paramowner: HolderOwner<Object>, paramvalue: Object | null): Holder$Reference<Object>;
     static createStandAlone(paramowner: HolderOwner<Object>, paramkey: ResourceKey<Object>): Holder$Reference<Object>;
     static direct(paramvalue: Object | null): Holder<Object>;

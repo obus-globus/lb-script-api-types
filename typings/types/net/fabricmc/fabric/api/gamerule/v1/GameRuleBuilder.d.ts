@@ -13,7 +13,7 @@ import type { GameRule } from '../../../../../../net/minecraft/world/level/gamer
 import type { GameRuleCategory } from '../../../../../../net/minecraft/world/level/gamerules/GameRuleCategory.d.ts'
 import type { GameRuleType } from '../../../../../../net/minecraft/world/level/gamerules/GameRuleType.d.ts'
 import type { GameRules$VisitorCaller } from '../../../../../../net/minecraft/world/level/gamerules/GameRules$VisitorCaller.d.ts'
-export class GameRuleBuilder<T extends Object | number | string | boolean> extends Object {
+export class GameRuleBuilder<T extends unknown> extends Object {
     static forBoolean(paramarg0: boolean): GameRuleBuilder$BooleanRuleBuilder;
     static forDouble(paramarg0: number): GameRuleBuilder$DoubleRuleBuilder;
     static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<any>;

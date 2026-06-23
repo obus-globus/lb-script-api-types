@@ -16,8 +16,8 @@ export class SerialModuleImpl extends SerializersModule {
     // private polyBase2NamedSerializers: Map<KClass<Object>, { [key: string]: KSerializer<Object> }>;
     polyBase2Serializers: Map<KClass<Object>, Map<KClass<Object>, KSerializer<Object>>>;
     dumpTo(collector: SerializersModuleCollector): void;
-    getContextual<T extends Object | number | string | boolean>(kclass: KClass<T>): KSerializer<T> | null;
-    getContextual<T extends Object | number | string | boolean>(kClass: KClass<T>, typeArgumentsSerializers: KSerializer<Object>[]): KSerializer<T> | null;
-    getPolymorphic<T extends Object | number | string | boolean>(baseClass: KClass<T>, value: T): SerializationStrategy<T> | null;
-    getPolymorphic<T extends Object | number | string | boolean>(baseClass: KClass<T>, serializedClassName: string | null): DeserializationStrategy<T> | null;
+    getContextual<T extends unknown>(kclass: KClass<T>): KSerializer<T> | null;
+    getContextual<T extends unknown>(kClass: KClass<T>, typeArgumentsSerializers: KSerializer<Object>[]): KSerializer<T> | null;
+    getPolymorphic<T extends unknown>(baseClass: KClass<T>, value: T): SerializationStrategy<T> | null;
+    getPolymorphic<T extends unknown>(baseClass: KClass<T>, serializedClassName: string | null): DeserializationStrategy<T> | null;
 }

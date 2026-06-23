@@ -1,7 +1,7 @@
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { EasingType } from '../../../net/minecraft/util/EasingType.d.ts'
-export class KeyframeTrackSampler$Segment<T extends Object | number | string | boolean> extends Record {
+export class KeyframeTrackSampler$Segment<T extends unknown> extends Record {
     // private easing: EasingType;
     // private fromTicks: number;
     // private fromValue: T;

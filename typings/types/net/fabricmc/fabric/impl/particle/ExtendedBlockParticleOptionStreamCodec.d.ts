@@ -39,11 +39,11 @@ export class ExtendedBlockParticleOptionStreamCodec extends Object implements St
     static unit(paraminstance: Object | null): StreamCodec<Object, Object>;
     constructor(arg0: StreamCodec<RegistryFriendlyByteBuf, BlockParticleOption>)
     // private fallback: StreamCodec<RegistryFriendlyByteBuf, BlockParticleOption>;
-    apply<O extends Object | number | string | boolean>(operation: (param0: StreamCodec<RegistryFriendlyByteBuf, BlockParticleOption>) => StreamCodec<RegistryFriendlyByteBuf, O>): StreamCodec<RegistryFriendlyByteBuf, O>;
+    apply<O extends unknown>(operation: (param0: StreamCodec<RegistryFriendlyByteBuf, BlockParticleOption>) => StreamCodec<RegistryFriendlyByteBuf, O>): StreamCodec<RegistryFriendlyByteBuf, O>;
     cast<S extends B>(): StreamCodec<S, BlockParticleOption>;
     decode(arg0: RegistryFriendlyByteBuf): BlockParticleOption;
-    dispatch<U extends Object | number | string | boolean>(type: (param0: U) => BlockParticleOption, codec: (param0: BlockParticleOption) => StreamCodec<RegistryFriendlyByteBuf, U>): StreamCodec<RegistryFriendlyByteBuf, U>;
+    dispatch<U extends unknown>(type: (param0: U) => BlockParticleOption, codec: (param0: BlockParticleOption) => StreamCodec<RegistryFriendlyByteBuf, U>): StreamCodec<RegistryFriendlyByteBuf, U>;
     encode(arg0: RegistryFriendlyByteBuf, arg1: BlockParticleOption): void;
-    map<O extends Object | number | string | boolean>(to: (param0: BlockParticleOption) => O, from: (param0: O) => BlockParticleOption): StreamCodec<RegistryFriendlyByteBuf, O>;
+    map<O extends unknown>(to: (param0: BlockParticleOption) => O, from: (param0: O) => BlockParticleOption): StreamCodec<RegistryFriendlyByteBuf, O>;
     mapStream<O extends ByteBuf>(operation: (param0: O) => RegistryFriendlyByteBuf): StreamCodec<O, BlockParticleOption>;
 }

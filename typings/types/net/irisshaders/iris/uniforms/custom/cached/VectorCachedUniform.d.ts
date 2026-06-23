@@ -6,7 +6,7 @@ import type { FunctionReturn } from '../../../../../../kroppeb/stareval/function
 import type { Type } from '../../../../../../kroppeb/stareval/function/Type.d.ts'
 import type { UniformUpdateFrequency } from '../../../../../../net/irisshaders/iris/gl/uniform/UniformUpdateFrequency.d.ts'
 import type { CachedUniform } from '../../../../../../net/irisshaders/iris/uniforms/custom/cached/CachedUniform.d.ts'
-export abstract class VectorCachedUniform<T extends Object | number | string | boolean> extends CachedUniform {
+export abstract class VectorCachedUniform<T extends unknown> extends CachedUniform {
     static forExpression(paramarg0: string, paramarg1: Type, paramarg2: Expression, paramarg3: FunctionContext): CachedUniform;
     constructor(arg0: string, arg1: UniformUpdateFrequency, arg2: T, arg3: () => T)
     // private cached: T;

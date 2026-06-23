@@ -5,7 +5,7 @@ import type { BlockModel } from '../../../../../../net/minecraft/client/renderer
 import type { SpecialModelRenderer } from '../../../../../../net/minecraft/client/renderer/special/SpecialModelRenderer.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { Matrix4fc } from '../../../../../../org/joml/Matrix4fc.d.ts'
-export class SpecialBlockModelWrapper<T extends Object | number | string | boolean> extends Object implements BlockModel {
+export class SpecialBlockModelWrapper<T extends unknown> extends Object implements BlockModel {
     constructor(specialRenderer: SpecialModelRenderer<T>, transformation: Matrix4fc)
     // private specialRenderer: SpecialModelRenderer<T>;
     // private transformation: Matrix4fc;

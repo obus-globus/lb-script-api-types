@@ -3,7 +3,7 @@ import type { LocalCache$ManualSerializationProxy } from '../../../../com/google
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class LocalCache$LoadingSerializationProxy<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends LocalCache$ManualSerializationProxy<K, V> implements LoadingCache<K, V> {
+export class LocalCache$LoadingSerializationProxy<K extends unknown, V extends unknown> extends LocalCache$ManualSerializationProxy<K, V> implements LoadingCache<K, V> {
     constructor(cache: Map<K, V>)
     // private autoDelegate: LoadingCache<K, V>;
     apply(key: K): V;

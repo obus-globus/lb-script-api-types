@@ -1,7 +1,7 @@
 import type { TrieNode } from '../../../../../com/oracle/truffle/api/object/TrieNode.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
-export class TrieNode$BitmapNode<K extends Object | number | string | boolean, V extends Object | number | string | boolean, E extends Map$Entry<K, V>> extends TrieNode<K, V, E> {
+export class TrieNode$BitmapNode<K extends unknown, V extends unknown, E extends Map$Entry<K, V>> extends TrieNode<K, V, E> {
     constructor()
     constructor(bitmap: number, entries: Object[])
     // private bitmap: number;

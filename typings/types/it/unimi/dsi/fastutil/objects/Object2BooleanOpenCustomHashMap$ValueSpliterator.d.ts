@@ -19,7 +19,7 @@ export class Object2BooleanOpenCustomHashMap$ValueSpliterator extends Object2Boo
     characteristics(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     getComparator(): (param0: boolean, param1: boolean) => number;
-    makeForSplit<K extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Object2BooleanOpenCustomHashMap$ValueSpliterator;
+    makeForSplit<K extends unknown>(arg0: number, arg1: number, arg2: boolean): Object2BooleanOpenCustomHashMap$ValueSpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: boolean) => void): boolean;
 }

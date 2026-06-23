@@ -1,7 +1,7 @@
 import type { ObjectHeapSemiIndirectPriorityQueue } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectHeapSemiIndirectPriorityQueue.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectHeapIndirectPriorityQueue<K extends Object | number | string | boolean> extends ObjectHeapSemiIndirectPriorityQueue<K> {
+export class ObjectHeapIndirectPriorityQueue<K extends unknown> extends ObjectHeapSemiIndirectPriorityQueue<K> {
     constructor(arg0: K[])
     constructor(arg0: K[], arg1: (param0: Object) => boolean)
     constructor(arg0: K[], arg1: number)

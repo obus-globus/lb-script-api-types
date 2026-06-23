@@ -14,6 +14,6 @@ export class ByteSource$EmptyByteSource extends ByteSource$ByteArrayByteSource {
     constructor()
     asCharSource(charset: Charset): CharSource;
     read(): number[];
-    read<T extends Object | number | string | boolean>(processor: ByteProcessor<T>): T;
+    read<T extends unknown>(processor: ByteProcessor<T>): T;
     toString(): string;
 }

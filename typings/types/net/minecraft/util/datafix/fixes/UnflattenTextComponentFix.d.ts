@@ -11,6 +11,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class UnflattenTextComponentFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
-    // private createFixer<T extends Object | number | string | boolean>(textComponentType: Type<Pair<string, string>>, newTextComponentType: Type<T>): TypeRewriteRule;
+    // private createFixer<T extends unknown>(textComponentType: Type<Pair<string, string>>, newTextComponentType: Type<T>): TypeRewriteRule;
     makeRule(): TypeRewriteRule;
 }

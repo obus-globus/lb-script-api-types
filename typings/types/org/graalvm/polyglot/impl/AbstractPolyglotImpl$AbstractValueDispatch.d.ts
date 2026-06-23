@@ -17,7 +17,7 @@ export abstract class AbstractPolyglotImpl$AbstractValueDispatch extends Abstrac
     asBigInteger(context: Object, receiver: Object): BigInteger;
     asBoolean(context: Object, receiver: Object): boolean;
     asByte(context: Object, receiver: Object): number;
-    asClass<T extends Object | number | string | boolean>(context: Object, receiver: Object, targetType: Class<T>): T;
+    asClass<T extends unknown>(context: Object, receiver: Object, targetType: Class<T>): T;
     asDate(context: Object, receiver: Object): LocalDate;
     asDouble(context: Object, receiver: Object): number;
     asDuration(context: Object, receiver: Object): Duration;
@@ -33,7 +33,7 @@ export abstract class AbstractPolyglotImpl$AbstractValueDispatch extends Abstrac
     asStringBytes(context: Object, receiver: Object, encoding: number): number[];
     asTime(context: Object, receiver: Object): LocalTime;
     asTimeZone(context: Object, receiver: Object): ZoneId;
-    asTypeLiteral<T extends Object | number | string | boolean>(context: Object, receiver: Object, rawType: Class<T>, genericType: Type): T;
+    asTypeLiteral<T extends unknown>(context: Object, receiver: Object, rawType: Class<T>, genericType: Type): T;
     canExecute(context: Object, receiver: Object): boolean;
     canInstantiate(context: Object, receiver: Object): boolean;
     canInvoke(context: Object, identifier: string, receiver: Object): boolean;

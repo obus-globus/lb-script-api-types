@@ -17,18 +17,18 @@ export class Char2ObjectOpenHashMap$MapEntry extends Object implements Char2Obje
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): string;
-    first<V extends Object | number | string | boolean>(arg0: string): CharObjectPair<V>;
+    first<V extends unknown>(arg0: string): CharObjectPair<V>;
     firstChar(): string;
     getCharKey(): string;
     hashCode(): number;
     key(): string;
-    key<V extends Object | number | string | boolean>(arg0: string): CharObjectPair<V>;
+    key<V extends unknown>(arg0: string): CharObjectPair<V>;
     keyChar(): string;
     left(): string;
-    left<V extends Object | number | string | boolean>(arg0: string): CharObjectPair<V>;
+    left<V extends unknown>(arg0: string): CharObjectPair<V>;
     leftChar(): string;
-    right<V extends Object | number | string | boolean>(): V;
-    right<V extends Object | number | string | boolean>(arg0: V): CharObjectPair<V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    right<V extends unknown>(): V;
+    right<V extends unknown>(arg0: V): CharObjectPair<V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

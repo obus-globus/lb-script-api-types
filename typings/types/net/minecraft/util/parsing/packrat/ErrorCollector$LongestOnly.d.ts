@@ -3,7 +3,7 @@ import type { ErrorCollector } from '../../../../../net/minecraft/util/parsing/p
 import type { ErrorCollector$LongestOnly$MutableErrorEntry } from '../../../../../net/minecraft/util/parsing/packrat/ErrorCollector$LongestOnly$MutableErrorEntry.d.ts'
 import type { ErrorEntry } from '../../../../../net/minecraft/util/parsing/packrat/ErrorEntry.d.ts'
 import type { SuggestionSupplier } from '../../../../../net/minecraft/util/parsing/packrat/SuggestionSupplier.d.ts'
-export class ErrorCollector$LongestOnly<S extends Object | number | string | boolean> extends Object implements ErrorCollector<S> {
+export class ErrorCollector$LongestOnly<S extends unknown> extends Object implements ErrorCollector<S> {
     constructor()
     // private entries: ErrorCollector$LongestOnly$MutableErrorEntry<S>[];
     // private lastCursor: number;

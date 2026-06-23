@@ -17,7 +17,7 @@ import type { DynamicOps } from '../../../../../com/mojang/serialization/Dynamic
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class RecursivePoint$RecursivePointType<A extends Object | number | string | boolean> extends Type<A> {
+export class RecursivePoint$RecursivePointType<A extends unknown> extends Type<A> {
     static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
     static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
     constructor(arg0: RecursiveTypeFamily, arg1: number, arg2: () => Type<A>)
@@ -35,7 +35,7 @@ export class RecursivePoint$RecursivePointType<A extends Object | number | strin
     findCheckedType(arg0: number): Optional<Type<Object>>;
     findChoiceType(arg0: string, arg1: number): Optional<TaggedChoice$TaggedChoiceType<Object>>;
     findFieldTypeOpt(arg0: string): Optional<Type<Object>>;
-    findTypeInChildren<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
+    findTypeInChildren<FT extends unknown, FR extends unknown>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
     hashCode(): number;
     in(): View<A, A>;
     index(): number;

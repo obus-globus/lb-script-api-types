@@ -6,7 +6,7 @@ export class ComparisonChain$InactiveComparisonChain extends ComparisonChain {
     static start(): ComparisonChain;
     constructor(result: number)
     // private result: number;
-    compare<T extends Object | number | string | boolean>(left: T, right: T, comparator: (param0: Object) => boolean): ComparisonChain;
+    compare<T extends unknown>(left: T, right: T, comparator: (param0: Object) => boolean): ComparisonChain;
     compare(left: boolean, right: boolean): ComparisonChain;
     compare(left: Comparable<Object>, right: Comparable<Object>): ComparisonChain;
     compare(left: number, right: number): ComparisonChain;

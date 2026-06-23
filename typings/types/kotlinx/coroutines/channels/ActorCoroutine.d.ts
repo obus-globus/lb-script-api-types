@@ -6,7 +6,7 @@ import type { ActorScope } from '../../../kotlinx/coroutines/channels/ActorScope
 import type { Channel } from '../../../kotlinx/coroutines/channels/Channel.d.ts'
 import type { Channel$Factory } from '../../../kotlinx/coroutines/channels/Channel$Factory.d.ts'
 import type { ChannelCoroutine } from '../../../kotlinx/coroutines/channels/ChannelCoroutine.d.ts'
-export class ActorCoroutine<E extends Object | number | string | boolean> extends ChannelCoroutine<E> implements ActorScope<E> {
+export class ActorCoroutine<E extends unknown> extends ChannelCoroutine<E> implements ActorScope<E> {
     static BUFFERED: number;
     static CONFLATED: number;
     static DEFAULT_BUFFER_PROPERTY_NAME: string;

@@ -10,7 +10,7 @@ export abstract class LootPoolSingletonContainer$Builder<T extends LootPoolSingl
     // private functions: ImmutableList$Builder<LootItemFunction>;
     // private quality: number;
     // private weight: number;
-    apply<E extends Object | number | string | boolean>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;
+    apply<E extends unknown>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): T;
     apply(function_: LootItemFunction$Builder): T;
     getFunctions(): LootItemFunction[];
     setQuality(quality: number): T;

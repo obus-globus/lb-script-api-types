@@ -15,9 +15,9 @@ export class GameProfileArgument extends Object implements ArgumentType<(param0:
     static getGameProfiles(paramsource: CommandContext<CommandSourceStack>, paramname: string): NameAndId[];
     constructor()
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions<S extends Object | number | string | boolean>(contextBuilder: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): (param0: CommandSourceStack) => NameAndId[];
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends unknown>(contextBuilder: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): (param0: CommandSourceStack) => NameAndId[];
     parse(reader: StringReader): (param0: CommandSourceStack) => NameAndId[];
-    parse<S extends Object | number | string | boolean>(reader: StringReader, source: S): (param0: CommandSourceStack) => NameAndId[];
+    parse<S extends unknown>(reader: StringReader, source: S): (param0: CommandSourceStack) => NameAndId[];
 }

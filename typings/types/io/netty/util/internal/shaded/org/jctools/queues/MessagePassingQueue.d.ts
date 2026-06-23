@@ -3,7 +3,7 @@ import type { MessagePassingQueue$ExitCondition } from '../../../../../../../../
 import type { MessagePassingQueue$Supplier } from '../../../../../../../../io/netty/util/internal/shaded/org/jctools/queues/MessagePassingQueue$Supplier.d.ts'
 import type { MessagePassingQueue$WaitStrategy } from '../../../../../../../../io/netty/util/internal/shaded/org/jctools/queues/MessagePassingQueue$WaitStrategy.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-export interface MessagePassingQueue<T extends Object | number | string | boolean> extends Object{
+export interface MessagePassingQueue<T extends unknown> extends Object{
     capacity(): number;
     clear(): void;
     drain(arg0: MessagePassingQueue$Consumer<T>): number;

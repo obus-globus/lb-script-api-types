@@ -4,7 +4,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../java/lang/Comparable.d.ts'
 import type { Property } from '../../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 import type { Property$Value } from '../../../../../../net/minecraft/world/level/block/state/properties/Property$Value.d.ts'
-export abstract class StateHolder<O extends Object | number | string | boolean, S extends Object | number | string | boolean> extends Object {
+export abstract class StateHolder<O extends unknown, S extends unknown> extends Object {
     static NAME_TAG: string;
     static PROPERTIES_TAG: string;
     constructor(owner: O, propertyKeys: Property<any>[], propertyValues: Comparable<Object>[])

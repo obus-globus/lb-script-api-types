@@ -15,12 +15,12 @@ import type { NotCompleted } from '../../kotlinx/coroutines/NotCompleted.d.ts'
 import type { Waiter } from '../../kotlinx/coroutines/Waiter.d.ts'
 import type { Segment } from '../../kotlinx/coroutines/internal/Segment.d.ts'
 import type { Symbol } from '../../kotlinx/coroutines/internal/Symbol.d.ts'
-export class CancellableContinuationImpl<T extends Object | number | string | boolean> extends DispatchedTask<T> implements CoroutineStackFrame, CancellableContinuation<T>, Waiter {
+export class CancellableContinuationImpl<T extends unknown> extends DispatchedTask<T> implements CoroutineStackFrame, CancellableContinuation<T>, Waiter {
     constructor(delegate: Continuation<T>, resumeMode: number)
     // private alreadyResumedError(proposedUpdate: Object | null): void;
     callCancelHandler(handler: CancelHandler, cause: Throwable | null): void;
     // private callCancelHandlerSafely(block: () => void): void;
-    callOnCancellation<R extends Object | number | string | boolean>(onCancellation: (param0: Throwable, param1: R, param2: CoroutineContext) => void, cause: Throwable, value: R): void;
+    callOnCancellation<R extends unknown>(onCancellation: (param0: Throwable, param1: R, param2: CoroutineContext) => void, cause: Throwable, value: R): void;
     // private callSegmentOnCancellation(segment: Segment<any>, cause: Throwable | null): void;
     cancel(cause: Throwable | null): boolean;
     cancelCompletedResult(takenState: Object | null, cause: Throwable): void;
@@ -48,15 +48,15 @@ export class CancellableContinuationImpl<T extends Object | number | string | bo
     resetStateReusable(): boolean;
     resume<R extends T>(value: R, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): void;
     resume(value: T, onCancellation: ((param0: Throwable) => void) | null): void;
-    resumeImpl<R extends Object | number | string | boolean>(proposedUpdate: R, resumeMode: number, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): void;
+    resumeImpl<R extends unknown>(proposedUpdate: R, resumeMode: number, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): void;
     resumeWith(result: Result<T>): void;
-    // private resumedState<R extends Object | number | string | boolean>(state: NotCompleted, proposedUpdate: R, resumeMode: number, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null, idempotent: Object | null): Object | null;
+    // private resumedState<R extends unknown>(state: NotCompleted, proposedUpdate: R, resumeMode: number, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null, idempotent: Object | null): Object | null;
     takeState(): Object | null;
     toString(): string;
     // private tryResume(): boolean;
     tryResume<R extends T>(value: R, idempotent: Object | null, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): Object | null;
     tryResume(value: T, idempotent: Object | null): Object | null;
-    // private tryResumeImpl<R extends Object | number | string | boolean>(proposedUpdate: R, idempotent: Object | null, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): Symbol | null;
+    // private tryResumeImpl<R extends unknown>(proposedUpdate: R, idempotent: Object | null, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null): Symbol | null;
     tryResumeWithException(exception: Throwable): Object | null;
     // private trySuspend(): boolean;
 }

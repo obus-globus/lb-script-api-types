@@ -1,7 +1,7 @@
 import type { Comparator } from '../../../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../../../java/util/Map$Entry.d.ts'
-export class XCldrStub$ReusableEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Map$Entry<K, V> {
+export class XCldrStub$ReusableEntry<K extends unknown, V extends unknown> extends Object implements Map$Entry<K, V> {
     static comparingByKey(): (param0: Object) => boolean;
     static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static comparingByValue(): (param0: Object) => boolean;

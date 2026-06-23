@@ -2,7 +2,7 @@ import type { AbstractGraph } from '../../../../com/google/common/graph/Abstract
 import type { BaseGraph } from '../../../../com/google/common/graph/BaseGraph.d.ts'
 import type { ElementOrder } from '../../../../com/google/common/graph/ElementOrder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ForwardingGraph<N extends Object | number | string | boolean> extends AbstractGraph<N> {
+export abstract class ForwardingGraph<N extends unknown> extends AbstractGraph<N> {
     constructor()
     adjacentNodes(node: N): N[];
     allowsSelfLoops(): boolean;

@@ -2,7 +2,7 @@ import type { AbstractReference2BooleanFunction } from '../../../../../it/unimi/
 import type { Reference2BooleanFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2BooleanFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2BooleanFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractReference2BooleanFunction<K> implements Serializable {
+export class Reference2BooleanFunctions$UnmodifiableFunction<K extends unknown> extends AbstractReference2BooleanFunction<K> implements Serializable {
     constructor(arg0: (param0: Object) => boolean)
     // private function: (param0: Object) => boolean;
     clear(): void;

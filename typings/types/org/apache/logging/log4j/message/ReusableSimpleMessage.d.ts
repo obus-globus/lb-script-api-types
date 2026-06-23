@@ -16,7 +16,7 @@ export class ReusableSimpleMessage extends Object implements CharSequence, Clear
     chars(): IntStream;
     clear(): void;
     codePoints(): IntStream;
-    forEachParameter<S extends Object | number | string | boolean>(action: ParameterConsumer<S>, state: S): void;
+    forEachParameter<S extends unknown>(action: ParameterConsumer<S>, state: S): void;
     formatTo(buffer: StringBuilder): void;
     get(index: number): string;
     getChars(arg0: number, arg1: number, arg2: string[], arg3: number): void;

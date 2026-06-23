@@ -1,6 +1,6 @@
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface CharObjectPair<V extends Object | number | string | boolean> extends Pair<string, V>, Object{
+export interface CharObjectPair<V extends unknown> extends Pair<string, V>, Object{
     first(): string;
     first(arg0: string): Pair<string, V>;
     first(arg0: string): CharObjectPair<V>;

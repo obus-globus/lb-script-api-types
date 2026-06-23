@@ -72,8 +72,8 @@ export class MutableComponent extends Object implements Component {
     toFlatList(rootStyle: Style): Component[];
     toString(): string;
     tryCollapseToString(): string;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
     withColor(color: number): MutableComponent;
     withStyle(updater: (param0: Style) => Object | null): MutableComponent;
     withStyle(formats: ChatFormatting[]): MutableComponent;

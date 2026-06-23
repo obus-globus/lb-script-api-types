@@ -32,7 +32,7 @@ export class PackMetadataGenerator extends Object implements DataProvider {
     constructor(output: PackOutput)
     // private elements: { [key: string]: () => JsonElement };
     // private output: PackOutput;
-    add<T extends Object | number | string | boolean>(type: MetadataSectionType<T>, value: T): PackMetadataGenerator;
+    add<T extends unknown>(type: MetadataSectionType<T>, value: T): PackMetadataGenerator;
     getName(): string;
     run(cache: CachedOutput): CompletableFuture<Object>;
 }

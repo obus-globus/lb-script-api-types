@@ -13,7 +13,7 @@ import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
-export class Dynamic<T extends Object | number | string | boolean> extends DynamicLike<T> {
+export class Dynamic<T extends unknown> extends DynamicLike<T> {
     static convert(paramarg0: DynamicOps<Object>, paramarg1: DynamicOps<Object>, paramarg2: Object | null): Object | null;
     static copyAndFixField(paramarg0: Dynamic<Object>, paramarg1: string, paramarg2: Dynamic<Object>, paramarg3: string, paramarg4: (param0: Dynamic<Object>) => Object | null): Dynamic<Object>;
     static copyField(paramarg0: Dynamic<Object>, paramarg1: string, paramarg2: Dynamic<Object>, paramarg3: string): Dynamic<Object>;
@@ -26,16 +26,16 @@ export class Dynamic<T extends Object | number | string | boolean> extends Dynam
     asIntStreamOpt(): DataResult<IntStream>;
     asLongStreamOpt(): DataResult<LongStream>;
     asMapOpt(): DataResult<Stream<Pair<Dynamic<T>, Dynamic<T>>>>;
-    asMapOpt<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<Map<K, V>>;
+    asMapOpt<K extends unknown, V extends unknown>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<Map<K, V>>;
     asNumber(): DataResult<Number>;
     asNumber(arg0: Number): Number;
     asStreamOpt(): DataResult<Stream<Dynamic<T>>>;
     asString(): DataResult<string>;
     asString(arg0: string): string;
-    cast<U extends Object | number | string | boolean>(arg0: DynamicOps<U>): U;
-    castTyped<U extends Object | number | string | boolean>(arg0: DynamicOps<U>): Dynamic<U>;
-    convert<R extends Object | number | string | boolean>(arg0: DynamicOps<R>): Dynamic<R>;
-    decode<A extends Object | number | string | boolean>(arg0: Decoder<A>): DataResult<Pair<A, T>>;
+    cast<U extends unknown>(arg0: DynamicOps<U>): U;
+    castTyped<U extends unknown>(arg0: DynamicOps<U>): Dynamic<U>;
+    convert<R extends unknown>(arg0: DynamicOps<R>): Dynamic<R>;
+    decode<A extends unknown>(arg0: Decoder<A>): DataResult<Pair<A, T>>;
     equals(arg0: Object | null): boolean;
     get(arg0: string): OptionalDynamic<T>;
     getElement(arg0: string): DataResult<T>;
@@ -46,7 +46,7 @@ export class Dynamic<T extends Object | number | string | boolean> extends Dynam
     getMapValues(): DataResult<Map<Dynamic<T>, Dynamic<T>>>;
     getValue(): T;
     hashCode(): number;
-    into<V extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => V): V;
+    into<V extends unknown>(arg0: (param0: Dynamic<T>) => V): V;
     map(arg0: (param0: T) => T): Dynamic<T>;
     merge(arg0: Dynamic<Object>): OptionalDynamic<T>;
     merge(arg0: Dynamic<Object>, arg1: Dynamic<Object>): OptionalDynamic<T>;

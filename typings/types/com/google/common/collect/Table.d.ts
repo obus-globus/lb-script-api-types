@@ -1,6 +1,6 @@
 import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cell.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Table<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object{
+export interface Table<R extends unknown, C extends unknown, V extends unknown> extends Object{
     cellSet(): Table$Cell<R, C, V>[];
     clear(): void;
     column(columnKey: C): Map<R, V>;

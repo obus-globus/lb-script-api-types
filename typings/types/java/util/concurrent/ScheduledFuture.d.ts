@@ -4,7 +4,7 @@ import type { Future$State } from '../../../java/util/concurrent/Future$State.d.
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export interface ScheduledFuture<V extends Object | number | string | boolean> extends Delayed, Future<V>, Object{
+export interface ScheduledFuture<V extends unknown> extends Delayed, Future<V>, Object{
     exceptionNow(): Throwable;
     getDelay(arg0: TimeUnit): number;
     resultNow(): V;

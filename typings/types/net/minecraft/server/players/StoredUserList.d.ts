@@ -3,7 +3,7 @@ import type { File } from '../../../../java/io/File.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { NotificationService } from '../../../../net/minecraft/server/notifications/NotificationService.d.ts'
 import type { StoredUserEntry } from '../../../../net/minecraft/server/players/StoredUserEntry.d.ts'
-export abstract class StoredUserList<K extends Object | number | string | boolean, V extends StoredUserEntry<K>> extends Object {
+export abstract class StoredUserList<K extends unknown, V extends StoredUserEntry<K>> extends Object {
     constructor(file: File, notificationService: NotificationService)
     readonly file: File;
     // private map: { [key: string]: V };

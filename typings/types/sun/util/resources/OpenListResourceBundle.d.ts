@@ -19,8 +19,8 @@ export abstract class OpenListResourceBundle extends ResourceBundle {
     constructor()
     // private keyset: string[];
     // private lookup: { [key: string]: Object };
-    createMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: number): Map<K, V>;
-    createSet<E extends Object | number | string | boolean>(): E[];
+    createMap<K extends unknown, V extends unknown>(arg0: number): Map<K, V>;
+    createSet<E extends unknown>(): E[];
     getContents(): Object[][];
     getKeys(): Enumeration<string>;
     handleGetObject(arg0: string): Object;

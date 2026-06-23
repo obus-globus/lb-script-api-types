@@ -9,6 +9,6 @@ export class MapTypeAdapterFactory extends Object implements TypeAdapterFactory 
     constructor(arg0: ConstructorConstructor, arg1: boolean)
     // private complexMapKeySerialization: boolean;
     // private constructorConstructor: ConstructorConstructor;
-    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends unknown>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
     // private getKeyAdapter(arg0: Gson, arg1: Type): TypeAdapter<Object>;
 }

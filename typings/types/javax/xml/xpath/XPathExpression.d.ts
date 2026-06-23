@@ -9,7 +9,7 @@ export interface XPathExpression extends Object{
     evaluate(arg0: InputSource): string;
     evaluate(arg0: InputSource, arg1: QName): Object;
     evaluateExpression(arg0: Object): XPathEvaluationResult<Object>;
-    evaluateExpression<T extends Object | number | string | boolean>(arg0: Object, arg1: Class<T>): T;
+    evaluateExpression<T extends unknown>(arg0: Object, arg1: Class<T>): T;
     evaluateExpression(arg0: InputSource): XPathEvaluationResult<Object>;
-    evaluateExpression<T extends Object | number | string | boolean>(arg0: InputSource, arg1: Class<T>): T;
+    evaluateExpression<T extends unknown>(arg0: InputSource, arg1: Class<T>): T;
 }

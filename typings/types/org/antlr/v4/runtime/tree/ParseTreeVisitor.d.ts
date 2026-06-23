@@ -3,7 +3,7 @@ import type { ErrorNode } from '../../../../../org/antlr/v4/runtime/tree/ErrorNo
 import type { ParseTree } from '../../../../../org/antlr/v4/runtime/tree/ParseTree.d.ts'
 import type { RuleNode } from '../../../../../org/antlr/v4/runtime/tree/RuleNode.d.ts'
 import type { TerminalNode } from '../../../../../org/antlr/v4/runtime/tree/TerminalNode.d.ts'
-export interface ParseTreeVisitor<T extends Object | number | string | boolean> extends Object{
+export interface ParseTreeVisitor<T extends unknown> extends Object{
     visit(arg0: ParseTree): T;
     visitChildren(arg0: RuleNode): T;
     visitErrorNode(arg0: ErrorNode): T;

@@ -2,7 +2,7 @@ import type { Reference } from '../../../java/lang/ref/Reference.d.ts'
 import type { ReferenceQueue$Lock } from '../../../java/lang/ref/ReferenceQueue$Lock.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ReferenceQueue<T extends Object | number | string | boolean> extends Object {
+export class ReferenceQueue<T extends unknown> extends Object {
     constructor()
     // private head: Reference<T>;
     // private lock: ReferenceQueue$Lock;

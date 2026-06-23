@@ -3,7 +3,7 @@ import type { AbstractSerializer } from '../../../../io/jsonwebtoken/io/Abstract
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Writer } from '../../../../java/io/Writer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class GsonSerializer<T extends Object | number | string | boolean> extends AbstractSerializer<T> {
+export class GsonSerializer<T extends unknown> extends AbstractSerializer<T> {
     constructor()
     constructor(arg0: Gson)
     // private gson: Gson;

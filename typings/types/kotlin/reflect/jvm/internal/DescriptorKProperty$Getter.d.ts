@@ -3,7 +3,7 @@ import type { KProperty$Getter } from '../../../../kotlin/reflect/KProperty$Gett
 import type { DescriptorKProperty$Accessor } from '../../../../kotlin/reflect/jvm/internal/DescriptorKProperty$Accessor.d.ts'
 import type { Caller } from '../../../../kotlin/reflect/jvm/internal/calls/Caller.d.ts'
 import type { PropertyGetterDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyGetterDescriptor.d.ts'
-export abstract class DescriptorKProperty$Getter<V extends Object | number | string | boolean> extends DescriptorKProperty$Accessor<V, V> implements KProperty$Getter<V> {
+export abstract class DescriptorKProperty$Getter<V extends unknown> extends DescriptorKProperty$Accessor<V, V> implements KProperty$Getter<V> {
     constructor()
     readonly caller: Caller<any>;
     readonly descriptor: PropertyGetterDescriptor;

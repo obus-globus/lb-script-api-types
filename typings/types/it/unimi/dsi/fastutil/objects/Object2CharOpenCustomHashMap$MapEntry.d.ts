@@ -19,17 +19,17 @@ export class Object2CharOpenCustomHashMap$MapEntry extends Object implements Obj
     equals(arg0: Object | null): boolean;
     getCharValue(): string;
     hashCode(): number;
-    left<K extends Object | number | string | boolean>(): K;
-    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, string>;
+    left<K extends unknown>(): K;
+    left<K extends unknown>(arg0: K): Pair<K, string>;
     right(): string;
-    right<K extends Object | number | string | boolean>(arg0: string): ObjectCharPair<K>;
+    right<K extends unknown>(arg0: string): ObjectCharPair<K>;
     rightChar(): string;
     second(): string;
-    second<K extends Object | number | string | boolean>(arg0: string): ObjectCharPair<K>;
+    second<K extends unknown>(arg0: string): ObjectCharPair<K>;
     secondChar(): string;
     setValue(arg0: string): string;
     toString(): string;
     value(): string;
-    value<K extends Object | number | string | boolean>(arg0: string): ObjectCharPair<K>;
+    value<K extends unknown>(arg0: string): ObjectCharPair<K>;
     valueChar(): string;
 }

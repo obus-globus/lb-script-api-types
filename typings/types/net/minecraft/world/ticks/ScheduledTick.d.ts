@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { SavedTick } from '../../../../net/minecraft/world/ticks/SavedTick.d.ts'
 import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPriority.d.ts'
-export class ScheduledTick<T extends Object | number | string | boolean> extends Record {
+export class ScheduledTick<T extends unknown> extends Record {
     static DRAIN_ORDER: (param0: Object) => boolean;
     static INTRA_TICK_DRAIN_ORDER: (param0: Object) => boolean;
     static UNIQUE_TICK_HASH: Hash$Strategy<ScheduledTick<Object>>;

@@ -16,11 +16,11 @@ import type { MutableObject } from '../../../org/apache/commons/lang3/mutable/Mu
 export class RegistrySetBuilder extends Object {
     constructor()
     entries: RegistrySetBuilder$RegistryStub<Object>[];
-    add<T extends Object | number | string | boolean>(key: ResourceKey<T[]>, lifecycle: Lifecycle, bootstrap: (param0: BootstrapContext<T>) => void): RegistrySetBuilder;
-    add<T extends Object | number | string | boolean>(key: ResourceKey<T[]>, bootstrap: (param0: BootstrapContext<T>) => void): RegistrySetBuilder;
+    add<T extends unknown>(key: ResourceKey<T[]>, lifecycle: Lifecycle, bootstrap: (param0: BootstrapContext<T>) => void): RegistrySetBuilder;
+    add<T extends unknown>(key: ResourceKey<T[]>, bootstrap: (param0: BootstrapContext<T>) => void): RegistrySetBuilder;
     build(context: RegistryAccess): HolderLookup$Provider;
     buildPatch(context: RegistryAccess, fallbackProvider: HolderLookup$Provider, clonerFactory: Cloner$Factory): RegistrySetBuilder$PatchedRegistries;
-    // private createLazyFullPatchedRegistries<T extends Object | number | string | boolean>(owner: HolderOwner<T>, clonerFactory: Cloner$Factory, registryKey: ResourceKey<T[]>, patchProvider: HolderLookup$Provider, fallbackProvider: HolderLookup$Provider, targetProvider: MutableObject<HolderLookup$Provider>): HolderLookup$RegistryLookup<T>;
+    // private createLazyFullPatchedRegistries<T extends unknown>(owner: HolderOwner<T>, clonerFactory: Cloner$Factory, registryKey: ResourceKey<T[]>, patchProvider: HolderLookup$Provider, fallbackProvider: HolderLookup$Provider, targetProvider: MutableObject<HolderLookup$Provider>): HolderLookup$RegistryLookup<T>;
     // private createLazyFullPatchedRegistries(context: RegistryAccess, fallbackProvider: HolderLookup$Provider, clonerFactory: Cloner$Factory, newRegistries: Map<ResourceKey<(Object | null)[]>, RegistrySetBuilder$RegistryContents<Object>>, patchOnlyRegistries: HolderLookup$Provider): HolderLookup$Provider;
     // private createState(context: RegistryAccess): RegistrySetBuilder$BuildState;
 }

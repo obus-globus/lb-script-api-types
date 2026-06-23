@@ -5,6 +5,6 @@ export class TreeTraverser$BreadthFirstIterator extends UnmodifiableIterator<T> 
     constructor(null_: TreeTraverser$BreadthFirstIterator)
     // private queue: T[];
     hasNext(): boolean;
-    next<T extends Object | number | string | boolean>(): T;
-    peek<T extends Object | number | string | boolean>(): T;
+    next<T extends unknown>(): T;
+    peek<T extends unknown>(): T;
 }

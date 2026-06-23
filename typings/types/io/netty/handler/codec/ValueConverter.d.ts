@@ -1,5 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface ValueConverter<T extends Object | number | string | boolean> extends Object{
+export interface ValueConverter<T extends unknown> extends Object{
     convertBoolean(arg0: boolean): T;
     convertByte(arg0: number): T;
     convertChar(arg0: string): T;

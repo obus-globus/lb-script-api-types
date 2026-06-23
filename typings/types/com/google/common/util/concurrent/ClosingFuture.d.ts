@@ -20,7 +20,7 @@ import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts
 import type { AtomicReference } from '../../../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
-export class ClosingFuture<V extends Object | number | string | boolean> extends Object {
+export class ClosingFuture<V extends unknown> extends Object {
     static eventuallyClosing(paramfuture: ListenableFuture<Object>, paramclosingExecutor: Executor): ClosingFuture<Object>;
     static from(paramfuture: ListenableFuture<Object>): ClosingFuture<Object>;
     static submit(paramcallable: (param0: ClosingFuture$DeferredCloser) => Object | null, paramexecutor: Executor): ClosingFuture<Object>;
@@ -48,13 +48,13 @@ export class ClosingFuture<V extends Object | number | string | boolean> extends
     // private checkAndUpdateState(oldState: ClosingFuture$State, newState: ClosingFuture$State): void;
     // private close(): void;
     // private compareAndUpdateState(oldState: ClosingFuture$State, newState: ClosingFuture$State): boolean;
-    // private derive<U extends Object | number | string | boolean>(future: FluentFuture<U>): ClosingFuture<U>;
+    // private derive<U extends unknown>(future: FluentFuture<U>): ClosingFuture<U>;
     finalize(): void;
     finishToFuture(): FluentFuture<V>;
     finishToValueAndCloser(consumer: (param0: ClosingFuture$ValueAndCloser<V>) => void, executor: Executor): void;
     statusFuture(): ListenableFuture<Object>;
     toString(): string;
-    transform<U extends Object | number | string | boolean>(function_: (param0: ClosingFuture$DeferredCloser, param1: V) => U, executor: Executor): ClosingFuture<U>;
-    transformAsync<U extends Object | number | string | boolean>(function_: (param0: ClosingFuture$DeferredCloser, param1: V) => ClosingFuture<U>, executor: Executor): ClosingFuture<U>;
+    transform<U extends unknown>(function_: (param0: ClosingFuture$DeferredCloser, param1: V) => U, executor: Executor): ClosingFuture<U>;
+    transformAsync<U extends unknown>(function_: (param0: ClosingFuture$DeferredCloser, param1: V) => ClosingFuture<U>, executor: Executor): ClosingFuture<U>;
     whenClosedCountDown(): CountDownLatch;
 }

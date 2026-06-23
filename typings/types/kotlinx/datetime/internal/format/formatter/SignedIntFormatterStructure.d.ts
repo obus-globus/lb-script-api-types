@@ -1,7 +1,7 @@
 import type { Appendable } from '../../../../../java/lang/Appendable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FormatterStructure } from '../../../../../kotlinx/datetime/internal/format/formatter/FormatterStructure.d.ts'
-export class SignedIntFormatterStructure<T extends Object | number | string | boolean> extends Object implements FormatterStructure<T> {
+export class SignedIntFormatterStructure<T extends unknown> extends Object implements FormatterStructure<T> {
     constructor(number: (param0: T) => number, zeroPadding: number, outputPlusOnExceededWidth: number | null)
     // private number: (param0: T) => number;
     // private outputPlusOnExceededWidth: number | null;

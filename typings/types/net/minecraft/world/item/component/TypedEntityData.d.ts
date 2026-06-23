@@ -12,7 +12,7 @@ import type { Item$TooltipContext } from '../../../../../net/minecraft/world/ite
 import type { TooltipFlag } from '../../../../../net/minecraft/world/item/TooltipFlag.d.ts'
 import type { TooltipProvider } from '../../../../../net/minecraft/world/item/component/TooltipProvider.d.ts'
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
-export class TypedEntityData<IdType extends Object | number | string | boolean> extends Object implements TooltipProvider {
+export class TypedEntityData<IdType extends unknown> extends Object implements TooltipProvider {
     static codec(paramtypeCodec: Codec<Object>): Codec<TypedEntityData<Object>>;
     static of(paramtype: Object | null, paramdata: CompoundTag): TypedEntityData<Object>;
     static streamCodec(paramtypeCodec: StreamCodec<ByteBuf, Object>): StreamCodec<ByteBuf, TypedEntityData<Object>>;

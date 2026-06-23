@@ -13,7 +13,7 @@ import type { RegistryOps$RegistryInfo } from '../../../net/minecraft/resources/
 import type { RegistryOps$RegistryInfoLookup } from '../../../net/minecraft/resources/RegistryOps$RegistryInfoLookup.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
-export abstract class RegistryLoadTask<T extends Object | number | string | boolean> extends Object {
+export abstract class RegistryLoadTask<T extends unknown> extends Object {
     constructor(data: RegistryDataLoader$RegistryData<T>, lifecycle: Lifecycle, loadingErrors: Map<ResourceKey<Object>, Exception>)
     // private concurrentRegistrationGetter: ConcurrentHolderGetter<T>;
     // private data: RegistryDataLoader$RegistryData<T>;

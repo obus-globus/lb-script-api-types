@@ -23,8 +23,8 @@ export class LootContext extends Object {
     addDynamicDrops(location: Identifier, output: (param0: ItemStack) => void): void;
     getLevel(): ServerLevel;
     getLuck(): number;
-    getOptionalParameter<T extends Object | number | string | boolean>(key: ContextKey<T>): T;
-    getParameter<T extends Object | number | string | boolean>(key: ContextKey<T>): T;
+    getOptionalParameter<T extends unknown>(key: ContextKey<T>): T;
+    getParameter<T extends unknown>(key: ContextKey<T>): T;
     getRandom(): RandomSource;
     getResolver(): HolderGetter$Provider;
     hasParameter(key: ContextKey<Object>): boolean;

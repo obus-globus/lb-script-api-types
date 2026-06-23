@@ -2,6 +2,6 @@ import type { CompletableFuture } from '../../../../../../../../java/util/concur
 import type { Executor } from '../../../../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { PreparableReloadListener$SharedState } from '../../../../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
-export interface PreparableModelLoadingPlugin$DataLoader<T extends Object | number | string | boolean> extends Object{
+export interface PreparableModelLoadingPlugin$DataLoader<T extends unknown> extends Object{
     load(arg0: PreparableReloadListener$SharedState, arg1: Executor): CompletableFuture<T>;
 }

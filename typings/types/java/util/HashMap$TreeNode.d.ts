@@ -2,7 +2,7 @@ import type { Class } from '../../java/lang/Class.d.ts'
 import type { HashMap$Node } from '../../java/util/HashMap$Node.d.ts'
 import type { LinkedHashMap$Entry } from '../../java/util/LinkedHashMap$Entry.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export class HashMap$TreeNode<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends LinkedHashMap$Entry<K, V> {
+export class HashMap$TreeNode<K extends unknown, V extends unknown> extends LinkedHashMap$Entry<K, V> {
     constructor(arg0: number, arg1: K, arg2: V, arg3: HashMap$Node<K, V>)
     // private left: HashMap$TreeNode<K, V>;
     // private parent: HashMap$TreeNode<K, V>;

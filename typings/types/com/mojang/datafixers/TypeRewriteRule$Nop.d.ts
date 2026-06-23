@@ -27,6 +27,6 @@ export class TypeRewriteRule$Nop extends Enum<TypeRewriteRule$Nop> implements Ty
     static values(): (Object | null)[];
     private constructor()
     get(): TypeRewriteRule;
-    rewrite<A extends Object | number | string | boolean>(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
+    rewrite<A extends unknown>(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
     name(): "INSTANCE";
 }

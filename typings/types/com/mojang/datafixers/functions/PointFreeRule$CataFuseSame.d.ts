@@ -14,8 +14,8 @@ export class PointFreeRule$CataFuseSame extends Enum<PointFreeRule$CataFuseSame>
     static values(): (Object | null)[];
     private constructor()
     doRewrite(arg0: PointFree<(param0: Object | null) => Object | null>, arg1: PointFree<(param0: Object | null) => Object | null>): Optional<PointFree<(param0: Object | null) => Object | null>>;
-    // private getCompose<B extends Object | number | string | boolean>(arg0: RewriteResult<B, Object>, arg1: RewriteResult<Object, Object>): RewriteResult<Object, Object>;
-    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
+    // private getCompose<B extends unknown>(arg0: RewriteResult<B, Object>, arg1: RewriteResult<Object, Object>): RewriteResult<Object, Object>;
+    rewrite<A extends unknown>(arg0: PointFree<A>): Optional<PointFree<A>>;
     // private rewrite(arg0: PointFree<(param0: Object | null) => Object | null>[]): Optional<PointFree<(param0: Object | null) => Object | null>[]>;
     name(): "INSTANCE";
 }

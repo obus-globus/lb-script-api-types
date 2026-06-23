@@ -12,8 +12,8 @@ export class ClosingFuture$Combiner extends Object {
     // private allMustSucceed: boolean;
     // private closeables: { [key: string]: any };
     // private inputs: ClosingFuture<Object>[];
-    call<V extends Object | number | string | boolean>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => V, executor: Executor): ClosingFuture<V>;
-    callAsync<V extends Object | number | string | boolean>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => ClosingFuture<V>, executor: Executor): ClosingFuture<V>;
+    call<V extends unknown>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => V, executor: Executor): ClosingFuture<V>;
+    callAsync<V extends unknown>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => ClosingFuture<V>, executor: Executor): ClosingFuture<V>;
     // private futureCombiner(): Futures$FutureCombiner<Object>;
     // private inputFutures(): FluentFuture<Object>[];
 }

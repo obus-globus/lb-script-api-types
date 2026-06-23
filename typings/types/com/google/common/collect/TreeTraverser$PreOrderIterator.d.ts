@@ -5,5 +5,5 @@ export class TreeTraverser$PreOrderIterator extends UnmodifiableIterator<T> {
     constructor(null_: TreeTraverser$PreOrderIterator)
     // private stack: Iterator<T>[];
     hasNext(): boolean;
-    next<T extends Object | number | string | boolean>(): T;
+    next<T extends unknown>(): T;
 }

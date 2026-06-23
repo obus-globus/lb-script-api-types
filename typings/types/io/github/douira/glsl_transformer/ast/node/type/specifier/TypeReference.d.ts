@@ -22,5 +22,5 @@ export class TypeReference extends TypeSpecifier {
     getReference(): Identifier;
     getSpecifierType(): TypeSpecifier$SpecifierType;
     setReference(arg0: Identifier): void;
-    typeSpecifierAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    typeSpecifierAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

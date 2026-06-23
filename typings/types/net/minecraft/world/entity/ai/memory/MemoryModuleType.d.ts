@@ -21,7 +21,7 @@ import type { AbstractPiglin } from '../../../../../../net/minecraft/world/entit
 import type { Player } from '../../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { Path } from '../../../../../../net/minecraft/world/level/pathfinder/Path.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
-export class MemoryModuleType<U extends Object | number | string | boolean> extends Object {
+export class MemoryModuleType<U extends unknown> extends Object {
     static ADMIRING_DISABLED: MemoryModuleType<boolean>;
     static ADMIRING_ITEM: MemoryModuleType<boolean>;
     static ANGRY_AT: MemoryModuleType<UUID>;

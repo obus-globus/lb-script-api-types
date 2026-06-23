@@ -14,11 +14,11 @@ export class JsonRpcNotificationService extends Object implements NotificationSe
     constructor(minecraftApi: MinecraftApi, managementServer: ManagementServer)
     // private managementServer: ManagementServer;
     // private minecraftApi: MinecraftApi;
-    // private broadcastNotification<Params extends Object | number | string | boolean>(method: Holder$Reference<OutgoingRpcMethod<Params, Object>>, params: Params): void;
+    // private broadcastNotification<Params extends unknown>(method: Holder$Reference<OutgoingRpcMethod<Params, Object>>, params: Params): void;
     // private broadcastNotification(method: Holder$Reference<OutgoingRpcMethod<void, Object>>): void;
     ipBanned(ban: IpBanListEntry): void;
     ipUnbanned(ip: string): void;
-    onGameRuleChanged<T extends Object | number | string | boolean>(gameRule: GameRule<T>, value: T): void;
+    onGameRuleChanged<T extends unknown>(gameRule: GameRule<T>, value: T): void;
     playerAddedToAllowlist(player: NameAndId): void;
     playerBanned(ban: UserBanListEntry): void;
     playerDeoped(operator: ServerOpListEntry): void;

@@ -9,7 +9,7 @@ import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class ImmutableRangeMap<K extends Comparable<Object>, V extends Object | number | string | boolean> extends Object implements RangeMap<K, V>, Serializable {
+export class ImmutableRangeMap<K extends Comparable<Object>, V extends unknown> extends Object implements RangeMap<K, V>, Serializable {
     static builder(): ImmutableRangeMap$Builder<any, Object>;
     static copyOf(paramrangeMap: RangeMap<any, Object>): ImmutableRangeMap<any, Object>;
     static of(): ImmutableRangeMap<any, Object>;

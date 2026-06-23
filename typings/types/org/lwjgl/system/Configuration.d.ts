@@ -1,6 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Configuration$StateInit } from '../../../org/lwjgl/system/Configuration$StateInit.d.ts'
-export class Configuration<T extends Object | number | string | boolean> extends Object {
+export class Configuration<T extends unknown> extends Object {
     static ARRAY_TLC_SIZE: Configuration<number>;
     static ASSIMP_DRACO_LIBRARY_NAME: Configuration<string>;
     static ASSIMP_LIBRARY_NAME: Configuration<string>;

@@ -7,7 +7,7 @@ import type { RunnableFuture } from '../../../java/util/concurrent/RunnableFutur
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export class FutureTask<V extends Object | number | string | boolean> extends Object implements RunnableFuture<V> {
+export class FutureTask<V extends unknown> extends Object implements RunnableFuture<V> {
     constructor(arg0: () => void, arg1: V)
     constructor(arg0: () => V)
     // private callable: () => V;

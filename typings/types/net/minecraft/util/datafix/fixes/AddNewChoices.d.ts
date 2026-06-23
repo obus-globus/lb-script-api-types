@@ -14,6 +14,6 @@ export class AddNewChoices extends DataFix {
     constructor(outputSchema: Schema, name: string, type: DSL$TypeReference)
     // private name: string;
     // private type: DSL$TypeReference;
-    // private cap<K extends Object | number | string | boolean>(inputType: TaggedChoice$TaggedChoiceType<K>, outputType: TaggedChoice$TaggedChoiceType<Object>): TypeRewriteRule;
+    // private cap<K extends unknown>(inputType: TaggedChoice$TaggedChoiceType<K>, outputType: TaggedChoice$TaggedChoiceType<Object>): TypeRewriteRule;
     makeRule(): TypeRewriteRule;
 }

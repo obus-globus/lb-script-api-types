@@ -15,7 +15,7 @@ import type { SimpleClassTypeSignature } from '../../../../sun/reflect/generics/
 import type { TypeVariableSignature } from '../../../../sun/reflect/generics/tree/TypeVariableSignature.d.ts'
 import type { VoidDescriptor } from '../../../../sun/reflect/generics/tree/VoidDescriptor.d.ts'
 import type { Wildcard } from '../../../../sun/reflect/generics/tree/Wildcard.d.ts'
-export interface TypeTreeVisitor<T extends Object | number | string | boolean> extends Object{
+export interface TypeTreeVisitor<T extends unknown> extends Object{
     getResult(): T;
     visitArrayTypeSignature(arg0: ArrayTypeSignature): void;
     visitBooleanSignature(arg0: BooleanSignature): void;

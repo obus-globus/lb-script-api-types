@@ -14,11 +14,11 @@ export class Json extends Object implements StringFormat {
     /*not mapped: */ get_schemaCache$kotlinx_serialization_json(): DescriptorSchemaCache;
     readonly configuration: JsonConfiguration;
     readonly serializersModule: SerializersModule;
-    decodeFromJsonElement<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, element: JsonElement): T;
-    decodeFromString<T extends Object | number | string | boolean>(string: string): T;
-    decodeFromString<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, string: string): T;
-    encodeToJsonElement<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): JsonElement;
-    encodeToString<T extends Object | number | string | boolean>(value: T): string;
-    encodeToString<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): string;
+    decodeFromJsonElement<T extends unknown>(deserializer: DeserializationStrategy<T>, element: JsonElement): T;
+    decodeFromString<T extends unknown>(string: string): T;
+    decodeFromString<T extends unknown>(deserializer: DeserializationStrategy<T>, string: string): T;
+    encodeToJsonElement<T extends unknown>(serializer: SerializationStrategy<T>, value: T): JsonElement;
+    encodeToString<T extends unknown>(value: T): string;
+    encodeToString<T extends unknown>(serializer: SerializationStrategy<T>, value: T): string;
     parseToJsonElement(string: string): JsonElement;
 }

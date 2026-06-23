@@ -18,7 +18,7 @@ export class LockFreePrefixTree$Node extends AtomicLong {
     // private readChildren(): AtomicReferenceArray<LockFreePrefixTree$Node>;
     setValue(value: number): void;
     toString(): string;
-    // private topDown<C extends Object | number | string | boolean>(currentContext: C, createContext: (param0: C, param1: number) => C, consumeValue: (param0: C, param1: number) => void): void;
+    // private topDown<C extends unknown>(currentContext: C, createContext: (param0: C, param1: number) => C, consumeValue: (param0: C, param1: number) => void): void;
     // private tryResizeHash(allocator: LockFreePrefixTree$Allocator, children0: AtomicReferenceArray<LockFreePrefixTree$Node>): void;
     // private tryResizeLinear(allocator: LockFreePrefixTree$Allocator, childrenArray: AtomicReferenceArray<LockFreePrefixTree$Node>): void;
     value(): number;

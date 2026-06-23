@@ -5,7 +5,7 @@ import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class FilteredKeyMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractMultimap<K, V> implements FilteredMultimap<K, V> {
+export class FilteredKeyMultimap<K extends unknown, V extends unknown> extends AbstractMultimap<K, V> implements FilteredMultimap<K, V> {
     constructor(unfiltered: Multimap<K, V>, keyPredicate: (param0: Object) => boolean)
     // private keyPredicate: (param0: Object) => boolean;
     // private unfiltered: Multimap<K, V>;

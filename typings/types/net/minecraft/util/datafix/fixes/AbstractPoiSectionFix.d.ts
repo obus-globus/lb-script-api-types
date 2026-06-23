@@ -13,9 +13,9 @@ export abstract class AbstractPoiSectionFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, name: string)
     // private name: string;
-    // private cap<T extends Object | number | string | boolean>(input: Dynamic<T>): Dynamic<T>;
+    // private cap<T extends unknown>(input: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
-    processRecords<T extends Object | number | string | boolean>(records: Stream<Dynamic<T>>): Stream<Dynamic<T>>;
+    processRecords<T extends unknown>(records: Stream<Dynamic<T>>): Stream<Dynamic<T>>;
     // private processSection(section: Dynamic<Object>): Dynamic<Object>;
-    // private processSectionRecords<T extends Object | number | string | boolean>(input: Dynamic<T>): Dynamic<T>;
+    // private processSectionRecords<T extends unknown>(input: Dynamic<T>): Dynamic<T>;
 }

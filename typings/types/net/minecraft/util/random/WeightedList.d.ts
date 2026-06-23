@@ -9,7 +9,7 @@ import type { RandomSource } from '../../../../net/minecraft/util/RandomSource.d
 import type { Weighted } from '../../../../net/minecraft/util/random/Weighted.d.ts'
 import type { WeightedList$Builder } from '../../../../net/minecraft/util/random/WeightedList$Builder.d.ts'
 import type { WeightedList$Selector } from '../../../../net/minecraft/util/random/WeightedList$Selector.d.ts'
-export class WeightedList<E extends Object | number | string | boolean> extends Object {
+export class WeightedList<E extends unknown> extends Object {
     static builder(): WeightedList$Builder<Object>;
     static codec(paramelementCodec: Codec<Object>): Codec<WeightedList<Object>>;
     static codec(paramelementCodec: MapCodec<Object>): Codec<WeightedList<Object>>;
@@ -30,6 +30,6 @@ export class WeightedList<E extends Object | number | string | boolean> extends 
     getRandomOrThrow(random: RandomSource): E;
     hashCode(): number;
     isEmpty(): boolean;
-    map<T extends Object | number | string | boolean>(mapper: (param0: E) => T): WeightedList<T>;
+    map<T extends unknown>(mapper: (param0: E) => T): WeightedList<T>;
     unwrap(): Weighted<E>[];
 }

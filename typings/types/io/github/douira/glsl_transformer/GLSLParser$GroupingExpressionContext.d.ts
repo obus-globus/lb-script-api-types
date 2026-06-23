@@ -11,7 +11,7 @@ export class GLSLParser$GroupingExpressionContext extends GLSLParser$FiniteExpre
     value: GLSLParser$ExpressionContext;
     LPAREN(): TerminalNode;
     RPAREN(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     expression(): GLSLParser$ExpressionContext;

@@ -1,6 +1,6 @@
 import type { ProtocolDetectionState } from '../../../../io/netty/handler/codec/ProtocolDetectionState.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ProtocolDetectionResult<T extends Object | number | string | boolean> extends Object {
+export class ProtocolDetectionResult<T extends unknown> extends Object {
     static detected(paramarg0: Object | null): ProtocolDetectionResult<Object>;
     static invalid(): ProtocolDetectionResult<Object>;
     static needsMoreData(): ProtocolDetectionResult<Object>;

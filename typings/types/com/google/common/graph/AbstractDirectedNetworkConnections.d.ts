@@ -1,6 +1,6 @@
 import type { NetworkConnections } from '../../../../com/google/common/graph/NetworkConnections.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class AbstractDirectedNetworkConnections<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends Object implements NetworkConnections<N, E> {
+export abstract class AbstractDirectedNetworkConnections<N extends unknown, E extends unknown> extends Object implements NetworkConnections<N, E> {
     constructor(inEdgeMap: Map<E, N>, outEdgeMap: Map<E, N>, selfLoopCount: number)
     // private inEdgeMap: Map<E, N>;
     // private outEdgeMap: Map<E, N>;

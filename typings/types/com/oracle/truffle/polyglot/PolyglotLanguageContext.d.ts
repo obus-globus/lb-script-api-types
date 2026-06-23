@@ -72,7 +72,7 @@ export class PolyglotLanguageContext extends Object implements PolyglotImpl$VMOb
     isPolyglotBindingsAccessAllowed(): boolean;
     isPolyglotEvalAllowed(info: LanguageInfo): boolean;
     leaveAndDisposePolyglotThread(prev: Object[], polyglotThreadTask: PolyglotThreadTask): void;
-    lookupService<S extends Object | number | string | boolean>(type: Class<S>): S;
+    lookupService<S extends unknown>(type: Class<S>): S;
     notifyDisposed(notifyInstruments: boolean): void;
     parseCached(origin: PolyglotSourceCache$ParseOrigin, accessingLanguage: PolyglotLanguage, source: Source, argumentNames: string[]): CallTarget;
     patch(newConfig: PolyglotContextConfig): boolean;
@@ -84,5 +84,5 @@ export class PolyglotLanguageContext extends Object implements PolyglotImpl$VMOb
     toString(): string;
     // private validLanguageView(result: Object): boolean;
     // private validScopedView(result: Object, location: Node): boolean;
-    waitForInitializationAndThen<T extends Object | number | string | boolean>(pollSafepoint: boolean, action: () => T): T;
+    waitForInitializationAndThen<T extends unknown>(pollSafepoint: boolean, action: () => T): T;
 }

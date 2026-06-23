@@ -3,7 +3,7 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { BinaryOperator } from '../../../../java/util/function/BinaryOperator.d.ts'
 import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class AtomicReferenceArray<E extends Object | number | string | boolean> extends Object implements Serializable {
+export class AtomicReferenceArray<E extends unknown> extends Object implements Serializable {
     constructor(arg0: E[])
     constructor(arg0: number)
     // private array: Object[];

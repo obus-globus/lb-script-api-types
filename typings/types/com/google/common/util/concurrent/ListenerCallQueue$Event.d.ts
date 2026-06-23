@@ -1,4 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ListenerCallQueue$Event<L extends Object | number | string | boolean> extends Object{
+export interface ListenerCallQueue$Event<L extends unknown> extends Object{
     call(listener: L): void;
 }

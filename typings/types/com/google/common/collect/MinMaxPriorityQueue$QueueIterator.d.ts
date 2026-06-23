@@ -11,10 +11,10 @@ export class MinMaxPriorityQueue$QueueIterator extends Object implements Iterato
     // private nextCursor: number;
     // private skipMe: E[];
     // private checkModCount(): void;
-    forEachRemaining<E extends Object | number | string | boolean>(arg0: (param0: E) => void): void;
-    // private foundAndRemovedExactReference<E extends Object | number | string | boolean>(elements: E[], target: E): boolean;
+    forEachRemaining<E extends unknown>(arg0: (param0: E) => void): void;
+    // private foundAndRemovedExactReference<E extends unknown>(elements: E[], target: E): boolean;
     hasNext(): boolean;
-    next<E extends Object | number | string | boolean>(): E;
+    next<E extends unknown>(): E;
     // private nextNotInSkipMe(c: number): void;
     remove(): void;
     // private removeExact(target: Object): boolean;

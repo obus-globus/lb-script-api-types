@@ -15,9 +15,9 @@ export class StaticShape$Builder extends Object {
     // private staticProperties: { [key: string]: StaticProperty };
     // private storageClassName: string;
     build(): StaticShape<DefaultStaticObjectFactory>;
-    // private build<T extends Object | number | string | boolean>(sg: ShapeGenerator<T>, parentShape: StaticShape<T>): StaticShape<T>;
-    build<T extends Object | number | string | boolean>(parentShape: StaticShape<T>): StaticShape<T>;
-    build<T extends Object | number | string | boolean>(superClass: Class<Object>, factoryInterface: Class<T>): StaticShape<T>;
+    // private build<T extends unknown>(sg: ShapeGenerator<T>, parentShape: StaticShape<T>): StaticShape<T>;
+    build<T extends unknown>(parentShape: StaticShape<T>): StaticShape<T>;
+    build<T extends unknown>(superClass: Class<Object>, factoryInterface: Class<T>): StaticShape<T>;
     // private checkStatus(): void;
     // private getOrCreateClassLoader(referenceClass: Class<Object>): GeneratorClassLoaders;
     // private getStorageStrategy(): StaticShape$StorageStrategy;

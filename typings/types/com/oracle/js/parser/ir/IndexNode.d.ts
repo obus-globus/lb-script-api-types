@@ -12,7 +12,7 @@ export class IndexNode extends BaseNode {
     constructor(token: number, finish: number, base: Expression, index: Expression, isSuper: boolean, optional: boolean, optionalChain: boolean)
     readonly index: Expression;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getIndex(): Expression;
     // private setBase(base: Expression): IndexNode;
     setIndex(index: Expression): IndexNode;

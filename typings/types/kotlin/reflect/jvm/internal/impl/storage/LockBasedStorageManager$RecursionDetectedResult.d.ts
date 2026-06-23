@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class LockBasedStorageManager$RecursionDetectedResult<T extends Object | number | string | boolean> extends Object {
+export class LockBasedStorageManager$RecursionDetectedResult<T extends unknown> extends Object {
     static fallThrough(): LockBasedStorageManager$RecursionDetectedResult<Object>;
     static value(paramarg0: Object | null): LockBasedStorageManager$RecursionDetectedResult<Object>;
     private constructor(arg0: T, arg1: boolean)

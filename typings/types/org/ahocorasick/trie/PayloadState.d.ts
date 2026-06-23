@@ -1,6 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Payload } from '../../../org/ahocorasick/trie/Payload.d.ts'
-export class PayloadState<T extends Object | number | string | boolean> extends Object {
+export class PayloadState<T extends unknown> extends Object {
     constructor()
     constructor(arg0: number)
     readonly depth: number;

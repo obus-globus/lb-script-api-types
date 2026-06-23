@@ -105,10 +105,10 @@ export class Mannequin extends Avatar {
     // private hideDescription: boolean;
     addAdditionalSaveData(output: ValueOutput): void;
     aiStep(): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getDescription(): Component;
     // private getImmovable(): boolean;
     getProfile(): ResolvableProfile;

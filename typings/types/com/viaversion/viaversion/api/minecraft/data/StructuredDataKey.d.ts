@@ -65,7 +65,7 @@ import type { Unit } from '../../../../../../com/viaversion/viaversion/util/Unit
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
-export class StructuredDataKey<T extends Object | number | string | boolean> extends Record {
+export class StructuredDataKey<T extends unknown> extends Record {
     static ADDITIONAL_TRADE_COST: StructuredDataKey<number>;
     static ATTACK_RANGE: StructuredDataKey<AttackRange>;
     static ATTRIBUTE_MODIFIERS1_20_5: StructuredDataKey<AttributeModifiers1_20_5>;

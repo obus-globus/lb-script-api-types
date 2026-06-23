@@ -1,7 +1,7 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { BoundedFloatFunction } from '../../../net/minecraft/util/BoundedFloatFunction.d.ts'
 import type { CubicSpline } from '../../../net/minecraft/util/CubicSpline.d.ts'
-export class CubicSpline$Builder<C extends Object | number | string | boolean, I extends BoundedFloatFunction<C>> extends Object {
+export class CubicSpline$Builder<C extends unknown, I extends BoundedFloatFunction<C>> extends Object {
     constructor(coordinate: I)
     constructor(coordinate: I, valueTransformer: BoundedFloatFunction<number>)
     // private coordinate: I;

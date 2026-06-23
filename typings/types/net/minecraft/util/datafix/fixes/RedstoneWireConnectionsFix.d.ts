@@ -12,5 +12,5 @@ export class RedstoneWireConnectionsFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
     makeRule(): TypeRewriteRule;
-    // private updateRedstoneConnections<T extends Object | number | string | boolean>(state: Dynamic<T>): Dynamic<T>;
+    // private updateRedstoneConnections<T extends unknown>(state: Dynamic<T>): Dynamic<T>;
 }

@@ -1,7 +1,7 @@
 import type { ReferenceDoublePair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceDoublePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ReferenceDoubleMutablePair<K extends Object | number | string | boolean> extends Object implements ReferenceDoublePair<K>, Serializable {
+export class ReferenceDoubleMutablePair<K extends unknown> extends Object implements ReferenceDoublePair<K>, Serializable {
     static of(paramarg0: Object | null, paramarg1: number): ReferenceDoubleMutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ReferenceDoublePair<Object>;
     constructor(arg0: K, arg1: number)

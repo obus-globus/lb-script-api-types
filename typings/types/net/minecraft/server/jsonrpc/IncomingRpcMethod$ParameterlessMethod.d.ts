@@ -10,7 +10,7 @@ import type { IncomingRpcMethod$RpcMethodFunction } from '../../../../net/minecr
 import type { MethodInfo } from '../../../../net/minecraft/server/jsonrpc/api/MethodInfo.d.ts'
 import type { MinecraftApi } from '../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftApi.d.ts'
 import type { ClientInfo } from '../../../../net/minecraft/server/jsonrpc/methods/ClientInfo.d.ts'
-export class IncomingRpcMethod$ParameterlessMethod<Params extends Object | number | string | boolean, Result extends Object | number | string | boolean> extends Record implements IncomingRpcMethod<Params, Result> {
+export class IncomingRpcMethod$ParameterlessMethod<Params extends unknown, Result extends unknown> extends Record implements IncomingRpcMethod<Params, Result> {
     static method(paramfunction: (param0: MinecraftApi, param1: Object | null, param2: ClientInfo) => Object | null): IncomingRpcMethod$IncomingRpcMethodBuilder<Object, Object>;
     static method(paramsupplier: (param0: MinecraftApi) => Object | null): IncomingRpcMethod$IncomingRpcMethodBuilder<void, Object>;
     static method(paramfunction: (param0: MinecraftApi, param1: ClientInfo) => Object | null): IncomingRpcMethod$IncomingRpcMethodBuilder<void, Object>;

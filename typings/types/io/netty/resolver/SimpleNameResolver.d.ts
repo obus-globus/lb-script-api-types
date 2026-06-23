@@ -2,7 +2,7 @@ import type { NameResolver } from '../../../io/netty/resolver/NameResolver.d.ts'
 import type { Future } from '../../../io/netty/util/concurrent/Future.d.ts'
 import type { Promise } from '../../../io/netty/util/concurrent/Promise.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class SimpleNameResolver<T extends Object | number | string | boolean> extends Object implements NameResolver<T> {
+export abstract class SimpleNameResolver<T extends unknown> extends Object implements NameResolver<T> {
     constructor(arg0: (Object | null)[])
     // private executor: (Object | null)[];
     close(): void;

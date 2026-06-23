@@ -1,7 +1,7 @@
 import type { BigListIterator } from '../../../../../it/unimi/dsi/fastutil/BigListIterator.d.ts'
 import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBidirectionalIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ObjectBigListIterator<K extends Object | number | string | boolean> extends BigListIterator<K>, ObjectBidirectionalIterator<K>, Object{
+export interface ObjectBigListIterator<K extends unknown> extends BigListIterator<K>, ObjectBidirectionalIterator<K>, Object{
     add(arg0: K): void;
     back(arg0: number): number;
     set(arg0: K): void;

@@ -6,7 +6,7 @@ import type { Diff } from '../../../../../org/apache/commons/lang3/builder/Diff.
 import type { DiffBuilder } from '../../../../../org/apache/commons/lang3/builder/DiffBuilder.d.ts'
 import type { ReflectionDiffBuilder$Builder } from '../../../../../org/apache/commons/lang3/builder/ReflectionDiffBuilder$Builder.d.ts'
 import type { ToStringStyle } from '../../../../../org/apache/commons/lang3/builder/ToStringStyle.d.ts'
-export class ReflectionDiffBuilder<T extends Object | number | string | boolean> extends Object implements Builder<Diff<Object>[]> {
+export class ReflectionDiffBuilder<T extends unknown> extends Object implements Builder<Diff<Object>[]> {
     static builder(): ReflectionDiffBuilder$Builder<Object>;
     constructor(arg0: T, arg1: T, arg2: ToStringStyle)
     private constructor(arg0: DiffBuilder<T>, arg1: string[])

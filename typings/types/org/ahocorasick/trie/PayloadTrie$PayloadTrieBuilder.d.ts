@@ -2,7 +2,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Payload } from '../../../org/ahocorasick/trie/Payload.d.ts'
 import type { PayloadTrie } from '../../../org/ahocorasick/trie/PayloadTrie.d.ts'
 import type { TrieConfig } from '../../../org/ahocorasick/trie/TrieConfig.d.ts'
-export class PayloadTrie$PayloadTrieBuilder<T extends Object | number | string | boolean> extends Object {
+export class PayloadTrie$PayloadTrieBuilder<T extends unknown> extends Object {
     private constructor()
     // private trie: PayloadTrie<T>;
     // private trieConfig: TrieConfig;

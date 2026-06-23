@@ -6,7 +6,7 @@ import type { PalettedContainer } from '../../../../../net/minecraft/world/level
 import type { PalettedContainer$CountConsumer } from '../../../../../net/minecraft/world/level/chunk/PalettedContainer$CountConsumer.d.ts'
 import type { PalettedContainerRO$PackedData } from '../../../../../net/minecraft/world/level/chunk/PalettedContainerRO$PackedData.d.ts'
 import type { Strategy } from '../../../../../net/minecraft/world/level/chunk/Strategy.d.ts'
-export interface PalettedContainerRO<T extends Object | number | string | boolean> extends Object {
+export interface PalettedContainerRO<T extends unknown> extends Object {
     bitsPerEntry(): number;
     copy(): PalettedContainer<T>;
     count(output: (param0: T, param1: number) => void): void;

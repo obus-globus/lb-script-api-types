@@ -8,7 +8,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Optic$CompositionOptic<Proof extends K1, S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends Record implements Optic<Proof, S, T, A, B> {
+export class Optic$CompositionOptic<Proof extends K1, S extends unknown, T extends unknown, A extends unknown, B extends unknown> extends Record implements Optic<Proof, S, T, A, B> {
     constructor(optics: Optic<Proof, Object, Object, Object, Object>[])
     // private optics: Optic<Proof, Object, Object, Object, Object>[];
     equals(arg0: Object | null): boolean;

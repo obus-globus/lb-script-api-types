@@ -5,5 +5,5 @@ export class GameRuleMap$Builder extends Object {
     constructor()
     // private map: Map<GameRule<Object>, Object>;
     build(): GameRuleMap;
-    set<T extends Object | number | string | boolean>(gameRule: GameRule<T>, value: T): GameRuleMap$Builder;
+    set<T extends unknown>(gameRule: GameRule<T>, value: T): GameRuleMap$Builder;
 }

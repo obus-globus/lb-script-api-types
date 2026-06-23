@@ -1,5 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class SuffixArray<T extends Object | number | string | boolean> extends Object {
+export class SuffixArray<T extends unknown> extends Object {
     constructor()
     // private chars: (Object | null)[];
     // private list: T[];

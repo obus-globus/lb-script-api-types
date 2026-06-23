@@ -3,7 +3,7 @@ import type { ReadOnlyStringMap } from '../../../../../org/apache/logging/log4j/
 export interface IndexedReadOnlyStringMap extends Object, ReadOnlyStringMap{
     containsKey(key: string): boolean;
     getKeyAt(index: number): string;
-    getValueAt<V extends Object | number | string | boolean>(index: number): V;
+    getValueAt<V extends unknown>(index: number): V;
     indexOfKey(key: string): number;
     isEmpty(): boolean;
     size(): number;

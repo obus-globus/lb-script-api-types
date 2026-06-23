@@ -223,7 +223,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     fabric_shouldDeferSync(): boolean;
     fabric_shouldTryToSync(): boolean;
     fabric_syncChange(arg0: AttachmentType<Object>, arg1: AttachmentChange): void;
-    fabric_updateSyncTarget<T extends Object | number | string | boolean>(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
+    fabric_updateSyncTarget<T extends unknown>(arg0: AttachmentTargetInfo<T>, arg1: AttachmentTargetInfo<T>): void;
     fabric_writeAttachmentsToNbt(arg0: ValueOutput): void;
     fillReportDetails(report: CrashReport): CrashReportCategory;
     findClosestBiome3d(biomeTest: (param0: Holder<Biome>) => boolean, origin: BlockPos, maxSearchRadius: number, sampleResolutionHorizontal: number, sampleResolutionVertical: number): Pair<BlockPos, Holder<Biome>>;

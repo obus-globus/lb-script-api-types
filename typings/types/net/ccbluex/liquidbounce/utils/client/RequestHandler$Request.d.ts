@@ -11,7 +11,7 @@ import type { EventListener } from '../../../../../net/ccbluex/liquidbounce/even
  *
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RequestHandler.kt:57}
  */
-export class RequestHandler$Request<T extends Object | number | string | boolean> extends Object {
+export class RequestHandler$Request<T extends unknown> extends Object {
     constructor(expiresIn: number, priority: number, provider: EventListener, value: T)
     expiresIn: number;
     readonly priority: number;

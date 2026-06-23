@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { Pair } from '../../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
-export class ImmutablePair<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Pair<L, R> {
+export class ImmutablePair<L extends unknown, R extends unknown> extends Pair<L, R> {
     static EMPTY_ARRAY: Object | null;
     static EMPTY_ARRAY: Object | null;
     static emptyArray(): Object | null;

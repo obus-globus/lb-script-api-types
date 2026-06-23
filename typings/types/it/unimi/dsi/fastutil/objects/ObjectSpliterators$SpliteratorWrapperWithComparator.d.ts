@@ -3,7 +3,7 @@ import type { ObjectSpliterators$SpliteratorWrapper } from '../../../../../it/un
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Spliterator } from '../../../../../java/util/Spliterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectSpliterators$SpliteratorWrapperWithComparator<K extends Object | number | string | boolean> extends ObjectSpliterators$SpliteratorWrapper<K> {
+export class ObjectSpliterators$SpliteratorWrapperWithComparator<K extends unknown> extends ObjectSpliterators$SpliteratorWrapper<K> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

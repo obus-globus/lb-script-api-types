@@ -15,17 +15,17 @@ export class FabricDynamicRegistryProvider$Entries extends Object {
     // private modId: string;
     // private queuedEntries: Map<Identifier, FabricDynamicRegistryProvider$RegistryEntries<Object>>;
     // private registries: HolderLookup$Provider;
-    add<T extends Object | number | string | boolean>(arg0: Holder$Reference<T>): void;
-    add<T extends Object | number | string | boolean>(arg0: Holder$Reference<T>, arg1: ResourceCondition[]): void;
-    add<T extends Object | number | string | boolean>(arg0: HolderLookup$RegistryLookup<T>, arg1: ResourceKey<T>): Holder<T>;
-    add<T extends Object | number | string | boolean>(arg0: HolderLookup$RegistryLookup<T>, arg1: ResourceKey<T>, arg2: ResourceCondition[]): Holder<T>;
-    add<T extends Object | number | string | boolean>(arg0: ResourceKey<T>, arg1: T): Holder<T>;
-    add<T extends Object | number | string | boolean>(arg0: ResourceKey<T>, arg1: T, arg2: ResourceCondition[]): Holder<T>;
-    addAll<T extends Object | number | string | boolean>(arg0: HolderLookup$RegistryLookup<T>): Holder<T>[];
+    add<T extends unknown>(arg0: Holder$Reference<T>): void;
+    add<T extends unknown>(arg0: Holder$Reference<T>, arg1: ResourceCondition[]): void;
+    add<T extends unknown>(arg0: HolderLookup$RegistryLookup<T>, arg1: ResourceKey<T>): Holder<T>;
+    add<T extends unknown>(arg0: HolderLookup$RegistryLookup<T>, arg1: ResourceKey<T>, arg2: ResourceCondition[]): Holder<T>;
+    add<T extends unknown>(arg0: ResourceKey<T>, arg1: T): Holder<T>;
+    add<T extends unknown>(arg0: ResourceKey<T>, arg1: T, arg2: ResourceCondition[]): Holder<T>;
+    addAll<T extends unknown>(arg0: HolderLookup$RegistryLookup<T>): Holder<T>[];
     configuredCarvers(): HolderGetter<ConfiguredWorldCarver<any>>;
-    getLookup<T extends Object | number | string | boolean>(arg0: ResourceKey<T[]>): HolderGetter<T>;
+    getLookup<T extends unknown>(arg0: ResourceKey<T[]>): HolderGetter<T>;
     getLookups(): HolderLookup$Provider;
-    getQueuedEntries<T extends Object | number | string | boolean>(arg0: ResourceKey<T>): FabricDynamicRegistryProvider$RegistryEntries<T>;
+    getQueuedEntries<T extends unknown>(arg0: ResourceKey<T>): FabricDynamicRegistryProvider$RegistryEntries<T>;
     placedFeatures(): HolderGetter<PlacedFeature>;
-    ref<T extends Object | number | string | boolean>(arg0: ResourceKey<T>): Holder<T>;
+    ref<T extends unknown>(arg0: ResourceKey<T>): Holder<T>;
 }

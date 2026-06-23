@@ -7,7 +7,7 @@ import type { ContinuationImpl } from '../../../../kotlin/coroutines/jvm/interna
 import type { CoroutineStackFrame } from '../../../../kotlin/coroutines/jvm/internal/CoroutineStackFrame.d.ts'
 import type { FlowCollector } from '../../../../kotlinx/coroutines/flow/FlowCollector.d.ts'
 import type { DownstreamExceptionContext } from '../../../../kotlinx/coroutines/flow/internal/DownstreamExceptionContext.d.ts'
-export class SafeCollector<T extends Object | number | string | boolean> extends ContinuationImpl implements CoroutineStackFrame, FlowCollector<T> {
+export class SafeCollector<T extends unknown> extends ContinuationImpl implements CoroutineStackFrame, FlowCollector<T> {
     constructor(collector: FlowCollector<T>, collectContext: CoroutineContext)
     readonly callerFrame: CoroutineStackFrame | null;
     collectContext: CoroutineContext;

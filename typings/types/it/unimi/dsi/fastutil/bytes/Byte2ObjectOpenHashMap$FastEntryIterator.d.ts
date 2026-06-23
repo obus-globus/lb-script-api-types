@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2ObjectOpenHashMap$FastEntryIterator extends Byte2ObjectOpenHashMap$MapIterator<Object> implements ObjectIterator<Byte2ObjectMap$Entry<V>> {
     private constructor(null_: Byte2ObjectOpenHashMap$FastEntryIterator)
     // private entry: Byte2ObjectOpenHashMap$MapEntry;
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Byte2ObjectMap$Entry<V>) => void, arg1: number): void;
-    next<V extends Object | number | string | boolean>(): Byte2ObjectOpenHashMap$MapEntry;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Byte2ObjectMap$Entry<V>) => void, arg1: number): void;
+    next<V extends unknown>(): Byte2ObjectOpenHashMap$MapEntry;
     skip(arg0: number): number;
 }

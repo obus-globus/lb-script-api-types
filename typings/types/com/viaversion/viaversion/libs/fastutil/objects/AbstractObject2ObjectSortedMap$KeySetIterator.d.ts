@@ -1,7 +1,7 @@
 import type { Object2ObjectMap$Entry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Object2ObjectMap$Entry.d.ts'
 import type { ObjectBidirectionalIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ObjectBidirectionalIterator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class AbstractObject2ObjectSortedMap$KeySetIterator<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements ObjectBidirectionalIterator<K> {
+export class AbstractObject2ObjectSortedMap$KeySetIterator<K extends unknown, V extends unknown> extends Object implements ObjectBidirectionalIterator<K> {
     constructor(arg0: ObjectBidirectionalIterator<Object2ObjectMap$Entry<K, V>>)
     // private i: ObjectBidirectionalIterator<Object2ObjectMap$Entry<K, V>>;
     back(arg0: number): number;

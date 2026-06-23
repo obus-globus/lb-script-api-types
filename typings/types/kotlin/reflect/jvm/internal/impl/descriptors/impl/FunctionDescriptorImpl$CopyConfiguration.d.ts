@@ -40,7 +40,7 @@ export class FunctionDescriptorImpl$CopyConfiguration extends Object implements 
     // private substitution: TypeSubstitution;
     // private userDataMap: Map<CallableDescriptor$UserDataKey<Object>, Object>;
     build(): FunctionDescriptor;
-    putUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>, arg1: V): FunctionDescriptor$CopyBuilder<FunctionDescriptor>;
+    putUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>, arg1: V): FunctionDescriptor$CopyBuilder<FunctionDescriptor>;
     setAdditionalAnnotations(arg0: AnnotationDescriptor[]): FunctionDescriptorImpl$CopyConfiguration;
     setCopyOverrides(arg0: boolean): FunctionDescriptorImpl$CopyConfiguration;
     setDispatchReceiverParameter(arg0: ReceiverParameterDescriptor): FunctionDescriptorImpl$CopyConfiguration;

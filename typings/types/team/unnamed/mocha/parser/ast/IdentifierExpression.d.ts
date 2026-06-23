@@ -8,5 +8,5 @@ export class IdentifierExpression extends Object implements Expression {
     hashCode(): number;
     name(): string;
     toString(): string;
-    visit<R extends Object | number | string | boolean>(arg0: ExpressionVisitor<R>): R;
+    visit<R extends unknown>(arg0: ExpressionVisitor<R>): R;
 }

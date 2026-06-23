@@ -11,7 +11,7 @@ export class ParameterNode extends Expression {
     readonly index: number;
     // private rest: boolean;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getIndex(): number;
     isRestParameter(): boolean;
     toString(): string;

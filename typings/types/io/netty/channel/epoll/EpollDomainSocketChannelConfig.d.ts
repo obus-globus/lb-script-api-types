@@ -14,7 +14,7 @@ export class EpollDomainSocketChannelConfig extends EpollChannelConfig implement
     constructor(arg0: AbstractEpollChannel)
     readonly allowHalfClosure: boolean;
     // private mode: DomainSocketReadMode;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReadMode(): DomainSocketReadMode;
@@ -29,7 +29,7 @@ export class EpollDomainSocketChannelConfig extends EpollChannelConfig implement
     setEpollMode(arg0: EpollMode): EpollDomainSocketChannelConfig;
     setMaxMessagesPerRead(arg0: number): EpollDomainSocketChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): EpollDomainSocketChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setReadMode(arg0: DomainSocketReadMode): EpollDomainSocketChannelConfig;
     setReceiveBufferSize(arg0: number): EpollDomainSocketChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): EpollDomainSocketChannelConfig;

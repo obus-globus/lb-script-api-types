@@ -27,7 +27,7 @@ export class FieldStream extends Object {
     forEach(arg0: (param0: FieldWrapper) => void): FieldStream;
     iterator(): Iterator<FieldWrapper>;
     jstream(): Stream<FieldWrapper>;
-    map<T extends Object | number | string | boolean>(arg0: (param0: FieldWrapper) => T): Stream<T>;
+    map<T extends unknown>(arg0: (param0: FieldWrapper) => T): Stream<T>;
     opt(arg0: number): Optional<FieldWrapper>;
     opt(arg0: string): Optional<FieldWrapper>;
     parent(): RStream;

@@ -22,7 +22,7 @@ export class MoreFiles$PathByteSource extends ByteSource {
     asCharSource(charset: Charset): CharSource;
     openStream(): InputStream;
     read(): number[];
-    read<T extends Object | number | string | boolean>(processor: ByteProcessor<T>): T;
+    read<T extends unknown>(processor: ByteProcessor<T>): T;
     // private readAttributes(): BasicFileAttributes;
     size(): number;
     sizeIfKnown(): Optional<number>;

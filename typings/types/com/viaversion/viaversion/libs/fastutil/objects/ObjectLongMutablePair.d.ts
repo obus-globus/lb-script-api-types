@@ -2,7 +2,7 @@ import type { ObjectLongPair } from '../../../../../../com/viaversion/viaversion
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ObjectLongMutablePair<K extends Object | number | string | boolean> extends Object implements ObjectLongPair<K>, Serializable {
+export class ObjectLongMutablePair<K extends unknown> extends Object implements ObjectLongPair<K>, Serializable {
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: Object | null, paramarg1: number): ObjectLongMutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ObjectLongPair<Object>;

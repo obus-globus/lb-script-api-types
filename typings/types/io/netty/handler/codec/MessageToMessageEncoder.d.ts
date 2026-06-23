@@ -4,7 +4,7 @@ import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise
 import type { TypeParameterMatcher } from '../../../../io/netty/util/internal/TypeParameterMatcher.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class MessageToMessageEncoder<I extends Object | number | string | boolean> extends ChannelOutboundHandlerAdapter {
+export abstract class MessageToMessageEncoder<I extends unknown> extends ChannelOutboundHandlerAdapter {
     constructor()
     constructor(arg0: Class<I>)
     // private matcher: TypeParameterMatcher;

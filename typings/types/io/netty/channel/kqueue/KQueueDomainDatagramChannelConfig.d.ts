@@ -11,7 +11,7 @@ export class KQueueDomainDatagramChannelConfig extends KQueueChannelConfig imple
     constructor(arg0: KQueueDomainDatagramChannel)
     // private activeOnOpen: boolean;
     getActiveOnOpen(): boolean;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getSendBufferSize(): number;
@@ -23,7 +23,7 @@ export class KQueueDomainDatagramChannelConfig extends KQueueChannelConfig imple
     setMaxMessagesPerRead(arg0: number): KQueueDomainDatagramChannelConfig;
     setMaxMessagesPerWrite(arg0: number): KQueueDomainDatagramChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): KQueueDomainDatagramChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setRcvAllocTransportProvidesGuess(arg0: boolean): KQueueDomainDatagramChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): KQueueDomainDatagramChannelConfig;
     setSendBufferSize(arg0: number): KQueueDomainDatagramChannelConfig;

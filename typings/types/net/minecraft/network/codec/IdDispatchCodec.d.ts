@@ -20,7 +20,7 @@ import type { StreamCodec$CodecOperation } from '../../../../net/minecraft/netwo
 import type { StreamDecoder } from '../../../../net/minecraft/network/codec/StreamDecoder.d.ts'
 import type { StreamEncoder } from '../../../../net/minecraft/network/codec/StreamEncoder.d.ts'
 import type { StreamMemberEncoder } from '../../../../net/minecraft/network/codec/StreamMemberEncoder.d.ts'
-export class IdDispatchCodec<B extends ByteBuf, V extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Object implements StreamCodec<B, V> {
+export class IdDispatchCodec<B extends ByteBuf, V extends unknown, T extends unknown> extends Object implements StreamCodec<B, V> {
     static builder(paramtypeGetter: (param0: Object | null) => Object | null): IdDispatchCodec$Builder<ByteBuf, Object, Object>;
     static composite(paramcodec1: StreamCodec<Object, Object>, paramgetter1: (param0: Object | null) => Object | null, paramcodec2: StreamCodec<Object, Object>, paramgetter2: (param0: Object | null) => Object | null, paramcodec3: StreamCodec<Object, Object>, paramgetter3: (param0: Object | null) => Object | null, paramcodec4: StreamCodec<Object, Object>, paramgetter4: (param0: Object | null) => Object | null, paramcodec5: StreamCodec<Object, Object>, paramgetter5: (param0: Object | null) => Object | null, paramcodec6: StreamCodec<Object, Object>, paramgetter6: (param0: Object | null) => Object | null, paramcodec7: StreamCodec<Object, Object>, paramgetter7: (param0: Object | null) => Object | null, paramcodec8: StreamCodec<Object, Object>, paramgetter8: (param0: Object | null) => Object | null, paramcodec9: StreamCodec<Object, Object>, paramgetter9: (param0: Object | null) => Object | null, paramcodec10: StreamCodec<Object, Object>, paramgetter10: (param0: Object | null) => Object | null, paramcodec11: StreamCodec<Object, Object>, paramgetter11: (param0: Object | null) => Object | null, paramcodec12: StreamCodec<Object, Object>, paramgetter12: (param0: Object | null) => Object | null, paramconstructor: Function12<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>): StreamCodec<Object, Object>;
     static composite(paramcodec1: StreamCodec<Object, Object>, paramgetter1: (param0: Object | null) => Object | null, paramcodec2: StreamCodec<Object, Object>, paramgetter2: (param0: Object | null) => Object | null, paramcodec3: StreamCodec<Object, Object>, paramgetter3: (param0: Object | null) => Object | null, paramcodec4: StreamCodec<Object, Object>, paramgetter4: (param0: Object | null) => Object | null, paramcodec5: StreamCodec<Object, Object>, paramgetter5: (param0: Object | null) => Object | null, paramcodec6: StreamCodec<Object, Object>, paramgetter6: (param0: Object | null) => Object | null, paramcodec7: StreamCodec<Object, Object>, paramgetter7: (param0: Object | null) => Object | null, paramcodec8: StreamCodec<Object, Object>, paramgetter8: (param0: Object | null) => Object | null, paramcodec9: StreamCodec<Object, Object>, paramgetter9: (param0: Object | null) => Object | null, paramcodec10: StreamCodec<Object, Object>, paramgetter10: (param0: Object | null) => Object | null, paramcodec11: StreamCodec<Object, Object>, paramgetter11: (param0: Object | null) => Object | null, paramconstructor: Function11<Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object>): StreamCodec<Object, Object>;
@@ -42,11 +42,11 @@ export class IdDispatchCodec<B extends ByteBuf, V extends Object | number | stri
     // private byId: IdDispatchCodec$Entry<B, V, T>[];
     // private toId: { [key: string]: any };
     // private typeGetter: (param0: V) => T;
-    apply<O extends Object | number | string | boolean>(operation: (param0: StreamCodec<B, V>) => StreamCodec<B, O>): StreamCodec<B, O>;
+    apply<O extends unknown>(operation: (param0: StreamCodec<B, V>) => StreamCodec<B, O>): StreamCodec<B, O>;
     cast<S extends B>(): StreamCodec<S, V>;
     decode(input: B): V;
-    dispatch<U extends Object | number | string | boolean>(type: (param0: U) => V, codec: (param0: V) => StreamCodec<B, U>): StreamCodec<B, U>;
+    dispatch<U extends unknown>(type: (param0: U) => V, codec: (param0: V) => StreamCodec<B, U>): StreamCodec<B, U>;
     encode(output: B, value: V): void;
-    map<O extends Object | number | string | boolean>(to: (param0: V) => O, from: (param0: O) => V): StreamCodec<B, O>;
+    map<O extends unknown>(to: (param0: V) => O, from: (param0: O) => V): StreamCodec<B, O>;
     mapStream<O extends ByteBuf>(operation: (param0: O) => B): StreamCodec<O, V>;
 }

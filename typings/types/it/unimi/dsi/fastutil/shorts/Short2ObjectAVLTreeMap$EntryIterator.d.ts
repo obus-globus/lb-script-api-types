@@ -5,9 +5,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ObjectAVLTreeMap$EntryIterator extends Short2ObjectAVLTreeMap$TreeIterator implements ObjectListIterator<Short2ObjectMap$Entry<V>> {
     constructor(null_: Short2ObjectAVLTreeMap$EntryIterator)
     constructor(null_: Short2ObjectAVLTreeMap$EntryIterator, arg1: number)
-    add<V extends Object | number | string | boolean>(arg0: Short2ObjectMap$Entry<V>): void;
-    next<V extends Object | number | string | boolean>(): Short2ObjectMap$Entry<V>;
-    previous<V extends Object | number | string | boolean>(): Short2ObjectMap$Entry<V>;
+    add<V extends unknown>(arg0: Short2ObjectMap$Entry<V>): void;
+    next<V extends unknown>(): Short2ObjectMap$Entry<V>;
+    previous<V extends unknown>(): Short2ObjectMap$Entry<V>;
     remove(): void;
-    set<V extends Object | number | string | boolean>(arg0: Short2ObjectMap$Entry<V>): void;
+    set<V extends unknown>(arg0: Short2ObjectMap$Entry<V>): void;
 }

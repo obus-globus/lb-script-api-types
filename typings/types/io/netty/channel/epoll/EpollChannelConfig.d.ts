@@ -16,7 +16,7 @@ export class EpollChannelConfig extends DefaultChannelConfig {
     // private checkChannelNotRegistered(): void;
     getEpollMode(): EpollMode;
     getMaxBytesPerGatheringWrite(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     setAllocator(arg0: ByteBufAllocator): EpollChannelConfig;
@@ -26,7 +26,7 @@ export class EpollChannelConfig extends DefaultChannelConfig {
     setMaxBytesPerGatheringWrite(arg0: number): void;
     setMaxMessagesPerRead(arg0: number): EpollChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): EpollChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): EpollChannelConfig;
     setWriteBufferHighWaterMark(arg0: number): EpollChannelConfig;
     setWriteBufferLowWaterMark(arg0: number): EpollChannelConfig;

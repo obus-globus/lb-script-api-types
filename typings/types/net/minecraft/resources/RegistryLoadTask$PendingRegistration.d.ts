@@ -13,7 +13,7 @@ import type { RegistryOps } from '../../../net/minecraft/resources/RegistryOps.d
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Resource } from '../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceProvider } from '../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
-export class RegistryLoadTask$PendingRegistration<T extends Object | number | string | boolean> extends Record {
+export class RegistryLoadTask$PendingRegistration<T extends unknown> extends Record {
     static findAndLoadFromResource(paramelementDecoder: Decoder<Object>, paramops: RegistryOps<JsonElement>, paramelementKey: ResourceKey<Object>, paramconverter: FileToIdConverter, paramresourceProvider: (param0: Identifier) => Optional<Resource>): Either<Object, Exception>;
     static loadFromNetwork(paramelementDecoder: Decoder<Object>, paramops: RegistryOps<Tag>, paramelementKey: ResourceKey<Object>, paramcontents: Tag): Either<Object, Exception>;
     static loadFromResource(paramelementDecoder: Decoder<Object>, paramops: RegistryOps<JsonElement>, paramelementKey: ResourceKey<Object>, paramthunk: Resource): Either<Object, Exception>;

@@ -1,4 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface ResourceHandle<T extends Object | number | string | boolean> extends Object{
+export interface ResourceHandle<T extends unknown> extends Object{
     get(): T;
 }

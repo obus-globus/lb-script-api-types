@@ -2,7 +2,7 @@ import type { AbstractMapBasedMultimap } from '../../../../com/google/common/col
 import type { SetMultimap } from '../../../../com/google/common/collect/SetMultimap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export abstract class AbstractSetMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractMapBasedMultimap<K, V> implements SetMultimap<K, V> {
+export abstract class AbstractSetMultimap<K extends unknown, V extends unknown> extends AbstractMapBasedMultimap<K, V> implements SetMultimap<K, V> {
     constructor(map: Map<K, V[]>)
     asMap(): Map<K, V[]>;
     createCollection(): V[];
@@ -14,6 +14,6 @@ export abstract class AbstractSetMultimap<K extends Object | number | string | b
     put(key: K, value: V): boolean;
     removeAll(key: Object): V[];
     replaceValues(key: K, values: V[]): V[];
-    unmodifiableCollectionSubclass<E extends Object | number | string | boolean>(collection: E[]): E[];
+    unmodifiableCollectionSubclass<E extends unknown>(collection: E[]): E[];
     wrapCollection(key: K, collection: V[]): V[];
 }

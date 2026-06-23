@@ -11,6 +11,6 @@ export class LongObjectHashMap$MapEntry extends Object implements Map$Entry<numb
     // private entryIndex: number;
     readonly key: number;
     readonly value: V;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    setValue<V extends unknown>(arg0: V): V;
     // private verifyExists(): void;
 }

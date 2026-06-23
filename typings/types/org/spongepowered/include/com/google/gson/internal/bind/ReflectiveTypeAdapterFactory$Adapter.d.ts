@@ -4,7 +4,7 @@ import type { ObjectConstructor } from '../../../../../../../../org/spongepowere
 import type { ReflectiveTypeAdapterFactory$BoundField } from '../../../../../../../../org/spongepowered/include/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField.d.ts'
 import type { JsonReader } from '../../../../../../../../org/spongepowered/include/com/google/gson/stream/JsonReader.d.ts'
 import type { JsonWriter } from '../../../../../../../../org/spongepowered/include/com/google/gson/stream/JsonWriter.d.ts'
-export class ReflectiveTypeAdapterFactory$Adapter<T extends Object | number | string | boolean> extends TypeAdapter<T> {
+export class ReflectiveTypeAdapterFactory$Adapter<T extends unknown> extends TypeAdapter<T> {
     private constructor(arg0: ObjectConstructor<T>, arg1: { [key: string]: ReflectiveTypeAdapterFactory$BoundField })
     // private boundFields: { [key: string]: ReflectiveTypeAdapterFactory$BoundField };
     // private constructor: ObjectConstructor<T>;

@@ -5,6 +5,6 @@ export class UploadDurationEstimator extends ExpDecayLinear2DEstimator<void> {
     static MIN_BATCH_SIZE: number;
     static NEW_DATA_RATIO: number;
     constructor()
-    createMap<T extends Object | number | string | boolean>(): Map<void, T>;
+    createMap<T extends unknown>(): Map<void, T>;
     estimateUploadDuration(arg0: number): number;
 }

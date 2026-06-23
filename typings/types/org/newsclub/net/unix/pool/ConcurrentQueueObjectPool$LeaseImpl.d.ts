@@ -5,5 +5,5 @@ export class ConcurrentQueueObjectPool$LeaseImpl extends Object implements Objec
     // private obj: O;
     close(): void;
     discard(): void;
-    get<O extends Object | number | string | boolean>(): O;
+    get<O extends unknown>(): O;
 }

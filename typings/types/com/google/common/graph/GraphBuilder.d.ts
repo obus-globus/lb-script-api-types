@@ -4,7 +4,7 @@ import type { Graph } from '../../../../com/google/common/graph/Graph.d.ts'
 import type { ImmutableGraph$Builder } from '../../../../com/google/common/graph/ImmutableGraph$Builder.d.ts'
 import type { MutableGraph } from '../../../../com/google/common/graph/MutableGraph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class GraphBuilder<N extends Object | number | string | boolean> extends AbstractGraphBuilder<N> {
+export class GraphBuilder<N extends unknown> extends AbstractGraphBuilder<N> {
     static directed(): GraphBuilder<Object>;
     static from(paramgraph: Graph<Object>): GraphBuilder<Object>;
     static undirected(): GraphBuilder<Object>;

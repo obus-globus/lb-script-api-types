@@ -8,10 +8,10 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class JsonOps$ArrayBuilder extends Object implements ListBuilder<JsonElement> {
     private constructor()
     // private builder: DataResult<JsonElement[]>;
-    add<E extends Object | number | string | boolean>(arg0: E, arg1: Encoder<E>): ListBuilder<JsonElement>;
+    add<E extends unknown>(arg0: E, arg1: Encoder<E>): ListBuilder<JsonElement>;
     add(arg0: JsonElement): ListBuilder<JsonElement>;
     add(arg0: DataResult<JsonElement>): ListBuilder<JsonElement>;
-    addAll<E extends Object | number | string | boolean>(arg0: E[], arg1: Encoder<E>): ListBuilder<JsonElement>;
+    addAll<E extends unknown>(arg0: E[], arg1: Encoder<E>): ListBuilder<JsonElement>;
     build(arg0: JsonElement): DataResult<JsonElement>;
     build(arg0: DataResult<JsonElement>): DataResult<JsonElement>;
     mapError(arg0: (param0: string) => Object | null): ListBuilder<JsonElement>;

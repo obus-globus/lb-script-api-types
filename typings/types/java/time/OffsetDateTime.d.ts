@@ -90,7 +90,7 @@ export class OffsetDateTime extends Object implements Serializable, Temporal, Te
     plusSeconds(arg0: number): OffsetDateTime;
     plusWeeks(arg0: number): OffsetDateTime;
     plusYears(arg0: number): OffsetDateTime;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toEpochSecond(): number;

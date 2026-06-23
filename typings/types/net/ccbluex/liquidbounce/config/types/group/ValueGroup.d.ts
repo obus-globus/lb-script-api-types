@@ -110,7 +110,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     intRange(name: string, default_: { start: number; endInclusive: number; step: number }, range: { start: number; endInclusive: number; step: number }, suffix: string, aliases: string[]): RangedValue<{ start: number; endInclusive: number; step: number }>;
     item(name: string, default_: Item): Value<Item>;
     itemList<C extends Item[]>(name: string, default_: C): RegistryMutableListValue<C, Item>;
-    itemList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, items: ItemListValue$NamedItem<E>[], valueType: ValueType): ItemListValue<T, E>;
+    itemList<T extends E[], E extends unknown>(name: string, defaultValue: T, items: ItemListValue$NamedItem<E>[], valueType: ValueType): ItemListValue<T, E>;
     items<C extends Item[]>(name: string, default_: C): RegistryListValue<C, Item>;
     /**
      * Assigns the value of the settings to the component
@@ -139,7 +139,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     json(valueObject: JsonObject): void;
     key(name: string, default_: InputConstants$Key): Value<InputConstants$Key>;
     key(name: string, default_: number): Value<InputConstants$Key>;
-    list<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): ListValue<T, E>;
+    list<T extends E[], E extends unknown>(name: string, defaultValue: T, valueType: ValueType): ListValue<T, E>;
     mobEffects<C extends MobEffect[]>(name: string, default_: C): RegistryListValue<C, MobEffect>;
     protected modes<T extends Mode>(eventListener: EventListener, name: string, active: T, modes: T[]): ModeValueGroup<T>;
     protected modes<T extends Mode>(eventListener: EventListener, name: string, activeCallback: (param0: T[]) => number, modesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
@@ -147,12 +147,12 @@ export class ValueGroup extends Value<Value<Object>[]> {
     multiEnumChoice<T extends Enum<T> & Tagged>(name: string, default_: T[], choices: T[], canBeNone: boolean): MultiChoiceListValue<T>;
     multiEnumChoice<T extends Enum<T> & Tagged>(name: string, default_: T[], canBeNone: boolean): MultiChoiceListValue<T>;
     multiEnumChoice<T extends Tagged>(name: string, default_: T[], choices: T[], canBeNone: boolean, isOrderSensitive: boolean): MultiChoiceListValue<T>;
-    mutableList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): MutableListValue<T, E>;
-    // private rangedValue<T extends Object | number | string | boolean>(name: string, defaultValue: T, range: ClosedRange<any>, suffix: string, valueType: ValueType, aliases: string[]): RangedValue<T>;
+    mutableList<T extends E[], E extends unknown>(name: string, defaultValue: T, valueType: ValueType): MutableListValue<T, E>;
+    // private rangedValue<T extends unknown>(name: string, defaultValue: T, range: ClosedRange<any>, suffix: string, valueType: ValueType, aliases: string[]): RangedValue<T>;
     regex(name: string, default_: Regex): Value<Regex>;
     regexList<C extends Regex[]>(name: string, default_: C): MutableListValue<C, Regex>;
-    registryList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): RegistryListValue<T, E>;
-    registryMutableList<T extends E[], E extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType): RegistryMutableListValue<T, E>;
+    registryList<T extends E[], E extends unknown>(name: string, defaultValue: T, valueType: ValueType): RegistryListValue<T, E>;
+    registryMutableList<T extends E[], E extends unknown>(name: string, defaultValue: T, valueType: ValueType): RegistryMutableListValue<T, E>;
     /**
      * Restore all values to their default values
      *
@@ -167,7 +167,7 @@ export class ValueGroup extends Value<Value<Object>[]> {
     tree<T extends ValueGroup>(valueGroup: T): T;
     treeAll<T extends ValueGroup>(valueGroups: T[]): void;
     value<V extends Value<Object>>(value: V): V;
-    value<T extends Object | number | string | boolean>(name: string, defaultValue: T, valueType: ValueType, aliases: string[]): Value<T>;
+    value<T extends unknown>(name: string, defaultValue: T, valueType: ValueType, aliases: string[]): Value<T>;
     vec2f(name: string, default_: Vector2fc): Value<Vector2fc>;
     vec3d(name: string, default_: Vec3, useLocateButton: boolean, aliases: string[]): Value<Vec3>;
     vec3i(name: string, default_: Vec3i, useLocateButton: boolean, aliases: string[]): Value<Vec3i>;

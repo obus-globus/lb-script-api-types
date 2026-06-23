@@ -30,9 +30,9 @@ export interface JsonDecoder extends Object, CompositeDecoder, Decoder{
     decodeLongElement(descriptor: SerialDescriptor, index: number): number;
     decodeNotNullMark(): boolean;
     decodeNull(): void | null;
-    decodeNullableSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T | null;
+    decodeNullableSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T | null;
     decodeSequentially(): boolean;
-    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
     decodeShort(): number;
     decodeShortElement(descriptor: SerialDescriptor, index: number): number;
     decodeString(): string;

@@ -1,7 +1,7 @@
 import type { Identifiable } from '../../../../io/jsonwebtoken/Identifiable.d.ts'
 import type { NestedCollection } from '../../../../io/jsonwebtoken/lang/NestedCollection.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class NestedIdentifiableCollection<E extends Identifiable, P extends Object | number | string | boolean> extends Object implements NestedCollection<E, P> {
+export class NestedIdentifiableCollection<E extends Identifiable, P extends unknown> extends Object implements NestedCollection<E, P> {
     constructor(arg0: P, arg1: { [key: string]: E })
     // private PARENT: P;
     // private VALUES: { [key: string]: E };

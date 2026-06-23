@@ -2,7 +2,7 @@ import type { Spliterator } from '../../../../../java/util/Spliterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { IOComparator } from '../../../../../org/apache/commons/io/function/IOComparator.d.ts'
 import type { IOConsumer } from '../../../../../org/apache/commons/io/function/IOConsumer.d.ts'
-export interface IOSpliterator<T extends Object | number | string | boolean> extends Object {
+export interface IOSpliterator<T extends unknown> extends Object {
     asSpliterator(): Spliterator<T>;
     characteristics(): number;
     estimateSize(): number;

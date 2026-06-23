@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class UnicodeMap$EntryRange<T extends Object | number | string | boolean> extends Object {
+export class UnicodeMap$EntryRange<T extends unknown> extends Object {
     constructor()
     codepoint: number;
     codepointEnd: number;

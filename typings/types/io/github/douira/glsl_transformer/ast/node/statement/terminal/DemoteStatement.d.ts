@@ -13,5 +13,5 @@ export class DemoteStatement extends TerminalStatement {
     clone(): DemoteStatement;
     cloneInto(arg0: Root): DemoteStatement;
     getStatementType(): Statement$StatementType;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

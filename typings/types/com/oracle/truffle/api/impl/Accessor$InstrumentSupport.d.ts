@@ -29,7 +29,7 @@ export abstract class Accessor$InstrumentSupport extends Accessor$Support {
     disposeInstrument(instrumentationHandler: Object, polyglotInstrument: Object, cleanupRequired: boolean): void;
     finalizeInstrument(instrumentationHandler: Object, polyglotInstrument: Object): void;
     getEngineInstrumenter(instrumentationHandler: Object): Object;
-    getInstrumentationHandlerService<T extends Object | number | string | boolean>(handler: Object, polyglotInstrument: Object, type: Class<T>): T;
+    getInstrumentationHandlerService<T extends unknown>(handler: Object, polyglotInstrument: Object, type: Class<T>): T;
     getLoadedCallTargets(instrumentationHandler: Object): CallTarget[];
     getOut(out: DispatchOutputStream): OutputStream;
     getPolyglotInstrument(instrumentEnv: Object): Object;

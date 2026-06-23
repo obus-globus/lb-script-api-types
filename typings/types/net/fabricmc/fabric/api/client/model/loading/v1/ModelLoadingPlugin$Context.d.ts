@@ -23,7 +23,7 @@ import type { ItemModel$Unbaked } from '../../../../../../../../net/minecraft/cl
 import type { UnbakedModel } from '../../../../../../../../net/minecraft/client/resources/model/UnbakedModel.d.ts'
 import type { Block } from '../../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export interface ModelLoadingPlugin$Context extends Object {
-    addModel<T extends Object | number | string | boolean>(arg0: ExtraModelKey<T>, arg1: UnbakedExtraModel<T>): void;
+    addModel<T extends unknown>(arg0: ExtraModelKey<T>, arg1: UnbakedExtraModel<T>): void;
     modifyBlockModelAfterBake(): Event<(param0: BlockStateModel, param1: ModelModifier$AfterBakeBlock$Context) => BlockStateModel>;
     modifyBlockModelBeforeBake(): Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$BeforeBakeBlock$Context) => BlockStateModel$UnbakedRoot>;
     modifyBlockModelOnLoad(): Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$OnLoadBlock$Context) => BlockStateModel$UnbakedRoot>;

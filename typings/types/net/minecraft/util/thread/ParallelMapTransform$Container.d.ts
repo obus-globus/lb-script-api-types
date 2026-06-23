@@ -1,7 +1,7 @@
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ParallelMapTransform$Container<K extends Object | number | string | boolean, U extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Record {
+export class ParallelMapTransform$Container<K extends unknown, U extends unknown, V extends unknown> extends Record {
     // private keys: Object[];
     // private operation: (param0: K, param1: U) => V;
     // private values: Object[];

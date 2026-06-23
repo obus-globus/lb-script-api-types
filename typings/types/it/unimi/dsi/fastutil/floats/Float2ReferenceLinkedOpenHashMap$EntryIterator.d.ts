@@ -8,10 +8,10 @@ export class Float2ReferenceLinkedOpenHashMap$EntryIterator extends Float2Refere
     constructor(null_: Float2ReferenceLinkedOpenHashMap$EntryIterator)
     constructor(null_: Float2ReferenceLinkedOpenHashMap$EntryIterator, arg1: number)
     // private entry: Float2ReferenceLinkedOpenHashMap$MapEntry;
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Float2ReferenceMap$Entry<V>) => void, arg1: number): void;
-    add<V extends Object | number | string | boolean>(arg0: Float2ReferenceMap$Entry<V>): void;
-    next<V extends Object | number | string | boolean>(): Float2ReferenceLinkedOpenHashMap$MapEntry;
-    previous<V extends Object | number | string | boolean>(): Float2ReferenceLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Float2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    add<V extends unknown>(arg0: Float2ReferenceMap$Entry<V>): void;
+    next<V extends unknown>(): Float2ReferenceLinkedOpenHashMap$MapEntry;
+    previous<V extends unknown>(): Float2ReferenceLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<V extends Object | number | string | boolean>(arg0: Float2ReferenceMap$Entry<V>): void;
+    set<V extends unknown>(arg0: Float2ReferenceMap$Entry<V>): void;
 }

@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Brain$Visitor } from '../../../../../../net/minecraft/world/entity/ai/Brain$Visitor.d.ts'
 import type { MemoryModuleType } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
-export class MemorySlot<T extends Object | number | string | boolean> extends Object {
+export class MemorySlot<T extends unknown> extends Object {
     static create(): MemorySlot<Object>;
     private constructor(value: T, timeToLive: number)
     // private timeToLive: number;

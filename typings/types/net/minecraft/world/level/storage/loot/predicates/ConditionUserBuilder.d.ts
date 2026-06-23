@@ -4,6 +4,6 @@ import type { LootItemCondition } from '../../../../../../../net/minecraft/world
 import type { LootItemCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export interface ConditionUserBuilder<T extends ConditionUserBuilder<T>> extends Object {
     unwrap(): T;
-    when<E extends Object | number | string | boolean>(collection: E[], conditionProvider: (param0: E) => () => LootItemCondition): T;
+    when<E extends unknown>(collection: E[], conditionProvider: (param0: E) => () => LootItemCondition): T;
     when(builder: () => LootItemCondition): T;
 }

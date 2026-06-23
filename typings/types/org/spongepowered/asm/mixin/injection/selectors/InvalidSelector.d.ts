@@ -15,7 +15,7 @@ export class InvalidSelector extends Object implements ITargetSelector {
     configure(arg0: ITargetSelector$Configure, arg1: string[]): ITargetSelector;
     getMaxMatchCount(): number;
     getMinMatchCount(): number;
-    match<TNode extends Object | number | string | boolean>(arg0: ElementNode<TNode>): MatchResult;
+    match<TNode extends unknown>(arg0: ElementNode<TNode>): MatchResult;
     next(): ITargetSelector;
     toString(): string;
     validate(): ITargetSelector;

@@ -2,7 +2,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AttributeRange } from '../../../../net/minecraft/world/attribute/AttributeRange.d.ts'
 import type { AttributeType } from '../../../../net/minecraft/world/attribute/AttributeType.d.ts'
 import type { EnvironmentAttribute } from '../../../../net/minecraft/world/attribute/EnvironmentAttribute.d.ts'
-export class EnvironmentAttribute$Builder<Value extends Object | number | string | boolean> extends Object {
+export class EnvironmentAttribute$Builder<Value extends unknown> extends Object {
     constructor(type: AttributeType<Value>)
     // private defaultValue: Value;
     // private isPositional: boolean;

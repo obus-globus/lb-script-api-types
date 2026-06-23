@@ -16,7 +16,7 @@ export class CustomDirective extends ExternalDeclaration {
     cloneInto(arg0: Root): CustomDirective;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
-    externalDeclarationAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    externalDeclarationAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     getContent(): string;
     getExternalDeclarationType(): ExternalDeclaration$ExternalDeclarationType;
     setContent(arg0: string): void;

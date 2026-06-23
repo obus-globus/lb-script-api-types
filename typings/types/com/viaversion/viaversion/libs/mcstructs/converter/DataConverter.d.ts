@@ -4,7 +4,7 @@ import type { Result } from '../../../../../../com/viaversion/viaversion/libs/mc
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../java/lang/Number.d.ts'
-export interface DataConverter<T extends Object | number | string | boolean> extends ConsumerTracking, Object {
+export interface DataConverter<T extends unknown> extends ConsumerTracking, Object {
     asBoolean(arg0: T): Result<boolean>;
     asByteArray(arg0: T): Result<number[]>;
     asIntArray(arg0: T): Result<number[]>;
@@ -14,10 +14,10 @@ export interface DataConverter<T extends Object | number | string | boolean> ext
     asNumber(arg0: T): Result<Number>;
     asString(arg0: T): Result<string>;
     asStringTypeMap(arg0: T): Result<{ [key: string]: T }>;
-    convertFrom<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: N): T;
-    convertList<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: T): N;
-    convertMap<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: T): N;
-    convertTo<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: T): N;
+    convertFrom<N extends unknown>(arg0: DataConverter<N>, arg1: N): T;
+    convertList<N extends unknown>(arg0: DataConverter<N>, arg1: T): N;
+    convertMap<N extends unknown>(arg0: DataConverter<N>, arg1: T): N;
+    convertTo<N extends unknown>(arg0: DataConverter<N>, arg1: T): N;
     createBoolean(arg0: boolean): T;
     createByte(arg0: number): T;
     createByteArray(arg0: number[]): T;
@@ -37,7 +37,7 @@ export interface DataConverter<T extends Object | number | string | boolean> ext
     empty(): T;
     emptyList(): T;
     emptyMap(): T;
-    fork<O extends Object | number | string | boolean>(arg0: DataConverter<O>): DataConverter<O>;
+    fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): ConsumerTracking;
     forkIfDefault(): DataConverter<T>;
     mergeList(arg0: T, arg1: T[]): Result<T>;

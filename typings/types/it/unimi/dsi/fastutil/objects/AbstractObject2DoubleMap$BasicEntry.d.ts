@@ -1,6 +1,6 @@
 import type { Object2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2DoubleMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractObject2DoubleMap$BasicEntry<K extends Object | number | string | boolean> extends Object implements Object2DoubleMap$Entry<K> {
+export class AbstractObject2DoubleMap$BasicEntry<K extends unknown> extends Object implements Object2DoubleMap$Entry<K> {
     constructor()
     constructor(arg0: K, arg1: number)
     constructor(arg0: K, arg1: number)

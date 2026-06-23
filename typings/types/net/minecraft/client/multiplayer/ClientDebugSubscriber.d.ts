@@ -24,17 +24,17 @@ export class ClientDebugSubscriber extends Object {
     dropChunk(chunkPos: ChunkPos): void;
     dropEntity(entity: Entity): void;
     dropLevel(): void;
-    // private forEachValue<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(subscription: DebugSubscription<V>, type: (param0: ClientDebugSubscriber$ValueMaps<V>) => ClientDebugSubscriber$ValueMap<K, V>, consumer: (param0: K, param1: V) => void): void;
-    // private getValue<V extends Object | number | string | boolean, K extends Object | number | string | boolean>(subscription: DebugSubscription<V>, key: K, type: (param0: ClientDebugSubscriber$ValueMaps<V>) => ClientDebugSubscriber$ValueMap<K, V>): V;
-    // private getValueMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(subscription: DebugSubscription<V>, mapType: (param0: ClientDebugSubscriber$ValueMaps<V>) => ClientDebugSubscriber$ValueMap<K, V>): ClientDebugSubscriber$ValueMap<K, V>;
-    // private getValueMaps<V extends Object | number | string | boolean>(subscription: DebugSubscription<V>): ClientDebugSubscriber$ValueMaps<V>;
+    // private forEachValue<V extends unknown, K extends unknown>(subscription: DebugSubscription<V>, type: (param0: ClientDebugSubscriber$ValueMaps<V>) => ClientDebugSubscriber$ValueMap<K, V>, consumer: (param0: K, param1: V) => void): void;
+    // private getValue<V extends unknown, K extends unknown>(subscription: DebugSubscription<V>, key: K, type: (param0: ClientDebugSubscriber$ValueMaps<V>) => ClientDebugSubscriber$ValueMap<K, V>): V;
+    // private getValueMap<K extends unknown, V extends unknown>(subscription: DebugSubscription<V>, mapType: (param0: ClientDebugSubscriber$ValueMaps<V>) => ClientDebugSubscriber$ValueMap<K, V>): ClientDebugSubscriber$ValueMap<K, V>;
+    // private getValueMaps<V extends unknown>(subscription: DebugSubscription<V>): ClientDebugSubscriber$ValueMaps<V>;
     // private initializeSubscriptions(newSubscriptions: DebugSubscription<Object>[]): void;
     // private onSubscriptionsChanged(newSubscriptions: DebugSubscription<Object>[]): void;
-    pushEvent<T extends Object | number | string | boolean>(gameTime: number, event: DebugSubscription$Event<T>): void;
+    pushEvent<T extends unknown>(gameTime: number, event: DebugSubscription$Event<T>): void;
     // private requestedSubscriptions(): DebugSubscription<Object>[];
     tick(gameTime: number): void;
-    updateBlock<T extends Object | number | string | boolean>(gameTime: number, blockPos: BlockPos, update: DebugSubscription$Update<T>): void;
-    updateChunk<T extends Object | number | string | boolean>(gameTime: number, chunkPos: ChunkPos, update: DebugSubscription$Update<T>): void;
-    updateEntity<T extends Object | number | string | boolean>(gameTime: number, entity: Entity, update: DebugSubscription$Update<T>): void;
-    // private updateMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(gameTime: number, key: K, update: DebugSubscription$Update<V>, type: (param0: ClientDebugSubscriber$ValueMaps<V>) => ClientDebugSubscriber$ValueMap<K, V>): void;
+    updateBlock<T extends unknown>(gameTime: number, blockPos: BlockPos, update: DebugSubscription$Update<T>): void;
+    updateChunk<T extends unknown>(gameTime: number, chunkPos: ChunkPos, update: DebugSubscription$Update<T>): void;
+    updateEntity<T extends unknown>(gameTime: number, entity: Entity, update: DebugSubscription$Update<T>): void;
+    // private updateMap<K extends unknown, V extends unknown>(gameTime: number, key: K, update: DebugSubscription$Update<V>, type: (param0: ClientDebugSubscriber$ValueMaps<V>) => ClientDebugSubscriber$ValueMap<K, V>): void;
 }

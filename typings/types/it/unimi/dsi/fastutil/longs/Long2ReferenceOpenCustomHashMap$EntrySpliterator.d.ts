@@ -14,8 +14,8 @@ export class Long2ReferenceOpenCustomHashMap$EntrySpliterator extends Long2Refer
     static SUBSIZED: number;
     constructor(null_: Long2ReferenceOpenCustomHashMap$EntrySpliterator)
     constructor(null_: Long2ReferenceOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Long2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Long2ReferenceMap$Entry<V>) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Long2ReferenceOpenCustomHashMap$EntrySpliterator;
+    makeForSplit<V extends unknown>(arg0: number, arg1: number, arg2: boolean): Long2ReferenceOpenCustomHashMap$EntrySpliterator;
     skip(arg0: number): number;
 }

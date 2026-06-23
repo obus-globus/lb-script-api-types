@@ -31,7 +31,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { AnnotationType } from '../../sun/reflect/annotation/AnnotationType.d.ts'
 import type { GenericsFactory } from '../../sun/reflect/generics/factory/GenericsFactory.d.ts'
 import type { ClassRepository } from '../../sun/reflect/generics/repository/ClassRepository.d.ts'
-export class Class<T extends Object | number | string | boolean> extends Object implements Serializable, Constable, TypeDescriptor$OfField<Class<Object>>, AnnotatedElement, GenericDeclaration, Type {
+export class Class<T extends unknown> extends Object implements Serializable, Constable, TypeDescriptor$OfField<Class<Object>>, AnnotatedElement, GenericDeclaration, Type {
     static forName(paramarg0: Module, paramarg1: string): Class<Object>;
     static forName(paramarg0: string): Class<Object>;
     static forName(paramarg0: string, paramarg1: boolean, paramarg2: ClassLoader): Class<Object>;
@@ -54,7 +54,7 @@ export class Class<T extends Object | number | string | boolean> extends Object 
     // private addSealingInfo(arg0: number, arg1: StringBuilder): void;
     // private annotationData(): Class$AnnotationData;
     arrayType(): Class<Object>;
-    asSubclass<U extends Object | number | string | boolean>(arg0: Class<U>): Class<U>;
+    asSubclass<U extends unknown>(arg0: Class<U>): Class<U>;
     // private cannotCastMsg(arg0: Object): string;
     casAnnotationType(arg0: AnnotationType, arg1: AnnotationType): boolean;
     cast(arg0: Object): T;

@@ -3,7 +3,7 @@ import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Pool } from '../../../net/ccbluex/fastutil/Pool.d.ts'
 import type { Pool$Companion } from '../../../net/ccbluex/fastutil/Pool$Companion.d.ts'
-export class Pool$ListBasedPool<E extends Object | number | string | boolean> extends Object implements Pool<E> {
+export class Pool$ListBasedPool<E extends unknown> extends Object implements Pool<E> {
     static Companion: Pool$Companion;
     static create(paramarg0: () => Object | null): Pool<Object>;
     static create(paramarg0: () => Object | null, paramarg1: (param0: Object) => void): Pool<Object>;

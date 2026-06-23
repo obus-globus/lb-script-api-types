@@ -4,5 +4,5 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ClosingFuture$DeferredCloser extends Object {
     constructor(list: { [key: string]: any })
     // private list: { [key: string]: any };
-    eventuallyClose<C extends Object | number | string | boolean & AutoCloseable>(closeable: C, closingExecutor: Executor): C;
+    eventuallyClose<C extends unknown & AutoCloseable>(closeable: C, closingExecutor: Executor): C;
 }

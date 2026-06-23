@@ -13,7 +13,7 @@ export class KQueueDomainSocketChannelConfig extends KQueueChannelConfig impleme
     constructor(arg0: AbstractKQueueChannel)
     readonly allowHalfClosure: boolean;
     // private mode: DomainSocketReadMode;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReadMode(): DomainSocketReadMode;
@@ -27,7 +27,7 @@ export class KQueueDomainSocketChannelConfig extends KQueueChannelConfig impleme
     setConnectTimeoutMillis(arg0: number): KQueueDomainSocketChannelConfig;
     setMaxMessagesPerRead(arg0: number): KQueueDomainSocketChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): KQueueDomainSocketChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setRcvAllocTransportProvidesGuess(arg0: boolean): KQueueDomainSocketChannelConfig;
     setReadMode(arg0: DomainSocketReadMode): KQueueDomainSocketChannelConfig;
     setReceiveBufferSize(arg0: number): KQueueDomainSocketChannelConfig;

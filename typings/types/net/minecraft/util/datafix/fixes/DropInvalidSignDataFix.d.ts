@@ -12,6 +12,6 @@ export class DropInvalidSignDataFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, entityName: string)
     // private entityName: string;
-    // private fix<T extends Object | number | string | boolean>(tag: Dynamic<T>): Dynamic<T>;
+    // private fix<T extends unknown>(tag: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
 }

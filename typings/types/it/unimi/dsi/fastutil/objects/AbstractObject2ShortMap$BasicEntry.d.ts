@@ -1,6 +1,6 @@
 import type { Object2ShortMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ShortMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractObject2ShortMap$BasicEntry<K extends Object | number | string | boolean> extends Object implements Object2ShortMap$Entry<K> {
+export class AbstractObject2ShortMap$BasicEntry<K extends unknown> extends Object implements Object2ShortMap$Entry<K> {
     constructor()
     constructor(arg0: K, arg1: number)
     constructor(arg0: K, arg1: number)

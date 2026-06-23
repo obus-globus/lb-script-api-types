@@ -10,7 +10,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class KeyDispatchCodec<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends MapCodec<V> {
+export class KeyDispatchCodec<K extends unknown, V extends unknown> extends MapCodec<V> {
     static assumeMapUnsafe(paramarg0: Codec<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
@@ -25,8 +25,8 @@ export class KeyDispatchCodec<K extends Object | number | string | boolean, V ex
     // private encoder: (param0: V) => DataResult<MapEncoder<V>>;
     // private keyCodec: MapCodec<K>;
     // private type: (param0: V) => DataResult<K>;
-    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<V>;
-    encode<T extends Object | number | string | boolean>(arg0: V, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
-    keys<T extends Object | number | string | boolean>(arg0: DynamicOps<T>): Stream<T>;
+    decode<T extends unknown>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<V>;
+    encode<T extends unknown>(arg0: V, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
+    keys<T extends unknown>(arg0: DynamicOps<T>): Stream<T>;
     toString(): string;
 }

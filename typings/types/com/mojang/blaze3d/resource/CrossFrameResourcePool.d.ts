@@ -8,11 +8,11 @@ export class CrossFrameResourcePool extends Object implements GraphicsResourceAl
     constructor(framesToKeepResource: number)
     // private framesToKeepResource: number;
     // private pool: CrossFrameResourcePool$ResourceEntry<Object>[];
-    acquire<T extends Object | number | string | boolean>(descriptor: ResourceDescriptor<T>): T;
-    // private acquireWithoutPreparing<T extends Object | number | string | boolean>(descriptor: ResourceDescriptor<T>): T;
+    acquire<T extends unknown>(descriptor: ResourceDescriptor<T>): T;
+    // private acquireWithoutPreparing<T extends unknown>(descriptor: ResourceDescriptor<T>): T;
     clear(): void;
     close(): void;
     endFrame(): void;
     entries(): CrossFrameResourcePool$ResourceEntry<Object>[];
-    release<T extends Object | number | string | boolean>(descriptor: ResourceDescriptor<T>, resource: T): void;
+    release<T extends unknown>(descriptor: ResourceDescriptor<T>, resource: T): void;
 }

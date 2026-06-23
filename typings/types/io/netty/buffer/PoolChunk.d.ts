@@ -11,7 +11,7 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { LongAdder } from '../../../java/util/concurrent/atomic/LongAdder.d.ts'
 import type { ReentrantLock } from '../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class PoolChunk<T extends Object | number | string | boolean> extends Object implements ChunkInfo, PoolChunkMetric {
+export class PoolChunk<T extends unknown> extends Object implements ChunkInfo, PoolChunkMetric {
     constructor(arg0: PoolArena<T>, arg1: CleanableDirectBuffer, arg2: Object, arg3: T, arg4: number)
     constructor(arg0: PoolArena<T>, arg1: CleanableDirectBuffer, arg2: Object, arg3: T, arg4: number, arg5: number, arg6: number, arg7: number)
     // private arena: PoolArena<T>;

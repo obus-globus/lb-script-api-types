@@ -8,7 +8,7 @@ import type { Future } from '../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
-export abstract class AbstractFuture<V extends Object | number | string | boolean> extends AbstractFutureState<V> {
+export abstract class AbstractFuture<V extends unknown> extends AbstractFutureState<V> {
     constructor()
     // private addDoneString(builder: StringBuilder): void;
     addListener(listener: () => void, executor: Executor): void;

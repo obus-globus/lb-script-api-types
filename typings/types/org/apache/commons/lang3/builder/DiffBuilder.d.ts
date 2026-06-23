@@ -5,7 +5,7 @@ import type { Diff } from '../../../../../org/apache/commons/lang3/builder/Diff.
 import type { DiffBuilder$Builder } from '../../../../../org/apache/commons/lang3/builder/DiffBuilder$Builder.d.ts'
 import type { DiffBuilder$SerializableSupplier } from '../../../../../org/apache/commons/lang3/builder/DiffBuilder$SerializableSupplier.d.ts'
 import type { ToStringStyle } from '../../../../../org/apache/commons/lang3/builder/ToStringStyle.d.ts'
-export class DiffBuilder<T extends Object | number | string | boolean> extends Object implements Builder<Diff<Object>[]> {
+export class DiffBuilder<T extends unknown> extends Object implements Builder<Diff<Object>[]> {
     static builder(): DiffBuilder$Builder<Object>;
     constructor(arg0: T, arg1: T, arg2: ToStringStyle)
     constructor(arg0: T, arg1: T, arg2: ToStringStyle, arg3: boolean)
@@ -16,7 +16,7 @@ export class DiffBuilder<T extends Object | number | string | boolean> extends O
     // private right: T;
     // private style: ToStringStyle;
     // private toStringFormat: string;
-    // private add<F extends Object | number | string | boolean>(arg0: string, arg1: DiffBuilder$SerializableSupplier<F>, arg2: DiffBuilder$SerializableSupplier<F>, arg3: Class<F>): DiffBuilder<T>;
+    // private add<F extends unknown>(arg0: string, arg1: DiffBuilder$SerializableSupplier<F>, arg2: DiffBuilder$SerializableSupplier<F>, arg3: Class<F>): DiffBuilder<T>;
     append(arg0: string, arg1: Object, arg2: Object): DiffBuilder<T>;
     append(arg0: string, arg1: Object[], arg2: Object[]): DiffBuilder<T>;
     append(arg0: string, arg1: boolean, arg2: boolean): DiffBuilder<T>;

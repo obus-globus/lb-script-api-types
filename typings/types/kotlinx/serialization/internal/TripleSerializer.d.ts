@@ -5,7 +5,7 @@ import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptor
 import type { CompositeDecoder } from '../../../kotlinx/serialization/encoding/CompositeDecoder.d.ts'
 import type { Decoder } from '../../../kotlinx/serialization/encoding/Decoder.d.ts'
 import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.ts'
-export class TripleSerializer<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object implements KSerializer<Triple<A, B, C>> {
+export class TripleSerializer<A extends unknown, B extends unknown, C extends unknown> extends Object implements KSerializer<Triple<A, B, C>> {
     constructor(aSerializer: KSerializer<A>, bSerializer: KSerializer<B>, cSerializer: KSerializer<C>)
     // private aSerializer: KSerializer<A>;
     // private bSerializer: KSerializer<B>;

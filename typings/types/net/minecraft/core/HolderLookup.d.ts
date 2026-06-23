@@ -7,7 +7,7 @@ import type { HolderGetter } from '../../../net/minecraft/core/HolderGetter.d.ts
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 import type { RandomSource } from '../../../net/minecraft/util/RandomSource.d.ts'
-export interface HolderLookup<T extends Object | number | string | boolean> extends Object, HolderGetter<T>{
+export interface HolderLookup<T extends unknown> extends Object, HolderGetter<T>{
     getOrThrow(id: ResourceKey<T>): Holder$Reference<T>;
     getOrThrow(id: TagKey<T>): T[];
     getRandomElementOf(tag: TagKey<T>, random: RandomSource): Optional<Holder<T>>;

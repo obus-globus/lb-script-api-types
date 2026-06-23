@@ -3,7 +3,7 @@ import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { OptionType$Converter } from '../../../org/graalvm/options/OptionType$Converter.d.ts'
-export class OptionType<T extends Object | number | string | boolean> extends Object {
+export class OptionType<T extends unknown> extends Object {
     static defaultType(paramvalue: Object | null): OptionType<Object>;
     static defaultType(paramclazz: Class<Object>): OptionType<Object>;
     constructor(name: string, defaultValue: T, stringConverter: (param0: string) => T)

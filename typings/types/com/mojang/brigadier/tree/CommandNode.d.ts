@@ -13,7 +13,7 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
-export abstract class CommandNode<S extends Object | number | string | boolean> extends Object implements Comparable<CommandNode<S>> {
+export abstract class CommandNode<S extends unknown> extends Object implements Comparable<CommandNode<S>> {
     constructor(arg0: (param0: CommandContext<S>) => number, arg1: (param0: S) => boolean, arg2: CommandNode<S>, arg3: (param0: CommandContext<S>) => S[], arg4: boolean)
     // private arguments: { [key: string]: ArgumentCommandNode<S, Object> };
     readonly children: { [key: string]: CommandNode<S> };

@@ -4,6 +4,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TreeTraverser$PostOrderIterator extends AbstractIterator<T> {
     constructor(null_: TreeTraverser$PostOrderIterator)
     // private stack: TreeTraverser$PostOrderNode<T>[];
-    computeNext<T extends Object | number | string | boolean>(): T;
-    // private expand<T extends Object | number | string | boolean>(t: T): TreeTraverser$PostOrderNode<T>;
+    computeNext<T extends unknown>(): T;
+    // private expand<T extends unknown>(t: T): TreeTraverser$PostOrderNode<T>;
 }

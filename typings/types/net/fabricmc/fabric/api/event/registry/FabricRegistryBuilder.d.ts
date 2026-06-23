@@ -3,7 +3,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { RegistryAttribute } from '../../../../../../net/fabricmc/fabric/api/event/registry/RegistryAttribute.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
-export class FabricRegistryBuilder<T extends Object | number | string | boolean, R extends T[]> extends Object {
+export class FabricRegistryBuilder<T extends unknown, R extends T[]> extends Object {
     static create(paramarg0: Class<Object>, paramarg1: Identifier): FabricRegistryBuilder<Object, (Object | null)[]>;
     static create(paramarg0: ResourceKey<(Object | null)[]>): FabricRegistryBuilder<Object, (Object | null)[]>;
     static createDefaulted(paramarg0: Class<Object>, paramarg1: Identifier, paramarg2: Identifier): FabricRegistryBuilder<Object, (Object | null)[]>;

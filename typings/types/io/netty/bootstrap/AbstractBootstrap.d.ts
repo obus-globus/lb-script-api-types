@@ -24,7 +24,7 @@ export abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
     // private handler: ChannelHandler;
     // private localAddress: SocketAddress;
     // private options: Map<ChannelOption<Object>, Object>;
-    attr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>, arg1: T): B;
+    attr<T extends unknown>(arg0: AttributeKey<T>, arg1: T): B;
     attrs(): Map<AttributeKey<Object>, Object>;
     attrs0(): Map<AttributeKey<Object>, Object>;
     bind(): ChannelFuture;
@@ -55,7 +55,7 @@ export abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
     localAddress(arg0: string, arg1: number): B;
     newAttributesArray(): Map$Entry<AttributeKey<Object>, Object>[];
     newOptionsArray(): Map$Entry<ChannelOption<Object>, Object>[];
-    option<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): B;
+    option<T extends unknown>(arg0: ChannelOption<T>, arg1: T): B;
     options(): Map<ChannelOption<Object>, Object>;
     options0(): Map<ChannelOption<Object>, Object>;
     register(): ChannelFuture;

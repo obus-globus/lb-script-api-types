@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { IdDispatchCodec } from '../../../../net/minecraft/network/codec/IdDispatchCodec.d.ts'
 import type { IdDispatchCodec$Entry } from '../../../../net/minecraft/network/codec/IdDispatchCodec$Entry.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
-export class IdDispatchCodec$Builder<B extends ByteBuf, V extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Object {
+export class IdDispatchCodec$Builder<B extends ByteBuf, V extends unknown, T extends unknown> extends Object {
     private constructor(typeGetter: (param0: V) => T)
     // private entries: IdDispatchCodec$Entry<B, V, T>[];
     // private typeGetter: (param0: V) => T;

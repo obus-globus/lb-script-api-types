@@ -10,8 +10,8 @@ export class IntegerRangeArgumentType extends Object implements ArgumentType<Obj
     constructor()
     getExamples(): string[];
     // private isAllowedNumber(arg0: string): boolean;
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Object;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): Object;
     parse(arg0: StringReader): Object;
     // private readInt(arg0: StringReader): number;
 }

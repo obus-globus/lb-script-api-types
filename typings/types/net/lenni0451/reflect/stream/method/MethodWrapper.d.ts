@@ -14,9 +14,9 @@ export class MethodWrapper extends Object {
     annotations(): Stream<Annotation>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    invoke<T extends Object | number | string | boolean>(): T;
-    invokeArgs<T extends Object | number | string | boolean>(arg0: Object[]): T;
-    invokeInstance<T extends Object | number | string | boolean>(arg0: Object, arg1: Object[]): T;
+    invoke<T extends unknown>(): T;
+    invokeArgs<T extends unknown>(arg0: Object[]): T;
+    invokeInstance<T extends unknown>(arg0: Object, arg1: Object[]): T;
     modifier(): ModifierWrapper;
     name(): string;
     owner(): Class<Object>;

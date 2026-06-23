@@ -2,7 +2,7 @@ import type { AbstractChar2ReferenceFunction } from '../../../../../it/unimi/dsi
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Char2ReferenceFunctions$Singleton<V extends Object | number | string | boolean> extends AbstractChar2ReferenceFunction<V> implements Serializable, Cloneable {
+export class Char2ReferenceFunctions$Singleton<V extends unknown> extends AbstractChar2ReferenceFunction<V> implements Serializable, Cloneable {
     constructor(arg0: string, arg1: V)
     // private key: string;
     // private value: V;

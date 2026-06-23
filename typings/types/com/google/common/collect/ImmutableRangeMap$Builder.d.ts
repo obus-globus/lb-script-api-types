@@ -4,7 +4,7 @@ import type { RangeMap } from '../../../../com/google/common/collect/RangeMap.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class ImmutableRangeMap$Builder<K extends Comparable<Object>, V extends Object | number | string | boolean> extends Object {
+export class ImmutableRangeMap$Builder<K extends Comparable<Object>, V extends unknown> extends Object {
     constructor()
     // private entries: Map$Entry<Range<K>, V>[];
     build(): ImmutableRangeMap<K, V>;

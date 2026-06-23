@@ -15,7 +15,7 @@ import type { UnaryExpression } from '../../../../team/unnamed/mocha/parser/ast/
 import type { ExecutionContext } from '../../../../team/unnamed/mocha/runtime/ExecutionContext.d.ts'
 import type { Scope } from '../../../../team/unnamed/mocha/runtime/Scope.d.ts'
 import type { Value } from '../../../../team/unnamed/mocha/runtime/value/Value.d.ts'
-export class ExpressionInterpreter<T extends Object | number | string | boolean> extends Object implements ExpressionVisitor<Value>, ExecutionContext<T> {
+export class ExpressionInterpreter<T extends unknown> extends Object implements ExpressionVisitor<Value>, ExecutionContext<T> {
     constructor(arg0: T, arg1: Scope)
     // private entity: T;
     // private flag: Object;
@@ -24,7 +24,7 @@ export class ExpressionInterpreter<T extends Object | number | string | boolean>
     // private warnOnReflectiveFunctionUsage: boolean;
     bindings(): Scope;
     createChild(): ExpressionInterpreter<T>;
-    createChild<R extends Object | number | string | boolean>(arg0: R): ExpressionInterpreter<R>;
+    createChild<R extends unknown>(arg0: R): ExpressionInterpreter<R>;
     entity(): T;
     eval(arg0: Expression): Value;
     flag(): Object;

@@ -5,9 +5,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ReferenceRBTreeMap$EntryIterator extends Object2ReferenceRBTreeMap$TreeIterator implements ObjectListIterator<Object2ReferenceMap$Entry<K, V>> {
     constructor(null_: Object2ReferenceRBTreeMap$EntryIterator)
     constructor(null_: Object2ReferenceRBTreeMap$EntryIterator)
-    add<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Object2ReferenceMap$Entry<K, V>): void;
-    next<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Object2ReferenceMap$Entry<K, V>;
-    previous<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Object2ReferenceMap$Entry<K, V>;
+    add<K extends unknown, V extends unknown>(arg0: Object2ReferenceMap$Entry<K, V>): void;
+    next<K extends unknown, V extends unknown>(): Object2ReferenceMap$Entry<K, V>;
+    previous<K extends unknown, V extends unknown>(): Object2ReferenceMap$Entry<K, V>;
     remove(): void;
-    set<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: Object2ReferenceMap$Entry<K, V>): void;
+    set<K extends unknown, V extends unknown>(arg0: Object2ReferenceMap$Entry<K, V>): void;
 }

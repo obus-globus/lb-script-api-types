@@ -1,7 +1,7 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
-export class XCldrStub$Multimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export class XCldrStub$Multimap<K extends unknown, V extends unknown> extends Object {
     private constructor(arg0: Map<K, V[]>, arg1: Class<Object>)
     // private map: Map<K, V[]>;
     // private setClass: Class<V[]>;

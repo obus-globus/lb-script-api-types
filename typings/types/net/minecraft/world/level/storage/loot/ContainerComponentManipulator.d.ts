@@ -4,7 +4,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { DataComponentType } from '../../../../../../net/minecraft/core/component/DataComponentType.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { SlotCollection } from '../../../../../../net/minecraft/world/item/slot/SlotCollection.d.ts'
-export interface ContainerComponentManipulator<T extends Object | number | string | boolean> extends Object {
+export interface ContainerComponentManipulator<T extends unknown> extends Object {
     empty(): T;
     getContents(component: T): Stream<ItemStack>;
     getSlots(itemStack: ItemStack): SlotCollection;

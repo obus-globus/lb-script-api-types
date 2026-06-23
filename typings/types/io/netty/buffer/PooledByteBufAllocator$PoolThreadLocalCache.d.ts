@@ -9,6 +9,6 @@ export class PooledByteBufAllocator$PoolThreadLocalCache extends FastThreadLocal
     constructor(null_: PooledByteBufAllocator$PoolThreadLocalCache, arg1: boolean)
     // private useCacheForAllThreads: boolean;
     initialValue(): PoolThreadCache;
-    // private leastUsedArena<T extends Object | number | string | boolean>(arg0: PoolArena<T>[]): PoolArena<T>;
+    // private leastUsedArena<T extends unknown>(arg0: PoolArena<T>[]): PoolArena<T>;
     onRemoval(arg0: PoolThreadCache): void;
 }

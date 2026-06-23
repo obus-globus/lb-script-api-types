@@ -1,5 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class PrimitiveSpreadBuilder<T extends Object | number | string | boolean> extends Object {
+export abstract class PrimitiveSpreadBuilder<T extends unknown> extends Object {
     constructor(size: number)
     // private position: number;
     // private /*not mapped: */ getPosition(): number;

@@ -12,6 +12,6 @@ export class Predicates$ObjectPredicate extends Enum<Predicates$ObjectPredicate>
     static values(): (Object | null)[];
     private constructor()
     test(arg0: Object): boolean;
-    withNarrowedType<T extends Object | number | string | boolean>(): (param0: T) => boolean;
+    withNarrowedType<T extends unknown>(): (param0: T) => boolean;
     name(): "ALWAYS_TRUE" | "ALWAYS_FALSE" | "IS_NULL" | "NOT_NULL";
 }

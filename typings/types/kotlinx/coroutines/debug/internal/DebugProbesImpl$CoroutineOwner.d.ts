@@ -6,7 +6,7 @@ import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineCo
 import type { CoroutineStackFrame } from '../../../../kotlin/coroutines/jvm/internal/CoroutineStackFrame.d.ts'
 import type { DebugCoroutineInfoImpl } from '../../../../kotlinx/coroutines/debug/internal/DebugCoroutineInfoImpl.d.ts'
 import type { StackTraceFrame } from '../../../../kotlinx/coroutines/debug/internal/StackTraceFrame.d.ts'
-export class DebugProbesImpl$CoroutineOwner<T extends Object | number | string | boolean> extends Object implements Continuation<T>, CoroutineStackFrame {
+export class DebugProbesImpl$CoroutineOwner<T extends unknown> extends Object implements Continuation<T>, CoroutineStackFrame {
     constructor(delegate: Continuation<T>, info: DebugCoroutineInfoImpl)
     readonly callerFrame: CoroutineStackFrame | null;
     readonly context: CoroutineContext;

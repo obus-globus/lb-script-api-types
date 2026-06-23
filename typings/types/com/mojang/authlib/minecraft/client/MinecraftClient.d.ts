@@ -13,9 +13,9 @@ export class MinecraftClient extends Object {
     // private objectMapper: ObjectMapper;
     // private proxy: Proxy;
     // private createUrlConnection(arg0: URL): HttpURLConnection;
-    get<T extends Object | number | string | boolean>(arg0: URL, arg1: Class<T>): T;
-    post<T extends Object | number | string | boolean>(arg0: URL, arg1: Class<T>): T;
-    post<T extends Object | number | string | boolean>(arg0: URL, arg1: Object, arg2: Class<T>): T;
+    get<T extends unknown>(arg0: URL, arg1: Class<T>): T;
+    post<T extends unknown>(arg0: URL, arg1: Class<T>): T;
+    post<T extends unknown>(arg0: URL, arg1: Object, arg2: Class<T>): T;
     // private postInternal(arg0: URL, arg1: number[]): HttpURLConnection;
-    // private readInputStream<T extends Object | number | string | boolean>(arg0: URL, arg1: Class<T>, arg2: HttpURLConnection): T;
+    // private readInputStream<T extends unknown>(arg0: URL, arg1: Class<T>, arg2: HttpURLConnection): T;
 }

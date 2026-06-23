@@ -3,7 +3,7 @@ import type { ObjectConstructor } from '../../../../../../../com/viaversion/viav
 import type { JsonReader } from '../../../../../../../com/viaversion/viaversion/libs/gson/stream/JsonReader.d.ts'
 import type { JsonWriter } from '../../../../../../../com/viaversion/viaversion/libs/gson/stream/JsonWriter.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class CollectionTypeAdapterFactory$Adapter<E extends Object | number | string | boolean> extends TypeAdapter<E[]> {
+export class CollectionTypeAdapterFactory$Adapter<E extends unknown> extends TypeAdapter<E[]> {
     constructor(arg0: TypeAdapter<E>, arg1: ObjectConstructor<E[]>)
     // private constructor: ObjectConstructor<E[]>;
     // private elementTypeAdapter: TypeAdapter<E>;

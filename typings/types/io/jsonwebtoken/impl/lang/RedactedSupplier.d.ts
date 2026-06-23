@@ -1,6 +1,6 @@
 import type { Supplier } from '../../../../io/jsonwebtoken/lang/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class RedactedSupplier<T extends Object | number | string | boolean> extends Object implements Supplier<T> {
+export class RedactedSupplier<T extends unknown> extends Object implements Supplier<T> {
     static REDACTED_VALUE: string;
     constructor(arg0: T)
     // private value: T;

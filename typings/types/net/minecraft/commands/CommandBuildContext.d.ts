@@ -9,8 +9,8 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 import type { FeatureFlagSet } from '../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export interface CommandBuildContext extends Object, HolderLookup$Provider{
     allRegistriesLifecycle(): Lifecycle;
-    createSerializationContext<V extends Object | number | string | boolean>(parent: DynamicOps<V>): RegistryOps<V>;
+    createSerializationContext<V extends unknown>(parent: DynamicOps<V>): RegistryOps<V>;
     enabledFeatures(): FeatureFlagSet;
     listRegistries(): Stream<HolderLookup$RegistryLookup<Object>>;
-    lookupOrThrow<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): HolderLookup$RegistryLookup<T>;
+    lookupOrThrow<T extends unknown>(key: ResourceKey<T[]>): HolderLookup$RegistryLookup<T>;
 }

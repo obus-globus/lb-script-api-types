@@ -19,6 +19,6 @@ export class ExpressionInitializer extends Initializer {
     exitNode(arg0: ASTListener): void;
     getExpression(): Expression;
     getInitializerType(): Initializer$InitializerType;
-    initializerAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    initializerAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     setExpression(arg0: Expression): void;
 }

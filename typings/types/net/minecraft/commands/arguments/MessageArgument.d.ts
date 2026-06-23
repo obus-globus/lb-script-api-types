@@ -14,5 +14,5 @@ export class MessageArgument extends Object implements SignedArgument<MessageArg
     constructor()
     getExamples(): string[];
     parse(reader: StringReader): MessageArgument$Message;
-    parse<S extends Object | number | string | boolean>(reader: StringReader, source: S): MessageArgument$Message;
+    parse<S extends unknown>(reader: StringReader, source: S): MessageArgument$Message;
 }

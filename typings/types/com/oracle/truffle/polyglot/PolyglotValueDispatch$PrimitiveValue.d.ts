@@ -15,7 +15,7 @@ export class PolyglotValueDispatch$PrimitiveValue extends PolyglotValueDispatch 
     asBigInteger(languageContext: Object, receiver: Object): BigInteger;
     asBoolean(languageContext: Object, receiver: Object): boolean;
     asByte(languageContext: Object, receiver: Object): number;
-    asClass<T extends Object | number | string | boolean>(languageContext: Object, receiver: Object, targetType: Class<T>): T;
+    asClass<T extends unknown>(languageContext: Object, receiver: Object, targetType: Class<T>): T;
     asDouble(languageContext: Object, receiver: Object): number;
     asFloat(languageContext: Object, receiver: Object): number;
     asInt(languageContext: Object, receiver: Object): number;
@@ -23,7 +23,7 @@ export class PolyglotValueDispatch$PrimitiveValue extends PolyglotValueDispatch 
     asShort(languageContext: Object, receiver: Object): number;
     asString(languageContext: Object, receiver: Object): string;
     asStringBytes(languageContext: Object, receiver: Object, encoding: number): number[];
-    asTypeLiteral<T extends Object | number | string | boolean>(languageContext: Object, receiver: Object, rawType: Class<T>, type: Type): T;
+    asTypeLiteral<T extends unknown>(languageContext: Object, receiver: Object, rawType: Class<T>, type: Type): T;
     fitsInBigInteger(languageContext: Object, receiver: Object): boolean;
     fitsInByte(languageContext: Object, receiver: Object): boolean;
     fitsInDouble(languageContext: Object, receiver: Object): boolean;

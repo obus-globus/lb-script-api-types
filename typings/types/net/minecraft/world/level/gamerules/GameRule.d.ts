@@ -15,7 +15,7 @@ import type { GameRuleCategory } from '../../../../../net/minecraft/world/level/
 import type { GameRuleType } from '../../../../../net/minecraft/world/level/gamerules/GameRuleType.d.ts'
 import type { GameRuleTypeVisitor } from '../../../../../net/minecraft/world/level/gamerules/GameRuleTypeVisitor.d.ts'
 import type { GameRules$VisitorCaller } from '../../../../../net/minecraft/world/level/gamerules/GameRules$VisitorCaller.d.ts'
-export class GameRule<T extends Object | number | string | boolean> extends Object implements RuleTypeExtensions, FeatureElement {
+export class GameRule<T extends unknown> extends Object implements RuleTypeExtensions, FeatureElement {
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     constructor(category: GameRuleCategory, gameRuleType: GameRuleType, argument: ArgumentType<T>, visitorCaller: GameRules$VisitorCaller<T>, valueCodec: Codec<T>, commandResultFunction: (param0: T) => number, defaultValue: T, requiredFeatures: FeatureFlagSet)
     // private argument: ArgumentType<T>;

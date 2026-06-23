@@ -16,7 +16,7 @@ export abstract class JsonReader extends Object implements Closeable {
     getFloat(): number;
     getInt(): number;
     getLong(): number;
-    getNullable<T extends Object | number | string | boolean>(arg0: (param0: JsonReader) => T): T;
+    getNullable<T extends unknown>(arg0: (param0: JsonReader) => T): T;
     getRawText(): string;
     getString(): string;
     getText(): string;
@@ -25,13 +25,13 @@ export abstract class JsonReader extends Object implements Closeable {
     isResetSupported(): boolean;
     isStartArrayOrObject(): boolean;
     nextToken(): JsonToken;
-    readArray<T extends Object | number | string | boolean>(arg0: (param0: JsonReader) => T): T[];
+    readArray<T extends unknown>(arg0: (param0: JsonReader) => T): T[];
     readChildren(): string;
     readChildren(arg0: StringBuilder): void;
     // private readInternal(arg0: StringBuilder, arg1: boolean, arg2: boolean): StringBuilder;
-    readMap<T extends Object | number | string | boolean>(arg0: (param0: JsonReader) => T): { [key: string]: T };
-    // private readMapOrObject<T extends Object | number | string | boolean>(arg0: (param0: JsonReader) => T, arg1: boolean): T;
-    readObject<T extends Object | number | string | boolean>(arg0: (param0: JsonReader) => T): T;
+    readMap<T extends unknown>(arg0: (param0: JsonReader) => T): { [key: string]: T };
+    // private readMapOrObject<T extends unknown>(arg0: (param0: JsonReader) => T, arg1: boolean): T;
+    readObject<T extends unknown>(arg0: (param0: JsonReader) => T): T;
     readRemainingFieldsAsJsonObject(): string;
     readRemainingFieldsAsJsonObject(arg0: StringBuilder): void;
     readUntyped(): Object;

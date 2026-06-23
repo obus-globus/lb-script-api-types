@@ -56,6 +56,6 @@ export abstract class AbstractJsonLexer extends Object {
     tryConsumeNull(doConsume: boolean): boolean;
     protected unexpectedToken(expected: string): void;
     // private wasUnquotedString(): boolean;
-    // private withPositionRollback<T extends Object | number | string | boolean>(action: () => T): T;
+    // private withPositionRollback<T extends unknown>(action: () => T): T;
     // private writeRange(fromIndex: number, toIndex: number, currentChunkHasEscape: boolean, consumeChunk: (param0: string) => void): void;
 }

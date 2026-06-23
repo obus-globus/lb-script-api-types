@@ -27,12 +27,12 @@ export class Enchantment$Builder extends Object implements EnchantmentUtil$Build
     fabric$resetModified(): void;
     getDefinition(): Enchantment$EnchantmentDefinition;
     getEffectMap(): DataComponentMap$Builder;
-    // private getEffectsList<E extends Object | number | string | boolean>(type: DataComponentType<E[]>): E[];
-    withEffect<E extends Object | number | string | boolean>(type: DataComponentType<ConditionalEffect<E>[]>, effect: E): Enchantment$Builder;
-    withEffect<E extends Object | number | string | boolean>(type: DataComponentType<ConditionalEffect<E>[]>, effect: E, condition: () => LootItemCondition): Enchantment$Builder;
-    withEffect<E extends Object | number | string | boolean>(type: DataComponentType<TargetedConditionalEffect<E>[]>, enchanted: EnchantmentTarget, affected: EnchantmentTarget, effect: E): Enchantment$Builder;
-    withEffect<E extends Object | number | string | boolean>(type: DataComponentType<TargetedConditionalEffect<E>[]>, enchanted: EnchantmentTarget, affected: EnchantmentTarget, effect: E, condition: () => LootItemCondition): Enchantment$Builder;
+    // private getEffectsList<E extends unknown>(type: DataComponentType<E[]>): E[];
+    withEffect<E extends unknown>(type: DataComponentType<ConditionalEffect<E>[]>, effect: E): Enchantment$Builder;
+    withEffect<E extends unknown>(type: DataComponentType<ConditionalEffect<E>[]>, effect: E, condition: () => LootItemCondition): Enchantment$Builder;
+    withEffect<E extends unknown>(type: DataComponentType<TargetedConditionalEffect<E>[]>, enchanted: EnchantmentTarget, affected: EnchantmentTarget, effect: E): Enchantment$Builder;
+    withEffect<E extends unknown>(type: DataComponentType<TargetedConditionalEffect<E>[]>, enchanted: EnchantmentTarget, affected: EnchantmentTarget, effect: E, condition: () => LootItemCondition): Enchantment$Builder;
     withEffect(type: DataComponentType<EnchantmentAttributeEffect[]>, effect: EnchantmentAttributeEffect): Enchantment$Builder;
     withEffect(type: DataComponentType<Unit>): Enchantment$Builder;
-    withSpecialEffect<E extends Object | number | string | boolean>(type: DataComponentType<E>, effect: E): Enchantment$Builder;
+    withSpecialEffect<E extends unknown>(type: DataComponentType<E>, effect: E): Enchantment$Builder;
 }

@@ -25,7 +25,7 @@ export class ErrorFunctionDescriptor extends SimpleFunctionDescriptorImpl {
     constructor(arg0: ClassDescriptor)
     copy(arg0: DeclarationDescriptor, arg1: Modality, arg2: DescriptorVisibility, arg3: CallableMemberDescriptor$Kind, arg4: boolean): SimpleFunctionDescriptor;
     createSubstitutedCopy(arg0: DeclarationDescriptor, arg1: FunctionDescriptor, arg2: CallableMemberDescriptor$Kind, arg3: Name, arg4: AnnotationDescriptor[], arg5: SourceElement): FunctionDescriptorImpl;
-    getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>): V;
     isSuspend(): boolean;
     newCopyBuilder(): FunctionDescriptor$CopyBuilder<SimpleFunctionDescriptor>;
     newCopyBuilder(arg0: TypeSubstitutor): FunctionDescriptorImpl$CopyConfiguration;

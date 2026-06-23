@@ -32,10 +32,10 @@ export class Request extends Object {
     headers(name: string): string[];
     method(): string;
     newBuilder(): Request$Builder;
-    tag<T extends Object | number | string | boolean>(): T | null;
+    tag<T extends unknown>(): T | null;
     tag(): Object | null;
-    tag<T extends Object | number | string | boolean>(type: Class<T>): T | null;
-    tag<T extends Object | number | string | boolean>(type: KClass<T>): T | null;
+    tag<T extends unknown>(type: Class<T>): T | null;
+    tag<T extends unknown>(type: KClass<T>): T | null;
     toCurl(includeBody: boolean): string;
     toString(): string;
     url(): HttpUrl;

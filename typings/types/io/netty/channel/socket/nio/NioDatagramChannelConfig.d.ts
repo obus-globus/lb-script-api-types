@@ -13,8 +13,8 @@ export class NioDatagramChannelConfig extends DefaultDatagramChannelConfig {
     autoReadCleared(): void;
     getInterface(): InetAddress;
     getNetworkInterface(): NetworkInterface;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
-    // private getOption0<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
+    // private getOption0<T extends unknown>(arg0: SocketOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getTimeToLive(): number;
@@ -23,7 +23,7 @@ export class NioDatagramChannelConfig extends DefaultDatagramChannelConfig {
     setInterface(arg0: InetAddress): DatagramChannelConfig;
     setLoopbackModeDisabled(arg0: boolean): DatagramChannelConfig;
     setNetworkInterface(arg0: NetworkInterface): DatagramChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
-    // private setOption0<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): void;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
+    // private setOption0<T extends unknown>(arg0: SocketOption<T>, arg1: T): void;
     setTimeToLive(arg0: number): DatagramChannelConfig;
 }

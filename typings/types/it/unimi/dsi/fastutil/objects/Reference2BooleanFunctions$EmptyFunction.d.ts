@@ -2,7 +2,7 @@ import type { AbstractReference2BooleanFunction } from '../../../../../it/unimi/
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Reference2BooleanFunctions$EmptyFunction<K extends Object | number | string | boolean> extends AbstractReference2BooleanFunction<K> implements Serializable, Cloneable {
+export class Reference2BooleanFunctions$EmptyFunction<K extends unknown> extends AbstractReference2BooleanFunction<K> implements Serializable, Cloneable {
     constructor()
     clear(): void;
     clone(): Object;

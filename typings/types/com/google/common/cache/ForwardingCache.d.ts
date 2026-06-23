@@ -3,7 +3,7 @@ import type { CacheStats } from '../../../../com/google/common/cache/CacheStats.
 import type { ForwardingObject } from '../../../../com/google/common/collect/ForwardingObject.d.ts'
 import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ForwardingCache<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ForwardingObject implements Cache<K, V> {
+export abstract class ForwardingCache<K extends unknown, V extends unknown> extends ForwardingObject implements Cache<K, V> {
     constructor()
     asMap(): Map<K, V>;
     cleanUp(): void;

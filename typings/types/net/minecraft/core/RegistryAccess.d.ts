@@ -11,12 +11,12 @@ import type { RegistryOps } from '../../../net/minecraft/resources/RegistryOps.d
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 export interface RegistryAccess extends Object, HolderLookup$Provider{
     allRegistriesLifecycle(): Lifecycle;
-    createSerializationContext<V extends Object | number | string | boolean>(parent: DynamicOps<V>): RegistryOps<V>;
+    createSerializationContext<V extends unknown>(parent: DynamicOps<V>): RegistryOps<V>;
     freeze(): RegistryAccess$Frozen;
     listRegistries(): Stream<HolderLookup$RegistryLookup<Object>>;
     listRegistryKeys(): Stream<ResourceKey<(Object | null)[]>>;
-    lookup<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<E[]>;
-    lookupOrThrow<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): HolderLookup$RegistryLookup<T>;
-    lookupOrThrow<E extends Object | number | string | boolean>(name: ResourceKey<E[]>): E[];
+    lookup<E extends unknown>(registryKey: ResourceKey<E[]>): Optional<E[]>;
+    lookupOrThrow<T extends unknown>(key: ResourceKey<T[]>): HolderLookup$RegistryLookup<T>;
+    lookupOrThrow<E extends unknown>(name: ResourceKey<E[]>): E[];
     registries(): Stream<RegistryAccess$RegistryEntry<Object>>;
 }

@@ -2,7 +2,7 @@ import type { SortedSetMultimap } from '../../../../com/google/common/collect/So
 import type { Synchronized$SynchronizedSetMultimap } from '../../../../com/google/common/collect/Synchronized$SynchronizedSetMultimap.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Synchronized$SynchronizedSortedSetMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Synchronized$SynchronizedSetMultimap<K, V> implements SortedSetMultimap<K, V> {
+export class Synchronized$SynchronizedSortedSetMultimap<K extends unknown, V extends unknown> extends Synchronized$SynchronizedSetMultimap<K, V> implements SortedSetMultimap<K, V> {
     constructor(delegate: SortedSetMultimap<K, V>, mutex: Object)
     delegate(): SortedSetMultimap<K, V>;
     get(key: K): V[];

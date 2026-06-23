@@ -23,7 +23,7 @@ export class ValueParameterDescriptorImpl extends VariableDescriptorImpl impleme
     // private isNoinline: boolean;
     readonly original: ValueParameterDescriptor;
     readonly varargElementType: KotlinType;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     copy(arg0: CallableDescriptor, arg1: Name, arg2: number): ValueParameterDescriptor;
     declaresDefaultValue(): boolean;
     getCompileTimeInitializer(): void;

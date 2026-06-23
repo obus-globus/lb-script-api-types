@@ -30,7 +30,7 @@ export abstract class DatagramChannel extends AbstractSelectableChannel implemen
     read(arg0: ByteBuffer[], arg1: number, arg2: number): number;
     receive(arg0: ByteBuffer): SocketAddress;
     send(arg0: ByteBuffer, arg1: SocketAddress): number;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): DatagramChannel;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): DatagramChannel;
     socket(): DatagramSocket;
     validOps(): number;
     write(arg0: ByteBuffer): number;

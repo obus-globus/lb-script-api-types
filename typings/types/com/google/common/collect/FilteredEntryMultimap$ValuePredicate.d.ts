@@ -3,6 +3,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class FilteredEntryMultimap$ValuePredicate extends Object implements Predicate<V> {
     constructor(null_: FilteredEntryMultimap$ValuePredicate)
     // private key: K;
-    apply<V extends Object | number | string | boolean>(value: V): boolean;
-    test<V extends Object | number | string | boolean>(input: V): boolean;
+    apply<V extends unknown>(value: V): boolean;
+    test<V extends unknown>(input: V): boolean;
 }

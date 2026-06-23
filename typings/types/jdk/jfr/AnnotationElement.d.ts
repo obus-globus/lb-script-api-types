@@ -11,7 +11,7 @@ export class AnnotationElement extends Object {
     // private annotationValues: Object[];
     // private inBootClassLoader: boolean;
     // private type: Type;
-    getAnnotation<A extends Object | number | string | boolean>(arg0: Class<Annotation>): A;
+    getAnnotation<A extends unknown>(arg0: Class<Annotation>): A;
     getAnnotationElements(): AnnotationElement[];
     getType(): Type;
     getTypeId(): number;

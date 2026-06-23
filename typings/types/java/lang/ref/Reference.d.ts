@@ -1,6 +1,6 @@
 import type { ReferenceQueue } from '../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class Reference<T extends Object | number | string | boolean> extends Object {
+export class Reference<T extends unknown> extends Object {
     static reachabilityFence(paramarg0: Object): void;
     constructor(arg0: T)
     constructor(arg0: T, arg1: ReferenceQueue<T>)

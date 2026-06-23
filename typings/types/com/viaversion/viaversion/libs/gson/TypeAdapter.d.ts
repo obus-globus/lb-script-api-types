@@ -4,7 +4,7 @@ import type { JsonWriter } from '../../../../../com/viaversion/viaversion/libs/g
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { Writer } from '../../../../../java/io/Writer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class TypeAdapter<T extends Object | number | string | boolean> extends Object {
+export abstract class TypeAdapter<T extends unknown> extends Object {
     constructor()
     fromJson(arg0: Reader): T;
     fromJson(arg0: string): T;

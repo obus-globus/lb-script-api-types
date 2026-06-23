@@ -3,7 +3,7 @@ import type { ObjectCharPair } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectCharImmutablePair<K extends Object | number | string | boolean> extends Object implements ObjectCharPair<K>, Serializable {
+export class ObjectCharImmutablePair<K extends unknown> extends Object implements ObjectCharPair<K>, Serializable {
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: Object | null, paramarg1: string): ObjectCharImmutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: string): ObjectCharPair<Object>;

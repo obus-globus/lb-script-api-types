@@ -1,7 +1,7 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { KProperty } from '../../kotlin/reflect/KProperty.d.ts'
 import type { TraceBase } from '../../kotlinx/atomicfu/TraceBase.d.ts'
-export class AtomicRef<T extends Object | number | string | boolean> extends Object {
+export class AtomicRef<T extends unknown> extends Object {
     constructor(value: T, trace: TraceBase)
     readonly trace: TraceBase;
     value: T;

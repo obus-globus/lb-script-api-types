@@ -8,7 +8,7 @@ import type { GameRule } from '../../../../net/minecraft/world/level/gamerules/G
 export interface NotificationService extends Object{
     ipBanned(ban: IpBanListEntry): void;
     ipUnbanned(ip: string): void;
-    onGameRuleChanged<T extends Object | number | string | boolean>(gameRule: GameRule<T>, value: T): void;
+    onGameRuleChanged<T extends unknown>(gameRule: GameRule<T>, value: T): void;
     playerAddedToAllowlist(player: NameAndId): void;
     playerBanned(ban: UserBanListEntry): void;
     playerDeoped(operator: ServerOpListEntry): void;

@@ -4,7 +4,7 @@ import type { ClassNode } from '../../../../../../org/objectweb/asm/tree/ClassNo
 import type { FieldNode } from '../../../../../../org/objectweb/asm/tree/FieldNode.d.ts'
 import type { MethodNode } from '../../../../../../org/objectweb/asm/tree/MethodNode.d.ts'
 import type { ElementNode$NodeType } from '../../../../../../org/spongepowered/asm/mixin/injection/selectors/ElementNode$NodeType.d.ts'
-export abstract class ElementNode<TNode extends Object | number | string | boolean> extends Object {
+export abstract class ElementNode<TNode extends unknown> extends Object {
     static dynamicInsnList(paramarg0: AbstractInsnNode[]): ElementNode<AbstractInsnNode>[];
     static fieldList(paramarg0: ClassNode): ElementNode<FieldNode>[];
     static insnList(paramarg0: AbstractInsnNode[]): ElementNode<AbstractInsnNode>[];

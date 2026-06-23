@@ -6,7 +6,7 @@ import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptor
 import type { Decoder } from '../../../kotlinx/serialization/encoding/Decoder.d.ts'
 import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.ts'
 import type { JsonElement } from '../../../kotlinx/serialization/json/JsonElement.d.ts'
-export abstract class JsonContentPolymorphicSerializer<T extends Object | number | string | boolean> extends Object implements KSerializer<T> {
+export abstract class JsonContentPolymorphicSerializer<T extends unknown> extends Object implements KSerializer<T> {
     constructor(baseClass: KClass<T>)
     // private baseClass: KClass<T>;
     readonly descriptor: SerialDescriptor;

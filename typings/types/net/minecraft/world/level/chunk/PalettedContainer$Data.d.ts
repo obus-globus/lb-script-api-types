@@ -4,7 +4,7 @@ import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/Frien
 import type { BitStorage } from '../../../../../net/minecraft/util/BitStorage.d.ts'
 import type { Configuration } from '../../../../../net/minecraft/world/level/chunk/Configuration.d.ts'
 import type { Palette } from '../../../../../net/minecraft/world/level/chunk/Palette.d.ts'
-export class PalettedContainer$Data<T extends Object | number | string | boolean> extends Record {
+export class PalettedContainer$Data<T extends unknown> extends Record {
     constructor(configuration: Configuration, storage: BitStorage, palette: Palette<T>)
     // private configuration: Configuration;
     // private palette: Palette<T>;

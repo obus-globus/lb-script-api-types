@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AbstractMapBasedMultimap } from '../../../../../../../org/spongepowered/include/com/google/common/collect/AbstractMapBasedMultimap.d.ts'
 import type { SetMultimap } from '../../../../../../../org/spongepowered/include/com/google/common/collect/SetMultimap.d.ts'
-export abstract class AbstractSetMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractMapBasedMultimap<K, V> implements SetMultimap<K, V> {
+export abstract class AbstractSetMultimap<K extends unknown, V extends unknown> extends AbstractMapBasedMultimap<K, V> implements SetMultimap<K, V> {
     constructor(arg0: Map<K, V[]>)
     asMap(): Map<K, V[]>;
     createCollection(): V[];

@@ -8,7 +8,7 @@ import type { IntBinaryOperator } from '../../../java/util/function/IntBinaryOpe
 import type { ToIntFunction } from '../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
-export class ConcurrentHashMap$MapReduceEntriesToIntTask<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ConcurrentHashMap$BulkTask<K, V, number> {
+export class ConcurrentHashMap$MapReduceEntriesToIntTask<K extends unknown, V extends unknown> extends ConcurrentHashMap$BulkTask<K, V, number> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { PasswordProvider } from '../../../../../../../org/apache/logging/log4j/core/net/ssl/PasswordProvider.d.ts'
-export class StoreConfiguration<T extends Object | number | string | boolean> extends Object {
+export class StoreConfiguration<T extends unknown> extends Object {
     constructor(location: string, password: string[])
     constructor(location: string, password: string)
     constructor(location: string, passwordProvider: () => string[])

@@ -4,5 +4,5 @@ export class TruffleFile$Attributes extends Object {
     constructor(queriedAttributes: TruffleFile$AttributeDescriptor<Object>[], delegate: { [key: string]: Object })
     // private delegate: { [key: string]: Object };
     // private queriedAttributes: TruffleFile$AttributeDescriptor<Object>[];
-    get<T extends Object | number | string | boolean>(descriptor: TruffleFile$AttributeDescriptor<T>): T;
+    get<T extends unknown>(descriptor: TruffleFile$AttributeDescriptor<T>): T;
 }

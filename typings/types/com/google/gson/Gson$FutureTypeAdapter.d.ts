@@ -3,7 +3,7 @@ import type { SerializationDelegatingTypeAdapter } from '../../../com/google/gso
 import type { JsonReader } from '../../../com/google/gson/stream/JsonReader.d.ts'
 import type { JsonWriter } from '../../../com/google/gson/stream/JsonWriter.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class Gson$FutureTypeAdapter<T extends Object | number | string | boolean> extends SerializationDelegatingTypeAdapter<T> {
+export class Gson$FutureTypeAdapter<T extends unknown> extends SerializationDelegatingTypeAdapter<T> {
     constructor()
     readonly delegate: TypeAdapter<T>;
     // private delegate(): TypeAdapter<T>;

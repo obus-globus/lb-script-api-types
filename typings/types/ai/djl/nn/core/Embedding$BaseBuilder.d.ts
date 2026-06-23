@@ -2,7 +2,7 @@ import type { SparseFormat } from '../../../../ai/djl/ndarray/types/SparseFormat
 import type { AbstractIndexedEmbedding } from '../../../../ai/djl/nn/core/AbstractIndexedEmbedding.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class Embedding$BaseBuilder<T extends Object | number | string | boolean, B extends Embedding$BaseBuilder<T, B>> extends Object {
+export abstract class Embedding$BaseBuilder<T extends unknown, B extends Embedding$BaseBuilder<T, B>> extends Object {
     constructor()
     // private defaultItem: T;
     // private embeddingSize: number;

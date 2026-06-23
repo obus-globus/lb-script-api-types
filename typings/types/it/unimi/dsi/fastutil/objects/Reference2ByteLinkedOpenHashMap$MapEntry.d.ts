@@ -18,17 +18,17 @@ export class Reference2ByteLinkedOpenHashMap$MapEntry extends Object implements 
     equals(arg0: Object | null): boolean;
     getByteValue(): number;
     hashCode(): number;
-    left<K extends Object | number | string | boolean>(): K;
-    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    left<K extends unknown>(): K;
+    left<K extends unknown>(arg0: K): Pair<K, number>;
     right(): number;
-    right<K extends Object | number | string | boolean>(arg0: number): ReferenceBytePair<K>;
+    right<K extends unknown>(arg0: number): ReferenceBytePair<K>;
     rightByte(): number;
     second(): number;
-    second<K extends Object | number | string | boolean>(arg0: number): ReferenceBytePair<K>;
+    second<K extends unknown>(arg0: number): ReferenceBytePair<K>;
     secondByte(): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value<K extends Object | number | string | boolean>(arg0: number): ReferenceBytePair<K>;
+    value<K extends unknown>(arg0: number): ReferenceBytePair<K>;
     valueByte(): number;
 }

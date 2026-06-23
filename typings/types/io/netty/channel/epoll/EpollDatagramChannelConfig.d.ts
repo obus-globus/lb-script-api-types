@@ -19,7 +19,7 @@ export class EpollDatagramChannelConfig extends EpollChannelConfig implements Da
     getInterface(): InetAddress;
     getMaxDatagramPayloadSize(): number;
     getNetworkInterface(): NetworkInterface;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
@@ -51,7 +51,7 @@ export class EpollDatagramChannelConfig extends EpollChannelConfig implements Da
     setMaxMessagesPerWrite(arg0: number): EpollDatagramChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): EpollDatagramChannelConfig;
     setNetworkInterface(arg0: NetworkInterface): EpollDatagramChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setReceiveBufferSize(arg0: number): EpollDatagramChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): EpollDatagramChannelConfig;
     setReuseAddress(arg0: boolean): EpollDatagramChannelConfig;

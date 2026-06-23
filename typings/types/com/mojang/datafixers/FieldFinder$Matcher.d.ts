@@ -5,13 +5,13 @@ import type { Type$TypeMatcher } from '../../../com/mojang/datafixers/types/Type
 import type { Either } from '../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class FieldFinder$Matcher<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean> extends Object implements Type$TypeMatcher<FT, FR> {
+export class FieldFinder$Matcher<FT extends unknown, FR extends unknown> extends Object implements Type$TypeMatcher<FT, FR> {
     constructor(arg0: string, arg1: Type<FT>, arg2: Type<FR>)
     // private name: string;
     // private resultType: Type<FR>;
     // private type: Type<FT>;
-    // private capChoice<V extends Object | number | string | boolean>(arg0: Type<Object>): TypedOptic<Pair<FT, V>, Object, FT, FT>;
+    // private capChoice<V extends unknown>(arg0: Type<Object>): TypedOptic<Pair<FT, V>, Object, FT, FT>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    match<S extends Object | number | string | boolean>(arg0: Type<S>): Either<TypedOptic<S, Object, FT, FR>, Type$FieldNotFoundException>;
+    match<S extends unknown>(arg0: Type<S>): Either<TypedOptic<S, Object, FT, FR>, Type$FieldNotFoundException>;
 }

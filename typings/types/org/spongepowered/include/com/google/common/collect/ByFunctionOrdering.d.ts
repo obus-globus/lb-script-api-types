@@ -3,7 +3,7 @@ import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Function } from '../../../../../../../org/spongepowered/include/com/google/common/base/Function.d.ts'
 import type { Ordering } from '../../../../../../../org/spongepowered/include/com/google/common/collect/Ordering.d.ts'
-export class ByFunctionOrdering<F extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Ordering<F> implements Serializable {
+export class ByFunctionOrdering<F extends unknown, T extends unknown> extends Ordering<F> implements Serializable {
     static from(paramarg0: (param0: Object) => boolean): Ordering<Object>;
     constructor(arg0: (param0: Object) => boolean, arg1: Ordering<T>)
     // private function: (param0: Object) => boolean;

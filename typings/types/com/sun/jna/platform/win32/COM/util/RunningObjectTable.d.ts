@@ -9,5 +9,5 @@ export class RunningObjectTable extends Object implements IRunningObjectTable {
     // private factory: ObjectFactory;
     // private raw: RunningObjectTable_2;
     enumRunning(): IDispatch[];
-    getActiveObjectsByInterface<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
+    getActiveObjectsByInterface<T extends unknown>(arg0: Class<T>): T[];
 }

@@ -6,7 +6,7 @@ import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
 import type { RunnableFuture } from '../../../../java/util/concurrent/RunnableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-export class PromiseTask<V extends Object | number | string | boolean> extends DefaultPromise<V> implements RunnableFuture<V> {
+export class PromiseTask<V extends unknown> extends DefaultPromise<V> implements RunnableFuture<V> {
     static PROPERTY_MAX_LISTENER_STACK_DEPTH: string;
     constructor(arg0: (Object | null)[], arg1: () => void)
     constructor(arg0: (Object | null)[], arg1: () => void, arg2: V)

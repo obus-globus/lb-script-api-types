@@ -3,7 +3,7 @@ import type { LinkedImmutableMap$LinkedIterator } from '../../../../../com/oracl
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
-export class LinkedImmutableMap$LinkedKeyIterator<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends LinkedImmutableMap$LinkedIterator<K, V> implements Iterator<K> {
+export class LinkedImmutableMap$LinkedKeyIterator<K extends unknown, V extends unknown> extends LinkedImmutableMap$LinkedIterator<K, V> implements Iterator<K> {
     constructor(map: Map<K, V>, start: LinkedImmutableMap$LinkedEntry<K, V>, forward: boolean)
     forEachRemaining(arg0: (param0: K) => void): void;
     next(): K;

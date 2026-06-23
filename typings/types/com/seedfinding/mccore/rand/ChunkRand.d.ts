@@ -22,7 +22,7 @@ export class ChunkRand extends JRand {
     constructor(arg0: number, arg1: boolean)
     asChunkRandDebugger(): ChunkRand$Debugger;
     getInt(arg0: number, arg1: number): number;
-    getRandom<T extends Object | number | string | boolean>(arg0: T[]): T;
+    getRandom<T extends unknown>(arg0: T[]): T;
     setBaseStoneSeed(arg0: number, arg1: number, arg2: number, arg3: number): number;
     setCarverSeed(arg0: number, arg1: number, arg2: number, arg3: MCVersion): number;
     setDecoratorSeed(arg0: number, arg1: number, arg2: MCVersion): number;

@@ -7,9 +7,9 @@ import type { PermissionLevel } from '../../../../../../net/minecraft/server/per
 export interface MutablePermissionContext extends Object, PermissionContext{
     getPermissionContext(): PermissionContext;
     mutable(): MutablePermissionContext;
-    orElse<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>, arg1: T): T;
+    orElse<T extends unknown>(arg0: PermissionContext$Key<T>, arg1: T): T;
     permissionLevel(): PermissionLevel;
-    set<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>, arg1: T): MutablePermissionContext;
+    set<T extends unknown>(arg0: PermissionContext$Key<T>, arg1: T): MutablePermissionContext;
     type(): PermissionContext$Type;
     uuid(): UUID;
 }

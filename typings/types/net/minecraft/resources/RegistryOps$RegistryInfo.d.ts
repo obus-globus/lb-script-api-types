@@ -4,7 +4,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { HolderGetter } from '../../../net/minecraft/core/HolderGetter.d.ts'
 import type { HolderLookup$RegistryLookup } from '../../../net/minecraft/core/HolderLookup$RegistryLookup.d.ts'
 import type { HolderOwner } from '../../../net/minecraft/core/HolderOwner.d.ts'
-export class RegistryOps$RegistryInfo<T extends Object | number | string | boolean> extends Record {
+export class RegistryOps$RegistryInfo<T extends unknown> extends Record {
     static fromRegistryLookup(paramregistry: HolderLookup$RegistryLookup<Object>): RegistryOps$RegistryInfo<Object>;
     constructor(owner: HolderOwner<T>, getter: HolderGetter<T>, elementsLifecycle: Lifecycle)
     // private elementsLifecycle: Lifecycle;

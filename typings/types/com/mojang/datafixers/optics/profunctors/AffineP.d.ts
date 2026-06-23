@@ -11,8 +11,8 @@ import type { Either } from '../../../../../com/mojang/datafixers/util/Either.d.
 import type { Pair } from '../../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface AffineP<P extends K2, Mu extends AffineP$Mu> extends Cartesian<P, Mu>, Cocartesian<P, Mu>, Object{
-    right<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>): App2<P, Either<C, A>, Either<C, B>>;
-    second<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>): App2<P, Pair<C, A>, Pair<C, B>>;
+    right<C extends unknown, A extends unknown, B extends unknown>(arg0: App2<P, A, B>): App2<P, Either<C, A>, Either<C, B>>;
+    second<C extends unknown, A extends unknown, B extends unknown>(arg0: App2<P, A, B>): App2<P, Pair<C, A>, Pair<C, B>>;
     toFP(): FunctorProfunctor<CocartesianLike$Mu, P, FunctorProfunctor$Mu<CocartesianLike$Mu>>;
     toFP2(): FunctorProfunctor<CartesianLike$Mu, P, FunctorProfunctor$Mu<CartesianLike$Mu>>;
 }

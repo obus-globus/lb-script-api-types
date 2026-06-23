@@ -10,7 +10,7 @@ import type { DependentValue } from '../../../../../../../net/caffeinemc/mods/so
 import type { DynamicValue } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/value/DynamicValue.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export abstract class StatefulOption<V extends Object | number | string | boolean> extends Option {
+export abstract class StatefulOption<V extends unknown> extends Option {
     constructor(arg0: Identifier, arg1: Identifier[], arg2: Component, arg3: DependentValue<boolean>, arg4: () => void, arg5: (param0: V) => Component, arg6: OptionImpact, arg7: Identifier[], arg8: DependentValue<V>, arg9: boolean, arg10: OptionBinding<V>, arg11: (param0: ConfigState) => void)
     // private applyDependents: DynamicValue<Object>[];
     readonly applyHook: (param0: ConfigState) => void;

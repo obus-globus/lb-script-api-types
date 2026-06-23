@@ -3,7 +3,7 @@ import type { CancellableContinuationImpl } from '../../../kotlinx/coroutines/Ca
 import type { Waiter } from '../../../kotlinx/coroutines/Waiter.d.ts'
 import type { ChannelResult } from '../../../kotlinx/coroutines/channels/ChannelResult.d.ts'
 import type { Segment } from '../../../kotlinx/coroutines/internal/Segment.d.ts'
-export class ReceiveCatching<E extends Object | number | string | boolean> extends Object implements Waiter {
+export class ReceiveCatching<E extends unknown> extends Object implements Waiter {
     constructor(cont: CancellableContinuationImpl<ChannelResult<E>>)
     cont: CancellableContinuationImpl<ChannelResult<E>>;
     invokeOnCancellation(segment: Segment<any>, index: number): void;

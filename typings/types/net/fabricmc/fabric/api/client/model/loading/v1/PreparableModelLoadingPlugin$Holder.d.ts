@@ -5,7 +5,7 @@ import type { ModelLoadingPlugin$Context } from '../../../../../../../../net/fab
 import type { PreparableModelLoadingPlugin } from '../../../../../../../../net/fabricmc/fabric/api/client/model/loading/v1/PreparableModelLoadingPlugin.d.ts'
 import type { PreparableModelLoadingPlugin$DataLoader } from '../../../../../../../../net/fabricmc/fabric/api/client/model/loading/v1/PreparableModelLoadingPlugin$DataLoader.d.ts'
 import type { PreparableReloadListener$SharedState } from '../../../../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
-export interface PreparableModelLoadingPlugin$Holder<T extends Object | number | string | boolean> extends Object {
+export interface PreparableModelLoadingPlugin$Holder<T extends unknown> extends Object {
     loader(): (param0: PreparableReloadListener$SharedState, param1: Executor) => CompletableFuture<T>;
     plugin(): (param0: T, param1: ModelLoadingPlugin$Context) => void;
 }

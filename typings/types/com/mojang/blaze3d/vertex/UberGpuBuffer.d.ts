@@ -12,7 +12,7 @@ import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class UberGpuBuffer<T extends Object | number | string | boolean> extends Object implements AutoCloseable {
+export class UberGpuBuffer<T extends unknown> extends Object implements AutoCloseable {
     constructor(name: string, usage: number, heapSize: number, alignSize: number, gpuDevice: GpuDevice, stagingBufferSize: number, workarounds: GraphicsWorkarounds)
     // private alignSize: number;
     // private allocationMap: Map<T, TlsfAllocator$Allocation>;

@@ -2,7 +2,7 @@ import type { ObjectBigListIterator } from '../../../../../it/unimi/dsi/fastutil
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectBigListIterators$BigListIteratorListIterator<K extends Object | number | string | boolean> extends Object implements ObjectBigListIterator<K> {
+export class ObjectBigListIterators$BigListIteratorListIterator<K extends unknown> extends Object implements ObjectBigListIterator<K> {
     constructor(arg0: ObjectListIterator<K>)
     // private i: ObjectListIterator<K>;
     add(arg0: K): void;

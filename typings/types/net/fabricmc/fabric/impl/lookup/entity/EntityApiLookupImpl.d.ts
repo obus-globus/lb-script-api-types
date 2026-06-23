@@ -8,7 +8,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
-export class EntityApiLookupImpl<A extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object implements EntityApiLookup<A, C> {
+export class EntityApiLookupImpl<A extends unknown, C extends unknown> extends Object implements EntityApiLookup<A, C> {
     static checkSelfImplementingTypes(paramarg0: MinecraftServer): void;
     static get(paramarg0: Identifier, paramarg1: Class<Object>, paramarg2: Class<Object>): EntityApiLookup<Object, Object>;
     static get(paramarg0: Identifier, paramarg1: Class<Object>, paramarg2: Class<Object>): EntityApiLookup<Object, Object>;

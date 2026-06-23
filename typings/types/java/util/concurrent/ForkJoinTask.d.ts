@@ -10,7 +10,7 @@ import type { Future$State } from '../../../java/util/concurrent/Future$State.d.
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export abstract class ForkJoinTask<V extends Object | number | string | boolean> extends Object implements Serializable, Future<V> {
+export abstract class ForkJoinTask<V extends unknown> extends Object implements Serializable, Future<V> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

@@ -106,7 +106,7 @@ export class TruffleLanguage$Env extends Object {
     getTimeZone(): ZoneId;
     getTruffleFileInternal(uri: URI, filter: (param0: TruffleFile) => boolean): TruffleFile;
     getTruffleFileInternal(path: string, filter: (param0: TruffleFile) => boolean): TruffleFile;
-    // private getTruffleFileInternalImpl<P extends Object | number | string | boolean>(path: P, isStdLibFile: (param0: TruffleFile) => boolean, truffleFileFactory: TruffleLanguage$Env$TruffleFileFactory<P>): TruffleFile;
+    // private getTruffleFileInternalImpl<P extends unknown>(path: P, isStdLibFile: (param0: TruffleFile) => boolean, truffleFileFactory: TruffleLanguage$Env$TruffleFileFactory<P>): TruffleFile;
     importSymbol(symbolName: string): Object;
     in(): InputStream;
     initializeLanguage(targetLanguage: LanguageInfo): boolean;
@@ -129,9 +129,9 @@ export class TruffleLanguage$Env extends Object {
     isPreInitialization(): boolean;
     isSocketIOAllowed(): boolean;
     isVisible(value: Object): boolean;
-    lookup<S extends Object | number | string | boolean>(instrument: InstrumentInfo, type: Class<S>): S;
-    lookup<S extends Object | number | string | boolean>(language: LanguageInfo, type: Class<S>): S;
-    lookup<T extends Object | number | string | boolean>(type: Class<T>): T;
+    lookup<S extends unknown>(instrument: InstrumentInfo, type: Class<S>): S;
+    lookup<S extends unknown>(language: LanguageInfo, type: Class<S>): S;
+    lookup<T extends unknown>(type: Class<T>): T;
     lookupHostSymbol(symbolName: string): Object;
     newContextBuilder(): TruffleContext$Builder;
     newInnerContextBuilder(permittedLanguages: string[]): TruffleContext$Builder;

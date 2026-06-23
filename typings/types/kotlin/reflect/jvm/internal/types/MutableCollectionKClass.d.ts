@@ -8,7 +8,7 @@ import type { KTypeParameter } from '../../../../../kotlin/reflect/KTypeParamete
 import type { KVisibility } from '../../../../../kotlin/reflect/KVisibility.d.ts'
 import type { KTypeParameterOwnerImpl } from '../../../../../kotlin/reflect/jvm/internal/KTypeParameterOwnerImpl.d.ts'
 import type { TypeConstructorMarker } from '../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeConstructorMarker.d.ts'
-export class MutableCollectionKClass<T extends Object | number | string | boolean> extends Object implements KClass<T>, KTypeParameterOwnerImpl, TypeConstructorMarker {
+export class MutableCollectionKClass<T extends unknown> extends Object implements KClass<T>, KTypeParameterOwnerImpl, TypeConstructorMarker {
     constructor(klass: KClass<T>, qualifiedName: string, createTypeParameters: (param0: MutableCollectionKClass<T>) => KTypeParameter[], createSupertypes: (param0: MutableCollectionKClass<T>) => KType[])
     readonly annotations: Annotation[];
     readonly constructors: KFunction<T>[];

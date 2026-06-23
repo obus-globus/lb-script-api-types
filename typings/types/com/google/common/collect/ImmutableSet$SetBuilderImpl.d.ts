@@ -1,5 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ImmutableSet$SetBuilderImpl<E extends Object | number | string | boolean> extends Object {
+export abstract class ImmutableSet$SetBuilderImpl<E extends unknown> extends Object {
     constructor(toCopy: ImmutableSet$SetBuilderImpl<E>)
     constructor(expectedCapacity: number)
     // private dedupedElements: E[];

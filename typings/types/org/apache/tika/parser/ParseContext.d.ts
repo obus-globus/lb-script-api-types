@@ -5,10 +5,10 @@ export class ParseContext extends Object implements Serializable {
     constructor()
     // private context: { [key: string]: Object };
     equals(arg0: Object | null): boolean;
-    get<T extends Object | number | string | boolean>(arg0: Class<T>): T;
-    get<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: T): T;
+    get<T extends unknown>(arg0: Class<T>): T;
+    get<T extends unknown>(arg0: Class<T>, arg1: T): T;
     hashCode(): number;
     isEmpty(): boolean;
     keySet(): string[];
-    set<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: T): void;
+    set<T extends unknown>(arg0: Class<T>, arg1: T): void;
 }

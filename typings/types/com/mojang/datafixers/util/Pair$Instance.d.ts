@@ -9,13 +9,13 @@ import type { Pair$Instance$Mu } from '../../../../com/mojang/datafixers/util/Pa
 import type { Pair$Mu } from '../../../../com/mojang/datafixers/util/Pair$Mu.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Pair$Instance<S2 extends Object | number | string | boolean> extends Object implements CartesianLike<Pair$Mu<S2>, S2, Pair$Instance$Mu<S2>>, Traversable<Pair$Mu<S2>, Pair$Instance$Mu<S2>> {
+export class Pair$Instance<S2 extends unknown> extends Object implements CartesianLike<Pair$Mu<S2>, S2, Pair$Instance$Mu<S2>>, Traversable<Pair$Mu<S2>, Pair$Instance$Mu<S2>> {
     static unbox(paramarg0: App<CartesianLike$Mu, K1>): CartesianLike<K1, Object, CartesianLike$Mu>;
     static unbox(paramarg0: App<Traversable$Mu, K1>): Traversable<K1, Traversable$Mu>;
     constructor()
-    flip<F extends K1, A extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: App<Pair$Mu<S2>, App<F, A>>): App<F, App<Pair$Mu<S2>, A>>;
-    from<A extends Object | number | string | boolean>(arg0: App<Pair$Mu<S2>, A>): App<Pair$Mu<S2>, A>;
-    map<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: (param0: T) => R, arg1: App<Pair$Mu<S2>, T>): App<Pair$Mu<S2>, R>;
-    to<A extends Object | number | string | boolean>(arg0: App<Pair$Mu<S2>, A>): App<Pair$Mu<S2>, A>;
-    traverse<F extends K1, B extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: (param0: A) => App<F, B>, arg2: App<Pair$Mu<S2>, A>): App<F, App<Pair$Mu<S2>, B>>;
+    flip<F extends K1, A extends unknown>(arg0: Applicative<F, any>, arg1: App<Pair$Mu<S2>, App<F, A>>): App<F, App<Pair$Mu<S2>, A>>;
+    from<A extends unknown>(arg0: App<Pair$Mu<S2>, A>): App<Pair$Mu<S2>, A>;
+    map<R extends unknown, T extends unknown>(arg0: (param0: T) => R, arg1: App<Pair$Mu<S2>, T>): App<Pair$Mu<S2>, R>;
+    to<A extends unknown>(arg0: App<Pair$Mu<S2>, A>): App<Pair$Mu<S2>, A>;
+    traverse<F extends K1, B extends unknown, A extends unknown>(arg0: Applicative<F, any>, arg1: (param0: A) => App<F, B>, arg2: App<Pair$Mu<S2>, A>): App<F, App<Pair$Mu<S2>, B>>;
 }

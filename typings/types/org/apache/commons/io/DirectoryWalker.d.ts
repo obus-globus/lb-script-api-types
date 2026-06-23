@@ -3,7 +3,7 @@ import type { FileFilter } from '../../../../java/io/FileFilter.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { DirectoryWalker$CancelException } from '../../../../org/apache/commons/io/DirectoryWalker$CancelException.d.ts'
 import type { IOFileFilter } from '../../../../org/apache/commons/io/filefilter/IOFileFilter.d.ts'
-export abstract class DirectoryWalker<T extends Object | number | string | boolean> extends Object {
+export abstract class DirectoryWalker<T extends unknown> extends Object {
     constructor()
     constructor(arg0: (param0: File) => boolean, arg1: number)
     constructor(arg0: IOFileFilter, arg1: IOFileFilter, arg2: number)

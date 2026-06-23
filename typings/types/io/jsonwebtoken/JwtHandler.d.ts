@@ -3,7 +3,7 @@ import type { Jws } from '../../io/jsonwebtoken/Jws.d.ts'
 import type { Jwt } from '../../io/jsonwebtoken/Jwt.d.ts'
 import type { JwtVisitor } from '../../io/jsonwebtoken/JwtVisitor.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export interface JwtHandler<T extends Object | number | string | boolean> extends JwtVisitor<T>, Object{
+export interface JwtHandler<T extends unknown> extends JwtVisitor<T>, Object{
     onClaimsJwe(arg0: Jwe<{ [key: string]: any }>): T;
     onClaimsJws(arg0: Jws<{ [key: string]: any }>): T;
     onClaimsJwt(arg0: Jwt<{ [key: string]: any }, { [key: string]: any }>): T;

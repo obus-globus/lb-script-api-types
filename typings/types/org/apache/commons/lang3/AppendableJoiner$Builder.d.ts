@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { AppendableJoiner } from '../../../../org/apache/commons/lang3/AppendableJoiner.d.ts'
 import type { FailableBiConsumer } from '../../../../org/apache/commons/lang3/function/FailableBiConsumer.d.ts'
-export class AppendableJoiner$Builder<T extends Object | number | string | boolean> extends Object implements Supplier<AppendableJoiner<T>> {
+export class AppendableJoiner$Builder<T extends unknown> extends Object implements Supplier<AppendableJoiner<T>> {
     constructor()
     // private appender: (param0: Appendable, param1: T) => void;
     // private delimiter: CharSequence;

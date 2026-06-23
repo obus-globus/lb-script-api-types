@@ -1,7 +1,7 @@
 import type { ReferenceCounted } from '../../../io/netty/util/ReferenceCounted.d.ts'
 import type { SocketAddress } from '../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface AddressedEnvelope<M extends Object | number | string | boolean, A extends SocketAddress> extends ReferenceCounted, Object{
+export interface AddressedEnvelope<M extends unknown, A extends SocketAddress> extends ReferenceCounted, Object{
     content(): M;
     recipient(): A;
     refCnt(): number;

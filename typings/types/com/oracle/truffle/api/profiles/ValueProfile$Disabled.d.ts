@@ -11,7 +11,7 @@ export class ValueProfile$Disabled extends ValueProfile {
     static inline(paramtarget: InlineSupport$InlineTarget): InlinedExactClassProfile;
     constructor()
     clone(): Object;
-    profile<T extends Object | number | string | boolean>(value: T): T;
+    profile<T extends unknown>(value: T): T;
     toString(): string;
     toString(profileClass: Class<Object>, uninitialized: boolean, generic: boolean, specialization: string): string;
 }

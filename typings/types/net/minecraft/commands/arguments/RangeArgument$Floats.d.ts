@@ -12,5 +12,5 @@ export class RangeArgument$Floats extends Object implements RangeArgument<MinMax
     constructor()
     getExamples(): string[];
     parse(reader: StringReader): MinMaxBounds$Doubles;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): MinMaxBounds$Doubles;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): MinMaxBounds$Doubles;
 }

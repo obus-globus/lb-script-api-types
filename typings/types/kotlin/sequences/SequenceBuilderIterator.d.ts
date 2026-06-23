@@ -7,7 +7,7 @@ import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { Sequence } from '../../kotlin/sequences/Sequence.d.ts'
 import type { SequenceScope } from '../../kotlin/sequences/SequenceScope.d.ts'
-export class SequenceBuilderIterator<T extends Object | number | string | boolean> extends SequenceScope<T> implements Iterator<T>, Continuation<void> {
+export class SequenceBuilderIterator<T extends unknown> extends SequenceScope<T> implements Iterator<T>, Continuation<void> {
     constructor()
     readonly context: CoroutineContext;
     // private nextIterator: Iterator<T> | null;

@@ -6,7 +6,7 @@ import type { BinaryOperator } from '../../../../java/util/function/BinaryOperat
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class SingletonImmutableTable<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ImmutableTable<R, C, V> {
+export class SingletonImmutableTable<R extends unknown, C extends unknown, V extends unknown> extends ImmutableTable<R, C, V> {
     static builder(): ImmutableTable$Builder<Object, Object, Object>;
     static copyOf(paramtable: Table<Object, Object, Object>): ImmutableTable<Object, Object, Object>;
     static of(): ImmutableTable<Object, Object, Object>;

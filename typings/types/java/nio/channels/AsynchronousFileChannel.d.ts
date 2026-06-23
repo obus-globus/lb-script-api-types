@@ -15,15 +15,15 @@ export abstract class AsynchronousFileChannel extends Object implements Asynchro
     force(arg0: boolean): void;
     isOpen(): boolean;
     lock(): Future<FileLock>;
-    lock<A extends Object | number | string | boolean>(arg0: A, arg1: CompletionHandler<FileLock, A>): void;
+    lock<A extends unknown>(arg0: A, arg1: CompletionHandler<FileLock, A>): void;
     lock(arg0: number, arg1: number, arg2: boolean): Future<FileLock>;
-    lock<A extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean, arg3: A, arg4: CompletionHandler<FileLock, A>): void;
+    lock<A extends unknown>(arg0: number, arg1: number, arg2: boolean, arg3: A, arg4: CompletionHandler<FileLock, A>): void;
     read(arg0: ByteBuffer, arg1: number): Future<number>;
-    read<A extends Object | number | string | boolean>(arg0: ByteBuffer, arg1: number, arg2: A, arg3: CompletionHandler<number, A>): void;
+    read<A extends unknown>(arg0: ByteBuffer, arg1: number, arg2: A, arg3: CompletionHandler<number, A>): void;
     size(): number;
     truncate(arg0: number): AsynchronousFileChannel;
     tryLock(): FileLock;
     tryLock(arg0: number, arg1: number, arg2: boolean): FileLock;
     write(arg0: ByteBuffer, arg1: number): Future<number>;
-    write<A extends Object | number | string | boolean>(arg0: ByteBuffer, arg1: number, arg2: A, arg3: CompletionHandler<number, A>): void;
+    write<A extends unknown>(arg0: ByteBuffer, arg1: number, arg2: A, arg3: CompletionHandler<number, A>): void;
 }

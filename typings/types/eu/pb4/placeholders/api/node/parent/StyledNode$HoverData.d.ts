@@ -4,7 +4,7 @@ import type { NodeParser } from '../../../../../../eu/pb4/placeholders/api/parse
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { HoverEvent } from '../../../../../../net/minecraft/network/chat/HoverEvent.d.ts'
-export class StyledNode$HoverData<T extends Object | number | string | boolean> extends Record {
+export class StyledNode$HoverData<T extends unknown> extends Record {
     constructor(action: HoverNode$Action<T, Object>, data: T)
     // private action: HoverNode$Action<T, Object>;
     // private data: T;

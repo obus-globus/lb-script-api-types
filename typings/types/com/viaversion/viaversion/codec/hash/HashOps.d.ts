@@ -14,7 +14,7 @@ export class HashOps extends OpsBase implements Hasher {
     // private hashBuilder: HashBuilder;
     hash(): number;
     reset(): void;
-    write<V extends Object | number | string | boolean>(arg0: Type<V>, arg1: V): void;
+    write<V extends unknown>(arg0: Type<V>, arg1: V): void;
     writeBoolean(arg0: boolean): void;
     writeByte(arg0: number): void;
     writeBytes(arg0: number[]): void;

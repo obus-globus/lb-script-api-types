@@ -5,6 +5,6 @@ import type { GameRule } from '../../../../../net/raphimc/viabedrock/protocol/mo
 export class GameRulesStorage extends StoredObject {
     constructor(arg0: UserConnection, arg1: GameRule[])
     // private gameRules: { [key: string]: Object };
-    getGameRule<T extends Object | number | string | boolean>(arg0: string): T;
+    getGameRule<T extends unknown>(arg0: string): T;
     updateGameRules(arg0: GameRule[]): void;
 }

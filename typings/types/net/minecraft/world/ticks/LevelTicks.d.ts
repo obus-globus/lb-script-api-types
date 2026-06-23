@@ -10,7 +10,7 @@ import type { LevelChunkTicks } from '../../../../net/minecraft/world/ticks/Leve
 import type { LevelTickAccess } from '../../../../net/minecraft/world/ticks/LevelTickAccess.d.ts'
 import type { LevelTicks$PosAndContainerConsumer } from '../../../../net/minecraft/world/ticks/LevelTicks$PosAndContainerConsumer.d.ts'
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
-export class LevelTicks<T extends Object | number | string | boolean> extends Object implements LevelTickAccess<T> {
+export class LevelTicks<T extends unknown> extends Object implements LevelTickAccess<T> {
     constructor(tickCheck: (param0: number) => boolean)
     // private allContainers: { [key: string]: any };
     // private alreadyRunThisTick: ScheduledTick<T>[];

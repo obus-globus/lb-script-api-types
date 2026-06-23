@@ -7,7 +7,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 export interface DynamicRegistryView extends Object {
     asRegistryAccess(): RegistryAccess;
-    getOptional<T extends Object | number | string | boolean>(arg0: ResourceKey<T[]>): Optional<T[]>;
-    registerEntryAdded<T extends Object | number | string | boolean>(arg0: ResourceKey<T[]>, arg1: (param0: number, param1: Identifier, param2: T) => void): void;
+    getOptional<T extends unknown>(arg0: ResourceKey<T[]>): Optional<T[]>;
+    registerEntryAdded<T extends unknown>(arg0: ResourceKey<T[]>, arg1: (param0: number, param1: Identifier, param2: T) => void): void;
     stream(): Stream<(Object | null)[]>;
 }

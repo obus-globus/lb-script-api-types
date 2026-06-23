@@ -114,7 +114,7 @@ export class ComponentRewriter1_20_5<C extends ClientboundPacketType> extends Js
     customNameToTag(arg0: Tag): StringTag;
     damageFromTag(arg0: Tag): number;
     damageToTag(arg0: number): IntTag;
-    dataConverter<T extends Object | number | string | boolean>(arg0: StructuredDataKey<T>): (param0: UserConnection, param1: T) => Tag;
+    dataConverter<T extends unknown>(arg0: StructuredDataKey<T>): (param0: UserConnection, param1: T) => Tag;
     debugStickStateFromTag(arg0: Tag): DebugStickState;
     debugStickStateToTag(arg0: DebugStickState): Map$Entry<string, Tag>[];
     dyeColorFromTag(arg0: Tag): number;
@@ -213,13 +213,13 @@ export class ComponentRewriter1_20_5<C extends ClientboundPacketType> extends Js
     propertiesToTag(arg0: Map$Entry<string, Tag>[], arg1: GameProfile$Property[]): void;
     rarityFromTag(arg0: Tag): number;
     rarityToTag(arg0: number): StringTag;
-    readFromTag<T extends Object | number | string | boolean>(arg0: UserConnection, arg1: StructuredDataKey<T>, arg2: number, arg3: Tag): StructuredData<T>;
+    readFromTag<T extends unknown>(arg0: UserConnection, arg1: StructuredDataKey<T>, arg2: number, arg3: Tag): StructuredData<T>;
     // private readFromTag(arg0: UserConnection, arg1: string, arg2: Tag): StructuredData<Object>;
     recipesFromTag(arg0: Tag): Tag;
     recipesToTag(arg0: Tag): Tag;
-    register<T extends Object | number | string | boolean>(arg0: StructuredDataKey<T>, arg1: (param0: UserConnection, param1: T) => Tag, arg2: (param0: UserConnection, param1: Tag) => T): void;
-    register<T extends Object | number | string | boolean>(arg0: StructuredDataKey<T>, arg1: (param0: T) => Tag, arg2: (param0: Tag) => T): void;
-    registerEmpty<T extends Object | number | string | boolean>(arg0: StructuredDataKey<T>): void;
+    register<T extends unknown>(arg0: StructuredDataKey<T>, arg1: (param0: UserConnection, param1: T) => Tag, arg2: (param0: UserConnection, param1: Tag) => T): void;
+    register<T extends unknown>(arg0: StructuredDataKey<T>, arg1: (param0: T) => Tag, arg2: (param0: Tag) => T): void;
+    registerEmpty<T extends unknown>(arg0: StructuredDataKey<T>): void;
     repairCostFromTag(arg0: Tag): number;
     repairCostToTag(arg0: number): IntTag;
     storedEnchantmentsFromTag(arg0: Tag): Enchantments;
@@ -227,7 +227,7 @@ export class ComponentRewriter1_20_5<C extends ClientboundPacketType> extends Js
     stringToTag(arg0: string, arg1: number, arg2: number): StringTag;
     suspiciousStewEffectsFromTag(arg0: Tag): SuspiciousStewEffect[];
     suspiciousStewEffectsToTag(arg0: SuspiciousStewEffect[]): Map$Entry<string, Tag>[][];
-    tagConverter<T extends Object | number | string | boolean>(arg0: StructuredDataKey<T>): (param0: UserConnection, param1: Tag) => T;
+    tagConverter<T extends unknown>(arg0: StructuredDataKey<T>): (param0: UserConnection, param1: Tag) => T;
     toData(arg0: UserConnection, arg1: Map$Entry<string, Tag>[]): StructuredData<Object>[];
     toTag(arg0: UserConnection, arg1: Map<StructuredDataKey<Object>, StructuredData<Object>>): Map$Entry<string, Tag>[];
     toolFromTag(arg0: Tag): ToolProperties;

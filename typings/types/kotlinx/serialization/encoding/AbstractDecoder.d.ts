@@ -31,12 +31,12 @@ export abstract class AbstractDecoder extends Object implements CompositeDecoder
     decodeLongElement(descriptor: SerialDescriptor, index: number): number;
     decodeNotNullMark(): boolean;
     decodeNull(): void | null;
-    decodeNullableSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T | null;
-    decodeNullableSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T | null;
+    decodeNullableSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T | null;
+    decodeNullableSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T | null;
     decodeSequentially(): boolean;
-    decodeSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
-    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
-    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeShort(): number;
     decodeShortElement(descriptor: SerialDescriptor, index: number): number;
     decodeString(): string;

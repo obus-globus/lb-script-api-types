@@ -5,7 +5,7 @@ import type { ModuleElement$ProvidesDirective } from '../../../../javax/lang/mod
 import type { ModuleElement$RequiresDirective } from '../../../../javax/lang/model/element/ModuleElement$RequiresDirective.d.ts'
 import type { ModuleElement$UsesDirective } from '../../../../javax/lang/model/element/ModuleElement$UsesDirective.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface ModuleElement$DirectiveVisitor<R extends Object | number | string | boolean, P extends Object | number | string | boolean> extends Object{
+export interface ModuleElement$DirectiveVisitor<R extends unknown, P extends unknown> extends Object{
     visit(arg0: ModuleElement$Directive): R;
     visit(arg0: ModuleElement$Directive, arg1: P): R;
     visitExports(arg0: ModuleElement$ExportsDirective, arg1: P): R;

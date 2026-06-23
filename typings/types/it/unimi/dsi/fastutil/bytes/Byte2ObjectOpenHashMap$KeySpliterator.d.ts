@@ -19,7 +19,7 @@ export class Byte2ObjectOpenHashMap$KeySpliterator extends Byte2ObjectOpenHashMa
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => number;
-    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Byte2ObjectOpenHashMap$KeySpliterator;
+    makeForSplit<V extends unknown>(arg0: number, arg1: number, arg2: boolean): Byte2ObjectOpenHashMap$KeySpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
 }

@@ -20,7 +20,7 @@ import type { Enchantment } from '../../../../net/minecraft/world/item/enchantme
 import type { ConfiguredFeature } from '../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
 import type { Structure } from '../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 import type { Timeline } from '../../../../net/minecraft/world/timeline/Timeline.d.ts'
-export class ResourceArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<Holder$Reference<T>> {
+export class ResourceArgument<T extends unknown> extends Object implements ArgumentType<Holder$Reference<T>> {
     static ERROR_INVALID_RESOURCE_TYPE: Dynamic3CommandExceptionType;
     static ERROR_UNKNOWN_RESOURCE: Dynamic2CommandExceptionType;
     static getAttribute(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Attribute>;
@@ -38,8 +38,8 @@ export class ResourceArgument<T extends Object | number | string | boolean> exte
     // private registryKey: ResourceKey<T[]>;
     // private registryLookup: HolderLookup<T>;
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Holder$Reference<T>;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends unknown>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): Holder$Reference<T>;
     parse(reader: StringReader): Holder$Reference<T>;
 }

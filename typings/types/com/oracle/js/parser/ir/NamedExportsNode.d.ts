@@ -10,7 +10,7 @@ export class NamedExportsNode extends Node {
     constructor(token: number, start: number, finish: number, exportSpecifiers: ExportSpecifierNode[])
     readonly exportSpecifiers: ExportSpecifierNode[];
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getExportSpecifiers(): ExportSpecifierNode[];
     setExportSpecifiers(exportSpecifiers: ExportSpecifierNode[]): NamedExportsNode;
     toString(): string;

@@ -2,7 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MetadataSectionType } from '../../../../../net/minecraft/server/packs/metadata/MetadataSectionType.d.ts'
-export class MetadataSectionType$WithValue<T extends Object | number | string | boolean> extends Record {
+export class MetadataSectionType$WithValue<T extends unknown> extends Record {
     constructor(type: MetadataSectionType<T>, value: T)
     // private type: MetadataSectionType<T>;
     // private value: T;
@@ -10,6 +10,6 @@ export class MetadataSectionType$WithValue<T extends Object | number | string | 
     hashCode(): number;
     toString(): string;
     type(): MetadataSectionType<T>;
-    unwrapToType<U extends Object | number | string | boolean>(type: MetadataSectionType<U>): Optional<U>;
+    unwrapToType<U extends unknown>(type: MetadataSectionType<U>): Optional<U>;
     value(): T;
 }

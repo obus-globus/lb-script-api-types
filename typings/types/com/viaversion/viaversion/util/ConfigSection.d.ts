@@ -11,13 +11,13 @@ export class ConfigSection extends Object {
     values: { [key: string]: Object };
     contains(arg0: string): boolean;
     // private fullKeyInPath(arg0: string): string;
-    get<T extends Object | number | string | boolean>(arg0: string): T;
-    get<T extends Object | number | string | boolean>(arg0: string, arg1: T): T;
+    get<T extends unknown>(arg0: string): T;
+    get<T extends unknown>(arg0: string, arg1: T): T;
     getBoolean(arg0: string, arg1: boolean): boolean;
     getDouble(arg0: string, arg1: number): number;
     getInt(arg0: string, arg1: number): number;
     getIntegerList(arg0: string): number[];
-    getListSafe<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>, arg2: string): T[];
+    getListSafe<T extends unknown>(arg0: string, arg1: Class<T>, arg2: string): T[];
     getSection(arg0: string): ConfigSection;
     getSerializedComponent(arg0: string): JsonElement;
     getString(arg0: string, arg1: string): string;

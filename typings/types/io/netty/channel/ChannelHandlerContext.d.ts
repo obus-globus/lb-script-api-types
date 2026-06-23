@@ -15,7 +15,7 @@ import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
 export interface ChannelHandlerContext extends ChannelInboundInvoker, ChannelOutboundInvoker, AttributeMap, Object{
     alloc(): ByteBufAllocator;
-    attr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): Attribute<T>;
+    attr<T extends unknown>(arg0: AttributeKey<T>): Attribute<T>;
     bind(arg0: SocketAddress): ChannelFuture;
     bind(arg0: SocketAddress, arg1: ChannelPromise): ChannelFuture;
     channel(): Channel;
@@ -40,7 +40,7 @@ export interface ChannelHandlerContext extends ChannelInboundInvoker, ChannelOut
     fireUserEventTriggered(arg0: Object): ChannelHandlerContext;
     flush(): ChannelHandlerContext;
     handler(): ChannelHandler;
-    hasAttr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): boolean;
+    hasAttr<T extends unknown>(arg0: AttributeKey<T>): boolean;
     isRemoved(): boolean;
     name(): string;
     newFailedFuture(arg0: Throwable): ChannelFuture;

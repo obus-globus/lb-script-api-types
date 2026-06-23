@@ -12,7 +12,7 @@ import type { CommandNode } from '../../../../com/mojang/brigadier/tree/CommandN
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ArgumentCommandNode<S extends Object | number | string | boolean, T extends Object | number | string | boolean> extends CommandNode<S> {
+export class ArgumentCommandNode<S extends unknown, T extends unknown> extends CommandNode<S> {
     constructor(arg0: string, arg1: ArgumentType<T>, arg2: (param0: CommandContext<S>) => number, arg3: (param0: S) => boolean, arg4: CommandNode<S>, arg5: (param0: CommandContext<S>) => S[], arg6: boolean, arg7: (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>)
     readonly customSuggestions: (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     readonly name: string;

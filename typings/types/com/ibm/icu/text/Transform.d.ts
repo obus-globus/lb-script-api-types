@@ -1,4 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Transform<S extends Object | number | string | boolean, D extends Object | number | string | boolean> extends Object{
+export interface Transform<S extends unknown, D extends unknown> extends Object{
     transform(arg0: S): D;
 }

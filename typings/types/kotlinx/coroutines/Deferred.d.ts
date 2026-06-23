@@ -5,7 +5,7 @@ import type { ChildHandle } from '../../kotlinx/coroutines/ChildHandle.d.ts'
 import type { ChildJob } from '../../kotlinx/coroutines/ChildJob.d.ts'
 import type { Job } from '../../kotlinx/coroutines/Job.d.ts'
 import type { SelectClause1 } from '../../kotlinx/coroutines/selects/SelectClause1.d.ts'
-export interface Deferred<T extends Object | number | string | boolean> extends Object, Job{
+export interface Deferred<T extends unknown> extends Object, Job{
     readonly onAwait: SelectClause1<T>;
     attachChild(child: ChildJob): ChildHandle;
     await(): T;

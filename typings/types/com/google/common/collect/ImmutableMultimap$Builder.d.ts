@@ -4,7 +4,7 @@ import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class ImmutableMultimap$Builder<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export class ImmutableMultimap$Builder<K extends unknown, V extends unknown> extends Object {
     constructor()
     constructor(expectedKeys: number)
     // private builderMap: Map<K, ImmutableCollection$Builder<V>>;

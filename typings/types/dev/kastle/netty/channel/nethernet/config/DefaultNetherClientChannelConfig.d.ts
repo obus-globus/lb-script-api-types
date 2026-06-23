@@ -6,10 +6,10 @@ export class DefaultNetherClientChannelConfig extends DefaultNetherChannelConfig
     constructor(arg0: Channel)
     // private clientHandshakeTimeoutMs: number;
     // private maxHandshakeAttempts: number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     setClientHandshakeTimeoutMs(arg0: number): void;
     setMaxHandshakeAttempts(arg0: number): void;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
 }

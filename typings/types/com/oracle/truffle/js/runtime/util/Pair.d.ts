@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class Pair<T extends Object | number | string | boolean, U extends Object | number | string | boolean> extends Object {
+export class Pair<T extends unknown, U extends unknown> extends Object {
     constructor(first: T, second: U)
     readonly first: T;
     readonly second: U;

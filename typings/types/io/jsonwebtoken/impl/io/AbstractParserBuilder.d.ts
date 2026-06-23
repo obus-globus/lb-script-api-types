@@ -2,7 +2,7 @@ import type { Deserializer } from '../../../../io/jsonwebtoken/io/Deserializer.d
 import type { Parser } from '../../../../io/jsonwebtoken/io/Parser.d.ts'
 import type { ParserBuilder } from '../../../../io/jsonwebtoken/io/ParserBuilder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class AbstractParserBuilder<T extends Object | number | string | boolean, B extends ParserBuilder<T, B>> extends Object implements ParserBuilder<T, B> {
+export abstract class AbstractParserBuilder<T extends unknown, B extends ParserBuilder<T, B>> extends Object implements ParserBuilder<T, B> {
     constructor()
     // private deserializer: Deserializer<{ [key: string]: Object | null }>;
     // private provider: { [key: string]: any };

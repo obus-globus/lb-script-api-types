@@ -26,7 +26,7 @@ export interface Protocol<CU extends ClientboundPacketType, CM extends Clientbou
     cancelServerbound(arg0: SU): void;
     cancelServerbound(arg0: State, arg1: number): void;
     dependsOn(): Class<Protocol<any, any, any, any>>;
-    get<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    get<T extends unknown>(arg0: Class<T>): T;
     getComponentRewriter(): ComponentRewriter;
     getEntityRewriter(): EntityRewriter<any>;
     getItemRewriter(): ItemRewriter<any>;

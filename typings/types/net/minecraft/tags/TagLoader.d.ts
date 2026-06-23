@@ -13,7 +13,7 @@ import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 import type { TagLoader$ElementLookup } from '../../../net/minecraft/tags/TagLoader$ElementLookup.d.ts'
 import type { TagLoader$EntryWithSource } from '../../../net/minecraft/tags/TagLoader$EntryWithSource.d.ts'
 import type { TagNetworkSerialization$NetworkPayload } from '../../../net/minecraft/tags/TagNetworkSerialization$NetworkPayload.d.ts'
-export class TagLoader<T extends Object | number | string | boolean> extends Object {
+export class TagLoader<T extends unknown> extends Object {
     static buildUpdatedLookups(paramregistries: RegistryAccess$Frozen, paramtags: Registry$PendingTags<Object>[]): HolderLookup$RegistryLookup<Object>[];
     static loadTagsForExistingRegistries(parammanager: ResourceManager, paramlayer: RegistryAccess): Registry$PendingTags<Object>[];
     static loadTagsForRegistry(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramlookup: TagLoader$ElementLookup<Holder<Object>>): Map<TagKey<Object>, Holder<Object>[]>;

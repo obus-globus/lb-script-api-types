@@ -7,7 +7,7 @@ import type { HoverEvent$Action } from '../../../../../../net/minecraft/network/
 import type { HoverEvent$ShowEntity } from '../../../../../../net/minecraft/network/chat/HoverEvent$ShowEntity.d.ts'
 import type { HoverEvent$ShowItem } from '../../../../../../net/minecraft/network/chat/HoverEvent$ShowItem.d.ts'
 import type { HoverEvent$ShowText } from '../../../../../../net/minecraft/network/chat/HoverEvent$ShowText.d.ts'
-export class HoverNode$Action<T extends Object | number | string | boolean, H extends Object | number | string | boolean> extends Record {
+export class HoverNode$Action<T extends unknown, H extends unknown> extends Record {
     static ENTITY_NODE: HoverNode$Action<HoverNode$EntityNodeContent, HoverEvent$ShowEntity>;
     static LAZY_ITEM_STACK: HoverNode$Action<HoverNode$LazyItemStackNodeContent<Object>, HoverEvent$ShowItem>;
     static TEXT_NODE: HoverNode$Action<TextNode, HoverEvent$ShowText>;

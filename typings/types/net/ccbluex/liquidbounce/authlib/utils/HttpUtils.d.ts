@@ -13,7 +13,7 @@ export class HttpUtils extends Object {
     HEADERS_JSON_RESPONSE: Pair<string, string>[];
     MEDIA_TYPE_JSON: MediaType;
     get(url: string, headers: Pair<string, string>[]): Pair<number, string>;
-    post<T extends Object | number | string | boolean>(url: string, data: Object): T;
+    post<T extends unknown>(url: string, data: Object): T;
     post(url: string, data: string, headers: Pair<string, string>[]): Pair<number, string>;
     post(url: string, data: RequestBody, headers: Pair<string, string>[]): Pair<number, string>;
     // private request(url: string, method: string, body: RequestBody | null, headers: Pair<string, string>[]): Pair<number, string>;

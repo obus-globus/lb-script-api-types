@@ -5,7 +5,7 @@ import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class LocalCache$LocalManualCache<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Cache<K, V>, Serializable {
+export class LocalCache$LocalManualCache<K extends unknown, V extends unknown> extends Object implements Cache<K, V>, Serializable {
     constructor(builder: CacheBuilder<K, V>)
     private constructor(localCache: Map<K, V>)
     // private localCache: Map<K, V>;

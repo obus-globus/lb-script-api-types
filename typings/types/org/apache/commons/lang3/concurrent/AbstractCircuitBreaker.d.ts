@@ -4,7 +4,7 @@ import type { AtomicReference } from '../../../../../java/util/concurrent/atomic
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractCircuitBreaker$State } from '../../../../../org/apache/commons/lang3/concurrent/AbstractCircuitBreaker$State.d.ts'
 import type { CircuitBreaker } from '../../../../../org/apache/commons/lang3/concurrent/CircuitBreaker.d.ts'
-export abstract class AbstractCircuitBreaker<T extends Object | number | string | boolean> extends Object implements CircuitBreaker<T> {
+export abstract class AbstractCircuitBreaker<T extends unknown> extends Object implements CircuitBreaker<T> {
     static PROPERTY_NAME: string;
     constructor()
     // private changeSupport: PropertyChangeSupport;

@@ -17,7 +17,7 @@ export abstract class TruffleSafepoint extends Object {
     hasPendingSideEffectingActions(): boolean;
     setAllowActions(enabled: boolean): boolean;
     setAllowSideEffects(enabled: boolean): boolean;
-    setBlocked<T extends Object | number | string | boolean>(location: Node, interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => void, object: T, beforeInterrupt: () => void, afterInterrupt: (param0: Throwable) => void): void;
-    setBlockedFunction<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(location: Node, interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => R, object: T, beforeInterrupt: () => void, afterInterrupt: (param0: Throwable) => void): R;
-    setBlockedWithException<T extends Object | number | string | boolean>(location: Node, interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => void, object: T, beforeInterrupt: () => void, afterInterrupt: (param0: Throwable) => void): void;
+    setBlocked<T extends unknown>(location: Node, interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => void, object: T, beforeInterrupt: () => void, afterInterrupt: (param0: Throwable) => void): void;
+    setBlockedFunction<R extends unknown, T extends unknown>(location: Node, interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => R, object: T, beforeInterrupt: () => void, afterInterrupt: (param0: Throwable) => void): R;
+    setBlockedWithException<T extends unknown>(location: Node, interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => void, object: T, beforeInterrupt: () => void, afterInterrupt: (param0: Throwable) => void): void;
 }

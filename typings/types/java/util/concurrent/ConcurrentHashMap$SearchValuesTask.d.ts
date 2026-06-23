@@ -7,7 +7,7 @@ import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.
 import type { AtomicReference } from '../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ConcurrentHashMap$SearchValuesTask<K extends Object | number | string | boolean, V extends Object | number | string | boolean, U extends Object | number | string | boolean> extends ConcurrentHashMap$BulkTask<K, V, U> {
+export class ConcurrentHashMap$SearchValuesTask<K extends unknown, V extends unknown, U extends unknown> extends ConcurrentHashMap$BulkTask<K, V, U> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

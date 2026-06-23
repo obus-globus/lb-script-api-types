@@ -14,7 +14,7 @@ import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { DynamicOps } from '../../../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Sum$SumType<F extends Object | number | string | boolean, G extends Object | number | string | boolean> extends Type<Either<F, G>> {
+export class Sum$SumType<F extends unknown, G extends unknown> extends Type<Either<F, G>> {
     static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
     static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
     constructor(arg0: Type<F>, arg1: Type<G>)
@@ -24,17 +24,17 @@ export class Sum$SumType<F extends Object | number | string | boolean, G extends
     all(arg0: TypeRewriteRule, arg1: boolean, arg2: boolean): RewriteResult<Either<F, G>, Object>;
     buildCodec(): Codec<Either<F, G>>;
     buildTemplate(): TypeTemplate;
-    // private capLeft<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean, F2 extends Object | number | string | boolean>(arg0: TypedOptic<F, F2, FT, FR>): TypedOptic<Either<F, G>, Object, FT, FR>;
-    // private capRight<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean, G2 extends Object | number | string | boolean>(arg0: TypedOptic<G, G2, FT, FR>): TypedOptic<Either<F, G>, Object, FT, FR>;
+    // private capLeft<FT extends unknown, FR extends unknown, F2 extends unknown>(arg0: TypedOptic<F, F2, FT, FR>): TypedOptic<Either<F, G>, Object, FT, FR>;
+    // private capRight<FT extends unknown, FR extends unknown, G2 extends unknown>(arg0: TypedOptic<G, G2, FT, FR>): TypedOptic<Either<F, G>, Object, FT, FR>;
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
     equals(arg0: Object | null): boolean;
     findCheckedType(arg0: number): Optional<Type<Object>>;
     findChoiceType(arg0: string, arg1: number): Optional<TaggedChoice$TaggedChoiceType<Object>>;
     findFieldTypeOpt(arg0: string): Optional<Type<Object>>;
-    findTypeInChildren<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<Either<F, G>, Object, FT, FR>, Type$FieldNotFoundException>;
+    findTypeInChildren<FT extends unknown, FR extends unknown>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<Either<F, G>, Object, FT, FR>, Type$FieldNotFoundException>;
     first(): Type<F>;
     hashCode(): number;
-    mergeViews<F2 extends Object | number | string | boolean, G2 extends Object | number | string | boolean>(arg0: RewriteResult<F, F2>, arg1: RewriteResult<G, G2>): RewriteResult<Either<F, G>, Object>;
+    mergeViews<F2 extends unknown, G2 extends unknown>(arg0: RewriteResult<F, F2>, arg1: RewriteResult<G, G2>): RewriteResult<Either<F, G>, Object>;
     one(arg0: TypeRewriteRule): Optional<RewriteResult<Either<F, G>, Object>>;
     point(arg0: DynamicOps<Object>): Optional<Either<F, G>>;
     second(): Type<G>;

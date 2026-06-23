@@ -4,7 +4,7 @@ import type { NullabilityAnnotationStates$Companion } from '../../../../../../..
 import type { FqName } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
 import type { LockBasedStorageManager } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/LockBasedStorageManager.d.ts'
 import type { MemoizedFunctionToNullable } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/MemoizedFunctionToNullable.d.ts'
-export class NullabilityAnnotationStatesImpl<T extends Object | number | string | boolean> extends Object implements NullabilityAnnotationStates<T> {
+export class NullabilityAnnotationStatesImpl<T extends unknown> extends Object implements NullabilityAnnotationStates<T> {
     static Companion: NullabilityAnnotationStates$Companion;
     constructor(arg0: Map<FqName, T>)
     // private cache: MemoizedFunctionToNullable<FqName, T>;

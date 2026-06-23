@@ -20,9 +20,9 @@ export class NullOps extends Object implements DynamicOps<Unit> {
     static INSTANCE: NullOps;
     private constructor()
     compressMaps(): boolean;
-    convertList<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Unit): U;
-    convertMap<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Unit): U;
-    convertTo<U extends Object | number | string | boolean>(outOps: DynamicOps<U>, input: Unit): U;
+    convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: Unit): U;
+    convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: Unit): U;
+    convertTo<U extends unknown>(outOps: DynamicOps<U>, input: Unit): U;
     createBoolean(arg0: boolean): Unit;
     createBoolean(value: boolean): Unit;
     createByte(arg0: number): Unit;
@@ -89,7 +89,7 @@ export class NullOps extends Object implements DynamicOps<Unit> {
     toString(): string;
     update(arg0: Unit, arg1: string, arg2: (param0: Unit) => Unit): Unit;
     updateGeneric(arg0: Unit, arg1: Unit, arg2: (param0: Unit) => Unit): Unit;
-    withDecoder<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: Unit) => DataResult<Pair<E, Unit>>;
-    withEncoder<E extends Object | number | string | boolean>(arg0: Encoder<E>): (param0: E) => DataResult<Unit>;
-    withParser<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: Unit) => DataResult<E>;
+    withDecoder<E extends unknown>(arg0: Decoder<E>): (param0: Unit) => DataResult<Pair<E, Unit>>;
+    withEncoder<E extends unknown>(arg0: Encoder<E>): (param0: E) => DataResult<Unit>;
+    withParser<E extends unknown>(arg0: Decoder<E>): (param0: Unit) => DataResult<E>;
 }

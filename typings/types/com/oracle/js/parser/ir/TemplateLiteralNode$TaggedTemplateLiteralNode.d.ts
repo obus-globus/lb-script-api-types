@@ -13,7 +13,7 @@ export class TemplateLiteralNode$TaggedTemplateLiteralNode extends TemplateLiter
     readonly cookedStrings: Expression[];
     readonly rawStrings: Expression[];
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getCookedStrings(): Expression[];
     getRawStrings(): Expression[];
     toString(): string;

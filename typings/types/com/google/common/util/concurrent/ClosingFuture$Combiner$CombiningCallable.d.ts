@@ -1,6 +1,6 @@
 import type { ClosingFuture$DeferredCloser } from '../../../../../com/google/common/util/concurrent/ClosingFuture$DeferredCloser.d.ts'
 import type { ClosingFuture$Peeker } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Peeker.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ClosingFuture$Combiner$CombiningCallable<V extends Object | number | string | boolean> extends Object{
+export interface ClosingFuture$Combiner$CombiningCallable<V extends unknown> extends Object{
     call(closer: ClosingFuture$DeferredCloser, peeker: ClosingFuture$Peeker): V;
 }

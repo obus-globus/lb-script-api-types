@@ -3,7 +3,7 @@ import type { ClassValue$Entry } from '../../java/lang/ClassValue$Entry.d.ts'
 import type { ClassValue$Identity } from '../../java/lang/ClassValue$Identity.d.ts'
 import type { ClassValue$Version } from '../../java/lang/ClassValue$Version.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export abstract class ClassValue<T extends Object | number | string | boolean> extends Object {
+export abstract class ClassValue<T extends unknown> extends Object {
     constructor()
     // private hashCodeForCache: number;
     // private identity: ClassValue$Identity;

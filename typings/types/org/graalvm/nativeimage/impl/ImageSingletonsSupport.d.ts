@@ -4,7 +4,7 @@ export abstract class ImageSingletonsSupport extends Object {
     static get(): ImageSingletonsSupport;
     static isInstalled(): boolean;
     constructor()
-    add<T extends Object | number | string | boolean>(key: Class<T>, value: T): void;
+    add<T extends unknown>(key: Class<T>, value: T): void;
     contains(key: Class<Object>): boolean;
-    lookup<T extends Object | number | string | boolean>(key: Class<T>): T;
+    lookup<T extends unknown>(key: Class<T>): T;
 }

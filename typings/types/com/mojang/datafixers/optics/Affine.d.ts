@@ -10,7 +10,7 @@ import type { AffineP$Mu } from '../../../../com/mojang/datafixers/optics/profun
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Affine<S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends App2<Affine$Mu<A, B>, S, T>, Optic<AffineP$Mu, S, T, A, B>, Object{
+export interface Affine<S extends unknown, T extends unknown, A extends unknown, B extends unknown> extends App2<Affine$Mu<A, B>, S, T>, Optic<AffineP$Mu, S, T, A, B>, Object{
     eval<P extends K2>(arg0: App<AffineP$Mu, P>): FunctionType<App2<P, A, B>, App2<P, S, T>>;
     preview(arg0: S): Either<T, A>;
     set(arg0: B, arg1: S): T;

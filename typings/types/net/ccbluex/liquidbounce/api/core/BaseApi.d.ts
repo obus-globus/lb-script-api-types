@@ -15,16 +15,16 @@ export abstract class BaseApi extends Object {
     // private baseUrl: string;
     // private /*not mapped: */ getBaseUrl(): string;
     readonly defaultHeaders: Pair<string, string>[];
-    protected delete<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
-    protected get<T extends Object | number | string | boolean>(endpoint: string, headers: (param0: Headers$Builder) => void): T;
-    protected head<T extends Object | number | string | boolean>(endpoint: string, headers: (param0: Headers$Builder) => void): T;
-    protected patch<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
-    protected post<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
-    protected put<T extends Object | number | string | boolean>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
+    protected delete<T extends unknown>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
+    protected get<T extends unknown>(endpoint: string, headers: (param0: Headers$Builder) => void): T;
+    protected head<T extends unknown>(endpoint: string, headers: (param0: Headers$Builder) => void): T;
+    protected patch<T extends unknown>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
+    protected post<T extends unknown>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
+    protected put<T extends unknown>(endpoint: string, body: RequestBody | null, headers: (param0: Headers$Builder) => void): T;
     /**
      * Makes a request and parses the response to the specified type
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt:43}
      */
-    protected request<T extends Object | number | string | boolean>(endpoint: string, method: HttpMethod, headers: (param0: Headers$Builder) => void, body: RequestBody | null): T;
+    protected request<T extends unknown>(endpoint: string, method: HttpMethod, headers: (param0: Headers$Builder) => void, body: RequestBody | null): T;
 }

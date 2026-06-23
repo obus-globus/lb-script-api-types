@@ -8,12 +8,12 @@ import type { MapEncoder } from '../../../com/mojang/serialization/MapEncoder.d.
 import type { RecordBuilder } from '../../../com/mojang/serialization/RecordBuilder.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class MapEncoder$Implementation<A extends Object | number | string | boolean> extends CompressorHolder implements MapEncoder<A> {
+export abstract class MapEncoder$Implementation<A extends unknown> extends CompressorHolder implements MapEncoder<A> {
     static makeCompressedBuilder(paramarg0: DynamicOps<Object>, paramarg1: KeyCompressor<Object>): RecordBuilder<Object>;
     constructor()
-    comap<B extends Object | number | string | boolean>(arg0: (param0: B) => A): MapEncoder<B>;
-    compressedBuilder<T extends Object | number | string | boolean>(arg0: DynamicOps<T>): RecordBuilder<T>;
+    comap<B extends unknown>(arg0: (param0: B) => A): MapEncoder<B>;
+    compressedBuilder<T extends unknown>(arg0: DynamicOps<T>): RecordBuilder<T>;
     encoder(): Encoder<A>;
-    flatComap<B extends Object | number | string | boolean>(arg0: (param0: B) => DataResult<A>): MapEncoder<B>;
+    flatComap<B extends unknown>(arg0: (param0: B) => DataResult<A>): MapEncoder<B>;
     withLifecycle(arg0: Lifecycle): MapEncoder<A>;
 }

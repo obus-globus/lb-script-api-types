@@ -9,7 +9,7 @@ export class GLSLParser$BreakStatementContext extends GLSLParser$JumpStatementCo
     constructor(arg0: GLSLParser$JumpStatementContext)
     BREAK(): TerminalNode;
     SEMICOLON(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
 }

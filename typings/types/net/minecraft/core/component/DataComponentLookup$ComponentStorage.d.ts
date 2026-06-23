@@ -4,7 +4,7 @@ import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
-export class DataComponentLookup$ComponentStorage<C extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Record {
+export class DataComponentLookup$ComponentStorage<C extends unknown, T extends unknown> extends Record {
     private constructor(valueToComponent: Multimap<C, Holder<T>>)
     // private valueToComponent: Multimap<C, Holder<T>>;
     equals(o: Object | null): boolean;

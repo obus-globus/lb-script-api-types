@@ -10,7 +10,7 @@ import type { OptionInstance$TooltipSupplier } from '../../../net/minecraft/clie
 import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
-export class OptionInstance$SliderableEnum<T extends Object | number | string | boolean> extends Record implements OptionInstance$SliderableValueSet<T> {
+export class OptionInstance$SliderableEnum<T extends unknown> extends Record implements OptionInstance$SliderableValueSet<T> {
     constructor(values: T[], codec: Codec<T>)
     // private codec: Codec<T>;
     // private values: T[];

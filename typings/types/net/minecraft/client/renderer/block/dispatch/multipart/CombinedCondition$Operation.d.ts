@@ -24,7 +24,7 @@ export class CombinedCondition$Operation extends Enum<CombinedCondition$Operatio
     static values(): (Object | null)[];
     private constructor(name: string)
     // private name: string;
-    apply<V extends Object | number | string | boolean>(terms: (param0: V) => boolean[]): (param0: V) => boolean;
+    apply<V extends unknown>(terms: (param0: V) => boolean[]): (param0: V) => boolean;
     getSerializedName(): string;
     name(): "AND" | "OR";
 }

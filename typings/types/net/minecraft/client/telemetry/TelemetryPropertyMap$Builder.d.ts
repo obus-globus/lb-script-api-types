@@ -5,7 +5,7 @@ export class TelemetryPropertyMap$Builder extends Object {
     private constructor()
     // private entries: Map<TelemetryProperty<Object>, Object>;
     build(): TelemetryPropertyMap;
-    put<T extends Object | number | string | boolean>(property: TelemetryProperty<T>, value: T): TelemetryPropertyMap$Builder;
+    put<T extends unknown>(property: TelemetryProperty<T>, value: T): TelemetryPropertyMap$Builder;
     putAll(properties: TelemetryPropertyMap): TelemetryPropertyMap$Builder;
-    putIfNotNull<T extends Object | number | string | boolean>(property: TelemetryProperty<T>, value: T): TelemetryPropertyMap$Builder;
+    putIfNotNull<T extends unknown>(property: TelemetryProperty<T>, value: T): TelemetryPropertyMap$Builder;
 }

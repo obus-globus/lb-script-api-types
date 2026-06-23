@@ -7,7 +7,7 @@ import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class GroupedASTTransformer<J extends JobParameters, K extends Object | number | string | boolean, M extends Map<K, string>, N extends Map<K, TranslationUnit>> extends ASTTransformer<J, Map<K, string>> {
+export class GroupedASTTransformer<J extends JobParameters, K extends unknown, M extends Map<K, string>, N extends Map<K, TranslationUnit>> extends ASTTransformer<J, Map<K, string>> {
     static _getInternalInstance(): ASTParser;
     constructor()
     constructor(arg0: (param0: N, param1: J) => void, arg1: () => N, arg2: () => M)

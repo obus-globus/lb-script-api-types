@@ -12,7 +12,7 @@ import type { NoSqlProvider } from '../../../../../../../org/apache/logging/log4
 import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { KeyValuePair } from '../../../../../../../org/apache/logging/log4j/core/util/KeyValuePair.d.ts'
 import type { MapMessage } from '../../../../../../../org/apache/logging/log4j/message/MapMessage.d.ts'
-export class NoSqlDatabaseManager<W extends Object | number | string | boolean> extends AbstractDatabaseManager {
+export class NoSqlDatabaseManager<W extends unknown> extends AbstractDatabaseManager {
     static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
     static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<any>): NoSqlDatabaseManager<Object>;
     static getNoSqlDatabaseManager(paramname: string, parambufferSize: number, paramprovider: NoSqlProvider<any>, paramadditionalFields: (Object | null)[], paramconfiguration: Configuration): NoSqlDatabaseManager<Object>;

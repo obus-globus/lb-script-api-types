@@ -5,7 +5,7 @@ import type { ObjectPool$Lease } from '../../../../../org/newsclub/net/unix/pool
 import type { ObjectPool$ObjectSanitizer } from '../../../../../org/newsclub/net/unix/pool/ObjectPool$ObjectSanitizer.d.ts'
 import type { ObjectPool$ObjectSupplier } from '../../../../../org/newsclub/net/unix/pool/ObjectPool$ObjectSupplier.d.ts'
 import type { ThreadLocalObjectPool } from '../../../../../org/newsclub/net/unix/pool/ThreadLocalObjectPool.d.ts'
-export class VirtualAwareThreadLocalObjectPool<O extends Object | number | string | boolean> extends Object implements ObjectPool<O> {
+export class VirtualAwareThreadLocalObjectPool<O extends unknown> extends Object implements ObjectPool<O> {
     static newThreadLocalPool(paramarg0: () => Object | null, paramarg1: (param0: Object | null) => boolean): ObjectPool<Object>;
     static unpooledLease(paramarg0: Object | null): ObjectPool$Lease<Object>;
     constructor(arg0: () => O, arg1: (param0: O) => boolean)

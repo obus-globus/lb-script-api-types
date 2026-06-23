@@ -18,5 +18,5 @@ export class HttpClientExecutor extends RequestExecutor {
     // private buildRequest(arg0: HttpRequest_2): HttpRequest;
     // private closeListener(arg0: ExecutorService, arg1: HttpClient): () => void;
     execute(arg0: HttpRequest_2): HttpResponse_2;
-    // private executeRequest<T extends Object | number | string | boolean>(arg0: HttpClient, arg1: HttpRequest, arg2: (param0: HttpResponse$ResponseInfo) => HttpResponse$BodySubscriber<T>): HttpResponse<T>;
+    // private executeRequest<T extends unknown>(arg0: HttpClient, arg1: HttpRequest, arg2: (param0: HttpResponse$ResponseInfo) => HttpResponse$BodySubscriber<T>): HttpResponse<T>;
 }

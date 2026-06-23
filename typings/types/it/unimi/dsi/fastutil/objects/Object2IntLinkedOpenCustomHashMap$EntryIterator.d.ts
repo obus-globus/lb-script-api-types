@@ -8,10 +8,10 @@ export class Object2IntLinkedOpenCustomHashMap$EntryIterator extends Object2IntL
     constructor(null_: Object2IntLinkedOpenCustomHashMap$EntryIterator)
     constructor(null_: Object2IntLinkedOpenCustomHashMap$EntryIterator)
     // private entry: Object2IntLinkedOpenCustomHashMap$MapEntry;
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Object2IntMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: Object2IntMap$Entry<K>): void;
-    next<K extends Object | number | string | boolean>(): Object2IntLinkedOpenCustomHashMap$MapEntry;
-    previous<K extends Object | number | string | boolean>(): Object2IntLinkedOpenCustomHashMap$MapEntry;
+    acceptOnIndex<K extends unknown>(arg0: (param0: Object2IntMap$Entry<K>) => void, arg1: number): void;
+    add<K extends unknown>(arg0: Object2IntMap$Entry<K>): void;
+    next<K extends unknown>(): Object2IntLinkedOpenCustomHashMap$MapEntry;
+    previous<K extends unknown>(): Object2IntLinkedOpenCustomHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: Object2IntMap$Entry<K>): void;
+    set<K extends unknown>(arg0: Object2IntMap$Entry<K>): void;
 }

@@ -6,7 +6,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class DebugValue$AbstractDebugValue extends DebugValue {
     constructor(session: DebuggerSession, preferredLanguage: LanguageInfo)
     readonly session: DebuggerSession;
-    as<T extends Object | number | string | boolean>(clazz: Class<T>): T;
-    // private convertToPrimitive<T extends Object | number | string | boolean>(clazz: Class<T>): T;
+    as<T extends unknown>(clazz: Class<T>): T;
+    // private convertToPrimitive<T extends unknown>(clazz: Class<T>): T;
     getSession(): DebuggerSession;
 }

@@ -35,7 +35,7 @@ export interface Channel extends ChannelOutboundInvoker, AttributeMap, Object, C
     disconnect(arg0: ChannelPromise): ChannelFuture;
     eventLoop(): (Object | null)[];
     flush(): Channel;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     id(): ChannelId;
     isActive(): boolean;
     isOpen(): boolean;
@@ -51,7 +51,7 @@ export interface Channel extends ChannelOutboundInvoker, AttributeMap, Object, C
     pipeline(): Map$Entry<string, ChannelHandler>[];
     read(): Channel;
     remoteAddress(): SocketAddress;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     unsafe(): Channel$Unsafe;
     voidPromise(): ChannelPromise;
     write(arg0: Object): ChannelFuture;

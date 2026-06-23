@@ -3,7 +3,7 @@ import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
 import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cell.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Tables$UnmodifiableTable<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ForwardingTable<R, C, V> implements Serializable {
+export class Tables$UnmodifiableTable<R extends unknown, C extends unknown, V extends unknown> extends ForwardingTable<R, C, V> implements Serializable {
     constructor(delegate: Table<R, C, V>)
     // private delegate: Table<R, C, V>;
     cellSet(): Table$Cell<R, C, V>[];

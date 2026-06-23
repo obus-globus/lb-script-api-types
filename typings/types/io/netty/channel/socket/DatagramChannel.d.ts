@@ -37,7 +37,7 @@ export interface DatagramChannel extends Channel, Object{
     disconnect(): ChannelFuture;
     disconnect(arg0: ChannelPromise): ChannelFuture;
     flush(): Channel;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     id(): ChannelId;
     isActive(): boolean;
     isConnected(): boolean;
@@ -65,7 +65,7 @@ export interface DatagramChannel extends Channel, Object{
     parent(): Channel;
     read(): Channel;
     remoteAddress(): InetSocketAddress;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     unsafe(): Channel$Unsafe;
     voidPromise(): ChannelPromise;
     write(arg0: Object): ChannelFuture;

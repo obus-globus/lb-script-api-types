@@ -27,8 +27,8 @@ export class MutableInstant extends Object implements Serializable, TemporalAcce
     initFromEpochMilli(epochMilli: number, nanoOfMillisecond: number): void;
     initFromEpochSecond(epochSecond: number, nano: number): void;
     isSupported(field: TemporalField): boolean;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
-    query<R extends Object | number | string | boolean>(query: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(query: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     range(field: TemporalField): ValueRange;
     toString(): string;

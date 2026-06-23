@@ -12,7 +12,7 @@ import type { Item } from '../../../../../../../../../net/minecraft/world/item/I
 import type { Block } from '../../../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { AABB } from '../../../../../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
-export abstract class TrapPlanner<T extends Object | number | string | boolean> extends ToggleableValueGroup implements BlockIntentProvider<T> {
+export abstract class TrapPlanner<T extends unknown> extends ToggleableValueGroup implements BlockIntentProvider<T> {
     constructor(parent: EventListener, name: string, enabled: boolean)
     // private /*not mapped: */ getTrapItems(): Item[];
     // private /*not mapped: */ getTrapWorthyBlocks(): Block[];

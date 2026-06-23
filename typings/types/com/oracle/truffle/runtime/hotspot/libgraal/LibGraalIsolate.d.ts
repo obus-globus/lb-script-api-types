@@ -16,7 +16,7 @@ export class LibGraalIsolate extends Object {
     // private singletons: Map<Class<Object>, Object>;
     // private cleanHandles(): void;
     getId(): number;
-    getSingleton<T extends Object | number | string | boolean>(key: Class<T>, supplier: () => T): T;
+    getSingleton<T extends unknown>(key: Class<T>, supplier: () => T): T;
     isValid(): boolean;
     register(obj: LibGraalObject, handle: number): void;
     toString(): string;

@@ -40,11 +40,11 @@ export class OptionalCustomIngredientStreamCodec extends Object implements Strea
     static unit(paraminstance: Object | null): StreamCodec<Object, Object>;
     constructor(arg0: StreamCodec<RegistryFriendlyByteBuf, Optional<Ingredient>>)
     // private fallback: StreamCodec<RegistryFriendlyByteBuf, Optional<Ingredient>>;
-    apply<O extends Object | number | string | boolean>(operation: (param0: StreamCodec<RegistryFriendlyByteBuf, Optional<Ingredient>>) => StreamCodec<RegistryFriendlyByteBuf, O>): StreamCodec<RegistryFriendlyByteBuf, O>;
+    apply<O extends unknown>(operation: (param0: StreamCodec<RegistryFriendlyByteBuf, Optional<Ingredient>>) => StreamCodec<RegistryFriendlyByteBuf, O>): StreamCodec<RegistryFriendlyByteBuf, O>;
     cast<S extends B>(): StreamCodec<S, Optional<Ingredient>>;
     decode(arg0: RegistryFriendlyByteBuf): Optional<Ingredient>;
-    dispatch<U extends Object | number | string | boolean>(type: (param0: U) => Optional<Ingredient>, codec: (param0: Optional<Ingredient>) => StreamCodec<RegistryFriendlyByteBuf, U>): StreamCodec<RegistryFriendlyByteBuf, U>;
+    dispatch<U extends unknown>(type: (param0: U) => Optional<Ingredient>, codec: (param0: Optional<Ingredient>) => StreamCodec<RegistryFriendlyByteBuf, U>): StreamCodec<RegistryFriendlyByteBuf, U>;
     encode(arg0: RegistryFriendlyByteBuf, arg1: Optional<Ingredient>): void;
-    map<O extends Object | number | string | boolean>(to: (param0: Optional<Ingredient>) => O, from: (param0: O) => Optional<Ingredient>): StreamCodec<RegistryFriendlyByteBuf, O>;
+    map<O extends unknown>(to: (param0: Optional<Ingredient>) => O, from: (param0: O) => Optional<Ingredient>): StreamCodec<RegistryFriendlyByteBuf, O>;
     mapStream<O extends ByteBuf>(operation: (param0: O) => RegistryFriendlyByteBuf): StreamCodec<O, Optional<Ingredient>>;
 }

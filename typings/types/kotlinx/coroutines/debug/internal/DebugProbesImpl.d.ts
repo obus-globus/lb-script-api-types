@@ -17,11 +17,11 @@ import type { DebuggerInfo } from '../../../../kotlinx/coroutines/debug/internal
 import type { StackTraceFrame } from '../../../../kotlinx/coroutines/debug/internal/StackTraceFrame.d.ts'
 export class DebugProbesImpl extends Object {
     static INSTANCE: DebugProbesImpl;
-    // private createOwner<T extends Object | number | string | boolean>(completion: Continuation<T>, frame: StackTraceFrame | null): Continuation<T>;
+    // private createOwner<T extends unknown>(completion: Continuation<T>, frame: StackTraceFrame | null): Continuation<T>;
     dumpCoroutines(out: PrintStream): void;
     dumpCoroutinesInfo(): DebugCoroutineInfo[];
     dumpCoroutinesInfoAsJsonAndReferences(): Object[];
-    // private dumpCoroutinesInfoImpl<R extends Object | number | string | boolean>(create: (param0: DebugProbesImpl$CoroutineOwner<Object>, param1: CoroutineContext) => R): R[];
+    // private dumpCoroutinesInfoImpl<R extends unknown>(create: (param0: DebugProbesImpl$CoroutineOwner<Object>, param1: CoroutineContext) => R): R[];
     // private dumpCoroutinesSynchronized(out: PrintStream): void;
     dumpDebuggerInfo(): DebuggerInfo[];
     enhanceStackTraceWithThreadDump(info: DebugCoroutineInfo, coroutineTrace: StackTraceElement[]): StackTraceElement[];
@@ -34,7 +34,7 @@ export class DebugProbesImpl extends Object {
     install(): void;
     // private printStackTrace(out: PrintStream, frames: StackTraceElement[]): void;
     // private probeCoroutineCompleted(owner: DebugProbesImpl$CoroutineOwner<Object>): void;
-    probeCoroutineCreated<T extends Object | number | string | boolean>(completion: Continuation<T>): Continuation<T>;
+    probeCoroutineCreated<T extends unknown>(completion: Continuation<T>): Continuation<T>;
     probeCoroutineResumed(frame: Continuation<Object>): void;
     probeCoroutineSuspended(frame: Continuation<Object>): void;
     // private sanitizeStackTrace<T extends Throwable>(throwable: T): StackTraceElement[];

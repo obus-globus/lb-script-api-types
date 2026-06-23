@@ -6,7 +6,7 @@ import type { SelectInstance } from '../../../kotlinx/coroutines/selects/SelectI
 export class SemaphoreAndMutexImpl extends Object {
     constructor(permits: number, acquiredPermits: number)
     acquire(): void;
-    // private acquire<W extends Object | number | string | boolean>(waiter: W, suspend: (param0: W) => boolean, onAcquired: (param0: W) => void): void;
+    // private acquire<W extends unknown>(waiter: W, suspend: (param0: W) => boolean, onAcquired: (param0: W) => void): void;
     protected acquire(waiter: CancellableContinuation<void>): void;
     // private acquireSlowPath(): void;
     // private addAcquireToQueue(waiter: Waiter): boolean;

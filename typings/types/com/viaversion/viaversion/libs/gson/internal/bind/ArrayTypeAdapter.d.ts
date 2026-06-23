@@ -5,7 +5,7 @@ import type { JsonReader } from '../../../../../../../com/viaversion/viaversion/
 import type { JsonWriter } from '../../../../../../../com/viaversion/viaversion/libs/gson/stream/JsonWriter.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class ArrayTypeAdapter<E extends Object | number | string | boolean> extends TypeAdapter<Object> {
+export class ArrayTypeAdapter<E extends unknown> extends TypeAdapter<Object> {
     static FACTORY: TypeAdapterFactory;
     constructor(arg0: Gson, arg1: TypeAdapter<E>, arg2: Class<E>)
     // private componentType: Class<E>;

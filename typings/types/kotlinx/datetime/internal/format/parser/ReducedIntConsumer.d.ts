@@ -3,7 +3,7 @@ import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { AssignableField } from '../../../../../kotlinx/datetime/internal/format/parser/AssignableField.d.ts'
 import type { NumberConsumer } from '../../../../../kotlinx/datetime/internal/format/parser/NumberConsumer.d.ts'
 import type { NumberConsumptionError } from '../../../../../kotlinx/datetime/internal/format/parser/NumberConsumptionError.d.ts'
-export class ReducedIntConsumer<Receiver extends Object | number | string | boolean> extends NumberConsumer<Receiver> {
+export class ReducedIntConsumer<Receiver extends unknown> extends NumberConsumer<Receiver> {
     constructor(length: number, setter: AssignableField<Receiver, number>, name: string, base: number)
     readonly base: number;
     // private baseFloor: number;

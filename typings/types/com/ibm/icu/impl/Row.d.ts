@@ -6,7 +6,7 @@ import type { Freezable } from '../../../../com/ibm/icu/util/Freezable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
-export class Row<C0 extends Object | number | string | boolean, C1 extends Object | number | string | boolean, C2 extends Object | number | string | boolean, C3 extends Object | number | string | boolean, C4 extends Object | number | string | boolean> extends Object implements Freezable<Row<C0, C1, C2, C3, C4>>, Cloneable, Comparable<Object> {
+export class Row<C0 extends unknown, C1 extends unknown, C2 extends unknown, C3 extends unknown, C4 extends unknown> extends Object implements Freezable<Row<C0, C1, C2, C3, C4>>, Cloneable, Comparable<Object> {
     static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: Object | null, paramarg3: Object | null, paramarg4: Object | null): Row$R5<Object, Object, Object, Object, Object>;
     static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: Object | null, paramarg3: Object | null): Row$R4<Object, Object, Object, Object>;
     static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: Object | null): Row$R3<Object, Object, Object>;

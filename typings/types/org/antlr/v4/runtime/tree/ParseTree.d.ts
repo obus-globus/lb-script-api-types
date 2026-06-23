@@ -5,7 +5,7 @@ import type { Interval } from '../../../../../org/antlr/v4/runtime/misc/Interval
 import type { ParseTreeVisitor } from '../../../../../org/antlr/v4/runtime/tree/ParseTreeVisitor.d.ts'
 import type { SyntaxTree } from '../../../../../org/antlr/v4/runtime/tree/SyntaxTree.d.ts'
 export interface ParseTree extends Object, SyntaxTree{
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     getChild(arg0: number): ParseTree;
     getChildCount(): number;
     getParent(): ParseTree;

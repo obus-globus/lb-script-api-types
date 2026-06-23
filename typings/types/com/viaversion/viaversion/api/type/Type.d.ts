@@ -4,7 +4,7 @@ import type { ByteBufWriter } from '../../../../../com/viaversion/viaversion/api
 import type { CodecWriter } from '../../../../../com/viaversion/viaversion/api/type/CodecWriter.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Type<T extends Object | number | string | boolean> extends Object implements ByteBufReader<T>, ByteBufWriter<T>, CodecWriter<T> {
+export abstract class Type<T extends unknown> extends Object implements ByteBufReader<T>, ByteBufWriter<T>, CodecWriter<T> {
     constructor(arg0: Class<T>)
     constructor(arg0: string, arg1: Class<T>)
     readonly outputClass: Class<T>;

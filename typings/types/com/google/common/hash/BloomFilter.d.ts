@@ -8,7 +8,7 @@ import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class BloomFilter<T extends Object | number | string | boolean> extends Object implements Predicate<T>, Serializable {
+export class BloomFilter<T extends unknown> extends Object implements Predicate<T>, Serializable {
     static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): BloomFilter<Object>;
     static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): BloomFilter<Object>;
     static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): BloomFilter<Object>;

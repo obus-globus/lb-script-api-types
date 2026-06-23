@@ -22,10 +22,10 @@ export abstract class GeneratedMessageLite$ExtendableMessage<MessageType extends
     extensionsAreInitialized(): boolean;
     extensionsSerializedSize(): number;
     getDefaultInstanceForType(): MessageLite;
-    getExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>): Type;
-    getExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>, arg1: number): Type;
-    getExtensionCount<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>): number;
-    hasExtension<Type extends Object | number | string | boolean>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>): boolean;
+    getExtension<Type extends unknown>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>): Type;
+    getExtension<Type extends unknown>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>, arg1: number): Type;
+    getExtensionCount<Type extends unknown>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type[]>): number;
+    hasExtension<Type extends unknown>(arg0: GeneratedMessageLite$GeneratedExtension<MessageType, Type>): boolean;
     isInitialized(): boolean;
     makeExtensionsImmutable(): void;
     newExtensionWriter(): GeneratedMessageLite$ExtendableMessage$ExtensionWriter;

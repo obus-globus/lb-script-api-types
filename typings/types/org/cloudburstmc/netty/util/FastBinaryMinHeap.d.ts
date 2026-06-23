@@ -2,7 +2,7 @@ import type { AbstractReferenceCounted } from '../../../../io/netty/util/Abstrac
 import type { ReferenceCounted } from '../../../../io/netty/util/ReferenceCounted.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FastBinaryMinHeap$Entry } from '../../../../org/cloudburstmc/netty/util/FastBinaryMinHeap$Entry.d.ts'
-export class FastBinaryMinHeap<E extends Object | number | string | boolean> extends AbstractReferenceCounted {
+export class FastBinaryMinHeap<E extends unknown> extends AbstractReferenceCounted {
     constructor()
     constructor(arg0: number)
     // private heap: FastBinaryMinHeap$Entry[];

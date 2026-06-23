@@ -4,7 +4,7 @@ import type { TruffleString } from '../../../../../../com/oracle/truffle/api/str
 import type { ReplaceStringParser$Consumer } from '../../../../../../com/oracle/truffle/js/builtins/helper/ReplaceStringParser$Consumer.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ReplaceStringParser<T extends Object | number | string | boolean> extends Object {
+export class ReplaceStringParser<T extends unknown> extends Object {
     static parse(paramcontext: JSContext, paramreplaceStr: TruffleString, parammaxGroupNumber: number, paramparseNamedCaptureGroups: boolean): (Object | null)[];
     static process(paramcontext: JSContext, paramreplaceStr: TruffleString, parammaxGroupNumber: number, paramparseNamedCaptureGroups: boolean, paramconsumer: ReplaceStringParser$Consumer<Object, Object>, paramnode: Object | null, paramprofileNode: Node, paramhasDollarBranch: InlinedBranchProfile): Object | null;
     static processParsed(paramtokens: (Object | null)[], paramconsumer: ReplaceStringParser$Consumer<Object, Object>, paramnode: Object | null): Object | null;

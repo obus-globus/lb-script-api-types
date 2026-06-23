@@ -1,7 +1,7 @@
 import type { AddressedEnvelope } from '../../../io/netty/channel/AddressedEnvelope.d.ts'
 import type { SocketAddress } from '../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class DefaultAddressedEnvelope<M extends Object | number | string | boolean, A extends SocketAddress> extends Object implements AddressedEnvelope<M, A> {
+export class DefaultAddressedEnvelope<M extends unknown, A extends SocketAddress> extends Object implements AddressedEnvelope<M, A> {
     constructor(arg0: M, arg1: A)
     constructor(arg0: M, arg1: A, arg2: A)
     // private message: M;

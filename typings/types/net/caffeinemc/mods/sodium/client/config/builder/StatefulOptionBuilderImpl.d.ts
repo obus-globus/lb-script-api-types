@@ -13,7 +13,7 @@ import type { StatefulOption } from '../../../../../../../net/caffeinemc/mods/so
 import type { DependentValue } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/value/DependentValue.d.ts'
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export abstract class StatefulOptionBuilderImpl<O extends StatefulOption<V>, V extends Object | number | string | boolean> extends OptionBuilderImpl<O> implements StatefulOptionBuilder<V> {
+export abstract class StatefulOptionBuilderImpl<O extends StatefulOption<V>, V extends unknown> extends OptionBuilderImpl<O> implements StatefulOptionBuilder<V> {
     constructor(arg0: Identifier)
     // private applyHook: (param0: ConfigState) => void;
     // private binding: OptionBinding<V>;

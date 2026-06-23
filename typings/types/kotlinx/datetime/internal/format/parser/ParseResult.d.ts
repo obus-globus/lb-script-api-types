@@ -13,6 +13,6 @@ export class ParseResult extends Object {
     readonly value: Object;
     equals(other: Object | null): boolean;
     hashCode(): number;
-    match<T extends Object | number | string | boolean>(onSuccess: (param0: number) => T, onFailure: (param0: ParseError) => T): T;
+    match<T extends unknown>(onSuccess: (param0: number) => T, onFailure: (param0: ParseError) => T): T;
     toString(): string;
 }

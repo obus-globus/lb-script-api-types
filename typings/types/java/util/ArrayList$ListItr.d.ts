@@ -3,10 +3,10 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { ListIterator } from '../../java/util/ListIterator.d.ts'
 export class ArrayList$ListItr extends ArrayList$Itr implements ListIterator<E> {
     constructor(null_: ArrayList$ListItr, arg1: number)
-    add<E extends Object | number | string | boolean>(arg0: E): void;
+    add<E extends unknown>(arg0: E): void;
     hasPrevious(): boolean;
     nextIndex(): number;
-    previous<E extends Object | number | string | boolean>(): E;
+    previous<E extends unknown>(): E;
     previousIndex(): number;
-    set<E extends Object | number | string | boolean>(arg0: E): void;
+    set<E extends unknown>(arg0: E): void;
 }

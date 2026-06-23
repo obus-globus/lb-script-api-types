@@ -16,7 +16,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class DebugValue extends Object {
     constructor(preferredLanguage: LanguageInfo)
     // private preferredLanguage: LanguageInfo;
-    as<T extends Object | number | string | boolean>(clazz: Class<T>): T;
+    as<T extends unknown>(clazz: Class<T>): T;
     asBigInteger(): BigInteger;
     asBoolean(): boolean;
     asByte(): number;

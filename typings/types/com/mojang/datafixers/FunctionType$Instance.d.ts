@@ -36,22 +36,22 @@ export class FunctionType$Instance extends Enum<FunctionType$Instance> implement
     static valueOf(paramarg0: string): FunctionType$Instance;
     static values(): (Object | null)[];
     private constructor()
-    // private cap<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean>(arg0: Procompose<FunctionType$Mu, FunctionType$Mu, A, B, C>): App2<FunctionType$Mu, A, B>;
-    compose<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<FunctionType$Mu, B, C>, arg1: () => App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, A, C>;
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<FunctionType$Mu, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<FunctionType$Mu, C, D>;
-    dimap<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<FunctionType$Mu, A, B>, App2<FunctionType$Mu, C, D>>;
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<FunctionType$Mu, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<FunctionType$Mu, C, D>;
+    // private cap<A extends unknown, B extends unknown, C extends unknown>(arg0: Procompose<FunctionType$Mu, FunctionType$Mu, A, B, C>): App2<FunctionType$Mu, A, B>;
+    compose<A extends unknown, C extends unknown, B extends unknown>(arg0: App2<FunctionType$Mu, B, C>, arg1: () => App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, A, C>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<FunctionType$Mu, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<FunctionType$Mu, C, D>;
+    dimap<A extends unknown, B extends unknown, C extends unknown, D extends unknown>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<FunctionType$Mu, A, B>, App2<FunctionType$Mu, C, D>>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: () => App2<FunctionType$Mu, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<FunctionType$Mu, C, D>;
     empty(): App2<FunctionType$Mu, void, void>;
-    first<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, Pair<A, C>, Pair<B, C>>;
-    left<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, Either<A, C>, Either<B, C>>;
-    mapping<F extends K1, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: Functor<F, any>, arg1: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, App<F, A>, App<F, B>>;
-    par<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: App2<FunctionType$Mu, A, B>, arg1: () => App2<FunctionType$Mu, C, D>): App2<FunctionType$Mu, Pair<A, C>, Pair<B, D>>;
-    plus<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Procompose$Mu<FunctionType$Mu, FunctionType$Mu>, A, B>): App2<FunctionType$Mu, A, B>;
-    right<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, Either<C, A>, Either<C, B>>;
-    second<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, Pair<C, A>, Pair<C, B>>;
+    first<A extends unknown, C extends unknown, B extends unknown>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, Pair<A, C>, Pair<B, C>>;
+    left<A extends unknown, C extends unknown, B extends unknown>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, Either<A, C>, Either<B, C>>;
+    mapping<F extends K1, A extends unknown, B extends unknown>(arg0: Functor<F, any>, arg1: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, App<F, A>, App<F, B>>;
+    par<A extends unknown, C extends unknown, B extends unknown, D extends unknown>(arg0: App2<FunctionType$Mu, A, B>, arg1: () => App2<FunctionType$Mu, C, D>): App2<FunctionType$Mu, Pair<A, C>, Pair<B, D>>;
+    plus<A extends unknown, B extends unknown>(arg0: App2<Procompose$Mu<FunctionType$Mu, FunctionType$Mu>, A, B>): App2<FunctionType$Mu, A, B>;
+    right<C extends unknown, A extends unknown, B extends unknown>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, Either<C, A>, Either<C, B>>;
+    second<C extends unknown, A extends unknown, B extends unknown>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, Pair<C, A>, Pair<C, B>>;
     toFP3(): FunctorProfunctor<Traversable$Mu, FunctionType$Mu, FunctorProfunctor$Mu<Traversable$Mu>>;
-    traverse<T extends K1, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: Traversable<T, any>, arg1: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, App<T, A>, App<T, B>>;
-    wander<S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: Wander<S, T, A, B>, arg1: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, S, T>;
-    zero<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, A, B>;
+    traverse<T extends K1, A extends unknown, B extends unknown>(arg0: Traversable<T, any>, arg1: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, App<T, A>, App<T, B>>;
+    wander<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(arg0: Wander<S, T, A, B>, arg1: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, S, T>;
+    zero<A extends unknown, B extends unknown>(arg0: App2<FunctionType$Mu, A, B>): App2<FunctionType$Mu, A, B>;
     name(): "INSTANCE";
 }

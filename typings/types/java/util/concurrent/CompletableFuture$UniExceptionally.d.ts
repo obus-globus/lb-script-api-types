@@ -8,7 +8,7 @@ import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export class CompletableFuture$UniExceptionally<T extends Object | number | string | boolean> extends CompletableFuture$UniCompletion<T, T> {
+export class CompletableFuture$UniExceptionally<T extends unknown> extends CompletableFuture$UniCompletion<T, T> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

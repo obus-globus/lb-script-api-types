@@ -36,8 +36,8 @@ export class ModelDiscovery$ModelWrapper extends Object implements ResolvedModel
     // private bakeDefaultState(textureSlots: TextureSlots, baker: ModelBaker, state: ModelState): QuadCollection;
     bakeTopGeometry(textureSlots: TextureSlots, baker: ModelBaker, state: ModelState): QuadCollection;
     debugName(): string;
-    // private getSimpleProperty<T extends Object | number | string | boolean>(key: ModelDiscovery$Slot<T>, getter: (param0: ResolvedModel) => T): T;
-    // private getSlot<T extends Object | number | string | boolean>(key: ModelDiscovery$Slot<T>): T;
+    // private getSimpleProperty<T extends unknown>(key: ModelDiscovery$Slot<T>, getter: (param0: ResolvedModel) => T): T;
+    // private getSlot<T extends unknown>(key: ModelDiscovery$Slot<T>): T;
     getTopAmbientOcclusion(): boolean;
     getTopGeometry(): (param0: TextureSlots, param1: ModelBaker, param2: ModelState, param3: () => string) => QuadCollection;
     getTopGuiLight(): UnbakedModel$GuiLight;
@@ -45,6 +45,6 @@ export class ModelDiscovery$ModelWrapper extends Object implements ResolvedModel
     getTopTransforms(): ItemTransforms;
     parent(): ResolvedModel;
     resolveParticleMaterial(textureSlots: TextureSlots, baker: ModelBaker): Material$Baked;
-    // private updateSlot<T extends Object | number | string | boolean>(key: ModelDiscovery$Slot<T>, value: T): T;
+    // private updateSlot<T extends unknown>(key: ModelDiscovery$Slot<T>, value: T): T;
     wrapped(): UnbakedModel;
 }

@@ -16,16 +16,16 @@ import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Forget$Instance<R extends Object | number | string | boolean> extends Object implements App<Forget$Instance$Mu<R>, Forget$Mu<R>>, Cartesian<Forget$Mu<R>, Forget$Instance$Mu<R>>, ReCocartesian<Forget$Mu<R>, Forget$Instance$Mu<R>> {
+export class Forget$Instance<R extends unknown> extends Object implements App<Forget$Instance$Mu<R>, Forget$Mu<R>>, Cartesian<Forget$Mu<R>, Forget$Instance$Mu<R>>, ReCocartesian<Forget$Mu<R>, Forget$Instance$Mu<R>> {
     static unbox(paramarg0: App<Cartesian$Mu, K2>): Cartesian<K2, Cartesian$Mu>;
     static unbox(paramarg0: App<ReCocartesian$Mu, K2>): ReCocartesian<K2, ReCocartesian$Mu>;
     constructor()
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Forget$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Forget$Mu<R>, C, D>;
-    dimap<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Forget$Mu<R>, A, B>, App2<Forget$Mu<R>, C, D>>;
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<Forget$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Forget$Mu<R>, C, D>;
-    first<A extends Object | number | string | boolean, C extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Forget$Mu<R>, A, B>): App2<Forget$Mu<R>, Pair<A, C>, Pair<B, C>>;
-    second<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Forget$Mu<R>, A, B>): App2<Forget$Mu<R>, Pair<C, A>, Pair<C, B>>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<Forget$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Forget$Mu<R>, C, D>;
+    dimap<A extends unknown, B extends unknown, C extends unknown, D extends unknown>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Forget$Mu<R>, A, B>, App2<Forget$Mu<R>, C, D>>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: () => App2<Forget$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Forget$Mu<R>, C, D>;
+    first<A extends unknown, C extends unknown, B extends unknown>(arg0: App2<Forget$Mu<R>, A, B>): App2<Forget$Mu<R>, Pair<A, C>, Pair<B, C>>;
+    second<C extends unknown, A extends unknown, B extends unknown>(arg0: App2<Forget$Mu<R>, A, B>): App2<Forget$Mu<R>, Pair<C, A>, Pair<C, B>>;
     toFP2(): FunctorProfunctor<CartesianLike$Mu, Forget$Mu<R>, FunctorProfunctor$Mu<CartesianLike$Mu>>;
-    unleft<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean>(arg0: App2<Forget$Mu<R>, Either<A, C>, Either<B, C>>): App2<Forget$Mu<R>, A, B>;
-    unright<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean>(arg0: App2<Forget$Mu<R>, Either<C, A>, Either<C, B>>): App2<Forget$Mu<R>, A, B>;
+    unleft<A extends unknown, B extends unknown, C extends unknown>(arg0: App2<Forget$Mu<R>, Either<A, C>, Either<B, C>>): App2<Forget$Mu<R>, A, B>;
+    unright<A extends unknown, B extends unknown, C extends unknown>(arg0: App2<Forget$Mu<R>, Either<C, A>, Either<C, B>>): App2<Forget$Mu<R>, A, B>;
 }

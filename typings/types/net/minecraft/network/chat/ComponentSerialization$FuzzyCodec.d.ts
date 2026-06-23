@@ -10,7 +10,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ComponentSerialization$FuzzyCodec<T extends Object | number | string | boolean> extends MapCodec<T> {
+export class ComponentSerialization$FuzzyCodec<T extends unknown> extends MapCodec<T> {
     static assumeMapUnsafe(paramarg0: Codec<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
@@ -22,8 +22,8 @@ export class ComponentSerialization$FuzzyCodec<T extends Object | number | strin
     constructor(codecs: MapCodec<T>[], encoderGetter: (param0: T) => MapEncoder<T>)
     // private codecs: MapCodec<T>[];
     // private encoderGetter: (param0: T) => MapEncoder<T>;
-    decode<S extends Object | number | string | boolean>(ops: DynamicOps<S>, input: MapLike<S>): DataResult<T>;
-    encode<S extends Object | number | string | boolean>(input: T, ops: DynamicOps<S>, prefix: RecordBuilder<S>): RecordBuilder<S>;
-    keys<S extends Object | number | string | boolean>(ops: DynamicOps<S>): Stream<S>;
+    decode<S extends unknown>(ops: DynamicOps<S>, input: MapLike<S>): DataResult<T>;
+    encode<S extends unknown>(input: T, ops: DynamicOps<S>, prefix: RecordBuilder<S>): RecordBuilder<S>;
+    keys<S extends unknown>(ops: DynamicOps<S>): Stream<S>;
     toString(): string;
 }

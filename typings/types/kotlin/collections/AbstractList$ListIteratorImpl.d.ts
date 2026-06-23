@@ -5,6 +5,6 @@ export class AbstractList$ListIteratorImpl extends AbstractList$IteratorImpl imp
     constructor(null_: AbstractList$ListIteratorImpl, index: number)
     hasPrevious(): boolean;
     nextIndex(): number;
-    previous<E extends Object | number | string | boolean>(): E;
+    previous<E extends unknown>(): E;
     previousIndex(): number;
 }

@@ -19,7 +19,7 @@ export class ImportClauseNode extends Node {
     readonly nameSpaceImport: NameSpaceImportNode;
     readonly namedImports: NamedImportsNode;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getDefaultBinding(): IdentNode;
     getNameSpaceImport(): NameSpaceImportNode;
     getNamedImports(): NamedImportsNode;

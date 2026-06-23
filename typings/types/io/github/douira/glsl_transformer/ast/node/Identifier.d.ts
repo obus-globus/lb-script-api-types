@@ -13,7 +13,7 @@ export class Identifier extends ASTNode {
     constructor(arg0: Token)
     readonly name: string;
     _setNameInternal(arg0: string): void;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): Identifier;
     cloneInto(arg0: Root): Identifier;
     getName(): string;

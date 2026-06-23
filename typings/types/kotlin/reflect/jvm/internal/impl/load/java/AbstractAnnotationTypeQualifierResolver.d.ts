@@ -8,7 +8,7 @@ import type { ReportLevel } from '../../../../../../../kotlin/reflect/jvm/intern
 import type { MutabilityQualifier } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/typeEnhancement/MutabilityQualifier.d.ts'
 import type { NullabilityQualifierWithMigrationStatus } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/typeEnhancement/NullabilityQualifierWithMigrationStatus.d.ts'
 import type { FqName } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
-export abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation extends Object | number | string | boolean> extends Object {
+export abstract class AbstractAnnotationTypeQualifierResolver<TAnnotation extends unknown> extends Object {
     constructor(arg0: JavaTypeEnhancementState)
     // private javaTypeEnhancementState: JavaTypeEnhancementState;
     // private resolvedNicknames: Map<Object, TAnnotation>;

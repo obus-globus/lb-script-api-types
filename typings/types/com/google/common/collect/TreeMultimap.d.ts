@@ -4,7 +4,7 @@ import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class TreeMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractSortedKeySortedSetMultimap<K, V> {
+export class TreeMultimap<K extends unknown, V extends unknown> extends AbstractSortedKeySortedSetMultimap<K, V> {
     static create(): TreeMultimap<Object, Object>;
     static create(parammultimap: Multimap<Object, Object>): TreeMultimap<Object, Object>;
     static create(paramkeyComparator: (param0: Object) => boolean, paramvalueComparator: (param0: Object) => boolean): TreeMultimap<Object, Object>;

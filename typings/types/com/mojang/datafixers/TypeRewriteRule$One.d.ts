@@ -24,7 +24,7 @@ export class TypeRewriteRule$One extends Record implements TypeRewriteRule {
     // private rule: TypeRewriteRule;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite<A extends Object | number | string | boolean>(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
+    rewrite<A extends unknown>(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
     rule(): TypeRewriteRule;
     toString(): string;
 }

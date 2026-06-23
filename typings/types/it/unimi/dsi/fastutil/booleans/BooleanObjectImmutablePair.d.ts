@@ -3,7 +3,7 @@ import type { BooleanObjectPair } from '../../../../../it/unimi/dsi/fastutil/boo
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class BooleanObjectImmutablePair<V extends Object | number | string | boolean> extends Object implements BooleanObjectPair<V>, Serializable {
+export class BooleanObjectImmutablePair<V extends unknown> extends Object implements BooleanObjectPair<V>, Serializable {
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: boolean, paramarg1: Object | null): BooleanObjectImmutablePair<Object>;
     static of(paramarg0: boolean, paramarg1: Object | null): BooleanObjectPair<Object>;

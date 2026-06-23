@@ -1,4 +1,4 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-export interface MapCodecMerger$I8<T1 extends Object | number | string | boolean, T2 extends Object | number | string | boolean, T3 extends Object | number | string | boolean, T4 extends Object | number | string | boolean, T5 extends Object | number | string | boolean, T6 extends Object | number | string | boolean, T7 extends Object | number | string | boolean, T8 extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Object{
+export interface MapCodecMerger$I8<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, O extends unknown> extends Object{
     apply(arg0: T1, arg1: T2, arg2: T3, arg3: T4, arg4: T5, arg5: T6, arg6: T7, arg7: T8): O;
 }

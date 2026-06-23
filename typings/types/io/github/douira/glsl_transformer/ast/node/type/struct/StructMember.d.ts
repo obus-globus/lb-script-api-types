@@ -14,7 +14,7 @@ export class StructMember extends InnerASTNode {
     constructor(arg0: FullySpecifiedType, arg1: Stream<StructDeclarator>)
     declarators: StructDeclarator[];
     type: FullySpecifiedType;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): StructMember;
     cloneInto(arg0: Root): StructMember;
     enterNode(arg0: ASTListener): void;

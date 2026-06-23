@@ -8,7 +8,7 @@ import type { InetAddress } from '../../../../../java/net/InetAddress.d.ts'
 import type { NetworkInterface } from '../../../../../java/net/NetworkInterface.d.ts'
 import type { SocketOption } from '../../../../../java/net/SocketOption.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class NioChannelOption<T extends Object | number | string | boolean> extends ChannelOption<T> {
+export class NioChannelOption<T extends unknown> extends ChannelOption<T> {
     static ALLOCATOR: ChannelOption<ByteBufAllocator>;
     static ALLOW_HALF_CLOSURE: ChannelOption<boolean>;
     static AUTO_CLOSE: ChannelOption<boolean>;

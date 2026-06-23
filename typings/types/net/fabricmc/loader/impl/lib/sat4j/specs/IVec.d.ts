@@ -3,10 +3,10 @@ import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
 import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
-export interface IVec<T extends Object | number | string | boolean> extends Serializable, Object, Cloneable {
+export interface IVec<T extends unknown> extends Serializable, Object, Cloneable {
     clear(): void;
     protected clone(): Object;
-    copyTo<E extends Object | number | string | boolean>(arg0: E[]): void;
+    copyTo<E extends unknown>(arg0: E[]): void;
     copyTo(arg0: IVec<T>): void;
     delete(arg0: number): T;
     ensure(arg0: number): void;

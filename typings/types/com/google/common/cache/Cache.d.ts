@@ -1,7 +1,7 @@
 import type { CacheStats } from '../../../../com/google/common/cache/CacheStats.d.ts'
 import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Cache<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export interface Cache<K extends unknown, V extends unknown> extends Object {
     asMap(): Map<K, V>;
     cleanUp(): void;
     get(key: K, loader: () => V): V;

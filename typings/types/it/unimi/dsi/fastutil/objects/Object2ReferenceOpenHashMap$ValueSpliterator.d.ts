@@ -13,8 +13,8 @@ export class Object2ReferenceOpenHashMap$ValueSpliterator extends Object2Referen
     static SUBSIZED: number;
     constructor(null_: Object2ReferenceOpenHashMap$ValueSpliterator)
     constructor(null_: Object2ReferenceOpenHashMap$ValueSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: V) => void, arg1: number): void;
+    acceptOnIndex<V extends unknown>(arg0: (param0: V) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Object2ReferenceOpenHashMap$ValueSpliterator;
+    makeForSplit<K extends unknown, V extends unknown>(arg0: number, arg1: number, arg2: boolean): Object2ReferenceOpenHashMap$ValueSpliterator;
     skip(arg0: number): number;
 }

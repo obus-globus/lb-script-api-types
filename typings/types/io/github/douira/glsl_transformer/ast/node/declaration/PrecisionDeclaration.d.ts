@@ -17,7 +17,7 @@ export class PrecisionDeclaration extends Declaration {
     typeSpecifier: TypeSpecifier;
     clone(): PrecisionDeclaration;
     cloneInto(arg0: Root): PrecisionDeclaration;
-    declarationAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    declarationAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getDeclarationType(): Declaration$DeclarationType;

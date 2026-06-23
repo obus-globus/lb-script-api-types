@@ -73,10 +73,10 @@ export class TruffleFile extends Object {
     exists(options: LinkOption[]): boolean;
     // private findExisting(forPath: Path[]): Path[];
     getAbsoluteFile(): TruffleFile;
-    getAttribute<T extends Object | number | string | boolean>(attribute: TruffleFile$AttributeDescriptor<T>, linkOptions: LinkOption[]): T;
-    // private getAttributeImpl<T extends Object | number | string | boolean>(forPath: Path[], attribute: string, type: Class<T>, options: LinkOption[]): T;
+    getAttribute<T extends unknown>(attribute: TruffleFile$AttributeDescriptor<T>, linkOptions: LinkOption[]): T;
+    // private getAttributeImpl<T extends unknown>(forPath: Path[], attribute: string, type: Class<T>, options: LinkOption[]): T;
     // private getAttributeImpl(forPath: Path[], attribute: string, options: LinkOption[]): Object;
-    // private getAttributeImpl<T extends Object | number | string | boolean>(attribute: string, type: Class<T>, options: LinkOption[]): T;
+    // private getAttributeImpl<T extends unknown>(attribute: string, type: Class<T>, options: LinkOption[]): T;
     getAttributes(attributes: TruffleFile$AttributeDescriptor<Object>[], linkOptions: LinkOption[]): TruffleFile$Attributes;
     getCanonicalFile(options: LinkOption[]): TruffleFile;
     getCreationTime(options: LinkOption[]): FileTime;
@@ -119,7 +119,7 @@ export class TruffleFile extends Object {
     relativize(other: TruffleFile): TruffleFile;
     resolve(name: string): TruffleFile;
     resolveSibling(name: string): TruffleFile;
-    setAttribute<T extends Object | number | string | boolean>(attribute: TruffleFile$AttributeDescriptor<T>, value: T, linkOptions: LinkOption[]): void;
+    setAttribute<T extends unknown>(attribute: TruffleFile$AttributeDescriptor<T>, value: T, linkOptions: LinkOption[]): void;
     setCreationTime(time: FileTime, options: LinkOption[]): void;
     setLastAccessTime(time: FileTime, options: LinkOption[]): void;
     setLastModifiedTime(time: FileTime, options: LinkOption[]): void;

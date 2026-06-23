@@ -14,8 +14,8 @@ export class Byte2ObjectOpenCustomHashMap$EntrySpliterator extends Byte2ObjectOp
     static SUBSIZED: number;
     constructor(null_: Byte2ObjectOpenCustomHashMap$EntrySpliterator)
     constructor(null_: Byte2ObjectOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Byte2ObjectMap$Entry<V>) => void, arg1: number): void;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Byte2ObjectMap$Entry<V>) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Byte2ObjectOpenCustomHashMap$EntrySpliterator;
+    makeForSplit<V extends unknown>(arg0: number, arg1: number, arg2: boolean): Byte2ObjectOpenCustomHashMap$EntrySpliterator;
     skip(arg0: number): number;
 }

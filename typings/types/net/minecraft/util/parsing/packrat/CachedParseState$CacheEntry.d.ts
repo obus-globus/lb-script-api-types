@@ -1,6 +1,6 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class CachedParseState$CacheEntry<T extends Object | number | string | boolean> extends Record {
+export class CachedParseState$CacheEntry<T extends unknown> extends Record {
     static NEGATIVE: CachedParseState$CacheEntry<Object>;
     static negativeEntry(): CachedParseState$CacheEntry<Object>;
     // private markAfterParse: number;

@@ -17,7 +17,7 @@ export class LazyPackageViewDescriptorImpl extends DeclarationDescriptorImpl imp
     // private fragments$delegate: NotNullLazyValue<Object>;
     readonly memberScope: MemberScope;
     readonly module: ModuleDescriptorImpl;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     equals(arg0: Object | null): boolean;
     getContainingDeclaration(): PackageViewDescriptor;
     getEmpty(): boolean;

@@ -18,17 +18,17 @@ export class Reference2FloatArrayMap$MapEntry extends Object implements Referenc
     equals(arg0: Object | null): boolean;
     getFloatValue(): number;
     hashCode(): number;
-    left<K extends Object | number | string | boolean>(): K;
-    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    left<K extends unknown>(): K;
+    left<K extends unknown>(arg0: K): Pair<K, number>;
     right(): number;
-    right<K extends Object | number | string | boolean>(arg0: number): ReferenceFloatPair<K>;
+    right<K extends unknown>(arg0: number): ReferenceFloatPair<K>;
     rightFloat(): number;
     second(): number;
-    second<K extends Object | number | string | boolean>(arg0: number): ReferenceFloatPair<K>;
+    second<K extends unknown>(arg0: number): ReferenceFloatPair<K>;
     secondFloat(): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value<K extends Object | number | string | boolean>(arg0: number): ReferenceFloatPair<K>;
+    value<K extends unknown>(arg0: number): ReferenceFloatPair<K>;
     valueFloat(): number;
 }

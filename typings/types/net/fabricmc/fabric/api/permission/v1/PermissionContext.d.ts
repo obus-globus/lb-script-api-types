@@ -9,16 +9,16 @@ import type { TriState } from '../../../../../../net/fabricmc/fabric/api/util/Tr
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { PermissionLevel } from '../../../../../../net/minecraft/server/permissions/PermissionLevel.d.ts'
 export interface PermissionContext extends Object, PermissionContextOwner{
-    checkPermission<T extends Object | number | string | boolean>(arg0: PermissionNode<T>): T;
-    checkPermission<T extends Object | number | string | boolean>(arg0: PermissionNode<T>, arg1: T): T;
+    checkPermission<T extends unknown>(arg0: PermissionNode<T>): T;
+    checkPermission<T extends unknown>(arg0: PermissionNode<T>, arg1: T): T;
     checkPermission(arg0: Identifier): TriState;
     checkPermission(arg0: Identifier, arg1: boolean): boolean;
     checkPermission(arg0: Identifier, arg1: PermissionLevel): boolean;
-    get<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>): T;
+    get<T extends unknown>(arg0: PermissionContext$Key<T>): T;
     getPermissionContext(): PermissionContext;
     keys(): PermissionContext$Key<Object>[];
     mutable(): MutablePermissionContext;
-    orElse<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>, arg1: T): T;
+    orElse<T extends unknown>(arg0: PermissionContext$Key<T>, arg1: T): T;
     permissionLevel(): PermissionLevel;
     type(): PermissionContext$Type;
     uuid(): UUID;

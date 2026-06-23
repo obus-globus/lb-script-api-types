@@ -3,7 +3,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class StreamIterator<E extends Object | number | string | boolean> extends Object implements AutoCloseable, Iterator<E> {
+export class StreamIterator<E extends unknown> extends Object implements AutoCloseable, Iterator<E> {
     static iterator(paramarg0: Stream<Object>): StreamIterator<Object>;
     private constructor(arg0: Stream<E>)
     // private closed: boolean;

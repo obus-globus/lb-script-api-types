@@ -125,7 +125,7 @@ import type { StructMember } from '../../../../../../io/github/douira/glsl_trans
 import type { StructSpecifier } from '../../../../../../io/github/douira/glsl_transformer/ast/node/type/struct/StructSpecifier.d.ts'
 import type { GeneralASTVisitor } from '../../../../../../io/github/douira/glsl_transformer/ast/traversal/GeneralASTVisitor.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface ASTVisitor<R extends Object | number | string | boolean> extends GeneralASTVisitor<R>, Object{
+export interface ASTVisitor<R extends unknown> extends GeneralASTVisitor<R>, Object{
     aggregateResult(arg0: R, arg1: R, arg2: R): R;
     startVisit(arg0: ASTNode): R;
     visit(arg0: R, arg1: ASTNode): R;

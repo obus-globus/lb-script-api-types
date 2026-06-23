@@ -6,5 +6,5 @@ export class DefaultLanguageAdapter extends Object implements LanguageAdapter {
     static INSTANCE: DefaultLanguageAdapter;
     static getDefault(): LanguageAdapter;
     constructor()
-    create<T extends Object | number | string | boolean>(arg0: ModContainer, arg1: string, arg2: Class<T>): T;
+    create<T extends unknown>(arg0: ModContainer, arg1: string, arg2: Class<T>): T;
 }

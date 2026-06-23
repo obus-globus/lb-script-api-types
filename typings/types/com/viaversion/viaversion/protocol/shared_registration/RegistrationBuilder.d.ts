@@ -19,7 +19,7 @@ export class RegistrationBuilder extends Object {
     // private checkVersionType(arg0: ProtocolVersion): void;
     range(arg0: ProtocolVersion, arg1: ProtocolVersion, arg2: (param0: RegistrationContext<ClientboundPacketType, ServerboundPacketType>) => void): RegistrationBuilder;
     ranges<CU extends ClientboundPacketType, SU extends ServerboundPacketType>(arg0: ProtocolVersion, arg1: (param0: RegistrationBuilder$RangesBuilder<CU, SU>) => void): RegistrationBuilder;
-    ranges<CU extends ClientboundPacketType, SU extends ServerboundPacketType, R extends Object | number | string | boolean>(arg0: (param0: RegistrationContext<CU, SU>) => R, arg1: ProtocolVersion, arg2: (param0: RegistrationBuilder$TypedRangesBuilder<CU, SU, R>) => void): RegistrationBuilder;
+    ranges<CU extends ClientboundPacketType, SU extends ServerboundPacketType, R extends unknown>(arg0: (param0: RegistrationContext<CU, SU>) => R, arg1: ProtocolVersion, arg2: (param0: RegistrationBuilder$TypedRangesBuilder<CU, SU, R>) => void): RegistrationBuilder;
     register(): void;
     since(arg0: ProtocolVersion, arg1: (param0: RegistrationContext<ClientboundPacketType, ServerboundPacketType>) => void): RegistrationBuilder;
 }

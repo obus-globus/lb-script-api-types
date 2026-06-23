@@ -11,7 +11,7 @@ export class Configuration$Simple extends Record implements Configuration {
     bits(): number;
     bitsInMemory(): number;
     bitsInStorage(): number;
-    createPalette<T extends Object | number | string | boolean>(strategy: Strategy<T>, paletteEntries: T[]): Palette<T>;
+    createPalette<T extends unknown>(strategy: Strategy<T>, paletteEntries: T[]): Palette<T>;
     equals(o: Object | null): boolean;
     factory(): Palette$Factory;
     hashCode(): number;

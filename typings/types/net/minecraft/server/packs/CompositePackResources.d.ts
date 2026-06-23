@@ -16,7 +16,7 @@ export class CompositePackResources extends Object implements PackResources {
     // private packResourcesStack: PackResources[];
     // private primaryPackResources: PackResources;
     close(): void;
-    getMetadataSection<T extends Object | number | string | boolean>(metadataSerializer: MetadataSectionType<T>): T;
+    getMetadataSection<T extends unknown>(metadataSerializer: MetadataSectionType<T>): T;
     getNamespaces(type: PackType): string[];
     getResource(type: PackType, location: Identifier): () => InputStream;
     getRootResource(path: string[]): () => InputStream;

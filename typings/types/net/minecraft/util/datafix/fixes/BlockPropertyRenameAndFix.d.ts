@@ -15,6 +15,6 @@ export class BlockPropertyRenameAndFix extends AbstractBlockPropertyFix {
     // private newPropertyName: string;
     // private oldPropertyName: string;
     // private valueFixer: (param0: string) => Object | null;
-    fixProperties<T extends Object | number | string | boolean>(blockId: string, properties: Dynamic<T>): Dynamic<T>;
+    fixProperties<T extends unknown>(blockId: string, properties: Dynamic<T>): Dynamic<T>;
     shouldFix(blockId: string): boolean;
 }

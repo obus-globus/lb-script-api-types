@@ -13,7 +13,7 @@ export class KQueueChannelConfig extends DefaultChannelConfig {
     // private transportProvidesGuess: boolean;
     autoReadCleared(): void;
     getMaxBytesPerGatheringWrite(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getRcvAllocTransportProvidesGuess(): boolean;
@@ -23,7 +23,7 @@ export class KQueueChannelConfig extends DefaultChannelConfig {
     setMaxBytesPerGatheringWrite(arg0: number): void;
     setMaxMessagesPerRead(arg0: number): KQueueChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): KQueueChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setRcvAllocTransportProvidesGuess(arg0: boolean): KQueueChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): KQueueChannelConfig;
     setWriteBufferHighWaterMark(arg0: number): KQueueChannelConfig;

@@ -5,7 +5,7 @@ import type { ModelStorage } from '../../../../net/irisshaders/iris/mixinterface
 import type { Model } from '../../../../net/minecraft/client/model/Model.d.ts'
 import type { ModelFeatureRenderer$CrumblingOverlay } from '../../../../net/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay.d.ts'
 import type { TextureAtlasSprite } from '../../../../net/minecraft/client/renderer/texture/TextureAtlasSprite.d.ts'
-export class SubmitNodeStorage$ModelSubmit<S extends Object | number | string | boolean> extends Record implements ModelStorage {
+export class SubmitNodeStorage$ModelSubmit<S extends unknown> extends Record implements ModelStorage {
     // private beId: number;
     // private crumblingOverlay: ModelFeatureRenderer$CrumblingOverlay;
     // private entityId: number;

@@ -4,7 +4,7 @@ import type { AbstractSupplier } from '../../../../../org/apache/commons/lang3/b
 import type { AbstractConcurrentInitializer } from '../../../../../org/apache/commons/lang3/concurrent/AbstractConcurrentInitializer.d.ts'
 import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
-export abstract class AbstractConcurrentInitializer$AbstractBuilder<I extends AbstractConcurrentInitializer<T, E>, T extends Object | number | string | boolean, B extends AbstractConcurrentInitializer$AbstractBuilder<I, T, B, E>, E extends Exception> extends AbstractSupplier<I, B, E> {
+export abstract class AbstractConcurrentInitializer$AbstractBuilder<I extends AbstractConcurrentInitializer<T, E>, T extends unknown, B extends AbstractConcurrentInitializer$AbstractBuilder<I, T, B, E>, E extends Exception> extends AbstractSupplier<I, B, E> {
     static NUL: () => Object | null;
     constructor()
     readonly closer: (param0: T) => void;

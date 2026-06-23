@@ -6,7 +6,7 @@ import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts
 import type { Future } from '../../../../../java/util/concurrent/Future.d.ts'
 import type { AtomicBoolean } from '../../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class JdkFutureAdapters$ListenableFutureAdapter<V extends Object | number | string | boolean> extends ForwardingFuture<V> implements ListenableFuture<V> {
+export class JdkFutureAdapters$ListenableFutureAdapter<V extends unknown> extends ForwardingFuture<V> implements ListenableFuture<V> {
     constructor(delegate: Future<V>)
     constructor(delegate: Future<V>, adapterExecutor: Executor)
     // private adapterExecutor: Executor;

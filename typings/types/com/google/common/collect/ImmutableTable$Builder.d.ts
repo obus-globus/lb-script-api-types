@@ -3,7 +3,7 @@ import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
 import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cell.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ImmutableTable$Builder<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export class ImmutableTable$Builder<R extends unknown, C extends unknown, V extends unknown> extends Object {
     constructor()
     // private cells: Table$Cell<R, C, V>[];
     // private columnComparator: (param0: Object) => boolean;

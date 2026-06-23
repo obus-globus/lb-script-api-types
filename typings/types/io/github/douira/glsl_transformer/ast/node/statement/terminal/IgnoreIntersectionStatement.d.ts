@@ -13,5 +13,5 @@ export class IgnoreIntersectionStatement extends TerminalStatement {
     clone(): IgnoreIntersectionStatement;
     cloneInto(arg0: Root): IgnoreIntersectionStatement;
     getStatementType(): Statement$StatementType;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

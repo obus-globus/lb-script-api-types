@@ -5,7 +5,7 @@ import type { TextTrieMap$CharIterator } from '../../../../../../../org/graalvm/
 import type { TextTrieMap$Node } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/TextTrieMap$Node.d.ts'
 import type { TextTrieMap$Output } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/TextTrieMap$Output.d.ts'
 import type { TextTrieMap$ResultHandler } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/TextTrieMap$ResultHandler.d.ts'
-export class TextTrieMap<V extends Object | number | string | boolean> extends Object {
+export class TextTrieMap<V extends unknown> extends Object {
     constructor(ignoreCase: boolean)
     // private _ignoreCase: boolean;
     // private _root: TextTrieMap$Node;

@@ -11,10 +11,10 @@ export class ParserContext extends Object {
     contains(arg0: ParserContext$Key<Object>): boolean;
     copy(): ParserContext;
     copyWithoutNodeContext(): ParserContext;
-    get<T extends Object | number | string | boolean>(arg0: ParserContext$Key<T>): T;
-    getOrElse<T extends Object | number | string | boolean>(arg0: ParserContext$Key<T>, arg1: T): T;
-    getOrElse<T extends Object | number | string | boolean>(arg0: ParserContext$Key<T>, arg1: () => T): T;
-    getOrThrow<T extends Object | number | string | boolean>(arg0: ParserContext$Key<T>): T;
-    with<T extends Object | number | string | boolean>(arg0: ParserContext$Key<T>, arg1: T): ParserContext;
-    withIfNotSet<T extends Object | number | string | boolean>(arg0: ParserContext$Key<T>, arg1: T): ParserContext;
+    get<T extends unknown>(arg0: ParserContext$Key<T>): T;
+    getOrElse<T extends unknown>(arg0: ParserContext$Key<T>, arg1: T): T;
+    getOrElse<T extends unknown>(arg0: ParserContext$Key<T>, arg1: () => T): T;
+    getOrThrow<T extends unknown>(arg0: ParserContext$Key<T>): T;
+    with<T extends unknown>(arg0: ParserContext$Key<T>, arg1: T): ParserContext;
+    withIfNotSet<T extends unknown>(arg0: ParserContext$Key<T>, arg1: T): ParserContext;
 }

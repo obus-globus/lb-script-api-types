@@ -133,11 +133,11 @@ export class Salmon extends AbstractSchoolingFish {
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<Salmon>, level: Level)
     addAdditionalSaveData(output: ValueOutput): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getBucketItemStack(): ItemStack;
     getDeathSound(): SoundEvent;

@@ -4,7 +4,7 @@ import type { StableContextOptionValue$UpdateKind } from '../../../../../../com/
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { OptionKey } from '../../../../../../org/graalvm/options/OptionKey.d.ts'
-export class StableContextOptionValue<T extends Object | number | string | boolean> extends Object {
+export class StableContextOptionValue<T extends unknown> extends Object {
     constructor(getter: (param0: JSContextOptions) => T, optionKey: OptionKey<T>, optionName: string)
     // private getter: (param0: JSContextOptions) => T;
     // private optionKey: OptionKey<T>;

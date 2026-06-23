@@ -5,7 +5,7 @@ import type { PoolThreadCache$MemoryRegionCache$Entry } from '../../../io/netty/
 import type { PooledByteBuf } from '../../../io/netty/buffer/PooledByteBuf.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class PoolThreadCache$MemoryRegionCache<T extends Object | number | string | boolean> extends Object {
+export abstract class PoolThreadCache$MemoryRegionCache<T extends unknown> extends Object {
     constructor(arg0: number, arg1: PoolArena$SizeClass)
     // private allocations: number;
     // private queue: PoolThreadCache$MemoryRegionCache$Entry<T>[];

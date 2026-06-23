@@ -4,7 +4,7 @@ import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class Multimaps$TransformedEntriesMultimap<K extends Object | number | string | boolean, V1 extends Object | number | string | boolean, V2 extends Object | number | string | boolean> extends AbstractMultimap<K, V2> {
+export class Multimaps$TransformedEntriesMultimap<K extends unknown, V1 extends unknown, V2 extends unknown> extends AbstractMultimap<K, V2> {
     constructor(fromMultimap: Multimap<K, V1>, transformer: (param0: K, param1: V1) => V2)
     // private fromMultimap: Multimap<K, V1>;
     // private transformer: (param0: K, param1: V1) => V2;

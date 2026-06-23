@@ -1,6 +1,6 @@
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface ByteReferencePair<V extends Object | number | string | boolean> extends Pair<number, V>, Object{
+export interface ByteReferencePair<V extends unknown> extends Pair<number, V>, Object{
     first(): number;
     first(arg0: number): Pair<number, V>;
     first(arg0: number): ByteReferencePair<V>;

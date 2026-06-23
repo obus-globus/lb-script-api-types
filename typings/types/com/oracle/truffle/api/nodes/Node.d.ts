@@ -22,7 +22,7 @@ export abstract class Node extends Object implements NodeInterface, Cloneable {
     // private adoptHelperInsert(newChild: Node): void;
     // private adoptUnadoptedHelper(newChild: Node): void;
     atomic(closure: () => void): void;
-    atomic<T extends Object | number | string | boolean>(closure: () => T): T;
+    atomic<T extends unknown>(closure: () => T): T;
     // private checkAdoptable(): void;
     checkSameLanguageOfChildren(): boolean;
     // private checkSameLanguages(newChild: Node): boolean;

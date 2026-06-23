@@ -5,7 +5,7 @@ import type { DateTimeFormat } from '../../../kotlinx/datetime/format/DateTimeFo
 import type { DateTimeFormat$Companion } from '../../../kotlinx/datetime/format/DateTimeFormat$Companion.d.ts'
 import type { CachedFormatStructure } from '../../../kotlinx/datetime/internal/format/CachedFormatStructure.d.ts'
 import type { Copyable } from '../../../kotlinx/datetime/internal/format/parser/Copyable.d.ts'
-export class AbstractDateTimeFormat<T extends Object | number | string | boolean, U extends Copyable<U>> extends Object implements DateTimeFormat<T> {
+export class AbstractDateTimeFormat<T extends unknown, U extends Copyable<U>> extends Object implements DateTimeFormat<T> {
     static Companion: DateTimeFormat$Companion;
     protected constructor()
     readonly actualFormat: CachedFormatStructure<U>;

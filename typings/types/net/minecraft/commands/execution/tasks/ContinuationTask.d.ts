@@ -4,7 +4,7 @@ import type { EntryAction } from '../../../../../net/minecraft/commands/executio
 import type { ExecutionContext } from '../../../../../net/minecraft/commands/execution/ExecutionContext.d.ts'
 import type { Frame } from '../../../../../net/minecraft/commands/execution/Frame.d.ts'
 import type { ContinuationTask$TaskProvider } from '../../../../../net/minecraft/commands/execution/tasks/ContinuationTask$TaskProvider.d.ts'
-export class ContinuationTask<T extends Object | number | string | boolean, P extends Object | number | string | boolean> extends Object implements EntryAction<T> {
+export class ContinuationTask<T extends unknown, P extends unknown> extends Object implements EntryAction<T> {
     static schedule(paramcontext: ExecutionContext<Object>, paramframe: Frame, paramarguments: (Object | null)[], paramtaskFactory: (param0: Frame, param1: Object | null) => CommandQueueEntry<Object>): void;
     private constructor(taskFactory: (param0: Frame, param1: P) => CommandQueueEntry<T>, arguments: P[], frame: Frame)
     // private arguments: P[];

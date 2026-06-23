@@ -1,7 +1,7 @@
 import type { ReferenceQueue } from '../../../../../../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { LocaleObjectCache$CacheEntry } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/locale/LocaleObjectCache$CacheEntry.d.ts'
-export abstract class LocaleObjectCache<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export abstract class LocaleObjectCache<K extends unknown, V extends unknown> extends Object {
     constructor()
     constructor(initialCapacity: number, loadFactor: number, concurrencyLevel: number)
     // private _map: Map<K, LocaleObjectCache$CacheEntry<K, V>>;

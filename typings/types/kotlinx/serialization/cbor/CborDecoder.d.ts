@@ -18,8 +18,8 @@ export interface CborDecoder extends Object, Decoder{
     decodeLong(): number;
     decodeNotNullMark(): boolean;
     decodeNull(): void | null;
-    decodeNullableSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T | null;
-    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
+    decodeNullableSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T | null;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
     decodeShort(): number;
     decodeString(): string;
 }

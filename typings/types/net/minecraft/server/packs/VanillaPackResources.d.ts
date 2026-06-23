@@ -26,7 +26,7 @@ export class VanillaPackResources extends Object implements PackResources {
     // private rootPaths: Path[][];
     asProvider(): (param0: Identifier) => Optional<Resource>;
     close(): void;
-    getMetadataSection<T extends Object | number | string | boolean>(metadataSerializer: MetadataSectionType<T>): T;
+    getMetadataSection<T extends unknown>(metadataSerializer: MetadataSectionType<T>): T;
     getNamespaces(type: PackType): string[];
     getResource(type: PackType, location: Identifier): () => InputStream;
     getRootResource(path: string[]): () => InputStream;

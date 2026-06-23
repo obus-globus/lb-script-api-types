@@ -1,6 +1,6 @@
 import type { Reference2ByteMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ByteMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Reference2ByteLinkedOpenHashMap$MapIterator<ConsumerType extends Object | number | string | boolean> extends Object {
+export abstract class Reference2ByteLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     private constructor(null_: Reference2ByteLinkedOpenHashMap$MapIterator<Object>)
     constructor(null_: Reference2ByteLinkedOpenHashMap$MapIterator<Object>)
     // private curr: number;
@@ -8,7 +8,7 @@ export abstract class Reference2ByteLinkedOpenHashMap$MapIterator<ConsumerType e
     // private next: number;
     // private prev: number;
     acceptOnIndex(arg0: ConsumerType, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: Reference2ByteMap$Entry<K>): void;
+    add<K extends unknown>(arg0: Reference2ByteMap$Entry<K>): void;
     back(arg0: number): number;
     // private ensureIndexKnown(): void;
     forEachRemaining(arg0: ConsumerType): void;
@@ -19,6 +19,6 @@ export abstract class Reference2ByteLinkedOpenHashMap$MapIterator<ConsumerType e
     previousEntry(): number;
     previousIndex(): number;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: Reference2ByteMap$Entry<K>): void;
+    set<K extends unknown>(arg0: Reference2ByteMap$Entry<K>): void;
     skip(arg0: number): number;
 }

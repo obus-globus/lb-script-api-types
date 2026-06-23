@@ -8,7 +8,7 @@ import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
-export class ConcurrentHashMap$ForEachTransformedEntryTask<K extends Object | number | string | boolean, V extends Object | number | string | boolean, U extends Object | number | string | boolean> extends ConcurrentHashMap$BulkTask<K, V, void> {
+export class ConcurrentHashMap$ForEachTransformedEntryTask<K extends unknown, V extends unknown, U extends unknown> extends ConcurrentHashMap$BulkTask<K, V, void> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

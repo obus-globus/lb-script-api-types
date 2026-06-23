@@ -1,6 +1,6 @@
 import type { Assumption } from '../../../../../com/oracle/truffle/api/Assumption.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AssumedValue<T extends Object | number | string | boolean> extends Object {
+export class AssumedValue<T extends unknown> extends Object {
     constructor(initialValue: T)
     constructor(name: string, initialValue: T)
     // private assumption: Assumption;

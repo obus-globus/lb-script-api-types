@@ -33,7 +33,7 @@ export class AccessorInfo extends SpecialMethodInfo {
     readonly targetFieldType: Type;
     targetMethod: MethodNode;
     // private type: AccessorInfo$AccessorType;
-    findTarget<TNode extends Object | number | string | boolean>(arg0: ElementNode<TNode>[]): TNode;
+    findTarget<TNode extends unknown>(arg0: ElementNode<TNode>[]): TNode;
     // private findTargetField(): FieldNode;
     generate(): MethodNode;
     getArgTypes(): Type[];

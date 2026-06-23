@@ -10,7 +10,7 @@ import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class ImmutableListMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ImmutableMultimap<K, V> implements ListMultimap<K, V> {
+export class ImmutableListMultimap<K extends unknown, V extends unknown> extends ImmutableMultimap<K, V> implements ListMultimap<K, V> {
     static builder(): ImmutableListMultimap$Builder<Object, Object>;
     static builder(): ImmutableMultimap$Builder<Object, Object>;
     static builderWithExpectedKeys(paramexpectedKeys: number): ImmutableListMultimap$Builder<Object, Object>;

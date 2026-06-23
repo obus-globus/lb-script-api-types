@@ -5,7 +5,7 @@ import type { SelectItemModelProperty$Type } from '../../../../../../../net/mine
 import type { LivingEntity } from '../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { ItemDisplayContext } from '../../../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
-export interface SelectItemModelProperty<T extends Object | number | string | boolean> extends Object{
+export interface SelectItemModelProperty<T extends unknown> extends Object{
     get(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity, seed: number, displayContext: ItemDisplayContext): T;
     type(): SelectItemModelProperty$Type<SelectItemModelProperty<T>, T>;
     valueCodec(): Codec<T>;

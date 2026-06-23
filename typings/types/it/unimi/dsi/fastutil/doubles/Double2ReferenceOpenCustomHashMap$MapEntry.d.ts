@@ -16,18 +16,18 @@ export class Double2ReferenceOpenCustomHashMap$MapEntry extends Object implement
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;
-    first<V extends Object | number | string | boolean>(arg0: number): DoubleReferencePair<V>;
+    first<V extends unknown>(arg0: number): DoubleReferencePair<V>;
     firstDouble(): number;
     getDoubleKey(): number;
     hashCode(): number;
     key(): number;
-    key<V extends Object | number | string | boolean>(arg0: number): DoubleReferencePair<V>;
+    key<V extends unknown>(arg0: number): DoubleReferencePair<V>;
     keyDouble(): number;
     left(): number;
-    left<V extends Object | number | string | boolean>(arg0: number): DoubleReferencePair<V>;
+    left<V extends unknown>(arg0: number): DoubleReferencePair<V>;
     leftDouble(): number;
-    right<V extends Object | number | string | boolean>(): V;
-    right<V extends Object | number | string | boolean>(arg0: V): DoubleReferencePair<V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    right<V extends unknown>(): V;
+    right<V extends unknown>(arg0: V): DoubleReferencePair<V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

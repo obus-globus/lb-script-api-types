@@ -6,7 +6,7 @@ import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-export class DatagramPacketEncoder<M extends Object | number | string | boolean> extends MessageToMessageEncoder<AddressedEnvelope<M, InetSocketAddress>> {
+export class DatagramPacketEncoder<M extends unknown> extends MessageToMessageEncoder<AddressedEnvelope<M, InetSocketAddress>> {
     constructor(arg0: MessageToMessageEncoder<M>)
     // private encoder: MessageToMessageEncoder<M>;
     acceptOutboundMessage(arg0: Object): boolean;

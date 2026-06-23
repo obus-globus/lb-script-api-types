@@ -11,7 +11,7 @@ import type { HolderOwner } from '../../../net/minecraft/core/HolderOwner.d.ts'
 import type { DelegatingOps } from '../../../net/minecraft/resources/DelegatingOps.d.ts'
 import type { RegistryOps$RegistryInfoLookup } from '../../../net/minecraft/resources/RegistryOps$RegistryInfoLookup.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
-export class RegistryOps<T extends Object | number | string | boolean> extends DelegatingOps<T> implements RegistryOpsAccessor {
+export class RegistryOps<T extends unknown> extends DelegatingOps<T> implements RegistryOpsAccessor {
     static create(paramparent: DynamicOps<Object>, paramlookupProvider: HolderLookup$Provider): RegistryOps<Object>;
     static create(paramparent: DynamicOps<Object>, paramlookupProvider: RegistryOps$RegistryInfoLookup): RegistryOps<Object>;
     static injectRegistryContext(paramdynamic: Dynamic<Object>, paramlookupProvider: HolderLookup$Provider): Dynamic<Object>;
@@ -21,8 +21,8 @@ export class RegistryOps<T extends Object | number | string | boolean> extends D
     lookupProvider: RegistryOps$RegistryInfoLookup;
     equals(obj: Object | null): boolean;
     getRegistryInfoGetter(): RegistryOps$RegistryInfoLookup;
-    getter<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<HolderGetter<E>>;
+    getter<E extends unknown>(registryKey: ResourceKey<E[]>): Optional<HolderGetter<E>>;
     hashCode(): number;
-    owner<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<HolderOwner<E>>;
-    withParent<U extends Object | number | string | boolean>(parent: DynamicOps<U>): RegistryOps<U>;
+    owner<E extends unknown>(registryKey: ResourceKey<E[]>): Optional<HolderOwner<E>>;
+    withParent<U extends unknown>(parent: DynamicOps<U>): RegistryOps<U>;
 }

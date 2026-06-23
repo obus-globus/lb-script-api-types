@@ -13,5 +13,5 @@ export class DataFetcher extends Object {
     // private resolution: TimeUnit;
     // private timeSource: (param0: TimeUnit) => number;
     createSubscription(): DataFetcher$Subscription;
-    createTask<T extends Object | number | string | boolean>(id: string, updater: () => T, period: Duration, repeatStrategy: RepeatedDelayStrategy): DataFetcher$Task<T>;
+    createTask<T extends unknown>(id: string, updater: () => T, period: Duration, repeatStrategy: RepeatedDelayStrategy): DataFetcher$Task<T>;
 }

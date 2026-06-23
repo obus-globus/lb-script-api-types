@@ -3,9 +3,9 @@ import type { MixinEnvironment } from '../../../../../org/spongepowered/asm/mixi
 import type { IMixinConfigPlugin } from '../../../../../org/spongepowered/asm/mixin/extensibility/IMixinConfigPlugin.d.ts'
 import type { IMixinConfigSource } from '../../../../../org/spongepowered/asm/mixin/extensibility/IMixinConfigSource.d.ts'
 export interface IMixinConfig extends Object{
-    decorate<V extends Object | number | string | boolean>(arg0: string, arg1: V): void;
+    decorate<V extends unknown>(arg0: string, arg1: V): void;
     getCleanSourceId(): string;
-    getDecoration<V extends Object | number | string | boolean>(arg0: string): V;
+    getDecoration<V extends unknown>(arg0: string): V;
     getEnvironment(): MixinEnvironment;
     getMixinPackage(): string;
     getName(): string;

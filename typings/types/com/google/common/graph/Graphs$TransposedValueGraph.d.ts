@@ -2,7 +2,7 @@ import type { ForwardingValueGraph } from '../../../../com/google/common/graph/F
 import type { ValueGraph } from '../../../../com/google/common/graph/ValueGraph.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Graphs$TransposedValueGraph<N extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ForwardingValueGraph<N, V> {
+export class Graphs$TransposedValueGraph<N extends unknown, V extends unknown> extends ForwardingValueGraph<N, V> {
     constructor(graph: ValueGraph<N, V>)
     // private graph: ValueGraph<N, V>;
     delegate(): ValueGraph<N, V>;

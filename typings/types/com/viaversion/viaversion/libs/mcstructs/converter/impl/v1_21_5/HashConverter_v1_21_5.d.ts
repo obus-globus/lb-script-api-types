@@ -23,10 +23,10 @@ export class HashConverter_v1_21_5 extends Object implements DataConverter<HashC
     asNumber(arg0: HashCode): Result<Number>;
     asString(arg0: HashCode): Result<string>;
     asStringTypeMap(arg0: HashCode): Result<{ [key: string]: HashCode }>;
-    convertFrom<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: N): HashCode;
-    convertList<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: HashCode): N;
-    convertMap<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: HashCode): N;
-    convertTo<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: HashCode): N;
+    convertFrom<N extends unknown>(arg0: DataConverter<N>, arg1: N): HashCode;
+    convertList<N extends unknown>(arg0: DataConverter<N>, arg1: HashCode): N;
+    convertMap<N extends unknown>(arg0: DataConverter<N>, arg1: HashCode): N;
+    convertTo<N extends unknown>(arg0: DataConverter<N>, arg1: HashCode): N;
     createBoolean(arg0: boolean): HashCode;
     createByte(arg0: number): HashCode;
     createByteArray(arg0: number[]): HashCode;
@@ -45,7 +45,7 @@ export class HashConverter_v1_21_5 extends Object implements DataConverter<HashC
     empty(): HashCode;
     emptyList(): HashCode;
     emptyMap(): HashCode;
-    fork<O extends Object | number | string | boolean>(arg0: DataConverter<O>): DataConverter<O>;
+    fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<HashCode>;
     mergeList(arg0: HashCode, arg1: HashCode[]): Result<HashCode>;
     mergeMap(arg0: HashCode, arg1: HashCode, arg2: HashCode): Result<HashCode>;

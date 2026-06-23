@@ -8,7 +8,7 @@ import type { AtomicReferenceArray } from '../../../../../java/util/concurrent/a
 import type { Lock } from '../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { ReadWriteLock } from '../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Striped$SmallLazyStriped<L extends Object | number | string | boolean> extends Striped$PowerOfTwoStriped<L> {
+export class Striped$SmallLazyStriped<L extends unknown> extends Striped$PowerOfTwoStriped<L> {
     static custom(paramstripes: number, paramsupplier: () => Object | null): Striped<Object>;
     static lazyWeakLock(paramstripes: number): Striped<Lock>;
     static lazyWeakReadWriteLock(paramstripes: number): Striped<ReadWriteLock>;

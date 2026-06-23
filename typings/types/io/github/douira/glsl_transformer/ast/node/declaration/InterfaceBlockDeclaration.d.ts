@@ -24,7 +24,7 @@ export class InterfaceBlockDeclaration extends Declaration {
     variableName: Identifier;
     clone(): InterfaceBlockDeclaration;
     cloneInto(arg0: Root): InterfaceBlockDeclaration;
-    declarationAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    declarationAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getArraySpecifier(): ArraySpecifier;

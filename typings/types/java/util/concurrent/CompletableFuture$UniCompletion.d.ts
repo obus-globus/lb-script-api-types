@@ -6,7 +6,7 @@ import type { Executor } from '../../../java/util/concurrent/Executor.d.ts'
 import type { ForkJoinPool } from '../../../java/util/concurrent/ForkJoinPool.d.ts'
 import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class CompletableFuture$UniCompletion<T extends Object | number | string | boolean, V extends Object | number | string | boolean> extends CompletableFuture$Completion {
+export abstract class CompletableFuture$UniCompletion<T extends unknown, V extends unknown> extends CompletableFuture$Completion {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

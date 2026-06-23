@@ -3,7 +3,7 @@ import type { ReferenceQueue } from '../../../../../java/lang/ref/ReferenceQueue
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
-export class TransitionMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export class TransitionMap<K extends unknown, V extends unknown> extends Object {
     static create(): TransitionMap<Object, Object>;
     constructor()
     // private queue: ReferenceQueue<V>;

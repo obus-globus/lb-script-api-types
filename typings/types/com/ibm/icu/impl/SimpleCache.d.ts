@@ -1,7 +1,7 @@
 import type { ICUCache } from '../../../../com/ibm/icu/impl/ICUCache.d.ts'
 import type { Reference } from '../../../../java/lang/ref/Reference.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class SimpleCache<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements ICUCache<K, V> {
+export class SimpleCache<K extends unknown, V extends unknown> extends Object implements ICUCache<K, V> {
     static NULL: Object;
     static SOFT: number;
     static WEAK: number;

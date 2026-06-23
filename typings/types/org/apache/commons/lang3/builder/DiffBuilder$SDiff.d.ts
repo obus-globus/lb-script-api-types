@@ -4,7 +4,7 @@ import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { Diff } from '../../../../../org/apache/commons/lang3/builder/Diff.d.ts'
 import type { DiffBuilder$SerializableSupplier } from '../../../../../org/apache/commons/lang3/builder/DiffBuilder$SerializableSupplier.d.ts'
 import type { Pair } from '../../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
-export class DiffBuilder$SDiff<T extends Object | number | string | boolean> extends Diff<T> {
+export class DiffBuilder$SDiff<T extends unknown> extends Diff<T> {
     static EMPTY_ARRAY: Object | null;
     static emptyArray(): Object | null;
     static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;

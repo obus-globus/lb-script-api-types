@@ -5,7 +5,7 @@ import type { OutgoingRpcMethod } from '../../../../net/minecraft/server/jsonrpc
 import type { OutgoingRpcMethod$Attributes } from '../../../../net/minecraft/server/jsonrpc/OutgoingRpcMethod$Attributes.d.ts'
 import type { OutgoingRpcMethod$OutgoingRpcMethodBuilder } from '../../../../net/minecraft/server/jsonrpc/OutgoingRpcMethod$OutgoingRpcMethodBuilder.d.ts'
 import type { MethodInfo } from '../../../../net/minecraft/server/jsonrpc/api/MethodInfo.d.ts'
-export class OutgoingRpcMethod$ParameterlessMethod<Result extends Object | number | string | boolean> extends Record implements OutgoingRpcMethod<void, Result> {
+export class OutgoingRpcMethod$ParameterlessMethod<Result extends unknown> extends Record implements OutgoingRpcMethod<void, Result> {
     static NOTIFICATION_PREFIX: string;
     static notification(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<void, void>;
     static notificationWithParams(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<Object, void>;

@@ -10,6 +10,6 @@ export class Cbor extends Object implements BinaryFormat {
     protected constructor(configuration: CborConfiguration, serializersModule: SerializersModule)
     readonly configuration: CborConfiguration;
     readonly serializersModule: SerializersModule;
-    decodeFromByteArray<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, bytes: number[]): T;
-    encodeToByteArray<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): number[];
+    decodeFromByteArray<T extends unknown>(deserializer: DeserializationStrategy<T>, bytes: number[]): T;
+    encodeToByteArray<T extends unknown>(serializer: SerializationStrategy<T>, value: T): number[];
 }

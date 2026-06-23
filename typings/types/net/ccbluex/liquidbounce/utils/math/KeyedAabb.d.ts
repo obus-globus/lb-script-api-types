@@ -7,7 +7,7 @@ import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
  *
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/AabbMergeUtil.kt:28}
  */
-export class KeyedAabb<K extends Object | number | string | boolean> extends Record {
+export class KeyedAabb<K extends unknown> extends Record {
     constructor(box: AABB, key: K)
     // private box: AABB;
     /*not mapped: */ box(): AABB;

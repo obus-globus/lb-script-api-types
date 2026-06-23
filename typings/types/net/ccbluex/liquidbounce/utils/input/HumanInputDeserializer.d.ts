@@ -19,8 +19,8 @@ export class HumanInputDeserializer extends Object {
     readonly keyDeserializer: HumanInputDeserializer$StringDeserializer<InputConstants$Key>;
     readonly textArrayDeserializer: HumanInputDeserializer$StringDeserializer<string[]>;
     readonly textDeserializer: HumanInputDeserializer$StringDeserializer<string>;
-    parseArray<T extends Object | number | string | boolean>(str: string, componentDeserializer: HumanInputDeserializer$StringDeserializer<T>): T[];
-    // private parseRange<R extends Object | number | string | boolean, N extends Object | number | string | boolean>(str: string, numberParser: HumanInputDeserializer$StringDeserializer<N>, rangeSupplier: (param0: N, param1: N) => R): R;
-    registryItemDeserializer<T extends Object | number | string | boolean>(registry: T[]): HumanInputDeserializer$StringDeserializer<T>;
-    registryItemDeserializer<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): HumanInputDeserializer$StringDeserializer<T>;
+    parseArray<T extends unknown>(str: string, componentDeserializer: HumanInputDeserializer$StringDeserializer<T>): T[];
+    // private parseRange<R extends unknown, N extends unknown>(str: string, numberParser: HumanInputDeserializer$StringDeserializer<N>, rangeSupplier: (param0: N, param1: N) => R): R;
+    registryItemDeserializer<T extends unknown>(registry: T[]): HumanInputDeserializer$StringDeserializer<T>;
+    registryItemDeserializer<T extends unknown>(key: ResourceKey<T[]>): HumanInputDeserializer$StringDeserializer<T>;
 }

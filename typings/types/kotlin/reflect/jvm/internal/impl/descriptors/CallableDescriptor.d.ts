@@ -22,7 +22,7 @@ export interface CallableDescriptor extends Object, DeclarationDescriptorNonRoot
     getReturnType(): KotlinType;
     getSource(): SourceElement;
     getTypeParameters(): TypeParameterDescriptor[];
-    getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>): V;
     getValueParameters(): ValueParameterDescriptor[];
     getVisibility(): DescriptorVisibility;
     hasSynthesizedParameterNames(): boolean;

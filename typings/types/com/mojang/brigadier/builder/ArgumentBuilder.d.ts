@@ -6,7 +6,7 @@ import type { CommandNode } from '../../../../com/mojang/brigadier/tree/CommandN
 import type { RootCommandNode } from '../../../../com/mojang/brigadier/tree/RootCommandNode.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ArgumentBuilder<S extends Object | number | string | boolean, T extends ArgumentBuilder<S, T>> extends Object {
+export abstract class ArgumentBuilder<S extends unknown, T extends ArgumentBuilder<S, T>> extends Object {
     constructor()
     readonly arguments: RootCommandNode<S>;
     readonly command: (param0: CommandContext<S>) => number;

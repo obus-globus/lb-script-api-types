@@ -1,7 +1,7 @@
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ExpirationPolicy } from '../../../net/jodah/expiringmap/ExpirationPolicy.d.ts'
-export class ExpiringValue<V extends Object | number | string | boolean> extends Object {
+export class ExpiringValue<V extends unknown> extends Object {
     constructor(arg0: V)
     constructor(arg0: V, arg1: number, arg2: TimeUnit)
     private constructor(arg0: V, arg1: number, arg2: TimeUnit, arg3: ExpirationPolicy)

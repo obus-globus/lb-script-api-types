@@ -51,7 +51,7 @@ export class ValidatingObjectInputStream extends ObjectInputStream {
     accept(arg0: (param0: string) => boolean): ValidatingObjectInputStream;
     // private checkClassName(arg0: string): void;
     invalidClassNameFound(arg0: string): void;
-    readObjectCast<T extends Object | number | string | boolean>(): T;
+    readObjectCast<T extends unknown>(): T;
     reject(arg0: Pattern): ValidatingObjectInputStream;
     reject(arg0: Class<Object>[]): ValidatingObjectInputStream;
     reject(arg0: string[]): ValidatingObjectInputStream;

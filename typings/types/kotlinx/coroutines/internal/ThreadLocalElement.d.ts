@@ -4,7 +4,7 @@ import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineConte
 import type { CoroutineContext$Element } from '../../../kotlin/coroutines/CoroutineContext$Element.d.ts'
 import type { CoroutineContext$Key } from '../../../kotlin/coroutines/CoroutineContext$Key.d.ts'
 import type { ThreadContextElement } from '../../../kotlinx/coroutines/ThreadContextElement.d.ts'
-export class ThreadLocalElement<T extends Object | number | string | boolean> extends Object implements ThreadContextElement<T> {
+export class ThreadLocalElement<T extends unknown> extends Object implements ThreadContextElement<T> {
     constructor(value: T, threadLocal: ThreadLocal<T>)
     readonly key: CoroutineContext$Key<any>;
     // private threadLocal: ThreadLocal<T>;

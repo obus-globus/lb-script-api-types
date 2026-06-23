@@ -7,5 +7,5 @@ import type { TypeToken } from '../../../../../../../../org/spongepowered/includ
 export class CollectionTypeAdapterFactory extends Object implements TypeAdapterFactory {
     constructor(arg0: ConstructorConstructor)
     // private constructorConstructor: ConstructorConstructor;
-    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends unknown>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
 }

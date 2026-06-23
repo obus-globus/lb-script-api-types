@@ -4,7 +4,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { PreparableReloadListener } from '../../../../../../../net/minecraft/server/packs/resources/PreparableReloadListener.d.ts'
 import type { PreparableReloadListener$PreparationBarrier } from '../../../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$PreparationBarrier.d.ts'
 import type { PreparableReloadListener$SharedState } from '../../../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
-export abstract class SimpleReloadListener<T extends Object | number | string | boolean> extends Object implements PreparableReloadListener {
+export abstract class SimpleReloadListener<T extends unknown> extends Object implements PreparableReloadListener {
     constructor()
     apply(arg0: T, arg1: PreparableReloadListener$SharedState): void;
     getName(): string;

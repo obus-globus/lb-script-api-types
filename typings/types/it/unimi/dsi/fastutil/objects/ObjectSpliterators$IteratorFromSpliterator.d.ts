@@ -2,7 +2,7 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { ObjectSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectSpliterators$IteratorFromSpliterator<K extends Object | number | string | boolean> extends Object implements ObjectIterator<K>, Consumer<K> {
+export class ObjectSpliterators$IteratorFromSpliterator<K extends unknown> extends Object implements ObjectIterator<K>, Consumer<K> {
     constructor(arg0: ObjectSpliterator<K>)
     // private hasPeeked: boolean;
     // private holder: K;

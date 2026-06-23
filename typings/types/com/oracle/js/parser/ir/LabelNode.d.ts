@@ -12,9 +12,9 @@ export class LabelNode extends LexicalContextStatement {
     readonly body: Block;
     readonly labelName: string;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBody(): Block;
     getLabelName(): string;
     isTerminal(): boolean;

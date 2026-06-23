@@ -10,7 +10,7 @@ import type { Cocartesian$Mu } from '../../../../com/mojang/datafixers/optics/pr
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Prism<S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends App2<Prism$Mu<A, B>, S, T>, Optic<Cocartesian$Mu, S, T, A, B>, Object{
+export interface Prism<S extends unknown, T extends unknown, A extends unknown, B extends unknown> extends App2<Prism$Mu<A, B>, S, T>, Optic<Cocartesian$Mu, S, T, A, B>, Object{
     build(arg0: B): T;
     eval<P extends K2>(arg0: App<Cocartesian$Mu, P>): FunctionType<App2<P, A, B>, App2<P, S, T>>;
     match(arg0: S): Either<T, A>;

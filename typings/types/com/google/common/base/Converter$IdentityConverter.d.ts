@@ -2,11 +2,11 @@ import type { Converter } from '../../../../com/google/common/base/Converter.d.t
 import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Converter$IdentityConverter<T extends Object | number | string | boolean> extends Converter<T, T> implements Serializable {
+export class Converter$IdentityConverter<T extends unknown> extends Converter<T, T> implements Serializable {
     static from(paramforwardFunction: (param0: Object) => boolean, parambackwardFunction: (param0: Object) => boolean): Converter<Object, Object>;
     static identity(): Converter<Object, Object>;
     private constructor()
-    doAndThen<S extends Object | number | string | boolean>(otherConverter: Converter<T, S>): Converter<T, S>;
+    doAndThen<S extends unknown>(otherConverter: Converter<T, S>): Converter<T, S>;
     doBackward(t: T): T;
     doForward(t: T): T;
     // private readResolve(): Object;

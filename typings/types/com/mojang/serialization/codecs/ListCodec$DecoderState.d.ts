@@ -4,7 +4,7 @@ import type { DataResult } from '../../../../com/mojang/serialization/DataResult
 import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Stream$Builder } from '../../../../java/util/stream/Stream$Builder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ListCodec$DecoderState<T extends Object | number | string | boolean> extends Object {
+export class ListCodec$DecoderState<T extends unknown> extends Object {
     private constructor(null_: ListCodec$DecoderState<Object>)
     // private elements: E[];
     // private failed: Stream$Builder<T>;
@@ -12,5 +12,5 @@ export class ListCodec$DecoderState<T extends Object | number | string | boolean
     // private result: DataResult<Unit>;
     // private totalCount: number;
     accept(arg0: T): void;
-    build<E extends Object | number | string | boolean>(): DataResult<Pair<E[], T>>;
+    build<E extends unknown>(): DataResult<Pair<E[], T>>;
 }

@@ -18,7 +18,7 @@ export abstract class DatagramSocketImplShim extends DatagramSocketImpl {
     static SO_TIMEOUT: number;
     static TCP_NODELAY: number;
     constructor()
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): void;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): void;
     supportedOptions(): SocketOption<Object>[];
 }

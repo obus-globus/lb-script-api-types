@@ -4,7 +4,7 @@ import type { Object2LongMap$Entry } from '../../../../../it/unimi/dsi/fastutil/
 import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBidirectionalIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractObject2LongSortedMap$ValuesIterator<K extends Object | number | string | boolean> extends Object implements LongIterator {
+export class AbstractObject2LongSortedMap$ValuesIterator<K extends unknown> extends Object implements LongIterator {
     constructor(arg0: ObjectBidirectionalIterator<Object2LongMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Object2LongMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;

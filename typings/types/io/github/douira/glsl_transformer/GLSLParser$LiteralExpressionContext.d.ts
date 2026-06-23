@@ -21,7 +21,7 @@ export class GLSLParser$LiteralExpressionContext extends GLSLParser$FiniteExpres
     UINT16CONSTANT(): TerminalNode;
     UINT32CONSTANT(): TerminalNode;
     UINT64CONSTANT(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
 }

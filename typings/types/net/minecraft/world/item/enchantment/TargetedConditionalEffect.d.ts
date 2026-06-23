@@ -11,7 +11,7 @@ import type { LootContext } from '../../../../../net/minecraft/world/level/stora
 import type { Validatable } from '../../../../../net/minecraft/world/level/storage/loot/Validatable.d.ts'
 import type { ValidationContext } from '../../../../../net/minecraft/world/level/storage/loot/ValidationContext.d.ts'
 import type { LootItemCondition } from '../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
-export class TargetedConditionalEffect<T extends Object | number | string | boolean> extends Record implements Validatable {
+export class TargetedConditionalEffect<T extends unknown> extends Record implements Validatable {
     static codec(parameffectCodec: Codec<Object>): Codec<TargetedConditionalEffect<Object>>;
     static equipmentDropsCodec(parameffectCodec: Codec<Object>): Codec<TargetedConditionalEffect<Object>>;
     static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;

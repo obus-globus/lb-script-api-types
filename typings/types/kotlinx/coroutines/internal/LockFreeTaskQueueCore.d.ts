@@ -2,7 +2,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { AtomicRef } from '../../../kotlinx/atomicfu/AtomicRef.d.ts'
 import type { LockFreeTaskQueueCore$Companion } from '../../../kotlinx/coroutines/internal/LockFreeTaskQueueCore$Companion.d.ts'
 import type { Symbol } from '../../../kotlinx/coroutines/internal/Symbol.d.ts'
-export class LockFreeTaskQueueCore<E extends Object | number | string | boolean> extends Object {
+export class LockFreeTaskQueueCore<E extends unknown> extends Object {
     static ADD_CLOSED: number;
     static ADD_FROZEN: number;
     static ADD_SUCCESS: number;
@@ -27,7 +27,7 @@ export class LockFreeTaskQueueCore<E extends Object | number | string | boolean>
     close(): boolean;
     // private fillPlaceholder(index: number, element: E): LockFreeTaskQueueCore<E> | null;
     isClosed(): boolean;
-    map<R extends Object | number | string | boolean>(transform: (param0: E) => R): R[];
+    map<R extends unknown>(transform: (param0: E) => R): R[];
     // private markFrozen(): number;
     next(): LockFreeTaskQueueCore<E>;
     removeFirstOrNull(): Object | null;

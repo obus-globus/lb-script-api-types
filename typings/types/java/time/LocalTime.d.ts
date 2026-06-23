@@ -75,7 +75,7 @@ export class LocalTime extends Object implements Serializable, Temporal, Tempora
     plusMinutes(arg0: number): LocalTime;
     plusNanos(arg0: number): LocalTime;
     plusSeconds(arg0: number): LocalTime;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toEpochSecond(arg0: LocalDate, arg1: ZoneOffset): number;

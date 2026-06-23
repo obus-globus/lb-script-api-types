@@ -110,7 +110,7 @@ export class LocalDate extends Object implements Serializable, ChronoLocalDate, 
     plusMonths(arg0: number): LocalDate;
     plusWeeks(arg0: number): LocalDate;
     plusYears(arg0: number): LocalDate;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toEpochDay(): number;

@@ -8,7 +8,7 @@ import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { HolderLookup$Provider } from '../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { HolderLookup$RegistryLookup } from '../../../../net/minecraft/core/HolderLookup$RegistryLookup.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
-export class ResourceOrIdArgument$ReferenceResult<T extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Record implements ResourceOrIdArgument$Result<T, O> {
+export class ResourceOrIdArgument$ReferenceResult<T extends unknown, O extends unknown> extends Record implements ResourceOrIdArgument$Result<T, O> {
     constructor(key: ResourceKey<T>)
     // private key: ResourceKey<T>;
     equals(o: Object | null): boolean;

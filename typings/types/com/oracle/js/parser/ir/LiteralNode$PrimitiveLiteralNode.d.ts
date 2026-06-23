@@ -6,7 +6,7 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../java/lang/Number.d.ts'
-export class LiteralNode$PrimitiveLiteralNode<T extends Object | number | string | boolean> extends LiteralNode<T> implements PropertyKey {
+export class LiteralNode$PrimitiveLiteralNode<T extends unknown> extends LiteralNode<T> implements PropertyKey {
     static newInstance(paramtoken: number, paramvalue: TruffleString): LiteralNode$PrimitiveLiteralNode<TruffleString>;
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: Lexer$LexerToken): LiteralNode<Lexer$LexerToken>;
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: (Object | null)[]): LiteralNode<(Object | null)[]>;

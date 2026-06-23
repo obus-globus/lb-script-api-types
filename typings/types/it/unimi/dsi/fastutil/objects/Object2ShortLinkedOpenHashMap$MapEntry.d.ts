@@ -19,17 +19,17 @@ export class Object2ShortLinkedOpenHashMap$MapEntry extends Object implements Ob
     equals(arg0: Object | null): boolean;
     getShortValue(): number;
     hashCode(): number;
-    left<K extends Object | number | string | boolean>(): K;
-    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    left<K extends unknown>(): K;
+    left<K extends unknown>(arg0: K): Pair<K, number>;
     right(): number;
-    right<K extends Object | number | string | boolean>(arg0: number): ObjectShortPair<K>;
+    right<K extends unknown>(arg0: number): ObjectShortPair<K>;
     rightShort(): number;
     second(): number;
-    second<K extends Object | number | string | boolean>(arg0: number): ObjectShortPair<K>;
+    second<K extends unknown>(arg0: number): ObjectShortPair<K>;
     secondShort(): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value<K extends Object | number | string | boolean>(arg0: number): ObjectShortPair<K>;
+    value<K extends unknown>(arg0: number): ObjectShortPair<K>;
     valueShort(): number;
 }

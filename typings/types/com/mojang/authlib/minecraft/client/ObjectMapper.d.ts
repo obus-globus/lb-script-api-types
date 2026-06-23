@@ -5,6 +5,6 @@ export class ObjectMapper extends Object {
     static create(): ObjectMapper;
     constructor(arg0: Gson)
     // private gson: Gson;
-    readValue<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T;
+    readValue<T extends unknown>(arg0: string, arg1: Class<T>): T;
     writeValueAsString(arg0: Object): string;
 }

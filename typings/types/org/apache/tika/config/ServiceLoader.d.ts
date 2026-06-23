@@ -23,11 +23,11 @@ export class ServiceLoader extends Object {
     getLoadErrorHandler(): LoadErrorHandler;
     getLoader(): ClassLoader;
     getResourceAsStream(arg0: string): InputStream;
-    getServiceClass<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: string): Class<T>;
-    identifyStaticServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>): string[];
+    getServiceClass<T extends unknown>(arg0: Class<T>, arg1: string): Class<T>;
+    identifyStaticServiceProviders<T extends unknown>(arg0: Class<T>): string[];
     isDynamic(): boolean;
-    loadDynamicServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
-    loadServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
-    loadStaticServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
-    loadStaticServiceProviders<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: Class<T>[]): T[];
+    loadDynamicServiceProviders<T extends unknown>(arg0: Class<T>): T[];
+    loadServiceProviders<T extends unknown>(arg0: Class<T>): T[];
+    loadStaticServiceProviders<T extends unknown>(arg0: Class<T>): T[];
+    loadStaticServiceProviders<T extends unknown>(arg0: Class<T>, arg1: Class<T>[]): T[];
 }

@@ -22,7 +22,7 @@ export class CallNode extends OptionalExpression {
     readonly function: Expression;
     readonly lineNumber: number;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getArgs(): Expression[];
     getFunction(): Expression;
     getLineNumber(): number;

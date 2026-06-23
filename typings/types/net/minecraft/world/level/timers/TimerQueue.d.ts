@@ -8,7 +8,7 @@ import type { SavedDataType } from '../../../../../net/minecraft/world/level/sav
 import type { TimerCallback } from '../../../../../net/minecraft/world/level/timers/TimerCallback.d.ts'
 import type { TimerQueue$Event } from '../../../../../net/minecraft/world/level/timers/TimerQueue$Event.d.ts'
 import type { TimerQueue$Packed } from '../../../../../net/minecraft/world/level/timers/TimerQueue$Packed.d.ts'
-export class TimerQueue<T extends Object | number | string | boolean> extends SavedData {
+export class TimerQueue<T extends unknown> extends SavedData {
     static CODEC: Codec<TimerQueue<MinecraftServer>>;
     static TYPE: SavedDataType<TimerQueue<MinecraftServer>>;
     constructor()

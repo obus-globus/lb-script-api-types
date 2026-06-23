@@ -6,13 +6,13 @@ import type { MemoizedFunctionToNullable } from '../../../../../../kotlin/reflec
 import type { NotNullLazyValue } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/NotNullLazyValue.d.ts'
 import type { NullableLazyValue } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/NullableLazyValue.d.ts'
 export interface StorageManager extends Object {
-    compute<T extends Object | number | string | boolean>(arg0: () => T): T;
-    createCacheWithNotNullValues<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): CacheWithNotNullValues<K, V>;
-    createCacheWithNullableValues<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): CacheWithNullableValues<K, V>;
-    createLazyValue<T extends Object | number | string | boolean>(arg0: () => T): NotNullLazyValue<T>;
-    createLazyValueWithPostCompute<T extends Object | number | string | boolean>(arg0: () => T, arg1: (param0: boolean) => T, arg2: (param0: T) => void): NotNullLazyValue<T>;
-    createMemoizedFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: K) => V): MemoizedFunctionToNotNull<K, V>;
-    createMemoizedFunctionWithNullableValues<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: K) => V): MemoizedFunctionToNullable<K, V>;
-    createNullableLazyValue<T extends Object | number | string | boolean>(arg0: () => T): NullableLazyValue<T>;
-    createRecursionTolerantLazyValue<T extends Object | number | string | boolean>(arg0: () => T, arg1: T): NotNullLazyValue<T>;
+    compute<T extends unknown>(arg0: () => T): T;
+    createCacheWithNotNullValues<K extends unknown, V extends unknown>(): CacheWithNotNullValues<K, V>;
+    createCacheWithNullableValues<K extends unknown, V extends unknown>(): CacheWithNullableValues<K, V>;
+    createLazyValue<T extends unknown>(arg0: () => T): NotNullLazyValue<T>;
+    createLazyValueWithPostCompute<T extends unknown>(arg0: () => T, arg1: (param0: boolean) => T, arg2: (param0: T) => void): NotNullLazyValue<T>;
+    createMemoizedFunction<K extends unknown, V extends unknown>(arg0: (param0: K) => V): MemoizedFunctionToNotNull<K, V>;
+    createMemoizedFunctionWithNullableValues<K extends unknown, V extends unknown>(arg0: (param0: K) => V): MemoizedFunctionToNullable<K, V>;
+    createNullableLazyValue<T extends unknown>(arg0: () => T): NullableLazyValue<T>;
+    createRecursionTolerantLazyValue<T extends unknown>(arg0: () => T, arg1: T): NotNullLazyValue<T>;
 }

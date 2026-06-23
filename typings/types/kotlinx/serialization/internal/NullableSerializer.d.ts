@@ -3,7 +3,7 @@ import type { KSerializer } from '../../../kotlinx/serialization/KSerializer.d.t
 import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { Decoder } from '../../../kotlinx/serialization/encoding/Decoder.d.ts'
 import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.ts'
-export class NullableSerializer<T extends Object | number | string | boolean> extends Object implements KSerializer<T> {
+export class NullableSerializer<T extends unknown> extends Object implements KSerializer<T> {
     constructor(serializer: KSerializer<T>)
     readonly descriptor: SerialDescriptor;
     // private serializer: KSerializer<T>;

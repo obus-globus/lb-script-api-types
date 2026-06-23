@@ -2,7 +2,7 @@ import type { AbstractLong2ObjectFunction } from '../../../../../it/unimi/dsi/fa
 import type { Long2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/longs/Long2ObjectFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Long2ObjectFunctions$UnmodifiableFunction<V extends Object | number | string | boolean> extends AbstractLong2ObjectFunction<V> implements Serializable {
+export class Long2ObjectFunctions$UnmodifiableFunction<V extends unknown> extends AbstractLong2ObjectFunction<V> implements Serializable {
     constructor(arg0: (param0: number) => V)
     // private function: (param0: number) => V;
     clear(): void;

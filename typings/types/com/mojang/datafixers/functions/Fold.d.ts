@@ -8,7 +8,7 @@ import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Fold<A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends PointFree<(param0: A) => B> {
+export class Fold<A extends unknown, B extends unknown> extends PointFree<(param0: A) => B> {
     static indent(paramarg0: number): string;
     constructor(arg0: RecursivePoint$RecursivePointType<A>, arg1: RecursivePoint$RecursivePointType<B>, arg2: Algebra, arg3: number)
     // private aType: RecursivePoint$RecursivePointType<A>;
@@ -16,7 +16,7 @@ export class Fold<A extends Object | number | string | boolean, B extends Object
     // private bType: RecursivePoint$RecursivePointType<B>;
     // private index: number;
     all(arg0: PointFreeRule): Optional<PointFree<(param0: A) => B>>;
-    // private cap<FB extends Object | number | string | boolean>(arg0: RewriteResult<Object, FB>): PointFree<(param0: A) => B>;
+    // private cap<FB extends unknown>(arg0: RewriteResult<Object, FB>): PointFree<(param0: A) => B>;
     equals(arg0: Object | null): boolean;
     eval(): (param0: DynamicOps<Object>) => Function<A, B>;
     hashCode(): number;

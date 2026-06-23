@@ -1,7 +1,7 @@
 import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class KeyCompressor<T extends Object | number | string | boolean> extends Object {
+export class KeyCompressor<T extends unknown> extends Object {
     constructor(arg0: DynamicOps<T>, arg1: Stream<T>)
     // private compress: { [key: string]: any };
     // private compressString: { [key: string]: any };

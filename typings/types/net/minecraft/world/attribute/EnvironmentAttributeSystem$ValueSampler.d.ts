@@ -3,7 +3,7 @@ import type { EnvironmentAttribute } from '../../../../net/minecraft/world/attri
 import type { EnvironmentAttributeLayer } from '../../../../net/minecraft/world/attribute/EnvironmentAttributeLayer.d.ts'
 import type { SpatialAttributeInterpolator } from '../../../../net/minecraft/world/attribute/SpatialAttributeInterpolator.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
-export class EnvironmentAttributeSystem$ValueSampler<Value extends Object | number | string | boolean> extends Object {
+export class EnvironmentAttributeSystem$ValueSampler<Value extends unknown> extends Object {
     private constructor(attribute: EnvironmentAttribute<Value>, baseValue: Value, layers: EnvironmentAttributeLayer<Value>[], isAffectedByPosition: boolean)
     // private attribute: EnvironmentAttribute<Value>;
     // private baseValue: Value;

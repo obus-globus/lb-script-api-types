@@ -11,7 +11,7 @@ import type { Weigher } from '../../../../com/google/common/cache/Weigher.d.ts'
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class LocalCache$ManualSerializationProxy<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ForwardingCache<K, V> implements Serializable {
+export class LocalCache$ManualSerializationProxy<K extends unknown, V extends unknown> extends ForwardingCache<K, V> implements Serializable {
     private constructor(keyStrength: LocalCache$Strength, valueStrength: LocalCache$Strength, keyEquivalence: Equivalence<Object>, valueEquivalence: Equivalence<Object>, expireAfterWriteNanos: number, expireAfterAccessNanos: number, maxWeight: number, weigher: (param0: K, param1: V) => number, concurrencyLevel: number, removalListener: (param0: RemovalNotification<K, V>) => void, ticker: Ticker, loader: CacheLoader<K, V>)
     constructor(cache: Map<K, V>)
     // private concurrencyLevel: number;

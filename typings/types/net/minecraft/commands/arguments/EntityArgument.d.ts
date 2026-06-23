@@ -31,10 +31,10 @@ export class EntityArgument extends Object implements ArgumentType<EntitySelecto
     // private playersOnly: boolean;
     // private single: boolean;
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions<S extends Object | number | string | boolean>(contextBuilder: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): EntitySelector;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends unknown>(contextBuilder: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): EntitySelector;
     parse(reader: StringReader): EntitySelector;
-    parse<S extends Object | number | string | boolean>(reader: StringReader, source: S): EntitySelector;
+    parse<S extends unknown>(reader: StringReader, source: S): EntitySelector;
     // private parse(reader: StringReader, allowSelectors: boolean): EntitySelector;
 }

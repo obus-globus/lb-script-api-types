@@ -20,7 +20,7 @@ export class Double2ReferenceOpenCustomHashMap$KeySpliterator extends Double2Ref
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => number;
-    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Double2ReferenceOpenCustomHashMap$KeySpliterator;
+    makeForSplit<V extends unknown>(arg0: number, arg1: number, arg2: boolean): Double2ReferenceOpenCustomHashMap$KeySpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
 }

@@ -8,7 +8,7 @@ import type { LevelChunkSection } from '../../../../../../../net/minecraft/world
 import type { AABB } from '../../../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { CollisionContext } from '../../../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
-export abstract class ChunkAwareBlockCollisionSweeper<T extends Object | number | string | boolean> extends AbstractIterator<T> {
+export abstract class ChunkAwareBlockCollisionSweeper<T extends unknown> extends AbstractIterator<T> {
     constructor(arg0: Level, arg1: Entity, arg2: AABB, arg3: boolean)
     // private box: AABB;
     // private cEndX: number;

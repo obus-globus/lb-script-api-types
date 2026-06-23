@@ -11,7 +11,7 @@ import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class ImmutableSetMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ImmutableMultimap<K, V> implements SetMultimap<K, V> {
+export class ImmutableSetMultimap<K extends unknown, V extends unknown> extends ImmutableMultimap<K, V> implements SetMultimap<K, V> {
     static builder(): ImmutableMultimap$Builder<Object, Object>;
     static builder(): ImmutableSetMultimap$Builder<Object, Object>;
     static builderWithExpectedKeys(paramexpectedKeys: number): ImmutableMultimap$Builder<Object, Object>;

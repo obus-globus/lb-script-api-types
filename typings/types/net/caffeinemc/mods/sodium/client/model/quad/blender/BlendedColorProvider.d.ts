@@ -4,7 +4,7 @@ import type { ModelQuadView } from '../../../../../../../../net/caffeinemc/mods/
 import type { LevelSlice } from '../../../../../../../../net/caffeinemc/mods/sodium/client/world/LevelSlice.d.ts'
 import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
-export abstract class BlendedColorProvider<T extends Object | number | string | boolean> extends Object implements ColorProvider<T> {
+export abstract class BlendedColorProvider<T extends unknown> extends Object implements ColorProvider<T> {
     constructor()
     getColor(arg0: LevelSlice, arg1: T, arg2: BlockPos): number;
     getColors(arg0: LevelSlice, arg1: BlockPos, arg2: BlockPos$MutableBlockPos, arg3: T, arg4: ModelQuadView, arg5: number[], arg6: boolean): void;

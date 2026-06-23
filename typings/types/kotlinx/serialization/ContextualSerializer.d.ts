@@ -5,7 +5,7 @@ import type { SerialDescriptor } from '../../kotlinx/serialization/descriptors/S
 import type { Decoder } from '../../kotlinx/serialization/encoding/Decoder.d.ts'
 import type { Encoder } from '../../kotlinx/serialization/encoding/Encoder.d.ts'
 import type { SerializersModule } from '../../kotlinx/serialization/modules/SerializersModule.d.ts'
-export class ContextualSerializer<T extends Object | number | string | boolean> extends Object implements KSerializer<T> {
+export class ContextualSerializer<T extends unknown> extends Object implements KSerializer<T> {
     constructor(serializableClass: KClass<T>)
     constructor(serializableClass: KClass<T>, fallbackSerializer: KSerializer<T> | null, typeArgumentsSerializers: KSerializer<Object>[])
     readonly descriptor: SerialDescriptor;

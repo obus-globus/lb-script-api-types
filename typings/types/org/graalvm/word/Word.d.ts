@@ -116,7 +116,7 @@ export class Word extends Object implements Pointer, SignedWord, UnsignedWord {
     subtract(val: SignedWord): SignedWord;
     subtract(val: UnsignedWord): Pointer;
     toObject(): Object;
-    toObject<T extends Object | number | string | boolean>(clazz: Class<T>, nonNull: boolean): T;
+    toObject<T extends unknown>(clazz: Class<T>, nonNull: boolean): T;
     toObjectNonNull(): Object;
     unsignedDivide(val: number): UnsignedWord;
     unsignedDivide(val: UnsignedWord): UnsignedWord;

@@ -5,7 +5,7 @@ import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineConte
 import type { CoroutineStackFrame } from '../../../kotlin/coroutines/jvm/internal/CoroutineStackFrame.d.ts'
 import type { AbstractCoroutine } from '../../../kotlinx/coroutines/AbstractCoroutine.d.ts'
 import type { Job$Key } from '../../../kotlinx/coroutines/Job$Key.d.ts'
-export class ScopeCoroutine<T extends Object | number | string | boolean> extends AbstractCoroutine<T> implements CoroutineStackFrame {
+export class ScopeCoroutine<T extends unknown> extends AbstractCoroutine<T> implements CoroutineStackFrame {
     static Key: Job$Key;
     constructor(context: CoroutineContext, uCont: Continuation<T>)
     readonly callerFrame: CoroutineStackFrame | null;

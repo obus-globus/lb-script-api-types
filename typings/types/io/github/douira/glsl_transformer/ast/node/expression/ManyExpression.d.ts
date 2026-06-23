@@ -12,7 +12,7 @@ export abstract class ManyExpression extends Expression implements ListNode<Expr
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: Stream<Expression>)
     expressions: Expression[];
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): ManyExpression;
     cloneInto(arg0: Root): ManyExpression;
     enterNode(arg0: ASTListener): void;

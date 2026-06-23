@@ -9,7 +9,7 @@ import type { Progress } from '../../../../ai/djl/util/Progress.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Criteria$Builder<I extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Object {
+export class Criteria$Builder<I extends unknown, O extends unknown> extends Object {
     constructor()
     private constructor(arg0: Class<I>, arg1: Class<O>, arg2: Criteria$Builder<Object, Object>)
     // private application: Application;
@@ -48,5 +48,5 @@ export class Criteria$Builder<I extends Object | number | string | boolean, O ex
     optProgress(arg0: Progress): Criteria$Builder<I, O>;
     optTranslator(arg0: Translator<I, O>): Criteria$Builder<I, O>;
     optTranslatorFactory(arg0: TranslatorFactory): Criteria$Builder<I, O>;
-    setTypes<P extends Object | number | string | boolean, Q extends Object | number | string | boolean>(arg0: Class<P>, arg1: Class<Q>): Criteria$Builder<P, Q>;
+    setTypes<P extends unknown, Q extends unknown>(arg0: Class<P>, arg1: Class<Q>): Criteria$Builder<P, Q>;
 }

@@ -1,7 +1,7 @@
 import type { ByteReferencePair } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteReferencePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ByteReferenceMutablePair<V extends Object | number | string | boolean> extends Object implements ByteReferencePair<V>, Serializable {
+export class ByteReferenceMutablePair<V extends unknown> extends Object implements ByteReferencePair<V>, Serializable {
     static of(paramarg0: number, paramarg1: Object | null): ByteReferenceMutablePair<Object>;
     static of(paramarg0: number, paramarg1: Object | null): ByteReferencePair<Object>;
     constructor(arg0: number, arg1: V)

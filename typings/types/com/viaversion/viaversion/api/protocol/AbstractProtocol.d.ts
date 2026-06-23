@@ -65,7 +65,7 @@ export abstract class AbstractProtocol<CU extends ClientboundPacketType, CM exte
     createPacketTypesProvider(): PacketTypesProvider<CU, CM, SM, SU>;
     createServerboundPacketMappings(): PacketMappings;
     dependsOn(): Class<Protocol<any, any, any, any>>;
-    get<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    get<T extends unknown>(arg0: Class<T>): T;
     getBlockRewriter(): BlockRewriter<CU>;
     getClientVersion(): ProtocolVersion;
     getComponentRewriter(): ComponentRewriter;

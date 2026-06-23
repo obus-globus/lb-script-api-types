@@ -8,18 +8,18 @@ import type { Applicative } from '../../../com/mojang/datafixers/kinds/Applicati
 import type { K1 } from '../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { Function5 } from '../../../com/mojang/datafixers/util/Function5.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class Products$P5<F extends K1, T1 extends Object | number | string | boolean, T2 extends Object | number | string | boolean, T3 extends Object | number | string | boolean, T4 extends Object | number | string | boolean, T5 extends Object | number | string | boolean> extends Object {
+export class Products$P5<F extends K1, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown> extends Object {
     constructor(arg0: App<F, T1>, arg1: App<F, T2>, arg2: App<F, T3>, arg3: App<F, T4>, arg4: App<F, T5>)
     // private t1: App<F, T1>;
     // private t2: App<F, T2>;
     // private t3: App<F, T3>;
     // private t4: App<F, T4>;
     // private t5: App<F, T5>;
-    and<T6 extends Object | number | string | boolean, T7 extends Object | number | string | boolean>(arg0: Products$P2<F, T6, T7>): Products$P7<F, T1, T2, T3, T4, T5, T6, T7>;
-    and<T6 extends Object | number | string | boolean, T7 extends Object | number | string | boolean, T8 extends Object | number | string | boolean>(arg0: Products$P3<F, T6, T7, T8>): Products$P8<F, T1, T2, T3, T4, T5, T6, T7, T8>;
-    and<T6 extends Object | number | string | boolean>(arg0: App<F, T6>): Products$P6<F, T1, T2, T3, T4, T5, T6>;
-    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: App<F, Function5<T1, T2, T3, T4, T5, R>>): App<F, R>;
-    apply<R extends Object | number | string | boolean>(arg0: Applicative<F, any>, arg1: Function5<T1, T2, T3, T4, T5, R>): App<F, R>;
+    and<T6 extends unknown, T7 extends unknown>(arg0: Products$P2<F, T6, T7>): Products$P7<F, T1, T2, T3, T4, T5, T6, T7>;
+    and<T6 extends unknown, T7 extends unknown, T8 extends unknown>(arg0: Products$P3<F, T6, T7, T8>): Products$P8<F, T1, T2, T3, T4, T5, T6, T7, T8>;
+    and<T6 extends unknown>(arg0: App<F, T6>): Products$P6<F, T1, T2, T3, T4, T5, T6>;
+    apply<R extends unknown>(arg0: Applicative<F, any>, arg1: App<F, Function5<T1, T2, T3, T4, T5, R>>): App<F, R>;
+    apply<R extends unknown>(arg0: Applicative<F, any>, arg1: Function5<T1, T2, T3, T4, T5, R>): App<F, R>;
     t1(): App<F, T1>;
     t2(): App<F, T2>;
     t3(): App<F, T3>;

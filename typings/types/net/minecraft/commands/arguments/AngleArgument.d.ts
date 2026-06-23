@@ -15,7 +15,7 @@ export class AngleArgument extends Object implements ArgumentType<AngleArgument$
     static getAngle(paramcontext: CommandContext<CommandSourceStack>, paramname: string): number;
     constructor()
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): AngleArgument$SingleAngle;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): AngleArgument$SingleAngle;
     parse(reader: StringReader): AngleArgument$SingleAngle;
 }

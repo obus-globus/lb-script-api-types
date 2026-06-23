@@ -9,7 +9,7 @@ import type { Optic } from '../../../../com/mojang/datafixers/optics/Optic.d.ts'
 import type { Profunctor$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/Profunctor$Mu.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Adapter<S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends App2<Adapter$Mu<A, B>, S, T>, Optic<Profunctor$Mu, S, T, A, B>, Object{
+export interface Adapter<S extends unknown, T extends unknown, A extends unknown, B extends unknown> extends App2<Adapter$Mu<A, B>, S, T>, Optic<Profunctor$Mu, S, T, A, B>, Object{
     eval<P extends K2>(arg0: App<Profunctor$Mu, P>): FunctionType<App2<P, A, B>, App2<P, S, T>>;
     from(arg0: S): A;
     to(arg0: B): T;

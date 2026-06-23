@@ -17,7 +17,7 @@ export class IdentNode extends Expression implements FunctionCall, PropertyKey {
     readonly nameTS: TruffleString;
     readonly symbol: Symbol;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getName(): string;
     getNameTS(): TruffleString;
     getPropertyName(): string;

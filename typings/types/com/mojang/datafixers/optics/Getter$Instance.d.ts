@@ -8,13 +8,13 @@ import type { GetterP$Mu } from '../../../../com/mojang/datafixers/optics/profun
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Getter$Instance<A2 extends Object | number | string | boolean, B2 extends Object | number | string | boolean> extends Object implements GetterP<Getter$Mu<A2, B2>, GetterP$Mu> {
+export class Getter$Instance<A2 extends unknown, B2 extends unknown> extends Object implements GetterP<Getter$Mu<A2, B2>, GetterP$Mu> {
     static unbox(paramarg0: App<GetterP$Mu, K2>): GetterP<K2, GetterP$Mu>;
     constructor()
-    cimap<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: (param0: C) => A, arg1: (param0: D) => B): FunctionType<() => App2<Getter$Mu<A2, B2>, A, B>, App2<Getter$Mu<A2, B2>, C, D>>;
-    cimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<Getter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: D) => B): App2<Getter$Mu<A2, B2>, C, D>;
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Getter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Getter$Mu<A2, B2>, C, D>;
-    dimap<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Getter$Mu<A2, B2>, A, B>, App2<Getter$Mu<A2, B2>, C, D>>;
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<Getter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Getter$Mu<A2, B2>, C, D>;
-    secondPhantom<C extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<Getter$Mu<A2, B2>, C, B>): App2<Getter$Mu<A2, B2>, C, A>;
+    cimap<A extends unknown, B extends unknown, C extends unknown, D extends unknown>(arg0: (param0: C) => A, arg1: (param0: D) => B): FunctionType<() => App2<Getter$Mu<A2, B2>, A, B>, App2<Getter$Mu<A2, B2>, C, D>>;
+    cimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: () => App2<Getter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: D) => B): App2<Getter$Mu<A2, B2>, C, D>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<Getter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Getter$Mu<A2, B2>, C, D>;
+    dimap<A extends unknown, B extends unknown, C extends unknown, D extends unknown>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Getter$Mu<A2, B2>, A, B>, App2<Getter$Mu<A2, B2>, C, D>>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: () => App2<Getter$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Getter$Mu<A2, B2>, C, D>;
+    secondPhantom<C extends unknown, A extends unknown, B extends unknown>(arg0: App2<Getter$Mu<A2, B2>, C, B>): App2<Getter$Mu<A2, B2>, C, A>;
 }

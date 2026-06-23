@@ -1,6 +1,6 @@
 import type { Long2LongMap$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2LongMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Long2LongLinkedOpenHashMap$MapIterator<ConsumerType extends Object | number | string | boolean> extends Object {
+export abstract class Long2LongLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: Long2LongLinkedOpenHashMap$MapIterator<ConsumerType>)
     private constructor(null_: Long2LongLinkedOpenHashMap$MapIterator<ConsumerType>, arg1: number)
     // private curr: number;

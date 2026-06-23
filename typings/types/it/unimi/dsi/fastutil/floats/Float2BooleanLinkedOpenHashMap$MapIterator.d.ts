@@ -1,6 +1,6 @@
 import type { Float2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastutil/floats/Float2BooleanMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Float2BooleanLinkedOpenHashMap$MapIterator<ConsumerType extends Object | number | string | boolean> extends Object {
+export abstract class Float2BooleanLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: Float2BooleanLinkedOpenHashMap$MapIterator<ConsumerType>)
     private constructor(null_: Float2BooleanLinkedOpenHashMap$MapIterator<ConsumerType>, arg1: number)
     // private curr: number;

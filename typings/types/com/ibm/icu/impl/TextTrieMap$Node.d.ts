@@ -8,14 +8,14 @@ export class TextTrieMap$Node extends Object {
     // private _children: TextTrieMap$Node[];
     // private _text: string[];
     // private _values: V[];
-    add<V extends Object | number | string | boolean>(arg0: TextTrieMap$CharIterator, arg1: V): void;
-    // private add<V extends Object | number | string | boolean>(arg0: string[], arg1: number, arg2: V): void;
-    // private addValue<V extends Object | number | string | boolean>(arg0: V[], arg1: V): V[];
+    add<V extends unknown>(arg0: TextTrieMap$CharIterator, arg1: V): void;
+    // private add<V extends unknown>(arg0: string[], arg1: number, arg2: V): void;
+    // private addValue<V extends unknown>(arg0: V[], arg1: V): V[];
     charCount(): number;
-    findMatch<V extends Object | number | string | boolean>(arg0: TextTrieMap$CharIterator, arg1: TextTrieMap$Output): TextTrieMap$Node;
+    findMatch<V extends unknown>(arg0: TextTrieMap$CharIterator, arg1: TextTrieMap$Output): TextTrieMap$Node;
     // private lenMatches(arg0: string[], arg1: number): number;
     // private matchFollowing(arg0: TextTrieMap$CharIterator, arg1: TextTrieMap$Output): boolean;
     putLeadCodePoints(arg0: string[]): void;
     // private split(arg0: number): void;
-    values<V extends Object | number | string | boolean>(): Iterator<V>;
+    values<V extends unknown>(): Iterator<V>;
 }

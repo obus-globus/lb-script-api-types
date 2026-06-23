@@ -13,7 +13,7 @@ export class KQueueIoHandler$DefaultKqueueIoRegistration extends Object implemen
     // private executor: ThreadAwareExecutor;
     // private handle: KQueueIoHandle;
     // private id: number;
-    attachment<T extends Object | number | string | boolean>(): T;
+    attachment<T extends unknown>(): T;
     cancel(): boolean;
     // private cancel0(): void;
     close(): void;

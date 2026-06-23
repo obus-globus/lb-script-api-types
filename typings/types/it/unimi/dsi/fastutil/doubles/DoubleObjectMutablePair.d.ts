@@ -2,7 +2,7 @@ import type { DoubleObjectPair } from '../../../../../it/unimi/dsi/fastutil/doub
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class DoubleObjectMutablePair<V extends Object | number | string | boolean> extends Object implements DoubleObjectPair<V>, Serializable {
+export class DoubleObjectMutablePair<V extends unknown> extends Object implements DoubleObjectPair<V>, Serializable {
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: Object | null): DoubleObjectMutablePair<Object>;
     static of(paramarg0: number, paramarg1: Object | null): DoubleObjectPair<Object>;

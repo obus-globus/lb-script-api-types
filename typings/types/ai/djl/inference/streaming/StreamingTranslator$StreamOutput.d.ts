@@ -1,5 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class StreamingTranslator$StreamOutput<O extends Object | number | string | boolean> extends Object {
+export abstract class StreamingTranslator$StreamOutput<O extends unknown> extends Object {
     constructor()
     // private computed: boolean;
     // private output: O;

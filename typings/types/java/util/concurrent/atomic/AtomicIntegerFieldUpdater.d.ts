@@ -2,7 +2,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { IntBinaryOperator } from '../../../../java/util/function/IntBinaryOperator.d.ts'
 import type { IntUnaryOperator } from '../../../../java/util/function/IntUnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class AtomicIntegerFieldUpdater<T extends Object | number | string | boolean> extends Object {
+export abstract class AtomicIntegerFieldUpdater<T extends unknown> extends Object {
     static newUpdater(paramarg0: Class<Object>, paramarg1: string): AtomicIntegerFieldUpdater<Object>;
     constructor()
     accumulateAndGet(arg0: T, arg1: number, arg2: (param0: number, param1: number) => number): number;

@@ -4,10 +4,10 @@ import type { TransactionContext } from '../../../../../../../../net/fabricmc/fa
 export class FilteringStorage$FilteringStorageView extends Object implements StorageView<T> {
     private constructor(null_: FilteringStorage$FilteringStorageView)
     // private backingView: StorageView<T>;
-    extract<T extends Object | number | string | boolean>(arg0: T, arg1: number, arg2: TransactionContext): number;
+    extract<T extends unknown>(arg0: T, arg1: number, arg2: TransactionContext): number;
     getAmount(): number;
     getCapacity(): number;
-    getResource<T extends Object | number | string | boolean>(): T;
-    getUnderlyingView<T extends Object | number | string | boolean>(): StorageView<T>;
+    getResource<T extends unknown>(): T;
+    getUnderlyingView<T extends unknown>(): StorageView<T>;
     isResourceBlank(): boolean;
 }

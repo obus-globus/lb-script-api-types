@@ -19,7 +19,7 @@ export class Char2ObjectOpenCustomHashMap$KeySpliterator extends Char2ObjectOpen
     characteristics(): number;
     forEachRemaining(arg0: (param0: string) => void): void;
     getComparator(): (param0: string, param1: string) => number;
-    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Char2ObjectOpenCustomHashMap$KeySpliterator;
+    makeForSplit<V extends unknown>(arg0: number, arg1: number, arg2: boolean): Char2ObjectOpenCustomHashMap$KeySpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: string) => void): boolean;
 }

@@ -8,10 +8,10 @@ export class ToString extends Object {
     private constructor(arg0: Class<Object>)
     // private clazz: Class<Object>;
     // private fields: string[];
-    add<T extends Object | number | string | boolean>(arg0: string, arg1: T): ToString;
-    add<T extends Object | number | string | boolean>(arg0: string, arg1: T, arg2: (param0: T) => boolean): ToString;
-    add<T extends Object | number | string | boolean>(arg0: string, arg1: T, arg2: (param0: T) => boolean, arg3: (param0: T) => string): ToString;
-    put<T extends Object | number | string | boolean>(arg0: string, arg1: T): ToString;
-    put<T extends Object | number | string | boolean>(arg0: string, arg1: T, arg2: (param0: T) => boolean): ToString;
+    add<T extends unknown>(arg0: string, arg1: T): ToString;
+    add<T extends unknown>(arg0: string, arg1: T, arg2: (param0: T) => boolean): ToString;
+    add<T extends unknown>(arg0: string, arg1: T, arg2: (param0: T) => boolean, arg3: (param0: T) => string): ToString;
+    put<T extends unknown>(arg0: string, arg1: T): ToString;
+    put<T extends unknown>(arg0: string, arg1: T, arg2: (param0: T) => boolean): ToString;
     toString(): string;
 }

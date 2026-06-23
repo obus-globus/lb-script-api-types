@@ -15,7 +15,7 @@ export class Selector extends Record {
     condition(): Optional<(param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    instantiate<S extends StateHolder<O, S>, O extends Object | number | string | boolean>(definition: StateDefinition<O, S>): (param0: S) => boolean;
+    instantiate<S extends StateHolder<O, S>, O extends unknown>(definition: StateDefinition<O, S>): (param0: S) => boolean;
     toString(): string;
     variant(): BlockStateModel$Unbaked;
 }

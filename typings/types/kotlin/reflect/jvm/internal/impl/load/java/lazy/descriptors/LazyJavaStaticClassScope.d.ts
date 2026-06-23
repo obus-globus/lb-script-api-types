@@ -25,7 +25,7 @@ export class LazyJavaStaticClassScope extends LazyJavaStaticScope {
     computeNonDeclaredFunctions(arg0: SimpleFunctionDescriptor[], arg1: Name): void;
     computeNonDeclaredProperties(arg0: Name, arg1: PropertyDescriptor[]): void;
     computePropertyNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
-    // private flatMapJavaStaticSupertypesScopes<R extends Object | number | string | boolean>(arg0: ClassDescriptor, arg1: R[], arg2: (param0: MemberScope) => R[]): R[];
+    // private flatMapJavaStaticSupertypesScopes<R extends unknown>(arg0: ClassDescriptor, arg1: R[], arg2: (param0: MemberScope) => R[]): R[];
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
     getOwnerDescriptor(): JavaClassDescriptor;
     // private getRealOriginal(arg0: PropertyDescriptor): PropertyDescriptor;

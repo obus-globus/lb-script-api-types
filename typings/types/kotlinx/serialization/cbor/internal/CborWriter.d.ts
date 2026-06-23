@@ -26,7 +26,7 @@ export class CborWriter extends AbstractEncoder implements CborEncoder {
     encodeInt(value: number): void;
     encodeLong(value: number): void;
     encodeNull(): void;
-    encodeSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): void;
+    encodeSerializableValue<T extends unknown>(serializer: SerializationStrategy<T>, value: T): void;
     encodeShort(value: number): void;
     encodeString(value: string): void;
     protected getDestination(): ByteArrayOutput;

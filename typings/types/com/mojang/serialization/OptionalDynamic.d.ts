@@ -12,7 +12,7 @@ import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
-export class OptionalDynamic<T extends Object | number | string | boolean> extends DynamicLike<T> {
+export class OptionalDynamic<T extends unknown> extends DynamicLike<T> {
     constructor(arg0: DynamicOps<T>, arg1: DataResult<Dynamic<T>>)
     // private delegate: DataResult<Dynamic<T>>;
     asBoolean(): DataResult<boolean>;
@@ -21,14 +21,14 @@ export class OptionalDynamic<T extends Object | number | string | boolean> exten
     asIntStreamOpt(): DataResult<IntStream>;
     asLongStreamOpt(): DataResult<LongStream>;
     asMapOpt(): DataResult<Stream<Pair<Dynamic<T>, Dynamic<T>>>>;
-    asMapOpt<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<Map<K, V>>;
+    asMapOpt<K extends unknown, V extends unknown>(arg0: (param0: Dynamic<T>) => K, arg1: (param0: Dynamic<T>) => V): DataResult<Map<K, V>>;
     asNumber(): DataResult<Number>;
     asNumber(arg0: Number): Number;
     asStreamOpt(): DataResult<Stream<Dynamic<T>>>;
     asString(): DataResult<string>;
     asString(arg0: string): string;
-    decode<A extends Object | number | string | boolean>(arg0: Decoder<A>): DataResult<Pair<A, T>>;
-    flatMap<U extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => DataResult<U>): DataResult<U>;
+    decode<A extends unknown>(arg0: Decoder<A>): DataResult<Pair<A, T>>;
+    flatMap<U extends unknown>(arg0: (param0: Dynamic<T>) => DataResult<U>): DataResult<U>;
     get(): DataResult<Dynamic<T>>;
     get(arg0: string): OptionalDynamic<T>;
     getElement(arg0: string): DataResult<T>;
@@ -36,8 +36,8 @@ export class OptionalDynamic<T extends Object | number | string | boolean> exten
     getElementGeneric(arg0: T): DataResult<T>;
     getElementGeneric(arg0: T, arg1: T): T;
     getGeneric(arg0: T): DataResult<T>;
-    into<V extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => V): DataResult<V>;
-    map<U extends Object | number | string | boolean>(arg0: (param0: Dynamic<T>) => U): DataResult<U>;
+    into<V extends unknown>(arg0: (param0: Dynamic<T>) => V): DataResult<V>;
+    map<U extends unknown>(arg0: (param0: Dynamic<T>) => U): DataResult<U>;
     orElseEmptyList(): Dynamic<T>;
     orElseEmptyMap(): Dynamic<T>;
     result(): Optional<Dynamic<T>>;

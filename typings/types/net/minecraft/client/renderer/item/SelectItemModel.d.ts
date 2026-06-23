@@ -8,7 +8,7 @@ import type { SelectItemModelProperty } from '../../../../../net/minecraft/clien
 import type { ItemOwner } from '../../../../../net/minecraft/world/entity/ItemOwner.d.ts'
 import type { ItemDisplayContext } from '../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
-export class SelectItemModel<T extends Object | number | string | boolean> extends Object implements ItemModel {
+export class SelectItemModel<T extends unknown> extends Object implements ItemModel {
     constructor(property: SelectItemModelProperty<T>, models: (param0: T, param1: ClientLevel) => ItemModel)
     // private models: (param0: T, param1: ClientLevel) => ItemModel;
     // private property: SelectItemModelProperty<T>;

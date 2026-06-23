@@ -7,7 +7,7 @@ import type { Source } from '../../../../../com/oracle/truffle/api/source/Source
 import type { SourceSection } from '../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class EventBinding$Source<T extends Object | number | string | boolean> extends EventBinding<T> {
+export abstract class EventBinding$Source<T extends unknown> extends EventBinding<T> {
     constructor(instrumenter: InstrumentationHandler$AbstractInstrumenter, filterSourceSection: SourceSectionFilter, inputFilter: SourceSectionFilter, element: T)
     constructor(instrumenter: InstrumentationHandler$AbstractInstrumenter, filterSourceSection: SourceSectionFilter, inputFilter: SourceSectionFilter, element: T, attached: boolean)
     // private filterSourceSection: SourceSectionFilter;

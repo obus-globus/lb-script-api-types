@@ -2,7 +2,7 @@ import type { ListenerCallQueue$Event } from '../../../../../com/google/common/u
 import type { ListenerCallQueue$PerListenerQueue } from '../../../../../com/google/common/util/concurrent/ListenerCallQueue$PerListenerQueue.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ListenerCallQueue<L extends Object | number | string | boolean> extends Object {
+export class ListenerCallQueue<L extends unknown> extends Object {
     constructor()
     // private listeners: ListenerCallQueue$PerListenerQueue<L>[];
     addListener(listener: L, executor: Executor): void;

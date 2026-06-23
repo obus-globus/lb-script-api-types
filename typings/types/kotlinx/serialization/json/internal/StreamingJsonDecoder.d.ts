@@ -47,9 +47,9 @@ export class StreamingJsonDecoder extends AbstractDecoder implements ChunkedDeco
     decodeNotNullMark(): boolean;
     decodeNull(): void | null;
     // private decodeObjectIndex(descriptor: SerialDescriptor): number;
-    decodeSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
-    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
-    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeShort(): number;
     decodeString(): string;
     decodeStringChunked(consumeChunk: (param0: string) => void): void;

@@ -1,7 +1,7 @@
 import type { AbstractObject2LongMap$BasicEntry } from '../../../../../it/unimi/dsi/fastutil/objects/AbstractObject2LongMap$BasicEntry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Object2LongRBTreeMap$Entry<K extends Object | number | string | boolean> extends AbstractObject2LongMap$BasicEntry<K> implements Cloneable {
+export class Object2LongRBTreeMap$Entry<K extends unknown> extends AbstractObject2LongMap$BasicEntry<K> implements Cloneable {
     constructor()
     constructor(arg0: K, arg1: number)
     // private info: number;

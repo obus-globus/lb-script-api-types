@@ -14,9 +14,9 @@ export interface XPath extends Object{
     evaluate(arg0: string, arg1: InputSource): string;
     evaluate(arg0: string, arg1: InputSource, arg2: QName): Object;
     evaluateExpression(arg0: string, arg1: Object): XPathEvaluationResult<Object>;
-    evaluateExpression<T extends Object | number | string | boolean>(arg0: string, arg1: Object, arg2: Class<T>): T;
+    evaluateExpression<T extends unknown>(arg0: string, arg1: Object, arg2: Class<T>): T;
     evaluateExpression(arg0: string, arg1: InputSource): XPathEvaluationResult<Object>;
-    evaluateExpression<T extends Object | number | string | boolean>(arg0: string, arg1: InputSource, arg2: Class<T>): T;
+    evaluateExpression<T extends unknown>(arg0: string, arg1: InputSource, arg2: Class<T>): T;
     getNamespaceContext(): NamespaceContext;
     getXPathFunctionResolver(): XPathFunctionResolver;
     getXPathVariableResolver(): XPathVariableResolver;

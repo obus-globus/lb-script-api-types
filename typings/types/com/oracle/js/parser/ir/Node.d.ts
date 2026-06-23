@@ -14,7 +14,7 @@ export abstract class Node extends Object implements Cloneable {
     readonly start: number;
     readonly token: number;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     clone(): Object;
     protected clone(): Object;
     equals(other: Object | null): boolean;

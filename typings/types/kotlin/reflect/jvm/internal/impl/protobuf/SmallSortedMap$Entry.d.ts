@@ -14,10 +14,10 @@ export class SmallSortedMap$Entry extends Object implements Comparable<SmallSort
     readonly key: K;
     readonly value: V;
     readonly value: V;
-    compareTo<K extends Comparable<K>, V extends Object | number | string | boolean>(arg0: SmallSortedMap$Entry): number;
+    compareTo<K extends Comparable<K>, V extends unknown>(arg0: SmallSortedMap$Entry): number;
     // private equals(arg0: Object, arg1: Object): boolean;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

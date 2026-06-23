@@ -1,5 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class Tuple<A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends Object {
+export class Tuple<A extends unknown, B extends unknown> extends Object {
     constructor(a: A, b: B)
     readonly a: A;
     readonly b: B;

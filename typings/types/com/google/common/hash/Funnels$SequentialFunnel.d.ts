@@ -1,7 +1,7 @@
 import type { Funnel } from '../../../../com/google/common/hash/Funnel.d.ts'
 import type { PrimitiveSink } from '../../../../com/google/common/hash/PrimitiveSink.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Funnels$SequentialFunnel<E extends Object | number | string | boolean> extends Object implements Funnel<E[]> {
+export class Funnels$SequentialFunnel<E extends unknown> extends Object implements Funnel<E[]> {
     constructor(elementFunnel: Funnel<E>)
     // private elementFunnel: Funnel<E>;
     equals(o: Object | null): boolean;

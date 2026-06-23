@@ -5,7 +5,7 @@ import type { ProgressivePromise } from '../../../../io/netty/util/concurrent/Pr
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-export class DefaultProgressivePromise<V extends Object | number | string | boolean> extends DefaultPromise<V> implements ProgressivePromise<V> {
+export class DefaultProgressivePromise<V extends unknown> extends DefaultPromise<V> implements ProgressivePromise<V> {
     static PROPERTY_MAX_LISTENER_STACK_DEPTH: string;
     constructor()
     constructor(arg0: (Object | null)[])

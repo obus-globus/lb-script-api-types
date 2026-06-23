@@ -21,7 +21,7 @@ export abstract class ASTNode extends Object {
     // private selfReplacer: (param0: ASTNode) => void;
     sourceLocation: SourceLocation;
     // private template: Template<any>;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     // private changeRootRecursive(arg0: Root): void;
     clone(): ASTNode;
     // private cloneFull(): ASTNode;

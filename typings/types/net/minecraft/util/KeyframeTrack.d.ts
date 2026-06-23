@@ -8,7 +8,7 @@ import type { EasingType } from '../../../net/minecraft/util/EasingType.d.ts'
 import type { Keyframe } from '../../../net/minecraft/util/Keyframe.d.ts'
 import type { KeyframeTrackSampler } from '../../../net/minecraft/util/KeyframeTrackSampler.d.ts'
 import type { LerpFunction } from '../../../net/minecraft/world/attribute/LerpFunction.d.ts'
-export class KeyframeTrack<T extends Object | number | string | boolean> extends Record {
+export class KeyframeTrack<T extends unknown> extends Record {
     static mapCodec(paramvalueCodec: Codec<Object>): MapCodec<KeyframeTrack<Object>>;
     static validatePeriod(paramtrack: KeyframeTrack<Object>, paramperiodTicks: number): DataResult<KeyframeTrack<Object>>;
     constructor(keyframes: Keyframe<T>[], easingType: EasingType)

@@ -9,8 +9,8 @@ export class PolyglotBindingsValue extends PolyglotValueDispatch {
     // private bindings: PolyglotBindings;
     // private languageContext: PolyglotLanguageContext;
     // private values: { [key: string]: Object };
-    asClass<T extends Object | number | string | boolean>(context: Object, receiver: Object, targetType: Class<T>): T;
-    asTypeLiteral<T extends Object | number | string | boolean>(context: Object, receiver: Object, rawType: Class<T>, type: Type): T;
+    asClass<T extends unknown>(context: Object, receiver: Object, targetType: Class<T>): T;
+    asTypeLiteral<T extends unknown>(context: Object, receiver: Object, rawType: Class<T>, type: Type): T;
     getMember(context: Object, receiver: Object, key: string): Object;
     getMemberKeys(context: Object, receiver: Object): string[];
     getMetaObjectImpl(context: PolyglotLanguageContext, receiver: Object): Object;

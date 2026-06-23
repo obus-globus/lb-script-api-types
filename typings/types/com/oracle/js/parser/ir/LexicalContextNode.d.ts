@@ -5,7 +5,7 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface LexicalContextNode extends Object{
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
 }

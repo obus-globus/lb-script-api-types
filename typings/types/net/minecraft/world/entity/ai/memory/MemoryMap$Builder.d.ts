@@ -6,6 +6,6 @@ import type { MemoryModuleType } from '../../../../../../net/minecraft/world/ent
 export class MemoryMap$Builder extends Object {
     constructor()
     // private builder: ImmutableMap$Builder<MemoryModuleType<Object>, ExpirableValue<Object>>;
-    add<U extends Object | number | string | boolean>(type: MemoryModuleType<U>, value: ExpirableValue<U>): MemoryMap$Builder;
+    add<U extends unknown>(type: MemoryModuleType<U>, value: ExpirableValue<U>): MemoryMap$Builder;
     build(): MemoryMap$Value<Object>[];
 }

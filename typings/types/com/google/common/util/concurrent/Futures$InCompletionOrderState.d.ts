@@ -2,7 +2,7 @@ import type { AbstractFuture } from '../../../../../com/google/common/util/concu
 import type { ListenableFuture } from '../../../../../com/google/common/util/concurrent/ListenableFuture.d.ts'
 import type { AtomicInteger } from '../../../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Futures$InCompletionOrderState<T extends Object | number | string | boolean> extends Object {
+export class Futures$InCompletionOrderState<T extends unknown> extends Object {
     private constructor(inputFutures: ListenableFuture<T>[])
     // private delegateIndex: number;
     // private incompleteOutputCount: AtomicInteger;

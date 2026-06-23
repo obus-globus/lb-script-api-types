@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Multimap } from '../../../../../../../org/spongepowered/include/com/google/common/collect/Multimap.d.ts'
-export abstract class AbstractMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Multimap<K, V> {
+export abstract class AbstractMultimap<K extends unknown, V extends unknown> extends Object implements Multimap<K, V> {
     constructor()
     // private asMap: Map<K, V[]>;
     // private keySet: K[];

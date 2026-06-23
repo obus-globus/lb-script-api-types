@@ -14,8 +14,8 @@ export class Object2ReferenceOpenHashMap$EntrySpliterator extends Object2Referen
     static SUBSIZED: number;
     constructor(null_: Object2ReferenceOpenHashMap$EntrySpliterator)
     constructor(null_: Object2ReferenceOpenHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Object2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
+    acceptOnIndex<K extends unknown, V extends unknown>(arg0: (param0: Object2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Object2ReferenceOpenHashMap$EntrySpliterator;
+    makeForSplit<K extends unknown, V extends unknown>(arg0: number, arg1: number, arg2: boolean): Object2ReferenceOpenHashMap$EntrySpliterator;
     skip(arg0: number): number;
 }

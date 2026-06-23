@@ -9,7 +9,7 @@ export abstract class WrappingScheduledExecutorService extends WrappingExecutorS
     constructor(delegate: ScheduledExecutorService)
     // private delegate: ScheduledExecutorService;
     schedule(command: () => void, delay: number, unit: TimeUnit): ScheduledFuture<Object>;
-    schedule<V extends Object | number | string | boolean>(task: () => V, delay: number, unit: TimeUnit): ScheduledFuture<V>;
+    schedule<V extends unknown>(task: () => V, delay: number, unit: TimeUnit): ScheduledFuture<V>;
     scheduleAtFixedRate(command: () => void, initialDelay: number, period: number, unit: TimeUnit): ScheduledFuture<Object>;
     scheduleWithFixedDelay(command: () => void, initialDelay: number, delay: number, unit: TimeUnit): ScheduledFuture<Object>;
 }

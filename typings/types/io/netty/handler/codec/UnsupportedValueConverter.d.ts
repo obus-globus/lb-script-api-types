@@ -1,6 +1,6 @@
 import type { ValueConverter } from '../../../../io/netty/handler/codec/ValueConverter.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class UnsupportedValueConverter<V extends Object | number | string | boolean> extends Object implements ValueConverter<V> {
+export class UnsupportedValueConverter<V extends unknown> extends Object implements ValueConverter<V> {
     static instance(): UnsupportedValueConverter<Object>;
     private constructor()
     convertBoolean(arg0: boolean): V;

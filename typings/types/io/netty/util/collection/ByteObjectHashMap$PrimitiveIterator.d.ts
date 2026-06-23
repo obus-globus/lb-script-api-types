@@ -7,12 +7,12 @@ export class ByteObjectHashMap$PrimitiveIterator extends Object implements ByteO
     // private entryIndex: number;
     // private nextIndex: number;
     // private prevIndex: number;
-    forEachRemaining<V extends Object | number | string | boolean>(arg0: (param0: ByteObjectMap$PrimitiveEntry<V>) => void): void;
+    forEachRemaining<V extends unknown>(arg0: (param0: ByteObjectMap$PrimitiveEntry<V>) => void): void;
     hasNext(): boolean;
     key(): number;
-    next<V extends Object | number | string | boolean>(): ByteObjectMap$PrimitiveEntry<V>;
+    next<V extends unknown>(): ByteObjectMap$PrimitiveEntry<V>;
     remove(): void;
     // private scanNext(): void;
-    setValue<V extends Object | number | string | boolean>(arg0: V): void;
-    value<V extends Object | number | string | boolean>(): V;
+    setValue<V extends unknown>(arg0: V): void;
+    value<V extends unknown>(): V;
 }

@@ -12,7 +12,7 @@ export class KQueueServerChannelConfig extends KQueueChannelConfig implements Se
     readonly backlog: number;
     // private enableTcpFastOpen: boolean;
     getBacklog(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
@@ -24,7 +24,7 @@ export class KQueueServerChannelConfig extends KQueueChannelConfig implements Se
     setConnectTimeoutMillis(arg0: number): KQueueServerChannelConfig;
     setMaxMessagesPerRead(arg0: number): KQueueServerChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): KQueueServerChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): KQueueServerChannelConfig;
     setRcvAllocTransportProvidesGuess(arg0: boolean): KQueueServerChannelConfig;
     setReceiveBufferSize(arg0: number): KQueueServerChannelConfig;

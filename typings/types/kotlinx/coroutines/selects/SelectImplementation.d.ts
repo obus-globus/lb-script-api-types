@@ -9,7 +9,7 @@ import type { SelectBuilder } from '../../../kotlinx/coroutines/selects/SelectBu
 import type { SelectImplementation$ClauseData } from '../../../kotlinx/coroutines/selects/SelectImplementation$ClauseData.d.ts'
 import type { SelectInstanceInternal } from '../../../kotlinx/coroutines/selects/SelectInstanceInternal.d.ts'
 import type { TrySelectDetailedResult } from '../../../kotlinx/coroutines/selects/TrySelectDetailedResult.d.ts'
-export class SelectImplementation<R extends Object | number | string | boolean> extends Object implements CancelHandler, SelectBuilder<R>, SelectInstanceInternal<R> {
+export class SelectImplementation<R extends unknown> extends Object implements CancelHandler, SelectBuilder<R>, SelectInstanceInternal<R> {
     constructor(context: CoroutineContext)
     // private checkClauseObject(clauseObject: Object): void;
     // private cleanup(selectedClause: SelectImplementation$ClauseData): void;

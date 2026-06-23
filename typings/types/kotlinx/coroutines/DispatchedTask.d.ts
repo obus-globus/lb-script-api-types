@@ -2,7 +2,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { Task } from '../../kotlinx/coroutines/scheduling/Task.d.ts'
-export abstract class DispatchedTask<T extends Object | number | string | boolean> extends Task {
+export abstract class DispatchedTask<T extends unknown> extends Task {
     constructor(resumeMode: number)
     /*not mapped: */ getDelegate$kotlinx_coroutines_core(): Continuation<T>;
     resumeMode: number;

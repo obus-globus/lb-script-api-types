@@ -11,7 +11,7 @@ import type { AtomicReferenceArray } from '../../../../java/util/concurrent/atom
 import type { ReentrantLock } from '../../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class LocalCache$Segment<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ReentrantLock {
+export class LocalCache$Segment<K extends unknown, V extends unknown> extends ReentrantLock {
     constructor(map: Map<K, V>, initialCapacity: number, maxSegmentWeight: number, statsCounter: AbstractCache$StatsCounter)
     // private accessQueue: ReferenceEntry<K, V>[];
     // private count: number;

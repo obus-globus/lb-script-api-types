@@ -5,7 +5,7 @@ import type { BiFunction } from '../../../../../java/util/function/BiFunction.d.
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
-export class TrieTransitionMap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends TransitionMap<K, V> implements BiFunction<Object, V, Map$Entry<Object, V>> {
+export class TrieTransitionMap<K extends unknown, V extends unknown> extends TransitionMap<K, V> implements BiFunction<Object, V, Map$Entry<Object, V>> {
     static create(): TransitionMap<Object, Object>;
     constructor()
     // private map: Map<Object, V>;

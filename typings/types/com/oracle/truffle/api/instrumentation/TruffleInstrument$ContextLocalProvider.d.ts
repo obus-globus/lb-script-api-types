@@ -9,6 +9,6 @@ export class TruffleInstrument$ContextLocalProvider extends Object {
     private constructor()
     // private contextLocals: ContextLocal<Object>[];
     // private contextThreadLocals: ContextThreadLocal<Object>[];
-    createContextLocal<T extends Object | number | string | boolean>(factory: (param0: TruffleContext) => T): ContextLocal<T>;
-    createContextThreadLocal<T extends Object | number | string | boolean>(factory: (param0: TruffleContext, param1: Thread) => T): ContextThreadLocal<T>;
+    createContextLocal<T extends unknown>(factory: (param0: TruffleContext) => T): ContextLocal<T>;
+    createContextThreadLocal<T extends unknown>(factory: (param0: TruffleContext, param1: Thread) => T): ContextThreadLocal<T>;
 }

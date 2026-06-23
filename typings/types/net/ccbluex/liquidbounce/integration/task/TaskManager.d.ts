@@ -41,5 +41,5 @@ export class TaskManager extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:56}
      */
-    launch<T extends Object | number | string | boolean>(taskName: string, action: (param0: Task) => T): Task;
+    launch<T extends unknown>(taskName: string, action: (param0: Task) => T): Task;
 }

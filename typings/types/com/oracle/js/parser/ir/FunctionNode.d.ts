@@ -64,9 +64,9 @@ export class FunctionNode extends LexicalContextExpression implements Flags<Func
     readonly parameters: IdentNode[];
     readonly source: Source;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBody(): Block;
     getEndParserState(): Object;
     getFirstToken(): number;

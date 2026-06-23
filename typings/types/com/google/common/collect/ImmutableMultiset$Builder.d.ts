@@ -1,7 +1,7 @@
 import type { ImmutableCollection$Builder } from '../../../../com/google/common/collect/ImmutableCollection$Builder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class ImmutableMultiset$Builder<E extends Object | number | string | boolean> extends ImmutableCollection$Builder<E> {
+export class ImmutableMultiset$Builder<E extends unknown> extends ImmutableCollection$Builder<E> {
     constructor()
     constructor(contents: E[])
     // private contents: E[];

@@ -15,7 +15,7 @@ export class TargetTracker extends TargetSelector {
     constructor(defaultPriority: TargetPriority, rangeValue: RangedValueProvider)
     target: LivingEntity | null;
     reset(): void;
-    select<R extends Object | number | string | boolean>(evaluator: (param0: LivingEntity) => R): R | null;
+    select<R extends unknown>(evaluator: (param0: LivingEntity) => R): R | null;
     selectFirst(predicate: ((param0: LivingEntity) => boolean) | null): LivingEntity | null;
     validate(predicate: ((param0: LivingEntity) => boolean) | null): void;
     validate(entity: LivingEntity): boolean;

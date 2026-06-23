@@ -11,7 +11,7 @@ import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { IORandomAccessFile } from '../../../../../org/apache/commons/io/IORandomAccessFile.d.ts'
 import type { AbstractOrigin } from '../../../../../org/apache/commons/io/build/AbstractOrigin.d.ts'
 import type { AbstractSupplier } from '../../../../../org/apache/commons/io/build/AbstractSupplier.d.ts'
-export abstract class AbstractOriginSupplier<T extends Object | number | string | boolean, B extends AbstractOriginSupplier<T, B>> extends AbstractSupplier<T, B> {
+export abstract class AbstractOriginSupplier<T extends unknown, B extends AbstractOriginSupplier<T, B>> extends AbstractSupplier<T, B> {
     constructor()
     // private origin: AbstractOrigin<Object, any>;
     checkOrigin(): AbstractOrigin<Object, any>;

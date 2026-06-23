@@ -2,7 +2,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ValueType } from '../../../../../../net/ccbluex/liquidbounce/config/types/ValueType.d.ts'
 import type { ListValue } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/ListValue.d.ts'
-export class RegistryListValue<T extends E[], E extends Object | number | string | boolean> extends ListValue<T, E> {
+export class RegistryListValue<T extends E[], E extends unknown> extends ListValue<T, E> {
     constructor(name: string, value: T, innerValueType: ValueType, innerType: Class<E>)
     /**
      * This is used to determine the registry endpoint for the API.

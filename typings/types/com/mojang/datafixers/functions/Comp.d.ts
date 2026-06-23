@@ -5,7 +5,7 @@ import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Comp<A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends PointFree<(param0: A) => B> {
+export class Comp<A extends unknown, B extends unknown> extends PointFree<(param0: A) => B> {
     static indent(paramarg0: number): string;
     constructor(arg0: PointFree<(param0: Object | null) => Object | null>[])
     constructor(arg0: PointFree<(param0: Object | null) => Object | null>[], arg1: Type<(param0: A) => B>)

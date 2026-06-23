@@ -7,8 +7,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2ReferenceOpenCustomHashMap$EntryIterator extends Double2ReferenceOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Double2ReferenceMap$Entry<V>> {
     private constructor(null_: Double2ReferenceOpenCustomHashMap$EntryIterator)
     // private entry: Double2ReferenceOpenCustomHashMap$MapEntry;
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Double2ReferenceMap$Entry<V>) => void, arg1: number): void;
-    next<V extends Object | number | string | boolean>(): Double2ReferenceOpenCustomHashMap$MapEntry;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Double2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    next<V extends unknown>(): Double2ReferenceOpenCustomHashMap$MapEntry;
     remove(): void;
     skip(arg0: number): number;
 }

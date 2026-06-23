@@ -108,8 +108,8 @@ export abstract class JsonParser extends Object implements Versioned, Closeable 
     overrideFormatFeatures(arg0: number, arg1: number): JsonParser;
     overrideStdFeatures(arg0: number, arg1: number): JsonParser;
     readBinaryValue(arg0: Base64Variant, arg1: OutputStream): number;
-    readValueAs<T extends Object | number | string | boolean>(arg0: TypeReference<Object>): T;
-    readValueAs<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    readValueAs<T extends unknown>(arg0: TypeReference<Object>): T;
+    readValueAs<T extends unknown>(arg0: Class<T>): T;
     requiresCustomCodec(): boolean;
     setCodec(arg0: ObjectCodec): void;
     setCurrentValue(arg0: Object): void;

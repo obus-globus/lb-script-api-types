@@ -3,7 +3,7 @@ import type { Type } from '../../../../com/mojang/datafixers/types/Type.d.ts'
 import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class FunctionWrapper<A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends PointFree<(param0: A) => B> {
+export class FunctionWrapper<A extends unknown, B extends unknown> extends PointFree<(param0: A) => B> {
     static indent(paramarg0: number): string;
     constructor(arg0: string, arg1: (param0: DynamicOps<Object>) => Function<A, B>, arg2: Type<A>, arg3: Type<B>)
     // private fun: (param0: DynamicOps<Object>) => Function<A, B>;

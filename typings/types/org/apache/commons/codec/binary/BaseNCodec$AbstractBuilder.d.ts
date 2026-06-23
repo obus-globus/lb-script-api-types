@@ -1,7 +1,7 @@
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CodecPolicy } from '../../../../../org/apache/commons/codec/CodecPolicy.d.ts'
-export abstract class BaseNCodec$AbstractBuilder<T extends Object | number | string | boolean, B extends BaseNCodec$AbstractBuilder<T, B>> extends Object implements Supplier<T> {
+export abstract class BaseNCodec$AbstractBuilder<T extends unknown, B extends BaseNCodec$AbstractBuilder<T, B>> extends Object implements Supplier<T> {
     constructor(arg0: number[])
     // private decodingPolicy: CodecPolicy;
     // private defaultEncodeTable: number[];

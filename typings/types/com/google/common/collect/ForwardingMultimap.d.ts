@@ -3,7 +3,7 @@ import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export abstract class ForwardingMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ForwardingObject implements Multimap<K, V> {
+export abstract class ForwardingMultimap<K extends unknown, V extends unknown> extends ForwardingObject implements Multimap<K, V> {
     constructor()
     asMap(): Map<K, V[]>;
     clear(): void;

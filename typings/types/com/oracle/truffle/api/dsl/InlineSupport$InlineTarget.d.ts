@@ -8,9 +8,9 @@ export class InlineSupport$InlineTarget extends Object {
     constructor(targetClass: Class<Object>, updaters: InlineSupport$InlinableField[])
     readonly targetClass: Class<Object>;
     // private updaters: InlineSupport$InlinableField[];
-    // private get<T extends Object | number | string | boolean>(index: number, fieldClass: Class<T>): T;
+    // private get<T extends unknown>(index: number, fieldClass: Class<T>): T;
     getPrimitive<T extends InlineSupport$InlinableField>(index: number, fieldClass: Class<T>): T;
-    getReference<V extends Object | number | string | boolean>(index: number, valueClass: Class<Object>): InlineSupport$ReferenceField<V>;
+    getReference<V extends unknown>(index: number, valueClass: Class<Object>): InlineSupport$ReferenceField<V>;
     getState(index: number, minimumBits: number): InlineSupport$StateField;
     getTargetClass(): Class<Object>;
 }

@@ -53,7 +53,7 @@ export class DefaultJwtParser extends AbstractParser<Jwt<any, Object>> implement
     parse(arg0: Reader): Jwt<any, Object>;
     // private parse(arg0: Reader, arg1: Payload): Jwt<any, Object>;
     parse(arg0: CharSequence): Jwt<any, Object>;
-    parse<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: JwtHandler<T>): T;
+    parse<T extends unknown>(arg0: CharSequence, arg1: JwtHandler<T>): T;
     // private parse(arg0: CharSequence, arg1: Payload): Jwt<any, Object>;
     parse(arg0: CharSequence, arg1: number, arg2: number): Jwt<any, Object>;
     parseClaimsJws(arg0: CharSequence): Jws<{ [key: string]: any }>;

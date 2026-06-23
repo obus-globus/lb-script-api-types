@@ -12,7 +12,7 @@ export class ReturnNode extends Statement {
     readonly expression: Expression;
     readonly inTerminalPosition: boolean;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getExpression(): Expression;
     isCompletionValueNeverEmpty(): boolean;
     isInTerminalPosition(): boolean;

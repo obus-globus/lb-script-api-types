@@ -1,6 +1,6 @@
 import type { IndirectPriorityQueue } from '../../../../../com/viaversion/viaversion/libs/fastutil/IndirectPriorityQueue.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class AbstractIndirectPriorityQueue<K extends Object | number | string | boolean> extends Object implements IndirectPriorityQueue<K> {
+export abstract class AbstractIndirectPriorityQueue<K extends unknown> extends Object implements IndirectPriorityQueue<K> {
     constructor()
     allChanged(): void;
     changed(): void;

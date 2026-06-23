@@ -12,5 +12,5 @@ export class UnaryExpression extends Object implements Expression {
     hashCode(): number;
     op(): UnaryExpression$Op;
     toString(): string;
-    visit<R extends Object | number | string | boolean>(arg0: ExpressionVisitor<R>): R;
+    visit<R extends unknown>(arg0: ExpressionVisitor<R>): R;
 }

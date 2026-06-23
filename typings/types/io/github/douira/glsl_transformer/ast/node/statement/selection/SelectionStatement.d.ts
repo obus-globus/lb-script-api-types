@@ -29,5 +29,5 @@ export class SelectionStatement extends SemiTerminalStatement {
     setCondition(arg0: Expression): void;
     setIfFalse(arg0: Statement): void;
     setIfTrue(arg0: Statement): void;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AbstractSupplier } from '../../../../../../org/apache/commons/lang3/builder/AbstractSupplier.d.ts'
 import type { LockingVisitors$LockVisitor } from '../../../../../../org/apache/commons/lang3/concurrent/locks/LockingVisitors$LockVisitor.d.ts'
 import type { FailableSupplier } from '../../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
-export class LockingVisitors$LockVisitor$LVBuilder<O extends Object | number | string | boolean, L extends Object | number | string | boolean, B extends LockingVisitors$LockVisitor$LVBuilder<O, L, B>> extends AbstractSupplier<LockingVisitors$LockVisitor<O, L>, B, RuntimeException> {
+export class LockingVisitors$LockVisitor$LVBuilder<O extends unknown, L extends unknown, B extends LockingVisitors$LockVisitor$LVBuilder<O, L, B>> extends AbstractSupplier<LockingVisitors$LockVisitor<O, L>, B, RuntimeException> {
     static NUL: () => Object | null;
     constructor()
     // private lock: L;

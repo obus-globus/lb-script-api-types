@@ -32,7 +32,7 @@ export class GLSLParser$VersionStatementContext extends ParserRuleContext {
     NR_GLSL_450(): TerminalNode;
     NR_GLSL_460(): TerminalNode;
     NR_VERSION(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     getRuleIndex(): number;

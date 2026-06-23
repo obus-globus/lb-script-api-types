@@ -27,7 +27,7 @@ export class DefaultChannelConfig extends Object implements ChannelConfig {
     getMaxMessagesPerRead(): number;
     getMaxMessagesPerWrite(): number;
     getMessageSizeEstimator(): MessageSizeEstimator;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     // private getPinEventExecutorPerGroup(): boolean;
@@ -45,7 +45,7 @@ export class DefaultChannelConfig extends Object implements ChannelConfig {
     setMaxMessagesPerRead(arg0: number): ChannelConfig;
     setMaxMessagesPerWrite(arg0: number): ChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): ChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setOptions(arg0: Map<ChannelOption<Object>, Object | null>): boolean;
     // private setPinEventExecutorPerGroup(arg0: boolean): ChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): ChannelConfig;
@@ -54,5 +54,5 @@ export class DefaultChannelConfig extends Object implements ChannelConfig {
     setWriteBufferLowWaterMark(arg0: number): ChannelConfig;
     setWriteBufferWaterMark(arg0: WriteBufferWaterMark): ChannelConfig;
     setWriteSpinCount(arg0: number): ChannelConfig;
-    validate<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): void;
+    validate<T extends unknown>(arg0: ChannelOption<T>, arg1: T): void;
 }

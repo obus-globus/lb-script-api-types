@@ -7,7 +7,7 @@ import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
-export class PolyglotFunction<T extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object implements PolyglotWrapper, Function<T, R> {
+export class PolyglotFunction<T extends unknown, R extends unknown> extends Object implements PolyglotWrapper, Function<T, R> {
     static asInstance(paramv: Object): PolyglotWrapper;
     static create(paramlanguageContext: PolyglotLanguageContext, paramfunction: Object, paramreturnClass: Class<Object>, paramreturnType: Type, paramparamClass: Class<Object>, paramparamType: Type): PolyglotFunction<Object, Object>;
     static equals(paramcontext: Object, paramreceiver: Object, paramobj: Object): boolean;
@@ -25,9 +25,9 @@ export class PolyglotFunction<T extends Object | number | string | boolean, R ex
     // private contextAnchor: Context;
     readonly guestObject: Object;
     readonly languageContext: PolyglotLanguageContext;
-    andThen<V extends Object | number | string | boolean>(arg0: (param0: R) => V): (param0: T) => V;
+    andThen<V extends unknown>(arg0: (param0: R) => V): (param0: T) => V;
     apply(t: T): R;
-    compose<V extends Object | number | string | boolean>(arg0: (param0: V) => T): (param0: V) => R;
+    compose<V extends unknown>(arg0: (param0: V) => T): (param0: V) => R;
     equals(o: Object | null): boolean;
     getContext(): PolyglotContextImpl;
     getGuestObject(): Object;

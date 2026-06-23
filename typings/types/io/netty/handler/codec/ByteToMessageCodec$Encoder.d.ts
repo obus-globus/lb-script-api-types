@@ -7,5 +7,5 @@ export class ByteToMessageCodec$Encoder extends MessageToByteEncoder<I> {
     constructor(null_: ByteToMessageCodec$Encoder, arg2: Class<I>)
     constructor(null_: ByteToMessageCodec$Encoder, arg1: boolean)
     acceptOutboundMessage(arg0: Object): boolean;
-    encode<I extends Object | number | string | boolean>(arg0: ChannelHandlerContext, arg1: I, arg2: ByteBuf): void;
+    encode<I extends unknown>(arg0: ChannelHandlerContext, arg1: I, arg2: ByteBuf): void;
 }

@@ -1,7 +1,7 @@
 import type { ElementOrder$Type } from '../../../../com/google/common/graph/ElementOrder$Type.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ElementOrder<T extends Object | number | string | boolean> extends Object {
+export class ElementOrder<T extends unknown> extends Object {
     static insertion(): ElementOrder<Object>;
     static natural(): ElementOrder<Object>;
     static sorted(paramcomparator: (param0: Object) => boolean): ElementOrder<Object>;
@@ -12,7 +12,7 @@ export class ElementOrder<T extends Object | number | string | boolean> extends 
     // private type: ElementOrder$Type;
     cast<T1 extends T>(): ElementOrder<T1>;
     comparator(): (param0: Object) => boolean;
-    createMap<K extends T, V extends Object | number | string | boolean>(expectedSize: number): Map<K, V>;
+    createMap<K extends T, V extends unknown>(expectedSize: number): Map<K, V>;
     equals(obj: Object | null): boolean;
     hashCode(): number;
     toString(): string;

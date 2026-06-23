@@ -15,5 +15,5 @@ export class PolyglotInstrumentDispatch extends AbstractPolyglotImpl$AbstractIns
     getWebsite(receiver: Object): string;
     hashCode(): number;
     hashCode(receiver: Object): number;
-    lookup<T extends Object | number | string | boolean>(receiver: Object, type: Class<T>): T;
+    lookup<T extends unknown>(receiver: Object, type: Class<T>): T;
 }

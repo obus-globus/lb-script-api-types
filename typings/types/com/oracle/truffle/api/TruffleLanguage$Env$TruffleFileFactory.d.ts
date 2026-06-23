@@ -4,9 +4,9 @@ import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class TruffleLanguage$Env$TruffleFileFactory<P extends Object | number | string | boolean> extends Object implements BiFunction<P, TruffleFile$FileSystemContext, TruffleFile> {
+export abstract class TruffleLanguage$Env$TruffleFileFactory<P extends unknown> extends Object implements BiFunction<P, TruffleFile$FileSystemContext, TruffleFile> {
     private constructor()
-    andThen<V extends Object | number | string | boolean>(arg0: (param0: TruffleFile) => V): (param0: P, param1: TruffleFile$FileSystemContext) => V;
+    andThen<V extends unknown>(arg0: (param0: TruffleFile) => V): (param0: P, param1: TruffleFile$FileSystemContext) => V;
     apply(p: P, fileSystemContext: TruffleFile$FileSystemContext): TruffleFile;
     parsePath(p: P, fileSystemContext: TruffleFile$FileSystemContext): Path[];
 }

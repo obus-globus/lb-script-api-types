@@ -12,7 +12,7 @@ import type { Pair } from '../../../../ai/djl/util/Pair.d.ts'
 import type { DataInputStream } from '../../../../java/io/DataInputStream.d.ts'
 import type { DataOutputStream } from '../../../../java/io/DataOutputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class Embedding<T extends Object | number | string | boolean> extends AbstractBlock implements AbstractIndexedEmbedding<T> {
+export abstract class Embedding<T extends unknown> extends AbstractBlock implements AbstractIndexedEmbedding<T> {
     static embedding(paramarg0: NDArray, paramarg1: NDArray, paramarg2: SparseFormat): (Object | null)[];
     constructor(arg0: NDArray)
     constructor(arg0: NDArray, arg1: SparseFormat)

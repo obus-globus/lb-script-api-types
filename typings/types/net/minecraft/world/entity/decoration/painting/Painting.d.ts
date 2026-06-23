@@ -70,12 +70,12 @@ export class Painting extends HangingEntity {
     private constructor(level: Level, blockPos: BlockPos)
     constructor(level: Level, blockPos: BlockPos, direction: Direction, variant: Holder<PaintingVariant>)
     addAdditionalSaveData(output: ValueOutput): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     calculateBoundingBox(pos: BlockPos, direction: Direction): AABB;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     dropItem(level: ServerLevel, causedBy: Entity): void;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAddEntityPacket(serverEntity: ServerEntity): Packet<ClientGamePacketListener>;
     getPickResult(): ItemStack;
     getVariant(): Holder<PaintingVariant>;

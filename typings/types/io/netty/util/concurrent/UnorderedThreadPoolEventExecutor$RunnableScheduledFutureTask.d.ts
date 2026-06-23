@@ -4,7 +4,7 @@ import type { Delayed } from '../../../../java/util/concurrent/Delayed.d.ts'
 import type { RunnableScheduledFuture } from '../../../../java/util/concurrent/RunnableScheduledFuture.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class UnorderedThreadPoolEventExecutor$RunnableScheduledFutureTask<V extends Object | number | string | boolean> extends PromiseTask<V> implements ScheduledFuture<V>, RunnableScheduledFuture<V> {
+export class UnorderedThreadPoolEventExecutor$RunnableScheduledFutureTask<V extends unknown> extends PromiseTask<V> implements ScheduledFuture<V>, RunnableScheduledFuture<V> {
     static PROPERTY_MAX_LISTENER_STACK_DEPTH: string;
     constructor(arg0: (Object | null)[], arg1: RunnableScheduledFuture<V>, arg2: boolean)
     // private future: RunnableScheduledFuture<V>;

@@ -19,8 +19,8 @@ export class SnbtGrammar$ArrayPrefix extends Enum<SnbtGrammar$ArrayPrefix> {
     // private defaultType: SnbtGrammar$TypeSuffix;
     buildNumber(entry: SnbtGrammar$IntegerLiteral, state: ParseState<Object>): Number;
     // private computeType(value: SnbtGrammar$IntegerSuffix): SnbtGrammar$TypeSuffix;
-    create<T extends Object | number | string | boolean>(ops: DynamicOps<T>): T;
-    create<T extends Object | number | string | boolean>(ops: DynamicOps<T>, entries: SnbtGrammar$IntegerLiteral[], state: ParseState<Object>): T;
+    create<T extends unknown>(ops: DynamicOps<T>): T;
+    create<T extends unknown>(ops: DynamicOps<T>, entries: SnbtGrammar$IntegerLiteral[], state: ParseState<Object>): T;
     isAllowed(type: SnbtGrammar$TypeSuffix): boolean;
     name(): "BYTE" | "INT" | "LONG";
 }

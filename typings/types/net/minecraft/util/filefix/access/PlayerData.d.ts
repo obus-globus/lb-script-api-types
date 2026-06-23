@@ -8,5 +8,5 @@ export class PlayerData extends CompressedNbt {
     constructor(path: Path[], targetVersion: number)
     // private targetVersion: number;
     read(): Optional<Dynamic<Tag>>;
-    write<T extends Object | number | string | boolean>(data: Dynamic<T>): void;
+    write<T extends unknown>(data: Dynamic<T>): void;
 }

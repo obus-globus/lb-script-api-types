@@ -6,7 +6,7 @@ import type { Executor } from '../../../java/util/concurrent/Executor.d.ts'
 import type { ForkJoinPool } from '../../../java/util/concurrent/ForkJoinPool.d.ts'
 import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class CompletableFuture$BiRun<T extends Object | number | string | boolean, U extends Object | number | string | boolean> extends CompletableFuture$BiCompletion<T, U, void> {
+export class CompletableFuture$BiRun<T extends unknown, U extends unknown> extends CompletableFuture$BiCompletion<T, U, void> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

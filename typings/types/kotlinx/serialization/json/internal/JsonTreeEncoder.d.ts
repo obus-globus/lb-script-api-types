@@ -8,7 +8,7 @@ export class JsonTreeEncoder extends AbstractJsonTreeEncoder {
     constructor(json: Json, nodeConsumer: (param0: JsonElement) => void)
     // private content: { [key: string]: JsonElement };
     // private /*not mapped: */ getContent(): { [key: string]: JsonElement };
-    encodeNullableSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
+    encodeNullableSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
     getCurrent(): JsonElement;
     putElement(key: string, element: JsonElement): void;
 }

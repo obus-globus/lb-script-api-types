@@ -7,6 +7,6 @@ import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKe
 export class ResourceSelectorArgument$Info$Template extends Object implements ArgumentTypeInfo$Template<ResourceSelectorArgument<T>> {
     private constructor(null_: ResourceSelectorArgument$Info$Template)
     // private registryKey: ResourceKey<T[]>;
-    instantiate<T extends Object | number | string | boolean>(context: CommandBuildContext): ResourceSelectorArgument<T>;
-    type<T extends Object | number | string | boolean>(): ArgumentTypeInfo<ResourceSelectorArgument<T>, any>;
+    instantiate<T extends unknown>(context: CommandBuildContext): ResourceSelectorArgument<T>;
+    type<T extends unknown>(): ArgumentTypeInfo<ResourceSelectorArgument<T>, any>;
 }

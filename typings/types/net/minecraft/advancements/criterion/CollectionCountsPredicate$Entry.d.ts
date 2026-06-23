@@ -3,7 +3,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/criterion/MinMaxBounds$Ints.d.ts'
-export class CollectionCountsPredicate$Entry<T extends Object | number | string | boolean, P extends Predicate<T>> extends Record {
+export class CollectionCountsPredicate$Entry<T extends unknown, P extends Predicate<T>> extends Record {
     static codec(paramelementCodec: Codec<Object>): Codec<CollectionCountsPredicate$Entry<Object, any>>;
     constructor(test: P, count: MinMaxBounds$Ints)
     // private count: MinMaxBounds$Ints;

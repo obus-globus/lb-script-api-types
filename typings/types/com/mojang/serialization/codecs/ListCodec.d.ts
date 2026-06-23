@@ -27,7 +27,7 @@ import type { IntStream } from '../../../../java/util/stream/IntStream.d.ts'
 import type { LongStream } from '../../../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
-export class ListCodec<E extends Object | number | string | boolean> extends Record implements Codec<E[]> {
+export class ListCodec<E extends unknown> extends Record implements Codec<E[]> {
     static BOOL: PrimitiveCodec<boolean>;
     static BYTE: PrimitiveCodec<number>;
     static BYTE_BUFFER: PrimitiveCodec<ByteBuffer>;
@@ -71,11 +71,11 @@ export class ListCodec<E extends Object | number | string | boolean> extends Rec
     // private elementCodec: Codec<E>;
     // private maxSize: number;
     // private minSize: number;
-    comapFlatMap<S extends Object | number | string | boolean>(arg0: (param0: E[]) => DataResult<S>, arg1: (param0: S) => E[]): Codec<S>;
-    // private createTooLongError<R extends Object | number | string | boolean>(arg0: number): DataResult<R>;
-    // private createTooShortError<R extends Object | number | string | boolean>(arg0: number): DataResult<R>;
-    decode<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<E[], T>>;
-    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<E[], T>>;
+    comapFlatMap<S extends unknown>(arg0: (param0: E[]) => DataResult<S>, arg1: (param0: S) => E[]): Codec<S>;
+    // private createTooLongError<R extends unknown>(arg0: number): DataResult<R>;
+    // private createTooShortError<R extends unknown>(arg0: number): DataResult<R>;
+    decode<T extends unknown>(arg0: Dynamic<T>): DataResult<Pair<E[], T>>;
+    decode<T extends unknown>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<E[], T>>;
     deprecated(arg0: number): Codec<E[]>;
     dispatch(arg0: (param0: E) => E[], arg1: (param0: E[]) => MapCodec<E>): Codec<E>;
     dispatch(arg0: string, arg1: (param0: E) => E[], arg2: (param0: E[]) => MapCodec<E>): Codec<E>;
@@ -83,11 +83,11 @@ export class ListCodec<E extends Object | number | string | boolean> extends Rec
     dispatchMap(arg0: string, arg1: (param0: E) => E[], arg2: (param0: E[]) => MapCodec<E>): MapCodec<E>;
     dispatchStable(arg0: (param0: E) => E[], arg1: (param0: E[]) => MapCodec<E>): Codec<E>;
     elementCodec(): Codec<E>;
-    encode<T extends Object | number | string | boolean>(arg0: E[], arg1: DynamicOps<T>, arg2: T): DataResult<T>;
+    encode<T extends unknown>(arg0: E[], arg1: DynamicOps<T>, arg2: T): DataResult<T>;
     equals(arg0: Object | null): boolean;
     fieldOf(arg0: string): MapCodec<E[]>;
-    flatComapMap<S extends Object | number | string | boolean>(arg0: (param0: E[]) => S, arg1: (param0: S) => DataResult<E[]>): Codec<S>;
-    flatXmap<S extends Object | number | string | boolean>(arg0: (param0: E[]) => DataResult<S>, arg1: (param0: S) => DataResult<E[]>): Codec<S>;
+    flatComapMap<S extends unknown>(arg0: (param0: E[]) => S, arg1: (param0: S) => DataResult<E[]>): Codec<S>;
+    flatXmap<S extends unknown>(arg0: (param0: E[]) => DataResult<S>, arg1: (param0: S) => DataResult<E[]>): Codec<S>;
     hashCode(): number;
     lenientOptionalFieldOf(arg0: string): MapCodec<Optional<E[]>>;
     lenientOptionalFieldOf(arg0: string, arg1: E[]): MapCodec<E[]>;
@@ -116,8 +116,8 @@ export class ListCodec<E extends Object | number | string | boolean> extends Rec
     stable(): Codec<E[]>;
     toString(): string;
     validate(arg0: (param0: E[]) => DataResult<E[]>): Codec<E[]>;
-    withAlternative<U extends Object | number | string | boolean>(arg0: Codec<U>, arg1: (param0: U) => E[]): Codec<E[]>;
+    withAlternative<U extends unknown>(arg0: Codec<U>, arg1: (param0: U) => E[]): Codec<E[]>;
     withAlternative(arg0: Codec<E[]>): Codec<E[]>;
     withLifecycle(arg0: Lifecycle): Codec<E[]>;
-    xmap<S extends Object | number | string | boolean>(arg0: (param0: E[]) => S, arg1: (param0: S) => E[]): Codec<S>;
+    xmap<S extends unknown>(arg0: (param0: E[]) => S, arg1: (param0: S) => E[]): Codec<S>;
 }

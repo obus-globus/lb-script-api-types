@@ -13,7 +13,7 @@ export class ClientboundCommandsPacket$ArgumentNodeStub extends Record implement
     // private id: string;
     // private suggestionId: Identifier;
     argumentType(): ArgumentTypeInfo$Template<any>;
-    build<S extends Object | number | string | boolean>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): ArgumentBuilder<S, any>;
+    build<S extends unknown>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): ArgumentBuilder<S, any>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     id(): string;

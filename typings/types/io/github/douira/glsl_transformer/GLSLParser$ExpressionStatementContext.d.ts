@@ -8,7 +8,7 @@ export class GLSLParser$ExpressionStatementContext extends ParserRuleContext {
     static EMPTY: ParserRuleContext;
     constructor(arg0: ParserRuleContext, arg1: number)
     SEMICOLON(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     expression(): GLSLParser$ExpressionContext;

@@ -1,6 +1,6 @@
 import type { SerialQueue } from '../../../../../com/oracle/truffle/runtime/collection/SerialQueue.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ArrayQueue<E extends Object | number | string | boolean> extends Object implements SerialQueue<E> {
+export class ArrayQueue<E extends unknown> extends Object implements SerialQueue<E> {
     constructor()
     // private items: Object[];
     // private start: number;
@@ -15,5 +15,5 @@ export class ArrayQueue<E extends Object | number | string | boolean> extends Ob
     poll(): E;
     size(): number;
     toArray(): Object[];
-    toArray<T extends Object | number | string | boolean>(a: T[]): T[];
+    toArray<T extends unknown>(a: T[]): T[];
 }

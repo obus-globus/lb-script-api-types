@@ -3,7 +3,7 @@ import type { StaticProperty } from '../../../../../com/oracle/truffle/api/stati
 import type { StaticShape } from '../../../../../com/oracle/truffle/api/staticobject/StaticShape.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ArrayBasedShapeGenerator<T extends Object | number | string | boolean> extends ShapeGenerator<T> {
+export class ArrayBasedShapeGenerator<T extends unknown> extends ShapeGenerator<T> {
     private constructor(generatedStorageClass: Class<Object>, generatedFactoryClass: Class<T>)
     private constructor(generatedStorageClass: Class<Object>, generatedFactoryClass: Class<T>, byteArrayOffset: number, objectArrayOffset: number, shapeOffset: number)
     // private byteArrayOffset: number;

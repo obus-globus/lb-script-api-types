@@ -23,7 +23,7 @@ export class StopWatch extends Object {
     // private stopTimeNanos: number;
     formatSplitTime(): string;
     formatTime(): string;
-    get<T extends Object | number | string | boolean>(arg0: () => T): T;
+    get<T extends unknown>(arg0: () => T): T;
     getDuration(): Duration;
     getMessage(): string;
     getNanoTime(): number;
@@ -34,7 +34,7 @@ export class StopWatch extends Object {
     getStartTime(): number;
     getStopInstant(): Instant;
     getStopTime(): number;
-    getT<T extends Object | number | string | boolean, E extends Throwable>(arg0: () => T): T;
+    getT<T extends unknown, E extends Throwable>(arg0: () => T): T;
     getTime(): number;
     getTime(arg0: TimeUnit): number;
     isStarted(): boolean;

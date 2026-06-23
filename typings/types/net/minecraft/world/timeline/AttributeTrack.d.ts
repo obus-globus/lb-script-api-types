@@ -10,7 +10,7 @@ import type { AttributeModifier } from '../../../../net/minecraft/world/attribut
 import type { ClockManager } from '../../../../net/minecraft/world/clock/ClockManager.d.ts'
 import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldClock.d.ts'
 import type { AttributeTrackSampler } from '../../../../net/minecraft/world/timeline/AttributeTrackSampler.d.ts'
-export class AttributeTrack<Value extends Object | number | string | boolean, Argument extends Object | number | string | boolean> extends Record {
+export class AttributeTrack<Value extends unknown, Argument extends unknown> extends Record {
     static createCodec(paramattribute: EnvironmentAttribute<Object>): Codec<AttributeTrack<Object, Object>>;
     static validatePeriod(paramtrack: AttributeTrack<Object, Object>, paramperiodTicks: number): DataResult<AttributeTrack<Object, Object>>;
     constructor(modifier: AttributeModifier<Value, Argument>, argumentTrack: KeyframeTrack<Argument>)

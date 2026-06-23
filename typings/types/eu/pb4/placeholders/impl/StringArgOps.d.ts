@@ -21,9 +21,9 @@ export class StringArgOps extends Object implements DynamicOps<Either<string, St
     static INSTANCE: StringArgOps;
     constructor()
     compressMaps(): boolean;
-    convertList<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Either<string, StringArgs>): U;
-    convertMap<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Either<string, StringArgs>): U;
-    convertTo<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Either<string, StringArgs>): U;
+    convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: Either<string, StringArgs>): U;
+    convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: Either<string, StringArgs>): U;
+    convertTo<U extends unknown>(arg0: DynamicOps<U>, arg1: Either<string, StringArgs>): U;
     createBoolean(arg0: boolean): Either<string, StringArgs>;
     createByte(arg0: number): Either<string, StringArgs>;
     createByteList(arg0: ByteBuffer): Either<string, StringArgs>;
@@ -68,7 +68,7 @@ export class StringArgOps extends Object implements DynamicOps<Either<string, St
     set(arg0: Either<string, StringArgs>, arg1: string, arg2: Either<string, StringArgs>): Either<string, StringArgs>;
     update(arg0: Either<string, StringArgs>, arg1: string, arg2: (param0: Either<string, StringArgs>) => Either<string, StringArgs>): Either<string, StringArgs>;
     updateGeneric(arg0: Either<string, StringArgs>, arg1: Either<string, StringArgs>, arg2: (param0: Either<string, StringArgs>) => Either<string, StringArgs>): Either<string, StringArgs>;
-    withDecoder<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: Either<string, StringArgs>) => DataResult<Pair<E, Either<string, StringArgs>>>;
-    withEncoder<E extends Object | number | string | boolean>(arg0: Encoder<E>): (param0: E) => DataResult<Either<string, StringArgs>>;
-    withParser<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: Either<string, StringArgs>) => DataResult<E>;
+    withDecoder<E extends unknown>(arg0: Decoder<E>): (param0: Either<string, StringArgs>) => DataResult<Pair<E, Either<string, StringArgs>>>;
+    withEncoder<E extends unknown>(arg0: Encoder<E>): (param0: E) => DataResult<Either<string, StringArgs>>;
+    withParser<E extends unknown>(arg0: Decoder<E>): (param0: Either<string, StringArgs>) => DataResult<E>;
 }

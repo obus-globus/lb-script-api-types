@@ -27,9 +27,9 @@ export class Block extends Node implements BreakableNode, Flags<Block>, LexicalC
     readonly scope: Scope;
     readonly statements: Statement[];
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getExistingSymbol(name: string): Symbol;
     getFirstStatement(): Statement;
     getFirstStatementLineNumber(): number;

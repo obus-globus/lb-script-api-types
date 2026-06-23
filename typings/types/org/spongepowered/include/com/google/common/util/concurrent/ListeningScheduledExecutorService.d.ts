@@ -11,7 +11,7 @@ export interface ListeningScheduledExecutorService extends ScheduledExecutorServ
     isShutdown(): boolean;
     isTerminated(): boolean;
     schedule(arg0: () => void, arg1: number, arg2: TimeUnit): ListenableScheduledFuture<Object>;
-    schedule<V extends Object | number | string | boolean>(arg0: () => V, arg1: number, arg2: TimeUnit): ListenableScheduledFuture<V>;
+    schedule<V extends unknown>(arg0: () => V, arg1: number, arg2: TimeUnit): ListenableScheduledFuture<V>;
     scheduleAtFixedRate(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ListenableScheduledFuture<Object>;
     scheduleWithFixedDelay(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ListenableScheduledFuture<Object>;
     shutdown(): void;

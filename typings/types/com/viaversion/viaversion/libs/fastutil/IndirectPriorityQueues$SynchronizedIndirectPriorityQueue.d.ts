@@ -1,7 +1,7 @@
 import type { IndirectPriorityQueue } from '../../../../../com/viaversion/viaversion/libs/fastutil/IndirectPriorityQueue.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class IndirectPriorityQueues$SynchronizedIndirectPriorityQueue<K extends Object | number | string | boolean> extends Object implements IndirectPriorityQueue<K> {
+export class IndirectPriorityQueues$SynchronizedIndirectPriorityQueue<K extends unknown> extends Object implements IndirectPriorityQueue<K> {
     static serialVersionUID: number;
     constructor(arg0: IndirectPriorityQueue<K>)
     constructor(arg0: IndirectPriorityQueue<K>, arg1: Object)

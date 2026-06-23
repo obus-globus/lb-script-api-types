@@ -10,7 +10,7 @@ export abstract class TerminalExpression extends Expression {
     static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor()
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): TerminalExpression;
     cloneInto(arg0: Root): TerminalExpression;
     enterNode(arg0: ASTListener): void;

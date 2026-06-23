@@ -4,7 +4,7 @@ import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.
 import type { ServerLevel } from '../../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { BlockEntity } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
-export interface BlockApiCache<A extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object{
+export interface BlockApiCache<A extends unknown, C extends unknown> extends Object{
     find(arg0: C): A;
     find(arg0: BlockState, arg1: C): A;
     getBlockEntity(): BlockEntity;

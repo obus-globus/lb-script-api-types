@@ -11,7 +11,7 @@ import type { ChannelResult } from '../../../kotlinx/coroutines/channels/Channel
 import type { SendChannel } from '../../../kotlinx/coroutines/channels/SendChannel.d.ts'
 import type { SelectClause2 } from '../../../kotlinx/coroutines/selects/SelectClause2.d.ts'
 import type { SelectInstance } from '../../../kotlinx/coroutines/selects/SelectInstance.d.ts'
-export class LazyActorCoroutine<E extends Object | number | string | boolean> extends ActorCoroutine<E> {
+export class LazyActorCoroutine<E extends unknown> extends ActorCoroutine<E> {
     static BUFFERED: number;
     static CONFLATED: number;
     static DEFAULT_BUFFER_PROPERTY_NAME: string;

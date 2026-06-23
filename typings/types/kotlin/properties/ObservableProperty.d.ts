@@ -1,7 +1,7 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { ReadWriteProperty } from '../../kotlin/properties/ReadWriteProperty.d.ts'
 import type { KProperty } from '../../kotlin/reflect/KProperty.d.ts'
-export abstract class ObservableProperty<V extends Object | number | string | boolean> extends Object implements ReadWriteProperty<Object, V> {
+export abstract class ObservableProperty<V extends unknown> extends Object implements ReadWriteProperty<Object, V> {
     constructor(initialValue: V)
     // private value: V;
     protected afterChange(property: KProperty<Object>, oldValue: V, newValue: V): void;

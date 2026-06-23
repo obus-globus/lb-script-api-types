@@ -10,7 +10,7 @@ export class TerminalNodeImpl extends Object implements TerminalNode {
     constructor(arg0: Token)
     parent: ParseTree;
     symbol: Token;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     getChild(arg0: number): ParseTree;
     getChildCount(): number;
     getParent(): ParseTree;

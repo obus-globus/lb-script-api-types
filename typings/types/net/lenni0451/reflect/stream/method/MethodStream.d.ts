@@ -31,7 +31,7 @@ export class MethodStream extends Object {
     forEach(arg0: (param0: MethodWrapper) => void): MethodStream;
     iterator(): Iterator<MethodWrapper>;
     jstream(): Stream<MethodWrapper>;
-    map<T extends Object | number | string | boolean>(arg0: (param0: MethodWrapper) => T): Stream<T>;
+    map<T extends unknown>(arg0: (param0: MethodWrapper) => T): Stream<T>;
     opt(arg0: Class<Object>[]): Optional<MethodWrapper>;
     opt(arg0: number): Optional<MethodWrapper>;
     opt(arg0: string): Optional<MethodWrapper>;

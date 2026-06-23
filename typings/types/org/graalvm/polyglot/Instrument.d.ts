@@ -16,5 +16,5 @@ export class Instrument extends Object {
     getVersion(): string;
     getWebsite(): string;
     hashCode(): number;
-    lookup<T extends Object | number | string | boolean>(type: Class<T>): T;
+    lookup<T extends unknown>(type: Class<T>): T;
 }

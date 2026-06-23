@@ -4,7 +4,7 @@ import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ForwardingFluentFuture<V extends Object | number | string | boolean> extends FluentFuture<V> {
+export class ForwardingFluentFuture<V extends unknown> extends FluentFuture<V> {
     static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
     static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
     constructor(delegate: ListenableFuture<V>)

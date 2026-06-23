@@ -13,7 +13,7 @@ export class MixinVersionImpl_v0_8 extends MixinVersion {
     static getInstance(): MixinVersion;
     constructor()
     getAnnotation(arg0: InjectionInfo): AnnotationNode;
-    getDecoration<T extends Object | number | string | boolean>(arg0: IMixinConfig, arg1: string, arg2: T): T;
+    getDecoration<T extends unknown>(arg0: IMixinConfig, arg1: string, arg2: T): T;
     getMixin(arg0: InjectionInfo): IMixinContext;
     getOrder(arg0: InjectionInfo): number;
     getTargets(arg0: InjectionInfo): AbstractInsnNode[][];

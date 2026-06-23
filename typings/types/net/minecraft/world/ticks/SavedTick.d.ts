@@ -6,7 +6,7 @@ import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPriority.d.ts'
-export class SavedTick<T extends Object | number | string | boolean> extends Record {
+export class SavedTick<T extends unknown> extends Record {
     static UNIQUE_TICK_HASH: Hash$Strategy<SavedTick<Object>>;
     static codec(paramtypeCodec: Codec<Object>): Codec<SavedTick<Object>>;
     static filterTickListForChunk(paramsavedTicks: SavedTick<Object>[], paramchunkPos: ChunkPos): SavedTick<Object>[];

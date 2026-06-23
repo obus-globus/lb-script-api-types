@@ -4,7 +4,7 @@ import type { K1 } from '../../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { ListBox$Mu } from '../../../../com/mojang/datafixers/kinds/ListBox$Mu.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ListBox<T extends Object | number | string | boolean> extends Object implements App<ListBox$Mu, T> {
+export class ListBox<T extends unknown> extends Object implements App<ListBox$Mu, T> {
     static create(paramarg0: (Object | null)[]): ListBox<Object>;
     static flip(paramarg0: Applicative<K1, any>, paramarg1: App<K1, Object>[]): App<K1, (Object | null)[]>;
     static traverse(paramarg0: Applicative<K1, any>, paramarg1: (param0: Object | null) => App<K1, Object>, paramarg2: (Object | null)[]): App<K1, (Object | null)[]>;

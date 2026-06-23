@@ -17,6 +17,6 @@ export class PlainTextContents$LiteralContents extends Record implements PlainTe
     hashCode(): number;
     text(): string;
     toString(): string;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
 }

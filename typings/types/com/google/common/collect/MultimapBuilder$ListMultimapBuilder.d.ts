@@ -6,7 +6,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
-export abstract class MultimapBuilder$ListMultimapBuilder<K0 extends Object | number | string | boolean, V0 extends Object | number | string | boolean> extends MultimapBuilder<K0, V0> {
+export abstract class MultimapBuilder$ListMultimapBuilder<K0 extends unknown, V0 extends unknown> extends MultimapBuilder<K0, V0> {
     static enumKeys(paramkeyClass: Class<Object>): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static hashKeys(): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static hashKeys(paramexpectedKeys: number): MultimapBuilder$MultimapBuilderWithKeys<Object>;

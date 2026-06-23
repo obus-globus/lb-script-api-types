@@ -8,7 +8,7 @@ import type { NodeParser } from '../../../../../../eu/pb4/placeholders/api/parse
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { HoverEvent } from '../../../../../../net/minecraft/network/chat/HoverEvent.d.ts'
 import type { Style } from '../../../../../../net/minecraft/network/chat/Style.d.ts'
-export class HoverNode<T extends Object | number | string | boolean, H extends Object | number | string | boolean> extends SimpleStylingNode {
+export class HoverNode<T extends unknown, H extends unknown> extends SimpleStylingNode {
     static EMPTY: ParentNode;
     static toVanilla(paramarg0: HoverNode$Action<Object, Object>, paramarg1: Object | null, paramarg2: ParserContext): HoverEvent;
     constructor(arg0: TextNode[], arg1: HoverNode$Action<T, H>, arg2: T)

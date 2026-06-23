@@ -15,7 +15,7 @@ export class FunctionDeclaration extends Declaration {
     functionPrototype: FunctionPrototype;
     clone(): FunctionDeclaration;
     cloneInto(arg0: Root): FunctionDeclaration;
-    declarationAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    declarationAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getDeclarationType(): Declaration$DeclarationType;

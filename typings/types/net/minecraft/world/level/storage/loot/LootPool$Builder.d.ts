@@ -26,7 +26,7 @@ export class LootPool$Builder extends Object implements FabricLootPoolBuilder, F
     add(entry: LootPoolEntryContainer$Builder<any>): LootPool$Builder;
     apply(arg0: LootItemFunction[]): LootPool$Builder;
     apply(arg0: LootItemFunction): LootPool$Builder;
-    apply<E extends Object | number | string | boolean>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootPool$Builder;
+    apply<E extends unknown>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootPool$Builder;
     apply(arg0: (Object | null)[]): LootPool$Builder;
     apply(function_: LootItemFunction$Builder): LootPool$Builder;
     build(): LootPool;
@@ -36,7 +36,7 @@ export class LootPool$Builder extends Object implements FabricLootPoolBuilder, F
     unwrap(): LootPool$Builder;
     when(arg0: LootItemCondition[]): LootPool$Builder;
     when(arg0: LootItemCondition): LootPool$Builder;
-    when<E extends Object | number | string | boolean>(collection: E[], conditionProvider: (param0: E) => () => LootItemCondition): LootPool$Builder;
+    when<E extends unknown>(collection: E[], conditionProvider: (param0: E) => () => LootItemCondition): LootPool$Builder;
     when(arg0: (Object | null)[]): LootPool$Builder;
     when(condition: () => LootItemCondition): LootPool$Builder;
 }

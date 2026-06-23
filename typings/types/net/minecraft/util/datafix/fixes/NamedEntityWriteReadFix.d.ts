@@ -16,7 +16,7 @@ export abstract class NamedEntityWriteReadFix extends DataFix {
     // private entityName: string;
     // private name: string;
     // private type: DSL$TypeReference;
-    // private fix<S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean>(inputEntityType: Type<S>, outputEntityType: Type<T>, patchedEntityType: Type<Object>, choiceFinder: OpticFinder<A>): TypeRewriteRule;
-    fix<T extends Object | number | string | boolean>(input: Dynamic<T>): Dynamic<T>;
+    // private fix<S extends unknown, T extends unknown, A extends unknown>(inputEntityType: Type<S>, outputEntityType: Type<T>, patchedEntityType: Type<Object>, choiceFinder: OpticFinder<A>): TypeRewriteRule;
+    fix<T extends unknown>(input: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
 }

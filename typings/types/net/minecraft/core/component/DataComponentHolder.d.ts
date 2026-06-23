@@ -5,10 +5,10 @@ import type { DataComponentGetter } from '../../../../net/minecraft/core/compone
 import type { DataComponentType } from '../../../../net/minecraft/core/component/DataComponentType.d.ts'
 import type { TypedDataComponent } from '../../../../net/minecraft/core/component/TypedDataComponent.d.ts'
 export interface DataComponentHolder extends Object, DataComponentGetter{
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
-    getAllOfType<T extends Object | number | string | boolean>(valueClass: Class<T>): Stream<T>;
+    get<T extends unknown>(type: DataComponentType<T>): T;
+    getAllOfType<T extends unknown>(valueClass: Class<T>): Stream<T>;
     getComponents(): TypedDataComponent<Object>[];
-    getOrDefault<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T): T;
-    getTyped<T extends Object | number | string | boolean>(type: DataComponentType<T>): TypedDataComponent<T>;
+    getOrDefault<T extends unknown>(type: DataComponentType<T>, defaultValue: T): T;
+    getTyped<T extends unknown>(type: DataComponentType<T>): TypedDataComponent<T>;
     has(type: DataComponentType<Object>): boolean;
 }

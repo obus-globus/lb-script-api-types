@@ -4,7 +4,7 @@ import type { StaticProperty } from '../../../../../com/oracle/truffle/api/stati
 import type { StaticShape } from '../../../../../com/oracle/truffle/api/staticobject/StaticShape.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class PodBasedShapeGenerator<T extends Object | number | string | boolean> extends ShapeGenerator<T> {
+export class PodBasedShapeGenerator<T extends unknown> extends ShapeGenerator<T> {
     private constructor(storageSuperClass: Class<Object>, storageFactoryInterface: Class<T>)
     // private storageFactoryInterface: Class<T>;
     // private storageSuperClass: Class<Object>;

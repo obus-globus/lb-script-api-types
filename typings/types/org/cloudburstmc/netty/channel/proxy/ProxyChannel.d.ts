@@ -21,7 +21,7 @@ export abstract class ProxyChannel<T extends Channel> extends Object implements 
     // private channel: T;
     // private pipeline: Map$Entry<string, ChannelHandler>[];
     alloc(): ByteBufAllocator;
-    attr<U extends Object | number | string | boolean>(arg0: AttributeKey<U>): Attribute<U>;
+    attr<U extends unknown>(arg0: AttributeKey<U>): Attribute<U>;
     bind(arg0: SocketAddress): ChannelFuture;
     bind(arg0: SocketAddress, arg1: ChannelPromise): ChannelFuture;
     bytesBeforeUnwritable(): number;
@@ -43,7 +43,7 @@ export abstract class ProxyChannel<T extends Channel> extends Object implements 
     eventLoop(): (Object | null)[];
     flush(): Channel;
     getOption(arg0: ChannelOption<T>): T;
-    hasAttr<U extends Object | number | string | boolean>(arg0: AttributeKey<U>): boolean;
+    hasAttr<U extends unknown>(arg0: AttributeKey<U>): boolean;
     id(): ChannelId;
     internalPipeline(): Map$Entry<string, ChannelHandler>[];
     isActive(): boolean;

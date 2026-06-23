@@ -3,7 +3,7 @@ import type { NetworkBuilder } from '../../../../com/google/common/graph/Network
 import type { NetworkConnections } from '../../../../com/google/common/graph/NetworkConnections.d.ts'
 import type { StandardNetwork } from '../../../../com/google/common/graph/StandardNetwork.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class StandardMutableNetwork<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends StandardNetwork<N, E> implements MutableNetwork<N, E> {
+export class StandardMutableNetwork<N extends unknown, E extends unknown> extends StandardNetwork<N, E> implements MutableNetwork<N, E> {
     constructor(builder: NetworkBuilder<N, E>)
     addEdge(nodeU: N, nodeV: N, edge: E): boolean;
     addEdge(endpoints: N[], edge: E): boolean;

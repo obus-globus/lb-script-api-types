@@ -5,7 +5,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { MethodInfo$Named } from '../../../../../net/minecraft/server/jsonrpc/api/MethodInfo$Named.d.ts'
 import type { ParamInfo } from '../../../../../net/minecraft/server/jsonrpc/api/ParamInfo.d.ts'
 import type { ResultInfo } from '../../../../../net/minecraft/server/jsonrpc/api/ResultInfo.d.ts'
-export class MethodInfo<Params extends Object | number | string | boolean, Result extends Object | number | string | boolean> extends Record {
+export class MethodInfo<Params extends unknown, Result extends unknown> extends Record {
     constructor(description: string, params: Optional<ParamInfo<Params>>, result: Optional<ResultInfo<Result>>)
     constructor(description: string, paramInfo: ParamInfo<Params>, resultInfo: ResultInfo<Result>)
     // private description: string;

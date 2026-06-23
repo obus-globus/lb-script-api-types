@@ -17,9 +17,9 @@ export class ReferenceArrayList$Spliterator extends Object implements ObjectSpli
     // private pos: number;
     characteristics(): number;
     estimateSize(): number;
-    forEachRemaining<K extends Object | number | string | boolean>(arg0: (param0: K) => void): void;
+    forEachRemaining<K extends unknown>(arg0: (param0: K) => void): void;
     // private getWorkingMax(): number;
     skip(arg0: number): number;
-    tryAdvance<K extends Object | number | string | boolean>(arg0: (param0: K) => void): boolean;
-    trySplit<K extends Object | number | string | boolean>(): ObjectSpliterator<K>;
+    tryAdvance<K extends unknown>(arg0: (param0: K) => void): boolean;
+    trySplit<K extends unknown>(): ObjectSpliterator<K>;
 }

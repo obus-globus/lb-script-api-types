@@ -10,7 +10,7 @@ import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
-export class OptionInstance<T extends Object | number | string | boolean> extends Object {
+export class OptionInstance<T extends unknown> extends Object {
     static BOOLEAN_TO_STRING: OptionInstance$CaptionBasedToString<boolean>;
     static BOOLEAN_VALUES: OptionInstance$Enum<boolean>;
     static cachedConstantTooltip(paramtooltipComponent: Component): (param0: Object | null) => Tooltip;

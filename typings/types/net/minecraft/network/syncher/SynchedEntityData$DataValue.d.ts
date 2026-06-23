@@ -3,7 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { EntityDataAccessor } from '../../../../net/minecraft/network/syncher/EntityDataAccessor.d.ts'
 import type { EntityDataSerializer } from '../../../../net/minecraft/network/syncher/EntityDataSerializer.d.ts'
-export class SynchedEntityData$DataValue<T extends Object | number | string | boolean> extends Record {
+export class SynchedEntityData$DataValue<T extends unknown> extends Record {
     static create(paramaccessor: EntityDataAccessor<Object>, paramvalue: Object | null): SynchedEntityData$DataValue<Object>;
     static read(paraminput: RegistryFriendlyByteBuf, paramid: number): SynchedEntityData$DataValue<Object>;
     // private id: number;

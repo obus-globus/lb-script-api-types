@@ -18,6 +18,6 @@ export class EquipmentLayerRenderer extends Object {
     // private equipmentAssets: EquipmentAssetManager;
     // private layerTextureLookup: (param0: EquipmentLayerRenderer$LayerTextureKey) => Identifier;
     // private trimSpriteLookup: (param0: EquipmentLayerRenderer$TrimSpriteKey) => TextureAtlasSprite;
-    renderLayers<S extends Object | number | string | boolean>(layerType: EquipmentClientInfo$LayerType, equipmentAssetId: ResourceKey<EquipmentAsset>, model: Model<S>, state: S, itemStack: ItemStack, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, outlineColor: number): void;
-    renderLayers<S extends Object | number | string | boolean>(layerType: EquipmentClientInfo$LayerType, equipmentAssetId: ResourceKey<EquipmentAsset>, model: Model<S>, state: S, itemStack: ItemStack, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, playerTextureOverride: Identifier, outlineColor: number, order: number): void;
+    renderLayers<S extends unknown>(layerType: EquipmentClientInfo$LayerType, equipmentAssetId: ResourceKey<EquipmentAsset>, model: Model<S>, state: S, itemStack: ItemStack, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, outlineColor: number): void;
+    renderLayers<S extends unknown>(layerType: EquipmentClientInfo$LayerType, equipmentAssetId: ResourceKey<EquipmentAsset>, model: Model<S>, state: S, itemStack: ItemStack, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, playerTextureOverride: Identifier, outlineColor: number, order: number): void;
 }

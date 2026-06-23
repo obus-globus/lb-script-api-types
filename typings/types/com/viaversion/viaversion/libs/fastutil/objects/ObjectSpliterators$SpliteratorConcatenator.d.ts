@@ -2,7 +2,7 @@ import type { ObjectSpliterator } from '../../../../../../com/viaversion/viavers
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ObjectSpliterators$SpliteratorConcatenator<K extends Object | number | string | boolean> extends Object implements ObjectSpliterator<K> {
+export class ObjectSpliterators$SpliteratorConcatenator<K extends unknown> extends Object implements ObjectSpliterator<K> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

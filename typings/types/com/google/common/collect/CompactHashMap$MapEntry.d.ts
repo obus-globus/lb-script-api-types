@@ -6,6 +6,6 @@ export class CompactHashMap$MapEntry extends AbstractMapEntry<K, V> {
     readonly key: K;
     // private lastKnownIndex: number;
     readonly value: V;
-    setValue<V extends Object | number | string | boolean>(value: V): V;
+    setValue<V extends unknown>(value: V): V;
     // private updateLastKnownIndex(): void;
 }

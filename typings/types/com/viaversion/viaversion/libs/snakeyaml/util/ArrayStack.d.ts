@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ArrayStack<T extends Object | number | string | boolean> extends Object {
+export class ArrayStack<T extends unknown> extends Object {
     constructor(arg0: number)
     // private stack: T[];
     clear(): void;

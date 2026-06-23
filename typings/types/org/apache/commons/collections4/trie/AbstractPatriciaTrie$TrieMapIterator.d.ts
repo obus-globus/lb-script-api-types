@@ -5,12 +5,12 @@ import type { AbstractPatriciaTrie$TrieIterator } from '../../../../../org/apach
 export class AbstractPatriciaTrie$TrieMapIterator extends AbstractPatriciaTrie$TrieIterator<Object> implements OrderedMapIterator<K, V> {
     private constructor(null_: AbstractPatriciaTrie$TrieMapIterator)
     // private previous: AbstractPatriciaTrie$TrieEntry<K, V>;
-    getKey<K extends Object | number | string | boolean>(): K;
-    getValue<V extends Object | number | string | boolean>(): V;
+    getKey<K extends unknown>(): K;
+    getValue<V extends unknown>(): V;
     hasPrevious(): boolean;
-    next<K extends Object | number | string | boolean>(): K;
-    nextEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): AbstractPatriciaTrie$TrieEntry<K, V>;
-    previous<K extends Object | number | string | boolean>(): K;
-    previousEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): AbstractPatriciaTrie$TrieEntry<K, V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    next<K extends unknown>(): K;
+    nextEntry<K extends unknown, V extends unknown>(): AbstractPatriciaTrie$TrieEntry<K, V>;
+    previous<K extends unknown>(): K;
+    previousEntry<K extends unknown, V extends unknown>(): AbstractPatriciaTrie$TrieEntry<K, V>;
+    setValue<V extends unknown>(arg0: V): V;
 }

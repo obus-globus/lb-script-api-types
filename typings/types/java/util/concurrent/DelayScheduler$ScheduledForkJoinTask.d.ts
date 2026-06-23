@@ -7,7 +7,7 @@ import type { ForkJoinTask$InterruptibleTask } from '../../../java/util/concurre
 import type { ScheduledFuture } from '../../../java/util/concurrent/ScheduledFuture.d.ts'
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class DelayScheduler$ScheduledForkJoinTask<T extends Object | number | string | boolean> extends ForkJoinTask$InterruptibleTask<T> implements ScheduledFuture<T> {
+export class DelayScheduler$ScheduledForkJoinTask<T extends unknown> extends ForkJoinTask$InterruptibleTask<T> implements ScheduledFuture<T> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class HashOps$CollectionHashBuilder extends Object {
     private constructor(null_: HashOps$CollectionHashBuilder)
     // private hasher: HashOps;
-    hash<V extends Object | number | string | boolean>(arg0: Type<V>, arg1: V): number;
+    hash<V extends unknown>(arg0: Type<V>, arg1: V): number;
     listHash(arg0: (param0: Ops$ListSerializer) => void): number;
     mapHash(arg0: (param0: Ops$MapSerializer) => void): number;
 }

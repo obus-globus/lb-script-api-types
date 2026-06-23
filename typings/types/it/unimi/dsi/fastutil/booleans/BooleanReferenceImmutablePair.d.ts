@@ -2,7 +2,7 @@ import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { BooleanReferencePair } from '../../../../../it/unimi/dsi/fastutil/booleans/BooleanReferencePair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class BooleanReferenceImmutablePair<V extends Object | number | string | boolean> extends Object implements BooleanReferencePair<V>, Serializable {
+export class BooleanReferenceImmutablePair<V extends unknown> extends Object implements BooleanReferencePair<V>, Serializable {
     static of(paramarg0: boolean, paramarg1: Object | null): BooleanReferenceImmutablePair<Object>;
     static of(paramarg0: boolean, paramarg1: Object | null): BooleanReferencePair<Object>;
     constructor(arg0: boolean, arg1: V)

@@ -84,7 +84,7 @@ export class LanguageServerImpl extends LanguageServer {
     start(serverSocket: ServerSocket, delegateAddresses: Pair<string, SocketAddress>[]): CompletableFuture<Object>;
     supportsMethod(method: string, params: JSONObject): boolean;
     symbol(params: WorkspaceSymbolParams): CompletableFuture<SymbolInformation[]>;
-    // private waitForResultAndHandleExceptions<T extends Object | number | string | boolean>(future: Future<T>): T;
-    // private waitForResultAndHandleExceptions<T extends Object | number | string | boolean>(future: Future<T>, resultOnError: T): T;
-    // private waitForResultAndHandleExceptions<T extends Object | number | string | boolean>(future: Future<T>, resultOnError: T, uriToClearDiagnostics: URI): T;
+    // private waitForResultAndHandleExceptions<T extends unknown>(future: Future<T>): T;
+    // private waitForResultAndHandleExceptions<T extends unknown>(future: Future<T>, resultOnError: T): T;
+    // private waitForResultAndHandleExceptions<T extends unknown>(future: Future<T>, resultOnError: T, uriToClearDiagnostics: URI): T;
 }

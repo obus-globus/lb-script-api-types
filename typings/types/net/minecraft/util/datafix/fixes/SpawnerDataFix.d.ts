@@ -11,6 +11,6 @@ export class SpawnerDataFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
     makeRule(): TypeRewriteRule;
-    // private wrapEntityToSpawnData<T extends Object | number | string | boolean>(newType: Type<T>, spawnData: Typed<Object>): Typed<T>;
-    // private wrapSpawnPotentialsToWeightedEntries<T extends Object | number | string | boolean>(newType: Type<T>, spawnPotentials: Typed<Object>): Typed<T>;
+    // private wrapEntityToSpawnData<T extends unknown>(newType: Type<T>, spawnData: Typed<Object>): Typed<T>;
+    // private wrapSpawnPotentialsToWeightedEntries<T extends unknown>(newType: Type<T>, spawnPotentials: Typed<Object>): Typed<T>;
 }

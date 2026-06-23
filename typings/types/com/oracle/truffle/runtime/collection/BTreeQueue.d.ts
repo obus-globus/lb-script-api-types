@@ -3,7 +3,7 @@ import type { BTreeQueue$Node } from '../../../../../com/oracle/truffle/runtime/
 import type { SerialQueue } from '../../../../../com/oracle/truffle/runtime/collection/SerialQueue.d.ts'
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class BTreeQueue<E extends Object | number | string | boolean> extends Object implements SerialQueue<E> {
+export class BTreeQueue<E extends unknown> extends Object implements SerialQueue<E> {
     constructor()
     // private root: BTreeQueue$Node<E>;
     add(x: E): void;
@@ -29,6 +29,6 @@ export class BTreeQueue<E extends Object | number | string | boolean> extends Ob
     // private removeFirstRoot(): E;
     size(): number;
     toArray(): Object[];
-    toArray<T extends Object | number | string | boolean>(a: T[]): T[];
+    toArray<T extends unknown>(a: T[]): T[];
     // private toArray(result: Object[], from: number, node: BTreeQueue$Node<E>): void;
 }

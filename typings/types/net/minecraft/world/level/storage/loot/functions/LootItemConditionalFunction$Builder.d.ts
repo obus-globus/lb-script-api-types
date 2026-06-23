@@ -13,6 +13,6 @@ export abstract class LootItemConditionalFunction$Builder<T extends LootItemCond
     getConditions(): LootItemCondition[];
     getThis(): T;
     unwrap(): T;
-    when<E extends Object | number | string | boolean>(collection: E[], conditionProvider: (param0: E) => () => LootItemCondition): T;
+    when<E extends unknown>(collection: E[], conditionProvider: (param0: E) => () => LootItemCondition): T;
     when(condition: () => LootItemCondition): T;
 }

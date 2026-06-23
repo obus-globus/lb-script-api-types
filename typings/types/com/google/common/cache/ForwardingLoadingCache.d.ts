@@ -2,7 +2,7 @@ import type { ForwardingCache } from '../../../../com/google/common/cache/Forwar
 import type { LoadingCache } from '../../../../com/google/common/cache/LoadingCache.d.ts'
 import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ForwardingLoadingCache<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ForwardingCache<K, V> implements LoadingCache<K, V> {
+export abstract class ForwardingLoadingCache<K extends unknown, V extends unknown> extends ForwardingCache<K, V> implements LoadingCache<K, V> {
     constructor()
     apply(key: K): V;
     delegate(): LoadingCache<K, V>;

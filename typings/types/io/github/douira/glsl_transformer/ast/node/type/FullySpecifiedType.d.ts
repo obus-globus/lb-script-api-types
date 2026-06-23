@@ -15,7 +15,7 @@ export class FullySpecifiedType extends InnerASTNode {
     constructor(arg0: TypeSpecifier)
     typeQualifier: TypeQualifier;
     typeSpecifier: TypeSpecifier;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): FullySpecifiedType;
     cloneInto(arg0: Root): FullySpecifiedType;
     enterNode(arg0: ASTListener): void;

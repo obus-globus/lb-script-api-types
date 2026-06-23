@@ -12,7 +12,7 @@ export class ValueInputContextHelper extends Object {
     // private ops: DynamicOps<Tag>;
     empty(): ValueInput;
     emptyList(): ValueInput[];
-    emptyTypedList<T extends Object | number | string | boolean>(): T[];
+    emptyTypedList<T extends unknown>(): T[];
     lookup(): HolderLookup$Provider;
     ops(): DynamicOps<Tag>;
 }

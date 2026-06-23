@@ -13,6 +13,6 @@ export class FeatureFlagRemoveFix extends DataFix {
     constructor(outputSchema: Schema, name: string, flagsToRemove: string[])
     // private flagsToRemove: string[];
     // private name: string;
-    // private fixTag<T extends Object | number | string | boolean>(tag: Dynamic<T>): Dynamic<T>;
+    // private fixTag<T extends unknown>(tag: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
 }

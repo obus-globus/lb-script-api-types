@@ -3,7 +3,7 @@ import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CancelHandler } from '../../kotlinx/coroutines/CancelHandler.d.ts'
 import type { CancellableContinuationImpl } from '../../kotlinx/coroutines/CancellableContinuationImpl.d.ts'
-export class CompletedContinuation<R extends Object | number | string | boolean> extends Object {
+export class CompletedContinuation<R extends unknown> extends Object {
     constructor(result: R, cancelHandler: CancelHandler | null, onCancellation: ((param0: Throwable, param1: R, param2: CoroutineContext) => void) | null, idempotentResume: Object | null, cancelCause: Throwable | null)
     cancelCause: Throwable | null;
     cancelHandler: CancelHandler | null;

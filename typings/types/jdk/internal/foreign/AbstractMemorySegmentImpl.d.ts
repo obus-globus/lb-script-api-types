@@ -82,7 +82,7 @@ export class AbstractMemorySegmentImpl extends Object implements MemorySegment, 
     // private allocateNoInit(arg0: MemoryLayout): MemorySegment;
     // private allocateNoInit(arg0: MemoryLayout, arg1: number): MemorySegment;
     // private allocateNoInit(arg0: number): MemorySegment;
-    andThen<V extends Object | number | string | boolean>(arg0: (param0: RuntimeException) => V): (param0: string, param1: Number[]) => V;
+    andThen<V extends unknown>(arg0: (param0: RuntimeException) => V): (param0: string, param1: Number[]) => V;
     apply(arg0: string, arg1: Number[]): RuntimeException;
     asByteBuffer(): ByteBuffer;
     asOverlappingSlice(arg0: MemorySegment): Optional<MemorySegment>;
@@ -166,7 +166,7 @@ export class AbstractMemorySegmentImpl extends Object implements MemorySegment, 
     setString(arg0: number, arg1: string): void;
     setString(arg0: number, arg1: string, arg2: Charset): void;
     spliterator(arg0: MemoryLayout): Spliterator<MemorySegment>;
-    // private toArray<Z extends Object | number | string | boolean>(arg0: Class<Z>, arg1: ValueLayout, arg2: (param0: number) => Z, arg3: (param0: Z) => MemorySegment): Z;
+    // private toArray<Z extends unknown>(arg0: Class<Z>, arg1: ValueLayout, arg2: (param0: number) => Z, arg3: (param0: Z) => MemorySegment): Z;
     toArray(arg0: ValueLayout$OfByte): number[];
     toArray(arg0: ValueLayout$OfChar): string[];
     toArray(arg0: ValueLayout$OfDouble): number[];

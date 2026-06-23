@@ -14,11 +14,11 @@ export class ObjectFactory extends Object {
     readonly LCID: WinDef$LCID;
     // private registeredObjects: WeakReference<ProxyObject>[];
     createDispatchCallback(arg0: Class<Object>, arg1: IComEventCallbackListener): IDispatchCallback;
-    createObject<T extends Object | number | string | boolean>(arg0: Class<T>): T;
-    createProxy<T extends Object | number | string | boolean>(arg0: Class<T>, arg1: IDispatch): T;
+    createObject<T extends unknown>(arg0: Class<T>): T;
+    createProxy<T extends unknown>(arg0: Class<T>, arg1: IDispatch): T;
     discoverClsId(arg0: ComObject): Guid$GUID;
     disposeAll(): void;
-    fetchObject<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    fetchObject<T extends unknown>(arg0: Class<T>): T;
     finalize(): void;
     getLCID(): WinDef$LCID;
     getRunningObjectTable(): IRunningObjectTable;

@@ -18,5 +18,5 @@ export class DoWhileLoopStatement extends ConditionLoopStatement {
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getStatementType(): Statement$StatementType;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

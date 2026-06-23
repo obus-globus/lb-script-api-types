@@ -63,8 +63,8 @@ export class TruffleInstrument$Env extends Object {
     in(): InputStream;
     isEngineRoot(root: RootNode): boolean;
     isSameFrame(root: RootNode, frame1: Frame, frame2: Frame): boolean;
-    lookup<S extends Object | number | string | boolean>(instrument: InstrumentInfo, type: Class<S>): S;
-    lookup<S extends Object | number | string | boolean>(language: LanguageInfo, type: Class<S>): S;
+    lookup<S extends unknown>(instrument: InstrumentInfo, type: Class<S>): S;
+    lookup<S extends unknown>(language: LanguageInfo, type: Class<S>): S;
     onCreate(instrument: TruffleInstrument): Object[];
     out(): OutputStream;
     parse(source: Source, argumentNames: string[]): CallTarget;

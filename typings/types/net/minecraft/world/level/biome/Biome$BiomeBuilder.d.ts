@@ -23,10 +23,10 @@ export class Biome$BiomeBuilder extends Object {
     generationSettings(generationSettings: BiomeGenerationSettings): Biome$BiomeBuilder;
     hasPrecipitation(hasPrecipitation: boolean): Biome$BiomeBuilder;
     mobSpawnSettings(mobSpawnSettings: MobSpawnSettings): Biome$BiomeBuilder;
-    modifyAttribute<Value extends Object | number | string | boolean, Parameter extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, modifier: AttributeModifier<Value, Parameter>, value: Parameter): Biome$BiomeBuilder;
+    modifyAttribute<Value extends unknown, Parameter extends unknown>(attribute: EnvironmentAttribute<Value>, modifier: AttributeModifier<Value, Parameter>, value: Parameter): Biome$BiomeBuilder;
     putAttributes(attributes: EnvironmentAttributeMap): Biome$BiomeBuilder;
     putAttributes(attributes: EnvironmentAttributeMap$Builder): Biome$BiomeBuilder;
-    setAttribute<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, value: Value): Biome$BiomeBuilder;
+    setAttribute<Value extends unknown>(attribute: EnvironmentAttribute<Value>, value: Value): Biome$BiomeBuilder;
     specialEffects(specialEffects: BiomeSpecialEffects): Biome$BiomeBuilder;
     temperature(temperature: number): Biome$BiomeBuilder;
     temperatureAdjustment(temperatureModifier: Biome$TemperatureModifier): Biome$BiomeBuilder;

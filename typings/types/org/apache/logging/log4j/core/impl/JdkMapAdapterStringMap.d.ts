@@ -14,11 +14,11 @@ export class JdkMapAdapterStringMap extends Object implements StringMap {
     clear(): void;
     containsKey(key: string): boolean;
     equals(object: Object | null): boolean;
-    forEach<V extends Object | number | string | boolean>(action: (param0: string, param1: V) => void): void;
-    forEach<V extends Object | number | string | boolean, S extends Object | number | string | boolean>(action: TriConsumer<string, V, S>, state: S): void;
+    forEach<V extends unknown>(action: (param0: string, param1: V) => void): void;
+    forEach<V extends unknown, S extends unknown>(action: TriConsumer<string, V, S>, state: S): void;
     freeze(): void;
     // private getSortedKeys(): string[];
-    getValue<V extends Object | number | string | boolean>(key: string): V;
+    getValue<V extends unknown>(key: string): V;
     hashCode(): number;
     isEmpty(): boolean;
     isFrozen(): boolean;

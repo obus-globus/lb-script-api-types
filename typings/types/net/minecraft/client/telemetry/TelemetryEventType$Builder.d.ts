@@ -7,7 +7,7 @@ export class TelemetryEventType$Builder extends Object {
     // private id: string;
     // private isOptIn: boolean;
     // private properties: TelemetryProperty<Object>[];
-    define<T extends Object | number | string | boolean>(property: TelemetryProperty<T>): TelemetryEventType$Builder;
+    define<T extends unknown>(property: TelemetryProperty<T>): TelemetryEventType$Builder;
     defineAll(properties: TelemetryProperty<Object>[]): TelemetryEventType$Builder;
     optIn(): TelemetryEventType$Builder;
     register(): TelemetryEventType;

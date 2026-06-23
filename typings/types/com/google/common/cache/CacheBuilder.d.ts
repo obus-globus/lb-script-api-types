@@ -13,7 +13,7 @@ import type { Weigher } from '../../../../com/google/common/cache/Weigher.d.ts'
 import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class CacheBuilder<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export class CacheBuilder<K extends unknown, V extends unknown> extends Object {
     static from(paramspec: CacheBuilderSpec): CacheBuilder<Object, Object>;
     static from(paramspec: string): CacheBuilder<Object, Object>;
     static newBuilder(): CacheBuilder<Object, Object>;

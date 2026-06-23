@@ -13,7 +13,7 @@ import type { TypeVariable } from '../../../../java/lang/reflect/TypeVariable.d.
 import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-export abstract class Invokable<T extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object implements AnnotatedElement, Member {
+export abstract class Invokable<T extends unknown, R extends unknown> extends Object implements AnnotatedElement, Member {
     static DECLARED: number;
     static PUBLIC: number;
     static from(paramconstructor: Constructor<Object>): Invokable<Object, Object>;

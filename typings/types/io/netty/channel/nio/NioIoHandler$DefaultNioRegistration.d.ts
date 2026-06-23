@@ -12,7 +12,7 @@ export class NioIoHandler$DefaultNioRegistration extends Object implements IoReg
     // private canceled: AtomicBoolean;
     // private handle: NioIoHandle;
     // private key: SelectionKey;
-    attachment<T extends Object | number | string | boolean>(): T;
+    attachment<T extends unknown>(): T;
     cancel(): boolean;
     close(): void;
     handle(): NioIoHandle;

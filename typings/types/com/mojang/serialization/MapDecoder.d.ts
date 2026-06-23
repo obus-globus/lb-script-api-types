@@ -7,13 +7,13 @@ import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts
 import type { MapLike } from '../../../com/mojang/serialization/MapLike.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface MapDecoder<A extends Object | number | string | boolean> extends Keyable, Object {
-    ap<E extends Object | number | string | boolean>(arg0: MapDecoder<(param0: A) => E>): MapDecoder<E>;
-    compressedDecode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<A>;
-    compressor<T extends Object | number | string | boolean>(arg0: DynamicOps<T>): KeyCompressor<T>;
-    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<A>;
+export interface MapDecoder<A extends unknown> extends Keyable, Object {
+    ap<E extends unknown>(arg0: MapDecoder<(param0: A) => E>): MapDecoder<E>;
+    compressedDecode<T extends unknown>(arg0: DynamicOps<T>, arg1: T): DataResult<A>;
+    compressor<T extends unknown>(arg0: DynamicOps<T>): KeyCompressor<T>;
+    decode<T extends unknown>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<A>;
     decoder(): Decoder<A>;
-    flatMap<B extends Object | number | string | boolean>(arg0: (param0: A) => DataResult<B>): MapDecoder<B>;
-    map<B extends Object | number | string | boolean>(arg0: (param0: A) => B): MapDecoder<B>;
+    flatMap<B extends unknown>(arg0: (param0: A) => DataResult<B>): MapDecoder<B>;
+    map<B extends unknown>(arg0: (param0: A) => B): MapDecoder<B>;
     withLifecycle(arg0: Lifecycle): MapDecoder<A>;
 }

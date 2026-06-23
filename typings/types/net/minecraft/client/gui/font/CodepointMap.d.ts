@@ -1,7 +1,7 @@
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CodepointMap$Output } from '../../../../../net/minecraft/client/gui/font/CodepointMap$Output.d.ts'
-export class CodepointMap<T extends Object | number | string | boolean> extends Object {
+export class CodepointMap<T extends unknown> extends Object {
     constructor(blockConstructor: (param0: number) => T[], blockMapConstructor: (param0: number) => T[][])
     // private blockConstructor: (param0: number) => T[];
     // private blockMap: T[][];

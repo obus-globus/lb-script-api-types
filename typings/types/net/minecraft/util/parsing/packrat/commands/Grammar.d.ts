@@ -13,18 +13,18 @@ import type { Dictionary } from '../../../../../../net/minecraft/util/parsing/pa
 import type { NamedRule } from '../../../../../../net/minecraft/util/parsing/packrat/NamedRule.d.ts'
 import type { ParseState } from '../../../../../../net/minecraft/util/parsing/packrat/ParseState.d.ts'
 import type { CommandArgumentParser } from '../../../../../../net/minecraft/util/parsing/packrat/commands/CommandArgumentParser.d.ts'
-export class Grammar<T extends Object | number | string | boolean> extends Record implements CommandArgumentParser<T> {
+export class Grammar<T extends unknown> extends Record implements CommandArgumentParser<T> {
     constructor(rules: Dictionary<StringReader>, top: NamedRule<StringReader, T>)
     // private rules: Dictionary<StringReader>;
     // private top: NamedRule<StringReader, T>;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    mapResult<S extends Object | number | string | boolean>(mapper: (param0: T) => S): CommandArgumentParser<S>;
+    mapResult<S extends unknown>(mapper: (param0: T) => S): CommandArgumentParser<S>;
     parse(state: ParseState<StringReader>): Optional<T>;
     parseForCommands(reader: StringReader): T;
     parseForSuggestions(suggestionsBuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     rules(): Dictionary<StringReader>;
     toString(): string;
     top(): NamedRule<StringReader, T>;
-    withCodec<O extends Object | number | string | boolean>(ops: DynamicOps<O>, valueParser: CommandArgumentParser<O>, codec: Codec<T>, exceptionType: DynamicCommandExceptionType): CommandArgumentParser<T>;
+    withCodec<O extends unknown>(ops: DynamicOps<O>, valueParser: CommandArgumentParser<O>, codec: Codec<T>, exceptionType: DynamicCommandExceptionType): CommandArgumentParser<T>;
 }

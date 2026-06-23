@@ -9,7 +9,7 @@ export class TaskRunner$RealBackend extends Object implements TaskRunner$Backend
     readonly executor: ThreadPoolExecutor;
     coordinatorNotify(taskRunner: TaskRunner): void;
     coordinatorWait(taskRunner: TaskRunner, nanos: number): void;
-    decorate<T extends Object | number | string | boolean>(queue: T[]): T[];
+    decorate<T extends unknown>(queue: T[]): T[];
     execute(taskRunner: TaskRunner, runnable: () => void): void;
     nanoTime(): number;
     shutdown(): void;

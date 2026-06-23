@@ -2,7 +2,7 @@ import type { AbstractReference2ByteFunction } from '../../../../../it/unimi/dsi
 import type { Reference2ByteFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ByteFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2ByteFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractReference2ByteFunction<K> implements Serializable {
+export class Reference2ByteFunctions$UnmodifiableFunction<K extends unknown> extends AbstractReference2ByteFunction<K> implements Serializable {
     constructor(arg0: (param0: Object) => number)
     // private function: (param0: Object) => number;
     clear(): void;

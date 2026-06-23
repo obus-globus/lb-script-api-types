@@ -2,7 +2,7 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
-export class ObjectIterators$IteratorWrapper<K extends Object | number | string | boolean> extends Object implements ObjectIterator<K> {
+export class ObjectIterators$IteratorWrapper<K extends unknown> extends Object implements ObjectIterator<K> {
     constructor(arg0: Iterator<K>)
     // private i: Iterator<K>;
     forEachRemaining(arg0: (param0: K) => void): void;

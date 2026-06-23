@@ -22,7 +22,7 @@ export class RegistryAccess$ImmutableRegistryAccess extends Object implements Bi
     fabric_markModified(): void;
     freeze(): RegistryAccess$Frozen;
     listRegistryKeys(): Stream<ResourceKey<(Object | null)[]>>;
-    lookup<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<E[]>;
-    lookupOrThrow<E extends Object | number | string | boolean>(name: ResourceKey<E[]>): E[];
+    lookup<E extends unknown>(registryKey: ResourceKey<E[]>): Optional<E[]>;
+    lookupOrThrow<E extends unknown>(name: ResourceKey<E[]>): E[];
     registries(): Stream<RegistryAccess$RegistryEntry<Object>>;
 }

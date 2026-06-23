@@ -6,7 +6,7 @@ import type { ParseTreeVisitor } from '../../../../org/antlr/v4/runtime/tree/Par
 export class GLSLParser$ArraySpecifierContext extends ParserRuleContext {
     static EMPTY: ParserRuleContext;
     constructor(arg0: ParserRuleContext, arg1: number)
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     arraySpecifierSegment(): GLSLParser$ArraySpecifierSegmentContext[];
     arraySpecifierSegment(arg0: number): GLSLParser$ArraySpecifierSegmentContext;
     enterRule(arg0: ParseTreeListener): void;

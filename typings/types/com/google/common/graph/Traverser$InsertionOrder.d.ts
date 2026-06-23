@@ -8,6 +8,6 @@ export class Traverser$InsertionOrder extends Enum<Traverser$InsertionOrder> {
     static valueOf(paramname: string): Traverser$InsertionOrder;
     static values(): (Object | null)[];
     private constructor()
-    insertInto<T extends Object | number | string | boolean>(deque: T[], value: T): void;
+    insertInto<T extends unknown>(deque: T[], value: T): void;
     name(): "FRONT" | "BACK";
 }

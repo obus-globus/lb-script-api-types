@@ -6,5 +6,5 @@ export class StatementExpression extends Object implements Expression {
     constructor(arg0: StatementExpression$Op)
     // private op: StatementExpression$Op;
     op(): StatementExpression$Op;
-    visit<R extends Object | number | string | boolean>(arg0: ExpressionVisitor<R>): R;
+    visit<R extends unknown>(arg0: ExpressionVisitor<R>): R;
 }

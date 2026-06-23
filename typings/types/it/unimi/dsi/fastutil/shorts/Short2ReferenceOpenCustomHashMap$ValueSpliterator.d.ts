@@ -13,8 +13,8 @@ export class Short2ReferenceOpenCustomHashMap$ValueSpliterator extends Short2Ref
     static SUBSIZED: number;
     constructor(null_: Short2ReferenceOpenCustomHashMap$ValueSpliterator)
     constructor(null_: Short2ReferenceOpenCustomHashMap$ValueSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: V) => void, arg1: number): void;
+    acceptOnIndex<V extends unknown>(arg0: (param0: V) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Short2ReferenceOpenCustomHashMap$ValueSpliterator;
+    makeForSplit<V extends unknown>(arg0: number, arg1: number, arg2: boolean): Short2ReferenceOpenCustomHashMap$ValueSpliterator;
     skip(arg0: number): number;
 }

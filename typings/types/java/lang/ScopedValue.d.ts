@@ -2,7 +2,7 @@ import type { ScopedValue$Carrier } from '../../java/lang/ScopedValue$Carrier.d.
 import type { Supplier } from '../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
-export class ScopedValue<T extends Object | number | string | boolean> extends Object {
+export class ScopedValue<T extends unknown> extends Object {
     static newInstance(): ScopedValue<Object>;
     static where(paramarg0: ScopedValue<Object>, paramarg1: Object | null): ScopedValue$Carrier;
     private constructor()

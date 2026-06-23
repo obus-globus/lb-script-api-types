@@ -2,7 +2,7 @@ import type { ImmutableSet$Builder } from '../../../../com/google/common/collect
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class ImmutableSortedSet$Builder<E extends Object | number | string | boolean> extends ImmutableSet$Builder<E> {
+export class ImmutableSortedSet$Builder<E extends unknown> extends ImmutableSet$Builder<E> {
     constructor(comparator: (param0: Object) => boolean)
     constructor(comparator: (param0: Object) => boolean, expectedSize: number)
     // private comparator: (param0: Object) => boolean;

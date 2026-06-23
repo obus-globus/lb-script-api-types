@@ -5,7 +5,7 @@ import type { ToIntFunction } from '../../../../../java/util/function/ToIntFunct
 import type { ToLongFunction } from '../../../../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
-export class ComparatorChain<T extends Object | number | string | boolean> extends Object implements Comparator<T> {
+export class ComparatorChain<T extends unknown> extends Object implements Comparator<T> {
     static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
     static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object) => boolean): (param0: Object) => boolean;
     static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
@@ -21,7 +21,7 @@ export class ComparatorChain<T extends Object | number | string | boolean> exten
     reversed(): (param0: Object) => boolean;
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparing<U extends Comparable<U>>(arg0: (param0: T) => U): (param0: Object) => boolean;
-    thenComparing<U extends Object | number | string | boolean>(arg0: (param0: T) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparing<U extends unknown>(arg0: (param0: T) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparingDouble(arg0: (param0: T) => number): (param0: Object) => boolean;
     thenComparingInt(arg0: (param0: T) => number): (param0: Object) => boolean;
     thenComparingLong(arg0: (param0: T) => number): (param0: Object) => boolean;

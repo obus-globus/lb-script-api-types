@@ -2,7 +2,7 @@ import type { Thread } from '../../../java/lang/Thread.d.ts'
 import type { ConcurrentHashMap$Node } from '../../../java/util/concurrent/ConcurrentHashMap$Node.d.ts'
 import type { ConcurrentHashMap$TreeNode } from '../../../java/util/concurrent/ConcurrentHashMap$TreeNode.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ConcurrentHashMap$TreeBin<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ConcurrentHashMap$Node<K, V> {
+export class ConcurrentHashMap$TreeBin<K extends unknown, V extends unknown> extends ConcurrentHashMap$Node<K, V> {
     constructor(arg0: ConcurrentHashMap$TreeNode<K, V>)
     // private first: ConcurrentHashMap$TreeNode<K, V>;
     // private lockState: number;

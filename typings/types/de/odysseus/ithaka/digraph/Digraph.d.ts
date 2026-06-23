@@ -1,7 +1,7 @@
 import type { EdgeWeights } from '../../../../de/odysseus/ithaka/digraph/EdgeWeights.d.ts'
 import type { OptionalInt } from '../../../../java/util/OptionalInt.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Digraph<V extends Object | number | string | boolean> extends EdgeWeights<V>, Object{
+export interface Digraph<V extends unknown> extends EdgeWeights<V>, Object{
     add(arg0: V): boolean;
     contains(arg0: V): boolean;
     contains(arg0: V, arg1: V): boolean;

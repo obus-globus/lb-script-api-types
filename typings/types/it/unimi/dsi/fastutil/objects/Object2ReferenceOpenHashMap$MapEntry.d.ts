@@ -18,10 +18,10 @@ export class Object2ReferenceOpenHashMap$MapEntry extends Object implements Obje
     readonly value: V;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    left<K extends Object | number | string | boolean>(): K;
-    left<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: K): Pair<K, V>;
-    right<V extends Object | number | string | boolean>(): V;
-    right<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: V): ObjectReferencePair<K, V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    left<K extends unknown>(): K;
+    left<K extends unknown, V extends unknown>(arg0: K): Pair<K, V>;
+    right<V extends unknown>(): V;
+    right<K extends unknown, V extends unknown>(arg0: V): ObjectReferencePair<K, V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

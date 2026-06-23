@@ -1,7 +1,7 @@
 import type { ForwardingGraph } from '../../../../com/google/common/graph/ForwardingGraph.d.ts'
 import type { Graph } from '../../../../com/google/common/graph/Graph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Graphs$TransposedGraph<N extends Object | number | string | boolean> extends ForwardingGraph<N> {
+export class Graphs$TransposedGraph<N extends unknown> extends ForwardingGraph<N> {
     constructor(graph: Graph<N>)
     // private graph: Graph<N>;
     delegate(): Graph<N>;

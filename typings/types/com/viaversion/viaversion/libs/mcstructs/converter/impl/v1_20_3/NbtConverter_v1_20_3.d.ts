@@ -22,10 +22,10 @@ export class NbtConverter_v1_20_3 extends Object implements DataConverter<Tag> {
     asNumber(arg0: Tag): Result<Number>;
     asString(arg0: Tag): Result<string>;
     asStringTypeMap(arg0: Tag): Result<{ [key: string]: Tag }>;
-    convertFrom<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: N): Tag;
-    convertList<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: Tag): N;
-    convertMap<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: Tag): N;
-    convertTo<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: Tag): N;
+    convertFrom<N extends unknown>(arg0: DataConverter<N>, arg1: N): Tag;
+    convertList<N extends unknown>(arg0: DataConverter<N>, arg1: Tag): N;
+    convertMap<N extends unknown>(arg0: DataConverter<N>, arg1: Tag): N;
+    convertTo<N extends unknown>(arg0: DataConverter<N>, arg1: Tag): N;
     createBoolean(arg0: boolean): Tag;
     createByte(arg0: number): Tag;
     createByteArray(arg0: number[]): Tag;
@@ -45,7 +45,7 @@ export class NbtConverter_v1_20_3 extends Object implements DataConverter<Tag> {
     empty(): Tag;
     emptyList(): Tag;
     emptyMap(): Tag;
-    fork<O extends Object | number | string | boolean>(arg0: DataConverter<O>): DataConverter<O>;
+    fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<Tag>;
     mergeList(arg0: Tag, arg1: Tag[]): Result<Tag>;
     mergeMap(arg0: Tag, arg1: Tag, arg2: Tag): Result<Tag>;

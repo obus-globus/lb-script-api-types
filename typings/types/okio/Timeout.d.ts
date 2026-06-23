@@ -18,7 +18,7 @@ export class Timeout extends Object {
     deadlineNanoTime(): number;
     deadlineNanoTime(deadlineNanoTime: number): Timeout;
     hasDeadline(): boolean;
-    intersectWith<T extends Object | number | string | boolean>(other: Timeout, block: () => T): T;
+    intersectWith<T extends unknown>(other: Timeout, block: () => T): T;
     throwIfReached(): void;
     timeout(timeout: number, unit: TimeUnit): Timeout;
     timeoutNanos(): number;

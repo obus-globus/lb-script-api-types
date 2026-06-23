@@ -4,7 +4,7 @@ import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptor
 import type { CompositeEncoder } from '../../../kotlinx/serialization/encoding/CompositeEncoder.d.ts'
 import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.ts'
 import type { SerializersModule } from '../../../kotlinx/serialization/modules/SerializersModule.d.ts'
-export abstract class TaggedEncoder<Tag extends Object | number | string | boolean> extends Object implements CompositeEncoder, Encoder {
+export abstract class TaggedEncoder<Tag extends unknown> extends Object implements CompositeEncoder, Encoder {
     constructor()
     // private /*not mapped: */ getCurrentTag(): Tag;
     // private /*not mapped: */ getCurrentTagOrNull(): Tag | null;
@@ -32,10 +32,10 @@ export abstract class TaggedEncoder<Tag extends Object | number | string | boole
     encodeLongElement(descriptor: SerialDescriptor, index: number, value: number): void;
     encodeNotNullMark(): void;
     encodeNull(): void;
-    encodeNullableSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
-    encodeNullableSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T | null): void;
-    encodeSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T): void;
-    encodeSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): void;
+    encodeNullableSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T | null): void;
+    encodeNullableSerializableValue<T extends unknown>(serializer: SerializationStrategy<T>, value: T | null): void;
+    encodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, serializer: SerializationStrategy<T>, value: T): void;
+    encodeSerializableValue<T extends unknown>(serializer: SerializationStrategy<T>, value: T): void;
     encodeShort(value: number): void;
     encodeShortElement(descriptor: SerialDescriptor, index: number, value: number): void;
     encodeString(value: string): void;

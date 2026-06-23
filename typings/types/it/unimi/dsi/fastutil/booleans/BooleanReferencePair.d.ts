@@ -1,6 +1,6 @@
 import type { Pair } from '../../../../../it/unimi/dsi/fastutil/Pair.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface BooleanReferencePair<V extends Object | number | string | boolean> extends Pair<boolean, V>, Object{
+export interface BooleanReferencePair<V extends unknown> extends Pair<boolean, V>, Object{
     first(): boolean;
     first(arg0: boolean): Pair<boolean, V>;
     first(arg0: boolean): BooleanReferencePair<V>;

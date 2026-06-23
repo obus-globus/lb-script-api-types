@@ -16,6 +16,6 @@ export class StringSplitter$LineComponent extends Object implements FormattedTex
     // private contents: string;
     // private style: Style;
     getString(): string;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
 }

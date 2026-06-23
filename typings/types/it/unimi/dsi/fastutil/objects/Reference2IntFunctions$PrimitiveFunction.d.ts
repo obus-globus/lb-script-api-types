@@ -32,18 +32,18 @@ import type { Short2IntFunction } from '../../../../../it/unimi/dsi/fastutil/sho
 import type { Short2ReferenceFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ReferenceFunction.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2IntFunctions$PrimitiveFunction<K extends Object | number | string | boolean> extends Object implements Reference2IntFunction<K> {
+export class Reference2IntFunctions$PrimitiveFunction<K extends unknown> extends Object implements Reference2IntFunction<K> {
     constructor(arg0: (param0: K) => number)
     // private function: (param0: K) => number;
-    andThen<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: K) => T;
+    andThen<T extends unknown>(arg0: (param0: number) => T): (param0: K) => T;
     andThenByte(arg0: (param0: number) => number): (param0: Object) => number;
     andThenChar(arg0: (param0: number) => string): (param0: Object) => string;
     andThenDouble(arg0: (param0: number) => number): (param0: Object) => number;
     andThenFloat(arg0: (param0: number) => number): (param0: Object) => number;
     andThenInt(arg0: (param0: number) => number): (param0: Object) => number;
     andThenLong(arg0: (param0: number) => number): (param0: Object) => number;
-    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: Object) => T;
-    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: Object) => T;
+    andThenObject<T extends unknown>(arg0: (param0: number) => T): (param0: Object) => T;
+    andThenReference<T extends unknown>(arg0: (param0: number) => T): (param0: Object) => T;
     andThenShort(arg0: (param0: number) => number): (param0: Object) => number;
     applyAsInt(arg0: K): number;
     composeByte(arg0: (param0: number) => K): (param0: number) => number;
@@ -52,8 +52,8 @@ export class Reference2IntFunctions$PrimitiveFunction<K extends Object | number 
     composeFloat(arg0: (param0: number) => K): (param0: number) => number;
     composeInt(arg0: (param0: number) => K): (param0: number) => number;
     composeLong(arg0: (param0: number) => K): (param0: number) => number;
-    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => number;
-    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => number;
+    composeObject<T extends unknown>(arg0: (param0: Object) => K): (param0: Object) => number;
+    composeReference<T extends unknown>(arg0: (param0: Object) => K): (param0: Object) => number;
     composeShort(arg0: (param0: number) => K): (param0: number) => number;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): number;

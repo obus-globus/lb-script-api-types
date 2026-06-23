@@ -4,7 +4,7 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export abstract class Filterable$FilterableType<T extends Object | number | string | boolean, F extends Filterable<T>> extends Type<F> {
+export abstract class Filterable$FilterableType<T extends unknown, F extends Filterable<T>> extends Type<F> {
     constructor(arg0: Type<T>, arg1: Type<T>, arg2: Class<F>)
     // private elementType: Type<T>;
     // private optionalElementType: Type<T>;

@@ -13,6 +13,6 @@ export abstract class CompressedNbt extends Object implements AutoCloseable {
     path(): Path[];
     read(): Optional<Dynamic<Tag>>;
     readFile(): Optional<Dynamic<Tag>>;
-    write<T extends Object | number | string | boolean>(data: Dynamic<T>): void;
-    writeFile<T extends Object | number | string | boolean>(data: Dynamic<T>): void;
+    write<T extends unknown>(data: Dynamic<T>): void;
+    writeFile<T extends unknown>(data: Dynamic<T>): void;
 }

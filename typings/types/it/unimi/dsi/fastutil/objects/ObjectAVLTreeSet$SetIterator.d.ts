@@ -8,17 +8,17 @@ export class ObjectAVLTreeSet$SetIterator extends Object implements ObjectListIt
     // private index: number;
     // private next: ObjectAVLTreeSet$Entry<K>;
     // private prev: ObjectAVLTreeSet$Entry<K>;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add<K extends unknown>(arg0: K): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    next<K extends Object | number | string | boolean>(): K;
-    nextEntry<K extends Object | number | string | boolean>(): ObjectAVLTreeSet$Entry<K>;
+    next<K extends unknown>(): K;
+    nextEntry<K extends unknown>(): ObjectAVLTreeSet$Entry<K>;
     nextIndex(): number;
-    previous<K extends Object | number | string | boolean>(): K;
-    previousEntry<K extends Object | number | string | boolean>(): ObjectAVLTreeSet$Entry<K>;
+    previous<K extends unknown>(): K;
+    previousEntry<K extends unknown>(): ObjectAVLTreeSet$Entry<K>;
     previousIndex(): number;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends unknown>(arg0: K): void;
     updateNext(): void;
     updatePrevious(): void;
 }

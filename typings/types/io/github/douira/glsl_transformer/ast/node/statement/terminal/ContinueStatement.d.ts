@@ -13,5 +13,5 @@ export class ContinueStatement extends TerminalStatement {
     clone(): ContinueStatement;
     cloneInto(arg0: Root): ContinueStatement;
     getStatementType(): Statement$StatementType;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

@@ -4,11 +4,11 @@ import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Futures$FutureCombiner<V extends Object | number | string | boolean> extends Object {
+export class Futures$FutureCombiner<V extends unknown> extends Object {
     private constructor(allMustSucceed: boolean, futures: ListenableFuture<V>[])
     // private allMustSucceed: boolean;
     // private futures: ListenableFuture<V>[];
-    call<C extends Object | number | string | boolean>(combiner: () => C, executor: Executor): ListenableFuture<C>;
-    callAsync<C extends Object | number | string | boolean>(combiner: () => ListenableFuture<C>, executor: Executor): ListenableFuture<C>;
+    call<C extends unknown>(combiner: () => C, executor: Executor): ListenableFuture<C>;
+    callAsync<C extends unknown>(combiner: () => ListenableFuture<C>, executor: Executor): ListenableFuture<C>;
     run(combiner: () => void, executor: Executor): ListenableFuture<Object>;
 }

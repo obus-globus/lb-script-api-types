@@ -92,8 +92,8 @@ export class EmbeddedChannel extends AbstractChannel {
     newUnsafe(): AbstractChannel$AbstractUnsafe;
     outboundMessages(): Object[];
     read(): Channel;
-    readInbound<T extends Object | number | string | boolean>(): T;
-    readOutbound<T extends Object | number | string | boolean>(): T;
+    readInbound<T extends unknown>(): T;
+    readOutbound<T extends unknown>(): T;
     // private recordException(arg0: ChannelFuture): void;
     // private recordException(arg0: Throwable): void;
     register(): void;

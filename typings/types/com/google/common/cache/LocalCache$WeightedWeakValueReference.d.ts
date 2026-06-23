@@ -3,7 +3,7 @@ import type { LocalCache$WeakValueReference } from '../../../../com/google/commo
 import type { ReferenceEntry } from '../../../../com/google/common/cache/ReferenceEntry.d.ts'
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class LocalCache$WeightedWeakValueReference<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends LocalCache$WeakValueReference<K, V> {
+export class LocalCache$WeightedWeakValueReference<K extends unknown, V extends unknown> extends LocalCache$WeakValueReference<K, V> {
     static reachabilityFence(paramarg0: Object): void;
     constructor(queue: ReferenceQueue<V>, referent: V, entry: ReferenceEntry<K, V>, weight: number)
     readonly weight: number;

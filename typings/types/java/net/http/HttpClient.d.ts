@@ -33,9 +33,9 @@ export abstract class HttpClient extends Object implements AutoCloseable {
     isTerminated(): boolean;
     newWebSocketBuilder(): WebSocket$Builder;
     proxy(): Optional<ProxySelector>;
-    send<T extends Object | number | string | boolean>(arg0: HttpRequest, arg1: (param0: HttpResponse$ResponseInfo) => HttpResponse$BodySubscriber<T>): HttpResponse<T>;
-    sendAsync<T extends Object | number | string | boolean>(arg0: HttpRequest, arg1: (param0: HttpResponse$ResponseInfo) => HttpResponse$BodySubscriber<T>): CompletableFuture<HttpResponse<T>>;
-    sendAsync<T extends Object | number | string | boolean>(arg0: HttpRequest, arg1: (param0: HttpResponse$ResponseInfo) => HttpResponse$BodySubscriber<T>, arg2: HttpResponse$PushPromiseHandler<T>): CompletableFuture<HttpResponse<T>>;
+    send<T extends unknown>(arg0: HttpRequest, arg1: (param0: HttpResponse$ResponseInfo) => HttpResponse$BodySubscriber<T>): HttpResponse<T>;
+    sendAsync<T extends unknown>(arg0: HttpRequest, arg1: (param0: HttpResponse$ResponseInfo) => HttpResponse$BodySubscriber<T>): CompletableFuture<HttpResponse<T>>;
+    sendAsync<T extends unknown>(arg0: HttpRequest, arg1: (param0: HttpResponse$ResponseInfo) => HttpResponse$BodySubscriber<T>, arg2: HttpResponse$PushPromiseHandler<T>): CompletableFuture<HttpResponse<T>>;
     shutdown(): void;
     shutdownNow(): void;
     sslContext(): SSLContext;

@@ -5,7 +5,7 @@ import type { JsonReader } from '../../../../../../../com/viaversion/viaversion/
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Constructor } from '../../../../../../../java/lang/reflect/Constructor.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class ReflectiveTypeAdapterFactory$RecordAdapter<T extends Object | number | string | boolean> extends ReflectiveTypeAdapterFactory$Adapter<T, Object[]> {
+export class ReflectiveTypeAdapterFactory$RecordAdapter<T extends unknown> extends ReflectiveTypeAdapterFactory$Adapter<T, Object[]> {
     constructor(arg0: Class<T>, arg1: ReflectiveTypeAdapterFactory$FieldsData, arg2: boolean)
     // private componentIndices: { [key: string]: number };
     // private constructor: Constructor<T>;

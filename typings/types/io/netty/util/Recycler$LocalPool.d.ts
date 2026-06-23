@@ -2,7 +2,7 @@ import type { Recycler } from '../../../io/netty/util/Recycler.d.ts'
 import type { MessagePassingQueue } from '../../../io/netty/util/internal/shaded/org/jctools/queues/MessagePassingQueue.d.ts'
 import type { Thread } from '../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class Recycler$LocalPool<H extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Object {
+export abstract class Recycler$LocalPool<H extends unknown, T extends unknown> extends Object {
     constructor(arg0: Thread, arg1: number, arg2: number, arg3: number)
     constructor(arg0: number)
     constructor(arg0: number, arg1: number, arg2: number)

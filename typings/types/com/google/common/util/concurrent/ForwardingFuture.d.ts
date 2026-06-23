@@ -4,7 +4,7 @@ import type { Future$State } from '../../../../../java/util/concurrent/Future$St
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
-export abstract class ForwardingFuture<V extends Object | number | string | boolean> extends ForwardingObject implements Future<V> {
+export abstract class ForwardingFuture<V extends unknown> extends ForwardingObject implements Future<V> {
     constructor()
     cancel(mayInterruptIfRunning: boolean): boolean;
     delegate(): Future<V>;

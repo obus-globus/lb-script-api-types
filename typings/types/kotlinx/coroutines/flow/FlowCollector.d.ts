@@ -1,4 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface FlowCollector<T extends Object | number | string | boolean> extends Object{
+export interface FlowCollector<T extends unknown> extends Object{
     emit(value: T): void;
 }

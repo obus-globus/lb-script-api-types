@@ -2,7 +2,7 @@ import type { ForwardingObject } from '../../../../com/google/common/collect/For
 import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
 import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cell.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ForwardingTable<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ForwardingObject implements Table<R, C, V> {
+export abstract class ForwardingTable<R extends unknown, C extends unknown, V extends unknown> extends ForwardingObject implements Table<R, C, V> {
     constructor()
     cellSet(): Table$Cell<R, C, V>[];
     clear(): void;

@@ -77,7 +77,7 @@ export abstract class AbstractPolyglotImpl extends Object {
     newLogHandler(logHandlerOrStream: Object): Object;
     newNIOFileSystem(fileSystem: FileSystem): FileSystem_2;
     newReadOnlyFileSystem(fileSystem: FileSystem_2): FileSystem_2;
-    newTargetTypeMapping<S extends Object | number | string | boolean, T extends Object | number | string | boolean>(sourceType: Class<S>, targetType: Class<T>, acceptsValue: (param0: S) => boolean, convertValue: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence): Object;
+    newTargetTypeMapping<S extends unknown, T extends unknown>(sourceType: Class<S>, targetType: Class<T>, acceptsValue: (param0: S) => boolean, convertValue: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence): Object;
     onEngineCreated(polyglotEngine: Object): void;
     preInitializeEngine(): void;
     resetPreInitializedEngine(): void;

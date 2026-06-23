@@ -17,18 +17,18 @@ export class Int2ObjectLinkedOpenHashMap$MapEntry extends Object implements Int2
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;
-    first<V extends Object | number | string | boolean>(arg0: number): IntObjectPair<V>;
+    first<V extends unknown>(arg0: number): IntObjectPair<V>;
     firstInt(): number;
     getIntKey(): number;
     hashCode(): number;
     key(): number;
-    key<V extends Object | number | string | boolean>(arg0: number): IntObjectPair<V>;
+    key<V extends unknown>(arg0: number): IntObjectPair<V>;
     keyInt(): number;
     left(): number;
-    left<V extends Object | number | string | boolean>(arg0: number): IntObjectPair<V>;
+    left<V extends unknown>(arg0: number): IntObjectPair<V>;
     leftInt(): number;
-    right<V extends Object | number | string | boolean>(): V;
-    right<V extends Object | number | string | boolean>(arg0: V): IntObjectPair<V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    right<V extends unknown>(): V;
+    right<V extends unknown>(arg0: V): IntObjectPair<V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

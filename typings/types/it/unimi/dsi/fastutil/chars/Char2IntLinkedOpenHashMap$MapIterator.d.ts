@@ -1,6 +1,6 @@
 import type { Char2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/chars/Char2IntMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Char2IntLinkedOpenHashMap$MapIterator<ConsumerType extends Object | number | string | boolean> extends Object {
+export abstract class Char2IntLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: Char2IntLinkedOpenHashMap$MapIterator<ConsumerType>)
     private constructor(null_: Char2IntLinkedOpenHashMap$MapIterator<ConsumerType>, arg1: string)
     // private curr: number;

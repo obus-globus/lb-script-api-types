@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CacheValue$Strength } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/CacheValue$Strength.d.ts'
-export abstract class CacheValue<V extends Object | number | string | boolean> extends Object {
+export abstract class CacheValue<V extends unknown> extends Object {
     static futureInstancesWillBeStrong(): boolean;
     static getInstance(paramvalue: Object | null): CacheValue<Object>;
     static setStrength(paramstrength: CacheValue$Strength): void;

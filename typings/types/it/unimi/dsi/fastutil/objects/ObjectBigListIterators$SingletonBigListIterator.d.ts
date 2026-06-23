@@ -1,7 +1,7 @@
 import type { ObjectBigListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBigListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectBigListIterators$SingletonBigListIterator<K extends Object | number | string | boolean> extends Object implements ObjectBigListIterator<K> {
+export class ObjectBigListIterators$SingletonBigListIterator<K extends unknown> extends Object implements ObjectBigListIterator<K> {
     constructor(arg0: K)
     // private curr: number;
     // private element: K;

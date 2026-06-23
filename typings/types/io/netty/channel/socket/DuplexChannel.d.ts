@@ -30,7 +30,7 @@ export interface DuplexChannel extends Channel, Object{
     disconnect(): ChannelFuture;
     disconnect(arg0: ChannelPromise): ChannelFuture;
     flush(): Channel;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     id(): ChannelId;
     isActive(): boolean;
     isInputShutdown(): boolean;
@@ -48,7 +48,7 @@ export interface DuplexChannel extends Channel, Object{
     parent(): Channel;
     read(): Channel;
     remoteAddress(): SocketAddress;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     shutdown(): ChannelFuture;
     shutdown(arg0: ChannelPromise): ChannelFuture;
     shutdownInput(): ChannelFuture;

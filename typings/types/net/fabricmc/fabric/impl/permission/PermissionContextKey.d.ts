@@ -8,7 +8,7 @@ import type { MinecraftServer } from '../../../../../net/minecraft/server/Minecr
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
-export class PermissionContextKey<T extends Object | number | string | boolean> extends Record implements PermissionContext$Key<T> {
+export class PermissionContextKey<T extends unknown> extends Record implements PermissionContext$Key<T> {
     static BLOCK_POSITION: PermissionContext$Key<BlockPos>;
     static COMMAND_SOURCE_STACK: PermissionContext$Key<CommandSourceStack>;
     static DEFAULT_COMMAND_ENTITY_KEYS: PermissionContext$Key<Object>[];

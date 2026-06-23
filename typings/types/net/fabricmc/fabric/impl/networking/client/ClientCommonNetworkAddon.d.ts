@@ -6,7 +6,7 @@ import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft
 import type { ClientCommonPacketListenerImpl } from '../../../../../../net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.d.ts'
 import type { Connection } from '../../../../../../net/minecraft/network/Connection.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export abstract class ClientCommonNetworkAddon<H extends Object | number | string | boolean, T extends ClientCommonPacketListenerImpl> extends AbstractChanneledNetworkAddon<H> {
+export abstract class ClientCommonNetworkAddon<H extends unknown, T extends ClientCommonPacketListenerImpl> extends AbstractChanneledNetworkAddon<H> {
     constructor(arg0: GlobalReceiverRegistry<H>, arg1: Connection, arg2: string, arg3: T, arg4: Minecraft)
     // private client: Minecraft;
     // private isServerReady: boolean;

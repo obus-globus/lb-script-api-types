@@ -8,7 +8,7 @@ import type { LerpFunction } from '../../../../net/minecraft/world/attribute/Ler
 import type { AttributeModifier } from '../../../../net/minecraft/world/attribute/modifier/AttributeModifier.d.ts'
 import type { ClockManager } from '../../../../net/minecraft/world/clock/ClockManager.d.ts'
 import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldClock.d.ts'
-export class AttributeTrackSampler<Value extends Object | number | string | boolean, Argument extends Object | number | string | boolean> extends Object implements EnvironmentAttributeLayer$TimeBased<Value> {
+export class AttributeTrackSampler<Value extends unknown, Argument extends unknown> extends Object implements EnvironmentAttributeLayer$TimeBased<Value> {
     constructor(clock: Holder<WorldClock>, periodTicks: Optional<number>, modifier: AttributeModifier<Value, Argument>, argumentTrack: KeyframeTrack<Argument>, argumentLerp: LerpFunction<Argument>, clockManager: ClockManager)
     // private argumentSampler: KeyframeTrackSampler<Argument>;
     // private cachedArgument: Argument;

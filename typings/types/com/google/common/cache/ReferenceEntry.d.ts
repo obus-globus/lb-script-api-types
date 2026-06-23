@@ -1,6 +1,6 @@
 import type { LocalCache$ValueReference } from '../../../../com/google/common/cache/LocalCache$ValueReference.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface ReferenceEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object{
+export interface ReferenceEntry<K extends unknown, V extends unknown> extends Object{
     getAccessTime(): number;
     getHash(): number;
     getKey(): K;

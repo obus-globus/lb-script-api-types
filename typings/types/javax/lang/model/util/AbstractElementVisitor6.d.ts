@@ -3,7 +3,7 @@ import type { ElementVisitor } from '../../../../javax/lang/model/element/Elemen
 import type { ModuleElement } from '../../../../javax/lang/model/element/ModuleElement.d.ts'
 import type { RecordComponentElement } from '../../../../javax/lang/model/element/RecordComponentElement.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class AbstractElementVisitor6<R extends Object | number | string | boolean, P extends Object | number | string | boolean> extends Object implements ElementVisitor<R, P> {
+export abstract class AbstractElementVisitor6<R extends unknown, P extends unknown> extends Object implements ElementVisitor<R, P> {
     constructor()
     visit(arg0: Element): R;
     visit(arg0: Element, arg1: P): R;

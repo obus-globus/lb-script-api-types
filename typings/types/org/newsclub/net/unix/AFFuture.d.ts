@@ -1,4 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface AFFuture<T extends Object | number | string | boolean> extends Object{
+export interface AFFuture<T extends unknown> extends Object{
     get(): T;
 }

@@ -4,7 +4,7 @@ import type { ListenableFuture } from '../../../../../com/google/common/util/con
 import type { InternalFutureFailureAccess } from '../../../../../com/google/common/util/concurrent/internal/InternalFutureFailureAccess.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class AbstractFutureState<V extends Object | number | string | boolean> extends InternalFutureFailureAccess implements ListenableFuture<V> {
+export abstract class AbstractFutureState<V extends unknown> extends InternalFutureFailureAccess implements ListenableFuture<V> {
     constructor()
     // private listenersField: AbstractFuture$Listener;
     // private valueField: Object;

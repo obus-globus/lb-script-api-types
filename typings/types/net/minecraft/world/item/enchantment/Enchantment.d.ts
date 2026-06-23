@@ -65,7 +65,7 @@ export class Enchantment extends Record {
     equals(o: Object | null): boolean;
     exclusiveSet(): Holder<Enchantment>[];
     getAnvilCost(): number;
-    getEffects<T extends Object | number | string | boolean>(type: DataComponentType<T[]>): T[];
+    getEffects<T extends unknown>(type: DataComponentType<T[]>): T[];
     getMaxCost(level: number): number;
     getMaxLevel(): number;
     getMinCost(level: number): number;

@@ -9,7 +9,7 @@ import type { TrackingDebugSynchronizer } from '../../../../net/minecraft/util/d
 import type { TrackingDebugSynchronizer$ValueSource } from '../../../../net/minecraft/util/debug/TrackingDebugSynchronizer$ValueSource.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.ts'
-export class TrackingDebugSynchronizer$SourceSynchronizer<T extends Object | number | string | boolean> extends TrackingDebugSynchronizer<T> {
+export class TrackingDebugSynchronizer$SourceSynchronizer<T extends unknown> extends TrackingDebugSynchronizer<T> {
     constructor(subscription: DebugSubscription<T>)
     // private blockEntitySources: Map<BlockPos, TrackingDebugSynchronizer$ValueSource<T>>;
     // private chunkSources: Map<ChunkPos, TrackingDebugSynchronizer$ValueSource<T>>;

@@ -12,7 +12,7 @@ import type { Block } from '../../../../../../net/minecraft/world/level/block/Bl
 import type { BlockEntity } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
-export class BlockApiLookupImpl<A extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object implements BlockApiLookup<A, C> {
+export class BlockApiLookupImpl<A extends unknown, C extends unknown> extends Object implements BlockApiLookup<A, C> {
     static get(paramarg0: Identifier, paramarg1: Class<Object>, paramarg2: Class<Object>): BlockApiLookup<Object, Object>;
     static get(paramarg0: Identifier, paramarg1: Class<Object>, paramarg2: Class<Object>): BlockApiLookup<Object, Object>;
     private constructor(arg0: Identifier, arg1: Class<Object>, arg2: Class<Object>)

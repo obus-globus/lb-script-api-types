@@ -8,10 +8,10 @@ export class NioServerDomainSocketChannel$NioDomainServerSocketChannelConfig ext
     // private backlog: number;
     autoReadCleared(): void;
     // private getBacklog(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     // private jdkChannel(): ServerSocketChannel;
     // private setBacklog(arg0: number): NioServerDomainSocketChannel$NioDomainServerSocketChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
 }

@@ -6,7 +6,7 @@ import type { ResourceLeakTracker } from '../../../io/netty/util/ResourceLeakTra
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { ReferenceQueue } from '../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ResourceLeakDetector<T extends Object | number | string | boolean> extends Object {
+export class ResourceLeakDetector<T extends unknown> extends Object {
     static addExclusions(paramarg0: Class<Object>, paramarg1: (Object | null)[]): void;
     static getLevel(): ResourceLeakDetector$Level;
     static isEnabled(): boolean;

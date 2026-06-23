@@ -6,7 +6,7 @@ import type { Climate$DistanceMetric } from '../../../../../net/minecraft/world/
 import type { Climate$ParameterPoint } from '../../../../../net/minecraft/world/level/biome/Climate$ParameterPoint.d.ts'
 import type { Climate$RTree } from '../../../../../net/minecraft/world/level/biome/Climate$RTree.d.ts'
 import type { Climate$TargetPoint } from '../../../../../net/minecraft/world/level/biome/Climate$TargetPoint.d.ts'
-export class Climate$ParameterList<T extends Object | number | string | boolean> extends Object {
+export class Climate$ParameterList<T extends unknown> extends Object {
     static codec(paramvalueCodec: MapCodec<Object>): Codec<Climate$ParameterList<Object>>;
     constructor(values: Pair<Climate$ParameterPoint, T>[])
     // private index: Climate$RTree<T>;

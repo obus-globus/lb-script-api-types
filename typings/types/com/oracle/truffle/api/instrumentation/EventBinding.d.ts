@@ -2,7 +2,7 @@ import type { InstrumentationHandler$AbstractInstrumenter } from '../../../../..
 import type { Semaphore } from '../../../../../java/util/concurrent/Semaphore.d.ts'
 import type { AtomicReference } from '../../../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class EventBinding<T extends Object | number | string | boolean> extends Object {
+export class EventBinding<T extends unknown> extends Object {
     constructor(instrumenter: InstrumentationHandler$AbstractInstrumenter, element: T)
     constructor(instrumenter: InstrumentationHandler$AbstractInstrumenter, element: T, attached: boolean)
     readonly attached: AtomicReference<boolean>;

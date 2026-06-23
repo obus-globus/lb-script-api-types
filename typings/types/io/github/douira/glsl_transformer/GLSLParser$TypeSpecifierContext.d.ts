@@ -11,7 +11,7 @@ export class GLSLParser$TypeSpecifierContext extends ParserRuleContext {
     static EMPTY: ParserRuleContext;
     constructor(arg0: ParserRuleContext, arg1: number)
     IDENTIFIER(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     arraySpecifier(): GLSLParser$ArraySpecifierContext;
     builtinTypeSpecifierFixed(): GLSLParser$BuiltinTypeSpecifierFixedContext;
     builtinTypeSpecifierParseable(): GLSLParser$BuiltinTypeSpecifierParseableContext;

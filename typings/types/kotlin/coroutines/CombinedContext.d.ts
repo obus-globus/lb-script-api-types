@@ -11,7 +11,7 @@ export class CombinedContext extends Object implements Serializable, CoroutineCo
     // private contains(element: CoroutineContext$Element): boolean;
     // private containsAll(context: CombinedContext): boolean;
     equals(other: Object | null): boolean;
-    fold<R extends Object | number | string | boolean>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
+    fold<R extends unknown>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
     hashCode(): number;
     minusKey(key: CoroutineContext$Key<any>): CoroutineContext;

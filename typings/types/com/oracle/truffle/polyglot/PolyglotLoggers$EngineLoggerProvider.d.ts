@@ -9,7 +9,7 @@ export class PolyglotLoggers$EngineLoggerProvider extends Object implements Func
     // private logHandler: AbstractPolyglotImpl$LogHandler;
     // private logLevels: { [key: string]: Level };
     // private loggers: Object;
-    andThen<V extends Object | number | string | boolean>(arg0: (param0: TruffleLogger) => V): (param0: string) => V;
+    andThen<V extends unknown>(arg0: (param0: TruffleLogger) => V): (param0: string) => V;
     apply(loggerId: string): TruffleLogger;
-    compose<V extends Object | number | string | boolean>(arg0: (param0: V) => string): (param0: V) => TruffleLogger;
+    compose<V extends unknown>(arg0: (param0: V) => string): (param0: V) => TruffleLogger;
 }

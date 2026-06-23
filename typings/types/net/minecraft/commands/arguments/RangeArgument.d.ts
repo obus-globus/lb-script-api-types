@@ -8,6 +8,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { MinMaxBounds } from '../../../../net/minecraft/advancements/criterion/MinMaxBounds.d.ts'
 export interface RangeArgument<T extends MinMaxBounds<any>> extends ArgumentType<T>, Object{
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): T;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): T;
 }

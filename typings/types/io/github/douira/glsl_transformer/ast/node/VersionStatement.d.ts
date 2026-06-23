@@ -13,7 +13,7 @@ export class VersionStatement extends ASTNode {
     constructor(arg0: Version, arg1: Profile)
     profile: Profile;
     version: Version;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): VersionStatement;
     cloneInto(arg0: Root): VersionStatement;
     getNormalizedProfile(): Profile;

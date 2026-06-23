@@ -1,7 +1,7 @@
 import type { ASTNode } from '../../../../../../io/github/douira/glsl_transformer/ast/node/abstract_node/ASTNode.d.ts'
 import type { ListNode } from '../../../../../../io/github/douira/glsl_transformer/ast/node/abstract_node/ListNode.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface GeneralASTVisitor<R extends Object | number | string | boolean> extends Object{
+export interface GeneralASTVisitor<R extends unknown> extends Object{
     aggregateResult(arg0: R, arg1: R): R;
     aggregateResult(arg0: R, arg1: R, arg2: R): R;
     defaultResult(): R;

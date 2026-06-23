@@ -3,7 +3,7 @@ import type { Pair$Mu } from '../../../../com/mojang/datafixers/util/Pair$Mu.d.t
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Pair<F extends Object | number | string | boolean, S extends Object | number | string | boolean> extends Object implements App<Pair$Mu<S>, F> {
+export class Pair<F extends unknown, S extends unknown> extends Object implements App<Pair$Mu<S>, F> {
     static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
     static toMap(): Collector<Pair<Object, Object>, Object, Map<Object | null, Object | null>>;
     static unbox(paramarg0: App<Pair$Mu<Object>, Object>): Pair<Object, Object>;
@@ -14,8 +14,8 @@ export class Pair<F extends Object | number | string | boolean, S extends Object
     getFirst(): F;
     getSecond(): S;
     hashCode(): number;
-    mapFirst<F2 extends Object | number | string | boolean>(arg0: (param0: F) => F2): Pair<F2, S>;
-    mapSecond<S2 extends Object | number | string | boolean>(arg0: (param0: S) => S2): Pair<F, S2>;
+    mapFirst<F2 extends unknown>(arg0: (param0: F) => F2): Pair<F2, S>;
+    mapSecond<S2 extends unknown>(arg0: (param0: S) => S2): Pair<F, S2>;
     swap(): Pair<S, F>;
     toString(): string;
 }

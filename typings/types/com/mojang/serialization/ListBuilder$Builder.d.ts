@@ -5,14 +5,14 @@ import type { Encoder } from '../../../com/mojang/serialization/Encoder.d.ts'
 import type { ListBuilder } from '../../../com/mojang/serialization/ListBuilder.d.ts'
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ListBuilder$Builder<T extends Object | number | string | boolean> extends Object implements ListBuilder<T> {
+export class ListBuilder$Builder<T extends unknown> extends Object implements ListBuilder<T> {
     constructor(arg0: DynamicOps<T>)
     // private builder: DataResult<ImmutableList$Builder<T>>;
     // private ops: DynamicOps<T>;
-    add<E extends Object | number | string | boolean>(arg0: E, arg1: Encoder<E>): ListBuilder<T>;
+    add<E extends unknown>(arg0: E, arg1: Encoder<E>): ListBuilder<T>;
     add(arg0: T): ListBuilder<T>;
     add(arg0: DataResult<T>): ListBuilder<T>;
-    addAll<E extends Object | number | string | boolean>(arg0: E[], arg1: Encoder<E>): ListBuilder<T>;
+    addAll<E extends unknown>(arg0: E[], arg1: Encoder<E>): ListBuilder<T>;
     build(arg0: T): DataResult<T>;
     build(arg0: DataResult<T>): DataResult<T>;
     mapError(arg0: (param0: string) => Object | null): ListBuilder<T>;

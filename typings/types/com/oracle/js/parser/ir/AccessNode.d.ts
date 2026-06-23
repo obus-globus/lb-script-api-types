@@ -14,7 +14,7 @@ export class AccessNode extends BaseNode {
     // private isPrivate: boolean;
     readonly property: TruffleString;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getPrivateName(): string;
     getPrivateNameTS(): TruffleString;
     getProperty(): string;

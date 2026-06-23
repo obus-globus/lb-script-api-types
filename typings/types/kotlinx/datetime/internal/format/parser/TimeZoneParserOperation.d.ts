@@ -4,7 +4,7 @@ import type { AssignableField } from '../../../../../kotlinx/datetime/internal/f
 import type { ParseResult } from '../../../../../kotlinx/datetime/internal/format/parser/ParseResult.d.ts'
 import type { ParserOperation } from '../../../../../kotlinx/datetime/internal/format/parser/ParserOperation.d.ts'
 import type { TimeZoneParserOperation$Companion } from '../../../../../kotlinx/datetime/internal/format/parser/TimeZoneParserOperation$Companion.d.ts'
-export class TimeZoneParserOperation<Output extends Object | number | string | boolean> extends Object implements ParserOperation<Output> {
+export class TimeZoneParserOperation<Output extends unknown> extends Object implements ParserOperation<Output> {
     static Companion: TimeZoneParserOperation$Companion;
     constructor(setter: AssignableField<Output, string>)
     // private setter: AssignableField<Output, string>;

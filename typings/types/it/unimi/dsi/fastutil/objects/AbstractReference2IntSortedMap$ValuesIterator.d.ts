@@ -4,7 +4,7 @@ import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fa
 import type { Reference2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2IntMap$Entry.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractReference2IntSortedMap$ValuesIterator<K extends Object | number | string | boolean> extends Object implements IntIterator {
+export class AbstractReference2IntSortedMap$ValuesIterator<K extends unknown> extends Object implements IntIterator {
     constructor(arg0: ObjectBidirectionalIterator<Reference2IntMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2IntMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;

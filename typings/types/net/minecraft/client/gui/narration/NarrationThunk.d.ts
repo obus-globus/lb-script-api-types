@@ -2,7 +2,7 @@ import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
-export class NarrationThunk<T extends Object | number | string | boolean> extends Object {
+export class NarrationThunk<T extends unknown> extends Object {
     static EMPTY: NarrationThunk<Object>;
     static from(paramtext: string): NarrationThunk<Object>;
     static from(paramlines: Component[]): NarrationThunk<Object>;

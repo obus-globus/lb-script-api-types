@@ -121,7 +121,7 @@ export class DescriptorRendererOptionsImpl extends Object implements DescriptorR
     getWithoutTypeParameters(): boolean;
     isLocked(): boolean;
     lock(): void;
-    // private property<T extends Object | number | string | boolean>(arg0: T): ReadWriteProperty<DescriptorRendererOptionsImpl, T>;
+    // private property<T extends unknown>(arg0: T): ReadWriteProperty<DescriptorRendererOptionsImpl, T>;
     setAnnotationArgumentsRenderingPolicy(arg0: AnnotationArgumentsRenderingPolicy): void;
     setClassifierNamePolicy(arg0: ClassifierNamePolicy): void;
     setDebugMode(arg0: boolean): void;

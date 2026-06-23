@@ -4,7 +4,7 @@ import type { KParameter } from '../../kotlin/reflect/KParameter.d.ts'
 import type { KType } from '../../kotlin/reflect/KType.d.ts'
 import type { KTypeParameter } from '../../kotlin/reflect/KTypeParameter.d.ts'
 import type { KVisibility } from '../../kotlin/reflect/KVisibility.d.ts'
-export interface KCallable<R extends Object | number | string | boolean> extends Object, KAnnotatedElement{
+export interface KCallable<R extends unknown> extends Object, KAnnotatedElement{
     /*not mapped: */ isAbstract(): boolean;
     /*not mapped: */ isFinal(): boolean;
     /*not mapped: */ isOpen(): boolean;

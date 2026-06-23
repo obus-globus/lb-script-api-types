@@ -8,7 +8,7 @@ import type { Lens$Mu2 } from '../../../../com/mojang/datafixers/optics/Lens$Mu2
 import type { Cartesian$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/Cartesian$Mu.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Proj1<F extends Object | number | string | boolean, G extends Object | number | string | boolean, F2 extends Object | number | string | boolean> extends Object implements Lens<Pair<F, G>, Pair<F2, G>, F, F2> {
+export class Proj1<F extends unknown, G extends unknown, F2 extends unknown> extends Object implements Lens<Pair<F, G>, Pair<F2, G>, F, F2> {
     static INSTANCE: Proj1<Object, Object, Object>;
     static box(paramarg0: Lens<Object, Object, Object, Object>): App2<Lens$Mu2<Object, Object>, Object, Object>;
     static unbox(paramarg0: App2<Lens$Mu<Object, Object>, Object, Object>): Lens<Object, Object, Object, Object>;

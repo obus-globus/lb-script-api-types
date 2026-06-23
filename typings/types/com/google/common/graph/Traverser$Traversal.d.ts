@@ -2,7 +2,7 @@ import type { SuccessorsFunction } from '../../../../com/google/common/graph/Suc
 import type { Traverser$InsertionOrder } from '../../../../com/google/common/graph/Traverser$InsertionOrder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export abstract class Traverser$Traversal<N extends Object | number | string | boolean> extends Object {
+export abstract class Traverser$Traversal<N extends unknown> extends Object {
     constructor(successorFunction: SuccessorsFunction<N>)
     // private successorFunction: SuccessorsFunction<N>;
     breadthFirst(startNodes: Iterator<N>): Iterator<N>;

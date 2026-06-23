@@ -33,7 +33,7 @@ export abstract class DatagramSocketImpl extends Object implements SocketOptions
     disconnect(): void;
     getFileDescriptor(): FileDescriptor;
     getLocalPort(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     getTTL(): number;
     getTimeToLive(): number;
     join(arg0: InetAddress): void;
@@ -44,7 +44,7 @@ export abstract class DatagramSocketImpl extends Object implements SocketOptions
     peekData(arg0: DatagramPacket): number;
     receive(arg0: DatagramPacket): void;
     send(arg0: DatagramPacket): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): void;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): void;
     setTTL(arg0: number): void;
     setTimeToLive(arg0: number): void;
     supportedOptions(): SocketOption<Object>[];

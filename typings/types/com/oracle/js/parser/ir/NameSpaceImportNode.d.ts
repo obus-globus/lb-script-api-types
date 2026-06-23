@@ -10,7 +10,7 @@ export class NameSpaceImportNode extends Node {
     constructor(token: number, start: number, finish: number, bindingIdentifier: IdentNode)
     readonly bindingIdentifier: IdentNode;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBindingIdentifier(): IdentNode;
     setBindingIdentifier(bindingIdentifier: IdentNode): NameSpaceImportNode;
     toString(): string;

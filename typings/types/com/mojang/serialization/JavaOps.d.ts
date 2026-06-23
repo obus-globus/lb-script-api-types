@@ -19,9 +19,9 @@ export class JavaOps extends Object implements DynamicOps<Object> {
     static INSTANCE: JavaOps;
     private constructor()
     compressMaps(): boolean;
-    convertList<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Object): U;
-    convertMap<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Object): U;
-    convertTo<U extends Object | number | string | boolean>(arg0: DynamicOps<U>, arg1: Object): U;
+    convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: Object): U;
+    convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: Object): U;
+    convertTo<U extends unknown>(arg0: DynamicOps<U>, arg1: Object): U;
     createBoolean(arg0: boolean): Object;
     createByte(arg0: number): Object;
     createByteList(arg0: ByteBuffer): Object;
@@ -67,7 +67,7 @@ export class JavaOps extends Object implements DynamicOps<Object> {
     toString(): string;
     update(arg0: Object, arg1: string, arg2: (param0: Object) => Object): Object;
     updateGeneric(arg0: Object, arg1: Object, arg2: (param0: Object) => Object): Object;
-    withDecoder<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: Object) => DataResult<Pair<E, Object>>;
-    withEncoder<E extends Object | number | string | boolean>(arg0: Encoder<E>): (param0: E) => DataResult<Object>;
-    withParser<E extends Object | number | string | boolean>(arg0: Decoder<E>): (param0: Object) => DataResult<E>;
+    withDecoder<E extends unknown>(arg0: Decoder<E>): (param0: Object) => DataResult<Pair<E, Object>>;
+    withEncoder<E extends unknown>(arg0: Encoder<E>): (param0: E) => DataResult<Object>;
+    withParser<E extends unknown>(arg0: Decoder<E>): (param0: Object) => DataResult<E>;
 }

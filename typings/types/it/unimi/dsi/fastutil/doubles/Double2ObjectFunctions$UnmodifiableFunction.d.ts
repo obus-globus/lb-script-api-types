@@ -2,7 +2,7 @@ import type { AbstractDouble2ObjectFunction } from '../../../../../it/unimi/dsi/
 import type { Double2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2ObjectFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Double2ObjectFunctions$UnmodifiableFunction<V extends Object | number | string | boolean> extends AbstractDouble2ObjectFunction<V> implements Serializable {
+export class Double2ObjectFunctions$UnmodifiableFunction<V extends unknown> extends AbstractDouble2ObjectFunction<V> implements Serializable {
     constructor(arg0: (param0: number) => V)
     // private function: (param0: number) => V;
     clear(): void;

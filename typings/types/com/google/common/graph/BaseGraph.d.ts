@@ -2,7 +2,7 @@ import type { ElementOrder } from '../../../../com/google/common/graph/ElementOr
 import type { PredecessorsFunction } from '../../../../com/google/common/graph/PredecessorsFunction.d.ts'
 import type { SuccessorsFunction } from '../../../../com/google/common/graph/SuccessorsFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface BaseGraph<N extends Object | number | string | boolean> extends PredecessorsFunction<N>, SuccessorsFunction<N>, Object{
+export interface BaseGraph<N extends unknown> extends PredecessorsFunction<N>, SuccessorsFunction<N>, Object{
     adjacentNodes(node: N): N[];
     allowsSelfLoops(): boolean;
     degree(node: N): number;

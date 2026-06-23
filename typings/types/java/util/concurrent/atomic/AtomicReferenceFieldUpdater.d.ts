@@ -2,7 +2,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { BinaryOperator } from '../../../../java/util/function/BinaryOperator.d.ts'
 import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class AtomicReferenceFieldUpdater<T extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export abstract class AtomicReferenceFieldUpdater<T extends unknown, V extends unknown> extends Object {
     static newUpdater(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: string): AtomicReferenceFieldUpdater<Object, Object>;
     constructor()
     accumulateAndGet(arg0: T, arg1: V, arg2: (param0: V, param1: Object | null) => Object | null): V;

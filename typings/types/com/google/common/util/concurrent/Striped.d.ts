@@ -3,7 +3,7 @@ import type { Semaphore } from '../../../../../java/util/concurrent/Semaphore.d.
 import type { Lock } from '../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { ReadWriteLock } from '../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Striped<L extends Object | number | string | boolean> extends Object {
+export abstract class Striped<L extends unknown> extends Object {
     static custom(paramstripes: number, paramsupplier: () => Object | null): Striped<Object>;
     static lazyWeakLock(paramstripes: number): Striped<Lock>;
     static lazyWeakReadWriteLock(paramstripes: number): Striped<ReadWriteLock>;

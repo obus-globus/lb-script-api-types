@@ -6,10 +6,10 @@ export interface ObjectThreadContextMap extends Object, CleanableThreadContextMa
     containsKey(key: string): boolean;
     get(key: string): string;
     getReadOnlyContextData(): StringMap;
-    getValue<V extends Object | number | string | boolean>(key: string): V;
+    getValue<V extends unknown>(key: string): V;
     isEmpty(): boolean;
     put(key: string, value: string): void;
-    putAllValues<V extends Object | number | string | boolean>(values: { [key: string]: V }): void;
-    putValue<V extends Object | number | string | boolean>(key: string, value: V): void;
+    putAllValues<V extends unknown>(values: { [key: string]: V }): void;
+    putValue<V extends unknown>(key: string, value: V): void;
     remove(key: string): void;
 }

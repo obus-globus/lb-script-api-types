@@ -7,7 +7,7 @@ import type { SuggestionsBuilder } from '../../../../com/mojang/brigadier/sugges
 import type { ArgumentCommandNode } from '../../../../com/mojang/brigadier/tree/ArgumentCommandNode.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class RequiredArgumentBuilder<S extends Object | number | string | boolean, T extends Object | number | string | boolean> extends ArgumentBuilder<S, RequiredArgumentBuilder<S, T>> {
+export class RequiredArgumentBuilder<S extends unknown, T extends unknown> extends ArgumentBuilder<S, RequiredArgumentBuilder<S, T>> {
     static argument(paramarg0: string, paramarg1: ArgumentType<Object>): RequiredArgumentBuilder<Object, Object>;
     private constructor(arg0: string, arg1: ArgumentType<T>)
     readonly name: string;

@@ -8,14 +8,14 @@ import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity
 import type { ItemInstance } from '../../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { BlockEntity } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { LootContextArg } from '../../../../../../net/minecraft/world/level/storage/loot/LootContextArg.d.ts'
-export class LootContextArg$ArgCodecBuilder<R extends Object | number | string | boolean> extends Object {
+export class LootContextArg$ArgCodecBuilder<R extends unknown> extends Object {
     private constructor()
     // private sources: ExtraCodecs$LateBoundIdMapper<string, LootContextArg<R>>;
     anyBlockEntity(function_: (param0: ContextKey<BlockEntity>) => LootContextArg<R>): LootContextArg$ArgCodecBuilder<R>;
     anyEntity(function_: (param0: ContextKey<Entity>) => LootContextArg<R>): LootContextArg$ArgCodecBuilder<R>;
     anyItemStack(function_: (param0: ContextKey<ItemInstance>) => LootContextArg<R>): LootContextArg$ArgCodecBuilder<R>;
     anyOf<T extends StringRepresentable & LootContextArg<R>>(targets: T[]): LootContextArg$ArgCodecBuilder<R>;
-    anyOf<T extends Object | number | string | boolean>(targets: T[], nameGetter: (param0: T) => string, argFactory: (param0: T) => LootContextArg<R>): LootContextArg$ArgCodecBuilder<R>;
+    anyOf<T extends unknown>(targets: T[], nameGetter: (param0: T) => string, argFactory: (param0: T) => LootContextArg<R>): LootContextArg$ArgCodecBuilder<R>;
     anyOf<T extends StringRepresentable>(targets: T[], argFactory: (param0: T) => LootContextArg<R>): LootContextArg$ArgCodecBuilder<R>;
     // private build(): Codec<LootContextArg<R>>;
 }

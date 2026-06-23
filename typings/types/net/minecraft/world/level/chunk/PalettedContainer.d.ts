@@ -16,7 +16,7 @@ import type { PalettedContainer$Data } from '../../../../../net/minecraft/world/
 import type { PalettedContainerRO } from '../../../../../net/minecraft/world/level/chunk/PalettedContainerRO.d.ts'
 import type { PalettedContainerRO$PackedData } from '../../../../../net/minecraft/world/level/chunk/PalettedContainerRO$PackedData.d.ts'
 import type { Strategy } from '../../../../../net/minecraft/world/level/chunk/Strategy.d.ts'
-export class PalettedContainer<T extends Object | number | string | boolean> extends Object implements PalettedContainerROExtension<Object>, PaletteResize<T>, PalettedContainerRO<T> {
+export class PalettedContainer<T extends unknown> extends Object implements PalettedContainerROExtension<Object>, PaletteResize<T>, PalettedContainerRO<T> {
     static clone(paramarg0: PalettedContainerRO<Object>): PalettedContainerRO<Object>;
     static codecRO(paramelementCodec: Codec<Object>, paramstrategy: Strategy<Object>, paramdefaultValue: Object | null): Codec<PalettedContainerRO<Object>>;
     static codecRW(paramelementCodec: Codec<Object>, paramstrategy: Strategy<Object>, paramdefaultValue: Object | null): Codec<PalettedContainer<Object>>;

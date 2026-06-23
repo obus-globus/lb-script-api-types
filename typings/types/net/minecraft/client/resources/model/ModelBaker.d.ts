@@ -6,7 +6,7 @@ import type { ResolvedModel } from '../../../../../net/minecraft/client/resource
 import type { MaterialBaker } from '../../../../../net/minecraft/client/resources/model/sprite/MaterialBaker.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export interface ModelBaker extends Object {
-    compute<T extends Object | number | string | boolean>(key: (param0: ModelBaker) => T): T;
+    compute<T extends unknown>(key: (param0: ModelBaker) => T): T;
     getModel(location: Identifier): ResolvedModel;
     interner(): ModelBaker$Interner;
     materials(): MaterialBaker;

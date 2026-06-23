@@ -13,6 +13,6 @@ export class PoiTypeRemoveFix extends AbstractPoiSectionFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, name: string, typesToRemove: (param0: string) => boolean)
     // private typesToKeep: (param0: string) => boolean;
-    processRecords<T extends Object | number | string | boolean>(records: Stream<Dynamic<T>>): Stream<Dynamic<T>>;
-    // private shouldKeepRecord<T extends Object | number | string | boolean>(record: Dynamic<T>): boolean;
+    processRecords<T extends unknown>(records: Stream<Dynamic<T>>): Stream<Dynamic<T>>;
+    // private shouldKeepRecord<T extends unknown>(record: Dynamic<T>): boolean;
 }

@@ -24,7 +24,7 @@ export class SlotDisplay$TagSlotDisplay extends Record implements SlotDisplay {
     equals(o: Object | null): boolean;
     hashCode(): number;
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    resolve<T extends Object | number | string | boolean>(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
+    resolve<T extends unknown>(context: ContextMap, factory: DisplayContentsFactory<T>): Stream<T>;
     resolveForFirstStack(context: ContextMap): ItemStack;
     resolveForStacks(context: ContextMap): ItemStack[];
     tag(): TagKey<Item>;

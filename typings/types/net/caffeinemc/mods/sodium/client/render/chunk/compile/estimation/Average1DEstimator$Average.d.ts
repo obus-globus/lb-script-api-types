@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Average1DEstimator$ValueBatch } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/estimation/Average1DEstimator$ValueBatch.d.ts'
 import type { Estimator$Model } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/estimation/Estimator$Model.d.ts'
-export class Average1DEstimator$Average<C extends Object | number | string | boolean> extends Object implements Estimator$Model<void, number, Average1DEstimator$ValueBatch<C>> {
+export class Average1DEstimator$Average<C extends unknown> extends Object implements Estimator$Model<void, number, Average1DEstimator$ValueBatch<C>> {
     constructor(arg0: number, arg1: number)
     // private average: number;
     // private hasRealData: boolean;

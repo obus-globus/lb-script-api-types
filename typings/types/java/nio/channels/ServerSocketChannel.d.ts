@@ -15,7 +15,7 @@ export abstract class ServerSocketChannel extends AbstractSelectableChannel impl
     bind(arg0: SocketAddress): ServerSocketChannel;
     bind(arg0: SocketAddress, arg1: number): ServerSocketChannel;
     getLocalAddress(): SocketAddress;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): ServerSocketChannel;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): ServerSocketChannel;
     socket(): ServerSocket;
     validOps(): number;
 }

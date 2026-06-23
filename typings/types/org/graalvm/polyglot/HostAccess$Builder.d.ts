@@ -61,7 +61,7 @@ export class HostAccess$Builder extends Object {
     disableMethodScopingAnnotatedBy(annotation: Class<Annotation>): HostAccess$Builder;
     methodScoping(scopingDefault: boolean): HostAccess$Builder;
     name(givenName: string): HostAccess$Builder;
-    targetTypeMapping<S extends Object | number | string | boolean, T extends Object | number | string | boolean>(sourceType: Class<S>, targetType: Class<T>, accepts: (param0: S) => boolean, converter: (param0: S) => T): HostAccess$Builder;
-    targetTypeMapping<S extends Object | number | string | boolean, T extends Object | number | string | boolean>(sourceType: Class<S>, targetType: Class<T>, accepts: (param0: S) => boolean, converter: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence): HostAccess$Builder;
+    targetTypeMapping<S extends unknown, T extends unknown>(sourceType: Class<S>, targetType: Class<T>, accepts: (param0: S) => boolean, converter: (param0: S) => T): HostAccess$Builder;
+    targetTypeMapping<S extends unknown, T extends unknown>(sourceType: Class<S>, targetType: Class<T>, accepts: (param0: S) => boolean, converter: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence): HostAccess$Builder;
     useModuleLookup(lookup: MethodHandles$Lookup): HostAccess$Builder;
 }

@@ -12,7 +12,7 @@ export class EnvironmentAttributeProbe extends Object {
     // private position: Vec3;
     // private valueProbeFactory: (param0: EnvironmentAttribute<Object>) => EnvironmentAttributeProbe$ValueProbe<Object>;
     // private valueProbes: Map<EnvironmentAttribute<Object>, EnvironmentAttributeProbe$ValueProbe<Object>>;
-    getValue<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, partialTicks: number): Value;
+    getValue<Value extends unknown>(attribute: EnvironmentAttribute<Value>, partialTicks: number): Value;
     reset(): void;
     tick(level: Level, position: Vec3): void;
 }

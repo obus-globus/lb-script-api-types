@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2BooleanOpenCustomHashMap$FastEntryIterator extends Reference2BooleanOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Reference2BooleanMap$Entry<K>> {
     private constructor(null_: Reference2BooleanOpenCustomHashMap$FastEntryIterator)
     // private entry: Reference2BooleanOpenCustomHashMap$MapEntry;
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Reference2BooleanMap$Entry<K>) => void, arg1: number): void;
-    next<K extends Object | number | string | boolean>(): Reference2BooleanOpenCustomHashMap$MapEntry;
+    acceptOnIndex<K extends unknown>(arg0: (param0: Reference2BooleanMap$Entry<K>) => void, arg1: number): void;
+    next<K extends unknown>(): Reference2BooleanOpenCustomHashMap$MapEntry;
     skip(arg0: number): number;
 }

@@ -5,5 +5,5 @@ import type { ParseTreeVisitor } from '../../../../../org/antlr/v4/runtime/tree/
 import type { TerminalNodeImpl } from '../../../../../org/antlr/v4/runtime/tree/TerminalNodeImpl.d.ts'
 export class ErrorNodeImpl extends TerminalNodeImpl implements ErrorNode {
     constructor(arg0: Token)
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
 }

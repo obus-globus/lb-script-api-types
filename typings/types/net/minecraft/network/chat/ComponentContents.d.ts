@@ -9,6 +9,6 @@ import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
 export interface ComponentContents extends Object{
     codec(): MapCodec<ComponentContents>;
     resolve(context: ResolutionContext, recursionDepth: number): MutableComponent;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit<T extends Object | number | string | boolean>(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends unknown>(output: FormattedText$StyledContentConsumer<T>, currentStyle: Style): Optional<T>;
 }

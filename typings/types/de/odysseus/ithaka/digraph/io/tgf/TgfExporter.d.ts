@@ -6,5 +6,5 @@ export class TgfExporter extends Object {
     constructor()
     constructor(arg0: string)
     // private newline: string;
-    export<V extends Object | number | string | boolean>(arg0: TgfLabelProvider<V>, arg1: Digraph<V>, arg2: Writer): void;
+    export<V extends unknown>(arg0: TgfLabelProvider<V>, arg1: Digraph<V>, arg2: Writer): void;
 }

@@ -34,9 +34,9 @@ export class Type extends Object implements Comparable<Type> {
     // private calculateSimpleType(): boolean;
     compareTo(arg0: Type): number;
     equals(arg0: Object | null): boolean;
-    getAnnotation<T extends Object | number | string | boolean>(arg0: Class<Annotation>): T;
+    getAnnotation<T extends unknown>(arg0: Class<Annotation>): T;
     getAnnotationElements(): AnnotationElement[];
-    getAnnotationValue<T extends Object | number | string | boolean>(arg0: Class<Annotation>, arg1: T): T;
+    getAnnotationValue<T extends unknown>(arg0: Class<Annotation>, arg1: T): T;
     getDescription(): string;
     getField(arg0: string): ValueDescriptor;
     getFields(): ValueDescriptor[];

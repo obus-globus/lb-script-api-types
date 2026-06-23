@@ -13,7 +13,7 @@ export class GLSLParser$SwitchStatementContext extends ParserRuleContext {
     LPAREN(): TerminalNode;
     RPAREN(): TerminalNode;
     SWITCH(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     attribute(): GLSLParser$AttributeContext;
     compoundStatement(): GLSLParser$CompoundStatementContext;
     enterRule(arg0: ParseTreeListener): void;

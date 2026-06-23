@@ -19,13 +19,13 @@ export class AFSocketCore extends AFCore {
     addressFamily(): AFAddressFamily<any>;
     decPendingAccepts(): void;
     doClose(): void;
-    getOption<T extends Object | number | string | boolean>(arg0: AFSocketOption<T>): T;
+    getOption<T extends unknown>(arg0: AFSocketOption<T>): T;
     hasPendingAccepts(): boolean;
     incPendingAccepts(): void;
     isConnected(arg0: boolean): boolean;
     isShutdownOnClose(): boolean;
     receive(arg0: ByteBuffer, arg1: () => number): AFSocketAddress;
-    setOption<T extends Object | number | string | boolean>(arg0: AFSocketOption<T>, arg1: T): void;
+    setOption<T extends unknown>(arg0: AFSocketOption<T>, arg1: T): void;
     setShutdownOnClose(arg0: boolean): void;
     unblockAccepts(): void;
 }

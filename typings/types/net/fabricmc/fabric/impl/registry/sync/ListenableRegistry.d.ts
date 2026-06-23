@@ -4,7 +4,7 @@ import type { RegistryEntryAddedCallback } from '../../../../../../net/fabricmc/
 import type { RegistryIdRemapCallback } from '../../../../../../net/fabricmc/fabric/api/event/registry/RegistryIdRemapCallback.d.ts'
 import type { RegistryIdRemapCallback$RemapState } from '../../../../../../net/fabricmc/fabric/api/event/registry/RegistryIdRemapCallback$RemapState.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface ListenableRegistry<T extends Object | number | string | boolean> extends Object {
+export interface ListenableRegistry<T extends unknown> extends Object {
     fabric_getAddObjectEvent(): Event<(param0: number, param1: Identifier, param2: T) => void>;
     fabric_getRemapEvent(): Event<(param0: RegistryIdRemapCallback$RemapState<T>) => void>;
 }

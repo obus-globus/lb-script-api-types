@@ -20,7 +20,7 @@ export class Reference2DoubleOpenCustomHashMap$ValueSpliterator extends Referenc
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => number;
-    makeForSplit<K extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Reference2DoubleOpenCustomHashMap$ValueSpliterator;
+    makeForSplit<K extends unknown>(arg0: number, arg1: number, arg2: boolean): Reference2DoubleOpenCustomHashMap$ValueSpliterator;
     skip(arg0: number): number;
     tryAdvance(arg0: (param0: number) => void): boolean;
 }

@@ -19,5 +19,5 @@ export class LayoutQualifier extends TypeQualifierPart {
     exitNode(arg0: ASTListener): void;
     getParts(): LayoutQualifierPart[];
     getQualifierType(): TypeQualifierPart$QualifierType;
-    typeQualifierPartAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    typeQualifierPartAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

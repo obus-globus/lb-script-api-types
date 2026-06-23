@@ -9,8 +9,8 @@ export class PositionArgumentType extends Object implements ArgumentType<Object>
     static position(): PositionArgumentType;
     constructor()
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Object;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): Object;
     parse(arg0: StringReader): Object;
     // private readCoordinate(arg0: StringReader, arg1: boolean): boolean;
 }

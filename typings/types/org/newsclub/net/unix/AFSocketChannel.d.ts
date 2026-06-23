@@ -30,7 +30,7 @@ export abstract class AFSocketChannel<A extends AFSocketAddress> extends SocketC
     getFileDescriptor(): FileDescriptor;
     getLocalAddress(): A;
     getLocalSocketAddress(): A;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     getRemoteAddress(): A;
     getRemoteSocketAddress(): A;
     implCloseSelectableChannel(): void;
@@ -41,7 +41,7 @@ export abstract class AFSocketChannel<A extends AFSocketAddress> extends SocketC
     read(arg0: ByteBuffer[]): number;
     read(arg0: ByteBuffer[], arg1: number, arg2: number): number;
     setAncillaryReceiveBufferSize(arg0: number): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): AFSocketChannel<A>;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): AFSocketChannel<A>;
     setShutdownOnClose(arg0: boolean): void;
     shutdownInput(): AFSocketChannel<A>;
     shutdownOutput(): AFSocketChannel<A>;

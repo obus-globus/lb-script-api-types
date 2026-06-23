@@ -13,7 +13,7 @@ export class DefaultOioServerSocketChannelConfig extends DefaultServerSocketChan
     constructor(arg0: ServerSocketChannel, arg1: ServerSocket)
     constructor(arg0: OioServerSocketChannel, arg1: ServerSocket)
     autoReadCleared(): void;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getSoTimeout(): number;
@@ -24,7 +24,7 @@ export class DefaultOioServerSocketChannelConfig extends DefaultServerSocketChan
     setConnectTimeoutMillis(arg0: number): OioServerSocketChannelConfig;
     setMaxMessagesPerRead(arg0: number): OioServerSocketChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): OioServerSocketChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): OioServerSocketChannelConfig;
     setReceiveBufferSize(arg0: number): OioServerSocketChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): OioServerSocketChannelConfig;

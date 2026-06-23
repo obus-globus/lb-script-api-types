@@ -43,8 +43,8 @@ export class ScriptSetting extends Object {
     intRange(option: { name: string; default: [number, number]; range: [number, number]; suffix?: string }): RangedValue<{ start: number; endInclusive: number; step: number }>;
     key(option: { name: string; default: string }): Value<InputConstants$Key>;
     multiChoose<C extends readonly string[]>(option: { name: string; choices: C; default?: ReadonlyArray<C[number]>; canBeNone?: boolean }): MultiChoiceListValue<Tagged>;
-    // private rangedValue<T extends Object | number | string | boolean>(name: string, default_: T, range: ClosedRange<any>, suffix: string, valueType: ValueType): RangedValue<T>;
+    // private rangedValue<T extends unknown>(name: string, default_: T, range: ClosedRange<any>, suffix: string, valueType: ValueType): RangedValue<T>;
     text(option: { name: string; default: string }): Value<string>;
     textArray(option: { name: string; default: string[] }): Value<string[]>;
-    // private value<T extends Object | number | string | boolean>(name: string, default_: T, valueType: ValueType): Value<T>;
+    // private value<T extends unknown>(name: string, default_: T, valueType: ValueType): Value<T>;
 }

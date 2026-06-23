@@ -7,22 +7,22 @@ import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export interface CompletionStage<T extends Object | number | string | boolean> extends Object {
+export interface CompletionStage<T extends unknown> extends Object {
     acceptEither(arg0: CompletionStage<T>, arg1: (param0: T) => void): CompletionStage<void>;
     acceptEitherAsync(arg0: CompletionStage<T>, arg1: (param0: T) => void): CompletionStage<void>;
     acceptEitherAsync(arg0: CompletionStage<T>, arg1: (param0: T) => void, arg2: Executor): CompletionStage<void>;
-    applyToEither<U extends Object | number | string | boolean>(arg0: CompletionStage<T>, arg1: (param0: T) => U): CompletionStage<U>;
-    applyToEitherAsync<U extends Object | number | string | boolean>(arg0: CompletionStage<T>, arg1: (param0: T) => U): CompletionStage<U>;
-    applyToEitherAsync<U extends Object | number | string | boolean>(arg0: CompletionStage<T>, arg1: (param0: T) => U, arg2: Executor): CompletionStage<U>;
+    applyToEither<U extends unknown>(arg0: CompletionStage<T>, arg1: (param0: T) => U): CompletionStage<U>;
+    applyToEitherAsync<U extends unknown>(arg0: CompletionStage<T>, arg1: (param0: T) => U): CompletionStage<U>;
+    applyToEitherAsync<U extends unknown>(arg0: CompletionStage<T>, arg1: (param0: T) => U, arg2: Executor): CompletionStage<U>;
     exceptionally(arg0: (param0: Throwable) => T): CompletionStage<T>;
     exceptionallyAsync(arg0: (param0: Throwable) => T): CompletionStage<T>;
     exceptionallyAsync(arg0: (param0: Throwable) => T, arg1: Executor): CompletionStage<T>;
     exceptionallyCompose(arg0: (param0: Throwable) => CompletionStage<T>): CompletionStage<T>;
     exceptionallyComposeAsync(arg0: (param0: Throwable) => CompletionStage<T>): CompletionStage<T>;
     exceptionallyComposeAsync(arg0: (param0: Throwable) => CompletionStage<T>, arg1: Executor): CompletionStage<T>;
-    handle<U extends Object | number | string | boolean>(arg0: (param0: T, param1: Throwable) => U): CompletionStage<U>;
-    handleAsync<U extends Object | number | string | boolean>(arg0: (param0: T, param1: Throwable) => U): CompletionStage<U>;
-    handleAsync<U extends Object | number | string | boolean>(arg0: (param0: T, param1: Throwable) => U, arg1: Executor): CompletionStage<U>;
+    handle<U extends unknown>(arg0: (param0: T, param1: Throwable) => U): CompletionStage<U>;
+    handleAsync<U extends unknown>(arg0: (param0: T, param1: Throwable) => U): CompletionStage<U>;
+    handleAsync<U extends unknown>(arg0: (param0: T, param1: Throwable) => U, arg1: Executor): CompletionStage<U>;
     runAfterBoth(arg0: CompletionStage<Object>, arg1: () => void): CompletionStage<void>;
     runAfterBothAsync(arg0: CompletionStage<Object>, arg1: () => void): CompletionStage<void>;
     runAfterBothAsync(arg0: CompletionStage<Object>, arg1: () => void, arg2: Executor): CompletionStage<void>;
@@ -32,18 +32,18 @@ export interface CompletionStage<T extends Object | number | string | boolean> e
     thenAccept(arg0: (param0: T) => void): CompletionStage<void>;
     thenAcceptAsync(arg0: (param0: T) => void): CompletionStage<void>;
     thenAcceptAsync(arg0: (param0: T) => void, arg1: Executor): CompletionStage<void>;
-    thenAcceptBoth<U extends Object | number | string | boolean>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => void): CompletionStage<void>;
-    thenAcceptBothAsync<U extends Object | number | string | boolean>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => void): CompletionStage<void>;
-    thenAcceptBothAsync<U extends Object | number | string | boolean>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => void, arg2: Executor): CompletionStage<void>;
-    thenApply<U extends Object | number | string | boolean>(arg0: (param0: T) => U): CompletionStage<U>;
-    thenApplyAsync<U extends Object | number | string | boolean>(arg0: (param0: T) => U): CompletionStage<U>;
-    thenApplyAsync<U extends Object | number | string | boolean>(arg0: (param0: T) => U, arg1: Executor): CompletionStage<U>;
-    thenCombine<V extends Object | number | string | boolean, U extends Object | number | string | boolean>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => V): CompletionStage<V>;
-    thenCombineAsync<V extends Object | number | string | boolean, U extends Object | number | string | boolean>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => V): CompletionStage<V>;
-    thenCombineAsync<V extends Object | number | string | boolean, U extends Object | number | string | boolean>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => V, arg2: Executor): CompletionStage<V>;
-    thenCompose<U extends Object | number | string | boolean>(arg0: (param0: T) => CompletionStage<U>): CompletionStage<U>;
-    thenComposeAsync<U extends Object | number | string | boolean>(arg0: (param0: T) => CompletionStage<U>): CompletionStage<U>;
-    thenComposeAsync<U extends Object | number | string | boolean>(arg0: (param0: T) => CompletionStage<U>, arg1: Executor): CompletionStage<U>;
+    thenAcceptBoth<U extends unknown>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => void): CompletionStage<void>;
+    thenAcceptBothAsync<U extends unknown>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => void): CompletionStage<void>;
+    thenAcceptBothAsync<U extends unknown>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => void, arg2: Executor): CompletionStage<void>;
+    thenApply<U extends unknown>(arg0: (param0: T) => U): CompletionStage<U>;
+    thenApplyAsync<U extends unknown>(arg0: (param0: T) => U): CompletionStage<U>;
+    thenApplyAsync<U extends unknown>(arg0: (param0: T) => U, arg1: Executor): CompletionStage<U>;
+    thenCombine<V extends unknown, U extends unknown>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => V): CompletionStage<V>;
+    thenCombineAsync<V extends unknown, U extends unknown>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => V): CompletionStage<V>;
+    thenCombineAsync<V extends unknown, U extends unknown>(arg0: CompletionStage<U>, arg1: (param0: T, param1: U) => V, arg2: Executor): CompletionStage<V>;
+    thenCompose<U extends unknown>(arg0: (param0: T) => CompletionStage<U>): CompletionStage<U>;
+    thenComposeAsync<U extends unknown>(arg0: (param0: T) => CompletionStage<U>): CompletionStage<U>;
+    thenComposeAsync<U extends unknown>(arg0: (param0: T) => CompletionStage<U>, arg1: Executor): CompletionStage<U>;
     thenRun(arg0: () => void): CompletionStage<void>;
     thenRunAsync(arg0: () => void): CompletionStage<void>;
     thenRunAsync(arg0: () => void, arg1: Executor): CompletionStage<void>;

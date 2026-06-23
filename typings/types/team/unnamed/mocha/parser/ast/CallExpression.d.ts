@@ -11,5 +11,5 @@ export class CallExpression extends Object implements Expression {
     function(arg0: Expression): void;
     hashCode(): number;
     toString(): string;
-    visit<R extends Object | number | string | boolean>(arg0: ExpressionVisitor<R>): R;
+    visit<R extends unknown>(arg0: ExpressionVisitor<R>): R;
 }

@@ -21,7 +21,7 @@ export class LootTable$Builder extends Object implements FabricLootTableBuilder,
     // private randomSequence: Optional<Identifier>;
     apply(arg0: LootItemFunction[]): LootTable$Builder;
     apply(arg0: LootItemFunction): LootTable$Builder;
-    apply<E extends Object | number | string | boolean>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootTable$Builder;
+    apply<E extends unknown>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootTable$Builder;
     apply(arg0: (Object | null)[]): LootTable$Builder;
     apply(function_: LootItemFunction$Builder): LootTable$Builder;
     build(): LootTable;

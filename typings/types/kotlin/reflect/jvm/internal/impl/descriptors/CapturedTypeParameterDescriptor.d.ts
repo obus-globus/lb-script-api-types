@@ -15,7 +15,7 @@ export class CapturedTypeParameterDescriptor extends Object implements TypeParam
     // private declarationDescriptor: DeclarationDescriptor;
     // private declaredTypeParametersCount: number;
     // private originalDescriptor: TypeParameterDescriptor;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getAnnotations(): AnnotationDescriptor[];
     getContainingDeclaration(): DeclarationDescriptor;
     getDefaultType(): SimpleType;

@@ -4,7 +4,7 @@ import type { FieldMapCodec$Builder } from '../../../../../../../../com/viaversi
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-export abstract class FieldMapCodec$Builder$OptionalStage<T extends Object | number | string | boolean> extends FieldMapCodec$Builder<T> {
+export abstract class FieldMapCodec$Builder$OptionalStage<T extends unknown> extends FieldMapCodec$Builder<T> {
     constructor(arg0: Codec<T>, arg1: string)
     defaulted(arg0: T): MapCodec<T>;
     defaulted(arg0: (param0: T) => boolean, arg1: () => T): MapCodec<T>;

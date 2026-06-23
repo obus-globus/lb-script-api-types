@@ -44,7 +44,7 @@ export class Socket extends Object implements Closeable {
     getLocalPort(): number;
     getLocalSocketAddress(): SocketAddress;
     getOOBInline(): boolean;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     getOutputStream(): OutputStream;
     getPort(): number;
     getReceiveBufferSize(): number;
@@ -67,7 +67,7 @@ export class Socket extends Object implements Closeable {
     setImpl(arg0: SocketImpl): void;
     setKeepAlive(arg0: boolean): void;
     setOOBInline(arg0: boolean): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): Socket;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): Socket;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): void;
     setReceiveBufferSize(arg0: number): void;
     setReuseAddress(arg0: boolean): void;

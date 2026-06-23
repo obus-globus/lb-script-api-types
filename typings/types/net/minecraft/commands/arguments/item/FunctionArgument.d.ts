@@ -18,7 +18,7 @@ export class FunctionArgument extends Object implements ArgumentType<FunctionArg
     static getFunctions(paramcontext: CommandContext<CommandSourceStack>, paramname: string): CommandFunction<CommandSourceStack>[];
     constructor()
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): FunctionArgument$Result;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): FunctionArgument$Result;
     parse(reader: StringReader): FunctionArgument$Result;
 }

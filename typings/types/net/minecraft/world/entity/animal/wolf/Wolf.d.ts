@@ -169,7 +169,7 @@ export class Wolf extends TamableAnimal implements NeutralMob {
     addAdditionalSaveData(output: ValueOutput): void;
     addPersistentAngerSaveData(output: ValueOutput): void;
     aiStep(): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     applyTamingSideEffects(): void;
     // private canArmorAbsorb(source: DamageSource): boolean;
@@ -181,7 +181,7 @@ export class Wolf extends TamableAnimal implements NeutralMob {
     die(source: DamageSource): void;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
     forgetCurrentTargetAndRefreshUniversalAnger(): void;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): Wolf;
     getCollarColor(): DyeColor;

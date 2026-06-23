@@ -7,7 +7,7 @@ import type { ForkJoinPool } from '../../../java/util/concurrent/ForkJoinPool.d.
 import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.ts'
 import type { BiFunction } from '../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class CompletableFuture$BiApply<T extends Object | number | string | boolean, U extends Object | number | string | boolean, V extends Object | number | string | boolean> extends CompletableFuture$BiCompletion<T, U, V> {
+export class CompletableFuture$BiApply<T extends unknown, U extends unknown, V extends unknown> extends CompletableFuture$BiCompletion<T, U, V> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

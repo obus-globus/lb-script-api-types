@@ -4,7 +4,7 @@ import type { ObjectOutputStream } from '../../../../../java/io/ObjectOutputStre
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectArrayPriorityQueue<K extends Object | number | string | boolean> extends Object implements PriorityQueue<K>, Serializable {
+export class ObjectArrayPriorityQueue<K extends unknown> extends Object implements PriorityQueue<K>, Serializable {
     constructor()
     constructor(arg0: (param0: Object) => boolean)
     constructor(arg0: K[])

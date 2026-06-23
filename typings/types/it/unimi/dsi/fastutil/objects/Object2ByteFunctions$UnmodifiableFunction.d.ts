@@ -2,7 +2,7 @@ import type { AbstractObject2ByteFunction } from '../../../../../it/unimi/dsi/fa
 import type { Object2ByteFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ByteFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Object2ByteFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractObject2ByteFunction<K> implements Serializable {
+export class Object2ByteFunctions$UnmodifiableFunction<K extends unknown> extends AbstractObject2ByteFunction<K> implements Serializable {
     constructor(arg0: (param0: Object) => number)
     // private function: (param0: Object) => number;
     clear(): void;

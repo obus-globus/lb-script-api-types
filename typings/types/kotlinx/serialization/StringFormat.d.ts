@@ -3,6 +3,6 @@ import type { DeserializationStrategy } from '../../kotlinx/serialization/Deseri
 import type { SerialFormat } from '../../kotlinx/serialization/SerialFormat.d.ts'
 import type { SerializationStrategy } from '../../kotlinx/serialization/SerializationStrategy.d.ts'
 export interface StringFormat extends Object, SerialFormat{
-    decodeFromString<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, string: string): T;
-    encodeToString<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): string;
+    decodeFromString<T extends unknown>(deserializer: DeserializationStrategy<T>, string: string): T;
+    encodeToString<T extends unknown>(serializer: SerializationStrategy<T>, value: T): string;
 }

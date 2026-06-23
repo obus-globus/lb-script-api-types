@@ -10,7 +10,7 @@ export class EntrypointStorage$OldEntry extends Object implements EntrypointStor
     // private value: string;
     getDefinition(): string;
     getModContainer(): ModContainerImpl;
-    getOrCreate<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    getOrCreate<T extends unknown>(arg0: Class<T>): T;
     isOptional(): boolean;
     toString(): string;
 }

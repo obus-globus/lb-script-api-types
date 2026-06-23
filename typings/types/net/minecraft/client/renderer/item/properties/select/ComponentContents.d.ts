@@ -8,7 +8,7 @@ import type { DataComponentType } from '../../../../../../../net/minecraft/core/
 import type { LivingEntity } from '../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { ItemDisplayContext } from '../../../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
-export class ComponentContents<T extends Object | number | string | boolean> extends Record implements SelectItemModelProperty<T> {
+export class ComponentContents<T extends unknown> extends Record implements SelectItemModelProperty<T> {
     static castType(): SelectItemModelProperty$Type<ComponentContents<Object>, Object>;
     constructor(componentType: DataComponentType<T>)
     // private componentType: DataComponentType<T>;

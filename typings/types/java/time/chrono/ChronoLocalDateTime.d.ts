@@ -34,7 +34,7 @@ export interface ChronoLocalDateTime<D extends ChronoLocalDate> extends Temporal
     plus(arg0: TemporalAmount): ChronoLocalDateTime<D>;
     plus(arg0: number, arg1: TemporalUnit): ChronoLocalDateTime<D>;
     plus(arg0: TemporalAmount): Temporal;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     toEpochSecond(arg0: ZoneOffset): number;
     toInstant(arg0: ZoneOffset): Instant;
     toLocalDate(): D;

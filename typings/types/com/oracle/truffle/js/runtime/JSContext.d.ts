@@ -410,7 +410,7 @@ export class JSContext extends Object {
     setPromiseRejectionTracker(agent: JSAgent, tracker: PromiseRejectionTracker): void;
     signalAsyncWaiterRecordUsage(): void;
     // private throwTypeErrorFunction(restrictedProperty: boolean): JSFunctionData;
-    trackAllocation<T extends Object | number | string | boolean>(object: T): T;
+    trackAllocation<T extends unknown>(object: T): T;
     unregisteredSymbolCreated(symbol: Symbol): void;
     updateStableOptions(contextOptions: JSContextOptions, kind: StableContextOptionValue$UpdateKind): void;
     usePromiseResolve(): boolean;

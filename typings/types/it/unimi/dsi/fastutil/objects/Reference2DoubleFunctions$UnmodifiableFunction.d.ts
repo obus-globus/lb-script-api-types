@@ -2,7 +2,7 @@ import type { AbstractReference2DoubleFunction } from '../../../../../it/unimi/d
 import type { Reference2DoubleFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2DoubleFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2DoubleFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractReference2DoubleFunction<K> implements Serializable {
+export class Reference2DoubleFunctions$UnmodifiableFunction<K extends unknown> extends AbstractReference2DoubleFunction<K> implements Serializable {
     constructor(arg0: (param0: Object) => number)
     // private function: (param0: Object) => number;
     clear(): void;

@@ -5,7 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BackgroundInitializer } from '../../../../../org/apache/commons/lang3/concurrent/BackgroundInitializer.d.ts'
 import type { BackgroundInitializer$Builder } from '../../../../../org/apache/commons/lang3/concurrent/BackgroundInitializer$Builder.d.ts'
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
-export class CallableBackgroundInitializer<T extends Object | number | string | boolean> extends BackgroundInitializer<T> {
+export class CallableBackgroundInitializer<T extends unknown> extends BackgroundInitializer<T> {
     static NUL: () => Object | null;
     static builder(): BackgroundInitializer$Builder<BackgroundInitializer<Object>, Object>;
     constructor(arg0: () => T)

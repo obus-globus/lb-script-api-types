@@ -10,7 +10,7 @@ export class RuleContext extends Object implements RuleNode {
     constructor(arg0: RuleContext, arg1: number)
     invokingState: number;
     parent: RuleContext;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     depth(): number;
     getAltNumber(): number;
     getChild(arg0: number): ParseTree;

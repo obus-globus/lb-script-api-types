@@ -7,7 +7,7 @@ import type { SavedTick } from '../../../../net/minecraft/world/ticks/SavedTick.
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 import type { SerializableTickContainer } from '../../../../net/minecraft/world/ticks/SerializableTickContainer.d.ts'
 import type { TickContainerAccess } from '../../../../net/minecraft/world/ticks/TickContainerAccess.d.ts'
-export class LevelChunkTicks<T extends Object | number | string | boolean> extends Object implements SerializableTickContainer<T>, TickContainerAccess<T> {
+export class LevelChunkTicks<T extends unknown> extends Object implements SerializableTickContainer<T>, TickContainerAccess<T> {
     constructor()
     constructor(pendingTicks: SavedTick<T>[])
     // private allTicks: (Object | null)[];

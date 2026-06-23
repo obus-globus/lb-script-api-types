@@ -41,10 +41,10 @@ export class Request$Builder extends Object {
     put(body: RequestBody): Request$Builder;
     query(body: RequestBody): Request$Builder;
     removeHeader(name: string): Request$Builder;
-    tag<T extends Object | number | string | boolean>(tag: T | null): Request$Builder;
-    tag<T extends Object | number | string | boolean>(type: Class<T>, tag: T | null): Request$Builder;
+    tag<T extends unknown>(tag: T | null): Request$Builder;
+    tag<T extends unknown>(type: Class<T>, tag: T | null): Request$Builder;
     tag(tag: Object | null): Request$Builder;
-    tag<T extends Object | number | string | boolean>(type: KClass<T>, tag: T | null): Request$Builder;
+    tag<T extends unknown>(type: KClass<T>, tag: T | null): Request$Builder;
     url(url: URL): Request$Builder;
     url(url: string): Request$Builder;
     url(url: HttpUrl): Request$Builder;

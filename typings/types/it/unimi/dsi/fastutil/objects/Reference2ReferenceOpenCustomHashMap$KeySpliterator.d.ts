@@ -13,8 +13,8 @@ export class Reference2ReferenceOpenCustomHashMap$KeySpliterator extends Referen
     static SUBSIZED: number;
     constructor(null_: Reference2ReferenceOpenCustomHashMap$KeySpliterator)
     constructor(null_: Reference2ReferenceOpenCustomHashMap$KeySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: K) => void, arg1: number): void;
+    acceptOnIndex<K extends unknown>(arg0: (param0: K) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Reference2ReferenceOpenCustomHashMap$KeySpliterator;
+    makeForSplit<K extends unknown, V extends unknown>(arg0: number, arg1: number, arg2: boolean): Reference2ReferenceOpenCustomHashMap$KeySpliterator;
     skip(arg0: number): number;
 }

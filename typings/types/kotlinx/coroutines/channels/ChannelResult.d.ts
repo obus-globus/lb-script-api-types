@@ -1,7 +1,7 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { ChannelResult$Companion } from '../../../kotlinx/coroutines/channels/ChannelResult$Companion.d.ts'
-export class ChannelResult<T extends Object | number | string | boolean> extends Object {
+export class ChannelResult<T extends unknown> extends Object {
     static Companion: ChannelResult$Companion;
 // (invalid TS: name contains '-')     static box-impl(paramarg0: Object): ChannelResult<Object>;
 // (invalid TS: name contains '-')     static constructor-impl(paramarg0: Object): Object;

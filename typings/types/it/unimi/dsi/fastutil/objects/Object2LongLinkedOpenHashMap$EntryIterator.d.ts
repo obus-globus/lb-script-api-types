@@ -8,10 +8,10 @@ export class Object2LongLinkedOpenHashMap$EntryIterator extends Object2LongLinke
     constructor(null_: Object2LongLinkedOpenHashMap$EntryIterator)
     constructor(null_: Object2LongLinkedOpenHashMap$EntryIterator)
     // private entry: Object2LongLinkedOpenHashMap$MapEntry;
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Object2LongMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: Object2LongMap$Entry<K>): void;
-    next<K extends Object | number | string | boolean>(): Object2LongLinkedOpenHashMap$MapEntry;
-    previous<K extends Object | number | string | boolean>(): Object2LongLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends unknown>(arg0: (param0: Object2LongMap$Entry<K>) => void, arg1: number): void;
+    add<K extends unknown>(arg0: Object2LongMap$Entry<K>): void;
+    next<K extends unknown>(): Object2LongLinkedOpenHashMap$MapEntry;
+    previous<K extends unknown>(): Object2LongLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: Object2LongMap$Entry<K>): void;
+    set<K extends unknown>(arg0: Object2LongMap$Entry<K>): void;
 }

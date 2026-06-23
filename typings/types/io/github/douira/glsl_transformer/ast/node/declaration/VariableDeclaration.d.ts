@@ -18,7 +18,7 @@ export class VariableDeclaration extends Declaration {
     typeQualifier: TypeQualifier;
     clone(): VariableDeclaration;
     cloneInto(arg0: Root): VariableDeclaration;
-    declarationAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    declarationAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getDeclarationType(): Declaration$DeclarationType;

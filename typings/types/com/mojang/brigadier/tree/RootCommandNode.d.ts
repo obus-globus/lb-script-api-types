@@ -7,7 +7,7 @@ import type { SuggestionsBuilder } from '../../../../com/mojang/brigadier/sugges
 import type { CommandNode } from '../../../../com/mojang/brigadier/tree/CommandNode.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class RootCommandNode<S extends Object | number | string | boolean> extends CommandNode<S> {
+export class RootCommandNode<S extends unknown> extends CommandNode<S> {
     constructor()
     createBuilder(): ArgumentBuilder<S, any>;
     equals(arg0: Object | null): boolean;

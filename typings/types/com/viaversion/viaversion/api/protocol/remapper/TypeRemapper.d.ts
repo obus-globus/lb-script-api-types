@@ -4,7 +4,7 @@ import type { ValueWriter } from '../../../../../../com/viaversion/viaversion/ap
 import type { Type } from '../../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class TypeRemapper<T extends Object | number | string | boolean> extends Record implements ValueReader<T>, ValueWriter<T> {
+export class TypeRemapper<T extends unknown> extends Record implements ValueReader<T>, ValueWriter<T> {
     constructor(type: Type<T>)
     // private type: Type<T>;
     equals(arg0: Object | null): boolean;

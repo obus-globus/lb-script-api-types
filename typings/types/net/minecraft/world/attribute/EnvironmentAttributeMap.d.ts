@@ -11,10 +11,10 @@ export class EnvironmentAttributeMap extends Object {
     static builder(): EnvironmentAttributeMap$Builder;
     private constructor(entries: Map<EnvironmentAttribute<Object>, EnvironmentAttributeMap$Entry<Object, Object>>)
     // private entries: Map<EnvironmentAttribute<Object>, EnvironmentAttributeMap$Entry<Object, Object>>;
-    applyModifier<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, baseValue: Value): Value;
+    applyModifier<Value extends unknown>(attribute: EnvironmentAttribute<Value>, baseValue: Value): Value;
     contains(attribute: EnvironmentAttribute<Object>): boolean;
     equals(obj: Object | null): boolean;
-    get<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>): EnvironmentAttributeMap$Entry<Value, Object>;
+    get<Value extends unknown>(attribute: EnvironmentAttribute<Value>): EnvironmentAttributeMap$Entry<Value, Object>;
     hashCode(): number;
     keySet(): EnvironmentAttribute<Object>[];
     toString(): string;

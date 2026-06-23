@@ -9,7 +9,7 @@ import type { MutableStateFlow } from '../../../kotlinx/coroutines/flow/MutableS
 import type { StateFlowSlot } from '../../../kotlinx/coroutines/flow/StateFlowSlot.d.ts'
 import type { AbstractSharedFlow } from '../../../kotlinx/coroutines/flow/internal/AbstractSharedFlow.d.ts'
 import type { FusibleFlow } from '../../../kotlinx/coroutines/flow/internal/FusibleFlow.d.ts'
-export class StateFlowImpl<T extends Object | number | string | boolean> extends AbstractSharedFlow<StateFlowSlot> implements CancellableFlow<T>, MutableStateFlow<T>, FusibleFlow<T> {
+export class StateFlowImpl<T extends unknown> extends AbstractSharedFlow<StateFlowSlot> implements CancellableFlow<T>, MutableStateFlow<T>, FusibleFlow<T> {
     constructor(initialState: Object)
     collect(collector: FlowCollector<T>): void;
     compareAndSet(expect: T, update: T): boolean;

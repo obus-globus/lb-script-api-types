@@ -26,7 +26,7 @@ export class Timeline extends Object {
     // private tracks: Map<EnvironmentAttribute<Object>, AttributeTrack<Object, Object>>;
     attributes(): EnvironmentAttribute<Object>[];
     clock(): Holder<WorldClock>;
-    createTrackSampler<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, clockManager: ClockManager): AttributeTrackSampler<Value, Object>;
+    createTrackSampler<Value extends unknown>(attribute: EnvironmentAttribute<Value>, clockManager: ClockManager): AttributeTrackSampler<Value, Object>;
     getCurrentTicks(clockManager: ClockManager): number;
     getPeriodCount(clockManager: ClockManager): number;
     getTotalTicks(clockManager: ClockManager): number;

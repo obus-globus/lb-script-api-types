@@ -6,11 +6,11 @@ import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AbstractCoroutine } from '../../../kotlinx/coroutines/AbstractCoroutine.d.ts'
 import type { Job$Key } from '../../../kotlinx/coroutines/Job$Key.d.ts'
-export class CompletableFutureCoroutine<T extends Object | number | string | boolean> extends AbstractCoroutine<T> implements BiFunction<T, Throwable, void> {
+export class CompletableFutureCoroutine<T extends unknown> extends AbstractCoroutine<T> implements BiFunction<T, Throwable, void> {
     static Key: Job$Key;
     constructor(context: CoroutineContext, future: CompletableFuture<T>)
     // private future: CompletableFuture<T>;
-    andThen<V extends Object | number | string | boolean>(arg0: (param0: void) => V): (param0: T | null, param1: Throwable | null) => V;
+    andThen<V extends unknown>(arg0: (param0: void) => V): (param0: T | null, param1: Throwable | null) => V;
     apply(value: T | null, exception: Throwable | null): void;
     protected onCancelled(cause: Throwable, handled: boolean): void;
     protected onCompleted(value: T): void;

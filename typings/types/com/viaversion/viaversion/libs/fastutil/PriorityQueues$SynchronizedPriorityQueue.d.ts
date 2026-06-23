@@ -3,7 +3,7 @@ import type { ObjectOutputStream } from '../../../../../java/io/ObjectOutputStre
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class PriorityQueues$SynchronizedPriorityQueue<K extends Object | number | string | boolean> extends Object implements PriorityQueue<K>, Serializable {
+export class PriorityQueues$SynchronizedPriorityQueue<K extends unknown> extends Object implements PriorityQueue<K>, Serializable {
     static serialVersionUID: number;
     constructor(arg0: PriorityQueue<K>)
     constructor(arg0: PriorityQueue<K>, arg1: Object)

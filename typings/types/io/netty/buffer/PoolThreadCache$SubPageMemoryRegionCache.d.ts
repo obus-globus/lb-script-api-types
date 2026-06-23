@@ -4,7 +4,7 @@ import type { PoolThreadCache$MemoryRegionCache } from '../../../io/netty/buffer
 import type { PooledByteBuf } from '../../../io/netty/buffer/PooledByteBuf.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class PoolThreadCache$SubPageMemoryRegionCache<T extends Object | number | string | boolean> extends PoolThreadCache$MemoryRegionCache<T> {
+export class PoolThreadCache$SubPageMemoryRegionCache<T extends unknown> extends PoolThreadCache$MemoryRegionCache<T> {
     constructor(arg0: number)
     initBuf(arg0: PoolChunk<T>, arg1: ByteBuffer, arg2: number, arg3: PooledByteBuf<T>, arg4: number, arg5: PoolThreadCache): void;
 }

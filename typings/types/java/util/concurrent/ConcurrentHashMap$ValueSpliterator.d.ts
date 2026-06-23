@@ -4,7 +4,7 @@ import type { ConcurrentHashMap$Node } from '../../../java/util/concurrent/Concu
 import type { ConcurrentHashMap$Traverser } from '../../../java/util/concurrent/ConcurrentHashMap$Traverser.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ConcurrentHashMap$ValueSpliterator<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ConcurrentHashMap$Traverser<K, V> implements Spliterator<V> {
+export class ConcurrentHashMap$ValueSpliterator<K extends unknown, V extends unknown> extends ConcurrentHashMap$Traverser<K, V> implements Spliterator<V> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

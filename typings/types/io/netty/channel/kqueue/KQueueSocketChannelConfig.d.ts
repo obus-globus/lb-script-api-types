@@ -12,7 +12,7 @@ export class KQueueSocketChannelConfig extends KQueueChannelConfig implements So
     readonly allowHalfClosure: boolean;
     // private tcpFastopen: boolean;
     // private calculateMaxBytesPerGatheringWrite(): void;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
@@ -34,7 +34,7 @@ export class KQueueSocketChannelConfig extends KQueueChannelConfig implements So
     setKeepAlive(arg0: boolean): KQueueSocketChannelConfig;
     setMaxMessagesPerRead(arg0: number): KQueueSocketChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): KQueueSocketChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): KQueueSocketChannelConfig;
     setRcvAllocTransportProvidesGuess(arg0: boolean): KQueueSocketChannelConfig;
     setReceiveBufferSize(arg0: number): KQueueSocketChannelConfig;

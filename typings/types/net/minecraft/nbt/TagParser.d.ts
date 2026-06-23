@@ -5,7 +5,7 @@ import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CompoundTag } from '../../../net/minecraft/nbt/CompoundTag.d.ts'
 import type { Grammar } from '../../../net/minecraft/util/parsing/packrat/commands/Grammar.d.ts'
-export class TagParser<T extends Object | number | string | boolean> extends Object {
+export class TagParser<T extends unknown> extends Object {
     static ELEMENT_SEPARATOR: string;
     static ERROR_EXPECTED_COMPOUND: SimpleCommandExceptionType;
     static ERROR_TRAILING_DATA: SimpleCommandExceptionType;

@@ -7,7 +7,7 @@ import type { HolderOwner } from '../../../net/minecraft/core/HolderOwner.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 import type { RandomSource } from '../../../net/minecraft/util/RandomSource.d.ts'
-export abstract class RegistrySetBuilder$EmptyTagLookup<T extends Object | number | string | boolean> extends Object implements HolderGetter<T> {
+export abstract class RegistrySetBuilder$EmptyTagLookup<T extends unknown> extends Object implements HolderGetter<T> {
     constructor(owner: HolderOwner<T>)
     // private owner: HolderOwner<T>;
     get(id: TagKey<T>): Optional<T[]>;

@@ -3,7 +3,7 @@ import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { DebugSubscription$Event } from '../../../../net/minecraft/util/debug/DebugSubscription$Event.d.ts'
 import type { DebugSubscription$Update } from '../../../../net/minecraft/util/debug/DebugSubscription$Update.d.ts'
-export class DebugSubscription<T extends Object | number | string | boolean> extends Object {
+export class DebugSubscription<T extends unknown> extends Object {
     static DOES_NOT_EXPIRE: number;
     constructor(valueStreamCodec: StreamCodec<RegistryFriendlyByteBuf, T>)
     constructor(valueStreamCodec: StreamCodec<RegistryFriendlyByteBuf, T>, expireAfterTicks: number)

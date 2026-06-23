@@ -24,5 +24,5 @@ export class WhileLoopStatement extends ConditionLoopStatement {
     getIterationConditionInitializer(): IterationConditionInitializer;
     getStatementType(): Statement$StatementType;
     setIterationConditionInitializer(arg0: IterationConditionInitializer): void;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

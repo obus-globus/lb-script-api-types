@@ -46,6 +46,6 @@ export class AsyncLoadingText extends Record implements DelegatedComponent {
     toFlatList(arg0: Style): Component[];
     toString(): string;
     tryCollapseToString(): string;
-    visit<T extends Object | number | string | boolean>(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
-    visit<T extends Object | number | string | boolean>(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
+    visit<T extends unknown>(arg0: FormattedText$ContentConsumer<T>): Optional<T>;
+    visit<T extends unknown>(arg0: FormattedText$StyledContentConsumer<T>, arg1: Style): Optional<T>;
 }

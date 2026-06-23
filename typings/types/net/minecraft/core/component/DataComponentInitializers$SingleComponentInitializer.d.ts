@@ -4,7 +4,7 @@ import type { DataComponentInitializers$Initializer } from '../../../../net/mine
 import type { DataComponentMap$Builder } from '../../../../net/minecraft/core/component/DataComponentMap$Builder.d.ts'
 import type { DataComponentType } from '../../../../net/minecraft/core/component/DataComponentType.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
-export interface DataComponentInitializers$SingleComponentInitializer<C extends Object | number | string | boolean> extends Object {
-    asInitializer<T extends Object | number | string | boolean>(type: DataComponentType<C>): (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: ResourceKey<T>) => void;
+export interface DataComponentInitializers$SingleComponentInitializer<C extends unknown> extends Object {
+    asInitializer<T extends unknown>(type: DataComponentType<C>): (param0: DataComponentMap$Builder, param1: HolderLookup$Provider, param2: ResourceKey<T>) => void;
     create(context: HolderLookup$Provider): C;
 }

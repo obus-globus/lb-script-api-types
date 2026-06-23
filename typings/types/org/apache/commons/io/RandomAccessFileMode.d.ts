@@ -21,7 +21,7 @@ export class RandomAccessFileMode extends Enum<RandomAccessFileMode> {
     // private level: number;
     readonly mode: string;
     accept(arg0: Path[], arg1: (param0: RandomAccessFile) => void): void;
-    apply<T extends Object | number | string | boolean>(arg0: Path[], arg1: (param0: RandomAccessFile) => T): T;
+    apply<T extends unknown>(arg0: Path[], arg1: (param0: RandomAccessFile) => T): T;
     create(arg0: File): RandomAccessFile;
     create(arg0: Path[]): RandomAccessFile;
     create(arg0: string): RandomAccessFile;

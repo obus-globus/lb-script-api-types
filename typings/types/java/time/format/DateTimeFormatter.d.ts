@@ -62,7 +62,7 @@ export class DateTimeFormatter extends Object {
     localizedBy(arg0: Locale): DateTimeFormatter;
     parse(arg0: CharSequence): TemporalAccessor;
     parse(arg0: CharSequence, arg1: ParsePosition): TemporalAccessor;
-    parse<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: (param0: TemporalAccessor) => T): T;
+    parse<T extends unknown>(arg0: CharSequence, arg1: (param0: TemporalAccessor) => T): T;
     parseBest(arg0: CharSequence, arg1: (param0: TemporalAccessor) => Object | null[]): TemporalAccessor;
     // private parseResolved0(arg0: CharSequence, arg1: ParsePosition): TemporalAccessor;
     parseUnresolved(arg0: CharSequence, arg1: ParsePosition): TemporalAccessor;

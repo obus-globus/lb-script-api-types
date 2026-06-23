@@ -7,7 +7,7 @@ import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
 import type { Delayed } from '../../../../java/util/concurrent/Delayed.d.ts'
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ScheduledFutureTask<V extends Object | number | string | boolean> extends PromiseTask<V> implements ScheduledFuture<V>, PriorityQueueNode {
+export class ScheduledFutureTask<V extends unknown> extends PromiseTask<V> implements ScheduledFuture<V>, PriorityQueueNode {
     static INDEX_NOT_IN_QUEUE: number;
     static PROPERTY_MAX_LISTENER_STACK_DEPTH: string;
     constructor(arg0: (Object | null)[], arg1: () => void, arg2: number)

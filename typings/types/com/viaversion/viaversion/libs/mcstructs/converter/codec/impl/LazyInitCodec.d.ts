@@ -16,7 +16,7 @@ import type { BiFunction } from '../../../../../../../../java/util/function/BiFu
 import type { Function } from '../../../../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-export class LazyInitCodec<T extends Object | number | string | boolean> extends Object implements Codec<T> {
+export class LazyInitCodec<T extends unknown> extends Object implements Codec<T> {
     static BOOLEAN: Codec<boolean>;
     static BYTE: Codec<number>;
     static BYTE_ARRAY: Codec<number[]>;
@@ -61,25 +61,25 @@ export class LazyInitCodec<T extends Object | number | string | boolean> extends
     // private codecSupplier: () => Codec<T>;
     // private initialized: boolean;
     compactListOf(): Codec<T[]>;
-    converterFlatMap<N extends Object | number | string | boolean>(arg0: (param0: DataConverter<Object>, param1: N) => Result<T>, arg1: (param0: DataConverter<Object>, param1: T) => Result<N>): Codec<N>;
+    converterFlatMap<N extends unknown>(arg0: (param0: DataConverter<Object>, param1: N) => Result<T>, arg1: (param0: DataConverter<Object>, param1: T) => Result<N>): Codec<N>;
     converterVerified(arg0: (param0: DataConverter<Object>, param1: T) => Result<void>): Codec<T>;
-    deserialize<S extends Object | number | string | boolean>(arg0: DataConverter<S>, arg1: S): Result<T>;
-    flatMap<N extends Object | number | string | boolean>(arg0: (param0: N) => Result<T>, arg1: (param0: T) => Result<N>): Codec<N>;
+    deserialize<S extends unknown>(arg0: DataConverter<S>, arg1: S): Result<T>;
+    flatMap<N extends unknown>(arg0: (param0: N) => Result<T>, arg1: (param0: T) => Result<N>): Codec<N>;
     // private getCodec(): Codec<T>;
     listOf(): Codec<T[]>;
     listOf(arg0: number): Codec<T[]>;
     listOf(arg0: number, arg1: number): Codec<T[]>;
-    map<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
+    map<N extends unknown>(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
     mapCodec(arg0: string): FieldMapCodec$Builder$Stage1<T>;
-    mapThrowing<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
+    mapThrowing<N extends unknown>(arg0: (param0: N) => T, arg1: (param0: T) => N): Codec<N>;
     nonEmptyList(): Codec<T[]>;
     optionalListOf(): Codec<T[]>;
     optionalListOf(arg0: number): Codec<T[]>;
     optionalListOf(arg0: number, arg1: number): Codec<T[]>;
-    serialize<S extends Object | number | string | boolean>(arg0: DataConverter<S>, arg1: T): Result<S>;
-    typed<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): Codec<N>;
-    typed<N extends Object | number | string | boolean>(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): Codec<N>;
-    typedMap<N extends Object | number | string | boolean>(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): MapCodec<N>;
-    typedMap<N extends Object | number | string | boolean>(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): MapCodec<N>;
+    serialize<S extends unknown>(arg0: DataConverter<S>, arg1: T): Result<S>;
+    typed<N extends unknown>(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): Codec<N>;
+    typed<N extends unknown>(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): Codec<N>;
+    typedMap<N extends unknown>(arg0: (param0: N) => T, arg1: (param0: T) => MapCodec<N>): MapCodec<N>;
+    typedMap<N extends unknown>(arg0: string, arg1: (param0: N) => T, arg2: (param0: T) => MapCodec<N>): MapCodec<N>;
     verified(arg0: (param0: T) => Result<void>): Codec<T>;
 }

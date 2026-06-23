@@ -1,6 +1,6 @@
 import type { AtomicMarkableReference$Pair } from '../../../../java/util/concurrent/atomic/AtomicMarkableReference$Pair.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class AtomicMarkableReference<V extends Object | number | string | boolean> extends Object {
+export class AtomicMarkableReference<V extends unknown> extends Object {
     constructor(arg0: V, arg1: boolean)
     // private pair: AtomicMarkableReference$Pair<V>;
     attemptMark(arg0: V, arg1: boolean): boolean;

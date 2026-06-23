@@ -7,7 +7,7 @@ import type { MemoryAccessor } from '../../../../../../../net/minecraft/world/en
 import type { MemoryCondition } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/MemoryCondition.d.ts'
 import type { MemoryModuleType } from '../../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 import type { MemoryStatus } from '../../../../../../../net/minecraft/world/entity/ai/memory/MemoryStatus.d.ts'
-export class MemoryCondition$Registered<Value extends Object | number | string | boolean> extends Record implements MemoryCondition<OptionalBox$Mu, Value> {
+export class MemoryCondition$Registered<Value extends unknown> extends Record implements MemoryCondition<OptionalBox$Mu, Value> {
     constructor(memory: MemoryModuleType<Value>)
     // private memory: MemoryModuleType<Value>;
     condition(): MemoryStatus;

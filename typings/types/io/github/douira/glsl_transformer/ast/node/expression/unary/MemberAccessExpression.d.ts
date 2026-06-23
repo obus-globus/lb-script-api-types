@@ -18,7 +18,7 @@ export class MemberAccessExpression extends UnaryExpression {
     cloneInto(arg0: Root): MemberAccessExpression;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
-    expressionAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    expressionAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     getExpressionType(): Expression$ExpressionType;
     getMember(): Identifier;
     setMember(arg0: Identifier): void;

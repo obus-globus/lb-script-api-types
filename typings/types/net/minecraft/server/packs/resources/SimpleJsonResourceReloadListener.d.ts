@@ -9,7 +9,7 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { ResourceManager } from '../../../../../net/minecraft/server/packs/resources/ResourceManager.d.ts'
 import type { SimplePreparableReloadListener } from '../../../../../net/minecraft/server/packs/resources/SimplePreparableReloadListener.d.ts'
 import type { ProfilerFiller } from '../../../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
-export abstract class SimpleJsonResourceReloadListener<T extends Object | number | string | boolean> extends SimplePreparableReloadListener<Map<Identifier, T>> {
+export abstract class SimpleJsonResourceReloadListener<T extends unknown> extends SimplePreparableReloadListener<Map<Identifier, T>> {
     static scanDirectory(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
     static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
     constructor(codec: Codec<T>, lister: FileToIdConverter)

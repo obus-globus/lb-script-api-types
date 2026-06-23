@@ -3,9 +3,9 @@ import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/ob
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ObjectRBTreeMap$ValueIterator extends Object2ObjectRBTreeMap$TreeIterator implements ObjectListIterator<V> {
     private constructor(null_: Object2ObjectRBTreeMap$ValueIterator)
-    add<V extends Object | number | string | boolean>(arg0: V): void;
-    next<V extends Object | number | string | boolean>(): V;
-    previous<V extends Object | number | string | boolean>(): V;
+    add<V extends unknown>(arg0: V): void;
+    next<V extends unknown>(): V;
+    previous<V extends unknown>(): V;
     remove(): void;
-    set<V extends Object | number | string | boolean>(arg0: V): void;
+    set<V extends unknown>(arg0: V): void;
 }

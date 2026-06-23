@@ -14,6 +14,6 @@ export class FileMetadata extends Object {
     readonly size: number | null;
     readonly symlinkTarget: Path | null;
     copy(isRegularFile: boolean, isDirectory: boolean, symlinkTarget: Path | null, size: number | null, createdAtMillis: number | null, lastModifiedAtMillis: number | null, lastAccessedAtMillis: number | null, extras: Map<KClass<Object>, Object>): FileMetadata;
-    extra<T extends Object | number | string | boolean>(type: KClass<T>): T | null;
+    extra<T extends unknown>(type: KClass<T>): T | null;
     toString(): string;
 }

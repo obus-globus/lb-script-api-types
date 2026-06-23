@@ -15,7 +15,7 @@ export class Files$FileByteSource extends ByteSource {
     // private file: File;
     openStream(): FileInputStream;
     read(): number[];
-    read<T extends Object | number | string | boolean>(processor: ByteProcessor<T>): T;
+    read<T extends unknown>(processor: ByteProcessor<T>): T;
     size(): number;
     sizeIfKnown(): Optional<number>;
     toString(): string;

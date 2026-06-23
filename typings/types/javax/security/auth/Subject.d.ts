@@ -27,9 +27,9 @@ export class Subject extends Object implements Serializable {
     getPrincipals(): Principal[];
     getPrincipals<T extends Principal>(arg0: Class<T>): T[];
     getPrivateCredentials(): Object[];
-    getPrivateCredentials<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
+    getPrivateCredentials<T extends unknown>(arg0: Class<T>): T[];
     getPublicCredentials(): Object[];
-    getPublicCredentials<T extends Object | number | string | boolean>(arg0: Class<T>): T[];
+    getPublicCredentials<T extends unknown>(arg0: Class<T>): T[];
     hashCode(): number;
     isReadOnly(): boolean;
     // private readObject(arg0: ObjectInputStream): void;

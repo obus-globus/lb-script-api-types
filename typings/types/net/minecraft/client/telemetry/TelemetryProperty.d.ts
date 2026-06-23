@@ -10,7 +10,7 @@ import type { TelemetryProperty$ServerType } from '../../../../net/minecraft/cli
 import type { TelemetryPropertyMap } from '../../../../net/minecraft/client/telemetry/TelemetryPropertyMap.d.ts'
 import type { GameLoadTimesEvent$Measurement } from '../../../../net/minecraft/client/telemetry/events/GameLoadTimesEvent$Measurement.d.ts'
 import type { MutableComponent } from '../../../../net/minecraft/network/chat/MutableComponent.d.ts'
-export class TelemetryProperty<T extends Object | number | string | boolean> extends Record {
+export class TelemetryProperty<T extends unknown> extends Record {
     static ADVANCEMENT_GAME_TIME: TelemetryProperty<number>;
     static ADVANCEMENT_ID: TelemetryProperty<string>;
     static CLIENT_ID: TelemetryProperty<string>;

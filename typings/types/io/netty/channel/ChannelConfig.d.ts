@@ -9,7 +9,7 @@ export interface ChannelConfig extends Object{
     getConnectTimeoutMillis(): number;
     getMaxMessagesPerRead(): number;
     getMessageSizeEstimator(): MessageSizeEstimator;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getRecvByteBufAllocator<T extends RecvByteBufAllocator>(): T;
     getWriteBufferHighWaterMark(): number;
@@ -24,7 +24,7 @@ export interface ChannelConfig extends Object{
     setConnectTimeoutMillis(arg0: number): ChannelConfig;
     setMaxMessagesPerRead(arg0: number): ChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): ChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setOptions(arg0: Map<ChannelOption<Object>, Object | null>): boolean;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): ChannelConfig;
     setWriteBufferHighWaterMark(arg0: number): ChannelConfig;

@@ -17,7 +17,7 @@ export class TagEntry extends Object implements TagEntryAccessor {
     id: Identifier;
     required: boolean;
     tag: boolean;
-    build<T extends Object | number | string | boolean>(lookup: TagEntry$Lookup<T>, output: (param0: T) => void): boolean;
+    build<T extends unknown>(lookup: TagEntry$Lookup<T>, output: (param0: T) => void): boolean;
     // private elementOrTag(): ExtraCodecs$TagOrElementLocation;
     fabric_getId(): Identifier;
     fabric_getTag(): boolean;

@@ -3,5 +3,5 @@ import type { AssignableField } from '../../../../kotlinx/datetime/internal/form
 export class NamedUnsignedIntFieldFormatDirective$AssignableString extends Object implements AssignableField<Target, string> {
     constructor(null_: NamedUnsignedIntFieldFormatDirective$AssignableString)
     readonly name: string;
-    trySetWithoutReassigning<Target extends Object | number | string | boolean>(container: Target, newValue: string): string | null;
+    trySetWithoutReassigning<Target extends unknown>(container: Target, newValue: string): string | null;
 }

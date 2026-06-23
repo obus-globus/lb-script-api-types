@@ -32,18 +32,18 @@ import type { Short2CharFunction } from '../../../../../it/unimi/dsi/fastutil/sh
 import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ObjectFunction.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Object2CharFunctions$PrimitiveFunction<K extends Object | number | string | boolean> extends Object implements Object2CharFunction<K> {
+export class Object2CharFunctions$PrimitiveFunction<K extends unknown> extends Object implements Object2CharFunction<K> {
     constructor(arg0: (param0: K) => string)
     // private function: (param0: K) => string;
-    andThen<T extends Object | number | string | boolean>(arg0: (param0: string) => T): (param0: K) => T;
+    andThen<T extends unknown>(arg0: (param0: string) => T): (param0: K) => T;
     andThenByte(arg0: (param0: string) => number): (param0: Object) => number;
     andThenChar(arg0: (param0: string) => string): (param0: Object) => string;
     andThenDouble(arg0: (param0: string) => number): (param0: Object) => number;
     andThenFloat(arg0: (param0: string) => number): (param0: Object) => number;
     andThenInt(arg0: (param0: string) => number): (param0: Object) => number;
     andThenLong(arg0: (param0: string) => number): (param0: Object) => number;
-    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: string) => T): (param0: Object) => T;
-    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: string) => T): (param0: Object) => T;
+    andThenObject<T extends unknown>(arg0: (param0: string) => T): (param0: Object) => T;
+    andThenReference<T extends unknown>(arg0: (param0: string) => T): (param0: Object) => T;
     andThenShort(arg0: (param0: string) => number): (param0: Object) => number;
     applyAsInt(arg0: K): number;
     composeByte(arg0: (param0: number) => K): (param0: number) => string;
@@ -52,8 +52,8 @@ export class Object2CharFunctions$PrimitiveFunction<K extends Object | number | 
     composeFloat(arg0: (param0: number) => K): (param0: number) => string;
     composeInt(arg0: (param0: number) => K): (param0: number) => string;
     composeLong(arg0: (param0: number) => K): (param0: number) => string;
-    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => string;
-    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => string;
+    composeObject<T extends unknown>(arg0: (param0: Object) => K): (param0: Object) => string;
+    composeReference<T extends unknown>(arg0: (param0: Object) => K): (param0: Object) => string;
     composeShort(arg0: (param0: number) => K): (param0: number) => string;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): string;

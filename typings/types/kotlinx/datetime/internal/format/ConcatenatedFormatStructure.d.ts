@@ -3,7 +3,7 @@ import type { FormatStructure } from '../../../../kotlinx/datetime/internal/form
 import type { NonConcatenatedFormatStructure } from '../../../../kotlinx/datetime/internal/format/NonConcatenatedFormatStructure.d.ts'
 import type { FormatterStructure } from '../../../../kotlinx/datetime/internal/format/formatter/FormatterStructure.d.ts'
 import type { ParserStructure } from '../../../../kotlinx/datetime/internal/format/parser/ParserStructure.d.ts'
-export class ConcatenatedFormatStructure<T extends Object | number | string | boolean> extends Object implements FormatStructure<T> {
+export class ConcatenatedFormatStructure<T extends unknown> extends Object implements FormatStructure<T> {
     constructor(formats: NonConcatenatedFormatStructure<T>[])
     readonly formats: NonConcatenatedFormatStructure<T>[];
     equals(other: Object | null): boolean;

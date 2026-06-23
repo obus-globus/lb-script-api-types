@@ -1,5 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class InlineList<E extends Object | number | string | boolean> extends Object {
+export class InlineList<E extends unknown> extends Object {
 // (invalid TS: name contains '-')     static box-impl(paramarg0: Object): InlineList<Object>;
 // (invalid TS: name contains '-')     static constructor-impl(paramarg0: Object): Object;
 // (invalid TS: name contains '-')     static equals-impl(paramarg0: Object, paramarg1: Object): boolean;

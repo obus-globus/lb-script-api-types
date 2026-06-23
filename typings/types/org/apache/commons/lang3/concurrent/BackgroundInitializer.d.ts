@@ -7,7 +7,7 @@ import type { AbstractConcurrentInitializer } from '../../../../../org/apache/co
 import type { BackgroundInitializer$Builder } from '../../../../../org/apache/commons/lang3/concurrent/BackgroundInitializer$Builder.d.ts'
 import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
-export class BackgroundInitializer<T extends Object | number | string | boolean> extends AbstractConcurrentInitializer<T, Exception> {
+export class BackgroundInitializer<T extends unknown> extends AbstractConcurrentInitializer<T, Exception> {
     static NUL: () => Object | null;
     static builder(): BackgroundInitializer$Builder<BackgroundInitializer<Object>, Object>;
     constructor()

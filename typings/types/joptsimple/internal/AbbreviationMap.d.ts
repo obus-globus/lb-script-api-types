@@ -1,6 +1,6 @@
 import type { OptionNameMap } from '../../joptsimple/internal/OptionNameMap.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export class AbbreviationMap<V extends Object | number | string | boolean> extends Object implements OptionNameMap<V> {
+export class AbbreviationMap<V extends unknown> extends Object implements OptionNameMap<V> {
     constructor()
     // private children: { [key: string]: AbbreviationMap<V> };
     // private key: string;

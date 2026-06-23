@@ -13,8 +13,8 @@ export class ICUCurrencyMetaInfo extends CurrencyMetaInfo {
     constructor()
     // private digitInfo: ICUResourceBundle;
     // private regionInfo: ICUResourceBundle;
-    // private collect<T extends Object | number | string | boolean>(arg0: ICUCurrencyMetaInfo$Collector<T>, arg1: CurrencyMetaInfo$CurrencyFilter): T[];
-    // private collectRegion<T extends Object | number | string | boolean>(arg0: ICUCurrencyMetaInfo$Collector<T>, arg1: CurrencyMetaInfo$CurrencyFilter, arg2: number, arg3: ICUResourceBundle): void;
+    // private collect<T extends unknown>(arg0: ICUCurrencyMetaInfo$Collector<T>, arg1: CurrencyMetaInfo$CurrencyFilter): T[];
+    // private collectRegion<T extends unknown>(arg0: ICUCurrencyMetaInfo$Collector<T>, arg1: CurrencyMetaInfo$CurrencyFilter, arg2: number, arg3: ICUResourceBundle): void;
     currencies(arg0: CurrencyMetaInfo$CurrencyFilter): string[];
     currencyDigits(arg0: string): CurrencyMetaInfo$CurrencyDigits;
     currencyDigits(arg0: string, arg1: Currency$CurrencyUsage): CurrencyMetaInfo$CurrencyDigits;

@@ -9,7 +9,7 @@ import type { TypedDataComponent } from '../../../net/minecraft/core/component/T
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
-export interface Holder<T extends Object | number | string | boolean> extends Object {
+export interface Holder<T extends unknown> extends Object {
     areComponentsBound(): boolean;
     canSerializeIn(registry: HolderOwner<T>): boolean;
     components(): TypedDataComponent<Object>[];

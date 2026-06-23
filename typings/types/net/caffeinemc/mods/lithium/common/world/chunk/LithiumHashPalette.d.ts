@@ -4,7 +4,7 @@ import type { ReportedException } from '../../../../../../../net/minecraft/Repor
 import type { FriendlyByteBuf } from '../../../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { Palette } from '../../../../../../../net/minecraft/world/level/chunk/Palette.d.ts'
 import type { PaletteResize } from '../../../../../../../net/minecraft/world/level/chunk/PaletteResize.d.ts'
-export class LithiumHashPalette<T extends Object | number | string | boolean> extends Object implements Palette<T> {
+export class LithiumHashPalette<T extends unknown> extends Object implements Palette<T> {
     static create(paramarg0: number, paramarg1: (Object | null)[]): Palette<Object>;
     constructor(arg0: number)
     private constructor(arg0: number, arg1: T[], arg2: { [key: string]: any }, arg3: number)

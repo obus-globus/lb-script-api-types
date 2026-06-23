@@ -6,7 +6,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Spliterator } from '../../../../java/util/Spliterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class ArrayTable<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractTable<R, C, V> implements Table<R, C, V>, Serializable {
+export class ArrayTable<R extends unknown, C extends unknown, V extends unknown> extends AbstractTable<R, C, V> implements Table<R, C, V>, Serializable {
     static create(paramtable: Table<Object, Object, Object>): ArrayTable<Object, Object, Object>;
     static create(paramrowKeys: (Object | null)[], paramcolumnKeys: (Object | null)[]): ArrayTable<Object, Object, Object>;
     private constructor(table: ArrayTable<R, C, V>)

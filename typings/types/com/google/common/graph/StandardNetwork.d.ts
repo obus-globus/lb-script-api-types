@@ -4,7 +4,7 @@ import type { MapIteratorCache } from '../../../../com/google/common/graph/MapIt
 import type { NetworkBuilder } from '../../../../com/google/common/graph/NetworkBuilder.d.ts'
 import type { NetworkConnections } from '../../../../com/google/common/graph/NetworkConnections.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class StandardNetwork<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends AbstractNetwork<N, E> {
+export class StandardNetwork<N extends unknown, E extends unknown> extends AbstractNetwork<N, E> {
     constructor(builder: NetworkBuilder<N, E>)
     constructor(builder: NetworkBuilder<N, E>, nodeConnections: Map<N, NetworkConnections<N, E>>, edgeToReferenceNode: Map<E, N>)
     // private allowsParallelEdges: boolean;

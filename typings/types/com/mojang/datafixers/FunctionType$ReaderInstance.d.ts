@@ -6,10 +6,10 @@ import type { Representable } from '../../../com/mojang/datafixers/kinds/Represe
 import type { Representable$Mu } from '../../../com/mojang/datafixers/kinds/Representable$Mu.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class FunctionType$ReaderInstance<R extends Object | number | string | boolean> extends Object implements Representable<FunctionType$ReaderMu<R>, R, FunctionType$ReaderInstance$Mu<R>> {
+export class FunctionType$ReaderInstance<R extends unknown> extends Object implements Representable<FunctionType$ReaderMu<R>, R, FunctionType$ReaderInstance$Mu<R>> {
     static unbox(paramarg0: App<Representable$Mu, K1>): Representable<K1, Object, Representable$Mu>;
     constructor()
-    from<B extends Object | number | string | boolean>(arg0: App<FunctionType$ReaderMu<R>, B>): App<FunctionType$ReaderMu<R>, B>;
-    map<R2 extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: (param0: T) => R2, arg1: App<FunctionType$ReaderMu<R>, T>): App<FunctionType$ReaderMu<R>, R2>;
-    to<B extends Object | number | string | boolean>(arg0: App<FunctionType$ReaderMu<R>, B>): App<FunctionType$ReaderMu<R>, B>;
+    from<B extends unknown>(arg0: App<FunctionType$ReaderMu<R>, B>): App<FunctionType$ReaderMu<R>, B>;
+    map<R2 extends unknown, T extends unknown>(arg0: (param0: T) => R2, arg1: App<FunctionType$ReaderMu<R>, T>): App<FunctionType$ReaderMu<R>, R2>;
+    to<B extends unknown>(arg0: App<FunctionType$ReaderMu<R>, B>): App<FunctionType$ReaderMu<R>, B>;
 }

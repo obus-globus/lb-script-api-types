@@ -18,17 +18,17 @@ export class Reference2CharLinkedOpenHashMap$MapEntry extends Object implements 
     equals(arg0: Object | null): boolean;
     getCharValue(): string;
     hashCode(): number;
-    left<K extends Object | number | string | boolean>(): K;
-    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, string>;
+    left<K extends unknown>(): K;
+    left<K extends unknown>(arg0: K): Pair<K, string>;
     right(): string;
-    right<K extends Object | number | string | boolean>(arg0: string): ReferenceCharPair<K>;
+    right<K extends unknown>(arg0: string): ReferenceCharPair<K>;
     rightChar(): string;
     second(): string;
-    second<K extends Object | number | string | boolean>(arg0: string): ReferenceCharPair<K>;
+    second<K extends unknown>(arg0: string): ReferenceCharPair<K>;
     secondChar(): string;
     setValue(arg0: string): string;
     toString(): string;
     value(): string;
-    value<K extends Object | number | string | boolean>(arg0: string): ReferenceCharPair<K>;
+    value<K extends unknown>(arg0: string): ReferenceCharPair<K>;
     valueChar(): string;
 }

@@ -18,17 +18,17 @@ export class Reference2LongOpenCustomHashMap$MapEntry extends Object implements 
     equals(arg0: Object | null): boolean;
     getLongValue(): number;
     hashCode(): number;
-    left<K extends Object | number | string | boolean>(): K;
-    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    left<K extends unknown>(): K;
+    left<K extends unknown>(arg0: K): Pair<K, number>;
     right(): number;
-    right<K extends Object | number | string | boolean>(arg0: number): ReferenceLongPair<K>;
+    right<K extends unknown>(arg0: number): ReferenceLongPair<K>;
     rightLong(): number;
     second(): number;
-    second<K extends Object | number | string | boolean>(arg0: number): ReferenceLongPair<K>;
+    second<K extends unknown>(arg0: number): ReferenceLongPair<K>;
     secondLong(): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value<K extends Object | number | string | boolean>(arg0: number): ReferenceLongPair<K>;
+    value<K extends unknown>(arg0: number): ReferenceLongPair<K>;
     valueLong(): number;
 }

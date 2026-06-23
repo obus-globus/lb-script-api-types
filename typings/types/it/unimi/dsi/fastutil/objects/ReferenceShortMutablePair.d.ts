@@ -1,7 +1,7 @@
 import type { ReferenceShortPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceShortPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ReferenceShortMutablePair<K extends Object | number | string | boolean> extends Object implements ReferenceShortPair<K>, Serializable {
+export class ReferenceShortMutablePair<K extends unknown> extends Object implements ReferenceShortPair<K>, Serializable {
     static of(paramarg0: Object | null, paramarg1: number): ReferenceShortMutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ReferenceShortPair<Object>;
     constructor(arg0: K, arg1: number)

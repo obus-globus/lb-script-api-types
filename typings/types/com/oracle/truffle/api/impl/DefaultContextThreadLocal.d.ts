@@ -5,7 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DefaultContextThreadLocal extends AbstractFastThreadLocal {
     constructor()
     // private threadLocal: ThreadLocal<Object[]>;
-    fastGet<C extends Object | number | string | boolean>(index: number, castType: Class<C>, invalidateOnNull: boolean, nonNullResult: boolean): C;
+    fastGet<C extends unknown>(index: number, castType: Class<C>, invalidateOnNull: boolean, nonNullResult: boolean): C;
     get(): Object[];
     set(data: Object[]): void;
 }

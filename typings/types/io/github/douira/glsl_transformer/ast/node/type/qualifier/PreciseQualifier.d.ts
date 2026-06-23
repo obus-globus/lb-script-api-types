@@ -16,5 +16,5 @@ export class PreciseQualifier extends TypeQualifierPart {
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getQualifierType(): TypeQualifierPart$QualifierType;
-    typeQualifierPartAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    typeQualifierPartAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

@@ -3,7 +3,7 @@ import type { Future$State } from '../../../../../java/util/concurrent/Future$St
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
-export abstract class AbstractFutureProxy<V extends Object | number | string | boolean> extends Object implements Future<V> {
+export abstract class AbstractFutureProxy<V extends unknown> extends Object implements Future<V> {
     constructor(arg0: Future<V>)
     readonly future: Future<V>;
     cancel(arg0: boolean): boolean;

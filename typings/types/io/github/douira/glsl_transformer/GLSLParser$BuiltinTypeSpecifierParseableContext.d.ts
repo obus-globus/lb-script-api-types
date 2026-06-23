@@ -81,7 +81,7 @@ export class GLSLParser$BuiltinTypeSpecifierParseableContext extends ParserRuleC
     UINT32(): TerminalNode;
     UINT64(): TerminalNode;
     UINT8(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     getRuleIndex(): number;

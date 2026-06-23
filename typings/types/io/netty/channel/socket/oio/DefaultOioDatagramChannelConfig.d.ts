@@ -12,7 +12,7 @@ import type { NetworkInterface } from '../../../../../java/net/NetworkInterface.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DefaultOioDatagramChannelConfig extends DefaultDatagramChannelConfig implements OioDatagramChannelConfig {
     constructor(arg0: DatagramChannel, arg1: DatagramSocket)
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getSoTimeout(): number;
@@ -26,7 +26,7 @@ export class DefaultOioDatagramChannelConfig extends DefaultDatagramChannelConfi
     setMaxMessagesPerRead(arg0: number): OioDatagramChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): OioDatagramChannelConfig;
     setNetworkInterface(arg0: NetworkInterface): OioDatagramChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setReceiveBufferSize(arg0: number): OioDatagramChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): OioDatagramChannelConfig;
     setReuseAddress(arg0: boolean): OioDatagramChannelConfig;

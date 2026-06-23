@@ -4,7 +4,7 @@ import type { ReflectiveTypeAdapterFactory$FieldsData } from '../../../../../../
 import type { JsonReader } from '../../../../../../../com/viaversion/viaversion/libs/gson/stream/JsonReader.d.ts'
 import type { JsonWriter } from '../../../../../../../com/viaversion/viaversion/libs/gson/stream/JsonWriter.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export abstract class ReflectiveTypeAdapterFactory$Adapter<T extends Object | number | string | boolean, A extends Object | number | string | boolean> extends TypeAdapter<T> {
+export abstract class ReflectiveTypeAdapterFactory$Adapter<T extends unknown, A extends unknown> extends TypeAdapter<T> {
     constructor(arg0: ReflectiveTypeAdapterFactory$FieldsData)
     // private fieldsData: ReflectiveTypeAdapterFactory$FieldsData;
     createAccumulator(): A;

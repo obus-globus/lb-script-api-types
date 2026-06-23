@@ -6,7 +6,7 @@ import type { CoroutineContext$Key } from '../../../../kotlin/coroutines/Corouti
 export class DownstreamExceptionContext extends Object implements CoroutineContext {
     constructor(e: Throwable, originalContext: CoroutineContext)
     e: Throwable;
-    fold<R extends Object | number | string | boolean>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
+    fold<R extends unknown>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
     minusKey(key: CoroutineContext$Key<any>): CoroutineContext;
     plus(context: CoroutineContext): CoroutineContext;

@@ -4,7 +4,7 @@ import type { VertexFormat$IndexType } from '../../../../com/mojang/blaze3d/vert
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class RenderPass$Draw<T extends Object | number | string | boolean> extends Record {
+export class RenderPass$Draw<T extends unknown> extends Record {
     // private baseVertex: number;
     // private firstIndex: number;
     // private indexBuffer: GpuBuffer;

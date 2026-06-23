@@ -16,7 +16,7 @@ import type { ClassId } from '../../../../kotlin/reflect/jvm/internal/impl/name/
 import type { Name } from '../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { MemberScope } from '../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { TypeConstructorMarker } from '../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeConstructorMarker.d.ts'
-export class KClassImpl<T extends Object | number | string | boolean> extends KDeclarationContainerImpl implements KClass<T>, KTypeParameterOwnerImpl, TypeConstructorMarker {
+export class KClassImpl<T extends unknown> extends KDeclarationContainerImpl implements KClass<T>, KTypeParameterOwnerImpl, TypeConstructorMarker {
     static Companion: KClassImpl$Companion;
     static Companion: KDeclarationContainerImpl$Companion;
     constructor(jClass: Class<T>)

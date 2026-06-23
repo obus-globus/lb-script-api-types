@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface ReferenceKey<T extends Object | number | string | boolean> extends Object{
+export interface ReferenceKey<T extends unknown> extends Object{
     clear(): void;
     get(): T;
 }

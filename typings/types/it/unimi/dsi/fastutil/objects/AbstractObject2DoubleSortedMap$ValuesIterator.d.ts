@@ -4,7 +4,7 @@ import type { Object2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fastuti
 import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBidirectionalIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractObject2DoubleSortedMap$ValuesIterator<K extends Object | number | string | boolean> extends Object implements DoubleIterator {
+export class AbstractObject2DoubleSortedMap$ValuesIterator<K extends unknown> extends Object implements DoubleIterator {
     constructor(arg0: ObjectBidirectionalIterator<Object2DoubleMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Object2DoubleMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;

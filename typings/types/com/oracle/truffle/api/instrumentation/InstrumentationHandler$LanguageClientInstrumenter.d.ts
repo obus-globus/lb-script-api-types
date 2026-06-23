@@ -13,7 +13,7 @@ import type { RootNode } from '../../../../../com/oracle/truffle/api/nodes/RootN
 import type { Source } from '../../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class InstrumentationHandler$LanguageClientInstrumenter<T extends Object | number | string | boolean> extends InstrumentationHandler$AbstractInstrumenter {
+export class InstrumentationHandler$LanguageClientInstrumenter<T extends unknown> extends InstrumentationHandler$AbstractInstrumenter {
     constructor(null_: InstrumentationHandler$LanguageClientInstrumenter<T>)
     // private language: TruffleLanguage<Object>;
     // private languageInfo: LanguageInfo;
@@ -25,7 +25,7 @@ export class InstrumentationHandler$LanguageClientInstrumenter<T extends Object 
     isInstrumentableRoot(node: RootNode): boolean;
     isInstrumentableSource(source: Source): boolean;
     isReadyForContextEvents(): boolean;
-    lookup<S extends Object | number | string | boolean>(handler: InstrumentationHandler, type: Class<S>): S;
+    lookup<S extends unknown>(handler: InstrumentationHandler, type: Class<S>): S;
     queryTags(node: Node): Class<Object>[];
     verifyFilter(nearestFilter: NearestSectionFilter, sourceSectionFilter: SourceSectionFilter): void;
     verifyTags(filter: Object, referencedTags: Class<Object>[]): void;

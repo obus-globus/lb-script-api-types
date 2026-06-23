@@ -11,13 +11,13 @@ export class SynchedEntityData extends Object {
     // private entity: SyncedDataHolder;
     // private isDirty: boolean;
     // private itemsById: SynchedEntityData$DataItem<Object>[];
-    // private assignValue<T extends Object | number | string | boolean>(dataItem: SynchedEntityData$DataItem<T>, item: SynchedEntityData$DataValue<Object>): void;
+    // private assignValue<T extends unknown>(dataItem: SynchedEntityData$DataItem<T>, item: SynchedEntityData$DataValue<Object>): void;
     assignValues(items: SynchedEntityData$DataValue<Object>[]): void;
-    get<T extends Object | number | string | boolean>(accessor: EntityDataAccessor<T>): T;
-    // private getItem<T extends Object | number | string | boolean>(accessor: EntityDataAccessor<T>): SynchedEntityData$DataItem<T>;
+    get<T extends unknown>(accessor: EntityDataAccessor<T>): T;
+    // private getItem<T extends unknown>(accessor: EntityDataAccessor<T>): SynchedEntityData$DataItem<T>;
     getNonDefaultValues(): SynchedEntityData$DataValue<Object>[];
     isDirty(): boolean;
     packDirty(): SynchedEntityData$DataValue<Object>[];
-    set<T extends Object | number | string | boolean>(accessor: EntityDataAccessor<T>, value: T): void;
-    set<T extends Object | number | string | boolean>(accessor: EntityDataAccessor<T>, value: T, forceDirty: boolean): void;
+    set<T extends unknown>(accessor: EntityDataAccessor<T>, value: T): void;
+    set<T extends unknown>(accessor: EntityDataAccessor<T>, value: T, forceDirty: boolean): void;
 }

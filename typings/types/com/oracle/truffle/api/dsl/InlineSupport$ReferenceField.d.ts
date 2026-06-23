@@ -3,7 +3,7 @@ import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { MethodHandles$Lookup } from '../../../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class InlineSupport$ReferenceField<T extends Object | number | string | boolean> extends InlineSupport$InlinableField {
+export class InlineSupport$ReferenceField<T extends unknown> extends InlineSupport$InlinableField {
     static create(paramdeclaringLookup: MethodHandles$Lookup, paramfield: string, paramvalueClass: Class<Object>): InlineSupport$ReferenceField<Object>;
     constructor(receiverClass: Class<Object>, lookupFieldClass: Class<Object>, declaringLookup: MethodHandles$Lookup, fieldName: string, valueClass: Class<T>)
     // private valueClass: Class<Object>;

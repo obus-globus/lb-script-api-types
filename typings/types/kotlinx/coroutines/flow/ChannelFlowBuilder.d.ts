@@ -3,7 +3,7 @@ import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineConte
 import type { BufferOverflow } from '../../../kotlinx/coroutines/channels/BufferOverflow.d.ts'
 import type { ProducerScope } from '../../../kotlinx/coroutines/channels/ProducerScope.d.ts'
 import type { ChannelFlow } from '../../../kotlinx/coroutines/flow/internal/ChannelFlow.d.ts'
-export class ChannelFlowBuilder<T extends Object | number | string | boolean> extends ChannelFlow<T> {
+export class ChannelFlowBuilder<T extends unknown> extends ChannelFlow<T> {
     constructor(block: (param0: ProducerScope<T>) => void, context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow)
     // private block: (param0: ProducerScope<T>) => void;
     protected collectTo(scope: ProducerScope<T>): void;

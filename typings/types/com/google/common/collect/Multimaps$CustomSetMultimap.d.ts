@@ -3,7 +3,7 @@ import type { AbstractSetMultimap } from '../../../../com/google/common/collect/
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Multimaps$CustomSetMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractSetMultimap<K, V> {
+export class Multimaps$CustomSetMultimap<K extends unknown, V extends unknown> extends AbstractSetMultimap<K, V> {
     constructor(map: Map<K, V[]>, factory: () => V[])
     // private factory: () => V[];
     createAsMap(): Map<K, V[]>;
@@ -11,7 +11,7 @@ export class Multimaps$CustomSetMultimap<K extends Object | number | string | bo
     createCollection(key: K): V[];
     createKeySet(): K[];
     // private readObject(stream: ObjectInputStream): void;
-    unmodifiableCollectionSubclass<E extends Object | number | string | boolean>(collection: E[]): E[];
+    unmodifiableCollectionSubclass<E extends unknown>(collection: E[]): E[];
     wrapCollection(key: K, collection: V[]): V[];
     // private writeObject(stream: ObjectOutputStream): void;
 }

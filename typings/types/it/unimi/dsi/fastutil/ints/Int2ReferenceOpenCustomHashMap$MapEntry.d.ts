@@ -16,18 +16,18 @@ export class Int2ReferenceOpenCustomHashMap$MapEntry extends Object implements I
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;
-    first<V extends Object | number | string | boolean>(arg0: number): IntReferencePair<V>;
+    first<V extends unknown>(arg0: number): IntReferencePair<V>;
     firstInt(): number;
     getIntKey(): number;
     hashCode(): number;
     key(): number;
-    key<V extends Object | number | string | boolean>(arg0: number): IntReferencePair<V>;
+    key<V extends unknown>(arg0: number): IntReferencePair<V>;
     keyInt(): number;
     left(): number;
-    left<V extends Object | number | string | boolean>(arg0: number): IntReferencePair<V>;
+    left<V extends unknown>(arg0: number): IntReferencePair<V>;
     leftInt(): number;
-    right<V extends Object | number | string | boolean>(): V;
-    right<V extends Object | number | string | boolean>(arg0: V): IntReferencePair<V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    right<V extends unknown>(): V;
+    right<V extends unknown>(arg0: V): IntReferencePair<V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

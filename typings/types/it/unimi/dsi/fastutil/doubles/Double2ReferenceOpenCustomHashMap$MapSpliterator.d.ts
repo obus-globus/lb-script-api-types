@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Double2ReferenceOpenCustomHashMap$MapSpliterator<ConsumerType extends Object | number | string | boolean, SplitType extends Double2ReferenceOpenCustomHashMap$MapSpliterator<Object, any>> extends Object {
+export abstract class Double2ReferenceOpenCustomHashMap$MapSpliterator<ConsumerType extends unknown, SplitType extends Double2ReferenceOpenCustomHashMap$MapSpliterator<Object, any>> extends Object {
     constructor(null_: Double2ReferenceOpenCustomHashMap$MapSpliterator<Object, any>)
     constructor(null_: Double2ReferenceOpenCustomHashMap$MapSpliterator<Object, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;

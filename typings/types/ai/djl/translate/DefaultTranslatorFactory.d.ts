@@ -14,6 +14,6 @@ export class DefaultTranslatorFactory extends Object implements TranslatorFactor
     // private translators: Map<Pair<Type, Type>, Translator<Object, Object>>;
     getSupportedTypes(): Pair<Type, Type>[];
     isSupported(arg0: Class<Object>, arg1: Class<Object>): boolean;
-    newInstance<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Class<I>, arg1: Class<O>, arg2: Model, arg3: { [key: string]: Object | null }): Translator<I, O>;
-    registerTranslator<I extends Object | number | string | boolean, O extends Object | number | string | boolean>(arg0: Class<I>, arg1: Class<O>, arg2: Translator<I, O>): void;
+    newInstance<I extends unknown, O extends unknown>(arg0: Class<I>, arg1: Class<O>, arg2: Model, arg3: { [key: string]: Object | null }): Translator<I, O>;
+    registerTranslator<I extends unknown, O extends unknown>(arg0: Class<I>, arg1: Class<O>, arg2: Translator<I, O>): void;
 }

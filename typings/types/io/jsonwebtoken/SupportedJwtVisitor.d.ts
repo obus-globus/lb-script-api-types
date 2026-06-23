@@ -3,7 +3,7 @@ import type { Jws } from '../../io/jsonwebtoken/Jws.d.ts'
 import type { Jwt } from '../../io/jsonwebtoken/Jwt.d.ts'
 import type { JwtVisitor } from '../../io/jsonwebtoken/JwtVisitor.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export class SupportedJwtVisitor<T extends Object | number | string | boolean> extends Object implements JwtVisitor<T> {
+export class SupportedJwtVisitor<T extends unknown> extends Object implements JwtVisitor<T> {
     constructor()
     onDecryptedClaims(arg0: Jwe<{ [key: string]: any }>): T;
     onDecryptedContent(arg0: Jwe<number[]>): T;

@@ -5,6 +5,6 @@ export class SpatialAttributeInterpolator extends Object {
     constructor()
     // private weightsBySource: { [key: string]: any };
     accumulate(weight: number, attributes: EnvironmentAttributeMap): SpatialAttributeInterpolator;
-    applyAttributeLayer<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, baseValue: Value): Value;
+    applyAttributeLayer<Value extends unknown>(attribute: EnvironmentAttribute<Value>, baseValue: Value): Value;
     clear(): void;
 }

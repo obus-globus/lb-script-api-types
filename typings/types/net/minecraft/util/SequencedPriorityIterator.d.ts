@@ -1,6 +1,6 @@
 import type { AbstractIterator } from '../../../com/google/common/collect/AbstractIterator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class SequencedPriorityIterator<T extends Object | number | string | boolean> extends AbstractIterator<T> {
+export class SequencedPriorityIterator<T extends unknown> extends AbstractIterator<T> {
     constructor()
     // private highestPrio: number;
     // private highestPrioQueue: T[];

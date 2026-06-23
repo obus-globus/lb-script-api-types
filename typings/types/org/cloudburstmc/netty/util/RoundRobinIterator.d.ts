@@ -1,7 +1,7 @@
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class RoundRobinIterator<E extends Object | number | string | boolean> extends Object implements Iterator<E> {
+export class RoundRobinIterator<E extends unknown> extends Object implements Iterator<E> {
     constructor(arg0: E[])
     // private collection: E[];
     // private iterator: Iterator<E>;

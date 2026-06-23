@@ -27,7 +27,7 @@ import type { IntStream } from '../../../../java/util/stream/IntStream.d.ts'
 import type { LongStream } from '../../../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
-export class XorCodec<F extends Object | number | string | boolean, S extends Object | number | string | boolean> extends Record implements Codec<Either<F, S>> {
+export class XorCodec<F extends unknown, S extends unknown> extends Record implements Codec<Either<F, S>> {
     static BOOL: PrimitiveCodec<boolean>;
     static BYTE: PrimitiveCodec<number>;
     static BYTE_BUFFER: PrimitiveCodec<ByteBuffer>;
@@ -72,15 +72,15 @@ export class XorCodec<F extends Object | number | string | boolean, S extends Ob
     // private first: Codec<F>;
     // private second: Codec<S>;
     comapFlatMap(arg0: (param0: Either<F, S>) => DataResult<S>, arg1: (param0: S) => Either<F, S>): Codec<S>;
-    decode<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<Either<F, S>, T>>;
-    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<Either<F, S>, T>>;
+    decode<T extends unknown>(arg0: Dynamic<T>): DataResult<Pair<Either<F, S>, T>>;
+    decode<T extends unknown>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<Either<F, S>, T>>;
     deprecated(arg0: number): Codec<Either<F, S>>;
-    dispatch<E extends Object | number | string | boolean>(arg0: (param0: E) => Either<F, S>, arg1: (param0: Either<F, S>) => MapCodec<E>): Codec<E>;
-    dispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => Either<F, S>, arg2: (param0: Either<F, S>) => MapCodec<E>): Codec<E>;
-    dispatchMap<E extends Object | number | string | boolean>(arg0: (param0: E) => Either<F, S>, arg1: (param0: Either<F, S>) => MapCodec<E>): MapCodec<E>;
-    dispatchMap<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => Either<F, S>, arg2: (param0: Either<F, S>) => MapCodec<E>): MapCodec<E>;
-    dispatchStable<E extends Object | number | string | boolean>(arg0: (param0: E) => Either<F, S>, arg1: (param0: Either<F, S>) => MapCodec<E>): Codec<E>;
-    encode<T extends Object | number | string | boolean>(arg0: Either<F, S>, arg1: DynamicOps<T>, arg2: T): DataResult<T>;
+    dispatch<E extends unknown>(arg0: (param0: E) => Either<F, S>, arg1: (param0: Either<F, S>) => MapCodec<E>): Codec<E>;
+    dispatch<E extends unknown>(arg0: string, arg1: (param0: E) => Either<F, S>, arg2: (param0: Either<F, S>) => MapCodec<E>): Codec<E>;
+    dispatchMap<E extends unknown>(arg0: (param0: E) => Either<F, S>, arg1: (param0: Either<F, S>) => MapCodec<E>): MapCodec<E>;
+    dispatchMap<E extends unknown>(arg0: string, arg1: (param0: E) => Either<F, S>, arg2: (param0: Either<F, S>) => MapCodec<E>): MapCodec<E>;
+    dispatchStable<E extends unknown>(arg0: (param0: E) => Either<F, S>, arg1: (param0: Either<F, S>) => MapCodec<E>): Codec<E>;
+    encode<T extends unknown>(arg0: Either<F, S>, arg1: DynamicOps<T>, arg2: T): DataResult<T>;
     equals(arg0: Object | null): boolean;
     fieldOf(arg0: string): MapCodec<Either<F, S>>;
     first(): Codec<F>;
@@ -106,14 +106,14 @@ export class XorCodec<F extends Object | number | string | boolean, S extends Ob
     orElseGet(arg0: (param0: string) => void, arg1: () => Either<F, S>): Codec<Either<F, S>>;
     orElseGet(arg0: () => Either<F, S>): Codec<Either<F, S>>;
     orElseGet(arg0: (param0: string) => Object | null, arg1: () => Either<F, S>): Codec<Either<F, S>>;
-    partialDispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => DataResult<Either<F, S>>, arg2: (param0: Either<F, S>) => DataResult<MapCodec<E>>): Codec<E>;
+    partialDispatch<E extends unknown>(arg0: string, arg1: (param0: E) => DataResult<Either<F, S>>, arg2: (param0: Either<F, S>) => DataResult<MapCodec<E>>): Codec<E>;
     promotePartial(arg0: (param0: string) => void): Codec<Either<F, S>>;
     second(): Codec<S>;
     sizeLimitedListOf(arg0: number): Codec<Either<F, S>[]>;
     stable(): Codec<Either<F, S>>;
     toString(): string;
     validate(arg0: (param0: Either<F, S>) => DataResult<Either<F, S>>): Codec<Either<F, S>>;
-    withAlternative<U extends Object | number | string | boolean>(arg0: Codec<U>, arg1: (param0: U) => Either<F, S>): Codec<Either<F, S>>;
+    withAlternative<U extends unknown>(arg0: Codec<U>, arg1: (param0: U) => Either<F, S>): Codec<Either<F, S>>;
     withAlternative(arg0: Codec<Either<F, S>>): Codec<Either<F, S>>;
     withLifecycle(arg0: Lifecycle): Codec<Either<F, S>>;
     xmap(arg0: (param0: Either<F, S>) => S, arg1: (param0: S) => Either<F, S>): Codec<S>;

@@ -7,8 +7,8 @@ export class TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask ext
     constructor(null_: TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask)
     // private callable: () => ListenableFuture<V>;
     afterRanInterruptiblyFailure(error: Throwable): void;
-    afterRanInterruptiblySuccess<V extends Object | number | string | boolean>(result: ListenableFuture<V>): void;
+    afterRanInterruptiblySuccess<V extends unknown>(result: ListenableFuture<V>): void;
     isDone(): boolean;
-    runInterruptibly<V extends Object | number | string | boolean>(): ListenableFuture<V>;
+    runInterruptibly<V extends unknown>(): ListenableFuture<V>;
     toPendingString(): string;
 }

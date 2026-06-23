@@ -5,7 +5,7 @@ import type { Spliterator$OfPrimitive } from '../../../../java/util/Spliterator$
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class CollectSpliterators$FlatMapSpliteratorOfPrimitive<InElementT extends Object | number | string | boolean, OutElementT extends Object | number | string | boolean, OutConsumerT extends Object | number | string | boolean, OutSpliteratorT extends Spliterator$OfPrimitive<OutElementT, OutConsumerT, OutSpliteratorT>> extends CollectSpliterators$FlatMapSpliterator<InElementT, OutElementT, OutSpliteratorT> implements Spliterator$OfPrimitive<OutElementT, OutConsumerT, OutSpliteratorT> {
+export abstract class CollectSpliterators$FlatMapSpliteratorOfPrimitive<InElementT extends unknown, OutElementT extends unknown, OutConsumerT extends unknown, OutSpliteratorT extends Spliterator$OfPrimitive<OutElementT, OutConsumerT, OutSpliteratorT>> extends CollectSpliterators$FlatMapSpliterator<InElementT, OutElementT, OutSpliteratorT> implements Spliterator$OfPrimitive<OutElementT, OutConsumerT, OutSpliteratorT> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

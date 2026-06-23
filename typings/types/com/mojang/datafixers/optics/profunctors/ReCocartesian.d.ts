@@ -7,10 +7,10 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ReCocartesian<P extends K2, Mu extends ReCocartesian$Mu> extends Profunctor<P, Mu>, Object {
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
-    dimap<C extends Object | number | string | boolean, D extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: () => App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
-    lmap<C extends Object | number | string | boolean, B extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: App2<P, A, B>, arg1: (param0: C) => A): App2<P, C, B>;
-    rmap<A extends Object | number | string | boolean, D extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: App2<P, A, B>, arg1: (param0: B) => D): App2<P, A, D>;
-    unleft<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean>(arg0: App2<P, Either<A, C>, Either<B, C>>): App2<P, A, B>;
-    unright<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean>(arg0: App2<P, Either<C, A>, Either<C, B>>): App2<P, A, B>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
+    dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: () => App2<P, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<P, C, D>;
+    lmap<C extends unknown, B extends unknown, A extends unknown>(arg0: App2<P, A, B>, arg1: (param0: C) => A): App2<P, C, B>;
+    rmap<A extends unknown, D extends unknown, B extends unknown>(arg0: App2<P, A, B>, arg1: (param0: B) => D): App2<P, A, D>;
+    unleft<A extends unknown, B extends unknown, C extends unknown>(arg0: App2<P, Either<A, C>, Either<B, C>>): App2<P, A, B>;
+    unright<A extends unknown, B extends unknown, C extends unknown>(arg0: App2<P, Either<C, A>, Either<C, B>>): App2<P, A, B>;
 }

@@ -6,7 +6,7 @@ import type { Type$Mu } from '../../../../../com/mojang/datafixers/types/Type$Mu
 import type { TypeTemplate } from '../../../../../com/mojang/datafixers/types/templates/TypeTemplate.d.ts'
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Const$PrimitiveType<A extends Object | number | string | boolean> extends Type<A> {
+export class Const$PrimitiveType<A extends unknown> extends Type<A> {
     static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
     static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
     constructor(arg0: Codec<A>)

@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Tag } from '../../../../../../net/minecraft/nbt/Tag.d.ts'
 import type { LevelHeightAccessor } from '../../../../../../net/minecraft/world/level/LevelHeightAccessor.d.ts'
 import type { SimpleRegionStorage } from '../../../../../../net/minecraft/world/level/chunk/storage/SimpleRegionStorage.d.ts'
-export class SectionStorage$PackedChunk<T extends Object | number | string | boolean> extends Record {
+export class SectionStorage$PackedChunk<T extends unknown> extends Record {
     static parse(paramcodec: Codec<Object>, paramops: DynamicOps<Tag>, paramtag: Tag, paramsimpleRegionStorage: SimpleRegionStorage, paramlevelHeightAccessor: LevelHeightAccessor): SectionStorage$PackedChunk<Object>;
     // private sectionsByY: { [key: string]: any };
     // private versionChanged: boolean;

@@ -10,7 +10,7 @@ export class BoolArgumentType extends Object implements ArgumentType<boolean> {
     static getBool(paramarg0: CommandContext<Object>, paramarg1: string): boolean;
     private constructor()
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): boolean;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): boolean;
     parse(arg0: StringReader): boolean;
 }

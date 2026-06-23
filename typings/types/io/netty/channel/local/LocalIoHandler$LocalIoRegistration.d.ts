@@ -9,7 +9,7 @@ export class LocalIoHandler$LocalIoRegistration extends Object implements IoRegi
     // private canceled: AtomicBoolean;
     // private executor: ThreadAwareExecutor;
     // private handle: LocalIoHandle;
-    attachment<T extends Object | number | string | boolean>(): T;
+    attachment<T extends unknown>(): T;
     cancel(): boolean;
     // private cancel0(): void;
     isValid(): boolean;

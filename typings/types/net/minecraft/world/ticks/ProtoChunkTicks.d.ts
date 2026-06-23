@@ -4,7 +4,7 @@ import type { SavedTick } from '../../../../net/minecraft/world/ticks/SavedTick.
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 import type { SerializableTickContainer } from '../../../../net/minecraft/world/ticks/SerializableTickContainer.d.ts'
 import type { TickContainerAccess } from '../../../../net/minecraft/world/ticks/TickContainerAccess.d.ts'
-export class ProtoChunkTicks<T extends Object | number | string | boolean> extends Object implements SerializableTickContainer<T>, TickContainerAccess<T> {
+export class ProtoChunkTicks<T extends unknown> extends Object implements SerializableTickContainer<T>, TickContainerAccess<T> {
     static load(paramticks: SavedTick<Object>[]): ProtoChunkTicks<Object>;
     constructor()
     // private ticks: SavedTick<T>[];

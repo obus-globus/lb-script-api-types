@@ -10,7 +10,7 @@ import type { ValueType } from '../../../../../net/ccbluex/liquidbounce/config/t
  *
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/config/types/RangedValue.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/RangedValue.kt:26}
  */
-export class RangedValue<T extends Object | number | string | boolean> extends Value<T> {
+export class RangedValue<T extends unknown> extends Value<T> {
     static Companion: RangedValue$Companion;
     static squared(paramarg0: RangedValue<ClosedFloatingPointRange<number>>): ReadOnlyProperty<Object, ClosedFloatingPointRange<number>>;
     constructor(name: string, aliases: string[], defaultValue: T, range: ClosedRange<any>, suffix: string, valueType: ValueType)

@@ -5,7 +5,7 @@ import type { ForkJoinPool } from '../../../java/util/concurrent/ForkJoinPool.d.
 import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.ts'
 import type { RunnableFuture } from '../../../java/util/concurrent/RunnableFuture.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class ForkJoinTask$InterruptibleTask<T extends Object | number | string | boolean> extends ForkJoinTask<T> implements RunnableFuture<T> {
+export abstract class ForkJoinTask$InterruptibleTask<T extends unknown> extends ForkJoinTask<T> implements RunnableFuture<T> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

@@ -6,7 +6,7 @@ import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCod
 import type { StatFormatter } from '../../../net/minecraft/stats/StatFormatter.d.ts'
 import type { ObjectiveCriteria } from '../../../net/minecraft/world/scores/criteria/ObjectiveCriteria.d.ts'
 import type { ObjectiveCriteria$RenderType } from '../../../net/minecraft/world/scores/criteria/ObjectiveCriteria$RenderType.d.ts'
-export class Stat<T extends Object | number | string | boolean> extends ObjectiveCriteria {
+export class Stat<T extends unknown> extends ObjectiveCriteria {
     static AIR: ObjectiveCriteria;
     static ARMOR: ObjectiveCriteria;
     static CODEC: Codec<ObjectiveCriteria>;

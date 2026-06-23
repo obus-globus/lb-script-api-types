@@ -11,7 +11,7 @@ import type { ChannelIterator } from '../../../kotlinx/coroutines/channels/Chann
 import type { ChannelResult } from '../../../kotlinx/coroutines/channels/ChannelResult.d.ts'
 import type { ChannelSegment } from '../../../kotlinx/coroutines/channels/ChannelSegment.d.ts'
 import type { SelectInstance } from '../../../kotlinx/coroutines/selects/SelectInstance.d.ts'
-export class BufferedChannel<E extends Object | number | string | boolean> extends Object implements Channel<E> {
+export class BufferedChannel<E extends unknown> extends Object implements Channel<E> {
     static BUFFERED: number;
     static CONFLATED: number;
     static DEFAULT_BUFFER_PROPERTY_NAME: string;
@@ -68,7 +68,7 @@ export class BufferedChannel<E extends Object | number | string | boolean> exten
     receive(): E;
     receiveCatching(): ChannelResult<E>;
     // private receiveCatchingOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, r: number): ChannelResult<E>;
-    // private receiveImpl<R extends Object | number | string | boolean>(waiter: Object | null, onElementRetrieved: (param0: E) => R, onSuspend: (param0: ChannelSegment<E>, param1: number, param2: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: number) => R): R;
+    // private receiveImpl<R extends unknown>(waiter: Object | null, onElementRetrieved: (param0: E) => R, onSuspend: (param0: ChannelSegment<E>, param1: number, param2: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: number) => R): R;
     // private receiveImplOnNoWaiter(segment: ChannelSegment<E>, index: number, r: number, waiter: Waiter, onElementRetrieved: (param0: E) => void, onClosed: () => void): void;
     // private receiveOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, r: number): E;
     // private registerSelectForReceive(select: SelectInstance<Object>, ignoredParam: Object | null): void;
@@ -76,7 +76,7 @@ export class BufferedChannel<E extends Object | number | string | boolean> exten
     // private removeUnprocessedElements(lastSegment: ChannelSegment<E>): void;
     send(element: E): void;
     sendBroadcast(element: E): boolean;
-    // private sendImpl<R extends Object | number | string | boolean>(element: E, waiter: Object | null, onRendezvousOrBuffered: () => R, onSuspend: (param0: ChannelSegment<E>, param1: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: E, param3: number) => R): R;
+    // private sendImpl<R extends unknown>(element: E, waiter: Object | null, onRendezvousOrBuffered: () => R, onSuspend: (param0: ChannelSegment<E>, param1: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: E, param3: number) => R): R;
     // private sendImplOnNoWaiter(segment: ChannelSegment<E>, index: number, element: E, s: number, waiter: Waiter, onRendezvousOrBuffered: () => void, onClosed: () => void): void;
     // private sendOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, element: E, s: number): void;
     shouldSendSuspend(): boolean;

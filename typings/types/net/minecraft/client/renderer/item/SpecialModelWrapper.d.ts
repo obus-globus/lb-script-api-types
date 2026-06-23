@@ -11,7 +11,7 @@ import type { ItemDisplayContext } from '../../../../../net/minecraft/world/item
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
-export class SpecialModelWrapper<T extends Object | number | string | boolean> extends Object implements ItemModel {
+export class SpecialModelWrapper<T extends unknown> extends Object implements ItemModel {
     constructor(specialRenderer: SpecialModelRenderer<T>, properties: ModelRenderProperties, transformation: Matrix4fc)
     // private extents: () => Vector3fc[];
     // private properties: ModelRenderProperties;

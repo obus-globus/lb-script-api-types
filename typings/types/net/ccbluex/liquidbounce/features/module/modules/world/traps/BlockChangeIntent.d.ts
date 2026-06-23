@@ -4,7 +4,7 @@ import type { BlockIntentProvider } from '../../../../../../../../net/ccbluex/li
 import type { IntentTiming } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/traps/IntentTiming.d.ts'
 import type { HotbarItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/HotbarItemSlot.d.ts'
 import type { BlockHitResult } from '../../../../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
-export class BlockChangeIntent<T extends Object | number | string | boolean> extends Object {
+export class BlockChangeIntent<T extends unknown> extends Object {
     constructor(blockChangeInfo: BlockChangeInfo, slot: HotbarItemSlot, timing: IntentTiming, planningInfo: T, provider: BlockIntentProvider<T>)
     readonly blockChangeInfo: BlockChangeInfo;
     /**

@@ -3,7 +3,7 @@ import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export interface ComponentPredicateParser$Context<T extends Object | number | string | boolean, C extends Object | number | string | boolean, P extends Object | number | string | boolean> extends Object{
+export interface ComponentPredicateParser$Context<T extends unknown, C extends unknown, P extends unknown> extends Object{
     anyOf(alternatives: T[]): T;
     createComponentTest(reader: ImmutableStringReader, componentType: C): T;
     createComponentTest(reader: ImmutableStringReader, componentType: C, value: Dynamic<Object>): T;

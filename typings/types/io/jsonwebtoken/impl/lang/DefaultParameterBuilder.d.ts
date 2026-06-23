@@ -3,7 +3,7 @@ import type { Parameter } from '../../../../io/jsonwebtoken/impl/lang/Parameter.
 import type { ParameterBuilder } from '../../../../io/jsonwebtoken/impl/lang/ParameterBuilder.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class DefaultParameterBuilder<T extends Object | number | string | boolean> extends Object implements ParameterBuilder<T> {
+export class DefaultParameterBuilder<T extends unknown> extends Object implements ParameterBuilder<T> {
     constructor(arg0: Class<T>)
     // private collectionType: Class<T[]>;
     // private converter: Converter<T, Object>;

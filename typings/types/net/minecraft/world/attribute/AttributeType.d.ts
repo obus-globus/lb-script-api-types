@@ -5,7 +5,7 @@ import type { ToFloatFunction } from '../../../../net/minecraft/util/ToFloatFunc
 import type { LerpFunction } from '../../../../net/minecraft/world/attribute/LerpFunction.d.ts'
 import type { AttributeModifier } from '../../../../net/minecraft/world/attribute/modifier/AttributeModifier.d.ts'
 import type { AttributeModifier$OperationId } from '../../../../net/minecraft/world/attribute/modifier/AttributeModifier$OperationId.d.ts'
-export class AttributeType<Value extends Object | number | string | boolean> extends Record {
+export class AttributeType<Value extends unknown> extends Record {
     static ofInterpolated(paramvalueCodec: Codec<Object>, parammodifierLibrary: { [key in AttributeModifier$OperationId]: AttributeModifier<Object, Object> }, paramlerp: LerpFunction<Object>): AttributeType<Object>;
     static ofInterpolated(paramvalueCodec: Codec<Object>, parammodifierLibrary: { [key in AttributeModifier$OperationId]: AttributeModifier<Object, Object> }, paramlerp: LerpFunction<Object>, parampartialTickLerp: LerpFunction<Object>, paramtoFloat: (param0: Object | null) => number): AttributeType<Object>;
     static ofNotInterpolated(paramvalueCodec: Codec<Object>): AttributeType<Object>;

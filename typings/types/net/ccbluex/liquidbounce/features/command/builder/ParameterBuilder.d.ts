@@ -4,7 +4,7 @@ import type { Parameter } from '../../../../../../net/ccbluex/liquidbounce/featu
 import type { Parameter$Verificator } from '../../../../../../net/ccbluex/liquidbounce/features/command/Parameter$Verificator.d.ts'
 import type { ParameterBuilder$Companion } from '../../../../../../net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder$Companion.d.ts'
 import type { ClientModule } from '../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
-export class ParameterBuilder<T extends Object | number | string | boolean> extends Object {
+export class ParameterBuilder<T extends unknown> extends Object {
     static BOOLEAN_VALIDATOR: Parameter$Verificator<boolean>;
     static Companion: ParameterBuilder$Companion;
     static INTEGER_VALIDATOR: Parameter$Verificator<number>;

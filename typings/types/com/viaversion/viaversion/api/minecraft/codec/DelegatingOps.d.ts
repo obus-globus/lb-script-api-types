@@ -10,7 +10,7 @@ export class DelegatingOps extends Object implements Ops {
     constructor(arg0: Ops)
     // private delegate: Ops;
     context(): CodecContext;
-    write<V extends Object | number | string | boolean>(arg0: Type<V>, arg1: V): void;
+    write<V extends unknown>(arg0: Type<V>, arg1: V): void;
     writeBoolean(arg0: boolean): void;
     writeByte(arg0: number): void;
     writeBytes(arg0: number[]): void;

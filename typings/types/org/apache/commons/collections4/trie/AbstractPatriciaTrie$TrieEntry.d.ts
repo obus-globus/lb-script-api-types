@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractBitwiseTrie$BasicEntry } from '../../../../../org/apache/commons/collections4/trie/AbstractBitwiseTrie$BasicEntry.d.ts'
-export class AbstractPatriciaTrie$TrieEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractBitwiseTrie$BasicEntry<K, V> {
+export class AbstractPatriciaTrie$TrieEntry<K extends unknown, V extends unknown> extends AbstractBitwiseTrie$BasicEntry<K, V> {
     constructor(arg0: K, arg1: V, arg2: number)
     // private bitIndex: number;
     // private left: AbstractPatriciaTrie$TrieEntry<K, V>;

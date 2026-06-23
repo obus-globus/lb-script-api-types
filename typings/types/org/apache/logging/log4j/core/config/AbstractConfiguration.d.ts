@@ -81,7 +81,7 @@ export abstract class AbstractConfiguration extends AbstractFilterable implement
     // private getAsyncAppenders(all: Appender[]): Appender[];
     getAsyncLoggerConfigDelegate(): AsyncLoggerConfigDelegate;
     getAsyncWaitStrategyFactory(): AsyncWaitStrategyFactory;
-    getComponent<T extends Object | number | string | boolean>(componentName: string): T;
+    getComponent<T extends unknown>(componentName: string): T;
     getConfigurationSource(): ConfigurationSource;
     getConfigurationStrSubstitutor(): StrSubstitutor;
     getCustomLevels(): CustomLevelConfig[];

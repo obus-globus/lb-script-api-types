@@ -1,7 +1,7 @@
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export interface Multimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export interface Multimap<K extends unknown, V extends unknown> extends Object {
     asMap(): Map<K, V[]>;
     clear(): void;
     containsEntry(key: Object, value: Object): boolean;

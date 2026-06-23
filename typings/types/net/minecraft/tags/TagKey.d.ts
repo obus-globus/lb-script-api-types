@@ -9,7 +9,7 @@ import type { Component } from '../../../net/minecraft/network/chat/Component.d.
 import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
-export class TagKey<T extends Object | number | string | boolean> extends Record implements FabricTagKey, TagKeyMixin {
+export class TagKey<T extends unknown> extends Record implements FabricTagKey, TagKeyMixin {
     static codec(paramregistryName: ResourceKey<(Object | null)[]>): Codec<TagKey<Object>>;
     static create(paramregistry: ResourceKey<(Object | null)[]>, paramlocation: Identifier): TagKey<Object>;
     static hashedCodec(paramregistryName: ResourceKey<(Object | null)[]>): Codec<TagKey<Object>>;
@@ -17,7 +17,7 @@ export class TagKey<T extends Object | number | string | boolean> extends Record
     constructor(registry: ResourceKey<T[]>, location: Identifier)
     // private location: Identifier;
     // private registry: ResourceKey<T[]>;
-    cast<E extends Object | number | string | boolean>(registry: ResourceKey<E[]>): Optional<TagKey<E>>;
+    cast<E extends unknown>(registry: ResourceKey<E[]>): Optional<TagKey<E>>;
     equals(o: Object | null): boolean;
     getName(): Component;
     getTranslationKey(): string;

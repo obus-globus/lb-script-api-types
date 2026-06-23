@@ -10,7 +10,7 @@ export class Pack$Position extends Enum<Pack$Position> {
     static valueOf(paramname: string): Pack$Position;
     static values(): (Object | null)[];
     private constructor()
-    insert<T extends Object | number | string | boolean>(list: T[], value: T, converter: (param0: T) => PackSelectionConfig, reverse: boolean): number;
+    insert<T extends unknown>(list: T[], value: T, converter: (param0: T) => PackSelectionConfig, reverse: boolean): number;
     opposite(): Pack$Position;
     name(): "TOP" | "BOTTOM";
 }

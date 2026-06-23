@@ -3,7 +3,7 @@ import type { ObjectBytePair } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectByteImmutablePair<K extends Object | number | string | boolean> extends Object implements ObjectBytePair<K>, Serializable {
+export class ObjectByteImmutablePair<K extends unknown> extends Object implements ObjectBytePair<K>, Serializable {
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: Object | null, paramarg1: number): ObjectByteImmutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ObjectBytePair<Object>;

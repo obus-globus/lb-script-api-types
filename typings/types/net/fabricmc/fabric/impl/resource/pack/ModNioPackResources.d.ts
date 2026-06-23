@@ -32,7 +32,7 @@ export class ModNioPackResources extends Object implements ModPackResources, Pac
     createOverlay(arg0: string): ModNioPackResources;
     getActivationType(): PackActivationType;
     getFabricModMetadata(): ModMetadata;
-    getMetadataSection<T extends Object | number | string | boolean>(arg0: MetadataSectionType<T>): T;
+    getMetadataSection<T extends unknown>(arg0: MetadataSectionType<T>): T;
     getNamespaces(arg0: PackType): string[];
     // private getPath(arg0: string): Path[];
     getResource(arg0: PackType, arg1: Identifier): () => InputStream;

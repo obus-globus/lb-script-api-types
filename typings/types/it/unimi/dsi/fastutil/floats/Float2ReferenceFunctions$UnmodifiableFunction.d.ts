@@ -2,7 +2,7 @@ import type { AbstractFloat2ReferenceFunction } from '../../../../../it/unimi/ds
 import type { Float2ReferenceFunction } from '../../../../../it/unimi/dsi/fastutil/floats/Float2ReferenceFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Float2ReferenceFunctions$UnmodifiableFunction<V extends Object | number | string | boolean> extends AbstractFloat2ReferenceFunction<V> implements Serializable {
+export class Float2ReferenceFunctions$UnmodifiableFunction<V extends unknown> extends AbstractFloat2ReferenceFunction<V> implements Serializable {
     constructor(arg0: (param0: number) => V)
     // private function: (param0: number) => V;
     clear(): void;

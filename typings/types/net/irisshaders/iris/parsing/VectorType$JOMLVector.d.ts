@@ -14,7 +14,7 @@ import type { Vector3f } from '../../../../org/joml/Vector3f.d.ts'
 import type { Vector3i } from '../../../../org/joml/Vector3i.d.ts'
 import type { Vector4f } from '../../../../org/joml/Vector4f.d.ts'
 import type { Vector4i } from '../../../../org/joml/Vector4i.d.ts'
-export class VectorType$JOMLVector<T extends Object | number | string | boolean> extends VectorType {
+export class VectorType$JOMLVector<T extends unknown> extends VectorType {
     static AllArrayVectorTypes: (Object | null)[];
     static AllPrimitives: (Object | null)[];
     static AllVectorTypes: (Object | null)[];

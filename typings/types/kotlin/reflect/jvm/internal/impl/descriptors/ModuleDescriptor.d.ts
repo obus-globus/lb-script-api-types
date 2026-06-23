@@ -7,7 +7,7 @@ import type { FqName } from '../../../../../../kotlin/reflect/jvm/internal/impl/
 import type { Name } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 export interface ModuleDescriptor extends Object, DeclarationDescriptor {
     getBuiltIns(): KotlinBuiltIns;
-    getCapability<T extends Object | number | string | boolean>(arg0: ModuleCapability<T>): T;
+    getCapability<T extends unknown>(arg0: ModuleCapability<T>): T;
     getContainingDeclaration(): DeclarationDescriptor;
     getExpectedByModules(): ModuleDescriptor[];
     getName(): Name;

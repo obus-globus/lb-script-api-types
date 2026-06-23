@@ -5,8 +5,8 @@ import type { Map$Entry } from '../../../../../../../java/util/Map$Entry.d.ts'
 export class UnicodeMap$IteratorX extends Object implements Iterator<Map$Entry<string, T>> {
     private constructor(null_: UnicodeMap$IteratorX)
     // private iterator: Iterator<string>;
-    forEachRemaining<T extends Object | number | string | boolean>(arg0: (param0: Map$Entry<string, T>) => void): void;
+    forEachRemaining<T extends unknown>(arg0: (param0: Map$Entry<string, T>) => void): void;
     hasNext(): boolean;
-    next<T extends Object | number | string | boolean>(): Map$Entry<string, T>;
+    next<T extends unknown>(): Map$Entry<string, T>;
     remove(): void;
 }

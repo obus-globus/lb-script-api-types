@@ -2,7 +2,7 @@ import type { CollectSpliterators$FlatMapSpliterator } from '../../../../com/goo
 import type { Spliterator } from '../../../../java/util/Spliterator.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class CollectSpliterators$FlatMapSpliteratorOfObject<InElementT extends Object | number | string | boolean, OutElementT extends Object | number | string | boolean> extends CollectSpliterators$FlatMapSpliterator<InElementT, OutElementT, Spliterator<OutElementT>> {
+export class CollectSpliterators$FlatMapSpliteratorOfObject<InElementT extends unknown, OutElementT extends unknown> extends CollectSpliterators$FlatMapSpliterator<InElementT, OutElementT, Spliterator<OutElementT>> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

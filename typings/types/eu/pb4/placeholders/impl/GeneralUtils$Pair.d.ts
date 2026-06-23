@@ -1,6 +1,6 @@
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class GeneralUtils$Pair<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Record {
+export class GeneralUtils$Pair<L extends unknown, R extends unknown> extends Record {
     constructor(left: L, right: R)
     // private left: L;
     // private right: R;

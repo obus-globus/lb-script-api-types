@@ -6,6 +6,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Feature$FeatureAccess } from '../../../../org/graalvm/nativeimage/hosted/Feature$FeatureAccess.d.ts'
 export interface Feature$DuringSetupAccess extends Object, Feature$FeatureAccess {
     getApplicationClassLoader(): ClassLoader;
-    registerObjectReachabilityHandler<T extends Object | number | string | boolean>(callback: (param0: T) => void, clazz: Class<T>): void;
+    registerObjectReachabilityHandler<T extends unknown>(callback: (param0: T) => void, clazz: Class<T>): void;
     registerObjectReplacer(replacer: (param0: Object) => Object): void;
 }

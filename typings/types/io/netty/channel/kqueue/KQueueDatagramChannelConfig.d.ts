@@ -15,7 +15,7 @@ export class KQueueDatagramChannelConfig extends KQueueChannelConfig implements 
     getActiveOnOpen(): boolean;
     getInterface(): InetAddress;
     getNetworkInterface(): NetworkInterface;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
@@ -38,7 +38,7 @@ export class KQueueDatagramChannelConfig extends KQueueChannelConfig implements 
     setMaxMessagesPerWrite(arg0: number): KQueueDatagramChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): KQueueDatagramChannelConfig;
     setNetworkInterface(arg0: NetworkInterface): KQueueDatagramChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setRcvAllocTransportProvidesGuess(arg0: boolean): KQueueDatagramChannelConfig;
     setReceiveBufferSize(arg0: number): KQueueDatagramChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): KQueueDatagramChannelConfig;

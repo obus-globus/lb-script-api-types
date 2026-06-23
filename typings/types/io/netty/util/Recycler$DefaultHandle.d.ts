@@ -1,7 +1,7 @@
 import type { Recycler$EnhancedHandle } from '../../../io/netty/util/Recycler$EnhancedHandle.d.ts'
 import type { Recycler$GuardedLocalPool } from '../../../io/netty/util/Recycler$GuardedLocalPool.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class Recycler$DefaultHandle<T extends Object | number | string | boolean> extends Recycler$EnhancedHandle<T> {
+export class Recycler$DefaultHandle<T extends unknown> extends Recycler$EnhancedHandle<T> {
     constructor(arg0: Recycler$GuardedLocalPool<T>)
     // private localPool: Recycler$GuardedLocalPool<T>;
     // private state: number;

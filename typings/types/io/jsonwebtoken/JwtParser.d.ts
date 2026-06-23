@@ -9,7 +9,7 @@ import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 export interface JwtParser extends Parser<Jwt<any, Object>>, Object{
     isSigned(arg0: CharSequence): boolean;
     parse(arg0: CharSequence): Jwt<any, Object>;
-    parse<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: JwtHandler<T>): T;
+    parse<T extends unknown>(arg0: CharSequence, arg1: JwtHandler<T>): T;
     parseClaimsJws(arg0: CharSequence): Jws<{ [key: string]: any }>;
     parseClaimsJwt(arg0: CharSequence): Jwt<{ [key: string]: any }, { [key: string]: any }>;
     parseContentJws(arg0: CharSequence): Jws<number[]>;

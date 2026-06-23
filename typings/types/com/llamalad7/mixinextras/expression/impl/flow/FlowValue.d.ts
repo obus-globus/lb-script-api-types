@@ -13,9 +13,9 @@ export class FlowValue extends Object implements Value {
     parents: FlowValue[];
     readonly type: Type;
     addChild(arg0: FlowValue, arg1: number): void;
-    decorate<V extends Object | number | string | boolean>(arg0: string, arg1: V): void;
+    decorate<V extends unknown>(arg0: string, arg1: V): void;
     finish(): void;
-    getDecoration<V extends Object | number | string | boolean>(arg0: string): V;
+    getDecoration<V extends unknown>(arg0: string): V;
     getDecorations(): { [key: string]: Object };
     getInput(arg0: number): FlowValue;
     getInsn(): AbstractInsnNode;

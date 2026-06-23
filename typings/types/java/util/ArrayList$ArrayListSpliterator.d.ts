@@ -17,11 +17,11 @@ export class ArrayList$ArrayListSpliterator extends Object implements Spliterato
     // private index: number;
     characteristics(): number;
     estimateSize(): number;
-    forEachRemaining<E extends Object | number | string | boolean>(arg0: (param0: E) => void): void;
-    getComparator<E extends Object | number | string | boolean>(): (param0: Object) => boolean;
+    forEachRemaining<E extends unknown>(arg0: (param0: E) => void): void;
+    getComparator<E extends unknown>(): (param0: Object) => boolean;
     getExactSizeIfKnown(): number;
     // private getFence(): number;
     hasCharacteristics(arg0: number): boolean;
-    tryAdvance<E extends Object | number | string | boolean>(arg0: (param0: E) => void): boolean;
-    trySplit<E extends Object | number | string | boolean>(): ArrayList$ArrayListSpliterator;
+    tryAdvance<E extends unknown>(arg0: (param0: E) => void): boolean;
+    trySplit<E extends unknown>(): ArrayList$ArrayListSpliterator;
 }

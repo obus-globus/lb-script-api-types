@@ -15,7 +15,7 @@ import type { Packet } from '../../../../../net/minecraft/network/protocol/Packe
 import type { CustomPacketPayload } from '../../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload.d.ts'
 import type { CustomPacketPayload$Type } from '../../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload$Type.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export abstract class AbstractChanneledNetworkAddon<H extends Object | number | string | boolean> extends AbstractNetworkAddon<H> implements PacketSender, CommonPacketHandler {
+export abstract class AbstractChanneledNetworkAddon<H extends unknown> extends AbstractNetworkAddon<H> implements PacketSender, CommonPacketHandler {
     constructor(arg0: GlobalReceiverRegistry<H>, arg1: Connection, arg2: string)
     // private commonVersion: number;
     // private connection: Connection;

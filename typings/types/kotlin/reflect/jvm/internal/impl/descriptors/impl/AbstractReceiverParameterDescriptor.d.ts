@@ -19,7 +19,7 @@ export abstract class AbstractReceiverParameterDescriptor extends DeclarationDes
     static toString(paramarg0: DeclarationDescriptor): string;
     constructor(arg0: AnnotationDescriptor[])
     constructor(arg0: AnnotationDescriptor[], arg1: Name)
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getContainingDeclaration(): DeclarationDescriptor;
     getContextReceiverParameters(): ReceiverParameterDescriptor[];
     getDispatchReceiverParameter(): ReceiverParameterDescriptor;
@@ -30,7 +30,7 @@ export abstract class AbstractReceiverParameterDescriptor extends DeclarationDes
     getSource(): SourceElement;
     getType(): KotlinType;
     getTypeParameters(): TypeParameterDescriptor[];
-    getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>): V;
     getValue(): ReceiverValue;
     getValueParameters(): ValueParameterDescriptor[];
     getVisibility(): DescriptorVisibility;

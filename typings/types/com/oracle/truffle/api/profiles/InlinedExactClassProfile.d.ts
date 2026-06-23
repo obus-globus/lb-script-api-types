@@ -11,7 +11,7 @@ export class InlinedExactClassProfile extends AbstractInlinedValueProfile {
     private constructor(target: InlineSupport$InlineTarget)
     // private cachedValue: InlineSupport$ReferenceField<Class<Object>>;
     getCachedValue(node: Node): Class<Object>;
-    profile<T extends Object | number | string | boolean>(node: Node, value: T): T;
+    profile<T extends unknown>(node: Node, value: T): T;
     toString(): string;
     toString(node: Node): string;
     toString(profileClass: Class<Object>, uninitialized: boolean, generic: boolean, specialization: string): string;

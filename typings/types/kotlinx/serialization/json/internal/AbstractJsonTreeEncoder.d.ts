@@ -27,7 +27,7 @@ export class AbstractJsonTreeEncoder extends NamedValueEncoder implements JsonEn
     encodeJsonElement(element: JsonElement): void;
     encodeNotNullMark(): void;
     encodeNull(): void;
-    encodeSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): void;
+    encodeSerializableValue<T extends unknown>(serializer: SerializationStrategy<T>, value: T): void;
     protected encodeTaggedBoolean(tag: string, value: boolean): void;
     protected encodeTaggedByte(tag: string, value: number): void;
     protected encodeTaggedChar(tag: string, value: string): void;

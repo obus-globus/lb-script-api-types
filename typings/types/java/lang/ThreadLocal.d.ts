@@ -2,7 +2,7 @@ import type { Thread } from '../../java/lang/Thread.d.ts'
 import type { ThreadLocal$ThreadLocalMap } from '../../java/lang/ThreadLocal$ThreadLocalMap.d.ts'
 import type { Supplier } from '../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export class ThreadLocal<T extends Object | number | string | boolean> extends Object {
+export class ThreadLocal<T extends unknown> extends Object {
     static withInitial(paramarg0: () => Object | null): ThreadLocal<Object>;
     constructor()
     // private threadLocalHashCode: number;

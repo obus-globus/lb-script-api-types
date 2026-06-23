@@ -125,7 +125,7 @@ import type { StructSpecifier } from '../../../../../../io/github/douira/glsl_tr
 import type { ASTVisitor } from '../../../../../../io/github/douira/glsl_transformer/ast/traversal/ASTVisitor.d.ts'
 import type { ContextTracker } from '../../../../../../io/github/douira/glsl_transformer/ast/traversal/ContextTracker.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class ASTBaseVisitor<R extends Object | number | string | boolean> extends Object implements ASTVisitor<R>, ContextTracker {
+export abstract class ASTBaseVisitor<R extends unknown> extends Object implements ASTVisitor<R>, ContextTracker {
     constructor()
     // private context: ASTNode;
     aggregateResult(arg0: R, arg1: R): R;

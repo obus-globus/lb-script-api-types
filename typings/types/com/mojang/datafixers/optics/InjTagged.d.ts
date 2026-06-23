@@ -8,7 +8,7 @@ import type { Cocartesian$Mu } from '../../../../com/mojang/datafixers/optics/pr
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class InjTagged<K extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends Object implements Prism<Pair<K, Object>, Pair<K, Object>, A, B> {
+export class InjTagged<K extends unknown, A extends unknown, B extends unknown> extends Object implements Prism<Pair<K, Object>, Pair<K, Object>, A, B> {
     static unbox(paramarg0: App2<Prism$Mu<Object, Object>, Object, Object>): Prism<Object, Object, Object, Object>;
     constructor(arg0: K)
     // private key: K;

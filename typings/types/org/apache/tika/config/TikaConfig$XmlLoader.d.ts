@@ -4,7 +4,7 @@ import type { Param } from '../../../../org/apache/tika/config/Param.d.ts'
 import type { ServiceLoader } from '../../../../org/apache/tika/config/ServiceLoader.d.ts'
 import type { MimeTypes } from '../../../../org/apache/tika/mime/MimeTypes.d.ts'
 import type { Element } from '../../../../org/w3c/dom/Element.d.ts'
-export abstract class TikaConfig$XmlLoader<CT extends Object | number | string | boolean, T extends Object | number | string | boolean> extends Object {
+export abstract class TikaConfig$XmlLoader<CT extends unknown, T extends unknown> extends Object {
     private constructor()
     createComposite(arg0: Class<T>, arg1: T[], arg2: Class<T>[], arg3: { [key: string]: Param<Object> }, arg4: MimeTypes, arg5: ServiceLoader): T;
     createComposite(arg0: T[], arg1: MimeTypes, arg2: ServiceLoader): CT;

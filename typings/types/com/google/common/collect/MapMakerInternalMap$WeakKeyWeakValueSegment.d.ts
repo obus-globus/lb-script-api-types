@@ -4,7 +4,7 @@ import type { MapMakerInternalMap$WeakKeyWeakValueEntry } from '../../../../com/
 import type { MapMakerInternalMap$WeakValueReference } from '../../../../com/google/common/collect/MapMakerInternalMap$WeakValueReference.d.ts'
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class MapMakerInternalMap$WeakKeyWeakValueSegment<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends MapMakerInternalMap$Segment<K, V, MapMakerInternalMap$WeakKeyWeakValueEntry<K, V>, MapMakerInternalMap$WeakKeyWeakValueSegment<K, V>> {
+export class MapMakerInternalMap$WeakKeyWeakValueSegment<K extends unknown, V extends unknown> extends MapMakerInternalMap$Segment<K, V, MapMakerInternalMap$WeakKeyWeakValueEntry<K, V>, MapMakerInternalMap$WeakKeyWeakValueSegment<K, V>> {
     constructor(map: Map<K, V>, initialCapacity: number)
     // private queueForKeys: ReferenceQueue<K>;
     // private queueForValues: ReferenceQueue<V>;

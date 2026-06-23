@@ -23,6 +23,6 @@ export class CharSource$CharSequenceCharSource extends CharSource {
     read(): string;
     readFirstLine(): string;
     readLines(): string[];
-    readLines<T extends Object | number | string | boolean>(processor: LineProcessor<T>): T;
+    readLines<T extends unknown>(processor: LineProcessor<T>): T;
     toString(): string;
 }

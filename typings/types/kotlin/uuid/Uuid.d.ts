@@ -18,9 +18,9 @@ export class Uuid extends Object implements Serializable, Comparable<Uuid> {
     toByteArray(): number[];
     toHexDashString(): string;
     toHexString(): string;
-    toLongs<T extends Object | number | string | boolean>(action: (param0: number, param1: number) => T): T;
+    toLongs<T extends unknown>(action: (param0: number, param1: number) => T): T;
     toString(): string;
     toUByteArray(): (Object | null)[];
-    toULongs<T extends Object | number | string | boolean>(action: (param0: ULong, param1: ULong) => T): T;
+    toULongs<T extends unknown>(action: (param0: ULong, param1: ULong) => T): T;
     // private writeReplace(): Object;
 }

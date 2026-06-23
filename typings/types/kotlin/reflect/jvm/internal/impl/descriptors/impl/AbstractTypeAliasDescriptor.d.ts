@@ -24,7 +24,7 @@ export abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
     // private storageManager: StorageManager;
     readonly typeConstructor: AbstractTypeAliasDescriptor$typeConstructor$1;
     // private visibilityImpl: DescriptorVisibility;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     computeDefaultType(): SimpleType;
     getClassDescriptor(): ClassDescriptor;
     getDeclaredTypeParameters(): TypeParameterDescriptor[];

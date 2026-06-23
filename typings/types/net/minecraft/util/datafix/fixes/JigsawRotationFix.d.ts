@@ -10,6 +10,6 @@ import type { AbstractBlockPropertyFix } from '../../../../../net/minecraft/util
 export class JigsawRotationFix extends AbstractBlockPropertyFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
-    fixProperties<T extends Object | number | string | boolean>(blockId: string, properties: Dynamic<T>): Dynamic<T>;
+    fixProperties<T extends unknown>(blockId: string, properties: Dynamic<T>): Dynamic<T>;
     shouldFix(blockId: string): boolean;
 }

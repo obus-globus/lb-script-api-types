@@ -6,7 +6,7 @@ import type { AtomicSafeInitializer$Builder } from '../../../../../org/apache/co
 import type { ConcurrentException } from '../../../../../org/apache/commons/lang3/concurrent/ConcurrentException.d.ts'
 import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
-export class AtomicSafeInitializer<T extends Object | number | string | boolean> extends AbstractConcurrentInitializer<T, ConcurrentException> {
+export class AtomicSafeInitializer<T extends unknown> extends AbstractConcurrentInitializer<T, ConcurrentException> {
     static NUL: () => Object | null;
     static builder(): AtomicSafeInitializer$Builder<AtomicSafeInitializer<Object>, Object>;
     constructor()

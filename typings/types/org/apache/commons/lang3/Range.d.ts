@@ -1,7 +1,7 @@
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Range<T extends Object | number | string | boolean> extends Object implements Serializable {
+export class Range<T extends unknown> extends Object implements Serializable {
     static between(paramarg0: Object | null, paramarg1: Object | null): Range<Object>;
     static between(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object) => boolean): Range<Object>;
     static is(paramarg0: Object | null): Range<Object>;

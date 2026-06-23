@@ -1,7 +1,7 @@
 import type { AbstractFloat2ObjectMap$BasicEntry } from '../../../../../it/unimi/dsi/fastutil/floats/AbstractFloat2ObjectMap$BasicEntry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Float2ObjectAVLTreeMap$Entry<V extends Object | number | string | boolean> extends AbstractFloat2ObjectMap$BasicEntry<V> implements Cloneable {
+export class Float2ObjectAVLTreeMap$Entry<V extends unknown> extends AbstractFloat2ObjectMap$BasicEntry<V> implements Cloneable {
     constructor()
     constructor(arg0: number, arg1: V)
     // private info: number;

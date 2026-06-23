@@ -2,7 +2,7 @@ import type { CharObjectPair } from '../../../../../it/unimi/dsi/fastutil/chars/
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class CharObjectMutablePair<V extends Object | number | string | boolean> extends Object implements CharObjectPair<V>, Serializable {
+export class CharObjectMutablePair<V extends unknown> extends Object implements CharObjectPair<V>, Serializable {
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: string, paramarg1: Object | null): CharObjectMutablePair<Object>;
     static of(paramarg0: string, paramarg1: Object | null): CharObjectPair<Object>;

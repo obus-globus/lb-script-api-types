@@ -27,7 +27,7 @@ export class FunctionCallExpression extends TerminalExpression {
     cloneInto(arg0: Root): FunctionCallExpression;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
-    expressionAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    expressionAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     getExpressionType(): Expression$ExpressionType;
     getFunctionName(): Identifier;
     getFunctionSpecifier(): TypeSpecifier;

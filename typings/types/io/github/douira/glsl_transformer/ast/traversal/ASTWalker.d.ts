@@ -3,7 +3,7 @@ import type { InnerASTNode } from '../../../../../../io/github/douira/glsl_trans
 import type { ASTBaseVisitor } from '../../../../../../io/github/douira/glsl_transformer/ast/traversal/ASTBaseVisitor.d.ts'
 import type { ASTListener } from '../../../../../../io/github/douira/glsl_transformer/ast/traversal/ASTListener.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ASTWalker<R extends Object | number | string | boolean> extends ASTBaseVisitor<R> {
+export class ASTWalker<R extends unknown> extends ASTBaseVisitor<R> {
     static walk(paramarg0: ASTListener, paramarg1: ASTNode): Object | null;
     constructor()
     private constructor(arg0: ASTListener)

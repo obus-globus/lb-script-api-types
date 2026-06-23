@@ -7,7 +7,7 @@ export class TelemetryPropertyMap extends Object {
     static createCodec(paramproperties: TelemetryProperty<Object>[]): MapCodec<TelemetryPropertyMap>;
     private constructor(entries: Map<TelemetryProperty<Object>, Object>)
     // private entries: Map<TelemetryProperty<Object>, Object>;
-    get<T extends Object | number | string | boolean>(property: TelemetryProperty<T>): T;
+    get<T extends unknown>(property: TelemetryProperty<T>): T;
     propertySet(): TelemetryProperty<Object>[];
     toString(): string;
 }

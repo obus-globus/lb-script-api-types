@@ -13,7 +13,7 @@ import type { MouseButtonEvent } from '../../../net/minecraft/client/input/Mouse
 import type { SoundManager } from '../../../net/minecraft/client/sounds/SoundManager.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../net/minecraft/network/chat/MutableComponent.d.ts'
-export class OptionInstance$OptionInstanceSliderButton<N extends Object | number | string | boolean> extends AbstractOptionSliderButton implements ResettableOptionWidget {
+export class OptionInstance$OptionInstanceSliderButton<N extends unknown> extends AbstractOptionSliderButton implements ResettableOptionWidget {
     static DEFAULT_HEIGHT: number;
     static defaultInactiveMessage(paramactiveMessage: Component): Component;
     static playButtonClickSound(paramsoundManager: SoundManager): void;

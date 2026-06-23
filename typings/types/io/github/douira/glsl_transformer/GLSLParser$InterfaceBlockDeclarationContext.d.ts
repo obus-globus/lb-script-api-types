@@ -16,7 +16,7 @@ export class GLSLParser$InterfaceBlockDeclarationContext extends GLSLParser$Decl
     IDENTIFIER(): TerminalNode[];
     IDENTIFIER(arg0: number): TerminalNode;
     SEMICOLON(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     arraySpecifier(): GLSLParser$ArraySpecifierContext;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;

@@ -6,7 +6,7 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { FailableBiConsumer } from '../../../../../org/apache/commons/lang3/function/FailableBiConsumer.d.ts'
 import type { FailableBiFunction } from '../../../../../org/apache/commons/lang3/function/FailableBiFunction.d.ts'
-export abstract class Pair<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object implements Serializable, Comparable<Pair<L, R>>, Map$Entry<L, R> {
+export abstract class Pair<L extends unknown, R extends unknown> extends Object implements Serializable, Comparable<Pair<L, R>>, Map$Entry<L, R> {
     static EMPTY_ARRAY: Object | null;
     static comparingByKey(): (param0: Object) => boolean;
     static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
@@ -21,7 +21,7 @@ export abstract class Pair<L extends Object | number | string | boolean, R exten
     readonly key: L;
     readonly value: R;
     accept<E extends Throwable>(arg0: (param0: L, param1: R) => void): void;
-    apply<V extends Object | number | string | boolean, E extends Throwable>(arg0: (param0: L, param1: R) => V): V;
+    apply<V extends unknown, E extends Throwable>(arg0: (param0: L, param1: R) => V): V;
     compareTo(arg0: Pair<L, R>): number;
     equals(arg0: Object | null): boolean;
     getLeft(): L;

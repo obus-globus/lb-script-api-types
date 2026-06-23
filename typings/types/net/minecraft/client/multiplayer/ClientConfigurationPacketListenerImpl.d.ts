@@ -61,6 +61,6 @@ export class ClientConfigurationPacketListenerImpl extends ClientCommonPacketLis
     isAcceptingMessages(): boolean;
     onDisconnect(reason: DisconnectionDetails): void;
     protocol(): ConnectionProtocol;
-    // private runWithResources<T extends Object | number | string | boolean>(operation: (param0: (param0: Identifier) => Optional<Resource>) => T): T;
+    // private runWithResources<T extends unknown>(operation: (param0: (param0: Identifier) => Optional<Resource>) => T): T;
     tick(): void;
 }

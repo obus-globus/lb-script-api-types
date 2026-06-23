@@ -4,7 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { GlobalReceiverRegistry } from '../../../../../net/fabricmc/fabric/impl/networking/GlobalReceiverRegistry.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Logger } from '../../../../../org/slf4j/Logger.d.ts'
-export abstract class AbstractNetworkAddon<H extends Object | number | string | boolean> extends Object {
+export abstract class AbstractNetworkAddon<H extends unknown> extends Object {
     constructor(arg0: GlobalReceiverRegistry<H>, arg1: string)
     // private disconnected: AtomicBoolean;
     // private handlers: Map<Identifier, H>;

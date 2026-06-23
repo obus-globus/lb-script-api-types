@@ -19,7 +19,7 @@ export abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
     readonly name: Name;
     readonly thisAsReceiverParameter: NotNullLazyValue<ReceiverParameterDescriptor>;
     readonly unsubstitutedInnerClassesScope: NotNullLazyValue<MemberScope>;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getContextReceivers(): ReceiverParameterDescriptor[];
     getDefaultType(): SimpleType;
     getMemberScope(arg0: TypeSubstitution): MemberScope;

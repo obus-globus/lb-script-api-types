@@ -4,7 +4,7 @@ import type { ProgressiveFuture } from '../../../../io/netty/util/concurrent/Pro
 import type { Promise } from '../../../../io/netty/util/concurrent/Promise.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-export interface ProgressivePromise<V extends Object | number | string | boolean> extends ProgressiveFuture<V>, Promise<V>, Object{
+export interface ProgressivePromise<V extends unknown> extends ProgressiveFuture<V>, Promise<V>, Object{
     addListener(arg0: GenericFutureListener<Future<V>>): ProgressivePromise<V>;
     addListeners(arg0: GenericFutureListener<Future<V>>[]): ProgressivePromise<V>;
     await(): ProgressivePromise<V>;

@@ -18,7 +18,7 @@ import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/
 import type { ObjectOutputStream } from '../../../../../java/io/ObjectOutputStream.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Object2ObjectFunctions$SynchronizedFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Object2ObjectFunction<K, V>, Serializable {
+export class Object2ObjectFunctions$SynchronizedFunction<K extends unknown, V extends unknown> extends Object implements Object2ObjectFunction<K, V>, Serializable {
     constructor(arg0: (param0: Object) => V)
     constructor(arg0: (param0: Object) => V, arg1: Object)
     // private function: (param0: Object) => V;
@@ -29,8 +29,8 @@ export class Object2ObjectFunctions$SynchronizedFunction<K extends Object | numb
     andThenFloat(arg0: (param0: Object) => number): (param0: Object) => number;
     andThenInt(arg0: (param0: Object) => number): (param0: Object) => number;
     andThenLong(arg0: (param0: Object) => number): (param0: Object) => number;
-    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => T): (param0: Object) => T;
-    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => T): (param0: Object) => T;
+    andThenObject<T extends unknown>(arg0: (param0: Object) => T): (param0: Object) => T;
+    andThenReference<T extends unknown>(arg0: (param0: Object) => T): (param0: Object) => T;
     andThenShort(arg0: (param0: Object) => number): (param0: Object) => number;
     apply(arg0: K): V;
     clear(): void;
@@ -40,8 +40,8 @@ export class Object2ObjectFunctions$SynchronizedFunction<K extends Object | numb
     composeFloat(arg0: (param0: number) => K): (param0: number) => V;
     composeInt(arg0: (param0: number) => K): (param0: number) => V;
     composeLong(arg0: (param0: number) => K): (param0: number) => V;
-    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => V;
-    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => V;
+    composeObject<T extends unknown>(arg0: (param0: Object) => K): (param0: Object) => V;
+    composeReference<T extends unknown>(arg0: (param0: Object) => K): (param0: Object) => V;
     composeShort(arg0: (param0: number) => K): (param0: number) => V;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): V;

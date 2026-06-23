@@ -15,19 +15,19 @@ export class Object2ObjectOpenCustomHashMap$MapEntry extends Object implements P
     constructor(null_: Object2ObjectOpenCustomHashMap$MapEntry, arg1: number)
     // private index: number;
     equals(arg0: Object | null): boolean;
-    first<K extends Object | number | string | boolean>(): K;
-    first<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: K): Pair<K, V>;
+    first<K extends unknown>(): K;
+    first<K extends unknown, V extends unknown>(arg0: K): Pair<K, V>;
     hashCode(): number;
-    key<K extends Object | number | string | boolean>(): K;
-    key<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: K): Pair<K, V>;
-    left<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: K): Pair<K, V>;
-    left<K extends Object | number | string | boolean>(): K;
-    right<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: V): Pair<K, V>;
-    right<V extends Object | number | string | boolean>(): V;
-    second<V extends Object | number | string | boolean>(): V;
-    second<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: V): Pair<K, V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    key<K extends unknown>(): K;
+    key<K extends unknown, V extends unknown>(arg0: K): Pair<K, V>;
+    left<K extends unknown, V extends unknown>(arg0: K): Pair<K, V>;
+    left<K extends unknown>(): K;
+    right<K extends unknown, V extends unknown>(arg0: V): Pair<K, V>;
+    right<V extends unknown>(): V;
+    second<V extends unknown>(): V;
+    second<K extends unknown, V extends unknown>(arg0: V): Pair<K, V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
-    value<V extends Object | number | string | boolean>(): V;
-    value<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: V): Pair<K, V>;
+    value<V extends unknown>(): V;
+    value<K extends unknown, V extends unknown>(arg0: V): Pair<K, V>;
 }

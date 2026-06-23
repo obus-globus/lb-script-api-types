@@ -3,7 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AttributeRange } from '../../../../net/minecraft/world/attribute/AttributeRange.d.ts'
 import type { AttributeType } from '../../../../net/minecraft/world/attribute/AttributeType.d.ts'
 import type { EnvironmentAttribute$Builder } from '../../../../net/minecraft/world/attribute/EnvironmentAttribute$Builder.d.ts'
-export class EnvironmentAttribute<Value extends Object | number | string | boolean> extends Object {
+export class EnvironmentAttribute<Value extends unknown> extends Object {
     static builder(paramtype: AttributeType<Object>): EnvironmentAttribute$Builder<Object>;
     private constructor(type: AttributeType<Value>, defaultValue: Value, valueRange: AttributeRange<Value>, isSyncable: boolean, isPositional: boolean, isSpatiallyInterpolated: boolean)
     // private defaultValue: Value;

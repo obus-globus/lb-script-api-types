@@ -10,11 +10,11 @@ export class NioSocketChannel$NioSocketChannelConfig extends DefaultSocketChanne
     autoReadCleared(): void;
     // private calculateMaxBytesPerGatheringWrite(): void;
     getMaxBytesPerGatheringWrite(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     // private jdkChannel(): SocketChannel;
     setMaxBytesPerGatheringWrite(arg0: number): void;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setSendBufferSize(arg0: number): NioSocketChannel$NioSocketChannelConfig;
 }

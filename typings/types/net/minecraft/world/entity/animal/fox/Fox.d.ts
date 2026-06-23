@@ -162,7 +162,7 @@ export class Fox extends Animal {
     // private addTrustedEntity(reference: EntityReference<LivingEntity>): void;
     // private addTrustedEntity(entity: LivingEntity): void;
     aiStep(): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     canDispenserEquipIntoSlot(slot: EquipmentSlot): boolean;
     // private canEat(itemInMouth: ItemStack): boolean;
@@ -174,7 +174,7 @@ export class Fox extends Animal {
     dropAllDeathLoot(level: ServerLevel, source: DamageSource): void;
     // private dropItemStack(itemStack: ItemStack): void;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): Fox;
     getCrouchAmount(a: number): number;

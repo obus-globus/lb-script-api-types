@@ -3,7 +3,7 @@ import type { ElementOrder } from '../../../../com/google/common/graph/ElementOr
 import type { Graph } from '../../../../com/google/common/graph/Graph.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface ValueGraph<N extends Object | number | string | boolean, V extends Object | number | string | boolean> extends BaseGraph<N>, Object{
+export interface ValueGraph<N extends unknown, V extends unknown> extends BaseGraph<N>, Object{
     adjacentNodes(node: N): N[];
     allowsSelfLoops(): boolean;
     asGraph(): Graph<N>;

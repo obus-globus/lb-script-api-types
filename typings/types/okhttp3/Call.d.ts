@@ -15,9 +15,9 @@ export interface Call extends Object, Cloneable {
     isCanceled(): boolean;
     isExecuted(): boolean;
     request(): Request;
-    tag<T extends Object | number | string | boolean>(type: Class<T>, computeIfAbsent: () => T): T;
-    tag<T extends Object | number | string | boolean>(type: Class<T>): T | null;
-    tag<T extends Object | number | string | boolean>(type: KClass<T>): T | null;
-    tag<T extends Object | number | string | boolean>(type: KClass<T>, computeIfAbsent: () => T): T;
+    tag<T extends unknown>(type: Class<T>, computeIfAbsent: () => T): T;
+    tag<T extends unknown>(type: Class<T>): T | null;
+    tag<T extends unknown>(type: KClass<T>): T | null;
+    tag<T extends unknown>(type: KClass<T>, computeIfAbsent: () => T): T;
     timeout(): Timeout;
 }

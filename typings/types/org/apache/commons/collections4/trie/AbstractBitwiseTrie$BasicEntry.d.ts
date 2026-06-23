@@ -2,7 +2,7 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
-export abstract class AbstractBitwiseTrie$BasicEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Serializable, Map$Entry<K, V> {
+export abstract class AbstractBitwiseTrie$BasicEntry<K extends unknown, V extends unknown> extends Object implements Serializable, Map$Entry<K, V> {
     static comparingByKey(): (param0: Object) => boolean;
     static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static comparingByValue(): (param0: Object) => boolean;

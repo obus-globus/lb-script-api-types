@@ -37,8 +37,8 @@ import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPri
 export interface ServerLevelAccessor extends Object, LevelAccessor{
     addFreshEntityWithPassengers(entity: Entity): void;
     addParticle(particle: ParticleOptions, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
-    createTick<T extends Object | number | string | boolean>(pos: BlockPos, type: T, tickDelay: number): ScheduledTick<T>;
-    createTick<T extends Object | number | string | boolean>(pos: BlockPos, type: T, tickDelay: number, priority: TickPriority): ScheduledTick<T>;
+    createTick<T extends unknown>(pos: BlockPos, type: T, tickDelay: number): ScheduledTick<T>;
+    createTick<T extends unknown>(pos: BlockPos, type: T, tickDelay: number, priority: TickPriority): ScheduledTick<T>;
     destroyBlock(pos: BlockPos, dropResources: boolean, breaker: Entity, updateLimit: number): boolean;
     dimensionType(): DimensionType;
     enabledFeatures(): FeatureFlagSet;

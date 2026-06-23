@@ -16,7 +16,7 @@ import type { BiFunction } from '../../../../../../../java/util/function/BiFunct
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class DynamicMapCodec<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Codec<Map<K, V>> {
+export class DynamicMapCodec<K extends unknown, V extends unknown> extends Object implements Codec<Map<K, V>> {
     static BOOLEAN: Codec<boolean>;
     static BYTE: Codec<number>;
     static BYTE_ARRAY: Codec<number[]>;
@@ -60,24 +60,24 @@ export class DynamicMapCodec<K extends Object | number | string | boolean, V ext
     // private keyCodec: Codec<K>;
     // private keyToValueCodec: (param0: K) => Codec<V>;
     compactListOf(): Codec<Map<K, V>[]>;
-    converterFlatMap<N extends Object | number | string | boolean>(arg0: (param0: DataConverter<Object>, param1: N) => Result<Map<K, V>>, arg1: (param0: DataConverter<Object>, param1: Map<K, V>) => Result<N>): Codec<N>;
+    converterFlatMap<N extends unknown>(arg0: (param0: DataConverter<Object>, param1: N) => Result<Map<K, V>>, arg1: (param0: DataConverter<Object>, param1: Map<K, V>) => Result<N>): Codec<N>;
     converterVerified(arg0: (param0: DataConverter<Object>, param1: Map<K, V>) => Result<void>): Codec<Map<K, V>>;
-    deserialize<S extends Object | number | string | boolean>(arg0: DataConverter<S>, arg1: S): Result<Map<K, V>>;
-    flatMap<N extends Object | number | string | boolean>(arg0: (param0: N) => Result<Map<K, V>>, arg1: (param0: Map<K, V>) => Result<N>): Codec<N>;
+    deserialize<S extends unknown>(arg0: DataConverter<S>, arg1: S): Result<Map<K, V>>;
+    flatMap<N extends unknown>(arg0: (param0: N) => Result<Map<K, V>>, arg1: (param0: Map<K, V>) => Result<N>): Codec<N>;
     listOf(): Codec<Map<K, V>[]>;
     listOf(arg0: number): Codec<Map<K, V>[]>;
     listOf(arg0: number, arg1: number): Codec<Map<K, V>[]>;
-    map<N extends Object | number | string | boolean>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => N): Codec<N>;
+    map<N extends unknown>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => N): Codec<N>;
     mapCodec(arg0: string): FieldMapCodec$Builder$Stage1<Map<K, V>>;
-    mapThrowing<N extends Object | number | string | boolean>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => N): Codec<N>;
+    mapThrowing<N extends unknown>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => N): Codec<N>;
     nonEmptyList(): Codec<Map<K, V>[]>;
     optionalListOf(): Codec<Map<K, V>[]>;
     optionalListOf(arg0: number): Codec<Map<K, V>[]>;
     optionalListOf(arg0: number, arg1: number): Codec<Map<K, V>[]>;
-    serialize<S extends Object | number | string | boolean>(arg0: DataConverter<S>, arg1: Map<K, V>): Result<S>;
-    typed<N extends Object | number | string | boolean>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<N>): Codec<N>;
-    typed<N extends Object | number | string | boolean>(arg0: string, arg1: (param0: N) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<N>): Codec<N>;
-    typedMap<N extends Object | number | string | boolean>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<N>): MapCodec<N>;
-    typedMap<N extends Object | number | string | boolean>(arg0: string, arg1: (param0: N) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<N>): MapCodec<N>;
+    serialize<S extends unknown>(arg0: DataConverter<S>, arg1: Map<K, V>): Result<S>;
+    typed<N extends unknown>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<N>): Codec<N>;
+    typed<N extends unknown>(arg0: string, arg1: (param0: N) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<N>): Codec<N>;
+    typedMap<N extends unknown>(arg0: (param0: N) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<N>): MapCodec<N>;
+    typedMap<N extends unknown>(arg0: string, arg1: (param0: N) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<N>): MapCodec<N>;
     verified(arg0: (param0: Map<K, V>) => Result<void>): Codec<Map<K, V>>;
 }

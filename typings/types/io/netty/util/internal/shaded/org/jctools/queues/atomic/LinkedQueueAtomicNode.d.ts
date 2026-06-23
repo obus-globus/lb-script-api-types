@@ -1,6 +1,6 @@
 import type { AtomicReference } from '../../../../../../../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
-export class LinkedQueueAtomicNode<E extends Object | number | string | boolean> extends AtomicReference<LinkedQueueAtomicNode<E>> {
+export class LinkedQueueAtomicNode<E extends unknown> extends AtomicReference<LinkedQueueAtomicNode<E>> {
     constructor()
     constructor(arg0: E)
     // private value: E;

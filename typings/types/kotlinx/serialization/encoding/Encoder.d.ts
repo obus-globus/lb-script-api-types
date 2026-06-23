@@ -18,8 +18,8 @@ export interface Encoder extends Object{
     encodeLong(value: number): void;
     encodeNotNullMark(): void;
     encodeNull(): void;
-    encodeNullableSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T | null): void;
-    encodeSerializableValue<T extends Object | number | string | boolean>(serializer: SerializationStrategy<T>, value: T): void;
+    encodeNullableSerializableValue<T extends unknown>(serializer: SerializationStrategy<T>, value: T | null): void;
+    encodeSerializableValue<T extends unknown>(serializer: SerializationStrategy<T>, value: T): void;
     encodeShort(value: number): void;
     encodeString(value: string): void;
 }

@@ -6,7 +6,7 @@ import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { TypeVariable } from '../../../../java/lang/reflect/TypeVariable.d.ts'
 import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Invokable$ConstructorInvokable<T extends Object | number | string | boolean> extends Invokable<T, T> {
+export class Invokable$ConstructorInvokable<T extends unknown> extends Invokable<T, T> {
     static DECLARED: number;
     static PUBLIC: number;
     static from(paramconstructor: Constructor<Object>): Invokable<Object, Object>;

@@ -5,7 +5,7 @@ import type { TextTrieMap$ResultHandler } from '../../../../com/ibm/icu/impl/Tex
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class TextTrieMap<V extends Object | number | string | boolean> extends Object {
+export class TextTrieMap<V extends unknown> extends Object {
     constructor(arg0: boolean)
     // private _ignoreCase: boolean;
     // private _root: TextTrieMap$Node;

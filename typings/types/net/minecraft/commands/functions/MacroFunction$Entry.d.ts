@@ -4,7 +4,7 @@ import type { ExecutionContext } from '../../../../net/minecraft/commands/execut
 import type { Frame } from '../../../../net/minecraft/commands/execution/Frame.d.ts'
 import type { UnboundEntryAction } from '../../../../net/minecraft/commands/execution/UnboundEntryAction.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
-export interface MacroFunction$Entry<T extends Object | number | string | boolean> extends Object {
+export interface MacroFunction$Entry<T extends unknown> extends Object {
     instantiate(substitutions: string[], dispatcher: CommandDispatcher<T>, funtionId: Identifier): (param0: T, param1: ExecutionContext<T>, param2: Frame) => void;
     parameters(): (Object | null)[];
 }

@@ -2,9 +2,9 @@ import type { EntityType } from '../../../../../../com/viaversion/viaversion/api
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface StoredEntityData extends Object{
-    get<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    get<T extends unknown>(arg0: Class<T>): T;
     has(arg0: Class<Object>): boolean;
     put(arg0: Object): void;
-    remove<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    remove<T extends unknown>(arg0: Class<T>): T;
     type(): EntityType;
 }

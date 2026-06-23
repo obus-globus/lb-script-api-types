@@ -14,9 +14,9 @@ export class AllEqualOrdering extends Ordering<Object> implements Serializable {
     static usingToString(): Ordering<Object>;
     constructor()
     compare(left: Object, right: Object): number;
-    immutableSortedCopy<E extends Object | number | string | boolean>(iterable: E[]): E[];
+    immutableSortedCopy<E extends unknown>(iterable: E[]): E[];
     // private readResolve(): Object;
-    reverse<S extends Object | number | string | boolean>(): Ordering<S>;
-    sortedCopy<E extends Object | number | string | boolean>(iterable: E[]): E[];
+    reverse<S extends unknown>(): Ordering<S>;
+    sortedCopy<E extends unknown>(iterable: E[]): E[];
     toString(): string;
 }

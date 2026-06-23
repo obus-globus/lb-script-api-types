@@ -1,5 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class Pair<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object {
+export class Pair<L extends unknown, R extends unknown> extends Object {
     static create(paramleft: Object | null, paramright: Object | null): Pair<Object, Object>;
     static createLeft(paramleft: Object | null): Pair<Object, Object>;
     static createRight(paramright: Object | null): Pair<Object, Object>;

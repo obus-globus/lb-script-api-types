@@ -19,7 +19,7 @@ export class DeclarationMember extends InnerASTNode {
     arraySpecifier: ArraySpecifier;
     initializer: Initializer;
     name: Identifier;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): DeclarationMember;
     cloneInto(arg0: Root): DeclarationMember;
     enterNode(arg0: ASTListener): void;

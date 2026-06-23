@@ -6,7 +6,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CombinedFuture$AsyncCallableInterruptibleTask extends CombinedFuture$CombinedFutureInterruptibleTask<Object> {
     constructor(null_: CombinedFuture$AsyncCallableInterruptibleTask, listenerExecutor: Executor)
     // private callable: () => ListenableFuture<V>;
-    runInterruptibly<V extends Object | number | string | boolean>(): ListenableFuture<V>;
-    setValue<V extends Object | number | string | boolean>(value: ListenableFuture<V>): void;
+    runInterruptibly<V extends unknown>(): ListenableFuture<V>;
+    setValue<V extends unknown>(value: ListenableFuture<V>): void;
     toPendingString(): string;
 }

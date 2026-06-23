@@ -8,5 +8,5 @@ export interface EnchantmentBuilderAccessor extends Object{
     getDefinition(): Enchantment$EnchantmentDefinition;
     getEffectMap(): DataComponentMap$Builder;
     getExclusiveSet(): Holder<Enchantment>[];
-    invokeGetEffectsList<E extends Object | number | string | boolean>(arg0: DataComponentType<E[]>): E[];
+    invokeGetEffectsList<E extends unknown>(arg0: DataComponentType<E[]>): E[];
 }

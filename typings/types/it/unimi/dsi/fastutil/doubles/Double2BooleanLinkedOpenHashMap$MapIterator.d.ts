@@ -1,6 +1,6 @@
 import type { Double2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2BooleanMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Double2BooleanLinkedOpenHashMap$MapIterator<ConsumerType extends Object | number | string | boolean> extends Object {
+export abstract class Double2BooleanLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: Double2BooleanLinkedOpenHashMap$MapIterator<ConsumerType>)
     private constructor(null_: Double2BooleanLinkedOpenHashMap$MapIterator<ConsumerType>, arg1: number)
     // private curr: number;

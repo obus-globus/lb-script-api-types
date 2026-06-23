@@ -8,7 +8,7 @@ import type { LongBinaryOperator } from '../../../java/util/function/LongBinaryO
 import type { ToLongFunction } from '../../../java/util/function/ToLongFunction.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
-export class ConcurrentHashMap$MapReduceEntriesToLongTask<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ConcurrentHashMap$BulkTask<K, V, number> {
+export class ConcurrentHashMap$MapReduceEntriesToLongTask<K extends unknown, V extends unknown> extends ConcurrentHashMap$BulkTask<K, V, number> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

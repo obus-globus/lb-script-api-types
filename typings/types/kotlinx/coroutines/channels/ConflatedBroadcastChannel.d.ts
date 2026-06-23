@@ -7,7 +7,7 @@ import type { ChannelResult } from '../../../kotlinx/coroutines/channels/Channel
 import type { ReceiveChannel } from '../../../kotlinx/coroutines/channels/ReceiveChannel.d.ts'
 import type { SendChannel } from '../../../kotlinx/coroutines/channels/SendChannel.d.ts'
 import type { SelectClause2 } from '../../../kotlinx/coroutines/selects/SelectClause2.d.ts'
-export class ConflatedBroadcastChannel<E extends Object | number | string | boolean> extends Object implements BroadcastChannel<E> {
+export class ConflatedBroadcastChannel<E extends unknown> extends Object implements BroadcastChannel<E> {
     constructor()
     constructor(value: E)
     private constructor(broadcast: BroadcastChannelImpl<E>)

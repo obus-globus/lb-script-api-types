@@ -11,7 +11,7 @@ export interface ScheduledExecutorService extends ExecutorService, Object {
     isShutdown(): boolean;
     isTerminated(): boolean;
     schedule(arg0: () => void, arg1: number, arg2: TimeUnit): ScheduledFuture<Object>;
-    schedule<V extends Object | number | string | boolean>(arg0: () => V, arg1: number, arg2: TimeUnit): ScheduledFuture<V>;
+    schedule<V extends unknown>(arg0: () => V, arg1: number, arg2: TimeUnit): ScheduledFuture<V>;
     scheduleAtFixedRate(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ScheduledFuture<Object>;
     scheduleWithFixedDelay(arg0: () => void, arg1: number, arg2: number, arg3: TimeUnit): ScheduledFuture<Object>;
     shutdown(): void;

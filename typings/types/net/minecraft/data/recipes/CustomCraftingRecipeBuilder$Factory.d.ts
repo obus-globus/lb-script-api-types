@@ -5,5 +5,5 @@ import type { CraftingRecipe$CraftingBookInfo } from '../../../../net/minecraft/
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { Recipe$CommonInfo } from '../../../../net/minecraft/world/item/crafting/Recipe$CommonInfo.d.ts'
 export interface CustomCraftingRecipeBuilder$Factory extends BiFunction<Recipe$CommonInfo, CraftingRecipe$CraftingBookInfo, Recipe<any>>, Object {
-    andThen<V extends Object | number | string | boolean>(arg0: (param0: Recipe<any>) => V): (param0: Recipe$CommonInfo, param1: CraftingRecipe$CraftingBookInfo) => V;
+    andThen<V extends unknown>(arg0: (param0: Recipe<any>) => V): (param0: Recipe$CommonInfo, param1: CraftingRecipe$CraftingBookInfo) => V;
 }

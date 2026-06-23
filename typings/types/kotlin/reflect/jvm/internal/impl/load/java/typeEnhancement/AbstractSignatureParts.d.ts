@@ -12,15 +12,15 @@ import type { FqNameUnsafe } from '../../../../../../../../kotlin/reflect/jvm/in
 import type { KotlinTypeMarker } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/KotlinTypeMarker.d.ts'
 import type { TypeParameterMarker } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeParameterMarker.d.ts'
 import type { TypeSystemContext } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSystemContext.d.ts'
-export abstract class AbstractSignatureParts<TAnnotation extends Object | number | string | boolean> extends Object {
+export abstract class AbstractSignatureParts<TAnnotation extends unknown> extends Object {
     constructor()
     computeIndexedQualifiers(arg0: KotlinTypeMarker, arg1: KotlinTypeMarker[], arg2: TypeEnhancementInfo, arg3: boolean): (param0: number) => JavaTypeQualifiers;
     // private extractAndMergeDefaultQualifiers(arg0: KotlinTypeMarker, arg1: JavaTypeQualifiersByElementType): JavaTypeQualifiersByElementType;
     // private extractDefaultQualifier(arg0: AbstractSignatureParts$TypeAndDefaultQualifiers): JavaDefaultQualifiers;
     // private extractQualifiers(arg0: KotlinTypeMarker): JavaTypeQualifiers;
     // private extractQualifiersFromAnnotations(arg0: AbstractSignatureParts$TypeAndDefaultQualifiers, arg1: JavaDefaultQualifiers): JavaTypeQualifiers;
-    // private flattenTree<T extends Object | number | string | boolean>(arg0: T, arg1: (param0: T) => T[]): T[];
-    // private flattenTree<T extends Object | number | string | boolean>(arg0: T, arg1: T[], arg2: (param0: T) => T[]): void;
+    // private flattenTree<T extends unknown>(arg0: T, arg1: (param0: T) => T[]): T[];
+    // private flattenTree<T extends unknown>(arg0: T, arg1: T[], arg2: (param0: T) => T[]): void;
     forceWarning(arg0: TAnnotation, arg1: KotlinTypeMarker): boolean;
     getAnnotationTypeQualifierResolver(): AbstractAnnotationTypeQualifierResolver<TAnnotation>;
     getAnnotations(arg0: KotlinTypeMarker): TAnnotation[];

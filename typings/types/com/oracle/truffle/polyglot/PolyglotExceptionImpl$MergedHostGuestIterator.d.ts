@@ -5,7 +5,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { ListIterator } from '../../../../java/util/ListIterator.d.ts'
-export class PolyglotExceptionImpl$MergedHostGuestIterator<T extends Object | number | string | boolean, G extends Object | number | string | boolean> extends Object implements Iterator<T> {
+export class PolyglotExceptionImpl$MergedHostGuestIterator<T extends unknown, G extends unknown> extends Object implements Iterator<T> {
     constructor(engine: PolyglotEngineImpl, hostStack: StackTraceElement[], guestFrames: Iterator<G>, inHostLanguage: boolean, includeHostFrames: boolean, hostFrameConvertor: (param0: StackTraceElement) => T, guestFrameConvertor: (param0: G) => T)
     // private engine: PolyglotEngineImpl;
     // private fetchedNext: T;

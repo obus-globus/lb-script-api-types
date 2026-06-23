@@ -5,7 +5,7 @@ import type { LocalCache$LocalManualCache } from '../../../../com/google/common/
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
 import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class LocalCache$LocalLoadingCache<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends LocalCache$LocalManualCache<K, V> implements LoadingCache<K, V> {
+export class LocalCache$LocalLoadingCache<K extends unknown, V extends unknown> extends LocalCache$LocalManualCache<K, V> implements LoadingCache<K, V> {
     constructor(builder: CacheBuilder<K, V>, loader: CacheLoader<K, V>)
     apply(key: K): V;
     get(key: K): V;

@@ -11,7 +11,7 @@ import type { KnownPack } from '../../../../net/minecraft/server/packs/repositor
 import type { IoSupplier } from '../../../../net/minecraft/server/packs/resources/IoSupplier.d.ts'
 export interface PackResources extends AutoCloseable, Object {
     close(): void;
-    getMetadataSection<T extends Object | number | string | boolean>(metadataSerializer: MetadataSectionType<T>): T;
+    getMetadataSection<T extends unknown>(metadataSerializer: MetadataSectionType<T>): T;
     getNamespaces(type: PackType): string[];
     getResource(type: PackType, location: Identifier): () => InputStream;
     getRootResource(path: string[]): () => InputStream;

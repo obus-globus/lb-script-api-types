@@ -5,7 +5,7 @@ import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { ChunkResult } from '../../../../net/minecraft/server/level/ChunkResult.d.ts'
-export class ChunkResult$Success<T extends Object | number | string | boolean> extends Record implements ChunkResult<T> {
+export class ChunkResult$Success<T extends unknown> extends Record implements ChunkResult<T> {
     static error(paramerror: string): ChunkResult<Object>;
     static error(paramerrorSupplier: () => string): ChunkResult<Object>;
     static of(paramvalue: Object | null): ChunkResult<Object>;
@@ -17,7 +17,7 @@ export class ChunkResult$Success<T extends Object | number | string | boolean> e
     hashCode(): number;
     ifSuccess(consumer: (param0: T) => void): ChunkResult<T>;
     isSuccess(): boolean;
-    map<R extends Object | number | string | boolean>(map: (param0: T) => R): ChunkResult<R>;
+    map<R extends unknown>(map: (param0: T) => R): ChunkResult<R>;
     orElse(orElse: T): T;
     orElseThrow<E extends Throwable>(exceptionSupplier: () => E): T;
     toString(): string;

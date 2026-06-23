@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DiffBuilder } from '../../../../../org/apache/commons/lang3/builder/DiffBuilder.d.ts'
 import type { ToStringStyle } from '../../../../../org/apache/commons/lang3/builder/ToStringStyle.d.ts'
-export class DiffBuilder$Builder<T extends Object | number | string | boolean> extends Object {
+export class DiffBuilder$Builder<T extends unknown> extends Object {
     constructor()
     // private left: T;
     // private right: T;

@@ -32,7 +32,7 @@ export interface UnixChannel extends Channel, Object{
     disconnect(arg0: ChannelPromise): ChannelFuture;
     fd(): FileDescriptor;
     flush(): Channel;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     id(): ChannelId;
     isActive(): boolean;
     isOpen(): boolean;
@@ -47,7 +47,7 @@ export interface UnixChannel extends Channel, Object{
     parent(): Channel;
     read(): Channel;
     remoteAddress(): SocketAddress;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     unsafe(): Channel$Unsafe;
     voidPromise(): ChannelPromise;
     write(arg0: Object): ChannelFuture;

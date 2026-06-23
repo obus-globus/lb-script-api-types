@@ -5,7 +5,7 @@ import type { GraphConstants$Presence } from '../../../../com/google/common/grap
 import type { MutableGraph } from '../../../../com/google/common/graph/MutableGraph.d.ts'
 import type { MutableValueGraph } from '../../../../com/google/common/graph/MutableValueGraph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class StandardMutableGraph<N extends Object | number | string | boolean> extends ForwardingGraph<N> implements MutableGraph<N> {
+export class StandardMutableGraph<N extends unknown> extends ForwardingGraph<N> implements MutableGraph<N> {
     constructor(builder: AbstractGraphBuilder<N>)
     // private backingValueGraph: MutableValueGraph<N, GraphConstants$Presence>;
     addNode(node: N): boolean;

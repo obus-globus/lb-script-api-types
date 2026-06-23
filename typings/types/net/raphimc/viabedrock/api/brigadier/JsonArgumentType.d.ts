@@ -11,7 +11,7 @@ export class JsonArgumentType extends Object implements ArgumentType<Object> {
     constructor()
     getExamples(): string[];
     // private getPosition(arg0: JsonReader): number;
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Object;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): Object;
     parse(arg0: StringReader): Object;
 }

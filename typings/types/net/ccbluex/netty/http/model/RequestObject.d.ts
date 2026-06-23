@@ -10,5 +10,5 @@ export class RequestObject extends ApplicationCall {
     constructor(uri: string, path: string, remainingPath: string, method: HttpMethod, body: string, params: { [key: string]: string }, queryParams: { [key: string]: string }, headers: Map$Entry<string, string>[])
     readonly params: { [key: string]: string };
     readonly queryParams: { [key: string]: string };
-    asJson<T extends Object | number | string | boolean>(): T;
+    asJson<T extends unknown>(): T;
 }

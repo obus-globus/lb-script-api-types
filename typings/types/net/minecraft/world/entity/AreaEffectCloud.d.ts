@@ -82,11 +82,11 @@ export class AreaEffectCloud extends Entity implements TraceableEntity {
     readonly waitTime: number;
     addAdditionalSaveData(output: ValueOutput): void;
     addEffect(effect: MobEffectInstance): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     // private clientTick(): void;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getDimensions(pose: Pose): EntityDimensions;
     getDuration(): number;
     getDurationOnUse(): number;

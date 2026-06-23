@@ -12,14 +12,14 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 export interface HolderLookup$Provider extends Object, HolderGetter$Provider{
     allRegistriesLifecycle(): Lifecycle;
-    createSerializationContext<V extends Object | number | string | boolean>(parent: DynamicOps<V>): RegistryOps<V>;
-    get<T extends Object | number | string | boolean>(id: ResourceKey<T>): Optional<Holder$Reference<T>>;
-    get<T extends Object | number | string | boolean>(id: TagKey<T>): Optional<T[]>;
-    getOrThrow<T extends Object | number | string | boolean>(id: ResourceKey<T>): Holder$Reference<T>;
-    getOrThrow<T extends Object | number | string | boolean>(id: TagKey<T>): T[];
+    createSerializationContext<V extends unknown>(parent: DynamicOps<V>): RegistryOps<V>;
+    get<T extends unknown>(id: ResourceKey<T>): Optional<Holder$Reference<T>>;
+    get<T extends unknown>(id: TagKey<T>): Optional<T[]>;
+    getOrThrow<T extends unknown>(id: ResourceKey<T>): Holder$Reference<T>;
+    getOrThrow<T extends unknown>(id: TagKey<T>): T[];
     listRegistries(): Stream<HolderLookup$RegistryLookup<Object>>;
     listRegistryKeys(): Stream<ResourceKey<(Object | null)[]>>;
-    lookup<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): Optional<HolderLookup$RegistryLookup<T>>;
-    lookupOrThrow<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): HolderGetter<T>;
-    lookupOrThrow<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): HolderLookup$RegistryLookup<T>;
+    lookup<T extends unknown>(key: ResourceKey<T[]>): Optional<HolderLookup$RegistryLookup<T>>;
+    lookupOrThrow<T extends unknown>(key: ResourceKey<T[]>): HolderGetter<T>;
+    lookupOrThrow<T extends unknown>(key: ResourceKey<T[]>): HolderLookup$RegistryLookup<T>;
 }

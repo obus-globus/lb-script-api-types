@@ -8,10 +8,10 @@ export class Reference2BooleanLinkedOpenHashMap$EntryIterator extends Reference2
     constructor(null_: Reference2BooleanLinkedOpenHashMap$EntryIterator)
     constructor(null_: Reference2BooleanLinkedOpenHashMap$EntryIterator)
     // private entry: Reference2BooleanLinkedOpenHashMap$MapEntry;
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Reference2BooleanMap$Entry<K>) => void, arg1: number): void;
-    add<K extends Object | number | string | boolean>(arg0: Reference2BooleanMap$Entry<K>): void;
-    next<K extends Object | number | string | boolean>(): Reference2BooleanLinkedOpenHashMap$MapEntry;
-    previous<K extends Object | number | string | boolean>(): Reference2BooleanLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<K extends unknown>(arg0: (param0: Reference2BooleanMap$Entry<K>) => void, arg1: number): void;
+    add<K extends unknown>(arg0: Reference2BooleanMap$Entry<K>): void;
+    next<K extends unknown>(): Reference2BooleanLinkedOpenHashMap$MapEntry;
+    previous<K extends unknown>(): Reference2BooleanLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: Reference2BooleanMap$Entry<K>): void;
+    set<K extends unknown>(arg0: Reference2BooleanMap$Entry<K>): void;
 }

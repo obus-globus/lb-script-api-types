@@ -3,7 +3,7 @@ import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cel
 import type { Spliterator } from '../../../../java/util/Spliterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export abstract class AbstractTable<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Table<R, C, V> {
+export abstract class AbstractTable<R extends unknown, C extends unknown, V extends unknown> extends Object implements Table<R, C, V> {
     constructor()
     // private cellSet: Table$Cell<R, C, V>[];
     // private values: V[];

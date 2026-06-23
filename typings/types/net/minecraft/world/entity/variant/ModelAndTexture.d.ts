@@ -6,7 +6,7 @@ import type { ClientAsset$ResourceTexture } from '../../../../../net/minecraft/c
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export class ModelAndTexture<T extends Object | number | string | boolean> extends Record {
+export class ModelAndTexture<T extends unknown> extends Record {
     static codec(parammodelCodec: Codec<Object>, paramdefaultModel: Object | null): MapCodec<ModelAndTexture<Object>>;
     static streamCodec(parammodelCodec: StreamCodec<Object, Object>): StreamCodec<RegistryFriendlyByteBuf, ModelAndTexture<Object>>;
     constructor(model: T, asset: ClientAsset$ResourceTexture)

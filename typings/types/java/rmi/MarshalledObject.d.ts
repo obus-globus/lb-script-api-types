@@ -4,7 +4,7 @@ import type { ObjectInputFilter$Status } from '../../java/io/ObjectInputFilter$S
 import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export class MarshalledObject<T extends Object | number | string | boolean> extends Object implements Serializable {
+export class MarshalledObject<T extends unknown> extends Object implements Serializable {
     constructor(arg0: T)
     // private hash: number;
     // private locBytes: number[];

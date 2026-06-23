@@ -49,7 +49,7 @@ export class GlCommandEncoder extends Object implements CommandEncoderBackend, G
     createRenderPass(label: () => string, colorTexture: GpuTextureView, clearColor: OptionalInt, depthTexture: GpuTextureView, clearDepth: OptionalDouble): RenderPassBackend;
     // private drawFromBuffers(renderPass: GlRenderPass, baseVertex: number, firstIndex: number, drawCount: number, indexType: VertexFormat$IndexType, pipeline: GlRenderPipeline, instanceCount: number): void;
     executeDraw(renderPass: GlRenderPass, baseVertex: number, firstIndex: number, drawCount: number, indexType: VertexFormat$IndexType, instanceCount: number): void;
-    executeDrawMultiple<T extends Object | number | string | boolean>(renderPass: GlRenderPass, draws: RenderPass$Draw<T>[], defaultIndexBuffer: GpuBuffer, defaultIndexType: VertexFormat$IndexType, dynamicUniforms: string[], uniformArgument: T): void;
+    executeDrawMultiple<T extends unknown>(renderPass: GlRenderPass, draws: RenderPass$Draw<T>[], defaultIndexBuffer: GpuBuffer, defaultIndexType: VertexFormat$IndexType, dynamicUniforms: string[], uniformArgument: T): void;
     finishRenderPass(): void;
     isInRenderPass(): boolean;
     mapBuffer(slice: GpuBufferSlice, read: boolean, write: boolean): GpuBuffer$MappedView;

@@ -14,15 +14,15 @@ export abstract class DataFix extends Object {
     // private changesType: boolean;
     // private outputSchema: Schema;
     readonly rule: TypeRewriteRule;
-    convertUnchecked<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: string, arg1: Type<A>, arg2: Type<B>): TypeRewriteRule;
-    fixTypeEverywhere<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: Type<A>, arg1: RewriteResult<A, B>): TypeRewriteRule;
-    fixTypeEverywhere<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: DynamicOps<Object>) => Function<A, B>): TypeRewriteRule;
-    fixTypeEverywhere<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: DynamicOps<Object>) => Function<A, B>, arg4: BitSet): TypeRewriteRule;
-    fixTypeEverywhere<A extends Object | number | string | boolean>(arg0: string, arg1: Type<A>, arg2: (param0: DynamicOps<Object>) => Function<A, A>): TypeRewriteRule;
-    fixTypeEverywhereTyped<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: Typed<Object>) => Typed<Object>): TypeRewriteRule;
-    fixTypeEverywhereTyped<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: Typed<Object>) => Typed<Object>, arg4: BitSet): TypeRewriteRule;
-    fixTypeEverywhereTyped<A extends Object | number | string | boolean>(arg0: string, arg1: Type<A>, arg2: (param0: Typed<Object>) => Typed<Object>): TypeRewriteRule;
-    fixTypeEverywhereTyped<A extends Object | number | string | boolean>(arg0: string, arg1: Type<A>, arg2: (param0: Typed<Object>) => Typed<Object>, arg3: BitSet): TypeRewriteRule;
+    convertUnchecked<A extends unknown, B extends unknown>(arg0: string, arg1: Type<A>, arg2: Type<B>): TypeRewriteRule;
+    fixTypeEverywhere<A extends unknown, B extends unknown>(arg0: Type<A>, arg1: RewriteResult<A, B>): TypeRewriteRule;
+    fixTypeEverywhere<A extends unknown, B extends unknown>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: DynamicOps<Object>) => Function<A, B>): TypeRewriteRule;
+    fixTypeEverywhere<A extends unknown, B extends unknown>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: DynamicOps<Object>) => Function<A, B>, arg4: BitSet): TypeRewriteRule;
+    fixTypeEverywhere<A extends unknown>(arg0: string, arg1: Type<A>, arg2: (param0: DynamicOps<Object>) => Function<A, A>): TypeRewriteRule;
+    fixTypeEverywhereTyped<A extends unknown, B extends unknown>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: Typed<Object>) => Typed<Object>): TypeRewriteRule;
+    fixTypeEverywhereTyped<A extends unknown, B extends unknown>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: Typed<Object>) => Typed<Object>, arg4: BitSet): TypeRewriteRule;
+    fixTypeEverywhereTyped<A extends unknown>(arg0: string, arg1: Type<A>, arg2: (param0: Typed<Object>) => Typed<Object>): TypeRewriteRule;
+    fixTypeEverywhereTyped<A extends unknown>(arg0: string, arg1: Type<A>, arg2: (param0: Typed<Object>) => Typed<Object>, arg3: BitSet): TypeRewriteRule;
     getInputSchema(): Schema;
     getOutputSchema(): Schema;
     getRule(): TypeRewriteRule;
@@ -30,5 +30,5 @@ export abstract class DataFix extends Object {
     makeRule(): TypeRewriteRule;
     onFail(arg0: Type<Object>): void;
     writeAndRead(arg0: string, arg1: Type<Object>, arg2: Type<Object>): TypeRewriteRule;
-    writeFixAndRead<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: Dynamic<Object>) => Dynamic<Object>): TypeRewriteRule;
+    writeFixAndRead<A extends unknown, B extends unknown>(arg0: string, arg1: Type<A>, arg2: Type<B>, arg3: (param0: Dynamic<Object>) => Dynamic<Object>): TypeRewriteRule;
 }

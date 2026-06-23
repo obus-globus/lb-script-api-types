@@ -4,7 +4,7 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Object2ObjectOpenHashMap$ValueIterator extends Object2ObjectOpenHashMap$MapIterator<Object> implements ObjectIterator<V> {
     constructor(null_: Object2ObjectOpenHashMap$ValueIterator)
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: V) => void, arg1: number): void;
-    next<V extends Object | number | string | boolean>(): V;
+    acceptOnIndex<V extends unknown>(arg0: (param0: V) => void, arg1: number): void;
+    next<V extends unknown>(): V;
     skip(arg0: number): number;
 }

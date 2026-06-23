@@ -5,7 +5,7 @@ import type { ShortIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractReference2ShortSortedMap$ValuesIterator<K extends Object | number | string | boolean> extends Object implements ShortIterator {
+export class AbstractReference2ShortSortedMap$ValuesIterator<K extends unknown> extends Object implements ShortIterator {
     constructor(arg0: ObjectBidirectionalIterator<Reference2ShortMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2ShortMap$Entry<K>>;
     forEachRemaining(arg0: (param0: number) => void): void;

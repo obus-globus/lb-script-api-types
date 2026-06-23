@@ -4,7 +4,7 @@ import type { Future$State } from '../../../../java/util/concurrent/Future$State
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
-export interface Future<V extends Object | number | string | boolean> extends Future_2<V>, Object{
+export interface Future<V extends unknown> extends Future_2<V>, Object{
     addListener(arg0: GenericFutureListener<Future<V>>): Future<V>;
     addListeners(arg0: GenericFutureListener<Future<V>>[]): Future<V>;
     await(): Future<V>;

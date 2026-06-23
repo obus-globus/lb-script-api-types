@@ -8,9 +8,9 @@ export class SmallSortedMap$EntryIterator extends Object implements Iterator<Map
     // private lazyOverflowIterator: Iterator<Map$Entry<K, V>>;
     // private nextCalledBeforeRemove: boolean;
     // private pos: number;
-    forEachRemaining<K extends Comparable<K>, V extends Object | number | string | boolean>(arg0: (param0: Map$Entry<K, V>) => void): void;
-    // private getOverflowIterator<K extends Comparable<K>, V extends Object | number | string | boolean>(): Iterator<Map$Entry<K, V>>;
+    forEachRemaining<K extends Comparable<K>, V extends unknown>(arg0: (param0: Map$Entry<K, V>) => void): void;
+    // private getOverflowIterator<K extends Comparable<K>, V extends unknown>(): Iterator<Map$Entry<K, V>>;
     hasNext(): boolean;
-    next<K extends Comparable<K>, V extends Object | number | string | boolean>(): Map$Entry<K, V>;
+    next<K extends Comparable<K>, V extends unknown>(): Map$Entry<K, V>;
     remove(): void;
 }

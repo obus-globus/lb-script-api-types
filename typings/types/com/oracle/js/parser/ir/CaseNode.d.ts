@@ -14,7 +14,7 @@ export class CaseNode extends Node implements Terminal {
     readonly terminal: boolean;
     readonly test: Expression;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getStatements(): Statement[];
     getTest(): Expression;
     isTerminal(): boolean;

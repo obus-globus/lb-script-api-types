@@ -17,7 +17,7 @@ import type { PackOutput$Target } from '../../../../../../../net/minecraft/data/
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
-export abstract class FabricCodecDataProvider<T extends Object | number | string | boolean> extends Object implements DataProvider {
+export abstract class FabricCodecDataProvider<T extends unknown> extends Object implements DataProvider {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;

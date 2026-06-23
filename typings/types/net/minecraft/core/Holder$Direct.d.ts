@@ -11,7 +11,7 @@ import type { TypedDataComponent } from '../../../net/minecraft/core/component/T
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
-export class Holder$Direct<T extends Object | number | string | boolean> extends Record implements Holder<T> {
+export class Holder$Direct<T extends unknown> extends Record implements Holder<T> {
     static direct(paramvalue: Object | null): Holder<Object>;
     static direct(paramvalue: Object | null, paramcomponents: TypedDataComponent<Object>[]): Holder<Object>;
     constructor(value: T, components: TypedDataComponent<Object>[])

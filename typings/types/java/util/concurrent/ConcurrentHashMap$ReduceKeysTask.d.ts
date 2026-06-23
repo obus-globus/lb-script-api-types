@@ -6,7 +6,7 @@ import type { ForkJoinPool } from '../../../java/util/concurrent/ForkJoinPool.d.
 import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.ts'
 import type { BiFunction } from '../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class ConcurrentHashMap$ReduceKeysTask<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ConcurrentHashMap$BulkTask<K, V, K> {
+export class ConcurrentHashMap$ReduceKeysTask<K extends unknown, V extends unknown> extends ConcurrentHashMap$BulkTask<K, V, K> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

@@ -11,13 +11,13 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ParticleUnflatteningFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema)
-    // private fix<T extends Object | number | string | boolean>(input: Dynamic<T>): Dynamic<T>;
+    // private fix<T extends unknown>(input: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
-    // private updateBlock<T extends Object | number | string | boolean>(result: Dynamic<T>, contents: string): Dynamic<T>;
-    // private updateDust<T extends Object | number | string | boolean>(result: Dynamic<T>, contents: string): Dynamic<T>;
-    // private updateDustTransition<T extends Object | number | string | boolean>(result: Dynamic<T>, contents: string): Dynamic<T>;
-    // private updateItem<T extends Object | number | string | boolean>(result: Dynamic<T>, contents: string): Dynamic<T>;
-    // private updateSculkCharge<T extends Object | number | string | boolean>(result: Dynamic<T>, contents: string): Dynamic<T>;
-    // private updateShriek<T extends Object | number | string | boolean>(result: Dynamic<T>, contents: string): Dynamic<T>;
-    // private updateVibration<T extends Object | number | string | boolean>(result: Dynamic<T>, contents: string): Dynamic<T>;
+    // private updateBlock<T extends unknown>(result: Dynamic<T>, contents: string): Dynamic<T>;
+    // private updateDust<T extends unknown>(result: Dynamic<T>, contents: string): Dynamic<T>;
+    // private updateDustTransition<T extends unknown>(result: Dynamic<T>, contents: string): Dynamic<T>;
+    // private updateItem<T extends unknown>(result: Dynamic<T>, contents: string): Dynamic<T>;
+    // private updateSculkCharge<T extends unknown>(result: Dynamic<T>, contents: string): Dynamic<T>;
+    // private updateShriek<T extends unknown>(result: Dynamic<T>, contents: string): Dynamic<T>;
+    // private updateVibration<T extends unknown>(result: Dynamic<T>, contents: string): Dynamic<T>;
 }

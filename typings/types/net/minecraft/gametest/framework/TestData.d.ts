@@ -6,7 +6,7 @@ import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { TestEnvironmentDefinition } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Rotation } from '../../../../net/minecraft/world/level/block/Rotation.d.ts'
-export class TestData<EnvironmentType extends Object | number | string | boolean> extends Record {
+export class TestData<EnvironmentType extends unknown> extends Record {
     static CODEC: MapCodec<TestData<Holder<TestEnvironmentDefinition<Object>>>>;
     // private environment: EnvironmentType;
     // private manualOnly: boolean;
@@ -23,7 +23,7 @@ export class TestData<EnvironmentType extends Object | number | string | boolean
     equals(o: Object | null): boolean;
     hashCode(): number;
     manualOnly(): boolean;
-    map<T extends Object | number | string | boolean>(mapper: (param0: EnvironmentType) => T): TestData<T>;
+    map<T extends unknown>(mapper: (param0: EnvironmentType) => T): TestData<T>;
     maxAttempts(): number;
     maxTicks(): number;
     padding(): number;

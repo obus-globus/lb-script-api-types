@@ -4,7 +4,7 @@ import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ParallelMapTransform$Container } from '../../../../net/minecraft/util/thread/ParallelMapTransform$Container.d.ts'
 import type { ParallelMapTransform$SplitterBase } from '../../../../net/minecraft/util/thread/ParallelMapTransform$SplitterBase.d.ts'
-export class ParallelMapTransform$SingleTaskSplitter<K extends Object | number | string | boolean, U extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ParallelMapTransform$SplitterBase<K, U, V> {
+export class ParallelMapTransform$SingleTaskSplitter<K extends unknown, U extends unknown, V extends unknown> extends ParallelMapTransform$SplitterBase<K, U, V> {
     private constructor(operation: (param0: K, param1: U) => V, size: number)
     batchSize(index: number): number;
     scheduleBatch(container: ParallelMapTransform$Container<K, U, V>, startIndex: number, endIndex: number, executor: Executor): CompletableFuture<Object>;

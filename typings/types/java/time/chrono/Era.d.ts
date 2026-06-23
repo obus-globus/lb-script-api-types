@@ -14,6 +14,6 @@ export interface Era extends TemporalAccessor, TemporalAdjuster, Object {
     getLong(arg0: TemporalField): number;
     getValue(): number;
     isSupported(arg0: TemporalField): boolean;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
 }

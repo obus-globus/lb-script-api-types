@@ -4,7 +4,7 @@ import type { CacheLoader } from '../../../../com/google/common/cache/CacheLoade
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class CacheLoader$SupplierToCacheLoader<V extends Object | number | string | boolean> extends CacheLoader<Object, V> implements Serializable {
+export class CacheLoader$SupplierToCacheLoader<V extends unknown> extends CacheLoader<Object, V> implements Serializable {
     static asyncReloading(paramloader: CacheLoader<Object, Object>, paramexecutor: Executor): CacheLoader<Object, Object>;
     static from(paramfunction: (param0: Object) => boolean): CacheLoader<Object, Object>;
     static from(paramsupplier: () => Object | null): CacheLoader<Object, Object>;

@@ -74,7 +74,7 @@ export abstract class AFSocketImpl<A extends AFSocketAddress> extends SocketImpl
     getInputStream(): AFInputStream;
     getLocalPort1(): number;
     getLocalSocketAddress(): A;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     getOption(arg0: number): Object;
     // private getOption0(arg0: number): Object;
     getOptionLenient(arg0: number): Object;
@@ -92,7 +92,7 @@ export abstract class AFSocketImpl<A extends AFSocketAddress> extends SocketImpl
     send(arg0: ByteBuffer, arg1: SocketAddress): number;
     sendUrgentData(arg0: number): void;
     setAncillaryReceiveBufferSize(arg0: number): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): void;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): void;
     setOption(arg0: number, arg1: Object): void;
     // private setOption0(arg0: number, arg1: Object): void;
     setOptionLenient(arg0: number, arg1: Object): void;

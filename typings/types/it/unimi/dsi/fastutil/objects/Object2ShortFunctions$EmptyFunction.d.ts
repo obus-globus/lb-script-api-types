@@ -2,7 +2,7 @@ import type { AbstractObject2ShortFunction } from '../../../../../it/unimi/dsi/f
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Object2ShortFunctions$EmptyFunction<K extends Object | number | string | boolean> extends AbstractObject2ShortFunction<K> implements Serializable, Cloneable {
+export class Object2ShortFunctions$EmptyFunction<K extends unknown> extends AbstractObject2ShortFunction<K> implements Serializable, Cloneable {
     constructor()
     clear(): void;
     clone(): Object;

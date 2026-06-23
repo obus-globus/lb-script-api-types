@@ -29,7 +29,7 @@ import type { Number } from '../../../java/lang/Number.d.ts'
 import type { Holder } from '../../../net/minecraft/core/Holder.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
-export class HolderSetCodec<E extends Object | number | string | boolean> extends Object implements Codec<Holder<E>[]> {
+export class HolderSetCodec<E extends unknown> extends Object implements Codec<Holder<E>[]> {
     static BOOL: PrimitiveCodec<boolean>;
     static BYTE: PrimitiveCodec<number>;
     static BYTE_BUFFER: PrimitiveCodec<ByteBuffer>;
@@ -76,21 +76,21 @@ export class HolderSetCodec<E extends Object | number | string | boolean> extend
     // private homogenousListCodec: Codec<Holder<E>[]>;
     // private registryAwareCodec: Codec<Either<TagKey<E>, Holder<E>[]>>;
     // private registryKey: ResourceKey<E[]>;
-    comapFlatMap<S extends Object | number | string | boolean>(arg0: (param0: Holder<E>[]) => DataResult<S>, arg1: (param0: S) => Holder<E>[]): Codec<S>;
-    decode<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<Holder<E>[], T>>;
-    decode<T extends Object | number | string | boolean>(ops: DynamicOps<T>, input: T): DataResult<Pair<Holder<E>[], T>>;
-    // private decodeWithoutRegistry<T extends Object | number | string | boolean>(ops: DynamicOps<T>, input: T): DataResult<Pair<Holder<E>[], T>>;
+    comapFlatMap<S extends unknown>(arg0: (param0: Holder<E>[]) => DataResult<S>, arg1: (param0: S) => Holder<E>[]): Codec<S>;
+    decode<T extends unknown>(arg0: Dynamic<T>): DataResult<Pair<Holder<E>[], T>>;
+    decode<T extends unknown>(ops: DynamicOps<T>, input: T): DataResult<Pair<Holder<E>[], T>>;
+    // private decodeWithoutRegistry<T extends unknown>(ops: DynamicOps<T>, input: T): DataResult<Pair<Holder<E>[], T>>;
     deprecated(arg0: number): Codec<Holder<E>[]>;
     dispatch(arg0: (param0: E) => Holder<E>[], arg1: (param0: Holder<E>[]) => MapCodec<E>): Codec<E>;
     dispatch(arg0: string, arg1: (param0: E) => Holder<E>[], arg2: (param0: Holder<E>[]) => MapCodec<E>): Codec<E>;
     dispatchMap(arg0: (param0: E) => Holder<E>[], arg1: (param0: Holder<E>[]) => MapCodec<E>): MapCodec<E>;
     dispatchMap(arg0: string, arg1: (param0: E) => Holder<E>[], arg2: (param0: Holder<E>[]) => MapCodec<E>): MapCodec<E>;
     dispatchStable(arg0: (param0: E) => Holder<E>[], arg1: (param0: Holder<E>[]) => MapCodec<E>): Codec<E>;
-    encode<T extends Object | number | string | boolean>(input: Holder<E>[], ops: DynamicOps<T>, prefix: T): DataResult<T>;
-    // private encodeWithoutRegistry<T extends Object | number | string | boolean>(input: Holder<E>[], ops: DynamicOps<T>, prefix: T): DataResult<T>;
+    encode<T extends unknown>(input: Holder<E>[], ops: DynamicOps<T>, prefix: T): DataResult<T>;
+    // private encodeWithoutRegistry<T extends unknown>(input: Holder<E>[], ops: DynamicOps<T>, prefix: T): DataResult<T>;
     fieldOf(arg0: string): MapCodec<Holder<E>[]>;
-    flatComapMap<S extends Object | number | string | boolean>(arg0: (param0: Holder<E>[]) => S, arg1: (param0: S) => DataResult<Holder<E>[]>): Codec<S>;
-    flatXmap<S extends Object | number | string | boolean>(arg0: (param0: Holder<E>[]) => DataResult<S>, arg1: (param0: S) => DataResult<Holder<E>[]>): Codec<S>;
+    flatComapMap<S extends unknown>(arg0: (param0: Holder<E>[]) => S, arg1: (param0: S) => DataResult<Holder<E>[]>): Codec<S>;
+    flatXmap<S extends unknown>(arg0: (param0: Holder<E>[]) => DataResult<S>, arg1: (param0: S) => DataResult<Holder<E>[]>): Codec<S>;
     lenientOptionalFieldOf(arg0: string): MapCodec<Optional<Holder<E>[]>>;
     lenientOptionalFieldOf(arg0: string, arg1: Holder<E>[]): MapCodec<Holder<E>[]>;
     lenientOptionalFieldOf(arg0: string, arg1: Holder<E>[], arg2: Lifecycle): MapCodec<Holder<E>[]>;
@@ -115,8 +115,8 @@ export class HolderSetCodec<E extends Object | number | string | boolean> extend
     sizeLimitedListOf(arg0: number): Codec<Holder<E>[][]>;
     stable(): Codec<Holder<E>[]>;
     validate(arg0: (param0: Holder<E>[]) => DataResult<Holder<E>[]>): Codec<Holder<E>[]>;
-    withAlternative<U extends Object | number | string | boolean>(arg0: Codec<U>, arg1: (param0: U) => Holder<E>[]): Codec<Holder<E>[]>;
+    withAlternative<U extends unknown>(arg0: Codec<U>, arg1: (param0: U) => Holder<E>[]): Codec<Holder<E>[]>;
     withAlternative(arg0: Codec<Holder<E>[]>): Codec<Holder<E>[]>;
     withLifecycle(arg0: Lifecycle): Codec<Holder<E>[]>;
-    xmap<S extends Object | number | string | boolean>(arg0: (param0: Holder<E>[]) => S, arg1: (param0: S) => Holder<E>[]): Codec<S>;
+    xmap<S extends unknown>(arg0: (param0: Holder<E>[]) => S, arg1: (param0: S) => Holder<E>[]): Codec<S>;
 }

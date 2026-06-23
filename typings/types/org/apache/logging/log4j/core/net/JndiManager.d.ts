@@ -18,7 +18,7 @@ export class JndiManager extends AbstractManager {
     static isJndiLookupEnabled(): boolean;
     private constructor(name: string, context: InitialContext)
     // private context: InitialContext;
-    lookup<T extends Object | number | string | boolean>(name: string): T;
+    lookup<T extends unknown>(name: string): T;
     releaseSub(timeout: number, timeUnit: TimeUnit): boolean;
     toString(): string;
 }

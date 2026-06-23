@@ -15,12 +15,12 @@ export class FrameGraphBuilder extends Object {
     // private passes: FrameGraphBuilder$Pass[];
     addPass(name: string): FramePass;
     // private assignResourceLifetimes(passesInOrder: FrameGraphBuilder$Pass[]): void;
-    createInternal<T extends Object | number | string | boolean>(name: string, descriptor: ResourceDescriptor<T>): ResourceHandle<T>;
-    // private createInternalResource<T extends Object | number | string | boolean>(name: string, descriptor: ResourceDescriptor<T>, createdBy: FrameGraphBuilder$Pass): FrameGraphBuilder$InternalVirtualResource<T>;
+    createInternal<T extends unknown>(name: string, descriptor: ResourceDescriptor<T>): ResourceHandle<T>;
+    // private createInternalResource<T extends unknown>(name: string, descriptor: ResourceDescriptor<T>, createdBy: FrameGraphBuilder$Pass): FrameGraphBuilder$InternalVirtualResource<T>;
     // private discoverAllRequiredPasses(sourcePass: FrameGraphBuilder$Pass, visited: BitSet, passesToTrace: FrameGraphBuilder$Pass[]): void;
     execute(resourceAllocator: GraphicsResourceAllocator): void;
     execute(resourceAllocator: GraphicsResourceAllocator, inspector: FrameGraphBuilder$Inspector): void;
     // private identifyPassesToKeep(): BitSet;
-    importExternal<T extends Object | number | string | boolean>(name: string, resource: T): ResourceHandle<T>;
+    importExternal<T extends unknown>(name: string, resource: T): ResourceHandle<T>;
     // private resolvePassOrder(pass: FrameGraphBuilder$Pass, passesToFind: BitSet, visiting: BitSet, output: FrameGraphBuilder$Pass[]): void;
 }

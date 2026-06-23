@@ -19,7 +19,7 @@ export class PrimitiveValueProfile extends ValueProfile {
     getCachedValue(): Object;
     isGeneric(): boolean;
     isUninitialized(): boolean;
-    profile<T extends Object | number | string | boolean>(v: T): T;
+    profile<T extends unknown>(v: T): T;
     profile(value: boolean): boolean;
     profile(value: number): number;
     profile(value: string): string;

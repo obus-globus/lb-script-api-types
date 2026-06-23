@@ -19,7 +19,7 @@ export class ClientboundCommandsPacket extends Object implements Packet<ClientGa
     private constructor(input: FriendlyByteBuf)
     // private entries: ClientboundCommandsPacket$Entry[];
     // private rootIndex: number;
-    getRoot<S extends Object | number | string | boolean>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): RootCommandNode<S>;
+    getRoot<S extends unknown>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): RootCommandNode<S>;
     handle(listener: ClientGamePacketListener): void;
     isSkippable(): boolean;
     isTerminal(): boolean;

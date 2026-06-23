@@ -5,7 +5,7 @@ import type { CompositeDecoder } from '../../../kotlinx/serialization/encoding/C
 import type { CompositeDecoder$Companion } from '../../../kotlinx/serialization/encoding/CompositeDecoder$Companion.d.ts'
 import type { Decoder } from '../../../kotlinx/serialization/encoding/Decoder.d.ts'
 import type { SerializersModule } from '../../../kotlinx/serialization/modules/SerializersModule.d.ts'
-export abstract class TaggedDecoder<Tag extends Object | number | string | boolean> extends Object implements CompositeDecoder, Decoder {
+export abstract class TaggedDecoder<Tag extends unknown> extends Object implements CompositeDecoder, Decoder {
     static Companion: CompositeDecoder$Companion;
     static DECODE_DONE: number;
     static UNKNOWN_NAME: number;
@@ -39,12 +39,12 @@ export abstract class TaggedDecoder<Tag extends Object | number | string | boole
     decodeLongElement(descriptor: SerialDescriptor, index: number): number;
     decodeNotNullMark(): boolean;
     decodeNull(): void | null;
-    decodeNullableSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T | null;
-    decodeNullableSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T | null;
+    decodeNullableSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T | null;
+    decodeNullableSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T | null;
     decodeSequentially(): boolean;
-    decodeSerializableElement<T extends Object | number | string | boolean>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
-    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
-    protected decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
+    protected decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeShort(): number;
     decodeShortElement(descriptor: SerialDescriptor, index: number): number;
     decodeString(): string;
@@ -66,5 +66,5 @@ export abstract class TaggedDecoder<Tag extends Object | number | string | boole
     endStructure(descriptor: SerialDescriptor): void;
     protected popTag(): Tag;
     protected pushTag(name: Tag): void;
-    // private tagBlock<E extends Object | number | string | boolean>(tag: Tag, block: () => E): E;
+    // private tagBlock<E extends unknown>(tag: Tag, block: () => E): E;
 }

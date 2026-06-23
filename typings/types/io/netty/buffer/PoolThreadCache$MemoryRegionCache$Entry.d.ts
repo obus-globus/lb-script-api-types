@@ -3,7 +3,7 @@ import type { Recycler$EnhancedHandle } from '../../../io/netty/util/Recycler$En
 import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPool$Handle.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class PoolThreadCache$MemoryRegionCache$Entry<T extends Object | number | string | boolean> extends Object {
+export class PoolThreadCache$MemoryRegionCache$Entry<T extends unknown> extends Object {
     constructor(arg0: ObjectPool$Handle<PoolThreadCache$MemoryRegionCache$Entry<Object>>)
     // private chunk: PoolChunk<T>;
     // private handle: number;

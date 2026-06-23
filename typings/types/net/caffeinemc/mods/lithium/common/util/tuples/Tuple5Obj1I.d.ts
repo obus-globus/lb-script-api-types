@@ -1,6 +1,6 @@
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class Tuple5Obj1I<A extends Object | number | string | boolean, B extends Object | number | string | boolean, C extends Object | number | string | boolean, D extends Object | number | string | boolean, E extends Object | number | string | boolean> extends Record {
+export class Tuple5Obj1I<A extends unknown, B extends unknown, C extends unknown, D extends unknown, E extends unknown> extends Record {
     // private a: A;
     // private b: B;
     // private c: C;

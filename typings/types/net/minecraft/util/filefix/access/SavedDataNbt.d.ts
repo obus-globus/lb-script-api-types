@@ -11,5 +11,5 @@ export class SavedDataNbt extends CompressedNbt {
     // private targetVersion: number;
     // private type: DSL$TypeReference;
     read(): Optional<Dynamic<Tag>>;
-    write<T extends Object | number | string | boolean>(data: Dynamic<T>): void;
+    write<T extends unknown>(data: Dynamic<T>): void;
 }

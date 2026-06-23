@@ -25,7 +25,7 @@ export abstract class VariableDescriptorImpl extends DeclarationDescriptorNonRoo
     getReturnType(): KotlinType;
     getType(): KotlinType;
     getTypeParameters(): TypeParameterDescriptor[];
-    getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>): V;
     getValueParameters(): ValueParameterDescriptor[];
     getVisibility(): DescriptorVisibility;
     hasSynthesizedParameterNames(): boolean;

@@ -63,7 +63,7 @@ export class Instant extends Object implements Serializable, Temporal, TemporalA
     plusMillis(arg0: number): Instant;
     plusNanos(arg0: number): Instant;
     plusSeconds(arg0: number): Instant;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     // private secondsUntil(arg0: Instant): number;

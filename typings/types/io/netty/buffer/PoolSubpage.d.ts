@@ -2,7 +2,7 @@ import type { PoolChunk } from '../../../io/netty/buffer/PoolChunk.d.ts'
 import type { PoolSubpageMetric } from '../../../io/netty/buffer/PoolSubpageMetric.d.ts'
 import type { ReentrantLock } from '../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class PoolSubpage<T extends Object | number | string | boolean> extends Object implements PoolSubpageMetric {
+export class PoolSubpage<T extends unknown> extends Object implements PoolSubpageMetric {
     constructor(arg0: PoolSubpage<T>, arg1: PoolChunk<T>, arg2: number, arg3: number, arg4: number, arg5: number)
     constructor(arg0: number)
     // private bitmap: number[];

@@ -7,9 +7,9 @@ import type { DynamicOps } from '../../../../../../com/mojang/serialization/Dyna
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface CommandArgumentParser<T extends Object | number | string | boolean> extends Object {
-    mapResult<S extends Object | number | string | boolean>(mapper: (param0: T) => S): CommandArgumentParser<S>;
+export interface CommandArgumentParser<T extends unknown> extends Object {
+    mapResult<S extends unknown>(mapper: (param0: T) => S): CommandArgumentParser<S>;
     parseForCommands(reader: StringReader): T;
     parseForSuggestions(suggestionsBuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    withCodec<O extends Object | number | string | boolean>(ops: DynamicOps<O>, valueParser: CommandArgumentParser<O>, codec: Codec<T>, exceptionType: DynamicCommandExceptionType): CommandArgumentParser<T>;
+    withCodec<O extends unknown>(ops: DynamicOps<O>, valueParser: CommandArgumentParser<O>, codec: Codec<T>, exceptionType: DynamicCommandExceptionType): CommandArgumentParser<T>;
 }

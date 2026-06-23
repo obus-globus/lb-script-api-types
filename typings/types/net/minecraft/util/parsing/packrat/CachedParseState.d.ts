@@ -8,7 +8,7 @@ import type { ErrorCollector } from '../../../../../net/minecraft/util/parsing/p
 import type { NamedRule } from '../../../../../net/minecraft/util/parsing/packrat/NamedRule.d.ts'
 import type { ParseState } from '../../../../../net/minecraft/util/parsing/packrat/ParseState.d.ts'
 import type { Scope } from '../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
-export abstract class CachedParseState<S extends Object | number | string | boolean> extends Object implements ParseState<S> {
+export abstract class CachedParseState<S extends unknown> extends Object implements ParseState<S> {
     constructor(errorCollector: ErrorCollector<S>)
     // private controlCache: CachedParseState$SimpleControl[];
     // private errorCollector: ErrorCollector<S>;
@@ -19,8 +19,8 @@ export abstract class CachedParseState<S extends Object | number | string | bool
     acquireControl(): Control;
     errorCollector(): ErrorCollector<S>;
     // private getCacheForPosition(index: number): CachedParseState$PositionCache;
-    parse<T extends Object | number | string | boolean>(rule: NamedRule<S, T>): T;
-    parseTopRule<T extends Object | number | string | boolean>(rule: NamedRule<S, T>): Optional<T>;
+    parse<T extends unknown>(rule: NamedRule<S, T>): T;
+    parseTopRule<T extends unknown>(rule: NamedRule<S, T>): Optional<T>;
     releaseControl(): void;
     scope(): Scope;
     silent(): ParseState<S>;

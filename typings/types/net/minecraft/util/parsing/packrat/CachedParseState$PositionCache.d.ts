@@ -8,6 +8,6 @@ export class CachedParseState$PositionCache extends Object {
     // private nextKey: number;
     allocateNewEntry(key: Atom<Object>): number;
     findKeyIndex(key: Atom<Object>): number;
-    getValue<T extends Object | number | string | boolean>(keyIndex: number): CachedParseState$CacheEntry<T>;
+    getValue<T extends unknown>(keyIndex: number): CachedParseState$CacheEntry<T>;
     setValue(keyIndex: number, entry: CachedParseState$CacheEntry<Object>): void;
 }

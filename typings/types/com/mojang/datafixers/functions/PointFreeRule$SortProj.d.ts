@@ -13,9 +13,9 @@ export class PointFreeRule$SortProj extends Enum<PointFreeRule$SortProj> impleme
     static valueOf(paramarg0: string): PointFreeRule$SortProj;
     static values(): (Object | null)[];
     private constructor()
-    // private cap<R extends Object | number | string | boolean>(arg0: Apply<Object, Object>, arg1: Apply<Object, Object>): R;
+    // private cap<R extends unknown>(arg0: Apply<Object, Object>, arg1: Apply<Object, Object>): R;
     doRewrite(arg0: PointFree<(param0: Object | null) => Object | null>, arg1: PointFree<(param0: Object | null) => Object | null>): Optional<PointFree<(param0: Object | null) => Object | null>>;
-    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
+    rewrite<A extends unknown>(arg0: PointFree<A>): Optional<PointFree<A>>;
     // private rewrite(arg0: PointFree<(param0: Object | null) => Object | null>[]): Optional<PointFree<(param0: Object | null) => Object | null>[]>;
     name(): "INSTANCE";
 }

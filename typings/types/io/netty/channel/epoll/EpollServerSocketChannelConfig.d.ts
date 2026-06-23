@@ -10,7 +10,7 @@ import type { InetAddress } from '../../../../java/net/InetAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EpollServerSocketChannelConfig extends EpollServerChannelConfig implements ServerSocketChannelConfig {
     constructor(arg0: EpollServerSocketChannel)
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getTcpDeferAccept(): number;
@@ -25,7 +25,7 @@ export class EpollServerSocketChannelConfig extends EpollServerChannelConfig imp
     setIpTransparent(arg0: boolean): EpollServerSocketChannelConfig;
     setMaxMessagesPerRead(arg0: number): EpollServerSocketChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): EpollServerSocketChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): EpollServerSocketChannelConfig;
     setReceiveBufferSize(arg0: number): EpollServerSocketChannelConfig;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): EpollServerSocketChannelConfig;

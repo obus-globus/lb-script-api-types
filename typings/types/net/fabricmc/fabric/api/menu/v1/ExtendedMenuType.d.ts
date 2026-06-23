@@ -26,7 +26,7 @@ import type { ShulkerBoxMenu } from '../../../../../../net/minecraft/world/inven
 import type { SmithingMenu } from '../../../../../../net/minecraft/world/inventory/SmithingMenu.d.ts'
 import type { SmokerMenu } from '../../../../../../net/minecraft/world/inventory/SmokerMenu.d.ts'
 import type { StonecutterMenu } from '../../../../../../net/minecraft/world/inventory/StonecutterMenu.d.ts'
-export class ExtendedMenuType<T extends AbstractContainerMenu, D extends Object | number | string | boolean> extends MenuType<T> {
+export class ExtendedMenuType<T extends AbstractContainerMenu, D extends unknown> extends MenuType<T> {
     static ANVIL: MenuType<AnvilMenu>;
     static BEACON: MenuType<BeaconMenu>;
     static BLAST_FURNACE: MenuType<BlastFurnaceMenu>;

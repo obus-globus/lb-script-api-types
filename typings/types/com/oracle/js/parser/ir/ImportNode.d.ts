@@ -16,7 +16,7 @@ export class ImportNode extends Node {
     readonly importClause: ImportClauseNode;
     readonly moduleSpecifier: LiteralNode<TruffleString>;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getAttributes(): Map<TruffleString, TruffleString>;
     getImportClause(): ImportClauseNode;
     getModuleSpecifier(): LiteralNode<TruffleString>;

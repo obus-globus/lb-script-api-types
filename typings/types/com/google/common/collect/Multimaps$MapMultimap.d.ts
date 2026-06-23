@@ -5,7 +5,7 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class Multimaps$MapMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractMultimap<K, V> implements SetMultimap<K, V>, Serializable {
+export class Multimaps$MapMultimap<K extends unknown, V extends unknown> extends AbstractMultimap<K, V> implements SetMultimap<K, V>, Serializable {
     constructor(map: Map<K, V>)
     // private map: Map<K, V>;
     clear(): void;

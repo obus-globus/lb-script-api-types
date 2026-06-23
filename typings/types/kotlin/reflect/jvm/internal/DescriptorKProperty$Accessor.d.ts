@@ -6,7 +6,7 @@ import type { DescriptorKProperty } from '../../../../kotlin/reflect/jvm/interna
 import type { KDeclarationContainerImpl } from '../../../../kotlin/reflect/jvm/internal/KDeclarationContainerImpl.d.ts'
 import type { Caller } from '../../../../kotlin/reflect/jvm/internal/calls/Caller.d.ts'
 import type { PropertyAccessorDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyAccessorDescriptor.d.ts'
-export abstract class DescriptorKProperty$Accessor<PropertyType extends Object | number | string | boolean, ReturnType extends Object | number | string | boolean> extends DescriptorKCallable<ReturnType> implements KFunction<ReturnType>, KProperty$Accessor<PropertyType> {
+export abstract class DescriptorKProperty$Accessor<PropertyType extends unknown, ReturnType extends unknown> extends DescriptorKCallable<ReturnType> implements KFunction<ReturnType>, KProperty$Accessor<PropertyType> {
     constructor()
     readonly container: KDeclarationContainerImpl;
     readonly defaultCaller: Caller<any> | null;

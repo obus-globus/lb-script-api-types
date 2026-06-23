@@ -45,9 +45,9 @@ export class Wrapper extends Enum<Wrapper> {
     basicTypeChar(): string;
     basicTypeString(): string;
     bitWidth(): number;
-    cast<T extends Object | number | string | boolean>(arg0: Object, arg1: Class<T>): T;
-    convert<T extends Object | number | string | boolean>(arg0: Object, arg1: Class<T>): T;
-    // private convert<T extends Object | number | string | boolean>(arg0: Object, arg1: Class<T>, arg2: boolean): T;
+    cast<T extends unknown>(arg0: Object, arg1: Class<T>): T;
+    convert<T extends unknown>(arg0: Object, arg1: Class<T>): T;
+    // private convert<T extends unknown>(arg0: Object, arg1: Class<T>, arg2: boolean): T;
     copyArrayBoxing(arg0: Object, arg1: number, arg2: Object[], arg3: number, arg4: number): void;
     copyArrayUnboxing(arg0: Object[], arg1: number, arg2: Object, arg3: number, arg4: number): void;
     detailString(): string;
@@ -71,8 +71,8 @@ export class Wrapper extends Enum<Wrapper> {
     wrapperClassDescriptor(): ClassDesc;
     wrapperSimpleName(): string;
     wrapperType(): Class<Object>;
-    wrapperType<T extends Object | number | string | boolean>(arg0: Class<T>): Class<T>;
+    wrapperType<T extends unknown>(arg0: Class<T>): Class<T>;
     zero(): Object;
-    zero<T extends Object | number | string | boolean>(arg0: Class<T>): T;
+    zero<T extends unknown>(arg0: Class<T>): T;
     name(): "BOOLEAN" | "BYTE" | "SHORT" | "CHAR" | "INT" | "LONG" | "FLOAT" | "DOUBLE" | "OBJECT" | "VOID";
 }

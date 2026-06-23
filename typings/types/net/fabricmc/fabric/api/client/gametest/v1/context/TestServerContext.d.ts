@@ -4,7 +4,7 @@ import type { MinecraftServer } from '../../../../../../../../net/minecraft/serv
 import type { FailableConsumer } from '../../../../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 import type { FailableFunction } from '../../../../../../../../org/apache/commons/lang3/function/FailableFunction.d.ts'
 export interface TestServerContext extends Object {
-    computeOnServer<T extends Object | number | string | boolean, E extends Throwable>(arg0: (param0: MinecraftServer) => T): T;
+    computeOnServer<T extends unknown, E extends Throwable>(arg0: (param0: MinecraftServer) => T): T;
     runCommand(arg0: string): void;
     runOnServer<E extends Throwable>(arg0: (param0: MinecraftServer) => void): void;
 }

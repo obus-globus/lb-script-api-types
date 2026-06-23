@@ -6,7 +6,7 @@ import type { TypeParameterElement } from '../../../../javax/lang/model/element/
 import type { VariableElement } from '../../../../javax/lang/model/element/VariableElement.d.ts'
 import type { AbstractElementVisitor6 } from '../../../../javax/lang/model/util/AbstractElementVisitor6.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class SimpleElementVisitor6<R extends Object | number | string | boolean, P extends Object | number | string | boolean> extends AbstractElementVisitor6<R, P> {
+export class SimpleElementVisitor6<R extends unknown, P extends unknown> extends AbstractElementVisitor6<R, P> {
     constructor()
     constructor(arg0: R)
     // private DEFAULT_VALUE: R;

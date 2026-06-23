@@ -1,6 +1,6 @@
 import type { Reference2ObjectMap$Entry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Reference2ObjectMap$Entry.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class AbstractReference2ObjectMap$BasicEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Reference2ObjectMap$Entry<K, V> {
+export class AbstractReference2ObjectMap$BasicEntry<K extends unknown, V extends unknown> extends Object implements Reference2ObjectMap$Entry<K, V> {
     constructor()
     constructor(arg0: K, arg1: V)
     key: K;

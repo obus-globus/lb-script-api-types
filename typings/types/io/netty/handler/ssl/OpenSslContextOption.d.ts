@@ -4,7 +4,7 @@ import type { OpenSslPrivateKeyMethod } from '../../../../io/netty/handler/ssl/O
 import type { SslContextOption } from '../../../../io/netty/handler/ssl/SslContextOption.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class OpenSslContextOption<T extends Object | number | string | boolean> extends SslContextOption<T> {
+export class OpenSslContextOption<T extends unknown> extends SslContextOption<T> {
     static ASYNC_PRIVATE_KEY_METHOD: OpenSslContextOption<OpenSslAsyncPrivateKeyMethod>;
     static CERTIFICATE_COMPRESSION_ALGORITHMS: OpenSslContextOption<OpenSslCertificateCompressionConfig$AlgorithmConfig[]>;
     static GROUPS: OpenSslContextOption<(Object | null)[]>;

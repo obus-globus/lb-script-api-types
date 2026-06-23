@@ -3,7 +3,7 @@ import type { AttachmentTarget } from '../../../../../../net/fabricmc/fabric/api
 import type { AttachmentTargetInfo$Type } from '../../../../../../net/fabricmc/fabric/impl/attachment/sync/AttachmentTargetInfo$Type.d.ts'
 import type { MutableComponent } from '../../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
 import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.ts'
-export interface AttachmentTargetInfo<T extends Object | number | string | boolean> extends Object{
+export interface AttachmentTargetInfo<T extends unknown> extends Object{
     appendDebugInformation(arg0: MutableComponent): void;
     getId(): number;
     getTarget(arg0: Level): AttachmentTarget;

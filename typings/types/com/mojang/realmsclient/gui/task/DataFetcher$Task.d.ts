@@ -4,7 +4,7 @@ import type { RepeatedDelayStrategy } from '../../../../../com/mojang/realmsclie
 import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class DataFetcher$Task<T extends Object | number | string | boolean> extends Object {
+export class DataFetcher$Task<T extends unknown> extends Object {
     private constructor(null_: DataFetcher$Task<T>, updater: () => T, period: number, repeatStrategy: RepeatedDelayStrategy)
     // private id: string;
     // private lastResult: DataFetcher$SuccessfulComputationResult<T>;

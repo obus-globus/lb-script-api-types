@@ -19,5 +19,5 @@ export interface OptionInstance$IntRangeBase extends Object, OptionInstance$Slid
     next(current: number): Optional<number>;
     previous(current: number): Optional<number>;
     toSliderValue(value: number): number;
-    xmap<R extends Object | number | string | boolean>(to: (param0: number) => R, from: (param0: R) => number, discrete: boolean): OptionInstance$SliderableValueSet<R>;
+    xmap<R extends unknown>(to: (param0: number) => R, from: (param0: R) => number, discrete: boolean): OptionInstance$SliderableValueSet<R>;
 }

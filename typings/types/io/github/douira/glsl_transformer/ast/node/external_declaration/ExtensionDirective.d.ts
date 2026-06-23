@@ -19,7 +19,7 @@ export class ExtensionDirective extends ExternalDeclaration {
     cloneInto(arg0: Root): ExtensionDirective;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
-    externalDeclarationAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    externalDeclarationAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     getExternalDeclarationType(): ExternalDeclaration$ExternalDeclarationType;
     getName(): string;
     setName(arg0: string): void;

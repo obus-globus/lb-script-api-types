@@ -4,6 +4,6 @@ export class SmartList$SingletonIterator extends SmartList$SingletonIteratorBase
     constructor(null_: SmartList$SingletonIterator)
     // private myInitialModCount: number;
     checkCoModification(): void;
-    getElement<E extends Object | number | string | boolean>(): E;
+    getElement<E extends unknown>(): E;
     remove(): void;
 }

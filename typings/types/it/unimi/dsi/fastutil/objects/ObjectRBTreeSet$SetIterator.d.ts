@@ -8,17 +8,17 @@ export class ObjectRBTreeSet$SetIterator extends Object implements ObjectListIte
     // private index: number;
     // private next: ObjectRBTreeSet$Entry<K>;
     // private prev: ObjectRBTreeSet$Entry<K>;
-    add<K extends Object | number | string | boolean>(arg0: K): void;
+    add<K extends unknown>(arg0: K): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    next<K extends Object | number | string | boolean>(): K;
-    nextEntry<K extends Object | number | string | boolean>(): ObjectRBTreeSet$Entry<K>;
+    next<K extends unknown>(): K;
+    nextEntry<K extends unknown>(): ObjectRBTreeSet$Entry<K>;
     nextIndex(): number;
-    previous<K extends Object | number | string | boolean>(): K;
-    previousEntry<K extends Object | number | string | boolean>(): ObjectRBTreeSet$Entry<K>;
+    previous<K extends unknown>(): K;
+    previousEntry<K extends unknown>(): ObjectRBTreeSet$Entry<K>;
     previousIndex(): number;
     remove(): void;
-    set<K extends Object | number | string | boolean>(arg0: K): void;
+    set<K extends unknown>(arg0: K): void;
     updateNext(): void;
     updatePrevious(): void;
 }

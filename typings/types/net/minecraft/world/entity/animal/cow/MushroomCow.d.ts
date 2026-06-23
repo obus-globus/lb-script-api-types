@@ -148,10 +148,10 @@ export class MushroomCow extends AbstractCow implements Shearable {
     // private lastLightningBoltUUID: UUID;
     // private stewEffects: SuspiciousStewEffects;
     addAdditionalSaveData(output: ValueOutput): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): MushroomCow;
     // private getEffectsFromItemStack(itemStack: ItemStack): Optional<SuspiciousStewEffects>;
     // private getOffspringVariant(mate: MushroomCow): MushroomCow$Variant;

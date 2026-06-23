@@ -5,7 +5,7 @@ import type { BiConsumer } from '../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { RegistryValidator } from '../../../net/minecraft/resources/RegistryValidator.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
-export class RegistryDataLoader$RegistryData<T extends Object | number | string | boolean> extends Record {
+export class RegistryDataLoader$RegistryData<T extends unknown> extends Record {
     private constructor(key: ResourceKey<T[]>, elementCodec: Codec<T>)
     constructor(key: ResourceKey<T[]>, elementCodec: Codec<T>, validator: (param0: T[], param1: Map<ResourceKey<Object>, Exception>) => void)
     // private elementCodec: Codec<T>;

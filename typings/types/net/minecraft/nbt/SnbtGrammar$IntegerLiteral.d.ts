@@ -15,8 +15,8 @@ export class SnbtGrammar$IntegerLiteral extends Record {
     // private suffix: SnbtGrammar$IntegerSuffix;
     base(): SnbtGrammar$Base;
     // private cleanupDigits(sign: SnbtGrammar$Sign): string;
-    create<T extends Object | number | string | boolean>(ops: DynamicOps<T>, type: SnbtGrammar$TypeSuffix, state: ParseState<Object>): T;
-    create<T extends Object | number | string | boolean>(ops: DynamicOps<T>, state: ParseState<Object>): T;
+    create<T extends unknown>(ops: DynamicOps<T>, type: SnbtGrammar$TypeSuffix, state: ParseState<Object>): T;
+    create<T extends unknown>(ops: DynamicOps<T>, state: ParseState<Object>): T;
     digits(): string;
     equals(o: Object | null): boolean;
     hashCode(): number;

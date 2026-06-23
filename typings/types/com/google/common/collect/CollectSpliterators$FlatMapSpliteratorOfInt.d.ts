@@ -5,7 +5,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { IntConsumer } from '../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class CollectSpliterators$FlatMapSpliteratorOfInt<InElementT extends Object | number | string | boolean> extends CollectSpliterators$FlatMapSpliteratorOfPrimitive<InElementT, number, (param0: number) => void, Spliterator$OfInt> implements Spliterator$OfInt {
+export class CollectSpliterators$FlatMapSpliteratorOfInt<InElementT extends unknown> extends CollectSpliterators$FlatMapSpliteratorOfPrimitive<InElementT, number, (param0: number) => void, Spliterator$OfInt> implements Spliterator$OfInt {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

@@ -158,11 +158,11 @@ export class ServerGamePacketListenerImpl extends ServerCommonPacketListenerImpl
     // private waitingForSwitchToConfig: boolean;
     ackBlockChangesUpTo(packetSequenceNr: number): void;
     // private broadcastChatMessage(message: PlayerChatMessage): void;
-    // private broadcastGameRuleChangeToOperators<T extends Object | number | string | boolean>(rule: GameRule<T>, value: T): void;
-    // private collectSignedArguments<S extends Object | number | string | boolean>(packet: ServerboundChatCommandSignedPacket, command: SignableCommand<S>, lastSeenMessages: LastSeenMessages): { [key: string]: PlayerChatMessage };
-    // private collectUnsignedArguments<S extends Object | number | string | boolean>(parsedArguments: SignableCommand$Argument<S>[]): { [key: string]: PlayerChatMessage };
+    // private broadcastGameRuleChangeToOperators<T extends unknown>(rule: GameRule<T>, value: T): void;
+    // private collectSignedArguments<S extends unknown>(packet: ServerboundChatCommandSignedPacket, command: SignableCommand<S>, lastSeenMessages: LastSeenMessages): { [key: string]: PlayerChatMessage };
+    // private collectUnsignedArguments<S extends unknown>(parsedArguments: SignableCommand$Argument<S>[]): { [key: string]: PlayerChatMessage };
     // private detectRateSpam(): void;
-    // private filterTextPacket<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(message: T, action: (param0: TextFilter, param1: T) => CompletableFuture<R>): CompletableFuture<R>;
+    // private filterTextPacket<R extends unknown, T extends unknown>(message: T, action: (param0: TextFilter, param1: T) => CompletableFuture<R>): CompletableFuture<R>;
     // private filterTextPacket(message: string): CompletableFuture<FilteredText>;
     // private filterTextPacket(message: string[]): CompletableFuture<FilteredText[]>;
     // private filterableFromOutgoing(text: FilteredText): Filterable<string>;
@@ -255,7 +255,7 @@ export class ServerGamePacketListenerImpl extends ServerCommonPacketListenerImpl
     sendDisguisedChatMessage(content: Component, chatType: ChatType$Bound): void;
     // private sendGameRuleValues(): void;
     sendPlayerChatMessage(message: PlayerChatMessage, chatType: ChatType$Bound): void;
-    // private setGameRuleValue<T extends Object | number | string | boolean>(gameRules: GameRules, rule: GameRule<T>, value: string): void;
+    // private setGameRuleValue<T extends unknown>(gameRules: GameRules, rule: GameRule<T>, value: string): void;
     // private shouldCheckPlayerMovement(isFallFlying: boolean): boolean;
     shouldHandleMessage(packet: Packet<any>): boolean;
     // private signBook(title: FilteredText, contents: FilteredText[], slot: number): void;

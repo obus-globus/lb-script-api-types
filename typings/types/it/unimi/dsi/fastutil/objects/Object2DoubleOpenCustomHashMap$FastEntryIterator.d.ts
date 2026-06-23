@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2DoubleOpenCustomHashMap$FastEntryIterator extends Object2DoubleOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Object2DoubleMap$Entry<K>> {
     private constructor(null_: Object2DoubleOpenCustomHashMap$FastEntryIterator)
     // private entry: Object2DoubleOpenCustomHashMap$MapEntry;
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Object2DoubleMap$Entry<K>) => void, arg1: number): void;
-    next<K extends Object | number | string | boolean>(): Object2DoubleOpenCustomHashMap$MapEntry;
+    acceptOnIndex<K extends unknown>(arg0: (param0: Object2DoubleMap$Entry<K>) => void, arg1: number): void;
+    next<K extends unknown>(): Object2DoubleOpenCustomHashMap$MapEntry;
     skip(arg0: number): number;
 }

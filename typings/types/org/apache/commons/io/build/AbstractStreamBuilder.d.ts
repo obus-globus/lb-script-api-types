@@ -11,7 +11,7 @@ import type { IntUnaryOperator } from '../../../../../java/util/function/IntUnar
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { AbstractOriginSupplier } from '../../../../../org/apache/commons/io/build/AbstractOriginSupplier.d.ts'
-export abstract class AbstractStreamBuilder<T extends Object | number | string | boolean, B extends AbstractStreamBuilder<T, B>> extends AbstractOriginSupplier<T, B> {
+export abstract class AbstractStreamBuilder<T extends unknown, B extends AbstractStreamBuilder<T, B>> extends AbstractOriginSupplier<T, B> {
     constructor()
     readonly bufferSize: number;
     // private bufferSizeChecker: (param0: number) => number;

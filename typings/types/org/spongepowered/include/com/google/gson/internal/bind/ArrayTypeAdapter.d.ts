@@ -5,7 +5,7 @@ import type { TypeAdapter } from '../../../../../../../../org/spongepowered/incl
 import type { TypeAdapterFactory } from '../../../../../../../../org/spongepowered/include/com/google/gson/TypeAdapterFactory.d.ts'
 import type { JsonReader } from '../../../../../../../../org/spongepowered/include/com/google/gson/stream/JsonReader.d.ts'
 import type { JsonWriter } from '../../../../../../../../org/spongepowered/include/com/google/gson/stream/JsonWriter.d.ts'
-export class ArrayTypeAdapter<E extends Object | number | string | boolean> extends TypeAdapter<Object> {
+export class ArrayTypeAdapter<E extends unknown> extends TypeAdapter<Object> {
     static FACTORY: TypeAdapterFactory;
     constructor(arg0: Gson, arg1: TypeAdapter<E>, arg2: Class<E>)
     // private componentType: Class<E>;

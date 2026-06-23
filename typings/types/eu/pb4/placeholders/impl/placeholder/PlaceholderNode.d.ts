@@ -6,7 +6,7 @@ import type { TextNode } from '../../../../../eu/pb4/placeholders/api/node/TextN
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
-export class PlaceholderNode<Ctx extends Object | number | string | boolean> extends Record implements TextNode {
+export class PlaceholderNode<Ctx extends unknown> extends Record implements TextNode {
     static array(paramarg0: (Object | null)[]): (Object | null)[];
     static asSingle(paramarg0: (Object | null)[]): TextNode;
     static asSingle(paramarg0: TextNode[]): TextNode;

@@ -150,13 +150,13 @@ export class Sheep extends Animal implements Shearable {
     // private eatBlockGoal: EatBlockGoal;
     addAdditionalSaveData(output: ValueOutput): void;
     aiStep(): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     ate(): void;
     customServerAiStep(level: ServerLevel): void;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): Sheep;
     getColor(): DyeColor;

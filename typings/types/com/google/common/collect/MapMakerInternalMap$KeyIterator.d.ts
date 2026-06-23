@@ -2,5 +2,5 @@ import type { MapMakerInternalMap$HashIterator } from '../../../../com/google/co
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MapMakerInternalMap$KeyIterator extends MapMakerInternalMap$HashIterator<Object> {
     constructor(null_: MapMakerInternalMap$KeyIterator)
-    next<K extends Object | number | string | boolean>(): K;
+    next<K extends unknown>(): K;
 }

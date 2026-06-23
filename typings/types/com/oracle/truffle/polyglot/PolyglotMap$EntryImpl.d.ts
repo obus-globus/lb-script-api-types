@@ -11,6 +11,6 @@ export class PolyglotMap$EntryImpl extends Object implements Map$Entry<K, V> {
     readonly key: K;
     readonly key: K;
     readonly value: V;
-    setValue<V extends Object | number | string | boolean>(value: V): V;
+    setValue<V extends unknown>(value: V): V;
     toString(): string;
 }

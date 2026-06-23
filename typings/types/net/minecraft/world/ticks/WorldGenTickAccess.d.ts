@@ -4,7 +4,7 @@ import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { LevelTickAccess } from '../../../../net/minecraft/world/ticks/LevelTickAccess.d.ts'
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 import type { TickContainerAccess } from '../../../../net/minecraft/world/ticks/TickContainerAccess.d.ts'
-export class WorldGenTickAccess<T extends Object | number | string | boolean> extends Object implements LevelTickAccess<T> {
+export class WorldGenTickAccess<T extends unknown> extends Object implements LevelTickAccess<T> {
     constructor(containerGetter: (param0: BlockPos) => TickContainerAccess<T>)
     // private containerGetter: (param0: BlockPos) => TickContainerAccess<T>;
     count(): number;

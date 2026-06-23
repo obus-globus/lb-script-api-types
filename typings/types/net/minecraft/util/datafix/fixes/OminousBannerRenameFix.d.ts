@@ -14,5 +14,5 @@ export class OminousBannerRenameFix extends ItemStackTagFix {
     static createFixer(paramitemStackType: Type<Object>, paramidFilter: (param0: string) => boolean, paramfixer: (param0: Typed<Object>) => Object | null): (param0: Typed<Object>) => Object | null;
     constructor(outputSchema: Schema)
     fixItemStackTag(tag: Typed<Object>): Typed<Object>;
-    // private fixItemStackTag<T extends Object | number | string | boolean>(tag: Dynamic<T>): Dynamic<T>;
+    // private fixItemStackTag<T extends unknown>(tag: Dynamic<T>): Dynamic<T>;
 }

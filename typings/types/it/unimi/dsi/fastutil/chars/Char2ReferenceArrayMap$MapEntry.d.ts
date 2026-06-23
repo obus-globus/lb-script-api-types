@@ -16,18 +16,18 @@ export class Char2ReferenceArrayMap$MapEntry extends Object implements Char2Refe
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): string;
-    first<V extends Object | number | string | boolean>(arg0: string): CharReferencePair<V>;
+    first<V extends unknown>(arg0: string): CharReferencePair<V>;
     firstChar(): string;
     getCharKey(): string;
     hashCode(): number;
     key(): string;
-    key<V extends Object | number | string | boolean>(arg0: string): CharReferencePair<V>;
+    key<V extends unknown>(arg0: string): CharReferencePair<V>;
     keyChar(): string;
     left(): string;
-    left<V extends Object | number | string | boolean>(arg0: string): CharReferencePair<V>;
+    left<V extends unknown>(arg0: string): CharReferencePair<V>;
     leftChar(): string;
-    right<V extends Object | number | string | boolean>(): V;
-    right<V extends Object | number | string | boolean>(arg0: V): CharReferencePair<V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    right<V extends unknown>(): V;
+    right<V extends unknown>(arg0: V): CharReferencePair<V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

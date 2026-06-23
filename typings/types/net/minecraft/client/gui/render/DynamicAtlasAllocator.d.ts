@@ -2,7 +2,7 @@ import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { BiPredicate } from '../../../../../java/util/function/BiPredicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DynamicAtlasAllocator$Slot } from '../../../../../net/minecraft/client/gui/render/DynamicAtlasAllocator$Slot.d.ts'
-export class DynamicAtlasAllocator<K extends Object | number | string | boolean> extends Object {
+export class DynamicAtlasAllocator<K extends unknown> extends Object {
     constructor(width: number, height: number)
     // private freeSlots: BitSet;
     // private slots: DynamicAtlasAllocator$Slot[];

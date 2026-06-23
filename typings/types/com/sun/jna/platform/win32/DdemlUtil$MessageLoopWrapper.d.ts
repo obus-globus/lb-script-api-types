@@ -9,5 +9,5 @@ export class DdemlUtil$MessageLoopWrapper extends Object implements InvocationHa
     // private delegate: Object;
     // private loopThread: User32Util$MessageLoopThread;
     invoke(arg0: Object, arg1: Method, arg2: Object[]): Object;
-    // private wrap<V extends Object | number | string | boolean>(arg0: V, arg1: Class<Object>): V;
+    // private wrap<V extends unknown>(arg0: V, arg1: Class<Object>): V;
 }

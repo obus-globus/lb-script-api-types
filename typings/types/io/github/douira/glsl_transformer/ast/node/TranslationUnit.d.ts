@@ -22,7 +22,7 @@ export class TranslationUnit extends ListASTNode<ExternalDeclaration> {
     constructor(arg0: Stream<ExternalDeclaration>)
     outputOptions: OutputOptions;
     versionStatement: VersionStatement;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     appendFunctionBody(arg0: string, arg1: Statement[]): void;
     appendFunctionBody(arg0: string, arg1: Statement): void;
     appendMainFunctionBody(arg0: Statement[]): void;

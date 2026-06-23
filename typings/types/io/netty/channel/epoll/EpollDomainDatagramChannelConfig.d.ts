@@ -12,7 +12,7 @@ export class EpollDomainDatagramChannelConfig extends EpollChannelConfig impleme
     constructor(arg0: EpollDomainDatagramChannel)
     // private activeOnOpen: boolean;
     getActiveOnOpen(): boolean;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getSendBufferSize(): number;
@@ -25,7 +25,7 @@ export class EpollDomainDatagramChannelConfig extends EpollChannelConfig impleme
     setMaxMessagesPerRead(arg0: number): EpollDomainDatagramChannelConfig;
     setMaxMessagesPerWrite(arg0: number): EpollDomainDatagramChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): EpollDomainDatagramChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setRecvByteBufAllocator(arg0: RecvByteBufAllocator): EpollDomainDatagramChannelConfig;
     setSendBufferSize(arg0: number): EpollDomainDatagramChannelConfig;
     setWriteBufferWaterMark(arg0: WriteBufferWaterMark): EpollDomainDatagramChannelConfig;

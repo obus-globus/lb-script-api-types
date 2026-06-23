@@ -6,7 +6,7 @@ import type { ComponentPredicateParser$Context } from '../../../../../net/minecr
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { NamedRule } from '../../../../../net/minecraft/util/parsing/packrat/NamedRule.d.ts'
 import type { ResourceLookupRule } from '../../../../../net/minecraft/util/parsing/packrat/commands/ResourceLookupRule.d.ts'
-export class ComponentPredicateParser$ComponentLookupRule<T extends Object | number | string | boolean, C extends Object | number | string | boolean, P extends Object | number | string | boolean> extends ResourceLookupRule<ComponentPredicateParser$Context<T, C, P>, C> {
+export class ComponentPredicateParser$ComponentLookupRule<T extends unknown, C extends unknown, P extends unknown> extends ResourceLookupRule<ComponentPredicateParser$Context<T, C, P>, C> {
     private constructor(idParser: NamedRule<StringReader, Identifier>, context: ComponentPredicateParser$Context<T, C, P>)
     possibleResources(): Stream<Identifier>;
     validateElement(reader: ImmutableStringReader, id: Identifier): C;

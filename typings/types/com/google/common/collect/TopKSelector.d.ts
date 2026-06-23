@@ -1,7 +1,7 @@
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class TopKSelector<T extends Object | number | string | boolean> extends Object {
+export class TopKSelector<T extends unknown> extends Object {
     static greatest(paramk: number): TopKSelector<Object>;
     static greatest(paramk: number, paramcomparator: (param0: Object) => boolean): TopKSelector<Object>;
     static least(paramk: number): TopKSelector<Object>;

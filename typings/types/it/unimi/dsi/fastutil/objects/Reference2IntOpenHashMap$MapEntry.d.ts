@@ -18,17 +18,17 @@ export class Reference2IntOpenHashMap$MapEntry extends Object implements Referen
     equals(arg0: Object | null): boolean;
     getIntValue(): number;
     hashCode(): number;
-    left<K extends Object | number | string | boolean>(): K;
-    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, number>;
+    left<K extends unknown>(): K;
+    left<K extends unknown>(arg0: K): Pair<K, number>;
     right(): number;
-    right<K extends Object | number | string | boolean>(arg0: number): ReferenceIntPair<K>;
+    right<K extends unknown>(arg0: number): ReferenceIntPair<K>;
     rightInt(): number;
     second(): number;
-    second<K extends Object | number | string | boolean>(arg0: number): ReferenceIntPair<K>;
+    second<K extends unknown>(arg0: number): ReferenceIntPair<K>;
     secondInt(): number;
     setValue(arg0: number): number;
     toString(): string;
     value(): number;
-    value<K extends Object | number | string | boolean>(arg0: number): ReferenceIntPair<K>;
+    value<K extends unknown>(arg0: number): ReferenceIntPair<K>;
     valueInt(): number;
 }

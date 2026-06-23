@@ -43,7 +43,7 @@ export class MemoryMappingTree extends Object implements VisitableMappingTree {
     getSrcNamespace(): string;
     // private getSrcNsEquivalent(arg0: MappingTree$ElementMapping): number;
     // private initClassesByDstNames(): void;
-    // private propagateNames<T extends Object | number | string | boolean>(arg0: HierarchyInfoProvider<T>): void;
+    // private propagateNames<T extends unknown>(arg0: HierarchyInfoProvider<T>): void;
     // private queuePendingClass(arg0: string): MemoryMappingTree$ClassEntry;
     // private queuePendingMember(arg0: string, arg1: string, arg2: boolean): MemoryMappingTree$MemberEntry<any>;
     reset(): void;

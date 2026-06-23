@@ -5,7 +5,7 @@ import type { OptionParser } from '../joptsimple/OptionParser.d.ts'
 import type { OptionSet } from '../joptsimple/OptionSet.d.ts'
 import type { ValueConverter } from '../joptsimple/ValueConverter.d.ts'
 import type { Object } from '../java/lang/Object.d.ts'
-export abstract class ArgumentAcceptingOptionSpec<V extends Object | number | string | boolean> extends AbstractOptionSpec<V> {
+export abstract class ArgumentAcceptingOptionSpec<V extends unknown> extends AbstractOptionSpec<V> {
     constructor(arg0: string, arg1: boolean)
     constructor(arg0: string[], arg1: boolean, arg2: string)
     // private argumentDescription: string;
@@ -31,9 +31,9 @@ export abstract class ArgumentAcceptingOptionSpec<V extends Object | number | st
     hashCode(): number;
     isArgumentOfNumberType(): boolean;
     isRequired(): boolean;
-    ofType<T extends Object | number | string | boolean>(arg0: Class<T>): ArgumentAcceptingOptionSpec<T>;
+    ofType<T extends unknown>(arg0: Class<T>): ArgumentAcceptingOptionSpec<T>;
     required(): ArgumentAcceptingOptionSpec<V>;
     requiresArgument(): boolean;
-    withValuesConvertedBy<T extends Object | number | string | boolean>(arg0: ValueConverter<T>): ArgumentAcceptingOptionSpec<T>;
+    withValuesConvertedBy<T extends unknown>(arg0: ValueConverter<T>): ArgumentAcceptingOptionSpec<T>;
     withValuesSeparatedBy(arg0: string): ArgumentAcceptingOptionSpec<V>;
 }

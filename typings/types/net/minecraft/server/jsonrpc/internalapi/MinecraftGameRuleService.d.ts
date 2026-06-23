@@ -5,7 +5,7 @@ import type { GameRulesService$GameRuleUpdate } from '../../../../../net/minecra
 import type { GameRule } from '../../../../../net/minecraft/world/level/gamerules/GameRule.d.ts'
 export interface MinecraftGameRuleService extends Object{
     getAvailableGameRules(): Stream<GameRule<Object>>;
-    getRuleValue<T extends Object | number | string | boolean>(gameRule: GameRule<T>): T;
-    getTypedRule<T extends Object | number | string | boolean>(gameRule: GameRule<T>, value: T): GameRulesService$GameRuleUpdate<T>;
-    updateGameRule<T extends Object | number | string | boolean>(update: GameRulesService$GameRuleUpdate<T>, clientInfo: ClientInfo): GameRulesService$GameRuleUpdate<T>;
+    getRuleValue<T extends unknown>(gameRule: GameRule<T>): T;
+    getTypedRule<T extends unknown>(gameRule: GameRule<T>, value: T): GameRulesService$GameRuleUpdate<T>;
+    updateGameRule<T extends unknown>(update: GameRulesService$GameRuleUpdate<T>, clientInfo: ClientInfo): GameRulesService$GameRuleUpdate<T>;
 }

@@ -16,18 +16,18 @@ export class Byte2ReferenceLinkedOpenHashMap$MapEntry extends Object implements 
     readonly value: V;
     equals(arg0: Object | null): boolean;
     first(): number;
-    first<V extends Object | number | string | boolean>(arg0: number): ByteReferencePair<V>;
+    first<V extends unknown>(arg0: number): ByteReferencePair<V>;
     firstByte(): number;
     getByteKey(): number;
     hashCode(): number;
     key(): number;
-    key<V extends Object | number | string | boolean>(arg0: number): ByteReferencePair<V>;
+    key<V extends unknown>(arg0: number): ByteReferencePair<V>;
     keyByte(): number;
     left(): number;
-    left<V extends Object | number | string | boolean>(arg0: number): ByteReferencePair<V>;
+    left<V extends unknown>(arg0: number): ByteReferencePair<V>;
     leftByte(): number;
-    right<V extends Object | number | string | boolean>(): V;
-    right<V extends Object | number | string | boolean>(arg0: V): ByteReferencePair<V>;
-    setValue<V extends Object | number | string | boolean>(arg0: V): V;
+    right<V extends unknown>(): V;
+    right<V extends unknown>(arg0: V): ByteReferencePair<V>;
+    setValue<V extends unknown>(arg0: V): V;
     toString(): string;
 }

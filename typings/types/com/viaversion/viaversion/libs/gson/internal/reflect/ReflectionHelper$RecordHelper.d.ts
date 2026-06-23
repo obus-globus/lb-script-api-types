@@ -6,7 +6,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class ReflectionHelper$RecordHelper extends Object {
     private constructor()
     getAccessor(arg0: Class<Object>, arg1: Field): Method;
-    getCanonicalRecordConstructor<T extends Object | number | string | boolean>(arg0: Class<T>): Constructor<T>;
+    getCanonicalRecordConstructor<T extends unknown>(arg0: Class<T>): Constructor<T>;
     getRecordComponentNames(arg0: Class<Object>): string[];
     isRecord(arg0: Class<Object>): boolean;
 }

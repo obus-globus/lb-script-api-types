@@ -9,15 +9,15 @@ export interface ExecutorService extends AutoCloseable, Executor, Object {
     awaitTermination(arg0: number, arg1: TimeUnit): boolean;
     close(): void;
     execute(arg0: () => void): void;
-    invokeAll<T extends Object | number | string | boolean>(arg0: () => T[]): Future<T>[];
-    invokeAll<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number, arg2: TimeUnit): Future<T>[];
-    invokeAny<T extends Object | number | string | boolean>(arg0: () => T[]): T;
-    invokeAny<T extends Object | number | string | boolean>(arg0: () => T[], arg1: number, arg2: TimeUnit): T;
+    invokeAll<T extends unknown>(arg0: () => T[]): Future<T>[];
+    invokeAll<T extends unknown>(arg0: () => T[], arg1: number, arg2: TimeUnit): Future<T>[];
+    invokeAny<T extends unknown>(arg0: () => T[]): T;
+    invokeAny<T extends unknown>(arg0: () => T[], arg1: number, arg2: TimeUnit): T;
     isShutdown(): boolean;
     isTerminated(): boolean;
     shutdown(): void;
     shutdownNow(): () => void[];
     submit(arg0: () => void): Future<Object>;
-    submit<T extends Object | number | string | boolean>(arg0: () => void, arg1: T): Future<T>;
-    submit<T extends Object | number | string | boolean>(arg0: () => T): Future<T>;
+    submit<T extends unknown>(arg0: () => void, arg1: T): Future<T>;
+    submit<T extends unknown>(arg0: () => T): Future<T>;
 }

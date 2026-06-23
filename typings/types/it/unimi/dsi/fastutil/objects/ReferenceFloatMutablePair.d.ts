@@ -1,7 +1,7 @@
 import type { ReferenceFloatPair } from '../../../../../it/unimi/dsi/fastutil/objects/ReferenceFloatPair.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ReferenceFloatMutablePair<K extends Object | number | string | boolean> extends Object implements ReferenceFloatPair<K>, Serializable {
+export class ReferenceFloatMutablePair<K extends unknown> extends Object implements ReferenceFloatPair<K>, Serializable {
     static of(paramarg0: Object | null, paramarg1: number): ReferenceFloatMutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ReferenceFloatPair<Object>;
     constructor(arg0: K, arg1: number)

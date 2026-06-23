@@ -14,7 +14,7 @@ export class ReflectiveTypeAdapterFactory extends Object implements TypeAdapterF
     // private constructorConstructor: ConstructorConstructor;
     // private excluder: Excluder;
     // private fieldNamingPolicy: FieldNamingStrategy;
-    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends unknown>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
     // private createBoundField(arg0: Gson, arg1: Field, arg2: string, arg3: TypeToken<Object>, arg4: boolean, arg5: boolean): ReflectiveTypeAdapterFactory$BoundField;
     excludeField(arg0: Field, arg1: boolean): boolean;
     // private getBoundFields(arg0: Gson, arg1: TypeToken<Object>, arg2: Class<Object>): { [key: string]: ReflectiveTypeAdapterFactory$BoundField };

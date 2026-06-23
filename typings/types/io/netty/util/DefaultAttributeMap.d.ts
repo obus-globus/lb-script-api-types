@@ -6,7 +6,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class DefaultAttributeMap extends Object implements AttributeMap {
     constructor()
     // private attributes: DefaultAttributeMap$DefaultAttribute<Object>[];
-    attr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): Attribute<T>;
-    hasAttr<T extends Object | number | string | boolean>(arg0: AttributeKey<T>): boolean;
-    // private removeAttributeIfMatch<T extends Object | number | string | boolean>(arg0: AttributeKey<T>, arg1: DefaultAttributeMap$DefaultAttribute<T>): void;
+    attr<T extends unknown>(arg0: AttributeKey<T>): Attribute<T>;
+    hasAttr<T extends unknown>(arg0: AttributeKey<T>): boolean;
+    // private removeAttributeIfMatch<T extends unknown>(arg0: AttributeKey<T>, arg1: DefaultAttributeMap$DefaultAttribute<T>): void;
 }

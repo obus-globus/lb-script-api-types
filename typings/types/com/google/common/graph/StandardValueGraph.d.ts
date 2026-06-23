@@ -4,7 +4,7 @@ import type { ElementOrder } from '../../../../com/google/common/graph/ElementOr
 import type { GraphConnections } from '../../../../com/google/common/graph/GraphConnections.d.ts'
 import type { MapIteratorCache } from '../../../../com/google/common/graph/MapIteratorCache.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class StandardValueGraph<N extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractValueGraph<N, V> {
+export class StandardValueGraph<N extends unknown, V extends unknown> extends AbstractValueGraph<N, V> {
     constructor(builder: AbstractGraphBuilder<N>)
     constructor(builder: AbstractGraphBuilder<N>, nodeConnections: Map<N, GraphConnections<N, V>>, edgeCount: number)
     // private allowsSelfLoops: boolean;

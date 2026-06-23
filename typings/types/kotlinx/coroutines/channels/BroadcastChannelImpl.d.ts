@@ -7,7 +7,7 @@ import type { Channel$Factory } from '../../../kotlinx/coroutines/channels/Chann
 import type { ChannelResult } from '../../../kotlinx/coroutines/channels/ChannelResult.d.ts'
 import type { ReceiveChannel } from '../../../kotlinx/coroutines/channels/ReceiveChannel.d.ts'
 import type { SelectInstance } from '../../../kotlinx/coroutines/selects/SelectInstance.d.ts'
-export class BroadcastChannelImpl<E extends Object | number | string | boolean> extends BufferedChannel<E> implements BroadcastChannel<E> {
+export class BroadcastChannelImpl<E extends unknown> extends BufferedChannel<E> implements BroadcastChannel<E> {
     static BUFFERED: number;
     static CONFLATED: number;
     static DEFAULT_BUFFER_PROPERTY_NAME: string;

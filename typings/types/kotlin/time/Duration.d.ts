@@ -78,10 +78,10 @@ export class Duration extends Object implements Comparable<Duration> {
     minus(other: Duration): Duration;
     plus(other: Duration): Duration;
     times(scale: number): Duration;
-    toComponents<T extends Object | number | string | boolean>(action: (param0: number, param1: number) => T): T;
-    toComponents<T extends Object | number | string | boolean>(action: (param0: number, param1: number, param2: number) => T): T;
-    toComponents<T extends Object | number | string | boolean>(action: (param0: number, param1: number, param2: number, param3: number) => T): T;
-    toComponents<T extends Object | number | string | boolean>(action: (param0: number, param1: number, param2: number, param3: number, param4: number) => T): T;
+    toComponents<T extends unknown>(action: (param0: number, param1: number) => T): T;
+    toComponents<T extends unknown>(action: (param0: number, param1: number, param2: number) => T): T;
+    toComponents<T extends unknown>(action: (param0: number, param1: number, param2: number, param3: number) => T): T;
+    toComponents<T extends unknown>(action: (param0: number, param1: number, param2: number, param3: number, param4: number) => T): T;
     toDouble(unit: DurationUnit): number;
     toInt(unit: DurationUnit): number;
     toIsoString(): string;

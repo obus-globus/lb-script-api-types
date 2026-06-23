@@ -4,7 +4,7 @@ import type { Constructor } from '../../../../java/lang/reflect/Constructor.d.ts
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class Relation<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Freezable<Relation<K, V>> {
+export class Relation<K extends unknown, V extends unknown> extends Object implements Freezable<Relation<K, V>> {
     static of(paramarg0: Map<Object | null, (Object | null)[]>, paramarg1: Class<Object>): Relation<Object, Object>;
     static of(paramarg0: Map<Object | null, (Object | null)[]>, paramarg1: Class<Object>, paramarg2: (param0: Object) => boolean): Relation<Object, Object>;
     constructor(arg0: Map<K, V[]>, arg1: Class<Object>)

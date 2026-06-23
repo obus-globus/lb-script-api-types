@@ -1,6 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class UnicodeMapIterator<T extends Object | number | string | boolean> extends Object {
+export class UnicodeMapIterator<T extends unknown> extends Object {
     static IS_STRING: number;
     constructor()
     constructor(arg0: string[])

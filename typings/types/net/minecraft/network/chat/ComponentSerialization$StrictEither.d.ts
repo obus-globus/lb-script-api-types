@@ -10,7 +10,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ComponentSerialization$StrictEither<T extends Object | number | string | boolean> extends MapCodec<T> {
+export class ComponentSerialization$StrictEither<T extends unknown> extends MapCodec<T> {
     static assumeMapUnsafe(paramarg0: Codec<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
@@ -23,7 +23,7 @@ export class ComponentSerialization$StrictEither<T extends Object | number | str
     // private fuzzy: MapCodec<T>;
     // private typeFieldName: string;
     // private typed: MapCodec<T>;
-    decode<O extends Object | number | string | boolean>(ops: DynamicOps<O>, input: MapLike<O>): DataResult<T>;
-    encode<O extends Object | number | string | boolean>(input: T, ops: DynamicOps<O>, prefix: RecordBuilder<O>): RecordBuilder<O>;
-    keys<T1 extends Object | number | string | boolean>(ops: DynamicOps<T1>): Stream<T1>;
+    decode<O extends unknown>(ops: DynamicOps<O>, input: MapLike<O>): DataResult<T>;
+    encode<O extends unknown>(input: T, ops: DynamicOps<O>, prefix: RecordBuilder<O>): RecordBuilder<O>;
+    keys<T1 extends unknown>(ops: DynamicOps<T1>): Stream<T1>;
 }

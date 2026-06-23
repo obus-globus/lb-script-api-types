@@ -10,7 +10,7 @@ import type { ReflectKProperty } from '../../../../kotlin/reflect/jvm/internal/R
 import type { ReflectProperties$LazySoftVal } from '../../../../kotlin/reflect/jvm/internal/ReflectProperties$LazySoftVal.d.ts'
 import type { Caller } from '../../../../kotlin/reflect/jvm/internal/calls/Caller.d.ts'
 import type { PropertyDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
-export abstract class DescriptorKProperty<V extends Object | number | string | boolean> extends DescriptorKCallable<V> implements ReflectKProperty<V> {
+export abstract class DescriptorKProperty<V extends unknown> extends DescriptorKCallable<V> implements ReflectKProperty<V> {
     static Companion: DescriptorKProperty$Companion;
     constructor(container: KDeclarationContainerImpl, name: string, signature: string, boundReceiver: Object | null)
     private constructor(container: KDeclarationContainerImpl, name: string, signature: string, descriptorInitialValue: PropertyDescriptor | null, rawBoundReceiver: Object | null)

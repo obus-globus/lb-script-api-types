@@ -21,7 +21,7 @@ export abstract class AbstractFileComparator extends Object implements Comparato
     sort(arg0: File[]): File[];
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparing<U extends Comparable<U>>(arg0: (param0: File) => U): (param0: Object) => boolean;
-    thenComparing<U extends Object | number | string | boolean>(arg0: (param0: File) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparing<U extends unknown>(arg0: (param0: File) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparingDouble(arg0: (param0: File) => number): (param0: Object) => boolean;
     thenComparingInt(arg0: (param0: File) => number): (param0: Object) => boolean;
     thenComparingLong(arg0: (param0: File) => number): (param0: Object) => boolean;

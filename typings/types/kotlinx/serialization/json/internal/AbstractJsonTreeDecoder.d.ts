@@ -32,8 +32,8 @@ export class AbstractJsonTreeDecoder extends NamedValueDecoder implements JsonDe
     decodeInline(descriptor: SerialDescriptor): Decoder;
     decodeJsonElement(): JsonElement;
     decodeNotNullMark(): boolean;
-    decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>): T;
-    protected decodeSerializableValue<T extends Object | number | string | boolean>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
+    decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
+    protected decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     protected decodeTaggedBoolean(tag: string): boolean;
     protected decodeTaggedByte(tag: string): number;
     protected decodeTaggedChar(tag: string): string;
@@ -48,7 +48,7 @@ export class AbstractJsonTreeDecoder extends NamedValueDecoder implements JsonDe
     protected decodeTaggedShort(tag: string): number;
     protected decodeTaggedString(tag: string): string;
     endStructure(descriptor: SerialDescriptor): void;
-    // private getPrimitiveValue<T extends Object | number | string | boolean>(tag: string, primitiveName: string, convert: (param0: JsonPrimitive) => T | null): T;
+    // private getPrimitiveValue<T extends unknown>(tag: string, primitiveName: string, convert: (param0: JsonPrimitive) => T | null): T;
     protected getPrimitiveValue(tag: string, descriptor: SerialDescriptor): JsonPrimitive;
     protected renderTagStack(): string;
     renderTagStack(currentTag: string): string;

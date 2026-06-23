@@ -2,14 +2,14 @@ import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
 import type { IVec } from '../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/IVec.d.ts'
-export class Vec<T extends Object | number | string | boolean> extends Object implements IVec<T> {
+export class Vec<T extends unknown> extends Object implements IVec<T> {
     constructor()
     constructor(arg0: number)
     // private myarray: T[];
     // private nbelem: number;
     clear(): void;
     clone(): IVec<T>;
-    copyTo<E extends Object | number | string | boolean>(arg0: E[]): void;
+    copyTo<E extends unknown>(arg0: E[]): void;
     copyTo(arg0: IVec<T>): void;
     delete(arg0: number): T;
     ensure(arg0: number): void;

@@ -35,8 +35,8 @@ export class StackedContents$RecipePicker extends Object {
     // private setInitialConnections(): void;
     // private setSatisfied(ingredient: number): void;
     // private tryAssigningNewItem(capacity: number): (Object | null)[];
-    tryPick<T extends Object | number | string | boolean>(capacity: number, output: (param0: T) => void): boolean;
-    tryPickAll<T extends Object | number | string | boolean>(maxSize: number, output: (param0: T) => void): number;
+    tryPick<T extends unknown>(capacity: number, output: (param0: T) => void): boolean;
+    tryPickAll<T extends unknown>(maxSize: number, output: (param0: T) => void): number;
     // private unassign(item: number, ingredient: number): void;
     // private visitIngredient(item: number): void;
     // private visitItem(item: number): void;

@@ -21,9 +21,9 @@ export class ScoreHolderArgument extends Object implements ArgumentType<(param0:
     constructor(multiple: boolean)
     // private multiple: boolean;
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): (param0: CommandSourceStack, param1: () => ScoreHolder[]) => ScoreHolder[];
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): (param0: CommandSourceStack, param1: () => ScoreHolder[]) => ScoreHolder[];
     parse(reader: StringReader): (param0: CommandSourceStack, param1: () => ScoreHolder[]) => ScoreHolder[];
-    parse<S extends Object | number | string | boolean>(reader: StringReader, source: S): (param0: CommandSourceStack, param1: () => ScoreHolder[]) => ScoreHolder[];
+    parse<S extends unknown>(reader: StringReader, source: S): (param0: CommandSourceStack, param1: () => ScoreHolder[]) => ScoreHolder[];
     // private parse(reader: StringReader, allowSelectors: boolean): (param0: CommandSourceStack, param1: () => ScoreHolder[]) => ScoreHolder[];
 }

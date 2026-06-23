@@ -32,7 +32,7 @@ export class CommandLine extends Object {
     readonly versionHelpRequested: boolean;
     // private versionLines: string[];
     addSubcommand(name: string, command: Object): CommandLine;
-    getCommand<T extends Object | number | string | boolean>(): T;
+    getCommand<T extends unknown>(): T;
     getCommandName(): string;
     getParent(): CommandLine;
     getSeparator(): string;
@@ -48,7 +48,7 @@ export class CommandLine extends Object {
     printVersionHelp(out: PrintStream): void;
     printVersionHelp(out: PrintStream, ansi: CommandLine$Help$Ansi): void;
     printVersionHelp(out: PrintStream, ansi: CommandLine$Help$Ansi, params: Object[]): void;
-    registerConverter<K extends Object | number | string | boolean>(cls: Class<K>, converter: CommandLine$ITypeConverter<K>): CommandLine;
+    registerConverter<K extends unknown>(cls: Class<K>, converter: CommandLine$ITypeConverter<K>): CommandLine;
     setCommandName(commandName: string): CommandLine;
     setOverwrittenOptionsAllowed(newValue: boolean): CommandLine;
     setSeparator(separator: string): CommandLine;

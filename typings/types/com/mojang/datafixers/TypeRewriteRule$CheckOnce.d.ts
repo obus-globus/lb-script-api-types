@@ -26,7 +26,7 @@ export class TypeRewriteRule$CheckOnce extends Record implements TypeRewriteRule
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     onFail(): (param0: Type<Object>) => void;
-    rewrite<A extends Object | number | string | boolean>(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
+    rewrite<A extends unknown>(arg0: Type<A>): Optional<RewriteResult<A, Object>>;
     rule(): TypeRewriteRule;
     toString(): string;
 }

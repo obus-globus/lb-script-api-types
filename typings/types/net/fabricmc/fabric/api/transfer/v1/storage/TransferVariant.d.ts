@@ -9,14 +9,14 @@ import type { DataComponentType } from '../../../../../../../net/minecraft/core/
 import type { TypedDataComponent } from '../../../../../../../net/minecraft/core/component/TypedDataComponent.d.ts'
 import type { ResourceKey } from '../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts'
-export interface TransferVariant<O extends Object | number | string | boolean> extends Object, TypedInstance<O>, DataComponentHolder{
+export interface TransferVariant<O extends unknown> extends Object, TypedInstance<O>, DataComponentHolder{
     componentsMatch(arg0: DataComponentPatch): boolean;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
-    getAllOfType<T extends Object | number | string | boolean>(valueClass: Class<T>): Stream<T>;
+    get<T extends unknown>(type: DataComponentType<T>): T;
+    getAllOfType<T extends unknown>(valueClass: Class<T>): Stream<T>;
     getComponents(): TypedDataComponent<Object>[];
     getComponentsPatch(): DataComponentPatch;
     getObject(): O;
-    getOrDefault<T extends Object | number | string | boolean>(type: DataComponentType<T>, defaultValue: T): T;
+    getOrDefault<T extends unknown>(type: DataComponentType<T>, defaultValue: T): T;
     has(type: DataComponentType<Object>): boolean;
     hasComponents(): boolean;
     is(rawType: O): boolean;

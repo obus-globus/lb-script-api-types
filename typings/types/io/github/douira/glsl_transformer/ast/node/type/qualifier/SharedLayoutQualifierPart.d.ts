@@ -16,5 +16,5 @@ export class SharedLayoutQualifierPart extends LayoutQualifierPart {
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getLayoutQualifierType(): LayoutQualifierPart$LayoutQualifierType;
-    layoutQualifierPartAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    layoutQualifierPartAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

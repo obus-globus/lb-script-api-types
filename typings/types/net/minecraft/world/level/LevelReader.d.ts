@@ -95,7 +95,7 @@ export interface LevelReader extends Object, ChunkView, BlockAndLightGetter, Col
     hasChunksAt(pos0: BlockPos, pos1: BlockPos): boolean;
     hasNeighborSignal(blockPos: BlockPos): boolean;
     hasSignal(pos: BlockPos, direction: Direction): boolean;
-    holderLookup<T extends Object | number | string | boolean>(key: ResourceKey<T[]>): HolderLookup<T>;
+    holderLookup<T extends unknown>(key: ResourceKey<T[]>): HolderLookup<T>;
     isClientSide(): boolean;
     isEmptyBlock(pos: BlockPos): boolean;
     isUnobstructed(ignore: Entity): boolean;

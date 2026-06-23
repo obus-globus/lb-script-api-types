@@ -2,7 +2,7 @@ import type { ImmutableCollection$Builder } from '../../../../com/google/common/
 import type { ImmutableSet$SetBuilderImpl } from '../../../../com/google/common/collect/ImmutableSet$SetBuilderImpl.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class ImmutableSet$Builder<E extends Object | number | string | boolean> extends ImmutableCollection$Builder<E> {
+export class ImmutableSet$Builder<E extends unknown> extends ImmutableCollection$Builder<E> {
     constructor()
     constructor(subclass: boolean)
     constructor(capacity: number)

@@ -23,7 +23,7 @@ export class NamedLayoutQualifierPart extends LayoutQualifierPart {
     getExpression(): Expression;
     getLayoutQualifierType(): LayoutQualifierPart$LayoutQualifierType;
     getName(): Identifier;
-    layoutQualifierPartAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    layoutQualifierPartAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     setExpression(arg0: Expression): void;
     setName(arg0: Identifier): void;
 }

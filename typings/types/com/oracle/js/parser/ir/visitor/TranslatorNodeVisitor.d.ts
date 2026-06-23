@@ -46,7 +46,7 @@ import type { VarNode } from '../../../../../../com/oracle/js/parser/ir/VarNode.
 import type { WhileNode } from '../../../../../../com/oracle/js/parser/ir/WhileNode.d.ts'
 import type { WithNode } from '../../../../../../com/oracle/js/parser/ir/WithNode.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class TranslatorNodeVisitor<T extends LexicalContext, R extends Object | number | string | boolean> extends Object {
+export abstract class TranslatorNodeVisitor<T extends LexicalContext, R extends unknown> extends Object {
     constructor(lc: T)
     // private lc: T;
     enterAccessNode(accessNode: AccessNode): R;

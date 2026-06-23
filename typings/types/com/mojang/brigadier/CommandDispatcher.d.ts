@@ -12,7 +12,7 @@ import type { RootCommandNode } from '../../../com/mojang/brigadier/tree/RootCom
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Predicate } from '../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class CommandDispatcher<S extends Object | number | string | boolean> extends Object {
+export class CommandDispatcher<S extends unknown> extends Object {
     static ARGUMENT_SEPARATOR: string;
     static ARGUMENT_SEPARATOR_CHAR: string;
     constructor()

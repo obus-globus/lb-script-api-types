@@ -10,7 +10,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class KQueueServerSocketChannelConfig extends KQueueServerChannelConfig {
     constructor(arg0: KQueueServerSocketChannel)
     getAcceptFilter(): AcceptFilter;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     isReusePort(): boolean;
@@ -21,7 +21,7 @@ export class KQueueServerSocketChannelConfig extends KQueueServerChannelConfig {
     setConnectTimeoutMillis(arg0: number): KQueueServerSocketChannelConfig;
     setMaxMessagesPerRead(arg0: number): KQueueServerSocketChannelConfig;
     setMessageSizeEstimator(arg0: MessageSizeEstimator): KQueueServerSocketChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setPerformancePreferences(arg0: number, arg1: number, arg2: number): KQueueServerSocketChannelConfig;
     setRcvAllocTransportProvidesGuess(arg0: boolean): KQueueServerSocketChannelConfig;
     setReceiveBufferSize(arg0: number): KQueueServerSocketChannelConfig;

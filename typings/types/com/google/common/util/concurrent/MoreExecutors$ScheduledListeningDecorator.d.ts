@@ -11,9 +11,9 @@ export class MoreExecutors$ScheduledListeningDecorator extends MoreExecutors$Lis
     constructor(delegate: ScheduledExecutorService)
     // private delegate: ScheduledExecutorService;
     schedule(command: () => void, delay: Duration): ListenableScheduledFuture<Object>;
-    schedule<V extends Object | number | string | boolean>(callable: () => V, delay: Duration): ListenableScheduledFuture<V>;
+    schedule<V extends unknown>(callable: () => V, delay: Duration): ListenableScheduledFuture<V>;
     schedule(command: () => void, delay: number, unit: TimeUnit): ListenableScheduledFuture<Object>;
-    schedule<V extends Object | number | string | boolean>(callable: () => V, delay: number, unit: TimeUnit): ListenableScheduledFuture<V>;
+    schedule<V extends unknown>(callable: () => V, delay: number, unit: TimeUnit): ListenableScheduledFuture<V>;
     scheduleAtFixedRate(command: () => void, initialDelay: Duration, period: Duration): ListenableScheduledFuture<Object>;
     scheduleAtFixedRate(command: () => void, initialDelay: number, period: number, unit: TimeUnit): ListenableScheduledFuture<Object>;
     scheduleWithFixedDelay(command: () => void, initialDelay: Duration, delay: Duration): ListenableScheduledFuture<Object>;

@@ -1,4 +1,4 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export interface ReadQueue<E extends Object | number | string | boolean> extends Object{
+export interface ReadQueue<E extends unknown> extends Object{
     dequeue(): E;
 }

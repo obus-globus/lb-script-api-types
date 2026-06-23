@@ -4,7 +4,7 @@ import type { ByteToMessageDecoder } from '../../../../io/netty/handler/codec/By
 import type { ByteToMessageDecoder$Cumulator } from '../../../../io/netty/handler/codec/ByteToMessageDecoder$Cumulator.d.ts'
 import type { ReplayingDecoderByteBuf } from '../../../../io/netty/handler/codec/ReplayingDecoderByteBuf.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ReplayingDecoder<S extends Object | number | string | boolean> extends ByteToMessageDecoder {
+export abstract class ReplayingDecoder<S extends unknown> extends ByteToMessageDecoder {
     static COMPOSITE_CUMULATOR: ByteToMessageDecoder$Cumulator;
     static MERGE_CUMULATOR: ByteToMessageDecoder$Cumulator;
     constructor()

@@ -4,8 +4,8 @@ import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Gatherer$Downstream } from '../../../java/util/stream/Gatherer$Downstream.d.ts'
 import type { Gatherer$Integrator } from '../../../java/util/stream/Gatherer$Integrator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Gatherer<T extends Object | number | string | boolean, A extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object {
-    andThen<RR extends Object | number | string | boolean>(arg0: Gatherer<R, Object, RR>): Gatherer<T, Object, RR>;
+export interface Gatherer<T extends unknown, A extends unknown, R extends unknown> extends Object {
+    andThen<RR extends unknown>(arg0: Gatherer<R, Object, RR>): Gatherer<T, Object, RR>;
     combiner(): (param0: A, param1: Object | null) => Object | null;
     finisher(): (param0: A, param1: (param0: R) => boolean) => void;
     initializer(): () => A;

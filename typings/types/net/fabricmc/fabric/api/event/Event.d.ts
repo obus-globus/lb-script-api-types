@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export abstract class Event<T extends Object | number | string | boolean> extends Object {
+export abstract class Event<T extends unknown> extends Object {
     static DEFAULT_PHASE: Identifier;
     constructor()
     // private invoker: T;

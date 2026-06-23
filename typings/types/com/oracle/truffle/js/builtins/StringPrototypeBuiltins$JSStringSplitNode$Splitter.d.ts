@@ -3,7 +3,7 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { StringPrototypeBuiltins$JSStringSplitNode } from '../../../../../com/oracle/truffle/js/builtins/StringPrototypeBuiltins$JSStringSplitNode.d.ts'
 import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class StringPrototypeBuiltins$JSStringSplitNode$Splitter<T extends Object | number | string | boolean> extends JavaScriptBaseNode {
+export abstract class StringPrototypeBuiltins$JSStringSplitNode$Splitter<T extends unknown> extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()

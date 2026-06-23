@@ -6,11 +6,11 @@ import type { ResourceOrTagKeyArgument$Result } from '../../../../net/minecraft/
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
-export class ResourceOrTagKeyArgument$TagResult<T extends Object | number | string | boolean> extends Record implements ResourceOrTagKeyArgument$Result<T> {
+export class ResourceOrTagKeyArgument$TagResult<T extends unknown> extends Record implements ResourceOrTagKeyArgument$Result<T> {
     private constructor(key: TagKey<T>)
     // private key: TagKey<T>;
     asPrintable(): string;
-    cast<E extends Object | number | string | boolean>(registryKey: ResourceKey<E[]>): Optional<ResourceOrTagKeyArgument$Result<E>>;
+    cast<E extends unknown>(registryKey: ResourceKey<E[]>): Optional<ResourceOrTagKeyArgument$Result<E>>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     key(): TagKey<T>;

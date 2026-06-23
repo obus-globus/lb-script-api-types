@@ -12,8 +12,8 @@ export abstract class ObjectCodec extends TreeCodec implements Versioned {
     constructor()
     getFactory(): JsonFactory;
     getJsonFactory(): JsonFactory;
-    readValue<T extends Object | number | string | boolean>(arg0: JsonParser, arg1: TypeReference<T>): T;
-    readValue<T extends Object | number | string | boolean>(arg0: JsonParser, arg1: Class<T>): T;
+    readValue<T extends unknown>(arg0: JsonParser, arg1: TypeReference<T>): T;
+    readValue<T extends unknown>(arg0: JsonParser, arg1: Class<T>): T;
     version(): Version;
     writeTree(arg0: JsonGenerator, arg1: TreeNode): void;
     writeValue(arg0: JsonGenerator, arg1: Object): void;

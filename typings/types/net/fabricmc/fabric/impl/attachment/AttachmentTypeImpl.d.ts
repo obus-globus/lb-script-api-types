@@ -7,7 +7,7 @@ import type { AttachmentType } from '../../../../../net/fabricmc/fabric/api/atta
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export class AttachmentTypeImpl<A extends Object | number | string | boolean> extends Record implements AttachmentType<A> {
+export class AttachmentTypeImpl<A extends unknown> extends Record implements AttachmentType<A> {
     // private copyOnDeath: boolean;
     // private identifier: Identifier;
     // private initializer: () => A;

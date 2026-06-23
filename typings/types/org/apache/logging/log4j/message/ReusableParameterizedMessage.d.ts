@@ -18,7 +18,7 @@ export class ReusableParameterizedMessage extends Object implements Clearable, P
     readonly throwable: Throwable;
     // private varargs: Object[];
     clear(): void;
-    forEachParameter<S extends Object | number | string | boolean>(action: ParameterConsumer<S>, state: S): void;
+    forEachParameter<S extends unknown>(action: ParameterConsumer<S>, state: S): void;
     formatTo(builder: StringBuilder): void;
     getFormat(): string;
     getFormattedMessage(): string;

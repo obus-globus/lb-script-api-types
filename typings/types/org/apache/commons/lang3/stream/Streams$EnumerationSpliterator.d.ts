@@ -2,7 +2,7 @@ import type { Enumeration } from '../../../../../java/util/Enumeration.d.ts'
 import type { Spliterators$AbstractSpliterator } from '../../../../../java/util/Spliterators$AbstractSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Streams$EnumerationSpliterator<T extends Object | number | string | boolean> extends Spliterators$AbstractSpliterator<T> {
+export class Streams$EnumerationSpliterator<T extends unknown> extends Spliterators$AbstractSpliterator<T> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

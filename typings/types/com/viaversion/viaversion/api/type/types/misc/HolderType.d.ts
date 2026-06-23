@@ -5,7 +5,7 @@ import type { Type } from '../../../../../../../com/viaversion/viaversion/api/ty
 import type { Key } from '../../../../../../../com/viaversion/viaversion/util/Key.d.ts'
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export abstract class HolderType<T extends Object | number | string | boolean> extends Type<Holder<T>> {
+export abstract class HolderType<T extends unknown> extends Type<Holder<T>> {
     constructor()
     constructor(arg0: MappingData$MappingType)
     // private mappingType: MappingData$MappingType;

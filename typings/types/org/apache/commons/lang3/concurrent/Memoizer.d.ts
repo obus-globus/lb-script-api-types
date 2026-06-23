@@ -4,7 +4,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Computable } from '../../../../../org/apache/commons/lang3/concurrent/Computable.d.ts'
-export class Memoizer<I extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Object implements Computable<I, O> {
+export class Memoizer<I extends unknown, O extends unknown> extends Object implements Computable<I, O> {
     constructor(arg0: (param0: I) => O)
     constructor(arg0: (param0: I) => O, arg1: boolean)
     constructor(arg0: (param0: I) => O)

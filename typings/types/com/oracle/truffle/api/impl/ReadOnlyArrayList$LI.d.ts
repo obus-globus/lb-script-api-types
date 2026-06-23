@@ -6,12 +6,12 @@ export class ReadOnlyArrayList$LI extends Object implements Iterator<T>, ListIte
     constructor(null_: ReadOnlyArrayList$LI, index: number)
     // private index: number;
     add(e: Object): void;
-    forEachRemaining<T extends Object | number | string | boolean>(arg0: (param0: T) => void): void;
+    forEachRemaining<T extends unknown>(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    next<T extends Object | number | string | boolean>(): T;
+    next<T extends unknown>(): T;
     nextIndex(): number;
-    previous<T extends Object | number | string | boolean>(): T;
+    previous<T extends unknown>(): T;
     previousIndex(): number;
     remove(): void;
     set(e: Object): void;

@@ -15,7 +15,7 @@ import type { TypeAliasDescriptor } from '../../../../../../../kotlin/reflect/jv
 import type { TypeParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { ValueParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ValueParameterDescriptor.d.ts'
 import type { VariableDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/VariableDescriptor.d.ts'
-export class DeclarationDescriptorVisitorEmptyBodies<R extends Object | number | string | boolean, D extends Object | number | string | boolean> extends Object implements DeclarationDescriptorVisitor<R, D> {
+export class DeclarationDescriptorVisitorEmptyBodies<R extends unknown, D extends unknown> extends Object implements DeclarationDescriptorVisitor<R, D> {
     constructor()
     visitClassDescriptor(arg0: ClassDescriptor, arg1: D): R;
     visitConstructorDescriptor(arg0: ConstructorDescriptor, arg1: D): R;

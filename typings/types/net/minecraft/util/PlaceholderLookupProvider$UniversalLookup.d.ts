@@ -10,8 +10,8 @@ import type { RandomSource } from '../../../net/minecraft/util/RandomSource.d.ts
 export class PlaceholderLookupProvider$UniversalLookup extends Object implements HolderGetter<Object>, HolderOwner<Object> {
     private constructor(null_: PlaceholderLookupProvider$UniversalLookup)
     canSerializeIn(context: HolderOwner<Object>): boolean;
-    castAsLookup<T extends Object | number | string | boolean>(): HolderGetter<T>;
-    castAsOwner<T extends Object | number | string | boolean>(): HolderOwner<T>;
+    castAsLookup<T extends unknown>(): HolderGetter<T>;
+    castAsOwner<T extends unknown>(): HolderOwner<T>;
     get(id: ResourceKey<Object>): Optional<Holder$Reference<Object>>;
     get(id: TagKey<Object>): Optional<Object[]>;
     // private getOrCreate(id: ResourceKey<Object>): Holder$Reference<Object>;

@@ -10,8 +10,8 @@ export class EntrypointStorage extends Object {
     // private entryMap: { [key: string]: EntrypointStorage$Entry[] };
     add(arg0: ModContainerImpl, arg1: string, arg2: EntrypointMetadata, arg3: { [key: string]: LanguageAdapter }): void;
     addDeprecated(arg0: ModContainerImpl, arg1: string, arg2: string): void;
-    getEntrypointContainers<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): EntrypointContainer<T>[];
-    getEntrypoints<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T[];
+    getEntrypointContainers<T extends unknown>(arg0: string, arg1: Class<T>): EntrypointContainer<T>[];
+    getEntrypoints<T extends unknown>(arg0: string, arg1: Class<T>): T[];
     // private getOrCreateEntries(arg0: string): EntrypointStorage$Entry[];
     hasEntrypoints(arg0: string): boolean;
 }

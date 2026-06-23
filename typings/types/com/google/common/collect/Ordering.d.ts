@@ -8,7 +8,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export abstract class Ordering<T extends Object | number | string | boolean> extends Object implements Comparator<T> {
+export abstract class Ordering<T extends unknown> extends Object implements Comparator<T> {
     static allEqual(): Ordering<Object>;
     static arbitrary(): Ordering<Object>;
     static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
@@ -50,13 +50,13 @@ export abstract class Ordering<T extends Object | number | string | boolean> ext
     nullsFirst<S extends T>(): Ordering<S>;
     nullsLast<S extends T>(): Ordering<S>;
     onKeys<T2 extends T>(): Ordering<Map$Entry<T2, Object>>;
-    onResultOf<F extends Object | number | string | boolean>(function_: (param0: Object) => boolean): Ordering<F>;
+    onResultOf<F extends unknown>(function_: (param0: Object) => boolean): Ordering<F>;
     reverse<S extends T>(): Ordering<S>;
     reversed(): (param0: Object) => boolean;
     sortedCopy<E extends T>(elements: E[]): E[];
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparing<U extends Comparable<U>>(arg0: (param0: T) => U): (param0: Object) => boolean;
-    thenComparing<U extends Object | number | string | boolean>(arg0: (param0: T) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparing<U extends unknown>(arg0: (param0: T) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparingDouble(arg0: (param0: T) => number): (param0: Object) => boolean;
     thenComparingInt(arg0: (param0: T) => number): (param0: Object) => boolean;
     thenComparingLong(arg0: (param0: T) => number): (param0: Object) => boolean;

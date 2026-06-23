@@ -40,5 +40,5 @@ export class ForLoopStatement extends LoopStatement {
     setInitDeclaration(arg0: Declaration): void;
     setInitExpression(arg0: Expression): void;
     setIterationConditionInitializer(arg0: IterationConditionInitializer): void;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

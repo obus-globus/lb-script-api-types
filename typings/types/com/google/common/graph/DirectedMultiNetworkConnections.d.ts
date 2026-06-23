@@ -1,7 +1,7 @@
 import type { AbstractDirectedNetworkConnections } from '../../../../com/google/common/graph/AbstractDirectedNetworkConnections.d.ts'
 import type { Reference } from '../../../../java/lang/ref/Reference.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class DirectedMultiNetworkConnections<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends AbstractDirectedNetworkConnections<N, E> {
+export class DirectedMultiNetworkConnections<N extends unknown, E extends unknown> extends AbstractDirectedNetworkConnections<N, E> {
     private constructor(inEdges: Map<E, N>, outEdges: Map<E, N>, selfLoopCount: number)
     // private predecessorsReference: Reference<N[]>;
     // private successorsReference: Reference<N[]>;

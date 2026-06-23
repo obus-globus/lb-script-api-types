@@ -5,7 +5,7 @@ import type { BlockDisplayContext } from '../../../../../net/minecraft/client/re
 import type { BlockModel } from '../../../../../net/minecraft/client/renderer/block/model/BlockModel.d.ts'
 import type { SelectBlockModelProperty } from '../../../../../net/minecraft/client/renderer/block/model/properties/select/SelectBlockModelProperty.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
-export class SelectBlockModel<T extends Object | number | string | boolean> extends Object implements BlockModel {
+export class SelectBlockModel<T extends unknown> extends Object implements BlockModel {
     constructor(property: SelectBlockModelProperty<T>, models: (param0: T) => BlockModel)
     // private models: (param0: T) => BlockModel;
     // private property: SelectBlockModelProperty<T>;

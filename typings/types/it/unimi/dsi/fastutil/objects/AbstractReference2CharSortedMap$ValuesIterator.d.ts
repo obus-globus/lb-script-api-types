@@ -5,7 +5,7 @@ import type { Reference2CharMap$Entry } from '../../../../../it/unimi/dsi/fastut
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractReference2CharSortedMap$ValuesIterator<K extends Object | number | string | boolean> extends Object implements CharIterator {
+export class AbstractReference2CharSortedMap$ValuesIterator<K extends unknown> extends Object implements CharIterator {
     constructor(arg0: ObjectBidirectionalIterator<Reference2CharMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2CharMap$Entry<K>>;
     forEachRemaining(arg0: (param0: string) => void): void;

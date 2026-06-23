@@ -12,7 +12,7 @@ import type { Pair } from '../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class TypedOptic<S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends Record {
+export class TypedOptic<S extends unknown, T extends unknown, A extends unknown, B extends unknown> extends Record {
     static adapter(paramarg0: Type<Object>, paramarg1: Type<Object>): TypedOptic<Object, Object, Object, Object>;
     static compoundListElements(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Pair<Object, Object>[], Pair<Object, Object>[], Object, Object>;
     static compoundListKeys(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Pair<Object, Object>[], Pair<Object, Object>[], Object, Object>;
@@ -33,8 +33,8 @@ export class TypedOptic<S extends Object | number | string | boolean, T extends 
     bType(): Type<B>;
     bounds(): TypeToken<K1>[];
     castOuter(arg0: Type<S>, arg1: Type<T>): TypedOptic<S, T, A, B>;
-    castOuterUnchecked<S2 extends Object | number | string | boolean, T2 extends Object | number | string | boolean>(arg0: Type<S2>, arg1: Type<T2>): TypedOptic<S2, T2, A, B>;
-    compose<A1 extends Object | number | string | boolean, B1 extends Object | number | string | boolean>(arg0: TypedOptic<A, B, A1, B1>): TypedOptic<S, T, A1, B1>;
+    castOuterUnchecked<S2 extends unknown, T2 extends unknown>(arg0: Type<S2>, arg1: Type<T2>): TypedOptic<S2, T2, A, B>;
+    compose<A1 extends unknown, B1 extends unknown>(arg0: TypedOptic<A, B, A1, B1>): TypedOptic<S, T, A1, B1>;
     elements(): TypedOptic$Element<Object, Object, Object, Object>[];
     equals(arg0: Object | null): boolean;
     hashCode(): number;

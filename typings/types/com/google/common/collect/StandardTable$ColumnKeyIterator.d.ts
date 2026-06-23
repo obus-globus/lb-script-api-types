@@ -7,5 +7,5 @@ export class StandardTable$ColumnKeyIterator extends AbstractIterator<C> {
     // private entryIterator: Iterator<Map$Entry<C, V>>;
     // private mapIterator: Iterator<Map<C, V>>;
     // private seen: Map<C, V>;
-    computeNext<C extends Object | number | string | boolean>(): C;
+    computeNext<C extends unknown>(): C;
 }

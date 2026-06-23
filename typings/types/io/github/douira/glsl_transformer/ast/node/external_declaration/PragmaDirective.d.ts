@@ -26,7 +26,7 @@ export class PragmaDirective extends ExternalDeclaration {
     cloneInto(arg0: Root): PragmaDirective;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
-    externalDeclarationAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    externalDeclarationAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     getCustomName(): string;
     getExternalDeclarationType(): ExternalDeclaration$ExternalDeclarationType;
     setCustomName(arg0: string): void;

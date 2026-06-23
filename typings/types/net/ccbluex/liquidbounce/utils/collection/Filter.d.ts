@@ -20,6 +20,6 @@ export class Filter extends Enum<Filter> implements Tagged {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Filter.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Filter.kt:36}
      */
-    invoke<T extends Object | number | string | boolean>(item: T, collection: T[]): boolean;
+    invoke<T extends unknown>(item: T, collection: T[]): boolean;
     name(): "WHITELIST" | "BLACKLIST";
 }

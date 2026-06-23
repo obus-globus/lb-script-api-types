@@ -11,7 +11,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export abstract class ImmutableTable<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractTable<R, C, V> implements Serializable {
+export abstract class ImmutableTable<R extends unknown, C extends unknown, V extends unknown> extends AbstractTable<R, C, V> implements Serializable {
     static builder(): ImmutableTable$Builder<Object, Object, Object>;
     static copyOf(paramtable: Table<Object, Object, Object>): ImmutableTable<Object, Object, Object>;
     static of(): ImmutableTable<Object, Object, Object>;

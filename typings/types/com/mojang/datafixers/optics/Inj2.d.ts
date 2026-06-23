@@ -7,7 +7,7 @@ import type { Prism$Mu } from '../../../../com/mojang/datafixers/optics/Prism$Mu
 import type { Cocartesian$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/Cocartesian$Mu.d.ts'
 import type { Either } from '../../../../com/mojang/datafixers/util/Either.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Inj2<F extends Object | number | string | boolean, G extends Object | number | string | boolean, G2 extends Object | number | string | boolean> extends Object implements Prism<Either<F, G>, Either<F, G2>, G, G2> {
+export class Inj2<F extends unknown, G extends unknown, G2 extends unknown> extends Object implements Prism<Either<F, G>, Either<F, G2>, G, G2> {
     static INSTANCE: Inj2<Object, Object, Object>;
     static unbox(paramarg0: App2<Prism$Mu<Object, Object>, Object, Object>): Prism<Object, Object, Object, Object>;
     private constructor()

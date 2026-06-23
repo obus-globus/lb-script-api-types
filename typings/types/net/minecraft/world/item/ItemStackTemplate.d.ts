@@ -27,7 +27,7 @@ export class ItemStackTemplate extends Record implements ItemInstance {
     count(): number;
     create(): ItemStack;
     equals(o: Object | null): boolean;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getMaxStackSize(): number;
     hashCode(): number;
     item(): Holder<Item>;

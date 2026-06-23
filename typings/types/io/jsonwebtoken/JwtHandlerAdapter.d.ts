@@ -4,7 +4,7 @@ import type { Jwt } from '../../io/jsonwebtoken/Jwt.d.ts'
 import type { JwtHandler } from '../../io/jsonwebtoken/JwtHandler.d.ts'
 import type { SupportedJwtVisitor } from '../../io/jsonwebtoken/SupportedJwtVisitor.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
-export abstract class JwtHandlerAdapter<T extends Object | number | string | boolean> extends SupportedJwtVisitor<T> implements JwtHandler<T> {
+export abstract class JwtHandlerAdapter<T extends unknown> extends SupportedJwtVisitor<T> implements JwtHandler<T> {
     constructor()
     onClaimsJwe(arg0: Jwe<{ [key: string]: any }>): T;
     onClaimsJws(arg0: Jws<{ [key: string]: any }>): T;

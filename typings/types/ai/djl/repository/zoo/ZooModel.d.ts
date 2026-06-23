@@ -14,7 +14,7 @@ import type { URL } from '../../../../java/net/URL.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ZooModel<I extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Object implements Model {
+export class ZooModel<I extends unknown, O extends unknown> extends Object implements Model {
     static newInstance(paramarg0: string): Model;
     static newInstance(paramarg0: string, paramarg1: Device): Model;
     static newInstance(paramarg0: string, paramarg1: Device, paramarg2: string): Model;
@@ -27,7 +27,7 @@ export class ZooModel<I extends Object | number | string | boolean, O extends Ob
     describeInput(): Pair<string, Shape>[];
     describeOutput(): Pair<string, Shape>[];
     getArtifact(arg0: string): URL;
-    getArtifact<T extends Object | number | string | boolean>(arg0: string, arg1: (param0: InputStream) => T): T;
+    getArtifact<T extends unknown>(arg0: string, arg1: (param0: InputStream) => T): T;
     getArtifactAsStream(arg0: string): InputStream;
     getArtifactNames(): string[];
     getBlock(): Block;
@@ -50,7 +50,7 @@ export class ZooModel<I extends Object | number | string | boolean, O extends Ob
     newPredictor(arg0: Translator<I, O>): Predictor<I, O>;
     newPredictor(): Predictor<I, O>;
     newPredictor(arg0: Device): Predictor<I, O>;
-    newPredictor<P extends Object | number | string | boolean, Q extends Object | number | string | boolean>(arg0: Translator<P, Q>, arg1: Device): Predictor<P, Q>;
+    newPredictor<P extends unknown, Q extends unknown>(arg0: Translator<P, Q>, arg1: Device): Predictor<P, Q>;
     newTrainer(arg0: TrainingConfig): Trainer;
     quantize(): void;
     save(arg0: Path[], arg1: string): void;

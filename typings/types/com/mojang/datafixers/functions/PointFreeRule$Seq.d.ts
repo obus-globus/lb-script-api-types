@@ -15,8 +15,8 @@ export class PointFreeRule$Seq extends Record implements PointFreeRule {
     // private rules: PointFreeRule[];
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
-    rewriteOrNop<A extends Object | number | string | boolean>(arg0: PointFree<A>): PointFree<A>;
+    rewrite<A extends unknown>(arg0: PointFree<A>): Optional<PointFree<A>>;
+    rewriteOrNop<A extends unknown>(arg0: PointFree<A>): PointFree<A>;
     rules(): PointFreeRule[];
     toString(): string;
 }

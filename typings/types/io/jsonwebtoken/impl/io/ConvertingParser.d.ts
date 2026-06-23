@@ -5,7 +5,7 @@ import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Reader } from '../../../../java/io/Reader.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
-export class ConvertingParser<T extends Object | number | string | boolean> extends AbstractParser<T> {
+export class ConvertingParser<T extends unknown> extends AbstractParser<T> {
     constructor(arg0: Function<Reader, { [key: string]: Object | null }>, arg1: Converter<T, Object>)
     // private converter: Converter<T, Object>;
     // private deserializer: Function<Reader, { [key: string]: Object | null }>;

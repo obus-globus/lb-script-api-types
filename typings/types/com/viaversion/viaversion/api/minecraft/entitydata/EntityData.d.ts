@@ -14,5 +14,5 @@ export class EntityData extends Object {
     setTypeAndValue(arg0: EntityDataType, arg1: Object): void;
     setValue(arg0: Object): void;
     toString(): string;
-    value<T extends Object | number | string | boolean>(): T;
+    value<T extends unknown>(): T;
 }

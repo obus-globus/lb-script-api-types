@@ -20,5 +20,5 @@ export class DeclarationStatement extends SemiTerminalStatement {
     getDeclaration(): Declaration;
     getStatementType(): Statement$StatementType;
     setDeclaration(arg0: Declaration): void;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

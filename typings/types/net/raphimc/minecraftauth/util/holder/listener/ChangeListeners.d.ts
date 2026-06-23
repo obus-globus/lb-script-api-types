@@ -6,7 +6,7 @@ export class ChangeListeners extends Object {
     // private changeListeners: (param0: Object | null, param1: Object | null) => void[];
     add(arg0: () => void): void;
     add(arg0: (param0: Object | null, param1: Object | null) => void): void;
-    invoke<T extends Object | number | string | boolean>(arg0: T, arg1: T): void;
+    invoke<T extends unknown>(arg0: T, arg1: T): void;
     remove(arg0: () => void): boolean;
     remove(arg0: (param0: Object | null, param1: Object | null) => void): boolean;
 }

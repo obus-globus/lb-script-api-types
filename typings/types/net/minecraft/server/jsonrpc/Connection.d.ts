@@ -32,10 +32,10 @@ export class Connection extends SimpleChannelInboundHandler<JsonElement> {
     // private handleIncomingRequest(id: JsonElement, method: string, params: JsonElement): JsonObject;
     handleJsonObject(jsonObject: JsonObject): JsonObject;
     // private handleRequestResponse(id: number, result: JsonElement): void;
-    sendNotification<Params extends Object | number | string | boolean>(method: Holder$Reference<OutgoingRpcMethod<Params, Object>>, params: Params): void;
+    sendNotification<Params extends unknown>(method: Holder$Reference<OutgoingRpcMethod<Params, Object>>, params: Params): void;
     sendNotification(method: Holder$Reference<OutgoingRpcMethod<void, Object>>): void;
-    sendRequest<Result extends Object | number | string | boolean, Params extends Object | number | string | boolean>(method: Holder$Reference<OutgoingRpcMethod<Params, Result>>, params: Params): CompletableFuture<Result>;
-    // private sendRequest<Result extends Object | number | string | boolean, Params extends Object | number | string | boolean>(method: Holder$Reference<OutgoingRpcMethod<Params, Result>>, params: Params, expectReply: boolean): CompletableFuture<Result>;
-    sendRequest<Result extends Object | number | string | boolean>(method: Holder$Reference<OutgoingRpcMethod<void, Result>>): CompletableFuture<Result>;
+    sendRequest<Result extends unknown, Params extends unknown>(method: Holder$Reference<OutgoingRpcMethod<Params, Result>>, params: Params): CompletableFuture<Result>;
+    // private sendRequest<Result extends unknown, Params extends unknown>(method: Holder$Reference<OutgoingRpcMethod<Params, Result>>, params: Params, expectReply: boolean): CompletableFuture<Result>;
+    sendRequest<Result extends unknown>(method: Holder$Reference<OutgoingRpcMethod<void, Result>>): CompletableFuture<Result>;
     tick(): void;
 }

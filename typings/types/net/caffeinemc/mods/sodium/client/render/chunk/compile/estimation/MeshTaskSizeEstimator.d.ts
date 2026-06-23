@@ -8,7 +8,7 @@ export class MeshTaskSizeEstimator extends Average1DEstimator<MeshResultSize$Sec
     static NEW_DATA_RATIO: number;
     constructor(arg0: ClientLevel)
     // private seaLevelChunk: number;
-    createMap<T extends Object | number | string | boolean>(): { [key in MeshResultSize$SectionCategory]: T };
+    createMap<T extends unknown>(): { [key in MeshResultSize$SectionCategory]: T };
     estimateSize(arg0: RenderSection): number;
     resultForSection(arg0: RenderSection, arg1: number): MeshResultSize;
 }

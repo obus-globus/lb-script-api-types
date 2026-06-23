@@ -11,7 +11,7 @@ import type { AnnotatedCallableKind } from '../../../../../../../kotlin/reflect/
 import type { AnnotationLoader } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/AnnotationLoader.d.ts'
 import type { ProtoContainer } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/ProtoContainer.d.ts'
 import type { ProtoContainer$Class } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/ProtoContainer$Class.d.ts'
-export abstract class AbstractAnnotationLoader<A extends Object | number | string | boolean> extends Object implements AnnotationLoader<A> {
+export abstract class AbstractAnnotationLoader<A extends unknown> extends Object implements AnnotationLoader<A> {
     constructor(arg0: SerializerExtensionProtocol)
     // private protocol: SerializerExtensionProtocol;
     getProtocol(): SerializerExtensionProtocol;

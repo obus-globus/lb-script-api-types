@@ -18,7 +18,7 @@ export class PointFreeRule$BangEta extends Enum<PointFreeRule$BangEta> implement
     static valueOf(paramarg0: string): PointFreeRule$BangEta;
     static values(): (Object | null)[];
     private constructor()
-    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
-    rewriteOrNop<A extends Object | number | string | boolean>(arg0: PointFree<A>): PointFree<A>;
+    rewrite<A extends unknown>(arg0: PointFree<A>): Optional<PointFree<A>>;
+    rewriteOrNop<A extends unknown>(arg0: PointFree<A>): PointFree<A>;
     name(): "INSTANCE";
 }

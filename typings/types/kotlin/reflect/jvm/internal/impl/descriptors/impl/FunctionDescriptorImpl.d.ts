@@ -47,7 +47,7 @@ export abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     // private unsubstitutedValueParameters: ValueParameterDescriptor[];
     // private userDataMap: Map<CallableDescriptor$UserDataKey<Object>, Object>;
     readonly visibility: DescriptorVisibility;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     copy(arg0: DeclarationDescriptor, arg1: Modality, arg2: DescriptorVisibility, arg3: CallableMemberDescriptor$Kind, arg4: boolean): FunctionDescriptor;
     createSubstitutedCopy(arg0: DeclarationDescriptor, arg1: FunctionDescriptor, arg2: CallableMemberDescriptor$Kind, arg3: Name, arg4: AnnotationDescriptor[], arg5: SourceElement): FunctionDescriptorImpl;
     doSubstitute(arg0: FunctionDescriptorImpl$CopyConfiguration): FunctionDescriptor;
@@ -62,7 +62,7 @@ export abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     getReturnType(): KotlinType;
     // private getSourceToUseForCopy(arg0: boolean, arg1: FunctionDescriptor): SourceElement;
     getTypeParameters(): TypeParameterDescriptor[];
-    getUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>): V;
+    getUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>): V;
     getValueParameters(): ValueParameterDescriptor[];
     getVisibility(): DescriptorVisibility;
     hasStableParameterNames(): boolean;
@@ -81,7 +81,7 @@ export abstract class FunctionDescriptorImpl extends DeclarationDescriptorNonRoo
     newCopyBuilder(): FunctionDescriptor$CopyBuilder<FunctionDescriptor>;
     newCopyBuilder(arg0: TypeSubstitutor): FunctionDescriptorImpl$CopyConfiguration;
     // private performOverriddenLazyCalculationIfNeeded(): void;
-    putInUserDataMap<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>, arg1: Object): void;
+    putInUserDataMap<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>, arg1: Object): void;
     setActual(arg0: boolean): void;
     setExpect(arg0: boolean): void;
     setExternal(arg0: boolean): void;

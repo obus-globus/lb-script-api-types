@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface HumanInputDeserializer$StringDeserializer<T extends Object | number | string | boolean> extends Object{
+export interface HumanInputDeserializer$StringDeserializer<T extends unknown> extends Object{
     /**
      * Tries to parse the input.
      *

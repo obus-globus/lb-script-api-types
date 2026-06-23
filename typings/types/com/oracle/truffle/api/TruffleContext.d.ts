@@ -33,8 +33,8 @@ export class TruffleContext extends Object implements AutoCloseable {
     isEntered(): boolean;
     isExiting(): boolean;
     leave(node: Node, prev: Object): void;
-    leaveAndEnter<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(node: Node, interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => R, object: T): R;
-    leaveAndEnter<T extends Object | number | string | boolean>(node: Node, runWhileOutsideContext: () => T): T;
+    leaveAndEnter<R extends unknown, T extends unknown>(node: Node, interrupter: TruffleSafepoint$Interrupter, interruptible: (param0: T) => R, object: T): R;
+    leaveAndEnter<T extends unknown>(node: Node, runWhileOutsideContext: () => T): T;
     pause(): Future<void>;
     resume(pauseFuture: Future<void>): void;
 }

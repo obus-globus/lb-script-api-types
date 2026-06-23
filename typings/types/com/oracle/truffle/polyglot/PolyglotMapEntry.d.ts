@@ -8,7 +8,7 @@ import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
-export class PolyglotMapEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements PolyglotWrapper, Map$Entry<K, V> {
+export class PolyglotMapEntry<K extends unknown, V extends unknown> extends Object implements PolyglotWrapper, Map$Entry<K, V> {
     static asInstance(paramv: Object): PolyglotWrapper;
     static comparingByKey(): (param0: Object) => boolean;
     static comparingByKey(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;

@@ -20,7 +20,7 @@ export interface Job extends Object, CoroutineContext$Element {
     cancel(): void;
     cancel(cause: Throwable | null): boolean;
     cancel(cause: CancellationException | null): void;
-    fold<R extends Object | number | string | boolean>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
+    fold<R extends unknown>(initial: R, operation: (param0: R, param1: CoroutineContext$Element) => R): R;
     get<E extends CoroutineContext$Element>(key: CoroutineContext$Key<E>): E | null;
     getCancellationException(): CancellationException;
     invokeOnCompletion(onCancelling: boolean, invokeImmediately: boolean, handler: (param0: Throwable | null) => void): DisposableHandle;

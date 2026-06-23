@@ -94,7 +94,7 @@ export class PolyglotValueDispatch$InteropValue extends PolyglotValueDispatch {
     asBigInteger(languageContext: Object, receiver: Object): BigInteger;
     asBoolean(languageContext: Object, receiver: Object): boolean;
     asByte(languageContext: Object, receiver: Object): number;
-    asClass<T extends Object | number | string | boolean>(languageContext: Object, receiver: Object, targetType: Class<T>): T;
+    asClass<T extends unknown>(languageContext: Object, receiver: Object, targetType: Class<T>): T;
     asDate(languageContext: Object, receiver: Object): LocalDate;
     asDouble(languageContext: Object, receiver: Object): number;
     asDuration(languageContext: Object, receiver: Object): Duration;
@@ -110,7 +110,7 @@ export class PolyglotValueDispatch$InteropValue extends PolyglotValueDispatch {
     asStringBytes(languageContext: Object, receiver: Object, encoding: number): number[];
     asTime(languageContext: Object, receiver: Object): LocalTime;
     asTimeZone(languageContext: Object, receiver: Object): ZoneId;
-    asTypeLiteral<T extends Object | number | string | boolean>(languageContext: Object, receiver: Object, rawType: Class<T>, type: Type): T;
+    asTypeLiteral<T extends unknown>(languageContext: Object, receiver: Object, rawType: Class<T>, type: Type): T;
     canExecute(languageContext: Object, receiver: Object): boolean;
     canInstantiate(languageContext: Object, receiver: Object): boolean;
     canInvoke(languageContext: Object, identifier: string, receiver: Object): boolean;

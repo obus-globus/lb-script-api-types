@@ -15,10 +15,10 @@ export abstract class ClassSpecializer$SpeciesData extends Object {
     // private speciesCode: Class<T>;
     // private transformHelpers: MethodHandle[];
     deriveClassName(): string;
-    deriveFieldTypes<K extends Object | number | string | boolean>(arg0: K): Class<Object>[];
-    deriveSuperClass<T extends Object | number | string | boolean>(): Class<T>;
+    deriveFieldTypes<K extends unknown>(arg0: K): Class<Object>[];
+    deriveSuperClass<T extends unknown>(): Class<T>;
     deriveTransformHelper(arg0: MemberName, arg1: number): MethodHandle;
-    deriveTransformHelperArguments<X extends Object | number | string | boolean>(arg0: MemberName, arg1: number, arg2: X[], arg3: X[]): X[];
+    deriveTransformHelperArguments<X extends unknown>(arg0: MemberName, arg1: number, arg2: X[], arg3: X[]): X[];
     deriveTypeString(): string;
     equals(arg0: Object | null): boolean;
     factory(): MethodHandle;
@@ -30,9 +30,9 @@ export abstract class ClassSpecializer$SpeciesData extends Object {
     getters(): MethodHandle[];
     hashCode(): number;
     isResolved(): boolean;
-    key<K extends Object | number | string | boolean>(): K;
-    outer<T extends Object | number | string | boolean, K extends Object | number | string | boolean, S extends ClassSpecializer$SpeciesData>(): ClassSpecializer<T, K, S>;
-    speciesCode<T extends Object | number | string | boolean>(): Class<T>;
+    key<K extends unknown>(): K;
+    outer<T extends unknown, K extends unknown, S extends ClassSpecializer$SpeciesData>(): ClassSpecializer<T, K, S>;
+    speciesCode<T extends unknown>(): Class<T>;
     toString(): string;
     transformHelper(arg0: number): MethodHandle;
     // private transformHelperType(arg0: number): MethodType;

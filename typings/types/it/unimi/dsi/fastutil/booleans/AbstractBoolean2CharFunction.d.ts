@@ -39,25 +39,25 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractBoolean2CharFunction extends Object implements Boolean2CharFunction, Serializable {
     constructor()
     // private defRetValue: string;
-    andThen<T extends Object | number | string | boolean>(arg0: (param0: string) => T): (param0: boolean) => T;
+    andThen<T extends unknown>(arg0: (param0: string) => T): (param0: boolean) => T;
     andThenByte(arg0: (param0: string) => number): (param0: boolean) => number;
     andThenChar(arg0: (param0: string) => string): (param0: boolean) => string;
     andThenDouble(arg0: (param0: string) => number): (param0: boolean) => number;
     andThenFloat(arg0: (param0: string) => number): (param0: boolean) => number;
     andThenInt(arg0: (param0: string) => number): (param0: boolean) => number;
     andThenLong(arg0: (param0: string) => number): (param0: boolean) => number;
-    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: string) => T): (param0: boolean) => T;
-    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: string) => T): (param0: boolean) => T;
+    andThenObject<T extends unknown>(arg0: (param0: string) => T): (param0: boolean) => T;
+    andThenReference<T extends unknown>(arg0: (param0: string) => T): (param0: boolean) => T;
     andThenShort(arg0: (param0: string) => number): (param0: boolean) => number;
-    compose<T extends Object | number | string | boolean>(arg0: (param0: T) => boolean): (param0: T) => string;
+    compose<T extends unknown>(arg0: (param0: T) => boolean): (param0: T) => string;
     composeByte(arg0: (param0: number) => boolean): (param0: number) => string;
     composeChar(arg0: (param0: string) => boolean): (param0: string) => string;
     composeDouble(arg0: (param0: number) => boolean): (param0: number) => string;
     composeFloat(arg0: (param0: number) => boolean): (param0: number) => string;
     composeInt(arg0: (param0: number) => boolean): (param0: number) => string;
     composeLong(arg0: (param0: number) => boolean): (param0: number) => string;
-    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => boolean): (param0: Object) => string;
-    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => boolean): (param0: Object) => string;
+    composeObject<T extends unknown>(arg0: (param0: Object) => boolean): (param0: Object) => string;
+    composeReference<T extends unknown>(arg0: (param0: Object) => boolean): (param0: Object) => string;
     composeShort(arg0: (param0: number) => boolean): (param0: number) => string;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: boolean): boolean;

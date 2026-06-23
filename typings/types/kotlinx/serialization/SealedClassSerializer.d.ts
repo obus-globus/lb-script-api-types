@@ -8,7 +8,7 @@ import type { SerialDescriptor } from '../../kotlinx/serialization/descriptors/S
 import type { CompositeDecoder } from '../../kotlinx/serialization/encoding/CompositeDecoder.d.ts'
 import type { Encoder } from '../../kotlinx/serialization/encoding/Encoder.d.ts'
 import type { AbstractPolymorphicSerializer } from '../../kotlinx/serialization/internal/AbstractPolymorphicSerializer.d.ts'
-export class SealedClassSerializer<T extends Object | number | string | boolean> extends AbstractPolymorphicSerializer<T> {
+export class SealedClassSerializer<T extends unknown> extends AbstractPolymorphicSerializer<T> {
     constructor(serialName: string, baseClass: KClass<T>, subclasses: KClass<T>[], subclassSerializers: KSerializer<T>[])
     constructor(serialName: string, baseClass: KClass<T>, subclasses: KClass<T>[], subclassSerializers: KSerializer<T>[], classAnnotations: Annotation[])
     // private _annotations: Annotation[];

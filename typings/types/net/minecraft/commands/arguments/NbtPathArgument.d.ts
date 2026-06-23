@@ -17,7 +17,7 @@ export class NbtPathArgument extends Object implements ArgumentType<NbtPathArgum
     static nbtPath(): NbtPathArgument;
     constructor()
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): NbtPathArgument$NbtPath;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): NbtPathArgument$NbtPath;
     parse(reader: StringReader): NbtPathArgument$NbtPath;
 }

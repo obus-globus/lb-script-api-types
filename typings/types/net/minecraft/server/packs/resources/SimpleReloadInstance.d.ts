@@ -9,7 +9,7 @@ import type { ReloadInstance } from '../../../../../net/minecraft/server/packs/r
 import type { ResourceManager } from '../../../../../net/minecraft/server/packs/resources/ResourceManager.d.ts'
 import type { SimpleReloadInstance$StateFactory } from '../../../../../net/minecraft/server/packs/resources/SimpleReloadInstance$StateFactory.d.ts'
 import type { Unit } from '../../../../../net/minecraft/util/Unit.d.ts'
-export class SimpleReloadInstance<S extends Object | number | string | boolean> extends Object implements ReloadInstance {
+export class SimpleReloadInstance<S extends unknown> extends Object implements ReloadInstance {
     static create(paramresourceManager: ResourceManager, paramlisteners: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>[], parambackgroundExecutor: Executor, parammainThreadExecutor: Executor, paraminitialTask: CompletableFuture<Unit>, paramenableProfiling: boolean): ReloadInstance;
     static of(paramresourceManager: ResourceManager, paramlisteners: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>[], paramtaskExecutor: Executor, parammainThreadExecutor: Executor, paraminitialTask: CompletableFuture<Unit>): ReloadInstance;
     constructor(listeners: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>[])

@@ -61,7 +61,7 @@ export class YearMonth extends Object implements Serializable, Temporal, Tempora
     plus(arg0: TemporalAmount): Temporal;
     plusMonths(arg0: number): YearMonth;
     plusYears(arg0: number): YearMonth;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     // private readObject(arg0: ObjectInputStream): void;
     toString(): string;

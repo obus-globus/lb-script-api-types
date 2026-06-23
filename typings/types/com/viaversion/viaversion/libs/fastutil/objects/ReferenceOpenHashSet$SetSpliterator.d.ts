@@ -19,8 +19,8 @@ export class ReferenceOpenHashSet$SetSpliterator extends Object implements Objec
     // private pos: number;
     characteristics(): number;
     estimateSize(): number;
-    forEachRemaining<K extends Object | number | string | boolean>(arg0: (param0: K) => void): void;
+    forEachRemaining<K extends unknown>(arg0: (param0: K) => void): void;
     skip(arg0: number): number;
-    tryAdvance<K extends Object | number | string | boolean>(arg0: (param0: K) => void): boolean;
-    trySplit<K extends Object | number | string | boolean>(): ReferenceOpenHashSet$SetSpliterator;
+    tryAdvance<K extends unknown>(arg0: (param0: K) => void): boolean;
+    trySplit<K extends unknown>(): ReferenceOpenHashSet$SetSpliterator;
 }

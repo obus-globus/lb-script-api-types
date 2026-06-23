@@ -85,7 +85,7 @@ import type { GLSLParser$WhileStatementContext } from '../../../../io/github/dou
 import type { GLSLParserVisitor } from '../../../../io/github/douira/glsl_transformer/GLSLParserVisitor.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AbstractParseTreeVisitor } from '../../../../org/antlr/v4/runtime/tree/AbstractParseTreeVisitor.d.ts'
-export class GLSLParserBaseVisitor<T extends Object | number | string | boolean> extends AbstractParseTreeVisitor<T> implements GLSLParserVisitor<T> {
+export class GLSLParserBaseVisitor<T extends unknown> extends AbstractParseTreeVisitor<T> implements GLSLParserVisitor<T> {
     constructor()
     visitAdditiveExpression(arg0: GLSLParser$AdditiveExpressionContext): T;
     visitArrayAccessExpression(arg0: GLSLParser$ArrayAccessExpressionContext): T;

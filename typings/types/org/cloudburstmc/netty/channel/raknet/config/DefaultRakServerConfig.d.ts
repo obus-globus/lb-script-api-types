@@ -31,7 +31,7 @@ export class DefaultRakServerConfig extends DefaultChannelConfig implements RakS
     getMaxMtu(): number;
     getMetrics(): RakServerMetrics;
     getMinMtu(): number;
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getPacketLimit(): number;
@@ -48,7 +48,7 @@ export class DefaultRakServerConfig extends DefaultChannelConfig implements RakS
     setMaxMtu(arg0: number): RakServerChannelConfig;
     setMetrics(arg0: RakServerMetrics): void;
     setMinMtu(arg0: number): RakServerChannelConfig;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setPacketLimit(arg0: number): void;
     setSendCookie(arg0: boolean): void;
     setSupportedProtocols(arg0: number[]): RakServerChannelConfig;

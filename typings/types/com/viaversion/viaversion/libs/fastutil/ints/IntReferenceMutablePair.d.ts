@@ -1,7 +1,7 @@
 import type { IntReferencePair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntReferencePair.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class IntReferenceMutablePair<V extends Object | number | string | boolean> extends Object implements IntReferencePair<V>, Serializable {
+export class IntReferenceMutablePair<V extends unknown> extends Object implements IntReferencePair<V>, Serializable {
     static of(paramarg0: number, paramarg1: Object | null): IntReferenceMutablePair<Object>;
     static of(paramarg0: number, paramarg1: Object | null): IntReferencePair<Object>;
     constructor(arg0: number, arg1: V)

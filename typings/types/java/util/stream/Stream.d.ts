@@ -21,28 +21,28 @@ import type { Gatherer } from '../../../java/util/stream/Gatherer.d.ts'
 import type { IntStream } from '../../../java/util/stream/IntStream.d.ts'
 import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface Stream<T extends Object | number | string | boolean> extends BaseStream<T, Stream<T>>, Object {
+export interface Stream<T extends unknown> extends BaseStream<T, Stream<T>>, Object {
     allMatch(arg0: (param0: T) => boolean): boolean;
     anyMatch(arg0: (param0: T) => boolean): boolean;
     close(): void;
-    collect<R extends Object | number | string | boolean>(arg0: () => R, arg1: (param0: R, param1: T) => void, arg2: (param0: R, param1: R) => void): R;
-    collect<R extends Object | number | string | boolean, A extends Object | number | string | boolean>(arg0: Collector<T, A, R>): R;
+    collect<R extends unknown>(arg0: () => R, arg1: (param0: R, param1: T) => void, arg2: (param0: R, param1: R) => void): R;
+    collect<R extends unknown, A extends unknown>(arg0: Collector<T, A, R>): R;
     count(): number;
     distinct(): Stream<T>;
     dropWhile(arg0: (param0: T) => boolean): Stream<T>;
     filter(arg0: (param0: T) => boolean): Stream<T>;
     findAny(): Optional<T>;
     findFirst(): Optional<T>;
-    flatMap<R extends Object | number | string | boolean>(arg0: (param0: T) => Stream<R>): Stream<R>;
+    flatMap<R extends unknown>(arg0: (param0: T) => Stream<R>): Stream<R>;
     flatMapToDouble(arg0: (param0: T) => DoubleStream): DoubleStream;
     flatMapToInt(arg0: (param0: T) => IntStream): IntStream;
     flatMapToLong(arg0: (param0: T) => LongStream): LongStream;
     forEach(arg0: (param0: T) => void): void;
     forEachOrdered(arg0: (param0: T) => void): void;
-    gather<R extends Object | number | string | boolean>(arg0: Gatherer<T, Object, R>): Stream<R>;
+    gather<R extends unknown>(arg0: Gatherer<T, Object, R>): Stream<R>;
     limit(arg0: number): Stream<T>;
-    map<R extends Object | number | string | boolean>(arg0: (param0: T) => R): Stream<R>;
-    mapMulti<R extends Object | number | string | boolean>(arg0: (param0: T, param1: (param0: R) => void) => void): Stream<R>;
+    map<R extends unknown>(arg0: (param0: T) => R): Stream<R>;
+    mapMulti<R extends unknown>(arg0: (param0: T, param1: (param0: R) => void) => void): Stream<R>;
     mapMultiToDouble(arg0: (param0: T, param1: (param0: number) => void) => void): DoubleStream;
     mapMultiToInt(arg0: (param0: T, param1: (param0: number) => void) => void): IntStream;
     mapMultiToLong(arg0: (param0: T, param1: (param0: number) => void) => void): LongStream;
@@ -54,13 +54,13 @@ export interface Stream<T extends Object | number | string | boolean> extends Ba
     noneMatch(arg0: (param0: T) => boolean): boolean;
     peek(arg0: (param0: T) => void): Stream<T>;
     reduce(arg0: T, arg1: (param0: T, param1: Object | null) => Object | null): T;
-    reduce<U extends Object | number | string | boolean>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: Object | null) => Object | null): U;
+    reduce<U extends unknown>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: Object | null) => Object | null): U;
     reduce(arg0: (param0: T, param1: Object | null) => Object | null): Optional<T>;
     skip(arg0: number): Stream<T>;
     sorted(): Stream<T>;
     sorted(arg0: (param0: Object) => boolean): Stream<T>;
     takeWhile(arg0: (param0: T) => boolean): Stream<T>;
     toArray(): Object[];
-    toArray<A extends Object | number | string | boolean>(arg0: (param0: number) => A[]): A[];
+    toArray<A extends unknown>(arg0: (param0: number) => A[]): A[];
     toList(): T[];
 }

@@ -29,7 +29,7 @@ export class RegistriesDatapackGenerator extends Object implements DataProvider 
     constructor(output: PackOutput, registries: CompletableFuture<HolderLookup$Provider>)
     // private output: PackOutput;
     // private registries: CompletableFuture<HolderLookup$Provider>;
-    // private dumpRegistryCap<T extends Object | number | string | boolean>(cache: CachedOutput, registries: HolderLookup$Provider, writeOps: DynamicOps<JsonElement>, v: RegistryDataLoader$RegistryData<T>): Optional<CompletableFuture<Object>>;
+    // private dumpRegistryCap<T extends unknown>(cache: CachedOutput, registries: HolderLookup$Provider, writeOps: DynamicOps<JsonElement>, v: RegistryDataLoader$RegistryData<T>): Optional<CompletableFuture<Object>>;
     getName(): string;
     run(cache: CachedOutput): CompletableFuture<Object>;
 }

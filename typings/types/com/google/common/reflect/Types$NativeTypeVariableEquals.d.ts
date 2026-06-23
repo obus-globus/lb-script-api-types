@@ -1,4 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Types$NativeTypeVariableEquals<X extends Object | number | string | boolean> extends Object {
+export class Types$NativeTypeVariableEquals<X extends unknown> extends Object {
     private constructor()
 }

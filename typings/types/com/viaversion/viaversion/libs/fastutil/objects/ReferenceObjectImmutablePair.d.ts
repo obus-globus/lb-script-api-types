@@ -2,7 +2,7 @@ import type { Pair } from '../../../../../../com/viaversion/viaversion/libs/fast
 import type { ReferenceObjectPair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ReferenceObjectPair.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ReferenceObjectImmutablePair<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements ReferenceObjectPair<K, V>, Serializable {
+export class ReferenceObjectImmutablePair<K extends unknown, V extends unknown> extends Object implements ReferenceObjectPair<K, V>, Serializable {
     static of(paramarg0: Object | null, paramarg1: Object | null): ReferenceObjectImmutablePair<Object, Object>;
     static of(paramarg0: Object | null, paramarg1: Object | null): ReferenceObjectPair<Object, Object>;
     constructor(arg0: K, arg1: V)

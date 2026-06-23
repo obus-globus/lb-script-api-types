@@ -74,11 +74,11 @@ export class GameRules extends Object {
     // private rules: GameRuleMap;
     availableRules(): Stream<GameRule<Object>>;
     copy(enabledFeatures: FeatureFlagSet): GameRules;
-    get<T extends Object | number | string | boolean>(gameRule: GameRule<T>): T;
-    getAsString<T extends Object | number | string | boolean>(gameRule: GameRule<T>): string;
-    set<T extends Object | number | string | boolean>(gameRule: GameRule<T>, value: T, server: MinecraftServer): void;
+    get<T extends unknown>(gameRule: GameRule<T>): T;
+    getAsString<T extends unknown>(gameRule: GameRule<T>): string;
+    set<T extends unknown>(gameRule: GameRule<T>, value: T, server: MinecraftServer): void;
     setAll(gameRulesMap: GameRuleMap, server: MinecraftServer): void;
     setAll(other: GameRules, server: MinecraftServer): void;
-    // private setFromOther<T extends Object | number | string | boolean>(gameRulesMap: GameRuleMap, gameRule: GameRule<T>, server: MinecraftServer): void;
+    // private setFromOther<T extends unknown>(gameRulesMap: GameRuleMap, gameRule: GameRule<T>, server: MinecraftServer): void;
     visitGameRuleTypes(visitor: GameRuleTypeVisitor): void;
 }

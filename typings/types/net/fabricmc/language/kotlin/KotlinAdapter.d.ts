@@ -5,5 +5,5 @@ import type { ModContainer } from '../../../../net/fabricmc/loader/api/ModContai
 export class KotlinAdapter extends Object implements LanguageAdapter {
     static getDefault(): LanguageAdapter;
     constructor()
-    create<T extends Object | number | string | boolean>(mod: ModContainer, value: string, type: Class<T>): T;
+    create<T extends unknown>(mod: ModContainer, value: string, type: Class<T>): T;
 }

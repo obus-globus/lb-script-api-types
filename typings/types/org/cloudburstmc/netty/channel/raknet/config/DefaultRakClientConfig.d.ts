@@ -19,7 +19,7 @@ export class DefaultRakClientConfig extends DefaultRakSessionConfig {
     getClientInternalAddresses(): number;
     getConnectTimeout(): number;
     getMtuSizes(): number[];
-    getOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>): T;
+    getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
     getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getServerGuid(): number;
@@ -33,7 +33,7 @@ export class DefaultRakClientConfig extends DefaultRakSessionConfig {
     setConnectTimeout(arg0: number): DefaultRakClientConfig;
     setIpDontFragment(arg0: boolean): void;
     setMtuSizes(arg0: number[]): void;
-    setOption<T extends Object | number | string | boolean>(arg0: ChannelOption<T>, arg1: T): boolean;
+    setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setServerGuid(arg0: number): DefaultRakClientConfig;
     setSessionTimeout(arg0: number): RakChannelConfig;
     setTimeBetweenSendConnectionAttemptsMS(arg0: number): void;

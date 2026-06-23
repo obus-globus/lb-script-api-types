@@ -34,7 +34,7 @@ export class TriState extends Enum<TriState> implements StringRepresentable {
     get(): boolean;
     getBoxed(): boolean;
     getSerializedName(): string;
-    map<T extends Object | number | string | boolean>(arg0: (param0: boolean) => T): Optional<T>;
+    map<T extends unknown>(arg0: (param0: boolean) => T): Optional<T>;
     orElse(arg0: boolean): boolean;
     orElseGet(arg0: () => boolean): boolean;
     orElseThrow<X extends Throwable>(arg0: () => X): boolean;

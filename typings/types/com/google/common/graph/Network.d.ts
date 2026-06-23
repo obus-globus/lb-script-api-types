@@ -4,7 +4,7 @@ import type { PredecessorsFunction } from '../../../../com/google/common/graph/P
 import type { SuccessorsFunction } from '../../../../com/google/common/graph/SuccessorsFunction.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Network<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends PredecessorsFunction<N>, SuccessorsFunction<N>, Object{
+export interface Network<N extends unknown, E extends unknown> extends PredecessorsFunction<N>, SuccessorsFunction<N>, Object{
     adjacentEdges(edge: E): E[];
     adjacentNodes(node: N): N[];
     allowsParallelEdges(): boolean;

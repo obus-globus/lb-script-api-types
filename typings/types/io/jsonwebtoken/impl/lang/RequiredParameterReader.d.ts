@@ -6,7 +6,7 @@ export class RequiredParameterReader extends Object implements ParameterReadable
     constructor(arg0: { [key: string]: any })
     constructor(arg0: ParameterReadable)
     // private src: ParameterReadable;
-    get<T extends Object | number | string | boolean>(arg0: Parameter<T>): T;
+    get<T extends unknown>(arg0: Parameter<T>): T;
     // private malformed(arg0: string): JwtException;
     // private name(): string;
 }

@@ -2,7 +2,7 @@ import type { AbstractReference2CharFunction } from '../../../../../it/unimi/dsi
 import type { Reference2CharFunction } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2CharFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2CharFunctions$UnmodifiableFunction<K extends Object | number | string | boolean> extends AbstractReference2CharFunction<K> implements Serializable {
+export class Reference2CharFunctions$UnmodifiableFunction<K extends unknown> extends AbstractReference2CharFunction<K> implements Serializable {
     constructor(arg0: (param0: Object) => string)
     // private function: (param0: Object) => string;
     clear(): void;

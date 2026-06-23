@@ -10,7 +10,7 @@ export class EmptyNotificationService extends Object implements NotificationServ
     constructor()
     ipBanned(ban: IpBanListEntry): void;
     ipUnbanned(ip: string): void;
-    onGameRuleChanged<T extends Object | number | string | boolean>(gameRule: GameRule<T>, value: T): void;
+    onGameRuleChanged<T extends unknown>(gameRule: GameRule<T>, value: T): void;
     playerAddedToAllowlist(player: NameAndId): void;
     playerBanned(ban: UserBanListEntry): void;
     playerDeoped(operator: ServerOpListEntry): void;

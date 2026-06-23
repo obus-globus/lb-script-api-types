@@ -3,7 +3,7 @@ import type { InteropLibrary } from '../../../../com/oracle/truffle/api/interop/
 import type { TruffleObject } from '../../../../com/oracle/truffle/api/interop/TruffleObject.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class DefaultLanguageView<C extends Object | number | string | boolean> extends Object implements TruffleObject {
+export class DefaultLanguageView<C extends unknown> extends Object implements TruffleObject {
     constructor(language: TruffleLanguage<C>, delegate: Object)
     // private delegate: Object;
     // private language: TruffleLanguage<C>;

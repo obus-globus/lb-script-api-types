@@ -3,7 +3,7 @@ import type { FluentFuture$TrustedFuture } from '../../../../../com/google/commo
 import type { ListenableFuture } from '../../../../../com/google/common/util/concurrent/ListenableFuture.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class AbstractTransformFuture<I extends Object | number | string | boolean, O extends Object | number | string | boolean, F extends Object | number | string | boolean, T extends Object | number | string | boolean> extends FluentFuture$TrustedFuture<O> implements Runnable {
+export abstract class AbstractTransformFuture<I extends unknown, O extends unknown, F extends unknown, T extends unknown> extends FluentFuture$TrustedFuture<O> implements Runnable {
     static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
     static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
     constructor(inputFuture: ListenableFuture<I>, function_: F)

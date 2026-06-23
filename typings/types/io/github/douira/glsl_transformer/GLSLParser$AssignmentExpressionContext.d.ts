@@ -22,7 +22,7 @@ export class GLSLParser$AssignmentExpressionContext extends GLSLParser$FiniteExp
     RIGHT_ASSIGN(): TerminalNode;
     SUB_ASSIGN(): TerminalNode;
     XOR_ASSIGN(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     finiteExpression(): GLSLParser$FiniteExpressionContext[];

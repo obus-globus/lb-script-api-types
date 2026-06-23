@@ -12,7 +12,7 @@ export interface CharComparator extends Comparator<string>, Object {
     thenComparing(arg0: (param0: string, param1: string) => number): (param0: string, param1: string) => number;
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparing<U extends Comparable<U>>(arg0: (param0: string) => U): (param0: Object) => boolean;
-    thenComparing<U extends Object | number | string | boolean>(arg0: (param0: string) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparing<U extends unknown>(arg0: (param0: string) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparingDouble(arg0: (param0: string) => number): (param0: Object) => boolean;
     thenComparingInt(arg0: (param0: string) => number): (param0: Object) => boolean;
     thenComparingLong(arg0: (param0: string) => number): (param0: Object) => boolean;

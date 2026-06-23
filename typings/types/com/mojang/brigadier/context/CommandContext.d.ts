@@ -6,7 +6,7 @@ import type { StringRange } from '../../../../com/mojang/brigadier/context/Strin
 import type { CommandNode } from '../../../../com/mojang/brigadier/tree/CommandNode.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class CommandContext<S extends Object | number | string | boolean> extends Object {
+export class CommandContext<S extends unknown> extends Object {
     constructor(arg0: S, arg1: string, arg2: { [key: string]: ParsedArgument<S, Object> }, arg3: (param0: CommandContext<S>) => number, arg4: CommandNode<S>, arg5: ParsedCommandNode<S>[], arg6: StringRange, arg7: CommandContext<S>, arg8: (param0: CommandContext<S>) => S[], arg9: boolean)
     // private arguments: { [key: string]: ParsedArgument<S, Object> };
     readonly child: CommandContext<S>;
@@ -20,7 +20,7 @@ export class CommandContext<S extends Object | number | string | boolean> extend
     readonly source: S;
     copyFor(arg0: S): CommandContext<S>;
     equals(arg0: Object | null): boolean;
-    getArgument<V extends Object | number | string | boolean>(arg0: string, arg1: Class<V>): V;
+    getArgument<V extends unknown>(arg0: string, arg1: Class<V>): V;
     getChild(): CommandContext<S>;
     getCommand(): (param0: CommandContext<S>) => number;
     getInput(): string;

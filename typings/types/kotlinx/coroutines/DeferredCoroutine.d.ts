@@ -4,7 +4,7 @@ import type { AbstractCoroutine } from '../../kotlinx/coroutines/AbstractCorouti
 import type { Deferred } from '../../kotlinx/coroutines/Deferred.d.ts'
 import type { Job$Key } from '../../kotlinx/coroutines/Job$Key.d.ts'
 import type { SelectClause1 } from '../../kotlinx/coroutines/selects/SelectClause1.d.ts'
-export class DeferredCoroutine<T extends Object | number | string | boolean> extends AbstractCoroutine<T> implements Deferred<T> {
+export class DeferredCoroutine<T extends unknown> extends AbstractCoroutine<T> implements Deferred<T> {
     static Key: Job$Key;
     constructor(parentContext: CoroutineContext, active: boolean)
     readonly onAwait: SelectClause1<T>;

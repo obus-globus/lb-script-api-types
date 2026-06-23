@@ -28,7 +28,7 @@ export abstract class AbstractConsecutiveExecutor<T extends Runnable> extends Ob
     run(): void;
     runAll(): void;
     schedule(task: T): void;
-    scheduleWithResult<Source extends Object | number | string | boolean>(futureConsumer: (param0: CompletableFuture<Source>) => void): CompletableFuture<Source>;
+    scheduleWithResult<Source extends unknown>(futureConsumer: (param0: CompletableFuture<Source>) => void): CompletableFuture<Source>;
     // private setRunning(): boolean;
     // private setSleeping(): void;
     size(): number;

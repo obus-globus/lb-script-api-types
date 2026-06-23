@@ -1,4 +1,4 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface PlatformTask<T extends Object | number | string | boolean> extends Object{
+export interface PlatformTask<T extends unknown> extends Object{
     cancel(): void;
 }

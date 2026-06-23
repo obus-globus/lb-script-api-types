@@ -54,7 +54,7 @@ export interface BufferedSource extends ReadableByteChannel, Object, Source{
     request(byteCount: number): boolean;
     require(byteCount: number): void;
     select(options: (Object | null)[]): number;
-    select<T extends Object | number | string | boolean>(options: T[]): T | null;
+    select<T extends unknown>(options: T[]): T | null;
     skip(byteCount: number): void;
     timeout(): Timeout;
 }

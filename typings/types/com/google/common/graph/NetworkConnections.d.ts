@@ -1,5 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface NetworkConnections<N extends Object | number | string | boolean, E extends Object | number | string | boolean> extends Object{
+export interface NetworkConnections<N extends unknown, E extends unknown> extends Object{
     addInEdge(edge: E, node: N, isSelfLoop: boolean): void;
     addOutEdge(edge: E, node: N): void;
     adjacentNode(edge: E): N;

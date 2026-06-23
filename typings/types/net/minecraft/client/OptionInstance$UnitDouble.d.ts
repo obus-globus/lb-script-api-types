@@ -27,6 +27,6 @@ export class OptionInstance$UnitDouble extends Enum<OptionInstance$UnitDouble> i
     previous(current: number): Optional<number>;
     toSliderValue(value: number): number;
     validateValue(value: number): Optional<number>;
-    xmap<R extends Object | number | string | boolean>(to: (param0: number) => R, from: (param0: R) => number): OptionInstance$SliderableValueSet<R>;
+    xmap<R extends unknown>(to: (param0: number) => R, from: (param0: R) => number): OptionInstance$SliderableValueSet<R>;
     name(): "INSTANCE";
 }

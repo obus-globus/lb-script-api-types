@@ -2,7 +2,7 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { BinaryOperator } from '../../../../java/util/function/BinaryOperator.d.ts'
 import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class AtomicReference<V extends Object | number | string | boolean> extends Object implements Serializable {
+export class AtomicReference<V extends unknown> extends Object implements Serializable {
     constructor()
     constructor(arg0: V)
     // private value: V;

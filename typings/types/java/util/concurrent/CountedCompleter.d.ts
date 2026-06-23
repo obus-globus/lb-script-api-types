@@ -4,7 +4,7 @@ import type { ForkJoinPool } from '../../../java/util/concurrent/ForkJoinPool.d.
 import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export abstract class CountedCompleter<T extends Object | number | string | boolean> extends ForkJoinTask<T> {
+export abstract class CountedCompleter<T extends unknown> extends ForkJoinTask<T> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

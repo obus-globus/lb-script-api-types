@@ -1,5 +1,5 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class MapBuilder$Itr<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export class MapBuilder$Itr<K extends unknown, V extends unknown> extends Object {
     constructor(map: Map<K, V>)
     // private expectedModCount: number;
     // private index: number;

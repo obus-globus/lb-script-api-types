@@ -6,7 +6,7 @@ import type { Channel } from '../../../kotlinx/coroutines/channels/Channel.d.ts'
 import type { Channel$Factory } from '../../../kotlinx/coroutines/channels/Channel$Factory.d.ts'
 import type { ChannelCoroutine } from '../../../kotlinx/coroutines/channels/ChannelCoroutine.d.ts'
 import type { ProducerScope } from '../../../kotlinx/coroutines/channels/ProducerScope.d.ts'
-export class ProducerCoroutine<E extends Object | number | string | boolean> extends ChannelCoroutine<E> implements ProducerScope<E> {
+export class ProducerCoroutine<E extends unknown> extends ChannelCoroutine<E> implements ProducerScope<E> {
     static BUFFERED: number;
     static CONFLATED: number;
     static DEFAULT_BUFFER_PROPERTY_NAME: string;

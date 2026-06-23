@@ -8,6 +8,6 @@ export class BiomeModificationContextImpl$AttributesContextImpl extends Object i
     private constructor(null_: BiomeModificationContextImpl$AttributesContextImpl)
     addAll(arg0: EnvironmentAttributeMap$Builder): void;
     addAll(arg0: EnvironmentAttributeMap): void;
-    set<T extends Object | number | string | boolean>(arg0: EnvironmentAttribute<T>, arg1: T): void;
-    setModifier<T extends Object | number | string | boolean, M extends Object | number | string | boolean>(arg0: EnvironmentAttribute<T>, arg1: AttributeModifier<T, M>, arg2: M): void;
+    set<T extends unknown>(arg0: EnvironmentAttribute<T>, arg1: T): void;
+    setModifier<T extends unknown, M extends unknown>(arg0: EnvironmentAttribute<T>, arg1: AttributeModifier<T, M>, arg2: M): void;
 }

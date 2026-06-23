@@ -2,7 +2,7 @@ import type { HashBasedTable$Factory } from '../../../../com/google/common/colle
 import type { StandardTable } from '../../../../com/google/common/collect/StandardTable.d.ts'
 import type { Table } from '../../../../com/google/common/collect/Table.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class HashBasedTable<R extends Object | number | string | boolean, C extends Object | number | string | boolean, V extends Object | number | string | boolean> extends StandardTable<R, C, V> {
+export class HashBasedTable<R extends unknown, C extends unknown, V extends unknown> extends StandardTable<R, C, V> {
     static create(): HashBasedTable<Object, Object, Object>;
     static create(paramtable: Table<Object, Object, Object>): HashBasedTable<Object, Object, Object>;
     static create(paramexpectedRows: number, paramexpectedCellsPerRow: number): HashBasedTable<Object, Object, Object>;

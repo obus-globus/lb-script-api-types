@@ -10,7 +10,7 @@ export class ReusableObjectMessage extends Object implements Clearable, Paramete
     constructor()
     // private obj: Object;
     clear(): void;
-    forEachParameter<S extends Object | number | string | boolean>(action: ParameterConsumer<S>, state: S): void;
+    forEachParameter<S extends unknown>(action: ParameterConsumer<S>, state: S): void;
     formatTo(buffer: StringBuilder): void;
     getFormat(): string;
     getFormattedMessage(): string;

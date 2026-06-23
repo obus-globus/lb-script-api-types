@@ -25,7 +25,7 @@ export class ExportNode extends Node {
     readonly namedExports: NamedExportsNode;
     readonly var: VarNode;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getAttributes(): Map<TruffleString, TruffleString>;
     getExportIdentifier(): PropertyKey;
     getExpression(): Expression;

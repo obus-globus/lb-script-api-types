@@ -2,7 +2,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { LongBinaryOperator } from '../../../../java/util/function/LongBinaryOperator.d.ts'
 import type { LongUnaryOperator } from '../../../../java/util/function/LongUnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class AtomicLongFieldUpdater<T extends Object | number | string | boolean> extends Object {
+export abstract class AtomicLongFieldUpdater<T extends unknown> extends Object {
     static newUpdater(paramarg0: Class<Object>, paramarg1: string): AtomicLongFieldUpdater<Object>;
     constructor()
     accumulateAndGet(arg0: T, arg1: number, arg2: (param0: number, param1: number) => number): number;

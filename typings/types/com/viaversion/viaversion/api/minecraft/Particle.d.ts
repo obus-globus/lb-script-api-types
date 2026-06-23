@@ -7,14 +7,14 @@ export class Particle extends Object implements Copyable, IdHolder {
     static copy(paramarg0: Object | null): Object | null;
     constructor(arg0: number)
     readonly arguments: Particle$ParticleData<Object>[];
-    add<T extends Object | number | string | boolean>(arg0: Type<T>, arg1: T): void;
-    add<T extends Object | number | string | boolean>(arg0: number, arg1: Type<T>, arg2: T): void;
+    add<T extends unknown>(arg0: Type<T>, arg1: T): void;
+    add<T extends unknown>(arg0: number, arg1: Type<T>, arg2: T): void;
     copy(): Particle;
-    getArgument<T extends Object | number | string | boolean>(arg0: number): Particle$ParticleData<T>;
+    getArgument<T extends unknown>(arg0: number): Particle$ParticleData<T>;
     getArguments(): Particle$ParticleData<Object>[];
     id(): number;
-    removeArgument<T extends Object | number | string | boolean>(arg0: number): Particle$ParticleData<T>;
-    set<T extends Object | number | string | boolean>(arg0: number, arg1: Type<T>, arg2: T): void;
+    removeArgument<T extends unknown>(arg0: number): Particle$ParticleData<T>;
+    set<T extends unknown>(arg0: number, arg1: Type<T>, arg2: T): void;
     setId(arg0: number): void;
     toString(): string;
 }

@@ -14,8 +14,8 @@ export class Double2ObjectOpenCustomHashMap$EntrySpliterator extends Double2Obje
     static SUBSIZED: number;
     constructor(null_: Double2ObjectOpenCustomHashMap$EntrySpliterator)
     constructor(null_: Double2ObjectOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Double2ObjectMap$Entry<V>) => void, arg1: number): void;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Double2ObjectMap$Entry<V>) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Double2ObjectOpenCustomHashMap$EntrySpliterator;
+    makeForSplit<V extends unknown>(arg0: number, arg1: number, arg2: boolean): Double2ObjectOpenCustomHashMap$EntrySpliterator;
     skip(arg0: number): number;
 }

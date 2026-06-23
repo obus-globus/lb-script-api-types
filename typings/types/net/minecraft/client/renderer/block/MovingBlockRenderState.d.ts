@@ -29,15 +29,15 @@ export class MovingBlockRenderState extends Object implements FabricRenderState,
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockState(pos: BlockPos): BlockState;
     getBlockTint(pos: BlockPos, color: (param0: Biome, param1: number, param2: number) => number): number;
-    getData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>): T;
+    getData<T extends unknown>(arg0: RenderStateDataKey<T>): T;
     getData(arg0: RenderStateDataKey<Object>): Object;
-    getDataOrDefault<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): T;
+    getDataOrDefault<T extends unknown>(arg0: RenderStateDataKey<T>, arg1: T): T;
     getDataOrDefault(arg0: RenderStateDataKey<Object>, arg1: Object): Object;
     getFluidState(pos: BlockPos): FluidState;
     getHeight(): number;
     getLightEngine(): LevelLightEngine;
     getMinY(): number;
     hasBiomes(): boolean;
-    setData<T extends Object | number | string | boolean>(arg0: RenderStateDataKey<T>, arg1: T): void;
+    setData<T extends unknown>(arg0: RenderStateDataKey<T>, arg1: T): void;
     setData(arg0: RenderStateDataKey<Object>, arg1: Object): void;
 }

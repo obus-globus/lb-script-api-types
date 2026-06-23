@@ -23,14 +23,14 @@ export class RecursiveTypeFamily extends Object implements TypeFamily {
     // private template: TypeTemplate;
     // private types: { [key: string]: any };
     apply(arg0: number): RecursivePoint$RecursivePointType<Object>;
-    buildMuType<A extends Object | number | string | boolean>(arg0: Type<A>, arg1: RecursiveTypeFamily): RecursivePoint$RecursivePointType<A>;
-    // private cap2<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: RewriteResult<Object, Object>[], arg1: RecursivePoint$RecursivePointType<A>, arg2: TypeRewriteRule, arg3: PointFreeRule, arg4: boolean, arg5: RewriteResult<Object, Object>, arg6: RecursivePoint$RecursivePointType<B>): boolean;
+    buildMuType<A extends unknown>(arg0: Type<A>, arg1: RecursiveTypeFamily): RecursivePoint$RecursivePointType<A>;
+    // private cap2<A extends unknown, B extends unknown>(arg0: RewriteResult<Object, Object>[], arg1: RecursivePoint$RecursivePointType<A>, arg2: TypeRewriteRule, arg3: PointFreeRule, arg4: boolean, arg5: RewriteResult<Object, Object>, arg6: RecursivePoint$RecursivePointType<B>): boolean;
     equals(arg0: Object | null): boolean;
     everywhere(arg0: number, arg1: TypeRewriteRule, arg2: PointFreeRule): Optional<RewriteResult<Object, Object>>;
-    findType<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: number, arg1: Type<A>, arg2: Type<B>, arg3: Type$TypeMatcher<A, B>, arg4: boolean): Either<TypedOptic<Object, Object, A, B>, Type$FieldNotFoundException>;
+    findType<A extends unknown, B extends unknown>(arg0: number, arg1: Type<A>, arg2: Type<B>, arg3: Type$TypeMatcher<A, B>, arg4: boolean): Either<TypedOptic<Object, Object, A, B>, Type$FieldNotFoundException>;
     fold(arg0: Algebra, arg1: RecursiveTypeFamily): (param0: number) => RewriteResult<Object, Object>;
     hashCode(): number;
-    // private mkSimpleOptic<A extends Object | number | string | boolean, B extends Object | number | string | boolean, S extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: RecursivePoint$RecursivePointType<S>, arg1: RecursivePoint$RecursivePointType<T>, arg2: Type<A>, arg3: Type<B>, arg4: Type$TypeMatcher<A, B>): Either<TypedOptic<Object, Object, A, B>, Type$FieldNotFoundException>;
+    // private mkSimpleOptic<A extends unknown, B extends unknown, S extends unknown, T extends unknown>(arg0: RecursivePoint$RecursivePointType<S>, arg1: RecursivePoint$RecursivePointType<T>, arg2: Type<A>, arg3: Type<B>, arg4: Type$TypeMatcher<A, B>): Either<TypedOptic<Object, Object, A, B>, Type$FieldNotFoundException>;
     name(): string;
     size(): number;
     template(): TypeTemplate;

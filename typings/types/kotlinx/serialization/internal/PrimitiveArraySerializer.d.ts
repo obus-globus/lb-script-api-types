@@ -7,7 +7,7 @@ import type { Decoder } from '../../../kotlinx/serialization/encoding/Decoder.d.
 import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.ts'
 import type { CollectionLikeSerializer } from '../../../kotlinx/serialization/internal/CollectionLikeSerializer.d.ts'
 import type { PrimitiveArrayBuilder } from '../../../kotlinx/serialization/internal/PrimitiveArrayBuilder.d.ts'
-export abstract class PrimitiveArraySerializer<Element extends Object | number | string | boolean, Array extends Object | number | string | boolean, Builder extends PrimitiveArrayBuilder<Array>> extends CollectionLikeSerializer<Element, Array, Builder> {
+export abstract class PrimitiveArraySerializer<Element extends unknown, Array extends unknown, Builder extends PrimitiveArrayBuilder<Array>> extends CollectionLikeSerializer<Element, Array, Builder> {
     constructor(primitiveSerializer: KSerializer<Element>)
     readonly descriptor: SerialDescriptor;
     protected builder(): Builder;

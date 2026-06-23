@@ -7,7 +7,7 @@ import type { GlUniform } from '../../../../../../../net/caffeinemc/mods/sodium/
 import type { GlUniformBlock } from '../../../../../../../net/caffeinemc/mods/sodium/client/gl/shader/uniform/GlUniformBlock.d.ts'
 import type { ShaderBindingContext } from '../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/shader/ShaderBindingContext.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export class GlProgram<T extends Object | number | string | boolean> extends GlObject implements ShaderBindingContext {
+export class GlProgram<T extends unknown> extends GlObject implements ShaderBindingContext {
     static builder(paramarg0: Identifier): GlProgram$Builder;
     constructor(arg0: number, arg1: (param0: ShaderBindingContext) => T)
     // private shaderInterface: T;

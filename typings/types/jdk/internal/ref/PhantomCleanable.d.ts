@@ -4,7 +4,7 @@ import type { PhantomReference } from '../../../java/lang/ref/PhantomReference.d
 import type { CleanerImpl$CleanableList } from '../../../jdk/internal/ref/CleanerImpl$CleanableList.d.ts'
 import type { CleanerImpl$CleanableList$Node } from '../../../jdk/internal/ref/CleanerImpl$CleanableList$Node.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class PhantomCleanable<T extends Object | number | string | boolean> extends PhantomReference<T> implements Cleaner$Cleanable {
+export abstract class PhantomCleanable<T extends unknown> extends PhantomReference<T> implements Cleaner$Cleanable {
     static reachabilityFence(paramarg0: Object): void;
     constructor(arg0: T, arg1: Cleaner)
     // private index: number;

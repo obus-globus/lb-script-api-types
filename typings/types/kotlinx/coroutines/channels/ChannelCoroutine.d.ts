@@ -11,7 +11,7 @@ import type { ChannelResult } from '../../../kotlinx/coroutines/channels/Channel
 import type { SendChannel } from '../../../kotlinx/coroutines/channels/SendChannel.d.ts'
 import type { SelectClause1 } from '../../../kotlinx/coroutines/selects/SelectClause1.d.ts'
 import type { SelectClause2 } from '../../../kotlinx/coroutines/selects/SelectClause2.d.ts'
-export class ChannelCoroutine<E extends Object | number | string | boolean> extends AbstractCoroutine<void> implements Channel<E> {
+export class ChannelCoroutine<E extends unknown> extends AbstractCoroutine<void> implements Channel<E> {
     static BUFFERED: number;
     static CONFLATED: number;
     static DEFAULT_BUFFER_PROPERTY_NAME: string;

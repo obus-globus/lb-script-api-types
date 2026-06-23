@@ -3,7 +3,7 @@ import type { Callable } from '../../../java/util/concurrent/Callable.d.ts'
 import type { ForkJoinPool } from '../../../java/util/concurrent/ForkJoinPool.d.ts'
 import type { ForkJoinTask } from '../../../java/util/concurrent/ForkJoinTask.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export abstract class RecursiveTask<V extends Object | number | string | boolean> extends ForkJoinTask<V> {
+export abstract class RecursiveTask<V extends unknown> extends ForkJoinTask<V> {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

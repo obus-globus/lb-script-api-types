@@ -13,7 +13,7 @@ export class ResourceMetadata$MapBased extends Object implements ResourceMetadat
     static of(paramk: MetadataSectionType<Object>, paramv: Object | null): ResourceMetadata;
     private constructor(values: Map<MetadataSectionType<Object>, Object | null>)
     // private values: Map<MetadataSectionType<Object>, Object | null>;
-    getSection<T extends Object | number | string | boolean>(serializer: MetadataSectionType<T>): Optional<T>;
-    getTypedSection<T extends Object | number | string | boolean>(type: MetadataSectionType<T>): Optional<MetadataSectionType$WithValue<T>>;
+    getSection<T extends unknown>(serializer: MetadataSectionType<T>): Optional<T>;
+    getTypedSection<T extends unknown>(type: MetadataSectionType<T>): Optional<MetadataSectionType$WithValue<T>>;
     getTypedSections(types: MetadataSectionType<Object>[]): MetadataSectionType$WithValue<Object>[];
 }

@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export interface Pair<L extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object{
+export interface Pair<L extends unknown, R extends unknown> extends Object{
     first(): L;
     first(arg0: L): Pair<L, R>;
     key(): L;

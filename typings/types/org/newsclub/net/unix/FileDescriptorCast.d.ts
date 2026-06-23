@@ -12,7 +12,7 @@ export class FileDescriptorCast extends Object implements FileDescriptorAccess {
     // private fdObj: FileDescriptor;
     // private localPort: number;
     // private remotePort: number;
-    as<K extends Object | number | string | boolean>(arg0: Class<K>): K;
+    as<K extends unknown>(arg0: Class<K>): K;
     availableTypes(): Class<Object>[];
     getFileDescriptor(): FileDescriptor;
     isAvailable(arg0: Class<Object>): boolean;

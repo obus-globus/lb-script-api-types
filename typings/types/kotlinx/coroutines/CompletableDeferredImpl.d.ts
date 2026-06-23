@@ -5,7 +5,7 @@ import type { Job } from '../../kotlinx/coroutines/Job.d.ts'
 import type { Job$Key } from '../../kotlinx/coroutines/Job$Key.d.ts'
 import type { JobSupport } from '../../kotlinx/coroutines/JobSupport.d.ts'
 import type { SelectClause1 } from '../../kotlinx/coroutines/selects/SelectClause1.d.ts'
-export class CompletableDeferredImpl<T extends Object | number | string | boolean> extends JobSupport implements CompletableDeferred<T> {
+export class CompletableDeferredImpl<T extends unknown> extends JobSupport implements CompletableDeferred<T> {
     static Key: Job$Key;
     constructor(parent: Job | null)
     readonly onAwait: SelectClause1<T>;

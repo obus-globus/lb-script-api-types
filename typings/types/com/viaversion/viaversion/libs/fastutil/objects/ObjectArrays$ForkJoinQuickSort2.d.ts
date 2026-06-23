@@ -4,7 +4,7 @@ import type { ForkJoinPool } from '../../../../../../java/util/concurrent/ForkJo
 import type { ForkJoinTask } from '../../../../../../java/util/concurrent/ForkJoinTask.d.ts'
 import type { RecursiveAction } from '../../../../../../java/util/concurrent/RecursiveAction.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ObjectArrays$ForkJoinQuickSort2<K extends Object | number | string | boolean> extends RecursiveAction {
+export class ObjectArrays$ForkJoinQuickSort2<K extends unknown> extends RecursiveAction {
     static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;

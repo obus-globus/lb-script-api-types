@@ -5,7 +5,7 @@ import type { BoundedFloatFunction } from '../../../net/minecraft/util/BoundedFl
 import type { CubicSpline } from '../../../net/minecraft/util/CubicSpline.d.ts'
 import type { CubicSpline$Builder } from '../../../net/minecraft/util/CubicSpline$Builder.d.ts'
 import type { CubicSpline$CoordinateVisitor } from '../../../net/minecraft/util/CubicSpline$CoordinateVisitor.d.ts'
-export class CubicSpline$Constant<C extends Object | number | string | boolean, I extends BoundedFloatFunction<C>> extends Record implements CubicSpline<C, I> {
+export class CubicSpline$Constant<C extends unknown, I extends BoundedFloatFunction<C>> extends Record implements CubicSpline<C, I> {
     static IDENTITY: BoundedFloatFunction<number>;
     static builder(paramcoordinate: Object | null): CubicSpline$Builder<Object, any>;
     static builder(paramcoordinate: Object | null, paramvalueTransformer: BoundedFloatFunction<number>): CubicSpline$Builder<Object, any>;

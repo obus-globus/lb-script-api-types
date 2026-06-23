@@ -14,7 +14,7 @@ import type { DebugPoiInfo } from '../../../../net/minecraft/util/debug/DebugPoi
 import type { DebugStructureInfo } from '../../../../net/minecraft/util/debug/DebugStructureInfo.d.ts'
 import type { DebugSubscription } from '../../../../net/minecraft/util/debug/DebugSubscription.d.ts'
 import type { Orientation } from '../../../../net/minecraft/world/level/redstone/Orientation.d.ts'
-export class DebugSubscriptions<T extends Object | number | string | boolean> extends Object {
+export class DebugSubscriptions<T extends unknown> extends Object {
     static BEES: DebugSubscription<DebugBeeInfo>;
     static BEE_HIVES: DebugSubscription<DebugHiveInfo>;
     static BRAINS: DebugSubscription<DebugBrainDump>;

@@ -42,8 +42,8 @@ export abstract class AFDatagramSocket<A extends AFSocketAddress> extends Datagr
     getFileDescriptor(): FileDescriptor;
     getImplExtensions(): AFSocketImplExtensions<A>;
     getLocalSocketAddress(): A;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
-    getOption<T extends Object | number | string | boolean>(arg0: AFSocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: AFSocketOption<T>): T;
     getRemoteSocketAddress(): A;
     internalDummyBind(): void;
     internalDummyConnect(): void;
@@ -59,8 +59,8 @@ export abstract class AFDatagramSocket<A extends AFSocketAddress> extends Datagr
     send(arg0: DatagramPacket): void;
     setAncillaryReceiveBufferSize(arg0: number): void;
     setDeleteOnClose(arg0: boolean): void;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): DatagramSocket;
-    setOption<T extends Object | number | string | boolean>(arg0: AFSocketOption<T>, arg1: T): DatagramSocket;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): DatagramSocket;
+    setOption<T extends unknown>(arg0: AFSocketOption<T>, arg1: T): DatagramSocket;
     setShutdownOnClose(arg0: boolean): void;
     socketAddressClass(): Class<AFSocketAddress>;
 }

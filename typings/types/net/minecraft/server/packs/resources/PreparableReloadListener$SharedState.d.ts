@@ -5,7 +5,7 @@ export class PreparableReloadListener$SharedState extends Object {
     constructor(manager: ResourceManager)
     // private manager: ResourceManager;
     // private state: Map<PreparableReloadListener$StateKey<Object>, Object>;
-    get<T extends Object | number | string | boolean>(key: PreparableReloadListener$StateKey<T>): T;
+    get<T extends unknown>(key: PreparableReloadListener$StateKey<T>): T;
     resourceManager(): ResourceManager;
-    set<T extends Object | number | string | boolean>(key: PreparableReloadListener$StateKey<T>, value: T): void;
+    set<T extends unknown>(key: PreparableReloadListener$StateKey<T>, value: T): void;
 }

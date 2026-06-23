@@ -56,7 +56,7 @@ export abstract class AFDatagramSocketImpl<A extends AFSocketAddress> extends Da
     getImplExtensions(): AFSocketImplExtensions<A>;
     getLocalPort1(): number;
     getLocalSocketAddress(): A;
-    getOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>): T;
+    getOption<T extends unknown>(arg0: SocketOption<T>): T;
     getOption(arg0: number): Object;
     getRemotePort(): number;
     getRemoteSocketAddress(): A;
@@ -77,7 +77,7 @@ export abstract class AFDatagramSocketImpl<A extends AFSocketAddress> extends Da
     // private recv(arg0: DatagramPacket, arg1: number): void;
     send(arg0: DatagramPacket): void;
     send(arg0: ByteBuffer, arg1: SocketAddress): number;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): void;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): void;
     setOption(arg0: number, arg1: Object): void;
     setSocketAddress(arg0: AFSocketAddress): void;
     setTTL(arg0: number): void;

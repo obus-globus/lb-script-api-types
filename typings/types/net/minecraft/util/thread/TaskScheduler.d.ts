@@ -7,6 +7,6 @@ export interface TaskScheduler<R extends Runnable> extends AutoCloseable, Object
     close(): void;
     name(): string;
     schedule(r: R): void;
-    scheduleWithResult<Source extends Object | number | string | boolean>(futureConsumer: (param0: CompletableFuture<Source>) => void): CompletableFuture<Source>;
+    scheduleWithResult<Source extends unknown>(futureConsumer: (param0: CompletableFuture<Source>) => void): CompletableFuture<Source>;
     wrapRunnable(runnable: () => void): R;
 }

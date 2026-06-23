@@ -18,8 +18,8 @@ export class PointFreeRule$Choice2 extends Record implements PointFreeRule {
     equals(arg0: Object | null): boolean;
     first(): PointFreeRule;
     hashCode(): number;
-    rewrite<A extends Object | number | string | boolean>(arg0: PointFree<A>): Optional<PointFree<A>>;
-    rewriteOrNop<A extends Object | number | string | boolean>(arg0: PointFree<A>): PointFree<A>;
+    rewrite<A extends unknown>(arg0: PointFree<A>): Optional<PointFree<A>>;
+    rewriteOrNop<A extends unknown>(arg0: PointFree<A>): PointFree<A>;
     second(): PointFreeRule;
     toString(): string;
 }

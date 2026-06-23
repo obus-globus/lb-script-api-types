@@ -5,6 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SimpleFeedbackArcSetProvider extends AbstractFeedbackArcSetProvider {
     constructor()
     constructor(arg0: number)
-    // private copies<V extends Object | number | string | boolean>(arg0: Digraph<V>, arg1: number): Digraph<V>[];
-    lfas<V extends Object | number | string | boolean>(arg0: Digraph<V>, arg1: EdgeWeights<V>): Digraph<V>;
+    // private copies<V extends unknown>(arg0: Digraph<V>, arg1: number): Digraph<V>[];
+    lfas<V extends unknown>(arg0: Digraph<V>, arg1: EdgeWeights<V>): Digraph<V>;
 }

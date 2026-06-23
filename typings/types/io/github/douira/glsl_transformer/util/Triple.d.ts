@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Triple<V extends Object | number | string | boolean> extends Object {
+export class Triple<V extends unknown> extends Object {
     constructor(arg0: V, arg1: V, arg2: V)
     a: V;
     b: V;

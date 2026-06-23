@@ -7,7 +7,7 @@ import type { Frame$FrameControl } from '../../../../net/minecraft/commands/exec
 import type { TraceCallbacks } from '../../../../net/minecraft/commands/execution/TraceCallbacks.d.ts'
 import type { InstantiatedFunction } from '../../../../net/minecraft/commands/functions/InstantiatedFunction.d.ts'
 import type { ProfilerFiller } from '../../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
-export class ExecutionContext<T extends Object | number | string | boolean> extends Object implements AutoCloseable {
+export class ExecutionContext<T extends unknown> extends Object implements AutoCloseable {
     static queueInitialCommandExecution(paramcontext: ExecutionContext<Object>, paramcommand: string, paramexecutionChain: ContextChain<Object>, paramsender: Object | null, paramcommandReturn: (param0: boolean, param1: number) => void): void;
     static queueInitialFunctionCall(paramcontext: ExecutionContext<Object>, paramfunction: InstantiatedFunction<Object>, paramsender: Object | null, paramfunctionReturn: (param0: boolean, param1: number) => void): void;
     constructor(commandLimit: number, forkLimit: number, profiler: ProfilerFiller)

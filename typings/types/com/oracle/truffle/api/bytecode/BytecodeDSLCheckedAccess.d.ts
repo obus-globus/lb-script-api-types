@@ -9,8 +9,8 @@ export class BytecodeDSLCheckedAccess extends BytecodeDSLAccess {
     getByteArraySupport(): ByteArraySupport;
     getFrameExtensions(): FrameExtensions;
     readInt(arr: number[], index: number): number;
-    readObject<T extends Object | number | string | boolean>(arr: T[], index: number): T;
-    uncheckedCast<T extends Object | number | string | boolean>(obj: Object, clazz: Class<T>): T;
+    readObject<T extends unknown>(arr: T[], index: number): T;
+    uncheckedCast<T extends unknown>(obj: Object, clazz: Class<T>): T;
     writeInt(arr: number[], index: number, value: number): void;
-    writeObject<T extends Object | number | string | boolean>(arr: T[], index: number, value: T): void;
+    writeObject<T extends unknown>(arr: T[], index: number, value: T): void;
 }

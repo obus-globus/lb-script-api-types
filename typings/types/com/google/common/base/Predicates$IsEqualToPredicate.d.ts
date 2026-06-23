@@ -9,5 +9,5 @@ export class Predicates$IsEqualToPredicate extends Object implements Predicate<O
     hashCode(): number;
     test(input: Object): boolean;
     toString(): string;
-    withNarrowedType<T extends Object | number | string | boolean>(): (param0: Object) => boolean;
+    withNarrowedType<T extends unknown>(): (param0: Object) => boolean;
 }

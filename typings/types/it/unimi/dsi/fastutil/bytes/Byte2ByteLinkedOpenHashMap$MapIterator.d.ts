@@ -1,6 +1,6 @@
 import type { Byte2ByteMap$Entry } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2ByteMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Byte2ByteLinkedOpenHashMap$MapIterator<ConsumerType extends Object | number | string | boolean> extends Object {
+export abstract class Byte2ByteLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: Byte2ByteLinkedOpenHashMap$MapIterator<ConsumerType>)
     private constructor(null_: Byte2ByteLinkedOpenHashMap$MapIterator<ConsumerType>, arg1: number)
     // private curr: number;

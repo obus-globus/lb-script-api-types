@@ -4,7 +4,7 @@ import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { ChannelIterator } from '../../../kotlinx/coroutines/channels/ChannelIterator.d.ts'
 import type { ChannelResult } from '../../../kotlinx/coroutines/channels/ChannelResult.d.ts'
 import type { SelectClause1 } from '../../../kotlinx/coroutines/selects/SelectClause1.d.ts'
-export interface ReceiveChannel<E extends Object | number | string | boolean> extends Object{
+export interface ReceiveChannel<E extends unknown> extends Object{
     /*not mapped: */ isClosedForReceive(): boolean;
     /*not mapped: */ isEmpty(): boolean;
     readonly onReceive: SelectClause1<E>;

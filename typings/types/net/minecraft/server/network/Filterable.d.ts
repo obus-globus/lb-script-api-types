@@ -6,7 +6,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { FilteredText } from '../../../../net/minecraft/server/network/FilteredText.d.ts'
-export class Filterable<T extends Object | number | string | boolean> extends Record {
+export class Filterable<T extends unknown> extends Record {
     static codec(paramvalueCodec: Codec<Object>): Codec<Filterable<Object>>;
     static from(paramtext: FilteredText): Filterable<string>;
     static passThrough(paramvalue: Object | null): Filterable<Object>;
@@ -18,8 +18,8 @@ export class Filterable<T extends Object | number | string | boolean> extends Re
     filtered(): Optional<T>;
     get(filterEnabled: boolean): T;
     hashCode(): number;
-    map<U extends Object | number | string | boolean>(function_: (param0: T) => U): Filterable<U>;
+    map<U extends unknown>(function_: (param0: T) => U): Filterable<U>;
     raw(): T;
-    resolve<U extends Object | number | string | boolean>(function_: (param0: T) => Optional<U>): Optional<Filterable<U>>;
+    resolve<U extends unknown>(function_: (param0: T) => Optional<U>): Optional<Filterable<U>>;
     toString(): string;
 }

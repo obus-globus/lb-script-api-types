@@ -4,7 +4,7 @@ import type { ComponentRewriter1_20_5$DataConverter } from '../../../../../../co
 import type { ComponentRewriter1_20_5$TagConverter } from '../../../../../../com/viaversion/viaversion/protocols/v1_20_3to1_20_5/rewriter/ComponentRewriter1_20_5$TagConverter.d.ts'
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ComponentRewriter1_20_5$ConverterPair<T extends Object | number | string | boolean> extends Record {
+export class ComponentRewriter1_20_5$ConverterPair<T extends unknown> extends Record {
     constructor(dataConverter: (param0: UserConnection, param1: T) => Tag, tagConverter: (param0: UserConnection, param1: Tag) => T)
     // private dataConverter: (param0: UserConnection, param1: T) => Tag;
     // private tagConverter: (param0: UserConnection, param1: Tag) => T;

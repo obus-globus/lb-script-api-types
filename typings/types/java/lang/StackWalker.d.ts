@@ -29,5 +29,5 @@ export class StackWalker extends Object {
     getContinuation(): Continuation;
     hasLocalsOperandsOption(): boolean;
     hasOption(arg0: StackWalker$Option): boolean;
-    walk<T extends Object | number | string | boolean>(arg0: (param0: Stream<StackWalker$StackFrame>) => T): T;
+    walk<T extends unknown>(arg0: (param0: Stream<StackWalker$StackFrame>) => T): T;
 }

@@ -2,6 +2,6 @@ import type { RedirectModifier } from '../../../../com/mojang/brigadier/Redirect
 import type { CommandContext } from '../../../../com/mojang/brigadier/context/CommandContext.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CustomModifierExecutor } from '../../../../net/minecraft/commands/execution/CustomModifierExecutor.d.ts'
-export interface CustomModifierExecutor$ModifierAdapter<T extends Object | number | string | boolean> extends RedirectModifier<T>, Object, CustomModifierExecutor<T>{
+export interface CustomModifierExecutor$ModifierAdapter<T extends unknown> extends RedirectModifier<T>, Object, CustomModifierExecutor<T>{
     apply(context: CommandContext<T>): T[];
 }

@@ -1,6 +1,6 @@
 import type { InternalThreadLocalMap } from '../../../../io/netty/util/internal/InternalThreadLocalMap.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class FastThreadLocal<V extends Object | number | string | boolean> extends Object {
+export class FastThreadLocal<V extends unknown> extends Object {
     static destroy(): void;
     static removeAll(): void;
     static size(): number;

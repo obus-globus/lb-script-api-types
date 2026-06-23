@@ -12,8 +12,8 @@ export class ItemParser$SuggestionsVisitor extends Object implements ItemParser$
     private constructor()
     // private suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     resolveSuggestions(builder: SuggestionsBuilder, reader: StringReader): CompletableFuture<Suggestions>;
-    visitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): void;
+    visitComponent<T extends unknown>(type: DataComponentType<T>, value: T): void;
     visitItem(item: Holder<Item>): void;
-    visitRemovedComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>): void;
+    visitRemovedComponent<T extends unknown>(type: DataComponentType<T>): void;
     visitSuggestions(suggestions: (param0: SuggestionsBuilder) => CompletableFuture<Suggestions>): void;
 }

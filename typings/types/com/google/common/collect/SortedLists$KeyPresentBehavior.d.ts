@@ -12,6 +12,6 @@ export class SortedLists$KeyPresentBehavior extends Enum<SortedLists$KeyPresentB
     static valueOf(paramname: string): SortedLists$KeyPresentBehavior;
     static values(): (Object | null)[];
     private constructor()
-    resultIndex<E extends Object | number | string | boolean>(comparator: (param0: Object) => boolean, key: E, list: E[], foundIndex: number): number;
+    resultIndex<E extends unknown>(comparator: (param0: Object) => boolean, key: E, list: E[], foundIndex: number): number;
     name(): "ANY_PRESENT" | "LAST_PRESENT" | "FIRST_PRESENT" | "FIRST_AFTER" | "LAST_BEFORE";
 }

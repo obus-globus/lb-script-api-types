@@ -19,7 +19,7 @@ export class Template<N extends ASTNode> extends Object {
     getInstanceFor(arg0: Root): N;
     getInstanceFor(arg0: Root, arg1: ASTNode): N;
     getInstanceFor(arg0: Root, arg1: ASTNode[]): N;
-    getReplacement<R extends Object | number | string | boolean>(arg0: R): R;
+    getReplacement<R extends unknown>(arg0: R): R;
     getSource(): N;
     getSourceRoot(): Root;
     markIdentifierReplacement(arg0: string): void;

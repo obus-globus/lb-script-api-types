@@ -5,5 +5,5 @@ import type { TypeToken } from '../../../../../com/google/gson/reflect/TypeToken
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class JsonAdapterAnnotationTypeAdapterFactory$DummyTypeAdapterFactory extends Object implements TypeAdapterFactory {
     private constructor()
-    create<T extends Object | number | string | boolean>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
+    create<T extends unknown>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
 }

@@ -34,7 +34,7 @@ import type { Function as Function_2 } from '../../../../../java/util/function/F
 import type { IntUnaryOperator } from '../../../../../java/util/function/IntUnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface Char2IntFunction extends Function<string, number>, IntUnaryOperator, Object {
-    andThen<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: string) => T;
+    andThen<T extends unknown>(arg0: (param0: number) => T): (param0: string) => T;
     andThen(arg0: (param0: number) => number): (param0: number) => number;
     andThenByte(arg0: (param0: number) => number): (param0: string) => number;
     andThenChar(arg0: (param0: number) => string): (param0: string) => string;
@@ -42,13 +42,13 @@ export interface Char2IntFunction extends Function<string, number>, IntUnaryOper
     andThenFloat(arg0: (param0: number) => number): (param0: string) => number;
     andThenInt(arg0: (param0: number) => number): (param0: string) => number;
     andThenLong(arg0: (param0: number) => number): (param0: string) => number;
-    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: string) => T;
-    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: number) => T): (param0: string) => T;
+    andThenObject<T extends unknown>(arg0: (param0: number) => T): (param0: string) => T;
+    andThenReference<T extends unknown>(arg0: (param0: number) => T): (param0: string) => T;
     andThenShort(arg0: (param0: number) => number): (param0: string) => number;
     apply(arg0: string): number;
     applyAsInt(arg0: number): number;
     clear(): void;
-    compose<T extends Object | number | string | boolean>(arg0: (param0: T) => string): (param0: T) => number;
+    compose<T extends unknown>(arg0: (param0: T) => string): (param0: T) => number;
     compose(arg0: (param0: number) => number): (param0: number) => number;
     composeByte(arg0: (param0: number) => string): (param0: number) => number;
     composeChar(arg0: (param0: string) => string): (param0: string) => number;
@@ -56,8 +56,8 @@ export interface Char2IntFunction extends Function<string, number>, IntUnaryOper
     composeFloat(arg0: (param0: number) => string): (param0: number) => number;
     composeInt(arg0: (param0: number) => string): (param0: number) => number;
     composeLong(arg0: (param0: number) => string): (param0: number) => number;
-    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => string): (param0: Object) => number;
-    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => string): (param0: Object) => number;
+    composeObject<T extends unknown>(arg0: (param0: Object) => string): (param0: Object) => number;
+    composeReference<T extends unknown>(arg0: (param0: Object) => string): (param0: Object) => number;
     composeShort(arg0: (param0: number) => string): (param0: number) => number;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;

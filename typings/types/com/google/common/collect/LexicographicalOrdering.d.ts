@@ -2,7 +2,7 @@ import type { Ordering } from '../../../../com/google/common/collect/Ordering.d.
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class LexicographicalOrdering<T extends Object | number | string | boolean> extends Ordering<T[]> implements Serializable {
+export class LexicographicalOrdering<T extends unknown> extends Ordering<T[]> implements Serializable {
     static allEqual(): Ordering<Object>;
     static arbitrary(): Ordering<Object>;
     static compound(paramcomparators: (param0: Object) => boolean[]): Ordering<Object>;

@@ -36,7 +36,7 @@ export interface ChronoZonedDateTime<D extends ChronoLocalDate> extends Temporal
     plus(arg0: TemporalAmount): ChronoZonedDateTime<D>;
     plus(arg0: number, arg1: TemporalUnit): ChronoZonedDateTime<D>;
     plus(arg0: TemporalAmount): Temporal;
-    query<R extends Object | number | string | boolean>(arg0: (param0: TemporalAccessor) => R): R;
+    query<R extends unknown>(arg0: (param0: TemporalAccessor) => R): R;
     range(arg0: TemporalField): ValueRange;
     toEpochSecond(): number;
     toInstant(): Instant;

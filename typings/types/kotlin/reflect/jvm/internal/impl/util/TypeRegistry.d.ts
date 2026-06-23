@@ -2,7 +2,7 @@ import type { AtomicInteger } from '../../../../../../java/util/concurrent/atomi
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { KClass } from '../../../../../../kotlin/reflect/KClass.d.ts'
 import type { NullableArrayMapAccessor } from '../../../../../../kotlin/reflect/jvm/internal/impl/util/NullableArrayMapAccessor.d.ts'
-export abstract class TypeRegistry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object {
+export abstract class TypeRegistry<K extends unknown, V extends unknown> extends Object {
     constructor()
     // private idCounter: AtomicInteger;
     // private idPerType: { [key: string]: number };

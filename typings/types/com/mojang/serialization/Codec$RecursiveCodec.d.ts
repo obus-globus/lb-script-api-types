@@ -26,7 +26,7 @@ import type { IntStream } from '../../../java/util/stream/IntStream.d.ts'
 import type { LongStream } from '../../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
-export class Codec$RecursiveCodec<T extends Object | number | string | boolean> extends Object implements Codec<T> {
+export class Codec$RecursiveCodec<T extends unknown> extends Object implements Codec<T> {
     static BOOL: PrimitiveCodec<boolean>;
     static BYTE: PrimitiveCodec<number>;
     static BYTE_BUFFER: PrimitiveCodec<ByteBuffer>;
@@ -70,19 +70,19 @@ export class Codec$RecursiveCodec<T extends Object | number | string | boolean> 
     private constructor(arg0: string, arg1: (param0: Codec<T>) => Codec<T>)
     // private name: string;
     // private wrapped: () => Codec<T>;
-    comapFlatMap<S extends Object | number | string | boolean>(arg0: (param0: T) => DataResult<S>, arg1: (param0: S) => T): Codec<S>;
+    comapFlatMap<S extends unknown>(arg0: (param0: T) => DataResult<S>, arg1: (param0: S) => T): Codec<S>;
     decode(arg0: Dynamic<T>): DataResult<Pair<T, T>>;
-    decode<S extends Object | number | string | boolean>(arg0: DynamicOps<S>, arg1: S): DataResult<Pair<T, S>>;
+    decode<S extends unknown>(arg0: DynamicOps<S>, arg1: S): DataResult<Pair<T, S>>;
     deprecated(arg0: number): Codec<T>;
-    dispatch<E extends Object | number | string | boolean>(arg0: (param0: E) => T, arg1: (param0: T) => MapCodec<E>): Codec<E>;
-    dispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => T, arg2: (param0: T) => MapCodec<E>): Codec<E>;
-    dispatchMap<E extends Object | number | string | boolean>(arg0: (param0: E) => T, arg1: (param0: T) => MapCodec<E>): MapCodec<E>;
-    dispatchMap<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => T, arg2: (param0: T) => MapCodec<E>): MapCodec<E>;
-    dispatchStable<E extends Object | number | string | boolean>(arg0: (param0: E) => T, arg1: (param0: T) => MapCodec<E>): Codec<E>;
-    encode<S extends Object | number | string | boolean>(arg0: T, arg1: DynamicOps<S>, arg2: S): DataResult<S>;
+    dispatch<E extends unknown>(arg0: (param0: E) => T, arg1: (param0: T) => MapCodec<E>): Codec<E>;
+    dispatch<E extends unknown>(arg0: string, arg1: (param0: E) => T, arg2: (param0: T) => MapCodec<E>): Codec<E>;
+    dispatchMap<E extends unknown>(arg0: (param0: E) => T, arg1: (param0: T) => MapCodec<E>): MapCodec<E>;
+    dispatchMap<E extends unknown>(arg0: string, arg1: (param0: E) => T, arg2: (param0: T) => MapCodec<E>): MapCodec<E>;
+    dispatchStable<E extends unknown>(arg0: (param0: E) => T, arg1: (param0: T) => MapCodec<E>): Codec<E>;
+    encode<S extends unknown>(arg0: T, arg1: DynamicOps<S>, arg2: S): DataResult<S>;
     fieldOf(arg0: string): MapCodec<T>;
-    flatComapMap<S extends Object | number | string | boolean>(arg0: (param0: T) => S, arg1: (param0: S) => DataResult<T>): Codec<S>;
-    flatXmap<S extends Object | number | string | boolean>(arg0: (param0: T) => DataResult<S>, arg1: (param0: S) => DataResult<T>): Codec<S>;
+    flatComapMap<S extends unknown>(arg0: (param0: T) => S, arg1: (param0: S) => DataResult<T>): Codec<S>;
+    flatXmap<S extends unknown>(arg0: (param0: T) => DataResult<S>, arg1: (param0: S) => DataResult<T>): Codec<S>;
     lenientOptionalFieldOf(arg0: string): MapCodec<Optional<T>>;
     lenientOptionalFieldOf(arg0: string, arg1: T): MapCodec<T>;
     lenientOptionalFieldOf(arg0: string, arg1: T, arg2: Lifecycle): MapCodec<T>;
@@ -102,14 +102,14 @@ export class Codec$RecursiveCodec<T extends Object | number | string | boolean> 
     orElseGet(arg0: (param0: string) => void, arg1: () => T): Codec<T>;
     orElseGet(arg0: () => T): Codec<T>;
     orElseGet(arg0: (param0: string) => Object | null, arg1: () => T): Codec<T>;
-    partialDispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => DataResult<T>, arg2: (param0: T) => DataResult<MapCodec<E>>): Codec<E>;
+    partialDispatch<E extends unknown>(arg0: string, arg1: (param0: E) => DataResult<T>, arg2: (param0: T) => DataResult<MapCodec<E>>): Codec<E>;
     promotePartial(arg0: (param0: string) => void): Codec<T>;
     sizeLimitedListOf(arg0: number): Codec<T[]>;
     stable(): Codec<T>;
     toString(): string;
     validate(arg0: (param0: T) => DataResult<T>): Codec<T>;
-    withAlternative<U extends Object | number | string | boolean>(arg0: Codec<U>, arg1: (param0: U) => T): Codec<T>;
+    withAlternative<U extends unknown>(arg0: Codec<U>, arg1: (param0: U) => T): Codec<T>;
     withAlternative(arg0: Codec<T>): Codec<T>;
     withLifecycle(arg0: Lifecycle): Codec<T>;
-    xmap<S extends Object | number | string | boolean>(arg0: (param0: T) => S, arg1: (param0: S) => T): Codec<S>;
+    xmap<S extends unknown>(arg0: (param0: T) => S, arg1: (param0: S) => T): Codec<S>;
 }

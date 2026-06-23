@@ -7,7 +7,7 @@ import type { TypeTemplate } from '../../../../com/mojang/datafixers/types/templ
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Func<A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends Type<(param0: A) => B> {
+export class Func<A extends unknown, B extends unknown> extends Type<(param0: A) => B> {
     static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
     static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
     constructor(arg0: Type<A>, arg1: Type<B>)

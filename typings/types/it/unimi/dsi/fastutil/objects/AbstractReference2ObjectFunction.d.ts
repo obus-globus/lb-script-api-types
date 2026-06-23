@@ -32,7 +32,7 @@ import type { Short2ObjectFunction } from '../../../../../it/unimi/dsi/fastutil/
 import type { Short2ReferenceFunction } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ReferenceFunction.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class AbstractReference2ObjectFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements Reference2ObjectFunction<K, V>, Serializable {
+export abstract class AbstractReference2ObjectFunction<K extends unknown, V extends unknown> extends Object implements Reference2ObjectFunction<K, V>, Serializable {
     constructor()
     // private defRetValue: V;
     andThenByte(arg0: (param0: Object) => number): (param0: Object) => number;
@@ -41,8 +41,8 @@ export abstract class AbstractReference2ObjectFunction<K extends Object | number
     andThenFloat(arg0: (param0: Object) => number): (param0: Object) => number;
     andThenInt(arg0: (param0: Object) => number): (param0: Object) => number;
     andThenLong(arg0: (param0: Object) => number): (param0: Object) => number;
-    andThenObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => T): (param0: Object) => T;
-    andThenReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => T): (param0: Object) => T;
+    andThenObject<T extends unknown>(arg0: (param0: Object) => T): (param0: Object) => T;
+    andThenReference<T extends unknown>(arg0: (param0: Object) => T): (param0: Object) => T;
     andThenShort(arg0: (param0: Object) => number): (param0: Object) => number;
     composeByte(arg0: (param0: number) => K): (param0: number) => V;
     composeChar(arg0: (param0: string) => K): (param0: string) => V;
@@ -50,8 +50,8 @@ export abstract class AbstractReference2ObjectFunction<K extends Object | number
     composeFloat(arg0: (param0: number) => K): (param0: number) => V;
     composeInt(arg0: (param0: number) => K): (param0: number) => V;
     composeLong(arg0: (param0: number) => K): (param0: number) => V;
-    composeObject<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => V;
-    composeReference<T extends Object | number | string | boolean>(arg0: (param0: Object) => K): (param0: Object) => V;
+    composeObject<T extends unknown>(arg0: (param0: Object) => K): (param0: Object) => V;
+    composeReference<T extends unknown>(arg0: (param0: Object) => K): (param0: Object) => V;
     composeShort(arg0: (param0: number) => K): (param0: number) => V;
     defaultReturnValue(): V;
     defaultReturnValue(arg0: V): void;

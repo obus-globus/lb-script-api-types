@@ -5,7 +5,7 @@ import type { AtomicReferenceArray } from '../../../../java/util/concurrent/atom
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export abstract class MapMakerInternalMap$HashIterator<T extends Object | number | string | boolean> extends Object implements Iterator<T> {
+export abstract class MapMakerInternalMap$HashIterator<T extends unknown> extends Object implements Iterator<T> {
     constructor(null_: MapMakerInternalMap$HashIterator<Object>)
     // private currentSegment: MapMakerInternalMap$Segment<K, V, E, S>;
     // private currentTable: AtomicReferenceArray<E>;
@@ -19,7 +19,7 @@ export abstract class MapMakerInternalMap$HashIterator<T extends Object | number
     forEachRemaining(arg0: (param0: T) => void): void;
     hasNext(): boolean;
     next(): T;
-    nextEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean, E extends MapMakerInternalMap$InternalEntry<K, V, E>, S extends MapMakerInternalMap$Segment<K, V, E, S>>(): MapMakerInternalMap$WriteThroughEntry;
+    nextEntry<K extends unknown, V extends unknown, E extends MapMakerInternalMap$InternalEntry<K, V, E>, S extends MapMakerInternalMap$Segment<K, V, E, S>>(): MapMakerInternalMap$WriteThroughEntry;
     nextInChain(): boolean;
     nextInTable(): boolean;
     remove(): void;

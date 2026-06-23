@@ -92,7 +92,7 @@ export class Buffer extends Object implements ByteChannel, Cloneable, BufferedSi
     request(byteCount: number): boolean;
     require(byteCount: number): void;
     select(options: (Object | null)[]): number;
-    select<T extends Object | number | string | boolean>(options: T[]): T | null;
+    select<T extends unknown>(options: T[]): T | null;
     sha1(): ByteString;
     sha256(): ByteString;
     sha512(): ByteString;

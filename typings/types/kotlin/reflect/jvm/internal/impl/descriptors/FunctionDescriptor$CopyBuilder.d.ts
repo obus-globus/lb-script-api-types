@@ -15,7 +15,7 @@ import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/i
 import type { TypeSubstitution } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution.d.ts'
 export interface FunctionDescriptor$CopyBuilder<D extends FunctionDescriptor> extends Object{
     build(): D;
-    putUserData<V extends Object | number | string | boolean>(arg0: CallableDescriptor$UserDataKey<V>, arg1: V): FunctionDescriptor$CopyBuilder<D>;
+    putUserData<V extends unknown>(arg0: CallableDescriptor$UserDataKey<V>, arg1: V): FunctionDescriptor$CopyBuilder<D>;
     setAdditionalAnnotations(arg0: AnnotationDescriptor[]): FunctionDescriptor$CopyBuilder<D>;
     setCopyOverrides(arg0: boolean): FunctionDescriptor$CopyBuilder<D>;
     setDispatchReceiverParameter(arg0: ReceiverParameterDescriptor): FunctionDescriptor$CopyBuilder<D>;

@@ -4,7 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { LoggerAdapter } from '../../../../../org/apache/logging/log4j/spi/LoggerAdapter.d.ts'
 import type { LoggerContext } from '../../../../../org/apache/logging/log4j/spi/LoggerContext.d.ts'
 import type { LoggerContextShutdownAware } from '../../../../../org/apache/logging/log4j/spi/LoggerContextShutdownAware.d.ts'
-export abstract class AbstractLoggerAdapter<L extends Object | number | string | boolean> extends Object implements LoggerAdapter<L>, LoggerContextShutdownAware {
+export abstract class AbstractLoggerAdapter<L extends unknown> extends Object implements LoggerAdapter<L>, LoggerContextShutdownAware {
     constructor()
     // private lock: ReadWriteLock;
     // private registry: Map<LoggerContext, { [key: string]: L }>;

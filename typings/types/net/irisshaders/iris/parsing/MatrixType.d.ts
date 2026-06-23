@@ -10,7 +10,7 @@ import type { UniformType } from '../../../../net/irisshaders/iris/gl/uniform/Un
 import type { Matrix2f } from '../../../../org/joml/Matrix2f.d.ts'
 import type { Matrix3f } from '../../../../org/joml/Matrix3f.d.ts'
 import type { Matrix4f } from '../../../../org/joml/Matrix4f.d.ts'
-export class MatrixType<T extends Object | number | string | boolean> extends Type$ObjectType {
+export class MatrixType<T extends unknown> extends Type$ObjectType {
     static AllPrimitives: (Object | null)[];
     static Boolean: Type$Boolean;
     static BooleanParameter: TypedFunction$Parameter;

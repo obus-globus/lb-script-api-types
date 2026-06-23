@@ -3,7 +3,7 @@ import type { DeepRecursiveScope } from '../kotlin/DeepRecursiveScope.d.ts'
 import type { Result } from '../kotlin/Result.d.ts'
 import type { Continuation } from '../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../kotlin/coroutines/CoroutineContext.d.ts'
-export class DeepRecursiveScopeImpl<T extends Object | number | string | boolean, R extends Object | number | string | boolean> extends DeepRecursiveScope<T, R> implements Continuation<R> {
+export class DeepRecursiveScopeImpl<T extends unknown, R extends unknown> extends DeepRecursiveScope<T, R> implements Continuation<R> {
     constructor(block: (param0: DeepRecursiveScope<T, R>, param1: T) => R, value: T)
     // private cont: Continuation<Object> | null;
     readonly context: CoroutineContext;

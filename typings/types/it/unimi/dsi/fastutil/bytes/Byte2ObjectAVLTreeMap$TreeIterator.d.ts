@@ -10,9 +10,9 @@ export class Byte2ObjectAVLTreeMap$TreeIterator extends Object {
     back(arg0: number): number;
     hasNext(): boolean;
     hasPrevious(): boolean;
-    nextEntry<V extends Object | number | string | boolean>(): Byte2ObjectAVLTreeMap$Entry<V>;
+    nextEntry<V extends unknown>(): Byte2ObjectAVLTreeMap$Entry<V>;
     nextIndex(): number;
-    previousEntry<V extends Object | number | string | boolean>(): Byte2ObjectAVLTreeMap$Entry<V>;
+    previousEntry<V extends unknown>(): Byte2ObjectAVLTreeMap$Entry<V>;
     previousIndex(): number;
     remove(): void;
     skip(arg0: number): number;

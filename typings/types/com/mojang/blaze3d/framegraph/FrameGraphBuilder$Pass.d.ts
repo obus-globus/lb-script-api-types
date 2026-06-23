@@ -17,15 +17,15 @@ export class FrameGraphBuilder$Pass extends Object implements FramePass {
     // private resourcesToRelease: BitSet;
     // private task: () => void;
     // private writesFrom: FrameGraphBuilder$Handle<Object>[];
-    // private _reads<T extends Object | number | string | boolean>(handle: FrameGraphBuilder$Handle<T>): void;
-    // private _readsAndWrites<T extends Object | number | string | boolean>(handle: FrameGraphBuilder$Handle<T>): FrameGraphBuilder$Handle<T>;
-    createsInternal<T extends Object | number | string | boolean>(name: string, descriptor: ResourceDescriptor<T>): ResourceHandle<T>;
+    // private _reads<T extends unknown>(handle: FrameGraphBuilder$Handle<T>): void;
+    // private _readsAndWrites<T extends unknown>(handle: FrameGraphBuilder$Handle<T>): FrameGraphBuilder$Handle<T>;
+    createsInternal<T extends unknown>(name: string, descriptor: ResourceDescriptor<T>): ResourceHandle<T>;
     disableCulling(): void;
     executes(task: () => void): void;
     // private markPassRequired(pass: FrameGraphBuilder$Pass): void;
-    // private markResourceRequired<T extends Object | number | string | boolean>(handle: FrameGraphBuilder$Handle<T>): void;
-    reads<T extends Object | number | string | boolean>(handle: ResourceHandle<T>): void;
-    readsAndWrites<T extends Object | number | string | boolean>(handle: ResourceHandle<T>): ResourceHandle<T>;
+    // private markResourceRequired<T extends unknown>(handle: FrameGraphBuilder$Handle<T>): void;
+    reads<T extends unknown>(handle: ResourceHandle<T>): void;
+    readsAndWrites<T extends unknown>(handle: ResourceHandle<T>): ResourceHandle<T>;
     requires(pass: FramePass): void;
     toString(): string;
 }

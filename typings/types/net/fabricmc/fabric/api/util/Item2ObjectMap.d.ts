@@ -2,7 +2,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TagKey } from '../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemLike } from '../../../../../net/minecraft/world/level/ItemLike.d.ts'
-export interface Item2ObjectMap<V extends Object | number | string | boolean> extends Object{
+export interface Item2ObjectMap<V extends unknown> extends Object{
     add(arg0: TagKey<Item>, arg1: V): void;
     add(arg0: ItemLike, arg1: V): void;
     clear(arg0: TagKey<Item>): void;

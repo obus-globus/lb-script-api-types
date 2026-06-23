@@ -1,7 +1,7 @@
 import type { AbstractObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/AbstractObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class ObjectBigListIterators$AbstractIndexBasedBigIterator<K extends Object | number | string | boolean> extends AbstractObjectIterator<K> {
+export abstract class ObjectBigListIterators$AbstractIndexBasedBigIterator<K extends unknown> extends AbstractObjectIterator<K> {
     constructor(arg0: number, arg1: number)
     // private lastReturned: number;
     // private minPos: number;

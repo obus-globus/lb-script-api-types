@@ -12,5 +12,5 @@ export class PoiTypeRenameFix extends AbstractPoiSectionFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, name: string, renamer: (param0: string) => string)
     // private renamer: (param0: string) => string;
-    processRecords<T extends Object | number | string | boolean>(stream: Stream<Dynamic<T>>): Stream<Dynamic<T>>;
+    processRecords<T extends unknown>(stream: Stream<Dynamic<T>>): Stream<Dynamic<T>>;
 }

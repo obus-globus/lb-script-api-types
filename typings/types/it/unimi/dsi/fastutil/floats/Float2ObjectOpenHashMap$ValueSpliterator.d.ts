@@ -13,8 +13,8 @@ export class Float2ObjectOpenHashMap$ValueSpliterator extends Float2ObjectOpenHa
     static SUBSIZED: number;
     constructor(null_: Float2ObjectOpenHashMap$ValueSpliterator)
     constructor(null_: Float2ObjectOpenHashMap$ValueSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: V) => void, arg1: number): void;
+    acceptOnIndex<V extends unknown>(arg0: (param0: V) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<V extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Float2ObjectOpenHashMap$ValueSpliterator;
+    makeForSplit<V extends unknown>(arg0: number, arg1: number, arg2: boolean): Float2ObjectOpenHashMap$ValueSpliterator;
     skip(arg0: number): number;
 }

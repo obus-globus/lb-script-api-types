@@ -14,7 +14,7 @@ export class GLSLParser$AttributeContext extends ParserRuleContext {
     LBRACKET(arg0: number): TerminalNode;
     RBRACKET(): TerminalNode[];
     RBRACKET(arg0: number): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     getRuleIndex(): number;

@@ -14,8 +14,8 @@ export class Reference2CharOpenCustomHashMap$EntrySpliterator extends Reference2
     static SUBSIZED: number;
     constructor(null_: Reference2CharOpenCustomHashMap$EntrySpliterator)
     constructor(null_: Reference2CharOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Reference2CharMap$Entry<K>) => void, arg1: number): void;
+    acceptOnIndex<K extends unknown>(arg0: (param0: Reference2CharMap$Entry<K>) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<K extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Reference2CharOpenCustomHashMap$EntrySpliterator;
+    makeForSplit<K extends unknown>(arg0: number, arg1: number, arg2: boolean): Reference2CharOpenCustomHashMap$EntrySpliterator;
     skip(arg0: number): number;
 }

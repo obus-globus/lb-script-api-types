@@ -50,7 +50,7 @@ export class InspectorExecutionContext extends Object {
     canRun(): boolean;
     createAndRegister(value: DebugValue, generatePreview: boolean): RemoteObject;
     doRunIfWaitingForDebugger(): void;
-    executeInSuspendThread<T extends Object | number | string | boolean>(executable: SuspendThreadExecutable<T>): T;
+    executeInSuspendThread<T extends unknown>(executable: SuspendThreadExecutable<T>): T;
     // private fireContextCreated(): void;
     getDebugValue(newValue: CallArgument, session: DebuggerSession): DebugValue;
     getEnv(): TruffleInstrument$Env;

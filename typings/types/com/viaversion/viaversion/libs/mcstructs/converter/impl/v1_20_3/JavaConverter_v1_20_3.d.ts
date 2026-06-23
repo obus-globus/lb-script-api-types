@@ -15,10 +15,10 @@ export class JavaConverter_v1_20_3 extends Object implements DataConverter<Objec
     asNumber(arg0: Object): Result<Number>;
     asString(arg0: Object): Result<string>;
     asStringTypeMap(arg0: Object): Result<{ [key: string]: Object }>;
-    convertFrom<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: N): Object;
-    convertList<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: Object): N;
-    convertMap<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: Object): N;
-    convertTo<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: Object): N;
+    convertFrom<N extends unknown>(arg0: DataConverter<N>, arg1: N): Object;
+    convertList<N extends unknown>(arg0: DataConverter<N>, arg1: Object): N;
+    convertMap<N extends unknown>(arg0: DataConverter<N>, arg1: Object): N;
+    convertTo<N extends unknown>(arg0: DataConverter<N>, arg1: Object): N;
     createBoolean(arg0: boolean): Object;
     createByte(arg0: number): Object;
     createByteArray(arg0: number[]): Object;
@@ -37,7 +37,7 @@ export class JavaConverter_v1_20_3 extends Object implements DataConverter<Objec
     empty(): Object;
     emptyList(): Object;
     emptyMap(): Object;
-    fork<O extends Object | number | string | boolean>(arg0: DataConverter<O>): DataConverter<O>;
+    fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<Object>;
     mergeList(arg0: Object, arg1: Object[]): Result<Object>;
     mergeMap(arg0: Object, arg1: Object, arg2: Object): Result<Object>;

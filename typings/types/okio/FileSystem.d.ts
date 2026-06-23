@@ -42,9 +42,9 @@ export abstract class FileSystem extends Object implements Closeable {
     openReadOnly(file: Path): FileHandle;
     openReadWrite(file: Path): FileHandle;
     openReadWrite(file: Path, mustCreate: boolean, mustExist: boolean): FileHandle;
-    read<T extends Object | number | string | boolean>(file: Path, readerAction: (param0: BufferedSource) => T): T;
+    read<T extends unknown>(file: Path, readerAction: (param0: BufferedSource) => T): T;
     sink(file: Path): Sink;
     sink(file: Path, mustCreate: boolean): Sink;
     source(file: Path): Source;
-    write<T extends Object | number | string | boolean>(file: Path, mustCreate: boolean, writerAction: (param0: BufferedSink) => T): T;
+    write<T extends unknown>(file: Path, mustCreate: boolean, writerAction: (param0: BufferedSink) => T): T;
 }

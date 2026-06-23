@@ -15,7 +15,7 @@ export class ValueProfile$ExactClass extends ValueProfile {
     getCachedValue(): Class<Object>;
     isGeneric(): boolean;
     isUninitialized(): boolean;
-    profile<T extends Object | number | string | boolean>(value: T): T;
+    profile<T extends unknown>(value: T): T;
     reset(): void;
     toString(): string;
     toString(profileClass: Class<Object>, uninitialized: boolean, generic: boolean, specialization: string): string;

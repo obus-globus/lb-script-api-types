@@ -3,7 +3,7 @@ import type { Optional } from '../../../../com/google/common/base/Optional.d.ts'
 import type { Supplier } from '../../../../com/google/common/base/Supplier.d.ts'
 import type { Optional as Optional_2 } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class Absent<T extends Object | number | string | boolean> extends Optional<T> {
+export class Absent<T extends unknown> extends Optional<T> {
     static absent(): Optional<Object>;
     static fromJavaUtil(paramjavaUtilOptional: Optional_2<Object>): Optional<Object>;
     static fromNullable(paramnullableReference: Object | null): Optional<Object>;
@@ -22,5 +22,5 @@ export class Absent<T extends Object | number | string | boolean> extends Option
     orNull(): T;
     // private readResolve(): Object;
     toString(): string;
-    transform<V extends Object | number | string | boolean>(function_: (param0: Object) => boolean): Optional<V>;
+    transform<V extends unknown>(function_: (param0: Object) => boolean): Optional<V>;
 }

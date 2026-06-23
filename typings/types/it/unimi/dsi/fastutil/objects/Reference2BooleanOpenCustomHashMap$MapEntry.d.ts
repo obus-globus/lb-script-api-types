@@ -18,17 +18,17 @@ export class Reference2BooleanOpenCustomHashMap$MapEntry extends Object implemen
     equals(arg0: Object | null): boolean;
     getBooleanValue(): boolean;
     hashCode(): number;
-    left<K extends Object | number | string | boolean>(): K;
-    left<K extends Object | number | string | boolean>(arg0: K): Pair<K, boolean>;
+    left<K extends unknown>(): K;
+    left<K extends unknown>(arg0: K): Pair<K, boolean>;
     right(): boolean;
-    right<K extends Object | number | string | boolean>(arg0: boolean): ReferenceBooleanPair<K>;
+    right<K extends unknown>(arg0: boolean): ReferenceBooleanPair<K>;
     rightBoolean(): boolean;
     second(): boolean;
-    second<K extends Object | number | string | boolean>(arg0: boolean): ReferenceBooleanPair<K>;
+    second<K extends unknown>(arg0: boolean): ReferenceBooleanPair<K>;
     secondBoolean(): boolean;
     setValue(arg0: boolean): boolean;
     toString(): string;
     value(): boolean;
-    value<K extends Object | number | string | boolean>(arg0: boolean): ReferenceBooleanPair<K>;
+    value<K extends unknown>(arg0: boolean): ReferenceBooleanPair<K>;
     valueBoolean(): boolean;
 }

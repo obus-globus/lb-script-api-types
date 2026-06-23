@@ -2,7 +2,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
-export abstract class TrieNode<K extends Object | number | string | boolean, V extends Object | number | string | boolean, E extends Map$Entry<K, V>> extends Object {
+export abstract class TrieNode<K extends unknown, V extends unknown, E extends Map$Entry<K, V>> extends Object {
     constructor()
     combine(key1: K, hash1: number, entry1: E, key2: K, hash2: number, entry2: E, shift: number): TrieNode<K, V, E>;
     count(): number;

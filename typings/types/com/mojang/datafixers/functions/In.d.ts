@@ -4,7 +4,7 @@ import type { RecursivePoint$RecursivePointType } from '../../../../com/mojang/d
 import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class In<A extends Object | number | string | boolean> extends PointFree<(param0: A) => A> {
+export class In<A extends unknown> extends PointFree<(param0: A) => A> {
     static indent(paramarg0: number): string;
     constructor(arg0: RecursivePoint$RecursivePointType<A>)
     // private type: RecursivePoint$RecursivePointType<A>;

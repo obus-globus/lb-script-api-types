@@ -17,7 +17,7 @@ import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKe
 import type { TagBuilder } from '../../../../net/minecraft/tags/TagBuilder.d.ts'
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
-export abstract class TagsProvider<T extends Object | number | string | boolean> extends Object implements DataProvider {
+export abstract class TagsProvider<T extends unknown> extends Object implements DataProvider {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;

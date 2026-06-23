@@ -13,7 +13,7 @@ import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/
  *
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/AbstractBlockLocationTracker.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/AbstractBlockLocationTracker.kt:37}
  */
-export class AbstractBlockLocationTracker<T extends Object | number | string | boolean> extends Object implements ChunkScanner$BlockChangeSubscriber {
+export class AbstractBlockLocationTracker<T extends unknown> extends Object implements ChunkScanner$BlockChangeSubscriber {
     protected constructor()
     /**
      * Returns a {@link Sequence} providing all tracked {@link BlockPos}.

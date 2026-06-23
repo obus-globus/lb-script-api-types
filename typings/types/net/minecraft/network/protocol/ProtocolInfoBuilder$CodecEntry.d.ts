@@ -8,7 +8,7 @@ import type { CodecModifier } from '../../../../net/minecraft/network/protocol/C
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ProtocolCodecBuilder } from '../../../../net/minecraft/network/protocol/ProtocolCodecBuilder.d.ts'
-export class ProtocolInfoBuilder$CodecEntry<T extends PacketListener, P extends Packet<T>, B extends ByteBuf, C extends Object | number | string | boolean> extends Record {
+export class ProtocolInfoBuilder$CodecEntry<T extends PacketListener, P extends Packet<T>, B extends ByteBuf, C extends unknown> extends Record {
     private constructor(type: PacketType<P>, serializer: StreamCodec<B, P>, modifier: (param0: StreamCodec<Object, P>, param1: C) => StreamCodec<Object, P>)
     // private modifier: (param0: StreamCodec<Object, P>, param1: C) => StreamCodec<Object, P>;
     // private serializer: StreamCodec<B, P>;

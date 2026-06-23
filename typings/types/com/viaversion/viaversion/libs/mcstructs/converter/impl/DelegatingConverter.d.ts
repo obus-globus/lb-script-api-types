@@ -3,7 +3,7 @@ import type { Codec } from '../../../../../../../com/viaversion/viaversion/libs/
 import type { Result } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/Result.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
-export class DelegatingConverter<T extends Object | number | string | boolean> extends Object implements DataConverter<T> {
+export class DelegatingConverter<T extends unknown> extends Object implements DataConverter<T> {
     constructor(arg0: DataConverter<T>)
     readonly delegate: DataConverter<T>;
     asBoolean(arg0: T): Result<boolean>;
@@ -15,10 +15,10 @@ export class DelegatingConverter<T extends Object | number | string | boolean> e
     asNumber(arg0: T): Result<Number>;
     asString(arg0: T): Result<string>;
     asStringTypeMap(arg0: T): Result<{ [key: string]: T }>;
-    convertFrom<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: N): T;
-    convertList<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: T): N;
-    convertMap<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: T): N;
-    convertTo<N extends Object | number | string | boolean>(arg0: DataConverter<N>, arg1: T): N;
+    convertFrom<N extends unknown>(arg0: DataConverter<N>, arg1: N): T;
+    convertList<N extends unknown>(arg0: DataConverter<N>, arg1: T): N;
+    convertMap<N extends unknown>(arg0: DataConverter<N>, arg1: T): N;
+    convertTo<N extends unknown>(arg0: DataConverter<N>, arg1: T): N;
     createBoolean(arg0: boolean): T;
     createByte(arg0: number): T;
     createByteArray(arg0: number[]): T;
@@ -37,7 +37,7 @@ export class DelegatingConverter<T extends Object | number | string | boolean> e
     empty(): T;
     emptyList(): T;
     emptyMap(): T;
-    fork<O extends Object | number | string | boolean>(arg0: DataConverter<O>): DataConverter<O>;
+    fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<T>;
     getDelegate(): DataConverter<T>;
     mergeList(arg0: T, arg1: T[]): Result<T>;

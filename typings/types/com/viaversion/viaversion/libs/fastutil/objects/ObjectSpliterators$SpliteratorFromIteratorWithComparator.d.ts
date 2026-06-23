@@ -3,7 +3,7 @@ import type { ObjectSpliterator } from '../../../../../../com/viaversion/viavers
 import type { ObjectSpliterators$SpliteratorFromIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/ObjectSpliterators$SpliteratorFromIterator.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ObjectSpliterators$SpliteratorFromIteratorWithComparator<K extends Object | number | string | boolean> extends ObjectSpliterators$SpliteratorFromIterator<K> {
+export class ObjectSpliterators$SpliteratorFromIteratorWithComparator<K extends unknown> extends ObjectSpliterators$SpliteratorFromIterator<K> {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;

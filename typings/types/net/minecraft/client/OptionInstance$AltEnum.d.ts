@@ -13,7 +13,7 @@ import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { CycleButton$ValueListSupplier } from '../../../net/minecraft/client/gui/components/CycleButton$ValueListSupplier.d.ts'
 import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
-export class OptionInstance$AltEnum<T extends Object | number | string | boolean> extends Record implements OptionInstance$CycleableValueSet<T> {
+export class OptionInstance$AltEnum<T extends unknown> extends Record implements OptionInstance$CycleableValueSet<T> {
     constructor(values: T[], altValues: T[], altCondition: () => boolean, valueSetter: OptionInstance$CycleableValueSet$ValueSetter<T>, codec: Codec<T>)
     // private altCondition: () => boolean;
     // private altValues: T[];

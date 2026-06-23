@@ -5,9 +5,9 @@ export class ProxyClass extends Object {
     constructor(arg0: Class<Object>, arg1: InvocationHandler)
     readonly invocationHandler: InvocationHandler;
     readonly proxyClass: Class<Object>;
-    allocateInstance<T extends Object | number | string | boolean>(): T;
+    allocateInstance<T extends unknown>(): T;
     getInvocationHandler(): InvocationHandler;
     getProxyClass(): Class<Object>;
-    instantiate<T extends Object | number | string | boolean>(arg0: Class<Object>[], arg1: Object[]): T;
+    instantiate<T extends unknown>(arg0: Class<Object>[], arg1: Object[]): T;
     setInvocationHandler(arg0: InvocationHandler): void;
 }

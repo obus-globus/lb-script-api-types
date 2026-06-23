@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class Long2BooleanOpenHashMap$MapIterator<ConsumerType extends Object | number | string | boolean> extends Object {
+export abstract class Long2BooleanOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     private constructor(null_: Long2BooleanOpenHashMap$MapIterator<ConsumerType>)
     // private c: number;
     // private last: number;

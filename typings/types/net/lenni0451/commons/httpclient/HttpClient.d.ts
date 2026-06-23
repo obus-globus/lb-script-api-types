@@ -35,8 +35,8 @@ export class HttpClient extends HeaderStore<HttpClient> implements HttpRequestBu
     delete(arg0: URL): DeleteRequest;
     delete(arg0: string): DeleteRequest;
     execute(arg0: HttpRequest): HttpResponse;
-    execute<R extends Object | number | string | boolean>(arg0: HttpRequest, arg1: (param0: HttpResponse) => R): R;
-    executeAndHandle<R extends Object | number | string | boolean, T extends HttpRequest & HttpResponseHandler<R>>(arg0: T): R;
+    execute<R extends unknown>(arg0: HttpRequest, arg1: (param0: HttpResponse) => R): R;
+    executeAndHandle<R extends unknown, T extends HttpRequest & HttpResponseHandler<R>>(arg0: T): R;
     get(arg0: URL): GetRequest;
     get(arg0: string): GetRequest;
     getConnectTimeout(): number;

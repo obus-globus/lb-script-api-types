@@ -3,7 +3,7 @@ import type { Synchronized$SynchronizedObject } from '../../../../com/google/com
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class Synchronized$SynchronizedMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Synchronized$SynchronizedObject implements Multimap<K, V> {
+export class Synchronized$SynchronizedMultimap<K extends unknown, V extends unknown> extends Synchronized$SynchronizedObject implements Multimap<K, V> {
     constructor(delegate: Multimap<K, V>, mutex: Object)
     // private asMap: Map<K, V[]>;
     // private entries: Map$Entry<K, V>[];

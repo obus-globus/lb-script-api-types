@@ -10,7 +10,7 @@ import type { OptionInstance$TooltipSupplier } from '../../../net/minecraft/clie
 import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
-export interface OptionInstance$SliderableOrCyclableValueSet<T extends Object | number | string | boolean> extends Object, OptionInstance$CycleableValueSet<T>, OptionInstance$SliderableValueSet<T> {
+export interface OptionInstance$SliderableOrCyclableValueSet<T extends unknown> extends Object, OptionInstance$CycleableValueSet<T>, OptionInstance$SliderableValueSet<T> {
     applyValueImmediately(): boolean;
     createButton(tooltip: (param0: T) => Tooltip, options: Options, x: number, y: number, width: number, onValueChanged: (param0: T) => void): (param0: OptionInstance<T>) => AbstractWidget;
     createCycleButton(): boolean;

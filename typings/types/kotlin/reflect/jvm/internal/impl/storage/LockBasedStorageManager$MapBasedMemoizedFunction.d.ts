@@ -4,7 +4,7 @@ import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { LockBasedStorageManager } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/LockBasedStorageManager.d.ts'
 import type { LockBasedStorageManager$RecursionDetectedResult } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/LockBasedStorageManager$RecursionDetectedResult.d.ts'
 import type { MemoizedFunctionToNullable } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/MemoizedFunctionToNullable.d.ts'
-export class LockBasedStorageManager$MapBasedMemoizedFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements MemoizedFunctionToNullable<K, V> {
+export class LockBasedStorageManager$MapBasedMemoizedFunction<K extends unknown, V extends unknown> extends Object implements MemoizedFunctionToNullable<K, V> {
     constructor(arg0: LockBasedStorageManager, arg1: Map<K, Object>, arg2: (param0: K) => V)
     // private cache: Map<K, Object>;
     // private compute: (param0: K) => V;

@@ -17,15 +17,15 @@ import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { OptionDescriptor } from '../../../../org/graalvm/options/OptionDescriptor.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
-export abstract class TruffleLanguage<C extends Object | number | string | boolean> extends Object {
+export abstract class TruffleLanguage<C extends unknown> extends Object {
     constructor()
     // private languageInfo: LanguageInfo;
     // private locals: TruffleLanguage$ContextLocalProvider<C>;
     // private polyglotLanguageInstance: Object;
     areOptionsCompatible(firstOptions: OptionValues, newOptions: OptionValues): boolean;
     createContext(env: TruffleLanguage$Env): C;
-    createContextLocal<T extends Object | number | string | boolean>(factory: (param0: C) => T): ContextLocal<T>;
-    createContextThreadLocal<T extends Object | number | string | boolean>(factory: (param0: C, param1: Thread) => T): ContextThreadLocal<T>;
+    createContextLocal<T extends unknown>(factory: (param0: C) => T): ContextLocal<T>;
+    createContextThreadLocal<T extends unknown>(factory: (param0: C, param1: Thread) => T): ContextThreadLocal<T>;
     disposeContext(context: C): void;
     disposeThread(context: C, thread: Thread): void;
     exitContext(context: C, exitMode: TruffleLanguage$ExitMode, exitCode: number): void;

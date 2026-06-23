@@ -4,7 +4,7 @@ import type { SerializerMap } from '../../../../../../../../com/viaversion/viave
 import type { Function } from '../../../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
-export class SerializerMap$Builder<R extends Object | number | string | boolean, A extends Enum<A>, IO extends Object | number | string | boolean> extends Object {
+export class SerializerMap$Builder<R extends unknown, A extends Enum<A>, IO extends unknown> extends Object {
     constructor(arg0: SNbt<any>)
     // private sNbt: SNbt<any>;
     // private serializers: EventSerializer<R, R, A, IO>[];

@@ -7,8 +7,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2ReferenceOpenCustomHashMap$EntryIterator extends Reference2ReferenceOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Reference2ReferenceMap$Entry<K, V>> {
     private constructor(null_: Reference2ReferenceOpenCustomHashMap$EntryIterator)
     // private entry: Reference2ReferenceOpenCustomHashMap$MapEntry;
-    acceptOnIndex<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(arg0: (param0: Reference2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
-    next<K extends Object | number | string | boolean, V extends Object | number | string | boolean>(): Reference2ReferenceOpenCustomHashMap$MapEntry;
+    acceptOnIndex<K extends unknown, V extends unknown>(arg0: (param0: Reference2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
+    next<K extends unknown, V extends unknown>(): Reference2ReferenceOpenCustomHashMap$MapEntry;
     remove(): void;
     skip(arg0: number): number;
 }

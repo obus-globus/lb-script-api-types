@@ -13,7 +13,7 @@ export abstract class AbstractBlockPropertyFix extends DataFix {
     constructor(outputSchema: Schema, name: string)
     // private name: string;
     // private fixBlockState(tag: Dynamic<Object>): Dynamic<Object>;
-    fixProperties<T extends Object | number | string | boolean>(blockId: string, properties: Dynamic<T>): Dynamic<T>;
+    fixProperties<T extends unknown>(blockId: string, properties: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
     shouldFix(blockId: string): boolean;
 }

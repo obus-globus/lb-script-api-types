@@ -28,9 +28,9 @@ export class RecordedObject extends Object {
     getShort(arg0: string): number;
     getString(arg0: string): string;
     getThread(arg0: string): RecordedThread;
-    getTyped<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>, arg2: T): T;
-    // private getTypedValue<T extends Object | number | string | boolean>(arg0: string, arg1: string): T;
-    getValue<T extends Object | number | string | boolean>(arg0: string): T;
+    getTyped<T extends unknown>(arg0: string, arg1: Class<T>, arg2: T): T;
+    // private getTypedValue<T extends unknown>(arg0: string, arg1: string): T;
+    getValue<T extends unknown>(arg0: string): T;
     // private getValue(arg0: string, arg1: boolean): Object;
     // private getValueDescriptor(arg0: ValueDescriptor[], arg1: string, arg2: string): ValueDescriptor;
     hasField(arg0: string): boolean;

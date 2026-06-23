@@ -11,11 +11,11 @@ export abstract class Statement extends InnerASTNode {
     static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor()
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): Statement;
     cloneInto(arg0: Root): Statement;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getStatementType(): Statement$StatementType;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

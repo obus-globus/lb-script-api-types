@@ -13,12 +13,12 @@ export class Const extends Record implements TypeTemplate {
     constructor(type: Type<Object>)
     // private type: Type<Object>;
     apply(arg0: TypeFamily): TypeFamily;
-    applyO<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
+    applyO<A extends unknown, B extends unknown>(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;
     equals(arg0: Object | null): boolean;
-    findFieldOrType<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: number, arg1: string, arg2: Type<FT>, arg3: Type<FR>): Either<TypeTemplate, Type$FieldNotFoundException>;
+    findFieldOrType<FT extends unknown, FR extends unknown>(arg0: number, arg1: string, arg2: Type<FT>, arg3: Type<FR>): Either<TypeTemplate, Type$FieldNotFoundException>;
     hashCode(): number;
     hmap(arg0: TypeFamily, arg1: (param0: number) => RewriteResult<Object, Object>): (param0: number) => RewriteResult<Object, Object>;
-    // private makeIgnoreOptic<T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: Type<T>, arg1: Type<A>, arg2: Type<B>): TypedOptic<T, T, A, B>;
+    // private makeIgnoreOptic<T extends unknown, A extends unknown, B extends unknown>(arg0: Type<T>, arg1: Type<A>, arg2: Type<B>): TypedOptic<T, T, A, B>;
     size(): number;
     toSimpleType(): Type<Object>;
     toString(): string;

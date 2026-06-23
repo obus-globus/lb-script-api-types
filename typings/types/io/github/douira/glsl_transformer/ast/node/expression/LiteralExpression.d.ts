@@ -36,7 +36,7 @@ export class LiteralExpression extends TerminalExpression {
     cloneInto(arg0: Root): LiteralExpression;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
-    expressionAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    expressionAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     getBoolean(): boolean;
     getExpressionType(): Expression$ExpressionType;
     getFloating(): number;

@@ -23,5 +23,5 @@ export class StorageQualifier extends TypeQualifierPart {
     exitNode(arg0: ASTListener): void;
     getQualifierType(): TypeQualifierPart$QualifierType;
     getTypeNames(): Identifier[];
-    typeQualifierPartAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    typeQualifierPartAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

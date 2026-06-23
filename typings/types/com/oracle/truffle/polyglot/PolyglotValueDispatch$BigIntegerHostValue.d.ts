@@ -9,7 +9,7 @@ export class PolyglotValueDispatch$BigIntegerHostValue extends PolyglotValueDisp
     asByte(languageContext: Object, receiver: Object): number;
     asDouble(languageContext: Object, receiver: Object): number;
     asFloat(languageContext: Object, receiver: Object): number;
-    asImpl<T extends Object | number | string | boolean>(languageContext: Object, receiver: Object, targetType: Class<T>): T;
+    asImpl<T extends unknown>(languageContext: Object, receiver: Object, targetType: Class<T>): T;
     asInt(languageContext: Object, receiver: Object): number;
     asLong(languageContext: Object, receiver: Object): number;
     asShort(languageContext: Object, receiver: Object): number;

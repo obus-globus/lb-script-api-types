@@ -5,7 +5,7 @@ import type { DeserializationStrategy } from '../../../kotlinx/serialization/Des
 import type { KSerializer } from '../../../kotlinx/serialization/KSerializer.d.ts'
 import type { SerializationStrategy } from '../../../kotlinx/serialization/SerializationStrategy.d.ts'
 import type { SerializersModuleBuilder } from '../../../kotlinx/serialization/modules/SerializersModuleBuilder.d.ts'
-export class PolymorphicModuleBuilder<Base extends Object | number | string | boolean> extends Object {
+export class PolymorphicModuleBuilder<Base extends unknown> extends Object {
     constructor(baseClass: KClass<Base>, baseSerializer: KSerializer<Base> | null)
     // private baseClass: KClass<Base>;
     // private baseSerializer: KSerializer<Base> | null;

@@ -6,7 +6,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MetricCategory } from '../../../../../net/minecraft/util/profiling/metrics/MetricCategory.d.ts'
 import type { MetricSampler } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler.d.ts'
 import type { MetricSampler$ThresholdTest } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler$ThresholdTest.d.ts'
-export class MetricSampler$MetricSamplerBuilder<T extends Object | number | string | boolean> extends Object {
+export class MetricSampler$MetricSamplerBuilder<T extends unknown> extends Object {
     constructor(name: string, category: MetricCategory, sampler: (param0: T) => number, context: T)
     // private beforeTick: () => void;
     // private category: MetricCategory;

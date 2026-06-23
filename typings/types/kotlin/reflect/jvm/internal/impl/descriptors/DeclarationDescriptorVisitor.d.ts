@@ -12,7 +12,7 @@ import type { ReceiverParameterDescriptor } from '../../../../../../kotlin/refle
 import type { TypeAliasDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeAliasDescriptor.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { ValueParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ValueParameterDescriptor.d.ts'
-export interface DeclarationDescriptorVisitor<R extends Object | number | string | boolean, D extends Object | number | string | boolean> extends Object{
+export interface DeclarationDescriptorVisitor<R extends unknown, D extends unknown> extends Object{
     visitClassDescriptor(arg0: ClassDescriptor, arg1: D): R;
     visitConstructorDescriptor(arg0: ConstructorDescriptor, arg1: D): R;
     visitFunctionDescriptor(arg0: FunctionDescriptor, arg1: D): R;

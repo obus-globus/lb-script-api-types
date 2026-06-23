@@ -4,11 +4,11 @@ import type { Encoder } from '../../../com/mojang/serialization/Encoder.d.ts'
 import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts'
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface RecordBuilder<T extends Object | number | string | boolean> extends Object {
+export interface RecordBuilder<T extends unknown> extends Object {
     add(arg0: T, arg1: T): RecordBuilder<T>;
     add(arg0: T, arg1: DataResult<T>): RecordBuilder<T>;
     add(arg0: DataResult<T>, arg1: DataResult<T>): RecordBuilder<T>;
-    add<E extends Object | number | string | boolean>(arg0: string, arg1: E, arg2: Encoder<E>): RecordBuilder<T>;
+    add<E extends unknown>(arg0: string, arg1: E, arg2: Encoder<E>): RecordBuilder<T>;
     add(arg0: string, arg1: T): RecordBuilder<T>;
     add(arg0: string, arg1: DataResult<T>): RecordBuilder<T>;
     build(arg0: T): DataResult<T>;

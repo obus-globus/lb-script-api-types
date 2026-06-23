@@ -46,7 +46,7 @@ export abstract class StringPrototypeBuiltins$JSStringSplitNode extends StringPr
     // private indexOf(s1: TruffleString, s2: TruffleString, fromIndex: number): number;
     isES6OrNewer(): boolean;
     isFastPath(thisObj: Object, separator: Object, limit: Object): boolean;
-    // private split<T extends Object | number | string | boolean>(thisStr: TruffleString, limit: number, splitter: StringPrototypeBuiltins$JSStringSplitNode$Splitter<T>, separator: T, groupCount: number, zeroLimit: InlinedConditionProfile): JSDynamicObject;
+    // private split<T extends unknown>(thisStr: TruffleString, limit: number, splitter: StringPrototypeBuiltins$JSStringSplitNode$Splitter<T>, separator: T, groupCount: number, zeroLimit: InlinedConditionProfile): JSDynamicObject;
     splitES5(thisObj: Object, separator: Object, limitObj: Object, isUndefinedBranch: InlinedBranchProfile, isRegexpBranch: InlinedBranchProfile, isStringBranch: InlinedBranchProfile, stringSplitter: StringPrototypeBuiltins$JSStringSplitNode$StringSplitter, regexpSplitter: StringPrototypeBuiltins$JSStringSplitNode$RegExpSplitter, zeroLimit: InlinedConditionProfile, readGroupCount: TRegexUtil$InteropReadIntMemberNode): Object;
     splitES6Generic(thisObj: Object, separator: Object, limit: Object, isObject: IsObjectNode, stringSplitter: StringPrototypeBuiltins$JSStringSplitNode$StringSplitter, zeroLimit: InlinedConditionProfile, isSpecialProfile: InlinedConditionProfile, callSpecialProfile: InlinedConditionProfile): Object;
     splitES6StrStrUndefined(thisStr: TruffleString, sepStr: TruffleString, limit: Object, stringSplitter: StringPrototypeBuiltins$JSStringSplitNode$StringSplitter, zeroLimit: InlinedConditionProfile): Object;

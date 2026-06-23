@@ -10,5 +10,5 @@ export abstract class TemplateLiteralNode extends Expression {
     constructor(literalNode: TemplateLiteralNode)
     constructor(token: number, finish: number)
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
 }

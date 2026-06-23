@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { IOComparator } from '../../../../../org/apache/commons/io/function/IOComparator.d.ts'
 import type { IOConsumer } from '../../../../../org/apache/commons/io/function/IOConsumer.d.ts'
 import type { IOSpliterator } from '../../../../../org/apache/commons/io/function/IOSpliterator.d.ts'
-export class IOSpliteratorAdapter<T extends Object | number | string | boolean> extends Object implements IOSpliterator<T> {
+export class IOSpliteratorAdapter<T extends unknown> extends Object implements IOSpliterator<T> {
     static adapt(paramarg0: Spliterator<Object>): IOSpliterator<Object>;
     constructor(arg0: Spliterator<T>)
     // private delegate: Spliterator<T>;

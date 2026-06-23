@@ -43,7 +43,7 @@ export class ParserBuilder extends Object {
     markdown(): ParserBuilder;
     markdown(arg0: (param0: TextNode[]) => TextNode, arg1: (param0: TextNode[]) => TextNode, arg2: (param0: TextNode[], param1: TextNode) => TextNode, arg3: MarkdownLiteParserV1$MarkdownFormat[]): ParserBuilder;
     markdown(arg0: MarkdownLiteParserV1$MarkdownFormat[]): ParserBuilder;
-    placeholders<Ctx extends Object | number | string | boolean>(arg0: TagLikeParser$Format, arg1: ParserContext$Key<Ctx>, arg2: Placeholders$PlaceholderGetter<Ctx>): ParserBuilder;
+    placeholders<Ctx extends unknown>(arg0: TagLikeParser$Format, arg1: ParserContext$Key<Ctx>, arg2: Placeholders$PlaceholderGetter<Ctx>): ParserBuilder;
     placeholders(arg0: TagLikeParser$Format, arg1: ParserContext$Key<(param0: string) => Component>): ParserBuilder;
     placeholders(arg0: TagLikeParser$Format, arg1: (param0: string) => TextNode): ParserBuilder;
     placeholders(arg0: TagLikeParser$Format, arg1: string[], arg2: ParserContext$Key<(param0: string) => Component>): ParserBuilder;

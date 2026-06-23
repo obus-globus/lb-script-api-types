@@ -10,7 +10,7 @@ import type { TagAppender } from '../../../../../../../net/minecraft/data/tags/T
 import type { ResourceKey } from '../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
-export abstract class FabricTagsProvider$FabricIntrinsicHolderTagsProvider<T extends Object | number | string | boolean> extends FabricTagsProvider<T> {
+export abstract class FabricTagsProvider$FabricIntrinsicHolderTagsProvider<T extends unknown> extends FabricTagsProvider<T> {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;

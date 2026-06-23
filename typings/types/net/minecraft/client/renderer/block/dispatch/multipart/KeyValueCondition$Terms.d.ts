@@ -16,7 +16,7 @@ export class KeyValueCondition$Terms extends Record {
     equals(o: Object | null): boolean;
     // private getValueOrThrow<T extends Comparable<T>>(owner: Object, property: Property<T>, input: string): T;
     hashCode(): number;
-    instantiate<S extends StateHolder<O, S>, O extends Object | number | string | boolean, T extends Comparable<T>>(owner: O, property: Property<T>): (param0: S) => boolean;
+    instantiate<S extends StateHolder<O, S>, O extends unknown, T extends Comparable<T>>(owner: O, property: Property<T>): (param0: S) => boolean;
     // private instantiate<T extends Comparable<T>>(owner: Object, property: Property<T>, term: KeyValueCondition$Term): (param0: T) => boolean;
     toString(): string;
 }

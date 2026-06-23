@@ -10,7 +10,7 @@ import type { Wander } from '../../../../com/mojang/datafixers/optics/Wander.d.t
 import type { TraversalP$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/TraversalP$Mu.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Traversal<S extends Object | number | string | boolean, T extends Object | number | string | boolean, A extends Object | number | string | boolean, B extends Object | number | string | boolean> extends App2<Traversal$Mu<A, B>, S, T>, Optic<TraversalP$Mu, S, T, A, B>, Wander<S, T, A, B>, Object{
+export interface Traversal<S extends unknown, T extends unknown, A extends unknown, B extends unknown> extends App2<Traversal$Mu<A, B>, S, T>, Optic<TraversalP$Mu, S, T, A, B>, Wander<S, T, A, B>, Object{
     eval<P extends K2>(arg0: App<TraversalP$Mu, P>): FunctionType<App2<P, A, B>, App2<P, S, T>>;
     upCast<Proof2 extends K1>(arg0: TypeToken<K1>[], arg1: TypeToken<Proof2>): Optional<Optic<Proof2, S, T, A, B>>;
 }

@@ -93,8 +93,8 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     // private worldPosition: Vec3;
     // private broadcastToAdmins(message: Component): void;
     callback(): (param0: boolean, param1: number) => void;
-    checkPermission<T extends Object | number | string | boolean>(arg0: PermissionNode<T>): T;
-    checkPermission<T extends Object | number | string | boolean>(arg0: PermissionNode<T>, arg1: T): T;
+    checkPermission<T extends unknown>(arg0: PermissionNode<T>): T;
+    checkPermission<T extends unknown>(arg0: PermissionNode<T>, arg1: T): T;
     checkPermission(arg0: Identifier): TriState;
     checkPermission(arg0: Identifier, arg1: boolean): boolean;
     checkPermission(arg0: Identifier, arg1: PermissionLevel): boolean;

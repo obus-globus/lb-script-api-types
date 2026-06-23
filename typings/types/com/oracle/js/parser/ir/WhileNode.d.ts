@@ -12,9 +12,9 @@ export class WhileNode extends LoopNode {
     constructor(lineNumber: number, token: number, finish: number, isDoWhile: boolean, test: JoinPredecessorExpression, body: Block)
     // private isDoWhile: boolean;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(lc: LexicalContext, visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBody(): Block;
     hasGoto(): boolean;
     hasPerIterationScope(): boolean;

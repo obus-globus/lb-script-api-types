@@ -37,7 +37,7 @@ export abstract class Accessor$RuntimeSupport extends Object {
     createDirectCallNode(target: CallTarget): DirectCallNode;
     createIndirectCallNode(): IndirectCallNode;
     createRuntimeData(engine: Object, engineOptions: OptionValues, loggerFactory: (param0: string) => TruffleLogger, sandboxPolicy: SandboxPolicy): Object;
-    createTerminatingThreadLocal<T extends Object | number | string | boolean>(initialValue: () => T, onThreadTermination: (param0: T) => void): ThreadLocal<T>;
+    createTerminatingThreadLocal<T extends unknown>(initialValue: () => T, onThreadTermination: (param0: T) => void): ThreadLocal<T>;
     getArrayBaseOffset(componentType: Class<Object>): number;
     getArrayIndexScale(componentType: Class<Object>): number;
     getBaseInstanceSize(type: Class<Object>): number;
@@ -73,5 +73,5 @@ export abstract class Accessor$RuntimeSupport extends Object {
     transferOSRFrame(osrNode: BytecodeOSRNode, source: Frame, target: Frame, bytecodeTarget: number, targetMetadata: Object): void;
     tryBytecodeOSR(osrNode: BytecodeOSRNode, target: number, interpreterState: Object, beforeTransfer: () => void, parentFrame: VirtualFrame): Object;
     tryLoadCachedEngine(runtimeData: OptionValues, logger: (param0: string) => TruffleLogger): Object;
-    unsafeCast<T extends Object | number | string | boolean>(value: Object, type: Class<T>, condition: boolean, nonNull: boolean, exact: boolean): T;
+    unsafeCast<T extends unknown>(value: Object, type: Class<T>, condition: boolean, nonNull: boolean, exact: boolean): T;
 }

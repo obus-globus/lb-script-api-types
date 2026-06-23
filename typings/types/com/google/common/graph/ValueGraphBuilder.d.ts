@@ -4,7 +4,7 @@ import type { ImmutableValueGraph$Builder } from '../../../../com/google/common/
 import type { MutableValueGraph } from '../../../../com/google/common/graph/MutableValueGraph.d.ts'
 import type { ValueGraph } from '../../../../com/google/common/graph/ValueGraph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class ValueGraphBuilder<N extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractGraphBuilder<N> {
+export class ValueGraphBuilder<N extends unknown, V extends unknown> extends AbstractGraphBuilder<N> {
     static directed(): ValueGraphBuilder<Object, Object>;
     static from(paramgraph: ValueGraph<Object, Object>): ValueGraphBuilder<Object, Object>;
     static undirected(): ValueGraphBuilder<Object, Object>;

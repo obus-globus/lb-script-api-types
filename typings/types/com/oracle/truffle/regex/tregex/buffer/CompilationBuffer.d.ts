@@ -32,9 +32,9 @@ export class CompilationBuffer extends Object {
     getIntRangesBuffer3(): (Object | null)[];
     getLazyTransitionDeduplicationMap(): EconomicMap<DFACaptureGroupPartialTransition, DFACaptureGroupPartialTransition>;
     getMatcherDeduplicationMap(): EconomicMap<(Object | null)[], CharMatcher>;
-    getObjectBuffer1<T extends Object | number | string | boolean>(): T[];
-    getObjectBuffer2<T extends Object | number | string | boolean>(): T[];
-    getObjectBuffer3<T extends Object | number | string | boolean>(): T[];
+    getObjectBuffer1<T extends unknown>(): T[];
+    getObjectBuffer2<T extends unknown>(): T[];
+    getObjectBuffer3<T extends unknown>(): T[];
     getShortArrayBuffer1(): number[];
     getShortArrayBuffer2(): number[];
 }

@@ -7,7 +7,7 @@ import type { FailableFunction } from '../../../../../../../org/apache/commons/l
 export class TestServerContextImpl extends Object implements TestServerContext {
     constructor(arg0: MinecraftServer)
     // private server: MinecraftServer;
-    computeOnServer<T extends Object | number | string | boolean, E extends Throwable>(arg0: (param0: MinecraftServer) => T): T;
+    computeOnServer<T extends unknown, E extends Throwable>(arg0: (param0: MinecraftServer) => T): T;
     runCommand(arg0: string): void;
     runOnServer<E extends Throwable>(arg0: (param0: MinecraftServer) => void): void;
 }

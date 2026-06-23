@@ -8,7 +8,7 @@ import type { CoroutineStart } from '../../kotlinx/coroutines/CoroutineStart.d.t
 import type { Job } from '../../kotlinx/coroutines/Job.d.ts'
 import type { Job$Key } from '../../kotlinx/coroutines/Job$Key.d.ts'
 import type { JobSupport } from '../../kotlinx/coroutines/JobSupport.d.ts'
-export abstract class AbstractCoroutine<T extends Object | number | string | boolean> extends JobSupport implements Continuation<T>, CoroutineScope, Job {
+export abstract class AbstractCoroutine<T extends unknown> extends JobSupport implements Continuation<T>, CoroutineScope, Job {
     static Key: Job$Key;
     constructor(parentContext: CoroutineContext, initParentJob: boolean, active: boolean)
     readonly context: CoroutineContext;
@@ -25,5 +25,5 @@ export abstract class AbstractCoroutine<T extends Object | number | string | boo
     plus(other: Job): Job;
     resumeWith(result: Result<T>): void;
     start(): boolean;
-    start<R extends Object | number | string | boolean>(start: CoroutineStart, receiver: R, block: (param0: R) => T): void;
+    start<R extends unknown>(start: CoroutineStart, receiver: R, block: (param0: R) => T): void;
 }

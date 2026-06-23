@@ -17,7 +17,7 @@ export class ReferenceExpression extends TerminalExpression {
     cloneInto(arg0: Root): ReferenceExpression;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
-    expressionAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    expressionAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
     getExpressionType(): Expression$ExpressionType;
     getIdentifier(): Identifier;
     setIdentifier(arg0: Identifier): void;

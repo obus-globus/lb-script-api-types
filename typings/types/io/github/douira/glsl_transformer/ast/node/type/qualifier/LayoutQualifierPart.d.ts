@@ -11,11 +11,11 @@ export abstract class LayoutQualifierPart extends InnerASTNode {
     static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor()
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): LayoutQualifierPart;
     cloneInto(arg0: Root): LayoutQualifierPart;
     enterNode(arg0: ASTListener): void;
     exitNode(arg0: ASTListener): void;
     getLayoutQualifierType(): LayoutQualifierPart$LayoutQualifierType;
-    layoutQualifierPartAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    layoutQualifierPartAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
-export class PositionedVoxelShape<K extends Object | number | string | boolean> extends Object {
+export class PositionedVoxelShape<K extends unknown> extends Object {
     constructor(blockPos: number, key: K, shape: VoxelShape)
     readonly blockPos: number;
     readonly key: K;

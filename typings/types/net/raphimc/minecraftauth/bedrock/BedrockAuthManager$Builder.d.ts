@@ -23,7 +23,7 @@ export class BedrockAuthManager$Builder extends Object {
     login(arg0: string): BedrockAuthManager;
     login(arg0: MsaToken): BedrockAuthManager;
     login(arg0: (param0: HttpClient, param1: MsaApplicationConfig) => MsaAuthService): BedrockAuthManager;
-    login<T extends Object | number | string | boolean>(arg0: (param0: HttpClient, param1: MsaApplicationConfig, param2: T) => MsaAuthService, arg1: T): BedrockAuthManager;
+    login<T extends unknown>(arg0: (param0: HttpClient, param1: MsaApplicationConfig, param2: T) => MsaAuthService, arg1: T): BedrockAuthManager;
     msaApplicationConfig(arg0: MsaApplicationConfig): BedrockAuthManager$Builder;
     sessionKeyPair(arg0: KeyPair): BedrockAuthManager$Builder;
 }

@@ -13,7 +13,7 @@ export abstract class TernaryExpression extends Expression {
     first: Expression;
     second: Expression;
     third: Expression;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): TernaryExpression;
     cloneInto(arg0: Root): TernaryExpression;
     enterNode(arg0: ASTListener): void;

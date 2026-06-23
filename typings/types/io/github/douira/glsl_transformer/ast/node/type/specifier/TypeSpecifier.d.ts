@@ -14,7 +14,7 @@ export abstract class TypeSpecifier extends InnerASTNode {
     constructor()
     constructor(arg0: ArraySpecifier)
     arraySpecifier: ArraySpecifier;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): TypeSpecifier;
     cloneInto(arg0: Root): TypeSpecifier;
     enterNode(arg0: ASTListener): void;
@@ -22,5 +22,5 @@ export abstract class TypeSpecifier extends InnerASTNode {
     getArraySpecifier(): ArraySpecifier;
     getSpecifierType(): TypeSpecifier$SpecifierType;
     setArraySpecifier(arg0: ArraySpecifier): void;
-    typeSpecifierAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    typeSpecifierAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

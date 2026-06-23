@@ -21,7 +21,7 @@ export class InstrumentationHandler$EngineInstrumenter extends InstrumentationHa
     isInstrumentableRoot(rootNode: RootNode): boolean;
     isInstrumentableSource(source: Source): boolean;
     isReadyForContextEvents(): boolean;
-    lookup<T extends Object | number | string | boolean>(handler: InstrumentationHandler, type: Class<T>): T;
+    lookup<T extends unknown>(handler: InstrumentationHandler, type: Class<T>): T;
     queryTags(node: Node): Class<Object>[];
     verifyFilter(nearestFilter: NearestSectionFilter, sourceSectionFilter: SourceSectionFilter): void;
 }

@@ -4,7 +4,7 @@ import type { TruffleStringBuilderUTF16 } from '../../../../../com/oracle/truffl
 import type { StringPrototypeBuiltins$JSStringReplaceES5Node } from '../../../../../com/oracle/truffle/js/builtins/StringPrototypeBuiltins$JSStringReplaceES5Node.d.ts'
 import type { JavaScriptBaseNode } from '../../../../../com/oracle/truffle/js/nodes/JavaScriptBaseNode.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class StringPrototypeBuiltins$JSStringReplaceES5Node$Replacer<T extends Object | number | string | boolean> extends JavaScriptBaseNode {
+export abstract class StringPrototypeBuiltins$JSStringReplaceES5Node$Replacer<T extends unknown> extends JavaScriptBaseNode {
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor(parent: StringPrototypeBuiltins$JSStringReplaceES5Node)

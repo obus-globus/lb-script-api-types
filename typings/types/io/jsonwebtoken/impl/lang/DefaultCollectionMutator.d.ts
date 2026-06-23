@@ -1,6 +1,6 @@
 import type { CollectionMutator } from '../../../../io/jsonwebtoken/lang/CollectionMutator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class DefaultCollectionMutator<E extends Object | number | string | boolean, M extends CollectionMutator<E, M>> extends Object implements CollectionMutator<E, M> {
+export class DefaultCollectionMutator<E extends unknown, M extends CollectionMutator<E, M>> extends Object implements CollectionMutator<E, M> {
     constructor(arg0: E[])
     // private collection: E[];
     add(arg0: E[]): M;

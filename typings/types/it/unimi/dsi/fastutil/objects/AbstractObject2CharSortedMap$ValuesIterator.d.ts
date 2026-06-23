@@ -5,7 +5,7 @@ import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fa
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractObject2CharSortedMap$ValuesIterator<K extends Object | number | string | boolean> extends Object implements CharIterator {
+export class AbstractObject2CharSortedMap$ValuesIterator<K extends unknown> extends Object implements CharIterator {
     constructor(arg0: ObjectBidirectionalIterator<Object2CharMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Object2CharMap$Entry<K>>;
     forEachRemaining(arg0: (param0: string) => void): void;

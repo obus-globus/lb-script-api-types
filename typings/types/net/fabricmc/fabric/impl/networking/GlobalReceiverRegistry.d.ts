@@ -5,7 +5,7 @@ import type { PayloadTypeRegistryImpl } from '../../../../../net/fabricmc/fabric
 import type { ConnectionProtocol } from '../../../../../net/minecraft/network/ConnectionProtocol.d.ts'
 import type { PacketFlow } from '../../../../../net/minecraft/network/protocol/PacketFlow.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export class GlobalReceiverRegistry<H extends Object | number | string | boolean> extends Object {
+export class GlobalReceiverRegistry<H extends unknown> extends Object {
     static DEFAULT_CHANNEL_NAME_MAX_LENGTH: number;
     constructor(arg0: PacketFlow, arg1: ConnectionProtocol, arg2: PayloadTypeRegistryImpl<any>)
     // private flow: PacketFlow;

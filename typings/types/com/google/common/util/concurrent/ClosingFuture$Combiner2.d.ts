@@ -8,12 +8,12 @@ import type { ClosingFuture$DeferredCloser } from '../../../../../com/google/com
 import type { ClosingFuture$Peeker } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Peeker.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ClosingFuture$Combiner2<V1 extends Object | number | string | boolean, V2 extends Object | number | string | boolean> extends ClosingFuture$Combiner {
+export class ClosingFuture$Combiner2<V1 extends unknown, V2 extends unknown> extends ClosingFuture$Combiner {
     private constructor(future1: ClosingFuture<V1>, future2: ClosingFuture<V2>)
     // private future1: ClosingFuture<V1>;
     // private future2: ClosingFuture<V2>;
-    call<V extends Object | number | string | boolean>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => V, executor: Executor): ClosingFuture<V>;
-    call<U extends Object | number | string | boolean>(function_: (param0: ClosingFuture$DeferredCloser, param1: V1, param2: V2) => U, executor: Executor): ClosingFuture<U>;
-    callAsync<V extends Object | number | string | boolean>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => ClosingFuture<V>, executor: Executor): ClosingFuture<V>;
-    callAsync<U extends Object | number | string | boolean>(function_: (param0: ClosingFuture$DeferredCloser, param1: V1, param2: V2) => ClosingFuture<U>, executor: Executor): ClosingFuture<U>;
+    call<V extends unknown>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => V, executor: Executor): ClosingFuture<V>;
+    call<U extends unknown>(function_: (param0: ClosingFuture$DeferredCloser, param1: V1, param2: V2) => U, executor: Executor): ClosingFuture<U>;
+    callAsync<V extends unknown>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => ClosingFuture<V>, executor: Executor): ClosingFuture<V>;
+    callAsync<U extends unknown>(function_: (param0: ClosingFuture$DeferredCloser, param1: V1, param2: V2) => ClosingFuture<U>, executor: Executor): ClosingFuture<U>;
 }

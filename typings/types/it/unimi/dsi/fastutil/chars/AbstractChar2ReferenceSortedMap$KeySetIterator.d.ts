@@ -2,7 +2,7 @@ import type { Char2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastut
 import type { CharBidirectionalIterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharBidirectionalIterator.d.ts'
 import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectBidirectionalIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractChar2ReferenceSortedMap$KeySetIterator<V extends Object | number | string | boolean> extends Object implements CharBidirectionalIterator {
+export class AbstractChar2ReferenceSortedMap$KeySetIterator<V extends unknown> extends Object implements CharBidirectionalIterator {
     constructor(arg0: ObjectBidirectionalIterator<Char2ReferenceMap$Entry<V>>)
     // private i: ObjectBidirectionalIterator<Char2ReferenceMap$Entry<V>>;
     back(arg0: number): number;

@@ -6,7 +6,7 @@ import type { HolderGetter } from '../../../../net/minecraft/core/HolderGetter.d
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { RandomSource } from '../../../../net/minecraft/util/RandomSource.d.ts'
-export class ConcurrentHolderGetter<T extends Object | number | string | boolean> extends Object implements HolderGetter<T> {
+export class ConcurrentHolderGetter<T extends unknown> extends Object implements HolderGetter<T> {
     constructor(lock: Object, original: HolderGetter<T>)
     // private elementCache: Map<ResourceKey<T>, Optional<Holder$Reference<T>>>;
     // private lock: Object;

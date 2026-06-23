@@ -5,7 +5,7 @@ import type { StateDefinition } from '../../../../../../net/minecraft/world/leve
 import type { StateDefinition$Factory } from '../../../../../../net/minecraft/world/level/block/state/StateDefinition$Factory.d.ts'
 import type { StateHolder } from '../../../../../../net/minecraft/world/level/block/state/StateHolder.d.ts'
 import type { Property } from '../../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
-export class StateDefinition$Builder<O extends Object | number | string | boolean, S extends StateHolder<O, S>> extends Object {
+export class StateDefinition$Builder<O extends unknown, S extends StateHolder<O, S>> extends Object {
     constructor(owner: O)
     // private owner: O;
     // private properties: { [key: string]: Property<any> };

@@ -100,7 +100,7 @@ import type { StructSpecifier } from '../../../../../../io/github/douira/glsl_tr
 import type { ASTListener } from '../../../../../../io/github/douira/glsl_transformer/ast/traversal/ASTListener.d.ts'
 import type { ASTWalker } from '../../../../../../io/github/douira/glsl_transformer/ast/traversal/ASTWalker.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class ASTListenerVisitor<R extends Object | number | string | boolean> extends ASTWalker<R> implements ASTListener {
+export class ASTListenerVisitor<R extends unknown> extends ASTWalker<R> implements ASTListener {
     static walk(paramarg0: ASTListener, paramarg1: ASTNode): Object | null;
     static walkAndListen(paramarg0: ASTNode): Object | null;
     constructor()

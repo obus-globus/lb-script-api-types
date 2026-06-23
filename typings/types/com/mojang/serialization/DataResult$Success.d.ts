@@ -14,7 +14,7 @@ import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export class DataResult$Success<R extends Object | number | string | boolean> extends Record implements DataResult<R> {
+export class DataResult$Success<R extends unknown> extends Record implements DataResult<R> {
     static appendMessages(paramarg0: string, paramarg1: string): string;
     static error(paramarg0: () => string): DataResult<Object>;
     static error(paramarg0: () => string, paramarg1: Object | null): DataResult<Object>;
@@ -29,13 +29,13 @@ export class DataResult$Success<R extends Object | number | string | boolean> ex
     // private lifecycle: Lifecycle;
     // private value: R;
     addLifecycle(arg0: Lifecycle): DataResult<R>;
-    ap<R2 extends Object | number | string | boolean>(arg0: DataResult<(param0: R) => R2>): DataResult<R2>;
-    apply2<S extends Object | number | string | boolean, R2 extends Object | number | string | boolean>(arg0: (param0: R, param1: R2) => S, arg1: DataResult<R2>): DataResult<S>;
-    apply2stable<S extends Object | number | string | boolean, R2 extends Object | number | string | boolean>(arg0: (param0: R, param1: R2) => S, arg1: DataResult<R2>): DataResult<S>;
-    apply3<S extends Object | number | string | boolean, R2 extends Object | number | string | boolean, R3 extends Object | number | string | boolean>(arg0: Function3<R, R2, R3, S>, arg1: DataResult<R2>, arg2: DataResult<R3>): DataResult<S>;
+    ap<R2 extends unknown>(arg0: DataResult<(param0: R) => R2>): DataResult<R2>;
+    apply2<S extends unknown, R2 extends unknown>(arg0: (param0: R, param1: R2) => S, arg1: DataResult<R2>): DataResult<S>;
+    apply2stable<S extends unknown, R2 extends unknown>(arg0: (param0: R, param1: R2) => S, arg1: DataResult<R2>): DataResult<S>;
+    apply3<S extends unknown, R2 extends unknown, R3 extends unknown>(arg0: Function3<R, R2, R3, S>, arg1: DataResult<R2>, arg2: DataResult<R3>): DataResult<S>;
     equals(arg0: Object | null): boolean;
     error(): Optional<DataResult$Error<R>>;
-    flatMap<R2 extends Object | number | string | boolean>(arg0: (param0: R) => DataResult<R2>): DataResult<R2>;
+    flatMap<R2 extends unknown>(arg0: (param0: R) => DataResult<R2>): DataResult<R2>;
     getOrThrow(): R;
     getOrThrow<E extends Throwable>(arg0: (param0: string) => E): R;
     getPartialOrThrow(): R;
@@ -47,9 +47,9 @@ export class DataResult$Success<R extends Object | number | string | boolean> ex
     isError(): boolean;
     isSuccess(): boolean;
     lifecycle(): Lifecycle;
-    map<T extends Object | number | string | boolean>(arg0: (param0: R) => T): DataResult<T>;
+    map<T extends unknown>(arg0: (param0: R) => T): DataResult<T>;
     mapError(arg0: (param0: string) => Object | null): DataResult<R>;
-    mapOrElse<T extends Object | number | string | boolean>(arg0: (param0: R) => T, arg1: (param0: DataResult$Error<R>) => T): T;
+    mapOrElse<T extends unknown>(arg0: (param0: R) => T, arg1: (param0: DataResult$Error<R>) => T): T;
     promotePartial(arg0: (param0: string) => void): DataResult<R>;
     result(): Optional<R>;
     resultOrPartial(): Optional<R>;

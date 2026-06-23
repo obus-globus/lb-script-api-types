@@ -7,7 +7,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Type } from '../../../../../java/lang/reflect/Type.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export abstract class BaseImageTranslatorFactory<O extends Object | number | string | boolean> extends ExpansionTranslatorFactory<Image, O> {
+export abstract class BaseImageTranslatorFactory<O extends unknown> extends ExpansionTranslatorFactory<Image, O> {
     constructor()
     getBaseInputType(): Class<Image>;
     getExpansions(): Map<Pair<Type, Type>, (param0: Object | null) => Object | null>;

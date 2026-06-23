@@ -1,6 +1,6 @@
 import type { Pair } from '../../../../../../com/viaversion/viaversion/libs/fastutil/Pair.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export interface ReferenceObjectPair<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Pair<K, V>, Object{
+export interface ReferenceObjectPair<K extends unknown, V extends unknown> extends Pair<K, V>, Object{
     first(): K;
     first(arg0: K): Pair<K, V>;
     key(): K;

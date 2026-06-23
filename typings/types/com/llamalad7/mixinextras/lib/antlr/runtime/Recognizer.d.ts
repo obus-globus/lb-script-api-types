@@ -4,7 +4,7 @@ import type { Vocabulary } from '../../../../../../com/llamalad7/mixinextras/lib
 import type { ATN } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/ATN.d.ts'
 import type { ATNSimulator } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/atn/ATNSimulator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class Recognizer<Symbol extends Object | number | string | boolean, ATNInterpreter extends ATNSimulator> extends Object {
+export abstract class Recognizer<Symbol extends unknown, ATNInterpreter extends ATNSimulator> extends Object {
     constructor()
     // private _interp: ATNInterpreter;
     // private _listeners: ANTLRErrorListener[];

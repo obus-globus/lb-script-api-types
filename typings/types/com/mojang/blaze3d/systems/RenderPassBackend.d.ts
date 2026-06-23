@@ -16,7 +16,7 @@ export interface RenderPassBackend extends AutoCloseable, Object, RenderPassInte
     disableScissor(): void;
     draw(firstVertex: number, vertexCount: number): void;
     drawIndexed(baseVertex: number, firstIndex: number, indexCount: number, instanceCount: number): void;
-    drawMultipleIndexed<T extends Object | number | string | boolean>(draws: RenderPass$Draw<T>[], defaultIndexBuffer: GpuBuffer, defaultIndexType: VertexFormat$IndexType, dynamicUniforms: string[], uniformArgument: T): void;
+    drawMultipleIndexed<T extends unknown>(draws: RenderPass$Draw<T>[], defaultIndexBuffer: GpuBuffer, defaultIndexType: VertexFormat$IndexType, dynamicUniforms: string[], uniformArgument: T): void;
     enableScissor(x: number, y: number, width: number, height: number): void;
     iris$getCustomPass(): CustomPass;
     iris$setCustomPass(arg0: CustomPass): void;

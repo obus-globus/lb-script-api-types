@@ -12,7 +12,7 @@ import type { Tooltip } from '../../../../../net/minecraft/client/gui/components
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export class CycleButton$Builder<T extends Object | number | string | boolean> extends Object {
+export class CycleButton$Builder<T extends unknown> extends Object {
     constructor(valueStringifier: (param0: T) => Component, defaultValueSupplier: () => T)
     // private defaultValueSupplier: () => T;
     // private displayState: CycleButton$DisplayState;

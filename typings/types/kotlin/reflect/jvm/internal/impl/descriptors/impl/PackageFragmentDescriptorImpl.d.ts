@@ -12,7 +12,7 @@ export abstract class PackageFragmentDescriptorImpl extends DeclarationDescripto
     constructor(arg0: ModuleDescriptor, arg1: FqName)
     // private debugString: string;
     readonly fqName: FqName;
-    accept<R extends Object | number | string | boolean, D extends Object | number | string | boolean>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
+    accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     getContainingDeclaration(): ModuleDescriptor;
     getFqName(): FqName;
     getMemberScope(): MemberScope;

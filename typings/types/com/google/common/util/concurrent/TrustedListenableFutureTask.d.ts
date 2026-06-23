@@ -6,7 +6,7 @@ import type { ListenableFuture } from '../../../../../com/google/common/util/con
 import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { RunnableFuture } from '../../../../../java/util/concurrent/RunnableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class TrustedListenableFutureTask<V extends Object | number | string | boolean> extends FluentFuture$TrustedFuture<V> implements RunnableFuture<V> {
+export class TrustedListenableFutureTask<V extends unknown> extends FluentFuture$TrustedFuture<V> implements RunnableFuture<V> {
     static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
     static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
     constructor(callable: () => ListenableFuture<V>)

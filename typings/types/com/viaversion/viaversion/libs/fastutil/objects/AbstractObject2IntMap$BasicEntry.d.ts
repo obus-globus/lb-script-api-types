@@ -1,6 +1,6 @@
 import type { Object2IntMap$Entry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Object2IntMap$Entry.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class AbstractObject2IntMap$BasicEntry<K extends Object | number | string | boolean> extends Object implements Object2IntMap$Entry<K> {
+export class AbstractObject2IntMap$BasicEntry<K extends unknown> extends Object implements Object2IntMap$Entry<K> {
     constructor()
     constructor(arg0: K, arg1: number)
     constructor(arg0: K, arg1: number)

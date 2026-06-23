@@ -16,5 +16,5 @@ export abstract class AbstractPolyglotImpl$AbstractInstrumentDispatch extends Ab
     getWebsite(receiver: Object): string;
     hashCode(): number;
     hashCode(impl: Object): number;
-    lookup<T extends Object | number | string | boolean>(receiver: Object, type: Class<T>): T;
+    lookup<T extends unknown>(receiver: Object, type: Class<T>): T;
 }

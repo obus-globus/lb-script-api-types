@@ -13,7 +13,7 @@ import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { DynamicOps } from '../../../../../com/mojang/serialization/DynamicOps.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Tag$TagType<A extends Object | number | string | boolean> extends Type<A> {
+export class Tag$TagType<A extends unknown> extends Type<A> {
     static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
     static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
     constructor(arg0: string, arg1: Type<A>)
@@ -26,13 +26,13 @@ export class Tag$TagType<A extends Object | number | string | boolean> extends T
     equals(arg0: Object, arg1: boolean, arg2: boolean): boolean;
     equals(arg0: Object | null): boolean;
     findFieldTypeOpt(arg0: string): Optional<Type<Object>>;
-    findTypeInChildren<FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
+    findTypeInChildren<FT extends unknown, FR extends unknown>(arg0: Type<FT>, arg1: Type<FR>, arg2: Type$TypeMatcher<FT, FR>, arg3: boolean): Either<TypedOptic<A, Object, FT, FR>, Type$FieldNotFoundException>;
     hashCode(): number;
     name(): string;
     one(arg0: TypeRewriteRule): Optional<RewriteResult<A, Object>>;
     point(arg0: DynamicOps<Object>): Optional<A>;
     toString(): string;
     updateMu(arg0: RecursiveTypeFamily): Type<Object>;
-    // private wrap<B extends Object | number | string | boolean>(arg0: RewriteResult<A, B>): RewriteResult<A, B>;
-    // private wrapOptic<B extends Object | number | string | boolean, FT extends Object | number | string | boolean, FR extends Object | number | string | boolean>(arg0: TypedOptic<A, B, FT, FR>): TypedOptic<A, B, FT, FR>;
+    // private wrap<B extends unknown>(arg0: RewriteResult<A, B>): RewriteResult<A, B>;
+    // private wrapOptic<B extends unknown, FT extends unknown, FR extends unknown>(arg0: TypedOptic<A, B, FT, FR>): TypedOptic<A, B, FT, FR>;
 }

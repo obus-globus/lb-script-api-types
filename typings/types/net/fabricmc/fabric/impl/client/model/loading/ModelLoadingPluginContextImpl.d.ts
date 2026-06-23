@@ -33,7 +33,7 @@ export class ModelLoadingPluginContextImpl extends Object implements ModelLoadin
     // private extraModels: Map<ExtraModelKey<Object>, UnbakedExtraModel<Object>>;
     // private onLoadBlockModifiers: Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$OnLoadBlock$Context) => BlockStateModel$UnbakedRoot>;
     // private onLoadModifiers: Event<(param0: UnbakedModel, param1: ModelModifier$OnLoad$Context) => UnbakedModel>;
-    addModel<T extends Object | number | string | boolean>(arg0: ExtraModelKey<T>, arg1: UnbakedExtraModel<T>): void;
+    addModel<T extends unknown>(arg0: ExtraModelKey<T>, arg1: UnbakedExtraModel<T>): void;
     modifyBlockModelAfterBake(): Event<(param0: BlockStateModel, param1: ModelModifier$AfterBakeBlock$Context) => BlockStateModel>;
     modifyBlockModelBeforeBake(): Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$BeforeBakeBlock$Context) => BlockStateModel$UnbakedRoot>;
     modifyBlockModelOnLoad(): Event<(param0: BlockStateModel$UnbakedRoot, param1: ModelModifier$OnLoadBlock$Context) => BlockStateModel$UnbakedRoot>;

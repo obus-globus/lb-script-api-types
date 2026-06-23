@@ -7,7 +7,7 @@ import type { HolderOwner } from '../../../net/minecraft/core/HolderOwner.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 import type { FeatureFlagSet } from '../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
-export interface HolderLookup$RegistryLookup<T extends Object | number | string | boolean> extends Object, HolderLookup<T>, HolderOwner<T> {
+export interface HolderLookup$RegistryLookup<T extends unknown> extends Object, HolderLookup<T>, HolderOwner<T> {
     canSerializeIn(context: HolderOwner<T>): boolean;
     filterElements(filter: (param0: T) => boolean): HolderLookup$RegistryLookup<T>;
     filterFeatures(enabledFeatures: FeatureFlagSet): HolderLookup$RegistryLookup<T>;

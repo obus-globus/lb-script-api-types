@@ -29,7 +29,7 @@ import type { IntStream } from '../../../../java/util/stream/IntStream.d.ts'
 import type { LongStream } from '../../../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
-export class UnboundedMapCodec<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Record implements Codec<Map<K, V>>, BaseMapCodec<K, V> {
+export class UnboundedMapCodec<K extends unknown, V extends unknown> extends Record implements Codec<Map<K, V>>, BaseMapCodec<K, V> {
     static BOOL: PrimitiveCodec<boolean>;
     static BYTE: PrimitiveCodec<number>;
     static BYTE_BUFFER: PrimitiveCodec<ByteBuffer>;
@@ -73,23 +73,23 @@ export class UnboundedMapCodec<K extends Object | number | string | boolean, V e
     constructor(keyCodec: Codec<K>, elementCodec: Codec<V>)
     // private elementCodec: Codec<V>;
     // private keyCodec: Codec<K>;
-    comapFlatMap<S extends Object | number | string | boolean>(arg0: (param0: Map<K, V>) => DataResult<S>, arg1: (param0: S) => Map<K, V>): Codec<S>;
-    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
-    decode<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<Map<K, V>, T>>;
-    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<Map<K, V>, T>>;
+    comapFlatMap<S extends unknown>(arg0: (param0: Map<K, V>) => DataResult<S>, arg1: (param0: S) => Map<K, V>): Codec<S>;
+    decode<T extends unknown>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Map<K, V>>;
+    decode<T extends unknown>(arg0: Dynamic<T>): DataResult<Pair<Map<K, V>, T>>;
+    decode<T extends unknown>(arg0: DynamicOps<T>, arg1: T): DataResult<Pair<Map<K, V>, T>>;
     deprecated(arg0: number): Codec<Map<K, V>>;
-    dispatch<E extends Object | number | string | boolean>(arg0: (param0: E) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<E>): Codec<E>;
-    dispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<E>): Codec<E>;
-    dispatchMap<E extends Object | number | string | boolean>(arg0: (param0: E) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<E>): MapCodec<E>;
-    dispatchMap<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<E>): MapCodec<E>;
-    dispatchStable<E extends Object | number | string | boolean>(arg0: (param0: E) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<E>): Codec<E>;
+    dispatch<E extends unknown>(arg0: (param0: E) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<E>): Codec<E>;
+    dispatch<E extends unknown>(arg0: string, arg1: (param0: E) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<E>): Codec<E>;
+    dispatchMap<E extends unknown>(arg0: (param0: E) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<E>): MapCodec<E>;
+    dispatchMap<E extends unknown>(arg0: string, arg1: (param0: E) => Map<K, V>, arg2: (param0: Map<K, V>) => MapCodec<E>): MapCodec<E>;
+    dispatchStable<E extends unknown>(arg0: (param0: E) => Map<K, V>, arg1: (param0: Map<K, V>) => MapCodec<E>): Codec<E>;
     elementCodec(): Codec<V>;
-    encode<T extends Object | number | string | boolean>(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
-    encode<T extends Object | number | string | boolean>(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: T): DataResult<T>;
+    encode<T extends unknown>(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
+    encode<T extends unknown>(arg0: Map<K, V>, arg1: DynamicOps<T>, arg2: T): DataResult<T>;
     equals(arg0: Object | null): boolean;
     fieldOf(arg0: string): MapCodec<Map<K, V>>;
-    flatComapMap<S extends Object | number | string | boolean>(arg0: (param0: Map<K, V>) => S, arg1: (param0: S) => DataResult<Map<K, V>>): Codec<S>;
-    flatXmap<S extends Object | number | string | boolean>(arg0: (param0: Map<K, V>) => DataResult<S>, arg1: (param0: S) => DataResult<Map<K, V>>): Codec<S>;
+    flatComapMap<S extends unknown>(arg0: (param0: Map<K, V>) => S, arg1: (param0: S) => DataResult<Map<K, V>>): Codec<S>;
+    flatXmap<S extends unknown>(arg0: (param0: Map<K, V>) => DataResult<S>, arg1: (param0: S) => DataResult<Map<K, V>>): Codec<S>;
     hashCode(): number;
     keyCodec(): Codec<K>;
     lenientOptionalFieldOf(arg0: string): MapCodec<Optional<Map<K, V>>>;
@@ -111,14 +111,14 @@ export class UnboundedMapCodec<K extends Object | number | string | boolean, V e
     orElseGet(arg0: (param0: string) => void, arg1: () => Map<K, V>): Codec<Map<K, V>>;
     orElseGet(arg0: () => Map<K, V>): Codec<Map<K, V>>;
     orElseGet(arg0: (param0: string) => Object | null, arg1: () => Map<K, V>): Codec<Map<K, V>>;
-    partialDispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => DataResult<Map<K, V>>, arg2: (param0: Map<K, V>) => DataResult<MapCodec<E>>): Codec<E>;
+    partialDispatch<E extends unknown>(arg0: string, arg1: (param0: E) => DataResult<Map<K, V>>, arg2: (param0: Map<K, V>) => DataResult<MapCodec<E>>): Codec<E>;
     promotePartial(arg0: (param0: string) => void): Codec<Map<K, V>>;
     sizeLimitedListOf(arg0: number): Codec<Map<K, V>[]>;
     stable(): Codec<Map<K, V>>;
     toString(): string;
     validate(arg0: (param0: Map<K, V>) => DataResult<Map<K, V>>): Codec<Map<K, V>>;
-    withAlternative<U extends Object | number | string | boolean>(arg0: Codec<U>, arg1: (param0: U) => Map<K, V>): Codec<Map<K, V>>;
+    withAlternative<U extends unknown>(arg0: Codec<U>, arg1: (param0: U) => Map<K, V>): Codec<Map<K, V>>;
     withAlternative(arg0: Codec<Map<K, V>>): Codec<Map<K, V>>;
     withLifecycle(arg0: Lifecycle): Codec<Map<K, V>>;
-    xmap<S extends Object | number | string | boolean>(arg0: (param0: Map<K, V>) => S, arg1: (param0: S) => Map<K, V>): Codec<S>;
+    xmap<S extends unknown>(arg0: (param0: Map<K, V>) => S, arg1: (param0: S) => Map<K, V>): Codec<S>;
 }

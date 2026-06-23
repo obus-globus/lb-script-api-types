@@ -26,12 +26,12 @@ export class OverriddenPermissionContext extends Record implements MutablePermis
     // private overrides: Map<PermissionContext$Key<Object>, Object>;
     context(): PermissionContext;
     equals(arg0: Object | null): boolean;
-    get<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>): T;
+    get<T extends unknown>(arg0: PermissionContext$Key<T>): T;
     hashCode(): number;
     keys(): PermissionContext$Key<Object>[];
     overrides(): Map<PermissionContext$Key<Object>, Object>;
     permissionLevel(): PermissionLevel;
-    set<T extends Object | number | string | boolean>(arg0: PermissionContext$Key<T>, arg1: T): MutablePermissionContext;
+    set<T extends unknown>(arg0: PermissionContext$Key<T>, arg1: T): MutablePermissionContext;
     toString(): string;
     type(): PermissionContext$Type;
     uuid(): UUID;

@@ -11,7 +11,7 @@ import type { IConstr } from '../../../../../../../../net/fabricmc/loader/impl/l
 import type { IVec } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/IVec.d.ts'
 import type { IVecInt } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/IVecInt.d.ts'
 import type { GateTranslator } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/tools/GateTranslator.d.ts'
-export class DependencyHelper<T extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object {
+export class DependencyHelper<T extends unknown, C extends unknown> extends Object {
     static BASIC_NEGATION: INegator;
     static NO_NEGATION: INegator;
     constructor(arg0: IPBSolver)

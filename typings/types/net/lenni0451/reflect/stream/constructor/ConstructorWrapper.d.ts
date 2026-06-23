@@ -15,7 +15,7 @@ export class ConstructorWrapper extends Object {
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     modifier(): ModifierWrapper;
-    newInstance<T extends Object | number | string | boolean>(arg0: Object[]): T;
+    newInstance<T extends unknown>(arg0: Object[]): T;
     owner(): Class<Object>;
     parameterCount(): number;
     parameterTypes(): Class<Object>[];

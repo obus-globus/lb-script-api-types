@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
-export class TagPredicate<T extends Object | number | string | boolean> extends Record {
+export class TagPredicate<T extends unknown> extends Record {
     static codec(paramregistryKey: ResourceKey<(Object | null)[]>): Codec<TagPredicate<Object>>;
     static is(paramtag: TagKey<Object>): TagPredicate<Object>;
     static isNot(paramtag: TagKey<Object>): TagPredicate<Object>;

@@ -11,7 +11,7 @@ export class BlockStatement extends Statement {
     constructor(lineNumber: number, block: Block)
     readonly block: Block;
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getBlock(): Block;
     isSynthetic(): boolean;
     isTerminal(): boolean;

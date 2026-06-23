@@ -3,7 +3,7 @@ import type { SimpleNameResolver } from '../../../io/netty/resolver/SimpleNameRe
 import type { Promise } from '../../../io/netty/util/concurrent/Promise.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
-export class CompositeNameResolver<T extends Object | number | string | boolean> extends SimpleNameResolver<T> {
+export class CompositeNameResolver<T extends unknown> extends SimpleNameResolver<T> {
     constructor(arg0: (Object | null)[], arg1: NameResolver<T>[])
     // private resolvers: NameResolver<T>[];
     doResolve(arg0: string, arg1: Promise<T>): void;

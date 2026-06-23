@@ -161,7 +161,7 @@ export class Parrot extends ShoulderRidingEntity implements FlyingAnimal {
     readonly partyParrot: boolean;
     addAdditionalSaveData(output: ValueOutput): void;
     aiStep(): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     // private calculateFlapping(): void;
     canFlyToOwner(): boolean;
@@ -171,7 +171,7 @@ export class Parrot extends ShoulderRidingEntity implements FlyingAnimal {
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     doPush(entity: Entity): void;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): AgeableMob;
     getDeathSound(): SoundEvent;

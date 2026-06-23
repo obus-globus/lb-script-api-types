@@ -275,7 +275,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     getModdedStatus(): ModCheck;
     getMotd(): string;
     getNextTickTime(): number;
-    getOrThrow<T extends Object | number | string | boolean>(arg0: DataResourceStore$Key<T>): T;
+    getOrThrow<T extends unknown>(arg0: DataResourceStore$Key<T>): T;
     getOrThrow(arg0: DataResourceStore$Key<Object>): Object;
     getPackRepository(): PackRepository;
     getPlayerCount(): number;
@@ -349,7 +349,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     logIPs(): boolean;
     // private logTickMethodTime(startTime: number): void;
     notificationManager(): NotificationManager;
-    onGameRuleChanged<T extends Object | number | string | boolean>(rule: GameRule<T>, value: T): void;
+    onGameRuleChanged<T extends unknown>(rule: GameRule<T>, value: T): void;
     onServerCrash(report: CrashReport): void;
     onServerExit(): void;
     onTickRateChanged(): void;

@@ -3,7 +3,7 @@ import type { ObjectLongPair } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ObjectLongImmutablePair<K extends Object | number | string | boolean> extends Object implements ObjectLongPair<K>, Serializable {
+export class ObjectLongImmutablePair<K extends unknown> extends Object implements ObjectLongPair<K>, Serializable {
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: Object | null, paramarg1: number): ObjectLongImmutablePair<Object>;
     static of(paramarg0: Object | null, paramarg1: number): ObjectLongPair<Object>;

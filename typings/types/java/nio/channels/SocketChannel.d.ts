@@ -25,7 +25,7 @@ export abstract class SocketChannel extends AbstractSelectableChannel implements
     read(arg0: ByteBuffer): number;
     read(arg0: ByteBuffer[]): number;
     read(arg0: ByteBuffer[], arg1: number, arg2: number): number;
-    setOption<T extends Object | number | string | boolean>(arg0: SocketOption<T>, arg1: T): SocketChannel;
+    setOption<T extends unknown>(arg0: SocketOption<T>, arg1: T): SocketChannel;
     shutdownInput(): SocketChannel;
     shutdownOutput(): SocketChannel;
     socket(): Socket;

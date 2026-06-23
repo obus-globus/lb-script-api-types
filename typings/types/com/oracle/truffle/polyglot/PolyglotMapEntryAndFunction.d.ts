@@ -4,7 +4,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class PolyglotMapEntryAndFunction<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends PolyglotMapEntry<K, V> implements Function<Object, Object> {
+export class PolyglotMapEntryAndFunction<K extends unknown, V extends unknown> extends PolyglotMapEntry<K, V> implements Function<Object, Object> {
     static identity(): (param0: Object | null) => Object | null;
     constructor(languageContext: PolyglotLanguageContext, obj: Object, keyClass: Class<K>, keyType: Type, valueClass: Class<V>, valueType: Type)
     andThen(arg0: (param0: Object) => V): (param0: Object) => V;

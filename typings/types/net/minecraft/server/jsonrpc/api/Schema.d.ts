@@ -23,7 +23,7 @@ import type { PermissionLevel } from '../../../../../net/minecraft/server/permis
 import type { Difficulty } from '../../../../../net/minecraft/world/Difficulty.d.ts'
 import type { GameType } from '../../../../../net/minecraft/world/level/GameType.d.ts'
 import type { GameRuleType } from '../../../../../net/minecraft/world/level/gamerules/GameRuleType.d.ts'
-export class Schema<T extends Object | number | string | boolean> extends Record {
+export class Schema<T extends unknown> extends Record {
     static BOOL_OR_INT_SCHEMA: Schema<Either<boolean, number>>;
     static BOOL_SCHEMA: Schema<boolean>;
     static CODEC: Codec<Schema<Object>>;

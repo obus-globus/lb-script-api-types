@@ -4,7 +4,7 @@ import type { PolyglotLocals$AbstractContextThreadLocal } from '../../../../com/
 import type { PolyglotLocals$LocalLocation } from '../../../../com/oracle/truffle/polyglot/PolyglotLocals$LocalLocation.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class PolyglotLocals$InstrumentContextThreadLocal<T extends Object | number | string | boolean> extends PolyglotLocals$AbstractContextThreadLocal<T> {
+export class PolyglotLocals$InstrumentContextThreadLocal<T extends unknown> extends PolyglotLocals$AbstractContextThreadLocal<T> {
     constructor(factory: Object)
     // private factory: Object;
     // private instrument: PolyglotInstrument;

@@ -11,10 +11,10 @@ export class JsonSerializersModuleValidator extends Object implements Serializer
     // private isDiscriminatorRequired: boolean;
     // private useArrayPolymorphism: boolean;
     // private checkKind(descriptor: SerialDescriptor, actualClass: KClass<Object>): void;
-    contextual<T extends Object | number | string | boolean>(kClass: KClass<T>, provider: (param0: KSerializer<Object>[]) => KSerializer<Object>): void;
-    contextual<T extends Object | number | string | boolean>(kClass: KClass<T>, serializer: KSerializer<T>): void;
-    polymorphic<Base extends Object | number | string | boolean, Sub extends Base>(baseClass: KClass<Base>, actualClass: KClass<Sub>, actualSerializer: KSerializer<Sub>): void;
-    polymorphicDefault<Base extends Object | number | string | boolean>(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
-    polymorphicDefaultDeserializer<Base extends Object | number | string | boolean>(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
-    polymorphicDefaultSerializer<Base extends Object | number | string | boolean>(baseClass: KClass<Base>, defaultSerializerProvider: (param0: Base) => SerializationStrategy<Base> | null): void;
+    contextual<T extends unknown>(kClass: KClass<T>, provider: (param0: KSerializer<Object>[]) => KSerializer<Object>): void;
+    contextual<T extends unknown>(kClass: KClass<T>, serializer: KSerializer<T>): void;
+    polymorphic<Base extends unknown, Sub extends Base>(baseClass: KClass<Base>, actualClass: KClass<Sub>, actualSerializer: KSerializer<Sub>): void;
+    polymorphicDefault<Base extends unknown>(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
+    polymorphicDefaultDeserializer<Base extends unknown>(baseClass: KClass<Base>, defaultDeserializerProvider: (param0: string | null) => DeserializationStrategy<Base> | null): void;
+    polymorphicDefaultSerializer<Base extends unknown>(baseClass: KClass<Base>, defaultSerializerProvider: (param0: Base) => SerializationStrategy<Base> | null): void;
 }

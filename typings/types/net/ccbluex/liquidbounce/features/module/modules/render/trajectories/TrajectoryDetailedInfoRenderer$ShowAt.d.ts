@@ -21,7 +21,7 @@ export class TrajectoryDetailedInfoRenderer$ShowAt extends Enum<TrajectoryDetail
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
-    andThen<V extends Object | number | string | boolean>(arg0: (param0: Vec3) => V): (param0: TrajectoryInfoRenderer, param1: TrajectoryInfoRenderer$SimulationResult) => V;
+    andThen<V extends unknown>(arg0: (param0: Vec3) => V): (param0: TrajectoryInfoRenderer, param1: TrajectoryInfoRenderer$SimulationResult) => V;
     apply(renderer: TrajectoryInfoRenderer, result: TrajectoryInfoRenderer$SimulationResult): Vec3;
     name(): "OWNER" | "ENTITY" | "LANDING";
 }

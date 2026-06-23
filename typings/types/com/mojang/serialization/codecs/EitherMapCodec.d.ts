@@ -11,7 +11,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class EitherMapCodec<F extends Object | number | string | boolean, S extends Object | number | string | boolean> extends MapCodec<Either<F, S>> {
+export class EitherMapCodec<F extends unknown, S extends unknown> extends MapCodec<Either<F, S>> {
     static assumeMapUnsafe(paramarg0: Codec<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
     static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
@@ -23,10 +23,10 @@ export class EitherMapCodec<F extends Object | number | string | boolean, S exte
     constructor(arg0: MapCodec<F>, arg1: MapCodec<S>)
     // private first: MapCodec<F>;
     // private second: MapCodec<S>;
-    decode<T extends Object | number | string | boolean>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Either<F, S>>;
-    encode<T extends Object | number | string | boolean>(arg0: Either<F, S>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
+    decode<T extends unknown>(arg0: DynamicOps<T>, arg1: MapLike<T>): DataResult<Either<F, S>>;
+    encode<T extends unknown>(arg0: Either<F, S>, arg1: DynamicOps<T>, arg2: RecordBuilder<T>): RecordBuilder<T>;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
-    keys<T extends Object | number | string | boolean>(arg0: DynamicOps<T>): Stream<T>;
+    keys<T extends unknown>(arg0: DynamicOps<T>): Stream<T>;
     toString(): string;
 }

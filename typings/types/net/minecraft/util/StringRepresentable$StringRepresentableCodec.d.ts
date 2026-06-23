@@ -72,15 +72,15 @@ export class StringRepresentable$StringRepresentableCodec<S extends StringRepres
     constructor(valueArray: S[], nameResolver: (param0: string) => S, idResolver: (param0: S) => number)
     // private codec: Codec<S>;
     comapFlatMap(arg0: (param0: S) => DataResult<S>, arg1: (param0: S) => S): Codec<S>;
-    decode<T extends Object | number | string | boolean>(arg0: Dynamic<T>): DataResult<Pair<S, T>>;
-    decode<T extends Object | number | string | boolean>(ops: DynamicOps<T>, input: T): DataResult<Pair<S, T>>;
+    decode<T extends unknown>(arg0: Dynamic<T>): DataResult<Pair<S, T>>;
+    decode<T extends unknown>(ops: DynamicOps<T>, input: T): DataResult<Pair<S, T>>;
     deprecated(arg0: number): Codec<S>;
-    dispatch<E extends Object | number | string | boolean>(arg0: (param0: E) => S, arg1: (param0: S) => MapCodec<E>): Codec<E>;
-    dispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => S, arg2: (param0: S) => MapCodec<E>): Codec<E>;
-    dispatchMap<E extends Object | number | string | boolean>(arg0: (param0: E) => S, arg1: (param0: S) => MapCodec<E>): MapCodec<E>;
-    dispatchMap<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => S, arg2: (param0: S) => MapCodec<E>): MapCodec<E>;
-    dispatchStable<E extends Object | number | string | boolean>(arg0: (param0: E) => S, arg1: (param0: S) => MapCodec<E>): Codec<E>;
-    encode<T extends Object | number | string | boolean>(input: S, ops: DynamicOps<T>, prefix: T): DataResult<T>;
+    dispatch<E extends unknown>(arg0: (param0: E) => S, arg1: (param0: S) => MapCodec<E>): Codec<E>;
+    dispatch<E extends unknown>(arg0: string, arg1: (param0: E) => S, arg2: (param0: S) => MapCodec<E>): Codec<E>;
+    dispatchMap<E extends unknown>(arg0: (param0: E) => S, arg1: (param0: S) => MapCodec<E>): MapCodec<E>;
+    dispatchMap<E extends unknown>(arg0: string, arg1: (param0: E) => S, arg2: (param0: S) => MapCodec<E>): MapCodec<E>;
+    dispatchStable<E extends unknown>(arg0: (param0: E) => S, arg1: (param0: S) => MapCodec<E>): Codec<E>;
+    encode<T extends unknown>(input: S, ops: DynamicOps<T>, prefix: T): DataResult<T>;
     fieldOf(arg0: string): MapCodec<S>;
     flatComapMap(arg0: (param0: S) => S, arg1: (param0: S) => DataResult<S>): Codec<S>;
     flatXmap(arg0: (param0: S) => DataResult<S>, arg1: (param0: S) => DataResult<S>): Codec<S>;
@@ -103,12 +103,12 @@ export class StringRepresentable$StringRepresentableCodec<S extends StringRepres
     orElseGet(arg0: (param0: string) => void, arg1: () => S): Codec<S>;
     orElseGet(arg0: () => S): Codec<S>;
     orElseGet(arg0: (param0: string) => Object | null, arg1: () => S): Codec<S>;
-    partialDispatch<E extends Object | number | string | boolean>(arg0: string, arg1: (param0: E) => DataResult<S>, arg2: (param0: S) => DataResult<MapCodec<E>>): Codec<E>;
+    partialDispatch<E extends unknown>(arg0: string, arg1: (param0: E) => DataResult<S>, arg2: (param0: S) => DataResult<MapCodec<E>>): Codec<E>;
     promotePartial(arg0: (param0: string) => void): Codec<S>;
     sizeLimitedListOf(arg0: number): Codec<S[]>;
     stable(): Codec<S>;
     validate(arg0: (param0: S) => DataResult<S>): Codec<S>;
-    withAlternative<U extends Object | number | string | boolean>(arg0: Codec<U>, arg1: (param0: U) => S): Codec<S>;
+    withAlternative<U extends unknown>(arg0: Codec<U>, arg1: (param0: U) => S): Codec<S>;
     withAlternative(arg0: Codec<S>): Codec<S>;
     withLifecycle(arg0: Lifecycle): Codec<S>;
     xmap(arg0: (param0: S) => S, arg1: (param0: S) => S): Codec<S>;

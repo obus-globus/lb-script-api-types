@@ -36,7 +36,7 @@ export abstract class AbstractPolyglotImpl$AbstractHostLanguageService extends A
     toHostException(hostContext: Object, exception: Throwable): RuntimeException;
     toHostObject(context: Object, value: Object): Object;
     toHostResourceError(hostException: Throwable): Error;
-    toHostType<T extends Object | number | string | boolean>(hostNode: Object, targetNode: Object, hostContext: Object, value: Object, targetType: Class<T>, genericType: Type): T;
+    toHostType<T extends unknown>(hostNode: Object, targetNode: Object, hostContext: Object, value: Object, targetType: Class<T>, genericType: Type): T;
     unboxHostException(hostValue: Throwable): Throwable;
     unboxHostObject(hostValue: Object): Object;
     unboxProxyObject(hostValue: Object): Object;

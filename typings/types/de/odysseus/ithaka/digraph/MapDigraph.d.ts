@@ -6,7 +6,7 @@ import type { MapDigraph$VertexMapFactory } from '../../../../de/odysseus/ithaka
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { OptionalInt } from '../../../../java/util/OptionalInt.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class MapDigraph<V extends Object | number | string | boolean> extends Object implements Digraph<V> {
+export class MapDigraph<V extends unknown> extends Object implements Digraph<V> {
     static UNIT_WEIGHT: OptionalInt;
     static UNIT_WEIGHTS: EdgeWeights<Object>;
     static getDefaultDigraphFactory(): DigraphFactory<MapDigraph<Object>>;

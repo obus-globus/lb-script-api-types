@@ -12,7 +12,7 @@ export interface WebSocket extends Object{
     close(arg0: number): void;
     close(arg0: number, arg1: string): void;
     closeConnection(arg0: number, arg1: string): void;
-    getAttachment<T extends Object | number | string | boolean>(): T;
+    getAttachment<T extends unknown>(): T;
     getDraft(): Draft;
     getLocalSocketAddress(): InetSocketAddress;
     getProtocol(): IProtocol;
@@ -33,5 +33,5 @@ export interface WebSocket extends Object{
     sendFrame(arg0: Framedata): void;
     sendFrame(arg0: Framedata[]): void;
     sendPing(): void;
-    setAttachment<T extends Object | number | string | boolean>(arg0: T): void;
+    setAttachment<T extends unknown>(arg0: T): void;
 }

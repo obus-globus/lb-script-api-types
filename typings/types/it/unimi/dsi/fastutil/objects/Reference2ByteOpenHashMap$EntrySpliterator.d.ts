@@ -14,8 +14,8 @@ export class Reference2ByteOpenHashMap$EntrySpliterator extends Reference2ByteOp
     static SUBSIZED: number;
     constructor(null_: Reference2ByteOpenHashMap$EntrySpliterator)
     constructor(null_: Reference2ByteOpenHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
-    acceptOnIndex<K extends Object | number | string | boolean>(arg0: (param0: Reference2ByteMap$Entry<K>) => void, arg1: number): void;
+    acceptOnIndex<K extends unknown>(arg0: (param0: Reference2ByteMap$Entry<K>) => void, arg1: number): void;
     characteristics(): number;
-    makeForSplit<K extends Object | number | string | boolean>(arg0: number, arg1: number, arg2: boolean): Reference2ByteOpenHashMap$EntrySpliterator;
+    makeForSplit<K extends unknown>(arg0: number, arg1: number, arg2: boolean): Reference2ByteOpenHashMap$EntrySpliterator;
     skip(arg0: number): number;
 }

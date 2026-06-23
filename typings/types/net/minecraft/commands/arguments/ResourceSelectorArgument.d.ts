@@ -11,7 +11,7 @@ import type { CommandSourceStack } from '../../../../net/minecraft/commands/Comm
 import type { Holder$Reference } from '../../../../net/minecraft/core/Holder$Reference.d.ts'
 import type { HolderLookup } from '../../../../net/minecraft/core/HolderLookup.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
-export class ResourceSelectorArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<Holder$Reference<T>[]> {
+export class ResourceSelectorArgument<T extends unknown> extends Object implements ArgumentType<Holder$Reference<T>[]> {
     static ERROR_NO_MATCHES: Dynamic2CommandExceptionType;
     static getSelectedResources(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Object>[];
     static parse(paramreader: StringReader, paramregistry: HolderLookup<Object>): Holder$Reference<Object>[];
@@ -20,8 +20,8 @@ export class ResourceSelectorArgument<T extends Object | number | string | boole
     // private registryKey: ResourceKey<T[]>;
     // private registryLookup: HolderLookup<T>;
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): Holder$Reference<T>[];
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends unknown>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): Holder$Reference<T>[];
     parse(reader: StringReader): Holder$Reference<T>[];
 }

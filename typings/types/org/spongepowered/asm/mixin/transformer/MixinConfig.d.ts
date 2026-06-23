@@ -69,12 +69,12 @@ export class MixinConfig extends Object implements Comparable<MixinConfig>, IMix
     // private checkVersion(): boolean;
     compareTo(arg0: MixinConfig): number;
     conformOverwriteVisibility(): boolean;
-    decorate<V extends Object | number | string | boolean>(arg0: string, arg1: V): void;
+    decorate<V extends unknown>(arg0: string, arg1: V): void;
     // private findExtensionClass(arg0: string, arg1: Class<Object>, arg2: string): Class<Object>;
     getClasses(): string[];
     getCleanSourceId(): string;
     getDeclaredMixinCount(): number;
-    getDecoration<V extends Object | number | string | boolean>(arg0: string): V;
+    getDecoration<V extends unknown>(arg0: string): V;
     getDefaultInjectorGroup(): string;
     getDefaultMixinPriority(): number;
     getDefaultRequiredInjections(): number;

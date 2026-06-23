@@ -13,7 +13,7 @@ export class TemplateLiteralNode$UntaggedTemplateLiteralNode extends TemplateLit
     constructor(token: number, finish: number, expressions: Expression[])
     readonly expressions: Expression[];
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getExpressions(): Expression[];
     toString(): string;
     toString(sb: StringBuilder, printType: boolean): void;

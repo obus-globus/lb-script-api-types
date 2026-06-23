@@ -8,7 +8,7 @@ import type { StringRange } from '../../../../com/mojang/brigadier/context/Strin
 import type { SuggestionContext } from '../../../../com/mojang/brigadier/context/SuggestionContext.d.ts'
 import type { CommandNode } from '../../../../com/mojang/brigadier/tree/CommandNode.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class CommandContextBuilder<S extends Object | number | string | boolean> extends Object {
+export class CommandContextBuilder<S extends unknown> extends Object {
     constructor(arg0: CommandDispatcher<S>, arg1: S, arg2: CommandNode<S>, arg3: number)
     readonly arguments: { [key: string]: ParsedArgument<S, Object> };
     readonly child: CommandContextBuilder<S>;

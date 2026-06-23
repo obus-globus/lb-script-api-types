@@ -12,11 +12,11 @@ export class DataComponentMap$Builder extends Object implements FabricComponentM
     addValidator(newValidator: (param0: TypedDataComponent<Object>[]) => void): DataComponentMap$Builder;
     build(): TypedDataComponent<Object>[];
     contains(arg0: DataComponentType<Object>): boolean;
-    getOrCreate<T extends Object | number | string | boolean>(arg0: DataComponentType<T>, arg1: () => T): T;
+    getOrCreate<T extends unknown>(arg0: DataComponentType<T>, arg1: () => T): T;
     getOrCreate(arg0: DataComponentType<Object>, arg1: () => Object): Object;
-    getOrDefault<T extends Object | number | string | boolean>(arg0: DataComponentType<T>, arg1: T): T;
-    getOrEmpty<T extends Object | number | string | boolean>(arg0: DataComponentType<T[]>): T[];
+    getOrDefault<T extends unknown>(arg0: DataComponentType<T>, arg1: T): T;
+    getOrEmpty<T extends unknown>(arg0: DataComponentType<T[]>): T[];
     getOrEmpty(arg0: DataComponentType<Object>): (Object | null)[];
-    set<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): DataComponentMap$Builder;
-    setUnchecked<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: Object): void;
+    set<T extends unknown>(type: DataComponentType<T>, value: T): DataComponentMap$Builder;
+    setUnchecked<T extends unknown>(type: DataComponentType<T>, value: Object): void;
 }

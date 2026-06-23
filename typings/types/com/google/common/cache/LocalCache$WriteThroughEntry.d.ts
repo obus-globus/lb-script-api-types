@@ -14,6 +14,6 @@ export class LocalCache$WriteThroughEntry extends Object implements Map$Entry<K,
     readonly value: V;
     equals(object: Object | null): boolean;
     hashCode(): number;
-    setValue<V extends Object | number | string | boolean>(newValue: V): V;
+    setValue<V extends unknown>(newValue: V): V;
     toString(): string;
 }

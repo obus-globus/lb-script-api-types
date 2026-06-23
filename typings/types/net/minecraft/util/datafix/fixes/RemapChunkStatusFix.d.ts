@@ -14,6 +14,6 @@ export class RemapChunkStatusFix extends DataFix {
     constructor(schema: Schema, name: string, mapper: (param0: string) => Object | null)
     // private mapper: (param0: string) => Object | null;
     // private name: string;
-    // private fixStatus<T extends Object | number | string | boolean>(dynamic: Dynamic<T>): Dynamic<T>;
+    // private fixStatus<T extends unknown>(dynamic: Dynamic<T>): Dynamic<T>;
     makeRule(): TypeRewriteRule;
 }

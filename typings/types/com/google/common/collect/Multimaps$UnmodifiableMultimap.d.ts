@@ -4,7 +4,7 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export class Multimaps$UnmodifiableMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends ForwardingMultimap<K, V> implements Serializable {
+export class Multimaps$UnmodifiableMultimap<K extends unknown, V extends unknown> extends ForwardingMultimap<K, V> implements Serializable {
     constructor(delegate: Multimap<K, V>)
     // private delegate: Multimap<K, V>;
     // private entries: Map$Entry<K, V>[];

@@ -174,7 +174,7 @@ export class Axolotl extends Animal implements Bucketable {
     walkAnimationState: AnimationState;
     walkUnderWaterAnimationState: AnimationState;
     addAdditionalSaveData(output: ValueOutput): void;
-    applyImplicitComponent<T extends Object | number | string | boolean>(type: DataComponentType<T>, value: T): boolean;
+    applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;
     applyImplicitComponents(components: DataComponentGetter): void;
     applySupportingEffects(player: Player): void;
     baseTick(): void;
@@ -186,7 +186,7 @@ export class Axolotl extends Animal implements Bucketable {
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     finalizeSpawn(level: ServerLevelAccessor, difficulty: DifficultyInstance, spawnReason: EntitySpawnReason, groupData: SpawnGroupData): SpawnGroupData;
     fromBucket(): boolean;
-    get<T extends Object | number | string | boolean>(type: DataComponentType<T>): T;
+    get<T extends unknown>(type: DataComponentType<T>): T;
     getAmbientSound(): SoundEvent;
     getBrain(): Brain<Axolotl>;
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): AgeableMob;

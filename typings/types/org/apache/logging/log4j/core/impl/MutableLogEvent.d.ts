@@ -45,7 +45,7 @@ export class MutableLogEvent extends Object implements LogEvent, ParameterVisita
     readonly thrown: Throwable;
     clear(): void;
     createMemento(): Log4jLogEvent;
-    forEachParameter<S extends Object | number | string | boolean>(action: ParameterConsumer<S>, state: S): void;
+    forEachParameter<S extends unknown>(action: ParameterConsumer<S>, state: S): void;
     formatTo(buffer: StringBuilder): void;
     getContextData(): ReadOnlyStringMap;
     getContextMap(): { [key: string]: string };

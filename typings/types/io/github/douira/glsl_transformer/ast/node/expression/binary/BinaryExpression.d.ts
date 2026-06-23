@@ -12,7 +12,7 @@ export abstract class BinaryExpression extends Expression {
     constructor(arg0: Expression, arg1: Expression)
     left: Expression;
     right: Expression;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): BinaryExpression;
     cloneInto(arg0: Root): BinaryExpression;
     enterNode(arg0: ASTListener): void;

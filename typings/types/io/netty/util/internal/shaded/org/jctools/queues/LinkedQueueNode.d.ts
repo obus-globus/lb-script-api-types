@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-export class LinkedQueueNode<E extends Object | number | string | boolean> extends Object {
+export class LinkedQueueNode<E extends unknown> extends Object {
     constructor()
     constructor(arg0: E)
     // private next: LinkedQueueNode<E>;

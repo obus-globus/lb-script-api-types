@@ -25,7 +25,7 @@ export class RoutingContext extends Object {
     forbidden(reason: string): void;
     internalServerError(reason: string): void;
     notFound(path: string, reason: string): void;
-    receive<T extends Object | number | string | boolean>(gson: Gson): T;
+    receive<T extends unknown>(gson: Gson): T;
     respond(body: JsonElement, gson: Gson): void;
     respond(response: FullHttpResponse): void;
     respond(status: HttpResponseStatus, body: JsonElement, gson: Gson): void;

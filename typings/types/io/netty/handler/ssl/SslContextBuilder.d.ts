@@ -67,7 +67,7 @@ export class SslContextBuilder extends Object {
     keyManager(arg0: KeyManager): SslContextBuilder;
     keyManager(arg0: KeyManagerFactory): SslContextBuilder;
     keyStoreType(arg0: string): SslContextBuilder;
-    option<T extends Object | number | string | boolean>(arg0: SslContextOption<T>, arg1: T): SslContextBuilder;
+    option<T extends unknown>(arg0: SslContextOption<T>, arg1: T): SslContextBuilder;
     protocols(arg0: string[]): SslContextBuilder;
     secureRandom(arg0: SecureRandom): SslContextBuilder;
     serverName(arg0: SNIServerName): SslContextBuilder;

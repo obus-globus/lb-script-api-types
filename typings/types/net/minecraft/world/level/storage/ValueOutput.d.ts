@@ -10,7 +10,7 @@ export interface ValueOutput extends Object, FabricValueOutput, ValueOutputMixin
     childrenList(name: string): ValueOutput$ValueOutputList;
     discard(name: string): void;
     isEmpty(): boolean;
-    list<T extends Object | number | string | boolean>(name: string, codec: Codec<T>): ValueOutput$TypedOutputList<T>;
+    list<T extends unknown>(name: string, codec: Codec<T>): ValueOutput$TypedOutputList<T>;
     putBoolean(name: string, value: boolean): void;
     putByte(name: string, value: number): void;
     putByteArray(arg0: string, arg1: number[]): void;
@@ -22,7 +22,7 @@ export interface ValueOutput extends Object, FabricValueOutput, ValueOutputMixin
     putLongArray(arg0: string, arg1: number[]): void;
     putShort(name: string, value: number): void;
     putString(name: string, value: string): void;
-    store<T extends Object | number | string | boolean>(codec: MapCodec<T>, value: T): void;
-    store<T extends Object | number | string | boolean>(name: string, codec: Codec<T>, value: T): void;
-    storeNullable<T extends Object | number | string | boolean>(name: string, codec: Codec<T>, value: T): void;
+    store<T extends unknown>(codec: MapCodec<T>, value: T): void;
+    store<T extends unknown>(name: string, codec: Codec<T>, value: T): void;
+    storeNullable<T extends unknown>(name: string, codec: Codec<T>, value: T): void;
 }

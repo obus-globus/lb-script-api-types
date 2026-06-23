@@ -3,7 +3,7 @@ import type { ElementOrder } from '../../../../com/google/common/graph/ElementOr
 import type { ValueGraph } from '../../../../com/google/common/graph/ValueGraph.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class ForwardingValueGraph<N extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractValueGraph<N, V> {
+export abstract class ForwardingValueGraph<N extends unknown, V extends unknown> extends AbstractValueGraph<N, V> {
     constructor()
     adjacentNodes(node: N): N[];
     allowsSelfLoops(): boolean;

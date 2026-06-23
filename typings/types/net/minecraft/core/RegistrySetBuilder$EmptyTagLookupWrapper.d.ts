@@ -9,7 +9,7 @@ import type { HolderOwner } from '../../../net/minecraft/core/HolderOwner.d.ts'
 import type { RegistrySetBuilder$EmptyTagRegistryLookup } from '../../../net/minecraft/core/RegistrySetBuilder$EmptyTagRegistryLookup.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
-export class RegistrySetBuilder$EmptyTagLookupWrapper<T extends Object | number | string | boolean> extends RegistrySetBuilder$EmptyTagRegistryLookup<T> implements HolderLookup$RegistryLookup$Delegate<T> {
+export class RegistrySetBuilder$EmptyTagLookupWrapper<T extends unknown> extends RegistrySetBuilder$EmptyTagRegistryLookup<T> implements HolderLookup$RegistryLookup$Delegate<T> {
     private constructor(owner: HolderOwner<T>, parent: HolderLookup$RegistryLookup<T>)
     // private parent: HolderLookup$RegistryLookup<T>;
     get(id: ResourceKey<T>): Optional<Holder$Reference<T>>;

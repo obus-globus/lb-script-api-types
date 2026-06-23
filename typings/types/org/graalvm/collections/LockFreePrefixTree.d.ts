@@ -10,5 +10,5 @@ export class LockFreePrefixTree extends Object {
     allocator(): LockFreePrefixTree$Allocator;
     reset(): void;
     root(): LockFreePrefixTree$Node;
-    topDown<C extends Object | number | string | boolean>(initialContext: C, createContext: (param0: C, param1: number) => C, consumeValue: (param0: C, param1: number) => void): void;
+    topDown<C extends unknown>(initialContext: C, createContext: (param0: C, param1: number) => C, consumeValue: (param0: C, param1: number) => void): void;
 }

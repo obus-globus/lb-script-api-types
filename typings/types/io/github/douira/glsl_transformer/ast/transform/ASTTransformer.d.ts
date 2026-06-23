@@ -10,7 +10,7 @@ import type { JobParameters } from '../../../../../../io/github/douira/glsl_tran
 import type { ParameterizedTransformer } from '../../../../../../io/github/douira/glsl_transformer/ast/transform/ParameterizedTransformer.d.ts'
 import type { TokenFilter } from '../../../../../../io/github/douira/glsl_transformer/token_filter/TokenFilter.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class ASTTransformer<J extends JobParameters, V extends Object | number | string | boolean> extends ASTParser implements ParameterizedTransformer<J, V> {
+export abstract class ASTTransformer<J extends JobParameters, V extends unknown> extends ASTParser implements ParameterizedTransformer<J, V> {
     static _getInternalInstance(): ASTParser;
     constructor()
     readonly jobParameters: J;

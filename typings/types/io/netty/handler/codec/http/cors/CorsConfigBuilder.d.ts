@@ -34,8 +34,8 @@ export class CorsConfigBuilder extends Object {
     exposeHeaders(arg0: string[]): CorsConfigBuilder;
     maxAge(arg0: number): CorsConfigBuilder;
     noPreflightResponseHeaders(): CorsConfigBuilder;
-    preflightResponseHeader<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: () => T): CorsConfigBuilder;
+    preflightResponseHeader<T extends unknown>(arg0: CharSequence, arg1: () => T): CorsConfigBuilder;
     preflightResponseHeader(arg0: CharSequence, arg1: Object[]): CorsConfigBuilder;
-    preflightResponseHeader<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: T[]): CorsConfigBuilder;
+    preflightResponseHeader<T extends unknown>(arg0: CharSequence, arg1: T[]): CorsConfigBuilder;
     shortCircuit(): CorsConfigBuilder;
 }

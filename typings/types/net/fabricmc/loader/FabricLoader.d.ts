@@ -13,7 +13,7 @@ export abstract class FabricLoader extends Object implements FabricLoader_2 {
     constructor()
     getConfigDir(): Path[];
     getConfigDirectory(): File;
-    getEntrypoints<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T[];
+    getEntrypoints<T extends unknown>(arg0: string, arg1: Class<T>): T[];
     getEnvironmentType(): EnvType;
     getGameDir(): Path[];
     getGameDirectory(): File;

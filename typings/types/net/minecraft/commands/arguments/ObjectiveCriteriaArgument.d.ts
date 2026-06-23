@@ -15,9 +15,9 @@ export class ObjectiveCriteriaArgument extends Object implements ArgumentType<Ob
     static getCriteria(paramcontext: CommandContext<CommandSourceStack>, paramname: string): ObjectiveCriteria;
     private constructor()
     getExamples(): string[];
-    getName<T extends Object | number | string | boolean>(type: Stat<T>[], value: Object): string;
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): ObjectiveCriteria;
+    getName<T extends unknown>(type: Stat<T>[], value: Object): string;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends unknown>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): ObjectiveCriteria;
     parse(reader: StringReader): ObjectiveCriteria;
 }

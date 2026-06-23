@@ -12,7 +12,7 @@ export class GLSLParser$FunctionPrototypeContext extends ParserRuleContext {
     IDENTIFIER(): TerminalNode;
     LPAREN(): TerminalNode;
     RPAREN(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     attribute(): GLSLParser$AttributeContext[];
     attribute(arg0: number): GLSLParser$AttributeContext;
     enterRule(arg0: ParseTreeListener): void;

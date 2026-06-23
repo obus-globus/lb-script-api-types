@@ -3,7 +3,7 @@ import type { DependencyHelper } from '../../../../../../../../net/fabricmc/load
 import type { IConstr } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/IConstr.d.ts'
 import type { IVec } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/IVec.d.ts'
 import type { IVecInt } from '../../../../../../../../net/fabricmc/loader/impl/lib/sat4j/specs/IVecInt.d.ts'
-export class ImplicationAnd<T extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object {
+export class ImplicationAnd<T extends unknown, C extends unknown> extends Object {
     constructor(arg0: DependencyHelper<T, C>, arg1: IVecInt)
     // private clause: IVecInt;
     // private helper: DependencyHelper<T, C>;

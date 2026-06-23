@@ -13,5 +13,5 @@ export class EmptyStatement extends SemiTerminalStatement {
     clone(): EmptyStatement;
     cloneInto(arg0: Root): EmptyStatement;
     getStatementType(): Statement$StatementType;
-    statementAccept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    statementAccept<R extends unknown>(arg0: ASTVisitor<R>): R;
 }

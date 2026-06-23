@@ -12,7 +12,7 @@ export class GLSLParser$BitwiseAndExpressionContext extends GLSLParser$FiniteExp
     op: Token;
     right: GLSLParser$FiniteExpressionContext;
     BITWISE_AND_OP(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     enterRule(arg0: ParseTreeListener): void;
     exitRule(arg0: ParseTreeListener): void;
     finiteExpression(): GLSLParser$FiniteExpressionContext[];

@@ -1,4 +1,4 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface CheckedFunction<T extends Object | number | string | boolean, R extends Object | number | string | boolean> extends Object{
+export interface CheckedFunction<T extends unknown, R extends unknown> extends Object{
     apply(arg0: T): R;
 }

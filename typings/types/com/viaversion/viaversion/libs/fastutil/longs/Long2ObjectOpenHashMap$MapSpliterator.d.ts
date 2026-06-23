@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export abstract class Long2ObjectOpenHashMap$MapSpliterator<ConsumerType extends Object | number | string | boolean, SplitType extends Long2ObjectOpenHashMap$MapSpliterator<Object, any>> extends Object {
+export abstract class Long2ObjectOpenHashMap$MapSpliterator<ConsumerType extends unknown, SplitType extends Long2ObjectOpenHashMap$MapSpliterator<Object, any>> extends Object {
     constructor(null_: Long2ObjectOpenHashMap$MapSpliterator<Object, any>)
     constructor(null_: Long2ObjectOpenHashMap$MapSpliterator<Object, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;

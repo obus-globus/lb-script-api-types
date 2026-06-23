@@ -54,8 +54,8 @@ export class PolyglotInstrument extends Object implements PolyglotImpl$VMObject 
     isCreated(): boolean;
     isInitialized(): boolean;
     isReadyForContextEvents(): boolean;
-    lookup<T extends Object | number | string | boolean>(serviceClass: Class<T>): T;
-    lookupInternal<T extends Object | number | string | boolean>(serviceClass: Class<T>): T;
+    lookup<T extends unknown>(serviceClass: Class<T>): T;
+    lookupInternal<T extends unknown>(serviceClass: Class<T>): T;
     parseSourceOptions(source: Source, componentOnly: string): OptionValuesImpl;
     // private validateSandbox(sandboxPolicy: SandboxPolicy): void;
 }

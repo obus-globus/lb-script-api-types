@@ -14,7 +14,7 @@ import type { RecipeHolder } from '../../../../net/minecraft/world/item/crafting
 import type { ConfiguredFeature } from '../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
 import type { Structure } from '../../../../net/minecraft/world/level/levelgen/structure/Structure.d.ts'
 import type { StructureTemplatePool } from '../../../../net/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool.d.ts'
-export class ResourceKeyArgument<T extends Object | number | string | boolean> extends Object implements ArgumentType<ResourceKey<T>> {
+export class ResourceKeyArgument<T extends unknown> extends Object implements ArgumentType<ResourceKey<T>> {
     static getAdvancement(paramcontext: CommandContext<CommandSourceStack>, paramname: string): AdvancementHolder;
     static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<ConfiguredFeature<any, any>>;
     static getRecipe(paramcontext: CommandContext<CommandSourceStack>, paramname: string): RecipeHolder<any>;
@@ -25,8 +25,8 @@ export class ResourceKeyArgument<T extends Object | number | string | boolean> e
     constructor(registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
     getExamples(): string[];
-    listSuggestions<S extends Object | number | string | boolean>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    listSuggestions<S extends Object | number | string | boolean>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
-    parse<S extends Object | number | string | boolean>(arg0: StringReader, arg1: S): ResourceKey<T>;
+    listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    listSuggestions<S extends unknown>(context: CommandContext<S>, builder: SuggestionsBuilder): CompletableFuture<Suggestions>;
+    parse<S extends unknown>(arg0: StringReader, arg1: S): ResourceKey<T>;
     parse(reader: StringReader): ResourceKey<T>;
 }

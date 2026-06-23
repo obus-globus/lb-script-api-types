@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class ObjectRBTreeSet$Entry<K extends Object | number | string | boolean> extends Object implements Cloneable {
+export class ObjectRBTreeSet$Entry<K extends unknown> extends Object implements Cloneable {
     constructor()
     constructor(arg0: K)
     // private info: number;

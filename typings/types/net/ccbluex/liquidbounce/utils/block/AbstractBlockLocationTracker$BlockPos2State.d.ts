@@ -12,7 +12,7 @@ import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos
  *
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/AbstractBlockLocationTracker.kt#L210 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/AbstractBlockLocationTracker.kt:210}
  */
-export abstract class AbstractBlockLocationTracker$BlockPos2State<T extends Object | number | string | boolean> extends AbstractBlockLocationTracker<T> {
+export abstract class AbstractBlockLocationTracker$BlockPos2State<T extends unknown> extends AbstractBlockLocationTracker<T> {
     constructor()
     // private positionAndState: Map<BlockPos, T>;
     allPositions(): Sequence<BlockPos>;

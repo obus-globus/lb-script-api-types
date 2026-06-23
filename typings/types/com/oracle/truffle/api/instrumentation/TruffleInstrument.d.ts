@@ -11,8 +11,8 @@ import type { OptionDescriptor } from '../../../../../org/graalvm/options/Option
 export abstract class TruffleInstrument extends Object {
     constructor()
     // private locals: TruffleInstrument$ContextLocalProvider;
-    createContextLocal<T extends Object | number | string | boolean>(factory: (param0: TruffleContext) => T): ContextLocal<T>;
-    createContextThreadLocal<T extends Object | number | string | boolean>(factory: (param0: TruffleContext, param1: Thread) => T): ContextThreadLocal<T>;
+    createContextLocal<T extends unknown>(factory: (param0: TruffleContext) => T): ContextLocal<T>;
+    createContextThreadLocal<T extends unknown>(factory: (param0: TruffleContext, param1: Thread) => T): ContextThreadLocal<T>;
     getContextOptionDescriptors(): OptionDescriptor[];
     getOptionDescriptors(): OptionDescriptor[];
     getSourceOptionDescriptors(): OptionDescriptor[];

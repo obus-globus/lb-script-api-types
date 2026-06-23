@@ -5,11 +5,11 @@ export class MinMaxPriorityQueue$Heap extends Object {
     constructor(null_: MinMaxPriorityQueue$Heap)
     // private ordering: Ordering<E>;
     // private otherHeap: MinMaxPriorityQueue$Heap;
-    bubbleUp<E extends Object | number | string | boolean>(index: number, x: E): void;
-    bubbleUpAlternatingLevels<E extends Object | number | string | boolean>(index: number, x: E): number;
+    bubbleUp<E extends unknown>(index: number, x: E): void;
+    bubbleUpAlternatingLevels<E extends unknown>(index: number, x: E): number;
     compareElements(a: number, b: number): number;
-    crossOver<E extends Object | number | string | boolean>(index: number, x: E): number;
-    crossOverUp<E extends Object | number | string | boolean>(index: number, x: E): number;
+    crossOver<E extends unknown>(index: number, x: E): number;
+    crossOverUp<E extends unknown>(index: number, x: E): number;
     fillHoleAt(index: number): number;
     findMin(index: number, len: number): number;
     findMinChild(index: number): number;
@@ -18,7 +18,7 @@ export class MinMaxPriorityQueue$Heap extends Object {
     // private getLeftChildIndex(i: number): number;
     // private getParentIndex(i: number): number;
     // private getRightChildIndex(i: number): number;
-    swapWithConceptuallyLastElement<E extends Object | number | string | boolean>(actualLastElement: E): number;
-    tryCrossOverAndBubbleUp<E extends Object | number | string | boolean>(removeIndex: number, vacated: number, toTrickle: E): MinMaxPriorityQueue$MoveDesc<E>;
+    swapWithConceptuallyLastElement<E extends unknown>(actualLastElement: E): number;
+    tryCrossOverAndBubbleUp<E extends unknown>(removeIndex: number, vacated: number, toTrickle: E): MinMaxPriorityQueue$MoveDesc<E>;
     // private verifyIndex(i: number): boolean;
 }

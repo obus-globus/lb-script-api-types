@@ -8,10 +8,10 @@ export class Char2ReferenceLinkedOpenHashMap$EntryIterator extends Char2Referenc
     constructor(null_: Char2ReferenceLinkedOpenHashMap$EntryIterator)
     constructor(null_: Char2ReferenceLinkedOpenHashMap$EntryIterator, arg1: string)
     // private entry: Char2ReferenceLinkedOpenHashMap$MapEntry;
-    acceptOnIndex<V extends Object | number | string | boolean>(arg0: (param0: Char2ReferenceMap$Entry<V>) => void, arg1: number): void;
-    add<V extends Object | number | string | boolean>(arg0: Char2ReferenceMap$Entry<V>): void;
-    next<V extends Object | number | string | boolean>(): Char2ReferenceLinkedOpenHashMap$MapEntry;
-    previous<V extends Object | number | string | boolean>(): Char2ReferenceLinkedOpenHashMap$MapEntry;
+    acceptOnIndex<V extends unknown>(arg0: (param0: Char2ReferenceMap$Entry<V>) => void, arg1: number): void;
+    add<V extends unknown>(arg0: Char2ReferenceMap$Entry<V>): void;
+    next<V extends unknown>(): Char2ReferenceLinkedOpenHashMap$MapEntry;
+    previous<V extends unknown>(): Char2ReferenceLinkedOpenHashMap$MapEntry;
     remove(): void;
-    set<V extends Object | number | string | boolean>(arg0: Char2ReferenceMap$Entry<V>): void;
+    set<V extends unknown>(arg0: Char2ReferenceMap$Entry<V>): void;
 }

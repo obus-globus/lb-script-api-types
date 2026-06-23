@@ -4,7 +4,7 @@ import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
-export abstract class AbstractSetting<T extends Object | number | string | boolean> extends Object {
+export abstract class AbstractSetting<T extends unknown> extends Object {
     static mapTranslationKey(paramarg0: string): string;
     constructor(arg0: SettingGroup, arg1: MutableComponent, arg2: T)
     readonly defaultValue: T;

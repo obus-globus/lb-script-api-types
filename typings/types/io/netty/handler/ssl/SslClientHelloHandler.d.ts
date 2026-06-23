@@ -7,7 +7,7 @@ import type { ByteToMessageDecoder$Cumulator } from '../../../../io/netty/handle
 import type { Future } from '../../../../io/netty/util/concurrent/Future.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class SslClientHelloHandler<T extends Object | number | string | boolean> extends ByteToMessageDecoder implements ChannelOutboundHandler {
+export abstract class SslClientHelloHandler<T extends unknown> extends ByteToMessageDecoder implements ChannelOutboundHandler {
     static COMPOSITE_CUMULATOR: ByteToMessageDecoder$Cumulator;
     static MAX_CLIENT_HELLO_LENGTH: number;
     static MERGE_CUMULATOR: ByteToMessageDecoder$Cumulator;

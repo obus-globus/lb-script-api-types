@@ -2,7 +2,7 @@ import type { AtomicReferenceArray } from '../../../../../../../../../java/util/
 import type { Consumer } from '../../../../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../../../../../java/util/Iterator.d.ts'
-export class BaseMpscLinkedAtomicArrayQueue$WeakIterator<E extends Object | number | string | boolean> extends Object implements Iterator<E> {
+export class BaseMpscLinkedAtomicArrayQueue$WeakIterator<E extends unknown> extends Object implements Iterator<E> {
     constructor(arg0: AtomicReferenceArray<E>, arg1: number, arg2: number)
     // private currentBuffer: AtomicReferenceArray<E>;
     // private mask: number;

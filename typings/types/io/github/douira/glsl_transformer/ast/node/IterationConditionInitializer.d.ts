@@ -16,7 +16,7 @@ export class IterationConditionInitializer extends InnerASTNode {
     initializer: Initializer;
     name: Identifier;
     type: FullySpecifiedType;
-    accept<R extends Object | number | string | boolean>(arg0: ASTVisitor<R>): R;
+    accept<R extends unknown>(arg0: ASTVisitor<R>): R;
     clone(): IterationConditionInitializer;
     cloneInto(arg0: Root): IterationConditionInitializer;
     enterNode(arg0: ASTListener): void;

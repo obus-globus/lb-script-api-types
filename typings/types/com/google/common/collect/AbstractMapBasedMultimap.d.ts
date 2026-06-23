@@ -5,7 +5,7 @@ import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
-export abstract class AbstractMapBasedMultimap<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends AbstractMultimap<K, V> implements Serializable {
+export abstract class AbstractMapBasedMultimap<K extends unknown, V extends unknown> extends AbstractMultimap<K, V> implements Serializable {
     constructor(map: Map<K, V[]>)
     // private map: Map<K, V[]>;
     // private totalSize: number;
@@ -34,7 +34,7 @@ export abstract class AbstractMapBasedMultimap<K extends Object | number | strin
     replaceValues(key: K, values: V[]): V[];
     setMap(map: Map<K, V[]>): void;
     size(): number;
-    unmodifiableCollectionSubclass<E extends Object | number | string | boolean>(collection: E[]): E[];
+    unmodifiableCollectionSubclass<E extends unknown>(collection: E[]): E[];
     valueIterator(): Iterator<V>;
     valueSpliterator(): Spliterator<V>;
     values(): V[];

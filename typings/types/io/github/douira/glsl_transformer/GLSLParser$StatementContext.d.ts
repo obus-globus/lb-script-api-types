@@ -17,7 +17,7 @@ import type { ParseTreeVisitor } from '../../../../org/antlr/v4/runtime/tree/Par
 export class GLSLParser$StatementContext extends ParserRuleContext {
     static EMPTY: ParserRuleContext;
     constructor(arg0: ParserRuleContext, arg1: number)
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     caseLabel(): GLSLParser$CaseLabelContext;
     compoundStatement(): GLSLParser$CompoundStatementContext;
     declarationStatement(): GLSLParser$DeclarationStatementContext;

@@ -11,7 +11,7 @@ export class ObjectNode extends Expression {
     constructor(token: number, finish: number, elements: PropertyNode[])
     readonly elements: PropertyNode[];
     accept(visitor: NodeVisitor<LexicalContext>): Node;
-    accept<R extends Object | number | string | boolean>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
+    accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     getElements(): PropertyNode[];
     // private setElements(elements: PropertyNode[]): ObjectNode;
     toString(): string;

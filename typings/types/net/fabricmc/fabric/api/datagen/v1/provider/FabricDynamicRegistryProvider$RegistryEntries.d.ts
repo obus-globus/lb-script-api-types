@@ -5,7 +5,7 @@ import type { ResourceCondition } from '../../../../../../../net/fabricmc/fabric
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { HolderOwner } from '../../../../../../../net/minecraft/core/HolderOwner.d.ts'
 import type { ResourceKey } from '../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
-export class FabricDynamicRegistryProvider$RegistryEntries<T extends Object | number | string | boolean> extends Object {
+export class FabricDynamicRegistryProvider$RegistryEntries<T extends unknown> extends Object {
     constructor(arg0: HolderOwner<T>, arg1: ResourceKey<T[]>, arg2: Codec<T>)
     // private elementCodec: Codec<T>;
     // private lookup: HolderOwner<T>;

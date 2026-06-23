@@ -10,7 +10,7 @@ import type { NetworkInterface } from '../../../../../../java/net/NetworkInterfa
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { RakChannelMetrics } from '../../../../../../org/cloudburstmc/netty/channel/raknet/config/RakChannelMetrics.d.ts'
 import type { RakServerMetrics } from '../../../../../../org/cloudburstmc/netty/channel/raknet/config/RakServerMetrics.d.ts'
-export class RakChannelOption<T extends Object | number | string | boolean> extends ChannelOption<T> {
+export class RakChannelOption<T extends unknown> extends ChannelOption<T> {
     static ALLOCATOR: ChannelOption<ByteBufAllocator>;
     static ALLOW_HALF_CLOSURE: ChannelOption<boolean>;
     static AUTO_CLOSE: ChannelOption<boolean>;

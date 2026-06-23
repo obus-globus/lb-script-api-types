@@ -25,7 +25,7 @@ export class ConstructorStream extends Object {
     forEach(arg0: (param0: ConstructorWrapper) => void): ConstructorStream;
     iterator(): Iterator<ConstructorWrapper>;
     jstream(): Stream<ConstructorWrapper>;
-    map<T extends Object | number | string | boolean>(arg0: (param0: ConstructorWrapper) => T): Stream<T>;
+    map<T extends unknown>(arg0: (param0: ConstructorWrapper) => T): Stream<T>;
     opt(arg0: Class<Object>[]): Optional<ConstructorWrapper>;
     opt(arg0: number): Optional<ConstructorWrapper>;
     parent(): RStream;

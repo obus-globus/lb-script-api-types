@@ -21,7 +21,7 @@ export class GLSLParser$ForStatementContext extends ParserRuleContext {
     LPAREN(): TerminalNode;
     RPAREN(): TerminalNode;
     SEMICOLON(): TerminalNode;
-    accept<T extends Object | number | string | boolean>(arg0: ParseTreeVisitor<T>): T;
+    accept<T extends unknown>(arg0: ParseTreeVisitor<T>): T;
     attribute(): GLSLParser$AttributeContext;
     declarationStatement(): GLSLParser$DeclarationStatementContext;
     emptyStatement(): GLSLParser$EmptyStatementContext;

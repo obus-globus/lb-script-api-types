@@ -2,7 +2,7 @@ import type { AbstractShort2ReferenceFunction } from '../../../../../it/unimi/ds
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../java/lang/Cloneable.d.ts'
-export class Short2ReferenceFunctions$EmptyFunction<V extends Object | number | string | boolean> extends AbstractShort2ReferenceFunction<V> implements Serializable, Cloneable {
+export class Short2ReferenceFunctions$EmptyFunction<V extends unknown> extends AbstractShort2ReferenceFunction<V> implements Serializable, Cloneable {
     constructor()
     clear(): void;
     clone(): Object;

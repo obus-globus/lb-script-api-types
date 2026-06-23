@@ -18,6 +18,6 @@ export abstract class LootPoolEntryContainer$Builder<T extends LootPoolEntryCont
     otherwise(other: LootPoolEntryContainer$Builder<any>): AlternativesEntry$Builder;
     then(other: LootPoolEntryContainer$Builder<any>): SequentialEntry$Builder;
     unwrap(): T;
-    when<E extends Object | number | string | boolean>(collection: E[], conditionProvider: (param0: E) => () => LootItemCondition): T;
+    when<E extends unknown>(collection: E[], conditionProvider: (param0: E) => () => LootItemCondition): T;
     when(condition: () => LootItemCondition): T;
 }

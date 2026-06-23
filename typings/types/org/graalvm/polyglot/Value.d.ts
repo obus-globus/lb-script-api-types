@@ -22,8 +22,8 @@ export class Value extends AbstractValue {
     static fromNativeString(parambasePointer: number, parambyteOffset: number, parambyteLength: number, paramencoding: Value$StringEncoding, paramcopy: boolean): Value;
     static fromNativeString(parambasePointer: number, parambyteLength: number, paramencoding: Value$StringEncoding): Value;
     constructor(dispatch: AbstractPolyglotImpl$AbstractValueDispatch, context: Object, receiver: Object, creatorContext: Context)
-    as<T extends Object | number | string | boolean>(targetType: Class<T>): T;
-    as<T extends Object | number | string | boolean>(targetType: TypeLiteral<T>): T;
+    as<T extends unknown>(targetType: Class<T>): T;
+    as<T extends unknown>(targetType: TypeLiteral<T>): T;
     asBigInteger(): BigInteger;
     asBoolean(): boolean;
     asByte(): number;
@@ -31,7 +31,7 @@ export class Value extends AbstractValue {
     asDouble(): number;
     asDuration(): Duration;
     asFloat(): number;
-    asHostObject<T extends Object | number | string | boolean>(): T;
+    asHostObject<T extends unknown>(): T;
     asInstant(): Instant;
     asInt(): number;
     asLong(): number;

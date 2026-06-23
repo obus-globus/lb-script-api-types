@@ -15,13 +15,13 @@ export class OptionValuesImpl extends Object implements OptionValues {
     // private usedDeprecatedDescriptors: OptionDescriptor[];
     // private validAssertKeys: OptionKey<Object>[];
     // private values: Map<OptionKey<Object>, Object>;
-    // private contains<T extends Object | number | string | boolean>(optionKey: OptionKey<T>): boolean;
+    // private contains<T extends unknown>(optionKey: OptionKey<T>): boolean;
     copy(): OptionValuesImpl;
     copyInto(target: OptionValuesImpl): void;
     equals(obj: Object | null): boolean;
     // private failNotFound(key: string, allOptionsSupplier: () => OptionDescriptor[]): RuntimeException;
     // private findDescriptor(key: string, allowExperimentalOptions: boolean, allOptionsSupplier: () => OptionDescriptor[]): OptionDescriptor;
-    get<T extends Object | number | string | boolean>(optionKey: OptionKey<T>): T;
+    get<T extends unknown>(optionKey: OptionKey<T>): T;
     getDescriptors(): OptionDescriptor[];
     getUnparsedOptionValue(key: OptionKey<Object>): string;
     getUsedDeprecatedDescriptors(): OptionDescriptor[];
@@ -31,7 +31,7 @@ export class OptionValuesImpl extends Object implements OptionValues {
     // private initializeValidAssertKeys(): OptionKey<Object>[];
     put(key: string, value: string, allowExperimentalOptions: boolean, allOptionsSupplier: () => OptionDescriptor[]): OptionDescriptor;
     putAll(providedValues: { [key: string]: string }, allowExperimentalOptions: boolean, allOptionsSupplier: () => OptionDescriptor[]): void;
-    set<T extends Object | number | string | boolean>(optionKey: OptionKey<T>, value: T): void;
+    set<T extends unknown>(optionKey: OptionKey<T>, value: T): void;
     // private slowCompareKey(key: OptionKey<Object>, other: OptionValues): boolean;
     toString(): string;
 }

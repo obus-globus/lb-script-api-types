@@ -6,8 +6,8 @@ import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class CharObjectHashMap$MapIterator extends Object implements Iterator<Map$Entry<string, V>> {
     private constructor(null_: CharObjectHashMap$MapIterator)
     // private iter: CharObjectHashMap$PrimitiveIterator;
-    forEachRemaining<V extends Object | number | string | boolean>(arg0: (param0: Map$Entry<string, V>) => void): void;
+    forEachRemaining<V extends unknown>(arg0: (param0: Map$Entry<string, V>) => void): void;
     hasNext(): boolean;
-    next<V extends Object | number | string | boolean>(): Map$Entry<string, V>;
+    next<V extends unknown>(): Map$Entry<string, V>;
     remove(): void;
 }

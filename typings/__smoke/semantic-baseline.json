@@ -49,13 +49,10 @@
     "types/net/ccbluex/liquidbounce/event/events/ValueChangedEvent.d.ts:5:TS2420",
     "types/net/ccbluex/liquidbounce/event/events/VirtualScreenEvent.d.ts:5:TS2420",
     "types/net/ccbluex/liquidbounce/script/DebugProtocol.d.ts:6:TS2420",
-    "types/net/ccbluex/liquidbounce/script/PolyglotScript$RegisterScript.d.ts:4:TS2344",
     "types/net/ccbluex/liquidbounce/script/ScriptApiRequired.d.ts:10:TS7010",
     "types/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil$TickScheduler.d.ts:7:TS2420",
     "types/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.d.ts:13:TS2416",
-    "types/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.d.ts:41:TS2344",
-    "types/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.d.ts:43:TS2344",
-    "types/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.d.ts:48:TS2344"
+    "types/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.d.ts:41:TS2344"
   ],
   "transitive": {
     "TS1070": 2,
@@ -63,7 +60,7 @@
     "TS2300": 92,
     "TS2304": 11,
     "TS2322": 55,
-    "TS2344": 703,
+    "TS2344": 168,
     "TS2385": 294,
     "TS2416": 339,
     "TS2417": 1,

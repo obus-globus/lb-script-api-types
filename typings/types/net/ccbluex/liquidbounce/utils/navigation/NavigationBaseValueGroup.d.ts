@@ -14,7 +14,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
  *
  * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:38}
  */
-export abstract class NavigationBaseValueGroup<T extends Object | number | string | boolean> extends ToggleableValueGroup {
+export abstract class NavigationBaseValueGroup<T extends unknown> extends ToggleableValueGroup {
     constructor(parent: EventListener | null, name: string, enabled: boolean)
     // private autoAction: NavigationBaseValueGroup$AutoAction[];
     // private /*not mapped: */ getAutoAction(): NavigationBaseValueGroup$AutoAction[];

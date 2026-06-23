@@ -10,7 +10,7 @@ import type { CancellableContinuation } from '../../../kotlinx/coroutines/Cancel
 import type { CancellableContinuationImpl } from '../../../kotlinx/coroutines/CancellableContinuationImpl.d.ts'
 import type { CoroutineDispatcher } from '../../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
 import type { DispatchedTask } from '../../../kotlinx/coroutines/DispatchedTask.d.ts'
-export class DispatchedContinuation<T extends Object | number | string | boolean> extends DispatchedTask<T> implements Continuation<T>, CoroutineStackFrame {
+export class DispatchedContinuation<T extends unknown> extends DispatchedTask<T> implements Continuation<T>, CoroutineStackFrame {
     constructor(dispatcher: CoroutineDispatcher, continuation: Continuation<T>)
     awaitReusability(): void;
     claimReusableCancellableContinuation(): CancellableContinuationImpl<T> | null;

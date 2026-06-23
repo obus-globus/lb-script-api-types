@@ -34,11 +34,11 @@ export class InWorldGameRulesScreen extends AbstractGameRulesScreen implements H
     // private loadingDotsWidget: LoadingDotsWidget;
     // private receivedServerValues: boolean;
     // private serverProvidedRules: GameRule<Object>[];
-    // private collectChangedGameRule<T extends Object | number | string | boolean>(rule: GameRule<T>, entries: ServerboundSetGameRulePacket$Entry[]): void;
-    // private hasGameRuleChanged<T extends Object | number | string | boolean>(rule: GameRule<T>): boolean;
+    // private collectChangedGameRule<T extends unknown>(rule: GameRule<T>, entries: ServerboundSetGameRulePacket$Entry[]): void;
+    // private hasGameRuleChanged<T extends unknown>(rule: GameRule<T>): boolean;
     // private hasPendingChanges(): boolean;
     initContent(): void;
-    // private initializeGameRuleValue<T extends Object | number | string | boolean>(rule: GameRule<T>, valueStr: string): void;
+    // private initializeGameRuleValue<T extends unknown>(rule: GameRule<T>, valueStr: string): void;
     onClose(): void;
     onDone(): void;
     onGameRuleValuesUpdated(values: Map<ResourceKey<GameRule<Object>>, string>): void;

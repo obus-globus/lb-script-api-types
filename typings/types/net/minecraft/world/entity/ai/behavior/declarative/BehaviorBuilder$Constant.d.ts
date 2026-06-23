@@ -11,7 +11,7 @@ import type { BehaviorBuilder } from '../../../../../../../net/minecraft/world/e
 import type { BehaviorBuilder$Instance } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Instance.d.ts'
 import type { BehaviorBuilder$Mu } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/BehaviorBuilder$Mu.d.ts'
 import type { Trigger } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/Trigger.d.ts'
-export class BehaviorBuilder$Constant<E extends LivingEntity, A extends Object | number | string | boolean> extends BehaviorBuilder<E, A> {
+export class BehaviorBuilder$Constant<E extends LivingEntity, A extends unknown> extends BehaviorBuilder<E, A> {
     static create(parambuilder: (param0: BehaviorBuilder$Instance<LivingEntity>) => App<BehaviorBuilder$Mu<LivingEntity>, Trigger<LivingEntity>>): OneShot<LivingEntity>;
     static instance(): BehaviorBuilder$Instance<LivingEntity>;
     static sequence(paramfirst: Trigger<any>, paramsecond: OneShot<any>): OneShot<LivingEntity>;

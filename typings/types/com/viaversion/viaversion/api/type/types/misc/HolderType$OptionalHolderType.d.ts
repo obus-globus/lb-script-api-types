@@ -3,7 +3,7 @@ import type { Ops } from '../../../../../../../com/viaversion/viaversion/api/min
 import type { HolderType } from '../../../../../../../com/viaversion/viaversion/api/type/types/misc/HolderType.d.ts'
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export abstract class HolderType$OptionalHolderType<T extends Object | number | string | boolean> extends HolderType<T> {
+export abstract class HolderType$OptionalHolderType<T extends unknown> extends HolderType<T> {
     constructor(arg0: HolderType<T>)
     // private type: HolderType<T>;
     read(arg0: ByteBuf): Holder<T>;

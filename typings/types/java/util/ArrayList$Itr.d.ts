@@ -7,8 +7,8 @@ export class ArrayList$Itr extends Object implements Iterator<E> {
     // private expectedModCount: number;
     // private lastRet: number;
     checkForComodification(): void;
-    forEachRemaining<E extends Object | number | string | boolean>(arg0: (param0: E) => void): void;
+    forEachRemaining<E extends unknown>(arg0: (param0: E) => void): void;
     hasNext(): boolean;
-    next<E extends Object | number | string | boolean>(): E;
+    next<E extends unknown>(): E;
     remove(): void;
 }

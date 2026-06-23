@@ -8,10 +8,10 @@ export class InjectionNodes$InjectionNode extends Object implements Comparable<I
     readonly id: number;
     readonly originalTarget: AbstractInsnNode;
     compareTo(arg0: InjectionNodes$InjectionNode): number;
-    decorate<V extends Object | number | string | boolean>(arg0: string, arg1: V): InjectionNodes$InjectionNode;
+    decorate<V extends unknown>(arg0: string, arg1: V): InjectionNodes$InjectionNode;
     getCurrentTarget(): AbstractInsnNode;
-    getDecoration<V extends Object | number | string | boolean>(arg0: string): V;
-    getDecoration<V extends Object | number | string | boolean>(arg0: string, arg1: V): V;
+    getDecoration<V extends unknown>(arg0: string): V;
+    getDecoration<V extends unknown>(arg0: string, arg1: V): V;
     getId(): number;
     getOriginalTarget(): AbstractInsnNode;
     hasDecoration(arg0: string): boolean;

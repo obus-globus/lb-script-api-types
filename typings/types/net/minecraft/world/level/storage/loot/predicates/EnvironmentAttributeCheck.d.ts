@@ -8,7 +8,7 @@ import type { EnvironmentAttribute } from '../../../../../../../net/minecraft/wo
 import type { LootContext } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
-export class EnvironmentAttributeCheck<Value extends Object | number | string | boolean> extends Record implements LootItemCondition {
+export class EnvironmentAttributeCheck<Value extends unknown> extends Record implements LootItemCondition {
     static CODEC: Codec<Holder<LootItemCondition>>;
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<EnvironmentAttributeCheck<Object>>;

@@ -1,6 +1,6 @@
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class TreeMultiset$AvlNode<E extends Object | number | string | boolean> extends Object {
+export class TreeMultiset$AvlNode<E extends unknown> extends Object {
     constructor()
     constructor(elem: E, elemCount: number)
     // private distinctElements: number;

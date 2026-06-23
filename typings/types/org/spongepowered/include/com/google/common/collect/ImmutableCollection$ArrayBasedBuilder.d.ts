@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ImmutableCollection$Builder } from '../../../../../../../org/spongepowered/include/com/google/common/collect/ImmutableCollection$Builder.d.ts'
-export abstract class ImmutableCollection$ArrayBasedBuilder<E extends Object | number | string | boolean> extends ImmutableCollection$Builder<E> {
+export abstract class ImmutableCollection$ArrayBasedBuilder<E extends unknown> extends ImmutableCollection$Builder<E> {
     constructor(arg0: number)
     // private contents: Object[];
     // private size: number;

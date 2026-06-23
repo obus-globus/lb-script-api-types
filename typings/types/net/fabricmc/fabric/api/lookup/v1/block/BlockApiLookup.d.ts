@@ -10,7 +10,7 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
 import type { BlockEntity } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockEntityType } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
-export interface BlockApiLookup<A extends Object | number | string | boolean, C extends Object | number | string | boolean> extends Object {
+export interface BlockApiLookup<A extends unknown, C extends unknown> extends Object {
     apiClass(): Class<A>;
     contextClass(): Class<C>;
     find(arg0: Level, arg1: BlockPos, arg2: C): A;

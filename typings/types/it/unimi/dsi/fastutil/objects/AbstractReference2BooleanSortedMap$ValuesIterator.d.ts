@@ -4,7 +4,7 @@ import type { ObjectBidirectionalIterator } from '../../../../../it/unimi/dsi/fa
 import type { Reference2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2BooleanMap$Entry.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class AbstractReference2BooleanSortedMap$ValuesIterator<K extends Object | number | string | boolean> extends Object implements BooleanIterator {
+export class AbstractReference2BooleanSortedMap$ValuesIterator<K extends unknown> extends Object implements BooleanIterator {
     constructor(arg0: ObjectBidirectionalIterator<Reference2BooleanMap$Entry<K>>)
     // private i: ObjectBidirectionalIterator<Reference2BooleanMap$Entry<K>>;
     forEachRemaining(arg0: (param0: boolean) => void): void;

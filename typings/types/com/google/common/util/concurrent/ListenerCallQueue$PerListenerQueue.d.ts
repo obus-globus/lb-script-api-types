@@ -2,7 +2,7 @@ import type { ListenerCallQueue$Event } from '../../../../../com/google/common/u
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class ListenerCallQueue$PerListenerQueue<L extends Object | number | string | boolean> extends Object implements Runnable {
+export class ListenerCallQueue$PerListenerQueue<L extends unknown> extends Object implements Runnable {
     constructor(listener: L, executor: Executor)
     // private executor: Executor;
     // private isThreadScheduled: boolean;

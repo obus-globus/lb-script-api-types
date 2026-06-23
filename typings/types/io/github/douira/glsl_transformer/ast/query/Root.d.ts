@@ -50,5 +50,5 @@ export class Root extends Object {
     unregisterFastRename(arg0: ASTNode): void;
     unregisterIdentifierRename(arg0: Identifier): void;
     unregisterNode(arg0: ASTNode, arg1: boolean): void;
-    withActiveBuildRoot<R extends Object | number | string | boolean>(arg0: (param0: Root) => R): R;
+    withActiveBuildRoot<R extends unknown>(arg0: (param0: Root) => R): R;
 }

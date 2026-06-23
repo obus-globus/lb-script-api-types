@@ -4,7 +4,7 @@ import type { Holder } from '../../../../../../com/viaversion/viaversion/libs/mc
 import type { Registry } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/registry/Registry.d.ts'
 import type { ResourceKey } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/registry/ResourceKey.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class EitherHolder<T extends Object | number | string | boolean> extends Object {
+export class EitherHolder<T extends unknown> extends Object {
     static codec(paramarg0: Registry, paramarg1: Codec<Holder<Object>>): Codec<EitherHolder<Object>>;
     static fileCodec(paramarg0: Registry, paramarg1: Codec<Object>): Codec<EitherHolder<Object>>;
     static fixedCodec(paramarg0: Registry): Codec<EitherHolder<Object>>;

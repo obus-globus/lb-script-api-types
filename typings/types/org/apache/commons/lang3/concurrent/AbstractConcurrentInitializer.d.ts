@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ConcurrentInitializer } from '../../../../../org/apache/commons/lang3/concurrent/ConcurrentInitializer.d.ts'
 import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
-export abstract class AbstractConcurrentInitializer<T extends Object | number | string | boolean, E extends Exception> extends Object implements ConcurrentInitializer<T> {
+export abstract class AbstractConcurrentInitializer<T extends unknown, E extends Exception> extends Object implements ConcurrentInitializer<T> {
     static NUL: () => Object | null;
     constructor()
     constructor(arg0: () => T, arg1: (param0: T) => void)

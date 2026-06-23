@@ -62,7 +62,7 @@ export class WebSocketImpl extends Object implements WebSocket {
     eot(): void;
     flushAndClose(arg0: number, arg1: string, arg2: boolean): void;
     // private generateHttpResponseDueToError(arg0: number): ByteBuffer;
-    getAttachment<T extends Object | number | string | boolean>(): T;
+    getAttachment<T extends unknown>(): T;
     getChannel(): ByteChannel;
     getDraft(): Draft;
     getLastPong(): number;
@@ -90,7 +90,7 @@ export class WebSocketImpl extends Object implements WebSocket {
     sendFrame(arg0: Framedata): void;
     sendFrame(arg0: Framedata[]): void;
     sendPing(): void;
-    setAttachment<T extends Object | number | string | boolean>(arg0: T): void;
+    setAttachment<T extends unknown>(arg0: T): void;
     setChannel(arg0: ByteChannel): void;
     setSelectionKey(arg0: SelectionKey): void;
     setWorkerThread(arg0: WebSocketServer$WebSocketWorker): void;

@@ -5,8 +5,8 @@ export class RoundRobinArray$Itr extends Object implements Iterator<E> {
     constructor(null_: RoundRobinArray$Itr)
     // private cursor: number;
     // private lastRet: number;
-    forEachRemaining<E extends Object | number | string | boolean>(arg0: (param0: E) => void): void;
+    forEachRemaining<E extends unknown>(arg0: (param0: E) => void): void;
     hasNext(): boolean;
-    next<E extends Object | number | string | boolean>(): E;
+    next<E extends unknown>(): E;
     remove(): void;
 }

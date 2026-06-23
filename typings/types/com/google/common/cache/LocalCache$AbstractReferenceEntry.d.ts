@@ -1,7 +1,7 @@
 import type { LocalCache$ValueReference } from '../../../../com/google/common/cache/LocalCache$ValueReference.d.ts'
 import type { ReferenceEntry } from '../../../../com/google/common/cache/ReferenceEntry.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class LocalCache$AbstractReferenceEntry<K extends Object | number | string | boolean, V extends Object | number | string | boolean> extends Object implements ReferenceEntry<K, V> {
+export abstract class LocalCache$AbstractReferenceEntry<K extends unknown, V extends unknown> extends Object implements ReferenceEntry<K, V> {
     constructor()
     getAccessTime(): number;
     getHash(): number;

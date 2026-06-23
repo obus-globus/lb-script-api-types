@@ -6,7 +6,7 @@ import type { ConfigState } from '../../../../../../../net/caffeinemc/mods/sodiu
 import type { Config } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/structure/Config.d.ts'
 import type { DependentValue } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/value/DependentValue.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-export class DynamicValue<V extends Object | number | string | boolean> extends Object implements ConfigState, DependentValue<V> {
+export class DynamicValue<V extends unknown> extends Object implements ConfigState, DependentValue<V> {
     static UPDATE_ON_APPLY: Identifier;
     static UPDATE_ON_REBUILD: Identifier;
     constructor(arg0: (param0: ConfigState) => V, arg1: Identifier[])

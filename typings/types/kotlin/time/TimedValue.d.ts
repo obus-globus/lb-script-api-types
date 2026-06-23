@@ -1,6 +1,6 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Duration } from '../../kotlin/time/Duration.d.ts'
-export class TimedValue<T extends Object | number | string | boolean> extends Object {
+export class TimedValue<T extends unknown> extends Object {
     constructor(value: T, duration: Duration)
     // private duration: Duration;
 // (invalid TS: name contains '-')     /*not mapped: */ getDuration-UwyO8pc(): Duration;

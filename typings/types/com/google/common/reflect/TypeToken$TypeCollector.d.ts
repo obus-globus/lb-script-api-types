@@ -1,6 +1,6 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export abstract class TypeToken$TypeCollector<K extends Object | number | string | boolean> extends Object {
+export abstract class TypeToken$TypeCollector<K extends unknown> extends Object {
     private constructor()
     classesOnly(): TypeToken$TypeCollector<K>;
     collectTypes(type: K): K[];
