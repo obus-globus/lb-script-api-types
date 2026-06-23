@@ -221,6 +221,31 @@ gate v2 ratchets) — these track the *generator-root* fixes.
   incl. `Types`); registry-lb +1. Positive-control verified
   (`Java.type("...Types")` now types). _Layer: registry generator._
 
+## 2026-06-23: skipLibCheck:false debt — what is NOT a mechanical win
+
+Investigated the two buckets that looked safe; both are deeper than they appear.
+Attempted generator fixes regressed the gate and were reverted (package stays at
+the clean 0.38.5 baseline: 60 surface + 2981 transitive).
+
+- **[ ] TS2304 "cannot find name" (348, dominated by `Path` x222 + fastutil
+  primitive maps).** `java.nio.file.Path` is `Iterable`, so `visitClass`
+  deliberately SKIPS generating a module for it (the `shouldIgnoreSuperclass`
+  exclusion that keeps Iterable supertypes from emitting `(Object|null)[]`). It
+  is rendered nominally as `Path[]` but there is no `Path.d.ts` to import from, so
+  adding it to `dependentTypes` is a no-op (the import target does not exist).
+  Real fix = emit modules for Iterable/Map value-types when they are *referenced
+  by name* (distinct from being a supertype) — non-trivial, risks the
+  `(Object|null)[]` regression the exclusion prevents. _Not mechanical._
+- **[ ] TS2300 duplicate `static CODEC`/`STREAM_CODEC` (92).** The duplicate is a
+  symptom: a record/class declares its OWN `static CODEC: MapCodec<Self>` while
+  ALSO inheriting an interface's `static CODEC: Codec<Iface>` (different,
+  covariant type), and `Class.getFields()` returns both. Deduping (keep the
+  class's own) does NOT help: it just trades TS2300 for **TS2417** (static side
+  incorrectly extends base static side) because the covariant static type is
+  itself unrepresentable on a TS `extends` chain. Measured: dedup attempt moved
+  ~46 errors TS2300 -> TS2417, net worse. Real fix = drop or widen conflicting
+  covariant statics (a deliberate fidelity tradeoff), not a dedup. _Not mechanical._
+
 ## Smaller, standalone
 
 - **[x] Generator emitted invalid TS for 2 coroutine/inline-class declarations.**
