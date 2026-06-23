@@ -11,7 +11,6 @@ import type { Holder$Reference } from '../../../../net/minecraft/core/Holder$Ref
 import type { JsonRpcLogger } from '../../../../net/minecraft/server/jsonrpc/JsonRpcLogger.d.ts'
 import type { ManagementServer } from '../../../../net/minecraft/server/jsonrpc/ManagementServer.d.ts'
 import type { OutgoingRpcMethod } from '../../../../net/minecraft/server/jsonrpc/OutgoingRpcMethod.d.ts'
-import type { PendingRpcRequest } from '../../../../net/minecraft/server/jsonrpc/PendingRpcRequest.d.ts'
 import type { MinecraftApi } from '../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftApi.d.ts'
 import type { ClientInfo } from '../../../../net/minecraft/server/jsonrpc/methods/ClientInfo.d.ts'
 export class Connection extends SimpleChannelInboundHandler<JsonElement> {
@@ -21,7 +20,7 @@ export class Connection extends SimpleChannelInboundHandler<JsonElement> {
     // private jsonRpcLogger: JsonRpcLogger;
     // private managementServer: ManagementServer;
     // private minecraftApi: MinecraftApi;
-    // private pendingRequests: Int2ObjectMap<PendingRpcRequest<Object>>;
+    // private pendingRequests: { [key: string]: any };
     // private transactionId: AtomicInteger;
     channelActive(ctx: ChannelHandlerContext): void;
     channelInactive(ctx: ChannelHandlerContext): void;

@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Date } from '../../../../../java/util/Date.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface ArchiveEntry extends Object{

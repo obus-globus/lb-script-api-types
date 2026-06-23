@@ -8,7 +8,7 @@ export class MinimapTextureAtlasManager extends Object {
     constructor()
     // private allocated: boolean;
     // private availableAtlasPositions: MinimapTextureAtlasManager$AtlasPosition[];
-    // private chunkPosAtlasPosMap: Long2ObjectOpenHashMap<MinimapTextureAtlasManager$AtlasPosition>;
+    // private chunkPosAtlasPosMap: { [key: string]: any };
     // private dirtyAtlasPositions: MinimapTextureAtlasManager$AtlasPosition[];
     // private lock: ReentrantReadWriteLock;
     // private texture: DynamicTexture;

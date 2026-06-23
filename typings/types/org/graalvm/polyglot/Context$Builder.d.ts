@@ -1,6 +1,7 @@
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
 import type { ClassLoader } from '../../../java/lang/ClassLoader.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { ZoneId } from '../../../java/time/ZoneId.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../java/util/function/Predicate.d.ts'

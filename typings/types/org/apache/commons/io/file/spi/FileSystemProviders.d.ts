@@ -1,5 +1,6 @@
 import type { URI } from '../../../../../../java/net/URI.d.ts'
 import type { URL } from '../../../../../../java/net/URL.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { FileSystemProvider } from '../../../../../../java/nio/file/spi/FileSystemProvider.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class FileSystemProviders extends Object {

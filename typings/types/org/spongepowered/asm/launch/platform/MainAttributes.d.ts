@@ -7,7 +7,7 @@ export class MainAttributes extends Object {
     static of(paramarg0: URI): MainAttributes;
     private constructor()
     private constructor(arg0: URI)
-    // private attributes: Attributes;
+    // private attributes: { [key: string]: any };
     get(arg0: Attributes$Name): string;
     get(arg0: string): string;
 }

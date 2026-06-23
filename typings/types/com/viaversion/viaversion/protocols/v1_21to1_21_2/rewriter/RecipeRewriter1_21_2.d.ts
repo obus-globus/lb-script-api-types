@@ -11,7 +11,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RecipeRewriter1_21_2 extends RecipeRewriter1_20_3<ClientboundPacket1_21> implements StorableObject {
     constructor(arg0: Protocol<ClientboundPacket1_21, Object, Object, Object>)
     readonly currentRecipeIdentifier: string;
-    // private recipeGroups: Object2IntMap<string>;
+    // private recipeGroups: { [key: string]: any };
     // private recipeInputs: { [key: string]: (Object | null)[] };
     // private recipes: RecipeRewriter1_21_2$Recipe[];
     // private recipesByKey: { [key: string]: RecipeRewriter1_21_2$Recipe };

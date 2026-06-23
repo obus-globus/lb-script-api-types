@@ -4,7 +4,7 @@ export class SequencedPriorityIterator<T extends Object | number | string | bool
     constructor()
     // private highestPrio: number;
     // private highestPrioQueue: T[];
-    // private queuesByPriority: Int2ObjectMap<T[]>;
+    // private queuesByPriority: { [key: string]: any };
     add(data: T, priority: number): void;
     computeNext(): T;
     // private switchCacheToNextHighestPrioQueue(): void;

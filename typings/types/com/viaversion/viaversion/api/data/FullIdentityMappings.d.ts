@@ -4,10 +4,10 @@ import type { Mappings } from '../../../../../com/viaversion/viaversion/api/data
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FullIdentityMappings extends Object implements FullMappings {
     constructor(arg0: MappingDataLoader$IdentifiersPair, arg1: Mappings)
-    private constructor(arg0: Object2IntMap<string>, arg1: string[], arg2: Mappings)
+    private constructor(arg0: { [key: string]: any }, arg1: string[], arg2: Mappings)
     // private idToString: string[];
     // private mappings: Mappings;
-    // private stringToId: Object2IntMap<string>;
+    // private stringToId: { [key: string]: any };
     getNewId(arg0: number): number;
     id(arg0: string): number;
     identifier(arg0: number): string;

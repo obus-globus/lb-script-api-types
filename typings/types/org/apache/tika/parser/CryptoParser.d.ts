@@ -5,9 +5,9 @@ import type { DelegatingParser } from '../../../../org/apache/tika/parser/Delega
 import type { ParseContext } from '../../../../org/apache/tika/parser/ParseContext.d.ts'
 import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts'
 export abstract class CryptoParser extends DelegatingParser {
-    constructor(arg0: string, arg1: Provider, arg2: MediaType[])
+    constructor(arg0: string, arg1: { [key: string]: any }, arg2: MediaType[])
     constructor(arg0: string, arg1: MediaType[])
-    // private provider: Provider;
+    // private provider: { [key: string]: any };
     // private transformation: string;
     // private types: MediaType[];
     getSupportedTypes(arg0: ParseContext): MediaType[];

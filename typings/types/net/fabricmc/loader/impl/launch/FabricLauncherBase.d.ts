@@ -1,6 +1,8 @@
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
+import type { Manifest } from '../../../../../java/util/jar/Manifest.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EnvType } from '../../../../../net/fabricmc/api/EnvType.d.ts'
 import type { FabricLauncher } from '../../../../../net/fabricmc/loader/impl/launch/FabricLauncher.d.ts'
@@ -14,6 +16,7 @@ export abstract class FabricLauncherBase extends Object implements FabricLaunche
     constructor()
     getEntrypoint(): string;
     getEnvironmentType(): EnvType;
+    getManifest(arg0: Path[]): Manifest;
     getMappingConfiguration(): MappingConfiguration;
     getResourceAsStream(arg0: string): InputStream;
     getTargetClassLoader(): ClassLoader;

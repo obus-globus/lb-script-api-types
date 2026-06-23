@@ -6,7 +6,6 @@ import type { WorldChangeEvent } from '../../../../../../net/ccbluex/liquidbounc
 import type { WorldRenderEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 import type { Color4b } from '../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { Easing } from '../../../../../../net/ccbluex/liquidbounce/utils/math/Easing.d.ts'
-import type { PlacementRenderHandler } from '../../../../../../net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
 /**
@@ -31,7 +30,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
     // private outAnimationsFinished: boolean;
     readonly outTime: number;
     readonly outlineColorSetting: Color4b;
-    // private placementRenderHandlers: Int2ObjectArrayMap<PlacementRenderHandler>;
+    // private placementRenderHandlers: { [key: string]: any };
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private repeatable: EventHook<GameTickEvent>;
     /**

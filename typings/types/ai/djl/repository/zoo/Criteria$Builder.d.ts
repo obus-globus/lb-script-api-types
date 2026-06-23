@@ -7,6 +7,7 @@ import type { Translator } from '../../../../ai/djl/translate/Translator.d.ts'
 import type { TranslatorFactory } from '../../../../ai/djl/translate/TranslatorFactory.d.ts'
 import type { Progress } from '../../../../ai/djl/util/Progress.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Criteria$Builder<I extends Object | number | string | boolean, O extends Object | number | string | boolean> extends Object {
     constructor()

@@ -3,6 +3,7 @@ import type { AsynchronousChannel } from '../../../java/nio/channels/Asynchronou
 import type { CompletionHandler } from '../../../java/nio/channels/CompletionHandler.d.ts'
 import type { FileLock } from '../../../java/nio/channels/FileLock.d.ts'
 import type { OpenOption } from '../../../java/nio/file/OpenOption.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { ExecutorService } from '../../../java/util/concurrent/ExecutorService.d.ts'
 import type { Future } from '../../../java/util/concurrent/Future.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'

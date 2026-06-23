@@ -55,7 +55,7 @@ export class NoiseChunk extends Object implements DensityFunction$ContextProvide
     // private lastBlendingOutput: Blender$BlendingOutput;
     // private noiseSizeXZ: number;
     // private preliminarySurfaceLevel: DensityFunction;
-    // private preliminarySurfaceLevelCache: Long2IntMap;
+    // private preliminarySurfaceLevelCache: { [key: string]: any };
     // private seed: number;
     // private sliceFillingContextProvider: DensityFunction$ContextProvider;
     // private wrapped: Map<DensityFunction, DensityFunction>;

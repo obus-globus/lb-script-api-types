@@ -17,6 +17,7 @@ import type { FileVisitOption } from '../../../../java/nio/file/FileVisitOption.
 import type { FileVisitor } from '../../../../java/nio/file/FileVisitor.d.ts'
 import type { LinkOption } from '../../../../java/nio/file/LinkOption.d.ts'
 import type { OpenOption } from '../../../../java/nio/file/OpenOption.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { FileAttribute } from '../../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { FileTime } from '../../../../java/nio/file/attribute/FileTime.d.ts'
 import type { GroupPrincipal } from '../../../../java/nio/file/attribute/GroupPrincipal.d.ts'

@@ -7,7 +7,7 @@ export class KeyManagerFactoryWrapper extends SimpleKeyManagerFactory {
     static getDefaultAlgorithm(): string;
     static getInstance(paramarg0: string): KeyManagerFactory;
     static getInstance(paramarg0: string, paramarg1: string): KeyManagerFactory;
-    static getInstance(paramarg0: string, paramarg1: Provider): KeyManagerFactory;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyManagerFactory;
     constructor(arg0: KeyManager)
     // private km: KeyManager;
     engineGetKeyManagers(): KeyManager[];

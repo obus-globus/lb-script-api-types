@@ -3,21 +3,21 @@ import type { JwkSetConverter } from '../../../../io/jsonwebtoken/impl/security/
 import type { JwkSetBuilder } from '../../../../io/jsonwebtoken/security/JwkSetBuilder.d.ts'
 import type { KeyOperationPolicy } from '../../../../io/jsonwebtoken/security/KeyOperationPolicy.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class DefaultJwkSetBuilder extends AbstractSecurityBuilder<Jwk<Object>[], JwkSetBuilder> implements JwkSetBuilder {
+export class DefaultJwkSetBuilder extends AbstractSecurityBuilder<{ [key: string]: any }[], JwkSetBuilder> implements JwkSetBuilder {
     constructor()
     // private converter: JwkSetConverter;
-    // private map: ParameterMap;
+    // private map: { [key: string]: any };
     // private operationPolicy: KeyOperationPolicy;
-    add(arg0: Jwk<Object>): JwkSetBuilder;
+    add(arg0: { [key: string]: any }): JwkSetBuilder;
     add(arg0: string, arg1: Object): JwkSetBuilder;
-    add(arg0: Jwk<Object>[]): JwkSetBuilder;
+    add(arg0: { [key: string]: any }[]): JwkSetBuilder;
     add(arg0: { [key: string]: Object | null }): JwkSetBuilder;
-    build(): Jwk<Object>[];
+    build(): { [key: string]: any }[];
     delete(arg0: string): JwkSetBuilder;
     empty(): JwkSetBuilder;
-    ensureKeys(): Jwk<Object>[];
-    keys(arg0: Jwk<Object>[]): JwkSetBuilder;
+    ensureKeys(): { [key: string]: any }[];
+    keys(arg0: { [key: string]: any }[]): JwkSetBuilder;
     operationPolicy(arg0: KeyOperationPolicy): JwkSetBuilder;
-    provider(arg0: Provider): JwkSetBuilder;
+    provider(arg0: { [key: string]: any }): JwkSetBuilder;
     // private refresh(): JwkSetBuilder;
 }

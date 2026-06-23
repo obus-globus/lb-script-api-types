@@ -27,7 +27,7 @@ export class ModuleInventoryMove extends ClientModule {
     readonly doNotAllowClicking: boolean;
     // private keyHandler: EventHook<KeyboardKeyEvent>;
     // private movementInputHandler: EventHook<MovementInputEvent>;
-    // private movementKeys: Reference2BooleanArrayMap<KeyMapping>;
+    // private movementKeys: { [key: string]: any };
     // private packetHandler: EventHook<PacketEvent>;
     // private passthroughSneak: boolean;
     // private /*not mapped: */ getPassthroughSneak(): boolean;

@@ -6,7 +6,7 @@ export abstract class SimpleTrustManagerFactory extends TrustManagerFactory {
     static getDefaultAlgorithm(): string;
     static getInstance(paramarg0: string): TrustManagerFactory;
     static getInstance(paramarg0: string, paramarg1: string): TrustManagerFactory;
-    static getInstance(paramarg0: string, paramarg1: Provider): TrustManagerFactory;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): TrustManagerFactory;
     constructor()
     constructor(arg0: string)
     engineGetTrustManagers(): TrustManager[];

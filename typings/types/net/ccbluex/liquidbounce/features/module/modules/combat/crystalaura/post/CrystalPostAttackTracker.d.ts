@@ -11,8 +11,8 @@ import type { WorldChangeEvent } from '../../../../../../../../../net/ccbluex/li
  */
 export abstract class CrystalPostAttackTracker extends Object implements EventListener {
     constructor()
-    // private attackedIds: Int2LongMap;
-    // private /*not mapped: */ getAttackedIds(): Int2LongMap;
+    // private attackedIds: { [key: string]: any };
+    // private /*not mapped: */ getAttackedIds(): { [key: string]: any };
     // private explodeListener: EventHook<PacketEvent>;
     // private repeatable: EventHook<GameTickEvent>;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;

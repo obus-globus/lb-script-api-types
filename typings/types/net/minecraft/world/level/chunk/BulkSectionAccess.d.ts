@@ -6,7 +6,7 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { LevelChunkSection } from '../../../../../net/minecraft/world/level/chunk/LevelChunkSection.d.ts'
 export class BulkSectionAccess extends Object implements AutoCloseable {
     constructor(level: LevelAccessor)
-    // private acquiredSections: Long2ObjectMap<LevelChunkSection>;
+    // private acquiredSections: { [key: string]: any };
     // private lastSection: LevelChunkSection;
     // private lastSectionKey: number;
     // private level: LevelAccessor;

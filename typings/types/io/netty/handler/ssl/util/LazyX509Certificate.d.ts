@@ -40,6 +40,6 @@ export class LazyX509Certificate extends X509Certificate {
     toString(): string;
     // private unwrap(): X509Certificate;
     verify(arg0: PublicKey): void;
-    verify(arg0: PublicKey, arg1: Provider): void;
+    verify(arg0: PublicKey, arg1: { [key: string]: any }): void;
     verify(arg0: PublicKey, arg1: string): void;
 }

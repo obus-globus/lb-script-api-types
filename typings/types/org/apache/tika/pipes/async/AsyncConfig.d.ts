@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { PipesConfigBase } from '../../../../../org/apache/tika/pipes/PipesConfigBase.d.ts'
 import type { PipesReporter } from '../../../../../org/apache/tika/pipes/PipesReporter.d.ts'
 export class AsyncConfig extends PipesConfigBase {

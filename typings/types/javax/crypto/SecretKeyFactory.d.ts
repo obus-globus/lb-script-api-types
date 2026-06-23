@@ -8,18 +8,18 @@ import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class SecretKeyFactory extends Object {
     static getInstance(paramarg0: string): SecretKeyFactory;
     static getInstance(paramarg0: string, paramarg1: string): SecretKeyFactory;
-    static getInstance(paramarg0: string, paramarg1: Provider): SecretKeyFactory;
-    constructor(arg0: SecretKeyFactorySpi, arg1: Provider, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): SecretKeyFactory;
+    constructor(arg0: SecretKeyFactorySpi, arg1: { [key: string]: any }, arg2: string)
     private constructor(arg0: string)
     readonly algorithm: string;
     // private lock: Object;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     // private serviceIterator: Iterator<Provider$Service>;
     // private spi: SecretKeyFactorySpi;
     generateSecret(arg0: KeySpec): SecretKey;
     getAlgorithm(): string;
     getKeySpec(arg0: SecretKey, arg1: Class<Object>): KeySpec;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     // private nextSpi(arg0: SecretKeyFactorySpi): SecretKeyFactorySpi;
     translateKey(arg0: SecretKey): SecretKey;
 }

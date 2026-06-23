@@ -1,5 +1,6 @@
 import type { GlyphBitmap } from '../../../../../com/mojang/blaze3d/font/GlyphBitmap.d.ts'
 import type { GlyphInfo } from '../../../../../com/mojang/blaze3d/font/GlyphInfo.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { FontTexture$Node } from '../../../../../net/minecraft/client/gui/font/FontTexture$Node.d.ts'
 import type { GlyphRenderTypes } from '../../../../../net/minecraft/client/gui/font/GlyphRenderTypes.d.ts'

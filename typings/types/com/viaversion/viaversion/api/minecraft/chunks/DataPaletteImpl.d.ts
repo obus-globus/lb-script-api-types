@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DataPaletteImpl extends Object implements DataPalette {
     constructor(arg0: number)
     constructor(arg0: number, arg1: number)
-    // private inversePalette: Int2IntMap;
+    // private inversePalette: { [key: string]: any };
     // private palette: (Object | null)[];
     // private sizeBits: number;
     // private values: DataPaletteImpl$ChunkData;

@@ -3,17 +3,17 @@ import type { Reference2IntMap$Entry } from '../../../../../it/unimi/dsi/fastuti
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2IntSortedMaps extends Object {
-    static EMPTY_MAP: Reference2IntSortedMaps$EmptySortedMap<Object>;
-    static emptyMap(): Reference2IntSortedMap<Object>;
+    static EMPTY_MAP: { [key: string]: any };
+    static emptyMap(): { [key: string]: any };
     static entryComparator(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static fastIterable(paramarg0: Reference2IntSortedMap<Object>): Reference2IntMap$Entry<Object>[];
-    static fastIterator(paramarg0: Reference2IntSortedMap<Object>): ObjectBidirectionalIterator<Reference2IntMap$Entry<Object>>;
-    static singleton(paramarg0: Object | null, paramarg1: number): Reference2IntSortedMap<Object>;
-    static singleton(paramarg0: Object | null, paramarg1: number, paramarg2: (param0: Object) => boolean): Reference2IntSortedMap<Object>;
-    static singleton(paramarg0: Object | null, paramarg1: number): Reference2IntSortedMap<Object>;
-    static singleton(paramarg0: Object | null, paramarg1: number, paramarg2: (param0: Object) => boolean): Reference2IntSortedMap<Object>;
-    static synchronize(paramarg0: Reference2IntSortedMap<Object>): Reference2IntSortedMap<Object>;
-    static synchronize(paramarg0: Reference2IntSortedMap<Object>, paramarg1: Object): Reference2IntSortedMap<Object>;
-    static unmodifiable(paramarg0: Reference2IntSortedMap<Object>): Reference2IntSortedMap<Object>;
+    static fastIterable(paramarg0: { [key: string]: any }): Reference2IntMap$Entry<Object>[];
+    static fastIterator(paramarg0: { [key: string]: any }): ObjectBidirectionalIterator<Reference2IntMap$Entry<Object>>;
+    static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
+    static singleton(paramarg0: Object | null, paramarg1: number, paramarg2: (param0: Object) => boolean): { [key: string]: any };
+    static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
+    static singleton(paramarg0: Object | null, paramarg1: number, paramarg2: (param0: Object) => boolean): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

@@ -14,6 +14,6 @@ export abstract class AuthenticationResultSupplier extends Object implements Sup
     execute(): AuthenticationResult;
     get(): IAuthenticationResult;
     getAuthorityWithPrefNetworkHost(arg0: string): Authority;
-    // private initializeApiEvent(arg0: MsalRequest): ApiEvent;
+    // private initializeApiEvent(arg0: MsalRequest): { [key: string]: any };
     // private logResult(arg0: AuthenticationResult, arg1: HttpHeaders): void;
 }

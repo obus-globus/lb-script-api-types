@@ -1,4 +1,5 @@
 import type { File } from '../../../../java/io/File.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { PackLocationInfo } from '../../../../net/minecraft/server/packs/PackLocationInfo.d.ts'
 import type { PackResources } from '../../../../net/minecraft/server/packs/PackResources.d.ts'

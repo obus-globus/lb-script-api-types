@@ -37,8 +37,8 @@ export class LevelSlice extends Object implements FabricBlockGetter, BlockAndTin
     // private biomeColors: LevelColorCache;
     // private biomeSlice: LevelBiomeSlice;
     // private blockArrays: BlockState[][];
-    // private blockEntityArrays: Int2ReferenceMap<BlockEntity>[];
-    // private blockEntityRenderDataArrays: Int2ReferenceMap<Object>[];
+    // private blockEntityArrays: { [key: string]: any }[];
+    // private blockEntityRenderDataArrays: { [key: string]: any }[];
     // private level: ClientLevel;
     // private lightArrays: DataLayer[][];
     // private modelMapArrays: SodiumModelDataContainer[];

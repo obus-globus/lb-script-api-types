@@ -3,5 +3,5 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 export interface RegistryIdRemapCallback$RemapState<T extends Object | number | string | boolean> extends Object{
     getIdFromNew(arg0: number): Identifier;
     getIdFromOld(arg0: number): Identifier;
-    getRawIdChangeMap(): Int2IntMap;
+    getRawIdChangeMap(): { [key: string]: any };
 }

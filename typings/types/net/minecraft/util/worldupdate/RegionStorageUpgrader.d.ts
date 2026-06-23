@@ -1,11 +1,11 @@
 import type { DataFixer } from '../../../../com/mojang/datafixers/DataFixer.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CompoundTag } from '../../../../net/minecraft/nbt/CompoundTag.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { DataFixTypes } from '../../../../net/minecraft/util/datafix/DataFixTypes.d.ts'
 import type { FileToUpgrade } from '../../../../net/minecraft/util/worldupdate/FileToUpgrade.d.ts'
-import type { RegionStorageUpgrader$TagModifier } from '../../../../net/minecraft/util/worldupdate/RegionStorageUpgrader$TagModifier.d.ts'
 import type { UpgradeProgress } from '../../../../net/minecraft/util/worldupdate/UpgradeProgress.d.ts'
 import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
@@ -14,7 +14,7 @@ import type { RegionStorageInfo } from '../../../../net/minecraft/world/level/ch
 import type { SimpleRegionStorage } from '../../../../net/minecraft/world/level/chunk/storage/SimpleRegionStorage.d.ts'
 import type { LevelStorageSource$LevelStorageAccess } from '../../../../net/minecraft/world/level/storage/LevelStorageSource$LevelStorageAccess.d.ts'
 export class RegionStorageUpgrader extends Object {
-    constructor(dataFixer: DataFixer, dataFixType: DataFixTypes, type: string, folderName: string, defaultVersion: number, recreateRegionFiles: boolean, upgradeProgress: UpgradeProgress, startIndex: number, dataFixContextTag: CompoundTag, tagModifiers: Int2ObjectMap<(param0: ChunkPos, param1: CompoundTag) => boolean>)
+    constructor(dataFixer: DataFixer, dataFixType: DataFixTypes, type: string, folderName: string, defaultVersion: number, recreateRegionFiles: boolean, upgradeProgress: UpgradeProgress, startIndex: number, dataFixContextTag: CompoundTag, tagModifiers: { [key: string]: any })
     // private dataFixContextTag: CompoundTag;
     // private dataFixType: DataFixTypes;
     // private dataFixer: DataFixer;
@@ -26,7 +26,7 @@ export class RegionStorageUpgrader extends Object {
     // private recreateRegionFiles: boolean;
     // private startIndex: number;
     // private storage: SimpleRegionStorage;
-    // private tagModifiers: Int2ObjectMap<(param0: ChunkPos, param1: CompoundTag) => boolean>;
+    // private tagModifiers: { [key: string]: any };
     // private type: string;
     // private upgradeProgress: UpgradeProgress;
     createStorage(info: RegionStorageInfo, regionFolder: Path[]): SimpleRegionStorage;

@@ -7,7 +7,7 @@ export class SplitPacketHelper extends AbstractReferenceCounted {
     constructor(arg0: number)
     // private created: number;
     // private expectedLength: number;
-    // private packets: IntObjectMap<EncapsulatedPacket>;
+    // private packets: { [key: string]: any };
     add(arg0: EncapsulatedPacket, arg1: ByteBufAllocator): EncapsulatedPacket;
     deallocate(): void;
     expired(): boolean;

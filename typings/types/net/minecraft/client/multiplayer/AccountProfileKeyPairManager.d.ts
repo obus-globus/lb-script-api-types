@@ -1,4 +1,5 @@
 import type { UserApiService } from '../../../../com/mojang/authlib/minecraft/UserApiService.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Instant } from '../../../../java/time/Instant.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'

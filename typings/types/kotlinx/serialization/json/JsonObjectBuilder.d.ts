@@ -3,6 +3,6 @@ import type { JsonElement } from '../../../kotlinx/serialization/json/JsonElemen
 export class JsonObjectBuilder extends Object {
     constructor()
     // private content: { [key: string]: JsonElement };
-    build(): JsonObject;
+    build(): { [key: string]: any };
     put(key: string, element: JsonElement): JsonElement | null;
 }

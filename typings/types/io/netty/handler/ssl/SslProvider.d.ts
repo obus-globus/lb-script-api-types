@@ -9,7 +9,7 @@ export class SslProvider extends Enum<SslProvider> {
     static isAlpnSupported(paramarg0: SslProvider): boolean;
     static isOptionSupported(paramarg0: SslProvider, paramarg1: SslContextOption<Object>): boolean;
     static isTlsv13Supported(paramarg0: SslProvider): boolean;
-    static isTlsv13Supported(paramarg0: SslProvider, paramarg1: Provider): boolean;
+    static isTlsv13Supported(paramarg0: SslProvider, paramarg1: { [key: string]: any }): boolean;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): SslProvider;
     static values(): (Object | null)[];

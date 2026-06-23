@@ -4,7 +4,7 @@ import type { Pair } from '../../../../../../com/viaversion/viaversion/util/Pair
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class NoteBlockStorage extends Object implements StorableObject {
     constructor()
-    // private noteBlockUpdates: Object2IntMap<BlockPosition>;
+    // private noteBlockUpdates: { [key: string]: any };
     clear(): void;
     getNoteBlockUpdate(arg0: BlockPosition): Pair<number, number>;
     onRemove(): void;

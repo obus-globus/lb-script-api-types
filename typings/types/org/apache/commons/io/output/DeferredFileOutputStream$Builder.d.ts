@@ -1,4 +1,5 @@
 import type { File } from '../../../../../java/io/File.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { AbstractStreamBuilder } from '../../../../../org/apache/commons/io/build/AbstractStreamBuilder.d.ts'
 import type { DeferredFileOutputStream } from '../../../../../org/apache/commons/io/output/DeferredFileOutputStream.d.ts'
 export class DeferredFileOutputStream$Builder extends AbstractStreamBuilder<DeferredFileOutputStream, DeferredFileOutputStream$Builder> {

@@ -8,11 +8,11 @@ export class ScriptEngineManager extends Object {
     constructor(arg0: ClassLoader)
     // private engineSpis: ScriptEngineFactory[];
     // private extensionAssociations: { [key: string]: ScriptEngineFactory };
-    // private globalScope: Bindings;
+    // private globalScope: { [key: string]: any };
     // private mimeTypeAssociations: { [key: string]: ScriptEngineFactory };
     // private nameAssociations: { [key: string]: ScriptEngineFactory };
     get(arg0: string): Object;
-    getBindings(): Bindings;
+    getBindings(): { [key: string]: any };
     // private getEngineBy(arg0: string, arg1: { [key: string]: ScriptEngineFactory }, arg2: (param0: ScriptEngineFactory) => string[]): ScriptEngine;
     getEngineByExtension(arg0: string): ScriptEngine;
     getEngineByMimeType(arg0: string): ScriptEngine;
@@ -24,5 +24,5 @@ export class ScriptEngineManager extends Object {
     registerEngineExtension(arg0: string, arg1: ScriptEngineFactory): void;
     registerEngineMimeType(arg0: string, arg1: ScriptEngineFactory): void;
     registerEngineName(arg0: string, arg1: ScriptEngineFactory): void;
-    setBindings(arg0: Bindings): void;
+    setBindings(arg0: { [key: string]: any }): void;
 }

@@ -1,16 +1,15 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { FrameTimeStatistics$Percentile } from '../../../../../../net/caffeinemc/mods/sodium/client/util/FrameTimeStatistics$Percentile.d.ts'
 export class FrameTimeStatistics extends Object {
     static INSTANCE: FrameTimeStatistics;
     private constructor()
-    // private cached: Reference2LongArrayMap<FrameTimeStatistics$Percentile>;
+    // private cached: { [key: string]: any };
     // private heap: number[];
     // private sampleSize: number;
     // private samples: number[];
     // private writeIndex: number;
-    // private compute(): Reference2LongArrayMap<FrameTimeStatistics$Percentile>;
+    // private compute(): { [key: string]: any };
     // private copyMostRecentSamples(arg0: number[], arg1: number, arg2: number): void;
-    get(): Reference2LongArrayMap<FrameTimeStatistics$Percentile>;
+    get(): { [key: string]: any };
     invalidate(): void;
     logSample(arg0: number): void;
 }

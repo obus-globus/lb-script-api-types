@@ -33,7 +33,7 @@ export class DefaultJwtParserBuilder extends Object implements JwtParserBuilder 
     // private expectedClaims: ClaimsBuilder;
     // private keyAlgs: { [key: string]: KeyAlgorithm<Object, Object> };
     // private keyLocator: Locator<Key>;
-    // private provider: Provider;
+    // private provider: { [key: string]: any };
     // private sigAlgs: { [key: string]: SecureDigestAlgorithm<Object, Object> };
     // private signatureVerificationKey: Key;
     // private signingKeyResolver: SigningKeyResolver;
@@ -54,7 +54,7 @@ export class DefaultJwtParserBuilder extends Object implements JwtParserBuilder 
     json(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
     key(): NestedCollection<KeyAlgorithm<Object, Object>, JwtParserBuilder>;
     keyLocator(arg0: Locator<Key>): JwtParserBuilder;
-    provider(arg0: Provider): JwtParserBuilder;
+    provider(arg0: { [key: string]: any }): JwtParserBuilder;
     require(arg0: string, arg1: Object): JwtParserBuilder;
     requireAudience(arg0: string): JwtParserBuilder;
     requireExpiration(arg0: Date): JwtParserBuilder;

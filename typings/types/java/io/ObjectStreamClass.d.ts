@@ -23,7 +23,7 @@ export class ObjectStreamClass extends Object implements Serializable {
     // private dataLayout: ObjectStreamClass$ClassDataSlot[];
     // private defaultSerializeEx: ObjectStreamClass$ExceptionInfo;
     // private deserializationCtr: MethodHandle;
-    // private deserializationCtrs: ObjectStreamClass$DeserializationConstructorsCache;
+    // private deserializationCtrs: { [key: string]: any };
     // private deserializeEx: ObjectStreamClass$ExceptionInfo;
     // private externalizable: boolean;
     // private fieldRefl: ObjectStreamClass$FieldReflector;

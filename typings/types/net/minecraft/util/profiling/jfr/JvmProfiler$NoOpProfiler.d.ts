@@ -1,4 +1,5 @@
 import type { SocketAddress } from '../../../../../java/net/SocketAddress.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { ConnectionProtocol } from '../../../../../net/minecraft/network/ConnectionProtocol.d.ts'

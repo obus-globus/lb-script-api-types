@@ -61,7 +61,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     readonly blockTicks: LevelChunkTicks<Block>;
     readonly fluidTicks: LevelChunkTicks<Fluid>;
     readonly fullStatus: () => FullChunkStatus;
-    readonly gameEventListenerRegistrySections: Int2ObjectMap<GameEventListenerRegistry>;
+    readonly gameEventListenerRegistrySections: { [key: string]: any };
     readonly level: Level;
     loaded: boolean;
     // private postLoad: (param0: LevelChunk) => void;
@@ -143,7 +143,7 @@ export class LevelChunk extends ChunkAccess implements AttachmentTargetImpl, Deb
     setBlockState(pos: BlockPos, state: BlockState): BlockState;
     setBlockState(pos: BlockPos, state: BlockState, flags: number): BlockState;
     setFullStatus(fullStatus: () => FullChunkStatus): void;
-    setGameEventListenerRegistrySections(arg0: Int2ObjectMap<Object>): void;
+    setGameEventListenerRegistrySections(arg0: { [key: string]: any }): void;
     setLoaded(loaded: boolean): void;
     setUnsavedListener(unsavedListener: (param0: ChunkPos) => void): void;
     unpackTicks(currentTick: number): void;

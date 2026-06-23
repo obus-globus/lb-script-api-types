@@ -47,10 +47,10 @@ export class JarEntry extends ZipEntry {
     constructor(arg0: JarEntry)
     constructor(arg0: ZipEntry)
     constructor(arg0: string)
-    // private attr: Attributes;
+    // private attr: { [key: string]: any };
     // private certs: Certificate[];
     // private signers: CodeSigner[];
-    getAttributes(): Attributes;
+    getAttributes(): { [key: string]: any };
     getCertificates(): Certificate[];
     getCodeSigners(): CodeSigner[];
     getRealName(): string;

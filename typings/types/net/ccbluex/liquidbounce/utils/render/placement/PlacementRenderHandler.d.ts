@@ -2,8 +2,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { WorldRenderEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 import type { BlockCuller } from '../../../../../../net/ccbluex/liquidbounce/utils/render/placement/BlockCuller.d.ts'
 import type { BlockCuller$Owner } from '../../../../../../net/ccbluex/liquidbounce/utils/render/placement/BlockCuller$Owner.d.ts'
-import type { PlacementRenderHandler$CurrentBlockData } from '../../../../../../net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler$CurrentBlockData.d.ts'
-import type { PlacementRenderHandler$InOutBlockData } from '../../../../../../net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler$InOutBlockData.d.ts'
 import type { PlacementRenderer } from '../../../../../../net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
@@ -21,10 +19,10 @@ export class PlacementRenderHandler extends Object implements BlockCuller$Owner 
     // private blockPosCache: BlockPos$MutableBlockPos;
     // private blockPosCacheList: (Object | null)[];
     // private culler: BlockCuller;
-    // private currentList: Long2ObjectOpenHashMap<PlacementRenderHandler$CurrentBlockData>;
+    // private currentList: { [key: string]: any };
     readonly id: number;
-    // private inList: Long2ObjectOpenHashMap<PlacementRenderHandler$InOutBlockData>;
-    // private outList: Long2ObjectOpenHashMap<PlacementRenderHandler$InOutBlockData>;
+    // private inList: { [key: string]: any };
+    // private outList: { [key: string]: any };
     // private placementRenderer: PlacementRenderer;
     /**
      * Adds a block to be rendered. First it will make an appear-animation, then

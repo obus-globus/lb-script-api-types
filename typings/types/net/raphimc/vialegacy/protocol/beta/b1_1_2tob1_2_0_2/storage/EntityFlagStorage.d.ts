@@ -2,7 +2,7 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class EntityFlagStorage extends Object implements StorableObject {
     constructor()
-    // private animationFlags: Int2IntMap;
+    // private animationFlags: { [key: string]: any };
     getFlag(arg0: number, arg1: number): boolean;
     getFlagMask(arg0: number): number;
     onRemove(): void;

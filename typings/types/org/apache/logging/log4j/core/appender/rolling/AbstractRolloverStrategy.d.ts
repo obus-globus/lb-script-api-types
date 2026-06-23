@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Pattern } from '../../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { RollingFileManager } from '../../../../../../../org/apache/logging/log4j/core/appender/rolling/RollingFileManager.d.ts'

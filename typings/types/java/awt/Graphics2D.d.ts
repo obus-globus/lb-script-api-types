@@ -39,7 +39,7 @@ export abstract class Graphics2D extends Graphics {
     getFontRenderContext(): FontRenderContext;
     getPaint(): Paint;
     getRenderingHint(arg0: RenderingHints$Key): Object;
-    getRenderingHints(): RenderingHints;
+    getRenderingHints(): { [key: string]: any };
     getStroke(): Stroke;
     getTransform(): AffineTransform;
     hit(arg0: Rectangle, arg1: Shape, arg2: boolean): boolean;

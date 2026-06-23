@@ -10,7 +10,7 @@ export class VicinityCache extends Object {
     readonly cachedIsSuffocating: number;
     readonly cachedSupportingBlock: BlockState;
     readonly cachedTouchingFireLava: number;
-    // private fluidType2FluidHeightMap: Reference2DoubleArrayMap<TagKey<Fluid>>;
+    // private fluidType2FluidHeightMap: { [key: string]: any };
     // private initDelay: number;
     // private trackedPos: AABB;
     // private tracker: SectionedBlockChangeTracker;

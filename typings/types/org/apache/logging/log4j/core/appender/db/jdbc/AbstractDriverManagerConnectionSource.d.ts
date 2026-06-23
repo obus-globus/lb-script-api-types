@@ -23,7 +23,7 @@ export class AbstractDriverManagerConnectionSource extends AbstractConnectionSou
     getUserName(): string[];
     loadDriver(): void;
     loadDriver(className: string): void;
-    toProperties(properties: Property[]): Properties;
+    toProperties(properties: Property[]): { [key: string]: any };
     toString(): string;
     toString(value: string[]): string;
 }

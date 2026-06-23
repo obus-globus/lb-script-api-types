@@ -1,6 +1,7 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { FileChannel } from '../../../../../../java/nio/channels/FileChannel.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { FileRandomAccessOutputStream } from '../../../../../../org/apache/commons/compress/archivers/zip/FileRandomAccessOutputStream.d.ts'
 import type { RandomAccessOutputStream } from '../../../../../../org/apache/commons/compress/archivers/zip/RandomAccessOutputStream.d.ts'
 export class ZipSplitOutputStream extends RandomAccessOutputStream {

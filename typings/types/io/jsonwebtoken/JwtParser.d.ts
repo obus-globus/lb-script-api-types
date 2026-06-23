@@ -10,18 +10,18 @@ export interface JwtParser extends Parser<Jwt<Object, Object>>, Object{
     isSigned(arg0: CharSequence): boolean;
     parse(arg0: CharSequence): Jwt<Object, Object>;
     parse<T extends Object | number | string | boolean>(arg0: CharSequence, arg1: JwtHandler<T>): T;
-    parseClaimsJws(arg0: CharSequence): Jws<Claims>;
-    parseClaimsJwt(arg0: CharSequence): Jwt<Header, Claims>;
+    parseClaimsJws(arg0: CharSequence): Jws<{ [key: string]: any }>;
+    parseClaimsJwt(arg0: CharSequence): Jwt<{ [key: string]: any }, { [key: string]: any }>;
     parseContentJws(arg0: CharSequence): Jws<number[]>;
-    parseContentJwt(arg0: CharSequence): Jwt<Header, number[]>;
-    parseEncryptedClaims(arg0: CharSequence): Jwe<Claims>;
+    parseContentJwt(arg0: CharSequence): Jwt<{ [key: string]: any }, number[]>;
+    parseEncryptedClaims(arg0: CharSequence): Jwe<{ [key: string]: any }>;
     parseEncryptedContent(arg0: CharSequence): Jwe<number[]>;
-    parseSignedClaims(arg0: CharSequence): Jws<Claims>;
-    parseSignedClaims(arg0: CharSequence, arg1: InputStream): Jws<Claims>;
-    parseSignedClaims(arg0: CharSequence, arg1: number[]): Jws<Claims>;
+    parseSignedClaims(arg0: CharSequence): Jws<{ [key: string]: any }>;
+    parseSignedClaims(arg0: CharSequence, arg1: InputStream): Jws<{ [key: string]: any }>;
+    parseSignedClaims(arg0: CharSequence, arg1: number[]): Jws<{ [key: string]: any }>;
     parseSignedContent(arg0: CharSequence): Jws<number[]>;
     parseSignedContent(arg0: CharSequence, arg1: InputStream): Jws<number[]>;
     parseSignedContent(arg0: CharSequence, arg1: number[]): Jws<number[]>;
-    parseUnsecuredClaims(arg0: CharSequence): Jwt<Header, Claims>;
-    parseUnsecuredContent(arg0: CharSequence): Jwt<Header, number[]>;
+    parseUnsecuredClaims(arg0: CharSequence): Jwt<{ [key: string]: any }, { [key: string]: any }>;
+    parseUnsecuredContent(arg0: CharSequence): Jwt<{ [key: string]: any }, number[]>;
 }

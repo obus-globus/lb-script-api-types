@@ -2,6 +2,6 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class StatisticsStorage extends Object implements StorableObject {
     constructor()
-    values: Int2IntMap;
+    values: { [key: string]: any };
     onRemove(): void;
 }

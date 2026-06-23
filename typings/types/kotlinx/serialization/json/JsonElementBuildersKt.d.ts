@@ -14,7 +14,7 @@ export class JsonElementBuildersKt extends Object {
     static addJsonArray(paramarg0: JsonArrayBuilder, paramarg1: (param0: Object) => void): boolean;
     static addJsonObject(paramarg0: JsonArrayBuilder, paramarg1: (param0: Object) => void): boolean;
     static buildJsonArray(paramarg0: (param0: Object) => void): (Object | null)[];
-    static buildJsonObject(paramarg0: (param0: Object) => void): JsonObject;
+    static buildJsonObject(paramarg0: (param0: Object) => void): { [key: string]: any };
     static put(paramarg0: JsonObjectBuilder, paramarg1: string, paramarg2: boolean): JsonElement;
     static put(paramarg0: JsonObjectBuilder, paramarg1: string, paramarg2: Number): JsonElement;
     static put(paramarg0: JsonObjectBuilder, paramarg1: string, paramarg2: string): JsonElement;

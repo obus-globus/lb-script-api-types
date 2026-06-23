@@ -5,6 +5,7 @@ import type { MRL } from '../../../ai/djl/repository/MRL.d.ts'
 import type { Metadata } from '../../../ai/djl/repository/Metadata.d.ts'
 import type { Progress } from '../../../ai/djl/util/Progress.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 export class RpcRepository extends AbstractRepository {
     constructor(arg0: string, arg1: URI)
     // private artifactId: string;

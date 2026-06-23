@@ -4,7 +4,7 @@ import type { ItemStack } from '../../../../../../../net/minecraft/world/item/It
 export class TrackedInventory extends Object {
     constructor()
     readonly items: ItemStack[];
-    readonly timeMap: Object2LongOpenHashMap<ItemStack>;
+    readonly timeMap: { [key: string]: any };
     /**
      * if slot type is armor then we check if the item is already in the tracked items
      * and if yes we remove it because it has been equipped

@@ -22,7 +22,7 @@ export class HashLightDataCache extends LightDataAccess {
     static unpackOP(paramarg0: number): boolean;
     static unpackSL(paramarg0: number): number;
     constructor(arg0: BlockAndTintGetter)
-    // private map: Long2IntLinkedOpenHashMap;
+    // private map: { [key: string]: any };
     clearCache(): void;
     get(arg0: number, arg1: number, arg2: number): number;
     get(arg0: number, arg1: number, arg2: number, arg3: Direction): number;

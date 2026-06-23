@@ -1,4 +1,5 @@
 import type { URI } from '../../../../../java/net/URI.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShaderpackDirectoryManager extends Object {
     constructor(arg0: Path[])

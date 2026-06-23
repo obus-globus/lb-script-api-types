@@ -5,7 +5,7 @@ import type { ChunkPalettedStorageFix$Section } from '../../../../../net/minecra
 export class ChunkPalettedStorageFix$UpgradeChunk extends Object {
     static relative(parampos: number, paramdirection: ChunkPalettedStorageFix$Direction): number;
     constructor(level: Dynamic<Object>)
-    // private blockEntities: Int2ObjectMap<Dynamic<Object>>;
+    // private blockEntities: { [key: string]: any };
     // private level: Dynamic<Object>;
     // private sections: ChunkPalettedStorageFix$Section[];
     // private sides: number;

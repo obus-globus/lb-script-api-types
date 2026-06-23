@@ -7,11 +7,11 @@ import type { URI } from '../../../../java/net/URI.d.ts'
 import type { X509Certificate } from '../../../../java/security/cert/X509Certificate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class X509BuilderSupport extends Object implements X509Builder<X509BuilderSupport> {
-    constructor(arg0: ParameterMap, arg1: Class<RuntimeException>)
+    constructor(arg0: { [key: string]: any }, arg1: Class<RuntimeException>)
     // private GET_X509_BYTES: Function<X509Certificate, number[]>;
     // private computeX509Sha1Thumbprint: boolean;
     // private computeX509Sha256Thumbprint: boolean;
-    // private map: ParameterMap;
+    // private map: { [key: string]: any };
     apply(): void;
     // private computeThumbprint(arg0: X509Certificate, arg1: HashAlgorithm): number[];
     x509Chain(arg0: X509Certificate[]): X509BuilderSupport;

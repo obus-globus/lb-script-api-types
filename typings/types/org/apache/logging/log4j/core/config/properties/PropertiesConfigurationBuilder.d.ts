@@ -24,23 +24,23 @@ export class PropertiesConfigurationBuilder extends ConfigurationBuilderFactory 
     constructor()
     // private builder: ConfigurationBuilder<PropertiesConfiguration>;
     readonly loggerContext: LoggerContext;
-    // private rootProperties: Properties;
-    // private addFiltersToComponent<B extends FilterableComponentBuilder<ComponentBuilder<Object>>>(componentBuilder: B, properties: Properties): B;
-    // private addLoggersToComponent<B extends LoggableComponentBuilder<ComponentBuilder<Object>>>(loggerBuilder: B, properties: Properties): B;
+    // private rootProperties: { [key: string]: any };
+    // private addFiltersToComponent<B extends FilterableComponentBuilder<ComponentBuilder<Object>>>(componentBuilder: B, properties: { [key: string]: any }): B;
+    // private addLoggersToComponent<B extends LoggableComponentBuilder<ComponentBuilder<Object>>>(loggerBuilder: B, properties: { [key: string]: any }): B;
     build(): PropertiesConfiguration;
-    // private createAppender(key: string, properties: Properties): AppenderComponentBuilder;
-    // private createAppenderRef(key: string, properties: Properties): AppenderRefComponentBuilder;
-    // private createFilter(key: string, properties: Properties): FilterComponentBuilder;
-    // private createLayout(appenderName: string, properties: Properties): LayoutComponentBuilder;
-    // private createLogger(key: string, properties: Properties): LoggerComponentBuilder;
-    // private createRootLogger(properties: Properties): RootLoggerComponentBuilder;
-    // private createScript(properties: Properties): ScriptComponentBuilder;
-    // private createScriptFile(properties: Properties): ScriptFileComponentBuilder;
+    // private createAppender(key: string, properties: { [key: string]: any }): AppenderComponentBuilder;
+    // private createAppenderRef(key: string, properties: { [key: string]: any }): AppenderRefComponentBuilder;
+    // private createFilter(key: string, properties: { [key: string]: any }): FilterComponentBuilder;
+    // private createLayout(appenderName: string, properties: { [key: string]: any }): LayoutComponentBuilder;
+    // private createLogger(key: string, properties: { [key: string]: any }): LoggerComponentBuilder;
+    // private createRootLogger(properties: { [key: string]: any }): RootLoggerComponentBuilder;
+    // private createScript(properties: { [key: string]: any }): ScriptComponentBuilder;
+    // private createScriptFile(properties: { [key: string]: any }): ScriptFileComponentBuilder;
     getErrorPrefix(): string;
     getLoggerContext(): LoggerContext;
     isValid(): boolean;
-    // private processRemainingProperties(builder: ConfigurationBuilder<PropertiesConfiguration>, properties: Properties): void;
+    // private processRemainingProperties(builder: ConfigurationBuilder<PropertiesConfiguration>, properties: { [key: string]: any }): void;
     setConfigurationSource(source: ConfigurationSource): PropertiesConfigurationBuilder;
     setLoggerContext(loggerContext: LoggerContext): PropertiesConfigurationBuilder;
-    setRootProperties(rootProperties: Properties): PropertiesConfigurationBuilder;
+    setRootProperties(rootProperties: { [key: string]: any }): PropertiesConfigurationBuilder;
 }

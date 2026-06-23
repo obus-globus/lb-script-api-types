@@ -1,5 +1,6 @@
 import type { JsonElement } from '../../../com/google/gson/JsonElement.d.ts'
 import type { DataFixer } from '../../../com/mojang/datafixers/DataFixer.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { MinecraftServer } from '../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { ServerPlayer } from '../../../net/minecraft/server/level/ServerPlayer.d.ts'

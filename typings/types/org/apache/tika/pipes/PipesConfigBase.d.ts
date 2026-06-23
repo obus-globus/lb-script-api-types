@@ -1,3 +1,4 @@
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { ConfigBase } from '../../../../org/apache/tika/config/ConfigBase.d.ts'
 export class PipesConfigBase extends ConfigBase {
     static DEFAULT_MAX_FILES_PROCESSED_PER_PROCESS: number;

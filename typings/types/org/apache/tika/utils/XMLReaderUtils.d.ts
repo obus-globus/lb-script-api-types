@@ -1,6 +1,7 @@
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Reader } from '../../../../java/io/Reader.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { DocumentBuilder } from '../../../../javax/xml/parsers/DocumentBuilder.d.ts'
 import type { DocumentBuilderFactory } from '../../../../javax/xml/parsers/DocumentBuilderFactory.d.ts'
 import type { SAXParser } from '../../../../javax/xml/parsers/SAXParser.d.ts'

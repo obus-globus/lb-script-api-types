@@ -19,7 +19,7 @@ export abstract class EntityRewriterBase<C extends ClientboundPacketType, T exte
     // private displayNameIndex: number;
     // private displayVisibilityDataType: EntityDataType;
     // private displayVisibilityIndex: number;
-    // private entityDataMappings: Int2ObjectMap<EntityReplacement>;
+    // private entityDataMappings: { [key: string]: any };
     // private addDisplayVisibilityData(arg0: EntityData[]): void;
     alwaysShowOriginalMobName(): boolean;
     entityDataForType(arg0: EntityType): EntityReplacement;

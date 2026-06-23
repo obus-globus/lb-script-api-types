@@ -3,7 +3,7 @@ import type { DistanceManager$FixedPlayerDistanceChunkTracker } from '../../../.
 export class DistanceManager$PlayerTicketTracker extends DistanceManager$FixedPlayerDistanceChunkTracker {
     static SOURCE: number;
     constructor(null_: DistanceManager$PlayerTicketTracker, maxDistance: number)
-    // private queueLevels: Long2IntMap;
+    // private queueLevels: { [key: string]: any };
     // private toUpdate: (Object | null)[];
     // private viewDistance: number;
     // private haveTicketFor(level: number): boolean;

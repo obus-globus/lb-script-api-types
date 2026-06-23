@@ -4,10 +4,10 @@ import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.t
 export class OptionConverter extends Object {
     static concatenateArrays(paraml: (Object | null)[], paramr: (Object | null)[]): (Object | null)[];
     static convertSpecialChars(params: string): string;
-    static findAndSubst(paramkey: string, paramprops: Properties): string;
+    static findAndSubst(paramkey: string, paramprops: { [key: string]: any }): string;
     static instantiateByClassName(paramclassName: string, paramsuperClass: Class<Object>, paramdefaultValue: Object): Object;
-    static instantiateByKey(paramprops: Properties, paramkey: string, paramsuperClass: Class<Object>, paramdefaultValue: Object): Object;
-    static substVars(paramval: string, paramprops: Properties): string;
+    static instantiateByKey(paramprops: { [key: string]: any }, paramkey: string, paramsuperClass: Class<Object>, paramdefaultValue: Object): Object;
+    static substVars(paramval: string, paramprops: { [key: string]: any }): string;
     static toBoolean(paramvalue: string, paramdefaultValue: boolean): boolean;
     static toFileSize(paramvalue: string, paramdefaultValue: number): number;
     static toInt(paramvalue: string, paramdefaultValue: number): number;

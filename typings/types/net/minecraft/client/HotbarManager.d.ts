@@ -1,4 +1,5 @@
 import type { DataFixer } from '../../../com/mojang/datafixers/DataFixer.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Hotbar } from '../../../net/minecraft/client/player/inventory/Hotbar.d.ts'
 export class HotbarManager extends Object {

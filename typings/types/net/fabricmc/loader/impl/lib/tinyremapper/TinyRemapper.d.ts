@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { ExecutorService } from '../../../../../../java/util/concurrent/ExecutorService.d.ts'
 import type { AtomicReference } from '../../../../../../java/util/concurrent/atomic/AtomicReference.d.ts'

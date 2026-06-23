@@ -17,7 +17,7 @@ export class MapDigraph<V extends Object | number | string | boolean> extends Ob
     constructor(arg0: (param0: Object) => boolean, arg1: (param0: Object) => boolean)
     readonly edgeCount: number;
     // private edgeMapFactory: MapDigraph$EdgeMapFactory<V>;
-    // private vertexMap: Map<V, Object2IntMap<V>>;
+    // private vertexMap: Map<V, { [key: string]: any }>;
     // private vertexMapFactory: MapDigraph$VertexMapFactory<V>;
     add(arg0: V): boolean;
     contains(arg0: V): boolean;

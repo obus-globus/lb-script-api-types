@@ -1,3 +1,4 @@
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { PackOutput$PathProvider } from '../../../net/minecraft/data/PackOutput$PathProvider.d.ts'
 import type { PackOutput$Target } from '../../../net/minecraft/data/PackOutput$Target.d.ts'

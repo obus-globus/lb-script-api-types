@@ -260,7 +260,7 @@ export class JSRInlinerAdapter extends MethodNode implements Opcodes {
     // private sharedSubroutineInsns: BitSet;
     // private subroutinesInsns: Map<LabelNode, BitSet>;
     // private emitCode(): void;
-    // private emitInstantiation(instantiation: JSRInlinerAdapter$Instantiation, worklist: JSRInlinerAdapter$Instantiation[], newInstructions: AbstractInsnNode[], newTryCatchBlocks: TryCatchBlockNode[], newLocalVariables: LocalVariableNode[]): void;
+    // private emitInstantiation(instantiation: { [key: string]: any }, worklist: { [key: string]: any }[], newInstructions: AbstractInsnNode[], newTryCatchBlocks: TryCatchBlockNode[], newLocalVariables: LocalVariableNode[]): void;
     // private findReachableInsns(insnIndex: number, subroutineInsns: BitSet, visitedInsns: BitSet): void;
     // private findSubroutineInsns(startInsnIndex: number, subroutineInsns: BitSet, visitedInsns: BitSet): void;
     // private findSubroutinesInsns(): void;

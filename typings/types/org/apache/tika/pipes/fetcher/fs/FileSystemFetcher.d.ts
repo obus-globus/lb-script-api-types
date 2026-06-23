@@ -1,4 +1,5 @@
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { FileTime } from '../../../../../../java/nio/file/attribute/FileTime.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Initializable } from '../../../../../../org/apache/tika/config/Initializable.d.ts'

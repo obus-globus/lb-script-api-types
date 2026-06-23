@@ -2,7 +2,7 @@ import type { ReentrantReadWriteLock } from '../../../../../java/util/concurrent
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BlockTintCache$CacheData extends Object {
     private constructor()
-    // private cache: Int2ObjectArrayMap<number[]>;
+    // private cache: { [key: string]: any };
     readonly invalidated: boolean;
     // private lock: ReentrantReadWriteLock;
     // private allocateLayer(): number[];

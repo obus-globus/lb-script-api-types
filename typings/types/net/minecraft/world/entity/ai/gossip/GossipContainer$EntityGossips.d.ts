@@ -6,7 +6,7 @@ import type { GossipContainer$GossipEntry } from '../../../../../../net/minecraf
 import type { GossipType } from '../../../../../../net/minecraft/world/entity/ai/gossip/GossipType.d.ts'
 export class GossipContainer$EntityGossips extends Object {
     private constructor()
-    // private entries: Object2IntMap<GossipType>;
+    // private entries: { [key: string]: any };
     decay(): void;
     isEmpty(): boolean;
     makeSureValueIsntTooLowOrTooHigh(type: GossipType): void;

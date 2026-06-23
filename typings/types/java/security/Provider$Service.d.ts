@@ -5,8 +5,8 @@ import type { Provider$EngineDescription } from '../../java/security/Provider$En
 import type { Provider$UString } from '../../java/security/Provider$UString.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class Provider$Service extends Object {
-    private constructor(arg0: Provider, arg1: string, arg2: string)
-    constructor(arg0: Provider, arg1: string, arg2: string, arg3: string, arg4: string[], arg5: { [key: string]: string })
+    private constructor(arg0: { [key: string]: any }, arg1: string, arg2: string)
+    constructor(arg0: { [key: string]: any }, arg1: string, arg2: string, arg3: string, arg4: string[], arg5: { [key: string]: string })
     readonly algorithm: string;
     // private aliases: string[];
     // private attributes: Map<Provider$UString, string>;
@@ -15,7 +15,7 @@ export class Provider$Service extends Object {
     // private constructorCache: Object;
     // private engineDescription: Provider$EngineDescription;
     // private hasKeyAttributes: boolean;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     // private registered: boolean;
     // private supportedClasses: Class<Object>[];
     // private supportedFormats: string[];
@@ -29,7 +29,7 @@ export class Provider$Service extends Object {
     // private getDefaultConstructor(): Constructor<Object>;
     // private getImplClass(): Class<Object>;
     // private getKeyClass(arg0: string): Class<Object>;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     getType(): string;
     // private hasKeyAttributes(): boolean;
     // private isValid(): boolean;

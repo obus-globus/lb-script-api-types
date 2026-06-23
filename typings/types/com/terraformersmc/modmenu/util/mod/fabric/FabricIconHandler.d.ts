@@ -1,4 +1,5 @@
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ModContainer } from '../../../../../../net/fabricmc/loader/api/ModContainer.d.ts'
 import type { DynamicTexture } from '../../../../../../net/minecraft/client/renderer/texture/DynamicTexture.d.ts'

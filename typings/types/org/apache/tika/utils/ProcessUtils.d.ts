@@ -1,4 +1,5 @@
 import type { ProcessBuilder } from '../../../../java/lang/ProcessBuilder.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FileProcessResult } from '../../../../org/apache/tika/utils/FileProcessResult.d.ts'
 export class ProcessUtils extends Object {

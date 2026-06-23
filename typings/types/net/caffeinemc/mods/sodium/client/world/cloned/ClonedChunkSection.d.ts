@@ -6,7 +6,6 @@ import type { SectionPos } from '../../../../../../../net/minecraft/core/Section
 import type { Level } from '../../../../../../../net/minecraft/world/level/Level.d.ts'
 import type { LightLayer } from '../../../../../../../net/minecraft/world/level/LightLayer.d.ts'
 import type { Biome } from '../../../../../../../net/minecraft/world/level/biome/Biome.d.ts'
-import type { BlockEntity } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { DataLayer } from '../../../../../../../net/minecraft/world/level/chunk/DataLayer.d.ts'
 import type { LevelChunk } from '../../../../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
@@ -17,8 +16,8 @@ export class ClonedChunkSection extends Object {
     readonly auxLightManager: SodiumAuxiliaryLightManager;
     readonly biomeData: PalettedContainerRO<Holder<Biome>>;
     readonly blockData: PalettedContainerRO<BlockState>;
-    readonly blockEntityMap: Int2ReferenceMap<BlockEntity>;
-    readonly blockEntityRenderDataMap: Int2ReferenceMap<Object>;
+    readonly blockEntityMap: { [key: string]: any };
+    readonly blockEntityRenderDataMap: { [key: string]: any };
     readonly lastUsedTimestamp: number;
     // private lightDataArrays: DataLayer[];
     readonly modelMap: SodiumModelDataContainer;
@@ -26,8 +25,8 @@ export class ClonedChunkSection extends Object {
     getAuxLightManager(): SodiumAuxiliaryLightManager;
     getBiomeData(): PalettedContainerRO<Holder<Biome>>;
     getBlockData(): PalettedContainerRO<BlockState>;
-    getBlockEntityMap(): Int2ReferenceMap<BlockEntity>;
-    getBlockEntityRenderDataMap(): Int2ReferenceMap<Object>;
+    getBlockEntityMap(): { [key: string]: any };
+    getBlockEntityRenderDataMap(): { [key: string]: any };
     getLastUsedTimestamp(): number;
     getLightArray(arg0: LightLayer): DataLayer;
     getModelMap(): SodiumModelDataContainer;

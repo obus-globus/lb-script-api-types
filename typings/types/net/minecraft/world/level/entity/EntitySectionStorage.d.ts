@@ -18,7 +18,7 @@ export class EntitySectionStorage<T extends EntityAccess> extends Object impleme
     // private entityClass: Class<T>;
     // private intialSectionVisibility: (param0: number) => Visibility;
     // private sectionIds: (Object | null)[];
-    // private sections: Long2ObjectMap<EntitySection<T>>;
+    // private sections: { [key: string]: any };
     // private consumeSection(arg0: number, arg1: (param0: Object) => AbortableIterationConsumer$Continuation): AbortableIterationConsumer$Continuation;
     count(): number;
     // private createSection(sectionPos: number): EntitySection<T>;

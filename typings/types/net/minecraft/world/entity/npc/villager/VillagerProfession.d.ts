@@ -27,13 +27,13 @@ export class VillagerProfession extends Record {
     static TOOLSMITH: ResourceKey<VillagerProfession>;
     static WEAPONSMITH: ResourceKey<VillagerProfession>;
     static bootstrap(paramregistry: VillagerProfession[]): VillagerProfession;
-    constructor(name: Component, heldJobSite: (param0: Holder<PoiType>) => boolean, acquirableJobSite: (param0: Holder<PoiType>) => boolean, requestedItems: Item[], secondaryPoi: Block[], workSound: SoundEvent, tradeSetsByLevel: Int2ObjectMap<ResourceKey<TradeSet>>)
+    constructor(name: Component, heldJobSite: (param0: Holder<PoiType>) => boolean, acquirableJobSite: (param0: Holder<PoiType>) => boolean, requestedItems: Item[], secondaryPoi: Block[], workSound: SoundEvent, tradeSetsByLevel: { [key: string]: any })
     // private acquirableJobSite: (param0: Holder<PoiType>) => boolean;
     // private heldJobSite: (param0: Holder<PoiType>) => boolean;
     // private name: Component;
     // private requestedItems: Item[];
     // private secondaryPoi: Block[];
-    // private tradeSetsByLevel: Int2ObjectMap<ResourceKey<TradeSet>>;
+    // private tradeSetsByLevel: { [key: string]: any };
     // private workSound: SoundEvent;
     acquirableJobSite(): (param0: Holder<PoiType>) => boolean;
     equals(o: Object | null): boolean;
@@ -44,6 +44,6 @@ export class VillagerProfession extends Record {
     requestedItems(): Item[];
     secondaryPoi(): Block[];
     toString(): string;
-    tradeSetsByLevel(): Int2ObjectMap<ResourceKey<TradeSet>>;
+    tradeSetsByLevel(): { [key: string]: any };
     workSound(): SoundEvent;
 }

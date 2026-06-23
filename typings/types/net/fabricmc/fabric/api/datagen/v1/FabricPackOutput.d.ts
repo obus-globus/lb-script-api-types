@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { ModContainer } from '../../../../../../net/fabricmc/loader/api/ModContainer.d.ts'
 import type { PackOutput } from '../../../../../../net/minecraft/data/PackOutput.d.ts'
 export class FabricPackOutput extends PackOutput {

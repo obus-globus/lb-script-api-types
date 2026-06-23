@@ -5,7 +5,7 @@ import type { BuilderTaskOutput } from '../../../../../../../../net/caffeinemc/m
 import type { RenderRegion } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/region/RenderRegion.d.ts'
 export class RenderRegionManager extends Object {
     constructor(arg0: CommandList)
-    // private regions: Long2ReferenceOpenHashMap<RenderRegion>;
+    // private regions: { [key: string]: any };
     readonly stagingBuffer: StagingBuffer;
     // private create(arg0: number, arg1: number, arg2: number): RenderRegion;
     createForChunk(arg0: number, arg1: number, arg2: number): RenderRegion;

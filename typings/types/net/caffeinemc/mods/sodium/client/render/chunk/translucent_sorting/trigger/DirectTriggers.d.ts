@@ -10,7 +10,7 @@ import type { Vector3dc } from '../../../../../../../../../org/joml/Vector3dc.d.
 export class DirectTriggers extends Object implements SortTriggering$SectionTriggers<DynamicTopoData> {
     constructor()
     // private accumulatedDistance: number;
-    // private directTriggerSections: Double2ObjectRBTreeMap<DirectTriggers$DirectTriggerData>;
+    // private directTriggerSections: { [key: string]: any };
     getDirectTriggerCount(): number;
     // private insertDirectAngleTrigger(arg0: DirectTriggers$DirectTriggerData, arg1: Vector3dc, arg2: number): void;
     // private insertDirectDistanceTrigger(arg0: DirectTriggers$DirectTriggerData, arg1: Vector3dc, arg2: number): void;

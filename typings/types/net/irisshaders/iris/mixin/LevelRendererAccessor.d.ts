@@ -5,9 +5,8 @@ import type { RenderBuffers } from '../../../../net/minecraft/client/renderer/Re
 import type { Frustum } from '../../../../net/minecraft/client/renderer/culling/Frustum.d.ts'
 import type { EntityRenderDispatcher } from '../../../../net/minecraft/client/renderer/entity/EntityRenderDispatcher.d.ts'
 import type { LevelRenderState } from '../../../../net/minecraft/client/renderer/state/level/LevelRenderState.d.ts'
-import type { BlockDestructionProgress } from '../../../../net/minecraft/server/level/BlockDestructionProgress.d.ts'
 export interface LevelRendererAccessor extends Object{
-    getDestructionProgress(): Long2ObjectMap<BlockDestructionProgress[]>;
+    getDestructionProgress(): { [key: string]: any };
     getEntityRenderDispatcher(): EntityRenderDispatcher;
     getLevel(): ClientLevel;
     getLevelRenderState(): LevelRenderState;

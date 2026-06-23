@@ -9,5 +9,5 @@ export class MapExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/MapExtensions.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/MapExtensions.kt:32}
      */
-    static sumValues(object2IntOpenHashMap: Object2IntOpenHashMap<Object>, anotherMap: Object2IntMap<Object>): Object2IntMap<Object>;
+    static sumValues(object2IntOpenHashMap: { [key: string]: any }, anotherMap: { [key: string]: any }): { [key: string]: any };
 }

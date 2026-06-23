@@ -1,4 +1,5 @@
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { EmbeddedBytesSelector } from '../../../../org/apache/tika/extractor/EmbeddedBytesSelector.d.ts'
 import type { ParsingEmbeddedDocumentExtractor } from '../../../../org/apache/tika/extractor/ParsingEmbeddedDocumentExtractor.d.ts'
 import type { TikaInputStream } from '../../../../org/apache/tika/io/TikaInputStream.d.ts'

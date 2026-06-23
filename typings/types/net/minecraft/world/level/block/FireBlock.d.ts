@@ -96,8 +96,8 @@ export class FireBlock extends BaseFireBlock implements FireBlockHooks {
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(properties: BlockBehaviour$Properties)
-    // private burnOdds: Object2IntMap<Block>;
-    // private igniteOdds: Object2IntMap<Block>;
+    // private burnOdds: { [key: string]: any };
+    // private igniteOdds: { [key: string]: any };
     // private registry: FlammableBlockRegistryImpl;
     // private shapes: (param0: BlockState) => VoxelShape;
     canBurn(state: BlockState): boolean;

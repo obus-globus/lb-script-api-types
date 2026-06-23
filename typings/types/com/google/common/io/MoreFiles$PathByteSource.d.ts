@@ -5,6 +5,7 @@ import type { CharSource } from '../../../../com/google/common/io/CharSource.d.t
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Charset } from '../../../../java/nio/charset/Charset.d.ts'
 import type { OpenOption } from '../../../../java/nio/file/OpenOption.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { BasicFileAttributes } from '../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'

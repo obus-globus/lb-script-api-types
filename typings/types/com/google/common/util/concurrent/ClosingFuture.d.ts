@@ -35,11 +35,11 @@ export class ClosingFuture<V extends Object | number | string | boolean> extends
     static whenAllSucceed(paramfutures: ClosingFuture<Object>[]): ClosingFuture$Combiner;
     static withoutCloser(paramfunction: (param0: Object | null) => ListenableFuture<Object>): (param0: ClosingFuture$DeferredCloser, param1: Object | null) => ClosingFuture<Object>;
     private constructor(future: ListenableFuture<V>)
-    private constructor(future: ListenableFuture<V>, closeables: ClosingFuture$CloseableList)
-    // private closeables: ClosingFuture$CloseableList;
+    private constructor(future: ListenableFuture<V>, closeables: { [key: string]: any })
+    // private closeables: { [key: string]: any };
     // private future: FluentFuture<V>;
     // private state: AtomicReference<ClosingFuture$State>;
-    // private becomeSubsumedInto(otherCloseables: ClosingFuture$CloseableList): void;
+    // private becomeSubsumedInto(otherCloseables: { [key: string]: any }): void;
     cancel(mayInterruptIfRunning: boolean): boolean;
     catching<X extends Throwable>(exceptionType: Class<X>, fallback: (param0: ClosingFuture$DeferredCloser, param1: X) => V, executor: Executor): ClosingFuture<V>;
     catchingAsync<X extends Throwable>(exceptionType: Class<X>, fallback: (param0: ClosingFuture$DeferredCloser, param1: X) => ClosingFuture<V>, executor: Executor): ClosingFuture<V>;

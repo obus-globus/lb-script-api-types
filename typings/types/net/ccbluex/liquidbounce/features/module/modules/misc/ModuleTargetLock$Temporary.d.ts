@@ -10,7 +10,7 @@ export class ModuleTargetLock$Temporary extends ModuleTargetLock$LockMode {
     static INSTANCE: ModuleTargetLock$Temporary;
     // private attackHandler: EventHook<AttackEntityEvent>;
     // private cleanUpTask: EventHook<GameTickEvent>;
-    // private lockList: Int2LongLinkedOpenHashMap;
+    // private lockList: { [key: string]: any };
     // private outOfRange: number;
     // private /*not mapped: */ getOutOfRange(): number;
     // private timeUntilReset: number;

@@ -4,7 +4,7 @@ import type { BlockStorage$ReplacementData } from '../../../../../../com/viavers
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BlockStorage extends Object implements StorableObject {
     constructor()
-    // private blocks: Long2ObjectMap<Map<BlockPosition, BlockStorage$ReplacementData>>;
+    // private blocks: { [key: string]: any };
     clear(): void;
     contains(arg0: BlockPosition): boolean;
     get(arg0: BlockPosition): BlockStorage$ReplacementData;

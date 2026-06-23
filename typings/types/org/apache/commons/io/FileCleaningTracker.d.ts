@@ -1,6 +1,7 @@
 import type { File } from '../../../../java/io/File.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FileCleaningTracker$Tracker } from '../../../../org/apache/commons/io/FileCleaningTracker$Tracker.d.ts'
 import type { FileDeleteStrategy } from '../../../../org/apache/commons/io/FileDeleteStrategy.d.ts'

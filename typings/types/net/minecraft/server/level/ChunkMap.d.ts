@@ -30,7 +30,6 @@ import type { ChunkGenerationTask } from '../../../../net/minecraft/server/level
 import type { ChunkHolder } from '../../../../net/minecraft/server/level/ChunkHolder.d.ts'
 import type { ChunkHolder$PlayerProvider } from '../../../../net/minecraft/server/level/ChunkHolder$PlayerProvider.d.ts'
 import type { ChunkMap$DistanceManager } from '../../../../net/minecraft/server/level/ChunkMap$DistanceManager.d.ts'
-import type { ChunkMap$TrackedEntity } from '../../../../net/minecraft/server/level/ChunkMap$TrackedEntity.d.ts'
 import type { ChunkResult } from '../../../../net/minecraft/server/level/ChunkResult.d.ts'
 import type { ChunkTaskDispatcher } from '../../../../net/minecraft/server/level/ChunkTaskDispatcher.d.ts'
 import type { ChunkTrackingView } from '../../../../net/minecraft/server/level/ChunkTrackingView.d.ts'
@@ -75,18 +74,18 @@ export class ChunkMap extends SimpleRegionStorage implements ChunkMapAccessor, C
     // private activeChunkWrites: AtomicInteger;
     // private chunkGeneratorState: ChunkGeneratorStructureState;
     // private chunkStatusListener: (param0: ChunkPos, param1: FullChunkStatus) => void;
-    // private chunkTypeCache: Long2ByteMap;
+    // private chunkTypeCache: { [key: string]: any };
     // private chunksToEagerlySave: (Object | null)[];
     readonly distanceManager: ChunkMap$DistanceManager;
-    readonly entityMap: Int2ObjectMap<ChunkMap$TrackedEntity>;
+    readonly entityMap: { [key: string]: any };
     level: ServerLevel;
     // private lightEngine: ThreadedLevelLightEngine;
     // private lightTaskDispatcher: ChunkTaskDispatcher;
     // private mainThreadExecutor: BlockableEventLoop<() => void>;
     // private modified: boolean;
-    // private nextChunkSaveTime: Long2LongMap;
+    // private nextChunkSaveTime: { [key: string]: any };
     // private pendingGenerationTasks: ChunkGenerationTask[];
-    // private pendingUnloads: Long2ObjectLinkedOpenHashMap<ChunkHolder>;
+    // private pendingUnloads: { [key: string]: any };
     // private playerMap: PlayerMap;
     // private poiManager: PoiManager;
     // private randomState: RandomState;
@@ -95,8 +94,8 @@ export class ChunkMap extends SimpleRegionStorage implements ChunkMapAccessor, C
     // private ticketStorage: TicketStorage;
     // private toDrop: (Object | null)[];
     // private unloadQueue: () => void[];
-    // private updatingChunkMap: Long2ObjectLinkedOpenHashMap<ChunkHolder>;
-    // private visibleChunkMap: Long2ObjectLinkedOpenHashMap<ChunkHolder>;
+    // private updatingChunkMap: { [key: string]: any };
+    // private visibleChunkMap: { [key: string]: any };
     // private worldGenContext: WorldGenContext;
     // private worldgenTaskDispatcher: ChunkTaskDispatcher;
     acquireGeneration(chunkNode: number): GenerationChunkHolder;

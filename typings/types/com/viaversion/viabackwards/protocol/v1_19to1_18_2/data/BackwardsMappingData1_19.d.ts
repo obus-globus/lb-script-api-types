@@ -3,7 +3,7 @@ import type { BackwardsMappingData } from '../../../../../../com/viaversion/viab
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class BackwardsMappingData1_19 extends BackwardsMappingData {
     constructor()
-    // private defaultChatTypes: Int2ObjectMap<Map$Entry<string, Tag>[]>;
+    // private defaultChatTypes: { [key: string]: any };
     chatType(arg0: number): Map$Entry<string, Tag>[];
     loadExtras(arg0: Map$Entry<string, Tag>[]): void;
 }

@@ -5,7 +5,7 @@ export class ChunkTracker extends Object implements ClientChunkEventListener {
     static forEachChunk(paramarg0: (Object | null)[], paramarg1: ChunkTracker$ChunkEventHandler): void;
     constructor()
     // private chunkReady: (Object | null)[];
-    // private chunkStatus: Long2IntOpenHashMap;
+    // private chunkStatus: { [key: string]: any };
     // private loadQueue: (Object | null)[];
     // private unloadQueue: (Object | null)[];
     forEachEvent(arg0: ChunkTracker$ChunkEventHandler, arg1: ChunkTracker$ChunkEventHandler): void;

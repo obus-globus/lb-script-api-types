@@ -8,18 +8,17 @@ import type { StreamMemberEncoder } from '../../../../../net/minecraft/network/c
 import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ClientGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
-import type { Stat } from '../../../../../net/minecraft/stats/Stat.d.ts'
 export class ClientboundAwardStatsPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundAwardStatsPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    constructor(stats: Object2IntMap<Stat<Object>>)
-    // private stats: Object2IntMap<Stat<Object>>;
+    constructor(stats: { [key: string]: any })
+    // private stats: { [key: string]: any };
     equals(o: Object | null): boolean;
     handle(listener: ClientGamePacketListener): void;
     hashCode(): number;
     isSkippable(): boolean;
     isTerminal(): boolean;
-    stats(): Object2IntMap<Stat<Object>>;
+    stats(): { [key: string]: any };
     toString(): string;
     type(): PacketType<ClientboundAwardStatsPacket>;
 }

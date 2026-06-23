@@ -6,7 +6,6 @@ import type { GameTickEvent } from '../../../../../../../../../net/ccbluex/liqui
 import type { PacketEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { WorldRenderEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 import type { ModuleDebugRecorder$DebugRecorderMode } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/ModuleDebugRecorder$DebugRecorderMode.d.ts'
-import type { DebugCombatRecorder$Fight } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/misc/debugrecorder/modes/DebugCombatRecorder$Fight.d.ts'
 import type { Rotation } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
 import type { TargetTracker } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/combat/TargetTracker.d.ts'
 /**
@@ -19,14 +18,14 @@ export class DebugCombatRecorder extends ModuleDebugRecorder$DebugRecorderMode<C
     static INSTANCE: DebugCombatRecorder;
     // private attackHandler: EventHook<AttackEntityEvent>;
     // private /*not mapped: */ getDoNotTrack(): boolean;
-    // private fightMap: Int2ObjectOpenHashMap<DebugCombatRecorder$Fight>;
+    // private fightMap: { [key: string]: any };
     // private packetHandler: EventHook<PacketEvent>;
     // private previous: Rotation;
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private targetEntityId: number | null;
     // private targetTracker: TargetTracker;
     // private tickHandler: EventHook<GameTickEvent>;
-    // private trainingCollection: Int2ObjectOpenHashMap<CombatSample[]>;
+    // private trainingCollection: { [key: string]: any };
     disable(): void;
     // private reset(): void;
 }

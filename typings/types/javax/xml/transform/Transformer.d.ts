@@ -7,13 +7,13 @@ export abstract class Transformer extends Object {
     constructor()
     clearParameters(): void;
     getErrorListener(): ErrorListener;
-    getOutputProperties(): Properties;
+    getOutputProperties(): { [key: string]: any };
     getOutputProperty(arg0: string): string;
     getParameter(arg0: string): Object;
     getURIResolver(): URIResolver;
     reset(): void;
     setErrorListener(arg0: ErrorListener): void;
-    setOutputProperties(arg0: Properties): void;
+    setOutputProperties(arg0: { [key: string]: any }): void;
     setOutputProperty(arg0: string, arg1: string): void;
     setParameter(arg0: string, arg1: Object): void;
     setURIResolver(arg0: URIResolver): void;

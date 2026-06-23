@@ -3,15 +3,15 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ShortMaps extends Object {
-    static EMPTY_MAP: Object2ShortMaps$EmptyMap<Object>;
-    static emptyMap(): Object2ShortMap<Object>;
-    static fastForEach(paramarg0: Object2ShortMap<Object>, paramarg1: (param0: Object) => void): void;
-    static fastIterable(paramarg0: Object2ShortMap<Object>): Object2ShortMap$Entry<Object>[];
-    static fastIterator(paramarg0: Object2ShortMap<Object>): ObjectIterator<Object2ShortMap$Entry<Object>>;
-    static singleton(paramarg0: Object | null, paramarg1: number): Object2ShortMap<Object>;
-    static singleton(paramarg0: Object | null, paramarg1: number): Object2ShortMap<Object>;
-    static synchronize(paramarg0: Object2ShortMap<Object>): Object2ShortMap<Object>;
-    static synchronize(paramarg0: Object2ShortMap<Object>, paramarg1: Object): Object2ShortMap<Object>;
-    static unmodifiable(paramarg0: Object2ShortMap<Object>): Object2ShortMap<Object>;
+    static EMPTY_MAP: { [key: string]: any };
+    static emptyMap(): { [key: string]: any };
+    static fastForEach(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: { [key: string]: any }): Object2ShortMap$Entry<Object>[];
+    static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Object2ShortMap$Entry<Object>>;
+    static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
+    static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

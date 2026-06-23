@@ -2,5 +2,5 @@ import type { PrivateJwkBuilder } from '../../../io/jsonwebtoken/security/Privat
 import type { ECPrivateKey } from '../../../java/security/interfaces/ECPrivateKey.d.ts'
 import type { ECPublicKey } from '../../../java/security/interfaces/ECPublicKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface EcPrivateJwkBuilder extends PrivateJwkBuilder<ECPrivateKey, ECPublicKey, EcPublicJwk, EcPrivateJwk, EcPrivateJwkBuilder>, Object{
+export interface EcPrivateJwkBuilder extends PrivateJwkBuilder<ECPrivateKey, ECPublicKey, { [key: string]: any }, { [key: string]: any }, EcPrivateJwkBuilder>, Object{
 }

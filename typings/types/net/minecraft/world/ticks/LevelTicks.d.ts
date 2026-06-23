@@ -12,11 +12,11 @@ import type { LevelTicks$PosAndContainerConsumer } from '../../../../net/minecra
 import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/ScheduledTick.d.ts'
 export class LevelTicks<T extends Object | number | string | boolean> extends Object implements LevelTickAccess<T> {
     constructor(tickCheck: (param0: number) => boolean)
-    // private allContainers: Long2ObjectMap<LevelChunkTicks<T>>;
+    // private allContainers: { [key: string]: any };
     // private alreadyRunThisTick: ScheduledTick<T>[];
     // private chunkScheduleUpdater: (param0: LevelChunkTicks<T>, param1: ScheduledTick<T>) => void;
     // private containersToTick: LevelChunkTicks<T>[];
-    // private nextTickForContainer: Long2LongMap;
+    // private nextTickForContainer: { [key: string]: any };
     // private tickCheck: (param0: number) => boolean;
     // private toRunThisTick: ScheduledTick<T>[];
     // private toRunThisTickSet: ScheduledTick<Object>[];

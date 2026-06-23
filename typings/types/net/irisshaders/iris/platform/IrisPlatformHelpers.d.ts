@@ -1,4 +1,5 @@
 import type { TextureFormat } from '../../../../com/mojang/blaze3d/textures/TextureFormat.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { DepthBufferFormat } from '../../../../net/irisshaders/iris/gl/texture/DepthBufferFormat.d.ts'
 import type { KeyMapping } from '../../../../net/minecraft/client/KeyMapping.d.ts'

@@ -2,6 +2,7 @@ import type { DescriptionListWidget } from '../../../../com/terraformersmc/modme
 import type { ModListWidget } from '../../../../com/terraformersmc/modmenu/gui/widget/ModListWidget.d.ts'
 import type { ModListEntry } from '../../../../com/terraformersmc/modmenu/gui/widget/entries/ModListEntry.d.ts'
 import type { ModBadgeRenderer } from '../../../../com/terraformersmc/modmenu/util/mod/ModBadgeRenderer.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'

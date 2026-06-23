@@ -1,4 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LoaderUtil extends Object {
     static getClassFileName(paramarg0: string): string;

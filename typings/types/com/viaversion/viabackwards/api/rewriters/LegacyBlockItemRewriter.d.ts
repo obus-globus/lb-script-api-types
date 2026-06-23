@@ -19,10 +19,10 @@ export abstract class LegacyBlockItemRewriter<C extends ClientboundPacketType, S
     constructor(arg0: T, arg1: string)
     constructor(arg0: T, arg1: string, arg2: Type<Item>, arg3: Type<Item[]>)
     constructor(arg0: T, arg1: string, arg2: Type<Item>, arg3: Type<Item[]>, arg4: Type<Item>, arg5: Type<Item[]>)
-    // private blockReplacements: Int2ObjectMap<MappedLegacyBlockItem>;
-    // private itemReplacements: Int2ObjectMap<MappedLegacyBlockItem>;
-    // private addMapping(arg0: string, arg1: JsonObject, arg2: MappedLegacyBlockItem$Type, arg3: Int2ObjectMap<MappedLegacyBlockItem>): void;
-    // private addMappings(arg0: MappedLegacyBlockItem$Type, arg1: JsonObject, arg2: Int2ObjectMap<MappedLegacyBlockItem>): void;
+    // private blockReplacements: { [key: string]: any };
+    // private itemReplacements: { [key: string]: any };
+    // private addMapping(arg0: string, arg1: JsonObject, arg2: MappedLegacyBlockItem$Type, arg3: { [key: string]: any }): void;
+    // private addMappings(arg0: MappedLegacyBlockItem$Type, arg1: JsonObject, arg2: { [key: string]: any }): void;
     compress(arg0: number, arg1: number): number;
     getFallingBlockHandler(): (param0: PacketWrapper) => void;
     // private getMappedBlock(arg0: number): MappedLegacyBlockItem;

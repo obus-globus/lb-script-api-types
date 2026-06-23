@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ModOrigin } from '../../../../../net/fabricmc/loader/api/metadata/ModOrigin.d.ts'
 import type { ModOrigin$Kind } from '../../../../../net/fabricmc/loader/api/metadata/ModOrigin$Kind.d.ts'

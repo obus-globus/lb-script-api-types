@@ -7,14 +7,14 @@ export class KeyManagerFactory extends Object {
     static getDefaultAlgorithm(): string;
     static getInstance(paramarg0: string): KeyManagerFactory;
     static getInstance(paramarg0: string, paramarg1: string): KeyManagerFactory;
-    static getInstance(paramarg0: string, paramarg1: Provider): KeyManagerFactory;
-    constructor(arg0: KeyManagerFactorySpi, arg1: Provider, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyManagerFactory;
+    constructor(arg0: KeyManagerFactorySpi, arg1: { [key: string]: any }, arg2: string)
     readonly algorithm: string;
     // private factorySpi: KeyManagerFactorySpi;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     getAlgorithm(): string;
     getKeyManagers(): KeyManager[];
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     init(arg0: KeyStore, arg1: string[]): void;
     init(arg0: ManagerFactoryParameters): void;
 }

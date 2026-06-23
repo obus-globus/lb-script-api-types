@@ -19,13 +19,12 @@ import type { EntitySection } from '../../../../../net/minecraft/world/level/ent
 import type { EntitySectionStorage } from '../../../../../net/minecraft/world/level/entity/EntitySectionStorage.d.ts'
 import type { LevelCallback } from '../../../../../net/minecraft/world/level/entity/LevelCallback.d.ts'
 import type { LevelEntityGetter } from '../../../../../net/minecraft/world/level/entity/LevelEntityGetter.d.ts'
-import type { PersistentEntitySectionManager$ChunkLoadStatus } from '../../../../../net/minecraft/world/level/entity/PersistentEntitySectionManager$ChunkLoadStatus.d.ts'
 import type { Visibility } from '../../../../../net/minecraft/world/level/entity/Visibility.d.ts'
 export class PersistentEntitySectionManager<T extends EntityAccess> extends Object implements AutoCloseable, PersistentEntitySectionManagerAccessor<EntityAccess>, PersistentEntitySectionManagerAccessor_2<EntityAccess>, PersistentEntitySectionManagerAccessor_3<EntityAccess> {
     constructor(entityClass: Class<T>, callbacks: LevelCallback<T>, permanentStorage: EntityPersistentStorage<T>)
     // private callbacks: LevelCallback<T>;
-    // private chunkLoadStatuses: Long2ObjectMap<PersistentEntitySectionManager$ChunkLoadStatus>;
-    // private chunkVisibility: Long2ObjectMap<Visibility>;
+    // private chunkLoadStatuses: { [key: string]: any };
+    // private chunkVisibility: { [key: string]: any };
     // private chunksToUnload: (Object | null)[];
     readonly entityGetter: LevelEntityGetter<T>;
     // private knownUuids: UUID[];

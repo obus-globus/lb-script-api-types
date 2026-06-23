@@ -1,6 +1,7 @@
 import type { File } from '../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { NNTrainedModelBuilder } from '../../../../org/apache/tika/detect/NNTrainedModelBuilder.d.ts'
 import type { TrainedModelDetector } from '../../../../org/apache/tika/detect/TrainedModelDetector.d.ts'
 export class NNExampleModelDetector extends TrainedModelDetector {

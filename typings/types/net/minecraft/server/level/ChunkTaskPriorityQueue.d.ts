@@ -6,7 +6,7 @@ export class ChunkTaskPriorityQueue extends Object {
     static PRIORITY_LEVEL_COUNT: number;
     constructor(name: string)
     // private name: string;
-    // private queuesPerPriority: Long2ObjectLinkedOpenHashMap<() => void[]>[];
+    // private queuesPerPriority: { [key: string]: any }[];
     // private topPriorityQueueIndex: number;
     hasWork(): boolean;
     pop(): ChunkTaskPriorityQueue$TasksForChunk;

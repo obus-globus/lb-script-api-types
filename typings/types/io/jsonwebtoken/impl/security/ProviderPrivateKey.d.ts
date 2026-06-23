@@ -5,6 +5,6 @@ export class ProviderPrivateKey extends ProviderKey<PrivateKey> implements Priva
     static serialVersionUID: number;
     static serialVersionUID: number;
     static getKey(paramarg0: Key | null): Key | null;
-    static getProvider(paramarg0: Key, paramarg1: Provider): Provider;
-    constructor(arg0: Provider, arg1: PrivateKey)
+    static getProvider(paramarg0: Key, paramarg1: { [key: string]: any }): { [key: string]: any };
+    constructor(arg0: { [key: string]: any }, arg1: PrivateKey)
 }

@@ -1,5 +1,6 @@
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { Thread } from '../../../../../../java/lang/Thread.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { AtomicLong } from '../../../../../../java/util/concurrent/atomic/AtomicLong.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { TotalCountResult } from '../../../../../../org/apache/tika/pipes/pipesiterator/TotalCountResult.d.ts'

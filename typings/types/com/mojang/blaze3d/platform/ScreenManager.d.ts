@@ -6,7 +6,7 @@ export class ScreenManager extends Object {
     static clamp(paramvalue: number, parammin: number, parammax: number): number;
     constructor(monitorCreator: MonitorCreator)
     // private monitorCreator: MonitorCreator;
-    // private monitors: Long2ObjectMap<Monitor>;
+    // private monitors: { [key: string]: any };
     findBestMonitor(window: Window): Monitor;
     getMonitor(monitor: number): Monitor;
     // private onMonitorChange(monitor: number, event: number): void;

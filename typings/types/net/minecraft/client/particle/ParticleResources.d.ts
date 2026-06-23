@@ -19,11 +19,11 @@ export class ParticleResources extends Object implements FabricResourceReloader,
     constructor()
     // private fabric$id: Identifier;
     // private onReload: () => void;
-    readonly providers: Int2ObjectMap<ParticleProvider<Object>>;
+    readonly providers: { [key: string]: any };
     spriteSets: Map<Identifier, ParticleResources$MutableSpriteSet>;
     fabric$getId(): Identifier;
     getName(): string;
-    getProviders(): Int2ObjectMap<ParticleProvider<Object>>;
+    getProviders(): { [key: string]: any };
     // private loadParticleDescription(id: Identifier, resource: Resource): Optional<Identifier[]>;
     onReload(onReload: () => void): void;
     prepareSharedState(currentReload: PreparableReloadListener$SharedState): void;

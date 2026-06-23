@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { SelectableEntry } from '../../../../../../net/minecraft/client/gui/components/SelectableEntry.d.ts'

@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { LevelSummary } from '../../../../../net/minecraft/world/level/storage/LevelSummary.d.ts'
 export class LevelSummary$CorruptedLevelSummary extends LevelSummary {

@@ -57,7 +57,7 @@ export class Color extends Object implements Paint, Serializable {
     // private fvalue: number[];
     // private value: number;
     brighter(): Color;
-    createContext(arg0: ColorModel, arg1: Rectangle, arg2: Rectangle2D, arg3: AffineTransform, arg4: RenderingHints): PaintContext;
+    createContext(arg0: ColorModel, arg1: Rectangle, arg2: Rectangle2D, arg3: AffineTransform, arg4: { [key: string]: any }): PaintContext;
     darker(): Color;
     equals(arg0: Object | null): boolean;
     getAlpha(): number;

@@ -1,4 +1,5 @@
 import type { Closeable } from '../../../../../java/io/Closeable.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { ExecutorCompletionService } from '../../../../../java/util/concurrent/ExecutorCompletionService.d.ts'
 import type { ExecutorService } from '../../../../../java/util/concurrent/ExecutorService.d.ts'
 import type { AtomicLong } from '../../../../../java/util/concurrent/atomic/AtomicLong.d.ts'

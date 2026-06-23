@@ -18,7 +18,7 @@ export class EcdhKeyAlgorithm extends CryptoAlgorithm implements KeyAlgorithm<Pu
     // private WRAP_ALG: KeyAlgorithm<SecretKey, SecretKey>;
     // private createOtherInfo(arg0: number, arg1: string, arg2: number[], arg3: number[]): number[];
     // private deriveKey(arg0: KeyRequest<Object>, arg1: PublicKey, arg2: PrivateKey): SecretKey;
-    generateKeyPair(arg0: Curve, arg1: Provider, arg2: SecureRandom): KeyPair;
+    generateKeyPair(arg0: Curve, arg1: { [key: string]: any }, arg2: SecureRandom): KeyPair;
     generateZ(arg0: KeyRequest<Object>, arg1: PublicKey, arg2: PrivateKey): number[];
     getConcatKDFAlgorithmId(arg0: AeadAlgorithm): string;
     getDecryptionKey(arg0: DecryptionKeyRequest<PrivateKey>): SecretKey;

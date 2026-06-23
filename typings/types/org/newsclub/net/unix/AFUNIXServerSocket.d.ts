@@ -1,6 +1,7 @@
 import type { File } from '../../../../java/io/File.d.ts'
 import type { FileDescriptor } from '../../../../java/io/FileDescriptor.d.ts'
 import type { SocketImplFactory } from '../../../../java/net/SocketImplFactory.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { AFServerSocket } from '../../../../org/newsclub/net/unix/AFServerSocket.d.ts'
 import type { AFSocketImpl } from '../../../../org/newsclub/net/unix/AFSocketImpl.d.ts'
 import type { AFUNIXServerSocketChannel } from '../../../../org/newsclub/net/unix/AFUNIXServerSocketChannel.d.ts'

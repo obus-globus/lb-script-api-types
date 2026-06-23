@@ -3,13 +3,12 @@ import type { StoredObject } from '../../../../../com/viaversion/viaversion/api/
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { Item } from '../../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
 import type { Type } from '../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { BedrockItem } from '../../../../../net/raphimc/viabedrock/protocol/model/BedrockItem.d.ts'
 import type { ItemEntry } from '../../../../../net/raphimc/viabedrock/protocol/model/ItemEntry.d.ts'
 export class ItemRewriter extends StoredObject {
     constructor(arg0: UserConnection, arg1: ItemEntry[])
-    // private blockItemValidBlockStates: Int2ObjectMap<(Object | null)[]>;
+    // private blockItemValidBlockStates: { [key: string]: any };
     readonly componentItems: string[];
     // private itemArrayType: Type<BedrockItem[]>;
     // private itemType: Type<BedrockItem>;

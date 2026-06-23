@@ -25,7 +25,7 @@ export class JsonElementKt extends Object {
     static getIntOrNull(paramarg0: JsonPrimitive): number;
     static getJsonArray(paramarg0: JsonElement): (Object | null)[];
     static getJsonNull(paramarg0: JsonElement): JsonNull;
-    static getJsonObject(paramarg0: JsonElement): JsonObject;
+    static getJsonObject(paramarg0: JsonElement): { [key: string]: any };
     static getJsonPrimitive(paramarg0: JsonElement): JsonPrimitive;
     static getJsonUnquotedLiteralDescriptor(): SerialDescriptor;
     static getLong(paramarg0: JsonPrimitive): number;

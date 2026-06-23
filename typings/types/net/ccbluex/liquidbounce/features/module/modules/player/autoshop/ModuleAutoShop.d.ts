@@ -36,14 +36,14 @@ export class ModuleAutoShop extends ClientModule {
     // private waitedBeforeTheFirstClick: boolean;
     // private buyAllItemsInCategory(remainingElements: ShopElement[]): void;
     // private buyItem(itemSlot: number, shopElement: ShopElement): void;
-    // private checkElement(shopElement: ShopElement, remainingElements: ShopElement[] | null, items: Object2IntMap<string>): Object2IntMap<string> | null;
-    // private checkPrice(price: ItemInfo, items: Object2IntMap<string>): boolean;
+    // private checkElement(shopElement: ShopElement, remainingElements: ShopElement[] | null, items: { [key: string]: any }): { [key: string]: any } | null;
+    // private checkPrice(price: ItemInfo, items: { [key: string]: any }): boolean;
     // private doClicks(remainingElements: ShopElement[]): void;
-    // private getRequiredClicks(shopElement: ShopElement, items: Object2IntMap<string>, requiredLimitedItems: Object2IntMap<string>): number;
+    // private getRequiredClicks(shopElement: ShopElement, items: { [key: string]: any }, requiredLimitedItems: { [key: string]: any }): number;
     // private hasItemCategoryChanged(prevShopStacks: string[]): boolean;
-    // private hasReceivedItems(prevInventory: Object2IntMap<string>, expectedItems: Object2IntMap<string>): boolean;
+    // private hasReceivedItems(prevInventory: { [key: string]: any }, expectedItems: { [key: string]: any }): boolean;
     // private isShopOpen(): boolean;
     // private reset(): void;
-    // private simulateNextPurchases(remainingElements: ShopElement[], onlySameCategory: boolean): Pair<(Object | null)[], Object2IntMap<string>>;
+    // private simulateNextPurchases(remainingElements: ShopElement[], onlySameCategory: boolean): Pair<(Object | null)[], { [key: string]: any }>;
     // private switchCategory(nextCategorySlot: number): void;
 }

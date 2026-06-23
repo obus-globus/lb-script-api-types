@@ -6,7 +6,7 @@ export class DefaultTokenizedJwt extends Object implements TokenizedJwt {
     readonly digest: CharSequence;
     readonly payload: CharSequence;
     // private protectedHeader: CharSequence;
-    createHeader(arg0: { [key: string]: Object | null }): Header;
+    createHeader(arg0: { [key: string]: Object | null }): { [key: string]: any };
     getDigest(): CharSequence;
     getPayload(): CharSequence;
     getProtected(): CharSequence;

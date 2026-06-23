@@ -21,7 +21,7 @@ export class RecursiveTypeFamily extends Object implements TypeFamily {
     // private name: string;
     // private size: number;
     // private template: TypeTemplate;
-    // private types: Int2ObjectMap<RecursivePoint$RecursivePointType<Object>>;
+    // private types: { [key: string]: any };
     apply(arg0: number): RecursivePoint$RecursivePointType<Object>;
     buildMuType<A extends Object | number | string | boolean>(arg0: Type<A>, arg1: RecursiveTypeFamily): RecursivePoint$RecursivePointType<A>;
     // private cap2<A extends Object | number | string | boolean, B extends Object | number | string | boolean>(arg0: RewriteResult<Object, Object>[], arg1: RecursivePoint$RecursivePointType<A>, arg2: TypeRewriteRule, arg3: PointFreeRule, arg4: boolean, arg5: RewriteResult<Object, Object>, arg6: RecursivePoint$RecursivePointType<B>): boolean;

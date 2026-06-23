@@ -1,6 +1,7 @@
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Mac } from '../../../../../javax/crypto/Mac.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { HmacAlgorithms } from '../../../../../org/apache/commons/codec/digest/HmacAlgorithms.d.ts'

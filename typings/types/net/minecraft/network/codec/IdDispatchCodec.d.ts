@@ -38,9 +38,9 @@ export class IdDispatchCodec<B extends ByteBuf, V extends Object | number | stri
     static ofMember(paramencoder: (param0: Object | null, param1: Object | null) => void, paramdecoder: (param0: Object | null) => Object | null): StreamCodec<Object, Object>;
     static recursive(paramfactory: (param0: StreamCodec<Object, Object>) => Object | null): StreamCodec<Object, Object>;
     static unit(paraminstance: Object | null): StreamCodec<Object, Object>;
-    private constructor(typeGetter: (param0: V) => T, byId: IdDispatchCodec$Entry<B, V, T>[], toId: Object2IntMap<T>)
+    private constructor(typeGetter: (param0: V) => T, byId: IdDispatchCodec$Entry<B, V, T>[], toId: { [key: string]: any })
     // private byId: IdDispatchCodec$Entry<B, V, T>[];
-    // private toId: Object2IntMap<T>;
+    // private toId: { [key: string]: any };
     // private typeGetter: (param0: V) => T;
     apply<O extends Object | number | string | boolean>(operation: (param0: StreamCodec<B, V>) => StreamCodec<B, O>): StreamCodec<B, O>;
     cast<S extends B>(): StreamCodec<S, V>;

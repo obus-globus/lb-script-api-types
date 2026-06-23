@@ -824,8 +824,8 @@ export class Blocks extends Object {
     static TURTLE_EGG: Block;
     static TWISTING_VINES: Block;
     static TWISTING_VINES_PLANT: Block;
-    static VERSIONED_ID_REGISTRY: VersionMap<Map<Identifier, Block>>;
-    static VERSIONED_REGISTRY: VersionMap<{ [key: number]: Block }>;
+    static VERSIONED_ID_REGISTRY: { [key: string]: any };
+    static VERSIONED_REGISTRY: { [key: string]: any };
     static VINE: Block;
     static VOID_AIR: Block;
     static WALL_TORCH: Block;

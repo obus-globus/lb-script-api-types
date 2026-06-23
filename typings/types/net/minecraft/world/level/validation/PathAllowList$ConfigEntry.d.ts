@@ -1,5 +1,6 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { FileSystem } from '../../../../../java/nio/file/FileSystem.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { PathMatcher } from '../../../../../java/nio/file/PathMatcher.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PathAllowList$EntryType } from '../../../../../net/minecraft/world/level/validation/PathAllowList$EntryType.d.ts'

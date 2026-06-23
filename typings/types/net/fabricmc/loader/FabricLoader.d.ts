@@ -1,5 +1,6 @@
 import type { File } from '../../../java/io/File.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { EnvType } from '../../../net/fabricmc/api/EnvType.d.ts'
 import type { ModContainer } from '../../../net/fabricmc/loader/ModContainer.d.ts'
@@ -10,9 +11,11 @@ export abstract class FabricLoader extends Object implements FabricLoader_2 {
     static INSTANCE: FabricLoader;
     static getInstance(): FabricLoader_2;
     constructor()
+    getConfigDir(): Path[];
     getConfigDirectory(): File;
     getEntrypoints<T extends Object | number | string | boolean>(arg0: string, arg1: Class<T>): T[];
     getEnvironmentType(): EnvType;
+    getGameDir(): Path[];
     getGameDirectory(): File;
     getGameInstance(): Object;
     getMappingResolver(): MappingResolver;

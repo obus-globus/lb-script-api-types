@@ -3,7 +3,7 @@ import type { CompoundTag } from '../../../../../../net/minecraft/nbt/CompoundTa
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class RegistryMapSerializer extends Object {
     static VERSION: number;
-    static fromNbt(paramarg0: CompoundTag): Map<Identifier, Object2IntMap<Identifier>>;
-    static toNbt(paramarg0: Map<Identifier, Object2IntMap<Identifier>>): CompoundTag;
+    static fromNbt(paramarg0: CompoundTag): Map<Identifier, { [key: string]: any }>;
+    static toNbt(paramarg0: Map<Identifier, { [key: string]: any }>): CompoundTag;
     constructor()
 }

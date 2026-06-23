@@ -1,4 +1,5 @@
 import type { AutoCloseable } from '../../../../../../java/lang/AutoCloseable.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { BitSet } from '../../../../../../java/util/BitSet.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
@@ -19,7 +20,7 @@ export class IOWorker extends Object implements AutoCloseable, ChunkScanAccess {
     constructor(info: RegionStorageInfo, dir: Path[], sync: boolean)
     // private consecutiveExecutor: PriorityConsecutiveExecutor;
     // private pendingWrites: Map<ChunkPos, IOWorker$PendingStore>;
-    // private regionCacheForBlender: Long2ObjectLinkedOpenHashMap<CompletableFuture<BitSet>>;
+    // private regionCacheForBlender: { [key: string]: any };
     // private shutdownRequested: AtomicBoolean;
     // private storage: RegionFileStorage;
     close(): void;

@@ -4,6 +4,7 @@ import type { InputStream } from '../java/io/InputStream.d.ts'
 import type { OutputStream } from '../java/io/OutputStream.d.ts'
 import type { ClassLoader } from '../java/lang/ClassLoader.d.ts'
 import type { Socket } from '../java/net/Socket.d.ts'
+import type { Path } from '../java/nio/file/Path.d.ts'
 import type { MessageDigest } from '../java/security/MessageDigest.d.ts'
 import type { Cipher } from '../javax/crypto/Cipher.d.ts'
 import type { Mac } from '../javax/crypto/Mac.d.ts'
@@ -15,7 +16,7 @@ import type { CipherSource } from '../okio/CipherSource.d.ts'
 import type { FileSystem } from '../okio/FileSystem.d.ts'
 import type { HashingSink } from '../okio/HashingSink.d.ts'
 import type { HashingSource } from '../okio/HashingSource.d.ts'
-import type { Path } from '../okio/Path.d.ts'
+import type { Path as Path_2 } from '../okio/Path.d.ts'
 import type { Sink } from '../okio/Sink.d.ts'
 import type { Socket as Socket_2 } from '../okio/Socket.d.ts'
 import type { Source } from '../okio/Source.d.ts'
@@ -32,7 +33,7 @@ export class Okio extends Object {
     static hashingSource(paramarg0: Source, paramarg1: MessageDigest): HashingSource;
     static hashingSource(paramarg0: Source, paramarg1: Mac): HashingSource;
     static inMemorySocketPair(paramarg0: number): (Object | null)[];
-    static openZip(paramarg0: FileSystem, paramarg1: Path): FileSystem;
+    static openZip(paramarg0: FileSystem, paramarg1: Path_2): FileSystem;
     static sink(paramarg0: File): Sink;
     static sink(paramarg0: File, paramarg1: boolean): Sink;
     static sink(paramarg0: OutputStream): Sink;

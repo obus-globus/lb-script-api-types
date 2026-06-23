@@ -93,7 +93,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     // private fractionalMetricsHint: number;
     // private glyphVectorFRC: FontRenderContext;
     // private glyphVectorFontInfo: FontInfo;
-    hints: RenderingHints;
+    hints: { [key: string]: any };
     imageComp: CompositeType;
     imagepipe: DrawImagePipe;
     // private interpolationHint: number;
@@ -190,7 +190,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     getGVFontInfo(arg0: Font, arg1: FontRenderContext): FontInfo;
     getPaint(): Paint;
     getRenderingHint(arg0: RenderingHints$Key): Object;
-    getRenderingHints(): RenderingHints;
+    getRenderingHints(): { [key: string]: any };
     // private getResolutionVariant(arg0: MultiResolutionImage, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: AffineTransform): Image;
     getStroke(): Stroke;
     getSurfaceData(): SurfaceData;
@@ -202,7 +202,7 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     intersectShapes(arg0: Shape, arg1: Shape, arg2: boolean, arg3: boolean): Shape;
     invalidatePipe(): void;
     invalidateTransform(): void;
-    makeHints(arg0: Map<Object | null, Object | null>): RenderingHints;
+    makeHints(arg0: Map<Object | null, Object | null>): { [key: string]: any };
     // private revalidateAll(): void;
     rotate(arg0: number): void;
     rotate(arg0: number, arg1: number, arg2: number): void;

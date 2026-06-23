@@ -11,7 +11,7 @@ export class NearestBedSensor extends Sensor<Mob> {
     static isEntityTargetable(paramlevel: ServerLevel, parambody: LivingEntity, paramentity: LivingEntity): boolean;
     static wasEntityAttackableLastNTicks(parambody: LivingEntity, paramticks: number): (param0: ServerLevel, param1: LivingEntity) => boolean;
     constructor()
-    // private batchCache: Long2LongMap;
+    // private batchCache: { [key: string]: any };
     // private lastUpdate: number;
     // private triedCount: number;
     doTick(level: ServerLevel, body: Mob): void;

@@ -1,4 +1,5 @@
 import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { ZipFile } from '../../../../../java/util/zip/ZipFile.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'

@@ -1,3 +1,4 @@
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { DataGenerator$PackGenerator } from '../../../net/minecraft/data/DataGenerator$PackGenerator.d.ts'
 import type { DataProvider } from '../../../net/minecraft/data/DataProvider.d.ts'

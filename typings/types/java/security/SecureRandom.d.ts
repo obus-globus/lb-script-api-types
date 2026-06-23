@@ -7,20 +7,20 @@ export class SecureRandom extends Random {
     static from(paramarg0: RandomGenerator): Random;
     static getInstance(paramarg0: string): SecureRandom;
     static getInstance(paramarg0: string, paramarg1: string): SecureRandom;
-    static getInstance(paramarg0: string, paramarg1: Provider): SecureRandom;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): SecureRandom;
     static getInstance(paramarg0: string, paramarg1: SecureRandomParameters): SecureRandom;
     static getInstance(paramarg0: string, paramarg1: SecureRandomParameters, paramarg2: string): SecureRandom;
-    static getInstance(paramarg0: string, paramarg1: SecureRandomParameters, paramarg2: Provider): SecureRandom;
+    static getInstance(paramarg0: string, paramarg1: SecureRandomParameters, paramarg2: { [key: string]: any }): SecureRandom;
     static getInstanceStrong(): SecureRandom;
     static getSeed(paramarg0: number): number[];
     constructor()
-    constructor(arg0: SecureRandomSpi, arg1: Provider)
-    private constructor(arg0: SecureRandomSpi, arg1: Provider, arg2: string)
+    constructor(arg0: SecureRandomSpi, arg1: { [key: string]: any })
+    private constructor(arg0: SecureRandomSpi, arg1: { [key: string]: any }, arg2: string)
     constructor(arg0: number[])
     readonly algorithm: string;
     // private counter: number;
     // private digest: MessageDigest;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     // private randomBytes: number[];
     // private randomBytesUsed: number;
     // private secureRandomSpi: SecureRandomSpi;
@@ -30,7 +30,7 @@ export class SecureRandom extends Random {
     getAlgorithm(): string;
     // private getDefaultPRNG(arg0: boolean, arg1: number[]): void;
     getParameters(): SecureRandomParameters;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     // private getProviderName(): string;
     // private getThreadSafe(): boolean;
     next(arg0: number): number;

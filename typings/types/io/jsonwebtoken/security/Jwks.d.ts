@@ -4,9 +4,9 @@ import type { JwkSetBuilder } from '../../../io/jsonwebtoken/security/JwkSetBuil
 import type { JwkSetParserBuilder } from '../../../io/jsonwebtoken/security/JwkSetParserBuilder.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Jwks extends Object {
-    static UNSAFE_JSON(paramarg0: Jwk<Object>): string;
+    static UNSAFE_JSON(paramarg0: { [key: string]: any }): string;
     static builder(): DynamicJwkBuilder<Object, Object>;
-    static json(paramarg0: PublicJwk<Object>): string;
+    static json(paramarg0: { [key: string]: any }): string;
     static parser(): JwkParserBuilder;
     static set(): JwkSetBuilder;
     static setParser(): JwkSetParserBuilder;

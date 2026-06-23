@@ -4,6 +4,7 @@ import type { DiscontinuousFrame } from '../../../com/mojang/jtracy/Discontinuou
 import type { Runnable } from '../../../java/lang/Runnable.d.ts'
 import type { Thread } from '../../../java/lang/Thread.d.ts'
 import type { Proxy } from '../../../java/net/Proxy.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { KeyPair } from '../../../java/security/KeyPair.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'

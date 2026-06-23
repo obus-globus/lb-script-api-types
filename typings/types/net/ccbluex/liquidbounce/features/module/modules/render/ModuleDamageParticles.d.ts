@@ -25,7 +25,7 @@ export class ModuleDamageParticles extends ClientModule {
     // private /*not mapped: */ getDisplacement(): Vec3;
     // private displacementTransition: Easing;
     // private /*not mapped: */ getDisplacementTransition(): Easing;
-    // private entityHealthMap: Reference2FloatOpenHashMap<LivingEntity>;
+    // private entityHealthMap: { [key: string]: any };
     // private entityHealthUpdateHandler: EventHook<EntityHealthUpdateEvent>;
     // private particles: ModuleDamageParticles$Particle[];
     // private renderHandler: EventHook<OverlayRenderEvent>;

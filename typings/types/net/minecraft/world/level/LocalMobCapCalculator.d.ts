@@ -8,7 +8,7 @@ export class LocalMobCapCalculator extends Object {
     constructor(chunkMap: ChunkMap)
     // private chunkMap: ChunkMap;
     // private playerMobCounts: Map<ServerPlayer, LocalMobCapCalculator$MobCounts>;
-    // private playersNearChunk: Long2ObjectMap<ServerPlayer[]>;
+    // private playersNearChunk: { [key: string]: any };
     addMob(pos: ChunkPos, category: MobCategory): void;
     canSpawn(mobCategory: MobCategory, pos: ChunkPos): boolean;
     // private getPlayersNear(pos: ChunkPos): ServerPlayer[];

@@ -12,7 +12,7 @@ import type { MouseButtonEvent } from '../../../../../net/ccbluex/liquidbounce/e
 export class InputTracker extends Object implements EventListener {
     static INSTANCE: InputTracker;
     // private handleMouseAction: EventHook<MouseButtonEvent>;
-    // private keyLastPressed: Int2LongOpenHashMap;
+    // private keyLastPressed: { [key: string]: any };
     // private mouseLastPressed: number[];
     // private mouseStates: number[];
     children(): EventListener[];

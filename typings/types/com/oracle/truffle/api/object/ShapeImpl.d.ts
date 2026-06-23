@@ -21,8 +21,8 @@ export class ShapeImpl extends Shape {
     static findCommonAncestor(paramleft: ShapeImpl, paramright: ShapeImpl): ShapeImpl;
     static newBuilder(): Shape$Builder;
     static newBuilder(parambaseShape: Shape): Shape$DerivedBuilder;
-    constructor(layout: Layout, parent: ShapeImpl, objectType: Object, sharedData: Object, propertyMap: PropertyMap, transition: Transition, allocator: ShapeImpl$BaseAllocator, flags: number)
-    private constructor(layout: Layout, parent: ShapeImpl, objectType: Object, sharedData: Object, propertyMap: PropertyMap, transitionFromParent: Transition, objectArraySize: number, objectFieldSize: number, primitiveFieldSize: number, primitiveArraySize: number, flags: number, singleContextAssumption: Assumption)
+    constructor(layout: Layout, parent: ShapeImpl, objectType: Object, sharedData: Object, propertyMap: { [key: string]: any }, transition: Transition, allocator: ShapeImpl$BaseAllocator, flags: number)
+    private constructor(layout: Layout, parent: ShapeImpl, objectType: Object, sharedData: Object, propertyMap: { [key: string]: any }, transitionFromParent: Transition, objectArraySize: number, objectFieldSize: number, primitiveFieldSize: number, primitiveArraySize: number, flags: number, singleContextAssumption: Assumption)
     constructor(layout: Layout, dynamicType: Object, sharedData: Object, flags: number, constantObjectAssumption: Assumption)
     readonly depth: number;
     readonly flags: number;
@@ -37,7 +37,7 @@ export class ShapeImpl extends Shape {
     readonly primitiveArraySize: number;
     readonly primitiveFieldSize: number;
     readonly propertyCount: number;
-    readonly propertyMap: PropertyMap;
+    readonly propertyMap: { [key: string]: any };
     readonly root: ShapeImpl;
     readonly sharedData: Object;
     // private sharedPropertyAssumptions: ShapeImpl$PropertyAssumptions;
@@ -56,7 +56,7 @@ export class ShapeImpl extends Shape {
     cloneOnto(newParent: ShapeImpl): ShapeImpl;
     cloneRoot(from: ShapeImpl, newSharedData: Object): ShapeImpl;
     createSeparateShape(newSharedData: Object): ShapeImpl;
-    createShape(layout: Layout, sharedData: Object, parent: ShapeImpl, objectType: Object, propertyMap: PropertyMap, transition: Transition, allocator: ShapeImpl$BaseAllocator, id: number): ShapeImpl;
+    createShape(layout: Layout, sharedData: Object, parent: ShapeImpl, objectType: Object, propertyMap: { [key: string]: any }, transition: Transition, allocator: ShapeImpl$BaseAllocator, id: number): ShapeImpl;
     defineProperty(key: Object, value: Object, propertyFlags: number): ShapeImpl;
     defineProperty(key: Object, value: Object, propertyFlags: number, putFlags: number): ShapeImpl;
     forEachTransition(consumer: (param0: Transition, param1: ShapeImpl) => void): void;
@@ -89,7 +89,7 @@ export class ShapeImpl extends Shape {
     getPropertyCount(): number;
     getPropertyList(): Property[];
     getPropertyListInternal(ascending: boolean): Property[];
-    getPropertyMap(): PropertyMap;
+    getPropertyMap(): { [key: string]: any };
     getRoot(): ShapeImpl;
     getSharedData(): Object;
     getSharedDataInternal(): Object;

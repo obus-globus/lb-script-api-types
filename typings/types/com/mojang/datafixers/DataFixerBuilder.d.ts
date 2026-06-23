@@ -8,7 +8,7 @@ export class DataFixerBuilder extends Object {
     // private dataVersion: number;
     // private fixerVersions: (Object | null)[];
     // private globalList: DataFix[];
-    // private schemas: Int2ObjectSortedMap<Schema>;
+    // private schemas: { [key: string]: any };
     addFixer(arg0: DataFix): void;
     addSchema(arg0: Schema): void;
     addSchema(arg0: number, arg1: (param0: number, param1: Schema) => Schema): Schema;

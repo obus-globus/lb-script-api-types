@@ -1,5 +1,6 @@
 import type { Window } from '../../../com/mojang/blaze3d/platform/Window.d.ts'
 import type { IMouseKeyboardHandlers } from '../../../com/viaversion/viafabricplus/injection/access/execute_inputs_sync/IMouseKeyboardHandlers.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { MouseHandlerAddition } from '../../../net/ccbluex/liquidbounce/additions/MouseHandlerAddition.d.ts'
 import type { MixinMouseHandlerAccessor } from '../../../net/ccbluex/liquidbounce/injection/mixins/minecraft/client/MixinMouseHandlerAccessor.d.ts'

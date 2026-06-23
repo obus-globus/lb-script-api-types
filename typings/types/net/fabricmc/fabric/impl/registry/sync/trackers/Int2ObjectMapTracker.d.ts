@@ -10,9 +10,9 @@ export class Int2ObjectMapTracker<V extends Object | number | string | boolean, 
     static allEntries(paramarg0: (Object | null)[], paramarg1: (param0: Holder$Reference<Object>) => void): void;
     static event(paramarg0: (Object | null)[]): Event<(param0: number, param1: Identifier, param2: Object | null) => void>;
     static event(paramarg0: (Object | null)[]): Event<(param0: RegistryIdRemapCallback$RemapState<Object>) => void>;
-    static register(paramarg0: (Object | null)[], paramarg1: string, paramarg2: Int2ObjectMap<Object>): void;
-    private constructor(arg0: string, arg1: Int2ObjectMap<OV>)
-    // private mappers: Int2ObjectMap<OV>;
+    static register(paramarg0: (Object | null)[], paramarg1: string, paramarg2: { [key: string]: any }): void;
+    private constructor(arg0: string, arg1: { [key: string]: any })
+    // private mappers: { [key: string]: any };
     // private name: string;
     // private removedMapperCache: Map<Identifier, OV>;
     onEntryAdded(arg0: number, arg1: Identifier, arg2: V): void;

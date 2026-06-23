@@ -4,7 +4,7 @@ import type { Cloneable } from '../../java/lang/Cloneable.d.ts'
 export class MimeType extends Object implements Serializable, Cloneable {
     constructor(arg0: string)
     // private myEntrySet: (Object | null)[];
-    // private myParameterMap: MimeType$ParameterMap;
+    // private myParameterMap: { [key: string]: any };
     // private myPieces: string[];
     // private myStringValue: string;
     protected clone(): Object;

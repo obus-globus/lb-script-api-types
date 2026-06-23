@@ -7,12 +7,12 @@ import type { PaletteResize } from '../../../../../../../net/minecraft/world/lev
 export class LithiumHashPalette<T extends Object | number | string | boolean> extends Object implements Palette<T> {
     static create(paramarg0: number, paramarg1: (Object | null)[]): Palette<Object>;
     constructor(arg0: number)
-    private constructor(arg0: number, arg1: T[], arg2: Reference2IntOpenHashMap<T>, arg3: number)
+    private constructor(arg0: number, arg1: T[], arg2: { [key: string]: any }, arg3: number)
     constructor(arg0: number, arg1: T[])
     // private entries: T[];
     // private indexBits: number;
     readonly size: number;
-    // private table: Reference2IntOpenHashMap<T>;
+    // private table: { [key: string]: any };
     // private addEntry(arg0: T): number;
     // private clear(): void;
     // private computeEntry(arg0: T, arg1: PaletteResize<T>): number;

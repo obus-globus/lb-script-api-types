@@ -9,7 +9,7 @@ export class PlayerScores extends Object {
     getOrCreate(objective: Objective, newResultCallback: (param0: Score) => void): Score;
     hasScores(): boolean;
     listRawScores(): Map<Objective, Score>;
-    listScores(): Object2IntMap<Objective>;
+    listScores(): { [key: string]: any };
     remove(objective: Objective): boolean;
     setScore(objective: Objective, score: Score): void;
 }

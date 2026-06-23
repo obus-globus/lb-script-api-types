@@ -7,7 +7,7 @@ import type { BlockTintCache$LatestCacheInfo } from '../../../../../net/minecraf
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 export class BlockTintCache extends Object {
     constructor(source: (param0: BlockPos) => number)
-    // private cache: Long2ObjectLinkedOpenHashMap<BlockTintCache$CacheData>;
+    // private cache: { [key: string]: any };
     // private latestChunkOnThread: ThreadLocal<BlockTintCache$LatestCacheInfo>;
     // private lock: ReentrantReadWriteLock;
     // private source: (param0: BlockPos) => number;

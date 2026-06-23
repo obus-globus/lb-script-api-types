@@ -1,4 +1,5 @@
 import type { URI } from '../../../../../java/net/URI.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FileSystemUtil$FileSystemDelegate } from '../../../../../net/fabricmc/loader/impl/util/FileSystemUtil$FileSystemDelegate.d.ts'
 export class FileSystemUtil extends Object {

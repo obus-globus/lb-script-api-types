@@ -4,8 +4,8 @@ import type { KeyOperationPolicy } from '../../../../io/jsonwebtoken/security/Ke
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class JwkBuilderSupplier extends Object implements Supplier<DynamicJwkBuilder<Object, Object>> {
     static DEFAULT: JwkBuilderSupplier;
-    constructor(arg0: Provider, arg1: KeyOperationPolicy)
+    constructor(arg0: { [key: string]: any }, arg1: KeyOperationPolicy)
     // private operationPolicy: KeyOperationPolicy;
-    // private provider: Provider;
+    // private provider: { [key: string]: any };
     get(): DynamicJwkBuilder<Object, Object>;
 }

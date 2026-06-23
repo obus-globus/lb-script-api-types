@@ -2,6 +2,7 @@ import type { File } from '../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { FileChannel } from '../../../../../java/nio/channels/FileChannel.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { BufferedFileChannelInputStream$Builder } from '../../../../../org/apache/commons/io/input/BufferedFileChannelInputStream$Builder.d.ts'
 export class BufferedFileChannelInputStream extends InputStream {
     static builder(): BufferedFileChannelInputStream$Builder;

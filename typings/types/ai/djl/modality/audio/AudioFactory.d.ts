@@ -2,6 +2,7 @@ import type { Audio } from '../../../../ai/djl/modality/audio/Audio.d.ts'
 import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AudioFactory extends Object {
     static newInstance(): AudioFactory;

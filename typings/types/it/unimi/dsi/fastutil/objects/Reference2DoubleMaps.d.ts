@@ -3,15 +3,15 @@ import type { Reference2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fast
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2DoubleMaps extends Object {
-    static EMPTY_MAP: Reference2DoubleMaps$EmptyMap<Object>;
-    static emptyMap(): Reference2DoubleMap<Object>;
-    static fastForEach(paramarg0: Reference2DoubleMap<Object>, paramarg1: (param0: Object) => void): void;
-    static fastIterable(paramarg0: Reference2DoubleMap<Object>): Reference2DoubleMap$Entry<Object>[];
-    static fastIterator(paramarg0: Reference2DoubleMap<Object>): ObjectIterator<Reference2DoubleMap$Entry<Object>>;
-    static singleton(paramarg0: Object | null, paramarg1: number): Reference2DoubleMap<Object>;
-    static singleton(paramarg0: Object | null, paramarg1: number): Reference2DoubleMap<Object>;
-    static synchronize(paramarg0: Reference2DoubleMap<Object>): Reference2DoubleMap<Object>;
-    static synchronize(paramarg0: Reference2DoubleMap<Object>, paramarg1: Object): Reference2DoubleMap<Object>;
-    static unmodifiable(paramarg0: Reference2DoubleMap<Object>): Reference2DoubleMap<Object>;
+    static EMPTY_MAP: { [key: string]: any };
+    static emptyMap(): { [key: string]: any };
+    static fastForEach(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: { [key: string]: any }): Reference2DoubleMap$Entry<Object>[];
+    static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Reference2DoubleMap$Entry<Object>>;
+    static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
+    static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

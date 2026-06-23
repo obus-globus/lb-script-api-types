@@ -15,8 +15,8 @@ export class ItemEnchantments extends Object implements TooltipProvider {
     static CODEC: Codec<ItemEnchantments>;
     static EMPTY: ItemEnchantments;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemEnchantments>;
-    private constructor(enchantments: Object2IntOpenHashMap<Holder<Enchantment>>)
-    // private enchantments: Object2IntOpenHashMap<Holder<Enchantment>>;
+    private constructor(enchantments: { [key: string]: any })
+    // private enchantments: { [key: string]: any };
     addToTooltip(context: Item$TooltipContext, consumer: (param0: Component) => void, flag: TooltipFlag, components: DataComponentGetter): void;
     entrySet(): Object2IntMap$Entry<Holder<Enchantment>>[];
     equals(obj: Object | null): boolean;

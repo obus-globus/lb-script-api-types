@@ -13,7 +13,7 @@ export class OpenJSSEPlatform extends Platform {
     static WARN: number;
     static get(): Platform;
     private constructor()
-    // private provider: Provider;
+    // private provider: { [key: string]: any };
     configureTlsExtensions(sslSocket: SSLSocket, hostname: string | null, protocols: Protocol[]): void;
     getSelectedProtocol(sslSocket: SSLSocket): string | null;
     newSSLContext(): SSLContext;

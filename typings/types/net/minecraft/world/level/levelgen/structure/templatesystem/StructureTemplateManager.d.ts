@@ -1,4 +1,5 @@
 import type { DataFixer } from '../../../../../../../com/mojang/datafixers/DataFixer.d.ts'
+import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'

@@ -4,7 +4,7 @@ import type { AbstractScript } from '../../../../../../org/apache/logging/log4j/
 import type { ScriptManager$ScriptRunner } from '../../../../../../org/apache/logging/log4j/core/script/ScriptManager$ScriptRunner.d.ts'
 export abstract class ScriptManager$AbstractScriptRunner extends Object implements ScriptManager$ScriptRunner {
     private constructor(null_: ScriptManager$AbstractScriptRunner)
-    createBindings(): Bindings;
+    createBindings(): { [key: string]: any };
     getScript(): AbstractScript;
     getScriptEngine(): ScriptEngine;
 }

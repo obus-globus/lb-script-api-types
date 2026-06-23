@@ -6,7 +6,7 @@ import type { Orientation } from '../../../../../net/minecraft/world/level/redst
 import type { RedstoneWireEvaluator } from '../../../../../net/minecraft/world/level/redstone/RedstoneWireEvaluator.d.ts'
 export class ExperimentalRedstoneWireEvaluator extends RedstoneWireEvaluator {
     constructor(wireBlock: RedStoneWireBlock)
-    // private updatedWires: Object2IntMap<BlockPos>;
+    // private updatedWires: { [key: string]: any };
     // private wiresToTurnOff: BlockPos[];
     // private wiresToTurnOn: BlockPos[];
     // private calculateCurrentChanges(level: Level, initialPosition: BlockPos, initialOrientation: Orientation): void;

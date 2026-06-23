@@ -1,5 +1,6 @@
 import type { Closeable } from '../../../java/io/Closeable.d.ts'
 import type { FileStore } from '../../../java/nio/file/FileStore.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { PathMatcher } from '../../../java/nio/file/PathMatcher.d.ts'
 import type { WatchService } from '../../../java/nio/file/WatchService.d.ts'
 import type { UserPrincipalLookupService } from '../../../java/nio/file/attribute/UserPrincipalLookupService.d.ts'

@@ -6,16 +6,16 @@ import type { SupportedJwtVisitor } from '../../io/jsonwebtoken/SupportedJwtVisi
 import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class JwtHandlerAdapter<T extends Object | number | string | boolean> extends SupportedJwtVisitor<T> implements JwtHandler<T> {
     constructor()
-    onClaimsJwe(arg0: Jwe<Claims>): T;
-    onClaimsJws(arg0: Jws<Claims>): T;
-    onClaimsJwt(arg0: Jwt<Header, Claims>): T;
+    onClaimsJwe(arg0: Jwe<{ [key: string]: any }>): T;
+    onClaimsJws(arg0: Jws<{ [key: string]: any }>): T;
+    onClaimsJwt(arg0: Jwt<{ [key: string]: any }, { [key: string]: any }>): T;
     onContentJwe(arg0: Jwe<number[]>): T;
     onContentJws(arg0: Jws<number[]>): T;
-    onContentJwt(arg0: Jwt<Header, number[]>): T;
-    onDecryptedClaims(arg0: Jwe<Claims>): T;
+    onContentJwt(arg0: Jwt<{ [key: string]: any }, number[]>): T;
+    onDecryptedClaims(arg0: Jwe<{ [key: string]: any }>): T;
     onDecryptedContent(arg0: Jwe<number[]>): T;
-    onUnsecuredClaims(arg0: Jwt<Header, Claims>): T;
-    onUnsecuredContent(arg0: Jwt<Header, number[]>): T;
-    onVerifiedClaims(arg0: Jws<Claims>): T;
+    onUnsecuredClaims(arg0: Jwt<{ [key: string]: any }, { [key: string]: any }>): T;
+    onUnsecuredContent(arg0: Jwt<{ [key: string]: any }, number[]>): T;
+    onVerifiedClaims(arg0: Jws<{ [key: string]: any }>): T;
     onVerifiedContent(arg0: Jws<number[]>): T;
 }

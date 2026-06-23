@@ -2,6 +2,7 @@ import type { NativeImage } from '../../../../com/mojang/blaze3d/platform/Native
 import type { GpuTexture } from '../../../../com/mojang/blaze3d/textures/GpuTexture.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { IntUnaryOperator } from '../../../../java/util/function/IntUnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TextureUtil extends Object {

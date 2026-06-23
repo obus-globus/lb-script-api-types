@@ -1,5 +1,6 @@
 import type { GpuBuffer } from '../../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { GpuTextureView } from '../../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { ExtendedTextureAtlas } from '../../../../../net/caffeinemc/mods/sodium/client/render/texture/ExtendedTextureAtlas.d.ts'
 import type { SodiumSpriteFinder } from '../../../../../net/caffeinemc/mods/sodium/client/render/texture/SodiumSpriteFinder.d.ts'
 import type { TextureAtlasAccessor } from '../../../../../net/caffeinemc/mods/sodium/mixin/core/render/texture/TextureAtlasAccessor.d.ts'

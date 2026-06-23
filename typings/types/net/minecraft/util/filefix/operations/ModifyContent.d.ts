@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FileAccessProvider } from '../../../../../net/minecraft/util/filefix/access/FileAccessProvider.d.ts'
 import type { FileFixOperation } from '../../../../../net/minecraft/util/filefix/operations/FileFixOperation.d.ts'

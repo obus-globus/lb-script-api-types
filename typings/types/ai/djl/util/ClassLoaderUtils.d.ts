@@ -2,6 +2,7 @@ import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../java/lang/ClassLoader.d.ts'
 import type { URL } from '../../../java/net/URL.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Enumeration } from '../../../java/util/Enumeration.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class ClassLoaderUtils extends Object {

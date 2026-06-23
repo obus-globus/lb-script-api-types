@@ -9,9 +9,9 @@ import type { MapAtlasTexture } from '../../../../net/raphimc/immediatelyfast/fe
 import type { IMapTextureManager } from '../../../../net/raphimc/immediatelyfast/injection/interfaces/IMapTextureManager.d.ts'
 export class MapTextureManager extends Object implements AutoCloseable, IMapTextureManager {
     constructor(textureManager: TextureManager)
-    // private immediatelyFast$mapAtlasTextures: Int2ObjectMap<Object>;
-    // private immediatelyFast$mapIdToAtlasMapping: Int2IntMap;
-    // private maps: Int2ObjectMap<MapTextureManager$MapInstance>;
+    // private immediatelyFast$mapAtlasTextures: { [key: string]: any };
+    // private immediatelyFast$mapIdToAtlasMapping: { [key: string]: any };
+    // private maps: { [key: string]: any };
     // private textureManager: TextureManager;
     close(): void;
     // private getOrCreateMapInstance(id: MapId, data: MapItemSavedData): MapTextureManager$MapInstance;

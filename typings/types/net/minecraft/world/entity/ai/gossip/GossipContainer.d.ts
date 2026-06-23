@@ -19,7 +19,7 @@ export class GossipContainer extends Object {
     copy(): GossipContainer;
     decay(): void;
     getCountForType(type: GossipType, valueTest: (param0: number) => boolean): number;
-    getGossipEntries(): Map<UUID, Object2IntMap<GossipType>>;
+    getGossipEntries(): Map<UUID, { [key: string]: any }>;
     // private getOrCreate(target: UUID): GossipContainer$EntityGossips;
     getReputation(entity: UUID, types: (param0: GossipType) => boolean): number;
     // private mergeValuesForAddition(type: GossipType, oldValue: number, newValue: number): number;

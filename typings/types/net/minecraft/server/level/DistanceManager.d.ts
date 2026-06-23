@@ -20,7 +20,7 @@ export abstract class DistanceManager extends Object {
     // private mainThreadExecutor: Executor;
     // private naturalSpawnChunkCounter: DistanceManager$FixedPlayerDistanceChunkTracker;
     // private playerTicketManager: DistanceManager$PlayerTicketTracker;
-    // private playersPerChunk: Long2ObjectMap<ServerPlayer[]>;
+    // private playersPerChunk: { [key: string]: any };
     // private simulationChunkTracker: SimulationChunkTracker;
     // private simulationDistance: number;
     // private ticketDispatcher: ThrottlingChunkTaskDispatcher;

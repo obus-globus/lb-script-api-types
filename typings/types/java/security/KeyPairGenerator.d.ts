@@ -5,15 +5,15 @@ import type { AlgorithmParameterSpec } from '../../java/security/spec/AlgorithmP
 export abstract class KeyPairGenerator extends KeyPairGeneratorSpi {
     static getInstance(paramarg0: string): KeyPairGenerator;
     static getInstance(paramarg0: string, paramarg1: string): KeyPairGenerator;
-    static getInstance(paramarg0: string, paramarg1: Provider): KeyPairGenerator;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyPairGenerator;
     constructor(arg0: string)
     readonly algorithm: string;
-    provider: Provider;
+    provider: { [key: string]: any };
     disableFailover(): void;
     genKeyPair(): KeyPair;
     generateKeyPair(): KeyPair;
     getAlgorithm(): string;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     initialize(arg0: AlgorithmParameterSpec): void;
     initialize(arg0: AlgorithmParameterSpec, arg1: SecureRandom): void;
     initialize(arg0: number): void;

@@ -1,3 +1,4 @@
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { LocalDate } from '../../../../java/time/LocalDate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { EventLogDirectory$File } from '../../../../net/minecraft/util/eventlog/EventLogDirectory$File.d.ts'

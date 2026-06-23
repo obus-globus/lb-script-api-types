@@ -4,10 +4,10 @@ export class Int2IntMapMappings extends Object implements Mappings {
     static isFullIdentity(paramarg0: Mappings): boolean;
     static isIntIdIdentity(paramarg0: Mappings): boolean;
     static of(): Int2IntMapMappings;
-    static of(paramarg0: Int2IntMap, paramarg1: number): Int2IntMapMappings;
-    constructor(arg0: Int2IntMap, arg1: number)
+    static of(paramarg0: { [key: string]: any }, paramarg1: number): Int2IntMapMappings;
+    constructor(arg0: { [key: string]: any }, arg1: number)
     // private mappedIds: number;
-    // private mappings: Int2IntMap;
+    // private mappings: { [key: string]: any };
     contains(arg0: number): boolean;
     getNewId(arg0: number): number;
     getNewIdOrDefault(arg0: number, arg1: number): number;

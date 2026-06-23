@@ -48,8 +48,8 @@ export class Strings extends Object {
     static replace(paramarg0: string, paramarg1: string, paramarg2: string): string;
     static sortStringArray(paramarg0: (Object | null)[]): (Object | null)[];
     static split(paramarg0: string, paramarg1: string): (Object | null)[];
-    static splitArrayElementsIntoProperties(paramarg0: (Object | null)[], paramarg1: string): Properties;
-    static splitArrayElementsIntoProperties(paramarg0: (Object | null)[], paramarg1: string, paramarg2: string): Properties;
+    static splitArrayElementsIntoProperties(paramarg0: (Object | null)[], paramarg1: string): { [key: string]: any };
+    static splitArrayElementsIntoProperties(paramarg0: (Object | null)[], paramarg1: string, paramarg2: string): { [key: string]: any };
     static startsWithIgnoreCase(paramarg0: string, paramarg1: string): boolean;
     static stripFilenameExtension(paramarg0: string): string;
     static substringMatch(paramarg0: CharSequence, paramarg1: number, paramarg2: CharSequence): boolean;

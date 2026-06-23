@@ -1,6 +1,7 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { ByteBuffer } from '../../../../../../java/nio/ByteBuffer.d.ts'
 import type { SeekableByteChannel } from '../../../../../../java/nio/channels/SeekableByteChannel.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { MultiReadOnlySeekableByteChannel } from '../../../../../../org/apache/commons/compress/utils/MultiReadOnlySeekableByteChannel.d.ts'
 export class ZipSplitReadOnlySeekableByteChannel extends MultiReadOnlySeekableByteChannel {

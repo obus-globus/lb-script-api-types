@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { InputTag } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/InputTag.d.ts'

@@ -1,5 +1,6 @@
 import type { TruffleFile } from '../../../../com/oracle/truffle/api/TruffleFile.d.ts'
 import type { TruffleFile$FileSystemContext } from '../../../../com/oracle/truffle/api/TruffleFile$FileSystemContext.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'

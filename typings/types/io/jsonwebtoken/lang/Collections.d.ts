@@ -25,7 +25,7 @@ export class Collections extends Object {
     static isEmpty(paramarg0: Object[]): boolean;
     static isEmpty(paramarg0: Map<Object, Object>): boolean;
     static mergeArrayIntoCollection(paramarg0: Object, paramarg1: (Object | null)[]): void;
-    static mergePropertiesIntoMap(paramarg0: Properties, paramarg1: Map<Object | null, Object | null>): void;
+    static mergePropertiesIntoMap(paramarg0: { [key: string]: any }, paramarg1: Map<Object | null, Object | null>): void;
     static nullSafe(paramarg0: (Object | null)[]): (Object | null)[];
     static nullSafe(paramarg0: (Object | null)[]): (Object | null)[];
     static of(paramarg0: Object | null): (Object | null)[];

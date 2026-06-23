@@ -16,7 +16,7 @@ export abstract class AbstractNetworkIF extends Object implements NetworkIF {
     // private networkInterface: NetworkInterface;
     readonly prefixLengths: number[];
     readonly subnetMasks: number[];
-    // private vmMacAddrProps: () => Properties;
+    // private vmMacAddrProps: () => { [key: string]: any };
     getBytesRecv(): number;
     getBytesSent(): number;
     getCollisions(): number;

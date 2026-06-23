@@ -8,7 +8,7 @@ export class OpenSslX509KeyManagerFactory extends KeyManagerFactory {
     static getDefaultAlgorithm(): string;
     static getInstance(paramarg0: string): KeyManagerFactory;
     static getInstance(paramarg0: string, paramarg1: string): KeyManagerFactory;
-    static getInstance(paramarg0: string, paramarg1: Provider): KeyManagerFactory;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyManagerFactory;
     static newEngineBased(paramarg0: File, paramarg1: string): OpenSslX509KeyManagerFactory;
     static newEngineBased(paramarg0: (Object | null)[], paramarg1: string): OpenSslX509KeyManagerFactory;
     static newKeyless(paramarg0: File): OpenSslX509KeyManagerFactory;
@@ -16,8 +16,8 @@ export class OpenSslX509KeyManagerFactory extends KeyManagerFactory {
     static newKeyless(paramarg0: (Object | null)[]): OpenSslX509KeyManagerFactory;
     constructor()
     private constructor(arg0: OpenSslX509KeyManagerFactory$OpenSslKeyManagerFactorySpi)
-    constructor(arg0: Provider)
-    constructor(arg0: string, arg1: Provider)
+    constructor(arg0: { [key: string]: any })
+    constructor(arg0: string, arg1: { [key: string]: any })
     // private spi: OpenSslX509KeyManagerFactory$OpenSslKeyManagerFactorySpi;
     newProvider(): OpenSslKeyMaterialProvider;
 }

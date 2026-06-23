@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { RusticError } from '../../../../../net/irisshaders/iris/shaderpack/error/RusticError.d.ts'

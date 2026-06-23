@@ -5,8 +5,8 @@ import type { AtomicInteger } from '../../../../../java/util/concurrent/atomic/A
 export class PacketSyncStorage extends StoredObject {
     constructor(arg0: UserConnection)
     // private ID_COUNTER: AtomicInteger;
-    // private pendingActions: Int2ObjectMap<() => void>;
-    // private pendingNetworkStackLatencyResponses: Int2ObjectMap<number>;
+    // private pendingActions: { [key: string]: any };
+    // private pendingNetworkStackLatencyResponses: { [key: string]: any };
     addNetworkStackLatencyResponse(arg0: number): number;
     getNetworkStackLatencyResponse(arg0: number): number;
     handleSyncTask(arg0: number): boolean;

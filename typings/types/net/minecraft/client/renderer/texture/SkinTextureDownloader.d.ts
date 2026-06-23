@@ -1,5 +1,6 @@
 import type { NativeImage } from '../../../../../com/mojang/blaze3d/platform/NativeImage.d.ts'
 import type { Proxy } from '../../../../../java/net/Proxy.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'

@@ -25,16 +25,16 @@ import type { SecretKeyFactory } from '../../../../javax/crypto/SecretKeyFactory
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class JcaTemplate extends Object {
     constructor(arg0: string)
-    constructor(arg0: string, arg1: Provider)
-    constructor(arg0: string, arg1: Provider, arg2: SecureRandom)
+    constructor(arg0: string, arg1: { [key: string]: any })
+    constructor(arg0: string, arg1: { [key: string]: any }, arg2: SecureRandom)
     // private jcaName: string;
-    // private provider: Provider;
+    // private provider: { [key: string]: any };
     // private secureRandom: SecureRandom;
     // private execute<T extends Object | number | string | boolean>(arg0: Class<Object>, arg1: CheckedSupplier<T>): T;
     // private execute<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>): R;
-    // private execute<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>, arg2: Provider): R;
+    // private execute<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>, arg2: { [key: string]: any }): R;
     fallback<R extends Object | number | string | boolean, T extends Object | number | string | boolean>(arg0: Class<T>, arg1: CheckedFunction<T, R>): R;
-    findBouncyCastle(): Provider;
+    findBouncyCastle(): { [key: string]: any };
     generateKeyPair(): KeyPair;
     generateKeyPair(arg0: AlgorithmParameterSpec): KeyPair;
     generateKeyPair(arg0: number): KeyPair;

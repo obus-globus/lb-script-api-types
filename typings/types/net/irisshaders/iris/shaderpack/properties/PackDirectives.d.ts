@@ -21,7 +21,7 @@ export class PackDirectives extends Object {
     readonly concurrentCompute: boolean;
     // private dhCloudSetting: CloudSetting;
     readonly drynessHalfLife: number;
-    // private explicitFlips: { [key: string]: Object2BooleanMap<string> };
+    // private explicitFlips: { [key: string]: { [key: string]: any } };
     readonly eyeBrightnessHalfLife: number;
     readonly fallbackTex: number;
     // private frustumCulling: boolean;

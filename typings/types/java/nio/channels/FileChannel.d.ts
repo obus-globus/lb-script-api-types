@@ -11,6 +11,7 @@ import type { SeekableByteChannel } from '../../../java/nio/channels/SeekableByt
 import type { WritableByteChannel } from '../../../java/nio/channels/WritableByteChannel.d.ts'
 import type { AbstractInterruptibleChannel } from '../../../java/nio/channels/spi/AbstractInterruptibleChannel.d.ts'
 import type { OpenOption } from '../../../java/nio/file/OpenOption.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class FileChannel extends AbstractInterruptibleChannel implements GatheringByteChannel, ScatteringByteChannel, SeekableByteChannel {
     static open(paramarg0: Path[][], paramarg1: (Object | null)[]): FileChannel;

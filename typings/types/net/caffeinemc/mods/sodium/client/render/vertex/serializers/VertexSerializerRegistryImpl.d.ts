@@ -7,7 +7,7 @@ export class VertexSerializerRegistryImpl extends Object implements VertexSerial
     static INSTANCE: VertexSerializerRegistry;
     static instance(): VertexSerializerRegistry;
     constructor()
-    // private cache: Long2ReferenceMap<VertexSerializer>;
+    // private cache: { [key: string]: any };
     // private lock: StampedLock;
     // private create(arg0: number, arg1: VertexFormat, arg2: VertexFormat): VertexSerializer;
     // private find(arg0: number): VertexSerializer;

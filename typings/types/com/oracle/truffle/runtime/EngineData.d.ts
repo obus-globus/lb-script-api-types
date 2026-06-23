@@ -7,6 +7,7 @@ import type { TruffleSplittingStrategy$SplitStatisticsData } from '../../../../c
 import type { StatisticsListener } from '../../../../com/oracle/truffle/runtime/debug/StatisticsListener.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { IllegalArgumentException } from '../../../../java/lang/IllegalArgumentException.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { AtomicBoolean } from '../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'

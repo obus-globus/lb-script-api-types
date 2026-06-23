@@ -4,9 +4,9 @@ import type { KeyRequest } from '../../../../io/jsonwebtoken/security/KeyRequest
 import type { SecureRandom } from '../../../../java/security/SecureRandom.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DefaultKeyRequest<T extends Object | number | string | boolean> extends DefaultRequest<T> implements KeyRequest<T> {
-    constructor(arg0: T, arg1: Provider, arg2: SecureRandom, arg3: JweHeader, arg4: AeadAlgorithm)
+    constructor(arg0: T, arg1: { [key: string]: any }, arg2: SecureRandom, arg3: { [key: string]: any }, arg4: AeadAlgorithm)
     readonly encryptionAlgorithm: AeadAlgorithm;
-    readonly header: JweHeader;
+    readonly header: { [key: string]: any };
     getEncryptionAlgorithm(): AeadAlgorithm;
-    getHeader(): JweHeader;
+    getHeader(): { [key: string]: any };
 }

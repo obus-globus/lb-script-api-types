@@ -1,5 +1,6 @@
 import type { DataFixerBuilder$Result } from '../../../../com/mojang/datafixers/DataFixerBuilder$Result.d.ts'
 import type { Dynamic } from '../../../../com/mojang/serialization/Dynamic.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FileFix } from '../../../../net/minecraft/util/filefix/FileFix.d.ts'
 import type { FileSystemCapabilities } from '../../../../net/minecraft/util/filefix/FileSystemCapabilities.d.ts'

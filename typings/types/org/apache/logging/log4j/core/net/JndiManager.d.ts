@@ -4,11 +4,11 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AbstractManager } from '../../../../../../org/apache/logging/log4j/core/appender/AbstractManager.d.ts'
 import type { ManagerFactory } from '../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 export class JndiManager extends AbstractManager {
-    static createProperties(paraminitialContextFactoryName: string, paramproviderURL: string, paramurlPkgPrefixes: string, paramsecurityPrincipal: string, paramsecurityCredentials: string, paramadditionalProperties: Properties): Properties;
+    static createProperties(paraminitialContextFactoryName: string, paramproviderURL: string, paramurlPkgPrefixes: string, paramsecurityPrincipal: string, paramsecurityCredentials: string, paramadditionalProperties: { [key: string]: any }): { [key: string]: any };
     static getDefaultManager(): JndiManager;
     static getDefaultManager(paramname: string): JndiManager;
-    static getJndiManager(paraminitialContextFactoryName: string, paramproviderURL: string, paramurlPkgPrefixes: string, paramsecurityPrincipal: string, paramsecurityCredentials: string, paramadditionalProperties: Properties): JndiManager;
-    static getJndiManager(paramproperties: Properties): JndiManager;
+    static getJndiManager(paraminitialContextFactoryName: string, paramproviderURL: string, paramurlPkgPrefixes: string, paramsecurityPrincipal: string, paramsecurityCredentials: string, paramadditionalProperties: { [key: string]: any }): JndiManager;
+    static getJndiManager(paramproperties: { [key: string]: any }): JndiManager;
     static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
     static hasManager(paramname: string): boolean;
     static isJndiContextSelectorEnabled(): boolean;

@@ -5,7 +5,7 @@ import type { Enchantment } from '../../../../../net/minecraft/world/item/enchan
 import type { ItemEnchantments } from '../../../../../net/minecraft/world/item/enchantment/ItemEnchantments.d.ts'
 export class ItemEnchantments$Mutable extends Object {
     constructor(enchantments: ItemEnchantments)
-    // private enchantments: Object2IntOpenHashMap<Holder<Enchantment>>;
+    // private enchantments: { [key: string]: any };
     getLevel(enchantment: Holder<Enchantment>): number;
     keySet(): Holder<Enchantment>[];
     removeIf(predicate: (param0: Holder<Enchantment>) => boolean): void;

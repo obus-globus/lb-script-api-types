@@ -1,5 +1,6 @@
 import type { HashCode } from '../../../../../com/google/common/hash/HashCode.d.ts'
 import type { URL } from '../../../../../java/net/URL.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ServerPackManager$ActivationStatus } from '../../../../../net/minecraft/client/resources/server/ServerPackManager$ActivationStatus.d.ts'

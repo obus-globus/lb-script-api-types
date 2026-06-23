@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Block extends Object {
     static IS_AIR: (param0: MCVersion, param1: Block) => boolean;
     static IS_RANDOM_TICKING: (param0: MCVersion, param1: Block) => boolean;
-    static RANDOM_TICKING: VersionMap<Block>;
+    static RANDOM_TICKING: { [key: string]: any };
     constructor(arg0: MCVersion, arg1: number, arg2: string, arg3: MCVersion)
     constructor(arg0: MCVersion, arg1: number, arg2: string, arg3: MCVersion, arg4: number)
     readonly id: number;

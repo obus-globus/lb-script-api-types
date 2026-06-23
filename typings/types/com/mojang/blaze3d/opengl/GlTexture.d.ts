@@ -10,7 +10,7 @@ export class GlTexture extends GpuTexture implements GpuTextureInterface {
     static USAGE_TEXTURE_BINDING: number;
     constructor(usage: number, label: string, format: TextureFormat, width: number, height: number, depthOrLayers: number, mipLevels: number, id: number)
     closed: boolean;
-    // private fboCache: Int2IntMap;
+    // private fboCache: { [key: string]: any };
     // private firstFboDepthId: number;
     // private firstFboId: number;
     // private id: number;

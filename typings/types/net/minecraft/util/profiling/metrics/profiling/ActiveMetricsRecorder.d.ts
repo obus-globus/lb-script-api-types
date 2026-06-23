@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Executor } from '../../../../../../java/util/concurrent/Executor.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { LongSupplier } from '../../../../../../java/util/function/LongSupplier.d.ts'

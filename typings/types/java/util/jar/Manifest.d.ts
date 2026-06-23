@@ -9,17 +9,17 @@ export class Manifest extends Object implements Cloneable {
     constructor(arg0: InputStream, arg1: string)
     constructor(arg0: JarVerifier, arg1: InputStream, arg2: string)
     constructor(arg0: Manifest)
-    // private attr: Attributes;
-    readonly entries: { [key: string]: Attributes };
+    // private attr: { [key: string]: any };
+    readonly entries: { [key: string]: { [key: string]: any } };
     // private jv: JarVerifier;
     clear(): void;
     clone(): Object;
     protected clone(): Object;
     equals(arg0: Object | null): boolean;
-    getAttributes(arg0: string): Attributes;
-    getEntries(): { [key: string]: Attributes };
-    getMainAttributes(): Attributes;
-    getTrustedAttributes(arg0: string): Attributes;
+    getAttributes(arg0: string): { [key: string]: any };
+    getEntries(): { [key: string]: { [key: string]: any } };
+    getMainAttributes(): { [key: string]: any };
+    getTrustedAttributes(arg0: string): { [key: string]: any };
     hashCode(): number;
     // private parseName(arg0: number[], arg1: number): string;
     read(arg0: InputStream): void;

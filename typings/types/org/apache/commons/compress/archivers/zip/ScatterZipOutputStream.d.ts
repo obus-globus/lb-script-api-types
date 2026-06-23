@@ -1,5 +1,6 @@
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { AtomicBoolean } from '../../../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ScatterZipOutputStream$CompressedEntry } from '../../../../../../org/apache/commons/compress/archivers/zip/ScatterZipOutputStream$CompressedEntry.d.ts'

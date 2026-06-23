@@ -30,6 +30,6 @@ export abstract class X509CRL extends CRL implements DEREncodable, X509Extension
     hasUnsupportedCriticalExtension(): boolean;
     hashCode(): number;
     verify(arg0: PublicKey): void;
-    verify(arg0: PublicKey, arg1: Provider): void;
+    verify(arg0: PublicKey, arg1: { [key: string]: any }): void;
     verify(arg0: PublicKey, arg1: string): void;
 }

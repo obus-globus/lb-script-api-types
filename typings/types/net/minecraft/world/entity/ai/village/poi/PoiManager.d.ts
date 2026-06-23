@@ -1,5 +1,6 @@
 import type { DataFixer } from '../../../../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { Pair } from '../../../../../../../com/mojang/datafixers/util/Pair.d.ts'
+import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
 import type { BiPredicate } from '../../../../../../../java/util/function/BiPredicate.d.ts'

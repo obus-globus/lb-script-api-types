@@ -6,8 +6,8 @@ import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemS
 export class FuelValues extends Object {
     static vanillaBurnTimes(paramregistries: HolderLookup$Provider, paramenabledFeatures: FeatureFlagSet): FuelValues;
     static vanillaBurnTimes(paramregistries: HolderLookup$Provider, paramenabledFeatures: FeatureFlagSet, parambaseUnit: number): FuelValues;
-    private constructor(values: Object2IntSortedMap<Item>)
-    // private values: Object2IntSortedMap<Item>;
+    private constructor(values: { [key: string]: any })
+    // private values: { [key: string]: any };
     burnDuration(itemStack: ItemStack): number;
     fuelItems(): Item[];
     isFuel(itemStack: ItemStack): boolean;

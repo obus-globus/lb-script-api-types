@@ -1,3 +1,4 @@
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'

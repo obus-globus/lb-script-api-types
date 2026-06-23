@@ -19,7 +19,7 @@ export class PoiSection extends Object implements PointOfInterestSetExtended {
     private constructor(setDirty: () => void, isValid: boolean, records: PoiRecord[])
     // private byType: Map<Holder<PoiType>, PoiRecord[]>;
     // private isValid: boolean;
-    // private records: Short2ObjectMap<PoiRecord>;
+    // private records: { [key: string]: any };
     // private setDirty: () => void;
     add(blockPos: BlockPos, type: Holder<PoiType>): PoiRecord;
     // private add(record: PoiRecord): boolean;

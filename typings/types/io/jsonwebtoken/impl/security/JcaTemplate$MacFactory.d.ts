@@ -2,5 +2,5 @@ import type { JcaTemplate$JcaInstanceFactory } from '../../../../io/jsonwebtoken
 import type { Mac } from '../../../../javax/crypto/Mac.d.ts'
 export class JcaTemplate$MacFactory extends JcaTemplate$JcaInstanceFactory<Mac> {
     constructor()
-    doGet(arg0: string, arg1: Provider): Mac;
+    doGet(arg0: string, arg1: { [key: string]: any }): Mac;
 }

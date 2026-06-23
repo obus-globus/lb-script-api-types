@@ -28507,7 +28507,6 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.post.CrystalPostAttackTracker": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/post/CrystalPostAttackTracker").CrystalPostAttackTracker;
     "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.post.SubmoduleSetDead": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/post/SubmoduleSetDead").SubmoduleSetDead;
     "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.post.SubmoduleSetDead$CrystalTracker": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/post/SubmoduleSetDead$CrystalTracker").SubmoduleSetDead$CrystalTracker;
-    "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.post.SubmoduleSetDead$CrystalTracker$RemovedCrystal": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/post/SubmoduleSetDead$CrystalTracker$RemovedCrystal").SubmoduleSetDead$CrystalTracker$RemovedCrystal;
     "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.trigger.CrystalAuraTriggerer": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/CrystalAuraTriggerer").CrystalAuraTriggerer;
     "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.trigger.PostPacketTrigger": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/PostPacketTrigger").PostPacketTrigger;
     "net.ccbluex.liquidbounce.features.module.modules.combat.crystalaura.trigger.Trigger": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/trigger/Trigger").Trigger;
@@ -29818,6 +29817,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.mcef.cef.MCEFDirectTexture$DirectGlTexture": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MCEFDirectTexture$DirectGlTexture").MCEFDirectTexture$DirectGlTexture;
     "net.ccbluex.liquidbounce.mcef.cef.MCEFDragContext": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MCEFDragContext").MCEFDragContext;
     "net.ccbluex.liquidbounce.mcef.cef.MCEFRenderer": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MCEFRenderer").MCEFRenderer;
+    "net.ccbluex.liquidbounce.mcef.cef.MacAcceleratedPaintBackend": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MacAcceleratedPaintBackend").MacAcceleratedPaintBackend;
     "net.ccbluex.liquidbounce.mcef.cef.WindowsAcceleratedPaintBackend": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/WindowsAcceleratedPaintBackend").WindowsAcceleratedPaintBackend;
     "net.ccbluex.liquidbounce.mcef.cef.WindowsAcceleratedPaintBackend$SharedTextureEntry": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/WindowsAcceleratedPaintBackend$SharedTextureEntry").WindowsAcceleratedPaintBackend$SharedTextureEntry;
     "net.ccbluex.liquidbounce.mcef.download.MCEFProvidedResourceManager": typeof import("../types/net/ccbluex/liquidbounce/mcef/download/MCEFProvidedResourceManager").MCEFProvidedResourceManager;
@@ -29833,6 +29833,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.mcef.utils.MultiPartDownloader$PartDownload": typeof import("../types/net/ccbluex/liquidbounce/mcef/utils/MultiPartDownloader$PartDownload").MultiPartDownloader$PartDownload;
     "net.ccbluex.liquidbounce.mcef.utils.MultiPartDownloader$ProgressReporter": typeof import("../types/net/ccbluex/liquidbounce/mcef/utils/MultiPartDownloader$ProgressReporter").MultiPartDownloader$ProgressReporter;
     "net.ccbluex.liquidbounce.mcef.utils.MultiPartDownloader$RangeProbe": typeof import("../types/net/ccbluex/liquidbounce/mcef/utils/MultiPartDownloader$RangeProbe").MultiPartDownloader$RangeProbe;
+    "net.ccbluex.liquidbounce.mcef.utils.MultiPartDownloader$RetryablePartDownloadException": typeof import("../types/net/ccbluex/liquidbounce/mcef/utils/MultiPartDownloader$RetryablePartDownloadException").MultiPartDownloader$RetryablePartDownloadException;
     "net.ccbluex.liquidbounce.render.AbstractFontRenderer": typeof import("../types/net/ccbluex/liquidbounce/render/AbstractFontRenderer").AbstractFontRenderer;
     "net.ccbluex.liquidbounce.render.AbstractFontRenderer$DrawParameters": typeof import("../types/net/ccbluex/liquidbounce/render/AbstractFontRenderer$DrawParameters").AbstractFontRenderer$DrawParameters;
     "net.ccbluex.liquidbounce.render.BatchCollector": typeof import("../types/net/ccbluex/liquidbounce/render/BatchCollector").BatchCollector;
@@ -43949,6 +43950,7 @@ interface JavaTypeRegistry {
     "org.cef.handler.CefLifeSpanHandlerAdapter": typeof import("../types/org/cef/handler/CefLifeSpanHandlerAdapter").CefLifeSpanHandlerAdapter;
     "org.cef.handler.CefLoadHandler$ErrorCode": typeof import("../types/org/cef/handler/CefLoadHandler$ErrorCode").CefLoadHandler$ErrorCode;
     "org.cef.handler.CefLoadHandlerAdapter": typeof import("../types/org/cef/handler/CefLoadHandlerAdapter").CefLoadHandlerAdapter;
+    "org.cef.handler.CefMacOsIOSurface": typeof import("../types/org/cef/handler/CefMacOsIOSurface").CefMacOsIOSurface;
     "org.cef.handler.CefMessageRouterHandlerAdapter": typeof import("../types/org/cef/handler/CefMessageRouterHandlerAdapter").CefMessageRouterHandlerAdapter;
     "org.cef.handler.CefPrintHandlerAdapter": typeof import("../types/org/cef/handler/CefPrintHandlerAdapter").CefPrintHandlerAdapter;
     "org.cef.handler.CefRenderHandlerAdapter": typeof import("../types/org/cef/handler/CefRenderHandlerAdapter").CefRenderHandlerAdapter;

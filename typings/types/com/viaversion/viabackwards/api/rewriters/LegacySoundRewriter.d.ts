@@ -4,7 +4,7 @@ import type { RewriterBase } from '../../../../../com/viaversion/viaversion/api/
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class LegacySoundRewriter<T extends BackwardsProtocol<Object, Object, Object, Object>> extends RewriterBase<T> {
     constructor(arg0: T)
-    // private soundRewrites: Int2ObjectMap<LegacySoundRewriter$SoundData>;
+    // private soundRewrites: { [key: string]: any };
     added(arg0: number, arg1: number): LegacySoundRewriter$SoundData;
     added(arg0: number, arg1: number, arg2: number): LegacySoundRewriter$SoundData;
     handlePitch(arg0: number): number;

@@ -41,7 +41,7 @@ export class Class<T extends Object | number | string | boolean> extends Object 
     // private annotationType: AnnotationType;
     // private cachedConstructor: Constructor<T>;
     // private classRedefinedCount: number;
-    // private classValueMap: ClassValue$ClassValueMap;
+    // private classValueMap: { [key: string]: any };
     // private enumConstantDirectory: { [key: string]: T };
     readonly enumConstants: T[];
     // private genericInfo: ClassRepository;

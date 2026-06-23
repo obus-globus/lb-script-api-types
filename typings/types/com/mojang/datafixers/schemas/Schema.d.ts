@@ -9,7 +9,7 @@ export class Schema extends Object {
     constructor(arg0: number, arg1: Schema)
     // private name: string;
     readonly parent: Schema;
-    // private recursiveTypes: Object2IntMap<string>;
+    // private recursiveTypes: { [key: string]: any };
     // private typeTemplates: { [key: string]: () => TypeTemplate };
     // private types: { [key: string]: Type<Object> };
     readonly versionKey: number;

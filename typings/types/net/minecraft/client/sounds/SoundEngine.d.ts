@@ -31,7 +31,7 @@ export class SoundEngine extends Object {
     // private channelAccess: ChannelAccess;
     // private deviceTracker: DeviceTracker;
     // private executor: SoundEngineExecutor;
-    // private gainBySource: Object2FloatMap<SoundSource>;
+    // private gainBySource: { [key: string]: any };
     // private instanceBySource: Multimap<SoundSource, SoundInstance>;
     // private instanceToChannel: Map<SoundInstance, ChannelAccess$ChannelHandle>;
     // private lastSeenDevices: DeviceList;

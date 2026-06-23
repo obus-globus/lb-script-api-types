@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BlockConnectionStorage extends Object implements StorableObject {
     static init(): void;
     constructor()
-    // private blockStorage: Long2ObjectMap<BlockConnectionStorage$SectionData>;
+    // private blockStorage: { [key: string]: any };
     // private lastIndex: number;
     // private lastSection: BlockConnectionStorage$SectionData;
     // private modified: BlockPosition[];

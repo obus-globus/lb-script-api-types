@@ -2,7 +2,7 @@ import type { GpuTexture } from '../../../../../com/mojang/blaze3d/textures/GpuT
 import type { GlResource } from '../../../../../net/irisshaders/iris/gl/GlResource.d.ts'
 export class GlFramebuffer extends GlResource {
     constructor()
-    // private attachments: Int2IntMap;
+    // private attachments: { [key: string]: any };
     // private hasDepthAttachment: boolean;
     // private maxColorAttachments: number;
     // private maxDrawBuffers: number;

@@ -10,7 +10,7 @@ export class EntityTrackerBase extends Object implements ClientEntityIdChangeLis
     constructor(arg0: UserConnection, arg1: EntityType)
     // private connection: UserConnection;
     readonly dimensions: { [key: string]: DimensionData };
-    // private entities: Int2ObjectMap<TrackedEntity>;
+    // private entities: { [key: string]: any };
     readonly instaBuild: boolean;
     // private playerType: EntityType;
     addEntity(arg0: number, arg1: EntityType): void;

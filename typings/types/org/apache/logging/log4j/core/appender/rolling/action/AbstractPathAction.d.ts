@@ -1,5 +1,6 @@
 import type { FileVisitOption } from '../../../../../../../../java/nio/file/FileVisitOption.d.ts'
 import type { FileVisitor } from '../../../../../../../../java/nio/file/FileVisitor.d.ts'
+import type { Path } from '../../../../../../../../java/nio/file/Path.d.ts'
 import type { AbstractAction } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/AbstractAction.d.ts'
 import type { PathCondition } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathCondition.d.ts'
 import type { StrSubstitutor } from '../../../../../../../../org/apache/logging/log4j/core/lookup/StrSubstitutor.d.ts'

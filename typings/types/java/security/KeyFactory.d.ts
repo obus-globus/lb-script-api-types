@@ -10,19 +10,19 @@ import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class KeyFactory extends Object {
     static getInstance(paramarg0: string): KeyFactory;
     static getInstance(paramarg0: string, paramarg1: string): KeyFactory;
-    static getInstance(paramarg0: string, paramarg1: Provider): KeyFactory;
-    constructor(arg0: KeyFactorySpi, arg1: Provider, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyFactory;
+    constructor(arg0: KeyFactorySpi, arg1: { [key: string]: any }, arg2: string)
     private constructor(arg0: string)
     readonly algorithm: string;
     // private lock: Object;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     // private serviceIterator: Iterator<Provider$Service>;
     // private spi: KeyFactorySpi;
     generatePrivate(arg0: KeySpec): PrivateKey;
     generatePublic(arg0: KeySpec): PublicKey;
     getAlgorithm(): string;
     getKeySpec<T extends KeySpec>(arg0: Key, arg1: Class<T>): T;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     // private nextSpi(arg0: KeyFactorySpi): KeyFactorySpi;
     translateKey(arg0: Key): Key;
 }

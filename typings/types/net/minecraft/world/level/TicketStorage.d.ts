@@ -15,13 +15,13 @@ export class TicketStorage extends SavedData {
     static CODEC: Codec<TicketStorage>;
     static TYPE: SavedDataType<TicketStorage>;
     constructor()
-    private constructor(tickets: Long2ObjectOpenHashMap<Ticket[]>, deactivatedTickets: Long2ObjectOpenHashMap<Ticket[]>)
+    private constructor(tickets: { [key: string]: any }, deactivatedTickets: { [key: string]: any })
     // private chunksWithForcedTickets: (Object | null)[];
-    // private deactivatedTickets: Long2ObjectOpenHashMap<Ticket[]>;
+    // private deactivatedTickets: { [key: string]: any };
     readonly loadingChunkUpdatedListener: (param0: number, param1: number, param2: boolean) => void;
-    // private positionsWithExpiringTicket: Long2ObjectOpenHashMap<Object>;
+    // private positionsWithExpiringTicket: { [key: string]: any };
     readonly simulationChunkUpdatedListener: (param0: number, param1: number, param2: boolean) => void;
-    // private tickets: Long2ObjectOpenHashMap<Ticket[]>;
+    // private tickets: { [key: string]: any };
     activateAllDeactivatedTickets(): void;
     addTicket(key: number, ticket: Ticket): boolean;
     addTicket(ticket: Ticket, chunkPos: ChunkPos): void;
@@ -40,7 +40,7 @@ export class TicketStorage extends SavedData {
     purgeStaleTickets(chunkMap: ChunkMap): void;
     removeTicket(key: number, ticket: Ticket): boolean;
     removeTicket(ticket: Ticket, chunkPos: ChunkPos): void;
-    removeTicketIf(predicate: TicketStorage$TicketPredicate, removedTickets: Long2ObjectOpenHashMap<Ticket[]>): void;
+    removeTicketIf(predicate: TicketStorage$TicketPredicate, removedTickets: { [key: string]: any }): void;
     removeTicketWithRadius(type: TicketType, chunkPos: ChunkPos, radius: number): void;
     replaceTicketLevelOfType(newLevel: number, ticketType: TicketType): void;
     setLoadingChunkUpdatedListener(loadingChunkUpdatedListener: (param0: number, param1: number, param2: boolean) => void): void;

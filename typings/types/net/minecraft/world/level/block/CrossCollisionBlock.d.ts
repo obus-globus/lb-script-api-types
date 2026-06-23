@@ -92,7 +92,7 @@ export abstract class CrossCollisionBlock extends Block implements ICrossCollisi
     constructor(postWidth: number, postHeight: number, wallWidth: number, wallHeight: number, collisionHeight: number, properties: BlockBehaviour$Properties)
     // private collisionShapes: (param0: BlockState) => VoxelShape;
     // private shapes: (param0: BlockState) => VoxelShape;
-    // private viaFabricPlus$SHAPE_INDEX_CACHE: Object2IntMap<Object>;
+    // private viaFabricPlus$SHAPE_INDEX_CACHE: { [key: string]: any };
     canPlaceLiquid(user: LivingEntity, level: BlockGetter, pos: BlockPos, state: BlockState, type: Fluid): boolean;
     codec(): MapCodec<CrossCollisionBlock>;
     getCollisionShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;

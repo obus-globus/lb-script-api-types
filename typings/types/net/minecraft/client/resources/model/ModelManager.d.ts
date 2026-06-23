@@ -36,7 +36,7 @@ export class ModelManager extends Object implements FabricModelManager, FabricRe
     readonly fluidStateModelSet: FluidStateModelSet;
     // private itemProperties: Map<Identifier, ClientItem$Properties>;
     // private missingModels: ModelBakery$MissingModels;
-    // private modelGroups: Object2IntMap<BlockState>;
+    // private modelGroups: { [key: string]: any };
     // private playerSkinRenderCache: PlayerSkinRenderCache;
     // private apply(preparations: ModelManager$ReloadState): void;
     entityModels(): () => EntityModelSet;

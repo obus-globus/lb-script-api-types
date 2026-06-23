@@ -25,17 +25,17 @@ import type { SecretKey } from '../../../javax/crypto/SecretKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class DefaultJwtBuilder extends Object implements JwtBuilder {
     constructor()
-    // private claimsBuilder: DefaultJwtBuilder$DefaultBuilderClaims;
+    // private claimsBuilder: { [key: string]: any };
     // private compressionAlgorithm: CompressionAlgorithm;
     // private enc: AeadAlgorithm;
     // private encodePayload: boolean;
     // private encoder: Encoder<OutputStream, OutputStream>;
-    // private headerBuilder: DefaultJwtBuilder$DefaultBuilderHeader;
+    // private headerBuilder: { [key: string]: any };
     // private key: Key;
     // private keyAlg: KeyAlgorithm<Key, Object>;
     // private keyAlgFunction: Function<KeyRequest<Key>, KeyResult>;
     // private payload: Payload;
-    // private provider: Provider;
+    // private provider: { [key: string]: any };
     // private secureRandom: SecureRandom;
     // private serializer: Serializer<{ [key: string]: Object | null }>;
     // private sigAlg: SecureDigestAlgorithm<Key, Object>;
@@ -61,7 +61,7 @@ export class DefaultJwtBuilder extends Object implements JwtBuilder {
     // private encodeAndWrite(arg0: string, arg1: number[], arg2: OutputStream): void;
     // private encodeAndWrite(arg0: string, arg1: { [key: string]: Object | null }, arg2: OutputStream): void;
     encodePayload(arg0: boolean): JwtBuilder;
-    // private encrypt(arg0: Payload, arg1: Key, arg2: Provider): string;
+    // private encrypt(arg0: Payload, arg1: Key, arg2: { [key: string]: any }): string;
     // private encrypt(arg0: AeadRequest, arg1: AeadResult): void;
     encryptWith<K extends Key>(arg0: K, arg1: KeyAlgorithm<K, Object>, arg2: AeadAlgorithm): JwtBuilder;
     encryptWith(arg0: SecretKey, arg1: AeadAlgorithm): JwtBuilder;
@@ -72,7 +72,7 @@ export class DefaultJwtBuilder extends Object implements JwtBuilder {
     issuer(arg0: string): JwtBuilder;
     json(arg0: Serializer<{ [key: string]: Object | null }>): JwtBuilder;
     notBefore(arg0: Date): JwtBuilder;
-    provider(arg0: Provider): JwtBuilder;
+    provider(arg0: { [key: string]: any }): JwtBuilder;
     random(arg0: SecureRandom): JwtBuilder;
     serializeToJsonWith(arg0: Serializer<{ [key: string]: Object | null }>): JwtBuilder;
     setAudience(arg0: string): JwtBuilder;
@@ -87,7 +87,7 @@ export class DefaultJwtBuilder extends Object implements JwtBuilder {
     setNotBefore(arg0: Date): JwtBuilder;
     setPayload(arg0: string): JwtBuilder;
     setSubject(arg0: string): JwtBuilder;
-    // private sign(arg0: Payload, arg1: Key, arg2: Provider): string;
+    // private sign(arg0: Payload, arg1: Key, arg2: { [key: string]: any }): string;
     signWith<K extends Key>(arg0: K, arg1: SecureDigestAlgorithm<K, Object>): JwtBuilder;
     signWith(arg0: SignatureAlgorithm, arg1: Key): JwtBuilder;
     signWith(arg0: SignatureAlgorithm, arg1: number[]): JwtBuilder;

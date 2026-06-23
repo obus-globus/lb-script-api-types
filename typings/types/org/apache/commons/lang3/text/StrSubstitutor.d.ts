@@ -12,7 +12,7 @@ export class StrSubstitutor extends Object {
     static DEFAULT_VALUE_DELIMITER: StrMatcher;
     static replace(paramarg0: Object, paramarg1: { [key: string]: Object | null }): string;
     static replace(paramarg0: Object, paramarg1: { [key: string]: Object | null }, paramarg2: string, paramarg3: string): string;
-    static replace(paramarg0: Object, paramarg1: Properties): string;
+    static replace(paramarg0: Object, paramarg1: { [key: string]: any }): string;
     static replaceSystemProperties(paramarg0: Object): string;
     constructor()
     constructor(arg0: { [key: string]: V })

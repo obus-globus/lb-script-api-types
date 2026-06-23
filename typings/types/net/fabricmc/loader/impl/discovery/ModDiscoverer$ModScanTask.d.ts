@@ -1,5 +1,6 @@
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { ForkJoinPool } from '../../../../../java/util/concurrent/ForkJoinPool.d.ts'
 import type { ForkJoinTask } from '../../../../../java/util/concurrent/ForkJoinTask.d.ts'

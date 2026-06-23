@@ -17,5 +17,5 @@ export class LithiumConfig extends Object {
     getOptionOverrideCount(): number;
     getParent(arg0: Option): Option;
     isOptionEnabled(arg0: string): boolean;
-    // private readProperties(arg0: Properties): void;
+    // private readProperties(arg0: { [key: string]: any }): void;
 }

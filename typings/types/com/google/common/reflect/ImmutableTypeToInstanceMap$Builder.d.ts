@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ImmutableTypeToInstanceMap$Builder<B extends Object | number | string | boolean> extends Object {
     private constructor()
     // private mapBuilder: ImmutableMap$Builder<TypeToken<B>, B>;
-    build(): ImmutableTypeToInstanceMap<B>;
+    build(): { [key: string]: any };
     put<T extends B>(key: TypeToken<T>, value: T): ImmutableTypeToInstanceMap$Builder<B>;
     put<T extends B>(key: Class<T>, value: T): ImmutableTypeToInstanceMap$Builder<B>;
 }

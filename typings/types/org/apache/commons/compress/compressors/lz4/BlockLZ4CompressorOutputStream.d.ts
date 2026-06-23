@@ -1,5 +1,6 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { CompressorOutputStream } from '../../../../../../org/apache/commons/compress/compressors/CompressorOutputStream.d.ts'
 import type { BlockLZ4CompressorOutputStream$Pair } from '../../../../../../org/apache/commons/compress/compressors/lz4/BlockLZ4CompressorOutputStream$Pair.d.ts'
 import type { LZ77Compressor } from '../../../../../../org/apache/commons/compress/compressors/lz77support/LZ77Compressor.d.ts'

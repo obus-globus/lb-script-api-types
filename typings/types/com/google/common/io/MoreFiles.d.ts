@@ -5,6 +5,7 @@ import type { ByteSource } from '../../../../com/google/common/io/ByteSource.d.t
 import type { CharSink } from '../../../../com/google/common/io/CharSink.d.ts'
 import type { CharSource } from '../../../../com/google/common/io/CharSource.d.ts'
 import type { Charset } from '../../../../java/nio/charset/Charset.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MoreFiles extends Object {
     static asByteSink(parampath: Path[][], paramoptions: (Object | null)[]): ByteSink;

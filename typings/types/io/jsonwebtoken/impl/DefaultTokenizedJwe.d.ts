@@ -6,7 +6,7 @@ export class DefaultTokenizedJwe extends DefaultTokenizedJwt implements Tokenize
     constructor(arg0: CharSequence, arg1: CharSequence, arg2: CharSequence, arg3: CharSequence, arg4: CharSequence)
     readonly encryptedKey: CharSequence;
     readonly iv: CharSequence;
-    createHeader(arg0: { [key: string]: Object | null }): Header;
+    createHeader(arg0: { [key: string]: Object | null }): { [key: string]: any };
     getEncryptedKey(): CharSequence;
     getIv(): CharSequence;
 }

@@ -1,6 +1,7 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { CRC32 } from '../../../../../../java/util/zip/CRC32.d.ts'
 import type { Deflater } from '../../../../../../java/util/zip/Deflater.d.ts'
 import type { CompressorOutputStream } from '../../../../../../org/apache/commons/compress/compressors/CompressorOutputStream.d.ts'

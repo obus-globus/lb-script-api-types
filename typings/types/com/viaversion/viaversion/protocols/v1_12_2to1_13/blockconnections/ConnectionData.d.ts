@@ -12,7 +12,7 @@ export class ConnectionData extends Object {
     static connects(paramarg0: number): boolean;
     static getConnectionHandler(paramarg0: number): (param0: UserConnection, param1: BlockPosition, param2: number) => number;
     static getId(paramarg0: string): number;
-    static getKeyToId(): Object2IntMap<string>;
+    static getKeyToId(): { [key: string]: any };
     static init(): void;
     static isWelcome(paramarg0: number): boolean;
     static markModified(paramarg0: UserConnection, paramarg1: BlockPosition): void;

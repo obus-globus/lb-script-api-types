@@ -2,8 +2,8 @@ import type { ScriptEngine } from '../../../../../../javax/script/ScriptEngine.d
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { AbstractScript } from '../../../../../../org/apache/logging/log4j/core/script/AbstractScript.d.ts'
 export interface ScriptManager$ScriptRunner extends Object{
-    createBindings(): Bindings;
-    execute(bindings: Bindings): Object;
+    createBindings(): { [key: string]: any };
+    execute(bindings: { [key: string]: any }): Object;
     getScript(): AbstractScript;
     getScriptEngine(): ScriptEngine;
 }

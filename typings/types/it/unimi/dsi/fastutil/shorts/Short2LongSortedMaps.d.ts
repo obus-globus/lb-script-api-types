@@ -4,16 +4,16 @@ import type { ShortComparator } from '../../../../../it/unimi/dsi/fastutil/short
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2LongSortedMaps extends Object {
-    static EMPTY_MAP: Short2LongSortedMaps$EmptySortedMap;
+    static EMPTY_MAP: { [key: string]: any };
     static entryComparator(paramarg0: (param0: number, param1: number) => number): (param0: Object) => boolean;
-    static fastIterable(paramarg0: Short2LongSortedMap): Short2LongMap$Entry[];
-    static fastIterator(paramarg0: Short2LongSortedMap): ObjectBidirectionalIterator<Short2LongMap$Entry>;
-    static singleton(paramarg0: number, paramarg1: number): Short2LongSortedMap;
-    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): Short2LongSortedMap;
-    static singleton(paramarg0: number, paramarg1: number): Short2LongSortedMap;
-    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): Short2LongSortedMap;
-    static synchronize(paramarg0: Short2LongSortedMap): Short2LongSortedMap;
-    static synchronize(paramarg0: Short2LongSortedMap, paramarg1: Object): Short2LongSortedMap;
-    static unmodifiable(paramarg0: Short2LongSortedMap): Short2LongSortedMap;
+    static fastIterable(paramarg0: { [key: string]: any }): Short2LongMap$Entry[];
+    static fastIterator(paramarg0: { [key: string]: any }): ObjectBidirectionalIterator<Short2LongMap$Entry>;
+    static singleton(paramarg0: number, paramarg1: number): { [key: string]: any };
+    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): { [key: string]: any };
+    static singleton(paramarg0: number, paramarg1: number): { [key: string]: any };
+    static singleton(paramarg0: number, paramarg1: number, paramarg2: (param0: number, param1: number) => number): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

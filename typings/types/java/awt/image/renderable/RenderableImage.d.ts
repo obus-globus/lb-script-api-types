@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface RenderableImage extends Object{
     createDefaultRendering(): RenderedImage;
     createRendering(arg0: RenderContext): RenderedImage;
-    createScaledRendering(arg0: number, arg1: number, arg2: RenderingHints): RenderedImage;
+    createScaledRendering(arg0: number, arg1: number, arg2: { [key: string]: any }): RenderedImage;
     getHeight(): number;
     getMinX(): number;
     getMinY(): number;

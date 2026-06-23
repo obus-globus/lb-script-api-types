@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { ContainerHandleURI } from '../../../../../../org/spongepowered/asm/launch/platform/container/ContainerHandleURI.d.ts'
 export class ContainerHandleModLauncher$Resource extends ContainerHandleURI {
     constructor(null_: ContainerHandleModLauncher$Resource, arg1: string, arg2: Path[])

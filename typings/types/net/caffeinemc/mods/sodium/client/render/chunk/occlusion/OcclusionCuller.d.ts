@@ -8,13 +8,13 @@ import type { Level } from '../../../../../../../../net/minecraft/world/level/Le
 export class OcclusionCuller extends Object {
     static isWithinFrustum(paramarg0: Viewport, paramarg1: RenderSection): boolean;
     static isWithinNearbySectionFrustum(paramarg0: Viewport, paramarg1: RenderSection): boolean;
-    constructor(arg0: Long2ReferenceMap<RenderSection>, arg1: Level)
+    constructor(arg0: { [key: string]: any }, arg1: Level)
     // private level: Level;
     // private outOfWorldDirection: number;
     // private outOfWorldHeight: number;
     // private outOfWorldRadius: number;
     // private queue: DoubleBufferedQueue<RenderSection>;
-    // private sections: Long2ReferenceMap<RenderSection>;
+    // private sections: { [key: string]: any };
     // private addNearbySections(arg0: RenderSectionVisitor, arg1: Viewport, arg2: number): void;
     findVisible(arg0: RenderSectionVisitor, arg1: Viewport, arg2: number, arg3: boolean, arg4: number): void;
     // private getRenderSection(arg0: number, arg1: number, arg2: number): RenderSection;

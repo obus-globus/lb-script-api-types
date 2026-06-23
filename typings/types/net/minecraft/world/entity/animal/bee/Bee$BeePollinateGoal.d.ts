@@ -9,7 +9,7 @@ export class Bee$BeePollinateGoal extends Bee$BaseBeeGoal {
     // private pollinating: boolean;
     // private pollinatingTicks: number;
     // private successfulPollinatingTicks: number;
-    // private unreachableFlowerCache: Long2LongOpenHashMap;
+    // private unreachableFlowerCache: { [key: string]: any };
     canBeeContinueToUse(): boolean;
     canBeeUse(): boolean;
     // private findNearbyFlower(): Optional<BlockPos>;

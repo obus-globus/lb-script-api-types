@@ -3,6 +3,7 @@ import type { SimpleCommandExceptionType } from '../../../com/mojang/brigadier/e
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { DataResult } from '../../../com/mojang/serialization/DataResult.d.ts'
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'

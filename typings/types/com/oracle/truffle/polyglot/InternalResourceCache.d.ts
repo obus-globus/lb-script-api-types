@@ -3,6 +3,7 @@ import type { InternalResource$Env } from '../../../../com/oracle/truffle/api/In
 import type { InternalResourceRoots$Root } from '../../../../com/oracle/truffle/polyglot/InternalResourceRoots$Root.d.ts'
 import type { PolyglotEngineImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotEngineImpl.d.ts'
 import type { Module } from '../../../../java/lang/Module.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'

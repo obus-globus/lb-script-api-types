@@ -6,7 +6,7 @@ export class VertexFormatRegistryImpl extends Object implements VertexFormatRegi
     static INSTANCE: VertexFormatRegistry;
     static instance(): VertexFormatRegistry;
     constructor()
-    // private descriptions: Reference2IntMap<VertexFormat>;
+    // private descriptions: { [key: string]: any };
     // private lock: StampedLock;
     allocateGlobalId(arg0: VertexFormat): number;
 }

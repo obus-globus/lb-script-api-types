@@ -8,7 +8,6 @@ import type { WorldRenderEvent } from '../../../../../../../net/ccbluex/liquidbo
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { ModuleStrongholdFinder$PendingThrow } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder$PendingThrow.d.ts'
 import type { ModuleStrongholdFinder$PortalBlockType } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder$PortalBlockType.d.ts'
-import type { ModuleStrongholdFinder$TrackedEye } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder$TrackedEye.d.ts'
 import type { EyeMeasurement } from '../../../../../../../net/ccbluex/liquidbounce/utils/world/stronghold/EyeMeasurement.d.ts'
 import type { PosteriorSnapshot } from '../../../../../../../net/ccbluex/liquidbounce/utils/world/stronghold/PosteriorSnapshot.d.ts'
 import type { StrongholdHypothesis } from '../../../../../../../net/ccbluex/liquidbounce/utils/world/stronghold/StrongholdHypothesis.d.ts'
@@ -64,7 +63,7 @@ export class ModuleStrongholdFinder extends ClientModule {
     // private sigma: number;
     // private /*not mapped: */ getSigma(): number;
     // private tickHandler: EventHook<GameTickEvent>;
-    // private trackedEyes: Int2ObjectLinkedOpenHashMap<ModuleStrongholdFinder$TrackedEye>;
+    // private trackedEyes: { [key: string]: any };
     // private worldChangeHandler: EventHook<WorldChangeEvent>;
     // private getOrCreateHypotheses(): StrongholdHypothesis[];
     // private handleEyeSpawnPacket(packet: ClientboundAddEntityPacket): void;

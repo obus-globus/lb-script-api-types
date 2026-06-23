@@ -1,4 +1,5 @@
 import type { NativeImage } from '../../../../../com/mojang/blaze3d/platform/NativeImage.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { AbstractTexture } from '../../../../../net/minecraft/client/renderer/texture/AbstractTexture.d.ts'
 import type { Dumpable } from '../../../../../net/minecraft/client/renderer/texture/Dumpable.d.ts'

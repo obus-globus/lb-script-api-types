@@ -17,9 +17,9 @@ export class StrSubstitutor extends Object implements ConfigurationAware {
     static ESCAPE_DELIMITER_STRING: string;
     static replace(paramsource: Object, paramvalueMap: { [key: string]: string }): string;
     static replace(paramsource: Object, paramvalueMap: { [key: string]: string }, paramprefix: string, paramsuffix: string): string;
-    static replace(paramsource: Object, paramvalueProperties: Properties): string;
+    static replace(paramsource: Object, paramvalueProperties: { [key: string]: any }): string;
     constructor()
-    constructor(properties: Properties)
+    constructor(properties: { [key: string]: any })
     constructor(valueMap: { [key: string]: string })
     constructor(valueMap: { [key: string]: string }, prefix: string, suffix: string)
     constructor(valueMap: { [key: string]: string }, prefix: string, suffix: string, escape: string)

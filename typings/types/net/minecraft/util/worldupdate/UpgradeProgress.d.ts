@@ -14,7 +14,7 @@ export class UpgradeProgress extends Object {
     readonly dataFixType: DataFixTypes;
     readonly finished: boolean;
     // private lastLoggedProgressTime: AtomicLong;
-    // private progressMap: Reference2FloatMap<ResourceKey<Level>>;
+    // private progressMap: { [key: string]: any };
     readonly runningFileFixerStats: UpgradeProgress$FileFixStats;
     readonly skipped: AtomicInteger;
     readonly status: UpgradeProgress$Status;

@@ -21,10 +21,10 @@ export class Cipher extends Object {
     static WRAP_MODE: number;
     static getInstance(paramarg0: string): Cipher;
     static getInstance(paramarg0: string, paramarg1: string): Cipher;
-    static getInstance(paramarg0: string, paramarg1: Provider): Cipher;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): Cipher;
     static getMaxAllowedKeyLength(paramarg0: string): number;
     static getMaxAllowedParameterSpec(paramarg0: string): AlgorithmParameterSpec;
-    constructor(arg0: CipherSpi, arg1: Provider, arg2: string)
+    constructor(arg0: CipherSpi, arg1: { [key: string]: any }, arg2: string)
     private constructor(arg0: CipherSpi, arg1: Provider$Service, arg2: Iterator<Provider$Service>, arg3: string, arg4: Cipher$Transform[])
     constructor(arg0: CipherSpi, arg1: string)
     // private cryptoPerm: CryptoPermission;
@@ -34,7 +34,7 @@ export class Cipher extends Object {
     // private initialized: boolean;
     // private lock: Object;
     // private opmode: number;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     // private serviceIterator: Iterator<Provider$Service>;
     // private spi: CipherSpi;
     // private transformation: string;
@@ -59,7 +59,7 @@ export class Cipher extends Object {
     getIV(): number[];
     getOutputSize(arg0: number): number;
     getParameters(): AlgorithmParameters;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     // private getProviderName(): string;
     // private implInit(arg0: CipherSpi, arg1: number, arg2: number, arg3: Key, arg4: AlgorithmParameterSpec, arg5: AlgorithmParameters, arg6: SecureRandom): void;
     init(arg0: number, arg1: Key): void;

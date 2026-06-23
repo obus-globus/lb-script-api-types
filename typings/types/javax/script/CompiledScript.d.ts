@@ -4,7 +4,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class CompiledScript extends Object {
     constructor()
     eval(): Object;
-    eval(arg0: Bindings): Object;
+    eval(arg0: { [key: string]: any }): Object;
     eval(arg0: ScriptContext): Object;
     getEngine(): ScriptEngine;
 }

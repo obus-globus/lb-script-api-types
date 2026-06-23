@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { McVersion } from '../../../../../../net/fabricmc/loader/impl/game/minecraft/McVersion.d.ts'
 import type { McVersion$Builder } from '../../../../../../net/fabricmc/loader/impl/game/minecraft/McVersion$Builder.d.ts'

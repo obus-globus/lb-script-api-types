@@ -1,5 +1,6 @@
 import type { HashCode } from '../../../com/google/common/hash/HashCode.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { HashCache$ProviderCache } from '../../../net/minecraft/data/HashCache$ProviderCache.d.ts'
 export class HashCache$ProviderCacheBuilder extends Record {

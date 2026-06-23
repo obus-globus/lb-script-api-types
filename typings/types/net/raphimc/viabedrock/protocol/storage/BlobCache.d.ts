@@ -6,7 +6,7 @@ export class BlobCache extends StoredObject {
     constructor(arg0: UserConnection)
     // private acked: (Object | null)[];
     // private missing: (Object | null)[];
-    // private pending: Long2ObjectMap<CompletableFuture<number[]>>;
+    // private pending: { [key: string]: any };
     addBlob(arg0: number, arg1: number[]): void;
     getBlob(arg0: number[]): CompletableFuture<number[]>;
     getBlob(arg0: boolean, arg1: number[]): CompletableFuture<number[]>;

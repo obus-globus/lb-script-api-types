@@ -7,6 +7,7 @@ import type { DirectoryStream$Filter } from '../../../../../java/nio/file/Direct
 import type { FileSystem } from '../../../../../java/nio/file/FileSystem.d.ts'
 import type { LinkOption } from '../../../../../java/nio/file/LinkOption.d.ts'
 import type { OpenOption } from '../../../../../java/nio/file/OpenOption.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { FileAttribute } from '../../../../../java/nio/file/attribute/FileAttribute.d.ts'
 import type { FileSystemProvider } from '../../../../../java/nio/file/spi/FileSystemProvider.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'

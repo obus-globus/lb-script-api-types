@@ -3,7 +3,7 @@ import type { LithiumConfig } from '../../../../../../net/caffeinemc/mods/lithiu
 import type { Logger } from '../../../../../../org/apache/logging/log4j/Logger.d.ts'
 export class Option extends Object {
     constructor(arg0: string, arg1: boolean, arg2: boolean)
-    // private dependencies: Object2BooleanLinkedOpenHashMap<Option>;
+    // private dependencies: { [key: string]: any };
     readonly enabled: boolean;
     readonly modDefined: string[];
     readonly name: string;

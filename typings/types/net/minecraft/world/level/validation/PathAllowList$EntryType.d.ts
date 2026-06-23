@@ -1,4 +1,5 @@
 import type { FileSystem } from '../../../../../java/nio/file/FileSystem.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { PathMatcher } from '../../../../../java/nio/file/PathMatcher.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface PathAllowList$EntryType extends Object {

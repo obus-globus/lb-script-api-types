@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ScreenAddition } from '../../../../../net/ccbluex/liquidbounce/additions/ScreenAddition.d.ts'

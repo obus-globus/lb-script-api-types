@@ -15,7 +15,7 @@ export class LevelChunkTicks<T extends Object | number | string | boolean> exten
     readonly onTickAdded: (param0: LevelChunkTicks<T>, param1: ScheduledTick<T>) => void;
     // private pendingTicks: SavedTick<T>[];
     // private tickQueue: ScheduledTick<T>[];
-    // private tickQueuesByTimeAndPriority: Long2ReferenceAVLTreeMap<Object>;
+    // private tickQueuesByTimeAndPriority: { [key: string]: any };
     // private ticksPerPosition: ScheduledTick<Object>[];
     count(): number;
     getAll(): Stream<Object>;

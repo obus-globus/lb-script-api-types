@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'

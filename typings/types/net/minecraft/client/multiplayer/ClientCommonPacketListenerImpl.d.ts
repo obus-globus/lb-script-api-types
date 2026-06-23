@@ -1,5 +1,6 @@
 import type { Exception } from '../../../../java/lang/Exception.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'

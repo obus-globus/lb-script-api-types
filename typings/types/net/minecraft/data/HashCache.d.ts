@@ -1,3 +1,4 @@
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { WorldVersion } from '../../../net/minecraft/WorldVersion.d.ts'

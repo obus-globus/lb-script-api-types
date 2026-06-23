@@ -5,12 +5,12 @@ import type { PropertiesUtil$Environment } from '../../../../../org/apache/loggi
 import type { PropertySource } from '../../../../../org/apache/logging/log4j/util/PropertySource.d.ts'
 import type { Supplier } from '../../../../../org/apache/logging/log4j/util/Supplier.d.ts'
 export class PropertiesUtil extends Object {
-    static extractSubset(paramproperties: Properties, paramprefix: string): Properties;
+    static extractSubset(paramproperties: { [key: string]: any }, paramprefix: string): { [key: string]: any };
     static getProperties(): PropertiesUtil;
-    static getSystemProperties(): Properties;
-    static partitionOnCommonPrefixes(paramproperties: Properties): { [key: string]: Properties };
-    static partitionOnCommonPrefixes(paramproperties: Properties, paramincludeBaseKey: boolean): { [key: string]: Properties };
-    constructor(props: Properties)
+    static getSystemProperties(): { [key: string]: any };
+    static partitionOnCommonPrefixes(paramproperties: { [key: string]: any }): { [key: string]: { [key: string]: any } };
+    static partitionOnCommonPrefixes(paramproperties: { [key: string]: any }, paramincludeBaseKey: boolean): { [key: string]: { [key: string]: any } };
+    constructor(props: { [key: string]: any })
     constructor(propertiesFileName: string)
     private constructor(propertiesFileName: string, useTccl: boolean)
     constructor(source: PropertySource)

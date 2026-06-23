@@ -33,7 +33,7 @@ export interface Connection extends AutoCloseable, Wrapper, Object{
     endRequest(): void;
     getAutoCommit(): boolean;
     getCatalog(): string;
-    getClientInfo(): Properties;
+    getClientInfo(): { [key: string]: any };
     getClientInfo(arg0: string): string;
     getHoldability(): number;
     getMetaData(): DatabaseMetaData;
@@ -60,7 +60,7 @@ export interface Connection extends AutoCloseable, Wrapper, Object{
     rollback(arg0: Savepoint): void;
     setAutoCommit(arg0: boolean): void;
     setCatalog(arg0: string): void;
-    setClientInfo(arg0: Properties): void;
+    setClientInfo(arg0: { [key: string]: any }): void;
     setClientInfo(arg0: string, arg1: string): void;
     setHoldability(arg0: number): void;
     setNetworkTimeout(arg0: Executor, arg1: number): void;

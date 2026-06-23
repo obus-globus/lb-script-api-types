@@ -13,7 +13,7 @@ export class FontGlyphPageManager extends Object implements EventListener {
     // private availableFonts: Map<FontFace, FontGlyphPageManager$FontGlyphRegistry>;
     // private dynamicFontManager: DynamicFontCacheManager;
     // private dynamicPage: DynamicGlyphPage;
-    // private dynamicallyLoadedGlyphs: Long2ObjectOpenHashMap<GlyphDescriptor>;
+    // private dynamicallyLoadedGlyphs: { [key: string]: any };
     // private renderHandler: EventHook<GameRenderEvent>;
     // private staticPage: StaticGlyphPage[];
     children(): EventListener[];

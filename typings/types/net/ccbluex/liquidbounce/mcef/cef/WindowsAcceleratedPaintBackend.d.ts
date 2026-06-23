@@ -7,7 +7,7 @@ import type { CefAcceleratedPaintInfo } from '../../../../../org/cef/handler/Cef
 export class WindowsAcceleratedPaintBackend extends Object implements AcceleratedPaintBackend {
     constructor()
     // private activeSourceTexture: MCEFDirectTexture;
-    // private sharedTextureCache: Long2ObjectLinkedOpenHashMap<WindowsAcceleratedPaintBackend$SharedTextureEntry>;
+    // private sharedTextureCache: { [key: string]: any };
     accepts(arg0: CefAcceleratedPaintInfo): boolean;
     close(): void;
     importFrame(arg0: CefAcceleratedPaintInfo, arg1: number, arg2: number): AcceleratedPaintFrame;

@@ -3,7 +3,7 @@ import type { Parameter } from '../../../../io/jsonwebtoken/impl/lang/Parameter.
 import type { ParameterReadable } from '../../../../io/jsonwebtoken/impl/lang/ParameterReadable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RequiredParameterReader extends Object implements ParameterReadable {
-    constructor(arg0: Header)
+    constructor(arg0: { [key: string]: any })
     constructor(arg0: ParameterReadable)
     // private src: ParameterReadable;
     get<T extends Object | number | string | boolean>(arg0: Parameter<T>): T;

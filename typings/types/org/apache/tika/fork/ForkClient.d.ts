@@ -3,6 +3,7 @@ import type { DataOutputStream } from '../../../../java/io/DataOutputStream.d.ts
 import type { File } from '../../../../java/io/File.d.ts'
 import type { ClassLoader } from '../../../../java/lang/ClassLoader.d.ts'
 import type { Process } from '../../../../java/lang/Process.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { ForkResource } from '../../../../org/apache/tika/fork/ForkResource.d.ts'

@@ -7,11 +7,11 @@ import type { LevelHeightAccessor } from '../../../../../../net/minecraft/world/
 import type { SimpleRegionStorage } from '../../../../../../net/minecraft/world/level/chunk/storage/SimpleRegionStorage.d.ts'
 export class SectionStorage$PackedChunk<T extends Object | number | string | boolean> extends Record {
     static parse(paramcodec: Codec<Object>, paramops: DynamicOps<Tag>, paramtag: Tag, paramsimpleRegionStorage: SimpleRegionStorage, paramlevelHeightAccessor: LevelHeightAccessor): SectionStorage$PackedChunk<Object>;
-    // private sectionsByY: Int2ObjectMap<T>;
+    // private sectionsByY: { [key: string]: any };
     // private versionChanged: boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    sectionsByY(): Int2ObjectMap<T>;
+    sectionsByY(): { [key: string]: any };
     toString(): string;
     versionChanged(): boolean;
 }

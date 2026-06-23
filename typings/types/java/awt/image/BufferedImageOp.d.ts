@@ -8,5 +8,5 @@ export interface BufferedImageOp extends Object{
     filter(arg0: BufferedImage, arg1: BufferedImage): BufferedImage;
     getBounds2D(arg0: BufferedImage): Rectangle2D;
     getPoint2D(arg0: Point2D, arg1: Point2D): Point2D;
-    getRenderingHints(): RenderingHints;
+    getRenderingHints(): { [key: string]: any };
 }

@@ -19,9 +19,9 @@ import type { ParserRuleContext } from '../../../../../../org/antlr/v4/runtime/P
 export class ASTParser extends Object implements ParserInterface {
     static _getInternalInstance(): ASTParser;
     constructor()
-    constructor(arg0: EnhancedParser, arg1: TypedTreeCache<ASTNode>)
+    constructor(arg0: EnhancedParser, arg1: { [key: string]: any })
     // private astCacheStrategy: ASTParser$ASTCacheStrategy;
-    readonly buildCache: TypedTreeCache<ASTNode>;
+    readonly buildCache: { [key: string]: any };
     readonly parseLineDirectives: boolean;
     readonly parser: EnhancedParser;
     getLexer(): GLSLLexer;
@@ -41,7 +41,7 @@ export class ASTParser extends Object implements ParserInterface {
     parseTranslationUnit(arg0: Root, arg1: string): TranslationUnit;
     parseTranslationUnit(arg0: RootSupplier, arg1: string): TranslationUnit;
     setASTCacheStrategy(arg0: ASTParser$ASTCacheStrategy): void;
-    setBuildCache(arg0: TypedTreeCache<ASTNode>): void;
+    setBuildCache(arg0: { [key: string]: any }): void;
     // private setBuilderTokenStream(): void;
     setLLOnly(): void;
     setParseLineDirectives(arg0: boolean): void;

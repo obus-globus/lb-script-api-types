@@ -21,7 +21,7 @@ export class DynamicGlyphPage extends GlyphPage {
     // private allocator: DynamicAtlasAllocator;
     readonly atlasSize: Dimension;
     readonly dirty: GlyphRenderInfo[];
-    // private glyphMap: Long2ObjectOpenHashMap<Pair<GlyphRenderInfo, AtlasSliceHandle>>;
+    // private glyphMap: { [key: string]: any };
     // private image: BufferedImage;
     readonly texture: DynamicTexture;
     // private copyImageSection(fromImage: BufferedImage, toImage: NativeImage, fromLocation: Point, toLocation: Point, patchSize: Dimension): void;

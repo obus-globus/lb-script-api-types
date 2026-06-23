@@ -2,6 +2,7 @@ import type { UserConnection } from '../../../../com/viaversion/viaversion/api/c
 import type { ProtocolVersion } from '../../../../com/viaversion/viaversion/api/protocol/version/ProtocolVersion.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
 import type { AttributeKey } from '../../../../io/netty/util/AttributeKey.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Connection } from '../../../../net/minecraft/network/Connection.d.ts'

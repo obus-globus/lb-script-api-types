@@ -8,6 +8,7 @@ import type { RepositoryFactory } from '../../../ai/djl/repository/RepositoryFac
 import type { Progress } from '../../../ai/djl/util/Progress.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class AbstractRepository extends Object implements Repository {
     static newInstance(paramarg0: string, paramarg1: string): Repository;

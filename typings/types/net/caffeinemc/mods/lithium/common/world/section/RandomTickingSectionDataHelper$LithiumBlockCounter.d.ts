@@ -11,7 +11,7 @@ export class RandomTickingSectionDataHelper$LithiumBlockCounter extends Object i
     // private minisectionIndex: number;
     // private randomTickData: number[];
     accept(arg0: BlockState, arg1: number): void;
-    finishedCountingMinisection(arg0: Int2IntOpenHashMap, arg1: Palette<BlockState>): void;
+    finishedCountingMinisection(arg0: { [key: string]: any }, arg1: Palette<BlockState>): void;
     handleAfterCounting(arg0: LevelChunkSection): void;
     // private sanityCheckRandomTickableBlockCount(arg0: BlockCountingSection): number;
 }

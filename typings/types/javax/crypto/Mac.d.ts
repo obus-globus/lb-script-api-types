@@ -9,14 +9,14 @@ import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class Mac extends Object implements Cloneable {
     static getInstance(paramarg0: string): Mac;
     static getInstance(paramarg0: string, paramarg1: string): Mac;
-    static getInstance(paramarg0: string, paramarg1: Provider): Mac;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): Mac;
     private constructor(arg0: Provider$Service, arg1: Iterator<Provider$Service>, arg2: string)
-    constructor(arg0: MacSpi, arg1: Provider, arg2: string)
+    constructor(arg0: MacSpi, arg1: { [key: string]: any }, arg2: string)
     readonly algorithm: string;
     // private firstService: Provider$Service;
     // private initialized: boolean;
     // private lock: Object;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     // private serviceIterator: Iterator<Provider$Service>;
     // private spi: MacSpi;
     chooseFirstProvider(): void;
@@ -28,7 +28,7 @@ export class Mac extends Object implements Cloneable {
     doFinal(arg0: number[], arg1: number): void;
     getAlgorithm(): string;
     getMacLength(): number;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     // private getProviderName(): string;
     init(arg0: Key): void;
     init(arg0: Key, arg1: AlgorithmParameterSpec): void;

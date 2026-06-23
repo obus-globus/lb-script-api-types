@@ -15,8 +15,8 @@ export class HttpHelper extends Object implements IHttpHelper {
     // private httpClient: IHttpClient;
     // private retryDisabled: boolean;
     // private retryPolicy: IRetryPolicy;
-    // private addRequestInfoToTelemetry(arg0: HttpRequest, arg1: HttpEvent): void;
-    // private addResponseInfoToTelemetry(arg0: IHttpResponse, arg1: HttpEvent): void;
+    // private addRequestInfoToTelemetry(arg0: HttpRequest, arg1: { [key: string]: any }): void;
+    // private addResponseInfoToTelemetry(arg0: IHttpResponse, arg1: { [key: string]: any }): void;
     // private checkForThrottling(arg0: RequestContext): void;
     executeHttpRequest(arg0: HttpRequest): IHttpResponse;
     executeHttpRequest(arg0: HttpRequest, arg1: RequestContext, arg2: ServiceBundle): IHttpResponse;

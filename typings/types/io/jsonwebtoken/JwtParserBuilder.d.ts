@@ -33,7 +33,7 @@ export interface JwtParserBuilder extends Builder<JwtParser>, Object{
     json(arg0: Deserializer<{ [key: string]: Object | null }>): JwtParserBuilder;
     key(): NestedCollection<KeyAlgorithm<Object, Object>, JwtParserBuilder>;
     keyLocator(arg0: Locator<Key>): JwtParserBuilder;
-    provider(arg0: Provider): JwtParserBuilder;
+    provider(arg0: { [key: string]: any }): JwtParserBuilder;
     require(arg0: string, arg1: Object): JwtParserBuilder;
     requireAudience(arg0: string): JwtParserBuilder;
     requireExpiration(arg0: Date): JwtParserBuilder;

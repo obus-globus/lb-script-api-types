@@ -1,4 +1,5 @@
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FileAccessProvider } from '../../../../../net/minecraft/util/filefix/access/FileAccessProvider.d.ts'
 import type { FileRelation } from '../../../../../net/minecraft/util/filefix/access/FileRelation.d.ts'

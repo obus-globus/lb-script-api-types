@@ -1,4 +1,5 @@
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Lock } from '../../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'

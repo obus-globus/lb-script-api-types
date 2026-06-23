@@ -7,7 +7,6 @@ import type { IoRegistration } from '../../../../io/netty/channel/IoRegistration
 import type { SelectStrategy } from '../../../../io/netty/channel/SelectStrategy.d.ts'
 import type { SelectStrategyFactory } from '../../../../io/netty/channel/SelectStrategyFactory.d.ts'
 import type { EpollEventArray } from '../../../../io/netty/channel/epoll/EpollEventArray.d.ts'
-import type { EpollIoHandler$DefaultEpollIoRegistration } from '../../../../io/netty/channel/epoll/EpollIoHandler$DefaultEpollIoRegistration.d.ts'
 import type { NativeArrays } from '../../../../io/netty/channel/epoll/NativeArrays.d.ts'
 import type { FileDescriptor } from '../../../../io/netty/channel/unix/FileDescriptor.d.ts'
 import type { IntSupplier } from '../../../../io/netty/util/IntSupplier.d.ts'
@@ -30,7 +29,7 @@ export class EpollIoHandler extends Object implements IoHandler {
     // private numChannels: number;
     // private pendingWakeup: boolean;
     // private prevDeadlineNanos: number;
-    // private registrations: IntObjectMap<EpollIoHandler$DefaultEpollIoRegistration>;
+    // private registrations: { [key: string]: any };
     // private selectNowSupplier: IntSupplier;
     // private selectStrategy: SelectStrategy;
     // private timerFd: FileDescriptor;

@@ -17,6 +17,6 @@ export class InputStreamDigester extends Object implements DigestingParser$Diges
     // private digestFile(arg0: File, arg1: number, arg2: Metadata): void;
     // private digestStream(arg0: InputStream, arg1: Metadata): boolean;
     // private getMetadataKey(): string;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     // private newMessageDigest(): MessageDigest;
 }

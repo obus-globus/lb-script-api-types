@@ -1,5 +1,6 @@
 import type { FileOutputStream } from '../../../../../../java/io/FileOutputStream.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { JarOutputStream } from '../../../../../../java/util/jar/JarOutputStream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BoundedInputStream } from '../../../../../../org/apache/commons/io/input/BoundedInputStream.d.ts'

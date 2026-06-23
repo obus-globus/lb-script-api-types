@@ -1,4 +1,5 @@
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { ToDoubleFunction } from '../../../../../../java/util/function/ToDoubleFunction.d.ts'

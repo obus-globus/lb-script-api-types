@@ -10,7 +10,7 @@ export class Provider extends Object {
     static LOGGER_CONTEXT_FACTORY: string;
     static PROVIDER_PROPERTY_NAME: string;
     static THREAD_CONTEXT_MAP: string;
-    constructor(props: Properties, url: URL, classLoader: ClassLoader)
+    constructor(props: { [key: string]: any }, url: URL, classLoader: ClassLoader)
     constructor(priority: number, versions: string)
     constructor(priority: number, versions: string, loggerContextFactoryClass: Class<LoggerContextFactory>)
     constructor(priority: number, versions: string, loggerContextFactoryClass: Class<LoggerContextFactory>, threadContextMapClass: Class<ThreadContextMap>)

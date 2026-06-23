@@ -4,10 +4,10 @@ import type { BlockGetter } from '../../../../../net/minecraft/world/level/Block
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class FlowingFluid$SpreadContext extends Object {
     private constructor(null_: FlowingFluid$SpreadContext, level: BlockGetter, origin: BlockPos)
-    // private holeCache: Short2BooleanMap;
+    // private holeCache: { [key: string]: any };
     // private level: BlockGetter;
     // private origin: BlockPos;
-    // private stateCache: Short2ObjectMap<BlockState>;
+    // private stateCache: { [key: string]: any };
     getBlockState(pos: BlockPos): BlockState;
     // private getBlockState(pos: BlockPos, key: number): BlockState;
     // private getCacheKey(pos: BlockPos): number;

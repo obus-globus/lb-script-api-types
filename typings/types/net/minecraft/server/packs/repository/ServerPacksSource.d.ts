@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { PackResources } from '../../../../../net/minecraft/server/packs/PackResources.d.ts'
 import type { VanillaPackResources } from '../../../../../net/minecraft/server/packs/VanillaPackResources.d.ts'

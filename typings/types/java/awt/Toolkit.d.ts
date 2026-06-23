@@ -67,7 +67,7 @@ export abstract class Toolkit extends Object {
     getMenuShortcutKeyMask(): number;
     getMenuShortcutKeyMaskEx(): number;
     getPrintJob(arg0: Frame, arg1: string, arg2: JobAttributes, arg3: PageAttributes): PrintJob;
-    getPrintJob(arg0: Frame, arg1: string, arg2: Properties): PrintJob;
+    getPrintJob(arg0: Frame, arg1: string, arg2: { [key: string]: any }): PrintJob;
     getPropertyChangeListeners(): PropertyChangeListener[];
     getPropertyChangeListeners(arg0: string): PropertyChangeListener[];
     getScreenInsets(arg0: GraphicsConfiguration): Insets;

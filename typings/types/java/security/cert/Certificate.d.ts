@@ -12,7 +12,7 @@ export abstract class Certificate extends Object implements Serializable {
     hashCode(): number;
     toString(): string;
     verify(arg0: PublicKey): void;
-    verify(arg0: PublicKey, arg1: Provider): void;
+    verify(arg0: PublicKey, arg1: { [key: string]: any }): void;
     verify(arg0: PublicKey, arg1: string): void;
     writeReplace(): Object;
 }

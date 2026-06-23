@@ -5,7 +5,7 @@ export class ChunkLightStorage extends Object implements StorableObject {
     static EMPTY_LIGHT: number[];
     static FULL_LIGHT: number[];
     constructor()
-    // private storedLight: Long2ObjectMap<ChunkLightStorage$ChunkLight>;
+    // private storedLight: { [key: string]: any };
     clear(): void;
     // private getChunkSectionIndex(arg0: number, arg1: number): number;
     getStoredLight(arg0: number, arg1: number): ChunkLightStorage$ChunkLight;

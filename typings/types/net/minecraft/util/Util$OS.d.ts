@@ -1,6 +1,7 @@
 import type { File } from '../../../java/io/File.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class Util$OS extends Enum<Util$OS> {

@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PBRTextureHolder } from '../../../../../net/irisshaders/iris/pbr/texture/PBRTextureHolder.d.ts'
 import type { PBRTextureManager$PBRTextureConsumerImpl } from '../../../../../net/irisshaders/iris/pbr/texture/PBRTextureManager$PBRTextureConsumerImpl.d.ts'
@@ -10,7 +11,7 @@ export class PBRTextureManager extends Object {
     // private defaultHolder: PBRTextureHolder;
     // private defaultNormalTexture: NativeImageBackedSingleColorTexture;
     // private defaultSpecularTexture: NativeImageBackedSingleColorTexture;
-    // private holders: Int2ObjectMap<PBRTextureHolder>;
+    // private holders: { [key: string]: any };
     // private toLoadNextFrame: (Object | null)[];
     clear(): void;
     close(): void;

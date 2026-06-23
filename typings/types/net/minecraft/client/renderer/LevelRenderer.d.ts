@@ -87,8 +87,8 @@ export class LevelRenderer extends Object implements AutoCloseable, LevelRendere
     readonly cloudRenderer: CloudRenderer;
     // private collectedGizmos: SimpleGizmoCollector;
     debugRenderer: DebugRenderer;
-    // private destroyingBlocks: Int2ObjectMap<BlockDestructionProgress>;
-    readonly destructionProgress: Long2ObjectMap<BlockDestructionProgress[]>;
+    // private destroyingBlocks: { [key: string]: any };
+    readonly destructionProgress: { [key: string]: any };
     // private disableFrustumCulling: boolean;
     // private entityOutlineTarget: RenderTarget;
     readonly entityRenderDispatcher: EntityRenderDispatcher;

@@ -3,6 +3,7 @@ import type { Device } from '../../../../ai/djl/Device.d.ts'
 import type { Trainer } from '../../../../ai/djl/training/Trainer.d.ts'
 import type { TrainingConfig } from '../../../../ai/djl/training/TrainingConfig.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PtModel extends BaseModel {
     constructor(arg0: string, arg1: Device)

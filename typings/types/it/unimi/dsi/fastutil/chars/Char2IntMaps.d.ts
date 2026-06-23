@@ -3,14 +3,14 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2IntMaps extends Object {
-    static EMPTY_MAP: Char2IntMaps$EmptyMap;
-    static fastForEach(paramarg0: Char2IntMap, paramarg1: (param0: Object) => void): void;
-    static fastIterable(paramarg0: Char2IntMap): Char2IntMap$Entry[];
-    static fastIterator(paramarg0: Char2IntMap): ObjectIterator<Char2IntMap$Entry>;
-    static singleton(paramarg0: string, paramarg1: number): Char2IntMap;
-    static singleton(paramarg0: string, paramarg1: number): Char2IntMap;
-    static synchronize(paramarg0: Char2IntMap): Char2IntMap;
-    static synchronize(paramarg0: Char2IntMap, paramarg1: Object): Char2IntMap;
-    static unmodifiable(paramarg0: Char2IntMap): Char2IntMap;
+    static EMPTY_MAP: { [key: string]: any };
+    static fastForEach(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: { [key: string]: any }): Char2IntMap$Entry[];
+    static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Char2IntMap$Entry>;
+    static singleton(paramarg0: string, paramarg1: number): { [key: string]: any };
+    static singleton(paramarg0: string, paramarg1: number): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

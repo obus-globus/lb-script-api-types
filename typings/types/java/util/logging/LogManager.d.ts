@@ -29,7 +29,7 @@ export class LogManager extends Object {
     // private initializedCalled: boolean;
     // private listeners: Map<Object, () => void>;
     // private loggerRefQueue: ReferenceQueue<Logger>;
-    // private props: Properties;
+    // private props: { [key: string]: any };
     // private readPrimordialConfiguration: boolean;
     // private rootLogger: Logger;
     // private systemContext: LogManager$LoggerContext;

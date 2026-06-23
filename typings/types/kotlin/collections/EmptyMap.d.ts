@@ -2,7 +2,7 @@ import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../java/util/Map$Entry.d.ts'
 export class EmptyMap extends Object implements Serializable {
-    static INSTANCE: EmptyMap;
+    static INSTANCE: { [key: string]: any };
     readonly entries: Map$Entry<Object, void>[];
     readonly keys: (Object | null)[];
     // private serialVersionUID: number;

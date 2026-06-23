@@ -1,3 +1,4 @@
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class FileFixUtil extends Object {
     static NAMESPACE_PATTERN: string;

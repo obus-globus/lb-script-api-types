@@ -1,4 +1,5 @@
 import type { Process } from '../../../../java/lang/Process.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CEntryPointLiteral } from '../../../../org/graalvm/nativeimage/c/function/CEntryPointLiteral.d.ts'
 import type { PointerBase } from '../../../../org/graalvm/word/PointerBase.d.ts'

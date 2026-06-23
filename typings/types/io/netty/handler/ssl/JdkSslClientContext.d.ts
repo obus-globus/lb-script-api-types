@@ -46,7 +46,7 @@ export class JdkSslClientContext extends JdkSslContext {
     constructor(arg0: File, arg1: TrustManagerFactory, arg2: string[], arg3: CipherSuiteFilter, arg4: ApplicationProtocolConfig, arg5: number, arg6: number)
     constructor(arg0: File, arg1: TrustManagerFactory, arg2: string[], arg3: CipherSuiteFilter, arg4: JdkApplicationProtocolNegotiator, arg5: number, arg6: number)
     constructor(arg0: File, arg1: TrustManagerFactory, arg2: string[], arg3: string[], arg4: number, arg5: number)
-    constructor(arg0: Provider, arg1: File, arg2: TrustManagerFactory, arg3: string[], arg4: CipherSuiteFilter, arg5: JdkApplicationProtocolNegotiator, arg6: number, arg7: number)
-    constructor(arg0: Provider, arg1: X509Certificate[], arg2: TrustManagerFactory, arg3: X509Certificate[], arg4: PrivateKey, arg5: string, arg6: KeyManagerFactory, arg7: string[], arg8: CipherSuiteFilter, arg9: ApplicationProtocolConfig, arg10: string[], arg11: number, arg12: number, arg13: SecureRandom, arg14: string, arg15: string, arg16: SNIServerName[], arg17: ResumptionController)
+    constructor(arg0: { [key: string]: any }, arg1: File, arg2: TrustManagerFactory, arg3: string[], arg4: CipherSuiteFilter, arg5: JdkApplicationProtocolNegotiator, arg6: number, arg7: number)
+    constructor(arg0: { [key: string]: any }, arg1: X509Certificate[], arg2: TrustManagerFactory, arg3: X509Certificate[], arg4: PrivateKey, arg5: string, arg6: KeyManagerFactory, arg7: string[], arg8: CipherSuiteFilter, arg9: ApplicationProtocolConfig, arg10: string[], arg11: number, arg12: number, arg13: SecureRandom, arg14: string, arg15: string, arg16: SNIServerName[], arg17: ResumptionController)
     constructor(arg0: TrustManagerFactory)
 }

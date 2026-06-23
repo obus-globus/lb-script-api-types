@@ -22,10 +22,10 @@ export class ModuleCombineMobs extends ClientModule {
     // private /*not mapped: */ getCombineArmorStands(): boolean;
     // private combineMinecarts: boolean;
     // private /*not mapped: */ getCombineMinecarts(): boolean;
-    // private mapPool: Pool<Long2IntOpenHashMap>;
-    // private nametagTracker: Map<ModuleCombineMobs$CombineKey, Long2IntOpenHashMap>;
+    // private mapPool: Pool<{ [key: string]: any }>;
+    // private nametagTracker: Map<ModuleCombineMobs$CombineKey, { [key: string]: any }>;
     // private renderGameHandler: EventHook<GameRenderEvent>;
-    // private renderTracker: Map<ModuleCombineMobs$CombineKey, Long2IntOpenHashMap>;
+    // private renderTracker: Map<ModuleCombineMobs$CombineKey, { [key: string]: any }>;
     // private clearNametagTracker(): void;
     // private clearRenderTracker(): void;
     getCombinedCount(entity: Entity): number;

@@ -1,4 +1,5 @@
 import type { Class } from '../../java/lang/Class.d.ts'
+import type { Path } from '../../java/nio/file/Path.d.ts'
 import type { ValueConverter } from '../../joptsimple/ValueConverter.d.ts'
 import type { PathProperties } from '../../joptsimple/util/PathProperties.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'

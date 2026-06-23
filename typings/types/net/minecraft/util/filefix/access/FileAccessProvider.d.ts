@@ -1,5 +1,6 @@
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { ScopedValue } from '../../../../../java/lang/ScopedValue.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FileAccess } from '../../../../../net/minecraft/util/filefix/access/FileAccess.d.ts'
 import type { FileRelation } from '../../../../../net/minecraft/util/filefix/access/FileRelation.d.ts'

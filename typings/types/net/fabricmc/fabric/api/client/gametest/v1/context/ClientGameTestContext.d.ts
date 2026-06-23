@@ -1,4 +1,5 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
+import type { Path } from '../../../../../../../../java/nio/file/Path.d.ts'
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
 import type { Supplier } from '../../../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'

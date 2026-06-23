@@ -5,7 +5,7 @@ export class SimulationChunkTracker extends ChunkTracker {
     static MAX_LEVEL: number;
     static SOURCE: number;
     constructor(ticketStorage: TicketStorage)
-    // private chunks: Long2ByteMap;
+    // private chunks: { [key: string]: any };
     // private ticketStorage: TicketStorage;
     getLevel(node: number): number;
     getLevel(node: ChunkPos): number;

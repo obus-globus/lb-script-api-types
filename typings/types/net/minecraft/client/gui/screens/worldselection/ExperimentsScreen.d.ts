@@ -8,7 +8,6 @@ import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/
 import type { Screen$NarratableSearchResult } from '../../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-import type { Pack } from '../../../../../../net/minecraft/server/packs/repository/Pack.d.ts'
 import type { PackRepository } from '../../../../../../net/minecraft/server/packs/repository/PackRepository.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ExperimentsScreen extends Screen {
@@ -24,7 +23,7 @@ export class ExperimentsScreen extends Screen {
     // private layout: HeaderAndFooterLayout;
     // private output: (param0: PackRepository) => void;
     // private packRepository: PackRepository;
-    // private packs: Object2BooleanMap<Pack>;
+    // private packs: { [key: string]: any };
     // private parent: Screen;
     // private scrollArea: ScrollableLayout;
     getNarrationMessage(): Component;

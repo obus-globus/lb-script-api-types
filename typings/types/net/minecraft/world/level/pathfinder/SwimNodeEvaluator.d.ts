@@ -11,7 +11,7 @@ export class SwimNodeEvaluator extends NodeEvaluator {
     static isBurningBlock(paramblockState: BlockState): boolean;
     constructor(allowBreaching: boolean)
     // private allowBreaching: boolean;
-    // private pathTypesByPosCache: Long2ObjectMap<PathType>;
+    // private pathTypesByPosCache: { [key: string]: any };
     done(): void;
     findAcceptedNode(x: number, y: number, z: number): Node;
     getCachedBlockType(x: number, y: number, z: number): PathType;

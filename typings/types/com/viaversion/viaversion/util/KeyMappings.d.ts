@@ -4,7 +4,7 @@ export class KeyMappings extends Object {
     constructor(arg0: StringTag[])
     constructor(arg0: string[])
     constructor(arg0: string[])
-    // private keyToId: Object2IntMap<string>;
+    // private keyToId: { [key: string]: any };
     // private keys: string[];
     idToKey(arg0: number): string;
     keyToId(arg0: string): number;

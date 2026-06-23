@@ -3,7 +3,7 @@ import type { ChunkLightStorage$ChunkLight } from '../../../../../../com/viavers
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ChunkLightStorage extends Object implements StorableObject {
     constructor()
-    // private lightPackets: Long2ObjectMap<ChunkLightStorage$ChunkLight>;
+    // private lightPackets: { [key: string]: any };
     // private loadedChunks: (Object | null)[];
     addLoadedChunk(arg0: number, arg1: number): boolean;
     clear(): void;

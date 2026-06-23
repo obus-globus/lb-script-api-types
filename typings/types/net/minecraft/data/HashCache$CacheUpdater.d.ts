@@ -1,4 +1,5 @@
 import type { HashCode } from '../../../com/google/common/hash/HashCode.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { AtomicInteger } from '../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CachedOutput } from '../../../net/minecraft/data/CachedOutput.d.ts'

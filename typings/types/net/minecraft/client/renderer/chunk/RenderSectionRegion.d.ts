@@ -21,7 +21,7 @@ export class RenderSectionRegion extends Object implements RenderDataMapConsumer
     static index(paramminSectionX: number, paramminSectionY: number, paramminSectionZ: number, paramsectionX: number, paramsectionY: number, paramsectionZ: number): number;
     constructor(level: ClientLevel, minSectionX: number, minSectionY: number, minSectionZ: number, sections: SectionCopy[])
     // private cardinalLighting: CardinalLighting;
-    // private fabric_renderDataMap: Long2ObjectMap<Object>;
+    // private fabric_renderDataMap: { [key: string]: any };
     // private level: ClientLevel;
     readonly lightEngine: LevelLightEngine;
     // private minSectionX: number;
@@ -29,7 +29,7 @@ export class RenderSectionRegion extends Object implements RenderDataMapConsumer
     // private minSectionZ: number;
     // private sections: SectionCopy[];
     cardinalLighting(): CardinalLighting;
-    fabric_acceptRenderDataMap(arg0: Long2ObjectMap<Object>): void;
+    fabric_acceptRenderDataMap(arg0: { [key: string]: any }): void;
     getBiomeFabric(arg0: BlockPos): Holder<Object>;
     getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;

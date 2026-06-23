@@ -6,7 +6,7 @@ import type { PatchShaderType } from '../../../../../../net/irisshaders/iris/pip
 import type { Parameters } from '../../../../../../net/irisshaders/iris/pipeline/transform/parameter/Parameters.d.ts'
 export class LayoutTransformer extends Object {
     static transformGrouped(paramarg0: ASTParser, paramarg1: { [key in PatchShaderType]: TranslationUnit }, paramarg2: Parameters): void;
-    static transformIn(paramarg0: Object2IntMap<string>, paramarg1: ASTParser, paramarg2: TranslationUnit, paramarg3: Root, paramarg4: Parameters): void;
-    static transformOut(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: Parameters): Object2IntMap<string>;
+    static transformIn(paramarg0: { [key: string]: any }, paramarg1: ASTParser, paramarg2: TranslationUnit, paramarg3: Root, paramarg4: Parameters): void;
+    static transformOut(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: Parameters): { [key: string]: any };
     constructor()
 }

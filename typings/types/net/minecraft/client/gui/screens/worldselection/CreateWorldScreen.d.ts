@@ -1,5 +1,6 @@
 import type { Pair } from '../../../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { OptionalLong } from '../../../../../../java/util/OptionalLong.d.ts'
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'

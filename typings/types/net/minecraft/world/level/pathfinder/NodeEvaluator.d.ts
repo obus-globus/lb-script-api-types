@@ -19,7 +19,7 @@ export abstract class NodeEvaluator extends Object {
     // private entityHeight: number;
     // private entityWidth: number;
     // private mob: Mob;
-    // private nodes: Int2ObjectMap<Node>;
+    // private nodes: { [key: string]: any };
     done(): void;
     getNeighbors(neighbors: Node[], pos: Node): number;
     getNode(x: number, y: number, z: number): Node;

@@ -20,7 +20,7 @@ export class ChunkTracker extends StoredObject implements IChunkTracker {
     // private centerX: number;
     // private centerZ: number;
     // private chunkType: Type<Chunk>;
-    // private chunks: Long2ObjectMap<BedrockChunk>;
+    // private chunks: { [key: string]: any };
     readonly dimension: Dimension;
     // private dirtyChunks: (Object | null)[];
     readonly minY: number;

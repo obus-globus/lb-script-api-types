@@ -48,7 +48,7 @@ export class ModuleNotifier extends ClientModule {
     // private observedPlayers: UUID[];
     readonly packetHandler: EventHook<PacketEvent>;
     // private tickHandler: EventHook<PlayerTickEvent>;
-    // private totemPopCounter: Object2IntOpenHashMap<UUID>;
+    // private totemPopCounter: { [key: string]: any };
     // private totemPopMessageFormat: string;
     // private /*not mapped: */ getTotemPopMessageFormat(): string;
     // private totemPopMessages: boolean;

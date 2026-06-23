@@ -13,8 +13,8 @@ export abstract class LayerLightSectionStorage<M extends DataLayerStorageMap<M>>
     // private columnsWithSources: (Object | null)[];
     // private hasInconsistencies: boolean;
     // private layer: LightLayer;
-    // private queuedSections: Long2ObjectMap<DataLayer>;
-    // private sectionStates: Long2ByteMap;
+    // private queuedSections: { [key: string]: any };
+    // private sectionStates: { [key: string]: any };
     // private sectionsAffectedByLightUpdates: (Object | null)[];
     // private toRemove: (Object | null)[];
     // private updatingSectionData: M;

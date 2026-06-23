@@ -4,7 +4,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class PistonHandler extends Object implements BackwardsBlockEntityProvider$BackwardsBlockEntityHandler {
     constructor()
-    // private pistonIds: Object2IntMap<string>;
+    // private pistonIds: { [key: string]: any };
     // private addEntries(arg0: string, arg1: number): void;
     // private getDataFromTag(arg0: Map$Entry<string, Tag>[]): string;
     transform(arg0: number, arg1: Map$Entry<string, Tag>[]): Map$Entry<string, Tag>[];

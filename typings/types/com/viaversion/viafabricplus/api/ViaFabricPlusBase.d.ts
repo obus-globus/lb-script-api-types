@@ -5,6 +5,7 @@ import type { UserConnection } from '../../../../com/viaversion/viaversion/api/c
 import type { Item } from '../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
 import type { ProtocolVersion } from '../../../../com/viaversion/viaversion/api/protocol/version/ProtocolVersion.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Screen } from '../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { ServerData } from '../../../../net/minecraft/client/multiplayer/ServerData.d.ts'

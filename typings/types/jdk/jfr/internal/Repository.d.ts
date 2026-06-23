@@ -1,3 +1,4 @@
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { RepositoryChunk } from '../../../jdk/jfr/internal/RepositoryChunk.d.ts'
 import type { ChunkFilename } from '../../../jdk/jfr/internal/management/ChunkFilename.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'

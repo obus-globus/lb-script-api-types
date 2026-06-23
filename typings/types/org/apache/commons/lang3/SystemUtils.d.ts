@@ -1,4 +1,5 @@
 import type { File } from '../../../../java/io/File.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { JavaVersion } from '../../../../org/apache/commons/lang3/JavaVersion.d.ts'
 export class SystemUtils extends Object {

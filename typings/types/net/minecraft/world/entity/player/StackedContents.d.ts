@@ -3,7 +3,7 @@ import type { StackedContents$IngredientInfo } from '../../../../../net/minecraf
 import type { StackedContents$Output } from '../../../../../net/minecraft/world/entity/player/StackedContents$Output.d.ts'
 export class StackedContents<T extends Object | number | string | boolean> extends Object {
     constructor()
-    amounts: Reference2IntOpenHashMap<T>;
+    amounts: { [key: string]: any };
     account(item: T, count: number): void;
     clear(): void;
     getResultUpperBound(ingredients: (param0: T) => boolean[]): number;

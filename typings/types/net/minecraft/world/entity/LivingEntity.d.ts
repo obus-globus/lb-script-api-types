@@ -198,7 +198,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     oAttackAnim: number;
     // private previousElytra: boolean;
     // private previousIsGliding: boolean;
-    // private recentKineticEnemies: Object2LongMap<Entity>;
+    // private recentKineticEnemies: { [key: string]: any };
     removeArrowTime: number;
     removeStingerTime: number;
     // private skipDropExperience: boolean;

@@ -1,5 +1,6 @@
 import type { NativeImage } from '../../../../../../../com/mojang/blaze3d/platform/NativeImage.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
+import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { BiPredicate } from '../../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'

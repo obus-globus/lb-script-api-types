@@ -19,7 +19,7 @@ export class LegacyFormattingParser extends Object implements NodeParser {
     static merge(paramarg0: NodeParser[]): NodeParser;
     constructor(arg0: boolean, arg1: ChatFormatting[])
     // private allowRgb: boolean;
-    // private map: Char2ObjectOpenHashMap<ChatFormatting>;
+    // private map: { [key: string]: any };
     allowRGB(): boolean;
     codec(): Codec<WrappedText>;
     formatting(): ChatFormatting[];

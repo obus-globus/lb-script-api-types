@@ -40,7 +40,7 @@ export interface JwtBuilder extends ClaimsMutator<JwtBuilder>, Object{
     issuer(arg0: string): JwtBuilder;
     json(arg0: Serializer<{ [key: string]: Object | null }>): JwtBuilder;
     notBefore(arg0: Date): JwtBuilder;
-    provider(arg0: Provider): JwtBuilder;
+    provider(arg0: { [key: string]: any }): JwtBuilder;
     random(arg0: SecureRandom): JwtBuilder;
     serializeToJsonWith(arg0: Serializer<{ [key: string]: Object | null }>): JwtBuilder;
     setClaims(arg0: { [key: string]: Object | null }): JwtBuilder;

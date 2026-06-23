@@ -23,7 +23,7 @@ import type { SimpleRegionStorage } from '../../../../../../net/minecraft/world/
 export class SectionStorage<R extends Object | number | string | boolean, P extends Object | number | string | boolean> extends Object implements AutoCloseable, RegionBasedStorageSectionExtended<Object> {
     constructor(simpleRegionStorage: SimpleRegionStorage, codec: Codec<P>, packer: (param0: R) => P, unpacker: (param0: P, param1: () => void) => R, factory: (param0: () => void) => R, registryAccess: RegistryAccess, errorReporter: ChunkIOErrorReporter, levelHeightAccessor: LevelHeightAccessor)
     // private codec: Codec<P>;
-    // private columns: Long2ObjectOpenHashMap<Object>;
+    // private columns: { [key: string]: any };
     // private dirtyChunks: (Object | null)[];
     // private errorReporter: ChunkIOErrorReporter;
     // private factory: (param0: () => void) => R;
@@ -31,10 +31,10 @@ export class SectionStorage<R extends Object | number | string | boolean, P exte
     // private loadLock: Object;
     // private loadedChunks: (Object | null)[];
     // private packer: (param0: R) => P;
-    // private pendingLoads: Long2ObjectMap<CompletableFuture<Optional<SectionStorage$PackedChunk<P>>>>;
+    // private pendingLoads: { [key: string]: any };
     // private registryAccess: RegistryAccess;
     // private simpleRegionStorage: SimpleRegionStorage;
-    // private storage: Long2ObjectMap<Optional<R>>;
+    // private storage: { [key: string]: any };
     // private unpacker: (param0: P, param1: () => void) => R;
     close(): void;
     flush(chunkPos: ChunkPos): void;

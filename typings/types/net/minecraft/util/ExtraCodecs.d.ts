@@ -8,6 +8,7 @@ import type { DynamicOps } from '../../../com/mojang/serialization/DynamicOps.d.
 import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts'
 import type { MapCodec } from '../../../com/mojang/serialization/MapCodec.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Instant } from '../../../java/time/Instant.d.ts'
 import type { DateTimeFormatter } from '../../../java/time/format/DateTimeFormatter.d.ts'
 import type { TemporalAccessor } from '../../../java/time/temporal/TemporalAccessor.d.ts'
@@ -93,7 +94,7 @@ export class ExtraCodecs extends Object {
     static nonEmptyHolderSet(paramlistCodec: Codec<Holder<Object>[]>): Codec<Holder<Object>[]>;
     static nonEmptyList(paramlistCodec: Codec<(Object | null)[]>): Codec<(Object | null)[]>;
     static nonEmptyMap(parammapCodec: Codec<Object>): Codec<Object>;
-    static object2BooleanMap(paramkeyCodec: Codec<Object>): Codec<Object2BooleanMap<Object>>;
+    static object2BooleanMap(paramkeyCodec: Codec<Object>): Codec<{ [key: string]: any }>;
     static optionalEmptyMap(paramcodec: Codec<Object>): Codec<Optional<Object>>;
     static orCompressed(paramnormal: Codec<Object>, paramcompressed: Codec<Object>): Codec<Object>;
     static orCompressed(paramnormal: MapCodec<Object>, paramcompressed: MapCodec<Object>): MapCodec<Object>;

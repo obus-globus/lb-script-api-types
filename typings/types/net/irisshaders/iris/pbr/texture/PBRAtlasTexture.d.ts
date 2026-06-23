@@ -1,5 +1,6 @@
 import type { GpuBuffer } from '../../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
 import type { GpuTextureView } from '../../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { AtlasPBRLoader$PBRTextureAtlasSprite } from '../../../../../net/irisshaders/iris/pbr/loader/AtlasPBRLoader$PBRTextureAtlasSprite.d.ts'
 import type { PBRDumpable } from '../../../../../net/irisshaders/iris/pbr/texture/PBRDumpable.d.ts'
 import type { PBRType } from '../../../../../net/irisshaders/iris/pbr/texture/PBRType.d.ts'

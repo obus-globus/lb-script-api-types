@@ -1,5 +1,6 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DimensionTypeAccessor } from '../../../../../net/fabricmc/fabric/mixin/dimension/DimensionTypeAccessor.d.ts'

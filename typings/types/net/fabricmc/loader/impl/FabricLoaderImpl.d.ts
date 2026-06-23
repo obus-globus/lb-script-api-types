@@ -1,6 +1,7 @@
 import type { File } from '../../../../java/io/File.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'

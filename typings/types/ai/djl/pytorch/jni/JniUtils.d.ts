@@ -10,6 +10,7 @@ import type { PtSymbolBlock } from '../../../../ai/djl/pytorch/engine/PtSymbolBl
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 export class JniUtils extends Object {

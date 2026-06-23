@@ -13,12 +13,12 @@ export class ShapeExt extends ShapeImpl {
     static findCommonAncestor(paramleft: ShapeImpl, paramright: ShapeImpl): ShapeImpl;
     static newBuilder(): Shape$Builder;
     static newBuilder(parambaseShape: Shape): Shape$DerivedBuilder;
-    constructor(layout: Layout, sharedData: Object, parent: ShapeImpl, objectType: Object, propertyMap: PropertyMap, transition: Transition, allocator: ShapeImpl$BaseAllocator, flags: number)
+    constructor(layout: Layout, sharedData: Object, parent: ShapeImpl, objectType: Object, propertyMap: { [key: string]: any }, transition: Transition, allocator: ShapeImpl$BaseAllocator, flags: number)
     constructor(layout: Layout, sharedData: Object, objectType: Object, flags: number, singleContextAssumption: Assumption)
     // private predecessorShape: Object;
     // private successorShape: ShapeImpl;
     addPredecessorShape(nextShape: ShapeImpl): void;
-    createShape(layout: Layout, sharedData: Object, parent: ShapeImpl, objectType: Object, propertyMap: PropertyMap, transition: Transition, allocator: ShapeImpl$BaseAllocator, flags: number): ShapeImpl;
+    createShape(layout: Layout, sharedData: Object, parent: ShapeImpl, objectType: Object, propertyMap: { [key: string]: any }, transition: Transition, allocator: ShapeImpl$BaseAllocator, flags: number): ShapeImpl;
     getRoot(): ShapeImpl;
     getSuccessorShape(): ShapeImpl;
     setSuccessorShape(successorShape: ShapeImpl): void;

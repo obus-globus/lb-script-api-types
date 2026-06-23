@@ -7,6 +7,7 @@ import type { TranslatorFactory } from '../../../ai/djl/translate/TranslatorFact
 import type { Pair } from '../../../ai/djl/util/Pair.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Type } from '../../../java/lang/reflect/Type.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class ServingTranslatorFactory extends Object implements TranslatorFactory {
     constructor()

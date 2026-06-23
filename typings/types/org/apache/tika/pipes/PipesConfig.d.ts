@@ -1,4 +1,5 @@
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { PipesConfigBase } from '../../../../org/apache/tika/pipes/PipesConfigBase.d.ts'
 export class PipesConfig extends PipesConfigBase {
     static DEFAULT_MAX_FILES_PROCESSED_PER_PROCESS: number;

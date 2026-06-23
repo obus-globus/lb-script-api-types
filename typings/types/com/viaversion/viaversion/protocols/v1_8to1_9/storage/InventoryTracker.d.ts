@@ -6,7 +6,7 @@ export class InventoryTracker extends Object implements StorableObject {
     // private dragging: boolean;
     readonly inventory: string;
     // private itemIdInCursor: number;
-    // private windowItemCache: Int2ObjectMap<{ [key: number]: number }>;
+    // private windowItemCache: { [key: string]: any };
     getInventory(): string;
     getItemId(arg0: number, arg1: number): number;
     handleWindowClick(arg0: UserConnection, arg1: number, arg2: number, arg3: number, arg4: number): void;

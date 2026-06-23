@@ -34,10 +34,10 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Quaternionf } from '../../../../org/joml/Quaternionf.d.ts'
 export class SubmitNodeStorage extends Object implements SubmitNodeCollector {
     constructor()
-    readonly submitsPerOrder: Int2ObjectAVLTreeMap<SubmitNodeCollection>;
+    readonly submitsPerOrder: { [key: string]: any };
     clear(): void;
     endFrame(): void;
-    getSubmitsPerOrder(): Int2ObjectAVLTreeMap<SubmitNodeCollection>;
+    getSubmitsPerOrder(): { [key: string]: any };
     order(order: number): SubmitNodeCollection;
     submitBlockModel(arg0: PoseStack, arg1: (param0: Object) => Object, arg2: boolean, arg3: (Object | null)[], arg4: Mesh, arg5: number[], arg6: number, arg7: number, arg8: number): void;
     submitBlockModel(poseStack: PoseStack, renderType: RenderType, modelParts: BlockStateModelPart[], tintLayers: number[], lightCoords: number, overlayCoords: number, outlineColor: number): void;

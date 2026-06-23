@@ -6,6 +6,7 @@ import type { SeekableByteChannel } from '../../../../../../java/nio/channels/Se
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { LinkOption } from '../../../../../../java/nio/file/LinkOption.d.ts'
 import type { OpenOption } from '../../../../../../java/nio/file/OpenOption.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Deflater } from '../../../../../../java/util/zip/Deflater.d.ts'
 import type { ArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/ArchiveEntry.d.ts'
 import type { ArchiveOutputStream } from '../../../../../../org/apache/commons/compress/archivers/ArchiveOutputStream.d.ts'

@@ -1,6 +1,7 @@
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'

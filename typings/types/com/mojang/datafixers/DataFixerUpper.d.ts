@@ -8,11 +8,11 @@ import type { Dynamic } from '../../../com/mojang/serialization/Dynamic.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class DataFixerUpper extends Object implements DataFixer {
     static ERRORS_ARE_FATAL: boolean;
-    constructor(arg0: Int2ObjectSortedMap<Schema>, arg1: DataFix[], arg2: (Object | null)[])
+    constructor(arg0: { [key: string]: any }, arg1: DataFix[], arg2: (Object | null)[])
     // private fixerVersions: (Object | null)[];
     // private globalList: DataFix[];
-    // private rules: Long2ObjectMap<TypeRewriteRule>;
-    // private schemas: Int2ObjectSortedMap<Schema>;
+    // private rules: { [key: string]: any };
+    // private schemas: { [key: string]: any };
     fixerVersions(): (Object | null)[];
     // private getLowestFixSameVersion(arg0: number): number;
     getRule(arg0: number, arg1: number): TypeRewriteRule;

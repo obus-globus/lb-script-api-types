@@ -8,7 +8,7 @@ export class RemovableMultiForest extends Object implements RemovableForest {
     constructor(arg0: number)
     // private lastTree: RemovableTree;
     // private treeSortList: RemovableTree[];
-    // private trees: Long2ReferenceLinkedOpenHashMap<RemovableTree>;
+    // private trees: { [key: string]: any };
     // private treesAreReady: boolean;
     add(arg0: number, arg1: number, arg2: number): void;
     add(arg0: RenderSection): void;

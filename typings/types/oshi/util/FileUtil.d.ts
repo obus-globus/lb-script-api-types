@@ -24,7 +24,7 @@ export class FileUtil extends Object {
     static readLongFromBuffer(paramarg0: ByteBuffer): number;
     static readNativeLongFromBuffer(paramarg0: ByteBuffer): NativeLong;
     static readPointerFromBuffer(paramarg0: ByteBuffer): Pointer;
-    static readPropertiesFromFilename(paramarg0: string): Properties;
+    static readPropertiesFromFilename(paramarg0: string): { [key: string]: any };
     static readShortFromBuffer(paramarg0: ByteBuffer): number;
     static readSizeTFromBuffer(paramarg0: ByteBuffer): LibCAPI$size_t;
     static readSymlinkTarget(paramarg0: File): string;

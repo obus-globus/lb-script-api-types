@@ -6,6 +6,7 @@ import type { Metadata } from '../../../ai/djl/repository/Metadata.d.ts'
 import type { Progress } from '../../../ai/djl/util/Progress.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface Repository extends Object{
     addResource(arg0: MRL): void;

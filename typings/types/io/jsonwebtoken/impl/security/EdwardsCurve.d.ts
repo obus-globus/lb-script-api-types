@@ -33,6 +33,6 @@ export class EdwardsCurve extends AbstractCurve implements KeyLengthSupplier {
     isSignatureCurve(): boolean;
     keyPair(): KeyPairBuilder;
     privateKeySpec(arg0: number[], arg1: boolean): KeySpec;
-    toPrivateKey(arg0: number[], arg1: Provider): PrivateKey;
-    toPublicKey(arg0: number[], arg1: Provider): PublicKey;
+    toPrivateKey(arg0: number[], arg1: { [key: string]: any }): PrivateKey;
+    toPublicKey(arg0: number[], arg1: { [key: string]: any }): PublicKey;
 }

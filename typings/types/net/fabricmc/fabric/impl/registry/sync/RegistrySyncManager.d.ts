@@ -7,6 +7,6 @@ export class RegistrySyncManager extends Object {
     static postBootstrap: boolean;
     static bootstrapRegistries(): void;
     static configureClient(paramarg0: ServerConfigurationPacketListenerImpl, paramarg1: MinecraftServer): void;
-    static createAndPopulateRegistryMap(): Map<Identifier, Object2IntMap<Identifier>>;
+    static createAndPopulateRegistryMap(): Map<Identifier, { [key: string]: any }>;
     private constructor()
 }

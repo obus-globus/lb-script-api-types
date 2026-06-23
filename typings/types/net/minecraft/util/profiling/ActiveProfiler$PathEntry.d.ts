@@ -4,11 +4,11 @@ export class ActiveProfiler$PathEntry extends Object implements ProfilerPathEntr
     constructor()
     // private accumulatedDuration: number;
     readonly count: number;
-    readonly counters: Object2LongOpenHashMap<string>;
+    readonly counters: { [key: string]: any };
     readonly maxDuration: number;
     // private minDuration: number;
     getCount(): number;
-    getCounters(): Object2LongMap<string>;
+    getCounters(): { [key: string]: any };
     getDuration(): number;
     getMaxDuration(): number;
 }

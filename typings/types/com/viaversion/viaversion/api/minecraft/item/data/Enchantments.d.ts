@@ -6,12 +6,12 @@ export class Enchantments extends Record implements Copyable {
     static TYPE1_20_5: Type<Enchantments>;
     static TYPE1_21_5: Type<Enchantments>;
     static copy(paramarg0: Object | null): Object | null;
-    // private enchantments: Int2IntMap;
+    // private enchantments: { [key: string]: any };
     // private showInTooltip: boolean;
     add(arg0: number, arg1: number): void;
     clear(): void;
     copy(): Enchantments;
-    enchantments(): Int2IntMap;
+    enchantments(): { [key: string]: any };
     equals(arg0: Object | null): boolean;
     getLevel(arg0: number): number;
     hashCode(): number;

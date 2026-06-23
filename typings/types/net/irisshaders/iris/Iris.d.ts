@@ -1,4 +1,5 @@
 import type { Exception } from '../../../java/lang/Exception.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { IrisLogging } from '../../../net/irisshaders/iris/IrisLogging.d.ts'
@@ -45,7 +46,7 @@ export class Iris extends Object {
     static onRenderSystemInit(): void;
     static queueDefaultShaderPackOptionValues(): void;
     static queueShaderPackOptionsFromProfile(paramarg0: Profile): void;
-    static queueShaderPackOptionsFromProperties(paramarg0: Properties): void;
+    static queueShaderPackOptionsFromProperties(paramarg0: { [key: string]: any }): void;
     static reload(): void;
     static resetShaderPackOptionsOnNextReload(): void;
     static setDebug(paramarg0: boolean): void;

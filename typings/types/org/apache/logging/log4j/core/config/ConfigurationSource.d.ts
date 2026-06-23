@@ -3,6 +3,7 @@ import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { ClassLoader } from '../../../../../../java/lang/ClassLoader.d.ts'
 import type { URI } from '../../../../../../java/net/URI.d.ts'
 import type { URL } from '../../../../../../java/net/URL.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Source } from '../../../../../../org/apache/logging/log4j/core/util/Source.d.ts'
 export class ConfigurationSource extends Object {

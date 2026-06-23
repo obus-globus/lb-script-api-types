@@ -1,6 +1,7 @@
 import type { ByteSink } from '../../../../com/google/common/io/ByteSink.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { OpenOption } from '../../../../java/nio/file/OpenOption.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 export class MoreFiles$PathByteSink extends ByteSink {
     private constructor(path: Path[], options: OpenOption[])
     // private options: OpenOption[];

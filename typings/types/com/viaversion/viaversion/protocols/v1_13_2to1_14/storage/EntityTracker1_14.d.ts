@@ -5,10 +5,10 @@ export class EntityTracker1_14 extends EntityTrackerBase {
     readonly chunkCenterX: number;
     readonly chunkCenterZ: number;
     readonly forceSendCenterChunk: boolean;
-    readonly insentientData: Int2ObjectMap<number>;
+    readonly insentientData: { [key: string]: any };
     readonly latestTradeWindowId: number;
-    // private playerEntityFlags: Int2ObjectMap<number>;
-    // private sleepingAndRiptideData: Int2ObjectMap<number>;
+    // private playerEntityFlags: { [key: string]: any };
+    // private sleepingAndRiptideData: { [key: string]: any };
     getChunkCenterX(): number;
     getChunkCenterZ(): number;
     getEntityFlags(arg0: number): number;

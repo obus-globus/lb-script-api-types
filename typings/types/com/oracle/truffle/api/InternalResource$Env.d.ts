@@ -5,6 +5,7 @@ import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Module } from '../../../../java/lang/Module.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { PosixFilePermission } from '../../../../java/nio/file/attribute/PosixFilePermission.d.ts'
 import type { Enumeration } from '../../../../java/util/Enumeration.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
@@ -21,7 +22,7 @@ export class InternalResource$Env extends Object {
     // private getResourceStream(resourceName: string): InputStream;
     inContextPreinitialization(): boolean;
     inNativeImageBuild(): boolean;
-    // private loadFileList(source: Path[]): Properties;
+    // private loadFileList(source: Path[]): { [key: string]: any };
     // private preferredResource(candidates: Enumeration<URL>): URL;
     readResourceLines(location: Path[]): string[];
     unpackResourceFiles(source: Path[], target: Path[], relativizeTo: Path[]): void;

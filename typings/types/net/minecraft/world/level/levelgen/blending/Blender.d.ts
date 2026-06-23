@@ -18,9 +18,9 @@ export class Blender extends Object {
     static generateBorderTicks(paramregion: WorldGenRegion, paramchunk: ChunkAccess): void;
     static makeOldChunkDistanceGetter(paramcenterBlendingData: BlendingData, paramoldSidesBlendingData: { [key in Direction8]: BlendingData }): Blender$DistanceGetter;
     static of(paramregion: WorldGenRegion): Blender;
-    private constructor(heightAndBiomeBlendingData: Long2ObjectOpenHashMap<BlendingData>, densityBlendingData: Long2ObjectOpenHashMap<BlendingData>)
-    // private densityBlendingData: Long2ObjectOpenHashMap<BlendingData>;
-    // private heightAndBiomeBlendingData: Long2ObjectOpenHashMap<BlendingData>;
+    private constructor(heightAndBiomeBlendingData: { [key: string]: any }, densityBlendingData: { [key: string]: any })
+    // private densityBlendingData: { [key: string]: any };
+    // private heightAndBiomeBlendingData: { [key: string]: any };
     // private blendBiome(quartX: number, quartY: number, quartZ: number): Holder<Biome>;
     blendDensity(context: DensityFunction$FunctionContext, noiseValue: number): number;
     blendOffsetAndFactor(blockX: number, blockZ: number): Blender$BlendingOutput;

@@ -15,14 +15,14 @@ export class ServerboundContainerClickPacket extends Record implements Packet<Se
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     // private buttonNum: number;
     // private carriedItem: HashedStack;
-    // private changedSlots: Int2ObjectMap<HashedStack>;
+    // private changedSlots: { [key: string]: any };
     // private containerId: number;
     // private containerInput: ContainerInput;
     // private slotNum: number;
     // private stateId: number;
     buttonNum(): number;
     carriedItem(): HashedStack;
-    changedSlots(): Int2ObjectMap<HashedStack>;
+    changedSlots(): { [key: string]: any };
     containerId(): number;
     containerInput(): ContainerInput;
     equals(o: Object | null): boolean;

@@ -8,10 +8,10 @@ import type { Iterator } from '../../../java/util/Iterator.d.ts'
 export class CertificateFactory extends Object {
     static getInstance(paramarg0: string): CertificateFactory;
     static getInstance(paramarg0: string, paramarg1: string): CertificateFactory;
-    static getInstance(paramarg0: string, paramarg1: Provider): CertificateFactory;
-    constructor(arg0: CertificateFactorySpi, arg1: Provider, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): CertificateFactory;
+    constructor(arg0: CertificateFactorySpi, arg1: { [key: string]: any }, arg2: string)
     // private certFacSpi: CertificateFactorySpi;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     readonly type: string;
     generateCRL(arg0: InputStream): CRL;
     generateCRLs(arg0: InputStream): CRL[];
@@ -21,6 +21,6 @@ export class CertificateFactory extends Object {
     generateCertificate(arg0: InputStream): Certificate;
     generateCertificates(arg0: InputStream): Certificate[];
     getCertPathEncodings(): Iterator<string>;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     getType(): string;
 }

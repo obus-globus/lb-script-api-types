@@ -1,4 +1,5 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Configuration } from '../../../org/lwjgl/system/Configuration.d.ts'

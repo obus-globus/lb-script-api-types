@@ -23,7 +23,7 @@ export class PayloadTypeRegistryImpl<B extends FriendlyByteBuf> extends Object i
     static serverboundPlay(): PayloadTypeRegistry<RegistryFriendlyByteBuf>;
     private constructor(arg0: ConnectionProtocol, arg1: PacketFlow)
     readonly flow: PacketFlow;
-    // private maxPacketSizes: Object2IntMap<Identifier>;
+    // private maxPacketSizes: { [key: string]: any };
     // private minimalSplittableSize: number;
     // private packetTypes: Map<Identifier, CustomPacketPayload$TypeAndCodec<B, CustomPacketPayload>>;
     // private pendingMaxPacketSizes: Map<Identifier, () => number>;

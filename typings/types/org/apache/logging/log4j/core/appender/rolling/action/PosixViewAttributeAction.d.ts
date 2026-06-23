@@ -1,4 +1,5 @@
 import type { FileVisitor } from '../../../../../../../../java/nio/file/FileVisitor.d.ts'
+import type { Path } from '../../../../../../../../java/nio/file/Path.d.ts'
 import type { PosixFilePermission } from '../../../../../../../../java/nio/file/attribute/PosixFilePermission.d.ts'
 import type { AbstractPathAction } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/AbstractPathAction.d.ts'
 import type { PathCondition } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathCondition.d.ts'

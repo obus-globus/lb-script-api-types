@@ -1,5 +1,6 @@
 import type { DataFixer } from '../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { AdvancementHolder } from '../../../net/minecraft/advancements/AdvancementHolder.d.ts'
 import type { AdvancementNode } from '../../../net/minecraft/advancements/AdvancementNode.d.ts'

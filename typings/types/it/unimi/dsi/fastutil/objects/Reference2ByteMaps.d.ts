@@ -3,15 +3,15 @@ import type { Reference2ByteMap$Entry } from '../../../../../it/unimi/dsi/fastut
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2ByteMaps extends Object {
-    static EMPTY_MAP: Reference2ByteMaps$EmptyMap<Object>;
-    static emptyMap(): Reference2ByteMap<Object>;
-    static fastForEach(paramarg0: Reference2ByteMap<Object>, paramarg1: (param0: Object) => void): void;
-    static fastIterable(paramarg0: Reference2ByteMap<Object>): Reference2ByteMap$Entry<Object>[];
-    static fastIterator(paramarg0: Reference2ByteMap<Object>): ObjectIterator<Reference2ByteMap$Entry<Object>>;
-    static singleton(paramarg0: Object | null, paramarg1: number): Reference2ByteMap<Object>;
-    static singleton(paramarg0: Object | null, paramarg1: number): Reference2ByteMap<Object>;
-    static synchronize(paramarg0: Reference2ByteMap<Object>): Reference2ByteMap<Object>;
-    static synchronize(paramarg0: Reference2ByteMap<Object>, paramarg1: Object): Reference2ByteMap<Object>;
-    static unmodifiable(paramarg0: Reference2ByteMap<Object>): Reference2ByteMap<Object>;
+    static EMPTY_MAP: { [key: string]: any };
+    static emptyMap(): { [key: string]: any };
+    static fastForEach(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: { [key: string]: any }): Reference2ByteMap$Entry<Object>[];
+    static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Reference2ByteMap$Entry<Object>>;
+    static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
+    static singleton(paramarg0: Object | null, paramarg1: number): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

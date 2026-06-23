@@ -1,6 +1,7 @@
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { ByteArrayOutputStream } from '../../../../../org/apache/commons/io/output/ByteArrayOutputStream.d.ts'
 import type { DeferredFileOutputStream$Builder } from '../../../../../org/apache/commons/io/output/DeferredFileOutputStream$Builder.d.ts'
 import type { ThresholdingOutputStream } from '../../../../../org/apache/commons/io/output/ThresholdingOutputStream.d.ts'

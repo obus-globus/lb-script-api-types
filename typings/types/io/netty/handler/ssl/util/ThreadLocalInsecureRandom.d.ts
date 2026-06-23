@@ -6,10 +6,10 @@ export class ThreadLocalInsecureRandom extends SecureRandom {
     static from(paramarg0: RandomGenerator): Random;
     static getInstance(paramarg0: string): SecureRandom;
     static getInstance(paramarg0: string, paramarg1: string): SecureRandom;
-    static getInstance(paramarg0: string, paramarg1: Provider): SecureRandom;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): SecureRandom;
     static getInstance(paramarg0: string, paramarg1: SecureRandomParameters): SecureRandom;
     static getInstance(paramarg0: string, paramarg1: SecureRandomParameters, paramarg2: string): SecureRandom;
-    static getInstance(paramarg0: string, paramarg1: SecureRandomParameters, paramarg2: Provider): SecureRandom;
+    static getInstance(paramarg0: string, paramarg1: SecureRandomParameters, paramarg2: { [key: string]: any }): SecureRandom;
     static getInstanceStrong(): SecureRandom;
     static getSeed(paramarg0: number): number[];
     private constructor()

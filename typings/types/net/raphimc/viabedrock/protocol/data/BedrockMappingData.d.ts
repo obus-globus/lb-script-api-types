@@ -45,7 +45,7 @@ export class BedrockMappingData extends MappingDataBase {
     readonly bedrockGameRules: { [key: string]: Object };
     readonly bedrockItemTags: { [key: string]: string[] };
     readonly bedrockItemUpgrader: ItemUpgrader;
-    readonly bedrockLegacyBlockStates: Int2ObjectMap<BedrockBlockState>;
+    readonly bedrockLegacyBlockStates: { [key: string]: any };
     readonly bedrockLegacyBlocks: { [key: string]: number };
     readonly bedrockLevelSoundEvents: { [key in SharedTypes_Legacy_LevelSoundEvent]: { [key: string]: SoundDefinitions$ConfiguredSound } };
     readonly bedrockMetaItems: string[];
@@ -81,7 +81,7 @@ export class BedrockMappingData extends MappingDataBase {
     readonly javaHeightMapBlockStates: { [key: string]: (Object | null)[] };
     readonly javaItems: { [key: string]: number };
     readonly javaParticles: { [key: string]: number };
-    readonly javaPottedBlockStates: Int2IntMap;
+    readonly javaPottedBlockStates: { [key: string]: any };
     readonly javaPreWaterloggedBlockStates: (Object | null)[];
     readonly javaRegistries: Map$Entry<string, Tag>[];
     readonly javaSounds: { [key: string]: number };
@@ -103,7 +103,7 @@ export class BedrockMappingData extends MappingDataBase {
     getBedrockGameRules(): { [key: string]: Object };
     getBedrockItemTags(): { [key: string]: string[] };
     getBedrockItemUpgrader(): ItemUpgrader;
-    getBedrockLegacyBlockStates(): Int2ObjectMap<BedrockBlockState>;
+    getBedrockLegacyBlockStates(): { [key: string]: any };
     getBedrockLegacyBlocks(): { [key: string]: number };
     getBedrockLevelSoundEvents(): { [key in SharedTypes_Legacy_LevelSoundEvent]: { [key: string]: SoundDefinitions$ConfiguredSound } };
     getBedrockMetaItems(): string[];
@@ -139,7 +139,7 @@ export class BedrockMappingData extends MappingDataBase {
     getJavaHeightMapBlockStates(): { [key: string]: (Object | null)[] };
     getJavaItems(): { [key: string]: number };
     getJavaParticles(): { [key: string]: number };
-    getJavaPottedBlockStates(): Int2IntMap;
+    getJavaPottedBlockStates(): { [key: string]: any };
     getJavaPreWaterloggedBlockStates(): (Object | null)[];
     getJavaRegistries(): Map$Entry<string, Tag>[];
     getJavaSounds(): { [key: string]: number };

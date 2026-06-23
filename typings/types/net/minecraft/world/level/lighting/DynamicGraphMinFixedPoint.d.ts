@@ -4,7 +4,7 @@ import type { LeveledPriorityQueue } from '../../../../../net/minecraft/world/le
 export abstract class DynamicGraphMinFixedPoint extends Object {
     static SOURCE: number;
     constructor(levelCount: number, minQueueSize: number, minMapSize: number)
-    // private computedLevels: Long2ByteMap;
+    // private computedLevels: { [key: string]: any };
     // private hasWork: boolean;
     // private levelCount: number;
     // private priorityQueue: LeveledPriorityQueue;

@@ -4,13 +4,13 @@ import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 export class Payload extends Object {
-    constructor(arg0: Claims)
-    private constructor(arg0: Claims, arg1: CharSequence, arg2: number[], arg3: InputStream, arg4: string)
+    constructor(arg0: { [key: string]: any })
+    private constructor(arg0: { [key: string]: any }, arg1: CharSequence, arg2: number[], arg3: InputStream, arg4: string)
     constructor(arg0: InputStream, arg1: string)
     constructor(arg0: number[], arg1: string)
     constructor(arg0: CharSequence, arg1: string)
     readonly bytes: number[];
-    // private claims: Claims;
+    // private claims: { [key: string]: any };
     readonly claimsExpected: boolean;
     // private contentType: string;
     // private inputStream: InputStream;
@@ -21,7 +21,7 @@ export class Payload extends Object {
     decompress(arg0: CompressionAlgorithm): Payload;
     getBytes(): number[];
     getContentType(): string;
-    getRequiredClaims(): Claims;
+    getRequiredClaims(): { [key: string]: any };
     isClaims(): boolean;
     isCompressed(): boolean;
     isConsumable(): boolean;

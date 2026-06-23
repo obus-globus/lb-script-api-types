@@ -12,23 +12,21 @@ import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/c
 import type { PlayerPredicate$AdvancementPredicate } from '../../../../net/minecraft/advancements/criterion/PlayerPredicate$AdvancementPredicate.d.ts'
 import type { PlayerPredicate$StatMatcher } from '../../../../net/minecraft/advancements/criterion/PlayerPredicate$StatMatcher.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
-import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
-import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class PlayerPredicate extends Record implements EntitySubPredicate {
     static CODEC: Codec<EntitySubPredicate>;
     static CODEC: MapCodec<PlayerPredicate>;
     static LOOKING_AT_RANGE: number;
-    constructor(level: MinMaxBounds$Ints, food: FoodPredicate, gameType: GameTypePredicate, stats: PlayerPredicate$StatMatcher<Object>[], recipes: Object2BooleanMap<ResourceKey<Recipe<Object>>>, advancements: Map<Identifier, PlayerPredicate$AdvancementPredicate>, lookingAt: Optional<EntityPredicate>, input: Optional<InputPredicate>)
+    constructor(level: MinMaxBounds$Ints, food: FoodPredicate, gameType: GameTypePredicate, stats: PlayerPredicate$StatMatcher<Object>[], recipes: { [key: string]: any }, advancements: Map<Identifier, PlayerPredicate$AdvancementPredicate>, lookingAt: Optional<EntityPredicate>, input: Optional<InputPredicate>)
     // private advancements: Map<Identifier, PlayerPredicate$AdvancementPredicate>;
     // private food: FoodPredicate;
     // private gameType: GameTypePredicate;
     // private input: Optional<InputPredicate>;
     // private level: MinMaxBounds$Ints;
     // private lookingAt: Optional<EntityPredicate>;
-    // private recipes: Object2BooleanMap<ResourceKey<Recipe<Object>>>;
+    // private recipes: { [key: string]: any };
     // private stats: PlayerPredicate$StatMatcher<Object>[];
     advancements(): Map<Identifier, PlayerPredicate$AdvancementPredicate>;
     codec(): MapCodec<PlayerPredicate>;
@@ -40,7 +38,7 @@ export class PlayerPredicate extends Record implements EntitySubPredicate {
     level(): MinMaxBounds$Ints;
     lookingAt(): Optional<EntityPredicate>;
     matches(entity: Entity, level: ServerLevel, position: Vec3): boolean;
-    recipes(): Object2BooleanMap<ResourceKey<Recipe<Object>>>;
+    recipes(): { [key: string]: any };
     stats(): PlayerPredicate$StatMatcher<Object>[];
     toString(): string;
 }

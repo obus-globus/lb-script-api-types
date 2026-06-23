@@ -2,7 +2,7 @@ import type { SectionTracker } from '../../../../../../../net/minecraft/server/l
 export class PoiManager$DistanceTracker extends SectionTracker {
     static SOURCE: number;
     constructor(null_: PoiManager$DistanceTracker)
-    // private levels: Long2ByteMap;
+    // private levels: { [key: string]: any };
     getLevel(node: number): number;
     getLevelFromSource(to: number): number;
     runAllUpdates(): void;

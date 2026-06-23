@@ -1,6 +1,7 @@
 import type { DataFixer } from '../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { SslContext } from '../../../../io/netty/handler/ssl/SslContext.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'

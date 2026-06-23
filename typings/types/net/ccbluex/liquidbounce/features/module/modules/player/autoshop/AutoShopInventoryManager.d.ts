@@ -6,18 +6,18 @@ import type { ModuleAutoShop } from '../../../../../../../../net/ccbluex/liquidb
 import type { ItemStack } from '../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class AutoShopInventoryManager extends Object implements EventListener {
     static INSTANCE: AutoShopInventoryManager;
-    // private currentInventoryItems: Object2IntOpenHashMap<string>;
+    // private currentInventoryItems: { [key: string]: any };
     readonly inventoryItems: ItemStack[];
     // private onTick: EventHook<GameTickEvent>;
-    // private pendingItems: Object2IntOpenHashMap<string>;
-    // private prevInventoryItems: Object2IntOpenHashMap<string>;
-    addPendingItems(items: Object2IntMap<string>): void;
+    // private pendingItems: { [key: string]: any };
+    // private prevInventoryItems: { [key: string]: any };
+    addPendingItems(items: { [key: string]: any }): void;
     children(): EventListener[];
     clearPendingItems(): void;
-    getInventoryItems(): Object2IntMap<string>;
+    getInventoryItems(): { [key: string]: any };
     parent(): EventListener | null;
     parent(): ModuleAutoShop;
     unregister(): void;
-    // private update(newItems: Object2IntMap<string>): void;
+    // private update(newItems: { [key: string]: any }): void;
     // private updatePendingItems(): void;
 }

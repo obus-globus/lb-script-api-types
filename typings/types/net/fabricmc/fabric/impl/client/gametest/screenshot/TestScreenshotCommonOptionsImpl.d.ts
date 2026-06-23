@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { TestScreenshotCommonOptions } from '../../../../../../../net/fabricmc/fabric/api/client/gametest/v1/screenshot/TestScreenshotCommonOptions.d.ts'
 import type { Vector2i } from '../../../../../../../org/joml/Vector2i.d.ts'

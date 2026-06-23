@@ -8,13 +8,13 @@ import type { ConfigurationTask$Type } from '../../../../../../net/minecraft/ser
 import type { ServerConfigurationPacketListenerImpl } from '../../../../../../net/minecraft/server/network/ServerConfigurationPacketListenerImpl.d.ts'
 export class RegistrySyncManager$SyncConfigurationTask extends Record implements ConfigurationTask {
     static KEY: ConfigurationTask$Type;
-    constructor(handler: ServerConfigurationPacketListenerImpl, map: Map<Identifier, Object2IntMap<Identifier>>)
+    constructor(handler: ServerConfigurationPacketListenerImpl, map: Map<Identifier, { [key: string]: any }>)
     // private handler: ServerConfigurationPacketListenerImpl;
-    // private map: Map<Identifier, Object2IntMap<Identifier>>;
+    // private map: Map<Identifier, { [key: string]: any }>;
     equals(arg0: Object | null): boolean;
     handler(): ServerConfigurationPacketListenerImpl;
     hashCode(): number;
-    map(): Map<Identifier, Object2IntMap<Identifier>>;
+    map(): Map<Identifier, { [key: string]: any }>;
     start(arg0: (param0: Packet<Object>) => void): void;
     tick(): boolean;
     toString(): string;

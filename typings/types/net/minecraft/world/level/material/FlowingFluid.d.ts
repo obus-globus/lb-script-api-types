@@ -45,7 +45,7 @@ export abstract class FlowingFluid extends Fluid {
     getSource(falling: boolean): FluidState;
     getSpread(level: ServerLevel, pos: BlockPos, state: BlockState): { [key in Direction]: FluidState };
     getSpreadDelay(level: Level, pos: BlockPos, oldFluidState: FluidState, newFluidState: FluidState): number;
-    // private isHoleBelow(arg0: LevelReader, arg1: Byte2BooleanOpenHashMap, arg2: number, arg3: BlockPos, arg4: BlockState): boolean;
+    // private isHoleBelow(arg0: LevelReader, arg1: { [key: string]: any }, arg2: number, arg3: BlockPos, arg4: BlockState): boolean;
     isSolidFace(level: BlockGetter, pos: BlockPos, direction: Direction): boolean;
     // private isSourceBlockOfThisType(state: FluidState): boolean;
     isWaterHole(arg0: BlockGetter, arg1: BlockPos, arg2: BlockState, arg3: BlockPos, arg4: BlockState): boolean;

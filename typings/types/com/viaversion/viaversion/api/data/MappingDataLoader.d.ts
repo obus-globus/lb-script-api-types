@@ -22,7 +22,7 @@ export class MappingDataLoader extends Object {
     // private dataLoaderClass: Class<Object>;
     // private dataPath: string;
     // private mappingsCache: { [key: string]: Map$Entry<string, Tag>[] };
-    arrayToMap(arg0: JsonElement[]): Object2IntMap<string>;
+    arrayToMap(arg0: JsonElement[]): { [key: string]: any };
     clearCache(): void;
     getDataFolder(): File;
     getLogger(): Logger;
@@ -31,7 +31,7 @@ export class MappingDataLoader extends Object {
     // private identifiers(arg0: Mappings, arg1: string): string[];
     identifiersFromGlobalIds(arg0: Map$Entry<string, Tag>[], arg1: Map$Entry<string, Tag>[], arg2: string): MappingDataLoader$IdentifiersPair;
     identifiersFromGlobalIds(arg0: Map$Entry<string, Tag>[], arg1: string): string[];
-    indexedObjectToMap(arg0: JsonObject): Object2IntMap<string>;
+    indexedObjectToMap(arg0: JsonObject): { [key: string]: any };
     loadData(arg0: string): JsonObject;
     loadFromDataDir(arg0: string): JsonObject;
     loadMappings(arg0: Map$Entry<string, Tag>[], arg1: string): Mappings;

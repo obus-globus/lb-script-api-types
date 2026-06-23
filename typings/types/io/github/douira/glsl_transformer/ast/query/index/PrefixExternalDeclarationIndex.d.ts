@@ -4,7 +4,7 @@ import type { PrefixQueryable } from '../../../../../../../io/github/douira/glsl
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class PrefixExternalDeclarationIndex<S extends ExternalDeclarationIndex$DeclarationEntry[], I extends PatriciaTrie<S>> extends ExternalDeclarationIndex<S, I> implements PrefixQueryable<S, ExternalDeclarationIndex$DeclarationEntry> {
+export class PrefixExternalDeclarationIndex<S extends ExternalDeclarationIndex$DeclarationEntry[], I extends { [key: string]: any }> extends ExternalDeclarationIndex<S, I> implements PrefixQueryable<S, ExternalDeclarationIndex$DeclarationEntry> {
     static withOnlyExact(paramarg0: () => Object | null): ExternalDeclarationIndex<Object, { [key: string]: Object | null }>;
     static withOnlyExact(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], { [key: string]: ExternalDeclarationIndex$DeclarationEntry[] }>;
     static withOnlyExactOrdered(): ExternalDeclarationIndex<ExternalDeclarationIndex$DeclarationEntry[], { [key: string]: ExternalDeclarationIndex$DeclarationEntry[] }>;

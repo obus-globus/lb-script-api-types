@@ -1,5 +1,6 @@
 import type { Gson } from '../../../../com/google/gson/Gson.d.ts'
 import type { JsonObject } from '../../../../com/google/gson/JsonObject.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AbstractSave extends Object {
     static GSON: Gson;

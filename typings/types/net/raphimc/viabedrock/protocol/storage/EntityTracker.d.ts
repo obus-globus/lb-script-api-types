@@ -11,10 +11,10 @@ export class EntityTracker extends StoredObject {
     constructor(arg0: UserConnection)
     // private ID_COUNTER: AtomicInteger;
     // private clientPlayerEntity: ClientPlayerEntity;
-    // private entities: Long2ObjectMap<Entity>;
-    // private itemFrames: Object2IntMap<BlockPosition>;
-    // private javaIdToUniqueId: Int2ObjectMap<number>;
-    // private runtimeIdToUniqueId: Long2ObjectMap<number>;
+    // private entities: { [key: string]: any };
+    // private itemFrames: { [key: string]: any };
+    // private javaIdToUniqueId: { [key: string]: any };
+    // private runtimeIdToUniqueId: { [key: string]: any };
     addEntity<T extends Entity>(arg0: T): T;
     addEntity<T extends Entity>(arg0: T, arg1: boolean): T;
     addEntity(arg0: number, arg1: number, arg2: string, arg3: EntityTypes1_21_11): Entity;

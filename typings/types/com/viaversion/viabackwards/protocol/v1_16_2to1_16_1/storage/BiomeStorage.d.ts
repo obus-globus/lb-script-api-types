@@ -2,7 +2,7 @@ import type { StorableObject } from '../../../../../../com/viaversion/viaversion
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BiomeStorage extends Object implements StorableObject {
     constructor()
-    // private modernToLegacyBiomes: Int2IntMap;
+    // private modernToLegacyBiomes: { [key: string]: any };
     addBiome(arg0: string, arg1: number): void;
     clear(): void;
     legacyBiome(arg0: number): number;

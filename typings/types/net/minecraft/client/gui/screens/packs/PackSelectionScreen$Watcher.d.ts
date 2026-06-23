@@ -1,4 +1,5 @@
 import type { AutoCloseable } from '../../../../../../java/lang/AutoCloseable.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { WatchService } from '../../../../../../java/nio/file/WatchService.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PackSelectionScreen$Watcher extends Object implements AutoCloseable {

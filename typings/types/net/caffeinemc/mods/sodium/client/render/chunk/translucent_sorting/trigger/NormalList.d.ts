@@ -10,7 +10,7 @@ export class NormalList extends Object {
     constructor(arg0: Vector3fc, arg1: number)
     readonly alignedDirection: number;
     // private groupsByInterval: Map<DoubleInterval, Group[]>;
-    // private groupsBySection: Long2ReferenceOpenHashMap<Group>;
+    // private groupsBySection: { [key: string]: any };
     // private intervalTree: number[];
     readonly normal: Vector3fc;
     // private addGroupInterval(arg0: Group): void;

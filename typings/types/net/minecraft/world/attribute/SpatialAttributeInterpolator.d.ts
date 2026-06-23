@@ -3,7 +3,7 @@ import type { EnvironmentAttribute } from '../../../../net/minecraft/world/attri
 import type { EnvironmentAttributeMap } from '../../../../net/minecraft/world/attribute/EnvironmentAttributeMap.d.ts'
 export class SpatialAttributeInterpolator extends Object {
     constructor()
-    // private weightsBySource: Reference2DoubleArrayMap<EnvironmentAttributeMap>;
+    // private weightsBySource: { [key: string]: any };
     accumulate(weight: number, attributes: EnvironmentAttributeMap): SpatialAttributeInterpolator;
     applyAttributeLayer<Value extends Object | number | string | boolean>(attribute: EnvironmentAttribute<Value>, baseValue: Value): Value;
     clear(): void;

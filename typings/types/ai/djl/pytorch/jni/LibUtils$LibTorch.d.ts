@@ -1,4 +1,5 @@
 import type { Platform } from '../../../../ai/djl/util/Platform.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LibUtils$LibTorch extends Object {
     constructor(arg0: Path[])

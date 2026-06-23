@@ -5,7 +5,7 @@ import type { GpuTextureView } from '../../../../com/mojang/blaze3d/textures/Gpu
 export class GlTextureView extends GpuTextureView {
     constructor(texture: GlTexture, baseMipLevel: number, mipLevels: number)
     readonly closed: boolean;
-    // private fboCache: Int2IntMap;
+    // private fboCache: { [key: string]: any };
     // private firstFboDepthId: number;
     // private firstFboId: number;
     close(): void;

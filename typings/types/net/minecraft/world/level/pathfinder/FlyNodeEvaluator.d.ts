@@ -19,7 +19,7 @@ export class FlyNodeEvaluator extends WalkNodeEvaluator {
     static getPathTypeStatic(paramcontext: PathfindingContext, parampos: BlockPos$MutableBlockPos): PathType;
     static isBurningBlock(paramblockState: BlockState): boolean;
     constructor()
-    // private pathTypeByPosCache: Long2ObjectMap<PathType>;
+    // private pathTypeByPosCache: { [key: string]: any };
     canStartAt(pos: BlockPos): boolean;
     done(): void;
     findAcceptedNode(x: number, y: number, z: number): Node;

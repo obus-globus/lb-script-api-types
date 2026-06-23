@@ -1,5 +1,6 @@
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'

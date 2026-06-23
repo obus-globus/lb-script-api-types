@@ -1,4 +1,5 @@
 import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Tag } from '../../../../../net/minecraft/nbt/Tag.d.ts'

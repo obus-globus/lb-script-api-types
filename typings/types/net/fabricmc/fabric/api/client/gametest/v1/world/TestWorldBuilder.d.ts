@@ -7,6 +7,6 @@ export interface TestWorldBuilder extends Object {
     adjustSettings(arg0: (param0: WorldCreationUiState) => void): TestWorldBuilder;
     create(): TestSingleplayerContext;
     createServer(): TestDedicatedServerContext;
-    createServer(arg0: Properties): TestDedicatedServerContext;
+    createServer(arg0: { [key: string]: any }): TestDedicatedServerContext;
     setUseConsistentSettings(arg0: boolean): TestWorldBuilder;
 }

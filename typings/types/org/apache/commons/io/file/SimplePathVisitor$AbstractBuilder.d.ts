@@ -1,5 +1,6 @@
 import type { IOException } from '../../../../../java/io/IOException.d.ts'
 import type { FileVisitResult } from '../../../../../java/nio/file/FileVisitResult.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractSupplier } from '../../../../../org/apache/commons/io/build/AbstractSupplier.d.ts'
 import type { IOBiFunction } from '../../../../../org/apache/commons/io/function/IOBiFunction.d.ts'

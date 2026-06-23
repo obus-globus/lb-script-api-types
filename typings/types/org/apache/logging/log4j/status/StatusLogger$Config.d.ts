@@ -4,7 +4,7 @@ import type { Level } from '../../../../../org/apache/logging/log4j/Level.d.ts'
 export class StatusLogger$Config extends Object {
     static getInstance(): StatusLogger$Config;
     private constructor()
-    constructor(propertiesList: Properties[])
+    constructor(propertiesList: { [key: string]: any }[])
     constructor(debugEnabled: boolean, bufferCapacity: number, instantFormatter: DateTimeFormatter)
     private constructor(normalizedProperties: { [key: string]: Object })
     // private bufferCapacity: number;

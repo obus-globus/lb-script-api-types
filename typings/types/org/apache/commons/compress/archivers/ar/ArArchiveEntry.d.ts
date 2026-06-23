@@ -1,5 +1,6 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { LinkOption } from '../../../../../../java/nio/file/LinkOption.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Date } from '../../../../../../java/util/Date.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/ArchiveEntry.d.ts'

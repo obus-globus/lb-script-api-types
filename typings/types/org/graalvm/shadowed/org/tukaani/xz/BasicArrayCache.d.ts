@@ -5,8 +5,8 @@ export class BasicArrayCache extends ArrayCache {
     static getInstance(): BasicArrayCache;
     static setDefaultCache(paramarrayCache: ArrayCache): void;
     constructor()
-    // private byteArrayCache: BasicArrayCache$CacheMap<number[]>;
-    // private intArrayCache: BasicArrayCache$CacheMap<number[]>;
+    // private byteArrayCache: { [key: string]: any };
+    // private intArrayCache: { [key: string]: any };
     getByteArray(size: number, fillWithZeros: boolean): number[];
     getIntArray(size: number, fillWithZeros: boolean): number[];
     putArray(array: number[]): void;

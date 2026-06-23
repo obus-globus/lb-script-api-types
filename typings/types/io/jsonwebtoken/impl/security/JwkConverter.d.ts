@@ -4,11 +4,11 @@ import type { DynamicJwkBuilder } from '../../../../io/jsonwebtoken/security/Dyn
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { IllegalArgumentException } from '../../../../java/lang/IllegalArgumentException.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class JwkConverter<T extends Jwk<Object>> extends Object implements Converter<T, Object> {
-    static ANY: JwkConverter<Jwk<Object>>;
-    static JWK_CLASS: Class<Jwk<Object>>;
-    static PUBLIC_JWK: JwkConverter<PublicJwk<Object>>;
-    static PUBLIC_JWK_CLASS: Class<PublicJwk<Object>>;
+export class JwkConverter<T extends { [key: string]: any }> extends Object implements Converter<T, Object> {
+    static ANY: JwkConverter<{ [key: string]: any }>;
+    static JWK_CLASS: Class<{ [key: string]: any }>;
+    static PUBLIC_JWK: JwkConverter<{ [key: string]: any }>;
+    static PUBLIC_JWK_CLASS: Class<{ [key: string]: any }>;
     constructor(arg0: Supplier<DynamicJwkBuilder<Object, Object>>)
     constructor(arg0: Class<T>)
     constructor(arg0: Class<T>, arg1: Supplier<DynamicJwkBuilder<Object, Object>>)
@@ -16,5 +16,5 @@ export class JwkConverter<T extends Jwk<Object>> extends Object implements Conve
     // private supplier: Supplier<DynamicJwkBuilder<Object, Object>>;
     applyFrom(arg0: Object): T;
     applyTo(arg0: T): Object;
-    // private unexpectedIAE(arg0: Jwk<Object>): IllegalArgumentException;
+    // private unexpectedIAE(arg0: { [key: string]: any }): IllegalArgumentException;
 }

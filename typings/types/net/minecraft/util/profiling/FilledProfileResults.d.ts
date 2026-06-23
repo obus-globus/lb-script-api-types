@@ -1,4 +1,5 @@
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FilledProfileResults$CounterCollector } from '../../../../net/minecraft/util/profiling/FilledProfileResults$CounterCollector.d.ts'
 import type { ProfileResults } from '../../../../net/minecraft/util/profiling/ProfileResults.d.ts'

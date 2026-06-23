@@ -1,5 +1,6 @@
 import type { StackTraceElement } from '../../java/lang/StackTraceElement.d.ts'
 import type { StringBuilder } from '../../java/lang/StringBuilder.d.ts'
+import type { Path } from '../../java/nio/file/Path.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 import type { CrashReportCategory } from '../../net/minecraft/CrashReportCategory.d.ts'

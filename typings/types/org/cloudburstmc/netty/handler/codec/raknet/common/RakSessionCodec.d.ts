@@ -44,7 +44,7 @@ export class RakSessionCodec extends ChannelDuplexHandler implements IRakSession
     // private reliabilityReadIndex: number;
     // private reliabilityWriteIndex: number;
     // private reliableDatagramQueue: BitQueue;
-    // private sentDatagrams: IntObjectMap<RakDatagramPacket>;
+    // private sentDatagrams: { [key: string]: any };
     // private slidingWindow: RakSlidingWindow;
     // private splitIndex: number;
     // private splitPackets: SplitPacketHelper[];
@@ -90,7 +90,7 @@ export class RakSessionCodec extends ChannelDuplexHandler implements IRakSession
     // private onTick(): void;
     recalculatePongTime(arg0: number): void;
     // private send(arg0: ChannelHandlerContext, arg1: RakMessage): void;
-    // private sendDatagram(arg0: ChannelHandlerContext, arg1: RakDatagramPacket, arg2: number, arg3: IntObjectMap<RakDatagramPacket>): void;
+    // private sendDatagram(arg0: ChannelHandlerContext, arg1: RakDatagramPacket, arg2: number, arg3: { [key: string]: any }): void;
     // private sendDatagrams(arg0: ChannelHandlerContext, arg1: number, arg2: number): void;
     // private sendImmediate(arg0: ChannelHandlerContext, arg1: EncapsulatedPacket[]): void;
     // private sendStaleDatagrams(arg0: ChannelHandlerContext, arg1: number): number;

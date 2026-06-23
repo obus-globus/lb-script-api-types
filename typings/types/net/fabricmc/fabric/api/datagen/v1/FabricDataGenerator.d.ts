@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { FabricDataGenerator$Pack } from '../../../../../../net/fabricmc/fabric/api/datagen/v1/FabricDataGenerator$Pack.d.ts'
 import type { FabricPackOutput } from '../../../../../../net/fabricmc/fabric/api/datagen/v1/FabricPackOutput.d.ts'

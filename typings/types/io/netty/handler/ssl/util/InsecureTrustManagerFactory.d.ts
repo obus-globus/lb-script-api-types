@@ -8,7 +8,7 @@ export class InsecureTrustManagerFactory extends SimpleTrustManagerFactory {
     static getDefaultAlgorithm(): string;
     static getInstance(paramarg0: string): TrustManagerFactory;
     static getInstance(paramarg0: string, paramarg1: string): TrustManagerFactory;
-    static getInstance(paramarg0: string, paramarg1: Provider): TrustManagerFactory;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): TrustManagerFactory;
     private constructor()
     engineGetTrustManagers(): TrustManager[];
     engineInit(arg0: KeyStore): void;

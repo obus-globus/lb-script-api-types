@@ -37,5 +37,5 @@ export class SignatureFileVerifier extends Object {
     updateSigners(arg0: CodeSigner[], arg1: { [key: string]: CodeSigner[] }, arg2: string): void;
     // private verifyManifestHash(arg0: Manifest, arg1: ManifestDigester, arg2: Object[]): boolean;
     // private verifyManifestMainAttrs(arg0: Manifest, arg1: ManifestDigester): boolean;
-    // private verifySection(arg0: Attributes, arg1: string, arg2: ManifestDigester): boolean;
+    // private verifySection(arg0: { [key: string]: any }, arg1: string, arg2: ManifestDigester): boolean;
 }

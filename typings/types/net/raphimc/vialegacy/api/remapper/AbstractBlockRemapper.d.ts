@@ -4,7 +4,7 @@ import type { IdAndData } from '../../../../../com/viaversion/viaversion/util/Id
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractBlockRemapper extends Object {
     constructor()
-    // private REPLACEMENTS: Int2IntMap;
+    // private REPLACEMENTS: { [key: string]: any };
     registerReplacement(arg0: IdAndData, arg1: IdAndData): void;
     registerReplacement(arg0: number, arg1: number): void;
     remapBlock(arg0: IdAndData): void;

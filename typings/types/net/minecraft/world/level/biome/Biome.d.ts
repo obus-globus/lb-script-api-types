@@ -31,7 +31,7 @@ export class Biome extends Object implements ExtendedBiome {
     // private hasCustomGrassColor: boolean;
     readonly mobSettings: MobSpawnSettings;
     readonly specialEffects: BiomeSpecialEffects;
-    // private temperatureCache: ThreadLocal<Long2FloatLinkedOpenHashMap>;
+    // private temperatureCache: ThreadLocal<{ [key: string]: any }>;
     coldEnoughToSnow(pos: BlockPos, seaLevel: number): boolean;
     getAttributes(): EnvironmentAttributeMap;
     // private getBaseGrassColor(): number;

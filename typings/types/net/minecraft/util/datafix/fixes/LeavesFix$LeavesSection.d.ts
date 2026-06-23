@@ -7,7 +7,7 @@ export class LeavesFix$LeavesSection extends LeavesFix$Section {
     constructor(section: Typed<Object>, inputSchema: Schema)
     // private leaveIds: (Object | null)[];
     // private logIds: (Object | null)[];
-    // private stateToIdMap: Int2IntMap;
+    // private stateToIdMap: { [key: string]: any };
     // private getDistance(block: number): number;
     isLeaf(block: number): boolean;
     isLog(block: number): boolean;

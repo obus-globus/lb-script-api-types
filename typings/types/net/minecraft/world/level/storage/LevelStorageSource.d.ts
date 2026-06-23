@@ -1,6 +1,7 @@
 import type { DataFixer } from '../../../../../com/mojang/datafixers/DataFixer.d.ts'
 import type { DataResult } from '../../../../../com/mojang/serialization/DataResult.d.ts'
 import type { Dynamic } from '../../../../../com/mojang/serialization/Dynamic.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { HolderLookup$Provider } from '../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'

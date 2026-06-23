@@ -1,5 +1,6 @@
 import type { RandomAccessFile } from '../../../java/io/RandomAccessFile.d.ts'
 import type { ReadableByteChannel } from '../../../java/nio/channels/ReadableByteChannel.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Instant } from '../../../java/time/Instant.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class RepositoryChunk extends Object {

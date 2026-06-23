@@ -5,14 +5,14 @@ export interface ScriptContext extends Object{
     getAttribute(arg0: string): Object;
     getAttribute(arg0: string, arg1: number): Object;
     getAttributesScope(arg0: string): number;
-    getBindings(arg0: number): Bindings;
+    getBindings(arg0: number): { [key: string]: any };
     getErrorWriter(): Writer;
     getReader(): Reader;
     getScopes(): number[];
     getWriter(): Writer;
     removeAttribute(arg0: string, arg1: number): Object;
     setAttribute(arg0: string, arg1: Object, arg2: number): void;
-    setBindings(arg0: Bindings, arg1: number): void;
+    setBindings(arg0: { [key: string]: any }, arg1: number): void;
     setErrorWriter(arg0: Writer): void;
     setReader(arg0: Reader): void;
     setWriter(arg0: Writer): void;

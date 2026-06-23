@@ -1,4 +1,5 @@
 import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { CopyActionResult } from '../../../kotlin/io/path/CopyActionResult.d.ts'

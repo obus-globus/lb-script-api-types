@@ -1,6 +1,7 @@
 import type { IOException } from '../../../../../java/io/IOException.d.ts'
 import type { FileVisitResult } from '../../../../../java/nio/file/FileVisitResult.d.ts'
 import type { LinkOption } from '../../../../../java/nio/file/LinkOption.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { BasicFileAttributes } from '../../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Counters$PathCounters } from '../../../../../org/apache/commons/io/file/Counters$PathCounters.d.ts'

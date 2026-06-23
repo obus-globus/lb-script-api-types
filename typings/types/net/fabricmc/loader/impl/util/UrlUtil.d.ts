@@ -1,6 +1,7 @@
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { URL } from '../../../../../java/net/URL.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class UrlUtil extends Object {
     static LOADER_CODE_SOURCE: Path[][];

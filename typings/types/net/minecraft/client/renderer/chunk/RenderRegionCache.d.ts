@@ -5,7 +5,7 @@ import type { SectionCopy } from '../../../../../net/minecraft/client/renderer/c
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class RenderRegionCache extends Object {
     constructor()
-    // private sectionCopyCache: Long2ObjectMap<SectionCopy>;
+    // private sectionCopyCache: { [key: string]: any };
     createRegion(level: ClientLevel, sectionNode: number): RenderSectionRegion;
     // private getSectionDataCopy(level: Level, sectionX: number, sectionY: number, sectionZ: number): SectionCopy;
 }

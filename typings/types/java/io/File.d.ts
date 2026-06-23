@@ -6,6 +6,7 @@ import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { URI } from '../../java/net/URI.d.ts'
 import type { URL } from '../../java/net/URL.d.ts'
+import type { Path } from '../../java/nio/file/Path.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Comparable } from '../../java/lang/Comparable.d.ts'
 export class File extends Object implements Serializable, Comparable<File> {

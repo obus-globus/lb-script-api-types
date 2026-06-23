@@ -4,10 +4,10 @@ import type { ReadWriteLock } from '../../../../java/util/concurrent/locks/ReadW
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AbstractProtocolDetectorService extends Object implements ProtocolDetectorService {
     constructor()
-    // private detectedProtocolIds: Object2IntMap<string>;
+    // private detectedProtocolIds: { [key: string]: any };
     // private lock: ReadWriteLock;
     configuredServers(): { [key: string]: number };
-    detectedProtocolVersions(): Object2IntMap<string>;
+    detectedProtocolVersions(): { [key: string]: any };
     lowestSupportedProtocolVersion(): ProtocolVersion;
     probeAllServers(): void;
     serverProtocolVersion(arg0: string): ProtocolVersion;

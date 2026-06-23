@@ -1,6 +1,7 @@
 import type { HashCode } from '../../../../../com/google/common/hash/HashCode.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { URL } from '../../../../../java/net/URL.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PackDownloader } from '../../../../../net/minecraft/client/resources/server/PackDownloader.d.ts'

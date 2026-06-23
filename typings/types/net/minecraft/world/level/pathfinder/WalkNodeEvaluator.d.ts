@@ -20,8 +20,8 @@ export class WalkNodeEvaluator extends NodeEvaluator {
     static getPathTypeStatic(paramcontext: PathfindingContext, parampos: BlockPos$MutableBlockPos): PathType;
     static isBurningBlock(paramblockState: BlockState): boolean;
     constructor()
-    // private collisionCache: Object2BooleanMap<AABB>;
-    // private pathTypesByPosCacheByMob: Long2ObjectMap<PathType>;
+    // private collisionCache: { [key: string]: any };
+    // private pathTypesByPosCacheByMob: { [key: string]: any };
     // private reusableNeighbors: Node[];
     // private canReachWithoutCollision(posTo: Node): boolean;
     canStartAt(pos: BlockPos): boolean;

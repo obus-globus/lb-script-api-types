@@ -21,9 +21,9 @@ export class ServerExplosion extends Object implements Explosion {
     constructor(level: ServerLevel, source: Entity, damageSource: DamageSource, damageCalculator: ExplosionDamageCalculator, center: Vec3, radius: number, fire: boolean, blockInteraction: Explosion$BlockInteraction)
     readonly blockInteraction: Explosion$BlockInteraction;
     // private bottomY: number;
-    // private cachedBlockStates: Long2ReferenceOpenHashMap<Object>;
+    // private cachedBlockStates: { [key: string]: any };
     // private cachedPos: BlockPos$MutableBlockPos;
-    // private cachedResistances: Long2FloatOpenHashMap;
+    // private cachedResistances: { [key: string]: any };
     // private center: Vec3;
     // private damageCalculator: ExplosionDamageCalculator;
     readonly damageSource: DamageSource;

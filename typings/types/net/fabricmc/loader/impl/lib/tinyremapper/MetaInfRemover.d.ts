@@ -1,4 +1,5 @@
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { OutputConsumerPath$ResourceRemapper } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/OutputConsumerPath$ResourceRemapper.d.ts'
 import type { TinyRemapper } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/TinyRemapper.d.ts'

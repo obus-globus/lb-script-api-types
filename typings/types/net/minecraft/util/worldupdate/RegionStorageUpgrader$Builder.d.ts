@@ -14,7 +14,7 @@ export class RegionStorageUpgrader$Builder extends Object {
     // private defaultVersion: number;
     // private folderName: string;
     // private recreateRegionFiles: boolean;
-    // private tagModifiers: Int2ObjectAVLTreeMap<(param0: ChunkPos, param1: CompoundTag) => boolean>;
+    // private tagModifiers: { [key: string]: any };
     // private type: string;
     // private upgradeProgress: UpgradeProgress;
     addTagModifier(version: number, tagModifier: (param0: ChunkPos, param1: CompoundTag) => boolean): RegionStorageUpgrader$Builder;
@@ -25,7 +25,7 @@ export class RegionStorageUpgrader$Builder extends Object {
     setDefaultVersion(defaultVersion: number): RegionStorageUpgrader$Builder;
     setFolderName(folderName: string): RegionStorageUpgrader$Builder;
     setRecreateRegionFiles(recreateRegionFiles: boolean): RegionStorageUpgrader$Builder;
-    // private setTagModifiers(tagModifiers: Int2ObjectAVLTreeMap<(param0: ChunkPos, param1: CompoundTag) => boolean>): RegionStorageUpgrader$Builder;
+    // private setTagModifiers(tagModifiers: { [key: string]: any }): RegionStorageUpgrader$Builder;
     setType(type: string): RegionStorageUpgrader$Builder;
     setTypeAndFolderName(name: string): RegionStorageUpgrader$Builder;
     trackProgress(upgradeProgress: UpgradeProgress): RegionStorageUpgrader$Builder;

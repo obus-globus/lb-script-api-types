@@ -1,4 +1,5 @@
 import type { Thread } from '../../../java/lang/Thread.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Instant } from '../../../java/time/Instant.d.ts'
 import type { Timer } from '../../../java/util/Timer.d.ts'
 import type { FlightRecorder } from '../../../jdk/jfr/FlightRecorder.d.ts'

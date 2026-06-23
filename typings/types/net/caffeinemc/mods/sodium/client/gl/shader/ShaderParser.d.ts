@@ -5,7 +5,7 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 export class ShaderParser extends Object {
     static parseShader(paramarg0: string, paramarg1: ShaderConstants): ShaderParser$ParsedShader;
     private constructor()
-    // private includeIds: Object2IntMap<string>;
+    // private includeIds: { [key: string]: any };
     // private lines: string[];
     // private finish(): ShaderParser$ParsedShader;
     // private lineDirectiveFor(arg0: string, arg1: number): string;

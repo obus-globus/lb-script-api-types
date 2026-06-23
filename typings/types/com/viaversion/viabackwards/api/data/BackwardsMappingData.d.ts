@@ -10,11 +10,11 @@ import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class BackwardsMappingData extends MappingDataBase {
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: Class<Protocol<Object, Object, Object, Object>>)
-    backwardsItemMappings: Int2ObjectMap<MappedItem>;
-    // private enchantmentNames: Int2ObjectMap<string>;
+    backwardsItemMappings: { [key: string]: any };
+    // private enchantmentNames: { [key: string]: any };
     // private entityNames: { [key: string]: string };
     // private vvProtocolClass: Class<Protocol<Object, Object, Object, Object>>;
-    getBackwardsItemMappings(): Int2ObjectMap<MappedItem>;
+    getBackwardsItemMappings(): { [key: string]: any };
     getLogger(): Logger;
     getMappedItem(arg0: number): MappedItem;
     getMappedNamedSound(arg0: string): string;
@@ -25,7 +25,7 @@ export class BackwardsMappingData extends MappingDataBase {
     getViaVersionProtocolClass(): Class<Protocol<Object, Object, Object, Object>>;
     loadBiMappings(arg0: Map$Entry<string, Tag>[], arg1: string): BiMappings;
     loadExtras(arg0: Map$Entry<string, Tag>[]): void;
-    // private loadNameByIdMappings(arg0: Map$Entry<string, Tag>[], arg1: string): Int2ObjectMap<string>;
+    // private loadNameByIdMappings(arg0: Map$Entry<string, Tag>[], arg1: string): { [key: string]: any };
     // private loadNameByStringMappings(arg0: Map$Entry<string, Tag>[], arg1: string): { [key: string]: string };
     mappedEnchantmentName(arg0: number): string;
     mappedEntityName(arg0: string): string;

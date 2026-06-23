@@ -11,5 +11,5 @@ export class MixinConfig extends Object {
     getEffectiveOptionForMixin(arg0: string): MixinOption;
     getOptionCount(): number;
     getOptionOverrideCount(): number;
-    // private readProperties(arg0: Properties): void;
+    // private readProperties(arg0: { [key: string]: any }): void;
 }

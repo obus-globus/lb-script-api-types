@@ -9,8 +9,8 @@ export class NbtPathArgument$NbtPath extends Object {
     static CODEC: Codec<NbtPathArgument$NbtPath>;
     static isTooDeep(paramtag: Tag, paramdepth: number): boolean;
     static of(paramstring: string): NbtPathArgument$NbtPath;
-    constructor(original: string, nodes: NbtPathArgument$Node[], nodeToOriginalPosition: Object2IntMap<NbtPathArgument$Node>)
-    // private nodeToOriginalPosition: Object2IntMap<NbtPathArgument$Node>;
+    constructor(original: string, nodes: NbtPathArgument$Node[], nodeToOriginalPosition: { [key: string]: any })
+    // private nodeToOriginalPosition: { [key: string]: any };
     // private nodes: NbtPathArgument$Node[];
     // private original: string;
     asString(): string;

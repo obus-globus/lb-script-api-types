@@ -20,10 +20,10 @@ export class StructureCheck extends Object {
     // private biomeSource: BiomeSource;
     // private chunkGenerator: ChunkGenerator;
     // private dimension: ResourceKey<Level>;
-    // private featureChecks: Map<Structure, Long2BooleanMap>;
+    // private featureChecks: Map<Structure, { [key: string]: any }>;
     // private fixerUpper: DataFixer;
     // private heightAccessor: LevelHeightAccessor;
-    // private loadedChunks: Long2ObjectMap<Object2IntMap<Structure>>;
+    // private loadedChunks: { [key: string]: any };
     // private randomState: RandomState;
     // private registryAccess: RegistryAccess;
     // private seed: number;
@@ -31,10 +31,10 @@ export class StructureCheck extends Object {
     // private structureTemplateManager: StructureTemplateManager;
     // private canCreateStructure(pos: ChunkPos, structure: Structure): boolean;
     checkStart(pos: ChunkPos, structure: Structure, placement: StructurePlacement, requireUnreferenced: boolean): StructureCheckResult;
-    // private checkStructureInfo(cachedResult: Object2IntMap<Structure>, structure: Structure, requireUnreferenced: boolean): StructureCheckResult;
+    // private checkStructureInfo(cachedResult: { [key: string]: any }, structure: Structure, requireUnreferenced: boolean): StructureCheckResult;
     incrementReference(chunkPos: ChunkPos, structure: Structure): void;
-    // private loadStructures(chunkTag: CompoundTag): Object2IntMap<Structure>;
+    // private loadStructures(chunkTag: CompoundTag): { [key: string]: any };
     onStructureLoad(pos: ChunkPos, starts: Map<Structure, StructureStart>): void;
-    // private storeFullResults(posKey: number, starts: Object2IntMap<Structure>): void;
+    // private storeFullResults(posKey: number, starts: { [key: string]: any }): void;
     // private tryLoadFromStorage(pos: ChunkPos, structure: Structure, requireUnreferenced: boolean, posKey: number): StructureCheckResult;
 }

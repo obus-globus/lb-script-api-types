@@ -2,6 +2,6 @@ import type { StorableObject } from '../../../../../../../com/viaversion/viavers
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PlayerNameTracker extends Object implements StorableObject {
     constructor()
-    names: Int2ObjectMap<string>;
+    names: { [key: string]: any };
     onRemove(): void;
 }

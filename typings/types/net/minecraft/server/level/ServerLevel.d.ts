@@ -2,6 +2,7 @@ import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Writer } from '../../../../java/io/Writer.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
@@ -148,7 +149,7 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     // private customSpawners: CustomSpawner[];
     // private debugSynchronizers: LevelDebugSynchronizers;
     readonly dragonFight: EnderDragonFight;
-    // private dragonParts: Int2ObjectMap<EnderDragonPart>;
+    // private dragonParts: { [key: string]: any };
     // private emptyTime: number;
     readonly entityManager: PersistentEntitySectionManager<Entity>;
     // private entityTickList: EntityTickList;

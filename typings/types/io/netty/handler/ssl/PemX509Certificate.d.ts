@@ -51,6 +51,6 @@ export class PemX509Certificate extends X509Certificate implements PemEncoded {
     touch(): PemX509Certificate;
     touch(arg0: Object): PemX509Certificate;
     verify(arg0: PublicKey): void;
-    verify(arg0: PublicKey, arg1: Provider): void;
+    verify(arg0: PublicKey, arg1: { [key: string]: any }): void;
     verify(arg0: PublicKey, arg1: string): void;
 }

@@ -1,8 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockColors } from '../../../../../net/minecraft/client/color/block/BlockColors.d.ts'
 import type { BlockStateModelLoader$LoadedModels } from '../../../../../net/minecraft/client/resources/model/BlockStateModelLoader$LoadedModels.d.ts'
-import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class ModelGroupCollector extends Object {
-    static build(paramblockColors: BlockColors, paraminput: BlockStateModelLoader$LoadedModels): Object2IntMap<BlockState>;
+    static build(paramblockColors: BlockColors, paraminput: BlockStateModelLoader$LoadedModels): { [key: string]: any };
     constructor()
 }

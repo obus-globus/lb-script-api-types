@@ -3,5 +3,5 @@ import type { PublicJwkBuilder } from '../../../io/jsonwebtoken/security/PublicJ
 import type { PrivateKey } from '../../../java/security/PrivateKey.d.ts'
 import type { PublicKey } from '../../../java/security/PublicKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface OctetPublicJwkBuilder<A extends PublicKey, B extends PrivateKey> extends PublicJwkBuilder<A, B, OctetPublicJwk<A>, Map<B, A>, OctetPrivateJwkBuilder<B, A>, OctetPublicJwkBuilder<A, B>>, Object{
+export interface OctetPublicJwkBuilder<A extends PublicKey, B extends PrivateKey> extends PublicJwkBuilder<A, B, { [key: string]: any }, Map<B, A>, OctetPrivateJwkBuilder<B, A>, OctetPublicJwkBuilder<A, B>>, Object{
 }

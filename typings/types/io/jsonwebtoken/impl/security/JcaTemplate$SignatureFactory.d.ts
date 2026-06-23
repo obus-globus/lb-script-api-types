@@ -2,5 +2,5 @@ import type { JcaTemplate$JcaInstanceFactory } from '../../../../io/jsonwebtoken
 import type { Signature } from '../../../../java/security/Signature.d.ts'
 export class JcaTemplate$SignatureFactory extends JcaTemplate$JcaInstanceFactory<Signature> {
     constructor()
-    doGet(arg0: string, arg1: Provider): Signature;
+    doGet(arg0: string, arg1: { [key: string]: any }): Signature;
 }

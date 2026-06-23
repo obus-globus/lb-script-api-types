@@ -1,4 +1,5 @@
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Detector } from '../../../../org/apache/tika/detect/Detector.d.ts'
 import type { Metadata } from '../../../../org/apache/tika/metadata/Metadata.d.ts'

@@ -5,6 +5,7 @@ import type { TruffleInstrument$Env } from '../../../../../com/oracle/truffle/ap
 import type { LanguageInfo } from '../../../../../com/oracle/truffle/api/nodes/LanguageInfo.d.ts'
 import type { Source } from '../../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Future } from '../../../../../java/util/concurrent/Future.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'

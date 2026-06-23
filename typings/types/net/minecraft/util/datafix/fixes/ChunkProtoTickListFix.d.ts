@@ -15,5 +15,5 @@ export class ChunkProtoTickListFix extends DataFix {
     constructor(outputSchema: Schema)
     // private createTick(tag: Dynamic<Object>, container: () => ChunkProtoTickListFix$PoorMansPalettedContainer, sectionX: number, sectionY: number, sectionZ: number, pos: number, typeGetter: (param0: Dynamic<Object>) => string): Dynamic<Object>;
     makeRule(): TypeRewriteRule;
-    // private makeTickList(tag: Dynamic<Object>, palettedContainers: Int2ObjectMap<() => ChunkProtoTickListFix$PoorMansPalettedContainer>, sectionMinY: number, sectionX: number, sectionZ: number, protoTickListTag: string, typeGetter: (param0: Dynamic<Object>) => string): Dynamic<Object>;
+    // private makeTickList(tag: Dynamic<Object>, palettedContainers: { [key: string]: any }, sectionMinY: number, sectionX: number, sectionZ: number, protoTickListTag: string, typeGetter: (param0: Dynamic<Object>) => string): Dynamic<Object>;
 }

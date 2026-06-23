@@ -5,10 +5,10 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PacketTypeMapMap<P extends PacketType> extends Object implements PacketTypeMap<P> {
     static of(paramarg0: Class<Object>): PacketTypeMap<PacketType>;
     static of(paramarg0: { [key: string]: PacketType | null }, paramarg1: Object | null): PacketTypeMap<PacketType>;
-    static of(paramarg0: { [key: string]: PacketType | null }, paramarg1: Int2ObjectMap<PacketType>): PacketTypeMap<PacketType>;
+    static of(paramarg0: { [key: string]: PacketType | null }, paramarg1: { [key: string]: any }): PacketTypeMap<PacketType>;
     static ofUnsequenced(paramarg0: Class<Object>): PacketTypeMap<PacketType>;
-    constructor(arg0: { [key: string]: P }, arg1: Int2ObjectMap<P>)
-    // private packetsById: Int2ObjectMap<P>;
+    constructor(arg0: { [key: string]: P }, arg1: { [key: string]: any })
+    // private packetsById: { [key: string]: any };
     // private packetsByName: { [key: string]: P };
     typeById(arg0: number): P;
     typeByName(arg0: string): P;

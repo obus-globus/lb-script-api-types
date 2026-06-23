@@ -1,5 +1,6 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../../java/lang/ClassLoader.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Manifest } from '../../../../../../java/util/jar/Manifest.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface KnotClassLoaderInterface extends Object{

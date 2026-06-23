@@ -26,7 +26,7 @@ export class TlbImp extends Object implements TlbConst {
     static logInfo(paramarg0: string): void;
     static main(paramarg0: (Object | null)[]): void;
     constructor(arg0: string[])
-    // private cmdlineArgs: TlbCmdlineArgs;
+    // private cmdlineArgs: { [key: string]: any };
     // private comRootDir: File;
     // private outputDir: File;
     // private typeLibUtil: TypeLibUtil;

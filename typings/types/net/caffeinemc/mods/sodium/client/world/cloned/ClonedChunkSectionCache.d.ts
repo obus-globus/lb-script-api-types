@@ -4,7 +4,7 @@ import type { Level } from '../../../../../../../net/minecraft/world/level/Level
 export class ClonedChunkSectionCache extends Object {
     constructor(arg0: Level)
     // private level: Level;
-    // private positionToEntry: Long2ReferenceLinkedOpenHashMap<ClonedChunkSection>;
+    // private positionToEntry: { [key: string]: any };
     // private time: number;
     acquire(arg0: number, arg1: number, arg2: number): ClonedChunkSection;
     cleanup(): void;

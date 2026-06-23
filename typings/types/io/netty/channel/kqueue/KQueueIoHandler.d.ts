@@ -27,7 +27,7 @@ export class KQueueIoHandler extends Object implements IoHandler {
     // private nativeArrays: NativeArrays;
     // private nextId: number;
     // private numChannels: number;
-    // private registrations: LongObjectMap<KQueueIoHandler$DefaultKqueueIoRegistration>;
+    // private registrations: { [key: string]: any };
     // private selectNowSupplier: IntSupplier;
     // private selectStrategy: SelectStrategy;
     // private wakenUp: number;

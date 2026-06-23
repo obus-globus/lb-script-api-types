@@ -12,18 +12,18 @@ export class SSLContext extends Object {
     static getDefault(): SSLContext;
     static getInstance(paramarg0: string): SSLContext;
     static getInstance(paramarg0: string, paramarg1: string): SSLContext;
-    static getInstance(paramarg0: string, paramarg1: Provider): SSLContext;
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): SSLContext;
     static setDefault(paramarg0: SSLContext): void;
-    constructor(arg0: SSLContextSpi, arg1: Provider, arg2: string)
+    constructor(arg0: SSLContextSpi, arg1: { [key: string]: any }, arg2: string)
     // private contextSpi: SSLContextSpi;
     readonly protocol: string;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     createSSLEngine(): SSLEngine;
     createSSLEngine(arg0: string, arg1: number): SSLEngine;
     getClientSessionContext(): SSLSessionContext;
     getDefaultSSLParameters(): SSLParameters;
     getProtocol(): string;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     getServerSessionContext(): SSLSessionContext;
     getServerSocketFactory(): SSLServerSocketFactory;
     getSocketFactory(): SSLSocketFactory;

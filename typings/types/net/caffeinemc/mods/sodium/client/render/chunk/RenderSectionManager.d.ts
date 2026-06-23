@@ -59,7 +59,7 @@ export class RenderSectionManager extends Object {
     // private renderListStateIsShadow: boolean;
     readonly renderLists: SortedRenderLists;
     // private renderableSectionTree: RemovableMultiForest;
-    // private sectionByPosition: Long2ReferenceMap<RenderSection>;
+    // private sectionByPosition: { [key: string]: any };
     // private sectionCache: ClonedChunkSectionCache;
     // private sectionCollector: SectionCollector;
     readonly sectionsWithGlobalEntities: RenderSection[];

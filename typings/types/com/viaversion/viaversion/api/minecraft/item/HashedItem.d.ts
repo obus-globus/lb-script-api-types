@@ -3,7 +3,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface HashedItem extends ItemBase, Object{
     amount(): number;
     copy(): HashedItem;
-    dataHashesById(): Int2IntMap;
+    dataHashesById(): { [key: string]: any };
     identifier(): number;
     isEmpty(): boolean;
     removedDataIds(): (Object | null)[];

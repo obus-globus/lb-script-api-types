@@ -55,5 +55,5 @@ export class JarArchiveEntry extends ZipArchiveEntry {
     constructor(arg0: string)
     constructor(arg0: ZipArchiveEntry)
     getCertificates(): Certificate[];
-    getManifestAttributes(): Attributes;
+    getManifestAttributes(): { [key: string]: any };
 }

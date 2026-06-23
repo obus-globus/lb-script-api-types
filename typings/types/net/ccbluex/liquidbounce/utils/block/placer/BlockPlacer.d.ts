@@ -31,7 +31,7 @@ export class BlockPlacer extends ValueGroup implements EventListener {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt#L137 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/BlockPlacer.kt:137}
      */
-    readonly blocks: Long2BooleanLinkedOpenHashMap;
+    readonly blocks: { [key: string]: any };
     /**
      * Construct a center hit result when the raytrace result is invalid.
      * This can make the module rotations wrong as well as place a bit outside the range,

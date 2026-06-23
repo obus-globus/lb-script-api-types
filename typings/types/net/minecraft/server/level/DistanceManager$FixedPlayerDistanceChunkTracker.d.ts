@@ -2,7 +2,7 @@ import type { ChunkTracker } from '../../../../net/minecraft/server/level/ChunkT
 export class DistanceManager$FixedPlayerDistanceChunkTracker extends ChunkTracker {
     static SOURCE: number;
     constructor(null_: DistanceManager$FixedPlayerDistanceChunkTracker, maxDistance: number)
-    // private chunks: Long2ByteMap;
+    // private chunks: { [key: string]: any };
     // private maxDistance: number;
     getLevel(node: number): number;
     getLevelFromSource(to: number): number;

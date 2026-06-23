@@ -1,5 +1,6 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { CompressorOutputStream } from '../../../../../../org/apache/commons/compress/compressors/CompressorOutputStream.d.ts'
 import type { BZip2CompressorOutputStream$Data } from '../../../../../../org/apache/commons/compress/compressors/bzip2/BZip2CompressorOutputStream$Data.d.ts'
 import type { BZip2Constants } from '../../../../../../org/apache/commons/compress/compressors/bzip2/BZip2Constants.d.ts'

@@ -3,14 +3,14 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2FloatMaps extends Object {
-    static EMPTY_MAP: Double2FloatMaps$EmptyMap;
-    static fastForEach(paramarg0: Double2FloatMap, paramarg1: (param0: Object) => void): void;
-    static fastIterable(paramarg0: Double2FloatMap): Double2FloatMap$Entry[];
-    static fastIterator(paramarg0: Double2FloatMap): ObjectIterator<Double2FloatMap$Entry>;
-    static singleton(paramarg0: number, paramarg1: number): Double2FloatMap;
-    static singleton(paramarg0: number, paramarg1: number): Double2FloatMap;
-    static synchronize(paramarg0: Double2FloatMap): Double2FloatMap;
-    static synchronize(paramarg0: Double2FloatMap, paramarg1: Object): Double2FloatMap;
-    static unmodifiable(paramarg0: Double2FloatMap): Double2FloatMap;
+    static EMPTY_MAP: { [key: string]: any };
+    static fastForEach(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: { [key: string]: any }): Double2FloatMap$Entry[];
+    static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Double2FloatMap$Entry>;
+    static singleton(paramarg0: number, paramarg1: number): { [key: string]: any };
+    static singleton(paramarg0: number, paramarg1: number): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

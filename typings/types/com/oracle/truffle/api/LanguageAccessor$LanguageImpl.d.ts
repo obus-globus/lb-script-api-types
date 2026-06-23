@@ -24,6 +24,7 @@ import type { StackTraceElement } from '../../../../java/lang/StackTraceElement.
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
 import type { Charset } from '../../../../java/nio/charset/Charset.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
 import type { Level } from '../../../../java/util/logging/Level.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'

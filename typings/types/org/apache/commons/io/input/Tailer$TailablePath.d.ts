@@ -1,4 +1,5 @@
 import type { LinkOption } from '../../../../../java/nio/file/LinkOption.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { FileTime } from '../../../../../java/nio/file/attribute/FileTime.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Tailer$RandomAccessResourceBridge } from '../../../../../org/apache/commons/io/input/Tailer$RandomAccessResourceBridge.d.ts'

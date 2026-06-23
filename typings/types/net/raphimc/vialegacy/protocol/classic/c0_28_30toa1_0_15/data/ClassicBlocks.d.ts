@@ -1,4 +1,3 @@
-import type { IdAndData } from '../../../../../../../com/viaversion/viaversion/util/IdAndData.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ClassicBlocks extends Object {
     static AIR: number;
@@ -30,14 +29,14 @@ export class ClassicBlocks extends Object {
     static LIME_WOOL: number;
     static LOG: number;
     static MAGENTA_WOOL: number;
-    static MAPPING: Int2ObjectMap<IdAndData>;
+    static MAPPING: { [key: string]: any };
     static MOSSY_COBBLESTONE: number;
     static OBSIDIAN: number;
     static ORANGE_WOOL: number;
     static PINK_WOOL: number;
     static RED_MUSHROOM: number;
     static RED_WOOL: number;
-    static REVERSE_MAPPING: Object2IntMap<IdAndData>;
+    static REVERSE_MAPPING: { [key: string]: any };
     static ROSE: number;
     static SAND: number;
     static SAPLING: number;

@@ -7,11 +7,11 @@ export class JsonTreeMapDecoder extends JsonTreeDecoder {
     static Companion: CompositeDecoder$Companion;
     static DECODE_DONE: number;
     static UNKNOWN_NAME: number;
-    constructor(json: Json, value: JsonObject)
+    constructor(json: Json, value: { [key: string]: any })
     // private keys: string[];
     // private position: number;
     // private size: number;
-    readonly value: JsonObject;
+    readonly value: { [key: string]: any };
     protected currentElement(tag: string): JsonElement;
     decodeElementIndex(descriptor: SerialDescriptor): number;
     protected elementName(descriptor: SerialDescriptor, index: number): string;

@@ -45,7 +45,7 @@ export class Scoreboard extends Object {
     getTeamNames(): string[];
     getTrackedPlayers(): ScoreHolder[];
     listPlayerScores(objective: Objective): PlayerScoreEntry[];
-    listPlayerScores(player: ScoreHolder): Object2IntMap<Objective>;
+    listPlayerScores(player: ScoreHolder): { [key: string]: any };
     loadObjective(objective: Objective$Packed): void;
     loadPlayerScore(score: Scoreboard$PackedScore): void;
     loadPlayerTeam(packed: PlayerTeam$Packed): void;

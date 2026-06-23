@@ -3,5 +3,5 @@ import type { RsaPrivateJwkBuilder } from '../../../io/jsonwebtoken/security/Rsa
 import type { RSAPrivateKey } from '../../../java/security/interfaces/RSAPrivateKey.d.ts'
 import type { RSAPublicKey } from '../../../java/security/interfaces/RSAPublicKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export interface RsaPublicJwkBuilder extends PublicJwkBuilder<RSAPublicKey, RSAPrivateKey, RsaPublicJwk, RsaPrivateJwk, RsaPrivateJwkBuilder, RsaPublicJwkBuilder>, Object{
+export interface RsaPublicJwkBuilder extends PublicJwkBuilder<RSAPublicKey, RSAPrivateKey, { [key: string]: any }, { [key: string]: any }, RsaPrivateJwkBuilder, RsaPublicJwkBuilder>, Object{
 }

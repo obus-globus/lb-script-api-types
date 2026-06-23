@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Duration } from '../../../../../../java/time/Duration.d.ts'
 import type { Instant } from '../../../../../../java/time/Instant.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'

@@ -16,7 +16,7 @@ export class CustomAntiBotMode extends AntiBotMode {
     // private crittedSet: (Object | null)[];
     // private customConditions: CustomAntiBotMode$CustomConditions[];
     // private /*not mapped: */ getCustomConditions(): CustomAntiBotMode$CustomConditions[];
-    // private flyingSet: Int2IntOpenHashMap;
+    // private flyingSet: { [key: string]: any };
     // private hitSet: (Object | null)[];
     // private notAlwaysInRadiusSet: (Object | null)[];
     // private packetHandler: EventHook<PacketEvent>;

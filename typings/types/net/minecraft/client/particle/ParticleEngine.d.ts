@@ -21,7 +21,7 @@ export class ParticleEngine extends Object implements ParticleEngineAccessor {
     // private particlesToAdd: Particle[];
     // private random: RandomSource;
     resourceManager: ParticleResources;
-    // private trackedParticleCounts: Object2IntOpenHashMap<ParticleLimit>;
+    // private trackedParticleCounts: { [key: string]: any };
     // private trackingEmitters: TrackingEmitter[];
     add(p: Particle): void;
     clearParticles(): void;

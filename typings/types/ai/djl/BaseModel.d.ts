@@ -11,6 +11,7 @@ import type { Translator } from '../../ai/djl/translate/Translator.d.ts'
 import type { Pair } from '../../ai/djl/util/Pair.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { URL } from '../../java/net/URL.d.ts'
+import type { Path } from '../../java/nio/file/Path.d.ts'
 import type { Function } from '../../java/util/function/Function.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export abstract class BaseModel extends Object implements Model {

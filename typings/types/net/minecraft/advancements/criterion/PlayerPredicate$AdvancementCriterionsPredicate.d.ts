@@ -6,9 +6,9 @@ import type { PlayerPredicate$AdvancementPredicate } from '../../../../net/minec
 export class PlayerPredicate$AdvancementCriterionsPredicate extends Record implements PlayerPredicate$AdvancementPredicate {
     static CODEC: Codec<PlayerPredicate$AdvancementCriterionsPredicate>;
     static CODEC: Codec<PlayerPredicate$AdvancementPredicate>;
-    private constructor(criterions: Object2BooleanMap<string>)
-    // private criterions: Object2BooleanMap<string>;
-    criterions(): Object2BooleanMap<string>;
+    private constructor(criterions: { [key: string]: any })
+    // private criterions: { [key: string]: any };
+    criterions(): { [key: string]: any };
     equals(o: Object | null): boolean;
     hashCode(): number;
     test(progress: AdvancementProgress): boolean;

@@ -3,6 +3,7 @@ import type { CrossFrameResourcePool } from '../../../../com/mojang/blaze3d/reso
 import type { GpuTextureView } from '../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FogParameters } from '../../../../net/caffeinemc/mods/sodium/client/util/FogParameters.d.ts'

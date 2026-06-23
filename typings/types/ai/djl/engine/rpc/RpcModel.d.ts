@@ -1,5 +1,6 @@
 import type { BaseModel } from '../../../../ai/djl/BaseModel.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RpcModel extends BaseModel {
     constructor(arg0: string)

@@ -3,9 +3,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 export class EntityTickList extends Object {
     constructor()
-    // private active: Int2ObjectMap<Entity>;
-    // private iterated: Int2ObjectMap<Entity>;
-    // private passive: Int2ObjectMap<Entity>;
+    // private active: { [key: string]: any };
+    // private iterated: { [key: string]: any };
+    // private passive: { [key: string]: any };
     add(entity: Entity): void;
     contains(entity: Entity): boolean;
     // private ensureActiveIsNotIterated(): void;

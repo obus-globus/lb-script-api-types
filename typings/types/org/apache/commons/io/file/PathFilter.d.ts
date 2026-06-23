@@ -1,4 +1,5 @@
 import type { FileVisitResult } from '../../../../../java/nio/file/FileVisitResult.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { BasicFileAttributes } from '../../../../../java/nio/file/attribute/BasicFileAttributes.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface PathFilter extends Object{

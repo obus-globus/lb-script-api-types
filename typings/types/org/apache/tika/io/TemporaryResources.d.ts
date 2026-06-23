@@ -1,6 +1,7 @@
 import type { Closeable } from '../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Metadata } from '../../../../org/apache/tika/metadata/Metadata.d.ts'
 export class TemporaryResources extends Object implements Closeable {

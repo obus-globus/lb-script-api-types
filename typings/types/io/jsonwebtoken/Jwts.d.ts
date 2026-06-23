@@ -5,7 +5,7 @@ import type { Jwts$HeaderBuilder } from '../../io/jsonwebtoken/Jwts$HeaderBuilde
 import type { Object } from '../../java/lang/Object.d.ts'
 export class Jwts extends Object {
     static builder(): JwtBuilder;
-    static claims(paramarg0: { [key: string]: Object }): Claims;
+    static claims(paramarg0: { [key: string]: Object }): { [key: string]: any };
     static claims(): ClaimsBuilder;
     static header(): Jwts$HeaderBuilder;
     static parser(): JwtParserBuilder;

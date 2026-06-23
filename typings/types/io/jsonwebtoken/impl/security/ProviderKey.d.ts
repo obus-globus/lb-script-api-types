@@ -4,13 +4,13 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ProviderKey<T extends Key> extends Object implements KeySupplier<T>, Key {
     static serialVersionUID: number;
     static getKey(paramarg0: Key | null): Key | null;
-    static getProvider(paramarg0: Key, paramarg1: Provider): Provider;
-    constructor(arg0: Provider, arg1: T)
+    static getProvider(paramarg0: Key, paramarg1: { [key: string]: any }): { [key: string]: any };
+    constructor(arg0: { [key: string]: any }, arg1: T)
     readonly key: T;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     getAlgorithm(): string;
     getEncoded(): number[];
     getFormat(): string;
     getKey(): T;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
 }

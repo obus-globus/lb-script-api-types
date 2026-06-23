@@ -1,6 +1,7 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { LinkOption } from '../../../../../../java/nio/file/LinkOption.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { ArchiveOutputStream } from '../../../../../../org/apache/commons/compress/archivers/ArchiveOutputStream.d.ts'
 import type { ArArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/ar/ArArchiveEntry.d.ts'
 export class ArArchiveOutputStream extends ArchiveOutputStream<ArArchiveEntry> {

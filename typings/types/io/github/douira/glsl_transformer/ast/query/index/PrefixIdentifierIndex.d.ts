@@ -4,7 +4,7 @@ import type { PrefixQueryable } from '../../../../../../../io/github/douira/glsl
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-export class PrefixIdentifierIndex<S extends Identifier[], I extends PatriciaTrie<S>> extends IdentifierIndex<S, I> implements PrefixQueryable<S, Identifier> {
+export class PrefixIdentifierIndex<S extends Identifier[], I extends { [key: string]: any }> extends IdentifierIndex<S, I> implements PrefixQueryable<S, Identifier> {
     static withOnlyExact(paramarg0: () => Object | null): IdentifierIndex<Object, { [key: string]: Object | null }>;
     static withOnlyExact(): IdentifierIndex<Identifier[], { [key: string]: Identifier[] }>;
     static withOnlyExactOrdered(): IdentifierIndex<Identifier[], { [key: string]: Identifier[] }>;

@@ -1,3 +1,4 @@
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { ModContainer } from '../../../../net/fabricmc/loader/ModContainer.d.ts'
 import type { ModContainer as ModContainer_2 } from '../../../../net/fabricmc/loader/api/ModContainer.d.ts'

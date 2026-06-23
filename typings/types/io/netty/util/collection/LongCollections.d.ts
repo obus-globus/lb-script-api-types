@@ -1,6 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LongCollections extends Object {
-    static emptyMap(): LongObjectMap<Object>;
-    static unmodifiableMap(paramarg0: LongObjectMap<Object>): LongObjectMap<Object>;
+    static emptyMap(): { [key: string]: any };
+    static unmodifiableMap(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

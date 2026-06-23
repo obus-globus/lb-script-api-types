@@ -9,7 +9,7 @@ export class CustomUniforms extends Object implements FunctionContext {
     private constructor(arg0: CustomUniformFixedInputUniformsHolder, arg1: { [key: string]: CustomUniforms$Builder$Variable })
     // private dependsOn: Map<CachedUniform, CachedUniform[]>;
     // private inputHolder: CustomUniformFixedInputUniformsHolder;
-    // private locationMap: Map<Object, Object2IntMap<CachedUniform>>;
+    // private locationMap: Map<Object, { [key: string]: any }>;
     // private uniformOrder: CachedUniform[];
     // private variables: { [key: string]: CachedUniform };
     // private variablesExpressions: { [key: string]: Expression };

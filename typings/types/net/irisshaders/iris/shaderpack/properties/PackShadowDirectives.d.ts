@@ -2,7 +2,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { OptionalBoolean } from '../../../../../net/irisshaders/iris/helpers/OptionalBoolean.d.ts'
 import type { DirectiveHolder } from '../../../../../net/irisshaders/iris/shaderpack/parsing/DirectiveHolder.d.ts'
 import type { PackShadowDirectives$DepthSamplingSettings } from '../../../../../net/irisshaders/iris/shaderpack/properties/PackShadowDirectives$DepthSamplingSettings.d.ts'
-import type { PackShadowDirectives$SamplingSettings } from '../../../../../net/irisshaders/iris/shaderpack/properties/PackShadowDirectives$SamplingSettings.d.ts'
 import type { ShaderProperties } from '../../../../../net/irisshaders/iris/shaderpack/properties/ShaderProperties.d.ts'
 import type { ShadowCullState } from '../../../../../net/irisshaders/iris/shaderpack/properties/ShadowCullState.d.ts'
 export class PackShadowDirectives extends Object {
@@ -10,7 +9,7 @@ export class PackShadowDirectives extends Object {
     static MAX_SHADOW_COLOR_BUFFERS_OF: number;
     constructor(arg0: PackShadowDirectives)
     constructor(arg0: ShaderProperties)
-    readonly colorSamplingSettings: Int2ObjectMap<PackShadowDirectives$SamplingSettings>;
+    readonly colorSamplingSettings: { [key: string]: any };
     readonly cullingState: ShadowCullState;
     readonly depthSamplingSettings: PackShadowDirectives$DepthSamplingSettings[];
     // private dhShadowEnabled: OptionalBoolean;
@@ -31,9 +30,9 @@ export class PackShadowDirectives extends Object {
     // private shouldRenderTerrain: boolean;
     // private shouldRenderTranslucent: boolean;
     readonly voxelDistance: number;
-    // private acceptBufferDirectives(arg0: DirectiveHolder, arg1: Int2ObjectMap<PackShadowDirectives$SamplingSettings>): void;
+    // private acceptBufferDirectives(arg0: DirectiveHolder, arg1: { [key: string]: any }): void;
     acceptDirectives(arg0: DirectiveHolder): void;
-    getColorSamplingSettings(): Int2ObjectMap<PackShadowDirectives$SamplingSettings>;
+    getColorSamplingSettings(): { [key: string]: any };
     getCullingState(): ShadowCullState;
     getDepthSamplingSettings(): PackShadowDirectives$DepthSamplingSettings[];
     getDistance(): number;

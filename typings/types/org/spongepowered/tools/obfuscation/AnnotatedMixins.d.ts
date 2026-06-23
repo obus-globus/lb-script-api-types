@@ -31,8 +31,8 @@ export class AnnotatedMixins extends Object implements ITokenProvider, IJavadocP
     // private mixinsForPass: AnnotatedMixin[];
     // private obf: IObfuscationManager;
     // private processingEnv: ProcessingEnvironment;
-    readonly properties: Properties;
-    // private targets: TargetMap;
+    readonly properties: { [key: string]: any };
+    // private targets: { [key: string]: any };
     // private tokenCache: { [key: string]: number };
     // private validators: IMixinValidator[];
     // private checkPluginVersion(arg0: string): string;
@@ -48,7 +48,7 @@ export class AnnotatedMixins extends Object implements ITokenProvider, IJavadocP
     getOption(arg0: string, arg1: string): string;
     getOptions(arg0: string): string[];
     getProcessingEnvironment(): ProcessingEnvironment;
-    getProperties(): Properties;
+    getProperties(): { [key: string]: any };
     getSimulatedHandle(arg0: string, arg1: TypeMirror): TypeHandle;
     getToken(arg0: string): number;
     getTokenProvider(): ITokenProvider;
@@ -56,7 +56,7 @@ export class AnnotatedMixins extends Object implements ITokenProvider, IJavadocP
     getTypeHandle(arg0: Object): TypeHandle;
     getTypeHandle(arg0: string): TypeHandle;
     getTypeProvider(): ITypeHandleProvider;
-    initTargetMap(): TargetMap;
+    initTargetMap(): { [key: string]: any };
     // private initTokenCache(arg0: string): void;
     onPassCompleted(arg0: RoundEnvironment): void;
     onPassStarted(): void;

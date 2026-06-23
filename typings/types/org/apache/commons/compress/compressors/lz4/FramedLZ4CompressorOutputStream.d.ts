@@ -1,5 +1,6 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { XXHash32 } from '../../../../../../org/apache/commons/codec/digest/XXHash32.d.ts'
 import type { CompressorOutputStream } from '../../../../../../org/apache/commons/compress/compressors/CompressorOutputStream.d.ts'
 import type { FramedLZ4CompressorOutputStream$Parameters } from '../../../../../../org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorOutputStream$Parameters.d.ts'

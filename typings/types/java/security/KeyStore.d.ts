@@ -18,11 +18,11 @@ export class KeyStore extends Object {
     static getInstance(paramarg0: File, paramarg1: KeyStore$LoadStoreParameter): KeyStore;
     static getInstance(paramarg0: string): KeyStore;
     static getInstance(paramarg0: string, paramarg1: string): KeyStore;
-    static getInstance(paramarg0: string, paramarg1: Provider): KeyStore;
-    constructor(arg0: KeyStoreSpi, arg1: Provider, arg2: string)
+    static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyStore;
+    constructor(arg0: KeyStoreSpi, arg1: { [key: string]: any }, arg2: string)
     // private initialized: boolean;
     // private keyStoreSpi: KeyStoreSpi;
-    readonly provider: Provider;
+    readonly provider: { [key: string]: any };
     readonly type: string;
     aliases(): Enumeration<string>;
     containsAlias(arg0: string): boolean;
@@ -35,7 +35,7 @@ export class KeyStore extends Object {
     getCreationDate(arg0: string): Date;
     getEntry(arg0: string, arg1: KeyStore$ProtectionParameter): KeyStore$Entry;
     getKey(arg0: string, arg1: string[]): Key;
-    getProvider(): Provider;
+    getProvider(): { [key: string]: any };
     // private getProviderName(): string;
     getType(): string;
     isCertificateEntry(arg0: string): boolean;

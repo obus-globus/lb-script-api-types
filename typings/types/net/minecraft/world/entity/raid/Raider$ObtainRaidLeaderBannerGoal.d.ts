@@ -7,7 +7,7 @@ export class Raider$ObtainRaidLeaderBannerGoal<T extends Raider> extends Goal {
     // private mob: T;
     // private pathToBanner: Path;
     // private pursuedBannerItemEntity: ItemEntity;
-    // private unreachableBannerCache: Int2LongOpenHashMap;
+    // private unreachableBannerCache: { [key: string]: any };
     canContinueToUse(): boolean;
     canUse(): boolean;
     // private cannotPickUpBanner(): boolean;

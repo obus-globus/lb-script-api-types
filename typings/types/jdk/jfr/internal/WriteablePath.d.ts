@@ -1,3 +1,4 @@
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class WriteablePath extends Object {
     constructor(arg0: Path[])

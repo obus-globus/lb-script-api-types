@@ -3,6 +3,7 @@ import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { RandomAccessFile } from '../../../../../java/io/RandomAccessFile.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { OpenOption } from '../../../../../java/nio/file/OpenOption.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { MessageDigest } from '../../../../../java/security/MessageDigest.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DigestUtils extends Object {

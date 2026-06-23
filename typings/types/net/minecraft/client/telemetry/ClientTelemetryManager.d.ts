@@ -1,5 +1,6 @@
 import type { UserApiService } from '../../../../com/mojang/authlib/minecraft/UserApiService.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'

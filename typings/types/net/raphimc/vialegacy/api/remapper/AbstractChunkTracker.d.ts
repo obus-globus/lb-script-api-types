@@ -8,7 +8,7 @@ import type { ChunkCoord } from '../../../../../net/raphimc/vialegacy/api/model/
 export abstract class AbstractChunkTracker extends Object implements StorableObject {
     constructor(arg0: number[])
     // private chunks: Map<ChunkCoord, Chunk>;
-    // private replacements: Int2IntMap;
+    // private replacements: { [key: string]: any };
     // private toTrack: (Object | null)[];
     // private trackAll: boolean;
     clear(): void;

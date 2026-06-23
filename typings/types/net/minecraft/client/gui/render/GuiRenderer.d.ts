@@ -66,7 +66,7 @@ export class GuiRenderer extends Object implements AutoCloseable, GuiRendererExt
     // private vertexBuffers: Map<VertexFormat, MappableRingBuffer>;
     // private addElementToMesh(elementState: GuiElementRenderState): void;
     // private addElementsToMeshes(range: GuiRenderState$TraverseRange): void;
-    // private calculatedRequiredVertexBufferSizes(): Object2IntMap<VertexFormat>;
+    // private calculatedRequiredVertexBufferSizes(): { [key: string]: any };
     // private clearUnusedOversizedItemRenderers(): void;
     close(): void;
     // private draw(fogBuffer: GpuBufferSlice): void;

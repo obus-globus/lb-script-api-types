@@ -1,5 +1,6 @@
 import type { FileSystems$DeniedIOFileSystem } from '../../../../com/oracle/truffle/polyglot/FileSystems$DeniedIOFileSystem.d.ts'
 import type { LinkOption } from '../../../../java/nio/file/LinkOption.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { AbstractPolyglotImpl } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl.d.ts'
 import type { FileSystem } from '../../../../org/graalvm/polyglot/io/FileSystem.d.ts'
 export class FileSystems$PathOperationsOnlyFileSystem extends FileSystems$DeniedIOFileSystem {

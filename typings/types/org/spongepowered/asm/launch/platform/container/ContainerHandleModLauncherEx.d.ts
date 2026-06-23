@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 import type { ContainerHandleModLauncher } from '../../../../../../org/spongepowered/asm/launch/platform/container/ContainerHandleModLauncher.d.ts'

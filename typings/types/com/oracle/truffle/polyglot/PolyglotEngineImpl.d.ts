@@ -41,6 +41,7 @@ import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Reference } from '../../../../java/lang/ref/Reference.d.ts'
 import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { ZoneId } from '../../../../java/time/ZoneId.d.ts'
 import type { AtomicBoolean } from '../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { AtomicReference } from '../../../../java/util/concurrent/atomic/AtomicReference.d.ts'

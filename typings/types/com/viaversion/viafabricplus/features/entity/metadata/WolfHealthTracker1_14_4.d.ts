@@ -4,7 +4,7 @@ import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/
 export class WolfHealthTracker1_14_4 extends Object implements StorableObject {
     static getWolfHealth(paramarg0: LivingEntity): number;
     constructor()
-    // private healthDataMap: Int2FloatMap;
+    // private healthDataMap: { [key: string]: any };
     getWolfHealth(arg0: number, arg1: number): number;
     onRemove(): void;
     setWolfHealth(arg0: number, arg1: number): void;

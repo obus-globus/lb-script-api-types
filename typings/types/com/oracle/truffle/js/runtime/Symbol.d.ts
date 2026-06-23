@@ -23,13 +23,13 @@ export class Symbol extends Object implements TruffleObject {
     static createRegistered(paramdescription: TruffleString): Symbol;
     private constructor(description: TruffleString, registered: boolean, isPrivate: boolean)
     readonly description: TruffleString;
-    readonly invertedMap: Map<WeakMap, Object>;
+    readonly invertedMap: Map<{ [key: string]: any }, Object>;
     // private isPrivate: boolean;
     readonly registered: boolean;
     clearInvertedMap(): void;
     equals(obj: Object | null): boolean;
     getDescription(): Object;
-    getInvertedMap(): Map<WeakMap, Object>;
+    getInvertedMap(): Map<{ [key: string]: any }, Object>;
     getLanguage(): Class<TruffleLanguage<Object>>;
     getMetaObject(): Object;
     getName(): TruffleString;
@@ -39,7 +39,7 @@ export class Symbol extends Object implements TruffleObject {
     identityHashCode(): number;
     isPrivate(): boolean;
     isRegistered(): boolean;
-    setInvertedMap(invMap: Map<WeakMap, Object>): void;
+    setInvertedMap(invMap: Map<{ [key: string]: any }, Object>): void;
     toDisplayString(allowSideEffects: boolean): Object;
     toFunctionNameString(): TruffleString;
     toString(): string;

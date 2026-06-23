@@ -1,4 +1,5 @@
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'

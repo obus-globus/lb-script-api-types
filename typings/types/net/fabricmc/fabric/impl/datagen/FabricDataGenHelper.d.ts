@@ -1,4 +1,5 @@
 import type { JsonObject } from '../../../../../com/google/gson/JsonObject.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FabricDataGenHelper extends Object {
     static ENABLED: boolean;

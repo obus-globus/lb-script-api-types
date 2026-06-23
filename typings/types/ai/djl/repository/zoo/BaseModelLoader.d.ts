@@ -8,6 +8,7 @@ import type { ModelLoader } from '../../../../ai/djl/repository/zoo/ModelLoader.
 import type { ZooModel } from '../../../../ai/djl/repository/zoo/ZooModel.d.ts'
 import type { TranslatorFactory } from '../../../../ai/djl/translate/TranslatorFactory.d.ts'
 import type { Progress } from '../../../../ai/djl/util/Progress.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BaseModelLoader extends Object implements ModelLoader {
     constructor(arg0: MRL)

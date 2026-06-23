@@ -10,7 +10,7 @@ export class FuelValues$Builder extends Object {
     constructor(registries: HolderLookup$Provider, enabledFeatures: FeatureFlagSet)
     // private enabledFeatures: FeatureFlagSet;
     // private items: HolderLookup<Item>;
-    // private values: Object2IntSortedMap<Item>;
+    // private values: { [key: string]: any };
     add(tag: TagKey<Item>, time: number): FuelValues$Builder;
     add(itemLike: ItemLike, time: number): FuelValues$Builder;
     build(): FuelValues;

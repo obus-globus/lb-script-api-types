@@ -4,6 +4,7 @@ import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { BufferedImage } from '../../../../java/awt/image/BufferedImage.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BufferedImageFactory extends ImageFactory {
     static getInstance(): ImageFactory;

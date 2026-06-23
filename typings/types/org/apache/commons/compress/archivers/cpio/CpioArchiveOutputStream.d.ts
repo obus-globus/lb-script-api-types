@@ -1,6 +1,7 @@
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { LinkOption } from '../../../../../../java/nio/file/LinkOption.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { ArchiveOutputStream } from '../../../../../../org/apache/commons/compress/archivers/ArchiveOutputStream.d.ts'
 import type { CpioArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.d.ts'
 import type { CpioConstants } from '../../../../../../org/apache/commons/compress/archivers/cpio/CpioConstants.d.ts'

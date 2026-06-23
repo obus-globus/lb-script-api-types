@@ -8,7 +8,7 @@ export class ChunkPalettedStorageFix$Section extends Object {
     // private palette: Dynamic<Object>[];
     // private section: Dynamic<Object>;
     // private seen: Dynamic<Object>[];
-    // private toFix: Int2ObjectMap<(Object | null)[]>;
+    // private toFix: { [key: string]: any };
     // private update: (Object | null)[];
     y: number;
     // private addFix(id: number, position: number): void;

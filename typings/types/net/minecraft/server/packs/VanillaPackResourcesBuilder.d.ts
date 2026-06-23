@@ -1,4 +1,5 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { PackLocationInfo } from '../../../../net/minecraft/server/packs/PackLocationInfo.d.ts'

@@ -6,7 +6,7 @@ import type { EntityAccess } from '../../../../../net/minecraft/world/level/enti
 import type { EntityTypeTest } from '../../../../../net/minecraft/world/level/entity/EntityTypeTest.d.ts'
 export class EntityLookup<T extends EntityAccess> extends Object {
     constructor()
-    // private byId: Int2ObjectMap<T>;
+    // private byId: { [key: string]: any };
     // private byUuid: Map<UUID, T>;
     add(entity: T): void;
     count(): number;

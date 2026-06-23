@@ -3,7 +3,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AlphaTest } from '../../../../../net/irisshaders/iris/gl/blending/AlphaTest.d.ts'
 import type { BlendModeOverride } from '../../../../../net/irisshaders/iris/gl/blending/BlendModeOverride.d.ts'
 import type { BufferBlendInformation } from '../../../../../net/irisshaders/iris/gl/blending/BufferBlendInformation.d.ts'
-import type { ShaderStorageInfo } from '../../../../../net/irisshaders/iris/gl/buffer/ShaderStorageInfo.d.ts'
 import type { ViewportData } from '../../../../../net/irisshaders/iris/gl/framebuffer/ViewportData.d.ts'
 import type { TextureDefinition } from '../../../../../net/irisshaders/iris/gl/texture/TextureDefinition.d.ts'
 import type { TextureScaleOverride } from '../../../../../net/irisshaders/iris/gl/texture/TextureScaleOverride.d.ts'
@@ -32,7 +31,7 @@ export class ShaderProperties extends Object {
     readonly blendModeOverrides: { [key: string]: BlendModeOverride };
     // private breaksAnisotropy: OptionalBoolean;
     readonly bufferBlendOverrides: { [key: string]: BufferBlendInformation[] };
-    readonly bufferObjects: Int2ObjectArrayMap<ShaderStorageInfo>;
+    readonly bufferObjects: { [key: string]: any };
     readonly cloudSetting: CloudSetting;
     readonly concurrentCompute: OptionalBoolean;
     readonly conditionallyEnabledPrograms: { [key: string]: string };
@@ -43,7 +42,7 @@ export class ShaderProperties extends Object {
     // private dhCloudSetting: CloudSetting;
     readonly dhShadowEnabled: OptionalBoolean;
     readonly dynamicHandLight: OptionalBoolean;
-    readonly explicitFlips: { [key: string]: Object2BooleanMap<string> };
+    readonly explicitFlips: { [key: string]: { [key: string]: any } };
     readonly fallbackTex: number;
     readonly frustumCulling: OptionalBoolean;
     readonly indirectPointers: { [key: string]: IndirectPointer };
@@ -97,7 +96,7 @@ export class ShaderProperties extends Object {
     getBeaconBeamDepth(): OptionalBoolean;
     getBlendModeOverrides(): { [key: string]: BlendModeOverride };
     getBufferBlendOverrides(): { [key: string]: BufferBlendInformation[] };
-    getBufferObjects(): Int2ObjectArrayMap<ShaderStorageInfo>;
+    getBufferObjects(): { [key: string]: any };
     getCloudSetting(): CloudSetting;
     getConcurrentCompute(): OptionalBoolean;
     getConditionallyEnabledPrograms(): { [key: string]: string };
@@ -107,7 +106,7 @@ export class ShaderProperties extends Object {
     getDHCloudSetting(): CloudSetting;
     getDhShadowEnabled(): OptionalBoolean;
     getDynamicHandLight(): OptionalBoolean;
-    getExplicitFlips(): { [key: string]: Object2BooleanMap<string> };
+    getExplicitFlips(): { [key: string]: { [key: string]: any } };
     getFallbackTex(): number;
     getFrustumCulling(): OptionalBoolean;
     getIndirectPointers(): { [key: string]: IndirectPointer };

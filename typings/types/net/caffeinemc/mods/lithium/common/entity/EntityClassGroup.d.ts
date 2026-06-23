@@ -8,7 +8,7 @@ import type { EntityType } from '../../../../../../net/minecraft/world/entity/En
 export class EntityClassGroup extends Object {
     static CUSTOM_COLLIDE_LIKE_MINECART_BOAT_WINDCHARGE: EntityClassGroup;
     constructor(arg0: (param0: Class<Object>, param1: () => EntityType<Object>) => boolean)
-    // private class2GroupContains: Reference2ByteOpenHashMap<Class<Object>>;
+    // private class2GroupContains: { [key: string]: any };
     // private classAndTypeFitEvaluator: (param0: Class<Object>, param1: () => EntityType<Object>) => boolean;
     // private containedClassAndTypePairs: ReferenceReferenceImmutablePair<Class<Object>, EntityType<Object>>[];
     // private checkDetailedContains(arg0: Class<Object>, arg1: EntityType<Object>, arg2: number): boolean;

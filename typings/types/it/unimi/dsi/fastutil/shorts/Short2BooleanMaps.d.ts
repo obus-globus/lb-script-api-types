@@ -3,14 +3,14 @@ import type { Short2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastuti
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2BooleanMaps extends Object {
-    static EMPTY_MAP: Short2BooleanMaps$EmptyMap;
-    static fastForEach(paramarg0: Short2BooleanMap, paramarg1: (param0: Object) => void): void;
-    static fastIterable(paramarg0: Short2BooleanMap): Short2BooleanMap$Entry[];
-    static fastIterator(paramarg0: Short2BooleanMap): ObjectIterator<Short2BooleanMap$Entry>;
-    static singleton(paramarg0: number, paramarg1: boolean): Short2BooleanMap;
-    static singleton(paramarg0: number, paramarg1: boolean): Short2BooleanMap;
-    static synchronize(paramarg0: Short2BooleanMap): Short2BooleanMap;
-    static synchronize(paramarg0: Short2BooleanMap, paramarg1: Object): Short2BooleanMap;
-    static unmodifiable(paramarg0: Short2BooleanMap): Short2BooleanMap;
+    static EMPTY_MAP: { [key: string]: any };
+    static fastForEach(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
+    static fastIterable(paramarg0: { [key: string]: any }): Short2BooleanMap$Entry[];
+    static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Short2BooleanMap$Entry>;
+    static singleton(paramarg0: number, paramarg1: boolean): { [key: string]: any };
+    static singleton(paramarg0: number, paramarg1: boolean): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

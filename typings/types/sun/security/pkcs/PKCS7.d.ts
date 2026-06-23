@@ -17,7 +17,7 @@ import type { DerValue } from '../../../sun/security/util/DerValue.d.ts'
 import type { AlgorithmId } from '../../../sun/security/x509/AlgorithmId.d.ts'
 import type { X500Name } from '../../../sun/security/x509/X500Name.d.ts'
 export class PKCS7 extends Object {
-    static generateSignedData(paramarg0: string, paramarg1: Provider, paramarg2: PrivateKey, paramarg3: (Object | null)[], paramarg4: number[], paramarg5: boolean, paramarg6: boolean, paramarg7: (param0: number[]) => PKCS9Attributes): number[];
+    static generateSignedData(paramarg0: string, paramarg1: { [key: string]: any }, paramarg2: PrivateKey, paramarg3: (Object | null)[], paramarg4: number[], paramarg5: boolean, paramarg6: boolean, paramarg7: (param0: number[]) => PKCS9Attributes): number[];
     static generateTimestampToken(paramarg0: Timestamper, paramarg1: string, paramarg2: string, paramarg3: number[]): number[];
     static getTimestampingURI(paramarg0: X509Certificate): URI;
     constructor(arg0: InputStream)

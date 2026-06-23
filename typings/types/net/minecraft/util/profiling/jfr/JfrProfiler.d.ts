@@ -1,6 +1,7 @@
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { SocketAddress } from '../../../../../java/net/SocketAddress.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Recording } from '../../../../../jdk/jfr/Recording.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'

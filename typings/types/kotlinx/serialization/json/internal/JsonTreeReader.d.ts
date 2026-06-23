@@ -13,6 +13,6 @@ export class JsonTreeReader extends Object {
     // private readArray(): JsonElement;
     // private readDeepRecursive(): JsonElement;
     // private readObject(): JsonElement;
-    // private readObjectImpl(reader: () => JsonElement): JsonObject;
+    // private readObjectImpl(reader: () => JsonElement): { [key: string]: any };
     // private readValue(isString: boolean): JsonPrimitive;
 }

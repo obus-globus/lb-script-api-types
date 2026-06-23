@@ -1,4 +1,5 @@
 import type { AutoCloseable } from '../../../../../../java/lang/AutoCloseable.d.ts'
+import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CompoundTag } from '../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
 import type { StreamTagVisitor } from '../../../../../../net/minecraft/nbt/StreamTagVisitor.d.ts'
@@ -10,7 +11,7 @@ export class RegionFileStorage extends Object implements AutoCloseable {
     constructor(info: RegionStorageInfo, folder: Path[], sync: boolean)
     // private folder: Path[];
     // private info: RegionStorageInfo;
-    // private regionCache: Long2ObjectLinkedOpenHashMap<RegionFile>;
+    // private regionCache: { [key: string]: any };
     // private sync: boolean;
     close(): void;
     flush(): void;

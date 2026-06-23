@@ -14,7 +14,7 @@ export class InputConstants$Type extends Enum<InputConstants$Type> {
     private constructor(defaultPrefix: string, displayTextSupplier: (param0: number, param1: string) => Component)
     // private defaultPrefix: string;
     // private displayTextSupplier: (param0: number, param1: string) => Component;
-    map: Int2ObjectMap<InputConstants$Key>;
+    map: { [key: string]: any };
     getOrCreate(value: number): InputConstants$Key;
     name(): "KEYSYM" | "SCANCODE" | "MOUSE";
 }

@@ -1,5 +1,6 @@
 import type { Closeable } from '../../../../../java/io/Closeable.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { ZipFile } from '../../../../../java/util/zip/ZipFile.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SimpleClassPath$CpEntry } from '../../../../../net/fabricmc/loader/impl/util/SimpleClassPath$CpEntry.d.ts'

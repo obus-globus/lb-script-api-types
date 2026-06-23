@@ -8,13 +8,13 @@ import type { ModelBakery$BakingResult } from '../../../../../net/minecraft/clie
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { Fluid } from '../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 export class ModelManager$ReloadState extends Record {
-    private constructor(bakedModels: ModelBakery$BakingResult, modelGroups: Object2IntMap<BlockState>, blockStateModels: Map<BlockState, BlockStateModel>, blockModels: Map<BlockState, BlockModel>, fluidModels: Map<Fluid, FluidModel>, entityModelSet: EntityModelSet)
+    private constructor(bakedModels: ModelBakery$BakingResult, modelGroups: { [key: string]: any }, blockStateModels: Map<BlockState, BlockStateModel>, blockModels: Map<BlockState, BlockModel>, fluidModels: Map<Fluid, FluidModel>, entityModelSet: EntityModelSet)
     // private bakedModels: ModelBakery$BakingResult;
     // private blockModels: Map<BlockState, BlockModel>;
     // private blockStateModels: Map<BlockState, BlockStateModel>;
     // private entityModelSet: EntityModelSet;
     // private fluidModels: Map<Fluid, FluidModel>;
-    // private modelGroups: Object2IntMap<BlockState>;
+    // private modelGroups: { [key: string]: any };
     bakedModels(): ModelBakery$BakingResult;
     blockModels(): Map<BlockState, BlockModel>;
     blockStateModels(): Map<BlockState, BlockStateModel>;
@@ -22,6 +22,6 @@ export class ModelManager$ReloadState extends Record {
     equals(o: Object | null): boolean;
     fluidModels(): Map<Fluid, FluidModel>;
     hashCode(): number;
-    modelGroups(): Object2IntMap<BlockState>;
+    modelGroups(): { [key: string]: any };
     toString(): string;
 }

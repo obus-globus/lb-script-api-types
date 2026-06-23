@@ -5,7 +5,7 @@ export class PackRenderTargetDirectives extends Object {
     static BASELINE_SUPPORTED_RENDER_TARGETS: number[];
     static LEGACY_RENDER_TARGETS: string[];
     constructor(arg0: number[])
-    readonly renderTargetSettings: Int2ObjectMap<PackRenderTargetDirectives$RenderTargetSettings>;
+    readonly renderTargetSettings: { [key: string]: any };
     // private acceptBufferDirectives(arg0: DirectiveHolder, arg1: PackRenderTargetDirectives$RenderTargetSettings, arg2: string): void;
     acceptDirectives(arg0: DirectiveHolder): void;
     getBuffersToBeCleared(): (Object | null)[];

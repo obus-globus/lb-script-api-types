@@ -4,7 +4,7 @@ export class JdkSslContext$Defaults extends Object {
     // private defaultCiphers: string[];
     // private defaultCiphersNonTLSv13: string[];
     // private defaultProtocols: string[];
-    // private defaultProvider: Provider;
+    // private defaultProvider: { [key: string]: any };
     // private supportedCiphers: string[];
     // private supportedCiphersNonTLSv13: string[];
     init(): void;

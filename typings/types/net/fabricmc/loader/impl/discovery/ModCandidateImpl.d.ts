@@ -1,5 +1,6 @@
 import type { SoftReference } from '../../../../../java/lang/ref/SoftReference.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
+import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
 import type { ModDependency } from '../../../../../net/fabricmc/loader/api/metadata/ModDependency.d.ts'

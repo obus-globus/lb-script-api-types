@@ -1,8 +1,8 @@
 import type { JsonObject } from '../../../../com/google/gson/JsonObject.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FeatureFlags } from '../../../../net/irisshaders/iris/features/FeatureFlags.d.ts'
-import type { BuiltShaderStorageInfo } from '../../../../net/irisshaders/iris/gl/buffer/BuiltShaderStorageInfo.d.ts'
 import type { TextureDefinition } from '../../../../net/irisshaders/iris/gl/texture/TextureDefinition.d.ts'
 import type { StringPair } from '../../../../net/irisshaders/iris/helpers/StringPair.d.ts'
 import type { IdMap } from '../../../../net/irisshaders/iris/shaderpack/IdMap.d.ts'
@@ -24,7 +24,7 @@ export class ShaderPack extends Object {
     constructor(arg0: Path[], arg1: { [key: string]: string }, arg2: StringPair[], arg3: boolean)
     // private activeFeatures: FeatureFlags[];
     // private base: ProgramSet;
-    readonly bufferObjects: Int2ObjectArrayMap<BuiltShaderStorageInfo>;
+    readonly bufferObjects: { [key: string]: any };
     readonly customNoiseTexture: CustomTextureData;
     readonly customTextureDataMap: { [key in TextureStage]: { [key: string]: CustomTextureData } };
     customUniforms: CustomUniforms$Builder;
@@ -41,7 +41,7 @@ export class ShaderPack extends Object {
     readonly shaderPackOptions: ShaderPackOptions;
     // private shaderProperties: ShaderProperties;
     // private sourceProvider: (param0: AbsolutePackPath) => string;
-    getBufferObjects(): Int2ObjectArrayMap<BuiltShaderStorageInfo>;
+    getBufferObjects(): { [key: string]: any };
     // private getCurrentProfileName(): string;
     getCustomNoiseTexture(): CustomTextureData;
     getCustomTextureDataMap(): { [key in TextureStage]: { [key: string]: CustomTextureData } };
@@ -56,6 +56,6 @@ export class ShaderPack extends Object {
     getShaderPackOptions(): ShaderPackOptions;
     hasFeature(arg0: FeatureFlags): boolean;
     // private loadMcMeta(arg0: Path[]): JsonObject;
-    // private parseDimensionIds(arg0: Properties, arg1: string): string[];
+    // private parseDimensionIds(arg0: { [key: string]: any }, arg1: string): string[];
     readTexture(arg0: Path[], arg1: TextureDefinition): CustomTextureData;
 }

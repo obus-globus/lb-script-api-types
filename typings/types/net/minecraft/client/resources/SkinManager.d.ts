@@ -1,6 +1,7 @@
 import type { LoadingCache } from '../../../../com/google/common/cache/LoadingCache.d.ts'
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { MinecraftProfileTextures } from '../../../../com/mojang/authlib/minecraft/MinecraftProfileTextures.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'

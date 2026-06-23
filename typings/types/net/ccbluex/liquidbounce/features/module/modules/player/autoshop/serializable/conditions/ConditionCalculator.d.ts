@@ -5,8 +5,8 @@ import type { AnyConditionNode } from '../../../../../../../../../../net/ccbluex
 import type { ConditionNode } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoshop/serializable/conditions/ConditionNode.d.ts'
 import type { ItemConditionNode } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoshop/serializable/conditions/ItemConditionNode.d.ts'
 export class ConditionCalculator extends Object {
-    constructor(items: Object2IntMap<string>)
-    // private items: Object2IntMap<string>;
+    constructor(items: { [key: string]: any })
+    // private items: { [key: string]: any };
     // private results: Map<ConditionNode, boolean>;
     // private stack: Pair<ConditionNode, boolean>[];
     process(currentItem: string, root: ConditionNode | null): boolean;

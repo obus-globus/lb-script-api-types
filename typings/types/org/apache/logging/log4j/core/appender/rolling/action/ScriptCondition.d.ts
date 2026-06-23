@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { PathWithAttributes } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathWithAttributes.d.ts'
 import type { Configuration } from '../../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'

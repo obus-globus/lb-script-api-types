@@ -17,12 +17,12 @@ export abstract class HttpExchange extends Object implements Request, AutoClosea
     getProtocol(): string;
     getRemoteAddress(): InetSocketAddress;
     getRequestBody(): InputStream;
-    getRequestHeaders(): Headers;
+    getRequestHeaders(): { [key: string]: any };
     getRequestMethod(): string;
     getRequestURI(): URI;
     getResponseBody(): OutputStream;
     getResponseCode(): number;
-    getResponseHeaders(): Headers;
+    getResponseHeaders(): { [key: string]: any };
     sendResponseHeaders(arg0: number, arg1: number): void;
     setAttribute(arg0: string, arg1: Object): void;
     setStreams(arg0: InputStream, arg1: OutputStream): void;

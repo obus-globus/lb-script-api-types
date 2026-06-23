@@ -1,3 +1,4 @@
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
 import type { QuickPlayLog$QuickPlayWorld } from '../../../../net/minecraft/client/quickplay/QuickPlayLog$QuickPlayWorld.d.ts'

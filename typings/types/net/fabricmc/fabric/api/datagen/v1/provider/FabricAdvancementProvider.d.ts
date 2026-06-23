@@ -1,5 +1,6 @@
 import type { JsonElement } from '../../../../../../../com/google/gson/JsonElement.d.ts'
 import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
+import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Comparator } from '../../../../../../../java/util/Comparator.d.ts'
 import type { CompletableFuture } from '../../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'

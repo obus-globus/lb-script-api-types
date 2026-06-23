@@ -34,7 +34,7 @@ export class Maps extends Object {
     static filterValues(paramunfiltered: Map<Object | null, Object | null>, paramvaluePredicate: (param0: Object) => boolean): Map<Object | null, Object | null>;
     static filterValues(paramunfiltered: Map<Object | null, Object | null>, paramvaluePredicate: (param0: Object) => boolean): Map<Object | null, Object | null>;
     static filterValues(paramunfiltered: Map<Object | null, Object | null>, paramvaluePredicate: (param0: Object) => boolean): Map<Object | null, Object | null>;
-    static fromProperties(paramproperties: Properties): { [key: string]: string };
+    static fromProperties(paramproperties: { [key: string]: any }): { [key: string]: string };
     static immutableEntry(paramkey: Object | null, paramvalue: Object | null): Map$Entry<Object, Object>;
     static immutableEnumMap(parammap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
     static newConcurrentMap(): Map<Object | null, Object | null>;

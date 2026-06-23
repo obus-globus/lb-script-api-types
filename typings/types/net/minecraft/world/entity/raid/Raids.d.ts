@@ -18,7 +18,7 @@ export class Raids extends SavedData {
     constructor()
     private constructor(raids: Raids$RaidWithId[], nextId: number, tick: number)
     // private nextId: number;
-    // private raidMap: Int2ObjectMap<Raid>;
+    // private raidMap: { [key: string]: any };
     // private tick: number;
     createOrExtendRaid(player: ServerPlayer, raidPosition: BlockPos): Raid;
     get(raidId: number): Raid;

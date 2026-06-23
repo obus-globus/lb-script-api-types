@@ -1,3 +1,4 @@
+import type { Path } from '../../../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'

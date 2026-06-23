@@ -3,8 +3,8 @@ import type { Key } from '../../java/security/Key.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class SigningKeyResolverAdapter extends Object implements SigningKeyResolver {
     constructor()
-    resolveSigningKey(arg0: JwsHeader, arg1: Claims): Key;
-    resolveSigningKey(arg0: JwsHeader, arg1: number[]): Key;
-    resolveSigningKeyBytes(arg0: JwsHeader, arg1: Claims): number[];
-    resolveSigningKeyBytes(arg0: JwsHeader, arg1: number[]): number[];
+    resolveSigningKey(arg0: { [key: string]: any }, arg1: { [key: string]: any }): Key;
+    resolveSigningKey(arg0: { [key: string]: any }, arg1: number[]): Key;
+    resolveSigningKeyBytes(arg0: { [key: string]: any }, arg1: { [key: string]: any }): number[];
+    resolveSigningKeyBytes(arg0: { [key: string]: any }, arg1: number[]): number[];
 }

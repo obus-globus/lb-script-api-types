@@ -5,6 +5,7 @@ import type { ManagedIdentityResponse } from '../../../../com/microsoft/aad/msal
 import type { MsalRequest } from '../../../../com/microsoft/aad/msal4j/MsalRequest.d.ts'
 import type { ServiceBundle } from '../../../../com/microsoft/aad/msal4j/ServiceBundle.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 export class AzureArcManagedIdentitySource extends AbstractManagedIdentitySource {
     private constructor(arg0: URI, arg1: MsalRequest, arg2: ServiceBundle)

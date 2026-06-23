@@ -17,7 +17,6 @@ import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemInstance } from '../../../../../net/minecraft/world/item/ItemInstance.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { BlockGetter } from '../../../../../net/minecraft/world/level/BlockGetter.d.ts'
-import type { ItemLike } from '../../../../../net/minecraft/world/level/ItemLike.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { LevelAccessor } from '../../../../../net/minecraft/world/level/LevelAccessor.d.ts'
 import type { LevelReader } from '../../../../../net/minecraft/world/level/LevelReader.d.ts'
@@ -35,7 +34,7 @@ export class ComposterBlock extends Block implements WorldlyContainerHolder {
     static BLOCK_STATE_REGISTRY: BlockState[];
     static CODEC: MapCodec<Block>;
     static CODEC: MapCodec<ComposterBlock>;
-    static COMPOSTABLES: Object2FloatMap<ItemLike>;
+    static COMPOSTABLES: { [key: string]: any };
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static INDESTRUCTIBLE: number;
     static INSTANT: number;

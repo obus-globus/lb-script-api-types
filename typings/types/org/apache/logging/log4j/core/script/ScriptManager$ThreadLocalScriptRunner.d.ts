@@ -8,7 +8,7 @@ export class ScriptManager$ThreadLocalScriptRunner extends ScriptManager$Abstrac
     constructor(null_: ScriptManager$ThreadLocalScriptRunner, script: AbstractScript)
     // private runners: ThreadLocal<ScriptManager$MainScriptRunner>;
     readonly script: AbstractScript;
-    execute(bindings: Bindings): Object;
+    execute(bindings: { [key: string]: any }): Object;
     getScript(): AbstractScript;
     getScriptEngine(): ScriptEngine;
 }

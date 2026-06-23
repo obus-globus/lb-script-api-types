@@ -47,7 +47,7 @@ export class SslContextBuilder extends Object {
     // private serverNames: SNIServerName[];
     // private sessionCacheSize: number;
     // private sessionTimeout: number;
-    // private sslContextProvider: Provider;
+    // private sslContextProvider: { [key: string]: any };
     // private startTls: boolean;
     // private trustCertCollection: X509Certificate[];
     // private trustManagerFactory: TrustManagerFactory;
@@ -73,7 +73,7 @@ export class SslContextBuilder extends Object {
     serverName(arg0: SNIServerName): SslContextBuilder;
     sessionCacheSize(arg0: number): SslContextBuilder;
     sessionTimeout(arg0: number): SslContextBuilder;
-    sslContextProvider(arg0: Provider): SslContextBuilder;
+    sslContextProvider(arg0: { [key: string]: any }): SslContextBuilder;
     sslProvider(arg0: SslProvider): SslContextBuilder;
     startTls(arg0: boolean): SslContextBuilder;
     trustManager(arg0: File): SslContextBuilder;

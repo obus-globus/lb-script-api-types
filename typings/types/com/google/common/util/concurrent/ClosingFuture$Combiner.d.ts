@@ -10,7 +10,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ClosingFuture$Combiner extends Object {
     private constructor(allMustSucceed: boolean, inputs: ClosingFuture<Object>[])
     // private allMustSucceed: boolean;
-    // private closeables: ClosingFuture$CloseableList;
+    // private closeables: { [key: string]: any };
     // private inputs: ClosingFuture<Object>[];
     call<V extends Object | number | string | boolean>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => V, executor: Executor): ClosingFuture<V>;
     callAsync<V extends Object | number | string | boolean>(combiningCallable: (param0: ClosingFuture$DeferredCloser, param1: ClosingFuture$Peeker) => ClosingFuture<V>, executor: Executor): ClosingFuture<V>;

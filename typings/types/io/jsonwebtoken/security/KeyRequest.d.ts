@@ -3,5 +3,5 @@ import type { Request } from '../../../io/jsonwebtoken/security/Request.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface KeyRequest<T extends Object | number | string | boolean> extends Request<T>, Object{
     getEncryptionAlgorithm(): AeadAlgorithm;
-    getHeader(): JweHeader;
+    getHeader(): { [key: string]: any };
 }

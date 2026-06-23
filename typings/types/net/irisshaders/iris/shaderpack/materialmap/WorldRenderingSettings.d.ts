@@ -3,12 +3,11 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ChunkVertexType } from '../../../../../net/caffeinemc/mods/sodium/client/render/chunk/vertex/format/ChunkVertexType.d.ts'
 import type { BlockRenderType } from '../../../../../net/irisshaders/iris/shaderpack/materialmap/BlockRenderType.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
-import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class WorldRenderingSettings extends Object {
     static INSTANCE: WorldRenderingSettings;
     constructor()
     readonly ambientOcclusionLevel: number;
-    readonly blockStateIds: Object2IntMap<BlockState>;
+    readonly blockStateIds: { [key: string]: any };
     readonly blockTypeIds: Map<Block, BlockRenderType>;
     // private chunkVertexFormat: ChunkVertexType;
     readonly disableDirectionalShading: boolean;
@@ -22,7 +21,7 @@ export class WorldRenderingSettings extends Object {
     breaksAnisotropy(): boolean;
     clearReloadRequired(): void;
     getAmbientOcclusionLevel(): number;
-    getBlockStateIds(): Object2IntMap<BlockState>;
+    getBlockStateIds(): { [key: string]: any };
     getBlockTypeIds(): Map<Block, BlockRenderType>;
     getEntityIds(): (param0: Object) => number;
     getItemIds(): (param0: Object) => number;
@@ -30,7 +29,7 @@ export class WorldRenderingSettings extends Object {
     hasVillagerConversionId(): boolean;
     isReloadRequired(): boolean;
     setAmbientOcclusionLevel(arg0: number): void;
-    setBlockStateIds(arg0: Object2IntMap<BlockState>): void;
+    setBlockStateIds(arg0: { [key: string]: any }): void;
     setBlockTypeIds(arg0: Map<Block, BlockRenderType>): void;
     setBreaksAnisotropy(arg0: boolean): void;
     setDisableDirectionalShading(arg0: boolean): void;

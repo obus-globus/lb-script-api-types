@@ -8,7 +8,7 @@ export class ScriptManager$MainScriptRunner extends ScriptManager$AbstractScript
     // private compiledScript: CompiledScript;
     readonly script: AbstractScript;
     readonly scriptEngine: ScriptEngine;
-    execute(bindings: Bindings): Object;
+    execute(bindings: { [key: string]: any }): Object;
     getScript(): AbstractScript;
     getScriptEngine(): ScriptEngine;
 }

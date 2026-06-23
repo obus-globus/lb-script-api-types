@@ -15,8 +15,8 @@ export class ScriptManager extends Object implements FileWatcher {
     // private scriptRunners: { [key: string]: ScriptManager$ScriptRunner };
     // private watchManager: WatchManager;
     addScript(script: AbstractScript): boolean;
-    createBindings(script: AbstractScript): Bindings;
-    execute(name: string, bindings: Bindings): Object;
+    createBindings(script: AbstractScript): { [key: string]: any };
+    execute(name: string, bindings: { [key: string]: any }): Object;
     fileModified(file: File): void;
     getAllowedLanguages(): string[];
     getScript(name: string): AbstractScript;

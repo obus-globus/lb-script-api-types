@@ -115,7 +115,7 @@ export class Metadata extends Object implements Serializable, ClimateForcast, Cr
     set(arg0: Property, arg1: boolean): void;
     set(arg0: Property, arg1: number): void;
     set(arg0: Property, arg1: string): void;
-    setAll(arg0: Properties): void;
+    setAll(arg0: { [key: string]: any }): void;
     setMetadataWriteFilter(arg0: MetadataWriteFilter): void;
     size(): number;
     toString(): string;

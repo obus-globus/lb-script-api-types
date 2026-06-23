@@ -1,5 +1,6 @@
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { AutoCloseable } from '../../../java/lang/AutoCloseable.d.ts'
+import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Duration } from '../../../java/time/Duration.d.ts'
 import type { Instant } from '../../../java/time/Instant.d.ts'
 import type { TimerTask } from '../../../java/util/TimerTask.d.ts'

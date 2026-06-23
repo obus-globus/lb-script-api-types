@@ -43,7 +43,7 @@ export class MixinTargetContext extends ClassContext implements IMixinContext {
     // private detachedSuper: boolean;
     // private inheritsFromMixin: boolean;
     // private initialiser: Initialiser;
-    readonly injectorGroups: InjectorGroupInfo$Map;
+    readonly injectorGroups: { [key: string]: any };
     // private injectors: InjectionInfo[];
     // private innerClasses: { [key: string]: string };
     // private mergedMethods: MethodNode[];
@@ -84,7 +84,7 @@ export class MixinTargetContext extends ClassContext implements IMixinContext {
     getFirstInjectionInfo(): InjectionInfo;
     getInfo(): MixinInfo;
     getInitialiser(): Initialiser;
-    getInjectorGroups(): InjectorGroupInfo$Map;
+    getInjectorGroups(): { [key: string]: any };
     getInjectorOrders(arg0: number[]): void;
     getInnerClasses(): { [key: string]: string };
     getInterfaces(): string[];

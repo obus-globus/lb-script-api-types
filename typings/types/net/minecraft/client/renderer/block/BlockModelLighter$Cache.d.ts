@@ -6,9 +6,9 @@ import type { BlockAndLightGetter } from '../../../../../net/minecraft/world/lev
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockModelLighter$Cache extends Object {
     constructor()
-    // private brightnessCache: Long2FloatLinkedOpenHashMap;
+    // private brightnessCache: { [key: string]: any };
     // private cachedBrightnessGetter: (param0: BlockAndLightGetter, param1: BlockPos) => number;
-    // private colorCache: Long2IntLinkedOpenHashMap;
+    // private colorCache: { [key: string]: any };
     // private enabled: boolean;
     disable(): void;
     enable(): void;
