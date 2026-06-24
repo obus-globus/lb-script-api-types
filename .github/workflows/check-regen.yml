@@ -98,6 +98,19 @@ jobs:
           key: regen-gradle-${{ hashFiles('generator/**/*.gradle', 'tools/regen-types.sh') }}
           restore-keys: regen-gradle-
 
+      # Persist the generator's per-class render cache (ModuleCache) across runs so
+      # the introspection walk reuses prior renders. Correctness is enforced inside
+      # the generator (each entry is keyed by jar + generator content shas), so a
+      # stale restore is safe — it just yields fewer hits. Unique key per run +
+      # prefix restore-keys = always restore the latest, always save a fresh copy.
+      - name: Cache ModuleCache render cache
+        if: steps.branch.outputs.exists == 'false'
+        uses: actions/cache@v4
+        with:
+          path: tools/regen/.module-cache
+          key: regen-modcache-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: regen-modcache-${{ runner.os }}-
+
       # 3. Run the whole flow inside the regen container (build generator →
       #    headless introspection → manifest refresh → post-patches → promote →
       #    stamp + gate). continue-on-error: a NEW Minecraft version legitimately
@@ -119,7 +132,12 @@ jobs:
             -v "$PWD":/work \
             -v "$PWD/gradle-cache":/cache/gradle \
             lb-regen:ci
+          rc=$?
+          # Always reclaim ownership of the container-written tree (root-owned),
+          # even if the regen failed — later steps (cache save, gate, git add) and
+          # the actions/cache post-step must be able to read/write it.
           sudo chown -R "$(id -u):$(id -g)" . || true
+          exit $rc
 
       - name: Upload regen-output artifact
         if: steps.branch.outputs.exists == 'false'

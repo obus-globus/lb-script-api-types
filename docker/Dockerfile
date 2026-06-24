@@ -21,7 +21,7 @@ FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
-      ca-certificates curl git unzip xz-utils \
+      ca-certificates curl git unzip xz-utils rsync \
       python3 python3-venv python3-pip \
       openjdk-21-jdk-headless \
       xvfb mesa-utils mesa-vulkan-drivers \
