@@ -407,7 +407,14 @@ const path = ScriptManager_1.ScriptManager.INSTANCE.root.path;
 // @ts-expect-error
 if (Java.type("java.lang.System").getenv("SCRIPT_TYPEGEN_BUILD")) {
     generate(path, packageName);
-    mc.close();
+    // generate() writes + flushes every .d.ts synchronously before returning, so
+    // the output is complete here. We deliberately do NOT call mc.close(): on
+    // MC 26.2 it no longer terminates the JVM (the client then idles until the
+    // regen timeout — ~100 min wasted), and it can itself block. Flush stdout and
+    // HARD-exit via Runtime.halt (skips shutdown hooks that could re-hang) so the
+    // run finishes the moment introspection completes (~15-20 min, not ~2 h).
+    try { Java.type("java.lang.System").out.flush(); } catch (e) { /* ignore */ }
+    Java.type("java.lang.Runtime").getRuntime().halt(0);
 }
 script.registerCommand({
     name: "ts-defgen",

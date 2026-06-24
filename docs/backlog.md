@@ -276,6 +276,41 @@ different code (see the TS2300 dead-end) is a fidelity tradeoff, not a sweep.
   (`Level.gameEvent`, `ServerLevel.getNearestPlayer`) that TS rejects on an
   `extends` chain. Both are real fidelity tradeoffs, low yield, regression-prone.
 
+## 2026-06-24: regen performance + a doc-extractor gap
+
+Performance work (do in order): proper closing -> GraalJS JIT -> caching.
+
+- **[~] Proper closing (HUGE win).** On MC 26.2 the headless client no longer
+  terminates after `ts-defgen.js` writes output: `mc.close()` stopped ending the
+  JVM, so the client idles until the regen `timeout` (~100 min wasted; the actual
+  introspection is ~10-15 min). Fixed in `tools/regen/ts-defgen.js`: after
+  `generate()` (which writes + flushes all `.d.ts` synchronously) do NOT call
+  `mc.close()`; flush stdout and `Runtime.getRuntime().halt(0)`. Brings a regen
+  from ~2 h to ~15-20 min. _Validate with a timed regen._
+- **[ ] GraalJS JIT.** The regen JDK is stock Temurin 25, so GraalJS runs the
+  Truffle interpreter (log: "fallback runtime that does not support runtime
+  compilation"). ts-defgen.js's enumeration/emit loop over 56k classes is
+  interpreted. A GraalVM JDK 25 (or the truffle runtime compiler on the module
+  path) would JIT it. Caveat: much of the hot path is Java reflection (native), so
+  measure the win.
+- **[ ] Caching the stable subtree.** ~80% of the 56k classes are `java.*`, netty,
+  fastutil, guava, kotlin-stdlib — they only change on a dependency bump, not per
+  LB/MC release. Content-address by classpath jar hashes, skip re-introspecting
+  unchanged jars, regen only the changed namespaces (`net.ccbluex.*` + `net.minecraft.*`)
+  and merge. Biggest structural win; medium-high effort (import consistency).
+
+- **[ ] ts-extract.py drops KDocs on annotation classes (doc-completeness).**
+  tree-sitter-kotlin (1.1.0) mis-parses `@Retention(...) annotation class X` as an
+  `infix_expression` (three identifiers: `annotation`, `class`, `X`), NOT a
+  `class_declaration`, so `ts-extract.py` never sees it and drops the KDoc (e.g.
+  `ScriptApiRequired`). This is why the 2026-06-24 tree-sitter doc-refresh was
+  LESS complete than the old PSI manifest (1940 vs 2068 FQNs; some is also LB
+  version drift). The committed manifest (refresh-manifest.sh -> ts-extract) is
+  missing these, so a clean fresh-doc regen needs a `ts-extract.py` workaround
+  first: detect the mis-parsed `infix_expression annotation class NAME` shape (and
+  audit other declaration kinds) before re-refreshing + regenerating. _Deferred;
+  doc-only, types are correct._
+
 ## Smaller, standalone
 
 - **[x] Generator emitted invalid TS for 2 coroutine/inline-class declarations.**
