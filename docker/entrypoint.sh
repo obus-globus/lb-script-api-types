@@ -31,4 +31,14 @@ fi
 cd "$WORK"
 git submodule update --init --recursive generator || true
 
+# Install the repo's npm devDeps (typescript) once if absent. run-regen.sh's
+# post-promote drift gates + the in-container typecheck/package-canary need
+# `tsc`; a from-scratch container has no node_modules. No-op on hosts/volumes
+# that already have it (e.g. local runs, a reused /work volume).
+if [[ ! -d "$WORK/node_modules/typescript" ]]; then
+  echo "==> installing npm devDeps (typescript) for the drift gates"
+  npm ci --no-audit --no-fund || npm install --no-audit --no-fund \
+    || echo "   WARN: npm install failed — post-promote gates may not run"
+fi
+
 exec ./run-regen.sh "$@"
