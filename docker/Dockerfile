@@ -21,7 +21,7 @@ FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
-      ca-certificates curl git unzip xz-utils nodejs \
+      ca-certificates curl git unzip xz-utils \
       python3 python3-venv python3-pip \
       openjdk-21-jdk-headless \
       xvfb mesa-utils mesa-vulkan-drivers \
@@ -29,6 +29,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       libx11-6 libxext6 libxrender1 libxtst6 libxi6 libxxf86vm1 \
       libxrandr2 libxcursor1 libxinerama1 \
     && rm -rf /var/lib/apt/lists/*
+
+# Node.js 22 (NodeSource) + npm. LiquidBounce's Gradle build runs `npm` to bundle
+# its in-game theme (src-theme: vite 6 / svelte 5) during runClient — the
+# node-gradle plugin defaults to download=false and uses the system npm. Ubuntu's
+# `nodejs` package omits npm entirely and ships an EOL Node 18, so install a
+# current LTS (matches the host toolchain) that provides both node and npm.
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
+    && apt-get install -y --no-install-recommends nodejs \
+    && rm -rf /var/lib/apt/lists/* \
+    && node --version && npm --version
 
 # JDK 25 (Temurin) at the exact path tools/regen-types.sh expects.
 RUN set -eux; \

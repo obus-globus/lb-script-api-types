@@ -9,6 +9,8 @@ references/
 tools/regen-output/
 # Persistent per-class render cache (ModuleCache): prior run's raw .d.ts + manifest:
 tools/regen/.module-cache/
+# CI regen Gradle/Minecraft download cache (mounted into the container):
+gradle-cache/
 # Headless JDK+MC harness (large; provided separately):
 tools/script-runner/
 # Downloaded Kotlin compiler toolchain (kdoc-extractor):

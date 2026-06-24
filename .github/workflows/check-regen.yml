@@ -155,10 +155,15 @@ jobs:
             echo "::warning::regen produced no changes (it may have failed before promote) — not pushing a branch." | tee -a "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name  "obus-globus"
           git config user.email "254700516+obus-globus@users.noreply.github.com"
           git checkout -b "${{ steps.lb.outputs.branch }}"
-          git add -A
+          # Stage only the intended outputs (same paths the change-check above
+          # uses). NOT `git add -A`: the regen leaves root-owned mounts in the tree
+          # (gradle-cache/, the container's tools/regen/.module-cache/) that would
+          # make `add -A` fail with EACCES, and they must not be committed anyway.
+          git add typings tools/regen-types.sh tools/kdoc-extractor
           git commit -m "regen: LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})
 
           Automated regen against ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}.

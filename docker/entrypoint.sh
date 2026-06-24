@@ -6,6 +6,11 @@
 # run-regen.sh (e.g. --no-promote).
 set -euo pipefail
 
+# The repo is bind-mounted from a CI checkout owned by a different uid than the
+# container's root; git refuses to operate on it ("detected dubious ownership")
+# unless it's marked safe. Allow any path (container is ephemeral, single repo).
+git config --global --add safe.directory '*'
+
 WORK=/work
 REPO_URL="${REPO_URL:-https://github.com/obus-globus/lb-script-api-types.git}"
 REPO_REF="${REPO_REF:-main}"
