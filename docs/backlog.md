@@ -305,7 +305,37 @@ Performance work (do in order): proper closing -> GraalJS JIT -> caching.
   `tools/regen-types.sh` to stock OpenJDK 25. GraalVM JDK 25 left installed at
   `/usr/lib/jvm/graalvm-25` (harmless, unused). **Takeaway: the regen is
   host-reflection-bound; caching the stable subtree is the only lever that cuts it.**
-- **[~] Caching the stable subtree (THE lever; in progress).** Measured class
+- **[x] Render cache (DONE; ~36% faster warm regen).** Shipped: a persistent
+  per-class render cache (`ModuleCache` in the generator) reuses a class's prior
+  rendered `.d.ts` when its own source jar AND every jar it imports from are
+  unchanged (content-sha), plus the generator jar's own sha (whole-cache key).
+  Caches **every** content-addressable class (not just foundational): change
+  detection is complete, so unchanged classes are reused and changed ones miss
+  and re-render. Rationale: LB commits daily but MC bumps rarely, so a typical
+  regen only changes `net.ccbluex` (~2.7k classes) and reuses the other ~95%.
+  **Measured (MC 26.2, full tree):** cold (writes cache) reused=0 recorded=57510
+  across 206 jars, ~38 min (one-time ~+3.5 min over the ~34.5 min no-cache
+  baseline to populate). Warm reused **57242/57510 (99.5%)**, ~22 min, and the
+  output is **byte-identical** to cold across all 59,380 files (the only diff is
+  `runtime-bindings.json`, a sidecar with pre-existing mixin-counter
+  nondeterminism written by ts-defgen.js, not the cache). Off unless
+  `TSGEN_CACHE_DIR` is set (regen-types.sh exports it; `SKIP_REGEN_CACHE=1`
+  forces cold). Cache dir `tools/regen/.module-cache/` (gitignored). Files:
+  generator `ModuleCache.kt` (+ `GeneratedModule`/`CachedModule` + visitClass
+  hook in `TypeScriptGenerator.kt`), `moduleCacheTests.kt` (cold->warm identical
+  + tamper-invalidation), `tools/regen-types.sh`, `.gitignore`.
+  - **Follow-up (not done): the walk has an O(n^2) visited-check**
+    (`modules.keys.find { isSameClass }` at TypeScriptGenerator visitClass + the
+    same in moduleText import resolution). It runs for all 57k classes on BOTH
+    cold and warm and is a large fixed floor the cache can't touch — it's why the
+    warm walk is still ~17.5 min. The map is already keyed by KClass; the linear
+    isSameClass scan is defensive against multiple KClass instances for one class.
+    Making it O(1) (canonicalize KClass by qualifiedName into the map key) could
+    cut both cold and warm substantially. Risk: KClass-identity dedup regressions
+    — needs the determinism + dedupe tests as a guard. Bigger potential win than
+    the cache itself.
+
+- **[done-superseded] Caching the stable subtree.** Measured class
   distribution of the 59,371-file tree: volatile jars (net.minecraft 8855, net.ccbluex
   2739, com.viaversion 2789, com.mojang 1063, net.fabricmc/raphimc/caffeinemc/
   irisshaders ~4300) ~= 20k classes; the rest — fastutil (6050), graalvm/oracle

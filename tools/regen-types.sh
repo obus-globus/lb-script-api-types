@@ -157,6 +157,27 @@ if [[ "$REGEN" == "1" ]]; then
   #     at startup. Clearing forces LWJGL to re-extract from the jar.
   rm -rf "/tmp/lwjgl_${USER:-$(id -un)}"
 
+  # 4c. Persistent per-class render cache (ModuleCache in the generator). On a
+  #     warm cache it reuses the prior run's rendered .d.ts for foundational
+  #     library classes (JDK, kotlin, fastutil, netty, guava, log4j, lwjgl,
+  #     icu4j, graalvm/truffle, ...) whose source jar is byte-for-byte unchanged,
+  #     skipping their reflection — roughly half the class graph. The cache is
+  #     keyed by jar content sha + the generator jar's own sha, so any generator
+  #     change or dependency bump invalidates the affected entries automatically.
+  #     Set SKIP_REGEN_CACHE=1 to force a full cold regen (also done implicitly
+  #     whenever the generator jar changes).
+  REGEN_CACHE_DIR="${REGEN_CACHE_DIR:-$REPO_ROOT/tools/regen/.module-cache}"
+  if [[ "${SKIP_REGEN_CACHE:-0}" == "1" ]]; then
+    unset TSGEN_CACHE_DIR
+    echo "SKIP_REGEN_CACHE=1 — render cache disabled (full cold regen)" >&2
+  else
+    mkdir -p "$REGEN_CACHE_DIR"
+    # Exported (not an inline assignment prefix): the runClient subshell and the
+    # forked game JVM inherit it; the generator reads it via System.getenv.
+    export TSGEN_CACHE_DIR="$REGEN_CACHE_DIR"
+    echo "ModuleCache enabled at $REGEN_CACHE_DIR" >&2
+  fi
+
   # 5. Run. CCBlueX's workflow uses `|| exit 0` because mc.close() at the
   #    end of ts-defgen.js may produce a nonzero gradle exit code; we
   #    mirror that tolerance, then explicitly verify the output below.
