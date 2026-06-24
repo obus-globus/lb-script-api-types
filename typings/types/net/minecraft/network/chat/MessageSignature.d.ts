@@ -14,6 +14,7 @@ export class MessageSignature extends Record {
     static describe(paramsignature: MessageSignature): string;
     static read(paraminput: FriendlyByteBuf): MessageSignature;
     static write(paramoutput: FriendlyByteBuf, paramsignature: MessageSignature): void;
+    constructor(bytes: number[])
     // private bytes: number[];
     asByteBuffer(): ByteBuffer;
     bytes(): number[];

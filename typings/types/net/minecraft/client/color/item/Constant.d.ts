@@ -7,6 +7,7 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class Constant extends Record implements ItemTintSource {
     static MAP_CODEC: MapCodec<Constant>;
+    constructor(value: number)
     // private value: number;
     calculate(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity): number;
     equals(o: Object | null): boolean;

@@ -13,6 +13,7 @@ import type { EntityAccess } from '../../../net/minecraft/world/level/entity/Ent
 export class SectionPos extends Vec3i {
     static CODEC: Codec<Vec3i>;
     static SECTION_BITS: number;
+    static SECTION_BLOCK_COUNT: number;
     static SECTION_HALF_SIZE: number;
     static SECTION_MASK: number;
     static SECTION_MAX_INDEX: number;

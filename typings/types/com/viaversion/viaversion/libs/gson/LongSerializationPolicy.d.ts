@@ -1,7 +1,10 @@
+import type { LongSerializationPolicy$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { JsonElement } from '../../../../../com/viaversion/viaversion/libs/gson/JsonElement.d.ts'
+import type { TypeAdapter } from '../../../../../com/viaversion/viaversion/libs/gson/TypeAdapter.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
+import type { Number } from '../../../../../java/lang/Number.d.ts'
 export class LongSerializationPolicy extends Enum<LongSerializationPolicy> {
     static DEFAULT: LongSerializationPolicy;
     static STRING: LongSerializationPolicy;
@@ -9,6 +12,8 @@ export class LongSerializationPolicy extends Enum<LongSerializationPolicy> {
     static valueOf(paramarg0: string): LongSerializationPolicy;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: LongSerializationPolicy$1)
     serialize(arg0: number): JsonElement;
+    typeAdapter(): TypeAdapter<Number>;
     name(): "DEFAULT" | "STRING";
 }

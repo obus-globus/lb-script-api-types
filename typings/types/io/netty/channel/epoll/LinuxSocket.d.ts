@@ -54,6 +54,7 @@ export class LinuxSocket extends Socket {
     getTimeToLive(): number;
     isIpBindAddressNoPort(): boolean;
     isIpFreeBind(): boolean;
+    isIpMulticastAll(): boolean;
     isIpRecvOrigDestAddr(): boolean;
     isIpTransparent(): boolean;
     isLoopbackModeDisabled(): boolean;
@@ -71,6 +72,7 @@ export class LinuxSocket extends Socket {
     setInterface(arg0: InetAddress): void;
     setIpBindAddressNoPort(arg0: boolean): void;
     setIpFreeBind(arg0: boolean): void;
+    setIpMulticastAll(arg0: boolean): void;
     setIpRecvOrigDestAddr(arg0: boolean): void;
     setIpTransparent(arg0: boolean): void;
     setLoopbackModeDisabled(arg0: boolean): void;

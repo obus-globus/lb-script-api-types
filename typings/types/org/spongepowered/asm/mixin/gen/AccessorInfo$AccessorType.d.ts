@@ -1,3 +1,4 @@
+import type { AccessorInfo$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
@@ -12,6 +13,7 @@ export class AccessorInfo$AccessorType extends Enum<AccessorInfo$AccessorType> {
     static valueOf(paramarg0: string): AccessorInfo$AccessorType;
     static values(): (Object | null)[];
     private constructor(arg2: string[])
+    constructor(arg2: (Object | null)[], arg3: AccessorInfo$1)
     readonly expectedPrefixes: string[];
     getExpectedPrefixes(): string[];
     getGenerator(arg0: AccessorInfo): AccessorGenerator;

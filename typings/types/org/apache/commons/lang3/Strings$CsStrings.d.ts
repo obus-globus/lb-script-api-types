@@ -1,3 +1,4 @@
+import type { Strings$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { Strings } from '../../../../org/apache/commons/lang3/Strings.d.ts'
@@ -7,6 +8,7 @@ export class Strings$CsStrings extends Strings {
     static CS: Strings;
     static builder(): Strings$Builder;
     private constructor(arg0: boolean)
+    constructor(arg0: boolean, arg1: Strings$1)
     compare(arg0: string, arg1: string): number;
     contains(arg0: CharSequence, arg1: CharSequence): boolean;
     equals(other: Object | null): boolean;

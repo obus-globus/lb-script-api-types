@@ -6,6 +6,7 @@ export class JsonRPCUtils extends Object {
     static JSON_RPC_VERSION: string;
     static OPEN_RPC_VERSION: string;
     static createError(paramid: JsonElement, parammessage: string, paramerrorCode: number, paramdata: string): JsonObject;
+    static createRequest(paramid: number, parammethod: string, paramparams: JsonElement[]): JsonObject;
     static createRequest(paramid: number, parammethod: Identifier, paramparams: JsonElement[]): JsonObject;
     static createSuccessResult(paramid: JsonElement, paramresult: JsonElement): JsonObject;
     static getError(paramjsonObject: JsonObject): JsonObject;

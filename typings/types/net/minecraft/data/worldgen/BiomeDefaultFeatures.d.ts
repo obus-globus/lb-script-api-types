@@ -73,6 +73,7 @@ export class BiomeDefaultFeatures extends Object {
     static addSnowyTrees(parambuilder: BiomeGenerationSettings$Builder): void;
     static addSparseJungleMelons(parambuilder: BiomeGenerationSettings$Builder): void;
     static addSparseJungleTrees(parambuilder: BiomeGenerationSettings$Builder): void;
+    static addSulfurCavesFeatures(parambuilder: BiomeGenerationSettings$Builder): void;
     static addSurfaceFreezing(parambuilder: BiomeGenerationSettings$Builder): void;
     static addSwampClayDisk(parambuilder: BiomeGenerationSettings$Builder): void;
     static addSwampExtraVegetation(parambuilder: BiomeGenerationSettings$Builder): void;

@@ -11,6 +11,7 @@ import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 export class FoodProperties extends Record implements ConsumableListener {
     static DIRECT_CODEC: Codec<FoodProperties>;
     static DIRECT_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, FoodProperties>;
+    constructor(nutrition: number, saturation: number, canAlwaysEat: boolean)
     // private canAlwaysEat: boolean;
     // private nutrition: number;
     // private saturation: number;

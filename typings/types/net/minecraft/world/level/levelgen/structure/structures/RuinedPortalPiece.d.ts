@@ -1,5 +1,6 @@
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
+import type { HolderLookup$Provider } from '../../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { CompoundTag } from '../../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
@@ -27,8 +28,8 @@ export class RuinedPortalPiece extends TemplateStructurePiece {
     static findCollisionPiece(parampieces: StructurePiece[], parambox: BoundingBox): StructurePiece;
     static getHeightMapType(paramverticalPlacement: RuinedPortalPiece$VerticalPlacement): Heightmap$Types;
     static reorient(paramlevel: BlockGetter, paramblockPos: BlockPos, paramblockState: BlockState): BlockState;
-    constructor(structureTemplateManager: StructureTemplateManager, templatePosition: BlockPos, verticalPlacement: RuinedPortalPiece$VerticalPlacement, properties: RuinedPortalPiece$Properties, templateLocation: Identifier, template: StructureTemplate, rotation: Rotation, mirror: Mirror, pivot: BlockPos)
-    constructor(structureTemplateManager: StructureTemplateManager, tag: CompoundTag)
+    constructor(registries: HolderLookup$Provider, structureTemplateManager: StructureTemplateManager, templatePosition: BlockPos, verticalPlacement: RuinedPortalPiece$VerticalPlacement, properties: RuinedPortalPiece$Properties, templateLocation: Identifier, template: StructureTemplate, rotation: Rotation, mirror: Mirror, pivot: BlockPos)
+    constructor(context: StructurePieceSerializationContext, tag: CompoundTag)
     // private properties: RuinedPortalPiece$Properties;
     // private verticalPlacement: RuinedPortalPiece$VerticalPlacement;
     addAdditionalSaveData(context: StructurePieceSerializationContext, tag: CompoundTag): void;

@@ -6,7 +6,7 @@ import type { SpriteContentsTickerAccessor } from '../../../../../net/irisshader
 import type { SpriteContents } from '../../../../../net/minecraft/client/renderer/texture/SpriteContents.d.ts'
 import type { SpriteContents$AnimatedTexture } from '../../../../../net/minecraft/client/renderer/texture/SpriteContents$AnimatedTexture.d.ts'
 export class SpriteContents$AnimationState extends Object implements AutoCloseable, SpriteContentsTickerAccessor {
-    private constructor(null_: SpriteContents$AnimationState, frameTexturesByIndex: { [key: string]: any }, spriteUbosByMip: GpuBufferSlice[])
+    private constructor(null_: SpriteContents, animationInfo: SpriteContents$AnimatedTexture, frameTexturesByIndex: { [key: string]: any }, spriteUbosByMip: GpuBufferSlice[])
     readonly animationInfo: SpriteContents$AnimatedTexture;
     readonly frame: number;
     // private frameTexturesByIndex: { [key: string]: any };

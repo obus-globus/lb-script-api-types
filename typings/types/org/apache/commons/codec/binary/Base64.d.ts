@@ -1,3 +1,4 @@
+import type { Base64$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { BigInteger } from '../../../../../java/math/BigInteger.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CodecPolicy } from '../../../../../org/apache/commons/codec/CodecPolicy.d.ts'
@@ -10,6 +11,10 @@ export class Base64 extends BaseNCodec {
     static builder(): Base64$Builder;
     static decodeBase64(paramarg0: number[]): number[];
     static decodeBase64(paramarg0: string): number[];
+    static decodeBase64Standard(paramarg0: number[]): number[];
+    static decodeBase64Standard(paramarg0: string): number[];
+    static decodeBase64UrlSafe(paramarg0: number[]): number[];
+    static decodeBase64UrlSafe(paramarg0: string): number[];
     static decodeInteger(paramarg0: number[]): BigInteger;
     static encodeBase64(paramarg0: number[]): number[];
     static encodeBase64(paramarg0: number[], paramarg1: boolean): number[];
@@ -25,19 +30,24 @@ export class Base64 extends BaseNCodec {
     static isBase64(paramarg0: number): boolean;
     static isBase64(paramarg0: number[]): boolean;
     static isBase64(paramarg0: string): boolean;
+    static isBase64Standard(paramarg0: number): boolean;
+    static isBase64Standard(paramarg0: number[]): boolean;
+    static isBase64Standard(paramarg0: string): boolean;
+    static isBase64Url(paramarg0: number): boolean;
+    static isBase64Url(paramarg0: number[]): boolean;
+    static isBase64Url(paramarg0: string): boolean;
     constructor()
     constructor(arg0: boolean)
     constructor(arg0: number)
     constructor(arg0: number, arg1: number[])
     constructor(arg0: number, arg1: number[], arg2: boolean)
     constructor(arg0: number, arg1: number[], arg2: boolean, arg3: CodecPolicy)
-    private constructor(arg0: number, arg1: number[], arg2: number, arg3: number[], arg4: CodecPolicy)
-    // private decodeTable: number[];
+    private constructor(arg0: Base64$Builder)
+    constructor(arg0: Base64$Builder, arg1: Base64$1)
     // private encodeSize: number;
-    // private encodeTable: number[];
+    // private isStandardEncodeTable: boolean;
     // private isUrlSafe: boolean;
     // private lineSeparator: number[];
-    // private calculateDecodeTable(arg0: number[]): number[];
     decode(arg0: Object): Object;
     decode(arg0: number[]): number[];
     decode(arg0: number[], arg1: number, arg2: number, arg3: BaseNCodec$Context): void;

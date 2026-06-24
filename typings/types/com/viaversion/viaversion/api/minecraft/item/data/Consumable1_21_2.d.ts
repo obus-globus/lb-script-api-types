@@ -12,6 +12,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Consumable1_21_2 extends Record implements Copyable, Rewritable {
     static EFFECT_TYPES: Object | null;
     static TYPE: Type<Consumable1_21_2>;
+    constructor(consumeSeconds: number, animationType: number, sound: Holder<SoundEvent>, hasConsumeParticles: boolean, consumeEffects: Consumable1_21_2$ConsumeEffect<Object>[])
     // private animationType: number;
     // private consumeEffects: Consumable1_21_2$ConsumeEffect<Object>[];
     // private consumeSeconds: number;

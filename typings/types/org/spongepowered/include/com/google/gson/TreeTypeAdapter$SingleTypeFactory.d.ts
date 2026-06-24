@@ -1,3 +1,4 @@
+import type { TreeTypeAdapter$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Gson } from '../../../../../../org/spongepowered/include/com/google/gson/Gson.d.ts'
@@ -7,6 +8,7 @@ import type { TypeAdapter } from '../../../../../../org/spongepowered/include/co
 import type { TypeAdapterFactory } from '../../../../../../org/spongepowered/include/com/google/gson/TypeAdapterFactory.d.ts'
 import type { TypeToken } from '../../../../../../org/spongepowered/include/com/google/gson/reflect/TypeToken.d.ts'
 export class TreeTypeAdapter$SingleTypeFactory extends Object implements TypeAdapterFactory {
+    constructor(arg0: Object, arg1: TypeToken<Object>, arg2: boolean, arg3: Class<Object>, arg4: TreeTypeAdapter$1)
     private constructor(arg0: Object, arg1: TypeToken<Object>, arg2: boolean, arg3: Class<Object>)
     // private deserializer: JsonDeserializer<Object>;
     // private exactType: TypeToken<Object>;

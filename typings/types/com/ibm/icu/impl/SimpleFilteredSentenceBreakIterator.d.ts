@@ -6,7 +6,8 @@ import type { CharacterIterator } from '../../../../java/text/CharacterIterator.
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
-export class SimpleFilteredSentenceBreakIterator extends BreakIterator {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class SimpleFilteredSentenceBreakIterator extends BreakIterator implements Cloneable {
     static DONE: number;
     static KIND_CHARACTER: number;
     static KIND_LINE: number;
@@ -50,7 +51,8 @@ export class SimpleFilteredSentenceBreakIterator extends BreakIterator {
     // private forwardsPartialTrie: CharsTrie$Entry[];
     readonly text: UCharacterIterator;
     // private breakExceptionAt(arg0: number): boolean;
-    clone(): Object;
+    clone(): SimpleFilteredSentenceBreakIterator;
+    protected clone(): Object;
     current(): number;
     equals(arg0: Object | null): boolean;
     first(): number;

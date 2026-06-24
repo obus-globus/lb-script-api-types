@@ -3,6 +3,7 @@ import type { GameProfileRepository } from '../../../../com/mojang/authlib/GameP
 import type { HttpAuthenticationService } from '../../../../com/mojang/authlib/HttpAuthenticationService.d.ts'
 import type { MinecraftSessionService } from '../../../../com/mojang/authlib/minecraft/MinecraftSessionService.d.ts'
 import type { UserApiService } from '../../../../com/mojang/authlib/minecraft/UserApiService.d.ts'
+import type { FriendsService } from '../../../../com/mojang/authlib/yggdrasil/FriendsService.d.ts'
 import type { ServicesKeySet } from '../../../../com/mojang/authlib/yggdrasil/ServicesKeySet.d.ts'
 import type { Proxy } from '../../../../java/net/Proxy.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
@@ -18,6 +19,7 @@ export class YggdrasilAuthenticationService extends HttpAuthenticationService {
     private constructor(arg0: Proxy, arg1: ServicesKeySet, arg2: Environment)
     // private environment: Environment;
     readonly servicesKeySet: ServicesKeySet;
+    createFriendsService(arg0: string): FriendsService;
     createMinecraftSessionService(): MinecraftSessionService;
     createProfileRepository(): GameProfileRepository;
     createUserApiService(arg0: string): UserApiService;

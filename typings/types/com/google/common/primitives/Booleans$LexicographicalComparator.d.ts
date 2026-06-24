@@ -7,7 +7,7 @@ import type { ToLongFunction } from '../../../../java/util/function/ToLongFuncti
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
-export class Booleans$LexicographicalComparator extends Enum<Booleans$LexicographicalComparator> implements Comparator<boolean[]> {
+export class Booleans$LexicographicalComparator extends Enum<Booleans$LexicographicalComparator> implements Comparator<(Object | null)[]> {
     static INSTANCE: Booleans$LexicographicalComparator;
     static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object) => boolean;
     static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object) => boolean): (param0: Object) => boolean;
@@ -25,11 +25,11 @@ export class Booleans$LexicographicalComparator extends Enum<Booleans$Lexicograp
     compare(left: (Object | null)[], right: (Object | null)[]): number;
     reversed(): (param0: Object) => boolean;
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparing<U extends Comparable<U>>(arg0: (param0: boolean[]) => U): (param0: Object) => boolean;
-    thenComparing<U extends unknown>(arg0: (param0: boolean[]) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
-    thenComparingDouble(arg0: (param0: boolean[]) => number): (param0: Object) => boolean;
-    thenComparingInt(arg0: (param0: boolean[]) => number): (param0: Object) => boolean;
-    thenComparingLong(arg0: (param0: boolean[]) => number): (param0: Object) => boolean;
+    thenComparing<U extends Comparable<U>>(arg0: (param0: (Object | null)[]) => U): (param0: Object) => boolean;
+    thenComparing<U extends unknown>(arg0: (param0: (Object | null)[]) => U, arg1: (param0: Object) => boolean): (param0: Object) => boolean;
+    thenComparingDouble(arg0: (param0: (Object | null)[]) => number): (param0: Object) => boolean;
+    thenComparingInt(arg0: (param0: (Object | null)[]) => number): (param0: Object) => boolean;
+    thenComparingLong(arg0: (param0: (Object | null)[]) => number): (param0: Object) => boolean;
     toString(): string;
     name(): "INSTANCE";
 }

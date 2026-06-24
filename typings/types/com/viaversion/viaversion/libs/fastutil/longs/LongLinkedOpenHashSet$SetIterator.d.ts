@@ -4,8 +4,8 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { LongConsumer as LongConsumer_2 } from '../../../../../../java/util/function/LongConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LongLinkedOpenHashSet$SetIterator extends Object implements LongListIterator {
-    constructor(null_: LongLinkedOpenHashSet$SetIterator)
-    constructor(null_: LongLinkedOpenHashSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: number;
     // private index: number;
     // private next: number;

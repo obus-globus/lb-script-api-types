@@ -7,7 +7,7 @@ import type { Block } from '../../../../../net/minecraft/world/level/block/Block
 import type { CollectingNeighborUpdater$NeighborUpdates } from '../../../../../net/minecraft/world/level/redstone/CollectingNeighborUpdater$NeighborUpdates.d.ts'
 import type { Orientation } from '../../../../../net/minecraft/world/level/redstone/Orientation.d.ts'
 export class CollectingNeighborUpdater$SimpleNeighborUpdate extends Record implements CollectingNeighborUpdater$NeighborUpdates {
-    constructor(pos: BlockPos, block: Block, orientation: Orientation)
+    private constructor(pos: BlockPos, block: Block, orientation: Orientation)
     // private block: Block;
     // private orientation: Orientation;
     // private pos: BlockPos;

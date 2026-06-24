@@ -1,3 +1,4 @@
+import type { JvmProtoBuf$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -24,7 +25,9 @@ export class JvmProtoBuf$StringTableTypes extends GeneratedMessageLite implement
     static parseDelimitedFrom(paramarg0: InputStream, paramarg1: ExtensionRegistryLite): JvmProtoBuf$StringTableTypes;
     private constructor(arg0: boolean)
     private constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite)
+    constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite, arg2: JvmProtoBuf$1)
     private constructor(arg0: GeneratedMessageLite$Builder<GeneratedMessageLite, GeneratedMessageLite$Builder<any, any>>)
+    constructor(arg0: GeneratedMessageLite$Builder<GeneratedMessageLite, GeneratedMessageLite$Builder<any, any>>, arg1: JvmProtoBuf$1)
     // private localNameMemoizedSerializedSize: number;
     // private localName_: number[];
     // private memoizedIsInitialized: number;

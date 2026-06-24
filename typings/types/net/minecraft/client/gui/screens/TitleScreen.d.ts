@@ -1,6 +1,7 @@
 import type { RealmsNotificationsScreen } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsNotificationsScreen.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
+import type { FriendsButton } from '../../../../../net/minecraft/client/gui/components/FriendsButton.d.ts'
 import type { LogoRenderer } from '../../../../../net/minecraft/client/gui/components/LogoRenderer.d.ts'
 import type { SplashRenderer } from '../../../../../net/minecraft/client/gui/components/SplashRenderer.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
@@ -26,6 +27,7 @@ export class TitleScreen extends Screen {
     constructor(fading: boolean, logoRenderer: LogoRenderer)
     // private fadeInStart: number;
     // private fading: boolean;
+    // private friends: FriendsButton;
     // private logoRenderer: LogoRenderer;
     // private realmsNotificationsScreen: RealmsNotificationsScreen;
     // private splash: SplashRenderer;
@@ -35,9 +37,9 @@ export class TitleScreen extends Screen {
     // private confirmDemo(result: boolean): void;
     // private createDemoMenuOptions(topPos: number, spacing: number): number;
     // private createNormalMenuOptions(topPos: number, spacing: number): number;
-    // private createTestWorldButton(topPos: number, spacing: number): number;
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
+    // private getHorizontalPosition(currentButton: number, numberOfButtons: number, buttonWidth: number): number;
     // private getMultiplayerDisabledReason(): Component;
     init(): void;
     init(width: number, height: number): void;

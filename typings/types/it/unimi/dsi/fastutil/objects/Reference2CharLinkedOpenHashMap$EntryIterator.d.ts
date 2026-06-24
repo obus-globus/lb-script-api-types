@@ -5,8 +5,8 @@ import type { Reference2CharMap$Entry } from '../../../../../it/unimi/dsi/fastut
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2CharLinkedOpenHashMap$EntryIterator extends Reference2CharLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<Reference2CharMap$Entry<K>> {
-    constructor(null_: Reference2CharLinkedOpenHashMap$EntryIterator)
-    constructor(null_: Reference2CharLinkedOpenHashMap$EntryIterator)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: K)
     // private entry: Reference2CharLinkedOpenHashMap$MapEntry;
     acceptOnIndex<K extends unknown>(arg0: (param0: Reference2CharMap$Entry<K>) => void, arg1: number): void;
     add<K extends unknown>(arg0: Reference2CharMap$Entry<K>): void;

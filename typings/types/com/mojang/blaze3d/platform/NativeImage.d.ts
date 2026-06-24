@@ -39,6 +39,7 @@ export class NativeImage extends Object implements AutoCloseable, NativeImageAcc
     getLuminanceOrAlpha(x: number, y: number): number;
     getPixel(x: number, y: number): number;
     // private getPixelABGR(x: number, y: number): number;
+    getPixelBytes(): ByteBuffer;
     getPixels(): number[];
     getPixelsABGR(): number[];
     getPointer(): number;

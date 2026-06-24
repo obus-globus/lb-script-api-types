@@ -10,6 +10,8 @@ import type { BlockStateProvider } from '../../../../../../../net/minecraft/worl
 export class SimpleBlockConfiguration extends Record implements FeatureConfiguration {
     static CODEC: Codec<SimpleBlockConfiguration>;
     static NONE: NoneFeatureConfiguration;
+    constructor(toPlace: BlockStateProvider)
+    constructor(toPlace: BlockStateProvider, scheduleTick: boolean)
     // private scheduleTick: boolean;
     // private toPlace: BlockStateProvider;
     equals(o: Object | null): boolean;

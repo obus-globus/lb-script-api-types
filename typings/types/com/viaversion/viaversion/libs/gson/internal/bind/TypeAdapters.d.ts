@@ -19,6 +19,8 @@ import type { UUID } from '../../../../../../../java/util/UUID.d.ts'
 import type { AtomicBoolean } from '../../../../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { AtomicInteger } from '../../../../../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
 import type { AtomicIntegerArray } from '../../../../../../../java/util/concurrent/atomic/AtomicIntegerArray.d.ts'
+import type { AtomicLong } from '../../../../../../../java/util/concurrent/atomic/AtomicLong.d.ts'
+import type { AtomicLongArray } from '../../../../../../../java/util/concurrent/atomic/AtomicLongArray.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 export class TypeAdapters extends Object {
@@ -29,7 +31,9 @@ export class TypeAdapters extends Object {
     static ATOMIC_INTEGER_ARRAY_FACTORY: TypeAdapterFactory;
     static ATOMIC_INTEGER_FACTORY: TypeAdapterFactory;
     static BIG_DECIMAL: TypeAdapter<BigDecimal>;
+    static BIG_DECIMAL_FACTORY: TypeAdapterFactory;
     static BIG_INTEGER: TypeAdapter<BigInteger>;
+    static BIG_INTEGER_FACTORY: TypeAdapterFactory;
     static BIT_SET: TypeAdapter<BitSet>;
     static BIT_SET_FACTORY: TypeAdapterFactory;
     static BOOLEAN: TypeAdapter<boolean>;
@@ -46,8 +50,10 @@ export class TypeAdapters extends Object {
     static CURRENCY: TypeAdapter<Currency>;
     static CURRENCY_FACTORY: TypeAdapterFactory;
     static DOUBLE: TypeAdapter<Number>;
+    static DOUBLE_STRICT: TypeAdapter<Number>;
     static ENUM_FACTORY: TypeAdapterFactory;
     static FLOAT: TypeAdapter<Number>;
+    static FLOAT_STRICT: TypeAdapter<Number>;
     static INET_ADDRESS: TypeAdapter<InetAddress>;
     static INET_ADDRESS_FACTORY: TypeAdapterFactory;
     static INTEGER: TypeAdapter<Number>;
@@ -55,9 +61,11 @@ export class TypeAdapters extends Object {
     static JSON_ELEMENT: TypeAdapter<JsonElement>;
     static JSON_ELEMENT_FACTORY: TypeAdapterFactory;
     static LAZILY_PARSED_NUMBER: TypeAdapter<LazilyParsedNumber>;
+    static LAZILY_PARSED_NUMBER_FACTORY: TypeAdapterFactory;
     static LOCALE: TypeAdapter<Locale>;
     static LOCALE_FACTORY: TypeAdapterFactory;
     static LONG: TypeAdapter<Number>;
+    static LONG_AS_STRING: TypeAdapter<Number>;
     static SHORT: TypeAdapter<Number>;
     static SHORT_FACTORY: TypeAdapterFactory;
     static STRING: TypeAdapter<string>;
@@ -72,6 +80,9 @@ export class TypeAdapters extends Object {
     static URL_FACTORY: TypeAdapterFactory;
     static UUID: TypeAdapter<UUID>;
     static UUID_FACTORY: TypeAdapterFactory;
+    static atomicLongAdapter(paramarg0: TypeAdapter<Number>): TypeAdapter<AtomicLong>;
+    static atomicLongArrayAdapter(paramarg0: TypeAdapter<Number>): TypeAdapter<AtomicLongArray>;
+    static javaTimeTypeAdapterFactory(): TypeAdapterFactory;
     static newFactory(paramarg0: TypeToken<Object>, paramarg1: TypeAdapter<Object>): TypeAdapterFactory;
     static newFactory(paramarg0: Class<Object>, paramarg1: TypeAdapter<Object>): TypeAdapterFactory;
     static newFactory(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: TypeAdapter<Object>): TypeAdapterFactory;

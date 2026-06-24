@@ -61,7 +61,7 @@ export class MobEffectInstance extends Object implements Comparable<MobEffectIns
     onEffectStarted(mob: LivingEntity): void;
     onMobHurt(level: ServerLevel, mob: LivingEntity, source: DamageSource, damage: number): void;
     onMobRemoved(level: ServerLevel, mob: LivingEntity, reason: Entity$RemovalReason): void;
-    setDetailsFrom(copy: MobEffectInstance): void;
+    // private setDetailsFrom(copy: MobEffectInstance): void;
     showIcon(): boolean;
     skipBlending(): void;
     tickClient(): void;

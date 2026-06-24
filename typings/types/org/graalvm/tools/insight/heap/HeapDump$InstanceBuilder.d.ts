@@ -4,7 +4,7 @@ import type { HeapDump } from '../../../../../org/graalvm/tools/insight/heap/Hea
 import type { HeapDump$ClassInstance } from '../../../../../org/graalvm/tools/insight/heap/HeapDump$ClassInstance.d.ts'
 import type { HeapDump$ObjectInstance } from '../../../../../org/graalvm/tools/insight/heap/HeapDump$ObjectInstance.d.ts'
 export class HeapDump$InstanceBuilder extends Object {
-    private constructor(null_: HeapDump$InstanceBuilder, clazz: HeapDump$ClassInstance, instanceId: number)
+    private constructor(null_: HeapDump, clazz: HeapDump$ClassInstance, instanceId: number)
     // private clazz: HeapDump$ClassInstance;
     // private instanceId: HeapDump$ObjectInstance;
     // private namesAndValues: Object[];

@@ -3,6 +3,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class MapDecoration extends Record {
     static TYPE: Type<MapDecoration>;
+    constructor(type: string, x: number, z: number, rotation: number)
     // private rotation: number;
     // private type: string;
     // private x: number;

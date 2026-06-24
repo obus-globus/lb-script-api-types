@@ -29,6 +29,7 @@ export class JdkZlibDecoder extends ZlibDecoder {
     // private flags: number;
     // private gzipState: JdkZlibDecoder$GzipState;
     // private inflater: Inflater;
+    // private maxForwardBytes: number;
     // private needsRead: boolean;
     // private xlen: number;
     channelReadComplete(arg0: ChannelHandlerContext): void;

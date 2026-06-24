@@ -3,6 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CommandResultCallback } from '../../../../net/minecraft/commands/CommandResultCallback.d.ts'
 import type { Frame$FrameControl } from '../../../../net/minecraft/commands/execution/Frame$FrameControl.d.ts'
 export class Frame extends Record {
+    constructor(depth: number, returnValueConsumer: (param0: boolean, param1: number) => void, frameControl: () => void)
     // private depth: number;
     // private frameControl: () => void;
     // private returnValueConsumer: (param0: boolean, param1: number) => void;

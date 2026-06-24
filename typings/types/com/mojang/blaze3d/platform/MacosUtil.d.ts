@@ -7,5 +7,6 @@ export class MacosUtil extends Object {
     static clearResizableBit(paramwindow: Window): void;
     static exitNativeFullscreen(paramwindow: Window): void;
     static loadIcon(paramicon: () => InputStream): void;
+    static setWindowColorSpaceForOpenGLBecauseGLFWDoesnt(paramglfwWindowHandle: number): void;
     constructor()
 }

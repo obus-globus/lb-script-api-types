@@ -11,7 +11,7 @@ export class RealmsMainScreen$RealmSelectionList extends ObjectSelectionList<Rea
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: RealmsMainScreen$RealmSelectionList)
+    constructor(null_: RealmsMainScreen)
     // private addEntriesForNotification(visitUrl: RealmsNotification$VisitUrl, realmsMainScreen: RealmsMainScreen, previouslySelected: RealmsMainScreen$Entry): void;
     getRowWidth(): number;
     // private refreshEntries(realmsMainScreen: RealmsMainScreen): void;

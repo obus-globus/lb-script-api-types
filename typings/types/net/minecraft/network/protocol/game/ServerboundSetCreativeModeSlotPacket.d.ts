@@ -12,6 +12,8 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 export class ServerboundSetCreativeModeSlotPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ServerboundSetCreativeModeSlotPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(slotNum: number, itemStack: ItemStack)
+    constructor(slotNum: number, itemStack: ItemStack)
     // private itemStack: ItemStack;
     // private slotNum: number;
     equals(o: Object | null): boolean;

@@ -5,8 +5,9 @@ import type { ClassFileTransformer } from '../../../../java/lang/instrument/Clas
 import type { ProtectionDomain } from '../../../../java/security/ProtectionDomain.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ClassNode } from '../../../../org/objectweb/asm/tree/ClassNode.d.ts'
+import type { MixinAgent } from '../../../../org/spongepowered/tools/agent/MixinAgent.d.ts'
 export class MixinAgent$Transformer extends Object implements ClassFileTransformer {
-    constructor(null_: MixinAgent$Transformer)
+    constructor(null_: MixinAgent)
     // private reApplyMixins(arg0: string[]): boolean;
     // private reloadMixin(arg0: string, arg1: ClassNode): string[];
     transform(arg0: ClassLoader, arg1: string, arg2: Class<Object>, arg3: ProtectionDomain, arg4: number[]): number[];

@@ -16,6 +16,8 @@ import type { MapItemSavedData$MapPatch } from '../../../../../net/minecraft/wor
 export class ClientboundMapItemDataPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundMapItemDataPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(mapId: MapId, scale: number, locked: boolean, decorations: Optional<MapDecoration[]>, colorPatch: Optional<MapItemSavedData$MapPatch>)
+    constructor(mapId: MapId, scale: number, locked: boolean, decorations: MapDecoration[], colorPatch: MapItemSavedData$MapPatch)
     // private colorPatch: Optional<MapItemSavedData$MapPatch>;
     // private decorations: Optional<MapDecoration[]>;
     // private locked: boolean;

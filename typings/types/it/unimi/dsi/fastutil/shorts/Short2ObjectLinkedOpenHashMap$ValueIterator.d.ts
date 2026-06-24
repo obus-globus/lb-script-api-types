@@ -3,7 +3,7 @@ import type { Short2ObjectLinkedOpenHashMap$MapIterator } from '../../../../../i
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ObjectLinkedOpenHashMap$ValueIterator extends Short2ObjectLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<V> {
-    constructor(null_: Short2ObjectLinkedOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex<V extends unknown>(arg0: (param0: V) => void, arg1: number): void;
     add<V extends unknown>(arg0: V): void;
     next<V extends unknown>(): V;

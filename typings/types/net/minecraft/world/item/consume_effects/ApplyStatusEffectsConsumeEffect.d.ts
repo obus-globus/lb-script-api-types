@@ -15,6 +15,10 @@ export class ApplyStatusEffectsConsumeEffect extends Record implements ConsumeEf
     static CODEC: MapCodec<ApplyStatusEffectsConsumeEffect>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ApplyStatusEffectsConsumeEffect>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ConsumeEffect>;
+    constructor(effects: MobEffectInstance[])
+    constructor(effects: MobEffectInstance[], probability: number)
+    constructor(effect: MobEffectInstance)
+    constructor(effect: MobEffectInstance, probability: number)
     // private effects: MobEffectInstance[];
     // private probability: number;
     apply(level: Level, stack: ItemStack, user: LivingEntity): boolean;

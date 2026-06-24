@@ -1,10 +1,12 @@
+import type { FloatOpenCustomHashSet$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { FloatConsumer } from '../../../../../it/unimi/dsi/fastutil/floats/FloatConsumer.d.ts'
 import type { FloatIterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FloatOpenCustomHashSet$SetIterator extends Object implements FloatIterator {
-    private constructor(null_: FloatOpenCustomHashSet$SetIterator)
+    private constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: FloatOpenCustomHashSet$1)
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

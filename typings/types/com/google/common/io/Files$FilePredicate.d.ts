@@ -1,3 +1,4 @@
+import type { Files$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -10,6 +11,7 @@ export class Files$FilePredicate extends Enum<Files$FilePredicate> implements Pr
     static valueOf(paramname: string): Files$FilePredicate;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: Files$1)
     test(input: File): boolean;
     name(): "IS_DIRECTORY" | "IS_FILE";
 }

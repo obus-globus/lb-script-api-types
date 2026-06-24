@@ -8,6 +8,7 @@ export class GuiSpriteScaling$Tile extends Record implements GuiSpriteScaling {
     static CODEC: Codec<GuiSpriteScaling>;
     static CODEC: MapCodec<GuiSpriteScaling$Tile>;
     static DEFAULT: GuiSpriteScaling;
+    constructor(width: number, height: number)
     // private height: number;
     // private width: number;
     equals(o: Object | null): boolean;

@@ -28,6 +28,7 @@ export class PropertiesConfigurationFactory extends ConfigurationFactory {
     constructor()
     getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI): Configuration;
     getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI, loader: ClassLoader): Configuration;
+    getConfiguration(loggerContext: LoggerContext, name: string, configLocations: URI[]): Configuration;
     getConfiguration(loggerContext: LoggerContext, source: ConfigurationSource): PropertiesConfiguration;
     getSupportedTypes(): string[];
 }

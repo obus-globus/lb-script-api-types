@@ -8,6 +8,7 @@ import type { ServerStatus$Players } from '../../../../../net/minecraft/network/
 import type { ServerStatus$Version } from '../../../../../net/minecraft/network/protocol/status/ServerStatus$Version.d.ts'
 export class ServerStatus extends Record {
     static CODEC: Codec<ServerStatus>;
+    constructor(description: Component, players: Optional<ServerStatus$Players>, version: Optional<ServerStatus$Version>, favicon: Optional<ServerStatus$Favicon>, enforcesSecureChat: boolean)
     // private description: Component;
     // private enforcesSecureChat: boolean;
     // private favicon: Optional<ServerStatus$Favicon>;

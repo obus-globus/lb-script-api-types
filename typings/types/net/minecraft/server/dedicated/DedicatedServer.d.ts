@@ -1,5 +1,4 @@
 import type { DataFixer } from '../../../../com/mojang/datafixers/DataFixer.d.ts'
-import type { SslContext } from '../../../../io/netty/handler/ssl/SslContext.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
@@ -28,6 +27,7 @@ import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerL
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { ServerTextFilter } from '../../../../net/minecraft/server/network/ServerTextFilter.d.ts'
 import type { TextFilter } from '../../../../net/minecraft/server/network/TextFilter.d.ts'
+import type { NotificationManager } from '../../../../net/minecraft/server/notifications/NotificationManager.d.ts'
 import type { PackRepository } from '../../../../net/minecraft/server/packs/repository/PackRepository.d.ts'
 import type { LevelBasedPermissionSet } from '../../../../net/minecraft/server/permissions/LevelBasedPermissionSet.d.ts'
 import type { PermissionSet } from '../../../../net/minecraft/server/permissions/PermissionSet.d.ts'
@@ -51,19 +51,19 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     static DEFAULT_GAME_RULES: () => GameRules;
     static DEMO_SETTINGS: LevelSettings;
     static NULL: CommandSource;
+    static SERVER_THREAD_NAME: string;
     static SPAWN_POSITION_SEARCH_RADIUS: number;
     static VANILLA_BRAND: string;
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
     static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
-    constructor(serverThread: Thread, levelStorageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, settings: DedicatedServerSettings, fixerUpper: DataFixer, services: Services)
+    constructor(serverThread: Thread, levelStorageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, settings: DedicatedServerSettings, fixerUpper: DataFixer, services: Services, jsonRpcServer: ManagementServer, notificationManager: NotificationManager)
     // private codeOfConductTexts: { [key: string]: string };
     // private consoleInput: ConsoleInput[];
     // private gui: MinecraftServerGui;
     // private isTickTimeLoggingEnabled: boolean;
     // private jsonRpcServer: ManagementServer;
-    // private lastHeartbeat: number;
     // private queryThreadGs4: QueryThreadGs4;
     // private rconConsoleSource: RconConsoleSource;
     // private rconThread: RconThread;
@@ -74,7 +74,6 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     acceptsTransfers(): boolean;
     allowFlight(): boolean;
     convertOldUsers(): boolean;
-    // private createSslContext(): SslContext;
     createTextFilterForPlayer(player: ServerPlayer): TextFilter;
     dumpServerProperties(path: Path[]): void;
     endMetricsRecordingTick(): void;
@@ -86,7 +85,9 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     forceSynchronousWrites(): boolean;
     gameMode(): GameType;
     getAbsoluteMaxWorldSize(): number;
+    getChatSpamThresholdSeconds(): number;
     getCodeOfConducts(): { [key: string]: string };
+    getCommandSpamThresholdSeconds(): number;
     getCompressionThreshold(): number;
     getForcedGameType(): GameType;
     getFunctionCompilationPermissions(): PermissionSet;
@@ -143,7 +144,7 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     setRepliesToStatus(enable: boolean): void;
     setSimulationDistance(simulationDistance: number): void;
     setSpawnProtectionRadius(spawnProtectionRadius: number): void;
-    setStatusHeartbeatInterval(statusHeartbeatInterval: number): void;
+    setStatusHeartbeatInterval(statusHeartbeatInterval: number): boolean;
     setUsingWhitelist(usingWhitelist: boolean): void;
     setViewDistance(viewDistance: number): void;
     shouldInformAdmins(): boolean;

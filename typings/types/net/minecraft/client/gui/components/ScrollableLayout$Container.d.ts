@@ -3,6 +3,7 @@ import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/g
 import type { AbstractContainerWidget } from '../../../../../net/minecraft/client/gui/components/AbstractContainerWidget.d.ts'
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
 import type { AbstractWidget } from '../../../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
+import type { ScrollableLayout } from '../../../../../net/minecraft/client/gui/components/ScrollableLayout.d.ts'
 import type { GuiEventListener } from '../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { NarrationElementOutput } from '../../../../../net/minecraft/client/gui/narration/NarrationElementOutput.d.ts'
@@ -16,7 +17,7 @@ export class ScrollableLayout$Container extends AbstractContainerWidget {
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: ScrollableLayout$Container, minecraft: Minecraft, width: number, height: number, scrollbarSettings: AbstractScrollArea$ScrollbarSettings)
+    constructor(null_: ScrollableLayout, minecraft: Minecraft, width: number, height: number, scrollbarSettings: AbstractScrollArea$ScrollbarSettings)
     // private children: AbstractWidget[];
     // private minecraft: Minecraft;
     children(): GuiEventListener[];
@@ -24,6 +25,7 @@ export class ScrollableLayout$Container extends AbstractContainerWidget {
     extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
     getNarratables(): NarratableEntry[];
+    refreshChildren(): void;
     // private scrollbarReserve(): number;
     setFocused(focused: boolean): void;
     setFocused(focused: GuiEventListener): void;

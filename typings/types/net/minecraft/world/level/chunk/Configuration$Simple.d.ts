@@ -5,6 +5,7 @@ import type { Palette } from '../../../../../net/minecraft/world/level/chunk/Pal
 import type { Palette$Factory } from '../../../../../net/minecraft/world/level/chunk/Palette$Factory.d.ts'
 import type { Strategy } from '../../../../../net/minecraft/world/level/chunk/Strategy.d.ts'
 export class Configuration$Simple extends Record implements Configuration {
+    constructor(factory: Palette$Factory, bits: number)
     // private bits: number;
     // private factory: Palette$Factory;
     alwaysRepack(): boolean;

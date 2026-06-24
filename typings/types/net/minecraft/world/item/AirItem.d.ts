@@ -26,6 +26,6 @@ export class AirItem extends Item {
     static byBlock(paramblock: Block): Item;
     static byId(paramid: number): Item;
     static getId(paramitem: Item): number;
-    constructor(block: Block, properties: Item$Properties)
+    constructor(properties: Item$Properties)
     getName(itemStack: ItemStack): Component;
 }

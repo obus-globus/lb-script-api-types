@@ -7,6 +7,7 @@ export class TranslucencyPointOfView extends Object {
     // private y: number;
     // private z: number;
     equals(other: Object | null): boolean;
+    hashCode(): number;
     isAxisAligned(): boolean;
     set(cameraPos: Vec3, sectionPos: number): TranslucencyPointOfView;
 }

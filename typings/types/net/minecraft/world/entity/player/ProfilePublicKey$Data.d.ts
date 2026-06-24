@@ -10,6 +10,8 @@ import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/Frien
 import type { SignatureValidator } from '../../../../../net/minecraft/util/SignatureValidator.d.ts'
 export class ProfilePublicKey$Data extends Record implements IProfilePublicKey_Data {
     static CODEC: Codec<ProfilePublicKey$Data>;
+    constructor(expiresAt: Instant, key: PublicKey, keySignature: number[])
+    constructor(input: FriendlyByteBuf)
     // private expiresAt: Instant;
     // private key: PublicKey;
     // private keySignature: number[];

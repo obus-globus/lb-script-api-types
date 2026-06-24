@@ -11,8 +11,8 @@ export class Short2BooleanArrayMap$MapEntry extends Object implements Short2Bool
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: boolean): ShortBooleanPair;
-    constructor(null_: Short2BooleanArrayMap$MapEntry)
-    constructor(null_: Short2BooleanArrayMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     equals(arg0: Object | null): boolean;
     first(): number;

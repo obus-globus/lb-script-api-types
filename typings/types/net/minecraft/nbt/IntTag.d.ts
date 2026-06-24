@@ -29,6 +29,7 @@ export class IntTag extends Record implements NumericTag {
     static TAG_STRING: number;
     static TYPE: TagType<IntTag>;
     static valueOf(parami: number): IntTag;
+    constructor(value: number)
     // private value: number;
     accept(visitor: StreamTagVisitor): StreamTagVisitor$ValueResult;
     accept(visitor: TagVisitor): void;

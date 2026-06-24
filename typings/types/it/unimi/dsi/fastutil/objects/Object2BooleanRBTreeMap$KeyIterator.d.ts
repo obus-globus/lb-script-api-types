@@ -2,8 +2,8 @@ import type { Object2BooleanRBTreeMap$TreeIterator } from '../../../../../it/uni
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2BooleanRBTreeMap$KeyIterator extends Object2BooleanRBTreeMap$TreeIterator implements ObjectListIterator<K> {
-    constructor(null_: Object2BooleanRBTreeMap$KeyIterator)
-    constructor(null_: Object2BooleanRBTreeMap$KeyIterator)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: K)
     add<K extends unknown>(arg0: K): void;
     next<K extends unknown>(): K;
     previous<K extends unknown>(): K;

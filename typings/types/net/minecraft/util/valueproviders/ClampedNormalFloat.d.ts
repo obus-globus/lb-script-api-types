@@ -7,6 +7,7 @@ export class ClampedNormalFloat extends Record implements FloatProvider {
     static MAP_CODEC: MapCodec<ClampedNormalFloat>;
     static of(parammean: number, paramdeviation: number, parammin: number, parammax: number): ClampedNormalFloat;
     static sample(paramrandom: RandomSource, parammean: number, paramdeviation: number, parammin: number, parammax: number): number;
+    constructor(mean: number, deviation: number, min: number, max: number)
     // private deviation: number;
     // private max: number;
     // private mean: number;

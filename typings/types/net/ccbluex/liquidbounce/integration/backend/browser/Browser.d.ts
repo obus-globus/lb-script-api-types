@@ -6,7 +6,7 @@ import type { BrowserViewport } from '../../../../../../net/ccbluex/liquidbounce
 /**
  * Browser interface for web content rendering and interaction
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L23 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:23}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L23 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:23}
  */
 export interface Browser extends AutoCloseable, Object{
     /*not mapped: */ isInitialized(): boolean;
@@ -15,13 +15,13 @@ export interface Browser extends AutoCloseable, Object{
     /**
      * Current browser texture for rendering
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:39}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:39}
      */
     readonly texture: BrowserTexture | null;
     /**
      * Current URL of the browser
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:34}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:34}
      */
     url: string;
     viewport: BrowserViewport;
@@ -30,43 +30,43 @@ export interface Browser extends AutoCloseable, Object{
     /**
      * Reloads the page ignoring cache
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:44}
      */
     forceReload(): void;
     /**
      * Navigate back in history
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:59}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:59}
      */
     goBack(): void;
     /**
      * Navigate forward in history
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:54}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:54}
      */
     goForward(): void;
     /**
      * Invalidates the browser texture, forcing a redraw
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:69}
      */
     invalidate(): void;
     /**
      * Reloads the current page
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:49}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:49}
      */
     reload(): void;
     /**
      * String representation of the Browser Instance
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:74}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:74}
      */
     toString(): string;
     /**
      * Updates browser dimensions and properties
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:64}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/Browser.kt:64}
      */
     update(width: number, height: number): void;
 }

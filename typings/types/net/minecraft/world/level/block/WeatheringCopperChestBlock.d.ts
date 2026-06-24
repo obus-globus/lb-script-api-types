@@ -90,6 +90,7 @@ export class WeatheringCopperChestBlock extends CopperChestBlock implements Weat
     static getFirst(paramblock: Block): Block;
     static getFirst(paramstate: BlockState): BlockState;
     static getFromCopperBlock(paramcopperBlock: Block, paramfacing: Direction, paramlevel: Level, parampos: BlockPos): BlockState;
+    static getHingeSound(paramstate: WeatheringCopper$WeatherState, paramopen: boolean): SoundEvent;
     static getId(paramblockState: BlockState): number;
     static getNext(paramblock: Block): Optional<Block>;
     static getPrevious(paramblock: Block): Optional<Block>;

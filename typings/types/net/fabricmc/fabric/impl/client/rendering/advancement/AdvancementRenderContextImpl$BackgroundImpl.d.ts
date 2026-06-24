@@ -6,6 +6,7 @@ import type { AdvancementProgress } from '../../../../../../../net/minecraft/adv
 import type { GuiGraphicsExtractor } from '../../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { ScreenRectangle } from '../../../../../../../net/minecraft/client/gui/navigation/ScreenRectangle.d.ts'
 export class AdvancementRenderContextImpl$BackgroundImpl extends Record implements AdvancementRenderContext$Background {
+    constructor(graphics: GuiGraphicsExtractor, holder: AdvancementHolder, progress: AdvancementProgress, bounds: ScreenRectangle, scrollX: number, scrollY: number)
     // private bounds: ScreenRectangle;
     // private graphics: GuiGraphicsExtractor;
     // private holder: AdvancementHolder;

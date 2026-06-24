@@ -7,6 +7,7 @@ import type { BeehiveBlockEntity } from '../../../../net/minecraft/world/level/b
 export class DebugHiveInfo extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DebugHiveInfo>;
     static pack(parambeehive: BeehiveBlockEntity): DebugHiveInfo;
+    constructor(type: Block, occupantCount: number, honeyLevel: number, sedated: boolean)
     // private honeyLevel: number;
     // private occupantCount: number;
     // private sedated: boolean;

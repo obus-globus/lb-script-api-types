@@ -6,6 +6,7 @@ import type { ItemModel$Unbaked } from '../../../../../net/minecraft/client/rend
 export class RangeSelectItemModel$Entry extends Record {
     static BY_THRESHOLD: (param0: Object) => boolean;
     static CODEC: Codec<RangeSelectItemModel$Entry>;
+    constructor(threshold: number, model: ItemModel$Unbaked)
     // private model: ItemModel$Unbaked;
     // private threshold: number;
     equals(o: Object | null): boolean;

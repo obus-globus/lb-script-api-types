@@ -1,10 +1,10 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { Pair } from '../../../../../../../../kotlin/Pair.d.ts'
 import type { Mode } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
+import type { ModuleAutoShop$PurchaseSimulationResult } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop$PurchaseSimulationResult.d.ts'
 import type { ShopConfigPreset } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ShopConfigPreset.d.ts'
 import type { ItemInfo } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoshop/serializable/ItemInfo.d.ts'
 import type { ShopConfig } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autoshop/serializable/ShopConfig.d.ts'
@@ -14,7 +14,7 @@ import type { ShopElement } from '../../../../../../../../net/ccbluex/liquidboun
  *
  * Automatically buys specific items in a BedWars shop.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop.kt:55}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop.kt:55}
  */
 export class ModuleAutoShop extends ClientModule {
     static INSTANCE: ModuleAutoShop;
@@ -44,6 +44,6 @@ export class ModuleAutoShop extends ClientModule {
     // private hasReceivedItems(prevInventory: { [key: string]: any }, expectedItems: { [key: string]: any }): boolean;
     // private isShopOpen(): boolean;
     // private reset(): void;
-    // private simulateNextPurchases(remainingElements: ShopElement[], onlySameCategory: boolean): Pair<(Object | null)[], { [key: string]: any }>;
+    // private simulateNextPurchases(remainingElements: ShopElement[], onlySameCategory: boolean): ModuleAutoShop$PurchaseSimulationResult;
     // private switchCategory(nextCategorySlot: number): void;
 }

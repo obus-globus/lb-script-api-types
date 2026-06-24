@@ -11,6 +11,7 @@ export class SingleQuadParticle$Layer extends Record {
     static TRANSLUCENT_ITEMS: SingleQuadParticle$Layer;
     static TRANSLUCENT_TERRAIN: SingleQuadParticle$Layer;
     static bySprite(paramsprite: TextureAtlasSprite): SingleQuadParticle$Layer;
+    constructor(translucent: boolean, textureAtlasLocation: Identifier, pipeline: RenderPipeline)
     // private pipeline: RenderPipeline;
     // private textureAtlasLocation: Identifier;
     // private translucent: boolean;

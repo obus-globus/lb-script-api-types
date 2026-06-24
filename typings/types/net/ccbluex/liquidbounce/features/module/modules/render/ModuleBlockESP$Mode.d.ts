@@ -3,7 +3,7 @@ import type { AtomicBoolean } from '../../../../../../../kotlinx/atomicfu/Atomic
 import type { Mode } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
-import type { Matrix4fc } from '../../../../../../../org/joml/Matrix4fc.d.ts'
+import type { Matrix4f } from '../../../../../../../org/joml/Matrix4f.d.ts'
 export class ModuleBlockESP$Mode extends Mode {
     static Companion: Tagged$Companion;
     protected constructor(name: string)
@@ -13,6 +13,6 @@ export class ModuleBlockESP$Mode extends Mode {
     // private useColor: boolean;
     // private /*not mapped: */ getUseColor(): boolean;
     enable(): void;
-    protected getDynamicTransformsUniform(modelView: Matrix4fc | null, colorModulatorAlpha: number): GpuBufferSlice;
+    protected getDynamicTransformsUniform(modelView: Matrix4f | null, colorModulatorAlpha: number): GpuBufferSlice;
     markDirty(): void;
 }

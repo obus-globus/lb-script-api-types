@@ -6,6 +6,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class BannerPatternLayer extends Record {
     static ARRAY_TYPE: Type<(Object | null)[]>;
     static TYPE: Type<BannerPatternLayer>;
+    constructor(pattern: Holder<BannerPattern>, dyeColor: number)
     // private dyeColor: number;
     // private pattern: Holder<BannerPattern>;
     dyeColor(): number;

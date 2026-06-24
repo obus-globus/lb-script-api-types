@@ -13,6 +13,7 @@ import type { DayOfWeek as DayOfWeek_2 } from '../../kotlinx/datetime/DayOfWeek.
 import type { FixedOffsetTimeZone } from '../../kotlinx/datetime/FixedOffsetTimeZone.d.ts'
 import type { LocalDate as LocalDate_2 } from '../../kotlinx/datetime/LocalDate.d.ts'
 import type { LocalDateTime as LocalDateTime_2 } from '../../kotlinx/datetime/LocalDateTime.d.ts'
+import type { LocalIsoWeekDate } from '../../kotlinx/datetime/LocalIsoWeekDate.d.ts'
 import type { LocalTime as LocalTime_2 } from '../../kotlinx/datetime/LocalTime.d.ts'
 import type { Month as Month_2 } from '../../kotlinx/datetime/Month.d.ts'
 import type { TimeZone } from '../../kotlinx/datetime/TimeZone.d.ts'
@@ -21,6 +22,7 @@ import type { YearMonth as YearMonth_2 } from '../../kotlinx/datetime/YearMonth.
 export class ConvertersKt extends Object {
     static toJavaDayOfWeek(paramarg0: DayOfWeek_2): DayOfWeek;
     static toJavaLocalDate(paramarg0: LocalDate_2): LocalDate;
+    static toJavaLocalDate(paramarg0: LocalIsoWeekDate): LocalDate;
     static toJavaLocalDateTime(paramarg0: LocalDateTime_2): LocalDateTime;
     static toJavaLocalTime(paramarg0: LocalTime_2): LocalTime;
     static toJavaMonth(paramarg0: Month_2): Month;
@@ -34,6 +36,7 @@ export class ConvertersKt extends Object {
     static toKotlinFixedOffsetTimeZone(paramarg0: ZoneOffset): FixedOffsetTimeZone;
     static toKotlinLocalDate(paramarg0: LocalDate): LocalDate_2;
     static toKotlinLocalDateTime(paramarg0: LocalDateTime): LocalDateTime_2;
+    static toKotlinLocalIsoWeekDate(paramarg0: LocalDate): LocalIsoWeekDate;
     static toKotlinLocalTime(paramarg0: LocalTime): LocalTime_2;
     static toKotlinMonth(paramarg0: Month): Month_2;
     static toKotlinTimeZone(paramarg0: ZoneId): TimeZone;

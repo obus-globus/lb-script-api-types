@@ -6,13 +6,13 @@ export class ArrayExtensionsKt extends Object {
     /**
      * A JavaScript-styled forEach
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:112}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L112 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:112}
      */
     static forEachWithSelf(c: Object | null, action: (param0: Object, param1: Object, param2: Object) => void): void;
     /**
      * Transform a Collection to a String with by given {@link transform}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L139 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:139}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L139 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:139}
      */
     static mapString(paramarg0: (Object | null)[], paramarg1: (param0: Object) => string): string;
     static mapString(paramarg0: string, paramarg1: (param0: Object) => string): string;
@@ -26,7 +26,7 @@ export class ArrayExtensionsKt extends Object {
     /**
      * Inserts a new element into a sorted list while maintaining the order.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L121 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:121}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L121 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:121}
      */
     static sortedInsert(mutableList: (Object | null)[], item: Object | null, selector: (param0: Object) => Object | null): void;
     static subList(list: (Object | null)[], fromIndex: number): (Object | null)[];

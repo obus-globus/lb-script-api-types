@@ -9,7 +9,7 @@ export class AbstractEpollStreamChannel$SpliceInChannelTask extends AbstractEpol
     static CLOSE: ChannelFutureListener;
     static CLOSE_ON_FAILURE: ChannelFutureListener;
     static FIRE_EXCEPTION_ON_FAILURE: ChannelFutureListener;
-    constructor(null_: AbstractEpollStreamChannel$SpliceInChannelTask, arg1: AbstractEpollStreamChannel, arg2: number, arg3: ChannelPromise)
+    constructor(null_: AbstractEpollStreamChannel, arg1: AbstractEpollStreamChannel, arg2: number, arg3: ChannelPromise)
     // private ch: AbstractEpollStreamChannel;
     operationComplete(arg0: ChannelFuture): void;
     spliceIn(arg0: RecvByteBufAllocator$Handle): boolean;

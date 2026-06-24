@@ -6,6 +6,7 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 export class Enchantable extends Record {
     static CODEC: Codec<Enchantable>;
     static STREAM_CODEC: StreamCodec<ByteBuf, Enchantable>;
+    constructor(value: number)
     // private value: number;
     equals(o: Object | null): boolean;
     hashCode(): number;

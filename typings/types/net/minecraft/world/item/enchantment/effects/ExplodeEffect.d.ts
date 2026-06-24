@@ -24,6 +24,7 @@ export class ExplodeEffect extends Record implements EnchantmentEntityEffect {
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<ExplodeEffect>;
     static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
+    constructor(attributeToUser: boolean, damageType: Optional<Holder<DamageType>>, knockbackMultiplier: Optional<LevelBasedValue>, immuneBlocks: Optional<Holder<Block>[]>, offset: Vec3, radius: LevelBasedValue, createFire: boolean, blockInteraction: Level$ExplosionInteraction, smallParticle: ParticleOptions, largeParticle: ParticleOptions, blockParticles: WeightedList<ExplosionParticleInfo>, sound: Holder<SoundEvent>)
     // private attributeToUser: boolean;
     // private blockInteraction: Level$ExplosionInteraction;
     // private blockParticles: WeightedList<ExplosionParticleInfo>;

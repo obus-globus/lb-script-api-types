@@ -4,8 +4,8 @@ import type { Byte2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/by
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Byte2CharLinkedOpenHashMap$FastEntryIterator extends Byte2CharLinkedOpenHashMap$MapIterator<(param0: Byte2CharMap$Entry) => void> implements ObjectListIterator<Byte2CharMap$Entry> {
-    constructor(null_: Byte2CharLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Byte2CharLinkedOpenHashMap$FastEntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Byte2CharLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Byte2CharMap$Entry) => void, arg1: number): void;
     add(arg0: Byte2CharMap$Entry): void;

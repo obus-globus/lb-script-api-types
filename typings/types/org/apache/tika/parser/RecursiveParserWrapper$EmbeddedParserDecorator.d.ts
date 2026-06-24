@@ -3,6 +3,7 @@ import type { Metadata } from '../../../../org/apache/tika/metadata/Metadata.d.t
 import type { MediaType } from '../../../../org/apache/tika/mime/MediaType.d.ts'
 import type { ParseContext } from '../../../../org/apache/tika/parser/ParseContext.d.ts'
 import type { Parser } from '../../../../org/apache/tika/parser/Parser.d.ts'
+import type { RecursiveParserWrapper } from '../../../../org/apache/tika/parser/RecursiveParserWrapper.d.ts'
 import type { RecursiveParserWrapper$ParserState } from '../../../../org/apache/tika/parser/RecursiveParserWrapper$ParserState.d.ts'
 import type { StatefulParser } from '../../../../org/apache/tika/parser/StatefulParser.d.ts'
 import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts'
@@ -10,7 +11,7 @@ export class RecursiveParserWrapper$EmbeddedParserDecorator extends StatefulPars
     static withFallbacks(paramarg0: Parser[], paramarg1: MediaType[]): Parser;
     static withTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
     static withoutTypes(paramarg0: Parser, paramarg1: MediaType[]): Parser;
-    private constructor(null_: RecursiveParserWrapper$EmbeddedParserDecorator, arg1: Parser, arg2: string, arg3: string, arg4: RecursiveParserWrapper$ParserState)
+    private constructor(null_: RecursiveParserWrapper, arg1: Parser, arg2: string, arg3: string, arg4: RecursiveParserWrapper$ParserState)
     // private embeddedIdPath: string;
     // private location: string;
     // private parserState: RecursiveParserWrapper$ParserState;

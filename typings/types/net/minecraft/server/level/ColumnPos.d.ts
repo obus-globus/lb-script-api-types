@@ -5,6 +5,7 @@ export class ColumnPos extends Record {
     static asLong(paramx: number, paramz: number): number;
     static getX(parampos: number): number;
     static getZ(parampos: number): number;
+    constructor(x: number, z: number)
     // private x: number;
     // private z: number;
     equals(o: Object | null): boolean;

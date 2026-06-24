@@ -7,6 +7,7 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { CollectingNeighborUpdater$NeighborUpdates } from '../../../../../net/minecraft/world/level/redstone/CollectingNeighborUpdater$NeighborUpdates.d.ts'
 export class CollectingNeighborUpdater$ShapeUpdate extends Record implements CollectingNeighborUpdater$NeighborUpdates {
+    private constructor(direction: Direction, neighborState: BlockState, pos: BlockPos, neighborPos: BlockPos, updateFlags: number, updateLimit: number)
     // private direction: Direction;
     // private neighborPos: BlockPos;
     // private neighborState: BlockState;

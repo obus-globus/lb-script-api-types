@@ -3,6 +3,7 @@ import type { Function } from '../../../../../../../java/util/function/Function.
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { KeyMapping } from '../../../../../../../net/minecraft/client/KeyMapping.d.ts'
 import type { Options } from '../../../../../../../net/minecraft/client/Options.d.ts'
+import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 export interface TestInput extends Object {
     holdAlt(): void;
     holdControl(): void;
@@ -17,6 +18,8 @@ export interface TestInput extends Object {
     holdMouse(arg0: number): void;
     holdMouseFor(arg0: number, arg1: number): void;
     holdShift(): void;
+    lookAt(arg0: number, arg1: number): void;
+    lookAt(arg0: BlockPos): void;
     moveCursor(arg0: number, arg1: number): void;
     pressKey(arg0: InputConstants$Key): void;
     pressKey(arg0: (param0: Options) => KeyMapping): void;

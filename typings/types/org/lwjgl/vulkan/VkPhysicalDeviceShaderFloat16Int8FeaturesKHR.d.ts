@@ -1,0 +1,72 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { Struct$StructValidation } from '../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+import type { VkPhysicalDeviceShaderFloat16Int8Features } from '../../../org/lwjgl/vulkan/VkPhysicalDeviceShaderFloat16Int8Features.d.ts'
+export class VkPhysicalDeviceShaderFloat16Int8FeaturesKHR extends VkPhysicalDeviceShaderFloat16Int8Features {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static PNEXT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static SHADERFLOAT16: number;
+    static SHADERINT8: number;
+    static SIZEOF: number;
+    static STYPE: number;
+    static calloc(): VkPhysicalDeviceShaderFloat16Int8Features;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderFloat16Int8Features;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static calloc(): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): VkPhysicalDeviceShaderFloat16Int8Features;
+    static create(paramarg0: number): VkPhysicalDeviceShaderFloat16Int8Features;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static create(): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    static create(paramarg0: number): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceShaderFloat16Int8Features;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): VkPhysicalDeviceShaderFloat16Int8Features;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderFloat16Int8Features;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static malloc(): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static npNext(paramarg0: number): number;
+    static npNext(paramarg0: number, paramarg1: number): void;
+    static nsType(paramarg0: number): number;
+    static nsType(paramarg0: number, paramarg1: number): void;
+    static nshaderFloat16(paramarg0: number): number;
+    static nshaderFloat16(paramarg0: number, paramarg1: number): void;
+    static nshaderInt8(paramarg0: number): number;
+    static nshaderInt8(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    create(arg0: number, arg1: ByteBuffer): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    pNext(): number;
+    pNext(arg0: number): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    sType(): number;
+    sType(arg0: number): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    sType$Default(): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    set(arg0: number, arg1: number, arg2: boolean, arg3: boolean): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    set(arg0: VkPhysicalDeviceShaderFloat16Int8Features): VkPhysicalDeviceShaderFloat16Int8Features;
+    set(arg0: VkPhysicalDeviceShaderFloat16Int8FeaturesKHR): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    shaderFloat16(): boolean;
+    shaderFloat16(arg0: boolean): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+    shaderInt8(): boolean;
+    shaderInt8(arg0: boolean): VkPhysicalDeviceShaderFloat16Int8FeaturesKHR;
+}

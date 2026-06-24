@@ -5,6 +5,7 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 export class Input extends Record {
     static EMPTY: Input;
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, Input>;
+    constructor(forward: boolean, backward: boolean, left: boolean, right: boolean, jump: boolean, shift: boolean, sprint: boolean)
     // private backward: boolean;
     // private forward: boolean;
     // private jump: boolean;

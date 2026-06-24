@@ -3,6 +3,7 @@ export class SystemToast$SystemToastId extends Object {
     static CHUNK_LOAD_FAILURE: SystemToast$SystemToastId;
     static CHUNK_SAVE_FAILURE: SystemToast$SystemToastId;
     static FILE_DROP_FAILURE: SystemToast$SystemToastId;
+    static FRIEND_SYSTEM_NOTIFICATION: SystemToast$SystemToastId;
     static LOW_DISK_SPACE: SystemToast$SystemToastId;
     static NARRATOR_TOGGLE: SystemToast$SystemToastId;
     static PACK_COPY_FAILURE: SystemToast$SystemToastId;

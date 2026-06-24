@@ -12,8 +12,8 @@ export class Float2BooleanOpenHashMap$KeySpliterator extends Float2BooleanOpenHa
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Float2BooleanOpenHashMap$KeySpliterator)
-    constructor(null_: Float2BooleanOpenHashMap$KeySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;

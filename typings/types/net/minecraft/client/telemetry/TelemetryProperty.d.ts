@@ -13,6 +13,10 @@ import type { MutableComponent } from '../../../../net/minecraft/network/chat/Mu
 export class TelemetryProperty<T extends unknown> extends Record {
     static ADVANCEMENT_GAME_TIME: TelemetryProperty<number>;
     static ADVANCEMENT_ID: TelemetryProperty<string>;
+    static BACKEND_FAILURE_MESSAGE: TelemetryProperty<string>;
+    static BACKEND_FAILURE_MISSING_CAPABILITIES: TelemetryProperty<string>;
+    static BACKEND_FAILURE_REASON: TelemetryProperty<string>;
+    static BACKEND_NAME: TelemetryProperty<string>;
     static CLIENT_ID: TelemetryProperty<string>;
     static CLIENT_MODDED: TelemetryProperty<boolean>;
     static DEDICATED_MEMORY_KB: TelemetryProperty<number>;
@@ -36,6 +40,7 @@ export class TelemetryProperty<T extends unknown> extends Record {
     static RENDER_TIME_SAMPLES: TelemetryProperty<(Object | null)[]>;
     static SECONDS_SINCE_LOAD: TelemetryProperty<number>;
     static SERVER_MODDED: TelemetryProperty<boolean>;
+    static SERVER_SESSION_ID: TelemetryProperty<UUID>;
     static SERVER_TYPE: TelemetryProperty<TelemetryProperty$ServerType>;
     static TICKS_SINCE_LOAD: TelemetryProperty<number>;
     static USED_MEMORY_SAMPLES: TelemetryProperty<(Object | null)[]>;

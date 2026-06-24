@@ -14,5 +14,5 @@ export class EnchantRandomlyFunction$Builder extends LootItemConditionalFunction
     includeAdditionalCostComponent(): EnchantRandomlyFunction$Builder;
     withEnchantment(enchantment: Holder<Enchantment>): EnchantRandomlyFunction$Builder;
     withOneOf(enchantments: Holder<Enchantment>[]): EnchantRandomlyFunction$Builder;
-    withOptions(enchantments: Optional<Holder<Enchantment>[]>): EnchantRandomlyFunction$Builder;
+    withOptions(enchantments: Holder<Enchantment>[]): EnchantRandomlyFunction$Builder;
 }

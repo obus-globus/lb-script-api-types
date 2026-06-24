@@ -4,6 +4,7 @@ import type { CommandRegistry_HardNonTerminal } from '../../../../../net/raphimc
 import type { CommandData$EnumData } from '../../../../../net/raphimc/viabedrock/protocol/model/CommandData$EnumData.d.ts'
 import type { CommandData$SubCommandData } from '../../../../../net/raphimc/viabedrock/protocol/model/CommandData$SubCommandData.d.ts'
 export class CommandData$OverloadData$ParamData extends Record {
+    constructor(name: string, optional: boolean, flags: number, type: CommandRegistry_HardNonTerminal, enumData: CommandData$EnumData, subCommandData: CommandData$SubCommandData, postfix: string)
     // private enumData: CommandData$EnumData;
     // private flags: number;
     // private name: string;

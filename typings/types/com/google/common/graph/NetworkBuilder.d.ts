@@ -1,4 +1,3 @@
-import type { Optional } from '../../../../com/google/common/base/Optional.d.ts'
 import type { AbstractGraphBuilder } from '../../../../com/google/common/graph/AbstractGraphBuilder.d.ts'
 import type { ElementOrder } from '../../../../com/google/common/graph/ElementOrder.d.ts'
 import type { ImmutableNetwork$Builder } from '../../../../com/google/common/graph/ImmutableNetwork$Builder.d.ts'
@@ -12,7 +11,7 @@ export class NetworkBuilder<N extends unknown, E extends unknown> extends Abstra
     private constructor(directed: boolean)
     // private allowsParallelEdges: boolean;
     // private edgeOrder: ElementOrder<E>;
-    // private expectedEdgeCount: Optional<number>;
+    // private expectedEdgeCount: number;
     allowsParallelEdges(allowsParallelEdges: boolean): NetworkBuilder<N, E>;
     allowsSelfLoops(allowsSelfLoops: boolean): NetworkBuilder<N, E>;
     build<N1 extends N, E1 extends E>(): MutableNetwork<N1, E1>;

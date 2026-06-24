@@ -11,6 +11,8 @@ export class AttributeModifiers1_21 extends Record implements Copyable, Rewritab
     static TYPE1_21: Type<AttributeModifiers1_21>;
     static TYPE1_21_5: Type<AttributeModifiers1_21>;
     static TYPE1_21_6: Type<AttributeModifiers1_21>;
+    constructor(arg0: AttributeModifiers1_21$AttributeModifier[])
+    constructor(modifiers: AttributeModifiers1_21$AttributeModifier[], showInTooltip: boolean)
     // private modifiers: AttributeModifiers1_21$AttributeModifier[];
     // private showInTooltip: boolean;
 }

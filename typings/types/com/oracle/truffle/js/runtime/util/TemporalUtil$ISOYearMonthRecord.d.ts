@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TemporalUtil$ISOYearMonthRecord extends Record {
+    constructor(year: number, month: number)
     // private month: number;
     // private year: number;
     equals(o: Object | null): boolean;

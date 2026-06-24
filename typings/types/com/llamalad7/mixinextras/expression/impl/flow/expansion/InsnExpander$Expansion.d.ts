@@ -1,3 +1,4 @@
+import type { InsnExpander } from '../../../../../../../com/llamalad7/mixinextras/expression/impl/flow/expansion/InsnExpander.d.ts'
 import type { InsnExpander$InsnComponent } from '../../../../../../../com/llamalad7/mixinextras/expression/impl/flow/expansion/InsnExpander$InsnComponent.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -5,7 +6,7 @@ import type { AbstractInsnNode } from '../../../../../../../org/objectweb/asm/tr
 import type { InjectionInfo } from '../../../../../../../org/spongepowered/asm/mixin/injection/struct/InjectionInfo.d.ts'
 import type { InjectionNodes$InjectionNode } from '../../../../../../../org/spongepowered/asm/mixin/injection/struct/InjectionNodes$InjectionNode.d.ts'
 export class InsnExpander$Expansion extends Object {
-    constructor(null_: InsnExpander$Expansion, arg1: AbstractInsnNode)
+    constructor(null_: InsnExpander, arg1: AbstractInsnNode)
     compound: AbstractInsnNode;
     // private expanded: boolean;
     // private expandedInsns: Map<InsnExpander$InsnComponent, AbstractInsnNode>;

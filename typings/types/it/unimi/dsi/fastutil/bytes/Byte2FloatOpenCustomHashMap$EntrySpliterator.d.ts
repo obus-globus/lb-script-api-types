@@ -11,8 +11,8 @@ export class Byte2FloatOpenCustomHashMap$EntrySpliterator extends Byte2FloatOpen
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Byte2FloatOpenCustomHashMap$EntrySpliterator)
-    constructor(null_: Byte2FloatOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: Byte2FloatMap$Entry) => void, arg1: number): void;
     characteristics(): number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Byte2FloatOpenCustomHashMap$EntrySpliterator;

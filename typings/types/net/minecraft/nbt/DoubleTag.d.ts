@@ -30,6 +30,7 @@ export class DoubleTag extends Record implements NumericTag {
     static TYPE: TagType<DoubleTag>;
     static ZERO: DoubleTag;
     static valueOf(paramdata: number): DoubleTag;
+    constructor(value: number)
     // private value: number;
     accept(visitor: StreamTagVisitor): StreamTagVisitor$ValueResult;
     accept(visitor: TagVisitor): void;

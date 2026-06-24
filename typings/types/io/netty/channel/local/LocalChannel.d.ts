@@ -18,6 +18,7 @@ export class LocalChannel extends AbstractChannel {
     // private config: ChannelConfig;
     // private connectPromise: ChannelPromise;
     // private finishReadFuture: Future<Object>;
+    // private finishReadTask: () => void;
     // private inboundBuffer: Object[];
     // private localAddress: LocalAddress;
     // private peer: LocalChannel;
@@ -25,7 +26,6 @@ export class LocalChannel extends AbstractChannel {
     // private readTask: () => void;
     // private registration: IoRegistration;
     // private remoteAddress: LocalAddress;
-    // private shutdownHook: () => void;
     // private state: LocalChannel$State;
     // private writeInProgress: boolean;
     config(): ChannelConfig;
@@ -52,5 +52,6 @@ export class LocalChannel extends AbstractChannel {
     remoteAddress(): LocalAddress;
     remoteAddress0(): SocketAddress;
     // private runFinishPeerReadTask(arg0: LocalChannel): void;
+    // private runFinishTask0(): void;
     // private tryClose(arg0: boolean): void;
 }

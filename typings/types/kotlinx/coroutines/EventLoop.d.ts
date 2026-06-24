@@ -23,6 +23,5 @@ export abstract class EventLoop extends CoroutineDispatcher {
     limitedParallelism(parallelism: number, name: string | null): CoroutineDispatcher;
     processNextEvent(): number;
     processUnconfinedEvent(): boolean;
-    shouldBeProcessedFromContext(): boolean;
     shutdown(): void;
 }

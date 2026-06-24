@@ -4,6 +4,7 @@ import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BlendingData$Packed extends Record {
     static CODEC: Codec<BlendingData$Packed>;
+    constructor(minSection: number, maxSection: number, heights: Optional<number[]>)
     // private heights: Optional<number[]>;
     // private maxSection: number;
     // private minSection: number;

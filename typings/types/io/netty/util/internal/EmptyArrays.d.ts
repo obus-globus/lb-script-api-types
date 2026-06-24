@@ -8,6 +8,7 @@ export class EmptyArrays extends Object {
     static EMPTY_CLASSES: Object | null;
     static EMPTY_INTS: number[];
     static EMPTY_JAVAX_X509_CERTIFICATES: (Object | null)[];
+    static EMPTY_MAP_ENTRY: (Object | null)[];
     static EMPTY_OBJECTS: (Object | null)[];
     static EMPTY_STACK_TRACE: (Object | null)[];
     static EMPTY_STRINGS: (Object | null)[];

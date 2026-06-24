@@ -1,8 +1,10 @@
+import type { Interners$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Interner } from '../../../../com/google/common/collect/Interner.d.ts'
 import type { MapMaker } from '../../../../com/google/common/collect/MapMaker.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Interners$InternerBuilder extends Object {
     private constructor()
+    constructor(arg0: Interners$1)
     // private mapMaker: MapMaker;
     // private strong: boolean;
     build<E extends unknown>(): Interner<E>;

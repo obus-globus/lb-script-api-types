@@ -23,6 +23,7 @@ import type { Heightmap } from '../../../../../com/viaversion/viaversion/api/min
 import type { EntityData } from '../../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
 import type { HashedItem } from '../../../../../com/viaversion/viaversion/api/minecraft/item/HashedItem.d.ts'
 import type { Item } from '../../../../../com/viaversion/viaversion/api/minecraft/item/Item.d.ts'
+import type { OptionalType } from '../../../../../com/viaversion/viaversion/api/type/OptionalType.d.ts'
 import type { Type } from '../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { BitSetType } from '../../../../../com/viaversion/viaversion/api/type/types/BitSetType.d.ts'
 import type { BooleanType } from '../../../../../com/viaversion/viaversion/api/type/types/BooleanType.d.ts'
@@ -59,6 +60,7 @@ export class Types extends Object {
     static BLOCK_POSITION1_8: Type<BlockPosition>;
     static BOOLEAN: BooleanType;
     static BOOLEAN_ARRAY_PRIMITIVE: Type<(Object | null)[]>;
+    static BOOL_OPTIONAL_VAR_INT: OptionalType<number>;
     static BYTE: ByteType;
     static BYTE_ARRAY_PRIMITIVE: Type<number[]>;
     static CHUNK_POSITION: Type<ChunkPosition>;

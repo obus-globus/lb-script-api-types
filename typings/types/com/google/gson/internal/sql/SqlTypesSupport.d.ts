@@ -5,6 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SqlTypesSupport extends Object {
     static DATE_DATE_TYPE: DefaultDateTypeAdapter$DateType<Date>;
     static DATE_FACTORY: TypeAdapterFactory;
+    static SQL_TYPE_FACTORIES: TypeAdapterFactory[];
     static SUPPORTS_SQL_TYPES: boolean;
     static TIMESTAMP_DATE_TYPE: DefaultDateTypeAdapter$DateType<Date>;
     static TIMESTAMP_FACTORY: TypeAdapterFactory;

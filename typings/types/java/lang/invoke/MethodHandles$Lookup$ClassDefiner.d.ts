@@ -4,6 +4,7 @@ import type { MethodHandles$Lookup } from '../../../java/lang/invoke/MethodHandl
 import type { ClassFileDumper } from '../../../jdk/internal/util/ClassFileDumper.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class MethodHandles$Lookup$ClassDefiner extends Record {
+    constructor(lookup: MethodHandles$Lookup, internalName: string, bytes: number[], classFlags: number, dumper: ClassFileDumper)
     // private bytes: number[];
     // private classFlags: number;
     // private dumper: ClassFileDumper;

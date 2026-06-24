@@ -5,8 +5,8 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { AdvancementHolder } from '../../../net/minecraft/advancements/AdvancementHolder.d.ts'
 import type { AdvancementRequirements } from '../../../net/minecraft/advancements/AdvancementRequirements.d.ts'
 import type { AdvancementRewards } from '../../../net/minecraft/advancements/AdvancementRewards.d.ts'
-import type { Criterion } from '../../../net/minecraft/advancements/Criterion.d.ts'
 import type { DisplayInfo } from '../../../net/minecraft/advancements/DisplayInfo.d.ts'
+import type { Criterion } from '../../../net/minecraft/advancements/triggers/Criterion.d.ts'
 import type { HolderGetter$Provider } from '../../../net/minecraft/core/HolderGetter$Provider.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
@@ -17,6 +17,8 @@ export class Advancement extends Record {
     static CODEC: Codec<Advancement>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Advancement>;
     static name(paramholder: AdvancementHolder): Component;
+    constructor(parent: Optional<Identifier>, display: Optional<DisplayInfo>, rewards: AdvancementRewards, criteria: { [key: string]: Criterion<any> }, requirements: AdvancementRequirements, sendsTelemetryEvent: boolean)
+    constructor(parent: Optional<Identifier>, display: Optional<DisplayInfo>, rewards: AdvancementRewards, criteria: { [key: string]: Criterion<any> }, requirements: AdvancementRequirements, sendsTelemetryEvent: boolean, name: Optional<Component>)
     // private criteria: { [key: string]: Criterion<any> };
     // private display: Optional<DisplayInfo>;
     // private name: Optional<Component>;

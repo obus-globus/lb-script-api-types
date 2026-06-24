@@ -7,6 +7,8 @@ export class MultiPartDownloadConfig extends Record {
     static DEFAULT_MIN_PART_SIZE_BYTES: number;
     static DEFAULT_RETRY_BACKOFF_MILLIS: number;
     static DISABLED: MultiPartDownloadConfig;
+    constructor(arg0: boolean, arg1: number, arg2: number)
+    constructor(enabled: boolean, maxConcurrency: number, minPartSizeBytes: number, maxPartRetries: number, retryBackoffMillis: number)
     // private enabled: boolean;
     // private maxConcurrency: number;
     // private maxPartRetries: number;

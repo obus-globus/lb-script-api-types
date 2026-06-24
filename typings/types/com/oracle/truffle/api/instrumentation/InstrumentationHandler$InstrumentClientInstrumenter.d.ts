@@ -14,7 +14,7 @@ import type { Source } from '../../../../../com/oracle/truffle/api/source/Source
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InstrumentationHandler$InstrumentClientInstrumenter extends InstrumentationHandler$AbstractInstrumenter {
-    constructor(null_: InstrumentationHandler$InstrumentClientInstrumenter, env: TruffleInstrument$Env, instrumentClassName: string)
+    constructor(null_: InstrumentationHandler, env: TruffleInstrument$Env, instrumentClassName: string)
     // private env: TruffleInstrument$Env;
     // private instrument: TruffleInstrument;
     // private instrumentClassName: string;

@@ -5,7 +5,7 @@ import type { ChannelInboundHandler } from '../../../io/netty/channel/ChannelInb
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class DefaultChannelPipeline$TailContext extends AbstractChannelHandlerContext implements ChannelInboundHandler {
-    constructor(null_: DefaultChannelPipeline$TailContext, arg1: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: (Object | null)[])
     channelActive(arg0: ChannelHandlerContext): void;
     channelInactive(arg0: ChannelHandlerContext): void;
     channelRead(arg0: ChannelHandlerContext, arg1: Object): void;

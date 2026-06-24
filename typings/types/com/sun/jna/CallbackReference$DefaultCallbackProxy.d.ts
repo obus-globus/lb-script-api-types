@@ -1,5 +1,6 @@
 import type { Callback } from '../../../com/sun/jna/Callback.d.ts'
 import type { CallbackProxy } from '../../../com/sun/jna/CallbackProxy.d.ts'
+import type { CallbackReference } from '../../../com/sun/jna/CallbackReference.d.ts'
 import type { FromNativeConverter } from '../../../com/sun/jna/FromNativeConverter.d.ts'
 import type { ToNativeConverter } from '../../../com/sun/jna/ToNativeConverter.d.ts'
 import type { TypeMapper } from '../../../com/sun/jna/TypeMapper.d.ts'
@@ -9,7 +10,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class CallbackReference$DefaultCallbackProxy extends Object implements CallbackProxy {
     static FORBIDDEN_NAMES: string[];
     static METHOD_NAME: string;
-    constructor(null_: CallbackReference$DefaultCallbackProxy, arg1: Method, arg2: TypeMapper, arg3: string)
+    constructor(null_: CallbackReference, arg1: Method, arg2: TypeMapper, arg3: string)
     // private callbackMethod: Method;
     // private encoding: string;
     // private fromNative: FromNativeConverter[];

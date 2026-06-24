@@ -50,6 +50,7 @@ export abstract class DecimalQuantity_AbstractBCD extends Object implements Deci
     getPositionFingerprint(): number;
     getStandardPlural(arg0: PluralRules): StandardPlural;
     getUpperDisplayMagnitude(): number;
+    hashCode(): number;
     isHasIntegerValue(): boolean;
     isInfinite(): boolean;
     isNaN(): boolean;

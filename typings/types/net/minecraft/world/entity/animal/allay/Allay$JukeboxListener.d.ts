@@ -1,6 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
+import type { Allay } from '../../../../../../net/minecraft/world/entity/animal/allay/Allay.d.ts'
 import type { GameEvent } from '../../../../../../net/minecraft/world/level/gameevent/GameEvent.d.ts'
 import type { GameEvent$Context } from '../../../../../../net/minecraft/world/level/gameevent/GameEvent$Context.d.ts'
 import type { GameEventListener } from '../../../../../../net/minecraft/world/level/gameevent/GameEventListener.d.ts'
@@ -8,7 +9,7 @@ import type { GameEventListener$DeliveryMode } from '../../../../../../net/minec
 import type { PositionSource } from '../../../../../../net/minecraft/world/level/gameevent/PositionSource.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class Allay$JukeboxListener extends Object implements GameEventListener {
-    constructor(null_: Allay$JukeboxListener, listenerSource: PositionSource, listenerRadius: number)
+    constructor(null_: Allay, listenerSource: PositionSource, listenerRadius: number)
     readonly listenerRadius: number;
     readonly listenerSource: PositionSource;
     getDeliveryMode(): GameEventListener$DeliveryMode;

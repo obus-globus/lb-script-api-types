@@ -12,6 +12,9 @@ export class ArmorTrimMaterial extends Record implements Copyable, Rewritable {
     static TYPE1_21_2: HolderType<ArmorTrimMaterial>;
     static TYPE1_21_4: HolderType<ArmorTrimMaterial>;
     static TYPE1_21_5: HolderType<ArmorTrimMaterial>;
+    constructor(assetName: string, itemId: number, itemModelIndex: number, overrideArmorMaterials: { [key: string]: string }, description: Tag)
+    constructor(arg0: string, arg1: number, arg2: { [key: string]: string }, arg3: Tag)
+    constructor(arg0: string, arg1: { [key: string]: string }, arg2: Tag)
     // private assetName: string;
     // private description: Tag;
     // private itemId: number;

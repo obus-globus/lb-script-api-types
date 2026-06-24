@@ -6,6 +6,7 @@ import type { PoiRecord$Packed } from '../../../../../../../net/minecraft/world/
 import type { PoiSection } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiSection.d.ts'
 export class PoiSection$Packed extends Record {
     static CODEC: Codec<PoiSection$Packed>;
+    constructor(isValid: boolean, records: PoiRecord$Packed[])
     // private isValid: boolean;
     // private records: PoiRecord$Packed[];
     equals(o: Object | null): boolean;

@@ -9,6 +9,7 @@ import type { ServerLevel } from '../../../../../net/minecraft/server/level/Serv
 export class LodestoneTracker extends Record {
     static CODEC: Codec<LodestoneTracker>;
     static STREAM_CODEC: StreamCodec<ByteBuf, LodestoneTracker>;
+    constructor(target: Optional<GlobalPos>, tracked: boolean)
     // private target: Optional<GlobalPos>;
     // private tracked: boolean;
     equals(o: Object | null): boolean;

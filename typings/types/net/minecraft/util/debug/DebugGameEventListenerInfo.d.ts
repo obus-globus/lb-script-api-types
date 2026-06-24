@@ -4,6 +4,7 @@ import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class DebugGameEventListenerInfo extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DebugGameEventListenerInfo>;
+    constructor(listenerRadius: number)
     // private listenerRadius: number;
     equals(o: Object | null): boolean;
     hashCode(): number;

@@ -13,6 +13,8 @@ export class ClientboundSetEntityDataPacket extends Record implements Packet<Cli
     static EOF_MARKER: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetEntityDataPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(id: number, packedItems: SynchedEntityData$DataValue<Object>[])
+    private constructor(input: RegistryFriendlyByteBuf)
     // private id: number;
     // private packedItems: SynchedEntityData$DataValue<Object>[];
     equals(o: Object | null): boolean;

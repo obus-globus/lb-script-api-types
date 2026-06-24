@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class GameTestBlockHighlightRenderer$Marker extends Record {
+    constructor(color: number, text: string, removeAtTime: number)
     // private color: number;
     // private removeAtTime: number;
     // private text: string;

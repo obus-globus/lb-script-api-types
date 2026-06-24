@@ -1,10 +1,11 @@
 import type { GpuBufferSlice } from '../../../../../com/mojang/blaze3d/buffers/GpuBufferSlice.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SpriteContentsAnimatedTextureAccessor } from '../../../../../net/irisshaders/iris/mixin/texture/SpriteContentsAnimatedTextureAccessor.d.ts'
+import type { SpriteContents } from '../../../../../net/minecraft/client/renderer/texture/SpriteContents.d.ts'
 import type { SpriteContents$AnimationState } from '../../../../../net/minecraft/client/renderer/texture/SpriteContents$AnimationState.d.ts'
 import type { SpriteContents$FrameInfo } from '../../../../../net/minecraft/client/renderer/texture/SpriteContents$FrameInfo.d.ts'
 export class SpriteContents$AnimatedTexture extends Object implements SpriteContentsAnimatedTextureAccessor {
-    private constructor(null_: SpriteContents$AnimatedTexture, frameRowSize: number, interpolateFrames: boolean)
+    private constructor(null_: SpriteContents, frames: SpriteContents$FrameInfo[], frameRowSize: number, interpolateFrames: boolean)
     // private frameRowSize: number;
     readonly frames: SpriteContents$FrameInfo[];
     interpolateFrames: boolean;

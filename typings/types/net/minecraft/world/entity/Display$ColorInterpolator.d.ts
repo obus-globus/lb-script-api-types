@@ -3,6 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Display$IntInterpolator } from '../../../../net/minecraft/world/entity/Display$IntInterpolator.d.ts'
 export class Display$ColorInterpolator extends Record implements Display$IntInterpolator {
     static constant(paramvalue: number): (param0: number) => number;
+    private constructor(previous: number, current: number)
     // private current: number;
     // private previous: number;
     current(): number;

@@ -1,0 +1,67 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { Struct$StructValidation } from '../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+import type { VkPhysicalDeviceDynamicRenderingLocalReadFeatures } from '../../../org/lwjgl/vulkan/VkPhysicalDeviceDynamicRenderingLocalReadFeatures.d.ts'
+export class VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR extends VkPhysicalDeviceDynamicRenderingLocalReadFeatures {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static DYNAMICRENDERINGLOCALREAD: number;
+    static PNEXT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static SIZEOF: number;
+    static STYPE: number;
+    static calloc(): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static calloc(): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
+    static create(paramarg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static create(): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    static create(paramarg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static malloc(): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static ndynamicRenderingLocalRead(paramarg0: number): number;
+    static ndynamicRenderingLocalRead(paramarg0: number, paramarg1: number): void;
+    static npNext(paramarg0: number): number;
+    static npNext(paramarg0: number, paramarg1: number): void;
+    static nsType(paramarg0: number): number;
+    static nsType(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    create(arg0: number, arg1: ByteBuffer): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    dynamicRenderingLocalRead(): boolean;
+    dynamicRenderingLocalRead(arg0: boolean): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    pNext(): number;
+    pNext(arg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    sType(): number;
+    sType(arg0: number): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    sType$Default(): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    set(arg0: number, arg1: number, arg2: boolean): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+    set(arg0: VkPhysicalDeviceDynamicRenderingLocalReadFeatures): VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
+    set(arg0: VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR): VkPhysicalDeviceDynamicRenderingLocalReadFeaturesKHR;
+}

@@ -16,6 +16,7 @@ import type { CompilableString } from '../../../../../net/minecraft/util/Compila
 export class NbtContents extends Record implements ComponentContents {
     static MAP_CODEC: MapCodec<NbtContents>;
     static NBT_PATH_CODEC: Codec<CompilableString<NbtPathArgument$NbtPath>>;
+    constructor(nbtPath: CompilableString<NbtPathArgument$NbtPath>, interpreting: boolean, plain: boolean, separator: Optional<Component>, dataSource: DataSource)
     // private dataSource: DataSource;
     // private interpreting: boolean;
     // private nbtPath: CompilableString<NbtPathArgument$NbtPath>;

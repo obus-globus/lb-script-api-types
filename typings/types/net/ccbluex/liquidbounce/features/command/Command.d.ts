@@ -1,7 +1,7 @@
 import type { SuggestionsBuilder } from '../../../../../com/mojang/brigadier/suggestion/SuggestionsBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Pair } from '../../../../../kotlin/Pair.d.ts'
 import type { Command$Handler } from '../../../../../net/ccbluex/liquidbounce/features/command/Command$Handler.d.ts'
+import type { CommandManager$TokenizationResult } from '../../../../../net/ccbluex/liquidbounce/features/command/CommandManager$TokenizationResult.d.ts'
 import type { Parameter } from '../../../../../net/ccbluex/liquidbounce/features/command/Parameter.d.ts'
 import type { DebuggedOwner } from '../../../../../net/ccbluex/liquidbounce/features/misc/DebuggedOwner.d.ts'
 import type { MinecraftShortcuts } from '../../../../../net/ccbluex/liquidbounce/features/module/MinecraftShortcuts.d.ts'
@@ -22,10 +22,10 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
     readonly parentCommand: Command | null;
     readonly requiresIngame: boolean;
     // private subcommandMap: { [key: string]: Command };
-    /*not mapped: */ getSubcommandMap$liquidbounce(): { [key: string]: Command };
+    /*not mapped: */ getSubcommandMap$net_ccbluex_liquidbounce(): { [key: string]: Command };
     readonly subcommands: Command[];
     readonly translationBaseKey: string;
-    autoComplete(builder: SuggestionsBuilder, tokenizationResult: Pair<string[], number[]>, commandIdx: number, isNewParameter: boolean): void;
+    autoComplete(builder: SuggestionsBuilder, tokenizationResult: CommandManager$TokenizationResult, commandIdx: number, isNewParameter: boolean): void;
     // private getParentKeys(currentCommand: Command | null, current: string): string;
     nameAsText(): Component;
     /**
@@ -37,7 +37,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * @param formatting Function to apply formatting to the text (default: regular)
      * @param hover Optional hover event (defaults to "Click to copy" tooltip)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:135}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:135}
      */
     printStyledComponent(key: string, textComponent: Component | null, copyContent: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null): void;
     /**
@@ -49,7 +49,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * @param hover Optional hover event (defaults to "Click to copy" tooltip)
      * @param click Optional click action type (defaults to {@link ClickEvent.CopyToClipboard})
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:113}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:113}
      */
     printStyledText(key: string, data: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null, click: ClickEvent | null): void;
     result(key: string, args: Object[]): MutableComponent;
@@ -62,7 +62,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * command_name subcommand_name <required_arg> [[<optional_vararg>]...
      * ```
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L171 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:171}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L171 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:171}
      */
     usage(): Component[];
 }

@@ -4,8 +4,8 @@ import type { Char2FloatMap$Entry } from '../../../../../it/unimi/dsi/fastutil/c
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Char2FloatLinkedOpenHashMap$EntryIterator extends Char2FloatLinkedOpenHashMap$MapIterator<(param0: Char2FloatMap$Entry) => void> implements ObjectListIterator<Char2FloatMap$Entry> {
-    constructor(null_: Char2FloatLinkedOpenHashMap$EntryIterator)
-    constructor(null_: Char2FloatLinkedOpenHashMap$EntryIterator, arg1: string)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: string)
     // private entry: Char2FloatLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Char2FloatMap$Entry) => void, arg1: number): void;
     add(arg0: Char2FloatMap$Entry): void;

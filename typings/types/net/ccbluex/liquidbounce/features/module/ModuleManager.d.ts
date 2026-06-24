@@ -13,7 +13,7 @@ import type { ModuleManager$SmartBindMouseState } from '../../../../../net/ccblu
 /**
  * A fairly simple module manager
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L274 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:274}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L274 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:274}
  */
 export class ModuleManager extends Object implements EventListener {
     static INSTANCE: ModuleManager;
@@ -35,7 +35,7 @@ export class ModuleManager extends Object implements EventListener {
     /**
      * This is being used by UltralightJS for the implementation of the ClickGUI. DO NOT REMOVE!
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L732 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:732}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L732 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:732}
      */
     getCategories(): string[];
     getModuleByName(module: string): ClientModule | null;
@@ -46,7 +46,7 @@ export class ModuleManager extends Object implements EventListener {
     /**
      * Register inbuilt client modules
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L451 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:451}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L451 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:451}
      */
     registerInbuilt(): void;
     removeModule(module: ClientModule): void;

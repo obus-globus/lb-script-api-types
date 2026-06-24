@@ -59,6 +59,7 @@ export class PrimaryLevelData extends Object implements ServerLevelData, WorldDa
     isHardcore(): boolean;
     isInitialized(): boolean;
     overworldData(): ServerLevelData;
+    setAllowCommands(allowCommands: boolean): void;
     setDataConfiguration(dataConfiguration: WorldDataConfiguration): void;
     setDifficulty(difficulty: Difficulty): void;
     setDifficultyLocked(difficultyLocked: boolean): void;

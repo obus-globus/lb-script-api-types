@@ -4,7 +4,7 @@ import type { Object2FloatOpenCustomHashMap$MapIterator } from '../../../../../i
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 export class Object2FloatOpenCustomHashMap$ValueIterator extends Object2FloatOpenCustomHashMap$MapIterator<Object> implements FloatIterator {
-    constructor(null_: Object2FloatOpenCustomHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

@@ -2,8 +2,8 @@ import type { Byte2FloatLinkedOpenHashMap$MapIterator } from '../../../../../it/
 import type { ByteConsumer } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteConsumer.d.ts'
 import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteListIterator.d.ts'
 export class Byte2FloatLinkedOpenHashMap$KeyIterator extends Byte2FloatLinkedOpenHashMap$MapIterator<(param0: number) => void> implements ByteListIterator {
-    constructor(null_: Byte2FloatLinkedOpenHashMap$KeyIterator)
-    constructor(null_: Byte2FloatLinkedOpenHashMap$KeyIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

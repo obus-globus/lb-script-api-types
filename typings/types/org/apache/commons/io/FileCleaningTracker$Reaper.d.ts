@@ -6,6 +6,7 @@ import type { Thread$UncaughtExceptionHandler } from '../../../../java/lang/Thre
 import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
+import type { FileCleaningTracker } from '../../../../org/apache/commons/io/FileCleaningTracker.d.ts'
 export class FileCleaningTracker$Reaper extends Thread {
     static MAX_PRIORITY: number;
     static MIN_PRIORITY: number;
@@ -27,6 +28,6 @@ export class FileCleaningTracker$Reaper extends Thread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    constructor(null_: FileCleaningTracker$Reaper)
+    constructor(null_: FileCleaningTracker)
     run(): void;
 }

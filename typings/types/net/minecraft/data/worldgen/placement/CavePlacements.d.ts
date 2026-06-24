@@ -18,10 +18,13 @@ export class CavePlacements extends Object {
     static MONSTER_ROOM_DEEP: ResourceKey<PlacedFeature>;
     static POINTED_DRIPSTONE: ResourceKey<PlacedFeature>;
     static ROOTED_AZALEA_TREE: ResourceKey<PlacedFeature>;
+    static ROOTED_SULFUR_SPRING: ResourceKey<PlacedFeature>;
     static SCULK_PATCH_ANCIENT_CITY: ResourceKey<PlacedFeature>;
     static SCULK_PATCH_DEEP_DARK: ResourceKey<PlacedFeature>;
     static SCULK_VEIN: ResourceKey<PlacedFeature>;
     static SPORE_BLOSSOM: ResourceKey<PlacedFeature>;
+    static SULFUR_SPIKE: ResourceKey<PlacedFeature>;
+    static SULFUR_SPIKE_CLUSTER: ResourceKey<PlacedFeature>;
     static UNDERWATER_MAGMA: ResourceKey<PlacedFeature>;
     static bootstrap(paramcontext: BootstrapContext<PlacedFeature>): void;
     constructor()

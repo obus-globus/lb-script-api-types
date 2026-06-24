@@ -3,6 +3,7 @@ import type { Widget } from '../../../../../../com/viaversion/viabackwards/proto
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ChestDialogViewProvider$MultiTextWidget extends Record implements Widget {
+    constructor(labels: Tag[])
     // private labels: Tag[];
     equals(arg0: Object | null): boolean;
     hashCode(): number;

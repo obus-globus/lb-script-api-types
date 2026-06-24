@@ -13,14 +13,14 @@ export class ClientRenderPipelines extends Object {
     /**
      * @see RenderPipelines.LINES_TRANSLUCENT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L198 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:198}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L198 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:198}
      */
     static LinesWithWidth: RenderPipeline;
     /**
      * @see RenderPipelines.ENTITY_OUTLINE_BLIT
      * @see RenderPipelines.OUTLINE_SNIPPET
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L360 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:360}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L360 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:360}
      */
     static Outline: RenderPipeline;
     static Quads: RenderPipeline;
@@ -63,7 +63,7 @@ export class ClientRenderPipelines extends Object {
     /**
      * Precompile
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L411 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:411}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L411 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:411}
      */
     precompile(): void;
     relativeLines(useColor: boolean): RenderPipeline;

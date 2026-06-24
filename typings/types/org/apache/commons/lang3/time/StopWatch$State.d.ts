@@ -1,3 +1,4 @@
+import type { StopWatch$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
@@ -10,6 +11,7 @@ export class StopWatch$State extends Enum<StopWatch$State> {
     static valueOf(paramarg0: string): StopWatch$State;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: StopWatch$1)
     isStarted(): boolean;
     isStopped(): boolean;
     isSuspended(): boolean;

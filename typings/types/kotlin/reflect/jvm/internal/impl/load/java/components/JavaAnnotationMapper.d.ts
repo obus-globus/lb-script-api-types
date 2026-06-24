@@ -9,8 +9,8 @@ export class JavaAnnotationMapper extends Object {
     static INSTANCE: JavaAnnotationMapper;
     private constructor()
     findMappedJavaAnnotation(arg0: FqName, arg1: JavaAnnotationOwner, arg2: LazyJavaResolverContext): AnnotationDescriptor;
-    getDEPRECATED_ANNOTATION_MESSAGE$descriptors_jvm(): Name;
-    getRETENTION_ANNOTATION_VALUE$descriptors_jvm(): Name;
-    getTARGET_ANNOTATION_ALLOWED_TARGETS$descriptors_jvm(): Name;
+    getDEPRECATED_ANNOTATION_MESSAGE$org_jetbrains_kotlin_descriptors_jvm(): Name;
+    getRETENTION_ANNOTATION_VALUE$org_jetbrains_kotlin_descriptors_jvm(): Name;
+    getTARGET_ANNOTATION_ALLOWED_TARGETS$org_jetbrains_kotlin_descriptors_jvm(): Name;
     mapOrResolveJavaAnnotation(arg0: JavaAnnotation, arg1: LazyJavaResolverContext, arg2: boolean): AnnotationDescriptor;
 }

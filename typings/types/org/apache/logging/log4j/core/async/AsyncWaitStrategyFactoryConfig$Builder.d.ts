@@ -9,5 +9,6 @@ export class AsyncWaitStrategyFactoryConfig$Builder<B extends AsyncWaitStrategyF
     getErrorPrefix(): string;
     getFactoryClassName(): string;
     isValid(): boolean;
+    setFactoryClassName(className: string): B;
     withFactoryClassName(className: string): B;
 }

@@ -2,7 +2,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ClassDiscriminatorMode } from '../../../kotlinx/serialization/json/ClassDiscriminatorMode.d.ts'
 import type { JsonNamingStrategy } from '../../../kotlinx/serialization/json/JsonNamingStrategy.d.ts'
 export class JsonConfiguration extends Object {
-    constructor(encodeDefaults: boolean, ignoreUnknownKeys: boolean, isLenient: boolean, allowStructuredMapKeys: boolean, prettyPrint: boolean, explicitNulls: boolean, prettyPrintIndent: string, coerceInputValues: boolean, useArrayPolymorphism: boolean, classDiscriminator: string, allowSpecialFloatingPointValues: boolean, useAlternativeNames: boolean, namingStrategy: JsonNamingStrategy | null, decodeEnumsCaseInsensitive: boolean, allowTrailingComma: boolean, allowComments: boolean, classDiscriminatorMode: ClassDiscriminatorMode)
+    constructor(encodeDefaults: boolean, ignoreUnknownKeys: boolean, isLenient: boolean, allowStructuredMapKeys: boolean, prettyPrint: boolean, explicitNulls: boolean, prettyPrintIndent: string, coerceInputValues: boolean, useArrayPolymorphism: boolean, classDiscriminator: string, allowSpecialFloatingPointValues: boolean, useAlternativeNames: boolean, namingStrategy: JsonNamingStrategy | null, decodeEnumsCaseInsensitive: boolean, allowTrailingComma: boolean, allowComments: boolean, classDiscriminatorMode: ClassDiscriminatorMode, exceptionsWithDebugInfo: boolean)
     readonly allowComments: boolean;
     readonly allowSpecialFloatingPointValues: boolean;
     readonly allowStructuredMapKeys: boolean;
@@ -12,6 +12,7 @@ export class JsonConfiguration extends Object {
     readonly coerceInputValues: boolean;
     readonly decodeEnumsCaseInsensitive: boolean;
     readonly encodeDefaults: boolean;
+    exceptionsWithDebugInfo: boolean;
     readonly explicitNulls: boolean;
     readonly ignoreUnknownKeys: boolean;
     // private isLenient: boolean;

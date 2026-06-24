@@ -4,6 +4,8 @@ import type { Pair } from '../../../kotlin/Pair.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
+import type { CoroutineScope } from '../../../kotlinx/coroutines/CoroutineScope.d.ts'
+import type { Job } from '../../../kotlinx/coroutines/Job.d.ts'
 import type { BroadcastChannel } from '../../../kotlinx/coroutines/channels/BroadcastChannel.d.ts'
 import type { ReceiveChannel } from '../../../kotlinx/coroutines/channels/ReceiveChannel.d.ts'
 import type { SendChannel } from '../../../kotlinx/coroutines/channels/SendChannel.d.ts'
@@ -40,6 +42,7 @@ export class ChannelsKt__DeprecatedKt extends Object {
     static maxWith(paramarg0: ReceiveChannel<Object>, paramarg1: (param0: Object) => boolean, paramarg2: Continuation<Object>): Object;
     static minWith(paramarg0: ReceiveChannel<Object>, paramarg1: (param0: Object) => boolean, paramarg2: Continuation<Object>): Object;
     static none(paramarg0: ReceiveChannel<Object>, paramarg1: Continuation<Object>): Object;
+    static produce(paramarg0: CoroutineScope, paramarg1: Job, paramarg2: number, paramarg3: (param0: Object, param1: Object) => Object): ReceiveChannel<Object>;
     static requireNoNulls(paramarg0: ReceiveChannel<Object>): ReceiveChannel<Object>;
     static single(paramarg0: ReceiveChannel<Object>, paramarg1: Continuation<Object>): Object;
     static singleOrNull(paramarg0: ReceiveChannel<Object>, paramarg1: Continuation<Object>): Object;

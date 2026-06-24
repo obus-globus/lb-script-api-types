@@ -20,6 +20,7 @@ export class MiscOverworldPlacements extends Object {
     static SPRING_LAVA: ResourceKey<PlacedFeature>;
     static SPRING_LAVA_FROZEN: ResourceKey<PlacedFeature>;
     static SPRING_WATER: ResourceKey<PlacedFeature>;
+    static SULFUR_POOL: ResourceKey<PlacedFeature>;
     static VOID_START_PLATFORM: ResourceKey<PlacedFeature>;
     static bootstrap(paramcontext: BootstrapContext<PlacedFeature>): void;
     constructor()

@@ -14,6 +14,7 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class ClientboundMoveMinecartPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundMoveMinecartPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(entityId: number, lerpSteps: NewMinecartBehavior$MinecartStep[])
     // private entityId: number;
     // private lerpSteps: NewMinecartBehavior$MinecartStep[];
     entityId(): number;

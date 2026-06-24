@@ -19,6 +19,7 @@ import type { DamageSource } from '../../../../../../net/minecraft/world/damages
 import type { MobEffectInstance } from '../../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { AgeableMob } from '../../../../../../net/minecraft/world/entity/AgeableMob.d.ts'
 import type { AnimationState } from '../../../../../../net/minecraft/world/entity/AnimationState.d.ts'
+import type { Bucketable } from '../../../../../../net/minecraft/world/entity/Bucketable.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityDimensions } from '../../../../../../net/minecraft/world/entity/EntityDimensions.d.ts'
 import type { EntitySpawnReason } from '../../../../../../net/minecraft/world/entity/EntitySpawnReason.d.ts'
@@ -34,7 +35,6 @@ import type { AttributeModifier } from '../../../../../../net/minecraft/world/en
 import type { AttributeSupplier$Builder } from '../../../../../../net/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder.d.ts'
 import type { PathNavigation } from '../../../../../../net/minecraft/world/entity/ai/navigation/PathNavigation.d.ts'
 import type { Animal } from '../../../../../../net/minecraft/world/entity/animal/Animal.d.ts'
-import type { Bucketable } from '../../../../../../net/minecraft/world/entity/animal/Bucketable.d.ts'
 import type { Axolotl$Variant } from '../../../../../../net/minecraft/world/entity/animal/axolotl/Axolotl$Variant.d.ts'
 import type { Player } from '../../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
@@ -47,6 +47,7 @@ import type { ValueInput } from '../../../../../../net/minecraft/world/level/sto
 import type { ValueOutput } from '../../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
+import type { CollisionContext } from '../../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 import type { ScoreHolder } from '../../../../../../net/minecraft/world/scores/ScoreHolder.d.ts'
 export class Axolotl extends Animal implements Bucketable {
@@ -55,9 +56,12 @@ export class Axolotl extends Animal implements Bucketable {
     static ARMOR_SLOT_OFFSET: number;
     static AXIS_SPECIFIC_ELASTICITY: Vec3;
     static BABY_START_AGE: number;
+    static BASE_HORIZONTAL_AIR_DRAG: number;
     static BASE_JUMP_POWER: number;
     static BASE_SAFE_FALL_DISTANCE: number;
+    static BASE_SWIM_SPEED: number;
     static BASE_TICKS_REQUIRED_TO_FREEZE: number;
+    static BASE_VERTICAL_AIR_DRAG: number;
     static BOARDING_COOLDOWN: number;
     static BODY_ARMOR_OFFSET: number;
     static CONTENTS_SLOT_INDEX: number;
@@ -66,13 +70,25 @@ export class Axolotl extends Animal implements Bucketable {
     static DEFAULT_BASE_GRAVITY: number;
     static DEFAULT_BB_HEIGHT: number;
     static DEFAULT_BB_WIDTH: number;
+    static DEFAULT_BELOW_NAME_DISTANCE: number;
+    static DEFAULT_NAME_TAG_DISTANCE: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_2: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_5: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_1_0: number;
+    static DOLPHINS_GRACE_WATER_DRAG: number;
+    static ELYTRA_HORIZONTAL_AIR_DRAG: number;
+    static ELYTRA_VERTICAL_AIR_DRAG: number;
     static ENTITY_ATTACHMENT_POINT: Vec3[];
     static EQUIPMENT_SLOT_OFFSET: number;
     static EXTRA_RENDER_CULLING_SIZE_WITH_BIG_HAT: number;
+    static FLYING_AIR_DRAG: number;
+    static FLYING_LAVA_DRAG: number;
+    static FLYING_VERTICAL_AIR_DRAG: number;
+    static FLYING_WATER_DRAG: number;
     static FREEZE_HURT_FREQUENCY: number;
+    static INVALID_ENTITY_ID: number;
+    static LAVA_DRAG: number;
+    static LAVA_SHALLOW_VERTICAL_DRAG: number;
     static LEASHER_ATTACHMENT_POINT: Vec3[];
     static LEASH_ELASTIC_DIST: number;
     static LEASH_TAG: string;
@@ -82,8 +98,8 @@ export class Axolotl extends Animal implements Bucketable {
     static MAX_ENCHANTED_WEAPON_CHANCE: number;
     static MAX_ENTITY_TAG_COUNT: number;
     static MAX_MOVEMENTS_HANDELED_PER_TICK: number;
+    static MAX_NAME_TAG_DISTANCE: number;
     static MAX_PICKUP_LOOT_CHANCE: number;
-    static MAX_RANGE: number;
     static MAX_WEARING_ARMOR_CHANCE: number;
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
@@ -95,6 +111,7 @@ export class Axolotl extends Animal implements Bucketable {
     static SADDLE_OFFSET: number;
     static SHARED_QUAD_ATTACHMENT_POINTS: Vec3[];
     static SPRING_DAMPENING: number;
+    static SPRINTING_WATER_DRAG: number;
     static STIFFNESS: number;
     static TAG_AIR: string;
     static TAG_ATTRIBUTES: string;
@@ -110,7 +127,6 @@ export class Axolotl extends Animal implements Bucketable {
     static TAG_FIRE: string;
     static TAG_GLOWING: string;
     static TAG_HEALTH: string;
-    static TAG_HURT_BY_TIMESTAMP: string;
     static TAG_HURT_TIME: string;
     static TAG_ID: string;
     static TAG_INVULNERABLE: string;
@@ -120,6 +136,7 @@ export class Axolotl extends Animal implements Bucketable {
     static TAG_NO_GRAVITY: string;
     static TAG_ON_GROUND: string;
     static TAG_PASSENGERS: string;
+    static TAG_PERSISTENCE_REQUIRED: string;
     static TAG_PORTAL_COOLDOWN: string;
     static TAG_POS: string;
     static TAG_ROTATION: string;
@@ -131,6 +148,7 @@ export class Axolotl extends Animal implements Bucketable {
     static TOTAL_PLAYDEAD_TIME: number;
     static UPDATE_GOAL_SELECTOR_EVERY_N_TICKS: number;
     static VARIANT_TAG: string;
+    static WATER_DRAG: number;
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static WEARING_ARMOR_UPGRADE_MATERIAL_ATTEMPTS: number;
     static WEARING_ARMOR_UPGRADE_MATERIAL_CHANCE: number;
@@ -145,6 +163,7 @@ export class Axolotl extends Animal implements Bucketable {
     static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
+    static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
     static createAnimalAttributes(): AttributeSupplier$Builder;
     static createAttributes(): AttributeSupplier$Builder;
     static createLivingAttributes(): AttributeSupplier$Builder;
@@ -179,6 +198,7 @@ export class Axolotl extends Animal implements Bucketable {
     applySupportingEffects(player: Player): void;
     baseTick(): void;
     canBeLeashed(): boolean;
+    canBePickedUpWithBucket(itemStack: ItemStack): boolean;
     canBeSeenAsEnemy(): boolean;
     checkSpawnObstruction(level: LevelReader): boolean;
     createNavigation(level: Level): PathNavigation;

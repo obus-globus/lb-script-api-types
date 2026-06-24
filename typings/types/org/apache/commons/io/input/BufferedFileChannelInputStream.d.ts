@@ -1,3 +1,4 @@
+import type { BufferedFileChannelInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
@@ -12,6 +13,7 @@ export class BufferedFileChannelInputStream extends InputStream {
     constructor(arg0: Path[])
     constructor(arg0: Path[], arg1: number)
     private constructor(arg0: BufferedFileChannelInputStream$Builder)
+    constructor(arg0: BufferedFileChannelInputStream$Builder, arg1: BufferedFileChannelInputStream$1)
     // private byteBuffer: ByteBuffer;
     // private fileChannel: FileChannel;
     available(): number;

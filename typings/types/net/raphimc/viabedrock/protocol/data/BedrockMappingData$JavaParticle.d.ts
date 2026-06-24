@@ -3,6 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BedrockMappingData$LevelEventMapping } from '../../../../../net/raphimc/viabedrock/protocol/data/BedrockMappingData$LevelEventMapping.d.ts'
 export class BedrockMappingData$JavaParticle extends Record implements BedrockMappingData$LevelEventMapping {
+    constructor(particle: Particle, offsetX: number, offsetY: number, offsetZ: number, speed: number, count: number)
     // private count: number;
     // private offsetX: number;
     // private offsetY: number;

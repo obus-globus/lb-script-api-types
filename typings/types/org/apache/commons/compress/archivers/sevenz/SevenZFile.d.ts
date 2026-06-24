@@ -1,3 +1,4 @@
+import type { SevenZFile$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
@@ -28,6 +29,7 @@ export class SevenZFile extends Object implements Closeable {
     constructor(arg0: SeekableByteChannel, arg1: string)
     constructor(arg0: SeekableByteChannel, arg1: string, arg2: number[])
     private constructor(arg0: SeekableByteChannel, arg1: string, arg2: number[], arg3: boolean, arg4: number, arg5: boolean, arg6: boolean)
+    constructor(arg0: SeekableByteChannel, arg1: string, arg2: number[], arg3: boolean, arg4: number, arg5: boolean, arg6: boolean, arg7: SevenZFile$1)
     private constructor(arg0: SeekableByteChannel, arg1: string, arg2: number[], arg3: boolean, arg4: SevenZFileOptions)
     constructor(arg0: SeekableByteChannel, arg1: string, arg2: string[])
     constructor(arg0: SeekableByteChannel, arg1: string, arg2: string[], arg3: SevenZFileOptions)

@@ -1,3 +1,4 @@
+import type { StringMatchFilter$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -17,6 +18,7 @@ export class StringMatchFilter extends AbstractFilter {
     static EMPTY_ARRAY: (Object | null)[];
     static newBuilder(): StringMatchFilter$Builder;
     private constructor(text: string, onMatch: Filter$Result, onMismatch: Filter$Result)
+    constructor(arg0: string, arg1: Filter$Result, arg2: Filter$Result, arg3: StringMatchFilter$1)
     // private text: string;
     // private filter(msg: string): Filter$Result;
     filter(event: LogEvent): Filter$Result;

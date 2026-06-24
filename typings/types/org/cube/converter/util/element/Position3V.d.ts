@@ -1,4 +1,4 @@
-import type { JsonElement } from '../../../../../com/google/gson/JsonElement.d.ts'
+import type { JsonElement } from '../../../../../com/viaversion/viaversion/libs/gson/JsonElement.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Position3V extends Object {
     static fromOrigin(paramarg0: JsonElement[], paramarg1: JsonElement[]): Position3V;
@@ -19,6 +19,7 @@ export class Position3V extends Object {
     getY(): number;
     getZ(): number;
     isZero(): boolean;
+    multiply(arg0: number, arg1: number, arg2: number): Position3V;
     scale(arg0: number): void;
     set(arg0: number, arg1: number, arg2: number): void;
     set(arg0: Position3V): void;

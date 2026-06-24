@@ -2,8 +2,8 @@ import type { FloatAVLTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil
 import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FloatAVLTreeSet$SetIterator extends Object implements FloatListIterator {
-    constructor(null_: FloatAVLTreeSet$SetIterator)
-    constructor(null_: FloatAVLTreeSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: FloatAVLTreeSet$Entry;
     // private index: number;
     // private next: FloatAVLTreeSet$Entry;

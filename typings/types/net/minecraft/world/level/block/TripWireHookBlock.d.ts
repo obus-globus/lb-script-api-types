@@ -93,10 +93,10 @@ export class TripWireHookBlock extends Block {
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     getDirectSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     isSignalSource(state: BlockState): boolean;
     mirror(state: BlockState, mirror: Mirror): BlockState;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     rotate(state: BlockState, rotation: Rotation): BlockState;
     setPlacedBy(level: Level, pos: BlockPos, state: BlockState, by: LivingEntity, itemStack: ItemStack): void;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;

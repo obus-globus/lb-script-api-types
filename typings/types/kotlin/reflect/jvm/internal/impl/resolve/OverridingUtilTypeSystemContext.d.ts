@@ -3,7 +3,6 @@ import type { KotlinBuiltIns } from '../../../../../../kotlin/reflect/jvm/intern
 import type { PrimitiveType } from '../../../../../../kotlin/reflect/jvm/internal/impl/builtins/PrimitiveType.d.ts'
 import type { FqName } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
 import type { FqNameUnsafe } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/FqNameUnsafe.d.ts'
-import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { SimpleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 import type { TypeCheckerState } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeCheckerState.d.ts'
 import type { TypeCheckerState$SupertypesPolicy } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeCheckerState$SupertypesPolicy.d.ts'
@@ -26,11 +25,12 @@ import type { TypeArgumentMarker } from '../../../../../../kotlin/reflect/jvm/in
 import type { TypeConstructorMarker } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeConstructorMarker.d.ts'
 import type { TypeParameterMarker } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeParameterMarker.d.ts'
 import type { TypeSubstitutorMarker } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSubstitutorMarker.d.ts'
+import type { TypeSystemContext } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSystemContext.d.ts'
 import type { TypeVariableTypeConstructorMarker } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariableTypeConstructorMarker.d.ts'
 import type { TypeVariance } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariance.d.ts'
 export class OverridingUtilTypeSystemContext extends Object implements ClassicTypeSystemContext {
-    constructor(arg0: Map<TypeConstructor, TypeConstructor>, arg1: KotlinTypeChecker$TypeConstructorEquality, arg2: KotlinTypeRefiner, arg3: KotlinTypePreparator, arg4: (param0: KotlinType, param1: KotlinType) => boolean)
-    // private customSubtype: (param0: KotlinType, param1: KotlinType) => boolean;
+    constructor(arg0: Map<TypeConstructor, TypeConstructor>, arg1: KotlinTypeChecker$TypeConstructorEquality, arg2: KotlinTypeRefiner, arg3: KotlinTypePreparator, arg4: (param0: KotlinTypeMarker, param1: KotlinTypeMarker) => boolean)
+    readonly customSubtypingCallback: (param0: KotlinTypeMarker, param1: KotlinTypeMarker) => boolean;
     // private equalityAxioms: KotlinTypeChecker$TypeConstructorEquality;
     // private kotlinTypePreparator: KotlinTypePreparator;
     // private kotlinTypeRefiner: KotlinTypeRefiner;
@@ -67,6 +67,7 @@ export class OverridingUtilTypeSystemContext extends Object implements ClassicTy
     default$lowerBoundIfFlexible(arg0: KotlinTypeMarker): RigidTypeMarker;
     default$makeDefinitelyNotNullOrNotNull(arg0: KotlinTypeMarker): KotlinTypeMarker;
     default$makeNullable(arg0: KotlinTypeMarker): KotlinTypeMarker;
+    default$newTypeCheckerState(arg0: boolean, arg1: boolean, arg2: boolean): TypeCheckerState;
     default$originalIfDefinitelyNotNullable(arg0: RigidTypeMarker): SimpleTypeMarker;
     default$size(arg0: TypeArgumentListMarker): number;
     default$typeConstructor(arg0: KotlinTypeMarker): TypeConstructorMarker;
@@ -78,6 +79,7 @@ export class OverridingUtilTypeSystemContext extends Object implements ClassicTy
     getArguments(arg0: KotlinTypeMarker): TypeArgumentMarker[];
     getBuiltIns(): KotlinBuiltIns;
     getClassFqNameUnsafe(arg0: TypeConstructorMarker): FqNameUnsafe;
+    getCustomSubtypingCallback(): (param0: KotlinTypeMarker, param1: KotlinTypeMarker) => boolean;
     getParameter(arg0: TypeConstructorMarker, arg1: number): TypeParameterMarker;
     getParameters(arg0: TypeConstructorMarker): TypeParameterMarker[];
     getPrimitiveArrayType(arg0: TypeConstructorMarker): PrimitiveType;
@@ -136,6 +138,7 @@ export class OverridingUtilTypeSystemContext extends Object implements ClassicTy
     makeDefinitelyNotNullOrNotNull(arg0: KotlinTypeMarker, arg1: boolean): KotlinTypeMarker;
     makeNullable(arg0: KotlinTypeMarker): KotlinTypeMarker;
     newTypeCheckerState(arg0: boolean, arg1: boolean, arg2: boolean): TypeCheckerState;
+    newTypeCheckerState(arg0: TypeSystemContext, arg1: boolean, arg2: boolean, arg3: boolean): TypeCheckerState;
     nullableAnyType(): SimpleTypeMarker;
     original(arg0: DefinitelyNotNullTypeMarker): SimpleTypeMarker;
     originalIfDefinitelyNotNullable(arg0: RigidTypeMarker): SimpleTypeMarker;

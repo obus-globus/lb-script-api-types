@@ -1,3 +1,4 @@
+import type { SslMasterKeyHandler$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { SslMasterKeyHandler } from '../../../../io/netty/handler/ssl/SslMasterKeyHandler.d.ts'
 import type { SecretKey } from '../../../../javax/crypto/SecretKey.d.ts'
 import type { SSLSession } from '../../../../javax/net/ssl/SSLSession.d.ts'
@@ -9,5 +10,6 @@ export class SslMasterKeyHandler$WiresharkSslMasterKeyHandler extends SslMasterK
     static newWireSharkSslMasterKeyHandler(): SslMasterKeyHandler;
     static sunSslEngineUnavailabilityCause(): Throwable;
     private constructor()
+    constructor(arg0: SslMasterKeyHandler$1)
     accept(arg0: SecretKey, arg1: SSLSession): void;
 }

@@ -2,9 +2,10 @@ import type { InputStream } from '../../java/io/InputStream.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Buffer } from '../../okio/Buffer.d.ts'
 import type { Source } from '../../okio/Source.d.ts'
+import type { DefaultSocket } from '../../okio/internal/DefaultSocket.d.ts'
 import type { SocketAsyncTimeout } from '../../okio/internal/SocketAsyncTimeout.d.ts'
 export class DefaultSocket$SocketSource extends Object implements Source {
-    constructor(null_: DefaultSocket$SocketSource)
+    constructor(null_: DefaultSocket)
     // private inputStream: InputStream;
     // private timeout: SocketAsyncTimeout;
     close(): void;

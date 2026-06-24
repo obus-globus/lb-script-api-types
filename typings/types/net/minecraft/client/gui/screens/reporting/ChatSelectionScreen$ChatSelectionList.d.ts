@@ -5,6 +5,7 @@ import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../../net
 import type { ObjectSelectionList } from '../../../../../../net/minecraft/client/gui/components/ObjectSelectionList.d.ts'
 import type { ScreenDirection } from '../../../../../../net/minecraft/client/gui/navigation/ScreenDirection.d.ts'
 import type { ChatSelectionLogFiller$Output } from '../../../../../../net/minecraft/client/gui/screens/reporting/ChatSelectionLogFiller$Output.d.ts'
+import type { ChatSelectionScreen } from '../../../../../../net/minecraft/client/gui/screens/reporting/ChatSelectionScreen.d.ts'
 import type { ChatSelectionScreen$ChatSelectionList$Entry } from '../../../../../../net/minecraft/client/gui/screens/reporting/ChatSelectionScreen$ChatSelectionList$Entry.d.ts'
 import type { ChatSelectionScreen$ChatSelectionList$Heading } from '../../../../../../net/minecraft/client/gui/screens/reporting/ChatSelectionScreen$ChatSelectionList$Heading.d.ts'
 import type { KeyEvent } from '../../../../../../net/minecraft/client/input/KeyEvent.d.ts'
@@ -18,7 +19,7 @@ export class ChatSelectionScreen$ChatSelectionList extends ObjectSelectionList<C
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: ChatSelectionScreen$ChatSelectionList, minecraft: Minecraft, upperMargin: number)
+    constructor(null_: ChatSelectionScreen, minecraft: Minecraft, upperMargin: number)
     // private previousHeading: ChatSelectionScreen$ChatSelectionList$Heading;
     acceptDivider(text: Component): void;
     acceptMessage(id: number, message: LoggedChatMessage$Player): void;

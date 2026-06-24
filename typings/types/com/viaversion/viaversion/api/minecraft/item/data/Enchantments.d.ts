@@ -6,6 +6,9 @@ export class Enchantments extends Record implements Copyable {
     static TYPE1_20_5: Type<Enchantments>;
     static TYPE1_21_5: Type<Enchantments>;
     static copy(paramarg0: Object | null): Object | null;
+    constructor(arg0: { [key: string]: any })
+    constructor(enchantments: { [key: string]: any }, showInTooltip: boolean)
+    constructor(arg0: boolean)
     // private enchantments: { [key: string]: any };
     // private showInTooltip: boolean;
     add(arg0: number, arg1: number): void;

@@ -40,6 +40,8 @@ export class Flags extends Object {
     static IS_NULL_CHECK_PREDICATE: Flags$BooleanFlagField;
     static IS_OPERATOR: Flags$BooleanFlagField;
     static IS_SECONDARY: Flags$BooleanFlagField;
+    static IS_STATIC_FUNCTION: Flags$BooleanFlagField;
+    static IS_STATIC_PROPERTY: Flags$BooleanFlagField;
     static IS_SUSPEND: Flags$BooleanFlagField;
     static IS_TAILREC: Flags$BooleanFlagField;
     static IS_UNSIGNED: Flags$BooleanFlagField;

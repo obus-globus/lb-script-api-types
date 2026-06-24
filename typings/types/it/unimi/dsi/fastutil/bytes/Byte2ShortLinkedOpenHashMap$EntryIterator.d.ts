@@ -4,8 +4,8 @@ import type { Byte2ShortMap$Entry } from '../../../../../it/unimi/dsi/fastutil/b
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Byte2ShortLinkedOpenHashMap$EntryIterator extends Byte2ShortLinkedOpenHashMap$MapIterator<(param0: Byte2ShortMap$Entry) => void> implements ObjectListIterator<Byte2ShortMap$Entry> {
-    constructor(null_: Byte2ShortLinkedOpenHashMap$EntryIterator)
-    constructor(null_: Byte2ShortLinkedOpenHashMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Byte2ShortLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Byte2ShortMap$Entry) => void, arg1: number): void;
     add(arg0: Byte2ShortMap$Entry): void;

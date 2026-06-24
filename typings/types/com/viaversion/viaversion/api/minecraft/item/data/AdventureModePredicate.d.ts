@@ -9,6 +9,8 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class AdventureModePredicate extends Record implements Copyable, Rewritable {
     static TYPE1_20_5: Type<AdventureModePredicate>;
+    constructor(arg0: BlockPredicate[])
+    constructor(predicates: BlockPredicate[], showInTooltip: boolean)
     // private predicates: BlockPredicate[];
     // private showInTooltip: boolean;
     copy(): AdventureModePredicate;

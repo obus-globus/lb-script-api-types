@@ -12,6 +12,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 export class ServerboundEditBookPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundEditBookPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(slot: number, pages: string[], title: Optional<string>)
     // private pages: string[];
     // private slot: number;
     // private title: Optional<string>;

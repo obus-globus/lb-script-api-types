@@ -1,5 +1,6 @@
 import type { RealmsServer } from '../../../../com/mojang/realmsclient/dto/RealmsServer.d.ts'
 import type { RealmsWorldSlotButton$State } from '../../../../com/mojang/realmsclient/gui/RealmsWorldSlotButton$State.d.ts'
+import type { RealmsConfigureWorldScreen } from '../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsConfigureWorldScreen.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../net/minecraft/client/gui/components/Button.d.ts'
 import type { Button$Builder } from '../../../../net/minecraft/client/gui/components/Button$Builder.d.ts'
@@ -23,11 +24,13 @@ export class RealmsWorldSlotButton extends Button {
     static defaultInactiveMessage(paramactiveMessage: Component): Component;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(x: number, y: number, width: number, height: number, slotIndex: number, serverData: RealmsServer, onPress: Button$OnPress)
+    constructor(configureWorldScreen: RealmsConfigureWorldScreen, x: number, y: number, width: number, height: number, slotIndex: number, serverData: RealmsServer, onPress: Button$OnPress)
+    // private configureWorldScreen: RealmsConfigureWorldScreen;
     // private slotIndex: number;
     // private slotNameWidget: StringWidget;
     readonly state: RealmsWorldSlotButton$State;
     extractContents(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
+    extractTooltipForNextRenderPass(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): void;
     getState(): RealmsWorldSlotButton$State;
     isActive(): boolean;
     setServerData(serverData: RealmsServer): RealmsWorldSlotButton$State;

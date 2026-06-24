@@ -6,6 +6,7 @@ export class TextGizmo$Style extends Record {
     static forColor(paramargb: number): TextGizmo$Style;
     static forColorAndCentered(paramargb: number): TextGizmo$Style;
     static whiteAndCentered(): TextGizmo$Style;
+    constructor(color: number, scale: number, adjustLeft: OptionalDouble)
     // private adjustLeft: OptionalDouble;
     // private color: number;
     // private scale: number;

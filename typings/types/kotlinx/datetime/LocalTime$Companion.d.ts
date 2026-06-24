@@ -14,6 +14,7 @@ export class LocalTime$Companion extends Object {
     fromMillisecondOfDay(millisecondOfDay: number): LocalTime;
     fromNanosecondOfDay(nanosecondOfDay: number): LocalTime;
     fromSecondOfDay(secondOfDay: number): LocalTime;
+    orNull(hour: number, minute: number, second: number, nanosecond: number): LocalTime | null;
     parse(input: CharSequence, format: DateTimeFormat<LocalTime>): LocalTime;
     parse(isoString: string): LocalTime;
     serializer(): KSerializer<LocalTime>;

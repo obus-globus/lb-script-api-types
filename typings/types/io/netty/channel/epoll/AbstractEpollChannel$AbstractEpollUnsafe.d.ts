@@ -5,6 +5,7 @@ import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise
 import type { IoEvent } from '../../../../io/netty/channel/IoEvent.d.ts'
 import type { IoRegistration } from '../../../../io/netty/channel/IoRegistration.d.ts'
 import type { RecvByteBufAllocator$ExtendedHandle } from '../../../../io/netty/channel/RecvByteBufAllocator$ExtendedHandle.d.ts'
+import type { AbstractEpollChannel } from '../../../../io/netty/channel/epoll/AbstractEpollChannel.d.ts'
 import type { EpollIoHandle } from '../../../../io/netty/channel/epoll/EpollIoHandle.d.ts'
 import type { EpollRecvByteAllocatorHandle } from '../../../../io/netty/channel/epoll/EpollRecvByteAllocatorHandle.d.ts'
 import type { FileDescriptor } from '../../../../io/netty/channel/unix/FileDescriptor.d.ts'
@@ -13,7 +14,7 @@ import type { ClosedChannelException } from '../../../../java/nio/channels/Close
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export abstract class AbstractEpollChannel$AbstractEpollUnsafe extends AbstractChannel$AbstractUnsafe implements EpollIoHandle {
-    constructor(null_: AbstractEpollChannel$AbstractEpollUnsafe)
+    constructor(null_: AbstractEpollChannel)
     // private allocHandle: EpollRecvByteAllocatorHandle;
     // private readPending: boolean;
     channel(): Channel;

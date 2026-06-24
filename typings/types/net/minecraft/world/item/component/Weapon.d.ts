@@ -7,6 +7,8 @@ export class Weapon extends Record {
     static AXE_DISABLES_BLOCKING_FOR_SECONDS: number;
     static CODEC: Codec<Weapon>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Weapon>;
+    constructor(damagePerAttack: number)
+    constructor(itemDamagePerAttack: number, disableBlockingForSeconds: number)
     // private disableBlockingForSeconds: number;
     // private itemDamagePerAttack: number;
     disableBlockingForSeconds(): number;

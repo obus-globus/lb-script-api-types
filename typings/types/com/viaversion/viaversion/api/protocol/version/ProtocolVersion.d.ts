@@ -56,6 +56,7 @@ export class ProtocolVersion extends Object implements Comparable<ProtocolVersio
     static v1_9_2: ProtocolVersion;
     static v1_9_3: ProtocolVersion;
     static v26_1: ProtocolVersion;
+    static v26_2: ProtocolVersion;
     static getClosest(paramarg0: string): ProtocolVersion;
     static getIndex(paramarg0: ProtocolVersion): number;
     static getProtocol(paramarg0: VersionType, paramarg1: number): ProtocolVersion;

@@ -24,6 +24,8 @@ export abstract class LivingEntityRenderer<T extends LivingEntity, S extends Liv
     // private layers: RenderLayer<S, M>[];
     model: M;
     addLayer(layer: RenderLayer<S, M>): boolean;
+    extractNameTags(entity: T, state: S, partialTicks: number): void;
+    extractNameTags(entity: T, state: S, partialTicks: number, nameTagDistance: number, belowNameDistance: number): void;
     extractRenderState(entity: T, state: S, partialTicks: number): void;
     getBoundingBoxForCulling(entity: T): AABB;
     getFlipDegrees(): number;

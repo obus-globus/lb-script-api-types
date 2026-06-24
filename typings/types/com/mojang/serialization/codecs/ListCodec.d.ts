@@ -68,6 +68,7 @@ export class ListCodec<E extends unknown> extends Record implements Codec<E[]> {
     static withAlternative(paramarg0: Codec<Object>, paramarg1: Codec<Object>, paramarg2: (param0: Object | null) => Object | null): Codec<Object>;
     static withAlternative(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
     static xor(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Either<Object, Object>>;
+    constructor(elementCodec: Codec<E>, minSize: number, maxSize: number)
     // private elementCodec: Codec<E>;
     // private maxSize: number;
     // private minSize: number;

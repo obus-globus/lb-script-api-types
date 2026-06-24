@@ -1,0 +1,128 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { IntBuffer } from '../../../java/nio/IntBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { NativeResource } from '../../../org/lwjgl/system/NativeResource.d.ts'
+import type { Struct } from '../../../org/lwjgl/system/Struct.d.ts'
+import type { Struct$StructValidation } from '../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+export class VkPhysicalDeviceVulkan14Properties extends Struct<VkPhysicalDeviceVulkan14Properties> implements NativeResource {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static BLOCKTEXELVIEWCOMPATIBLEMULTIPLELAYERS: number;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static COPYDSTLAYOUTCOUNT: number;
+    static COPYSRCLAYOUTCOUNT: number;
+    static DEFAULTROBUSTNESSIMAGES: number;
+    static DEFAULTROBUSTNESSSTORAGEBUFFERS: number;
+    static DEFAULTROBUSTNESSUNIFORMBUFFERS: number;
+    static DEFAULTROBUSTNESSVERTEXINPUTS: number;
+    static DEPTHSTENCILSWIZZLEONESUPPORT: number;
+    static DYNAMICRENDERINGLOCALREADDEPTHSTENCILATTACHMENTS: number;
+    static DYNAMICRENDERINGLOCALREADMULTISAMPLEDATTACHMENTS: number;
+    static EARLYFRAGMENTMULTISAMPLECOVERAGEAFTERSAMPLECOUNTING: number;
+    static EARLYFRAGMENTSAMPLEMASKTESTBEFORESAMPLECOUNTING: number;
+    static FRAGMENTSHADINGRATECLAMPCOMBINERINPUTS: number;
+    static IDENTICALMEMORYTYPEREQUIREMENTS: number;
+    static LINESUBPIXELPRECISIONBITS: number;
+    static MAXCOMBINEDIMAGESAMPLERDESCRIPTORCOUNT: number;
+    static MAXPUSHDESCRIPTORS: number;
+    static MAXVERTEXATTRIBDIVISOR: number;
+    static NONSTRICTSINGLEPIXELWIDELINESUSEPARALLELOGRAM: number;
+    static NONSTRICTWIDELINESUSEPARALLELOGRAM: number;
+    static OPTIMALTILINGLAYOUTUUID: number;
+    static PCOPYDSTLAYOUTS: number;
+    static PCOPYSRCLAYOUTS: number;
+    static PNEXT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static POLYGONMODEPOINTSIZE: number;
+    static SIZEOF: number;
+    static STYPE: number;
+    static SUPPORTSNONZEROFIRSTINSTANCE: number;
+    static calloc(): VkPhysicalDeviceVulkan14Properties;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceVulkan14Properties;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): VkPhysicalDeviceVulkan14Properties;
+    static create(paramarg0: number): VkPhysicalDeviceVulkan14Properties;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceVulkan14Properties;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): VkPhysicalDeviceVulkan14Properties;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceVulkan14Properties;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static nblockTexelViewCompatibleMultipleLayers(paramarg0: number): number;
+    static ncopyDstLayoutCount(paramarg0: number): number;
+    static ncopySrcLayoutCount(paramarg0: number): number;
+    static ndefaultRobustnessImages(paramarg0: number): number;
+    static ndefaultRobustnessStorageBuffers(paramarg0: number): number;
+    static ndefaultRobustnessUniformBuffers(paramarg0: number): number;
+    static ndefaultRobustnessVertexInputs(paramarg0: number): number;
+    static ndepthStencilSwizzleOneSupport(paramarg0: number): number;
+    static ndynamicRenderingLocalReadDepthStencilAttachments(paramarg0: number): number;
+    static ndynamicRenderingLocalReadMultisampledAttachments(paramarg0: number): number;
+    static nearlyFragmentMultisampleCoverageAfterSampleCounting(paramarg0: number): number;
+    static nearlyFragmentSampleMaskTestBeforeSampleCounting(paramarg0: number): number;
+    static nfragmentShadingRateClampCombinerInputs(paramarg0: number): number;
+    static nidenticalMemoryTypeRequirements(paramarg0: number): number;
+    static nlineSubPixelPrecisionBits(paramarg0: number): number;
+    static nmaxCombinedImageSamplerDescriptorCount(paramarg0: number): number;
+    static nmaxPushDescriptors(paramarg0: number): number;
+    static nmaxVertexAttribDivisor(paramarg0: number): number;
+    static nnonStrictSinglePixelWideLinesUseParallelogram(paramarg0: number): number;
+    static nnonStrictWideLinesUseParallelogram(paramarg0: number): number;
+    static noptimalTilingLayoutUUID(paramarg0: number, paramarg1: number): number;
+    static noptimalTilingLayoutUUID(paramarg0: number): ByteBuffer;
+    static npCopyDstLayouts(paramarg0: number): IntBuffer;
+    static npCopySrcLayouts(paramarg0: number): IntBuffer;
+    static npNext(paramarg0: number): number;
+    static npNext(paramarg0: number, paramarg1: number): void;
+    static npolygonModePointSize(paramarg0: number): number;
+    static nsType(paramarg0: number): number;
+    static nsType(paramarg0: number, paramarg1: number): void;
+    static nsupportsNonZeroFirstInstance(paramarg0: number): number;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    blockTexelViewCompatibleMultipleLayers(): boolean;
+    close(): void;
+    copyDstLayoutCount(): number;
+    copySrcLayoutCount(): number;
+    create(arg0: number, arg1: ByteBuffer): VkPhysicalDeviceVulkan14Properties;
+    defaultRobustnessImages(): number;
+    defaultRobustnessStorageBuffers(): number;
+    defaultRobustnessUniformBuffers(): number;
+    defaultRobustnessVertexInputs(): number;
+    depthStencilSwizzleOneSupport(): boolean;
+    dynamicRenderingLocalReadDepthStencilAttachments(): boolean;
+    dynamicRenderingLocalReadMultisampledAttachments(): boolean;
+    earlyFragmentMultisampleCoverageAfterSampleCounting(): boolean;
+    earlyFragmentSampleMaskTestBeforeSampleCounting(): boolean;
+    fragmentShadingRateClampCombinerInputs(): boolean;
+    identicalMemoryTypeRequirements(): boolean;
+    lineSubPixelPrecisionBits(): number;
+    maxCombinedImageSamplerDescriptorCount(): number;
+    maxPushDescriptors(): number;
+    maxVertexAttribDivisor(): number;
+    nonStrictSinglePixelWideLinesUseParallelogram(): boolean;
+    nonStrictWideLinesUseParallelogram(): boolean;
+    optimalTilingLayoutUUID(): ByteBuffer;
+    optimalTilingLayoutUUID(arg0: number): number;
+    pCopyDstLayouts(): IntBuffer;
+    pCopySrcLayouts(): IntBuffer;
+    pNext(): number;
+    pNext(arg0: number): VkPhysicalDeviceVulkan14Properties;
+    polygonModePointSize(): boolean;
+    sType(): number;
+    sType(arg0: number): VkPhysicalDeviceVulkan14Properties;
+    sType$Default(): VkPhysicalDeviceVulkan14Properties;
+    set(arg0: number, arg1: number): VkPhysicalDeviceVulkan14Properties;
+    set(arg0: VkPhysicalDeviceVulkan14Properties): VkPhysicalDeviceVulkan14Properties;
+    sizeof(): number;
+    supportsNonZeroFirstInstance(): boolean;
+}

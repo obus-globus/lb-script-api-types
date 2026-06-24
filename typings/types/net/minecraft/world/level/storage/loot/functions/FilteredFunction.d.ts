@@ -1,6 +1,6 @@
 import type { MapCodec } from '../../../../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
-import type { ItemPredicate } from '../../../../../../../net/minecraft/advancements/criterion/ItemPredicate.d.ts'
+import type { ItemPredicate } from '../../../../../../../net/minecraft/advancements/predicates/ItemPredicate.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { LootContext } from '../../../../../../../net/minecraft/world/level/storage/loot/LootContext.d.ts'
 import type { ValidationContext } from '../../../../../../../net/minecraft/world/level/storage/loot/ValidationContext.d.ts'

@@ -7,6 +7,7 @@ import type { LevelSettings$DifficultySettings } from '../../../../net/minecraft
 import type { WorldDataConfiguration } from '../../../../net/minecraft/world/level/WorldDataConfiguration.d.ts'
 export class LevelSettings extends Record {
     static parse(paraminput: Dynamic<Object>, paramloadConfig: WorldDataConfiguration): LevelSettings;
+    constructor(levelName: string, gameType: GameType, difficultySettings: LevelSettings$DifficultySettings, allowCommands: boolean, dataConfiguration: WorldDataConfiguration)
     // private allowCommands: boolean;
     // private dataConfiguration: WorldDataConfiguration;
     // private difficultySettings: LevelSettings$DifficultySettings;
@@ -21,6 +22,7 @@ export class LevelSettings extends Record {
     hashCode(): number;
     levelName(): string;
     toString(): string;
+    withAllowCommands(allowCommands: boolean): LevelSettings;
     withDataConfiguration(dataConfiguration: WorldDataConfiguration): LevelSettings;
     withDifficulty(difficulty: Difficulty): LevelSettings;
     withDifficultyLock(locked: boolean): LevelSettings;

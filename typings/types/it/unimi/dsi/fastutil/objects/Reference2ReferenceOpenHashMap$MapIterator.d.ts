@@ -1,6 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Reference2ReferenceOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    private constructor(null_: Reference2ReferenceOpenHashMap$MapIterator<Object>)
+    private constructor(null_: Map<K, V>)
+    constructor(null_: Map<K, V>, arg1: (Object | null)[])
     // private c: number;
     // private last: number;
     // private mustReturnNullKey: boolean;

@@ -11,8 +11,8 @@ export class Reference2IntOpenCustomHashMap$MapEntry extends Object implements R
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static of(paramarg0: Object | null, paramarg1: number): ReferenceIntPair<Object>;
-    constructor(null_: Reference2IntOpenCustomHashMap$MapEntry)
-    constructor(null_: Reference2IntOpenCustomHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly key: K;
     equals(arg0: Object | null): boolean;

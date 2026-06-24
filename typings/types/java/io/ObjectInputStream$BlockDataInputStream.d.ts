@@ -1,12 +1,13 @@
 import type { DataInput } from '../../java/io/DataInput.d.ts'
 import type { DataInputStream } from '../../java/io/DataInputStream.d.ts'
 import type { InputStream } from '../../java/io/InputStream.d.ts'
+import type { ObjectInputStream } from '../../java/io/ObjectInputStream.d.ts'
 import type { ObjectInputStream$PeekInputStream } from '../../java/io/ObjectInputStream$PeekInputStream.d.ts'
 import type { StringBuilder } from '../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class ObjectInputStream$BlockDataInputStream extends InputStream implements DataInput {
     static nullInputStream(): InputStream;
-    constructor(null_: ObjectInputStream$BlockDataInputStream, arg1: InputStream)
+    constructor(null_: ObjectInputStream, arg1: InputStream)
     // private blkmode: boolean;
     // private buf: number[];
     // private cbuf: string[];

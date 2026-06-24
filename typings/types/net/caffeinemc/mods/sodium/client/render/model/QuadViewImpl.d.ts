@@ -71,5 +71,4 @@ export class QuadViewImpl extends Object implements ModelQuadView, ExtendedQuadV
     packedFaceNormal(): number;
     packedNormal(arg0: number): number;
     posByIndex(arg0: number, arg1: number): number;
-    toVanilla(arg0: number[], arg1: number): void;
 }

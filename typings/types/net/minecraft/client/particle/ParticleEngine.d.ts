@@ -19,7 +19,7 @@ export class ParticleEngine extends Object implements ParticleEngineAccessor {
     level: ClientLevel;
     // private particles: Map<ParticleRenderType, ParticleGroup<any>>;
     // private particlesToAdd: Particle[];
-    // private random: RandomSource;
+    readonly random: RandomSource;
     resourceManager: ParticleResources;
     // private trackedParticleCounts: { [key: string]: any };
     // private trackingEmitters: TrackingEmitter[];
@@ -31,6 +31,7 @@ export class ParticleEngine extends Object implements ParticleEngineAccessor {
     createTrackingEmitter(entity: Entity, particle: ParticleOptions): void;
     createTrackingEmitter(entity: Entity, particle: ParticleOptions, lifeTime: number): void;
     extract(particlesRenderState: ParticlesRenderState, frustum: Frustum, camera: Camera, partialTickTime: number): void;
+    getRandom(): RandomSource;
     // private hasSpaceInParticleLimit(limit: ParticleLimit): boolean;
     // private makeParticle<T extends ParticleOptions>(options: T, x: number, y: number, z: number, xa: number, ya: number, za: number): Particle;
     setLevel(level: ClientLevel): void;

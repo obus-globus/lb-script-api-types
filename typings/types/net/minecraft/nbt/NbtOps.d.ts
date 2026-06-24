@@ -23,7 +23,6 @@ export class NbtOps extends Object implements DynamicOps<Tag> {
     convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: Tag): U;
     convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: Tag): U;
     convertTo<U extends unknown>(outOps: DynamicOps<U>, input: Tag): U;
-    createBoolean(arg0: boolean): Tag;
     createBoolean(value: boolean): Tag;
     createByte(arg0: number): Tag;
     createByte(value: number): Tag;
@@ -52,7 +51,7 @@ export class NbtOps extends Object implements DynamicOps<Tag> {
     emptyList(): Tag;
     emptyMap(): Tag;
     get(arg0: Tag, arg1: string): DataResult<Tag>;
-    getBooleanValue(arg0: Tag): DataResult<boolean>;
+    getBooleanValue(input: Tag): DataResult<boolean>;
     getByteBuffer(arg0: Tag): DataResult<ByteBuffer>;
     getByteBuffer(input: Tag): DataResult<ByteBuffer>;
     getGeneric(arg0: Tag, arg1: Tag): DataResult<Tag>;

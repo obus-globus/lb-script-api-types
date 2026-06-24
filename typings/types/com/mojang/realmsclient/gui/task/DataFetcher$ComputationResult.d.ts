@@ -3,6 +3,7 @@ import type { Exception } from '../../../../../java/lang/Exception.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DataFetcher$ComputationResult<T extends unknown> extends Record {
+    private constructor(value: Either<T, Exception>, time: number)
     // private time: number;
     // private value: Either<T, Exception>;
     equals(o: Object | null): boolean;

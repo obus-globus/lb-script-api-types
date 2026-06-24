@@ -4,7 +4,7 @@ import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { Environment } from '../../../../../../com/oracle/truffle/js/parser/env/Environment.d.ts'
 import type { Environment$AbstractArgumentsVarRef } from '../../../../../../com/oracle/truffle/js/parser/env/Environment$AbstractArgumentsVarRef.d.ts'
 export class Environment$ArgumentsVarRef extends Environment$AbstractArgumentsVarRef {
-    constructor(null_: Environment$ArgumentsVarRef, frameSlot: JSFrameSlot, scopeLevel: number, frameLevel: number, name: TruffleString, current: Environment)
+    constructor(null_: Environment, frameSlot: JSFrameSlot, scopeLevel: number, frameLevel: number, name: TruffleString, current: Environment)
     readonly frameSlot: JSFrameSlot;
     createReadNode(): JavaScriptNode;
     createWriteNode(rhs: JavaScriptNode): JavaScriptNode;

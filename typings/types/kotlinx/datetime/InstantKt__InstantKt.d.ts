@@ -13,6 +13,7 @@ export class InstantKt__InstantKt extends Object {
     static daysUntil(paramarg0: Instant, paramarg1: Instant, paramarg2: TimeZone): number;
     static format(paramarg0: Instant, paramarg1: DateTimeFormat<DateTimeComponents>, paramarg2: UtcOffset): string;
     static minus(paramarg0: Instant, paramarg1: number, paramarg2: DateTimeUnit$TimeBased): Instant;
+    static minus(paramarg0: Instant, paramarg1: number, paramarg2: DateTimeUnit, paramarg3: TimeZone): Instant;
     static minus(paramarg0: Instant, paramarg1: DateTimePeriod, paramarg2: TimeZone): Instant;
     static minus(paramarg0: Instant, paramarg1: DateTimeUnit$TimeBased): Instant;
     static minus(paramarg0: Instant, paramarg1: DateTimeUnit, paramarg2: TimeZone): Instant;
@@ -23,8 +24,16 @@ export class InstantKt__InstantKt extends Object {
     static minus(paramarg0: Instant, paramarg1: Instant, paramarg2: DateTimeUnit, paramarg3: TimeZone): number;
     static monthsUntil(paramarg0: Instant, paramarg1: Instant, paramarg2: TimeZone): number;
     static parse(paramarg0: Instant$Companion, paramarg1: CharSequence, paramarg2: DateTimeFormat<DateTimeComponents>): Instant;
+    static parseOrNull(paramarg0: Instant$Companion, paramarg1: CharSequence, paramarg2: DateTimeFormat<DateTimeComponents>): Instant;
+    static periodUntil(paramarg0: Instant, paramarg1: Instant, paramarg2: TimeZone): DateTimePeriod;
     static plus(paramarg0: Instant, paramarg1: number, paramarg2: DateTimeUnit$TimeBased): Instant;
+    static plus(paramarg0: Instant, paramarg1: number, paramarg2: DateTimeUnit, paramarg3: TimeZone): Instant;
+    static plus(paramarg0: Instant, paramarg1: DateTimePeriod, paramarg2: TimeZone): Instant;
     static plus(paramarg0: Instant, paramarg1: DateTimeUnit$TimeBased): Instant;
+    static plus(paramarg0: Instant, paramarg1: DateTimeUnit, paramarg2: TimeZone): Instant;
+    static plus(paramarg0: Instant, paramarg1: number, paramarg2: DateTimeUnit$TimeBased): Instant;
+    static plus(paramarg0: Instant, paramarg1: number, paramarg2: DateTimeUnit, paramarg3: TimeZone): Instant;
     static until(paramarg0: Instant, paramarg1: Instant, paramarg2: DateTimeUnit$TimeBased): number;
+    static until(paramarg0: Instant, paramarg1: Instant, paramarg2: DateTimeUnit, paramarg3: TimeZone): number;
     static yearsUntil(paramarg0: Instant, paramarg1: Instant, paramarg2: TimeZone): number;
 }

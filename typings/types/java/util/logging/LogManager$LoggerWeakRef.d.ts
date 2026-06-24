@@ -1,10 +1,11 @@
 import type { WeakReference } from '../../../java/lang/ref/WeakReference.d.ts'
+import type { LogManager } from '../../../java/util/logging/LogManager.d.ts'
 import type { LogManager$LogNode } from '../../../java/util/logging/LogManager$LogNode.d.ts'
 import type { Logger } from '../../../java/util/logging/Logger.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class LogManager$LoggerWeakRef extends WeakReference<Logger> {
     static reachabilityFence(paramarg0: Object): void;
-    constructor(null_: LogManager$LoggerWeakRef, arg1: Logger)
+    constructor(null_: LogManager, arg1: Logger)
     // private disposed: boolean;
     // private name: string;
     // private node: LogManager$LogNode;

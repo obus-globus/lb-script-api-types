@@ -36,6 +36,7 @@ export class ARGB extends Object {
     static scaleRGB(paramcolor: number, paramscaleR: number, paramscaleG: number, paramscaleB: number): number;
     static scaleRGB(paramcolor: number, paramscale: number): number;
     static setBrightness(paramcolor: number, parambrightness: number): number;
+    static setVector4fFromARGB32(paramdest: Vector4f, paramcolor: number): Vector4f;
     static srgbLerp(paramalpha: number, paramp0: number, paramp1: number): number;
     static srgbToLinearChannel(paramsrgb: number): number;
     static subtractRgb(paramlhs: number, paramrhs: number): number;

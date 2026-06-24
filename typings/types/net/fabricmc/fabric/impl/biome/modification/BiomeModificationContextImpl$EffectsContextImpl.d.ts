@@ -2,10 +2,11 @@ import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { OptionalInt } from '../../../../../../java/util/OptionalInt.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BiomeModificationContext$EffectsContext } from '../../../../../../net/fabricmc/fabric/api/biome/v1/BiomeModificationContext$EffectsContext.d.ts'
+import type { BiomeModificationContextImpl } from '../../../../../../net/fabricmc/fabric/impl/biome/modification/BiomeModificationContextImpl.d.ts'
 import type { BiomeSpecialEffects } from '../../../../../../net/minecraft/world/level/biome/BiomeSpecialEffects.d.ts'
 import type { BiomeSpecialEffects$GrassColorModifier } from '../../../../../../net/minecraft/world/level/biome/BiomeSpecialEffects$GrassColorModifier.d.ts'
 export class BiomeModificationContextImpl$EffectsContextImpl extends Object implements BiomeModificationContext$EffectsContext {
-    private constructor(null_: BiomeModificationContextImpl$EffectsContextImpl)
+    private constructor(null_: BiomeModificationContextImpl)
     // private effects: BiomeSpecialEffects;
     clearDryFoliageColorOverride(): void;
     clearFoliageColorOverride(): void;

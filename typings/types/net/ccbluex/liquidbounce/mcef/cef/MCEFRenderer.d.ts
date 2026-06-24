@@ -1,6 +1,7 @@
 import type { GpuSampler } from '../../../../../com/mojang/blaze3d/textures/GpuSampler.d.ts'
 import type { GpuTexture } from '../../../../../com/mojang/blaze3d/textures/GpuTexture.d.ts'
 import type { GpuTextureView } from '../../../../../com/mojang/blaze3d/textures/GpuTextureView.d.ts'
+import type { Rectangle } from '../../../../../java/awt/Rectangle.d.ts'
 import type { Closeable } from '../../../../../java/io/Closeable.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -15,13 +16,15 @@ export class MCEFRenderer extends Object implements Closeable {
     // private acceleratedPaintBackends: AcceleratedPaintBackend[];
     // private acceleratedTexture: GpuTexture;
     // private directAcceleratedTexture: MCEFDirectTexture;
-    // private directTexture: MCEFDirectTexture;
     readonly identifier: Identifier;
     // private isAccelerated: boolean;
     // private isBGRA: boolean;
+    readonly sampler: GpuSampler;
     readonly texture: GpuTexture;
     readonly textureHeight: number;
     // private textureRegistered: boolean;
+    readonly textureSetup: TextureSetup;
+    readonly textureView: GpuTextureView;
     readonly textureWidth: number;
     readonly transparent: boolean;
     readonly unpainted: boolean;
@@ -29,12 +32,11 @@ export class MCEFRenderer extends Object implements Closeable {
     // private copyAcceleratedFrame(arg0: AcceleratedPaintBackend, arg1: CefAcceleratedPaintInfo, arg2: number, arg3: number): void;
     // private copyAcceleratedFrame(arg0: AcceleratedPaintFrame, arg1: number, arg2: number): void;
     // private ensureAcceleratedTargetTexture(arg0: number, arg1: number): GpuTexture;
-    // private getDirectTexture(): MCEFDirectTexture;
+    // private ensureTexture(arg0: number, arg1: number): GpuTexture;
     getIdentifier(): Identifier;
     getSampler(): GpuSampler;
     getTexture(): GpuTexture;
     getTextureHeight(): number;
-    getTextureId(): number;
     getTextureSetup(): TextureSetup;
     getTextureView(): GpuTextureView;
     getTextureWidth(): number;
@@ -46,5 +48,6 @@ export class MCEFRenderer extends Object implements Closeable {
     isUnpainted(): boolean;
     onAcceleratedPaint(arg0: CefAcceleratedPaintInfo, arg1: number, arg2: number): void;
     onPaint(arg0: ByteBuffer, arg1: number, arg2: number): void;
-    onPaint(arg0: ByteBuffer, arg1: number, arg2: number, arg3: number, arg4: number): void;
+    onPaint(arg0: ByteBuffer, arg1: number, arg2: number, arg3: Rectangle[], arg4: number, arg5: number): void;
+    onPaint(arg0: ByteBuffer, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number): void;
 }

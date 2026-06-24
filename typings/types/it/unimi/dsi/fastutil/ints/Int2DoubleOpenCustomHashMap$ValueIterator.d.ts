@@ -4,7 +4,7 @@ import type { Int2DoubleOpenCustomHashMap$MapIterator } from '../../../../../it/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 export class Int2DoubleOpenCustomHashMap$ValueIterator extends Int2DoubleOpenCustomHashMap$MapIterator<(param0: number) => void> implements DoubleIterator {
-    constructor(null_: Int2DoubleOpenCustomHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

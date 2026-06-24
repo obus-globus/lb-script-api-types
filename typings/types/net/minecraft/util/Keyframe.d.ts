@@ -3,6 +3,7 @@ import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Keyframe<T extends unknown> extends Record {
     static codec(paramvalueCodec: Codec<Object>): Codec<Keyframe<Object>>;
+    constructor(ticks: number, value: T)
     // private ticks: number;
     // private value: T;
     equals(o: Object | null): boolean;

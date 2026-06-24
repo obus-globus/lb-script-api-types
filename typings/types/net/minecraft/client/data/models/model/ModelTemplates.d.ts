@@ -2,6 +2,10 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ModelTemplate } from '../../../../../../net/minecraft/client/data/models/model/ModelTemplate.d.ts'
 export class ModelTemplates extends Object {
     static ANVIL: ModelTemplate;
+    static ATTACHED_HANGING_SIGN_ROT_0: ModelTemplate;
+    static ATTACHED_HANGING_SIGN_ROT_1: ModelTemplate;
+    static ATTACHED_HANGING_SIGN_ROT_2: ModelTemplate;
+    static ATTACHED_HANGING_SIGN_ROT_3: ModelTemplate;
     static ATTACHED_STEM: ModelTemplate;
     static AZALEA: ModelTemplate;
     static BARS_CAP: ModelTemplate;
@@ -10,7 +14,8 @@ export class ModelTemplates extends Object {
     static BARS_POST_ENDS: ModelTemplate;
     static BARS_POST_SIDE: ModelTemplate;
     static BARS_POST_SIDE_ALT: ModelTemplate;
-    static BED_INVENTORY: ModelTemplate;
+    static BED_FOOT: ModelTemplate;
+    static BED_HEAD: ModelTemplate;
     static BOW: ModelTemplate;
     static BUNDLE_OPEN_BACK_INVENTORY: ModelTemplate;
     static BUNDLE_OPEN_FRONT_INVENTORY: ModelTemplate;
@@ -105,6 +110,10 @@ export class ModelTemplates extends Object {
     static FOUR_TURTLE_EGGS: ModelTemplate;
     static GLAZED_TERRACOTTA: ModelTemplate;
     static HANGING_LANTERN: ModelTemplate;
+    static HANGING_SIGN_ROT_0: ModelTemplate;
+    static HANGING_SIGN_ROT_1: ModelTemplate;
+    static HANGING_SIGN_ROT_2: ModelTemplate;
+    static HANGING_SIGN_ROT_3: ModelTemplate;
     static LANTERN: ModelTemplate;
     static LEAF_LITTER_1: ModelTemplate;
     static LEAF_LITTER_2: ModelTemplate;
@@ -142,6 +151,10 @@ export class ModelTemplates extends Object {
     static SHELF_UNCONNECTED: ModelTemplate;
     static SHELF_UNPOWERED: ModelTemplate;
     static SHULKER_BOX_INVENTORY: ModelTemplate;
+    static SIGN_ROT_0: ModelTemplate;
+    static SIGN_ROT_1: ModelTemplate;
+    static SIGN_ROT_2: ModelTemplate;
+    static SIGN_ROT_3: ModelTemplate;
     static SINGLE_FACE: ModelTemplate;
     static SLAB_BOTTOM: ModelTemplate;
     static SLAB_TOP: ModelTemplate;
@@ -171,9 +184,11 @@ export class ModelTemplates extends Object {
     static TWO_LAYERED_ITEM: ModelTemplate;
     static TWO_TURTLE_EGGS: ModelTemplate;
     static VAULT: ModelTemplate;
+    static WALL_HANGING_SIGN: ModelTemplate;
     static WALL_INVENTORY: ModelTemplate;
     static WALL_LOW_SIDE: ModelTemplate;
     static WALL_POST: ModelTemplate;
+    static WALL_SIGN: ModelTemplate;
     static WALL_TALL_SIDE: ModelTemplate;
     static WALL_TORCH: ModelTemplate;
     static WALL_TORCH_UNLIT: ModelTemplate;

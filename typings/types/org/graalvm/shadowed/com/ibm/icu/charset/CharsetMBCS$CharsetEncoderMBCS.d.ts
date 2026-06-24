@@ -4,12 +4,13 @@ import type { IntBuffer } from '../../../../../../../java/nio/IntBuffer.d.ts'
 import type { CoderResult } from '../../../../../../../java/nio/charset/CoderResult.d.ts'
 import type { CharsetEncoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetEncoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetMBCS } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetMBCS.d.ts'
 import type { CharsetMBCS$CharsetEncoderMBCS$SideEffects } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetMBCS$CharsetEncoderMBCS$SideEffects.d.ts'
 import type { CharsetMBCS$CharsetEncoderMBCS$SideEffectsDouble } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetMBCS$CharsetEncoderMBCS$SideEffectsDouble.d.ts'
 import type { CharsetMBCS$CharsetEncoderMBCS$SideEffectsSingleBMP } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetMBCS$CharsetEncoderMBCS$SideEffectsSingleBMP.d.ts'
 export class CharsetMBCS$CharsetEncoderMBCS extends CharsetEncoderICU {
     static getMaxBytesForString(paramlength: number, parammaxCharSize: number): number;
-    constructor(null_: CharsetMBCS$CharsetEncoderMBCS, cs: CharsetICU)
+    constructor(null_: CharsetMBCS, cs: CharsetICU)
     // private allowReplacementChanges: boolean;
     cbFromUWriteSub(encoder: CharsetEncoderICU, source: CharBuffer, target: ByteBuffer, offsets: IntBuffer): CoderResult;
     // private cnvMBCSDoubleFromUnicodeWithOffsets(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, flush: boolean): CoderResult;

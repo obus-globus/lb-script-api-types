@@ -6,6 +6,8 @@ export class ThrowingCaller extends Object implements Caller<void> {
     readonly member: void | null;
     readonly parameterTypes: Type[];
     readonly returnType: Type;
-    call(args: (Object | null)[]): Object | null;
+    call(args: (Object | null)[]): Object;
     checkArguments(args: (Object | null)[]): void;
+    checkArguments(argsCount: number): void;
+    // private throwUnsupported(): void;
 }

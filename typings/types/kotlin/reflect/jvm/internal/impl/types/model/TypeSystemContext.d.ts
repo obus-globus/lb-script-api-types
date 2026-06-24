@@ -17,7 +17,7 @@ import type { TypeSubstitutorMarker } from '../../../../../../../kotlin/reflect/
 import type { TypeSystemOptimizationContext } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSystemOptimizationContext.d.ts'
 import type { TypeVariableTypeConstructorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariableTypeConstructorMarker.d.ts'
 import type { TypeVariance } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariance.d.ts'
-export interface TypeSystemContext extends Object, TypeSystemOptimizationContext{
+export interface TypeSystemContext extends Object, TypeSystemOptimizationContext {
     areEqualTypeConstructors(arg0: TypeConstructorMarker, arg1: TypeConstructorMarker): boolean;
     argumentsCount(arg0: KotlinTypeMarker): number;
     asArgumentList(arg0: RigidTypeMarker): TypeArgumentListMarker;
@@ -35,6 +35,7 @@ export interface TypeSystemContext extends Object, TypeSystemOptimizationContext
     getArgument(arg0: KotlinTypeMarker, arg1: number): TypeArgumentMarker;
     getArgumentOrNull(arg0: RigidTypeMarker, arg1: number): TypeArgumentMarker;
     getArguments(arg0: KotlinTypeMarker): TypeArgumentMarker[];
+    getCustomSubtypingCallback(): (param0: KotlinTypeMarker, param1: KotlinTypeMarker) => boolean;
     getParameter(arg0: TypeConstructorMarker, arg1: number): TypeParameterMarker;
     getParameters(arg0: TypeConstructorMarker): TypeParameterMarker[];
     getType(arg0: TypeArgumentMarker): KotlinTypeMarker;

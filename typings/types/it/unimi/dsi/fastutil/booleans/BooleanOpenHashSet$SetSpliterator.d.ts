@@ -12,8 +12,8 @@ export class BooleanOpenHashSet$SetSpliterator extends Object implements Boolean
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: BooleanOpenHashSet$SetSpliterator)
-    constructor(null_: BooleanOpenHashSet$SetSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;
     // private hasSplit: boolean;
     // private max: number;

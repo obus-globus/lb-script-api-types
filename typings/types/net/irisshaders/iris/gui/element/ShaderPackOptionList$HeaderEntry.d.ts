@@ -2,6 +2,7 @@ import type { NavigationController } from '../../../../../net/irisshaders/iris/g
 import type { IrisElementRow } from '../../../../../net/irisshaders/iris/gui/element/IrisElementRow.d.ts'
 import type { IrisElementRow$IconButtonElement } from '../../../../../net/irisshaders/iris/gui/element/IrisElementRow$IconButtonElement.d.ts'
 import type { IrisElementRow$TextButtonElement } from '../../../../../net/irisshaders/iris/gui/element/IrisElementRow$TextButtonElement.d.ts'
+import type { ShaderPackOptionList } from '../../../../../net/irisshaders/iris/gui/element/ShaderPackOptionList.d.ts'
 import type { ShaderPackOptionList$BaseEntry } from '../../../../../net/irisshaders/iris/gui/element/ShaderPackOptionList$BaseEntry.d.ts'
 import type { ShaderPackScreen } from '../../../../../net/irisshaders/iris/gui/screen/ShaderPackScreen.d.ts'
 import type { Font } from '../../../../../net/minecraft/client/gui/Font.d.ts'
@@ -21,7 +22,7 @@ export class ShaderPackOptionList$HeaderEntry extends ShaderPackOptionList$BaseE
     static RESET_BUTTON_TEXT_INACTIVE: MutableComponent;
     static RESET_HOLD_SHIFT_TOOLTIP: MutableComponent;
     static RESET_TOOLTIP: MutableComponent;
-    constructor(null_: ShaderPackOptionList$HeaderEntry, arg1: ShaderPackScreen, arg2: NavigationController, arg3: Component, arg4: boolean)
+    constructor(null_: ShaderPackOptionList, arg1: ShaderPackScreen, arg2: NavigationController, arg3: Component, arg4: boolean)
     // private backButton: IrisElementRow;
     // private exportButton: IrisElementRow$IconButtonElement;
     // private importButton: IrisElementRow$IconButtonElement;

@@ -5,7 +5,6 @@ import type { ItemSlotMouseAction } from '../../../../../../net/minecraft/client
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
-import type { AbstractContainerScreen$SnapbackData } from '../../../../../../net/minecraft/client/gui/screens/inventory/AbstractContainerScreen$SnapbackData.d.ts'
 import type { MenuAccess } from '../../../../../../net/minecraft/client/gui/screens/inventory/MenuAccess.d.ts'
 import type { KeyEvent } from '../../../../../../net/minecraft/client/input/KeyEvent.d.ts'
 import type { MouseButtonEvent } from '../../../../../../net/minecraft/client/input/MouseButtonEvent.d.ts'
@@ -27,16 +26,13 @@ export abstract class AbstractContainerScreen<T extends AbstractContainerMenu> e
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(menu: T, inventory: (Object | null)[], title: Component)
     constructor(menu: T, inventory: (Object | null)[], title: Component, imageWidth: number, imageHeight: number)
-    // private clickedSlot: Slot;
     // private doubleclick: boolean;
-    // private draggingItem: ItemStack;
     // private hoveredSlot: Slot;
     // private imageHeight: number;
     // private imageWidth: number;
     // private inventoryLabelX: number;
     // private inventoryLabelY: number;
     // private isQuickCrafting: boolean;
-    // private isSplittingStack: boolean;
     // private itemSlotMouseActions: ItemSlotMouseAction[];
     // private lastClickSlot: Slot;
     // private lastQuickMoved: ItemStack;
@@ -47,17 +43,13 @@ export abstract class AbstractContainerScreen<T extends AbstractContainerMenu> e
     // private quickCraftingButton: number;
     // private quickCraftingRemainder: number;
     // private quickCraftingType: number;
-    // private quickdropSlot: Slot;
-    // private quickdropTime: number;
     // private skipNextRelease: boolean;
-    // private snapbackData: AbstractContainerScreen$SnapbackData;
     // private titleLabelX: number;
     // private titleLabelY: number;
     // private topPos: number;
     addItemSlotMouseAction(itemSlotMouseAction: ItemSlotMouseAction): void;
     checkHotbarKeyPressed(event: KeyEvent): boolean;
     // private checkHotbarMouseClicked(event: MouseButtonEvent): void;
-    clearDraggingState(): void;
     containerTick(): void;
     extractCarriedItem(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): void;
     extractContents(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
@@ -68,7 +60,6 @@ export abstract class AbstractContainerScreen<T extends AbstractContainerMenu> e
     // private extractSlotHighlightBack(graphics: GuiGraphicsExtractor): void;
     // private extractSlotHighlightFront(graphics: GuiGraphicsExtractor): void;
     extractSlots(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): void;
-    extractSnapbackItem(graphics: GuiGraphicsExtractor): void;
     extractTooltip(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): void;
     // private getHoveredSlot(x: number, y: number): Slot;
     getMenu(): T;

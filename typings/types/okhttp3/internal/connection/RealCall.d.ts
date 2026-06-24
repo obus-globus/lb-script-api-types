@@ -1,4 +1,4 @@
-import type { RealCall$timeout$1 } from '../../../net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1.d.ts'
+import type { RealCall$timeout$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { IOException } from '../../../java/io/IOException.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Socket } from '../../../java/net/Socket.d.ts'
@@ -49,6 +49,7 @@ export class RealCall extends Object implements Cloneable, Call, Lockable {
     // private timeout: RealCall$timeout$1;
     // private timeoutEarlyExit: boolean;
     acquireConnectionNoEvents(connection: RealConnection): void;
+    addEventListener(eventListener: EventListener): void;
     // private callDone(e: IOException | null): IOException | null;
     // private callStart(): void;
     cancel(): void;

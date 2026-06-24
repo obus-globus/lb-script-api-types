@@ -3,7 +3,7 @@ import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerL
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { LevelCallback } from '../../../../net/minecraft/world/level/entity/LevelCallback.d.ts'
 export class ServerLevel$EntityCallbacks extends Object implements LevelCallback<Entity> {
-    private constructor(null_: ServerLevel$EntityCallbacks)
+    private constructor(null_: ServerLevel)
     // private outer: ServerLevel;
     onCreated(entity: Entity): void;
     onDestroyed(entity: Entity): void;

@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { ReflectionTypes } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/ReflectionTypes.d.ts'
 import type { ModuleDescriptor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor.d.ts'
 import type { SupertypeLoopChecker } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SupertypeLoopChecker.d.ts'
@@ -25,6 +26,7 @@ import type { StorageManager } from '../../../../../../../../kotlin/reflect/jvm/
 import type { NewKotlinTypeChecker } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/NewKotlinTypeChecker.d.ts'
 export class JavaResolverComponents extends Object {
     constructor(arg0: StorageManager, arg1: JavaClassFinder, arg2: KotlinClassFinder, arg3: DeserializedDescriptorResolver, arg4: SignaturePropagator, arg5: ErrorReporter, arg6: JavaResolverCache, arg7: JavaPropertyInitializerEvaluator, arg8: SamConversionResolver, arg9: JavaSourceElementFactory, arg10: ModuleClassResolver, arg11: PackagePartProvider, arg12: SupertypeLoopChecker, arg13: LookupTracker, arg14: ModuleDescriptor, arg15: ReflectionTypes, arg16: AnnotationTypeQualifierResolver, arg17: SignatureEnhancement, arg18: JavaClassesTracker, arg19: JavaResolverSettings, arg20: NewKotlinTypeChecker, arg21: JavaTypeEnhancementState, arg22: JavaModuleAnnotationsProvider, arg23: SyntheticJavaPartsProvider)
+    constructor(arg0: StorageManager, arg1: JavaClassFinder, arg2: KotlinClassFinder, arg3: DeserializedDescriptorResolver, arg4: SignaturePropagator, arg5: ErrorReporter, arg6: JavaResolverCache, arg7: JavaPropertyInitializerEvaluator, arg8: SamConversionResolver, arg9: JavaSourceElementFactory, arg10: ModuleClassResolver, arg11: PackagePartProvider, arg12: SupertypeLoopChecker, arg13: LookupTracker, arg14: ModuleDescriptor, arg15: ReflectionTypes, arg16: AnnotationTypeQualifierResolver, arg17: SignatureEnhancement, arg18: JavaClassesTracker, arg19: JavaResolverSettings, arg20: NewKotlinTypeChecker, arg21: JavaTypeEnhancementState, arg22: JavaModuleAnnotationsProvider, arg23: SyntheticJavaPartsProvider, arg24: number, arg25: DefaultConstructorMarker)
     readonly annotationTypeQualifierResolver: AnnotationTypeQualifierResolver;
     readonly deserializedDescriptorResolver: DeserializedDescriptorResolver;
     readonly errorReporter: ErrorReporter;

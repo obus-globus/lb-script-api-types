@@ -10,7 +10,7 @@ import type { SocketAddress } from '../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class DefaultChannelPipeline$HeadContext extends AbstractChannelHandlerContext implements ChannelInboundHandler, ChannelOutboundHandler {
-    constructor(null_: DefaultChannelPipeline$HeadContext, arg1: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: (Object | null)[])
     // private unsafe: Channel$Unsafe;
     bind(arg0: ChannelHandlerContext, arg1: SocketAddress, arg2: ChannelPromise): void;
     bind(arg0: SocketAddress): ChannelFuture;

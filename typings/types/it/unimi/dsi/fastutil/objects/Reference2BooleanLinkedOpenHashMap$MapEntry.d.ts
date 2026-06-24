@@ -11,8 +11,8 @@ export class Reference2BooleanLinkedOpenHashMap$MapEntry extends Object implemen
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static of(paramarg0: Object | null, paramarg1: boolean): ReferenceBooleanPair<Object>;
-    constructor(null_: Reference2BooleanLinkedOpenHashMap$MapEntry)
-    constructor(null_: Reference2BooleanLinkedOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly key: K;
     equals(arg0: Object | null): boolean;

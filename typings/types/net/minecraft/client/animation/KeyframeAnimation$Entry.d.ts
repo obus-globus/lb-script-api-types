@@ -5,6 +5,7 @@ import type { Keyframe } from '../../../../net/minecraft/client/animation/Keyfra
 import type { ModelPart } from '../../../../net/minecraft/client/model/geom/ModelPart.d.ts'
 import type { Vector3f } from '../../../../org/joml/Vector3f.d.ts'
 export class KeyframeAnimation$Entry extends Record {
+    private constructor(part: ModelPart, target: AnimationChannel$Target, keyframes: Keyframe[])
     // private keyframes: Keyframe[];
     // private part: ModelPart;
     // private target: AnimationChannel$Target;

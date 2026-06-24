@@ -3,6 +3,6 @@ import type { BlockTintCache$CacheData } from '../../../../../net/minecraft/clie
 export class BlockTintCache$LatestCacheInfo extends Object {
     private constructor()
     // private cache: BlockTintCache$CacheData;
-    x: number;
-    z: number;
+    // private x: number;
+    // private z: number;
 }

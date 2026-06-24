@@ -13,6 +13,7 @@ import type { PoolAliasBinding } from '../../../../../../../../net/minecraft/wor
 import type { RandomPoolAlias } from '../../../../../../../../net/minecraft/world/level/levelgen/structure/pools/alias/RandomPoolAlias.d.ts'
 export class RandomGroupPoolAlias extends Record implements PoolAliasBinding {
     static CODEC: Codec<PoolAliasBinding>;
+    static CODEC: MapCodec<RandomGroupPoolAlias>;
     static direct(paramid: string, paramtarget: string): DirectPoolAlias;
     static direct(paramalias: ResourceKey<StructureTemplatePool>, paramtarget: ResourceKey<StructureTemplatePool>): DirectPoolAlias;
     static random(paramid: string, paramtargets: WeightedList<string>): RandomPoolAlias;

@@ -29,6 +29,7 @@ export class OperatorNameConventions extends Object {
     static NEXT: Name;
     static NOT: Name;
     static NUMBER_CONVERSIONS: Name[];
+    static OF: Name;
     static OR: Name;
     static PLUS: Name;
     static PLUS_ASSIGN: Name;

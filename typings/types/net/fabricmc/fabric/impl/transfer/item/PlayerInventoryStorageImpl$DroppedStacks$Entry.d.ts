@@ -2,6 +2,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ItemVariant } from '../../../../../../net/fabricmc/fabric/api/transfer/v1/item/ItemVariant.d.ts'
 export class PlayerInventoryStorageImpl$DroppedStacks$Entry extends Record {
+    private constructor(key: ItemVariant, amount: number, throwRandomly: boolean, retainOwnership: boolean)
     // private amount: number;
     // private key: ItemVariant;
     // private retainOwnership: boolean;

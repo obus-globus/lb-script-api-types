@@ -1,7 +1,9 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
+import type { JsonConfiguration } from '../../../../kotlinx/serialization/json/JsonConfiguration.d.ts'
 export class JsonPath extends Object {
-    constructor()
+    constructor(configuration: JsonConfiguration)
+    // private configuration: JsonConfiguration;
     // private currentDepth: number;
     // private currentObjectPath: (Object | null)[];
     // private indicies: number[];

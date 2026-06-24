@@ -1,5 +1,5 @@
 import type { UserConnection } from '../../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
-import type { EntityTypes1_21_11 } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes1_21_11.d.ts'
+import type { EntityTypes26_2 } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes26_2.d.ts'
 import type { EntityData } from '../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/EntityData.d.ts'
 import type { PacketWrapper } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
@@ -7,6 +7,6 @@ import type { AtomicInteger } from '../../../../../../java/util/concurrent/atomi
 import type { LivingEntity } from '../../../../../../net/raphimc/viabedrock/api/model/entity/LivingEntity.d.ts'
 import type { EntityAttribute } from '../../../../../../net/raphimc/viabedrock/protocol/model/EntityAttribute.d.ts'
 export class MobEntity extends LivingEntity {
-    constructor(arg0: UserConnection, arg1: number, arg2: number, arg3: string, arg4: number, arg5: UUID, arg6: EntityTypes1_21_11)
+    constructor(arg0: UserConnection, arg1: number, arg2: number, arg3: string, arg4: number, arg5: UUID, arg6: EntityTypes26_2)
     translateAttribute(arg0: EntityAttribute, arg1: PacketWrapper, arg2: AtomicInteger, arg3: EntityData[]): boolean;
 }

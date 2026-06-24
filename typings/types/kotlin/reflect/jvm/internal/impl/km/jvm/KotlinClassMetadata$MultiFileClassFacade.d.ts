@@ -7,6 +7,7 @@ export class KotlinClassMetadata$MultiFileClassFacade extends KotlinClassMetadat
     constructor(arg0: Metadata, arg1: boolean)
     constructor(arg0: string[], arg1: JvmMetadataVersion, arg2: number)
     // private flags: number;
-    // private partClassNames: string[];
+    readonly partClassNames: string[];
     // private version: JvmMetadataVersion;
+    getPartClassNames(): string[];
 }

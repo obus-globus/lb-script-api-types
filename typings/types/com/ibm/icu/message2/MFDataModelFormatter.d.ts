@@ -1,6 +1,6 @@
 import type { Directionality } from '../../../../com/ibm/icu/message2/Directionality.d.ts'
 import type { FormattedPlaceholder } from '../../../../com/ibm/icu/message2/FormattedPlaceholder.d.ts'
-import type { FormatterFactory } from '../../../../com/ibm/icu/message2/FormatterFactory.d.ts'
+import type { FunctionFactory } from '../../../../com/ibm/icu/message2/FunctionFactory.d.ts'
 import type { MFDataModel$Declaration } from '../../../../com/ibm/icu/message2/MFDataModel$Declaration.d.ts'
 import type { MFDataModel$Expression } from '../../../../com/ibm/icu/message2/MFDataModel$Expression.d.ts'
 import type { MFDataModel$Message } from '../../../../com/ibm/icu/message2/MFDataModel$Message.d.ts'
@@ -25,7 +25,7 @@ export class MFDataModelFormatter extends Object {
     // private findBestMatchingPattern(arg0: MFDataModel$SelectMessage, arg1: MFDataModelFormatter$MapWithNfcKeys, arg2: MFDataModelFormatter$MapWithNfcKeys): MFDataModel$Pattern;
     format(arg0: { [key: string]: Object }): string;
     // private formatExpression(arg0: MFDataModel$Expression, arg1: MFDataModelFormatter$MapWithNfcKeys, arg2: MFDataModelFormatter$MapWithNfcKeys): FormattedPlaceholder;
-    // private getFormattingFunctionFactoryByName(arg0: Object, arg1: string): FormatterFactory;
+    // private getFormattingFunctionFactoryByName(arg0: Object, arg1: string): FunctionFactory;
     // private implementBiDiDefault(arg0: StringBuilder, arg1: Directionality, arg2: FormattedPlaceholder): void;
     // private matchSelectorKeys(arg0: MFDataModelFormatter$ResolvedSelector, arg1: string[]): string[];
     // private resolveDeclarations(arg0: MFDataModel$Declaration[], arg1: MFDataModelFormatter$MapWithNfcKeys): MFDataModelFormatter$MapWithNfcKeys;

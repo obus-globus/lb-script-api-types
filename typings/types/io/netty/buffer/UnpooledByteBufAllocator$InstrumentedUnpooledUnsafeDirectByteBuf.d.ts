@@ -6,5 +6,6 @@ export class UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeDirectByteBuf ex
     constructor(arg0: UnpooledByteBufAllocator, arg1: number, arg2: number)
     allocateDirect(arg0: number): ByteBuffer;
     allocateDirectBuffer(arg0: number): CleanableDirectBuffer;
+    allocateDirectBuffer(arg0: number, arg1: boolean): CleanableDirectBuffer;
     freeDirect(arg0: ByteBuffer): void;
 }

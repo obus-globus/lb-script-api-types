@@ -10,7 +10,7 @@ export class GlDebugLabel$Core extends GlDebugLabel {
     static create(paramcaps: GLCapabilities, paramwantsLabels: boolean, paramenabledExtensions: string[]): GlDebugLabel;
     private constructor()
     // private maxLabelLength: number;
-    applyLabel(buffer: GlBuffer): void;
+    applyLabel(buffer: GlBuffer, label: () => string): void;
     applyLabel(program: GlProgram): void;
     applyLabel(shaderModule: GlShaderModule): void;
     applyLabel(texture: GlTexture): void;

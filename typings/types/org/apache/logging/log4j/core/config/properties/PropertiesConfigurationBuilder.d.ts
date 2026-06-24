@@ -39,6 +39,7 @@ export class PropertiesConfigurationBuilder extends ConfigurationBuilderFactory 
     getLoggerContext(): LoggerContext;
     isValid(): boolean;
     // private processRemainingProperties(builder: ConfigurationBuilder<PropertiesConfiguration>, properties: { [key: string]: any }): void;
+    // private removeDefinedButUnusedProperties(prefix: string): void;
     setConfigurationSource(source: ConfigurationSource): PropertiesConfigurationBuilder;
     setLoggerContext(loggerContext: LoggerContext): PropertiesConfigurationBuilder;
     setRootProperties(rootProperties: { [key: string]: any }): PropertiesConfigurationBuilder;

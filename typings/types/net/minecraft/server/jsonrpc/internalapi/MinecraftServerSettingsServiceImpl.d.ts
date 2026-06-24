@@ -3,13 +3,14 @@ import type { DedicatedServer } from '../../../../../net/minecraft/server/dedica
 import type { JsonRpcLogger } from '../../../../../net/minecraft/server/jsonrpc/JsonRpcLogger.d.ts'
 import type { MinecraftServerSettingsService } from '../../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftServerSettingsService.d.ts'
 import type { ClientInfo } from '../../../../../net/minecraft/server/jsonrpc/methods/ClientInfo.d.ts'
+import type { NotificationManager } from '../../../../../net/minecraft/server/notifications/NotificationManager.d.ts'
 import type { LevelBasedPermissionSet } from '../../../../../net/minecraft/server/permissions/LevelBasedPermissionSet.d.ts'
 import type { Difficulty } from '../../../../../net/minecraft/world/Difficulty.d.ts'
 import type { GameType } from '../../../../../net/minecraft/world/level/GameType.d.ts'
 export class MinecraftServerSettingsServiceImpl extends Object implements MinecraftServerSettingsService {
-    constructor(server: DedicatedServer, jsonrpcLogger: JsonRpcLogger)
+    constructor(notificationManager: NotificationManager, jsonrpcLogger: JsonRpcLogger)
     // private jsonrpcLogger: JsonRpcLogger;
-    // private server: DedicatedServer;
+    // private notificationManager: NotificationManager;
     acceptsTransfers(): boolean;
     allowFlight(): boolean;
     forceGameMode(): boolean;
@@ -30,6 +31,7 @@ export class MinecraftServerSettingsServiceImpl extends Object implements Minecr
     isEnforceWhitelist(): boolean;
     isUsingWhitelist(): boolean;
     repliesToStatus(): boolean;
+    // private server(): DedicatedServer;
     setAcceptsTransfers(accept: boolean, clientInfo: ClientInfo): boolean;
     setAllowFlight(allow: boolean, clientInfo: ClientInfo): boolean;
     setAutoSave(enabled: boolean, clientInfo: ClientInfo): boolean;

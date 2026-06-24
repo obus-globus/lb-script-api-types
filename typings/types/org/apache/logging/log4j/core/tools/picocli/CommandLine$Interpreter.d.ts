@@ -5,7 +5,7 @@ import type { CommandLine } from '../../../../../../../org/apache/logging/log4j/
 import type { CommandLine$ITypeConverter } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$ITypeConverter.d.ts'
 import type { CommandLine$Range } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Range.d.ts'
 export class CommandLine$Interpreter extends Object {
-    constructor(null_: CommandLine$Interpreter, command: Object)
+    constructor(null_: CommandLine, command: Object)
     // private command: Object;
     // private commands: { [key: string]: CommandLine };
     // private converterRegistry: Map<Class<Object>, CommandLine$ITypeConverter<Object>>;

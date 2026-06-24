@@ -1,7 +1,8 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { SpriteFinderImpl } from '../../../../../../net/fabricmc/fabric/impl/client/renderer/SpriteFinderImpl.d.ts'
 import type { TextureAtlasSprite } from '../../../../../../net/minecraft/client/renderer/texture/TextureAtlasSprite.d.ts'
 export class SpriteFinderImpl$Node extends Object {
-    constructor(null_: SpriteFinderImpl$Node, arg1: number, arg2: number, arg3: number)
+    constructor(null_: SpriteFinderImpl, arg1: number, arg2: number, arg3: number)
     // private cellRadius: number;
     // private highHigh: Object;
     // private highLow: Object;

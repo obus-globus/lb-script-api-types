@@ -74,6 +74,7 @@ import type { LootParams$Builder } from '../../../../net/minecraft/world/level/s
 import type { LootTable } from '../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
+import type { CollisionContext } from '../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 import type { ScoreHolder } from '../../../../net/minecraft/world/scores/ScoreHolder.d.ts'
 import type { Waypoint$Icon } from '../../../../net/minecraft/world/waypoints/Waypoint$Icon.d.ts'
@@ -81,9 +82,12 @@ import type { WaypointTransmitter } from '../../../../net/minecraft/world/waypoi
 import type { WaypointTransmitter$Connection } from '../../../../net/minecraft/world/waypoints/WaypointTransmitter$Connection.d.ts'
 export abstract class LivingEntity extends Entity implements FeetBlockCachingEntity, MaybeInLevelObject, LivingEntityAccessor, Attackable, WaypointTransmitter {
     static ARMOR_SLOT_OFFSET: number;
+    static BASE_HORIZONTAL_AIR_DRAG: number;
     static BASE_JUMP_POWER: number;
     static BASE_SAFE_FALL_DISTANCE: number;
+    static BASE_SWIM_SPEED: number;
     static BASE_TICKS_REQUIRED_TO_FREEZE: number;
+    static BASE_VERTICAL_AIR_DRAG: number;
     static BOARDING_COOLDOWN: number;
     static BODY_ARMOR_OFFSET: number;
     static CONTENTS_SLOT_INDEX: number;
@@ -92,21 +96,34 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     static DEFAULT_BASE_GRAVITY: number;
     static DEFAULT_BB_HEIGHT: number;
     static DEFAULT_BB_WIDTH: number;
+    static DEFAULT_BELOW_NAME_DISTANCE: number;
+    static DEFAULT_NAME_TAG_DISTANCE: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_2: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_5: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_1_0: number;
+    static DOLPHINS_GRACE_WATER_DRAG: number;
+    static ELYTRA_HORIZONTAL_AIR_DRAG: number;
+    static ELYTRA_VERTICAL_AIR_DRAG: number;
     static EQUIPMENT_SLOT_OFFSET: number;
     static EXTRA_RENDER_CULLING_SIZE_WITH_BIG_HAT: number;
+    static FLYING_AIR_DRAG: number;
+    static FLYING_LAVA_DRAG: number;
+    static FLYING_VERTICAL_AIR_DRAG: number;
+    static FLYING_WATER_DRAG: number;
     static FREEZE_HURT_FREQUENCY: number;
+    static INVALID_ENTITY_ID: number;
+    static LAVA_DRAG: number;
+    static LAVA_SHALLOW_VERTICAL_DRAG: number;
     static MAX_ENTITY_TAG_COUNT: number;
     static MAX_MOVEMENTS_HANDELED_PER_TICK: number;
-    static MAX_RANGE: number;
+    static MAX_NAME_TAG_DISTANCE: number;
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static PLAYER_HURT_EXPERIENCE_TIME: number;
     static PLAYER_NOT_WEARING_DISGUISE_ITEM: (param0: LivingEntity) => boolean;
     static REALLY_FAR_DISTANCE: number;
     static SADDLE_OFFSET: number;
+    static SPRINTING_WATER_DRAG: number;
     static TAG_AIR: string;
     static TAG_ATTRIBUTES: string;
     static TAG_BRAIN: string;
@@ -119,7 +136,6 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     static TAG_FIRE: string;
     static TAG_GLOWING: string;
     static TAG_HEALTH: string;
-    static TAG_HURT_BY_TIMESTAMP: string;
     static TAG_HURT_TIME: string;
     static TAG_ID: string;
     static TAG_INVULNERABLE: string;
@@ -134,6 +150,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     static TAG_SLEEPING_POS: string;
     static TAG_UUID: string;
     static TOTAL_AIR_SUPPLY: number;
+    static WATER_DRAG: number;
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
@@ -141,6 +158,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
+    static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
     static createLivingAttributes(): AttributeSupplier$Builder;
     static doesSourceIgnoreReceiver(paramsource: LivingEntity, paramreceiver: ServerPlayer): boolean;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
@@ -161,7 +179,6 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     // private autoSpinAttackTicks: number;
     brain: Brain<any>;
     readonly combatTracker: CombatTracker;
-    currentExplosionCause: Entity;
     // private currentImpulseContextResetGraceTime: number;
     currentImpulseImpactPos: Vec3;
     // private dead: boolean;
@@ -232,8 +249,8 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     asLivingEntity(): LivingEntity;
     attackable(): boolean;
     baseTick(): void;
-    blockUsingItem(level: ServerLevel, attacker: LivingEntity): void;
-    blockedByItem(defender: LivingEntity): void;
+    blockUsingItem(level: ServerLevel, attacker: LivingEntity, source: DamageSource, damage: number): void;
+    blockedByItem(defender: LivingEntity, source: DamageSource, damage: number): void;
     // private breakItem(itemStack: ItemStack): void;
     calculateEntityAnimation(useY: boolean): void;
     calculateFallDamage(fallDistance: number, damageModifier: number): number;
@@ -242,7 +259,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     callJumpOutOfFluid(arg0: number): void;
     canAttack(target: LivingEntity): boolean;
     canBeAffected(newEffect: MobEffectInstance): boolean;
-    // private canBeAffected$mixinextras$wrapped$499(arg0: MobEffectInstance): boolean;
+    // private canBeAffected$mixinextras$wrapped$509(arg0: MobEffectInstance): boolean;
     canBeSeenAsEnemy(): boolean;
     canBeSeenByAnyone(): boolean;
     canBreatheUnderwater(): boolean;
@@ -254,18 +271,20 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     canStandOnFluid(fluid: FluidState): boolean;
     canUsePortal(ignorePassenger: boolean): boolean;
     canUseSlot(slot: EquipmentSlot): boolean;
-    causeExtraKnockback(target: Entity, knockback: number, oldMovement: Vec3): void;
+    causeExtraKnockback(target: Entity, knockback: number, oldMovement: Vec3, damageSource: DamageSource, damage: number, comesFromEffect: boolean): void;
     causeFallDamage(fallDistance: number, damageModifier: number, damageSource: DamageSource): boolean;
     checkAutoSpinAttack(old: AABB, current: AABB): void;
     // private checkBedExists(): boolean;
     checkFallDamage(ya: number, onGround: boolean, onState: BlockState, pos: BlockPos): void;
     // private checkTotemDeathProtection(killingDamage: DamageSource): boolean;
     clearSleepingPos(): void;
-    // private collectEquipmentChanges(): { [key in EquipmentSlot]: ItemStack };
+    collectEquipmentChanges(lastEquipmentItems: { [key in EquipmentSlot]: ItemStack }): { [key in EquipmentSlot]: ItemStack };
     completeUsingItem(): void;
+    createDamageSource(): DamageSource;
     createEquipment(): EntityEquipment;
     // private createItemStackToDrop(itemStack: ItemStack, randomly: boolean, thrownFromHand: boolean): ItemEntity;
     createWitherRose(killer: LivingEntity): void;
+    dealDefaultKnockback(source: DamageSource, damage: number, blocked: boolean): void;
     decreaseAirSupply(currentSupply: number): number;
     defineSynchedData(entityData: SynchedEntityData$Builder): void;
     // private detectEquipmentUpdates(): void;
@@ -296,6 +315,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     getActiveEffectsMap(): Map<Holder<MobEffect>, MobEffectInstance>;
     getActiveItem(): ItemStack;
     getAgeScale(): number;
+    getAirDrag(): number;
     getArmorCoverPercentage(): number;
     getArmorValue(): number;
     getArrowCount(): number;
@@ -322,6 +342,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     getEffect(effect: Holder<MobEffect>): MobEffectInstance;
     getEffectBlendFactor(effect: Holder<MobEffect>, partialTicks: number): number;
     getEffectiveGravity(): number;
+    getEntityBounciness(): number;
     getEquipSound(slot: EquipmentSlot, stack: ItemStack, equippable: Equippable): Holder<SoundEvent>;
     getEquipmentSlotForItem(itemStack: ItemStack): EquipmentSlot;
     getExperienceReward(level: ServerLevel, killer: Entity): number;
@@ -400,6 +421,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     handleExtraItemsCreatedOnUse(extraCreatedRemainder: ItemStack): void;
     // private handleFallFlyingCollisions(moveHorLength: number, newMoveHorLength: number): void;
     // private handleHandSwap(changedItems: { [key in EquipmentSlot]: ItemStack }): void;
+    handleKillingBlow(): void;
     // private handleOnClimbable(delta: Vec3): Vec3;
     // private handleRelativeFrictionAndCalculateMovement(input: Vec3, friction: number): Vec3;
     hasEffect(effect: Holder<MobEffect>): boolean;
@@ -433,6 +455,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     isIgnoringFallDamageFromCurrentImpulse(): boolean;
     isImmobile(): boolean;
     isInPostImpulseGraceTime(): boolean;
+    isInShallowFluid(fluidTag: TagKey<Fluid>): boolean;
     isInWall(): boolean;
     isInvertedHealAndHarm(): boolean;
     isInvulnerableTo(level: ServerLevel, source: DamageSource): boolean;
@@ -450,7 +473,8 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     jumpInLiquid(type: TagKey<Fluid>): void;
     // private jumpOutOfFluid(oldY: number): void;
     kill(level: ServerLevel): void;
-    knockback(power: number, xd: number, zd: number): void;
+    knockback(power: number, xd: number, zd: number, source: DamageSource, damage: number): void;
+    knockback(power: number, xd: number, zd: number, source: DamageSource, damage: number, comesFromEffect: boolean): void;
     lerpHeadRotationStep(lerpHeadSteps: number, targetYHeadRot: number): void;
     lerpHeadTo(yRot: number, steps: number): void;
     lithium$OnFeetBlockCacheDeleted(): void;
@@ -500,7 +524,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     remove(reason: Entity$RemovalReason): void;
     removeAllEffects(): boolean;
     removeEffect(effect: Holder<MobEffect>): boolean;
-    // private removeEffect$mixinextras$wrapped$501(arg0: Holder<Object>): boolean;
+    // private removeEffect$mixinextras$wrapped$511(arg0: Holder<Object>): boolean;
     removeEffectNoUpdate(effect: Holder<MobEffect>): MobEffectInstance;
     removeEffectParticles(): void;
     removeFrost(): void;
@@ -567,7 +591,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     travelFlying(input: Vec3, speed: number): void;
     travelFlying(input: Vec3, waterSpeed: number, lavaSpeed: number, airSpeed: number): void;
     // private travelInAir(input: Vec3): void;
-    // private travelInFluid(input: Vec3): void;
+    travelInFluid(input: Vec3): void;
     // private travelInLava(input: Vec3, baseGravity: number, isFalling: boolean, oldY: number): void;
     travelInWater(input: Vec3, baseGravity: number, isFalling: boolean, oldY: number): void;
     // private travelRidden(controller: Player, selfInput: Vec3): void;

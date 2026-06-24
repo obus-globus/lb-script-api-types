@@ -15,6 +15,7 @@ export class LevelBasedValue$Constant extends Record implements LevelBasedValue 
     static lookup(paramvalues: number[], paramfallback: LevelBasedValue): LevelBasedValue$Lookup;
     static perLevel(paramperLevel: number): LevelBasedValue$Linear;
     static perLevel(parambase: number, paramperLevelAboveFirst: number): LevelBasedValue$Linear;
+    constructor(value: number)
     // private value: number;
     calculate(level: number): number;
     codec(): MapCodec<LevelBasedValue$Constant>;

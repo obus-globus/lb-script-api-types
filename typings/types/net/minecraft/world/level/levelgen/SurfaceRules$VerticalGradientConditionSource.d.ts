@@ -3,7 +3,6 @@ import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
 import type { SurfaceRules$Condition } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$Condition.d.ts'
 import type { SurfaceRules$ConditionSource } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$ConditionSource.d.ts'
 import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$Context.d.ts'
@@ -16,7 +15,7 @@ export class SurfaceRules$VerticalGradientConditionSource extends Record impleme
     // private randomName: Identifier;
     // private trueAtAndBelow: VerticalAnchor;
     apply(ruleContext: SurfaceRules$Context): SurfaceRules$Condition;
-    codec(): KeyDispatchDataCodec<SurfaceRules$ConditionSource>;
+    codec(): MapCodec<SurfaceRules$VerticalGradientConditionSource>;
     equals(o: Object | null): boolean;
     falseAtAndAbove(): VerticalAnchor;
     hashCode(): number;

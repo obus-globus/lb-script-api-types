@@ -1,4 +1,5 @@
 import type { WebSocketImpl } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/WebSocketImpl.d.ts'
+import type { WebSocketServer } from '../../../../../../../com/oracle/truffle/tools/utils/java_websocket/server/WebSocketServer.d.ts'
 import type { Runnable } from '../../../../../../../java/lang/Runnable.d.ts'
 import type { Thread } from '../../../../../../../java/lang/Thread.d.ts'
 import type { Thread$Builder$OfPlatform } from '../../../../../../../java/lang/Thread$Builder$OfPlatform.d.ts'
@@ -29,7 +30,7 @@ export class WebSocketServer$WebSocketWorker extends Thread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    constructor(null_: WebSocketServer$WebSocketWorker)
+    constructor(null_: WebSocketServer)
     // private iqueue: WebSocketImpl[];
     // private doDecode(arg0: WebSocketImpl, arg1: ByteBuffer): void;
     put(arg0: WebSocketImpl): void;

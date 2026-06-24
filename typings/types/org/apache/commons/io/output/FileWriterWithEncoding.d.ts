@@ -1,3 +1,4 @@
+import type { FileWriterWithEncoding$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { OutputStreamWriter } from '../../../../../java/io/OutputStreamWriter.d.ts'
 import type { Writer } from '../../../../../java/io/Writer.d.ts'
@@ -22,4 +23,5 @@ export class FileWriterWithEncoding extends ProxyWriter {
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: boolean)
     private constructor(arg0: FileWriterWithEncoding$Builder)
+    constructor(arg0: FileWriterWithEncoding$Builder, arg1: FileWriterWithEncoding$1)
 }

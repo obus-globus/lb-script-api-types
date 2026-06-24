@@ -14,5 +14,6 @@ export class TabManager extends Object {
     readonly tabArea: ScreenRectangle;
     getCurrentTab(): Tab;
     setCurrentTab(tab: Tab, playSound: boolean): void;
+    setCurrentTab(tab: Tab, playSound: boolean, addWidget: boolean): void;
     setTabArea(tabArea: ScreenRectangle): void;
 }

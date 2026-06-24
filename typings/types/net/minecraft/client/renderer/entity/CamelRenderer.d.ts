@@ -7,6 +7,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { Camel } from '../../../../../net/minecraft/world/entity/animal/camel/Camel.d.ts'
 export class CamelRenderer extends AgeableMobRenderer<Camel, CamelRenderState, CamelModel> {
     static NAMETAG_SCALE: number;
+    static extractAdditionalState(paramentity: Camel, paramstate: CamelRenderState, parampartialTicks: number): void;
     static getOverlayCoords(paramstate: LivingEntityRenderState, paramwhiteOverlayProgress: number): number;
     constructor(context: EntityRendererProvider$Context)
     createRenderState(): CamelRenderState;

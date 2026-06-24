@@ -8,6 +8,7 @@ import type { Symbol } from '../../../kotlinx/coroutines/internal/Symbol.d.ts'
 export class DispatchedContinuationKt extends Object {
     static REUSABLE_CLAIMED: Symbol;
     static resumeCancellableWith(paramarg0: Continuation<Object>, paramarg1: Object): void;
+    static resumeCancellableWithInternal(paramarg0: Continuation<Object>, paramarg1: Object): void;
     static safeDispatch(paramarg0: CoroutineDispatcher, paramarg1: CoroutineContext, paramarg2: () => void): void;
     static safeIsDispatchNeeded(paramarg0: CoroutineDispatcher, paramarg1: CoroutineContext): boolean;
     static yieldUndispatched(paramarg0: DispatchedContinuation<Object>): boolean;

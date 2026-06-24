@@ -22,6 +22,7 @@ export class Term$LookAhead<S extends unknown> extends Record implements Term<S>
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>): Term<Object>;
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
     static sequence(paramterms: Object | null): Term<Object>;
+    constructor(term: Term<S>, positive: boolean)
     // private positive: boolean;
     // private term: Term<S>;
     equals(o: Object | null): boolean;

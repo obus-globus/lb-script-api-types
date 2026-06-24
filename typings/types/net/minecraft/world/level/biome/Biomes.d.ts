@@ -55,6 +55,7 @@ export abstract class Biomes extends Object {
     static SPARSE_JUNGLE: ResourceKey<Biome>;
     static STONY_PEAKS: ResourceKey<Biome>;
     static STONY_SHORE: ResourceKey<Biome>;
+    static SULFUR_CAVES: ResourceKey<Biome>;
     static SUNFLOWER_PLAINS: ResourceKey<Biome>;
     static SWAMP: ResourceKey<Biome>;
     static TAIGA: ResourceKey<Biome>;

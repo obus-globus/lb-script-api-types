@@ -9,7 +9,7 @@ export class Head extends HealthBasedBuff {
     // private /*not mapped: */ getCooldown(): number;
     // private maxAbsorption: number;
     // private /*not mapped: */ getMaxAbsorption(): number;
-    /*not mapped: */ getPassesRequirements$liquidbounce(): boolean;
+    /*not mapped: */ getPassesRequirements$net_ccbluex_liquidbounce(): boolean;
     execute(slot: HotbarItemSlot): void;
     isValidItem(stack: ItemStack, forUse: boolean): boolean;
 }

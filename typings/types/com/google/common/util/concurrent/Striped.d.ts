@@ -1,3 +1,4 @@
+import type { Striped$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Supplier } from '../../../../../com/google/common/base/Supplier.d.ts'
 import type { Semaphore } from '../../../../../java/util/concurrent/Semaphore.d.ts'
 import type { Lock } from '../../../../../java/util/concurrent/locks/Lock.d.ts'
@@ -12,6 +13,7 @@ export abstract class Striped<L extends unknown> extends Object {
     static readWriteLock(paramstripes: number): Striped<ReadWriteLock>;
     static semaphore(paramstripes: number, parampermits: number): Striped<Semaphore>;
     private constructor()
+    constructor(arg0: Striped$1)
     bulkGet(keys: (Object | null)[]): L[];
     get(key: Object): L;
     getAt(index: number): L;

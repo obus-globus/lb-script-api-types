@@ -1,3 +1,4 @@
+import type { LZ4BlockInputStream$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { FilterInputStream } from '../../../java/io/FilterInputStream.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { Checksum } from '../../../java/util/zip/Checksum.d.ts'
@@ -13,6 +14,7 @@ export class LZ4BlockInputStream extends FilterInputStream {
     constructor(arg0: InputStream, arg1: LZ4FastDecompressor, arg2: Checksum)
     constructor(arg0: InputStream, arg1: LZ4FastDecompressor, arg2: Checksum, arg3: boolean)
     private constructor(arg0: InputStream, arg1: LZ4FastDecompressor, arg2: LZ4SafeDecompressor, arg3: Checksum, arg4: boolean)
+    constructor(arg0: InputStream, arg1: LZ4FastDecompressor, arg2: LZ4SafeDecompressor, arg3: Checksum, arg4: boolean, arg5: LZ4BlockInputStream$1)
     // private buffer: number[];
     // private checksum: Checksum;
     // private compressedBuffer: number[];

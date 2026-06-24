@@ -4,6 +4,6 @@ import type { Renderable } from '../../../../../net/minecraft/client/gui/compone
 export abstract class Overlay extends Object implements Renderable {
     constructor()
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
-    isPauseScreen(): boolean;
+    isPausing(): boolean;
     tick(): void;
 }

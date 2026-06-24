@@ -2,7 +2,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ListIterator } from '../../../../java/util/ListIterator.d.ts'
 import type { AbstractInsnNode } from '../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 export class InsnList$InsnListIterator extends Object implements ListIterator<Object> {
-    constructor(null_: InsnList$InsnListIterator, arg1: number)
+    constructor(null_: AbstractInsnNode[], arg1: number)
     // private nextInsn: AbstractInsnNode;
     // private previousInsn: AbstractInsnNode;
     // private remove: AbstractInsnNode;

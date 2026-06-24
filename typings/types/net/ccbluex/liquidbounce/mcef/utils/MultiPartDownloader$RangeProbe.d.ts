@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class MultiPartDownloader$RangeProbe extends Record {
+    private constructor(contentLength: number)
     // private contentLength: number;
     contentLength(): number;
     equals(arg0: Object | null): boolean;

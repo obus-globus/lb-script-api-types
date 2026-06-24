@@ -1,4 +1,5 @@
 import type { ProtoBuf$PackageFragmentOrBuilder } from '../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$PackageFragmentOrBuilder.d.ts'
+import type { ProtoBuf$Annotation } from '../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$Annotation.d.ts'
 import type { ProtoBuf$Class } from '../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$Class.d.ts'
 import type { ProtoBuf$Package } from '../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$Package.d.ts'
 import type { ProtoBuf$PackageFragment } from '../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$PackageFragment.d.ts'
@@ -11,6 +12,7 @@ export class ProtoBuf$PackageFragment$Builder extends GeneratedMessageLite$Exten
     private constructor()
     // private bitField0_: number;
     // private class__: ProtoBuf$Class[];
+    // private fileAnnotation_: ProtoBuf$Annotation[];
     // private package_: ProtoBuf$Package;
     // private qualifiedNames_: ProtoBuf$QualifiedNameTable;
     // private strings_: ProtoBuf$StringTable;
@@ -18,9 +20,12 @@ export class ProtoBuf$PackageFragment$Builder extends GeneratedMessageLite$Exten
     buildPartial(): ProtoBuf$PackageFragment;
     clone(): ProtoBuf$PackageFragment$Builder;
     // private ensureClass_IsMutable(): void;
+    // private ensureFileAnnotationIsMutable(): void;
     getClass_(arg0: number): ProtoBuf$Class;
     getClass_Count(): number;
     getDefaultInstanceForType(): ProtoBuf$PackageFragment;
+    getFileAnnotation(arg0: number): ProtoBuf$Annotation;
+    getFileAnnotationCount(): number;
     getPackage(): ProtoBuf$Package;
     getQualifiedNames(): ProtoBuf$QualifiedNameTable;
     hasPackage(): boolean;

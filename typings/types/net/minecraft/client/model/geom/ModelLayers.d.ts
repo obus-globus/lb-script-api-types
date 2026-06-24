@@ -3,8 +3,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ModelLayersAccessor } from '../../../../../net/fabricmc/fabric/mixin/client/rendering/ModelLayersAccessor.d.ts'
 import type { ModelLayerLocation } from '../../../../../net/minecraft/client/model/geom/ModelLayerLocation.d.ts'
 import type { ArmorModelSet } from '../../../../../net/minecraft/client/renderer/entity/ArmorModelSet.d.ts'
-import type { HangingSignBlock$Attachment } from '../../../../../net/minecraft/world/level/block/HangingSignBlock$Attachment.d.ts'
-import type { WoodType } from '../../../../../net/minecraft/world/level/block/state/properties/WoodType.d.ts'
 export class ModelLayers extends Object implements ModelLayersAccessor {
     static ACACIA_BOAT: ModelLayerLocation;
     static ACACIA_CHEST_BOAT: ModelLayerLocation;
@@ -21,8 +19,6 @@ export class ModelLayers extends Object implements ModelLayersAccessor {
     static BAMBOO_CHEST_RAFT: ModelLayerLocation;
     static BAMBOO_RAFT: ModelLayerLocation;
     static BAT: ModelLayerLocation;
-    static BED_FOOT: ModelLayerLocation;
-    static BED_HEAD: ModelLayerLocation;
     static BEE: ModelLayerLocation;
     static BEE_BABY: ModelLayerLocation;
     static BEE_STINGER: ModelLayerLocation;
@@ -232,6 +228,10 @@ export class ModelLayers extends Object implements ModelLayersAccessor {
     static STRIDER: ModelLayerLocation;
     static STRIDER_BABY: ModelLayerLocation;
     static STRIDER_SADDLE: ModelLayerLocation;
+    static SULFUR_CUBE: ModelLayerLocation;
+    static SULFUR_CUBE_INNER: ModelLayerLocation;
+    static SULFUR_CUBE_SMALL: ModelLayerLocation;
+    static SULFUR_CUBE_SMALL_INNER: ModelLayerLocation;
     static TADPOLE: ModelLayerLocation;
     static TNT_MINECART: ModelLayerLocation;
     static TRADER_LLAMA: ModelLayerLocation;
@@ -293,9 +293,6 @@ export class ModelLayers extends Object implements ModelLayersAccessor {
     static ZOMBIFIED_PIGLIN_ARMOR: ArmorModelSet<ModelLayerLocation>;
     static ZOMBIFIED_PIGLIN_BABY: ModelLayerLocation;
     static ZOMBIFIED_PIGLIN_BABY_ARMOR: ArmorModelSet<ModelLayerLocation>;
-    static createHangingSignModelName(paramtype: WoodType, paramattachmentType: HangingSignBlock$Attachment): ModelLayerLocation;
-    static createStandingSignModelName(paramtype: WoodType): ModelLayerLocation;
-    static createWallSignModelName(paramtype: WoodType): ModelLayerLocation;
     static getKnownLocations(): Stream<ModelLayerLocation>;
     static getLayers(): ModelLayerLocation[];
     constructor()

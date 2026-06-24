@@ -4,6 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TimerCallback } from '../../../../../net/minecraft/world/level/timers/TimerCallback.d.ts'
 export class TimerQueue$Event$Packed<T extends unknown> extends Record {
     static codec(paramcallbackCodec: Codec<TimerCallback<Object>>): Codec<TimerQueue$Event$Packed<Object>>;
+    constructor(triggerTime: number, id: string, callback: TimerCallback<T>)
     // private callback: TimerCallback<T>;
     // private id: string;
     // private triggerTime: number;

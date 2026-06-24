@@ -4,6 +4,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Consumable1_21_2$ApplyStatusEffects extends Record {
     static TYPE: Type<Consumable1_21_2$ApplyStatusEffects>;
+    constructor(effects: PotionEffect[], probability: number)
     // private effects: PotionEffect[];
     // private probability: number;
     effects(): PotionEffect[];

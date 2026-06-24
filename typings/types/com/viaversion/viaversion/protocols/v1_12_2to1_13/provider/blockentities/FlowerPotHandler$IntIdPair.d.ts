@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class FlowerPotHandler$IntIdPair extends Record {
+    private constructor(id: number, data: number)
     // private data: number;
     // private id: number;
     data(): number;

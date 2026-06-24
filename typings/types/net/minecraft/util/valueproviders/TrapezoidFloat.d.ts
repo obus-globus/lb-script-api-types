@@ -6,6 +6,7 @@ import type { FloatProvider } from '../../../../net/minecraft/util/valueprovider
 export class TrapezoidFloat extends Record implements FloatProvider {
     static MAP_CODEC: MapCodec<TrapezoidFloat>;
     static of(parammin: number, parammax: number, paramplateau: number): TrapezoidFloat;
+    constructor(min: number, max: number, plateau: number)
     // private max: number;
     // private min: number;
     // private plateau: number;

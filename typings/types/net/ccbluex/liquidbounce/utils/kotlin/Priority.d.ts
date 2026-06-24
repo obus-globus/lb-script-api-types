@@ -5,14 +5,14 @@ export class Priority extends Enum<Priority> {
     /**
      * Scaffold, etc.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt:34}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt:34}
      */
     static IMPORTANT_FOR_PLAYER_LIFE: Priority;
     static IMPORTANT_FOR_USAGE_1: Priority;
     /**
      * KillAura, etc.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt:29}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt:29}
      */
     static IMPORTANT_FOR_USAGE_2: Priority;
     static IMPORTANT_FOR_USAGE_3: Priority;

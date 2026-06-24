@@ -4,8 +4,9 @@ import type { VariableExpression } from '../../../../kroppeb/stareval/expression
 import type { FunctionContext } from '../../../../kroppeb/stareval/function/FunctionContext.d.ts'
 import type { FunctionReturn } from '../../../../kroppeb/stareval/function/FunctionReturn.d.ts'
 import type { Type } from '../../../../kroppeb/stareval/function/Type.d.ts'
+import type { VectorizedFunction } from '../../../../net/irisshaders/iris/parsing/VectorizedFunction.d.ts'
 export class VectorizedFunction$ElementAccessExpression extends Object implements Expression {
-    constructor(null_: VectorizedFunction$ElementAccessExpression, arg1: Type)
+    constructor(null_: VectorizedFunction, arg1: Type)
     // private parameterType: Type;
     // private vector: Object;
     evaluateTo(arg0: FunctionContext, arg1: FunctionReturn): void;

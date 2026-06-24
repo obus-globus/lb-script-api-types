@@ -12,6 +12,7 @@ export class GlImage extends GlResource {
     readonly pixelType: PixelType;
     readonly samplerName: string;
     readonly target: TextureType;
+    clear(): void;
     destroyInternal(): void;
     getFormat(): PixelFormat;
     getId(): number;

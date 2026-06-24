@@ -3,7 +3,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class DefaultHeaders$ValueIterator extends Object implements Iterator<V> {
-    constructor(null_: DefaultHeaders$ValueIterator)
+    constructor(null_: (Object | null)[], arg1: K)
     // private hash: number;
     // private name: K;
     // private next: DefaultHeaders$HeaderEntry<K, V>;

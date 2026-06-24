@@ -10,6 +10,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../../java/util/Map$Entry.d.ts'
 export class EntityData extends Record implements Copyable, Rewritable {
     static TYPE: Type<EntityData>;
+    constructor(type: number, tag: Map$Entry<string, Tag>[])
     // private tag: Map$Entry<string, Tag>[];
     // private type: number;
     copy(): EntityData;

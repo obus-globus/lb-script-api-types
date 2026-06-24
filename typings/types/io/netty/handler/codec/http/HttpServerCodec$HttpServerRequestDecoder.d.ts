@@ -2,7 +2,9 @@ import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ChannelHandlerContext } from '../../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { ByteToMessageDecoder$Cumulator } from '../../../../../io/netty/handler/codec/ByteToMessageDecoder$Cumulator.d.ts'
 import type { HttpDecoderConfig } from '../../../../../io/netty/handler/codec/http/HttpDecoderConfig.d.ts'
+import type { HttpMessage } from '../../../../../io/netty/handler/codec/http/HttpMessage.d.ts'
 import type { HttpRequestDecoder } from '../../../../../io/netty/handler/codec/http/HttpRequestDecoder.d.ts'
+import type { HttpServerCodec } from '../../../../../io/netty/handler/codec/http/HttpServerCodec.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class HttpServerCodec$HttpServerRequestDecoder extends HttpRequestDecoder {
     static COMPOSITE_CUMULATOR: ByteToMessageDecoder$Cumulator;
@@ -16,6 +18,9 @@ export class HttpServerCodec$HttpServerRequestDecoder extends HttpRequestDecoder
     static DEFAULT_STRICT_LINE_PARSING: boolean;
     static DEFAULT_VALIDATE_HEADERS: boolean;
     static MERGE_CUMULATOR: ByteToMessageDecoder$Cumulator;
-    constructor(null_: HttpServerCodec$HttpServerRequestDecoder, arg1: HttpDecoderConfig)
+    static PROP_RFC9112_TRANSFER_ENCODING: string;
+    static RFC9112_TRANSFER_ENCODING: boolean;
+    constructor(null_: HttpServerCodec, arg1: HttpDecoderConfig)
     decode(arg0: ChannelHandlerContext, arg1: ByteBuf, arg2: Object[]): void;
+    handleTransferEncodingChunkedWithContentLength(arg0: HttpMessage): void;
 }

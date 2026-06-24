@@ -6,6 +6,9 @@ import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos
 import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 export class ClientboundChunksBiomesPacket$ChunkBiomeData extends Record {
     static extractChunkData(parambuffer: FriendlyByteBuf, paramchunk: LevelChunk): void;
+    constructor(input: FriendlyByteBuf)
+    constructor(pos: ChunkPos, buffer: number[])
+    constructor(chunk: LevelChunk)
     // private buffer: number[];
     // private pos: ChunkPos;
     buffer(): number[];

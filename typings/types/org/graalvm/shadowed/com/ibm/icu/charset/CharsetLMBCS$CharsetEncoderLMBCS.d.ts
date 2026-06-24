@@ -5,9 +5,10 @@ import type { CoderResult } from '../../../../../../../java/nio/charset/CoderRes
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharsetEncoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetEncoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetLMBCS } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetLMBCS.d.ts'
 export class CharsetLMBCS$CharsetEncoderLMBCS extends CharsetEncoderICU {
     static getMaxBytesForString(paramlength: number, parammaxCharSize: number): number;
-    constructor(null_: CharsetLMBCS$CharsetEncoderLMBCS, cs: CharsetICU)
+    constructor(null_: CharsetLMBCS, cs: CharsetICU)
     // private LMBCSConversionWorker(group: number, LMBCS: number[], pUniChar: string, lastConverterIndex: number[], groups_tried: (Object | null)[]): number;
     // private LMBCSConvertUni(LMBCS: number[], uniChar: string): number;
     encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;

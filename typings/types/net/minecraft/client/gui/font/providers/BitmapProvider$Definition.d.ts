@@ -13,6 +13,7 @@ import type { ResourceManager } from '../../../../../../net/minecraft/server/pac
 export class BitmapProvider$Definition extends Record implements GlyphProviderDefinition {
     static CODEC: MapCodec<BitmapProvider$Definition>;
     static MAP_CODEC: MapCodec<GlyphProviderDefinition>;
+    constructor(file: Identifier, height: number, ascent: number, codepointGrid: number[][])
     // private ascent: number;
     // private codepointGrid: number[][];
     // private file: Identifier;

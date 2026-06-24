@@ -1,3 +1,4 @@
+import type { GzipCompressorInputStream$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { CRC32 } from '../../../../../../java/util/zip/CRC32.d.ts'
@@ -15,6 +16,7 @@ export class GzipCompressorInputStream extends CompressorInputStream implements 
     constructor(arg0: InputStream)
     constructor(arg0: InputStream, arg1: boolean)
     private constructor(arg0: GzipCompressorInputStream$Builder)
+    constructor(arg0: GzipCompressorInputStream$Builder, arg1: GzipCompressorInputStream$1)
     // private buf: number[];
     // private bufUsed: number;
     // private countingStream: BoundedInputStream;

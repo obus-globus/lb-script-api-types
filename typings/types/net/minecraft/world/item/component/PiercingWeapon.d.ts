@@ -13,6 +13,7 @@ export class PiercingWeapon extends Record {
     static CODEC: Codec<PiercingWeapon>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, PiercingWeapon>;
     static canHitEntity(paramjabber: Entity, paramtarget: Entity): boolean;
+    constructor(dealsKnockback: boolean, dismounts: boolean, sound: Optional<Holder<SoundEvent>>, hitSound: Optional<Holder<SoundEvent>>)
     // private dealsKnockback: boolean;
     // private dismounts: boolean;
     // private hitSound: Optional<Holder<SoundEvent>>;

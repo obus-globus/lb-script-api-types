@@ -11,6 +11,7 @@ import type { ClientboundPacket26_1 } from '../../../../../com/viaversion/viaver
 import type { ServerboundPacket1_21_9 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_7to1_21_9/packet/ServerboundPacket1_21_9.d.ts'
 import type { BlockRewriter } from '../../../../../com/viaversion/viaversion/rewriter/BlockRewriter.d.ts'
 import type { ParticleRewriter } from '../../../../../com/viaversion/viaversion/rewriter/ParticleRewriter.d.ts'
+import type { RecipeDisplayRewriter } from '../../../../../com/viaversion/viaversion/rewriter/RecipeDisplayRewriter.d.ts'
 import type { RegistryDataRewriter } from '../../../../../com/viaversion/viaversion/rewriter/RegistryDataRewriter.d.ts'
 import type { TagRewriter } from '../../../../../com/viaversion/viaversion/rewriter/TagRewriter.d.ts'
 import type { NBTComponentRewriter } from '../../../../../com/viaversion/viaversion/rewriter/text/NBTComponentRewriter.d.ts'
@@ -22,6 +23,7 @@ export class Protocol98_1To99_1 extends AbstractProtocol<ClientboundPacket26_1, 
     readonly entityRewriter: EntityPacketRewriter99_1;
     readonly itemRewriter: BlockItemPacketRewriter99_1;
     readonly particleRewriter: ParticleRewriter<ClientboundPacket26_1>;
+    // private recipeewriter: RecipeDisplayRewriter<ClientboundPacket26_1>;
     readonly registryDataRewriter: RegistryDataRewriter;
     readonly tagRewriter: TagRewriter<ClientboundPacket26_1>;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket26_1, ClientboundPacket26_1, ServerboundPacket1_21_9, ServerboundPacket1_21_9>;
@@ -31,6 +33,7 @@ export class Protocol98_1To99_1 extends AbstractProtocol<ClientboundPacket26_1, 
     getItemRewriter(): BlockItemPacketRewriter99_1;
     getMappingData(): MappingData;
     getParticleRewriter(): ParticleRewriter<ClientboundPacket26_1>;
+    getRecipeRewriter(): RecipeDisplayRewriter<ClientboundPacket26_1>;
     getRegistryDataRewriter(): RegistryDataRewriter;
     getTagRewriter(): TagRewriter<ClientboundPacket26_1>;
     init(arg0: UserConnection): void;

@@ -13,6 +13,7 @@ export class IncomingRpcMethod$IncomingRpcMethodBuilder<Params extends unknown, 
     constructor(supplier: (param0: MinecraftApi) => Result)
     constructor(function_: (param0: MinecraftApi, param1: ClientInfo) => Result)
     constructor(function_: (param0: MinecraftApi, param1: Params, param2: ClientInfo) => Result)
+    // private allowPreServerInit: boolean;
     // private description: string;
     // private discoverable: boolean;
     // private paramInfo: ParamInfo<Params>;
@@ -20,6 +21,7 @@ export class IncomingRpcMethod$IncomingRpcMethodBuilder<Params extends unknown, 
     // private parameterlessFunction: (param0: MinecraftApi, param1: ClientInfo) => Result;
     // private resultInfo: ResultInfo<Result>;
     // private runOnMainThread: boolean;
+    allowPreServerInit(): IncomingRpcMethod$IncomingRpcMethodBuilder<Params, Result>;
     build(): IncomingRpcMethod<Params, Result>;
     description(description: string): IncomingRpcMethod$IncomingRpcMethodBuilder<Params, Result>;
     notOnMainThread(): IncomingRpcMethod$IncomingRpcMethodBuilder<Params, Result>;

@@ -3,7 +3,8 @@ import type { UCharacterIterator } from '../../../../com/ibm/icu/text/UCharacter
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
 import type { CharacterIterator } from '../../../../java/text/CharacterIterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class CharacterIteratorWrapper extends UCharacterIterator {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class CharacterIteratorWrapper extends UCharacterIterator implements Cloneable {
     static DONE: number;
     static getInstance(paramarg0: string[]): UCharacterIterator;
     static getInstance(paramarg0: string[], paramarg1: number, paramarg2: number): UCharacterIterator;
@@ -13,7 +14,8 @@ export class CharacterIteratorWrapper extends UCharacterIterator {
     static getInstance(paramarg0: CharacterIterator): UCharacterIterator;
     constructor(arg0: CharacterIterator)
     // private iterator: CharacterIterator;
-    clone(): Object;
+    clone(): CharacterIteratorWrapper;
+    protected clone(): Object;
     current(): number;
     getCharacterIterator(): CharacterIterator;
     getIndex(): number;

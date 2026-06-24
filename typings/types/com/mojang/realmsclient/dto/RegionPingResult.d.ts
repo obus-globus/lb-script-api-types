@@ -2,6 +2,7 @@ import type { ReflectionBasedSerialization } from '../../../../com/mojang/realms
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RegionPingResult extends Record implements ReflectionBasedSerialization {
+    constructor(regionName: string, ping: number)
     // private ping: number;
     // private regionName: string;
     equals(o: Object | null): boolean;

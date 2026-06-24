@@ -5,6 +5,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PiercingWeapon extends Record {
     static TYPE: Type<PiercingWeapon>;
+    constructor(dealsKnockback: boolean, dismounts: boolean, sound: Holder<SoundEvent>, hitSound: Holder<SoundEvent>)
     // private dealsKnockback: boolean;
     // private dismounts: boolean;
     // private hitSound: Holder<SoundEvent>;

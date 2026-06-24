@@ -3,6 +3,7 @@ import type { PacketWrapper } from '../../../../../../com/viaversion/viaversion/
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RecipeRewriter1_21_2$StoneCutterRecipe extends Record {
+    constructor(identifier: string, group: number, ingredient: Item[], result: Item)
     // private group: number;
     // private identifier: string;
     // private ingredient: Item[];

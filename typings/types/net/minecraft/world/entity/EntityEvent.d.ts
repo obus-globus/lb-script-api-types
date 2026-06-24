@@ -53,6 +53,7 @@ export class EntityEvent extends Object {
     static TAMING_SUCCEEDED: number;
     static TELEPORT: number;
     static TENDRILS_SHIVER: number;
+    static TNT_PRIME: number;
     static TRUSTING_FAILED: number;
     static TRUSTING_SUCCEEDED: number;
     static USE_ITEM_COMPLETE: number;

@@ -2,6 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PlayerMessageSignature extends Record {
+    constructor(uuid: UUID, signatureBytes: number[])
     // private signatureBytes: number[];
     // private uuid: UUID;
     equals(arg0: Object | null): boolean;

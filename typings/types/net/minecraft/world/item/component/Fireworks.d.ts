@@ -14,6 +14,7 @@ export class Fireworks extends Record implements TooltipProvider {
     static CODEC: Codec<Fireworks>;
     static MAX_EXPLOSIONS: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, Fireworks>;
+    constructor(flightDuration: number, explosions: FireworkExplosion[])
     // private explosions: FireworkExplosion[];
     // private flightDuration: number;
     addToTooltip(context: Item$TooltipContext, consumer: (param0: Component) => void, flag: TooltipFlag, components: DataComponentGetter): void;

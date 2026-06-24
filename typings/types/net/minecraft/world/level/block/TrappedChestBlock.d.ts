@@ -97,7 +97,7 @@ export class TrappedChestBlock extends ChestBlock {
     codec(): MapCodec<TrappedChestBlock>;
     getDirectSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getOpenChestStat(): Stat<Identifier>;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     isSignalSource(state: BlockState): boolean;
     newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
 }

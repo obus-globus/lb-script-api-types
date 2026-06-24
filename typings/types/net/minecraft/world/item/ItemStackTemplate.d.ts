@@ -18,6 +18,11 @@ export class ItemStackTemplate extends Record implements ItemInstance {
     static MAP_CODEC: MapCodec<ItemStackTemplate>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemStackTemplate>;
     static fromNonEmptyStack(paramitemStack: ItemStack): ItemStackTemplate;
+    static fromStack(paramitemStack: ItemStack): ItemStackTemplate;
+    constructor(item: Holder<Item>, count: number, components: DataComponentPatch)
+    constructor(item: Item)
+    constructor(item: Item, count: number)
+    constructor(item: Item, patch: DataComponentPatch)
     // private components: DataComponentPatch;
     // private count: number;
     // private item: Holder<Item>;

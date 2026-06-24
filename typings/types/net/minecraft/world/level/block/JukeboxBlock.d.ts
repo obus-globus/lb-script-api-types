@@ -88,11 +88,11 @@ export class JukeboxBlock extends BaseEntityBlock {
     codec(): MapCodec<JukeboxBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     getAnalogOutputSignal(state: BlockState, level: Level, pos: BlockPos, direction: Direction): number;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getTicker<T extends BlockEntity>(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;
     hasAnalogOutputSignal(state: BlockState): boolean;
     isSignalSource(state: BlockState): boolean;
     newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     setPlacedBy(level: Level, pos: BlockPos, state: BlockState, by: LivingEntity, itemStack: ItemStack): void;
     useItemOn(itemStack: ItemStack, state: BlockState, level: Level, pos: BlockPos, player: Player, hand: InteractionHand, hitResult: BlockHitResult): InteractionResult;
     useWithoutItem(state: BlockState, level: Level, pos: BlockPos, player: Player, hitResult: BlockHitResult): InteractionResult;

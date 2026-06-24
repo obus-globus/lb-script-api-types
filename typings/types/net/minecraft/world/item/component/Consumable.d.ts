@@ -19,6 +19,7 @@ export class Consumable extends Record {
     static DEFAULT_CONSUME_SECONDS: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Consumable>;
     static builder(): Consumable$Builder;
+    constructor(consumeSeconds: number, animation: ItemUseAnimation, sound: Holder<SoundEvent>, hasConsumeParticles: boolean, onConsumeEffects: ConsumeEffect[])
     // private animation: ItemUseAnimation;
     // private consumeSeconds: number;
     // private hasConsumeParticles: boolean;

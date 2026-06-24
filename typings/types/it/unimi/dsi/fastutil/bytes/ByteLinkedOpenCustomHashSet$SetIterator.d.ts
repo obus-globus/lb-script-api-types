@@ -4,8 +4,8 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteLinkedOpenCustomHashSet$SetIterator extends Object implements ByteListIterator {
-    constructor(null_: ByteLinkedOpenCustomHashSet$SetIterator)
-    constructor(null_: ByteLinkedOpenCustomHashSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: number;
     // private index: number;
     // private next: number;

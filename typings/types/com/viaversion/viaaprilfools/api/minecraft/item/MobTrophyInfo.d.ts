@@ -4,6 +4,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class MobTrophyInfo extends Record {
     static TYPE: Type<MobTrophyInfo>;
+    constructor(type: Holder<string>, shiny: boolean)
     // private shiny: boolean;
     // private type: Holder<string>;
     equals(arg0: Object | null): boolean;

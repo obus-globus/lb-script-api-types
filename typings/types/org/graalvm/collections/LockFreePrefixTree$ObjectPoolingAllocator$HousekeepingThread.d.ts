@@ -7,6 +7,7 @@ import type { Duration } from '../../../java/time/Duration.d.ts'
 import type { AtomicBoolean } from '../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
+import type { LockFreePrefixTree$ObjectPoolingAllocator } from '../../../org/graalvm/collections/LockFreePrefixTree$ObjectPoolingAllocator.d.ts'
 export class LockFreePrefixTree$ObjectPoolingAllocator$HousekeepingThread extends Thread {
     static MAX_PRIORITY: number;
     static MIN_PRIORITY: number;
@@ -28,7 +29,7 @@ export class LockFreePrefixTree$ObjectPoolingAllocator$HousekeepingThread extend
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    constructor(null_: LockFreePrefixTree$ObjectPoolingAllocator$HousekeepingThread, defaultHousekeepingPeriodMillis: number)
+    constructor(null_: LockFreePrefixTree$ObjectPoolingAllocator, defaultHousekeepingPeriodMillis: number)
     // private defaultHousekeepingPeriodMillis: number;
     // private hashChildrenPreallocationGrowth: number[];
     // private hashChildrenPreallocationTotal: number[];

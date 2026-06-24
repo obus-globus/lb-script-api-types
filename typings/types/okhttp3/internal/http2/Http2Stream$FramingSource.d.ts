@@ -1,11 +1,12 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../kotlin/Pair.d.ts'
+import type { Http2Stream } from '../../../okhttp3/internal/http2/Http2Stream.d.ts'
 import type { Buffer } from '../../../okio/Buffer.d.ts'
 import type { BufferedSource } from '../../../okio/BufferedSource.d.ts'
 import type { Source } from '../../../okio/Source.d.ts'
 import type { Timeout } from '../../../okio/Timeout.d.ts'
 export class Http2Stream$FramingSource extends Object implements Source {
-    constructor(null_: Http2Stream$FramingSource, maxByteCount: number, finished: boolean)
+    constructor(null_: Http2Stream, maxByteCount: number, finished: boolean)
     // private closed: boolean;
     /*not mapped: */ getClosed$okhttp(): boolean;
     // private finished: boolean;

@@ -10,7 +10,7 @@ export abstract class GenericColorMode<T extends unknown> extends Mode {
      * @returns Whether the color mode is sensitive to the parameter of {@link getColor}.
 If false, it can be used as ColorModulator (shader color)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt:36}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderConfigurables.kt:36}
      */
     /*not mapped: */ isParamSensitive(): boolean;
     getColor(param: T): Color4b;

@@ -1,8 +1,9 @@
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { LZ4HCJavaUnsafeCompressor } from '../../../net/jpountz/lz4/LZ4HCJavaUnsafeCompressor.d.ts'
 import type { LZ4Utils$Match } from '../../../net/jpountz/lz4/LZ4Utils$Match.d.ts'
 export class LZ4HCJavaUnsafeCompressor$HashTable extends Object {
-    constructor(null_: LZ4HCJavaUnsafeCompressor$HashTable, arg1: number)
+    constructor(null_: LZ4HCJavaUnsafeCompressor, arg1: number)
     // private base: number;
     // private chainTable: number[];
     // private hashTable: number[];

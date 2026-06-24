@@ -5,6 +5,7 @@ import type { LevelHeightAccessor } from '../../../../../net/minecraft/world/lev
 export class NoiseSettings extends Record {
     static CODEC: Codec<NoiseSettings>;
     static create(paramminY: number, paramheight: number, paramnoiseSizeHorizontal: number, paramnoiseSizeVertical: number): NoiseSettings;
+    constructor(minY: number, height: number, noiseSizeHorizontal: number, noiseSizeVertical: number)
     // private height: number;
     // private minY: number;
     // private noiseSizeHorizontal: number;

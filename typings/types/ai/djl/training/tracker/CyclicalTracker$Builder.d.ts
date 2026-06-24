@@ -1,9 +1,11 @@
+import type { CyclicalTracker$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { CyclicalTracker } from '../../../../ai/djl/training/tracker/CyclicalTracker.d.ts'
 import type { CyclicalTracker$CyclicalMode } from '../../../../ai/djl/training/tracker/CyclicalTracker$CyclicalMode.d.ts'
 import type { CyclicalTracker$ScaleFunction } from '../../../../ai/djl/training/tracker/CyclicalTracker$ScaleFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CyclicalTracker$Builder extends Object {
     private constructor()
+    constructor(arg0: CyclicalTracker$1)
     // private baseValue: number;
     // private gamma: number;
     // private maxValue: number;

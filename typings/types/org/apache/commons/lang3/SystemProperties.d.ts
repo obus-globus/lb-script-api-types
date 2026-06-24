@@ -1,4 +1,5 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
+import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
 import type { IntSupplier } from '../../../../java/util/function/IntSupplier.d.ts'
 import type { LongSupplier } from '../../../../java/util/function/LongSupplier.d.ts'
@@ -371,6 +372,7 @@ export class SystemProperties extends Object {
     static getOsArch(): string;
     static getOsName(): string;
     static getOsVersion(): string;
+    static getPath(paramarg0: string, paramarg1: () => Path[][]): Path[][];
     static getPathSeparator(): string;
     static getProperty(paramarg0: string): string;
     static getSocksProxyHost(): string;

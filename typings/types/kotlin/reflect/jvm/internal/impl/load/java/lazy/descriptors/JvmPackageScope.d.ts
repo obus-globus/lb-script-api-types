@@ -26,7 +26,7 @@ export class JvmPackageScope extends Object implements MemberScope {
     getContributedFunctions(arg0: Name, arg1: LookupLocation): SimpleFunctionDescriptor[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): PropertyDescriptor[];
     getFunctionNames(): Name[];
-    getJavaScope$descriptors_jvm(): LazyJavaPackageScope;
+    getJavaScope$org_jetbrains_kotlin_descriptors_jvm(): LazyJavaPackageScope;
     // private getKotlinScopes(): MemberScope[];
     getVariableNames(): Name[];
     recordLookup(arg0: Name, arg1: LookupLocation): void;

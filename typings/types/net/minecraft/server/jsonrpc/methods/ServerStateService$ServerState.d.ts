@@ -6,6 +6,7 @@ import type { PlayerDto } from '../../../../../net/minecraft/server/jsonrpc/api/
 export class ServerStateService$ServerState extends Record {
     static CODEC: Codec<ServerStateService$ServerState>;
     static NOT_STARTED: ServerStateService$ServerState;
+    constructor(started: boolean, players: PlayerDto[], version: ServerStatus$Version)
     // private players: PlayerDto[];
     // private started: boolean;
     // private version: ServerStatus$Version;

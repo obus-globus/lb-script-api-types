@@ -1,3 +1,4 @@
+import type { DeferredFileOutputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
@@ -14,6 +15,7 @@ export class DeferredFileOutputStream extends ThresholdingOutputStream {
     constructor(arg0: number, arg1: number, arg2: string, arg3: string, arg4: File)
     constructor(arg0: number, arg1: string, arg2: string, arg3: File)
     private constructor(arg0: DeferredFileOutputStream$Builder)
+    constructor(arg0: DeferredFileOutputStream$Builder, arg1: DeferredFileOutputStream$1)
     // private closed: boolean;
     // private currentOutputStream: OutputStream;
     // private directory: Path[];

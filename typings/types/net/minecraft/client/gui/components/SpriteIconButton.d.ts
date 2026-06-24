@@ -4,7 +4,9 @@ import type { Button$Builder } from '../../../../../net/minecraft/client/gui/com
 import type { Button$CreateNarration } from '../../../../../net/minecraft/client/gui/components/Button$CreateNarration.d.ts'
 import type { Button$OnPress } from '../../../../../net/minecraft/client/gui/components/Button$OnPress.d.ts'
 import type { SpriteIconButton$Builder } from '../../../../../net/minecraft/client/gui/components/SpriteIconButton$Builder.d.ts'
+import type { Tooltip } from '../../../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 import type { WidgetSprites } from '../../../../../net/minecraft/client/gui/components/WidgetSprites.d.ts'
+import type { InputWithModifiers } from '../../../../../net/minecraft/client/input/InputWithModifiers.d.ts'
 import type { SoundManager } from '../../../../../net/minecraft/client/sounds/SoundManager.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
@@ -19,9 +21,19 @@ export abstract class SpriteIconButton extends Button {
     static defaultInactiveMessage(paramactiveMessage: Component): Component;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    private constructor(width: number, height: number, message: Component, spriteWidth: number, spriteHeight: number, sprite: WidgetSprites, onPress: Button$OnPress, tooltip: Component, narration: Button$CreateNarration)
+    private constructor(width: number, height: number, message: Component, spriteWidth: number, spriteHeight: number, spriteOffsetX: number, spriteOffsetY: number, sprite: WidgetSprites, onPress: Button$OnPress, tooltip: Component, narration: Button$CreateNarration, switchToLoadingAfterPress: boolean)
+    // private defaultTooltip: Tooltip;
+    readonly loading: boolean;
     // private sprite: WidgetSprites;
     // private spriteHeight: number;
+    // private spriteOffsetX: number;
+    // private spriteOffsetY: number;
     // private spriteWidth: number;
+    // private switchToLoadingAfterPress: boolean;
+    extractLoadingStateIfLoading(graphics: GuiGraphicsExtractor): boolean;
     extractSprite(graphics: GuiGraphicsExtractor, x: number, y: number): void;
+    isActive(): boolean;
+    onPress(input: InputWithModifiers): void;
+    setLoading(loading: boolean): void;
+    setLoading(loading: boolean, loadingTooltip: Tooltip): void;
 }

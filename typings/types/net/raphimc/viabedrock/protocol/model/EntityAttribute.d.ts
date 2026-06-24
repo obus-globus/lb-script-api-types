@@ -3,6 +3,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AttributeOperands } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/AttributeOperands.d.ts'
 import type { EntityAttribute$Modifier } from '../../../../../net/raphimc/viabedrock/protocol/model/EntityAttribute$Modifier.d.ts'
 export class EntityAttribute extends Record {
+    constructor(arg0: string, arg1: number, arg2: number, arg3: number)
+    constructor(name: string, currentValue: number, minValue: number, maxValue: number, defaultValue: number, defaultMinValue: number, defaultMaxValue: number, modifiers: EntityAttribute$Modifier[])
     // private currentValue: number;
     // private defaultMaxValue: number;
     // private defaultMinValue: number;

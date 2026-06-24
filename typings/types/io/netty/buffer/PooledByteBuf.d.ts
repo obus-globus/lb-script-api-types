@@ -24,6 +24,7 @@ export abstract class PooledByteBuf<T extends unknown> extends AbstractReference
     // private offset: number;
     // private recyclerHandle: Recycler$EnhancedHandle<PooledByteBuf<T>>;
     // private tmpNioBuf: ByteBuffer;
+    _internalNioBuffer(): ByteBuffer;
     _internalNioBuffer(arg0: number, arg1: number, arg2: boolean): ByteBuffer;
     alloc(): ByteBufAllocator;
     capacity(): number;

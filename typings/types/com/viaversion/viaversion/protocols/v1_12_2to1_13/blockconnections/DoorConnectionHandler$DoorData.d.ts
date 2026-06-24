@@ -2,6 +2,7 @@ import type { BlockFace } from '../../../../../../com/viaversion/viaversion/api/
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DoorConnectionHandler$DoorData extends Record {
+    private constructor(lower: boolean, rightHinge: boolean, powered: boolean, open: boolean, facing: BlockFace, type: number)
     // private facing: BlockFace;
     // private lower: boolean;
     // private open: boolean;

@@ -4,6 +4,7 @@ import type { Configuration } from '../../../../../net/minecraft/world/level/chu
 import type { Palette } from '../../../../../net/minecraft/world/level/chunk/Palette.d.ts'
 import type { Strategy } from '../../../../../net/minecraft/world/level/chunk/Strategy.d.ts'
 export class Configuration$Global extends Record implements Configuration {
+    constructor(bitsInMemory: number, bitsInStorage: number)
     // private bitsInMemory: number;
     // private bitsInStorage: number;
     alwaysRepack(): boolean;

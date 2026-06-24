@@ -5,5 +5,5 @@ import type { ComparatorChain } from '../../../../../../../../../net/ccbluex/liq
 export class SpearItemFacet$Companion extends Object {
     // private COMPARATOR_FOR_PIERCING_ATTACK: ComparatorChain<SpearItemFacet>;
     // private COMPARING_LUNGE_AND_SPEED: (param0: Object) => boolean;
-    /*not mapped: */ getCOMPARING_LUNGE_AND_SPEED$liquidbounce(): (param0: Object) => boolean;
+    /*not mapped: */ getCOMPARING_LUNGE_AND_SPEED$net_ccbluex_liquidbounce(): (param0: Object) => boolean;
 }

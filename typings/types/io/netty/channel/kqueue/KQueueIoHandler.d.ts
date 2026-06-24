@@ -1,3 +1,4 @@
+import type { KQueueIoHandler$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
 import type { IoHandle } from '../../../../io/netty/channel/IoHandle.d.ts'
 import type { IoHandler } from '../../../../io/netty/channel/IoHandler.d.ts'
@@ -18,6 +19,7 @@ export class KQueueIoHandler extends Object implements IoHandler {
     static newFactory(): IoHandlerFactory;
     static newFactory(paramarg0: number, paramarg1: SelectStrategyFactory): IoHandlerFactory;
     private constructor(arg0: ThreadAwareExecutor, arg1: number, arg2: SelectStrategy)
+    constructor(arg0: ThreadAwareExecutor, arg1: number, arg2: SelectStrategy, arg3: KQueueIoHandler$1)
     // private allowGrowing: boolean;
     // private cancelledRegistrations: KQueueIoHandler$DefaultKqueueIoRegistration[];
     // private changeList: KQueueEventArray;

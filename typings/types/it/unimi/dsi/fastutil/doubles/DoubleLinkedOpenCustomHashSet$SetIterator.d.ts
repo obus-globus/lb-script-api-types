@@ -4,8 +4,8 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleLinkedOpenCustomHashSet$SetIterator extends Object implements DoubleListIterator {
-    constructor(null_: DoubleLinkedOpenCustomHashSet$SetIterator)
-    constructor(null_: DoubleLinkedOpenCustomHashSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: number;
     // private index: number;
     // private next: number;

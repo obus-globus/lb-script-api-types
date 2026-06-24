@@ -8,8 +8,10 @@ import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class DefaultHttpRequest extends DefaultHttpMessage implements HttpRequest {
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string)
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: Map$Entry<string, string>[])
+    constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: Map$Entry<string, string>[], arg4: boolean)
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: HttpHeadersFactory)
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: boolean)
+    // private validateRequestLine: boolean;
     equals(arg0: Object | null): boolean;
     getMethod(): HttpMethod;
     getUri(): string;

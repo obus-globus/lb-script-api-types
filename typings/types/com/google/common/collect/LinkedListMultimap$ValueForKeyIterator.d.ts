@@ -1,9 +1,10 @@
+import type { LinkedListMultimap } from '../../../../com/google/common/collect/LinkedListMultimap.d.ts'
 import type { LinkedListMultimap$Node } from '../../../../com/google/common/collect/LinkedListMultimap$Node.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ListIterator } from '../../../../java/util/ListIterator.d.ts'
 export class LinkedListMultimap$ValueForKeyIterator extends Object implements ListIterator<V> {
-    constructor(null_: LinkedListMultimap$ValueForKeyIterator)
-    constructor(null_: LinkedListMultimap$ValueForKeyIterator, index: number)
+    constructor(null_: LinkedListMultimap<K, V>, key: K)
+    constructor(null_: LinkedListMultimap<K, V>, key: K, index: number)
     // private current: LinkedListMultimap$Node<K, V>;
     // private key: K;
     // private next: LinkedListMultimap$Node<K, V>;

@@ -3,6 +3,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Weapon extends Record {
     static TYPE: Type<Weapon>;
+    constructor(itemDamagePerAttack: number, disableBlockingForSeconds: number)
     // private disableBlockingForSeconds: number;
     // private itemDamagePerAttack: number;
     disableBlockingForSeconds(): number;

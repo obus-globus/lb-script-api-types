@@ -1,4 +1,5 @@
 import type { GpuBuffer } from '../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
+import type { RenderTarget } from '../../../../com/mojang/blaze3d/pipeline/RenderTarget.d.ts'
 import type { RenderSystem$AutoStorageIndexBuffer } from '../../../../com/mojang/blaze3d/systems/RenderSystem$AutoStorageIndexBuffer.d.ts'
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { VertexConsumer } from '../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
@@ -15,7 +16,7 @@ import type { AtlasManager } from '../../../../net/minecraft/client/resources/mo
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { MoonPhase } from '../../../../net/minecraft/world/level/MoonPhase.d.ts'
 export class SkyRenderer extends Object implements AutoCloseable {
-    constructor(textureManager: TextureManager, atlasManager: AtlasManager)
+    constructor(textureManager: TextureManager, atlasManager: AtlasManager, renderTarget: RenderTarget)
     // private bottomSkyBuffer: GpuBuffer;
     // private celestialsAtlas: TextureAtlas;
     // private endFlashBuffer: GpuBuffer;
@@ -23,6 +24,7 @@ export class SkyRenderer extends Object implements AutoCloseable {
     // private endSkyTexture: AbstractTexture;
     // private moonBuffer: GpuBuffer;
     // private quadIndices: RenderSystem$AutoStorageIndexBuffer;
+    // private renderTarget: RenderTarget;
     // private starBuffer: GpuBuffer;
     // private starIndexCount: number;
     // private sunBuffer: GpuBuffer;

@@ -8,6 +8,7 @@ export class UtcOffset$Companion extends Object {
     readonly ZERO: UtcOffset;
     // private serialVersionUID: number;
     Format(block: (param0: DateTimeFormatBuilder$WithUtcOffset) => void): DateTimeFormat<UtcOffset>;
+    orNull(hours: number | null, minutes: number | null, seconds: number | null): UtcOffset | null;
     parse(input: CharSequence, format: DateTimeFormat<UtcOffset>): UtcOffset;
     parse(offsetString: string): UtcOffset;
     serializer(): KSerializer<UtcOffset>;

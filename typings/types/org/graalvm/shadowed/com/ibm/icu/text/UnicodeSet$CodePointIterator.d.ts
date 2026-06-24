@@ -3,7 +3,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
 import type { UnicodeSet$CodePointIteratorInt } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/UnicodeSet$CodePointIteratorInt.d.ts'
 export class UnicodeSet$CodePointIterator extends Object implements Iterator<number> {
-    constructor(null_: UnicodeSet$CodePointIterator, unicodeSet: string[])
+    constructor(null_: string[], unicodeSet: string[])
     // private cpi: UnicodeSet$CodePointIteratorInt;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;

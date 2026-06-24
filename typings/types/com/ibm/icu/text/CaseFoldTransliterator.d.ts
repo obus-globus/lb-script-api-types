@@ -1,12 +1,10 @@
 import type { UCaseProps } from '../../../../com/ibm/icu/impl/UCaseProps.d.ts'
 import type { Replaceable } from '../../../../com/ibm/icu/text/Replaceable.d.ts'
-import type { ReplaceableContextIterator } from '../../../../com/ibm/icu/text/ReplaceableContextIterator.d.ts'
 import type { Transliterator } from '../../../../com/ibm/icu/text/Transliterator.d.ts'
 import type { Transliterator$Factory } from '../../../../com/ibm/icu/text/Transliterator$Factory.d.ts'
 import type { Transliterator$Position } from '../../../../com/ibm/icu/text/Transliterator$Position.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Enumeration } from '../../../../java/util/Enumeration.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 export class CaseFoldTransliterator extends Transliterator {
@@ -30,8 +28,6 @@ export class CaseFoldTransliterator extends Transliterator {
     static unregister(paramarg0: string): void;
     constructor()
     // private csp: UCaseProps;
-    // private iter: ReplaceableContextIterator;
-    // private result: StringBuilder;
     addSourceTargetSet(arg0: string[], arg1: string[], arg2: string[]): void;
     handleTransliterate(arg0: Replaceable, arg1: Transliterator$Position, arg2: boolean): void;
 }

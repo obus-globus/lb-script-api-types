@@ -9,6 +9,7 @@ import type { Page } from '../../../../../../../net/caffeinemc/mods/sodium/clien
 import type { ColorTheme } from '../../../../../../../net/caffeinemc/mods/sodium/client/gui/ColorTheme.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ModOptions extends Record implements Searchable {
+    constructor(configId: string, name: string, version: string, theme: ColorTheme, icon: Identifier, iconMonochrome: boolean, pages: Page[], overrides: OptionOverride[], overlays: OptionOverlay[], flagHooks: FlagHook[])
     // private configId: string;
     // private flagHooks: FlagHook[];
     // private icon: Identifier;

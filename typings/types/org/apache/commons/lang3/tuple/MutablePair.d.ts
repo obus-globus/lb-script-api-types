@@ -11,6 +11,7 @@ export class MutablePair<L extends unknown, R extends unknown> extends Pair<L, R
     static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
     static of(paramarg0: Map$Entry<Object, Object>): Pair<Object, Object>;
     static ofNonNull(paramarg0: Object | null, paramarg1: Object | null): MutablePair<Object, Object>;
+    static ofNonNull(paramarg0: Map$Entry<Object, Object>): MutablePair<Object, Object>;
     static ofNonNull(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
     constructor()
     constructor(arg0: L, arg1: R)

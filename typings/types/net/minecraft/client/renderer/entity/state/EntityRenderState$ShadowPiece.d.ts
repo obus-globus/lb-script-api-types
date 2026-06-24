@@ -2,6 +2,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class EntityRenderState$ShadowPiece extends Record {
+    constructor(relativeX: number, relativeY: number, relativeZ: number, shapeBelow: VoxelShape, alpha: number)
     // private alpha: number;
     // private relativeX: number;
     // private relativeY: number;

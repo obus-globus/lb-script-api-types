@@ -6,4 +6,5 @@ export class StandardKTypes extends Object {
     readonly CLONEABLE: KType;
     readonly NULLABLE_ANY: KType;
     readonly SERIALIZABLE: KType;
+    readonly UNIT_RETURN_TYPE: KType;
 }

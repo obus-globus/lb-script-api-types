@@ -3,6 +3,7 @@ import type { OptionalInt } from '../../../../../java/util/OptionalInt.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 export class MultiLineTextWidget$CacheKey extends Record {
+    private constructor(message: Component, maxWidth: number, maxRows: OptionalInt)
     // private maxRows: OptionalInt;
     // private maxWidth: number;
     // private message: Component;

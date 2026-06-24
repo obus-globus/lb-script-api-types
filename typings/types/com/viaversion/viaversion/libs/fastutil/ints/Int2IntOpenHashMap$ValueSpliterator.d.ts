@@ -13,6 +13,6 @@ export class Int2IntOpenHashMap$ValueSpliterator extends Int2IntOpenHashMap$MapS
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Int2IntOpenHashMap$ValueSpliterator)
-    constructor(null_: Int2IntOpenHashMap$ValueSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
 }

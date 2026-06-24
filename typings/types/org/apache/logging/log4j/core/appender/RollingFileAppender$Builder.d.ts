@@ -32,6 +32,18 @@ export class RollingFileAppender$Builder<B extends RollingFileAppender$Builder<B
     isCreateOnDemand(): boolean;
     isLocking(): boolean;
     isValid(): boolean;
+    setAdvertise(advertise: boolean): B;
+    setAdvertiseUri(advertiseUri: string): B;
+    setAppend(append: boolean): B;
+    setCreateOnDemand(createOnDemand: boolean): B;
+    setFileGroup(fileGroup: string): B;
+    setFileName(fileName: string): B;
+    setFileOwner(fileOwner: string): B;
+    setFilePattern(filePattern: string): B;
+    setFilePermissions(filePermissions: string): B;
+    setLocking(locking: boolean): B;
+    setPolicy(policy: TriggeringPolicy): B;
+    setStrategy(strategy: RolloverStrategy): B;
     withAdvertise(advertise: boolean): B;
     withAdvertiseUri(advertiseUri: string): B;
     withAppend(append: boolean): B;

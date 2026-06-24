@@ -47,6 +47,7 @@ export abstract class ComponentRewriterBase<C extends ClientboundPacketType> ext
     registerSetObjective(arg0: C): void;
     registerSetPlayerTeam1_13(arg0: C): void;
     registerSetPlayerTeam1_21_5(arg0: C): void;
+    registerSetPlayerTeam26_2(arg0: C): void;
     registerSetScore1_20_3(arg0: C): void;
     registerTabList(arg0: C): void;
     // private removeDataComponent(arg0: Map$Entry<string, Tag>[], arg1: string): boolean;

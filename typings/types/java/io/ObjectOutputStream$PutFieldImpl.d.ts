@@ -1,10 +1,11 @@
 import type { ObjectOutput } from '../../java/io/ObjectOutput.d.ts'
+import type { ObjectOutputStream } from '../../java/io/ObjectOutputStream.d.ts'
 import type { ObjectOutputStream$PutField } from '../../java/io/ObjectOutputStream$PutField.d.ts'
 import type { ObjectStreamClass } from '../../java/io/ObjectStreamClass.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class ObjectOutputStream$PutFieldImpl extends ObjectOutputStream$PutField {
-    constructor(null_: ObjectOutputStream$PutFieldImpl, arg1: ObjectStreamClass)
+    constructor(null_: ObjectOutputStream, arg1: ObjectStreamClass)
     // private desc: ObjectStreamClass;
     // private objVals: Object[];
     // private primVals: number[];

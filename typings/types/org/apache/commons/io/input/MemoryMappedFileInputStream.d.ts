@@ -1,3 +1,4 @@
+import type { MemoryMappedFileInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { FileChannel } from '../../../../../java/nio/channels/FileChannel.d.ts'
@@ -7,6 +8,7 @@ export class MemoryMappedFileInputStream extends AbstractInputStream {
     static builder(): MemoryMappedFileInputStream$Builder;
     static nullInputStream(): InputStream;
     private constructor(arg0: MemoryMappedFileInputStream$Builder)
+    constructor(arg0: MemoryMappedFileInputStream$Builder, arg1: MemoryMappedFileInputStream$1)
     // private buffer: ByteBuffer;
     // private bufferSize: number;
     // private channel: FileChannel;

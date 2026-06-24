@@ -27,6 +27,7 @@ export class EditBox extends AbstractWidget implements IEditBox {
     constructor(font: Font, x: number, y: number, width: number, height: number, oldBox: EditBox, narration: Component)
     constructor(font: Font, x: number, y: number, width: number, height: number, narration: Component)
     constructor(font: Font, width: number, height: number, narration: Component)
+    constructor(font: Font, narration: Component)
     readonly bordered: boolean;
     readonly canLoseFocus: boolean;
     readonly centered: boolean;

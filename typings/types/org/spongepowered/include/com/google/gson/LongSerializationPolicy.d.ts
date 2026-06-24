@@ -1,3 +1,4 @@
+import type { LongSerializationPolicy$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
@@ -8,5 +9,6 @@ export class LongSerializationPolicy extends Enum<LongSerializationPolicy> {
     static valueOf(paramarg0: string): LongSerializationPolicy;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: LongSerializationPolicy$1)
     name(): "DEFAULT" | "STRING";
 }

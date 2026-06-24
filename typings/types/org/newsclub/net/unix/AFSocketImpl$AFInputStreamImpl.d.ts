@@ -2,9 +2,10 @@ import type { FileDescriptor } from '../../../../java/io/FileDescriptor.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { AtomicBoolean } from '../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { AFInputStream } from '../../../../org/newsclub/net/unix/AFInputStream.d.ts'
+import type { AFSocketImpl } from '../../../../org/newsclub/net/unix/AFSocketImpl.d.ts'
 export class AFSocketImpl$AFInputStreamImpl extends AFInputStream {
     static nullInputStream(): InputStream;
-    private constructor(null_: AFSocketImpl$AFInputStreamImpl)
+    private constructor(null_: AFSocketImpl<A>)
     // private defaultOpt: number;
     // private eofReached: AtomicBoolean;
     // private streamClosed: boolean;

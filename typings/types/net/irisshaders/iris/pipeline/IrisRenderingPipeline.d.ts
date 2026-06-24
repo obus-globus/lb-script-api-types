@@ -33,7 +33,7 @@ import type { WorldRenderingPipeline } from '../../../../net/irisshaders/iris/pi
 import type { ShaderKey } from '../../../../net/irisshaders/iris/pipeline/programs/ShaderKey.d.ts'
 import type { ShaderMap } from '../../../../net/irisshaders/iris/pipeline/programs/ShaderMap.d.ts'
 import type { ShaderSupplier } from '../../../../net/irisshaders/iris/pipeline/programs/ShaderSupplier.d.ts'
-import type { SodiumPrograms } from '../../../../net/irisshaders/iris/pipeline/programs/SodiumPrograms.d.ts'
+import type { Patch } from '../../../../net/irisshaders/iris/pipeline/transform/Patch.d.ts'
 import type { ShaderPack } from '../../../../net/irisshaders/iris/shaderpack/ShaderPack.d.ts'
 import type { ProgramId } from '../../../../net/irisshaders/iris/shaderpack/loading/ProgramId.d.ts'
 import type { ComputeSource } from '../../../../net/irisshaders/iris/shaderpack/programs/ComputeSource.d.ts'
@@ -132,7 +132,6 @@ export class IrisRenderingPipeline extends Object implements ShaderRenderingPipe
     // private shouldRenderWeatherParticles: boolean;
     // private shouldWriteRainAndSnowToDepthBuffer: boolean;
     // private skipAllRendering: boolean;
-    readonly sodiumPrograms: SodiumPrograms;
     readonly specularSampler: GlSampler;
     // private stackSize: number;
     readonly sunPathRotation: number;
@@ -152,11 +151,11 @@ export class IrisRenderingPipeline extends Object implements ShaderRenderingPipe
     // private createFallbackShader(arg0: string, arg1: ShaderKey): ShaderSupplier;
     // private createFallbackShadowShader(arg0: string, arg1: ShaderKey): ShaderSupplier;
     // private createSetupComputes(arg0: ComputeSource[], arg1: ProgramSet, arg2: TextureStage): ComputeProgram[];
-    // private createShader(arg0: string, arg1: Optional<ProgramSource>, arg2: ShaderKey): ShaderSupplier;
-    // private createShader(arg0: string, arg1: ShaderKey, arg2: ProgramSource, arg3: ProgramId, arg4: AlphaTest, arg5: VertexFormat, arg6: FogMode, arg7: boolean, arg8: boolean, arg9: boolean, arg10: boolean, arg11: boolean): ShaderSupplier;
+    // private createShader(arg0: string, arg1: Optional<ProgramSource>, arg2: ShaderKey, arg3: Patch): ShaderSupplier;
+    // private createShader(arg0: string, arg1: ShaderKey, arg2: ProgramSource, arg3: ProgramId, arg4: AlphaTest, arg5: VertexFormat, arg6: FogMode, arg7: boolean, arg8: boolean, arg9: boolean, arg10: boolean, arg11: boolean, arg12: Patch): ShaderSupplier;
     // private createShadowComputes(arg0: ComputeSource[], arg1: ProgramSet): ComputeProgram[];
-    // private createShadowShader(arg0: string, arg1: Optional<ProgramSource>, arg2: ShaderKey): ShaderSupplier;
-    // private createShadowShader(arg0: string, arg1: ShaderKey, arg2: ProgramSource, arg3: ProgramId, arg4: AlphaTest, arg5: VertexFormat, arg6: boolean, arg7: boolean, arg8: boolean, arg9: boolean): ShaderSupplier;
+    // private createShadowShader(arg0: string, arg1: Optional<ProgramSource>, arg2: ShaderKey, arg3: Patch): ShaderSupplier;
+    // private createShadowShader(arg0: string, arg1: ShaderKey, arg2: ProgramSource, arg3: ProgramId, arg4: AlphaTest, arg5: VertexFormat, arg6: boolean, arg7: boolean, arg8: boolean, arg9: boolean, arg10: Patch): ShaderSupplier;
     destroy(): void;
     // private destroyShaders(): void;
     finalizeGameRendering(): void;
@@ -182,7 +181,6 @@ export class IrisRenderingPipeline extends Object implements ShaderRenderingPipe
     getParticleRenderingSettings(): ParticleRenderingSettings;
     getPhase(): WorldRenderingPhase;
     getShaderMap(): ShaderMap;
-    getSodiumPrograms(): SodiumPrograms;
     getSpecularSampler(): GlSampler;
     getSunPathRotation(): number;
     getTextureMap(): Map<Tri<string, TextureType, TextureStage>, string>;

@@ -1,3 +1,4 @@
+import type { PooledUnsafeDirectByteBuf$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { PoolChunk } from '../../../io/netty/buffer/PoolChunk.d.ts'
 import type { PoolThreadCache } from '../../../io/netty/buffer/PoolThreadCache.d.ts'
@@ -10,7 +11,9 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { FileChannel } from '../../../java/nio/channels/FileChannel.d.ts'
 import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringByteChannel.d.ts'
 import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
 export class PooledUnsafeDirectByteBuf extends PooledByteBuf<ByteBuffer> {
+    constructor(arg0: ObjectPool$Handle<Object>, arg1: number, arg2: PooledUnsafeDirectByteBuf$1)
     private constructor(arg0: ObjectPool$Handle<PooledUnsafeDirectByteBuf>, arg1: number)
     // private memoryAddress: number;
     _getByte(arg0: number): number;

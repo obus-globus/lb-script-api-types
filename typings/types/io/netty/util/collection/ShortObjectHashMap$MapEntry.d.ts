@@ -7,7 +7,7 @@ export class ShortObjectHashMap$MapEntry extends Object implements Map$Entry<num
     static comparingByValue(): (param0: Object) => boolean;
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    constructor(null_: ShortObjectHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entryIndex: number;
     readonly key: number;
     readonly value: V;

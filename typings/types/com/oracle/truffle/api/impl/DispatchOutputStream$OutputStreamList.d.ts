@@ -1,8 +1,9 @@
+import type { DispatchOutputStream } from '../../../../../com/oracle/truffle/api/impl/DispatchOutputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class DispatchOutputStream$OutputStreamList extends Object {
-    constructor(null_: DispatchOutputStream$OutputStreamList)
+    constructor(null_: DispatchOutputStream)
     // private outs: OutputStream[];
     // private reportedExceptions: Map<OutputStream, string>;
     // private seenException: boolean;

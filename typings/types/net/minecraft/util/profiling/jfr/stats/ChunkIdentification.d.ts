@@ -3,6 +3,7 @@ import type { RecordedEvent } from '../../../../../../jdk/jfr/consumer/RecordedE
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ChunkIdentification extends Record {
     static from(paramevent: RecordedEvent): ChunkIdentification;
+    constructor(level: string, dimension: string, x: number, z: number)
     // private dimension: string;
     // private level: string;
     // private x: number;

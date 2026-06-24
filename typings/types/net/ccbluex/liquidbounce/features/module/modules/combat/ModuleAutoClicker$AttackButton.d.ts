@@ -13,7 +13,7 @@ export class ModuleAutoClicker$AttackButton extends ToggleableValueGroup {
     // private criticalsSelectionMode: ModuleCriticals$CriticalsSelectionMode;
     // private /*not mapped: */ getCriticalsSelectionMode(): ModuleCriticals$CriticalsSelectionMode;
     // private delayOnBroken: boolean;
-    /*not mapped: */ getDelayOnBroken$liquidbounce(): boolean;
+    /*not mapped: */ getDelayOnBroken$net_ccbluex_liquidbounce(): boolean;
     // private delayPostStopUse: number;
     // private /*not mapped: */ getDelayPostStopUse(): number;
     // private objectiveType: ModuleAutoClicker$AttackButton$ObjectiveType;
@@ -21,7 +21,7 @@ export class ModuleAutoClicker$AttackButton extends ToggleableValueGroup {
     // private onItemUse: ModuleAutoClicker$AttackButton$Use;
     // private /*not mapped: */ getOnItemUse(): ModuleAutoClicker$AttackButton$Use;
     // private requiresNoInput: boolean;
-    /*not mapped: */ getRequiresNoInput$liquidbounce(): boolean;
+    /*not mapped: */ getRequiresNoInput$net_ccbluex_liquidbounce(): boolean;
     // private sprintHandler: EventHook<SprintEvent>;
     // private weapon: WeaponType[];
     // private /*not mapped: */ getWeapon(): WeaponType[];

@@ -1,3 +1,4 @@
+import type { AbstractScheduledService$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AbstractScheduledService$Cancellable } from '../../../../../com/google/common/util/concurrent/AbstractScheduledService$Cancellable.d.ts'
 import type { AbstractService } from '../../../../../com/google/common/util/concurrent/AbstractService.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
@@ -11,5 +12,6 @@ export abstract class AbstractScheduledService$Scheduler extends Object {
     static newFixedRateSchedule(paraminitialDelay: Duration, paramperiod: Duration): AbstractScheduledService$Scheduler;
     static newFixedRateSchedule(paraminitialDelay: number, paramperiod: number, paramunit: TimeUnit): AbstractScheduledService$Scheduler;
     private constructor()
+    constructor(arg0: AbstractScheduledService$1)
     schedule(service: AbstractService, executor: ScheduledExecutorService, runnable: () => void): AbstractScheduledService$Cancellable;
 }

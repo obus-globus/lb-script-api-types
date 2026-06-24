@@ -1,7 +1,7 @@
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { ItemPredicate } from '../../../net/minecraft/advancements/criterion/ItemPredicate.d.ts'
+import type { ItemPredicate } from '../../../net/minecraft/advancements/predicates/ItemPredicate.d.ts'
 import type { Player } from '../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { ItemStack } from '../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { ValueInput } from '../../../net/minecraft/world/level/storage/ValueInput.d.ts'

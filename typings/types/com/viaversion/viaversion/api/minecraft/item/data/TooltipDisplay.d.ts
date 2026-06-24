@@ -7,6 +7,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class TooltipDisplay extends Record implements Rewritable {
     static TYPE: Type<TooltipDisplay>;
+    constructor(hideTooltip: boolean, hiddenComponents: (Object | null)[])
     // private hiddenComponents: (Object | null)[];
     // private hideTooltip: boolean;
     equals(arg0: Object | null): boolean;

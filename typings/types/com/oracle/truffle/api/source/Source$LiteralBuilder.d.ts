@@ -6,8 +6,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { ByteSequence } from '../../../../../org/graalvm/polyglot/io/ByteSequence.d.ts'
 export class Source$LiteralBuilder extends Source$SourceBuilder {
-    constructor(null_: Source$LiteralBuilder, source: Source)
-    constructor(null_: Source$LiteralBuilder, language: string, origin: Object, originReadingThrows: boolean)
+    constructor(null_: Source, source: Source)
+    constructor(null_: Source, language: string, origin: Object, originReadingThrows: boolean)
     // private buildThrowsIOException: boolean;
     build(): Source;
     cached(cached: boolean): Source$LiteralBuilder;

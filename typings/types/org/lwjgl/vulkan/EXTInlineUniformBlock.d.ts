@@ -1,0 +1,11 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class EXTInlineUniformBlock extends Object {
+    static VK_DESCRIPTOR_TYPE_INLINE_UNIFORM_BLOCK_EXT: number;
+    static VK_EXT_INLINE_UNIFORM_BLOCK_EXTENSION_NAME: string;
+    static VK_EXT_INLINE_UNIFORM_BLOCK_SPEC_VERSION: number;
+    static VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_INLINE_UNIFORM_BLOCK_CREATE_INFO_EXT: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_FEATURES_EXT: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_INLINE_UNIFORM_BLOCK_PROPERTIES_EXT: number;
+    static VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_INLINE_UNIFORM_BLOCK_EXT: number;
+    private constructor()
+}

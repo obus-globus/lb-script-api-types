@@ -17,6 +17,7 @@ export abstract class AbstractStringWidget extends AbstractWidget {
     // private font: Font;
     extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getFont(): Font;
+    handleStyleClick(style: Style): boolean;
     onClick(event: MouseButtonEvent, doubleClick: boolean): void;
     setComponentClickHandler(clickEventConsumer: (param0: Style) => void): AbstractStringWidget;
     setMessage(message: Component): void;

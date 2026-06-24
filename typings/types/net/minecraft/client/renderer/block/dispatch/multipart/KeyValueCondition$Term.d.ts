@@ -2,6 +2,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class KeyValueCondition$Term extends Record {
     static parse(paramvalue: string): KeyValueCondition$Term;
+    constructor(value: string, negated: boolean)
     // private negated: boolean;
     // private value: string;
     equals(o: Object | null): boolean;

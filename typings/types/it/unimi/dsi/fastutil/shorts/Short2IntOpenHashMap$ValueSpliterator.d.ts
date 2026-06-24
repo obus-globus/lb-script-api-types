@@ -13,8 +13,8 @@ export class Short2IntOpenHashMap$ValueSpliterator extends Short2IntOpenHashMap$
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Short2IntOpenHashMap$ValueSpliterator)
-    constructor(null_: Short2IntOpenHashMap$ValueSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;

@@ -2,6 +2,8 @@ import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft
 import type { Options } from '../../../../../../net/minecraft/client/Options.d.ts'
 import type { TextureFilteringMethod } from '../../../../../../net/minecraft/client/TextureFilteringMethod.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
+import type { StringWidget } from '../../../../../../net/minecraft/client/gui/components/StringWidget.d.ts'
+import type { LinearLayout } from '../../../../../../net/minecraft/client/gui/layouts/LinearLayout.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
@@ -22,10 +24,13 @@ export class VideoSettingsScreen extends OptionsSubScreen {
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(lastScreen: Screen, minecraft: Minecraft, options: Options)
     // private gpuWarnlistManager: GpuWarnlistManager;
+    // private header: LinearLayout;
     // private oldAnisotropyBit: number;
     // private oldMipmaps: number;
     // private oldTextureFiltering: TextureFilteringMethod;
+    // private restartWarning: StringWidget;
     addOptions(): void;
+    addTitle(): void;
     mouseClicked(event: MouseButtonEvent, doubleClick: boolean): boolean;
     mouseScrolled(x: number, y: number, scrollX: number, scrollY: number): boolean;
     onClose(): void;

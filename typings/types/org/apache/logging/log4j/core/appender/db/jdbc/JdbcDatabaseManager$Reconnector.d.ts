@@ -1,3 +1,4 @@
+import type { JdbcDatabaseManager$1 } from '../../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Runnable } from '../../../../../../../../java/lang/Runnable.d.ts'
 import type { Thread } from '../../../../../../../../java/lang/Thread.d.ts'
 import type { Thread$Builder$OfPlatform } from '../../../../../../../../java/lang/Thread$Builder$OfPlatform.d.ts'
@@ -7,6 +8,7 @@ import type { Duration } from '../../../../../../../../java/time/Duration.d.ts'
 import type { CountDownLatch } from '../../../../../../../../java/util/concurrent/CountDownLatch.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../../../java/lang/Throwable.d.ts'
+import type { JdbcDatabaseManager } from '../../../../../../../../org/apache/logging/log4j/core/appender/db/jdbc/JdbcDatabaseManager.d.ts'
 import type { Log4jThread } from '../../../../../../../../org/apache/logging/log4j/core/util/Log4jThread.d.ts'
 export class JdbcDatabaseManager$Reconnector extends Log4jThread {
     static MAX_PRIORITY: number;
@@ -29,7 +31,8 @@ export class JdbcDatabaseManager$Reconnector extends Log4jThread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    private constructor(null_: JdbcDatabaseManager$Reconnector)
+    private constructor(null_: JdbcDatabaseManager)
+    constructor(null_: JdbcDatabaseManager, arg1: JdbcDatabaseManager$1)
     // private latch: CountDownLatch;
     // private shutdown: boolean;
     latch(): void;

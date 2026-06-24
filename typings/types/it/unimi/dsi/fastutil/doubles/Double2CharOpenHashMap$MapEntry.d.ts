@@ -11,8 +11,8 @@ export class Double2CharOpenHashMap$MapEntry extends Object implements Double2Ch
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: string): DoubleCharPair;
-    constructor(null_: Double2CharOpenHashMap$MapEntry)
-    constructor(null_: Double2CharOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     equals(arg0: Object | null): boolean;
     first(): number;

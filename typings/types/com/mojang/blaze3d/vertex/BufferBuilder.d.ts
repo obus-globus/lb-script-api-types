@@ -1,10 +1,10 @@
+import type { PrimitiveTopology } from '../../../../com/mojang/blaze3d/PrimitiveTopology.d.ts'
 import type { ByteBufferBuilder } from '../../../../com/mojang/blaze3d/vertex/ByteBufferBuilder.d.ts'
 import type { MeshData } from '../../../../com/mojang/blaze3d/vertex/MeshData.d.ts'
 import type { PoseStack$Pose } from '../../../../com/mojang/blaze3d/vertex/PoseStack$Pose.d.ts'
 import type { QuadInstance } from '../../../../com/mojang/blaze3d/vertex/QuadInstance.d.ts'
 import type { VertexConsumer } from '../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { VertexFormat } from '../../../../com/mojang/blaze3d/vertex/VertexFormat.d.ts'
-import type { VertexFormat$Mode } from '../../../../com/mojang/blaze3d/vertex/VertexFormat$Mode.d.ts'
 import type { VertexFormatElement } from '../../../../com/mojang/blaze3d/vertex/VertexFormatElement.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { VertexBufferWriter } from '../../../../net/caffeinemc/mods/sodium/api/vertex/buffer/VertexBufferWriter.d.ts'
@@ -21,27 +21,36 @@ export class BufferBuilder extends Object implements VertexConsumer, VertexBuffe
     static copyInto(paramarg0: VertexBufferWriter, paramarg1: MemoryStack, paramarg2: number, paramarg3: number, paramarg4: VertexFormat): void;
     static of(paramarg0: VertexConsumer): VertexBufferWriter;
     static tryOf(paramarg0: VertexConsumer): VertexBufferWriter;
-    constructor(buffer: ByteBufferBuilder, mode: VertexFormat$Mode, format: VertexFormat)
-    buffer: ByteBufferBuilder;
+    constructor(buffer: ByteBufferBuilder, primitiveTopology: PrimitiveTopology, format: VertexFormat)
+    // private blockFormat: boolean;
+    // private buffer: ByteBufferBuilder;
     // private building: boolean;
     // private currentBlock: number;
+    // private currentBlockEmission: number;
     // private currentLocalPosX: number;
     // private currentLocalPosY: number;
     // private currentLocalPosZ: number;
     // private currentRenderType: number;
+    // private elements: VertexFormatElement[];
     // private elementsToFill: number;
+    // private entityFormat: boolean;
+    // private entityIdOffset: number;
+    // private entityOffset: number;
     // private extending: boolean;
-    // private fastFormat: boolean;
     // private format: VertexFormat;
-    // private fullFormat: boolean;
     // private initialElementsToFill: number;
     // private injectNormalAndUV1: boolean;
     // private iris$vertexCount: number;
-    // private mode: VertexFormat$Mode;
+    // private midBlockOffset: number;
+    // private midTexOffset: number;
     // private normal: Vector3f;
-    // private offsetsByElement: number[];
+    // private normalOffset: number;
     // private polygon: BufferBuilderPolygonView;
+    // private positionOffset: number;
+    // private primitiveTopology: PrimitiveTopology;
     // private skipEndVertexOnce: boolean;
+    // private tangentOffset: number;
+    // private uvOffset: number;
     // private vertexOffsets: number[];
     // private vertexPointer: number;
     // private vertexSize: number;
@@ -54,7 +63,7 @@ export class BufferBuilder extends Object implements VertexConsumer, VertexBuffe
     addVertex(position: Vector3fc): VertexConsumer;
     addVertexWith2DPose(pose: Matrix3x2fc, x: number, y: number): VertexConsumer;
     beginBlock(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): void;
-    // private beginElement(element: VertexFormatElement): number;
+    // private beginElement(semanticID: number): number;
     // private beginVertex(): number;
     build(): MeshData;
     buildOrThrow(): MeshData;
@@ -65,6 +74,7 @@ export class BufferBuilder extends Object implements VertexConsumer, VertexBuffe
     // private ensureBuilding(): void;
     // private fillExtendedData(arg0: number): void;
     ignoreMidBlock(arg0: boolean): void;
+    // private iris$vertexAmountForExtendedData(): number;
     overrideBlock(arg0: number): void;
     push(arg0: MemoryStack, arg1: number, arg2: number, arg3: VertexFormat): void;
     putBakedQuad(arg0: PoseStack$Pose, arg1: BakedQuad, arg2: QuadInstance): void;
@@ -84,5 +94,5 @@ export class BufferBuilder extends Object implements VertexConsumer, VertexBuffe
     setUv2(u: number, v: number): VertexConsumer;
     sodium$duplicateVertex(): void;
     // private storeMesh(): MeshData;
-    // private uvShort(u: number, v: number, element: VertexFormatElement): VertexConsumer;
+    // private uvShort(u: number, v: number, semanticID: number): VertexConsumer;
 }

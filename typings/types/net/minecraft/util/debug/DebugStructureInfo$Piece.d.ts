@@ -5,6 +5,7 @@ import type { StreamCodec } from '../../../../net/minecraft/network/codec/Stream
 import type { BoundingBox } from '../../../../net/minecraft/world/level/levelgen/structure/BoundingBox.d.ts'
 export class DebugStructureInfo$Piece extends Record {
     static STREAM_CODEC: StreamCodec<ByteBuf, DebugStructureInfo$Piece>;
+    constructor(boundingBox: BoundingBox, isStart: boolean)
     // private boundingBox: BoundingBox;
     // private isStart: boolean;
     boundingBox(): BoundingBox;

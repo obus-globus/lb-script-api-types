@@ -1,9 +1,10 @@
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
+import type { NativeDatagramPacketArray } from '../../../../io/netty/channel/epoll/NativeDatagramPacketArray.d.ts'
 import type { DatagramPacket } from '../../../../io/netty/channel/socket/DatagramPacket.d.ts'
 import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class NativeDatagramPacketArray$NativeDatagramPacket extends Object {
-    constructor(null_: NativeDatagramPacketArray$NativeDatagramPacket)
+    constructor(null_: NativeDatagramPacketArray)
     // private count: number;
     // private memoryAddress: number;
     // private recipientAddr: number[];

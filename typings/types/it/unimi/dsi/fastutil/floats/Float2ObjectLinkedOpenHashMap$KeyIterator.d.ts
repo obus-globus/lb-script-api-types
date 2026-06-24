@@ -2,8 +2,8 @@ import type { Float2ObjectLinkedOpenHashMap$MapIterator } from '../../../../../i
 import type { FloatConsumer } from '../../../../../it/unimi/dsi/fastutil/floats/FloatConsumer.d.ts'
 import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatListIterator.d.ts'
 export class Float2ObjectLinkedOpenHashMap$KeyIterator extends Float2ObjectLinkedOpenHashMap$MapIterator<Object> implements FloatListIterator {
-    constructor(null_: Float2ObjectLinkedOpenHashMap$KeyIterator)
-    constructor(null_: Float2ObjectLinkedOpenHashMap$KeyIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

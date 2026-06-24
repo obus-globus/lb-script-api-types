@@ -1,8 +1,8 @@
 import type { Byte2LongRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2LongRBTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2LongRBTreeMap$TreeIterator extends Object {
-    constructor(null_: Byte2LongRBTreeMap$TreeIterator)
-    constructor(null_: Byte2LongRBTreeMap$TreeIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private curr: Byte2LongRBTreeMap$Entry;
     // private index: number;
     // private next: Byte2LongRBTreeMap$Entry;

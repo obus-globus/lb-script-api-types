@@ -13,6 +13,7 @@ export class HashedStack$ActualItem extends Record implements HashedStack {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, HashedStack$ActualItem>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, HashedStack>;
     static create(paramitemStack: ItemStack, paramhasher: (param0: Object | null) => Object | null): HashedStack;
+    constructor(item: Holder<Item>, count: number, components: HashedPatchMap)
     // private components: HashedPatchMap;
     // private count: number;
     // private item: Holder<Item>;

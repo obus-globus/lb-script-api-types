@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class BlockItemPacketRewriter1_21$PendingIdChange extends Record {
+    private constructor(id: number, mappedId: number, level: number)
     // private id: number;
     // private level: number;
     // private mappedId: number;

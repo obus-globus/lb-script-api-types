@@ -2,8 +2,8 @@ import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/ob
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectLinkedOpenCustomHashSet$SetIterator extends Object implements ObjectListIterator<K> {
-    constructor(null_: ObjectLinkedOpenCustomHashSet$SetIterator)
-    constructor(null_: ObjectLinkedOpenCustomHashSet$SetIterator)
+    constructor(null_: K[])
+    constructor(null_: K[], arg1: K)
     // private curr: number;
     // private index: number;
     // private next: number;

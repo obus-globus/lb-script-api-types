@@ -26,4 +26,5 @@ export class BuiltInsProtoBuf extends Object {
     static typeAnnotation: GeneratedMessageLite$GeneratedExtension<ProtoBuf$Type, ProtoBuf$Annotation[]>;
     static typeParameterAnnotation: GeneratedMessageLite$GeneratedExtension<ProtoBuf$TypeParameter, ProtoBuf$Annotation[]>;
     static registerAllExtensions(paramarg0: ExtensionRegistryLite): void;
+    private constructor()
 }

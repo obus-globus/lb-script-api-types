@@ -5,6 +5,8 @@ export class GlStateManager$BlendState extends Object {
     dstAlpha: number;
     dstRgb: number;
     mode: GlStateManager$BooleanState;
+    modeAlpha: number;
+    modeRgb: number;
     srcAlpha: number;
     srcRgb: number;
 }

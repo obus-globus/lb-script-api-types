@@ -4,7 +4,7 @@ import type { Source } from '../../../../../com/oracle/truffle/api/source/Source
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SourceFilter$Builder extends Object {
-    private constructor(null_: SourceFilter$Builder)
+    private constructor(null_: SourceFilter)
     // private expressions: SourceSectionFilter$EventFilterExpression[];
     // private includeInternal: boolean;
     build(): SourceFilter;

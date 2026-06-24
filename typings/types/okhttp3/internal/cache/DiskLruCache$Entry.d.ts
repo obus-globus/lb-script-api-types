@@ -1,11 +1,12 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { DiskLruCache } from '../../../okhttp3/internal/cache/DiskLruCache.d.ts'
 import type { DiskLruCache$Editor } from '../../../okhttp3/internal/cache/DiskLruCache$Editor.d.ts'
 import type { DiskLruCache$Snapshot } from '../../../okhttp3/internal/cache/DiskLruCache$Snapshot.d.ts'
 import type { BufferedSink } from '../../../okio/BufferedSink.d.ts'
 import type { Path } from '../../../okio/Path.d.ts'
 import type { Source } from '../../../okio/Source.d.ts'
 export class DiskLruCache$Entry extends Object {
-    constructor(null_: DiskLruCache$Entry, key: string)
+    constructor(null_: DiskLruCache, key: string)
     // private cleanFiles: Path[];
     /*not mapped: */ getCleanFiles$okhttp(): Path[];
     // private currentEditor: DiskLruCache$Editor | null;

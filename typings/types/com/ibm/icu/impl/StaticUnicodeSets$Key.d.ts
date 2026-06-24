@@ -4,6 +4,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class StaticUnicodeSets$Key extends Enum<StaticUnicodeSets$Key> {
     static ALL_SEPARATORS: StaticUnicodeSets$Key;
     static APOSTROPHE_SIGN: StaticUnicodeSets$Key;
+    static APPROXIMATELY_SIGN: StaticUnicodeSets$Key;
     static COMMA: StaticUnicodeSets$Key;
     static DEFAULT_IGNORABLES: StaticUnicodeSets$Key;
     static DIGITS: StaticUnicodeSets$Key;
@@ -30,5 +31,5 @@ export class StaticUnicodeSets$Key extends Enum<StaticUnicodeSets$Key> {
     static valueOf(paramarg0: string): StaticUnicodeSets$Key;
     static values(): (Object | null)[];
     private constructor()
-    name(): "EMPTY" | "DEFAULT_IGNORABLES" | "STRICT_IGNORABLES" | "COMMA" | "PERIOD" | "STRICT_COMMA" | "STRICT_PERIOD" | "APOSTROPHE_SIGN" | "OTHER_GROUPING_SEPARATORS" | "ALL_SEPARATORS" | "STRICT_ALL_SEPARATORS" | "MINUS_SIGN" | "PLUS_SIGN" | "PERCENT_SIGN" | "PERMILLE_SIGN" | "INFINITY_SIGN" | "DOLLAR_SIGN" | "POUND_SIGN" | "RUPEE_SIGN" | "YEN_SIGN" | "WON_SIGN" | "DIGITS" | "DIGITS_OR_ALL_SEPARATORS" | "DIGITS_OR_STRICT_ALL_SEPARATORS";
+    name(): "EMPTY" | "DEFAULT_IGNORABLES" | "STRICT_IGNORABLES" | "COMMA" | "PERIOD" | "STRICT_COMMA" | "STRICT_PERIOD" | "APOSTROPHE_SIGN" | "OTHER_GROUPING_SEPARATORS" | "ALL_SEPARATORS" | "STRICT_ALL_SEPARATORS" | "MINUS_SIGN" | "PLUS_SIGN" | "PERCENT_SIGN" | "PERMILLE_SIGN" | "INFINITY_SIGN" | "APPROXIMATELY_SIGN" | "DOLLAR_SIGN" | "POUND_SIGN" | "RUPEE_SIGN" | "YEN_SIGN" | "WON_SIGN" | "DIGITS" | "DIGITS_OR_ALL_SEPARATORS" | "DIGITS_OR_STRICT_ALL_SEPARATORS";
 }

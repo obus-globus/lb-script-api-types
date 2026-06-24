@@ -1,14 +1,11 @@
+import type { ArchetypeGraph } from '../../../../com/google/common/graph/ArchetypeGraph.d.ts'
 import type { ElementOrder } from '../../../../com/google/common/graph/ElementOrder.d.ts'
 import type { Graph } from '../../../../com/google/common/graph/Graph.d.ts'
-import type { PredecessorsFunction } from '../../../../com/google/common/graph/PredecessorsFunction.d.ts'
-import type { SuccessorsFunction } from '../../../../com/google/common/graph/SuccessorsFunction.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export interface Network<N extends unknown, E extends unknown> extends PredecessorsFunction<N>, SuccessorsFunction<N>, Object{
+export interface Network<N extends unknown, E extends unknown> extends ArchetypeGraph<N>, Object{
     adjacentEdges(edge: E): E[];
-    adjacentNodes(node: N): N[];
     allowsParallelEdges(): boolean;
-    allowsSelfLoops(): boolean;
     asGraph(): Graph<N>;
     degree(node: N): number;
     edgeConnecting(nodeU: N, nodeV: N): Optional<E>;
@@ -25,11 +22,6 @@ export interface Network<N extends unknown, E extends unknown> extends Predecess
     inEdges(node: N): E[];
     incidentEdges(node: N): E[];
     incidentNodes(edge: E): N[];
-    isDirected(): boolean;
-    nodeOrder(): ElementOrder<N>;
-    nodes(): N[];
     outDegree(node: N): number;
     outEdges(node: N): E[];
-    predecessors(node: N): N[];
-    successors(node: N): N[];
 }

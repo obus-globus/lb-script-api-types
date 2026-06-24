@@ -3,8 +3,10 @@ import type { Char2ByteOpenCustomHashMap$MapEntry } from '../../../../../it/unim
 import type { Char2ByteOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/chars/Char2ByteOpenCustomHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2ByteOpenCustomHashMap$EntryIterator extends Char2ByteOpenCustomHashMap$MapIterator<(param0: Char2ByteMap$Entry) => void> implements ObjectIterator<Char2ByteMap$Entry> {
-    private constructor(null_: Char2ByteOpenCustomHashMap$EntryIterator)
+    private constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private entry: Char2ByteOpenCustomHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Char2ByteMap$Entry) => void, arg1: number): void;
     next(): Char2ByteOpenCustomHashMap$MapEntry;

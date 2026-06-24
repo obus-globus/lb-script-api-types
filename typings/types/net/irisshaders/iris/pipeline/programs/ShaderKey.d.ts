@@ -6,6 +6,7 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { AlphaTest } from '../../../../../net/irisshaders/iris/gl/blending/AlphaTest.d.ts'
 import type { FogMode } from '../../../../../net/irisshaders/iris/gl/state/FogMode.d.ts'
 import type { ShaderKey$LightingModel } from '../../../../../net/irisshaders/iris/pipeline/programs/ShaderKey$LightingModel.d.ts'
+import type { Patch } from '../../../../../net/irisshaders/iris/pipeline/transform/Patch.d.ts'
 import type { ProgramId } from '../../../../../net/irisshaders/iris/shaderpack/loading/ProgramId.d.ts'
 export class ShaderKey extends Enum<ShaderKey> {
     static BASIC: ShaderKey;
@@ -37,8 +38,6 @@ export class ShaderKey extends Enum<ShaderKey> {
     static HAND_TRANSLUCENT: ShaderKey;
     static HAND_WATER_BRIGHT: ShaderKey;
     static HAND_WATER_DIFFUSE: ShaderKey;
-    static IE_COMPAT: ShaderKey;
-    static IE_COMPAT_SHADOW: ShaderKey;
     static LEASH: ShaderKey;
     static LIGHTNING: ShaderKey;
     static LINES: ShaderKey;
@@ -57,6 +56,9 @@ export class ShaderKey extends Enum<ShaderKey> {
     static SHADOW_LIGHTNING: ShaderKey;
     static SHADOW_LINES: ShaderKey;
     static SHADOW_PARTICLES: ShaderKey;
+    static SHADOW_SODIUM_TERRAIN_CUTOUT: ShaderKey;
+    static SHADOW_SODIUM_TERRAIN_SOLID: ShaderKey;
+    static SHADOW_SODIUM_TERRAIN_TRANSLUCENT: ShaderKey;
     static SHADOW_TERRAIN_CUTOUT: ShaderKey;
     static SHADOW_TEX: ShaderKey;
     static SHADOW_TEXT: ShaderKey;
@@ -68,6 +70,9 @@ export class ShaderKey extends Enum<ShaderKey> {
     static SKY_BASIC_COLOR: ShaderKey;
     static SKY_TEXTURED: ShaderKey;
     static SKY_TEXTURED_COLOR: ShaderKey;
+    static SODIUM_TERRAIN_CUTOUT: ShaderKey;
+    static SODIUM_TERRAIN_SOLID: ShaderKey;
+    static SODIUM_TERRAIN_TRANSLUCENT: ShaderKey;
     static SPS: ShaderKey;
     static TERRAIN_CUTOUT: ShaderKey;
     static TERRAIN_SOLID: ShaderKey;
@@ -84,10 +89,11 @@ export class ShaderKey extends Enum<ShaderKey> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ShaderKey;
     static values(): (Object | null)[];
-    private constructor(arg2: ProgramId, arg3: AlphaTest, arg4: VertexFormat, arg5: FogMode, arg6: ShaderKey$LightingModel)
+    private constructor(arg2: ProgramId, arg3: AlphaTest, arg4: VertexFormat, arg5: FogMode, arg6: ShaderKey$LightingModel, arg7: Patch)
     readonly alphaTest: AlphaTest;
     readonly fogMode: FogMode;
     // private lightingModel: ShaderKey$LightingModel;
+    patch: Patch;
     readonly program: ProgramId;
     readonly vertexFormat: VertexFormat;
     getAlphaTest(): AlphaTest;
@@ -101,5 +107,5 @@ export class ShaderKey extends Enum<ShaderKey> {
     isShadow(): boolean;
     isText(): boolean;
     shouldIgnoreLightmap(): boolean;
-    name(): "BASIC" | "BASIC_COLOR" | "TEXTURED" | "TEXTURED_COLOR" | "SPS" | "SKY_BASIC" | "SKY_BASIC_COLOR" | "SKY_TEXTURED" | "SKY_TEXTURED_COLOR" | "CLOUDS" | "CLOUDS_SODIUM" | "TERRAIN_SOLID" | "TERRAIN_CUTOUT" | "TERRAIN_TRANSLUCENT" | "MOVING_BLOCK" | "ENTITIES_ALPHA" | "ENTITIES_SOLID" | "ENTITIES_SOLID_DIFFUSE" | "ENTITIES_SOLID_BRIGHT" | "ENTITIES_CUTOUT" | "ENTITIES_CUTOUT_DIFFUSE" | "ENTITIES_TRANSLUCENT" | "ENTITIES_EYES" | "ENTITIES_EYES_TRANS" | "HAND_CUTOUT" | "HAND_CUTOUT_BRIGHT" | "HAND_CUTOUT_DIFFUSE" | "HAND_TEXT" | "HAND_TEXT_TRANSLUCENT" | "HAND_TEXT_INTENSITY" | "HAND_TRANSLUCENT" | "HAND_WATER_BRIGHT" | "HAND_WATER_DIFFUSE" | "LIGHTNING" | "LEASH" | "TEXT_BG" | "PARTICLES" | "PARTICLES_TRANS" | "WEATHER" | "CRUMBLING" | "TEXT" | "TEXT_INTENSITY" | "TEXT_BE" | "TEXT_INTENSITY_BE" | "BLOCK_ENTITY" | "BLOCK_ENTITY_BRIGHT" | "BLOCK_ENTITY_DIFFUSE" | "BE_TRANSLUCENT" | "BEACON" | "GLINT" | "LINES" | "IE_COMPAT" | "MEKANISM_FLAME" | "SHADOW_TERRAIN_CUTOUT" | "SHADOW_TRANSLUCENT" | "SHADOW_ENTITIES_CUTOUT" | "SHADOW_BLOCK" | "SHADOW_BEACON_BEAM" | "SHADOW_BASIC" | "SHADOW_BASIC_COLOR" | "SHADOW_TEX" | "SHADOW_TEX_COLOR" | "SHADOW_CLOUDS" | "SHADOW_LINES" | "SHADOW_LEASH" | "SHADOW_LIGHTNING" | "SHADOW_PARTICLES" | "SHADOW_TEXT" | "SHADOW_TEXT_BG" | "SHADOW_TEXT_INTENSITY" | "IE_COMPAT_SHADOW" | "MEKANISM_FLAME_SHADOW";
+    name(): "BASIC" | "BASIC_COLOR" | "TEXTURED" | "TEXTURED_COLOR" | "SPS" | "SKY_BASIC" | "SKY_BASIC_COLOR" | "SKY_TEXTURED" | "SKY_TEXTURED_COLOR" | "CLOUDS" | "CLOUDS_SODIUM" | "TERRAIN_SOLID" | "TERRAIN_CUTOUT" | "TERRAIN_TRANSLUCENT" | "MOVING_BLOCK" | "ENTITIES_ALPHA" | "ENTITIES_SOLID" | "ENTITIES_SOLID_DIFFUSE" | "ENTITIES_SOLID_BRIGHT" | "ENTITIES_CUTOUT" | "ENTITIES_CUTOUT_DIFFUSE" | "ENTITIES_TRANSLUCENT" | "ENTITIES_EYES" | "ENTITIES_EYES_TRANS" | "HAND_CUTOUT" | "HAND_CUTOUT_BRIGHT" | "HAND_CUTOUT_DIFFUSE" | "HAND_TEXT" | "HAND_TEXT_TRANSLUCENT" | "HAND_TEXT_INTENSITY" | "HAND_TRANSLUCENT" | "HAND_WATER_BRIGHT" | "HAND_WATER_DIFFUSE" | "LIGHTNING" | "LEASH" | "TEXT_BG" | "PARTICLES" | "PARTICLES_TRANS" | "WEATHER" | "CRUMBLING" | "TEXT" | "TEXT_INTENSITY" | "TEXT_BE" | "TEXT_INTENSITY_BE" | "BLOCK_ENTITY" | "BLOCK_ENTITY_BRIGHT" | "BLOCK_ENTITY_DIFFUSE" | "BE_TRANSLUCENT" | "BEACON" | "GLINT" | "LINES" | "MEKANISM_FLAME" | "SODIUM_TERRAIN_SOLID" | "SODIUM_TERRAIN_CUTOUT" | "SODIUM_TERRAIN_TRANSLUCENT" | "SHADOW_SODIUM_TERRAIN_SOLID" | "SHADOW_SODIUM_TERRAIN_CUTOUT" | "SHADOW_SODIUM_TERRAIN_TRANSLUCENT" | "SHADOW_TERRAIN_CUTOUT" | "SHADOW_TRANSLUCENT" | "SHADOW_ENTITIES_CUTOUT" | "SHADOW_BLOCK" | "SHADOW_BEACON_BEAM" | "SHADOW_BASIC" | "SHADOW_BASIC_COLOR" | "SHADOW_TEX" | "SHADOW_TEX_COLOR" | "SHADOW_CLOUDS" | "SHADOW_LINES" | "SHADOW_LEASH" | "SHADOW_LIGHTNING" | "SHADOW_PARTICLES" | "SHADOW_TEXT" | "SHADOW_TEXT_BG" | "SHADOW_TEXT_INTENSITY" | "MEKANISM_FLAME_SHADOW";
 }

@@ -9,6 +9,7 @@ export class SimpleRemapper extends Remapper {
     // private mapping: { [key: string]: string };
     map(arg0: string): string;
     mapAnnotationAttributeName(arg0: string, arg1: string): string;
+    mapBasicInvokeDynamicMethodName(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): string;
     mapFieldName(arg0: string, arg1: string, arg2: string): string;
     mapInvokeDynamicMethodName(arg0: string, arg1: string): string;
     mapInvokeDynamicMethodName(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): string;

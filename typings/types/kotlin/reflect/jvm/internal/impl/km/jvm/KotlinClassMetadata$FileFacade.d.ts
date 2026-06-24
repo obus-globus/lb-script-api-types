@@ -8,6 +8,7 @@ export class KotlinClassMetadata$FileFacade extends KotlinClassMetadata {
     constructor(arg0: Metadata, arg1: boolean)
     constructor(arg0: KmPackage, arg1: JvmMetadataVersion, arg2: number)
     // private flags: number;
-    // private kmPackage: KmPackage;
+    readonly kmPackage: KmPackage;
     // private version: JvmMetadataVersion;
+    getKmPackage(): KmPackage;
 }

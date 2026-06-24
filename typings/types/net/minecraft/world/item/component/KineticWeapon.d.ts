@@ -17,6 +17,7 @@ export class KineticWeapon extends Record {
     static HIT_FEEDBACK_TICKS: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, KineticWeapon>;
     static getMotion(paramlivingEntity: Entity): Vec3;
+    constructor(contactCooldownTicks: number, delayTicks: number, dismountConditions: Optional<KineticWeapon$Condition>, knockbackConditions: Optional<KineticWeapon$Condition>, damageConditions: Optional<KineticWeapon$Condition>, forwardMovement: number, damageMultiplier: number, sound: Optional<Holder<SoundEvent>>, hitSound: Optional<Holder<SoundEvent>>)
     // private contactCooldownTicks: number;
     // private damageConditions: Optional<KineticWeapon$Condition>;
     // private damageMultiplier: number;

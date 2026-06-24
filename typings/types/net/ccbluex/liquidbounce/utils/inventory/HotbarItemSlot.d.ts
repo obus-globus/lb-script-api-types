@@ -19,7 +19,7 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
      * Distance order:
      * current hand -> offhand -> other slots
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L249 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:249}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L249 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:249}
      */
     static PREFER_NEARBY: (param0: Object) => boolean;
     static PREFER_NEARBY: (param0: Object) => boolean;
@@ -36,7 +36,7 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
     /**
      * Entries corresponding to vanilla selectable hotbar slots `0..8`, excluding offhand.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L237 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:237}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L237 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:237}
      */
     static getMainHandSlots(): HotbarItemSlot[];
     static of(paramarg0: number): HotbarItemSlot;
@@ -51,7 +51,7 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
      * Main-hand hotbar entries use `0..8`. Offhand has no such selected index in vanilla,
      * so {@link OFFHAND} uses `null`.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L166 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:166}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L166 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:166}
      */
     readonly hotbarIndex: number | null;
     /**
@@ -59,19 +59,19 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
      *
      * Main-hand hotbar stays `0..8`, while offhand maps to {@link Inventory.SLOT_OFFHAND} (`40`).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:185}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:185}
      */
     readonly inventorySlot: number;
     /**
      * Whether this entry represents vanilla offhand instead of one of the nine selectable hotbar slots.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L196 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:196}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L196 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:196}
      */
     /*not mapped: */ isOffHand(): boolean;
     /**
      * If the player is holding this slot (main hand stack, or offhand stack)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L221 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:221}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L221 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:221}
      */
     /*not mapped: */ isSelected(): boolean;
     readonly itemStack: ItemStack;
@@ -80,7 +80,7 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
     /**
      * Vanilla {@link InteractionHand} corresponding to this slot when performing item use / interaction logic.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L205 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:205}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L205 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:205}
      */
     readonly useHand: InteractionHand;
     equals(other: Object | null): boolean;

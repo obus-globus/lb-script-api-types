@@ -1,3 +1,4 @@
+import type { ManagedIdentityApplication$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AbstractApplicationBase } from '../../../../com/microsoft/aad/msal4j/AbstractApplicationBase.d.ts'
 import type { IAuthenticationResult } from '../../../../com/microsoft/aad/msal4j/IAuthenticationResult.d.ts'
 import type { IManagedIdentityApplication } from '../../../../com/microsoft/aad/msal4j/IManagedIdentityApplication.d.ts'
@@ -13,6 +14,7 @@ export class ManagedIdentityApplication extends AbstractApplicationBase implemen
     static getManagedIdentitySource(): ManagedIdentitySourceType;
     static getSharedTokenCache(): TokenCache;
     private constructor(arg0: ManagedIdentityApplication$Builder)
+    constructor(arg0: ManagedIdentityApplication$Builder, arg1: ManagedIdentityApplication$1)
     readonly clientCapabilities: string[];
     readonly managedIdentityId: ManagedIdentityId;
     // private managedIdentitySource: ManagedIdentitySourceType;

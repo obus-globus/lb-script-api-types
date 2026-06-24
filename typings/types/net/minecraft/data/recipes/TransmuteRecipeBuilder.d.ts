@@ -1,6 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Criterion } from '../../../../net/minecraft/advancements/Criterion.d.ts'
-import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/criterion/MinMaxBounds$Ints.d.ts'
+import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/predicates/MinMaxBounds$Ints.d.ts'
+import type { Criterion } from '../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
 import type { RecipeBuilder } from '../../../../net/minecraft/data/recipes/RecipeBuilder.d.ts'
 import type { RecipeCategory } from '../../../../net/minecraft/data/recipes/RecipeCategory.d.ts'
 import type { RecipeOutput } from '../../../../net/minecraft/data/recipes/RecipeOutput.d.ts'

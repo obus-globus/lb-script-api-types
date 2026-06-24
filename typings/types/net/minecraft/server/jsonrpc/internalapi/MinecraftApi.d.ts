@@ -2,7 +2,6 @@ import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { DedicatedServer } from '../../../../../net/minecraft/server/dedicated/DedicatedServer.d.ts'
 import type { MinecraftAllowListService } from '../../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftAllowListService.d.ts'
 import type { MinecraftBanListService } from '../../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftBanListService.d.ts'
 import type { MinecraftExecutorService } from '../../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftExecutorService.d.ts'
@@ -13,7 +12,7 @@ import type { MinecraftServerSettingsService } from '../../../../../net/minecraf
 import type { MinecraftServerStateService } from '../../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftServerStateService.d.ts'
 import type { NotificationManager } from '../../../../../net/minecraft/server/notifications/NotificationManager.d.ts'
 export class MinecraftApi extends Object {
-    static of(paramserver: DedicatedServer): MinecraftApi;
+    static of(paramnotificationManager: NotificationManager): MinecraftApi;
     constructor(notificationManager: NotificationManager, allowListService: MinecraftAllowListService, banListService: MinecraftBanListService, minecraftPlayerListService: MinecraftPlayerListService, gameRuleService: MinecraftGameRuleService, minecraftOperatorListService: MinecraftOperatorListService, minecraftServerSettingsService: MinecraftServerSettingsService, minecraftServerStateService: MinecraftServerStateService, executorService: MinecraftExecutorService)
     // private allowListService: MinecraftAllowListService;
     // private banListService: MinecraftBanListService;

@@ -9,7 +9,7 @@ export interface DensityFunctions$BeardifierOrMarker extends Object, DensityFunc
     codec(): KeyDispatchDataCodec<DensityFunction>;
     compute(context: DensityFunction$FunctionContext): number;
     fillArray(output: number[], contextProvider: DensityFunction$ContextProvider): void;
-    mapAll(visitor: DensityFunction$Visitor): DensityFunction;
+    mapChildren(visitor: DensityFunction$Visitor): DensityFunction;
     maxValue(): number;
     minValue(): number;
 }

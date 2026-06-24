@@ -100,6 +100,7 @@ export class IslamicCalendar extends Calendar {
     // private cType: IslamicCalendar$CalculationType;
     readonly civil: boolean;
     getCalculationType(): IslamicCalendar$CalculationType;
+    getRelatedYear(): number;
     getType(): string;
     handleComputeFields(arg0: number): void;
     handleComputeMonthStart(arg0: number, arg1: number, arg2: boolean): number;
@@ -113,5 +114,6 @@ export class IslamicCalendar extends Calendar {
     // private setCalcTypeForLocale(arg0: ULocale): void;
     setCalculationType(arg0: IslamicCalendar$CalculationType): void;
     setCivil(arg0: boolean): void;
+    setRelatedYear(arg0: number): void;
     // private yearStart(arg0: number): number;
 }

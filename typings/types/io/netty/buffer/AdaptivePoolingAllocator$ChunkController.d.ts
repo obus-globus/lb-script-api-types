@@ -3,6 +3,5 @@ import type { AdaptivePoolingAllocator$Magazine } from '../../../io/netty/buffer
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface AdaptivePoolingAllocator$ChunkController extends Object{
     computeBufferCapacity(arg0: number, arg1: number, arg2: boolean): number;
-    initializeSharedStateIn(arg0: AdaptivePoolingAllocator$ChunkController): void;
     newChunkAllocation(arg0: number, arg1: AdaptivePoolingAllocator$Magazine): AdaptivePoolingAllocator$Chunk;
 }

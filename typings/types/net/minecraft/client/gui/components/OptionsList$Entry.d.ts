@@ -12,6 +12,7 @@ import type { OptionsSubScreen } from '../../../../../net/minecraft/client/gui/s
 export class OptionsList$Entry extends OptionsList$AbstractEntry {
     static CONTENT_PADDING: number;
     static big(paramoptions: Options, paramoptionInstance: OptionInstance<Object>, paramscreen: Screen): OptionsList$Entry;
+    static big(paramwidget: AbstractWidget, paramscreen: Screen): OptionsList$Entry;
     static small(paramoptions: Options, paramoptionA: OptionInstance<Object>, paramoptionB: OptionInstance<Object>, paramscreen: OptionsSubScreen): OptionsList$Entry;
     static small(paramleftWidget: AbstractWidget, paramleftWidgetOptionInstance: OptionInstance<Object>, paramrightWidget: AbstractWidget, paramscreen: Screen): OptionsList$Entry;
     static small(paramleftWidget: AbstractWidget, paramrightWidget: AbstractWidget, paramscreen: Screen): OptionsList$Entry;

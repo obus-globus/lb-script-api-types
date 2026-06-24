@@ -1,0 +1,10 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class QCOMFragmentDensityMapOffset extends Object {
+    static VK_IMAGE_CREATE_FRAGMENT_DENSITY_MAP_OFFSET_BIT_QCOM: number;
+    static VK_QCOM_FRAGMENT_DENSITY_MAP_OFFSET_EXTENSION_NAME: string;
+    static VK_QCOM_FRAGMENT_DENSITY_MAP_OFFSET_SPEC_VERSION: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_FEATURES_QCOM: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_FRAGMENT_DENSITY_MAP_OFFSET_PROPERTIES_QCOM: number;
+    static VK_STRUCTURE_TYPE_SUBPASS_FRAGMENT_DENSITY_MAP_OFFSET_END_INFO_QCOM: number;
+    private constructor()
+}

@@ -15,17 +15,18 @@ import type { ComparatorMode } from '../../../../../../../net/minecraft/world/le
 import type { CreakingHeartState } from '../../../../../../../net/minecraft/world/level/block/state/properties/CreakingHeartState.d.ts'
 import type { DoorHingeSide } from '../../../../../../../net/minecraft/world/level/block/state/properties/DoorHingeSide.d.ts'
 import type { DoubleBlockHalf } from '../../../../../../../net/minecraft/world/level/block/state/properties/DoubleBlockHalf.d.ts'
-import type { DripstoneThickness } from '../../../../../../../net/minecraft/world/level/block/state/properties/DripstoneThickness.d.ts'
 import type { EnumProperty } from '../../../../../../../net/minecraft/world/level/block/state/properties/EnumProperty.d.ts'
 import type { Half } from '../../../../../../../net/minecraft/world/level/block/state/properties/Half.d.ts'
 import type { IntegerProperty } from '../../../../../../../net/minecraft/world/level/block/state/properties/IntegerProperty.d.ts'
 import type { NoteBlockInstrument } from '../../../../../../../net/minecraft/world/level/block/state/properties/NoteBlockInstrument.d.ts'
 import type { PistonType } from '../../../../../../../net/minecraft/world/level/block/state/properties/PistonType.d.ts'
+import type { PotentSulfurState } from '../../../../../../../net/minecraft/world/level/block/state/properties/PotentSulfurState.d.ts'
 import type { RailShape } from '../../../../../../../net/minecraft/world/level/block/state/properties/RailShape.d.ts'
 import type { RedstoneSide } from '../../../../../../../net/minecraft/world/level/block/state/properties/RedstoneSide.d.ts'
 import type { SculkSensorPhase } from '../../../../../../../net/minecraft/world/level/block/state/properties/SculkSensorPhase.d.ts'
 import type { SideChainPart } from '../../../../../../../net/minecraft/world/level/block/state/properties/SideChainPart.d.ts'
 import type { SlabType } from '../../../../../../../net/minecraft/world/level/block/state/properties/SlabType.d.ts'
+import type { SpeleothemThickness } from '../../../../../../../net/minecraft/world/level/block/state/properties/SpeleothemThickness.d.ts'
 import type { StairsShape } from '../../../../../../../net/minecraft/world/level/block/state/properties/StairsShape.d.ts'
 import type { StructureMode } from '../../../../../../../net/minecraft/world/level/block/state/properties/StructureMode.d.ts'
 import type { TestBlockMode } from '../../../../../../../net/minecraft/world/level/block/state/properties/TestBlockMode.d.ts'
@@ -66,7 +67,6 @@ export class BlockStateProperties extends Object {
     static DOWN: BooleanProperty;
     static DRAG: BooleanProperty;
     static DRIED_GHAST_HYDRATION_LEVELS: IntegerProperty;
-    static DRIPSTONE_THICKNESS: EnumProperty<DripstoneThickness>;
     static DUSTED: IntegerProperty;
     static EAST: BooleanProperty;
     static EAST_REDSTONE: EnumProperty<RedstoneSide>;
@@ -131,6 +131,7 @@ export class BlockStateProperties extends Object {
     static PERSISTENT: BooleanProperty;
     static PICKLES: IntegerProperty;
     static PISTON_TYPE: EnumProperty<PistonType>;
+    static POTENT_SULFUR_STATE: EnumProperty<PotentSulfurState>;
     static POWER: IntegerProperty;
     static POWERED: BooleanProperty;
     static RAIL_SHAPE: EnumProperty<RailShape>;
@@ -154,6 +155,7 @@ export class BlockStateProperties extends Object {
     static SOUTH: BooleanProperty;
     static SOUTH_REDSTONE: EnumProperty<RedstoneSide>;
     static SOUTH_WALL: EnumProperty<WallSide>;
+    static SPELEOTHEM_THICKNESS: EnumProperty<SpeleothemThickness>;
     static STABILITY_DISTANCE: IntegerProperty;
     static STABILITY_MAX_DISTANCE: number;
     static STAGE: IntegerProperty;

@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Climate$TargetPoint extends Record {
+    constructor(temperature: number, humidity: number, continentalness: number, erosion: number, depth: number, weirdness: number)
     // private continentalness: number;
     // private depth: number;
     // private erosion: number;

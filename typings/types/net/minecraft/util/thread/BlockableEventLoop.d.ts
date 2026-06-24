@@ -30,7 +30,6 @@ export abstract class BlockableEventLoop<R extends Runnable> extends Object impl
     executeIfPossible(command: () => void): void;
     getPendingTasksCount(): number;
     getRunningThread(): Thread;
-    hasDelayedCrash(): boolean;
     isSameThread(): boolean;
     managedBlock(condition: () => boolean): void;
     name(): string;

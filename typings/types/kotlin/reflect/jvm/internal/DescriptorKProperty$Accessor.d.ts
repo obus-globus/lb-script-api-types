@@ -8,8 +8,8 @@ import type { Caller } from '../../../../kotlin/reflect/jvm/internal/calls/Calle
 import type { PropertyAccessorDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyAccessorDescriptor.d.ts'
 export abstract class DescriptorKProperty$Accessor<PropertyType extends unknown, ReturnType extends unknown> extends DescriptorKCallable<ReturnType> implements KFunction<ReturnType>, KProperty$Accessor<PropertyType> {
     constructor()
+    readonly callerWithDefaults: Caller<any> | null;
     readonly container: KDeclarationContainerImpl;
-    readonly defaultCaller: Caller<any> | null;
     readonly descriptor: PropertyAccessorDescriptor;
     /*not mapped: */ isExternal(): boolean;
     /*not mapped: */ isInfix(): boolean;

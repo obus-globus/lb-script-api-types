@@ -8,11 +8,13 @@ export class FlowControlHandler extends ChannelDuplexHandler {
     // private config: ChannelConfig;
     // private queue: (Object | null)[];
     // private releaseMessages: boolean;
-    // private shouldConsume: boolean;
+    // private unsatisfiedReads: number;
     channelInactive(arg0: ChannelHandlerContext): void;
     channelRead(arg0: ChannelHandlerContext, arg1: Object): void;
     channelReadComplete(arg0: ChannelHandlerContext): void;
     // private dequeue(arg0: ChannelHandlerContext, arg1: number): number;
+    // private dequeueAll(arg0: ChannelHandlerContext): number;
+    // private dequeueOne(arg0: ChannelHandlerContext): boolean;
     // private destroy(): void;
     handlerAdded(arg0: ChannelHandlerContext): void;
     handlerRemoved(arg0: ChannelHandlerContext): void;

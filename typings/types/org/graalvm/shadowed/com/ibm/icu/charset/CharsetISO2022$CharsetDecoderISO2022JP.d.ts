@@ -4,8 +4,9 @@ import type { IntBuffer } from '../../../../../../../java/nio/IntBuffer.d.ts'
 import type { CoderResult } from '../../../../../../../java/nio/charset/CoderResult.d.ts'
 import type { CharsetDecoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetDecoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetISO2022 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetISO2022.d.ts'
 export class CharsetISO2022$CharsetDecoderISO2022JP extends CharsetDecoderICU {
-    constructor(null_: CharsetISO2022$CharsetDecoderISO2022JP, cs: CharsetICU)
+    constructor(null_: CharsetISO2022, cs: CharsetICU)
     // private _2022ToSJIS(c1: string, c2: string, bytes: number[]): void;
     decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;

@@ -250,6 +250,7 @@ export class CodeSizeEvaluator extends MethodVisitor implements Opcodes {
     static V24: number;
     static V25: number;
     static V26: number;
+    static V27: number;
     static V9: number;
     static V_PREVIEW: number;
     constructor(arg0: number, arg1: MethodVisitor)

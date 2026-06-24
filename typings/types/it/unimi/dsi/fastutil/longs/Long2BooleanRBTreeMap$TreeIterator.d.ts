@@ -1,8 +1,8 @@
 import type { Long2BooleanRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2BooleanRBTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2BooleanRBTreeMap$TreeIterator extends Object {
-    constructor(null_: Long2BooleanRBTreeMap$TreeIterator)
-    constructor(null_: Long2BooleanRBTreeMap$TreeIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private curr: Long2BooleanRBTreeMap$Entry;
     // private index: number;
     // private next: Long2BooleanRBTreeMap$Entry;

@@ -4,6 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ClientItem$Properties extends Record {
     static DEFAULT: ClientItem$Properties;
     static MAP_CODEC: MapCodec<ClientItem$Properties>;
+    constructor(handAnimationOnSwap: boolean, oversizedInGui: boolean, swapAnimationScale: number)
     // private handAnimationOnSwap: boolean;
     // private oversizedInGui: boolean;
     // private swapAnimationScale: number;

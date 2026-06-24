@@ -35,6 +35,7 @@ export class HeaderAndFooterLayout extends Object implements Layout {
     getWidth(): number;
     getX(): number;
     getY(): number;
+    removeChildren(): void;
     setFooterHeight(footerHeight: number): void;
     setHeaderHeight(headerHeight: number): void;
     setX(x: number): void;

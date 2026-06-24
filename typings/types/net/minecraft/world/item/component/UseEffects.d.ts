@@ -7,6 +7,7 @@ export class UseEffects extends Record {
     static CODEC: Codec<UseEffects>;
     static DEFAULT: UseEffects;
     static STREAM_CODEC: StreamCodec<ByteBuf, UseEffects>;
+    constructor(canSprint: boolean, interactVibrations: boolean, speedMultiplier: number)
     // private canSprint: boolean;
     // private interactVibrations: boolean;
     // private speedMultiplier: number;

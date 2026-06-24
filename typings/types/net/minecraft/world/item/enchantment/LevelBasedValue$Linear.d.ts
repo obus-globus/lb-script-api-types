@@ -14,6 +14,7 @@ export class LevelBasedValue$Linear extends Record implements LevelBasedValue {
     static lookup(paramvalues: number[], paramfallback: LevelBasedValue): LevelBasedValue$Lookup;
     static perLevel(paramperLevel: number): LevelBasedValue$Linear;
     static perLevel(parambase: number, paramperLevelAboveFirst: number): LevelBasedValue$Linear;
+    constructor(base: number, perLevelAboveFirst: number)
     // private base: number;
     // private perLevelAboveFirst: number;
     base(): number;

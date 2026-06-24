@@ -52,7 +52,7 @@ export abstract class PlayerList extends Object {
     readonly ops: ServerOpList;
     // private playerIo: PlayerDataStorage;
     readonly players: ServerPlayer[];
-    // private playersByUUID: Map<UUID, ServerPlayer>;
+    readonly playersByUUID: Map<UUID, ServerPlayer>;
     // private registries: LayeredRegistryAccess<RegistryLayer>;
     // private sendAllPlayerInfoIn: number;
     readonly server: MinecraftServer;
@@ -88,6 +88,7 @@ export abstract class PlayerList extends Object {
     getPlayerNamesArray(): string[];
     getPlayerStats(player: Player): ServerStatsCounter;
     getPlayers(): ServerPlayer[];
+    getPlayersByUUID(): Map<UUID, ServerPlayer>;
     getPlayersWithAddress(ip: string): ServerPlayer[];
     getServer(): MinecraftServer;
     getSimulationDistance(): number;

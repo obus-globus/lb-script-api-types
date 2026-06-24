@@ -7,6 +7,7 @@ import type { AttributeModifier } from '../../../../../../net/minecraft/world/en
 export class AttributeInstance$Packed extends Record {
     static CODEC: Codec<AttributeInstance$Packed>;
     static LIST_CODEC: Codec<AttributeInstance$Packed[]>;
+    constructor(attribute: Holder<Attribute>, baseValue: number, modifiers: AttributeModifier[])
     // private attribute: Holder<Attribute>;
     // private baseValue: number;
     // private modifiers: AttributeModifier[];

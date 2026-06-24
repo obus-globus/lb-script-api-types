@@ -5,7 +5,8 @@ import type { Reference2ByteOpenCustomHashMap$MapIterator } from '../../../../..
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2ByteOpenCustomHashMap$FastEntryIterator extends Reference2ByteOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Reference2ByteMap$Entry<K>> {
-    private constructor(null_: Reference2ByteOpenCustomHashMap$FastEntryIterator)
+    private constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private entry: Reference2ByteOpenCustomHashMap$MapEntry;
     acceptOnIndex<K extends unknown>(arg0: (param0: Reference2ByteMap$Entry<K>) => void, arg1: number): void;
     next<K extends unknown>(): Reference2ByteOpenCustomHashMap$MapEntry;

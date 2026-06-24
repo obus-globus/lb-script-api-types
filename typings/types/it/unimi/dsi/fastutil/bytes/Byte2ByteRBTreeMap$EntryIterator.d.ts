@@ -2,8 +2,8 @@ import type { Byte2ByteMap$Entry } from '../../../../../it/unimi/dsi/fastutil/by
 import type { Byte2ByteRBTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2ByteRBTreeMap$TreeIterator.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 export class Byte2ByteRBTreeMap$EntryIterator extends Byte2ByteRBTreeMap$TreeIterator implements ObjectListIterator<Byte2ByteMap$Entry> {
-    constructor(null_: Byte2ByteRBTreeMap$EntryIterator)
-    constructor(null_: Byte2ByteRBTreeMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add(arg0: Byte2ByteMap$Entry): void;
     next(): Byte2ByteMap$Entry;
     previous(): Byte2ByteMap$Entry;

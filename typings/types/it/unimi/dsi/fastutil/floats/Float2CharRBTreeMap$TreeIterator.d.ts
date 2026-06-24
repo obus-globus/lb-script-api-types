@@ -1,8 +1,8 @@
 import type { Float2CharRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/floats/Float2CharRBTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2CharRBTreeMap$TreeIterator extends Object {
-    constructor(null_: Float2CharRBTreeMap$TreeIterator)
-    constructor(null_: Float2CharRBTreeMap$TreeIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private curr: Float2CharRBTreeMap$Entry;
     // private index: number;
     // private next: Float2CharRBTreeMap$Entry;

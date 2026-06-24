@@ -7,11 +7,12 @@ import type { JsonRpcLogger } from '../../../../../net/minecraft/server/jsonrpc/
 import type { MinecraftPlayerListService } from '../../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftPlayerListService.d.ts'
 import type { ClientInfo } from '../../../../../net/minecraft/server/jsonrpc/methods/ClientInfo.d.ts'
 import type { ServerPlayer } from '../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
+import type { NotificationManager } from '../../../../../net/minecraft/server/notifications/NotificationManager.d.ts'
 import type { NameAndId } from '../../../../../net/minecraft/server/players/NameAndId.d.ts'
 export class MinecraftPlayerListServiceImpl extends Object implements MinecraftPlayerListService {
-    constructor(server: DedicatedServer, jsonRpcLogger: JsonRpcLogger)
+    constructor(notificationManager: NotificationManager, jsonRpcLogger: JsonRpcLogger)
     // private jsonRpcLogger: JsonRpcLogger;
-    // private server: DedicatedServer;
+    // private notificationManager: NotificationManager;
     fetchUserById(id: UUID): Optional<NameAndId>;
     fetchUserByName(name: string): Optional<NameAndId>;
     getCachedUserById(id: UUID): Optional<NameAndId>;
@@ -22,4 +23,5 @@ export class MinecraftPlayerListServiceImpl extends Object implements MinecraftP
     getPlayersWithAddress(ip: string): ServerPlayer[];
     getUser(id: Optional<UUID>, name: Optional<string>): CompletableFuture<Optional<NameAndId>>;
     remove(serverPlayer: ServerPlayer, clientInfo: ClientInfo): void;
+    // private server(): DedicatedServer;
 }

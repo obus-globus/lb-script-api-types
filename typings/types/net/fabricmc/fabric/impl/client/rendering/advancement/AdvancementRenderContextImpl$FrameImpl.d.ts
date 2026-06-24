@@ -5,6 +5,7 @@ import type { AdvancementHolder } from '../../../../../../../net/minecraft/advan
 import type { AdvancementProgress } from '../../../../../../../net/minecraft/advancements/AdvancementProgress.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 export class AdvancementRenderContextImpl$FrameImpl extends Record implements AdvancementRenderContext$Frame {
+    constructor(graphics: GuiGraphicsExtractor, holder: AdvancementHolder, progress: AdvancementProgress, x: number, y: number, isHovered: boolean)
     // private graphics: GuiGraphicsExtractor;
     // private holder: AdvancementHolder;
     // private isHovered: boolean;

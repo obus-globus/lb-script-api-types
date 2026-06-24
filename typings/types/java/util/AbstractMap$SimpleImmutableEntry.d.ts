@@ -8,8 +8,8 @@ export class AbstractMap$SimpleImmutableEntry<K extends unknown, V extends unkno
     static comparingByValue(): (param0: Object) => boolean;
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    constructor(arg0: Map$Entry<K, V>)
     constructor(arg0: K, arg1: V)
+    constructor(arg0: Map$Entry<K, V>)
     readonly key: K;
     readonly key: K;
     readonly value: V;

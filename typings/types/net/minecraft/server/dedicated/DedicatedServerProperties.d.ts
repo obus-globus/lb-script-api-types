@@ -25,7 +25,9 @@ export class DedicatedServerProperties extends Settings<DedicatedServerPropertie
     broadcastConsoleToOps: boolean;
     broadcastRconToOps: boolean;
     bugReportLink: string;
+    chatSpamThresholdSeconds: number;
     codeOfConduct: boolean;
+    commandSpamThresholdSeconds: number;
     difficulty: Settings$MutableValue<Object>;
     enableJmxMonitoring: boolean;
     enableQuery: boolean;

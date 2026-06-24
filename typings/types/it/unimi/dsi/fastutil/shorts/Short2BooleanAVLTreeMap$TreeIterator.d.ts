@@ -1,8 +1,8 @@
 import type { Short2BooleanAVLTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2BooleanAVLTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2BooleanAVLTreeMap$TreeIterator extends Object {
-    constructor(null_: Short2BooleanAVLTreeMap$TreeIterator)
-    constructor(null_: Short2BooleanAVLTreeMap$TreeIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private curr: Short2BooleanAVLTreeMap$Entry;
     // private index: number;
     // private next: Short2BooleanAVLTreeMap$Entry;

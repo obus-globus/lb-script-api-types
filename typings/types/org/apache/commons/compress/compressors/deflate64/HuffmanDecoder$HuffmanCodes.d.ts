@@ -1,8 +1,9 @@
+import type { HuffmanDecoder } from '../../../../../../org/apache/commons/compress/compressors/deflate64/HuffmanDecoder.d.ts'
 import type { HuffmanDecoder$BinaryTreeNode } from '../../../../../../org/apache/commons/compress/compressors/deflate64/HuffmanDecoder$BinaryTreeNode.d.ts'
 import type { HuffmanDecoder$DecoderState } from '../../../../../../org/apache/commons/compress/compressors/deflate64/HuffmanDecoder$DecoderState.d.ts'
 import type { HuffmanState } from '../../../../../../org/apache/commons/compress/compressors/deflate64/HuffmanState.d.ts'
 export class HuffmanDecoder$HuffmanCodes extends HuffmanDecoder$DecoderState {
-    constructor(null_: HuffmanDecoder$HuffmanCodes, arg1: HuffmanState, arg2: number[], arg3: number[])
+    constructor(null_: HuffmanDecoder, arg1: HuffmanState, arg2: number[], arg3: number[])
     // private distanceTree: HuffmanDecoder$BinaryTreeNode;
     // private endOfBlock: boolean;
     // private lengthTree: HuffmanDecoder$BinaryTreeNode;

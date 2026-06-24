@@ -7,10 +7,13 @@ import type { StreamMemberEncoder } from '../../../../../net/minecraft/network/c
 import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ClientGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
+import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientboundSetEntityMotionPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundSetEntityMotionPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(id: number, movement: Vec3)
+    constructor(entity: Entity)
     // private id: number;
     // private movement: Vec3;
     equals(o: Object | null): boolean;

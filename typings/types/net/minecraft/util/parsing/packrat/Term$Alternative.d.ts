@@ -22,6 +22,7 @@ export class Term$Alternative<S extends unknown> extends Record implements Term<
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>): Term<Object>;
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
     static sequence(paramterms: Object | null): Term<Object>;
+    constructor(elements: Term<S>[])
     // private elements: Term<S>[];
     elements(): Term<S>[];
     equals(o: Object | null): boolean;

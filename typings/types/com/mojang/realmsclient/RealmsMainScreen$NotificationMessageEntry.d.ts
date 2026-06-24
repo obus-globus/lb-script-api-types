@@ -16,7 +16,7 @@ export class RealmsMainScreen$NotificationMessageEntry extends RealmsMainScreen$
     static HEIGHT_WITHOUT_TEXT: number;
     static PADDING: number;
     static textWidth(paramrowWidth: number): number;
-    constructor(null_: RealmsMainScreen$NotificationMessageEntry, realmsMainScreen: RealmsMainScreen, messageHeight: number, text: Component, notification: RealmsNotification$VisitUrl)
+    constructor(null_: RealmsMainScreen, realmsMainScreen: RealmsMainScreen, messageHeight: number, text: Component, notification: RealmsNotification$VisitUrl)
     // private button: Button;
     // private children: AbstractWidget[];
     // private dismissButton: RealmsMainScreen$CrossButton;

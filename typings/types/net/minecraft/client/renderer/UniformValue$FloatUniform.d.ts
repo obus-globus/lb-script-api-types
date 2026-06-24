@@ -8,6 +8,7 @@ import type { UniformValue$Type } from '../../../../net/minecraft/client/rendere
 export class UniformValue$FloatUniform extends Record implements UniformValue {
     static CODEC: Codec<UniformValue$FloatUniform>;
     static CODEC: Codec<UniformValue>;
+    constructor(value: number)
     // private value: number;
     addSize(calculator: Std140SizeCalculator): void;
     equals(o: Object | null): boolean;

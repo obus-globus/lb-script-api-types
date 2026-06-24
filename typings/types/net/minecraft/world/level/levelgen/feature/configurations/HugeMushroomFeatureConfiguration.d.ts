@@ -11,6 +11,7 @@ import type { BlockStateProvider } from '../../../../../../../net/minecraft/worl
 export class HugeMushroomFeatureConfiguration extends Record implements FeatureConfiguration {
     static CODEC: Codec<HugeMushroomFeatureConfiguration>;
     static NONE: NoneFeatureConfiguration;
+    constructor(capProvider: BlockStateProvider, stemProvider: BlockStateProvider, foliageRadius: number, canPlaceOn: BlockPredicate)
     // private canPlaceOn: BlockPredicate;
     // private capProvider: BlockStateProvider;
     // private foliageRadius: number;

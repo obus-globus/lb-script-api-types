@@ -1,6 +1,7 @@
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ChaseServer$PlayerPosition extends Record {
+    private constructor(dimensionName: string, x: number, y: number, z: number, yRot: number, xRot: number)
     // private dimensionName: string;
     // private x: number;
     // private xRot: number;

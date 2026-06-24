@@ -24,6 +24,15 @@ export class FileAppender$Builder<B extends FileAppender$Builder<B>> extends Abs
     isCreateOnDemand(): boolean;
     isLocking(): boolean;
     isValid(): boolean;
+    setAdvertise(advertise: boolean): B;
+    setAdvertiseUri(advertiseUri: string): B;
+    setAppend(append: boolean): B;
+    setCreateOnDemand(createOnDemand: boolean): B;
+    setFileGroup(fileGroup: string): B;
+    setFileName(fileName: string): B;
+    setFileOwner(fileOwner: string): B;
+    setFilePermissions(filePermissions: string): B;
+    setLocking(locking: boolean): B;
     withAdvertise(advertise: boolean): B;
     withAdvertiseUri(advertiseUri: string): B;
     withAppend(append: boolean): B;

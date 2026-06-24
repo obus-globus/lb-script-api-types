@@ -5,7 +5,6 @@ import type { NumberFormat } from '../../../../net/minecraft/network/chat/number
 import type { ReadOnlyScoreInfo } from '../../../../net/minecraft/world/scores/ReadOnlyScoreInfo.d.ts'
 import type { Score$Packed } from '../../../../net/minecraft/world/scores/Score$Packed.d.ts'
 export class Score extends Object implements ReadOnlyScoreInfo {
-    static safeFormatValue(paramscoreInfo: ReadOnlyScoreInfo, paramdefaultFormat: NumberFormat): MutableComponent;
     constructor()
     constructor(packed: Score$Packed)
     // private display: Component;

@@ -1,4 +1,3 @@
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ClientConfigurationNetworking$ConfigurationPayloadHandler } from '../../../../../../net/fabricmc/fabric/api/client/networking/v1/ClientConfigurationNetworking$ConfigurationPayloadHandler.d.ts'
 import type { ClientConfigurationNetworking$Context } from '../../../../../../net/fabricmc/fabric/api/client/networking/v1/ClientConfigurationNetworking$Context.d.ts'
 import type { ChannelInfoHolder } from '../../../../../../net/fabricmc/fabric/impl/networking/ChannelInfoHolder.d.ts'
@@ -10,7 +9,7 @@ import type { ClientConfigurationPacketListenerImpl } from '../../../../../../ne
 import type { Packet } from '../../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { CustomPacketPayload } from '../../../../../../net/minecraft/network/protocol/common/custom/CustomPacketPayload.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
-export class ClientConfigurationNetworkAddon extends ClientCommonNetworkAddon<(param0: Object, param1: ClientConfigurationNetworking$Context) => void, ClientConfigurationPacketListenerImpl> {
+export class ClientConfigurationNetworkAddon extends ClientCommonNetworkAddon<(param0: CustomPacketPayload | null, param1: ClientConfigurationNetworking$Context) => void, ClientConfigurationPacketListenerImpl> {
     constructor(arg0: ClientConfigurationPacketListenerImpl, arg1: Minecraft)
     // private context: ClientConfigurationNetworkAddon$ContextImpl;
     // private hasStarted: boolean;

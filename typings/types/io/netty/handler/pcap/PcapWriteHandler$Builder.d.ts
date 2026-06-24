@@ -1,3 +1,4 @@
+import type { PcapWriteHandler$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { PcapWriteHandler } from '../../../../io/netty/handler/pcap/PcapWriteHandler.d.ts'
 import type { PcapWriteHandler$ChannelType } from '../../../../io/netty/handler/pcap/PcapWriteHandler$ChannelType.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
@@ -5,6 +6,7 @@ import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PcapWriteHandler$Builder extends Object {
     private constructor()
+    constructor(arg0: PcapWriteHandler$1)
     // private captureZeroByte: boolean;
     // private channelType: PcapWriteHandler$ChannelType;
     // private handlerAddr: InetSocketAddress;

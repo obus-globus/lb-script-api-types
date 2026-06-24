@@ -14,4 +14,5 @@ export class CacheableFunction extends Object {
     equals(obj: Object | null): boolean;
     get(manager: ServerFunctionManager): Optional<CommandFunction<CommandSourceStack>>;
     getId(): Identifier;
+    hashCode(): number;
 }

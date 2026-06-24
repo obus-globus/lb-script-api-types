@@ -1,3 +1,4 @@
+import type { Platform$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
@@ -14,6 +15,7 @@ export class Platform extends Enum<Platform> {
     static valueOf(paramarg0: string): Platform;
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: string)
+    constructor(arg2: string, arg3: string, arg4: Platform$1)
     // private nativePath: string;
     getName(): string;
     mapLibraryName(arg0: string): string;

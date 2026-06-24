@@ -1,3 +1,4 @@
+import type { CodePointBuffer$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { CodePointBuffer } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/CodePointBuffer.d.ts'
 import type { CodePointBuffer$Type } from '../../../../../../com/llamalad7/mixinextras/lib/antlr/runtime/CodePointBuffer$Type.d.ts'
 import type { ByteBuffer } from '../../../../../../java/nio/ByteBuffer.d.ts'
@@ -6,6 +7,7 @@ import type { IntBuffer } from '../../../../../../java/nio/IntBuffer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CodePointBuffer$Builder extends Object {
     private constructor(arg0: number)
+    constructor(arg0: number, arg1: CodePointBuffer$1)
     // private byteBuffer: ByteBuffer;
     // private charBuffer: CharBuffer;
     // private intBuffer: IntBuffer;

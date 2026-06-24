@@ -11,8 +11,8 @@ export class Float2BooleanOpenHashMap$MapEntry extends Object implements Float2B
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: boolean): FloatBooleanPair;
-    constructor(null_: Float2BooleanOpenHashMap$MapEntry)
-    constructor(null_: Float2BooleanOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     equals(arg0: Object | null): boolean;
     first(): number;

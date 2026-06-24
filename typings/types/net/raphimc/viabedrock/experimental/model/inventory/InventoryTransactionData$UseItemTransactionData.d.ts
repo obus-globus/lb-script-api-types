@@ -8,6 +8,7 @@ import type { ItemUseInventoryTransaction_PredictedResult } from '../../../../..
 import type { BedrockItem } from '../../../../../../net/raphimc/viabedrock/protocol/model/BedrockItem.d.ts'
 import type { Position3f } from '../../../../../../net/raphimc/viabedrock/protocol/model/Position3f.d.ts'
 export class InventoryTransactionData$UseItemTransactionData extends Record implements InventoryTransactionData {
+    constructor(actionType: ItemUseInventoryTransaction_ActionType, triggerType: ItemUseInventoryTransaction_TriggerType, blockPosition: BlockPosition, face: number, hotbarSlot: number, itemInHand: BedrockItem, playerPosition: Position3f, clickPosition: Position3f, blockRuntimeId: number, predictedResult: ItemUseInventoryTransaction_PredictedResult, clientCooldownState: number)
     // private actionType: ItemUseInventoryTransaction_ActionType;
     // private blockPosition: BlockPosition;
     // private blockRuntimeId: number;

@@ -9,6 +9,7 @@ import type { ProjectileItem$PositionFunction } from '../../../../net/minecraft/
 export class ProjectileItem$DispenseConfig extends Record {
     static DEFAULT: ProjectileItem$DispenseConfig;
     static builder(): ProjectileItem$DispenseConfig$Builder;
+    constructor(positionFunction: (param0: BlockSource, param1: Direction) => Position, uncertainty: number, power: number, overrideDispenseEvent: OptionalInt)
     // private overrideDispenseEvent: OptionalInt;
     // private positionFunction: (param0: BlockSource, param1: Direction) => Position;
     // private power: number;

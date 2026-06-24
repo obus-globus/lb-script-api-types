@@ -21,7 +21,7 @@ import type { IOAccess$Builder } from '../../../org/graalvm/polyglot/io/IOAccess
 import type { MessageTransport } from '../../../org/graalvm/polyglot/io/MessageTransport.d.ts'
 import type { ProcessHandler } from '../../../org/graalvm/polyglot/io/ProcessHandler.d.ts'
 export class Context$Builder extends Object {
-    constructor(null_: Context$Builder, permittedLanguages: string[])
+    constructor(null_: Context, permittedLanguages: string[])
     // private allowAllAccess: boolean;
     // private allowCreateProcess: boolean;
     // private allowCreateThread: boolean;

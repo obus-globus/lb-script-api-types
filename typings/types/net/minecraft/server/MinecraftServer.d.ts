@@ -9,6 +9,7 @@ import type { KeyPair } from '../../../java/security/KeyPair.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { CompletableFuture } from '../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../java/util/concurrent/Executor.d.ts'
+import type { AtomicBoolean } from '../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
 import type { BooleanSupplier } from '../../../java/util/function/BooleanSupplier.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
@@ -20,6 +21,7 @@ import type { GlobalAttachmentsProvider } from '../../../net/fabricmc/fabric/api
 import type { DataResourceStore } from '../../../net/fabricmc/fabric/api/resource/v1/DataResourceStore.d.ts'
 import type { DataResourceStore$Key } from '../../../net/fabricmc/fabric/api/resource/v1/DataResourceStore$Key.d.ts'
 import type { GlobalAttachmentsImpl } from '../../../net/fabricmc/fabric/impl/attachment/GlobalAttachmentsImpl.d.ts'
+import type { MinecraftServerHooks } from '../../../net/fabricmc/fabric/impl/event/lifecycle/MinecraftServerHooks.d.ts'
 import type { FabricOriginalKnownPacksGetter } from '../../../net/fabricmc/fabric/impl/resource/pack/FabricOriginalKnownPacksGetter.d.ts'
 import type { CrashReport } from '../../../net/minecraft/CrashReport.d.ts'
 import type { ReportedException } from '../../../net/minecraft/ReportedException.d.ts'
@@ -42,6 +44,7 @@ import type { ServerStatus$Favicon } from '../../../net/minecraft/network/protoc
 import type { ServerStatus$Players } from '../../../net/minecraft/network/protocol/status/ServerStatus$Players.d.ts'
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { MinecraftServer$MultiplayerScope } from '../../../net/minecraft/server/MinecraftServer$MultiplayerScope.d.ts'
 import type { MinecraftServer$ReloadableResources } from '../../../net/minecraft/server/MinecraftServer$ReloadableResources.d.ts'
 import type { MinecraftServer$ServerResourcePackInfo } from '../../../net/minecraft/server/MinecraftServer$ServerResourcePackInfo.d.ts'
 import type { MinecraftServer$TimeProfiler } from '../../../net/minecraft/server/MinecraftServer$TimeProfiler.d.ts'
@@ -109,13 +112,14 @@ import type { PlayerDataStorage } from '../../../net/minecraft/world/level/stora
 import type { SavedDataStorage } from '../../../net/minecraft/world/level/storage/SavedDataStorage.d.ts'
 import type { WorldData } from '../../../net/minecraft/world/level/storage/WorldData.d.ts'
 import type { TimerQueue } from '../../../net/minecraft/world/level/timers/TimerQueue.d.ts'
-export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTask> implements GlobalAttachmentsProvider, DataResourceStore, FabricOriginalKnownPacksGetter, CommandSource, ServerInfo, ChunkIOErrorReporter {
+export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTask> implements GlobalAttachmentsProvider, DataResourceStore, MinecraftServerHooks, FabricOriginalKnownPacksGetter, CommandSource, ServerInfo, ChunkIOErrorReporter {
     static ABSOLUTE_MAX_WORLD_SIZE: number;
     static ANONYMOUS_PLAYER_PROFILE: NameAndId;
     static BLOCK_TIME_NANOS: number;
     static DEFAULT_GAME_RULES: () => GameRules;
     static DEMO_SETTINGS: LevelSettings;
     static NULL: CommandSource;
+    static SERVER_THREAD_NAME: string;
     static SPAWN_POSITION_SEARCH_RADIUS: number;
     static VANILLA_BRAND: string;
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
@@ -123,7 +127,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
     static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
-    constructor(serverThread: Thread, storageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, proxy: Proxy, fixerUpper: DataFixer, services: Services, levelLoadListener: LevelLoadListener, propagatesCrashes: boolean)
+    constructor(serverThread: Thread, storageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, proxy: Proxy, fixerUpper: DataFixer, services: Services, levelLoadListener: LevelLoadListener, propagatesCrashes: boolean, notificationManager: NotificationManager)
     // private aggregatedTickTimesNanos: number;
     // private clockManager: ServerClockManager;
     readonly commandStorage: CommandStorage;
@@ -184,6 +188,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     // private services: Services;
     readonly singleplayerProfile: GameProfile;
     // private smoothedTickTimeMillis: number;
+    // private startupReady: AtomicBoolean;
     readonly status: ServerStatus;
     // private statusIcon: ServerStatus$Favicon;
     readonly stopped: boolean;
@@ -208,6 +213,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     acceptsSuccess(): boolean;
     acceptsTransfers(): boolean;
     addTickable(tickable: () => void): void;
+    afterServerStartedEvent(): void;
     allowFlight(): boolean;
     alwaysAccepts(): boolean;
     // private autoSave(): void;
@@ -236,6 +242,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     enforceSecureProfile(): boolean;
     executeIfPossible(command: () => void): void;
     fabric$getOriginalKnownPacks(): (Object | null)[];
+    fabric$isStartupReady(): boolean;
     fillServerSystemReport(systemReport: SystemReport): SystemReport;
     fillSystemReport(systemReport: SystemReport): SystemReport;
     findRespawnDimension(): ServerLevel;
@@ -250,7 +257,9 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     getAllLevels(): ServerLevel[];
     getAverageTickTimeNanos(): number;
     getChatDecorator(): (param0: ServerPlayer, param1: Component) => Component;
+    getChatSpamThresholdSeconds(): number;
     getCodeOfConducts(): { [key: string]: string };
+    getCommandSpamThresholdSeconds(): number;
     getCommandStorage(): CommandStorage;
     getCommands(): Commands;
     getCompressionThreshold(): number;
@@ -363,7 +372,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     potionBrewing(): PotionBrewing;
     // private prepareLevels(): void;
     processPacketsAndTick(sprinting: boolean): void;
-    publishServer(gameMode: GameType, allowCommands: boolean, port: number): boolean;
+    publishServer(scope: MinecraftServer$MultiplayerScope, gameMode: GameType, allowCommands: boolean, port: number): boolean;
     registries(): LayeredRegistryAccess<RegistryLayer>;
     registryAccess(): RegistryAccess$Frozen;
     reloadResources(packsToEnable: string[]): CompletableFuture<void>;
@@ -417,6 +426,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     tickConnection(): void;
     tickRateManager(): ServerTickRateManager;
     tickServer(haveTime: () => boolean): void;
+    unpublishServer(): boolean;
     // private updateEffectiveRespawnData(): void;
     updateMobSpawningFlags(): void;
     useNativeTransport(): boolean;

@@ -6,6 +6,7 @@ import type { TagFileHooks } from '../../../net/fabricmc/fabric/impl/tag/TagFile
 import type { TagEntry } from '../../../net/minecraft/tags/TagEntry.d.ts'
 export class TagFile extends Record implements FabricTagFile, TagFileHooks {
     static CODEC: Codec<TagFile>;
+    constructor(entries: TagEntry[], replace: boolean)
     // private entries: TagEntry[];
     // private remove: (Object | null)[];
     // private replace: boolean;

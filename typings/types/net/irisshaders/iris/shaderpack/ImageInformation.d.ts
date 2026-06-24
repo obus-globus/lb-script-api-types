@@ -5,6 +5,7 @@ import type { PixelFormat } from '../../../../net/irisshaders/iris/gl/texture/Pi
 import type { PixelType } from '../../../../net/irisshaders/iris/gl/texture/PixelType.d.ts'
 import type { TextureType } from '../../../../net/irisshaders/iris/gl/texture/TextureType.d.ts'
 export class ImageInformation extends Record {
+    constructor(name: string, samplerName: string, target: TextureType, format: PixelFormat, internalTextureFormat: InternalTextureFormat, type: PixelType, width: number, height: number, depth: number, clear: boolean, isRelative: boolean, relativeWidth: number, relativeHeight: number)
     // private clear: boolean;
     // private depth: number;
     // private format: PixelFormat;

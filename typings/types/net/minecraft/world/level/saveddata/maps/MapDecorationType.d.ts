@@ -9,6 +9,7 @@ export class MapDecorationType extends Record {
     static CODEC: Codec<Holder<MapDecorationType>>;
     static NO_MAP_COLOR: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<MapDecorationType>>;
+    constructor(assetId: Identifier, showOnItemFrame: boolean, mapColor: number, explorationMapElement: boolean, trackCount: boolean)
     // private assetId: Identifier;
     // private explorationMapElement: boolean;
     // private mapColor: number;

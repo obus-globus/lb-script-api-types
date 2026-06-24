@@ -43,7 +43,7 @@ export class SingleBlockBlockView extends Record implements BlockGetter, Collisi
     getBlockAndLiquidCollisions(source: Entity, box: AABB): VoxelShape[];
     getBlockCollisions(arg0: Entity, arg1: AABB): VoxelShape[];
     getBlockCollisions(source: Entity, box: AABB): VoxelShape[];
-    // private getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
+    getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
     getBlockEntity(arg0: BlockPos): BlockEntity;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockFloorHeight(pos: BlockPos): number;

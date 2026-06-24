@@ -5,6 +5,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PotionEffect extends Record {
     static ARRAY_TYPE: Type<(Object | null)[]>;
     static TYPE: Type<PotionEffect>;
+    constructor(effect: number, effectData: PotionEffectData)
     // private effect: number;
     // private effectData: PotionEffectData;
     effect(): number;

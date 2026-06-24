@@ -10,7 +10,7 @@ import type { ClientShutdownEvent } from '../../../../../net/ccbluex/liquidbounc
 /**
  * Links minecraft with the command engine
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:60}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandExecutor.kt:60}
  */
 export class CommandExecutor extends Object implements EventListener {
     static INSTANCE: CommandExecutor;

@@ -11,8 +11,8 @@ export class Char2ObjectOpenHashMap$MapEntry extends Object implements Char2Obje
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: string, paramarg1: Object | null): CharObjectPair<Object>;
-    constructor(null_: Char2ObjectOpenHashMap$MapEntry)
-    constructor(null_: Char2ObjectOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;

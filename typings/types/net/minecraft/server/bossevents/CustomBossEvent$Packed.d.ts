@@ -7,6 +7,7 @@ import type { BossEvent$BossBarColor } from '../../../../net/minecraft/world/Bos
 import type { BossEvent$BossBarOverlay } from '../../../../net/minecraft/world/BossEvent$BossBarOverlay.d.ts'
 export class CustomBossEvent$Packed extends Record {
     static CODEC: Codec<CustomBossEvent$Packed>;
+    constructor(name: Component, visible: boolean, value: number, max: number, color: BossEvent$BossBarColor, overlay: BossEvent$BossBarOverlay, darkenScreen: boolean, playBossMusic: boolean, createWorldFog: boolean, players: UUID[])
     // private color: BossEvent$BossBarColor;
     // private createWorldFog: boolean;
     // private darkenScreen: boolean;

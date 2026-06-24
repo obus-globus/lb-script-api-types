@@ -2,8 +2,9 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Toast } from '../../../../../../net/minecraft/client/gui/components/toasts/Toast.d.ts'
 import type { Toast$Visibility } from '../../../../../../net/minecraft/client/gui/components/toasts/Toast$Visibility.d.ts'
+import type { ToastManager } from '../../../../../../net/minecraft/client/gui/components/toasts/ToastManager.d.ts'
 export class ToastManager$ToastInstance<T extends Toast> extends Object {
-    private constructor(null_: ToastManager$ToastInstance<T>, firstSlotIndex: number, occupiedSlotCount: number)
+    private constructor(null_: ToastManager, toast: T, firstSlotIndex: number, occupiedSlotCount: number)
     // private animationStartTime: number;
     // private becameFullyVisibleAt: number;
     // private firstSlotIndex: number;

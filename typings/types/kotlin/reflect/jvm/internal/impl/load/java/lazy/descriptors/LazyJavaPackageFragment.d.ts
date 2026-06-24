@@ -23,11 +23,11 @@ export class LazyJavaPackageFragment extends PackageFragmentDescriptorImpl {
     // private partToFacade$delegate: NotNullLazyValue<Object>;
     // private scope: JvmPackageScope;
     // private subPackages: NotNullLazyValue<FqName[]>;
-    findClassifierByJavaClass$descriptors_jvm(arg0: JavaClass): ClassDescriptor;
+    findClassifierByJavaClass$org_jetbrains_kotlin_descriptors_jvm(arg0: JavaClass): ClassDescriptor;
     getAnnotations(): AnnotationDescriptor[];
-    getBinaryClasses$descriptors_jvm(): { [key: string]: KotlinJvmBinaryClass };
+    getBinaryClasses$org_jetbrains_kotlin_descriptors_jvm(): { [key: string]: KotlinJvmBinaryClass };
     getMemberScope(): JvmPackageScope;
     getSource(): SourceElement;
-    getSubPackageFqNames$descriptors_jvm(): FqName[];
+    getSubPackageFqNames$org_jetbrains_kotlin_descriptors_jvm(): FqName[];
     toString(): string;
 }

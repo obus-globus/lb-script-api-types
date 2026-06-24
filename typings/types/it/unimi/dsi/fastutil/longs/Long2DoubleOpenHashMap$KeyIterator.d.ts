@@ -4,7 +4,7 @@ import type { LongIterator } from '../../../../../it/unimi/dsi/fastutil/longs/Lo
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { LongConsumer as LongConsumer_2 } from '../../../../../java/util/function/LongConsumer.d.ts'
 export class Long2DoubleOpenHashMap$KeyIterator extends Long2DoubleOpenHashMap$MapIterator<(param0: number) => void> implements LongIterator {
-    constructor(null_: Long2DoubleOpenHashMap$KeyIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

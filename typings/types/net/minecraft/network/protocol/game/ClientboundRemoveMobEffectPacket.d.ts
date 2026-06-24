@@ -15,6 +15,7 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class ClientboundRemoveMobEffectPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundRemoveMobEffectPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(entityId: number, effect: Holder<MobEffect>)
     // private effect: Holder<MobEffect>;
     // private entityId: number;
     effect(): Holder<MobEffect>;

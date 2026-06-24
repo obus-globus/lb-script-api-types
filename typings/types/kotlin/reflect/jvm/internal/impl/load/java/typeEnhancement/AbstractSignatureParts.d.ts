@@ -5,9 +5,10 @@ import type { JavaDefaultQualifiers } from '../../../../../../../../kotlin/refle
 import type { JavaTypeQualifiersByElementType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/JavaTypeQualifiersByElementType.d.ts'
 import type { AbstractSignatureParts$TypeAndDefaultQualifiers } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/typeEnhancement/AbstractSignatureParts$TypeAndDefaultQualifiers.d.ts'
 import type { JavaTypeQualifiers } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/typeEnhancement/JavaTypeQualifiers.d.ts'
+import type { MutabilityQualifier } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/typeEnhancement/MutabilityQualifier.d.ts'
 import type { NullabilityQualifier } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/typeEnhancement/NullabilityQualifier.d.ts'
-import type { NullabilityQualifierWithMigrationStatus } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/typeEnhancement/NullabilityQualifierWithMigrationStatus.d.ts'
 import type { TypeEnhancementInfo } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/typeEnhancement/TypeEnhancementInfo.d.ts'
+import type { WithMigrationStatus } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/typeEnhancement/WithMigrationStatus.d.ts'
 import type { FqNameUnsafe } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqNameUnsafe.d.ts'
 import type { KotlinTypeMarker } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/KotlinTypeMarker.d.ts'
 import type { TypeParameterMarker } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeParameterMarker.d.ts'
@@ -24,16 +25,17 @@ export abstract class AbstractSignatureParts<TAnnotation extends unknown> extend
     forceWarning(arg0: TAnnotation, arg1: KotlinTypeMarker): boolean;
     getAnnotationTypeQualifierResolver(): AbstractAnnotationTypeQualifierResolver<TAnnotation>;
     getAnnotations(arg0: KotlinTypeMarker): TAnnotation[];
-    // private getBoundsNullability(arg0: TypeParameterMarker): NullabilityQualifierWithMigrationStatus;
+    // private getBoundsNullability(arg0: TypeParameterMarker): WithMigrationStatus<NullabilityQualifier>;
     getContainerAnnotations(): TAnnotation[];
     getContainerApplicabilityType(): AnnotationQualifierApplicabilityType;
     getContainerDefaultTypeQualifiers(): JavaTypeQualifiersByElementType;
     getContainerIsVarargParameter(): boolean;
-    getDefaultNullability(arg0: NullabilityQualifierWithMigrationStatus, arg1: JavaDefaultQualifiers): NullabilityQualifierWithMigrationStatus;
+    getDefaultNullability(arg0: WithMigrationStatus<NullabilityQualifier>, arg1: JavaDefaultQualifiers): WithMigrationStatus<NullabilityQualifier>;
     getEnableImprovementsInStrictMode(): boolean;
     getEnhancedForWarnings(arg0: KotlinTypeMarker): KotlinTypeMarker;
     getForceOnlyHeadTypeConstructor(): boolean;
     getFqNameUnsafe(arg0: KotlinTypeMarker): FqNameUnsafe;
+    // private getMutabilityQualifier(arg0: KotlinTypeMarker): MutabilityQualifier;
     // private getNullabilityQualifier(arg0: KotlinTypeMarker): NullabilityQualifier;
     getShouldPropagateBoundNullness(arg0: KotlinTypeMarker): boolean;
     getSkipRawTypeArguments(): boolean;
@@ -44,6 +46,6 @@ export abstract class AbstractSignatureParts<TAnnotation extends unknown> extend
     isFromJava(arg0: TypeParameterMarker): boolean;
     isK2(): boolean;
     isNotNullTypeParameterCompat(arg0: KotlinTypeMarker): boolean;
-    // private mostSpecific(arg0: NullabilityQualifierWithMigrationStatus, arg1: NullabilityQualifierWithMigrationStatus): NullabilityQualifierWithMigrationStatus;
+    // private mostSpecific(arg0: WithMigrationStatus<NullabilityQualifier>, arg1: WithMigrationStatus<NullabilityQualifier>): WithMigrationStatus<NullabilityQualifier>;
     // private toIndexed(arg0: KotlinTypeMarker): AbstractSignatureParts$TypeAndDefaultQualifiers[];
 }

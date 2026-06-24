@@ -5,6 +5,7 @@ import type { Quaternionf } from '../../../../../../org/joml/Quaternionf.d.ts'
 export class GivensPair extends Record {
     static fromAngle(paramarg0: number): GivensPair;
     static normalize(paramarg0: number, paramarg1: number): GivensPair;
+    constructor(sinHalf: number, cosHalf: number)
     // private cosHalf: number;
     // private sinHalf: number;
     cosFloat(): number;

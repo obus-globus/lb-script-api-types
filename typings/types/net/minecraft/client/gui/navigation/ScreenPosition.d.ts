@@ -4,6 +4,7 @@ import type { ScreenAxis } from '../../../../../net/minecraft/client/gui/navigat
 import type { ScreenDirection } from '../../../../../net/minecraft/client/gui/navigation/ScreenDirection.d.ts'
 export class ScreenPosition extends Record {
     static of(paramaxis: ScreenAxis, paramprimaryValue: number, paramsecondaryValue: number): ScreenPosition;
+    constructor(x: number, y: number)
     // private x: number;
     // private y: number;
     equals(o: Object | null): boolean;

@@ -22,10 +22,9 @@ import type { Class } from '../../../java/lang/Class.d.ts'
 import type { ThreadLocal } from '../../../java/lang/ThreadLocal.d.ts'
 import type { Type } from '../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Number } from '../../../java/lang/Number.d.ts'
 export class Gson extends Object {
     constructor()
-    constructor(arg0: Excluder, arg1: FieldNamingStrategy, arg2: Map<Type, InstanceCreator<Object>>, arg3: boolean, arg4: boolean, arg5: boolean, arg6: boolean, arg7: FormattingStyle, arg8: Strictness, arg9: boolean, arg10: boolean, arg11: LongSerializationPolicy, arg12: string, arg13: number, arg14: number, arg15: TypeAdapterFactory[], arg16: TypeAdapterFactory[], arg17: TypeAdapterFactory[], arg18: ToNumberStrategy, arg19: ToNumberStrategy, arg20: ReflectionAccessFilter[])
+    constructor(arg0: GsonBuilder)
     // private builderFactories: TypeAdapterFactory[];
     // private builderHierarchyFactories: TypeAdapterFactory[];
     // private complexMapKeySerialization: boolean;
@@ -51,10 +50,8 @@ export class Gson extends Object {
     // private timeStyle: number;
     // private typeTokenCache: Map<TypeToken<Object>, TypeAdapter<Object>>;
     // private useJdkUnsafe: boolean;
-    // private doubleAdapter(arg0: boolean): TypeAdapter<Number>;
     excluder(): Excluder;
     fieldNamingStrategy(): FieldNamingStrategy;
-    // private floatAdapter(arg0: boolean): TypeAdapter<Number>;
     fromJson<T extends unknown>(arg0: JsonElement, arg1: TypeToken<T>): T;
     fromJson<T extends unknown>(arg0: JsonElement, arg1: Class<T>): T;
     fromJson<T extends unknown>(arg0: JsonElement, arg1: Type): T;

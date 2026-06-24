@@ -5,8 +5,8 @@ import type { Reference2IntMap$Entry } from '../../../../../it/unimi/dsi/fastuti
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2IntLinkedOpenHashMap$FastEntryIterator extends Reference2IntLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<Reference2IntMap$Entry<K>> {
-    constructor(null_: Reference2IntLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Reference2IntLinkedOpenHashMap$FastEntryIterator)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: K)
     // private entry: Reference2IntLinkedOpenHashMap$MapEntry;
     acceptOnIndex<K extends unknown>(arg0: (param0: Reference2IntMap$Entry<K>) => void, arg1: number): void;
     add<K extends unknown>(arg0: Reference2IntMap$Entry<K>): void;

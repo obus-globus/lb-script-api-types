@@ -1,3 +1,4 @@
+import type { LittleEndianByteArray$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { LittleEndianByteArray$LittleEndianBytes } from '../../../../com/google/common/hash/LittleEndianByteArray$LittleEndianBytes.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -9,6 +10,7 @@ export class LittleEndianByteArray$UnsafeByteArray extends Enum<LittleEndianByte
     static valueOf(paramname: string): LittleEndianByteArray$UnsafeByteArray;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: LittleEndianByteArray$1)
     usesFastPath(): boolean;
     name(): "UNSAFE_LITTLE_ENDIAN" | "UNSAFE_BIG_ENDIAN";
 }

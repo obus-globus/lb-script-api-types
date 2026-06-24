@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class TimeRecord extends Record {
+    constructor(days: number, hour: number, minute: number, second: number, millisecond: number, microsecond: number, nanosecond: number)
     // private days: number;
     // private hour: number;
     // private microsecond: number;

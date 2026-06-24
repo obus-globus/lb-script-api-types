@@ -6,6 +6,7 @@ export class FileUtil extends Object {
     static decomposePath(parampath: string): DataResult<string[]>;
     static findAvailableName(parambaseDir: Path[][], parambaseName: string, paramsuffix: string): string;
     static getFullResourcePath(paramfilename: string): string;
+    static isEmptyPath(parampath: Path[][]): boolean;
     static isPathPartPortable(paramname: string): boolean;
     static isPathPortable(parampath: Path[][]): boolean;
     static isValidPathSegment(paramsegment: string): boolean;

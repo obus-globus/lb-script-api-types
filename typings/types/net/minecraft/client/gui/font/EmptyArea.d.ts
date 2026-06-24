@@ -5,6 +5,7 @@ import type { Style } from '../../../../../net/minecraft/network/chat/Style.d.ts
 export class EmptyArea extends Record implements ActiveArea {
     static DEFAULT_ASCENT: number;
     static DEFAULT_HEIGHT: number;
+    constructor(x: number, y: number, advance: number, ascent: number, height: number, style: Style)
     // private advance: number;
     // private ascent: number;
     // private height: number;

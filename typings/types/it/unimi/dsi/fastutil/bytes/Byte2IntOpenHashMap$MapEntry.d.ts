@@ -11,8 +11,8 @@ export class Byte2IntOpenHashMap$MapEntry extends Object implements Byte2IntMap$
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: number): ByteIntPair;
-    constructor(null_: Byte2IntOpenHashMap$MapEntry)
-    constructor(null_: Byte2IntOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     equals(arg0: Object | null): boolean;
     first(): number;

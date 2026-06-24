@@ -6,6 +6,7 @@ export class PngInfo extends Record {
     static fromBytes(parambytes: number[]): PngInfo;
     static fromStream(paraminputStream: InputStream): PngInfo;
     static validateHeader(parambuffer: ByteBuffer): void;
+    constructor(width: number, height: number)
     // private height: number;
     // private width: number;
     equals(o: Object | null): boolean;

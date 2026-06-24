@@ -8,7 +8,7 @@ export class BreakTransliterator$ReplaceableCharacterIterator extends Object imp
     // private end: number;
     // private pos: number;
     readonly text: Replaceable;
-    clone(): Object;
+    clone(): BreakTransliterator$ReplaceableCharacterIterator;
     current(): string;
     equals(arg0: Object | null): boolean;
     first(): string;

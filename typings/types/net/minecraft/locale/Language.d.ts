@@ -7,6 +7,7 @@ import type { FormattedCharSequence } from '../../../net/minecraft/util/Formatte
 import type { FormattedCharSink } from '../../../net/minecraft/util/FormattedCharSink.d.ts'
 export abstract class Language extends Object {
     static DEFAULT: string;
+    static DEFAULT_INSTANCE: Language;
     static getInstance(): Language;
     static inject(paramlanguage: Language): void;
     static loadFromJson(paramstream: InputStream, paramoutput: (param0: string, param1: string) => void): void;

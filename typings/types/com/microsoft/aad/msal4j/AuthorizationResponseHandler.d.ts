@@ -13,7 +13,7 @@ export class AuthorizationResponseHandler extends Object implements HttpHandler 
     handle(arg0: HttpExchange): void;
     // private send200Response(arg0: HttpExchange, arg1: string): void;
     // private send302Response(arg0: HttpExchange, arg1: string): void;
-    // private sendErrorResponse(arg0: HttpExchange, arg1: string): void;
+    // private sendErrorResponse(arg0: HttpExchange, arg1: AuthorizationResult): void;
     // private sendResponse(arg0: HttpExchange, arg1: AuthorizationResult): void;
     // private sendSuccessResponse(arg0: HttpExchange, arg1: string): void;
     systemBrowserOptions(): SystemBrowserOptions;

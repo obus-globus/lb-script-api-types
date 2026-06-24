@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SwitchGrid$InfoUnderneathSettings extends Record {
+    private constructor(maxInfoRows: number, alwaysMaxHeight: boolean)
     // private alwaysMaxHeight: boolean;
     // private maxInfoRows: number;
     alwaysMaxHeight(): boolean;

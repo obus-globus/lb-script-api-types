@@ -7,7 +7,7 @@ export class ModuleFullBright$FullBrightGamma extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleFullBright$FullBrightGamma;
     readonly brightness: number;
-    gamma: number;
+    readonly gamma: number;
     readonly parent: ModeValueGroup<Mode>;
     readonly tickHandler: EventHook<PlayerPostTickEvent>;
     enable(): void;

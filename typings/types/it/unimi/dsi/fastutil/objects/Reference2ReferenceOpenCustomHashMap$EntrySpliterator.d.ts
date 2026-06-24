@@ -1,9 +1,7 @@
-import type { ObjectSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectSpliterator.d.ts'
 import type { Reference2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ReferenceMap$Entry.d.ts'
-import type { Reference2ReferenceOpenCustomHashMap$MapSpliterator } from '../../../../../it/unimi/dsi/fastutil/objects/Reference2ReferenceOpenCustomHashMap$MapSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-export class Reference2ReferenceOpenCustomHashMap$EntrySpliterator extends Reference2ReferenceOpenCustomHashMap$MapSpliterator<Object, any> implements ObjectSpliterator<Reference2ReferenceMap$Entry<K, V>> {
+export class Reference2ReferenceOpenCustomHashMap$EntrySpliterator {
     static CONCURRENT: number;
     static DISTINCT: number;
     static IMMUTABLE: number;
@@ -12,10 +10,9 @@ export class Reference2ReferenceOpenCustomHashMap$EntrySpliterator extends Refer
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Reference2ReferenceOpenCustomHashMap$EntrySpliterator)
-    constructor(null_: Reference2ReferenceOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: Map<K, V>)
+    constructor(null_: Map<K, V>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex<K extends unknown, V extends unknown>(arg0: (param0: Reference2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
     characteristics(): number;
     makeForSplit<K extends unknown, V extends unknown>(arg0: number, arg1: number, arg2: boolean): Reference2ReferenceOpenCustomHashMap$EntrySpliterator;
-    skip(arg0: number): number;
 }

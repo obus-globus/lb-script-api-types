@@ -66,7 +66,7 @@ export class DateTimePatternGenerator extends Object implements Freezable<DateTi
     addPatternWithSkeleton(arg0: string, arg1: string, arg2: boolean, arg3: DateTimePatternGenerator$PatternInfo): DateTimePatternGenerator;
     // private adjustFieldTypes(arg0: DateTimePatternGenerator$PatternWithMatcher, arg1: DateTimePatternGenerator$DateTimeMatcher, arg2: DateTimePatternGenerator$DTPGflags[], arg3: number): string;
     // private checkFrozen(): void;
-    clone(): Object;
+    clone(): DateTimePatternGenerator;
     protected clone(): Object;
     cloneAsThawed(): DateTimePatternGenerator;
     // private consumeShortTimePattern(arg0: string, arg1: DateTimePatternGenerator$PatternInfo): void;

@@ -15,6 +15,7 @@ export class CommonLinks extends Object {
     static INTENTIONAL_GAME_DESIGN_BUG: URI;
     static INTENTIONAL_GAME_DESIGN_BUG_ID: string;
     static LICENSES: URI;
+    static PRIVACY_AND_ONLINE_SETTINGS: URI;
     static PRIVACY_STATEMENT: URI;
     static REALMS_CONTENT_CREATION: URI;
     static REALMS_TERMS: URI;

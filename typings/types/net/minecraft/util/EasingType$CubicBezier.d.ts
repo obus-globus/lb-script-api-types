@@ -50,5 +50,7 @@ export class EasingType$CubicBezier extends Object implements EasingType {
     apply(x: number): number;
     equals(obj: Object | null): boolean;
     hashCode(): number;
+    // private solveT(x: number): number;
+    // private solveTBisect(x: number, initialT: number): number;
     toString(): string;
 }

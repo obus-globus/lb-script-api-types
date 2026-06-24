@@ -5,8 +5,6 @@ import type { BlockItemPacketRewriter1_19_3 } from '../../../../../com/viaversio
 import type { EntityPacketRewriter1_19_3 } from '../../../../../com/viaversion/viabackwards/protocol/v1_19_3to1_19_1/rewriter/EntityPacketRewriter1_19_3.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { PacketWrapper } from '../../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
-import type { ByteArrayType } from '../../../../../com/viaversion/viaversion/api/type/types/ByteArrayType.d.ts'
-import type { ByteArrayType$OptionalByteArrayType } from '../../../../../com/viaversion/viaversion/api/type/types/ByteArrayType$OptionalByteArrayType.d.ts'
 import type { ClientboundPackets1_19_3 } from '../../../../../com/viaversion/viaversion/protocols/v1_19_1to1_19_3/packet/ClientboundPackets1_19_3.d.ts'
 import type { ServerboundPackets1_19_3 } from '../../../../../com/viaversion/viaversion/protocols/v1_19_1to1_19_3/packet/ServerboundPackets1_19_3.d.ts'
 import type { ClientboundPackets1_19_1 } from '../../../../../com/viaversion/viaversion/protocols/v1_19to1_19_1/packet/ClientboundPackets1_19_1.d.ts'
@@ -16,8 +14,6 @@ import type { ParticleRewriter } from '../../../../../com/viaversion/viaversion/
 import type { TagRewriter } from '../../../../../com/viaversion/viaversion/rewriter/TagRewriter.d.ts'
 export class Protocol1_19_3To1_19_1 extends BackwardsProtocol<ClientboundPackets1_19_3, ClientboundPackets1_19_1, ServerboundPackets1_19_3, ServerboundPackets1_19_1> {
     static MAPPINGS: BackwardsMappingData;
-    static OPTIONAL_SIGNATURE_BYTES_TYPE: ByteArrayType$OptionalByteArrayType;
-    static SIGNATURE_BYTES_TYPE: ByteArrayType;
     constructor()
     readonly blockRewriter: BlockRewriter<ClientboundPackets1_19_3>;
     readonly entityRewriter: EntityPacketRewriter1_19_3;

@@ -64,7 +64,7 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     // private cache: BlockBehaviour$BlockStateBase$Cache;
     // private canOcclude: boolean;
     // private destroySpeed: number;
-    // private emissiveRendering: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
+    // private emissiveRendering: (param0: BlockState) => boolean;
     // private flags: number;
     readonly fluidState: FluidState;
     // private ignitedByLava: boolean;
@@ -100,7 +100,7 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     canBeReplaced(fluid: Fluid): boolean;
     canOcclude(): boolean;
     canSurvive(level: LevelReader, pos: BlockPos): boolean;
-    emissiveRendering(level: BlockGetter, pos: BlockPos): boolean;
+    emissiveRendering(): boolean;
     entityCanStandOn(level: BlockGetter, pos: BlockPos, entity: Entity): boolean;
     entityCanStandOnFace(level: BlockGetter, pos: BlockPos, entity: Entity, faceDirection: Direction): boolean;
     entityInside(level: Level, pos: BlockPos, entity: Entity, effectApplier: InsideBlockEffectApplier, isPrecise: boolean): void;
@@ -125,6 +125,7 @@ export abstract class BlockBehaviour$BlockStateBase extends StateHolder<Block, B
     getMenuProvider(level: Level, pos: BlockPos): MenuProvider;
     getOcclusionShape(): VoxelShape;
     getOffset(pos: BlockPos): Vec3;
+    getOwnSignal(level: BlockGetter, pos: BlockPos): number;
     getPistonPushReaction(): PushReaction;
     getPostProcessPos(level: BlockGetter, pos: BlockPos): BlockPos;
     getRenderShape(): RenderShape;

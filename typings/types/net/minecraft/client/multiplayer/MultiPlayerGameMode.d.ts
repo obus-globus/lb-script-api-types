@@ -78,6 +78,7 @@ export class MultiPlayerGameMode extends Object implements IMultiPlayerGameMode 
     setLocalMode(mode: GameType): void;
     setLocalMode(mode: GameType, previousMode: GameType): void;
     spectate(entity: Entity): void;
+    spectatorNoAction(): void;
     startDestroyBlock(pos: BlockPos, direction: Direction): boolean;
     startPrediction(level: ClientLevel, predictiveAction: (param0: number) => Packet<ServerGamePacketListener>): void;
     stopDestroyBlock(): void;

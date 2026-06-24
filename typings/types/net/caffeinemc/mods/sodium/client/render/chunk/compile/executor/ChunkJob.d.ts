@@ -4,9 +4,6 @@ import type { CancellationToken } from '../../../../../../../../../net/caffeinem
 export interface ChunkJob extends Object, CancellationToken{
     execute(arg0: ChunkBuildContext): void;
     getEstimatedDuration(): number;
-    getEstimatedSize(): number;
-    getEstimatedUploadDuration(): number;
-    isBlocking(): boolean;
     isCancelled(): boolean;
     isStarted(): boolean;
     setCancelled(): void;

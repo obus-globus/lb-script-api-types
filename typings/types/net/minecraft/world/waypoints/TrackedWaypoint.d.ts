@@ -17,7 +17,6 @@ import type { TrackedWaypoint$Type } from '../../../../net/minecraft/world/waypo
 import type { Waypoint } from '../../../../net/minecraft/world/waypoints/Waypoint.d.ts'
 import type { Waypoint$Icon } from '../../../../net/minecraft/world/waypoints/Waypoint$Icon.d.ts'
 export abstract class TrackedWaypoint extends Object implements Waypoint {
-    static MAX_RANGE: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, TrackedWaypoint>;
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static addHideAttribute(paramproperties: Item$Properties): Item$Properties;

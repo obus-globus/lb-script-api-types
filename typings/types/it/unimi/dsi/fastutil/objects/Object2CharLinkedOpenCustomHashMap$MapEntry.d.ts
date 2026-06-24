@@ -12,8 +12,8 @@ export class Object2CharLinkedOpenCustomHashMap$MapEntry extends Object implemen
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: Object | null, paramarg1: string): ObjectCharPair<Object>;
-    constructor(null_: Object2CharLinkedOpenCustomHashMap$MapEntry)
-    constructor(null_: Object2CharLinkedOpenCustomHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly key: K;
     equals(arg0: Object | null): boolean;

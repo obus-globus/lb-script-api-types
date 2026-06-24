@@ -14,6 +14,8 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 export class ServerboundChatCommandSignedPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundChatCommandSignedPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(command: string, timeStamp: Instant, salt: number, argumentSignatures: ArgumentSignatures, lastSeenMessages: LastSeenMessages$Update)
+    private constructor(input: FriendlyByteBuf)
     // private argumentSignatures: ArgumentSignatures;
     // private command: string;
     // private lastSeenMessages: LastSeenMessages$Update;

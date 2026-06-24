@@ -12,8 +12,8 @@ export class FloatImmutableList$Spliterator extends Object implements FloatSplit
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: FloatImmutableList$Spliterator)
-    private constructor(null_: FloatImmutableList$Spliterator, arg1: number, arg2: number)
+    constructor(null_: (Object | null)[])
+    private constructor(null_: (Object | null)[], arg1: number, arg2: number)
     // private max: number;
     // private pos: number;
     characteristics(): number;

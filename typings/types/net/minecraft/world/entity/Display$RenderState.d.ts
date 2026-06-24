@@ -5,6 +5,7 @@ import type { Display$BillboardConstraints } from '../../../../net/minecraft/wor
 import type { Display$FloatInterpolator } from '../../../../net/minecraft/world/entity/Display$FloatInterpolator.d.ts'
 import type { Display$GenericInterpolator } from '../../../../net/minecraft/world/entity/Display$GenericInterpolator.d.ts'
 export class Display$RenderState extends Record {
+    constructor(transformation: (param0: number) => Transformation, billboardConstraints: Display$BillboardConstraints, brightnessOverride: number, shadowRadius: (param0: number) => number, shadowStrength: (param0: number) => number, glowColorOverride: number)
     // private billboardConstraints: Display$BillboardConstraints;
     // private brightnessOverride: number;
     // private glowColorOverride: number;

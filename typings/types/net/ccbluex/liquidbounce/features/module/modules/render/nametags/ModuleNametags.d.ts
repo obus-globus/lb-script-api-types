@@ -13,21 +13,21 @@ import type { EntityRenderState } from '../../../../../../../../net/minecraft/cl
  *
  * Makes player name tags more visible and adds useful information.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/ModuleNametags.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/ModuleNametags.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/ModuleNametags.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/ModuleNametags.kt:39}
  */
 export class ModuleNametags extends ClientModule {
     static INSTANCE: ModuleNametags;
     // private NAMETAG_COMPARATOR: (param0: Object) => boolean;
     // private backgroundRadius: number;
-    /*not mapped: */ getBackgroundRadius$liquidbounce(): number;
+    /*not mapped: */ getBackgroundRadius$net_ccbluex_liquidbounce(): number;
     // private borderWidth: number;
-    /*not mapped: */ getBorderWidth$liquidbounce(): number;
+    /*not mapped: */ getBorderWidth$net_ccbluex_liquidbounce(): number;
     readonly fontRenderer: FontRenderer;
     // private nametagPool: Pool<NametagRenderState>;
     // private nametagsToRender: NametagRenderState[];
     // private overlayRenderHandler: EventHook<OverlayRenderEvent>;
     // private scale: CurveValue;
-    /*not mapped: */ getScale$liquidbounce(): CurveValue;
+    /*not mapped: */ getScale$net_ccbluex_liquidbounce(): CurveValue;
     // private collectAndSortNametagsToRender(): void;
     onDisabled(): void;
     onEnabled(): void;

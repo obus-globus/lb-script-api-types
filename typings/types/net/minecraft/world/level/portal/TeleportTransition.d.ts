@@ -12,6 +12,9 @@ export class TeleportTransition extends Record {
     static PLAY_PORTAL_SOUND: (param0: Entity) => void;
     static createDefault(paramplayer: ServerPlayer, parampostTeleportTransition: (param0: Entity) => void): TeleportTransition;
     static missingRespawnBlock(paramplayer: ServerPlayer, parampostTeleportTransition: (param0: Entity) => void): TeleportTransition;
+    constructor(newLevel: ServerLevel, position: Vec3, deltaMovement: Vec3, yRot: number, xRot: number, missingRespawnBlock: boolean, asPassenger: boolean, relatives: Relative[], postTeleportTransition: (param0: Entity) => void)
+    constructor(newLevel: ServerLevel, pos: Vec3, speed: Vec3, yRot: number, xRot: number, relatives: Relative[], postTeleportTransition: (param0: Entity) => void)
+    constructor(newLevel: ServerLevel, pos: Vec3, speed: Vec3, yRot: number, xRot: number, postTeleportTransition: (param0: Entity) => void)
     // private asPassenger: boolean;
     // private deltaMovement: Vec3;
     // private missingRespawnBlock: boolean;

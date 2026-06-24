@@ -6,6 +6,7 @@ import type { ExpirationPolicy } from '../../../net/jodah/expiringmap/Expiration
 import type { ExpiringEntryLoader } from '../../../net/jodah/expiringmap/ExpiringEntryLoader.d.ts'
 export class ExpiringMap$Builder<K extends unknown, V extends unknown> extends Object {
     private constructor()
+    constructor(arg0: (Object | null)[])
     // private asyncExpirationListeners: ExpirationListener<K, V>[];
     // private duration: number;
     // private entryLoader: EntryLoader<K, V>;

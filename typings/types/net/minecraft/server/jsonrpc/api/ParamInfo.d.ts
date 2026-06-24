@@ -4,6 +4,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Schema } from '../../../../../net/minecraft/server/jsonrpc/api/Schema.d.ts'
 export class ParamInfo<Param extends unknown> extends Record {
     static typedCodec(): MapCodec<ParamInfo<Object>>;
+    constructor(name: string, schema: Schema<Param>)
+    constructor(name: string, schema: Schema<Param>, required: boolean)
     // private name: string;
     // private required: boolean;
     // private schema: Schema<Param>;

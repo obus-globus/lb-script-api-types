@@ -4,6 +4,7 @@ import type { TypeSpecifier } from '../../../../../../io/github/douira/glsl_tran
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LayoutTransformer$NewDeclarationData extends Record {
+    constructor(qualifier: TypeQualifier, type: TypeSpecifier, member: DeclarationMember, location: number, name: string)
     // private location: number;
     // private member: DeclarationMember;
     // private name: string;

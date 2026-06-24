@@ -1,14 +1,18 @@
-import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class UV2f extends Record {
+export class UV2f extends Object {
+// (invalid TS: name contains '-')     static box-impl(paramarg0: number): UV2f;
+// (invalid TS: name contains '-')     static constructor-impl(paramarg0: number, paramarg1: number): number;
+// (invalid TS: name contains '-')     static equals-impl(paramarg0: number, paramarg1: Object): boolean;
+// (invalid TS: name contains '-')     static equals-impl0(paramarg0: number, paramarg1: number): boolean;
+// (invalid TS: name contains '-')     static getU-impl(paramarg0: number): number;
+// (invalid TS: name contains '-')     static getV-impl(paramarg0: number): number;
+// (invalid TS: name contains '-')     static hashCode-impl(paramarg0: number): number;
+// (invalid TS: name contains '-')     static toString-impl(paramarg0: number): string;
     constructor(u: number, v: number)
-    // private u: number;
-    /*not mapped: */ u(): number;
-    // private v: number;
-    /*not mapped: */ v(): number;
-    component1(): number;
-    component2(): number;
-    copy(u: number, v: number): UV2f;
+    private constructor(bits: number)
+    // private bits: number;
+// (invalid TS: name contains '-')     /*not mapped: */ getU-impl(): number;
+// (invalid TS: name contains '-')     /*not mapped: */ getV-impl(): number;
     equals(other: Object | null): boolean;
     hashCode(): number;
     toString(): string;

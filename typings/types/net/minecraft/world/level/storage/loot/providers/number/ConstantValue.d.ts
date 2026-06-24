@@ -8,6 +8,7 @@ export class ConstantValue extends Record implements NumberProvider {
     static INLINE_CODEC: Codec<ConstantValue>;
     static MAP_CODEC: MapCodec<ConstantValue>;
     static exactly(paramvalue: number): ConstantValue;
+    constructor(value: number)
     // private value: number;
     codec(): MapCodec<ConstantValue>;
     equals(o: Object | null): boolean;

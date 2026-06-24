@@ -4,6 +4,7 @@ import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.
 import type { BlockEntity } from '../../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { TickingBlockEntity } from '../../../../../../../net/minecraft/world/level/block/entity/TickingBlockEntity.d.ts'
 export class SleepUntilTimeBlockEntityTickInvoker extends Record implements TickingBlockEntity {
+    constructor(sleepingBlockEntity: BlockEntity, sleepUntilTickExclusive: number, delegate: TickingBlockEntity)
     // private delegate: TickingBlockEntity;
     // private sleepUntilTickExclusive: number;
     // private sleepingBlockEntity: BlockEntity;

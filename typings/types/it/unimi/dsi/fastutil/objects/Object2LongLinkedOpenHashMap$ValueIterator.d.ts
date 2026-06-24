@@ -2,7 +2,7 @@ import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/long
 import type { Object2LongLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2LongLinkedOpenHashMap$MapIterator.d.ts'
 import type { LongConsumer } from '../../../../../java/util/function/LongConsumer.d.ts'
 export class Object2LongLinkedOpenHashMap$ValueIterator extends Object2LongLinkedOpenHashMap$MapIterator<Object> implements LongListIterator {
-    constructor(null_: Object2LongLinkedOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

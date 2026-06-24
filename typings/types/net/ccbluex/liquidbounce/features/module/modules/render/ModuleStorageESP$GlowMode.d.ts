@@ -5,14 +5,14 @@ import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbo
 import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { DrawOutlinesEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/DrawOutlinesEvent.d.ts'
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
-import type { StaticMeshStorage } from '../../../../../../../net/ccbluex/liquidbounce/render/StaticMeshStorage.d.ts'
+import type { CachedMeshStorage } from '../../../../../../../net/ccbluex/liquidbounce/render/CachedMeshStorage.d.ts'
 export class ModuleStorageESP$GlowMode extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleStorageESP$GlowMode;
     // private dirtyFlag: AtomicBoolean;
     // private glowRenderHandler: EventHook<DrawOutlinesEvent>;
     readonly parent: ModeValueGroup<Mode>;
-    // private renderState: StaticMeshStorage;
+    // private renderState: CachedMeshStorage;
     // private tickHandler: EventHook<GameTickEvent>;
     disable(): void;
     enable(): void;

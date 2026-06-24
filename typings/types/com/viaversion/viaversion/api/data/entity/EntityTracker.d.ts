@@ -3,9 +3,11 @@ import type { DimensionData } from '../../../../../../com/viaversion/viaversion/
 import type { StoredEntityData } from '../../../../../../com/viaversion/viaversion/api/data/entity/StoredEntityData.d.ts'
 import type { TrackedEntity } from '../../../../../../com/viaversion/viaversion/api/data/entity/TrackedEntity.d.ts'
 import type { EntityType } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityType.d.ts'
+import type { KeyMappings } from '../../../../../../com/viaversion/viaversion/util/KeyMappings.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface EntityTracker extends Object{
     addEntity(arg0: number, arg1: EntityType): void;
+    addRegistryKeys(arg0: string, arg1: KeyMappings): void;
     biomesSent(): number;
     canInstaBuild(): boolean;
     clear(): void;
@@ -24,6 +26,7 @@ export interface EntityTracker extends Object{
     hasClientEntityId(): boolean;
     hasEntity(arg0: number): boolean;
     playerType(): EntityType;
+    registryKeys(arg0: string): KeyMappings;
     removeEntity(arg0: number): void;
     setBiomesSent(arg0: number): void;
     setClientEntityId(arg0: number): void;

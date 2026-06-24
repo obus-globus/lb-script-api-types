@@ -16,6 +16,7 @@ export class AdvancementTab extends Object implements AdvancementTabAccessor {
     // private centered: boolean;
     readonly display: DisplayInfo;
     // private fade: number;
+    // private hovered: AdvancementWidget;
     // private icon: ItemStack;
     readonly index: number;
     // private maxX: number;
@@ -38,7 +39,7 @@ export class AdvancementTab extends Object implements AdvancementTabAccessor {
     extractContents(graphics: GuiGraphicsExtractor, windowLeft: number, windowTop: number): void;
     extractIcon(graphics: GuiGraphicsExtractor, xo: number, yo: number): void;
     extractTab(graphics: GuiGraphicsExtractor, xo: number, yo: number, mouseX: number, mouseY: number, selected: boolean): void;
-    extractTooltips(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, xo: number, yo: number): void;
+    extractTooltips(graphics: GuiGraphicsExtractor, xo: number, yo: number): void;
     fabric_getRoot(): AdvancementWidget;
     getDisplay(): DisplayInfo;
     getIndex(): number;
@@ -49,4 +50,5 @@ export class AdvancementTab extends Object implements AdvancementTabAccessor {
     getWidget(advancement: AdvancementHolder): AdvancementWidget;
     isMouseOver(xo: number, yo: number, mx: number, my: number): boolean;
     scroll(x: number, y: number): void;
+    tick(relativeMouseX: number, relativeMouseY: number): void;
 }

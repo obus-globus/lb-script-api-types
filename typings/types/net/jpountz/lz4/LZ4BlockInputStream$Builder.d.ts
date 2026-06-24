@@ -1,3 +1,4 @@
+import type { LZ4BlockInputStream$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { Checksum } from '../../../java/util/zip/Checksum.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -6,6 +7,7 @@ import type { LZ4FastDecompressor } from '../../../net/jpountz/lz4/LZ4FastDecomp
 import type { LZ4SafeDecompressor } from '../../../net/jpountz/lz4/LZ4SafeDecompressor.d.ts'
 export class LZ4BlockInputStream$Builder extends Object {
     private constructor()
+    constructor(arg0: LZ4BlockInputStream$1)
     // private checksum: Checksum;
     // private fastDecompressor: LZ4FastDecompressor;
     // private safeDecompressor: LZ4SafeDecompressor;

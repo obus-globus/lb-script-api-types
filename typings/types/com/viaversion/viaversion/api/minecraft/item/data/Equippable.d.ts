@@ -12,6 +12,9 @@ export class Equippable extends Record implements Rewritable {
     static TYPE1_21_2: Type<Equippable>;
     static TYPE1_21_5: Type<Equippable>;
     static TYPE1_21_6: Type<Equippable>;
+    constructor(arg0: number, arg1: Holder<SoundEvent>, arg2: string, arg3: string, arg4: HolderSet, arg5: boolean, arg6: boolean, arg7: boolean)
+    constructor(arg0: number, arg1: Holder<SoundEvent>, arg2: string, arg3: string, arg4: HolderSet, arg5: boolean, arg6: boolean, arg7: boolean, arg8: boolean)
+    constructor(equipmentSlot: number, soundEvent: Holder<SoundEvent>, model: string, cameraOverlay: string, allowedEntities: HolderSet, dispensable: boolean, swappable: boolean, damageOnHurt: boolean, equipOnInteract: boolean, canBeSheared: boolean, shearingSound: Holder<SoundEvent>)
     // private allowedEntities: HolderSet;
     // private cameraOverlay: string;
     // private canBeSheared: boolean;

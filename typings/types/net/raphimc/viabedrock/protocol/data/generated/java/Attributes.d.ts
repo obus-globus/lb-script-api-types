@@ -1,12 +1,15 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Attributes extends Object {
+    static AIR_DRAG_MODIFIER: string;
     static ARMOR: string;
     static ARMOR_TOUGHNESS: string;
     static ATTACK_DAMAGE: string;
     static ATTACK_KNOCKBACK: string;
     static ATTACK_SPEED: string;
+    static BELOW_NAME_DISTANCE: string;
     static BLOCK_BREAK_SPEED: string;
     static BLOCK_INTERACTION_RANGE: string;
+    static BOUNCINESS: string;
     static BURNING_TIME: string;
     static CAMERA_DISTANCE: string;
     static ENTITY_INTERACTION_RANGE: string;
@@ -14,6 +17,7 @@ export class Attributes extends Object {
     static FALL_DAMAGE_MULTIPLIER: string;
     static FLYING_SPEED: string;
     static FOLLOW_RANGE: string;
+    static FRICTION_MODIFIER: string;
     static GRAVITY: string;
     static JUMP_STRENGTH: string;
     static KNOCKBACK_RESISTANCE: string;
@@ -23,6 +27,7 @@ export class Attributes extends Object {
     static MINING_EFFICIENCY: string;
     static MOVEMENT_EFFICIENCY: string;
     static MOVEMENT_SPEED: string;
+    static NAME_TAG_DISTANCE: string;
     static OXYGEN_BONUS: string;
     static SAFE_FALL_DISTANCE: string;
     static SCALE: string;

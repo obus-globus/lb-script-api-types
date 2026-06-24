@@ -12,6 +12,7 @@ export class TrimPattern extends Record {
     static DIRECT_CODEC: Codec<TrimPattern>;
     static DIRECT_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, TrimPattern>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<TrimPattern>>;
+    constructor(assetId: Identifier, description: Component, decal: boolean)
     // private assetId: Identifier;
     // private decal: boolean;
     // private description: Component;

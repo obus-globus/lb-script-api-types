@@ -9,28 +9,33 @@ import type { KmFunctionExtension } from '../../../../../../kotlin/reflect/jvm/i
 export class KmFunction extends Object {
     constructor(arg0: number, arg1: string)
     readonly annotations: KmAnnotation[];
+    readonly compilerPluginMetadata: { [key: string]: number[] };
     readonly contextParameters: KmValueParameter[];
     // private contextReceiverTypes: KmType[];
     readonly contract: KmContract;
     readonly extensionReceiverParameterAnnotations: KmAnnotation[];
     // private extensions: KmFunctionExtension[];
     // private flags: number;
-    // private name: string;
+    readonly name: string;
     readonly receiverParameterType: KmType;
     returnType: KmType;
     readonly typeParameters: KmTypeParameter[];
     readonly valueParameters: KmValueParameter[];
     readonly versionRequirements: KmVersionRequirement[];
     getAnnotations(): KmAnnotation[];
+    getCompilerPluginMetadata(): { [key: string]: number[] };
     getContextParameters(): KmValueParameter[];
     getExtensionReceiverParameterAnnotations(): KmAnnotation[];
-    getExtensions$kotlin_metadata(): KmFunctionExtension[];
-    getFlags$kotlin_metadata(): number;
+    getExtensions$org_jetbrains_kotlin_kotlin_metadata(): KmFunctionExtension[];
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
+    getName(): string;
+    getReceiverParameterType(): KmType;
+    getReturnType(): KmType;
     getTypeParameters(): KmTypeParameter[];
     getValueParameters(): KmValueParameter[];
     getVersionRequirements(): KmVersionRequirement[];
     setContract(arg0: KmContract): void;
-    setFlags$kotlin_metadata(arg0: number): void;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
     setReceiverParameterType(arg0: KmType): void;
     setReturnType(arg0: KmType): void;
 }

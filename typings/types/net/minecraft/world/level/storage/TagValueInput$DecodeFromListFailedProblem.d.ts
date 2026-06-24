@@ -4,6 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Tag } from '../../../../../net/minecraft/nbt/Tag.d.ts'
 import type { ProblemReporter$Problem } from '../../../../../net/minecraft/util/ProblemReporter$Problem.d.ts'
 export class TagValueInput$DecodeFromListFailedProblem extends Record implements ProblemReporter$Problem {
+    constructor(name: string, index: number, tag: Tag, error: DataResult$Error<Object>)
     // private error: DataResult$Error<Object>;
     // private index: number;
     // private name: string;

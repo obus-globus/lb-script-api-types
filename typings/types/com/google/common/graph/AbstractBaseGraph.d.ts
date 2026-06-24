@@ -1,8 +1,10 @@
 import type { BaseGraph } from '../../../../com/google/common/graph/BaseGraph.d.ts'
 import type { ElementOrder } from '../../../../com/google/common/graph/ElementOrder.d.ts'
+import type { Network } from '../../../../com/google/common/graph/Network.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AbstractBaseGraph<N extends unknown> extends Object implements BaseGraph<N> {
     constructor()
+    asNetwork(): Network<N, N[]>;
     degree(node: N): number;
     edgeCount(): number;
     edges(): N[][];

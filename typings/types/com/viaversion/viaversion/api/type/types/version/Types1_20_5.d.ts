@@ -18,7 +18,7 @@ export class Types1_20_5<K extends VersionedStructuredDataKeys, E extends Abstra
     entityDataList: Type<EntityData[]>;
     entityDataTypes: E;
     item: Type<Item>;
-    itemArray: Type<Item[]>;
+    itemArray: ArrayType<Item>;
     itemCost: Type<Item>;
     lengthPrefixedItem: Type<Item>;
     lengthPrefixedStructuredData: LengthPrefixedStructuredDataType;
@@ -30,7 +30,7 @@ export class Types1_20_5<K extends VersionedStructuredDataKeys, E extends Abstra
     // private structuredDataKeys: K;
     initKeys(arg0: (param0: VersionedTypesHolder) => K): void;
     itemTemplate(): Type<Item>;
-    itemTemplateArray(): Type<Item[]>;
+    itemTemplateArray(): ArrayType<Item>;
     optionalItemTemplate(): Type<Item>;
     structuredDataKeys(): K;
 }

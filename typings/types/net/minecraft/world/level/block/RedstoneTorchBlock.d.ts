@@ -93,6 +93,7 @@ export class RedstoneTorchBlock extends BaseTorchBlock {
     neighborChanged(state: BlockState, level: Level, pos: BlockPos, block: Block, orientation: Orientation, movedByPiston: boolean): void;
     // private notifyNeighbors(level: Level, pos: BlockPos, state: BlockState): void;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     randomOrientation(level: Level, state: BlockState): Orientation;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;
 }

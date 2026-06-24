@@ -3,6 +3,8 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DepthStencilState extends Record {
     static DEFAULT: DepthStencilState;
+    constructor(depthTest: CompareOp, depthWrite: boolean)
+    constructor(depthTest: CompareOp, writeDepth: boolean, depthBiasScaleFactor: number, depthBiasConstant: number)
     // private depthBiasConstant: number;
     // private depthBiasScaleFactor: number;
     // private depthTest: CompareOp;

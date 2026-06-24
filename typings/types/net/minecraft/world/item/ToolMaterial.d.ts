@@ -13,6 +13,7 @@ export class ToolMaterial extends Record {
     static NETHERITE: ToolMaterial;
     static STONE: ToolMaterial;
     static WOOD: ToolMaterial;
+    constructor(incorrectBlocksForDrops: TagKey<Block>, durability: number, speed: number, attackDamageBonus: number, enchantmentValue: number, repairItems: TagKey<Item>)
     // private attackDamageBonus: number;
     // private durability: number;
     // private enchantmentValue: number;

@@ -53,7 +53,7 @@ export abstract class Collator extends Object implements Freezable<Collator>, Co
     static unregister(paramarg0: Object): boolean;
     constructor()
     // private checkNotFrozen(): void;
-    clone(): Object;
+    clone(): Collator;
     protected clone(): Object;
     cloneAsThawed(): Collator;
     compare(arg0: Object, arg1: Object): number;

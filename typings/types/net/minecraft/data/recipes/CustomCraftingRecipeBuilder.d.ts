@@ -1,5 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Criterion } from '../../../../net/minecraft/advancements/Criterion.d.ts'
+import type { Criterion } from '../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
 import type { CustomCraftingRecipeBuilder$Factory } from '../../../../net/minecraft/data/recipes/CustomCraftingRecipeBuilder$Factory.d.ts'
 import type { RecipeCategory } from '../../../../net/minecraft/data/recipes/RecipeCategory.d.ts'
 import type { RecipeOutput } from '../../../../net/minecraft/data/recipes/RecipeOutput.d.ts'

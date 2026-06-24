@@ -3,6 +3,7 @@ import type { BooleanConsumer } from '../../../../../it/unimi/dsi/fastutil/boole
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../../net/minecraft/client/gui/components/Button.d.ts'
+import type { LayoutElement } from '../../../../../net/minecraft/client/gui/layouts/LayoutElement.d.ts'
 import type { LinearLayout } from '../../../../../net/minecraft/client/gui/layouts/LinearLayout.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
@@ -32,6 +33,7 @@ export class ConfirmScreen extends Screen implements IConfirmScreen {
     // private yesButtonComponent: Component;
     addAdditionalText(): void;
     addButtons(buttonLayout: LinearLayout): void;
+    addMessage(): LayoutElement;
     getNarrationMessage(): Component;
     init(): void;
     init(width: number, height: number): void;

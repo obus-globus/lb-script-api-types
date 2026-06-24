@@ -35,6 +35,7 @@ export class GameTestServer extends MinecraftServer {
     static DEFAULT_GAME_RULES: () => GameRules;
     static DEMO_SETTINGS: LevelSettings;
     static NULL: CommandSource;
+    static SERVER_THREAD_NAME: string;
     static SPAWN_POSITION_SEARCH_RADIUS: number;
     static VANILLA_BRAND: string;
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
@@ -53,6 +54,8 @@ export class GameTestServer extends MinecraftServer {
     // private verify: boolean;
     // private evaluateTestsToRun(level: ServerLevel): GameTestBatch[];
     fillServerSystemReport(systemReport: SystemReport): SystemReport;
+    getChatSpamThresholdSeconds(): number;
+    getCommandSpamThresholdSeconds(): number;
     getFunctionCompilationPermissions(): PermissionSet;
     getMaxPlayers(): number;
     getRateLimitPacketsPerSecond(): number;

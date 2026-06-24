@@ -13,7 +13,8 @@ import type { ReportedException } from '../../../../../../../../../net/minecraft
 import type { BlockPos } from '../../../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Vector3dc } from '../../../../../../../../../org/joml/Vector3dc.d.ts'
 export class ChunkBuilderMeshingTask extends ChunkBuilderTask<ChunkBuildOutput> {
-    constructor(arg0: RenderSection, arg1: number, arg2: Vector3dc, arg3: ChunkRenderContext, arg4: SortBehavior, arg5: boolean)
+    constructor(arg0: RenderSection, arg1: number, arg2: Vector3dc, arg3: ChunkRenderContext, arg4: SortBehavior, arg5: boolean, arg6: boolean)
+    // private blockingTask: boolean;
     // private forceSort: boolean;
     // private renderContext: ChunkRenderContext;
     // private sortBehavior: SortBehavior;

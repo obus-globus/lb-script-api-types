@@ -8,6 +8,7 @@ import type { TextInput$MultilineOptions } from '../../../../../net/minecraft/se
 export class TextInput extends Record implements InputControl {
     static MAP_CODEC: MapCodec<InputControl>;
     static MAP_CODEC: MapCodec<TextInput>;
+    constructor(width: number, label: Component, labelVisible: boolean, initial: string, maxLength: number, multiline: Optional<TextInput$MultilineOptions>)
     // private initial: string;
     // private label: Component;
     // private labelVisible: boolean;

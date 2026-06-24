@@ -7,6 +7,7 @@ import type { SpriteLoaderPreparationsExtension } from '../../../../../net/fabri
 import type { TextureAtlasSprite } from '../../../../../net/minecraft/client/renderer/texture/TextureAtlasSprite.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class SpriteLoader$Preparations extends Record implements FabricPreparations, SpriteLoaderPreparationsExtension {
+    constructor(width: number, height: number, mipLevel: number, missing: TextureAtlasSprite, regions: Map<Identifier, TextureAtlasSprite>, readyForUpload: CompletableFuture<void>)
     // private height: number;
     // private mipLevel: number;
     // private missing: TextureAtlasSprite;

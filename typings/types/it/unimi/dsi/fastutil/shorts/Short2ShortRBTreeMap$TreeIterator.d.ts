@@ -1,8 +1,8 @@
 import type { Short2ShortRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ShortRBTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ShortRBTreeMap$TreeIterator extends Object {
-    constructor(null_: Short2ShortRBTreeMap$TreeIterator)
-    constructor(null_: Short2ShortRBTreeMap$TreeIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private curr: Short2ShortRBTreeMap$Entry;
     // private index: number;
     // private next: Short2ShortRBTreeMap$Entry;

@@ -1,0 +1,60 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { IntBuffer } from '../../../java/nio/IntBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { Struct$StructValidation } from '../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+import type { VkMutableDescriptorTypeListEXT } from '../../../org/lwjgl/vulkan/VkMutableDescriptorTypeListEXT.d.ts'
+export class VkMutableDescriptorTypeListVALVE extends VkMutableDescriptorTypeListEXT {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static DESCRIPTORTYPECOUNT: number;
+    static PDESCRIPTORTYPES: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static SIZEOF: number;
+    static calloc(): VkMutableDescriptorTypeListEXT;
+    static calloc(paramarg0: MemoryStack): VkMutableDescriptorTypeListEXT;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static calloc(): VkMutableDescriptorTypeListVALVE;
+    static calloc(paramarg0: MemoryStack): VkMutableDescriptorTypeListVALVE;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): VkMutableDescriptorTypeListEXT;
+    static create(paramarg0: number): VkMutableDescriptorTypeListEXT;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static create(): VkMutableDescriptorTypeListVALVE;
+    static create(paramarg0: number): VkMutableDescriptorTypeListVALVE;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkMutableDescriptorTypeListEXT;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkMutableDescriptorTypeListVALVE;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): VkMutableDescriptorTypeListEXT;
+    static malloc(paramarg0: MemoryStack): VkMutableDescriptorTypeListEXT;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static malloc(): VkMutableDescriptorTypeListVALVE;
+    static malloc(paramarg0: MemoryStack): VkMutableDescriptorTypeListVALVE;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static ndescriptorTypeCount(paramarg0: number): number;
+    static ndescriptorTypeCount(paramarg0: number, paramarg1: number): void;
+    static npDescriptorTypes(paramarg0: number): IntBuffer;
+    static npDescriptorTypes(paramarg0: number, paramarg1: IntBuffer): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    create(arg0: number, arg1: ByteBuffer): VkMutableDescriptorTypeListVALVE;
+    pDescriptorTypes(): IntBuffer;
+    pDescriptorTypes(arg0: IntBuffer): VkMutableDescriptorTypeListVALVE;
+    set(arg0: VkMutableDescriptorTypeListEXT): VkMutableDescriptorTypeListEXT;
+    set(arg0: VkMutableDescriptorTypeListVALVE): VkMutableDescriptorTypeListVALVE;
+}

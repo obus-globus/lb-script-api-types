@@ -5,6 +5,7 @@ import type { FabricLootPoolBuilder } from '../../../../../../net/fabricmc/fabri
 import type { LootPool } from '../../../../../../net/minecraft/world/level/storage/loot/LootPool.d.ts'
 import type { LootPoolEntryContainer } from '../../../../../../net/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer.d.ts'
 import type { LootPoolEntryContainer$Builder } from '../../../../../../net/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder.d.ts'
+import type { LootPoolSingletonContainer$Builder } from '../../../../../../net/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder.d.ts'
 import type { FunctionUserBuilder } from '../../../../../../net/minecraft/world/level/storage/loot/functions/FunctionUserBuilder.d.ts'
 import type { LootItemFunction } from '../../../../../../net/minecraft/world/level/storage/loot/functions/LootItemFunction.d.ts'
 import type { LootItemFunction$Builder } from '../../../../../../net/minecraft/world/level/storage/loot/functions/LootItemFunction$Builder.d.ts'
@@ -24,6 +25,7 @@ export class LootPool$Builder extends Object implements FabricLootPoolBuilder, F
     add(arg0: LootPoolEntryContainer): LootPool$Builder;
     add(arg0: (Object | null)[]): LootPool$Builder;
     add(entry: LootPoolEntryContainer$Builder<any>): LootPool$Builder;
+    addAll(entries: LootPoolSingletonContainer$Builder<any>[]): LootPool$Builder;
     apply(arg0: LootItemFunction[]): LootPool$Builder;
     apply(arg0: LootItemFunction): LootPool$Builder;
     apply<E extends unknown>(collection: E[], functionProvider: (param0: E) => LootItemFunction$Builder): LootPool$Builder;

@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TextGizmo$Style } from '../../../../../net/minecraft/gizmos/TextGizmo$Style.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class DrawableGizmoPrimitives$Text extends Record {
-    private constructor(pos: Vec3, text: string, style: TextGizmo$Style)
+    constructor(pos: Vec3, text: string, style: TextGizmo$Style)
     // private pos: Vec3;
     // private style: TextGizmo$Style;
     // private text: string;

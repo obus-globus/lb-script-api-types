@@ -17,7 +17,6 @@ export abstract class Model<S extends unknown> extends Object implements FabricM
     copyTransforms(arg0: Model<Object>): void;
     fabric$calculateChildParts(arg0: ModelPart): void;
     getChildPart(arg0: string): ModelPart;
-    renderToBuffer(poseStack: PoseStack, buffer: VertexConsumer, lightCoords: number, overlayCoords: number): void;
     renderToBuffer(poseStack: PoseStack, buffer: VertexConsumer, lightCoords: number, overlayCoords: number, color: number): void;
     renderType(): (param0: Identifier) => RenderType;
     renderType(texture: Identifier): RenderType;

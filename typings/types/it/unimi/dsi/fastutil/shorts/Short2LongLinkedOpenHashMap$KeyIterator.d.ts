@@ -2,8 +2,8 @@ import type { Short2LongLinkedOpenHashMap$MapIterator } from '../../../../../it/
 import type { ShortConsumer } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortConsumer.d.ts'
 import type { ShortListIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortListIterator.d.ts'
 export class Short2LongLinkedOpenHashMap$KeyIterator extends Short2LongLinkedOpenHashMap$MapIterator<(param0: number) => void> implements ShortListIterator {
-    constructor(null_: Short2LongLinkedOpenHashMap$KeyIterator)
-    constructor(null_: Short2LongLinkedOpenHashMap$KeyIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

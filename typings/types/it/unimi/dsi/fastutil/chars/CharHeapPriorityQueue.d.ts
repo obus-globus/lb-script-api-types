@@ -5,8 +5,6 @@ import type { ObjectOutputStream } from '../../../../../java/io/ObjectOutputStre
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharHeapPriorityQueue extends Object implements CharPriorityQueue, Serializable {
-    constructor(arg0: string[])
-    constructor(arg0: string[], arg1: (param0: string, param1: string) => number)
     constructor()
     constructor(arg0: (Object | null)[])
     constructor(arg0: (Object | null)[], arg1: (param0: string, param1: string) => number)
@@ -17,6 +15,8 @@ export class CharHeapPriorityQueue extends Object implements CharPriorityQueue, 
     constructor(arg0: string[], arg1: number, arg2: (param0: string, param1: string) => number)
     constructor(arg0: number)
     constructor(arg0: number, arg1: (param0: string, param1: string) => number)
+    constructor(arg0: string[])
+    constructor(arg0: string[], arg1: (param0: string, param1: string) => number)
     // private c: (param0: string, param1: string) => number;
     // private heap: string[];
     // private size: number;

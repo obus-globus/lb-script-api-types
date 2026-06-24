@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { KineticWeapon } from '../../../../../net/minecraft/world/item/component/KineticWeapon.d.ts'
 export class SpearAnimations$UseParams extends Record {
     static fromKineticWeapon(paramkineticWeapon: KineticWeapon, paramtime: number): SpearAnimations$UseParams;
+    private constructor(raiseProgress: number, raiseProgressStart: number, raiseProgressMiddle: number, raiseProgressEnd: number, swayProgress: number, lowerProgress: number, raiseBackProgress: number, swayIntensity: number, swayScaleSlow: number, swayScaleFast: number)
     // private lowerProgress: number;
     // private raiseBackProgress: number;
     // private raiseProgress: number;

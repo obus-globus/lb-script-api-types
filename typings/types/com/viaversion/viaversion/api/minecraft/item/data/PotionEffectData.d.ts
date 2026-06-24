@@ -4,6 +4,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PotionEffectData extends Record {
     static OPTIONAL_TYPE: Type<PotionEffectData>;
     static TYPE: Type<PotionEffectData>;
+    constructor(amplifier: number, duration: number, ambient: boolean, showParticles: boolean, showIcon: boolean, hiddenEffect: PotionEffectData)
     // private ambient: boolean;
     // private amplifier: number;
     // private duration: number;

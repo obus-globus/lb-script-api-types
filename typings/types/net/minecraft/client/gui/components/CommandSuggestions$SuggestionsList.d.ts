@@ -1,12 +1,13 @@
 import type { Suggestion } from '../../../../../com/mojang/brigadier/suggestion/Suggestion.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
+import type { CommandSuggestions } from '../../../../../net/minecraft/client/gui/components/CommandSuggestions.d.ts'
 import type { KeyEvent } from '../../../../../net/minecraft/client/input/KeyEvent.d.ts'
 import type { Rect2i } from '../../../../../net/minecraft/client/renderer/Rect2i.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Vec2 } from '../../../../../net/minecraft/world/phys/Vec2.d.ts'
 export class CommandSuggestions$SuggestionsList extends Object {
-    private constructor(null_: CommandSuggestions$SuggestionsList, y: number, width: number, suggestionList: Suggestion[], immediateNarration: boolean)
+    private constructor(null_: CommandSuggestions, x: number, y: number, width: number, suggestionList: Suggestion[], immediateNarration: boolean)
     // private current: number;
     // private lastMouse: Vec2;
     // private lastNarratedEntry: number;

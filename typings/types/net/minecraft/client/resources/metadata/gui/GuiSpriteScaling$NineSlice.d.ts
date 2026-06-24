@@ -9,6 +9,7 @@ export class GuiSpriteScaling$NineSlice extends Record implements GuiSpriteScali
     static CODEC: Codec<GuiSpriteScaling>;
     static CODEC: MapCodec<GuiSpriteScaling$NineSlice>;
     static DEFAULT: GuiSpriteScaling;
+    constructor(width: number, height: number, border: GuiSpriteScaling$NineSlice$Border, stretchInner: boolean)
     // private border: GuiSpriteScaling$NineSlice$Border;
     // private height: number;
     // private stretchInner: boolean;

@@ -19,12 +19,12 @@ export class YggdrasilUserApiService extends Object implements UserApiService {
     // private blockList: UUID[];
     // private environment: Environment;
     // private minecraftClient: MinecraftClient;
-    // private nextAcceptableBlockRequest: Instant;
+    // private nextAcceptableRequest: Instant;
     // private routeAbuseReport: URL;
     // private routeBlocklist: URL;
     // private routeKeyPair: URL;
     // private routePrivileges: URL;
-    // private canMakeBlockListRequest(): boolean;
+    // private canMakeRequest(): boolean;
     canSendReports(): boolean;
     // private fetchBlockList(): UUID[];
     fetchProperties(): UserApiService$UserProperties;

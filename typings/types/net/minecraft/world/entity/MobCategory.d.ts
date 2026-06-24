@@ -27,12 +27,14 @@ export class MobCategory extends Enum<MobCategory> implements StringRepresentabl
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): MobCategory;
     static values(): (Object | null)[];
-    private constructor(name: string, max: number, isFriendly: boolean, isPersistent: boolean, despawnDistance: number)
+    private constructor(name: string, debugAbbreviation: string, max: number, isFriendly: boolean, isPersistent: boolean, despawnDistance: number)
+    readonly debugAbbreviation: string;
     readonly despawnDistance: number;
     // private isFriendly: boolean;
     // private isPersistent: boolean;
     // private max: number;
     readonly noDespawnDistance: number;
+    getDebugAbbreviation(): string;
     getDespawnDistance(): number;
     getMaxInstancesPerChunk(): number;
     getName(): string;

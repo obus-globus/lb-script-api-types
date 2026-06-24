@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ChunkLightStorage$ChunkLight extends Record {
+    constructor(skyLight: number[][], blockLight: number[][])
     // private blockLight: number[][];
     // private skyLight: number[][];
     blockLight(): number[][];

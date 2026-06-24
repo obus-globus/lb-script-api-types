@@ -1,5 +1,5 @@
-import type { AbstractJsonTreeEncoder$inlineUnquotedLiteralEncoder$1 } from '../../../../net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1.d.ts'
-import type { AbstractJsonTreeEncoder$inlineUnsignedNumberEncoder$1 } from '../../../../net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1.d.ts'
+import type { AbstractJsonTreeEncoder$inlineUnquotedLiteralEncoder$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
+import type { AbstractJsonTreeEncoder$inlineUnsignedNumberEncoder$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { SerializationStrategy } from '../../../../kotlinx/serialization/SerializationStrategy.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'

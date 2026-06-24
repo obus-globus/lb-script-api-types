@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AttributeModifierOperation } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/AttributeModifierOperation.d.ts'
 import type { AttributeOperands } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/AttributeOperands.d.ts'
 export class EntityAttribute$Modifier extends Record {
+    constructor(id: string, name: string, amount: number, operation: AttributeModifierOperation, operand: AttributeOperands, isSerializable: boolean)
     // private amount: number;
     // private id: string;
     // private isSerializable: boolean;

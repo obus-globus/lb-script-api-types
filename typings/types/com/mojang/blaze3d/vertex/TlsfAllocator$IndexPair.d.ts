@@ -1,6 +1,7 @@
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TlsfAllocator$IndexPair extends Record {
+    private constructor(firstLevelIndex: number, secondLevelIndex: number)
     // private firstLevelIndex: number;
     // private secondLevelIndex: number;
     equals(o: Object | null): boolean;

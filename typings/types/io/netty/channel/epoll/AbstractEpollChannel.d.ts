@@ -22,7 +22,7 @@ export abstract class AbstractEpollChannel extends AbstractChannel implements Un
     active: boolean;
     // private connectPromise: ChannelPromise;
     // private connectTimeoutFuture: Future<Object>;
-    // private inital: EpollIoOps;
+    // private initial: EpollIoOps;
     // private inputClosedSeenErrorOnRead: boolean;
     // private local: SocketAddress;
     // private ops: EpollIoOps;
@@ -60,4 +60,5 @@ export abstract class AbstractEpollChannel extends AbstractChannel implements Un
     resetCachedAddresses(): void;
     setFlag(arg0: number): void;
     shouldBreakEpollInReady(arg0: ChannelConfig): boolean;
+    submitCurrentOps(): void;
 }

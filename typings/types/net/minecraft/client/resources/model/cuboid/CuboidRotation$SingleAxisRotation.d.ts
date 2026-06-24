@@ -4,6 +4,7 @@ import type { CuboidRotation$RotationValue } from '../../../../../../net/minecra
 import type { Direction$Axis } from '../../../../../../net/minecraft/core/Direction$Axis.d.ts'
 import type { Matrix4f } from '../../../../../../org/joml/Matrix4f.d.ts'
 export class CuboidRotation$SingleAxisRotation extends Record implements CuboidRotation$RotationValue {
+    constructor(axis: Direction$Axis, angle: number)
     // private angle: number;
     // private axis: Direction$Axis;
     angle(): number;

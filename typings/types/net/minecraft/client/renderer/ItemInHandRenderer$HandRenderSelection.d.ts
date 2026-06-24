@@ -11,7 +11,7 @@ export class ItemInHandRenderer$HandRenderSelection extends Enum<ItemInHandRende
     static valueOf(paramname: string): ItemInHandRenderer$HandRenderSelection;
     static values(): (Object | null)[];
     private constructor(renderMainHand: boolean, renderOffHand: boolean)
-    // private renderMainHand: boolean;
-    // private renderOffHand: boolean;
+    renderMainHand: boolean;
+    renderOffHand: boolean;
     name(): "RENDER_BOTH_HANDS" | "RENDER_MAIN_HAND_ONLY" | "RENDER_OFF_HAND_ONLY";
 }

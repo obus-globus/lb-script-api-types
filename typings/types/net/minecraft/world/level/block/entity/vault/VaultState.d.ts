@@ -9,7 +9,6 @@ import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.
 import type { ServerLevel } from '../../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { StringRepresentable } from '../../../../../../../net/minecraft/util/StringRepresentable.d.ts'
 import type { StringRepresentable$EnumCodec } from '../../../../../../../net/minecraft/util/StringRepresentable$EnumCodec.d.ts'
-import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { VaultConfig } from '../../../../../../../net/minecraft/world/level/block/entity/vault/VaultConfig.d.ts'
 import type { VaultServerData } from '../../../../../../../net/minecraft/world/level/block/entity/vault/VaultServerData.d.ts'
 import type { VaultSharedData } from '../../../../../../../net/minecraft/world/level/block/entity/vault/VaultSharedData.d.ts'
@@ -32,7 +31,6 @@ export class VaultState extends Enum<VaultState> implements StringRepresentable 
     private constructor(stateName: string, lightLevel: VaultState$LightLevel)
     // private lightLevel: VaultState$LightLevel;
     // private stateName: string;
-    // private ejectResultItem(serverLevel: ServerLevel, pos: BlockPos, itemToEject: ItemStack, ejectionSoundProgress: number): void;
     getSerializedName(): string;
     lightLevel(): number;
     onEnter(serverLevel: ServerLevel, pos: BlockPos, config: VaultConfig, sharedData: VaultSharedData, isOminous: boolean): void;

@@ -1,0 +1,72 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { Struct$StructValidation } from '../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+import type { VkPhysicalDeviceInlineUniformBlockFeatures } from '../../../org/lwjgl/vulkan/VkPhysicalDeviceInlineUniformBlockFeatures.d.ts'
+export class VkPhysicalDeviceInlineUniformBlockFeaturesEXT extends VkPhysicalDeviceInlineUniformBlockFeatures {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static DESCRIPTORBINDINGINLINEUNIFORMBLOCKUPDATEAFTERBIND: number;
+    static INLINEUNIFORMBLOCK: number;
+    static PNEXT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static SIZEOF: number;
+    static STYPE: number;
+    static calloc(): VkPhysicalDeviceInlineUniformBlockFeatures;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceInlineUniformBlockFeatures;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static calloc(): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): VkPhysicalDeviceInlineUniformBlockFeatures;
+    static create(paramarg0: number): VkPhysicalDeviceInlineUniformBlockFeatures;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static create(): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    static create(paramarg0: number): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceInlineUniformBlockFeatures;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): VkPhysicalDeviceInlineUniformBlockFeatures;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceInlineUniformBlockFeatures;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static malloc(): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static ndescriptorBindingInlineUniformBlockUpdateAfterBind(paramarg0: number): number;
+    static ndescriptorBindingInlineUniformBlockUpdateAfterBind(paramarg0: number, paramarg1: number): void;
+    static ninlineUniformBlock(paramarg0: number): number;
+    static ninlineUniformBlock(paramarg0: number, paramarg1: number): void;
+    static npNext(paramarg0: number): number;
+    static npNext(paramarg0: number, paramarg1: number): void;
+    static nsType(paramarg0: number): number;
+    static nsType(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    create(arg0: number, arg1: ByteBuffer): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    descriptorBindingInlineUniformBlockUpdateAfterBind(): boolean;
+    descriptorBindingInlineUniformBlockUpdateAfterBind(arg0: boolean): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    inlineUniformBlock(): boolean;
+    inlineUniformBlock(arg0: boolean): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    pNext(): number;
+    pNext(arg0: number): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    sType(): number;
+    sType(arg0: number): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    sType$Default(): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    set(arg0: number, arg1: number, arg2: boolean, arg3: boolean): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+    set(arg0: VkPhysicalDeviceInlineUniformBlockFeatures): VkPhysicalDeviceInlineUniformBlockFeatures;
+    set(arg0: VkPhysicalDeviceInlineUniformBlockFeaturesEXT): VkPhysicalDeviceInlineUniformBlockFeaturesEXT;
+}

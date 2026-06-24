@@ -61,7 +61,7 @@ import type { ServerboundSetJigsawBlockPacket } from '../../../../../net/minecra
 import type { ServerboundSetStructureBlockPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSetStructureBlockPacket.d.ts'
 import type { ServerboundSetTestBlockPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSetTestBlockPacket.d.ts'
 import type { ServerboundSignUpdatePacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSignUpdatePacket.d.ts'
-import type { ServerboundSpectateEntityPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSpectateEntityPacket.d.ts'
+import type { ServerboundSpectatorActionPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSpectatorActionPacket.d.ts'
 import type { ServerboundSwingPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSwingPacket.d.ts'
 import type { ServerboundTeleportToEntityPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundTeleportToEntityPacket.d.ts'
 import type { ServerboundTestInstanceBlockActionPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundTestInstanceBlockActionPacket.d.ts'
@@ -131,7 +131,7 @@ export interface ServerGamePacketListener extends Object, ServerCommonPacketList
     handleSetTestBlock(packet: ServerboundSetTestBlockPacket): void;
     handleSignUpdate(packet: ServerboundSignUpdatePacket): void;
     handleSignedChatCommand(packet: ServerboundChatCommandSignedPacket): void;
-    handleSpectateEntity(packet: ServerboundSpectateEntityPacket): void;
+    handleSpectatorAction(packet: ServerboundSpectatorActionPacket): void;
     handleTeleportToEntityPacket(packet: ServerboundTeleportToEntityPacket): void;
     handleTestInstanceBlockAction(packet: ServerboundTestInstanceBlockActionPacket): void;
     handleUseItem(packet: ServerboundUseItemPacket): void;

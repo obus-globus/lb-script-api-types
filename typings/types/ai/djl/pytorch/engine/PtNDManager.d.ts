@@ -1,3 +1,4 @@
+import type { PtNDManager$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Device } from '../../../../ai/djl/Device.d.ts'
 import type { Engine } from '../../../../ai/djl/engine/Engine.d.ts'
 import type { BaseNDManager } from '../../../../ai/djl/ndarray/BaseNDManager.d.ts'
@@ -17,6 +18,7 @@ export class PtNDManager extends BaseNDManager {
     static copyBuffer(paramarg0: Buffer, paramarg1: ByteBuffer): void;
     static validateBuffer(paramarg0: Buffer, paramarg1: DataType, paramarg2: number): void;
     private constructor(arg0: NDManager, arg1: Device)
+    constructor(arg0: NDManager, arg1: Device, arg2: PtNDManager$1)
     allocateDirect(arg0: number): ByteBuffer;
     arange(arg0: number): NDArray;
     arange(arg0: number, arg1: number): NDArray;

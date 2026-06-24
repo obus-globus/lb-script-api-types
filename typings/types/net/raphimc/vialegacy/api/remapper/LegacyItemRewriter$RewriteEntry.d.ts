@@ -2,6 +2,7 @@ import type { Item } from '../../../../../com/viaversion/viaversion/api/minecraf
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LegacyItemRewriter$RewriteEntry extends Record {
+    private constructor(oldItemID: number, oldItemMeta: number, newItemID: number, newItemMeta: number, newItemName: string)
     // private newItemID: number;
     // private newItemMeta: number;
     // private newItemName: string;

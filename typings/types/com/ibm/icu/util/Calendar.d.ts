@@ -111,7 +111,7 @@ export abstract class Calendar extends Object implements Serializable, Cloneable
     before(arg0: Object): boolean;
     clear(): void;
     clear(arg0: number): void;
-    clone(): Object;
+    clone(): Calendar;
     protected clone(): Object;
     // private compare(arg0: Object): number;
     compareTo(arg0: Calendar): number;
@@ -156,6 +156,7 @@ export abstract class Calendar extends Object implements Serializable, Cloneable
     getMinimalDaysInFirstWeek(): number;
     getMinimum(arg0: number): number;
     getRelatedYear(): number;
+    getRelatedYearDifference(): number;
     getRepeatedWallTimeOption(): number;
     getSkippedWallTimeOption(): number;
     getStamp(arg0: number): number;

@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class GameRule extends Record {
+    constructor(name: string, editable: boolean, value: Object)
     // private editable: boolean;
     // private name: string;
     // private value: Object;

@@ -101,12 +101,12 @@ export class DetectorRailBlock extends BaseRailBlock {
     // private getInteractingMinecartOfType<T extends AbstractMinecart>(level: Level, pos: BlockPos, type: Class<T>, containerEntitySelector: (param0: Entity) => boolean): T[];
     // private getSearchBB(pos: BlockPos): AABB;
     getShapeProperty(): Property<RailShape>;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     hasAnalogOutputSignal(state: BlockState): boolean;
     isSignalSource(state: BlockState): boolean;
     mirror(state: BlockState, mirror: Mirror): BlockState;
     mirror(shape: RailShape, mirror: Mirror): RailShape;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     rotate(state: BlockState, rotation: Rotation): BlockState;
     rotate(shape: RailShape, rotation: Rotation): RailShape;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;

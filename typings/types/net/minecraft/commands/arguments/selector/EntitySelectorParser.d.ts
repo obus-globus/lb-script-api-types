@@ -11,10 +11,12 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FabricEntitySelectorParser } from '../../../../../net/fabricmc/fabric/api/command/v2/FabricEntitySelectorParser.d.ts'
-import type { MinMaxBounds$Doubles } from '../../../../../net/minecraft/advancements/criterion/MinMaxBounds$Doubles.d.ts'
-import type { MinMaxBounds$FloatDegrees } from '../../../../../net/minecraft/advancements/criterion/MinMaxBounds$FloatDegrees.d.ts'
-import type { MinMaxBounds$Ints } from '../../../../../net/minecraft/advancements/criterion/MinMaxBounds$Ints.d.ts'
+import type { MinMaxBounds$Doubles } from '../../../../../net/minecraft/advancements/predicates/MinMaxBounds$Doubles.d.ts'
+import type { MinMaxBounds$FloatDegrees } from '../../../../../net/minecraft/advancements/predicates/MinMaxBounds$FloatDegrees.d.ts'
+import type { MinMaxBounds$Ints } from '../../../../../net/minecraft/advancements/predicates/MinMaxBounds$Ints.d.ts'
 import type { EntitySelector } from '../../../../../net/minecraft/commands/arguments/selector/EntitySelector.d.ts'
+import type { InvertableSetOptionState } from '../../../../../net/minecraft/commands/arguments/selector/options/InvertableSetOptionState.d.ts'
+import type { SetOnceOptionState } from '../../../../../net/minecraft/commands/arguments/selector/options/SetOnceOptionState.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { PermissionSetSupplier } from '../../../../../net/minecraft/server/permissions/PermissionSetSupplier.d.ts'
 import type { ToFloatFunction } from '../../../../../net/minecraft/util/ToFloatFunction.d.ts'
@@ -40,6 +42,7 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     static allowSelectors(paramsource: Object | null): boolean;
     static allowSelectors(paramsource: PermissionSetSupplier): boolean;
     constructor(reader: StringReader, allowSelectors: boolean)
+    // private advancementsOption: SetOnceOptionState;
     // private allowSelectors: boolean;
     readonly currentEntity: boolean;
     readonly deltaX: number;
@@ -48,31 +51,37 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     readonly distance: MinMaxBounds$Doubles;
     // private entityUUID: UUID;
     // private flags: (Object | null)[];
+    // private gamemodeOption: InvertableSetOptionState;
     readonly includesEntities: boolean;
-    // private isLimited: boolean;
-    // private isSorted: boolean;
     readonly level: MinMaxBounds$Ints;
+    // private limitedOption: SetOnceOptionState;
     readonly maxResults: number;
+    // private nameOption: InvertableSetOptionState;
     readonly order: (param0: Vec3, param1: Entity[]) => void;
     // private playerName: string;
     // private predicates: (param0: Entity) => boolean[];
     readonly reader: StringReader;
     readonly rotX: MinMaxBounds$FloatDegrees;
     readonly rotY: MinMaxBounds$FloatDegrees;
+    // private scoresOption: SetOnceOptionState;
+    // private sortedOption: SetOnceOptionState;
     // private startPosition: number;
     readonly suggestions: (param0: SuggestionsBuilder, param1: (param0: SuggestionsBuilder) => void) => CompletableFuture<Suggestions>;
+    // private teamOption: InvertableSetOptionState;
     // private type: EntityType<any>;
-    // private typeInverse: boolean;
+    // private typeOption: InvertableSetOptionState;
     // private usesSelectors: boolean;
     // private worldLimited: boolean;
     readonly x: number;
     readonly y: number;
     readonly z: number;
     addPredicate(predicate: (param0: Entity) => boolean): void;
+    advancementsOption(): SetOnceOptionState;
     // private createAabb(x: number, y: number, z: number): AABB;
     // private createRotationPredicate(range: MinMaxBounds$FloatDegrees, function_: (param0: Entity) => number): (param0: Entity) => boolean;
     fillSuggestions(builder: SuggestionsBuilder, names: (param0: SuggestionsBuilder) => void): CompletableFuture<Suggestions>;
     // private finalizePredicates(): void;
+    gamemodeOption(): InvertableSetOptionState;
     getCustomFlag(arg0: Identifier): boolean;
     getDeltaX(): number;
     getDeltaY(): number;
@@ -87,53 +96,34 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     getX(): number;
     getY(): number;
     getZ(): number;
-    hasAdvancements(): boolean;
-    hasGamemodeEquals(): boolean;
-    hasGamemodeNotEquals(): boolean;
-    hasNameEquals(): boolean;
-    hasNameNotEquals(): boolean;
-    hasScores(): boolean;
-    hasTeamEquals(): boolean;
-    hasTeamNotEquals(): boolean;
     isCurrentEntity(): boolean;
-    isLimited(): boolean;
-    isSorted(): boolean;
     isTag(): boolean;
-    isTypeLimited(): boolean;
-    isTypeLimitedInversely(): boolean;
     limitToType(type: EntityType<any>): void;
+    limitedOption(): SetOnceOptionState;
+    nameOption(): InvertableSetOptionState;
     parse(): EntitySelector;
     parseNameOrUUID(): void;
     parseOptions(): void;
     parseSelector(): void;
+    scoresOption(): SetOnceOptionState;
     setCustomFlag(arg0: Identifier, arg1: boolean): void;
     setDeltaX(deltaX: number): void;
     setDeltaY(deltaY: number): void;
     setDeltaZ(deltaZ: number): void;
     setDistance(distance: MinMaxBounds$Doubles): void;
-    setHasAdvancements(hasAdvancements: boolean): void;
-    setHasGamemodeEquals(hasGamemodeEquals: boolean): void;
-    setHasGamemodeNotEquals(hasGamemodeNotEquals: boolean): void;
-    setHasNameEquals(hasNameEquals: boolean): void;
-    setHasNameNotEquals(hasNameNotEquals: boolean): void;
-    setHasScores(hasScores: boolean): void;
-    setHasTeamEquals(hasTeamEquals: boolean): void;
-    setHasTeamNotEquals(hasTeamNotEquals: boolean): void;
     setIncludesEntities(includesEntities: boolean): void;
     setLevel(level: MinMaxBounds$Ints): void;
-    setLimited(limited: boolean): void;
     setMaxResults(maxResults: number): void;
     setOrder(order: (param0: Vec3, param1: Entity[]) => void): void;
     setRotX(rotX: MinMaxBounds$FloatDegrees): void;
     setRotY(rotY: MinMaxBounds$FloatDegrees): void;
-    setSorted(sorted: boolean): void;
     setSuggestions(suggestions: (param0: SuggestionsBuilder, param1: (param0: SuggestionsBuilder) => void) => CompletableFuture<Suggestions>): void;
-    setTypeLimitedInversely(): void;
     setWorldLimited(): void;
     setX(x: number): void;
     setY(y: number): void;
     setZ(z: number): void;
     shouldInvertValue(): boolean;
+    sortedOption(): SetOnceOptionState;
     // private suggestEquals(builder: SuggestionsBuilder, names: (param0: SuggestionsBuilder) => void): CompletableFuture<Suggestions>;
     // private suggestName(builder: SuggestionsBuilder, names: (param0: SuggestionsBuilder) => void): CompletableFuture<Suggestions>;
     // private suggestNameOrSelector(builder: SuggestionsBuilder, names: (param0: SuggestionsBuilder) => void): CompletableFuture<Suggestions>;
@@ -142,4 +132,6 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     // private suggestOptionsKeyOrClose(builder: SuggestionsBuilder, names: (param0: SuggestionsBuilder) => void): CompletableFuture<Suggestions>;
     // private suggestOptionsNextOrClose(builder: SuggestionsBuilder, names: (param0: SuggestionsBuilder) => void): CompletableFuture<Suggestions>;
     // private suggestSelector(builder: SuggestionsBuilder, names: (param0: SuggestionsBuilder) => void): CompletableFuture<Suggestions>;
+    teamOption(): InvertableSetOptionState;
+    typeOption(): InvertableSetOptionState;
 }

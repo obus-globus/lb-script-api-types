@@ -31,7 +31,7 @@ export class LazyJavaPackageScope extends LazyJavaStaticScope {
     computeNonDeclaredFunctions(arg0: SimpleFunctionDescriptor[], arg1: Name): void;
     computePropertyNames(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): Name[];
     // private findClassifier(arg0: Name, arg1: JavaClass): ClassDescriptor;
-    findClassifierByJavaClass$descriptors_jvm(arg0: JavaClass): ClassDescriptor;
+    findClassifierByJavaClass$org_jetbrains_kotlin_descriptors_jvm(arg0: JavaClass): ClassDescriptor;
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassDescriptor;
     getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): DeclarationDescriptor[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): PropertyDescriptor[];

@@ -8,7 +8,7 @@ import type { KeyEvent } from '../../../../../net/minecraft/client/input/KeyEven
 import type { MouseButtonEvent } from '../../../../../net/minecraft/client/input/MouseButtonEvent.d.ts'
 export class ShaderPackSelectionList$ShaderPackEntry extends ShaderPackSelectionList$BaseEntry {
     static CONTENT_PADDING: number;
-    constructor(null_: ShaderPackSelectionList$ShaderPackEntry, arg1: number, arg2: ShaderPackSelectionList, arg3: string)
+    constructor(null_: ShaderPackSelectionList, arg1: number, arg2: ShaderPackSelectionList, arg3: string)
     // private bounds: ScreenRectangle;
     readonly focused: boolean;
     // private index: number;

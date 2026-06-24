@@ -9,7 +9,8 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class TimeUnitFormat extends MeasureFormat {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class TimeUnitFormat extends MeasureFormat implements Cloneable {
     static ABBREVIATED_NAME: number;
     static FULL_NAME: number;
     static getCurrencyFormat(): MeasureFormat;
@@ -32,7 +33,8 @@ export class TimeUnitFormat extends MeasureFormat {
     // private pluralRules: PluralRules;
     // private style: number;
     // private timeUnitToCountToPatterns: Map<TimeUnit, { [key: string]: Object[] }>;
-    clone(): Object;
+    clone(): TimeUnitFormat;
+    protected clone(): Object;
     getNumberFormat(): NumberFormat;
     getNumberFormatInternal(): NumberFormat;
     getNumberFormatter(): LocalizedNumberFormatter;

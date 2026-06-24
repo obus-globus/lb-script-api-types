@@ -3,6 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Difficulty } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/Difficulty.d.ts'
 export class JoinGameStorage extends Record implements StorableObject {
+    constructor(levelName: string, difficulty: Difficulty, rainLevel: number, lightningLevel: number, currentTime: number, chunkTickRange: number)
     // private chunkTickRange: number;
     // private currentTime: number;
     // private difficulty: Difficulty;

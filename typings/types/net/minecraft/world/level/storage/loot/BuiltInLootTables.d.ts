@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
-import type { DyeColor } from '../../../../../../net/minecraft/world/item/DyeColor.d.ts'
+import type { ColorCollection } from '../../../../../../net/minecraft/world/level/block/ColorCollection.d.ts'
 import type { LootTable } from '../../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 export class BuiltInLootTables extends Object {
     static ABANDONED_MINESHAFT: ResourceKey<LootTable>;
@@ -59,12 +59,12 @@ export class BuiltInLootTables extends Object {
     static PILLAGER_OUTPOST: ResourceKey<LootTable>;
     static RUINED_PORTAL: ResourceKey<LootTable>;
     static SHEAR_BROWN_MOOSHROOM: ResourceKey<LootTable>;
+    static SHEAR_DYED_SHEEP: ColorCollection<ResourceKey<LootTable>>;
     static SHEAR_MOOSHROOM: ResourceKey<LootTable>;
     static SHEAR_RED_MOOSHROOM: ResourceKey<LootTable>;
     static SHEAR_SHEEP: ResourceKey<LootTable>;
-    static SHEAR_SHEEP_BY_DYE: { [key in DyeColor]: ResourceKey<LootTable> };
     static SHEAR_SNOW_GOLEM: ResourceKey<LootTable>;
-    static SHEEP_BY_DYE: { [key in DyeColor]: ResourceKey<LootTable> };
+    static SHEEP: ColorCollection<ResourceKey<LootTable>>;
     static SHEPHERD_GIFT: ResourceKey<LootTable>;
     static SHIPWRECK_MAP: ResourceKey<LootTable>;
     static SHIPWRECK_SUPPLY: ResourceKey<LootTable>;

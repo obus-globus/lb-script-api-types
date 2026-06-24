@@ -20,7 +20,6 @@ export class MouseHandler extends Object implements IMouseKeyboardHandlers, Mous
     // private accumulatedDX: number;
     // private accumulatedDY: number;
     // private activeButton: MouseButtonInfo;
-    // private clickDepth: number;
     // private fakeRightMouse: number;
     // private ignoreFirstMove: boolean;
     // private isLeftPressed: boolean;

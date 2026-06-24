@@ -1,3 +1,4 @@
+import type { PatternLayout$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -6,6 +7,7 @@ import type { LogEventPatternConverter } from '../../../../../../org/apache/logg
 import type { PatternFormatter } from '../../../../../../org/apache/logging/log4j/core/pattern/PatternFormatter.d.ts'
 export class PatternLayout$NoFormatPatternSerializer extends Object implements PatternLayout$PatternSerializer {
     private constructor(formatters: PatternFormatter[])
+    constructor(arg0: PatternFormatter[], arg1: PatternLayout$1)
     // private converters: LogEventPatternConverter[];
     requiresLocation(): boolean;
     toSerializable(event: LogEvent): string;

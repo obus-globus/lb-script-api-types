@@ -20,6 +20,7 @@ export class MultiActionDialog extends Record implements ButtonListDialog {
     static MAP_CODEC: MapCodec<MultiActionDialog>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Dialog>>;
     static WIDTH_CODEC: Codec<number>;
+    constructor(common: CommonDialogData, actions: ActionButton[], exitAction: Optional<ActionButton>, columns: number)
     // private actions: ActionButton[];
     // private columns: number;
     // private common: CommonDialogData;

@@ -1,4 +1,3 @@
-import type { AccessorAbstractWidget } from '../../../../../com/terraformersmc/modmenu/mixin/AccessorAbstractWidget.d.ts'
 import type { Duration } from '../../../../../java/time/Duration.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -24,7 +23,7 @@ import type { PreeditEvent } from '../../../../../net/minecraft/client/input/Pre
 import type { SoundManager } from '../../../../../net/minecraft/client/sounds/SoundManager.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
-export abstract class AbstractWidget extends Object implements AccessorAbstractWidget, Renderable, GuiEventListener, LayoutElement, NarratableEntry {
+export abstract class AbstractWidget extends Object implements Renderable, GuiEventListener, LayoutElement, NarratableEntry {
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
     constructor(x: number, y: number, width: number, height: number, message: Component)
@@ -46,6 +45,7 @@ export abstract class AbstractWidget extends Object implements AccessorAbstractW
     defaultButtonNarrationText(output: NarrationElementOutput): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractScrollingStringOverContents(output: ActiveTextCollector, message: Component, margin: number): void;
+    extractTooltipForNextRenderPass(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): void;
     extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getAlpha(): number;
     getBorderForArrowNavigation(opposite: ScreenDirection): ScreenRectangle;
@@ -57,7 +57,6 @@ export abstract class AbstractWidget extends Object implements AccessorAbstractW
     getRectangle(): ScreenRectangle;
     getRight(): number;
     getTabOrderGroup(): number;
-    getTooltip(): WidgetTooltipHolder;
     getWidth(): number;
     getX(): number;
     getY(): number;

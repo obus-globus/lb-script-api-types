@@ -7,6 +7,7 @@ import type { StreamCodec } from '../../../../net/minecraft/network/codec/Stream
 export class MobEffectInstance$Details extends Record {
     static MAP_CODEC: MapCodec<MobEffectInstance$Details>;
     static STREAM_CODEC: StreamCodec<ByteBuf, MobEffectInstance$Details>;
+    private constructor(amplifier: number, duration: number, ambient: boolean, showParticles: boolean, showIcon: boolean, hiddenEffect: Optional<MobEffectInstance$Details>)
     // private ambient: boolean;
     // private amplifier: number;
     // private duration: number;

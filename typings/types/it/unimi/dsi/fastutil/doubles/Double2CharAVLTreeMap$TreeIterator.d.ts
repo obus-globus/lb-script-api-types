@@ -1,8 +1,8 @@
 import type { Double2CharAVLTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2CharAVLTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2CharAVLTreeMap$TreeIterator extends Object {
-    constructor(null_: Double2CharAVLTreeMap$TreeIterator)
-    constructor(null_: Double2CharAVLTreeMap$TreeIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private curr: Double2CharAVLTreeMap$Entry;
     // private index: number;
     // private next: Double2CharAVLTreeMap$Entry;

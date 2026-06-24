@@ -1,5 +1,5 @@
+import type { PrimitiveTopology } from '../../../../com/mojang/blaze3d/PrimitiveTopology.d.ts'
 import type { VertexFormat } from '../../../../com/mojang/blaze3d/vertex/VertexFormat.d.ts'
-import type { VertexFormat$Mode } from '../../../../com/mojang/blaze3d/vertex/VertexFormat$Mode.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface IrisExtendedBufferBuilder extends Object{
     iris$currentBlock(): number;
@@ -12,7 +12,7 @@ export interface IrisExtendedBufferBuilder extends Object{
     iris$incrementVertexCount(): void;
     iris$injectNormalAndUV1(): boolean;
     iris$isTerrain(): boolean;
-    iris$mode(): VertexFormat$Mode;
+    iris$mode(): PrimitiveTopology;
     iris$resetVertexCount(): void;
     iris$vertexCount(): number;
 }

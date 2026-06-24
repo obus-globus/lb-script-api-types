@@ -9,6 +9,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 import type { MapDecorationType } from '../../../../../../net/minecraft/world/level/saveddata/maps/MapDecorationType.d.ts'
 export class MapDecoration extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, MapDecoration>;
+    constructor(type: Holder<MapDecorationType>, x: number, y: number, rot: number, name: Optional<Component>)
     // private name: Optional<Component>;
     // private rot: number;
     // private type: Holder<MapDecorationType>;

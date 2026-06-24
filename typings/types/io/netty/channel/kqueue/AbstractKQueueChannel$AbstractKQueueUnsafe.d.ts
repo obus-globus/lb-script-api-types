@@ -4,6 +4,7 @@ import type { ChannelConfig } from '../../../../io/netty/channel/ChannelConfig.d
 import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise.d.ts'
 import type { IoEvent } from '../../../../io/netty/channel/IoEvent.d.ts'
 import type { IoRegistration } from '../../../../io/netty/channel/IoRegistration.d.ts'
+import type { AbstractKQueueChannel } from '../../../../io/netty/channel/kqueue/AbstractKQueueChannel.d.ts'
 import type { KQueueIoHandle } from '../../../../io/netty/channel/kqueue/KQueueIoHandle.d.ts'
 import type { KQueueRecvByteAllocatorHandle } from '../../../../io/netty/channel/kqueue/KQueueRecvByteAllocatorHandle.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
@@ -11,7 +12,7 @@ import type { ClosedChannelException } from '../../../../java/nio/channels/Close
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export abstract class AbstractKQueueChannel$AbstractKQueueUnsafe extends AbstractChannel$AbstractUnsafe implements KQueueIoHandle {
-    constructor(null_: AbstractKQueueChannel$AbstractKQueueUnsafe)
+    constructor(null_: AbstractKQueueChannel)
     // private allocHandle: KQueueRecvByteAllocatorHandle;
     // private readPending: boolean;
     channel(): Channel;

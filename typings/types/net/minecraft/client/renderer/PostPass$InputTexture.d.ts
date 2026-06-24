@@ -3,7 +3,7 @@ import type { GpuTextureView } from '../../../../com/mojang/blaze3d/textures/Gpu
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PostPass$InputTexture extends Record {
-    constructor(samplerName: string, view: GpuTextureView, sampler: GpuSampler)
+    private constructor(samplerName: string, view: GpuTextureView, sampler: GpuSampler)
     // private sampler: GpuSampler;
     // private samplerName: string;
     // private view: GpuTextureView;

@@ -1,5 +1,3 @@
-import type { GpuBuffer } from '../../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
-import type { RenderSystem$AutoStorageIndexBuffer } from '../../../../../com/mojang/blaze3d/systems/RenderSystem$AutoStorageIndexBuffer.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
@@ -10,7 +8,6 @@ import type { FpsDebugChart } from '../../../../../net/minecraft/client/gui/comp
 import type { PingDebugChart } from '../../../../../net/minecraft/client/gui/components/debugchart/PingDebugChart.d.ts'
 import type { ProfilerPieChart } from '../../../../../net/minecraft/client/gui/components/debugchart/ProfilerPieChart.d.ts'
 import type { TpsDebugChart } from '../../../../../net/minecraft/client/gui/components/debugchart/TpsDebugChart.d.ts'
-import type { CameraRenderState } from '../../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
 import type { LocalSampleLogger } from '../../../../../net/minecraft/util/debugchart/LocalSampleLogger.d.ts'
 import type { RemoteDebugSampleType } from '../../../../../net/minecraft/util/debugchart/RemoteDebugSampleType.d.ts'
@@ -22,8 +19,6 @@ export class DebugScreenOverlay extends Object {
     // private bandwidthChart: BandwidthDebugChart;
     readonly bandwidthLogger: LocalSampleLogger;
     // private clientChunk: LevelChunk;
-    // private crosshairBuffer: GpuBuffer;
-    // private crosshairIndicies: RenderSystem$AutoStorageIndexBuffer;
     // private font: Font;
     // private fpsChart: FpsDebugChart;
     // private frameTimeLogger: LocalSampleLogger;
@@ -53,7 +48,6 @@ export class DebugScreenOverlay extends Object {
     getTickTimeLogger(): LocalSampleLogger;
     logFrameDuration(frameDuration: number): void;
     logRemoteSample(sample: number[], type: RemoteDebugSampleType): void;
-    render3dCrosshair(cameraState: CameraRenderState, guiScale: number): void;
     reset(): void;
     showDebugScreen(): boolean;
     showFpsCharts(): boolean;

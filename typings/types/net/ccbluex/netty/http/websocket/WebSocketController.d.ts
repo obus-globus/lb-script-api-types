@@ -15,5 +15,6 @@ export class WebSocketController extends Object {
     addContext(context: ChannelHandlerContext): void;
     broadcast(text: CharSequence, charset: Charset, onFailure: ((param0: ChannelHandlerContext, param1: Throwable) => void) | null): Job;
     disconnect(): void;
+    disconnectAsync(): void;
     removeContext(context: ChannelHandlerContext): void;
 }

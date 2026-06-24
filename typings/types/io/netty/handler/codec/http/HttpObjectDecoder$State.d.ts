@@ -12,10 +12,11 @@ export class HttpObjectDecoder$State extends Enum<HttpObjectDecoder$State> {
     static READ_INITIAL: HttpObjectDecoder$State;
     static READ_VARIABLE_LENGTH_CONTENT: HttpObjectDecoder$State;
     static SKIP_CONTROL_CHARS: HttpObjectDecoder$State;
+    static SKIP_INITIAL_LINE_CHARS: HttpObjectDecoder$State;
     static UPGRADED: HttpObjectDecoder$State;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpObjectDecoder$State;
     static values(): (Object | null)[];
     private constructor()
-    name(): "SKIP_CONTROL_CHARS" | "READ_INITIAL" | "READ_HEADER" | "READ_VARIABLE_LENGTH_CONTENT" | "READ_FIXED_LENGTH_CONTENT" | "READ_CHUNK_SIZE" | "READ_CHUNKED_CONTENT" | "READ_CHUNK_DELIMITER" | "READ_CHUNK_FOOTER" | "BAD_MESSAGE" | "UPGRADED";
+    name(): "SKIP_INITIAL_LINE_CHARS" | "SKIP_CONTROL_CHARS" | "READ_INITIAL" | "READ_HEADER" | "READ_VARIABLE_LENGTH_CONTENT" | "READ_FIXED_LENGTH_CONTENT" | "READ_CHUNK_SIZE" | "READ_CHUNKED_CONTENT" | "READ_CHUNK_DELIMITER" | "READ_CHUNK_FOOTER" | "BAD_MESSAGE" | "UPGRADED";
 }

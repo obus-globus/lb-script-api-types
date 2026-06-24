@@ -1,3 +1,4 @@
+import type { PreviousInjectorInsns$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -11,6 +12,7 @@ export class PreviousInjectorInsns extends Enum<PreviousInjectorInsns> {
     static valueOf(paramarg0: string): PreviousInjectorInsns;
     static values(): (Object | null)[];
     private constructor(arg2: string)
+    constructor(arg2: string, arg3: PreviousInjectorInsns$1)
     // private description: string;
     getLast(arg0: AbstractInsnNode): AbstractInsnNode;
     getPredicates(): (param0: AbstractInsnNode) => boolean[];

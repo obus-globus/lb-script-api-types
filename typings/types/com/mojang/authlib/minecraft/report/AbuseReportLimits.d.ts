@@ -2,6 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AbuseReportLimits extends Record {
     static DEFAULTS: AbuseReportLimits;
+    constructor(maxOpinionCommentsLength: number, maxReportedMessageCount: number, maxEvidenceMessageCount: number, leadingContextMessageCount: number, trailingContextMessageCount: number)
     // private leadingContextMessageCount: number;
     // private maxEvidenceMessageCount: number;
     // private maxOpinionCommentsLength: number;

@@ -7,6 +7,7 @@ import type { KmTypeAliasExtension } from '../../../../../../kotlin/reflect/jvm/
 export class KmTypeAlias extends Object {
     constructor(arg0: number, arg1: string)
     readonly annotations: KmAnnotation[];
+    readonly compilerPluginMetadata: { [key: string]: number[] };
     expandedType: KmType;
     // private extensions: KmTypeAliasExtension[];
     // private flags: number;
@@ -15,10 +16,11 @@ export class KmTypeAlias extends Object {
     underlyingType: KmType;
     readonly versionRequirements: KmVersionRequirement[];
     getAnnotations(): KmAnnotation[];
-    getFlags$kotlin_metadata(): number;
+    getCompilerPluginMetadata(): { [key: string]: number[] };
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
     getTypeParameters(): KmTypeParameter[];
     getVersionRequirements(): KmVersionRequirement[];
     setExpandedType(arg0: KmType): void;
-    setFlags$kotlin_metadata(arg0: number): void;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
     setUnderlyingType(arg0: KmType): void;
 }

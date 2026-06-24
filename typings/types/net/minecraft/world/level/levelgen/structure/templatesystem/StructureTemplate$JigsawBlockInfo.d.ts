@@ -7,6 +7,7 @@ import type { StructureTemplatePool } from '../../../../../../../net/minecraft/w
 import type { StructureTemplate$StructureBlockInfo } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate$StructureBlockInfo.d.ts'
 export class StructureTemplate$JigsawBlockInfo extends Record {
     static of(paraminfo: StructureTemplate$StructureBlockInfo): StructureTemplate$JigsawBlockInfo;
+    constructor(info: StructureTemplate$StructureBlockInfo, jointType: JigsawBlockEntity$JointType, name: Identifier, pool: ResourceKey<StructureTemplatePool>, target: Identifier, placementPriority: number, selectionPriority: number)
     // private info: StructureTemplate$StructureBlockInfo;
     // private jointType: JigsawBlockEntity$JointType;
     // private name: Identifier;

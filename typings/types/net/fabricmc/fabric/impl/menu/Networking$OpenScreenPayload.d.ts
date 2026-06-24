@@ -18,6 +18,7 @@ export class Networking$OpenScreenPayload<D extends unknown> extends Record impl
     static codec(paramwriter: (param0: CustomPacketPayload | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => CustomPacketPayload | null): StreamCodec<ByteBuf, CustomPacketPayload>;
     static codec(paramfallback: CustomPacketPayload$FallbackProvider<FriendlyByteBuf>, paramtypes: CustomPacketPayload$TypeAndCodec<any, any>[]): StreamCodec<FriendlyByteBuf, CustomPacketPayload>;
     static createType(paramid: string): CustomPacketPayload$Type<CustomPacketPayload>;
+    constructor(identifier: Identifier, containerId: number, title: Component, innerCodec: StreamCodec<RegistryFriendlyByteBuf, D>, data: D)
     // private containerId: number;
     // private data: D;
     // private identifier: Identifier;

@@ -2,8 +2,8 @@ import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/ob
 import type { Short2ShortAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ShortAVLTreeMap$TreeIterator.d.ts'
 import type { Short2ShortMap$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2ShortMap$Entry.d.ts'
 export class Short2ShortAVLTreeMap$EntryIterator extends Short2ShortAVLTreeMap$TreeIterator implements ObjectListIterator<Short2ShortMap$Entry> {
-    constructor(null_: Short2ShortAVLTreeMap$EntryIterator)
-    constructor(null_: Short2ShortAVLTreeMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add(arg0: Short2ShortMap$Entry): void;
     next(): Short2ShortMap$Entry;
     previous(): Short2ShortMap$Entry;

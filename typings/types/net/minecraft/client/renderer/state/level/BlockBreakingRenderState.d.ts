@@ -5,6 +5,7 @@ import type { RenderStateDataKey } from '../../../../../../net/fabricmc/fabric/a
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockBreakingRenderState extends Record implements FabricRenderState {
+    constructor(blockPos: BlockPos, blockState: BlockState, progress: number)
     // private blockPos: BlockPos;
     // private blockState: BlockState;
     // private progress: number;

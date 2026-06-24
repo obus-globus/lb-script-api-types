@@ -4,12 +4,14 @@ import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerL
 import type { RandomSource } from '../../../../net/minecraft/util/RandomSource.d.ts'
 import type { WeightedList } from '../../../../net/minecraft/util/random/WeightedList.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
+import type { EntityProcessor } from '../../../../net/minecraft/world/entity/EntityProcessor.d.ts'
 import type { EntityType } from '../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { SpawnData } from '../../../../net/minecraft/world/level/SpawnData.d.ts'
 import type { ValueInput } from '../../../../net/minecraft/world/level/storage/ValueInput.d.ts'
 import type { ValueOutput } from '../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 export abstract class BaseSpawner extends Object {
+    static SET_DISPLAY_ENTITY_ID: (param0: Entity) => Entity;
     static SPAWN_DATA_TAG: string;
     constructor()
     // private displayEntity: Entity;

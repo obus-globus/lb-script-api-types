@@ -11,10 +11,12 @@ import type { Schema } from '../../../../net/minecraft/server/jsonrpc/api/Schema
 export class OutgoingRpcMethod$OutgoingRpcMethodBuilder<Params extends unknown, Result extends unknown> extends Object {
     static DEFAULT_ATTRIBUTES: OutgoingRpcMethod$Attributes;
     constructor(method: (param0: MethodInfo<Params, Result>, param1: OutgoingRpcMethod$Attributes) => OutgoingRpcMethod<Params, Result>)
+    // private allowPreServerInit: boolean;
     // private description: string;
     // private method: (param0: MethodInfo<Params, Result>, param1: OutgoingRpcMethod$Attributes) => OutgoingRpcMethod<Params, Result>;
     // private paramInfo: ParamInfo<Params>;
     // private resultInfo: ResultInfo<Result>;
+    allowPreServerInit(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<Params, Result>;
     // private build(): OutgoingRpcMethod<Params, Result>;
     description(description: string): OutgoingRpcMethod$OutgoingRpcMethodBuilder<Params, Result>;
     param(paramName: string, paramSchema: Schema<Params>): OutgoingRpcMethod$OutgoingRpcMethodBuilder<Params, Result>;

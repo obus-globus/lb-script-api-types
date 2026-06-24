@@ -1,13 +1,12 @@
-import type { PoseStack$Pose } from '../../../../../com/mojang/blaze3d/vertex/PoseStack$Pose.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { MultiBufferSource } from '../../../../../net/minecraft/client/renderer/MultiBufferSource.d.ts'
-import type { MultiBufferSource$BufferSource } from '../../../../../net/minecraft/client/renderer/MultiBufferSource$BufferSource.d.ts'
-import type { SubmitNodeCollection } from '../../../../../net/minecraft/client/renderer/SubmitNodeCollection.d.ts'
-import type { EntityRenderState } from '../../../../../net/minecraft/client/renderer/entity/state/EntityRenderState.d.ts'
-import type { AtlasManager } from '../../../../../net/minecraft/client/resources/model/sprite/AtlasManager.d.ts'
-import type { Quaternionf } from '../../../../../org/joml/Quaternionf.d.ts'
-export class FlameFeatureRenderer extends Object {
+import type { VertexConsumer } from '../../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
+import type { FeatureFrameContext } from '../../../../../net/minecraft/client/renderer/feature/FeatureFrameContext.d.ts'
+import type { FeatureRendererType } from '../../../../../net/minecraft/client/renderer/feature/FeatureRendererType.d.ts'
+import type { FlameFeatureRenderer$Submit } from '../../../../../net/minecraft/client/renderer/feature/FlameFeatureRenderer$Submit.d.ts'
+import type { RenderTypeFeatureRenderer } from '../../../../../net/minecraft/client/renderer/feature/RenderTypeFeatureRenderer.d.ts'
+import type { TextureAtlasSprite } from '../../../../../net/minecraft/client/renderer/texture/TextureAtlasSprite.d.ts'
+export class FlameFeatureRenderer extends RenderTypeFeatureRenderer<FlameFeatureRenderer$Submit> {
+    static TYPE: FeatureRendererType<FlameFeatureRenderer$Submit>;
     constructor()
-    // private renderFlame(pose: PoseStack$Pose, bufferSource: MultiBufferSource, state: EntityRenderState, rotation: Quaternionf, atlasManager: AtlasManager): void;
-    renderSolid(nodeCollection: SubmitNodeCollection, bufferSource: MultiBufferSource$BufferSource, atlasManager: AtlasManager): void;
+    buildGroup(context: FeatureFrameContext, submits: FlameFeatureRenderer$Submit[]): void;
+    // private prepare(submit: FlameFeatureRenderer$Submit, buffer: VertexConsumer, fire1: TextureAtlasSprite, fire2: TextureAtlasSprite): void;
 }

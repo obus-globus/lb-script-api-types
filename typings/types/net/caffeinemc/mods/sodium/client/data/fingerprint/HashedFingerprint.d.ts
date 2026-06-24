@@ -4,6 +4,7 @@ export class HashedFingerprint extends Record {
     static CURRENT_VERSION: number;
     static loadFromDisk(): HashedFingerprint;
     static writeToDisk(paramarg0: HashedFingerprint): void;
+    constructor(version: number, saltHex: string, uuidHashHex: string, pathHashHex: string, timestamp: number)
     // private pathHashHex: string;
     // private saltHex: string;
     // private timestamp: number;

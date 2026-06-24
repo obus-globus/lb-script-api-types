@@ -9,6 +9,7 @@ import type { CountDownLatch } from '../../../../../../java/util/concurrent/Coun
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { OutputStreamManager } from '../../../../../../org/apache/logging/log4j/core/appender/OutputStreamManager.d.ts'
+import type { TcpSocketManager } from '../../../../../../org/apache/logging/log4j/core/net/TcpSocketManager.d.ts'
 import type { Log4jThread } from '../../../../../../org/apache/logging/log4j/core/util/Log4jThread.d.ts'
 export class TcpSocketManager$Reconnector extends Log4jThread {
     static MAX_PRIORITY: number;
@@ -31,7 +32,7 @@ export class TcpSocketManager$Reconnector extends Log4jThread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    constructor(null_: TcpSocketManager$Reconnector, owner: OutputStreamManager)
+    constructor(null_: TcpSocketManager, owner: OutputStreamManager)
     // private latch: CountDownLatch;
     // private owner: Object;
     // private shutdown: boolean;

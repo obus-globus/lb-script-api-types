@@ -1,11 +1,12 @@
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ByteBufAllocator } from '../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelConfig } from '../../../io/netty/channel/ChannelConfig.d.ts'
+import type { DefaultMaxMessagesRecvByteBufAllocator } from '../../../io/netty/channel/DefaultMaxMessagesRecvByteBufAllocator.d.ts'
 import type { RecvByteBufAllocator$ExtendedHandle } from '../../../io/netty/channel/RecvByteBufAllocator$ExtendedHandle.d.ts'
 import type { UncheckedBooleanSupplier } from '../../../io/netty/util/UncheckedBooleanSupplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class DefaultMaxMessagesRecvByteBufAllocator$MaxMessageHandle extends Object implements RecvByteBufAllocator$ExtendedHandle {
-    constructor(null_: DefaultMaxMessagesRecvByteBufAllocator$MaxMessageHandle)
+    constructor(null_: DefaultMaxMessagesRecvByteBufAllocator)
     // private attemptedBytesRead: number;
     // private config: ChannelConfig;
     // private defaultMaybeMoreSupplier: UncheckedBooleanSupplier;

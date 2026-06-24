@@ -13,5 +13,7 @@ export class RtspRequestDecoder extends RtspDecoder {
     static DEFAULT_STRICT_LINE_PARSING: boolean;
     static DEFAULT_VALIDATE_HEADERS: boolean;
     static MERGE_CUMULATOR: ByteToMessageDecoder$Cumulator;
+    static PROP_RFC9112_TRANSFER_ENCODING: string;
+    static RFC9112_TRANSFER_ENCODING: boolean;
     constructor()
 }

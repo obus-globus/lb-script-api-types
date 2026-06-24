@@ -12,7 +12,7 @@ import type { LivingEntity } from '../../../../../../../../net/minecraft/world/e
  *
  * @author sqlerrorthing
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ModuleElytraTarget.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ModuleElytraTarget.kt:30}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ModuleElytraTarget.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/elytratarget/ModuleElytraTarget.kt:30}
  */
 export class ModuleElytraTarget extends ClientModule {
     static INSTANCE: ModuleElytraTarget;
@@ -24,7 +24,7 @@ export class ModuleElytraTarget extends ClientModule {
     readonly running: boolean;
     // private safe: boolean;
     // private /*not mapped: */ getSafe(): boolean;
-    /*not mapped: */ getTarget$liquidbounce(): LivingEntity | null;
+    /*not mapped: */ getTarget$net_ccbluex_liquidbounce(): LivingEntity | null;
     // private targetRenderer: TargetRenderer;
     // private targetTracker: TargetTracker;
     // private targetUpdateHandler: EventHook<GameTickEvent>;

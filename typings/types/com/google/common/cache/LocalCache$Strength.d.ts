@@ -1,3 +1,4 @@
+import type { LocalCache$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Equivalence } from '../../../../com/google/common/base/Equivalence.d.ts'
 import type { LocalCache$Segment } from '../../../../com/google/common/cache/LocalCache$Segment.d.ts'
 import type { LocalCache$ValueReference } from '../../../../com/google/common/cache/LocalCache$ValueReference.d.ts'
@@ -13,6 +14,7 @@ export class LocalCache$Strength extends Enum<LocalCache$Strength> {
     static valueOf(paramname: string): LocalCache$Strength;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: LocalCache$1)
     defaultEquivalence(): Equivalence<Object>;
     referenceValue<K extends unknown, V extends unknown>(segment: LocalCache$Segment<K, V>, entry: ReferenceEntry<K, V>, value: V, weight: number): LocalCache$ValueReference<K, V>;
     name(): "STRONG" | "SOFT" | "WEAK";

@@ -6,6 +6,7 @@ import type { RandomSource } from '../../../../net/minecraft/util/RandomSource.d
 export class AmbientParticle extends Record {
     static CODEC: Codec<AmbientParticle>;
     static of(paramparticle: ParticleOptions, paramprobability: number): AmbientParticle[];
+    constructor(particle: ParticleOptions, probability: number)
     // private particle: ParticleOptions;
     // private probability: number;
     canSpawn(random: RandomSource): boolean;

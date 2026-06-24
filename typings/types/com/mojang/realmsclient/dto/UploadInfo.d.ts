@@ -5,6 +5,7 @@ export class UploadInfo extends Record {
     static assembleUri(paramendpoint: string, paramportOverride: number): URI;
     static createRequest(paramuploadToken: string): string;
     static parse(paramjson: string): UploadInfo;
+    constructor(worldClosed: boolean, token: string, uploadEndpoint: URI)
     // private token: string;
     // private uploadEndpoint: URI;
     // private worldClosed: boolean;

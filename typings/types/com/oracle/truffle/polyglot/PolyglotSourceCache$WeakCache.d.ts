@@ -2,6 +2,7 @@ import type { CallTarget } from '../../../../com/oracle/truffle/api/CallTarget.d
 import type { Source } from '../../../../com/oracle/truffle/api/source/Source.d.ts'
 import type { PolyglotImpl } from '../../../../com/oracle/truffle/polyglot/PolyglotImpl.d.ts'
 import type { PolyglotLanguageContext } from '../../../../com/oracle/truffle/polyglot/PolyglotLanguageContext.d.ts'
+import type { PolyglotSourceCache } from '../../../../com/oracle/truffle/polyglot/PolyglotSourceCache.d.ts'
 import type { PolyglotSourceCache$Cache } from '../../../../com/oracle/truffle/polyglot/PolyglotSourceCache$Cache.d.ts'
 import type { PolyglotSourceCache$ParseOrigin } from '../../../../com/oracle/truffle/polyglot/PolyglotSourceCache$ParseOrigin.d.ts'
 import type { PolyglotSourceCache$WeakCacheValue } from '../../../../com/oracle/truffle/polyglot/PolyglotSourceCache$WeakCacheValue.d.ts'
@@ -10,7 +11,7 @@ import type { ReferenceQueue } from '../../../../java/lang/ref/ReferenceQueue.d.
 import type { WeakReference } from '../../../../java/lang/ref/WeakReference.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotSourceCache$WeakCache extends PolyglotSourceCache$Cache {
-    constructor(null_: PolyglotSourceCache$WeakCache)
+    constructor(null_: PolyglotSourceCache, deadSources: ReferenceQueue<Source>)
     // private cacheRef: WeakReference<PolyglotSourceCache$WeakCache>;
     // private deadSources: ReferenceQueue<Source>;
     // private sourceCache: Map<PolyglotSourceCache$WeakSourceKey, PolyglotSourceCache$WeakCacheValue>;

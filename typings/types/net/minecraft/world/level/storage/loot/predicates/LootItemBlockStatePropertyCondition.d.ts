@@ -3,7 +3,7 @@ import type { MapCodec } from '../../../../../../../com/mojang/serialization/Map
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
-import type { StatePropertiesPredicate } from '../../../../../../../net/minecraft/advancements/criterion/StatePropertiesPredicate.d.ts'
+import type { StatePropertiesPredicate } from '../../../../../../../net/minecraft/advancements/predicates/StatePropertiesPredicate.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { ContextKey } from '../../../../../../../net/minecraft/util/context/ContextKey.d.ts'
 import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'

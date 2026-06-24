@@ -5,7 +5,8 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ReferenceOpenCustomHashMap$EntryIterator extends Object2ReferenceOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Object2ReferenceMap$Entry<K, V>> {
-    private constructor(null_: Object2ReferenceOpenCustomHashMap$EntryIterator)
+    private constructor(null_: Map<K, V>)
+    constructor(null_: Map<K, V>, arg1: (Object | null)[])
     // private entry: Object2ReferenceOpenCustomHashMap$MapEntry;
     acceptOnIndex<K extends unknown, V extends unknown>(arg0: (param0: Object2ReferenceMap$Entry<K, V>) => void, arg1: number): void;
     next<K extends unknown, V extends unknown>(): Object2ReferenceOpenCustomHashMap$MapEntry;

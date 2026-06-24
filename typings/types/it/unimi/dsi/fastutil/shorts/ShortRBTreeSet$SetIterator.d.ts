@@ -2,8 +2,8 @@ import type { ShortListIterator } from '../../../../../it/unimi/dsi/fastutil/sho
 import type { ShortRBTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortRBTreeSet$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShortRBTreeSet$SetIterator extends Object implements ShortListIterator {
-    constructor(null_: ShortRBTreeSet$SetIterator)
-    constructor(null_: ShortRBTreeSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: ShortRBTreeSet$Entry;
     // private index: number;
     // private next: ShortRBTreeSet$Entry;

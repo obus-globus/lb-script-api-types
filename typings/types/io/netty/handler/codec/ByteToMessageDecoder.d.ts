@@ -13,6 +13,7 @@ export abstract class ByteToMessageDecoder extends ChannelInboundHandlerAdapter 
     readonly discardAfterReads: number;
     // private firedChannelRead: boolean;
     // private first: boolean;
+    // private inputMessages: Object[];
     // private numReads: number;
     // private selfFiredChannelRead: boolean;
     readonly singleDecode: boolean;

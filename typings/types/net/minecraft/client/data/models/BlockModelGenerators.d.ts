@@ -39,10 +39,10 @@ import type { WeatheringCopper$WeatherState } from '../../../../../net/minecraft
 import type { StateDefinition } from '../../../../../net/minecraft/world/level/block/state/StateDefinition.d.ts'
 import type { StateHolder } from '../../../../../net/minecraft/world/level/block/state/StateHolder.d.ts'
 import type { BooleanProperty } from '../../../../../net/minecraft/world/level/block/state/properties/BooleanProperty.d.ts'
-import type { DripstoneThickness } from '../../../../../net/minecraft/world/level/block/state/properties/DripstoneThickness.d.ts'
 import type { EnumProperty } from '../../../../../net/minecraft/world/level/block/state/properties/EnumProperty.d.ts'
 import type { Property } from '../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 import type { SideChainPart } from '../../../../../net/minecraft/world/level/block/state/properties/SideChainPart.d.ts'
+import type { SpeleothemThickness } from '../../../../../net/minecraft/world/level/block/state/properties/SpeleothemThickness.d.ts'
 export class BlockModelGenerators extends Object {
     static NOP: (param0: Object | null) => Object | null;
     static UV_LOCK: (param0: Object | null) => Object | null;
@@ -59,6 +59,7 @@ export class BlockModelGenerators extends Object {
     static condition(paramproperty: BooleanProperty, paramterm: boolean): ConditionBuilder;
     static createAxisAlignedPillarBlock(paramblock: Block, parammodel: MultiVariant): BlockModelDefinitionGenerator;
     static createBambooModels(paramage: number): MultiVariant;
+    static createBed(paramblock: Block, paramheadModel: MultiVariant, paramfootModel: MultiVariant): BlockModelDefinitionGenerator;
     static createBooleanModelDispatch(paramproperty: BooleanProperty, paramonTrue: MultiVariant, paramonFalse: MultiVariant): PropertyDispatch<MultiVariant>;
     static createButton(paramblock: Block, paramnormal: MultiVariant, parampressed: MultiVariant): BlockModelDefinitionGenerator;
     static createCopperBulb(paramcopperBulb: Block, parambaseModel: MultiVariant, paramlitModel: MultiVariant, parambaseModelPowered: MultiVariant, paramlitModelPowered: MultiVariant): BlockModelDefinitionGenerator;
@@ -67,6 +68,7 @@ export class BlockModelGenerators extends Object {
     static createEmptyOrFullDispatch(paramproperty: Property<any>, paramthreshold: Object | null, paramfullModel: MultiVariant, paramemptyModel: MultiVariant): PropertyDispatch<MultiVariant>;
     static createFence(paramblock: Block, parampost: MultiVariant, paramside: MultiVariant): BlockModelDefinitionGenerator;
     static createFenceGate(paramblock: Block, paramopen: MultiVariant, paramclosed: MultiVariant, paramopenWall: MultiVariant, paramclosedWall: MultiVariant, paramuvLock: boolean): BlockModelDefinitionGenerator;
+    static createHangingSign(paramblock: Block, paramrot0: MultiVariant, paramrot1: MultiVariant, paramrot2: MultiVariant, paramrot3: MultiVariant, paramattachedRot0: MultiVariant, paramattachedRot1: MultiVariant, paramattachedRot2: MultiVariant, paramattachedRot3: MultiVariant): BlockModelDefinitionGenerator;
     static createMirroredColumnGenerator(paramblock: Block, paramnormal: Variant, parammapping: TextureMapping, parammodelOutput: (param0: Identifier, param1: ModelInstance) => void): BlockModelDefinitionGenerator;
     static createMirroredCubeGenerator(paramblock: Block, paramnormal: Variant, parammapping: TextureMapping, parammodelOutput: (param0: Identifier, param1: ModelInstance) => void): BlockModelDefinitionGenerator;
     static createNorthWestMirroredCubeGenerator(paramblock: Block, paramnormal: Variant, parammapping: TextureMapping, parammodelOutput: (param0: Identifier, param1: ModelInstance) => void): BlockModelDefinitionGenerator;
@@ -77,6 +79,7 @@ export class BlockModelGenerators extends Object {
     static createRotatedPillarWithHorizontalVariant(paramblock: Block, parammodel: MultiVariant, paramhorizontalModel: MultiVariant): BlockModelDefinitionGenerator;
     static createRotatedVariants(parambase: Variant): MultiVariant;
     static createRotatedVariants(paramnormal: Variant, parammirrored: Variant): MultiVariant;
+    static createSign(paramblock: Block, paramrot0: MultiVariant, paramrot1: MultiVariant, paramrot2: MultiVariant, paramrot3: MultiVariant): BlockModelDefinitionGenerator;
     static createSimpleBlock(paramblock: Block, paramvariant: MultiVariant): MultiVariantGenerator;
     static createSlab(paramblock: Block, parambottom: MultiVariant, paramtop: MultiVariant, paramfull: MultiVariant): BlockModelDefinitionGenerator;
     static createStairs(paramblock: Block, paraminner: MultiVariant, paramstraight: MultiVariant, paramouter: MultiVariant): BlockModelDefinitionGenerator;
@@ -111,14 +114,12 @@ export class BlockModelGenerators extends Object {
     createAxisAlignedPillarBlockCustomModel(block: Block, model: MultiVariant): void;
     createAzalea(block: Block): void;
     // private createBamboo(): void;
-    createBanner(standAlone: Block, wall: Block, baseColor: DyeColor): void;
-    // private createBanners(): void;
+    createBanner(baseColor: DyeColor): void;
     // private createBarrel(): void;
     createBars(block: Block, postEndResource: Identifier, postResource: Identifier, capResource: Identifier, capAltResource: Identifier, sideResource: Identifier, sideAltResource: Identifier): void;
     createBarsAndItem(block: Block): void;
     createBarsAndItem(unwaxed: Block, waxed: Block): void;
-    createBed(bed: Block, itemParticle: Block, dyeColor: DyeColor): void;
-    // private createBeds(): void;
+    createBed(dyeColor: DyeColor): void;
     createBeeNest(block: Block, mappingFunction: (param0: Block) => TextureMapping): void;
     // private createBell(): void;
     // private createBigDripLeafBlock(): void;
@@ -190,7 +191,6 @@ export class BlockModelGenerators extends Object {
     // private createGrindstone(): void;
     createGrowingPlant(kelp: Block, kelpPlant: Block, type: BlockModelGenerators$PlantType): void;
     createHangingMoss(block: Block): void;
-    createHangingSign(particleBlock: Block, hangingSign: Block, wallHangingSign: Block): void;
     createHead(standAlone: Block, wall: Block, skullType: SkullBlock$Type, itemBase: Identifier): void;
     // private createHeads(): void;
     // private createHopper(): void;
@@ -235,8 +235,6 @@ export class BlockModelGenerators extends Object {
     // private createPitcherPlant(): void;
     createPlant(standAlone: Block, potted: Block, plantType: BlockModelGenerators$PlantType): void;
     createPlantWithDefaultItem(standAlone: Block, potted: Block, plantType: BlockModelGenerators$PlantType): void;
-    // private createPointedDripstone(): void;
-    createPointedDripstoneVariant(direction: Direction, dripstoneThickness: DripstoneThickness): MultiVariant;
     createPottedAzalea(block: Block): void;
     createPumpkinVariant(block: Block, textures: TextureMapping): void;
     // private createPumpkins(): void;
@@ -264,6 +262,8 @@ export class BlockModelGenerators extends Object {
     // private createSnifferEgg(): void;
     // private createSnowBlocks(): void;
     // private createSoulFire(): void;
+    createSpeleothem(block: Block): void;
+    createSpeleothemVariant(direction: Direction, speleothemThickness: SpeleothemThickness, block: Block): MultiVariant;
     createStems(growingStem: Block, attachedStem: Block): void;
     // private createStonecutter(): void;
     // private createStructureBlock(): void;

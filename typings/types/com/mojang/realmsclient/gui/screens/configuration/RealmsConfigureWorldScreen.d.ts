@@ -5,13 +5,14 @@ import type { RealmsServer } from '../../../../../../com/mojang/realmsclient/dto
 import type { RealmsSlot } from '../../../../../../com/mojang/realmsclient/dto/RealmsSlot.d.ts'
 import type { RegionSelectionPreference } from '../../../../../../com/mojang/realmsclient/dto/RegionSelectionPreference.d.ts'
 import type { ServiceQuality } from '../../../../../../com/mojang/realmsclient/dto/ServiceQuality.d.ts'
+import type { Subscription } from '../../../../../../com/mojang/realmsclient/dto/Subscription.d.ts'
 import type { RealmsServiceException } from '../../../../../../com/mojang/realmsclient/exception/RealmsServiceException.d.ts'
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../../../net/minecraft/client/gui/components/Button.d.ts'
+import type { MenuTabBar } from '../../../../../../net/minecraft/client/gui/components/tabs/MenuTabBar.d.ts'
 import type { Tab } from '../../../../../../net/minecraft/client/gui/components/tabs/Tab.d.ts'
 import type { TabManager } from '../../../../../../net/minecraft/client/gui/components/tabs/TabManager.d.ts'
-import type { TabNavigationBar } from '../../../../../../net/minecraft/client/gui/components/tabs/TabNavigationBar.d.ts'
 import type { HeaderAndFooterLayout } from '../../../../../../net/minecraft/client/gui/layouts/HeaderAndFooterLayout.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
@@ -40,8 +41,9 @@ export class RealmsConfigureWorldScreen extends RealmsScreen {
     // private serverData: RealmsServer;
     // private serverId: number;
     // private stateChanged: boolean;
+    // private subscription: Subscription;
     // private tabManager: TabManager;
-    // private tabNavigationBar: TabNavigationBar;
+    // private tabNavigationBar: MenuTabBar;
     closeTheWorld(): void;
     createErrorScreen(exception: RealmsServiceException): Screen;
     extractMenuBackground(graphics: GuiGraphicsExtractor): void;
@@ -49,6 +51,7 @@ export class RealmsConfigureWorldScreen extends RealmsScreen {
     extractRenderState(graphics: GuiGraphicsExtractor, xm: number, ym: number, a: number): void;
     fetchRegionData(): void;
     fetchServerData(realmId: number): void;
+    fetchSubscription(realmId: number): void;
     getContentHeight(): number;
     getHeaderHeight(): number;
     getLastScreen(): Screen;

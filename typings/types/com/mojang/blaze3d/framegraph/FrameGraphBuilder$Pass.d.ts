@@ -1,3 +1,4 @@
+import type { FrameGraphBuilder } from '../../../../com/mojang/blaze3d/framegraph/FrameGraphBuilder.d.ts'
 import type { FrameGraphBuilder$Handle } from '../../../../com/mojang/blaze3d/framegraph/FrameGraphBuilder$Handle.d.ts'
 import type { FrameGraphBuilder$InternalVirtualResource } from '../../../../com/mojang/blaze3d/framegraph/FrameGraphBuilder$InternalVirtualResource.d.ts'
 import type { FramePass } from '../../../../com/mojang/blaze3d/framegraph/FramePass.d.ts'
@@ -7,7 +8,7 @@ import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { BitSet } from '../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class FrameGraphBuilder$Pass extends Object implements FramePass {
-    constructor(null_: FrameGraphBuilder$Pass, id: number, name: string)
+    constructor(null_: FrameGraphBuilder, id: number, name: string)
     // private disableCulling: boolean;
     // private id: number;
     // private name: string;

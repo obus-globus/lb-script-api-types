@@ -5,9 +5,9 @@ import type { BlockState } from '../../../../../../net/minecraft/world/level/blo
 import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class BlockBehaviour$BlockStateBase$Cache extends Object {
     private constructor(state: BlockState)
-    // private collisionShape: VoxelShape;
+    collisionShape: VoxelShape;
     // private faceSturdy: (Object | null)[];
-    // private isCollisionShapeFullBlock: boolean;
-    // private largeCollisionShape: boolean;
+    isCollisionShapeFullBlock: boolean;
+    largeCollisionShape: boolean;
     isFaceSturdy(direction: Direction, supportType: SupportType): boolean;
 }

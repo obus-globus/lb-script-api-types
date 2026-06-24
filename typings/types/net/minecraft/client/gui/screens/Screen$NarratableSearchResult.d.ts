@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { NarratableEntry$NarrationPriority } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry$NarrationPriority.d.ts'
 export class Screen$NarratableSearchResult extends Record {
+    constructor(entry: NarratableEntry, index: number, priority: NarratableEntry$NarrationPriority)
     // private entry: NarratableEntry;
     // private index: number;
     // private priority: NarratableEntry$NarrationPriority;

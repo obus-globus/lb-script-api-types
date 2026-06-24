@@ -6,6 +6,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class BlocksAttacks$DamageReduction extends Record {
     static ARRAY_TYPE: ArrayType<BlocksAttacks$DamageReduction>;
     static TYPE: Type<BlocksAttacks$DamageReduction>;
+    constructor(horizontalBlockingAngle: number, type: HolderSet, base: number, factor: number)
     // private base: number;
     // private factor: number;
     // private horizontalBlockingAngle: number;

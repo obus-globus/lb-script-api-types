@@ -1,13 +1,17 @@
-import type { ImmutableMap$Builder } from '../../../../com/google/common/collect/ImmutableMap$Builder.d.ts'
+import type { GpuFormat } from '../../../../com/mojang/blaze3d/GpuFormat.d.ts'
 import type { VertexFormat } from '../../../../com/mojang/blaze3d/vertex/VertexFormat.d.ts'
 import type { VertexFormatElement } from '../../../../com/mojang/blaze3d/vertex/VertexFormatElement.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class VertexFormat$Builder extends Object {
-    private constructor()
-    // private elements: ImmutableMap$Builder<string, VertexFormatElement>;
+    private constructor(stepRate: number)
+    // private elements: VertexFormatElement[];
     // private offset: number;
-    // private offsets: (Object | null)[];
-    add(name: string, element: VertexFormatElement): VertexFormat$Builder;
+    // private stepRate: number;
+    addAttribute(name: string, elementFormat: GpuFormat): VertexFormat$Builder;
+    addAttribute(name: string, elementFormat: GpuFormat, columnCount: number): VertexFormat$Builder;
+    addAttribute(name: string, stride: number, elementFormat: GpuFormat): VertexFormat$Builder;
+    addAttribute(name: string, offset: number, stride: number, elementFormat: GpuFormat, columnCount: number): VertexFormat$Builder;
     build(): VertexFormat;
-    padding(bytes: number): VertexFormat$Builder;
+    // private createAttribute(name: string, offset: number, elementFormat: GpuFormat): void;
+    // private validateUniqueName(name: string): void;
 }

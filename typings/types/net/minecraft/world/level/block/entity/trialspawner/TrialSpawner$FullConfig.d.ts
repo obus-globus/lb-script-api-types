@@ -7,6 +7,7 @@ import type { TrialSpawnerConfig } from '../../../../../../../net/minecraft/worl
 export class TrialSpawner$FullConfig extends Record {
     static DEFAULT: TrialSpawner$FullConfig;
     static MAP_CODEC: MapCodec<TrialSpawner$FullConfig>;
+    constructor(normal: Holder<TrialSpawnerConfig>, ominous: Holder<TrialSpawnerConfig>, targetCooldownLength: number, requiredPlayerRange: number)
     // private normal: Holder<TrialSpawnerConfig>;
     // private ominous: Holder<TrialSpawnerConfig>;
     // private requiredPlayerRange: number;

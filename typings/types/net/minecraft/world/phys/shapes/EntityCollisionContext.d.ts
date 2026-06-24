@@ -15,6 +15,7 @@ export class EntityCollisionContext extends Object implements CollisionContext {
     static of(paramentity: Entity): CollisionContext;
     static of(paramentity: Entity, paramalwaysCollideWithFluid: boolean): CollisionContext;
     static placementContext(paramplayer: Player): CollisionContext;
+    static positionContext(paramy: number): CollisionContext;
     static withPosition(paramentity: Entity, paramposition: number): CollisionContext;
     constructor(descending: boolean, placement: boolean, entityBottom: number, heldItem: ItemStack, alwaysCollideWithFluid: boolean, entity: Entity)
     constructor(entity: Entity, alwaysCollideWithFluid: boolean, placement: boolean)
@@ -23,6 +24,7 @@ export class EntityCollisionContext extends Object implements CollisionContext {
     readonly entity: Entity;
     // private entityBottom: number;
     readonly heldItem: ItemStack;
+    // private isDescendingNeedsInitialization: boolean;
     readonly placement: boolean;
     alwaysCollideWithFluid(): boolean;
     canStandOnFluid(fluidStateAbove: FluidState, fluid: FluidState): boolean;

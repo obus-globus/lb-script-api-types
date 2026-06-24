@@ -4,8 +4,8 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FloatLinkedOpenHashSet$SetIterator extends Object implements FloatListIterator {
-    constructor(null_: FloatLinkedOpenHashSet$SetIterator)
-    constructor(null_: FloatLinkedOpenHashSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: number;
     // private index: number;
     // private next: number;

@@ -58,6 +58,7 @@ export class Noises extends Object {
     static SPAGHETTI_3D_THICKNESS: ResourceKey<NormalNoise$NoiseParameters>;
     static SPAGHETTI_ROUGHNESS: ResourceKey<NormalNoise$NoiseParameters>;
     static SPAGHETTI_ROUGHNESS_MODULATOR: ResourceKey<NormalNoise$NoiseParameters>;
+    static SULFUR_CAVE_GRADIENT: ResourceKey<NormalNoise$NoiseParameters>;
     static SURFACE: ResourceKey<NormalNoise$NoiseParameters>;
     static SURFACE_SECONDARY: ResourceKey<NormalNoise$NoiseParameters>;
     static SWAMP: ResourceKey<NormalNoise$NoiseParameters>;

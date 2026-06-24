@@ -12,7 +12,8 @@ import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class SimpleTimeZone extends BasicTimeZone {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class SimpleTimeZone extends BasicTimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -79,8 +80,9 @@ export class SimpleTimeZone extends BasicTimeZone {
     // private transitionRulesInitialized: boolean;
     // private useDaylight: boolean;
     // private xinfo: STZInfo;
-    clone(): Object;
-    cloneAsThawed(): TimeZone;
+    clone(): SimpleTimeZone;
+    protected clone(): Object;
+    cloneAsThawed(): SimpleTimeZone;
     // private compareToRule(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number): number;
     // private construct(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number): void;
     // private decodeEndRule(): void;

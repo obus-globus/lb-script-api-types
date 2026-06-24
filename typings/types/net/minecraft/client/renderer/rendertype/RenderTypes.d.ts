@@ -21,7 +21,6 @@ export class RenderTypes extends Object {
     static debugQuads(): RenderType;
     static debugTriangleFan(): RenderType;
     static dragonRays(): RenderType;
-    static dragonRaysDepth(): RenderType;
     static endCrystalBeam(paramtexture: Identifier): RenderType;
     static endGateway(): RenderType;
     static endPortal(): RenderType;
@@ -57,9 +56,9 @@ export class RenderTypes extends Object {
     static text(paramtexture: Identifier): RenderType;
     static textBackground(): RenderType;
     static textBackgroundSeeThrough(): RenderType;
-    static textIntensity(paramtexture: Identifier): RenderType;
-    static textIntensityPolygonOffset(paramtexture: Identifier): RenderType;
-    static textIntensitySeeThrough(paramtexture: Identifier): RenderType;
+    static textGrayscale(paramtexture: Identifier): RenderType;
+    static textGrayscalePolygonOffset(paramtexture: Identifier): RenderType;
+    static textGrayscaleSeeThrough(paramtexture: Identifier): RenderType;
     static textPolygonOffset(paramtexture: Identifier): RenderType;
     static textSeeThrough(paramtexture: Identifier): RenderType;
     static translucentMovingBlock(): RenderType;

@@ -25,7 +25,7 @@ export class EntityHasScoreCondition extends Record implements LootItemCondition
     entityTarget(): LootContext$EntityTarget;
     equals(o: Object | null): boolean;
     getReferencedContextParams(): ContextKey<Object>[];
-    hasScore(context: LootContext, entity: Entity, scoreboard: Scoreboard, objectiveName: string, range: IntRange): boolean;
+    // private hasScore(context: LootContext, entity: Entity, scoreboard: Scoreboard, objectiveName: string, range: IntRange): boolean;
     hashCode(): number;
     scores(): { [key: string]: IntRange };
     test(context: LootContext): boolean;

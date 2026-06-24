@@ -5,6 +5,7 @@ import type { Node } from '../../../../../net/minecraft/world/level/pathfinder/N
 import type { Target } from '../../../../../net/minecraft/world/level/pathfinder/Target.d.ts'
 export class Path$DebugData extends Record {
     static read(paraminput: FriendlyByteBuf): Path$DebugData;
+    constructor(openSet: Node[], closedSet: Node[], targetNodes: Target[])
     // private closedSet: Node[];
     // private openSet: Node[];
     // private targetNodes: Target[];

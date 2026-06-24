@@ -87,6 +87,7 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     addReferenceForStructure(structure: Structure, reference: number): void;
     canBeSerialized(): boolean;
     carverBiome(source: () => BiomeGenerationSettings): BiomeGenerationSettings;
+    collectBiomesInPalette(output: Holder<Biome>[]): void;
     fabric_clearDeferredSyncChanges(): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: AttachmentChange) => void): void;
     fabric_computeInitialSyncChanges(arg0: ServerPlayer, arg1: (param0: Object) => void): void;
@@ -161,7 +162,7 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     isUnsaved(): boolean;
     isUpgrading(): boolean;
     isYSpaceEmpty(yStartInclusive: number, yEndInclusive: number): boolean;
-    markPosForPostprocessing(blockPos: BlockPos): void;
+    markPosForPostProcessing(blockPos: BlockPos): void;
     markUnsaved(): void;
     modifyAttached<A extends unknown>(arg0: AttachmentType<A>, arg1: (param0: A) => Object | null): A;
     onAttachedSet<A extends unknown>(arg0: AttachmentType<A>): Event<(param0: A, param1: A) => void>;

@@ -1,7 +1,7 @@
 import type { Replaceable } from '../../../../com/ibm/icu/text/Replaceable.d.ts'
 import type { UnicodeMatcher } from '../../../../com/ibm/icu/text/UnicodeMatcher.d.ts'
 import type { Appendable } from '../../../../java/lang/Appendable.d.ts'
-import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
+import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Pattern } from '../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
@@ -14,9 +14,9 @@ export class Utility extends Object {
     static addExact(paramarg0: number, paramarg1: number): number;
     static appendNumber(paramarg0: Appendable | null, paramarg1: number, paramarg2: number, paramarg3: number): Appendable | null;
     static appendTo(paramarg0: CharSequence, paramarg1: Appendable | null): Appendable | null;
-    static appendToRule(paramarg0: StringBuffer, paramarg1: UnicodeMatcher, paramarg2: boolean, paramarg3: StringBuffer): void;
-    static appendToRule(paramarg0: StringBuffer, paramarg1: number, paramarg2: boolean, paramarg3: boolean, paramarg4: StringBuffer): void;
-    static appendToRule(paramarg0: StringBuffer, paramarg1: string, paramarg2: boolean, paramarg3: boolean, paramarg4: StringBuffer): void;
+    static appendToRule(paramarg0: StringBuilder, paramarg1: UnicodeMatcher, paramarg2: boolean, paramarg3: StringBuilder): void;
+    static appendToRule(paramarg0: StringBuilder, paramarg1: number, paramarg2: boolean, paramarg3: boolean, paramarg4: StringBuilder): void;
+    static appendToRule(paramarg0: StringBuilder, paramarg1: string, paramarg2: boolean, paramarg3: boolean, paramarg4: StringBuilder): void;
     static arrayEquals(paramarg0: number[], paramarg1: Object): boolean;
     static arrayEquals(paramarg0: number[], paramarg1: Object): boolean;
     static arrayEquals(paramarg0: number[], paramarg1: Object): boolean;

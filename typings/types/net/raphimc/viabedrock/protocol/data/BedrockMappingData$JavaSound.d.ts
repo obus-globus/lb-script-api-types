@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BedrockMappingData$LevelEventMapping } from '../../../../../net/raphimc/viabedrock/protocol/data/BedrockMappingData$LevelEventMapping.d.ts'
 import type { SoundSource } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/java/generated/SoundSource.d.ts'
 export class BedrockMappingData$JavaSound extends Record implements BedrockMappingData$LevelEventMapping {
+    constructor(id: number, identifier: string, category: SoundSource)
     // private category: SoundSource;
     // private id: number;
     // private identifier: string;

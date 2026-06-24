@@ -9,6 +9,7 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class TrailParticleOption extends Record implements ParticleOptions {
     static CODEC: MapCodec<TrailParticleOption>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, TrailParticleOption>;
+    constructor(target: Vec3, color: number, duration: number)
     // private color: number;
     // private duration: number;
     // private target: Vec3;

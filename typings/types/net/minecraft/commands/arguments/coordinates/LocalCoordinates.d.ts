@@ -9,6 +9,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class LocalCoordinates extends Record implements Coordinates {
     static PREFIX_LOCAL_COORDINATE: string;
     static parse(paramreader: StringReader): LocalCoordinates;
+    constructor(left: number, up: number, forwards: number)
     // private forwards: number;
     // private left: number;
     // private up: number;

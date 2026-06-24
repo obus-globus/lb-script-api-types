@@ -3,8 +3,8 @@ import type { Long2ReferenceRBTreeMap$TreeIterator } from '../../../../../it/uni
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2ReferenceRBTreeMap$EntryIterator extends Long2ReferenceRBTreeMap$TreeIterator implements ObjectListIterator<Long2ReferenceMap$Entry<V>> {
-    constructor(null_: Long2ReferenceRBTreeMap$EntryIterator)
-    constructor(null_: Long2ReferenceRBTreeMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add<V extends unknown>(arg0: Long2ReferenceMap$Entry<V>): void;
     next<V extends unknown>(): Long2ReferenceMap$Entry<V>;
     previous<V extends unknown>(): Long2ReferenceMap$Entry<V>;

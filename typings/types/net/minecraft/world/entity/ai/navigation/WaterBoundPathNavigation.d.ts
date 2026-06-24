@@ -12,6 +12,7 @@ export class WaterBoundPathNavigation extends PathNavigation {
     canUpdatePath(): boolean;
     createPathFinder(maxVisitedNodes: number): PathFinder;
     getGroundY(target: Vec3): number;
+    getMaxVerticalDistanceToWaypoint(): number;
     getTempMobPos(): Vec3;
     isStableDestination(pos: BlockPos): boolean;
     setCanFloat(canFloat: boolean): void;

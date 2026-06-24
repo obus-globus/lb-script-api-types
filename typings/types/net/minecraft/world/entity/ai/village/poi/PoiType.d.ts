@@ -5,6 +5,7 @@ import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class PoiType extends Record {
     static NONE: (param0: Holder<PoiType>) => boolean;
+    constructor(matchingStates: BlockState[], maxTickets: number, validRange: number)
     // private matchingStates: BlockState[];
     // private maxTickets: number;
     // private validRange: number;

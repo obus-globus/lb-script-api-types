@@ -15,7 +15,6 @@ export class UnpooledDirectByteBuf extends AbstractReferenceCountedByteBuf {
     constructor(arg0: ByteBufAllocator, arg1: number, arg2: number)
     constructor(arg0: ByteBufAllocator, arg1: number, arg2: number, arg3: boolean)
     // private alloc: ByteBufAllocator;
-    // private allowSectionedInternalNioBufferAccess: boolean;
     // private buffer: ByteBuffer;
     // private capacity: number;
     // private cleanable: CleanableDirectBuffer;
@@ -30,6 +29,7 @@ export class UnpooledDirectByteBuf extends AbstractReferenceCountedByteBuf {
     _getShortLE(arg0: number): number;
     _getUnsignedMedium(arg0: number): number;
     _getUnsignedMediumLE(arg0: number): number;
+    _internalNioBuffer(): ByteBuffer;
     _setByte(arg0: number, arg1: number): void;
     _setInt(arg0: number, arg1: number): void;
     _setIntLE(arg0: number, arg1: number): void;
@@ -42,6 +42,7 @@ export class UnpooledDirectByteBuf extends AbstractReferenceCountedByteBuf {
     alloc(): ByteBufAllocator;
     allocateDirect(arg0: number): ByteBuffer;
     allocateDirectBuffer(arg0: number): CleanableDirectBuffer;
+    allocateDirectBuffer(arg0: number, arg1: boolean): CleanableDirectBuffer;
     array(): number[];
     arrayOffset(): number;
     capacity(): number;
@@ -74,7 +75,6 @@ export class UnpooledDirectByteBuf extends AbstractReferenceCountedByteBuf {
     getUnsignedMedium(arg0: number): number;
     hasArray(): boolean;
     hasMemoryAddress(): boolean;
-    // private internalNioBuffer(): ByteBuffer;
     internalNioBuffer(arg0: number, arg1: number): ByteBuffer;
     isContiguous(): boolean;
     isDirect(): boolean;

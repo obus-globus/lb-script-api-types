@@ -7,6 +7,7 @@ import type { ForkJoinTask } from '../../../../../java/util/concurrent/ForkJoinT
 import type { RecursiveTask } from '../../../../../java/util/concurrent/RecursiveTask.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ModCandidateImpl } from '../../../../../net/fabricmc/loader/impl/discovery/ModCandidateImpl.d.ts'
+import type { ModDiscoverer } from '../../../../../net/fabricmc/loader/impl/discovery/ModDiscoverer.d.ts'
 import type { ModDiscoverer$RewindableInputStream } from '../../../../../net/fabricmc/loader/impl/discovery/ModDiscoverer$RewindableInputStream.d.ts'
 import type { ModDiscoverer$ZipEntrySource } from '../../../../../net/fabricmc/loader/impl/discovery/ModDiscoverer$ZipEntrySource.d.ts'
 import type { LoaderModMetadata } from '../../../../../net/fabricmc/loader/impl/metadata/LoaderModMetadata.d.ts'
@@ -25,8 +26,8 @@ export class ModDiscoverer$ModScanTask extends RecursiveTask<ModCandidateImpl> {
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(paramarg0: Object | null): void;
-    constructor(null_: ModDiscoverer$ModScanTask, arg2: boolean)
-    private constructor(null_: ModDiscoverer$ModScanTask, arg2: string, arg3: ModDiscoverer$RewindableInputStream, arg4: number, arg5: boolean, arg6: string[])
+    constructor(null_: ModDiscoverer, arg1: Path[][], arg2: boolean)
+    private constructor(null_: ModDiscoverer, arg1: Path[][], arg2: string, arg3: ModDiscoverer$RewindableInputStream, arg4: number, arg5: boolean, arg6: string[])
     // private hash: number;
     // private is: ModDiscoverer$RewindableInputStream;
     // private localPath: string;

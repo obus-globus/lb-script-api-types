@@ -7,6 +7,5 @@ export class RenderingFormat$PLAIN extends RenderingFormat {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RenderingFormat;
     static values(): (Object | null)[];
-    constructor()
     escape(arg0: string): string;
 }

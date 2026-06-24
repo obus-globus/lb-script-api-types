@@ -1,3 +1,4 @@
+import type { NioIoHandler$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { IoHandle } from '../../../../io/netty/channel/IoHandle.d.ts'
 import type { IoHandler } from '../../../../io/netty/channel/IoHandler.d.ts'
 import type { IoHandlerContext } from '../../../../io/netty/channel/IoHandlerContext.d.ts'
@@ -19,6 +20,7 @@ export class NioIoHandler extends Object implements IoHandler {
     static newFactory(paramarg0: SelectorProvider): IoHandlerFactory;
     static newFactory(paramarg0: SelectorProvider, paramarg1: SelectStrategyFactory): IoHandlerFactory;
     private constructor(arg0: ThreadAwareExecutor, arg1: SelectorProvider, arg2: SelectStrategy)
+    constructor(arg0: ThreadAwareExecutor, arg1: SelectorProvider, arg2: SelectStrategy, arg3: NioIoHandler$1)
     // private cancelledKeys: number;
     // private executor: ThreadAwareExecutor;
     // private needsToSelectAgain: boolean;

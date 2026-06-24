@@ -1,7 +1,7 @@
 import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { BlockPredicate } from '../../../../net/minecraft/advancements/criterion/BlockPredicate.d.ts'
+import type { BlockPredicate } from '../../../../net/minecraft/advancements/predicates/BlockPredicate.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'

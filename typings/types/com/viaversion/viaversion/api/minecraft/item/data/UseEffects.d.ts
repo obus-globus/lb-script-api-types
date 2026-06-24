@@ -3,6 +3,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class UseEffects extends Record {
     static TYPE: Type<UseEffects>;
+    constructor(canSprint: boolean, interactVibrations: boolean, speedMultiplier: number)
     // private canSprint: boolean;
     // private interactVibrations: boolean;
     // private speedMultiplier: number;

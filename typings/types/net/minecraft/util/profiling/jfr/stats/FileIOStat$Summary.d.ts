@@ -3,6 +3,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Duration } from '../../../../../../java/time/Duration.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class FileIOStat$Summary extends Record {
+    constructor(totalBytes: number, bytesPerSecond: number, counts: number, countsPerSecond: number, timeSpentInIO: Duration, topTenContributorsByTotalBytes: Pair<string, number>[])
     // private bytesPerSecond: number;
     // private counts: number;
     // private countsPerSecond: number;

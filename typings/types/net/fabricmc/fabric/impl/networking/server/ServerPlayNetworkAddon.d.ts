@@ -1,5 +1,4 @@
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ServerPlayNetworking$Context } from '../../../../../../net/fabricmc/fabric/api/networking/v1/ServerPlayNetworking$Context.d.ts'
 import type { ServerPlayNetworking$PlayPayloadHandler } from '../../../../../../net/fabricmc/fabric/api/networking/v1/ServerPlayNetworking$PlayPayloadHandler.d.ts'
 import type { AbstractChanneledNetworkAddon } from '../../../../../../net/fabricmc/fabric/impl/networking/AbstractChanneledNetworkAddon.d.ts'
@@ -9,7 +8,7 @@ import type { CustomPacketPayload } from '../../../../../../net/minecraft/networ
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { ServerGamePacketListenerImpl } from '../../../../../../net/minecraft/server/network/ServerGamePacketListenerImpl.d.ts'
-export class ServerPlayNetworkAddon extends AbstractChanneledNetworkAddon<(param0: Object, param1: ServerPlayNetworking$Context) => void> {
+export class ServerPlayNetworkAddon extends AbstractChanneledNetworkAddon<(param0: CustomPacketPayload | null, param1: ServerPlayNetworking$Context) => void> {
     constructor(arg0: ServerGamePacketListenerImpl, arg1: Connection, arg2: MinecraftServer)
     // private context: ServerPlayNetworking$Context;
     // private listener: ServerGamePacketListenerImpl;

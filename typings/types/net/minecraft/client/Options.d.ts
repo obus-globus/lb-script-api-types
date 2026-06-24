@@ -13,6 +13,8 @@ import type { NarratorStatus } from '../../../net/minecraft/client/NarratorStatu
 import type { OptionInstance } from '../../../net/minecraft/client/OptionInstance.d.ts'
 import type { Options$FieldAccess } from '../../../net/minecraft/client/Options$FieldAccess.d.ts'
 import type { Options$OptionAccess } from '../../../net/minecraft/client/Options$OptionAccess.d.ts'
+import type { PreferredGraphicsApi } from '../../../net/minecraft/client/PreferredGraphicsApi.d.ts'
+import type { PresenceSharing } from '../../../net/minecraft/client/PresenceSharing.d.ts'
 import type { PrioritizeChunkUpdates } from '../../../net/minecraft/client/PrioritizeChunkUpdates.d.ts'
 import type { TextureFilteringMethod } from '../../../net/minecraft/client/TextureFilteringMethod.d.ts'
 import type { MusicManager$MusicFrequency } from '../../../net/minecraft/client/sounds/MusicManager$MusicFrequency.d.ts'
@@ -73,6 +75,7 @@ export class Options extends Object implements OptionsAccessor {
     // private entityDistanceScaling: OptionInstance<number>;
     // private entityShadows: OptionInstance<boolean>;
     // private exclusiveFullscreen: OptionInstance<boolean>;
+    // private exclusiveFullscreenFromStartup: boolean;
     // private forceUnicodeFont: OptionInstance<boolean>;
     // private fov: OptionInstance<number>;
     // private fovEffectScale: OptionInstance<number>;
@@ -85,7 +88,6 @@ export class Options extends Object implements OptionsAccessor {
     // private glintStrength: OptionInstance<number>;
     // private graphicsPreset: OptionInstance<GraphicsPreset>;
     // private guiScale: OptionInstance<number>;
-    hideGui: boolean;
     // private hideLightningFlash: OptionInstance<boolean>;
     // private hideMatchedNames: OptionInstance<boolean>;
     hideServerAddress: boolean;
@@ -93,9 +95,9 @@ export class Options extends Object implements OptionsAccessor {
     // private highContrast: OptionInstance<boolean>;
     // private highContrastBlockOutline: OptionInstance<boolean>;
     // private improvedTransparency: OptionInstance<boolean>;
+    // private inGameNotification: OptionInstance<boolean>;
     // private inactivityFpsLimit: OptionInstance<InactivityFpsLimit>;
     incompatibleResourcePacks: string[];
-    // private initialExclusiveFullscreen: boolean;
     // private invertXMouse: OptionInstance<boolean>;
     // private invertYMouse: OptionInstance<boolean>;
     // private isApplyingGraphicsPreset: boolean;
@@ -129,6 +131,7 @@ export class Options extends Object implements OptionsAccessor {
     keyDebugSwitchGameMode: KeyMapping;
     keyDown: KeyMapping;
     keyDrop: KeyMapping;
+    keyFriends: KeyMapping;
     keyFullscreen: KeyMapping;
     keyHotbarSlots: KeyMapping[];
     keyInventory: KeyMapping;
@@ -176,6 +179,8 @@ export class Options extends Object implements OptionsAccessor {
     // private panoramaSpeed: OptionInstance<number>;
     // private particles: OptionInstance<ParticleStatus>;
     pauseOnLostFocus: boolean;
+    // private preferredGraphicsBackend: OptionInstance<PreferredGraphicsApi>;
+    // private preferredGraphicsBackendFromStartup: PreferredGraphicsApi;
     // private prioritizeChunkUpdates: OptionInstance<PrioritizeChunkUpdates>;
     // private rawMouseInput: OptionInstance<boolean>;
     // private realmsNotifications: OptionInstance<boolean>;
@@ -187,6 +192,7 @@ export class Options extends Object implements OptionsAccessor {
     // private screenEffectScale: OptionInstance<number>;
     // private sensitivity: OptionInstance<number>;
     readonly serverRenderDistance: number;
+    // private sharePresence: OptionInstance<PresenceSharing>;
     // private showAutosaveIndicator: OptionInstance<boolean>;
     // private showSubtitles: OptionInstance<boolean>;
     // private simulationDistance: OptionInstance<number>;
@@ -204,7 +210,6 @@ export class Options extends Object implements OptionsAccessor {
     // private toggleCrouch: OptionInstance<boolean>;
     // private toggleSprint: OptionInstance<boolean>;
     // private toggleUse: OptionInstance<boolean>;
-    // private touchscreen: OptionInstance<boolean>;
     tutorialStep: TutorialSteps;
     // private useNativeTransport: boolean;
     // private vignette: OptionInstance<boolean>;
@@ -276,11 +281,13 @@ export class Options extends Object implements OptionsAccessor {
     highContrast(): OptionInstance<boolean>;
     highContrastBlockOutline(): OptionInstance<boolean>;
     improvedTransparency(): OptionInstance<boolean>;
+    inGameNotification(): OptionInstance<boolean>;
     inactivityFpsLimit(): OptionInstance<InactivityFpsLimit>;
     invertMouseX(): OptionInstance<boolean>;
     invertMouseY(): OptionInstance<boolean>;
     // private iris$resetFramerateLimit(arg0: Options$FieldAccess, arg1: string, arg2: OptionInstance<Object>): void;
     isModelPartEnabled(part: PlayerModelPart): boolean;
+    isRestartRequiredToApplyVideoSettings(): boolean;
     japaneseGlyphVariants(): OptionInstance<boolean>;
     load(): void;
     loadSelectedResourcePacks(repository: PackRepository): void;
@@ -300,6 +307,7 @@ export class Options extends Object implements OptionsAccessor {
     operatorItemsTab(): OptionInstance<boolean>;
     panoramaSpeed(): OptionInstance<number>;
     particles(): OptionInstance<ParticleStatus>;
+    preferredGraphicsBackend(): OptionInstance<PreferredGraphicsApi>;
     prioritizeChunkUpdates(): OptionInstance<PrioritizeChunkUpdates>;
     // private processDumpedOptions(access: Options$OptionAccess): void;
     // private processOptions(access: Options$FieldAccess): void;
@@ -316,6 +324,7 @@ export class Options extends Object implements OptionsAccessor {
     // private setGraphicsPresetToCustom(): void;
     setModelPart(part: PlayerModelPart, visible: boolean): void;
     setServerRenderDistance(serverRenderDistance: number): void;
+    sharePresence(): OptionInstance<PresenceSharing>;
     showAutosaveIndicator(): OptionInstance<boolean>;
     showSubtitles(): OptionInstance<boolean>;
     simulationDistance(): OptionInstance<number>;
@@ -329,7 +338,6 @@ export class Options extends Object implements OptionsAccessor {
     toggleCrouch(): OptionInstance<boolean>;
     toggleSprint(): OptionInstance<boolean>;
     toggleUse(): OptionInstance<boolean>;
-    touchscreen(): OptionInstance<boolean>;
     updateResourcePacks(packRepository: PackRepository): void;
     useNativeTransport(): boolean;
     vignette(): OptionInstance<boolean>;

@@ -2,6 +2,7 @@ import type { NormalizedDurationRecord } from '../../../../../../com/oracle/truf
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TemporalUtil$NormalizedDurationWithTotalRecord extends Record {
+    constructor(normalizedDuration: NormalizedDurationRecord, total: number)
     // private normalizedDuration: NormalizedDurationRecord;
     // private total: number;
     equals(o: Object | null): boolean;

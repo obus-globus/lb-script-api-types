@@ -6,6 +6,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 export class Recipes1_11_2$LegacySmeltingRecipe extends Record implements Recipes1_11_2$LegacyRecipe {
     static fromJson(paramarg0: JsonObject): Recipes1_11_2$LegacySmeltingRecipe;
+    private constructor(group: string, result: Recipes1_11_2$RecipeItemStack, input: Item[], experience: number)
     // private experience: number;
     // private group: string;
     // private input: Item[];

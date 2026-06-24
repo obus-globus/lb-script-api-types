@@ -12,8 +12,8 @@ export class BooleanArraySet$Spliterator extends Object implements BooleanSplite
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: BooleanArraySet$Spliterator)
-    private constructor(null_: BooleanArraySet$Spliterator, arg1: number, arg2: number, arg3: boolean)
+    constructor(null_: (Object | null)[])
+    private constructor(null_: (Object | null)[], arg1: number, arg2: number, arg3: boolean)
     // private hasSplit: boolean;
     // private max: number;
     // private pos: number;

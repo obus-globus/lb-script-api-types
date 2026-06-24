@@ -8,6 +8,7 @@ import type { StreamCodec } from '../../../../net/minecraft/network/codec/Stream
 export class SculkChargeParticleOptions extends Record implements ParticleOptions {
     static CODEC: MapCodec<SculkChargeParticleOptions>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SculkChargeParticleOptions>;
+    constructor(roll: number)
     // private roll: number;
     equals(o: Object | null): boolean;
     getType(): ParticleType<SculkChargeParticleOptions>;

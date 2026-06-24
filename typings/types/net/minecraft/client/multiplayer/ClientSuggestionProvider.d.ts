@@ -10,6 +10,7 @@ import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FabricClientCommandSource } from '../../../../net/fabricmc/fabric/api/client/command/v2/FabricClientCommandSource.d.ts'
+import type { ClientSuggestionProviderExtensions } from '../../../../net/fabricmc/fabric/impl/command/client/ClientSuggestionProviderExtensions.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
 import type { ClientLevel } from '../../../../net/minecraft/client/multiplayer/ClientLevel.d.ts'
 import type { ClientPacketListener } from '../../../../net/minecraft/client/multiplayer/ClientPacketListener.d.ts'
@@ -29,7 +30,7 @@ import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/Featur
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { Vec2 } from '../../../../net/minecraft/world/phys/Vec2.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
-export class ClientSuggestionProvider extends Object implements FabricClientCommandSource, SharedSuggestionProvider {
+export class ClientSuggestionProvider extends Object implements FabricClientCommandSource, ClientSuggestionProviderExtensions, SharedSuggestionProvider {
     static MATCH_SPLITTER: CharMatcher;
     static filterResources(paramvalues: (Object | null)[], paramcontents: string, paramprefix: string, paramconverter: (param0: Object | null) => Identifier, paramconsumer: (param0: Object | null) => void): void;
     static filterResources(paramvalues: (Object | null)[], paramcontents: string, paramconverter: (param0: Object | null) => Identifier, paramconsumer: (param0: Object | null) => void): void;
@@ -48,15 +49,18 @@ export class ClientSuggestionProvider extends Object implements FabricClientComm
     static suggestResource(paramvalues: Stream<Identifier>, parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: Stream<Identifier>, parambuilder: SuggestionsBuilder, paramprefix: string): CompletableFuture<Suggestions>;
     constructor(connection: ClientPacketListener, minecraft: Minecraft, permissions: PermissionSet)
+    // private attended: boolean;
     // private connection: ClientPacketListener;
     // private customCompletionSuggestions: string[];
     // private minecraft: Minecraft;
     // private pendingSuggestionsFuture: CompletableFuture<Suggestions>;
     // private pendingSuggestionsId: number;
     // private permissions: PermissionSet;
+    attended(): boolean;
     completeCustomSuggestions(id: number, result: Suggestions): void;
     customSuggestion(context: CommandContext<Object>): CompletableFuture<Suggestions>;
     enabledFeatures(): FeatureFlagSet;
+    fabric_markAttended(): void;
     getAbsoluteCoordinates(): SharedSuggestionProvider$TextCoordinates[];
     getAllTeams(): string[];
     getAvailableSounds(): Stream<Identifier>;

@@ -7,6 +7,8 @@ export class PotionContents extends Record implements Copyable {
     static TYPE1_20_5: Type<PotionContents>;
     static TYPE1_21_2: Type<PotionContents>;
     static copy(paramarg0: Object | null): Object | null;
+    constructor(arg0: number, arg1: number, arg2: PotionEffect[])
+    constructor(potion: number, customColor: number, customEffects: PotionEffect[], customName: string)
     // private customColor: number;
     // private customEffects: PotionEffect[];
     // private customName: string;

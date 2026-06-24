@@ -5,9 +5,11 @@ import type { TextureSlot } from '../../../../../../net/minecraft/client/data/mo
 import type { Material } from '../../../../../../net/minecraft/client/resources/model/sprite/Material.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
+import type { BedPart } from '../../../../../../net/minecraft/world/level/block/state/properties/BedPart.d.ts'
 export class TextureMapping extends Object {
     static attachedStem(paramstem: Block, paramupperStem: Block): TextureMapping;
     static bars(paramblock: Block): TextureMapping;
+    static bed(paramblock: Block, parampart: BedPart): TextureMapping;
     static campfire(paramcampfire: Block): TextureMapping;
     static candleCake(paramblock: Block, paramlit: boolean): TextureMapping;
     static cauldron(paramcontentTextureLoc: Material): TextureMapping;

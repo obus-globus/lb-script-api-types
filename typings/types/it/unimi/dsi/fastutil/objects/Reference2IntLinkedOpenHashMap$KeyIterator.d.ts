@@ -3,8 +3,8 @@ import type { Reference2IntLinkedOpenHashMap$MapIterator } from '../../../../../
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2IntLinkedOpenHashMap$KeyIterator extends Reference2IntLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<K> {
-    constructor(null_: Reference2IntLinkedOpenHashMap$KeyIterator)
-    constructor(null_: Reference2IntLinkedOpenHashMap$KeyIterator)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: K)
     acceptOnIndex<K extends unknown>(arg0: (param0: K) => void, arg1: number): void;
     add<K extends unknown>(arg0: K): void;
     next<K extends unknown>(): K;

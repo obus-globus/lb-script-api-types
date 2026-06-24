@@ -4,7 +4,8 @@ import type { Date } from '../../../../java/util/Date.d.ts'
 import type { TimeZone as TimeZone_2 } from '../../../../java/util/TimeZone.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class TimeZoneAdapter extends TimeZone_2 {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class TimeZoneAdapter extends TimeZone_2 implements Cloneable {
     static LONG: number;
     static SHORT: number;
     static availableIDs(): Stream<string>;
@@ -18,7 +19,8 @@ export class TimeZoneAdapter extends TimeZone_2 {
     static wrap(paramarg0: TimeZone): TimeZone_2;
     constructor(arg0: TimeZone)
     // private zone: TimeZone;
-    clone(): Object;
+    clone(): TimeZoneAdapter;
+    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getOffset(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
     getOffset(arg0: number): number;

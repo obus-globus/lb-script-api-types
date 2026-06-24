@@ -1,3 +1,4 @@
+import type { FileAlterationObserver$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { FileFilter } from '../../../../../java/io/FileFilter.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
@@ -16,6 +17,7 @@ export class FileAlterationObserver extends Object implements Serializable {
     constructor(arg0: string, arg1: (param0: File) => boolean)
     constructor(arg0: string, arg1: (param0: File) => boolean, arg2: IOCase)
     private constructor(arg0: FileAlterationObserver$Builder)
+    constructor(arg0: FileAlterationObserver$Builder, arg1: FileAlterationObserver$1)
     private constructor(arg0: FileEntry, arg1: (param0: File) => boolean, arg2: (param0: Object) => boolean)
     constructor(arg0: FileEntry, arg1: (param0: File) => boolean, arg2: IOCase)
     // private comparator: (param0: Object) => boolean;

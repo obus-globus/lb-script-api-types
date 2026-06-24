@@ -14,7 +14,7 @@ import type { Source } from '../../../../../com/oracle/truffle/api/source/Source
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InstrumentationHandler$LanguageClientInstrumenter<T extends unknown> extends InstrumentationHandler$AbstractInstrumenter {
-    constructor(null_: InstrumentationHandler$LanguageClientInstrumenter<T>)
+    constructor(null_: InstrumentationHandler, language: TruffleLanguage<Object>)
     // private language: TruffleLanguage<Object>;
     // private languageInfo: LanguageInfo;
     attachContextsListener<S extends ContextsListener>(listener: S, includeActiveContexts: boolean): EventBinding<S>;

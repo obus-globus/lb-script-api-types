@@ -2,6 +2,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { MessageLevel } from '../../../../../../../net/caffeinemc/mods/sodium/client/console/message/MessageLevel.d.ts'
 export class Message extends Record {
+    constructor(level: MessageLevel, text: string, translated: boolean, duration: number)
     // private duration: number;
     // private level: MessageLevel;
     // private text: string;

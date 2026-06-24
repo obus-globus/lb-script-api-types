@@ -1,4 +1,5 @@
 import type { EventBinding$Source } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding$Source.d.ts'
+import type { InstrumentationHandler } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentationHandler.d.ts'
 import type { InstrumentationHandler$VisitOperation } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentationHandler$VisitOperation.d.ts'
 import type { Tag } from '../../../../../com/oracle/truffle/api/instrumentation/Tag.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
@@ -8,7 +9,7 @@ import type { SourceSection } from '../../../../../com/oracle/truffle/api/source
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InstrumentationHandler$Visitor extends Object implements NodeVisitor {
-    constructor(null_: InstrumentationHandler$Visitor, operations: InstrumentationHandler$VisitOperation[])
+    constructor(null_: InstrumentationHandler, shouldMaterializeSyntaxNodes: boolean, operations: InstrumentationHandler$VisitOperation[])
     // private computingRootNodeBits: number;
     // private firstExecution: boolean;
     // private materializeLimitedTags: (Object | null)[];

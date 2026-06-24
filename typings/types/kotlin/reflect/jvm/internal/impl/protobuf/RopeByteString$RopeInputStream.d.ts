@@ -3,7 +3,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { RopeByteString$PieceIterator } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/RopeByteString$PieceIterator.d.ts'
 export class RopeByteString$RopeInputStream extends InputStream {
     static nullInputStream(): InputStream;
-    constructor(null_: RopeByteString$RopeInputStream)
+    constructor(null_: (Object | null)[])
     // private currentPiece: (Object | null)[];
     // private currentPieceIndex: number;
     // private currentPieceOffsetInRope: number;

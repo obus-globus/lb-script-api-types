@@ -1,29 +1,27 @@
 import type { PoseStack$Pose } from '../../../../../com/mojang/blaze3d/vertex/PoseStack$Pose.d.ts'
 import type { QuadInstance } from '../../../../../com/mojang/blaze3d/vertex/QuadInstance.d.ts'
 import type { VertexConsumer } from '../../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { ItemRenderContext } from '../../../../../net/caffeinemc/mods/sodium/client/render/frapi/render/ItemRenderContext.d.ts'
 import type { ItemFeatureRendererAccessor } from '../../../../../net/caffeinemc/mods/sodium/mixin/frapi/ItemFeatureRendererAccessor.d.ts'
-import type { MultiBufferSource } from '../../../../../net/minecraft/client/renderer/MultiBufferSource.d.ts'
-import type { MultiBufferSource$BufferSource } from '../../../../../net/minecraft/client/renderer/MultiBufferSource$BufferSource.d.ts'
-import type { OutlineBufferSource } from '../../../../../net/minecraft/client/renderer/OutlineBufferSource.d.ts'
-import type { SubmitNodeCollection } from '../../../../../net/minecraft/client/renderer/SubmitNodeCollection.d.ts'
-import type { SubmitNodeStorage$ItemSubmit } from '../../../../../net/minecraft/client/renderer/SubmitNodeStorage$ItemSubmit.d.ts'
+import type { FeatureFrameContext } from '../../../../../net/minecraft/client/renderer/feature/FeatureFrameContext.d.ts'
+import type { FeatureRendererType } from '../../../../../net/minecraft/client/renderer/feature/FeatureRendererType.d.ts'
+import type { ItemFeatureRenderer$Submit } from '../../../../../net/minecraft/client/renderer/feature/ItemFeatureRenderer$Submit.d.ts'
+import type { RenderTypeFeatureRenderer } from '../../../../../net/minecraft/client/renderer/feature/RenderTypeFeatureRenderer.d.ts'
 import type { RenderType } from '../../../../../net/minecraft/client/renderer/rendertype/RenderType.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ItemDisplayContext } from '../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
-export class ItemFeatureRenderer extends Object implements ItemFeatureRendererAccessor {
+export class ItemFeatureRenderer extends RenderTypeFeatureRenderer<ItemFeatureRenderer$Submit> implements ItemFeatureRendererAccessor {
     static ENCHANTED_GLINT_ARMOR: Identifier;
     static ENCHANTED_GLINT_ITEM: Identifier;
     static NO_TINT: number;
+    static TYPE: FeatureRendererType<ItemFeatureRenderer$Submit>;
     static fabric_computeFoilDecalPose(paramarg0: ItemDisplayContext, paramarg1: PoseStack$Pose): PoseStack$Pose;
-    static fabric_getFoilBuffer(paramarg0: MultiBufferSource, paramarg1: RenderType, paramarg2: PoseStack$Pose): VertexConsumer;
-    static getFoilBuffer(parambufferSource: MultiBufferSource, paramrenderType: RenderType, paramsheeted: boolean, paramhasFoil: boolean): VertexConsumer;
-    static getFoilRenderType(parambaseRenderType: RenderType, paramsheeted: boolean): RenderType;
+    static fabric_useTransparentGlint(paramarg0: RenderType): boolean;
     constructor()
-    // private itemRenderContext: ItemRenderContext;
     // private quadInstance: QuadInstance;
-    // private renderItem(bufferSource: MultiBufferSource$BufferSource, outlineBufferSource: OutlineBufferSource, submit: SubmitNodeStorage$ItemSubmit): void;
-    renderSolid(nodeCollection: SubmitNodeCollection, bufferSource: MultiBufferSource$BufferSource, outlineBufferSource: OutlineBufferSource): void;
-    renderTranslucent(nodeCollection: SubmitNodeCollection, bufferSource: MultiBufferSource$BufferSource, outlineBufferSource: OutlineBufferSource): void;
+    buildGroup(context: FeatureFrameContext, submits: ItemFeatureRenderer$Submit[]): void;
+    // private getFoilBuffer(renderType: RenderType, foilDecalPose: PoseStack$Pose): VertexConsumer;
+    // private prepareFoilSubmit(submit: ItemFeatureRenderer$Submit): void;
+    // private prepareMainSubmit(submit: ItemFeatureRenderer$Submit): void;
+    // private prepareOutlineSubmit(submit: ItemFeatureRenderer$Submit): void;
+    // private prepareSubmit(submit: ItemFeatureRenderer$Submit, foil: boolean): void;
 }

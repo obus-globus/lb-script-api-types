@@ -1,5 +1,6 @@
 import type { Ops } from '../../../../../../com/mojang/realmsclient/dto/Ops.d.ts'
 import type { PlayerInfo } from '../../../../../../com/mojang/realmsclient/dto/PlayerInfo.d.ts'
+import type { RealmsPlayersTab } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab.d.ts'
 import type { RealmsPlayersTab$Entry } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab$Entry.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../../../net/minecraft/client/gui/components/Button.d.ts'
@@ -7,7 +8,7 @@ import type { GuiEventListener } from '../../../../../../net/minecraft/client/gu
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 export class RealmsPlayersTab$PlayerEntry extends RealmsPlayersTab$Entry {
     static CONTENT_PADDING: number;
-    constructor(null_: RealmsPlayersTab$PlayerEntry, playerInfo: PlayerInfo)
+    constructor(null_: RealmsPlayersTab, playerInfo: PlayerInfo)
     // private makeOpButton: Button;
     // private playerInfo: PlayerInfo;
     // private removeButton: Button;

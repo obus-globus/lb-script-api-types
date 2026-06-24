@@ -7,6 +7,7 @@ export class ClampedNormalInt extends Record implements IntProvider {
     static MAP_CODEC: MapCodec<ClampedNormalInt>;
     static of(parammean: number, paramdeviation: number, paramminInclusive: number, parammaxInclusive: number): ClampedNormalInt;
     static sample(paramrandom: RandomSource, parammean: number, paramdeviation: number, paramminInclusive: number, parammaxInclusive: number): number;
+    constructor(mean: number, deviation: number, minInclusive: number, maxInclusive: number)
     // private deviation: number;
     // private maxInclusive: number;
     // private mean: number;

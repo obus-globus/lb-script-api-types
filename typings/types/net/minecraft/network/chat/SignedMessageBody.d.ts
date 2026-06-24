@@ -9,6 +9,7 @@ import type { SignatureUpdater$Output } from '../../../../net/minecraft/util/Sig
 export class SignedMessageBody extends Record {
     static MAP_CODEC: MapCodec<SignedMessageBody>;
     static unsigned(paramcontent: string): SignedMessageBody;
+    constructor(content: string, timeStamp: Instant, salt: number, lastSeen: LastSeenMessages)
     // private content: string;
     // private lastSeen: LastSeenMessages;
     // private salt: number;

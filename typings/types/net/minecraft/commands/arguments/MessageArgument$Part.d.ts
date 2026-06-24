@@ -4,6 +4,7 @@ import type { CommandSourceStack } from '../../../../net/minecraft/commands/Comm
 import type { EntitySelector } from '../../../../net/minecraft/commands/arguments/selector/EntitySelector.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 export class MessageArgument$Part extends Record {
+    constructor(start: number, end: number, selector: EntitySelector)
     // private end: number;
     // private selector: EntitySelector;
     // private start: number;

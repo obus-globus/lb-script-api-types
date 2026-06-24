@@ -12,6 +12,9 @@ export class TimeBasedTriggeringPolicy$Builder extends Object implements Builder
     getMaxRandomDelay(): number;
     isModulate(): boolean;
     isValid(): boolean;
+    setInterval(interval: number): TimeBasedTriggeringPolicy$Builder;
+    setMaxRandomDelay(maxRandomDelay: number): TimeBasedTriggeringPolicy$Builder;
+    setModulate(modulate: boolean): TimeBasedTriggeringPolicy$Builder;
     withInterval(interval: number): TimeBasedTriggeringPolicy$Builder;
     withMaxRandomDelay(maxRandomDelay: number): TimeBasedTriggeringPolicy$Builder;
     withModulate(modulate: boolean): TimeBasedTriggeringPolicy$Builder;

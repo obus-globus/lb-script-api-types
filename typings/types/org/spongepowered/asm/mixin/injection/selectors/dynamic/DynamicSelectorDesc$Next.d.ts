@@ -9,7 +9,7 @@ export class DynamicSelectorDesc$Next extends DynamicSelectorDesc {
     static parse(paramarg0: string, paramarg1: ISelectorContext): DynamicSelectorDesc;
     static parse(paramarg0: IAnnotationHandle, paramarg1: ISelectorContext): DynamicSelectorDesc;
     static resolve(paramarg0: ISelectorContext): DynamicSelectorDesc;
-    constructor(null_: DynamicSelectorDesc$Next, arg1: number, arg2: IResolvedDescriptor)
+    constructor(null_: DynamicSelectorDesc, arg1: number, arg2: IResolvedDescriptor)
     // private index: number;
     next(): ITargetSelector;
     next(arg0: number): ITargetSelector;

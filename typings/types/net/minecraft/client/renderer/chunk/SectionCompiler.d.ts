@@ -5,17 +5,15 @@ import type { BlockColors } from '../../../../../net/minecraft/client/color/bloc
 import type { SectionBufferBuilderPack } from '../../../../../net/minecraft/client/renderer/SectionBufferBuilderPack.d.ts'
 import type { BlockStateModelSet } from '../../../../../net/minecraft/client/renderer/block/BlockStateModelSet.d.ts'
 import type { FluidStateModelSet } from '../../../../../net/minecraft/client/renderer/block/FluidStateModelSet.d.ts'
-import type { BlockEntityRenderDispatcher } from '../../../../../net/minecraft/client/renderer/blockentity/BlockEntityRenderDispatcher.d.ts'
 import type { ChunkSectionLayer } from '../../../../../net/minecraft/client/renderer/chunk/ChunkSectionLayer.d.ts'
 import type { RenderSectionRegion } from '../../../../../net/minecraft/client/renderer/chunk/RenderSectionRegion.d.ts'
 import type { SectionCompiler$Results } from '../../../../../net/minecraft/client/renderer/chunk/SectionCompiler$Results.d.ts'
 import type { SectionPos } from '../../../../../net/minecraft/core/SectionPos.d.ts'
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 export class SectionCompiler extends Object {
-    constructor(ambientOcclusion: boolean, cutoutLeaves: boolean, blockModelSet: BlockStateModelSet, fluidModelSet: FluidStateModelSet, blockColors: BlockColors, blockEntityRenderer: BlockEntityRenderDispatcher)
+    constructor(ambientOcclusion: boolean, cutoutLeaves: boolean, blockModelSet: BlockStateModelSet, fluidModelSet: FluidStateModelSet, blockColors: BlockColors)
     // private ambientOcclusion: boolean;
     // private blockColors: BlockColors;
-    // private blockEntityRenderer: BlockEntityRenderDispatcher;
     // private blockModelSet: BlockStateModelSet;
     // private cutoutLeaves: boolean;
     // private fluidModelSet: FluidStateModelSet;

@@ -4,6 +4,7 @@ import type { Instant } from '../../../../java/time/Instant.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Subscription extends Record {
     static parse(paramjson: string): Subscription;
+    constructor(startDate: Instant, daysLeft: number, type: Subscription$SubscriptionType)
     // private daysLeft: number;
     // private startDate: Instant;
     // private type: Subscription$SubscriptionType;

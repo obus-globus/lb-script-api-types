@@ -1,16 +1,18 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { RenderSection } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/RenderSection.d.ts'
 import type { CoordinateSectionVisitor } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/lists/CoordinateSectionVisitor.d.ts'
+import type { Forest$TreeAddMethod } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/tree/Forest$TreeAddMethod.d.ts'
 import type { RemovableForest } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/tree/RemovableForest.d.ts'
 import type { RemovableTree } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/tree/RemovableTree.d.ts'
 import type { Viewport } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/viewport/Viewport.d.ts'
-export class RemovableMultiForest extends Object implements RemovableForest {
+export class RemovableMultiForest extends Object implements RemovableForest<RemovableTree> {
     constructor(arg0: number)
     // private lastTree: RemovableTree;
     // private treeSortList: RemovableTree[];
     // private trees: { [key: string]: any };
     // private treesAreReady: boolean;
     add(arg0: number, arg1: number, arg2: number): void;
+    add(arg0: number, arg1: number, arg2: number, arg3: (param0: RemovableTree, param1: number, param2: number, param3: number) => number): boolean;
     add(arg0: RenderSection): void;
     ensureCapacity(arg0: number): void;
     getPresence(arg0: number, arg1: number, arg2: number): number;

@@ -9,6 +9,7 @@ import type { ChannelHandlerContext } from '../../../io/netty/channel/ChannelHan
 import type { SimpleChannelInboundHandler } from '../../../io/netty/channel/SimpleChannelInboundHandler.d.ts'
 import type { InetSocketAddress } from '../../../java/net/InetSocketAddress.d.ts'
 import type { SocketAddress } from '../../../java/net/SocketAddress.d.ts'
+import type { UUID } from '../../../java/util/UUID.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Cipher } from '../../../javax/crypto/Cipher.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -45,6 +46,7 @@ export class Connection extends SimpleChannelInboundHandler<Packet<any>> impleme
     static connect(paramaddress: InetSocketAddress, parameventLoopGroupHolder: EventLoopGroupHolder, paramconnection: Connection): ChannelFuture;
     static connectToLocalServer(paramaddress: SocketAddress): Connection;
     static connectToServer(paramaddress: InetSocketAddress, parameventLoopGroupHolder: EventLoopGroupHolder, parambandwidthLogger: LocalSampleLogger): Connection;
+    static fromChannel(paramchannel: Channel, paramflow: PacketFlow, parambandwidthLogger: LocalSampleLogger): Connection;
     constructor(receiving: PacketFlow)
     // private address: SocketAddress;
     readonly averageReceivedPackets: number;
@@ -55,8 +57,8 @@ export class Connection extends SimpleChannelInboundHandler<Packet<any>> impleme
     // private disconnectListener: PacketListener;
     readonly disconnectionDetails: DisconnectionDetails;
     // private disconnectionHandled: boolean;
-    readonly encrypted: boolean;
     // private handlingFault: boolean;
+    readonly intendedProfileId: UUID;
     readonly packetContext: PacketContextImpl;
     readonly packetListener: PacketListener;
     pendingActions: (param0: Connection) => void[];
@@ -88,6 +90,7 @@ export class Connection extends SimpleChannelInboundHandler<Packet<any>> impleme
     getAverageReceivedPackets(): number;
     getAverageSentPackets(): number;
     getDisconnectionDetails(): DisconnectionDetails;
+    getIntendedProfileId(): UUID;
     getLoggableAddress(logIPs: boolean): string;
     getPacketContext(): PacketContext;
     getPacketListener(): PacketListener;
@@ -101,7 +104,6 @@ export class Connection extends SimpleChannelInboundHandler<Packet<any>> impleme
     initiateServerboundStatusConnection(hostName: string, port: number, listener: ClientStatusPacketListener): void;
     isConnected(): boolean;
     isConnecting(): boolean;
-    isEncrypted(): boolean;
     isMemoryConnection(): boolean;
     runOnceConnected(action: (param0: Connection) => void): void;
     send(packet: Packet<any>): void;
@@ -110,6 +112,7 @@ export class Connection extends SimpleChannelInboundHandler<Packet<any>> impleme
     // private sendPacket(packet: Packet<any>, listener: ChannelFutureListener, flush: boolean): void;
     setBandwidthLogger(bandwidthLogger: LocalSampleLogger): void;
     setEncryptionKey(decryptCipher: Cipher, encryptCipher: Cipher): void;
+    setIntendedProfileId(profileId: UUID): void;
     setListenerForServerboundHandshake(packetListener: PacketListener): void;
     setReadOnly(): void;
     setupCompression(threshold: number, validateDecompressed: boolean): void;

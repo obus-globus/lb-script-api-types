@@ -22,4 +22,5 @@ export class GameRenderState extends Object implements FabricRenderState {
     getDataOrDefault(arg0: RenderStateDataKey<Object>, arg1: Object): Object;
     setData<T extends unknown>(arg0: RenderStateDataKey<T>, arg1: T): void;
     setData(arg0: RenderStateDataKey<Object>, arg1: Object): void;
+    useShaderTransparency(): boolean;
 }

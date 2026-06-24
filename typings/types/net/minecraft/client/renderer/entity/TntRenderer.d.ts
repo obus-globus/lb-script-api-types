@@ -10,6 +10,8 @@ import type { PrimedTnt } from '../../../../../net/minecraft/world/entity/item/P
 export class TntRenderer extends EntityRenderer<PrimedTnt, TntRenderState> {
     static BLOCK_DISPLAY_CONTEXT: BlockDisplayContext;
     static NAMETAG_SCALE: number;
+    static getSwellAmount(paramfuse: number): number;
+    static isLit(paramfuse: number): boolean;
     constructor(context: EntityRendererProvider$Context)
     // private blockModelResolver: BlockModelResolver;
     createRenderState(): TntRenderState;

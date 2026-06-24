@@ -4,6 +4,7 @@ import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Abstract2DLinearEstimator$DataPair } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/estimation/Abstract2DLinearEstimator$DataPair.d.ts'
 export class JobEffort extends Record implements Abstract2DLinearEstimator$DataPair<Class<Object>> {
     static untilNowWithEffort(paramarg0: Class<Object>, paramarg1: number, paramarg2: number): JobEffort;
+    constructor(category: Class<Object>, duration: number, effort: number)
     // private category: Class<Object>;
     // private duration: number;
     // private effort: number;

@@ -29,6 +29,7 @@ export class LongTag extends Record implements NumericTag {
     static TAG_STRING: number;
     static TYPE: TagType<LongTag>;
     static valueOf(parami: number): LongTag;
+    constructor(value: number)
     // private value: number;
     accept(visitor: StreamTagVisitor): StreamTagVisitor$ValueResult;
     accept(visitor: TagVisitor): void;

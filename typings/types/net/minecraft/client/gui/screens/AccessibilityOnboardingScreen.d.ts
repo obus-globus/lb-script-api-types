@@ -41,7 +41,6 @@ export class AccessibilityOnboardingScreen extends Screen {
     init(width: number, height: number): void;
     // private initTitleYPos(): number;
     onClose(): void;
-    panoramaShouldSpin(): boolean;
     repositionElements(): void;
     setInitialFocus(): void;
     setInitialFocus(target: GuiEventListener): void;

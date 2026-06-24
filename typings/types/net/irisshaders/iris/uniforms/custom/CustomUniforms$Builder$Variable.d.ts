@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ExpressionElement } from '../../../../../kroppeb/stareval/element/ExpressionElement.d.ts'
 import type { Type } from '../../../../../kroppeb/stareval/function/Type.d.ts'
 export class CustomUniforms$Builder$Variable extends Record {
+    private constructor(type: Type, name: string, expression: ExpressionElement, uniform: boolean)
     // private expression: ExpressionElement;
     // private name: string;
     // private type: Type;

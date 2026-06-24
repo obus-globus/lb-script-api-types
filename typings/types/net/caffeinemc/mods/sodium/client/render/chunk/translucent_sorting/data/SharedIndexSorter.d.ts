@@ -5,6 +5,7 @@ import type { CombinedCameraPos } from '../../../../../../../../../net/caffeinem
 import type { Sorter } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/Sorter.d.ts'
 import type { NativeBuffer } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/util/NativeBuffer.d.ts'
 export class SharedIndexSorter extends Record implements Sorter {
+    constructor(quadCount: number)
     // private quadCount: number;
     destroy(): void;
     equals(arg0: Object | null): boolean;

@@ -10,6 +10,7 @@ export class AttributeModifier extends Record {
     static CODEC: Codec<AttributeModifier>;
     static MAP_CODEC: MapCodec<AttributeModifier>;
     static STREAM_CODEC: StreamCodec<ByteBuf, AttributeModifier>;
+    constructor(id: Identifier, amount: number, operation: AttributeModifier$Operation)
     // private amount: number;
     // private id: Identifier;
     // private operation: AttributeModifier$Operation;

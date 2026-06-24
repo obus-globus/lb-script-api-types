@@ -1,5 +1,4 @@
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
-import type { AbstractKQueueChannel$AbstractKQueueUnsafe } from '../../../../io/netty/channel/kqueue/AbstractKQueueChannel$AbstractKQueueUnsafe.d.ts'
 import type { AbstractKQueueStreamChannel } from '../../../../io/netty/channel/kqueue/AbstractKQueueStreamChannel.d.ts'
 import type { BsdSocket } from '../../../../io/netty/channel/kqueue/BsdSocket.d.ts'
 import type { KQueueSocketChannelConfig } from '../../../../io/netty/channel/kqueue/KQueueSocketChannelConfig.d.ts'
@@ -19,7 +18,6 @@ export class KQueueSocketChannel extends AbstractKQueueStreamChannel implements 
     config(): KQueueSocketChannelConfig;
     doConnect0(arg0: SocketAddress, arg1: SocketAddress): boolean;
     localAddress(): InetSocketAddress;
-    newUnsafe(): AbstractKQueueChannel$AbstractKQueueUnsafe;
     parent(): ServerSocketChannel;
     remoteAddress(): InetSocketAddress;
 }

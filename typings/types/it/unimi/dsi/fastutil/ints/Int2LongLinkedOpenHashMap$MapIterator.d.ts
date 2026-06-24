@@ -1,8 +1,9 @@
 import type { Int2LongMap$Entry } from '../../../../../it/unimi/dsi/fastutil/ints/Int2LongMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Int2LongLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    constructor(null_: Int2LongLinkedOpenHashMap$MapIterator<ConsumerType>)
-    private constructor(null_: Int2LongLinkedOpenHashMap$MapIterator<ConsumerType>, arg1: number)
+    constructor(null_: { [key: string]: any })
+    private constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;
     // private next: number;

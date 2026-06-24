@@ -5,8 +5,8 @@ import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/ob
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2ReferenceLinkedOpenHashMap$FastEntryIterator extends Float2ReferenceLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<Float2ReferenceMap$Entry<V>> {
-    constructor(null_: Float2ReferenceLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Float2ReferenceLinkedOpenHashMap$FastEntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Float2ReferenceLinkedOpenHashMap$MapEntry;
     acceptOnIndex<V extends unknown>(arg0: (param0: Float2ReferenceMap$Entry<V>) => void, arg1: number): void;
     add<V extends unknown>(arg0: Float2ReferenceMap$Entry<V>): void;

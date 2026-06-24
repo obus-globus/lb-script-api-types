@@ -20,11 +20,17 @@ export class Rfc5424Layout$Rfc5424LayoutBuilder extends AbstractStringLayout$Bui
     // private includeNL: boolean;
     // private includes: string;
     // private loggerFields: LoggerFields[];
+    // private mdcExcludes: string;
     // private mdcId: string;
+    // private mdcIncludes: string;
     // private mdcPrefix: string;
+    // private mdcRequired: string;
     // private messageId: string;
+    // private newLine: boolean;
+    // private newLineEscape: string;
     // private required: string;
     // private useTLSMessageFormat: boolean;
+    // private useTlsMessageFormat: boolean;
     build(): Rfc5424Layout;
     getErrorPrefix(): string;
     isValid(): boolean;
@@ -43,9 +49,15 @@ export class Rfc5424Layout$Rfc5424LayoutBuilder extends AbstractStringLayout$Bui
     setIncludeNL(includeNL: boolean): Rfc5424Layout$Rfc5424LayoutBuilder;
     setIncludes(includes: string): Rfc5424Layout$Rfc5424LayoutBuilder;
     setLoggerFields(loggerFields: LoggerFields[]): Rfc5424Layout$Rfc5424LayoutBuilder;
+    setMdcExcludes(mdcExcludes: string): Rfc5424Layout$Rfc5424LayoutBuilder;
     setMdcId(mdcId: string): Rfc5424Layout$Rfc5424LayoutBuilder;
+    setMdcIncludes(mdcIncludes: string): Rfc5424Layout$Rfc5424LayoutBuilder;
     setMdcPrefix(mdcPrefix: string): Rfc5424Layout$Rfc5424LayoutBuilder;
+    setMdcRequired(mdcRequired: string): Rfc5424Layout$Rfc5424LayoutBuilder;
     setMessageId(messageId: string): Rfc5424Layout$Rfc5424LayoutBuilder;
+    setNewLine(newLine: boolean): Rfc5424Layout$Rfc5424LayoutBuilder;
+    setNewLineEscape(newLineEscape: string): Rfc5424Layout$Rfc5424LayoutBuilder;
     setRequired(required: string): Rfc5424Layout$Rfc5424LayoutBuilder;
     setUseTLSMessageFormat(useTLSMessageFormat: boolean): Rfc5424Layout$Rfc5424LayoutBuilder;
+    setUseTlsMessageFormat(useTlsMessageFormat: boolean): Rfc5424Layout$Rfc5424LayoutBuilder;
 }

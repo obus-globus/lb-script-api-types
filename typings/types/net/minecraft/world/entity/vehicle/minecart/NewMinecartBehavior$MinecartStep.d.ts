@@ -6,6 +6,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class NewMinecartBehavior$MinecartStep extends Record {
     static STREAM_CODEC: StreamCodec<ByteBuf, NewMinecartBehavior$MinecartStep>;
     static ZERO: NewMinecartBehavior$MinecartStep;
+    constructor(position: Vec3, movement: Vec3, yRot: number, xRot: number, weight: number)
     // private movement: Vec3;
     // private position: Vec3;
     // private weight: number;

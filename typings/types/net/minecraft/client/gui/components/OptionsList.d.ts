@@ -17,6 +17,7 @@ export class OptionsList extends ContainerObjectSelectionList<OptionsList$Abstra
     constructor(minecraft: Minecraft, width: number, screen: OptionsSubScreen)
     // private screen: OptionsSubScreen;
     addBig(option: OptionInstance<Object>): void;
+    addBig(widget: AbstractWidget): void;
     addHeader(text: Component): void;
     addSmall(options: OptionInstance<Object>[]): void;
     addSmall(widgets: AbstractWidget[]): void;

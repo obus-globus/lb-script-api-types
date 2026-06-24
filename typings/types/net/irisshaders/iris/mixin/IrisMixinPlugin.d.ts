@@ -3,6 +3,7 @@ import type { ClassNode } from '../../../../org/objectweb/asm/tree/ClassNode.d.t
 import type { IMixinConfigPlugin } from '../../../../org/spongepowered/asm/mixin/extensibility/IMixinConfigPlugin.d.ts'
 import type { IMixinInfo } from '../../../../org/spongepowered/asm/mixin/extensibility/IMixinInfo.d.ts'
 export class IrisMixinPlugin extends Object implements IMixinConfigPlugin {
+    static usingVulkan: boolean;
     constructor()
     acceptTargets(arg0: string[], arg1: string[]): void;
     getMixins(): string[];

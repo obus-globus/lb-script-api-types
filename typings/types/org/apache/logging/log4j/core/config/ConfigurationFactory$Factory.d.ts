@@ -1,3 +1,4 @@
+import type { ConfigurationFactory$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../../java/lang/ClassLoader.d.ts'
 import type { URI } from '../../../../../../java/net/URI.d.ts'
@@ -25,11 +26,13 @@ export class ConfigurationFactory$Factory extends ConfigurationFactory {
     static resetConfigurationFactory(): void;
     static setConfigurationFactory(paramfactory: ConfigurationFactory): void;
     private constructor()
+    constructor(arg0: ConfigurationFactory$1)
     // private getConfiguration(requiredVersion: string, loggerContext: LoggerContext, configLocationStr: string): Configuration;
     // private getConfiguration(loggerContext: LoggerContext, isTest: boolean, name: string): Configuration;
     // private getConfiguration(loggerContext: LoggerContext, configLocationStr: string): Configuration;
     getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI): Configuration;
     getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI, loader: ClassLoader): Configuration;
+    getConfiguration(loggerContext: LoggerContext, name: string, configLocations: URI[]): Configuration;
     getConfiguration(loggerContext: LoggerContext, source: ConfigurationSource): Configuration;
     getSupportedTypes(): string[];
     // private parseConfigLocations(configLocations: URI): string[];

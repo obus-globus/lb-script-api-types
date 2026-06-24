@@ -46,7 +46,7 @@ export class MobEffect extends Object implements FabricMobEffect, FeatureElement
     addAttributeModifier(attribute: Holder<Attribute>, id: Identifier, amount: number, operation: AttributeModifier$Operation): MobEffect;
     addAttributeModifiers(attributes: AttributeMap, amplifier: number): void;
     applyEffectTick(serverLevel: ServerLevel, mob: LivingEntity, amplification: number): boolean;
-    applyInstantenousEffect(level: ServerLevel, source: Entity, owner: Entity, mob: LivingEntity, amplification: number, scale: number): void;
+    applyInstantaneousEffect(level: ServerLevel, source: Entity, owner: Entity, mob: LivingEntity, amplification: number, scale: number): void;
     createModifiers(amplifier: number, consumer: (param0: Holder<Attribute>, param1: AttributeModifier) => void): void;
     createParticleOptions(mobEffectInstance: MobEffectInstance): ParticleOptions;
     getBlendInDurationTicks(): number;
@@ -59,7 +59,7 @@ export class MobEffect extends Object implements FabricMobEffect, FeatureElement
     getOrCreateDescriptionId(): string;
     isBeneficial(): boolean;
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
-    isInstantenous(): boolean;
+    isInstantaneous(): boolean;
     onEffectAdded(arg0: MobEffectInstance, arg1: LivingEntity): void;
     onEffectAdded(mob: LivingEntity, amplifier: number): void;
     onEffectRemoved(arg0: MobEffectInstance, arg1: LivingEntity): void;

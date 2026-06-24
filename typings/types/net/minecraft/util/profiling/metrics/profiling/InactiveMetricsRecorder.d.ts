@@ -9,5 +9,6 @@ export class InactiveMetricsRecorder extends Object implements MetricsRecorder {
     endTick(): void;
     getProfiler(): ProfilerFiller;
     isRecording(): boolean;
+    sampleDuringExtract(): void;
     startTick(): void;
 }

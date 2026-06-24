@@ -1,0 +1,115 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { NativeResource } from '../../../org/lwjgl/system/NativeResource.d.ts'
+import type { Struct } from '../../../org/lwjgl/system/Struct.d.ts'
+import type { Struct$StructValidation } from '../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+export class VkGeneratedCommandsInfoNV extends Struct<VkGeneratedCommandsInfoNV> implements NativeResource {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static INDIRECTCOMMANDSLAYOUT: number;
+    static PIPELINE: number;
+    static PIPELINEBINDPOINT: number;
+    static PNEXT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static PREPROCESSBUFFER: number;
+    static PREPROCESSOFFSET: number;
+    static PREPROCESSSIZE: number;
+    static PSTREAMS: number;
+    static SEQUENCESCOUNT: number;
+    static SEQUENCESCOUNTBUFFER: number;
+    static SEQUENCESCOUNTOFFSET: number;
+    static SEQUENCESINDEXBUFFER: number;
+    static SEQUENCESINDEXOFFSET: number;
+    static SIZEOF: number;
+    static STREAMCOUNT: number;
+    static STYPE: number;
+    static calloc(): VkGeneratedCommandsInfoNV;
+    static calloc(paramarg0: MemoryStack): VkGeneratedCommandsInfoNV;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): VkGeneratedCommandsInfoNV;
+    static create(paramarg0: number): VkGeneratedCommandsInfoNV;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkGeneratedCommandsInfoNV;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): VkGeneratedCommandsInfoNV;
+    static malloc(paramarg0: MemoryStack): VkGeneratedCommandsInfoNV;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static nindirectCommandsLayout(paramarg0: number): number;
+    static nindirectCommandsLayout(paramarg0: number, paramarg1: number): void;
+    static npNext(paramarg0: number): number;
+    static npNext(paramarg0: number, paramarg1: number): void;
+    static npStreams(paramarg0: number): (Object | null)[];
+    static npStreams(paramarg0: number, paramarg1: (Object | null)[]): void;
+    static npipeline(paramarg0: number): number;
+    static npipeline(paramarg0: number, paramarg1: number): void;
+    static npipelineBindPoint(paramarg0: number): number;
+    static npipelineBindPoint(paramarg0: number, paramarg1: number): void;
+    static npreprocessBuffer(paramarg0: number): number;
+    static npreprocessBuffer(paramarg0: number, paramarg1: number): void;
+    static npreprocessOffset(paramarg0: number): number;
+    static npreprocessOffset(paramarg0: number, paramarg1: number): void;
+    static npreprocessSize(paramarg0: number): number;
+    static npreprocessSize(paramarg0: number, paramarg1: number): void;
+    static nsType(paramarg0: number): number;
+    static nsType(paramarg0: number, paramarg1: number): void;
+    static nsequencesCount(paramarg0: number): number;
+    static nsequencesCount(paramarg0: number, paramarg1: number): void;
+    static nsequencesCountBuffer(paramarg0: number): number;
+    static nsequencesCountBuffer(paramarg0: number, paramarg1: number): void;
+    static nsequencesCountOffset(paramarg0: number): number;
+    static nsequencesCountOffset(paramarg0: number, paramarg1: number): void;
+    static nsequencesIndexBuffer(paramarg0: number): number;
+    static nsequencesIndexBuffer(paramarg0: number, paramarg1: number): void;
+    static nsequencesIndexOffset(paramarg0: number): number;
+    static nsequencesIndexOffset(paramarg0: number, paramarg1: number): void;
+    static nstreamCount(paramarg0: number): number;
+    static nstreamCount(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    close(): void;
+    create(arg0: number, arg1: ByteBuffer): VkGeneratedCommandsInfoNV;
+    indirectCommandsLayout(): number;
+    indirectCommandsLayout(arg0: number): VkGeneratedCommandsInfoNV;
+    pNext(): number;
+    pNext(arg0: number): VkGeneratedCommandsInfoNV;
+    pStreams(): (Object | null)[];
+    pStreams(arg0: (Object | null)[]): VkGeneratedCommandsInfoNV;
+    pipeline(): number;
+    pipeline(arg0: number): VkGeneratedCommandsInfoNV;
+    pipelineBindPoint(): number;
+    pipelineBindPoint(arg0: number): VkGeneratedCommandsInfoNV;
+    preprocessBuffer(): number;
+    preprocessBuffer(arg0: number): VkGeneratedCommandsInfoNV;
+    preprocessOffset(): number;
+    preprocessOffset(arg0: number): VkGeneratedCommandsInfoNV;
+    preprocessSize(): number;
+    preprocessSize(arg0: number): VkGeneratedCommandsInfoNV;
+    sType(): number;
+    sType(arg0: number): VkGeneratedCommandsInfoNV;
+    sType$Default(): VkGeneratedCommandsInfoNV;
+    sequencesCount(): number;
+    sequencesCount(arg0: number): VkGeneratedCommandsInfoNV;
+    sequencesCountBuffer(): number;
+    sequencesCountBuffer(arg0: number): VkGeneratedCommandsInfoNV;
+    sequencesCountOffset(): number;
+    sequencesCountOffset(arg0: number): VkGeneratedCommandsInfoNV;
+    sequencesIndexBuffer(): number;
+    sequencesIndexBuffer(arg0: number): VkGeneratedCommandsInfoNV;
+    sequencesIndexOffset(): number;
+    sequencesIndexOffset(arg0: number): VkGeneratedCommandsInfoNV;
+    set(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: (Object | null)[], arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number, arg13: number): VkGeneratedCommandsInfoNV;
+    set(arg0: VkGeneratedCommandsInfoNV): VkGeneratedCommandsInfoNV;
+    sizeof(): number;
+    streamCount(): number;
+}

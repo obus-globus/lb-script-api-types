@@ -7,6 +7,7 @@ import type { TimeZone } from '../../kotlinx/datetime/TimeZone.d.ts'
 import type { UtcOffset } from '../../kotlinx/datetime/UtcOffset.d.ts'
 export class TimeZoneKt extends Object {
     static atStartOfDayIn(paramarg0: LocalDate, paramarg1: TimeZone, paramarg2: OverloadMarker): Instant;
+    static localDateTimeToInstant(paramarg0: LocalDateTime, paramarg1: TimeZone, paramarg2: UtcOffset): Instant;
     static offsetAt(paramarg0: TimeZone, paramarg1: Instant): UtcOffset;
     static offsetIn(paramarg0: Instant, paramarg1: TimeZone): UtcOffset;
     static toInstant(paramarg0: LocalDateTime, paramarg1: TimeZone, paramarg2: OverloadMarker): Instant;

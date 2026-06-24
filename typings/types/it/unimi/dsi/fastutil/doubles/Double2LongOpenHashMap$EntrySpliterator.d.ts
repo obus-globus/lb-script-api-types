@@ -11,8 +11,8 @@ export class Double2LongOpenHashMap$EntrySpliterator extends Double2LongOpenHash
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Double2LongOpenHashMap$EntrySpliterator)
-    constructor(null_: Double2LongOpenHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: Double2LongMap$Entry) => void, arg1: number): void;
     characteristics(): number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Double2LongOpenHashMap$EntrySpliterator;

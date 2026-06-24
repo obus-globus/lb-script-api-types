@@ -4,6 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EntityType } from '../../../../../net/minecraft/world/entity/EntityType.d.ts'
 export class MobSpawnSettings$SpawnerData extends Record {
     static CODEC: MapCodec<MobSpawnSettings$SpawnerData>;
+    constructor(type: EntityType<any>, minCount: number, maxCount: number)
     // private maxCount: number;
     // private minCount: number;
     // private type: EntityType<any>;

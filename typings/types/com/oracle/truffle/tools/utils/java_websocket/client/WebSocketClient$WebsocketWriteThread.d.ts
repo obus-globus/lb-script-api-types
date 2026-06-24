@@ -2,7 +2,7 @@ import type { WebSocketClient } from '../../../../../../../com/oracle/truffle/to
 import type { Runnable } from '../../../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class WebSocketClient$WebsocketWriteThread extends Object implements Runnable {
-    constructor(null_: WebSocketClient$WebsocketWriteThread, arg1: WebSocketClient)
+    constructor(null_: WebSocketClient, arg1: WebSocketClient)
     // private webSocketClient: WebSocketClient;
     // private closeSocket(): void;
     run(): void;

@@ -12,8 +12,8 @@ export class Object2ShortLinkedOpenHashMap$MapEntry extends Object implements Ob
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: Object | null, paramarg1: number): ObjectShortPair<Object>;
-    constructor(null_: Object2ShortLinkedOpenHashMap$MapEntry)
-    constructor(null_: Object2ShortLinkedOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly key: K;
     equals(arg0: Object | null): boolean;

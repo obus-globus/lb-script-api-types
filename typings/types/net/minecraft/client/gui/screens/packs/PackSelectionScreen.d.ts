@@ -42,7 +42,7 @@ export class PackSelectionScreen extends Screen {
     // private ticksToReload: number;
     // private watcher: PackSelectionScreen$Watcher;
     // private closeWatcher(): void;
-    // private filterEntries(value: string, oldEntries: Stream<PackSelectionModel$Entry>, listToUpdate: TransferableSelectionList): void;
+    // private filterEntries(value: string, oldEntries: Stream<PackSelectionModel$Entry>, listToUpdate: TransferableSelectionList, transferredEntry: PackSelectionModel$EntryBase): void;
     // private getPackIcon(pack: Pack): Identifier;
     init(): void;
     init(width: number, height: number): void;
@@ -56,4 +56,5 @@ export class PackSelectionScreen extends Screen {
     setInitialFocus(target: GuiEventListener): void;
     tick(): void;
     // private updateFilteredEntries(value: string): void;
+    // private updateFilteredEntries(value: string, transferredEntry: PackSelectionModel$EntryBase): void;
 }

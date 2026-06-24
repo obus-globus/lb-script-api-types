@@ -1,3 +1,4 @@
+import type { ScriptPatternSelector$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
@@ -12,6 +13,7 @@ export class ScriptPatternSelector extends Object implements LocationAware, Patt
     static createSelector(paramscript: AbstractScript, paramproperties: (Object | null)[], paramdefaultPattern: string, paramalwaysWriteExceptions: boolean, paramnoConsoleNoAnsi: boolean, paramconfiguration: Configuration): ScriptPatternSelector;
     static newBuilder(): ScriptPatternSelector$Builder;
     private constructor(config: Configuration, script: AbstractScript, properties: PatternMatch[], defaultPattern: string, alwaysWriteExceptions: boolean, disableAnsi: boolean, noConsoleNoAnsi: boolean)
+    constructor(arg0: Configuration, arg1: AbstractScript, arg2: PatternMatch[], arg3: string, arg4: boolean, arg5: boolean, arg6: boolean, arg7: ScriptPatternSelector$1)
     constructor(script: AbstractScript, properties: PatternMatch[], defaultPattern: string, alwaysWriteExceptions: boolean, disableAnsi: boolean, noConsoleNoAnsi: boolean, config: Configuration)
     // private configuration: Configuration;
     // private defaultFormatters: PatternFormatter[];

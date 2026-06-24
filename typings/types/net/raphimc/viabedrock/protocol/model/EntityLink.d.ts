@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class EntityLink extends Record {
+    constructor(fromEntityUniqueId: number, toEntityUniqueId: number, type: number, immediate: boolean, riderInitiated: boolean, vehicleAngularVelocity: number)
     // private fromEntityUniqueId: number;
     // private immediate: boolean;
     // private riderInitiated: boolean;

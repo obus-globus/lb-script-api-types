@@ -23,7 +23,8 @@ import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
 import type { Temporal } from '../../../../java/time/temporal/Temporal.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class DateIntervalFormat extends UFormat {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class DateIntervalFormat extends UFormat implements Cloneable {
     static getInstance(paramarg0: string): DateIntervalFormat;
     static getInstance(paramarg0: string, paramarg1: DateIntervalInfo): DateIntervalFormat;
     static getInstance(paramarg0: string, paramarg1: ULocale): DateIntervalFormat;
@@ -44,7 +45,8 @@ export class DateIntervalFormat extends UFormat {
     // private fTimePattern: string;
     // private fToCalendar: Calendar;
     // private isDateIntervalInfoDefault: boolean;
-    clone(): Object;
+    clone(): DateIntervalFormat;
+    protected clone(): Object;
     // private concatSingleDate2TimeInterval(arg0: string, arg1: string, arg2: number, arg3: { [key: string]: DateIntervalInfo$PatternInfo }): void;
     // private fallbackFormat(arg0: Calendar, arg1: Calendar, arg2: boolean, arg3: StringBuffer, arg4: FieldPosition, arg5: DateIntervalFormat$FormatOutput, arg6: FieldPosition[]): StringBuffer;
     // private fallbackFormat(arg0: Calendar, arg1: Calendar, arg2: boolean, arg3: StringBuffer, arg4: FieldPosition, arg5: DateIntervalFormat$FormatOutput, arg6: FieldPosition[], arg7: string): StringBuffer;

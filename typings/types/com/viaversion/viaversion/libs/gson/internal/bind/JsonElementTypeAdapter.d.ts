@@ -4,6 +4,7 @@ import type { JsonReader } from '../../../../../../../com/viaversion/viaversion/
 import type { JsonToken } from '../../../../../../../com/viaversion/viaversion/libs/gson/stream/JsonToken.d.ts'
 import type { JsonWriter } from '../../../../../../../com/viaversion/viaversion/libs/gson/stream/JsonWriter.d.ts'
 export class JsonElementTypeAdapter extends TypeAdapter<JsonElement> {
+    static ADAPTER: JsonElementTypeAdapter;
     private constructor()
     read(arg0: JsonReader): JsonElement;
     // private readTerminal(arg0: JsonReader, arg1: JsonToken): JsonElement;

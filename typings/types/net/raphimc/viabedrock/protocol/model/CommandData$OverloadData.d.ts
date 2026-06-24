@@ -2,6 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CommandData$OverloadData$ParamData } from '../../../../../net/raphimc/viabedrock/protocol/model/CommandData$OverloadData$ParamData.d.ts'
 export class CommandData$OverloadData extends Record {
+    constructor(chaining: boolean, parameters: CommandData$OverloadData$ParamData[])
     // private chaining: boolean;
     // private parameters: CommandData$OverloadData$ParamData[];
     chaining(): boolean;

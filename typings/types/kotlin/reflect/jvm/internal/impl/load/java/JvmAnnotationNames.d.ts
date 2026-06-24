@@ -8,10 +8,13 @@ export class JvmAnnotationNames extends Object {
     static ELEMENT_TYPE_ENUM: FqName;
     static ENHANCED_MUTABILITY_ANNOTATION: FqName;
     static ENHANCED_NULLABILITY_ANNOTATION: FqName;
+    static INHERITED_ANNOTATION: FqName;
     static JETBRAINS_MUTABLE_ANNOTATION: FqName;
     static JETBRAINS_NOT_NULL_ANNOTATION: FqName;
     static JETBRAINS_NULLABLE_ANNOTATION: FqName;
     static JETBRAINS_READONLY_ANNOTATION: FqName;
+    static JETBRAINS_UNMODIFIABLE_ANNOTATION: FqName;
+    static JETBRAINS_UNMODIFIABLE_VIEW_ANNOTATION: FqName;
     static KOTLIN_JVM_INTERNAL: FqName;
     static METADATA_DESC: string;
     static METADATA_FQ_NAME: FqName;
@@ -22,7 +25,5 @@ export class JvmAnnotationNames extends Object {
     static REPEATABLE_ANNOTATION: FqName;
     static RETENTION_ANNOTATION: FqName;
     static RETENTION_POLICY_ENUM: FqName;
-    static SERIALIZED_IR_DESC: string;
-    static SERIALIZED_IR_FQ_NAME: FqName;
     static TARGET_ANNOTATION: FqName;
 }

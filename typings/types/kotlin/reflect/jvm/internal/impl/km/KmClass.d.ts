@@ -14,6 +14,7 @@ export class KmClass extends Object implements KmDeclarationContainer {
     constructor()
     readonly annotations: KmAnnotation[];
     readonly companionObject: string;
+    readonly compilerPluginMetadata: { [key: string]: number[] };
     readonly constructors: KmConstructor[];
     readonly contextReceiverTypes: KmType[];
     readonly enumEntries: string[];
@@ -32,12 +33,14 @@ export class KmClass extends Object implements KmDeclarationContainer {
     readonly typeParameters: KmTypeParameter[];
     readonly versionRequirements: KmVersionRequirement[];
     getAnnotations(): KmAnnotation[];
+    getCompilerPluginMetadata(): { [key: string]: number[] };
     getConstructors(): KmConstructor[];
     getContextReceiverTypes(): KmType[];
     getEnumEntries(): string[];
-    getExtensions$kotlin_metadata(): KmClassExtension[];
-    getFlags$kotlin_metadata(): number;
+    getExtensions$org_jetbrains_kotlin_kotlin_metadata(): KmClassExtension[];
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
     getFunctions(): KmFunction[];
+    getInlineClassUnderlyingPropertyName(): string;
     getInlineClassUnderlyingType(): KmType;
     getKmEnumEntries(): KmEnumEntry[];
     getName(): string;
@@ -49,7 +52,7 @@ export class KmClass extends Object implements KmDeclarationContainer {
     getTypeParameters(): KmTypeParameter[];
     getVersionRequirements(): KmVersionRequirement[];
     setCompanionObject(arg0: string): void;
-    setFlags$kotlin_metadata(arg0: number): void;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
     setInlineClassUnderlyingPropertyName(arg0: string): void;
     setInlineClassUnderlyingType(arg0: KmType): void;
     setName(arg0: string): void;

@@ -5,7 +5,7 @@ import type { ResourceLimitEvent } from '../../../org/graalvm/polyglot/ResourceL
 import type { ResourceLimits } from '../../../org/graalvm/polyglot/ResourceLimits.d.ts'
 import type { Source } from '../../../org/graalvm/polyglot/Source.d.ts'
 export class ResourceLimits$Builder extends Object {
-    constructor(null_: ResourceLimits$Builder)
+    constructor(null_: ResourceLimits)
     // private onLimit: (param0: Object | null) => void;
     // private statementLimit: number;
     // private statementLimitSourceFilter: (param0: Object | null) => boolean;

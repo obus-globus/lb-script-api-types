@@ -1,3 +1,4 @@
+import type { HostAdapterClassLoader } from '../../../../com/oracle/truffle/host/HostAdapterClassLoader.d.ts'
 import type { HostClassCache } from '../../../../com/oracle/truffle/host/HostClassCache.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -13,7 +14,7 @@ export class HostAdapterClassLoader$GeneratedClassLoader extends SecureClassLoad
     static getSystemResource(paramarg0: string): URL;
     static getSystemResourceAsStream(paramarg0: string): InputStream;
     static getSystemResources(paramarg0: string): Enumeration<URL>;
-    private constructor(null_: HostAdapterClassLoader$GeneratedClassLoader, cache: HostClassCache, parentLoader: ClassLoader, classOverrides: Object)
+    private constructor(null_: HostAdapterClassLoader, cache: HostClassCache, parentLoader: ClassLoader, classOverrides: Object)
     // private cache: HostClassCache;
     // private classOverrides: Object;
     findClass(name: string): Class<Object>;

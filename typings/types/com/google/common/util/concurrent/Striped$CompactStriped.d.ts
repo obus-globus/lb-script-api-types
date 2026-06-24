@@ -1,3 +1,4 @@
+import type { Striped$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Supplier } from '../../../../../com/google/common/base/Supplier.d.ts'
 import type { Striped } from '../../../../../com/google/common/util/concurrent/Striped.d.ts'
 import type { Striped$PowerOfTwoStriped } from '../../../../../com/google/common/util/concurrent/Striped$PowerOfTwoStriped.d.ts'
@@ -13,6 +14,7 @@ export class Striped$CompactStriped<L extends unknown> extends Striped$PowerOfTw
     static lock(paramstripes: number): Striped<Lock>;
     static readWriteLock(paramstripes: number): Striped<ReadWriteLock>;
     static semaphore(paramstripes: number, parampermits: number): Striped<Semaphore>;
+    constructor(arg0: number, arg1: () => Object, arg2: Striped$1)
     private constructor(stripes: number, supplier: () => L)
     // private array: Object[];
     getAt(index: number): L;

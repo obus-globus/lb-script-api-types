@@ -10,6 +10,7 @@ export class ScoreboardValue extends Record implements NumberProvider {
     static MAP_CODEC: MapCodec<ScoreboardValue>;
     static fromScoreboard(paramentityTarget: LootContext$EntityTarget, paramscore: string): ScoreboardValue;
     static fromScoreboard(paramentityTarget: LootContext$EntityTarget, paramscore: string, paramscale: number): ScoreboardValue;
+    constructor(target: ScoreboardNameProvider, score: string, scale: number)
     // private scale: number;
     // private score: string;
     // private target: ScoreboardNameProvider;

@@ -8,6 +8,7 @@ import type { PoiRecord } from '../../../../../../../net/minecraft/world/entity/
 import type { PoiType } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiType.d.ts'
 export class PoiRecord$Packed extends Record {
     static CODEC: Codec<PoiRecord$Packed>;
+    constructor(pos: BlockPos, poiType: Holder<PoiType>, freeTickets: number)
     // private freeTickets: number;
     // private poiType: Holder<PoiType>;
     // private pos: BlockPos;

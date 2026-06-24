@@ -3,6 +3,7 @@ import type { Supplier } from '../../../../../../../java/util/function/Supplier.
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { SteppedValidator } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/option/SteppedValidator.d.ts'
 export class Range extends Record implements SteppedValidator {
+    constructor(min: number, max: number, step: number)
     // private max: number;
     // private min: number;
     // private step: number;

@@ -22,7 +22,7 @@ import type { ItemStack } from '../../../../../../../../net/minecraft/world/item
  *
  * Automatically attacks enemies.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt:78}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt:78}
  */
 export class ModuleKillAura extends ClientModule {
     static INSTANCE: ModuleKillAura;
@@ -31,13 +31,13 @@ export class ModuleKillAura extends ClientModule {
     // private /*not mapped: */ getCriticalsSelectionMode(): ModuleCriticals$CriticalsSelectionMode;
     // private gameHandler: EventHook<GameTickEvent>;
     // private ignoreOpenInventory: boolean;
-    /*not mapped: */ getIgnoreOpenInventory$liquidbounce(): boolean;
+    /*not mapped: */ getIgnoreOpenInventory$net_ccbluex_liquidbounce(): boolean;
     // private keepSprint: boolean;
     // private /*not mapped: */ getKeepSprint(): boolean;
     // private pointTracker: PointTracker;
     readonly range: KillAuraRange;
     // private raycast: ModuleKillAura$RaycastMode;
-    /*not mapped: */ getRaycast$liquidbounce(): ModuleKillAura$RaycastMode;
+    /*not mapped: */ getRaycast$net_ccbluex_liquidbounce(): ModuleKillAura$RaycastMode;
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private /*not mapped: */ getRequirementsMet(): boolean;
     // private requires: KillAuraRequirements[];
@@ -46,16 +46,16 @@ export class ModuleKillAura extends ClientModule {
     // private rotations: KillAuraRotationsValueGroup;
     readonly shouldBlockSprinting: boolean;
     // private simulateInventoryClosing: boolean;
-    /*not mapped: */ getSimulateInventoryClosing$liquidbounce(): boolean;
+    /*not mapped: */ getSimulateInventoryClosing$net_ccbluex_liquidbounce(): boolean;
     // private sprintHandler: EventHook<SprintEvent>;
     readonly targetTracker: KillAuraTargetTracker;
     // private waitTicks: number;
-    /*not mapped: */ getWaitTicks$liquidbounce(): number;
+    /*not mapped: */ getWaitTicks$net_ccbluex_liquidbounce(): number;
     // private attackTarget(target: Entity, rotation: Rotation): void;
     /**
      * Check if we can attack the target at the current moment
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt#L428 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt:428}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt#L428 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/ModuleKillAura.kt:428}
      */
     canAttackNow(target: Entity | null, itemStack: ItemStack): boolean;
     // private findRotation(entity: Entity, range: number, wallsRange: number): RotationWithVector | null;

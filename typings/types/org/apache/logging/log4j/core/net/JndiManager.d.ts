@@ -1,3 +1,4 @@
+import type { JndiManager$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { InitialContext } from '../../../../../../javax/naming/InitialContext.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -17,6 +18,7 @@ export class JndiManager extends AbstractManager {
     static isJndiJmsEnabled(): boolean;
     static isJndiLookupEnabled(): boolean;
     private constructor(name: string, context: InitialContext)
+    constructor(arg0: string, arg1: InitialContext, arg2: JndiManager$1)
     // private context: InitialContext;
     lookup<T extends unknown>(name: string): T;
     releaseSub(timeout: number, timeUnit: TimeUnit): boolean;

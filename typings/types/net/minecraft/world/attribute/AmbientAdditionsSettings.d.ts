@@ -5,6 +5,7 @@ import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { SoundEvent } from '../../../../net/minecraft/sounds/SoundEvent.d.ts'
 export class AmbientAdditionsSettings extends Record {
     static CODEC: Codec<AmbientAdditionsSettings>;
+    constructor(soundEvent: Holder<SoundEvent>, tickChance: number)
     // private soundEvent: Holder<SoundEvent>;
     // private tickChance: number;
     equals(o: Object | null): boolean;

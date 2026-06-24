@@ -9,6 +9,8 @@ export class EquipmentClientInfo$Layer extends Record {
     static CODEC: Codec<EquipmentClientInfo$Layer>;
     static leatherDyeable(paramtextureId: Identifier, paramdyeable: boolean): EquipmentClientInfo$Layer;
     static onlyIfDyed(paramtextureId: Identifier, paramdyeable: boolean): EquipmentClientInfo$Layer;
+    constructor(textureId: Identifier)
+    constructor(textureId: Identifier, dyeable: Optional<EquipmentClientInfo$Dyeable>, usePlayerTexture: boolean)
     // private dyeable: Optional<EquipmentClientInfo$Dyeable>;
     // private textureId: Identifier;
     // private usePlayerTexture: boolean;

@@ -11,5 +11,6 @@ import type { BakedQuad } from '../../../../../../../../net/minecraft/client/res
 import type { ItemDisplayContext } from '../../../../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 export interface FabricOrderedSubmitNodeCollector extends Object {
     submitBlockModel(arg0: PoseStack, arg1: (param0: ChunkSectionLayer) => RenderType, arg2: boolean, arg3: BlockStateModelPart[], arg4: Mesh, arg5: number[], arg6: number, arg7: number, arg8: number): void;
+    submitBreakingBlockModel(arg0: PoseStack, arg1: BlockStateModelPart[], arg2: Mesh, arg3: number): void;
     submitItem(arg0: PoseStack, arg1: ItemDisplayContext, arg2: number, arg3: number, arg4: number, arg5: number[], arg6: BakedQuad[], arg7: MeshView, arg8: ItemStackRenderState$FoilType): void;
 }

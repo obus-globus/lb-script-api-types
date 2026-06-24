@@ -1,5 +1,6 @@
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { SodiumWorldRenderer } from '../../../../net/caffeinemc/mods/sodium/client/render/SodiumWorldRenderer.d.ts'
 import type { LevelRendererAccessor } from '../../../../net/irisshaders/iris/mixin/LevelRendererAccessor.d.ts'
 import type { IrisRenderingPipeline } from '../../../../net/irisshaders/iris/pipeline/IrisRenderingPipeline.d.ts'
 import type { ProgramSource } from '../../../../net/irisshaders/iris/shaderpack/programs/ProgramSource.d.ts'
@@ -16,8 +17,6 @@ import type { CustomUniforms } from '../../../../net/irisshaders/iris/uniforms/c
 import type { Camera } from '../../../../net/minecraft/client/Camera.d.ts'
 import type { DeltaTracker } from '../../../../net/minecraft/client/DeltaTracker.d.ts'
 import type { DebugScreenDisplayer } from '../../../../net/minecraft/client/gui/components/debug/DebugScreenDisplayer.d.ts'
-import type { MultiBufferSource$BufferSource } from '../../../../net/minecraft/client/renderer/MultiBufferSource$BufferSource.d.ts'
-import type { OutlineBufferSource } from '../../../../net/minecraft/client/renderer/OutlineBufferSource.d.ts'
 import type { RenderBuffers } from '../../../../net/minecraft/client/renderer/RenderBuffers.d.ts'
 import type { SubmitNodeStorage } from '../../../../net/minecraft/client/renderer/SubmitNodeStorage.d.ts'
 import type { Frustum } from '../../../../net/minecraft/client/renderer/culling/Frustum.d.ts'
@@ -52,7 +51,6 @@ export class ShadowRenderer extends Object {
     // private levelRenderState: LevelRenderState;
     // private mipmapPasses: ShadowRenderer$MipmapPass[];
     // private nearPlane: number;
-    // private outlineBuffers: OutlineBufferSource;
     // private packCullingState: ShadowCullState;
     // private packHasVoxelization: boolean;
     // private pipeline: IrisRenderingPipeline;
@@ -80,15 +78,15 @@ export class ShadowRenderer extends Object {
     // private copyPreTranslucentDepth(arg0: LevelRendererAccessor): void;
     // private createShadowFrustum(arg0: number, arg1: FrustumHolder): FrustumHolder;
     destroy(): void;
-    // private extractVisibleBlockEntities(arg0: LevelRendererAccessor, arg1: MultiBufferSource$BufferSource, arg2: PoseStack, arg3: number, arg4: Camera, arg5: LevelRenderState, arg6: boolean): void;
+    // private extractVisibleBlockEntities(arg0: SodiumWorldRenderer, arg1: number, arg2: Camera, arg3: LevelRenderState, arg4: boolean): void;
     // private extractVisibleEntities(arg0: Camera, arg1: Frustum, arg2: DeltaTracker, arg3: LevelRenderState): void;
     // private generateMipmaps(): void;
     // private getBlockEntitiesDebugString(): string;
     // private getEntitiesDebugString(): string;
     // private getProjectionInfo(): string;
     // private renderBlockEntities(arg0: LevelRendererAccessor, arg1: PoseStack, arg2: SubmitNodeStorage, arg3: LevelRenderState, arg4: Camera): number;
-    // private renderEntities(arg0: LevelRendererAccessor, arg1: EntityRenderDispatcher, arg2: MultiBufferSource$BufferSource, arg3: PoseStack, arg4: number, arg5: Frustum, arg6: number, arg7: number, arg8: number): number;
-    // private renderPlayerEntity(arg0: LevelRendererAccessor, arg1: EntityRenderDispatcher, arg2: MultiBufferSource$BufferSource, arg3: PoseStack, arg4: number, arg5: Frustum, arg6: number, arg7: number, arg8: number): number;
+    // private renderEntities(arg0: LevelRendererAccessor, arg1: EntityRenderDispatcher, arg2: PoseStack, arg3: number, arg4: Frustum, arg5: number, arg6: number, arg7: number): number;
+    // private renderPlayerEntity(arg0: LevelRendererAccessor, arg1: EntityRenderDispatcher, arg2: PoseStack, arg3: number, arg4: Frustum, arg5: number, arg6: number, arg7: number): number;
     renderShadows(arg0: LevelRendererAccessor, arg1: Camera, arg2: CameraRenderState): void;
     setUsesImages(arg0: boolean): void;
     // private setupMipmappingForTexture(arg0: number, arg1: number): void;

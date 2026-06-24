@@ -7,7 +7,6 @@ export class UniformType extends Enum<UniformType> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UniformType;
     static values(): (Object | null)[];
-    private constructor(name: string)
-    // private name: string;
+    private constructor()
     name(): "UNIFORM_BUFFER" | "TEXEL_BUFFER";
 }

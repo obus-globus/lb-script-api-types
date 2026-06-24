@@ -1,8 +1,9 @@
 import type { Object2ObjectMap$Entry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/objects/Object2ObjectMap$Entry.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class Object2ObjectLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    private constructor(null_: Object2ObjectLinkedOpenHashMap$MapIterator<Object>)
-    constructor(null_: Object2ObjectLinkedOpenHashMap$MapIterator<Object>)
+    constructor(null_: Map<K, V>)
+    private constructor(null_: Map<K, V>, arg1: K)
+    constructor(null_: Map<K, V>, arg1: Object, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;
     // private next: number;

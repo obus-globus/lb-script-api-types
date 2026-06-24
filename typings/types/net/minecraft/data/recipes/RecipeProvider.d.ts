@@ -1,9 +1,9 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Criterion } from '../../../../net/minecraft/advancements/Criterion.d.ts'
-import type { BredAnimalsTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/BredAnimalsTrigger$TriggerInstance.d.ts'
-import type { EnterBlockTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/EnterBlockTrigger$TriggerInstance.d.ts'
-import type { InventoryChangeTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/criterion/InventoryChangeTrigger$TriggerInstance.d.ts'
-import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/criterion/MinMaxBounds$Ints.d.ts'
+import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/predicates/MinMaxBounds$Ints.d.ts'
+import type { BredAnimalsTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/triggers/BredAnimalsTrigger$TriggerInstance.d.ts'
+import type { Criterion } from '../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
+import type { EnterBlockTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/triggers/EnterBlockTrigger$TriggerInstance.d.ts'
+import type { InventoryChangeTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/triggers/InventoryChangeTrigger$TriggerInstance.d.ts'
 import type { HolderGetter } from '../../../../net/minecraft/core/HolderGetter.d.ts'
 import type { HolderLookup$Provider } from '../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { BlockFamily } from '../../../../net/minecraft/data/BlockFamily.d.ts'
@@ -74,10 +74,12 @@ export abstract class RecipeProvider extends Object {
     generateCraftingRecipe(family: BlockFamily, variant: BlockFamily$Variant, result: Block, base: ItemLike): void;
     generateForEnabledBlockFamilies(flagSet: FeatureFlagSet): void;
     generateRecipes(family: BlockFamily, flagSet: FeatureFlagSet): void;
+    generateSmeltingRecipe(variant: BlockFamily$Variant, result: Block, base: ItemLike): void;
     generateStonecutterRecipe(family: BlockFamily, variant: BlockFamily$Variant, base: Block): void;
     getBaseBlockForCrafting(family: BlockFamily, variant: BlockFamily$Variant): Block;
+    getCraftingCriterionName(family: BlockFamily, variant: BlockFamily$Variant, base: ItemLike): string;
     grate(grateBlock: Block, material: Block): void;
-    hangingSign(result: ItemLike, ingredient: ItemLike): void;
+    hangingSignBuilder(result: ItemLike, ingredient: Ingredient): RecipeBuilder;
     harness(result: ItemLike, wool: ItemLike): void;
     has(count: MinMaxBounds$Ints, item: ItemLike): Criterion<InventoryChangeTrigger$TriggerInstance>;
     has(tag: TagKey<Item>): Criterion<InventoryChangeTrigger$TriggerInstance>;
@@ -93,6 +95,7 @@ export abstract class RecipeProvider extends Object {
     oreBlasting(smeltables: ItemLike[], craftingCategory: RecipeCategory, cookingCategory: CookingBookCategory, result: ItemLike, experience: number, cookingTime: number, group: string): void;
     oreCooking<T extends AbstractCookingRecipe>(factory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => T, smeltables: ItemLike[], craftingCategory: RecipeCategory, cookingCategory: CookingBookCategory, result: ItemLike, experience: number, cookingTime: number, group: string, fromDesc: string): void;
     oreSmelting(smeltables: ItemLike[], craftingCategory: RecipeCategory, cookingCategory: CookingBookCategory, result: ItemLike, experience: number, cookingTime: number, group: string): void;
+    pillarBuilder(category: RecipeCategory, result: ItemLike, base: Ingredient): RecipeBuilder;
     planksFromLog(result: ItemLike, logs: TagKey<Item>, count: number): void;
     planksFromLogs(result: ItemLike, logs: TagKey<Item>, count: number): void;
     polished(category: RecipeCategory, result: ItemLike, base: ItemLike): void;

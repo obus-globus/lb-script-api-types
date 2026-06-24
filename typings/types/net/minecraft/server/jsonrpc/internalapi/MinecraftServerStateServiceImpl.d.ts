@@ -5,14 +5,16 @@ import type { JsonRpcLogger } from '../../../../../net/minecraft/server/jsonrpc/
 import type { MinecraftServerStateService } from '../../../../../net/minecraft/server/jsonrpc/internalapi/MinecraftServerStateService.d.ts'
 import type { ClientInfo } from '../../../../../net/minecraft/server/jsonrpc/methods/ClientInfo.d.ts'
 import type { ServerPlayer } from '../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
+import type { NotificationManager } from '../../../../../net/minecraft/server/notifications/NotificationManager.d.ts'
 export class MinecraftServerStateServiceImpl extends Object implements MinecraftServerStateService {
-    constructor(server: DedicatedServer, jsonrpcLogger: JsonRpcLogger)
+    constructor(notificationManager: NotificationManager, jsonrpcLogger: JsonRpcLogger)
     // private jsonrpcLogger: JsonRpcLogger;
-    // private server: DedicatedServer;
+    // private notificationManager: NotificationManager;
     broadcastSystemMessage(message: Component, overlay: boolean, clientInfo: ClientInfo): void;
     halt(waitForShutdown: boolean, clientInfo: ClientInfo): void;
     isReady(): boolean;
     saveEverything(suppressLogs: boolean, flush: boolean, force: boolean, clientInfo: ClientInfo): boolean;
     sendSystemMessage(message: Component, overlay: boolean, players: ServerPlayer[], clientInfo: ClientInfo): void;
     sendSystemMessage(message: Component, clientInfo: ClientInfo): void;
+    // private server(): DedicatedServer;
 }

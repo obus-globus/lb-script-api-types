@@ -5,6 +5,7 @@ import type { ItemPickupParticle } from '../../../../net/minecraft/client/partic
 import type { EntityRenderState } from '../../../../net/minecraft/client/renderer/entity/state/EntityRenderState.d.ts'
 export class ItemPickupParticleGroup$ParticleInstance extends Record {
     static fromParticle(paramparticle: ItemPickupParticle, paramcamera: Camera, parampartialTickTime: number): ItemPickupParticleGroup$ParticleInstance;
+    private constructor(itemRenderState: EntityRenderState, xOffset: number, yOffset: number, zOffset: number)
     // private itemRenderState: EntityRenderState;
     // private xOffset: number;
     // private yOffset: number;

@@ -13,6 +13,8 @@ export class ArmorTrim extends Record implements Rewritable {
     static TYPE1_21_2: Type<ArmorTrim>;
     static TYPE1_21_4: Type<ArmorTrim>;
     static TYPE1_21_5: Type<ArmorTrim>;
+    constructor(arg0: Holder<ArmorTrimMaterial>, arg1: Holder<ArmorTrimPattern>)
+    constructor(material: Holder<ArmorTrimMaterial>, pattern: Holder<ArmorTrimPattern>, showInTooltip: boolean)
     // private material: Holder<ArmorTrimMaterial>;
     // private pattern: Holder<ArmorTrimPattern>;
     // private showInTooltip: boolean;

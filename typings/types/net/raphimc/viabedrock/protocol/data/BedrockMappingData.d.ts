@@ -1,6 +1,6 @@
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { MappingDataBase } from '../../../../../com/viaversion/viaversion/api/data/MappingDataBase.d.ts'
-import type { EntityTypes1_21_11 } from '../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes1_21_11.d.ts'
+import type { EntityTypes26_2 } from '../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes26_2.d.ts'
 import type { JsonObject } from '../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Logger } from '../../../../../java/util/logging/Logger.d.ts'
@@ -60,7 +60,7 @@ export class BedrockMappingData extends MappingDataBase {
     readonly bedrockToJavaDamageCauses: { [key in SharedTypes_Legacy_ActorDamageCause]: string };
     readonly bedrockToJavaEffects: { [key: string]: string };
     readonly bedrockToJavaEnchantments: { [key in Enchant_Type]: string };
-    readonly bedrockToJavaEntities: { [key: string]: EntityTypes1_21_11 };
+    readonly bedrockToJavaEntities: { [key: string]: EntityTypes26_2 };
     readonly bedrockToJavaExperimentalFeatures: { [key: string]: string };
     readonly bedrockToJavaLevelEventParticles: { [key in ParticleType]: BedrockMappingData$JavaParticle };
     readonly bedrockToJavaLevelEvents: { [key in LevelEvent]: BedrockMappingData$LevelEventMapping };
@@ -76,7 +76,7 @@ export class BedrockMappingData extends MappingDataBase {
     readonly javaCommandArgumentTypes: { [key: string]: number };
     readonly javaEffects: { [key: string]: number };
     readonly javaEntityAttributes: { [key: string]: number };
-    readonly javaEntityDataFields: { [key in EntityTypes1_21_11]: string[] };
+    readonly javaEntityDataFields: { [key in EntityTypes26_2]: string[] };
     readonly javaFluidBlockStates: (Object | null)[];
     readonly javaHeightMapBlockStates: { [key: string]: (Object | null)[] };
     readonly javaItems: { [key: string]: number };
@@ -118,7 +118,7 @@ export class BedrockMappingData extends MappingDataBase {
     getBedrockToJavaDamageCauses(): { [key in SharedTypes_Legacy_ActorDamageCause]: string };
     getBedrockToJavaEffects(): { [key: string]: string };
     getBedrockToJavaEnchantments(): { [key in Enchant_Type]: string };
-    getBedrockToJavaEntities(): { [key: string]: EntityTypes1_21_11 };
+    getBedrockToJavaEntities(): { [key: string]: EntityTypes26_2 };
     getBedrockToJavaExperimentalFeatures(): { [key: string]: string };
     getBedrockToJavaLevelEventParticles(): { [key in ParticleType]: BedrockMappingData$JavaParticle };
     getBedrockToJavaLevelEvents(): { [key in LevelEvent]: BedrockMappingData$LevelEventMapping };
@@ -134,7 +134,7 @@ export class BedrockMappingData extends MappingDataBase {
     getJavaCommandArgumentTypes(): { [key: string]: number };
     getJavaEffects(): { [key: string]: number };
     getJavaEntityAttributes(): { [key: string]: number };
-    getJavaEntityDataFields(): { [key in EntityTypes1_21_11]: string[] };
+    getJavaEntityDataFields(): { [key in EntityTypes26_2]: string[] };
     getJavaFluidBlockStates(): (Object | null)[];
     getJavaHeightMapBlockStates(): { [key: string]: (Object | null)[] };
     getJavaItems(): { [key: string]: number };

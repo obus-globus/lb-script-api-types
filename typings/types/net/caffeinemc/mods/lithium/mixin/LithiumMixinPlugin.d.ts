@@ -4,6 +4,7 @@ import type { ClassNode } from '../../../../../org/objectweb/asm/tree/ClassNode.
 import type { IMixinConfigPlugin } from '../../../../../org/spongepowered/asm/mixin/extensibility/IMixinConfigPlugin.d.ts'
 import type { IMixinInfo } from '../../../../../org/spongepowered/asm/mixin/extensibility/IMixinInfo.d.ts'
 export class LithiumMixinPlugin extends Object implements IMixinConfigPlugin {
+    static DEBUG: boolean;
     constructor()
     // private logger: Logger;
     acceptTargets(arg0: string[], arg1: string[]): void;

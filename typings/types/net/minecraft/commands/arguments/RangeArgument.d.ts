@@ -5,7 +5,7 @@ import type { Suggestions } from '../../../../com/mojang/brigadier/suggestion/Su
 import type { SuggestionsBuilder } from '../../../../com/mojang/brigadier/suggestion/SuggestionsBuilder.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { MinMaxBounds } from '../../../../net/minecraft/advancements/criterion/MinMaxBounds.d.ts'
+import type { MinMaxBounds } from '../../../../net/minecraft/advancements/predicates/MinMaxBounds.d.ts'
 export interface RangeArgument<T extends MinMaxBounds<any>> extends ArgumentType<T>, Object{
     getExamples(): string[];
     listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;

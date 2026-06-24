@@ -46,10 +46,11 @@ export class DyeColor extends Enum<DyeColor> implements StringRepresentable {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DyeColor;
     static values(): (Object | null)[];
-    private constructor(id: number, name: string, textureDiffuseColor: number, mapColor: MapColor, fireworkColor: number, textColor: number)
+    private constructor(id: number, name: string, textureDiffuseColor: number, mapColor: MapColor, terracottaColor: MapColor, fireworkColor: number, textColor: number)
     readonly fireworkColor: number;
     readonly id: number;
     readonly mapColor: MapColor;
+    readonly terracottaColor: MapColor;
     readonly textColor: number;
     readonly textureDiffuseColor: number;
     getFireworkColor(): number;
@@ -57,6 +58,7 @@ export class DyeColor extends Enum<DyeColor> implements StringRepresentable {
     getMapColor(): MapColor;
     getName(): string;
     getSerializedName(): string;
+    getTerracottaColor(): MapColor;
     getTextColor(): number;
     getTextureDiffuseColor(): number;
     toString(): string;

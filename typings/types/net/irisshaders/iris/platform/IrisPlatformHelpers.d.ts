@@ -1,7 +1,5 @@
-import type { TextureFormat } from '../../../../com/mojang/blaze3d/textures/TextureFormat.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { DepthBufferFormat } from '../../../../net/irisshaders/iris/gl/texture/DepthBufferFormat.d.ts'
 import type { KeyMapping } from '../../../../net/minecraft/client/KeyMapping.d.ts'
 import type { BlockAndTintGetter } from '../../../../net/minecraft/client/renderer/block/BlockAndTintGetter.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
@@ -15,7 +13,6 @@ export interface IrisPlatformHelpers extends Object{
     getVersion(): string;
     isDevelopmentEnvironment(): boolean;
     isModLoaded(arg0: string): boolean;
-    mojangDepthFormat(arg0: DepthBufferFormat): TextureFormat;
     registerKeyBinding(arg0: KeyMapping): KeyMapping;
     useELS(): boolean;
 }

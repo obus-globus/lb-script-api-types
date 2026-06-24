@@ -12,6 +12,7 @@ export interface DensityFunction$SimpleFunction extends Object, DensityFunction{
     halfNegative(): DensityFunction;
     invert(): DensityFunction;
     mapAll(visitor: DensityFunction$Visitor): DensityFunction;
+    mapChildren(visitor: DensityFunction$Visitor): DensityFunction;
     maxValue(): number;
     minValue(): number;
     quarterNegative(): DensityFunction;

@@ -11,6 +11,7 @@ import type { CachedOutput } from '../../../../net/minecraft/data/CachedOutput.d
 import type { DataProvider } from '../../../../net/minecraft/data/DataProvider.d.ts'
 import type { PackOutput } from '../../../../net/minecraft/data/PackOutput.d.ts'
 import type { PackOutput$PathProvider } from '../../../../net/minecraft/data/PackOutput$PathProvider.d.ts'
+import type { TagAppender } from '../../../../net/minecraft/data/tags/TagAppender.d.ts'
 import type { TagsProvider$TagLookup } from '../../../../net/minecraft/data/tags/TagsProvider$TagLookup.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -42,4 +43,6 @@ export abstract class TagsProvider<T extends unknown> extends Object implements 
     getName(): string;
     getOrCreateRawBuilder(tag: TagKey<T>): TagBuilder;
     run(cache: CachedOutput): CompletableFuture<Object>;
+    tag(tag: TagKey<T>): TagAppender<T>;
+    tag(tag: TagKey<T>, replace: boolean): TagAppender<T>;
 }

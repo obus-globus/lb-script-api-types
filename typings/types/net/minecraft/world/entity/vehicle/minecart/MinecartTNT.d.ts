@@ -21,6 +21,7 @@ import type { ValueInput } from '../../../../../../net/minecraft/world/level/sto
 import type { ValueOutput } from '../../../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
+import type { CollisionContext } from '../../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 import type { ScoreHolder } from '../../../../../../net/minecraft/world/scores/ScoreHolder.d.ts'
 export class MinecartTNT extends AbstractMinecart {
@@ -30,12 +31,16 @@ export class MinecartTNT extends AbstractMinecart {
     static CONTENTS_SLOT_INDEX: number;
     static DEFAULT_BB_HEIGHT: number;
     static DEFAULT_BB_WIDTH: number;
+    static DEFAULT_BELOW_NAME_DISTANCE: number;
+    static DEFAULT_NAME_TAG_DISTANCE: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_2: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_5: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_1_0: number;
     static FREEZE_HURT_FREQUENCY: number;
+    static INVALID_ENTITY_ID: number;
     static MAX_ENTITY_TAG_COUNT: number;
     static MAX_MOVEMENTS_HANDELED_PER_TICK: number;
+    static MAX_NAME_TAG_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static TAG_AIR: string;
     static TAG_CUSTOM_NAME: string;
@@ -59,6 +64,7 @@ export class MinecartTNT extends AbstractMinecart {
     static WILDCARD_NAME: string;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
+    static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
     static createMinecart(paramlevel: Level, paramx: number, paramy: number, paramz: number, paramtype: EntityType<AbstractMinecart>, paramreason: EntitySpawnReason, paramitemStack: ItemStack, paramplayer: Player): AbstractMinecart | null;
     static exits(paramshape: RailShape): Pair<Vec3i, Vec3i>;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;

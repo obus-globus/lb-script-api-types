@@ -1,3 +1,4 @@
+import type { AuthorizationRequestUrlParameters$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Authority } from '../../../../com/microsoft/aad/msal4j/Authority.d.ts'
 import type { AuthorizationRequestUrlParameters$Builder } from '../../../../com/microsoft/aad/msal4j/AuthorizationRequestUrlParameters$Builder.d.ts'
 import type { Prompt } from '../../../../com/microsoft/aad/msal4j/Prompt.d.ts'
@@ -8,13 +9,13 @@ import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class AuthorizationRequestUrlParameters extends Object {
     static builder(paramarg0: string, paramarg1: string[]): AuthorizationRequestUrlParameters$Builder;
     private constructor(arg0: AuthorizationRequestUrlParameters$Builder)
+    constructor(arg0: AuthorizationRequestUrlParameters$Builder, arg1: AuthorizationRequestUrlParameters$1)
     // private codeChallenge: string;
     // private codeChallengeMethod: string;
     // private correlationId: string;
     // private domainHint: string;
     // private extraQueryParameters: { [key: string]: string };
     // private instanceAware: boolean;
-    // private log: Logger;
     // private loginHint: string;
     // private nonce: string;
     // private prompt: Prompt;

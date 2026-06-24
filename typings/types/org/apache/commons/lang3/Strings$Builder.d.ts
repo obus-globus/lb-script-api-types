@@ -1,3 +1,4 @@
+import type { Strings$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Strings } from '../../../../org/apache/commons/lang3/Strings.d.ts'
@@ -6,6 +7,7 @@ import type { FailableSupplier } from '../../../../org/apache/commons/lang3/func
 export class Strings$Builder extends AbstractSupplier<Strings, Strings$Builder, RuntimeException> {
     static NUL: () => Object | null;
     private constructor()
+    constructor(arg0: Strings$1)
     // private ignoreCase: boolean;
     // private nullIsLess: boolean;
     get(): Strings;

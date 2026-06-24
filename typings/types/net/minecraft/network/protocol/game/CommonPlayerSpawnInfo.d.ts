@@ -9,6 +9,8 @@ import type { GameType } from '../../../../../net/minecraft/world/level/GameType
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { DimensionType } from '../../../../../net/minecraft/world/level/dimension/DimensionType.d.ts'
 export class CommonPlayerSpawnInfo extends Record {
+    constructor(dimensionType: Holder<DimensionType>, dimension: ResourceKey<Level>, seed: number, gameType: GameType, previousGameType: GameType, isDebug: boolean, isFlat: boolean, lastDeathLocation: Optional<GlobalPos>, portalCooldown: number, seaLevel: number)
+    constructor(input: RegistryFriendlyByteBuf)
     // private dimension: ResourceKey<Level>;
     // private dimensionType: Holder<DimensionType>;
     // private gameType: GameType;

@@ -19,11 +19,13 @@ export class CameraRenderState extends Object implements FabricRenderState {
     fogType: FogType;
     hudFov: number;
     initialized: boolean;
+    isFrustumCaptured: boolean;
     isPanoramicMode: boolean;
     orientation: Quaternionf;
     pos: Vec3;
     projectionMatrix: Matrix4f;
     // private renderStateData: Map<Object | null, Object | null>;
+    smartCull: boolean;
     viewRotationMatrix: Matrix4f;
     xRot: number;
     yRot: number;

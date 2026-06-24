@@ -21,5 +21,6 @@ export abstract class BanListEntry<T extends unknown> extends StoredUserEntry<T>
     getReasonMessage(): Component;
     getSource(): string;
     hasExpired(): boolean;
+    hashCode(): number;
     serialize(object: JsonObject): void;
 }

@@ -96,10 +96,10 @@ export class LeverBlock extends FaceAttachedHorizontalDirectionalBlock {
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     getDirectSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     isSignalSource(state: BlockState): boolean;
     // private makeShapes(): (param0: BlockState) => VoxelShape;
     onExplosionHit(state: BlockState, level: ServerLevel, pos: BlockPos, explosion: Explosion, onHit: (param0: ItemStack, param1: BlockPos) => void): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     pull(state: BlockState, level: Level, pos: BlockPos, player: Player): void;
     // private updateNeighbours(state: BlockState, level: Level, pos: BlockPos): void;
     useWithoutItem(stateBefore: BlockState, level: Level, pos: BlockPos, player: Player, hitResult: BlockHitResult): InteractionResult;

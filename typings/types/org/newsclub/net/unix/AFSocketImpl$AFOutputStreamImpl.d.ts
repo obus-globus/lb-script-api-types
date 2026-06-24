@@ -1,9 +1,10 @@
 import type { FileDescriptor } from '../../../../java/io/FileDescriptor.d.ts'
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { AFOutputStream } from '../../../../org/newsclub/net/unix/AFOutputStream.d.ts'
+import type { AFSocketImpl } from '../../../../org/newsclub/net/unix/AFSocketImpl.d.ts'
 export class AFSocketImpl$AFOutputStreamImpl extends AFOutputStream {
     static nullOutputStream(): OutputStream;
-    private constructor(null_: AFSocketImpl$AFOutputStreamImpl)
+    private constructor(null_: AFSocketImpl<A>)
     // private defaultOpt: number;
     // private streamClosed: boolean;
     close(): void;

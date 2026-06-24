@@ -15,7 +15,7 @@ export class JTextComponent$ComposedTextCaret extends DefaultCaret implements Se
     static UPDATE_WHEN_ON_EDT: number;
     static intersect(paramarg0: Rectangle2D, paramarg1: Rectangle2D, paramarg2: Rectangle2D): void;
     static union(paramarg0: Rectangle2D, paramarg1: Rectangle2D, paramarg2: Rectangle2D): void;
-    constructor(null_: JTextComponent$ComposedTextCaret)
+    constructor(null_: JTextComponent)
     // private bg: Color;
     install(arg0: JTextComponent): void;
     paint(arg0: Graphics): void;

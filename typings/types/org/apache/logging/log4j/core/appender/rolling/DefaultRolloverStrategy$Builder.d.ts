@@ -24,6 +24,14 @@ export class DefaultRolloverStrategy$Builder extends Object implements Builder<D
     getTempCompressedFilePattern(): string;
     isStopCustomActionsOnError(): boolean;
     isValid(): boolean;
+    setCompressionLevelStr(compressionLevelStr: string): DefaultRolloverStrategy$Builder;
+    setConfig(config: Configuration): DefaultRolloverStrategy$Builder;
+    setCustomActions(customActions: Action[]): DefaultRolloverStrategy$Builder;
+    setFileIndex(fileIndex: string): DefaultRolloverStrategy$Builder;
+    setMax(max: string): DefaultRolloverStrategy$Builder;
+    setMin(min: string): DefaultRolloverStrategy$Builder;
+    setStopCustomActionsOnError(stopCustomActionsOnError: boolean): DefaultRolloverStrategy$Builder;
+    setTempCompressedFilePattern(tempCompressedFilePattern: string): DefaultRolloverStrategy$Builder;
     withCompressionLevelStr(compressionLevelStr: string): DefaultRolloverStrategy$Builder;
     withConfig(config: Configuration): DefaultRolloverStrategy$Builder;
     withCustomActions(customActions: Action[]): DefaultRolloverStrategy$Builder;

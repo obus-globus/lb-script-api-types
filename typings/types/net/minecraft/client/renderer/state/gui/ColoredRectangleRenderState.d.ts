@@ -7,6 +7,8 @@ import type { TextureSetup } from '../../../../../../net/minecraft/client/gui/re
 import type { GuiElementRenderState } from '../../../../../../net/minecraft/client/renderer/state/gui/GuiElementRenderState.d.ts'
 import type { Matrix3x2fc } from '../../../../../../org/joml/Matrix3x2fc.d.ts'
 export class ColoredRectangleRenderState extends Record implements GuiElementRenderState {
+    constructor(pipeline: RenderPipeline, textureSetup: TextureSetup, pose: Matrix3x2fc, x0: number, y0: number, x1: number, y1: number, col1: number, col2: number, scissorArea: ScreenRectangle)
+    constructor(pipeline: RenderPipeline, textureSetup: TextureSetup, pose: Matrix3x2fc, x0: number, y0: number, x1: number, y1: number, col1: number, col2: number, scissorArea: ScreenRectangle, bounds: ScreenRectangle)
     // private bounds: ScreenRectangle;
     // private col1: number;
     // private col2: number;

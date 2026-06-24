@@ -2,8 +2,6 @@ import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class CraftingDataEntryType extends Enum<CraftingDataEntryType> {
-    static FurnaceAuxRecipe: CraftingDataEntryType;
-    static FurnaceRecipe: CraftingDataEntryType;
     static MultiRecipe: CraftingDataEntryType;
     static ShapedChemistryRecipe: CraftingDataEntryType;
     static ShapedRecipe: CraftingDataEntryType;
@@ -23,5 +21,5 @@ export class CraftingDataEntryType extends Enum<CraftingDataEntryType> {
     private constructor(arg2: CraftingDataEntryType)
     readonly value: number;
     getValue(): number;
-    name(): "ShapelessRecipe" | "ShapedRecipe" | "FurnaceRecipe" | "FurnaceAuxRecipe" | "MultiRecipe" | "UserDataShapelessRecipe" | "ShapelessChemistryRecipe" | "ShapedChemistryRecipe" | "SmithingTransformRecipe" | "SmithingTrimRecipe";
+    name(): "ShapelessRecipe" | "ShapedRecipe" | "MultiRecipe" | "UserDataShapelessRecipe" | "ShapelessChemistryRecipe" | "ShapedChemistryRecipe" | "SmithingTransformRecipe" | "SmithingTrimRecipe";
 }

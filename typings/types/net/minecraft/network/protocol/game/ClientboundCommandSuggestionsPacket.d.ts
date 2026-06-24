@@ -13,6 +13,8 @@ import type { ClientboundCommandSuggestionsPacket$Entry } from '../../../../../n
 export class ClientboundCommandSuggestionsPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundCommandSuggestionsPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(id: number, suggestions: Suggestions)
+    constructor(id: number, start: number, length: number, suggestions: ClientboundCommandSuggestionsPacket$Entry[])
     // private id: number;
     // private length: number;
     // private start: number;

@@ -44,6 +44,7 @@ export class ClassInstance extends Object implements TrClass {
     getInterfaceNames0(): string[];
     getMember(arg0: TrMember$MemberType, arg1: string): MemberInstance;
     getMembers(): MemberInstance[];
+    getMethod(arg0: string, arg1: string): MemberInstance;
     getMethods(): TrMethod[];
     getMethods(arg0: string, arg1: string, arg2: boolean, arg3: (param0: TrMethod) => boolean, arg4: TrMethod[]): TrMethod[];
     getMrjOrigin(): ClassInstance;

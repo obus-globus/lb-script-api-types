@@ -10,6 +10,7 @@ import type { NoneFeatureConfiguration } from '../../../../../../../net/minecraf
 export class SculkPatchConfiguration extends Record implements FeatureConfiguration {
     static CODEC: Codec<SculkPatchConfiguration>;
     static NONE: NoneFeatureConfiguration;
+    constructor(chargeCount: number, amountPerCharge: number, spreadAttempts: number, growthRounds: number, spreadRounds: number, extraRareGrowths: IntProvider, catalystChance: number)
     // private amountPerCharge: number;
     // private catalystChance: number;
     // private chargeCount: number;

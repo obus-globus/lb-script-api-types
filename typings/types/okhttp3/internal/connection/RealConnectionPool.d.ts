@@ -1,4 +1,4 @@
-import type { RealConnectionPool$cleanupTask$1 } from '../../../net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1.d.ts'
+import type { RealConnectionPool$cleanupTask$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Address } from '../../../okhttp3/Address.d.ts'

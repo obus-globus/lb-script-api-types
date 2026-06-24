@@ -10,6 +10,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class JukeboxPlayable$JukeboxSong extends Record implements Rewritable {
     static TYPE: HolderType<JukeboxPlayable$JukeboxSong>;
+    constructor(soundEvent: Holder<SoundEvent>, description: Tag, lengthInSeconds: number, comparatorOutput: number)
     // private comparatorOutput: number;
     // private description: Tag;
     // private lengthInSeconds: number;

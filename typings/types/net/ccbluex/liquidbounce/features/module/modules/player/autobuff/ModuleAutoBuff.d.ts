@@ -5,9 +5,9 @@ import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbou
 import type { Buff } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/autobuff/Buff.d.ts'
 export class ModuleAutoBuff extends ClientModule {
     static INSTANCE: ModuleAutoBuff;
-    /*not mapped: */ getActiveFeatures$liquidbounce(): Buff[];
+    /*not mapped: */ getActiveFeatures$net_ccbluex_liquidbounce(): Buff[];
     // private combatPauseTime: number;
-    /*not mapped: */ getCombatPauseTime$liquidbounce(): number;
+    /*not mapped: */ getCombatPauseTime$net_ccbluex_liquidbounce(): number;
     // private features: Buff[];
     // private notDuringCombat: boolean;
     // private /*not mapped: */ getNotDuringCombat(): boolean;

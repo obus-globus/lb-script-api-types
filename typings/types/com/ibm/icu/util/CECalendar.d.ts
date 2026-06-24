@@ -83,8 +83,11 @@ export abstract class CECalendar extends Calendar {
     constructor(arg0: Locale)
     constructor(arg0: number, arg1: number, arg2: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number)
+    extendedYearToEra(arg0: number): number;
+    extendedYearToYear(arg0: number): number;
     getJDEpochOffset(): number;
     getTemporalMonthCode(): string;
+    handleComputeFields(arg0: number): void;
     handleComputeMonthStart(arg0: number, arg1: number, arg2: boolean): number;
     handleGetLimit(arg0: number, arg1: number): number;
     handleGetMonthLength(arg0: number, arg1: number): number;

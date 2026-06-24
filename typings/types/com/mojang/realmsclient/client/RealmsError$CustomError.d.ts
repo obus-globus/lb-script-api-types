@@ -18,6 +18,7 @@ export class RealmsError$CustomError extends Record implements RealmsError {
     static parse(paramhttpCode: number, parampayload: string): RealmsError;
     static retry(paramstatusCode: number): RealmsError$CustomError;
     static unknownCompatibilityResponse(paramresponse: string): RealmsError$CustomError;
+    constructor(httpCode: number, payload: Component)
     // private httpCode: number;
     // private payload: Component;
     equals(o: Object | null): boolean;

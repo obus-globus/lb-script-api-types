@@ -95,6 +95,7 @@ export class IndianCalendar extends Calendar {
     constructor(arg0: number, arg1: number, arg2: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number)
     // private IndianToJD(arg0: number, arg1: number, arg2: number): number;
+    getRelatedYearDifference(): number;
     getType(): string;
     // private gregorianToJD(arg0: number, arg1: number, arg2: number): number;
     handleComputeFields(arg0: number): void;

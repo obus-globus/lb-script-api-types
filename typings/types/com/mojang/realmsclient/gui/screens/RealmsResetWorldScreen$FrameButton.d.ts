@@ -1,3 +1,4 @@
+import type { RealmsResetWorldScreen } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsResetWorldScreen.d.ts'
 import type { Font } from '../../../../../net/minecraft/client/gui/Font.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Button } from '../../../../../net/minecraft/client/gui/components/Button.d.ts'
@@ -17,7 +18,7 @@ export class RealmsResetWorldScreen$FrameButton extends Button {
     static defaultInactiveMessage(paramactiveMessage: Component): Component;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    private constructor(null_: RealmsResetWorldScreen$FrameButton, font: Font, text: Component, image: Identifier, onPress: Button$OnPress)
+    private constructor(null_: RealmsResetWorldScreen, font: Font, text: Component, image: Identifier, onPress: Button$OnPress)
     // private image: Identifier;
     extractContents(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
 }

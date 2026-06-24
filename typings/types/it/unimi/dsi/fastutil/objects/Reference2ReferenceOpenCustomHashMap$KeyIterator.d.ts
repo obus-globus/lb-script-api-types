@@ -3,7 +3,7 @@ import type { Reference2ReferenceOpenCustomHashMap$MapIterator } from '../../../
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2ReferenceOpenCustomHashMap$KeyIterator extends Reference2ReferenceOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<K> {
-    constructor(null_: Reference2ReferenceOpenCustomHashMap$KeyIterator)
+    constructor(null_: Map<K, V>)
     acceptOnIndex<K extends unknown>(arg0: (param0: K) => void, arg1: number): void;
     next<K extends unknown>(): K;
     skip(arg0: number): number;

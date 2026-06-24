@@ -9,6 +9,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Instrument1_20_5 extends Record implements Rewritable {
     static TYPE: HolderType<Instrument1_20_5>;
+    constructor(soundEvent: Holder<SoundEvent>, useDuration: number, range: number)
     // private range: number;
     // private soundEvent: Holder<SoundEvent>;
     // private useDuration: number;

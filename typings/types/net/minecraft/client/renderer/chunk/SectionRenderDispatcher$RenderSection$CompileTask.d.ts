@@ -1,16 +1,11 @@
-import type { AtomicBoolean } from '../../../../../java/util/concurrent/atomic/AtomicBoolean.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SectionBufferBuilderPack } from '../../../../../net/minecraft/client/renderer/SectionBufferBuilderPack.d.ts'
-import type { SectionRenderDispatcher$RenderSection$CompileTask$SectionTaskResult } from '../../../../../net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$CompileTask$SectionTaskResult.d.ts'
-import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
-export abstract class SectionRenderDispatcher$RenderSection$CompileTask extends Object {
-    constructor(null_: SectionRenderDispatcher$RenderSection$CompileTask, isRecompile: boolean)
-    // private isCancelled: AtomicBoolean;
-    // private isCompleted: AtomicBoolean;
-    // private isRecompile: boolean;
+import type { RenderSectionRegion } from '../../../../../net/minecraft/client/renderer/chunk/RenderSectionRegion.d.ts'
+import type { SectionRenderDispatcher$RenderSection } from '../../../../../net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection.d.ts'
+import type { SectionRenderDispatcher$RenderSection$SectionTask } from '../../../../../net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$SectionTask.d.ts'
+import type { SectionRenderDispatcher$RenderSection$SectionTask$SectionTaskResult } from '../../../../../net/minecraft/client/renderer/chunk/SectionRenderDispatcher$RenderSection$SectionTask$SectionTaskResult.d.ts'
+export class SectionRenderDispatcher$RenderSection$CompileTask extends SectionRenderDispatcher$RenderSection$SectionTask {
+    constructor(null_: SectionRenderDispatcher$RenderSection, region: RenderSectionRegion, isRecompile: boolean)
+    // private region: RenderSectionRegion;
     cancel(): void;
-    doTask(buffers: SectionBufferBuilderPack): SectionRenderDispatcher$RenderSection$CompileTask$SectionTaskResult;
-    getRenderOrigin(): BlockPos;
-    isRecompile(): boolean;
-    name(): string;
+    doTask(buffers: SectionBufferBuilderPack): SectionRenderDispatcher$RenderSection$SectionTask$SectionTaskResult;
 }

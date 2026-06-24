@@ -8,7 +8,7 @@ export class SimulatedPlayerCache extends Object {
     // private currentSimulationStep: number;
     // private lock: ReentrantReadWriteLock;
     // private simulatedPlayer: SimulatedPlayer;
-    /*not mapped: */ getSimulatedPlayer$liquidbounce(): SimulatedPlayer;
+    /*not mapped: */ getSimulatedPlayer$net_ccbluex_liquidbounce(): SimulatedPlayer;
     // private simulationSteps: SimulatedPlayerSnapshot[];
     getSnapshotAt(ticks: number): SimulatedPlayerSnapshot;
     getSnapshotsBetween(tickRange: { start: number; endInclusive: number; step: number }): SimulatedPlayerSnapshot[];

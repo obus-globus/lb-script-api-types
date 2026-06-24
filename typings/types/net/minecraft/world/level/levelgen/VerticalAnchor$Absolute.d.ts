@@ -13,6 +13,7 @@ export class VerticalAnchor$Absolute extends Record implements VerticalAnchor {
     static belowTop(paramoffset: number): VerticalAnchor;
     static bottom(): VerticalAnchor;
     static top(): VerticalAnchor;
+    constructor(y: number)
     // private y: number;
     equals(o: Object | null): boolean;
     hashCode(): number;

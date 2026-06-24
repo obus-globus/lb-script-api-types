@@ -9,6 +9,7 @@ import type { MobEffectInstance } from '../../../../../net/minecraft/world/effec
 export class SuspiciousStewEffects$Entry extends Record {
     static CODEC: Codec<SuspiciousStewEffects$Entry>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SuspiciousStewEffects$Entry>;
+    constructor(effect: Holder<MobEffect>, duration: number)
     // private duration: number;
     // private effect: Holder<MobEffect>;
     createEffectInstance(): MobEffectInstance;

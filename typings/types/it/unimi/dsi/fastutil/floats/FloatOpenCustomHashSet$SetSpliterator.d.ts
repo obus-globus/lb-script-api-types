@@ -12,8 +12,8 @@ export class FloatOpenCustomHashSet$SetSpliterator extends Object implements Flo
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: FloatOpenCustomHashSet$SetSpliterator)
-    constructor(null_: FloatOpenCustomHashSet$SetSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;
     // private hasSplit: boolean;
     // private max: number;

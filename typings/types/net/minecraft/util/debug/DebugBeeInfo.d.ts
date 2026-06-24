@@ -6,6 +6,7 @@ import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class DebugBeeInfo extends Record {
     static STREAM_CODEC: StreamCodec<ByteBuf, DebugBeeInfo>;
+    constructor(hivePos: Optional<BlockPos>, flowerPos: Optional<BlockPos>, travelTicks: number, blacklistedHives: BlockPos[])
     // private blacklistedHives: BlockPos[];
     // private flowerPos: Optional<BlockPos>;
     // private hivePos: Optional<BlockPos>;

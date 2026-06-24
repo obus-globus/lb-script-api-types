@@ -16,7 +16,7 @@ export class ActiveServerList extends Object implements EventListener {
     readonly running: boolean;
     // private screenHandler: EventHook<ScreenEvent>;
     // private serverList: ServerList;
-    /*not mapped: */ getServerList$liquidbounce(): ServerList;
+    /*not mapped: */ getServerList$net_ccbluex_liquidbounce(): ServerList;
     // private serverListPinger: ServerStatusPinger;
     // private tickHandler: EventHook<GameTickEvent>;
     // private cancelTasks(): void;

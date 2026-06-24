@@ -3,6 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Position3f extends Record {
     static ZERO: Position3f;
+    constructor(x: number, y: number, z: number)
     // private x: number;
     // private y: number;
     // private z: number;

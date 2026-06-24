@@ -1,3 +1,4 @@
+import type { ConsoleAppender$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -18,6 +19,7 @@ export class ConsoleAppender extends AbstractOutputStreamAppender<OutputStreamMa
     static createDefaultAppenderForLayout(paramlayout: Layout<Serializable>): ConsoleAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
+    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: OutputStreamManager, arg4: boolean, arg5: ConsoleAppender$Target, arg6: Property[], arg7: ConsoleAppender$1)
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: OutputStreamManager, ignoreExceptions: boolean, target: ConsoleAppender$Target, properties: Property[])
     readonly target: ConsoleAppender$Target;
     getTarget(): ConsoleAppender$Target;

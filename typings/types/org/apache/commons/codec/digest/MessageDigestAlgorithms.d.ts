@@ -6,6 +6,8 @@ export class MessageDigestAlgorithms extends Object {
     static SHA3_256: string;
     static SHA3_384: string;
     static SHA3_512: string;
+    static SHAKE128_256: string;
+    static SHAKE256_512: string;
     static SHA_1: string;
     static SHA_224: string;
     static SHA_256: string;

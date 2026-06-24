@@ -1,3 +1,4 @@
+import type { Files$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Optional } from '../../../../com/google/common/base/Optional.d.ts'
 import type { ByteProcessor } from '../../../../com/google/common/io/ByteProcessor.d.ts'
 import type { ByteSource } from '../../../../com/google/common/io/ByteSource.d.ts'
@@ -12,6 +13,7 @@ export class Files$FileByteSource extends ByteSource {
     static empty(): ByteSource;
     static wrap(paramb: number[]): ByteSource;
     private constructor(file: File)
+    constructor(arg0: File, arg1: Files$1)
     // private file: File;
     openStream(): FileInputStream;
     read(): number[];

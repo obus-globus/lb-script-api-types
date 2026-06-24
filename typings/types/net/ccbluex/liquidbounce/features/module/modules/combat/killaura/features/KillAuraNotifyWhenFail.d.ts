@@ -10,7 +10,7 @@ export class KillAuraNotifyWhenFail extends Object {
     // private POINT_BOX: AABB;
     // private /*not mapped: */ getBoxFadeSeconds(): number;
     // private failedHits: ObjectLongMutablePair<Vec3>[];
-    /*not mapped: */ getFailedHits$liquidbounce(): ObjectLongMutablePair<Vec3>[];
+    /*not mapped: */ getFailedHits$net_ccbluex_liquidbounce(): ObjectLongMutablePair<Vec3>[];
     failedHitsIncrement: number;
     notifyForFailedHit(entity: Entity, rotation: Rotation): void;
     renderFailedHits(matrixStack: PoseStack): void;

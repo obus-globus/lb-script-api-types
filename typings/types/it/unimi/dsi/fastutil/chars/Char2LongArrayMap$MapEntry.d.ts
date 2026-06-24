@@ -11,8 +11,8 @@ export class Char2LongArrayMap$MapEntry extends Object implements Char2LongMap$E
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: string, paramarg1: number): CharLongPair;
-    constructor(null_: Char2LongArrayMap$MapEntry)
-    constructor(null_: Char2LongArrayMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     equals(arg0: Object | null): boolean;
     first(): string;

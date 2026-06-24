@@ -7,6 +7,7 @@ import type { ClickEvent$Action } from '../../../../net/minecraft/network/chat/C
 export class ClickEvent$ChangePage extends Record implements ClickEvent {
     static CODEC: Codec<ClickEvent>;
     static CODEC: MapCodec<ClickEvent$ChangePage>;
+    constructor(page: number)
     // private page: number;
     action(): ClickEvent$Action;
     equals(o: Object | null): boolean;

@@ -3,6 +3,6 @@ import type { Visibility } from '../../../../../../kotlin/reflect/jvm/internal/i
 export class Visibilities extends Object {
     static INSTANCE: Visibilities;
     private constructor()
-    compareLocal$compiler_common(arg0: Visibility, arg1: Visibility): number;
+    compareLocal$org_jetbrains_kotlin_compiler_common(arg0: Visibility, arg1: Visibility): number;
     isPrivate(arg0: Visibility): boolean;
 }

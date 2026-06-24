@@ -1,3 +1,4 @@
+import type { ImmutableIntArray$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ImmutableIntArray$Builder } from '../../../../com/google/common/primitives/ImmutableIntArray$Builder.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Spliterator$OfInt } from '../../../../java/util/Spliterator$OfInt.d.ts'
@@ -21,6 +22,7 @@ export class ImmutableIntArray extends Object implements Serializable {
     static of(paramfirst: number, paramrest: number[]): ImmutableIntArray;
     private constructor(array: number[])
     private constructor(array: number[], start: number, end: number)
+    constructor(arg0: number[], arg1: number, arg2: number, arg3: ImmutableIntArray$1)
     // private array: number[];
     // private end: number;
     // private start: number;

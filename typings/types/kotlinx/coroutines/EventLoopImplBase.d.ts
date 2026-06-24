@@ -1,4 +1,6 @@
 import type { Runnable } from '../../java/lang/Runnable.d.ts'
+import type { Object } from '../../java/lang/Object.d.ts'
+import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { ContinuationInterceptor$Key } from '../../kotlin/coroutines/ContinuationInterceptor$Key.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AtomicRef } from '../../kotlinx/atomicfu/AtomicRef.d.ts'
@@ -12,6 +14,7 @@ import type { EventLoopImplPlatform } from '../../kotlinx/coroutines/EventLoopIm
 export abstract class EventLoopImplBase extends EventLoopImplPlatform implements Delay {
     static Key: ContinuationInterceptor$Key;
     static Key: CoroutineDispatcher$Key;
+    static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor()
     // private closeQueue(): void;
     delay(time: number): void;

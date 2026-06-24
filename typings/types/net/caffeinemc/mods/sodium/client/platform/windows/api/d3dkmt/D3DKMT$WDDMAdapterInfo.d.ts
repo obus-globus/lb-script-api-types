@@ -4,6 +4,7 @@ import type { GraphicsAdapterInfo } from '../../../../../../../../../net/caffein
 import type { GraphicsAdapterVendor } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/compatibility/environment/probe/GraphicsAdapterVendor.d.ts'
 import type { WindowsFileVersion } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/platform/windows/WindowsFileVersion.d.ts'
 export class D3DKMT$WDDMAdapterInfo extends Record implements GraphicsAdapterInfo {
+    constructor(vendor: GraphicsAdapterVendor, name: string, adapterType: number, openglIcdFilePath: string, openglIcdVersion: WindowsFileVersion)
     // private adapterType: number;
     // private name: string;
     // private openglIcdFilePath: string;

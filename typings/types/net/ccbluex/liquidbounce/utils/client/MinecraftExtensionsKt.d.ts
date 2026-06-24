@@ -13,13 +13,14 @@ import type { Services } from '../../../../../net/minecraft/server/Services.d.ts
 import type { ProfileResolver } from '../../../../../net/minecraft/server/players/ProfileResolver.d.ts'
 import type { UserNameToIdResolver } from '../../../../../net/minecraft/server/players/UserNameToIdResolver.d.ts'
 export class MinecraftExtensionsKt extends Object {
-    static getDimensions(paramarg0: Window): number[];
+    static getDimensions(paramarg0: Window): number;
     static getGpuDevice(): GpuDevice;
     static getInteraction(): MultiPlayerGameMode;
     static getMc(): Minecraft;
     static getNetwork(): ClientPacketListener;
     static getPlayer(): LocalPlayer;
-    static getScaledDimension(paramarg0: Window): number[];
+    static getScaledDimension(paramarg0: Window): number;
     static getWorld(): ClientLevel;
+    static isSingleplayer(paramarg0: Minecraft): boolean;
     static with(services: Services, sessionService: MinecraftSessionService, servicesKeySet: ServicesKeySet, profileRepository: GameProfileRepository, nameToIdCache: UserNameToIdResolver, profileResolver: ProfileResolver): Services;
 }

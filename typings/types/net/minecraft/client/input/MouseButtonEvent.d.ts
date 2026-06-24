@@ -4,6 +4,7 @@ import type { InputWithModifiers } from '../../../../net/minecraft/client/input/
 import type { MouseButtonInfo } from '../../../../net/minecraft/client/input/MouseButtonInfo.d.ts'
 export class MouseButtonEvent extends Record implements InputWithModifiers {
     static NOT_DIGIT: number;
+    constructor(x: number, y: number, buttonInfo: MouseButtonInfo)
     // private buttonInfo: MouseButtonInfo;
     // private x: number;
     // private y: number;

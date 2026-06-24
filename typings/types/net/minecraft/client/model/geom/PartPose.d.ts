@@ -5,6 +5,7 @@ export class PartPose extends Record {
     static offset(paramx: number, paramy: number, paramz: number): PartPose;
     static offsetAndRotation(paramoffsetX: number, paramoffsetY: number, paramoffsetZ: number, paramrotationX: number, paramrotationY: number, paramrotationZ: number): PartPose;
     static rotation(paramx: number, paramy: number, paramz: number): PartPose;
+    constructor(x: number, y: number, z: number, xRot: number, yRot: number, zRot: number, xScale: number, yScale: number, zScale: number)
     // private x: number;
     // private xRot: number;
     // private xScale: number;

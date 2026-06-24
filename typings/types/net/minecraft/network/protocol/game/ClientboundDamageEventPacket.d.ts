@@ -12,11 +12,15 @@ import type { PacketType } from '../../../../../net/minecraft/network/protocol/P
 import type { ClientGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
 import type { DamageSource } from '../../../../../net/minecraft/world/damagesource/DamageSource.d.ts'
 import type { DamageType } from '../../../../../net/minecraft/world/damagesource/DamageType.d.ts'
+import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientboundDamageEventPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundDamageEventPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(entityId: number, sourceType: Holder<DamageType>, sourceCauseId: number, sourceDirectId: number, sourcePosition: Optional<Vec3>)
+    private constructor(input: RegistryFriendlyByteBuf)
+    constructor(entity: Entity, source: DamageSource)
     // private entityId: number;
     // private sourceCauseId: number;
     // private sourceDirectId: number;

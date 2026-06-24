@@ -14,6 +14,8 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class ClientboundLoginPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundLoginPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(playerId: number, hardcore: boolean, levels: ResourceKey<Level>[], maxPlayers: number, chunkRadius: number, simulationDistance: number, reducedDebugInfo: boolean, showDeathScreen: boolean, doLimitedCrafting: boolean, commonPlayerSpawnInfo: CommonPlayerSpawnInfo, onlineMode: boolean, enforcesSecureChat: boolean)
+    private constructor(input: RegistryFriendlyByteBuf)
     // private chunkRadius: number;
     // private commonPlayerSpawnInfo: CommonPlayerSpawnInfo;
     // private doLimitedCrafting: boolean;
@@ -21,6 +23,7 @@ export class ClientboundLoginPacket extends Record implements Packet<ClientGameP
     // private hardcore: boolean;
     // private levels: ResourceKey<Level>[];
     // private maxPlayers: number;
+    // private onlineMode: boolean;
     // private playerId: number;
     // private reducedDebugInfo: boolean;
     // private showDeathScreen: boolean;
@@ -37,6 +40,7 @@ export class ClientboundLoginPacket extends Record implements Packet<ClientGameP
     isTerminal(): boolean;
     levels(): ResourceKey<Level>[];
     maxPlayers(): number;
+    onlineMode(): boolean;
     playerId(): number;
     reducedDebugInfo(): boolean;
     showDeathScreen(): boolean;

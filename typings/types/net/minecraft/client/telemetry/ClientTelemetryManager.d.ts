@@ -3,6 +3,7 @@ import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Duration } from '../../../../java/time/Duration.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
+import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
@@ -25,7 +26,7 @@ export class ClientTelemetryManager extends Object implements AutoCloseable {
     // private userApiService: UserApiService;
     close(): void;
     // private createEventSender(): (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void;
-    createWorldSessionManager(newWorld: boolean, worldLoadDuration: Duration, minigameName: string): WorldSessionTelemetryManager;
+    createWorldSessionManager(newWorld: boolean, worldLoadDuration: Duration, minigameName: string, sessionId: UUID): WorldSessionTelemetryManager;
     getLogDirectory(): Path[];
     getOutsideSessionSender(): (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void;
 }

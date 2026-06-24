@@ -1,15 +1,17 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
+import type { GenericDeclaration } from '../../../java/lang/reflect/GenericDeclaration.d.ts'
 import type { Annotation } from '../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ClassBasedDeclarationContainer } from '../../../kotlin/jvm/internal/ClassBasedDeclarationContainer.d.ts'
 import type { ClassReference$Companion } from '../../../kotlin/jvm/internal/ClassReference$Companion.d.ts'
+import type { KotlinGenericDeclaration } from '../../../kotlin/jvm/internal/KotlinGenericDeclaration.d.ts'
 import type { KCallable } from '../../../kotlin/reflect/KCallable.d.ts'
 import type { KClass } from '../../../kotlin/reflect/KClass.d.ts'
 import type { KFunction } from '../../../kotlin/reflect/KFunction.d.ts'
 import type { KType } from '../../../kotlin/reflect/KType.d.ts'
 import type { KTypeParameter } from '../../../kotlin/reflect/KTypeParameter.d.ts'
 import type { KVisibility } from '../../../kotlin/reflect/KVisibility.d.ts'
-export class ClassReference extends Object implements ClassBasedDeclarationContainer, KClass<Object> {
+export class ClassReference extends Object implements ClassBasedDeclarationContainer, KotlinGenericDeclaration, KClass<Object> {
     static Companion: ClassReference$Companion;
     constructor(jClass: Class<Object>)
     readonly annotations: Annotation[];
@@ -36,6 +38,7 @@ export class ClassReference extends Object implements ClassBasedDeclarationConta
     readonly visibility: KVisibility | null;
     equals(other: Object | null): boolean;
     // private error(): void;
+    findJavaDeclaration(): GenericDeclaration;
     hashCode(): number;
     isInstance(value: Object | null): boolean;
     toString(): string;

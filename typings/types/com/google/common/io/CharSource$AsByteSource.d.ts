@@ -10,7 +10,7 @@ export class CharSource$AsByteSource extends ByteSource {
     static concat(paramsources: Iterator<ByteSource>): ByteSource;
     static empty(): ByteSource;
     static wrap(paramb: number[]): ByteSource;
-    constructor(null_: CharSource$AsByteSource, charset: Charset)
+    constructor(null_: CharSource, charset: Charset)
     // private charset: Charset;
     asCharSource(charset: Charset): CharSource;
     openStream(): InputStream;

@@ -1,0 +1,12 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class EXTPipelineCreationCacheControl extends Object {
+    static VK_ERROR_PIPELINE_COMPILE_REQUIRED_EXT: number;
+    static VK_EXT_PIPELINE_CREATION_CACHE_CONTROL_EXTENSION_NAME: string;
+    static VK_EXT_PIPELINE_CREATION_CACHE_CONTROL_SPEC_VERSION: number;
+    static VK_PIPELINE_CACHE_CREATE_EXTERNALLY_SYNCHRONIZED_BIT_EXT: number;
+    static VK_PIPELINE_COMPILE_REQUIRED_EXT: number;
+    static VK_PIPELINE_CREATE_EARLY_RETURN_ON_FAILURE_BIT_EXT: number;
+    static VK_PIPELINE_CREATE_FAIL_ON_PIPELINE_COMPILE_REQUIRED_BIT_EXT: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_PIPELINE_CREATION_CACHE_CONTROL_FEATURES_EXT: number;
+    private constructor()
+}

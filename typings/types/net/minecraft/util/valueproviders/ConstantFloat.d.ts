@@ -7,6 +7,7 @@ export class ConstantFloat extends Record implements FloatProvider {
     static MAP_CODEC: MapCodec<ConstantFloat>;
     static ZERO: ConstantFloat;
     static of(paramvalue: number): ConstantFloat;
+    constructor(value: number)
     // private value: number;
     codec(): MapCodec<ConstantFloat>;
     equals(o: Object | null): boolean;

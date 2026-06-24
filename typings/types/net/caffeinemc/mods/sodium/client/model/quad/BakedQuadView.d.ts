@@ -10,6 +10,7 @@ export interface BakedQuadView extends Object, ModelQuadView{
     getFaceNormal(): number;
     getFlags(): number;
     getLight(arg0: number): number;
+    getLightEmission(): number;
     getLightFace(): Direction;
     getMaxLightQuad(arg0: number): number;
     getNormalFace(): ModelQuadFacing;

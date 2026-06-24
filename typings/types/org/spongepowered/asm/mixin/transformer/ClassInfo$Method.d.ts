@@ -4,12 +4,12 @@ import type { ClassInfo } from '../../../../../org/spongepowered/asm/mixin/trans
 import type { ClassInfo$FrameData } from '../../../../../org/spongepowered/asm/mixin/transformer/ClassInfo$FrameData.d.ts'
 import type { ClassInfo$Member } from '../../../../../org/spongepowered/asm/mixin/transformer/ClassInfo$Member.d.ts'
 export class ClassInfo$Method extends ClassInfo$Member {
-    constructor(null_: ClassInfo$Method, arg1: string, arg2: string)
-    constructor(null_: ClassInfo$Method, arg1: string, arg2: string, arg3: number)
-    constructor(null_: ClassInfo$Method, arg1: string, arg2: string, arg3: number, arg4: boolean)
-    constructor(null_: ClassInfo$Method, arg1: MethodNode)
-    constructor(null_: ClassInfo$Method, arg1: MethodNode, arg2: boolean)
-    constructor(null_: ClassInfo$Method, arg1: ClassInfo$Member)
+    constructor(null_: ClassInfo, arg1: string, arg2: string)
+    constructor(null_: ClassInfo, arg1: string, arg2: string, arg3: number)
+    constructor(null_: ClassInfo, arg1: string, arg2: string, arg3: number, arg4: boolean)
+    constructor(null_: ClassInfo, arg1: MethodNode)
+    constructor(null_: ClassInfo, arg1: MethodNode, arg2: boolean)
+    constructor(null_: ClassInfo, arg1: ClassInfo$Member)
     readonly conformed: boolean;
     readonly frames: ClassInfo$FrameData[];
     // private isAccessor: boolean;

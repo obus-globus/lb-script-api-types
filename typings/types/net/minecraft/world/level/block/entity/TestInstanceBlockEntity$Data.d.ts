@@ -13,6 +13,7 @@ import type { TestInstanceBlockEntity$Status } from '../../../../../../net/minec
 export class TestInstanceBlockEntity$Data extends Record {
     static CODEC: Codec<TestInstanceBlockEntity$Data>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, TestInstanceBlockEntity$Data>;
+    constructor(test: Optional<ResourceKey<GameTestInstance>>, size: Vec3i, rotation: Rotation, ignoreEntities: boolean, status: TestInstanceBlockEntity$Status, errorMessage: Optional<Component>)
     // private errorMessage: Optional<Component>;
     // private ignoreEntities: boolean;
     // private rotation: Rotation;

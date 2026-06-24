@@ -1,6 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { BandSet } from '../../../../../../org/apache/commons/compress/harmony/pack200/BandSet.d.ts'
 export class BandSet$BandData extends Object {
-    constructor(null_: BandSet$BandData, arg1: number[])
+    constructor(null_: BandSet, arg1: number[])
     // private averageAbsoluteDelta: number;
     // private averageAbsoluteValue: number;
     // private band: number[];

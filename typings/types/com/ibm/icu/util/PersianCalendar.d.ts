@@ -81,6 +81,7 @@ export class PersianCalendar extends Calendar {
     constructor(arg0: Locale)
     constructor(arg0: number, arg1: number, arg2: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number)
+    getRelatedYearDifference(): number;
     getType(): string;
     handleComputeFields(arg0: number): void;
     handleComputeMonthStart(arg0: number, arg1: number, arg2: boolean): number;

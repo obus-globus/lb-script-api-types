@@ -7,6 +7,8 @@ import type { Matrix3x2fc } from '../../../../../org/joml/Matrix3x2fc.d.ts'
 export class ScreenRectangle extends Record {
     static empty(): ScreenRectangle;
     static of(paramprimaryAxis: ScreenAxis, paramprimaryIndex: number, paramsecondaryIndex: number, paramprimaryLength: number, paramsecondaryLength: number): ScreenRectangle;
+    constructor(x: number, y: number, width: number, height: number)
+    constructor(position: ScreenPosition, width: number, height: number)
     // private height: number;
     // private position: ScreenPosition;
     // private width: number;

@@ -1,6 +1,5 @@
 import type { ChannelFutureListener } from '../../../../../../io/netty/channel/ChannelFutureListener.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ServerConfigurationNetworking$ConfigurationPacketHandler } from '../../../../../../net/fabricmc/fabric/api/networking/v1/ServerConfigurationNetworking$ConfigurationPacketHandler.d.ts'
 import type { ServerConfigurationNetworking$Context } from '../../../../../../net/fabricmc/fabric/api/networking/v1/ServerConfigurationNetworking$Context.d.ts'
 import type { AbstractChanneledNetworkAddon } from '../../../../../../net/fabricmc/fabric/impl/networking/AbstractChanneledNetworkAddon.d.ts'
@@ -12,7 +11,7 @@ import type { CustomPacketPayload } from '../../../../../../net/minecraft/networ
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { ServerConfigurationPacketListenerImpl } from '../../../../../../net/minecraft/server/network/ServerConfigurationPacketListenerImpl.d.ts'
-export class ServerConfigurationNetworkAddon extends AbstractChanneledNetworkAddon<(param0: Object, param1: ServerConfigurationNetworking$Context) => void> {
+export class ServerConfigurationNetworkAddon extends AbstractChanneledNetworkAddon<(param0: CustomPacketPayload | null, param1: ServerConfigurationNetworking$Context) => void> {
     constructor(arg0: ServerConfigurationPacketListenerImpl, arg1: MinecraftServer)
     readonly clientBrand: string;
     // private context: ServerConfigurationNetworking$Context;

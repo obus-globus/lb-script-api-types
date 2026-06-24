@@ -1,10 +1,12 @@
+import type { LongOpenCustomHashSet$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { LongConsumer } from '../../../../../it/unimi/dsi/fastutil/longs/LongConsumer.d.ts'
 import type { LongIterator } from '../../../../../it/unimi/dsi/fastutil/longs/LongIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { LongConsumer as LongConsumer_2 } from '../../../../../java/util/function/LongConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongOpenCustomHashSet$SetIterator extends Object implements LongIterator {
-    private constructor(null_: LongOpenCustomHashSet$SetIterator)
+    private constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: LongOpenCustomHashSet$1)
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

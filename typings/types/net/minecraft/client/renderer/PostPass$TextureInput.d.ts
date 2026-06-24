@@ -8,6 +8,7 @@ import type { PostPass$Input } from '../../../../net/minecraft/client/renderer/P
 import type { AbstractTexture } from '../../../../net/minecraft/client/renderer/texture/AbstractTexture.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class PostPass$TextureInput extends Record implements PostPass$Input {
+    constructor(samplerName: string, texture: AbstractTexture, width: number, height: number, bilinear: boolean)
     // private bilinear: boolean;
     // private height: number;
     // private samplerName: string;

@@ -8,6 +8,9 @@ export class MessageSignature$Packed extends Record {
     static FULL_SIGNATURE: number;
     static read(paraminput: FriendlyByteBuf): MessageSignature$Packed;
     static write(paramoutput: FriendlyByteBuf, parampacked: MessageSignature$Packed): void;
+    constructor(id: number)
+    constructor(id: number, fullSignature: MessageSignature)
+    constructor(signature: MessageSignature)
     // private fullSignature: MessageSignature;
     // private id: number;
     equals(o: Object | null): boolean;

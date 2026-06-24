@@ -11,7 +11,6 @@ import type { LivingEntity } from '../../../../net/minecraft/world/entity/Living
 import type { Player } from '../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { Projectile } from '../../../../net/minecraft/world/entity/projectile/Projectile.d.ts'
 import type { FeatureElement } from '../../../../net/minecraft/world/flag/FeatureElement.d.ts'
-import type { CrossbowItem$ChargingSounds } from '../../../../net/minecraft/world/item/CrossbowItem$ChargingSounds.d.ts'
 import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
 import type { Item$Properties } from '../../../../net/minecraft/world/item/Item$Properties.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
@@ -47,7 +46,6 @@ export class CrossbowItem extends ProjectileWeaponItem {
     // private startSoundPlayed: boolean;
     createProjectile(level: Level, shooter: LivingEntity, heldItem: ItemStack, projectile: ItemStack, isCrit: boolean): Projectile;
     getAllSupportedProjectiles(): (param0: ItemStack) => boolean;
-    getChargingSounds(itemStack: ItemStack): CrossbowItem$ChargingSounds;
     getDefaultProjectileRange(): number;
     getDurabilityUse(projectile: ItemStack): number;
     getSupportedHeldProjectiles(): (param0: ItemStack) => boolean;

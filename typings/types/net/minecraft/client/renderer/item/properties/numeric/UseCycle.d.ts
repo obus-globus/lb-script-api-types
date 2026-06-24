@@ -7,6 +7,7 @@ import type { ItemOwner } from '../../../../../../../net/minecraft/world/entity/
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class UseCycle extends Record implements RangeSelectItemModelProperty {
     static MAP_CODEC: MapCodec<UseCycle>;
+    constructor(period: number)
     // private period: number;
     equals(o: Object | null): boolean;
     get(itemStack: ItemStack, level: ClientLevel, owner: ItemOwner, seed: number): number;

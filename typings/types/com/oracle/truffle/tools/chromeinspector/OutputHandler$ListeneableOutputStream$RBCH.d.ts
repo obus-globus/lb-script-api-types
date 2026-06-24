@@ -1,8 +1,9 @@
+import type { OutputHandler$ListeneableOutputStream } from '../../../../../com/oracle/truffle/tools/chromeinspector/OutputHandler$ListeneableOutputStream.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { ReadableByteChannel } from '../../../../../java/nio/channels/ReadableByteChannel.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class OutputHandler$ListeneableOutputStream$RBCH extends Object implements ReadableByteChannel {
-    private constructor(null_: OutputHandler$ListeneableOutputStream$RBCH)
+    private constructor(null_: OutputHandler$ListeneableOutputStream)
     // private b: number[];
     // private len: number;
     // private off: number;

@@ -13,6 +13,7 @@ export interface DensityFunctions$PureTransformer extends Object, DensityFunctio
     input(): DensityFunction;
     invert(): DensityFunction;
     mapAll(visitor: DensityFunction$Visitor): DensityFunction;
+    mapChildren(visitor: DensityFunction$Visitor): DensityFunction;
     maxValue(): number;
     minValue(): number;
     quarterNegative(): DensityFunction;

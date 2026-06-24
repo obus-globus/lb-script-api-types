@@ -8,11 +8,15 @@ import type { LongSerializationPolicy } from '../../../com/google/gson/LongSeria
 import type { ReflectionAccessFilter } from '../../../com/google/gson/ReflectionAccessFilter.d.ts'
 import type { Strictness } from '../../../com/google/gson/Strictness.d.ts'
 import type { ToNumberStrategy } from '../../../com/google/gson/ToNumberStrategy.d.ts'
+import type { TypeAdapter } from '../../../com/google/gson/TypeAdapter.d.ts'
 import type { TypeAdapterFactory } from '../../../com/google/gson/TypeAdapterFactory.d.ts'
+import type { ConstructorConstructor } from '../../../com/google/gson/internal/ConstructorConstructor.d.ts'
 import type { Excluder } from '../../../com/google/gson/internal/Excluder.d.ts'
+import type { JsonAdapterAnnotationTypeAdapterFactory } from '../../../com/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Type } from '../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Number } from '../../../java/lang/Number.d.ts'
 export class GsonBuilder extends Object {
     constructor()
     constructor(arg0: Gson)
@@ -36,16 +40,21 @@ export class GsonBuilder extends Object {
     // private strictness: Strictness;
     // private timeStyle: number;
     // private useJdkUnsafe: boolean;
+    // private addDateTypeAdapters(arg0: TypeAdapterFactory[]): void;
     addDeserializationExclusionStrategy(arg0: ExclusionStrategy): GsonBuilder;
     addReflectionAccessFilter(arg0: ReflectionAccessFilter): GsonBuilder;
     addSerializationExclusionStrategy(arg0: ExclusionStrategy): GsonBuilder;
+    // private addUserDefinedAdapters(arg0: TypeAdapterFactory[]): void;
     create(): Gson;
+    createFactories(arg0: ConstructorConstructor, arg1: JsonAdapterAnnotationTypeAdapterFactory): TypeAdapterFactory[];
     disableHtmlEscaping(): GsonBuilder;
     disableInnerClassSerialization(): GsonBuilder;
     disableJdkUnsafe(): GsonBuilder;
+    // private doubleAdapter(): TypeAdapter<Number>;
     enableComplexMapKeySerialization(): GsonBuilder;
     excludeFieldsWithModifiers(arg0: number[]): GsonBuilder;
     excludeFieldsWithoutExposeAnnotation(): GsonBuilder;
+    // private floatAdapter(): TypeAdapter<Number>;
     generateNonExecutableJson(): GsonBuilder;
     registerTypeAdapter(arg0: Type, arg1: Object): GsonBuilder;
     registerTypeAdapterFactory(arg0: TypeAdapterFactory): GsonBuilder;

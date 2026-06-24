@@ -5,6 +5,7 @@ import type { Holder } from '../../../net/minecraft/core/Holder.d.ts'
 import type { SoundEvent } from '../../../net/minecraft/sounds/SoundEvent.d.ts'
 export class Music extends Record {
     static CODEC: Codec<Music>;
+    constructor(sound: Holder<SoundEvent>, minDelay: number, maxDelay: number, replaceCurrentMusic: boolean)
     // private maxDelay: number;
     // private minDelay: number;
     // private replaceCurrentMusic: boolean;

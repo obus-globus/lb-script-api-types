@@ -7,7 +7,7 @@ export class TreeRangeSet$Complement extends TreeRangeSet<C> {
     static create(): TreeRangeSet<any>;
     static create(paramrangeSet: RangeSet<any>): TreeRangeSet<any>;
     static create(paramranges: Range<any>[]): TreeRangeSet<any>;
-    constructor(null_: TreeRangeSet$Complement)
+    constructor(null_: TreeRangeSet<C>)
     add<C extends Comparable<Object>>(rangeToAdd: Range<C>): void;
     complement<C extends Comparable<Object>>(): RangeSet<C>;
     contains<C extends Comparable<Object>>(value: C): boolean;

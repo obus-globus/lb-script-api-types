@@ -10,6 +10,7 @@ export class RecipeBookSettings$TypeSettings extends Record {
     static FURNACE_MAP_CODEC: MapCodec<RecipeBookSettings$TypeSettings>;
     static SMOKER_MAP_CODEC: MapCodec<RecipeBookSettings$TypeSettings>;
     static STREAM_CODEC: StreamCodec<ByteBuf, RecipeBookSettings$TypeSettings>;
+    constructor(open: boolean, filtering: boolean)
     // private filtering: boolean;
     // private open: boolean;
     equals(o: Object | null): boolean;

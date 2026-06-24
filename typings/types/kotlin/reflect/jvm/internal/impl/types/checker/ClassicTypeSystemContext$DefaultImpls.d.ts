@@ -21,6 +21,7 @@ import type { TypeArgumentMarker } from '../../../../../../../kotlin/reflect/jvm
 import type { TypeConstructorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeConstructorMarker.d.ts'
 import type { TypeParameterMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeParameterMarker.d.ts'
 import type { TypeSubstitutorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSubstitutorMarker.d.ts'
+import type { TypeSystemContext } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSystemContext.d.ts'
 import type { TypeVariableTypeConstructorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariableTypeConstructorMarker.d.ts'
 import type { TypeVariance } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariance.d.ts'
 export class ClassicTypeSystemContext$DefaultImpls extends Object {
@@ -85,7 +86,7 @@ export class ClassicTypeSystemContext$DefaultImpls extends Object {
     static lowerBound(paramarg0: ClassicTypeSystemContext, paramarg1: FlexibleTypeMarker): SimpleTypeMarker;
     static lowerType(paramarg0: ClassicTypeSystemContext, paramarg1: CapturedTypeMarker): KotlinTypeMarker;
     static makeDefinitelyNotNullOrNotNull(paramarg0: ClassicTypeSystemContext, paramarg1: KotlinTypeMarker, paramarg2: boolean): KotlinTypeMarker;
-    static newTypeCheckerState(paramarg0: ClassicTypeSystemContext, paramarg1: boolean, paramarg2: boolean, paramarg3: boolean): TypeCheckerState;
+    static newTypeCheckerState(paramarg0: ClassicTypeSystemContext, paramarg1: TypeSystemContext, paramarg2: boolean, paramarg3: boolean, paramarg4: boolean): TypeCheckerState;
     static nullableAnyType(paramarg0: ClassicTypeSystemContext): SimpleTypeMarker;
     static original(paramarg0: ClassicTypeSystemContext, paramarg1: DefinitelyNotNullTypeMarker): SimpleTypeMarker;
     static parametersCount(paramarg0: ClassicTypeSystemContext, paramarg1: TypeConstructorMarker): number;

@@ -2,6 +2,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BinaryDecoder } from '../../../../../org/apache/commons/codec/BinaryDecoder.d.ts'
 import type { BinaryEncoder } from '../../../../../org/apache/commons/codec/BinaryEncoder.d.ts'
 import type { CodecPolicy } from '../../../../../org/apache/commons/codec/CodecPolicy.d.ts'
+import type { BaseNCodec$AbstractBuilder } from '../../../../../org/apache/commons/codec/binary/BaseNCodec$AbstractBuilder.d.ts'
 import type { BaseNCodec$Context } from '../../../../../org/apache/commons/codec/binary/BaseNCodec$Context.d.ts'
 export abstract class BaseNCodec extends Object implements BinaryDecoder, BinaryEncoder {
     static MIME_CHUNK_SIZE: number;
@@ -10,9 +11,12 @@ export abstract class BaseNCodec extends Object implements BinaryDecoder, Binary
     constructor(arg0: number, arg1: number, arg2: number, arg3: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: CodecPolicy)
+    constructor(arg0: BaseNCodec$AbstractBuilder<Object, any>)
     // private PAD: number;
     // private chunkSeparatorLength: number;
+    // private decodeTable: number[];
     // private decodingPolicy: CodecPolicy;
+    // private encodeTable: number[];
     // private encodedBlockSize: number;
     // private lineLength: number;
     // private pad: number;

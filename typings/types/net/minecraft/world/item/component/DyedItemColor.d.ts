@@ -18,6 +18,7 @@ export class DyedItemColor extends Record implements TooltipProvider {
     static applyDyes(paramitemStack: ItemStack, paramdyes: DyeColor[]): ItemStack;
     static applyDyes(paramcurrentDye: DyedItemColor, paramdyes: DyeColor[]): DyedItemColor;
     static getOrDefault(paramitemStack: ItemStack, paramdefaultColor: number): number;
+    constructor(rgb: number)
     // private rgb: number;
     addToTooltip(context: Item$TooltipContext, consumer: (param0: Component) => void, flag: TooltipFlag, components: DataComponentGetter): void;
     equals(o: Object | null): boolean;

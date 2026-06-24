@@ -1,3 +1,4 @@
+import type { Generate$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
@@ -8,6 +9,7 @@ export class Generate$Type extends Enum<Generate$Type> {
     static valueOf(paramname: string): Generate$Type;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: Generate$1)
     constructor(): string;
     declaration(): string;
     generator(): Class<Object>;

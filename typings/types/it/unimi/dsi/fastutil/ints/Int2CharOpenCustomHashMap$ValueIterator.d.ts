@@ -4,7 +4,7 @@ import type { Int2CharOpenCustomHashMap$MapIterator } from '../../../../../it/un
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Int2CharOpenCustomHashMap$ValueIterator extends Int2CharOpenCustomHashMap$MapIterator<(param0: string) => void> implements CharIterator {
-    constructor(null_: Int2CharOpenCustomHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;

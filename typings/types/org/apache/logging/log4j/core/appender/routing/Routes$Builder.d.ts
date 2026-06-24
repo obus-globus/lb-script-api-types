@@ -17,6 +17,10 @@ export class Routes$Builder extends Object implements Builder<Routes> {
     getPatternScript(): AbstractScript;
     getRoutes(): Route[];
     isValid(): boolean;
+    setConfiguration(configuration: Configuration): Routes$Builder;
+    setPattern(pattern: string): Routes$Builder;
+    setPatternScript(patternScript: AbstractScript): Routes$Builder;
+    setRoutes(routes: Route[]): Routes$Builder;
     withConfiguration(configuration: Configuration): Routes$Builder;
     withPattern(pattern: string): Routes$Builder;
     withPatternScript(patternScript: AbstractScript): Routes$Builder;

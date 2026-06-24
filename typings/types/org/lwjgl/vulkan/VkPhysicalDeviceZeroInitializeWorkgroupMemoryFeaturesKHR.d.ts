@@ -1,0 +1,67 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { Struct$StructValidation } from '../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+import type { VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures } from '../../../org/lwjgl/vulkan/VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.d.ts'
+export class VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR extends VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static PNEXT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static SHADERZEROINITIALIZEWORKGROUPMEMORY: number;
+    static SIZEOF: number;
+    static STYPE: number;
+    static calloc(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static calloc(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
+    static create(paramarg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static create(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    static create(paramarg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static malloc(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static npNext(paramarg0: number): number;
+    static npNext(paramarg0: number, paramarg1: number): void;
+    static nsType(paramarg0: number): number;
+    static nsType(paramarg0: number, paramarg1: number): void;
+    static nshaderZeroInitializeWorkgroupMemory(paramarg0: number): number;
+    static nshaderZeroInitializeWorkgroupMemory(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    create(arg0: number, arg1: ByteBuffer): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    pNext(): number;
+    pNext(arg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    sType(): number;
+    sType(arg0: number): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    sType$Default(): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    set(arg0: number, arg1: number, arg2: boolean): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    set(arg0: VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
+    set(arg0: VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+    shaderZeroInitializeWorkgroupMemory(): boolean;
+    shaderZeroInitializeWorkgroupMemory(arg0: boolean): VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR;
+}

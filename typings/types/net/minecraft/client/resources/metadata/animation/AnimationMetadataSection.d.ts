@@ -9,6 +9,7 @@ import type { MetadataSectionType } from '../../../../../../net/minecraft/server
 export class AnimationMetadataSection extends Record implements AnimationMetadataSectionAccessor {
     static CODEC: Codec<AnimationMetadataSection>;
     static TYPE: MetadataSectionType<AnimationMetadataSection>;
+    constructor(frames: Optional<AnimationFrame[]>, frameWidth: Optional<number>, frameHeight: Optional<number>, defaultFrameTime: number, interpolatedFrames: boolean)
     // private defaultFrameTime: number;
     // private frames: Optional<AnimationFrame[]>;
     // private interpolatedFrames: boolean;

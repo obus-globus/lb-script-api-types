@@ -5,16 +5,16 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
 export class ModuleAutoClicker$UseButton extends ToggleableValueGroup {
     static INSTANCE: ModuleAutoClicker$UseButton;
     // private blocksForIgnore: Block[];
-    /*not mapped: */ getBlocksForIgnore$liquidbounce(): Block[];
+    /*not mapped: */ getBlocksForIgnore$net_ccbluex_liquidbounce(): Block[];
     readonly clicker: Clicker<ModuleAutoClicker$UseButton>;
     // private delayStart: boolean;
-    /*not mapped: */ getDelayStart$liquidbounce(): boolean;
+    /*not mapped: */ getDelayStart$net_ccbluex_liquidbounce(): boolean;
     // private holdingItemsForIgnore: Item[];
-    /*not mapped: */ getHoldingItemsForIgnore$liquidbounce(): Item[];
+    /*not mapped: */ getHoldingItemsForIgnore$net_ccbluex_liquidbounce(): Item[];
     // private needToWait: boolean;
-    /*not mapped: */ getNeedToWait$liquidbounce(): boolean;
+    /*not mapped: */ getNeedToWait$net_ccbluex_liquidbounce(): boolean;
     // private onlyBlock: boolean;
-    /*not mapped: */ getOnlyBlock$liquidbounce(): boolean;
+    /*not mapped: */ getOnlyBlock$net_ccbluex_liquidbounce(): boolean;
     // private requiresNoInput: boolean;
-    /*not mapped: */ getRequiresNoInput$liquidbounce(): boolean;
+    /*not mapped: */ getRequiresNoInput$net_ccbluex_liquidbounce(): boolean;
 }

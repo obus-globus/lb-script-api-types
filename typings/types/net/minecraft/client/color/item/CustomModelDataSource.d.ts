@@ -7,6 +7,7 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class CustomModelDataSource extends Record implements ItemTintSource {
     static MAP_CODEC: MapCodec<CustomModelDataSource>;
+    constructor(index: number, defaultColor: number)
     // private defaultColor: number;
     // private index: number;
     calculate(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity): number;

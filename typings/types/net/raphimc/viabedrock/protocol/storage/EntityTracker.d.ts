@@ -2,7 +2,7 @@ import type { StoredObject } from '../../../../../com/viaversion/viaversion/api/
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { BlockPosition } from '../../../../../com/viaversion/viaversion/api/minecraft/BlockPosition.d.ts'
 import type { ChunkPosition } from '../../../../../com/viaversion/viaversion/api/minecraft/ChunkPosition.d.ts'
-import type { EntityTypes1_21_11 } from '../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes1_21_11.d.ts'
+import type { EntityTypes26_2 } from '../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes26_2.d.ts'
 import type { AtomicInteger } from '../../../../../java/util/concurrent/atomic/AtomicInteger.d.ts'
 import type { BlockState } from '../../../../../net/raphimc/viabedrock/api/model/BlockState.d.ts'
 import type { ClientPlayerEntity } from '../../../../../net/raphimc/viabedrock/api/model/entity/ClientPlayerEntity.d.ts'
@@ -17,7 +17,7 @@ export class EntityTracker extends StoredObject {
     // private runtimeIdToUniqueId: { [key: string]: any };
     addEntity<T extends Entity>(arg0: T): T;
     addEntity<T extends Entity>(arg0: T, arg1: boolean): T;
-    addEntity(arg0: number, arg1: number, arg2: string, arg3: EntityTypes1_21_11): Entity;
+    addEntity(arg0: number, arg1: number, arg2: string, arg3: EntityTypes26_2): Entity;
     getClientPlayer(): ClientPlayerEntity;
     getEntityByJid(arg0: number): Entity;
     getEntityByRid(arg0: number): Entity;

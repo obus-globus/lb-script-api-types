@@ -1,3 +1,4 @@
+import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { ScheduleInventoryActionEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/ScheduleInventoryActionEvent.d.ts'
 import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
@@ -16,7 +17,7 @@ import type { AbstractContainerScreen } from '../../../../../../../../net/minecr
  *
  * Automatically steals all items from a chest.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt:51}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer.kt:51}
  */
 export class ModuleChestStealer extends ClientModule {
     static INSTANCE: ModuleChestStealer;
@@ -32,8 +33,7 @@ export class ModuleChestStealer extends ClientModule {
     // private quickSwaps: boolean;
     // private /*not mapped: */ getQuickSwaps(): boolean;
     // private scheduleInventoryAction: EventHook<ScheduleInventoryActionEvent>;
-    // private selectionMode: ModuleChestStealer$SelectionMode;
-    // private /*not mapped: */ getSelectionMode(): ModuleChestStealer$SelectionMode;
+    // private selectionMode: ModeValueGroup<ModuleChestStealer$SelectionMode>;
     // private createCleanupPlan(screen: AbstractContainerScreen<any>): InventoryCleanupPlan;
     // private getChestScreen(): AbstractContainerScreen<any> | null;
     // private getStillRequiredSpace(cleanupPlan: InventoryCleanupPlan, slotsToCollect: number): number;

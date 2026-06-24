@@ -4,6 +4,7 @@ import type { Proxy } from '../../../../java/net/Proxy.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { HttpUtil$DownloadProgressListener } from '../../../../net/minecraft/util/HttpUtil$DownloadProgressListener.d.ts'
 export class DownloadQueue$BatchConfig extends Record {
+    constructor(hashFunction: HashFunction, maxSize: number, headers: { [key: string]: string }, proxy: Proxy, listener: HttpUtil$DownloadProgressListener)
     // private hashFunction: HashFunction;
     // private headers: { [key: string]: string };
     // private listener: HttpUtil$DownloadProgressListener;

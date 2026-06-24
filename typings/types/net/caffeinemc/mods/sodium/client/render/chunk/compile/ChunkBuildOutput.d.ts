@@ -5,7 +5,8 @@ import type { BuiltSectionMeshParts } from '../../../../../../../../net/caffeine
 import type { TerrainRenderPass } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/terrain/TerrainRenderPass.d.ts'
 import type { TranslucentData } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/translucent_sorting/data/TranslucentData.d.ts'
 export class ChunkBuildOutput extends ChunkSortOutput {
-    constructor(arg0: RenderSection, arg1: number, arg2: TranslucentData, arg3: BuiltSectionInfo, arg4: Map<TerrainRenderPass, BuiltSectionMeshParts>)
+    constructor(arg0: RenderSection, arg1: number, arg2: TranslucentData, arg3: BuiltSectionInfo, arg4: Map<TerrainRenderPass, BuiltSectionMeshParts>, arg5: boolean)
+    blockingTask: boolean;
     info: BuiltSectionInfo;
     meshes: Map<TerrainRenderPass, BuiltSectionMeshParts>;
     translucentData: TranslucentData;

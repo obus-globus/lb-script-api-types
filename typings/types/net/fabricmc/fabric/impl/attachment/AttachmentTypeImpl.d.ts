@@ -8,6 +8,7 @@ import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/netwo
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class AttachmentTypeImpl<A extends unknown> extends Record implements AttachmentType<A> {
+    constructor(identifier: Identifier, initializer: () => A, persistenceCodec: Codec<A>, streamCodec: StreamCodec<RegistryFriendlyByteBuf, A>, syncPredicate: (param0: Object | null, param1: Object | null) => boolean, copyOnDeath: boolean, maxSyncSize: number)
     // private copyOnDeath: boolean;
     // private identifier: Identifier;
     // private initializer: () => A;

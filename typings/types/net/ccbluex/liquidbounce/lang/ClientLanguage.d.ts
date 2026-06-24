@@ -7,6 +7,7 @@ import type { FormattedCharSequence } from '../../../../net/minecraft/util/Forma
 import type { FormattedCharSink } from '../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class ClientLanguage extends Language {
     static DEFAULT: string;
+    static DEFAULT_INSTANCE: Language;
     static getInstance(): Language;
     static inject(paramlanguage: Language): void;
     static loadFromJson(paramstream: InputStream, paramoutput: (param0: string, param1: string) => void): void;
@@ -20,7 +21,7 @@ export class ClientLanguage extends Language {
      * Be careful when using this method that it will not cause a stack overflow.
      * Use {@link getTranslation} instead.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt#L145 | src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt:145}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt#L145 | src/main/kotlin/net/ccbluex/liquidbounce/lang/Language.kt:145}
      */
     getOrDefault(elementId: string): string;
     getOrDefault(key: string, fallback: string): string;

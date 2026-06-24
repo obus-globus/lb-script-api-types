@@ -9,6 +9,7 @@ import type { NoneFeatureConfiguration } from '../../../../../../../net/minecraf
 export class TwistingVinesConfig extends Record implements FeatureConfiguration {
     static CODEC: Codec<TwistingVinesConfig>;
     static NONE: NoneFeatureConfiguration;
+    constructor(spreadWidth: number, spreadHeight: number, maxHeight: number)
     // private maxHeight: number;
     // private spreadHeight: number;
     // private spreadWidth: number;

@@ -1,3 +1,4 @@
+import type { FabricMainWindow$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Component } from '../../../../../java/awt/Component.d.ts'
 import type { Locale } from '../../../../../java/util/Locale.d.ts'
 import type { JTree } from '../../../../../javax/swing/JTree.d.ts'
@@ -46,6 +47,7 @@ export class FabricMainWindow$CustomTreeCellRenderer extends DefaultTreeCellRend
     static isLightweightComponent(paramarg0: Component): boolean;
     static setDefaultLocale(paramarg0: Locale): void;
     private constructor(arg0: FabricMainWindow$IconSet)
+    constructor(arg0: FabricMainWindow$IconSet, arg1: FabricMainWindow$1)
     // private iconSet: FabricMainWindow$IconSet;
     getTreeCellRendererComponent(arg0: JTree, arg1: Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: number, arg6: boolean): Component;
 }

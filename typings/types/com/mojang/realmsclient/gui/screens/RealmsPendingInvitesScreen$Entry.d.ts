@@ -1,4 +1,5 @@
 import type { PendingInvite } from '../../../../../com/mojang/realmsclient/dto/PendingInvite.d.ts'
+import type { RealmsPendingInvitesScreen } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsPendingInvitesScreen.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { AbstractWidget } from '../../../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { Button$CreateNarration } from '../../../../../net/minecraft/client/gui/components/Button$CreateNarration.d.ts'
@@ -9,7 +10,7 @@ import type { GuiEventListener } from '../../../../../net/minecraft/client/gui/c
 import type { NarratableEntry } from '../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 export class RealmsPendingInvitesScreen$Entry extends ContainerObjectSelectionList$Entry<RealmsPendingInvitesScreen$Entry> {
     static CONTENT_PADDING: number;
-    constructor(null_: RealmsPendingInvitesScreen$Entry, pendingInvite: PendingInvite)
+    constructor(null_: RealmsPendingInvitesScreen, pendingInvite: PendingInvite)
     // private acceptButton: SpriteIconButton;
     // private children: AbstractWidget[];
     // private inviteDate: StringWidget;

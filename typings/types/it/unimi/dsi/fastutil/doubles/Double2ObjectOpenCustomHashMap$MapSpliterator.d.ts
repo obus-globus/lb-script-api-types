@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Double2ObjectOpenCustomHashMap$MapSpliterator<ConsumerType extends unknown, SplitType extends Double2ObjectOpenCustomHashMap$MapSpliterator<Object, any>> extends Object {
-    constructor(null_: Double2ObjectOpenCustomHashMap$MapSpliterator<Object, any>)
-    constructor(null_: Double2ObjectOpenCustomHashMap$MapSpliterator<Object, any>, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;
     // private hasSplit: boolean;
     // private max: number;

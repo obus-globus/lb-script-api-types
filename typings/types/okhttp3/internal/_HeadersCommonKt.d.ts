@@ -3,6 +3,7 @@ import type { Pair } from '../../kotlin/Pair.d.ts'
 import type { Iterator } from '../../java/util/Iterator.d.ts'
 import type { Headers$Builder } from '../../okhttp3/Headers$Builder.d.ts'
 export class _HeadersCommonKt extends Object {
+    static HEADER_LIMIT: number;
     static commonAdd(paramarg0: Headers$Builder, paramarg1: string, paramarg2: string): Headers$Builder;
     static commonAddAll(paramarg0: Headers$Builder, paramarg1: Pair<string, string>[]): Headers$Builder;
     static commonAddLenient(paramarg0: Headers$Builder, paramarg1: string, paramarg2: string): Headers$Builder;

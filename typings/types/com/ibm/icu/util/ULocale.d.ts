@@ -7,9 +7,10 @@ import type { ULocale$Type } from '../../../../com/ibm/icu/util/ULocale$Type.d.t
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
-export class ULocale extends Object implements Serializable, Comparable<ULocale> {
+export class ULocale extends Object implements Serializable, Cloneable, Comparable<ULocale> {
     static ACTUAL_LOCALE: ULocale$Type;
     static CANADA: ULocale;
     static CANADA_FRENCH: ULocale;
@@ -103,7 +104,8 @@ export class ULocale extends Object implements Serializable, Comparable<ULocale>
     // private locale: Locale;
     // private localeID: string;
     // private base(): BaseLocale;
-    clone(): Object;
+    clone(): ULocale;
+    protected clone(): Object;
     compareTo(arg0: ULocale): number;
     equals(arg0: Object | null): boolean;
     // private extensions(): LocaleExtensions;

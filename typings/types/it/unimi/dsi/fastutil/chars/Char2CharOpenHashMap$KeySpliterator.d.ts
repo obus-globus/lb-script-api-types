@@ -12,8 +12,8 @@ export class Char2CharOpenHashMap$KeySpliterator extends Char2CharOpenHashMap$Ma
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Char2CharOpenHashMap$KeySpliterator)
-    constructor(null_: Char2CharOpenHashMap$KeySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: string) => void): void;

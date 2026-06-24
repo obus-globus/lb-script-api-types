@@ -7,6 +7,8 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { OptionInstance$IntRangeBase } from '../../../net/minecraft/client/OptionInstance$IntRangeBase.d.ts'
 import type { OptionInstance$SliderableValueSet } from '../../../net/minecraft/client/OptionInstance$SliderableValueSet.d.ts'
 export class OptionInstance$IntRange extends Record implements OptionInstance$IntRangeBase {
+    constructor(minInclusive: number, maxInclusive: number)
+    constructor(minInclusive: number, maxInclusive: number, applyValueImmediately: boolean)
     // private applyValueImmediately: boolean;
     // private maxInclusive: number;
     // private minInclusive: number;

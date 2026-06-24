@@ -7,7 +7,6 @@ import type { Level } from '../../../../../../net/minecraft/world/level/Level.d.
 import type { LevelChunk } from '../../../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 import type { Path } from '../../../../../../net/minecraft/world/level/pathfinder/Path.d.ts'
 import type { PathFinder } from '../../../../../../net/minecraft/world/level/pathfinder/PathFinder.d.ts'
-import type { PathType } from '../../../../../../net/minecraft/world/level/pathfinder/PathType.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class GroundPathNavigation extends PathNavigation {
     constructor(mob: Mob, level: Level)
@@ -24,10 +23,9 @@ export class GroundPathNavigation extends PathNavigation {
     createPath(pos: BlockPos, reachRange: number, maxPathLength: number): Path;
     createPath(target: Entity, reachRange: number): Path;
     createPathFinder(maxVisitedNodes: number): PathFinder;
-    findSurfacePosition(chunk: LevelChunk, pos: BlockPos, reachRange: number): BlockPos;
+    // private findSurfacePosition(chunk: LevelChunk, pos: BlockPos, reachRange: number): BlockPos;
     // private getSurfaceY(): number;
     getTempMobPos(): Vec3;
-    hasValidPathType(pathType: PathType): boolean;
     setAvoidSun(avoidSun: boolean): void;
     setCanPathToTargetsBelowSurface(canPathToTargetsBelowSurface: boolean): void;
     setCanWalkOverFences(canWalkOverFences: boolean): void;

@@ -2,7 +2,8 @@ import type { Char2ReferenceAVLTreeMap$TreeIterator } from '../../../../../it/un
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2ReferenceAVLTreeMap$ValueIterator extends Char2ReferenceAVLTreeMap$TreeIterator implements ObjectListIterator<V> {
-    private constructor(null_: Char2ReferenceAVLTreeMap$ValueIterator)
+    private constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add<V extends unknown>(arg0: V): void;
     next<V extends unknown>(): V;
     previous<V extends unknown>(): V;

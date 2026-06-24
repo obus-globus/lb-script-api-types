@@ -3,6 +3,7 @@ import type { TruffleCompilerRuntime$LoopExplosionKind } from '../../../../com/o
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PartialEvaluationMethodInfo extends Record {
+    constructor(loopExplosion: TruffleCompilerRuntime$LoopExplosionKind, inlineForPartialEvaluation: TruffleCompilerRuntime$InlineKind, inlineForTruffleBoundary: TruffleCompilerRuntime$InlineKind, isInlineable: boolean, isSpecializationMethod: boolean)
     // private inlineForPartialEvaluation: TruffleCompilerRuntime$InlineKind;
     // private inlineForTruffleBoundary: TruffleCompilerRuntime$InlineKind;
     // private isInlineable: boolean;

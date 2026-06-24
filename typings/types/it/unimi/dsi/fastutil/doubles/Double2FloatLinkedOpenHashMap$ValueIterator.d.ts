@@ -2,7 +2,7 @@ import type { Double2FloatLinkedOpenHashMap$MapIterator } from '../../../../../i
 import type { FloatConsumer } from '../../../../../it/unimi/dsi/fastutil/floats/FloatConsumer.d.ts'
 import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatListIterator.d.ts'
 export class Double2FloatLinkedOpenHashMap$ValueIterator extends Double2FloatLinkedOpenHashMap$MapIterator<(param0: number) => void> implements FloatListIterator {
-    constructor(null_: Double2FloatLinkedOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

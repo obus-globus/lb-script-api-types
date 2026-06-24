@@ -5,6 +5,7 @@ import type { KmType } from '../../../../../../kotlin/reflect/jvm/internal/impl/
 import type { KmValueParameterExtension } from '../../../../../../kotlin/reflect/jvm/internal/impl/km/internal/extensions/KmValueParameterExtension.d.ts'
 export class KmValueParameter extends Object {
     constructor(arg0: number, arg1: string)
+    constructor(arg0: string)
     readonly annotationParameterDefaultValue: KmAnnotationArgument;
     readonly annotations: KmAnnotation[];
     // private extensions: KmValueParameterExtension[];
@@ -14,12 +15,12 @@ export class KmValueParameter extends Object {
     readonly varargElementType: KmType;
     getAnnotationParameterDefaultValue(): KmAnnotationArgument;
     getAnnotations(): KmAnnotation[];
-    getFlags$kotlin_metadata(): number;
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
     getName(): string;
     getType(): KmType;
     getVarargElementType(): KmType;
     setAnnotationParameterDefaultValue(arg0: KmAnnotationArgument): void;
-    setFlags$kotlin_metadata(arg0: number): void;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
     setType(arg0: KmType): void;
     setVarargElementType(arg0: KmType): void;
 }

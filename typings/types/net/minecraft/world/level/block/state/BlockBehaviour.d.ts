@@ -49,6 +49,7 @@ export abstract class BlockBehaviour extends Object implements ShapeUpdateHandli
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Block | null): MapCodec<Block>;
     constructor(properties: BlockBehaviour$Properties)
+    // private bounceRestitution: number;
     readonly descriptionId: string;
     // private drops: Optional<ResourceKey<LootTable>>;
     // private dynamicShape: boolean;
@@ -109,6 +110,7 @@ export abstract class BlockBehaviour extends Object implements ShapeUpdateHandli
     onExplosionHit(state: BlockState, level: ServerLevel, pos: BlockPos, explosion: Explosion, onHit: (param0: ItemStack, param1: BlockPos) => void): void;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
     onProjectileHit(level: Level, state: BlockState, blockHit: BlockHitResult, projectile: Projectile): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     propagatesSkylightDown(state: BlockState): boolean;
     properties(): BlockBehaviour$Properties;
     randomTick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;

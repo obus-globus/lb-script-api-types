@@ -5,6 +5,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Consumable1_21_2$ConsumeEffect<T extends unknown> extends Record {
     static ARRAY_TYPE: Type<Object>;
     static TYPE: Type<Consumable1_21_2$ConsumeEffect<Object>>;
+    constructor(id: number, type: Type<T>, value: T)
     // private id: number;
     // private type: Type<T>;
     // private value: T;

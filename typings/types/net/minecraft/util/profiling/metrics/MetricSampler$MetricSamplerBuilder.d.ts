@@ -5,6 +5,7 @@ import type { ToDoubleFunction } from '../../../../../java/util/function/ToDoubl
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MetricCategory } from '../../../../../net/minecraft/util/profiling/metrics/MetricCategory.d.ts'
 import type { MetricSampler } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler.d.ts'
+import type { MetricSampler$SamplingPhase } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler$SamplingPhase.d.ts'
 import type { MetricSampler$ThresholdTest } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler$ThresholdTest.d.ts'
 export class MetricSampler$MetricSamplerBuilder<T extends unknown> extends Object {
     constructor(name: string, category: MetricCategory, sampler: (param0: T) => number, context: T)
@@ -13,8 +14,10 @@ export class MetricSampler$MetricSamplerBuilder<T extends unknown> extends Objec
     // private context: T;
     // private name: string;
     // private sampler: () => number;
+    // private samplingPhase: MetricSampler$SamplingPhase;
     // private thresholdTest: MetricSampler$ThresholdTest;
     build(): MetricSampler;
     withBeforeTick(beforeTick: (param0: T) => void): MetricSampler$MetricSamplerBuilder<T>;
+    withSamplingPhase(samplingPhase: MetricSampler$SamplingPhase): MetricSampler$MetricSamplerBuilder<T>;
     withThresholdAlert(thresholdTest: MetricSampler$ThresholdTest): MetricSampler$MetricSamplerBuilder<T>;
 }

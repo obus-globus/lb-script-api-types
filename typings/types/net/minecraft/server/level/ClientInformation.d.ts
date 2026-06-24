@@ -7,6 +7,8 @@ import type { ChatVisiblity } from '../../../../net/minecraft/world/entity/playe
 export class ClientInformation extends Record {
     static MAX_LANGUAGE_LENGTH: number;
     static createDefault(): ClientInformation;
+    constructor(language: string, viewDistance: number, chatVisibility: ChatVisiblity, chatColors: boolean, modelCustomisation: number, mainHand: HumanoidArm, textFilteringEnabled: boolean, allowsListing: boolean, particleStatus: ParticleStatus)
+    constructor(input: FriendlyByteBuf)
     // private allowsListing: boolean;
     // private chatColors: boolean;
     // private chatVisibility: ChatVisiblity;

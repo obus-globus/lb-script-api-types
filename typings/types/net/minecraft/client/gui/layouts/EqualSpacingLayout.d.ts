@@ -16,5 +16,6 @@ export class EqualSpacingLayout extends AbstractLayout {
     arrangeElements(): void;
     defaultChildLayoutSetting(): LayoutSettings;
     newChildLayoutSettings(): LayoutSettings;
+    removeChildren(): void;
     visitChildren(layoutElementVisitor: (param0: LayoutElement) => void): void;
 }

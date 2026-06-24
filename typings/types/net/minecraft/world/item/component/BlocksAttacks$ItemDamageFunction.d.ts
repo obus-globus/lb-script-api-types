@@ -7,6 +7,7 @@ export class BlocksAttacks$ItemDamageFunction extends Record {
     static CODEC: Codec<BlocksAttacks$ItemDamageFunction>;
     static DEFAULT: BlocksAttacks$ItemDamageFunction;
     static STREAM_CODEC: StreamCodec<ByteBuf, BlocksAttacks$ItemDamageFunction>;
+    constructor(threshold: number, base: number, factor: number)
     // private base: number;
     // private factor: number;
     // private threshold: number;

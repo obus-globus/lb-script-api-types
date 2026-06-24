@@ -7,7 +7,6 @@ export class WindowRenderState extends Object implements FabricRenderState {
     guiScale: number;
     height: number;
     isMinimized: boolean;
-    isResized: boolean;
     // private renderStateData: Map<Object | null, Object | null>;
     width: number;
     clearExtraData(): void;

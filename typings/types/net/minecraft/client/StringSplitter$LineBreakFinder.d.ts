@@ -1,8 +1,9 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { StringSplitter } from '../../../net/minecraft/client/StringSplitter.d.ts'
 import type { Style } from '../../../net/minecraft/network/chat/Style.d.ts'
 import type { FormattedCharSink } from '../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class StringSplitter$LineBreakFinder extends Object implements FormattedCharSink {
-    constructor(null_: StringSplitter$LineBreakFinder, maxWidth: number)
+    constructor(null_: StringSplitter, maxWidth: number)
     // private hadNonZeroWidthChar: boolean;
     // private lastSpace: number;
     // private lastSpaceStyle: Style;

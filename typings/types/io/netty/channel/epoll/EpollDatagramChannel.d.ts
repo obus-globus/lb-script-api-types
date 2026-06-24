@@ -39,6 +39,8 @@ export class EpollDatagramChannel extends AbstractEpollChannel implements Datagr
     doClose(): void;
     doConnect(arg0: SocketAddress, arg1: SocketAddress): boolean;
     doDisconnect(): void;
+    doRegister(): void;
+    doRegister(arg0: ChannelPromise): void;
     doWrite(arg0: ChannelOutboundBuffer): void;
     // private doWriteMessage(arg0: Object): boolean;
     filterOutboundMessage(arg0: Object): Object;

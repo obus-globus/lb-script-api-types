@@ -84,7 +84,7 @@ import type { ServerboundSetJigsawBlockPacket } from '../../../../net/minecraft/
 import type { ServerboundSetStructureBlockPacket } from '../../../../net/minecraft/network/protocol/game/ServerboundSetStructureBlockPacket.d.ts'
 import type { ServerboundSetTestBlockPacket } from '../../../../net/minecraft/network/protocol/game/ServerboundSetTestBlockPacket.d.ts'
 import type { ServerboundSignUpdatePacket } from '../../../../net/minecraft/network/protocol/game/ServerboundSignUpdatePacket.d.ts'
-import type { ServerboundSpectateEntityPacket } from '../../../../net/minecraft/network/protocol/game/ServerboundSpectateEntityPacket.d.ts'
+import type { ServerboundSpectatorActionPacket } from '../../../../net/minecraft/network/protocol/game/ServerboundSpectatorActionPacket.d.ts'
 import type { ServerboundSwingPacket } from '../../../../net/minecraft/network/protocol/game/ServerboundSwingPacket.d.ts'
 import type { ServerboundTeleportToEntityPacket } from '../../../../net/minecraft/network/protocol/game/ServerboundTeleportToEntityPacket.d.ts'
 import type { ServerboundTestInstanceBlockActionPacket } from '../../../../net/minecraft/network/protocol/game/ServerboundTestInstanceBlockActionPacket.d.ts'
@@ -131,6 +131,7 @@ export class ServerGamePacketListenerImpl extends ServerCommonPacketListenerImpl
     // private clientIsFloating: boolean;
     // private clientLoadedTimeoutTimer: number;
     // private clientVehicleIsFloating: boolean;
+    // private commandSpamThrottler: TickThrottler;
     // private dropSpamThrottler: TickThrottler;
     // private firstGoodX: number;
     // private firstGoodY: number;
@@ -161,7 +162,9 @@ export class ServerGamePacketListenerImpl extends ServerCommonPacketListenerImpl
     // private broadcastGameRuleChangeToOperators<T extends unknown>(rule: GameRule<T>, value: T): void;
     // private collectSignedArguments<S extends unknown>(packet: ServerboundChatCommandSignedPacket, command: SignableCommand<S>, lastSeenMessages: LastSeenMessages): { [key: string]: PlayerChatMessage };
     // private collectUnsignedArguments<S extends unknown>(parsedArguments: SignableCommand$Argument<S>[]): { [key: string]: PlayerChatMessage };
-    // private detectRateSpam(): void;
+    // private detectChatRateSpam(): void;
+    // private detectCommandRateSpam(): void;
+    // private detectRateSpam(throttler: TickThrottler): void;
     // private filterTextPacket<R extends unknown, T extends unknown>(message: T, action: (param0: TextFilter, param1: T) => CompletableFuture<R>): CompletableFuture<R>;
     // private filterTextPacket(message: string): CompletableFuture<FilteredText>;
     // private filterTextPacket(message: string[]): CompletableFuture<FilteredText[]>;
@@ -229,7 +232,7 @@ export class ServerGamePacketListenerImpl extends ServerCommonPacketListenerImpl
     handleSetTestBlock(packet: ServerboundSetTestBlockPacket): void;
     handleSignUpdate(packet: ServerboundSignUpdatePacket): void;
     handleSignedChatCommand(packet: ServerboundChatCommandSignedPacket): void;
-    handleSpectateEntity(packet: ServerboundSpectateEntityPacket): void;
+    handleSpectatorAction(packet: ServerboundSpectatorActionPacket): void;
     handleTeleportToEntityPacket(packet: ServerboundTeleportToEntityPacket): void;
     handleTestInstanceBlockAction(packet: ServerboundTestInstanceBlockActionPacket): void;
     handleUseItem(packet: ServerboundUseItemPacket): void;

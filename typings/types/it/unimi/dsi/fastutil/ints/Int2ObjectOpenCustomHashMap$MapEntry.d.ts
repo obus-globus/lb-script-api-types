@@ -11,8 +11,8 @@ export class Int2ObjectOpenCustomHashMap$MapEntry extends Object implements Int2
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: Object | null): IntObjectPair<Object>;
-    constructor(null_: Int2ObjectOpenCustomHashMap$MapEntry)
-    constructor(null_: Int2ObjectOpenCustomHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;

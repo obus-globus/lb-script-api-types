@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TagType } from '../../../../../net/minecraft/nbt/TagType.d.ts'
 import type { ProblemReporter$Problem } from '../../../../../net/minecraft/util/ProblemReporter$Problem.d.ts'
 export class TagValueInput$UnexpectedListElementTypeProblem extends Record implements ProblemReporter$Problem {
+    constructor(name: string, index: number, expected: TagType<any>, actual: TagType<any>)
     // private actual: TagType<any>;
     // private expected: TagType<any>;
     // private index: number;

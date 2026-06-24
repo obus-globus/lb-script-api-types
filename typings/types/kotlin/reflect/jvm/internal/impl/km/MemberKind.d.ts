@@ -13,6 +13,6 @@ export class MemberKind extends Enum<MemberKind> {
     static values(): (Object | null)[];
     private constructor(arg2: number)
     // private flag: FlagImpl;
-    getFlag$kotlin_metadata(): FlagImpl;
+    getFlag$org_jetbrains_kotlin_kotlin_metadata(): FlagImpl;
     name(): "DECLARATION" | "FAKE_OVERRIDE" | "DELEGATION" | "SYNTHESIZED";
 }

@@ -19,6 +19,7 @@ export class CommonTransformer extends Object {
     static applyIntelHd4000Workaround(paramarg0: Root): void;
     static patchMultiTexCoord3(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: Parameters): void;
     static replaceGlMultiTexCoordBounded(paramarg0: ASTParser, paramarg1: Root, paramarg2: number, paramarg3: number): void;
+    static replaceMidBlock(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: Parameters): void;
     static transform(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: Parameters, paramarg4: boolean): void;
     static upgradeStorageQualifiers(paramarg0: ASTParser, paramarg1: TranslationUnit, paramarg2: Root, paramarg3: Parameters): void;
     constructor()

@@ -250,6 +250,7 @@ export class SourceInterpreter extends Interpreter<SourceValue> implements Opcod
     static V24: number;
     static V25: number;
     static V26: number;
+    static V27: number;
     static V9: number;
     static V_PREVIEW: number;
     constructor()

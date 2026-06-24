@@ -91,6 +91,7 @@ export class OkHttpClient extends Object implements Call$Factory, WebSocket$Fact
     socketFactory(): SocketFactory;
     sslSocketFactory(): SSLSocketFactory;
     // private sslSocketFactoryOrNull: SSLSocketFactory | null;
+    /*not mapped: */ getSslSocketFactoryOrNull$okhttp(): SSLSocketFactory | null;
     // private taskRunner: TaskRunner;
     /*not mapped: */ getTaskRunner$okhttp(): TaskRunner;
     // private webSocketCloseTimeout: number;

@@ -8,6 +8,7 @@ export class RecipeRewriter1_21_2$FurnaceRecipe extends Record implements Recipe
     static SLOT_DISPLAY_COMPOSITE: number;
     static SLOT_DISPLAY_EMPTY: number;
     static SLOT_DISPLAY_ITEM: number;
+    constructor(index: number, identifier: string, group: number, category: number, ingredient: Item[], result: Item, duration: number, experience: number)
     // private category: number;
     // private duration: number;
     // private experience: number;

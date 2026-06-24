@@ -6,6 +6,7 @@ import type { EntityDataSerializer } from '../../../../net/minecraft/network/syn
 export class SynchedEntityData$DataValue<T extends unknown> extends Record {
     static create(paramaccessor: EntityDataAccessor<Object>, paramvalue: Object | null): SynchedEntityData$DataValue<Object>;
     static read(paraminput: RegistryFriendlyByteBuf, paramid: number): SynchedEntityData$DataValue<Object>;
+    constructor(id: number, serializer: EntityDataSerializer<T>, value: T)
     // private id: number;
     // private serializer: EntityDataSerializer<T>;
     // private value: T;

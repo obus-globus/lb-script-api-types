@@ -10,6 +10,7 @@ export interface PalettedContainerRO<T extends unknown> extends Object {
     bitsPerEntry(): number;
     copy(): PalettedContainer<T>;
     count(output: (param0: T, param1: number) => void): void;
+    forEachInPalette(consumer: (param0: T) => void): void;
     get(x: number, y: number, z: number): T;
     getAll(consumer: (param0: T) => void): void;
     getSerializedSize(): number;

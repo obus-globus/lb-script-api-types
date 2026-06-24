@@ -17,7 +17,8 @@ import type { Format } from '../../../../java/text/Format.d.ts'
 import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class MessageFormat extends UFormat {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class MessageFormat extends UFormat implements Cloneable {
     static autoQuoteApostrophe(paramarg0: string): string;
     static format(paramarg0: string, paramarg1: (Object | null)[]): string;
     static format(paramarg0: string, paramarg1: { [key: string]: Object }): string;
@@ -36,7 +37,8 @@ export class MessageFormat extends UFormat {
     applyPattern(arg0: string, arg1: MessagePattern$ApostropheMode): void;
     // private argNameMatches(arg0: number, arg1: string, arg2: number): boolean;
     // private cacheExplicitFormats(): void;
-    clone(): Object;
+    clone(): MessageFormat;
+    protected clone(): Object;
     // private createAppropriateFormat(arg0: string, arg1: string): Format;
     dateTimeFormatForPatternOrSkeleton(arg0: string): Format;
     equals(arg0: Object | null): boolean;

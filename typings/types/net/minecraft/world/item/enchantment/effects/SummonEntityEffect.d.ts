@@ -15,6 +15,7 @@ export class SummonEntityEffect extends Record implements EnchantmentEntityEffec
     static CODEC: Codec<EnchantmentLocationBasedEffect>;
     static CODEC: MapCodec<SummonEntityEffect>;
     static bootstrap(paramregistry: MapCodec<EnchantmentEntityEffect>[]): MapCodec<EnchantmentEntityEffect>;
+    constructor(entityTypes: Holder<EntityType<any>>[], joinTeam: boolean)
     // private entityTypes: Holder<EntityType<any>>[];
     // private joinTeam: boolean;
     apply(serverLevel: ServerLevel, enchantmentLevel: number, item: EnchantedItemInUse, entity: Entity, position: Vec3): void;

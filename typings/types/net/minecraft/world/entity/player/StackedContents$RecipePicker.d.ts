@@ -1,9 +1,10 @@
 import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { StackedContents } from '../../../../../net/minecraft/world/entity/player/StackedContents.d.ts'
 import type { StackedContents$IngredientInfo } from '../../../../../net/minecraft/world/entity/player/StackedContents$IngredientInfo.d.ts'
 import type { StackedContents$Output } from '../../../../../net/minecraft/world/entity/player/StackedContents$Output.d.ts'
 export class StackedContents$RecipePicker extends Object {
-    constructor(null_: StackedContents$RecipePicker)
+    constructor(null_: StackedContents<T>, ingredients: (param0: T) => boolean[])
     // private data: BitSet;
     // private ingredientCount: number;
     // private ingredients: (param0: T) => boolean[];

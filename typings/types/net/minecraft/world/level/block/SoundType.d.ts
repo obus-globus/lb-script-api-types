@@ -24,6 +24,7 @@ export class SoundType extends Object {
     static CHERRY_WOOD: SoundType;
     static CHERRY_WOOD_HANGING_SIGN: SoundType;
     static CHISELED_BOOKSHELF: SoundType;
+    static CINNABAR: SoundType;
     static COBWEB: SoundType;
     static COPPER: SoundType;
     static COPPER_BULB: SoundType;
@@ -84,6 +85,7 @@ export class SoundType extends Object {
     static POINTED_DRIPSTONE: SoundType;
     static POLISHED_DEEPSLATE: SoundType;
     static POLISHED_TUFF: SoundType;
+    static POTENT_SULFUR: SoundType;
     static POWDER_SNOW: SoundType;
     static RESIN: SoundType;
     static RESIN_BRICKS: SoundType;
@@ -109,6 +111,8 @@ export class SoundType extends Object {
     static SPORE_BLOSSOM: SoundType;
     static STEM: SoundType;
     static STONE: SoundType;
+    static SULFUR: SoundType;
+    static SULFUR_SPIKE: SoundType;
     static SUSPICIOUS_GRAVEL: SoundType;
     static SUSPICIOUS_SAND: SoundType;
     static SWEET_BERRY_BUSH: SoundType;

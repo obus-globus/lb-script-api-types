@@ -4,8 +4,8 @@ import type { Short2IntLinkedOpenHashMap$MapIterator } from '../../../../../it/u
 import type { Short2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2IntMap$Entry.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Short2IntLinkedOpenHashMap$FastEntryIterator extends Short2IntLinkedOpenHashMap$MapIterator<(param0: Short2IntMap$Entry) => void> implements ObjectListIterator<Short2IntMap$Entry> {
-    constructor(null_: Short2IntLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Short2IntLinkedOpenHashMap$FastEntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Short2IntLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Short2IntMap$Entry) => void, arg1: number): void;
     add(arg0: Short2IntMap$Entry): void;

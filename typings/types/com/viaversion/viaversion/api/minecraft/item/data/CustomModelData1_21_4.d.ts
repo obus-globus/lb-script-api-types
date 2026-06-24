@@ -5,6 +5,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class CustomModelData1_21_4 extends Record implements Copyable {
     static TYPE: Type<CustomModelData1_21_4>;
     static copy(paramarg0: Object | null): Object | null;
+    constructor(floats: number[], booleans: (Object | null)[], strings: string[], colors: number[])
     // private booleans: (Object | null)[];
     // private colors: number[];
     // private floats: number[];

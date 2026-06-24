@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Dim2i extends Record {
+    constructor(x: number, y: number, width: number, height: number)
     // private height: number;
     // private width: number;
     // private x: number;

@@ -6,6 +6,7 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 export class Recipe$CommonInfo extends Record {
     static MAP_CODEC: MapCodec<Recipe$CommonInfo>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe$CommonInfo>;
+    constructor(showNotification: boolean)
     // private showNotification: boolean;
     equals(o: Object | null): boolean;
     hashCode(): number;

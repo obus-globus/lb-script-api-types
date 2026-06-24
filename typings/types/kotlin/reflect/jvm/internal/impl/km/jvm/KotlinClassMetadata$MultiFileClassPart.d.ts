@@ -9,6 +9,7 @@ export class KotlinClassMetadata$MultiFileClassPart extends KotlinClassMetadata 
     constructor(arg0: KmPackage, arg1: string, arg2: JvmMetadataVersion, arg3: number)
     // private facadeClassName: string;
     // private flags: number;
-    // private kmPackage: KmPackage;
+    readonly kmPackage: KmPackage;
     // private version: JvmMetadataVersion;
+    getKmPackage(): KmPackage;
 }

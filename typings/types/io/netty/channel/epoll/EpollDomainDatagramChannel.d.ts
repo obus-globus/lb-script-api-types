@@ -1,5 +1,6 @@
 import type { ChannelMetadata } from '../../../../io/netty/channel/ChannelMetadata.d.ts'
 import type { ChannelOutboundBuffer } from '../../../../io/netty/channel/ChannelOutboundBuffer.d.ts'
+import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise.d.ts'
 import type { AbstractEpollChannel } from '../../../../io/netty/channel/epoll/AbstractEpollChannel.d.ts'
 import type { AbstractEpollChannel$AbstractEpollUnsafe } from '../../../../io/netty/channel/epoll/AbstractEpollChannel$AbstractEpollUnsafe.d.ts'
 import type { EpollDomainDatagramChannelConfig } from '../../../../io/netty/channel/epoll/EpollDomainDatagramChannelConfig.d.ts'
@@ -22,6 +23,8 @@ export class EpollDomainDatagramChannel extends AbstractEpollChannel implements 
     doClose(): void;
     doConnect(arg0: SocketAddress, arg1: SocketAddress): boolean;
     doDisconnect(): void;
+    doRegister(): void;
+    doRegister(arg0: ChannelPromise): void;
     doWrite(arg0: ChannelOutboundBuffer): void;
     // private doWriteMessage(arg0: Object): boolean;
     filterOutboundMessage(arg0: Object): Object;

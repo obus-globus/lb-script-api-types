@@ -35,6 +35,7 @@ export class PalettedContainer<T extends unknown> extends Object implements Pale
     copy(): PalettedContainer<T>;
     count(output: (param0: T, param1: number) => void): void;
     // private createOrReuseData(oldData: PalettedContainer$Data<T>, targetBits: number): PalettedContainer$Data<T>;
+    forEachInPalette(consumer: (param0: T) => void): void;
     get(index: number): T;
     get(x: number, y: number, z: number): T;
     getAll(consumer: (param0: T) => void): void;

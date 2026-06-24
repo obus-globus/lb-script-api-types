@@ -3,6 +3,8 @@ import type { QuadView } from '../../../../net/irisshaders/iris/vertices/views/Q
 export class BufferBuilderPolygonView extends Object implements QuadView {
     constructor()
     // private pointer: number;
+    // private positionOffset: number;
+    // private uvOffset: number;
     // private writeOffsets: number[];
     setup(arg0: number, arg1: number[], arg2: number, arg3: number): void;
     u(arg0: number): number;

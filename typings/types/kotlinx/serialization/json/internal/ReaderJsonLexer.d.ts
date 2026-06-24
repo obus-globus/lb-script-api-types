@@ -1,8 +1,9 @@
+import type { JsonConfiguration } from '../../../../kotlinx/serialization/json/JsonConfiguration.d.ts'
 import type { AbstractJsonLexer } from '../../../../kotlinx/serialization/json/internal/AbstractJsonLexer.d.ts'
 import type { ArrayAsSequence } from '../../../../kotlinx/serialization/json/internal/ArrayAsSequence.d.ts'
 import type { InternalJsonReader } from '../../../../kotlinx/serialization/json/internal/InternalJsonReader.d.ts'
 export class ReaderJsonLexer extends AbstractJsonLexer {
-    constructor(reader: InternalJsonReader, buffer: string[])
+    constructor(reader: InternalJsonReader, buffer: string[], configuration: JsonConfiguration)
     readonly buffer: string[];
     readonly reader: InternalJsonReader;
     readonly source: ArrayAsSequence;

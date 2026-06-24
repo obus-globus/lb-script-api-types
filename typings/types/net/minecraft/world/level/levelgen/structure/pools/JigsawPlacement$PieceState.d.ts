@@ -4,6 +4,7 @@ import type { PoolElementStructurePiece } from '../../../../../../../net/minecra
 import type { VoxelShape } from '../../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 import type { MutableObject } from '../../../../../../../org/apache/commons/lang3/mutable/MutableObject.d.ts'
 export class JigsawPlacement$PieceState extends Record {
+    private constructor(piece: PoolElementStructurePiece, free: MutableObject<VoxelShape>, depth: number)
     // private depth: number;
     // private free: MutableObject<VoxelShape>;
     // private piece: PoolElementStructurePiece;

@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { FunctionDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/FunctionDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -27,6 +28,7 @@ import type { KotlinType } from '../../../../../../../../../kotlin/reflect/jvm/i
 export abstract class LazyJavaScope extends MemberScopeImpl {
     static Companion: MemberScope$Companion;
     constructor(arg0: LazyJavaResolverContext, arg1: LazyJavaScope)
+    constructor(arg0: LazyJavaResolverContext, arg1: LazyJavaScope, arg2: number, arg3: DefaultConstructorMarker)
     // private allDescriptors: NotNullLazyValue<DeclarationDescriptor[]>;
     // private c: LazyJavaResolverContext;
     // private classNamesLazy$delegate: NotNullLazyValue<Object>;

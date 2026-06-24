@@ -3,11 +3,13 @@ import type { ModelPart } from '../../../../../../net/minecraft/client/model/geo
 import type { CubeDeformation } from '../../../../../../net/minecraft/client/model/geom/builders/CubeDeformation.d.ts'
 import type { LayerDefinition } from '../../../../../../net/minecraft/client/model/geom/builders/LayerDefinition.d.ts'
 import type { MeshDefinition } from '../../../../../../net/minecraft/client/model/geom/builders/MeshDefinition.d.ts'
+import type { PartDefinition } from '../../../../../../net/minecraft/client/model/geom/builders/PartDefinition.d.ts'
 import type { SheepRenderState } from '../../../../../../net/minecraft/client/renderer/entity/state/SheepRenderState.d.ts'
 export class SheepFurModel extends QuadrupedModel<SheepRenderState> {
     static MODEL_Y_OFFSET: number;
     static createBodyMesh(paramlegSize: number, parammirrorLeftLeg: boolean, parammirrorRightLeg: boolean, paramg: CubeDeformation): MeshDefinition;
     static createFurLayer(): LayerDefinition;
+    static createLegs(paramroot: PartDefinition, parammirrorLeftLeg: boolean, parammirrorRightLeg: boolean, paramlegSize: number, paramg: CubeDeformation): void;
     constructor(root: ModelPart)
     setupAnim(state: SheepRenderState): void;
 }

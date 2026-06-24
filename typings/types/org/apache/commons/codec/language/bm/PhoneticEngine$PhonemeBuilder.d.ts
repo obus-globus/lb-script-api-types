@@ -1,3 +1,4 @@
+import type { PhoneticEngine$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts'
 import type { Languages$LanguageSet } from '../../../../../../org/apache/commons/codec/language/bm/Languages$LanguageSet.d.ts'
@@ -6,6 +7,7 @@ import type { Rule$PhonemeExpr } from '../../../../../../org/apache/commons/code
 export class PhoneticEngine$PhonemeBuilder extends Object {
     static empty(paramarg0: Languages$LanguageSet): PhoneticEngine$PhonemeBuilder;
     private constructor(arg0: Rule$Phoneme[])
+    constructor(arg0: (Object | null)[], arg1: PhoneticEngine$1)
     private constructor(arg0: Rule$Phoneme)
     readonly phonemes: Rule$Phoneme[];
     append(arg0: CharSequence): void;

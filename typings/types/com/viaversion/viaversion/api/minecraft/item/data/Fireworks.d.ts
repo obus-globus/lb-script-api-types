@@ -6,6 +6,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Fireworks extends Record implements Copyable {
     static TYPE: Type<Fireworks>;
     static copy(paramarg0: Object | null): Object | null;
+    constructor(flightDuration: number, explosions: FireworkExplosion[])
     // private explosions: FireworkExplosion[];
     // private flightDuration: number;
     copy(): Fireworks;

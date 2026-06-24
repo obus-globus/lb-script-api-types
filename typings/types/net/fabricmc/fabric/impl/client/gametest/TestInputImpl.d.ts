@@ -5,6 +5,7 @@ import type { TestInput } from '../../../../../../net/fabricmc/fabric/api/client
 import type { ClientGameTestContext } from '../../../../../../net/fabricmc/fabric/api/client/gametest/v1/context/ClientGameTestContext.d.ts'
 import type { KeyMapping } from '../../../../../../net/minecraft/client/KeyMapping.d.ts'
 import type { Options } from '../../../../../../net/minecraft/client/Options.d.ts'
+import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 export class TestInputImpl extends Object implements TestInput {
     static isKeyDown(paramarg0: number): boolean;
     constructor(arg0: ClientGameTestContext)
@@ -23,6 +24,8 @@ export class TestInputImpl extends Object implements TestInput {
     holdMouse(arg0: number): void;
     holdMouseFor(arg0: number, arg1: number): void;
     holdShift(): void;
+    lookAt(arg0: number, arg1: number): void;
+    lookAt(arg0: BlockPos): void;
     moveCursor(arg0: number, arg1: number): void;
     pressKey(arg0: InputConstants$Key): void;
     pressKey(arg0: (param0: Options) => KeyMapping): void;

@@ -4,7 +4,7 @@ import type { Short2LongOpenHashMap$MapIterator } from '../../../../../it/unimi/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { LongConsumer as LongConsumer_2 } from '../../../../../java/util/function/LongConsumer.d.ts'
 export class Short2LongOpenHashMap$ValueIterator extends Short2LongOpenHashMap$MapIterator<(param0: number) => void> implements LongIterator {
-    constructor(null_: Short2LongOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

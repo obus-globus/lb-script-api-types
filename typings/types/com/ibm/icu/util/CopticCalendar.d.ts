@@ -98,9 +98,11 @@ export class CopticCalendar extends CECalendar {
     constructor(arg0: Locale)
     constructor(arg0: number, arg1: number, arg2: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number)
+    extendedYearToEra(arg0: number): number;
+    extendedYearToYear(arg0: number): number;
     getJDEpochOffset(): number;
+    getRelatedYearDifference(): number;
     getType(): string;
-    handleComputeFields(arg0: number): void;
     handleGetExtendedYear(): number;
     isEra0CountingBackward(): boolean;
 }

@@ -9,6 +9,7 @@ import type { SodiumChunkSection } from '../../../../../net/caffeinemc/mods/sodi
 import type { ChunkSectionLayer } from '../../../../../net/minecraft/client/renderer/chunk/ChunkSectionLayer.d.ts'
 import type { ChunkSectionLayerGroup } from '../../../../../net/minecraft/client/renderer/chunk/ChunkSectionLayerGroup.d.ts'
 export class ChunkSectionsToRender extends Record implements SodiumChunkSection {
+    constructor(textureView: GpuTextureView, drawGroupsPerLayer: { [key in ChunkSectionLayer]: { [key: string]: any } }, maxIndicesRequired: number, chunkSectionInfos: GpuBufferSlice[])
     // private chunkSectionInfos: GpuBufferSlice[];
     // private drawGroupsPerLayer: { [key in ChunkSectionLayer]: { [key: string]: any } };
     // private matrices: ChunkRenderMatrices;

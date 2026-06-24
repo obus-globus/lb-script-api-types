@@ -12,9 +12,9 @@ export class RegistryAccess$ImmutableRegistryAccess extends Object implements Bi
     static EMPTY: RegistryAccess$Frozen;
     static LOGGER: Logger;
     static fromRegistryOfRegistries(paramregistries: Object[][]): RegistryAccess$Frozen;
+    constructor(entries: Stream<RegistryAccess$RegistryEntry<Object>>)
     constructor(registries: (Object | null)[][])
     constructor(registries: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>)
-    constructor(entries: Stream<RegistryAccess$RegistryEntry<Object>>)
     // private dimensionsModified: boolean;
     // private modified: boolean;
     // private registries: Map<ResourceKey<(Object | null)[]>, (Object | null)[]>;

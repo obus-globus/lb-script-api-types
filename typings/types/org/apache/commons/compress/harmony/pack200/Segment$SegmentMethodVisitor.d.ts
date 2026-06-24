@@ -1,10 +1,11 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Segment } from '../../../../../../org/apache/commons/compress/harmony/pack200/Segment.d.ts'
 import type { AnnotationVisitor } from '../../../../../../org/objectweb/asm/AnnotationVisitor.d.ts'
 import type { Attribute } from '../../../../../../org/objectweb/asm/Attribute.d.ts'
 import type { Label } from '../../../../../../org/objectweb/asm/Label.d.ts'
 import type { MethodVisitor } from '../../../../../../org/objectweb/asm/MethodVisitor.d.ts'
 export class Segment$SegmentMethodVisitor extends MethodVisitor {
-    constructor(null_: Segment$SegmentMethodVisitor)
+    constructor(null_: Segment)
     visitAnnotation(arg0: string, arg1: boolean): AnnotationVisitor;
     visitAnnotationDefault(): AnnotationVisitor;
     visitAttribute(arg0: Attribute): void;

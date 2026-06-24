@@ -2,10 +2,11 @@ import type { TruffleContext } from '../../../../../../com/oracle/truffle/api/Tr
 import type { VirtualFrame } from '../../../../../../com/oracle/truffle/api/frame/VirtualFrame.d.ts'
 import type { EventContext } from '../../../../../../com/oracle/truffle/api/instrumentation/EventContext.d.ts'
 import type { ExecutionEventListener } from '../../../../../../com/oracle/truffle/api/instrumentation/ExecutionEventListener.d.ts'
+import type { InsightPerSource } from '../../../../../../com/oracle/truffle/tools/agentscript/impl/InsightPerSource.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 export class InsightPerSource$InitializeLater extends Object implements ExecutionEventListener {
-    constructor(null_: InsightPerSource$InitializeLater, context: TruffleContext)
+    constructor(null_: InsightPerSource, context: TruffleContext)
     // private context: TruffleContext;
     onEnter(ctx: EventContext, frame: VirtualFrame): void;
     onInputValue(context: EventContext, frame: VirtualFrame, inputContext: EventContext, inputIndex: number, inputValue: Object): void;

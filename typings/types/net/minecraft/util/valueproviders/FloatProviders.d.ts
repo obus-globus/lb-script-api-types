@@ -5,6 +5,7 @@ import type { FloatProvider } from '../../../../net/minecraft/util/valueprovider
 export class FloatProviders extends Object {
     static CODEC: Codec<FloatProvider>;
     static bootstrap(paramregistry: MapCodec<FloatProvider>[]): MapCodec<FloatProvider>;
+    static codec(paramminValue: number): Codec<FloatProvider>;
     static codec(paramminValue: number, parammaxValue: number): Codec<FloatProvider>;
     constructor()
 }

@@ -1,0 +1,114 @@
+import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { NativeResource } from '../../../../org/lwjgl/system/NativeResource.d.ts'
+import type { Struct } from '../../../../org/lwjgl/system/Struct.d.ts'
+import type { Struct$StructValidation } from '../../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+export class SpvcMslConstexprSampler extends Struct<SpvcMslConstexprSampler> implements NativeResource {
+    static ALIGNOF: number;
+    static ANISOTROPY_ENABLE: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static BORDER_COLOR: number;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static COMPARE_ENABLE: number;
+    static COMPARE_FUNC: number;
+    static COORD: number;
+    static LOD_CLAMP_ENABLE: number;
+    static LOD_CLAMP_MAX: number;
+    static LOD_CLAMP_MIN: number;
+    static MAG_FILTER: number;
+    static MAX_ANISOTROPY: number;
+    static MIN_FILTER: number;
+    static MIP_FILTER: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static R_ADDRESS: number;
+    static SIZEOF: number;
+    static S_ADDRESS: number;
+    static T_ADDRESS: number;
+    static calloc(): SpvcMslConstexprSampler;
+    static calloc(paramarg0: MemoryStack): SpvcMslConstexprSampler;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): SpvcMslConstexprSampler;
+    static create(paramarg0: number): SpvcMslConstexprSampler;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): SpvcMslConstexprSampler;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): SpvcMslConstexprSampler;
+    static malloc(paramarg0: MemoryStack): SpvcMslConstexprSampler;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static nanisotropy_enable(paramarg0: number): boolean;
+    static nanisotropy_enable(paramarg0: number, paramarg1: boolean): void;
+    static nborder_color(paramarg0: number): number;
+    static nborder_color(paramarg0: number, paramarg1: number): void;
+    static ncompare_enable(paramarg0: number): boolean;
+    static ncompare_enable(paramarg0: number, paramarg1: boolean): void;
+    static ncompare_func(paramarg0: number): number;
+    static ncompare_func(paramarg0: number, paramarg1: number): void;
+    static ncoord(paramarg0: number): number;
+    static ncoord(paramarg0: number, paramarg1: number): void;
+    static nlod_clamp_enable(paramarg0: number): boolean;
+    static nlod_clamp_enable(paramarg0: number, paramarg1: boolean): void;
+    static nlod_clamp_max(paramarg0: number): number;
+    static nlod_clamp_max(paramarg0: number, paramarg1: number): void;
+    static nlod_clamp_min(paramarg0: number): number;
+    static nlod_clamp_min(paramarg0: number, paramarg1: number): void;
+    static nmag_filter(paramarg0: number): number;
+    static nmag_filter(paramarg0: number, paramarg1: number): void;
+    static nmax_anisotropy(paramarg0: number): number;
+    static nmax_anisotropy(paramarg0: number, paramarg1: number): void;
+    static nmin_filter(paramarg0: number): number;
+    static nmin_filter(paramarg0: number, paramarg1: number): void;
+    static nmip_filter(paramarg0: number): number;
+    static nmip_filter(paramarg0: number, paramarg1: number): void;
+    static nr_address(paramarg0: number): number;
+    static nr_address(paramarg0: number, paramarg1: number): void;
+    static ns_address(paramarg0: number): number;
+    static ns_address(paramarg0: number, paramarg1: number): void;
+    static nt_address(paramarg0: number): number;
+    static nt_address(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    anisotropy_enable(): boolean;
+    anisotropy_enable(arg0: boolean): SpvcMslConstexprSampler;
+    border_color(): number;
+    border_color(arg0: number): SpvcMslConstexprSampler;
+    close(): void;
+    compare_enable(): boolean;
+    compare_enable(arg0: boolean): SpvcMslConstexprSampler;
+    compare_func(): number;
+    compare_func(arg0: number): SpvcMslConstexprSampler;
+    coord(): number;
+    coord(arg0: number): SpvcMslConstexprSampler;
+    create(arg0: number, arg1: ByteBuffer): SpvcMslConstexprSampler;
+    lod_clamp_enable(): boolean;
+    lod_clamp_enable(arg0: boolean): SpvcMslConstexprSampler;
+    lod_clamp_max(): number;
+    lod_clamp_max(arg0: number): SpvcMslConstexprSampler;
+    lod_clamp_min(): number;
+    lod_clamp_min(arg0: number): SpvcMslConstexprSampler;
+    mag_filter(): number;
+    mag_filter(arg0: number): SpvcMslConstexprSampler;
+    max_anisotropy(): number;
+    max_anisotropy(arg0: number): SpvcMslConstexprSampler;
+    min_filter(): number;
+    min_filter(arg0: number): SpvcMslConstexprSampler;
+    mip_filter(): number;
+    mip_filter(arg0: number): SpvcMslConstexprSampler;
+    r_address(): number;
+    r_address(arg0: number): SpvcMslConstexprSampler;
+    s_address(): number;
+    s_address(arg0: number): SpvcMslConstexprSampler;
+    set(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: boolean, arg13: boolean, arg14: boolean): SpvcMslConstexprSampler;
+    set(arg0: SpvcMslConstexprSampler): SpvcMslConstexprSampler;
+    sizeof(): number;
+    t_address(): number;
+    t_address(arg0: number): SpvcMslConstexprSampler;
+}

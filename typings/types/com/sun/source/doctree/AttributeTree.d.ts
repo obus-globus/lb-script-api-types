@@ -1,0 +1,11 @@
+import type { AttributeTree$ValueKind } from '../../../../com/sun/source/doctree/AttributeTree$ValueKind.d.ts'
+import type { DocTree } from '../../../../com/sun/source/doctree/DocTree.d.ts'
+import type { DocTree$Kind } from '../../../../com/sun/source/doctree/DocTree$Kind.d.ts'
+import type { Name } from '../../../../javax/lang/model/element/Name.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+export interface AttributeTree extends DocTree, Object{
+    getKind(): DocTree$Kind;
+    getName(): Name;
+    getValue(): DocTree[];
+    getValueKind(): AttributeTree$ValueKind;
+}

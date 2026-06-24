@@ -1,0 +1,10 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class ARMSchedulingControls extends Object {
+    static VK_ARM_SCHEDULING_CONTROLS_EXTENSION_NAME: string;
+    static VK_ARM_SCHEDULING_CONTROLS_SPEC_VERSION: number;
+    static VK_PHYSICAL_DEVICE_SCHEDULING_CONTROLS_SHADER_CORE_COUNT_ARM: number;
+    static VK_STRUCTURE_TYPE_DEVICE_QUEUE_SHADER_CORE_CONTROL_CREATE_INFO_ARM: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCHEDULING_CONTROLS_FEATURES_ARM: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_SCHEDULING_CONTROLS_PROPERTIES_ARM: number;
+    private constructor()
+}

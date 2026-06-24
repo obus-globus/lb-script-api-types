@@ -65,8 +65,10 @@ export class BedrockTypes extends Object {
     static LONG_ARRAY: Type<(Object | null)[]>;
     static LONG_LE: LongLEType;
     static NETWORK_TAG: Type<Tag>;
+    static OPTIONAL_FULL_CONTAINER_NAME: Type<FullContainerName>;
     static OPTIONAL_POSITION_3F: Type<Position3f>;
     static OPTIONAL_STRING: Type<string>;
+    static OPTIONAL_UNSIGNED_LONG_LE: Type<number>;
     static PLAYER_ABILITIES: Type<PlayerAbilities>;
     static POSITION_2F: Type<Position2f>;
     static POSITION_3F: Type<Position3f>;

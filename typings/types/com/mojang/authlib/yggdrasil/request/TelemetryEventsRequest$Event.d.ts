@@ -1,7 +1,10 @@
 import type { JsonObject } from '../../../../../com/google/gson/JsonObject.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
+import type { Instant } from '../../../../../java/time/Instant.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TelemetryEventsRequest$Event extends Record {
+    constructor(arg0: string, arg1: string, arg2: Instant, arg3: JsonObject)
+    constructor(source: string, name: string, timestamp: number, data: JsonObject)
     // private data: JsonObject;
     // private name: string;
     // private source: string;

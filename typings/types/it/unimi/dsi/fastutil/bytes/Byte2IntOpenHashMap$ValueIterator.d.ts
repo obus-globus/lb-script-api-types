@@ -4,7 +4,7 @@ import type { IntIterator } from '../../../../../it/unimi/dsi/fastutil/ints/IntI
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer as IntConsumer_2 } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Byte2IntOpenHashMap$ValueIterator extends Byte2IntOpenHashMap$MapIterator<(param0: number) => void> implements IntIterator {
-    constructor(null_: Byte2IntOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

@@ -2,8 +2,8 @@ import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/long
 import type { LongRBTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/LongRBTreeSet$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongRBTreeSet$SetIterator extends Object implements LongListIterator {
-    constructor(null_: LongRBTreeSet$SetIterator)
-    constructor(null_: LongRBTreeSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: LongRBTreeSet$Entry;
     // private index: number;
     // private next: LongRBTreeSet$Entry;

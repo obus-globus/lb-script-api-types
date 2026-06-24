@@ -6,11 +6,11 @@ export class ByteBufferBuilder extends Object implements AutoCloseable, MojangBu
     static exactlySized(paramcapacity: number): ByteBufferBuilder;
     constructor(initialCapacity: number)
     constructor(initialCapacity: number, maxCapacity: number)
-    capacity: number;
+    // private capacity: number;
     // private generation: number;
     // private maxCapacity: number;
     // private nextResultOffset: number;
-    pointer: number;
+    readonly pointer: number;
     // private resultCount: number;
     // private writeOffset: number;
     build(): ByteBufferBuilder$Result;

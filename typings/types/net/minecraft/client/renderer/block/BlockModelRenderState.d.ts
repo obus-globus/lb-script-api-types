@@ -14,6 +14,7 @@ import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 export class BlockModelRenderState extends Object implements FabricBlockModelRenderState, FabricRenderState {
     static EMPTY_TINTS: number[];
     constructor()
+    blockLightCoords: number;
     // private mesh: MutableMesh;
     // private modelParts: BlockStateModelPart[];
     // private randomSource: RandomSource;
@@ -36,8 +37,8 @@ export class BlockModelRenderState extends Object implements FabricBlockModelRen
     setupMesh(arg0: Matrix4fc, arg1: boolean): QuadEmitter;
     setupModel(transformation: Matrix4fc, hasTranslucency: boolean): BlockStateModelPart[];
     setupSpecialModel<T extends unknown>(renderer: SpecialModelRenderer<T>, transformation: Matrix4fc): void;
-    submit(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, outlineColor: number): void;
-    // private submitModel(renderType: RenderType, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, outlineColor: number): void;
+    submit(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, externalLightCoords: number, overlayCoords: number, outlineColor: number): void;
+    // private submitModel(renderType: RenderType, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, externalLightCoords: number, overlayCoords: number, outlineColor: number): void;
     submitOnlyOutline(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, outlineColor: number): void;
     submitWithZOffset(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, overlayCoords: number, outlineColor: number): void;
     tintLayers(): (Object | null)[];

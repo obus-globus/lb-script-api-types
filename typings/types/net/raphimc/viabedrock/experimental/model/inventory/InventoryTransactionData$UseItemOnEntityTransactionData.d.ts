@@ -5,6 +5,7 @@ import type { ItemUseOnActorInventoryTransaction_ActionType } from '../../../../
 import type { BedrockItem } from '../../../../../../net/raphimc/viabedrock/protocol/model/BedrockItem.d.ts'
 import type { Position3f } from '../../../../../../net/raphimc/viabedrock/protocol/model/Position3f.d.ts'
 export class InventoryTransactionData$UseItemOnEntityTransactionData extends Record implements InventoryTransactionData {
+    constructor(entityRuntimeId: number, actionType: ItemUseOnActorInventoryTransaction_ActionType, hotbarSlot: number, itemInHand: BedrockItem, playerPosition: Position3f, clickPosition: Position3f)
     // private actionType: ItemUseOnActorInventoryTransaction_ActionType;
     // private clickPosition: Position3f;
     // private entityRuntimeId: number;

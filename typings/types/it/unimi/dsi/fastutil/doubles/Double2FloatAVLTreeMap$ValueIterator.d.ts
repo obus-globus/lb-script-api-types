@@ -1,7 +1,9 @@
 import type { Double2FloatAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2FloatAVLTreeMap$TreeIterator.d.ts'
 import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatListIterator.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2FloatAVLTreeMap$ValueIterator extends Double2FloatAVLTreeMap$TreeIterator implements FloatListIterator {
-    private constructor(null_: Double2FloatAVLTreeMap$ValueIterator)
+    private constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add(arg0: number): void;
     next(): number;
     nextFloat(): number;

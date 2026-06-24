@@ -1,3 +1,4 @@
+import type { KafkaAppender$1 } from '../../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Serializable } from '../../../../../../../../java/io/Serializable.d.ts'
 import type { Future } from '../../../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../../../java/util/concurrent/TimeUnit.d.ts'
@@ -17,6 +18,7 @@ export class KafkaAppender extends AbstractAppender {
     static createAppender(paramlayout: Layout<Serializable>, paramfilter: Filter, paramname: string, paramignoreExceptions: boolean, paramtopic: string, paramproperties: (Object | null)[], paramconfiguration: Configuration, paramkey: string): KafkaAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
+    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: boolean, arg4: KafkaManager, arg5: Property[], arg6: number, arg7: KafkaAppender$1)
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, ignoreExceptions: boolean, manager: KafkaManager, properties: Property[], retryCount: number)
     // private manager: KafkaManager;
     // private retryCount: number;

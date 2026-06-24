@@ -13,6 +13,7 @@ import type { ContainerInput } from '../../../../../net/minecraft/world/inventor
 export class ServerboundContainerClickPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ServerboundContainerClickPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(containerId: number, stateId: number, slotNum: number, buttonNum: number, containerInput: ContainerInput, changedSlots: { [key: string]: any }, carriedItem: HashedStack)
     // private buttonNum: number;
     // private carriedItem: HashedStack;
     // private changedSlots: { [key: string]: any };

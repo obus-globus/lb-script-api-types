@@ -10,10 +10,8 @@ import type { RecipeBookMenu$PostPlaceAction } from '../../../../net/minecraft/w
 import type { RecipeBookType } from '../../../../net/minecraft/world/inventory/RecipeBookType.d.ts'
 import type { Slot } from '../../../../net/minecraft/world/inventory/Slot.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
-import type { AbstractCookingRecipe } from '../../../../net/minecraft/world/item/crafting/AbstractCookingRecipe.d.ts'
 import type { RecipeHolder } from '../../../../net/minecraft/world/item/crafting/RecipeHolder.d.ts'
 import type { RecipePropertySet } from '../../../../net/minecraft/world/item/crafting/RecipePropertySet.d.ts'
-import type { RecipeType } from '../../../../net/minecraft/world/item/crafting/RecipeType.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 export abstract class AbstractFurnaceMenu extends RecipeBookMenu {
@@ -40,14 +38,13 @@ export abstract class AbstractFurnaceMenu extends RecipeBookMenu {
     static getRedstoneSignalFromBlockEntity(paramblockEntity: BlockEntity): number;
     static getRedstoneSignalFromContainer(paramcontainer: ItemStack[]): number;
     static isValidQuickcraftType(paramtype: number, paramplayer: Player): boolean;
-    constructor(menuType: MenuType<any>, recipeType: RecipeType<AbstractCookingRecipe>, allowedInputs: ResourceKey<RecipePropertySet>, recipeBookType: RecipeBookType, containerId: number, inventory: (Object | null)[])
-    constructor(menuType: MenuType<any>, recipeType: RecipeType<AbstractCookingRecipe>, allowedInputs: ResourceKey<RecipePropertySet>, recipeBookType: RecipeBookType, containerId: number, inventory: (Object | null)[], container: ItemStack[], data: ContainerData)
+    constructor(menuType: MenuType<any>, allowedInputs: ResourceKey<RecipePropertySet>, recipeBookType: RecipeBookType, containerId: number, inventory: (Object | null)[])
+    constructor(menuType: MenuType<any>, allowedInputs: ResourceKey<RecipePropertySet>, recipeBookType: RecipeBookType, containerId: number, inventory: (Object | null)[], container: ItemStack[], data: ContainerData)
     // private acceptedInputs: RecipePropertySet;
     // private container: ItemStack[];
     readonly data: ContainerData;
     // private level: Level;
     readonly recipeBookType: RecipeBookType;
-    // private recipeType: RecipeType<AbstractCookingRecipe>;
     canSmelt(itemStack: ItemStack): boolean;
     fillCraftSlotsStackedContents(stackedContents: StackedItemContents): void;
     getBurnProgress(): number;

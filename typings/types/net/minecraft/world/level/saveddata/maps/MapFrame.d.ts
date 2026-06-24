@@ -5,6 +5,7 @@ import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.t
 export class MapFrame extends Record {
     static CODEC: Codec<MapFrame>;
     static frameId(parampos: BlockPos): string;
+    constructor(pos: BlockPos, rotation: number, entityId: number)
     // private entityId: number;
     // private pos: BlockPos;
     // private rotation: number;

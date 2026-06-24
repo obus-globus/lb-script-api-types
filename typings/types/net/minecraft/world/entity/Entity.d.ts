@@ -83,7 +83,6 @@ import type { ItemOwner } from '../../../../net/minecraft/world/entity/ItemOwner
 import type { Leashable } from '../../../../net/minecraft/world/entity/Leashable.d.ts'
 import type { LightningBolt } from '../../../../net/minecraft/world/entity/LightningBolt.d.ts'
 import type { LivingEntity } from '../../../../net/minecraft/world/entity/LivingEntity.d.ts'
-import type { Mob } from '../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { MoverType } from '../../../../net/minecraft/world/entity/MoverType.d.ts'
 import type { PortalProcessor } from '../../../../net/minecraft/world/entity/PortalProcessor.d.ts'
 import type { Pose } from '../../../../net/minecraft/world/entity/Pose.d.ts'
@@ -104,6 +103,7 @@ import type { ChunkPos } from '../../../../net/minecraft/world/level/ChunkPos.d.
 import type { Explosion } from '../../../../net/minecraft/world/level/Explosion.d.ts'
 import type { ItemLike } from '../../../../net/minecraft/world/level/ItemLike.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
+import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { Mirror } from '../../../../net/minecraft/world/level/block/Mirror.d.ts'
 import type { Portal } from '../../../../net/minecraft/world/level/block/Portal.d.ts'
 import type { Rotation } from '../../../../net/minecraft/world/level/block/Rotation.d.ts'
@@ -123,6 +123,7 @@ import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { HitResult } from '../../../../net/minecraft/world/phys/HitResult.d.ts'
 import type { Vec2 } from '../../../../net/minecraft/world/phys/Vec2.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
+import type { CollisionContext } from '../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 import type { PlayerTeam } from '../../../../net/minecraft/world/scores/PlayerTeam.d.ts'
 import type { ScoreHolder } from '../../../../net/minecraft/world/scores/ScoreHolder.d.ts'
@@ -134,12 +135,16 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     static CONTENTS_SLOT_INDEX: number;
     static DEFAULT_BB_HEIGHT: number;
     static DEFAULT_BB_WIDTH: number;
+    static DEFAULT_BELOW_NAME_DISTANCE: number;
+    static DEFAULT_NAME_TAG_DISTANCE: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_2: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_5: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_1_0: number;
     static FREEZE_HURT_FREQUENCY: number;
+    static INVALID_ENTITY_ID: number;
     static MAX_ENTITY_TAG_COUNT: number;
     static MAX_MOVEMENTS_HANDELED_PER_TICK: number;
+    static MAX_NAME_TAG_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
     static TAG_AIR: string;
     static TAG_CUSTOM_NAME: string;
@@ -163,6 +168,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     static WILDCARD_NAME: string;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
+    static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
     static forNameOnly(paramname: string): ScoreHolder;
     static fromGameProfile(paramprofile: GameProfile): ScoreHolder;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
@@ -229,6 +235,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     readonly requiresPrecisePosition: boolean;
     stringUUID: string;
     // private stuckSpeedMultiplier: Vec3;
+    syncPosition: boolean;
     // private syncedAttachments: Map<Object, Object>;
     // private tags: string[];
     tickCount: number;
@@ -278,7 +285,6 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     // private applyMovementEmissionAndPlaySound(emission: Entity$MovementEmission, clippedMovement: Vec3, effectPos: BlockPos, effectState: BlockState): void;
     // private applyPistonMovementRestriction(axis: Direction$Axis, amount: number): number;
     asLivingEntity(): LivingEntity;
-    // private attemptToShearEquipment(player: Player, hand: InteractionHand, heldItem: ItemStack, target: Mob): boolean;
     awardKillScore(victim: Entity, killingBlow: DamageSource): void;
     baseTick(): void;
     belowNameDisplay(): Component;
@@ -290,6 +296,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     canAddPassenger(passenger: Entity): boolean;
     canBeCollidedWith(other: Entity): boolean;
     canBeHitByProjectile(): boolean;
+    canBePickedFromInside(): boolean;
     canCollideWith(entity: Entity): boolean;
     canControlVehicle(): boolean;
     canFreeze(): boolean;
@@ -378,6 +385,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     gameEvent(event: Holder<GameEvent>, sourceEntity: Entity): void;
     get<T extends unknown>(type: DataComponentType<T>): T;
     getAddEntityPacket(serverEntity: ServerEntity): Packet<ClientGamePacketListener>;
+    getAirDrag(): number;
     getAirSupply(): number;
     getAttached<A extends unknown>(arg0: AttachmentType<A>): A;
     getAttached(arg0: AttachmentType<Object>): Object;
@@ -391,6 +399,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     getAvailableSpaceBelow(maxDistance: number): number;
     getBbHeight(): number;
     getBbWidth(): number;
+    // private getBlockBounciness(onBlock: Block): number;
     getBlockExplosionResistance(explosion: Explosion, level: BlockGetter, pos: BlockPos, block: BlockState, fluid: FluidState, resistance: number): number;
     getBlockJumpFactor(): number;
     getBlockPosBelowThatAffectsMyMovement(): BlockPos;
@@ -412,7 +421,9 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     getDirection(): Direction;
     getDismountLocationForPassenger(passenger: LivingEntity): Vec3;
     getDisplayName(): Component;
+    getEffectiveGravity(): number;
     getEncodeId(): string;
+    getEntityBounciness(): number;
     getEntityData(): SynchedEntityData;
     getEyeHeight(): number;
     getEyeHeight(pose: Pose): number;
@@ -571,7 +582,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     isInClouds(): boolean;
     isInLava(): boolean;
     isInLiquid(): boolean;
-    isInRain(): boolean;
+    // private isInRain(): boolean;
     isInShallowWater(): boolean;
     isInWall(): boolean;
     isInWater(): boolean;
@@ -581,6 +592,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     isInvisibleTo(player: Player): boolean;
     isInvulnerable(): boolean;
     isInvulnerableToBase(source: DamageSource): boolean;
+    isInvulnerableToPiercingWeapon(): boolean;
     isLoadedFromDisk(): boolean;
     isLocalClientAuthoritative(): boolean;
     isLocalInstanceAuthoritative(): boolean;
@@ -616,6 +628,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     lerpPositionAndRotationStep(stepsToTarget: number, targetX: number, targetY: number, targetZ: number, targetYRot: number, targetXRot: number): void;
     level(): Level;
     limitPistonMovement(vec: Vec3): Vec3;
+    liquid_bounce$isClientPlayer(): boolean;
     lithium$OnFeetBlockCacheDeleted(): void;
     lithium$OnFeetBlockCacheSet(arg0: BlockState): void;
     lithium$SetClimbingMobCachingSectionUpdateBehavior(arg0: boolean): void;
@@ -646,6 +659,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     notifyLeashHolder(entity: Leashable): void;
     notifyLeasheeRemoved(entity: Leashable): void;
     oldPosition(): Vec3;
+    omnidirectionalAirMover(): boolean;
     onAboveBubbleColumn(dragDown: boolean, pos: BlockPos): void;
     onAttachedSet<A extends unknown>(arg0: AttachmentType<A>): Event<(param0: A, param1: A) => void>;
     onAttachedSet(arg0: AttachmentType<Object>): Event<Object>;
@@ -696,6 +710,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     removeVehicle(): void;
     repositionEntityAfterLoad(): boolean;
     resetFallDistance(): void;
+    // private restituteMovementAfterCollisions(effectState: BlockState, xCollision: boolean, zCollision: boolean, movement: Vec3): void;
     restoreFrom(oldEntity: Entity): void;
     rideTick(): void;
     rotate(rotation: Rotation): number;

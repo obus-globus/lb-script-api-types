@@ -3,6 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ColorModifier$BlendToGray extends Record {
     static CODEC: Codec<ColorModifier$BlendToGray>;
+    constructor(brightness: number, factor: number)
     // private brightness: number;
     // private factor: number;
     brightness(): number;

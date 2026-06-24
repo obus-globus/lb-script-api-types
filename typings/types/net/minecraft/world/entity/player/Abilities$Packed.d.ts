@@ -3,6 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Abilities$Packed extends Record {
     static CODEC: Codec<Abilities$Packed>;
+    constructor(invulnerable: boolean, flying: boolean, mayFly: boolean, instabuild: boolean, mayBuild: boolean, flyingSpeed: number, walkingSpeed: number)
     // private flying: boolean;
     // private flyingSpeed: number;
     // private instabuild: boolean;

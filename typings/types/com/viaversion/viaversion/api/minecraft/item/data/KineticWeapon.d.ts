@@ -6,6 +6,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class KineticWeapon extends Record {
     static TYPE: Type<KineticWeapon>;
+    constructor(contactCooldownTicks: number, delayTicks: number, dismountConditions: KineticWeapon$Condition, knockbackConditions: KineticWeapon$Condition, damageConditions: KineticWeapon$Condition, forwardMovement: number, damageMultiplier: number, sound: Holder<SoundEvent>, hitSound: Holder<SoundEvent>)
     // private contactCooldownTicks: number;
     // private damageConditions: KineticWeapon$Condition;
     // private damageMultiplier: number;

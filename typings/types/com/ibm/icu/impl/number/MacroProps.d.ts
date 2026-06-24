@@ -35,7 +35,7 @@ export class MacroProps extends Object implements Cloneable {
     unitDisplayCase: string;
     unitWidth: NumberFormatter$UnitWidth;
     usage: string;
-    clone(): Object;
+    clone(): MacroProps;
     protected clone(): Object;
     equals(arg0: Object | null): boolean;
     fallback(arg0: MacroProps): void;

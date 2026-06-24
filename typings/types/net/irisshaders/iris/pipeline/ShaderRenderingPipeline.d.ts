@@ -7,7 +7,6 @@ import type { LevelRendererAccessor } from '../../../../net/irisshaders/iris/mix
 import type { WorldRenderingPhase } from '../../../../net/irisshaders/iris/pipeline/WorldRenderingPhase.d.ts'
 import type { WorldRenderingPipeline } from '../../../../net/irisshaders/iris/pipeline/WorldRenderingPipeline.d.ts'
 import type { ShaderMap } from '../../../../net/irisshaders/iris/pipeline/programs/ShaderMap.d.ts'
-import type { SodiumPrograms } from '../../../../net/irisshaders/iris/pipeline/programs/SodiumPrograms.d.ts'
 import type { CloudSetting } from '../../../../net/irisshaders/iris/shaderpack/properties/CloudSetting.d.ts'
 import type { ParticleRenderingSettings } from '../../../../net/irisshaders/iris/shaderpack/properties/ParticleRenderingSettings.d.ts'
 import type { FrameUpdateNotifier } from '../../../../net/irisshaders/iris/uniforms/FrameUpdateNotifier.d.ts'
@@ -33,7 +32,6 @@ export interface ShaderRenderingPipeline extends Object, WorldRenderingPipeline{
     getParticleRenderingSettings(): ParticleRenderingSettings;
     getPhase(): WorldRenderingPhase;
     getShaderMap(): ShaderMap;
-    getSodiumPrograms(): SodiumPrograms;
     getSunPathRotation(): number;
     hasFeature(arg0: FeatureFlags): boolean;
     onBeginClear(): void;

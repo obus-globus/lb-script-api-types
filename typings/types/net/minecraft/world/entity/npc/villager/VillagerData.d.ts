@@ -10,12 +10,14 @@ import type { VillagerProfession } from '../../../../../../net/minecraft/world/e
 import type { VillagerType } from '../../../../../../net/minecraft/world/entity/npc/villager/VillagerType.d.ts'
 export class VillagerData extends Record {
     static CODEC: Codec<VillagerData>;
+    static DEFAULT_TYPE: ResourceKey<VillagerType>;
     static MAX_VILLAGER_LEVEL: number;
     static MIN_VILLAGER_LEVEL: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, VillagerData>;
     static canLevelUp(paramcurrentLevel: number): boolean;
     static getMaxXpPerLevel(paramlevel: number): number;
     static getMinXpPerLevel(paramlevel: number): number;
+    constructor(type: Holder<VillagerType>, profession: Holder<VillagerProfession>, level: number)
     // private level: number;
     // private profession: Holder<VillagerProfession>;
     // private type: Holder<VillagerType>;

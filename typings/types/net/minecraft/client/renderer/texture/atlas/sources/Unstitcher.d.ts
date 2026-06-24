@@ -10,6 +10,7 @@ import type { ResourceManager } from '../../../../../../../net/minecraft/server/
 export class Unstitcher extends Record implements SpriteSource {
     static MAP_CODEC: MapCodec<Unstitcher>;
     static TEXTURE_ID_CONVERTER: FileToIdConverter;
+    constructor(resource: Identifier, regions: Unstitcher$Region[], xDivisor: number, yDivisor: number)
     // private regions: Unstitcher$Region[];
     // private resource: Identifier;
     // private xDivisor: number;

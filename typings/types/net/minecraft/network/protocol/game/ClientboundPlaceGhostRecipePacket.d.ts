@@ -12,6 +12,7 @@ import type { RecipeDisplay } from '../../../../../net/minecraft/world/item/craf
 export class ClientboundPlaceGhostRecipePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundPlaceGhostRecipePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(containerId: number, recipeDisplay: RecipeDisplay)
     // private containerId: number;
     // private recipeDisplay: RecipeDisplay;
     containerId(): number;

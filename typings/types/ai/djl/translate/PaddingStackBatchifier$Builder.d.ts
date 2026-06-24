@@ -1,3 +1,4 @@
+import type { PaddingStackBatchifier$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { NDArray } from '../../../ai/djl/ndarray/NDArray.d.ts'
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
 import type { NDArraySupplier } from '../../../ai/djl/translate/NDArraySupplier.d.ts'
@@ -5,6 +6,7 @@ import type { PaddingStackBatchifier } from '../../../ai/djl/translate/PaddingSt
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class PaddingStackBatchifier$Builder extends Object {
     private constructor()
+    constructor(arg0: PaddingStackBatchifier$1)
     // private arraysToPad: number[];
     // private dimsToPad: number[];
     // private includeValidLengths: boolean;

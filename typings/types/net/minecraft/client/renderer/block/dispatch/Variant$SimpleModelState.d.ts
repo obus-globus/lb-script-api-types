@@ -6,6 +6,7 @@ import type { ModelState } from '../../../../../../net/minecraft/client/renderer
 export class Variant$SimpleModelState extends Record {
     static DEFAULT: Variant$SimpleModelState;
     static MAP_CODEC: MapCodec<Variant$SimpleModelState>;
+    constructor(x: Quadrant, y: Quadrant, z: Quadrant, uvLock: boolean)
     // private uvLock: boolean;
     // private x: Quadrant;
     // private y: Quadrant;

@@ -1,3 +1,4 @@
+import type { AsyncAppender$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -21,6 +22,7 @@ export class AsyncAppender extends AbstractAppender {
     static createAppender(paramappenderRefs: (Object | null)[], paramerrorRef: string, paramblocking: boolean, paramshutdownTimeout: number, paramsize: number, paramname: string, paramincludeLocation: boolean, paramfilter: Filter, paramconfig: Configuration, paramignoreExceptions: boolean): AsyncAppender;
     static newBuilder(): AsyncAppender$Builder<any>;
     static parseInt(params: string, paramdefaultValue: number): number;
+    constructor(arg0: string, arg1: Filter, arg2: AppenderRef[], arg3: string, arg4: number, arg5: boolean, arg6: boolean, arg7: number, arg8: Configuration, arg9: boolean, arg10: BlockingQueueFactory<Object>, arg11: Property[], arg12: AsyncAppender$1)
     private constructor(name: string, filter: Filter, appenderRefs: AppenderRef[], errorRef: string, queueSize: number, blocking: boolean, ignoreExceptions: boolean, shutdownTimeout: number, config: Configuration, includeLocation: boolean, blockingQueueFactory: BlockingQueueFactory<LogEvent>, properties: Property[])
     // private appenderRefs: AppenderRef[];
     // private asyncQueueFullPolicy: AsyncQueueFullPolicy;

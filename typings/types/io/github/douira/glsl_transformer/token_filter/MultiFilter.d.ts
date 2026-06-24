@@ -4,12 +4,12 @@ import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Token } from '../../../../../org/antlr/v4/runtime/Token.d.ts'
 export class MultiFilter<J extends JobParameters> extends TokenFilter<J> {
     static join(paramarg0: TokenFilter<JobParameters>, paramarg1: TokenFilter<JobParameters>): TokenFilter<JobParameters>;
-    constructor(arg0: TokenFilter<J>[])
     constructor()
     constructor(arg0: boolean, arg1: boolean)
     constructor(arg0: number)
     constructor(arg0: number, arg1: boolean, arg2: boolean)
     constructor(arg0: TokenFilter<J>[], arg1: boolean, arg2: boolean)
+    constructor(arg0: TokenFilter<J>[])
     readonly conjunction: boolean;
     readonly shortCircuit: boolean;
     // private subfilters: TokenFilter<J>[];

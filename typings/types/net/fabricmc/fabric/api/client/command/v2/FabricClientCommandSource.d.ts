@@ -15,6 +15,7 @@ import type { FeatureFlagSet } from '../../../../../../../net/minecraft/world/fl
 import type { Vec2 } from '../../../../../../../net/minecraft/world/phys/Vec2.d.ts'
 import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export interface FabricClientCommandSource extends Object, SharedSuggestionProvider{
+    attended(): boolean;
     enabledFeatures(): FeatureFlagSet;
     getAbsoluteCoordinates(): SharedSuggestionProvider$TextCoordinates[];
     getClient(): Minecraft;

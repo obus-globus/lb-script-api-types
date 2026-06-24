@@ -101,6 +101,7 @@ export class ServerChunkCache extends ChunkSource {
     // private getVisibleChunkIfPresent(key: number): ChunkHolder;
     hasActiveTickets(): boolean;
     hasChunk(x: number, z: number): boolean;
+    hasEntityWithId(id: number): boolean;
     isPositionTicking(chunkKey: number): boolean;
     move(player: ServerPlayer): void;
     onChunkReadyToSend(chunk: ChunkHolder): void;

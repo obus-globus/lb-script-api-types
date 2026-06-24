@@ -1,3 +1,4 @@
+import type { DefaultConstructorMarker } from '../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { CustomTypeParameter } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/CustomTypeParameter.d.ts'
 import type { DefinitelyNotNullType$Companion } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/DefinitelyNotNullType$Companion.d.ts'
 import type { DelegatingSimpleType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/DelegatingSimpleType.d.ts'
@@ -8,6 +9,7 @@ import type { DefinitelyNotNullTypeMarker } from '../../../../../../kotlin/refle
 export class DefinitelyNotNullType extends DelegatingSimpleType implements CustomTypeParameter, DefinitelyNotNullTypeMarker {
     static Companion: DefinitelyNotNullType$Companion;
     private constructor(arg0: SimpleType, arg1: boolean)
+    constructor(arg0: SimpleType, arg1: boolean, arg2: DefaultConstructorMarker)
     readonly original: SimpleType;
     // private useCorrectedNullabilityForTypeParameters: boolean;
     getDelegate(): SimpleType;

@@ -6,6 +6,7 @@ import type { ModelBaker$SharedOperationKey } from '../../../../../../net/minecr
 import type { QuadCollection } from '../../../../../../net/minecraft/client/resources/model/geometry/QuadCollection.d.ts'
 import type { Material$Baked } from '../../../../../../net/minecraft/client/resources/model/sprite/Material$Baked.d.ts'
 export class ItemModelGenerator$ItemLayerKey extends Record implements ModelBaker$SharedOperationKey<QuadCollection> {
+    private constructor(material: Material$Baked, modelState: ModelState, layerIndex: number)
     // private layerIndex: number;
     // private material: Material$Baked;
     // private modelState: ModelState;

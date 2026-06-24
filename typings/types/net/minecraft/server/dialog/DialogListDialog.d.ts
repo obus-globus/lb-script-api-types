@@ -20,6 +20,7 @@ export class DialogListDialog extends Record implements ButtonListDialog {
     static MAP_CODEC: MapCodec<DialogListDialog>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Dialog>>;
     static WIDTH_CODEC: Codec<number>;
+    constructor(common: CommonDialogData, dialogs: Holder<Dialog>[], exitAction: Optional<ActionButton>, columns: number, buttonWidth: number)
     // private buttonWidth: number;
     // private columns: number;
     // private common: CommonDialogData;

@@ -3,7 +3,7 @@ import type { Source } from '../../../../../com/oracle/truffle/api/source/Source
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SuspensionFilter$Builder extends Object {
-    private constructor(null_: SuspensionFilter$Builder)
+    private constructor(null_: SuspensionFilter)
     // private ignoreLanguageContextInitialization: boolean;
     // private includeAvailableSourceSectionsOnly: boolean;
     // private includeInternal: boolean;

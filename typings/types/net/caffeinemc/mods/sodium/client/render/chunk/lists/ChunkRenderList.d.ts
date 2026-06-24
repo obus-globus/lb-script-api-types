@@ -5,7 +5,6 @@ import type { ByteIterator } from '../../../../../../../../net/caffeinemc/mods/s
 import type { SectionPos } from '../../../../../../../../net/minecraft/core/SectionPos.d.ts'
 export class ChunkRenderList extends Object {
     constructor(arg0: RenderRegion)
-    // private addedSectionsAreSorted: boolean;
     // private lastRelativeCameraSectionX: number;
     // private lastRelativeCameraSectionY: number;
     // private lastRelativeCameraSectionZ: number;
@@ -21,17 +20,16 @@ export class ChunkRenderList extends Object {
     // private sectionsWithSprites: number[];
     readonly sectionsWithSpritesCount: number;
     // private size: number;
-    add(arg0: number, arg1: number): void;
+    add(arg0: number): void;
     getLastVisibleFrame(): number;
     getRegion(): RenderRegion;
     getSectionsWithEntitiesCount(): number;
     getSectionsWithGeometryCount(): number;
     getSectionsWithSpritesCount(): number;
     prepareForRender(arg0: SectionPos, arg1: SortItemsProvider): void;
-    reset(arg0: number, arg1: boolean): void;
+    reset(arg0: number): void;
     sectionsWithEntitiesIterator(): ByteIterator;
     sectionsWithGeometryIterator(arg0: boolean): ByteIterator;
     sectionsWithSpritesIterator(): ByteIterator;
     size(): number;
-    // private sortSections(arg0: number, arg1: number, arg2: number, arg3: SortItemsProvider): void;
 }

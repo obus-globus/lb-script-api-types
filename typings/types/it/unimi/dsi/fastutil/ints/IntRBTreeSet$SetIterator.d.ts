@@ -2,8 +2,8 @@ import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/
 import type { IntRBTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil/ints/IntRBTreeSet$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntRBTreeSet$SetIterator extends Object implements IntListIterator {
-    constructor(null_: IntRBTreeSet$SetIterator)
-    constructor(null_: IntRBTreeSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: IntRBTreeSet$Entry;
     // private index: number;
     // private next: IntRBTreeSet$Entry;

@@ -1,4 +1,4 @@
-import type { JsonObject } from '../../../../../com/google/gson/JsonObject.d.ts'
+import type { JsonObject } from '../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BedrockEntityData$Scripts$Animate } from '../../../../../org/cube/converter/data/bedrock/BedrockEntityData$Scripts$Animate.d.ts'

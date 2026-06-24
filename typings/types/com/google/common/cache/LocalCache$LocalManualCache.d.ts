@@ -1,3 +1,4 @@
+import type { LocalCache$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Cache } from '../../../../com/google/common/cache/Cache.d.ts'
 import type { CacheBuilder } from '../../../../com/google/common/cache/CacheBuilder.d.ts'
 import type { CacheStats } from '../../../../com/google/common/cache/CacheStats.d.ts'
@@ -7,6 +8,7 @@ import type { Callable } from '../../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LocalCache$LocalManualCache<K extends unknown, V extends unknown> extends Object implements Cache<K, V>, Serializable {
     constructor(builder: CacheBuilder<K, V>)
+    constructor(arg0: Map<Object, Object>, arg1: LocalCache$1)
     private constructor(localCache: Map<K, V>)
     // private localCache: Map<K, V>;
     asMap(): Map<K, V>;

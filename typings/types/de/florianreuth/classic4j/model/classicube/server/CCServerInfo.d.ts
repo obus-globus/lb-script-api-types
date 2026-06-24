@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CCServerInfo extends Record {
+    constructor(hash: string, maxPlayers: number, name: string, players: number, software: string, uptime: number, countryCode: string, web: boolean, featured: boolean, ip: string, port: number, mpPass: string)
     // private countryCode: string;
     // private featured: boolean;
     // private hash: string;

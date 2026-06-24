@@ -1,6 +1,7 @@
+import type { Mapping0 } from '../../../com/jcraft/jorbis/Mapping0.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Mapping0$InfoMapping0 extends Object {
-    constructor(null_: Mapping0$InfoMapping0)
+    constructor(null_: Mapping0)
     // private chmuxlist: number[];
     // private coupling_ang: number[];
     // private coupling_mag: number[];

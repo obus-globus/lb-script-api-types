@@ -52,6 +52,7 @@ export class TextureAtlas extends AbstractTexture implements ExtendedTextureAtla
     location(): Identifier;
     maxSupportedTextureSize(): number;
     missingSprite(): TextureAtlasSprite;
+    releaseTextures(): void;
     sodium$getHeight(): number;
     sodium$getSpriteFinder(): SodiumSpriteFinder;
     sodium$getWidth(): number;

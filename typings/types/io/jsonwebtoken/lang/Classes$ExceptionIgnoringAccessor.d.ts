@@ -1,3 +1,4 @@
+import type { Classes$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Classes$ClassLoaderAccessor } from '../../../io/jsonwebtoken/lang/Classes$ClassLoaderAccessor.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
@@ -6,6 +7,7 @@ import type { URL } from '../../../java/net/URL.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class Classes$ExceptionIgnoringAccessor extends Object implements Classes$ClassLoaderAccessor {
     private constructor()
+    constructor(arg0: Classes$1)
     doGetClassLoader(): ClassLoader;
     getClassLoader(): ClassLoader;
     getResource(arg0: string): URL;

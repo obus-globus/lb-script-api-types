@@ -14,6 +14,7 @@ export class PlayerGlyphProvider$Instance extends Record implements PlainTextRen
     static DEFAULT_HEIGHT: number;
     static DEFAULT_WIDTH: number;
     static DEFUAULT_ASCENT: number;
+    private constructor(skin: () => PlayerSkinRenderCache$RenderInfo, hat: boolean, x: number, y: number, color: number, shadowColor: number, shadowOffset: number, style: Style)
     // private color: number;
     // private hat: boolean;
     // private shadowColor: number;

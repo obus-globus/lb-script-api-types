@@ -8,6 +8,7 @@ import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { AbstractWidget } from '../../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { EditBox } from '../../../../net/minecraft/client/gui/components/EditBox.d.ts'
+import type { SpriteIconButton } from '../../../../net/minecraft/client/gui/components/SpriteIconButton.d.ts'
 import type { NarratableEntry } from '../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
@@ -26,10 +27,10 @@ export class ModsScreen extends Screen {
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(arg0: Screen)
-    // private configureButton: AbstractWidget;
+    // private configureButton: SpriteIconButton;
     // private descriptionListWidget: DescriptionListWidget;
     // private filterOptionsShown: boolean;
-    // private filtersButton: AbstractWidget;
+    // private filtersButton: SpriteIconButton;
     // private filtersWidth: number;
     // private filtersX: number;
     // private init: boolean;

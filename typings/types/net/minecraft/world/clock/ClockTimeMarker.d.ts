@@ -7,6 +7,7 @@ import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKe
 import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldClock.d.ts'
 export class ClockTimeMarker extends Record {
     static KEY_CODEC: Codec<ResourceKey<ClockTimeMarker>>;
+    constructor(clock: Holder<WorldClock>, ticks: number, periodTicks: Optional<number>, showInCommands: boolean)
     // private clock: Holder<WorldClock>;
     // private periodTicks: Optional<number>;
     // private showInCommands: boolean;

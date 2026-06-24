@@ -4,6 +4,7 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class NumberRangeInput$RangeInfo extends Record {
     static MAP_CODEC: MapCodec<NumberRangeInput$RangeInfo>;
+    constructor(start: number, end: number, initial: Optional<number>, step: Optional<number>)
     // private end: number;
     // private initial: Optional<number>;
     // private start: number;

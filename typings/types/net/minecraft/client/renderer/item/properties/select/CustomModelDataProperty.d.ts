@@ -11,6 +11,7 @@ import type { ItemStack } from '../../../../../../../net/minecraft/world/item/It
 export class CustomModelDataProperty extends Record implements SelectItemModelProperty<string> {
     static TYPE: SelectItemModelProperty$Type<CustomModelDataProperty, string>;
     static VALUE_CODEC: PrimitiveCodec<string>;
+    constructor(index: number)
     // private index: number;
     equals(o: Object | null): boolean;
     get(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity, seed: number, displayContext: ItemDisplayContext): string;

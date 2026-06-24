@@ -5,6 +5,7 @@ import type { PackRepository } from '../../../net/minecraft/server/packs/reposit
 import type { CloseableResourceManager } from '../../../net/minecraft/server/packs/resources/CloseableResourceManager.d.ts'
 import type { WorldDataConfiguration } from '../../../net/minecraft/world/level/WorldDataConfiguration.d.ts'
 export class WorldLoader$PackConfig extends Record {
+    constructor(packRepository: PackRepository, initialDataConfig: WorldDataConfiguration, safeMode: boolean, initMode: boolean)
     // private initMode: boolean;
     // private initialDataConfig: WorldDataConfiguration;
     // private packRepository: PackRepository;

@@ -5,6 +5,7 @@ import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSo
 import type { FloatProvider } from '../../../../../../net/minecraft/util/valueproviders/FloatProvider.d.ts'
 export class SpawnParticlesEffect$VelocitySource extends Record {
     static CODEC: MapCodec<SpawnParticlesEffect$VelocitySource>;
+    constructor(movementScale: number, base: FloatProvider)
     // private base: FloatProvider;
     // private movementScale: number;
     base(): FloatProvider;

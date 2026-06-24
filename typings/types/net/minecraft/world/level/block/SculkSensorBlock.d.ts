@@ -113,7 +113,6 @@ export class SculkSensorBlock extends BaseEntityBlock implements SimpleWaterlogg
     getFluidState(state: BlockState): FluidState;
     getPickupSound(): Optional<SoundEvent>;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     getTicker<T extends BlockEntity>(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;
     hasAnalogOutputSignal(state: BlockState): boolean;
@@ -121,6 +120,7 @@ export class SculkSensorBlock extends BaseEntityBlock implements SimpleWaterlogg
     isSignalSource(state: BlockState): boolean;
     newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     pickupBlock(user: LivingEntity, level: LevelAccessor, pos: BlockPos, state: BlockState): ItemStack;
     placeLiquid(level: LevelAccessor, pos: BlockPos, state: BlockState, fluidState: FluidState): boolean;
     spawnAfterBreak(state: BlockState, level: ServerLevel, pos: BlockPos, tool: ItemStack, dropExperience: boolean): void;

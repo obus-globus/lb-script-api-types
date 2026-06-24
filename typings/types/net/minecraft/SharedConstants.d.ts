@@ -23,6 +23,7 @@ export class SharedConstants extends Object {
     static DEBUG_CARVERS: boolean;
     static DEBUG_CHASE_COMMAND: boolean;
     static DEBUG_CHAT_DISABLED: boolean;
+    static DEBUG_CHAT_FRIENDS_ONLY: boolean;
     static DEBUG_CURSOR_POS: boolean;
     static DEBUG_DEFAULT_SKIN_OVERRIDE: boolean;
     static DEBUG_DEV_COMMANDS: boolean;
@@ -74,6 +75,7 @@ export class SharedConstants extends Object {
     static DEBUG_SHOW_SERVER_DEBUG_VALUES: boolean;
     static DEBUG_SHUFFLE_MODELS: boolean;
     static DEBUG_SHUFFLE_UI_RENDERING_ORDER: boolean;
+    static DEBUG_SIMULATE_LIBRARY_LOAD_FAILURE: boolean;
     static DEBUG_SOCIAL_INTERACTIONS: boolean;
     static DEBUG_STRUCTURES: boolean;
     static DEBUG_STRUCTURE_EDIT_MODE: boolean;

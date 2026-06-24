@@ -121,6 +121,7 @@ import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { LevelTicks } from '../../../../net/minecraft/world/ticks/LevelTicks.d.ts'
 export class ServerLevel extends Level implements ServerWorldExtended, ServerLevelAccessor, ServerLevelAccessor_2, ServerLevelAccessor_3, AttachmentTargetImpl, ServerLevelCache, ServerEntityGetter, WorldGenLevel {
+    static ACROSS_THE_WHOLE_WORLD: number;
     static DIRECTIONS: (Object | null)[];
     static END: ResourceKey<Level>;
     static END_SPAWN_POINT: BlockPos;
@@ -268,12 +269,14 @@ export class ServerLevel extends Level implements ServerWorldExtended, ServerLev
     getMoonBrightness(pos: BlockPos): number;
     getNearbyEntities<T extends LivingEntity>(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, bb: AABB): T[];
     getNearbyPlayers(targetConditions: TargetingConditions, source: LivingEntity, bb: AABB): Player[];
+    getNearestEntity<T extends Entity>(entities: T[], x: number, y: number, z: number): T;
     getNearestEntity<T extends LivingEntity>(entities: T[], targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): T;
     getNearestEntity<T extends LivingEntity>(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): T;
     getNearestEntity(tag: TagKey<EntityType<any>>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): LivingEntity;
     getNearestPlayer(targetConditions: TargetingConditions, x: number, y: number, z: number): Player;
     getNearestPlayer(targetConditions: TargetingConditions, source: LivingEntity): Player;
     getNearestPlayer(targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): Player;
+    getNextEntityId(): number;
     getPathTypeCache(): PathTypeCache;
     getPlayerInAnyDimension(uuid: UUID): Player;
     getPlayers(selector: (param0: ServerPlayer) => boolean): ServerPlayer[];

@@ -6,6 +6,7 @@ import type { ChunkGeneratorStructureState } from '../../../../../../../net/mine
 import type { StructureSet } from '../../../../../../../net/minecraft/world/level/levelgen/structure/StructureSet.d.ts'
 export class StructurePlacement$ExclusionZone extends Record {
     static CODEC: Codec<StructurePlacement$ExclusionZone>;
+    constructor(otherSet: Holder<StructureSet>, chunkCount: number)
     // private chunkCount: number;
     // private otherSet: Holder<StructureSet>;
     chunkCount(): number;

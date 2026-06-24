@@ -22,5 +22,6 @@ export class ConflatedBufferedChannel<E extends unknown> extends BufferedChannel
     shouldSendSuspend(): boolean;
     trySend(element: E): ChannelResult<void>;
     // private trySendDropLatest(element: E, isSendOp: boolean): ChannelResult<void>;
+    // private trySendDropOldest(element: E): ChannelResult<void>;
     // private trySendImpl(element: E, isSendOp: boolean): ChannelResult<void>;
 }

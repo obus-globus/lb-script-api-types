@@ -6,6 +6,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 export class PostChainConfig$TextureInput extends Record implements PostChainConfig$Input {
     static CODEC: Codec<PostChainConfig$Input>;
     static CODEC: Codec<PostChainConfig$TextureInput>;
+    constructor(samplerName: string, location: Identifier, width: number, height: number, bilinear: boolean)
     // private bilinear: boolean;
     // private height: number;
     // private location: Identifier;

@@ -1,5 +1,6 @@
 import type { Function } from '../../../com/google/common/base/Function.d.ts'
 import type { Ticker } from '../../../com/google/common/base/Ticker.d.ts'
+import type { Escaper } from '../../../com/google/common/escape/Escaper.d.ts'
 import type { DSL$TypeReference } from '../../../com/mojang/datafixers/DSL$TypeReference.d.ts'
 import type { Typed } from '../../../com/mojang/datafixers/Typed.d.ts'
 import type { Type } from '../../../com/mojang/datafixers/types/Type.d.ts'
@@ -39,12 +40,12 @@ import type { TimeSource$NanoTimeSource } from '../../../net/minecraft/util/Time
 import type { Util$OS } from '../../../net/minecraft/util/Util$OS.d.ts'
 import type { Property } from '../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class Util extends Object {
+    static CONTROL_CHARACTER_ESCAPER: Escaper;
     static LINEAR_LOOKUP_THRESHOLD: number;
     static NANOS_PER_MILLI: number;
     static NIL_UUID: UUID;
     static TICKER: Ticker;
     static ZIP_FILE_SYSTEM_PROVIDER: FileSystemProvider;
-    static timeSource: TimeSource$NanoTimeSource;
     static allOf(): (param0: Object | null) => boolean;
     static allOf(paramconditions: (param0: Object) => boolean[]): (param0: Object | null) => boolean;
     static allOf(paramcondition: (param0: Object) => boolean): (param0: Object | null) => boolean;
@@ -73,6 +74,7 @@ export class Util extends Object {
     static createIndexIdentityLookup(paramvalues: (Object | null)[]): (param0: Object | null) => number;
     static createIndexLookup(paramvalues: (Object | null)[]): (param0: Object | null) => number;
     static describeError(paramerr: Throwable): string;
+    static dumpThreadInfo(): (Object | null)[];
     static fetchChoiceType(paramreference: DSL$TypeReference, paramname: string): Type<Object>;
     static findNextInIterable(paramcollection: (Object | null)[], paramcurrent: Object | null): Object | null;
     static findPreviousInIterable(paramcollection: (Object | null)[], paramcurrent: Object | null): Object | null;
@@ -95,6 +97,8 @@ export class Util extends Object {
     static ioPool(): TracingExecutor;
     static isAarch64(): boolean;
     static isSymmetrical(paramwidth: number, paramheight: number, paramingredients: (Object | null)[]): boolean;
+    static join(paramfirst: (Object | null)[], paramsecond: (Object | null)[]): (Object | null)[];
+    static join(paramlists: Object | null): (Object | null)[];
     static localizedDateFormatter(paramformatStyle: FormatStyle): DateTimeFormatter;
     static logAndPauseIfInIde(parammessage: string): void;
     static logAndPauseIfInIde(parammessage: string, paramthrowable: Throwable): void;
@@ -125,13 +129,16 @@ export class Util extends Object {
     static sequenceFailFast(paramfutures: CompletableFuture<Object>[]): CompletableFuture<(Object | null)[]>;
     static sequenceFailFastAndCancel(paramfutures: CompletableFuture<Object>[]): CompletableFuture<(Object | null)[]>;
     static setPause(parampauseFunction: (param0: string) => void): void;
+    static setTimeSource(paramtimeSource: TimeSource$NanoTimeSource): void;
     static shuffle(paramlist: (Object | null)[], paramrandom: RandomSource): void;
     static shuffledCopy(paramarray: Object | null, paramrandom: RandomSource): (Object | null)[];
     static shuffledCopy(paramlist: (Object | null)[], paramrandom: RandomSource): (Object | null)[];
     static shutdownExecutors(): void;
+    static shutdownTimeSource(): void;
     static singleKeyCache(paramcomputeValueFunction: (param0: Object | null) => Object | null): SingleKeyCache<Object, Object>;
     static startTimerHackThread(): void;
     static throwAsRuntime(paramthrowable: Throwable): void;
+    static timeSource(): TimeSource$NanoTimeSource;
     static toMap(): Collector<Map$Entry<Object, Object>, Object, Map<Object | null, Object | null>>;
     static toMutableList(): Collector<Object, Object, (Object | null)[]>;
     static toShuffledList(paramstream: Stream<Object>, paramrandom: RandomSource): (Object | null)[];

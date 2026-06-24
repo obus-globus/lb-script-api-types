@@ -19,6 +19,6 @@ export class SpriteIconButton$TextAndIcon extends SpriteIconButton {
     static defaultInactiveMessage(paramactiveMessage: Component): Component;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(width: number, height: number, message: Component, spriteWidth: number, spriteHeight: number, sprite: WidgetSprites, onPress: Button$OnPress, tooltip: Component, narration: Button$CreateNarration)
+    constructor(width: number, height: number, message: Component, spriteWidth: number, spriteHeight: number, spriteOffsetX: number, spriteOffsetY: number, sprite: WidgetSprites, onPress: Button$OnPress, tooltip: Component, narration: Button$CreateNarration, switchToLoadingAfterPress: boolean)
     extractContents(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
 }

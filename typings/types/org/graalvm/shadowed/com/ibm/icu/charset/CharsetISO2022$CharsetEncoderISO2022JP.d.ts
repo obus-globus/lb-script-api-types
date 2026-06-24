@@ -4,9 +4,10 @@ import type { IntBuffer } from '../../../../../../../java/nio/IntBuffer.d.ts'
 import type { CoderResult } from '../../../../../../../java/nio/charset/CoderResult.d.ts'
 import type { CharsetEncoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetEncoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetISO2022 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetISO2022.d.ts'
 export class CharsetISO2022$CharsetEncoderISO2022JP extends CharsetEncoderICU {
     static getMaxBytesForString(paramlength: number, parammaxCharSize: number): number;
-    constructor(null_: CharsetISO2022$CharsetEncoderISO2022JP, cs: CharsetICU)
+    constructor(null_: CharsetISO2022, cs: CharsetICU)
     // private _2022FromSJIS(value: number): number;
     cbFromUWriteSub(encoder: CharsetEncoderICU, source: CharBuffer, target: ByteBuffer, offsets: IntBuffer): CoderResult;
     encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;

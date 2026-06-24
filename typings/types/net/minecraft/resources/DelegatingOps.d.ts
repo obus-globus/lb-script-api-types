@@ -22,7 +22,6 @@ export abstract class DelegatingOps<T extends unknown> extends Object implements
     convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: T): U;
     convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: T): U;
     convertTo<U extends unknown>(outOps: DynamicOps<U>, input: T): U;
-    createBoolean(arg0: boolean): T;
     createBoolean(value: boolean): T;
     createByte(arg0: number): T;
     createByte(value: number): T;
@@ -52,7 +51,6 @@ export abstract class DelegatingOps<T extends unknown> extends Object implements
     emptyList(): T;
     emptyMap(): T;
     get(arg0: T, arg1: string): DataResult<T>;
-    getBooleanValue(arg0: T): DataResult<boolean>;
     getBooleanValue(input: T): DataResult<boolean>;
     getByteBuffer(arg0: T): DataResult<ByteBuffer>;
     getByteBuffer(input: T): DataResult<ByteBuffer>;

@@ -8,6 +8,7 @@ export class NearestLivingEntitySensor<T extends LivingEntity> extends Sensor<T>
     static isEntityAttackable(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static isEntityAttackableIgnoringLineOfSight(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static isEntityTargetable(paramlevel: ServerLevel, parambody: LivingEntity, paramentity: LivingEntity): boolean;
+    static rememberPositives(paraminvocations: number, parampredicate: (param0: Object | null, param1: Object | null) => boolean): (param0: Object | null, param1: Object | null) => boolean;
     static wasEntityAttackableLastNTicks(parambody: LivingEntity, paramticks: number): (param0: ServerLevel, param1: LivingEntity) => boolean;
     constructor()
     doTick(level: ServerLevel, body: T): void;

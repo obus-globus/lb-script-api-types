@@ -8,6 +8,8 @@ export class ListOperation$ReplaceSection extends Record implements ListOperatio
     static MAP_CODEC: MapCodec<ListOperation$ReplaceSection>;
     static UNLIMITED_CODEC: MapCodec<ListOperation>;
     static codec(parammaxSize: number): MapCodec<ListOperation>;
+    constructor(offset: number)
+    constructor(offset: number, size: Optional<number>)
     // private offset: number;
     // private size: Optional<number>;
     apply<T extends unknown>(original: T[], replacement: T[]): T[];

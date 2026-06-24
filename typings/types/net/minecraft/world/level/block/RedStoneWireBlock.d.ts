@@ -121,6 +121,7 @@ export class RedStoneWireBlock extends Block {
     mirror(state: BlockState, mirror: Mirror): BlockState;
     neighborChanged(state: BlockState, level: Level, pos: BlockPos, block: Block, orientation: Orientation, movedByPiston: boolean): void;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     rotate(state: BlockState, rotation: Rotation): BlockState;
     updateIndirectNeighbourShapes(state: BlockState, level: LevelAccessor, pos: BlockPos, updateFlags: number, updateLimit: number): void;
     // private updateNeighborsOfNeighboringWires(level: Level, pos: BlockPos): void;

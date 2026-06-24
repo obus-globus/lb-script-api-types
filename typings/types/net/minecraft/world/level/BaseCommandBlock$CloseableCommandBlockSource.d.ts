@@ -3,9 +3,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CommandSource } from '../../../../net/minecraft/commands/CommandSource.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
+import type { BaseCommandBlock } from '../../../../net/minecraft/world/level/BaseCommandBlock.d.ts'
 export class BaseCommandBlock$CloseableCommandBlockSource extends Object implements AutoCloseable, CommandSource {
     static NULL: CommandSource;
-    constructor(null_: BaseCommandBlock$CloseableCommandBlockSource, level: ServerLevel)
+    constructor(null_: BaseCommandBlock, level: ServerLevel)
     // private closed: boolean;
     // private level: ServerLevel;
     acceptsFailure(): boolean;

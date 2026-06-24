@@ -26,8 +26,9 @@ import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
-export class DecimalFormat extends NumberFormat {
+export class DecimalFormat extends NumberFormat implements Cloneable {
     static ACCOUNTINGCURRENCYSTYLE: number;
     static CASHCURRENCYSTYLE: number;
     static CURRENCYSTYLE: number;
@@ -89,7 +90,8 @@ export class DecimalFormat extends NumberFormat {
     applyLocalizedPattern(arg0: string): void;
     applyPattern(arg0: string): void;
     areSignificantDigitsUsed(): boolean;
-    clone(): Object;
+    clone(): DecimalFormat;
+    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     format(arg0: BigDecimal): string;
     format(arg0: BigDecimal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;

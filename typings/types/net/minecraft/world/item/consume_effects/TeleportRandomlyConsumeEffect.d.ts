@@ -14,6 +14,8 @@ export class TeleportRandomlyConsumeEffect extends Record implements ConsumeEffe
     static CODEC: MapCodec<TeleportRandomlyConsumeEffect>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ConsumeEffect>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, TeleportRandomlyConsumeEffect>;
+    constructor()
+    constructor(diameter: number)
     // private diameter: number;
     apply(level: Level, stack: ItemStack, user: LivingEntity): boolean;
     diameter(): number;

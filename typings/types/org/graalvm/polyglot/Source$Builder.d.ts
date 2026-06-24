@@ -5,7 +5,7 @@ import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { Source } from '../../../org/graalvm/polyglot/Source.d.ts'
 import type { ByteSequence } from '../../../org/graalvm/polyglot/io/ByteSequence.d.ts'
 export class Source$Builder extends Object {
-    constructor(null_: Source$Builder, language: string, origin: Object)
+    constructor(null_: Source, language: string, origin: Object)
     // private cached: boolean;
     // private content: Object;
     // private fileEncoding: Charset;

@@ -1,9 +1,10 @@
+import type { AbstractMapBasedMultimap } from '../../../../com/google/common/collect/AbstractMapBasedMultimap.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export abstract class AbstractMapBasedMultimap$Itr<T extends unknown> extends Object implements Iterator<T> {
-    constructor(null_: AbstractMapBasedMultimap$Itr<Object>)
+    constructor(null_: AbstractMapBasedMultimap<K, V>)
     // private collection: V[];
     // private key: K;
     // private keyIterator: Iterator<Map$Entry<K, V[]>>;

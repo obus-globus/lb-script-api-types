@@ -20,6 +20,7 @@ export interface ServerEntityGetter extends Object, EntityGetter {
     getLevel(): ServerLevel;
     getNearbyEntities<T extends LivingEntity>(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, bb: AABB): T[];
     getNearbyPlayers(targetConditions: TargetingConditions, source: LivingEntity, bb: AABB): Player[];
+    getNearestEntity<T extends Entity>(entities: T[], x: number, y: number, z: number): T;
     getNearestEntity<T extends LivingEntity>(entities: T[], targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number): T;
     getNearestEntity<T extends LivingEntity>(type: Class<T>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): T;
     getNearestEntity(tag: TagKey<EntityType<any>>, targetConditions: TargetingConditions, source: LivingEntity, x: number, y: number, z: number, bb: AABB): LivingEntity;

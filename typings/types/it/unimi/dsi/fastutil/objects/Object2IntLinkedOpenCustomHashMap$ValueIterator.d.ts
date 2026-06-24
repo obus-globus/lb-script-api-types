@@ -2,7 +2,7 @@ import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/
 import type { Object2IntLinkedOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2IntLinkedOpenCustomHashMap$MapIterator.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Object2IntLinkedOpenCustomHashMap$ValueIterator extends Object2IntLinkedOpenCustomHashMap$MapIterator<Object> implements IntListIterator {
-    constructor(null_: Object2IntLinkedOpenCustomHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

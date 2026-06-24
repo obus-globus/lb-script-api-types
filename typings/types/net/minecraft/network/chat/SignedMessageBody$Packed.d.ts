@@ -7,6 +7,8 @@ import type { LastSeenMessages$Packed } from '../../../../net/minecraft/network/
 import type { MessageSignatureCache } from '../../../../net/minecraft/network/chat/MessageSignatureCache.d.ts'
 import type { SignedMessageBody } from '../../../../net/minecraft/network/chat/SignedMessageBody.d.ts'
 export class SignedMessageBody$Packed extends Record {
+    constructor(content: string, timeStamp: Instant, salt: number, lastSeen: LastSeenMessages$Packed)
+    constructor(input: FriendlyByteBuf)
     // private content: string;
     // private lastSeen: LastSeenMessages$Packed;
     // private salt: number;

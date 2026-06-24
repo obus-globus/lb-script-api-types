@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { DedicatedServer } from '../../../../net/minecraft/server/dedicated/DedicatedServer.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { NotificationService } from '../../../../net/minecraft/server/notifications/NotificationService.d.ts'
 import type { IpBanListEntry } from '../../../../net/minecraft/server/players/IpBanListEntry.d.ts'
@@ -21,10 +22,12 @@ export class NotificationManager extends Object implements NotificationService {
     playerRemovedFromAllowlist(player: NameAndId): void;
     playerUnbanned(player: NameAndId): void;
     registerService(notificationService: NotificationService): void;
+    server(): DedicatedServer;
     serverActivityOccured(): void;
     serverSaveCompleted(): void;
     serverSaveStarted(): void;
     serverShuttingDown(): void;
     serverStarted(): void;
+    setServer(server: DedicatedServer): void;
     statusHeartbeat(): void;
 }

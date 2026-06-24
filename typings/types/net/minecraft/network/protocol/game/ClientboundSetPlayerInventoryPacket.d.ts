@@ -12,6 +12,7 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 export class ClientboundSetPlayerInventoryPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetPlayerInventoryPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(slot: number, contents: ItemStack)
     // private contents: ItemStack;
     // private slot: number;
     contents(): ItemStack;

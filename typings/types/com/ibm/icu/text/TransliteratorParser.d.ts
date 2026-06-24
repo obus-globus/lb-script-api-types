@@ -3,7 +3,7 @@ import type { RuleBasedTransliterator$Data } from '../../../../com/ibm/icu/text/
 import type { StringMatcher } from '../../../../com/ibm/icu/text/StringMatcher.d.ts'
 import type { TransliteratorParser$ParseData } from '../../../../com/ibm/icu/text/TransliteratorParser$ParseData.d.ts'
 import type { TransliteratorParser$RuleBody } from '../../../../com/ibm/icu/text/TransliteratorParser$RuleBody.d.ts'
-import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
+import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TransliteratorParser extends Object {
@@ -16,13 +16,13 @@ export class TransliteratorParser extends Object {
     idBlockVector: string[];
     // private parseData: TransliteratorParser$ParseData;
     // private segmentObjects: StringMatcher[];
-    // private segmentStandins: StringBuffer;
+    // private segmentStandins: StringBuilder;
     // private undefinedVariableName: string;
     // private variableLimit: string;
     // private variableNames: { [key: string]: string[] };
     // private variableNext: string;
     // private variablesVector: Object[];
-    // private appendVariableDef(arg0: string, arg1: StringBuffer): void;
+    // private appendVariableDef(arg0: string, arg1: StringBuilder): void;
     // private checkVariableRange(arg0: number, arg1: string, arg2: number): void;
     generateStandInFor(arg0: Object): string;
     getDotStandIn(): string;

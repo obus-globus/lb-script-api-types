@@ -3,8 +3,8 @@ import type { Byte2ReferenceRBTreeMap$TreeIterator } from '../../../../../it/uni
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2ReferenceRBTreeMap$EntryIterator extends Byte2ReferenceRBTreeMap$TreeIterator implements ObjectListIterator<Byte2ReferenceMap$Entry<V>> {
-    constructor(null_: Byte2ReferenceRBTreeMap$EntryIterator)
-    constructor(null_: Byte2ReferenceRBTreeMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add<V extends unknown>(arg0: Byte2ReferenceMap$Entry<V>): void;
     next<V extends unknown>(): Byte2ReferenceMap$Entry<V>;
     previous<V extends unknown>(): Byte2ReferenceMap$Entry<V>;

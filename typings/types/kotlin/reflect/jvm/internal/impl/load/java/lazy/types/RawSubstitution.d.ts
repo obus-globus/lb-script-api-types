@@ -1,4 +1,5 @@
 import type { Pair } from '../../../../../../../../../kotlin/Pair.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { JavaTypeAttributes } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/types/JavaTypeAttributes.d.ts'
 import type { RawProjectionComputer } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/types/RawProjectionComputer.d.ts'
@@ -15,6 +16,7 @@ export class RawSubstitution extends TypeSubstitution {
     static EMPTY: TypeSubstitution;
     constructor()
     constructor(arg0: TypeParameterUpperBoundEraser)
+    constructor(arg0: TypeParameterUpperBoundEraser, arg1: number, arg2: DefaultConstructorMarker)
     // private projectionComputer: RawProjectionComputer;
     // private typeParameterUpperBoundEraser: TypeParameterUpperBoundEraser;
     // private eraseInflexibleBasedOnClassDescriptor(arg0: SimpleType, arg1: ClassDescriptor, arg2: JavaTypeAttributes): Pair<SimpleType, boolean>;

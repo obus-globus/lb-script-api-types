@@ -8,9 +8,13 @@ import type { StreamMemberEncoder } from '../../../../../net/minecraft/network/c
 import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ClientGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
+import type { LivingEntity } from '../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 export class ClientboundHurtAnimationPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundHurtAnimationPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(id: number, yaw: number)
+    private constructor(input: FriendlyByteBuf)
+    constructor(entity: LivingEntity)
     // private id: number;
     // private yaw: number;
     equals(o: Object | null): boolean;

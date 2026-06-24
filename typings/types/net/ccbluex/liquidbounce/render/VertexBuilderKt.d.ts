@@ -2,7 +2,7 @@ import type { RenderPipeline } from '../../../../com/mojang/blaze3d/pipeline/Ren
 import type { PoseStack$Pose } from '../../../../com/mojang/blaze3d/vertex/PoseStack$Pose.d.ts'
 import type { VertexConsumer } from '../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { StaticMeshStorage } from '../../../../net/ccbluex/liquidbounce/render/StaticMeshStorage.d.ts'
+import type { CachedMeshStorage } from '../../../../net/ccbluex/liquidbounce/render/CachedMeshStorage.d.ts'
 import type { Color4b } from '../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { Vec3f } from '../../../../net/ccbluex/liquidbounce/render/engine/type/Vec3f.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
@@ -33,9 +33,9 @@ export class VertexBuilderKt extends Object {
      *
      * @param origin a preferred origin; the lambda receives the resolved origin that must be used for relative vertex positions.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:227}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:227}
      */
-    static buildMesh(staticMeshStorage: StaticMeshStorage, pipeline: RenderPipeline, rotate: boolean, origin: BlockPos, block: (param0: Object, param1: Object, param2: Object) => void): void;
+    static buildMesh(paramarg0: CachedMeshStorage, paramarg1: RenderPipeline, paramarg2: BlockPos, paramarg3: (param0: Object, param1: Object, param2: Object) => void): void;
     static setColor(vertexConsumer: VertexConsumer, color: Color4b): VertexConsumer;
     static setNormal(vertexConsumer: VertexConsumer, pose: PoseStack$Pose, normalVector: Vec3f): VertexConsumer;
 }

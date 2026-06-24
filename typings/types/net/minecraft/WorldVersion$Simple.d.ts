@@ -6,6 +6,7 @@ import type { PackType } from '../../net/minecraft/server/packs/PackType.d.ts'
 import type { PackFormat } from '../../net/minecraft/server/packs/metadata/pack/PackFormat.d.ts'
 import type { DataVersion } from '../../net/minecraft/world/level/storage/DataVersion.d.ts'
 export class WorldVersion$Simple extends Record implements WorldVersion {
+    constructor(id: string, name: string, dataVersion: DataVersion, protocolVersion: number, resourcePackVersion: PackFormat, datapackVersion: PackFormat, buildTime: Date, stable: boolean)
     // private buildTime: Date;
     // private dataVersion: DataVersion;
     // private datapackVersion: PackFormat;

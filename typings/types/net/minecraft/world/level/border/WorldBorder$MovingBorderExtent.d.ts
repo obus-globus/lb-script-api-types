@@ -1,9 +1,10 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BorderStatus } from '../../../../../net/minecraft/world/level/border/BorderStatus.d.ts'
+import type { WorldBorder } from '../../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
 import type { WorldBorder$BorderExtent } from '../../../../../net/minecraft/world/level/border/WorldBorder$BorderExtent.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class WorldBorder$MovingBorderExtent extends Object implements WorldBorder$BorderExtent {
-    private constructor(null_: WorldBorder$MovingBorderExtent, from: number, to: number, duration: number, gameTime: number)
+    private constructor(null_: WorldBorder, from: number, to: number, duration: number, gameTime: number)
     // private from: number;
     // private lerpBegin: number;
     // private lerpDuration: number;

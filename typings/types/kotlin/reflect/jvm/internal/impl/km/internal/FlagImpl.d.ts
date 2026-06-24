@@ -8,9 +8,9 @@ export class FlagImpl extends Object {
     // private bitWidth: number;
     // private offset: number;
     // private value: number;
-    getBitWidth$kotlin_metadata(): number;
-    getOffset$kotlin_metadata(): number;
-    getValue$kotlin_metadata(): number;
+    getBitWidth$org_jetbrains_kotlin_kotlin_metadata(): number;
+    getOffset$org_jetbrains_kotlin_kotlin_metadata(): number;
+    getValue$org_jetbrains_kotlin_kotlin_metadata(): number;
     invoke(arg0: number): boolean;
-    plus$kotlin_metadata(arg0: number): number;
+    plus$org_jetbrains_kotlin_kotlin_metadata(arg0: number): number;
 }

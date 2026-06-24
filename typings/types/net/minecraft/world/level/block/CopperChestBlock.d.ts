@@ -82,6 +82,7 @@ export class CopperChestBlock extends ChestBlock {
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity): ItemStack[];
     static getDrops(paramstate: BlockState, paramlevel: ServerLevel, parampos: BlockPos, paramblockEntity: BlockEntity, parambreaker: Entity, paramtool: ItemInstance): ItemStack[];
     static getFromCopperBlock(paramcopperBlock: Block, paramfacing: Direction, paramlevel: Level, parampos: BlockPos): BlockState;
+    static getHingeSound(paramstate: WeatheringCopper$WeatherState, paramopen: boolean): SoundEvent;
     static getId(paramblockState: BlockState): number;
     static isChestBlockedAt(paramlevel: LevelAccessor, parampos: BlockPos): boolean;
     static isExceptionForConnection(paramstate: BlockState): boolean;

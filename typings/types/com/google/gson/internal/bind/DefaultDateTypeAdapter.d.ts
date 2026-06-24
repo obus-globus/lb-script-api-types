@@ -1,3 +1,4 @@
+import type { DefaultDateTypeAdapter$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TypeAdapter } from '../../../../../com/google/gson/TypeAdapter.d.ts'
 import type { TypeAdapterFactory } from '../../../../../com/google/gson/TypeAdapterFactory.d.ts'
 import type { DefaultDateTypeAdapter$DateType } from '../../../../../com/google/gson/internal/bind/DefaultDateTypeAdapter$DateType.d.ts'
@@ -7,6 +8,8 @@ import type { DateFormat } from '../../../../../java/text/DateFormat.d.ts'
 import type { Date } from '../../../../../java/util/Date.d.ts'
 export class DefaultDateTypeAdapter<T extends Date> extends TypeAdapter<T> {
     static DEFAULT_STYLE_FACTORY: TypeAdapterFactory;
+    constructor(arg0: DefaultDateTypeAdapter$DateType<Date>, arg1: number, arg2: number, arg3: DefaultDateTypeAdapter$1)
+    constructor(arg0: DefaultDateTypeAdapter$DateType<Date>, arg1: string, arg2: DefaultDateTypeAdapter$1)
     private constructor(arg0: DefaultDateTypeAdapter$DateType<T>, arg1: number, arg2: number)
     private constructor(arg0: DefaultDateTypeAdapter$DateType<T>, arg1: string)
     // private dateFormats: DateFormat[];

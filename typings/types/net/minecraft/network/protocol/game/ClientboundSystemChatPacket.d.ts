@@ -12,6 +12,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 export class ClientboundSystemChatPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSystemChatPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(content: Component, overlay: boolean)
     // private content: Component;
     // private overlay: boolean;
     content(): Component;

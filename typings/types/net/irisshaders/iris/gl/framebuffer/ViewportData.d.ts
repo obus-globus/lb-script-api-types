@@ -2,6 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ViewportData extends Record {
     static defaultValue(): ViewportData;
+    constructor(scale: number, viewportX: number, viewportY: number)
     // private scale: number;
     // private viewportX: number;
     // private viewportY: number;

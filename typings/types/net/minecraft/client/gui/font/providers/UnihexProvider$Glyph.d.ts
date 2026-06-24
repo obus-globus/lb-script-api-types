@@ -6,6 +6,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BakedGlyph } from '../../../../../../net/minecraft/client/gui/font/glyphs/BakedGlyph.d.ts'
 import type { UnihexProvider$LineData } from '../../../../../../net/minecraft/client/gui/font/providers/UnihexProvider$LineData.d.ts'
 export class UnihexProvider$Glyph extends Record implements UnbakedGlyph {
+    private constructor(contents: UnihexProvider$LineData, left: number, right: number)
     // private contents: UnihexProvider$LineData;
     // private left: number;
     // private right: number;

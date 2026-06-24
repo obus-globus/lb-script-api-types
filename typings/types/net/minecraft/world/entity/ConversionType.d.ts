@@ -12,7 +12,6 @@ export class ConversionType extends Enum<ConversionType> {
     private constructor(discardAfterConversion: boolean)
     // private discardAfterConversion: boolean;
     convert(from: Mob, to: Mob, params: ConversionParams): void;
-    convertCommon(from: Mob, to: Mob, params: ConversionParams): void;
     shouldDiscardAfterConversion(): boolean;
     name(): "SINGLE" | "SPLIT_ON_DEATH";
 }

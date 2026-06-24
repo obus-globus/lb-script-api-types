@@ -24,8 +24,9 @@ import type { FieldPosition } from '../../../../java/text/FieldPosition.d.ts'
 import type { ParsePosition } from '../../../../java/text/ParsePosition.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
-export class RuleBasedNumberFormat extends NumberFormat {
+export class RuleBasedNumberFormat extends NumberFormat implements Cloneable {
     static ACCOUNTINGCURRENCYSTYLE: number;
     static CASHCURRENCYSTYLE: number;
     static CURRENCYSTYLE: number;
@@ -99,7 +100,8 @@ export class RuleBasedNumberFormat extends NumberFormat {
     // private ruleSetsMap: { [key: string]: NFRuleSet };
     // private scannerProvider: RbnfLenientScannerProvider;
     // private adjustForContext(arg0: string): string;
-    clone(): Object;
+    clone(): RuleBasedNumberFormat;
+    protected clone(): Object;
     createPluralFormat(arg0: PluralRules$PluralType, arg1: string): PluralFormat;
     equals(arg0: Object | null): boolean;
     findRuleSet(arg0: string): NFRuleSet;

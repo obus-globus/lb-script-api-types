@@ -6,7 +6,9 @@ import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft
 import type { Font } from '../../../../../../net/minecraft/client/gui/Font.d.ts'
 import type { GridLayoutTab } from '../../../../../../net/minecraft/client/gui/components/tabs/GridLayoutTab.d.ts'
 import type { ScreenRectangle } from '../../../../../../net/minecraft/client/gui/navigation/ScreenRectangle.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class RealmsPlayersTab extends GridLayoutTab implements RealmsConfigurationTab {
+    static TITLE: Component;
     constructor(configurationScreen: RealmsConfigureWorldScreen, minecraft: Minecraft, serverData: RealmsServer)
     // private configurationScreen: RealmsConfigureWorldScreen;
     // private font: Font;

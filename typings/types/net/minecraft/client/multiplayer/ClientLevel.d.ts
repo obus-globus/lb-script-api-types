@@ -24,8 +24,8 @@ import type { BlockStatePredictionHandler } from '../../../../net/minecraft/clie
 import type { AbstractClientPlayer } from '../../../../net/minecraft/client/player/AbstractClientPlayer.d.ts'
 import type { EndFlashState } from '../../../../net/minecraft/client/renderer/EndFlashState.d.ts'
 import type { LevelEventHandler } from '../../../../net/minecraft/client/renderer/LevelEventHandler.d.ts'
-import type { LevelRenderer } from '../../../../net/minecraft/client/renderer/LevelRenderer.d.ts'
 import type { BlockAndTintGetter } from '../../../../net/minecraft/client/renderer/block/BlockAndTintGetter.d.ts'
+import type { LevelExtractor } from '../../../../net/minecraft/client/renderer/extract/LevelExtractor.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
 import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
@@ -35,6 +35,7 @@ import type { ParticleOptions } from '../../../../net/minecraft/core/particles/P
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { BlockDestructionProgress } from '../../../../net/minecraft/server/level/BlockDestructionProgress.d.ts'
 import type { ParticleStatus } from '../../../../net/minecraft/server/level/ParticleStatus.d.ts'
 import type { SoundEvent } from '../../../../net/minecraft/sounds/SoundEvent.d.ts'
 import type { SoundSource } from '../../../../net/minecraft/sounds/SoundSource.d.ts'
@@ -58,6 +59,7 @@ import type { ExplosionDamageCalculator } from '../../../../net/minecraft/world/
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { Level$ExplosionInteraction } from '../../../../net/minecraft/world/level/Level$ExplosionInteraction.d.ts'
 import type { Biome } from '../../../../net/minecraft/world/level/biome/Biome.d.ts'
+import type { Biome$Precipitation } from '../../../../net/minecraft/world/level/biome/Biome$Precipitation.d.ts'
 import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockEntity } from '../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 import type { FuelValues } from '../../../../net/minecraft/world/level/block/entity/FuelValues.d.ts'
@@ -82,6 +84,7 @@ import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/Vox
 import type { Scoreboard } from '../../../../net/minecraft/world/scores/Scoreboard.d.ts'
 import type { LevelTickAccess } from '../../../../net/minecraft/world/ticks/LevelTickAccess.d.ts'
 export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrackerHolder, BiomeSeedProvider, CacheSlot$Cleaner<ClientLevel>, BlockAndTintGetter {
+    static ACROSS_THE_WHOLE_WORLD: number;
     static DEFAULT_QUIT_MESSAGE: Component;
     static DIRECTIONS: (Object | null)[];
     static EMPTY: BlockAndTintGetter;
@@ -99,7 +102,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     static get(paramarg0: ClientLevel): ChunkTracker;
     static getBiomeZoomSeed(paramarg0: ClientLevel): number;
     static isInSpawnableBounds(parampos: BlockPos): boolean;
-    constructor(connection: ClientPacketListener, levelData: ClientLevel$ClientLevelData, dimension: ResourceKey<Level>, dimensionType: Holder<DimensionType>, serverChunkRadius: number, serverSimulationDistance: number, levelRenderer: LevelRenderer, isDebug: boolean, biomeZoomSeed: number, seaLevel: number)
+    constructor(connection: ClientPacketListener, levelData: ClientLevel$ClientLevelData, dimension: ResourceKey<Level>, dimensionType: Holder<DimensionType>, serverChunkRadius: number, serverSimulationDistance: number, levelExtractor: LevelExtractor, isDebug: boolean, biomeZoomSeed: number, seaLevel: number)
     // private biomeZoomSeed: number;
     // private blockStatePredictionHandler: BlockStatePredictionHandler;
     readonly chunkSource: ClientChunkCache;
@@ -107,6 +110,8 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     // private clientLevelData: ClientLevel$ClientLevelData;
     // private connection: ClientPacketListener;
     // private customColorCache: Map<Object, Object>;
+    // private destroyingBlocks: { [key: string]: any };
+    // private destructionProgress: { [key: string]: any };
     // private dragonParts: EnderDragonPart[];
     // private endFlashState: EndFlashState;
     // private entityStorage: TransientEntitySectionManager<Entity>;
@@ -114,11 +119,12 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     // private explosionTracker: ClientExplosionTracker;
     readonly globallyRenderedBlockEntities: BlockEntity[];
     // private levelEventHandler: LevelEventHandler;
-    // private levelRenderer: LevelRenderer;
+    // private levelExtractor: LevelExtractor;
     // private lightUpdateQueue: () => void[];
     // private mapData: Map<MapId, MapItemSavedData>;
     // private minecraft: Minecraft;
     // private players: AbstractClientPlayer[];
+    // private rainSoundTime: number;
     readonly seaLevel: number;
     readonly serverSimulationDistance: number;
     readonly skyFlashTime: number;
@@ -142,7 +148,8 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     clearTintCaches(): void;
     clockManager(): ClientClockManager;
     createFireworks(x: number, y: number, z: number, xd: number, yd: number, zd: number, explosions: FireworkExplosion[]): void;
-    destroyBlockProgress(id: number, blockPos: BlockPos, progress: number): void;
+    destroyBlockProgress(id: number, pos: BlockPos, progress: number): void;
+    destructionProgress(): { [key: string]: any };
     disconnect(message: Component): void;
     // private doAddParticle(particle: ParticleOptions, overrideLimiter: boolean, alwaysShowParticles: boolean, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
     doAnimateTick(xt: number, yt: number, zt: number, r: number, animateRandom: RandomSource, markerParticleTarget: Block, pos: BlockPos$MutableBlockPos): void;
@@ -184,6 +191,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     getLevelData(): ClientLevel$ClientLevelData;
     getMapData(id: MapId): MapItemSavedData;
     // private getMarkerParticleTarget(): Block;
+    getPrecipitationAt(pos: BlockPos): Biome$Precipitation;
     getPushableEntities(pusher: Entity, boundingBox: AABB): Entity[];
     getRespawnData(): LevelData$RespawnData;
     getScoreboard(): Scoreboard;
@@ -202,7 +210,6 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     lithium$getEntityManager(): TransientEntitySectionManager<EntityAccess>;
     onBlockEntityAdded(blockEntity: BlockEntity): void;
     onChunkLoaded(pos: ChunkPos): void;
-    onSectionBecomingNonEmpty(sectionNode: number): void;
     overrideMapData(id: MapId, data: MapItemSavedData): void;
     playLocalSound(x: number, y: number, z: number, sound: SoundEvent, source: SoundSource, volume: number, pitch: number, distanceDelay: boolean): void;
     playLocalSound(pos: BlockPos, sound: SoundEvent, source: SoundSource, volume: number, pitch: number, distanceDelay: boolean): void;
@@ -224,7 +231,9 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     queueLightUpdate(update: () => void): void;
     recipeAccess(): RecipeAccess;
     registerForCleaning(slot: CacheSlot<ClientLevel, Object>): void;
+    // private removeBlockBreakingProgress(): void;
     removeEntity(id: number, reason: Entity$RemovalReason): void;
+    // private removeProgress(block: BlockDestructionProgress): void;
     sendBlockUpdated(pos: BlockPos, old: BlockState, current: BlockState, updateFlags: number): void;
     sendPacketToServer(packet: Packet<any>): void;
     setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number): boolean;
@@ -249,6 +258,7 @@ export class ClientLevel extends Level implements ClientWorldAccessor, ChunkTrac
     // private tickPassenger(vehicle: Entity, entity: Entity): void;
     tickRateManager(): TickRateManager;
     // private tickTime(): void;
+    tickWeatherEffects(): void;
     toString(): string;
     trackExplosionEffects(center: Vec3, radius: number, blockCount: number, blockParticles: WeightedList<ExplosionParticleInfo>): void;
     // private trySpawnDripParticles(pos: BlockPos, state: BlockState, dripParticle: ParticleOptions, isTopSolid: boolean): void;

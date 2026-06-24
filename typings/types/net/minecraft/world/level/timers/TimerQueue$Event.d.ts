@@ -3,6 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TimerCallback } from '../../../../../net/minecraft/world/level/timers/TimerCallback.d.ts'
 export class TimerQueue$Event<T extends unknown> extends Record {
+    constructor(triggerTime: number, sequentialId: UnsignedLong, id: string, callback: TimerCallback<T>)
     // private callback: TimerCallback<T>;
     // private id: string;
     // private sequentialId: UnsignedLong;

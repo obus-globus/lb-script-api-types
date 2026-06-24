@@ -7,6 +7,7 @@ import type { LootItemConditionalFunction$Builder } from '../../../../../../../n
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { NumberProvider } from '../../../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class SetOminousBottleAmplifierFunction extends LootItemConditionalFunction {
+    static MAP_CODEC: MapCodec<SetOminousBottleAmplifierFunction>;
     static setAmplifier(paramamplifier: NumberProvider): LootItemConditionalFunction$Builder<any>;
     private constructor(predicates: LootItemCondition[], amplifier: NumberProvider)
     // private amplifier: NumberProvider;

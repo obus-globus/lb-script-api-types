@@ -1,7 +1,8 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Type } from '../../../../../../org/objectweb/asm/Type.d.ts'
+import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 export class Target$Extension extends Object {
-    constructor(null_: Target$Extension, arg1: boolean)
+    constructor(null_: AbstractInsnNode[], arg1: boolean)
     // private locals: boolean;
     // private size: number;
     add(): Target$Extension;

@@ -20,6 +20,7 @@ export class OminousBottleAmplifier extends Record implements ConsumableListener
     static MAX_AMPLIFIER: number;
     static MIN_AMPLIFIER: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, OminousBottleAmplifier>;
+    constructor(value: number)
     // private value: number;
     addToTooltip(context: Item$TooltipContext, consumer: (param0: Component) => void, flag: TooltipFlag, components: DataComponentGetter): void;
     equals(o: Object | null): boolean;

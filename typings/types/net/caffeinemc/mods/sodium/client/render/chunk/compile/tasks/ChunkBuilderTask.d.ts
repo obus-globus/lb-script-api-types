@@ -16,7 +16,7 @@ export abstract class ChunkBuilderTask<OUTPUT extends BuilderTaskOutput> extends
     readonly estimatedDuration: number;
     readonly estimatedSize: number;
     readonly estimatedUploadDuration: number;
-    // private render: RenderSection;
+    // private section: RenderSection;
     // private submitTime: number;
     calculateEstimations(arg0: JobDurationEstimator, arg1: MeshTaskSizeEstimator, arg2: UploadDurationEstimator): void;
     estimateTaskSizeWith(arg0: MeshTaskSizeEstimator): number;
@@ -26,4 +26,5 @@ export abstract class ChunkBuilderTask<OUTPUT extends BuilderTaskOutput> extends
     getEstimatedSize(): number;
     getEstimatedUploadDuration(): number;
     getRelativeCameraPos(): Vector3fc;
+    getRenderSection(): RenderSection;
 }

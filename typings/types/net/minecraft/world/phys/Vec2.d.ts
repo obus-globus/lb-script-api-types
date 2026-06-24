@@ -17,11 +17,12 @@ export class Vec2 extends Object {
     add(rhs: Vec2): Vec2;
     distanceToSqr(p: Vec2): number;
     dot(v: Vec2): number;
-    equals(other: Object | null): boolean;
-    equals(rhs: Vec2): boolean;
+    equals(rhs: Object | null): boolean;
+    hashCode(): number;
     length(): number;
     lengthSquared(): number;
     negated(): Vec2;
     normalized(): Vec2;
+    rotate(angleRadians: number): Vec2;
     scale(s: number): Vec2;
 }

@@ -2,6 +2,7 @@ import type { BufferedImage } from '../../../../../java/awt/image/BufferedImage.
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SkinData$AnimationData extends Record {
+    constructor(image: BufferedImage, type: number, frames: number, expression: number)
     // private expression: number;
     // private frames: number;
     // private image: BufferedImage;

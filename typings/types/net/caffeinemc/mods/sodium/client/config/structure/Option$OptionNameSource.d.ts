@@ -4,7 +4,7 @@ import type { Option } from '../../../../../../../net/caffeinemc/mods/sodium/cli
 import type { OptionGroup } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/structure/OptionGroup.d.ts'
 import type { OptionPage } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/structure/OptionPage.d.ts'
 export class Option$OptionNameSource extends TextSource {
-    constructor(null_: Option$OptionNameSource, arg1: ModOptions, arg2: OptionPage, arg3: OptionGroup)
+    constructor(null_: Option, arg1: ModOptions, arg2: OptionPage, arg3: OptionGroup)
     readonly modOptions: ModOptions;
     readonly optionGroup: OptionGroup;
     readonly page: OptionPage;

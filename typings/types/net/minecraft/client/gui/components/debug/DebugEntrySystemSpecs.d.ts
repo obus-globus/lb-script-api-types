@@ -1,3 +1,4 @@
+import type { DeviceType } from '../../../../../../com/mojang/blaze3d/systems/DeviceType.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { DebugEntryCategory } from '../../../../../../net/minecraft/client/gui/components/debug/DebugEntryCategory.d.ts'
 import type { DebugScreenDisplayer } from '../../../../../../net/minecraft/client/gui/components/debug/DebugScreenDisplayer.d.ts'
@@ -8,5 +9,7 @@ export class DebugEntrySystemSpecs extends Object implements DebugScreenEntry {
     constructor()
     category(): DebugEntryCategory;
     display(displayer: DebugScreenDisplayer, serverOrClientLevel: Level, clientChunk: LevelChunk, serverChunk: LevelChunk): void;
+    // private firstLine(value: string): string;
     isAllowed(reducedDebugInfo: boolean): boolean;
+    // private typeName(type: DeviceType): string;
 }

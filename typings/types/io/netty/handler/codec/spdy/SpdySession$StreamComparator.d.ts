@@ -1,3 +1,4 @@
+import type { SpdySession } from '../../../../../io/netty/handler/codec/spdy/SpdySession.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { ToDoubleFunction } from '../../../../../java/util/function/ToDoubleFunction.d.ts'
@@ -15,7 +16,7 @@ export class SpdySession$StreamComparator extends Object implements Comparator<n
     static nullsFirst(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static reverseOrder(): (param0: Object) => boolean;
-    constructor(null_: SpdySession$StreamComparator)
+    constructor(null_: SpdySession)
     compare(arg0: number, arg1: number): number;
     reversed(): (param0: Object) => boolean;
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;

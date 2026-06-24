@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CuboidFace$UVs extends Record {
+    constructor(minU: number, minV: number, maxU: number, maxV: number)
     // private maxU: number;
     // private maxV: number;
     // private minU: number;

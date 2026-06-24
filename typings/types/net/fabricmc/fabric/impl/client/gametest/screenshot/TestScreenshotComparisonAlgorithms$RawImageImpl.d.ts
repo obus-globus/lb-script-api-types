@@ -6,6 +6,7 @@ export class TestScreenshotComparisonAlgorithms$RawImageImpl<DATA extends unknow
     static fromColorNativeImage(paramarg0: NativeImage): TestScreenshotComparisonAlgorithm$RawImage<number[]>;
     static fromGrayscaleNativeImage(paramarg0: NativeImage): TestScreenshotComparisonAlgorithm$RawImage<number[]>;
     static toColor(paramarg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>): TestScreenshotComparisonAlgorithm$RawImage<number[]>;
+    constructor(width: number, height: number, data: DATA)
     // private data: DATA;
     // private height: number;
     // private width: number;

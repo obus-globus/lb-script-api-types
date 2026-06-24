@@ -3,8 +3,6 @@ import type { TextTrieMap$Output } from '../../../../com/ibm/icu/impl/TextTrieMa
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class TextTrieMap$Node extends Object {
-    private constructor(null_: TextTrieMap$Node)
-    private constructor(null_: TextTrieMap$Node, arg2: V[], arg3: TextTrieMap$Node[])
     // private _children: TextTrieMap$Node[];
     // private _text: string[];
     // private _values: V[];

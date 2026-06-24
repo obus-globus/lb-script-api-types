@@ -2,6 +2,7 @@ import type { EfficiencyAttributeStorage$ActiveEnchant } from '../../../../../..
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EfficiencyAttributeStorage$ActiveEnchants extends Record {
+    constructor(entityId: number, efficiency: EfficiencyAttributeStorage$ActiveEnchant, soulSpeed: EfficiencyAttributeStorage$ActiveEnchant, swiftSneak: EfficiencyAttributeStorage$ActiveEnchant, aquaAffinity: EfficiencyAttributeStorage$ActiveEnchant, depthStrider: EfficiencyAttributeStorage$ActiveEnchant)
     // private aquaAffinity: EfficiencyAttributeStorage$ActiveEnchant;
     // private depthStrider: EfficiencyAttributeStorage$ActiveEnchant;
     // private efficiency: EfficiencyAttributeStorage$ActiveEnchant;

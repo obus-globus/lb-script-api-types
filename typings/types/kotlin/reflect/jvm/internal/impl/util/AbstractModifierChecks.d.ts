@@ -5,5 +5,5 @@ import type { Checks } from '../../../../../../kotlin/reflect/jvm/internal/impl/
 export abstract class AbstractModifierChecks extends Object {
     constructor()
     check(arg0: FunctionDescriptor): CheckResult;
-    getChecks$descriptors(): Checks[];
+    getChecks$org_jetbrains_kotlin_descriptors(): Checks[];
 }

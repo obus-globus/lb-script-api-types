@@ -3,6 +3,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ItemExchangeValue extends Record {
     static TYPE: Type<ItemExchangeValue>;
+    constructor(value: number)
     // private value: number;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

@@ -3,7 +3,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 export class ValuePropertiesCollection$PropertiesIterator extends Object implements Iterator<DebugValue> {
-    constructor(null_: ValuePropertiesCollection$PropertiesIterator, ignoredName: string)
+    constructor(null_: (Object | null)[], ignoredName: string)
     // private currentIndex: number;
     // private ignoredName: string;
     // private nextMember: string;

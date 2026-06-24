@@ -22,6 +22,7 @@ export class WebSocketReader extends Object implements Closeable {
     // private opcode: number;
     // private perMessageDeflate: boolean;
     // private readingCompressedMessage: boolean;
+    // private receivedCloseFrame: boolean;
     readonly source: BufferedSource;
     close(): void;
     processNextFrame(): void;

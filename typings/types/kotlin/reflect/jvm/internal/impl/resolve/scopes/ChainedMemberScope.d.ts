@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { ClassifierDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassifierDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
@@ -13,9 +14,11 @@ export class ChainedMemberScope extends Object implements MemberScope {
     static Companion: ChainedMemberScope$Companion;
     static Companion: MemberScope$Companion;
     private constructor(arg0: string, arg1: MemberScope[])
+    constructor(arg0: string, arg1: MemberScope[], arg2: DefaultConstructorMarker)
     // private debugName: string;
     // private scopes: MemberScope[];
     getClassifierNames(): Name[];
+    getComponentScopes(): MemberScope[];
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
     getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): DeclarationDescriptor[];
     getContributedFunctions(arg0: Name, arg1: LookupLocation): SimpleFunctionDescriptor[];

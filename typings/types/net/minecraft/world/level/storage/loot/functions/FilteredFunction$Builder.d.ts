@@ -1,5 +1,5 @@
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
-import type { ItemPredicate } from '../../../../../../../net/minecraft/advancements/criterion/ItemPredicate.d.ts'
+import type { ItemPredicate } from '../../../../../../../net/minecraft/advancements/predicates/ItemPredicate.d.ts'
 import type { LootItemConditionalFunction$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder.d.ts'
 import type { LootItemFunction } from '../../../../../../../net/minecraft/world/level/storage/loot/functions/LootItemFunction.d.ts'
 export class FilteredFunction$Builder extends LootItemConditionalFunction$Builder<FilteredFunction$Builder> {

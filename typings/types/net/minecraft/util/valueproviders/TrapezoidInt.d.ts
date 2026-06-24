@@ -7,6 +7,7 @@ export class TrapezoidInt extends Record implements IntProvider {
     static MAP_CODEC: MapCodec<TrapezoidInt>;
     static of(parammin: number, parammax: number, paramplateau: number): TrapezoidInt;
     static triangle(paramrange: number): IntProvider;
+    constructor(minInclusive: number, maxInclusive: number, plateau: number)
     // private maxInclusive: number;
     // private minInclusive: number;
     // private plateau: number;

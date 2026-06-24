@@ -1,8 +1,10 @@
+import type { MoreObjects$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { MoreObjects$ToStringHelper$UnconditionalValueHolder } from '../../../../com/google/common/base/MoreObjects$ToStringHelper$UnconditionalValueHolder.d.ts'
 import type { MoreObjects$ToStringHelper$ValueHolder } from '../../../../com/google/common/base/MoreObjects$ToStringHelper$ValueHolder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MoreObjects$ToStringHelper extends Object {
     private constructor(className: string)
+    constructor(arg0: string, arg1: MoreObjects$1)
     // private className: string;
     // private holderHead: MoreObjects$ToStringHelper$ValueHolder;
     // private holderTail: MoreObjects$ToStringHelper$ValueHolder;

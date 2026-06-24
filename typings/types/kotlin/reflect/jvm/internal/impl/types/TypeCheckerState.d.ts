@@ -14,7 +14,7 @@ export class TypeCheckerState extends Object {
     // private isDnnTypesEqualToFlexible: boolean;
     // private isErrorTypeEqualsToAnything: boolean;
     // private isStubTypeEqualsToAnything: boolean;
-    // private kotlinTypePreparator: AbstractTypePreparator;
+    readonly kotlinTypePreparator: AbstractTypePreparator;
     // private kotlinTypeRefiner: AbstractTypeRefiner;
     readonly supertypesDeque: RigidTypeMarker[];
     // private supertypesLocked: boolean;
@@ -23,6 +23,7 @@ export class TypeCheckerState extends Object {
     addSubtypeConstraint(arg0: KotlinTypeMarker, arg1: KotlinTypeMarker, arg2: boolean): boolean;
     clear(): void;
     customIsSubtypeOf(arg0: KotlinTypeMarker, arg1: KotlinTypeMarker): boolean;
+    getKotlinTypePreparator(): AbstractTypePreparator;
     getLowerCapturedTypePolicy(arg0: RigidTypeMarker, arg1: CapturedTypeMarker): TypeCheckerState$LowerCapturedTypePolicy;
     getSupertypesDeque(): RigidTypeMarker[];
     getSupertypesSet(): RigidTypeMarker[];

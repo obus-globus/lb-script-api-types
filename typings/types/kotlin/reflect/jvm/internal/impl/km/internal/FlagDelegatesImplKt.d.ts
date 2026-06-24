@@ -10,10 +10,13 @@ import type { KmTypeAlias } from '../../../../../../../kotlin/reflect/jvm/intern
 import type { KmValueParameter } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/KmValueParameter.d.ts'
 import type { MemberKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/MemberKind.d.ts'
 import type { Modality } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/Modality.d.ts'
+import type { ReturnValueStatus } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/ReturnValueStatus.d.ts'
 import type { Visibility } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/Visibility.d.ts'
 import type { BooleanFlagDelegate } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/internal/BooleanFlagDelegate.d.ts'
 import type { EnumFlagDelegate } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/internal/EnumFlagDelegate.d.ts'
 import type { FlagImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/km/internal/FlagImpl.d.ts'
+import type { Flags$FlagField } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/Flags$FlagField.d.ts'
+import type { Internal$EnumLite } from '../../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/Internal$EnumLite.d.ts'
 export class FlagDelegatesImplKt extends Object {
     static classBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmClass>;
     static constructorBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmConstructor>;
@@ -22,6 +25,7 @@ export class FlagDelegatesImplKt extends Object {
     static modalityDelegate(paramarg0: KMutableProperty1<Object, number>): EnumFlagDelegate<Object, Modality>;
     static propertyAccessorBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmPropertyAccessorAttributes>;
     static propertyBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmProperty>;
+    static returnValueStatusDelegate(paramarg0: KMutableProperty1<Object, number>, paramarg1: Flags$FlagField<Internal$EnumLite>): EnumFlagDelegate<Object, ReturnValueStatus>;
     static typeAliasBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmTypeAlias>;
     static typeBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmType>;
     static valueParameterBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmValueParameter>;

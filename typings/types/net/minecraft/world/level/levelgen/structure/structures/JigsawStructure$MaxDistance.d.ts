@@ -3,6 +3,8 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class JigsawStructure$MaxDistance extends Record {
     static CODEC: Codec<JigsawStructure$MaxDistance>;
+    constructor(value: number)
+    constructor(horizontal: number, vertical: number)
     // private horizontal: number;
     // private vertical: number;
     equals(o: Object | null): boolean;

@@ -4,7 +4,7 @@ import type { AvoidEntityGoal } from '../../../../../../net/minecraft/world/enti
 import type { Llama } from '../../../../../../net/minecraft/world/entity/animal/equine/Llama.d.ts'
 import type { Wolf } from '../../../../../../net/minecraft/world/entity/animal/wolf/Wolf.d.ts'
 export class Wolf$WolfAvoidEntityGoal<T extends LivingEntity> extends AvoidEntityGoal<T> {
-    constructor(null_: Wolf$WolfAvoidEntityGoal<T>, avoidClass: Class<T>, maxDist: number, walkSpeedModifier: number, sprintSpeedModifier: number)
+    constructor(null_: Wolf, wolf: Wolf, avoidClass: Class<T>, maxDist: number, walkSpeedModifier: number, sprintSpeedModifier: number)
     // private wolf: Wolf;
     // private avoidLlama(llama: Llama): boolean;
     canUse(): boolean;

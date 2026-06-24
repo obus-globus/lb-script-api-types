@@ -4,19 +4,21 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../../net/minecraft/core/Holder.d.ts'
 import type { FloatProvider } from '../../../../../../../net/minecraft/util/valueproviders/FloatProvider.d.ts'
 import type { IntProvider } from '../../../../../../../net/minecraft/util/valueproviders/IntProvider.d.ts'
+import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { ConfiguredFeature } from '../../../../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
 import type { FeatureConfiguration } from '../../../../../../../net/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration.d.ts'
 import type { NoneFeatureConfiguration } from '../../../../../../../net/minecraft/world/level/levelgen/feature/configurations/NoneFeatureConfiguration.d.ts'
 export class LargeDripstoneConfiguration extends Object implements FeatureConfiguration {
     static CODEC: Codec<LargeDripstoneConfiguration>;
     static NONE: NoneFeatureConfiguration;
-    constructor(floorToCeilingSearchRange: number, columnRadius: IntProvider, heightScale: FloatProvider, maxColumnRadiusToCaveHeightRatio: number, stalactiteBluntness: FloatProvider, stalagmiteBluntness: FloatProvider, windSpeed: FloatProvider, minRadiusForWind: number, minBluntnessForWind: number)
+    constructor(replaceableBlocks: Holder<Block>[], floorToCeilingSearchRange: number, columnRadius: IntProvider, heightScale: FloatProvider, maxColumnRadiusToCaveHeightRatio: number, stalactiteBluntness: FloatProvider, stalagmiteBluntness: FloatProvider, windSpeed: FloatProvider, minRadiusForWind: number, minBluntnessForWind: number)
     columnRadius: IntProvider;
     floorToCeilingSearchRange: number;
     heightScale: FloatProvider;
     maxColumnRadiusToCaveHeightRatio: number;
     minBluntnessForWind: number;
     minRadiusForWind: number;
+    replaceableBlocks: Holder<Block>[];
     stalactiteBluntness: FloatProvider;
     stalagmiteBluntness: FloatProvider;
     windSpeed: FloatProvider;

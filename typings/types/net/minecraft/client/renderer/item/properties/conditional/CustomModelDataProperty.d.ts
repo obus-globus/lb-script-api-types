@@ -8,6 +8,7 @@ import type { ItemDisplayContext } from '../../../../../../../net/minecraft/worl
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class CustomModelDataProperty extends Record implements ConditionalItemModelProperty {
     static MAP_CODEC: MapCodec<CustomModelDataProperty>;
+    constructor(index: number)
     // private index: number;
     equals(o: Object | null): boolean;
     get(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity, seed: number, displayContext: ItemDisplayContext): boolean;

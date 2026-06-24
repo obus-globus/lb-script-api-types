@@ -3,6 +3,7 @@ import type { NormalizedDurationRecord } from '../../../../../../com/oracle/truf
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RoundRelativeDurationNode$DurationNudgeResultRecord extends Record {
+    constructor(duration: NormalizedDurationRecord, total: number, nudgedEpochNs: BigInt, didExpandCalendarUnit: boolean)
     // private didExpandCalendarUnit: boolean;
     // private duration: NormalizedDurationRecord;
     // private nudgedEpochNs: BigInt;

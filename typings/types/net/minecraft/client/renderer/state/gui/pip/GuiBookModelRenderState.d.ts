@@ -4,10 +4,12 @@ import type { ScreenRectangle } from '../../../../../../../net/minecraft/client/
 import type { BookModel } from '../../../../../../../net/minecraft/client/model/object/book/BookModel.d.ts'
 import type { PictureInPictureRenderState } from '../../../../../../../net/minecraft/client/renderer/state/gui/pip/PictureInPictureRenderState.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
-import type { Matrix3x2f } from '../../../../../../../org/joml/Matrix3x2f.d.ts'
+import type { Matrix3x2fc } from '../../../../../../../org/joml/Matrix3x2fc.d.ts'
 export class GuiBookModelRenderState extends Record implements PictureInPictureRenderState {
-    static IDENTITY_POSE: Matrix3x2f;
+    static IDENTITY_POSE: Matrix3x2fc;
     static getBounds(paramx0: number, paramy0: number, paramx1: number, paramy1: number, paramscissorArea: ScreenRectangle): ScreenRectangle;
+    constructor(bookModel: BookModel, texture: Identifier, open: number, flip: number, x0: number, y0: number, x1: number, y1: number, scale: number, scissorArea: ScreenRectangle)
+    constructor(bookModel: BookModel, texture: Identifier, open: number, flip: number, x0: number, y0: number, x1: number, y1: number, scale: number, scissorArea: ScreenRectangle, bounds: ScreenRectangle)
     // private bookModel: BookModel;
     // private bounds: ScreenRectangle;
     // private flip: number;
@@ -25,7 +27,7 @@ export class GuiBookModelRenderState extends Record implements PictureInPictureR
     flip(): number;
     hashCode(): number;
     open(): number;
-    pose(): Matrix3x2f;
+    pose(): Matrix3x2fc;
     scale(): number;
     scissorArea(): ScreenRectangle;
     texture(): Identifier;

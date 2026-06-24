@@ -5,7 +5,8 @@ import type { FloatProvider } from '../../../../../../net/minecraft/util/valuepr
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class LargeDripstoneFeature$WindOffsetter extends Object {
     private constructor()
-    private constructor(originY: number, random: RandomSource, windSpeedRange: FloatProvider)
+    private constructor(originY: number, random: RandomSource, windSpeedRange: FloatProvider, maxOffset: number)
+    // private maxOffset: number;
     // private originY: number;
     // private windSpeed: Vec3;
     // private offset(pos: BlockPos): BlockPos;

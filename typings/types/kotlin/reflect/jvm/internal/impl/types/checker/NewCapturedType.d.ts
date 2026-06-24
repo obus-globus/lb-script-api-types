@@ -1,3 +1,4 @@
+import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { MemberScope } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
 import type { SimpleType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
@@ -11,6 +12,7 @@ import type { CapturedTypeMarker } from '../../../../../../../kotlin/reflect/jvm
 export class NewCapturedType extends SimpleType implements CapturedTypeMarker {
     constructor(arg0: CaptureStatus, arg1: UnwrappedType, arg2: TypeProjection, arg3: TypeParameterDescriptor)
     constructor(arg0: CaptureStatus, arg1: NewCapturedTypeConstructor, arg2: UnwrappedType, arg3: TypeAttribute<any>[], arg4: boolean, arg5: boolean)
+    constructor(arg0: CaptureStatus, arg1: NewCapturedTypeConstructor, arg2: UnwrappedType, arg3: TypeAttribute<any>[], arg4: boolean, arg5: boolean, arg6: number, arg7: DefaultConstructorMarker)
     readonly attributes: TypeAttribute<any>[];
     readonly captureStatus: CaptureStatus;
     // inaccessible (TS-reserved member name): readonly constructor: NewCapturedTypeConstructor;

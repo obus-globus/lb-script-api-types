@@ -8,5 +8,6 @@ export class HolderSetImpl$Ids extends Record implements HolderSet {
     static fromTag(paramarg0: Tag, paramarg1: (param0: string) => number): HolderSet;
     static of(paramarg0: number[]): HolderSet;
     static of(paramarg0: string): HolderSet;
+    constructor(ids: number[])
     // private ids: number[];
 }

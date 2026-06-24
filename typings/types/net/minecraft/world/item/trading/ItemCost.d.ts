@@ -10,10 +10,15 @@ import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/netwo
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { ItemLike } from '../../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class ItemCost extends Record {
     static CODEC: Codec<ItemCost>;
     static OPTIONAL_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Optional<ItemCost>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemCost>;
+    constructor(item: Holder<Item>, count: number, components: DataComponentExactPredicate)
+    constructor(item: Holder<Item>, count: number, components: DataComponentExactPredicate, itemStack: ItemStack)
+    constructor(item: ItemLike)
+    constructor(item: ItemLike, count: number)
     // private components: DataComponentExactPredicate;
     // private count: number;
     // private item: Holder<Item>;

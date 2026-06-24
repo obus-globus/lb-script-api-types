@@ -98,11 +98,11 @@ export class LightningRodBlock extends RodBlock implements SimpleWaterloggedBloc
     getDirectSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getFluidState(state: BlockState): FluidState;
     getPickupSound(): Optional<SoundEvent>;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     isSignalSource(state: BlockState): boolean;
     onLightningStrike(state: BlockState, level: Level, pos: BlockPos): void;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     pickupBlock(user: LivingEntity, level: LevelAccessor, pos: BlockPos, state: BlockState): ItemStack;
     placeLiquid(level: LevelAccessor, pos: BlockPos, state: BlockState, fluidState: FluidState): boolean;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;

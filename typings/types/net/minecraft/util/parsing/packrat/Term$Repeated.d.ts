@@ -22,6 +22,7 @@ export class Term$Repeated<S extends unknown, T extends unknown> extends Record 
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>): Term<Object>;
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
     static sequence(paramterms: Object | null): Term<Object>;
+    constructor(element: NamedRule<S, T>, listName: Atom<T[]>, minRepetitions: number)
     // private element: NamedRule<S, T>;
     // private listName: Atom<T[]>;
     // private minRepetitions: number;

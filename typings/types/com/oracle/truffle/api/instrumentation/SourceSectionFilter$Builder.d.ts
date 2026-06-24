@@ -9,7 +9,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SourceSectionFilter$Builder extends Object {
-    private constructor(null_: SourceSectionFilter$Builder)
+    private constructor(null_: SourceSectionFilter)
     // private availableSections: boolean;
     // private expressions: SourceSectionFilter$EventFilterExpression[];
     // private includeInternal: boolean;

@@ -1,68 +1,68 @@
 {
-    "name": "@wunk/lb-script-api-types",
-    "version": "0.38.8",
-    "description": "TypeScript types for the LiquidBounce (nextgen, MC 1.21+) GraalJS script API — a heavily-refined fork of CCBlueX's @ccbluex/liquidbounce-script-api with typed per-event on() overloads, KDoc→TSDoc docs, binding fixes, and ambient globals.",
-    "license": "GPL-3.0-or-later",
-    "author": "obus-globus",
-    "homepage": "https://github.com/obus-globus/lb-script-api-types#readme",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/obus-globus/lb-script-api-types.git",
-        "directory": "typings"
-    },
-    "bugs": {
-        "url": "https://github.com/obus-globus/lb-script-api-types/issues"
-    },
-    "keywords": [
-        "liquidbounce",
-        "minecraft",
-        "graaljs",
-        "graalvm",
-        "script-api",
-        "scripting",
-        "types",
-        "typescript",
-        "ccbluex"
-    ],
-    "types": "ambient/ambient.d.ts",
-    "files": [
-        "types/**/*.d.ts",
-        "augmentations/**/*.d.ts",
-        "ambient/ambient.d.ts",
-        "ambient-full.d.ts",
-        "registry-lb/index.d.ts",
-        "registry-full/index.d.ts"
-    ],
-    "typesVersions": {
-        "*": {
-            "types/*": [
-                "./types/*"
-            ],
-            "augmentations/*": [
-                "./augmentations/*"
-            ],
-            "ambient": [
-                "./ambient/ambient.d.ts"
-            ],
-            "ambient-full": [
-                "./ambient-full.d.ts"
-            ],
-            "registry-lb": [
-                "./registry-lb/index.d.ts"
-            ],
-            "registry-full": [
-                "./registry-full/index.d.ts"
-            ]
-        }
-    },
-    "sideEffects": false,
-    "publishConfig": {
-        "access": "public"
-    },
-    "liquidbounce": {
-        "version": "0.38.1",
-        "minecraft": "26.1.2",
-        "commit": "b759cac57b26e54694d8c4d48af024a8fb598f62",
-        "ref": "v0.38.0-33-gb759cac57"
+  "name": "@wunk/lb-script-api-types",
+  "version": "0.38.8",
+  "description": "TypeScript types for the LiquidBounce (nextgen, MC 1.21+) GraalJS script API — a heavily-refined fork of CCBlueX's @ccbluex/liquidbounce-script-api with typed per-event on() overloads, KDoc→TSDoc docs, binding fixes, and ambient globals.",
+  "license": "GPL-3.0-or-later",
+  "author": "obus-globus",
+  "homepage": "https://github.com/obus-globus/lb-script-api-types#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obus-globus/lb-script-api-types.git",
+    "directory": "typings"
+  },
+  "bugs": {
+    "url": "https://github.com/obus-globus/lb-script-api-types/issues"
+  },
+  "keywords": [
+    "liquidbounce",
+    "minecraft",
+    "graaljs",
+    "graalvm",
+    "script-api",
+    "scripting",
+    "types",
+    "typescript",
+    "ccbluex"
+  ],
+  "types": "ambient/ambient.d.ts",
+  "files": [
+    "types/**/*.d.ts",
+    "augmentations/**/*.d.ts",
+    "ambient/ambient.d.ts",
+    "ambient-full.d.ts",
+    "registry-lb/index.d.ts",
+    "registry-full/index.d.ts"
+  ],
+  "typesVersions": {
+    "*": {
+      "types/*": [
+        "./types/*"
+      ],
+      "augmentations/*": [
+        "./augmentations/*"
+      ],
+      "ambient": [
+        "./ambient/ambient.d.ts"
+      ],
+      "ambient-full": [
+        "./ambient-full.d.ts"
+      ],
+      "registry-lb": [
+        "./registry-lb/index.d.ts"
+      ],
+      "registry-full": [
+        "./registry-full/index.d.ts"
+      ]
     }
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "liquidbounce": {
+    "version": "0.38.1",
+    "minecraft": "26.2",
+    "commit": "5f1d924995c7360e0ec79e16298d37205eea4da3",
+    "ref": "v0.38.0-57-g5f1d92499"
+  }
 }

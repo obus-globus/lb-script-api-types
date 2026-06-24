@@ -88,10 +88,10 @@ export class DaylightDetectorBlock extends BaseEntityBlock {
     codec(): MapCodec<DaylightDetectorBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getTicker<T extends BlockEntity>(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;
     isSignalSource(state: BlockState): boolean;
     newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     useShapeForLightOcclusion(state: BlockState): boolean;
     useWithoutItem(state: BlockState, level: Level, pos: BlockPos, player: Player, hitResult: BlockHitResult): InteractionResult;
 }

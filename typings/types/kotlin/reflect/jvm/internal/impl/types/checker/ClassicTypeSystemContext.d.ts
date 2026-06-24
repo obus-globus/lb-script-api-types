@@ -20,6 +20,7 @@ import type { TypeArgumentMarker } from '../../../../../../../kotlin/reflect/jvm
 import type { TypeConstructorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeConstructorMarker.d.ts'
 import type { TypeParameterMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeParameterMarker.d.ts'
 import type { TypeSubstitutorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSubstitutorMarker.d.ts'
+import type { TypeSystemContext } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSystemContext.d.ts'
 import type { TypeSystemInferenceExtensionContext } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSystemInferenceExtensionContext.d.ts'
 import type { TypeVariableTypeConstructorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariableTypeConstructorMarker.d.ts'
 import type { TypeVariance } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariance.d.ts'
@@ -98,6 +99,7 @@ export interface ClassicTypeSystemContext extends Object, TypeSystemCommonBacken
     makeDefinitelyNotNullOrNotNull(arg0: KotlinTypeMarker, arg1: boolean): KotlinTypeMarker;
     makeNullable(arg0: KotlinTypeMarker): KotlinTypeMarker;
     newTypeCheckerState(arg0: boolean, arg1: boolean, arg2: boolean): TypeCheckerState;
+    newTypeCheckerState(arg0: TypeSystemContext, arg1: boolean, arg2: boolean, arg3: boolean): TypeCheckerState;
     nullableAnyType(): SimpleTypeMarker;
     original(arg0: DefinitelyNotNullTypeMarker): SimpleTypeMarker;
     originalIfDefinitelyNotNullable(arg0: RigidTypeMarker): SimpleTypeMarker;

@@ -182,7 +182,7 @@ import type { ServerboundSetJigsawBlockPacket } from '../../../../../net/minecra
 import type { ServerboundSetStructureBlockPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSetStructureBlockPacket.d.ts'
 import type { ServerboundSetTestBlockPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSetTestBlockPacket.d.ts'
 import type { ServerboundSignUpdatePacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSignUpdatePacket.d.ts'
-import type { ServerboundSpectateEntityPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSpectateEntityPacket.d.ts'
+import type { ServerboundSpectatorActionPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSpectatorActionPacket.d.ts'
 import type { ServerboundSwingPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundSwingPacket.d.ts'
 import type { ServerboundTeleportToEntityPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundTeleportToEntityPacket.d.ts'
 import type { ServerboundTestInstanceBlockActionPacket } from '../../../../../net/minecraft/network/protocol/game/ServerboundTestInstanceBlockActionPacket.d.ts'
@@ -371,7 +371,7 @@ export class GamePacketTypes extends Object {
     static SERVERBOUND_SET_STRUCTURE_BLOCK: PacketType<ServerboundSetStructureBlockPacket>;
     static SERVERBOUND_SET_TEST_BLOCK: PacketType<ServerboundSetTestBlockPacket>;
     static SERVERBOUND_SIGN_UPDATE: PacketType<ServerboundSignUpdatePacket>;
-    static SERVERBOUND_SPECTATE_ENTITY: PacketType<ServerboundSpectateEntityPacket>;
+    static SERVERBOUND_SPECTATOR_ACTION: PacketType<ServerboundSpectatorActionPacket>;
     static SERVERBOUND_SWING: PacketType<ServerboundSwingPacket>;
     static SERVERBOUND_TELEPORT_TO_ENTITY: PacketType<ServerboundTeleportToEntityPacket>;
     static SERVERBOUND_TEST_INSTANCE_BLOCK_ACTION: PacketType<ServerboundTestInstanceBlockActionPacket>;

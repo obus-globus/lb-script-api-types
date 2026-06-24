@@ -5,10 +5,12 @@ export class ParticleRenderType extends Record {
     static ITEM_PICKUP: ParticleRenderType;
     static NO_RENDER: ParticleRenderType;
     static SINGLE_QUADS: ParticleRenderType;
-    constructor(name: string)
+    constructor(name: string, shorthand: string)
     // private name: string;
+    // private shorthand: string;
     equals(o: Object | null): boolean;
     hashCode(): number;
     name(): string;
+    shorthand(): string;
     toString(): string;
 }

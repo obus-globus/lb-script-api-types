@@ -12,6 +12,7 @@ import type { BlockStateProvider } from '../../../../../../../net/minecraft/worl
 export class DiskConfiguration extends Record implements FeatureConfiguration {
     static CODEC: Codec<DiskConfiguration>;
     static NONE: NoneFeatureConfiguration;
+    constructor(stateProvider: BlockStateProvider, target: BlockPredicate, radius: IntProvider, halfHeight: number)
     // private halfHeight: number;
     // private radius: IntProvider;
     // private stateProvider: BlockStateProvider;

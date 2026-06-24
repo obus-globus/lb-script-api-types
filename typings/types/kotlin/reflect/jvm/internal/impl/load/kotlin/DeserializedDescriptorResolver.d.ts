@@ -23,7 +23,7 @@ export class DeserializedDescriptorResolver extends Object {
     // private getSkipMetadataVersionCheck(): boolean;
     // private isCompiledWith13M1(arg0: KotlinJvmBinaryClass): boolean;
     // private isPreReleaseInvisible(arg0: KotlinJvmBinaryClass): boolean;
-    readClassData$descriptors_jvm(arg0: KotlinJvmBinaryClass): ClassData;
+    readClassData$org_jetbrains_kotlin_descriptors_jvm(arg0: KotlinJvmBinaryClass): ClassData;
     // private readData(arg0: KotlinJvmBinaryClass, arg1: KotlinClassHeader$Kind[]): string[];
     resolveClass(arg0: KotlinJvmBinaryClass): ClassDescriptor;
     setComponents(arg0: DeserializationComponentsForJava): void;

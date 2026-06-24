@@ -11,8 +11,8 @@ export class Char2CharOpenHashMap$EntrySpliterator extends Char2CharOpenHashMap$
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Char2CharOpenHashMap$EntrySpliterator)
-    constructor(null_: Char2CharOpenHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: Char2CharMap$Entry) => void, arg1: number): void;
     characteristics(): number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Char2CharOpenHashMap$EntrySpliterator;

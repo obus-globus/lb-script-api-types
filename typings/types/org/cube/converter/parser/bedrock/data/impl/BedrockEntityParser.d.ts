@@ -1,4 +1,4 @@
-import type { JsonObject } from '../../../../../../../com/google/gson/JsonObject.d.ts'
+import type { JsonObject } from '../../../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BedrockEntityData } from '../../../../../../../org/cube/converter/data/bedrock/BedrockEntityData.d.ts'
 export class BedrockEntityParser extends Object {

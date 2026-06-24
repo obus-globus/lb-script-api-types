@@ -4,6 +4,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class Material extends Record {
     static CODEC: Codec<Material>;
+    constructor(sprite: Identifier)
+    constructor(sprite: Identifier, forceTranslucent: boolean)
     // private forceTranslucent: boolean;
     // private sprite: Identifier;
     equals(o: Object | null): boolean;

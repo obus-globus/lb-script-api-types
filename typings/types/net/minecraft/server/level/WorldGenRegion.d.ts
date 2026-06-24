@@ -53,6 +53,8 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     readonly blockTicks: WorldGenTickAccess<Block>;
     // private cache: StaticCache2D<GenerationChunkHolder>;
     readonly center: ChunkAccess;
+    // private centerChunkX: number;
+    // private centerChunkZ: number;
     readonly currentlyGenerating: () => string;
     // private dimensionType: DimensionType;
     readonly fluidTicks: WorldGenTickAccess<Fluid>;
@@ -62,6 +64,7 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     readonly random: RandomSource;
     readonly seed: number;
     // private subTickCount: AtomicLong;
+    // private writeRadius: number;
     addFreshEntity(entity: Entity): boolean;
     addParticle(particle: ParticleOptions, x: number, y: number, z: number, xd: number, yd: number, zd: number): void;
     destroyBlock(pos: BlockPos, dropResources: boolean): boolean;
@@ -115,9 +118,11 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     isFluidAtPosition(pos: BlockPos, predicate: (param0: FluidState) => boolean): boolean;
     isOldChunkAround(pos: ChunkPos, range: number): boolean;
     isStateAtPosition(pos: BlockPos, predicate: (param0: BlockState) => boolean): boolean;
+    // private isWithinWriteZone(chunkX: number, chunkZ: number): boolean;
+    isWithinWriteZone(pos: BlockPos): boolean;
     levelEvent(type: number, pos: BlockPos, data: number): void;
     levelEvent(source: Entity, type: number, pos: BlockPos, data: number): void;
-    // private markPosForPostprocessing(blockPos: BlockPos): void;
+    // private markPosForPostProcessing(blockPos: BlockPos): void;
     nextSubTickCount(): number;
     playSound(except: Entity, pos: BlockPos, soundEvent: SoundEvent, source: SoundSource): void;
     playSound(except: Entity, pos: BlockPos, sound: SoundEvent, source: SoundSource, volume: number, pitch: number): void;
@@ -127,4 +132,5 @@ export class WorldGenRegion extends Object implements WorldGenLevel {
     setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number): boolean;
     setBlock(pos: BlockPos, blockState: BlockState, updateFlags: number, updateLimit: number): boolean;
     setCurrentlyGenerating(currentlyGenerating: () => string): void;
+    // private warnIfReadOutsideWriteZone(chunkX: number, chunkZ: number): void;
 }

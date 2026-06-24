@@ -9,6 +9,7 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 export class ResolutionContext extends Record {
     static builder(): ResolutionContext$Builder;
     static create(paramsource: CommandSourceStack): ResolutionContext;
+    constructor(source: CommandSourceStack, defaultScoreboardEntity: Entity, objectInfoValidator: (param0: ObjectInfo) => boolean, depthLimit: number, depthLimitBehavior: ResolutionContext$LimitBehavior)
     // private defaultScoreboardEntity: Entity;
     // private depthLimit: number;
     // private depthLimitBehavior: ResolutionContext$LimitBehavior;

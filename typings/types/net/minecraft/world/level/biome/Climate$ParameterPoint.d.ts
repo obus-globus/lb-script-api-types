@@ -5,6 +5,7 @@ import type { Climate$Parameter } from '../../../../../net/minecraft/world/level
 import type { Climate$TargetPoint } from '../../../../../net/minecraft/world/level/biome/Climate$TargetPoint.d.ts'
 export class Climate$ParameterPoint extends Record {
     static CODEC: Codec<Climate$ParameterPoint>;
+    constructor(temperature: Climate$Parameter, humidity: Climate$Parameter, continentalness: Climate$Parameter, erosion: Climate$Parameter, depth: Climate$Parameter, weirdness: Climate$Parameter, offset: number)
     // private continentalness: Climate$Parameter;
     // private depth: Climate$Parameter;
     // private erosion: Climate$Parameter;

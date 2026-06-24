@@ -20,7 +20,7 @@ export class ChargeAttack extends Behavior<Animal> {
     canStillUse(level: ServerLevel, body: Animal, timestamp: number): boolean;
     checkExtraStartConditions(level: ServerLevel, body: Animal): boolean;
     // private dealDamageToTarget(level: ServerLevel, body: Animal, target: LivingEntity): void;
-    // private dealKnockBack(body: Animal, target: LivingEntity): void;
+    // private dealKnockBack(level: ServerLevel, body: Animal, target: LivingEntity): void;
     start(level: ServerLevel, body: Animal, timestamp: number): void;
     stop(level: ServerLevel, body: Animal, timestamp: number): void;
     tick(level: ServerLevel, body: Animal, timestamp: number): void;

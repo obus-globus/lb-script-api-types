@@ -19,6 +19,15 @@ export abstract class AbstractFileAppender$Builder<B extends AbstractFileAppende
     isAppend(): boolean;
     isCreateOnDemand(): boolean;
     isLocking(): boolean;
+    setAdvertise(advertise: boolean): B;
+    setAdvertiseUri(advertiseUri: string): B;
+    setAppend(append: boolean): B;
+    setCreateOnDemand(createOnDemand: boolean): B;
+    setFileGroup(fileGroup: string): B;
+    setFileName(fileName: string): B;
+    setFileOwner(fileOwner: string): B;
+    setFilePermissions(filePermissions: string): B;
+    setLocking(locking: boolean): B;
     withAdvertise(advertise: boolean): B;
     withAdvertiseUri(advertiseUri: string): B;
     withAppend(append: boolean): B;

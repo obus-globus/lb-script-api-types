@@ -6,6 +6,7 @@ import type { FloatProvider } from '../../../../net/minecraft/util/valueprovider
 export class UniformFloat extends Record implements FloatProvider {
     static MAP_CODEC: MapCodec<UniformFloat>;
     static of(parammin: number, parammax: number): UniformFloat;
+    constructor(min: number, max: number)
     // private max: number;
     // private min: number;
     codec(): MapCodec<UniformFloat>;

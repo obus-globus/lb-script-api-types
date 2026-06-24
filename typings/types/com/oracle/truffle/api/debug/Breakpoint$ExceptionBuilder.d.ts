@@ -3,7 +3,7 @@ import type { SourceElement } from '../../../../../com/oracle/truffle/api/debug/
 import type { SuspensionFilter } from '../../../../../com/oracle/truffle/api/debug/SuspensionFilter.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Breakpoint$ExceptionBuilder extends Object {
-    constructor(null_: Breakpoint$ExceptionBuilder, caught: boolean, uncaught: boolean)
+    constructor(null_: Breakpoint, caught: boolean, uncaught: boolean)
     // private caught: boolean;
     // private sourceElements: SourceElement[];
     // private suspensionFilter: SuspensionFilter;

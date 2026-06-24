@@ -1,3 +1,4 @@
+import type { OverlayRecipeComponent } from '../../../../../../net/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent.d.ts'
 import type { OverlayRecipeComponent$OverlayRecipeButton } from '../../../../../../net/minecraft/client/gui/screens/recipebook/OverlayRecipeComponent$OverlayRecipeButton.d.ts'
 import type { SoundManager } from '../../../../../../net/minecraft/client/sounds/SoundManager.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
@@ -9,6 +10,6 @@ import type { RecipeDisplayId } from '../../../../../../net/minecraft/world/item
 export class OverlayRecipeComponent$OverlayCraftingRecipeButton extends OverlayRecipeComponent$OverlayRecipeButton {
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: OverlayRecipeComponent$OverlayCraftingRecipeButton, x: number, y: number, id: RecipeDisplayId, recipe: RecipeDisplay, context: ContextMap, isCraftable: boolean)
+    constructor(null_: OverlayRecipeComponent, x: number, y: number, id: RecipeDisplayId, recipe: RecipeDisplay, context: ContextMap, isCraftable: boolean)
     getSprite(isCraftable: boolean): Identifier;
 }

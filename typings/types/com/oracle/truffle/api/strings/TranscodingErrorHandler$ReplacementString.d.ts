@@ -2,6 +2,7 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TranscodingErrorHandler$ReplacementString extends Record {
+    constructor(replacement: TruffleString, byteLength: number)
     // private byteLength: number;
     // private replacement: TruffleString;
     byteLength(): number;

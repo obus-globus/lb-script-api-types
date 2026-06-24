@@ -10,7 +10,7 @@ export class KmPackage extends Object implements KmDeclarationContainer {
     readonly functions: KmFunction[];
     readonly properties: KmProperty[];
     readonly typeAliases: KmTypeAlias[];
-    getExtensions$kotlin_metadata(): KmPackageExtension[];
+    getExtensions$org_jetbrains_kotlin_kotlin_metadata(): KmPackageExtension[];
     getFunctions(): KmFunction[];
     getProperties(): KmProperty[];
     getTypeAliases(): KmTypeAlias[];

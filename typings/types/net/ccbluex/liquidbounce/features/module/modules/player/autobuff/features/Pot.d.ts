@@ -9,7 +9,7 @@ export class Pot extends StatusEffectBasedBuff {
     // private /*not mapped: */ getAllowLingering(): boolean;
     // private doNotBenefitOthers: boolean;
     // private /*not mapped: */ getDoNotBenefitOthers(): boolean;
-    /*not mapped: */ getPassesRequirements$liquidbounce(): boolean;
+    /*not mapped: */ getPassesRequirements$net_ccbluex_liquidbounce(): boolean;
     // private tillGroundDistance: number;
     // private /*not mapped: */ getTillGroundDistance(): number;
     execute(slot: HotbarItemSlot): void;

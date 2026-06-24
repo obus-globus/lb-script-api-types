@@ -6,7 +6,7 @@ import type { WidgetSprites } from '../../../../../net/minecraft/client/gui/comp
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class SpriteIconButton$Builder extends Object {
-    constructor(message: Component, onPress: Button$OnPress, iconOnly: boolean)
+    private constructor(message: Component, onPress: Button$OnPress, iconOnly: boolean)
     // private height: number;
     // private iconOnly: boolean;
     // private message: Component;
@@ -14,7 +14,10 @@ export class SpriteIconButton$Builder extends Object {
     // private onPress: Button$OnPress;
     // private sprite: WidgetSprites;
     // private spriteHeight: number;
+    // private spriteOffsetX: number;
+    // private spriteOffsetY: number;
     // private spriteWidth: number;
+    // private switchToLoadingAfterPress: boolean;
     // private tooltip: Component;
     // private width: number;
     build(): SpriteIconButton;
@@ -22,6 +25,9 @@ export class SpriteIconButton$Builder extends Object {
     size(width: number, height: number): SpriteIconButton$Builder;
     sprite(sprite: WidgetSprites, spriteWidth: number, spriteHeight: number): SpriteIconButton$Builder;
     sprite(sprite: Identifier, spriteWidth: number, spriteHeight: number): SpriteIconButton$Builder;
+    spriteOffset(spriteOffsetX: number, spriteOffsetY: number): SpriteIconButton$Builder;
+    switchToLoadingAfterPress(): SpriteIconButton$Builder;
+    tooltip(tooltip: Component): SpriteIconButton$Builder;
     width(width: number): SpriteIconButton$Builder;
     withTootip(): SpriteIconButton$Builder;
 }

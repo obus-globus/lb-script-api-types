@@ -79,9 +79,9 @@ export class TargetBlock extends Block {
     constructor(properties: BlockBehaviour$Properties)
     codec(): MapCodec<TargetBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     isSignalSource(state: BlockState): boolean;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
     onProjectileHit(level: Level, state: BlockState, hitResult: BlockHitResult, projectile: Projectile): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;
 }

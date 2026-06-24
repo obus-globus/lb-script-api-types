@@ -18,6 +18,7 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class BlocksAttacks extends Record {
     static CODEC: Codec<BlocksAttacks>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BlocksAttacks>;
+    constructor(blockDelaySeconds: number, disableCooldownScale: number, damageReductions: BlocksAttacks$DamageReduction[], itemDamage: BlocksAttacks$ItemDamageFunction, bypassedBy: Optional<Holder<DamageType>[]>, blockSound: Optional<Holder<SoundEvent>>, disableSound: Optional<Holder<SoundEvent>>)
     // private blockDelaySeconds: number;
     // private blockSound: Optional<Holder<SoundEvent>>;
     // private bypassedBy: Optional<Holder<DamageType>[]>;

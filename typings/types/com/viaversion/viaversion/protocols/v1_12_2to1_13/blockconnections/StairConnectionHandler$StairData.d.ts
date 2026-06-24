@@ -2,6 +2,7 @@ import type { BlockFace } from '../../../../../../com/viaversion/viaversion/api/
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class StairConnectionHandler$StairData extends Record {
+    private constructor(bottom: boolean, shape: number, type: number, facing: BlockFace)
     // private bottom: boolean;
     // private facing: BlockFace;
     // private shape: number;

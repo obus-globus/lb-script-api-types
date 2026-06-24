@@ -1,0 +1,123 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { NativeResource } from '../../../org/lwjgl/system/NativeResource.d.ts'
+import type { Struct } from '../../../org/lwjgl/system/Struct.d.ts'
+import type { Struct$StructValidation } from '../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+import type { VkExtent2D } from '../../../org/lwjgl/vulkan/VkExtent2D.d.ts'
+export class VkVideoEncodeAV1CapabilitiesKHR extends Struct<VkVideoEncodeAV1CapabilitiesKHR> implements NativeResource {
+    static ALIGNOF: number;
+    static BIDIRECTIONALCOMPOUNDREFERENCENAMEMASK: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static CODEDPICTUREALIGNMENT: number;
+    static FLAGS: number;
+    static MAXBIDIRECTIONALCOMPOUNDGROUP1REFERENCECOUNT: number;
+    static MAXBIDIRECTIONALCOMPOUNDGROUP2REFERENCECOUNT: number;
+    static MAXBIDIRECTIONALCOMPOUNDREFERENCECOUNT: number;
+    static MAXLEVEL: number;
+    static MAXOPERATINGPOINTS: number;
+    static MAXQINDEX: number;
+    static MAXSINGLEREFERENCECOUNT: number;
+    static MAXSPATIALLAYERCOUNT: number;
+    static MAXTEMPORALLAYERCOUNT: number;
+    static MAXTILES: number;
+    static MAXTILESIZE: number;
+    static MAXUNIDIRECTIONALCOMPOUNDGROUP1REFERENCECOUNT: number;
+    static MAXUNIDIRECTIONALCOMPOUNDREFERENCECOUNT: number;
+    static MINQINDEX: number;
+    static MINTILESIZE: number;
+    static PNEXT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static PREFERSGOPREMAININGFRAMES: number;
+    static REQUIRESGOPREMAININGFRAMES: number;
+    static SINGLEREFERENCENAMEMASK: number;
+    static SIZEOF: number;
+    static STDSYNTAXFLAGS: number;
+    static STYPE: number;
+    static SUPERBLOCKSIZES: number;
+    static UNIDIRECTIONALCOMPOUNDREFERENCENAMEMASK: number;
+    static calloc(): VkVideoEncodeAV1CapabilitiesKHR;
+    static calloc(paramarg0: MemoryStack): VkVideoEncodeAV1CapabilitiesKHR;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): VkVideoEncodeAV1CapabilitiesKHR;
+    static create(paramarg0: number): VkVideoEncodeAV1CapabilitiesKHR;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkVideoEncodeAV1CapabilitiesKHR;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): VkVideoEncodeAV1CapabilitiesKHR;
+    static malloc(paramarg0: MemoryStack): VkVideoEncodeAV1CapabilitiesKHR;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static nbidirectionalCompoundReferenceNameMask(paramarg0: number): number;
+    static ncodedPictureAlignment(paramarg0: number): VkExtent2D;
+    static nflags(paramarg0: number): number;
+    static nmaxBidirectionalCompoundGroup1ReferenceCount(paramarg0: number): number;
+    static nmaxBidirectionalCompoundGroup2ReferenceCount(paramarg0: number): number;
+    static nmaxBidirectionalCompoundReferenceCount(paramarg0: number): number;
+    static nmaxLevel(paramarg0: number): number;
+    static nmaxOperatingPoints(paramarg0: number): number;
+    static nmaxQIndex(paramarg0: number): number;
+    static nmaxSingleReferenceCount(paramarg0: number): number;
+    static nmaxSpatialLayerCount(paramarg0: number): number;
+    static nmaxTemporalLayerCount(paramarg0: number): number;
+    static nmaxTileSize(paramarg0: number): VkExtent2D;
+    static nmaxTiles(paramarg0: number): VkExtent2D;
+    static nmaxUnidirectionalCompoundGroup1ReferenceCount(paramarg0: number): number;
+    static nmaxUnidirectionalCompoundReferenceCount(paramarg0: number): number;
+    static nminQIndex(paramarg0: number): number;
+    static nminTileSize(paramarg0: number): VkExtent2D;
+    static npNext(paramarg0: number): number;
+    static npNext(paramarg0: number, paramarg1: number): void;
+    static nprefersGopRemainingFrames(paramarg0: number): number;
+    static nrequiresGopRemainingFrames(paramarg0: number): number;
+    static nsType(paramarg0: number): number;
+    static nsType(paramarg0: number, paramarg1: number): void;
+    static nsingleReferenceNameMask(paramarg0: number): number;
+    static nstdSyntaxFlags(paramarg0: number): number;
+    static nsuperblockSizes(paramarg0: number): number;
+    static nunidirectionalCompoundReferenceNameMask(paramarg0: number): number;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    bidirectionalCompoundReferenceNameMask(): number;
+    close(): void;
+    codedPictureAlignment(): VkExtent2D;
+    create(arg0: number, arg1: ByteBuffer): VkVideoEncodeAV1CapabilitiesKHR;
+    flags(): number;
+    maxBidirectionalCompoundGroup1ReferenceCount(): number;
+    maxBidirectionalCompoundGroup2ReferenceCount(): number;
+    maxBidirectionalCompoundReferenceCount(): number;
+    maxLevel(): number;
+    maxOperatingPoints(): number;
+    maxQIndex(): number;
+    maxSingleReferenceCount(): number;
+    maxSpatialLayerCount(): number;
+    maxTemporalLayerCount(): number;
+    maxTileSize(): VkExtent2D;
+    maxTiles(): VkExtent2D;
+    maxUnidirectionalCompoundGroup1ReferenceCount(): number;
+    maxUnidirectionalCompoundReferenceCount(): number;
+    minQIndex(): number;
+    minTileSize(): VkExtent2D;
+    pNext(): number;
+    pNext(arg0: number): VkVideoEncodeAV1CapabilitiesKHR;
+    prefersGopRemainingFrames(): boolean;
+    requiresGopRemainingFrames(): boolean;
+    sType(): number;
+    sType(arg0: number): VkVideoEncodeAV1CapabilitiesKHR;
+    sType$Default(): VkVideoEncodeAV1CapabilitiesKHR;
+    set(arg0: number, arg1: number): VkVideoEncodeAV1CapabilitiesKHR;
+    set(arg0: VkVideoEncodeAV1CapabilitiesKHR): VkVideoEncodeAV1CapabilitiesKHR;
+    singleReferenceNameMask(): number;
+    sizeof(): number;
+    stdSyntaxFlags(): number;
+    superblockSizes(): number;
+    unidirectionalCompoundReferenceNameMask(): number;
+}

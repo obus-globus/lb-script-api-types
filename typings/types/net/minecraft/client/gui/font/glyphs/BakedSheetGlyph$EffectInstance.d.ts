@@ -9,6 +9,7 @@ import type { BakedSheetGlyph } from '../../../../../../net/minecraft/client/gui
 import type { RenderType } from '../../../../../../net/minecraft/client/renderer/rendertype/RenderType.d.ts'
 import type { Matrix4fc } from '../../../../../../org/joml/Matrix4fc.d.ts'
 export class BakedSheetGlyph$EffectInstance extends Record implements TextRenderable {
+    constructor(glyph: BakedSheetGlyph, x0: number, y0: number, x1: number, y1: number, depth: number, color: number, shadowColor: number, shadowOffset: number)
     // private color: number;
     // private depth: number;
     // private glyph: BakedSheetGlyph;

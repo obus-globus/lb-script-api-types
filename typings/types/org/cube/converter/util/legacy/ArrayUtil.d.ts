@@ -1,4 +1,4 @@
-import type { JsonElement } from '../../../../../com/google/gson/JsonElement.d.ts'
+import type { JsonElement } from '../../../../../com/viaversion/viaversion/libs/gson/JsonElement.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ArrayUtil extends Object {
     static add(paramarg0: number[], paramarg1: number[]): number[];

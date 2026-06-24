@@ -13,6 +13,7 @@ export class StandardClassIds extends Object {
     getBASE_KOTLIN_PACKAGE(): FqName;
     getBASE_RANGES_PACKAGE(): FqName;
     getBASE_REFLECT_PACKAGE(): FqName;
+    getBASE_SEQUENCES_PACKAGE(): FqName;
     getEnumEntries(): ClassId;
     getKClass(): ClassId;
     getKFunction(): ClassId;

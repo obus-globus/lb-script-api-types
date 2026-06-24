@@ -2,6 +2,7 @@ import type { PlayerAttributesStorage$AttributeModifier } from '../../../../../.
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PlayerAttributesStorage$Attribute extends Record {
+    constructor(value: number, modifiers: PlayerAttributesStorage$AttributeModifier[])
     // private modifiers: PlayerAttributesStorage$AttributeModifier[];
     // private value: number;
     equals(arg0: Object | null): boolean;

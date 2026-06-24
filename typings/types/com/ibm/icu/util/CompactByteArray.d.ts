@@ -12,7 +12,7 @@ export class CompactByteArray extends Object implements Cloneable {
     // private isCompact: boolean;
     // private values: number[];
     // private blockTouched(arg0: number): boolean;
-    clone(): Object;
+    clone(): CompactByteArray;
     protected clone(): Object;
     compact(): void;
     compact(arg0: boolean): void;

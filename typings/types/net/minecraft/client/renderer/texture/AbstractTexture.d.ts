@@ -17,4 +17,5 @@ export abstract class AbstractTexture extends Object implements AutoCloseable, A
     getTextureView(): GpuTextureView;
     // private iris$setFilter(arg0: boolean, arg1: boolean, arg2: CallbackInfo): void;
     // private onSet(arg0: boolean, arg1: boolean): void;
+    releaseTextures(): void;
 }

@@ -13,7 +13,7 @@ export class AbstractGameRulesScreen$RuleList extends ContainerObjectSelectionLi
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: AbstractGameRulesScreen$RuleList, gameRules: GameRules)
+    constructor(null_: AbstractGameRulesScreen, gameRules: GameRules)
     // private gameRules: GameRules;
     extractWidgetRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     getThis(): AbstractGameRulesScreen;

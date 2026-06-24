@@ -1,0 +1,15 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class NVViewportSwizzle extends Object {
+    static VK_NV_VIEWPORT_SWIZZLE_EXTENSION_NAME: string;
+    static VK_NV_VIEWPORT_SWIZZLE_SPEC_VERSION: number;
+    static VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_SWIZZLE_STATE_CREATE_INFO_NV: number;
+    static VK_VIEWPORT_COORDINATE_SWIZZLE_NEGATIVE_W_NV: number;
+    static VK_VIEWPORT_COORDINATE_SWIZZLE_NEGATIVE_X_NV: number;
+    static VK_VIEWPORT_COORDINATE_SWIZZLE_NEGATIVE_Y_NV: number;
+    static VK_VIEWPORT_COORDINATE_SWIZZLE_NEGATIVE_Z_NV: number;
+    static VK_VIEWPORT_COORDINATE_SWIZZLE_POSITIVE_W_NV: number;
+    static VK_VIEWPORT_COORDINATE_SWIZZLE_POSITIVE_X_NV: number;
+    static VK_VIEWPORT_COORDINATE_SWIZZLE_POSITIVE_Y_NV: number;
+    static VK_VIEWPORT_COORDINATE_SWIZZLE_POSITIVE_Z_NV: number;
+    private constructor()
+}

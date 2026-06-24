@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ModelDiscovery$Slot<T extends unknown> extends Record {
+    private constructor(index: number)
     // private index: number;
     equals(o: Object | null): boolean;
     hashCode(): number;

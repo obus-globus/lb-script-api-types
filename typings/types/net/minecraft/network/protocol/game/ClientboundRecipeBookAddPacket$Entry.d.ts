@@ -7,6 +7,8 @@ export class ClientboundRecipeBookAddPacket$Entry extends Record {
     static FLAG_HIGHLIGHT: number;
     static FLAG_NOTIFICATION: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundRecipeBookAddPacket$Entry>;
+    constructor(contents: RecipeDisplayEntry, notification: boolean, highlight: boolean)
+    constructor(contents: RecipeDisplayEntry, flags: number)
     // private contents: RecipeDisplayEntry;
     // private flags: number;
     contents(): RecipeDisplayEntry;

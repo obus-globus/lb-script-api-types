@@ -10,6 +10,8 @@ export class ScheduledTick<T extends unknown> extends Record {
     static INTRA_TICK_DRAIN_ORDER: (param0: Object) => boolean;
     static UNIQUE_TICK_HASH: Hash$Strategy<ScheduledTick<Object>>;
     static probe(paramtype: Object | null, parampos: BlockPos): ScheduledTick<Object>;
+    constructor(type: T, pos: BlockPos, triggerTick: number, subTickOrder: number)
+    constructor(type: T, pos: BlockPos, triggerTick: number, priority: TickPriority, subTickOrder: number)
     // private pos: BlockPos;
     // private priority: TickPriority;
     // private subTickOrder: number;

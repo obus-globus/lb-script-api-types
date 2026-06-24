@@ -10,6 +10,7 @@ export class BackwardsRegistryRewriter extends RegistryDataRewriter {
     // private protocol: BackwardsProtocol<any, any, any, any>;
     handle(arg0: UserConnection, arg1: string, arg2: RegistryEntry[]): RegistryEntry[];
     handle(arg0: PacketWrapper): void;
+    // private updateAttributes(arg0: Map$Entry<string, Tag>[]): void;
     // private updateBiomeEffects(arg0: Map$Entry<string, Tag>[]): void;
     updateJukeboxSongs(arg0: RegistryEntry[]): void;
     // private updateSound(arg0: Map$Entry<string, Tag>[], arg1: string): void;

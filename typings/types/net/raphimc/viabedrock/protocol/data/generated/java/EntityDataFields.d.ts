@@ -95,6 +95,7 @@ export class EntityDataFields extends Object {
     static LIVING_ENTITY_FLAGS: string;
     static LOYALTY: string;
     static MAIN_GENE: string;
+    static MAX_FUSE: string;
     static MOB_FLAGS: string;
     static MOISTNESS_LEVEL: string;
     static MOVING: string;

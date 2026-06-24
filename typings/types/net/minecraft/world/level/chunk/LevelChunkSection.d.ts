@@ -19,9 +19,6 @@ import type { PalettedContainerRO } from '../../../../../net/minecraft/world/lev
 import type { FluidState } from '../../../../../net/minecraft/world/level/material/FluidState.d.ts'
 export class LevelChunkSection extends Object implements BlockCountingSection, BlockListeningSection, LithiumSectionData {
     static BIOME_CONTAINER_BITS: number;
-    static SECTION_HEIGHT: number;
-    static SECTION_SIZE: number;
-    static SECTION_WIDTH: number;
     private constructor(source: LevelChunkSection)
     constructor(states: PalettedContainer<BlockState>, biomes: PalettedContainerRO<Holder<Biome>>)
     constructor(containerFactory: PalettedContainerFactory)

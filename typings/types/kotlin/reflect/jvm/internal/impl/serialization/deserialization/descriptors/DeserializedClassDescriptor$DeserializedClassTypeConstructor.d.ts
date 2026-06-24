@@ -5,7 +5,7 @@ import type { NotNullLazyValue } from '../../../../../../../../kotlin/reflect/jv
 import type { AbstractClassTypeConstructor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/AbstractClassTypeConstructor.d.ts'
 import type { KotlinType } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 export class DeserializedClassDescriptor$DeserializedClassTypeConstructor extends AbstractClassTypeConstructor {
-    constructor(null_: DeserializedClassDescriptor$DeserializedClassTypeConstructor)
+    constructor(null_: DeserializedClassDescriptor)
     readonly parameters: NotNullLazyValue<TypeParameterDescriptor[]>;
     computeSupertypes(): KotlinType[];
     getDeclarationDescriptor(): DeserializedClassDescriptor;

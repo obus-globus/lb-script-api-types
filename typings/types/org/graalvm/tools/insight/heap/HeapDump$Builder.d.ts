@@ -8,7 +8,7 @@ import type { HeapDump$ClassInstance } from '../../../../../org/graalvm/tools/in
 import type { HeapDump$Counter } from '../../../../../org/graalvm/tools/insight/heap/HeapDump$Counter.d.ts'
 import type { HeapDump$Identifiers } from '../../../../../org/graalvm/tools/insight/heap/HeapDump$Identifiers.d.ts'
 export class HeapDump$Builder extends Object implements Closeable {
-    private constructor(null_: HeapDump$Builder, ids: HeapDump$Identifiers, os: OutputStream)
+    private constructor(null_: HeapDump, ids: HeapDump$Identifiers, os: OutputStream)
     // private classCounter: HeapDump$Counter;
     // private defaultStackTrace: number;
     // private ids: HeapDump$Identifiers;

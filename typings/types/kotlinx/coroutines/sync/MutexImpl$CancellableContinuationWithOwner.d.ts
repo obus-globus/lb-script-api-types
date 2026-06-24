@@ -6,8 +6,9 @@ import type { CancellableContinuation } from '../../../kotlinx/coroutines/Cancel
 import type { CancellableContinuationImpl } from '../../../kotlinx/coroutines/CancellableContinuationImpl.d.ts'
 import type { Waiter } from '../../../kotlinx/coroutines/Waiter.d.ts'
 import type { Segment } from '../../../kotlinx/coroutines/internal/Segment.d.ts'
+import type { MutexImpl } from '../../../kotlinx/coroutines/sync/MutexImpl.d.ts'
 export class MutexImpl$CancellableContinuationWithOwner extends Object implements CancellableContinuation<void>, Waiter {
-    constructor(null_: MutexImpl$CancellableContinuationWithOwner, cont: CancellableContinuationImpl<void>, owner: Object | null)
+    constructor(null_: MutexImpl, cont: CancellableContinuationImpl<void>, owner: Object | null)
     cont: CancellableContinuationImpl<void>;
     readonly context: CoroutineContext;
     /*not mapped: */ isActive(): boolean;

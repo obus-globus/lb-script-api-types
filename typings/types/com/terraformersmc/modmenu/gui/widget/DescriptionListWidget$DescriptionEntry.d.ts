@@ -1,3 +1,4 @@
+import type { DescriptionListWidget } from '../../../../../com/terraformersmc/modmenu/gui/widget/DescriptionListWidget.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { ContainerObjectSelectionList$Entry } from '../../../../../net/minecraft/client/gui/components/ContainerObjectSelectionList$Entry.d.ts'
 import type { GuiEventListener } from '../../../../../net/minecraft/client/gui/components/events/GuiEventListener.d.ts'
@@ -7,8 +8,8 @@ import type { FormattedCharSequence } from '../../../../../net/minecraft/util/Fo
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class DescriptionListWidget$DescriptionEntry extends ContainerObjectSelectionList$Entry<DescriptionListWidget$DescriptionEntry> {
     static CONTENT_PADDING: number;
-    constructor(null_: DescriptionListWidget$DescriptionEntry, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean)
-    constructor(null_: DescriptionListWidget$DescriptionEntry, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, arg2: number)
+    constructor(null_: DescriptionListWidget, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean)
+    constructor(null_: DescriptionListWidget, arg1: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, arg2: number)
     // private indent: number;
     // private text: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     updateTextEntry: boolean;

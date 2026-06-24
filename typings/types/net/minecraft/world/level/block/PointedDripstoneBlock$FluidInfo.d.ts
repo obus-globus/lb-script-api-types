@@ -4,7 +4,7 @@ import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { Fluid } from '../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 export class PointedDripstoneBlock$FluidInfo extends Record {
-    constructor(pos: BlockPos, fluid: Fluid, sourceState: BlockState)
+    private constructor(pos: BlockPos, fluid: Fluid, sourceState: BlockState)
     // private fluid: Fluid;
     // private pos: BlockPos;
     // private sourceState: BlockState;

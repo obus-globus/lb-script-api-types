@@ -5,10 +5,10 @@ import type { TextureAtlasSprite } from '../../../../../../../../net/minecraft/c
 import type { BlockEntity } from '../../../../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 export class BuiltSectionInfo extends Object {
     static EMPTY: BuiltSectionInfo;
-    private constructor(arg0: TerrainRenderPass[], arg1: BlockEntity[], arg2: BlockEntity[], arg3: TextureAtlasSprite[], arg4: VisibilitySet)
+    private constructor(arg0: TerrainRenderPass[], arg1: BlockEntity[], arg2: BlockEntity[], arg3: TextureAtlasSprite[], arg4: VisibilitySet[])
     animatedSprites: TextureAtlasSprite[];
     culledBlockEntities: BlockEntity[];
     flags: number;
     globalBlockEntities: BlockEntity[];
-    visibilityData: number;
+    visibilityData: number[];
 }

@@ -12,6 +12,8 @@ import type { RemoteDebugSampleType } from '../../../../../net/minecraft/util/de
 export class ClientboundDebugSamplePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundDebugSamplePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(sample: number[], debugSampleType: RemoteDebugSampleType)
+    private constructor(input: FriendlyByteBuf)
     // private debugSampleType: RemoteDebugSampleType;
     // private sample: number[];
     debugSampleType(): RemoteDebugSampleType;

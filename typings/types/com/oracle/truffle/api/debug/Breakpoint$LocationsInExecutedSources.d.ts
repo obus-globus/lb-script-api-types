@@ -1,3 +1,4 @@
+import type { Breakpoint } from '../../../../../com/oracle/truffle/api/debug/Breakpoint.d.ts'
 import type { EventBinding } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding.d.ts'
 import type { ExecuteSourceEvent } from '../../../../../com/oracle/truffle/api/instrumentation/ExecuteSourceEvent.d.ts'
 import type { ExecuteSourceListener } from '../../../../../com/oracle/truffle/api/instrumentation/ExecuteSourceListener.d.ts'
@@ -8,7 +9,7 @@ import type { SourceSection } from '../../../../../com/oracle/truffle/api/source
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EconomicMap } from '../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class Breakpoint$LocationsInExecutedSources extends Object implements ExecuteSourceListener, LoadSourceSectionListener {
-    private constructor(null_: Breakpoint$LocationsInExecutedSources)
+    private constructor(null_: Breakpoint)
     // private executeBindings: EconomicMap<Source, EventBinding<Object>>;
     // private executedSources: Source[];
     // private loadedSections: EconomicMap<Source, SourceSection>;

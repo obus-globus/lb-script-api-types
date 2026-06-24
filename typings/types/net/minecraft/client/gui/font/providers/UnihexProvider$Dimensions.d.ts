@@ -8,6 +8,7 @@ export class UnihexProvider$Dimensions extends Record {
     static left(parampacked: number): number;
     static pack(paramleft: number, paramright: number): number;
     static right(parampacked: number): number;
+    constructor(left: number, right: number)
     // private left: number;
     // private right: number;
     equals(o: Object | null): boolean;

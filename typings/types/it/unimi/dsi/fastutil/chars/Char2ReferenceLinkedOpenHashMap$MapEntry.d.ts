@@ -10,8 +10,8 @@ export class Char2ReferenceLinkedOpenHashMap$MapEntry extends Object implements 
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static of(paramarg0: string, paramarg1: Object | null): CharReferencePair<Object>;
-    constructor(null_: Char2ReferenceLinkedOpenHashMap$MapEntry)
-    constructor(null_: Char2ReferenceLinkedOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;

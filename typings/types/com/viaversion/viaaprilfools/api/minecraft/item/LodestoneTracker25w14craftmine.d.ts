@@ -4,6 +4,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LodestoneTracker25w14craftmine extends Record {
     static TYPE: Type<LodestoneTracker25w14craftmine>;
+    constructor(position: GlobalBlockPosition, tracked: boolean, exits: boolean)
     // private exits: boolean;
     // private position: GlobalBlockPosition;
     // private tracked: boolean;

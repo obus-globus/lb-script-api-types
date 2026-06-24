@@ -1,8 +1,9 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
+import type { BasicPeriodBuilderFactory } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/duration/BasicPeriodBuilderFactory.d.ts'
 import type { Period } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/duration/Period.d.ts'
 import type { TimeUnit } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/duration/TimeUnit.d.ts'
 export class BasicPeriodBuilderFactory$Settings extends Object {
-    constructor(null_: BasicPeriodBuilderFactory$Settings)
+    constructor(null_: BasicPeriodBuilderFactory)
     // private allowMillis: boolean;
     // private allowZero: boolean;
     // private inUse: boolean;

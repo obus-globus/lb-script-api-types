@@ -43,9 +43,9 @@ export class ImposterProtoChunk extends ProtoChunk {
     static NBT_ATTACHMENT_KEY: string;
     static NO_FILLED_SECTION: number;
     static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
-    static packOffsetCoordinates(paramblockPos: BlockPos): number;
+    static packOffsetCoordinates(parampos: BlockPos): number;
     static problemPath(parampos: ChunkPos): () => string;
-    static unpackOffsetCoordinates(parampackedCoord: number, paramsectionY: number, paramchunkPos: ChunkPos): BlockPos;
+    static unpackOffsetCoordinates(parampackedData: number, paramsectionY: number, paramchunkPos: ChunkPos): BlockPos;
     constructor(wrapped: LevelChunk, allowWrites: boolean)
     // private allowWrites: boolean;
     readonly wrapped: LevelChunk;
@@ -97,7 +97,7 @@ export class ImposterProtoChunk extends ProtoChunk {
     initializeLightSources(): void;
     isLightCorrect(): boolean;
     isUnsaved(): boolean;
-    markPosForPostprocessing(blockPos: BlockPos): void;
+    markPosForPostProcessing(blockPos: BlockPos): void;
     markUnsaved(): void;
     removeBlockEntity(pos: BlockPos): void;
     setAllReferences(data: Map<Structure, (Object | null)[]>): void;

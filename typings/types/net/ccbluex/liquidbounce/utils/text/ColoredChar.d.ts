@@ -1,15 +1,15 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { ChatFormatting } from '../../../../../net/minecraft/ChatFormatting.d.ts'
+import type { TextColor } from '../../../../../net/minecraft/network/chat/TextColor.d.ts'
 export class ColoredChar extends Record {
-    constructor(char: string, color: ChatFormatting)
+    constructor(char: string, color: TextColor)
     // private char: string;
     /*not mapped: */ char(): string;
-    // private color: ChatFormatting;
-    /*not mapped: */ color(): ChatFormatting;
+    // private color: TextColor;
+    /*not mapped: */ color(): TextColor;
     component1(): string;
-    component2(): ChatFormatting;
-    copy(char: string, color: ChatFormatting): ColoredChar;
+    component2(): TextColor;
+    copy(char: string, color: TextColor): ColoredChar;
     equals(other: Object | null): boolean;
     hashCode(): number;
     toString(): string;

@@ -1,3 +1,4 @@
+import type { AbstractChannel } from '../../../io/netty/channel/AbstractChannel.d.ts'
 import type { Channel$Unsafe } from '../../../io/netty/channel/Channel$Unsafe.d.ts'
 import type { ChannelHandler } from '../../../io/netty/channel/ChannelHandler.d.ts'
 import type { ChannelOutboundBuffer } from '../../../io/netty/channel/ChannelOutboundBuffer.d.ts'
@@ -11,7 +12,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
 export abstract class AbstractChannel$AbstractUnsafe extends Object implements Channel$Unsafe {
-    constructor(null_: AbstractChannel$AbstractUnsafe)
+    constructor(null_: AbstractChannel)
     // private inFlush0: boolean;
     // private neverRegistered: boolean;
     // private outboundBuffer: ChannelOutboundBuffer;

@@ -14,7 +14,8 @@ export class WorldLoadEvent extends Object {
     readonly serverBrand: string;
     addProperties(properties: TelemetryPropertyMap$Builder): void;
     // private getServerType(): TelemetryProperty$ServerType;
-    send(eventSender: (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void): boolean;
+    send(eventSender: (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void, lastChance: boolean): boolean;
     setGameMode(type: GameType, hardcore: boolean): void;
     setServerBrand(serverBrand: string): void;
+    wasSent(): boolean;
 }

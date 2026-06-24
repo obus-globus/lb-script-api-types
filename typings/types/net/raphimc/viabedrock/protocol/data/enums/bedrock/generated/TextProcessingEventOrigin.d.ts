@@ -7,6 +7,7 @@ export class TextProcessingEventOrigin extends Enum<TextProcessingEventOrigin> {
     static BookAndQuillText: TextProcessingEventOrigin;
     static CartographyText: TextProcessingEventOrigin;
     static CommandBlockText: TextProcessingEventOrigin;
+    static DataDrivenUI: TextProcessingEventOrigin;
     static JoinEventText: TextProcessingEventOrigin;
     static KickCommand: TextProcessingEventOrigin;
     static LeaveEventText: TextProcessingEventOrigin;
@@ -29,5 +30,5 @@ export class TextProcessingEventOrigin extends Enum<TextProcessingEventOrigin> {
     private constructor(arg2: TextProcessingEventOrigin)
     readonly value: number;
     getValue(): number;
-    name(): "unknown" | "ServerChatPublic" | "ServerChatWhisper" | "SignText" | "AnvilText" | "BookAndQuillText" | "CommandBlockText" | "BlockActorDataText" | "JoinEventText" | "LeaveEventText" | "SlashCommandChat" | "CartographyText" | "KickCommand" | "TitleCommand" | "SummonCommand" | "ServerForm";
+    name(): "unknown" | "ServerChatPublic" | "ServerChatWhisper" | "SignText" | "AnvilText" | "BookAndQuillText" | "CommandBlockText" | "BlockActorDataText" | "JoinEventText" | "LeaveEventText" | "SlashCommandChat" | "CartographyText" | "KickCommand" | "TitleCommand" | "SummonCommand" | "ServerForm" | "DataDrivenUI";
 }

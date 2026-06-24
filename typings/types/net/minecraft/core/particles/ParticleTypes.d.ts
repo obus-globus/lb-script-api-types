@@ -4,6 +4,8 @@ import type { BlockParticleOption } from '../../../../net/minecraft/core/particl
 import type { ColorParticleOption } from '../../../../net/minecraft/core/particles/ColorParticleOption.d.ts'
 import type { DustColorTransitionOptions } from '../../../../net/minecraft/core/particles/DustColorTransitionOptions.d.ts'
 import type { DustParticleOptions } from '../../../../net/minecraft/core/particles/DustParticleOptions.d.ts'
+import type { GeyserBaseParticleOptions } from '../../../../net/minecraft/core/particles/GeyserBaseParticleOptions.d.ts'
+import type { GeyserParticleOptions } from '../../../../net/minecraft/core/particles/GeyserParticleOptions.d.ts'
 import type { ItemParticleOption } from '../../../../net/minecraft/core/particles/ItemParticleOption.d.ts'
 import type { ParticleOptions } from '../../../../net/minecraft/core/particles/ParticleOptions.d.ts'
 import type { ParticleType } from '../../../../net/minecraft/core/particles/ParticleType.d.ts'
@@ -72,6 +74,10 @@ export class ParticleTypes extends Object {
     static FISHING: SimpleParticleType;
     static FLAME: SimpleParticleType;
     static FLASH: ParticleType<ColorParticleOption>;
+    static GEYSER: ParticleType<GeyserParticleOptions>;
+    static GEYSER_BASE: ParticleType<GeyserBaseParticleOptions>;
+    static GEYSER_PLUME: ParticleType<GeyserParticleOptions>;
+    static GEYSER_POOF: ParticleType<GeyserBaseParticleOptions>;
     static GLOW: SimpleParticleType;
     static GLOW_SQUID_INK: SimpleParticleType;
     static GUST: SimpleParticleType;
@@ -93,6 +99,8 @@ export class ParticleTypes extends Object {
     static MYCELIUM: SimpleParticleType;
     static NAUTILUS: SimpleParticleType;
     static NOTE: SimpleParticleType;
+    static NOXIOUS_GAS: SimpleParticleType;
+    static NOXIOUS_GAS_CLOUD: SimpleParticleType;
     static OMINOUS_SPAWNING: SimpleParticleType;
     static PALE_OAK_LEAVES: SimpleParticleType;
     static PAUSE_MOB_GROWTH: SimpleParticleType;
@@ -120,6 +128,8 @@ export class ParticleTypes extends Object {
     static SPORE_BLOSSOM_AIR: SimpleParticleType;
     static SQUID_INK: SimpleParticleType;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ParticleOptions>;
+    static SULFUR_BUBBLES: SimpleParticleType;
+    static SULFUR_CUBE_GOO: SimpleParticleType;
     static SWEEP_ATTACK: SimpleParticleType;
     static TINTED_LEAVES: ParticleType<ColorParticleOption>;
     static TOTEM_OF_UNDYING: SimpleParticleType;

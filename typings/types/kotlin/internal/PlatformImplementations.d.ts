@@ -7,8 +7,10 @@ import type { Clock } from '../../kotlin/time/Clock.d.ts'
 export class PlatformImplementations extends Object {
     constructor()
     addSuppressed(cause: Throwable, exception: Throwable): void;
+    computeIfAbsent<V extends unknown, K extends unknown, NewV extends V>(map: Map<K, V>, key: K, newValue: NewV): V;
     defaultPlatformRandom(): Random;
     getMatchResultNamedGroup(matchResult: MatchResult, name: string): MatchGroup | null;
+    getOrDefault<V extends unknown, K extends unknown>(map: Map<K, V>, key: K, default_: V): V | null;
     getSuppressed(exception: Throwable): Throwable[];
     getSystemClock(): Clock;
 }

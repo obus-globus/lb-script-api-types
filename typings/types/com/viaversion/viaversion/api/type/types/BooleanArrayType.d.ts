@@ -2,7 +2,7 @@ import type { Ops } from '../../../../../../com/viaversion/viaversion/api/minecr
 import type { Type } from '../../../../../../com/viaversion/viaversion/api/type/Type.d.ts'
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class BooleanArrayType extends Type<boolean[]> {
+export class BooleanArrayType extends Type<(Object | null)[]> {
     constructor()
     constructor(arg0: number)
     // private length: number;

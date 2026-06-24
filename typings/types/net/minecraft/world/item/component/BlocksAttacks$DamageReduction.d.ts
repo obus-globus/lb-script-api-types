@@ -10,6 +10,7 @@ import type { DamageType } from '../../../../../net/minecraft/world/damagesource
 export class BlocksAttacks$DamageReduction extends Record {
     static CODEC: Codec<BlocksAttacks$DamageReduction>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BlocksAttacks$DamageReduction>;
+    constructor(horizontalBlockingAngle: number, type: Optional<Holder<DamageType>[]>, base: number, factor: number)
     // private base: number;
     // private factor: number;
     // private horizontalBlockingAngle: number;

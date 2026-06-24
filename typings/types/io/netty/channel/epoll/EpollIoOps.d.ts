@@ -6,6 +6,7 @@ export class EpollIoOps extends Object implements IoOps {
     static EPOLLIN: EpollIoOps;
     static EPOLLOUT: EpollIoOps;
     static EPOLLRDHUP: EpollIoOps;
+    static NONE: EpollIoOps;
     static valueOf(paramarg0: number): EpollIoOps;
     private constructor(arg0: number)
     // private value: number;

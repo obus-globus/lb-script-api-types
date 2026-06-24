@@ -8,6 +8,7 @@ import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { Enchantment$Cost } from '../../../../../net/minecraft/world/item/enchantment/Enchantment$Cost.d.ts'
 export class Enchantment$EnchantmentDefinition extends Record {
     static CODEC: MapCodec<Enchantment$EnchantmentDefinition>;
+    constructor(supportedItems: Holder<Item>[], primaryItems: Optional<Holder<Item>[]>, weight: number, maxLevel: number, minCost: Enchantment$Cost, maxCost: Enchantment$Cost, anvilCost: number, slots: EquipmentSlot[][])
     // private anvilCost: number;
     // private maxCost: Enchantment$Cost;
     // private maxLevel: number;

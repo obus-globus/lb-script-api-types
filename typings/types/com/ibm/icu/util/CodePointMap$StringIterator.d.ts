@@ -1,7 +1,8 @@
+import type { CodePointMap$Range } from '../../../../com/ibm/icu/util/CodePointMap$Range.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class CodePointMap$StringIterator extends Object {
-    constructor(null_: CodePointMap$StringIterator, arg1: CharSequence, arg2: number)
+    constructor(null_: CodePointMap$Range[], arg1: CharSequence, arg2: number)
     // private c: number;
     // private s: CharSequence;
     // private sIndex: number;

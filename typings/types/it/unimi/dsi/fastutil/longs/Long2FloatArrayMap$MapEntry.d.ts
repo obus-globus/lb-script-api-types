@@ -11,8 +11,8 @@ export class Long2FloatArrayMap$MapEntry extends Object implements Long2FloatMap
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: number, paramarg1: number): LongFloatPair;
-    constructor(null_: Long2FloatArrayMap$MapEntry)
-    constructor(null_: Long2FloatArrayMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     equals(arg0: Object | null): boolean;
     first(): number;

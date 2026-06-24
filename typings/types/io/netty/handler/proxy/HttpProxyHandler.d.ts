@@ -10,9 +10,11 @@ export class HttpProxyHandler extends ProxyHandler {
     constructor(arg0: SocketAddress)
     constructor(arg0: SocketAddress, arg1: Map$Entry<string, string>[])
     constructor(arg0: SocketAddress, arg1: Map$Entry<string, string>[], arg2: boolean)
+    constructor(arg0: SocketAddress, arg1: Map$Entry<string, string>[], arg2: boolean, arg3: boolean)
     constructor(arg0: SocketAddress, arg1: string, arg2: string)
     constructor(arg0: SocketAddress, arg1: string, arg2: string, arg3: Map$Entry<string, string>[])
     constructor(arg0: SocketAddress, arg1: string, arg2: string, arg3: Map$Entry<string, string>[], arg4: boolean)
+    constructor(arg0: SocketAddress, arg1: string, arg2: string, arg3: Map$Entry<string, string>[], arg4: boolean, arg5: boolean)
     // private authorization: CharSequence;
     // private codecWrapper: HttpProxyHandler$HttpClientCodecWrapper;
     // private ignoreDefaultPortsInConnectHostHeader: boolean;
@@ -21,6 +23,7 @@ export class HttpProxyHandler extends ProxyHandler {
     // private password: string;
     // private status: HttpResponseStatus;
     // private username: string;
+    // private validateInitialHeaders: boolean;
     addCodec(arg0: ChannelHandlerContext): void;
     authScheme(): string;
     handleResponse(arg0: ChannelHandlerContext, arg1: Object): boolean;

@@ -6,6 +6,7 @@ import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCod
 export class Rotations extends Record {
     static CODEC: Codec<Rotations>;
     static STREAM_CODEC: StreamCodec<ByteBuf, Rotations>;
+    constructor(x: number, y: number, z: number)
     // private x: number;
     // private y: number;
     // private z: number;

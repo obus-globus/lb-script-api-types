@@ -15,5 +15,6 @@ export class ComponentPath$Path extends Record implements ComponentPath {
     component(): ContainerEventHandler;
     equals(o: Object | null): boolean;
     hashCode(): number;
+    leafComponent(): GuiEventListener;
     toString(): string;
 }

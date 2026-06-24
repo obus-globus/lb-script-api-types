@@ -44,5 +44,5 @@ export class BeaconMenu extends AbstractContainerMenu {
     removed(player: Player): void;
     setData(id: number, value: number): void;
     stillValid(player: Player): boolean;
-    updateEffects(primary: Optional<Holder<MobEffect>>, secondary: Optional<Holder<MobEffect>>): void;
+    updateEffects(primary: Optional<Holder<MobEffect>>, secondary: Optional<Holder<MobEffect>>): boolean;
 }

@@ -4,7 +4,7 @@ import type { Delay } from '../../kotlinx/coroutines/Delay.d.ts'
 import type { Job } from '../../kotlinx/coroutines/Job.d.ts'
 import type { TimeoutCancellationException } from '../../kotlinx/coroutines/TimeoutCancellationException.d.ts'
 export class TimeoutKt extends Object {
-    static TimeoutCancellationException(paramarg0: number, paramarg1: Delay, paramarg2: Job): TimeoutCancellationException;
+    static TimeoutCancellationException(paramarg0: number, paramarg1: Delay, paramarg2: Job, paramarg3: string): TimeoutCancellationException;
     static withTimeout(paramarg0: number, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
 // (invalid TS: name contains '-')     static withTimeout-KLykuaI(paramarg0: number, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
     static withTimeoutOrNull(paramarg0: number, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;

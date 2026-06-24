@@ -7,6 +7,7 @@ import type { WorldgenRandom } from '../../../../../../../net/minecraft/world/le
 import type { FeatureConfiguration } from '../../../../../../../net/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration.d.ts'
 import type { StructureTemplateManager } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager.d.ts'
 export class PieceGenerator$Context<C extends FeatureConfiguration> extends Record {
+    constructor(config: C, chunkGenerator: ChunkGenerator, structureTemplateManager: StructureTemplateManager, chunkPos: ChunkPos, heightAccessor: LevelHeightAccessor, random: WorldgenRandom, seed: number)
     // private chunkGenerator: ChunkGenerator;
     // private chunkPos: ChunkPos;
     // private config: C;

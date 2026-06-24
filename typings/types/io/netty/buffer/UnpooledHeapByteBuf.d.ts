@@ -23,6 +23,7 @@ export class UnpooledHeapByteBuf extends AbstractReferenceCountedByteBuf {
     _getShortLE(arg0: number): number;
     _getUnsignedMedium(arg0: number): number;
     _getUnsignedMediumLE(arg0: number): number;
+    _internalNioBuffer(): ByteBuffer;
     _setByte(arg0: number, arg1: number): void;
     _setInt(arg0: number, arg1: number): void;
     _setIntLE(arg0: number, arg1: number): void;
@@ -64,7 +65,6 @@ export class UnpooledHeapByteBuf extends AbstractReferenceCountedByteBuf {
     getUnsignedMediumLE(arg0: number): number;
     hasArray(): boolean;
     hasMemoryAddress(): boolean;
-    // private internalNioBuffer(): ByteBuffer;
     internalNioBuffer(arg0: number, arg1: number): ByteBuffer;
     isContiguous(): boolean;
     isDirect(): boolean;

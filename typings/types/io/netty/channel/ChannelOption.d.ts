@@ -1,3 +1,4 @@
+import type { ChannelOption$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteBufAllocator } from '../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { MessageSizeEstimator } from '../../../io/netty/channel/MessageSizeEstimator.d.ts'
 import type { RecvByteBufAllocator } from '../../../io/netty/channel/RecvByteBufAllocator.d.ts'
@@ -45,6 +46,7 @@ export class ChannelOption<T extends unknown> extends AbstractConstant<ChannelOp
     static valueOf(paramarg0: Class<Object>, paramarg1: string): ChannelOption<Object>;
     static valueOf(paramarg0: string): ChannelOption<Object>;
     private constructor(arg0: number, arg1: string)
+    constructor(arg0: number, arg1: string, arg2: ChannelOption$1)
     constructor(arg0: string)
     validate(arg0: T): void;
 }

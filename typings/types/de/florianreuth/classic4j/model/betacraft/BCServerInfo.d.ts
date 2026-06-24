@@ -5,6 +5,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BCServerInfo extends Record {
+    constructor(name: string, description: string, _icon: string, isPublic: boolean, software: BCServerInfo$Software, playerLimit: number, playerCount: number, players: BCServerInfo$Player[], lastPingTime: number, versionCategory: BCVersionCategory, gameVersion: string, protocol: string, socket: string, v1Version: string, onlineMode: boolean)
     // private _icon: string;
     // private description: string;
     // private gameVersion: string;

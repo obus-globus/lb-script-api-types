@@ -6,6 +6,7 @@ export class Transparency extends Record {
     static TRANSPARENT: Transparency;
     static TRANSPARENT_AND_TRANSLUCENT: Transparency;
     static of(paramhasTransparent: boolean, paramhasTranslucent: boolean): Transparency;
+    constructor(hasTransparent: boolean, hasTranslucent: boolean)
     // private hasTranslucent: boolean;
     // private hasTransparent: boolean;
     equals(o: Object | null): boolean;

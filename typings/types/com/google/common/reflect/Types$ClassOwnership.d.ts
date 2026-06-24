@@ -1,3 +1,4 @@
+import type { Types$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
@@ -8,6 +9,7 @@ export class Types$ClassOwnership extends Enum<Types$ClassOwnership> {
     static valueOf(paramname: string): Types$ClassOwnership;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: Types$1)
     getOwnerType(rawType: Class<Object>): Class<Object>;
     name(): "OWNED_BY_ENCLOSING_CLASS" | "LOCAL_CLASS_HAS_NO_OWNER";
 }

@@ -1,3 +1,4 @@
+import type { DebuggerSession } from '../../../../../com/oracle/truffle/api/debug/DebuggerSession.d.ts'
 import type { DebuggerSession$SteppingNode } from '../../../../../com/oracle/truffle/api/debug/DebuggerSession$SteppingNode.d.ts'
 import type { SuspendAnchor } from '../../../../../com/oracle/truffle/api/debug/SuspendAnchor.d.ts'
 import type { MaterializedFrame } from '../../../../../com/oracle/truffle/api/frame/MaterializedFrame.d.ts'
@@ -7,7 +8,7 @@ import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class DebuggerSession$RootSteppingDepthNode extends DebuggerSession$SteppingNode {
-    constructor(null_: DebuggerSession$RootSteppingDepthNode, context: EventContext)
+    constructor(null_: DebuggerSession, context: EventContext)
     // private doEnter(): void;
     // private doReturn(): void;
     // private doReturn(frame: MaterializedFrame, result: Object): void;

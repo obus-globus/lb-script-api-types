@@ -3,13 +3,14 @@ import type { Frame } from '../../../../../com/oracle/truffle/api/frame/Frame.d.
 import type { FrameInstance } from '../../../../../com/oracle/truffle/api/frame/FrameInstance.d.ts'
 import type { FrameInstanceVisitor } from '../../../../../com/oracle/truffle/api/frame/FrameInstanceVisitor.d.ts'
 import type { SourceSectionFilter } from '../../../../../com/oracle/truffle/api/instrumentation/SourceSectionFilter.d.ts'
+import type { SafepointStackSampler } from '../../../../../com/oracle/truffle/tools/profiler/SafepointStackSampler.d.ts'
 import type { SafepointStackSampler$CollectionResult } from '../../../../../com/oracle/truffle/tools/profiler/SafepointStackSampler$CollectionResult.d.ts'
 import type { SafepointStackSampler$StackSample } from '../../../../../com/oracle/truffle/tools/profiler/SafepointStackSampler$StackSample.d.ts'
 import type { StackTraceEntry } from '../../../../../com/oracle/truffle/tools/profiler/StackTraceEntry.d.ts'
 import type { Thread } from '../../../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SafepointStackSampler$StackVisitor extends Object implements FrameInstanceVisitor<FrameInstance>, SafepointStackSampler$CollectionResult {
-    constructor(null_: SafepointStackSampler$StackVisitor, stackLimit: number, sourceSectionFilter: SourceSectionFilter, includeAsyncStackTrace: boolean)
+    constructor(null_: SafepointStackSampler, stackLimit: number, sourceSectionFilter: SourceSectionFilter, includeAsyncStackTrace: boolean)
     // private endTime: number;
     // private includeAsyncStackTrace: boolean;
     // private nextFrameIndex: number;

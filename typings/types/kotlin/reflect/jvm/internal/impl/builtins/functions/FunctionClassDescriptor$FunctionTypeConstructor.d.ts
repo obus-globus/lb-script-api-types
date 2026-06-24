@@ -4,7 +4,7 @@ import type { TypeParameterDescriptor } from '../../../../../../../kotlin/reflec
 import type { AbstractClassTypeConstructor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/AbstractClassTypeConstructor.d.ts'
 import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 export class FunctionClassDescriptor$FunctionTypeConstructor extends AbstractClassTypeConstructor {
-    constructor(null_: FunctionClassDescriptor$FunctionTypeConstructor)
+    constructor(null_: FunctionClassDescriptor)
     computeSupertypes(): KotlinType[];
     getDeclarationDescriptor(): FunctionClassDescriptor;
     getParameters(): TypeParameterDescriptor[];

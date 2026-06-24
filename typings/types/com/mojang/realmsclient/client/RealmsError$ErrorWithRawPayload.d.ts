@@ -7,6 +7,7 @@ export class RealmsError$ErrorWithRawPayload extends Record implements RealmsErr
     static LOGGER: Logger;
     static NO_MESSAGE: Component;
     static parse(paramhttpCode: number, parampayload: string): RealmsError;
+    constructor(httpCode: number, payload: string)
     // private httpCode: number;
     // private payload: string;
     equals(o: Object | null): boolean;

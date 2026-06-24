@@ -43,6 +43,7 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     // private actualLocale: ULocale;
     // private ampms: string[];
     // private ampmsNarrow: string[];
+    // private ampmsWide: string[];
     // private capitalization: { [key in DateFormatSymbols$CapitalizationContextUsage]: (Object | null)[] };
     eraNames: string[];
     eras: string[];
@@ -80,12 +81,13 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     weekdays: string[];
     // private wideDayPeriods: string[];
     readonly zoneStrings: string[][];
-    clone(): Object;
+    clone(): DateFormatSymbols;
     protected clone(): Object;
     // private duplicate(arg0: string[][]): string[][];
     // private duplicate(arg0: string[]): string[];
     equals(arg0: Object | null): boolean;
     getAmPmStrings(): string[];
+    getAmPmStrings(arg0: number, arg1: number): string[];
     getEraNames(): string[];
     getEras(): string[];
     getLeapMonthPattern(arg0: number, arg1: number): string;
@@ -104,12 +106,14 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     getZodiacNames(arg0: number, arg1: number): string[];
     getZoneStrings(): string[][];
     hashCode(): number;
+    initEras(arg0: string, arg1: { [key: string]: { [key: string]: string } }, arg2: ICUResourceBundle, arg3: number): string[];
     initializeData(arg0: DateFormatSymbols): void;
     initializeData(arg0: ULocale, arg1: ICUResourceBundle, arg2: string): void;
     initializeData(arg0: ULocale, arg1: string): void;
     // private loadDayPeriodStrings(arg0: { [key: string]: string }, arg1: string[]): string[];
     // private readObject(arg0: ObjectInputStream): void;
     setAmPmStrings(arg0: string[]): void;
+    setAmPmStrings(arg0: string[], arg1: number, arg2: number): void;
     setEraNames(arg0: string[]): void;
     setEras(arg0: string[]): void;
     setLeapMonthPattern(arg0: string, arg1: number, arg2: number): void;

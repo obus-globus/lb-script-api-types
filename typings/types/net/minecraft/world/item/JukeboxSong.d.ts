@@ -14,6 +14,7 @@ export class JukeboxSong extends Record {
     static DIRECT_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, JukeboxSong>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<JukeboxSong>>;
     static fromStack(paramstack: ItemStack): Optional<Holder<JukeboxSong>>;
+    constructor(soundEvent: Holder<SoundEvent>, description: Component, lengthInSeconds: number, comparatorOutput: number)
     // private comparatorOutput: number;
     // private description: Component;
     // private lengthInSeconds: number;

@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { ByteSequence } from '../../../../../org/graalvm/polyglot/io/ByteSequence.d.ts'
 export class Source$SourceBuilder extends Object {
-    constructor(null_: Source$SourceBuilder, language: string, origin: Object)
+    constructor(null_: Source, language: string, origin: Object)
     // private cached: boolean;
     // private canonicalizePath: boolean;
     // private content: Object;

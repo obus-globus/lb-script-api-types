@@ -6,5 +6,6 @@ export class DirectCleaner extends Object implements Cleaner {
     constructor()
     allocate(arg0: number): CleanableDirectBuffer;
     freeDirectBuffer(arg0: ByteBuffer): void;
+    hasExpensiveClean(): boolean;
     reallocate(arg0: CleanableDirectBuffer, arg1: number): CleanableDirectBuffer;
 }

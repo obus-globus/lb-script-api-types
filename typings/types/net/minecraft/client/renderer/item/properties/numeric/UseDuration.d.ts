@@ -9,6 +9,7 @@ import type { ItemStack } from '../../../../../../../net/minecraft/world/item/It
 export class UseDuration extends Record implements RangeSelectItemModelProperty {
     static MAP_CODEC: MapCodec<UseDuration>;
     static useDuration(paramitemStack: ItemStack, paramowner: LivingEntity): number;
+    constructor(remaining: boolean)
     // private remaining: boolean;
     equals(o: Object | null): boolean;
     get(itemStack: ItemStack, level: ClientLevel, owner: ItemOwner, seed: number): number;

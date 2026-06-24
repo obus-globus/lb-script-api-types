@@ -12,6 +12,7 @@ export class PaintingVariant extends Record {
     static DIRECT_CODEC: Codec<PaintingVariant>;
     static DIRECT_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, PaintingVariant>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<PaintingVariant>>;
+    constructor(width: number, height: number, assetId: Identifier, title: Optional<Component>, author: Optional<Component>)
     // private assetId: Identifier;
     // private author: Optional<Component>;
     // private height: number;

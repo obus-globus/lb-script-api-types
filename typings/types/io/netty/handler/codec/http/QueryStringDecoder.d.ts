@@ -1,3 +1,4 @@
+import type { QueryStringDecoder$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { QueryStringDecoder$Builder } from '../../../../../io/netty/handler/codec/http/QueryStringDecoder$Builder.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
 import type { Charset } from '../../../../../java/nio/charset/Charset.d.ts'
@@ -7,7 +8,9 @@ export class QueryStringDecoder extends Object {
     static decodeComponent(paramarg0: string): string;
     static decodeComponent(paramarg0: string, paramarg1: Charset): string;
     private constructor(arg0: QueryStringDecoder$Builder, arg1: URI)
+    constructor(arg0: QueryStringDecoder$Builder, arg1: URI, arg2: QueryStringDecoder$1)
     private constructor(arg0: QueryStringDecoder$Builder, arg1: string)
+    constructor(arg0: QueryStringDecoder$Builder, arg1: string, arg2: QueryStringDecoder$1)
     constructor(arg0: URI)
     constructor(arg0: URI, arg1: Charset)
     constructor(arg0: URI, arg1: Charset, arg2: number)

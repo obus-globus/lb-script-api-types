@@ -3,6 +3,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BoundingBox2f } from '../../../../../../net/ccbluex/liquidbounce/render/engine/type/BoundingBox2f.d.ts'
 import type { UV2f } from '../../../../../../net/ccbluex/liquidbounce/render/engine/type/UV2f.d.ts'
 export class BoundingBox2s extends Record {
+    constructor(xMin: number, yMin: number, xMax: number, yMax: number)
     constructor(rect: BoundingBox2f)
     constructor(min: UV2f, max: UV2f)
     // private max: UV2f;

@@ -5,6 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { TimedStat } from '../../../../../../net/minecraft/util/profiling/jfr/stats/TimedStat.d.ts'
 export class TimedStatSummary<T extends TimedStat> extends Record {
     static summary(paramvalues: (TimedStat | null)[]): Optional<TimedStatSummary<TimedStat>>;
+    constructor(fastest: T, slowest: T, secondSlowest: T, count: number, percentilesNanos: { [key: number]: number }, totalDuration: Duration)
     // private count: number;
     // private fastest: T;
     // private percentilesNanos: { [key: number]: number };

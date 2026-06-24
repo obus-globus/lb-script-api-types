@@ -1,6 +1,7 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { TeamColor } from '../../../../../net/minecraft/world/scores/TeamColor.d.ts'
 import type { ObjectiveCriteria$RenderType } from '../../../../../net/minecraft/world/scores/criteria/ObjectiveCriteria$RenderType.d.ts'
 export class ObjectiveCriteria extends Object {
     static AIR: ObjectiveCriteria;
@@ -11,11 +12,11 @@ export class ObjectiveCriteria extends Object {
     static EXPERIENCE: ObjectiveCriteria;
     static FOOD: ObjectiveCriteria;
     static HEALTH: ObjectiveCriteria;
-    static KILLED_BY_TEAM: (Object | null)[];
+    static KILLED_BY_TEAM: { [key in TeamColor]: ObjectiveCriteria };
     static KILL_COUNT_ALL: ObjectiveCriteria;
     static KILL_COUNT_PLAYERS: ObjectiveCriteria;
     static LEVEL: ObjectiveCriteria;
-    static TEAM_KILL: (Object | null)[];
+    static TEAM_KILL: { [key in TeamColor]: ObjectiveCriteria };
     static TRIGGER: ObjectiveCriteria;
     static byName(paramname: string): Optional<ObjectiveCriteria>;
     static getCustomCriteriaNames(): string[];

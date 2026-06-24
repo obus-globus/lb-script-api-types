@@ -8,7 +8,7 @@ export abstract class ModuleDebugRecorder$DebugRecorderMode<T extends unknown> e
     constructor(name: string)
     readonly folder: File;
     // private packets: T[];
-    /*not mapped: */ getPackets$liquidbounce(): T[];
+    /*not mapped: */ getPackets$net_ccbluex_liquidbounce(): T[];
     readonly parent: ModeValueGroup<any>;
     disable(): void;
     enable(): void;

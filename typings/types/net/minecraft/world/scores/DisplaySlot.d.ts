@@ -6,7 +6,6 @@ import type { IntFunction } from '../../../../java/util/function/IntFunction.d.t
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
-import type { ChatFormatting } from '../../../../net/minecraft/ChatFormatting.d.ts'
 import type { StringRepresentable } from '../../../../net/minecraft/util/StringRepresentable.d.ts'
 import type { StringRepresentable$EnumCodec } from '../../../../net/minecraft/util/StringRepresentable$EnumCodec.d.ts'
 export class DisplaySlot extends Enum<DisplaySlot> implements StringRepresentable {
@@ -38,7 +37,6 @@ export class DisplaySlot extends Enum<DisplaySlot> implements StringRepresentabl
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
     static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;
     static keys(paramvalues: (Object | null)[]): Keyable;
-    static teamColorToSlot(paramcolor: ChatFormatting): DisplaySlot;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): DisplaySlot;
     static values(): (Object | null)[];

@@ -12,6 +12,7 @@ import type { TooltipProvider } from '../../../../../../net/minecraft/world/item
 export class MapId extends Record implements TooltipProvider {
     static CODEC: Codec<MapId>;
     static STREAM_CODEC: StreamCodec<ByteBuf, MapId>;
+    constructor(id: number)
     // private id: number;
     addToTooltip(context: Item$TooltipContext, consumer: (param0: Component) => void, flag: TooltipFlag, components: DataComponentGetter): void;
     equals(o: Object | null): boolean;

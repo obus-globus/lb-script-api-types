@@ -5,18 +5,17 @@ import type { ChunkBuildContext } from '../../../../../../../../../net/caffeinem
 import type { ChunkJob } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/executor/ChunkJob.d.ts'
 import type { ChunkJobResult } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/executor/ChunkJobResult.d.ts'
 import type { ChunkBuilderTask } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/tasks/ChunkBuilderTask.d.ts'
+import type { CancellationToken } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/util/task/CancellationToken.d.ts'
 export class ChunkJobTyped<TASK extends ChunkBuilderTask<OUTPUT>, OUTPUT extends BuilderTaskOutput> extends Object implements ChunkJob {
-    constructor(arg0: TASK, arg1: (param0: ChunkJobResult<OUTPUT>) => void, arg2: boolean)
-    readonly blocking: boolean;
+    static NEVER_CANCELLED: CancellationToken;
+    constructor(arg0: TASK, arg1: (param0: ChunkJobResult<OUTPUT>) => void)
     readonly cancelled: boolean;
     // private consumer: (param0: ChunkJobResult<OUTPUT>) => void;
+    readonly estimatedDuration: number;
     readonly started: boolean;
     // private task: TASK;
     execute(arg0: ChunkBuildContext): void;
     getEstimatedDuration(): number;
-    getEstimatedSize(): number;
-    getEstimatedUploadDuration(): number;
-    isBlocking(): boolean;
     isCancelled(): boolean;
     isStarted(): boolean;
     setCancelled(): void;

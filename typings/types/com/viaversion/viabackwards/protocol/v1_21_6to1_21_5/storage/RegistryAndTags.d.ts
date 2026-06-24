@@ -8,12 +8,10 @@ export class RegistryAndTags extends Object implements StorableObject {
     // private dialogMappings: KeyMappings;
     // private dialogTags: { [key: string]: number[] };
     // private dialogs: { [key: string]: Map$Entry<string, Tag>[] };
-    fromKey(arg0: string): number[];
     fromRegistry(arg0: number): Map$Entry<string, Tag>[];
     fromRegistry(arg0: string): Map$Entry<string, Tag>[];
     fromRegistryKey(arg0: string): Map$Entry<string, Tag>[][];
     onRemove(): void;
     storeRegistry(arg0: KeyMappings, arg1: { [key: string]: Map$Entry<string, Tag>[] }): void;
     storeTags(arg0: string, arg1: number[]): void;
-    tagsSent(): boolean;
 }

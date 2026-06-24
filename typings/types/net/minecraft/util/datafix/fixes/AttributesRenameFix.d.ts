@@ -12,9 +12,12 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AttributesRenameFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
     constructor(outputSchema: Schema, name: string, renames: (param0: string) => Object | null)
+    constructor(outputSchema: Schema, name: string, renames: (param0: string) => Object | null, oldDataComponentFormat: boolean)
     // private name: string;
+    // private oldDataComponentFormat: boolean;
     // private renames: (param0: string) => Object | null;
     // private fixDataComponents(components: Typed<Object>): Typed<Object>;
+    // private fixDataComponentsOld(components: Typed<Object>): Typed<Object>;
     // private fixEntity(entity: Typed<Object>): Typed<Object>;
     // private fixIdField(dynamic: Dynamic<Object>): Dynamic<Object>;
     // private fixTypeField(dynamic: Dynamic<Object>): Dynamic<Object>;

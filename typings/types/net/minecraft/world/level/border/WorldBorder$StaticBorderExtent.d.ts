@@ -1,9 +1,10 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BorderStatus } from '../../../../../net/minecraft/world/level/border/BorderStatus.d.ts'
+import type { WorldBorder } from '../../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
 import type { WorldBorder$BorderExtent } from '../../../../../net/minecraft/world/level/border/WorldBorder$BorderExtent.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class WorldBorder$StaticBorderExtent extends Object implements WorldBorder$BorderExtent {
-    constructor(null_: WorldBorder$StaticBorderExtent, size: number)
+    constructor(null_: WorldBorder, size: number)
     // private maxX: number;
     // private maxZ: number;
     // private minX: number;

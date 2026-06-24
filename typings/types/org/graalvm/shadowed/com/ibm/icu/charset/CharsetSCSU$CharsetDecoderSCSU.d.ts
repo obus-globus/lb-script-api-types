@@ -4,9 +4,10 @@ import type { IntBuffer } from '../../../../../../../java/nio/IntBuffer.d.ts'
 import type { CoderResult } from '../../../../../../../java/nio/charset/CoderResult.d.ts'
 import type { CharsetDecoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetDecoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetSCSU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetSCSU.d.ts'
 import type { CharsetSCSU$SCSUData } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetSCSU$SCSUData.d.ts'
 export class CharsetSCSU$CharsetDecoderSCSU extends CharsetDecoderICU {
-    constructor(null_: CharsetSCSU$CharsetDecoderSCSU, cs: CharsetICU)
+    constructor(null_: CharsetSCSU, cs: CharsetICU)
     // private LabelLoop: boolean;
     // private b: number;
     // private byteOne: number;

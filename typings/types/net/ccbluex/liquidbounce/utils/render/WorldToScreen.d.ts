@@ -8,10 +8,11 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Matrix4f } from '../../../../../org/joml/Matrix4f.d.ts'
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector3f } from '../../../../../org/joml/Vector3f.d.ts'
+import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 /**
  * This util should only be called from main thread
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:37}
  */
 export class WorldToScreen extends Object {
     static INSTANCE: WorldToScreen;
@@ -24,6 +25,7 @@ export class WorldToScreen extends Object {
     static setMatrices(projectionMatrix: Matrix4fc, modelViewMatrix: Matrix4fc, cameraPos: Vec3): void;
     // private cacheMat4f: Matrix4f;
     // private cacheVec3f: Vector3f;
+    // private cacheVec4f: Vector4f;
     // private cachedCameraPos: Vec3;
     // private projModelViewMatrix: Matrix4f;
     calculateMouseRay(posOnScreen: Vec2, cameraPos: Vec3): Line;

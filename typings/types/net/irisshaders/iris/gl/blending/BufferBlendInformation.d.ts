@@ -2,6 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlendMode } from '../../../../../net/irisshaders/iris/gl/blending/BlendMode.d.ts'
 export class BufferBlendInformation extends Record {
+    constructor(index: number, blendMode: BlendMode)
     // private blendMode: BlendMode;
     // private index: number;
     blendMode(): BlendMode;

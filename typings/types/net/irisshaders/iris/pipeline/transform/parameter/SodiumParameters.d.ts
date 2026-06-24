@@ -8,8 +8,9 @@ import type { Parameters } from '../../../../../../net/irisshaders/iris/pipeline
 import type { TextureStage } from '../../../../../../net/irisshaders/iris/shaderpack/texture/TextureStage.d.ts'
 export class SodiumParameters extends Parameters {
     static EMPTY: JobParameters;
-    constructor(arg0: Patch, arg1: Map<Tri<string, TextureType, TextureStage>, string>, arg2: AlphaTest)
+    constructor(arg0: Patch, arg1: Map<Tri<string, TextureType, TextureStage>, string>, arg2: AlphaTest, arg3: boolean)
     alpha: AlphaTest;
+    shadow: boolean;
     equals(arg0: Object | null): boolean;
     getAlphaTest(): AlphaTest;
     getTextureStage(): TextureStage;

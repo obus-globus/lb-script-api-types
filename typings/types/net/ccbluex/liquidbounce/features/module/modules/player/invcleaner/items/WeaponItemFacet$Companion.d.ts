@@ -6,6 +6,6 @@ export class WeaponItemFacet$Companion extends Object {
     // private COMPARATOR: ComparatorChain<WeaponItemFacet>;
     // private DAMAGE_ESTIMATOR: EnchantmentValueEstimator;
     // private SECONDARY_VALUE_ESTIMATOR: EnchantmentValueEstimator;
-    /*not mapped: */ getSECONDARY_VALUE_ESTIMATOR$liquidbounce(): EnchantmentValueEstimator;
+    /*not mapped: */ getSECONDARY_VALUE_ESTIMATOR$net_ccbluex_liquidbounce(): EnchantmentValueEstimator;
     // private estimateDamage(o1: WeaponItemFacet): number;
 }

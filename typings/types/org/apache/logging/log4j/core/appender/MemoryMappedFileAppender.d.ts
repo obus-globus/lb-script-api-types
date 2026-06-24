@@ -1,3 +1,4 @@
+import type { MemoryMappedFileAppender$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Future } from '../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
@@ -17,6 +18,7 @@ export class MemoryMappedFileAppender extends AbstractOutputStreamAppender<Memor
     static createAppender(paramfileName: string, paramappend: string, paramname: string, paramimmediateFlush: string, paramregionLengthStr: string, paramignore: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramadvertise: string, paramadvertiseURI: string, paramconfig: Configuration): MemoryMappedFileAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
+    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: MemoryMappedFileManager, arg4: string, arg5: boolean, arg6: boolean, arg7: Advertiser, arg8: Property[], arg9: MemoryMappedFileAppender$1)
     private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: MemoryMappedFileManager, filename: string, ignoreExceptions: boolean, immediateFlush: boolean, advertiser: Advertiser, properties: Property[])
     // private advertisement: Object;
     // private advertiser: Advertiser;

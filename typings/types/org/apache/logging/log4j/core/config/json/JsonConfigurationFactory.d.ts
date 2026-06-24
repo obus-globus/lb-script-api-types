@@ -28,6 +28,7 @@ export class JsonConfigurationFactory extends ConfigurationFactory {
     // private isActive: boolean;
     getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI): Configuration;
     getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI, loader: ClassLoader): Configuration;
+    getConfiguration(loggerContext: LoggerContext, name: string, configLocations: URI[]): Configuration;
     getConfiguration(loggerContext: LoggerContext, source: ConfigurationSource): Configuration;
     getSupportedTypes(): string[];
     isActive(): boolean;

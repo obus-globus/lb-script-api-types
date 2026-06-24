@@ -10,6 +10,7 @@ import type { ChunkStatus } from '../../../../../../net/minecraft/world/level/ch
 import type { ChunkStatusTask } from '../../../../../../net/minecraft/world/level/chunk/status/ChunkStatusTask.d.ts'
 import type { WorldGenContext } from '../../../../../../net/minecraft/world/level/chunk/status/WorldGenContext.d.ts'
 export class ChunkStep extends Record {
+    constructor(targetStatus: ChunkStatus, directDependencies: ChunkDependencies, accumulatedDependencies: ChunkDependencies, blockStateWriteRadius: number, task: (param0: WorldGenContext, param1: ChunkStep, param2: StaticCache2D<GenerationChunkHolder>, param3: ChunkAccess) => CompletableFuture<ChunkAccess>)
     // private accumulatedDependencies: ChunkDependencies;
     // private blockStateWriteRadius: number;
     // private directDependencies: ChunkDependencies;

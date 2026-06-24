@@ -1,10 +1,12 @@
+import type { DoubleOpenHashSet$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { DoubleConsumer } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleConsumer.d.ts'
 import type { DoubleIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer as DoubleConsumer_2 } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleOpenHashSet$SetIterator extends Object implements DoubleIterator {
-    private constructor(null_: DoubleOpenHashSet$SetIterator)
+    private constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: DoubleOpenHashSet$1)
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

@@ -1,9 +1,11 @@
+import type { WarmUpTracker$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Tracker } from '../../../../ai/djl/training/tracker/Tracker.d.ts'
 import type { WarmUpTracker } from '../../../../ai/djl/training/tracker/WarmUpTracker.d.ts'
 import type { WarmUpTracker$Mode } from '../../../../ai/djl/training/tracker/WarmUpTracker$Mode.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class WarmUpTracker$Builder extends Object {
     private constructor()
+    constructor(arg0: WarmUpTracker$1)
     // private mainTracker: Tracker;
     // private warmUpBeginValue: number;
     // private warmUpMode: WarmUpTracker$Mode;

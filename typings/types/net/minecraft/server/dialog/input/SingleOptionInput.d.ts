@@ -8,6 +8,7 @@ import type { SingleOptionInput$Entry } from '../../../../../net/minecraft/serve
 export class SingleOptionInput extends Record implements InputControl {
     static MAP_CODEC: MapCodec<InputControl>;
     static MAP_CODEC: MapCodec<SingleOptionInput>;
+    constructor(width: number, entries: SingleOptionInput$Entry[], label: Component, labelVisible: boolean)
     // private entries: SingleOptionInput$Entry[];
     // private label: Component;
     // private labelVisible: boolean;

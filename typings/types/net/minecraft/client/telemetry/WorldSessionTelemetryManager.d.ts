@@ -13,7 +13,7 @@ import type { WorldUnloadEvent } from '../../../../net/minecraft/client/telemetr
 import type { GameType } from '../../../../net/minecraft/world/level/GameType.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 export class WorldSessionTelemetryManager extends Object {
-    constructor(eventSender: (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void, newWorld: boolean, worldLoadDuration: Duration, minigameName: string)
+    constructor(eventSender: (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void, newWorld: boolean, worldLoadDuration: Duration, minigameName: string, sessionId: UUID)
     // private eventSender: (param0: TelemetryEventType, param1: (param0: TelemetryPropertyMap$Builder) => void) => void;
     // private performanceMetricsEvent: PerformanceMetricsEvent;
     // private worldLoadEvent: WorldLoadEvent;

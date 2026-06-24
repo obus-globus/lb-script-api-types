@@ -2,6 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class DrawableGizmoPrimitives$Line extends Record {
+    constructor(start: Vec3, end: Vec3, color: number, width: number)
     // private color: number;
     // private end: Vec3;
     // private start: Vec3;

@@ -6,6 +6,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AbuseReportRequest extends Record {
+    constructor(version: number, id: UUID, report: AbuseReport, clientInfo: AbuseReportRequest$ClientInfo, thirdPartyServerInfo: AbuseReportRequest$ThirdPartyServerInfo, realmInfo: AbuseReportRequest$RealmInfo, reportType: string)
     // private clientInfo: AbuseReportRequest$ClientInfo;
     // private id: UUID;
     // private realmInfo: AbuseReportRequest$RealmInfo;

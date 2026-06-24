@@ -2,8 +2,8 @@ import type { Byte2LongAVLTreeMap$TreeIterator } from '../../../../../it/unimi/d
 import type { Byte2LongMap$Entry } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2LongMap$Entry.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 export class Byte2LongAVLTreeMap$EntryIterator extends Byte2LongAVLTreeMap$TreeIterator implements ObjectListIterator<Byte2LongMap$Entry> {
-    constructor(null_: Byte2LongAVLTreeMap$EntryIterator)
-    constructor(null_: Byte2LongAVLTreeMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add(arg0: Byte2LongMap$Entry): void;
     next(): Byte2LongMap$Entry;
     previous(): Byte2LongMap$Entry;

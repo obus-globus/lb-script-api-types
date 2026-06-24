@@ -11,11 +11,12 @@ import type { ReceiverParameterDescriptor } from '../../../../../../../kotlin/re
 import type { TypeParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { ValueParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ValueParameterDescriptor.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
+import type { FunctionDescriptorImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/FunctionDescriptorImpl.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { TypeSubstitution } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution.d.ts'
 export class FunctionDescriptorImpl$CopyConfiguration extends Object implements FunctionDescriptor$CopyBuilder<FunctionDescriptor> {
-    constructor(null_: FunctionDescriptorImpl$CopyConfiguration, arg2: DeclarationDescriptor, arg3: Modality, arg4: DescriptorVisibility, arg5: CallableMemberDescriptor$Kind, arg6: ValueParameterDescriptor[], arg7: ReceiverParameterDescriptor[], arg8: ReceiverParameterDescriptor, arg9: KotlinType, arg10: Name)
+    constructor(null_: FunctionDescriptorImpl, arg1: TypeSubstitution, arg2: DeclarationDescriptor, arg3: Modality, arg4: DescriptorVisibility, arg5: CallableMemberDescriptor$Kind, arg6: ValueParameterDescriptor[], arg7: ReceiverParameterDescriptor[], arg8: ReceiverParameterDescriptor, arg9: KotlinType, arg10: Name)
     // private additionalAnnotations: AnnotationDescriptor[];
     // private copyOverrides: boolean;
     // private dispatchReceiverParameter: ReceiverParameterDescriptor;

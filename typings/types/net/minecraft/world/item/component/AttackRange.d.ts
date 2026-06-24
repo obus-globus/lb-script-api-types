@@ -14,6 +14,7 @@ export class AttackRange extends Record {
     static CODEC: Codec<AttackRange>;
     static STREAM_CODEC: StreamCodec<ByteBuf, AttackRange>;
     static defaultFor(paramlivingEntity: LivingEntity): AttackRange;
+    constructor(minReach: number, maxReach: number, minCreativeReach: number, maxCreativeReach: number, hitboxMargin: number, mobFactor: number)
     // private hitboxMargin: number;
     // private maxCreativeReach: number;
     // private maxReach: number;

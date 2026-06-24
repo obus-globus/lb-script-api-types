@@ -24,8 +24,8 @@ export class TypedOptic<S extends unknown, T extends unknown, A extends unknown,
     static proj2(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Pair<Object, Object>, Pair<Object, Object>, Object, Object>;
     static tagged(paramarg0: TaggedChoice$TaggedChoiceType<Object>, paramarg1: Object | null, paramarg2: Type<Object>, paramarg3: Type<Object>): TypedOptic<Pair<Object, Object>, Pair<Object, Object>, Object, Object>;
     constructor(arg0: TypeToken<K1>, arg1: Type<S>, arg2: Type<T>, arg3: Type<A>, arg4: Type<B>, arg5: Optic<any, S, T, A, B>)
-    constructor(bounds: TypeToken<K1>[], elements: TypedOptic$Element<Object, Object, Object, Object>[])
     constructor(arg0: TypeToken<K1>[], arg1: Type<S>, arg2: Type<T>, arg3: Type<A>, arg4: Type<B>, arg5: Optic<any, S, T, A, B>)
+    constructor(bounds: TypeToken<K1>[], elements: TypedOptic$Element<Object, Object, Object, Object>[])
     // private bounds: TypeToken<K1>[];
     // private elements: TypedOptic$Element<Object, Object, Object, Object>[];
     aType(): Type<A>;

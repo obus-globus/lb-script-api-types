@@ -7,7 +7,7 @@ import type { ZoneId } from '../../../../java/time/ZoneId.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TruffleContext$Builder extends Object {
-    constructor(null_: TruffleContext$Builder, env: TruffleLanguage$Env)
+    constructor(null_: TruffleContext, env: TruffleLanguage$Env)
     // private allowCreateProcess: boolean;
     // private allowCreateThread: boolean;
     // private allowEnvironmentAccess: boolean;

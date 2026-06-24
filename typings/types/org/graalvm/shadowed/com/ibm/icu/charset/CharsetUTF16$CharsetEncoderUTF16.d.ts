@@ -4,9 +4,10 @@ import type { IntBuffer } from '../../../../../../../java/nio/IntBuffer.d.ts'
 import type { CoderResult } from '../../../../../../../java/nio/charset/CoderResult.d.ts'
 import type { CharsetEncoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetEncoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetUTF16 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetUTF16.d.ts'
 export class CharsetUTF16$CharsetEncoderUTF16 extends CharsetEncoderICU {
     static getMaxBytesForString(paramlength: number, parammaxCharSize: number): number;
-    constructor(null_: CharsetUTF16$CharsetEncoderUTF16, cs: CharsetICU)
+    constructor(null_: CharsetUTF16, cs: CharsetICU)
     // private temp: number[];
     // private encodeChar(source: CharBuffer, target: ByteBuffer, offsets: IntBuffer, ch: string): CoderResult;
     encodeLoop(in_: CharBuffer, out: ByteBuffer): CoderResult;

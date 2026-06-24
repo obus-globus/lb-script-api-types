@@ -16,7 +16,7 @@ export class JavaToKotlinClassMap extends Object {
     // private classId(arg0: Class<Object>): ClassId;
     getFUNCTION_N_FQ_NAME(): FqName;
     getMutabilityMappings(): JavaToKotlinClassMap$PlatformMutabilityMapping[];
-    // private isKotlinFunctionWithBigArity(arg0: FqNameUnsafe, arg1: string): boolean;
+    // private isKotlinFunctionWithBigArity(arg0: FqNameUnsafe, arg1: string, arg2: boolean): boolean;
     isMutable(arg0: ClassId): boolean;
     isMutable(arg0: FqNameUnsafe): boolean;
     isReadOnly(arg0: FqNameUnsafe): boolean;

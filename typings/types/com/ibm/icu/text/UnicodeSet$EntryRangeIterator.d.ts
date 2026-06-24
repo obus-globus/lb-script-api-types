@@ -3,7 +3,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class UnicodeSet$EntryRangeIterator extends Object implements Iterator<UnicodeSet$EntryRange> {
-    private constructor(null_: UnicodeSet$EntryRangeIterator)
+    private constructor(null_: string[])
     // private pos: number;
     // private result: UnicodeSet$EntryRange;
     forEachRemaining(arg0: (param0: UnicodeSet$EntryRange) => void): void;

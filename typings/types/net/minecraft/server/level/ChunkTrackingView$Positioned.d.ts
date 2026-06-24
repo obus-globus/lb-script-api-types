@@ -9,6 +9,7 @@ export class ChunkTrackingView$Positioned extends Record implements ChunkTrackin
     static isInViewDistance(paramcenterX: number, paramcenterZ: number, paramviewDistance: number, paramchunkX: number, paramchunkZ: number): boolean;
     static isWithinDistance(paramcenterX: number, paramcenterZ: number, paramviewDistance: number, paramchunkX: number, paramchunkZ: number, paramincludeNeighbors: boolean): boolean;
     static of(paramcenter: ChunkPos, paramradius: number): ChunkTrackingView;
+    constructor(center: ChunkPos, viewDistance: number)
     // private center: ChunkPos;
     // private viewDistance: number;
     center(): ChunkPos;

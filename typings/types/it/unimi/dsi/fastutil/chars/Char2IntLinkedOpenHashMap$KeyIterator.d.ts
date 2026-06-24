@@ -2,8 +2,8 @@ import type { Char2IntLinkedOpenHashMap$MapIterator } from '../../../../../it/un
 import type { CharConsumer } from '../../../../../it/unimi/dsi/fastutil/chars/CharConsumer.d.ts'
 import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharListIterator.d.ts'
 export class Char2IntLinkedOpenHashMap$KeyIterator extends Char2IntLinkedOpenHashMap$MapIterator<(param0: string) => void> implements CharListIterator {
-    constructor(null_: Char2IntLinkedOpenHashMap$KeyIterator)
-    constructor(null_: Char2IntLinkedOpenHashMap$KeyIterator, arg1: string)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: string)
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     add(arg0: string): void;
     next(): string;

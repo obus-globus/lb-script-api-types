@@ -1,7 +1,7 @@
 import type { DisplayData } from '../../../../com/mojang/blaze3d/platform/DisplayData.d.ts'
 import type { IconSet } from '../../../../com/mojang/blaze3d/platform/IconSet.d.ts'
 import type { Monitor } from '../../../../com/mojang/blaze3d/platform/Monitor.d.ts'
-import type { ScreenManager } from '../../../../com/mojang/blaze3d/platform/ScreenManager.d.ts'
+import type { MonitorManager } from '../../../../com/mojang/blaze3d/platform/MonitorManager.d.ts'
 import type { VideoMode } from '../../../../com/mojang/blaze3d/platform/VideoMode.d.ts'
 import type { WindowEventHandler } from '../../../../com/mojang/blaze3d/platform/WindowEventHandler.d.ts'
 import type { CursorType } from '../../../../com/mojang/blaze3d/platform/cursor/CursorType.d.ts'
@@ -19,7 +19,7 @@ export class Window extends Object implements AutoCloseable {
     static checkGlfwError(paramerrorConsumer: (param0: number, param1: string) => void): void;
     static createGlfwWindow(paramwidth: number, paramheight: number, paramtitle: string, parammonitor: number, parambackend: GpuBackend): number;
     static getPlatform(): string;
-    constructor(eventHandler: WindowEventHandler, displayData: DisplayData, fullscreenVideoModeString: string, title: string, backend: GpuBackend)
+    constructor(eventHandler: WindowEventHandler, displayData: DisplayData, fullscreenVideoModeString: string, exclusiveFullscreen: boolean, title: string, monitorManager: MonitorManager, backend: GpuBackend)
     // private actuallyFullscreen: boolean;
     readonly allowCursorChanges: boolean;
     // private backend: GpuBackend;
@@ -28,6 +28,7 @@ export class Window extends Object implements AutoCloseable {
     // private dirty: boolean;
     readonly errorSection: string;
     // private eventHandler: WindowEventHandler;
+    // private exclusiveFullscreen: boolean;
     readonly focused: boolean;
     // private framebufferHeight: number;
     // private framebufferWidth: number;
@@ -38,10 +39,9 @@ export class Window extends Object implements AutoCloseable {
     // private handle: number;
     readonly height: number;
     readonly iconified: boolean;
-    // private isResized: boolean;
     readonly minimized: boolean;
+    // private monitorManager: MonitorManager;
     readonly preferredFullscreenVideoMode: Optional<VideoMode>;
-    // private screenManager: ScreenManager;
     // private vsync: boolean;
     readonly width: number;
     // private windowedHeight: number;
@@ -74,7 +74,7 @@ export class Window extends Object implements AutoCloseable {
     isFullscreen(): boolean;
     isIconified(): boolean;
     isMinimized(): boolean;
-    isResized(): boolean;
+    // private isSoftScreen(): boolean;
     // private onEnter(handle: number, entered: boolean): void;
     // private onFocus(handle: number, focused: boolean): void;
     // private onFramebufferResize(handle: number, newWidth: number, newHeight: number): void;
@@ -82,7 +82,6 @@ export class Window extends Object implements AutoCloseable {
     // private onMove(handle: number, x: number, y: number): void;
     // private onResize(handle: number, newWidth: number, newHeight: number): void;
     // private refreshFramebufferSize(): void;
-    resetIsResized(): void;
     selectCursor(cursor: CursorType): void;
     setAllowCursorChanges(value: boolean): void;
     // private setBootErrorCallback(): void;
@@ -99,8 +98,6 @@ export class Window extends Object implements AutoCloseable {
     setWindowed(width: number, height: number): void;
     shouldClose(): boolean;
     toggleFullScreen(): void;
-    // private updateFullscreen(enableVsync: boolean): void;
     updateFullscreenIfChanged(): void;
     updateRawMouseInput(value: boolean): void;
-    updateVsync(enableVsync: boolean): void;
 }

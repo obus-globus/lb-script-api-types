@@ -5,6 +5,7 @@ import type { GizmoPrimitives } from '../../../net/minecraft/gizmos/GizmoPrimiti
 import type { Vec3 } from '../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ArrowGizmo extends Record implements Gizmo {
     static DEFAULT_WIDTH: number;
+    constructor(start: Vec3, end: Vec3, color: number, width: number)
     // private color: number;
     // private end: Vec3;
     // private start: Vec3;

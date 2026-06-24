@@ -7,7 +7,7 @@ import type { Vector2fc } from '../../../../../org/joml/Vector2fc.d.ts'
 /**
  * Chart.js spline interpolation
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt:29}
  */
 export class CurveUtil extends Object {
     static INSTANCE: CurveUtil;
@@ -19,11 +19,11 @@ export class CurveUtil extends Object {
      * @param tension Spline tension in range [0, 1] (out-of-range values are normalized)
      * @param onOutOfBounds Behavior for X values outside the curve domain, defaults to {@link OnOutOfBounds.CLAMP}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt:51}
      */
     static transform(paramarg0: Vector2fc[], paramarg1: number, paramarg2: number): number;
     static transform(data: Vector2fc[], xPos: number, tension: number, onOutOfBounds: CurveUtil$OnOutOfBounds): number;
-    static transformNormalized$liquidbounce(paramarg0: Vector2fc[], paramarg1: number, paramarg2: number, paramarg3: CurveUtil$OnOutOfBounds): number;
+    static transformNormalized$net_ccbluex_liquidbounce(paramarg0: Vector2fc[], paramarg1: number, paramarg2: number, paramarg3: CurveUtil$OnOutOfBounds): number;
     // private calculateBezierY(t: number, p0: Vector2fc, p1: Vector2fc, p2: Vector2fc, p3: Vector2fc): number;
     // private calculateT(xPos: number, leftX: number, rightX: number): number;
     // private createSplineCurve(prev: Vector2fc, point: Vector2fc, next: Vector2fc, tension: number): Pair<Vector2f, Vector2f>;

@@ -23,7 +23,7 @@ export class ChunkBuilder extends Object {
     getTotalRemainingDuration(arg0: number): number;
     getTotalThreadCount(): number;
     isBuildQueueEmpty(): boolean;
-    scheduleTask<TASK extends ChunkBuilderTask<OUTPUT>, OUTPUT extends BuilderTaskOutput>(arg0: TASK, arg1: boolean, arg2: (param0: ChunkJobResult<OUTPUT>) => void, arg3: boolean): ChunkJobTyped<TASK, OUTPUT>;
+    scheduleTask<TASK extends ChunkBuilderTask<OUTPUT>, OUTPUT extends BuilderTaskOutput>(arg0: TASK, arg1: boolean, arg2: (param0: ChunkJobResult<OUTPUT>) => void): ChunkJobTyped<TASK, OUTPUT>;
     shutdown(): void;
     // private shutdownThreads(): void;
     tryStealTask(arg0: ChunkJob): void;

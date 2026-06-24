@@ -1,7 +1,9 @@
 import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteListIterator.d.ts'
 import type { Double2ByteAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2ByteAVLTreeMap$TreeIterator.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2ByteAVLTreeMap$ValueIterator extends Double2ByteAVLTreeMap$TreeIterator implements ByteListIterator {
-    private constructor(null_: Double2ByteAVLTreeMap$ValueIterator)
+    private constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add(arg0: number): void;
     next(): number;
     nextByte(): number;

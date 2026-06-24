@@ -5,6 +5,7 @@ import type { PlayerModelType } from '../../../../../net/minecraft/world/entity/
 import type { PlayerSkin$Patch } from '../../../../../net/minecraft/world/entity/player/PlayerSkin$Patch.d.ts'
 export class PlayerSkin extends Record {
     static insecure(parambody: ClientAsset$Texture, paramcape: ClientAsset$Texture, paramelytra: ClientAsset$Texture, parammodel: PlayerModelType): PlayerSkin;
+    constructor(body: ClientAsset$Texture, cape: ClientAsset$Texture, elytra: ClientAsset$Texture, model: PlayerModelType, secure: boolean)
     // private body: ClientAsset$Texture;
     // private cape: ClientAsset$Texture;
     // private elytra: ClientAsset$Texture;

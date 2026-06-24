@@ -7,7 +7,7 @@ import type { Callback } from '../../../okhttp3/Callback.d.ts'
 import type { Request } from '../../../okhttp3/Request.d.ts'
 import type { RealCall } from '../../../okhttp3/internal/connection/RealCall.d.ts'
 export class RealCall$AsyncCall extends Object implements Runnable {
-    constructor(null_: RealCall$AsyncCall, responseCallback: Callback)
+    constructor(null_: RealCall, responseCallback: Callback)
     readonly call: RealCall;
     readonly callsPerHost: AtomicInteger;
     readonly host: string;

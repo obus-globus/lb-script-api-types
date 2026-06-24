@@ -7,6 +7,7 @@ import type { AccessibleContext } from '../../javax/accessibility/AccessibleCont
 import type { AccessibleIcon } from '../../javax/accessibility/AccessibleIcon.d.ts'
 import type { AccessibleRole } from '../../javax/accessibility/AccessibleRole.d.ts'
 import type { AccessibleStateSet } from '../../javax/accessibility/AccessibleStateSet.d.ts'
+import type { ImageIcon } from '../../javax/swing/ImageIcon.d.ts'
 export class ImageIcon$AccessibleImageIcon extends AccessibleContext implements Serializable, AccessibleIcon {
     static ACCESSIBLE_ACTION_PROPERTY: string;
     static ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY: string;
@@ -30,7 +31,7 @@ export class ImageIcon$AccessibleImageIcon extends AccessibleContext implements 
     static ACCESSIBLE_TEXT_PROPERTY: string;
     static ACCESSIBLE_VALUE_PROPERTY: string;
     static ACCESSIBLE_VISIBLE_DATA_PROPERTY: string;
-    constructor(null_: ImageIcon$AccessibleImageIcon)
+    constructor(null_: ImageIcon)
     getAccessibleChild(arg0: number): Accessible;
     getAccessibleChildrenCount(): number;
     getAccessibleIconDescription(): string;

@@ -6,7 +6,6 @@ export class MultiFieldValueClassRepresentation<Type extends RigidTypeMarker> ex
     constructor(arg0: Pair<Name, Type>[])
     // private map: Map<Name, Type>;
     readonly underlyingPropertyNamesToTypes: Pair<Name, Type>[];
-    containsPropertyWithName(arg0: Name): boolean;
     getUnderlyingPropertyNamesToTypes(): Pair<Name, Type>[];
     toString(): string;
 }

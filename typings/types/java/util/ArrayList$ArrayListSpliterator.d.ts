@@ -11,7 +11,7 @@ export class ArrayList$ArrayListSpliterator extends Object implements Spliterato
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: ArrayList$ArrayListSpliterator, arg1: number, arg2: number, arg3: number)
+    constructor(null_: E[], arg1: number, arg2: number, arg3: number)
     // private expectedModCount: number;
     // private fence: number;
     // private index: number;

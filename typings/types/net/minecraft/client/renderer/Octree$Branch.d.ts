@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Octree } from '../../../../net/minecraft/client/renderer/Octree.d.ts'
 import type { Octree$AxisSorting } from '../../../../net/minecraft/client/renderer/Octree$AxisSorting.d.ts'
 import type { Octree$Node } from '../../../../net/minecraft/client/renderer/Octree$Node.d.ts'
 import type { Octree$OctreeVisitor } from '../../../../net/minecraft/client/renderer/Octree$OctreeVisitor.d.ts'
@@ -7,7 +8,7 @@ import type { Frustum } from '../../../../net/minecraft/client/renderer/culling/
 import type { BoundingBox } from '../../../../net/minecraft/world/level/levelgen/structure/BoundingBox.d.ts'
 import type { AABB } from '../../../../net/minecraft/world/phys/AABB.d.ts'
 export class Octree$Branch extends Object implements Octree$Node {
-    constructor(null_: Octree$Branch, boundingBox: BoundingBox)
+    constructor(null_: Octree, boundingBox: BoundingBox)
     // private bbCenterX: number;
     // private bbCenterY: number;
     // private bbCenterZ: number;

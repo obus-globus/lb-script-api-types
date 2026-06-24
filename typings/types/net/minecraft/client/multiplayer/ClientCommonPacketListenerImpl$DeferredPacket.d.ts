@@ -4,6 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ServerboundPacketListener } from '../../../../net/minecraft/network/ServerboundPacketListener.d.ts'
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
 export class ClientCommonPacketListenerImpl$DeferredPacket extends Record {
+    private constructor(packet: Packet<ServerboundPacketListener>, sendCondition: () => boolean, expirationTime: number)
     // private expirationTime: number;
     // private packet: Packet<ServerboundPacketListener>;
     // private sendCondition: () => boolean;

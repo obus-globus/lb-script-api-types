@@ -3,6 +3,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { CompoundTag } from '../../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
 import type { RandomSource } from '../../../../../../../net/minecraft/util/RandomSource.d.ts'
+import type { LevelReader } from '../../../../../../../net/minecraft/world/level/LevelReader.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { PosRuleTest } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/PosRuleTest.d.ts'
 import type { RuleTest } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/RuleTest.d.ts'
@@ -21,5 +22,5 @@ export class ProcessorRule extends Object {
     // private posPredicate: PosRuleTest;
     getOutputState(): BlockState;
     getOutputTag(random: RandomSource, existingTag: CompoundTag): CompoundTag;
-    test(inputState: BlockState, locState: BlockState, inTemplatePos: BlockPos, worldPos: BlockPos, reference: BlockPos, random: RandomSource): boolean;
+    test(level: LevelReader, inputState: BlockState, inTemplatePos: BlockPos, worldPos: BlockPos, reference: BlockPos, random: RandomSource): boolean;
 }

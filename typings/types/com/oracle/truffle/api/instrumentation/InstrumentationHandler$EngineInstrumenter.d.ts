@@ -12,7 +12,7 @@ import type { Source } from '../../../../../com/oracle/truffle/api/source/Source
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InstrumentationHandler$EngineInstrumenter extends InstrumentationHandler$AbstractInstrumenter {
-    constructor(null_: InstrumentationHandler$EngineInstrumenter)
+    constructor(null_: InstrumentationHandler)
     attachContextsListener<T extends ContextsListener>(listener: T, includeActiveContexts: boolean): EventBinding<T>;
     attachThreadsActivationListener(listener: ThreadsActivationListener): EventBinding<ThreadsActivationListener>;
     attachThreadsListener<T extends ThreadsListener>(listener: T, includeStartedThreads: boolean): EventBinding<T>;

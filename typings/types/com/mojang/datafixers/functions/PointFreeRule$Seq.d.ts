@@ -12,6 +12,7 @@ export class PointFreeRule$Seq extends Record implements PointFreeRule {
     static once(paramarg0: PointFreeRule): PointFreeRule;
     static one(paramarg0: PointFreeRule): PointFreeRule;
     static seq(paramarg0: (Object | null)[]): PointFreeRule;
+    constructor(rules: PointFreeRule[])
     // private rules: PointFreeRule[];
     equals(arg0: Object | null): boolean;
     hashCode(): number;

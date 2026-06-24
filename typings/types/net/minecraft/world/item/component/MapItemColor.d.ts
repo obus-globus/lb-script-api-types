@@ -7,6 +7,7 @@ export class MapItemColor extends Record {
     static CODEC: Codec<MapItemColor>;
     static DEFAULT: MapItemColor;
     static STREAM_CODEC: StreamCodec<ByteBuf, MapItemColor>;
+    constructor(rgb: number)
     // private rgb: number;
     equals(o: Object | null): boolean;
     hashCode(): number;

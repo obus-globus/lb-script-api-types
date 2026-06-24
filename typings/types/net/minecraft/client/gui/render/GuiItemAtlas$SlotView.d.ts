@@ -2,6 +2,7 @@ import type { GpuTextureView } from '../../../../../com/mojang/blaze3d/textures/
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class GuiItemAtlas$SlotView extends Record {
+    constructor(textureView: GpuTextureView, u0: number, v0: number, u1: number, v1: number)
     // private textureView: GpuTextureView;
     // private u0: number;
     // private u1: number;

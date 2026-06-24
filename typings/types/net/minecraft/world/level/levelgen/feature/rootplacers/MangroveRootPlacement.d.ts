@@ -6,6 +6,7 @@ import type { Block } from '../../../../../../../net/minecraft/world/level/block
 import type { BlockStateProvider } from '../../../../../../../net/minecraft/world/level/levelgen/feature/stateproviders/BlockStateProvider.d.ts'
 export class MangroveRootPlacement extends Record {
     static CODEC: Codec<MangroveRootPlacement>;
+    constructor(canGrowThrough: Holder<Block>[], muddyRootsIn: Holder<Block>[], muddyRootsProvider: BlockStateProvider, maxRootWidth: number, maxRootLength: number, randomSkewChance: number)
     // private canGrowThrough: Holder<Block>[];
     // private maxRootLength: number;
     // private maxRootWidth: number;

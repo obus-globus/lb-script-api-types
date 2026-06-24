@@ -102,6 +102,7 @@ export class Block extends BlockBehaviour implements FabricBlock, ItemLike {
     dropFromExplosion(explosion: Explosion): boolean;
     fallOn(level: Level, state: BlockState, pos: BlockPos, entity: Entity, fallDistance: number): void;
     getAppearance(arg0: BlockState, arg1: BlockAndLightGetter, arg2: BlockPos, arg3: Direction, arg4: BlockState, arg5: BlockPos): BlockState;
+    getBounceRestitution(): number;
     getExplosionResistance(): number;
     getFriction(): number;
     getJumpFactor(): number;
@@ -123,7 +124,6 @@ export class Block extends BlockBehaviour implements FabricBlock, ItemLike {
     stepOn(level: Level, pos: BlockPos, onState: BlockState, entity: Entity): void;
     toString(): string;
     tryDropExperience(level: ServerLevel, pos: BlockPos, tool: ItemStack, xpRange: IntProvider): void;
-    updateEntityMovementAfterFallOn(level: BlockGetter, entity: Entity): void;
     wasExploded(level: ServerLevel, pos: BlockPos, explosion: Explosion): void;
     withPropertiesOf(source: BlockState): BlockState;
 }

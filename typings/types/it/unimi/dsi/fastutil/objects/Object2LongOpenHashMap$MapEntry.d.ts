@@ -12,8 +12,8 @@ export class Object2LongOpenHashMap$MapEntry extends Object implements Object2Lo
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: Object | null, paramarg1: number): ObjectLongPair<Object>;
-    constructor(null_: Object2LongOpenHashMap$MapEntry)
-    constructor(null_: Object2LongOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly key: K;
     equals(arg0: Object | null): boolean;

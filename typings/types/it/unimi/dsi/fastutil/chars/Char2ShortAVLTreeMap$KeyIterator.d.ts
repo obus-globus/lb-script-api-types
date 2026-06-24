@@ -1,8 +1,8 @@
 import type { Char2ShortAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/chars/Char2ShortAVLTreeMap$TreeIterator.d.ts'
 import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharListIterator.d.ts'
 export class Char2ShortAVLTreeMap$KeyIterator extends Char2ShortAVLTreeMap$TreeIterator implements CharListIterator {
-    constructor(null_: Char2ShortAVLTreeMap$KeyIterator)
-    constructor(null_: Char2ShortAVLTreeMap$KeyIterator, arg1: string)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: string)
     add(arg0: string): void;
     next(): string;
     nextChar(): string;

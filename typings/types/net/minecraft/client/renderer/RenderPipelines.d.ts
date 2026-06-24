@@ -28,7 +28,6 @@ export class RenderPipelines extends Object {
     static DEBUG_QUADS: RenderPipeline;
     static DEBUG_TRIANGLE_FAN: RenderPipeline;
     static DRAGON_RAYS: RenderPipeline;
-    static DRAGON_RAYS_DEPTH: RenderPipeline;
     static END_CRYSTAL_BEAM: RenderPipeline;
     static END_GATEWAY: RenderPipeline;
     static END_PORTAL: RenderPipeline;
@@ -51,7 +50,6 @@ export class RenderPipelines extends Object {
     static EYES: RenderPipeline;
     static FIRE_SCREEN_EFFECT: RenderPipeline;
     static FLAT_CLOUDS: RenderPipeline;
-    static FOG_SNIPPET: RenderPipeline$Snippet;
     static GENERIC_BLOCKS_SNIPPET: RenderPipeline$Snippet;
     static GLINT: RenderPipeline;
     static GLOBALS_SNIPPET: RenderPipeline$Snippet;
@@ -64,8 +62,8 @@ export class RenderPipelines extends Object {
     static GUI_TEXTURED: RenderPipeline;
     static GUI_TEXTURED_PREMULTIPLIED_ALPHA: RenderPipeline;
     static GUI_TEXTURED_SNIPPET: RenderPipeline$Snippet;
+    static GUI_TEXT_GRAYSCALE: RenderPipeline;
     static GUI_TEXT_HIGHLIGHT: RenderPipeline;
-    static GUI_TEXT_INTENSITY: RenderPipeline;
     static GUI_TEXT_SNIPPET: RenderPipeline$Snippet;
     static ITEM_CUTOUT: RenderPipeline;
     static ITEM_SNIPPET: RenderPipeline$Snippet;
@@ -79,7 +77,6 @@ export class RenderPipelines extends Object {
     static LINES_TRANSLUCENT: RenderPipeline;
     static MATRICES_FOG_LIGHT_DIR_SNIPPET: RenderPipeline$Snippet;
     static MATRICES_FOG_SNIPPET: RenderPipeline$Snippet;
-    static MATRICES_PROJECTION_SNIPPET: RenderPipeline$Snippet;
     static MOJANG_LOGO: RenderPipeline;
     static OPAQUE_PARTICLE: RenderPipeline;
     static OUTLINE_CULL: RenderPipeline;
@@ -98,8 +95,9 @@ export class RenderPipelines extends Object {
     static TEXT: RenderPipeline;
     static TEXT_BACKGROUND: RenderPipeline;
     static TEXT_BACKGROUND_SEE_THROUGH: RenderPipeline;
-    static TEXT_INTENSITY: RenderPipeline;
-    static TEXT_INTENSITY_SEE_THROUGH: RenderPipeline;
+    static TEXT_GRAYSCALE: RenderPipeline;
+    static TEXT_GRAYSCALE_POLYGON_OFFSET: RenderPipeline;
+    static TEXT_GRAYSCALE_SEE_THROUGH: RenderPipeline;
     static TEXT_POLYGON_OFFSET: RenderPipeline;
     static TEXT_SEE_THROUGH: RenderPipeline;
     static TEXT_SNIPPET: RenderPipeline$Snippet;
@@ -114,6 +112,7 @@ export class RenderPipelines extends Object {
     static WEATHER_SNIPPET: RenderPipeline$Snippet;
     static WIREFRAME: RenderPipeline;
     static WORLD_BORDER: RenderPipeline;
+    static WORLD_TEXT_SNIPPET: RenderPipeline$Snippet;
     static getStaticPipelines(): RenderPipeline[];
     static register(parampipeline: RenderPipeline): RenderPipeline;
     constructor()

@@ -1,4 +1,6 @@
 import type { Runnable } from '../../../java/lang/Runnable.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { ContinuationInterceptor$Key } from '../../../kotlin/coroutines/ContinuationInterceptor$Key.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { AtomicInt } from '../../../kotlinx/atomicfu/AtomicInt.d.ts'
@@ -12,6 +14,7 @@ import type { LockFreeTaskQueue } from '../../../kotlinx/coroutines/internal/Loc
 export class LimitedDispatcher extends CoroutineDispatcher implements Delay {
     static Key: ContinuationInterceptor$Key;
     static Key: CoroutineDispatcher$Key;
+    static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor(dispatcher: CoroutineDispatcher, parallelism: number, name: string | null)
     delay(time: number): void;
     dispatch(context: CoroutineContext, block: () => void): void;

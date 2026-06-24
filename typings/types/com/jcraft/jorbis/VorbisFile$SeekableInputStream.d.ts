@@ -1,8 +1,9 @@
+import type { VorbisFile } from '../../../com/jcraft/jorbis/VorbisFile.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { RandomAccessFile } from '../../../java/io/RandomAccessFile.d.ts'
 export class VorbisFile$SeekableInputStream extends InputStream {
     static nullInputStream(): InputStream;
-    constructor(null_: VorbisFile$SeekableInputStream, arg1: string)
+    constructor(null_: VorbisFile, arg1: string)
     // private mode: string;
     // private raf: RandomAccessFile;
     available(): number;

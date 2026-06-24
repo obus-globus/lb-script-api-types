@@ -5,6 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { SoundTypeBuilderImpl$Entry } from '../../../../../../net/fabricmc/fabric/impl/datagen/client/SoundTypeBuilderImpl$Entry.d.ts'
 export class SoundTypeBuilderImpl$SoundType extends Record {
     static CODEC: Codec<SoundTypeBuilderImpl$SoundType>;
+    constructor(sounds: SoundTypeBuilderImpl$Entry[], replace: boolean, subtitle: Optional<string>)
     // private replace: boolean;
     // private sounds: SoundTypeBuilderImpl$Entry[];
     // private subtitle: Optional<string>;

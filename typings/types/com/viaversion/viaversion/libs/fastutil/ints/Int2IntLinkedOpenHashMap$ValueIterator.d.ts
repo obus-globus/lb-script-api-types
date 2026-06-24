@@ -2,7 +2,7 @@ import type { Int2IntLinkedOpenHashMap$MapIterator } from '../../../../../../com
 import type { IntListIterator } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/IntListIterator.d.ts'
 import type { IntConsumer } from '../../../../../../java/util/function/IntConsumer.d.ts'
 export class Int2IntLinkedOpenHashMap$ValueIterator extends Int2IntLinkedOpenHashMap$MapIterator<(param0: number) => void> implements IntListIterator {
-    constructor(null_: Int2IntLinkedOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

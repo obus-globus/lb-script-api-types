@@ -131,6 +131,7 @@ export class ChunkMap extends SimpleRegionStorage implements ChunkMapAccessor, C
     getUpdatingChunkIfPresent(key: number): ChunkHolder;
     getVisibleChunkIfPresent(key: number): ChunkHolder;
     // private handleChunkLoadFailure(throwable: Throwable, pos: ChunkPos): ChunkAccess;
+    hasEntityWithId(id: number): boolean;
     hasWork(): boolean;
     // private isChunkOnTrackedBorder(player: ServerPlayer, chunkX: number, chunkZ: number): boolean;
     isChunkTracked(player: ServerPlayer, chunkX: number, chunkZ: number): boolean;
@@ -176,7 +177,7 @@ export class ChunkMap extends SimpleRegionStorage implements ChunkMapAccessor, C
     // private updateChunkScheduling(node: number, level: number, chunk: ChunkHolder, oldLevel: number): ChunkHolder;
     // private updateChunkTracking(player: ServerPlayer): void;
     // private updatePlayerPos(player: ServerPlayer): void;
-    updatePlayerStatus(player: ServerPlayer, added: boolean): void;
+    // private updatePlayerStatus(player: ServerPlayer, added: boolean): void;
     upgradeChunkTag(chunkTag: Dynamic<Tag>, defaultVersion: number): Dynamic<Tag>;
     // private upgradeChunkTag(tag: CompoundTag): CompoundTag;
     upgradeChunkTag(chunkTag: CompoundTag, defaultVersion: number): CompoundTag;

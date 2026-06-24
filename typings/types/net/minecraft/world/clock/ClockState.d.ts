@@ -3,6 +3,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ClockState extends Record {
     static CODEC: Codec<ClockState>;
+    constructor(totalTicks: number, partialTick: number, rate: number, paused: boolean)
     // private partialTick: number;
     // private paused: boolean;
     // private rate: number;

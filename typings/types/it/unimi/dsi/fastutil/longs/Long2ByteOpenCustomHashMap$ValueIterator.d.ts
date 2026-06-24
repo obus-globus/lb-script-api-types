@@ -4,7 +4,7 @@ import type { Long2ByteOpenCustomHashMap$MapIterator } from '../../../../../it/u
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Long2ByteOpenCustomHashMap$ValueIterator extends Long2ByteOpenCustomHashMap$MapIterator<(param0: number) => void> implements ByteIterator {
-    constructor(null_: Long2ByteOpenCustomHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

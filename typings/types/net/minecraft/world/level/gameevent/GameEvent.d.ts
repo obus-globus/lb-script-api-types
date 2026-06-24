@@ -13,6 +13,7 @@ export class GameEvent extends Record {
     static BLOCK_DETACH: Holder$Reference<GameEvent>;
     static BLOCK_OPEN: Holder$Reference<GameEvent>;
     static BLOCK_PLACE: Holder$Reference<GameEvent>;
+    static BOUNCE: Holder$Reference<GameEvent>;
     static CODEC: Codec<Holder<GameEvent>>;
     static CONTAINER_CLOSE: Holder$Reference<GameEvent>;
     static CONTAINER_OPEN: Holder$Reference<GameEvent>;
@@ -67,6 +68,7 @@ export class GameEvent extends Record {
     static TELEPORT: Holder$Reference<GameEvent>;
     static UNEQUIP: Holder$Reference<GameEvent>;
     static bootstrap(paramregistry: GameEvent[]): Holder<GameEvent>;
+    constructor(notificationRadius: number)
     // private notificationRadius: number;
     equals(o: Object | null): boolean;
     hashCode(): number;

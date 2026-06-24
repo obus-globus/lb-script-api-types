@@ -49,6 +49,7 @@ export class ModListWidget extends ObjectSelectionList<ModListEntry> implements 
     reloadFilters(): void;
     remove(arg0: number): void;
     removeEntry(arg0: ModListEntry): void;
+    // private repositionEntriesAfterContentChange(): void;
     scrollBarX(): number;
     select(arg0: ModListEntry): void;
     setScrollAmount(arg0: number): void;

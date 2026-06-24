@@ -4,13 +4,14 @@ import type { EntityTrackerAccessor } from '../../../../net/fabricmc/fabric/mixi
 import type { SectionPos } from '../../../../net/minecraft/core/SectionPos.d.ts'
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { ClientGamePacketListener } from '../../../../net/minecraft/network/protocol/game/ClientGamePacketListener.d.ts'
+import type { ChunkMap } from '../../../../net/minecraft/server/level/ChunkMap.d.ts'
 import type { ServerEntity } from '../../../../net/minecraft/server/level/ServerEntity.d.ts'
 import type { ServerEntity$Synchronizer } from '../../../../net/minecraft/server/level/ServerEntity$Synchronizer.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { ServerPlayerConnection } from '../../../../net/minecraft/server/network/ServerPlayerConnection.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 export class ChunkMap$TrackedEntity extends Object implements EntityTrackerAccessor, ServerEntity$Synchronizer {
-    constructor(null_: ChunkMap$TrackedEntity, entity: Entity, range: number, updateInterval: number, trackDelta: boolean)
+    constructor(null_: ChunkMap, entity: Entity, range: number, updateInterval: number, trackDelta: boolean)
     // private entity: Entity;
     // private lastSectionPos: SectionPos;
     // private range: number;

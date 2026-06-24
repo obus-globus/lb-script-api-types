@@ -18,6 +18,7 @@ export class RegistryKeys extends Object {
     static PAINTING_VARIANT: string;
     static PIG_SOUND_VARIANT: string;
     static PIG_VARIANT: string;
+    static SULFUR_CUBE_ARCHETYPE: string;
     static TEST_ENVIRONMENT: string;
     static TEST_INSTANCE: string;
     static TIMELINE: string;

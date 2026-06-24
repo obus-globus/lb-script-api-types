@@ -15,6 +15,7 @@ import type { FormattedText } from '../../../../net/minecraft/network/chat/Forma
 import type { FormattedText$ContentConsumer } from '../../../../net/minecraft/network/chat/FormattedText$ContentConsumer.d.ts'
 import type { FormattedText$StyledContentConsumer } from '../../../../net/minecraft/network/chat/FormattedText$StyledContentConsumer.d.ts'
 import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
+import type { TextColor } from '../../../../net/minecraft/network/chat/TextColor.d.ts'
 import type { DataSource } from '../../../../net/minecraft/network/chat/contents/data/DataSource.d.ts'
 import type { ObjectInfo } from '../../../../net/minecraft/network/chat/contents/objects/ObjectInfo.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
@@ -75,6 +76,7 @@ export class MutableComponent extends Object implements Component {
     visit<T extends unknown>(output: FormattedText$ContentConsumer<T>): Optional<T>;
     visit<T extends unknown>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
     withColor(color: number): MutableComponent;
+    withColor(color: TextColor): MutableComponent;
     withStyle(updater: (param0: Style) => Object | null): MutableComponent;
     withStyle(formats: ChatFormatting[]): MutableComponent;
     withStyle(format: ChatFormatting): MutableComponent;

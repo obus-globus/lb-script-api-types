@@ -20,6 +20,16 @@ export class PosixViewAttributeAction$Builder extends Object implements Builder<
     build(): PosixViewAttributeAction;
     getErrorPrefix(): string;
     isValid(): boolean;
+    setBasePath(basePath: string): PosixViewAttributeAction$Builder;
+    setConfiguration(configuration: Configuration): PosixViewAttributeAction$Builder;
+    setFileGroup(fileGroup: string): PosixViewAttributeAction$Builder;
+    setFileOwner(fileOwner: string): PosixViewAttributeAction$Builder;
+    setFilePermissions(filePermissions: PosixFilePermission[]): PosixViewAttributeAction$Builder;
+    setFilePermissionsString(filePermissionsString: string): PosixViewAttributeAction$Builder;
+    setFollowLinks(followLinks: boolean): PosixViewAttributeAction$Builder;
+    setMaxDepth(maxDepth: number): PosixViewAttributeAction$Builder;
+    setPathConditions(pathConditions: PathCondition[]): PosixViewAttributeAction$Builder;
+    setSubst(subst: StrSubstitutor): PosixViewAttributeAction$Builder;
     withBasePath(basePath: string): PosixViewAttributeAction$Builder;
     withConfiguration(configuration: Configuration): PosixViewAttributeAction$Builder;
     withFileGroup(fileGroup: string): PosixViewAttributeAction$Builder;

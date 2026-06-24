@@ -4,6 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { DynamicUniformStorage$DynamicUniform } from '../../../../net/minecraft/client/renderer/DynamicUniformStorage$DynamicUniform.d.ts'
 import type { Matrix4fc } from '../../../../org/joml/Matrix4fc.d.ts'
 export class DynamicUniforms$ChunkSectionInfo extends Record implements DynamicUniformStorage$DynamicUniform {
+    constructor(modelView: Matrix4fc, x: number, y: number, z: number, visibility: number, textureAtlasWidth: number, textureAtlasHeight: number)
     // private modelView: Matrix4fc;
     // private textureAtlasHeight: number;
     // private textureAtlasWidth: number;

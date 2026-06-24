@@ -1,6 +1,6 @@
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Criterion } from '../../../../net/minecraft/advancements/Criterion.d.ts'
+import type { Criterion } from '../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
 import type { RecipeOutput } from '../../../../net/minecraft/data/recipes/RecipeOutput.d.ts'
 import type { RecipeUnlockAdvancementBuilder } from '../../../../net/minecraft/data/recipes/RecipeUnlockAdvancementBuilder.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'

@@ -14,18 +14,20 @@ import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class PlatformDependent extends Object {
     static BIG_ENDIAN_NATIVE_ORDER: boolean;
+    static absolutePut(paramarg0: ByteBuffer, paramarg1: number, paramarg2: number[], paramarg3: number, paramarg4: number): ByteBuffer;
+    static absolutePut(paramarg0: ByteBuffer, paramarg1: number, paramarg2: ByteBuffer, paramarg3: number, paramarg4: number): ByteBuffer;
     static addressSize(): number;
     static align(paramarg0: number, paramarg1: number): number;
     static alignDirectBuffer(paramarg0: ByteBuffer, paramarg1: number): ByteBuffer;
     static allocateDirect(paramarg0: number): CleanableDirectBuffer;
-    static allocateDirectBufferNoCleaner(paramarg0: number): CleanableDirectBuffer;
-    static allocateDirectNoCleaner(paramarg0: number): ByteBuffer;
+    static allocateDirect(paramarg0: number, paramarg1: boolean): CleanableDirectBuffer;
     static allocateMemory(paramarg0: number): number;
     static allocateUninitializedArray(paramarg0: number): number[];
     static bitMode(): number;
     static byteArrayBaseOffset(): number;
     static canEnableTcpNoDelayByDefault(): boolean;
     static canReliabilyFreeDirectBuffers(): boolean;
+    static canUnalignedAccess(): boolean;
     static compareAndSwapInt(paramarg0: Object, paramarg1: number, paramarg2: number, paramarg3: number): boolean;
     static copyMemory(paramarg0: number[], paramarg1: number, paramarg2: number[], paramarg3: number, paramarg4: number): void;
     static copyMemory(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): void;
@@ -40,7 +42,6 @@ export class PlatformDependent extends Object {
     static estimateMaxDirectMemory(): number;
     static findVarHandleOfIntField(paramarg0: MethodHandles$Lookup, paramarg1: Class<Object>, paramarg2: string): VarHandle;
     static freeDirectBuffer(paramarg0: ByteBuffer): void;
-    static freeDirectNoCleaner(paramarg0: ByteBuffer): void;
     static freeMemory(paramarg0: number): void;
     static getAndAddInt(paramarg0: Object, paramarg1: number, paramarg2: number): number;
     static getByte(paramarg0: number[], paramarg1: number): number;
@@ -63,6 +64,7 @@ export class PlatformDependent extends Object {
     static getVolatileInt(paramarg0: Object, paramarg1: number): number;
     static hasAlignDirectByteBuffer(): boolean;
     static hasDirectBufferNoCleanerConstructor(): boolean;
+    static hasDirectByteBufferAddress(paramarg0: ByteBuffer): boolean;
     static hasUnsafe(): boolean;
     static hasVarHandle(): boolean;
     static hashCodeAscii(paramarg0: number[], paramarg1: number, paramarg2: number): number;
@@ -118,8 +120,7 @@ export class PlatformDependent extends Object {
     static putOrderedInt(paramarg0: Object, paramarg1: number, paramarg2: number): void;
     static putShort(paramarg0: number[], paramarg1: number, paramarg2: number): void;
     static putShort(paramarg0: number, paramarg1: number): void;
-    static reallocateDirectBufferNoCleaner(paramarg0: CleanableDirectBuffer, paramarg1: number): CleanableDirectBuffer;
-    static reallocateDirectNoCleaner(paramarg0: ByteBuffer, paramarg1: number): ByteBuffer;
+    static reallocateDirect(paramarg0: CleanableDirectBuffer, paramarg1: number): CleanableDirectBuffer;
     static reallocateMemory(paramarg0: number, paramarg1: number): number;
     static setMemory(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: number): void;
     static setMemory(paramarg0: number, paramarg1: number, paramarg2: number): void;
@@ -131,6 +132,7 @@ export class PlatformDependent extends Object {
     static throwException(paramarg0: Throwable): void;
     static tmpdir(): File;
     static useDirectBufferNoCleaner(): boolean;
+    static useVarHandleForMultiByteAccess(): boolean;
     static usedDirectMemory(): number;
     private constructor()
 }

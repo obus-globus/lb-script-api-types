@@ -4,6 +4,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ArgumentTypeRegistry$ArgumentTypeMapping extends Record {
+    constructor(id: number, writer: (param0: PacketWrapper, param1: ArgumentType<Object>) => void)
     // private id: number;
     // private writer: (param0: PacketWrapper, param1: ArgumentType<Object>) => void;
     equals(arg0: Object | null): boolean;

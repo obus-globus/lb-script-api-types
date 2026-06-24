@@ -74,6 +74,6 @@ export class PoweredBlock extends Block {
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(properties: BlockBehaviour$Properties)
     codec(): MapCodec<PoweredBlock>;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     isSignalSource(state: BlockState): boolean;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
 }

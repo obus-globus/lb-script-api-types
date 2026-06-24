@@ -93,6 +93,7 @@ export class ObserverBlock extends DirectionalBlock {
     isSignalSource(state: BlockState): boolean;
     mirror(state: BlockState, mirror: Mirror): BlockState;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     rotate(state: BlockState, rotation: Rotation): BlockState;
     // private startSignal(level: LevelReader, ticks: ScheduledTickAccess, pos: BlockPos): void;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;

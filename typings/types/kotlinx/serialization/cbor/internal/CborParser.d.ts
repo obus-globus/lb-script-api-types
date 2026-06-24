@@ -19,7 +19,7 @@ export class CborParser extends Object {
     nextFloat(tags: (Object | null)[] | null): number;
     nextNull(tags: (Object | null)[] | null): void | null;
     nextNumber(tags: (Object | null)[] | null): number;
-    nextNumberWithinRange(tags: (Object | null)[] | null, from: number, to: number, type: string): number;
+    nextNumberWithinRange(tags: (Object | null)[] | null, from: number, to: number, unsignedUpperBound: number, type: string): number;
     nextString(tags: (Object | null)[] | null): string;
     // private nextTaggedString(tags: (Object | null)[] | null): Pair<string, (Object | null)[]>;
     nextTaggedStringOrNumber(): Triple<string, number, (Object | null)[]>;

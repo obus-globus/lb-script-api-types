@@ -13,8 +13,8 @@ export class Double2ShortOpenHashMap$KeySpliterator extends Double2ShortOpenHash
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Double2ShortOpenHashMap$KeySpliterator)
-    constructor(null_: Double2ShortOpenHashMap$KeySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: number) => void): void;

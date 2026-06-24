@@ -26,6 +26,8 @@ export class BlockSetType extends Record {
     static WARPED: BlockSetType;
     static register(paramtype: BlockSetType): BlockSetType;
     static values(): Stream<BlockSetType>;
+    constructor(name: string)
+    constructor(name: string, canOpenByHand: boolean, canOpenByWindCharge: boolean, canButtonBeActivatedByArrows: boolean, pressurePlateSensitivity: BlockSetType$PressurePlateSensitivity, soundType: SoundType, doorClose: SoundEvent, doorOpen: SoundEvent, trapdoorClose: SoundEvent, trapdoorOpen: SoundEvent, pressurePlateClickOff: SoundEvent, pressurePlateClickOn: SoundEvent, buttonClickOff: SoundEvent, buttonClickOn: SoundEvent)
     // private buttonClickOff: SoundEvent;
     // private buttonClickOn: SoundEvent;
     // private canButtonBeActivatedByArrows: boolean;

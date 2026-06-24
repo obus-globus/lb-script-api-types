@@ -37,6 +37,7 @@ export class PBRAtlasTexture extends AbstractTexture implements PBRDumpable {
     getDefaultDumpLocation(): Identifier;
     getSprite(arg0: Identifier): AtlasPBRLoader$PBRTextureAtlasSprite;
     getType(): PBRType;
+    releaseTextures(): void;
     tryUpload(arg0: number, arg1: number, arg2: number): boolean;
     upload(arg0: number, arg1: number, arg2: number): void;
     // private uploadInitialContents(): void;

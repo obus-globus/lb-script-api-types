@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Font } from '../../../../net/minecraft/client/gui/Font.d.ts'
 import type { Font$GlyphVisitor } from '../../../../net/minecraft/client/gui/Font$GlyphVisitor.d.ts'
 import type { Font$PreparedText } from '../../../../net/minecraft/client/gui/Font$PreparedText.d.ts'
 import type { EmptyArea } from '../../../../net/minecraft/client/gui/font/EmptyArea.d.ts'
@@ -10,8 +11,8 @@ import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
 import type { TextColor } from '../../../../net/minecraft/network/chat/TextColor.d.ts'
 import type { FormattedCharSink } from '../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class Font$PreparedTextBuilder extends Object implements Font$PreparedText, FormattedCharSink {
-    constructor(null_: Font$PreparedTextBuilder, x: number, y: number, color: number, drawShadow: boolean, includeEmpty: boolean)
-    constructor(null_: Font$PreparedTextBuilder, x: number, y: number, color: number, backgroundColor: number, drawShadow: boolean, includeEmpty: boolean)
+    constructor(null_: Font, x: number, y: number, color: number, drawShadow: boolean, includeEmpty: boolean)
+    constructor(null_: Font, x: number, y: number, color: number, backgroundColor: number, drawShadow: boolean, includeEmpty: boolean)
     // private backgroundBottom: number;
     // private backgroundColor: number;
     // private backgroundLeft: number;
@@ -35,6 +36,7 @@ export class Font$PreparedTextBuilder extends Object implements Font$PreparedTex
     // private addEmptyGlyph(empty: EmptyArea): void;
     // private addGlyph(instance: TextRenderable$Styled): void;
     bounds(): ScreenRectangle;
+    discardEffects(): void;
     // private getShadowColor(style: Style, textColor: number): number;
     // private getTextColor(textColor: TextColor): number;
     // private markBackground(x: number, y: number, advance: number): void;

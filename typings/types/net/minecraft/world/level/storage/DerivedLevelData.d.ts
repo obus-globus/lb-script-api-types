@@ -20,6 +20,7 @@ export class DerivedLevelData extends Object implements ServerLevelData {
     isDifficultyLocked(): boolean;
     isHardcore(): boolean;
     isInitialized(): boolean;
+    setAllowCommands(allowCommands: boolean): void;
     setGameTime(time: number): void;
     setGameType(gameType: GameType): void;
     setInitialized(initialized: boolean): void;

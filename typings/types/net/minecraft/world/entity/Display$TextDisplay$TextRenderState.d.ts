@@ -3,6 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Display$IntInterpolator } from '../../../../net/minecraft/world/entity/Display$IntInterpolator.d.ts'
 export class Display$TextDisplay$TextRenderState extends Record {
+    constructor(text: Component, lineWidth: number, textOpacity: (param0: number) => number, backgroundColor: (param0: number) => number, flags: number)
     // private backgroundColor: (param0: number) => number;
     // private flags: number;
     // private lineWidth: number;

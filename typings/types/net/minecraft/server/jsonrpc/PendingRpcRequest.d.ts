@@ -5,6 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Holder$Reference } from '../../../../net/minecraft/core/Holder$Reference.d.ts'
 import type { OutgoingRpcMethod } from '../../../../net/minecraft/server/jsonrpc/OutgoingRpcMethod.d.ts'
 export class PendingRpcRequest<Result extends unknown> extends Record {
+    constructor(method: Holder$Reference<OutgoingRpcMethod<Object, Result>>, resultFuture: CompletableFuture<Result>, timeoutTime: number)
     // private method: Holder$Reference<OutgoingRpcMethod<Object, Result>>;
     // private resultFuture: CompletableFuture<Result>;
     // private timeoutTime: number;

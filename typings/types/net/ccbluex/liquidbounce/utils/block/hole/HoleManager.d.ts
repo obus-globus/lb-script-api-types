@@ -11,7 +11,7 @@ export class HoleManager extends Object implements EventListener, MinecraftShort
     static INSTANCE: HoleManager;
     // private activeModules: HoleManagerSubscriber[];
     // private movableRegionScanner: MovableRegionScanner;
-    /*not mapped: */ getMovableRegionScanner$liquidbounce(): MovableRegionScanner;
+    /*not mapped: */ getMovableRegionScanner$net_ccbluex_liquidbounce(): MovableRegionScanner;
     // private movementHandler: EventHook<PlayerPostTickEvent>;
     // private playerPos: BlockPos$MutableBlockPos;
     readonly running: boolean;

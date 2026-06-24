@@ -2,8 +2,8 @@ import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/byte
 import type { ByteRBTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteRBTreeSet$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteRBTreeSet$SetIterator extends Object implements ByteListIterator {
-    constructor(null_: ByteRBTreeSet$SetIterator)
-    constructor(null_: ByteRBTreeSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: ByteRBTreeSet$Entry;
     // private index: number;
     // private next: ByteRBTreeSet$Entry;

@@ -10,6 +10,7 @@ import type { RenderType } from '../../../../../../net/minecraft/client/renderer
 import type { Style } from '../../../../../../net/minecraft/network/chat/Style.d.ts'
 import type { Matrix4fc } from '../../../../../../org/joml/Matrix4fc.d.ts'
 export class BakedSheetGlyph$GlyphInstance extends Record implements TextRenderable$Styled {
+    private constructor(x: number, y: number, color: number, shadowColor: number, glyph: BakedSheetGlyph, style: Style, boldOffset: number, shadowOffset: number)
     // private boldOffset: number;
     // private color: number;
     // private glyph: BakedSheetGlyph;

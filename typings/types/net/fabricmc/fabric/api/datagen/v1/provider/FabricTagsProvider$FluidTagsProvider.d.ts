@@ -3,11 +3,11 @@ import type { CompletableFuture } from '../../../../../../../java/util/concurren
 import type { ToIntFunction } from '../../../../../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FabricPackOutput } from '../../../../../../../net/fabricmc/fabric/api/datagen/v1/FabricPackOutput.d.ts'
-import type { FabricTagsProvider$FabricIntrinsicHolderTagsProvider } from '../../../../../../../net/fabricmc/fabric/api/datagen/v1/provider/FabricTagsProvider$FabricIntrinsicHolderTagsProvider.d.ts'
+import type { FabricTagsProvider } from '../../../../../../../net/fabricmc/fabric/api/datagen/v1/provider/FabricTagsProvider.d.ts'
 import type { HolderLookup$Provider } from '../../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { Fluid } from '../../../../../../../net/minecraft/world/level/material/Fluid.d.ts'
 import type { Logger } from '../../../../../../../org/slf4j/Logger.d.ts'
-export abstract class FabricTagsProvider$FluidTagsProvider extends FabricTagsProvider$FabricIntrinsicHolderTagsProvider<Fluid> {
+export abstract class FabricTagsProvider$FluidTagsProvider extends FabricTagsProvider<Fluid> {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;

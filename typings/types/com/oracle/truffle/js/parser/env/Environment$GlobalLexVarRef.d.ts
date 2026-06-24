@@ -1,12 +1,13 @@
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JSFrameSlot } from '../../../../../../com/oracle/truffle/js/nodes/JSFrameSlot.d.ts'
 import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nodes/JavaScriptNode.d.ts'
+import type { Environment } from '../../../../../../com/oracle/truffle/js/parser/env/Environment.d.ts'
 import type { Environment$VarRef } from '../../../../../../com/oracle/truffle/js/parser/env/Environment$VarRef.d.ts'
 import type { GlobalEnvironment } from '../../../../../../com/oracle/truffle/js/parser/env/GlobalEnvironment.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Environment$GlobalLexVarRef extends Environment$VarRef {
-    constructor(null_: Environment$GlobalLexVarRef, name: TruffleString, isConst: boolean, globalEnv: GlobalEnvironment)
-    private constructor(null_: Environment$GlobalLexVarRef, name: Object, isConst: boolean, globalEnv: GlobalEnvironment, required: boolean, checkTDZ: boolean)
+    constructor(null_: Environment, name: TruffleString, isConst: boolean, globalEnv: GlobalEnvironment)
+    private constructor(null_: Environment, name: Object, isConst: boolean, globalEnv: GlobalEnvironment, required: boolean, checkTDZ: boolean)
     // private checkTDZ: boolean;
     // private globalEnv: GlobalEnvironment;
     // private isConst: boolean;

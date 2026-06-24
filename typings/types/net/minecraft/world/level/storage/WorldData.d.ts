@@ -29,6 +29,7 @@ export interface WorldData extends Object{
     isFlatWorld(): boolean;
     isHardcore(): boolean;
     overworldData(): ServerLevelData;
+    setAllowCommands(allowCommands: boolean): void;
     setDataConfiguration(dataConfiguration: WorldDataConfiguration): void;
     setDifficulty(difficulty: Difficulty): void;
     setDifficultyLocked(difficultyLocked: boolean): void;

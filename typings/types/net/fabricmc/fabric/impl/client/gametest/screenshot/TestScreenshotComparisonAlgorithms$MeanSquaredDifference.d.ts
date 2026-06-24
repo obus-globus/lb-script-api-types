@@ -8,6 +8,7 @@ export class TestScreenshotComparisonAlgorithms$MeanSquaredDifference extends Re
     static defaultAlgorithm(): TestScreenshotComparisonAlgorithm;
     static exact(): TestScreenshotComparisonAlgorithm;
     static meanSquaredDifference(paramarg0: number): TestScreenshotComparisonAlgorithm;
+    constructor(maxMeanSquaredDifference: number)
     // private maxMeanSquaredDifference: number;
     equals(arg0: Object | null): boolean;
     findColor(arg0: TestScreenshotComparisonAlgorithm$RawImage<number[]>, arg1: TestScreenshotComparisonAlgorithm$RawImage<number[]>): Vector2i;

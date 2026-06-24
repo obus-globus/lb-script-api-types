@@ -22,6 +22,7 @@ export class HttpHeaders extends Object {
     static ALT_SVC: string;
     static AUTHORIZATION: string;
     static CACHE_CONTROL: string;
+    static CDN_CACHE_CONTROL: string;
     static CDN_LOOP: string;
     static CONNECTION: string;
     static CONTENT_DISPOSITION: string;

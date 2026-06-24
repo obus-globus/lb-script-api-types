@@ -8,6 +8,7 @@ import type { Style } from '../../../../../net/minecraft/network/chat/Style.d.ts
 import type { FormattedCharSequence } from '../../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class GuiMessage$Line extends Record implements GuiMessageLineAddition {
+    constructor(parent: GuiMessage, content: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, endOfEntry: boolean)
     // private content: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     // private endOfEntry: boolean;
     // private liquid_bounce$id: string;

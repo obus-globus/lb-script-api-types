@@ -1,6 +1,7 @@
+import type { Fox } from '../../../../../../net/minecraft/world/entity/animal/fox/Fox.d.ts'
 import type { Fox$FoxBehaviorGoal } from '../../../../../../net/minecraft/world/entity/animal/fox/Fox$FoxBehaviorGoal.d.ts'
 export class Fox$PerchAndSearchGoal extends Fox$FoxBehaviorGoal {
-    constructor(null_: Fox$PerchAndSearchGoal)
+    constructor(null_: Fox)
     // private lookTime: number;
     // private looksRemaining: number;
     // private relX: number;

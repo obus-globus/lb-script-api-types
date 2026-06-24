@@ -7,6 +7,7 @@ export class SignedMessageLink extends Record {
     static CODEC: Codec<SignedMessageLink>;
     static root(paramsender: UUID, paramsessionId: UUID): SignedMessageLink;
     static unsigned(paramsender: UUID): SignedMessageLink;
+    constructor(index: number, sender: UUID, sessionId: UUID)
     // private index: number;
     // private sender: UUID;
     // private sessionId: UUID;

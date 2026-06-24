@@ -152,7 +152,6 @@ export abstract class Screen extends AbstractContainerEventHandler implements Sc
     liquidbounce$screenInitialized(): boolean;
     onClose(): void;
     onFilesDrop(files: Path[][]): void;
-    panoramaShouldSpin(): boolean;
     rebuildWidgets(): void;
     removeWidget(widget: GuiEventListener): void;
     removed(): void;

@@ -30,6 +30,8 @@ export class SystemUtils extends Object {
     static IS_JAVA_22: boolean;
     static IS_JAVA_23: boolean;
     static IS_JAVA_24: boolean;
+    static IS_JAVA_25: boolean;
+    static IS_JAVA_26: boolean;
     static IS_JAVA_9: boolean;
     static IS_OS_400: boolean;
     static IS_OS_AIX: boolean;

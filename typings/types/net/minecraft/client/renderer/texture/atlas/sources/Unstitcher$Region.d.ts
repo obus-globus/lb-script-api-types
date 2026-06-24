@@ -4,6 +4,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class Unstitcher$Region extends Record {
     static CODEC: Codec<Unstitcher$Region>;
+    constructor(sprite: Identifier, x: number, y: number, width: number, height: number)
     // private height: number;
     // private sprite: Identifier;
     // private width: number;

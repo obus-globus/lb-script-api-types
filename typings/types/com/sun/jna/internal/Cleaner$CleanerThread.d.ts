@@ -1,3 +1,4 @@
+import type { Cleaner } from '../../../../com/sun/jna/internal/Cleaner.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Thread } from '../../../../java/lang/Thread.d.ts'
 import type { Thread$Builder$OfPlatform } from '../../../../java/lang/Thread$Builder$OfPlatform.d.ts'
@@ -27,6 +28,6 @@ export class Cleaner$CleanerThread extends Thread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    constructor(null_: Cleaner$CleanerThread)
+    constructor(null_: Cleaner)
     run(): void;
 }

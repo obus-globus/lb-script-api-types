@@ -20,6 +20,12 @@ export class DirectWriteRolloverStrategy$Builder extends Object implements Build
     getTempCompressedFilePattern(): string;
     isStopCustomActionsOnError(): boolean;
     isValid(): boolean;
+    setCompressionLevelStr(compressionLevelStr: string): DirectWriteRolloverStrategy$Builder;
+    setConfig(config: Configuration): DirectWriteRolloverStrategy$Builder;
+    setCustomActions(customActions: Action[]): DirectWriteRolloverStrategy$Builder;
+    setMaxFiles(maxFiles: string): DirectWriteRolloverStrategy$Builder;
+    setStopCustomActionsOnError(stopCustomActionsOnError: boolean): DirectWriteRolloverStrategy$Builder;
+    setTempCompressedFilePattern(tempCompressedFilePattern: string): DirectWriteRolloverStrategy$Builder;
     withCompressionLevelStr(compressionLevelStr: string): DirectWriteRolloverStrategy$Builder;
     withConfig(config: Configuration): DirectWriteRolloverStrategy$Builder;
     withCustomActions(customActions: Action[]): DirectWriteRolloverStrategy$Builder;

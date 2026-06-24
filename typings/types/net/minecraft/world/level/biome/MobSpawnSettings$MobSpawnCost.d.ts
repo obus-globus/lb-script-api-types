@@ -3,6 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class MobSpawnSettings$MobSpawnCost extends Record {
     static CODEC: Codec<MobSpawnSettings$MobSpawnCost>;
+    constructor(energyBudget: number, charge: number)
     // private charge: number;
     // private energyBudget: number;
     charge(): number;

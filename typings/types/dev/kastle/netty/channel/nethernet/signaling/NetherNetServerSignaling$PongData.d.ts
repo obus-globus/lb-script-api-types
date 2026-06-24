@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class NetherNetServerSignaling$PongData extends Record {
+    constructor(serverName: string, levelName: string, gameType: number, playerCount: number, maxPlayerCount: number, isEditorWorld: boolean, isHardcore: boolean, transportLayer: number, connectionType: number)
     // private connectionType: number;
     // private gameType: number;
     // private isEditorWorld: boolean;

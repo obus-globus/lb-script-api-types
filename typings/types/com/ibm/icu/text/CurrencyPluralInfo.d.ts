@@ -16,7 +16,7 @@ export class CurrencyPluralInfo extends Object implements Serializable, Cloneabl
     // private pluralCountToCurrencyUnitPattern: { [key: string]: string };
     readonly pluralRules: PluralRules;
     // private ulocale: ULocale;
-    clone(): Object;
+    clone(): CurrencyPluralInfo;
     protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getCurrencyPluralPattern(arg0: string): string;

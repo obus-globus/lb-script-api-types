@@ -7,6 +7,8 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class GrassColorSource extends Record implements ItemTintSource {
     static MAP_CODEC: MapCodec<GrassColorSource>;
+    constructor()
+    constructor(temperature: number, downfall: number)
     // private downfall: number;
     // private temperature: number;
     calculate(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity): number;

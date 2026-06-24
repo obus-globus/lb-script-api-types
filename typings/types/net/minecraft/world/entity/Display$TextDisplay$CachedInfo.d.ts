@@ -2,6 +2,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Display$TextDisplay$CachedLine } from '../../../../net/minecraft/world/entity/Display$TextDisplay$CachedLine.d.ts'
 export class Display$TextDisplay$CachedInfo extends Record {
+    constructor(lines: Display$TextDisplay$CachedLine[], width: number)
     // private lines: Display$TextDisplay$CachedLine[];
     // private width: number;
     equals(o: Object | null): boolean;

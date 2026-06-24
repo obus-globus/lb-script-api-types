@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RateLimitConfig extends Record {
+    constructor(enabled: boolean, maxRate: number, maxRateKickMessage: string, warningRate: number, maxWarnings: number, trackingPeriodNanos: number, warningKickMessage: string, ratePlaceholder: string)
     // private enabled: boolean;
     // private maxRate: number;
     // private maxRateKickMessage: string;

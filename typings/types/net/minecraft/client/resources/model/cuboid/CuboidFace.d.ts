@@ -7,6 +7,7 @@ export class CuboidFace extends Record {
     static NO_TINT: number;
     static getU(paramuvs: CuboidFace$UVs, paramrotation: Quadrant, paramvertex: number): number;
     static getV(paramuvs: CuboidFace$UVs, paramrotation: Quadrant, paramindex: number): number;
+    constructor(cullForDirection: Direction, tintIndex: number, texture: string, uvs: CuboidFace$UVs, rotation: Quadrant)
     // private cullForDirection: Direction;
     // private rotation: Quadrant;
     // private texture: string;

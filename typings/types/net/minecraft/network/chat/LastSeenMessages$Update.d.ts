@@ -5,6 +5,8 @@ import type { FriendlyByteBuf } from '../../../../net/minecraft/network/Friendly
 import type { LastSeenMessages } from '../../../../net/minecraft/network/chat/LastSeenMessages.d.ts'
 export class LastSeenMessages$Update extends Record {
     static IGNORE_CHECKSUM: number;
+    constructor(offset: number, acknowledged: BitSet, checksum: number)
+    constructor(input: FriendlyByteBuf)
     // private acknowledged: BitSet;
     // private checksum: number;
     // private offset: number;

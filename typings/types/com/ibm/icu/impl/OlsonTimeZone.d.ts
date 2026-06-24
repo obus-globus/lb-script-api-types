@@ -13,7 +13,8 @@ import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class OlsonTimeZone extends BasicTimeZone {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class OlsonTimeZone extends BasicTimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -70,8 +71,9 @@ export class OlsonTimeZone extends BasicTimeZone {
     // private typeCount: number;
     // private typeMapData: number[];
     // private typeOffsets: number[];
-    clone(): Object;
-    cloneAsThawed(): TimeZone;
+    clone(): OlsonTimeZone;
+    protected clone(): Object;
+    cloneAsThawed(): OlsonTimeZone;
     // private construct(arg0: UResourceBundle, arg1: UResourceBundle, arg2: string): void;
     // private constructEmpty(): void;
     // private dstOffsetAt(arg0: number): number;

@@ -1,6 +1,8 @@
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Stopwatch extends Record {
+    constructor(creationTime: number)
+    constructor(creationTime: number, accumulatedElapsedTime: number)
     // private accumulatedElapsedTime: number;
     // private creationTime: number;
     accumulatedElapsedTime(): number;

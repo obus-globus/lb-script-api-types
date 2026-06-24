@@ -4,6 +4,7 @@ import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { GameTestInfo } from '../../../../net/minecraft/gametest/framework/GameTestInfo.d.ts'
 import type { TestEnvironmentDefinition } from '../../../../net/minecraft/gametest/framework/TestEnvironmentDefinition.d.ts'
 export class GameTestBatch extends Record {
+    constructor(index: number, gameTestInfos: GameTestInfo[], environment: Holder<TestEnvironmentDefinition<Object>>)
     // private environment: Holder<TestEnvironmentDefinition<Object>>;
     // private gameTestInfos: GameTestInfo[];
     // private index: number;

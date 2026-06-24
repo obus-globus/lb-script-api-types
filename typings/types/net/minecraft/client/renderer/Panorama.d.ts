@@ -4,6 +4,9 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 export class Panorama extends Object {
     static PANORAMA_OVERLAY: Identifier;
     constructor()
+    // private shouldSpin: boolean;
     // private spin: number;
-    extractRenderState(graphics: GuiGraphicsExtractor, width: number, height: number, shouldSpin: boolean): void;
+    extractRenderState(graphics: GuiGraphicsExtractor, width: number, height: number): void;
+    holdSpin(): void;
+    startSpin(): void;
 }

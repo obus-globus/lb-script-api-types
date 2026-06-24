@@ -9,11 +9,12 @@ import type { PropertyGetterDescriptor } from '../../../../../../../kotlin/refle
 import type { PropertySetterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertySetterDescriptor.d.ts'
 import type { ReceiverParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ReceiverParameterDescriptor.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
+import type { PropertyDescriptorImpl } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/impl/PropertyDescriptorImpl.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
 import type { TypeSubstitution } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution.d.ts'
 export class PropertyDescriptorImpl$CopyConfiguration extends Object {
-    constructor(null_: PropertyDescriptorImpl$CopyConfiguration)
+    constructor(null_: PropertyDescriptorImpl)
     // private copyOverrides: boolean;
     // private dispatchReceiverParameter: ReceiverParameterDescriptor;
     // private kind: CallableMemberDescriptor$Kind;

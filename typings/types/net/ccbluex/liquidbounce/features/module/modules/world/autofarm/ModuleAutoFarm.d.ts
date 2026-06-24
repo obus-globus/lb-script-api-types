@@ -12,7 +12,7 @@ import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3
  *
  * Automatically farms stuff for you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt:66}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/autofarm/ModuleAutoFarm.kt:66}
  */
 export class ModuleAutoFarm extends ClientModule {
     static INSTANCE: ModuleAutoFarm;
@@ -27,7 +27,7 @@ export class ModuleAutoFarm extends ClientModule {
     // private /*not mapped: */ getRange(): number;
     // private rotationUpdateHandler: EventHook<RotationUpdateEvent>;
     // private rotations: RotationsValueGroup;
-    /*not mapped: */ getRotations$liquidbounce(): RotationsValueGroup;
+    /*not mapped: */ getRotations$net_ccbluex_liquidbounce(): RotationsValueGroup;
     // private tickHandler: EventHook<GameTickEvent>;
     // private wallRange: number;
     // private /*not mapped: */ getWallRange(): number;

@@ -2,8 +2,8 @@ import type { DoubleListIterator } from '../../../../../it/unimi/dsi/fastutil/do
 import type { DoubleRBTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleRBTreeSet$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DoubleRBTreeSet$SetIterator extends Object implements DoubleListIterator {
-    constructor(null_: DoubleRBTreeSet$SetIterator)
-    constructor(null_: DoubleRBTreeSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: DoubleRBTreeSet$Entry;
     // private index: number;
     // private next: DoubleRBTreeSet$Entry;

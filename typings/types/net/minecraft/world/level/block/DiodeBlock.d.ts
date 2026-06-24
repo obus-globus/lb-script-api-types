@@ -101,6 +101,7 @@ export abstract class DiodeBlock extends HorizontalDirectionalBlock {
     isSignalSource(state: BlockState): boolean;
     neighborChanged(state: BlockState, level: Level, pos: BlockPos, block: Block, orientation: Orientation, movedByPiston: boolean): void;
     onPlace(state: BlockState, level: Level, pos: BlockPos, oldState: BlockState, movedByPiston: boolean): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     setPlacedBy(level: Level, pos: BlockPos, state: BlockState, by: LivingEntity, itemStack: ItemStack): void;
     shouldPrioritize(level: BlockGetter, pos: BlockPos, state: BlockState): boolean;
     shouldTurnOn(level: Level, pos: BlockPos, state: BlockState): boolean;

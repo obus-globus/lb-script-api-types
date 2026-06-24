@@ -7,7 +7,7 @@ export class RemovableTree extends TraversableTree {
     constructor(arg0: number, arg1: number, arg2: number)
     // private reducedIsValid: boolean;
     readonly sortKey: number;
-    add(arg0: number, arg1: number, arg2: number): boolean;
+    add(arg0: number, arg1: number, arg2: number): number;
     getPresence(arg0: number, arg1: number, arg2: number): number;
     getSortKey(): number;
     getTreeKey(): number;

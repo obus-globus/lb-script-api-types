@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { ClassDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ScopesHolderForClass$Companion } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ScopesHolderForClass$Companion.d.ts'
 import type { MemberScope } from '../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
@@ -8,6 +9,7 @@ import type { KotlinTypeRefiner } from '../../../../../../kotlin/reflect/jvm/int
 export class ScopesHolderForClass<T extends MemberScope> extends Object {
     static Companion: ScopesHolderForClass$Companion;
     private constructor(arg0: ClassDescriptor, arg1: StorageManager, arg2: (param0: KotlinTypeRefiner) => T, arg3: KotlinTypeRefiner)
+    constructor(arg0: ClassDescriptor, arg1: StorageManager, arg2: (param0: Object | null) => Object | null, arg3: KotlinTypeRefiner, arg4: DefaultConstructorMarker)
     // private classDescriptor: ClassDescriptor;
     // private kotlinTypeRefinerForOwnerModule: KotlinTypeRefiner;
     // private scopeFactory: (param0: KotlinTypeRefiner) => T;

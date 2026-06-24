@@ -38,6 +38,7 @@ export class ProtoBuf$Property$Builder extends GeneratedMessageLite$ExtendableBu
     // private versionRequirement_: number[];
     addAllAnnotation(arg0: ProtoBuf$Annotation[]): ProtoBuf$Property$Builder;
     addAllBackingFieldAnnotation(arg0: ProtoBuf$Annotation[]): ProtoBuf$Property$Builder;
+    addAllCompilerPluginData(arg0: ProtoBuf$CompilerPluginData[]): ProtoBuf$Property$Builder;
     addAllContextParameter(arg0: ProtoBuf$ValueParameter[]): ProtoBuf$Property$Builder;
     addAllContextReceiverType(arg0: ProtoBuf$Type[]): ProtoBuf$Property$Builder;
     addAllDelegateFieldAnnotation(arg0: ProtoBuf$Annotation[]): ProtoBuf$Property$Builder;

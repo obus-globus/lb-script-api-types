@@ -4,6 +4,8 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class DyedColor extends Record {
     static TYPE1_20_5: Type<DyedColor>;
     static TYPE1_21_5: Type<DyedColor>;
+    constructor(arg0: number)
+    constructor(rgb: number, showInTooltip: boolean)
     // private rgb: number;
     // private showInTooltip: boolean;
     equals(arg0: Object | null): boolean;

@@ -9,7 +9,7 @@ import type { TaskManager } from '../../../../../net/ccbluex/liquidbounce/integr
  * The browser interface which is used to create tabs and manage the browser backend.
  * Due to different possible browser backends, this interface is used to abstract the browser backend.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt:29}
  */
 export interface BrowserBackend extends Object {
     accelerationFlags: BrowserAccelerationFlags;
@@ -20,19 +20,19 @@ export interface BrowserBackend extends Object {
     /**
      * Starts the browser backend and initializes it.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt:41}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt:41}
      */
     start(): void;
     /**
      * Stops the browser backend and cleans up resources.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt:46}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt:46}
      */
     stop(): void;
     /**
      * Usually does a global render update of the browser.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/BrowserBackend.kt:51}
      */
     update(): void;
 }

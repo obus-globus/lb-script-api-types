@@ -1,3 +1,4 @@
+import type { GelfLayout$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.ts'
@@ -16,6 +17,7 @@ export class GelfLayout extends AbstractStringLayout {
     static newBuilder(): Object | null;
     constructor(host: string, additionalFields: KeyValuePair[], compressionType: GelfLayout$CompressionType, compressionThreshold: number, includeStacktrace: boolean)
     private constructor(config: Configuration, host: string, additionalFields: KeyValuePair[], compressionType: GelfLayout$CompressionType, compressionThreshold: number, includeStacktrace: boolean, includeThreadContext: boolean, includeMapMessage: boolean, includeNullDelimiter: boolean, includeNewLineDelimiter: boolean, omitEmptyFields: boolean, mdcChecker: ListChecker, mapChecker: ListChecker, patternLayout: PatternLayout, mdcPrefix: string, mapPrefix: string)
+    constructor(arg0: Configuration, arg1: string, arg2: KeyValuePair[], arg3: GelfLayout$CompressionType, arg4: number, arg5: boolean, arg6: boolean, arg7: boolean, arg8: boolean, arg9: boolean, arg10: boolean, arg11: ListChecker, arg12: ListChecker, arg13: PatternLayout, arg14: string, arg15: string, arg16: GelfLayout$1)
     // private additionalFields: KeyValuePair[];
     // private compressionThreshold: number;
     // private compressionType: GelfLayout$CompressionType;

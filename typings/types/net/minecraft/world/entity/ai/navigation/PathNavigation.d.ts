@@ -52,6 +52,7 @@ export abstract class PathNavigation extends Object {
     getGroundY(target: Vec3): number;
     getMaxDistanceToWaypoint(): number;
     // private getMaxPathLength(): number;
+    getMaxVerticalDistanceToWaypoint(): number;
     getNodeEvaluator(): NodeEvaluator;
     getPath(): Path;
     getTargetPos(): BlockPos;

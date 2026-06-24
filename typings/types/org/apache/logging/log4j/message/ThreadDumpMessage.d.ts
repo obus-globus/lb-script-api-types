@@ -1,3 +1,4 @@
+import type { ThreadDumpMessage$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ObjectInputStream } from '../../../../../java/io/ObjectInputStream.d.ts'
 import type { StackTraceElement } from '../../../../../java/lang/StackTraceElement.d.ts'
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
@@ -9,6 +10,7 @@ import type { StringBuilderFormattable } from '../../../../../org/apache/logging
 export class ThreadDumpMessage extends Object implements Message, StringBuilderFormattable {
     constructor(title: string)
     private constructor(formattedMsg: string, title: string)
+    constructor(arg0: string, arg1: string, arg2: ThreadDumpMessage$1)
     readonly formattedMessage: string;
     // private threads: Map<ThreadInformation, StackTraceElement[]>;
     // private title: string;

@@ -8,6 +8,7 @@ export class SwingAnimation extends Record {
     static CODEC: Codec<SwingAnimation>;
     static DEFAULT: SwingAnimation;
     static STREAM_CODEC: StreamCodec<ByteBuf, SwingAnimation>;
+    constructor(type: SwingAnimationType, duration: number)
     // private duration: number;
     // private type: SwingAnimationType;
     duration(): number;

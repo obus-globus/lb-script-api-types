@@ -32,7 +32,6 @@ export class HashOps extends Object implements DynamicOps<HashCode> {
     convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: HashCode): U;
     convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: HashCode): U;
     convertTo<U extends unknown>(outOps: DynamicOps<U>, input: HashCode): U;
-    createBoolean(arg0: boolean): HashCode;
     createBoolean(value: boolean): HashCode;
     createByte(arg0: number): HashCode;
     createByte(value: number): HashCode;
@@ -63,7 +62,6 @@ export class HashOps extends Object implements DynamicOps<HashCode> {
     emptyMap(): HashCode;
     get(arg0: HashCode, arg1: string): DataResult<HashCode>;
     get(input: HashCode, key: string): DataResult<HashCode>;
-    getBooleanValue(arg0: HashCode): DataResult<boolean>;
     getBooleanValue(input: HashCode): DataResult<boolean>;
     getByteBuffer(arg0: HashCode): DataResult<ByteBuffer>;
     getByteBuffer(input: HashCode): DataResult<ByteBuffer>;

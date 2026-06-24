@@ -13,11 +13,13 @@ import type { GuiTextRenderState } from '../../../../../../net/minecraft/client/
 import type { PanoramaRenderState } from '../../../../../../net/minecraft/client/renderer/state/gui/PanoramaRenderState.d.ts'
 import type { ScreenArea } from '../../../../../../net/minecraft/client/renderer/state/gui/ScreenArea.d.ts'
 import type { PictureInPictureRenderState } from '../../../../../../net/minecraft/client/renderer/state/gui/pip/PictureInPictureRenderState.d.ts'
+import type { Vector4f } from '../../../../../../org/joml/Vector4f.d.ts'
 export class GuiRenderState extends Object implements FabricRenderState {
     constructor()
-    clearColorOverride: number;
+    clearColorOverride: Vector4f;
     // private current: GuiRenderState$Node;
     // private firstStratumAfterBlur: number;
+    isHudHidden: boolean;
     readonly itemModelIdentities: Object[];
     // private lastElementBounds: ScreenRectangle;
     panoramaRenderState: PanoramaRenderState;

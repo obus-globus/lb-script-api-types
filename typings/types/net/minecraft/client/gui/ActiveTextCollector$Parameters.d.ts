@@ -3,6 +3,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ScreenRectangle } from '../../../../net/minecraft/client/gui/navigation/ScreenRectangle.d.ts'
 import type { Matrix3x2fc } from '../../../../org/joml/Matrix3x2fc.d.ts'
 export class ActiveTextCollector$Parameters extends Record {
+    constructor(pose: Matrix3x2fc)
+    constructor(pose: Matrix3x2fc, opacity: number, scissor: ScreenRectangle)
     // private opacity: number;
     // private pose: Matrix3x2fc;
     // private scissor: ScreenRectangle;

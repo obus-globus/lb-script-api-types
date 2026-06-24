@@ -6,9 +6,10 @@ import type { HolderGetter } from '../../../net/minecraft/core/HolderGetter.d.ts
 import type { HolderOwner } from '../../../net/minecraft/core/HolderOwner.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
+import type { PlaceholderLookupProvider } from '../../../net/minecraft/util/PlaceholderLookupProvider.d.ts'
 import type { RandomSource } from '../../../net/minecraft/util/RandomSource.d.ts'
 export class PlaceholderLookupProvider$UniversalLookup extends Object implements HolderGetter<Object>, HolderOwner<Object> {
-    private constructor(null_: PlaceholderLookupProvider$UniversalLookup)
+    private constructor(null_: PlaceholderLookupProvider)
     canSerializeIn(context: HolderOwner<Object>): boolean;
     castAsLookup<T extends unknown>(): HolderGetter<T>;
     castAsOwner<T extends unknown>(): HolderOwner<T>;

@@ -5,11 +5,12 @@ import type { ClassNode } from '../../../../../org/objectweb/asm/tree/ClassNode.
 import type { Shadow } from '../../../../../org/spongepowered/asm/mixin/Shadow.d.ts'
 import type { ClassInfo } from '../../../../../org/spongepowered/asm/mixin/transformer/ClassInfo.d.ts'
 import type { InterfaceInfo } from '../../../../../org/spongepowered/asm/mixin/transformer/InterfaceInfo.d.ts'
+import type { MixinInfo } from '../../../../../org/spongepowered/asm/mixin/transformer/MixinInfo.d.ts'
 import type { MixinInfo$MixinClassNode } from '../../../../../org/spongepowered/asm/mixin/transformer/MixinInfo$MixinClassNode.d.ts'
 import type { MixinInfo$SubType } from '../../../../../org/spongepowered/asm/mixin/transformer/MixinInfo$SubType.d.ts'
 export class MixinInfo$State extends Object {
-    constructor(null_: MixinInfo$State, arg1: ClassNode)
-    constructor(null_: MixinInfo$State, arg1: ClassNode, arg2: ClassInfo)
+    constructor(null_: MixinInfo, arg1: ClassNode)
+    constructor(null_: MixinInfo, arg1: ClassNode, arg2: ClassInfo)
     // private classInfo: ClassInfo;
     // private classNode: ClassNode;
     // private detachedSuper: boolean;

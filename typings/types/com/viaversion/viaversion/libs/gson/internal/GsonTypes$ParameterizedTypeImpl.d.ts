@@ -1,9 +1,8 @@
-import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { ParameterizedType } from '../../../../../../java/lang/reflect/ParameterizedType.d.ts'
 import type { Type } from '../../../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-export class GsonTypes$ParameterizedTypeImpl extends Object implements Serializable, ParameterizedType {
+export class GsonTypes$ParameterizedTypeImpl extends Object implements ParameterizedType {
     constructor(arg0: Type, arg1: Class<Object>, arg2: Type[])
     readonly ownerType: Type;
     readonly rawType: Type;

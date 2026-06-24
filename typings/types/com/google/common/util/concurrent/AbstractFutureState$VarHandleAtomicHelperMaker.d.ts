@@ -1,3 +1,4 @@
+import type { AbstractFutureState$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AbstractFutureState$AtomicHelper } from '../../../../../com/google/common/util/concurrent/AbstractFutureState$AtomicHelper.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -8,6 +9,7 @@ export class AbstractFutureState$VarHandleAtomicHelperMaker extends Enum<Abstrac
     static valueOf(paramname: string): AbstractFutureState$VarHandleAtomicHelperMaker;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: AbstractFutureState$1)
     tryMakeVarHandleAtomicHelper(): AbstractFutureState$AtomicHelper;
     name(): "INSTANCE";
 }

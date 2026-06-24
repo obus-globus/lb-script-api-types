@@ -4,8 +4,8 @@ import type { Double2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/d
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Double2IntLinkedOpenHashMap$FastEntryIterator extends Double2IntLinkedOpenHashMap$MapIterator<(param0: Double2IntMap$Entry) => void> implements ObjectListIterator<Double2IntMap$Entry> {
-    constructor(null_: Double2IntLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Double2IntLinkedOpenHashMap$FastEntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Double2IntLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Double2IntMap$Entry) => void, arg1: number): void;
     add(arg0: Double2IntMap$Entry): void;

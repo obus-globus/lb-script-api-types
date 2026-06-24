@@ -1,6 +1,7 @@
 import type { ObjectOutputStream } from '../../../../../../java/io/ObjectOutputStream.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { SerializablePermission } from '../../../../../../java/io/SerializablePermission.d.ts'
+import type { SerializedLayout } from '../../../../../../org/apache/logging/log4j/core/layout/SerializedLayout.d.ts'
 export class SerializedLayout$PrivateObjectOutputStream extends ObjectOutputStream {
     static PROTOCOL_VERSION_1: number;
     static PROTOCOL_VERSION_2: number;
@@ -33,6 +34,6 @@ export class SerializedLayout$PrivateObjectOutputStream extends ObjectOutputStre
     static TC_STRING: number;
     static baseWireHandle: number;
     static nullOutputStream(): OutputStream;
-    constructor(null_: SerializedLayout$PrivateObjectOutputStream, os: OutputStream)
+    constructor(null_: SerializedLayout, os: OutputStream)
     writeStreamHeader(): void;
 }

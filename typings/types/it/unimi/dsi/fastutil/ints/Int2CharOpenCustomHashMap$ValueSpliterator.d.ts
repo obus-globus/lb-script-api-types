@@ -12,8 +12,8 @@ export class Int2CharOpenCustomHashMap$ValueSpliterator extends Int2CharOpenCust
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Int2CharOpenCustomHashMap$ValueSpliterator)
-    constructor(null_: Int2CharOpenCustomHashMap$ValueSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: string) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: string) => void): void;

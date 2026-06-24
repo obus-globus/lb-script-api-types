@@ -2,6 +2,8 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class AbstractScrollArea$ScrollbarSettings extends Record {
+    static NO_SCROLL: AbstractScrollArea$ScrollbarSettings;
+    constructor(scrollerSprite: Identifier, disabledScrollerSprite: Identifier, backgroundSprite: Identifier, scrollbarWidth: number, scrollbarMinHeight: number, scrollRate: number, resizingScrollbar: boolean)
     // private backgroundSprite: Identifier;
     // private disabledScrollerSprite: Identifier;
     // private resizingScrollbar: boolean;

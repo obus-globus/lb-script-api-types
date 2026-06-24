@@ -3,6 +3,7 @@ import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
 import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise.d.ts'
 import type { IoEvent } from '../../../../io/netty/channel/IoEvent.d.ts'
 import type { IoRegistration } from '../../../../io/netty/channel/IoRegistration.d.ts'
+import type { AbstractNioChannel } from '../../../../io/netty/channel/nio/AbstractNioChannel.d.ts'
 import type { AbstractNioChannel$NioUnsafe } from '../../../../io/netty/channel/nio/AbstractNioChannel$NioUnsafe.d.ts'
 import type { NioIoHandle } from '../../../../io/netty/channel/nio/NioIoHandle.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
@@ -10,7 +11,7 @@ import type { ClosedChannelException } from '../../../../java/nio/channels/Close
 import type { SelectableChannel } from '../../../../java/nio/channels/SelectableChannel.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export abstract class AbstractNioChannel$AbstractNioUnsafe extends AbstractChannel$AbstractUnsafe implements AbstractNioChannel$NioUnsafe, NioIoHandle {
-    constructor(null_: AbstractNioChannel$AbstractNioUnsafe)
+    constructor(null_: AbstractNioChannel)
     ch(): SelectableChannel;
     channel(): Channel;
     close(): void;

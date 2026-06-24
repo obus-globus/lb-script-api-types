@@ -6,6 +6,7 @@ import type { IntProvider } from '../../../../net/minecraft/util/valueproviders/
 export class UniformInt extends Record implements IntProvider {
     static MAP_CODEC: MapCodec<UniformInt>;
     static of(paramminInclusive: number, parammaxInclusive: number): UniformInt;
+    constructor(minInclusive: number, maxInclusive: number)
     // private maxInclusive: number;
     // private minInclusive: number;
     codec(): MapCodec<UniformInt>;

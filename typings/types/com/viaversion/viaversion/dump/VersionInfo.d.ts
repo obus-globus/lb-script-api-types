@@ -1,6 +1,7 @@
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class VersionInfo extends Record {
+    constructor(javaVersion: string, operatingSystem: string, serverProtocol: number, serverVersion: string, enabledProtocols: string[], platformName: string, platformVersion: string, pluginVersion: string, implementationVersion: string, subPlatforms: string[])
     // private enabledProtocols: string[];
     // private implementationVersion: string;
     // private javaVersion: string;

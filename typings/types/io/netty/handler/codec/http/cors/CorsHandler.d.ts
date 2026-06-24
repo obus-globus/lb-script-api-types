@@ -10,6 +10,7 @@ export class CorsHandler extends ChannelDuplexHandler {
     constructor(arg0: CorsConfig[], arg1: boolean)
     // private config: CorsConfig;
     // private configList: CorsConfig[];
+    // private consumeContent: boolean;
     // private isShortCircuit: boolean;
     // private request: HttpRequest;
     channelRead(arg0: ChannelHandlerContext, arg1: Object): void;

@@ -4,6 +4,7 @@ import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Interaction$PlayerAction extends Record {
     static CODEC: Codec<Interaction$PlayerAction>;
+    private constructor(player: UUID, timestamp: number)
     // private player: UUID;
     // private timestamp: number;
     equals(o: Object | null): boolean;

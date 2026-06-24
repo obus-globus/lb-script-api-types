@@ -41,7 +41,6 @@ export class DynamicTopoData extends DynamicData {
     directTriggerEnabled(): boolean;
     getDirectTriggerKey(): number;
     getSorter(): DynamicSorter;
-    isMatchingSorter(arg0: DynamicTopoData$DynamicTopoSorter): boolean;
     prepareTrigger(arg0: boolean): void;
     setDirectTriggerKey(arg0: number): void;
 }

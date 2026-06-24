@@ -104,7 +104,6 @@ export class LecternBlock extends BaseEntityBlock {
     getMenuProvider(state: BlockState, level: Level, pos: BlockPos): MenuProvider;
     getOcclusionShape(state: BlockState): VoxelShape;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     hasAnalogOutputSignal(state: BlockState): boolean;
     isPathfindable(state: BlockState, type: PathComputationType): boolean;
@@ -112,6 +111,7 @@ export class LecternBlock extends BaseEntityBlock {
     mirror(state: BlockState, mirror: Mirror): BlockState;
     newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;
     // private openScreen(level: Level, pos: BlockPos, player: Player): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     rotate(state: BlockState, rotation: Rotation): BlockState;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;
     useItemOn(itemStack: ItemStack, state: BlockState, level: Level, pos: BlockPos, player: Player, hand: InteractionHand, hitResult: BlockHitResult): InteractionResult;

@@ -22,6 +22,7 @@ export class NoiseGeneratorSettings extends Record {
     static OVERWORLD: ResourceKey<NoiseGeneratorSettings>;
     static bootstrap(paramcontext: BootstrapContext<NoiseGeneratorSettings>): void;
     static dummy(): NoiseGeneratorSettings;
+    constructor(noiseSettings: NoiseSettings, defaultBlock: BlockState, defaultFluid: BlockState, noiseRouter: NoiseRouter, surfaceRule: SurfaceRules$RuleSource, spawnTarget: Climate$ParameterPoint[], seaLevel: number, disableMobGeneration: boolean, aquifersEnabled: boolean, oreVeinsEnabled: boolean, useLegacyRandomSource: boolean)
     // private defaultBlock: BlockState;
     // private defaultFluid: BlockState;
     // private disableMobGeneration: boolean;

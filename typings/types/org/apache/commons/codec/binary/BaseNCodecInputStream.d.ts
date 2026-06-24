@@ -2,10 +2,12 @@ import type { FilterInputStream } from '../../../../../java/io/FilterInputStream
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { BaseNCodec } from '../../../../../org/apache/commons/codec/binary/BaseNCodec.d.ts'
 import type { BaseNCodec$Context } from '../../../../../org/apache/commons/codec/binary/BaseNCodec$Context.d.ts'
-export class BaseNCodecInputStream extends FilterInputStream {
+import type { BaseNCodecInputStream$AbstracBuilder } from '../../../../../org/apache/commons/codec/binary/BaseNCodecInputStream$AbstracBuilder.d.ts'
+export class BaseNCodecInputStream<C extends BaseNCodec, T extends BaseNCodecInputStream<C, T, B>, B extends BaseNCodecInputStream$AbstracBuilder<T, C, B>> extends FilterInputStream {
     static nullInputStream(): InputStream;
-    constructor(arg0: InputStream, arg1: BaseNCodec, arg2: boolean)
-    // private baseNCodec: BaseNCodec;
+    constructor(arg0: InputStream, arg1: C, arg2: boolean)
+    constructor(arg0: BaseNCodecInputStream$AbstracBuilder<T, C, B>)
+    // private baseNCodec: C;
     // private buf: number[];
     // private context: BaseNCodec$Context;
     // private doEncode: boolean;

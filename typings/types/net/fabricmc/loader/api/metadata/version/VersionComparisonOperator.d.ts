@@ -1,3 +1,4 @@
+import type { VersionComparisonOperator$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
@@ -15,6 +16,7 @@ export class VersionComparisonOperator extends Enum<VersionComparisonOperator> {
     static valueOf(paramarg0: string): VersionComparisonOperator;
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: boolean, arg4: boolean)
+    constructor(arg2: string, arg3: boolean, arg4: boolean, arg5: VersionComparisonOperator$1)
     readonly maxInclusive: boolean;
     readonly minInclusive: boolean;
     readonly serialized: string;

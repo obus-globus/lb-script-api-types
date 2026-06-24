@@ -36,7 +36,7 @@ export class PathNavigationRegion extends Object implements ChunkView, Collision
     findSupportingBlock(source: Entity, box: AABB): Optional<BlockPos>;
     getBlockAndLiquidCollisions(source: Entity, box: AABB): VoxelShape[];
     getBlockCollisions(source: Entity, box: AABB): VoxelShape[];
-    // private getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
+    getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
     getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockEntity<T extends BlockEntity>(pos: BlockPos, type: BlockEntityType<T>): Optional<T>;
     getBlockState(pos: BlockPos): BlockState;

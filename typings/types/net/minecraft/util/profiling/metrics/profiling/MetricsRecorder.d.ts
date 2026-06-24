@@ -6,5 +6,6 @@ export interface MetricsRecorder extends Object{
     endTick(): void;
     getProfiler(): ProfilerFiller;
     isRecording(): boolean;
+    sampleDuringExtract(): void;
     startTick(): void;
 }

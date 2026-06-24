@@ -2,6 +2,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Particle$LifetimeAlpha extends Record {
     static ALWAYS_OPAQUE: Particle$LifetimeAlpha;
+    constructor(startAlpha: number, endAlpha: number, startAtNormalizedAge: number, endAtNormalizedAge: number)
     // private endAlpha: number;
     // private endAtNormalizedAge: number;
     // private startAlpha: number;

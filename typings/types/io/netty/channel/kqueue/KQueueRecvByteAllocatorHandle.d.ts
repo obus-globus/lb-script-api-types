@@ -13,6 +13,7 @@ export class KQueueRecvByteAllocatorHandle extends RecvByteBufAllocator$Delegati
     allocate(arg0: ByteBufAllocator): ByteBuf;
     continueReading(): boolean;
     continueReading(arg0: UncheckedBooleanSupplier): boolean;
+    isReadEOF(): boolean;
     // private maybeMoreDataToRead(): boolean;
     numberBytesPending(arg0: number): void;
     readEOF(): void;

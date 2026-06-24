@@ -7,6 +7,7 @@ import type { ThrownTridentRenderState } from '../../../../../net/minecraft/clie
 import type { CameraRenderState } from '../../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ThrownTrident } from '../../../../../net/minecraft/world/entity/projectile/arrow/ThrownTrident.d.ts'
+import type { AABB } from '../../../../../net/minecraft/world/phys/AABB.d.ts'
 export class ThrownTridentRenderer extends EntityRenderer<ThrownTrident, ThrownTridentRenderState> {
     static NAMETAG_SCALE: number;
     static TRIDENT_LOCATION: Identifier;
@@ -15,5 +16,6 @@ export class ThrownTridentRenderer extends EntityRenderer<ThrownTrident, ThrownT
     createRenderState(): ThrownTridentRenderState;
     createRenderState(entity: ThrownTrident, partialTicks: number): ThrownTridentRenderState;
     extractRenderState(entity: ThrownTrident, state: ThrownTridentRenderState, partialTicks: number): void;
+    getBoundingBoxForCulling(entity: ThrownTrident): AABB;
     submit(state: ThrownTridentRenderState, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

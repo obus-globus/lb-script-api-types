@@ -10,6 +10,7 @@ export class MapsKt___MapsKt extends MapsKt___MapsJvmKt {
     static any(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => boolean): boolean;
     static asSequence(paramarg0: Map<Object | null, Object | null>): Sequence<Map$Entry<Object, Object>>;
     static build(paramarg0: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
+    static copy(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static count(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => boolean): number;
     static createMapBuilder(): Map<Object | null, Object | null>;
     static createMapBuilder(paramarg0: number): Map<Object | null, Object | null>;
@@ -25,15 +26,17 @@ export class MapsKt___MapsKt extends MapsKt___MapsJvmKt {
     static flatMapSequenceTo(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: (param0: Object) => Sequence<Object>): Object | null;
     static flatMapTo(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: (param0: Object) => (Object | null)[]): Object | null;
     static forEach(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => void): void;
-    static getOrElseNullable(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: () => Object | null): Object | null;
+    static getOrDefaultImpl(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: Object | null): Object | null;
     static getOrImplicitDefaultNullable(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null): Object | null;
     static getOrPut(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: () => Object | null): Object | null;
     static getOrPut(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: () => Object | null): Object | null;
+    static getOrPutIfNullImpl(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: Object | null): Object | null;
     static getValue(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null): Object | null;
     static hashMapOf(paramarg0: Object | null): Map<Object | null, Object | null>;
     static linkedMapOf(paramarg0: Object | null): Map<Object | null, Object | null>;
     static map(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => Object | null): (Object | null)[];
     static mapCapacity(paramarg0: number): number;
+    static mapEntryOf(paramarg0: Object | null, paramarg1: Object | null): Map$Entry<Object, Object>;
     static mapKeys(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => Object | null): Map<Object | null, Object | null>;
     static mapKeysTo(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: (param0: Object) => Object | null): Object | null;
     static mapNotNull(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => Object | null): (Object | null)[];

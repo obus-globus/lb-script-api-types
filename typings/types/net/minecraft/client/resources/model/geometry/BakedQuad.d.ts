@@ -10,6 +10,7 @@ export class BakedQuad extends Record implements BakedQuadView {
     static FLAG_ANIMATED: number;
     static FLAG_TRANSLUCENT: number;
     static VERTEX_COUNT: number;
+    constructor(position0: Vector3fc, position1: Vector3fc, position2: Vector3fc, position3: Vector3fc, packedUV0: number, packedUV1: number, packedUV2: number, packedUV3: number, direction: Direction, materialInfo: BakedQuad$MaterialInfo)
     // private direction: Direction;
     readonly flags: number;
     // private materialInfo: BakedQuad$MaterialInfo;
@@ -29,6 +30,7 @@ export class BakedQuad extends Record implements BakedQuadView {
     getFaceNormal(): number;
     getFlags(): number;
     getLight(arg0: number): number;
+    getLightEmission(): number;
     getLightFace(): Direction;
     getMaxLightQuad(arg0: number): number;
     getNormalFace(): ModelQuadFacing;

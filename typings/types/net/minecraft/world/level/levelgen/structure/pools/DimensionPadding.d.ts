@@ -4,6 +4,8 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class DimensionPadding extends Record {
     static CODEC: Codec<DimensionPadding>;
     static ZERO: DimensionPadding;
+    constructor(value: number)
+    constructor(bottom: number, top: number)
     // private bottom: number;
     // private top: number;
     bottom(): number;

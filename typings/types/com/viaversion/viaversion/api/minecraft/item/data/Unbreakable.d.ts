@@ -3,6 +3,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Unbreakable extends Record {
     static TYPE: Type<Unbreakable>;
+    constructor(showInTooltip: boolean)
     // private showInTooltip: boolean;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

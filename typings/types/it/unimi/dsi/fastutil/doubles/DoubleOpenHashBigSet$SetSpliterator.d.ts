@@ -13,8 +13,8 @@ export class DoubleOpenHashBigSet$SetSpliterator extends Object implements Doubl
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: DoubleOpenHashBigSet$SetSpliterator)
-    constructor(null_: DoubleOpenHashBigSet$SetSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;
     // private hasSplit: boolean;
     // private max: number;

@@ -13,6 +13,7 @@ export class VerticalAnchor$AboveBottom extends Record implements VerticalAnchor
     static belowTop(paramoffset: number): VerticalAnchor;
     static bottom(): VerticalAnchor;
     static top(): VerticalAnchor;
+    constructor(offset: number)
     // private offset: number;
     equals(o: Object | null): boolean;
     hashCode(): number;

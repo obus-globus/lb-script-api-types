@@ -4,7 +4,7 @@ import type { SectionOcclusionGraph$SectionToNodeMap } from '../../../../net/min
 import type { ViewArea } from '../../../../net/minecraft/client/renderer/ViewArea.d.ts'
 export class SectionOcclusionGraph$GraphStorage extends Object {
     constructor(viewArea: ViewArea)
-    chunksWaitingForNeighbors: { [key: string]: any };
     sectionToNodeMap: SectionOcclusionGraph$SectionToNodeMap;
     sectionTree: Octree;
+    sectionsWaitingForChunkLoads: { [key: string]: any };
 }

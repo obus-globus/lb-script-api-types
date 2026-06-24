@@ -2,6 +2,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { OptionalInt } from '../../../../java/util/OptionalInt.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DisplayData extends Record {
+    constructor(width: number, height: number, fullscreenWidth: OptionalInt, fullscreenHeight: OptionalInt, isFullscreen: boolean)
     // private fullscreenHeight: OptionalInt;
     // private fullscreenWidth: OptionalInt;
     // private height: number;

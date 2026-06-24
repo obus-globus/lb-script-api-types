@@ -28,6 +28,8 @@ export class DigestUtils extends Object {
     static getSha512_224Digest(): MessageDigest;
     static getSha512_256Digest(): MessageDigest;
     static getShaDigest(): MessageDigest;
+    static getShake128_256Digest(): MessageDigest;
+    static getShake256_512Digest(): MessageDigest;
     static isAvailable(paramarg0: string): boolean;
     static md2(paramarg0: number[]): number[];
     static md2(paramarg0: InputStream): number[];
@@ -107,6 +109,18 @@ export class DigestUtils extends Object {
     static shaHex(paramarg0: number[]): string;
     static shaHex(paramarg0: InputStream): string;
     static shaHex(paramarg0: string): string;
+    static shake128_256(paramarg0: number[]): number[];
+    static shake128_256(paramarg0: InputStream): number[];
+    static shake128_256(paramarg0: string): number[];
+    static shake128_256Hex(paramarg0: number[]): string;
+    static shake128_256Hex(paramarg0: InputStream): string;
+    static shake128_256Hex(paramarg0: string): string;
+    static shake256_512(paramarg0: number[]): number[];
+    static shake256_512(paramarg0: InputStream): number[];
+    static shake256_512(paramarg0: string): number[];
+    static shake256_512Hex(paramarg0: number[]): string;
+    static shake256_512Hex(paramarg0: InputStream): string;
+    static shake256_512Hex(paramarg0: string): string;
     static updateDigest(paramarg0: MessageDigest, paramarg1: number[]): MessageDigest;
     static updateDigest(paramarg0: MessageDigest, paramarg1: File): MessageDigest;
     static updateDigest(paramarg0: MessageDigest, paramarg1: InputStream): MessageDigest;

@@ -6,7 +6,11 @@ export class ParameterBuilder$Companion extends Object {
     BOOLEAN_VALIDATOR: Parameter$Verificator<boolean>;
     INTEGER_VALIDATOR: Parameter$Verificator<number>;
     MODULE_VALIDATOR: Parameter$Verificator<ClientModule>;
+    NON_NEGATIVE_INTEGER_VALIDATOR: Parameter$Verificator<number>;
+    POSITIVE_FLOAT_VALIDATOR: Parameter$Verificator<number>;
     POSITIVE_INTEGER_VALIDATOR: Parameter$Verificator<number>;
     STRING_VALIDATOR: Parameter$Verificator<string>;
     begin<T extends unknown>(name: string): ParameterBuilder<T>;
+    floatRange(min: number, max: number): Parameter$Verificator<number>;
+    intRange(min: number, max: number): Parameter$Verificator<number>;
 }

@@ -1,3 +1,4 @@
+import type { GelfLayout$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { DeflaterOutputStream } from '../../../../../../java/util/zip/DeflaterOutputStream.d.ts'
@@ -11,6 +12,7 @@ export class GelfLayout$CompressionType extends Enum<GelfLayout$CompressionType>
     static valueOf(paramname: string): GelfLayout$CompressionType;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: GelfLayout$1)
     createDeflaterOutputStream(os: OutputStream): DeflaterOutputStream;
     name(): "GZIP" | "ZLIB" | "OFF";
 }

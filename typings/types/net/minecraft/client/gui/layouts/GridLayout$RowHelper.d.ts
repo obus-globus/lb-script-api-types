@@ -3,7 +3,7 @@ import type { GridLayout } from '../../../../../net/minecraft/client/gui/layouts
 import type { LayoutElement } from '../../../../../net/minecraft/client/gui/layouts/LayoutElement.d.ts'
 import type { LayoutSettings } from '../../../../../net/minecraft/client/gui/layouts/LayoutSettings.d.ts'
 export class GridLayout$RowHelper extends Object {
-    private constructor(null_: GridLayout$RowHelper, columns: number)
+    private constructor(null_: GridLayout, columns: number)
     // private columns: number;
     // private index: number;
     addChild<T extends LayoutElement>(widget: T): T;

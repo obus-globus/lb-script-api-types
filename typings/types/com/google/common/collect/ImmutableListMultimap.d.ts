@@ -34,11 +34,13 @@ export class ImmutableListMultimap<K extends unknown, V extends unknown> extends
     static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null, paramk4: Object | null, paramv4: Object | null, paramk5: Object | null, paramv5: Object | null): ImmutableMultimap<Object, Object>;
     static toImmutableListMultimap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, ImmutableListMultimap<Object, Object>>;
     constructor(map: Map<K, V[]>, size: number)
+    // private deserializationReplacement: ImmutableListMultimap<Object, Object>;
     // private inverse: ImmutableListMultimap<V, K>;
     get(key: K): V[];
     inverse(): ImmutableListMultimap<V, K>;
     // private invert(): ImmutableListMultimap<V, K>;
     // private readObject(stream: ObjectInputStream): void;
+    // private readResolve(): Object;
     removeAll(key: Object): V[];
     replaceValues(key: K, values: V[]): V[];
     // private writeObject(stream: ObjectOutputStream): void;

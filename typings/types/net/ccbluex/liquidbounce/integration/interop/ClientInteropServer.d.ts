@@ -7,7 +7,7 @@ import type { RequestObject } from '../../../../../net/ccbluex/netty/http/model/
  *
  * Allows the browser to communicate with the client. (e.g. for UIs)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt:39}
  */
 export class ClientInteropServer extends Object {
     static INSTANCE: ClientInteropServer;
@@ -15,11 +15,12 @@ export class ClientInteropServer extends Object {
     PORT: number;
     // private attempt: number;
     // private httpServer: HttpServer;
-    /*not mapped: */ getHttpServer$liquidbounce(): HttpServer;
+    /*not mapped: */ getHttpServer$net_ccbluex_liquidbounce(): HttpServer;
     // private isSkipping: boolean;
     /*not mapped: */ isSkipping(): boolean;
     readonly url: string;
     // private getRootResponse(requestObject: RequestObject): FullHttpResponse;
     start(): void;
     // private startServer(port: number): number;
+    stop(): void;
 }

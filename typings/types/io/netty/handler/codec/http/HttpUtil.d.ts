@@ -24,6 +24,7 @@ export class HttpUtil extends Object {
     static isAsteriskForm(paramarg0: string): boolean;
     static isAsteriskForm(paramarg0: URI): boolean;
     static isContentLengthSet(paramarg0: HttpMessage): boolean;
+    static isEncodingSafeStartLineToken(paramarg0: CharSequence): boolean;
     static isKeepAlive(paramarg0: HttpMessage): boolean;
     static isOriginForm(paramarg0: string): boolean;
     static isOriginForm(paramarg0: URI): boolean;

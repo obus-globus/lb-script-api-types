@@ -11,11 +11,11 @@ export class KmTypeParameter extends Object {
     readonly name: string;
     readonly upperBounds: KmType[];
     readonly variance: KmVariance;
-    getExtensions$kotlin_metadata(): KmTypeParameterExtension[];
-    getFlags$kotlin_metadata(): number;
+    getExtensions$org_jetbrains_kotlin_kotlin_metadata(): KmTypeParameterExtension[];
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
     getId(): number;
     getName(): string;
     getUpperBounds(): KmType[];
     getVariance(): KmVariance;
-    setFlags$kotlin_metadata(arg0: number): void;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
 }

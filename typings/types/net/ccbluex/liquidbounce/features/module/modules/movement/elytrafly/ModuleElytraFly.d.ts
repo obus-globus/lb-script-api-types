@@ -9,7 +9,7 @@ import type { ElytraFlyMode } from '../../../../../../../../net/ccbluex/liquidbo
  *
  * Makes elytra flying easier to control.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/elytrafly/ModuleElytraFly.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/elytrafly/ModuleElytraFly.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/elytrafly/ModuleElytraFly.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/elytrafly/ModuleElytraFly.kt:38}
  */
 export class ModuleElytraFly extends ClientModule {
     static INSTANCE: ModuleElytraFly;
@@ -18,7 +18,7 @@ export class ModuleElytraFly extends ClientModule {
     // private instant: ModuleElytraFly$Instant[];
     // private /*not mapped: */ getInstant(): ModuleElytraFly$Instant[];
     // private modes: ModeValueGroup<ElytraFlyMode>;
-    /*not mapped: */ getModes$liquidbounce(): ModeValueGroup<ElytraFlyMode>;
+    /*not mapped: */ getModes$net_ccbluex_liquidbounce(): ModeValueGroup<ElytraFlyMode>;
     // private needsToRestart: boolean;
     // private notInFluid: boolean;
     // private /*not mapped: */ getNotInFluid(): boolean;

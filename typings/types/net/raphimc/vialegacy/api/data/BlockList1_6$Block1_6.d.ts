@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BlockList1_6$Block1_6 extends Record {
+    constructor(blockId: number, name: string)
     // private blockId: number;
     // private name: string;
     blockId(): number;

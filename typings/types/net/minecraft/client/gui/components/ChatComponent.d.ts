@@ -1,7 +1,7 @@
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { MixinChatComponentAccessor } from '../../../../../net/ccbluex/liquidbounce/injection/mixins/minecraft/gui/MixinChatComponentAccessor.d.ts'
-import type { ChatComponentAddition } from '../../../../../net/ccbluex/liquidbounce/interfaces/ChatComponentAddition.d.ts'
+import type { CommandHistory } from '../../../../../net/minecraft/client/CommandHistory.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { ActiveTextCollector } from '../../../../../net/minecraft/client/gui/ActiveTextCollector.d.ts'
 import type { Font } from '../../../../../net/minecraft/client/gui/Font.d.ts'
@@ -23,7 +23,7 @@ import type { GuiMessageTag } from '../../../../../net/minecraft/client/multipla
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MessageSignature } from '../../../../../net/minecraft/network/chat/MessageSignature.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
-export class ChatComponent extends Object implements MixinChatComponentAccessor, ChatComponentAddition {
+export class ChatComponent extends Object implements MixinChatComponentAccessor {
     static GO_TO_RESTRICTIONS_SCREEN: Identifier;
     static MESSAGE_BOTTOM_TO_MESSAGE_TOP: number;
     static QUEUE_EXPAND_ID: Identifier;
@@ -33,7 +33,7 @@ export class ChatComponent extends Object implements MixinChatComponentAccessor,
     constructor(minecraft: Minecraft)
     allMessages: GuiMessage[];
     readonly chatScrollbarPos: number;
-    // private chatY: number;
+    // private commandHistory: CommandHistory;
     // private latestDraft: ChatComponent$Draft;
     // private messageDeletionQueue: ChatComponent$DelayedMessageDeletion[];
     // private minecraft: Minecraft;
@@ -70,7 +70,6 @@ export class ChatComponent extends Object implements MixinChatComponentAccessor,
     invokeGetScale(): number;
     invokeGetWidth(): number;
     isChatFocused(): boolean;
-    liquidbounce_getChatY(): number;
     logChatMessage(message: GuiMessage): void;
     openScreen(chatMethod: ChatComponent$ChatMethod, chat: (param0: string, param1: boolean) => ChatScreen | null): void;
     preserveCurrentChatScreen(): void;

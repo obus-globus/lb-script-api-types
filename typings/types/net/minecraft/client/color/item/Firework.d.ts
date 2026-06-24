@@ -7,6 +7,8 @@ import type { LivingEntity } from '../../../../../net/minecraft/world/entity/Liv
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class Firework extends Record implements ItemTintSource {
     static MAP_CODEC: MapCodec<Firework>;
+    constructor()
+    constructor(defaultColor: number)
     // private defaultColor: number;
     calculate(itemStack: ItemStack, level: ClientLevel, owner: LivingEntity): number;
     defaultColor(): number;

@@ -12,8 +12,8 @@ export class Double2BooleanOpenCustomHashMap$ValueSpliterator extends Double2Boo
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Double2BooleanOpenCustomHashMap$ValueSpliterator)
-    constructor(null_: Double2BooleanOpenCustomHashMap$ValueSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     characteristics(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;

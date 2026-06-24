@@ -6,6 +6,7 @@ import type { IntProvider } from '../../../../net/minecraft/util/valueproviders/
 export class BiasedToBottomInt extends Record implements IntProvider {
     static MAP_CODEC: MapCodec<BiasedToBottomInt>;
     static of(paramminInclusive: number, parammaxInclusive: number): BiasedToBottomInt;
+    constructor(minInclusive: number, maxInclusive: number)
     // private maxInclusive: number;
     // private minInclusive: number;
     codec(): MapCodec<BiasedToBottomInt>;

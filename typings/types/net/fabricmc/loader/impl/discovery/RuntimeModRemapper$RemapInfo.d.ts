@@ -1,9 +1,11 @@
+import type { RuntimeModRemapper$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { InputTag } from '../../../../../net/fabricmc/loader/impl/lib/tinyremapper/InputTag.d.ts'
 import type { OutputConsumerPath } from '../../../../../net/fabricmc/loader/impl/lib/tinyremapper/OutputConsumerPath.d.ts'
 export class RuntimeModRemapper$RemapInfo extends Object {
     private constructor()
+    constructor(arg0: RuntimeModRemapper$1)
     // private classTweaker: number[];
     // private classTweakerPath: string;
     // private inputIsTemp: boolean;

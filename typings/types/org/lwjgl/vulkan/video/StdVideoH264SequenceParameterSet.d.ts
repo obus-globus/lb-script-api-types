@@ -1,0 +1,167 @@
+import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
+import type { IntBuffer } from '../../../../java/nio/IntBuffer.d.ts'
+import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { NativeResource } from '../../../../org/lwjgl/system/NativeResource.d.ts'
+import type { Struct } from '../../../../org/lwjgl/system/Struct.d.ts'
+import type { Struct$StructValidation } from '../../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+import type { StdVideoH264ScalingLists } from '../../../../org/lwjgl/vulkan/video/StdVideoH264ScalingLists.d.ts'
+import type { StdVideoH264SequenceParameterSetVui } from '../../../../org/lwjgl/vulkan/video/StdVideoH264SequenceParameterSetVui.d.ts'
+import type { StdVideoH264SpsFlags } from '../../../../org/lwjgl/vulkan/video/StdVideoH264SpsFlags.d.ts'
+export class StdVideoH264SequenceParameterSet extends Struct<StdVideoH264SequenceParameterSet> implements NativeResource {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static BIT_DEPTH_CHROMA_MINUS8: number;
+    static BIT_DEPTH_LUMA_MINUS8: number;
+    static CHROMA_FORMAT_IDC: number;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static FLAGS: number;
+    static FRAME_CROP_BOTTOM_OFFSET: number;
+    static FRAME_CROP_LEFT_OFFSET: number;
+    static FRAME_CROP_RIGHT_OFFSET: number;
+    static FRAME_CROP_TOP_OFFSET: number;
+    static LEVEL_IDC: number;
+    static LOG2_MAX_FRAME_NUM_MINUS4: number;
+    static LOG2_MAX_PIC_ORDER_CNT_LSB_MINUS4: number;
+    static MAX_NUM_REF_FRAMES: number;
+    static NUM_REF_FRAMES_IN_PIC_ORDER_CNT_CYCLE: number;
+    static OFFSET_FOR_NON_REF_PIC: number;
+    static OFFSET_FOR_TOP_TO_BOTTOM_FIELD: number;
+    static PIC_HEIGHT_IN_MAP_UNITS_MINUS1: number;
+    static PIC_ORDER_CNT_TYPE: number;
+    static PIC_WIDTH_IN_MBS_MINUS1: number;
+    static POFFSETFORREFFRAME: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static PROFILE_IDC: number;
+    static PSCALINGLISTS: number;
+    static PSEQUENCEPARAMETERSETVUI: number;
+    static RESERVED1: number;
+    static RESERVED2: number;
+    static SEQ_PARAMETER_SET_ID: number;
+    static SIZEOF: number;
+    static calloc(): StdVideoH264SequenceParameterSet;
+    static calloc(paramarg0: MemoryStack): StdVideoH264SequenceParameterSet;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): StdVideoH264SequenceParameterSet;
+    static create(paramarg0: number): StdVideoH264SequenceParameterSet;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): StdVideoH264SequenceParameterSet;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): StdVideoH264SequenceParameterSet;
+    static malloc(paramarg0: MemoryStack): StdVideoH264SequenceParameterSet;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static nbit_depth_chroma_minus8(paramarg0: number): number;
+    static nbit_depth_chroma_minus8(paramarg0: number, paramarg1: number): void;
+    static nbit_depth_luma_minus8(paramarg0: number): number;
+    static nbit_depth_luma_minus8(paramarg0: number, paramarg1: number): void;
+    static nchroma_format_idc(paramarg0: number): number;
+    static nchroma_format_idc(paramarg0: number, paramarg1: number): void;
+    static nflags(paramarg0: number): StdVideoH264SpsFlags;
+    static nflags(paramarg0: number, paramarg1: StdVideoH264SpsFlags): void;
+    static nframe_crop_bottom_offset(paramarg0: number): number;
+    static nframe_crop_bottom_offset(paramarg0: number, paramarg1: number): void;
+    static nframe_crop_left_offset(paramarg0: number): number;
+    static nframe_crop_left_offset(paramarg0: number, paramarg1: number): void;
+    static nframe_crop_right_offset(paramarg0: number): number;
+    static nframe_crop_right_offset(paramarg0: number, paramarg1: number): void;
+    static nframe_crop_top_offset(paramarg0: number): number;
+    static nframe_crop_top_offset(paramarg0: number, paramarg1: number): void;
+    static nlevel_idc(paramarg0: number): number;
+    static nlevel_idc(paramarg0: number, paramarg1: number): void;
+    static nlog2_max_frame_num_minus4(paramarg0: number): number;
+    static nlog2_max_frame_num_minus4(paramarg0: number, paramarg1: number): void;
+    static nlog2_max_pic_order_cnt_lsb_minus4(paramarg0: number): number;
+    static nlog2_max_pic_order_cnt_lsb_minus4(paramarg0: number, paramarg1: number): void;
+    static nmax_num_ref_frames(paramarg0: number): number;
+    static nmax_num_ref_frames(paramarg0: number, paramarg1: number): void;
+    static nnum_ref_frames_in_pic_order_cnt_cycle(paramarg0: number): number;
+    static nnum_ref_frames_in_pic_order_cnt_cycle(paramarg0: number, paramarg1: number): void;
+    static noffset_for_non_ref_pic(paramarg0: number): number;
+    static noffset_for_non_ref_pic(paramarg0: number, paramarg1: number): void;
+    static noffset_for_top_to_bottom_field(paramarg0: number): number;
+    static noffset_for_top_to_bottom_field(paramarg0: number, paramarg1: number): void;
+    static npOffsetForRefFrame(paramarg0: number): IntBuffer;
+    static npOffsetForRefFrame(paramarg0: number, paramarg1: IntBuffer): void;
+    static npScalingLists(paramarg0: number): StdVideoH264ScalingLists;
+    static npScalingLists(paramarg0: number, paramarg1: StdVideoH264ScalingLists): void;
+    static npSequenceParameterSetVui(paramarg0: number): StdVideoH264SequenceParameterSetVui;
+    static npSequenceParameterSetVui(paramarg0: number, paramarg1: StdVideoH264SequenceParameterSetVui): void;
+    static npic_height_in_map_units_minus1(paramarg0: number): number;
+    static npic_height_in_map_units_minus1(paramarg0: number, paramarg1: number): void;
+    static npic_order_cnt_type(paramarg0: number): number;
+    static npic_order_cnt_type(paramarg0: number, paramarg1: number): void;
+    static npic_width_in_mbs_minus1(paramarg0: number): number;
+    static npic_width_in_mbs_minus1(paramarg0: number, paramarg1: number): void;
+    static nprofile_idc(paramarg0: number): number;
+    static nprofile_idc(paramarg0: number, paramarg1: number): void;
+    static nreserved1(paramarg0: number): number;
+    static nreserved1(paramarg0: number, paramarg1: number): void;
+    static nreserved2(paramarg0: number): number;
+    static nreserved2(paramarg0: number, paramarg1: number): void;
+    static nseq_parameter_set_id(paramarg0: number): number;
+    static nseq_parameter_set_id(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    bit_depth_chroma_minus8(): number;
+    bit_depth_chroma_minus8(arg0: number): StdVideoH264SequenceParameterSet;
+    bit_depth_luma_minus8(): number;
+    bit_depth_luma_minus8(arg0: number): StdVideoH264SequenceParameterSet;
+    chroma_format_idc(): number;
+    chroma_format_idc(arg0: number): StdVideoH264SequenceParameterSet;
+    close(): void;
+    create(arg0: number, arg1: ByteBuffer): StdVideoH264SequenceParameterSet;
+    flags(): StdVideoH264SpsFlags;
+    flags(arg0: (param0: StdVideoH264SpsFlags) => void): StdVideoH264SequenceParameterSet;
+    flags(arg0: StdVideoH264SpsFlags): StdVideoH264SequenceParameterSet;
+    frame_crop_bottom_offset(): number;
+    frame_crop_bottom_offset(arg0: number): StdVideoH264SequenceParameterSet;
+    frame_crop_left_offset(): number;
+    frame_crop_left_offset(arg0: number): StdVideoH264SequenceParameterSet;
+    frame_crop_right_offset(): number;
+    frame_crop_right_offset(arg0: number): StdVideoH264SequenceParameterSet;
+    frame_crop_top_offset(): number;
+    frame_crop_top_offset(arg0: number): StdVideoH264SequenceParameterSet;
+    level_idc(): number;
+    level_idc(arg0: number): StdVideoH264SequenceParameterSet;
+    log2_max_frame_num_minus4(): number;
+    log2_max_frame_num_minus4(arg0: number): StdVideoH264SequenceParameterSet;
+    log2_max_pic_order_cnt_lsb_minus4(): number;
+    log2_max_pic_order_cnt_lsb_minus4(arg0: number): StdVideoH264SequenceParameterSet;
+    max_num_ref_frames(): number;
+    max_num_ref_frames(arg0: number): StdVideoH264SequenceParameterSet;
+    num_ref_frames_in_pic_order_cnt_cycle(): number;
+    num_ref_frames_in_pic_order_cnt_cycle(arg0: number): StdVideoH264SequenceParameterSet;
+    offset_for_non_ref_pic(): number;
+    offset_for_non_ref_pic(arg0: number): StdVideoH264SequenceParameterSet;
+    offset_for_top_to_bottom_field(): number;
+    offset_for_top_to_bottom_field(arg0: number): StdVideoH264SequenceParameterSet;
+    pOffsetForRefFrame(): IntBuffer;
+    pOffsetForRefFrame(arg0: IntBuffer): StdVideoH264SequenceParameterSet;
+    pScalingLists(): StdVideoH264ScalingLists;
+    pScalingLists(arg0: StdVideoH264ScalingLists): StdVideoH264SequenceParameterSet;
+    pSequenceParameterSetVui(): StdVideoH264SequenceParameterSetVui;
+    pSequenceParameterSetVui(arg0: StdVideoH264SequenceParameterSetVui): StdVideoH264SequenceParameterSet;
+    pic_height_in_map_units_minus1(): number;
+    pic_height_in_map_units_minus1(arg0: number): StdVideoH264SequenceParameterSet;
+    pic_order_cnt_type(): number;
+    pic_order_cnt_type(arg0: number): StdVideoH264SequenceParameterSet;
+    pic_width_in_mbs_minus1(): number;
+    pic_width_in_mbs_minus1(arg0: number): StdVideoH264SequenceParameterSet;
+    profile_idc(): number;
+    profile_idc(arg0: number): StdVideoH264SequenceParameterSet;
+    seq_parameter_set_id(): number;
+    seq_parameter_set_id(arg0: number): StdVideoH264SequenceParameterSet;
+    set(arg0: StdVideoH264SequenceParameterSet): StdVideoH264SequenceParameterSet;
+    set(arg0: StdVideoH264SpsFlags, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number, arg8: number, arg9: number, arg10: number, arg11: number, arg12: number, arg13: number, arg14: number, arg15: number, arg16: number, arg17: number, arg18: number, arg19: number, arg20: IntBuffer, arg21: StdVideoH264ScalingLists, arg22: StdVideoH264SequenceParameterSetVui): StdVideoH264SequenceParameterSet;
+    sizeof(): number;
+}

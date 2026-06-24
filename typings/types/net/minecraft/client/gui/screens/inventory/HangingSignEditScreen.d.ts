@@ -7,7 +7,7 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { SignBlockEntity } from '../../../../../../net/minecraft/world/level/block/entity/SignBlockEntity.d.ts'
-import type { Vector3f } from '../../../../../../org/joml/Vector3f.d.ts'
+import type { Vector3fc } from '../../../../../../org/joml/Vector3fc.d.ts'
 export class HangingSignEditScreen extends AbstractSignEditScreen {
     static FOOTER_SEPARATOR: Identifier;
     static HEADER_SEPARATOR: Identifier;
@@ -21,6 +21,6 @@ export class HangingSignEditScreen extends AbstractSignEditScreen {
     constructor(sign: SignBlockEntity, isFrontText: boolean, shouldFilter: boolean)
     // private texture: Identifier;
     extractSignBackground(graphics: GuiGraphicsExtractor): void;
-    getSignTextScale(): Vector3f;
+    getSignTextScale(): Vector3fc;
     getSignYOffset(): number;
 }

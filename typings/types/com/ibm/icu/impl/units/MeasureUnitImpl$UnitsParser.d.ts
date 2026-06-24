@@ -16,4 +16,5 @@ export class MeasureUnitImpl$UnitsParser extends Object {
     // private nextSingleUnit(): MeasureUnitImpl$UnitsParser$SingleUnitOrConstant;
     // private nextToken(): MeasureUnitImpl$UnitsParser$Token;
     // private parse(): MeasureUnitImpl;
+    // private processAlias(arg0: MeasureUnitImpl$UnitsParser$Token): void;
 }

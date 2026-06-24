@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
-import type { Pair } from '../../../../../../kotlin/Pair.d.ts'
+import type { PKCEUtils$PKCEPair } from '../../../../../../net/ccbluex/liquidbounce/api/services/auth/PKCEUtils$PKCEPair.d.ts'
 export class PKCEUtils extends Object {
     static INSTANCE: PKCEUtils;
-    generatePKCE(): Pair<string, string>;
+    generatePKCE(): PKCEUtils$PKCEPair;
 }

@@ -15,6 +15,7 @@ export class FireworkExplosion extends Record implements TooltipProvider {
     static COLOR_LIST_CODEC: Codec<(Object | null)[]>;
     static DEFAULT: FireworkExplosion;
     static STREAM_CODEC: StreamCodec<ByteBuf, FireworkExplosion>;
+    constructor(shape: FireworkExplosion$Shape, colors: (Object | null)[], fadeColors: (Object | null)[], hasTrail: boolean, hasTwinkle: boolean)
     // private colors: (Object | null)[];
     // private fadeColors: (Object | null)[];
     // private hasTrail: boolean;

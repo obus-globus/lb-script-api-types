@@ -3,8 +3,8 @@ import type { Long2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastut
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2ReferenceAVLTreeMap$EntryIterator extends Long2ReferenceAVLTreeMap$TreeIterator implements ObjectListIterator<Long2ReferenceMap$Entry<V>> {
-    constructor(null_: Long2ReferenceAVLTreeMap$EntryIterator)
-    constructor(null_: Long2ReferenceAVLTreeMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add<V extends unknown>(arg0: Long2ReferenceMap$Entry<V>): void;
     next<V extends unknown>(): Long2ReferenceMap$Entry<V>;
     previous<V extends unknown>(): Long2ReferenceMap$Entry<V>;

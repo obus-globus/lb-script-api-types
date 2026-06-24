@@ -1,9 +1,10 @@
+import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BuiltInRegistriesAccessor } from '../../../../net/fabricmc/fabric/mixin/registry/sync/BuiltInRegistriesAccessor.d.ts'
-import type { CriterionTrigger } from '../../../../net/minecraft/advancements/CriterionTrigger.d.ts'
-import type { EntitySubPredicate } from '../../../../net/minecraft/advancements/criterion/EntitySubPredicate.d.ts'
+import type { EntitySubPredicate } from '../../../../net/minecraft/advancements/predicates/entity/EntitySubPredicate.d.ts'
+import type { CriterionTrigger } from '../../../../net/minecraft/advancements/triggers/CriterionTrigger.d.ts'
 import type { ArgumentTypeInfo } from '../../../../net/minecraft/commands/synchronization/ArgumentTypeInfo.d.ts'
 import type { HolderGetter } from '../../../../net/minecraft/core/HolderGetter.d.ts'
 import type { DataComponentInitializers } from '../../../../net/minecraft/core/component/DataComponentInitializers.d.ts'
@@ -87,7 +88,7 @@ import type { StructurePoolElementType } from '../../../../net/minecraft/world/l
 import type { PoolAliasBinding } from '../../../../net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasBinding.d.ts'
 import type { PosRuleTestType } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/PosRuleTestType.d.ts'
 import type { RuleTestType } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/RuleTestType.d.ts'
-import type { StructureProcessorType } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessorType.d.ts'
+import type { StructureProcessor } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessor.d.ts'
 import type { RuleBlockEntityModifierType } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/RuleBlockEntityModifierType.d.ts'
 import type { Fluid } from '../../../../net/minecraft/world/level/material/Fluid.d.ts'
 import type { MapDecorationType } from '../../../../net/minecraft/world/level/saveddata/maps/MapDecorationType.d.ts'
@@ -129,7 +130,7 @@ export class BuiltInRegistries extends Object implements BuiltInRegistriesAccess
     static ENCHANTMENT_LOCATION_BASED_EFFECT_TYPE: MapCodec<EnchantmentLocationBasedEffect>[];
     static ENCHANTMENT_PROVIDER_TYPE: MapCodec<EnchantmentProvider>[];
     static ENCHANTMENT_VALUE_EFFECT_TYPE: MapCodec<EnchantmentValueEffect>[];
-    static ENTITY_SUB_PREDICATE_TYPE: MapCodec<EntitySubPredicate>[];
+    static ENTITY_SUB_PREDICATE_TYPE: Codec<EntitySubPredicate>[];
     static ENTITY_TYPE: EntityType<any>[];
     static ENVIRONMENT_ATTRIBUTE: EnvironmentAttribute<Object>[];
     static FEATURE: Feature<any>[];
@@ -184,7 +185,7 @@ export class BuiltInRegistries extends Object implements BuiltInRegistriesAccess
     static STRUCTURE_PIECE: StructurePieceType[];
     static STRUCTURE_PLACEMENT: StructurePlacementType<any>[];
     static STRUCTURE_POOL_ELEMENT: StructurePoolElementType<any>[];
-    static STRUCTURE_PROCESSOR: StructureProcessorType<any>[];
+    static STRUCTURE_PROCESSOR: MapCodec<StructureProcessor>[];
     static STRUCTURE_TYPE: StructureType<any>[];
     static TEST_ENVIRONMENT_DEFINITION_TYPE: MapCodec<TestEnvironmentDefinition<Object>>[];
     static TEST_FUNCTION: (param0: GameTestHelper) => void[];

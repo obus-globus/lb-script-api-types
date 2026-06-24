@@ -12,6 +12,7 @@ import type { ResolvableModel$Resolver } from '../../../../../net/minecraft/clie
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 export class RangeSelectItemModel$Unbaked extends Record implements ItemModel$Unbaked {
     static MAP_CODEC: MapCodec<RangeSelectItemModel$Unbaked>;
+    constructor(transformation: Optional<Transformation>, property: RangeSelectItemModelProperty, scale: number, entries: RangeSelectItemModel$Entry[], fallback: Optional<ItemModel$Unbaked>)
     // private entries: RangeSelectItemModel$Entry[];
     // private fallback: Optional<ItemModel$Unbaked>;
     // private property: RangeSelectItemModelProperty;

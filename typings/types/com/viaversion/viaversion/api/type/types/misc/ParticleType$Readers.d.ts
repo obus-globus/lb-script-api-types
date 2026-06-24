@@ -11,6 +11,8 @@ export class ParticleType$Readers extends Object {
     static DUST1_21_2: (param0: ByteBuf, param1: Particle) => void;
     static DUST_TRANSITION: (param0: ByteBuf, param1: Particle) => void;
     static DUST_TRANSITION1_21_2: (param0: ByteBuf, param1: Particle) => void;
+    static GEYSER: (param0: ByteBuf, param1: Particle) => void;
+    static GEYSER_BASE: (param0: ByteBuf, param1: Particle) => void;
     static ITEM1_13: (param0: ByteBuf, param1: Particle) => void;
     static ITEM1_13_2: (param0: ByteBuf, param1: Particle) => void;
     static POWER: (param0: ByteBuf, param1: Particle) => void;

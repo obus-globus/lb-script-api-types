@@ -6,6 +6,7 @@ import type { Component } from '../../../../net/minecraft/network/chat/Component
 import type { NumberFormat } from '../../../../net/minecraft/network/chat/numbers/NumberFormat.d.ts'
 export class Score$Packed extends Record {
     static MAP_CODEC: MapCodec<Score$Packed>;
+    constructor(value: number, locked: boolean, display: Optional<Component>, numberFormat: Optional<NumberFormat>)
     // private display: Optional<Component>;
     // private locked: boolean;
     // private numberFormat: Optional<NumberFormat>;

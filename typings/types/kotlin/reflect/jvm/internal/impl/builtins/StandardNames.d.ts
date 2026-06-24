@@ -22,6 +22,7 @@ export class StandardNames extends Object {
     static COROUTINE_SUSPENDED_NAME: Name;
     static DATA_CLASS_COMPONENT_PREFIX: string;
     static DATA_CLASS_COPY: Name;
+    static DEFAULT_IMPLS_CLASS_NAME: Name;
     static DEFAULT_VALUE_PARAMETER: Name;
     static DYNAMIC_FQ_NAME: FqName;
     static ENUM_ENTRIES: Name;
@@ -41,6 +42,7 @@ export class StandardNames extends Object {
     static PREFIXES: string[];
     static RANGES_PACKAGE_FQ_NAME: FqName;
     static RESULT_FQ_NAME: FqName;
+    static SEQUENCES_PACKAGE_FQ_NAME: FqName;
     static TEXT_PACKAGE_FQ_NAME: FqName;
     static TO_STRING_NAME: Name;
     static getFunctionClassId(paramarg0: number): ClassId;

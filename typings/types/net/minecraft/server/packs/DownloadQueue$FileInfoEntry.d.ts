@@ -3,6 +3,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DownloadQueue$FileInfoEntry extends Record {
     static CODEC: Codec<DownloadQueue$FileInfoEntry>;
+    private constructor(name: string, size: number)
     // private name: string;
     // private size: number;
     equals(o: Object | null): boolean;

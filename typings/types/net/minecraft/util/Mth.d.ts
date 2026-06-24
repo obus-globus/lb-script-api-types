@@ -8,7 +8,7 @@ import type { AABB } from '../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Fraction } from '../../../org/apache/commons/lang3/math/Fraction.d.ts'
 import type { Quaternionf } from '../../../org/joml/Quaternionf.d.ts'
-import type { Vector3f } from '../../../org/joml/Vector3f.d.ts'
+import type { Vector3fc } from '../../../org/joml/Vector3fc.d.ts'
 export class Mth extends Object {
     static DEG_TO_RAD: number;
     static EPSILON: number;
@@ -18,9 +18,9 @@ export class Mth extends Object {
     static SIN: number[];
     static SQRT_OF_TWO: number;
     static TWO_PI: number;
-    static X_AXIS: Vector3f;
-    static Y_AXIS: Vector3f;
-    static Z_AXIS: Vector3f;
+    static X_AXIS: Vector3fc;
+    static Y_AXIS: Vector3fc;
+    static Z_AXIS: Vector3fc;
     static abs(paramv: number): number;
     static abs(paramv: number): number;
     static absMax(parama: number, paramb: number): number;
@@ -44,7 +44,7 @@ export class Mth extends Object {
     static clampedLerp(paramfactor: number, parammin: number, parammax: number): number;
     static clampedMap(paramvalue: number, paramfromMin: number, paramfromMax: number, paramtoMin: number, paramtoMax: number): number;
     static clampedMap(paramvalue: number, paramfromMin: number, paramfromMax: number, paramtoMin: number, paramtoMax: number): number;
-    static cos(paramarg0: number): number;
+    static cos(parami: number): number;
     static createInsecureUUID(paramrandom: RandomSource): UUID;
     static cube(paramx: number): number;
     static degreesDifference(paramfromAngle: number, paramtoAngle: number): number;
@@ -68,6 +68,7 @@ export class Mth extends Object {
     static inverseLerp(paramvalue: number, parammin: number, parammax: number): number;
     static inverseLerp(paramvalue: number, parammin: number, parammax: number): number;
     static isMultipleOf(paramdividend: number, paramdivisor: number): boolean;
+    static isPowerOfTwo(paraminput: number): boolean;
     static isPowerOfTwo(paraminput: number): boolean;
     static length(paramx: number, paramy: number): number;
     static length(paramx: number, paramy: number, paramz: number): number;
@@ -96,6 +97,7 @@ export class Mth extends Object {
     static outFromOrigin(paramorigin: number, paramlowerBound: number, paramupperBound: number, paramstepSize: number): IntStream;
     static packDegrees(paramangle: number): number;
     static positiveCeilDiv(paraminput: number, paramdivisor: number): number;
+    static positiveCeilDiv(paraminput: number, paramdivisor: number): number;
     static positiveModulo(paraminput: number, parammod: number): number;
     static positiveModulo(paraminput: number, parammod: number): number;
     static positiveModulo(paraminput: number, parammod: number): number;
@@ -107,10 +109,11 @@ export class Mth extends Object {
     static rotLerp(parama: number, paramfrom: number, paramto: number): number;
     static rotLerpRad(parama: number, paramfrom: number, paramto: number): number;
     static rotateIfNecessary(parambaseAngle: number, paramtargetAngle: number, parammaxAngleDiff: number): number;
-    static rotationAroundAxis(paramaxis: Vector3f, paramrotation: Quaternionf, paramresult: Quaternionf): Quaternionf;
+    static rotationAroundAxis(paramaxis: Vector3fc, paramrotation: Quaternionf, paramresult: Quaternionf): Quaternionf;
+    static roundToward(paraminput: number, parammultiple: number): number;
     static roundToward(paraminput: number, parammultiple: number): number;
     static sign(paramnumber: number): number;
-    static sin(paramarg0: number): number;
+    static sin(parami: number): number;
     static smallestEncompassingPowerOfTwo(paraminput: number): number;
     static smallestSquareSide(paramitemCount: number): number;
     static smoothstep(paramx: number): number;
@@ -127,5 +130,6 @@ export class Mth extends Object {
     static wrapDegrees(paramangle: number): number;
     static wrapDegrees(paramangle: number): number;
     static wrapDegrees(paramangle: number): number;
+    static wrapDegrees90(paramangle: number): number;
     constructor()
 }

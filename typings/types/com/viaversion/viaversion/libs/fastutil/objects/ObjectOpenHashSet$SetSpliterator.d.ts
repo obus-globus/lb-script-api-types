@@ -10,8 +10,8 @@ export class ObjectOpenHashSet$SetSpliterator extends Object implements ObjectSp
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: ObjectOpenHashSet$SetSpliterator)
-    constructor(null_: ObjectOpenHashSet$SetSpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: K[])
+    constructor(null_: K[], arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private c: number;
     // private hasSplit: boolean;
     // private max: number;

@@ -11,6 +11,7 @@ export class SavedTick<T extends unknown> extends Record {
     static codec(paramtypeCodec: Codec<Object>): Codec<SavedTick<Object>>;
     static filterTickListForChunk(paramsavedTicks: SavedTick<Object>[], paramchunkPos: ChunkPos): SavedTick<Object>[];
     static probe(paramtype: Object | null, parampos: BlockPos): SavedTick<Object>;
+    constructor(type: T, pos: BlockPos, delay: number, priority: TickPriority)
     // private delay: number;
     // private pos: BlockPos;
     // private priority: TickPriority;

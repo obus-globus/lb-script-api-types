@@ -1,9 +1,11 @@
+import type { Streams$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { IntStream } from '../../../../../../java/util/stream/IntStream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts'
 export class Streams$AppendableWriter$CurrentWrite extends Object implements CharSequence {
     static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     private constructor()
+    constructor(arg0: Streams$1)
     // private cachedString: string;
     // private chars: string[];
     /*not mapped: */ length(): number;

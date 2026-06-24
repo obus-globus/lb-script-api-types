@@ -20,15 +20,15 @@ import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts
  * shown immediately when account switches, but we can reduce the stress
  * on the API and the connection of the user.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:39}
  */
 export class CosmeticService extends ValueGroup implements EventListener {
     static INSTANCE: CosmeticService;
     // private REFRESH_DELAY: number;
     // private carriers: string[];
-    /*not mapped: */ getCarriers$liquidbounce(): string[];
+    /*not mapped: */ getCarriers$net_ccbluex_liquidbounce(): string[];
     // private carriersCosmetics: Map<UUID, Cosmetic[]>;
-    /*not mapped: */ getCarriersCosmetics$liquidbounce(): Map<UUID, Cosmetic[]>;
+    /*not mapped: */ getCarriersCosmetics$net_ccbluex_liquidbounce(): Map<UUID, Cosmetic[]>;
     // private disconnectHandler: EventHook<DisconnectEvent>;
     // private lastUpdate: Chronometer;
     // private logger: Logger;
@@ -44,7 +44,7 @@ export class CosmeticService extends ValueGroup implements EventListener {
      * and then call out {@link done}.
      * It will only refresh when the REFRESH_DELAY has passed or when {@link force} is true.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:66}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:66}
      */
     refreshCarriers(force: boolean, done: () => void): void;
     // private transferTemporaryOwnership(uuid: UUID): void;

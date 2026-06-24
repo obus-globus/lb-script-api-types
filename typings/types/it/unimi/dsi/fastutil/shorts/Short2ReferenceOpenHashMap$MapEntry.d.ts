@@ -10,8 +10,8 @@ export class Short2ReferenceOpenHashMap$MapEntry extends Object implements Short
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static of(paramarg0: number, paramarg1: Object | null): ShortReferencePair<Object>;
-    constructor(null_: Short2ReferenceOpenHashMap$MapEntry)
-    constructor(null_: Short2ReferenceOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;

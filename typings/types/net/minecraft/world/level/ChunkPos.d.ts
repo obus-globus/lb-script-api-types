@@ -8,12 +8,12 @@ import type { StreamCodec } from '../../../../net/minecraft/network/codec/Stream
 export class ChunkPos extends Record {
     static CODEC: Codec<ChunkPos>;
     static INVALID_CHUNK_POS: number;
-    static MAX_COORDINATE_VALUE: number;
     static REGION_MAX_INDEX: number;
     static REGION_SIZE: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, ChunkPos>;
     static ZERO: ChunkPos;
     static containing(parampos: BlockPos): ChunkPos;
+    static fromSectionNode(paramsectionNode: number): number;
     static getRegionX(parampos: number): number;
     static getRegionZ(parampos: number): number;
     static getX(parampos: number): number;
@@ -27,6 +27,7 @@ export class ChunkPos extends Record {
     static rangeClosed(paramcenter: ChunkPos, paramradius: number): Stream<ChunkPos>;
     static rangeClosed(paramfrom: ChunkPos, paramto: ChunkPos): Stream<ChunkPos>;
     static unpack(paramkey: number): ChunkPos;
+    constructor(x: number, z: number)
     // private x: number;
     // private z: number;
     contains(pos: BlockPos): boolean;

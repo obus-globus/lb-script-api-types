@@ -6,6 +6,7 @@ export class Brightness extends Record {
     static FULL_BRIGHT: Brightness;
     static LIGHT_VALUE_CODEC: Codec<number>;
     static unpack(parampacked: number): Brightness;
+    constructor(block: number, sky: number)
     // private block: number;
     // private sky: number;
     block(): number;

@@ -7,5 +7,6 @@ import type { RawSource } from '../../kotlinx/io/RawSource.d.ts'
 export class JvmCoreKt extends Object {
     static asSink(paramarg0: OutputStream): RawSink;
     static asSource(paramarg0: InputStream): RawSource;
+    static getSystemLineSeparator(): string;
     static isAndroidGetsocknameError(paramarg0: AssertionError): boolean;
 }

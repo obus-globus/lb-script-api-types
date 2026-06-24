@@ -3,6 +3,7 @@ import type { FabricRenderState } from '../../../../../net/fabricmc/fabric/api/c
 import type { RenderStateDataKey } from '../../../../../net/fabricmc/fabric/api/client/rendering/v1/RenderStateDataKey.d.ts'
 import type { CameraType } from '../../../../../net/minecraft/client/CameraType.d.ts'
 import type { CloudStatus } from '../../../../../net/minecraft/client/CloudStatus.d.ts'
+import type { PrioritizeChunkUpdates } from '../../../../../net/minecraft/client/PrioritizeChunkUpdates.d.ts'
 import type { TextureFilteringMethod } from '../../../../../net/minecraft/client/TextureFilteringMethod.d.ts'
 export class OptionsRenderState extends Object implements FabricRenderState {
     constructor()
@@ -10,17 +11,19 @@ export class OptionsRenderState extends Object implements FabricRenderState {
     backgroundForChatOnly: boolean;
     bobView: boolean;
     cameraType: CameraType;
+    chunkSectionFadeInTime: number;
     cloudRange: number;
     cloudStatus: CloudStatus;
     cutoutLeaves: boolean;
     damageTiltStrength: number;
+    fov: number;
     glintSpeed: number;
     glintStrength: number;
-    hideGui: boolean;
     improvedTransparency: boolean;
     maxAnisotropyValue: number;
     menuBackgroundBlurriness: number;
     panoramaSpeed: number;
+    prioritizeChunkUpdates: PrioritizeChunkUpdates;
     renderDistance: number;
     // private renderStateData: Map<Object | null, Object | null>;
     screenEffectScale: number;

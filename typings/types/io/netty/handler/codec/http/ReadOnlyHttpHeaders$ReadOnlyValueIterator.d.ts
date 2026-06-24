@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 export class ReadOnlyHttpHeaders$ReadOnlyValueIterator extends Object implements Iterator<CharSequence> {
-    constructor(null_: ReadOnlyHttpHeaders$ReadOnlyValueIterator, arg1: CharSequence)
+    constructor(null_: (Object | null)[], arg1: CharSequence)
     // private name: CharSequence;
     // private nameHash: number;
     // private nextNameIndex: number;

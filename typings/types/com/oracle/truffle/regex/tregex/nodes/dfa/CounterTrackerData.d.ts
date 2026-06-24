@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class CounterTrackerData extends Record {
+    constructor(fixedData: number[], intArrays: number[][])
     // private fixedData: number[];
     // private intArrays: number[][];
     equals(o: Object | null): boolean;

@@ -6,6 +6,7 @@ import type { StreamCodec } from '../../../../../../net/minecraft/network/codec/
 import type { MapItemSavedData } from '../../../../../../net/minecraft/world/level/saveddata/maps/MapItemSavedData.d.ts'
 export class MapItemSavedData$MapPatch extends Record {
     static STREAM_CODEC: StreamCodec<ByteBuf, Optional<MapItemSavedData$MapPatch>>;
+    constructor(startX: number, startY: number, width: number, height: number, mapColors: number[])
     // private height: number;
     // private mapColors: number[];
     // private startX: number;

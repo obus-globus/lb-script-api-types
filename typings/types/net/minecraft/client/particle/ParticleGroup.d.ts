@@ -8,9 +8,8 @@ export abstract class ParticleGroup<P extends Particle> extends Object {
     constructor(engine: ParticleEngine)
     // private engine: ParticleEngine;
     // private particles: P[];
-    add(particle: Particle): void;
+    add(particle: Particle): boolean;
     extractRenderState(frustum: Frustum, camera: Camera, partialTickTime: number): ParticleGroupRenderState;
-    getAll(): P[];
     isEmpty(): boolean;
     size(): number;
     // private tickParticle(particle: Particle): void;

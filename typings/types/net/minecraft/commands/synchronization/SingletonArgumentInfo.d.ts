@@ -4,10 +4,9 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CommandBuildContext } from '../../../../net/minecraft/commands/CommandBuildContext.d.ts'
-import type { ArgumentTypeInfo } from '../../../../net/minecraft/commands/synchronization/ArgumentTypeInfo.d.ts'
 import type { SingletonArgumentInfo$Template } from '../../../../net/minecraft/commands/synchronization/SingletonArgumentInfo$Template.d.ts'
 import type { FriendlyByteBuf } from '../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
-export class SingletonArgumentInfo<A extends ArgumentType<Object>> extends Object implements ArgumentTypeInfo<A, SingletonArgumentInfo$Template> {
+export class SingletonArgumentInfo<A extends ArgumentType<Object>> {
     static contextAware(paramconstructor: (param0: CommandBuildContext) => Object | null): SingletonArgumentInfo<any>;
     static contextFree(paramconstructor: () => Object | null): SingletonArgumentInfo<any>;
     private constructor(constructor: (param0: CommandBuildContext) => A)

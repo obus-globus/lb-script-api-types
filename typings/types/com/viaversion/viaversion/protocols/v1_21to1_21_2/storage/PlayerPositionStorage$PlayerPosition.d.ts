@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PlayerPositionStorage$PlayerPosition extends Record {
+    constructor(x: number, y: number, z: number, yaw: number, pitch: number, onGround: boolean)
     // private onGround: boolean;
     // private pitch: number;
     // private x: number;

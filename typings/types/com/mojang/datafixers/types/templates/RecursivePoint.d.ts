@@ -9,6 +9,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RecursivePoint extends Record implements TypeTemplate {
+    constructor(index: number)
     // private index: number;
     apply(arg0: TypeFamily): TypeFamily;
     applyO<A extends unknown, B extends unknown>(arg0: FamilyOptic<A, B>, arg1: Type<A>, arg2: Type<B>): FamilyOptic<A, B>;

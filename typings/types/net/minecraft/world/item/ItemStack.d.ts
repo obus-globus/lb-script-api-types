@@ -8,7 +8,6 @@ import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
-import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator.d.ts'
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -146,7 +145,7 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     getCraftingRemainder(): ItemStackTemplate;
     getCreatorNamespace(): string;
     getCustomName(): Component;
-    getDamageSource(attacker: LivingEntity, defaultSource: () => DamageSource): DamageSource;
+    getDamageSource(attacker: LivingEntity): DamageSource;
     getDamageValue(): number;
     getDestroySpeed(state: BlockState): number;
     getDisplayName(): Component;

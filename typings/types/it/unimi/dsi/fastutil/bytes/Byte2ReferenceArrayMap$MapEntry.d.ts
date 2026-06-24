@@ -10,8 +10,8 @@ export class Byte2ReferenceArrayMap$MapEntry extends Object implements Byte2Refe
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static of(paramarg0: number, paramarg1: Object | null): ByteReferencePair<Object>;
-    constructor(null_: Byte2ReferenceArrayMap$MapEntry)
-    constructor(null_: Byte2ReferenceArrayMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;

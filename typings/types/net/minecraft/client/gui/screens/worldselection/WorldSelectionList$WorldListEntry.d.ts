@@ -13,7 +13,7 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
 import type { LevelSummary } from '../../../../../../net/minecraft/world/level/storage/LevelSummary.d.ts'
 export class WorldSelectionList$WorldListEntry extends WorldSelectionList$Entry implements SelectableEntry {
     static CONTENT_PADDING: number;
-    constructor(null_: WorldSelectionList$WorldListEntry, list: WorldSelectionList, summary: LevelSummary)
+    constructor(null_: WorldSelectionList, list: WorldSelectionList, summary: LevelSummary)
     // private icon: FaviconTexture;
     // private iconFile: Path[];
     // private idAndLastPlayedText: StringWidget;

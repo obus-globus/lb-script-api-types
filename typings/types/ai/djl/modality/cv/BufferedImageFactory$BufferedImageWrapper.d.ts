@@ -1,3 +1,4 @@
+import type { BufferedImageFactory } from '../../../../ai/djl/modality/cv/BufferedImageFactory.d.ts'
 import type { Image } from '../../../../ai/djl/modality/cv/Image.d.ts'
 import type { Image$Flag } from '../../../../ai/djl/modality/cv/Image$Flag.d.ts'
 import type { BoundingBox } from '../../../../ai/djl/modality/cv/output/BoundingBox.d.ts'
@@ -14,7 +15,7 @@ import type { BufferedImage } from '../../../../java/awt/image/BufferedImage.d.t
 import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BufferedImageFactory$BufferedImageWrapper extends Object implements Image {
-    constructor(null_: BufferedImageFactory$BufferedImageWrapper, arg1: BufferedImage)
+    constructor(null_: BufferedImageFactory, arg1: BufferedImage)
     // private image: BufferedImage;
     // private convertIdNeeded(): void;
     createStar(arg0: Point, arg1: number): number[][];

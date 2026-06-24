@@ -11,6 +11,7 @@ export class PositionMoveRotation extends Record {
     static calculateAbsolute(paramsource: PositionMoveRotation, paramchange: PositionMoveRotation, paramrelatives: Relative[]): PositionMoveRotation;
     static of(paramentity: Entity): PositionMoveRotation;
     static of(paramtransition: TeleportTransition): PositionMoveRotation;
+    constructor(position: Vec3, deltaMovement: Vec3, yRot: number, xRot: number)
     // private deltaMovement: Vec3;
     // private position: Vec3;
     // private xRot: number;

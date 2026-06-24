@@ -23,4 +23,5 @@ export abstract class DynamicData extends PresentTranslucentData {
     getInitialCameraPos(): Vector3dc;
     getSortType(): SortType;
     getSorter(): DynamicSorter;
+    isMatchingSorter(arg0: DynamicSorter): boolean;
 }

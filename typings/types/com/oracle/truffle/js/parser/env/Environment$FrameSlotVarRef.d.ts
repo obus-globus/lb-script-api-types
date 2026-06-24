@@ -5,8 +5,8 @@ import type { Environment$AbstractFrameVarRef } from '../../../../../../com/orac
 import type { Environment$VarRef } from '../../../../../../com/oracle/truffle/js/parser/env/Environment$VarRef.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Environment$FrameSlotVarRef extends Environment$AbstractFrameVarRef {
-    constructor(null_: Environment$FrameSlotVarRef, frameSlot: JSFrameSlot, scopeLevel: number, frameLevel: number, name: Object, current: Environment)
-    constructor(null_: Environment$FrameSlotVarRef, frameSlot: JSFrameSlot, scopeLevel: number, frameLevel: number, name: Object, current: Environment, checkTDZ: boolean)
+    constructor(null_: Environment, frameSlot: JSFrameSlot, scopeLevel: number, frameLevel: number, name: Object, current: Environment)
+    constructor(null_: Environment, frameSlot: JSFrameSlot, scopeLevel: number, frameLevel: number, name: Object, current: Environment, checkTDZ: boolean)
     // private checkTDZ: boolean;
     readonly frameSlot: JSFrameSlot;
     createReadNode(): JavaScriptNode;

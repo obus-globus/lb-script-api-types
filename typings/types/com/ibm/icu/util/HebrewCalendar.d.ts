@@ -96,6 +96,7 @@ export class HebrewCalendar extends Calendar {
     constructor(arg0: number, arg1: number, arg2: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number)
     add(arg0: number, arg1: number): void;
+    getRelatedYearDifference(): number;
     getTemporalMonthCode(): string;
     getType(): string;
     handleComputeFields(arg0: number): void;

@@ -4,6 +4,7 @@ export class TimespanRate extends Record {
     static OFF: TimespanRate;
     static of(paramarg0: string): TimespanRate;
     static selectHigherResolution(paramarg0: TimespanRate, paramarg1: TimespanRate): TimespanRate;
+    constructor(rate: number, periodNanos: number, isRate: boolean)
     // private isRate: boolean;
     // private periodNanos: number;
     equals(arg0: Object | null): boolean;

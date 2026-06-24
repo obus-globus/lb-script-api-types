@@ -1,3 +1,4 @@
+import type { Subscriber$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { EventBus } from '../../../../com/google/common/eventbus/EventBus.d.ts'
 import type { SubscriberExceptionContext } from '../../../../com/google/common/eventbus/SubscriberExceptionContext.d.ts'
 import type { Method } from '../../../../java/lang/reflect/Method.d.ts'
@@ -5,6 +6,7 @@ import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Subscriber extends Object {
     private constructor(bus: EventBus, target: Object, method: Method)
+    constructor(arg0: EventBus, arg1: Object, arg2: Method, arg3: Subscriber$1)
     // private bus: EventBus;
     // private executor: Executor;
     // private method: Method;

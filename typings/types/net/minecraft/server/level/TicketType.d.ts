@@ -16,6 +16,7 @@ export class TicketType extends Record {
     static PORTAL: TicketType;
     static SPAWN_SEARCH: TicketType;
     static UNKNOWN: TicketType;
+    constructor(timeout: number, flags: number)
     // private flags: number;
     // private timeout: number;
     canExpireIfUnloaded(): boolean;

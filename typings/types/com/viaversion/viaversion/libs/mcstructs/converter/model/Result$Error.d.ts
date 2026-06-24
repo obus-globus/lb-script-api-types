@@ -1,3 +1,4 @@
+import type { Result$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { CodecException } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/CodecException.d.ts'
 import type { Result } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/Result.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
@@ -11,6 +12,7 @@ export class Result$Error<T extends unknown> extends Object implements Result<T>
     static unexpected(paramarg0: Object, paramarg1: Object | null): Result<Object>;
     static unexpected(paramarg0: Object, paramarg1: (Object | null)[]): Result<Object>;
     private constructor(arg0: CodecException)
+    constructor(arg0: CodecException, arg1: Result$1)
     readonly error: CodecException;
     canEqual(arg0: Object): boolean;
     equals(arg0: Object | null): boolean;

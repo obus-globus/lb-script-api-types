@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { BoundMethodHandle$Specializer } from '../../../java/lang/invoke/BoundMethodHandle$Specializer.d.ts'
 import type { ClassSpecializer$SpeciesData } from '../../../java/lang/invoke/ClassSpecializer$SpeciesData.d.ts'
 import type { LambdaForm$BasicType } from '../../../java/lang/invoke/LambdaForm$BasicType.d.ts'
 import type { MemberName } from '../../../java/lang/invoke/MemberName.d.ts'

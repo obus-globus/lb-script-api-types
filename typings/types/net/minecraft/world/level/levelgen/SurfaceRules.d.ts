@@ -1,5 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { HolderGetter } from '../../../../../net/minecraft/core/HolderGetter.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { Biome } from '../../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { SurfaceRules$ConditionSource } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$ConditionSource.d.ts'
 import type { SurfaceRules$RuleSource } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$RuleSource.d.ts'
@@ -17,9 +19,11 @@ export class SurfaceRules extends Object {
     static bandlands(): SurfaceRules$RuleSource;
     static hole(): SurfaceRules$ConditionSource;
     static ifTrue(paramcondition: SurfaceRules$ConditionSource, paramnext: SurfaceRules$RuleSource): SurfaceRules$RuleSource;
-    static isBiome(paramtarget: Object | null): SurfaceRules$ConditionSource;
-    static noiseCondition(paramnoise: ResourceKey<NormalNoise$NoiseParameters>, paramminRange: number): SurfaceRules$ConditionSource;
-    static noiseCondition(paramnoise: ResourceKey<NormalNoise$NoiseParameters>, paramminRange: number, parammaxRange: number): SurfaceRules$ConditionSource;
+    static isBiome(parambiomes: HolderGetter<Biome>, paramtarget: Object | null): SurfaceRules$ConditionSource;
+    static noiseCondition2d(paramnoise: ResourceKey<NormalNoise$NoiseParameters>, paramminRange: number): SurfaceRules$ConditionSource;
+    static noiseCondition2d(paramnoise: ResourceKey<NormalNoise$NoiseParameters>, paramminRange: number, parammaxRange: number): SurfaceRules$ConditionSource;
+    static noiseCondition3d(paramnoise: ResourceKey<NormalNoise$NoiseParameters>, paramminRange: number): SurfaceRules$ConditionSource;
+    static noiseCondition3d(paramnoise: ResourceKey<NormalNoise$NoiseParameters>, paramminRange: number, parammaxRange: number): SurfaceRules$ConditionSource;
     static not(paramtarget: SurfaceRules$ConditionSource): SurfaceRules$ConditionSource;
     static sequence(paramrules: (Object | null)[]): SurfaceRules$RuleSource;
     static state(paramstate: BlockState): SurfaceRules$RuleSource;

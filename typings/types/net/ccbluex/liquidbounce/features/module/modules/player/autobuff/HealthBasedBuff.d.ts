@@ -6,6 +6,6 @@ export abstract class HealthBasedBuff extends Buff {
     readonly health: number;
     // private healthPercent: number;
     // private /*not mapped: */ getHealthPercent(): number;
-    /*not mapped: */ getPassesHealthRequirements$liquidbounce(): boolean;
-    /*not mapped: */ getPassesRequirements$liquidbounce(): boolean;
+    /*not mapped: */ getPassesHealthRequirements$net_ccbluex_liquidbounce(): boolean;
+    /*not mapped: */ getPassesRequirements$net_ccbluex_liquidbounce(): boolean;
 }

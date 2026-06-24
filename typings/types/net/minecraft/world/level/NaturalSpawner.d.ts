@@ -27,7 +27,7 @@ export class NaturalSpawner extends Object {
     static SPAWN_DISTANCE_BLOCK: number;
     static SPAWN_DISTANCE_CHUNK: number;
     static createState(paramspawnableChunkCount: number, paramentities: Entity[], paramchunkGetter: (param0: number, param1: (param0: LevelChunk) => void) => void, paramlocalMobCapCalculator: LocalMobCapCalculator): NaturalSpawner$SpawnState;
-    static getFilteredSpawningCategories(paramstate: NaturalSpawner$SpawnState, paramspawnFriendlies: boolean, paramspawnEnemies: boolean, paramspawnPersistent: boolean): MobCategory[];
+    static getFilteredSpawningCategories(paramstate: NaturalSpawner$SpawnState, paramspawnEnemies: boolean, paramspawnPersistent: boolean): MobCategory[];
     static isInNetherFortressBounds(parampos: BlockPos, paramlevel: ServerLevel, paramcategory: MobCategory, paramstructureManager: StructureManager): boolean;
     static isValidEmptySpawnBlock(paramlevel: BlockGetter, parampos: BlockPos, paramblockState: BlockState, paramfluidState: FluidState, paramtype: EntityType<any>): boolean;
     static spawnCategoryForChunk(parammobCategory: MobCategory, paramlevel: ServerLevel, paramchunk: LevelChunk, paramextraTest: (param0: EntityType<any>, param1: BlockPos, param2: ChunkAccess) => boolean, paramspawnCallback: (param0: Mob, param1: ChunkAccess) => void): void;

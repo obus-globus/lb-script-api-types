@@ -13,6 +13,7 @@ export class TestEnvironmentDefinition$ClockTime extends Record implements TestE
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
     static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;
     static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
+    constructor(clock: Holder<WorldClock>, time: number)
     // private clock: Holder<WorldClock>;
     // private time: number;
     clock(): Holder<WorldClock>;

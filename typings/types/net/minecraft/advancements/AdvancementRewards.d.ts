@@ -10,6 +10,7 @@ import type { LootTable } from '../../../net/minecraft/world/level/storage/loot/
 export class AdvancementRewards extends Record {
     static CODEC: Codec<AdvancementRewards>;
     static EMPTY: AdvancementRewards;
+    constructor(experience: number, loot: ResourceKey<LootTable>[], recipes: ResourceKey<Recipe<any>>[], function_: Optional<CacheableFunction>)
     // private experience: number;
     // private function: Optional<CacheableFunction>;
     // private loot: ResourceKey<LootTable>[];

@@ -2,7 +2,7 @@ import type { ByteConsumer } from '../../../../../it/unimi/dsi/fastutil/bytes/By
 import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/ByteListIterator.d.ts'
 import type { Object2ByteLinkedOpenCustomHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ByteLinkedOpenCustomHashMap$MapIterator.d.ts'
 export class Object2ByteLinkedOpenCustomHashMap$ValueIterator extends Object2ByteLinkedOpenCustomHashMap$MapIterator<Object> implements ByteListIterator {
-    constructor(null_: Object2ByteLinkedOpenCustomHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

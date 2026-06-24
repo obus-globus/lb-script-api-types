@@ -1,3 +1,4 @@
+import type { RealmsPendingInvitesScreen } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsPendingInvitesScreen.d.ts'
 import type { RealmsPendingInvitesScreen$Entry } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsPendingInvitesScreen$Entry.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
@@ -11,7 +12,7 @@ export class RealmsPendingInvitesScreen$PendingInvitationSelectionList extends C
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: RealmsPendingInvitesScreen$PendingInvitationSelectionList, minecraft: Minecraft)
+    constructor(null_: RealmsPendingInvitesScreen, minecraft: Minecraft)
     getRowWidth(): number;
     hasPendingInvites(): boolean;
     removeInvitation(entry: RealmsPendingInvitesScreen$Entry): void;

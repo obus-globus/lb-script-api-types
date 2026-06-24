@@ -16,6 +16,7 @@ export class LootItemRandomChanceWithEnchantedBonusCondition extends Record impl
     static MAP_CODEC: MapCodec<LootItemRandomChanceWithEnchantedBonusCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;
     static randomChanceAndLootingBoost(paramregistries: HolderLookup$Provider, paramchance: number, paramperEnchantmentLevel: number): () => LootItemCondition;
+    constructor(unenchantedChance: number, enchantedChance: LevelBasedValue, enchantment: Holder<Enchantment>)
     // private enchantedChance: LevelBasedValue;
     // private enchantment: Holder<Enchantment>;
     // private unenchantedChance: number;

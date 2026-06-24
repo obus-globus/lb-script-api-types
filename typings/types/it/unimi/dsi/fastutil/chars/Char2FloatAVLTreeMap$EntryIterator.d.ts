@@ -2,8 +2,8 @@ import type { Char2FloatAVLTreeMap$TreeIterator } from '../../../../../it/unimi/
 import type { Char2FloatMap$Entry } from '../../../../../it/unimi/dsi/fastutil/chars/Char2FloatMap$Entry.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 export class Char2FloatAVLTreeMap$EntryIterator extends Char2FloatAVLTreeMap$TreeIterator implements ObjectListIterator<Char2FloatMap$Entry> {
-    constructor(null_: Char2FloatAVLTreeMap$EntryIterator)
-    constructor(null_: Char2FloatAVLTreeMap$EntryIterator, arg1: string)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: string)
     add(arg0: Char2FloatMap$Entry): void;
     next(): Char2FloatMap$Entry;
     previous(): Char2FloatMap$Entry;

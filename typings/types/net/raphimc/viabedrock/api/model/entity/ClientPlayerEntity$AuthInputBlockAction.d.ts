@@ -3,6 +3,8 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { PlayerActionType } from '../../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/PlayerActionType.d.ts'
 export class ClientPlayerEntity$AuthInputBlockAction extends Record {
+    constructor(arg0: PlayerActionType)
+    constructor(action: PlayerActionType, position: BlockPosition, direction: number)
     // private action: PlayerActionType;
     // private direction: number;
     // private position: BlockPosition;

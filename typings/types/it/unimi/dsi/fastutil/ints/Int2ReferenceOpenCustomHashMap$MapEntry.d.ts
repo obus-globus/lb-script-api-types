@@ -10,8 +10,8 @@ export class Int2ReferenceOpenCustomHashMap$MapEntry extends Object implements I
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static of(paramarg0: number, paramarg1: Object | null): IntReferencePair<Object>;
-    constructor(null_: Int2ReferenceOpenCustomHashMap$MapEntry)
-    constructor(null_: Int2ReferenceOpenCustomHashMap$MapEntry, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;
     readonly value: V;
     equals(arg0: Object | null): boolean;

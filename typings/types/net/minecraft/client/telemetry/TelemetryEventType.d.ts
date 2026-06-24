@@ -12,11 +12,13 @@ export class TelemetryEventType extends Object {
     static ADVANCEMENT_MADE: TelemetryEventType;
     static CODEC: Codec<TelemetryEventType>;
     static GAME_LOAD_TIMES: TelemetryEventType;
+    static GRAPHICS_CAPABILITIES: TelemetryEventType;
     static PERFORMANCE_METRICS: TelemetryEventType;
     static WORLD_LOADED: TelemetryEventType;
     static WORLD_LOAD_TIMES: TelemetryEventType;
     static WORLD_UNLOADED: TelemetryEventType;
     static builder(paramid: string, paramexportKey: string): TelemetryEventType$Builder;
+    static selfTest(): boolean;
     static values(): TelemetryEventType[];
     private constructor(id: string, exportKey: string, properties: TelemetryProperty<Object>[], isOptIn: boolean)
     // private codec: MapCodec<TelemetryEventInstance>;

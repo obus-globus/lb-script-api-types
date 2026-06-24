@@ -1,8 +1,8 @@
 import type { Object2ShortAVLTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ShortAVLTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ShortAVLTreeMap$TreeIterator extends Object {
-    constructor(null_: Object2ShortAVLTreeMap$TreeIterator)
-    constructor(null_: Object2ShortAVLTreeMap$TreeIterator)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: K)
     // private curr: Object2ShortAVLTreeMap$Entry<K>;
     // private index: number;
     // private next: Object2ShortAVLTreeMap$Entry<K>;

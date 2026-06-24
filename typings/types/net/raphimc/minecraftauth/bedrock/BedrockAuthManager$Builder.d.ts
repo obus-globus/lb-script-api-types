@@ -1,3 +1,4 @@
+import type { BedrockAuthManager$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { KeyPair } from '../../../../java/security/KeyPair.d.ts'
 import type { UUID } from '../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -10,6 +11,7 @@ import type { MsaAuthServiceSupplier } from '../../../../net/raphimc/minecraftau
 import type { ParamMsaAuthServiceSupplier } from '../../../../net/raphimc/minecraftauth/msa/service/util/ParamMsaAuthServiceSupplier.d.ts'
 export class BedrockAuthManager$Builder extends Object {
     private constructor(arg0: HttpClient, arg1: string)
+    constructor(arg0: HttpClient, arg1: string, arg2: BedrockAuthManager$1)
     // private deviceId: UUID;
     // private deviceKeyPair: KeyPair;
     // private deviceType: string;

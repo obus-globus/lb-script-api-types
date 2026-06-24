@@ -18,4 +18,5 @@ export class AnnotationConstructorCaller extends Object implements Caller<void> 
     readonly returnType: Type;
     call(args: (Object | null)[]): Object | null;
     checkArguments(args: (Object | null)[]): void;
+    checkArguments(argsCount: number): void;
 }

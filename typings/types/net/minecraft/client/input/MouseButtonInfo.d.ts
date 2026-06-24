@@ -3,6 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { InputWithModifiers } from '../../../../net/minecraft/client/input/InputWithModifiers.d.ts'
 export class MouseButtonInfo extends Record implements InputWithModifiers {
     static NOT_DIGIT: number;
+    constructor(button: number, modifiers: number)
     // private button: number;
     // private modifiers: number;
     button(): number;

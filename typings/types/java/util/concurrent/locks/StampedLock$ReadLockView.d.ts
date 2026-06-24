@@ -1,9 +1,10 @@
 import type { TimeUnit } from '../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Condition } from '../../../../java/util/concurrent/locks/Condition.d.ts'
 import type { Lock } from '../../../../java/util/concurrent/locks/Lock.d.ts'
+import type { StampedLock } from '../../../../java/util/concurrent/locks/StampedLock.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class StampedLock$ReadLockView extends Object implements Lock {
-    constructor(null_: StampedLock$ReadLockView)
+    constructor(null_: StampedLock)
     lock(): void;
     lockInterruptibly(): void;
     newCondition(): Condition;

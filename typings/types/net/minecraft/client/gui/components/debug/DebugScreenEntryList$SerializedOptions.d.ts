@@ -7,7 +7,7 @@ import type { DebugScreenProfile } from '../../../../../../net/minecraft/client/
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class DebugScreenEntryList$SerializedOptions extends Record {
     static CODEC: Codec<DebugScreenEntryList$SerializedOptions>;
-    constructor(profile: Optional<DebugScreenProfile>, custom: Optional<Map<Identifier, DebugScreenEntryStatus>>)
+    private constructor(profile: Optional<DebugScreenProfile>, custom: Optional<Map<Identifier, DebugScreenEntryStatus>>)
     // private custom: Optional<Map<Identifier, DebugScreenEntryStatus>>;
     // private profile: Optional<DebugScreenProfile>;
     custom(): Optional<Map<Identifier, DebugScreenEntryStatus>>;

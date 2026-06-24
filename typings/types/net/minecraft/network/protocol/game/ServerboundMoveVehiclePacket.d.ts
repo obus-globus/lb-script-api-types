@@ -14,6 +14,7 @@ export class ServerboundMoveVehiclePacket extends Record implements Packet<Serve
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundMoveVehiclePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     static fromEntity(paramentity: Entity): ServerboundMoveVehiclePacket;
+    constructor(position: Vec3, yRot: number, xRot: number, onGround: boolean)
     // private onGround: boolean;
     // private position: Vec3;
     // private xRot: number;

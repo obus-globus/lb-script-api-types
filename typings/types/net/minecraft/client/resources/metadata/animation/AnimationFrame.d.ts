@@ -5,6 +5,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class AnimationFrame extends Record {
     static CODEC: Codec<AnimationFrame>;
     static FULL_CODEC: Codec<AnimationFrame>;
+    constructor(index: number)
+    constructor(index: number, time: Optional<number>)
     // private index: number;
     // private time: Optional<number>;
     equals(o: Object | null): boolean;

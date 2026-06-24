@@ -1,6 +1,7 @@
 import type { Pair } from '../../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { BrainExtended } from '../../../../../net/caffeinemc/mods/lithium/common/ai/brain/memories/BrainExtended.d.ts'
 import type { MemoryModificationCounter } from '../../../../../net/caffeinemc/mods/lithium/common/ai/brain/memories/MemoryModificationCounter.d.ts'
 import type { BrainAccessor } from '../../../../../net/caffeinemc/mods/lithium/mixin/ai/useless_sensors/BrainAccessor.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'
@@ -22,12 +23,12 @@ import type { Sensor } from '../../../../../net/minecraft/world/entity/ai/sensin
 import type { SensorType } from '../../../../../net/minecraft/world/entity/ai/sensing/SensorType.d.ts'
 import type { Activity } from '../../../../../net/minecraft/world/entity/schedule/Activity.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
-export class Brain<E extends LivingEntity> extends Object implements MemoryModificationCounter, BrainAccessor<LivingEntity> {
+export class Brain<E extends LivingEntity> extends Object implements BrainExtended, MemoryModificationCounter, BrainAccessor<LivingEntity> {
     static provider(parammemoryTypes: MemoryModuleType<Object>[], paramsensorTypes: SensorType<Sensor<any>>[], paramactivities: (param0: LivingEntity | null) => ActivityData<LivingEntity>[]): Brain$Provider<LivingEntity>;
     static provider(paramsensorTypes: SensorType<Sensor<any>>[]): Brain$Provider<LivingEntity>;
     static provider(paramsensorTypes: SensorType<Sensor<any>>[], paramactivities: (param0: LivingEntity | null) => ActivityData<LivingEntity>[]): Brain$Provider<LivingEntity>;
-    constructor(memoryTypes: MemoryModuleType<Object>[], sensorTypes: SensorType<Sensor<E>>[], activities: ActivityData<E>[], memories: MemoryMap$Value<Object>[], randomSource: RandomSource)
     constructor()
+    constructor(memoryTypes: MemoryModuleType<Object>[], sensorTypes: SensorType<Sensor<E>>[], activities: ActivityData<E>[], memories: MemoryMap$Value<Object>[], randomSource: RandomSource)
     readonly activeActivities: Activity[];
     // private activityMemoriesToEraseWhenStopped: Map<Activity, MemoryModuleType<Object>[]>;
     // private activityRequirements: Map<Activity, Pair<MemoryModuleType<Object>, MemoryStatus>[]>;
@@ -67,6 +68,7 @@ export class Brain<E extends LivingEntity> extends Object implements MemoryModif
     isMemoryValue<U extends unknown>(memoryType: MemoryModuleType<U>, value: U): boolean;
     lithium$getMemoryValueModCount(): number;
     lithium$onMemoryModified(): void;
+    lithium$pretendAllMemoryTypesRegistered(): void;
     // private onPossibleActivitiesChanged(): void;
     // private onTasksChanged(): void;
     pack(): Brain$Packed;

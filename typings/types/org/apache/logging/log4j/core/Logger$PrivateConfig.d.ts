@@ -9,9 +9,9 @@ import type { Configuration } from '../../../../../org/apache/logging/log4j/core
 import type { LoggerConfig } from '../../../../../org/apache/logging/log4j/core/config/LoggerConfig.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 export class Logger$PrivateConfig extends Object {
-    constructor(null_: Logger$PrivateConfig, pc: Logger$PrivateConfig, level: Level)
-    constructor(null_: Logger$PrivateConfig, pc: Logger$PrivateConfig, lc: LoggerConfig)
-    constructor(null_: Logger$PrivateConfig, config: Configuration, logger: Logger)
+    constructor(null_: Logger, pc: Logger$PrivateConfig, level: Level)
+    constructor(null_: Logger, pc: Logger$PrivateConfig, lc: LoggerConfig)
+    constructor(null_: Logger, config: Configuration, logger: Logger)
     config: Configuration;
     // private intLevel: number;
     // private logger: Logger;

@@ -15,6 +15,7 @@ export class LevelBasedValue$LevelsSquared extends Record implements LevelBasedV
     static lookup(paramvalues: number[], paramfallback: LevelBasedValue): LevelBasedValue$Lookup;
     static perLevel(paramperLevel: number): LevelBasedValue$Linear;
     static perLevel(parambase: number, paramperLevelAboveFirst: number): LevelBasedValue$Linear;
+    constructor(added: number)
     // private added: number;
     added(): number;
     calculate(level: number): number;

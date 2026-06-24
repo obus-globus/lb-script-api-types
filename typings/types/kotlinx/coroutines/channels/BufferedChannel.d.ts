@@ -76,7 +76,7 @@ export class BufferedChannel<E extends unknown> extends Object implements Channe
     // private removeUnprocessedElements(lastSegment: ChannelSegment<E>): void;
     send(element: E): void;
     sendBroadcast(element: E): boolean;
-    // private sendImpl<R extends unknown>(element: E, waiter: Object | null, onRendezvousOrBuffered: () => R, onSuspend: (param0: ChannelSegment<E>, param1: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: E, param3: number) => R): R;
+    protected sendImpl<R extends unknown>(element: E, waiter: Object | null, onRendezvousOrBuffered: () => R, onSuspend: (param0: ChannelSegment<E>, param1: number) => R, onClosed: () => R, onNoWaiterSuspend: (param0: ChannelSegment<E>, param1: number, param2: E, param3: number) => R): R;
     // private sendImplOnNoWaiter(segment: ChannelSegment<E>, index: number, element: E, s: number, waiter: Waiter, onRendezvousOrBuffered: () => void, onClosed: () => void): void;
     // private sendOnNoWaiterSuspend(segment: ChannelSegment<E>, index: number, element: E, s: number): void;
     shouldSendSuspend(): boolean;
@@ -85,7 +85,6 @@ export class BufferedChannel<E extends unknown> extends Object implements Channe
     toStringDebug(): string;
     tryReceive(): ChannelResult<E>;
     trySend(element: E): ChannelResult<void>;
-    protected trySendDropOldest(element: E): ChannelResult<void>;
     // private updateCellExpandBuffer(segment: ChannelSegment<E>, index: number, b: number): boolean;
     // private updateCellExpandBufferSlow(segment: ChannelSegment<E>, index: number, b: number): boolean;
     // private updateCellReceive(segment: ChannelSegment<E>, index: number, r: number, waiter: Object | null): Object | null;

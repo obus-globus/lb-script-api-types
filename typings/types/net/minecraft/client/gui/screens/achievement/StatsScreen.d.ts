@@ -1,7 +1,7 @@
 import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
+import type { MenuTabBar } from '../../../../../../net/minecraft/client/gui/components/tabs/MenuTabBar.d.ts'
 import type { TabManager } from '../../../../../../net/minecraft/client/gui/components/tabs/TabManager.d.ts'
-import type { TabNavigationBar } from '../../../../../../net/minecraft/client/gui/components/tabs/TabNavigationBar.d.ts'
 import type { HeaderAndFooterLayout } from '../../../../../../net/minecraft/client/gui/layouts/HeaderAndFooterLayout.d.ts'
 import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui/narration/NarratableEntry.d.ts'
 import type { Screen } from '../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
@@ -26,7 +26,7 @@ export class StatsScreen extends Screen {
     // private layout: HeaderAndFooterLayout;
     // private stats: StatsCounter;
     // private tabManager: TabManager;
-    // private tabNavigationBar: TabNavigationBar;
+    // private tabNavigationBar: MenuTabBar;
     extractMenuBackground(graphics: GuiGraphicsExtractor): void;
     extractMenuBackground(graphics: GuiGraphicsExtractor, x: number, y: number, width: number, height: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, xm: number, ym: number, a: number): void;

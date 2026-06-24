@@ -4,7 +4,7 @@ import type { Reference2IntOpenHashMap$MapIterator } from '../../../../../it/uni
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer as IntConsumer_2 } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Reference2IntOpenHashMap$ValueIterator extends Reference2IntOpenHashMap$MapIterator<Object> implements IntIterator {
-    constructor(null_: Reference2IntOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

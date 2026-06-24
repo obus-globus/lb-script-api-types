@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricRenderState } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricRenderState.d.ts'
 import type { RenderStateDataKey } from '../../../../../../net/fabricmc/fabric/api/client/rendering/v1/RenderStateDataKey.d.ts'
-import type { SubmitNodeStorage } from '../../../../../../net/minecraft/client/renderer/SubmitNodeStorage.d.ts'
+import type { SubmitNodeCollector } from '../../../../../../net/minecraft/client/renderer/SubmitNodeCollector.d.ts'
 import type { CameraRenderState } from '../../../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
 import type { ParticleGroupRenderState } from '../../../../../../net/minecraft/client/renderer/state/level/ParticleGroupRenderState.d.ts'
 export class ParticlesRenderState extends Object implements FabricRenderState {
@@ -17,5 +17,5 @@ export class ParticlesRenderState extends Object implements FabricRenderState {
     reset(): void;
     setData<T extends unknown>(arg0: RenderStateDataKey<T>, arg1: T): void;
     setData(arg0: RenderStateDataKey<Object>, arg1: Object): void;
-    submit(submitNodeStorage: SubmitNodeStorage, camera: CameraRenderState): void;
+    submit(submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
 }

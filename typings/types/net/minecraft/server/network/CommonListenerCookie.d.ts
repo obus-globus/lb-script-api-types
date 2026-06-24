@@ -4,6 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ClientInformation } from '../../../../net/minecraft/server/level/ClientInformation.d.ts'
 export class CommonListenerCookie extends Record {
     static createInitial(paramgameProfile: GameProfile, paramtransferred: boolean): CommonListenerCookie;
+    constructor(gameProfile: GameProfile, latency: number, clientInformation: ClientInformation, transferred: boolean)
     // private clientInformation: ClientInformation;
     // private gameProfile: GameProfile;
     // private latency: number;

@@ -11,6 +11,8 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 export class ServerboundContainerSlotStateChangedPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundContainerSlotStateChangedPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(slotId: number, containerId: number, newState: boolean)
+    private constructor(input: FriendlyByteBuf)
     // private containerId: number;
     // private newState: boolean;
     // private slotId: number;

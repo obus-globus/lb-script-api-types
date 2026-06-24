@@ -2,7 +2,7 @@ import type { MinMaxPriorityQueue$MoveDesc } from '../../../../com/google/common
 import type { Ordering } from '../../../../com/google/common/collect/Ordering.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MinMaxPriorityQueue$Heap extends Object {
-    constructor(null_: MinMaxPriorityQueue$Heap)
+    constructor(null_: E[], ordering: Ordering<E>)
     // private ordering: Ordering<E>;
     // private otherHeap: MinMaxPriorityQueue$Heap;
     bubbleUp<E extends unknown>(index: number, x: E): void;

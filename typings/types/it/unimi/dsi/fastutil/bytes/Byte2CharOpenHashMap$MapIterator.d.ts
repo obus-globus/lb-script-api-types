@@ -1,6 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Byte2CharOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    private constructor(null_: Byte2CharOpenHashMap$MapIterator<ConsumerType>)
+    private constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private c: number;
     // private last: number;
     // private mustReturnNullKey: boolean;

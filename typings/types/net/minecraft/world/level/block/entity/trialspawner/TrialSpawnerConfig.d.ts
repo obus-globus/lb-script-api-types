@@ -13,6 +13,7 @@ export class TrialSpawnerConfig extends Record {
     static DEFAULT: TrialSpawnerConfig;
     static DIRECT_CODEC: Codec<TrialSpawnerConfig>;
     static builder(): TrialSpawnerConfig$Builder;
+    constructor(spawnRange: number, totalMobs: number, simultaneousMobs: number, totalMobsAddedPerPlayer: number, simultaneousMobsAddedPerPlayer: number, ticksBetweenSpawn: number, spawnPotentialsDefinition: WeightedList<SpawnData>, lootTablesToEject: WeightedList<ResourceKey<LootTable>>, itemsToDropWhenOminous: ResourceKey<LootTable>)
     // private itemsToDropWhenOminous: ResourceKey<LootTable>;
     // private lootTablesToEject: WeightedList<ResourceKey<LootTable>>;
     // private simultaneousMobs: number;

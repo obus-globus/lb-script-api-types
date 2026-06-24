@@ -1,6 +1,7 @@
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class PeriodicNotificationManager$Notification extends Record {
+    constructor(delay: number, period: number, title: string, message: string)
     // private delay: number;
     // private message: string;
     // private period: number;

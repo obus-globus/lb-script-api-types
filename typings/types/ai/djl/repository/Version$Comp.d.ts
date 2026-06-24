@@ -1,3 +1,4 @@
+import type { Version$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Serializable } from '../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../java/util/Comparator.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
@@ -17,6 +18,7 @@ export class Version$Comp extends Object implements Serializable, Comparator<Obj
     static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static reverseOrder(): (param0: Object) => boolean;
     private constructor()
+    constructor(arg0: Version$1)
     compare(arg0: Object, arg1: Object): number;
     reversed(): (param0: Object) => boolean;
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;

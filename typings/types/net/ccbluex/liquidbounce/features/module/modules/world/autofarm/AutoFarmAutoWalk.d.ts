@@ -1,4 +1,4 @@
-import type { AutoFarmAutoWalk$toItems$1 } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1.d.ts'
+import type { AutoFarmAutoWalk$toItems$1 } from '../../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AutoFarmTrackedState } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/autofarm/AutoFarmTrackedState.d.ts'
 import type { NavigationBaseValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.d.ts'
 import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3.d.ts'

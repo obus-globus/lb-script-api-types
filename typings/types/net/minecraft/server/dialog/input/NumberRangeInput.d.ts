@@ -7,6 +7,7 @@ import type { NumberRangeInput$RangeInfo } from '../../../../../net/minecraft/se
 export class NumberRangeInput extends Record implements InputControl {
     static MAP_CODEC: MapCodec<InputControl>;
     static MAP_CODEC: MapCodec<NumberRangeInput>;
+    constructor(width: number, label: Component, labelFormat: string, rangeInfo: NumberRangeInput$RangeInfo)
     // private label: Component;
     // private labelFormat: string;
     // private rangeInfo: NumberRangeInput$RangeInfo;

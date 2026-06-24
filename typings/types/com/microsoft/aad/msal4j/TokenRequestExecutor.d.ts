@@ -9,7 +9,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class TokenRequestExecutor extends Object {
     constructor(arg0: Authority, arg1: MsalRequest, arg2: ServiceBundle)
-    // private log: Logger;
     // private msalRequest: MsalRequest;
     // private requestAuthority: Authority;
     // private serviceBundle: ServiceBundle;

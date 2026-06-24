@@ -9,6 +9,6 @@ export class GenerationMode extends Mode {
     readonly pages: number;
     readonly parent: ModeValueGroup<any>;
     // private random: Random;
-    /*not mapped: */ getRandom$liquidbounce(): Random;
+    /*not mapped: */ getRandom$net_ccbluex_liquidbounce(): Random;
     generate(): IntStream;
 }

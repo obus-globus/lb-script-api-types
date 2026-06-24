@@ -1,8 +1,9 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { AsyncEmitter } from '../../../../../org/apache/tika/pipes/async/AsyncEmitter.d.ts'
 import type { EmitData } from '../../../../../org/apache/tika/pipes/emitter/EmitData.d.ts'
 import type { Emitter } from '../../../../../org/apache/tika/pipes/emitter/Emitter.d.ts'
 export class AsyncEmitter$EmitDataCache extends Object {
-    constructor(null_: AsyncEmitter$EmitDataCache, arg1: number)
+    constructor(null_: AsyncEmitter, arg1: number)
     // private estimatedSize: number;
     // private map: { [key: string]: EmitData[] };
     // private maxBytes: number;

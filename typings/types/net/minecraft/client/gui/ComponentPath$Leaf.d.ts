@@ -13,5 +13,6 @@ export class ComponentPath$Leaf extends Record implements ComponentPath {
     component(): GuiEventListener;
     equals(o: Object | null): boolean;
     hashCode(): number;
+    leafComponent(): GuiEventListener;
     toString(): string;
 }

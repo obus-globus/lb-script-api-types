@@ -1,6 +1,7 @@
+import type { Floor1 } from '../../../com/jcraft/jorbis/Floor1.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Floor1$InfoFloor1 extends Object {
-    constructor(null_: Floor1$InfoFloor1)
+    constructor(null_: Floor1)
     // private class_book: number[];
     // private class_dim: number[];
     // private class_subbook: number[][];

@@ -8,6 +8,7 @@ import type { ObjectiveCriteria } from '../../../../net/minecraft/world/scores/c
 import type { ObjectiveCriteria$RenderType } from '../../../../net/minecraft/world/scores/criteria/ObjectiveCriteria$RenderType.d.ts'
 export class Objective$Packed extends Record {
     static CODEC: Codec<Objective$Packed>;
+    constructor(name: string, criteria: ObjectiveCriteria, displayName: Component, renderType: ObjectiveCriteria$RenderType, displayAutoUpdate: boolean, numberFormat: Optional<NumberFormat>)
     // private criteria: ObjectiveCriteria;
     // private displayAutoUpdate: boolean;
     // private displayName: Component;

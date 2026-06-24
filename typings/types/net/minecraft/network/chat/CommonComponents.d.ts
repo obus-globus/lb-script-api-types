@@ -17,6 +17,7 @@ export class CommonComponents extends Object {
     static GUI_OK: Component;
     static GUI_OPEN_IN_BROWSER: Component;
     static GUI_PROCEED: Component;
+    static GUI_REMOVE: Component;
     static GUI_RETURN_TO_MENU: Component;
     static GUI_TO_TITLE: Component;
     static GUI_YES: Component;

@@ -6,7 +6,7 @@ import type { Engine } from '../../../org/graalvm/polyglot/Engine.d.ts'
 import type { SandboxPolicy } from '../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 import type { MessageTransport } from '../../../org/graalvm/polyglot/io/MessageTransport.d.ts'
 export class Engine$Builder extends Object {
-    constructor(null_: Engine$Builder, permittedLanguages: string[])
+    constructor(null_: Engine, permittedLanguages: string[])
     // private allowExperimentalOptions: boolean;
     // private boundEngine: boolean;
     // private customLogHandler: Object;

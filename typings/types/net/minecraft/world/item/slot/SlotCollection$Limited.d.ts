@@ -12,6 +12,7 @@ export class SlotCollection$Limited extends Record implements SlotCollection {
     static concat(paramfirst: SlotCollection, paramsecond: SlotCollection): SlotCollection;
     static of(paramslots: SlotAccess[]): SlotCollection;
     static of(paramslotAccess: SlotAccess): SlotCollection;
+    constructor(slots: SlotCollection, limit: number)
     // private limit: number;
     // private slots: SlotCollection;
     equals(o: Object | null): boolean;

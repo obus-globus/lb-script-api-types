@@ -17,4 +17,5 @@ export class ReflectJavaMethod extends ReflectJavaMember implements JavaMethod {
     getTypeParameters(): ReflectJavaTypeParameter[];
     getValueParameters(): JavaValueParameter[];
     getValueParameters(arg0: Type[], arg1: Annotation[][], arg2: boolean): JavaValueParameter[];
+    isNative(): boolean;
 }

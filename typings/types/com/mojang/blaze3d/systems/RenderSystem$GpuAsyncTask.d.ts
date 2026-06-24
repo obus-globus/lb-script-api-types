@@ -3,7 +3,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RenderSystem$GpuAsyncTask extends Record {
-    constructor(callback: () => void, fence: GpuFence)
+    private constructor(callback: () => void, fence: GpuFence)
     // private callback: () => void;
     // private fence: GpuFence;
     callback(): () => void;

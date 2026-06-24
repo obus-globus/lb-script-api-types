@@ -9,13 +9,11 @@ import type { SpriteGetter } from '../../../../../net/minecraft/client/resources
 import type { SpriteId } from '../../../../../net/minecraft/client/resources/model/sprite/SpriteId.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { WeatheringCopperCollection$ByState } from '../../../../../net/minecraft/world/level/block/WeatheringCopperCollection$ByState.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class ChestSpecialRenderer extends Object implements NoDataSpecialModelRenderer {
     static CHRISTMAS: MultiblockChestResources<Identifier>;
-    static COPPER_EXPOSED: MultiblockChestResources<Identifier>;
-    static COPPER_OXIDIZED: MultiblockChestResources<Identifier>;
-    static COPPER_UNAFFECTED: MultiblockChestResources<Identifier>;
-    static COPPER_WEATHERED: MultiblockChestResources<Identifier>;
+    static COPPER: WeatheringCopperCollection$ByState<MultiblockChestResources<Identifier>>;
     static ENDER_CHEST: Identifier;
     static REGULAR: MultiblockChestResources<Identifier>;
     static TRAPPED: MultiblockChestResources<Identifier>;

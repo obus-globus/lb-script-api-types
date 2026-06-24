@@ -15,6 +15,7 @@ export class HttpObjectAggregator extends MessageAggregator<HttpObject, HttpMess
     aggregate(arg0: FullHttpMessage, arg1: HttpContent): void;
     beginAggregation(arg0: HttpMessage, arg1: ByteBuf): FullHttpMessage;
     closeAfterContinueResponse(arg0: Object): boolean;
+    // private continueResponse(arg0: HttpMessage, arg1: number, arg2: Map$Entry<string, ChannelHandler>[]): Object;
     finishAggregation(arg0: FullHttpMessage): void;
     handleOversizedMessage(arg0: ChannelHandlerContext, arg1: HttpMessage): void;
     ignoreContentAfterContinueResponse(arg0: Object): boolean;

@@ -7,7 +7,7 @@ import type { LogManager$LoggerWeakRef } from '../../../java/util/logging/LogMan
 import type { Logger } from '../../../java/util/logging/Logger.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class LogManager$LoggerContext extends Object {
-    private constructor(null_: LogManager$LoggerContext)
+    private constructor(null_: LogManager)
     // private namedLoggers: { [key: string]: LogManager$LoggerWeakRef };
     // private root: LogManager$LogNode;
     addLocalLogger(arg0: Logger): boolean;

@@ -13,8 +13,8 @@ export class DoubleBigArrayBigList$Spliterator extends Object implements DoubleS
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: DoubleBigArrayBigList$Spliterator)
-    private constructor(null_: DoubleBigArrayBigList$Spliterator, arg1: number, arg2: number, arg3: boolean)
+    constructor(null_: (Object | null)[])
+    private constructor(null_: (Object | null)[], arg1: number, arg2: number, arg3: boolean)
     // private hasSplit: boolean;
     // private max: number;
     // private pos: number;

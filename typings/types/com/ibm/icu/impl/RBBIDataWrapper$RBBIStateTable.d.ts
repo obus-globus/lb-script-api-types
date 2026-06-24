@@ -10,5 +10,6 @@ export class RBBIDataWrapper$RBBIStateTable extends Object {
     fRowLen: number;
     fTable: string[];
     equals(arg0: Object | null): boolean;
+    hashCode(): number;
     put(arg0: DataOutputStream): number;
 }

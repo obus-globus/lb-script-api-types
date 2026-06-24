@@ -30,6 +30,7 @@ export class FloatTag extends Record implements NumericTag {
     static TYPE: TagType<FloatTag>;
     static ZERO: FloatTag;
     static valueOf(paramdata: number): FloatTag;
+    constructor(value: number)
     // private value: number;
     accept(visitor: StreamTagVisitor): StreamTagVisitor$ValueResult;
     accept(visitor: TagVisitor): void;

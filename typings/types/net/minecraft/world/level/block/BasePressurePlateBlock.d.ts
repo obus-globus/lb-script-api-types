@@ -86,11 +86,11 @@ export abstract class BasePressurePlateBlock extends Block {
     getDirectSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getPressedTime(): number;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getSignalForState(state: BlockState): number;
     getSignalStrength(level: Level, pos: BlockPos): number;
     isPossibleToRespawnInThis(state: BlockState): boolean;
     isSignalSource(state: BlockState): boolean;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     setSignalForState(state: BlockState, signal: number): BlockState;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;
     updateNeighbours(level: Level, pos: BlockPos): void;

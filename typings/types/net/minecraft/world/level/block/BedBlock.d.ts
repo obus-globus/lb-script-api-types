@@ -27,24 +27,20 @@ import type { LevelReader } from '../../../../../net/minecraft/world/level/Level
 import type { ScheduledTickAccess } from '../../../../../net/minecraft/world/level/ScheduledTickAccess.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { DoubleBlockCombiner$BlockType } from '../../../../../net/minecraft/world/level/block/DoubleBlockCombiner$BlockType.d.ts'
-import type { EntityBlock } from '../../../../../net/minecraft/world/level/block/EntityBlock.d.ts'
 import type { HorizontalDirectionalBlock } from '../../../../../net/minecraft/world/level/block/HorizontalDirectionalBlock.d.ts'
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
-import type { BlockEntityTicker } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityTicker.d.ts'
-import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockBehaviour$Properties } from '../../../../../net/minecraft/world/level/block/state/BlockBehaviour$Properties.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { StateDefinition$Builder } from '../../../../../net/minecraft/world/level/block/state/StateDefinition$Builder.d.ts'
 import type { BedPart } from '../../../../../net/minecraft/world/level/block/state/properties/BedPart.d.ts'
 import type { BooleanProperty } from '../../../../../net/minecraft/world/level/block/state/properties/BooleanProperty.d.ts'
 import type { EnumProperty } from '../../../../../net/minecraft/world/level/block/state/properties/EnumProperty.d.ts'
-import type { GameEventListener } from '../../../../../net/minecraft/world/level/gameevent/GameEventListener.d.ts'
 import type { PathComputationType } from '../../../../../net/minecraft/world/level/pathfinder/PathComputationType.d.ts'
 import type { BlockHitResult } from '../../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { CollisionContext } from '../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
-export class BedBlock extends HorizontalDirectionalBlock implements EntityBlock {
+export class BedBlock extends HorizontalDirectionalBlock {
     static BLOCK_STATE_REGISTRY: BlockState[];
     static CODEC: MapCodec<BedBlock>;
     static CODEC: MapCodec<Block>;
@@ -106,23 +102,19 @@ export class BedBlock extends HorizontalDirectionalBlock implements EntityBlock 
     constructor(color: DyeColor, properties: BlockBehaviour$Properties)
     readonly color: DyeColor;
     // private viaFabricPlus$requireOriginalShape: boolean;
-    // private bounceUp(entity: Entity): void;
     codec(): MapCodec<BedBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     fallOn(level: Level, state: BlockState, pos: BlockPos, entity: Entity, fallDistance: number): void;
+    getBounceRestitution(): number;
     getColor(): DyeColor;
-    getListener<T extends BlockEntity>(level: ServerLevel, blockEntity: T): GameEventListener;
     getOcclusionShape(arg0: BlockState): VoxelShape;
     getSeed(state: BlockState, pos: BlockPos): number;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
-    getTicker<T extends BlockEntity>(level: Level, blockState: BlockState, type: BlockEntityType<T>): (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;
     isPathfindable(state: BlockState, type: PathComputationType): boolean;
     // private kickVillagerOutOfBed(level: Level, pos: BlockPos): boolean;
-    newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;
     playerWillDestroy(level: Level, pos: BlockPos, state: BlockState, player: Player): BlockState;
     setPlacedBy(level: Level, pos: BlockPos, state: BlockState, by: LivingEntity, itemStack: ItemStack): void;
-    updateEntityMovementAfterFallOn(level: BlockGetter, entity: Entity): void;
     updateShape(state: BlockState, level: LevelReader, ticks: ScheduledTickAccess, pos: BlockPos, directionToNeighbour: Direction, neighbourPos: BlockPos, neighbourState: BlockState, random: RandomSource): BlockState;
     useWithoutItem(state: BlockState, level: Level, pos: BlockPos, player: Player, hitResult: BlockHitResult): InteractionResult;
 }

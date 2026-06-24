@@ -1,6 +1,7 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 export class ErrorTypeKind extends Enum<ErrorTypeKind> {
     static AD_HOC_ERROR_TYPE_FOR_LIGHTER_CLASSES_RESOLVE: ErrorTypeKind;
     static CANNOT_COMPUTE_ERASED_BOUND: ErrorTypeKind;
@@ -89,6 +90,7 @@ export class ErrorTypeKind extends Enum<ErrorTypeKind> {
     static valueOf(paramarg0: string): ErrorTypeKind;
     static values(): (Object | null)[];
     private constructor(arg2: string, arg3: boolean)
+    constructor(arg2: string, arg3: boolean, arg4: number, arg5: DefaultConstructorMarker)
     readonly debugMessage: string;
     // private isUnresolved: boolean;
     getDebugMessage(): string;

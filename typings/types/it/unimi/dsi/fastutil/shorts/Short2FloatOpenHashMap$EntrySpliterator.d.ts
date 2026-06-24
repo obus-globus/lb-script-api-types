@@ -11,8 +11,8 @@ export class Short2FloatOpenHashMap$EntrySpliterator extends Short2FloatOpenHash
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Short2FloatOpenHashMap$EntrySpliterator)
-    constructor(null_: Short2FloatOpenHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: Short2FloatMap$Entry) => void, arg1: number): void;
     characteristics(): number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Short2FloatOpenHashMap$EntrySpliterator;

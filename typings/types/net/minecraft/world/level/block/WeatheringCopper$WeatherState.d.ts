@@ -2,6 +2,7 @@ import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Keyable } from '../../../../../com/mojang/serialization/Keyable.d.ts'
 import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
@@ -21,6 +22,7 @@ export class WeatheringCopper$WeatherState extends Enum<WeatheringCopper$Weather
     static WEATHERED: WeatheringCopper$WeatherState;
     static createNameLookup(paramvalueArray: Object | null): (param0: string) => StringRepresentable | null;
     static createNameLookup(paramvalueArray: Object | null, paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static forEach(paramconsumer: (param0: WeatheringCopper$WeatherState) => void): void;
     static fromEnum(paramvalues: () => Object | null): StringRepresentable$EnumCodec<any>;
     static fromEnumWithMapping(paramvalues: () => Object | null, paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
     static fromValues(paramvalues: () => Object | null): Codec<StringRepresentable>;

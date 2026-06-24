@@ -5,6 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WorldModifiers extends Record implements Copyable {
     static TYPE: Type<WorldModifiers>;
     static copy(paramarg0: Object | null): Object | null;
+    constructor(effects: number[], includeDescription: boolean)
     // private effects: number[];
     // private includeDescription: boolean;
     copy(): WorldModifiers;

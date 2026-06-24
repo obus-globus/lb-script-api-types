@@ -13,8 +13,8 @@ export class LongArrayList$Spliterator extends Object implements LongSpliterator
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: LongArrayList$Spliterator)
-    private constructor(null_: LongArrayList$Spliterator, arg1: number, arg2: number, arg3: boolean)
+    constructor(null_: (Object | null)[])
+    private constructor(null_: (Object | null)[], arg1: number, arg2: number, arg3: boolean)
     // private hasSplit: boolean;
     // private max: number;
     // private pos: number;

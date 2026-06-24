@@ -13,6 +13,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 import type { ServerLinks } from '../../../../net/minecraft/server/ServerLinks.d.ts'
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export class CommonListenerCookie extends Record {
+    constructor(levelLoadTracker: LevelLoadTracker, localGameProfile: GameProfile, telemetryManager: WorldSessionTelemetryManager, receivedRegistries: RegistryAccess$Frozen, enabledFeatures: FeatureFlagSet, serverBrand: string, serverData: ServerData, postDisconnectScreen: Screen, serverCookies: Map<Identifier, number[]>, chatState: ChatComponent$State, customReportDetails: { [key: string]: string }, serverLinks: ServerLinks, seenPlayers: Map<UUID, PlayerInfo>, seenInsecureChatWarning: boolean)
     // private chatState: ChatComponent$State;
     // private customReportDetails: { [key: string]: string };
     // private enabledFeatures: FeatureFlagSet;

@@ -75,9 +75,7 @@ export class SlimeBlock extends HalfTransparentBlock {
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number, paramupdateLimit: number): void;
     constructor(properties: BlockBehaviour$Properties)
-    // private bounceUp(entity: Entity): void;
     codec(): MapCodec<SlimeBlock>;
     fallOn(level: Level, state: BlockState, pos: BlockPos, entity: Entity, fallDistance: number): void;
     stepOn(level: Level, pos: BlockPos, onState: BlockState, entity: Entity): void;
-    updateEntityMovementAfterFallOn(level: BlockGetter, entity: Entity): void;
 }

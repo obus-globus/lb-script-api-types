@@ -9,7 +9,7 @@ export class ByteSource$SlicedByteSource extends ByteSource {
     static concat(paramsources: Iterator<ByteSource>): ByteSource;
     static empty(): ByteSource;
     static wrap(paramb: number[]): ByteSource;
-    constructor(null_: ByteSource$SlicedByteSource, offset: number, length: number)
+    constructor(null_: ByteSource, offset: number, length: number)
     // private length: number;
     // private offset: number;
     isEmpty(): boolean;

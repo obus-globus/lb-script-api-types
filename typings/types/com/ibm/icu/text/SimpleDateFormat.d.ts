@@ -23,8 +23,9 @@ import type { Temporal } from '../../../../java/time/temporal/Temporal.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
-export class SimpleDateFormat extends DateFormat {
+export class SimpleDateFormat extends DateFormat implements Cloneable {
     static ABBR_GENERIC_TZ: string;
     static ABBR_MONTH: string;
     static ABBR_MONTH_DAY: string;
@@ -199,7 +200,8 @@ export class SimpleDateFormat extends DateFormat {
     // private allowNumericFallback(arg0: number): boolean;
     applyLocalizedPattern(arg0: string): void;
     applyPattern(arg0: string): void;
-    clone(): Object;
+    clone(): SimpleDateFormat;
+    protected clone(): Object;
     // private diffCalFieldValue(arg0: Calendar, arg1: Calendar, arg2: Object[], arg3: number): boolean;
     equals(arg0: Object | null): boolean;
     // private fastZeroPaddingNumber(arg0: StringBuffer, arg1: number, arg2: number, arg3: number): void;

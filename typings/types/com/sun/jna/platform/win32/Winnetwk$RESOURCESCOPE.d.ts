@@ -1,3 +1,4 @@
+import type { Winnetwk } from '../../../../../com/sun/jna/platform/win32/Winnetwk.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Winnetwk$RESOURCESCOPE extends Object {
     static RESOURCE_CONNECTED: number;
@@ -5,5 +6,5 @@ export class Winnetwk$RESOURCESCOPE extends Object {
     static RESOURCE_GLOBALNET: number;
     static RESOURCE_RECENT: number;
     static RESOURCE_REMEMBERED: number;
-    constructor(null_: Winnetwk$RESOURCESCOPE)
+    constructor(null_: Winnetwk)
 }

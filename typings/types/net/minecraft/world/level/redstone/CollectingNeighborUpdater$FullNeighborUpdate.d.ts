@@ -8,6 +8,7 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { CollectingNeighborUpdater$NeighborUpdates } from '../../../../../net/minecraft/world/level/redstone/CollectingNeighborUpdater$NeighborUpdates.d.ts'
 import type { Orientation } from '../../../../../net/minecraft/world/level/redstone/Orientation.d.ts'
 export class CollectingNeighborUpdater$FullNeighborUpdate extends Record implements CollectingNeighborUpdater$NeighborUpdates {
+    private constructor(state: BlockState, pos: BlockPos, block: Block, orientation: Orientation, movedByPiston: boolean)
     // private block: Block;
     // private movedByPiston: boolean;
     // private orientation: Orientation;

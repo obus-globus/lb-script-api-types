@@ -1,7 +1,6 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
-import type { GlBufferArena } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gl/arena/GlBufferArena.d.ts'
-import type { GlBufferSegment } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gl/arena/GlBufferSegment.d.ts'
-import type { CommandList } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gl/device/CommandList.d.ts'
+import type { GlBufferArena } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gpu/arena/GlBufferArena.d.ts'
+import type { GlBufferSegment } from '../../../../../../../../net/caffeinemc/mods/sodium/client/gpu/arena/GlBufferSegment.d.ts'
 export class SectionRenderDataStorage extends Object {
     constructor(arg0: boolean)
     // private elementAllocations: GlBufferSegment[];
@@ -25,5 +24,5 @@ export class SectionRenderDataStorage extends Object {
     setVertexData(arg0: number, arg1: GlBufferSegment, arg2: number[]): void;
     // private storesIndexData(): boolean;
     // private updateMeshes(arg0: number): void;
-    updateSharedIndexData(arg0: CommandList, arg1: GlBufferArena, arg2: number): boolean;
+    updateSharedIndexData(arg0: GlBufferArena, arg1: number): boolean;
 }

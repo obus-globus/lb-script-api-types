@@ -5,7 +5,8 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class GregorianCalendar extends Calendar {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class GregorianCalendar extends Calendar implements Cloneable {
     static AD: number;
     static AM: number;
     static AM_PM: number;
@@ -88,6 +89,8 @@ export class GregorianCalendar extends Calendar {
     // private gregorianCutoverYear: number;
     // private invertGregorian: boolean;
     // private isGregorian: boolean;
+    clone(): GregorianCalendar;
+    protected clone(): Object;
     getActualMaximum(arg0: number): number;
     getActualMinimum(arg0: number): number;
     getGregorianChange(): Date;

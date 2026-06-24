@@ -1,9 +1,12 @@
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
+import type { JsonConfiguration } from '../../../../kotlinx/serialization/json/JsonConfiguration.d.ts'
 import type { JsonPath } from '../../../../kotlinx/serialization/json/internal/JsonPath.d.ts'
 export abstract class AbstractJsonLexer extends Object {
-    constructor()
+    constructor(configuration: JsonConfiguration)
+    // private configuration: JsonConfiguration;
+    /*not mapped: */ getConfiguration$kotlinx_serialization_json(): JsonConfiguration;
     currentPosition: number;
     // private escapedString: StringBuilder;
     // private /*not mapped: */ getEscapedString(): StringBuilder;
@@ -35,7 +38,7 @@ export abstract class AbstractJsonLexer extends Object {
     ensureHaveChars(): void;
     expectEof(): void;
     fail(expectedToken: number, wasConsumed: boolean, message: (param0: string, param1: string) => string): void;
-    fail(message: string, position: number, hint: string): void;
+    fail(message: string, position: number, hint: string | null): void;
     failOnUnknownKey(key: string): void;
     // private fromHexChar(source: CharSequence, currentPosition: number): number;
     indexOf(char: string, startPos: number): number;

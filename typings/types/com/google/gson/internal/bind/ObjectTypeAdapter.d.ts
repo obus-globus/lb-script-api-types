@@ -1,3 +1,4 @@
+import type { ObjectTypeAdapter$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Gson } from '../../../../../com/google/gson/Gson.d.ts'
 import type { ToNumberStrategy } from '../../../../../com/google/gson/ToNumberStrategy.d.ts'
 import type { TypeAdapter } from '../../../../../com/google/gson/TypeAdapter.d.ts'
@@ -9,6 +10,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectTypeAdapter extends TypeAdapter<Object> {
     static getFactory(paramarg0: ToNumberStrategy): TypeAdapterFactory;
     private constructor(arg0: Gson, arg1: ToNumberStrategy)
+    constructor(arg0: Gson, arg1: ToNumberStrategy, arg2: ObjectTypeAdapter$1)
     // private gson: Gson;
     // private toNumberStrategy: ToNumberStrategy;
     read(arg0: JsonReader): Object;

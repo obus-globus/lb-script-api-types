@@ -28,6 +28,7 @@ export class EpollDatagramChannelConfig extends EpollChannelConfig implements Da
     getTrafficClass(): number;
     isBroadcast(): boolean;
     isFreeBind(): boolean;
+    isIpMulticastAll(): boolean;
     isIpRecvOrigDestAddr(): boolean;
     isIpTransparent(): boolean;
     isLoopbackModeDisabled(): boolean;
@@ -43,6 +44,7 @@ export class EpollDatagramChannelConfig extends EpollChannelConfig implements Da
     setEpollMode(arg0: EpollMode): EpollDatagramChannelConfig;
     setFreeBind(arg0: boolean): EpollDatagramChannelConfig;
     setInterface(arg0: InetAddress): EpollDatagramChannelConfig;
+    setIpMulticastAll(arg0: boolean): EpollDatagramChannelConfig;
     setIpRecvOrigDestAddr(arg0: boolean): EpollDatagramChannelConfig;
     setIpTransparent(arg0: boolean): EpollDatagramChannelConfig;
     setLoopbackModeDisabled(arg0: boolean): DatagramChannelConfig;

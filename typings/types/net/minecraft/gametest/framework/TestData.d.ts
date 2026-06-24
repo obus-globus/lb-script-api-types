@@ -8,6 +8,9 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 import type { Rotation } from '../../../../net/minecraft/world/level/block/Rotation.d.ts'
 export class TestData<EnvironmentType extends unknown> extends Record {
     static CODEC: MapCodec<TestData<Holder<TestEnvironmentDefinition<Object>>>>;
+    constructor(environment: EnvironmentType, structure: Identifier, maxTicks: number, setupTicks: number, required: boolean)
+    constructor(environment: EnvironmentType, structure: Identifier, maxTicks: number, setupTicks: number, required: boolean, rotation: Rotation)
+    constructor(environment: EnvironmentType, structure: Identifier, maxTicks: number, setupTicks: number, required: boolean, rotation: Rotation, manualOnly: boolean, maxAttempts: number, requiredSuccesses: number, skyAccess: boolean, padding: number)
     // private environment: EnvironmentType;
     // private manualOnly: boolean;
     // private maxAttempts: number;

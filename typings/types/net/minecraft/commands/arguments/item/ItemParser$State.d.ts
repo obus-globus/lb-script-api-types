@@ -3,13 +3,14 @@ import type { Suggestions } from '../../../../../com/mojang/brigadier/suggestion
 import type { SuggestionsBuilder } from '../../../../../com/mojang/brigadier/suggestion/SuggestionsBuilder.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { ItemParser } from '../../../../../net/minecraft/commands/arguments/item/ItemParser.d.ts'
 import type { ItemParser$Visitor } from '../../../../../net/minecraft/commands/arguments/item/ItemParser$Visitor.d.ts'
 import type { DataComponentType } from '../../../../../net/minecraft/core/component/DataComponentType.d.ts'
 import type { TagParser } from '../../../../../net/minecraft/nbt/TagParser.d.ts'
 import type { RegistryOps } from '../../../../../net/minecraft/resources/RegistryOps.d.ts'
 export class ItemParser$State extends Object {
     static readComponentType(paramreader: StringReader): DataComponentType<Object>;
-    private constructor(null_: ItemParser$State, reader: StringReader, visitor: ItemParser$Visitor)
+    private constructor(null_: ItemParser, reader: StringReader, visitor: ItemParser$Visitor)
     // private reader: StringReader;
     // private visitor: ItemParser$Visitor;
     parse(): void;

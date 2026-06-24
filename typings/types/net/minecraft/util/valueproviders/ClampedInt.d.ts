@@ -6,6 +6,7 @@ import type { IntProvider } from '../../../../net/minecraft/util/valueproviders/
 export class ClampedInt extends Record implements IntProvider {
     static MAP_CODEC: MapCodec<ClampedInt>;
     static of(paramsource: IntProvider, paramminInclusive: number, parammaxInclusive: number): ClampedInt;
+    constructor(source: IntProvider, minInclusive: number, maxInclusive: number)
     // private maxInclusive: number;
     // private minInclusive: number;
     // private source: IntProvider;

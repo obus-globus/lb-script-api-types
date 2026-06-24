@@ -1,3 +1,4 @@
+import type { HttpProxyHandler$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ChannelHandlerContext } from '../../../../io/netty/channel/ChannelHandlerContext.d.ts'
 import type { ChannelInboundHandler } from '../../../../io/netty/channel/ChannelInboundHandler.d.ts'
 import type { ChannelOutboundHandler } from '../../../../io/netty/channel/ChannelOutboundHandler.d.ts'
@@ -8,6 +9,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class HttpProxyHandler$HttpClientCodecWrapper extends Object implements ChannelInboundHandler, ChannelOutboundHandler {
     private constructor()
+    constructor(arg0: HttpProxyHandler$1)
     // private codec: HttpClientCodec;
     bind(arg0: ChannelHandlerContext, arg1: SocketAddress, arg2: ChannelPromise): void;
     channelActive(arg0: ChannelHandlerContext): void;

@@ -9,6 +9,6 @@ export abstract class Tree extends Object {
     // private offsetY: number;
     // private offsetZ: number;
     // private tree: number[];
-    add(arg0: number, arg1: number, arg2: number): boolean;
+    add(arg0: number, arg1: number, arg2: number): number;
     getPresence(arg0: number, arg1: number, arg2: number): number;
 }

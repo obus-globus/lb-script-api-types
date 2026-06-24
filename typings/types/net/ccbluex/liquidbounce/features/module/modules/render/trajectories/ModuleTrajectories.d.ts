@@ -11,7 +11,7 @@ import type { TrajectoryType } from '../../../../../../../../net/ccbluex/liquidb
  *
  * Allows you to see where projectile items will land.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt:45}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt:45}
  */
 export class ModuleTrajectories extends ClientModule {
     static INSTANCE: ModuleTrajectories;
@@ -31,7 +31,7 @@ export class ModuleTrajectories extends ClientModule {
     // private showMultiShot: boolean;
     // private /*not mapped: */ getShowMultiShot(): boolean;
     // private simulationResults: Pair<TrajectoryInfoRenderer, TrajectoryInfoRenderer$SimulationResult>[];
-    /*not mapped: */ getSimulationResults$liquidbounce(): Pair<TrajectoryInfoRenderer, TrajectoryInfoRenderer$SimulationResult>[];
+    /*not mapped: */ getSimulationResults$net_ccbluex_liquidbounce(): Pair<TrajectoryInfoRenderer, TrajectoryInfoRenderer$SimulationResult>[];
     // private trajectoryTypes: TrajectoryType[];
     // private /*not mapped: */ getTrajectoryTypes(): TrajectoryType[];
     onDisabled(): void;

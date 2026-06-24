@@ -1,7 +1,8 @@
 import type { Node } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/nodes/Node.d.ts'
 import type { Represent } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/representer/Represent.d.ts'
+import type { Representer } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/representer/Representer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Representer$RepresentJavaBean extends Object implements Represent {
-    constructor(null_: Representer$RepresentJavaBean)
+    constructor(null_: Representer)
     representData(arg0: Object): Node;
 }

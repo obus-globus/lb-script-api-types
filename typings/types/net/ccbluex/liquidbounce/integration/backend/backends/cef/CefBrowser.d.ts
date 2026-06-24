@@ -16,7 +16,7 @@ export class CefBrowser extends Object implements MinecraftShortcuts, Browser, I
     constructor(backend: CefBrowserBackend, url: string, viewport: BrowserViewport, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor | null)
     // private backend: CefBrowserBackend;
     // private browserApi: MCEFBrowser;
-    /*not mapped: */ getBrowserApi$liquidbounce(): MCEFBrowser;
+    /*not mapped: */ getBrowserApi$net_ccbluex_liquidbounce(): MCEFBrowser;
     // private inputListener: InputListener | null;
     // private isInitialized: boolean;
     /*not mapped: */ isInitialized(): boolean;
@@ -35,6 +35,7 @@ export class CefBrowser extends Object implements MinecraftShortcuts, Browser, I
     forceReload(): void;
     goBack(): void;
     goForward(): void;
+    // private handleMacClipboardShortcut(keyCode: number, modifiers: number): boolean;
     invalidate(): void;
     keyPressed(keyCode: number, scanCode: number, modifiers: number): void;
     keyReleased(keyCode: number, scanCode: number, modifiers: number): void;

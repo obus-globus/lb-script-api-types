@@ -1,3 +1,4 @@
+import type { MixinProcessor$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
@@ -14,6 +15,7 @@ export class MixinProcessor$ErrorPhase extends Enum<MixinProcessor$ErrorPhase> {
     static valueOf(paramarg0: string): MixinProcessor$ErrorPhase;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: MixinProcessor$1)
     // private text: string;
     getContext(arg0: IMixinInfo, arg1: string): string;
     getErrorMessage(arg0: IMixinInfo, arg1: IMixinConfig, arg2: MixinEnvironment$Phase): string;

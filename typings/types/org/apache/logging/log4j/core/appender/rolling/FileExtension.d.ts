@@ -1,3 +1,4 @@
+import type { FileExtension$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { File } from '../../../../../../../java/io/File.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -17,6 +18,7 @@ export class FileExtension extends Enum<FileExtension> {
     static valueOf(paramname: string): FileExtension;
     static values(): (Object | null)[];
     private constructor(extension: string)
+    constructor(arg2: string, arg3: FileExtension$1)
     readonly extension: string;
     createCompressAction(renameTo: string, compressedName: string, deleteSource: boolean, compressionLevel: number): Action;
     getExtension(): string;

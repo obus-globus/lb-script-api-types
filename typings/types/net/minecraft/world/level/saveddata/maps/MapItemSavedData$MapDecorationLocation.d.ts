@@ -3,6 +3,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { MapDecorationType } from '../../../../../../net/minecraft/world/level/saveddata/maps/MapDecorationType.d.ts'
 export class MapItemSavedData$MapDecorationLocation extends Record {
+    private constructor(type: Holder<MapDecorationType>, x: number, y: number, rot: number)
     // private rot: number;
     // private type: Holder<MapDecorationType>;
     // private x: number;

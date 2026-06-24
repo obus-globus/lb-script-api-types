@@ -1,3 +1,4 @@
+import type { TinyRemapper$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Pattern } from '../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { IMappingProvider } from '../../../../../../net/fabricmc/loader/impl/lib/tinyremapper/IMappingProvider.d.ts'
@@ -12,6 +13,7 @@ import type { TrLogger } from '../../../../../../net/fabricmc/loader/impl/lib/ti
 import type { Remapper } from '../../../../../../org/objectweb/asm/commons/Remapper.d.ts'
 export class TinyRemapper$Builder extends Object {
     private constructor(arg0: TrLogger)
+    constructor(arg0: TrLogger, arg1: TinyRemapper$1)
     // private analyzeVisitors: TinyRemapper$AnalyzeVisitorProvider[];
     // private checkPackageAccess: boolean;
     // private disableLocalVariableTracking: boolean;

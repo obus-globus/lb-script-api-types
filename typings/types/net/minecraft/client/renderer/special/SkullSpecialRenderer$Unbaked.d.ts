@@ -9,6 +9,8 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { SkullBlock$Type } from '../../../../../net/minecraft/world/level/block/SkullBlock$Type.d.ts'
 export class SkullSpecialRenderer$Unbaked extends Record implements NoDataSpecialModelRenderer$Unbaked {
     static MAP_CODEC: MapCodec<SkullSpecialRenderer$Unbaked>;
+    constructor(kind: SkullBlock$Type)
+    constructor(kind: SkullBlock$Type, textureOverride: Optional<Identifier>, animation: number)
     // private animation: number;
     // private kind: SkullBlock$Type;
     // private textureOverride: Optional<Identifier>;

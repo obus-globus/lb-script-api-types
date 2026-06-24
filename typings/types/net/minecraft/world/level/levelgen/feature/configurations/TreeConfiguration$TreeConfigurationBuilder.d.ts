@@ -9,7 +9,7 @@ import type { TreeDecorator } from '../../../../../../../net/minecraft/world/lev
 import type { TrunkPlacer } from '../../../../../../../net/minecraft/world/level/levelgen/feature/trunkplacers/TrunkPlacer.d.ts'
 export class TreeConfiguration$TreeConfigurationBuilder extends Object {
     constructor(trunkProvider: BlockStateProvider, trunkPlacer: TrunkPlacer, foliageProvider: BlockStateProvider, foliagePlacer: FoliagePlacer, rootPlacer: Optional<RootPlacer>, minimumSize: FeatureSize, belowTrunkProvider: BlockStateProvider)
-    constructor(trunkProvider: BlockStateProvider, trunkPlacer: TrunkPlacer, foliageProvider: BlockStateProvider, foliagePlacer: FoliagePlacer, minimumSize: FeatureSize)
+    constructor(trunkProvider: BlockStateProvider, trunkPlacer: TrunkPlacer, foliageProvider: BlockStateProvider, foliagePlacer: FoliagePlacer, minimumSize: FeatureSize, belowTrunkProvider: BlockStateProvider)
     // private belowTrunkProvider: BlockStateProvider;
     // private decorators: TreeDecorator[];
     // private foliagePlacer: FoliagePlacer;

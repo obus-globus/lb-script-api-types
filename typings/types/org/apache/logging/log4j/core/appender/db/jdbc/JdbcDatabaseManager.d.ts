@@ -1,3 +1,4 @@
+import type { JdbcDatabaseManager$1 } from '../../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Serializable } from '../../../../../../../../java/io/Serializable.d.ts'
 import type { Exception } from '../../../../../../../../java/lang/Exception.d.ts'
 import type { Connection } from '../../../../../../../../java/sql/Connection.d.ts'
@@ -23,6 +24,7 @@ export class JdbcDatabaseManager extends AbstractDatabaseManager {
     static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: (Object | null)[], paramcolumnMappings: (Object | null)[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number, paramtruncateStrings: boolean): JdbcDatabaseManager;
     static hasManager(paramname: string): boolean;
     private constructor(name: string, sqlStatement: string, columnConfigs: ColumnConfig[], factoryData: JdbcDatabaseManager$FactoryData)
+    constructor(arg0: string, arg1: string, arg2: (Object | null)[], arg3: JdbcDatabaseManager$FactoryData, arg4: JdbcDatabaseManager$1)
     // private columnConfigs: ColumnConfig[];
     // private columnMetaData: { [key: string]: JdbcDatabaseManager$ResultSetColumnMetaData };
     // private connection: Connection;

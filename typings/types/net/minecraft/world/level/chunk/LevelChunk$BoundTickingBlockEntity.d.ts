@@ -7,8 +7,9 @@ import type { BlockEntityTicker } from '../../../../../net/minecraft/world/level
 import type { TickingBlockEntity } from '../../../../../net/minecraft/world/level/block/entity/TickingBlockEntity.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { WorldBorder } from '../../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
+import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 export class LevelChunk$BoundTickingBlockEntity<T extends BlockEntity> extends Object implements WorldBorderListenerOnce, TickingBlockEntity {
-    private constructor(null_: LevelChunk$BoundTickingBlockEntity<T>, ticker: (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void)
+    private constructor(null_: LevelChunk, blockEntity: T, ticker: (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void)
     // private blockEntity: T;
     // private loggedInvalidBlockState: boolean;
     // private ticker: (param0: Level, param1: BlockPos, param2: BlockState, param3: T) => void;

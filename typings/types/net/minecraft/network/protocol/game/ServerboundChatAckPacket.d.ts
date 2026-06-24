@@ -11,6 +11,8 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 export class ServerboundChatAckPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundChatAckPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(offset: number)
+    private constructor(input: FriendlyByteBuf)
     // private offset: number;
     equals(o: Object | null): boolean;
     handle(listener: ServerGamePacketListener): void;

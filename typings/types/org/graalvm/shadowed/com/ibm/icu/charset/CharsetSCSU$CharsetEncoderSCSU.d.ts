@@ -4,10 +4,11 @@ import type { IntBuffer } from '../../../../../../../java/nio/IntBuffer.d.ts'
 import type { CoderResult } from '../../../../../../../java/nio/charset/CoderResult.d.ts'
 import type { CharsetEncoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetEncoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetSCSU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetSCSU.d.ts'
 import type { CharsetSCSU$SCSUData } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetSCSU$SCSUData.d.ts'
 export class CharsetSCSU$CharsetEncoderSCSU extends CharsetEncoderICU {
     static getMaxBytesForString(paramlength: number, parammaxCharSize: number): number;
-    constructor(null_: CharsetSCSU$CharsetEncoderSCSU, cs: CharsetICU)
+    constructor(null_: CharsetSCSU, cs: CharsetICU)
     // private AfterGetTrail: boolean;
     // private AfterGetTrailUnicode: boolean;
     // private LabelLoop: boolean;

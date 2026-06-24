@@ -1,7 +1,8 @@
+import type { Profiler } from '../../../../../org/spongepowered/asm/util/perf/Profiler.d.ts'
 import type { Profiler$LiveSection } from '../../../../../org/spongepowered/asm/util/perf/Profiler$LiveSection.d.ts'
 import type { Profiler$Section } from '../../../../../org/spongepowered/asm/util/perf/Profiler$Section.d.ts'
 export class Profiler$SubSection extends Profiler$LiveSection {
-    constructor(null_: Profiler$SubSection, arg1: string, arg2: number, arg3: string, arg4: Profiler$Section)
+    constructor(null_: Profiler, arg1: string, arg2: number, arg3: string, arg4: Profiler$Section)
     readonly baseName: string;
     readonly root: Profiler$Section;
     end(): Profiler$Section;

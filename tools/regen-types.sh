@@ -26,15 +26,11 @@ cd "$REPO_ROOT"
 # Pin the LB SHA the generator was run against. Bumping is a deliberate
 # action tied to regenerating the types package.
 #
-# b759cac57 = "fix: resolve GraalVM caller-sensitive method detection failure"
-# (PR #8437). It adds a mixin that forces
-# com.oracle.truffle.host.HostMethodDesc$SingleMethod.isCallerSensitive=true,
-# which makes JDK caller-sensitive methods (URLClassLoader ctor,
-# Thread.getContextClassLoader, ...) work again under GraalVM host interop on
-# Java 25. That's the root-cause fix for the regression we used to work around
-# by wrapping ts-generator.jar as a Fabric mod — so as of this pin the mod
-# wrapper is gone and ts-defgen.js loads the generator via stock URLClassLoader.
-PINNED_SHA="b759cac57b26e54694d8c4d48af024a8fb598f62"
+# 5f1d92499 = nextgen tip 2026-06-23 (v0.38.0-57). Bumped from b759cac57 to pick up
+# "feat: 26.2 Minecraft support" (#8502) + new modules/events; keeps the GraalVM
+# caller-sensitive fix (#8437, b759cac57) which is an ancestor, so ts-defgen.js still
+# loads the generator via stock URLClassLoader (no Fabric-mod wrapper).
+PINNED_SHA="5f1d924995c7360e0ec79e16298d37205eea4da3"
 
 LB_DIR="$REPO_ROOT/references/liquidbounce"
 TS_GEN_DIR="$REPO_ROOT/generator"

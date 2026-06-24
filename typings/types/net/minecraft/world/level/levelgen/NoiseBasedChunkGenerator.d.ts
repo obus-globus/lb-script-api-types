@@ -36,7 +36,7 @@ export class NoiseBasedChunkGenerator extends ChunkGenerator {
     addDebugScreenInfo(result: string[], randomState: RandomState, feetPos: BlockPos): void;
     applyCarvers(region: WorldGenRegion, seed: number, randomState: RandomState, biomeManager: BiomeManager, structureManager: StructureManager, chunk: ChunkAccess): void;
     buildSurface(region: WorldGenRegion, structureManager: StructureManager, randomState: RandomState, protoChunk: ChunkAccess): void;
-    buildSurface(protoChunk: ChunkAccess, context: WorldGenerationContext, randomState: RandomState, structureManager: StructureManager, biomeManager: BiomeManager, biomeRegistry: Biome[], blender: Blender): void;
+    buildSurface(protoChunk: ChunkAccess, context: WorldGenerationContext, randomState: RandomState, structureManager: StructureManager, biomeManager: BiomeManager, blender: Blender, possibleBiomes: Holder<Biome>[]): void;
     codec(): MapCodec<ChunkGenerator>;
     createBiomes(randomState: RandomState, blender: Blender, structureManager: StructureManager, protoChunk: ChunkAccess): CompletableFuture<ChunkAccess>;
     // private createNoiseChunk(chunk: ChunkAccess, structureManager: StructureManager, blender: Blender, randomState: RandomState): NoiseChunk;

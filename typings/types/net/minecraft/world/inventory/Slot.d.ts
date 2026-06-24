@@ -28,6 +28,7 @@ export class Slot extends Object {
     onSwapCraft(count: number): void;
     onTake(player: Player, carried: ItemStack): void;
     remove(amount: number): ItemStack;
+    safeClone(player: Player): ItemStack;
     safeInsert(stack: ItemStack): ItemStack;
     safeInsert(inputStack: ItemStack, inputAmount: number): ItemStack;
     safeTake(amount: number, maxAmount: number, player: Player): ItemStack;

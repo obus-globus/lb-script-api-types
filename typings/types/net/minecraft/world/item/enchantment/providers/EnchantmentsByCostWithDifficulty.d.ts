@@ -13,6 +13,7 @@ export class EnchantmentsByCostWithDifficulty extends Record implements Enchantm
     static CODEC: MapCodec<EnchantmentsByCostWithDifficulty>;
     static DIRECT_CODEC: Codec<EnchantmentProvider>;
     static MAX_ALLOWED_VALUE_PART: number;
+    constructor(enchantments: Holder<Enchantment>[], minCost: number, maxCostSpan: number)
     // private enchantments: Holder<Enchantment>[];
     // private maxCostSpan: number;
     // private minCost: number;

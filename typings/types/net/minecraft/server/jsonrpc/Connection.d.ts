@@ -35,7 +35,7 @@ export class Connection extends SimpleChannelInboundHandler<JsonElement> {
     sendNotification<Params extends unknown>(method: Holder$Reference<OutgoingRpcMethod<Params, Object>>, params: Params): void;
     sendNotification(method: Holder$Reference<OutgoingRpcMethod<void, Object>>): void;
     sendRequest<Result extends unknown, Params extends unknown>(method: Holder$Reference<OutgoingRpcMethod<Params, Result>>, params: Params): CompletableFuture<Result>;
-    // private sendRequest<Result extends unknown, Params extends unknown>(method: Holder$Reference<OutgoingRpcMethod<Params, Result>>, params: Params, expectReply: boolean): CompletableFuture<Result>;
+    // private sendRequest<Result extends unknown, Params extends unknown>(methodHolder: Holder$Reference<OutgoingRpcMethod<Params, Result>>, params: Params, expectReply: boolean): CompletableFuture<Result>;
     sendRequest<Result extends unknown>(method: Holder$Reference<OutgoingRpcMethod<void, Result>>): CompletableFuture<Result>;
     tick(): void;
 }

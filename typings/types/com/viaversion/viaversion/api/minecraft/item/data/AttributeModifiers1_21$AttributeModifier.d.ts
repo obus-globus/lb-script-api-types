@@ -8,6 +8,8 @@ export class AttributeModifiers1_21$AttributeModifier extends Record {
     static ARRAY_TYPE1_21_6: Type<(Object | null)[]>;
     static TYPE1_21: Type<AttributeModifiers1_21$AttributeModifier>;
     static TYPE1_21_6: Type<AttributeModifiers1_21$AttributeModifier>;
+    constructor(arg0: number, arg1: AttributeModifiers1_21$ModifierData, arg2: number)
+    constructor(attribute: number, modifier: AttributeModifiers1_21$ModifierData, slotType: number, display: AttributeModifiers1_21$Display)
     // private attribute: number;
     // private display: AttributeModifiers1_21$Display;
     // private modifier: AttributeModifiers1_21$ModifierData;

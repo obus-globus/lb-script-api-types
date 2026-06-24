@@ -18,6 +18,16 @@ export class RollingRandomAccessFileAppender$Builder<B extends RollingRandomAcce
     build(): RollingRandomAccessFileAppender;
     getErrorPrefix(): string;
     isValid(): boolean;
+    setAdvertise(advertise: boolean): B;
+    setAdvertiseURI(advertiseURI: string): B;
+    setAppend(append: boolean): B;
+    setFileGroup(fileGroup: string): B;
+    setFileName(fileName: string): B;
+    setFileOwner(fileOwner: string): B;
+    setFilePattern(filePattern: string): B;
+    setFilePermissions(filePermissions: string): B;
+    setPolicy(policy: TriggeringPolicy): B;
+    setStrategy(strategy: RolloverStrategy): B;
     withAdvertise(advertise: boolean): B;
     withAdvertiseURI(advertiseURI: string): B;
     withAppend(append: boolean): B;

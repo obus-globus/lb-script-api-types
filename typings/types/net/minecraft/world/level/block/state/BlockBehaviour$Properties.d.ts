@@ -1,6 +1,7 @@
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
+import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { ToIntFunction } from '../../../../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricBlock$FabricProperties } from '../../../../../../net/fabricmc/fabric/api/block/v1/FabricBlock$FabricProperties.d.ts'
@@ -32,12 +33,13 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     static ofFullCopy(paramblock: BlockBehaviour): BlockBehaviour$Properties;
     static ofLegacyCopy(paramblock: BlockBehaviour): BlockBehaviour$Properties;
     constructor()
+    // private bounceRestitution: number;
     // private canOcclude: boolean;
     // private descriptionId: (param0: ResourceKey<Block>) => string;
     // private destroyTime: number;
     // private drops: (param0: ResourceKey<Block>) => Optional<ResourceKey<LootTable>>;
     // private dynamicShape: boolean;
-    // private emissiveRendering: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean;
+    // private emissiveRendering: (param0: BlockState) => boolean;
     // private explosionResistance: number;
     // private forceSolidOff: boolean;
     // private forceSolidOn: boolean;
@@ -69,11 +71,12 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     blockId(): ResourceKey<Block>;
     blockId(): ResourceKey<Object>;
     blockIdOrThrow(): ResourceKey<Block>;
+    bounceRestitution(bounceRestitution: number): BlockBehaviour$Properties;
     destroyTime(destroyTime: number): BlockBehaviour$Properties;
     dynamicShape(): BlockBehaviour$Properties;
     effectiveDescriptionId(): string;
     effectiveDrops(): Optional<ResourceKey<LootTable>>;
-    emissiveRendering(emissiveRendering: (param0: BlockState, param1: BlockGetter, param2: BlockPos) => boolean): BlockBehaviour$Properties;
+    emissiveRendering(emissiveRendering: (param0: BlockState) => boolean): BlockBehaviour$Properties;
     explosionResistance(explosionResistance: number): BlockBehaviour$Properties;
     forceSolidOff(): BlockBehaviour$Properties;
     forceSolidOn(): BlockBehaviour$Properties;

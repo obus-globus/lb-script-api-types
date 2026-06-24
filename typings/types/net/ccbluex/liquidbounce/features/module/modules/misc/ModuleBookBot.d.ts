@@ -16,7 +16,7 @@ import type { ItemStack } from '../../../../../../../net/minecraft/world/item/It
  * @since 12/28/2024
  * @author sqlerrorthing
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBookBot.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBookBot.kt:71}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBookBot.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBookBot.kt:71}
  */
 export class ModuleBookBot extends ClientModule {
     static INSTANCE: ModuleBookBot;
@@ -25,7 +25,7 @@ export class ModuleBookBot extends ClientModule {
     // private delay: number;
     // private /*not mapped: */ getDelay(): number;
     // private generationMode: ModeValueGroup<GenerationMode>;
-    /*not mapped: */ getGenerationMode$liquidbounce(): ModeValueGroup<GenerationMode>;
+    /*not mapped: */ getGenerationMode$net_ccbluex_liquidbounce(): ModeValueGroup<GenerationMode>;
     // private inventoryConstraints: PlayerInventoryConstraints;
     // private /*not mapped: */ getRandomBook(): ItemSlot | null;
     // private scheduleInventoryAction: EventHook<ScheduleInventoryActionEvent>;

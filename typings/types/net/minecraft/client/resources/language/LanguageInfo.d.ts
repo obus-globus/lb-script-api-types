@@ -4,6 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 export class LanguageInfo extends Record {
     static CODEC: Codec<LanguageInfo>;
+    constructor(region: string, name: string, bidirectional: boolean)
     // private bidirectional: boolean;
     // private name: string;
     // private region: string;

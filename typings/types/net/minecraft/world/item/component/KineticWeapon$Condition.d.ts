@@ -9,6 +9,7 @@ export class KineticWeapon$Condition extends Record {
     static STREAM_CODEC: StreamCodec<ByteBuf, KineticWeapon$Condition>;
     static ofAttackerSpeed(paramuntilTicks: number, paramminAttackerSpeed: number): Optional<KineticWeapon$Condition>;
     static ofRelativeSpeed(paramuntilTicks: number, paramminRelativeSpeed: number): Optional<KineticWeapon$Condition>;
+    constructor(maxDurationTicks: number, minSpeed: number, minRelativeSpeed: number)
     // private maxDurationTicks: number;
     // private minRelativeSpeed: number;
     // private minSpeed: number;

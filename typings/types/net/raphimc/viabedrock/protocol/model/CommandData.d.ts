@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CommandData$EnumData } from '../../../../../net/raphimc/viabedrock/protocol/model/CommandData$EnumData.d.ts'
 import type { CommandData$OverloadData } from '../../../../../net/raphimc/viabedrock/protocol/model/CommandData$OverloadData.d.ts'
 export class CommandData extends Record {
+    constructor(name: string, description: string, flags: number, permission: number, alias: CommandData$EnumData, overloads: CommandData$OverloadData[])
     // private alias: CommandData$EnumData;
     // private description: string;
     // private flags: number;

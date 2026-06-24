@@ -8,6 +8,8 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PotDecorations extends Record implements Copyable, Rewritable {
     static TYPE: Type<PotDecorations>;
+    constructor(arg0: number, arg1: number, arg2: number, arg3: number)
+    constructor(itemIds: number[])
     // private itemIds: number[];
     backItem(): number;
     copy(): PotDecorations;

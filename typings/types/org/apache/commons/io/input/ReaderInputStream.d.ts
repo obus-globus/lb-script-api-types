@@ -1,3 +1,4 @@
+import type { ReaderInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
@@ -18,6 +19,7 @@ export class ReaderInputStream extends AbstractInputStream {
     constructor(arg0: Reader, arg1: string)
     constructor(arg0: Reader, arg1: string, arg2: number)
     private constructor(arg0: ReaderInputStream$Builder)
+    constructor(arg0: ReaderInputStream$Builder, arg1: ReaderInputStream$1)
     // private charsetEncoder: CharsetEncoder;
     // private encoderIn: CharBuffer;
     // private encoderOut: ByteBuffer;

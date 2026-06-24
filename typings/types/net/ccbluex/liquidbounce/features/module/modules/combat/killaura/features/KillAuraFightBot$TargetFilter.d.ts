@@ -2,9 +2,9 @@ import type { ValueGroup } from '../../../../../../../../../net/ccbluex/liquidbo
 export class KillAuraFightBot$TargetFilter extends ValueGroup {
     static INSTANCE: KillAuraFightBot$TargetFilter;
     // private notWhenVoid: boolean;
-    /*not mapped: */ getNotWhenVoid$liquidbounce(): boolean;
+    /*not mapped: */ getNotWhenVoid$net_ccbluex_liquidbounce(): boolean;
     // private range: number;
-    /*not mapped: */ getRange$liquidbounce(): number;
+    /*not mapped: */ getRange$net_ccbluex_liquidbounce(): number;
     // private visibleOnly: boolean;
-    /*not mapped: */ getVisibleOnly$liquidbounce(): boolean;
+    /*not mapped: */ getVisibleOnly$net_ccbluex_liquidbounce(): boolean;
 }

@@ -5,7 +5,7 @@ import type { ConstantValue } from '../../../../../../../../kotlin/reflect/jvm/i
 export class JavaAnnotationTargetMapper extends Object {
     static INSTANCE: JavaAnnotationTargetMapper;
     private constructor()
-    mapJavaRetentionArgument$descriptors_jvm(arg0: JavaAnnotationArgument): ConstantValue<Object>;
+    mapJavaRetentionArgument$org_jetbrains_kotlin_descriptors_jvm(arg0: JavaAnnotationArgument): ConstantValue<Object>;
     mapJavaTargetArgumentByName(arg0: string): KotlinTarget[];
-    mapJavaTargetArguments$descriptors_jvm(arg0: JavaAnnotationArgument[]): ConstantValue<Object>;
+    mapJavaTargetArguments$org_jetbrains_kotlin_descriptors_jvm(arg0: JavaAnnotationArgument[]): ConstantValue<Object>;
 }

@@ -1,0 +1,110 @@
+import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { MemoryStack } from '../../../org/lwjgl/system/MemoryStack.d.ts'
+import type { NativeResource } from '../../../org/lwjgl/system/NativeResource.d.ts'
+import type { Struct } from '../../../org/lwjgl/system/Struct.d.ts'
+import type { Struct$StructValidation } from '../../../org/lwjgl/system/Struct$StructValidation.d.ts'
+export class VkPhysicalDeviceShaderAtomicFloatFeaturesEXT extends Struct<VkPhysicalDeviceShaderAtomicFloatFeaturesEXT> implements NativeResource {
+    static ALIGNOF: number;
+    static BITS32: boolean;
+    static BITS64: boolean;
+    static CLONG_SHIFT: number;
+    static CLONG_SIZE: number;
+    static PNEXT: number;
+    static POINTER_SHIFT: number;
+    static POINTER_SIZE: number;
+    static SHADERBUFFERFLOAT32ATOMICADD: number;
+    static SHADERBUFFERFLOAT32ATOMICS: number;
+    static SHADERBUFFERFLOAT64ATOMICADD: number;
+    static SHADERBUFFERFLOAT64ATOMICS: number;
+    static SHADERIMAGEFLOAT32ATOMICADD: number;
+    static SHADERIMAGEFLOAT32ATOMICS: number;
+    static SHADERSHAREDFLOAT32ATOMICADD: number;
+    static SHADERSHAREDFLOAT32ATOMICS: number;
+    static SHADERSHAREDFLOAT64ATOMICADD: number;
+    static SHADERSHAREDFLOAT64ATOMICS: number;
+    static SIZEOF: number;
+    static SPARSEIMAGEFLOAT32ATOMICADD: number;
+    static SPARSEIMAGEFLOAT32ATOMICS: number;
+    static STYPE: number;
+    static calloc(): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    static calloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    static calloc(paramarg0: number): (Object | null)[];
+    static calloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static create(): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    static create(paramarg0: number): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    static create(paramarg0: number): (Object | null)[];
+    static create(paramarg0: number, paramarg1: number): (Object | null)[];
+    static createSafe(paramarg0: number): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    static createSafe(paramarg0: number, paramarg1: number): (Object | null)[];
+    static malloc(): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    static malloc(paramarg0: MemoryStack): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    static malloc(paramarg0: number): (Object | null)[];
+    static malloc(paramarg0: number, paramarg1: MemoryStack): (Object | null)[];
+    static npNext(paramarg0: number): number;
+    static npNext(paramarg0: number, paramarg1: number): void;
+    static nsType(paramarg0: number): number;
+    static nsType(paramarg0: number, paramarg1: number): void;
+    static nshaderBufferFloat32AtomicAdd(paramarg0: number): number;
+    static nshaderBufferFloat32AtomicAdd(paramarg0: number, paramarg1: number): void;
+    static nshaderBufferFloat32Atomics(paramarg0: number): number;
+    static nshaderBufferFloat32Atomics(paramarg0: number, paramarg1: number): void;
+    static nshaderBufferFloat64AtomicAdd(paramarg0: number): number;
+    static nshaderBufferFloat64AtomicAdd(paramarg0: number, paramarg1: number): void;
+    static nshaderBufferFloat64Atomics(paramarg0: number): number;
+    static nshaderBufferFloat64Atomics(paramarg0: number, paramarg1: number): void;
+    static nshaderImageFloat32AtomicAdd(paramarg0: number): number;
+    static nshaderImageFloat32AtomicAdd(paramarg0: number, paramarg1: number): void;
+    static nshaderImageFloat32Atomics(paramarg0: number): number;
+    static nshaderImageFloat32Atomics(paramarg0: number, paramarg1: number): void;
+    static nshaderSharedFloat32AtomicAdd(paramarg0: number): number;
+    static nshaderSharedFloat32AtomicAdd(paramarg0: number, paramarg1: number): void;
+    static nshaderSharedFloat32Atomics(paramarg0: number): number;
+    static nshaderSharedFloat32Atomics(paramarg0: number, paramarg1: number): void;
+    static nshaderSharedFloat64AtomicAdd(paramarg0: number): number;
+    static nshaderSharedFloat64AtomicAdd(paramarg0: number, paramarg1: number): void;
+    static nshaderSharedFloat64Atomics(paramarg0: number): number;
+    static nshaderSharedFloat64Atomics(paramarg0: number, paramarg1: number): void;
+    static nsparseImageFloat32AtomicAdd(paramarg0: number): number;
+    static nsparseImageFloat32AtomicAdd(paramarg0: number, paramarg1: number): void;
+    static nsparseImageFloat32Atomics(paramarg0: number): number;
+    static nsparseImageFloat32Atomics(paramarg0: number, paramarg1: number): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    static validate(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: (param0: number) => void): void;
+    constructor(arg0: ByteBuffer)
+    constructor(arg0: number, arg1: ByteBuffer)
+    close(): void;
+    create(arg0: number, arg1: ByteBuffer): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    pNext(): number;
+    pNext(arg0: number): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    sType(): number;
+    sType(arg0: number): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    sType$Default(): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    set(arg0: number, arg1: number, arg2: boolean, arg3: boolean, arg4: boolean, arg5: boolean, arg6: boolean, arg7: boolean, arg8: boolean, arg9: boolean, arg10: boolean, arg11: boolean, arg12: boolean, arg13: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    set(arg0: VkPhysicalDeviceShaderAtomicFloatFeaturesEXT): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderBufferFloat32AtomicAdd(): boolean;
+    shaderBufferFloat32AtomicAdd(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderBufferFloat32Atomics(): boolean;
+    shaderBufferFloat32Atomics(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderBufferFloat64AtomicAdd(): boolean;
+    shaderBufferFloat64AtomicAdd(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderBufferFloat64Atomics(): boolean;
+    shaderBufferFloat64Atomics(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderImageFloat32AtomicAdd(): boolean;
+    shaderImageFloat32AtomicAdd(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderImageFloat32Atomics(): boolean;
+    shaderImageFloat32Atomics(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderSharedFloat32AtomicAdd(): boolean;
+    shaderSharedFloat32AtomicAdd(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderSharedFloat32Atomics(): boolean;
+    shaderSharedFloat32Atomics(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderSharedFloat64AtomicAdd(): boolean;
+    shaderSharedFloat64AtomicAdd(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    shaderSharedFloat64Atomics(): boolean;
+    shaderSharedFloat64Atomics(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    sizeof(): number;
+    sparseImageFloat32AtomicAdd(): boolean;
+    sparseImageFloat32AtomicAdd(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+    sparseImageFloat32Atomics(): boolean;
+    sparseImageFloat32Atomics(arg0: boolean): VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+}

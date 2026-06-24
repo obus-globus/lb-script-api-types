@@ -1,5 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { RandomSource } from '../../../net/minecraft/util/RandomSource.d.ts'
+import type { RandomSequences } from '../../../net/minecraft/world/RandomSequences.d.ts'
 import type { PositionalRandomFactory } from '../../../net/minecraft/world/level/levelgen/PositionalRandomFactory.d.ts'
 export class RandomSequences$DirtyMarkingRandomSource extends Object implements RandomSource {
     static GAUSSIAN_SPREAD_FACTOR: number;
@@ -8,12 +9,13 @@ export class RandomSequences$DirtyMarkingRandomSource extends Object implements 
     static createThreadLocalInstance(): RandomSource;
     static createThreadLocalInstance(paramseed: number): RandomSource;
     static createThreadSafe(): RandomSource;
-    private constructor(null_: RandomSequences$DirtyMarkingRandomSource, random: RandomSource)
+    private constructor(null_: RandomSequences, random: RandomSource)
     // private random: RandomSource;
     consumeCount(rounds: number): void;
     equals(obj: Object | null): boolean;
     fork(): RandomSource;
     forkPositional(): PositionalRandomFactory;
+    hashCode(): number;
     nextBoolean(): boolean;
     nextDouble(): number;
     nextFloat(): number;

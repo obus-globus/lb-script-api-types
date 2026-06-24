@@ -1,3 +1,4 @@
+import type { UnsynchronizedByteArrayInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { UnsynchronizedByteArrayInputStream$Builder } from '../../../../../org/apache/commons/io/input/UnsynchronizedByteArrayInputStream$Builder.d.ts'
 export class UnsynchronizedByteArrayInputStream extends InputStream {
@@ -9,6 +10,7 @@ export class UnsynchronizedByteArrayInputStream extends InputStream {
     constructor(arg0: number[], arg1: number, arg2: number)
     private constructor(arg0: number[], arg1: number, arg2: number, arg3: number)
     private constructor(arg0: UnsynchronizedByteArrayInputStream$Builder)
+    constructor(arg0: UnsynchronizedByteArrayInputStream$Builder, arg1: UnsynchronizedByteArrayInputStream$1)
     // private data: number[];
     // private eod: number;
     // private markedOffset: number;

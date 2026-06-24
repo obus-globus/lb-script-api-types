@@ -6,6 +6,7 @@ import type { TimedStat } from '../../../../../../net/minecraft/util/profiling/j
 import type { ChunkPos } from '../../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 export class StructureGenStat extends Record implements TimedStat {
     static from(paramevent: RecordedEvent): StructureGenStat;
+    constructor(duration: Duration, chunkPos: ChunkPos, structureName: string, level: string, success: boolean)
     // private chunkPos: ChunkPos;
     // private duration: Duration;
     // private level: string;

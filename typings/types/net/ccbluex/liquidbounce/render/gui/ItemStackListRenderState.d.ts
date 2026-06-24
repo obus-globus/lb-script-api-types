@@ -11,32 +11,32 @@ import type { Vector2fc } from '../../../../../org/joml/Vector2fc.d.ts'
 export class ItemStackListRenderState extends Object implements GuiRearrangeable {
     constructor(guiGraphics: GuiGraphicsExtractor, stacks: ItemStack[], title: Component | null, titleColor: number, centerX: number, centerY: number, scale: number, rowLength: number, backgroundColor: Color4b, backgroundOutlineColor: Color4b, backgroundMargin: number, useTexture: boolean, itemStackRenderer: ItemStackListRenderer$SingleItemStackRenderer)
     // private backgroundColor: Color4b;
-    /*not mapped: */ getBackgroundColor$liquidbounce(): Color4b;
+    /*not mapped: */ getBackgroundColor$net_ccbluex_liquidbounce(): Color4b;
     // private backgroundMargin: number;
-    /*not mapped: */ getBackgroundMargin$liquidbounce(): number;
+    /*not mapped: */ getBackgroundMargin$net_ccbluex_liquidbounce(): number;
     // private backgroundOutlineColor: Color4b;
-    /*not mapped: */ getBackgroundOutlineColor$liquidbounce(): Color4b;
+    /*not mapped: */ getBackgroundOutlineColor$net_ccbluex_liquidbounce(): Color4b;
     bounds: BoundingBox2f;
     // private centerX: number;
-    /*not mapped: */ getCenterX$liquidbounce(): number;
+    /*not mapped: */ getCenterX$net_ccbluex_liquidbounce(): number;
     // private centerY: number;
-    /*not mapped: */ getCenterY$liquidbounce(): number;
+    /*not mapped: */ getCenterY$net_ccbluex_liquidbounce(): number;
     // private guiGraphics: GuiGraphicsExtractor;
-    /*not mapped: */ getGuiGraphics$liquidbounce(): GuiGraphicsExtractor;
+    /*not mapped: */ getGuiGraphics$net_ccbluex_liquidbounce(): GuiGraphicsExtractor;
     // private itemStackRenderer: ItemStackListRenderer$SingleItemStackRenderer;
-    /*not mapped: */ getItemStackRenderer$liquidbounce(): ItemStackListRenderer$SingleItemStackRenderer;
+    /*not mapped: */ getItemStackRenderer$net_ccbluex_liquidbounce(): ItemStackListRenderer$SingleItemStackRenderer;
     // private rowLength: number;
-    /*not mapped: */ getRowLength$liquidbounce(): number;
+    /*not mapped: */ getRowLength$net_ccbluex_liquidbounce(): number;
     // private scale: number;
-    /*not mapped: */ getScale$liquidbounce(): number;
+    /*not mapped: */ getScale$net_ccbluex_liquidbounce(): number;
     // private stacks: ItemStack[];
-    /*not mapped: */ getStacks$liquidbounce(): ItemStack[];
+    /*not mapped: */ getStacks$net_ccbluex_liquidbounce(): ItemStack[];
     // private title: Component | null;
-    /*not mapped: */ getTitle$liquidbounce(): Component | null;
+    /*not mapped: */ getTitle$net_ccbluex_liquidbounce(): Component | null;
     // private titleColor: number;
-    /*not mapped: */ getTitleColor$liquidbounce(): number;
+    /*not mapped: */ getTitleColor$net_ccbluex_liquidbounce(): number;
     // private useTexture: boolean;
-    /*not mapped: */ getUseTexture$liquidbounce(): boolean;
+    /*not mapped: */ getUseTexture$net_ccbluex_liquidbounce(): boolean;
     background(choice: ItemStackListRenderer$BackgroundMode): ItemStackListRenderState;
     center(center: Vector2fc): ItemStackListRenderState;
     centerX(centerX: number): ItemStackListRenderState;
@@ -63,7 +63,7 @@ export class ItemStackListRenderState extends Object implements GuiRearrangeable
     /**
      * @param rowLength The maximum count of stack which can be placed in one row.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.kt:71}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.kt:71}
      */
     rowLength(rowLength: number): ItemStackListRenderState;
     scale(scale: number): ItemStackListRenderState;

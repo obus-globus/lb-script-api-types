@@ -1,0 +1,13 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class KHRMaintenance9 extends Object {
+    static VK_DEFAULT_VERTEX_ATTRIBUTE_VALUE_ZERO_ZERO_ZERO_ONE_KHR: number;
+    static VK_DEFAULT_VERTEX_ATTRIBUTE_VALUE_ZERO_ZERO_ZERO_ZERO_KHR: number;
+    static VK_DEPENDENCY_ASYMMETRIC_EVENT_BIT_KHR: number;
+    static VK_KHR_MAINTENANCE_9_EXTENSION_NAME: string;
+    static VK_KHR_MAINTENANCE_9_SPEC_VERSION: number;
+    static VK_QUERY_POOL_CREATE_RESET_BIT_KHR: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_9_FEATURES_KHR: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MAINTENANCE_9_PROPERTIES_KHR: number;
+    static VK_STRUCTURE_TYPE_QUEUE_FAMILY_OWNERSHIP_TRANSFER_PROPERTIES_KHR: number;
+    private constructor()
+}

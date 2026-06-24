@@ -5,7 +5,6 @@ export class JvmMemberSignature$Method extends JvmMemberSignature {
     readonly desc: string;
     readonly name: string;
     asString(): string;
-    copy(arg0: string, arg1: string): JvmMemberSignature$Method;
     equals(arg0: Object | null): boolean;
     getDesc(): string;
     getName(): string;

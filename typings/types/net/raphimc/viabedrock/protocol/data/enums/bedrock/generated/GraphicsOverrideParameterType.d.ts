@@ -6,6 +6,7 @@ export class GraphicsOverrideParameterType extends Enum<GraphicsOverrideParamete
     static AmbientIlluminance: GraphicsOverrideParameterType;
     static CDOM: GraphicsOverrideParameterType;
     static Chlorophyll: GraphicsOverrideParameterType;
+    static EmissiveDesaturation: GraphicsOverrideParameterType;
     static FlashColor: GraphicsOverrideParameterType;
     static FlashIlluminance: GraphicsOverrideParameterType;
     static HighlightsContrast: GraphicsOverrideParameterType;
@@ -26,6 +27,7 @@ export class GraphicsOverrideParameterType extends Enum<GraphicsOverrideParamete
     static MoonColor: GraphicsOverrideParameterType;
     static MoonIlluminance: GraphicsOverrideParameterType;
     static MoonMieStrength: GraphicsOverrideParameterType;
+    static OrbitalOffsetDegrees: GraphicsOverrideParameterType;
     static RayleighStrength: GraphicsOverrideParameterType;
     static ShadowsContrast: GraphicsOverrideParameterType;
     static ShadowsGain: GraphicsOverrideParameterType;
@@ -34,6 +36,7 @@ export class GraphicsOverrideParameterType extends Enum<GraphicsOverrideParamete
     static ShadowsOffset: GraphicsOverrideParameterType;
     static ShadowsSaturation: GraphicsOverrideParameterType;
     static SkyHorizonColor: GraphicsOverrideParameterType;
+    static SkyIntensity: GraphicsOverrideParameterType;
     static SkyZenithColor: GraphicsOverrideParameterType;
     static SunColor: GraphicsOverrideParameterType;
     static SunGlareShape: GraphicsOverrideParameterType;
@@ -62,5 +65,5 @@ export class GraphicsOverrideParameterType extends Enum<GraphicsOverrideParamete
     private constructor(arg2: GraphicsOverrideParameterType)
     readonly value: number;
     getValue(): number;
-    name(): "SkyZenithColor" | "SkyHorizonColor" | "HorizonBlendMin" | "HorizonBlendMax" | "HorizonBlendStart" | "HorizonBlendMieStart" | "RayleighStrength" | "SunMieStrength" | "MoonMieStrength" | "SunGlareShape" | "Chlorophyll" | "CDOM" | "SuspendedSediment" | "WavesDepth" | "WavesFrequency" | "WavesFrequencyScaling" | "WavesSpeed" | "WavesSpeedScaling" | "WavesShape" | "WavesOctaves" | "WavesMix" | "WavesPull" | "WavesDirectionIncrement" | "MidtonesContrast" | "HighlightsContrast" | "ShadowsContrast" | "HighlightsGain" | "HighlightsGamma" | "HighlightsOffset" | "HighlightsSaturation" | "MidtonesGain" | "MidtonesGamma" | "MidtonesOffset" | "MidtonesSaturation" | "ShadowsGain" | "ShadowsGamma" | "ShadowsOffset" | "ShadowsSaturation" | "HighlightsMin" | "ShadowsMax" | "Temperature" | "SunColor" | "SunIlluminance" | "MoonColor" | "MoonIlluminance" | "FlashColor" | "FlashIlluminance" | "AmbientColor" | "AmbientIlluminance";
+    name(): "SkyZenithColor" | "SkyHorizonColor" | "HorizonBlendMin" | "HorizonBlendMax" | "HorizonBlendStart" | "HorizonBlendMieStart" | "RayleighStrength" | "SunMieStrength" | "MoonMieStrength" | "SunGlareShape" | "Chlorophyll" | "CDOM" | "SuspendedSediment" | "WavesDepth" | "WavesFrequency" | "WavesFrequencyScaling" | "WavesSpeed" | "WavesSpeedScaling" | "WavesShape" | "WavesOctaves" | "WavesMix" | "WavesPull" | "WavesDirectionIncrement" | "MidtonesContrast" | "HighlightsContrast" | "ShadowsContrast" | "HighlightsGain" | "HighlightsGamma" | "HighlightsOffset" | "HighlightsSaturation" | "MidtonesGain" | "MidtonesGamma" | "MidtonesOffset" | "MidtonesSaturation" | "ShadowsGain" | "ShadowsGamma" | "ShadowsOffset" | "ShadowsSaturation" | "HighlightsMin" | "ShadowsMax" | "Temperature" | "SunColor" | "SunIlluminance" | "MoonColor" | "MoonIlluminance" | "FlashColor" | "FlashIlluminance" | "AmbientColor" | "AmbientIlluminance" | "EmissiveDesaturation" | "SkyIntensity" | "OrbitalOffsetDegrees";
 }

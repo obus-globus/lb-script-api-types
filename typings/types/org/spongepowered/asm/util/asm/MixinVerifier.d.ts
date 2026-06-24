@@ -251,6 +251,7 @@ export class MixinVerifier extends SimpleVerifier {
     static V24: number;
     static V25: number;
     static V26: number;
+    static V27: number;
     static V9: number;
     static V_PREVIEW: number;
     constructor(arg0: number, arg1: Type, arg2: Type, arg3: Type[], arg4: boolean)

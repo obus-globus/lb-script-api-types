@@ -7,6 +7,7 @@ import type { ScreenRectangle } from '../../../../../../net/minecraft/client/gui
 import type { TextureSetup } from '../../../../../../net/minecraft/client/gui/render/TextureSetup.d.ts'
 import type { Matrix3x2f } from '../../../../../../org/joml/Matrix3x2f.d.ts'
 export class CircleGuiElementRenderState extends Record implements PoseReusableGuiElementRenderState {
+    constructor(x: number, y: number, radius: number, innerRatio: number, lutRow: number, pipeline: RenderPipeline, textureSetup: TextureSetup, pose: Matrix3x2f, scissorArea: ScreenRectangle, bounds: ScreenRectangle)
     // private bounds: ScreenRectangle;
     // private innerRatio: number;
     // private lutRow: number;

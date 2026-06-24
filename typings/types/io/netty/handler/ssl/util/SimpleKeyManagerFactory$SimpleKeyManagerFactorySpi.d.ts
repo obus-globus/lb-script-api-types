@@ -5,6 +5,7 @@ import type { KeyManagerFactorySpi } from '../../../../../javax/net/ssl/KeyManag
 import type { ManagerFactoryParameters } from '../../../../../javax/net/ssl/ManagerFactoryParameters.d.ts'
 export class SimpleKeyManagerFactory$SimpleKeyManagerFactorySpi extends KeyManagerFactorySpi {
     private constructor()
+    constructor(arg0: { [key: string]: any })
     // private keyManagers: KeyManager[];
     // private parent: SimpleKeyManagerFactory;
     engineGetKeyManagers(): KeyManager[];

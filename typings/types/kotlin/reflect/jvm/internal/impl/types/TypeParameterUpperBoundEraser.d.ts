@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Lazy } from '../../../../../../kotlin/Lazy.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { LockBasedStorageManager } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/LockBasedStorageManager.d.ts'
 import type { MemoizedFunctionToNotNull } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/MemoizedFunctionToNotNull.d.ts'
@@ -14,6 +15,7 @@ import type { ErrorType } from '../../../../../../kotlin/reflect/jvm/internal/im
 export class TypeParameterUpperBoundEraser extends Object {
     static Companion: TypeParameterUpperBoundEraser$Companion;
     constructor(arg0: ErasureProjectionComputer, arg1: TypeParameterErasureOptions)
+    constructor(arg0: ErasureProjectionComputer, arg1: TypeParameterErasureOptions, arg2: number, arg3: DefaultConstructorMarker)
     // private erroneousErasedBound$delegate: Lazy<Object>;
     // private getErasedUpperBound: MemoizedFunctionToNotNull<TypeParameterUpperBoundEraser$DataToEraseUpperBound, KotlinType>;
     // private options: TypeParameterErasureOptions;

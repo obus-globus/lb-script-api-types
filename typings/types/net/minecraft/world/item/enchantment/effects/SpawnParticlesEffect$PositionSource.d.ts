@@ -5,6 +5,7 @@ import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSo
 import type { SpawnParticlesEffect$PositionSourceType } from '../../../../../../net/minecraft/world/item/enchantment/effects/SpawnParticlesEffect$PositionSourceType.d.ts'
 export class SpawnParticlesEffect$PositionSource extends Record {
     static CODEC: MapCodec<SpawnParticlesEffect$PositionSource>;
+    constructor(type: SpawnParticlesEffect$PositionSourceType, offset: number, scale: number)
     // private offset: number;
     // private scale: number;
     // private type: SpawnParticlesEffect$PositionSourceType;

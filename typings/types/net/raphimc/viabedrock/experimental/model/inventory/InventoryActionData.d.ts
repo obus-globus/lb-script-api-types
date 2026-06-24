@@ -3,6 +3,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { InventorySource } from '../../../../../../net/raphimc/viabedrock/experimental/model/inventory/InventorySource.d.ts'
 import type { BedrockItem } from '../../../../../../net/raphimc/viabedrock/protocol/model/BedrockItem.d.ts'
 export class InventoryActionData extends Record {
+    constructor(source: InventorySource, slot: number, fromItem: BedrockItem, toItem: BedrockItem)
     // private fromItem: BedrockItem;
     // private slot: number;
     // private source: InventorySource;

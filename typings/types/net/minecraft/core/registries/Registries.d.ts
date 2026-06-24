@@ -1,9 +1,10 @@
+import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { MapCodec } from '../../../../com/mojang/serialization/MapCodec.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Advancement } from '../../../../net/minecraft/advancements/Advancement.d.ts'
-import type { CriterionTrigger } from '../../../../net/minecraft/advancements/CriterionTrigger.d.ts'
-import type { EntitySubPredicate } from '../../../../net/minecraft/advancements/criterion/EntitySubPredicate.d.ts'
+import type { EntitySubPredicate } from '../../../../net/minecraft/advancements/predicates/entity/EntitySubPredicate.d.ts'
+import type { CriterionTrigger } from '../../../../net/minecraft/advancements/triggers/CriterionTrigger.d.ts'
 import type { ArgumentTypeInfo } from '../../../../net/minecraft/commands/synchronization/ArgumentTypeInfo.d.ts'
 import type { DataComponentType } from '../../../../net/minecraft/core/component/DataComponentType.d.ts'
 import type { DataComponentPredicate$Type } from '../../../../net/minecraft/core/component/predicates/DataComponentPredicate$Type.d.ts'
@@ -35,6 +36,7 @@ import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldCloc
 import type { DamageType } from '../../../../net/minecraft/world/damagesource/DamageType.d.ts'
 import type { MobEffect } from '../../../../net/minecraft/world/effect/MobEffect.d.ts'
 import type { EntityType } from '../../../../net/minecraft/world/entity/EntityType.d.ts'
+import type { SulfurCubeArchetype } from '../../../../net/minecraft/world/entity/SulfurCubeArchetype.d.ts'
 import type { Attribute } from '../../../../net/minecraft/world/entity/ai/attributes/Attribute.d.ts'
 import type { MemoryModuleType } from '../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 import type { SensorType } from '../../../../net/minecraft/world/entity/ai/sensing/SensorType.d.ts'
@@ -126,8 +128,8 @@ import type { StructureTemplatePool } from '../../../../net/minecraft/world/leve
 import type { PoolAliasBinding } from '../../../../net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasBinding.d.ts'
 import type { PosRuleTestType } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/PosRuleTestType.d.ts'
 import type { RuleTestType } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/RuleTestType.d.ts'
+import type { StructureProcessor } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessor.d.ts'
 import type { StructureProcessorList } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessorList.d.ts'
-import type { StructureProcessorType } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessorType.d.ts'
 import type { RuleBlockEntityModifierType } from '../../../../net/minecraft/world/level/levelgen/structure/templatesystem/rule/blockentity/RuleBlockEntityModifierType.d.ts'
 import type { NormalNoise$NoiseParameters } from '../../../../net/minecraft/world/level/levelgen/synth/NormalNoise$NoiseParameters.d.ts'
 import type { Fluid } from '../../../../net/minecraft/world/level/material/Fluid.d.ts'
@@ -190,7 +192,7 @@ export class Registries extends Object {
     static ENCHANTMENT_PROVIDER: ResourceKey<EnchantmentProvider[]>;
     static ENCHANTMENT_PROVIDER_TYPE: ResourceKey<MapCodec<EnchantmentProvider>[]>;
     static ENCHANTMENT_VALUE_EFFECT_TYPE: ResourceKey<MapCodec<EnchantmentValueEffect>[]>;
-    static ENTITY_SUB_PREDICATE_TYPE: ResourceKey<MapCodec<EntitySubPredicate>[]>;
+    static ENTITY_SUB_PREDICATE_TYPE: ResourceKey<Codec<EntitySubPredicate>[]>;
     static ENTITY_TYPE: ResourceKey<EntityType<any>[]>;
     static ENVIRONMENT_ATTRIBUTE: ResourceKey<EnvironmentAttribute<Object>[]>;
     static FEATURE: ResourceKey<Feature<any>[]>;
@@ -263,9 +265,10 @@ export class Registries extends Object {
     static STRUCTURE_PIECE: ResourceKey<StructurePieceType[]>;
     static STRUCTURE_PLACEMENT: ResourceKey<StructurePlacementType<any>[]>;
     static STRUCTURE_POOL_ELEMENT: ResourceKey<StructurePoolElementType<any>[]>;
-    static STRUCTURE_PROCESSOR: ResourceKey<StructureProcessorType<any>[]>;
+    static STRUCTURE_PROCESSOR: ResourceKey<MapCodec<StructureProcessor>[]>;
     static STRUCTURE_SET: ResourceKey<StructureSet[]>;
     static STRUCTURE_TYPE: ResourceKey<StructureType<any>[]>;
+    static SULFUR_CUBE_ARCHETYPE: ResourceKey<SulfurCubeArchetype[]>;
     static TEMPLATE_POOL: ResourceKey<StructureTemplatePool[]>;
     static TEST_ENVIRONMENT: ResourceKey<TestEnvironmentDefinition<Object>[]>;
     static TEST_ENVIRONMENT_DEFINITION_TYPE: ResourceKey<MapCodec<TestEnvironmentDefinition<Object>>[]>;

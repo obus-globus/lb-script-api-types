@@ -10,10 +10,10 @@ export class BuiltSectionInfo$Builder extends Object {
     // private blockRenderPasses: TerrainRenderPass[];
     // private culledBlockEntities: BlockEntity[];
     // private globalBlockEntities: BlockEntity[];
-    readonly occlusionData: VisibilitySet;
+    readonly occlusionData: VisibilitySet[];
     addBlockEntity(arg0: BlockEntity, arg1: boolean): void;
     addRenderPass(arg0: TerrainRenderPass): void;
     addSprite(arg0: TextureAtlasSprite): void;
     build(): BuiltSectionInfo;
-    setOcclusionData(arg0: VisibilitySet): void;
+    setOcclusionData(arg0: VisibilitySet[]): void;
 }

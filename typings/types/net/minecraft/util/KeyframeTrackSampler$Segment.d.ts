@@ -1,7 +1,11 @@
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { EasingType } from '../../../net/minecraft/util/EasingType.d.ts'
+import type { Keyframe } from '../../../net/minecraft/util/Keyframe.d.ts'
+import type { KeyframeTrack } from '../../../net/minecraft/util/KeyframeTrack.d.ts'
 export class KeyframeTrackSampler$Segment<T extends unknown> extends Record {
+    private constructor(easing: EasingType, fromValue: T, fromTicks: number, toValue: T, toTicks: number)
+    constructor(track: KeyframeTrack<T>, from: Keyframe<T>, fromTicks: number, to: Keyframe<T>, toTicks: number)
     // private easing: EasingType;
     // private fromTicks: number;
     // private fromValue: T;

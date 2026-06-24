@@ -5,6 +5,7 @@ export class Projection extends Object {
     constructor()
     // private height: number;
     // private isMatrixDirty: boolean;
+    // private lastShader: boolean;
     // private matrix: Matrix4f;
     readonly matrixVersion: number;
     // private orthoInvertY: boolean;

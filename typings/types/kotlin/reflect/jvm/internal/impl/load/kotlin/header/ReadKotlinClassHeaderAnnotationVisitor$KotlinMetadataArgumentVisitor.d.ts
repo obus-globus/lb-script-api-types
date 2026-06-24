@@ -1,11 +1,14 @@
+import type { ReadKotlinClassHeaderAnnotationVisitor$1 } from '../../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { KotlinJvmBinaryClass$AnnotationArgumentVisitor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/KotlinJvmBinaryClass$AnnotationArgumentVisitor.d.ts'
 import type { KotlinJvmBinaryClass$AnnotationArrayArgumentVisitor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/KotlinJvmBinaryClass$AnnotationArrayArgumentVisitor.d.ts'
+import type { ReadKotlinClassHeaderAnnotationVisitor } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/header/ReadKotlinClassHeaderAnnotationVisitor.d.ts'
 import type { ClassId } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/ClassId.d.ts'
 import type { Name } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { ClassLiteralValue } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/constants/ClassLiteralValue.d.ts'
 export class ReadKotlinClassHeaderAnnotationVisitor$KotlinMetadataArgumentVisitor extends Object implements KotlinJvmBinaryClass$AnnotationArgumentVisitor {
-    private constructor(null_: ReadKotlinClassHeaderAnnotationVisitor$KotlinMetadataArgumentVisitor)
+    private constructor(null_: ReadKotlinClassHeaderAnnotationVisitor)
+    constructor(null_: ReadKotlinClassHeaderAnnotationVisitor, arg1: ReadKotlinClassHeaderAnnotationVisitor$1)
     // private dataArrayVisitor(): KotlinJvmBinaryClass$AnnotationArrayArgumentVisitor;
     // private stringsArrayVisitor(): KotlinJvmBinaryClass$AnnotationArrayArgumentVisitor;
     visit(arg0: Name, arg1: Object): void;

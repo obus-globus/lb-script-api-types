@@ -4,6 +4,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class SuspiciousStewEffect extends Record {
     static ARRAY_TYPE: Type<(Object | null)[]>;
     static TYPE: Type<SuspiciousStewEffect>;
+    constructor(mobEffect: number, duration: number)
     // private duration: number;
     // private mobEffect: number;
     duration(): number;

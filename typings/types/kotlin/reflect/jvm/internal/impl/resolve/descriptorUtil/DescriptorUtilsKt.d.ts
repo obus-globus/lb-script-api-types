@@ -6,7 +6,6 @@ import type { ClassifierDescriptor } from '../../../../../../../kotlin/reflect/j
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { InlineClassRepresentation } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/InlineClassRepresentation.d.ts'
 import type { ModuleDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor.d.ts'
-import type { MultiFieldValueClassRepresentation } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/MultiFieldValueClassRepresentation.d.ts'
 import type { ValueParameterDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ValueParameterDescriptor.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { LookupLocation } from '../../../../../../../kotlin/reflect/jvm/internal/impl/incremental/components/LookupLocation.d.ts'
@@ -28,12 +27,10 @@ export class DescriptorUtilsKt extends Object {
     static getInlineClassRepresentation(paramarg0: ClassDescriptor): InlineClassRepresentation<SimpleType>;
     static getKotlinTypeRefiner(paramarg0: ModuleDescriptor): KotlinTypeRefiner;
     static getModule(paramarg0: DeclarationDescriptor): ModuleDescriptor;
-    static getMultiFieldValueClassRepresentation(paramarg0: ClassDescriptor): MultiFieldValueClassRepresentation<SimpleType>;
     static getParents(paramarg0: DeclarationDescriptor): Sequence<DeclarationDescriptor>;
     static getParentsWithSelf(paramarg0: DeclarationDescriptor): Sequence<DeclarationDescriptor>;
     static getPropertyIfAccessor(paramarg0: CallableMemberDescriptor): CallableMemberDescriptor;
     static getSuperClassNotAny(paramarg0: ClassDescriptor): ClassDescriptor;
     static isTypeRefinementEnabled(paramarg0: ModuleDescriptor): boolean;
-    static overriddenTreeAsSequence(paramarg0: CallableMemberDescriptor, paramarg1: boolean): Sequence<CallableMemberDescriptor>;
     static resolveTopLevelClass(paramarg0: ModuleDescriptor, paramarg1: FqName, paramarg2: LookupLocation): ClassDescriptor;
 }

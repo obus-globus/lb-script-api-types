@@ -12,6 +12,8 @@ import type { RandomState } from '../../../../../../net/minecraft/world/level/le
 import type { WorldgenRandom } from '../../../../../../net/minecraft/world/level/levelgen/WorldgenRandom.d.ts'
 import type { StructureTemplateManager } from '../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager.d.ts'
 export class Structure$GenerationContext extends Record {
+    constructor(registryAccess: RegistryAccess, chunkGenerator: ChunkGenerator, biomeSource: BiomeSource, randomState: RandomState, structureTemplateManager: StructureTemplateManager, seed: number, chunkPos: ChunkPos, heightAccessor: LevelHeightAccessor, validBiome: (param0: Holder<Biome>) => boolean)
+    constructor(registryAccess: RegistryAccess, chunkGenerator: ChunkGenerator, biomeSource: BiomeSource, randomState: RandomState, structureTemplateManager: StructureTemplateManager, random: WorldgenRandom, seed: number, chunkPos: ChunkPos, heightAccessor: LevelHeightAccessor, validBiome: (param0: Holder<Biome>) => boolean)
     // private biomeSource: BiomeSource;
     // private chunkGenerator: ChunkGenerator;
     // private chunkPos: ChunkPos;

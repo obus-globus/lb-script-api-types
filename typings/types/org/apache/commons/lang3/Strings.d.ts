@@ -1,3 +1,4 @@
+import type { Strings$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { Strings$Builder } from '../../../../org/apache/commons/lang3/Strings$Builder.d.ts'
@@ -6,6 +7,7 @@ export abstract class Strings extends Object {
     static CS: Strings;
     static builder(): Strings$Builder;
     private constructor(arg0: boolean, arg1: boolean)
+    constructor(arg0: boolean, arg1: boolean, arg2: Strings$1)
     // private ignoreCase: boolean;
     // private nullIsLess: boolean;
     appendIfMissing(arg0: string, arg1: CharSequence, arg2: CharSequence[]): string;

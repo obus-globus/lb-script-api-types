@@ -1,8 +1,9 @@
 import type { Node } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/nodes/Node.d.ts'
 import type { Represent } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/representer/Represent.d.ts'
+import type { SafeRepresenter } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/representer/SafeRepresenter.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SafeRepresenter$RepresentPrimitiveArray extends Object implements Represent {
-    constructor(null_: SafeRepresenter$RepresentPrimitiveArray)
+    constructor(null_: SafeRepresenter)
     // private asBooleanList(arg0: Object): boolean[];
     // private asByteList(arg0: Object): number[];
     // private asCharList(arg0: Object): string[];

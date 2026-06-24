@@ -3,7 +3,6 @@ import type { MapCodec } from '../../../../../com/mojang/serialization/MapCodec.
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
-import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
 import type { SurfaceRules$Context } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$Context.d.ts'
 import type { SurfaceRules$RuleSource } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$RuleSource.d.ts'
 import type { SurfaceRules$SurfaceRule } from '../../../../../net/minecraft/world/level/levelgen/SurfaceRules$SurfaceRule.d.ts'
@@ -16,6 +15,6 @@ export class SurfaceRules$Bandlands extends Enum<SurfaceRules$Bandlands> impleme
     static values(): (Object | null)[];
     private constructor()
     apply(context: SurfaceRules$Context): SurfaceRules$SurfaceRule;
-    codec(): KeyDispatchDataCodec<SurfaceRules$RuleSource>;
+    codec(): MapCodec<SurfaceRules$Bandlands>;
     name(): "INSTANCE";
 }

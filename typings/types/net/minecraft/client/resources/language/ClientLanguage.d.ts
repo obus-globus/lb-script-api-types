@@ -9,6 +9,7 @@ import type { FormattedCharSequence } from '../../../../../net/minecraft/util/Fo
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class ClientLanguage extends Language implements ClientLanguageAccessor {
     static DEFAULT: string;
+    static DEFAULT_INSTANCE: Language;
     static ep$ClientLanguage(paramarg0: { [key: string]: string }, paramarg1: boolean): ClientLanguage;
     static getInstance(): Language;
     static inject(paramlanguage: Language): void;

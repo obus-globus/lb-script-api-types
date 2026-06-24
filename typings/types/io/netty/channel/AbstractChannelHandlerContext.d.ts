@@ -44,6 +44,7 @@ export abstract class AbstractChannelHandlerContext extends Object implements Ch
     deregister(arg0: ChannelPromise): ChannelFuture;
     disconnect(): ChannelFuture;
     disconnect(arg0: ChannelPromise): ChannelFuture;
+    // private ensurePromiseUseCorrectExecutor(arg0: ChannelPromise): ChannelPromise;
     executor(): (Object | null)[];
     // private findContextInbound(arg0: number): AbstractChannelHandlerContext;
     // private findContextOutbound(arg0: number): AbstractChannelHandlerContext;
@@ -60,14 +61,7 @@ export abstract class AbstractChannelHandlerContext extends Object implements Ch
     getInvokeTasks(): AbstractChannelHandlerContext$Tasks;
     handler(): ChannelHandler;
     hasAttr<T extends unknown>(arg0: AttributeKey<T>): boolean;
-    // private invokeBind(arg0: SocketAddress, arg1: ChannelPromise): void;
-    // private invokeClose(arg0: ChannelPromise): void;
-    // private invokeConnect(arg0: SocketAddress, arg1: SocketAddress, arg2: ChannelPromise): void;
-    // private invokeDeregister(arg0: ChannelPromise): void;
-    // private invokeDisconnect(arg0: ChannelPromise): void;
     // private invokeExceptionCaught(arg0: Throwable): void;
-    // private invokeFlush(): void;
-    // private invokeFlush0(): void;
     invokeHandler(): boolean;
     // private isNotValidPromise(arg0: ChannelPromise, arg1: boolean): boolean;
     isRemoved(): boolean;

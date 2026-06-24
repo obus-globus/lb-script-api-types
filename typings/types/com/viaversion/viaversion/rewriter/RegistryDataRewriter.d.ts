@@ -6,7 +6,6 @@ import type { RegistryEntry } from '../../../../com/viaversion/viaversion/api/mi
 import type { Protocol } from '../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { PacketWrapper } from '../../../../com/viaversion/viaversion/api/protocol/packet/PacketWrapper.d.ts'
 import type { RegistryDataRewriter as RegistryDataRewriter_2 } from '../../../../com/viaversion/viaversion/api/rewriter/RegistryDataRewriter.d.ts'
-import type { KeyMappings } from '../../../../com/viaversion/viaversion/util/KeyMappings.d.ts'
 import type { BiConsumer } from '../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -16,19 +15,16 @@ export class RegistryDataRewriter extends Object implements RegistryDataRewriter
     // private enchantmentEffectHandlers: { [key: string]: (param0: Map$Entry<string, Tag>[]) => void };
     // private protocol: Protocol<any, any, any, any>;
     // private registryEntryHandlers: { [key: string]: (param0: string, param1: Map$Entry<string, Tag>[]) => void };
-    // private registryKeyMappings: { [key: string]: KeyMappings };
     // private toAdd: { [key: string]: RegistryEntry[] };
     // private toRemove: string[];
     addEnchantmentEffectRewriter(arg0: string, arg1: (param0: Map$Entry<string, Tag>[]) => void): void;
     addEntries(arg0: string, arg1: RegistryEntry[]): void;
     addHandler(arg0: string, arg1: (param0: string, param1: Map$Entry<string, Tag>[]) => void): void;
     entriesFromTag(arg0: Map$Entry<string, Tag>[]): RegistryEntry[];
-    getMappings(arg0: string): KeyMappings;
     handle(arg0: UserConnection, arg1: string, arg2: RegistryEntry[]): RegistryEntry[];
     handle(arg0: PacketWrapper): void;
     handleParticleData(arg0: Map$Entry<string, Tag>[]): void;
     hasRegistriesToRemove(): boolean;
-    registryKeyMappings(): { [key: string]: KeyMappings };
     remove(arg0: string): void;
     // private runEffectRewriters(arg0: Map$Entry<string, Tag>[]): void;
     sendMissingRegistries(arg0: UserConnection): void;

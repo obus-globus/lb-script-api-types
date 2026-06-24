@@ -7,6 +7,7 @@ import type { TextureAtlasSprite } from '../../../../../../net/minecraft/client/
 import type { Material$Baked } from '../../../../../../net/minecraft/client/resources/model/sprite/Material$Baked.d.ts'
 export class BakedQuad$MaterialInfo extends Record {
     static of(parammaterial: Material$Baked, paramtransparency: Transparency, paramtintIndex: number, paramshade: boolean, paramlightEmission: number): BakedQuad$MaterialInfo;
+    constructor(sprite: TextureAtlasSprite, layer: ChunkSectionLayer, itemRenderType: RenderType, tintIndex: number, shade: boolean, lightEmission: number)
     // private itemRenderType: RenderType;
     // private layer: ChunkSectionLayer;
     // private lightEmission: number;

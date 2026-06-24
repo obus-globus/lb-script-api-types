@@ -9,4 +9,5 @@ export interface ContractBuilder extends Object{
     returns(): Returns;
     returns(value: Object | null): Returns;
     returnsNotNull(): ReturnsNotNull;
+    returnsResultOf<R extends unknown>(lambda: Function<R>): void;
 }

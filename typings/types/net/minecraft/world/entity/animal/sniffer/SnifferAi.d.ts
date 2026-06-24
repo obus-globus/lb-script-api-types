@@ -3,5 +3,6 @@ import type { ActivityData } from '../../../../../../net/minecraft/world/entity/
 import type { Sniffer } from '../../../../../../net/minecraft/world/entity/animal/sniffer/Sniffer.d.ts'
 export class SnifferAi extends Object {
     static getActivities(): ActivityData<Sniffer>[];
+    static updateActivity(parambody: Sniffer): void;
     constructor()
 }

@@ -1,3 +1,4 @@
+import type { LocalCache$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { LocalCache$Segment } from '../../../../com/google/common/cache/LocalCache$Segment.d.ts'
 import type { ReferenceEntry } from '../../../../com/google/common/cache/ReferenceEntry.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -16,6 +17,7 @@ export class LocalCache$EntryFactory extends Enum<LocalCache$EntryFactory> {
     static valueOf(paramname: string): LocalCache$EntryFactory;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: LocalCache$1)
     copyAccessEntry<K extends unknown, V extends unknown>(original: ReferenceEntry<K, V>, newEntry: ReferenceEntry<K, V>): void;
     copyEntry<K extends unknown, V extends unknown>(segment: LocalCache$Segment<K, V>, original: ReferenceEntry<K, V>, newNext: ReferenceEntry<K, V>, key: K): ReferenceEntry<K, V>;
     copyWriteEntry<K extends unknown, V extends unknown>(original: ReferenceEntry<K, V>, newEntry: ReferenceEntry<K, V>): void;

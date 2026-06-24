@@ -6,6 +6,7 @@ export class WorldSectionBox extends Record {
     static entityAccessBox(paramarg0: Level, paramarg1: AABB): WorldSectionBox;
     static relevantExpandedBlocksBox(paramarg0: Level, paramarg1: AABB): WorldSectionBox;
     static relevantFluidBox(paramarg0: Level, paramarg1: AABB): WorldSectionBox;
+    constructor(world: Level, chunkX1: number, chunkY1: number, chunkZ1: number, chunkX2: number, chunkY2: number, chunkZ2: number)
     // private chunkX1: number;
     // private chunkX2: number;
     // private chunkY1: number;

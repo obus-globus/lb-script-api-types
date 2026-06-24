@@ -5,6 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BiomeSpecialEffects$GrassColorModifier } from '../../../../../net/minecraft/world/level/biome/BiomeSpecialEffects$GrassColorModifier.d.ts'
 export class BiomeSpecialEffects extends Record {
     static CODEC: Codec<BiomeSpecialEffects>;
+    constructor(waterColor: number, foliageColorOverride: Optional<number>, dryFoliageColorOverride: Optional<number>, grassColorOverride: Optional<number>, grassColorModifier: BiomeSpecialEffects$GrassColorModifier)
     dryFoliageColorOverride: Optional<number>;
     foliageColorOverride: Optional<number>;
     grassColorModifier: BiomeSpecialEffects$GrassColorModifier;

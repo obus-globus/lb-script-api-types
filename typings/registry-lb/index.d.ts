@@ -68,6 +68,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.api.services.auth.OAuthClient$NettyAuthHandler": typeof import("../types/net/ccbluex/liquidbounce/api/services/auth/OAuthClient$NettyAuthHandler").OAuthClient$NettyAuthHandler;
     "net.ccbluex.liquidbounce.api.services.auth.OAuthClient$NettyChannelInitializer": typeof import("../types/net/ccbluex/liquidbounce/api/services/auth/OAuthClient$NettyChannelInitializer").OAuthClient$NettyChannelInitializer;
     "net.ccbluex.liquidbounce.api.services.auth.PKCEUtils": typeof import("../types/net/ccbluex/liquidbounce/api/services/auth/PKCEUtils").PKCEUtils;
+    "net.ccbluex.liquidbounce.api.services.auth.PKCEUtils$PKCEPair": typeof import("../types/net/ccbluex/liquidbounce/api/services/auth/PKCEUtils$PKCEPair").PKCEUtils$PKCEPair;
     "net.ccbluex.liquidbounce.api.services.cdn.ClientCdn": typeof import("../types/net/ccbluex/liquidbounce/api/services/cdn/ClientCdn").ClientCdn;
     "net.ccbluex.liquidbounce.api.services.client.ClientApi": typeof import("../types/net/ccbluex/liquidbounce/api/services/client/ClientApi").ClientApi;
     "net.ccbluex.liquidbounce.api.services.client.ClientUpdate": typeof import("../types/net/ccbluex/liquidbounce/api/services/client/ClientUpdate").ClientUpdate;
@@ -133,8 +134,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.authlib.yggdrasil.YggdrasilUserAuthenticationKt": typeof import("../types/net/ccbluex/liquidbounce/authlib/yggdrasil/YggdrasilUserAuthenticationKt").YggdrasilUserAuthenticationKt;
     "net.ccbluex.liquidbounce.common.ChunkUpdateFlag": typeof import("../types/net/ccbluex/liquidbounce/common/ChunkUpdateFlag").ChunkUpdateFlag;
     "net.ccbluex.liquidbounce.common.ClientLogoTexture": typeof import("../types/net/ccbluex/liquidbounce/common/ClientLogoTexture").ClientLogoTexture;
-    "net.ccbluex.liquidbounce.common.OutlineFlag": typeof import("../types/net/ccbluex/liquidbounce/common/OutlineFlag").OutlineFlag;
     "net.ccbluex.liquidbounce.common.ShapeFlag": typeof import("../types/net/ccbluex/liquidbounce/common/ShapeFlag").ShapeFlag;
+    "net.ccbluex.liquidbounce.common.StorageEspOutlineContext": typeof import("../types/net/ccbluex/liquidbounce/common/StorageEspOutlineContext").StorageEspOutlineContext;
     "net.ccbluex.liquidbounce.common.TweakedMethods": typeof import("../types/net/ccbluex/liquidbounce/common/TweakedMethods").TweakedMethods;
     "net.ccbluex.liquidbounce.config.ConfigSystem": typeof import("../types/net/ccbluex/liquidbounce/config/ConfigSystem").ConfigSystem;
     "net.ccbluex.liquidbounce.config.autoconfig.AutoConfig": typeof import("../types/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig").AutoConfig;
@@ -298,7 +299,6 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.event.events.DeathEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/DeathEvent").DeathEvent;
     "net.ccbluex.liquidbounce.event.events.DisconnectEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/DisconnectEvent").DisconnectEvent;
     "net.ccbluex.liquidbounce.event.events.DrawOutlinesEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/DrawOutlinesEvent").DrawOutlinesEvent;
-    "net.ccbluex.liquidbounce.event.events.DrawOutlinesEvent$OutlineType": typeof import("../types/net/ccbluex/liquidbounce/event/events/DrawOutlinesEvent$OutlineType").DrawOutlinesEvent$OutlineType;
     "net.ccbluex.liquidbounce.event.events.EntityEquipmentChangeEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/EntityEquipmentChangeEvent").EntityEquipmentChangeEvent;
     "net.ccbluex.liquidbounce.event.events.EntityHealthUpdateEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/EntityHealthUpdateEvent").EntityHealthUpdateEvent;
     "net.ccbluex.liquidbounce.event.events.EntityMarginEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/EntityMarginEvent").EntityMarginEvent;
@@ -431,10 +431,13 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.command.CommandExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/features/command/CommandExtensionsKt").CommandExtensionsKt;
     "net.ccbluex.liquidbounce.features.command.CommandManager": typeof import("../types/net/ccbluex/liquidbounce/features/command/CommandManager").CommandManager;
     "net.ccbluex.liquidbounce.features.command.CommandManager$GlobalSettings": typeof import("../types/net/ccbluex/liquidbounce/features/command/CommandManager$GlobalSettings").CommandManager$GlobalSettings;
+    "net.ccbluex.liquidbounce.features.command.CommandManager$ResolvedSubCommand": typeof import("../types/net/ccbluex/liquidbounce/features/command/CommandManager$ResolvedSubCommand").CommandManager$ResolvedSubCommand;
+    "net.ccbluex.liquidbounce.features.command.CommandManager$TokenizationResult": typeof import("../types/net/ccbluex/liquidbounce/features/command/CommandManager$TokenizationResult").CommandManager$TokenizationResult;
     "net.ccbluex.liquidbounce.features.command.CommandManagerKt": typeof import("../types/net/ccbluex/liquidbounce/features/command/CommandManagerKt").CommandManagerKt;
     "net.ccbluex.liquidbounce.features.command.Parameter": typeof import("../types/net/ccbluex/liquidbounce/features/command/Parameter").Parameter;
     "net.ccbluex.liquidbounce.features.command.builder.CommandBuilder": typeof import("../types/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder").CommandBuilder;
     "net.ccbluex.liquidbounce.features.command.builder.CommandBuilder$Companion": typeof import("../types/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder$Companion").CommandBuilder$Companion;
+    "net.ccbluex.liquidbounce.features.command.builder.KeyPrefixParts": typeof import("../types/net/ccbluex/liquidbounce/features/command/builder/KeyPrefixParts").KeyPrefixParts;
     "net.ccbluex.liquidbounce.features.command.builder.KeySegmentQuery": typeof import("../types/net/ccbluex/liquidbounce/features/command/builder/KeySegmentQuery").KeySegmentQuery;
     "net.ccbluex.liquidbounce.features.command.builder.ParameterBuilder": typeof import("../types/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder").ParameterBuilder;
     "net.ccbluex.liquidbounce.features.command.builder.ParameterBuilder$Companion": typeof import("../types/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder$Companion").ParameterBuilder$Companion;
@@ -770,6 +773,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.exploit.ModuleYggdrasilSignatureFix": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleYggdrasilSignatureFix").ModuleYggdrasilSignatureFix;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.ModuleDisabler": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/ModuleDisabler").ModuleDisabler;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerAdvancedAntiCheat1910": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerAdvancedAntiCheat1910").DisablerAdvancedAntiCheat1910;
+    "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerCubeCraft": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerCubeCraft").DisablerCubeCraft;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerGrimSpectate": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerGrimSpectate").DisablerGrimSpectate;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerHypixel": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerHypixel").DisablerHypixel;
     "net.ccbluex.liquidbounce.features.module.modules.exploit.disabler.disablers.DisablerHypixelScaffold": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/exploit/disabler/disablers/DisablerHypixelScaffold").DisablerHypixelScaffold;
@@ -998,6 +1002,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSafeWalk$OnEdge": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSafeWalk$OnEdge").ModuleSafeWalk$OnEdge;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSafeWalk$OnEdge$OnEdgeMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSafeWalk$OnEdge$OnEdgeMode").ModuleSafeWalk$OnEdge$OnEdgeMode;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSafeWalk$Safe": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSafeWalk$Safe").ModuleSafeWalk$Safe;
+    "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSnapTap": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSnapTap").ModuleSnapTap;
+    "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSnapTap$AxisState": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSnapTap$AxisState").ModuleSnapTap$AxisState;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSneak": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSneak").ModuleSneak;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSneak$Legit": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSneak$Legit").ModuleSneak$Legit;
     "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleSneak$Switch": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSneak$Switch").ModuleSneak$Switch;
@@ -1318,6 +1324,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.AutoShopInventoryManager": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopInventoryManager").AutoShopInventoryManager;
     "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.AutoShopItemUtilsKt": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopItemUtilsKt").AutoShopItemUtilsKt;
     "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.ModuleAutoShop": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop").ModuleAutoShop;
+    "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.ModuleAutoShop$PurchaseSimulationResult": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop$PurchaseSimulationResult").ModuleAutoShop$PurchaseSimulationResult;
     "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.ShopConfigPreset": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ShopConfigPreset").ShopConfigPreset;
     "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.TierItemUtilsKt": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/TierItemUtilsKt").TierItemUtilsKt;
     "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.purchasemode.NormalPurchaseMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/purchasemode/NormalPurchaseMode").NormalPurchaseMode;
@@ -1336,14 +1343,18 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.serializable.conditions.ItemConditionNode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/serializable/conditions/ItemConditionNode").ItemConditionNode;
     "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.serializable.conditions.ItemConditionNode$Companion": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/serializable/conditions/ItemConditionNode$Companion").ItemConditionNode$Companion;
     "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.ModuleChestStealer": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer").ModuleChestStealer;
+    "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.ModuleChestStealer$Distance": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer$Distance").ModuleChestStealer$Distance;
+    "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.ModuleChestStealer$Distance$StartItem": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer$Distance$StartItem").ModuleChestStealer$Distance$StartItem;
+    "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.ModuleChestStealer$Index": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer$Index").ModuleChestStealer$Index;
+    "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.ModuleChestStealer$Index$Order": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer$Index$Order").ModuleChestStealer$Index$Order;
     "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.ModuleChestStealer$ItemMoveMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer$ItemMoveMode").ModuleChestStealer$ItemMoveMode;
     "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.ModuleChestStealer$OnFull": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer$OnFull").ModuleChestStealer$OnFull;
+    "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.ModuleChestStealer$Random": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer$Random").ModuleChestStealer$Random;
     "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.ModuleChestStealer$SelectionMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/ModuleChestStealer$SelectionMode").ModuleChestStealer$SelectionMode;
     "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.features.FeatureChestAura": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureChestAura").FeatureChestAura;
     "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.features.FeatureChestAura$AwaitContainerSettings": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureChestAura$AwaitContainerSettings").FeatureChestAura$AwaitContainerSettings;
     "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.features.FeatureChestAura$PauseCondition": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureChestAura$PauseCondition").FeatureChestAura$PauseCondition;
     "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.features.FeatureSilentScreen": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen").FeatureSilentScreen;
-    "net.ccbluex.liquidbounce.features.module.modules.player.cheststealer.features.FeatureSilentScreen$drawInventoryTag$1": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1").FeatureSilentScreen$drawInventoryTag$1;
     "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.CleanupPlanGenerator": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlanGenerator").CleanupPlanGenerator;
     "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.CleanupPlanPlacementTemplate": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/CleanupPlanPlacementTemplate").CleanupPlanPlacementTemplate;
     "net.ccbluex.liquidbounce.features.module.modules.player.invcleaner.InventoryCleanupPlan": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/InventoryCleanupPlan").InventoryCleanupPlan;
@@ -1436,6 +1447,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.player.offhand.ModuleOffhand$Block": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand$Block").ModuleOffhand$Block;
     "net.ccbluex.liquidbounce.features.module.modules.player.offhand.ModuleOffhand$Crystal": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand$Crystal").ModuleOffhand$Crystal;
     "net.ccbluex.liquidbounce.features.module.modules.player.offhand.ModuleOffhand$Gapple": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand$Gapple").ModuleOffhand$Gapple;
+    "net.ccbluex.liquidbounce.features.module.modules.player.offhand.ModuleOffhand$LastSwitch": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand$LastSwitch").ModuleOffhand$LastSwitch;
     "net.ccbluex.liquidbounce.features.module.modules.player.offhand.ModuleOffhand$Mode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand$Mode").ModuleOffhand$Mode;
     "net.ccbluex.liquidbounce.features.module.modules.player.offhand.ModuleOffhand$Strength": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand$Strength").ModuleOffhand$Strength;
     "net.ccbluex.liquidbounce.features.module.modules.player.offhand.ModuleOffhand$SwitchMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/player/offhand/ModuleOffhand$SwitchMode").ModuleOffhand$SwitchMode;
@@ -1466,8 +1478,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP$BlockMergeKey": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP$BlockMergeKey").ModuleBlockESP$BlockMergeKey;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP$BlockTracker": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP$BlockTracker").ModuleBlockESP$BlockTracker;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP$BoxMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP$BoxMode").ModuleBlockESP$BoxMode;
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP$GlowMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP$GlowMode").ModuleBlockESP$GlowMode;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP$Mode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP$Mode").ModuleBlockESP$Mode;
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP$OutlineMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP$OutlineMode").ModuleBlockESP$OutlineMode;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP$TrackedState": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP$TrackedState").ModuleBlockESP$TrackedState;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockOutline": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockOutline").ModuleBlockOutline;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockOutline$Slide": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockOutline$Slide").ModuleBlockOutline$Slide;
@@ -1971,10 +1983,10 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.mcef.cef.MCEFDirectTexture": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MCEFDirectTexture").MCEFDirectTexture;
     "net.ccbluex.liquidbounce.mcef.cef.MCEFDirectTexture$DirectGlTexture": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MCEFDirectTexture$DirectGlTexture").MCEFDirectTexture$DirectGlTexture;
     "net.ccbluex.liquidbounce.mcef.cef.MCEFDragContext": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MCEFDragContext").MCEFDragContext;
+    "net.ccbluex.liquidbounce.mcef.cef.MCEFGpuTexture": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MCEFGpuTexture").MCEFGpuTexture;
     "net.ccbluex.liquidbounce.mcef.cef.MCEFRenderer": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MCEFRenderer").MCEFRenderer;
     "net.ccbluex.liquidbounce.mcef.cef.MacAcceleratedPaintBackend": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/MacAcceleratedPaintBackend").MacAcceleratedPaintBackend;
     "net.ccbluex.liquidbounce.mcef.cef.WindowsAcceleratedPaintBackend": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/WindowsAcceleratedPaintBackend").WindowsAcceleratedPaintBackend;
-    "net.ccbluex.liquidbounce.mcef.cef.WindowsAcceleratedPaintBackend$SharedTextureEntry": typeof import("../types/net/ccbluex/liquidbounce/mcef/cef/WindowsAcceleratedPaintBackend$SharedTextureEntry").WindowsAcceleratedPaintBackend$SharedTextureEntry;
     "net.ccbluex.liquidbounce.mcef.download.MCEFProvidedResourceManager": typeof import("../types/net/ccbluex/liquidbounce/mcef/download/MCEFProvidedResourceManager").MCEFProvidedResourceManager;
     "net.ccbluex.liquidbounce.mcef.glfw.MCEFGlfwCursorHelper": typeof import("../types/net/ccbluex/liquidbounce/mcef/glfw/MCEFGlfwCursorHelper").MCEFGlfwCursorHelper;
     "net.ccbluex.liquidbounce.mcef.listeners.OkHttpProgressInterceptor": typeof import("../types/net/ccbluex/liquidbounce/mcef/listeners/OkHttpProgressInterceptor").OkHttpProgressInterceptor;
@@ -1995,6 +2007,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.BatchCollector$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/BatchCollector$Companion").BatchCollector$Companion;
     "net.ccbluex.liquidbounce.render.BoxVertexIterator": typeof import("../types/net/ccbluex/liquidbounce/render/BoxVertexIterator").BoxVertexIterator;
     "net.ccbluex.liquidbounce.render.BoxVertexIteratorKt": typeof import("../types/net/ccbluex/liquidbounce/render/BoxVertexIteratorKt").BoxVertexIteratorKt;
+    "net.ccbluex.liquidbounce.render.CachedMeshStorage": typeof import("../types/net/ccbluex/liquidbounce/render/CachedMeshStorage").CachedMeshStorage;
+    "net.ccbluex.liquidbounce.render.CachedMeshStorage$UploadContext": typeof import("../types/net/ccbluex/liquidbounce/render/CachedMeshStorage$UploadContext").CachedMeshStorage$UploadContext;
     "net.ccbluex.liquidbounce.render.ClientRenderPipelines": typeof import("../types/net/ccbluex/liquidbounce/render/ClientRenderPipelines").ClientRenderPipelines;
     "net.ccbluex.liquidbounce.render.ClientRenderPipelines$GUI": typeof import("../types/net/ccbluex/liquidbounce/render/ClientRenderPipelines$GUI").ClientRenderPipelines$GUI;
     "net.ccbluex.liquidbounce.render.ClientRenderPipelines$JCEF": typeof import("../types/net/ccbluex/liquidbounce/render/ClientRenderPipelines$JCEF").ClientRenderPipelines$JCEF;
@@ -2014,6 +2028,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.GenericEntityHealthColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/GenericEntityHealthColorMode").GenericEntityHealthColorMode;
     "net.ccbluex.liquidbounce.render.GenericRainbowColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/GenericRainbowColorMode").GenericRainbowColorMode;
     "net.ccbluex.liquidbounce.render.GenericStaticColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/GenericStaticColorMode").GenericStaticColorMode;
+    "net.ccbluex.liquidbounce.render.GpuBufferRecycler": typeof import("../types/net/ccbluex/liquidbounce/render/GpuBufferRecycler").GpuBufferRecycler;
+    "net.ccbluex.liquidbounce.render.GpuBufferRecycler$PendingRecycle": typeof import("../types/net/ccbluex/liquidbounce/render/GpuBufferRecycler$PendingRecycle").GpuBufferRecycler$PendingRecycle;
     "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer": typeof import("../types/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer").GrowableMappableRingBuffer;
     "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer$Companion").GrowableMappableRingBuffer$Companion;
     "net.ccbluex.liquidbounce.render.MapColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/MapColorMode").MapColorMode;
@@ -2023,7 +2039,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.RenderPassExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/render/RenderPassExtensionsKt").RenderPassExtensionsKt;
     "net.ccbluex.liquidbounce.render.RenderShortcutsKt": typeof import("../types/net/ccbluex/liquidbounce/render/RenderShortcutsKt").RenderShortcutsKt;
     "net.ccbluex.liquidbounce.render.RenderShortcutsKt$WhenMappings": typeof import("../types/net/ccbluex/liquidbounce/render/RenderShortcutsKt$WhenMappings").RenderShortcutsKt$WhenMappings;
-    "net.ccbluex.liquidbounce.render.StaticMeshStorage": typeof import("../types/net/ccbluex/liquidbounce/render/StaticMeshStorage").StaticMeshStorage;
+    "net.ccbluex.liquidbounce.render.StaticGpuBufferPool": typeof import("../types/net/ccbluex/liquidbounce/render/StaticGpuBufferPool").StaticGpuBufferPool;
+    "net.ccbluex.liquidbounce.render.StaticGpuBufferPool$Pool": typeof import("../types/net/ccbluex/liquidbounce/render/StaticGpuBufferPool$Pool").StaticGpuBufferPool$Pool;
     "net.ccbluex.liquidbounce.render.VertexBuilderKt": typeof import("../types/net/ccbluex/liquidbounce/render/VertexBuilderKt").VertexBuilderKt;
     "net.ccbluex.liquidbounce.render.VertexBuilderKt$WhenMappings": typeof import("../types/net/ccbluex/liquidbounce/render/VertexBuilderKt$WhenMappings").VertexBuilderKt$WhenMappings;
     "net.ccbluex.liquidbounce.render.WorldRenderEnvironment": typeof import("../types/net/ccbluex/liquidbounce/render/WorldRenderEnvironment").WorldRenderEnvironment;
@@ -2100,7 +2117,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.gui.element.TexQuadGuiElementRenderState": typeof import("../types/net/ccbluex/liquidbounce/render/gui/element/TexQuadGuiElementRenderState").TexQuadGuiElementRenderState;
     "net.ccbluex.liquidbounce.render.gui.element.TriangleGuiElementRenderState": typeof import("../types/net/ccbluex/liquidbounce/render/gui/element/TriangleGuiElementRenderState").TriangleGuiElementRenderState;
     "net.ccbluex.liquidbounce.render.mesh.MeshDraw": typeof import("../types/net/ccbluex/liquidbounce/render/mesh/MeshDraw").MeshDraw;
-    "net.ccbluex.liquidbounce.render.mesh.MeshDraw$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/mesh/MeshDraw$Companion").MeshDraw$Companion;
+    "net.ccbluex.liquidbounce.render.mesh.MeshDraw$DefaultUploader": typeof import("../types/net/ccbluex/liquidbounce/render/mesh/MeshDraw$DefaultUploader").MeshDraw$DefaultUploader;
     "net.ccbluex.liquidbounce.render.utils.AnimatedValueGroup": typeof import("../types/net/ccbluex/liquidbounce/render/utils/AnimatedValueGroup").AnimatedValueGroup;
     "net.ccbluex.liquidbounce.render.utils.ColorUtils": typeof import("../types/net/ccbluex/liquidbounce/render/utils/ColorUtils").ColorUtils;
     "net.ccbluex.liquidbounce.render.utils.ColorUtilsKt": typeof import("../types/net/ccbluex/liquidbounce/render/utils/ColorUtilsKt").ColorUtilsKt;
@@ -2189,6 +2206,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.aiming.utils.RotationFindingKt": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFindingKt").RotationFindingKt;
     "net.ccbluex.liquidbounce.utils.aiming.utils.RotationFindingKt$EntriesMappings": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFindingKt$EntriesMappings").RotationFindingKt$EntriesMappings;
     "net.ccbluex.liquidbounce.utils.aiming.utils.RotationFindingKt$WhenMappings": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFindingKt$WhenMappings").RotationFindingKt$WhenMappings;
+    "net.ccbluex.liquidbounce.utils.aiming.utils.RotationMatrices": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/utils/RotationMatrices").RotationMatrices;
     "net.ccbluex.liquidbounce.utils.aiming.utils.RotationUtil": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil").RotationUtil;
     "net.ccbluex.liquidbounce.utils.aiming.utils.RotationUtilKt": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtilKt").RotationUtilKt;
     "net.ccbluex.liquidbounce.utils.aiming.utils.VisibilityPredicate$Block": typeof import("../types/net/ccbluex/liquidbounce/utils/aiming/utils/VisibilityPredicate$Block").VisibilityPredicate$Block;
@@ -2441,6 +2459,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.kotlin.CollectionExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/CollectionExtensionsKt").CollectionExtensionsKt;
     "net.ccbluex.liquidbounce.utils.kotlin.ConcurrentExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/ConcurrentExtensionsKt").ConcurrentExtensionsKt;
     "net.ccbluex.liquidbounce.utils.kotlin.EventPriorityConvention": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/EventPriorityConvention").EventPriorityConvention;
+    "net.ccbluex.liquidbounce.utils.kotlin.IntIntValuePair": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/IntIntValuePair").IntIntValuePair;
     "net.ccbluex.liquidbounce.utils.kotlin.MapExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/MapExtensionsKt").MapExtensionsKt;
     "net.ccbluex.liquidbounce.utils.kotlin.OptionalExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/OptionalExtensionsKt").OptionalExtensionsKt;
     "net.ccbluex.liquidbounce.utils.kotlin.Priority": typeof import("../types/net/ccbluex/liquidbounce/utils/kotlin/Priority").Priority;
@@ -2471,6 +2490,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.math.ShapeSurfaceMesh$Companion": typeof import("../types/net/ccbluex/liquidbounce/utils/math/ShapeSurfaceMesh$Companion").ShapeSurfaceMesh$Companion;
     "net.ccbluex.liquidbounce.utils.math.StringDistanceKt": typeof import("../types/net/ccbluex/liquidbounce/utils/math/StringDistanceKt").StringDistanceKt;
     "net.ccbluex.liquidbounce.utils.math.Vec2iKt": typeof import("../types/net/ccbluex/liquidbounce/utils/math/Vec2iKt").Vec2iKt;
+    "net.ccbluex.liquidbounce.utils.math.WorldLocalBox": typeof import("../types/net/ccbluex/liquidbounce/utils/math/WorldLocalBox").WorldLocalBox;
     "net.ccbluex.liquidbounce.utils.math.geometry.AlignedFace": typeof import("../types/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace").AlignedFace;
     "net.ccbluex.liquidbounce.utils.math.geometry.BoxIntersectionInterval": typeof import("../types/net/ccbluex/liquidbounce/utils/math/geometry/BoxIntersectionInterval").BoxIntersectionInterval;
     "net.ccbluex.liquidbounce.utils.math.geometry.Line": typeof import("../types/net/ccbluex/liquidbounce/utils/math/geometry/Line").Line;

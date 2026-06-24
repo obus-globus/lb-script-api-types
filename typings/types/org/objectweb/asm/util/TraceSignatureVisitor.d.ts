@@ -1,13 +1,12 @@
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { SignatureVisitor } from '../../../../org/objectweb/asm/signature/SignatureVisitor.d.ts'
+import type { TraceSignatureVisitor$Task } from '../../../../org/objectweb/asm/util/TraceSignatureVisitor$Task.d.ts'
 export class TraceSignatureVisitor extends SignatureVisitor {
     static EXTENDS: string;
     static INSTANCEOF: string;
     static SUPER: string;
     private constructor(arg0: StringBuilder)
     constructor(arg0: number)
-    // private argumentStack: number;
-    // private arrayStack: number;
     readonly declaration: StringBuilder;
     readonly exceptions: StringBuilder;
     // private formalTypeParameterVisited: boolean;
@@ -15,14 +14,15 @@ export class TraceSignatureVisitor extends SignatureVisitor {
     // private interfaceVisited: boolean;
     // private isInterface: boolean;
     // private parameterTypeVisited: boolean;
+    // private pendingTasks: TraceSignatureVisitor$Task[];
     readonly returnType: StringBuilder;
     // private separator: string;
     // private endFormals(): void;
     // private endType(): void;
+    // private endTypeArguments(): void;
     getDeclaration(): string;
     getExceptions(): string;
     getReturnType(): string;
-    // private startType(): void;
     visitArrayType(): SignatureVisitor;
     visitBaseType(arg0: string): void;
     visitClassBound(): SignatureVisitor;

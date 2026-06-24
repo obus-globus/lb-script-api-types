@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AlphaTestFunction } from '../../../../../net/irisshaders/iris/gl/blending/AlphaTestFunction.d.ts'
 export class AlphaTest extends Record {
     static ALWAYS: AlphaTest;
+    constructor(function_: AlphaTestFunction, reference: number)
     // private function: AlphaTestFunction;
     // private reference: number;
     equals(arg0: Object | null): boolean;

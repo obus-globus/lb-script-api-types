@@ -1,5 +1,6 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Lazy } from '../../../../../../../../../kotlin/Lazy.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { ClassConstructorDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { ClassKind } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassKind.d.ts'
@@ -32,6 +33,7 @@ export class LazyJavaClassDescriptor extends ClassDescriptorBase implements Java
     static Companion: ModuleAwareClassDescriptor$Companion;
     static Companion: LazyJavaClassDescriptor$Companion;
     constructor(arg0: LazyJavaResolverContext, arg1: DeclarationDescriptor, arg2: JavaClass, arg3: ClassDescriptor)
+    constructor(arg0: LazyJavaResolverContext, arg1: DeclarationDescriptor, arg2: JavaClass, arg3: ClassDescriptor, arg4: number, arg5: DefaultConstructorMarker)
     // private additionalSupertypeClassDescriptor: ClassDescriptor;
     readonly annotations: AnnotationDescriptor[];
     // private c: LazyJavaResolverContext;
@@ -48,7 +50,7 @@ export class LazyJavaClassDescriptor extends ClassDescriptorBase implements Java
     readonly typeConstructor: LazyJavaClassDescriptor$LazyJavaClassTypeConstructor;
     readonly unsubstitutedMemberScope: LazyJavaClassMemberScope;
     readonly visibility: Visibility;
-    copy$descriptors_jvm(arg0: JavaResolverCache, arg1: ClassDescriptor): LazyJavaClassDescriptor;
+    copy$org_jetbrains_kotlin_descriptors_jvm(arg0: JavaResolverCache, arg1: ClassDescriptor): LazyJavaClassDescriptor;
     getAnnotations(): AnnotationDescriptor[];
     getCompanionObjectDescriptor(): ClassDescriptor;
     getConstructors(): ClassConstructorDescriptor[];

@@ -1,3 +1,4 @@
+import type { Parser } from '../../../../com/oracle/js/parser/Parser.d.ts'
 import type { BinaryNode } from '../../../../com/oracle/js/parser/ir/BinaryNode.d.ts'
 import type { Expression } from '../../../../com/oracle/js/parser/ir/Expression.d.ts'
 import type { LexicalContext } from '../../../../com/oracle/js/parser/ir/LexicalContext.d.ts'
@@ -7,7 +8,7 @@ import type { PropertyNode } from '../../../../com/oracle/js/parser/ir/PropertyN
 import type { NodeVisitor } from '../../../../com/oracle/js/parser/ir/visitor/NodeVisitor.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Parser$VerifyDestructuringPatternNodeVisitor extends NodeVisitor<LexicalContext> {
-    constructor(null_: Parser$VerifyDestructuringPatternNodeVisitor, lc: LexicalContext)
+    constructor(null_: Parser, lc: LexicalContext)
     enterBinaryNode(binaryNode: BinaryNode): boolean;
     enterLiteralNode(literalNode: LiteralNode<Object>): boolean;
     enterObjectNode(objectNode: ObjectNode): boolean;

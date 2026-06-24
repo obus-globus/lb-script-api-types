@@ -1,9 +1,10 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { DiskLruCache } from '../../../okhttp3/internal/cache/DiskLruCache.d.ts'
 import type { DiskLruCache$Entry } from '../../../okhttp3/internal/cache/DiskLruCache$Entry.d.ts'
 import type { Sink } from '../../../okio/Sink.d.ts'
 import type { Source } from '../../../okio/Source.d.ts'
 export class DiskLruCache$Editor extends Object {
-    constructor(null_: DiskLruCache$Editor, entry: DiskLruCache$Entry)
+    constructor(null_: DiskLruCache, entry: DiskLruCache$Entry)
     // private done: boolean;
     // private entry: DiskLruCache$Entry;
     /*not mapped: */ getEntry$okhttp(): DiskLruCache$Entry;

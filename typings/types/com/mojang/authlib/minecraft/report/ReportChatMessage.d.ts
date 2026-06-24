@@ -4,6 +4,7 @@ import type { Instant } from '../../../../../java/time/Instant.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ReportChatMessage extends Record {
+    constructor(index: number, profileId: UUID, sessionId: UUID, timestamp: Instant, salt: number, lastSeen: ByteBuffer[], message: string, signature: ByteBuffer, messageReported: boolean)
     // private index: number;
     // private lastSeen: ByteBuffer[];
     // private message: string;

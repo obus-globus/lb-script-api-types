@@ -1,8 +1,8 @@
 import type { Object2ReferenceRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2ReferenceRBTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ReferenceRBTreeMap$TreeIterator extends Object {
-    constructor(null_: Object2ReferenceRBTreeMap$TreeIterator)
-    constructor(null_: Object2ReferenceRBTreeMap$TreeIterator)
+    constructor(null_: Map<K, V>)
+    constructor(null_: Map<K, V>, arg1: K)
     // private curr: Object2ReferenceRBTreeMap$Entry<K, V>;
     // private index: number;
     // private next: Object2ReferenceRBTreeMap$Entry<K, V>;

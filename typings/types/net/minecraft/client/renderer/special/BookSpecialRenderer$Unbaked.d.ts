@@ -6,6 +6,7 @@ import type { NoDataSpecialModelRenderer$Unbaked } from '../../../../../net/mine
 import type { SpecialModelRenderer$BakingContext } from '../../../../../net/minecraft/client/renderer/special/SpecialModelRenderer$BakingContext.d.ts'
 export class BookSpecialRenderer$Unbaked extends Record implements NoDataSpecialModelRenderer$Unbaked {
     static MAP_CODEC: MapCodec<BookSpecialRenderer$Unbaked>;
+    constructor(openAngle: number, page1: number, page2: number)
     // private openAngle: number;
     // private page1: number;
     // private page2: number;

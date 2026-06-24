@@ -14,6 +14,7 @@ export class ShapedCraftingRecipeDisplay extends Record implements RecipeDisplay
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RecipeDisplay>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ShapedCraftingRecipeDisplay>;
     static TYPE: RecipeDisplay$Type<ShapedCraftingRecipeDisplay>;
+    constructor(width: number, height: number, ingredients: SlotDisplay[], result: SlotDisplay, craftingStation: SlotDisplay)
     // private craftingStation: SlotDisplay;
     // private height: number;
     // private ingredients: SlotDisplay[];

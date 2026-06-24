@@ -12,6 +12,8 @@ import type { CustomQueryPayload } from '../../../../../net/minecraft/network/pr
 export class ClientboundCustomQueryPacket extends Record implements Packet<ClientLoginPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundCustomQueryPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(transactionId: number, payload: CustomQueryPayload)
+    private constructor(input: FriendlyByteBuf)
     // private payload: CustomQueryPayload;
     // private transactionId: number;
     equals(o: Object | null): boolean;

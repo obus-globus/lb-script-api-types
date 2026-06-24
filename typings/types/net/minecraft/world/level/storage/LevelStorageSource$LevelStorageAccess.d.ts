@@ -18,7 +18,7 @@ import type { PlayerDataStorage } from '../../../../../net/minecraft/world/level
 import type { WorldData } from '../../../../../net/minecraft/world/level/storage/WorldData.d.ts'
 import type { IORunnable } from '../../../../../org/apache/commons/io/function/IORunnable.d.ts'
 export class LevelStorageSource$LevelStorageAccess extends Object implements AutoCloseable {
-    private constructor(null_: LevelStorageSource$LevelStorageAccess, levelId: string, path: Path[])
+    private constructor(null_: LevelStorageSource, levelId: string, path: Path[])
     readonly levelDirectory: LevelStorageSource$LevelDirectory;
     readonly levelId: string;
     // private lock: DirectoryLock;

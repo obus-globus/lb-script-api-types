@@ -17,7 +17,6 @@ export class SodiumConfigBuilder extends Object implements ConfigEntryPoint {
     // private vanillaOpts: Options;
     // private vanillaStorage: () => void;
     // private window: Window;
-    // private buildAdvancedPage(arg0: ConfigBuilder): OptionPageBuilder;
     // private buildEarlyConfig(arg0: ConfigBuilder): void;
     // private buildFullConfig(arg0: ConfigBuilder): void;
     // private buildGeneralPage(arg0: ConfigBuilder): OptionPageBuilder;

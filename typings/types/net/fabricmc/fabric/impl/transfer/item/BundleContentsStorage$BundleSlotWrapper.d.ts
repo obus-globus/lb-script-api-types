@@ -4,7 +4,7 @@ import type { StorageView } from '../../../../../../net/fabricmc/fabric/api/tran
 import type { TransactionContext } from '../../../../../../net/fabricmc/fabric/api/transfer/v1/transaction/TransactionContext.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class BundleContentsStorage$BundleSlotWrapper extends Object implements StorageView<ItemVariant> {
-    private constructor(null_: BundleContentsStorage$BundleSlotWrapper, arg1: number)
+    private constructor(null_: (Object | null)[], arg1: number)
     // private index: number;
     extract(arg0: ItemVariant, arg1: number, arg2: TransactionContext): number;
     getAmount(): number;

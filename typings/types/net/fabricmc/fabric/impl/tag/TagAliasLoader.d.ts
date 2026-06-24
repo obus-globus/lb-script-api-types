@@ -5,7 +5,7 @@ import type { LayeredRegistryAccess } from '../../../../../net/minecraft/core/La
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { PreparableReloadListener$SharedState } from '../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
-export class TagAliasLoader extends SimpleReloadListener<Map<ResourceKey<Object[]>, TagAliasLoader$Data[]>> {
+export class TagAliasLoader extends SimpleReloadListener<Map<ResourceKey<(Object | null)[]>, TagAliasLoader$Data[]>> {
     static ID: Identifier;
     static applyToDynamicRegistries(paramarg0: LayeredRegistryAccess<Object>, paramarg1: Object | null): void;
     constructor()

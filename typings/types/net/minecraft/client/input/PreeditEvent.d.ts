@@ -4,6 +4,7 @@ import type { MutableComponent } from '../../../../net/minecraft/network/chat/Mu
 import type { Style } from '../../../../net/minecraft/network/chat/Style.d.ts'
 export class PreeditEvent extends Record {
     static createFromCallback(parampreeditSize: number, parampreeditPtr: number, paramblockCount: number, paramblockSizesPtr: number, paramfocusedBlock: number, paramcaret: number): PreeditEvent;
+    constructor(fullText: string, caretPosition: number, blocks: string[], focusedBlock: number)
     // private blocks: string[];
     // private caretPosition: number;
     // private focusedBlock: number;

@@ -11,6 +11,7 @@ import type { Style } from '../../../../../net/minecraft/network/chat/Style.d.ts
 import type { FormattedCharSequence } from '../../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class GuiMessage extends Record implements GuiMessageAddition, GuiMessageLineAddition {
+    constructor(addedTime: number, content: Component, signature: MessageSignature, source: GuiMessageSource, tag: GuiMessageTag)
     // private addedTime: number;
     // private content: Component;
     // private liquid_bounce$count: number;

@@ -16,10 +16,12 @@ import type { BucketItem } from '../../../../net/minecraft/world/item/BucketItem
 import type { Item } from '../../../../net/minecraft/world/item/Item.d.ts'
 import type { Item$Properties } from '../../../../net/minecraft/world/item/Item$Properties.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { ClipContext$Fluid } from '../../../../net/minecraft/world/level/ClipContext$Fluid.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { LevelAccessor } from '../../../../net/minecraft/world/level/LevelAccessor.d.ts'
 import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { Fluid } from '../../../../net/minecraft/world/level/material/Fluid.d.ts'
+import type { BlockHitResult } from '../../../../net/minecraft/world/phys/BlockHitResult.d.ts'
 import type { Vector3f } from '../../../../org/joml/Vector3f.d.ts'
 export class MobBucketItem extends BucketItem {
     static ABSOLUTE_MAX_STACK_SIZE: number;
@@ -41,6 +43,8 @@ export class MobBucketItem extends BucketItem {
     // private emptySound: SoundEvent;
     // private type: EntityType<Mob>;
     checkExtraContent(user: LivingEntity, level: Level, itemStack: ItemStack, pos: BlockPos): void;
+    emptyContents(user: LivingEntity, level: Level, pos: BlockPos, hitResult: BlockHitResult): boolean;
+    getFluidContext(): ClipContext$Fluid;
     playEmptySound(user: LivingEntity, level: LevelAccessor, pos: BlockPos): void;
     // private spawn(level: ServerLevel, itemStack: ItemStack, spawnPos: BlockPos): void;
 }

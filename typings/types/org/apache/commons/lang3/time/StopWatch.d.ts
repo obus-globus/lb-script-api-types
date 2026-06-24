@@ -7,6 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { FailableRunnable } from '../../../../../org/apache/commons/lang3/function/FailableRunnable.d.ts'
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
+import type { StopWatch$Split } from '../../../../../org/apache/commons/lang3/time/StopWatch$Split.d.ts'
 import type { StopWatch$SplitState } from '../../../../../org/apache/commons/lang3/time/StopWatch$SplitState.d.ts'
 import type { StopWatch$State } from '../../../../../org/apache/commons/lang3/time/StopWatch$State.d.ts'
 export class StopWatch extends Object {
@@ -17,6 +18,7 @@ export class StopWatch extends Object {
     readonly message: string;
     // private runningState: StopWatch$State;
     // private splitState: StopWatch$SplitState;
+    readonly splits: StopWatch$Split[];
     readonly startInstant: Instant;
     // private startTimeNanos: number;
     readonly stopInstant: Instant;
@@ -30,6 +32,7 @@ export class StopWatch extends Object {
     getSplitDuration(): Duration;
     getSplitNanoTime(): number;
     getSplitTime(): number;
+    getSplits(): StopWatch$Split[];
     getStartInstant(): Instant;
     getStartTime(): number;
     getStopInstant(): Instant;
@@ -46,6 +49,7 @@ export class StopWatch extends Object {
     run(arg0: () => void): void;
     runT<E extends Throwable>(arg0: () => void): void;
     split(): void;
+    split(arg0: string): void;
     start(): void;
     // private startResume(): void;
     stop(): void;

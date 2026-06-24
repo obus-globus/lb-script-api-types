@@ -2,7 +2,7 @@ import type { InputSource } from '../../../../com/ibm/icu/message2/InputSource.d
 import type { MFDataModel$Attribute } from '../../../../com/ibm/icu/message2/MFDataModel$Attribute.d.ts'
 import type { MFDataModel$Declaration } from '../../../../com/ibm/icu/message2/MFDataModel$Declaration.d.ts'
 import type { MFDataModel$Expression } from '../../../../com/ibm/icu/message2/MFDataModel$Expression.d.ts'
-import type { MFDataModel$Function } from '../../../../com/ibm/icu/message2/MFDataModel$Function.d.ts'
+import type { MFDataModel$FunctionRef } from '../../../../com/ibm/icu/message2/MFDataModel$FunctionRef.d.ts'
 import type { MFDataModel$Literal } from '../../../../com/ibm/icu/message2/MFDataModel$Literal.d.ts'
 import type { MFDataModel$LiteralOrCatchallKey } from '../../../../com/ibm/icu/message2/MFDataModel$LiteralOrCatchallKey.d.ts'
 import type { MFDataModel$LiteralOrVariableRef } from '../../../../com/ibm/icu/message2/MFDataModel$LiteralOrVariableRef.d.ts'
@@ -27,7 +27,7 @@ export class MFParser extends Object {
     // private getAttributes(): MFDataModel$Attribute[];
     // private getComplexMessage(): MFDataModel$Message;
     // private getDeclaration(): MFDataModel$Declaration;
-    // private getFunction(arg0: boolean): MFDataModel$Function;
+    // private getFunction(arg0: boolean): MFDataModel$FunctionRef;
     // private getFunctionExpression(): MFDataModel$Expression;
     // private getIdentifier(): string;
     // private getKey(arg0: boolean): MFDataModel$LiteralOrCatchallKey;
@@ -35,10 +35,9 @@ export class MFParser extends Object {
     // private getLiteralExpression(): MFDataModel$Expression;
     // private getLiteralOrVariableRef(): MFDataModel$LiteralOrVariableRef;
     // private getMarkup(): MFDataModel$Markup;
-    // private getMarkupFunction(): MFDataModel$Function;
+    // private getMarkupFunction(): MFDataModel$FunctionRef;
     // private getMatch(arg0: MFDataModel$Declaration[]): MFDataModel$SelectMessage;
     // private getName(): string;
-    // private getNumberLiteral(): MFDataModel$Literal;
     // private getOption(): MFDataModel$Option;
     // private getOptions(): { [key: string]: MFDataModel$Option };
     // private getPattern(): MFDataModel$Pattern;
@@ -46,7 +45,7 @@ export class MFParser extends Object {
     // private getPlaceholder(): MFDataModel$Expression;
     // private getQuotedLiteral(arg0: boolean): MFDataModel$Literal;
     // private getQuotedPattern(): MFDataModel$Pattern;
-    // private getText(): string;
+    // private getTextCharOrEscapedChar(): string;
     // private getUnQuotedLiteral(arg0: boolean): MFDataModel$Literal;
     // private getVariableExpression(): MFDataModel$VariableExpression;
     // private getVariableRef(): MFDataModel$VariableRef;

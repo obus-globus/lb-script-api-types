@@ -6,11 +6,14 @@ import type { ScreenRectangle } from '../../../../../../net/minecraft/client/gui
 import type { TextureSetup } from '../../../../../../net/minecraft/client/gui/render/TextureSetup.d.ts'
 import type { GuiElementRenderState } from '../../../../../../net/minecraft/client/renderer/state/gui/GuiElementRenderState.d.ts'
 import type { Matrix3x2f } from '../../../../../../org/joml/Matrix3x2f.d.ts'
+import type { Matrix3x2fc } from '../../../../../../org/joml/Matrix3x2fc.d.ts'
 export class BlitRenderState extends Record implements GuiElementRenderState {
+    constructor(pipeline: RenderPipeline, textureSetup: TextureSetup, pose: Matrix3x2f, x0: number, y0: number, x1: number, y1: number, u0: number, u1: number, v0: number, v1: number, color: number, scissorArea: ScreenRectangle)
+    constructor(pipeline: RenderPipeline, textureSetup: TextureSetup, pose: Matrix3x2fc, x0: number, y0: number, x1: number, y1: number, u0: number, u1: number, v0: number, v1: number, color: number, scissorArea: ScreenRectangle, bounds: ScreenRectangle)
     // private bounds: ScreenRectangle;
     // private color: number;
     // private pipeline: RenderPipeline;
-    // private pose: Matrix3x2f;
+    // private pose: Matrix3x2fc;
     // private scissorArea: ScreenRectangle;
     // private textureSetup: TextureSetup;
     // private u0: number;
@@ -27,7 +30,7 @@ export class BlitRenderState extends Record implements GuiElementRenderState {
     equals(o: Object | null): boolean;
     hashCode(): number;
     pipeline(): RenderPipeline;
-    pose(): Matrix3x2f;
+    pose(): Matrix3x2fc;
     scissorArea(): ScreenRectangle;
     textureSetup(): TextureSetup;
     toString(): string;

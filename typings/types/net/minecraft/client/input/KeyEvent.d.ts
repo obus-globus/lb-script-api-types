@@ -3,6 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { InputWithModifiers } from '../../../../net/minecraft/client/input/InputWithModifiers.d.ts'
 export class KeyEvent extends Record implements InputWithModifiers {
     static NOT_DIGIT: number;
+    constructor(key: number, scancode: number, modifiers: number)
     // private key: number;
     // private modifiers: number;
     // private scancode: number;

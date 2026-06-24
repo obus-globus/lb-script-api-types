@@ -9,6 +9,7 @@ export class AuthenticationErrorCode extends Object {
     static INVALID_AUTHORIZATION_RESULT: string;
     static INVALID_ENDPOINT_URI: string;
     static INVALID_GRANT: string;
+    static INVALID_INSTANCE: string;
     static INVALID_INSTANCE_DISCOVERY_METADATA: string;
     static INVALID_JSON: string;
     static INVALID_JWT: string;

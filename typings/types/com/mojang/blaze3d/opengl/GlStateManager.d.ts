@@ -1,19 +1,23 @@
-import type { GlStateManager$BlendState } from '../../../../com/mojang/blaze3d/opengl/GlStateManager$BlendState.d.ts'
 import type { GlStateManager$DepthState } from '../../../../com/mojang/blaze3d/opengl/GlStateManager$DepthState.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { GlStateManagerAccessor } from '../../../../net/irisshaders/iris/mixin/GlStateManagerAccessor.d.ts'
+import type { Vector4fc } from '../../../../org/joml/Vector4fc.d.ts'
 export class GlStateManager extends Object implements GlStateManagerAccessor {
     static _activeTexture(paramtexture: number): void;
     static _bindTexture(paramid: number): void;
+    static _blendEquationSeparate(parammodeRgb: number, parammodeAlpha: number): void;
     static _blendFuncSeparate(paramsrcRgb: number, paramdstRgb: number, paramsrcAlpha: number, paramdstAlpha: number): void;
     static _clear(parammask: number): void;
+    static _clearBuffer(paramclearDepth: number): void;
+    static _clearBuffer(paramindex: number, paramclearColor: Vector4fc): void;
     static _colorMask(paramwriteMask: number): void;
+    static _colorMask(paramindex: number, paramwriteMask: number): void;
     static _deleteTexture(paramid: number): void;
     static _depthFunc(paramfunc: number): void;
     static _depthMask(parammask: boolean): void;
-    static _disableBlend(): void;
+    static _disableBlend(paramindex: number): void;
     static _disableColorLogicOp(): void;
     static _disableCull(): void;
     static _disableDepthTest(): void;
@@ -21,7 +25,7 @@ export class GlStateManager extends Object implements GlStateManagerAccessor {
     static _disableScissorTest(): void;
     static _drawArrays(parammode: number, paramfirst: number, paramcount: number): void;
     static _drawElements(parammode: number, paramcount: number, paramtype: number, paramindices: number): void;
-    static _enableBlend(): void;
+    static _enableBlend(paramindex: number): void;
     static _enableColorLogicOp(): void;
     static _enableCull(): void;
     static _enableDepthTest(): void;
@@ -69,12 +73,13 @@ export class GlStateManager extends Object implements GlStateManagerAccessor {
     static _viewport(paramx: number, paramy: number, paramwidth: number, paramheight: number): void;
     static clearGlErrors(): void;
     static getActiveTexture(): number;
-    static getBLEND(): GlStateManager$BlendState;
-    static getCOLOR_MASK(): number;
+    static getBLEND(): (Object | null)[];
+    static getCOLOR_MASK(): number[];
     static getDEPTH(): GlStateManager$DepthState;
     static getFrameBuffer(paramtarget: number): number;
     static getTEXTURES(): (Object | null)[];
     static glAttachShader(paramprogram: number, paramshader: number): void;
+    static glBlendEquationSeparate(parammodeRgb: number, parammodeAlpha: number): void;
     static glBlendFuncSeparate(paramsrcColor: number, paramdstColor: number, paramsrcAlpha: number, paramdstAlpha: number): void;
     static glCompileShader(paramshader: number): void;
     static glCreateProgram(): number;

@@ -5,6 +5,7 @@ import type { Quaternionf } from '../../../org/joml/Quaternionf.d.ts'
 export class GivensParameters extends Record {
     static fromPositiveAngle(paramangle: number): GivensParameters;
     static fromUnnormalized(paramsinHalf: number, paramcosHalf: number): GivensParameters;
+    constructor(sinHalf: number, cosHalf: number)
     // private cosHalf: number;
     // private sinHalf: number;
     aroundX(input: Matrix3f): Matrix3f;

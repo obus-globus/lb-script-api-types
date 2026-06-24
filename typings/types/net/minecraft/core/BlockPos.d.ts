@@ -49,6 +49,7 @@ export class BlockPos extends Vec3i {
     static getZ(paramblockNode: number): number;
     static max(parama: BlockPos, paramb: BlockPos): BlockPos;
     static min(parama: BlockPos, paramb: BlockPos): BlockPos;
+    static neighborColumn(paramstartX: number, paramstartY: number, paramstartZ: number, paramendY: number): BlockPos[];
     static of(paramblockNode: number): BlockPos;
     static offset(paramblockNode: number, paramstepX: number, paramstepY: number, paramstepZ: number): number;
     static offset(paramblockNode: number, paramoffset: Direction): number;
@@ -71,8 +72,6 @@ export class BlockPos extends Vec3i {
     cross(upVector: Vec3i): BlockPos;
     east(): BlockPos;
     east(arg0: number): BlockPos;
-    getBottomCenter(): Vec3;
-    getCenter(): Vec3;
     immutable(): BlockPos;
     multiply(scale: number): BlockPos;
     multiply(xScale: number, yScale: number, zScale: number): Vec3i;

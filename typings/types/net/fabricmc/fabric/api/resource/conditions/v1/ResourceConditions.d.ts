@@ -7,6 +7,7 @@ export class ResourceConditions extends Object {
     static CONDITIONS_KEY: string;
     static OVERLAYS_KEY: string;
     static allModsLoaded(paramarg0: (Object | null)[]): ResourceCondition;
+    static alwaysFalse(): ResourceCondition;
     static alwaysTrue(): ResourceCondition;
     static and(paramarg0: (Object | null)[]): ResourceCondition;
     static anyModsLoaded(paramarg0: (Object | null)[]): ResourceCondition;

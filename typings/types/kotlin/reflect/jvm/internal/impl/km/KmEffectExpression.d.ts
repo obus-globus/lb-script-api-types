@@ -10,10 +10,10 @@ export class KmEffectExpression extends Object {
     readonly orArguments: KmEffectExpression[];
     readonly parameterIndex: number;
     getAndArguments(): KmEffectExpression[];
-    getFlags$kotlin_metadata(): number;
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
     getOrArguments(): KmEffectExpression[];
     setConstantValue(arg0: KmConstantValue): void;
-    setFlags$kotlin_metadata(arg0: number): void;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
     setInstanceType(arg0: KmType): void;
     setParameterIndex(arg0: number): void;
 }

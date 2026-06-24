@@ -1,3 +1,4 @@
+import type { ClosingFuture$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AsyncFunction } from '../../../../../com/google/common/util/concurrent/AsyncFunction.d.ts'
 import type { ClosingFuture$AsyncClosingCallable } from '../../../../../com/google/common/util/concurrent/ClosingFuture$AsyncClosingCallable.d.ts'
 import type { ClosingFuture$AsyncClosingFunction } from '../../../../../com/google/common/util/concurrent/ClosingFuture$AsyncClosingFunction.d.ts'
@@ -17,7 +18,6 @@ import type { ListenableFuture } from '../../../../../com/google/common/util/con
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { CountDownLatch } from '../../../../../java/util/concurrent/CountDownLatch.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
-import type { AtomicReference } from '../../../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class ClosingFuture<V extends unknown> extends Object {
@@ -34,22 +34,17 @@ export class ClosingFuture<V extends unknown> extends Object {
     static whenAllSucceed(paramfuture1: ClosingFuture<Object>, paramfuture2: ClosingFuture<Object>, paramfuture3: ClosingFuture<Object>, paramfuture4: ClosingFuture<Object>, paramfuture5: ClosingFuture<Object>, paramfuture6: ClosingFuture<Object>, parammoreFutures: Object | null): ClosingFuture$Combiner;
     static whenAllSucceed(paramfutures: ClosingFuture<Object>[]): ClosingFuture$Combiner;
     static withoutCloser(paramfunction: (param0: Object | null) => ListenableFuture<Object>): (param0: ClosingFuture$DeferredCloser, param1: Object | null) => ClosingFuture<Object>;
+    constructor(arg0: ListenableFuture<Object>, arg1: ClosingFuture$1)
     private constructor(future: ListenableFuture<V>)
     private constructor(future: ListenableFuture<V>, closeables: { [key: string]: any })
-    // private closeables: { [key: string]: any };
-    // private future: FluentFuture<V>;
-    // private state: AtomicReference<ClosingFuture$State>;
+    // private state: ClosingFuture$State<V>;
     // private becomeSubsumedInto(otherCloseables: { [key: string]: any }): void;
     cancel(mayInterruptIfRunning: boolean): boolean;
     catching<X extends Throwable>(exceptionType: Class<X>, fallback: (param0: ClosingFuture$DeferredCloser, param1: X) => V, executor: Executor): ClosingFuture<V>;
     catchingAsync<X extends Throwable>(exceptionType: Class<X>, fallback: (param0: ClosingFuture$DeferredCloser, param1: X) => ClosingFuture<V>, executor: Executor): ClosingFuture<V>;
     // private catchingAsyncMoreGeneric<X extends Throwable, W extends V>(exceptionType: Class<X>, fallback: (param0: ClosingFuture$DeferredCloser, param1: X) => ClosingFuture<W>, executor: Executor): ClosingFuture<V>;
     // private catchingMoreGeneric<X extends Throwable, W extends V>(exceptionType: Class<X>, fallback: (param0: ClosingFuture$DeferredCloser, param1: X) => W, executor: Executor): ClosingFuture<V>;
-    // private checkAndUpdateState(oldState: ClosingFuture$State, newState: ClosingFuture$State): void;
-    // private close(): void;
-    // private compareAndUpdateState(oldState: ClosingFuture$State, newState: ClosingFuture$State): boolean;
     // private derive<U extends unknown>(future: FluentFuture<U>): ClosingFuture<U>;
-    finalize(): void;
     finishToFuture(): FluentFuture<V>;
     finishToValueAndCloser(consumer: (param0: ClosingFuture$ValueAndCloser<V>) => void, executor: Executor): void;
     statusFuture(): ListenableFuture<Object>;

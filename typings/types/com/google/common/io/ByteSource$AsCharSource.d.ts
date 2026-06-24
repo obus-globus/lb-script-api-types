@@ -11,7 +11,7 @@ export class ByteSource$AsCharSource extends CharSource {
     static concat(paramsources: Iterator<CharSource>): CharSource;
     static empty(): CharSource;
     static wrap(paramcharSequence: CharSequence): CharSource;
-    constructor(null_: ByteSource$AsCharSource, charset: Charset)
+    constructor(null_: ByteSource, charset: Charset)
     // private charset: Charset;
     asByteSource(charset: Charset): ByteSource;
     openStream(): Reader;

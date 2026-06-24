@@ -7,7 +7,9 @@ export class ExtensionRegistryLite extends Object {
     static newInstance(): ExtensionRegistryLite;
     constructor()
     private constructor(arg0: boolean)
+    constructor(arg0: ExtensionRegistryLite)
     // private extensionsByNumber: Map<ExtensionRegistryLite$ObjectIntPair, GeneratedMessageLite$GeneratedExtension<any, Object>>;
     add(arg0: GeneratedMessageLite$GeneratedExtension<any, Object>): void;
     findLiteExtensionByNumber<ContainingType extends MessageLite>(arg0: ContainingType, arg1: number): GeneratedMessageLite$GeneratedExtension<ContainingType, Object>;
+    getUnmodifiable(): ExtensionRegistryLite;
 }

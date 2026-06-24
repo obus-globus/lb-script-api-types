@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { URLWrapper } from '../../../../../net/lenni0451/commons/httpclient/utils/URLWrapper.d.ts'
 import type { URLWrapper$Parameter } from '../../../../../net/lenni0451/commons/httpclient/utils/URLWrapper$Parameter.d.ts'
 export class URLWrapper$QueryParametersWrapper extends Object {
-    constructor(null_: URLWrapper$QueryParametersWrapper)
+    constructor(null_: URLWrapper)
     readonly parameters: URLWrapper$Parameter[];
     addParameter(arg0: string, arg1: string): URLWrapper$QueryParametersWrapper;
     addParameter(arg0: URLWrapper$Parameter): URLWrapper$QueryParametersWrapper;

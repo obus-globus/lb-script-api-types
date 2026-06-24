@@ -9,6 +9,7 @@ import type { TextureSlots } from '../../../../../net/minecraft/client/resources
 import type { ItemDisplayContext } from '../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 export class ModelRenderProperties extends Record {
     static fromResolvedModel(parambaker: ModelBaker, paramresolvedModel: ResolvedModel, paramtextureSlots: TextureSlots): ModelRenderProperties;
+    constructor(usesBlockLight: boolean, particleMaterial: Material$Baked, transforms: ItemTransforms)
     // private particleMaterial: Material$Baked;
     // private transforms: ItemTransforms;
     // private usesBlockLight: boolean;

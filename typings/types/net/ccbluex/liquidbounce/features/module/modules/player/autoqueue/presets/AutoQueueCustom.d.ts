@@ -10,11 +10,11 @@ export class AutoQueueCustom extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: AutoQueueCustom;
     // private actions: ModeValueGroup<AutoQueueAction>;
-    /*not mapped: */ getActions$liquidbounce(): ModeValueGroup<AutoQueueAction>;
+    /*not mapped: */ getActions$net_ccbluex_liquidbounce(): ModeValueGroup<AutoQueueAction>;
     readonly parent: ModeValueGroup<any>;
     // private tickHandler: EventHook<GameTickEvent>;
     // private triggers: ModeValueGroup<AutoQueueTrigger>;
-    /*not mapped: */ getTriggers$liquidbounce(): ModeValueGroup<AutoQueueTrigger>;
+    /*not mapped: */ getTriggers$net_ccbluex_liquidbounce(): ModeValueGroup<AutoQueueTrigger>;
     // private waitUntilWorldChange: boolean;
     // private /*not mapped: */ getWaitUntilWorldChange(): boolean;
     // private worldChange: EventHook<WorldChangeEvent>;

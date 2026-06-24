@@ -4,6 +4,7 @@ import type { AnimationChannel } from '../../../../net/minecraft/client/animatio
 import type { KeyframeAnimation } from '../../../../net/minecraft/client/animation/KeyframeAnimation.d.ts'
 import type { ModelPart } from '../../../../net/minecraft/client/model/geom/ModelPart.d.ts'
 export class AnimationDefinition extends Record {
+    constructor(lengthInSeconds: number, looping: boolean, boneAnimations: { [key: string]: AnimationChannel[] })
     // private boneAnimations: { [key: string]: AnimationChannel[] };
     // private lengthInSeconds: number;
     // private looping: boolean;

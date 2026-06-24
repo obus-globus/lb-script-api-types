@@ -13,8 +13,8 @@ export class LongImmutableList$Spliterator extends Object implements LongSpliter
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: LongImmutableList$Spliterator)
-    private constructor(null_: LongImmutableList$Spliterator, arg1: number, arg2: number)
+    constructor(null_: (Object | null)[])
+    private constructor(null_: (Object | null)[], arg1: number, arg2: number)
     // private max: number;
     // private pos: number;
     characteristics(): number;

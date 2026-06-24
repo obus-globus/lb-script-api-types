@@ -5,6 +5,6 @@ import type { Checks } from '../../../../../../kotlin/reflect/jvm/internal/impl/
 export class OperatorChecks extends AbstractModifierChecks {
     static INSTANCE: OperatorChecks;
     private constructor()
-    getChecks$descriptors(): Checks[];
+    getChecks$org_jetbrains_kotlin_descriptors(): Checks[];
     // private incDecCheckForExpectClass(arg0: FunctionDescriptor, arg1: ReceiverParameterDescriptor): boolean;
 }

@@ -4,6 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IdentityMappings extends Record implements Mappings {
     static isFullIdentity(paramarg0: Mappings): boolean;
     static isIntIdIdentity(paramarg0: Mappings): boolean;
+    constructor(size: number, mappedSize: number)
     // private mappedSize: number;
     // private size: number;
     contains(arg0: number): boolean;

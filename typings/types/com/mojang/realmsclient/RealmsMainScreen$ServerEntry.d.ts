@@ -1,3 +1,4 @@
+import type { RealmsMainScreen } from '../../../com/mojang/realmsclient/RealmsMainScreen.d.ts'
 import type { RealmsMainScreen$Entry } from '../../../com/mojang/realmsclient/RealmsMainScreen$Entry.d.ts'
 import type { RealmsServer } from '../../../com/mojang/realmsclient/dto/RealmsServer.d.ts'
 import type { GuiGraphicsExtractor } from '../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
@@ -7,7 +8,7 @@ import type { MouseButtonEvent } from '../../../net/minecraft/client/input/Mouse
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
 export class RealmsMainScreen$ServerEntry extends RealmsMainScreen$Entry {
     static CONTENT_PADDING: number;
-    constructor(null_: RealmsMainScreen$ServerEntry, serverData: RealmsServer)
+    constructor(null_: RealmsMainScreen, serverData: RealmsServer)
     // private serverData: RealmsServer;
     // private tooltip: WidgetTooltipHolder;
     // private createUnitializedRealm(): void;

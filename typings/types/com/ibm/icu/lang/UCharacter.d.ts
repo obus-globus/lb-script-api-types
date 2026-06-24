@@ -7,6 +7,7 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { ValueIterator } from '../../../../com/ibm/icu/util/ValueIterator.d.ts'
 import type { VersionInfo } from '../../../../com/ibm/icu/util/VersionInfo.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
+import type { IntStream } from '../../../../java/util/stream/IntStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class UCharacter extends Object implements UCharacterEnums$ECharacterCategory, UCharacterEnums$ECharacterDirection {
@@ -108,6 +109,10 @@ export class UCharacter extends Object implements UCharacterEnums$ECharacterCate
     static UNASSIGNED: number;
     static UPPERCASE_LETTER: number;
     static WHITE_SPACE_NEUTRAL: number;
+    static allCodePoints(): number[];
+    static allCodePointsStream(): IntStream;
+    static allScalarValues(): number[];
+    static allScalarValuesStream(): IntStream;
     static charCount(paramarg0: number): number;
     static codePointAt(paramarg0: string[], paramarg1: number): number;
     static codePointAt(paramarg0: string[], paramarg1: number, paramarg2: number): number;
@@ -182,7 +187,9 @@ export class UCharacter extends Object implements UCharacterEnums$ECharacterCate
     static isLowSurrogate(paramarg0: number): boolean;
     static isLowerCase(paramarg0: number): boolean;
     static isMirrored(paramarg0: number): boolean;
+    static isNoncharacter(paramarg0: number): boolean;
     static isPrintable(paramarg0: number): boolean;
+    static isScalarValue(paramarg0: number): boolean;
     static isSpace(paramarg0: number): boolean;
     static isSpaceChar(paramarg0: number): boolean;
     static isSupplementary(paramarg0: number): boolean;

@@ -4,6 +4,8 @@ import type { TagType } from '../../../../net/minecraft/nbt/TagType.d.ts'
 import type { FieldSelector } from '../../../../net/minecraft/nbt/visitors/FieldSelector.d.ts'
 export class FieldTree extends Record {
     static createRoot(): FieldTree;
+    private constructor(depth: number)
+    constructor(depth: number, selectedFields: { [key: string]: TagType<any> }, fieldsToRecurse: { [key: string]: FieldTree })
     // private depth: number;
     // private fieldsToRecurse: { [key: string]: FieldTree };
     // private selectedFields: { [key: string]: TagType<any> };

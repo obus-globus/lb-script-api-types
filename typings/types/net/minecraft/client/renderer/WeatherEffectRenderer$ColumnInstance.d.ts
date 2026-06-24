@@ -1,6 +1,7 @@
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class WeatherEffectRenderer$ColumnInstance extends Record {
+    constructor(x: number, z: number, bottomY: number, topY: number, uOffset: number, vOffset: number, lightCoords: number)
     // private bottomY: number;
     // private lightCoords: number;
     // private topY: number;

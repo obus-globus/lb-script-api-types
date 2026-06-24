@@ -1,3 +1,4 @@
+import type { SmtpAppender$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -17,6 +18,7 @@ export class SmtpAppender extends AbstractAppender {
     static createAppender(paramconfig: Configuration, paramname: string, paramto: string, paramcc: string, parambcc: string, paramfrom: string, paramreplyTo: string, paramsubject: string, paramsmtpProtocol: string, paramsmtpHost: string, paramsmtpPortStr: string, paramsmtpUsername: string, paramsmtpPassword: string, paramsmtpDebug: string, parambufferSizeStr: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignore: string): SmtpAppender;
     static newBuilder(): SmtpAppender$Builder;
     static parseInt(params: string, paramdefaultValue: number): number;
+    constructor(arg0: string, arg1: Filter, arg2: Layout<Serializable>, arg3: MailManager, arg4: boolean, arg5: Property[], arg6: SmtpAppender$1)
     private constructor(name: string, filter: Filter, layout: Layout<Serializable>, manager: MailManager, ignoreExceptions: boolean, properties: Property[])
     readonly manager: MailManager;
     append(event: LogEvent): void;

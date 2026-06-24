@@ -1,8 +1,11 @@
+import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { UUID } from '../../../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Player } from '../../../../../../../net/minecraft/world/entity/player/Player.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class VaultServerData extends Object {
+    static CODEC: Codec<VaultServerData>;
+    static TAG_NAME: string;
     constructor()
     constructor(rewardedPlayers: UUID[], stateUpdatingResumesAt: number, itemsToEject: ItemStack[], totalEjectionsNeeded: number)
     // private isDirty: boolean;

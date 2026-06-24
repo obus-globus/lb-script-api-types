@@ -9,12 +9,14 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { CrashReport } from '../../../../net/minecraft/CrashReport.d.ts'
 import type { SystemReport } from '../../../../net/minecraft/SystemReport.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
+import type { LocalPlayer } from '../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { LanServerPinger } from '../../../../net/minecraft/client/server/LanServerPinger.d.ts'
 import type { CommandSource } from '../../../../net/minecraft/commands/CommandSource.d.ts'
 import type { GlobalPos } from '../../../../net/minecraft/core/GlobalPos.d.ts'
 import type { SimpleGizmoCollector } from '../../../../net/minecraft/gizmos/SimpleGizmoCollector.d.ts'
 import type { SimpleGizmoCollector$GizmoInstance } from '../../../../net/minecraft/gizmos/SimpleGizmoCollector$GizmoInstance.d.ts'
 import type { MinecraftServer } from '../../../../net/minecraft/server/MinecraftServer.d.ts'
+import type { MinecraftServer$MultiplayerScope } from '../../../../net/minecraft/server/MinecraftServer$MultiplayerScope.d.ts'
 import type { Services } from '../../../../net/minecraft/server/Services.d.ts'
 import type { WorldStem } from '../../../../net/minecraft/server/WorldStem.d.ts'
 import type { LevelLoadListener } from '../../../../net/minecraft/server/level/progress/LevelLoadListener.d.ts'
@@ -38,6 +40,7 @@ export class IntegratedServer extends MinecraftServer {
     static DEMO_SETTINGS: LevelSettings;
     static MAX_PLAYERS: number;
     static NULL: CommandSource;
+    static SERVER_THREAD_NAME: string;
     static SPAWN_POSITION_SEARCH_RADIUS: number;
     static VANILLA_BRAND: string;
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
@@ -45,21 +48,28 @@ export class IntegratedServer extends MinecraftServer {
     static relayDelayCrash(paramcrashReport: CrashReport): void;
     static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
     constructor(serverThread: Thread, minecraft: Minecraft, levelStorageAccess: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, services: Services, levelLoadListener: LevelLoadListener)
+    readonly gameTypeForOtherPlayers: GameType;
     // private gizmoCollector: SimpleGizmoCollector;
     // private lanPinger: LanServerPinger;
     // private latestTicksGizmos: SimpleGizmoCollector$GizmoInstance[];
     // private minecraft: Minecraft;
+    readonly multiplayerScope: MinecraftServer$MultiplayerScope;
     readonly paused: boolean;
     // private previousSimulationDistance: number;
-    // private publishedGameType: GameType;
     // private publishedPort: number;
     // private uuid: UUID;
+    // private applyGameTypeToPlayers(gameMode: GameType, singleplayerOwner: boolean): void;
+    commandsAllowedForOtherPlayers(): boolean;
     fillServerSystemReport(systemReport: SystemReport): SystemReport;
     forceSynchronousWrites(): boolean;
+    getChatSpamThresholdSeconds(): number;
+    getCommandSpamThresholdSeconds(): number;
     getForcedGameType(): GameType;
     getFunctionCompilationPermissions(): LevelBasedPermissionSet;
+    getGameTypeForOtherPlayers(): GameType;
     getMaxPlayers(): number;
     getModdedStatus(): ModCheck;
+    getMultiplayerScope(): MinecraftServer$MultiplayerScope;
     getPerTickGizmos(): SimpleGizmoCollector$GizmoInstance[];
     getPort(): number;
     getRateLimitPacketsPerSecond(): number;
@@ -76,17 +86,27 @@ export class IntegratedServer extends MinecraftServer {
     onServerCrash(report: CrashReport): void;
     operatorUserPermissions(): LevelBasedPermissionSet;
     processPacketsAndTick(sprinting: boolean): void;
-    publishServer(gameMode: GameType, allowCommands: boolean, port: number): boolean;
+    publishServer(scope: MinecraftServer$MultiplayerScope, port: number): boolean;
+    publishServer(scope: MinecraftServer$MultiplayerScope, gameMode: GameType, allowCommands: boolean, port: number): boolean;
     reportChunkLoadFailure(throwable: Throwable, storageInfo: RegionStorageInfo, pos: ChunkPos): void;
     reportChunkSaveFailure(throwable: Throwable, storageInfo: RegionStorageInfo, pos: ChunkPos): void;
     selectLevelLoadFocusPos(): GlobalPos;
     sendLowDiskSpaceWarning(): void;
-    setDefaultGameType(gameType: GameType): void;
+    setCommandsAllowedForOtherPlayers(allowCommands: boolean): void;
+    setGameTypeForOtherPlayers(gameMode: GameType): void;
+    // private setMultiplayerScope(multiplayerScope: MinecraftServer$MultiplayerScope): void;
     setUUID(uuid: UUID): void;
+    setWorldAllowCommands(allowCommands: boolean): void;
+    setWorldGameType(gameMode: GameType): void;
     shouldInformAdmins(): boolean;
     shouldRconBroadcast(): boolean;
+    // private stopLanPinger(): void;
     stopServer(): void;
+    // private teardownPublishedState(): void;
     // private tickPaused(): void;
     tickServer(haveTime: () => boolean): void;
+    unpublishServer(): boolean;
+    // private updateCommandsAllowedForOtherPlayers(): void;
+    // private updatePermissionAndChatAbilities(player: LocalPlayer): void;
     useNativeTransport(): boolean;
 }

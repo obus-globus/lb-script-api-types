@@ -3,6 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { HolderLookup$Provider } from '../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export class CreativeModeTab$ItemDisplayParameters extends Record {
+    constructor(enabledFeatures: FeatureFlagSet, hasPermissions: boolean, holders: HolderLookup$Provider)
     // private enabledFeatures: FeatureFlagSet;
     // private hasPermissions: boolean;
     // private holders: HolderLookup$Provider;

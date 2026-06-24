@@ -8,6 +8,7 @@ import type { Input } from '../../../../net/minecraft/server/dialog/Input.d.ts'
 import type { DialogBody } from '../../../../net/minecraft/server/dialog/body/DialogBody.d.ts'
 export class CommonDialogData extends Record {
     static MAP_CODEC: MapCodec<CommonDialogData>;
+    constructor(title: Component, externalTitle: Optional<Component>, canCloseWithEscape: boolean, pause: boolean, afterAction: DialogAction, body: DialogBody[], inputs: Input[])
     // private afterAction: DialogAction;
     // private body: DialogBody[];
     // private canCloseWithEscape: boolean;

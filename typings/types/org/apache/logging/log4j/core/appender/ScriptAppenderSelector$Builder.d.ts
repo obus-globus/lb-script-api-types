@@ -17,6 +17,10 @@ export class ScriptAppenderSelector$Builder extends Object implements Builder<Ap
     getName(): string;
     getScript(): AbstractScript;
     isValid(): boolean;
+    setAppenderNodeSet(appenderSet: AppenderSet): ScriptAppenderSelector$Builder;
+    setConfiguration(configuration: Configuration): ScriptAppenderSelector$Builder;
+    setName(name: string): ScriptAppenderSelector$Builder;
+    setScript(script: AbstractScript): ScriptAppenderSelector$Builder;
     withAppenderNodeSet(appenderSet: AppenderSet): ScriptAppenderSelector$Builder;
     withConfiguration(configuration: Configuration): ScriptAppenderSelector$Builder;
     withName(name: string): ScriptAppenderSelector$Builder;

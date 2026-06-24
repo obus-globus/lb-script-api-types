@@ -89,10 +89,10 @@ export class TestBlock extends BaseEntityBlock implements GameMasterBlock {
     codec(): MapCodec<TestBlock>;
     createBlockStateDefinition(builder: StateDefinition$Builder<Block, BlockState>): void;
     getCloneItemStack(level: LevelReader, pos: BlockPos, state: BlockState, includeData: boolean): ItemStack;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getStateForPlacement(context: BlockPlaceContext): BlockState;
     neighborChanged(state: BlockState, level: Level, pos: BlockPos, block: Block, orientation: Orientation, movedByPiston: boolean): void;
     newBlockEntity(worldPosition: BlockPos, blockState: BlockState): BlockEntity;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;
     useWithoutItem(state: BlockState, level: Level, pos: BlockPos, player: Player, hitResult: BlockHitResult): InteractionResult;
 }

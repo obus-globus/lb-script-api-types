@@ -6,6 +6,7 @@ import type { NarratableEntry } from '../../../../net/minecraft/client/gui/narra
 import type { ConfirmScreen } from '../../../../net/minecraft/client/gui/screens/ConfirmScreen.d.ts'
 import type { Screen } from '../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 import type { Screen$NarratableSearchResult } from '../../../../net/minecraft/client/gui/screens/Screen$NarratableSearchResult.d.ts'
+import type { ClientCommonPacketListenerImpl } from '../../../../net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.d.ts'
 import type { ClientCommonPacketListenerImpl$PackConfirmScreen$PendingRequest } from '../../../../net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl$PackConfirmScreen$PendingRequest.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
@@ -19,7 +20,7 @@ export class ClientCommonPacketListenerImpl$PackConfirmScreen extends ConfirmScr
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
-    private constructor(null_: ClientCommonPacketListenerImpl$PackConfirmScreen, parentScreen: Screen, requests: ClientCommonPacketListenerImpl$PackConfirmScreen$PendingRequest[], required: boolean, prompt: Component)
+    private constructor(null_: ClientCommonPacketListenerImpl, minecraft: Minecraft, parentScreen: Screen, requests: ClientCommonPacketListenerImpl$PackConfirmScreen$PendingRequest[], required: boolean, prompt: Component)
     // private parentScreen: Screen;
     // private requests: ClientCommonPacketListenerImpl$PackConfirmScreen$PendingRequest[];
     update(minecraft: Minecraft, id: UUID, url: URL, hash: string, required: boolean, prompt: Component): ClientCommonPacketListenerImpl$PackConfirmScreen;

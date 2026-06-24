@@ -7,7 +7,6 @@ export class Http2Reader$ContinuationSource extends Object implements Source {
     constructor(source: BufferedSource)
     flags: number;
     left: number;
-    length: number;
     padding: number;
     // private source: BufferedSource;
     streamId: number;

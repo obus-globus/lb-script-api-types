@@ -6,6 +6,7 @@ import type { Raid } from '../../../../../net/minecraft/world/entity/raid/Raid.d
 export class Raids$RaidWithId extends Record {
     static CODEC: Codec<Raids$RaidWithId>;
     static from(paramentry: Int2ObjectMap$Entry<Raid>): Raids$RaidWithId;
+    private constructor(id: number, raid: Raid)
     // private id: number;
     // private raid: Raid;
     equals(o: Object | null): boolean;

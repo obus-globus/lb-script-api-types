@@ -20,6 +20,8 @@ export class SimpleLeakAwareByteBuf extends WrappedByteBuf {
     readSlice(arg0: number): ByteBuf;
     release(): boolean;
     release(arg0: number): boolean;
+    retain(): ByteBuf;
+    retain(arg0: number): ByteBuf;
     retainedDuplicate(): ByteBuf;
     retainedSlice(): ByteBuf;
     retainedSlice(arg0: number, arg1: number): ByteBuf;

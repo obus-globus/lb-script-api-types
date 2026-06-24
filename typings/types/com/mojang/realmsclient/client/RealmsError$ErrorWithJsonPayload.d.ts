@@ -7,6 +7,7 @@ export class RealmsError$ErrorWithJsonPayload extends Record implements RealmsEr
     static LOGGER: Logger;
     static NO_MESSAGE: Component;
     static parse(paramhttpCode: number, parampayload: string): RealmsError;
+    constructor(httpCode: number, code: number, reason: string, message: string)
     // private code: number;
     // private httpCode: number;
     // private message: string;

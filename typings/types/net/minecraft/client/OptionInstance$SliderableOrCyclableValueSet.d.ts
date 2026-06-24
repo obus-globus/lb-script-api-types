@@ -1,5 +1,4 @@
 import type { Optional } from '../../../java/util/Optional.d.ts'
-import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { OptionInstance } from '../../../net/minecraft/client/OptionInstance.d.ts'
@@ -7,6 +6,7 @@ import type { OptionInstance$CycleableValueSet } from '../../../net/minecraft/cl
 import type { OptionInstance$CycleableValueSet$ValueSetter } from '../../../net/minecraft/client/OptionInstance$CycleableValueSet$ValueSetter.d.ts'
 import type { OptionInstance$SliderableValueSet } from '../../../net/minecraft/client/OptionInstance$SliderableValueSet.d.ts'
 import type { OptionInstance$TooltipSupplier } from '../../../net/minecraft/client/OptionInstance$TooltipSupplier.d.ts'
+import type { OptionInstance$ValueUpdateListener } from '../../../net/minecraft/client/OptionInstance$ValueUpdateListener.d.ts'
 import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'

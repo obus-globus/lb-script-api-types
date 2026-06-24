@@ -1,3 +1,4 @@
+import type { ProtoBuf$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ProtoBuf$TypeOrBuilder } from '../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$TypeOrBuilder.d.ts'
@@ -23,6 +24,8 @@ export class ProtoBuf$Type extends GeneratedMessageLite$ExtendableMessage<ProtoB
     static newSingularGeneratedExtension(paramarg0: MessageLite | null, paramarg1: Object | null, paramarg2: MessageLite, paramarg3: Internal$EnumLiteMap<any>, paramarg4: number, paramarg5: WireFormat$FieldType, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
     private constructor(arg0: boolean)
     private constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite)
+    constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite, arg2: ProtoBuf$1)
+    constructor(arg0: GeneratedMessageLite$ExtendableBuilder<GeneratedMessageLite$ExtendableMessage<any>, GeneratedMessageLite$ExtendableBuilder<any, any>>, arg1: ProtoBuf$1)
     private constructor(arg0: GeneratedMessageLite$ExtendableBuilder<ProtoBuf$Type, any>)
     // private abbreviatedTypeId_: number;
     // private abbreviatedType_: ProtoBuf$Type;

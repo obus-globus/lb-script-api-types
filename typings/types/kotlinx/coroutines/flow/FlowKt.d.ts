@@ -27,12 +27,21 @@ export class FlowKt extends Object {
     static asFlow(paramarg0: () => Object | null): Flow<Object>;
     static asFlow(paramarg0: (param0: Object) => Object): Flow<Object>;
     static asFlow(paramarg0: Sequence<Object>): Flow<Object>;
+    static asFlow(paramarg0: SharedFlow<Object>): Flow<Object>;
     static asFlow(paramarg0: number[]): Flow<number>;
     static asFlow(paramarg0: { start: number; endInclusive: number; step: number }): Flow<number>;
     static asFlow(paramarg0: { start: number; endInclusive: number; step: number }): Flow<number>;
     static asFlow(paramarg0: number[]): Flow<number>;
     static asSharedFlow(paramarg0: MutableSharedFlow<Object>): SharedFlow<Object>;
     static asStateFlow(paramarg0: MutableStateFlow<Object>): StateFlow<Object>;
+    static associate(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
+    static associateBy(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: (param0: Object, param1: Object) => Object, paramarg3: Continuation<Object>): Object;
+    static associateBy(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
+    static associateByTo(paramarg0: Flow<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object) => Object, paramarg3: Continuation<Object>): Object;
+    static associateByTo(paramarg0: Flow<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object) => Object, paramarg3: (param0: Object, param1: Object) => Object, paramarg4: Continuation<Object>): Object;
+    static associateTo(paramarg0: Flow<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object) => Object, paramarg3: Continuation<Object>): Object;
+    static associateWith(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
+    static associateWithTo(paramarg0: Flow<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object) => Object, paramarg3: Continuation<Object>): Object;
     static buffer(paramarg0: Flow<Object>, paramarg1: number, paramarg2: BufferOverflow): Flow<Object>;
     static buffer(paramarg0: Flow<Object>, paramarg1: number): Flow<Object>;
     static cache(paramarg0: Flow<Object>): Flow<Object>;
@@ -46,6 +55,7 @@ export class FlowKt extends Object {
     static collect(paramarg0: Flow<Object>, paramarg1: Continuation<Object>): Object;
     static collectIndexed(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object, param2: Object) => Object, paramarg2: Continuation<Object>): Object;
     static collectLatest(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
+    static collectLatest(paramarg0: SharedFlow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
     static collectWhile(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
     static combine(paramarg0: Flow<Object>[], paramarg1: (param0: Object, param1: Object) => Object): Flow<Object>;
     static combine(paramarg0: Object | null, paramarg1: (param0: Object, param1: Object) => Object): Flow<Object>;
@@ -112,6 +122,10 @@ export class FlowKt extends Object {
     static fold(paramarg0: Flow<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object, param2: Object) => Object, paramarg3: Continuation<Object>): Object;
     static forEach(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object): void;
     static getDEFAULT_CONCURRENCY(): number;
+    static groupBy(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: (param0: Object, param1: Object) => Object, paramarg3: Continuation<Object>): Object;
+    static groupBy(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
+    static groupByTo(paramarg0: Flow<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object) => Object, paramarg3: Continuation<Object>): Object;
+    static groupByTo(paramarg0: Flow<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object) => Object, paramarg3: (param0: Object, param1: Object) => Object, paramarg4: Continuation<Object>): Object;
     static last(paramarg0: Flow<Object>, paramarg1: Continuation<Object>): Object;
     static lastOrNull(paramarg0: Flow<Object>, paramarg1: Continuation<Object>): Object;
     static launchIn(paramarg0: Flow<Object>, paramarg1: CoroutineScope): Job;
@@ -133,6 +147,7 @@ export class FlowKt extends Object {
     static onErrorReturn(paramarg0: Flow<Object>, paramarg1: Object | null, paramarg2: (param0: Object) => boolean): Flow<Object>;
     static onStart(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object): Flow<Object>;
     static onSubscription(paramarg0: SharedFlow<Object>, paramarg1: (param0: Object, param1: Object) => Object): SharedFlow<Object>;
+    static onSubscription(paramarg0: StateFlow<Object>, paramarg1: (param0: Object, param1: Object) => Object): StateFlow<Object>;
     static produceIn(paramarg0: Flow<Object>, paramarg1: CoroutineScope): ReceiveChannel<Object>;
     static publish(paramarg0: Flow<Object>): Flow<Object>;
     static publish(paramarg0: Flow<Object>, paramarg1: number): Flow<Object>;

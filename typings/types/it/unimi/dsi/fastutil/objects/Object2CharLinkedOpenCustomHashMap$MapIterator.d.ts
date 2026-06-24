@@ -1,8 +1,9 @@
 import type { Object2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/objects/Object2CharMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Object2CharLinkedOpenCustomHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    private constructor(null_: Object2CharLinkedOpenCustomHashMap$MapIterator<Object>)
-    constructor(null_: Object2CharLinkedOpenCustomHashMap$MapIterator<Object>)
+    constructor(null_: { [key: string]: any })
+    private constructor(null_: { [key: string]: any }, arg1: K)
+    constructor(null_: { [key: string]: any }, arg1: Object, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;
     // private next: number;

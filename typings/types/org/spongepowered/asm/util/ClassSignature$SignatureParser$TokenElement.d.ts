@@ -1,5 +1,6 @@
 import type { SignatureVisitor } from '../../../../org/objectweb/asm/signature/SignatureVisitor.d.ts'
 import type { ClassSignature$IToken } from '../../../../org/spongepowered/asm/util/ClassSignature$IToken.d.ts'
+import type { ClassSignature$SignatureParser } from '../../../../org/spongepowered/asm/util/ClassSignature$SignatureParser.d.ts'
 import type { ClassSignature$SignatureParser$SignatureElement } from '../../../../org/spongepowered/asm/util/ClassSignature$SignatureParser$SignatureElement.d.ts'
 import type { ClassSignature$Token } from '../../../../org/spongepowered/asm/util/ClassSignature$Token.d.ts'
 import type { ClassSignature$TokenHandle } from '../../../../org/spongepowered/asm/util/ClassSignature$TokenHandle.d.ts'
@@ -7,7 +8,7 @@ export abstract class ClassSignature$SignatureParser$TokenElement extends ClassS
     static EXTENDS: string;
     static INSTANCEOF: string;
     static SUPER: string;
-    constructor(null_: ClassSignature$SignatureParser$TokenElement)
+    constructor(null_: ClassSignature$SignatureParser)
     // private array: boolean;
     token: ClassSignature$Token;
     addTypeArgument(arg0: string): ClassSignature$IToken;

@@ -3,7 +3,7 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2LongOpenHashMap$KeyIterator extends Object2LongOpenHashMap$MapIterator<Object> implements ObjectIterator<K> {
-    constructor(null_: Object2LongOpenHashMap$KeyIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex<K extends unknown>(arg0: (param0: K) => void, arg1: number): void;
     next<K extends unknown>(): K;
     skip(arg0: number): number;

@@ -5,6 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ExecutionList extends Object {
     constructor()
     // private executed: boolean;
+    // private lock: Object;
     // private runnables: ExecutionList$RunnableExecutorPair;
     add(runnable: () => void, executor: Executor): void;
     execute(): void;

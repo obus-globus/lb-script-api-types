@@ -11,6 +11,7 @@ import type { ShaderpackDirectoryManager } from '../../../net/irisshaders/iris/s
 import type { NamespacedId } from '../../../net/irisshaders/iris/shaderpack/materialmap/NamespacedId.d.ts'
 import type { Profile } from '../../../net/irisshaders/iris/shaderpack/option/Profile.d.ts'
 import type { Minecraft } from '../../../net/minecraft/client/Minecraft.d.ts'
+import type { KeyEvent } from '../../../net/minecraft/client/input/KeyEvent.d.ts'
 export class Iris extends Object {
     static IS_FOOL: boolean;
     static MODID: string;
@@ -34,6 +35,7 @@ export class Iris extends Object {
     static getUpdateChecker(): UpdateChecker;
     static getVersion(): string;
     static getVersionSimple(): string;
+    static handleDebugKeys(paramarg0: KeyEvent): void;
     static handleKeybinds(paramarg0: Minecraft): void;
     static isFallback(): boolean;
     static isPackInUseQuick(): boolean;

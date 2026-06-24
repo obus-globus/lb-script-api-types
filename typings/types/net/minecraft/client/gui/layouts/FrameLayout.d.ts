@@ -23,6 +23,7 @@ export class FrameLayout extends AbstractLayout {
     arrangeElements(): void;
     defaultChildLayoutSetting(): LayoutSettings;
     newChildLayoutSettings(): LayoutSettings;
+    removeChildren(): void;
     setMinDimensions(minWidth: number, minHeight: number): FrameLayout;
     setMinHeight(minHeight: number): FrameLayout;
     setMinWidth(minWidth: number): FrameLayout;

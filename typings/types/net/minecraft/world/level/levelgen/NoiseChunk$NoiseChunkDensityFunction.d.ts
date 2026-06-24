@@ -10,6 +10,7 @@ export interface NoiseChunk$NoiseChunkDensityFunction extends Object, DensityFun
     halfNegative(): DensityFunction;
     invert(): DensityFunction;
     mapAll(visitor: DensityFunction$Visitor): DensityFunction;
+    mapChildren(visitor: DensityFunction$Visitor): DensityFunction;
     maxValue(): number;
     minValue(): number;
     quarterNegative(): DensityFunction;

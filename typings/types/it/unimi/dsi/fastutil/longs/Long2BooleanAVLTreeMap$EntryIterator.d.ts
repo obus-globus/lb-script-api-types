@@ -2,8 +2,8 @@ import type { Long2BooleanAVLTreeMap$TreeIterator } from '../../../../../it/unim
 import type { Long2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2BooleanMap$Entry.d.ts'
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 export class Long2BooleanAVLTreeMap$EntryIterator extends Long2BooleanAVLTreeMap$TreeIterator implements ObjectListIterator<Long2BooleanMap$Entry> {
-    constructor(null_: Long2BooleanAVLTreeMap$EntryIterator)
-    constructor(null_: Long2BooleanAVLTreeMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add(arg0: Long2BooleanMap$Entry): void;
     next(): Long2BooleanMap$Entry;
     previous(): Long2BooleanMap$Entry;

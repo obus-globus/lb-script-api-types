@@ -4,6 +4,7 @@ export class BitArray extends Object {
     // private capacity: number;
     // private words: number[];
     capacity(): number;
+    copy(): BitArray;
     countSetBits(): number;
     fill(arg0: boolean): void;
     get(arg0: number): boolean;

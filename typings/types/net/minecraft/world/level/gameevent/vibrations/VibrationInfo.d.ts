@@ -10,6 +10,9 @@ import type { GameEvent } from '../../../../../../net/minecraft/world/level/game
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class VibrationInfo extends Record {
     static CODEC: Codec<VibrationInfo>;
+    constructor(gameEvent: Holder<GameEvent>, distance: number, pos: Vec3, uuid: UUID, projectileOwnerUuid: UUID)
+    constructor(gameEvent: Holder<GameEvent>, distance: number, pos: Vec3, uuid: UUID, projectileOwnerUuid: UUID, entity: Entity)
+    constructor(gameEvent: Holder<GameEvent>, distance: number, pos: Vec3, entity: Entity)
     // private distance: number;
     // private entity: Entity;
     // private gameEvent: Holder<GameEvent>;

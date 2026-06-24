@@ -4,8 +4,8 @@ import type { Byte2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fastutil/
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Byte2DoubleLinkedOpenHashMap$FastEntryIterator extends Byte2DoubleLinkedOpenHashMap$MapIterator<(param0: Byte2DoubleMap$Entry) => void> implements ObjectListIterator<Byte2DoubleMap$Entry> {
-    constructor(null_: Byte2DoubleLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Byte2DoubleLinkedOpenHashMap$FastEntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Byte2DoubleLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Byte2DoubleMap$Entry) => void, arg1: number): void;
     add(arg0: Byte2DoubleMap$Entry): void;

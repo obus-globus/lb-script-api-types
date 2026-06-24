@@ -1,6 +1,6 @@
-import type { Gson } from '../../../../com/google/gson/Gson.d.ts'
-import type { JsonElement } from '../../../../com/google/gson/JsonElement.d.ts'
-import type { JsonObject } from '../../../../com/google/gson/JsonObject.d.ts'
+import type { Gson } from '../../../../com/viaversion/viaversion/libs/gson/Gson.d.ts'
+import type { JsonElement } from '../../../../com/viaversion/viaversion/libs/gson/JsonElement.d.ts'
+import type { JsonObject } from '../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class GsonUtil extends Object {
     static arrayToList(paramarg0: JsonElement[]): string[];

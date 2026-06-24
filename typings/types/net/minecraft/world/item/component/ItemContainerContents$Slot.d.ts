@@ -4,6 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ItemStackTemplate } from '../../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
 export class ItemContainerContents$Slot extends Record {
     static CODEC: Codec<ItemContainerContents$Slot>;
+    private constructor(index: number, item: ItemStackTemplate)
     // private index: number;
     // private item: ItemStackTemplate;
     equals(o: Object | null): boolean;

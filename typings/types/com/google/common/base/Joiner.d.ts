@@ -1,3 +1,4 @@
+import type { Joiner$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Joiner$MapJoiner } from '../../../../com/google/common/base/Joiner$MapJoiner.d.ts'
 import type { Appendable } from '../../../../java/lang/Appendable.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
@@ -8,6 +9,7 @@ export class Joiner extends Object {
     static on(paramseparator: string): Joiner;
     static on(paramseparator: string): Joiner;
     private constructor(prototype: Joiner)
+    constructor(arg0: Joiner, arg1: Joiner$1)
     private constructor(separator: string)
     // private separator: string;
     appendTo<A extends Appendable>(appendable: A, first: Object, second: Object, rest: Object[]): A;

@@ -5,6 +5,7 @@ import type { Difficulty } from '../../../../net/minecraft/world/Difficulty.d.ts
 export class LevelSettings$DifficultySettings extends Record {
     static CODEC: Codec<LevelSettings$DifficultySettings>;
     static DEFAULT: LevelSettings$DifficultySettings;
+    constructor(difficulty: Difficulty, hardcore: boolean, locked: boolean)
     // private difficulty: Difficulty;
     // private hardcore: boolean;
     // private locked: boolean;

@@ -1,0 +1,12 @@
+import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
+import type { EnterBlockTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/triggers/EnterBlockTrigger$TriggerInstance.d.ts'
+import type { SimpleCriterionTrigger } from '../../../../net/minecraft/advancements/triggers/SimpleCriterionTrigger.d.ts'
+import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
+import type { BlockState } from '../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+export class EnterBlockTrigger extends SimpleCriterionTrigger<EnterBlockTrigger$TriggerInstance> {
+    constructor()
+    codec(): Codec<EnterBlockTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, matcher: (param0: EnterBlockTrigger$TriggerInstance) => boolean): void;
+    trigger(player: ServerPlayer, state: BlockState): void;
+}

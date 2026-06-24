@@ -23,7 +23,6 @@ export class NullOps extends Object implements DynamicOps<Unit> {
     convertList<U extends unknown>(arg0: DynamicOps<U>, arg1: Unit): U;
     convertMap<U extends unknown>(arg0: DynamicOps<U>, arg1: Unit): U;
     convertTo<U extends unknown>(outOps: DynamicOps<U>, input: Unit): U;
-    createBoolean(arg0: boolean): Unit;
     createBoolean(value: boolean): Unit;
     createByte(arg0: number): Unit;
     createByte(value: number): Unit;
@@ -53,7 +52,6 @@ export class NullOps extends Object implements DynamicOps<Unit> {
     emptyList(): Unit;
     emptyMap(): Unit;
     get(arg0: Unit, arg1: string): DataResult<Unit>;
-    getBooleanValue(arg0: Unit): DataResult<boolean>;
     getBooleanValue(input: Unit): DataResult<boolean>;
     getByteBuffer(arg0: Unit): DataResult<ByteBuffer>;
     getByteBuffer(input: Unit): DataResult<ByteBuffer>;

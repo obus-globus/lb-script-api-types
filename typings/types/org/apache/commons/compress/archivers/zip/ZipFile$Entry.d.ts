@@ -1,3 +1,4 @@
+import type { ZipFile$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ZipArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/zip/ZipArchiveEntry.d.ts'
 export class ZipFile$Entry extends ZipArchiveEntry {
@@ -49,6 +50,7 @@ export class ZipFile$Entry extends ZipArchiveEntry {
     static SIZE_UNKNOWN: number;
     static STORED: number;
     private constructor()
+    constructor(arg0: ZipFile$1)
     equals(arg0: Object | null): boolean;
     hashCode(): number;
 }

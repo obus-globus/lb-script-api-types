@@ -5,6 +5,7 @@ import type { StreamCodec } from '../../../../../net/minecraft/network/codec/Str
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { Ingredient } from '../../../../../net/minecraft/world/item/crafting/Ingredient.d.ts'
 export class RecipePropertySet extends Object {
     static BLAST_FURNACE_INPUT: ResourceKey<RecipePropertySet>;
     static CAMPFIRE_INPUT: ResourceKey<RecipePropertySet>;
@@ -16,6 +17,7 @@ export class RecipePropertySet extends Object {
     static SMOKER_INPUT: ResourceKey<RecipePropertySet>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, RecipePropertySet>;
     static TYPE_KEY: ResourceKey<RecipePropertySet[]>;
+    static create(paramingredients: Ingredient[]): RecipePropertySet;
     private constructor(items: Holder<Item>[])
     // private items: Holder<Item>[];
     test(itemStack: ItemStack): boolean;

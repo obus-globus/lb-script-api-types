@@ -5,6 +5,7 @@ import type { SkinData$AnimationData } from '../../../../../net/raphimc/viabedro
 import type { SkinData$PersonaPieceData } from '../../../../../net/raphimc/viabedrock/protocol/model/SkinData$PersonaPieceData.d.ts'
 import type { SkinData$PersonaPieceTintData } from '../../../../../net/raphimc/viabedrock/protocol/model/SkinData$PersonaPieceTintData.d.ts'
 export class SkinData extends Record {
+    constructor(skinId: string, playFabId: string, skinResourcePatch: string, skinData: BufferedImage, animations: SkinData$AnimationData[], capeData: BufferedImage, geometryData: string, geometryDataEngineVersion: string, animationData: string, premium: boolean, persona: boolean, capeOnClassic: boolean, primaryUser: boolean, capeId: string, fullSkinId: string, armSize: string, skinColor: string, personaPieces: SkinData$PersonaPieceData[], tintColors: SkinData$PersonaPieceTintData[], overridingPlayerAppearance: boolean)
     // private animationData: string;
     // private animations: SkinData$AnimationData[];
     // private armSize: string;

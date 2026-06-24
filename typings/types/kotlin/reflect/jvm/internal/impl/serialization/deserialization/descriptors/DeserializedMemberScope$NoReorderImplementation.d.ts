@@ -9,10 +9,11 @@ import type { ProtoBuf$Property } from '../../../../../../../../kotlin/reflect/j
 import type { ProtoBuf$TypeAlias } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$TypeAlias.d.ts'
 import type { Name } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 import type { DescriptorKindFilter } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/DescriptorKindFilter.d.ts'
+import type { DeserializedMemberScope } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedMemberScope.d.ts'
 import type { DeserializedMemberScope$Implementation } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedMemberScope$Implementation.d.ts'
 import type { NotNullLazyValue } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/storage/NotNullLazyValue.d.ts'
 export class DeserializedMemberScope$NoReorderImplementation extends Object implements DeserializedMemberScope$Implementation {
-    constructor(null_: DeserializedMemberScope$NoReorderImplementation, arg2: ProtoBuf$Property[], arg3: ProtoBuf$TypeAlias[])
+    constructor(null_: DeserializedMemberScope, arg1: ProtoBuf$Function[], arg2: ProtoBuf$Property[], arg3: ProtoBuf$TypeAlias[])
     // private allFunctions$delegate: NotNullLazyValue<Object>;
     // private allProperties$delegate: NotNullLazyValue<Object>;
     // private allTypeAliases$delegate: NotNullLazyValue<Object>;

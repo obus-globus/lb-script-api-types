@@ -1,10 +1,11 @@
 import type { EventBinding$Source } from '../../../../../com/oracle/truffle/api/instrumentation/EventBinding$Source.d.ts'
+import type { InstrumentationHandler } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentationHandler.d.ts'
 import type { InstrumentationHandler$VisitOperation } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentationHandler$VisitOperation.d.ts'
 import type { InstrumentationHandler$VisitOperation$Scope } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentationHandler$VisitOperation$Scope.d.ts'
 import type { InstrumentationHandler$Visitor } from '../../../../../com/oracle/truffle/api/instrumentation/InstrumentationHandler$Visitor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InstrumentationHandler$VisitorBuilder extends Object {
-    private constructor(null_: InstrumentationHandler$VisitorBuilder)
+    private constructor(null_: InstrumentationHandler)
     // private hasFindSourcesExecutedOperation: boolean;
     // private hasFindSourcesOperation: boolean;
     // private operations: InstrumentationHandler$VisitOperation[];

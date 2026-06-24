@@ -2,6 +2,8 @@ import type { EfficiencyAttributeStorage$LevelToModifier } from '../../../../../
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EfficiencyAttributeStorage$EnchantAttributeModifier extends Record {
+    private constructor(arg0: string, arg1: number, arg2: number, arg3: (param0: number) => number)
+    constructor(key: string, attributeId: number, baseValue: number, modifierFunction: (param0: number) => number, operation: number)
     // private attributeId: number;
     // private baseValue: number;
     // private key: string;

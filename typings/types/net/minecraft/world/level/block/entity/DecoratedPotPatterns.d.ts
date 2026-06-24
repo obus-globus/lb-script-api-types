@@ -1,3 +1,4 @@
+import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
@@ -28,6 +29,6 @@ export class DecoratedPotPatterns extends Object {
     static SKULL: ResourceKey<DecoratedPotPattern>;
     static SNORT: ResourceKey<DecoratedPotPattern>;
     static bootstrap(paramregistry: DecoratedPotPattern[]): DecoratedPotPattern;
-    static getPatternFromItem(paramitem: Item): ResourceKey<DecoratedPotPattern>;
+    static itemToPatternMappings(paramitemToPattern: (param0: ResourceKey<Item>, param1: ResourceKey<DecoratedPotPattern>) => void): void;
     constructor()
 }

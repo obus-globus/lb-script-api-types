@@ -6,7 +6,7 @@ import type { ASTParser } from '../../../../../../io/github/douira/glsl_transfor
 export class ASTParser$EmptyRoot extends Root {
     static getActiveBuildRoot(): Root;
     static replaceExpressionsConcurrent(paramarg0: ASTParser, paramarg1: Expression[], paramarg2: string): boolean;
-    constructor(null_: ASTParser$EmptyRoot)
+    constructor(null_: ASTParser)
     registerIdentifierRename(arg0: Identifier): void;
     registerNode(arg0: ASTNode, arg1: boolean): void;
     unregisterIdentifierRename(arg0: Identifier): void;

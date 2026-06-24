@@ -6,6 +6,8 @@ export class CallerImpl$FieldSetter extends CallerImpl<Field> {
     static Companion: CallerImpl$Companion;
     protected constructor(field: Field, notNull: boolean, requiresInstance: boolean)
     // private notNull: boolean;
+    // private requiresInstance: boolean;
     call(args: (Object | null)[]): Object | null;
     checkArguments(args: (Object | null)[]): void;
+    checkArguments(argsCount: number): void;
 }

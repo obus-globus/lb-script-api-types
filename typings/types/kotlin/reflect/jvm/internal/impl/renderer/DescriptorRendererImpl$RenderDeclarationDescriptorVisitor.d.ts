@@ -15,8 +15,9 @@ import type { ReceiverParameterDescriptor } from '../../../../../../kotlin/refle
 import type { TypeAliasDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeAliasDescriptor.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { ValueParameterDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ValueParameterDescriptor.d.ts'
+import type { DescriptorRendererImpl } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl.d.ts'
 export class DescriptorRendererImpl$RenderDeclarationDescriptorVisitor extends Object implements DeclarationDescriptorVisitor<void, StringBuilder> {
-    constructor(null_: DescriptorRendererImpl$RenderDeclarationDescriptorVisitor)
+    constructor(null_: DescriptorRendererImpl)
     visitClassDescriptor(arg0: ClassDescriptor, arg1: StringBuilder): void;
     visitConstructorDescriptor(arg0: ConstructorDescriptor, arg1: StringBuilder): void;
     visitFunctionDescriptor(arg0: FunctionDescriptor, arg1: StringBuilder): void;

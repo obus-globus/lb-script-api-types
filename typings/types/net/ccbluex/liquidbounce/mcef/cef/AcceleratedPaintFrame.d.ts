@@ -4,6 +4,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AcceleratedPaintFrame extends Record implements AutoCloseable {
+    constructor(texture: GpuTexture, bgra: boolean, releaseAction: () => void)
     // private bgra: boolean;
     // private releaseAction: () => void;
     // private texture: GpuTexture;

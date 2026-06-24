@@ -1,9 +1,15 @@
-import type { HttpMethod } from '../../../../../io/netty/handler/codec/http/HttpMethod.d.ts'
+import type { HttpServerCodec$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
+import type { ChannelHandlerContext } from '../../../../../io/netty/channel/ChannelHandlerContext.d.ts'
+import type { ChannelPromise } from '../../../../../io/netty/channel/ChannelPromise.d.ts'
 import type { HttpResponse } from '../../../../../io/netty/handler/codec/http/HttpResponse.d.ts'
 import type { HttpResponseEncoder } from '../../../../../io/netty/handler/codec/http/HttpResponseEncoder.d.ts'
+import type { HttpServerCodec } from '../../../../../io/netty/handler/codec/http/HttpServerCodec.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class HttpServerCodec$HttpServerResponseEncoder extends HttpResponseEncoder {
-    private constructor(null_: HttpServerCodec$HttpServerResponseEncoder)
-    // private method: HttpMethod;
+    private constructor(null_: HttpServerCodec)
+    constructor(null_: HttpServerCodec, arg1: HttpServerCodec$1)
+    // private methodFlag: number;
     isContentAlwaysEmpty(arg0: HttpResponse): boolean;
     sanitizeHeadersBeforeEncode(arg0: HttpResponse, arg1: boolean): void;
+    write(arg0: ChannelHandlerContext, arg1: Object, arg2: ChannelPromise): void;
 }

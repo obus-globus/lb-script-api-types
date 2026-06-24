@@ -3,8 +3,8 @@ import type { Byte2ObjectMap$Entry } from '../../../../../it/unimi/dsi/fastutil/
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2ObjectAVLTreeMap$EntryIterator extends Byte2ObjectAVLTreeMap$TreeIterator implements ObjectListIterator<Byte2ObjectMap$Entry<V>> {
-    constructor(null_: Byte2ObjectAVLTreeMap$EntryIterator)
-    constructor(null_: Byte2ObjectAVLTreeMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add<V extends unknown>(arg0: Byte2ObjectMap$Entry<V>): void;
     next<V extends unknown>(): Byte2ObjectMap$Entry<V>;
     previous<V extends unknown>(): Byte2ObjectMap$Entry<V>;

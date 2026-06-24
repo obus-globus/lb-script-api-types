@@ -1,8 +1,10 @@
+import type { MinMaxPriorityQueue$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class MinMaxPriorityQueue$QueueIterator extends Object implements Iterator<E> {
-    private constructor(null_: MinMaxPriorityQueue$QueueIterator)
+    private constructor(null_: E[])
+    constructor(null_: E[], arg1: MinMaxPriorityQueue$1)
     // private canRemove: boolean;
     // private cursor: number;
     // private expectedModCount: number;

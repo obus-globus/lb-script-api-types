@@ -13,7 +13,9 @@ export class Lz4FrameDecoder extends ByteToMessageDecoder {
     static MERGE_CUMULATOR: ByteToMessageDecoder$Cumulator;
     constructor()
     constructor(arg0: boolean)
+    constructor(arg0: boolean, arg1: number)
     constructor(arg0: LZ4Factory, arg1: Checksum)
+    constructor(arg0: LZ4Factory, arg1: Checksum, arg2: number)
     constructor(arg0: LZ4Factory, arg1: boolean)
     // private blockType: number;
     // private checksum: ByteBufChecksum;
@@ -22,6 +24,7 @@ export class Lz4FrameDecoder extends ByteToMessageDecoder {
     // private currentState: Lz4FrameDecoder$State;
     // private decompressedLength: number;
     // private decompressor: LZ4FastDecompressor;
+    // private maxDecompressedLength: number;
     decode(arg0: ChannelHandlerContext, arg1: ByteBuf, arg2: Object[]): void;
     isClosed(): boolean;
 }

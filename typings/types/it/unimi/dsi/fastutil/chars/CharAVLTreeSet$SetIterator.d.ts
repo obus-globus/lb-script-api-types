@@ -2,8 +2,8 @@ import type { CharAVLTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil/
 import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharAVLTreeSet$SetIterator extends Object implements CharListIterator {
-    constructor(null_: CharAVLTreeSet$SetIterator)
-    constructor(null_: CharAVLTreeSet$SetIterator, arg1: string)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: string)
     // private curr: CharAVLTreeSet$Entry;
     // private index: number;
     // private next: CharAVLTreeSet$Entry;

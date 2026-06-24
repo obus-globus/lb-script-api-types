@@ -4,6 +4,7 @@ import type { Component } from '../../../../net/minecraft/network/chat/Component
 import type { MutableComponent } from '../../../../net/minecraft/network/chat/MutableComponent.d.ts'
 import type { NumberFormat } from '../../../../net/minecraft/network/chat/numbers/NumberFormat.d.ts'
 export class PlayerScoreEntry extends Record {
+    constructor(owner: string, value: number, display: Component, numberFormatOverride: NumberFormat)
     // private display: Component;
     // private numberFormatOverride: NumberFormat;
     // private owner: string;

@@ -1,6 +1,7 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { KDeclarationContainerImpl } from '../../../../kotlin/reflect/jvm/internal/KDeclarationContainerImpl.d.ts'
 import type { RuntimeModuleData } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/runtime/components/RuntimeModuleData.d.ts'
 export abstract class KDeclarationContainerImpl$Data extends Object {
-    constructor(null_: KDeclarationContainerImpl$Data)
+    constructor(null_: KDeclarationContainerImpl)
     readonly moduleData: RuntimeModuleData;
 }

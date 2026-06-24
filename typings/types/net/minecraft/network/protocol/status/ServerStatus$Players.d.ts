@@ -4,6 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NameAndId } from '../../../../../net/minecraft/server/players/NameAndId.d.ts'
 export class ServerStatus$Players extends Record {
     static CODEC: Codec<ServerStatus$Players>;
+    constructor(max: number, online: number, sample: NameAndId[])
     // private max: number;
     // private online: number;
     // private sample: NameAndId[];

@@ -1,12 +1,15 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { DatePeriod } from '../../kotlinx/datetime/DatePeriod.d.ts'
 import type { DateTimeUnit$DateBased } from '../../kotlinx/datetime/DateTimeUnit$DateBased.d.ts'
+import type { DayOfWeek } from '../../kotlinx/datetime/DayOfWeek.d.ts'
 import type { LocalDate } from '../../kotlinx/datetime/LocalDate.d.ts'
 import type { LocalDateTime } from '../../kotlinx/datetime/LocalDateTime.d.ts'
 import type { LocalTime } from '../../kotlinx/datetime/LocalTime.d.ts'
 import type { Month } from '../../kotlinx/datetime/Month.d.ts'
 import type { DateTimeFormat } from '../../kotlinx/datetime/format/DateTimeFormat.d.ts'
 export class LocalDateKt extends Object {
+    static YEAR_MAX: number;
+    static YEAR_MIN: number;
     static LocalDate(paramarg0: number, paramarg1: number, paramarg2: number): LocalDate;
     static LocalDate(paramarg0: number, paramarg1: Month, paramarg2: number): LocalDate;
     static atTime(paramarg0: LocalDate, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): LocalDateTime;
@@ -18,6 +21,10 @@ export class LocalDateKt extends Object {
     static minus(paramarg0: LocalDate, paramarg1: DatePeriod): LocalDate;
     static minus(paramarg0: LocalDate, paramarg1: DateTimeUnit$DateBased): LocalDate;
     static minus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
+    static next(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
+    static nextOrSame(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
     static plus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
+    static previous(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
+    static previousOrSame(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
     static toLocalDate(paramarg0: string): LocalDate;
 }

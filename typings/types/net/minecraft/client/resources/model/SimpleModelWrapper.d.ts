@@ -1,3 +1,4 @@
+import type { Multimap } from '../../../../../com/google/common/collect/Multimap.d.ts'
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -12,6 +13,8 @@ import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class SimpleModelWrapper extends Record implements BlockStateModelPart {
     static bake(parammodelBakery: ModelBaker, paramlocation: Identifier, paramstate: ModelState): BlockStateModelPart;
+    static findNonBlockSprites(paramgeometry: QuadCollection): Multimap<Identifier, Identifier>;
+    constructor(quads: QuadCollection, useAmbientOcclusion: boolean, particleMaterial: Material$Baked)
     // private particleMaterial: Material$Baked;
     // private quads: QuadCollection;
     // private useAmbientOcclusion: boolean;

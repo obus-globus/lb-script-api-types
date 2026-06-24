@@ -1,5 +1,6 @@
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
 import type { ObjectSelectionList } from '../../../../../net/minecraft/client/gui/components/ObjectSelectionList.d.ts'
+import type { CreateFlatWorldScreen } from '../../../../../net/minecraft/client/gui/screens/CreateFlatWorldScreen.d.ts'
 import type { CreateFlatWorldScreen$DetailsList$Entry } from '../../../../../net/minecraft/client/gui/screens/CreateFlatWorldScreen$DetailsList$Entry.d.ts'
 import type { CreateFlatWorldScreen$DetailsList$LayerEntry } from '../../../../../net/minecraft/client/gui/screens/CreateFlatWorldScreen$DetailsList$LayerEntry.d.ts'
 import type { SoundManager } from '../../../../../net/minecraft/client/sounds/SoundManager.d.ts'
@@ -10,7 +11,7 @@ export class CreateFlatWorldScreen$DetailsList extends ObjectSelectionList<Creat
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: CreateFlatWorldScreen$DetailsList)
+    constructor(null_: CreateFlatWorldScreen)
     // private deleteLayer(selectedLayerEntry: CreateFlatWorldScreen$DetailsList$LayerEntry): void;
     // private populateList(): void;
     resetRows(): void;

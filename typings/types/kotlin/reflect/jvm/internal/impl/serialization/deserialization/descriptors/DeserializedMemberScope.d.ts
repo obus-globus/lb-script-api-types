@@ -33,7 +33,7 @@ export abstract class DeserializedMemberScope extends MemberScopeImpl {
     // private createImplementation(arg0: ProtoBuf$Function[], arg1: ProtoBuf$Property[], arg2: ProtoBuf$TypeAlias[]): DeserializedMemberScope$Implementation;
     // private deserializeClass(arg0: Name): ClassDescriptor;
     getC(): DeserializationContext;
-    getClassNames$deserialization(): Name[];
+    getClassNames$org_jetbrains_kotlin_deserialization(): Name[];
     getClassifierNames(): Name[];
     // private getClassifierNamesLazy(): Name[];
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;

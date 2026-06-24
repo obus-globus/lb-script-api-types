@@ -24,6 +24,7 @@ export class ItemModelUtils extends Object {
     static isXmas(paramonTrue: ItemModel$Unbaked, paramonFalse: ItemModel$Unbaked): ItemModel$Unbaked;
     static override(parammodel: ItemModel$Unbaked, paramvalue: number): RangeSelectItemModel$Entry;
     static plainModel(paramid: Identifier): ItemModel$Unbaked;
+    static plainModel(paramid: Identifier, paramtransformation: Transformation): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramscale: number, paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramscale: number, paramfallback: ItemModel$Unbaked, paramentries: (Object | null)[]): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;

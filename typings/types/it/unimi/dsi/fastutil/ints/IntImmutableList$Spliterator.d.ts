@@ -13,8 +13,8 @@ export class IntImmutableList$Spliterator extends Object implements IntSpliterat
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: IntImmutableList$Spliterator)
-    private constructor(null_: IntImmutableList$Spliterator, arg1: number, arg2: number)
+    constructor(null_: (Object | null)[])
+    private constructor(null_: (Object | null)[], arg1: number, arg2: number)
     // private max: number;
     // private pos: number;
     characteristics(): number;

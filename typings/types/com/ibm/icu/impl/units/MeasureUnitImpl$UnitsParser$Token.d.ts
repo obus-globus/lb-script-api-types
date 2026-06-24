@@ -9,6 +9,7 @@ export class MeasureUnitImpl$UnitsParser$Token extends Object {
     // private fMatch: number;
     readonly type: MeasureUnitImpl$UnitsParser$Token$Type;
     // private calculateType(arg0: number): MeasureUnitImpl$UnitsParser$Token$Type;
+    getAliasIndex(): number;
     getConstantDenominator(): number;
     getInitialCompoundPart(): MeasureUnitImpl$InitialCompoundPart;
     getMatch(): number;

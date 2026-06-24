@@ -2,6 +2,7 @@ import type { BlockPosition } from '../../../../../com/viaversion/viaversion/api
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BlockChangeEntry extends Record {
+    constructor(position: BlockPosition, blockState: number, flags: number, messageEntityUniqueId: number, messageType: number)
     // private blockState: number;
     // private flags: number;
     // private messageEntityUniqueId: number;

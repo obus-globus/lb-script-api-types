@@ -6,5 +6,5 @@ export class HashBasedTable<R extends unknown, C extends unknown, V extends unkn
     static create(): HashBasedTable<Object, Object, Object>;
     static create(paramtable: Table<Object, Object, Object>): HashBasedTable<Object, Object, Object>;
     static create(paramexpectedRows: number, paramexpectedCellsPerRow: number): HashBasedTable<Object, Object, Object>;
-    constructor(backingMap: Map<R, Map<C, V>>, factory: HashBasedTable$Factory<C, V>)
+    private constructor(backingMap: Map<R, Map<C, V>>, factory: HashBasedTable$Factory<C, V>)
 }

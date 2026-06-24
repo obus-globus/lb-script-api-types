@@ -2,6 +2,7 @@ import type { Runnable } from '../../java/lang/Runnable.d.ts'
 import type { Executor } from '../../java/util/concurrent/Executor.d.ts'
 import type { RejectedExecutionException } from '../../java/util/concurrent/RejectedExecutionException.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
+import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { ContinuationInterceptor$Key } from '../../kotlin/coroutines/ContinuationInterceptor$Key.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CancellableContinuation } from '../../kotlinx/coroutines/CancellableContinuation.d.ts'
@@ -14,6 +15,7 @@ export class ExecutorCoroutineDispatcherImpl extends ExecutorCoroutineDispatcher
     static Key: ContinuationInterceptor$Key;
     static Key: CoroutineDispatcher$Key;
     static Key: ExecutorCoroutineDispatcher$Key;
+    static delay$suspendImpl(paramarg0: Delay, paramarg1: number, paramarg2: Continuation<Object>): Object;
     constructor(executor: Executor)
     readonly executor: Executor;
     // private cancelJobOnRejection(context: CoroutineContext, exception: RejectedExecutionException): void;

@@ -9,6 +9,7 @@ export class Weighted<T extends unknown> extends Record {
     static codec(paramelementCodec: Codec<Object>): Codec<Weighted<Object>>;
     static codec(paramelementCodec: MapCodec<Object>): Codec<Weighted<Object>>;
     static streamCodec(paramvalueCodec: StreamCodec<ByteBuf, Object>): StreamCodec<ByteBuf, Weighted<Object>>;
+    constructor(value: T, weight: number)
     // private value: T;
     // private weight: number;
     equals(o: Object | null): boolean;

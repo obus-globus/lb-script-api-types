@@ -67,4 +67,5 @@ export class JsonReader extends Object implements Closeable {
     // private syntaxError(arg0: string): MalformedJsonException;
     toString(): string;
     // private unexpectedTokenError(arg0: string): IllegalStateException;
+    // private validateAscii(arg0: string): void;
 }

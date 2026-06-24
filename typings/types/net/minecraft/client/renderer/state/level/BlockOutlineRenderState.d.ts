@@ -5,6 +5,8 @@ import type { RenderStateDataKey } from '../../../../../../net/fabricmc/fabric/a
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class BlockOutlineRenderState extends Record implements FabricRenderState {
+    constructor(pos: BlockPos, isTranslucent: boolean, highContrast: boolean, shape: VoxelShape)
+    constructor(pos: BlockPos, isTranslucent: boolean, highContrast: boolean, shape: VoxelShape, collisionShape: VoxelShape, occlusionShape: VoxelShape, interactionShape: VoxelShape)
     // private collisionShape: VoxelShape;
     // private highContrast: boolean;
     // private interactionShape: VoxelShape;

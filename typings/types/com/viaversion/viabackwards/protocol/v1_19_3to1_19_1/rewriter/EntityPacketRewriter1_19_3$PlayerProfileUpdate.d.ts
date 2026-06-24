@@ -3,6 +3,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EntityPacketRewriter1_19_3$PlayerProfileUpdate extends Record {
+    private constructor(uuid: UUID, gamemode: number, latency: number, displayName: JsonElement)
     // private displayName: JsonElement;
     // private gamemode: number;
     // private latency: number;

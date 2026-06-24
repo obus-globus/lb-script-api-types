@@ -13,6 +13,7 @@ import type { ResourceManager } from '../../../../../../net/minecraft/server/pac
 export class TrueTypeGlyphProviderDefinition extends Record implements GlyphProviderDefinition {
     static CODEC: MapCodec<TrueTypeGlyphProviderDefinition>;
     static MAP_CODEC: MapCodec<GlyphProviderDefinition>;
+    constructor(location: Identifier, size: number, oversample: number, shift: TrueTypeGlyphProviderDefinition$Shift, skip: string)
     // private location: Identifier;
     // private oversample: number;
     // private shift: TrueTypeGlyphProviderDefinition$Shift;

@@ -1,7 +1,8 @@
+import type { Profiler } from '../../../../../org/spongepowered/asm/util/perf/Profiler.d.ts'
 import type { Profiler$DisabledSection } from '../../../../../org/spongepowered/asm/util/perf/Profiler$DisabledSection.d.ts'
 import type { Profiler$Section } from '../../../../../org/spongepowered/asm/util/perf/Profiler$Section.d.ts'
 export class Profiler$LiveSection extends Profiler$DisabledSection {
-    constructor(null_: Profiler$LiveSection, arg1: string, arg2: number)
+    constructor(null_: Profiler, arg1: string, arg2: number)
     readonly count: number;
     // private cursor: number;
     // private markedCount: number;

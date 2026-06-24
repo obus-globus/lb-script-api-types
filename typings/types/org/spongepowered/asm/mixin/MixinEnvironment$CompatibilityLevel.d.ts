@@ -1,3 +1,4 @@
+import type { MixinEnvironment$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
@@ -31,6 +32,7 @@ export class MixinEnvironment$CompatibilityLevel extends Enum<MixinEnvironment$C
     static valueOf(paramarg0: string): MixinEnvironment$CompatibilityLevel;
     static values(): (Object | null)[];
     private constructor(arg2: number, arg3: number, arg4: number)
+    constructor(arg2: number, arg3: number, arg4: number, arg5: MixinEnvironment$1)
     readonly languageFeatures: number;
     // private maxCompatibleLevel: MixinEnvironment$CompatibilityLevel;
     // private ver: number;

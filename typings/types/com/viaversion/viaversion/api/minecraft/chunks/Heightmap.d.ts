@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Heightmap extends Record {
+    constructor(type: number, data: number[])
     // private data: number[];
     // private type: number;
     data(): number[];

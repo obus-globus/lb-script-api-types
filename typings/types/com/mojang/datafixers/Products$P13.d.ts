@@ -1,10 +1,16 @@
+import type { Products$P14 } from '../../../com/mojang/datafixers/Products$P14.d.ts'
+import type { Products$P15 } from '../../../com/mojang/datafixers/Products$P15.d.ts'
+import type { Products$P16 } from '../../../com/mojang/datafixers/Products$P16.d.ts'
+import type { Products$P2 } from '../../../com/mojang/datafixers/Products$P2.d.ts'
+import type { Products$P3 } from '../../../com/mojang/datafixers/Products$P3.d.ts'
 import type { App } from '../../../com/mojang/datafixers/kinds/App.d.ts'
 import type { Applicative } from '../../../com/mojang/datafixers/kinds/Applicative.d.ts'
 import type { K1 } from '../../../com/mojang/datafixers/kinds/K1.d.ts'
 import type { Function13 } from '../../../com/mojang/datafixers/util/Function13.d.ts'
+import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
-export class Products$P13<F extends K1, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown> extends Object {
-    constructor(arg0: App<F, T1>, arg1: App<F, T2>, arg2: App<F, T3>, arg3: App<F, T4>, arg4: App<F, T5>, arg5: App<F, T6>, arg6: App<F, T7>, arg7: App<F, T8>, arg8: App<F, T9>, arg9: App<F, T10>, arg10: App<F, T11>, arg11: App<F, T12>, arg12: App<F, T13>)
+export class Products$P13<F extends K1, T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, T6 extends unknown, T7 extends unknown, T8 extends unknown, T9 extends unknown, T10 extends unknown, T11 extends unknown, T12 extends unknown, T13 extends unknown> extends Record {
+    constructor(t1: App<F, T1>, t2: App<F, T2>, t3: App<F, T3>, t4: App<F, T4>, t5: App<F, T5>, t6: App<F, T6>, t7: App<F, T7>, t8: App<F, T8>, t9: App<F, T9>, t10: App<F, T10>, t11: App<F, T11>, t12: App<F, T12>, t13: App<F, T13>)
     // private t1: App<F, T1>;
     // private t10: App<F, T10>;
     // private t11: App<F, T11>;
@@ -18,6 +24,25 @@ export class Products$P13<F extends K1, T1 extends unknown, T2 extends unknown, 
     // private t7: App<F, T7>;
     // private t8: App<F, T8>;
     // private t9: App<F, T9>;
+    and<T14 extends unknown, T15 extends unknown>(arg0: Products$P2<F, T14, T15>): Products$P15<F, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15>;
+    and<T14 extends unknown, T15 extends unknown, T16 extends unknown>(arg0: Products$P3<F, T14, T15, T16>): Products$P16<F, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>;
+    and<T14 extends unknown>(arg0: App<F, T14>): Products$P14<F, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14>;
     apply<R extends unknown>(arg0: Applicative<F, any>, arg1: App<F, Function13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, R>>): App<F, R>;
     apply<R extends unknown>(arg0: Applicative<F, any>, arg1: Function13<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, R>): App<F, R>;
+    equals(arg0: Object | null): boolean;
+    hashCode(): number;
+    t1(): App<F, T1>;
+    t10(): App<F, T10>;
+    t11(): App<F, T11>;
+    t12(): App<F, T12>;
+    t13(): App<F, T13>;
+    t2(): App<F, T2>;
+    t3(): App<F, T3>;
+    t4(): App<F, T4>;
+    t5(): App<F, T5>;
+    t6(): App<F, T6>;
+    t7(): App<F, T7>;
+    t8(): App<F, T8>;
+    t9(): App<F, T9>;
+    toString(): string;
 }

@@ -4,7 +4,7 @@ import type { AdaptivePoolingAllocator$Chunk } from '../../../io/netty/buffer/Ad
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ByteBufAllocator } from '../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ByteProcessor } from '../../../io/netty/util/ByteProcessor.d.ts'
-import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPool$Handle.d.ts'
+import type { Recycler$EnhancedHandle } from '../../../io/netty/util/Recycler$EnhancedHandle.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
@@ -15,9 +15,9 @@ import type { ScatteringByteChannel } from '../../../java/nio/channels/Scatterin
 import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 export class AdaptivePoolingAllocator$AdaptiveByteBuf extends AbstractReferenceCountedByteBuf {
-    constructor(arg0: ObjectPool$Handle<AdaptivePoolingAllocator$AdaptiveByteBuf>)
+    constructor(arg0: Recycler$EnhancedHandle<AdaptivePoolingAllocator$AdaptiveByteBuf>)
     // private chunk: AdaptivePoolingAllocator$Chunk;
-    // private handle: ObjectPool$Handle<AdaptivePoolingAllocator$AdaptiveByteBuf>;
+    // private handle: Recycler$EnhancedHandle<AdaptivePoolingAllocator$AdaptiveByteBuf>;
     // private hasArray: boolean;
     // private hasMemoryAddress: boolean;
     // private length: number;
@@ -34,6 +34,7 @@ export class AdaptivePoolingAllocator$AdaptiveByteBuf extends AbstractReferenceC
     _getShortLE(arg0: number): number;
     _getUnsignedMedium(arg0: number): number;
     _getUnsignedMediumLE(arg0: number): number;
+    _isDirect(): boolean;
     _memoryAddress(): number;
     _setByte(arg0: number, arg1: number): void;
     _setInt(arg0: number, arg1: number): void;

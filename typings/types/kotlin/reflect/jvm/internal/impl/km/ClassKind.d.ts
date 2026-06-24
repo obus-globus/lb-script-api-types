@@ -16,6 +16,6 @@ export class ClassKind extends Enum<ClassKind> {
     static values(): (Object | null)[];
     private constructor(arg2: number)
     // private flag: FlagImpl;
-    getFlag$kotlin_metadata(): FlagImpl;
+    getFlag$org_jetbrains_kotlin_kotlin_metadata(): FlagImpl;
     name(): "CLASS" | "INTERFACE" | "ENUM_CLASS" | "ENUM_ENTRY" | "ANNOTATION_CLASS" | "OBJECT" | "COMPANION_OBJECT";
 }

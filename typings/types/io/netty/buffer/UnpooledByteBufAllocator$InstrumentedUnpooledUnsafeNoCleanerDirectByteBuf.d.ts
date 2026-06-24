@@ -4,5 +4,6 @@ import type { CleanableDirectBuffer } from '../../../io/netty/util/internal/Clea
 export class UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeNoCleanerDirectByteBuf extends UnpooledUnsafeNoCleanerDirectByteBuf {
     constructor(arg0: UnpooledByteBufAllocator, arg1: number, arg2: number)
     allocateDirectBuffer(arg0: number): CleanableDirectBuffer;
+    allocateDirectBuffer(arg0: number, arg1: boolean): CleanableDirectBuffer;
     reallocateDirect(arg0: CleanableDirectBuffer, arg1: number): CleanableDirectBuffer;
 }

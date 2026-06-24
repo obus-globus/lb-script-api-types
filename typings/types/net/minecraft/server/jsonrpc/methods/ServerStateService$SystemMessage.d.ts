@@ -6,6 +6,7 @@ import type { PlayerDto } from '../../../../../net/minecraft/server/jsonrpc/api/
 import type { Message } from '../../../../../net/minecraft/server/jsonrpc/methods/Message.d.ts'
 export class ServerStateService$SystemMessage extends Record {
     static CODEC: Codec<ServerStateService$SystemMessage>;
+    constructor(message: Message, overlay: boolean, receivingPlayers: Optional<PlayerDto[]>)
     // private message: Message;
     // private overlay: boolean;
     // private receivingPlayers: Optional<PlayerDto[]>;

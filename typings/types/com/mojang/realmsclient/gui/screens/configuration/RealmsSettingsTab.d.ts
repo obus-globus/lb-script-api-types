@@ -11,7 +11,9 @@ import type { EditBox } from '../../../../../../net/minecraft/client/gui/compone
 import type { ImageWidget } from '../../../../../../net/minecraft/client/gui/components/ImageWidget.d.ts'
 import type { StringWidget } from '../../../../../../net/minecraft/client/gui/components/StringWidget.d.ts'
 import type { GridLayoutTab } from '../../../../../../net/minecraft/client/gui/components/tabs/GridLayoutTab.d.ts'
+import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export class RealmsSettingsTab extends GridLayoutTab implements RealmsConfigurationTab {
+    static TITLE: Component;
     constructor(configurationScreen: RealmsConfigureWorldScreen, minecraft: Minecraft, serverData: RealmsServer, regionServiceQuality: { [key in RealmsRegion]: ServiceQuality })
     // private closeOpenButton: Button;
     // private configurationScreen: RealmsConfigureWorldScreen;

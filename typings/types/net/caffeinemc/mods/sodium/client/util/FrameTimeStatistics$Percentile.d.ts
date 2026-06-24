@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class FrameTimeStatistics$Percentile extends Record {
+    constructor(name: string, window: number, p: number)
     // private name: string;
     // private p: number;
     // private window: number;

@@ -3,10 +3,11 @@ import type { Remapper } from '../../../../../org/objectweb/asm/commons/Remapper
 import type { ClassNode } from '../../../../../org/objectweb/asm/tree/ClassNode.d.ts'
 import type { IMixinInfo } from '../../../../../org/spongepowered/asm/mixin/extensibility/IMixinInfo.d.ts'
 import type { ClassInfo } from '../../../../../org/spongepowered/asm/mixin/transformer/ClassInfo.d.ts'
+import type { InnerClassGenerator } from '../../../../../org/spongepowered/asm/mixin/transformer/InnerClassGenerator.d.ts'
 import type { MixinInfo } from '../../../../../org/spongepowered/asm/mixin/transformer/MixinInfo.d.ts'
 import type { ISyntheticClassInfo } from '../../../../../org/spongepowered/asm/service/ISyntheticClassInfo.d.ts'
 export class InnerClassGenerator$InnerClassInfo extends Remapper implements ISyntheticClassInfo {
-    constructor(null_: InnerClassGenerator$InnerClassInfo, arg1: MixinInfo, arg2: ClassInfo, arg3: ClassInfo, arg4: string, arg5: string, arg6: MixinInfo)
+    constructor(null_: InnerClassGenerator, arg1: MixinInfo, arg2: ClassInfo, arg3: ClassInfo, arg4: string, arg5: string, arg6: MixinInfo)
     // private loadCounter: number;
     readonly mixin: MixinInfo;
     readonly name: string;

@@ -4,7 +4,7 @@ import type { FloatIterator } from '../../../../../it/unimi/dsi/fastutil/floats/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { DoubleConsumer } from '../../../../../java/util/function/DoubleConsumer.d.ts'
 export class Float2ReferenceOpenHashMap$KeyIterator extends Float2ReferenceOpenHashMap$MapIterator<Object> implements FloatIterator {
-    constructor(null_: Float2ReferenceOpenHashMap$KeyIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

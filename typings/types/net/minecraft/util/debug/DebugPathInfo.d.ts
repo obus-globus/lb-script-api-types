@@ -5,6 +5,7 @@ import type { StreamCodec } from '../../../../net/minecraft/network/codec/Stream
 import type { Path } from '../../../../net/minecraft/world/level/pathfinder/Path.d.ts'
 export class DebugPathInfo extends Record {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, DebugPathInfo>;
+    constructor(path: Path, maxNodeDistance: number)
     // private maxNodeDistance: number;
     // private path: Path;
     equals(o: Object | null): boolean;

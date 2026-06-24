@@ -21,6 +21,6 @@ export abstract class FabricTagsProvider<T extends unknown> extends TagsProvider
     addTags(arg0: HolderLookup$Provider): void;
     aliasGroup(arg0: string): FabricTagsProvider$AliasGroupBuilder;
     aliasGroup(arg0: Identifier): FabricTagsProvider$AliasGroupBuilder;
-    builder(arg0: TagKey<T>): TagAppender<ResourceKey<T>, T>;
+    builder(arg0: TagKey<T>): TagAppender<T>;
     getAliasGroupBuilders(): Map<Identifier, FabricTagsProvider$AliasGroupBuilder>;
 }

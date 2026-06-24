@@ -9,7 +9,6 @@ import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
-import type { TagKey } from '../../../../../net/minecraft/tags/TagKey.d.ts'
 import type { IntProvider } from '../../../../../net/minecraft/util/valueproviders/IntProvider.d.ts'
 import type { EnvironmentAttributeMap } from '../../../../../net/minecraft/world/attribute/EnvironmentAttributeMap.d.ts'
 import type { WorldClock } from '../../../../../net/minecraft/world/clock/WorldClock.d.ts'
@@ -34,6 +33,7 @@ export class DimensionType extends Record implements DimensionTypeAccessor, Dime
     static Y_SIZE: number;
     static getStorageFolder(paramname: ResourceKey<Level>, parambaseFolder: Path[][]): Path[][];
     static getTeleportationScale(paramlastDimensionType: DimensionType, paramnewDimensionType: DimensionType): number;
+    constructor(hasFixedTime: boolean, hasSkyLight: boolean, hasCeiling: boolean, hasEnderDragonFight: boolean, coordinateScale: number, minY: number, height: number, logicalHeight: number, infiniburn: Holder<Block>[], ambientLight: number, monsterSettings: DimensionType$MonsterSettings, skybox: DimensionType$Skybox, cardinalLightType: CardinalLighting$Type, attributes: EnvironmentAttributeMap, timelines: Holder<Timeline>[], defaultClock: Optional<Holder<WorldClock>>)
     // private attributes: EnvironmentAttributeMap;
     // private cardinalLightType: CardinalLighting$Type;
     // private coordinateScale: number;
@@ -43,7 +43,7 @@ export class DimensionType extends Record implements DimensionTypeAccessor, Dime
     // private hasFixedTime: boolean;
     // private hasSkyLight: boolean;
     // private height: number;
-    // private infiniburn: TagKey<Block>;
+    // private infiniburn: Holder<Block>[];
     // private logicalHeight: number;
     // private minY: number;
     // private monsterSettings: DimensionType$MonsterSettings;
@@ -64,7 +64,7 @@ export class DimensionType extends Record implements DimensionTypeAccessor, Dime
     hasSkyLight(): boolean;
     hashCode(): number;
     height(): number;
-    infiniburn(): TagKey<Block>;
+    infiniburn(): Holder<Block>[];
     logicalHeight(): number;
     minY(): number;
     monsterSettings(): DimensionType$MonsterSettings;

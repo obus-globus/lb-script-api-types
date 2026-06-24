@@ -25,4 +25,5 @@ export class ModListEntry extends ObjectSelectionList$Entry<ModListEntry> {
     mouseClicked(arg0: MouseButtonEvent, arg1: boolean): boolean;
     openConfig(): void;
     setYOffset(arg0: number): void;
+    updatePlacement(arg0: number, arg1: number, arg2: number): void;
 }

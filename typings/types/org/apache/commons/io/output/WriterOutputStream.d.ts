@@ -1,3 +1,4 @@
+import type { WriterOutputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { Writer } from '../../../../../java/io/Writer.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
@@ -16,6 +17,7 @@ export class WriterOutputStream extends OutputStream {
     constructor(arg0: Writer, arg1: string)
     constructor(arg0: Writer, arg1: string, arg2: number, arg3: boolean)
     private constructor(arg0: WriterOutputStream$Builder)
+    constructor(arg0: WriterOutputStream$Builder, arg1: WriterOutputStream$1)
     // private decoder: CharsetDecoder;
     // private decoderIn: ByteBuffer;
     // private decoderOut: CharBuffer;

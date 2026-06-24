@@ -6,6 +6,7 @@ import type { Thread$UncaughtExceptionHandler } from '../../../../../../java/lan
 import type { Duration } from '../../../../../../java/time/Duration.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
+import type { BuiltinLogHandler } from '../../../../../../net/fabricmc/loader/impl/util/log/BuiltinLogHandler.d.ts'
 export class BuiltinLogHandler$ShutdownHook extends Thread {
     static MAX_PRIORITY: number;
     static MIN_PRIORITY: number;
@@ -27,6 +28,6 @@ export class BuiltinLogHandler$ShutdownHook extends Thread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    constructor(null_: BuiltinLogHandler$ShutdownHook)
+    constructor(null_: BuiltinLogHandler)
     run(): void;
 }

@@ -1,3 +1,4 @@
+import type { OptionalInt } from '../../../../../java/util/OptionalInt.d.ts'
 import type { MixinChatScreenAccessor } from '../../../../../net/ccbluex/liquidbounce/injection/mixins/minecraft/gui/MixinChatScreenAccessor.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
@@ -43,7 +44,7 @@ export class ChatScreen extends Screen implements MixinChatScreenAccessor {
     extractBackground(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
     // private formatChat(text: string, offset: number): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
-    // private getActiveMessage(arg0: MouseButtonEvent): number;
+    // private getActiveMessage(arg0: MouseButtonEvent): OptionalInt;
     getInput(): EditBox;
     handleChatInput(msg: string, addToRecent: boolean): void;
     // private handleComponentClicked(clicked: Style, allowInsertions: boolean): boolean;

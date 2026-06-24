@@ -7,6 +7,7 @@ export class BlockFamily extends Object {
     readonly baseBlock: Block;
     // private generateCraftingRecipe: boolean;
     // private generateModel: boolean;
+    // private generateSmeltingRecipe: boolean;
     // private generateStonecutterRecipe: boolean;
     readonly recipeGroupPrefix: string;
     readonly recipeUnlockedBy: string;
@@ -18,5 +19,6 @@ export class BlockFamily extends Object {
     getVariants(): { [key in BlockFamily$Variant]: Block };
     shouldGenerateCraftingRecipe(): boolean;
     shouldGenerateModel(): boolean;
+    shouldGenerateSmeltingRecipe(): boolean;
     shouldGenerateStonecutterRecipe(): boolean;
 }

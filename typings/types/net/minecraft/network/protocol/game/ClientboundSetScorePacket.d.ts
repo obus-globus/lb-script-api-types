@@ -14,6 +14,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 export class ClientboundSetScorePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetScorePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(owner: string, objectiveName: string, score: number, display: Optional<Component>, numberFormat: Optional<NumberFormat>)
     // private display: Optional<Component>;
     // private numberFormat: Optional<NumberFormat>;
     // private objectiveName: string;

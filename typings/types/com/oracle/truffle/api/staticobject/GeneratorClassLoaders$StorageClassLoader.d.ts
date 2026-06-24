@@ -1,3 +1,4 @@
+import type { GeneratorClassLoaders } from '../../../../../com/oracle/truffle/api/staticobject/GeneratorClassLoaders.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
@@ -10,7 +11,7 @@ export class GeneratorClassLoaders$StorageClassLoader extends ClassLoader {
     static getSystemResource(paramarg0: string): URL;
     static getSystemResourceAsStream(paramarg0: string): InputStream;
     static getSystemResources(paramarg0: string): Enumeration<URL>;
-    constructor(null_: GeneratorClassLoaders$StorageClassLoader)
+    constructor(null_: GeneratorClassLoaders, referenceClass: Class<Object>)
     // private referenceClass: Class<Object>;
     defineGeneratedClass(name: string, b: number[], off: number, len: number): Class<Object>;
 }

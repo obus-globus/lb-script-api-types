@@ -7,9 +7,11 @@ import type { SpawnerRenderState } from '../../../../../net/minecraft/client/ren
 import type { EntityRenderDispatcher } from '../../../../../net/minecraft/client/renderer/entity/EntityRenderDispatcher.d.ts'
 import type { ModelFeatureRenderer$CrumblingOverlay } from '../../../../../net/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay.d.ts'
 import type { CameraRenderState } from '../../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
+import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { TrialSpawnerBlockEntity } from '../../../../../net/minecraft/world/level/block/entity/TrialSpawnerBlockEntity.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class TrialSpawnerRenderer extends Object implements BlockEntityRenderer<TrialSpawnerBlockEntity, SpawnerRenderState> {
+    static extractSpawnerData(paramstate: SpawnerRenderState, parampartialTicks: number, paramdisplayEntity: Entity, paramentityRenderer: EntityRenderDispatcher, paramoSpin: number, paramspin: number): void;
     constructor(context: BlockEntityRendererProvider$Context)
     // private entityRenderer: EntityRenderDispatcher;
     createRenderState(): SpawnerRenderState;

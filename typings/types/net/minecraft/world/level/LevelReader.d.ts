@@ -47,12 +47,13 @@ export interface LevelReader extends Object, ChunkView, BlockAndLightGetter, Col
     findFreePosition(source: Entity, allowedCenters: VoxelShape, preferredCenter: Vec3, sizeX: number, sizeY: number, sizeZ: number): Optional<Vec3>;
     findSupportingBlock(source: Entity, box: AABB): Optional<BlockPos>;
     getBestNeighborSignal(pos: BlockPos): number;
+    getBestOwnOrNeighbourSignal(pos: BlockPos): number;
     getBiome(pos: BlockPos): Holder<Biome>;
     getBiomeFabric(arg0: BlockPos): Holder<Object>;
     getBiomeManager(): BiomeManager;
     getBlockAndLiquidCollisions(source: Entity, box: AABB): VoxelShape[];
     getBlockCollisions(source: Entity, box: AABB): VoxelShape[];
-    // private getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
+    getBlockCollisionsFromContext(source: CollisionContext, box: AABB): VoxelShape[];
     getBlockEntity(pos: BlockPos): BlockEntity;
     getBlockState(pos: BlockPos): BlockState;
     getBlockStatesIfLoaded(box: AABB): Stream<BlockState>;

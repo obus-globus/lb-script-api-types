@@ -9,6 +9,7 @@ import type { ItemDisplayContext } from '../../../../../../../net/minecraft/worl
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class HasComponent extends Record implements ConditionalItemModelProperty {
     static MAP_CODEC: MapCodec<HasComponent>;
+    constructor(componentType: DataComponentType<Object>, ignoreDefault: boolean)
     // private componentType: DataComponentType<Object>;
     // private ignoreDefault: boolean;
     componentType(): DataComponentType<Object>;

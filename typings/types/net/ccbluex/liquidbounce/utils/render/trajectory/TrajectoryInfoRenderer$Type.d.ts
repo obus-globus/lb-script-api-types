@@ -7,13 +7,13 @@ export class TrajectoryInfoRenderer$Type extends Enum<TrajectoryInfoRenderer$Typ
      *
      * @see {@link getHypotheticalTrajectory}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt:80}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt:80}
      */
     static HYPOTHETICAL: TrajectoryInfoRenderer$Type;
     /**
      * From a moving entity, such as {@link net.minecraft.world.entity.projectile.Projectile}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt:87}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt:87}
      */
     static REAL: TrajectoryInfoRenderer$Type;
     static getEntries(): TrajectoryInfoRenderer$Type[];

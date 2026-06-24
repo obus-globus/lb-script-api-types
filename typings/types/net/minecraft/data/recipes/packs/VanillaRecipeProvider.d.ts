@@ -1,8 +1,8 @@
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Criterion } from '../../../../../net/minecraft/advancements/Criterion.d.ts'
-import type { EnterBlockTrigger$TriggerInstance } from '../../../../../net/minecraft/advancements/criterion/EnterBlockTrigger$TriggerInstance.d.ts'
-import type { InventoryChangeTrigger$TriggerInstance } from '../../../../../net/minecraft/advancements/criterion/InventoryChangeTrigger$TriggerInstance.d.ts'
+import type { Criterion } from '../../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
+import type { EnterBlockTrigger$TriggerInstance } from '../../../../../net/minecraft/advancements/triggers/EnterBlockTrigger$TriggerInstance.d.ts'
+import type { InventoryChangeTrigger$TriggerInstance } from '../../../../../net/minecraft/advancements/triggers/InventoryChangeTrigger$TriggerInstance.d.ts'
 import type { HolderLookup$Provider } from '../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { RecipeOutput } from '../../../../../net/minecraft/data/recipes/RecipeOutput.d.ts'
 import type { RecipeProvider } from '../../../../../net/minecraft/data/recipes/RecipeProvider.d.ts'
@@ -22,6 +22,4 @@ export class VanillaRecipeProvider extends RecipeProvider {
     static smithingTrims(): Stream<VanillaRecipeProvider$TrimTemplate>;
     private constructor(registries: HolderLookup$Provider, output: RecipeOutput)
     buildRecipes(): void;
-    // private bundleRecipes(): void;
-    // private shulkerBoxRecipes(): void;
 }

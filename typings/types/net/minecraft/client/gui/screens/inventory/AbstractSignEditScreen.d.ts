@@ -15,7 +15,7 @@ import type { SignBlockEntity } from '../../../../../../net/minecraft/world/leve
 import type { SignText } from '../../../../../../net/minecraft/world/level/block/entity/SignText.d.ts'
 import type { WoodType } from '../../../../../../net/minecraft/world/level/block/state/properties/WoodType.d.ts'
 import type { Vector2f } from '../../../../../../org/joml/Vector2f.d.ts'
-import type { Vector3f } from '../../../../../../org/joml/Vector3f.d.ts'
+import type { Vector3fc } from '../../../../../../org/joml/Vector3fc.d.ts'
 export abstract class AbstractSignEditScreen extends Screen {
     static FOOTER_SEPARATOR: Identifier;
     static HEADER_SEPARATOR: Identifier;
@@ -42,7 +42,7 @@ export abstract class AbstractSignEditScreen extends Screen {
     // private extractSign(graphics: GuiGraphicsExtractor): void;
     extractSignBackground(graphics: GuiGraphicsExtractor): void;
     // private extractSignText(graphics: GuiGraphicsExtractor, cursorPosOutput: Vector2f): void;
-    getSignTextScale(): Vector3f;
+    getSignTextScale(): Vector3fc;
     getSignYOffset(): number;
     init(): void;
     init(width: number, height: number): void;

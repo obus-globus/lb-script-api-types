@@ -12,7 +12,7 @@ export class ModuleTickBase$TickBaseCall extends Enum<ModuleTickBase$TickBaseCal
      * TODO: Cancel full game ticks after this,
      *   not just the player ticks.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt#L267 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt:267}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt#L267 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt:267}
      */
     static GAME: ModuleTickBase$TickBaseCall;
     /**
@@ -23,7 +23,7 @@ export class ModuleTickBase$TickBaseCall extends Enum<ModuleTickBase$TickBaseCal
      * This was the previous default behavior of the TickBase,
      * so it is kept for compatibility reasons.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt#L275 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt:275}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt#L275 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt:275}
      */
     static PLAYER: ModuleTickBase$TickBaseCall;
     static getEntries(): ModuleTickBase$TickBaseCall[];

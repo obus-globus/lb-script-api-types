@@ -3,6 +3,7 @@ import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAlloca
 import type { ApplicationProtocolAccessor } from '../../../../io/netty/handler/ssl/ApplicationProtocolAccessor.d.ts'
 import type { ClientAuth } from '../../../../io/netty/handler/ssl/ClientAuth.d.ts'
 import type { OpenSslApplicationProtocolNegotiator } from '../../../../io/netty/handler/ssl/OpenSslApplicationProtocolNegotiator.d.ts'
+import type { OpenSslCredential } from '../../../../io/netty/handler/ssl/OpenSslCredential.d.ts'
 import type { OpenSslInternalSession } from '../../../../io/netty/handler/ssl/OpenSslInternalSession.d.ts'
 import type { OpenSslKeyMaterial } from '../../../../io/netty/handler/ssl/OpenSslKeyMaterial.d.ts'
 import type { ReferenceCountedOpenSslContext } from '../../../../io/netty/handler/ssl/ReferenceCountedOpenSslContext.d.ts'
@@ -60,6 +61,7 @@ export class ReferenceCountedOpenSslEngine extends SSLEngine implements Applicat
     // private singleDstBuffer: ByteBuffer[];
     // private singleSrcBuffer: ByteBuffer[];
     // private ssl: number;
+    addCredential(arg0: OpenSslCredential): void;
     authMethods(): string[];
     beginHandshake(): void;
     bioSetFd(arg0: number): void;
@@ -67,7 +69,7 @@ export class ReferenceCountedOpenSslEngine extends SSLEngine implements Applicat
     // private calculateMaxWrapOverhead(): void;
     calculateOutNetBufSize(arg0: number, arg1: number): number;
     // private checkEngineClosed(): void;
-    checkSniHostnameMatch(arg0: number[]): boolean;
+    checkSniHostnameMatch(arg0: string): boolean;
     // private closeAll(): void;
     closeInbound(): void;
     closeOutbound(): void;
@@ -86,6 +88,7 @@ export class ReferenceCountedOpenSslEngine extends SSLEngine implements Applicat
     getNegotiatedApplicationProtocol(): string;
     getOcspResponse(): number[];
     getSSLParameters(): SSLParameters;
+    getSelectedCredential(): OpenSslCredential;
     getSession(): SSLSession;
     getSupportedCipherSuites(): string[];
     getSupportedProtocols(): string[];
@@ -144,6 +147,7 @@ export class ReferenceCountedOpenSslEngine extends SSLEngine implements Applicat
     sslPointer(): number;
     // private sslReadErrorResult(arg0: number, arg1: number, arg2: number, arg3: number): SSLEngineResult;
     // private toJavaCipherSuite(arg0: string): string;
+    // private toJavaCipherSuite(arg0: string, arg1: string): string;
     touch(): ReferenceCounted;
     touch(arg0: Object): ReferenceCounted;
     unwrap(arg0: ByteBuffer, arg1: ByteBuffer): SSLEngineResult;

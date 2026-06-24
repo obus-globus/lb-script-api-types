@@ -6,6 +6,7 @@ import type { MessageArgument$Part } from '../../../../net/minecraft/commands/ar
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 export class MessageArgument$Message extends Record {
     static parseText(paramreader: StringReader, paramallowSelectors: boolean): MessageArgument$Message;
+    constructor(text: string, parts: MessageArgument$Part[])
     // private parts: MessageArgument$Part[];
     // private text: string;
     equals(o: Object | null): boolean;

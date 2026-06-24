@@ -4,6 +4,7 @@ import type { ShaderStorageBufferHolder } from '../../../../net/irisshaders/iris
 import type { IndirectPointer } from '../../../../net/irisshaders/iris/shaderpack/properties/IndirectPointer.d.ts'
 export class FilledIndirectPointer extends Record {
     static basedOff(paramarg0: ShaderStorageBufferHolder, paramarg1: IndirectPointer): FilledIndirectPointer;
+    constructor(buffer: number, offset: number)
     // private buffer: number;
     // private offset: number;
     buffer(): number;

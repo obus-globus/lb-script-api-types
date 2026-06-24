@@ -8,9 +8,9 @@ import type { FormatFactory } from '../../../../../org/apache/commons/lang3/text
 export class ExtendedMessageFormat extends MessageFormat {
     static format(paramarg0: string, paramarg1: (Object | null)[]): string;
     constructor(arg0: string)
-    constructor(arg0: string, arg1: { [key: string]: FormatFactory })
     constructor(arg0: string, arg1: Locale)
     constructor(arg0: string, arg1: Locale, arg2: { [key: string]: FormatFactory })
+    constructor(arg0: string, arg1: { [key: string]: FormatFactory })
     // private registry: { [key: string]: FormatFactory };
     // private toPattern: string;
     // private appendQuotedString(arg0: string, arg1: ParsePosition, arg2: StringBuilder): StringBuilder;

@@ -4,6 +4,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { RuinedPortalPiece$VerticalPlacement } from '../../../../../../../net/minecraft/world/level/levelgen/structure/structures/RuinedPortalPiece$VerticalPlacement.d.ts'
 export class RuinedPortalStructure$Setup extends Record {
     static CODEC: Codec<RuinedPortalStructure$Setup>;
+    constructor(placement: RuinedPortalPiece$VerticalPlacement, airPocketProbability: number, mossiness: number, overgrown: boolean, vines: boolean, canBeCold: boolean, replaceWithBlackstone: boolean, weight: number)
     // private airPocketProbability: number;
     // private canBeCold: boolean;
     // private mossiness: number;

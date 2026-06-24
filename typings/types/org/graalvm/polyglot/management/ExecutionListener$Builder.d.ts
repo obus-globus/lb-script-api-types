@@ -6,7 +6,7 @@ import type { Source } from '../../../../org/graalvm/polyglot/Source.d.ts'
 import type { ExecutionEvent } from '../../../../org/graalvm/polyglot/management/ExecutionEvent.d.ts'
 import type { ExecutionListener } from '../../../../org/graalvm/polyglot/management/ExecutionListener.d.ts'
 export class ExecutionListener$Builder extends Object {
-    constructor(null_: ExecutionListener$Builder)
+    constructor(null_: ExecutionListener)
     // private collectExceptions: boolean;
     // private collectInputValues: boolean;
     // private collectReturnValues: boolean;

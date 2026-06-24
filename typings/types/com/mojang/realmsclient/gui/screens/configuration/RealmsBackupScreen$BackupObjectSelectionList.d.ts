@@ -1,3 +1,4 @@
+import type { RealmsBackupScreen } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsBackupScreen.d.ts'
 import type { RealmsBackupScreen$Entry } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsBackupScreen$Entry.d.ts'
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
 import type { ContainerObjectSelectionList } from '../../../../../../net/minecraft/client/gui/components/ContainerObjectSelectionList.d.ts'
@@ -9,6 +10,6 @@ export class RealmsBackupScreen$BackupObjectSelectionList extends ContainerObjec
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: RealmsBackupScreen$BackupObjectSelectionList)
+    constructor(null_: RealmsBackupScreen)
     getRowWidth(): number;
 }

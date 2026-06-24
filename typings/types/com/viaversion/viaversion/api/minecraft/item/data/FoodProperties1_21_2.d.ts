@@ -3,6 +3,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class FoodProperties1_21_2 extends Record {
     static TYPE: Type<FoodProperties1_21_2>;
+    constructor(nutrition: number, saturationModifier: number, canAlwaysEat: boolean)
     // private canAlwaysEat: boolean;
     // private nutrition: number;
     // private saturationModifier: number;

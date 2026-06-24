@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CachedParseState$CacheEntry<T extends unknown> extends Record {
     static NEGATIVE: CachedParseState$CacheEntry<Object>;
     static negativeEntry(): CachedParseState$CacheEntry<Object>;
+    private constructor(value: T, markAfterParse: number)
     // private markAfterParse: number;
     // private value: T;
     equals(o: Object | null): boolean;

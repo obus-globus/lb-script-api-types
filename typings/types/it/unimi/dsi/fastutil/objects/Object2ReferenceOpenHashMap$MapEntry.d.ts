@@ -11,8 +11,8 @@ export class Object2ReferenceOpenHashMap$MapEntry extends Object implements Obje
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static of(paramarg0: Object | null, paramarg1: Object | null): ObjectReferencePair<Object, Object>;
-    constructor(null_: Object2ReferenceOpenHashMap$MapEntry)
-    constructor(null_: Object2ReferenceOpenHashMap$MapEntry, arg1: number)
+    constructor(null_: Map<K, V>)
+    constructor(null_: Map<K, V>, arg1: number)
     // private index: number;
     readonly key: K;
     readonly value: V;

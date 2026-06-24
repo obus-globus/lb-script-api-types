@@ -2,6 +2,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ActiveTextCollector } from '../../../../net/minecraft/client/gui/ActiveTextCollector.d.ts'
 import type { ActiveTextCollector$Parameters } from '../../../../net/minecraft/client/gui/ActiveTextCollector$Parameters.d.ts'
+import type { GuiGraphicsExtractor } from '../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { GuiGraphicsExtractor$HoveredTextEffects } from '../../../../net/minecraft/client/gui/GuiGraphicsExtractor$HoveredTextEffects.d.ts'
 import type { TextAlignment } from '../../../../net/minecraft/client/gui/TextAlignment.d.ts'
 import type { GuiTextRenderState } from '../../../../net/minecraft/client/renderer/state/gui/GuiTextRenderState.d.ts'
@@ -14,7 +15,7 @@ export class GuiGraphicsExtractor$RenderingTextCollector extends Object implemen
     static PERIOD_PER_SCROLLED_PIXEL: number;
     static findElementUnderCursor(paramtext: GuiTextRenderState, paramtestX: number, paramtestY: number, paramoutput: (param0: Style) => void): void;
     static isPointInRectangle(paramx: number, paramy: number, paramleft: number, paramtop: number, paramright: number, parambottom: number): boolean;
-    private constructor(null_: GuiGraphicsExtractor$RenderingTextCollector, hoveredTextEffects: GuiGraphicsExtractor$HoveredTextEffects, additonalConsumer: (param0: Style) => void)
+    private constructor(null_: GuiGraphicsExtractor, initialParameters: ActiveTextCollector$Parameters, hoveredTextEffects: GuiGraphicsExtractor$HoveredTextEffects, additonalConsumer: (param0: Style) => void)
     // private additionalConsumer: (param0: Style) => void;
     // private defaultParameters: ActiveTextCollector$Parameters;
     // private hoveredTextEffects: GuiGraphicsExtractor$HoveredTextEffects;

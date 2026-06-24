@@ -6,6 +6,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 export class PostChainConfig$TargetInput extends Record implements PostChainConfig$Input {
     static CODEC: Codec<PostChainConfig$Input>;
     static CODEC: Codec<PostChainConfig$TargetInput>;
+    constructor(samplerName: string, targetId: Identifier, useDepthBuffer: boolean, bilinear: boolean)
     // private bilinear: boolean;
     // private samplerName: string;
     // private targetId: Identifier;

@@ -47,7 +47,7 @@ export abstract class TimeZone extends Object implements Freezable<TimeZone>, Se
     constructor(arg0: string)
     readonly ID: string;
     // private _getDisplayName(arg0: number, arg1: boolean, arg2: ULocale): string;
-    clone(): Object;
+    clone(): TimeZone;
     protected clone(): Object;
     cloneAsThawed(): TimeZone;
     equals(arg0: Object | null): boolean;

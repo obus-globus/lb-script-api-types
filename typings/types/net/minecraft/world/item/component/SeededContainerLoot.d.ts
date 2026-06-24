@@ -11,6 +11,7 @@ import type { TooltipProvider } from '../../../../../net/minecraft/world/item/co
 import type { LootTable } from '../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 export class SeededContainerLoot extends Record implements TooltipProvider {
     static CODEC: Codec<SeededContainerLoot>;
+    constructor(lootTable: ResourceKey<LootTable>, seed: number)
     // private lootTable: ResourceKey<LootTable>;
     // private seed: number;
     addToTooltip(context: Item$TooltipContext, consumer: (param0: Component) => void, flag: TooltipFlag, components: DataComponentGetter): void;

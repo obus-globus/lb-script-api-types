@@ -3,6 +3,7 @@ import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class SuppressedExceptionCollector$LongEntry extends Record {
+    private constructor(timestampMs: number, location: string, cls: Class<Throwable>, message: string)
     // private cls: Class<Throwable>;
     // private location: string;
     // private message: string;

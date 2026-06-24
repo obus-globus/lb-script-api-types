@@ -10,6 +10,8 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ArmorTrimPattern extends Record implements Copyable, Rewritable {
     static TYPE1_20_5: HolderType<ArmorTrimPattern>;
     static TYPE1_21_5: HolderType<ArmorTrimPattern>;
+    constructor(arg0: string, arg1: Tag, arg2: boolean)
+    constructor(assetName: string, itemId: number, description: Tag, decal: boolean)
     // private assetName: string;
     // private decal: boolean;
     // private description: Tag;

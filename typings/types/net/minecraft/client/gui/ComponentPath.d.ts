@@ -3,4 +3,5 @@ import type { GuiEventListener } from '../../../../net/minecraft/client/gui/comp
 export interface ComponentPath extends Object{
     applyFocus(focused: boolean): void;
     component(): GuiEventListener;
+    leafComponent(): GuiEventListener;
 }

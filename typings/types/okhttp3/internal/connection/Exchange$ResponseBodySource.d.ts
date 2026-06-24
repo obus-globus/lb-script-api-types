@@ -1,9 +1,10 @@
 import type { IOException } from '../../../java/io/IOException.d.ts'
+import type { Exchange } from '../../../okhttp3/internal/connection/Exchange.d.ts'
 import type { Buffer } from '../../../okio/Buffer.d.ts'
 import type { ForwardingSource } from '../../../okio/ForwardingSource.d.ts'
 import type { Source } from '../../../okio/Source.d.ts'
 export class Exchange$ResponseBodySource extends ForwardingSource {
-    constructor(null_: Exchange$ResponseBodySource, delegate: Source, contentLength: number, isSocket: boolean)
+    constructor(null_: Exchange, delegate: Source, contentLength: number, isSocket: boolean)
     // private bytesReceived: number;
     // private closed: boolean;
     // private completed: boolean;

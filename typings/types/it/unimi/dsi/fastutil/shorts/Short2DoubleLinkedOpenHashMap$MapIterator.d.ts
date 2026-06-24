@@ -1,8 +1,9 @@
 import type { Short2DoubleMap$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2DoubleMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Short2DoubleLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    constructor(null_: Short2DoubleLinkedOpenHashMap$MapIterator<ConsumerType>)
-    private constructor(null_: Short2DoubleLinkedOpenHashMap$MapIterator<ConsumerType>, arg1: number)
+    constructor(null_: { [key: string]: any })
+    private constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;
     // private next: number;

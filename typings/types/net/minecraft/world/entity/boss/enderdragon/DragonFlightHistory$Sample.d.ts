@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class DragonFlightHistory$Sample extends Record {
+    constructor(y: number, yRot: number)
     // private y: number;
     // private yRot: number;
     equals(o: Object | null): boolean;

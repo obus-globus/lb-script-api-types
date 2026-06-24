@@ -16,7 +16,7 @@ export abstract class Request<T extends Request<T>> extends Object {
     // private connected: boolean;
     // private connection: HttpURLConnection;
     // private url: string;
-    addSnapshotHeader(isSnapshot: boolean): void;
+    addVersionHeaders(networkProtocol: number, isSnapshot: boolean): void;
     connect(): T;
     cookie(key: string, value: string): void;
     // private dispose(): void;

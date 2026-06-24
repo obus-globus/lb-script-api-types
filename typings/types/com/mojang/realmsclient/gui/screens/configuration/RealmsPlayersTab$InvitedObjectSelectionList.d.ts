@@ -1,4 +1,5 @@
 import type { RealmsServer } from '../../../../../../com/mojang/realmsclient/dto/RealmsServer.d.ts'
+import type { RealmsPlayersTab } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab.d.ts'
 import type { RealmsPlayersTab$Entry } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsPlayersTab$Entry.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
@@ -11,7 +12,7 @@ export class RealmsPlayersTab$InvitedObjectSelectionList extends ContainerObject
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: RealmsPlayersTab$InvitedObjectSelectionList, width: number, height: number)
+    constructor(null_: RealmsPlayersTab, width: number, height: number)
     extractListBackground(graphics: GuiGraphicsExtractor): void;
     extractListSeparators(graphics: GuiGraphicsExtractor): void;
     getRowWidth(): number;

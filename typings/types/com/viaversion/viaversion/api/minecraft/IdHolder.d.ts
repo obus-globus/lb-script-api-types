@@ -5,5 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IdHolder<T extends unknown> extends Record implements Holder<T> {
     static of(paramarg0: Object | null): Holder<Object>;
     static of(paramarg0: number): Holder<Object>;
+    constructor(id: number)
     // private id: number;
 }

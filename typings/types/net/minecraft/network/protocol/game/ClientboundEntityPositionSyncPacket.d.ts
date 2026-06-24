@@ -14,6 +14,7 @@ export class ClientboundEntityPositionSyncPacket extends Record implements Packe
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundEntityPositionSyncPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     static of(paramentity: Entity): ClientboundEntityPositionSyncPacket;
+    constructor(id: number, values: PositionMoveRotation, onGround: boolean)
     // private id: number;
     // private onGround: boolean;
     // private values: PositionMoveRotation;

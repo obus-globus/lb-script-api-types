@@ -21,7 +21,7 @@ export class MutableCollectionKClass<T extends unknown> extends Object implement
     /*not mapped: */ isOpen(): boolean;
     /*not mapped: */ isSealed(): boolean;
     /*not mapped: */ isValue(): boolean;
-    // private klass: KClass<T>;
+    readonly klass: KClass<T>;
     readonly members: KCallable<Object>[];
     readonly nestedClasses: KClass<Object>[];
     readonly objectInstance: T | null;

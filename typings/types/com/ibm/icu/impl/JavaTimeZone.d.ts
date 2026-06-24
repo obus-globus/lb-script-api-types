@@ -7,7 +7,8 @@ import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { TimeZone as TimeZone_2 } from '../../../../java/util/TimeZone.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class JavaTimeZone extends TimeZone {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class JavaTimeZone extends TimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -50,8 +51,9 @@ export class JavaTimeZone extends TimeZone {
     // private isFrozen: boolean;
     // private javacal: Calendar;
     // private javatz: TimeZone_2;
-    clone(): Object;
-    cloneAsThawed(): TimeZone;
+    clone(): JavaTimeZone;
+    protected clone(): Object;
+    cloneAsThawed(): JavaTimeZone;
     freeze(): TimeZone;
     getDSTSavings(): number;
     getOffset(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;

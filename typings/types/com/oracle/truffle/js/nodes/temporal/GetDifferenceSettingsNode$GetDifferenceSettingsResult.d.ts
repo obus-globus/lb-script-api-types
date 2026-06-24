@@ -3,6 +3,7 @@ import type { TemporalUtil$Unit } from '../../../../../../com/oracle/truffle/js/
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetDifferenceSettingsNode$GetDifferenceSettingsResult extends Record {
+    constructor(smallestUnit: TemporalUtil$Unit, largestUnit: TemporalUtil$Unit, roundingMode: TemporalUtil$RoundingMode, roundingIncrement: number)
     // private largestUnit: TemporalUtil$Unit;
     // private roundingIncrement: number;
     // private roundingMode: TemporalUtil$RoundingMode;

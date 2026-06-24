@@ -11,8 +11,8 @@ export class Double2ShortOpenCustomHashMap$EntrySpliterator extends Double2Short
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Double2ShortOpenCustomHashMap$EntrySpliterator)
-    constructor(null_: Double2ShortOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: Double2ShortMap$Entry) => void, arg1: number): void;
     characteristics(): number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Double2ShortOpenCustomHashMap$EntrySpliterator;

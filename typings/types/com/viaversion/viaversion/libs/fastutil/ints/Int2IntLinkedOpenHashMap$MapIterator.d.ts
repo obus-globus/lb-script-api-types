@@ -1,8 +1,9 @@
 import type { Int2IntMap$Entry } from '../../../../../../com/viaversion/viaversion/libs/fastutil/ints/Int2IntMap$Entry.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class Int2IntLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
-    constructor(null_: Int2IntLinkedOpenHashMap$MapIterator<ConsumerType>)
-    private constructor(null_: Int2IntLinkedOpenHashMap$MapIterator<ConsumerType>, arg1: number)
+    constructor(null_: { [key: string]: any })
+    private constructor(null_: { [key: string]: any }, arg1: number)
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;
     // private next: number;

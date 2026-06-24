@@ -4,5 +4,5 @@ import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbou
 export class ModuleSpider extends ClientModule {
     static INSTANCE: ModuleSpider;
     // private modes: ModeValueGroup<Mode>;
-    /*not mapped: */ getModes$liquidbounce(): ModeValueGroup<Mode>;
+    /*not mapped: */ getModes$net_ccbluex_liquidbounce(): ModeValueGroup<Mode>;
 }

@@ -6,7 +6,7 @@ import type { RenderType } from '../../../../../net/minecraft/client/renderer/re
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class GlyphRenderTypes extends Record {
     static createForColorTexture(paramname: Identifier): GlyphRenderTypes;
-    static createForIntensityTexture(paramname: Identifier): GlyphRenderTypes;
+    static createForGrayscaleTexture(paramname: Identifier): GlyphRenderTypes;
     constructor(normal: RenderType, seeThrough: RenderType, polygonOffset: RenderType, guiPipeline: RenderPipeline)
     // private guiPipeline: RenderPipeline;
     // private normal: RenderType;

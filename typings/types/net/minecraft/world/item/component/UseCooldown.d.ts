@@ -10,6 +10,8 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 export class UseCooldown extends Record {
     static CODEC: Codec<UseCooldown>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, UseCooldown>;
+    constructor(seconds: number)
+    constructor(seconds: number, cooldownGroup: Optional<Identifier>)
     // private cooldownGroup: Optional<Identifier>;
     // private seconds: number;
     apply(stack: ItemStack, user: LivingEntity): void;

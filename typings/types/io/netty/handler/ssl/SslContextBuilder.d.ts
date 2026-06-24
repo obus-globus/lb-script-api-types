@@ -1,6 +1,7 @@
 import type { ApplicationProtocolConfig } from '../../../../io/netty/handler/ssl/ApplicationProtocolConfig.d.ts'
 import type { CipherSuiteFilter } from '../../../../io/netty/handler/ssl/CipherSuiteFilter.d.ts'
 import type { ClientAuth } from '../../../../io/netty/handler/ssl/ClientAuth.d.ts'
+import type { OpenSslCredential } from '../../../../io/netty/handler/ssl/OpenSslCredential.d.ts'
 import type { SslContext } from '../../../../io/netty/handler/ssl/SslContext.d.ts'
 import type { SslContextOption } from '../../../../io/netty/handler/ssl/SslContextOption.d.ts'
 import type { SslProvider } from '../../../../io/netty/handler/ssl/SslProvider.d.ts'
@@ -32,6 +33,7 @@ export class SslContextBuilder extends Object {
     // private cipherFilter: CipherSuiteFilter;
     // private ciphers: string[];
     // private clientAuth: ClientAuth;
+    // private credentials: OpenSslCredential[];
     // private enableOcsp: boolean;
     // private endpointIdentificationAlgorithm: string;
     // private forServer: boolean;
@@ -51,6 +53,8 @@ export class SslContextBuilder extends Object {
     // private startTls: boolean;
     // private trustCertCollection: X509Certificate[];
     // private trustManagerFactory: TrustManagerFactory;
+    addCredential(arg0: OpenSslCredential): SslContextBuilder;
+    addCredentials(arg0: OpenSslCredential[]): SslContextBuilder;
     applicationProtocolConfig(arg0: ApplicationProtocolConfig): SslContextBuilder;
     build(): SslContext;
     ciphers(arg0: string[]): SslContextBuilder;

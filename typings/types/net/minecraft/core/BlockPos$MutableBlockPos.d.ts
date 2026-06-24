@@ -50,6 +50,7 @@ export class BlockPos$MutableBlockPos extends BlockPos {
     static getZ(paramblockNode: number): number;
     static max(parama: BlockPos, paramb: BlockPos): BlockPos;
     static min(parama: BlockPos, paramb: BlockPos): BlockPos;
+    static neighborColumn(paramstartX: number, paramstartY: number, paramstartZ: number, paramendY: number): BlockPos[];
     static of(paramblockNode: number): BlockPos;
     static offset(paramblockNode: number, paramstepX: number, paramstepY: number, paramstepZ: number): number;
     static offset(paramblockNode: number, paramoffset: Direction): number;

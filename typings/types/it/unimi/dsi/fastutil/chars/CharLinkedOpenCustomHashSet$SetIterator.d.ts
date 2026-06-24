@@ -4,8 +4,8 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharLinkedOpenCustomHashSet$SetIterator extends Object implements CharListIterator {
-    constructor(null_: CharLinkedOpenCustomHashSet$SetIterator)
-    constructor(null_: CharLinkedOpenCustomHashSet$SetIterator, arg1: string)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: string)
     // private curr: number;
     // private index: number;
     // private next: number;

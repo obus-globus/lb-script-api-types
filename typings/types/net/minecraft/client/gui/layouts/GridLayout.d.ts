@@ -22,6 +22,7 @@ export class GridLayout extends AbstractLayout {
     createRowHelper(columns: number): GridLayout$RowHelper;
     defaultCellSetting(): LayoutSettings;
     newCellSettings(): LayoutSettings;
+    removeChildren(): void;
     rowSpacing(rowSpacing: number): GridLayout;
     spacing(spacing: number): GridLayout;
     visitChildren(layoutElementVisitor: (param0: LayoutElement) => void): void;

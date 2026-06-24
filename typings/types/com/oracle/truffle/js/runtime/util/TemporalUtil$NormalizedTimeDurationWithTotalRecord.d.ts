@@ -2,6 +2,7 @@ import type { BigInt } from '../../../../../../com/oracle/truffle/js/runtime/Big
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TemporalUtil$NormalizedTimeDurationWithTotalRecord extends Record {
+    constructor(normalizedTimeDuration: BigInt, total: number)
     // private normalizedTimeDuration: BigInt;
     // private total: number;
     equals(o: Object | null): boolean;

@@ -19,7 +19,6 @@ export class SystemToast extends Object implements Toast {
     static add(paramtoastManager: ToastManager, paramid: SystemToast$SystemToastId, paramtitle: Component, parammessage: Component): void;
     static addOrUpdate(paramtoastManager: ToastManager, paramid: SystemToast$SystemToastId, paramtitle: Component, parammessage: Component): void;
     static forceHide(paramtoastManager: ToastManager, paramid: SystemToast$SystemToastId): void;
-    static multiline(paramminecraft: Minecraft, paramid: SystemToast$SystemToastId, paramtitle: Component, parammessage: Component): SystemToast;
     static onChunkLoadFailure(paramminecraft: Minecraft, parampos: ChunkPos): void;
     static onChunkSaveFailure(paramminecraft: Minecraft, parampos: ChunkPos): void;
     static onFileDropFailure(paramminecraft: Minecraft, paramcount: number): void;
@@ -27,17 +26,17 @@ export class SystemToast extends Object implements Toast {
     static onPackCopyFailure(paramminecraft: Minecraft, paramextraInfo: string): void;
     static onWorldAccessFailure(paramminecraft: Minecraft, paramlevelId: string): void;
     static onWorldDeleteFailure(paramminecraft: Minecraft, paramlevelId: string): void;
-    private constructor(id: SystemToast$SystemToastId, title: Component, messageLines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], width: number)
     constructor(id: SystemToast$SystemToastId, title: Component, message: Component)
     // private changed: boolean;
     // private forceHide: boolean;
     // private id: SystemToast$SystemToastId;
     // private lastChanged: number;
     // private messageLines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
-    // private title: Component;
+    // private titleLines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];
     readonly wantedVisibility: Toast$Visibility;
     // private width: number;
     extractRenderState(graphics: GuiGraphicsExtractor, font: Font, fullyVisibleForMs: number): void;
+    // private extractTextLines(graphics: GuiGraphicsExtractor, font: Font, textLines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], yStart: number, textColor: number): void;
     forceHide(): void;
     getSoundEvent(): SoundEvent;
     getToken(): SystemToast$SystemToastId;
@@ -46,8 +45,10 @@ export class SystemToast extends Object implements Toast {
     height(): number;
     occcupiedSlotCount(): number;
     onFinishedRendering(): void;
+    recalculateWidth(): void;
     reset(title: Component, message: Component): void;
     update(manager: ToastManager, fullyVisibleForMs: number): void;
+    // private update(title: Component, message: Component): void;
     width(): number;
     xPos(screenWidth: number, visiblePortion: number): number;
     yPos(firstSlotIndex: number): number;

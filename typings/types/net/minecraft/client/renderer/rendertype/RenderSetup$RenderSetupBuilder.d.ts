@@ -12,7 +12,6 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 export class RenderSetup$RenderSetupBuilder extends Object {
     private constructor(pipeline: RenderPipeline)
     // private affectsCrumbling: boolean;
-    // private bufferSize: number;
     // private layeringTransform: LayeringTransform;
     // private outlineProperty: RenderSetup$OutlineProperty;
     // private outputTarget: OutputTarget;
@@ -23,7 +22,6 @@ export class RenderSetup$RenderSetupBuilder extends Object {
     // private useLightmap: boolean;
     // private useOverlay: boolean;
     affectsCrumbling(): RenderSetup$RenderSetupBuilder;
-    bufferSize(bufferSize: number): RenderSetup$RenderSetupBuilder;
     createRenderSetup(): RenderSetup;
     setLayeringTransform(layeringTransform: LayeringTransform): RenderSetup$RenderSetupBuilder;
     setOutline(outlineProperty: RenderSetup$OutlineProperty): RenderSetup$RenderSetupBuilder;

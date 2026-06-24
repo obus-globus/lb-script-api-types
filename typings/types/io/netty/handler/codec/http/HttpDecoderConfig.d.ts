@@ -13,6 +13,7 @@ export class HttpDecoderConfig extends Object implements Cloneable {
     readonly maxInitialLineLength: number;
     readonly strictLineParsing: boolean;
     readonly trailersFactory: HttpHeadersFactory;
+    readonly useRfc9112TransferEncoding: boolean;
     clone(): HttpDecoderConfig;
     protected clone(): Object;
     getHeadersFactory(): HttpHeadersFactory;
@@ -25,6 +26,7 @@ export class HttpDecoderConfig extends Object implements Cloneable {
     isAllowPartialChunks(): boolean;
     isChunkedSupported(): boolean;
     isStrictLineParsing(): boolean;
+    isUseRfc9112TransferEncoding(): boolean;
     setAllowDuplicateContentLengths(arg0: boolean): HttpDecoderConfig;
     setAllowPartialChunks(arg0: boolean): HttpDecoderConfig;
     setChunkedSupported(arg0: boolean): HttpDecoderConfig;
@@ -35,5 +37,6 @@ export class HttpDecoderConfig extends Object implements Cloneable {
     setMaxInitialLineLength(arg0: number): HttpDecoderConfig;
     setStrictLineParsing(arg0: boolean): HttpDecoderConfig;
     setTrailersFactory(arg0: HttpHeadersFactory): HttpDecoderConfig;
+    setUseRfc9112TransferEncoding(arg0: boolean): HttpDecoderConfig;
     setValidateHeaders(arg0: boolean): HttpDecoderConfig;
 }

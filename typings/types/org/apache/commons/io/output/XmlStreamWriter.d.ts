@@ -1,3 +1,4 @@
+import type { XmlStreamWriter$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { StringWriter } from '../../../../../java/io/StringWriter.d.ts'
@@ -13,6 +14,7 @@ export class XmlStreamWriter extends Writer {
     private constructor(arg0: OutputStream, arg1: Charset)
     constructor(arg0: OutputStream, arg1: string)
     private constructor(arg0: XmlStreamWriter$Builder)
+    constructor(arg0: XmlStreamWriter$Builder, arg1: XmlStreamWriter$1)
     // private charset: Charset;
     // private defaultCharset: Charset;
     // private out: OutputStream;

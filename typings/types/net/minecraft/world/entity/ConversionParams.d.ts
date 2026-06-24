@@ -5,6 +5,7 @@ import type { Mob } from '../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { PlayerTeam } from '../../../../net/minecraft/world/scores/PlayerTeam.d.ts'
 export class ConversionParams extends Record {
     static single(parammob: Mob, paramkeepEquipment: boolean, parampreserveCanPickUpLoot: boolean): ConversionParams;
+    constructor(type: ConversionType, keepEquipment: boolean, preserveCanPickUpLoot: boolean, team: PlayerTeam)
     // private keepEquipment: boolean;
     // private preserveCanPickUpLoot: boolean;
     // private team: PlayerTeam;

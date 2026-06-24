@@ -2,6 +2,7 @@ import type { DataItem } from '../../../../../../com/viaversion/viaversion/api/m
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RecipeData$Recipe extends Record {
+    constructor(type: string, group: string, width: number, height: number, experience: number, cookingTime: number, ingredient: DataItem[], ingredients: DataItem[][], result: DataItem)
     // private cookingTime: number;
     // private experience: number;
     // private group: string;

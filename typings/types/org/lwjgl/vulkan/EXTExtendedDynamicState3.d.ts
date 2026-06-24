@@ -1,0 +1,84 @@
+import type { FloatBuffer } from '../../../java/nio/FloatBuffer.d.ts'
+import type { IntBuffer } from '../../../java/nio/IntBuffer.d.ts'
+import type { Object } from '../../../java/lang/Object.d.ts'
+import type { VkCommandBuffer } from '../../../org/lwjgl/vulkan/VkCommandBuffer.d.ts'
+export class EXTExtendedDynamicState3 extends Object {
+    static VK_DYNAMIC_STATE_ALPHA_TO_COVERAGE_ENABLE_EXT: number;
+    static VK_DYNAMIC_STATE_ALPHA_TO_ONE_ENABLE_EXT: number;
+    static VK_DYNAMIC_STATE_COLOR_BLEND_ADVANCED_EXT: number;
+    static VK_DYNAMIC_STATE_COLOR_BLEND_ENABLE_EXT: number;
+    static VK_DYNAMIC_STATE_COLOR_BLEND_EQUATION_EXT: number;
+    static VK_DYNAMIC_STATE_COLOR_WRITE_MASK_EXT: number;
+    static VK_DYNAMIC_STATE_CONSERVATIVE_RASTERIZATION_MODE_EXT: number;
+    static VK_DYNAMIC_STATE_COVERAGE_MODULATION_MODE_NV: number;
+    static VK_DYNAMIC_STATE_COVERAGE_MODULATION_TABLE_ENABLE_NV: number;
+    static VK_DYNAMIC_STATE_COVERAGE_MODULATION_TABLE_NV: number;
+    static VK_DYNAMIC_STATE_COVERAGE_REDUCTION_MODE_NV: number;
+    static VK_DYNAMIC_STATE_COVERAGE_TO_COLOR_ENABLE_NV: number;
+    static VK_DYNAMIC_STATE_COVERAGE_TO_COLOR_LOCATION_NV: number;
+    static VK_DYNAMIC_STATE_DEPTH_CLAMP_ENABLE_EXT: number;
+    static VK_DYNAMIC_STATE_DEPTH_CLIP_ENABLE_EXT: number;
+    static VK_DYNAMIC_STATE_DEPTH_CLIP_NEGATIVE_ONE_TO_ONE_EXT: number;
+    static VK_DYNAMIC_STATE_EXTRA_PRIMITIVE_OVERESTIMATION_SIZE_EXT: number;
+    static VK_DYNAMIC_STATE_LINE_RASTERIZATION_MODE_EXT: number;
+    static VK_DYNAMIC_STATE_LINE_STIPPLE_ENABLE_EXT: number;
+    static VK_DYNAMIC_STATE_LOGIC_OP_ENABLE_EXT: number;
+    static VK_DYNAMIC_STATE_POLYGON_MODE_EXT: number;
+    static VK_DYNAMIC_STATE_PROVOKING_VERTEX_MODE_EXT: number;
+    static VK_DYNAMIC_STATE_RASTERIZATION_SAMPLES_EXT: number;
+    static VK_DYNAMIC_STATE_RASTERIZATION_STREAM_EXT: number;
+    static VK_DYNAMIC_STATE_REPRESENTATIVE_FRAGMENT_TEST_ENABLE_NV: number;
+    static VK_DYNAMIC_STATE_SAMPLE_LOCATIONS_ENABLE_EXT: number;
+    static VK_DYNAMIC_STATE_SAMPLE_MASK_EXT: number;
+    static VK_DYNAMIC_STATE_SHADING_RATE_IMAGE_ENABLE_NV: number;
+    static VK_DYNAMIC_STATE_TESSELLATION_DOMAIN_ORIGIN_EXT: number;
+    static VK_DYNAMIC_STATE_VIEWPORT_SWIZZLE_NV: number;
+    static VK_DYNAMIC_STATE_VIEWPORT_W_SCALING_ENABLE_NV: number;
+    static VK_EXT_EXTENDED_DYNAMIC_STATE_3_EXTENSION_NAME: string;
+    static VK_EXT_EXTENDED_DYNAMIC_STATE_3_SPEC_VERSION: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_3_FEATURES_EXT: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTENDED_DYNAMIC_STATE_3_PROPERTIES_EXT: number;
+    static nvkCmdSetColorBlendAdvancedEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number, paramarg3: number): void;
+    static nvkCmdSetColorBlendEnableEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number, paramarg3: number): void;
+    static nvkCmdSetColorBlendEquationEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number, paramarg3: number): void;
+    static nvkCmdSetColorWriteMaskEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number, paramarg3: number): void;
+    static nvkCmdSetCoverageModulationTableNV(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number): void;
+    static nvkCmdSetSampleMaskEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number): void;
+    static nvkCmdSetViewportSwizzleNV(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number, paramarg3: number): void;
+    static vkCmdSetAlphaToCoverageEnableEXT(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetAlphaToOneEnableEXT(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetColorBlendAdvancedEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: (Object | null)[]): void;
+    static vkCmdSetColorBlendEnableEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number[]): void;
+    static vkCmdSetColorBlendEnableEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: IntBuffer): void;
+    static vkCmdSetColorBlendEquationEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: (Object | null)[]): void;
+    static vkCmdSetColorWriteMaskEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number[]): void;
+    static vkCmdSetColorWriteMaskEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: IntBuffer): void;
+    static vkCmdSetConservativeRasterizationModeEXT(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetCoverageModulationModeNV(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetCoverageModulationTableEnableNV(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetCoverageModulationTableNV(paramarg0: VkCommandBuffer, paramarg1: number[]): void;
+    static vkCmdSetCoverageModulationTableNV(paramarg0: VkCommandBuffer, paramarg1: FloatBuffer): void;
+    static vkCmdSetCoverageReductionModeNV(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetCoverageToColorEnableNV(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetCoverageToColorLocationNV(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetDepthClampEnableEXT(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetDepthClipEnableEXT(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetDepthClipNegativeOneToOneEXT(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetExtraPrimitiveOverestimationSizeEXT(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetLineRasterizationModeEXT(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetLineStippleEnableEXT(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetLogicOpEnableEXT(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetPolygonModeEXT(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetProvokingVertexModeEXT(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetRasterizationSamplesEXT(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetRasterizationStreamEXT(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetRepresentativeFragmentTestEnableNV(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetSampleLocationsEnableEXT(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetSampleMaskEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: number[]): void;
+    static vkCmdSetSampleMaskEXT(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: IntBuffer): void;
+    static vkCmdSetShadingRateImageEnableNV(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    static vkCmdSetTessellationDomainOriginEXT(paramarg0: VkCommandBuffer, paramarg1: number): void;
+    static vkCmdSetViewportSwizzleNV(paramarg0: VkCommandBuffer, paramarg1: number, paramarg2: (Object | null)[]): void;
+    static vkCmdSetViewportWScalingEnableNV(paramarg0: VkCommandBuffer, paramarg1: boolean): void;
+    constructor()
+}

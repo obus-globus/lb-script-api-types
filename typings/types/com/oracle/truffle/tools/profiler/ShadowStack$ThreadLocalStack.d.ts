@@ -1,10 +1,11 @@
 import type { Assumption } from '../../../../../com/oracle/truffle/api/Assumption.d.ts'
 import type { Node } from '../../../../../com/oracle/truffle/api/nodes/Node.d.ts'
+import type { ShadowStack } from '../../../../../com/oracle/truffle/tools/profiler/ShadowStack.d.ts'
 import type { StackTraceEntry } from '../../../../../com/oracle/truffle/tools/profiler/StackTraceEntry.d.ts'
 import type { Thread } from '../../../../../java/lang/Thread.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShadowStack$ThreadLocalStack extends Object {
-    constructor(null_: ShadowStack$ThreadLocalStack, thread: Thread)
+    constructor(null_: ShadowStack, thread: Thread)
     // private initialStackLength: number;
     // private initialStackLengthStable: Assumption;
     // private noStackOverflowedAssumption: Assumption;

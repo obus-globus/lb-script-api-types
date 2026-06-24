@@ -1,3 +1,4 @@
+import type { ClosingFuture$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ClosingFuture } from '../../../../../com/google/common/util/concurrent/ClosingFuture.d.ts'
 import type { ClosingFuture$Combiner } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Combiner.d.ts'
 import type { ClosingFuture$Combiner$AsyncCombiningCallable } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Combiner$AsyncCombiningCallable.d.ts'
@@ -9,6 +10,7 @@ import type { ClosingFuture$Peeker } from '../../../../../com/google/common/util
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ClosingFuture$Combiner5<V1 extends unknown, V2 extends unknown, V3 extends unknown, V4 extends unknown, V5 extends unknown> extends ClosingFuture$Combiner {
+    constructor(arg0: ClosingFuture<Object>, arg1: ClosingFuture<Object>, arg2: ClosingFuture<Object>, arg3: ClosingFuture<Object>, arg4: ClosingFuture<Object>, arg5: ClosingFuture$1)
     private constructor(future1: ClosingFuture<V1>, future2: ClosingFuture<V2>, future3: ClosingFuture<V3>, future4: ClosingFuture<V4>, future5: ClosingFuture<V5>)
     // private future1: ClosingFuture<V1>;
     // private future2: ClosingFuture<V2>;

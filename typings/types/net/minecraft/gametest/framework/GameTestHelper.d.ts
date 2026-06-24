@@ -12,7 +12,9 @@ import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
 import type { Holder } from '../../../../net/minecraft/core/Holder.d.ts'
 import type { GameTestAssertException } from '../../../../net/minecraft/gametest/framework/GameTestAssertException.d.ts'
 import type { GameTestAssertPosException } from '../../../../net/minecraft/gametest/framework/GameTestAssertPosException.d.ts'
+import type { GameTestEntityBuilder } from '../../../../net/minecraft/gametest/framework/GameTestEntityBuilder.d.ts'
 import type { GameTestInfo } from '../../../../net/minecraft/gametest/framework/GameTestInfo.d.ts'
+import type { GameTestMobBuilder } from '../../../../net/minecraft/gametest/framework/GameTestMobBuilder.d.ts'
 import type { GameTestSequence } from '../../../../net/minecraft/gametest/framework/GameTestSequence.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
@@ -106,6 +108,8 @@ export class GameTestHelper extends Object {
     assertTrue(condition: boolean, errorMessage: Component): void;
     assertValueEqual<N extends unknown>(value: N, expected: N, valueName: string): void;
     assertValueEqual<N extends unknown>(value: N, expected: N, valueName: Component): void;
+    assertValueInBetween<N extends Comparable<N>>(lowerBound: N, value: N, upperBound: N, valueName: string): void;
+    assertValueInBetween<N extends Comparable<N>>(lowerBound: N, value: N, upperBound: N, valueName: Component): void;
     assertionException(descriptionId: string, arguments: Object[]): GameTestAssertException;
     assertionException(pos: BlockPos, descriptionId: string, arguments: Object[]): GameTestAssertPosException;
     assertionException(pos: BlockPos, description: Component): GameTestAssertPosException;
@@ -144,6 +148,7 @@ export class GameTestHelper extends Object {
     killAllEntitiesOfClass(baseClass: Class<Entity>): void;
     makeAboutToDrown(entity: LivingEntity): LivingEntity;
     makeMockPlayer(gameType: GameType): Player;
+    makeMockServerPlayer(gameType: GameType): Player;
     makeMockServerPlayerInLevel(): ServerPlayer;
     moveTo(mob: Mob, x: number, y: number, z: number): void;
     moveTo(mob: Mob, pos: BlockPos): void;
@@ -172,16 +177,23 @@ export class GameTestHelper extends Object {
     setBlock(blockPos: BlockPos, state: BlockState): void;
     setBlock(blockPos: BlockPos, blockState: BlockState, direction: Direction): void;
     setTime(ticks: number): void;
-    spawn<E extends Entity>(entityType: EntityType<E>, x: number, y: number, z: number): E;
     spawn<E extends Mob>(entityType: EntityType<E>, x: number, y: number, z: number, entitySpawnReason: EntitySpawnReason): E;
+    spawn<E extends Entity>(entityType: EntityType<E>, x: number, y: number, z: number): E;
     spawn<E extends Entity>(entityType: EntityType<E>, pos: BlockPos): E;
     spawn<E extends Entity>(entityType: EntityType<E>, pos: BlockPos, amount: number): E[];
+    spawn<E extends Entity>(entityType: EntityType<E>, pos: BlockPos, spawnReason: EntitySpawnReason): E;
     spawn<E extends Entity>(entityType: EntityType<E>, pos: Vec3): E;
     spawn<E extends Entity>(entityType: EntityType<E>, pos: Vec3, amount: number): E[];
     spawn<E extends Entity>(entityType: EntityType<E>, pos: Vec3, spawnReason: EntitySpawnReason): E;
+    spawnEntity<E extends Entity>(entityType: EntityType<E>, x: number, y: number, z: number): GameTestEntityBuilder<E>;
+    spawnEntity<E extends Entity>(entityType: EntityType<E>, position: BlockPos): GameTestEntityBuilder<E>;
+    spawnEntity<E extends Entity>(entityType: EntityType<E>, position: Vec3): GameTestEntityBuilder<E>;
     spawnItem(item: Item, x: number, y: number, z: number): ItemEntity;
     spawnItem(item: Item, pos: BlockPos): ItemEntity;
     spawnItem(item: Item, pos: Vec3): ItemEntity;
+    spawnMob<E extends Mob>(entityType: EntityType<E>, x: number, y: number, z: number): GameTestMobBuilder<E>;
+    spawnMob<E extends Mob>(entityType: EntityType<E>, position: BlockPos): GameTestMobBuilder<E>;
+    spawnMob<E extends Mob>(entityType: EntityType<E>, position: Vec3): GameTestMobBuilder<E>;
     spawnWithNoFreeWill<E extends Mob>(entityType: EntityType<E>, x: number, y: number, z: number): E;
     spawnWithNoFreeWill<E extends Mob>(entityType: EntityType<E>, pos: BlockPos): E;
     spawnWithNoFreeWill<E extends Mob>(entityType: EntityType<E>, pos: Vec3): E;

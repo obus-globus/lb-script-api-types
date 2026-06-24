@@ -1,3 +1,4 @@
+import type { NoMarkerFilter$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -16,6 +17,7 @@ export class NoMarkerFilter extends AbstractFilter {
     static EMPTY_ARRAY: (Object | null)[];
     static newBuilder(): NoMarkerFilter$Builder;
     private constructor(onMatch: Filter$Result, onMismatch: Filter$Result)
+    constructor(arg0: Filter$Result, arg1: Filter$Result, arg2: NoMarkerFilter$1)
     // private filter(marker: Marker): Filter$Result;
     filter(event: LogEvent): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: Object, t: Throwable): Filter$Result;

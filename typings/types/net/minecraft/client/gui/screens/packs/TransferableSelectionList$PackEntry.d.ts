@@ -12,7 +12,7 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
 export class TransferableSelectionList$PackEntry extends TransferableSelectionList$Entry implements SelectableEntry {
     static CONTENT_PADDING: number;
     static ICON_SIZE: number;
-    constructor(null_: TransferableSelectionList$PackEntry, minecraft: Minecraft, parent: TransferableSelectionList, pack: PackSelectionModel$Entry)
+    constructor(null_: TransferableSelectionList, minecraft: Minecraft, parent: TransferableSelectionList, pack: PackSelectionModel$Entry)
     // private descriptionWidget: MultiLineTextWidget;
     // private minecraft: Minecraft;
     // private nameWidget: StringWidget;

@@ -40,6 +40,7 @@ export class KeyMapping extends Object implements Comparable<KeyMapping>, KeyMap
     isDefault(): boolean;
     isDown(): boolean;
     isUnbound(): boolean;
+    matches(key: InputConstants$Key): boolean;
     matches(event: KeyEvent): boolean;
     matchesMouse(event: MouseButtonEvent): boolean;
     // private registerMapping(key: InputConstants$Key): void;

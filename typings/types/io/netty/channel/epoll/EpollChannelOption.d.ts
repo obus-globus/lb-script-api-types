@@ -22,6 +22,7 @@ export class EpollChannelOption<T extends unknown> extends UnixChannelOption<T> 
     static IP_BIND_ADDRESS_NO_PORT: ChannelOption<boolean>;
     static IP_FREEBIND: ChannelOption<boolean>;
     static IP_MULTICAST_ADDR: ChannelOption<InetAddress>;
+    static IP_MULTICAST_ALL: ChannelOption<boolean>;
     static IP_MULTICAST_IF: ChannelOption<NetworkInterface>;
     static IP_MULTICAST_LOOP_DISABLED: ChannelOption<boolean>;
     static IP_MULTICAST_TTL: ChannelOption<number>;

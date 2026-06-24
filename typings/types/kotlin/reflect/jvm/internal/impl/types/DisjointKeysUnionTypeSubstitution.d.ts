@@ -1,3 +1,4 @@
+import type { DefaultConstructorMarker } from '../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { DisjointKeysUnionTypeSubstitution$Companion } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/DisjointKeysUnionTypeSubstitution$Companion.d.ts'
 import type { KotlinType } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/KotlinType.d.ts'
@@ -11,6 +12,7 @@ export class DisjointKeysUnionTypeSubstitution extends TypeSubstitution {
     static EMPTY: TypeSubstitution;
     static create(paramarg0: TypeSubstitution, paramarg1: TypeSubstitution): TypeSubstitution;
     private constructor(arg0: TypeSubstitution, arg1: TypeSubstitution)
+    constructor(arg0: TypeSubstitution, arg1: TypeSubstitution, arg2: DefaultConstructorMarker)
     // private first: TypeSubstitution;
     // private second: TypeSubstitution;
     approximateCapturedTypes(): boolean;

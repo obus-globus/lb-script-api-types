@@ -1,10 +1,11 @@
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../../../../java/lang/Cloneable.d.ts'
+import type { CommandLine$Help$Ansi } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Help$Ansi.d.ts'
 import type { CommandLine$Help$Ansi$StyledSection } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Help$Ansi$StyledSection.d.ts'
 export class CommandLine$Help$Ansi$Text extends Object implements Cloneable {
-    constructor(null_: CommandLine$Help$Ansi$Text, maxLength: number)
-    constructor(null_: CommandLine$Help$Ansi$Text, input: string)
+    constructor(null_: CommandLine$Help$Ansi, maxLength: number)
+    constructor(null_: CommandLine$Help$Ansi, input: string)
     // private from: number;
     // private length: number;
     // private maxLength: number;

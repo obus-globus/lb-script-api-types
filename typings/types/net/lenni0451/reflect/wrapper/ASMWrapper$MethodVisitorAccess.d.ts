@@ -1,7 +1,9 @@
+import type { ASMWrapper$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ASMWrapper$LabelAccess } from '../../../../net/lenni0451/reflect/wrapper/ASMWrapper$LabelAccess.d.ts'
 export class ASMWrapper$MethodVisitorAccess extends Object {
     private constructor(arg0: Object)
+    constructor(arg0: Object, arg1: ASMWrapper$1)
     // private methodVisitor: Object;
     isNull(): boolean;
     visitEnd(): void;

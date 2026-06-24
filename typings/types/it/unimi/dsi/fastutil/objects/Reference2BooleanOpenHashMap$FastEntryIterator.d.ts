@@ -5,7 +5,8 @@ import type { Reference2BooleanOpenHashMap$MapIterator } from '../../../../../it
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2BooleanOpenHashMap$FastEntryIterator extends Reference2BooleanOpenHashMap$MapIterator<Object> implements ObjectIterator<Reference2BooleanMap$Entry<K>> {
-    private constructor(null_: Reference2BooleanOpenHashMap$FastEntryIterator)
+    private constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private entry: Reference2BooleanOpenHashMap$MapEntry;
     acceptOnIndex<K extends unknown>(arg0: (param0: Reference2BooleanMap$Entry<K>) => void, arg1: number): void;
     next<K extends unknown>(): Reference2BooleanOpenHashMap$MapEntry;

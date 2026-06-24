@@ -1,16 +1,22 @@
-import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { ClosingFuture$Status } from '../../../../../com/google/common/util/concurrent/ClosingFuture$Status.d.ts'
+import type { ClosingFuture$ValueAndCloser } from '../../../../../com/google/common/util/concurrent/ClosingFuture$ValueAndCloser.d.ts'
+import type { ClosingFuture$ValueAndCloserConsumer } from '../../../../../com/google/common/util/concurrent/ClosingFuture$ValueAndCloserConsumer.d.ts'
+import type { FluentFuture } from '../../../../../com/google/common/util/concurrent/FluentFuture.d.ts'
+import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
+import type { AtomicReference } from '../../../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Enum } from '../../../../../java/lang/Enum.d.ts'
-export class ClosingFuture$State extends Enum<ClosingFuture$State> {
-    static CLOSED: ClosingFuture$State;
-    static CLOSING: ClosingFuture$State;
-    static OPEN: ClosingFuture$State;
-    static SUBSUMED: ClosingFuture$State;
-    static WILL_CLOSE: ClosingFuture$State;
-    static WILL_CREATE_VALUE_AND_CLOSER: ClosingFuture$State;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramname: string): ClosingFuture$State;
-    static values(): (Object | null)[];
-    private constructor()
-    name(): "OPEN" | "SUBSUMED" | "WILL_CLOSE" | "CLOSING" | "CLOSED" | "WILL_CREATE_VALUE_AND_CLOSER";
+export class ClosingFuture$State<V extends unknown> extends Object {
+    constructor(future: FluentFuture<V>, closeables: { [key: string]: any })
+    // private closeables: { [key: string]: any };
+    // private future: FluentFuture<V>;
+    // private status: AtomicReference<ClosingFuture$Status>;
+    becomeSubsumedInto(otherCloseables: { [key: string]: any }): void;
+    cancel(mayInterruptIfRunning: boolean): boolean;
+    checkAndUpdateStatus(oldStatus: ClosingFuture$Status, newStatus: ClosingFuture$Status): void;
+    close(): void;
+    closeIfLeaked(): void;
+    closingFutureToString(): string;
+    compareAndUpdateStatus(oldStatus: ClosingFuture$Status, newStatus: ClosingFuture$Status): boolean;
+    finishToFuture(): FluentFuture<V>;
+    finishToValueAndCloser(consumer: (param0: ClosingFuture$ValueAndCloser<V>) => void, executor: Executor): void;
 }

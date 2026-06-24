@@ -4,6 +4,7 @@ import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
 import type { ContainerObjectSelectionList } from '../../../../../../net/minecraft/client/gui/components/ContainerObjectSelectionList.d.ts'
+import type { StatsScreen } from '../../../../../../net/minecraft/client/gui/screens/achievement/StatsScreen.d.ts'
 import type { StatsScreen$ItemStatisticsList$Entry } from '../../../../../../net/minecraft/client/gui/screens/achievement/StatsScreen$ItemStatisticsList$Entry.d.ts'
 import type { StatsScreen$ItemStatisticsList$ItemRow } from '../../../../../../net/minecraft/client/gui/screens/achievement/StatsScreen$ItemStatisticsList$ItemRow.d.ts'
 import type { SoundManager } from '../../../../../../net/minecraft/client/sounds/SoundManager.d.ts'
@@ -17,7 +18,7 @@ export class StatsScreen$ItemStatisticsList extends ContainerObjectSelectionList
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: StatsScreen$ItemStatisticsList, minecraft: Minecraft)
+    constructor(null_: StatsScreen, minecraft: Minecraft)
     // private blockColumns: Stat<Block>[][];
     // private itemColumns: Stat<Item>[][];
     // private itemStatSorter: (param0: Object) => boolean;

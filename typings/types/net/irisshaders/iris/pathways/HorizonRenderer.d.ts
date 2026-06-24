@@ -1,4 +1,5 @@
 import type { GpuBuffer } from '../../../../com/mojang/blaze3d/buffers/GpuBuffer.d.ts'
+import type { ByteBufferBuilder } from '../../../../com/mojang/blaze3d/vertex/ByteBufferBuilder.d.ts'
 import type { VertexConsumer } from '../../../../com/mojang/blaze3d/vertex/VertexConsumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Matrix4fc } from '../../../../org/joml/Matrix4fc.d.ts'
@@ -8,6 +9,7 @@ export class HorizonRenderer extends Object {
     // private buffer: GpuBuffer;
     // private currentRenderDistance: number;
     // private indexCount: number;
+    // private storage: ByteBufferBuilder;
     // private buildHorizon(arg0: number, arg1: VertexConsumer): void;
     destroy(): void;
     // private rebuildBuffer(): void;

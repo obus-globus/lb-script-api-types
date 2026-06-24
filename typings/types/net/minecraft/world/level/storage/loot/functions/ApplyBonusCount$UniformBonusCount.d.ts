@@ -7,6 +7,7 @@ import type { ApplyBonusCount$FormulaType } from '../../../../../../../net/minec
 export class ApplyBonusCount$UniformBonusCount extends Record implements ApplyBonusCount$Formula {
     static CODEC: Codec<ApplyBonusCount$UniformBonusCount>;
     static TYPE: ApplyBonusCount$FormulaType;
+    private constructor(bonusMultiplier: number)
     // private bonusMultiplier: number;
     bonusMultiplier(): number;
     calculateNewCount(random: RandomSource, count: number, level: number): number;

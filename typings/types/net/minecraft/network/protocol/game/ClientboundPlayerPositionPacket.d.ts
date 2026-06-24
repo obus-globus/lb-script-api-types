@@ -14,6 +14,7 @@ export class ClientboundPlayerPositionPacket extends Record implements Packet<Cl
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundPlayerPositionPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     static of(paramid: number, paramvalues: PositionMoveRotation, paramrelatives: Relative[]): ClientboundPlayerPositionPacket;
+    constructor(id: number, change: PositionMoveRotation, relatives: Relative[])
     // private change: PositionMoveRotation;
     // private id: number;
     // private relatives: Relative[];

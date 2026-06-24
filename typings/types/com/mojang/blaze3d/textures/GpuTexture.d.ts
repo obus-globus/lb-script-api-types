@@ -1,4 +1,4 @@
-import type { TextureFormat } from '../../../../com/mojang/blaze3d/textures/TextureFormat.d.ts'
+import type { GpuFormat } from '../../../../com/mojang/blaze3d/GpuFormat.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { GpuTextureInterface } from '../../../../net/irisshaders/iris/mixinterface/GpuTextureInterface.d.ts'
@@ -8,9 +8,9 @@ export abstract class GpuTexture extends Object implements AutoCloseable, GpuTex
     static USAGE_CUBEMAP_COMPATIBLE: number;
     static USAGE_RENDER_ATTACHMENT: number;
     static USAGE_TEXTURE_BINDING: number;
-    constructor(usage: number, label: string, format: TextureFormat, width: number, height: number, depthOrLayers: number, mipLevels: number)
+    constructor(usage: number, label: string, format: GpuFormat, width: number, height: number, depthOrLayers: number, mipLevels: number)
     readonly depthOrLayers: number;
-    readonly format: TextureFormat;
+    readonly format: GpuFormat;
     readonly height: number;
     readonly label: string;
     readonly mipLevels: number;
@@ -18,7 +18,7 @@ export abstract class GpuTexture extends Object implements AutoCloseable, GpuTex
     readonly width: number;
     close(): void;
     getDepthOrLayers(): number;
-    getFormat(): TextureFormat;
+    getFormat(): GpuFormat;
     getHeight(mipLevel: number): number;
     getLabel(): string;
     getMipLevels(): number;

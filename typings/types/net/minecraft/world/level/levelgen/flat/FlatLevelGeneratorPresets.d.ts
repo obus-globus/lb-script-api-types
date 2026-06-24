@@ -9,6 +9,7 @@ export class FlatLevelGeneratorPresets extends Object {
     static OVERWORLD: ResourceKey<FlatLevelGeneratorPreset>;
     static REDSTONE_READY: ResourceKey<FlatLevelGeneratorPreset>;
     static SNOWY_KINGDOM: ResourceKey<FlatLevelGeneratorPreset>;
+    static TEST_WORLD: ResourceKey<FlatLevelGeneratorPreset>;
     static THE_VOID: ResourceKey<FlatLevelGeneratorPreset>;
     static TUNNELERS_DREAM: ResourceKey<FlatLevelGeneratorPreset>;
     static WATER_WORLD: ResourceKey<FlatLevelGeneratorPreset>;

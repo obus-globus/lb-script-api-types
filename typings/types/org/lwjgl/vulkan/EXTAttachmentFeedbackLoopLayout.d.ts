@@ -1,0 +1,12 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
+export class EXTAttachmentFeedbackLoopLayout extends Object {
+    static VK_DEPENDENCY_FEEDBACK_LOOP_BIT_EXT: number;
+    static VK_EXT_ATTACHMENT_FEEDBACK_LOOP_LAYOUT_EXTENSION_NAME: string;
+    static VK_EXT_ATTACHMENT_FEEDBACK_LOOP_LAYOUT_SPEC_VERSION: number;
+    static VK_IMAGE_LAYOUT_ATTACHMENT_FEEDBACK_LOOP_OPTIMAL_EXT: number;
+    static VK_IMAGE_USAGE_ATTACHMENT_FEEDBACK_LOOP_BIT_EXT: number;
+    static VK_PIPELINE_CREATE_COLOR_ATTACHMENT_FEEDBACK_LOOP_BIT_EXT: number;
+    static VK_PIPELINE_CREATE_DEPTH_STENCIL_ATTACHMENT_FEEDBACK_LOOP_BIT_EXT: number;
+    static VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_ATTACHMENT_FEEDBACK_LOOP_LAYOUT_FEATURES_EXT: number;
+    private constructor()
+}

@@ -6,6 +6,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 export class SingleOptionInput$Entry extends Record {
     static CODEC: Codec<SingleOptionInput$Entry>;
     static FULL_CODEC: Codec<SingleOptionInput$Entry>;
+    constructor(id: string, display: Optional<Component>, initial: boolean)
     // private display: Optional<Component>;
     // private id: string;
     // private initial: boolean;

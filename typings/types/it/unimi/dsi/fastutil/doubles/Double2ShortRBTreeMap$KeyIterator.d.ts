@@ -1,8 +1,8 @@
 import type { Double2ShortRBTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/Double2ShortRBTreeMap$TreeIterator.d.ts'
 import type { DoubleListIterator } from '../../../../../it/unimi/dsi/fastutil/doubles/DoubleListIterator.d.ts'
 export class Double2ShortRBTreeMap$KeyIterator extends Double2ShortRBTreeMap$TreeIterator implements DoubleListIterator {
-    constructor(null_: Double2ShortRBTreeMap$KeyIterator)
-    constructor(null_: Double2ShortRBTreeMap$KeyIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add(arg0: number): void;
     next(): number;
     nextDouble(): number;

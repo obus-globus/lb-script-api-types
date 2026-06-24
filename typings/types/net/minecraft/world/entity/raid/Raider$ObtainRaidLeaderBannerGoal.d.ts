@@ -3,7 +3,7 @@ import type { ItemEntity } from '../../../../../net/minecraft/world/entity/item/
 import type { Raider } from '../../../../../net/minecraft/world/entity/raid/Raider.d.ts'
 import type { Path } from '../../../../../net/minecraft/world/level/pathfinder/Path.d.ts'
 export class Raider$ObtainRaidLeaderBannerGoal<T extends Raider> extends Goal {
-    constructor(null_: Raider$ObtainRaidLeaderBannerGoal<T>)
+    constructor(null_: Raider, mob: T)
     // private mob: T;
     // private pathToBanner: Path;
     // private pursuedBannerItemEntity: ItemEntity;

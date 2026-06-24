@@ -1,9 +1,10 @@
 import type { IOException } from '../../../java/io/IOException.d.ts'
+import type { Exchange } from '../../../okhttp3/internal/connection/Exchange.d.ts'
 import type { Buffer } from '../../../okio/Buffer.d.ts'
 import type { ForwardingSink } from '../../../okio/ForwardingSink.d.ts'
 import type { Sink } from '../../../okio/Sink.d.ts'
 export class Exchange$RequestBodySink extends ForwardingSink {
-    constructor(null_: Exchange$RequestBodySink, delegate: Sink, contentLength: number, isSocket: boolean)
+    constructor(null_: Exchange, delegate: Sink, contentLength: number, isSocket: boolean)
     // private bytesReceived: number;
     // private closed: boolean;
     // private completed: boolean;

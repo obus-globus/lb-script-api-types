@@ -3,14 +3,14 @@ import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/ev
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { WorldRenderEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 import type { ModuleBlockESP$Mode } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleBlockESP$Mode.d.ts'
-import type { StaticMeshStorage } from '../../../../../../../net/ccbluex/liquidbounce/render/StaticMeshStorage.d.ts'
+import type { CachedMeshStorage } from '../../../../../../../net/ccbluex/liquidbounce/render/CachedMeshStorage.d.ts'
 export class ModuleBlockESP$BoxMode extends ModuleBlockESP$Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleBlockESP$BoxMode;
-    // private facesRenderState: StaticMeshStorage;
+    // private facesRenderState: CachedMeshStorage;
     // private outline: boolean;
     // private /*not mapped: */ getOutline(): boolean;
-    // private outlinesRenderState: StaticMeshStorage;
+    // private outlinesRenderState: CachedMeshStorage;
     // private renderHandler: EventHook<WorldRenderEvent>;
     // private tickHandler: EventHook<GameTickEvent>;
     disable(): void;

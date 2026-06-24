@@ -3,8 +3,10 @@ import type { Float2ByteOpenHashMap$MapEntry } from '../../../../../it/unimi/dsi
 import type { Float2ByteOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/floats/Float2ByteOpenHashMap$MapIterator.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
+import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2ByteOpenHashMap$FastEntryIterator extends Float2ByteOpenHashMap$MapIterator<(param0: Float2ByteMap$Entry) => void> implements ObjectIterator<Float2ByteMap$Entry> {
-    private constructor(null_: Float2ByteOpenHashMap$FastEntryIterator)
+    private constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private entry: Float2ByteOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Float2ByteMap$Entry) => void, arg1: number): void;
     next(): Float2ByteOpenHashMap$MapEntry;

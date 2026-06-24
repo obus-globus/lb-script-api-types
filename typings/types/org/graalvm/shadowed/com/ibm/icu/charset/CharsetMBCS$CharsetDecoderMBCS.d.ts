@@ -4,9 +4,10 @@ import type { IntBuffer } from '../../../../../../../java/nio/IntBuffer.d.ts'
 import type { CoderResult } from '../../../../../../../java/nio/charset/CoderResult.d.ts'
 import type { CharsetDecoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetDecoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetMBCS } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetMBCS.d.ts'
 import type { CharsetMBCS$UConverterMBCSTable } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetMBCS$UConverterMBCSTable.d.ts'
 export class CharsetMBCS$CharsetDecoderMBCS extends CharsetDecoderICU {
-    constructor(null_: CharsetMBCS$CharsetDecoderMBCS, cs: CharsetICU)
+    constructor(null_: CharsetMBCS, cs: CharsetICU)
     // private cnvMBCSSingleToBMPWithOffsets(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     // private cnvMBCSSingleToUnicodeWithOffsets(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     cnvMBCSToUnicodeWithOffsets(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;

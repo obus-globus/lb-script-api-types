@@ -4,8 +4,8 @@ import type { Float2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastuti
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Float2BooleanLinkedOpenHashMap$EntryIterator extends Float2BooleanLinkedOpenHashMap$MapIterator<(param0: Float2BooleanMap$Entry) => void> implements ObjectListIterator<Float2BooleanMap$Entry> {
-    constructor(null_: Float2BooleanLinkedOpenHashMap$EntryIterator)
-    constructor(null_: Float2BooleanLinkedOpenHashMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Float2BooleanLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Float2BooleanMap$Entry) => void, arg1: number): void;
     add(arg0: Float2BooleanMap$Entry): void;

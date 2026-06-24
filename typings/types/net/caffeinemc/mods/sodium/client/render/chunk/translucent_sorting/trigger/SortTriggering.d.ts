@@ -23,7 +23,7 @@ export class SortTriggering extends Object {
     // private triggeredNormalCount: number;
     // private triggeredNormals: Vector3fc[];
     addDebugStrings(arg0: string[], arg1: SortBehavior, arg2: boolean): void;
-    applyTriggerChanges(arg0: DynamicTopoData, arg1: DynamicTopoData$DynamicTopoSorter, arg2: SectionPos, arg3: Vector3dc): void;
+    applyTopoSortingTriggerChanges(arg0: DynamicTopoData, arg1: DynamicTopoData$DynamicTopoSorter, arg2: SectionPos, arg3: Vector3dc): void;
     // private decrementSortTypeCounter(arg0: TranslucentData): void;
     // private incrementSortTypeCounter(arg0: TranslucentData): void;
     integrateTranslucentData(arg0: TranslucentData, arg1: TranslucentData, arg2: Vector3dc, arg3: (param0: number, param1: boolean) => void): void;

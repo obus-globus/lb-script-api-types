@@ -5,6 +5,7 @@ import type { Style } from '../../../../../../../net/minecraft/network/chat/Styl
 import type { FormattedCharSequence } from '../../../../../../../net/minecraft/util/FormattedCharSequence.d.ts'
 import type { FormattedCharSink } from '../../../../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class ConsoleRenderer$MessageRender extends Record {
+    private constructor(x: number, y: number, width: number, height: number, level: MessageLevel, lines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[], opacity: number)
     // private height: number;
     // private level: MessageLevel;
     // private lines: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[];

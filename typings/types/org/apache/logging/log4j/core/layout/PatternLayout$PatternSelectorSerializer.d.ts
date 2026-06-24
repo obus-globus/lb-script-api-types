@@ -1,3 +1,4 @@
+import type { PatternLayout$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -7,6 +8,7 @@ import type { PatternSelector } from '../../../../../../org/apache/logging/log4j
 import type { RegexReplacement } from '../../../../../../org/apache/logging/log4j/core/pattern/RegexReplacement.d.ts'
 export class PatternLayout$PatternSelectorSerializer extends Object implements LocationAware, AbstractStringLayout$Serializer {
     private constructor(patternSelector: PatternSelector, replace: RegexReplacement)
+    constructor(arg0: PatternSelector, arg1: RegexReplacement, arg2: PatternLayout$1)
     // private patternSelector: PatternSelector;
     // private replace: RegexReplacement;
     requiresLocation(): boolean;

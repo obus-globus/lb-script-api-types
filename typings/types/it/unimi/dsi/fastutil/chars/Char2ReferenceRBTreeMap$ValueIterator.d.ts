@@ -2,7 +2,8 @@ import type { Char2ReferenceRBTreeMap$TreeIterator } from '../../../../../it/uni
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2ReferenceRBTreeMap$ValueIterator extends Char2ReferenceRBTreeMap$TreeIterator implements ObjectListIterator<V> {
-    private constructor(null_: Char2ReferenceRBTreeMap$ValueIterator)
+    private constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add<V extends unknown>(arg0: V): void;
     next<V extends unknown>(): V;
     previous<V extends unknown>(): V;

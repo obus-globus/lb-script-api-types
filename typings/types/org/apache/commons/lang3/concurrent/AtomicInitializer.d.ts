@@ -1,3 +1,4 @@
+import type { AtomicInitializer$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Exception } from '../../../../../java/lang/Exception.d.ts'
 import type { AtomicReference } from '../../../../../java/util/concurrent/atomic/AtomicReference.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -10,6 +11,7 @@ export class AtomicInitializer<T extends unknown> extends AbstractConcurrentInit
     static NUL: () => Object | null;
     static builder(): AtomicInitializer$Builder<AtomicInitializer<Object>, Object>;
     constructor()
+    constructor(arg0: () => Object, arg1: (param0: Object) => void, arg2: AtomicInitializer$1)
     private constructor(arg0: () => T, arg1: (param0: T) => void)
     // private reference: AtomicReference<T>;
     get(): T;

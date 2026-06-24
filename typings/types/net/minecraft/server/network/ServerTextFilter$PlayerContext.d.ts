@@ -3,10 +3,11 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { FilteredText } from '../../../../net/minecraft/server/network/FilteredText.d.ts'
+import type { ServerTextFilter } from '../../../../net/minecraft/server/network/ServerTextFilter.d.ts'
 import type { TextFilter } from '../../../../net/minecraft/server/network/TextFilter.d.ts'
 export class ServerTextFilter$PlayerContext extends Object implements TextFilter {
     static DUMMY: TextFilter;
-    constructor(null_: ServerTextFilter$PlayerContext, profile: GameProfile)
+    constructor(null_: ServerTextFilter, profile: GameProfile)
     // private profile: GameProfile;
     // private streamExecutor: Executor;
     join(): void;

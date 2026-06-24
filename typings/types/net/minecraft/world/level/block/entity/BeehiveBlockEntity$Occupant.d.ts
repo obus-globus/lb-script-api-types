@@ -14,6 +14,7 @@ export class BeehiveBlockEntity$Occupant extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, BeehiveBlockEntity$Occupant>;
     static create(paramticksInHive: number): BeehiveBlockEntity$Occupant;
     static of(paramentity: Entity): BeehiveBlockEntity$Occupant;
+    constructor(entityData: TypedEntityData<EntityType<any>>, ticksInHive: number, minTicksInHive: number)
     // private entityData: TypedEntityData<EntityType<any>>;
     // private minTicksInHive: number;
     // private ticksInHive: number;

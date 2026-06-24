@@ -27,6 +27,8 @@ export class JavaVersion extends Enum<JavaVersion> {
     static JAVA_22: JavaVersion;
     static JAVA_23: JavaVersion;
     static JAVA_24: JavaVersion;
+    static JAVA_25: JavaVersion;
+    static JAVA_26: JavaVersion;
     static JAVA_9: JavaVersion;
     static JAVA_RECENT: JavaVersion;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
@@ -38,5 +40,5 @@ export class JavaVersion extends Enum<JavaVersion> {
     atLeast(arg0: JavaVersion): boolean;
     atMost(arg0: JavaVersion): boolean;
     toString(): string;
-    name(): "JAVA_0_9" | "JAVA_1_1" | "JAVA_1_2" | "JAVA_1_3" | "JAVA_1_4" | "JAVA_1_5" | "JAVA_1_6" | "JAVA_1_7" | "JAVA_1_8" | "JAVA_1_9" | "JAVA_9" | "JAVA_10" | "JAVA_11" | "JAVA_12" | "JAVA_13" | "JAVA_14" | "JAVA_15" | "JAVA_16" | "JAVA_17" | "JAVA_18" | "JAVA_19" | "JAVA_20" | "JAVA_21" | "JAVA_22" | "JAVA_23" | "JAVA_24" | "JAVA_RECENT";
+    name(): "JAVA_0_9" | "JAVA_1_1" | "JAVA_1_2" | "JAVA_1_3" | "JAVA_1_4" | "JAVA_1_5" | "JAVA_1_6" | "JAVA_1_7" | "JAVA_1_8" | "JAVA_1_9" | "JAVA_9" | "JAVA_10" | "JAVA_11" | "JAVA_12" | "JAVA_13" | "JAVA_14" | "JAVA_15" | "JAVA_16" | "JAVA_17" | "JAVA_18" | "JAVA_19" | "JAVA_20" | "JAVA_21" | "JAVA_22" | "JAVA_23" | "JAVA_24" | "JAVA_25" | "JAVA_26" | "JAVA_RECENT";
 }

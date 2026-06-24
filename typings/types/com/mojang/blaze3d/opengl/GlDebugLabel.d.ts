@@ -9,7 +9,7 @@ import type { GLCapabilities } from '../../../../org/lwjgl/opengl/GLCapabilities
 export abstract class GlDebugLabel extends Object {
     static create(paramcaps: GLCapabilities, paramwantsLabels: boolean, paramenabledExtensions: string[]): GlDebugLabel;
     constructor()
-    applyLabel(buffer: GlBuffer): void;
+    applyLabel(buffer: GlBuffer, label: () => string): void;
     applyLabel(program: GlProgram): void;
     applyLabel(shaderModule: GlShaderModule): void;
     applyLabel(texture: GlTexture): void;

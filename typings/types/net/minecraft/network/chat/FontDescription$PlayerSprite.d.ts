@@ -7,6 +7,7 @@ import type { ResolvableProfile } from '../../../../net/minecraft/world/item/com
 export class FontDescription$PlayerSprite extends Record implements FontDescription {
     static CODEC: Codec<FontDescription>;
     static DEFAULT: FontDescription$Resource;
+    constructor(profile: ResolvableProfile, hat: boolean)
     // private hat: boolean;
     // private profile: ResolvableProfile;
     equals(o: Object | null): boolean;

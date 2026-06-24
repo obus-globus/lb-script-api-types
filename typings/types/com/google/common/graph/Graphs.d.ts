@@ -1,4 +1,5 @@
 import type { Graph } from '../../../../com/google/common/graph/Graph.d.ts'
+import type { Graphs$TransitiveClosureSelfLoopStrategy } from '../../../../com/google/common/graph/Graphs$TransitiveClosureSelfLoopStrategy.d.ts'
 import type { GraphsBridgeMethods } from '../../../../com/google/common/graph/GraphsBridgeMethods.d.ts'
 import type { ImmutableGraph } from '../../../../com/google/common/graph/ImmutableGraph.d.ts'
 import type { MutableGraph } from '../../../../com/google/common/graph/MutableGraph.d.ts'
@@ -20,6 +21,7 @@ export class Graphs extends GraphsBridgeMethods {
     static reachableNodes(paramgraph: Graph<Object>, paramnode: Object | null): (Object | null)[];
     static transitiveClosure(paramgraph: Graph<Object>): Graph<Object>;
     static transitiveClosure(paramgraph: Graph<Object>): ImmutableGraph<Object>;
+    static transitiveClosure(paramgraph: Graph<Object>, paramstrategy: Graphs$TransitiveClosureSelfLoopStrategy): ImmutableGraph<Object>;
     static transpose(paramnetwork: Network<Object, Object>): Network<Object, Object>;
     static transpose(paramgraph: ValueGraph<Object, Object>): ValueGraph<Object, Object>;
     static transpose(paramgraph: Graph<Object>): Graph<Object>;

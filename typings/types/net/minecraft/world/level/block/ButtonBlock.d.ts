@@ -102,11 +102,11 @@ export class ButtonBlock extends FaceAttachedHorizontalDirectionalBlock {
     entityInside(state: BlockState, level: Level, pos: BlockPos, entity: Entity, effectApplier: InsideBlockEffectApplier, isPrecise: boolean): void;
     getDirectSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getShape(state: BlockState, level: BlockGetter, pos: BlockPos, context: CollisionContext): VoxelShape;
-    getSignal(state: BlockState, level: BlockGetter, pos: BlockPos, direction: Direction): number;
     getSound(pressed: boolean): SoundEvent;
     isSignalSource(state: BlockState): boolean;
     // private makeShapes(): (param0: BlockState) => VoxelShape;
     onExplosionHit(state: BlockState, level: ServerLevel, pos: BlockPos, explosion: Explosion, onHit: (param0: ItemStack, param1: BlockPos) => void): void;
+    ownSignal(state: BlockState, level: BlockGetter, pos: BlockPos): number;
     playSound(player: Player, level: LevelAccessor, pos: BlockPos, pressed: boolean): void;
     press(state: BlockState, level: Level, pos: BlockPos, player: Player): void;
     tick(state: BlockState, level: ServerLevel, pos: BlockPos, random: RandomSource): void;

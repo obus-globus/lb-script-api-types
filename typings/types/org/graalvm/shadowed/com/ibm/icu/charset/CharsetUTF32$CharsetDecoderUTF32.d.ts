@@ -4,8 +4,9 @@ import type { IntBuffer } from '../../../../../../../java/nio/IntBuffer.d.ts'
 import type { CoderResult } from '../../../../../../../java/nio/charset/CoderResult.d.ts'
 import type { CharsetDecoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetDecoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetUTF32 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetUTF32.d.ts'
 export class CharsetUTF32$CharsetDecoderUTF32 extends CharsetDecoderICU {
-    constructor(null_: CharsetUTF32$CharsetDecoderUTF32, cs: CharsetICU)
+    constructor(null_: CharsetUTF32, cs: CharsetICU)
     // private actualBOM: number[];
     // private actualEndianXOR: number;
     // private isBOMReadYet: boolean;

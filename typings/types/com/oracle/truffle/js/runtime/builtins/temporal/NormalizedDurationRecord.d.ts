@@ -2,6 +2,7 @@ import type { BigInt } from '../../../../../../../com/oracle/truffle/js/runtime/
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class NormalizedDurationRecord extends Record {
+    constructor(years: number, months: number, weeks: number, days: number, normalizedTimeTotalNanoseconds: BigInt)
     // private days: number;
     // private months: number;
     // private normalizedTimeTotalNanoseconds: BigInt;

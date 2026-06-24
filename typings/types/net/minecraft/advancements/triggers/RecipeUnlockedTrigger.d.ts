@@ -1,0 +1,16 @@
+import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
+import type { Criterion } from '../../../../net/minecraft/advancements/triggers/Criterion.d.ts'
+import type { RecipeUnlockedTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/triggers/RecipeUnlockedTrigger$TriggerInstance.d.ts'
+import type { SimpleCriterionTrigger } from '../../../../net/minecraft/advancements/triggers/SimpleCriterionTrigger.d.ts'
+import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
+import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
+import type { RecipeHolder } from '../../../../net/minecraft/world/item/crafting/RecipeHolder.d.ts'
+export class RecipeUnlockedTrigger extends SimpleCriterionTrigger<RecipeUnlockedTrigger$TriggerInstance> {
+    static unlocked(paramrecipe: ResourceKey<Recipe<any>>): Criterion<RecipeUnlockedTrigger$TriggerInstance>;
+    constructor()
+    codec(): Codec<RecipeUnlockedTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, matcher: (param0: RecipeUnlockedTrigger$TriggerInstance) => boolean): void;
+    trigger(player: ServerPlayer, recipe: RecipeHolder<any>): void;
+}

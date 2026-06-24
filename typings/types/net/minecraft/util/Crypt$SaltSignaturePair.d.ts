@@ -4,6 +4,8 @@ import type { FriendlyByteBuf } from '../../../net/minecraft/network/FriendlyByt
 export class Crypt$SaltSignaturePair extends Record {
     static EMPTY: Crypt$SaltSignaturePair;
     static write(paramoutput: FriendlyByteBuf, paramsaltSignaturePair: Crypt$SaltSignaturePair): void;
+    constructor(salt: number, signature: number[])
+    constructor(input: FriendlyByteBuf)
     // private salt: number;
     // private signature: number[];
     equals(o: Object | null): boolean;

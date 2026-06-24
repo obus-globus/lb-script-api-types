@@ -8,6 +8,7 @@ import type { GcHeapStat$Timing } from '../../../../../../net/minecraft/util/pro
 export class GcHeapStat extends Record {
     static from(paramevent: RecordedEvent): GcHeapStat;
     static summary(paramrecordingDuration: Duration, paramheapStats: GcHeapStat[], paramgcTotalDuration: Duration, paramtotalGCs: number): GcHeapStat$Summary;
+    constructor(timestamp: Instant, heapUsed: number, timing: GcHeapStat$Timing)
     // private heapUsed: number;
     // private timestamp: Instant;
     // private timing: GcHeapStat$Timing;

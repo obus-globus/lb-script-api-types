@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RandomSupport$Seed128bit extends Record {
+    constructor(seedLo: number, seedHi: number)
     // private seedHi: number;
     // private seedLo: number;
     equals(o: Object | null): boolean;

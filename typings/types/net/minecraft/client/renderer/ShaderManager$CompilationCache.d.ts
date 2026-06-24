@@ -3,10 +3,11 @@ import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { PostChain } from '../../../../net/minecraft/client/renderer/PostChain.d.ts'
+import type { ShaderManager } from '../../../../net/minecraft/client/renderer/ShaderManager.d.ts'
 import type { ShaderManager$Configs } from '../../../../net/minecraft/client/renderer/ShaderManager$Configs.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class ShaderManager$CompilationCache extends Object implements AutoCloseable {
-    private constructor(null_: ShaderManager$CompilationCache, configs: ShaderManager$Configs)
+    private constructor(null_: ShaderManager, configs: ShaderManager$Configs)
     // private configs: ShaderManager$Configs;
     // private postChains: Map<Identifier, Optional<PostChain>>;
     // private triggeredRecovery: boolean;

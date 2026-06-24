@@ -9,13 +9,12 @@ import type { PackedBitStorage } from '../../../../../net/minecraft/util/datafix
 export abstract class LeavesFix$Section extends Object {
     constructor(section: Typed<Object>, inputSchema: Schema)
     // private blockStateType: Type<Pair<string, Dynamic<Object>>>;
-    // private index: number;
+    readonly index: number;
     // private palette: Dynamic<Object>[];
     // private paletteFinder: OpticFinder<Pair<string, Dynamic<Object>>[]>;
     // private storage: PackedBitStorage;
     getBlock(pos: number): number;
     getIndex(): number;
-    getStateId(blockName: string, persistent: boolean, distance: number): number;
     isSkippable(): boolean;
     readStorage(tag: Dynamic<Object>): void;
     skippable(): boolean;

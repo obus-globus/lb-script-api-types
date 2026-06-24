@@ -27,7 +27,7 @@ export class GraalVmProcessor extends AbstractProcessor {
     // private processPlugin(element: Element): void;
     // private safeCast<T extends Element>(element: Element, type: Class<T>): T;
     toString(): string;
-    // private toString(element: Element): string;
+    // private toString(element: TypeElement): string;
     // private toString(type: TypeMirror): string;
     // private writeReachabilityMetadata(): void;
 }

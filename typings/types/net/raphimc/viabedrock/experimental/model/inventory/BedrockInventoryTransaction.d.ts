@@ -5,6 +5,7 @@ import type { InventoryTransactionData } from '../../../../../../net/raphimc/via
 import type { LegacySetItemSlotData } from '../../../../../../net/raphimc/viabedrock/experimental/model/inventory/LegacySetItemSlotData.d.ts'
 import type { ComplexInventoryTransaction_Type } from '../../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ComplexInventoryTransaction_Type.d.ts'
 export class BedrockInventoryTransaction extends Record {
+    constructor(legacyRequestId: number, legacySlots: LegacySetItemSlotData[], actions: InventoryActionData[], transactionType: ComplexInventoryTransaction_Type, transactionData: InventoryTransactionData)
     // private actions: InventoryActionData[];
     // private legacyRequestId: number;
     // private legacySlots: LegacySetItemSlotData[];

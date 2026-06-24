@@ -112,6 +112,11 @@ export class CollectionsKt___CollectionsKt extends CollectionsKt___CollectionsJv
     static indexOfLast(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): number;
     static indexOfLast(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): number;
     static intersect(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): (Object | null)[];
+    static isSorted(paramarg0: (Object | null)[]): boolean;
+    static isSortedBy(paramarg0: (Object | null)[], paramarg1: (param0: Object) => Object | null): boolean;
+    static isSortedByDescending(paramarg0: (Object | null)[], paramarg1: (param0: Object) => Object | null): boolean;
+    static isSortedDescending(paramarg0: (Object | null)[]): boolean;
+    static isSortedWith(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): boolean;
     static iterator(paramarg0: Enumeration<Object>): Iterator<Object>;
     static joinTo(paramarg0: (Object | null)[], paramarg1: Appendable | null, paramarg2: CharSequence, paramarg3: CharSequence, paramarg4: CharSequence, paramarg5: number, paramarg6: CharSequence, paramarg7: (param0: Object) => CharSequence): Appendable | null;
     static joinToString(paramarg0: (Object | null)[], paramarg1: CharSequence, paramarg2: CharSequence, paramarg3: CharSequence, paramarg4: number, paramarg5: CharSequence, paramarg6: (param0: Object) => CharSequence): string;

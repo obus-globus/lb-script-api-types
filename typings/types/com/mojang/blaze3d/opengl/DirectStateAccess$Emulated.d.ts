@@ -1,11 +1,12 @@
-import type { GraphicsWorkarounds } from '../../../../com/mojang/blaze3d/GraphicsWorkarounds.d.ts'
 import type { DirectStateAccess } from '../../../../com/mojang/blaze3d/opengl/DirectStateAccess.d.ts'
+import type { GlHeuristics } from '../../../../com/mojang/blaze3d/opengl/GlHeuristics.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { GLCapabilities } from '../../../../org/lwjgl/opengl/GLCapabilities.d.ts'
 export class DirectStateAccess$Emulated extends DirectStateAccess {
-    static create(paramcapabilities: GLCapabilities, paramenabledExtensions: string[], paramworkarounds: GraphicsWorkarounds): DirectStateAccess;
+    static create(paramcapabilities: GLCapabilities, paramenabledExtensions: string[], paramheuristics: GlHeuristics): DirectStateAccess;
     private constructor()
-    bindFrameBufferTextures(fbo: number, color0: number, depth: number, mipLevel: number, bindSlot: number): void;
+    bindFrameBufferTextures(fbo: number, color: number, depth: number, mipLevel: number, bindSlot: number): void;
+    bindFrameBufferTextures(fbo: number, color: number[], colorMipLevels: number[], depth: number, depthMipLevel: number, bindSlot: number): void;
     blitFrameBuffers(source: number, dest: number, srcX0: number, srcY0: number, srcX1: number, srcY1: number, dstX0: number, dstY0: number, dstX1: number, dstY1: number, mask: number, filter: number): void;
     bufferData(buffer: number, data: ByteBuffer, usage: number): void;
     bufferData(buffer: number, size: number, usage: number): void;
@@ -17,6 +18,5 @@ export class DirectStateAccess$Emulated extends DirectStateAccess {
     createFrameBufferObject(): number;
     flushMappedBufferRange(buffer: number, offset: number, length: number, usage: number): void;
     mapBufferRange(buffer: number, offset: number, length: number, access: number, usage: number): ByteBuffer;
-    // private selectBufferBindTarget(usage: number): number;
     unmapBuffer(buffer: number, usage: number): void;
 }

@@ -15,6 +15,7 @@ export class JsonBuilder extends Object {
     coerceInputValues: boolean;
     decodeEnumsCaseInsensitive: boolean;
     encodeDefaults: boolean;
+    exceptionsWithDebugInfo: boolean;
     explicitNulls: boolean;
     ignoreUnknownKeys: boolean;
     // private isLenient: boolean;

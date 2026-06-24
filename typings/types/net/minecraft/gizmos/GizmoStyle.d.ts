@@ -5,6 +5,7 @@ export class GizmoStyle extends Record {
     static stroke(paramargb: number): GizmoStyle;
     static stroke(paramargb: number, paramwidth: number): GizmoStyle;
     static strokeAndFill(paramstroke: number, paramstrokeWidth: number, paramfill: number): GizmoStyle;
+    constructor(stroke: number, strokeWidth: number, fill: number)
     // private fill: number;
     // private stroke: number;
     // private strokeWidth: number;

@@ -1,4 +1,4 @@
-import type { JsonElement } from '../../../../../com/google/gson/JsonElement.d.ts'
+import type { JsonElement } from '../../../../../com/viaversion/viaversion/libs/gson/JsonElement.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Position2V extends Object {
     constructor(arg0: number, arg1: number)

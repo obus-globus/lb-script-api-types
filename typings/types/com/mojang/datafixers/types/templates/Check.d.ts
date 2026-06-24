@@ -9,6 +9,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Check extends Record implements TypeTemplate {
+    constructor(name: string, index: number, element: TypeTemplate)
     // private element: TypeTemplate;
     // private index: number;
     // private name: string;

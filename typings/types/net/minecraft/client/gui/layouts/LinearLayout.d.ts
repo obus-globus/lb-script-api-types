@@ -24,6 +24,7 @@ export class LinearLayout extends Object implements Layout {
     getX(): number;
     getY(): number;
     newCellSettings(): LayoutSettings;
+    removeChildren(): void;
     setX(x: number): void;
     setY(y: number): void;
     spacing(spacing: number): LinearLayout;

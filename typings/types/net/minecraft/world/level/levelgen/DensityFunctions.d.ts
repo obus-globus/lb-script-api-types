@@ -6,8 +6,6 @@ import type { CubicSpline } from '../../../../../net/minecraft/util/CubicSpline.
 import type { DensityFunction } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction.d.ts'
 import type { DensityFunctions$Mapped$Type } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$Mapped$Type.d.ts'
 import type { DensityFunctions$Spline$Coordinate } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$Spline$Coordinate.d.ts'
-import type { DensityFunctions$Spline$Point } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$Spline$Point.d.ts'
-import type { DensityFunctions$WeirdScaledSampler$RarityValueMapper } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$WeirdScaledSampler$RarityValueMapper.d.ts'
 import type { NormalNoise$NoiseParameters } from '../../../../../net/minecraft/world/level/levelgen/synth/NormalNoise$NoiseParameters.d.ts'
 export class DensityFunctions extends Object {
     static DIRECT_CODEC: Codec<DensityFunction>;
@@ -24,6 +22,7 @@ export class DensityFunctions extends Object {
     static findTopSurface(paramdensity: DensityFunction, paramupperBound: DensityFunction, paramlowerBound: number, paramstepSize: number): DensityFunction;
     static flatCache(paramfunction: DensityFunction): DensityFunction;
     static interpolated(paramfunction: DensityFunction): DensityFunction;
+    static intervalSelect(paraminput: DensityFunction, paramthresholds: (Object | null)[], paramfunctions: DensityFunction[]): DensityFunction;
     static lerp(paramfactor: DensityFunction, paramfirst: number, paramsecond: DensityFunction): DensityFunction;
     static lerp(paramalpha: DensityFunction, paramfirst: DensityFunction, paramsecond: DensityFunction): DensityFunction;
     static map(paramfunction: DensityFunction, paramtype: DensityFunctions$Mapped$Type): DensityFunction;
@@ -41,8 +40,7 @@ export class DensityFunctions extends Object {
     static shiftA(paramnoiseData: Holder<NormalNoise$NoiseParameters>): DensityFunction;
     static shiftB(paramnoiseData: Holder<NormalNoise$NoiseParameters>): DensityFunction;
     static shiftedNoise2d(paramshiftX: DensityFunction, paramshiftZ: DensityFunction, paramxzScale: number, paramnoiseData: Holder<NormalNoise$NoiseParameters>): DensityFunction;
-    static spline(paramspline: CubicSpline<DensityFunctions$Spline$Point, DensityFunctions$Spline$Coordinate>): DensityFunction;
-    static weirdScaledSampler(paraminput: DensityFunction, paramnoiseData: Holder<NormalNoise$NoiseParameters>, paramrarityValueMapper: DensityFunctions$WeirdScaledSampler$RarityValueMapper): DensityFunction;
+    static spline(paramspline: CubicSpline<DensityFunctions$Spline$Coordinate>): DensityFunction;
     static yClampedGradient(paramfromY: number, paramtoY: number, paramfromValue: number, paramtoValue: number): DensityFunction;
     static zero(): DensityFunction;
     private constructor()

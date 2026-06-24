@@ -20,6 +20,7 @@ export class ServerLinksDialog extends Record implements ButtonListDialog {
     static MAP_CODEC: MapCodec<ServerLinksDialog>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Dialog>>;
     static WIDTH_CODEC: Codec<number>;
+    constructor(common: CommonDialogData, exitAction: Optional<ActionButton>, columns: number, buttonWidth: number)
     // private buttonWidth: number;
     // private columns: number;
     // private common: CommonDialogData;

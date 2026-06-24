@@ -2,6 +2,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ResourceCondition } from '../../../../../../../net/fabricmc/fabric/api/resource/conditions/v1/ResourceCondition.d.ts'
 export class FabricDynamicRegistryProvider$ConditionalEntry<T extends unknown> extends Record {
+    private constructor(value: T, conditions: ResourceCondition[])
     // private conditions: ResourceCondition[];
     // private value: T;
     conditions(): ResourceCondition[];

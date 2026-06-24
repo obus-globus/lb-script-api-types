@@ -5,18 +5,16 @@ import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DynamicAtlasAllocator } from '../../../../../net/minecraft/client/gui/render/DynamicAtlasAllocator.d.ts'
 import type { GuiItemAtlas$SlotView } from '../../../../../net/minecraft/client/gui/render/GuiItemAtlas$SlotView.d.ts'
-import type { MultiBufferSource$BufferSource } from '../../../../../net/minecraft/client/renderer/MultiBufferSource$BufferSource.d.ts'
 import type { Projection } from '../../../../../net/minecraft/client/renderer/Projection.d.ts'
 import type { ProjectionMatrixBuffer } from '../../../../../net/minecraft/client/renderer/ProjectionMatrixBuffer.d.ts'
-import type { SubmitNodeCollector } from '../../../../../net/minecraft/client/renderer/SubmitNodeCollector.d.ts'
+import type { SubmitNodeStorage } from '../../../../../net/minecraft/client/renderer/SubmitNodeStorage.d.ts'
 import type { FeatureRenderDispatcher } from '../../../../../net/minecraft/client/renderer/feature/FeatureRenderDispatcher.d.ts'
 import type { ItemStackRenderState } from '../../../../../net/minecraft/client/renderer/item/ItemStackRenderState.d.ts'
 import type { TrackingItemStackRenderState } from '../../../../../net/minecraft/client/renderer/item/TrackingItemStackRenderState.d.ts'
 export class GuiItemAtlas extends Object implements AutoCloseable {
     static computeTextureSizeFor(paramslotTextureSize: number, paramrequiredSlotCount: number): number;
-    constructor(submitNodeCollector: SubmitNodeCollector, featureRenderDispatcher: FeatureRenderDispatcher, bufferSource: MultiBufferSource$BufferSource, textureSize: number, slotTextureSize: number)
+    constructor(featureRenderDispatcher: FeatureRenderDispatcher, textureSize: number, slotTextureSize: number)
     // private allocator: DynamicAtlasAllocator<Object>;
-    // private bufferSource: MultiBufferSource$BufferSource;
     // private depthTexture: GpuTexture;
     // private depthTextureView: GpuTextureView;
     // private featureRenderDispatcher: FeatureRenderDispatcher;
@@ -24,7 +22,7 @@ export class GuiItemAtlas extends Object implements AutoCloseable {
     // private projection: Projection;
     // private projectionMatrixBuffer: ProjectionMatrixBuffer;
     // private slotTextureSize: number;
-    // private submitNodeCollector: SubmitNodeCollector;
+    // private submitNodeStorage: SubmitNodeStorage;
     // private texture: GpuTexture;
     // private textureSize: number;
     // private textureView: GpuTextureView;

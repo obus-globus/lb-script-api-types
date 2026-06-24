@@ -8,6 +8,7 @@ import type { RenderType } from '../../../../net/minecraft/client/renderer/rende
 import type { Unit } from '../../../../net/minecraft/util/Unit.d.ts'
 export class ElderGuardianParticleGroup$ElderGuardianParticleRenderState extends Record {
     static fromParticle(paramparticle: ElderGuardianParticle, paramcamera: Camera, parampartialTickTime: number): ElderGuardianParticleGroup$ElderGuardianParticleRenderState;
+    private constructor(model: Model<Unit>, poseStack: PoseStack, renderType: RenderType, color: number)
     // private color: number;
     // private model: Model<Unit>;
     // private poseStack: PoseStack;

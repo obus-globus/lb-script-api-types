@@ -5,8 +5,8 @@ import type { Reference2LongMap$Entry } from '../../../../../it/unimi/dsi/fastut
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2LongLinkedOpenHashMap$FastEntryIterator extends Reference2LongLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<Reference2LongMap$Entry<K>> {
-    constructor(null_: Reference2LongLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Reference2LongLinkedOpenHashMap$FastEntryIterator)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: K)
     // private entry: Reference2LongLinkedOpenHashMap$MapEntry;
     acceptOnIndex<K extends unknown>(arg0: (param0: Reference2LongMap$Entry<K>) => void, arg1: number): void;
     add<K extends unknown>(arg0: Reference2LongMap$Entry<K>): void;

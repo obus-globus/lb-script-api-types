@@ -2,6 +2,7 @@ import type { JSException } from '../../../../../com/oracle/truffle/js/runtime/J
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Uint8ArrayBuiltins$Uint8ArrayBaseNode$EncodeResult extends Record {
+    constructor(read: number, written: number, bytes: number[], error: JSException)
     // private bytes: number[];
     // private error: JSException;
     // private read: number;

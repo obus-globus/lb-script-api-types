@@ -1,7 +1,8 @@
 import type { UResource$Key } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UResource$Key.d.ts'
 import type { UResource$Sink } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UResource$Sink.d.ts'
 import type { UResource$Value } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UResource$Value.d.ts'
+import type { DateTimePatternGenerator } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/DateTimePatternGenerator.d.ts'
 export class DateTimePatternGenerator$AppendItemFormatsSink extends UResource$Sink {
-    private constructor(null_: DateTimePatternGenerator$AppendItemFormatsSink)
+    private constructor(null_: DateTimePatternGenerator)
     put(key: UResource$Key, value: UResource$Value, noFallback: boolean): void;
 }

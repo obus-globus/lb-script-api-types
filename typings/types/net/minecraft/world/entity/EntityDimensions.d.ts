@@ -7,6 +7,8 @@ import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class EntityDimensions extends Record {
     static fixed(paramwidth: number, paramheight: number): EntityDimensions;
     static scalable(paramwidth: number, paramheight: number): EntityDimensions;
+    private constructor(width: number, height: number, fixed: boolean)
+    constructor(width: number, height: number, eyeHeight: number, attachments: EntityAttachments, fixed: boolean)
     // private attachments: EntityAttachments;
     // private eyeHeight: number;
     // private fixed: boolean;

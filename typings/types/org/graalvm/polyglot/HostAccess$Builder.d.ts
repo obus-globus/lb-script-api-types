@@ -12,8 +12,8 @@ import type { HostAccess } from '../../../org/graalvm/polyglot/HostAccess.d.ts'
 import type { HostAccess$MutableTargetMapping } from '../../../org/graalvm/polyglot/HostAccess$MutableTargetMapping.d.ts'
 import type { HostAccess$TargetMappingPrecedence } from '../../../org/graalvm/polyglot/HostAccess$TargetMappingPrecedence.d.ts'
 export class HostAccess$Builder extends Object {
-    constructor(null_: HostAccess$Builder)
-    constructor(null_: HostAccess$Builder, access: HostAccess)
+    constructor(null_: HostAccess)
+    constructor(null_: HostAccess, access: HostAccess)
     // private accessAnnotations: Class<Annotation>[];
     // private allowAccessInheritance: boolean;
     // private allowAllClassImplementations: boolean;

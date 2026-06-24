@@ -1,3 +1,4 @@
+import type { WindowUtils$RepaintTrigger } from '../../../../com/sun/jna/platform/WindowUtils$RepaintTrigger.d.ts'
 import type { AWTEvent } from '../../../../java/awt/AWTEvent.d.ts'
 import type { AWTEventListener } from '../../../../java/awt/event/AWTEventListener.d.ts'
 import type { ComponentEvent } from '../../../../java/awt/event/ComponentEvent.d.ts'
@@ -7,7 +8,7 @@ import type { HierarchyListener } from '../../../../java/awt/event/HierarchyList
 import type { WindowAdapter } from '../../../../java/awt/event/WindowAdapter.d.ts'
 import type { WindowEvent } from '../../../../java/awt/event/WindowEvent.d.ts'
 export class WindowUtils$RepaintTrigger$Listener extends WindowAdapter implements AWTEventListener, ComponentListener, HierarchyListener {
-    constructor(null_: WindowUtils$RepaintTrigger$Listener)
+    constructor(null_: WindowUtils$RepaintTrigger)
     componentHidden(arg0: ComponentEvent): void;
     componentMoved(arg0: ComponentEvent): void;
     componentResized(arg0: ComponentEvent): void;

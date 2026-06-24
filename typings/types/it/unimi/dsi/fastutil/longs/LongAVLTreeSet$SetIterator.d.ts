@@ -2,8 +2,8 @@ import type { LongAVLTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil/
 import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/longs/LongListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LongAVLTreeSet$SetIterator extends Object implements LongListIterator {
-    constructor(null_: LongAVLTreeSet$SetIterator)
-    constructor(null_: LongAVLTreeSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: LongAVLTreeSet$Entry;
     // private index: number;
     // private next: LongAVLTreeSet$Entry;

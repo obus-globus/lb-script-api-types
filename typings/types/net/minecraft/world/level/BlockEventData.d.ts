@@ -3,6 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Block } from '../../../../net/minecraft/world/level/block/Block.d.ts'
 export class BlockEventData extends Record {
+    constructor(pos: BlockPos, block: Block, paramA: number, paramB: number)
     // private block: Block;
     // private paramA: number;
     // private paramB: number;

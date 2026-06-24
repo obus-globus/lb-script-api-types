@@ -2,6 +2,7 @@ import type { ReflectionBasedSerialization } from '../../../../com/mojang/realms
 import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RealmsWorldResetDto extends Record implements ReflectionBasedSerialization {
+    constructor(seed: string, worldTemplateId: number, levelType: number, generateStructures: boolean, experiments: string[])
     // private experiments: string[];
     // private generateStructures: boolean;
     // private levelType: number;

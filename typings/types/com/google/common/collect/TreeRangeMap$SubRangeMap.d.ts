@@ -1,11 +1,12 @@
 import type { Range } from '../../../../com/google/common/collect/Range.d.ts'
 import type { RangeMap } from '../../../../com/google/common/collect/RangeMap.d.ts'
+import type { TreeRangeMap } from '../../../../com/google/common/collect/TreeRangeMap.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class TreeRangeMap$SubRangeMap extends Object implements RangeMap<K, V> {
-    constructor(null_: TreeRangeMap$SubRangeMap)
+    constructor(null_: TreeRangeMap<K, V>, subRange: Range<K>)
     // private subRange: Range<K>;
     asDescendingMapOfRanges<K extends Comparable<Object>, V extends unknown>(): Map<Range<K>, V>;
     asMapOfRanges<K extends Comparable<Object>, V extends unknown>(): Map<Range<K>, V>;

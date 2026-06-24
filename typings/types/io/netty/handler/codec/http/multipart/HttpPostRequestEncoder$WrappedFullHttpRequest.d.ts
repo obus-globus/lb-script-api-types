@@ -1,3 +1,4 @@
+import type { HttpPostRequestEncoder$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { FullHttpRequest } from '../../../../../../io/netty/handler/codec/http/FullHttpRequest.d.ts'
 import type { HttpContent } from '../../../../../../io/netty/handler/codec/http/HttpContent.d.ts'
@@ -11,6 +12,7 @@ import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class HttpPostRequestEncoder$WrappedFullHttpRequest extends HttpPostRequestEncoder$WrappedHttpRequest implements FullHttpRequest {
     static EMPTY_LAST_CONTENT: LastHttpContent;
     private constructor(arg0: HttpRequest, arg1: HttpContent)
+    constructor(arg0: HttpRequest, arg1: HttpContent, arg2: HttpPostRequestEncoder$1)
     // private content: HttpContent;
     content(): ByteBuf;
     copy(): FullHttpRequest;

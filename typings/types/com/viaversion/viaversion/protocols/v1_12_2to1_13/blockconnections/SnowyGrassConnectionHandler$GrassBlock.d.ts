@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SnowyGrassConnectionHandler$GrassBlock extends Record {
+    private constructor(blockStateId: number, snowy: boolean)
     // private blockStateId: number;
     // private snowy: boolean;
     blockStateId(): number;

@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class MultiPartDownloader$Part extends Record {
+    private constructor(index: number, start: number, end: number)
     // private end: number;
     // private index: number;
     // private start: number;

@@ -1,7 +1,7 @@
-import type { File } from '../../../../java/io/File.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../net/minecraft/client/Minecraft.d.ts'
+import type { GameConfig } from '../../../../net/minecraft/client/main/GameConfig.d.ts'
 export class ClientShutdownWatchdog extends Object {
-    static startShutdownWatchdog(paramminecraft: Minecraft, paramgameDirectory: File, parammainThreadId: number): void;
+    static startShutdownWatchdog(paramcallsite: string, paramforceShutdown: boolean, paramminecraft: Minecraft, paramgameConfig: GameConfig, parammainThreadId: number): void;
     constructor()
 }

@@ -1,3 +1,4 @@
+import type { ApproximatelySignMatcher } from '../../../../../../com/ibm/icu/impl/number/parse/ApproximatelySignMatcher.d.ts'
 import type { CombinedCurrencyMatcher } from '../../../../../../com/ibm/icu/impl/number/parse/CombinedCurrencyMatcher.d.ts'
 import type { IgnorablesMatcher } from '../../../../../../com/ibm/icu/impl/number/parse/IgnorablesMatcher.d.ts'
 import type { MinusSignMatcher } from '../../../../../../com/ibm/icu/impl/number/parse/MinusSignMatcher.d.ts'
@@ -15,6 +16,7 @@ export class AffixTokenMatcherFactory extends Object {
     locale: ULocale;
     parseFlags: number;
     symbols: DecimalFormatSymbols;
+    approximatelySign(): ApproximatelySignMatcher;
     minusSign(): MinusSignMatcher;
     percent(): PercentMatcher;
     permille(): PermilleMatcher;

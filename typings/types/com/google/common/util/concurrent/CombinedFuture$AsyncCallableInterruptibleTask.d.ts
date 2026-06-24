@@ -1,10 +1,11 @@
 import type { AsyncCallable } from '../../../../../com/google/common/util/concurrent/AsyncCallable.d.ts'
+import type { CombinedFuture } from '../../../../../com/google/common/util/concurrent/CombinedFuture.d.ts'
 import type { CombinedFuture$CombinedFutureInterruptibleTask } from '../../../../../com/google/common/util/concurrent/CombinedFuture$CombinedFutureInterruptibleTask.d.ts'
 import type { ListenableFuture } from '../../../../../com/google/common/util/concurrent/ListenableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CombinedFuture$AsyncCallableInterruptibleTask extends CombinedFuture$CombinedFutureInterruptibleTask<Object> {
-    constructor(null_: CombinedFuture$AsyncCallableInterruptibleTask, listenerExecutor: Executor)
+    constructor(null_: CombinedFuture<V>, callable: () => ListenableFuture<V>, listenerExecutor: Executor)
     // private callable: () => ListenableFuture<V>;
     runInterruptibly<V extends unknown>(): ListenableFuture<V>;
     setValue<V extends unknown>(value: ListenableFuture<V>): void;

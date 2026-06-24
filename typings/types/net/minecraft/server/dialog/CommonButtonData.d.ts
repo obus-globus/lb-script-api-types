@@ -6,6 +6,8 @@ import type { Component } from '../../../../net/minecraft/network/chat/Component
 export class CommonButtonData extends Record {
     static DEFAULT_WIDTH: number;
     static MAP_CODEC: MapCodec<CommonButtonData>;
+    constructor(label: Component, tooltip: Optional<Component>, width: number)
+    constructor(label: Component, width: number)
     // private label: Component;
     // private tooltip: Optional<Component>;
     // private width: number;

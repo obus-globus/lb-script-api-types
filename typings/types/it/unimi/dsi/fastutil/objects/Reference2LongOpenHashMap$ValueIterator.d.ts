@@ -4,7 +4,7 @@ import type { Reference2LongOpenHashMap$MapIterator } from '../../../../../it/un
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { LongConsumer as LongConsumer_2 } from '../../../../../java/util/function/LongConsumer.d.ts'
 export class Reference2LongOpenHashMap$ValueIterator extends Reference2LongOpenHashMap$MapIterator<Object> implements LongIterator {
-    constructor(null_: Reference2LongOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

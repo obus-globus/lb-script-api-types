@@ -2,10 +2,11 @@ import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { ByteBuffer } from '../../../../../../java/nio/ByteBuffer.d.ts'
 import type { SeekableByteChannel } from '../../../../../../java/nio/channels/SeekableByteChannel.d.ts'
 import type { TarArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/tar/TarArchiveEntry.d.ts'
+import type { TarFile } from '../../../../../../org/apache/commons/compress/archivers/tar/TarFile.d.ts'
 import type { BoundedArchiveInputStream } from '../../../../../../org/apache/commons/compress/utils/BoundedArchiveInputStream.d.ts'
 export class TarFile$BoundedTarEntryInputStream extends BoundedArchiveInputStream {
     static nullInputStream(): InputStream;
-    constructor(null_: TarFile$BoundedTarEntryInputStream, arg1: TarArchiveEntry, arg2: SeekableByteChannel)
+    constructor(null_: TarFile, arg1: TarArchiveEntry, arg2: SeekableByteChannel)
     // private channel: SeekableByteChannel;
     // private currentSparseInputStreamIndex: number;
     // private entry: TarArchiveEntry;

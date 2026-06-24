@@ -13,6 +13,7 @@ import type { RandomState } from '../../../../../../../net/minecraft/world/level
 import type { FeatureConfiguration } from '../../../../../../../net/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration.d.ts'
 import type { StructureTemplateManager } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager.d.ts'
 export class PieceGeneratorSupplier$Context<C extends FeatureConfiguration> extends Record {
+    constructor(chunkGenerator: ChunkGenerator, biomeSource: BiomeSource, randomState: RandomState, seed: number, chunkPos: ChunkPos, config: C, heightAccessor: LevelHeightAccessor, validBiome: (param0: Holder<Biome>) => boolean, structureTemplateManager: StructureTemplateManager, registryAccess: RegistryAccess)
     // private biomeSource: BiomeSource;
     // private chunkGenerator: ChunkGenerator;
     // private chunkPos: ChunkPos;

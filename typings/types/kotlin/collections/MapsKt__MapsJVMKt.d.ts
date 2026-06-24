@@ -6,8 +6,10 @@ export class MapsKt__MapsJVMKt extends MapsKt__MapWithDefaultKt {
     static build(paramarg0: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
     static createMapBuilder(): Map<Object | null, Object | null>;
     static createMapBuilder(paramarg0: number): Map<Object | null, Object | null>;
+    static getOrDefaultImpl(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: Object | null): Object | null;
     static getOrImplicitDefaultNullable(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null): Object | null;
     static getOrPut(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: () => Object | null): Object | null;
+    static getOrPutIfNullImpl(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: Object | null): Object | null;
     static mapCapacity(paramarg0: number): number;
     static mapOf(paramarg0: Pair<Object, Object>): Map<Object | null, Object | null>;
     static sortedMapOf(paramarg0: Object | null): Map<Object | null, Object | null>;

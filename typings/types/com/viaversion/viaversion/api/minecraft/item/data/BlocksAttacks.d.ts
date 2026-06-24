@@ -13,6 +13,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class BlocksAttacks extends Record implements Rewritable {
     static TYPE1_21_5: Type<BlocksAttacks>;
     static TYPE26_1: Type<BlocksAttacks>;
+    constructor(blockDelaySeconds: number, disableCooldownScale: number, damageReductions: BlocksAttacks$DamageReduction[], itemDamage: BlocksAttacks$ItemDamageFunction, bypassedBy: HolderSet, blockSound: Holder<SoundEvent>, disableSound: Holder<SoundEvent>)
     // private blockDelaySeconds: number;
     // private blockSound: Holder<SoundEvent>;
     // private bypassedBy: HolderSet;

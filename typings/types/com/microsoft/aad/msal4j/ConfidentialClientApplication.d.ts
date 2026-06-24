@@ -1,3 +1,4 @@
+import type { ConfidentialClientApplication$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AbstractClientApplicationBase } from '../../../../com/microsoft/aad/msal4j/AbstractClientApplicationBase.d.ts'
 import type { AppTokenProviderParameters } from '../../../../com/microsoft/aad/msal4j/AppTokenProviderParameters.d.ts'
 import type { AuthorizationCodeParameters } from '../../../../com/microsoft/aad/msal4j/AuthorizationCodeParameters.d.ts'
@@ -15,6 +16,7 @@ export class ConfidentialClientApplication extends AbstractClientApplicationBase
     static DEFAULT_AUTHORITY: string;
     static builder(paramarg0: string, paramarg1: IClientCredential): ConfidentialClientApplication$Builder;
     private constructor(arg0: ConfidentialClientApplication$Builder)
+    constructor(arg0: ConfidentialClientApplication$Builder, arg1: ConfidentialClientApplication$1)
     appTokenProvider: (param0: AppTokenProviderParameters) => CompletableFuture<TokenProviderResult>;
     // private clientCredential: IClientCredential;
     // private sendX5c: boolean;

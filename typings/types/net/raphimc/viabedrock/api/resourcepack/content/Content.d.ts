@@ -19,6 +19,7 @@ export abstract class Content extends Object {
     getSortedJson(arg0: string): JsonObject;
     getString(arg0: string): string;
     put(arg0: string, arg1: number[]): boolean;
+    putAll(arg0: Content): void;
     putJson(arg0: string, arg1: JsonObject): boolean;
     putLines(arg0: string, arg1: string[]): boolean;
     putPngImage(arg0: string, arg1: BufferedImage): boolean;

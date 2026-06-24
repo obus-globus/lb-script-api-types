@@ -2,6 +2,7 @@ import type { CalendarCache } from '../../../../com/ibm/icu/impl/CalendarCache.d
 import type { DateFormat } from '../../../../com/ibm/icu/text/DateFormat.d.ts'
 import type { Calendar } from '../../../../com/ibm/icu/util/Calendar.d.ts'
 import type { Calendar$WeekData } from '../../../../com/ibm/icu/util/Calendar$WeekData.d.ts'
+import type { ChineseCalendar$MonthInfo } from '../../../../com/ibm/icu/util/ChineseCalendar$MonthInfo.d.ts'
 import type { TimeZone } from '../../../../com/ibm/icu/util/TimeZone.d.ts'
 import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.ts'
@@ -78,7 +79,7 @@ export class ChineseCalendar extends Calendar {
     constructor()
     constructor(arg0: TimeZone)
     constructor(arg0: TimeZone, arg1: ULocale)
-    constructor(arg0: TimeZone, arg1: ULocale, arg2: number, arg3: TimeZone)
+    constructor(arg0: TimeZone, arg1: ULocale, arg2: TimeZone)
     constructor(arg0: TimeZone, arg1: Locale)
     constructor(arg0: ULocale)
     constructor(arg0: Date)
@@ -87,13 +88,12 @@ export class ChineseCalendar extends Calendar {
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number, arg7: number)
-    // private epochYear: number;
     // private hasLeapMonthBetweenWinterSolstices: boolean;
     // private newYearCache: CalendarCache;
     // private winterSolsticeCache: CalendarCache;
     // private zoneAstro: TimeZone;
     add(arg0: number, arg1: number): void;
-    // private computeChineseFields(arg0: number, arg1: number, arg2: number, arg3: boolean): void;
+    // private computeMonthInfo(arg0: number, arg1: number): ChineseCalendar$MonthInfo;
     // private daysToMillis(arg0: number): number;
     getActualMaximum(arg0: number): number;
     getFieldResolutionTable(): number[][][];

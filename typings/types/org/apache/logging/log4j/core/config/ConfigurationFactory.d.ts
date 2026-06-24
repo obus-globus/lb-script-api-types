@@ -29,6 +29,7 @@ export abstract class ConfigurationFactory extends ConfigurationBuilderFactory {
     // private substitutor: StrSubstitutor;
     getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI): Configuration;
     getConfiguration(loggerContext: LoggerContext, name: string, configLocation: URI, loader: ClassLoader): Configuration;
+    getConfiguration(loggerContext: LoggerContext, name: string, configLocations: URI[]): Configuration;
     getConfiguration(loggerContext: LoggerContext, source: ConfigurationSource): Configuration;
     getDefaultPrefix(): string;
     getInputFromString(config: string, loader: ClassLoader): ConfigurationSource;

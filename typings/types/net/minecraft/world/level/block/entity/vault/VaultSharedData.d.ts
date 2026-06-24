@@ -1,3 +1,4 @@
+import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { UUID } from '../../../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
@@ -6,6 +7,8 @@ import type { ItemStack } from '../../../../../../../net/minecraft/world/item/It
 import type { VaultConfig } from '../../../../../../../net/minecraft/world/level/block/entity/vault/VaultConfig.d.ts'
 import type { VaultServerData } from '../../../../../../../net/minecraft/world/level/block/entity/vault/VaultServerData.d.ts'
 export class VaultSharedData extends Object {
+    static CODEC: Codec<VaultSharedData>;
+    static TAG_NAME: string;
     constructor()
     constructor(displayItem: ItemStack, connectedPlayers: UUID[], connectedParticlesRange: number)
     // private connectedParticlesRange: number;

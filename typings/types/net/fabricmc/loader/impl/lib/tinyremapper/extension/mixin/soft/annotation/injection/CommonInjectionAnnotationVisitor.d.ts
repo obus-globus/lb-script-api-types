@@ -4,6 +4,7 @@ export class CommonInjectionAnnotationVisitor extends AnnotationVisitor {
     constructor(arg0: CommonData, arg1: AnnotationVisitor, arg2: string[])
     // private data: CommonData;
     // private targets: string[];
+    // private resolveAndRemapMixinRegex(arg0: string): string[];
     visitAnnotation(arg0: string, arg1: string): AnnotationVisitor;
     visitArray(arg0: string): AnnotationVisitor;
 }

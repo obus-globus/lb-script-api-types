@@ -14,7 +14,7 @@ export class CompactCharArray extends Object implements Cloneable {
     // private values: string[];
     // private FindOverlappingPosition(arg0: number, arg1: string[], arg2: number): number;
     // private blockTouched(arg0: number): boolean;
-    clone(): Object;
+    clone(): CompactCharArray;
     protected clone(): Object;
     compact(): void;
     compact(arg0: boolean): void;

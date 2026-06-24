@@ -15,7 +15,7 @@ export class OpenSslPrivateKey extends AbstractReferenceCounted implements Priva
     getFormat(): string;
     isDestroyed(): boolean;
     newKeyMaterial(arg0: number, arg1: X509Certificate[]): OpenSslKeyMaterial;
-    // private privateKeyAddress(): number;
+    privateKeyAddress(): number;
     retain(): OpenSslPrivateKey;
     retain(arg0: number): OpenSslPrivateKey;
     touch(): OpenSslPrivateKey;

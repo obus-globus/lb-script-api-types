@@ -8,6 +8,8 @@ import type { LivingEntity } from '../../../../net/minecraft/world/entity/Living
 export class DebugBrainDump extends Record {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, DebugBrainDump>;
     static takeBrainDump(paramserverLevel: ServerLevel, paramentity: LivingEntity): DebugBrainDump;
+    constructor(name: string, profession: string, xp: number, health: number, maxHealth: number, inventory: string, wantsGolem: boolean, angerLevel: number, activities: string[], behaviors: string[], memories: string[], gossips: string[], pois: BlockPos[], potentialPois: BlockPos[])
+    constructor(input: FriendlyByteBuf)
     // private activities: string[];
     // private angerLevel: number;
     // private behaviors: string[];

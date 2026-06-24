@@ -1,7 +1,8 @@
+import type { SourceInstrumentationHandler } from '../../../../../com/oracle/truffle/api/instrumentation/SourceInstrumentationHandler.d.ts'
 import type { SourceInstrumentationHandler$SourcesNotification } from '../../../../../com/oracle/truffle/api/instrumentation/SourceInstrumentationHandler$SourcesNotification.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SourceInstrumentationHandler$SourcesNotificationQueue extends Object {
-    constructor(null_: SourceInstrumentationHandler$SourcesNotificationQueue)
+    constructor(null_: SourceInstrumentationHandler)
     // private notificationQueue: SourceInstrumentationHandler$SourcesNotification[];
     // private sourcesInitializationRequired: boolean;
     // private valid: boolean;

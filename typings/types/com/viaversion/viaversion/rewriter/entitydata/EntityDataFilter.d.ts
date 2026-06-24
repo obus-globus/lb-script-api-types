@@ -6,6 +6,8 @@ import type { EntityDataHandlerEvent } from '../../../../../com/viaversion/viave
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class EntityDataFilter extends Record {
+    constructor(type: EntityType, filterFamily: boolean, dataType: EntityDataType, index: number, handler: (param0: EntityDataHandlerEvent, param1: EntityData) => void)
+    constructor(arg0: (param0: EntityDataHandlerEvent, param1: EntityData) => void)
     // private dataType: EntityDataType;
     // private filterFamily: boolean;
     // private handler: (param0: EntityDataHandlerEvent, param1: EntityData) => void;

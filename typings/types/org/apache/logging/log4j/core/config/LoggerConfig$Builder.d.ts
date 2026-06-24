@@ -30,7 +30,15 @@ export class LoggerConfig$Builder<B extends LoggerConfig$Builder<B>> extends Obj
     getRefs(): AppenderRef[];
     isAdditivity(): boolean;
     isValid(): boolean;
+    setAdditivity(additivity: boolean): B;
+    setConfig(config: Configuration): B;
     setFilter(filter: Filter): B;
+    setIncludeLocation(includeLocation: string): B;
+    setLevel(level: Level): B;
+    setLevelAndRefs(levelAndRefs: string): B;
+    setLoggerName(loggerName: string): B;
+    setProperties(properties: Property[]): B;
+    setRefs(refs: AppenderRef[]): B;
     withAdditivity(additivity: boolean): B;
     withConfig(config: Configuration): B;
     withFilter(filter: Filter): B;

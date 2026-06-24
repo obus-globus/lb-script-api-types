@@ -4,7 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PermissionLevel } from '../../../../../net/minecraft/server/permissions/PermissionLevel.d.ts'
 import type { NameAndId } from '../../../../../net/minecraft/server/players/NameAndId.d.ts'
 export class OperatorService$Op extends Record {
-    constructor(user: NameAndId, permissionLevel: Optional<PermissionLevel>, bypassesPlayerLimit: Optional<boolean>)
+    private constructor(user: NameAndId, permissionLevel: Optional<PermissionLevel>, bypassesPlayerLimit: Optional<boolean>)
     // private bypassesPlayerLimit: Optional<boolean>;
     // private permissionLevel: Optional<PermissionLevel>;
     // private user: NameAndId;

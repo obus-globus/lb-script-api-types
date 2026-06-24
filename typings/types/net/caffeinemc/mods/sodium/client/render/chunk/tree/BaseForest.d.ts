@@ -2,7 +2,7 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { RenderSection } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/RenderSection.d.ts'
 import type { Forest } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/tree/Forest.d.ts'
 import type { Tree } from '../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/tree/Tree.d.ts'
-export abstract class BaseForest<T extends Tree> extends Object implements Forest {
+export abstract class BaseForest<T extends Tree> extends Object implements Forest<T> {
     constructor(arg0: number, arg1: number, arg2: number, arg3: number)
     // private baseOffsetX: number;
     // private baseOffsetY: number;
@@ -10,7 +10,6 @@ export abstract class BaseForest<T extends Tree> extends Object implements Fores
     // private buildDistance: number;
     add(arg0: number, arg1: number, arg2: number): void;
     add(arg0: RenderSection): void;
-    getPresence(arg0: number, arg1: number, arg2: number): number;
     isSectionPresent(arg0: number, arg1: number, arg2: number): boolean;
     makeTree(arg0: number, arg1: number, arg2: number): T;
 }

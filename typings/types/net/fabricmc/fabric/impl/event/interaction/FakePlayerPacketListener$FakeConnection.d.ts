@@ -1,3 +1,4 @@
+import type { Channel } from '../../../../../../io/netty/channel/Channel.d.ts'
 import type { ChannelFuture } from '../../../../../../io/netty/channel/ChannelFuture.d.ts'
 import type { ChannelHandler } from '../../../../../../io/netty/channel/ChannelHandler.d.ts'
 import type { InetSocketAddress } from '../../../../../../java/net/InetSocketAddress.d.ts'
@@ -19,5 +20,6 @@ export class FakePlayerPacketListener$FakeConnection extends Connection {
     static connect(paramaddress: InetSocketAddress, parameventLoopGroupHolder: EventLoopGroupHolder, paramconnection: Connection): ChannelFuture;
     static connectToLocalServer(paramaddress: SocketAddress): Connection;
     static connectToServer(paramaddress: InetSocketAddress, parameventLoopGroupHolder: EventLoopGroupHolder, parambandwidthLogger: LocalSampleLogger): Connection;
+    static fromChannel(paramchannel: Channel, paramflow: PacketFlow, parambandwidthLogger: LocalSampleLogger): Connection;
     private constructor()
 }

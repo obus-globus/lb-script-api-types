@@ -10,7 +10,7 @@ import type { SkyLightSectionStorage$SkyDataLayerStorageMap } from '../../../../
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class SkyLightEngine extends LightEngine<SkyLightSectionStorage$SkyDataLayerStorageMap, SkyLightSectionStorage> {
     static MAX_LEVEL: number;
-    static getLightBlockInto(paramfromState: BlockState, paramtoState: BlockState, paramdirection: Direction, paramsimpleOpacity: number): number;
+    static getLightDampeningInto(paramfromState: BlockState, paramtoState: BlockState, paramdirection: Direction, paramsimpleOpacity: number): number;
     static getOcclusionShape(paramstate: BlockState, paramdirection: Direction): VoxelShape;
     static hasDifferentLightProperties(paramoldState: BlockState, paramnewState: BlockState): boolean;
     constructor(chunkSource: LightChunkGetter)

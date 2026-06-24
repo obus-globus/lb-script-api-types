@@ -1,7 +1,6 @@
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
-import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { IntFunction } from '../../../java/util/function/IntFunction.d.ts'
 import type { IntSupplier } from '../../../java/util/function/IntSupplier.d.ts'
@@ -12,11 +11,13 @@ import type { OptionInstance$IntRangeBase } from '../../../net/minecraft/client/
 import type { OptionInstance$SliderableOrCyclableValueSet } from '../../../net/minecraft/client/OptionInstance$SliderableOrCyclableValueSet.d.ts'
 import type { OptionInstance$SliderableValueSet } from '../../../net/minecraft/client/OptionInstance$SliderableValueSet.d.ts'
 import type { OptionInstance$TooltipSupplier } from '../../../net/minecraft/client/OptionInstance$TooltipSupplier.d.ts'
+import type { OptionInstance$ValueUpdateListener } from '../../../net/minecraft/client/OptionInstance$ValueUpdateListener.d.ts'
 import type { Options } from '../../../net/minecraft/client/Options.d.ts'
 import type { AbstractWidget } from '../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
 import type { CycleButton$ValueListSupplier } from '../../../net/minecraft/client/gui/components/CycleButton$ValueListSupplier.d.ts'
 import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 export class OptionInstance$ClampingLazyMaxIntRange extends Record implements OptionInstance$IntRangeBase, OptionInstance$SliderableOrCyclableValueSet<number> {
+    constructor(minInclusive: number, maxSupplier: () => number, encodableMaxInclusive: number)
     // private encodableMaxInclusive: number;
     // private maxSupplier: () => number;
     // private minInclusive: number;

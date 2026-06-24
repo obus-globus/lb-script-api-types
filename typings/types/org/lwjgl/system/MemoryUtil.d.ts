@@ -1,4 +1,3 @@
-import type { MemorySegment } from '../../../java/lang/foreign/MemorySegment.d.ts'
 import type { Buffer } from '../../../java/nio/Buffer.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { CharBuffer } from '../../../java/nio/CharBuffer.d.ts'
@@ -208,31 +207,15 @@ export class MemoryUtil extends Object {
     static memFree(paramarg0: LongBuffer): void;
     static memFree(paramarg0: ShortBuffer): void;
     static memFree(paramarg0: CustomBuffer<any>): void;
-    static memGetAddress(paramarg0: MemorySegment, paramarg1: number): number;
     static memGetAddress(paramarg0: number): number;
-    static memGetAddressAtIndex(paramarg0: MemorySegment, paramarg1: number): number;
-    static memGetBoolean(paramarg0: MemorySegment, paramarg1: number): boolean;
     static memGetBoolean(paramarg0: number): boolean;
-    static memGetByte(paramarg0: MemorySegment, paramarg1: number): number;
     static memGetByte(paramarg0: number): number;
-    static memGetCLong(paramarg0: MemorySegment, paramarg1: number): number;
     static memGetCLong(paramarg0: number): number;
-    static memGetCLongAtIndex(paramarg0: MemorySegment, paramarg1: number): number;
-    static memGetDouble(paramarg0: MemorySegment, paramarg1: number): number;
     static memGetDouble(paramarg0: number): number;
-    static memGetDoubleAtIndex(paramarg0: MemorySegment, paramarg1: number): number;
-    static memGetFloat(paramarg0: MemorySegment, paramarg1: number): number;
     static memGetFloat(paramarg0: number): number;
-    static memGetFloatAtIndex(paramarg0: MemorySegment, paramarg1: number): number;
-    static memGetInt(paramarg0: MemorySegment, paramarg1: number): number;
     static memGetInt(paramarg0: number): number;
-    static memGetIntAtIndex(paramarg0: MemorySegment, paramarg1: number): number;
-    static memGetLong(paramarg0: MemorySegment, paramarg1: number): number;
     static memGetLong(paramarg0: number): number;
-    static memGetLongAtIndex(paramarg0: MemorySegment, paramarg1: number): number;
-    static memGetShort(paramarg0: MemorySegment, paramarg1: number): number;
     static memGetShort(paramarg0: number): number;
-    static memGetShortAtIndex(paramarg0: MemorySegment, paramarg1: number): number;
     static memGlobalRefToObject(paramarg0: number): Object | null;
     static memIntBuffer(paramarg0: number, paramarg1: number): IntBuffer;
     static memIntBufferSafe(paramarg0: number, paramarg1: number): IntBuffer;
@@ -245,29 +228,14 @@ export class MemoryUtil extends Object {
     static memLongBufferSafe(paramarg0: number, paramarg1: number): LongBuffer;
     static memPointerBuffer(paramarg0: number, paramarg1: number): PointerBuffer;
     static memPointerBufferSafe(paramarg0: number, paramarg1: number): PointerBuffer;
-    static memPutAddress(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
     static memPutAddress(paramarg0: number, paramarg1: number): void;
-    static memPutAddressAtIndex(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
-    static memPutByte(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
     static memPutByte(paramarg0: number, paramarg1: number): void;
-    static memPutCLong(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
     static memPutCLong(paramarg0: number, paramarg1: number): void;
-    static memPutCLongAtIndex(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
-    static memPutDouble(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
     static memPutDouble(paramarg0: number, paramarg1: number): void;
-    static memPutDoubleAtIndex(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
-    static memPutFloat(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
     static memPutFloat(paramarg0: number, paramarg1: number): void;
-    static memPutFloatAtIndex(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
-    static memPutInt(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
     static memPutInt(paramarg0: number, paramarg1: number): void;
-    static memPutIntAtIndex(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
-    static memPutLong(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
     static memPutLong(paramarg0: number, paramarg1: number): void;
-    static memPutLongAtIndex(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
-    static memPutShort(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
     static memPutShort(paramarg0: number, paramarg1: number): void;
-    static memPutShortAtIndex(paramarg0: MemorySegment, paramarg1: number, paramarg2: number): void;
     static memRealloc(paramarg0: ByteBuffer, paramarg1: number): ByteBuffer;
     static memRealloc(paramarg0: DoubleBuffer, paramarg1: number): DoubleBuffer;
     static memRealloc(paramarg0: FloatBuffer, paramarg1: number): FloatBuffer;

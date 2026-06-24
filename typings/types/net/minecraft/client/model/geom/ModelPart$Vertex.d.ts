@@ -2,6 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ModelPart$Vertex extends Record {
     static SCALE_FACTOR: number;
+    constructor(x: number, y: number, z: number, u: number, v: number)
     // private u: number;
     // private v: number;
     // private x: number;

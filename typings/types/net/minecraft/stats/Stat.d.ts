@@ -4,6 +4,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { RegistryFriendlyByteBuf } from '../../../net/minecraft/network/RegistryFriendlyByteBuf.d.ts'
 import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { StatFormatter } from '../../../net/minecraft/stats/StatFormatter.d.ts'
+import type { TeamColor } from '../../../net/minecraft/world/scores/TeamColor.d.ts'
 import type { ObjectiveCriteria } from '../../../net/minecraft/world/scores/criteria/ObjectiveCriteria.d.ts'
 import type { ObjectiveCriteria$RenderType } from '../../../net/minecraft/world/scores/criteria/ObjectiveCriteria$RenderType.d.ts'
 export class Stat<T extends unknown> extends ObjectiveCriteria {
@@ -15,12 +16,12 @@ export class Stat<T extends unknown> extends ObjectiveCriteria {
     static EXPERIENCE: ObjectiveCriteria;
     static FOOD: ObjectiveCriteria;
     static HEALTH: ObjectiveCriteria;
-    static KILLED_BY_TEAM: (Object | null)[];
+    static KILLED_BY_TEAM: { [key in TeamColor]: ObjectiveCriteria };
     static KILL_COUNT_ALL: ObjectiveCriteria;
     static KILL_COUNT_PLAYERS: ObjectiveCriteria;
     static LEVEL: ObjectiveCriteria;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Stat<Object>>;
-    static TEAM_KILL: (Object | null)[];
+    static TEAM_KILL: { [key in TeamColor]: ObjectiveCriteria };
     static TRIGGER: ObjectiveCriteria;
     static buildName(paramtype: Stat<Object>[], paramvalue: Object | null): string;
     static byName(paramname: string): Optional<ObjectiveCriteria>;

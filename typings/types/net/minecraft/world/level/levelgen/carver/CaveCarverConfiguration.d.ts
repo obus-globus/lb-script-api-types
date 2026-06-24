@@ -17,7 +17,7 @@ export class CaveCarverConfiguration extends CarverConfiguration {
     constructor(probability: number, y: HeightProvider, yScale: FloatProvider, lavaLevel: VerticalAnchor, replaceable: Holder<Block>[], horizontalRadiusMultiplier: FloatProvider, verticalRadiusMultiplier: FloatProvider, floorLevel: FloatProvider)
     constructor(probability: number, y: HeightProvider, yScale: FloatProvider, lavaLevel: VerticalAnchor, debugSettings: CarverDebugSettings, replaceable: Holder<Block>[], horizontalRadiusMultiplier: FloatProvider, verticalRadiusMultiplier: FloatProvider, floorLevel: FloatProvider)
     constructor(carver: CarverConfiguration, horizontalRadiusMultiplier: FloatProvider, verticalRadiusMultiplier: FloatProvider, floorLevel: FloatProvider)
-    // private floorLevel: FloatProvider;
+    floorLevel: FloatProvider;
     horizontalRadiusMultiplier: FloatProvider;
     verticalRadiusMultiplier: FloatProvider;
 }

@@ -1,18 +1,15 @@
+import type { GpuFormat } from '../../../../com/mojang/blaze3d/GpuFormat.d.ts'
+import type { IndexType } from '../../../../com/mojang/blaze3d/IndexType.d.ts'
+import type { PrimitiveTopology } from '../../../../com/mojang/blaze3d/PrimitiveTopology.d.ts'
+import type { BlendFactor } from '../../../../com/mojang/blaze3d/platform/BlendFactor.d.ts'
+import type { BlendOp } from '../../../../com/mojang/blaze3d/platform/BlendOp.d.ts'
 import type { CompareOp } from '../../../../com/mojang/blaze3d/platform/CompareOp.d.ts'
-import type { DestFactor } from '../../../../com/mojang/blaze3d/platform/DestFactor.d.ts'
-import type { NativeImage$Format } from '../../../../com/mojang/blaze3d/platform/NativeImage$Format.d.ts'
 import type { PolygonMode } from '../../../../com/mojang/blaze3d/platform/PolygonMode.d.ts'
-import type { SourceFactor } from '../../../../com/mojang/blaze3d/platform/SourceFactor.d.ts'
 import type { ShaderType } from '../../../../com/mojang/blaze3d/shaders/ShaderType.d.ts'
 import type { AddressMode } from '../../../../com/mojang/blaze3d/textures/AddressMode.d.ts'
-import type { TextureFormat } from '../../../../com/mojang/blaze3d/textures/TextureFormat.d.ts'
-import type { VertexFormat$IndexType } from '../../../../com/mojang/blaze3d/vertex/VertexFormat$IndexType.d.ts'
-import type { VertexFormat$Mode } from '../../../../com/mojang/blaze3d/vertex/VertexFormat$Mode.d.ts'
-import type { VertexFormatElement$Type } from '../../../../com/mojang/blaze3d/vertex/VertexFormatElement$Type.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class GlConst extends Object {
     static CUBEMAP_TARGETS: number[];
-    static GL_ALPHA_BIAS: number;
     static GL_ALWAYS: number;
     static GL_ARRAY_BUFFER: number;
     static GL_BGR: number;
@@ -28,7 +25,6 @@ export class GlConst extends Object {
     static GL_DEPTH_COMPONENT: number;
     static GL_DEPTH_COMPONENT24: number;
     static GL_DEPTH_COMPONENT32: number;
-    static GL_DEPTH_TEXTURE_MODE: number;
     static GL_DRAW_FRAMEBUFFER: number;
     static GL_DST_ALPHA: number;
     static GL_DST_COLOR: number;
@@ -137,18 +133,19 @@ export class GlConst extends Object {
     static GL_ZERO: number;
     static bufferUsageToGlEnum(paramusage: number): number;
     static bufferUsageToGlFlag(paramusage: number): number;
+    static glFormatChannelCount(paramglExternalID: number): number;
+    static isFormatNormalized(paramgpuFormat: GpuFormat): boolean;
+    static isGlFormatInteger(paramglExternalID: number): boolean;
+    static toGl(paramindexType: IndexType): number;
+    static toGl(paramprimitiveTopology: PrimitiveTopology): number;
+    static toGl(paramblendFactor: BlendFactor): number;
+    static toGl(paramblendOp: BlendOp): number;
     static toGl(paramcompareOp: CompareOp): number;
-    static toGl(paramdestFactor: DestFactor): number;
-    static toGl(paramformat: NativeImage$Format): number;
     static toGl(parampolygonMode: PolygonMode): number;
-    static toGl(paramsourceFactor: SourceFactor): number;
     static toGl(paramtype: ShaderType): number;
     static toGl(paramaddressMode: AddressMode): number;
-    static toGl(paramindexType: VertexFormat$IndexType): number;
-    static toGl(parammode: VertexFormat$Mode): number;
-    static toGl(paramtype: VertexFormatElement$Type): number;
-    static toGlExternalId(paramtextureFormat: TextureFormat): number;
-    static toGlInternalId(paramtextureFormat: TextureFormat): number;
-    static toGlType(paramtextureFormat: TextureFormat): number;
+    static toGlExternalId(paramgpuFormat: GpuFormat): number;
+    static toGlInternalId(paramgpuFormat: GpuFormat): number;
+    static toGlType(paramgpuFormat: GpuFormat): number;
     constructor()
 }

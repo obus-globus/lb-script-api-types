@@ -9,6 +9,7 @@ import type { FabricEntityTypeImpl$Builder$Living } from '../../../../net/fabric
 import type { FabricEntityTypeImpl$Builder$Mob } from '../../../../net/fabricmc/fabric/impl/object/builder/FabricEntityTypeImpl$Builder$Mob.d.ts'
 import type { DependantName } from '../../../../net/minecraft/resources/DependantName.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { TagKey } from '../../../../net/minecraft/tags/TagKey.d.ts'
 import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityAttachment } from '../../../../net/minecraft/world/entity/EntityAttachment.d.ts'
 import type { EntityAttachments$Builder } from '../../../../net/minecraft/world/entity/EntityAttachments$Builder.d.ts'
@@ -43,7 +44,7 @@ export class EntityType$Builder<T extends Entity> extends Object implements Fabr
     // private dimensions: EntityDimensions;
     // private factory: (param0: EntityType<T>, param1: Level) => T;
     // private fireImmune: boolean;
-    // private immuneTo: Block[];
+    // private immuneTo: TagKey<Block>;
     // private livingBuilder: FabricEntityTypeImpl$Builder$Living<LivingEntity>;
     // private lootTable: (param0: ResourceKey<EntityType<any>>) => Optional<ResourceKey<LootTable>>;
     // private mobBuilder: FabricEntityTypeImpl$Builder$Mob<Mob>;
@@ -65,7 +66,7 @@ export class EntityType$Builder<T extends Entity> extends Object implements Fabr
     fabric_setLivingEntityBuilder(arg0: FabricEntityTypeImpl$Builder$Living<LivingEntity>): void;
     fabric_setMobEntityBuilder(arg0: FabricEntityTypeImpl$Builder$Mob<Mob>): void;
     fireImmune(): EntityType$Builder<T>;
-    immuneTo(blocks: Block[]): EntityType$Builder<T>;
+    immuneTo(tag: TagKey<Block>): EntityType$Builder<T>;
     nameTagOffset(nameTagOffset: number): EntityType$Builder<T>;
     noLootTable(): EntityType$Builder<T>;
     noSave(): EntityType$Builder<T>;

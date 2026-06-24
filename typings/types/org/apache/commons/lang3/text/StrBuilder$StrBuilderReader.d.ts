@@ -1,10 +1,11 @@
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { CharBuffer } from '../../../../../java/nio/CharBuffer.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
+import type { StrBuilder } from '../../../../../org/apache/commons/lang3/text/StrBuilder.d.ts'
 export class StrBuilder$StrBuilderReader extends Reader {
     static nullReader(): Reader;
     static of(paramarg0: CharSequence): Reader;
-    constructor(null_: StrBuilder$StrBuilderReader)
+    constructor(null_: StrBuilder)
     // private mark: number;
     // private pos: number;
     close(): void;

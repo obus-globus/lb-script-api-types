@@ -4,6 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { LevelData$RespawnData } from '../../../../net/minecraft/world/level/storage/LevelData$RespawnData.d.ts'
 export class ServerPlayer$RespawnConfig extends Record {
     static CODEC: Codec<ServerPlayer$RespawnConfig>;
+    constructor(respawnData: LevelData$RespawnData, forced: boolean)
     // private forced: boolean;
     // private respawnData: LevelData$RespawnData;
     equals(o: Object | null): boolean;

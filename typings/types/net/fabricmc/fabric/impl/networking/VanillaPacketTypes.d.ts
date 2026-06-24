@@ -8,6 +8,7 @@ export class VanillaPacketTypes extends Record {
     static PLAY_C2S: VanillaPacketTypes;
     static PLAY_S2C: VanillaPacketTypes;
     static get(paramarg0: ProtocolInfo<any>): VanillaPacketTypes;
+    constructor(types: PacketType<any>[])
     // private types: PacketType<any>[];
     equals(arg0: Object | null): boolean;
     get(arg0: number): PacketType<any>;

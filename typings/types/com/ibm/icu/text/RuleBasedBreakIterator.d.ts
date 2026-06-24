@@ -12,7 +12,8 @@ import type { CharacterIterator } from '../../../../java/text/CharacterIterator.
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
-export class RuleBasedBreakIterator extends BreakIterator {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class RuleBasedBreakIterator extends BreakIterator implements Cloneable {
     static DONE: number;
     static KIND_CHARACTER: number;
     static KIND_LINE: number;
@@ -66,7 +67,8 @@ export class RuleBasedBreakIterator extends BreakIterator {
     fRData: RBBIDataWrapper;
     // private fRuleStatusIndex: number;
     // private fText: CharacterIterator;
-    clone(): Object;
+    clone(): RuleBasedBreakIterator;
+    protected clone(): Object;
     current(): number;
     dump(arg0: PrintStream): void;
     equals(arg0: Object | null): boolean;

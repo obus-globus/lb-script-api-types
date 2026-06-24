@@ -18,6 +18,7 @@ export class AbstractTypeChecker extends Object {
     // private completeIsSubTypeOf(arg0: TypeCheckerState, arg1: TypeSystemContext, arg2: KotlinTypeMarker, arg3: KotlinTypeMarker, arg4: boolean): boolean;
     effectiveVariance(arg0: TypeVariance, arg1: TypeVariance): TypeVariance;
     equalTypes(arg0: TypeCheckerState, arg1: KotlinTypeMarker, arg2: KotlinTypeMarker): boolean;
+    // private filterOutEquivalentSupertypesWithSameConstructor(arg0: TypeCheckerState, arg1: TypeSystemContext, arg2: RigidTypeMarker[]): RigidTypeMarker[];
     findCorrespondingSupertypes(arg0: TypeCheckerState, arg1: RigidTypeMarker, arg2: TypeConstructorMarker): RigidTypeMarker[];
     findCorrespondingSupertypes(arg0: TypeCheckerState, arg1: TypeSystemContext, arg2: RigidTypeMarker, arg3: TypeConstructorMarker): RigidTypeMarker[];
     // private getTypeParameterForArgumentInBaseIfItEqualToTarget(arg0: TypeSystemContext, arg1: KotlinTypeMarker, arg2: KotlinTypeMarker): TypeParameterMarker;
@@ -25,6 +26,7 @@ export class AbstractTypeChecker extends Object {
     // private isCommonDenotableType(arg0: TypeSystemContext, arg1: KotlinTypeMarker): boolean;
     // private isStubTypeSubtypeOfAnother(arg0: TypeSystemContext, arg1: RigidTypeMarker, arg2: RigidTypeMarker): boolean;
     isSubtypeForSameConstructor(arg0: TypeCheckerState, arg1: TypeSystemContext, arg2: TypeArgumentListMarker, arg3: RigidTypeMarker): boolean;
+    // private isSubtypeForSameConstructorWithIntersectedTypeArguments(arg0: TypeSystemContext, arg1: TypeCheckerState, arg2: RigidTypeMarker, arg3: RigidTypeMarker, arg4: TypeConstructorMarker, arg5: RigidTypeMarker[]): boolean;
     isSubtypeOf(arg0: TypeCheckerState, arg1: KotlinTypeMarker, arg2: KotlinTypeMarker): boolean;
     isSubtypeOf(arg0: TypeCheckerState, arg1: KotlinTypeMarker, arg2: KotlinTypeMarker, arg3: boolean): boolean;
     // private isSubtypeOfForSingleClassifierType(arg0: TypeCheckerState, arg1: TypeSystemContext, arg2: RigidTypeMarker, arg3: RigidTypeMarker): boolean;

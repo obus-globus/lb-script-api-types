@@ -8,6 +8,7 @@ export class GuiMessageTag extends Record {
     static chatNotSecure(): GuiMessageTag;
     static system(): GuiMessageTag;
     static systemSinglePlayer(): GuiMessageTag;
+    constructor(indicatorColor: number, icon: GuiMessageTag$Icon, text: Component, logTag: string)
     // private icon: GuiMessageTag$Icon;
     // private indicatorColor: number;
     // private logTag: string;

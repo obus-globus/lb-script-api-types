@@ -6,8 +6,6 @@ import type { Supplier } from '../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 import type { Minecraft } from '../../../net/minecraft/client/Minecraft.d.ts'
-import type { OptionInstance } from '../../../net/minecraft/client/OptionInstance.d.ts'
-import type { OptionsSubScreen } from '../../../net/minecraft/client/gui/screens/options/OptionsSubScreen.d.ts'
 import type { StringRepresentable } from '../../../net/minecraft/util/StringRepresentable.d.ts'
 import type { StringRepresentable$EnumCodec } from '../../../net/minecraft/util/StringRepresentable$EnumCodec.d.ts'
 export class GraphicsPreset extends Enum<GraphicsPreset> implements StringRepresentable {
@@ -32,6 +30,5 @@ export class GraphicsPreset extends Enum<GraphicsPreset> implements StringRepres
     apply(minecraft: Minecraft): void;
     getKey(): string;
     getSerializedName(): string;
-    set<T extends unknown>(screen: OptionsSubScreen, option: OptionInstance<T>, value: T): void;
     name(): "FAST" | "FANCY" | "FABULOUS" | "CUSTOM";
 }

@@ -3,7 +3,7 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../../java/util/Iterator.d.ts'
 export class StateSetImpl$StateSetIterator extends Object implements Iterator<S> {
-    private constructor(null_: StateSetImpl$StateSetIterator, intIterator: PrimitiveIterator$OfInt)
+    private constructor(null_: (Object | null)[], intIterator: PrimitiveIterator$OfInt)
     // private intIterator: PrimitiveIterator$OfInt;
     forEachRemaining<S extends unknown>(arg0: (param0: S) => void): void;
     hasNext(): boolean;

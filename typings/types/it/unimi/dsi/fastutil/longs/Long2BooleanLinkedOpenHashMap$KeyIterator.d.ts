@@ -2,8 +2,8 @@ import type { Long2BooleanLinkedOpenHashMap$MapIterator } from '../../../../../i
 import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/longs/LongListIterator.d.ts'
 import type { LongConsumer } from '../../../../../java/util/function/LongConsumer.d.ts'
 export class Long2BooleanLinkedOpenHashMap$KeyIterator extends Long2BooleanLinkedOpenHashMap$MapIterator<(param0: number) => void> implements LongListIterator {
-    constructor(null_: Long2BooleanLinkedOpenHashMap$KeyIterator)
-    constructor(null_: Long2BooleanLinkedOpenHashMap$KeyIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

@@ -11,8 +11,8 @@ export class Long2LongOpenCustomHashMap$EntrySpliterator extends Long2LongOpenCu
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Long2LongOpenCustomHashMap$EntrySpliterator)
-    constructor(null_: Long2LongOpenCustomHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: Long2LongMap$Entry) => void, arg1: number): void;
     characteristics(): number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Long2LongOpenCustomHashMap$EntrySpliterator;

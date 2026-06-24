@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { Annotated } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/Annotated.d.ts'
 import type { AnnotationDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/AnnotationDescriptor.d.ts'
 import type { MemberScope } from '../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope.d.ts'
@@ -10,6 +11,7 @@ import type { KotlinTypeRefiner } from '../../../../../../kotlin/reflect/jvm/int
 import type { KotlinTypeMarker } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/KotlinTypeMarker.d.ts'
 export abstract class KotlinType extends Object implements Annotated, KotlinTypeMarker {
     private constructor()
+    constructor(arg0: DefaultConstructorMarker)
     // private cachedHashCode: number;
     // private computeHashCode(): number;
     equals(arg0: Object | null): boolean;

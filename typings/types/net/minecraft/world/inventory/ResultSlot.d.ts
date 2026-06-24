@@ -18,4 +18,5 @@ export class ResultSlot extends Slot {
     onSwapCraft(count: number): void;
     onTake(player: Player, carried: ItemStack): void;
     remove(amount: number): ItemStack;
+    safeClone(player: Player): ItemStack;
 }

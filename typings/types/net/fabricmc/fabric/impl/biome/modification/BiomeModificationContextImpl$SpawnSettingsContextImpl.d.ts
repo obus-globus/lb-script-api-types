@@ -1,13 +1,14 @@
 import type { BiPredicate } from '../../../../../../java/util/function/BiPredicate.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BiomeModificationContext$MobSpawnSettingsContext } from '../../../../../../net/fabricmc/fabric/api/biome/v1/BiomeModificationContext$MobSpawnSettingsContext.d.ts'
+import type { BiomeModificationContextImpl } from '../../../../../../net/fabricmc/fabric/impl/biome/modification/BiomeModificationContextImpl.d.ts'
 import type { Weighted } from '../../../../../../net/minecraft/util/random/Weighted.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { MobCategory } from '../../../../../../net/minecraft/world/entity/MobCategory.d.ts'
 import type { MobSpawnSettings } from '../../../../../../net/minecraft/world/level/biome/MobSpawnSettings.d.ts'
 import type { MobSpawnSettings$SpawnerData } from '../../../../../../net/minecraft/world/level/biome/MobSpawnSettings$SpawnerData.d.ts'
 export class BiomeModificationContextImpl$SpawnSettingsContextImpl extends Object implements BiomeModificationContext$MobSpawnSettingsContext {
-    constructor(null_: BiomeModificationContextImpl$SpawnSettingsContextImpl)
+    constructor(null_: BiomeModificationContextImpl)
     // private fabricSpawners: { [key in MobCategory]: Weighted<MobSpawnSettings$SpawnerData>[] };
     // private spawnSettings: MobSpawnSettings;
     addMobCharge(arg0: EntityType<any>, arg1: number, arg2: number): void;

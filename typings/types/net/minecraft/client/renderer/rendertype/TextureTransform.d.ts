@@ -10,6 +10,6 @@ export class TextureTransform extends Object {
     constructor(name: string, matrix: () => Matrix4f)
     // private name: string;
     // private supplier: () => Matrix4f;
-    getMatrix(): Matrix4f;
+    createMatrix(): Matrix4f;
     toString(): string;
 }

@@ -7,8 +7,8 @@ export class WriteContext extends Object {
     readonly strings: StringTable;
     // private versionRequirements: MutableVersionRequirementTable;
     get(arg0: string): number;
-    getClassName$kotlin_metadata(arg0: string): number;
-    getExtensions$kotlin_metadata(): MetadataExtensions[];
+    getClassName$org_jetbrains_kotlin_kotlin_metadata(arg0: string): number;
+    getExtensions$org_jetbrains_kotlin_kotlin_metadata(): MetadataExtensions[];
     getStrings(): StringTable;
-    getVersionRequirements$kotlin_metadata(): MutableVersionRequirementTable;
+    getVersionRequirements$org_jetbrains_kotlin_kotlin_metadata(): MutableVersionRequirementTable;
 }

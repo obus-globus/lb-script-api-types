@@ -10,6 +10,7 @@ export interface Layout extends Object, LayoutElement {
     getWidth(): number;
     getX(): number;
     getY(): number;
+    removeChildren(): void;
     setPosition(x: number, y: number): void;
     setX(x: number): void;
     setY(y: number): void;

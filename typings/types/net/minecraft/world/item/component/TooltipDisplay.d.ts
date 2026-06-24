@@ -8,6 +8,7 @@ export class TooltipDisplay extends Record {
     static CODEC: Codec<TooltipDisplay>;
     static DEFAULT: TooltipDisplay;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, TooltipDisplay>;
+    constructor(hideTooltip: boolean, hiddenComponents: DataComponentType<Object>[])
     // private hiddenComponents: DataComponentType<Object>[];
     // private hideTooltip: boolean;
     equals(o: Object | null): boolean;

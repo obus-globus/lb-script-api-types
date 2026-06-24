@@ -3,7 +3,7 @@ import type { Short2ObjectOpenCustomHashMap$MapIterator } from '../../../../../i
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ObjectOpenCustomHashMap$ValueIterator extends Short2ObjectOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<V> {
-    constructor(null_: Short2ObjectOpenCustomHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex<V extends unknown>(arg0: (param0: V) => void, arg1: number): void;
     next<V extends unknown>(): V;
     skip(arg0: number): number;

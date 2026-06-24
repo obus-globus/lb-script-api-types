@@ -5,6 +5,7 @@ import type { CraftingInput } from '../../../../../net/minecraft/world/item/craf
 import type { CraftingRecipe } from '../../../../../net/minecraft/world/item/crafting/CraftingRecipe.d.ts'
 import type { RecipeHolder } from '../../../../../net/minecraft/world/item/crafting/RecipeHolder.d.ts'
 export class RecipeCache$Entry extends Record {
+    private constructor(key: ItemStack[], width: number, height: number, value: RecipeHolder<CraftingRecipe>)
     // private height: number;
     // private key: ItemStack[];
     // private value: RecipeHolder<CraftingRecipe>;

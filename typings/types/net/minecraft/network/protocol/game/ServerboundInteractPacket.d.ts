@@ -12,6 +12,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ServerboundInteractPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundInteractPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(entityId: number, hand: InteractionHand, location: Vec3, usingSecondaryAction: boolean)
     // private entityId: number;
     // private hand: InteractionHand;
     // private location: Vec3;

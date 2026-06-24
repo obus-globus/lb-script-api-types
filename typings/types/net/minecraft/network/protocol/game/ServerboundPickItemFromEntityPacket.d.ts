@@ -10,6 +10,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 export class ServerboundPickItemFromEntityPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundPickItemFromEntityPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(id: number, includeData: boolean)
     // private id: number;
     // private includeData: boolean;
     equals(o: Object | null): boolean;

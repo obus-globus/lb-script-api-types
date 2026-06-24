@@ -37,6 +37,7 @@ export class BeaconBlockEntity extends BlockEntity implements MenuProvider, Name
     static parseCustomNameSafe(paraminput: ValueInput, paramname: string): Component;
     static playSound(paramlevel: Level, paramworldPosition: BlockPos, paramevent: SoundEvent): void;
     static tick(paramlevel: Level, parampos: BlockPos, paramselfState: BlockState, paramentity: BeaconBlockEntity): void;
+    static validateEffects(paramprimary: Holder<MobEffect>, paramsecondary: Holder<MobEffect>, paramlevels: number): boolean;
     constructor(worldPosition: BlockPos, blockState: BlockState)
     readonly beamSections: BeaconBeamOwner$Section[];
     // private checkingBeamSections: BeaconBeamOwner$Section[];

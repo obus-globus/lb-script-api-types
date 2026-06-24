@@ -3,6 +3,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ModOptions } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/structure/ModOptions.d.ts'
 import type { Page } from '../../../../../../../net/caffeinemc/mods/sodium/client/config/structure/Page.d.ts'
 export class OptionListWidget$SectionInfo extends Record {
+    private constructor(modOptions: ModOptions, page: Page, startY: number, endY: number, scrollJumpTarget: number)
     // private endY: number;
     // private modOptions: ModOptions;
     // private page: Page;

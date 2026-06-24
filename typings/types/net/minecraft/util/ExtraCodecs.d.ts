@@ -95,6 +95,8 @@ export class ExtraCodecs extends Object {
     static nonEmptyList(paramlistCodec: Codec<(Object | null)[]>): Codec<(Object | null)[]>;
     static nonEmptyMap(parammapCodec: Codec<Object>): Codec<Object>;
     static object2BooleanMap(paramkeyCodec: Codec<Object>): Codec<{ [key: string]: any }>;
+    static optionalAlwaysPresentFieldOf(paramelementCodec: Codec<Object>, paramname: string, paramdefaultValue: Object | null): MapCodec<Object>;
+    static optionalAlwaysPresentFieldOf(paramelementCodec: Codec<Object>, paramname: string, paramdefaultValue: Object | null, paramlenient: boolean): MapCodec<Object>;
     static optionalEmptyMap(paramcodec: Codec<Object>): Codec<Optional<Object>>;
     static orCompressed(paramnormal: Codec<Object>, paramcompressed: Codec<Object>): Codec<Object>;
     static orCompressed(paramnormal: MapCodec<Object>, paramcompressed: MapCodec<Object>): MapCodec<Object>;

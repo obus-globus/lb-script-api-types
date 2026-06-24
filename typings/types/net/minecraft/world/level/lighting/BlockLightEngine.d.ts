@@ -9,7 +9,7 @@ import type { LightEngine } from '../../../../../net/minecraft/world/level/light
 import type { VoxelShape } from '../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export class BlockLightEngine extends LightEngine<BlockLightSectionStorage$BlockDataLayerStorageMap, BlockLightSectionStorage> {
     static MAX_LEVEL: number;
-    static getLightBlockInto(paramfromState: BlockState, paramtoState: BlockState, paramdirection: Direction, paramsimpleOpacity: number): number;
+    static getLightDampeningInto(paramfromState: BlockState, paramtoState: BlockState, paramdirection: Direction, paramsimpleOpacity: number): number;
     static getOcclusionShape(paramstate: BlockState, paramdirection: Direction): VoxelShape;
     static hasDifferentLightProperties(paramoldState: BlockState, paramnewState: BlockState): boolean;
     constructor(chunkSource: LightChunkGetter)

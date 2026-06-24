@@ -1,9 +1,10 @@
 import type { BreakIterator } from '../../../../com/ibm/icu/text/BreakIterator.d.ts'
+import type { SearchIterator } from '../../../../com/ibm/icu/text/SearchIterator.d.ts'
 import type { SearchIterator$ElementComparisonType } from '../../../../com/ibm/icu/text/SearchIterator$ElementComparisonType.d.ts'
 import type { CharacterIterator } from '../../../../java/text/CharacterIterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class SearchIterator$Search extends Object {
-    constructor(null_: SearchIterator$Search)
+    constructor(null_: SearchIterator)
     // private elementComparisonType_: SearchIterator$ElementComparisonType;
     // private internalBreakIter_: BreakIterator;
     // private isCanonicalMatch_: boolean;

@@ -10,6 +10,7 @@ export class ItemBody extends Record implements DialogBody {
     static COMPACT_LIST_CODEC: Codec<DialogBody[]>;
     static DIALOG_BODY_CODEC: Codec<DialogBody>;
     static MAP_CODEC: MapCodec<ItemBody>;
+    constructor(item: ItemStackTemplate, description: Optional<PlainMessage>, showDecorations: boolean, showTooltip: boolean, width: number, height: number)
     // private description: Optional<PlainMessage>;
     // private height: number;
     // private item: ItemStackTemplate;

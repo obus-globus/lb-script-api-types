@@ -10,4 +10,5 @@ export class InternalUnderlyingValOfInlineClass extends Object implements Caller
     // private unboxMethod: Method;
     protected callMethod(instance: Object | null, args: (Object | null)[]): Object | null;
     checkArguments(args: (Object | null)[]): void;
+    checkArguments(argsCount: number): void;
 }

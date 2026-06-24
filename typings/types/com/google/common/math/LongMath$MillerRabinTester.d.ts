@@ -1,3 +1,4 @@
+import type { LongMath$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
@@ -8,6 +9,7 @@ export class LongMath$MillerRabinTester extends Enum<LongMath$MillerRabinTester>
     static valueOf(paramname: string): LongMath$MillerRabinTester;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: LongMath$1)
     mulMod(a: number, b: number, m: number): number;
     // private powMod(a: number, p: number, m: number): number;
     squareMod(a: number, m: number): number;

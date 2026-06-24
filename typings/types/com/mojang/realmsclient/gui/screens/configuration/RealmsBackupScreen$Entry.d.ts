@@ -1,4 +1,5 @@
 import type { Backup } from '../../../../../../com/mojang/realmsclient/dto/Backup.d.ts'
+import type { RealmsBackupScreen } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsBackupScreen.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { AbstractWidget } from '../../../../../../net/minecraft/client/gui/components/AbstractWidget.d.ts'
@@ -9,7 +10,7 @@ import type { NarratableEntry } from '../../../../../../net/minecraft/client/gui
 import type { MutableComponent } from '../../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
 export class RealmsBackupScreen$Entry extends ContainerObjectSelectionList$Entry<RealmsBackupScreen$Entry> {
     static CONTENT_PADDING: number;
-    constructor(null_: RealmsBackupScreen$Entry, backup: Backup)
+    constructor(null_: RealmsBackupScreen, backup: Backup)
     // private backup: Backup;
     // private changesButton: Button;
     // private children: AbstractWidget[];

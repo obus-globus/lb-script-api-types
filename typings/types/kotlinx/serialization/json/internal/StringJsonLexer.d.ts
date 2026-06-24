@@ -1,6 +1,7 @@
+import type { JsonConfiguration } from '../../../../kotlinx/serialization/json/JsonConfiguration.d.ts'
 import type { AbstractJsonLexer } from '../../../../kotlinx/serialization/json/internal/AbstractJsonLexer.d.ts'
 export class StringJsonLexer extends AbstractJsonLexer {
-    constructor(source: string)
+    constructor(source: string, configuration: JsonConfiguration)
     readonly source: string;
     canConsumeValue(): boolean;
     consumeKeyString(): string;

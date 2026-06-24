@@ -10,6 +10,7 @@ export class PlainMessage extends Record implements DialogBody {
     static DEFAULT_WIDTH: number;
     static DIALOG_BODY_CODEC: Codec<DialogBody>;
     static MAP_CODEC: MapCodec<PlainMessage>;
+    constructor(contents: Component, width: number)
     // private contents: Component;
     // private width: number;
     contents(): Component;

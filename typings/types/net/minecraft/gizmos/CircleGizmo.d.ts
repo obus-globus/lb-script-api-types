@@ -5,6 +5,7 @@ import type { GizmoPrimitives } from '../../../net/minecraft/gizmos/GizmoPrimiti
 import type { GizmoStyle } from '../../../net/minecraft/gizmos/GizmoStyle.d.ts'
 import type { Vec3 } from '../../../net/minecraft/world/phys/Vec3.d.ts'
 export class CircleGizmo extends Record implements Gizmo {
+    constructor(pos: Vec3, radius: number, style: GizmoStyle)
     // private pos: Vec3;
     // private radius: number;
     // private style: GizmoStyle;

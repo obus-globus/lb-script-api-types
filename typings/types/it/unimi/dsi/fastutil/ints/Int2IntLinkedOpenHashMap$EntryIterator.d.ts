@@ -4,8 +4,8 @@ import type { Int2IntMap$Entry } from '../../../../../it/unimi/dsi/fastutil/ints
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Int2IntLinkedOpenHashMap$EntryIterator extends Int2IntLinkedOpenHashMap$MapIterator<(param0: Int2IntMap$Entry) => void> implements ObjectListIterator<Int2IntMap$Entry> {
-    constructor(null_: Int2IntLinkedOpenHashMap$EntryIterator)
-    constructor(null_: Int2IntLinkedOpenHashMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Int2IntLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Int2IntMap$Entry) => void, arg1: number): void;
     add(arg0: Int2IntMap$Entry): void;

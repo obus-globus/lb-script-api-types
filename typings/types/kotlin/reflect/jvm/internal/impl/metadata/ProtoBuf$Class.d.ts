@@ -1,3 +1,4 @@
+import type { ProtoBuf$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -34,6 +35,8 @@ export class ProtoBuf$Class extends GeneratedMessageLite$ExtendableMessage<Proto
     static parseFrom(paramarg0: InputStream, paramarg1: ExtensionRegistryLite): ProtoBuf$Class;
     private constructor(arg0: boolean)
     private constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite)
+    constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite, arg2: ProtoBuf$1)
+    constructor(arg0: GeneratedMessageLite$ExtendableBuilder<GeneratedMessageLite$ExtendableMessage<any>, GeneratedMessageLite$ExtendableBuilder<any, any>>, arg1: ProtoBuf$1)
     private constructor(arg0: GeneratedMessageLite$ExtendableBuilder<ProtoBuf$Class, any>)
     // private annotation_: ProtoBuf$Annotation[];
     // private bitField0_: number;
@@ -72,6 +75,7 @@ export class ProtoBuf$Class extends GeneratedMessageLite$ExtendableMessage<Proto
     getCompanionObjectName(): number;
     getCompilerPluginData(arg0: number): ProtoBuf$CompilerPluginData;
     getCompilerPluginDataCount(): number;
+    getCompilerPluginDataList(): ProtoBuf$CompilerPluginData[];
     getConstructor(arg0: number): ProtoBuf$Constructor;
     getConstructorCount(): number;
     getConstructorList(): ProtoBuf$Constructor[];

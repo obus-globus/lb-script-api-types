@@ -9,6 +9,7 @@ import type { AttributeModifier } from '../../../../../net/minecraft/world/entit
 export class ClientboundUpdateAttributesPacket$AttributeSnapshot extends Record {
     static MODIFIER_STREAM_CODEC: StreamCodec<ByteBuf, AttributeModifier>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundUpdateAttributesPacket$AttributeSnapshot>;
+    constructor(attribute: Holder<Attribute>, base: number, modifiers: AttributeModifier[])
     // private attribute: Holder<Attribute>;
     // private base: number;
     // private modifiers: AttributeModifier[];

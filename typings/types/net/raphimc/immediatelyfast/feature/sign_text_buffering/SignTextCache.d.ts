@@ -13,8 +13,6 @@ import type { SignAtlasRenderTarget } from '../../../../../net/raphimc/immediate
 import type { SignAtlasRenderTarget$Slot } from '../../../../../net/raphimc/immediatelyfast/feature/sign_text_buffering/SignAtlasRenderTarget$Slot.d.ts'
 export class SignTextCache extends Object implements ResourceManagerReloadListener {
     constructor()
-    lockFramebuffer: boolean;
-    lockViewport: boolean;
     renderType: RenderType;
     signAtlasRenderTarget: SignAtlasRenderTarget;
     signProjectionMatrix: GpuBufferSlice;

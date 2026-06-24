@@ -2,7 +2,7 @@ import type { Float2ShortLinkedOpenHashMap$MapIterator } from '../../../../../it
 import type { ShortConsumer } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortConsumer.d.ts'
 import type { ShortListIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortListIterator.d.ts'
 export class Float2ShortLinkedOpenHashMap$ValueIterator extends Float2ShortLinkedOpenHashMap$MapIterator<(param0: number) => void> implements ShortListIterator {
-    constructor(null_: Float2ShortLinkedOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

@@ -20,6 +20,8 @@ export class MiscOverworldFeatures extends Object {
     static SPRING_LAVA_FROZEN: ResourceKey<ConfiguredFeature<any, any>>;
     static SPRING_LAVA_OVERWORLD: ResourceKey<ConfiguredFeature<any, any>>;
     static SPRING_WATER: ResourceKey<ConfiguredFeature<any, any>>;
+    static SULFUR_POOL: ResourceKey<ConfiguredFeature<any, any>>;
+    static SULFUR_SPRING: ResourceKey<ConfiguredFeature<any, any>>;
     static VOID_START_PLATFORM: ResourceKey<ConfiguredFeature<any, any>>;
     static bootstrap(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>): void;
     constructor()

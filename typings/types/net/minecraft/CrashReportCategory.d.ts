@@ -8,7 +8,6 @@ import type { BlockPos } from '../../net/minecraft/core/BlockPos.d.ts'
 import type { LevelHeightAccessor } from '../../net/minecraft/world/level/LevelHeightAccessor.d.ts'
 import type { BlockState } from '../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class CrashReportCategory extends Object {
-    static formatLocation(paramx: number, paramy: number, paramz: number): string;
     static formatLocation(paramlevelHeightAccessor: LevelHeightAccessor, paramx: number, paramy: number, paramz: number): string;
     static formatLocation(paramlevelHeightAccessor: LevelHeightAccessor, paramx: number, paramy: number, paramz: number): string;
     static formatLocation(paramlevelHeightAccessor: LevelHeightAccessor, parampos: BlockPos): string;
@@ -24,6 +23,5 @@ export class CrashReportCategory extends Object {
     setDetail(key: string, value: Object): CrashReportCategory;
     setDetail(key: string, callback: CrashReportDetail<string>): CrashReportCategory;
     setDetailError(key: string, t: Throwable): void;
-    trimStacktrace(length: number): void;
     validateStackTrace(source: StackTraceElement, next: StackTraceElement): boolean;
 }

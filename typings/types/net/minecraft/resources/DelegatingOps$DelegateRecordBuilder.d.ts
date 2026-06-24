@@ -5,8 +5,9 @@ import type { Lifecycle } from '../../../com/mojang/serialization/Lifecycle.d.ts
 import type { RecordBuilder } from '../../../com/mojang/serialization/RecordBuilder.d.ts'
 import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { DelegatingOps } from '../../../net/minecraft/resources/DelegatingOps.d.ts'
 export class DelegatingOps$DelegateRecordBuilder extends Object implements RecordBuilder<T> {
-    constructor(null_: DelegatingOps$DelegateRecordBuilder)
+    constructor(null_: DelegatingOps<T>, original: RecordBuilder<T>)
     // private original: RecordBuilder<T>;
     add<T extends unknown, E extends unknown>(arg0: string, arg1: E, arg2: Encoder<E>): RecordBuilder<T>;
     add<T extends unknown>(arg0: string, arg1: T): RecordBuilder<T>;

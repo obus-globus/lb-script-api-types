@@ -44,5 +44,5 @@ export class BlockEntityRenderDispatcher extends Object implements FabricResourc
     prepare(cameraPos: Vec3): void;
     reload(currentReload: PreparableReloadListener$SharedState, taskExecutor: Executor, preparationBarrier: (param0: Object | null) => CompletableFuture<Object>, reloadExecutor: Executor): CompletableFuture<void>;
     submit<S extends BlockEntityRenderState>(state: S, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, camera: CameraRenderState): void;
-    tryExtractRenderState<S extends BlockEntityRenderState, E extends BlockEntity>(blockEntity: E, partialTicks: number, breakProgress: ModelFeatureRenderer$CrumblingOverlay): S;
+    tryExtractRenderState<S extends BlockEntityRenderState, E extends BlockEntity>(blockEntity: E, partialTicks: number, breakProgress: ModelFeatureRenderer$CrumblingOverlay, isGloballyRendered: boolean): S;
 }

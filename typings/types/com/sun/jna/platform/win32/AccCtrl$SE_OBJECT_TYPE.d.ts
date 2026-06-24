@@ -1,3 +1,4 @@
+import type { AccCtrl } from '../../../../../com/sun/jna/platform/win32/AccCtrl.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AccCtrl$SE_OBJECT_TYPE extends Object {
     static SE_DS_OBJECT: number;
@@ -13,5 +14,5 @@ export abstract class AccCtrl$SE_OBJECT_TYPE extends Object {
     static SE_UNKNOWN_OBJECT_TYPE: number;
     static SE_WINDOW_OBJECT: number;
     static SE_WMIGUID_OBJECT: number;
-    constructor(null_: AccCtrl$SE_OBJECT_TYPE)
+    constructor(null_: AccCtrl)
 }

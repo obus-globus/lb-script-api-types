@@ -5,6 +5,7 @@ import type { GizmoPrimitives } from '../../../net/minecraft/gizmos/GizmoPrimiti
 import type { GizmoStyle } from '../../../net/minecraft/gizmos/GizmoStyle.d.ts'
 import type { AABB } from '../../../net/minecraft/world/phys/AABB.d.ts'
 export class CuboidGizmo extends Record implements Gizmo {
+    constructor(aabb: AABB, style: GizmoStyle, coloredCornerStroke: boolean)
     // private aabb: AABB;
     // private coloredCornerStroke: boolean;
     // private style: GizmoStyle;

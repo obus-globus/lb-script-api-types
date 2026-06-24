@@ -4,6 +4,8 @@ import type { CuboidRotation$RotationValue } from '../../../../../../net/minecra
 import type { Matrix4fc } from '../../../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector3fc } from '../../../../../../org/joml/Vector3fc.d.ts'
 export class CuboidRotation extends Record {
+    constructor(origin: Vector3fc, value: CuboidRotation$RotationValue, rescale: boolean)
+    constructor(origin: Vector3fc, value: CuboidRotation$RotationValue, rescale: boolean, transform: Matrix4fc)
     // private origin: Vector3fc;
     // private rescale: boolean;
     // private transform: Matrix4fc;

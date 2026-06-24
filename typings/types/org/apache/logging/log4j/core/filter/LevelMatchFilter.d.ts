@@ -1,3 +1,4 @@
+import type { LevelMatchFilter$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -17,6 +18,7 @@ export class LevelMatchFilter extends AbstractFilter {
     static EMPTY_ARRAY: (Object | null)[];
     static newBuilder(): LevelMatchFilter$Builder;
     private constructor(level: Level, onMatch: Filter$Result, onMismatch: Filter$Result)
+    constructor(arg0: Level, arg1: Filter$Result, arg2: Filter$Result, arg3: LevelMatchFilter$1)
     // private level: Level;
     // private filter(level: Level): Filter$Result;
     filter(event: LogEvent): Filter$Result;

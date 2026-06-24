@@ -1,6 +1,6 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
-import type { EnchantmentPredicate } from '../../../../../net/minecraft/advancements/criterion/EnchantmentPredicate.d.ts'
+import type { EnchantmentPredicate } from '../../../../../net/minecraft/advancements/predicates/EnchantmentPredicate.d.ts'
 import type { DataComponentType } from '../../../../../net/minecraft/core/component/DataComponentType.d.ts'
 import type { DataComponentPredicate } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate.d.ts'
 import type { DataComponentPredicate$Single } from '../../../../../net/minecraft/core/component/predicates/DataComponentPredicate$Single.d.ts'

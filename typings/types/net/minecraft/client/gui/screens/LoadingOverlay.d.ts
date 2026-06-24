@@ -22,7 +22,6 @@ export class LoadingOverlay extends Overlay {
     // private reload: ReloadInstance;
     // private extractProgressBar(graphics: GuiGraphicsExtractor, x0: number, y0: number, x1: number, y1: number, fade: number): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
-    isPauseScreen(): boolean;
     // private isReadyToFadeOut(): boolean;
     tick(): void;
 }

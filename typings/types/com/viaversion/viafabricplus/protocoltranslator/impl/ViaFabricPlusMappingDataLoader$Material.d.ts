@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ViaFabricPlusMappingDataLoader$Material extends Record {
+    constructor(blocksMovement: boolean, burnable: boolean, liquid: boolean, blocksLight: boolean, replaceable: boolean, solid: boolean)
     // private blocksLight: boolean;
     // private blocksMovement: boolean;
     // private burnable: boolean;

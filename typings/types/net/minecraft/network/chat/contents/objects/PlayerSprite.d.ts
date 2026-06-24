@@ -6,6 +6,7 @@ import type { ObjectInfo } from '../../../../../../net/minecraft/network/chat/co
 import type { ResolvableProfile } from '../../../../../../net/minecraft/world/item/component/ResolvableProfile.d.ts'
 export class PlayerSprite extends Record implements ObjectInfo {
     static MAP_CODEC: MapCodec<PlayerSprite>;
+    constructor(player: ResolvableProfile, hat: boolean)
     // private hat: boolean;
     // private player: ResolvableProfile;
     codec(): MapCodec<PlayerSprite>;

@@ -21,6 +21,7 @@ import type { TypeArgumentMarker } from '../../../../../../../kotlin/reflect/jvm
 import type { TypeConstructorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeConstructorMarker.d.ts'
 import type { TypeParameterMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeParameterMarker.d.ts'
 import type { TypeSubstitutorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSubstitutorMarker.d.ts'
+import type { TypeSystemContext } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeSystemContext.d.ts'
 import type { TypeVariableTypeConstructorMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariableTypeConstructorMarker.d.ts'
 import type { TypeVariance } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/TypeVariance.d.ts'
 export class SimpleClassicTypeSystemContext extends Object implements ClassicTypeSystemContext {
@@ -44,6 +45,7 @@ export class SimpleClassicTypeSystemContext extends Object implements ClassicTyp
     default$fastCorrespondingSupertypes(arg0: RigidTypeMarker, arg1: TypeConstructorMarker): SimpleTypeMarker[];
     default$get(arg0: TypeArgumentListMarker, arg1: number): TypeArgumentMarker;
     default$getArgumentOrNull(arg0: RigidTypeMarker, arg1: number): TypeArgumentMarker;
+    default$getCustomSubtypingCallback(): (param0: KotlinTypeMarker, param1: KotlinTypeMarker) => boolean;
     default$hasFlexibleNullability(arg0: KotlinTypeMarker): boolean;
     default$isCapturedType(arg0: KotlinTypeMarker): boolean;
     default$isClassType(arg0: RigidTypeMarker): boolean;
@@ -57,6 +59,7 @@ export class SimpleClassicTypeSystemContext extends Object implements ClassicTyp
     default$lowerBoundIfFlexible(arg0: KotlinTypeMarker): RigidTypeMarker;
     default$makeDefinitelyNotNullOrNotNull(arg0: KotlinTypeMarker): KotlinTypeMarker;
     default$makeNullable(arg0: KotlinTypeMarker): KotlinTypeMarker;
+    default$newTypeCheckerState(arg0: boolean, arg1: boolean, arg2: boolean): TypeCheckerState;
     default$originalIfDefinitelyNotNullable(arg0: RigidTypeMarker): SimpleTypeMarker;
     default$size(arg0: TypeArgumentListMarker): number;
     default$typeConstructor(arg0: KotlinTypeMarker): TypeConstructorMarker;
@@ -68,6 +71,7 @@ export class SimpleClassicTypeSystemContext extends Object implements ClassicTyp
     getArguments(arg0: KotlinTypeMarker): TypeArgumentMarker[];
     getBuiltIns(): KotlinBuiltIns;
     getClassFqNameUnsafe(arg0: TypeConstructorMarker): FqNameUnsafe;
+    getCustomSubtypingCallback(): (param0: KotlinTypeMarker, param1: KotlinTypeMarker) => boolean;
     getParameter(arg0: TypeConstructorMarker, arg1: number): TypeParameterMarker;
     getParameters(arg0: TypeConstructorMarker): TypeParameterMarker[];
     getPrimitiveArrayType(arg0: TypeConstructorMarker): PrimitiveType;
@@ -126,6 +130,7 @@ export class SimpleClassicTypeSystemContext extends Object implements ClassicTyp
     makeDefinitelyNotNullOrNotNull(arg0: KotlinTypeMarker, arg1: boolean): KotlinTypeMarker;
     makeNullable(arg0: KotlinTypeMarker): KotlinTypeMarker;
     newTypeCheckerState(arg0: boolean, arg1: boolean, arg2: boolean): TypeCheckerState;
+    newTypeCheckerState(arg0: TypeSystemContext, arg1: boolean, arg2: boolean, arg3: boolean): TypeCheckerState;
     nullableAnyType(): SimpleTypeMarker;
     original(arg0: DefinitelyNotNullTypeMarker): SimpleTypeMarker;
     originalIfDefinitelyNotNullable(arg0: RigidTypeMarker): SimpleTypeMarker;

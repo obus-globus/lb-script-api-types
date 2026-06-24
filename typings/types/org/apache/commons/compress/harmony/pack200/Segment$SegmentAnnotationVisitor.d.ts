@@ -1,9 +1,10 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Segment } from '../../../../../../org/apache/commons/compress/harmony/pack200/Segment.d.ts'
 import type { AnnotationVisitor } from '../../../../../../org/objectweb/asm/AnnotationVisitor.d.ts'
 export class Segment$SegmentAnnotationVisitor extends AnnotationVisitor {
-    constructor(null_: Segment$SegmentAnnotationVisitor, arg1: number)
-    constructor(null_: Segment$SegmentAnnotationVisitor, arg1: number, arg2: number, arg3: string, arg4: boolean)
-    constructor(null_: Segment$SegmentAnnotationVisitor, arg1: number, arg2: string, arg3: boolean)
+    constructor(null_: Segment, arg1: number)
+    constructor(null_: Segment, arg1: number, arg2: number, arg3: string, arg4: boolean)
+    constructor(null_: Segment, arg1: number, arg2: string, arg3: boolean)
     // private caseArrayN: number[];
     // private context: number;
     // private desc: string;

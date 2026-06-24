@@ -3,6 +3,7 @@ import type { JsonElement } from '../../../../../../com/viaversion/viaversion/li
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LastResourcePack extends Record implements StorableObject {
+    constructor(url: string, hash: string, required: boolean, prompt: JsonElement)
     // private hash: string;
     // private prompt: JsonElement;
     // private required: boolean;

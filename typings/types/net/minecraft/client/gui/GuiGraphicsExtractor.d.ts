@@ -22,7 +22,6 @@ import type { ClientTooltipPositioner } from '../../../../net/minecraft/client/g
 import type { Model$Simple } from '../../../../net/minecraft/client/model/Model$Simple.d.ts'
 import type { BannerFlagModel } from '../../../../net/minecraft/client/model/object/banner/BannerFlagModel.d.ts'
 import type { BookModel } from '../../../../net/minecraft/client/model/object/book/BookModel.d.ts'
-import type { PlayerModel } from '../../../../net/minecraft/client/model/player/PlayerModel.d.ts'
 import type { EntityRenderState } from '../../../../net/minecraft/client/renderer/entity/state/EntityRenderState.d.ts'
 import type { MapRenderState } from '../../../../net/minecraft/client/renderer/state/MapRenderState.d.ts'
 import type { GuiRenderState } from '../../../../net/minecraft/client/renderer/state/gui/GuiRenderState.d.ts'
@@ -44,10 +43,9 @@ import type { DyeColor } from '../../../../net/minecraft/world/item/DyeColor.d.t
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 import type { BannerPatternLayers } from '../../../../net/minecraft/world/level/block/entity/BannerPatternLayers.d.ts'
-import type { WoodType } from '../../../../net/minecraft/world/level/block/state/properties/WoodType.d.ts'
 import type { Matrix3x2fStack } from '../../../../org/joml/Matrix3x2fStack.d.ts'
-import type { Quaternionf } from '../../../../org/joml/Quaternionf.d.ts'
-import type { Vector3f } from '../../../../org/joml/Vector3f.d.ts'
+import type { Quaternionfc } from '../../../../org/joml/Quaternionfc.d.ts'
+import type { Vector3fc } from '../../../../org/joml/Vector3fc.d.ts'
 export class GuiGraphicsExtractor extends Object implements GuiGraphicsExtractorAddition {
     constructor(minecraft: Minecraft, guiRenderState: GuiRenderState, mouseX: number, mouseY: number)
     private constructor(minecraft: Minecraft, pose: Matrix3x2fStack, guiRenderState: GuiRenderState, mouseX: number, mouseY: number)
@@ -93,7 +91,7 @@ export class GuiGraphicsExtractor extends Object implements GuiGraphicsExtractor
     // private createDefaultTextParameters(opacity: number): ActiveTextCollector$Parameters;
     disableScissor(): void;
     enableScissor(x0: number, y0: number, x1: number, y1: number): void;
-    entity(renderState: EntityRenderState, scale: number, translation: Vector3f, rotation: Quaternionf, overrideCameraAngle: Quaternionf, x0: number, y0: number, x1: number, y1: number): void;
+    entity(renderState: EntityRenderState, scale: number, translation: Vector3fc, rotation: Quaternionfc, overrideCameraAngle: Quaternionfc, x0: number, y0: number, x1: number, y1: number): void;
     extractDeferredElements(mouseX: number, mouseY: number, a: number): void;
     fakeItem(itemStack: ItemStack, x: number, y: number): void;
     fakeItem(itemStack: ItemStack, x: number, y: number, seed: number): void;
@@ -142,8 +140,7 @@ export class GuiGraphicsExtractor extends Object implements GuiGraphicsExtractor
     setTooltipForNextFrame(font: Font, itemStack: ItemStack, xo: number, yo: number): void;
     setTooltipForNextFrame(component: Component, x: number, y: number): void;
     // private setTooltipForNextFrameInternal(font: Font, lines: ClientTooltipComponent[], xo: number, yo: number, positioner: ClientTooltipPositioner, style: Identifier, replaceExisting: boolean): void;
-    sign(signModel: Model$Simple, scale: number, woodType: WoodType, x0: number, y0: number, x1: number, y1: number): void;
-    skin(playerModel: PlayerModel, texture: Identifier, scale: number, rotationX: number, rotationY: number, pivotY: number, x0: number, y0: number, x1: number, y1: number): void;
+    skin(playerModel: Model$Simple, texture: Identifier, scale: number, rotationX: number, rotationY: number, pivotY: number, x0: number, y0: number, x1: number, y1: number): void;
     text(font: Font, str: string, x: number, y: number, color: number): void;
     text(font: Font, str: string, x: number, y: number, color: number, dropShadow: boolean): void;
     text(font: Font, str: Component, x: number, y: number, color: number): void;

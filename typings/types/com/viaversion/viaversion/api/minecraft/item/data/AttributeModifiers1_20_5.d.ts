@@ -9,6 +9,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class AttributeModifiers1_20_5 extends Record implements Copyable, Rewritable {
     static TYPE: Type<AttributeModifiers1_20_5>;
+    constructor(modifiers: AttributeModifiers1_20_5$AttributeModifier[], showInTooltip: boolean)
     // private modifiers: AttributeModifiers1_20_5$AttributeModifier[];
     // private showInTooltip: boolean;
     copy(): AttributeModifiers1_20_5;

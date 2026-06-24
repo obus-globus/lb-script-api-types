@@ -18,7 +18,8 @@ import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Lock } from '../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
-export class RuleBasedCollator extends Collator {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class RuleBasedCollator extends Collator implements Cloneable {
     static CANONICAL_DECOMPOSITION: number;
     static FULL_DECOMPOSITION: number;
     static IDENTICAL: number;
@@ -56,7 +57,8 @@ export class RuleBasedCollator extends Collator {
     // private validLocale: ULocale;
     // private adoptTailoring(arg0: CollationTailoring): void;
     // private checkNotFrozen(): void;
-    clone(): Object;
+    clone(): RuleBasedCollator;
+    protected clone(): Object;
     cloneAsThawed(): RuleBasedCollator;
     compare(arg0: Object, arg1: Object): number;
     compare(arg0: string, arg1: string): number;

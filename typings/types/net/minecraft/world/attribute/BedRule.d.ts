@@ -10,6 +10,7 @@ export class BedRule extends Record {
     static CAN_SLEEP_WHEN_DARK: BedRule;
     static CODEC: Codec<BedRule>;
     static EXPLODES: BedRule;
+    constructor(canSleep: BedRule$Rule, canSetSpawn: BedRule$Rule, explodes: boolean, errorMessage: Optional<Component>)
     // private canSetSpawn: BedRule$Rule;
     // private canSleep: BedRule$Rule;
     // private errorMessage: Optional<Component>;

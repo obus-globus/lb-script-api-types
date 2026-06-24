@@ -4,9 +4,10 @@ import type { IntBuffer } from '../../../../../../../java/nio/IntBuffer.d.ts'
 import type { CoderResult } from '../../../../../../../java/nio/charset/CoderResult.d.ts'
 import type { CharsetDecoderICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetDecoderICU.d.ts'
 import type { CharsetICU } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetICU.d.ts'
+import type { CharsetISO2022 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetISO2022.d.ts'
 import type { CharsetMBCS$CharsetDecoderMBCS } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/charset/CharsetMBCS$CharsetDecoderMBCS.d.ts'
 export class CharsetISO2022$CharsetDecoderISO2022KR extends CharsetDecoderICU {
-    constructor(null_: CharsetISO2022$CharsetDecoderISO2022KR, cs: CharsetICU)
+    constructor(null_: CharsetISO2022, cs: CharsetICU)
     decodeLoop(in_: ByteBuffer, out: CharBuffer): CoderResult;
     decodeLoop(source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;
     decodeLoopIBM(cnv: CharsetMBCS$CharsetDecoderMBCS, source: ByteBuffer, target: CharBuffer, offsets: IntBuffer, flush: boolean): CoderResult;

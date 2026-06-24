@@ -29,6 +29,7 @@ export class EntityPermissionContext extends Object implements PermissionContext
     constructor(arg0: Entity)
     // private entity: Entity;
     // private keys: PermissionContext$Key<Object>[];
+    // private permissionLevel: PermissionLevel;
     // private server: MinecraftServer;
     // private type: PermissionContext$Type;
     get<T extends unknown>(arg0: PermissionContext$Key<T>): T;

@@ -5,6 +5,7 @@ import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 import type { MapDecorationType } from '../../../../../net/minecraft/world/level/saveddata/maps/MapDecorationType.d.ts'
 export class MapDecorations$Entry extends Record {
     static CODEC: Codec<MapDecorations$Entry>;
+    constructor(type: Holder<MapDecorationType>, x: number, z: number, rotation: number)
     // private rotation: number;
     // private type: Holder<MapDecorationType>;
     // private x: number;

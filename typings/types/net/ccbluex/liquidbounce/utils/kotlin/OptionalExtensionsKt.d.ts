@@ -10,4 +10,7 @@ export class OptionalExtensionsKt extends Object {
     static optional(paramarg0: number): OptionalDouble;
     static optional(paramarg0: number): OptionalInt;
     static optional(paramarg0: number): OptionalLong;
+    static toNullable(paramarg0: OptionalDouble): number;
+    static toNullable(paramarg0: OptionalInt): number;
+    static toNullable(paramarg0: OptionalLong): number;
 }

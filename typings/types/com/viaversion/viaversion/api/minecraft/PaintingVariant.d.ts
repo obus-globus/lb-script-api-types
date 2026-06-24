@@ -5,6 +5,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PaintingVariant extends Record {
     static TYPE1_21: HolderType<PaintingVariant>;
     static TYPE1_21_2: HolderType<PaintingVariant>;
+    constructor(arg0: number, arg1: number, arg2: string)
+    constructor(width: number, height: number, assetId: string, title: Tag, author: Tag)
     // private assetId: string;
     // private author: Tag;
     // private height: number;

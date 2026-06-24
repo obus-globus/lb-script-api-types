@@ -86,6 +86,11 @@ export class SequencesKt extends SequencesKt___SequencesKt {
     static indexOf(paramarg0: Sequence<Object>, paramarg1: Object | null): number;
     static indexOfFirst(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => boolean): number;
     static indexOfLast(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => boolean): number;
+    static isSorted(paramarg0: Sequence<Object>): boolean;
+    static isSortedBy(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => Object | null): boolean;
+    static isSortedByDescending(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => Object | null): boolean;
+    static isSortedDescending(paramarg0: Sequence<Object>): boolean;
+    static isSortedWith(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => boolean): boolean;
     static iterator(paramarg0: (param0: Object, param1: Object) => Object): Iterator<Object>;
     static joinTo(paramarg0: Sequence<Object>, paramarg1: Appendable | null, paramarg2: CharSequence, paramarg3: CharSequence, paramarg4: CharSequence, paramarg5: number, paramarg6: CharSequence, paramarg7: (param0: Object) => CharSequence): Appendable | null;
     static joinToString(paramarg0: Sequence<Object>, paramarg1: CharSequence, paramarg2: CharSequence, paramarg3: CharSequence, paramarg4: number, paramarg5: CharSequence, paramarg6: (param0: Object) => CharSequence): string;

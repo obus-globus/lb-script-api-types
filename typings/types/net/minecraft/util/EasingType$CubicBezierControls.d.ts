@@ -4,6 +4,7 @@ import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class EasingType$CubicBezierControls extends Record {
     static CODEC: Codec<EasingType$CubicBezierControls>;
+    constructor(x1: number, y1: number, x2: number, y2: number)
     // private x1: number;
     // private x2: number;
     // private y1: number;

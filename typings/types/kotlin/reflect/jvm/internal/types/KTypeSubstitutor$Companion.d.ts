@@ -5,6 +5,7 @@ import type { KTypeProjection } from '../../../../../kotlin/reflect/KTypeProject
 import type { KTypeSubstitutor } from '../../../../../kotlin/reflect/jvm/internal/types/KTypeSubstitutor.d.ts'
 export class KTypeSubstitutor$Companion extends Object {
     readonly EMPTY: KTypeSubstitutor;
-    create(klass: KClass<Object>, arguments: KTypeProjection[]): KTypeSubstitutor;
+    // private RAW_SUBSTITUTION: KTypeSubstitutor;
+    create(klass: KClass<Object>, arguments: KTypeProjection[], isSuspendFunctionType: boolean, isRaw: boolean): KTypeSubstitutor;
     create(type: KType): KTypeSubstitutor;
 }

@@ -24,5 +24,4 @@ export class AccessibilityOptionsScreen extends OptionsSubScreen {
     init(): void;
     init(width: number, height: number): void;
     // private isMinecartOptionEnabled(): boolean;
-    panoramaShouldSpin(): boolean;
 }

@@ -3,19 +3,21 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ScreenRectangle } from '../../../../../../../net/minecraft/client/gui/navigation/ScreenRectangle.d.ts'
 import type { EntityRenderState } from '../../../../../../../net/minecraft/client/renderer/entity/state/EntityRenderState.d.ts'
 import type { PictureInPictureRenderState } from '../../../../../../../net/minecraft/client/renderer/state/gui/pip/PictureInPictureRenderState.d.ts'
-import type { Matrix3x2f } from '../../../../../../../org/joml/Matrix3x2f.d.ts'
-import type { Quaternionf } from '../../../../../../../org/joml/Quaternionf.d.ts'
-import type { Vector3f } from '../../../../../../../org/joml/Vector3f.d.ts'
+import type { Matrix3x2fc } from '../../../../../../../org/joml/Matrix3x2fc.d.ts'
+import type { Quaternionfc } from '../../../../../../../org/joml/Quaternionfc.d.ts'
+import type { Vector3fc } from '../../../../../../../org/joml/Vector3fc.d.ts'
 export class GuiEntityRenderState extends Record implements PictureInPictureRenderState {
-    static IDENTITY_POSE: Matrix3x2f;
+    static IDENTITY_POSE: Matrix3x2fc;
     static getBounds(paramx0: number, paramy0: number, paramx1: number, paramy1: number, paramscissorArea: ScreenRectangle): ScreenRectangle;
+    constructor(renderState: EntityRenderState, translation: Vector3fc, rotation: Quaternionfc, overrideCameraAngle: Quaternionfc, x0: number, y0: number, x1: number, y1: number, scale: number, scissorArea: ScreenRectangle)
+    constructor(renderState: EntityRenderState, translation: Vector3fc, rotation: Quaternionfc, overrideCameraAngle: Quaternionfc, x0: number, y0: number, x1: number, y1: number, scale: number, scissorArea: ScreenRectangle, bounds: ScreenRectangle)
     // private bounds: ScreenRectangle;
-    // private overrideCameraAngle: Quaternionf;
+    // private overrideCameraAngle: Quaternionfc;
     // private renderState: EntityRenderState;
-    // private rotation: Quaternionf;
+    // private rotation: Quaternionfc;
     // private scale: number;
     // private scissorArea: ScreenRectangle;
-    // private translation: Vector3f;
+    // private translation: Vector3fc;
     // private x0: number;
     // private x1: number;
     // private y0: number;
@@ -23,14 +25,14 @@ export class GuiEntityRenderState extends Record implements PictureInPictureRend
     bounds(): ScreenRectangle;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    overrideCameraAngle(): Quaternionf;
-    pose(): Matrix3x2f;
+    overrideCameraAngle(): Quaternionfc;
+    pose(): Matrix3x2fc;
     renderState(): EntityRenderState;
-    rotation(): Quaternionf;
+    rotation(): Quaternionfc;
     scale(): number;
     scissorArea(): ScreenRectangle;
     toString(): string;
-    translation(): Vector3f;
+    translation(): Vector3fc;
     x0(): number;
     x1(): number;
     y0(): number;

@@ -16,7 +16,6 @@ import type { TrackedWaypoint$PitchDirection } from '../../../../net/minecraft/w
 import type { TrackedWaypoint$Projector } from '../../../../net/minecraft/world/waypoints/TrackedWaypoint$Projector.d.ts'
 import type { Waypoint$Icon } from '../../../../net/minecraft/world/waypoints/Waypoint$Icon.d.ts'
 export class TrackedWaypoint$ChunkWaypoint extends TrackedWaypoint {
-    static MAX_RANGE: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, TrackedWaypoint>;
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static empty(paramidentifier: UUID): TrackedWaypoint;

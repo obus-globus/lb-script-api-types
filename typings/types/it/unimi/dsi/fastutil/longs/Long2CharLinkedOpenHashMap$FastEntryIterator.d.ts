@@ -4,8 +4,8 @@ import type { Long2CharMap$Entry } from '../../../../../it/unimi/dsi/fastutil/lo
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Long2CharLinkedOpenHashMap$FastEntryIterator extends Long2CharLinkedOpenHashMap$MapIterator<(param0: Long2CharMap$Entry) => void> implements ObjectListIterator<Long2CharMap$Entry> {
-    constructor(null_: Long2CharLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Long2CharLinkedOpenHashMap$FastEntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Long2CharLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Long2CharMap$Entry) => void, arg1: number): void;
     add(arg0: Long2CharMap$Entry): void;

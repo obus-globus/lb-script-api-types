@@ -5,6 +5,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class AttributeModifiers1_20_5$AttributeModifier extends Record {
     static ARRAY_TYPE: Type<(Object | null)[]>;
     static TYPE: Type<AttributeModifiers1_20_5$AttributeModifier>;
+    constructor(attribute: number, modifier: AttributeModifiers1_20_5$ModifierData, slotType: number)
     // private attribute: number;
     // private modifier: AttributeModifiers1_20_5$ModifierData;
     // private slotType: number;

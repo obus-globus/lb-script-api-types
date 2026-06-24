@@ -6,4 +6,5 @@ export interface Font$GlyphVisitor extends Object{
     acceptEffect(effect: TextRenderable): void;
     acceptEmptyArea(empty: EmptyArea): void;
     acceptGlyph(glyph: TextRenderable$Styled): void;
+    acceptRenderable(renderable: TextRenderable): void;
 }

@@ -13,6 +13,10 @@ export class ItemRewriter extends StoredObject {
     // private itemArrayType: Type<BedrockItem[]>;
     // private itemType: Type<BedrockItem>;
     readonly items: { [key: string]: number };
+    // private newItemArrayType: Type<BedrockItem[]>;
+    // private newItemType: Type<BedrockItem>;
+    // private optionalItemType: Type<BedrockItem>;
+    // private optionalNewItemType: Type<BedrockItem>;
     bedrockItem(arg0: Item): BedrockItem;
     bedrockItems(arg0: Item[]): BedrockItem[];
     getComponentItems(): string[];
@@ -22,4 +26,8 @@ export class ItemRewriter extends StoredObject {
     javaItem(arg0: Map$Entry<string, Tag>[]): Map$Entry<string, Tag>[];
     javaItem(arg0: BedrockItem): Item;
     javaItems(arg0: BedrockItem[]): Item[];
+    newItemArrayType(): Type<BedrockItem[]>;
+    newItemType(): Type<BedrockItem>;
+    optionalItemType(): Type<BedrockItem>;
+    optionalNewItemType(): Type<BedrockItem>;
 }

@@ -3,6 +3,7 @@ import type { Supplier } from '../../../../../../java/util/function/Supplier.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { SteppedValidator } from '../../../../../../net/caffeinemc/mods/sodium/api/config/option/SteppedValidator.d.ts'
 export class GUIScaleRange extends Record implements SteppedValidator {
+    constructor(max: number)
     // private max: number;
     equals(arg0: Object | null): boolean;
     getValidatedValue(arg0: number, arg1: () => number): number;

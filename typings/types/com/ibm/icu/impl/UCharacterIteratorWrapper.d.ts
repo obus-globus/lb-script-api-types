@@ -1,11 +1,13 @@
 import type { UCharacterIterator } from '../../../../com/ibm/icu/text/UCharacterIterator.d.ts'
 import type { CharacterIterator } from '../../../../java/text/CharacterIterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class UCharacterIteratorWrapper extends Object implements CharacterIterator {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class UCharacterIteratorWrapper extends Object implements CharacterIterator, Cloneable {
     static DONE: string;
     constructor(arg0: UCharacterIterator)
     // private iterator: UCharacterIterator;
-    clone(): Object;
+    clone(): UCharacterIteratorWrapper;
+    protected clone(): Object;
     current(): string;
     first(): string;
     getBeginIndex(): number;

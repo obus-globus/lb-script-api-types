@@ -2,12 +2,13 @@ import type { WebSocketClientExtension } from '../../../../../../../../io/netty/
 import type { WebSocketExtensionDecoder } from '../../../../../../../../io/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionDecoder.d.ts'
 import type { WebSocketExtensionEncoder } from '../../../../../../../../io/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionEncoder.d.ts'
 import type { WebSocketExtensionFilterProvider } from '../../../../../../../../io/netty/handler/codec/http/websocketx/extensions/WebSocketExtensionFilterProvider.d.ts'
+import type { PerMessageDeflateClientExtensionHandshaker } from '../../../../../../../../io/netty/handler/codec/http/websocketx/extensions/compression/PerMessageDeflateClientExtensionHandshaker.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class PerMessageDeflateClientExtensionHandshaker$PermessageDeflateExtension extends Object implements WebSocketClientExtension {
     static RSV1: number;
     static RSV2: number;
     static RSV3: number;
-    constructor(null_: PerMessageDeflateClientExtensionHandshaker$PermessageDeflateExtension, arg1: boolean, arg2: number, arg3: boolean, arg4: number, arg5: WebSocketExtensionFilterProvider, arg6: number)
+    constructor(null_: PerMessageDeflateClientExtensionHandshaker, arg1: boolean, arg2: number, arg3: boolean, arg4: number, arg5: WebSocketExtensionFilterProvider, arg6: number)
     // private clientNoContext: boolean;
     // private clientWindowSize: number;
     // private extensionFilterProvider: WebSocketExtensionFilterProvider;

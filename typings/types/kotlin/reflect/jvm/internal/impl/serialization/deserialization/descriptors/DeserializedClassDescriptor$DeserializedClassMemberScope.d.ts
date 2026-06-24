@@ -15,7 +15,7 @@ import type { KotlinType } from '../../../../../../../../kotlin/reflect/jvm/inte
 import type { KotlinTypeRefiner } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class DeserializedClassDescriptor$DeserializedClassMemberScope extends DeserializedMemberScope {
     static Companion: MemberScope$Companion;
-    constructor(null_: DeserializedClassDescriptor$DeserializedClassMemberScope)
+    constructor(null_: DeserializedClassDescriptor, arg1: KotlinTypeRefiner)
     // private allDescriptors: NotNullLazyValue<DeclarationDescriptor[]>;
     // private kotlinTypeRefiner: KotlinTypeRefiner;
     // private refinedSupertypes: NotNullLazyValue<KotlinType[]>;

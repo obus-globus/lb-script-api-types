@@ -7,7 +7,6 @@ import type { TextureType } from '../../../../net/irisshaders/iris/gl/texture/Te
 import type { Tri } from '../../../../net/irisshaders/iris/helpers/Tri.d.ts'
 import type { LevelRendererAccessor } from '../../../../net/irisshaders/iris/mixin/LevelRendererAccessor.d.ts'
 import type { WorldRenderingPhase } from '../../../../net/irisshaders/iris/pipeline/WorldRenderingPhase.d.ts'
-import type { SodiumPrograms } from '../../../../net/irisshaders/iris/pipeline/programs/SodiumPrograms.d.ts'
 import type { CloudSetting } from '../../../../net/irisshaders/iris/shaderpack/properties/CloudSetting.d.ts'
 import type { ParticleRenderingSettings } from '../../../../net/irisshaders/iris/shaderpack/properties/ParticleRenderingSettings.d.ts'
 import type { TextureStage } from '../../../../net/irisshaders/iris/shaderpack/texture/TextureStage.d.ts'
@@ -33,7 +32,6 @@ export interface WorldRenderingPipeline extends Object{
     getFrameUpdateNotifier(): FrameUpdateNotifier;
     getParticleRenderingSettings(): ParticleRenderingSettings;
     getPhase(): WorldRenderingPhase;
-    getSodiumPrograms(): SodiumPrograms;
     getSunPathRotation(): number;
     getTextureMap(): Map<Tri<string, TextureType, TextureStage>, string>;
     hasFeature(arg0: FeatureFlags): boolean;

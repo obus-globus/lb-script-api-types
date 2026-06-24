@@ -8,6 +8,7 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 export class Tool extends Record {
     static CODEC: Codec<Tool>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Tool>;
+    constructor(rules: Tool$Rule[], defaultMiningSpeed: number, damagePerBlock: number, canDestroyBlocksInCreative: boolean)
     // private canDestroyBlocksInCreative: boolean;
     // private damagePerBlock: number;
     // private defaultMiningSpeed: number;

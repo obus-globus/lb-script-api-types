@@ -15,6 +15,7 @@ export class TraversableTree extends Tree {
     // private treeReduced: number[];
     // private viewport: Viewport;
     // private visitor: CoordinateSectionVisitor;
+    addPatch(arg0: number, arg1: number, arg2: number): number;
     getChildOrderModulator(arg0: number, arg1: number, arg2: number, arg3: number): number;
     getPresence(arg0: number, arg1: number, arg2: number): number;
     prepareForTraversal(): void;

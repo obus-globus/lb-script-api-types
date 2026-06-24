@@ -18,6 +18,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientboundExplodePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundExplodePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(center: Vec3, radius: number, blockCount: number, playerKnockback: Optional<Vec3>, explosionParticle: ParticleOptions, explosionSound: Holder<SoundEvent>, blockParticles: WeightedList<ExplosionParticleInfo>)
     // private blockCount: number;
     // private blockParticles: WeightedList<ExplosionParticleInfo>;
     // private center: Vec3;

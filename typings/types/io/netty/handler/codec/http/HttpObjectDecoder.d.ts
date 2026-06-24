@@ -28,6 +28,8 @@ export abstract class HttpObjectDecoder extends ByteToMessageDecoder {
     static DEFAULT_STRICT_LINE_PARSING: boolean;
     static DEFAULT_VALIDATE_HEADERS: boolean;
     static MERGE_CUMULATOR: ByteToMessageDecoder$Cumulator;
+    static PROP_RFC9112_TRANSFER_ENCODING: string;
+    static RFC9112_TRANSFER_ENCODING: boolean;
     constructor()
     constructor(arg0: HttpDecoderConfig)
     constructor(arg0: number, arg1: number, arg2: number, arg3: boolean)
@@ -54,9 +56,11 @@ export abstract class HttpObjectDecoder extends ByteToMessageDecoder {
     // private resetRequested: AtomicBoolean;
     // private trailer: LastHttpContent;
     // private trailersFactory: HttpHeadersFactory;
+    // private useRfc9112TransferEncoding: boolean;
     // private validateHeaders: boolean;
     // private value: string;
     // private addCurrentMessage(arg0: Object[]): void;
+    clearContentLength(): void;
     createInvalidMessage(): HttpMessage;
     createMessage(arg0: string[]): HttpMessage;
     decode(arg0: ChannelHandlerContext, arg1: ByteBuf, arg2: Object[]): void;

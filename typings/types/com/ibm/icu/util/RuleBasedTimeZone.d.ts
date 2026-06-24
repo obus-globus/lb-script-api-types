@@ -10,7 +10,8 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class RuleBasedTimeZone extends BasicTimeZone {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class RuleBasedTimeZone extends BasicTimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -55,8 +56,9 @@ export class RuleBasedTimeZone extends BasicTimeZone {
     // private isFrozen: boolean;
     // private upToDate: boolean;
     addTransitionRule(arg0: TimeZoneRule): void;
-    clone(): Object;
-    cloneAsThawed(): TimeZone;
+    clone(): RuleBasedTimeZone;
+    protected clone(): Object;
+    cloneAsThawed(): RuleBasedTimeZone;
     // private complete(): void;
     // private findRuleInFinal(arg0: number, arg1: boolean, arg2: number, arg3: number): TimeZoneRule;
     freeze(): TimeZone;

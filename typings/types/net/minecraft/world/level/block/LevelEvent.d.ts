@@ -72,6 +72,7 @@ export class LevelEvent extends Object {
     static SOUND_SKELETON_TO_STRAY: number;
     static SOUND_SMITHING_TABLE_USED: number;
     static SOUND_STOP_JUKEBOX_SONG: number;
+    static SOUND_SULFUR_SPIKE_LAND: number;
     static SOUND_WIND_CHARGE_SHOOT: number;
     static SOUND_WITHER_BLOCK_BREAK: number;
     static SOUND_WITHER_BOSS_SHOOT: number;

@@ -7,6 +7,7 @@ import type { StreamCodec } from '../../../../net/minecraft/network/codec/Stream
 export class ExplosionParticleInfo extends Record {
     static CODEC: MapCodec<ExplosionParticleInfo>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ExplosionParticleInfo>;
+    constructor(particle: ParticleOptions, scaling: number, speed: number)
     // private particle: ParticleOptions;
     // private scaling: number;
     // private speed: number;

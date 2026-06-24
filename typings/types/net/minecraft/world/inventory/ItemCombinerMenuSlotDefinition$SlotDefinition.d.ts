@@ -3,6 +3,7 @@ import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ItemCombinerMenuSlotDefinition$SlotDefinition extends Record {
+    constructor(slotIndex: number, x: number, y: number, mayPlace: (param0: ItemStack) => boolean)
     // private mayPlace: (param0: ItemStack) => boolean;
     // private slotIndex: number;
     // private x: number;

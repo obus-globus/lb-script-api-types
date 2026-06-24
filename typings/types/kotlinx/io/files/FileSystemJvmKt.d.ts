@@ -4,5 +4,4 @@ import type { Path } from '../../../kotlinx/io/files/Path.d.ts'
 export class FileSystemJvmKt extends Object {
     static SystemFileSystem: FileSystem;
     static SystemTemporaryDirectory: Path;
-    static isWindows(): boolean;
 }

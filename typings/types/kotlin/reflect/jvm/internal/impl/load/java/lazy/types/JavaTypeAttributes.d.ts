@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { TypeParameterDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/TypeParameterDescriptor.d.ts'
 import type { JavaTypeFlexibility } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/lazy/types/JavaTypeFlexibility.d.ts'
 import type { ErasureTypeAttributes } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/ErasureTypeAttributes.d.ts'
@@ -6,6 +7,7 @@ import type { SimpleType } from '../../../../../../../../../kotlin/reflect/jvm/i
 import type { TypeUsage } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeUsage.d.ts'
 export class JavaTypeAttributes extends ErasureTypeAttributes {
     constructor(arg0: TypeUsage, arg1: JavaTypeFlexibility, arg2: boolean, arg3: boolean, arg4: TypeParameterDescriptor[], arg5: SimpleType)
+    constructor(arg0: TypeUsage, arg1: JavaTypeFlexibility, arg2: boolean, arg3: boolean, arg4: (Object | null)[], arg5: SimpleType, arg6: number, arg7: DefaultConstructorMarker)
     readonly defaultType: SimpleType;
     readonly flexibility: JavaTypeFlexibility;
     readonly howThisTypeIsUsed: TypeUsage;

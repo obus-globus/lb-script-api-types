@@ -10,9 +10,9 @@ export class JvmReadUtils extends Object {
     private constructor()
     // private checkMetadataVersionForRead(arg0: Metadata, arg1: boolean): void;
     // private isLessThan14(arg0: Metadata): boolean;
-    readKmClass$kotlin_metadata_jvm(arg0: Metadata): KmClass;
-    readKmLambda$kotlin_metadata_jvm(arg0: Metadata): KmLambda;
-    readKmPackage$kotlin_metadata_jvm(arg0: Metadata): KmPackage;
-    readMetadataImpl$kotlin_metadata_jvm(arg0: Metadata, arg1: boolean): KotlinClassMetadata;
-    throwIfNotCompatible$kotlin_metadata_jvm(arg0: MetadataVersion, arg1: boolean): void;
+    readKmClass$org_jetbrains_kotlin_kotlin_metadata_jvm(arg0: Metadata): KmClass;
+    readKmLambda$org_jetbrains_kotlin_kotlin_metadata_jvm(arg0: Metadata): KmLambda;
+    readKmPackage$org_jetbrains_kotlin_kotlin_metadata_jvm(arg0: Metadata): KmPackage;
+    readMetadataImpl$org_jetbrains_kotlin_kotlin_metadata_jvm(arg0: Metadata, arg1: boolean): KotlinClassMetadata;
+    throwIfNotCompatible$org_jetbrains_kotlin_kotlin_metadata_jvm(arg0: MetadataVersion, arg1: boolean): void;
 }

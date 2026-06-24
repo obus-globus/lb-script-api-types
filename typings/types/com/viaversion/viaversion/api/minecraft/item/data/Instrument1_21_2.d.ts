@@ -13,6 +13,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Instrument1_21_2 extends Record implements Copyable, Rewritable {
     static EITHER_HOLDER_TYPE: EitherHolderType<Instrument1_21_2>;
     static TYPE: HolderType<Instrument1_21_2>;
+    constructor(soundEvent: Holder<SoundEvent>, useDuration: number, range: number, description: Tag)
     // private description: Tag;
     // private range: number;
     // private soundEvent: Holder<SoundEvent>;

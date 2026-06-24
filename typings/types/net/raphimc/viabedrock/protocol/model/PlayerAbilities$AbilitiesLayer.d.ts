@@ -2,6 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbilitiesIndex } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/AbilitiesIndex.d.ts'
 export class PlayerAbilities$AbilitiesLayer extends Record {
+    constructor(abilitiesSet: AbilitiesIndex[], abilityValues: AbilitiesIndex[], walkSpeed: number, flySpeed: number, verticalFlySpeed: number)
     // private abilitiesSet: AbilitiesIndex[];
     // private abilityValues: AbilitiesIndex[];
     // private flySpeed: number;

@@ -1,7 +1,9 @@
+import type { WbemcliUtil } from '../../../../../../com/sun/jna/platform/win32/COM/WbemcliUtil.d.ts'
+import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class WbemcliUtil$WmiResult<T extends Enum<T>> extends Object {
-    constructor(null_: WbemcliUtil$WmiResult<T>)
+    constructor(null_: WbemcliUtil, arg1: Class<T>)
     // private cimTypeMap: Map<T, number>;
     // private propertyMap: Map<T, Object[]>;
     readonly resultCount: number;

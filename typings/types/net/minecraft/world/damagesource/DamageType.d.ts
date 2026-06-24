@@ -11,6 +11,11 @@ export class DamageType extends Record {
     static CODEC: Codec<Holder<DamageType>>;
     static DIRECT_CODEC: Codec<DamageType>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<DamageType>>;
+    constructor(msgdId: string, exhaustion: number)
+    constructor(msgdId: string, exhaustion: number, effects: DamageEffects)
+    constructor(msgdId: string, scaling: DamageScaling, exhaustion: number)
+    constructor(msgdId: string, scaling: DamageScaling, exhaustion: number, effects: DamageEffects)
+    constructor(msgId: string, scaling: DamageScaling, exhaustion: number, effects: DamageEffects, deathMessageType: DeathMessageType)
     // private deathMessageType: DeathMessageType;
     // private effects: DamageEffects;
     // private exhaustion: number;

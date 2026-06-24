@@ -9,6 +9,7 @@ import type { ItemAttributeModifiers } from '../../../../../net/minecraft/world/
 import type { ArmorType } from '../../../../../net/minecraft/world/item/equipment/ArmorType.d.ts'
 import type { EquipmentAsset } from '../../../../../net/minecraft/world/item/equipment/EquipmentAsset.d.ts'
 export class ArmorMaterial extends Record {
+    constructor(durability: number, defense: { [key in ArmorType]: number }, enchantmentValue: number, equipSound: Holder<SoundEvent>, toughness: number, knockbackResistance: number, repairIngredient: TagKey<Item>, assetId: ResourceKey<EquipmentAsset>)
     // private assetId: ResourceKey<EquipmentAsset>;
     // private defense: { [key in ArmorType]: number };
     // private durability: number;

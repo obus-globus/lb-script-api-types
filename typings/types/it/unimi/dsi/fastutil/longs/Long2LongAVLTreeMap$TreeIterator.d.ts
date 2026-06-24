@@ -1,8 +1,8 @@
 import type { Long2LongAVLTreeMap$Entry } from '../../../../../it/unimi/dsi/fastutil/longs/Long2LongAVLTreeMap$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2LongAVLTreeMap$TreeIterator extends Object {
-    constructor(null_: Long2LongAVLTreeMap$TreeIterator)
-    constructor(null_: Long2LongAVLTreeMap$TreeIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private curr: Long2LongAVLTreeMap$Entry;
     // private index: number;
     // private next: Long2LongAVLTreeMap$Entry;

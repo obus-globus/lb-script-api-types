@@ -6,8 +6,8 @@ import type { SuspendAnchor } from '../../../../../com/oracle/truffle/api/debug/
 import type { SourceSection } from '../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Breakpoint$Builder extends Object {
-    private constructor(null_: Breakpoint$Builder, key: SourceSection)
-    private constructor(null_: Breakpoint$Builder, key: Object)
+    private constructor(null_: Breakpoint, key: SourceSection)
+    private constructor(null_: Breakpoint, key: Object)
     // private anchor: SuspendAnchor;
     // private column: number;
     // private ignoreCount: number;

@@ -15,10 +15,10 @@ export class Types1_20_3 extends Object implements VersionedTypesHolder {
     entityDataList(): Type<EntityData[]>;
     entityDataTypes(): AbstractEntityDataTypes;
     item(): Type<Item>;
-    itemArray(): Type<Item[]>;
+    itemArray(): ArrayType<Item>;
     itemCost(): Type<Item>;
     itemTemplate(): Type<Item>;
-    itemTemplateArray(): Type<Item[]>;
+    itemTemplateArray(): ArrayType<Item>;
     lengthPrefixedItem(): Type<Item>;
     optionalItemCost(): Type<Item>;
     optionalItemTemplate(): Type<Item>;

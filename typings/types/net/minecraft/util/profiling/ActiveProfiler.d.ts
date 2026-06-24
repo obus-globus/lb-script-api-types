@@ -1,3 +1,4 @@
+import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { BooleanSupplier } from '../../../../java/util/function/BooleanSupplier.d.ts'
 import type { IntSupplier } from '../../../../java/util/function/IntSupplier.d.ts'
 import type { LongSupplier } from '../../../../java/util/function/LongSupplier.d.ts'
@@ -7,7 +8,6 @@ import type { ActiveProfiler$PathEntry } from '../../../../net/minecraft/util/pr
 import type { ProfileCollector } from '../../../../net/minecraft/util/profiling/ProfileCollector.d.ts'
 import type { ProfileResults } from '../../../../net/minecraft/util/profiling/ProfileResults.d.ts'
 import type { MetricCategory } from '../../../../net/minecraft/util/profiling/metrics/MetricCategory.d.ts'
-import type { Pair } from '../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
 export class ActiveProfiler extends Object implements ProfileCollector {
     static ROOT: string;
     constructor(getRealTime: () => number, getTickTime: () => number, suppressWarnings: () => boolean)

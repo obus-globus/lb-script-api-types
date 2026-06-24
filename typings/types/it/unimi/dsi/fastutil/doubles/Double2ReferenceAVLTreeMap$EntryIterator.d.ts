@@ -3,8 +3,8 @@ import type { Double2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fast
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2ReferenceAVLTreeMap$EntryIterator extends Double2ReferenceAVLTreeMap$TreeIterator implements ObjectListIterator<Double2ReferenceMap$Entry<V>> {
-    constructor(null_: Double2ReferenceAVLTreeMap$EntryIterator)
-    constructor(null_: Double2ReferenceAVLTreeMap$EntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add<V extends unknown>(arg0: Double2ReferenceMap$Entry<V>): void;
     next<V extends unknown>(): Double2ReferenceMap$Entry<V>;
     previous<V extends unknown>(): Double2ReferenceMap$Entry<V>;

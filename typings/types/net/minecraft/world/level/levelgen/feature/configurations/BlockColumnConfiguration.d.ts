@@ -16,6 +16,7 @@ export class BlockColumnConfiguration extends Record implements FeatureConfigura
     static NONE: NoneFeatureConfiguration;
     static layer(paramheight: IntProvider, paramstate: BlockStateProvider): BlockColumnConfiguration$Layer;
     static simple(paramheight: IntProvider, paramstate: BlockStateProvider): BlockColumnConfiguration;
+    constructor(layers: BlockColumnConfiguration$Layer[], direction: Direction, allowedPlacement: BlockPredicate, prioritizeTip: boolean)
     // private allowedPlacement: BlockPredicate;
     // private direction: Direction;
     // private layers: BlockColumnConfiguration$Layer[];

@@ -30,7 +30,6 @@ export class LanguageSelectScreen extends OptionsSubScreen {
     addOptions(): void;
     addTitle(): void;
     // private onDone(): void;
-    panoramaShouldSpin(): boolean;
     repositionElements(): void;
     setInitialFocus(): void;
     setInitialFocus(target: GuiEventListener): void;

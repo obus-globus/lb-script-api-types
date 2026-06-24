@@ -15,7 +15,6 @@ export class ReadKotlinClassHeaderAnnotationVisitor extends Object implements Ko
     // private incompatibleData: string[];
     // private metadataVersionArray: number[];
     // private packageName: string;
-    // private serializedIrFields: string[];
     // private strings: string[];
     createHeader(arg0: MetadataVersion): KotlinClassHeader;
     createHeaderWithDefaultMetadataVersion(): KotlinClassHeader;

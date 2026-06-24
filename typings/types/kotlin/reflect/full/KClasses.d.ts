@@ -8,6 +8,7 @@ import type { KProperty2 } from '../../../kotlin/reflect/KProperty2.d.ts'
 import type { KType } from '../../../kotlin/reflect/KType.d.ts'
 export class KClasses extends Object {
     static cast(paramarg0: KClass<Object>, paramarg1: Object): Object | null;
+    static createDefaultType(paramarg0: KClass<Object>): KType;
     static createInstance(paramarg0: KClass<Object>): Object | null;
     static getAllSuperclasses(paramarg0: KClass<Object>): KClass<Object>[];
     static getAllSupertypes(paramarg0: KClass<Object>): KType[];

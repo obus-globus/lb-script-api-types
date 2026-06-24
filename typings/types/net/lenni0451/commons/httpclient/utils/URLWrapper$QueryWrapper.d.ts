@@ -1,8 +1,10 @@
+import type { URLWrapper$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { URLWrapper } from '../../../../../net/lenni0451/commons/httpclient/utils/URLWrapper.d.ts'
 export class URLWrapper$QueryWrapper extends Object {
-    private constructor(null_: URLWrapper$QueryWrapper)
+    private constructor(null_: URLWrapper)
+    constructor(null_: URLWrapper, arg1: URLWrapper$1)
     readonly queries: { [key: string]: string };
     addQueries(arg0: { [key: string]: string }): URLWrapper$QueryWrapper;
     apply(): URLWrapper;

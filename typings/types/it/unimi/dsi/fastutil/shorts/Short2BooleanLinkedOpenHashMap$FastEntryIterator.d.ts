@@ -4,8 +4,8 @@ import type { Short2BooleanLinkedOpenHashMap$MapIterator } from '../../../../../
 import type { Short2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2BooleanMap$Entry.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Short2BooleanLinkedOpenHashMap$FastEntryIterator extends Short2BooleanLinkedOpenHashMap$MapIterator<(param0: Short2BooleanMap$Entry) => void> implements ObjectListIterator<Short2BooleanMap$Entry> {
-    constructor(null_: Short2BooleanLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Short2BooleanLinkedOpenHashMap$FastEntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Short2BooleanLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Short2BooleanMap$Entry) => void, arg1: number): void;
     add(arg0: Short2BooleanMap$Entry): void;

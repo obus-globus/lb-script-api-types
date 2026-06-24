@@ -1,0 +1,12 @@
+import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
+import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
+import type { SimpleCriterionTrigger } from '../../../../net/minecraft/advancements/triggers/SimpleCriterionTrigger.d.ts'
+import type { TameAnimalTrigger$TriggerInstance } from '../../../../net/minecraft/advancements/triggers/TameAnimalTrigger$TriggerInstance.d.ts'
+import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
+import type { Animal } from '../../../../net/minecraft/world/entity/animal/Animal.d.ts'
+export class TameAnimalTrigger extends SimpleCriterionTrigger<TameAnimalTrigger$TriggerInstance> {
+    constructor()
+    codec(): Codec<TameAnimalTrigger$TriggerInstance>;
+    trigger(player: ServerPlayer, matcher: (param0: TameAnimalTrigger$TriggerInstance) => boolean): void;
+    trigger(player: ServerPlayer, animal: Animal): void;
+}

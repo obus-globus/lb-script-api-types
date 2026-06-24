@@ -1,3 +1,4 @@
+import type { WindowUtils$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { DesktopWindow } from '../../../../com/sun/jna/platform/DesktopWindow.d.ts'
 import type { WindowUtils$NativeWindowUtils } from '../../../../com/sun/jna/platform/WindowUtils$NativeWindowUtils.d.ts'
 import type { WinDef$HICON } from '../../../../com/sun/jna/platform/win32/WinDef$HICON.d.ts'
@@ -14,6 +15,7 @@ import type { Raster } from '../../../../java/awt/image/Raster.d.ts'
 import type { Icon } from '../../../../javax/swing/Icon.d.ts'
 export class WindowUtils$W32WindowUtils extends WindowUtils$NativeWindowUtils {
     private constructor()
+    constructor(arg0: WindowUtils$1)
     getAllWindows(arg0: boolean): DesktopWindow[];
     // private getAlpha(arg0: Window): number;
     // private getHWnd(arg0: Component): WinDef$HWND;

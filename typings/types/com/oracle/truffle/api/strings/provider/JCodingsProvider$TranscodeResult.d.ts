@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JCodingsProvider$TranscodeResult extends Record {
+    constructor(buffer: number[], length: number, undefinedConversion: boolean)
     // private buffer: number[];
     // private length: number;
     // private undefinedConversion: boolean;

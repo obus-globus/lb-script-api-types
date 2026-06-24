@@ -4,7 +4,7 @@ import type { ShortIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Object2ShortOpenCustomHashMap$ValueIterator extends Object2ShortOpenCustomHashMap$MapIterator<Object> implements ShortIterator {
-    constructor(null_: Object2ShortOpenCustomHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     next(): number;

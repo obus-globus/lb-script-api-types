@@ -32,7 +32,7 @@ export class KeyboardHandler extends Object implements IMouseKeyboardHandlers {
     // private debugFeedback(message: string): void;
     // private debugFeedbackComponent(component: Component): void;
     // private debugFeedbackEnabledStatus(prefix: string, isEnabled: boolean): void;
-    // private debugFeedbackTranslated(pattern: string, args: Object[]): void;
+    // private debugFeedbackTranslated(pattern: string): void;
     // private debugWarningComponent(component: Component): void;
     getClipboard(): string;
     // private handleChunkDebugKeys(event: KeyEvent): boolean;
@@ -42,7 +42,6 @@ export class KeyboardHandler extends Object implements IMouseKeyboardHandlers {
     resubmitLastPreeditEvent(screen: GuiEventListener): void;
     setClipboard(clipboard: string): void;
     setup(window: Window): void;
-    // private showDebugChat(message: Component): void;
     tick(): void;
     viaFabricPlus$getPendingScreenEvents(): Object[];
 }

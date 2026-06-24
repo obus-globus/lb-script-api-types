@@ -3,6 +3,7 @@ import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/clien
 import type { SelectableEntry } from '../../../../../../net/minecraft/client/gui/components/SelectableEntry.d.ts'
 import type { FaviconTexture } from '../../../../../../net/minecraft/client/gui/screens/FaviconTexture.d.ts'
 import type { JoinMultiplayerScreen } from '../../../../../../net/minecraft/client/gui/screens/multiplayer/JoinMultiplayerScreen.d.ts'
+import type { ServerSelectionList } from '../../../../../../net/minecraft/client/gui/screens/multiplayer/ServerSelectionList.d.ts'
 import type { ServerSelectionList$Entry } from '../../../../../../net/minecraft/client/gui/screens/multiplayer/ServerSelectionList$Entry.d.ts'
 import type { KeyEvent } from '../../../../../../net/minecraft/client/input/KeyEvent.d.ts'
 import type { MouseButtonEvent } from '../../../../../../net/minecraft/client/input/MouseButtonEvent.d.ts'
@@ -11,7 +12,7 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ServerSelectionList$OnlineServerEntry extends ServerSelectionList$Entry implements SelectableEntry {
     static CONTENT_PADDING: number;
-    constructor(null_: ServerSelectionList$OnlineServerEntry, screen: JoinMultiplayerScreen, serverData: ServerData)
+    constructor(null_: ServerSelectionList, screen: JoinMultiplayerScreen, serverData: ServerData)
     // private icon: FaviconTexture;
     // private lastIconBytes: number[];
     // private minecraft: Minecraft;

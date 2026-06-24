@@ -8,6 +8,7 @@ import type { SpawnData } from '../../../../../../../net/minecraft/world/level/S
 import type { LootTable } from '../../../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 export class TrialSpawnerStateData$Packed extends Record {
     static MAP_CODEC: MapCodec<TrialSpawnerStateData$Packed>;
+    constructor(detectedPlayers: UUID[], currentMobs: UUID[], cooldownEndsAt: number, nextMobSpawnsAt: number, totalMobsSpawned: number, nextSpawnData: Optional<SpawnData>, ejectingLootTable: Optional<ResourceKey<LootTable>>)
     // private cooldownEndsAt: number;
     // private currentMobs: UUID[];
     // private detectedPlayers: UUID[];

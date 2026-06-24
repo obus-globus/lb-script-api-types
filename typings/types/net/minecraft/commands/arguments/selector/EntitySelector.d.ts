@@ -4,7 +4,7 @@ import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { MinMaxBounds$Doubles } from '../../../../../net/minecraft/advancements/criterion/MinMaxBounds$Doubles.d.ts'
+import type { MinMaxBounds$Doubles } from '../../../../../net/minecraft/advancements/predicates/MinMaxBounds$Doubles.d.ts'
 import type { CommandSourceStack } from '../../../../../net/minecraft/commands/CommandSourceStack.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { ServerLevel } from '../../../../../net/minecraft/server/level/ServerLevel.d.ts'

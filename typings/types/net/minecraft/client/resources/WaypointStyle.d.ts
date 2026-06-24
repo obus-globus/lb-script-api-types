@@ -8,6 +8,8 @@ export class WaypointStyle extends Record {
     static DEFAULT_FAR_DISTANCE: number;
     static DEFAULT_NEAR_DISTANCE: number;
     static ICON_LOCATION_PREFIX: string;
+    constructor(nearDistance: number, farDistance: number, sprites: Identifier[])
+    constructor(nearDistance: number, farDistance: number, sprites: Identifier[], spriteLocations: Identifier[])
     // private farDistance: number;
     // private nearDistance: number;
     // private spriteLocations: Identifier[];

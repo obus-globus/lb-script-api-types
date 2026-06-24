@@ -1,3 +1,4 @@
+import type { Joiner$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Appendable } from '../../../../../../../java/lang/Appendable.d.ts'
 import type { StringBuilder } from '../../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -6,6 +7,7 @@ import type { Map$Entry } from '../../../../../../../java/util/Map$Entry.d.ts'
 import type { Joiner } from '../../../../../../../org/spongepowered/include/com/google/common/base/Joiner.d.ts'
 export class Joiner$MapJoiner extends Object {
     private constructor(arg0: Joiner, arg1: string)
+    constructor(arg0: Joiner, arg1: string, arg2: Joiner$1)
     // private joiner: Joiner;
     // private keyValueSeparator: string;
     appendTo<A extends Appendable>(arg0: A, arg1: Iterator<Map$Entry<Object, Object>>): A;

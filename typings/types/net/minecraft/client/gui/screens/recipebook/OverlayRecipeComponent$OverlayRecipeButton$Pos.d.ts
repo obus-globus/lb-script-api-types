@@ -2,6 +2,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class OverlayRecipeComponent$OverlayRecipeButton$Pos extends Record {
+    constructor(x: number, y: number, ingredients: ItemStack[])
     // private ingredients: ItemStack[];
     // private x: number;
     // private y: number;

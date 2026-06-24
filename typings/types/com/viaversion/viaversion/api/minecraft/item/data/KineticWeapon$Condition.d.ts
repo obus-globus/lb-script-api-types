@@ -4,6 +4,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class KineticWeapon$Condition extends Record {
     static OPTIONAL_TYPE: Type<KineticWeapon$Condition>;
     static TYPE: Type<KineticWeapon$Condition>;
+    constructor(maxDurationTicks: number, minSpeed: number, minRelativeSpeed: number)
     // private maxDurationTicks: number;
     // private minRelativeSpeed: number;
     // private minSpeed: number;

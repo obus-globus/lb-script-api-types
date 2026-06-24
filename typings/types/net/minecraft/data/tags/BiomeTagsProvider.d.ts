@@ -4,10 +4,10 @@ import type { ToIntFunction } from '../../../../java/util/function/ToIntFunction
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { HolderLookup$Provider } from '../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { PackOutput } from '../../../../net/minecraft/data/PackOutput.d.ts'
-import type { KeyTagProvider } from '../../../../net/minecraft/data/tags/KeyTagProvider.d.ts'
+import type { TagsProvider } from '../../../../net/minecraft/data/tags/TagsProvider.d.ts'
 import type { Biome } from '../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
-export class BiomeTagsProvider extends KeyTagProvider<Biome> {
+export class BiomeTagsProvider extends TagsProvider<Biome> {
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;

@@ -2,6 +2,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class Aquifer$FluidStatus extends Record {
+    constructor(fluidLevel: number, fluidType: BlockState)
     // private fluidLevel: number;
     // private fluidType: BlockState;
     at(blockY: number): BlockState;

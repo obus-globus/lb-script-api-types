@@ -6,6 +6,6 @@ export class KmPropertyAccessorAttributes extends Object {
     readonly annotations: KmAnnotation[];
     // private flags: number;
     getAnnotations(): KmAnnotation[];
-    getFlags$kotlin_metadata(): number;
-    setFlags$kotlin_metadata(arg0: number): void;
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
 }

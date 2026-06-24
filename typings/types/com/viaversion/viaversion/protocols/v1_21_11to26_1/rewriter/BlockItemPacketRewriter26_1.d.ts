@@ -10,7 +10,7 @@ import type { StructuredItemRewriter } from '../../../../../../com/viaversion/vi
 export class BlockItemPacketRewriter26_1 extends StructuredItemRewriter<ClientboundPacket1_21_11, ServerboundPacket26_1, Protocol1_21_11To26_1> {
     static MARKER_KEY: string;
     static downgradeData(paramarg0: StructuredDataKeys1_21_11, paramarg1: StructuredDataContainer): void;
-    static upgradeData(paramarg0: Protocol<any, any, any, any>, paramarg1: StructuredDataKeys1_21_11, paramarg2: StructuredDataContainer): void;
+    static upgradeData(paramarg0: Protocol<any, any, any, any>, paramarg1: UserConnection, paramarg2: StructuredDataKeys1_21_11, paramarg3: StructuredDataContainer): void;
     constructor(arg0: Protocol1_21_11To26_1)
     handleItemDataComponentsToClient(arg0: UserConnection, arg1: Item, arg2: StructuredDataContainer): void;
     handleItemDataComponentsToServer(arg0: UserConnection, arg1: Item, arg2: StructuredDataContainer): void;

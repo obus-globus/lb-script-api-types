@@ -1,7 +1,9 @@
+import type { BertBlock$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { BertBlock } from '../../../../ai/djl/nn/transformer/BertBlock.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BertBlock$Builder extends Object {
     private constructor()
+    constructor(arg0: BertBlock$1)
     // private attentionHeadCount: number;
     // private embeddingSize: number;
     // private hiddenDropoutProbability: number;

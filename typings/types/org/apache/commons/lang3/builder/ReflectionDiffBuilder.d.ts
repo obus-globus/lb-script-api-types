@@ -1,3 +1,4 @@
+import type { ReflectionDiffBuilder$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Field } from '../../../../../java/lang/reflect/Field.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -9,6 +10,7 @@ import type { ToStringStyle } from '../../../../../org/apache/commons/lang3/buil
 export class ReflectionDiffBuilder<T extends unknown> extends Object implements Builder<Diff<Object>[]> {
     static builder(): ReflectionDiffBuilder$Builder<Object>;
     constructor(arg0: T, arg1: T, arg2: ToStringStyle)
+    constructor(arg0: DiffBuilder<Object>, arg1: string[], arg2: ReflectionDiffBuilder$1)
     private constructor(arg0: DiffBuilder<T>, arg1: string[])
     // private diffBuilder: DiffBuilder<T>;
     readonly excludeFieldNames: string[];

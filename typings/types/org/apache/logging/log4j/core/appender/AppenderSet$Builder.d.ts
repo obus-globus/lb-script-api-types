@@ -12,6 +12,8 @@ export class AppenderSet$Builder extends Object implements Builder<AppenderSet> 
     getErrorPrefix(): string;
     getNode(): Node;
     isValid(): boolean;
+    setConfiguration(configuration: Configuration): AppenderSet$Builder;
+    setNode(node: Node): AppenderSet$Builder;
     toString(): string;
     withConfiguration(configuration: Configuration): AppenderSet$Builder;
     withNode(node: Node): AppenderSet$Builder;

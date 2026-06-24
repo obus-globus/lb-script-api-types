@@ -7,6 +7,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class UseCooldown extends Record implements Rewritable {
     static TYPE: Type<UseCooldown>;
+    constructor(seconds: number, cooldownGroup: string)
     // private cooldownGroup: string;
     // private seconds: number;
     cooldownGroup(): string;

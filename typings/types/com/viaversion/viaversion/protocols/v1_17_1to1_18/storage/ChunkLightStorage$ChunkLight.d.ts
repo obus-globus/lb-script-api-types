@@ -1,6 +1,7 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ChunkLightStorage$ChunkLight extends Record {
+    constructor(trustEdges: boolean, skyLightMask: number[], blockLightMask: number[], emptySkyLightMask: number[], emptyBlockLightMask: number[], skyLight: number[][], blockLight: number[][])
     // private blockLight: number[][];
     // private blockLightMask: number[];
     // private emptyBlockLightMask: number[];

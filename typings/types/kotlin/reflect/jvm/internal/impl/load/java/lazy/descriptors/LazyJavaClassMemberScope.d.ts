@@ -1,3 +1,4 @@
+import type { DefaultConstructorMarker } from '../../../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { CallableDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/CallableDescriptor.d.ts'
 import type { ClassConstructorDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassConstructorDescriptor.d.ts'
 import type { ClassDescriptor } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
@@ -34,6 +35,7 @@ import type { KotlinType } from '../../../../../../../../../kotlin/reflect/jvm/i
 export class LazyJavaClassMemberScope extends LazyJavaScope {
     static Companion: MemberScope$Companion;
     constructor(arg0: LazyJavaResolverContext, arg1: ClassDescriptor, arg2: JavaClass, arg3: boolean, arg4: LazyJavaClassMemberScope)
+    constructor(arg0: LazyJavaResolverContext, arg1: ClassDescriptor, arg2: JavaClass, arg3: boolean, arg4: LazyJavaClassMemberScope, arg5: number, arg6: DefaultConstructorMarker)
     // private constructors: NotNullLazyValue<ClassConstructorDescriptor[]>;
     // private enumEntryIndex: NotNullLazyValue<Map<Name, JavaField>>;
     // private generatedNestedClassNames: NotNullLazyValue<Name[]>;
@@ -74,7 +76,7 @@ export class LazyJavaClassMemberScope extends LazyJavaScope {
     // private findGetterOverride(arg0: PropertyDescriptor, arg1: (param0: Name) => SimpleFunctionDescriptor[]): SimpleFunctionDescriptor;
     // private findSetterOverride(arg0: PropertyDescriptor, arg1: (param0: Name) => SimpleFunctionDescriptor[]): SimpleFunctionDescriptor;
     // private getConstructorVisibility(arg0: ClassDescriptor): DescriptorVisibility;
-    getConstructors$descriptors_jvm(): NotNullLazyValue<ClassConstructorDescriptor[]>;
+    getConstructors$org_jetbrains_kotlin_descriptors_jvm(): NotNullLazyValue<ClassConstructorDescriptor[]>;
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
     getContributedFunctions(arg0: Name, arg1: LookupLocation): SimpleFunctionDescriptor[];
     getContributedVariables(arg0: Name, arg1: LookupLocation): PropertyDescriptor[];

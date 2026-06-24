@@ -12,7 +12,7 @@ import type { Logger } from '../../../../../../org/apache/logging/log4j/Logger.d
  *
  * Only supports SOCKS5 proxies.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt:35}
  */
 export class ProxyManager extends Config implements EventListener {
     static INSTANCE: ProxyManager;
@@ -21,13 +21,13 @@ export class ProxyManager extends Config implements EventListener {
     /**
      * The proxy that is set in the current session and used for all server connections
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt:49}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt:49}
      */
     readonly currentProxy: Proxy | null;
     // private logger: Logger;
     // private pipelineHandler: EventHook<PipelineEvent>;
     // private proxies: Proxy[];
-    /*not mapped: */ getProxies$liquidbounce(): Proxy[];
+    /*not mapped: */ getProxies$net_ccbluex_liquidbounce(): Proxy[];
     proxy: Proxy;
     addClientConnection(connection: Connection): void;
     children(): EventListener[];
@@ -41,7 +41,7 @@ export class ProxyManager extends Config implements EventListener {
      * If {@link index} is provided, it will swap out the proxy at that index with the new one.
      * If {@link checkOnly} is true, we will skip adding the proxy to our list.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/b759cac57b26e54694d8c4d48af024a8fb598f62/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt:65}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyManager.kt:65}
      */
     validateProxy(proxy: Proxy, index: number | null, checkOnly: boolean): Result<void>;
 }

@@ -11,6 +11,7 @@ export class Instrument extends Record {
     static DIRECT_CODEC: Codec<Instrument>;
     static DIRECT_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Instrument>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Instrument>>;
+    constructor(soundEvent: Holder<SoundEvent>, useDuration: number, range: number, description: Component)
     // private description: Component;
     // private range: number;
     // private soundEvent: Holder<SoundEvent>;

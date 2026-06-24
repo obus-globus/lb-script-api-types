@@ -26,6 +26,7 @@ export class WrittenBookContent extends Record implements BookContent<Component,
     static TITLE_MAX_LENGTH: number;
     static pagesCodec(paramcontentCodec: Codec<Component>): Codec<Filterable<Component>[]>;
     static resolveForItem(paramitemStack: ItemStack, paramcontext: ResolutionContext, paramregistries: HolderLookup$Provider): boolean;
+    constructor(title: Filterable<string>, author: string, generation: number, pages: Filterable<Component>[], resolved: boolean)
     // private author: string;
     // private generation: number;
     // private pages: Filterable<Component>[];

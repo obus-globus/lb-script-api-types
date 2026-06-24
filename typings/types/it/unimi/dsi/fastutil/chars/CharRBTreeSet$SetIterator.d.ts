@@ -2,8 +2,8 @@ import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/char
 import type { CharRBTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil/chars/CharRBTreeSet$Entry.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharRBTreeSet$SetIterator extends Object implements CharListIterator {
-    constructor(null_: CharRBTreeSet$SetIterator)
-    constructor(null_: CharRBTreeSet$SetIterator, arg1: string)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: string)
     // private curr: CharRBTreeSet$Entry;
     // private index: number;
     // private next: CharRBTreeSet$Entry;

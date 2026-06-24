@@ -11,10 +11,9 @@ export class WorkQueue extends Object {
     poll(): Task | null;
     pollBlocking(): Task | null;
     // private pollBuffer(): Task | null;
-    pollCpu(): Task | null;
     // private pollTo(queue: GlobalQueue): boolean;
     // private pollWithExclusiveMode(onlyBlocking: boolean): Task | null;
-    // private stealWithExclusiveMode(stealingMode: number): Task | null;
+    // private stealWithExclusiveMode(onlyBlocking: boolean): Task | null;
     // private tryExtractFromTheMiddle(index: number, onlyBlocking: boolean): Task | null;
     trySteal(stealingMode: number, stolenTaskRef: Ref$ObjectRef<Task>): number;
     // private tryStealLastScheduled(stealingMode: number, stolenTaskRef: Ref$ObjectRef<Task>): number;

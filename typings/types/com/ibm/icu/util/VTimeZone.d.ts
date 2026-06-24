@@ -10,7 +10,8 @@ import type { Writer } from '../../../../java/io/Writer.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-export class VTimeZone extends BasicTimeZone {
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class VTimeZone extends BasicTimeZone implements Cloneable {
     static GENERIC_LOCATION: number;
     static GMT_ZONE: TimeZone;
     static LONG: number;
@@ -57,8 +58,9 @@ export class VTimeZone extends BasicTimeZone {
     // private tz: BasicTimeZone;
     // private tzurl: string;
     // private vtzlines: string[];
-    clone(): Object;
-    cloneAsThawed(): TimeZone;
+    clone(): VTimeZone;
+    protected clone(): Object;
+    cloneAsThawed(): VTimeZone;
     freeze(): TimeZone;
     getLastModified(): Date;
     getNextTransition(arg0: number, arg1: boolean): TimeZoneTransition;

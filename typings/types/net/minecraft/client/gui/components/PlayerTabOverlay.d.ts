@@ -2,8 +2,8 @@ import type { IPlayerTabOverlay } from '../../../../../com/viaversion/viafabricp
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
-import type { Gui } from '../../../../../net/minecraft/client/gui/Gui.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
+import type { Hud } from '../../../../../net/minecraft/client/gui/Hud.d.ts'
 import type { PlayerTabOverlay$HealthState } from '../../../../../net/minecraft/client/gui/components/PlayerTabOverlay$HealthState.d.ts'
 import type { PlayerTabOverlay$ScoreDisplayEntry } from '../../../../../net/minecraft/client/gui/components/PlayerTabOverlay$ScoreDisplayEntry.d.ts'
 import type { PlayerInfo } from '../../../../../net/minecraft/client/multiplayer/PlayerInfo.d.ts'
@@ -13,11 +13,11 @@ import type { Objective } from '../../../../../net/minecraft/world/scores/Object
 import type { Scoreboard } from '../../../../../net/minecraft/world/scores/Scoreboard.d.ts'
 export class PlayerTabOverlay extends Object implements IPlayerTabOverlay {
     static MAX_ROWS_PER_COL: number;
-    constructor(minecraft: Minecraft, gui: Gui)
+    constructor(minecraft: Minecraft, hud: Hud)
     footer: Component;
-    // private gui: Gui;
     header: Component;
     // private healthStates: Map<UUID, PlayerTabOverlay$HealthState>;
+    // private hud: Hud;
     // private minecraft: Minecraft;
     // private viaFabricPlusVisuals$hideSkins: boolean;
     // private viaFabricPlusVisuals$maxSlots: number;

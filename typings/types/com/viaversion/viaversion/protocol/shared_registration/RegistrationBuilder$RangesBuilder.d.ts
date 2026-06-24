@@ -6,7 +6,7 @@ import type { RegistrationContext } from '../../../../../com/viaversion/viaversi
 import type { SharedRegistrations$RegistrationAction } from '../../../../../com/viaversion/viaversion/protocol/shared_registration/SharedRegistrations$RegistrationAction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RegistrationBuilder$RangesBuilder<CU extends ClientboundPacketType, SU extends ServerboundPacketType> extends Object {
-    private constructor(null_: RegistrationBuilder$RangesBuilder<CU, SU>, arg1: ProtocolVersion)
+    private constructor(null_: RegistrationBuilder, arg1: ProtocolVersion)
     // private completed: boolean;
     // private currentMin: ProtocolVersion;
     since(arg0: (param0: RegistrationContext<CU, SU>) => void): RegistrationBuilder;

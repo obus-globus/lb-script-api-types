@@ -1,3 +1,4 @@
+import type { UncheckedBufferedReader$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { BufferedReader } from '../../../../../java/io/BufferedReader.d.ts'
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { CharBuffer } from '../../../../../java/nio/CharBuffer.d.ts'
@@ -8,6 +9,7 @@ export class UncheckedBufferedReader extends BufferedReader {
     static nullReader(): Reader;
     static of(paramarg0: CharSequence): Reader;
     private constructor(arg0: UncheckedBufferedReader$Builder)
+    constructor(arg0: UncheckedBufferedReader$Builder, arg1: UncheckedBufferedReader$1)
     close(): void;
     mark(arg0: number): void;
     read(): number;

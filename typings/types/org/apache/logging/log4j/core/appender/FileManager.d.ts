@@ -12,7 +12,7 @@ import type { ManagerFactory } from '../../../../../../org/apache/logging/log4j/
 import type { OutputStreamManager } from '../../../../../../org/apache/logging/log4j/core/appender/OutputStreamManager.d.ts'
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 export class FileManager extends OutputStreamManager {
-    static getFileManager(paramfileName: string, paramappend: boolean, paramlocking: boolean, parambufferedIo: boolean, paramcreateOnDemand: boolean, paramadvertiseUri: string, paramlayout: Layout<Serializable>, parambufferSize: number, paramfilePermissions: string, paramfileOwner: string, paramfileGroup: string, paramconfiguration: Configuration): FileManager;
+    static getFileManager(paramfileName: string, paramappend: boolean, paramlocking: boolean, parambufferedIo: boolean, paramcreateOnDemand: boolean, paramadvertiseURI: string, paramlayout: Layout<Serializable>, parambufferSize: number, paramfilePermissions: string, paramfileOwner: string, paramfileGroup: string, paramconfiguration: Configuration): FileManager;
     static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
     static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<OutputStreamManager, Object>): OutputStreamManager;
     static hasManager(paramname: string): boolean;

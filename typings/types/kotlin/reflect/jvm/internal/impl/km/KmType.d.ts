@@ -17,14 +17,14 @@ export class KmType extends Object {
     getAbbreviatedType(): KmType;
     getArguments(): KmTypeProjection[];
     getClassifier(): KmClassifier;
-    getExtensions$kotlin_metadata(): KmTypeExtension[];
-    getFlags$kotlin_metadata(): number;
+    getExtensions$org_jetbrains_kotlin_kotlin_metadata(): KmTypeExtension[];
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
     getFlexibleTypeUpperBound(): KmFlexibleTypeUpperBound;
     getOuterType(): KmType;
     hashCode(): number;
     setAbbreviatedType(arg0: KmType): void;
     setClassifier(arg0: KmClassifier): void;
-    setFlags$kotlin_metadata(arg0: number): void;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
     setFlexibleTypeUpperBound(arg0: KmFlexibleTypeUpperBound): void;
     setOuterType(arg0: KmType): void;
 }

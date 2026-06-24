@@ -4,6 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { ItemVersion } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemVersion.d.ts'
 export class ItemEntry extends Record {
+    constructor(identifier: string, id: number, componentBased: boolean, version: ItemVersion, componentData: Map$Entry<string, Tag>[])
     // private componentBased: boolean;
     // private componentData: Map$Entry<string, Tag>[];
     // private id: number;

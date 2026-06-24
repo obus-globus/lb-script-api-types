@@ -38,8 +38,6 @@ export class ItemInHandRenderer extends Object implements ItemInHandInterface {
     iris$isAnyHandTranslucent(): boolean;
     iris$renderHandsWithCustomRenderer(arg0: HandRenderer, arg1: number, arg2: PoseStack, arg3: SubmitNodeStorage, arg4: LocalPlayer, arg5: number): void;
     itemUsed(hand: InteractionHand): void;
-    // private renderArmWithItem(player: AbstractClientPlayer, frameInterp: number, xRot: number, hand: InteractionHand, attack: number, itemStack: ItemStack, inverseArmHeight: number, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number): void;
-    renderHandsWithItems(frameInterp: number, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, player: LocalPlayer, lightCoords: number): void;
     renderItem(mob: LivingEntity, itemStack: ItemStack, type: ItemDisplayContext, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number): void;
     // private renderMap(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, itemStack: ItemStack): void;
     // private renderMapHand(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, arm: HumanoidArm): void;
@@ -47,6 +45,8 @@ export class ItemInHandRenderer extends Object implements ItemInHandInterface {
     // private renderPlayerArm(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, inverseArmHeight: number, attackValue: number, arm: HumanoidArm): void;
     // private renderTwoHandedMap(poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number, xRot: number, inverseArmHeight: number, attackValue: number): void;
     // private shouldInstantlyReplaceVisibleItem(currentlyVisibleItem: ItemStack, expectedItem: ItemStack): boolean;
+    // private submitArmWithItem(player: AbstractClientPlayer, frameInterp: number, xRot: number, hand: InteractionHand, attack: number, itemStack: ItemStack, inverseArmHeight: number, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, lightCoords: number): void;
+    submitHandsWithItems(frameInterp: number, poseStack: PoseStack, submitNodeCollector: SubmitNodeCollector, player: LocalPlayer, lightCoords: number): void;
     // private swingArm(attack: number, poseStack: PoseStack, invert: number, arm: HumanoidArm): void;
     tick(): void;
     // private viaFabricPlusVisuals$applySwingOffset(arg0: AbstractClientPlayer, arg1: InteractionHand, arg2: number, arg3: PoseStack): void;

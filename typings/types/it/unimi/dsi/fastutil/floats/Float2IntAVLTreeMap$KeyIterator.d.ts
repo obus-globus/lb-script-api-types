@@ -1,8 +1,8 @@
 import type { Float2IntAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/floats/Float2IntAVLTreeMap$TreeIterator.d.ts'
 import type { FloatListIterator } from '../../../../../it/unimi/dsi/fastutil/floats/FloatListIterator.d.ts'
 export class Float2IntAVLTreeMap$KeyIterator extends Float2IntAVLTreeMap$TreeIterator implements FloatListIterator {
-    constructor(null_: Float2IntAVLTreeMap$KeyIterator)
-    constructor(null_: Float2IntAVLTreeMap$KeyIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     add(arg0: number): void;
     next(): number;
     nextFloat(): number;

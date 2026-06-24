@@ -1,6 +1,7 @@
 import type { Tag } from '../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { UserConnection } from '../../../../../com/viaversion/viaversion/api/connection/UserConnection.d.ts'
 import type { MappingData } from '../../../../../com/viaversion/viaversion/api/data/MappingData.d.ts'
+import type { RegistryEntry } from '../../../../../com/viaversion/viaversion/api/minecraft/RegistryEntry.d.ts'
 import type { StructuredDataKeys1_21_11 } from '../../../../../com/viaversion/viaversion/api/minecraft/data/version/StructuredDataKeys1_21_11.d.ts'
 import type { EntityDataTypes1_21_11 } from '../../../../../com/viaversion/viaversion/api/minecraft/entitydata/types/EntityDataTypes1_21_11.d.ts'
 import type { EntityDataTypes26_1 } from '../../../../../com/viaversion/viaversion/api/minecraft/entitydata/types/EntityDataTypes26_1.d.ts'
@@ -24,6 +25,7 @@ import type { NBTComponentRewriter } from '../../../../../com/viaversion/viavers
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Protocol1_21_11To26_1 extends AbstractProtocol<ClientboundPacket1_21_11, ClientboundPacket26_1, ServerboundPacket1_21_9, ServerboundPacket26_1> {
     static MAPPINGS: MappingData26_1;
+    static createJukeboxPlayableEntry(paramarg0: string): RegistryEntry;
     constructor()
     readonly blockRewriter: BlockRewriter<ClientboundPacket1_21_11>;
     readonly componentRewriter: NBTComponentRewriter<ClientboundPacket1_21_11>;

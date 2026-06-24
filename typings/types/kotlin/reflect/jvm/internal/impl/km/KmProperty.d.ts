@@ -13,6 +13,7 @@ export class KmProperty extends Object {
     // private _hasSetter$delegate: BooleanFlagDelegate<Object>;
     readonly annotations: KmAnnotation[];
     readonly backingFieldAnnotations: KmAnnotation[];
+    readonly compilerPluginMetadata: { [key: string]: number[] };
     readonly contextParameters: KmValueParameter[];
     // private contextReceiverTypes: KmType[];
     readonly delegateFieldAnnotations: KmAnnotation[];
@@ -29,11 +30,12 @@ export class KmProperty extends Object {
     readonly versionRequirements: KmVersionRequirement[];
     getAnnotations(): KmAnnotation[];
     getBackingFieldAnnotations(): KmAnnotation[];
+    getCompilerPluginMetadata(): { [key: string]: number[] };
     getContextParameters(): KmValueParameter[];
     getDelegateFieldAnnotations(): KmAnnotation[];
     getExtensionReceiverParameterAnnotations(): KmAnnotation[];
-    getExtensions$kotlin_metadata(): KmPropertyExtension[];
-    getFlags$kotlin_metadata(): number;
+    getExtensions$org_jetbrains_kotlin_kotlin_metadata(): KmPropertyExtension[];
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
     getGetter(): KmPropertyAccessorAttributes;
     getName(): string;
     getReceiverParameterType(): KmType;
@@ -43,7 +45,7 @@ export class KmProperty extends Object {
     getTypeParameters(): KmTypeParameter[];
     getVersionRequirements(): KmVersionRequirement[];
     // private get_hasSetter(): boolean;
-    setFlags$kotlin_metadata(arg0: number): void;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
     setReceiverParameterType(arg0: KmType): void;
     setReturnType(arg0: KmType): void;
     setSetterParameter(arg0: KmValueParameter): void;

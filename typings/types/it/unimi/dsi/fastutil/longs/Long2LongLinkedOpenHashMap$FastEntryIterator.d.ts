@@ -4,8 +4,8 @@ import type { Long2LongMap$Entry } from '../../../../../it/unimi/dsi/fastutil/lo
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 export class Long2LongLinkedOpenHashMap$FastEntryIterator extends Long2LongLinkedOpenHashMap$MapIterator<(param0: Long2LongMap$Entry) => void> implements ObjectListIterator<Long2LongMap$Entry> {
-    constructor(null_: Long2LongLinkedOpenHashMap$FastEntryIterator)
-    constructor(null_: Long2LongLinkedOpenHashMap$FastEntryIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     // private entry: Long2LongLinkedOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Long2LongMap$Entry) => void, arg1: number): void;
     add(arg0: Long2LongMap$Entry): void;

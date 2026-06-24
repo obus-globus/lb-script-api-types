@@ -1,8 +1,8 @@
 import type { MFDataModel$Attribute } from '../../../../com/ibm/icu/message2/MFDataModel$Attribute.d.ts'
 import type { MFDataModel$Declaration } from '../../../../com/ibm/icu/message2/MFDataModel$Declaration.d.ts'
 import type { MFDataModel$Expression } from '../../../../com/ibm/icu/message2/MFDataModel$Expression.d.ts'
-import type { MFDataModel$Function } from '../../../../com/ibm/icu/message2/MFDataModel$Function.d.ts'
 import type { MFDataModel$FunctionExpression } from '../../../../com/ibm/icu/message2/MFDataModel$FunctionExpression.d.ts'
+import type { MFDataModel$FunctionRef } from '../../../../com/ibm/icu/message2/MFDataModel$FunctionRef.d.ts'
 import type { MFDataModel$InputDeclaration } from '../../../../com/ibm/icu/message2/MFDataModel$InputDeclaration.d.ts'
 import type { MFDataModel$Literal } from '../../../../com/ibm/icu/message2/MFDataModel$Literal.d.ts'
 import type { MFDataModel$LiteralExpression } from '../../../../com/ibm/icu/message2/MFDataModel$LiteralExpression.d.ts'
@@ -33,7 +33,7 @@ export class MFSerializer extends Object {
     // private errorType(arg0: string, arg1: Object): void;
     // private expressionToString(arg0: MFDataModel$Expression): void;
     // private functionExpressionToString(arg0: MFDataModel$FunctionExpression): void;
-    // private functionToString(arg0: MFDataModel$Function): void;
+    // private functionToString(arg0: MFDataModel$FunctionRef): void;
     // private inputDeclarationToString(arg0: MFDataModel$InputDeclaration): void;
     // private literalExpressionToString(arg0: MFDataModel$LiteralExpression): void;
     // private literalOrVariableRefToString(arg0: MFDataModel$LiteralOrVariableRef): void;

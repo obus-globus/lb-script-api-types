@@ -5,6 +5,7 @@ import type { ChunkStep } from '../../../../../../net/minecraft/world/level/chun
 export class ChunkPyramid extends Record {
     static GENERATION_PYRAMID: ChunkPyramid;
     static LOADING_PYRAMID: ChunkPyramid;
+    static MAX_CHUNK_COORDINATE_VALUE: number;
     constructor(steps: ChunkStep[])
     // private steps: ChunkStep[];
     equals(o: Object | null): boolean;

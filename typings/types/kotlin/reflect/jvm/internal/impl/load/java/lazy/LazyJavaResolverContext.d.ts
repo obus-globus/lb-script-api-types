@@ -14,7 +14,7 @@ export class LazyJavaResolverContext extends Object {
     readonly typeResolver: JavaTypeResolver;
     getComponents(): JavaResolverComponents;
     getDefaultTypeQualifiers(): JavaTypeQualifiersByElementType;
-    getDelegateForDefaultTypeQualifiers$descriptors_jvm(): Lazy<JavaTypeQualifiersByElementType>;
+    getDelegateForDefaultTypeQualifiers$org_jetbrains_kotlin_descriptors_jvm(): Lazy<JavaTypeQualifiersByElementType>;
     getModule(): ModuleDescriptor;
     getStorageManager(): StorageManager;
     getTypeParameterResolver(): TypeParameterResolver;

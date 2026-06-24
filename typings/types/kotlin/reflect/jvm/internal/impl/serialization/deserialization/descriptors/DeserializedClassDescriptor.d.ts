@@ -77,7 +77,7 @@ export class DeserializedClassDescriptor extends AbstractClassDescriptor impleme
     getModality(): Modality;
     getSource(): SourceElement;
     getStaticScope(): MemberScopeImpl;
-    getThisAsProtoContainer$deserialization(): ProtoContainer$Class;
+    getThisAsProtoContainer$org_jetbrains_kotlin_deserialization(): ProtoContainer$Class;
     getTypeConstructor(): TypeConstructor;
     getUnsubstitutedMemberScope(): MemberScope;
     getUnsubstitutedMemberScope(arg0: KotlinTypeRefiner): MemberScope;
@@ -85,7 +85,7 @@ export class DeserializedClassDescriptor extends AbstractClassDescriptor impleme
     // private getValueClassPropertyType(arg0: Name): SimpleType;
     getValueClassRepresentation(): ValueClassRepresentation<SimpleType>;
     getVisibility(): DescriptorVisibility;
-    hasNestedClass$deserialization(arg0: Name): boolean;
+    hasNestedClass$org_jetbrains_kotlin_deserialization(arg0: Name): boolean;
     isActual(): boolean;
     isCompanionObject(): boolean;
     isData(): boolean;

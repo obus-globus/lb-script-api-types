@@ -34,9 +34,9 @@ export class ProtoChunk extends ChunkAccess {
     static NBT_ATTACHMENT_KEY: string;
     static NO_FILLED_SECTION: number;
     static getOrCreateOffsetList(paramlist: (Object | null)[], paramsectionIndex: number): (Object | null)[];
-    static packOffsetCoordinates(paramblockPos: BlockPos): number;
+    static packOffsetCoordinates(parampos: BlockPos): number;
     static problemPath(parampos: ChunkPos): () => string;
-    static unpackOffsetCoordinates(parampackedCoord: number, paramsectionY: number, paramchunkPos: ChunkPos): BlockPos;
+    static unpackOffsetCoordinates(parampackedData: number, paramsectionY: number, paramchunkPos: ChunkPos): BlockPos;
     constructor(chunkPos: ChunkPos, upgradeData: UpgradeData, sections: LevelChunkSection[], blockTicks: ProtoChunkTicks<Block>, fluidTicks: ProtoChunkTicks<Fluid>, levelHeightAccessor: LevelHeightAccessor, containerFactory: PalettedContainerFactory, blendingData: BlendingData)
     constructor(chunkPos: ChunkPos, upgradeData: UpgradeData, levelHeightAccessor: LevelHeightAccessor, containerFactory: PalettedContainerFactory, blendingData: BlendingData)
     readonly belowZeroRetrogen: BelowZeroRetrogen;
@@ -66,7 +66,7 @@ export class ProtoChunk extends ChunkAccess {
     getOrCreateCarvingMask(): CarvingMask;
     getPersistedStatus(): ChunkStatus;
     getTicksForSerialization(currentTick: number): ChunkAccess$PackedTicks;
-    markPosForPostprocessing(blockPos: BlockPos): void;
+    markPosForPostProcessing(blockPos: BlockPos): void;
     removeBlockEntity(pos: BlockPos): void;
     setBelowZeroRetrogen(belowZeroRetrogen: BelowZeroRetrogen): void;
     setBlockEntity(blockEntity: BlockEntity): void;

@@ -9,10 +9,12 @@ export class Hpack$Reader extends Object {
     dynamicTableByteCount: number;
     headerCount: number;
     // private headerList: Header[];
+    // private headerListByteCount: number;
     // private headerTableSizeSetting: number;
     // private maxDynamicTableByteCount: number;
     // private nextHeaderIndex: number;
     // private source: BufferedSource;
+    // private addHeader(header: Header): void;
     // private adjustDynamicTableByteCount(): void;
     // private clearDynamicTable(): void;
     // private dynamicTableIndex(index: number): number;

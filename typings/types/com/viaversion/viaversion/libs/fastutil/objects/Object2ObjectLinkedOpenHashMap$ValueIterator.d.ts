@@ -3,7 +3,7 @@ import type { ObjectListIterator } from '../../../../../../com/viaversion/viaver
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Object2ObjectLinkedOpenHashMap$ValueIterator extends Object2ObjectLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<V> {
-    constructor(null_: Object2ObjectLinkedOpenHashMap$ValueIterator)
+    constructor(null_: Map<K, V>)
     acceptOnIndex<V extends unknown>(arg0: (param0: V) => void, arg1: number): void;
     add<V extends unknown>(arg0: V): void;
     next<V extends unknown>(): V;

@@ -5,6 +5,7 @@ import type { ApplyBonusCount$Formula } from '../../../../../../../net/minecraft
 import type { ApplyBonusCount$FormulaType } from '../../../../../../../net/minecraft/world/level/storage/loot/functions/ApplyBonusCount$FormulaType.d.ts'
 export class ApplyBonusCount$BinomialWithBonusCount extends Record implements ApplyBonusCount$Formula {
     static TYPE: ApplyBonusCount$FormulaType;
+    private constructor(extraRounds: number, probability: number)
     // private extraRounds: number;
     // private probability: number;
     calculateNewCount(random: RandomSource, count: number, level: number): number;

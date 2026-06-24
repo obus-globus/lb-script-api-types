@@ -8,6 +8,7 @@ import type { ProjectionMatrixBuffer } from '../../../../net/minecraft/client/re
 import type { RenderBuffers } from '../../../../net/minecraft/client/renderer/RenderBuffers.d.ts'
 import type { SubmitNodeStorage } from '../../../../net/minecraft/client/renderer/SubmitNodeStorage.d.ts'
 import type { FeatureRenderDispatcher } from '../../../../net/minecraft/client/renderer/feature/FeatureRenderDispatcher.d.ts'
+import type { FeatureRenderDispatcher$PreparedFrame } from '../../../../net/minecraft/client/renderer/feature/FeatureRenderDispatcher$PreparedFrame.d.ts'
 import type { CameraRenderState } from '../../../../net/minecraft/client/renderer/state/level/CameraRenderState.d.ts'
 import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { Matrix4fc } from '../../../../org/joml/Matrix4fc.d.ts'
@@ -19,6 +20,7 @@ export class HandRenderer extends Object {
     // private bufferSource: RenderBuffers;
     // private cachedProjectionMatrixBuffer: ProjectionMatrixBuffer;
     // private featureRenderDispatcher: FeatureRenderDispatcher;
+    // private frame: FeatureRenderDispatcher$PreparedFrame;
     // private projection: Projection;
     readonly renderingSolid: boolean;
     // private submitNodeCollector: SubmitNodeStorage;

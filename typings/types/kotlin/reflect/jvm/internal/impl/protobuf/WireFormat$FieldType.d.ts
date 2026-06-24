@@ -1,3 +1,4 @@
+import type { WireFormat$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
@@ -25,6 +26,7 @@ export class WireFormat$FieldType extends Enum<WireFormat$FieldType> {
     static valueOf(paramarg0: string): WireFormat$FieldType;
     static values(): (Object | null)[];
     private constructor(arg2: WireFormat$JavaType, arg3: number)
+    constructor(arg2: WireFormat$JavaType, arg3: number, arg4: WireFormat$1)
     readonly javaType: WireFormat$JavaType;
     readonly wireType: number;
     getJavaType(): WireFormat$JavaType;

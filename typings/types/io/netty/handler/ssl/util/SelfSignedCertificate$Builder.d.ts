@@ -1,3 +1,4 @@
+import type { SelfSignedCertificate$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { SelfSignedCertificate } from '../../../../../io/netty/handler/ssl/util/SelfSignedCertificate.d.ts'
 import type { KeyPair } from '../../../../../java/security/KeyPair.d.ts'
 import type { PrivateKey } from '../../../../../java/security/PrivateKey.d.ts'
@@ -7,6 +8,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class SelfSignedCertificate$Builder extends Object {
     private constructor()
+    constructor(arg0: SelfSignedCertificate$1)
     // private algorithm: string;
     // private bits: number;
     // private failure: Throwable;

@@ -10,7 +10,7 @@ import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKe
 import type { EntityType } from '../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { FrogVariant } from '../../../../net/minecraft/world/entity/animal/frog/FrogVariant.d.ts'
 import type { FeatureFlagSet } from '../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
-import type { DyeColor } from '../../../../net/minecraft/world/item/DyeColor.d.ts'
+import type { ColorCollection } from '../../../../net/minecraft/world/level/block/ColorCollection.d.ts'
 import type { LootPool$Builder } from '../../../../net/minecraft/world/level/storage/loot/LootPool$Builder.d.ts'
 import type { LootTable } from '../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 import type { LootTable$Builder } from '../../../../net/minecraft/world/level/storage/loot/LootTable$Builder.d.ts'
@@ -18,7 +18,7 @@ import type { AnyOfCondition$Builder } from '../../../../net/minecraft/world/lev
 import type { LootItemCondition } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export abstract class EntityLootSubProvider extends Object implements FabricEntityLootSubProvider, EntityLootSubProviderAccessor, LootTableSubProvider {
-    static createSheepDispatchPool(paramtableNames: { [key in DyeColor]: ResourceKey<LootTable> }): LootPool$Builder;
+    static createSheepDispatchPool(paramtableNames: ColorCollection<ResourceKey<LootTable>>): LootPool$Builder;
     constructor(enabledFeatures: FeatureFlagSet, registries: HolderLookup$Provider)
     constructor(allowed: FeatureFlagSet, required: FeatureFlagSet, registries: HolderLookup$Provider)
     // private allowed: FeatureFlagSet;

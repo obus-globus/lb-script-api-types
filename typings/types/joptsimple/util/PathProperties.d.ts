@@ -1,3 +1,4 @@
+import type { PathProperties$1 } from '../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Path } from '../../java/nio/file/Path.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
@@ -13,6 +14,7 @@ export class PathProperties extends Enum<PathProperties> {
     static valueOf(paramarg0: string): PathProperties;
     static values(): (Object | null)[];
     private constructor(arg2: string)
+    constructor(arg2: string, arg3: PathProperties$1)
     // private messageKey: string;
     accept(arg0: Path[]): boolean;
     getMessageKey(): string;

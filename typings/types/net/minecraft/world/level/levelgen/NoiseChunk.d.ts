@@ -28,7 +28,7 @@ export class NoiseChunk extends Object implements DensityFunction$ContextProvide
     // private beardifier: DensityFunctions$BeardifierOrMarker;
     // private blendAlpha: NoiseChunk$FlatCache;
     // private blendOffset: NoiseChunk$FlatCache;
-    readonly blender: Blender;
+    // private blender: Blender;
     // private blockStateRule: (param0: DensityFunction$FunctionContext) => BlockState;
     // private cellCaches: NoiseChunk$CacheAllInCell[];
     // private cellCountXZ: number;
@@ -71,7 +71,6 @@ export class NoiseChunk extends Object implements DensityFunction$ContextProvide
     fillAllDirectly(output: number[], function_: DensityFunction): void;
     // private fillSlice(slice0: boolean, cellX: number): void;
     forIndex(cellIndex: number): NoiseChunk;
-    getBlender(): Blender;
     getInterpolatedDensity(): number;
     getInterpolatedState(): BlockState;
     // private getOrComputeBlendingOutput(blockX: number, blockZ: number): Blender$BlendingOutput;

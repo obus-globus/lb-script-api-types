@@ -21,5 +21,6 @@ export interface JavaMethod extends Object, JavaMember, JavaTypeParameterListOwn
     isAbstract(): boolean;
     isDeprecatedInJavaDoc(): boolean;
     isFinal(): boolean;
+    isNative(): boolean;
     isStatic(): boolean;
 }

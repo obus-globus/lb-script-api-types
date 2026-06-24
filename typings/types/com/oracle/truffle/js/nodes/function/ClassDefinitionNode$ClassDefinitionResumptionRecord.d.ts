@@ -4,6 +4,7 @@ import type { JSObject } from '../../../../../../com/oracle/truffle/js/runtime/o
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ClassDefinitionNode$ClassDefinitionResumptionRecord extends Record {
+    private constructor(proto: JSObject, constructor: JSFunctionObject, instanceElements: ClassElementDefinitionRecord[], staticElements: ClassElementDefinitionRecord[], instanceElementIndex: number, staticElementIndex: number, decorators: Object[], startIndex: number)
     // private constructor: JSFunctionObject;
     // private decorators: Object[];
     // private instanceElementIndex: number;

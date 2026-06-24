@@ -7,7 +7,7 @@ import type { AbstractQueuedSynchronizer$ConditionNode } from '../../../../java/
 import type { Condition } from '../../../../java/util/concurrent/locks/Condition.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class AbstractQueuedSynchronizer$ConditionObject extends Object implements Serializable, Condition {
-    constructor(null_: AbstractQueuedSynchronizer$ConditionObject)
+    constructor(null_: AbstractQueuedSynchronizer)
     // private firstWaiter: AbstractQueuedSynchronizer$ConditionNode;
     // private lastWaiter: AbstractQueuedSynchronizer$ConditionNode;
     await(): void;

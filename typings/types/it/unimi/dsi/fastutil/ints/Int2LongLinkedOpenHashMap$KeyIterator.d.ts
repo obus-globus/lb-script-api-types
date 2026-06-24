@@ -2,8 +2,8 @@ import type { Int2LongLinkedOpenHashMap$MapIterator } from '../../../../../it/un
 import type { IntListIterator } from '../../../../../it/unimi/dsi/fastutil/ints/IntListIterator.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 export class Int2LongLinkedOpenHashMap$KeyIterator extends Int2LongLinkedOpenHashMap$MapIterator<(param0: number) => void> implements IntListIterator {
-    constructor(null_: Int2LongLinkedOpenHashMap$KeyIterator)
-    constructor(null_: Int2LongLinkedOpenHashMap$KeyIterator, arg1: number)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number)
     acceptOnIndex(arg0: (param0: number) => void, arg1: number): void;
     add(arg0: number): void;
     next(): number;

@@ -5,6 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class BlockEntityImpl extends Record implements BlockEntity {
     static pack(paramarg0: number, paramarg1: number): number;
+    constructor(packedXZ: number, y: number, typeId: number, tag: Map$Entry<string, Tag>[])
     // private packedXZ: number;
     // private tag: Map$Entry<string, Tag>[];
     // private typeId: number;

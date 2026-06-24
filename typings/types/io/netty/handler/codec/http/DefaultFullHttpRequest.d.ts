@@ -12,6 +12,7 @@ export class DefaultFullHttpRequest extends DefaultHttpRequest implements FullHt
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string)
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: ByteBuf)
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: ByteBuf, arg4: Map$Entry<string, string>[], arg5: Map$Entry<string, string>[])
+    constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: ByteBuf, arg4: Map$Entry<string, string>[], arg5: Map$Entry<string, string>[], arg6: boolean)
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: ByteBuf, arg4: HttpHeadersFactory, arg5: HttpHeadersFactory)
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: ByteBuf, arg4: boolean)
     constructor(arg0: HttpVersion, arg1: HttpMethod, arg2: string, arg3: boolean)

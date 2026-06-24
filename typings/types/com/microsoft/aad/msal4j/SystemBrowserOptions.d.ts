@@ -1,3 +1,4 @@
+import type { SystemBrowserOptions$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { OpenBrowserAction } from '../../../../com/microsoft/aad/msal4j/OpenBrowserAction.d.ts'
 import type { SystemBrowserOptions$SystemBrowserOptionsBuilder } from '../../../../com/microsoft/aad/msal4j/SystemBrowserOptions$SystemBrowserOptionsBuilder.d.ts'
 import type { URI } from '../../../../java/net/URI.d.ts'
@@ -5,6 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class SystemBrowserOptions extends Object {
     static builder(): SystemBrowserOptions$SystemBrowserOptionsBuilder;
     private constructor(arg0: string, arg1: string, arg2: URI, arg3: URI, arg4: OpenBrowserAction)
+    constructor(arg0: string, arg1: string, arg2: URI, arg3: URI, arg4: OpenBrowserAction, arg5: SystemBrowserOptions$1)
     // private browserRedirectError: URI;
     // private browserRedirectSuccess: URI;
     // private htmlMessageError: string;

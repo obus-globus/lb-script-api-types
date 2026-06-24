@@ -5,7 +5,6 @@ export class InlineClassRepresentation<Type extends RigidTypeMarker> extends Val
     constructor(arg0: Name, arg1: Type)
     readonly underlyingPropertyName: Name;
     readonly underlyingType: Type;
-    containsPropertyWithName(arg0: Name): boolean;
     getUnderlyingPropertyName(): Name;
     getUnderlyingType(): Type;
     toString(): string;

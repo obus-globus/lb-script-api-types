@@ -4,6 +4,7 @@ import type { FuelValueEvents$Context } from '../../../../../../net/fabricmc/fab
 import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { FeatureFlagSet } from '../../../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export class FuelRegistryEventsContextImpl extends Record implements FuelValueEvents$Context {
+    constructor(registries: HolderLookup$Provider, enabledFeatures: FeatureFlagSet, baseSmeltTime: number)
     // private baseSmeltTime: number;
     // private enabledFeatures: FeatureFlagSet;
     // private registries: HolderLookup$Provider;

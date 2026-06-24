@@ -32,7 +32,7 @@ export class SurfaceSystem extends Object {
     readonly seaLevel: number;
     // private surfaceNoise: NormalNoise;
     // private surfaceSecondaryNoise: NormalNoise;
-    buildSurface(randomState: RandomState, biomeManager: BiomeManager, biomes: Biome[], useLegacyRandom: boolean, generationContext: WorldGenerationContext, protoChunk: ChunkAccess, noiseChunk: NoiseChunk, ruleSource: SurfaceRules$RuleSource): void;
+    buildSurface(randomState: RandomState, biomeManager: BiomeManager, useLegacyRandom: boolean, generationContext: WorldGenerationContext, protoChunk: ChunkAccess, noiseChunk: NoiseChunk, ruleSource: SurfaceRules$RuleSource, possibleBiomes: Holder<Biome>[]): void;
     // private erodedBadlandsExtension(column: BlockColumn, blockX: number, blockZ: number, height: number, protoChunk: LevelHeightAccessor): void;
     // private frozenOceanExtension(minSurfaceLevel: number, surfaceBiome: Biome, column: BlockColumn, blockPos: BlockPos$MutableBlockPos, blockX: number, blockZ: number, height: number): void;
     getBand(worldX: number, y: number, worldZ: number): BlockState;

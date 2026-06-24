@@ -8,6 +8,7 @@ export class RecipeRewriter1_21_2$ShapedRecipe extends Record implements RecipeR
     static SLOT_DISPLAY_COMPOSITE: number;
     static SLOT_DISPLAY_EMPTY: number;
     static SLOT_DISPLAY_ITEM: number;
+    constructor(index: number, identifier: string, group: number, category: number, width: number, height: number, ingredients: Item[][], result: Item, showNotification: boolean)
     // private category: number;
     // private group: number;
     // private height: number;

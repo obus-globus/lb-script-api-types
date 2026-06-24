@@ -6,6 +6,7 @@ import type { SoundEvent } from '../../../../net/minecraft/sounds/SoundEvent.d.t
 export class AmbientMoodSettings extends Record {
     static CODEC: Codec<AmbientMoodSettings>;
     static LEGACY_CAVE_SETTINGS: AmbientMoodSettings;
+    constructor(soundEvent: Holder<SoundEvent>, tickDelay: number, blockSearchExtent: number, soundPositionOffset: number)
     // private blockSearchExtent: number;
     // private soundEvent: Holder<SoundEvent>;
     // private soundPositionOffset: number;

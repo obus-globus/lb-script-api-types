@@ -11,6 +11,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 export class ClientboundPlayerRotationPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundPlayerRotationPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(yRot: number, relativeY: boolean, xRot: number, relativeX: boolean)
     // private relativeX: boolean;
     // private relativeY: boolean;
     // private xRot: number;

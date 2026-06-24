@@ -7,14 +7,16 @@ export class KmConstructor extends Object {
     constructor()
     constructor(arg0: number)
     readonly annotations: KmAnnotation[];
+    readonly compilerPluginMetadata: { [key: string]: number[] };
     // private extensions: KmConstructorExtension[];
     // private flags: number;
     readonly valueParameters: KmValueParameter[];
     readonly versionRequirements: KmVersionRequirement[];
     getAnnotations(): KmAnnotation[];
-    getExtensions$kotlin_metadata(): KmConstructorExtension[];
-    getFlags$kotlin_metadata(): number;
+    getCompilerPluginMetadata(): { [key: string]: number[] };
+    getExtensions$org_jetbrains_kotlin_kotlin_metadata(): KmConstructorExtension[];
+    getFlags$org_jetbrains_kotlin_kotlin_metadata(): number;
     getValueParameters(): KmValueParameter[];
     getVersionRequirements(): KmVersionRequirement[];
-    setFlags$kotlin_metadata(arg0: number): void;
+    setFlags$org_jetbrains_kotlin_kotlin_metadata(arg0: number): void;
 }

@@ -9,6 +9,8 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ToolProperties extends Record implements Rewritable {
     static TYPE1_20_5: Type<ToolProperties>;
     static TYPE1_21_5: Type<ToolProperties>;
+    constructor(arg0: ToolRule[], arg1: number, arg2: number)
+    constructor(rules: ToolRule[], defaultMiningSpeed: number, damagePerBlock: number, canDestroyBlocksInCreative: boolean)
     // private canDestroyBlocksInCreative: boolean;
     // private damagePerBlock: number;
     // private defaultMiningSpeed: number;

@@ -13,6 +13,7 @@ export abstract class AbstractLayout extends Object implements Layout {
     getWidth(): number;
     getX(): number;
     getY(): number;
+    removeChildren(): void;
     setX(x: number): void;
     setY(y: number): void;
     visitWidgets(widgetVisitor: (param0: AbstractWidget) => void): void;

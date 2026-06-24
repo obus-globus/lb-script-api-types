@@ -1,8 +1,9 @@
 import type { DictionaryBreakEngine$DequeI } from '../../../../com/ibm/icu/impl/breakiter/DictionaryBreakEngine$DequeI.d.ts'
+import type { RuleBasedBreakIterator } from '../../../../com/ibm/icu/text/RuleBasedBreakIterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RuleBasedBreakIterator$BreakCache extends Object {
-    constructor(null_: RuleBasedBreakIterator$BreakCache)
-    constructor(null_: RuleBasedBreakIterator$BreakCache, arg1: RuleBasedBreakIterator$BreakCache)
+    constructor(null_: RuleBasedBreakIterator)
+    constructor(null_: RuleBasedBreakIterator, arg1: RuleBasedBreakIterator$BreakCache)
     // private fBoundaries: number[];
     // private fBufIdx: number;
     // private fEndBufIdx: number;

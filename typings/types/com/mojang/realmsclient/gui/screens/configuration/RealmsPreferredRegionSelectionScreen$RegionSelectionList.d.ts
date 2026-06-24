@@ -1,3 +1,4 @@
+import type { RealmsPreferredRegionSelectionScreen } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen.d.ts'
 import type { RealmsPreferredRegionSelectionScreen$RegionSelectionList$Entry } from '../../../../../../com/mojang/realmsclient/gui/screens/configuration/RealmsPreferredRegionSelectionScreen$RegionSelectionList$Entry.d.ts'
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
 import type { ObjectSelectionList } from '../../../../../../net/minecraft/client/gui/components/ObjectSelectionList.d.ts'
@@ -9,6 +10,6 @@ export class RealmsPreferredRegionSelectionScreen$RegionSelectionList extends Ob
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    private constructor(null_: RealmsPreferredRegionSelectionScreen$RegionSelectionList)
+    private constructor(null_: RealmsPreferredRegionSelectionScreen)
     setSelected(selected: RealmsPreferredRegionSelectionScreen$RegionSelectionList$Entry): void;
 }

@@ -23,7 +23,7 @@ import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class InstrumentationHandler$AbstractInstrumenter extends Instrumenter {
-    constructor(null_: InstrumentationHandler$AbstractInstrumenter)
+    constructor(null_: InstrumentationHandler)
     attachAllocationListener<T extends AllocationListener>(filter: AllocationEventFilter, listener: T): EventBinding<T>;
     attachErrConsumer<T extends OutputStream>(stream: T): EventBinding<T>;
     attachExecuteSourceListener<T extends ExecuteSourceListener>(filter: SourceFilter, listener: T, notifyLoaded: boolean): EventBinding<T>;

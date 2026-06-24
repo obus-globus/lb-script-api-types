@@ -1,4 +1,5 @@
 import type { NetherNetChildChannel } from '../../../../../dev/kastle/netty/channel/nethernet/NetherNetChildChannel.d.ts'
+import type { NetherNetServerChannel } from '../../../../../dev/kastle/netty/channel/nethernet/NetherNetServerChannel.d.ts'
 import type { PeerConnectionObserver } from '../../../../../dev/kastle/webrtc/PeerConnectionObserver.d.ts'
 import type { RTCDataChannel } from '../../../../../dev/kastle/webrtc/RTCDataChannel.d.ts'
 import type { RTCIceCandidate } from '../../../../../dev/kastle/webrtc/RTCIceCandidate.d.ts'
@@ -10,7 +11,7 @@ import type { RTCSignalingState } from '../../../../../dev/kastle/webrtc/RTCSign
 import type { ScheduledFuture } from '../../../../../io/netty/util/concurrent/ScheduledFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class NetherNetServerChannel$ServerPeerConnectionObserver extends Object implements PeerConnectionObserver {
-    constructor(null_: NetherNetServerChannel$ServerPeerConnectionObserver, arg1: number, arg2: string)
+    constructor(null_: NetherNetServerChannel, arg1: number, arg2: string)
     // private child: NetherNetChildChannel;
     // private connectionId: number;
     readonly handshakeTimeout: ScheduledFuture<Object>;

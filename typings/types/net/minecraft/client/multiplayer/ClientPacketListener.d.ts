@@ -1,5 +1,6 @@
 import type { GameProfile } from '../../../../com/mojang/authlib/GameProfile.d.ts'
 import type { CommandDispatcher } from '../../../../com/mojang/brigadier/CommandDispatcher.d.ts'
+import type { ParseResults } from '../../../../com/mojang/brigadier/ParseResults.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { ThreadLocal } from '../../../../java/lang/ThreadLocal.d.ts'
 import type { WeakReference } from '../../../../java/lang/ref/WeakReference.d.ts'
@@ -16,6 +17,7 @@ import type { GlobalAttachmentsImpl } from '../../../../net/fabricmc/fabric/impl
 import type { ClientCommandInternals$LastReceivedCommandsPacketAccessor } from '../../../../net/fabricmc/fabric/impl/command/client/ClientCommandInternals$LastReceivedCommandsPacketAccessor.d.ts'
 import type { PacketListenerExtensions } from '../../../../net/fabricmc/fabric/impl/networking/PacketListenerExtensions.d.ts'
 import type { ClientPlayNetworkAddon } from '../../../../net/fabricmc/fabric/impl/networking/client/ClientPlayNetworkAddon.d.ts'
+import type { ClientPacketListenerAccessor } from '../../../../net/fabricmc/fabric/mixin/command/client/ClientPacketListenerAccessor.d.ts'
 import type { ClientClockManager } from '../../../../net/minecraft/client/ClientClockManager.d.ts'
 import type { ClientRecipeBook } from '../../../../net/minecraft/client/ClientRecipeBook.d.ts'
 import type { DebugQueryHandler } from '../../../../net/minecraft/client/DebugQueryHandler.d.ts'
@@ -206,8 +208,9 @@ import type { FuelValues } from '../../../../net/minecraft/world/level/block/ent
 import type { LevelChunk } from '../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 import type { LevelLightEngine } from '../../../../net/minecraft/world/level/lighting/LevelLightEngine.d.ts'
 import type { Scoreboard } from '../../../../net/minecraft/world/scores/Scoreboard.d.ts'
-export class ClientPacketListener extends ClientCommonPacketListenerImpl implements GlobalAttachmentsProvider, ClientCommandInternals$LastReceivedCommandsPacketAccessor, PacketListenerExtensions, TickablePacketListener, ClientGamePacketListener {
+export class ClientPacketListener extends ClientCommonPacketListenerImpl implements GlobalAttachmentsProvider, ClientCommandInternals$LastReceivedCommandsPacketAccessor, PacketListenerExtensions, ClientPacketListenerAccessor, TickablePacketListener, ClientGamePacketListener {
     static TELEPORT_INTERPOLATION_THRESHOLD: number;
+    static invokeIsValidCommand(paramarg0: ParseResults<Object>): boolean;
     constructor(minecraft: Minecraft, connection: Connection, cookie: CommonListenerCookie)
     readonly addon: ClientPlayNetworkAddon;
     readonly advancements: ClientAdvancements;
@@ -235,6 +238,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     readonly localGameProfile: GameProfile;
     // private messageSignatureCache: MessageSignatureCache;
     // private nextChatIndex: number;
+    // private onlineMode: boolean;
     // private pingDebugMonitor: PingDebugMonitor;
     // private playerInfoMap: Map<UUID, PlayerInfo>;
     // private potionBrewing: PotionBrewing;
@@ -281,6 +285,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     getLocalGameProfile(): GameProfile;
     getOnlinePlayerIds(): UUID[];
     getOnlinePlayers(): PlayerInfo[];
+    getPlayerCompiledSectionCallback(): () => void;
     getPlayerInfo(player: UUID): PlayerInfo;
     getPlayerInfo(player: string): PlayerInfo;
     getPlayerInfoIgnoreCase(player: string): PlayerInfo;
@@ -304,6 +309,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     handleChunkBatchFinished(packet: ClientboundChunkBatchFinishedPacket): void;
     handleChunkBatchStart(packet: ClientboundChunkBatchStartPacket): void;
     handleChunkBlocksUpdate(packet: ClientboundSectionBlocksUpdatePacket): void;
+    // private handleChunkBlocksUpdate$mixinextras$wrapped$314(arg0: ClientboundSectionBlocksUpdatePacket): void;
     handleChunksBiomes(packet: ClientboundChunksBiomesPacket): void;
     handleCommandSuggestions(packet: ClientboundCommandSuggestionsPacket): void;
     handleCommands(packet: ClientboundCommandsPacket): void;
@@ -421,6 +427,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     levels(): ResourceKey<Level>[];
     markMessageAsProcessed(signature: MessageSignature, wasShown: boolean): void;
     // private notifyPlayerLoaded(): void;
+    onlineMode(): boolean;
     // private openCommandSendConfirmationWindow(command: string, messageKey: string, screenAfterCommand: Screen): void;
     // private openDemoIntroScreen(options: Options): void;
     // private openSendConfirmationWindow(command: string, messageKey: string, acceptButton: Component, onAccept: () => void): void;

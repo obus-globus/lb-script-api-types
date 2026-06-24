@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 import type { ClientboundCommandsPacket$NodeStub } from '../../../../../net/minecraft/network/protocol/game/ClientboundCommandsPacket$NodeStub.d.ts'
 export class ClientboundCommandsPacket$Entry extends Record {
+    private constructor(stub: ClientboundCommandsPacket$NodeStub, flags: number, redirect: number, children: number[])
     // private children: number[];
     // private flags: number;
     // private redirect: number;

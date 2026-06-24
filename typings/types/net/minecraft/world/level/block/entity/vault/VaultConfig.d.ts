@@ -1,3 +1,4 @@
+import type { Codec } from '../../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { DataResult } from '../../../../../../../com/mojang/serialization/DataResult.d.ts'
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../../../java/util/Optional.d.ts'
@@ -8,6 +9,12 @@ import type { PlayerDetector } from '../../../../../../../net/minecraft/world/le
 import type { PlayerDetector$EntitySelector } from '../../../../../../../net/minecraft/world/level/block/entity/trialspawner/PlayerDetector$EntitySelector.d.ts'
 import type { LootTable } from '../../../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 export class VaultConfig extends Record {
+    static CODEC: Codec<VaultConfig>;
+    static DEFAULT: VaultConfig;
+    static TAG_NAME: string;
+    private constructor()
+    constructor(lootTable: ResourceKey<LootTable>, activationRange: number, deactivationRange: number, keyItem: ItemStack, overrideDisplayItems: Optional<ResourceKey<LootTable>>)
+    constructor(lootTable: ResourceKey<LootTable>, activationRange: number, deactivationRange: number, keyItem: ItemStack, overrideLootTableToDisplay: Optional<ResourceKey<LootTable>>, playerDetector: PlayerDetector, entitySelector: PlayerDetector$EntitySelector)
     // private activationRange: number;
     // private deactivationRange: number;
     // private entitySelector: PlayerDetector$EntitySelector;

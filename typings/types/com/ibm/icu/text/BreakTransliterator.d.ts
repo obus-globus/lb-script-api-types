@@ -8,7 +8,9 @@ import type { ULocale } from '../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Enumeration } from '../../../../java/util/Enumeration.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
-export class BreakTransliterator extends Transliterator {
+import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
+export class BreakTransliterator extends Transliterator implements Cloneable {
     static FORWARD: number;
     static REVERSE: number;
     static createFromRules(paramarg0: string, paramarg1: string, paramarg2: number): Transliterator;
@@ -30,10 +32,9 @@ export class BreakTransliterator extends Transliterator {
     constructor(arg0: string, arg1: UnicodeFilter)
     constructor(arg0: string, arg1: UnicodeFilter, arg2: BreakIterator, arg3: string)
     // private bi: BreakIterator;
-    // private boundaries: number[];
-    // private boundaryCount: number;
     readonly insertion: string;
     addSourceTargetSet(arg0: string[], arg1: string[], arg2: string[]): void;
+    protected clone(): Object;
     getBreakIterator(): BreakIterator;
     getInsertion(): string;
     handleTransliterate(arg0: Replaceable, arg1: Transliterator$Position, arg2: boolean): void;

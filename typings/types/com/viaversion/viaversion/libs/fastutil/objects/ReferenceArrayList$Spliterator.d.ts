@@ -10,8 +10,8 @@ export class ReferenceArrayList$Spliterator extends Object implements ObjectSpli
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: ReferenceArrayList$Spliterator)
-    private constructor(null_: ReferenceArrayList$Spliterator, arg1: number, arg2: number, arg3: boolean)
+    constructor(null_: K[])
+    private constructor(null_: K[], arg1: number, arg2: number, arg3: boolean)
     // private hasSplit: boolean;
     // private max: number;
     // private pos: number;

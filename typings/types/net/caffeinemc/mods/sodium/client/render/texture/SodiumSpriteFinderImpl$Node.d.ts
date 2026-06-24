@@ -1,7 +1,8 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
+import type { SodiumSpriteFinderImpl } from '../../../../../../../net/caffeinemc/mods/sodium/client/render/texture/SodiumSpriteFinderImpl.d.ts'
 import type { TextureAtlasSprite } from '../../../../../../../net/minecraft/client/renderer/texture/TextureAtlasSprite.d.ts'
 export class SodiumSpriteFinderImpl$Node extends Object {
-    constructor(null_: SodiumSpriteFinderImpl$Node, arg1: number, arg2: number, arg3: number)
+    constructor(null_: SodiumSpriteFinderImpl, arg1: number, arg2: number, arg3: number)
     // private cellRadius: number;
     // private highHigh: Object;
     // private highLow: Object;

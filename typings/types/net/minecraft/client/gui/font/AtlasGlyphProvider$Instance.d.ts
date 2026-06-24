@@ -14,6 +14,7 @@ export class AtlasGlyphProvider$Instance extends Record implements PlainTextRend
     static DEFAULT_HEIGHT: number;
     static DEFAULT_WIDTH: number;
     static DEFUAULT_ASCENT: number;
+    private constructor(renderTypes: GlyphRenderTypes, textureView: GpuTextureView, sprite: TextureAtlasSprite, x: number, y: number, color: number, shadowColor: number, shadowOffset: number, style: Style)
     // private color: number;
     // private renderTypes: GlyphRenderTypes;
     // private shadowColor: number;

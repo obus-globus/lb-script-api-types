@@ -11,8 +11,8 @@ export class Double2ByteOpenHashMap$EntrySpliterator extends Double2ByteOpenHash
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: Double2ByteOpenHashMap$EntrySpliterator)
-    constructor(null_: Double2ByteOpenHashMap$EntrySpliterator, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
+    constructor(null_: { [key: string]: any })
+    constructor(null_: { [key: string]: any }, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     acceptOnIndex(arg0: (param0: Double2ByteMap$Entry) => void, arg1: number): void;
     characteristics(): number;
     makeForSplit(arg0: number, arg1: number, arg2: boolean): Double2ByteOpenHashMap$EntrySpliterator;

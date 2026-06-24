@@ -14,6 +14,7 @@ export class EnchantmentActiveCheck extends Record implements LootItemCondition 
     static TYPED_CODEC: Codec<LootItemCondition>;
     static enchantmentActiveCheck(): () => LootItemCondition;
     static enchantmentInactiveCheck(): () => LootItemCondition;
+    constructor(active: boolean)
     // private active: boolean;
     active(): boolean;
     codec(): MapCodec<EnchantmentActiveCheck>;

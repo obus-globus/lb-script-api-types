@@ -3,6 +3,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AnimationChannel$Interpolation } from '../../../../net/minecraft/client/animation/AnimationChannel$Interpolation.d.ts'
 import type { Vector3fc } from '../../../../org/joml/Vector3fc.d.ts'
 export class Keyframe extends Record {
+    constructor(timestamp: number, postTarget: Vector3fc, interpolation: AnimationChannel$Interpolation)
+    constructor(timestamp: number, preTarget: Vector3fc, postTarget: Vector3fc, interpolation: AnimationChannel$Interpolation)
     // private interpolation: AnimationChannel$Interpolation;
     // private postTarget: Vector3fc;
     // private preTarget: Vector3fc;

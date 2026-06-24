@@ -18,6 +18,10 @@ export class RoutingAppender$Builder<B extends RoutingAppender$Builder<B>> exten
     getRewritePolicy(): RewritePolicy;
     getRoutes(): Routes;
     isValid(): boolean;
+    setDefaultRouteScript(defaultRouteScript: AbstractScript): B;
+    setPurgePolicy(purgePolicy: PurgePolicy): void;
+    setRewritePolicy(rewritePolicy: RewritePolicy): B;
+    setRoutes(routes: Routes): B;
     withDefaultRouteScript(defaultRouteScript: AbstractScript): B;
     withPurgePolicy(purgePolicy: PurgePolicy): void;
     withRewritePolicy(rewritePolicy: RewritePolicy): B;

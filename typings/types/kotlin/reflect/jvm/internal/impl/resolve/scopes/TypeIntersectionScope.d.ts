@@ -1,3 +1,4 @@
+import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
 import type { PropertyDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/PropertyDescriptor.d.ts'
 import type { SimpleFunctionDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/SimpleFunctionDescriptor.d.ts'
@@ -14,6 +15,7 @@ export class TypeIntersectionScope extends AbstractScopeAdapter {
     static Companion: TypeIntersectionScope$Companion;
     static create(paramarg0: string, paramarg1: KotlinType[]): MemberScope;
     private constructor(arg0: string, arg1: MemberScope)
+    constructor(arg0: string, arg1: MemberScope, arg2: DefaultConstructorMarker)
     // private debugName: string;
     // private workerScope: MemberScope;
     getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): DeclarationDescriptor[];

@@ -3,6 +3,7 @@ import type { URL } from '../../../../../java/net/URL.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ResourcePack$Key } from '../../../../../net/raphimc/viabedrock/api/resourcepack/ResourcePack$Key.d.ts'
 export class ResourcePackLoadStateTracker$Info extends Record {
+    constructor(key: ResourcePack$Key, contentKey: number[], contentId: string, httpUrl: URL)
     // private contentId: string;
     // private contentKey: number[];
     // private httpUrl: URL;

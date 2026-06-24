@@ -6,6 +6,8 @@ import type { ClientboundBossEventPacket$Handler } from '../../../../../net/mine
 import type { ClientboundBossEventPacket$Operation } from '../../../../../net/minecraft/network/protocol/game/ClientboundBossEventPacket$Operation.d.ts'
 import type { ClientboundBossEventPacket$OperationType } from '../../../../../net/minecraft/network/protocol/game/ClientboundBossEventPacket$OperationType.d.ts'
 export class ClientboundBossEventPacket$UpdateProgressOperation extends Record implements ClientboundBossEventPacket$Operation {
+    private constructor(progress: number)
+    private constructor(input: RegistryFriendlyByteBuf)
     // private progress: number;
     dispatch(id: UUID, handler: ClientboundBossEventPacket$Handler): void;
     equals(o: Object | null): boolean;

@@ -39,12 +39,14 @@ export class AdvancementsScreen extends Screen implements ClientAdvancements$Lis
     // private isScrolling: boolean;
     // private lastScreen: Screen;
     // private layout: HeaderAndFooterLayout;
+    // private leftPos: number;
     // private selectedTab: AdvancementTab;
     // private tabs: Map<AdvancementHolder, AdvancementTab>;
-    // private extractInside(graphics: GuiGraphicsExtractor, xo: number, yo: number): void;
+    // private topPos: number;
+    // private extractInside(graphics: GuiGraphicsExtractor): void;
     extractRenderState(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, a: number): void;
-    // private extractTooltips(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number, xo: number, yo: number): void;
-    extractWindow(graphics: GuiGraphicsExtractor, xo: number, yo: number, mouseX: number, mouseY: number): void;
+    // private extractTooltips(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): void;
+    extractWindow(graphics: GuiGraphicsExtractor, mouseX: number, mouseY: number): void;
     getAdvancementWidget(node: AdvancementNode): AdvancementWidget;
     // private getTab(node: AdvancementNode): AdvancementTab;
     init(): void;
@@ -64,4 +66,5 @@ export class AdvancementsScreen extends Screen implements ClientAdvancements$Lis
     onUpdateAdvancementProgress(advancement: AdvancementNode, progress: AdvancementProgress): void;
     removed(): void;
     repositionElements(): void;
+    tick(): void;
 }

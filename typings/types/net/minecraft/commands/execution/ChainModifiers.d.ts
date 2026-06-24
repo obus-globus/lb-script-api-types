@@ -2,6 +2,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ChainModifiers extends Record {
     static DEFAULT: ChainModifiers;
+    constructor(flags: number)
     // private flags: number;
     equals(o: Object | null): boolean;
     flags(): number;

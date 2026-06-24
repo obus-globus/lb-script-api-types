@@ -2,7 +2,7 @@ import type { BooleanConsumer } from '../../../../../it/unimi/dsi/fastutil/boole
 import type { BooleanListIterator } from '../../../../../it/unimi/dsi/fastutil/booleans/BooleanListIterator.d.ts'
 import type { Byte2BooleanLinkedOpenHashMap$MapIterator } from '../../../../../it/unimi/dsi/fastutil/bytes/Byte2BooleanLinkedOpenHashMap$MapIterator.d.ts'
 export class Byte2BooleanLinkedOpenHashMap$ValueIterator extends Byte2BooleanLinkedOpenHashMap$MapIterator<(param0: boolean) => void> implements BooleanListIterator {
-    constructor(null_: Byte2BooleanLinkedOpenHashMap$ValueIterator)
+    constructor(null_: { [key: string]: any })
     acceptOnIndex(arg0: (param0: boolean) => void, arg1: number): void;
     add(arg0: boolean): void;
     next(): boolean;

@@ -1,6 +1,8 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HitboxRenderState extends Record {
+    constructor(x0: number, y0: number, z0: number, x1: number, y1: number, z1: number, red: number, green: number, blue: number)
+    constructor(x0: number, y0: number, z0: number, x1: number, y1: number, z1: number, offsetX: number, offsetY: number, offsetZ: number, red: number, green: number, blue: number)
     // private blue: number;
     // private green: number;
     // private offsetX: number;

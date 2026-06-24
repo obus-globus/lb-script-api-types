@@ -14,12 +14,14 @@ import type { DamageSource } from '../../../../../../net/minecraft/world/damages
 import type { MobEffectInstance } from '../../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 import type { AgeableMob } from '../../../../../../net/minecraft/world/entity/AgeableMob.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
+import type { EntityDimensions } from '../../../../../../net/minecraft/world/entity/EntityDimensions.d.ts'
 import type { EntitySpawnReason } from '../../../../../../net/minecraft/world/entity/EntitySpawnReason.d.ts'
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { EquipmentSlot } from '../../../../../../net/minecraft/world/entity/EquipmentSlot.d.ts'
 import type { Leashable } from '../../../../../../net/minecraft/world/entity/Leashable.d.ts'
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { Mob } from '../../../../../../net/minecraft/world/entity/Mob.d.ts'
+import type { Pose } from '../../../../../../net/minecraft/world/entity/Pose.d.ts'
 import type { Brain } from '../../../../../../net/minecraft/world/entity/ai/Brain.d.ts'
 import type { Brain$Packed } from '../../../../../../net/minecraft/world/entity/ai/Brain$Packed.d.ts'
 import type { AttributeModifier } from '../../../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
@@ -39,6 +41,7 @@ import type { ValueOutput } from '../../../../../../net/minecraft/world/level/st
 import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec2 } from '../../../../../../net/minecraft/world/phys/Vec2.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
+import type { CollisionContext } from '../../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 import type { ScoreHolder } from '../../../../../../net/minecraft/world/scores/ScoreHolder.d.ts'
 export class HappyGhast extends Animal {
@@ -48,9 +51,12 @@ export class HappyGhast extends Animal {
     static AXIS_SPECIFIC_ELASTICITY: Vec3;
     static BABY_SCALE: number;
     static BABY_START_AGE: number;
+    static BASE_HORIZONTAL_AIR_DRAG: number;
     static BASE_JUMP_POWER: number;
     static BASE_SAFE_FALL_DISTANCE: number;
+    static BASE_SWIM_SPEED: number;
     static BASE_TICKS_REQUIRED_TO_FREEZE: number;
+    static BASE_VERTICAL_AIR_DRAG: number;
     static BOARDING_COOLDOWN: number;
     static BODY_ARMOR_OFFSET: number;
     static CONTENTS_SLOT_INDEX: number;
@@ -59,15 +65,27 @@ export class HappyGhast extends Animal {
     static DEFAULT_BASE_GRAVITY: number;
     static DEFAULT_BB_HEIGHT: number;
     static DEFAULT_BB_WIDTH: number;
+    static DEFAULT_BELOW_NAME_DISTANCE: number;
+    static DEFAULT_NAME_TAG_DISTANCE: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_2: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_0_5: number;
     static DELTA_AFFECTED_BY_BLOCKS_BELOW_1_0: number;
+    static DOLPHINS_GRACE_WATER_DRAG: number;
+    static ELYTRA_HORIZONTAL_AIR_DRAG: number;
+    static ELYTRA_VERTICAL_AIR_DRAG: number;
     static ENTITY_ATTACHMENT_POINT: Vec3[];
     static EQUIPMENT_SLOT_OFFSET: number;
     static EXTRA_RENDER_CULLING_SIZE_WITH_BIG_HAT: number;
     static FAST_HEALING_TICKS: number;
+    static FLYING_AIR_DRAG: number;
+    static FLYING_LAVA_DRAG: number;
+    static FLYING_VERTICAL_AIR_DRAG: number;
+    static FLYING_WATER_DRAG: number;
     static FREEZE_HURT_FREQUENCY: number;
+    static INVALID_ENTITY_ID: number;
     static LARGE_RESTRICTION_RADIUS: number;
+    static LAVA_DRAG: number;
+    static LAVA_SHALLOW_VERTICAL_DRAG: number;
     static LEASHER_ATTACHMENT_POINT: Vec3[];
     static LEASH_ELASTIC_DIST: number;
     static LEASH_TAG: string;
@@ -77,9 +95,9 @@ export class HappyGhast extends Animal {
     static MAX_ENCHANTED_WEAPON_CHANCE: number;
     static MAX_ENTITY_TAG_COUNT: number;
     static MAX_MOVEMENTS_HANDELED_PER_TICK: number;
+    static MAX_NAME_TAG_DISTANCE: number;
     static MAX_PASSANGERS: number;
     static MAX_PICKUP_LOOT_CHANCE: number;
-    static MAX_RANGE: number;
     static MAX_WEARING_ARMOR_CHANCE: number;
     static MIN_MOVEMENT_DISTANCE: number;
     static NBT_ATTACHMENT_KEY: string;
@@ -93,6 +111,7 @@ export class HappyGhast extends Animal {
     static SMALL_RESTRICTION_RADIUS: number;
     static SPEED_MULTIPLIER_WHEN_PANICKING: number;
     static SPRING_DAMPENING: number;
+    static SPRINTING_WATER_DRAG: number;
     static STIFFNESS: number;
     static TAG_AIR: string;
     static TAG_ATTRIBUTES: string;
@@ -108,7 +127,6 @@ export class HappyGhast extends Animal {
     static TAG_FIRE: string;
     static TAG_GLOWING: string;
     static TAG_HEALTH: string;
-    static TAG_HURT_BY_TIMESTAMP: string;
     static TAG_HURT_TIME: string;
     static TAG_ID: string;
     static TAG_INVULNERABLE: string;
@@ -118,6 +136,7 @@ export class HappyGhast extends Animal {
     static TAG_NO_GRAVITY: string;
     static TAG_ON_GROUND: string;
     static TAG_PASSENGERS: string;
+    static TAG_PERSISTENCE_REQUIRED: string;
     static TAG_PORTAL_COOLDOWN: string;
     static TAG_POS: string;
     static TAG_ROTATION: string;
@@ -128,6 +147,7 @@ export class HappyGhast extends Animal {
     static TOTAL_AIR_SUPPLY: number;
     static UPDATE_GOAL_SELECTOR_EVERY_N_TICKS: number;
     static WANDER_GROUND_DISTANCE: number;
+    static WATER_DRAG: number;
     static WAYPOINT_TRANSMIT_RANGE_HIDE_MODIFIER: AttributeModifier;
     static WEARING_ARMOR_UPGRADE_MATERIAL_ATTEMPTS: number;
     static WEARING_ARMOR_UPGRADE_MATERIAL_CHANCE: number;
@@ -140,6 +160,7 @@ export class HappyGhast extends Animal {
     static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
+    static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
     static createAnimalAttributes(): AttributeSupplier$Builder;
     static createAttributes(): AttributeSupplier$Builder;
     static createLivingAttributes(): AttributeSupplier$Builder;
@@ -182,6 +203,7 @@ export class HappyGhast extends Animal {
     getBreedOffspring(level: ServerLevel, partner: AgeableMob): AgeableMob;
     getControllingPassenger(): LivingEntity;
     getDeathSound(): SoundEvent;
+    getDefaultDimensions(pose: Pose): EntityDimensions;
     getDismountLocationForPassenger(passenger: LivingEntity): Vec3;
     // private getHappyGhastRestrictionRadius(): number;
     getHurtSound(source: DamageSource): SoundEvent;

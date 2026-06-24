@@ -2,11 +2,11 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Mob } from '../../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { Control } from '../../../../../../net/minecraft/world/entity/ai/control/Control.d.ts'
 import type { MoveControl$Operation } from '../../../../../../net/minecraft/world/entity/ai/control/MoveControl$Operation.d.ts'
-export class MoveControl extends Object implements Control {
+export class MoveControl<T extends Mob> extends Object implements Control {
     static MIN_SPEED: number;
     static MIN_SPEED_SQR: number;
-    constructor(mob: Mob)
-    // private mob: Mob;
+    constructor(mob: T)
+    // private mob: T;
     // private operation: MoveControl$Operation;
     speedModifier: number;
     // private strafeForwards: number;

@@ -8,6 +8,7 @@ import type { ProfileCollector } from '../../../../../../net/minecraft/util/prof
 import type { ProfileResults } from '../../../../../../net/minecraft/util/profiling/ProfileResults.d.ts'
 import type { ProfilerFiller } from '../../../../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
 import type { MetricSampler } from '../../../../../../net/minecraft/util/profiling/metrics/MetricSampler.d.ts'
+import type { MetricSampler$SamplingPhase } from '../../../../../../net/minecraft/util/profiling/metrics/MetricSampler$SamplingPhase.d.ts'
 import type { MetricsSamplerProvider } from '../../../../../../net/minecraft/util/profiling/metrics/MetricsSamplerProvider.d.ts'
 import type { MetricsRecorder } from '../../../../../../net/minecraft/util/profiling/metrics/profiling/MetricsRecorder.d.ts'
 import type { MetricsPersister } from '../../../../../../net/minecraft/util/profiling/metrics/storage/MetricsPersister.d.ts'
@@ -36,6 +37,8 @@ export class ActiveMetricsRecorder extends Object implements MetricsRecorder {
     endTick(): void;
     getProfiler(): ProfilerFiller;
     isRecording(): boolean;
+    // private sample(samplingPhase: MetricSampler$SamplingPhase): void;
+    sampleDuringExtract(): void;
     // private scheduleSaveResults(profilerResults: ProfileResults): void;
     startTick(): void;
     // private verifyStarted(): void;

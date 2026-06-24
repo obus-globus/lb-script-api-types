@@ -1,4 +1,4 @@
-import type { JsonObject } from '../../../../../../../com/google/gson/JsonObject.d.ts'
+import type { JsonObject } from '../../../../../../../com/viaversion/viaversion/libs/gson/JsonObject.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BedrockAttachableData } from '../../../../../../../org/cube/converter/data/bedrock/BedrockAttachableData.d.ts'
 export class BedrockAttachableParser extends Object {

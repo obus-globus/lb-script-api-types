@@ -1,4 +1,4 @@
-import type { OffsetFields$sign$1 } from '../../../net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureSilentScreen$drawInventoryTag$1.d.ts'
+import type { OffsetFields$sign$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { UtcOffsetFieldContainer } from '../../../kotlinx/datetime/format/UtcOffsetFieldContainer.d.ts'
 import type { UnsignedFieldSpec } from '../../../kotlinx/datetime/internal/format/UnsignedFieldSpec.d.ts'

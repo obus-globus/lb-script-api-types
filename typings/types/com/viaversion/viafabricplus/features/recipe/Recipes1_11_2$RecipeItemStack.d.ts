@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStackTemplate } from '../../../../../net/minecraft/world/item/ItemStackTemplate.d.ts'
 export class Recipes1_11_2$RecipeItemStack extends Record {
+    private constructor(item: Item, count: number)
     // private count: number;
     // private item: Item;
     count(): number;

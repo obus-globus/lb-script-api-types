@@ -4,6 +4,7 @@ import type { ExplosionParticleInfo } from '../../../../net/minecraft/core/parti
 import type { WeightedList } from '../../../../net/minecraft/util/random/WeightedList.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientExplosionTracker$ExplosionInfo extends Record {
+    private constructor(center: Vec3, radius: number, blockCount: number, blockParticles: WeightedList<ExplosionParticleInfo>)
     // private blockCount: number;
     // private blockParticles: WeightedList<ExplosionParticleInfo>;
     // private center: Vec3;

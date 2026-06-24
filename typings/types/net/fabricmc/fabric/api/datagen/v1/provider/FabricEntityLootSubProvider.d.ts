@@ -12,7 +12,7 @@ import type { EntityLootSubProvider } from '../../../../../../../net/minecraft/d
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { EntityType } from '../../../../../../../net/minecraft/world/entity/EntityType.d.ts'
-import type { DyeColor } from '../../../../../../../net/minecraft/world/item/DyeColor.d.ts'
+import type { ColorCollection } from '../../../../../../../net/minecraft/world/level/block/ColorCollection.d.ts'
 import type { LootPool$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/LootPool$Builder.d.ts'
 import type { LootTable } from '../../../../../../../net/minecraft/world/level/storage/loot/LootTable.d.ts'
 import type { LootTable$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/LootTable$Builder.d.ts'
@@ -21,7 +21,7 @@ export abstract class FabricEntityLootSubProvider extends EntityLootSubProvider 
     static FIXED_ORDER_FIELDS: (param0: string) => number;
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
-    static createSheepDispatchPool(paramtableNames: { [key in DyeColor]: ResourceKey<LootTable> }): LootPool$Builder;
+    static createSheepDispatchPool(paramtableNames: ColorCollection<ResourceKey<LootTable>>): LootPool$Builder;
     constructor(arg0: FabricPackOutput, arg1: CompletableFuture<HolderLookup$Provider>)
     // private excludedFromStrictValidation: Identifier[];
     // private output: FabricPackOutput;

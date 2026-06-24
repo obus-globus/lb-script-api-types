@@ -3,6 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Enchantment$Cost extends Record {
     static CODEC: Codec<Enchantment$Cost>;
+    constructor(base: number, perLevelAboveFirst: number)
     // private base: number;
     // private perLevelAboveFirst: number;
     base(): number;

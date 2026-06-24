@@ -6,12 +6,12 @@ import type { EventHook } from '../../../../../../../net/ccbluex/liquidbounce/ev
 import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { WorldRenderEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/WorldRenderEvent.d.ts'
 import type { ModuleStorageESP$BoxMode$EntityBox } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP$BoxMode$EntityBox.d.ts'
-import type { StaticMeshStorage } from '../../../../../../../net/ccbluex/liquidbounce/render/StaticMeshStorage.d.ts'
+import type { CachedMeshStorage } from '../../../../../../../net/ccbluex/liquidbounce/render/CachedMeshStorage.d.ts'
 export class ModuleStorageESP$BoxMode extends Mode {
     static Companion: Tagged$Companion;
     static INSTANCE: ModuleStorageESP$BoxMode;
-    // private blockFacesRenderState: StaticMeshStorage;
-    // private blockOutlinesRenderState: StaticMeshStorage;
+    // private blockFacesRenderState: CachedMeshStorage;
+    // private blockOutlinesRenderState: CachedMeshStorage;
     // private dirtyFlag: AtomicBoolean;
     // private entityBoxes: ModuleStorageESP$BoxMode$EntityBox[];
     // private outline: boolean;

@@ -4,6 +4,6 @@ import type { Java8ParameterNamesLoader$Cache } from '../../../../../../../../ko
 export class Java8ParameterNamesLoader extends Object {
     static INSTANCE: Java8ParameterNamesLoader;
     private constructor()
-    buildCache(arg0: Member): Java8ParameterNamesLoader$Cache;
+    // private buildCache(arg0: Member): Java8ParameterNamesLoader$Cache;
     loadParameterNames(arg0: Member): string[];
 }

@@ -3,6 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BoundingBox } from '../../../../../net/minecraft/world/level/levelgen/structure/BoundingBox.d.ts'
 import type { TerrainAdjustment } from '../../../../../net/minecraft/world/level/levelgen/structure/TerrainAdjustment.d.ts'
 export class Beardifier$Rigid extends Record {
+    constructor(box: BoundingBox, terrainAdjustment: TerrainAdjustment, groundLevelDelta: number)
     // private box: BoundingBox;
     // private groundLevelDelta: number;
     // private terrainAdjustment: TerrainAdjustment;

@@ -21,6 +21,7 @@ export abstract class AbstractContainerWidget extends AbstractScrollArea impleme
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
+    constructor(x: number, y: number, width: number, height: number, message: Component)
     constructor(x: number, y: number, width: number, height: number, message: Component, scrollbarSettings: AbstractScrollArea$ScrollbarSettings)
     readonly focused: GuiEventListener;
     // private isDragging: boolean;

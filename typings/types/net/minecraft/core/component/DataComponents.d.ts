@@ -67,6 +67,7 @@ import type { OminousBottleAmplifier } from '../../../../net/minecraft/world/ite
 import type { PiercingWeapon } from '../../../../net/minecraft/world/item/component/PiercingWeapon.d.ts'
 import type { ResolvableProfile } from '../../../../net/minecraft/world/item/component/ResolvableProfile.d.ts'
 import type { SeededContainerLoot } from '../../../../net/minecraft/world/item/component/SeededContainerLoot.d.ts'
+import type { SulfurCubeContent } from '../../../../net/minecraft/world/item/component/SulfurCubeContent.d.ts'
 import type { SuspiciousStewEffects } from '../../../../net/minecraft/world/item/component/SuspiciousStewEffects.d.ts'
 import type { SwingAnimation } from '../../../../net/minecraft/world/item/component/SwingAnimation.d.ts'
 import type { Tool } from '../../../../net/minecraft/world/item/component/Tool.d.ts'
@@ -181,6 +182,7 @@ export class DataComponents extends Object {
     static SHEEP_COLOR: DataComponentType<DyeColor>;
     static SHULKER_COLOR: DataComponentType<DyeColor>;
     static STORED_ENCHANTMENTS: DataComponentType<ItemEnchantments>;
+    static SULFUR_CUBE_CONTENT: DataComponentType<SulfurCubeContent>;
     static SUSPICIOUS_STEW_EFFECTS: DataComponentType<SuspiciousStewEffects>;
     static SWING_ANIMATION: DataComponentType<SwingAnimation>;
     static TOOL: DataComponentType<Tool>;

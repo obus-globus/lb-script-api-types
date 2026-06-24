@@ -4,6 +4,7 @@ import type { Average1DEstimator$Value } from '../../../../../../../../../net/ca
 import type { MeshResultSize$SectionCategory } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/estimation/MeshResultSize$SectionCategory.d.ts'
 export class MeshResultSize extends Record implements Average1DEstimator$Value<MeshResultSize$SectionCategory> {
     static NO_DATA: number;
+    constructor(category: MeshResultSize$SectionCategory, resultSize: number)
     // private category: MeshResultSize$SectionCategory;
     // private resultSize: number;
     category(): MeshResultSize$SectionCategory;

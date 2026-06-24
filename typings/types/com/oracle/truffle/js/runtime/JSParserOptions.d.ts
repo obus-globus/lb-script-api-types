@@ -3,6 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class JSParserOptions extends Record {
     static fromLanguageOptions(paramoptions: JSLanguageOptions): JSParserOptions;
+    constructor(strict: boolean, scripting: boolean, shebang: boolean, ecmaScriptVersion: number, syntaxExtensions: boolean, constAsVar: boolean, functionStatementError: boolean, emptyStatements: boolean, annexB: boolean, allowBigInt: boolean, classFields: boolean, importAttributes: boolean, importAssertions: boolean, sourcePhaseImports: boolean, privateFieldsIn: boolean, topLevelAwait: boolean, v8Intrinsics: boolean)
     // private allowBigInt: boolean;
     // private annexB: boolean;
     // private classFields: boolean;

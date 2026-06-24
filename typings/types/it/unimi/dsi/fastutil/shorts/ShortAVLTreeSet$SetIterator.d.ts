@@ -2,8 +2,8 @@ import type { ShortAVLTreeSet$Entry } from '../../../../../it/unimi/dsi/fastutil
 import type { ShortListIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShortAVLTreeSet$SetIterator extends Object implements ShortListIterator {
-    constructor(null_: ShortAVLTreeSet$SetIterator)
-    constructor(null_: ShortAVLTreeSet$SetIterator, arg1: number)
+    constructor(null_: (Object | null)[])
+    constructor(null_: (Object | null)[], arg1: number)
     // private curr: ShortAVLTreeSet$Entry;
     // private index: number;
     // private next: ShortAVLTreeSet$Entry;

@@ -5,7 +5,6 @@ import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise
 import type { IoRegistration } from '../../../../io/netty/channel/IoRegistration.d.ts'
 import type { LocalAddress } from '../../../../io/netty/channel/local/LocalAddress.d.ts'
 import type { LocalChannel } from '../../../../io/netty/channel/local/LocalChannel.d.ts'
-import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LocalServerChannel extends AbstractServerChannel {
@@ -15,7 +14,6 @@ export class LocalServerChannel extends AbstractServerChannel {
     // private inboundBuffer: Object[];
     // private localAddress: LocalAddress;
     // private registration: IoRegistration;
-    // private shutdownHook: () => void;
     // private state: number;
     config(): ChannelConfig;
     doBeginRead(): void;

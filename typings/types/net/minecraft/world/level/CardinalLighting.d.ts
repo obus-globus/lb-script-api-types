@@ -4,6 +4,7 @@ import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
 export class CardinalLighting extends Record {
     static DEFAULT: CardinalLighting;
     static NETHER: CardinalLighting;
+    constructor(down: number, up: number, north: number, south: number, west: number, east: number)
     // private down: number;
     // private east: number;
     // private north: number;

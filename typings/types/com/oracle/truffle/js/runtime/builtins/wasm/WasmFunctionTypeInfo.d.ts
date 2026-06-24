@@ -2,6 +2,7 @@ import type { WebAssemblyValueType } from '../../../../../../../com/oracle/truff
 import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class WasmFunctionTypeInfo extends Record {
+    constructor(paramTypes: WebAssemblyValueType[], resultTypes: WebAssemblyValueType[], anyTypeIsI64: boolean, anyTypeIsV128: boolean)
     // private anyTypeIsI64: boolean;
     // private anyTypeIsV128: boolean;
     // private paramTypes: WebAssemblyValueType[];

@@ -14,6 +14,7 @@ export class LevelData$RespawnData extends Record {
     static MAP_CODEC: MapCodec<LevelData$RespawnData>;
     static STREAM_CODEC: StreamCodec<ByteBuf, LevelData$RespawnData>;
     static of(paramdimension: ResourceKey<Level>, parampos: BlockPos, paramyaw: number, parampitch: number): LevelData$RespawnData;
+    constructor(globalPos: GlobalPos, yaw: number, pitch: number)
     // private globalPos: GlobalPos;
     // private pitch: number;
     // private yaw: number;

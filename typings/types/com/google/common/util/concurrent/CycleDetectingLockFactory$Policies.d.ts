@@ -1,3 +1,4 @@
+import type { CycleDetectingLockFactory$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { CycleDetectingLockFactory$Policy } from '../../../../../com/google/common/util/concurrent/CycleDetectingLockFactory$Policy.d.ts'
 import type { CycleDetectingLockFactory$PotentialDeadlockException } from '../../../../../com/google/common/util/concurrent/CycleDetectingLockFactory$PotentialDeadlockException.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -11,6 +12,7 @@ export class CycleDetectingLockFactory$Policies extends Enum<CycleDetectingLockF
     static valueOf(paramname: string): CycleDetectingLockFactory$Policies;
     static values(): (Object | null)[];
     private constructor()
+    constructor(arg2: CycleDetectingLockFactory$1)
     handlePotentialDeadlock(exception: CycleDetectingLockFactory$PotentialDeadlockException): void;
     name(): "THROW" | "WARN" | "DISABLED";
 }

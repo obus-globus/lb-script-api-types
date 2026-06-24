@@ -1,4 +1,5 @@
 import type { WorldTemplate } from '../../../../../com/mojang/realmsclient/dto/WorldTemplate.d.ts'
+import type { RealmsSelectWorldTemplateScreen } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsSelectWorldTemplateScreen.d.ts'
 import type { RealmsSelectWorldTemplateScreen$Entry } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsSelectWorldTemplateScreen$Entry.d.ts'
 import type { AbstractScrollArea$ScrollbarSettings } from '../../../../../net/minecraft/client/gui/components/AbstractScrollArea$ScrollbarSettings.d.ts'
 import type { ObjectSelectionList } from '../../../../../net/minecraft/client/gui/components/ObjectSelectionList.d.ts'
@@ -11,8 +12,8 @@ export class RealmsSelectWorldTemplateScreen$WorldTemplateList extends ObjectSel
     static defaultSettings(paramscrollRate: number): AbstractScrollArea$ScrollbarSettings;
     static playButtonClickSound(paramsoundManager: SoundManager): void;
     static wrapDefaultNarrationMessage(parammessage: Component): MutableComponent;
-    constructor(null_: RealmsSelectWorldTemplateScreen$WorldTemplateList)
-    constructor(null_: RealmsSelectWorldTemplateScreen$WorldTemplateList)
+    constructor(null_: RealmsSelectWorldTemplateScreen)
+    constructor(null_: RealmsSelectWorldTemplateScreen, templates: WorldTemplate[])
     addEntry(template: WorldTemplate): void;
     addEntry(entry: RealmsSelectWorldTemplateScreen$Entry): number;
     addEntry(entry: RealmsSelectWorldTemplateScreen$Entry, height: number): number;

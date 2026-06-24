@@ -31,14 +31,17 @@ export abstract class AbstractBinaryClassAnnotationLoader<A extends unknown, S e
     findClassWithAnnotationsAndInitializers(arg0: ProtoContainer, arg1: KotlinJvmBinaryClass): KotlinJvmBinaryClass;
     getAnnotationsContainer(arg0: KotlinJvmBinaryClass): S;
     getCachedFileContent(arg0: KotlinJvmBinaryClass): number[];
+    // private getCallableAnnotationFlags(arg0: MessageLite, arg1: AnnotatedCallableKind): number;
     getCallableSignature(arg0: MessageLite, arg1: NameResolver, arg2: TypeTable, arg3: AnnotatedCallableKind, arg4: boolean): MemberSignature;
     // private getContextParameterCount(arg0: MessageLite): number;
     getKotlinClassFinder(): KotlinClassFinder;
     getMetadataVersion(): MetadataVersion;
+    // private getPropertyFlags(arg0: ProtoBuf$Property, arg1: AnnotatedCallableKind): number;
     isImplicitRepeatableContainer(arg0: ClassId): boolean;
     loadAnnotation(arg0: ProtoBuf$Annotation, arg1: NameResolver): A;
     loadAnnotation(arg0: ClassId, arg1: SourceElement, arg2: A[]): KotlinJvmBinaryClass$AnnotationArgumentVisitor;
     loadAnnotationIfNotSpecial(arg0: ClassId, arg1: SourceElement, arg2: A[]): KotlinJvmBinaryClass$AnnotationArgumentVisitor;
+    // private loadAnnotationsIfPresentInBytecode(arg0: number, arg1: () => A[]): A[];
     loadCallableAnnotations(arg0: ProtoContainer, arg1: MessageLite, arg2: AnnotatedCallableKind): A[];
     loadClassAnnotations(arg0: ProtoContainer$Class): A[];
     loadContextParameterAnnotations(arg0: ProtoContainer, arg1: MessageLite, arg2: AnnotatedCallableKind, arg3: number, arg4: ProtoBuf$ValueParameter): A[];
@@ -51,5 +54,6 @@ export abstract class AbstractBinaryClassAnnotationLoader<A extends unknown, S e
     loadTypeAnnotations(arg0: ProtoBuf$Type, arg1: NameResolver): A[];
     loadTypeParameterAnnotations(arg0: ProtoBuf$TypeParameter, arg1: NameResolver): A[];
     loadValueParameterAnnotations(arg0: ProtoContainer, arg1: MessageLite, arg2: AnnotatedCallableKind, arg3: number, arg4: ProtoBuf$ValueParameter): A[];
+    // private noAnnotationsInBytecode(arg0: number): boolean;
     // private toBinaryClass(arg0: ProtoContainer$Class): KotlinJvmBinaryClass;
 }

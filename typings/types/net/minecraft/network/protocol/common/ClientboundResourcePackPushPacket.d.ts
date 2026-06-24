@@ -14,6 +14,7 @@ export class ClientboundResourcePackPushPacket extends Record implements Packet<
     static MAX_HASH_LENGTH: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundResourcePackPushPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(id: UUID, url: string, hash: string, required: boolean, prompt: Optional<Component>)
     // private hash: string;
     // private id: UUID;
     // private prompt: Optional<Component>;

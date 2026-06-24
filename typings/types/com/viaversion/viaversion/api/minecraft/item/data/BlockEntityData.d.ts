@@ -9,6 +9,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../../java/util/Map$Entry.d.ts'
 export class BlockEntityData extends Record implements Rewritable {
     static TYPE: Type<BlockEntityData>;
+    constructor(type: number, tag: Map$Entry<string, Tag>[])
     // private tag: Map$Entry<string, Tag>[];
     // private type: number;
     equals(arg0: Object | null): boolean;

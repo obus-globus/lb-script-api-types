@@ -27,6 +27,8 @@ export abstract class AbstractByteBuf extends ByteBuf {
     _getShortLE(arg0: number): number;
     _getUnsignedMedium(arg0: number): number;
     _getUnsignedMediumLE(arg0: number): number;
+    _internalNioBuffer(): ByteBuffer;
+    _isDirect(): boolean;
     _memoryAddress(): number;
     _setByte(arg0: number, arg1: number): void;
     _setInt(arg0: number, arg1: number): void;

@@ -1,4 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { DefaultConstructorMarker } from '../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { FqName } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
 import type { FqNameUnsafe$Companion } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/FqNameUnsafe$Companion.d.ts'
 import type { Name } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
@@ -7,6 +8,7 @@ export class FqNameUnsafe extends Object {
     constructor(arg0: string)
     constructor(arg0: string, arg1: FqName)
     private constructor(arg0: string, arg1: FqNameUnsafe, arg2: Name)
+    constructor(arg0: string, arg1: FqNameUnsafe, arg2: Name, arg3: DefaultConstructorMarker)
     // private fqName: string;
     // private parent: FqNameUnsafe;
     readonly safe: FqName;

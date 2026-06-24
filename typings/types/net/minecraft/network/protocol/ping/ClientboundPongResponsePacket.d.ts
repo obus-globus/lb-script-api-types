@@ -11,6 +11,8 @@ import type { ClientPongPacketListener } from '../../../../../net/minecraft/netw
 export class ClientboundPongResponsePacket extends Record implements Packet<ClientPongPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundPongResponsePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    constructor(time: number)
+    private constructor(input: FriendlyByteBuf)
     // private time: number;
     equals(o: Object | null): boolean;
     handle(listener: ClientPongPacketListener): void;

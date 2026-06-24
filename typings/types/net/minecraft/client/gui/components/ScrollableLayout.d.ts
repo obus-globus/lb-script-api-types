@@ -8,21 +8,24 @@ import type { Layout } from '../../../../../net/minecraft/client/gui/layouts/Lay
 import type { LayoutElement } from '../../../../../net/minecraft/client/gui/layouts/LayoutElement.d.ts'
 export class ScrollableLayout extends Object implements Layout {
     constructor(minecraft: Minecraft, content: Layout, maxHeight: number)
+    constructor(minecraft: Minecraft, content: Layout, maxHeight: number, reserveStrategy: ScrollableLayout$ReserveStrategy)
     // private container: ScrollableLayout$Container;
     // private content: Layout;
     readonly maxHeight: number;
     readonly minHeight: number;
     readonly minWidth: number;
     // private reserveStrategy: ScrollableLayout$ReserveStrategy;
-    // private scrollbarSpacing: number;
+    readonly scrollbarSpacing: number;
     arrangeElements(): void;
     getHeight(): number;
     getWidth(): number;
     getX(): number;
     getY(): number;
+    removeChildren(): void;
     setMaxHeight(maxHeight: number): void;
     setMinHeight(minHeight: number): void;
     setMinWidth(minWidth: number): void;
+    setScrollbarSpacing(scrollbarSpacing: number): void;
     setX(x: number): void;
     setY(y: number): void;
     visitChildren(layoutElementVisitor: (param0: LayoutElement) => void): void;

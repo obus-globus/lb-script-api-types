@@ -4,6 +4,7 @@ import type { Component } from '../../../../../../net/minecraft/network/chat/Com
 export class DebugEntryCategory extends Record {
     static RENDERER: DebugEntryCategory;
     static SCREEN_TEXT: DebugEntryCategory;
+    constructor(label: Component, sortKey: number)
     // private label: Component;
     // private sortKey: number;
     equals(o: Object | null): boolean;

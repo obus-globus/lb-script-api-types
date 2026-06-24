@@ -4,6 +4,8 @@ import type { Pair } from '../../../kotlin/Pair.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../kotlin/coroutines/CoroutineContext.d.ts'
+import type { CoroutineScope } from '../../../kotlinx/coroutines/CoroutineScope.d.ts'
+import type { Job } from '../../../kotlinx/coroutines/Job.d.ts'
 import type { BroadcastChannel } from '../../../kotlinx/coroutines/channels/BroadcastChannel.d.ts'
 import type { ReceiveChannel } from '../../../kotlinx/coroutines/channels/ReceiveChannel.d.ts'
 import type { SendChannel } from '../../../kotlinx/coroutines/channels/SendChannel.d.ts'
@@ -16,6 +18,7 @@ export class ChannelsKt extends Object {
     static consume(paramarg0: ReceiveChannel<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
     static consumeEach(paramarg0: BroadcastChannel<Object>, paramarg1: (param0: Object) => void, paramarg2: Continuation<Object>): Object;
     static consumeEach(paramarg0: ReceiveChannel<Object>, paramarg1: (param0: Object) => void, paramarg2: Continuation<Object>): Object;
+    static consumeTo(paramarg0: ReceiveChannel<Object>, paramarg1: Object | null, paramarg2: Continuation<Object>): Object;
     static consumes(paramarg0: ReceiveChannel<Object>): (param0: Throwable) => void;
     static consumesAll(paramarg0: Object | null): (param0: Throwable) => void;
     static count(paramarg0: ReceiveChannel<Object>, paramarg1: Continuation<Object>): Object;
@@ -46,6 +49,7 @@ export class ChannelsKt extends Object {
     static minWith(paramarg0: ReceiveChannel<Object>, paramarg1: (param0: Object) => boolean, paramarg2: Continuation<Object>): Object;
     static none(paramarg0: ReceiveChannel<Object>, paramarg1: Continuation<Object>): Object;
     static onReceiveOrNull(paramarg0: ReceiveChannel<Object>): SelectClause1<Object>;
+    static produce(paramarg0: CoroutineScope, paramarg1: Job, paramarg2: number, paramarg3: (param0: Object, param1: Object) => Object): ReceiveChannel<Object>;
     static receiveOrNull(paramarg0: ReceiveChannel<Object>, paramarg1: Continuation<Object>): Object;
     static requireNoNulls(paramarg0: ReceiveChannel<Object>): ReceiveChannel<Object>;
     static sendBlocking(paramarg0: SendChannel<Object>, paramarg1: Object): void;

@@ -9,6 +9,7 @@ export class TextureMetadataSection extends Record {
     static DEFAULT_BLUR: boolean;
     static DEFAULT_CLAMP: boolean;
     static TYPE: MetadataSectionType<TextureMetadataSection>;
+    constructor(blur: boolean, clamp: boolean, mipmapStrategy: MipmapStrategy, alphaCutoffBias: number)
     // private alphaCutoffBias: number;
     // private blur: boolean;
     // private clamp: boolean;

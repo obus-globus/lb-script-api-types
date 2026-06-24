@@ -7,6 +7,7 @@ export class ConstantInt extends Record implements IntProvider {
     static MAP_CODEC: MapCodec<ConstantInt>;
     static ZERO: ConstantInt;
     static of(paramvalue: number): ConstantInt;
+    constructor(value: number)
     // private value: number;
     codec(): MapCodec<ConstantInt>;
     equals(o: Object | null): boolean;

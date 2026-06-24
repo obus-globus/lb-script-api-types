@@ -3,11 +3,12 @@ import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { IntList } from '../../../../../../org/apache/commons/compress/harmony/pack200/IntList.d.ts'
 import type { NewAttribute } from '../../../../../../org/apache/commons/compress/harmony/pack200/NewAttribute.d.ts'
+import type { NewAttributeBands } from '../../../../../../org/apache/commons/compress/harmony/pack200/NewAttributeBands.d.ts'
 import type { NewAttributeBands$AttributeLayoutElement } from '../../../../../../org/apache/commons/compress/harmony/pack200/NewAttributeBands$AttributeLayoutElement.d.ts'
 import type { NewAttributeBands$LayoutElement } from '../../../../../../org/apache/commons/compress/harmony/pack200/NewAttributeBands$LayoutElement.d.ts'
 import type { Label } from '../../../../../../org/objectweb/asm/Label.d.ts'
 export class NewAttributeBands$Callable extends Object implements NewAttributeBands$AttributeLayoutElement {
-    constructor(null_: NewAttributeBands$Callable)
+    constructor(null_: NewAttributeBands, arg1: NewAttributeBands$LayoutElement[])
     readonly backwardsCallableIndex: number;
     readonly body: NewAttributeBands$LayoutElement[];
     // private isBackwardsCallable: boolean;

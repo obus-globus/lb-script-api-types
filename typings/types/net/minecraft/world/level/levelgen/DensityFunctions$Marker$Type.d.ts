@@ -10,6 +10,7 @@ import type { StringRepresentable } from '../../../../../net/minecraft/util/Stri
 import type { StringRepresentable$EnumCodec } from '../../../../../net/minecraft/util/StringRepresentable$EnumCodec.d.ts'
 import type { DensityFunctions$MarkerOrMarked } from '../../../../../net/minecraft/world/level/levelgen/DensityFunctions$MarkerOrMarked.d.ts'
 export class DensityFunctions$Marker$Type extends Enum<DensityFunctions$Marker$Type> implements StringRepresentable {
+    static BlendDensity: DensityFunctions$Marker$Type;
     static Cache2D: DensityFunctions$Marker$Type;
     static CacheAllInCell: DensityFunctions$Marker$Type;
     static CacheOnce: DensityFunctions$Marker$Type;
@@ -29,5 +30,5 @@ export class DensityFunctions$Marker$Type extends Enum<DensityFunctions$Marker$T
     // private codec: KeyDispatchDataCodec<DensityFunctions$MarkerOrMarked>;
     // private name: string;
     getSerializedName(): string;
-    name(): "Interpolated" | "FlatCache" | "Cache2D" | "CacheOnce" | "CacheAllInCell";
+    name(): "Interpolated" | "FlatCache" | "Cache2D" | "CacheOnce" | "CacheAllInCell" | "BlendDensity";
 }

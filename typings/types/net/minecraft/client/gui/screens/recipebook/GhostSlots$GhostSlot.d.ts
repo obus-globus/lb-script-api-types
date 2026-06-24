@@ -2,6 +2,7 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class GhostSlots$GhostSlot extends Record {
+    private constructor(items: ItemStack[], isResultSlot: boolean)
     // private isResultSlot: boolean;
     // private items: ItemStack[];
     equals(o: Object | null): boolean;

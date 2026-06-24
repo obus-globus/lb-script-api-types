@@ -1,3 +1,4 @@
+import type { NioDomainSocketChannel$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteBufAllocator } from '../../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelOption } from '../../../../../io/netty/channel/ChannelOption.d.ts'
 import type { DefaultChannelConfig } from '../../../../../io/netty/channel/DefaultChannelConfig.d.ts'
@@ -9,7 +10,8 @@ import type { NioDomainSocketChannel } from '../../../../../io/netty/channel/soc
 import type { SocketChannel } from '../../../../../java/nio/channels/SocketChannel.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class NioDomainSocketChannel$NioDomainSocketChannelConfig extends DefaultChannelConfig implements DuplexChannelConfig {
-    private constructor(null_: NioDomainSocketChannel$NioDomainSocketChannelConfig, arg1: NioDomainSocketChannel, arg2: SocketChannel)
+    private constructor(null_: NioDomainSocketChannel, arg1: NioDomainSocketChannel, arg2: SocketChannel)
+    constructor(null_: NioDomainSocketChannel, arg1: NioDomainSocketChannel, arg2: SocketChannel, arg3: NioDomainSocketChannel$1)
     readonly allowHalfClosure: boolean;
     // private javaChannel: SocketChannel;
     // private maxBytesPerGatheringWrite: number;

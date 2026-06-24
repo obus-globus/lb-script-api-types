@@ -12,6 +12,8 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 export class ServerboundCookieResponsePacket extends Record implements Packet<ServerCookiePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundCookieResponsePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    private constructor(input: FriendlyByteBuf)
+    constructor(key: Identifier, payload: number[])
     // private key: Identifier;
     // private payload: number[];
     equals(o: Object | null): boolean;

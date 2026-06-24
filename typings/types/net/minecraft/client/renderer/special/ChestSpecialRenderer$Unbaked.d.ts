@@ -8,6 +8,9 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { ChestType } from '../../../../../net/minecraft/world/level/block/state/properties/ChestType.d.ts'
 export class ChestSpecialRenderer$Unbaked extends Record implements NoDataSpecialModelRenderer$Unbaked {
     static MAP_CODEC: MapCodec<ChestSpecialRenderer$Unbaked>;
+    constructor(texture: Identifier)
+    constructor(texture: Identifier, openness: number, chestType: ChestType)
+    constructor(texture: Identifier, chestType: ChestType)
     // private chestType: ChestType;
     // private openness: number;
     // private texture: Identifier;

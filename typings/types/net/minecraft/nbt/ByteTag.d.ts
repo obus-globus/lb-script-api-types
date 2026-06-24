@@ -32,6 +32,7 @@ export class ByteTag extends Record implements NumericTag {
     static ZERO: ByteTag;
     static valueOf(paramdata: boolean): ByteTag;
     static valueOf(paramdata: number): ByteTag;
+    constructor(value: number)
     // private value: number;
     accept(visitor: StreamTagVisitor): StreamTagVisitor$ValueResult;
     accept(visitor: TagVisitor): void;

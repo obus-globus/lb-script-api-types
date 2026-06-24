@@ -1,3 +1,4 @@
+import type { TinyRemapper$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { ExecutorService } from '../../../../../../java/util/concurrent/ExecutorService.d.ts'
@@ -23,6 +24,7 @@ import type { Remapper } from '../../../../../../org/objectweb/asm/commons/Remap
 export class TinyRemapper extends Object {
     static newRemapper(paramarg0: TrLogger): TinyRemapper$Builder;
     private constructor(arg0: (param0: IMappingProvider$MappingAcceptor) => void[], arg1: boolean, arg2: number, arg3: boolean, arg4: string[], arg5: string[], arg6: boolean, arg7: TinyRemapper$LinkedMethodPropagation, arg8: TinyRemapper$LinkedMethodPropagation, arg9: boolean, arg10: boolean, arg11: boolean, arg12: boolean, arg13: boolean, arg14: boolean, arg15: boolean, arg16: boolean, arg17: Pattern, arg18: boolean, arg19: boolean, arg20: TinyRemapper$AnalyzeVisitorProvider[], arg21: TinyRemapper$StateProcessor[], arg22: TinyRemapper$ApplyVisitorProvider[], arg23: TinyRemapper$ApplyVisitorProvider[], arg24: Remapper, arg25: TrLogger)
+    constructor(arg0: (Object | null)[], arg1: boolean, arg2: number, arg3: boolean, arg4: (Object | null)[], arg5: (Object | null)[], arg6: boolean, arg7: TinyRemapper$LinkedMethodPropagation, arg8: TinyRemapper$LinkedMethodPropagation, arg9: boolean, arg10: boolean, arg11: boolean, arg12: boolean, arg13: boolean, arg14: boolean, arg15: boolean, arg16: boolean, arg17: Pattern, arg18: boolean, arg19: boolean, arg20: (Object | null)[], arg21: (Object | null)[], arg22: (Object | null)[], arg23: (Object | null)[], arg24: Remapper, arg25: TrLogger, arg26: TinyRemapper$1)
     // private analyzeVisitors: TinyRemapper$AnalyzeVisitorProvider[];
     // private check: boolean;
     // private checkPackageAccess: boolean;

@@ -5,8 +5,6 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectHeapPriorityQueue<K extends unknown> extends Object implements PriorityQueue<K>, Serializable {
-    constructor(arg0: K[])
-    constructor(arg0: K[], arg1: (param0: Object) => boolean)
     constructor()
     constructor(arg0: (param0: Object) => boolean)
     constructor(arg0: K[])
@@ -15,6 +13,8 @@ export class ObjectHeapPriorityQueue<K extends unknown> extends Object implement
     constructor(arg0: K[], arg1: number, arg2: (param0: Object) => boolean)
     constructor(arg0: number)
     constructor(arg0: number, arg1: (param0: Object) => boolean)
+    constructor(arg0: K[])
+    constructor(arg0: K[], arg1: (param0: Object) => boolean)
     // private c: (param0: Object) => boolean;
     // private heap: K[];
     // private size: number;

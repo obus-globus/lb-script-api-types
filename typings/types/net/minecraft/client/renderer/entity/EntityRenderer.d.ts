@@ -30,6 +30,8 @@ export abstract class EntityRenderer<T extends Entity, S extends EntityRenderSta
     affectedByCulling(entity: T): boolean;
     createRenderState(): S;
     createRenderState(entity: T, partialTicks: number): S;
+    extractNameTags(entity: T, state: S, partialTicks: number): void;
+    extractNameTags(entity: T, state: S, partialTicks: number, nameTagDistance: number, belowNameDistance: number): void;
     extractRenderState(entity: T, state: S, partialTicks: number): void;
     // private extractShadow(state: S, minecraft: Minecraft, level: Level): void;
     // private extractShadowPiece(state: S, level: Level, pow: number, pos: BlockPos$MutableBlockPos, chunk: ChunkAccess): void;

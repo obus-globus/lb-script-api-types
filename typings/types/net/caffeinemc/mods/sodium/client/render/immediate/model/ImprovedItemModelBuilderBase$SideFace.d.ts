@@ -2,6 +2,7 @@ import type { Record } from '../../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { ItemModelGenerator$SideDirection } from '../../../../../../../../net/minecraft/client/resources/model/cuboid/ItemModelGenerator$SideDirection.d.ts'
 export class ImprovedItemModelBuilderBase$SideFace extends Record {
+    constructor(facing: ItemModelGenerator$SideDirection, min: number, max: number, anchor: number)
     // private anchor: number;
     // private facing: ItemModelGenerator$SideDirection;
     // private max: number;

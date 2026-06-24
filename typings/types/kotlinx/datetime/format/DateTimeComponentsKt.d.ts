@@ -9,4 +9,5 @@ export class DateTimeComponentsKt extends Object {
     static format(paramarg0: DateTimeFormat<DateTimeComponents>, paramarg1: (param0: Object) => void): string;
     static getTimeZoneField(): GenericFieldSpec<DateTimeComponentsContents, string>;
     static parse(paramarg0: DateTimeComponents$Companion, paramarg1: CharSequence, paramarg2: DateTimeFormat<DateTimeComponents>): DateTimeComponents;
+    static parseOrNull(paramarg0: DateTimeComponents$Companion, paramarg1: CharSequence, paramarg2: DateTimeFormat<DateTimeComponents>): DateTimeComponents;
 }

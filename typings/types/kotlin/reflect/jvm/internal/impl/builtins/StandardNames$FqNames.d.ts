@@ -42,6 +42,7 @@ export class StandardNames$FqNames extends Object {
     static fqNameToPrimitiveType: Map<FqNameUnsafe, PrimitiveType>;
     static functionSupertype: FqNameUnsafe;
     static intRange: FqNameUnsafe;
+    static introducedAt: FqName;
     static iterable: FqName;
     static iterator: FqName;
     static kCallable: FqNameUnsafe;

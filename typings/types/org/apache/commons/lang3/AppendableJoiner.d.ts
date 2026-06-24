@@ -1,3 +1,4 @@
+import type { AppendableJoiner$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Appendable } from '../../../../java/lang/Appendable.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -6,6 +7,7 @@ import type { AppendableJoiner$Builder } from '../../../../org/apache/commons/la
 import type { FailableBiConsumer } from '../../../../org/apache/commons/lang3/function/FailableBiConsumer.d.ts'
 export class AppendableJoiner<T extends unknown> extends Object {
     static builder(): AppendableJoiner$Builder<Object>;
+    constructor(arg0: CharSequence, arg1: CharSequence, arg2: CharSequence, arg3: (param0: Object, param1: Object) => void, arg4: AppendableJoiner$1)
     private constructor(arg0: CharSequence, arg1: CharSequence, arg2: CharSequence, arg3: (param0: Appendable, param1: T) => void)
     // private appender: (param0: Appendable, param1: T) => void;
     // private delimiter: CharSequence;

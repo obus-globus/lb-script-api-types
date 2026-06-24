@@ -4,6 +4,7 @@ import type { Identifier } from '../../../../net/minecraft/resources/Identifier.
 import type { AttributeModifier } from '../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier.d.ts'
 import type { AttributeModifier$Operation } from '../../../../net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation.d.ts'
 export class MobEffect$AttributeTemplate extends Record {
+    private constructor(id: Identifier, amount: number, operation: AttributeModifier$Operation)
     // private amount: number;
     // private id: Identifier;
     // private operation: AttributeModifier$Operation;

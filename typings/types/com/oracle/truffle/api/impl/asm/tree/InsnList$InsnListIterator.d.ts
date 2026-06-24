@@ -2,7 +2,7 @@ import type { AbstractInsnNode } from '../../../../../../../com/oracle/truffle/a
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ListIterator } from '../../../../../../../java/util/ListIterator.d.ts'
 export class InsnList$InsnListIterator extends Object implements ListIterator<Object> {
-    constructor(null_: InsnList$InsnListIterator, index: number)
+    constructor(null_: AbstractInsnNode[], index: number)
     // private nextInsn: AbstractInsnNode;
     // private previousInsn: AbstractInsnNode;
     // private remove: AbstractInsnNode;

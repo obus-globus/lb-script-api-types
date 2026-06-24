@@ -5,5 +5,6 @@ import type { CallerImpl$Companion } from '../../../../../kotlin/reflect/jvm/int
 export class CallerImpl$FieldGetter extends CallerImpl<Field> {
     static Companion: CallerImpl$Companion;
     protected constructor(field: Field, requiresInstance: boolean)
+    // private requiresInstance: boolean;
     call(args: (Object | null)[]): Object | null;
 }

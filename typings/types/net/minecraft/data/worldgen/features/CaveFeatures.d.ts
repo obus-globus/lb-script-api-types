@@ -22,10 +22,13 @@ export class CaveFeatures extends Object {
     static MOSS_VEGETATION: ResourceKey<ConfiguredFeature<any, any>>;
     static POINTED_DRIPSTONE: ResourceKey<ConfiguredFeature<any, any>>;
     static ROOTED_AZALEA_TREE: ResourceKey<ConfiguredFeature<any, any>>;
+    static ROOTED_SULFUR_SPRING: ResourceKey<ConfiguredFeature<any, any>>;
     static SCULK_PATCH_ANCIENT_CITY: ResourceKey<ConfiguredFeature<any, any>>;
     static SCULK_PATCH_DEEP_DARK: ResourceKey<ConfiguredFeature<any, any>>;
     static SCULK_VEIN: ResourceKey<ConfiguredFeature<any, any>>;
     static SPORE_BLOSSOM: ResourceKey<ConfiguredFeature<any, any>>;
+    static SULFUR_SPIKE: ResourceKey<ConfiguredFeature<any, any>>;
+    static SULFUR_SPIKE_CLUSTER: ResourceKey<ConfiguredFeature<any, any>>;
     static UNDERWATER_MAGMA: ResourceKey<ConfiguredFeature<any, any>>;
     static bootstrap(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>): void;
     constructor()
