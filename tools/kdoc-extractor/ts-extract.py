@@ -295,12 +295,21 @@ def _preceding_kdoc(node: Node) -> Optional[str]:
         if t == "line_comment":
             # //-comments are skipped (don't shadow).
             continue
-        if t in ("modifiers", "annotation"):
+        if t in ("modifiers", "annotation", "annotated_expression"):
             # Modifiers/annotations attach to the decl; continue searching above.
+            # `annotated_expression` is tree-sitter-kotlin's wrapper for an
+            # annotation that carries arguments (e.g. `@Target(...)`); when the
+            # following declaration parses as its own sibling, the wrapper sits
+            # between it and its KDoc, so skip over it too.
             continue
         # Any other real node (another declaration, a `{`/`}`, etc.) means
         # there is no KDoc directly above this one.
         return None
+    # Exhausted this parent's preceding siblings without finding a KDoc. If the
+    # node is itself wrapped in an annotated_expression (the annotation-class
+    # mis-parse below), the KDoc lives before that wrapper one level up.
+    if parent.type == "annotated_expression":
+        return _preceding_kdoc(parent)
     return None
 
 
@@ -360,6 +369,31 @@ def _record_signature(
     sigs.setdefault(f"{owner}.{member}", []).append(rec)
 
 
+def _annotation_class_infix(annotated: Node) -> Optional[tuple[str, Node]]:
+    """Recover an annotation class that tree-sitter-kotlin (1.1.x) mis-parses.
+
+    `@Retention(...) annotation class Foo` (no primary constructor) is parsed as
+        annotated_expression( annotation(@Retention(...)),
+                              infix_expression( id`annotation` id`class` id`Foo` ) )
+    instead of a class_declaration, so the walker never sees it and its KDoc is
+    dropped. Detect that exact 3-identifier infix shape and return (name, node).
+    Annotation classes WITH a primary constructor parse correctly as a
+    class_declaration (handled by the normal path).
+    """
+    for c in annotated.children:
+        if c.type != "infix_expression":
+            continue
+        ids = [g for g in c.children if g.type == "identifier"]
+        if len(ids) != 3:
+            continue
+        t0 = ids[0].text.decode("utf-8", "replace") if ids[0].text else ""
+        t1 = ids[1].text.decode("utf-8", "replace") if ids[1].text else ""
+        if t0 == "annotation" and t1 == "class":
+            name = ids[2].text.decode("utf-8", "replace") if ids[2].text else ""
+            return name.strip("`"), c
+    return None
+
+
 def _walk(
     node: Node,
     parent_parts: list[str],
@@ -370,6 +404,30 @@ def _walk(
     deps: dict[str, dict[str, Any]],
 ) -> None:
     for child in node.children:
+        if child.type == "annotated_expression":
+            # Recover an annotation class hidden inside the annotation wrapper
+            # (see _annotation_class_infix). Emit it as a `class` so its KDoc and
+            # @Deprecated land on the FQN ts-generator uses.
+            rec = _annotation_class_infix(child)
+            if rec is not None:
+                name, _ident = rec
+                parts = parent_parts + [name]
+                fqn = (package + "." if package else "") + ".".join(parts)
+                dep = _deprecation_of(child)
+                if dep is not None:
+                    deps[fqn] = {**dep, "kind": "class",
+                                 "source": {"file": rel_file,
+                                            "line": child.start_point[0] + 1}}
+                kdoc_text = _preceding_kdoc(child)
+                if kdoc_text:
+                    parsed = parse_kdoc(kdoc_text)
+                    if parsed is not None:
+                        entry = dict(parsed)
+                        entry["kind"] = "class"
+                        entry["source"] = {"file": rel_file,
+                                           "line": child.start_point[0] + 1}
+                        out.setdefault(fqn, []).append(entry)
+            continue
         if child.type in DECL_TYPES:
             kind = DECL_TYPES[child.type]
             name = _find_identifier(child)
