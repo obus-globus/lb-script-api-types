@@ -295,21 +295,23 @@ def _preceding_kdoc(node: Node) -> Optional[str]:
         if t == "line_comment":
             # //-comments are skipped (don't shadow).
             continue
-        if t in ("modifiers", "annotation", "annotated_expression"):
+        if t == "annotated_expression":
+            # tree-sitter-kotlin's wrapper for an annotation carrying arguments
+            # (e.g. `@Target(...)`). Two cases:
+            #  - a BARE annotation that modifies the FOLLOWING declaration which
+            #    parsed as its own sibling -> skip over it to reach the KDoc.
+            #  - one that CONTAINS a declaration (the `annotation class NAME`
+            #    mis-parse) -> it is a self-contained sibling decl, so it is a
+            #    BOUNDARY: stop, otherwise its KDoc would leak onto us.
+            if _annotation_class_infix(sib) is not None:
+                return None
+            continue
+        if t in ("modifiers", "annotation"):
             # Modifiers/annotations attach to the decl; continue searching above.
-            # `annotated_expression` is tree-sitter-kotlin's wrapper for an
-            # annotation that carries arguments (e.g. `@Target(...)`); when the
-            # following declaration parses as its own sibling, the wrapper sits
-            # between it and its KDoc, so skip over it too.
             continue
         # Any other real node (another declaration, a `{`/`}`, etc.) means
         # there is no KDoc directly above this one.
         return None
-    # Exhausted this parent's preceding siblings without finding a KDoc. If the
-    # node is itself wrapped in an annotated_expression (the annotation-class
-    # mis-parse below), the KDoc lives before that wrapper one level up.
-    if parent.type == "annotated_expression":
-        return _preceding_kdoc(parent)
     return None
 
 
