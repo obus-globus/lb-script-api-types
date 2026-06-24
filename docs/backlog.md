@@ -337,12 +337,24 @@ Performance work (do in order): proper closing -> GraalJS JIT -> caching.
   commented-out invalid line). Guarded by the determinism + dedupe + cache tests.
   Shipped: generator `d55dbd2`.
 
-  **Post-O(1), the render cache is now marginal.** With reflection cheap (~1m45s
-  for the whole walk), reusing renders saves little: warm (99.5% reuse) walk ~18s
-  / total ~5 min vs no-cache ~1m45s / ~6 min — a ~1 min gain (it was ~12 min
-  before the O(1) fix). The cache is kept (sound, tested, opt-in via
-  TSGEN_CACHE_DIR; likely helps more on slow CI runners) but its value is now
-  small; could be disabled-by-default or removed for simplicity if desired.
+  **Post-O(1), the cache's value is environment-dependent — marginal locally,
+  large on CI.** On this (fast) box reflection is cheap (~1m45s whole walk), so
+  reuse saves only ~1 min (warm walk ~18s vs ~1m45s). But on the GitHub-hosted CI
+  runner the softpipe walk is ~8x slower (~14 min cold), and the cache collapses
+  it to ~65s — measured **CI regen-flow 30m47s cold -> 10m04s warm (~20 min /
+  ~67% faster)** at 99.5% reuse. So the cache earns its keep on slow CI; keep it.
+
+  **CI cache prerequisites (all fixed 2026-06-24):** the persisted cache only
+  validates if the generator jar's content sha is stable, so the shadow jar is
+  now built byte-reproducibly (preserveFileTimestamps=false +
+  reproducibleFileOrder=true in generator/build.gradle); without that the jar
+  re-hashed every CI rebuild -> generatorMatch=false -> 0 reuse + wasted disk
+  (which SIGTERM-killed an early warm run). check-regen.yml persists
+  tools/regen/.module-cache via actions/cache (key per run_id, prefix
+  restore-keys; sha-gated so a stale restore is safe). Also required for the
+  container to run the flow at all: rsync (promote), Node 22 + npm (LB's
+  :npmInstallTheme), and a repo-root `npm ci` (typescript for the post-promote
+  drift gates) — all added to docker/Dockerfile / entrypoint.sh.
 
 - **[done-superseded] Caching the stable subtree.** Measured class
   distribution of the 59,371-file tree: volatile jars (net.minecraft 8855, net.ccbluex
