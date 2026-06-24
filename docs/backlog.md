@@ -280,24 +280,53 @@ different code (see the TS2300 dead-end) is a fidelity tradeoff, not a sweep.
 
 Performance work (do in order): proper closing -> GraalJS JIT -> caching.
 
-- **[~] Proper closing (HUGE win).** On MC 26.2 the headless client no longer
-  terminates after `ts-defgen.js` writes output: `mc.close()` stopped ending the
-  JVM, so the client idles until the regen `timeout` (~100 min wasted; the actual
-  introspection is ~10-15 min). Fixed in `tools/regen/ts-defgen.js`: after
-  `generate()` (which writes + flushes all `.d.ts` synchronously) do NOT call
-  `mc.close()`; flush stdout and `Runtime.getRuntime().halt(0)`. Brings a regen
-  from ~2 h to ~15-20 min. _Validate with a timed regen._
-- **[ ] GraalJS JIT.** The regen JDK is stock Temurin 25, so GraalJS runs the
-  Truffle interpreter (log: "fallback runtime that does not support runtime
-  compilation"). ts-defgen.js's enumeration/emit loop over 56k classes is
-  interpreted. A GraalVM JDK 25 (or the truffle runtime compiler on the module
-  path) would JIT it. Caveat: much of the hot path is Java reflection (native), so
-  measure the win.
-- **[ ] Caching the stable subtree.** ~80% of the 56k classes are `java.*`, netty,
-  fastutil, guava, kotlin-stdlib — they only change on a dependency bump, not per
-  LB/MC release. Content-address by classpath jar hashes, skip re-introspecting
-  unchanged jars, regen only the changed namespaces (`net.ccbluex.*` + `net.minecraft.*`)
-  and merge. Biggest structural win; medium-high effort (import consistency).
+- **[x] Proper closing (DONE, shipped 0a8e8ab).** On MC 26.2 the headless client no
+  longer terminates after `ts-defgen.js` writes output: `mc.close()` stopped ending
+  the JVM, so the client idled until the regen `timeout` (~100 min wasted). Fixed in
+  `tools/regen/ts-defgen.js`: after `generate()` (which writes + flushes all `.d.ts`
+  synchronously) do NOT call `mc.close()`; flush stdout and
+  `Runtime.getRuntime().halt(0)`. **Measured:** a full regen now exits cleanly
+  (`runClient exit 0`) in **~34 min** instead of grinding to the 60m timeout (and
+  ~100m at 120m). The walk itself is ~21 min + ~11 min emission; the win is
+  eliminating the post-output idle.
+- **[x] GraalJS JIT — INVESTIGATED, NO WIN, NOT ADOPTED.** Hypothesis was that the
+  regen runs GraalJS on the Truffle *fallback* runtime (stock OpenJDK 25 -> log:
+  "fallback runtime that does not support runtime compilation"), so the ts-defgen.js
+  loop is interpreted. Tested by running the whole regen on **Oracle GraalVM JDK
+  25.0.3** (exact match to the bundled GraalVM Polyglot 25.0.3); the fallback warning
+  disappeared (Truffle JIT genuinely active via libgraal/JVMCI). **But the wall-clock
+  was unchanged: ~34 min vs ~34m31s stock (walk ~22.5 vs ~21 min — a wash, within
+  noise).** Reason: the expensive work is the transitive reflection walk in
+  `TypeScriptGenerator.kt`, which is **host Kotlin bytecode** (already C2/Graal
+  JIT-compiled regardless), not guest JS. ts-defgen.js's JS is a thin loop that
+  invokes the generator **once** — there's almost no hot guest code for Truffle to
+  compile. GraalVM also leaks a few of its own JDK classes into the tree (+159 files,
+  +23 `com/oracle`), i.e. a small output delta for zero gain. Reverted
+  `tools/regen-types.sh` to stock OpenJDK 25. GraalVM JDK 25 left installed at
+  `/usr/lib/jvm/graalvm-25` (harmless, unused). **Takeaway: the regen is
+  host-reflection-bound; caching the stable subtree is the only lever that cuts it.**
+- **[~] Caching the stable subtree (THE lever; in progress).** Measured class
+  distribution of the 59,371-file tree: volatile jars (net.minecraft 8855, net.ccbluex
+  2739, com.viaversion 2789, com.mojang 1063, net.fabricmc/raphimc/caffeinemc/
+  irisshaders ~4300) ~= 20k classes; the rest — fastutil (6050), graalvm/oracle
+  (~10k, polyglot), apache, kotlin, JDK, guava, lwjgl, netty, icu — are **~30k
+  foundational-library classes that never reference the volatile jars**, so their
+  rendered `.d.ts` is stable across an MC bump. **Design (sound):** the generator does
+  a *transitive closure* (`visitClass` -> `module.dependentTypes.forEach { visitClass }`,
+  TypeScriptGenerator.kt:1568), so filtering the input set can't skip a class — it gets
+  re-reached. Caching must live *inside* the generator: a `ModuleCache` keyed by
+  **(source-jar content sha + generator sha)**. In `visitClass`, if the class's jar is
+  in a **foundational allowlist** (java/kotlin/netty/fastutil/guava/graalvm/apache/lwjgl/
+  icu/...) and both hashes match the prior run, reuse the previous run's rendered
+  `path`+`moduleText` (a `CachedModule` placed into `modules` with no reflection) and
+  re-enqueue its cached dependent FQNs so the walk stays complete. Soundness: cached
+  text bakes imports/aliases against dependent NAMES; restricting to foundational jars
+  (whose transitive deps are all foundational/JDK, never minecraft/ccbluex) guarantees
+  those names are unchanged. Cache store = the prior raw (pre-post-patch) output tree +
+  a manifest (fqn -> path, jarKey, depFqns; plus jarKey -> sha, generatorSha).
+  Source jar via `klass.java.protectionDomain.codeSource.location`, sha memoized per
+  jar. Ceiling ~= half the walk. Gate (typecheck.mjs) + a validation regen + subagent
+  review before shipping.
 
 - **[ ] ts-extract.py drops KDocs on annotation classes (doc-completeness).**
   tree-sitter-kotlin (1.1.0) mis-parses `@Retention(...) annotation class X` as an
