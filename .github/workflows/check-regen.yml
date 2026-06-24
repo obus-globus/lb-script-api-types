@@ -1,0 +1,165 @@
+name: Check upstream LiquidBounce & regenerate
+
+# Manual only (for now). Detects the current upstream LiquidBounce (nextgen)
+# version + commit, and — if no branch already exists for that build — bumps the
+# pin, runs the whole regen flow against it, and pushes the result to a per-build
+# branch for review. It does NOT publish and does NOT open a PR.
+#
+# Same caveats as regen-types.yml: the flow launches a headless Minecraft client
+# (~50-60 min on Mesa softpipe) and pulls several GB; GitHub-hosted runners are
+# tight on disk/CPU — a self-hosted runner is recommended for routine use.
+on:
+  workflow_dispatch:
+    inputs:
+      lb_ref:
+        description: "Upstream LiquidBounce ref to track (branch or SHA)"
+        type: string
+        default: "nextgen"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: check-regen
+  cancel-in-progress: false
+
+jobs:
+  check-regen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      # 1. Resolve the upstream build: commit SHA + mod_version + minecraft_version,
+      #    straight from the remote (no full clone needed).
+      - name: Resolve upstream LiquidBounce build
+        id: lb
+        run: |
+          set -euo pipefail
+          REF="${{ inputs.lb_ref }}"
+          SHA="$(git ls-remote https://github.com/ccbluex/liquidbounce.git "$REF" | head -n1 | cut -f1)"
+          if [ -z "$SHA" ]; then
+            # treat the input as a literal SHA if it didn't resolve as a ref
+            SHA="$REF"
+          fi
+          SHORT="${SHA:0:9}"
+          PROPS="$(curl -fsSL "https://raw.githubusercontent.com/ccbluex/liquidbounce/$SHA/gradle.properties")"
+          VER="$(printf '%s\n' "$PROPS" | grep -E '^mod_version=' | head -n1 | cut -d= -f2 | tr -d '[:space:]')"
+          MC="$(printf '%s\n' "$PROPS" | grep -iE 'minecraft_version' | head -n1 | cut -d= -f2 | tr -d '[:space:]')"
+          BRANCH="regen/lb-${VER:-unknown}-${SHORT}"
+          echo "sha=$SHA"     >> "$GITHUB_OUTPUT"
+          echo "short=$SHORT" >> "$GITHUB_OUTPUT"
+          echo "ver=$VER"     >> "$GITHUB_OUTPUT"
+          echo "mc=$MC"       >> "$GITHUB_OUTPUT"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+          {
+            echo "### Upstream LiquidBounce"
+            echo "- version: \`${VER}\` (mc \`${MC}\`)"
+            echo "- commit: \`${SHA}\`"
+            echo "- target branch: \`${BRANCH}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # 2. Bail out early if we already have a branch for this exact build.
+      - name: Check for existing branch
+        id: branch
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin "${{ steps.lb.outputs.branch }}" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Branch ${{ steps.lb.outputs.branch }} already exists — nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Bump PINNED_SHA to the upstream build
+        if: steps.branch.outputs.exists == 'false'
+        run: |
+          set -euo pipefail
+          sed -i -E "s|^PINNED_SHA=.*|PINNED_SHA=\"${{ steps.lb.outputs.sha }}\"|" tools/regen-types.sh
+          grep -n '^PINNED_SHA=' tools/regen-types.sh
+
+      - name: Free up disk
+        if: steps.branch.outputs.exists == 'false'
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /opt/hostedtoolcache/CodeQL || true
+          df -h /
+
+      - name: Cache Gradle + Minecraft downloads
+        if: steps.branch.outputs.exists == 'false'
+        uses: actions/cache@v4
+        with:
+          path: gradle-cache
+          key: regen-gradle-${{ hashFiles('generator/**/*.gradle', 'tools/regen-types.sh') }}
+          restore-keys: regen-gradle-
+
+      # 3. Run the whole flow inside the regen container (build generator →
+      #    headless introspection → manifest refresh → post-patches → promote →
+      #    stamp + gate). continue-on-error: a NEW Minecraft version legitimately
+      #    grows the gate's error set, which we want surfaced for review, not used
+      #    to block the branch (the human re-baselines on merge). typings/ is
+      #    already promoted by the time the gate runs.
+      - name: Build regen image
+        if: steps.branch.outputs.exists == 'false'
+        run: docker build -f docker/Dockerfile -t lb-regen:ci .
+
+      - name: Run the regen flow
+        id: regen
+        if: steps.branch.outputs.exists == 'false'
+        continue-on-error: true
+        run: |
+          mkdir -p gradle-cache
+          docker run --rm --shm-size=1g \
+            -e HOME=/work \
+            -v "$PWD":/work \
+            -v "$PWD/gradle-cache":/cache/gradle \
+            lb-regen:ci
+          sudo chown -R "$(id -u):$(id -g)" . || true
+
+      - name: Upload regen-output artifact
+        if: steps.branch.outputs.exists == 'false'
+        uses: actions/upload-artifact@v4
+        with:
+          name: regen-output
+          path: tools/regen-output/
+          if-no-files-found: ignore
+
+      # 4. Re-run the gate explicitly (non-blocking) just to record its status in
+      #    the job summary — the in-flow gate result is buried in container logs.
+      - name: Typecheck gate (report only)
+        id: gate
+        if: steps.branch.outputs.exists == 'false'
+        continue-on-error: true
+        run: |
+          npm ci
+          if node tools/typecheck.mjs; then
+            echo "gate=pass" >> "$GITHUB_OUTPUT"
+            echo "Typecheck gate: PASS" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "gate=fail" >> "$GITHUB_OUTPUT"
+            echo "Typecheck gate: FAIL (likely new-MC-version debt growth — re-baseline on review)" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # 5. Push the result on a per-build branch (only if the regen actually
+      #    changed typings/). No PR, no publish.
+      - name: Commit & push branch
+        if: steps.branch.outputs.exists == 'false'
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain typings/ tools/regen-types.sh tools/kdoc-extractor/)" ]; then
+            echo "::warning::regen produced no changes (it may have failed before promote) — not pushing a branch." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          git config user.name  "obus-globus"
+          git config user.email "254700516+obus-globus@users.noreply.github.com"
+          git checkout -b "${{ steps.lb.outputs.branch }}"
+          git add -A
+          git commit -m "regen: LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})
+
+          Automated regen against ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}.
+          Gate: ${{ steps.gate.outputs.gate }}. No publish — review this branch,
+          re-baseline if the growth is just new-MC types, then cut a release."
+          git push origin "${{ steps.lb.outputs.branch }}"
+          echo "Pushed \`${{ steps.lb.outputs.branch }}\`." >> "$GITHUB_STEP_SUMMARY"
