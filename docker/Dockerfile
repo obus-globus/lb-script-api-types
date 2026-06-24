@@ -8,7 +8,10 @@
 #   - JDK 25  — to run LiquidBounce (nextgen requires JVM 25)
 #   - JDK 21  — to build the Kotlin ts-generator shadow jar
 #   - Xvfb + Mesa (llvmpipe) — software OpenGL, no GPU
-#   - Python 3 — post-patches (apply-kdoc, fix-binding-types)
+#   - Python 3 (+ venv + pip) — post-patches (apply-kdoc, fix-binding-types) AND
+#     the tree-sitter doc/signature extraction: refresh-manifest.sh /
+#     refresh-signatures.sh bootstrap a .venv-ts and pip-install tree-sitter when
+#     run-regen.sh detects a stale manifest after a pin bump.
 #
 # The heavy downloads (Gradle deps + Minecraft assets/libraries via Loom) live
 # in GRADLE_USER_HOME=/cache/gradle, and the cloned repo + LB source live in
@@ -19,7 +22,7 @@ FROM ubuntu:24.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
       ca-certificates curl git unzip xz-utils nodejs \
-      python3 \
+      python3 python3-venv python3-pip \
       openjdk-21-jdk-headless \
       xvfb mesa-utils mesa-vulkan-drivers \
       libgl1-mesa-dri libglx-mesa0 libgl1 libegl1 libgbm1 libglu1-mesa \
