@@ -46,9 +46,12 @@ jobs:
             SHA="$REF"
           fi
           SHORT="${SHA:0:9}"
-          PROPS="$(curl -fsSL "https://raw.githubusercontent.com/ccbluex/liquidbounce/$SHA/gradle.properties")"
-          VER="$(printf '%s\n' "$PROPS" | grep -E '^mod_version=' | head -n1 | cut -d= -f2 | tr -d '[:space:]')"
-          MC="$(printf '%s\n' "$PROPS" | grep -iE 'minecraft_version' | head -n1 | cut -d= -f2 | tr -d '[:space:]')"
+          RAW="https://raw.githubusercontent.com/ccbluex/liquidbounce/$SHA"
+          # mod_version lives in gradle.properties; the concrete Minecraft version
+          # lives in gradle/libs.versions.toml (gradle.properties only has a RANGE,
+          # mod_mc_version) — same source stamp-version.mjs reads.
+          VER="$(curl -fsSL "$RAW/gradle.properties" | grep -E '^mod_version=' | head -n1 | cut -d= -f2 | tr -d '[:space:]')"
+          MC="$(curl -fsSL "$RAW/gradle/libs.versions.toml" | grep -E '^[[:space:]]*minecraft[[:space:]]*=' | head -n1 | sed -E 's/.*=[[:space:]]*"?([^"#]+)"?.*/\1/' | tr -d '[:space:]')"
           BRANCH="regen/lb-${VER:-unknown}-${SHORT}"
           echo "sha=$SHA"     >> "$GITHUB_OUTPUT"
           echo "short=$SHORT" >> "$GITHUB_OUTPUT"
