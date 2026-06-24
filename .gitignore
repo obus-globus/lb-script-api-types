@@ -3,8 +3,12 @@ node_modules/
 .DS_Store
 
 # Heavy regen inputs/outputs, fetched/generated on demand (see fetch-references.sh).
-# LiquidBounce source + decompiled MC (cloned/symlinked by fetch-references.sh):
-references/
+# LiquidBounce source + decompiled MC (cloned/symlinked by fetch-references.sh).
+# Anchored to the repo root: an unanchored `references/` also matched
+# `typings/types/net/minecraft/references/`, so `git add` silently dropped NEW
+# .d.ts there (e.g. BlockItemId/BlockItemIds) while the registry still referenced
+# them — a dangling-import drift that shipped in past releases.
+/references/
 # Raw ts-generator output before it's promoted into typings/:
 tools/regen-output/
 # Persistent per-class render cache (ModuleCache): prior run's raw .d.ts + manifest:
