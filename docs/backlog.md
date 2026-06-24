@@ -324,16 +324,25 @@ Performance work (do in order): proper closing -> GraalJS JIT -> caching.
   generator `ModuleCache.kt` (+ `GeneratedModule`/`CachedModule` + visitClass
   hook in `TypeScriptGenerator.kt`), `moduleCacheTests.kt` (cold->warm identical
   + tamper-invalidation), `tools/regen-types.sh`, `.gitignore`.
-  - **Follow-up (not done): the walk has an O(n^2) visited-check**
-    (`modules.keys.find { isSameClass }` at TypeScriptGenerator visitClass + the
-    same in moduleText import resolution). It runs for all 57k classes on BOTH
-    cold and warm and is a large fixed floor the cache can't touch — it's why the
-    warm walk is still ~17.5 min. The map is already keyed by KClass; the linear
-    isSameClass scan is defensive against multiple KClass instances for one class.
-    Making it O(1) (canonicalize KClass by qualifiedName into the map key) could
-    cut both cold and warm substantially. Risk: KClass-identity dedup regressions
-    — needs the determinism + dedupe tests as a guard. Bigger potential win than
-    the cache itself.
+- **[x] O(1) module index (THE big win — regen ~34.5 min -> ~6 min).** The walk's
+  visited-check and import resolution located a class's module with
+  `modules.keys.find { isSameClass }` — a linear scan run once per class AND once
+  per dependent, i.e. O(n^2) over ~57k classes, recomputing `qualifiedName`
+  reflectively each comparison. THIS, not reflection, was the dominant cost. Added
+  a `modulesByName` HashMap mirroring the module map (keyed exactly as isSameClass
+  compares: qualifiedName, all nulls in one bucket) so both lookups are O(1).
+  **Measured (MC 26.2, no cache): introspection walk ~33.5 min -> ~1m45s, whole
+  regen ~34.5 min -> ~6 min.** Output byte-identical across all 59k files (lone
+  `.d.ts` diff is the pre-existing non-deterministic mixin counter in a
+  commented-out invalid line). Guarded by the determinism + dedupe + cache tests.
+  Shipped: generator `d55dbd2`.
+
+  **Post-O(1), the render cache is now marginal.** With reflection cheap (~1m45s
+  for the whole walk), reusing renders saves little: warm (99.5% reuse) walk ~18s
+  / total ~5 min vs no-cache ~1m45s / ~6 min — a ~1 min gain (it was ~12 min
+  before the O(1) fix). The cache is kept (sound, tested, opt-in via
+  TSGEN_CACHE_DIR; likely helps more on slow CI runners) but its value is now
+  small; could be disabled-by-default or removed for simplicity if desired.
 
 - **[done-superseded] Caching the stable subtree.** Measured class
   distribution of the 59,371-file tree: volatile jars (net.minecraft 8855, net.ccbluex
