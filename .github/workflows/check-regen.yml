@@ -1,14 +1,22 @@
 name: Check upstream LiquidBounce & regenerate
 
-# Manual only (for now). Detects the current upstream LiquidBounce (nextgen)
-# version + commit, and — if no branch already exists for that build — bumps the
-# pin, runs the whole regen flow against it, and pushes the result to a per-build
-# branch for review. It does NOT publish and does NOT open a PR.
+# Runs daily (and on manual dispatch). Detects the current upstream LiquidBounce
+# (nextgen) version + commit, and — unless we're already on it (main's pin) or a
+# branch already exists for that build — bumps the pin, runs the whole regen flow
+# against it, and pushes the result to a per-build branch for review. It does NOT
+# publish and does NOT open a PR.
+#
+# The daily run is cheap when nothing changed: it resolves the upstream sha and
+# skips in ~30s if main is already pinned there or the branch exists. A real
+# regen only happens when upstream moves past main's pin.
 #
 # Same caveats as regen-types.yml: the flow launches a headless Minecraft client
 # (~50-60 min on Mesa softpipe) and pulls several GB; GitHub-hosted runners are
 # tight on disk/CPU — a self-hosted runner is recommended for routine use.
 on:
+  schedule:
+    # Daily at 04:07 UTC. Off the top of the hour (GitHub delays/sheds those).
+    - cron: "7 4 * * *"
   workflow_dispatch:
     inputs:
       lb_ref:
@@ -39,7 +47,8 @@ jobs:
         id: lb
         run: |
           set -euo pipefail
-          REF="${{ inputs.lb_ref }}"
+          # On a `schedule` event there are no inputs -> default to nextgen.
+          REF="${{ inputs.lb_ref }}"; REF="${REF:-nextgen}"
           SHA="$(git ls-remote https://github.com/ccbluex/liquidbounce.git "$REF" | head -n1 | cut -f1)"
           if [ -z "$SHA" ]; then
             # treat the input as a literal SHA if it didn't resolve as a ref
@@ -65,14 +74,20 @@ jobs:
             echo "- target branch: \`${BRANCH}\`"
           } >> "$GITHUB_STEP_SUMMARY"
 
-      # 2. Bail out early if we already have a branch for this exact build.
-      - name: Check for existing branch
+      # 2. Skip when there's nothing to do: either main is already pinned to this
+      #    upstream build (we regenerated + merged it — the common case for the
+      #    daily run), or a review branch for it already exists (pending merge).
+      - name: Check if already done
         id: branch
         run: |
           set -euo pipefail
-          if git ls-remote --exit-code --heads origin "${{ steps.lb.outputs.branch }}" >/dev/null 2>&1; then
+          CURRENT_PIN="$(grep -E '^PINNED_SHA=' tools/regen-types.sh | head -n1 | cut -d'"' -f2)"
+          if [ "$CURRENT_PIN" = "${{ steps.lb.outputs.sha }}" ]; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
-            echo "Branch ${{ steps.lb.outputs.branch }} already exists — nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "main is already pinned to ${{ steps.lb.outputs.sha }} — up to date, nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
+          elif git ls-remote --exit-code --heads origin "${{ steps.lb.outputs.branch }}" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            echo "Branch ${{ steps.lb.outputs.branch }} already exists (pending review) — nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
           else
             echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
