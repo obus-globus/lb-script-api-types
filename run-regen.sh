@@ -100,15 +100,23 @@ if [[ "$PROMOTE" == "1" ]]; then
   echo "Promoted into typings/ ($(find "$REPO_ROOT/typings/types" -name '*.d.ts' | wc -l) .d.ts)."
   # Stamp the package version to the LiquidBounce build these types were made for.
   node "$REPO_ROOT/scripts/stamp-version.mjs"
-  echo "==> post-promote drift gates"
-  python3 "$REPO_ROOT/tools/regen/check-augmentation-drift.py"
-  python3 "$REPO_ROOT/tools/regen/check-ambient-contract.py" "$REPO_ROOT/typings"
-  python3 "$REPO_ROOT/tools/regen/events-doc-report.py" || \
-    echo "WARN: events-doc-report failed (informational only)" >&2
-  echo "==> typecheck gate (auto-tightening shrunken ratchets)"
-  (cd "$REPO_ROOT" && node tools/typecheck.mjs --tighten)
-  echo "==> packaging canary"
-  "$REPO_ROOT/tools/package-canary.sh"
+  if [[ "${SKIP_GATES:-0}" == "1" ]]; then
+    # The CI auto-regen runs the authoritative gates (typecheck, canary, output
+    # sanity) as separate workflow steps so it can branch on each result, and it
+    # must NOT auto-tighten baselines into an auto-published commit. Skip them
+    # here to avoid the redundant ~4-min double-run.
+    echo "==> SKIP_GATES=1 — post-promote gates run by the caller (workflow)"
+  else
+    echo "==> post-promote drift gates"
+    python3 "$REPO_ROOT/tools/regen/check-augmentation-drift.py"
+    python3 "$REPO_ROOT/tools/regen/check-ambient-contract.py" "$REPO_ROOT/typings"
+    python3 "$REPO_ROOT/tools/regen/events-doc-report.py" || \
+      echo "WARN: events-doc-report failed (informational only)" >&2
+    echo "==> typecheck gate (auto-tightening shrunken ratchets)"
+    (cd "$REPO_ROOT" && node tools/typecheck.mjs --tighten)
+    echo "==> packaging canary"
+    "$REPO_ROOT/tools/package-canary.sh"
+  fi
 else
   echo "==> [3/3] promote skipped (--no-promote). Output in $OUT"
 fi

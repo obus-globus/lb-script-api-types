@@ -25,7 +25,8 @@ on:
         default: "nextgen"
 
 permissions:
-  contents: write
+  contents: write      # push main + tags, create releases
+  id-token: write      # OIDC npm trusted publishing on the auto-release path
 
 concurrency:
   group: check-regen
@@ -144,6 +145,7 @@ jobs:
           mkdir -p gradle-cache
           docker run --rm --shm-size=1g \
             -e HOME=/work \
+            -e SKIP_GATES=1 \
             -v "$PWD":/work \
             -v "$PWD/gradle-cache":/cache/gradle \
             lb-regen:ci
@@ -162,45 +164,124 @@ jobs:
           path: tools/regen-output/
           if-no-files-found: ignore
 
-      # 4. Re-run the gate explicitly (non-blocking) just to record its status in
-      #    the job summary — the in-flow gate result is buried in container logs.
-      - name: Typecheck gate (report only)
+      # 4. Authoritative gates (single run here; the container skips them via
+      #    SKIP_GATES=1). Each is non-blocking and records a pass/fail output so
+      #    the decision step can branch on it — fail-closed: anything other than a
+      #    clean "pass" sends the regen to the review-branch path, never auto-ship.
+      - name: Typecheck gate
         id: gate
         if: steps.branch.outputs.exists == 'false'
         continue-on-error: true
         run: |
           npm ci
           if node tools/typecheck.mjs; then
-            echo "gate=pass" >> "$GITHUB_OUTPUT"
-            echo "Typecheck gate: PASS" >> "$GITHUB_STEP_SUMMARY"
+            echo "gate=pass" >> "$GITHUB_OUTPUT"; echo "Typecheck gate: PASS" >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "gate=fail" >> "$GITHUB_OUTPUT"
-            echo "Typecheck gate: FAIL (likely new-MC-version debt growth — re-baseline on review)" >> "$GITHUB_STEP_SUMMARY"
+            echo "gate=fail" >> "$GITHUB_OUTPUT"; echo "Typecheck gate: FAIL" >> "$GITHUB_STEP_SUMMARY"
           fi
 
-      # 5. Push the result on a per-build branch (only if the regen actually
-      #    changed typings/). No PR, no publish.
-      - name: Commit & push branch
+      - name: Packaging canary
+        id: canary
+        if: steps.branch.outputs.exists == 'false'
+        continue-on-error: true
+        run: |
+          if tools/package-canary.sh; then echo "canary=pass" >> "$GITHUB_OUTPUT"; else echo "canary=fail" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Output sanity (registry<->types + floor + shrink)
+        id: sanity
+        if: steps.branch.outputs.exists == 'false'
+        continue-on-error: true
+        run: |
+          BASE="$(git ls-tree -r --name-only origin/main -- typings/types 2>/dev/null | grep -c '\.d\.ts$' || echo 0)"
+          if python3 tools/regen/check-output-sanity.py typings --baseline-count "${BASE:-0}"; then
+            echo "sanity=pass" >> "$GITHUB_OUTPUT"
+          else
+            echo "sanity=fail" >> "$GITHUB_OUTPUT"
+          fi
+
+      # 5. Decide: a clean regen (gate+canary+sanity pass, MC unchanged, real
+      #    changes) on an enabled repo auto-ships; anything else -> review branch.
+      - name: Decide auto-release vs review
+        id: decide
         if: steps.branch.outputs.exists == 'false'
         run: |
           set -euo pipefail
           if [ -z "$(git status --porcelain typings/ tools/regen-types.sh tools/kdoc-extractor/)" ]; then
-            echo "::warning::regen produced no changes (it may have failed before promote) — not pushing a branch." | tee -a "$GITHUB_STEP_SUMMARY"
-            exit 1
+            echo "::warning::regen produced no changes (failed before promote?) — nothing to do."
+            echo "auto=false" >> "$GITHUB_OUTPUT"; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          NEW_MC="$(node -p "require('./typings/package.json').liquidbounce.minecraft")"
+          OLD_MC="$(git show origin/main:typings/package.json | node -p "JSON.parse(require('fs').readFileSync(0)).liquidbounce.minecraft")"
+          MC_SAME=false; [ "$NEW_MC" = "$OLD_MC" ] && MC_SAME=true
+          AUTO=false
+          if [ "${{ vars.AUTO_RELEASE }}" = "true" ] \
+             && [ "${{ steps.gate.outputs.gate }}" = "pass" ] \
+             && [ "${{ steps.canary.outputs.canary }}" = "pass" ] \
+             && [ "${{ steps.sanity.outputs.sanity }}" = "pass" ] \
+             && [ "$MC_SAME" = "true" ]; then
+            AUTO=true
+          fi
+          echo "auto=$AUTO" >> "$GITHUB_OUTPUT"
+          {
+            echo "### Decision"
+            echo "- gate: \`${{ steps.gate.outputs.gate }}\` · canary: \`${{ steps.canary.outputs.canary }}\` · sanity: \`${{ steps.sanity.outputs.sanity }}\` · mc-unchanged: \`$MC_SAME\` (was \`$OLD_MC\`, now \`$NEW_MC\`)"
+            echo "- AUTO_RELEASE var: \`${{ vars.AUTO_RELEASE }}\`"
+            echo "- **auto-release: $AUTO**"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # 6a. Clean + enabled -> merge to main, bump iteration, tag, release, and
+      #     publish to npm via OIDC trusted publishing (no token).
+      - name: Auto-merge + release + publish
+        if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          npm install -g npm@latest >/dev/null 2>&1   # OIDC trusted publishing needs npm >= 11.5.1
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config user.name  "obus-globus"
+          git config user.email "254700516+obus-globus@users.noreply.github.com"
+          # Bump the iteration in the working tree (not committed yet).
+          (cd typings && npm version --no-git-tag-version patch)
+          VER="$(node -p "require('./typings/package.json').version")"
+          # PUBLISH FIRST (OIDC trusted publishing — requires a trusted publisher
+          # for THIS workflow on npmjs.com; a token-created release can't trigger
+          # npm-publish.yml so we publish inline). If this fails, main is left
+          # untouched and the next run retries cleanly.
+          ( cd typings
+            npm publish
+            npm dist-tag add "@wunk/lb-script-api-types@$VER" \
+              "lb-$(node -p "require('./package.json').version.split('.').slice(0,2).join('.')")" || true
+          )
+          # Only after a successful publish: record it on main (commit + tag + release).
+          git add typings tools/regen-types.sh tools/kdoc-extractor
+          git commit -m "regen+release: v$VER — LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})
+
+          Automated clean regen against ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}
+          (gate pass, canary ok, output sanity ok, MC unchanged) — auto-published v$VER."
+          git tag -a "v$VER" -m "v$VER" HEAD
+          git push origin HEAD:main "v$VER"
+          LB_BLOCK="$(node -p "JSON.stringify(require('./typings/package.json').liquidbounce, null, 2)")"
+          gh release create "v$VER" --title "v$VER" --notes "$(printf 'Automated types build %s (LiquidBounce %s / MC %s), published to npm via OIDC.\n\nProvenance:\n```json\n%s\n```' "$VER" "${{ steps.lb.outputs.ver }}" "${{ steps.lb.outputs.mc }}" "$LB_BLOCK")" || true
+          echo "✅ Auto-published + released **v$VER**." >> "$GITHUB_STEP_SUMMARY"
+
+      # 6b. Not clean / not enabled -> push a per-build branch for human review.
+      - name: Push review branch
+        if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto != 'true' && steps.decide.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name  "obus-globus"
           git config user.email "254700516+obus-globus@users.noreply.github.com"
           git checkout -b "${{ steps.lb.outputs.branch }}"
-          # Stage only the intended outputs (same paths the change-check above
-          # uses). NOT `git add -A`: the regen leaves root-owned mounts in the tree
-          # (gradle-cache/, the container's tools/regen/.module-cache/) that would
-          # make `add -A` fail with EACCES, and they must not be committed anyway.
+          # Stage only the intended outputs (NOT `git add -A`: root-owned mounts
+          # gradle-cache/ and tools/regen/.module-cache/ must not be committed).
           git add typings tools/regen-types.sh tools/kdoc-extractor
           git commit -m "regen: LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})
 
           Automated regen against ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}.
-          Gate: ${{ steps.gate.outputs.gate }}. No publish — review this branch,
-          re-baseline if the growth is just new-MC types, then cut a release."
+          gate=${{ steps.gate.outputs.gate }} canary=${{ steps.canary.outputs.canary }} sanity=${{ steps.sanity.outputs.sanity }}.
+          Needs review (gate/canary/sanity not all-clean, an MC bump, or auto-release disabled)."
           git push origin "${{ steps.lb.outputs.branch }}"
-          echo "Pushed \`${{ steps.lb.outputs.branch }}\`." >> "$GITHUB_STEP_SUMMARY"
+          echo "Pushed review branch \`${{ steps.lb.outputs.branch }}\` (needs a human)." >> "$GITHUB_STEP_SUMMARY"
