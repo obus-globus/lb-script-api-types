@@ -7,7 +7,7 @@ import type { RequestObject } from '../../../../../net/ccbluex/netty/http/model/
  *
  * Allows the browser to communicate with the client. (e.g. for UIs)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/ClientInteropServer.kt:44}
  */
 export class ClientInteropServer extends Object {
     static INSTANCE: ClientInteropServer;

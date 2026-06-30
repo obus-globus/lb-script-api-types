@@ -5,15 +5,6 @@ import type { PacketEvent } from '../../../../../../../net/ccbluex/liquidbounce/
 import type { WorldChangeEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/WorldChangeEvent.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { ModuleAutoDisable$DisableOn } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/world/ModuleAutoDisable$DisableOn.d.ts'
-/**
- * AutoDisable module
- *
- * Automatically disables modules, when special event happens.
- *
- * Command: {@link CommandAutoDisable}
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAutoDisable.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAutoDisable.kt:41}
- */
 export class ModuleAutoDisable extends ClientModule {
     static INSTANCE: ModuleAutoDisable;
     // private deathHandler: EventHook<DeathEvent>;

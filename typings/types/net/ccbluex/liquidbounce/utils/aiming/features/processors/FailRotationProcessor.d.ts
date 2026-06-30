@@ -9,7 +9,7 @@ import type { RotationProcessor } from '../../../../../../../net/ccbluex/liquidb
 /**
  * The fail focus acts as fail rate, it will purposely miss the target on a certain rate.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/FailRotationProcessor.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/FailRotationProcessor.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/FailRotationProcessor.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/FailRotationProcessor.kt:36}
  */
 export class FailRotationProcessor extends ToggleableValueGroup implements RotationProcessor {
     constructor(owner: EventListener | null)

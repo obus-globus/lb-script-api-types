@@ -4,6 +4,15 @@ import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.t
 import type { Direction$Axis } from '../../../../../../net/minecraft/core/Direction$Axis.d.ts'
 import type { Vec3i } from '../../../../../../net/minecraft/core/Vec3i.d.ts'
 import type { BoundingBox } from '../../../../../../net/minecraft/world/level/levelgen/structure/BoundingBox.d.ts'
+/**
+ * ```
+ * ? x x ?
+ * x o o x
+ * ? x x ?
+ * ```
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/hole/Hole.kt:81}
+ */
 export class Hole$OneByTwo extends Object implements Hole {
     constructor(pos: BlockPos, axis: Direction$Axis, bedrockOnly: boolean)
     readonly axis: Direction$Axis;

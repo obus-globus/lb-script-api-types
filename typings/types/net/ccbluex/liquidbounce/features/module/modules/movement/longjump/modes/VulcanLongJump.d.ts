@@ -5,11 +5,11 @@ import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbou
 import type { GameTickEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { PacketEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Vulcan (2.8.9)
- * - **Tested on:** anticheat-test.com, eu.loyisa.cn
+ * @anticheat Vulcan
+ * @anticheatVersion 2.8.9
+ * @testedOn anticheat-test.com, eu.loyisa.cn
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/VulcanLongJump.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/VulcanLongJump.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/VulcanLongJump.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/VulcanLongJump.kt:38}
  */
 export class VulcanLongJump extends Mode {
     static Companion: Tagged$Companion;

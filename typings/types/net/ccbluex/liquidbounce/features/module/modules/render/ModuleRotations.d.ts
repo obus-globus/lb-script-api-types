@@ -10,7 +10,7 @@ import type { Rotation } from '../../../../../../../net/ccbluex/liquidbounce/uti
  *
  * Allows you to see server-sided rotations.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations.kt:46}
  */
 export class ModuleRotations extends ClientModule {
     static INSTANCE: ModuleRotations;
@@ -21,7 +21,7 @@ export class ModuleRotations extends ClientModule {
      * {@link RotationManager.currentRotation} and {@link RotationManager.previousRotation}
      * directly but this is required for {@link smooth} to work.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations.kt:71}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations.kt:76}
      */
     modelRotation: Rotation | null;
     // private modelUpdater: EventHook<GameTickEvent>;

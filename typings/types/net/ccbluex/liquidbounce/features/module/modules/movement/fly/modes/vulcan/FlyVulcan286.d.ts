@@ -8,12 +8,12 @@ import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/
 import type { PlayerTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerTickEvent.d.ts'
 import type { ClientboundPlayerPositionPacket } from '../../../../../../../../../../net/minecraft/network/protocol/game/ClientboundPlayerPositionPacket.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Version 2.8.6
- * - **Tested on:** localhost
- * - ONLY WORKS ON 1.13+ SERVERS
+ * @anticheat Vulcan
+ * @anticheat Version 2.8.6
+ * @testedOn localhost
+ * @note ONLY WORKS ON 1.13+ SERVERS
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286.kt:46}
  */
 export class FlyVulcan286 extends Mode {
     static Companion: Tagged$Companion;

@@ -5,23 +5,8 @@ import type { Tagged } from '../../../../../../../../net/ccbluex/liquidbounce/co
 import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 export class ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode extends Enum<ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode> implements Tagged {
     static Companion: Tagged$Companion;
-    /**
-     * Rotates the player before the block is placed
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt#L218 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt:218}
-     */
     static NORMAL: ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode;
-    /**
-     * Rotates the player on the tick the block is placed
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt#L223 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt:223}
-     */
     static ON_TICK: ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode;
-    /**
-     * Similar to ON_TICK, but the player will keep the rotation after placing
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt#L228 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt:228}
-     */
     static ON_TICK_SNAP: ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode;
     static getEntries(): ModuleScaffold$ScaffoldRotationValueGroup$RotationTimingMode[];
     static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };

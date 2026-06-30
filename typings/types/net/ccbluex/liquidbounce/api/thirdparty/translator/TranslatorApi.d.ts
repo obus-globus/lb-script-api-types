@@ -11,7 +11,7 @@ import type { TranslationResult } from '../../../../../../net/ccbluex/liquidboun
  *
  * The API ensures that the provided text is not empty before attempting to perform the translation.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:24}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:34}
  */
 export interface TranslatorApi extends Object{
     /**
@@ -19,14 +19,12 @@ export interface TranslatorApi extends Object{
      * The source language is auto-detected by default,
      * and the target language is defined by the `targetLanguage` parameter.
      *
-     * @throws IllegalArgumentException If the `text` parameter is blank.
-     *
      * @param sourceLanguage The language of the input text. Defaults to `TranslateLanguage.Auto` (auto-detection).
      * @param targetLanguage The language to which the text should be translated.                       Defaults to a language code from `CommandAutoTranslate.languageCode`.
      * @param text The text to translate.
-     * @returns A {@link TranslationResult} object containing the translation result.
+     * @returns @throws IllegalArgumentException If the `text` parameter is blank.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:35}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:49}
      */
     translate(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string): TranslationResult;
     /**
@@ -38,7 +36,7 @@ export interface TranslatorApi extends Object{
      * @param text The text to translate.
      * @returns A {@link TranslationResult} object containing the translation result.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:61}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/api/thirdparty/translator/TranslatorApi.kt:71}
      */
     translateInternal(sourceLanguage: TranslateLanguage, targetLanguage: TranslateLanguage, text: string): TranslationResult;
 }

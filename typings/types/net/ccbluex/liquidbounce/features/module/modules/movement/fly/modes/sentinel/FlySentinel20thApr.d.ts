@@ -5,12 +5,15 @@ import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquid
 import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerMoveEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Sentinel (20.04.2024)
- * - **Tested on:** cubecraft.net
- * - Tested in SkyWars - fly as long as you want. REQUIRES PING SPOOF TO BE ENABLED.  Thanks to the_bi11iona1re for making me aware that Sentinal folds to Verus Damage exploit.
+ * @anticheat Sentinel
+ * @anticheatVersion 20.04.2024
+ * @testedOn cubecraft.net
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel20thApr.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel20thApr.kt:40}
+ * @note Tested in SkyWars - fly as long as you want. REQUIRES PING SPOOF TO BE ENABLED.
+ *
+ * Thanks to the_bi11iona1re for making me aware that Sentinal folds to Verus Damage exploit.
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel20thApr.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel20thApr.kt:49}
  */
 export class FlySentinel20thApr extends Mode {
     static Companion: Tagged$Companion;

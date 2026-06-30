@@ -4,9 +4,11 @@ import type { Executor } from '../../../../../../java/util/concurrent/Executor.d
 import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FabricResourceReloader } from '../../../../../../net/fabricmc/fabric/impl/resource/FabricResourceReloader.d.ts'
+import type { AtlasManagerAccessor } from '../../../../../../net/fabricmc/fabric/mixin/client/rendering/AtlasManagerAccessor.d.ts'
 import type { TextureAtlas } from '../../../../../../net/minecraft/client/renderer/texture/TextureAtlas.d.ts'
 import type { TextureAtlasSprite } from '../../../../../../net/minecraft/client/renderer/texture/TextureAtlasSprite.d.ts'
 import type { TextureManager } from '../../../../../../net/minecraft/client/renderer/texture/TextureManager.d.ts'
+import type { AtlasManager$AtlasConfig } from '../../../../../../net/minecraft/client/resources/model/sprite/AtlasManager$AtlasConfig.d.ts'
 import type { AtlasManager$AtlasEntry } from '../../../../../../net/minecraft/client/resources/model/sprite/AtlasManager$AtlasEntry.d.ts'
 import type { AtlasManager$PendingStitchResults } from '../../../../../../net/minecraft/client/resources/model/sprite/AtlasManager$PendingStitchResults.d.ts'
 import type { SpriteGetter } from '../../../../../../net/minecraft/client/resources/model/sprite/SpriteGetter.d.ts'
@@ -16,8 +18,9 @@ import type { PreparableReloadListener } from '../../../../../../net/minecraft/s
 import type { PreparableReloadListener$PreparationBarrier } from '../../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$PreparationBarrier.d.ts'
 import type { PreparableReloadListener$SharedState } from '../../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
 import type { PreparableReloadListener$StateKey } from '../../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$StateKey.d.ts'
-export class AtlasManager extends Object implements AutoCloseable, FabricResourceReloader, SpriteGetter, PreparableReloadListener {
+export class AtlasManager extends Object implements AutoCloseable, FabricResourceReloader, AtlasManagerAccessor, SpriteGetter, PreparableReloadListener {
     static PENDING_STITCH: PreparableReloadListener$StateKey<AtlasManager$PendingStitchResults>;
+    static getKnownAtlases(): AtlasManager$AtlasConfig[];
     constructor(textureManager: TextureManager, maxMipmapLevels: number)
     // private atlasById: Map<Identifier, AtlasManager$AtlasEntry>;
     // private atlasByTexture: Map<Identifier, AtlasManager$AtlasEntry>;

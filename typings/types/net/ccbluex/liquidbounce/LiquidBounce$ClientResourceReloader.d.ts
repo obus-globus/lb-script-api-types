@@ -10,10 +10,10 @@ import type { PreparableReloadListener$SharedState } from '../../../net/minecraf
  *
  * For now this is only used to check for updates and request additional information from the internet.
  *
- * @see net.fabricmc.fabric.api.resource.v1.reloader.SimpleResourceReloader
+ * @see net.fabricmc.fabric.api.resource.v1.reloader.SimpleReloadListener
  * @see PreparableReloadListener
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L498 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:498}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt#L513 | src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt:513}
  */
 export class LiquidBounce$ClientResourceReloader extends Object implements PreparableReloadListener {
     static INSTANCE: LiquidBounce$ClientResourceReloader;

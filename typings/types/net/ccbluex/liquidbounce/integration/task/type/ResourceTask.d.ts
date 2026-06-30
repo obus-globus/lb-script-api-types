@@ -2,7 +2,7 @@ import type { Task } from '../../../../../../net/ccbluex/liquidbounce/integratio
 /**
  * A task with IO progress tracking
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/ResourceTask.kt#L22 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/ResourceTask.kt:22}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/ResourceTask.kt#L25 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/ResourceTask.kt:25}
  */
 export class ResourceTask extends Task {
     constructor(name: string)
@@ -11,7 +11,7 @@ export class ResourceTask extends Task {
     /**
      * Current read speed in bytes per second
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/ResourceTask.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/ResourceTask.kt:34}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/ResourceTask.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/ResourceTask.kt:37}
      */
     readonly speed: number;
     update(bytesRead: number, contentLength: number): void;

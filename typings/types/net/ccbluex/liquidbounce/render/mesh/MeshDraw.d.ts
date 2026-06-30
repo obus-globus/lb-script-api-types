@@ -11,16 +11,17 @@ import type { MeshDraw$VertexUploader } from '../../../../../net/ccbluex/liquidb
 /**
  * GPU-ready draw descriptor produced from {@link MeshData}.
  *
- * It stores uploaded vertex/index slices plus the draw parameters needed by {@link RenderPass.bindAndDraw}.
+ * It stores uploaded vertex data plus an index binding strategy
+ * and the draw parameters needed by {@link RenderPass.bindAndDraw}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:45}
  */
 export class MeshDraw extends Record {
     static DefaultUploader: MeshDraw$DefaultUploader;
     /**
      * Bind mesh buffers and issue one indexed draw call.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:136}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L182 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:182}
      */
     static bindAndDraw(renderPass: RenderPass, meshDraw: MeshDraw): void;
     static create(paramarg0: MeshData, paramarg1: RenderPipeline, paramarg2: MeshDraw$VertexUploader, paramarg3: MeshDraw$IndexUploader): MeshDraw;

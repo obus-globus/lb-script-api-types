@@ -1,3 +1,4 @@
+import type { Reader } from '../../../../../../../../java/io/Reader.d.ts'
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
@@ -6,7 +7,7 @@ import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liqui
 /**
  * Represents the locally available shop configurations
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopConfig.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopConfig.kt:78}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopConfig.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopConfig.kt:81}
  */
 export class ShopConfigPreset extends Enum<ShopConfigPreset> implements Tagged {
     static BLOCKSMC: ShopConfigPreset;
@@ -23,7 +24,8 @@ export class ShopConfigPreset extends Enum<ShopConfigPreset> implements Tagged {
     static valueOf(paramarg0: string): ShopConfigPreset;
     static values(): (Object | null)[];
     private constructor(tag: string, localFileName: string)
-    readonly internalPath: string;
+    // private localFileName: string;
     readonly tag: string;
+    reader(): Reader;
     name(): "PIKA_NETWORK" | "BLOCKSMC" | "CUBECRAFT" | "TEAMHOLY" | "FUNNYMC" | "DEXLAND";
 }

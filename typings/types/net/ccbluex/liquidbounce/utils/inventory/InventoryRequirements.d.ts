@@ -12,22 +12,6 @@ export class InventoryRequirements extends Enum<InventoryRequirements> implement
     static NOT_USING_ITEM: InventoryRequirements;
     static NO_MOVEMENT: InventoryRequirements;
     static NO_ROTATION: InventoryRequirements;
-    /**
-     * When this option is not enabled, the inventory will be opened silently
-     * depending on the Minecraft version chosen using ViaFabricPlus.
-     *
-     * If the protocol contains {@link com.viaversion.viabackwards.protocol.v1_12to1_11_1.Protocol1_12To1_11_1}
-     * and the client status packet is supported,
-     * the inventory will be opened silently using {@link openInventorySilently}.
-     * Otherwise, the inventory will not have any open tracking and
-     * the server will only know when clicking in the inventory.
-     *
-     * Closing will still be required to be done for any version.
-     * Sad.
-     * :(
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt:106}
-     */
     static OPEN_INVENTORY: InventoryRequirements;
     static getEntries(): InventoryRequirements[];
     static isEqual(paramarg0: Object): (param0: Object | null) => boolean;

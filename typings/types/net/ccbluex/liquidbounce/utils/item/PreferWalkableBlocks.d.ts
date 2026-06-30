@@ -14,7 +14,7 @@ import type { Block } from '../../../../../net/minecraft/world/level/block/Block
  * 2. nearest jump velocity modifier to 1.0
  * 3. nearest velocity jump modifier to 1.0
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemStackComparators.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemStackComparators.kt:73}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemStackComparators.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemStackComparators.kt:79}
  */
 export class PreferWalkableBlocks extends Object implements Comparator<ItemStack> {
     static INSTANCE: PreferWalkableBlocks;

@@ -13,7 +13,7 @@ import type { Parameter } from '../../../../../net/ccbluex/liquidbounce/features
  *
  * @author superblaubeere27 (@team CCBlueX)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:91}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L99 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:99}
  */
 export class CommandManager extends Object {
     static INSTANCE: CommandManager;
@@ -22,13 +22,6 @@ export class CommandManager extends Object {
     autoComplete(origCmd: string, start: number): CompletableFuture<Suggestions>;
     contains(element: Command): boolean;
     containsAll(elements: Command[]): boolean;
-    /**
-     * Executes a command.
-     *
-     * @param cmd The command. If there is no command in it (it is empty or only whitespaces), this method is a no op
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L230 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:230}
-     */
     execute(cmd: string): void;
     // private getSubCommand(cmd: string): CommandManager$ResolvedSubCommand | null;
     // private getSubCommand(args: string[], currentCommand: CommandManager$ResolvedSubCommand | null, idx: number): CommandManager$ResolvedSubCommand | null;
@@ -38,14 +31,5 @@ export class CommandManager extends Object {
     registerInbuilt(): void;
     removeCommand(command: Command): void;
     // private stripOuterQuotes(token: CharSequence): string;
-    /**
-     * Tokenizes the {@link line}.
-     *
-     * For example: `.friend add "Senk Ju"` -> [[`.friend`, `add`, `Senk Ju`]]
-     *
-     * @returns A pair of the tokenized command and the starting indices of the tokens
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L391 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:391}
-     */
     tokenizeCommand(line: string): CommandManager$TokenizationResult;
 }

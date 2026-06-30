@@ -7,7 +7,7 @@ import type { Vector2fc } from '../../../../../org/joml/Vector2fc.d.ts'
 /**
  * Chart.js spline interpolation
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt:32}
  */
 export class CurveUtil extends Object {
     static INSTANCE: CurveUtil;
@@ -19,7 +19,7 @@ export class CurveUtil extends Object {
      * @param tension Spline tension in range [0, 1] (out-of-range values are normalized)
      * @param onOutOfBounds Behavior for X values outside the curve domain, defaults to {@link OnOutOfBounds.CLAMP}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/CurveUtil.kt:59}
      */
     static transform(paramarg0: Vector2fc[], paramarg1: number, paramarg2: number): number;
     static transform(data: Vector2fc[], xPos: number, tension: number, onOutOfBounds: CurveUtil$OnOutOfBounds): number;

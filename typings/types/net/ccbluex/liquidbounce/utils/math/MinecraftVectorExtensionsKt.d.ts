@@ -14,7 +14,7 @@ import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class MinecraftVectorExtensionsKt extends Object {
     static add(vector3f: Vector3f, vec3d: Vec3): Vector3f;
     static average(iterable: Vec3[]): Vec3;
-    static bottomCenter(paramarg0: Vec3i, paramarg1: number): Vec3;
+    static bottomCenter(vec3i: Vec3i, yOffset: number): Vec3;
     static component1(paramarg0: Vec3): number;
     static component1(paramarg0: Vec2): number;
     static component1(paramarg0: Vec3i): number;
@@ -27,24 +27,29 @@ export class MinecraftVectorExtensionsKt extends Object {
     static copy(paramarg0: BlockPos, paramarg1: number, paramarg2: number, paramarg3: number): BlockPos;
     static copy(vec2: Vec2, x: number, y: number): Vec2;
     static copy(paramarg0: Vec3, paramarg1: number, paramarg2: number, paramarg3: number): Vec3;
-    static distanceToCenterSqr(paramarg0: Position, paramarg1: number): number;
+    static distanceToCenterSqr(position: Position, blockPos: number): number;
     static dot(vec3: Vec3, x: number, y: number, z: number): number;
     static equals(vec3: Vec3, other: Vec3, tolerance: number): boolean;
-    static expandToCube(paramarg0: Vec3, paramarg1: number): AABB;
+    static expandToCube(vec3: Vec3, halfExtents: number): AABB;
     /**
      * @returns {@link this} + {@link scale} * {@link other}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:100}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:113}
      */
     static fma(vec3: Vec3, scale: number, other: Vec3): Vec3;
     static getBottomCenter(paramarg0: Vec3i): Vec3;
     static getCenter(paramarg0: Vec3i): Vec3;
     static getTopCenter(paramarg0: Vec3i): Vec3;
+    /**
+     * @see Vec3.rotation
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:162}
+     */
     static getYaw(paramarg0: Vec3): number;
-    static horizontalDistanceTo(paramarg0: Vec3, paramarg1: number, paramarg2: number): number;
-    static horizontalDistanceTo(vec3: Vec3, other: Vec3i): number;
-    static horizontalDistanceTo(vec3: Vec3, other: Vec3): number;
-    static horizontalDistanceToSqr(paramarg0: Vec3, paramarg1: number, paramarg2: number): number;
+    static horizontalDistanceTo(vec3: Vec3, x: number, z: number): number;
+    static horizontalDistanceTo(paramarg0: Vec3, paramarg1: Vec3i): number;
+    static horizontalDistanceTo(paramarg0: Vec3, paramarg1: Vec3): number;
+    static horizontalDistanceToSqr(vec3: Vec3, x: number, z: number): number;
     static horizontalDistanceToSqr(paramarg0: Vec3, paramarg1: Vec3i): number;
     static horizontalDistanceToSqr(paramarg0: Vec3, paramarg1: Vec3): number;
     static isLikelyZero(paramarg0: Vec2): boolean;
@@ -92,7 +97,7 @@ export class MinecraftVectorExtensionsKt extends Object {
      *
      * @returns a {@link Vec3} with same direction as the receiver and length of {@link newLength}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:120}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:135}
      */
     static withLength(vec3: Vec3, newLength: number): Vec3;
 }

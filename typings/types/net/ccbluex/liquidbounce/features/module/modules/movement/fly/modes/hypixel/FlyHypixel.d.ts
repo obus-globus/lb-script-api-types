@@ -6,13 +6,12 @@ import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/li
 import type { PacketEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerMoveEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Watchdog (NCP) (21.01.25)
- * - **Tested on:** hypixel.net
- *
+ * @anticheat Watchdog (NCP)
+ * @anticheatVersion 21.01.25
+ * @testedOn hypixel.net
  * @author @liquidsquid1
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixel.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixel.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixel.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/hypixel/FlyHypixel.kt:42}
  */
 export class FlyHypixel extends Mode {
     static Companion: Tagged$Companion;

@@ -4,13 +4,13 @@ export class IdentifierExtensionKt extends Object {
     /**
      * Creates an {@link net.minecraft.resources.Identifier} starts with {@link CLIENT_NAME}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt:26}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt:29}
      */
     static clientIdentifier(path: string): Identifier;
     /**
      * Converts an {@link Identifier} to a human-readable name without localization.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt:32}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/IdentifierExtension.kt:35}
      */
     static toName(identifier: Identifier): string;
 }

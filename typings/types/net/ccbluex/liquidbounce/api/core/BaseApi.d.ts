@@ -8,7 +8,7 @@ import type { RequestBody } from '../../../../../okhttp3/RequestBody.d.ts'
  *
  * @param baseUrl The base URL of the API
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt:41}
  */
 export abstract class BaseApi extends Object {
     constructor(baseUrl: string, defaultHeaders: Pair<string, string>[])
@@ -24,7 +24,7 @@ export abstract class BaseApi extends Object {
     /**
      * Makes a request and parses the response to the specified type
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/BaseApi.kt:46}
      */
     protected request<T extends unknown>(endpoint: string, method: HttpMethod, headers: (param0: Headers$Builder) => void, body: RequestBody | null): T;
 }

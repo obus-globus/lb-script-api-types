@@ -4,5 +4,10 @@ import type { ValueType } from '../../../../../../net/ccbluex/liquidbounce/confi
 import type { ListValue } from '../../../../../../net/ccbluex/liquidbounce/config/types/list/ListValue.d.ts'
 export class RegistryMutableListValue<T extends E[], E extends unknown> extends ListValue<T, E> {
     constructor(name: string, value: T, innerValueType: ValueType, innerType: Class<E>)
+    /**
+     * This is used to determine the registry endpoint for the API.
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt#L194 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/list/ListValue.kt:194}
+     */
     readonly registry: string;
 }

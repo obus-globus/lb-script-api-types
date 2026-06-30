@@ -4,10 +4,11 @@ import type { Visibility } from '../../../../../../../net/ccbluex/liquidbounce/f
 /**
  * ModuleBetterTab
  *
- * @since 12/28/2024
  * @author sqlerrorthing
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBetterTab.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBetterTab.kt:30}
+ * @since 12/28/2024
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBetterTab.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBetterTab.kt:37}
  */
 export class ModuleBetterTab extends ClientModule {
     static INSTANCE: ModuleBetterTab;

@@ -29,13 +29,12 @@ export class VertexBuilderKt extends Object {
     static addVertex(paramarg0: VertexConsumer, paramarg1: Matrix4fc, paramarg2: Vector3fc): VertexConsumer;
     /**
      * Build new mesh data and upload it.
-     * This method is designed for lazy building so {@link rotate} defaults to true.
      *
      * @param origin a preferred origin; the lambda receives the resolved origin that must be used for relative vertex positions.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L227 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:227}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt#L233 | src/main/kotlin/net/ccbluex/liquidbounce/render/VertexBuilder.kt:233}
      */
-    static buildMesh(paramarg0: CachedMeshStorage, paramarg1: RenderPipeline, paramarg2: BlockPos, paramarg3: (param0: Object, param1: Object, param2: Object) => void): void;
+    static buildMesh(cachedMeshStorage: CachedMeshStorage, pipeline: RenderPipeline, origin: BlockPos, block: (param0: Object, param1: Object, param2: Object) => void): void;
     static setColor(vertexConsumer: VertexConsumer, color: Color4b): VertexConsumer;
     static setNormal(vertexConsumer: VertexConsumer, pose: PoseStack$Pose, normalVector: Vec3f): VertexConsumer;
 }

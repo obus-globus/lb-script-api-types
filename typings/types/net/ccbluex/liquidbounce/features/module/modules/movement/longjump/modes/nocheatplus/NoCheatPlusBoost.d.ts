@@ -5,11 +5,11 @@ import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquid
 import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerMoveEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** NoCheatPlus (3.16.1-SNAPSHOT-sMD5NET-b115s)
- * - **Tested on:** eu.loyisa.cn
+ * @anticheat NoCheatPlus
+ * @anticheatVersion 3.16.1-SNAPSHOT-sMD5NET-b115s
+ * @testedOn eu.loyisa.cn
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/nocheatplus/NoCheatPlusBoost.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/nocheatplus/NoCheatPlusBoost.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/nocheatplus/NoCheatPlusBoost.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/longjump/modes/nocheatplus/NoCheatPlusBoost.kt:37}
  */
 export class NoCheatPlusBoost extends Mode {
     static Companion: Tagged$Companion;

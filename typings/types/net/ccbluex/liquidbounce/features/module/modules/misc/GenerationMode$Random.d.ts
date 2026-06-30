@@ -8,13 +8,5 @@ export class GenerationMode$Random extends GenerationMode {
     // private /*not mapped: */ getAllowSpace(): boolean;
     // private asciiOnly: boolean;
     // private /*not mapped: */ getAsciiOnly(): boolean;
-    /**
-     * @source <a href="https://github.com/MeteorDevelopment/meteor-client/blob/2025789457e5b4c0671f04f0d3c7e0d91a31765c/src/main/java/meteordevelopment/meteorclient/systems/modules/misc/BookBot.java#L201-L209">code section</a>
-     * @contributor sqlerrorthing (<a href="https://github.com/CCBlueX/LiquidBounce/pull/5076">pull request</a>)
-     *
-     * @author arlomcwalter (on Meteor Client)
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBookBot.kt#L293 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBookBot.kt:293}
-     */
     generate(): IntStream;
 }

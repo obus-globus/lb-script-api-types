@@ -9,6 +9,13 @@ import type { HotbarItemSlot } from '../../../../../../../net/ccbluex/liquidboun
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
+/**
+ * LiquidFiller module
+ *
+ * Places blocks inside of liquid source blocks within range of you.
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleLiquidFiller.kt:57}
+ */
 export class ModuleLiquidFiller extends ClientModule {
     static INSTANCE: ModuleLiquidFiller;
     // private blocks: Block[];

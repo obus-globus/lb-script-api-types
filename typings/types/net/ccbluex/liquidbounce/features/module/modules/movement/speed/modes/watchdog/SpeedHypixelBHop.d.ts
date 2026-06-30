@@ -7,11 +7,11 @@ import type { PlayerJumpEvent } from '../../../../../../../../../../net/ccbluex/
 import type { SpeedBHopBase } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/SpeedBHopBase.d.ts'
 import type { SpeedHypixelBHop$Companion } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop$Companion.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Watchdog (NCP) (12.12.2023)
- * - **Tested on:** hypixel.net
+ * @anticheat Watchdog (NCP)
+ * @anticheatVersion 12.12.2023
+ * @testedOn hypixel.net
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt:42}
  */
 export class SpeedHypixelBHop extends SpeedBHopBase {
     static Companion: Tagged$Companion;
@@ -23,7 +23,7 @@ export class SpeedHypixelBHop extends SpeedBHopBase {
     /**
      * Damage Boost
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt:105}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt#L108 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/watchdog/SpeedHypixelBHop.kt:108}
      */
     readonly packetHandler: EventHook<PacketEvent>;
     readonly repeatable: EventHook<GameTickEvent>;

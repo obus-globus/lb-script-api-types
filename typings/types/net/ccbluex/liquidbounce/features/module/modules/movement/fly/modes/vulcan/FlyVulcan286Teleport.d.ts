@@ -6,14 +6,13 @@ import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/li
 import type { PacketEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerMoveEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Version 2.8.6
- * - **Tested on:** eu.loyisa.cn, anticheat-test.com
- * - Few seconds cooldown to not flag. Requires 1.8 serverside
- *
+ * @anticheat Vulcan
+ * @anticheat Version 2.8.6
+ * @testedOn eu.loyisa.cn, anticheat-test.com
+ * @note Few seconds cooldown to not flag. Requires 1.8 serverside
  * @author Nullable
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt:44}
  */
 export class FlyVulcan286Teleport extends Mode {
     static Companion: Tagged$Companion;
@@ -32,7 +31,7 @@ export class FlyVulcan286Teleport extends Mode {
      * After taking damage, vulcan gives leniency to all sorts of stuff like
      * motion, and teleporting.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt:57}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286Teleport.kt:66}
      */
     readonly repeatable: EventHook<GameTickEvent>;
     disable(): void;

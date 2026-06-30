@@ -10,6 +10,7 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 import type { ResourceManager } from '../../../net/minecraft/server/packs/resources/ResourceManager.d.ts'
 export class ResourceManagerRegistryLoadTask<T extends unknown> extends RegistryLoadTask<T> {
     constructor(data: RegistryDataLoader$RegistryData<T>, lifecycle: Lifecycle, loadingErrors: Map<ResourceKey<Object>, Exception>, resourceManager: ResourceManager)
+    // private registryInfoLookup: RegistryOps$RegistryInfoLookup;
     // private resourceManager: ResourceManager;
     load(context: RegistryOps$RegistryInfoLookup, executor: Executor): CompletableFuture<Object>;
 }

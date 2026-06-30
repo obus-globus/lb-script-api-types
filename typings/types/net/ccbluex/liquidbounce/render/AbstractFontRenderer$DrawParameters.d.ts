@@ -1,17 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { HorizontalAnchor } from '../../../../net/ccbluex/liquidbounce/render/engine/font/HorizontalAnchor.d.ts'
 import type { VerticalAnchor } from '../../../../net/ccbluex/liquidbounce/render/engine/font/VerticalAnchor.d.ts'
-/**
- * @param x Anchor X position
- * @param y Anchor Y position
- * @param z Z offset. {@link Float.NaN} for 2D rendering
- * @param horizontalAnchor Horizontal anchor of the text, null -> {@link HorizontalAnchor.START}
- * @param verticalAnchor Vertical anchor of the text, null -> {@link VerticalAnchor.TOP}
- * @param scale Render scale applied to width and height
- * @param shadow Draw shadow of text
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/AbstractFontRenderer.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/render/AbstractFontRenderer.kt:105}
- */
 export class AbstractFontRenderer$DrawParameters extends Object {
     static INSTANCE: AbstractFontRenderer$DrawParameters;
     static horizontalAnchor: HorizontalAnchor;

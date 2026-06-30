@@ -18,7 +18,7 @@ export class ScriptReflectionUtil extends Object {
      * @param name - method name in yarn mapping
      * @returns - the value stored in field
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:89}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:97}
      */
     getDeclaredField(clazz: Class<Object>, name: string): Object | null;
     /**
@@ -28,14 +28,14 @@ export class ScriptReflectionUtil extends Object {
      * @param name - method name in yarn mapping
      * @returns - the value stored in field
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:77}
      */
     getField(obj: Object, name: string): Object | null;
     /**
      * Invalidate the cache.
      * Allows user to invalidate the cache for whatever reason, like dynamic class loading.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:35}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:39}
      */
     invalidateCache(): void;
     /**
@@ -48,7 +48,7 @@ export class ScriptReflectionUtil extends Object {
      * @param args - arguments of method
      * @returns - result of invoking method
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L151 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:151}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L163 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:163}
      */
     invokeDeclaredMethod(clazz: Class<Object>, name: string, args: (Object | null)[]): Object | null;
     /**
@@ -56,24 +56,12 @@ export class ScriptReflectionUtil extends Object {
      * match overloaded methods based on number and type of arguments,
      * does **NOT** handle null arguments
      *
-     * @exception - throw IllegalArgumentException when an argument is null
-     *
-     * Example when used in js:
-     * ```javascript
-     *   mod.on("overlayRender", (event) => {
-     *     if (!mc.player || !mc.world)
-     *       return;
-     *
-     *     ReflectionUtil.invokeMethod(event.context, "fill", 100, 100, 200, 200, -1);
-     *   })
-     * ```
-     *
      * @param obj - object to be invoked
      * @param name - method name in yarn mapping
-     * @param args - arguments of method
+     * @param args @exception - throw IllegalArgumentException when an argument is null  Example when used in js: ```javascript   mod.on("overlayRender", (event) => {     if (!mc.player || !mc.world)       return;      ReflectionUtil.invokeMethod(event.context, "fill", 100, 100, 200, 200, -1);   }) ```
      * @returns - result of invoking method
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:122}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L145 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:145}
      */
     invokeMethod(obj: Object, name: string, args: (Object | null)[]): Object | null;
     newInstance(clazz: Class<Object>, args: (Object | null)[]): Object | null;

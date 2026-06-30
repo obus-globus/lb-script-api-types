@@ -15,7 +15,7 @@ export class AxochatClient$ChannelHandler extends SimpleChannelInboundHandler<Ob
      *
      * Subclasses may override this method to change behavior.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L366 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:366}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L372 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:372}
      */
     channelActive(ctx: ChannelHandlerContext): void;
     /**
@@ -24,7 +24,7 @@ export class AxochatClient$ChannelHandler extends SimpleChannelInboundHandler<Ob
      *
      * Subclasses may override this method to change behavior.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L376 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:376}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L382 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:382}
      */
     channelInactive(ctx: ChannelHandlerContext): void;
     /**
@@ -33,12 +33,10 @@ export class AxochatClient$ChannelHandler extends SimpleChannelInboundHandler<Ob
      *
      * Is called for each message of type {@link I}.
      *
-     * @throws Exception    is thrown if an error occurred
-     *
      * @param ctx the {@link ChannelHandlerContext} which this {@link SimpleChannelInboundHandler} belongs to
-     * @param msg the message to handle
+     * @param msg @throws Exception    is thrown if an error occurred
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L404 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:404}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L414 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:414}
      */
     protected channelRead0(ctx: ChannelHandlerContext, msg: Object): void;
     /**
@@ -47,13 +45,13 @@ export class AxochatClient$ChannelHandler extends SimpleChannelInboundHandler<Ob
      *
      * Subclasses may override this method to change behavior.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L386 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:386}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L392 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:392}
      */
     exceptionCaught(ctx: ChannelHandlerContext, cause: Throwable): void;
     /**
      * Do nothing by default, subclasses may override this method.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L359 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:359}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L362 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:362}
      */
     handlerAdded(ctx: ChannelHandlerContext): void;
 }

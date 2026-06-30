@@ -2,18 +2,8 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class Priority extends Enum<Priority> {
-    /**
-     * Scaffold, etc.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt:34}
-     */
     static IMPORTANT_FOR_PLAYER_LIFE: Priority;
     static IMPORTANT_FOR_USAGE_1: Priority;
-    /**
-     * KillAura, etc.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/Priority.kt:29}
-     */
     static IMPORTANT_FOR_USAGE_2: Priority;
     static IMPORTANT_FOR_USAGE_3: Priority;
     static IMPORTANT_FOR_USER_SAFETY: Priority;

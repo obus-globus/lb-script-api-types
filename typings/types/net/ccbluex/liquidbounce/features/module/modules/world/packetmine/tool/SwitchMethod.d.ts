@@ -9,11 +9,6 @@ import type { HotbarItemSlot } from '../../../../../../../../../net/ccbluex/liqu
 export class SwitchMethod extends Enum<SwitchMethod> implements Tagged, MinecraftShortcuts {
     static Companion: Tagged$Companion;
     static NORMAL: SwitchMethod;
-    /**
-     * Only works before 1.21.3.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/SwitchMethod.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/SwitchMethod.kt:85}
-     */
     static PICK: SwitchMethod;
     static SWAP: SwitchMethod;
     static getEntries(): SwitchMethod[];

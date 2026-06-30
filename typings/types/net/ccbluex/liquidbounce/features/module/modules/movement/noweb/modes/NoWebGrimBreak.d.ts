@@ -4,12 +4,10 @@ import type { BlockPos } from '../../../../../../../../../net/minecraft/core/Blo
 /**
  * No collision with cobwebs and breaks them to bypass check
  *
+ * @anticheat Grim
  * @version 2.3.65
  *
- * @remarks
- * - **Anticheat:** Grim
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebGrimBreak.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebGrimBreak.kt:28}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebGrimBreak.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebGrimBreak.kt:34}
  */
 export class NoWebGrimBreak extends NoWebMode {
     static Companion: Tagged$Companion;

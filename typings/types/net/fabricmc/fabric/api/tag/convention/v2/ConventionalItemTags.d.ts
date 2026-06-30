@@ -74,6 +74,7 @@ export class ConventionalItemTags extends Object {
     static ENDER_CHESTS: TagKey<Item>;
     static ENDER_PEARLS: TagKey<Item>;
     static END_STONES: TagKey<Item>;
+    static ENTITY_DRY_BUCKETS: TagKey<Item>;
     static ENTITY_WATER_BUCKETS: TagKey<Item>;
     static FEATHERS: TagKey<Item>;
     static FENCES: TagKey<Item>;

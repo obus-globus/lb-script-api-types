@@ -9,7 +9,7 @@ import type { ScriptDebugOptions } from '../../../../net/ccbluex/liquidbounce/sc
  *
  * Scripts are stored in the scripts directory and can be organized in subdirectories when using a main script file.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:40}
  */
 export class ScriptManager extends Object {
     static INSTANCE: ScriptManager;
@@ -17,25 +17,25 @@ export class ScriptManager extends Object {
     /**
      * The root directory where all scripts are stored. This directory is created if it does not exist.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:49}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:52}
      */
     readonly root: File;
     /**
      * A list that holds all the loaded scripts.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:47}
      */
     readonly scripts: PolyglotScript[];
     /**
      * Disables all loaded scripts. This method iterates over the list of loaded scripts and disables each one.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L172 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:172}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L175 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:175}
      */
     disableAll(): void;
     /**
      * Enables all loaded scripts. This method iterates over the list of loaded scripts and enables each one.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L160 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:160}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L163 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:163}
      */
     enableAll(): void;
     initializeEngine(): void;
@@ -43,7 +43,7 @@ export class ScriptManager extends Object {
      * Loads all scripts found in the scripts directory. This method scans the directory for script files
      * and directories containing a main script file. It then loads and enables all found scripts.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:70}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:74}
      */
     loadAll(): void;
     // private loadCatched(file: File): PolyglotScript | null;
@@ -55,20 +55,20 @@ export class ScriptManager extends Object {
      * @param language The language of the script. If not specified, it is inferred from the file.
      * @returns The loaded script.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:127}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:135}
      */
     loadScript(file: File, language: string, debugOptions: ScriptDebugOptions): PolyglotScript;
     /**
      * Reloads all scripts. This method unloads all currently loaded scripts, loads them again from the scripts
      * directory, and then enables them. It logs a message upon successful completion.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L179 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:179}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L183 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:183}
      */
     reload(): void;
     /**
      * Unloads all currently loaded scripts. This method disables each script and clears the list of loaded scripts.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:104}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:107}
      */
     unloadAll(): void;
     /**
@@ -76,7 +76,7 @@ export class ScriptManager extends Object {
      *
      * @param script The script to unload.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:149}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt#L154 | src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptManager.kt:154}
      */
     unloadScript(script: PolyglotScript): void;
 }

@@ -6,7 +6,7 @@
       "kind": "property",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-        "line": 92
+        "line": 93
       }
     },
     "net.ccbluex.liquidbounce.event.events.VirtualScreenEvent.screenName": {
@@ -50,6 +50,14 @@
         "line": 29
       }
     },
+    "net.ccbluex.liquidbounce.render.engine.OutlineShaderRenderer": {
+      "message": "Disabled this feature",
+      "kind": "object",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OutlineShaderRenderer.kt",
+        "line": 30
+      }
+    },
     "net.ccbluex.liquidbounce.render.engine.type.Color4b.toARGB": {
       "message": "Replaced with Color4b.argb",
       "replaceWith": "this.argb",
@@ -83,7 +91,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-        "line": 200
+        "line": 241
       }
     },
     "net.ccbluex.liquidbounce.utils.sorting.compareByCondition": {

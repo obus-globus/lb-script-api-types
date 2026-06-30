@@ -9,10 +9,9 @@ export class BuildPagedQueryCommandKt extends Object {
      * @param pageSize the size of a single page. should be greater than 0.
      * @param header the generator function for page header before all items.
      * @param items provides all items. This function should be light-weighted.
-     * @param eachRow controls how to render the item in chat HUD.
-     * @author MukjepScarlet
+     * @param eachRow @author MukjepScarlet
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt:119}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/preset/BuildPagedQueryCommand.kt:129}
      */
     static pagedQuery(commandBuilder: CommandBuilder, pageSize: number, header: (param0: Object) => Component, items: () => (Object | null)[], eachRow: (param0: Object, param1: Object, param2: Object) => Component): Command;
 }

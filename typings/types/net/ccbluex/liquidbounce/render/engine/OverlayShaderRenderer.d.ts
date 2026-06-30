@@ -8,7 +8,7 @@ import type { LazyRenderTargetHolder } from '../../../../../net/ccbluex/liquidbo
 /**
  * @param blitPipeline should use `core/screenquad` for drawing
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OverlayShaderRenderer.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OverlayShaderRenderer.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OverlayShaderRenderer.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/OverlayShaderRenderer.kt:34}
  */
 export abstract class OverlayShaderRenderer extends Object implements MinecraftShortcuts {
     constructor(name: string, blitPipeline: RenderPipeline, useDepth: boolean, needDefaultUniforms: boolean)

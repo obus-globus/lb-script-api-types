@@ -4,12 +4,12 @@ import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex
 import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Version 2.7.7
- * - **Tested on:** anticheat-test.com
- * - NA
+ * @anticheat Vulcan
+ * @anticheat Version 2.7.7
+ * @testedOn anticheat-test.com
+ * @note NA
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan277.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan277.kt:27}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan277.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan277.kt:33}
  */
 export class FlyVulcan277 extends Mode {
     static Companion: Tagged$Companion;

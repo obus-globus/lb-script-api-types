@@ -23,7 +23,7 @@ export class ExemptBoxPart extends Enum<ExemptBoxPart> implements Tagged, Exempt
      * Check if this part of the box is higher than the other by the index of the enum.
      * So please DO NOT change the order of the enum.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/exempts/ExemptBoxPart.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/exempts/ExemptBoxPart.kt:58}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/exempts/ExemptBoxPart.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/point/exempts/ExemptBoxPart.kt:62}
      */
     isHigherThan(other: ExemptBoxPart): boolean;
     predicate(context: ExemptContext, point: Vec3): boolean;

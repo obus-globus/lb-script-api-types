@@ -18,9 +18,9 @@ export class RenderPassExtensionsKt extends Object {
      *
      * This function assumes the {@link GpuBufferSlice}s are correctly aligned with corresponding vertex/index byte count.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt:89}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt:94}
      */
-    static bindAndDraw(paramarg0: RenderPass, paramarg1: GpuBufferSlice, paramarg2: GpuBufferSlice, paramarg3: IndexType, paramarg4: number): void;
+    static bindAndDraw(renderPass: RenderPass, vertexSlice: GpuBufferSlice, indexSlice: GpuBufferSlice, indexType: IndexType, indexCount: number): void;
     static bindDefaultUniforms(renderPass: RenderPass): void;
     static bindDynamicTransformsUniform(renderPass: RenderPass, gpuBufferSlice: GpuBufferSlice): void;
     static bindFogUniform(renderPass: RenderPass): void;
@@ -32,7 +32,7 @@ export class RenderPassExtensionsKt extends Object {
     /**
      * Color-only RenderPass.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt:152}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt#L155 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt:155}
      */
     static createRenderPass(paramarg0: RenderTarget): RenderPass;
     static createRenderPass(paramarg0: RenderTarget, paramarg1: () => string): RenderPass;

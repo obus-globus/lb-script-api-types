@@ -4,7 +4,7 @@ import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/g
 /**
  * Returns false to let Minecraft render its default wallpaper.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:53}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/ThemeBackground.kt:56}
  */
 export class ThemeBackground$Minecraft extends Object implements ThemeBackground {
     static INSTANCE: ThemeBackground$Minecraft;

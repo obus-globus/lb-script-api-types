@@ -6,12 +6,12 @@ import type { PlayerNetworkMovementTickEvent } from '../../../../../../../../../
 import type { PlayerTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerTickEvent.d.ts'
 import type { Vec3 } from '../../../../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Grim (2.3.59)
- * - **Tested on:** eu.loyisa.cn
- * - Slow on high ping
+ * @anticheat Grim
+ * @anticheatVersion 2.3.59
+ * @testedOn eu.loyisa.cn
+ * @note Slow on high ping
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2859V.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2859V.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2859V.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2859V.kt:40}
  */
 export class FlyGrim2859V extends Mode {
     static Companion: Tagged$Companion;

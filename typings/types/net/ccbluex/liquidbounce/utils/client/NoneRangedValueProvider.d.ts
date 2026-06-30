@@ -4,7 +4,7 @@ import type { RangedValueProvider } from '../../../../../net/ccbluex/liquidbounc
 /**
  * Does nothing; Has no value.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:48}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/RangedValueProvider.kt:51}
  */
 export class NoneRangedValueProvider extends Object implements RangedValueProvider {
     static INSTANCE: NoneRangedValueProvider;

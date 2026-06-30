@@ -6,12 +6,16 @@ import type { BlinkPacketEvent } from '../../../../../../../../../../net/ccbluex
 import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerMoveEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Sentinel (26.12.2025)
- * - **Tested on:** cubecraft.net
- * - Tested in Egg Wars, ticks higher than 25 seems silent flags  Thanks to the_bi11iona1re for making me aware that Sentinal folds to Verus Damage exploit. Unpatched by @hax0r31337
+ * @anticheat Sentinel
+ * @anticheatVersion 26.12.2025
+ * @testedOn cubecraft.net
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel26thDec.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel26thDec.kt:43}
+ * @note Tested in Egg Wars, ticks higher than 25 seems silent flags
+ *
+ * Thanks to the_bi11iona1re for making me aware that Sentinal folds to Verus Damage exploit.
+ * Unpatched by @hax0r31337
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel26thDec.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel26thDec.kt:53}
  */
 export class FlySentinel26thDec extends Mode {
     static Companion: Tagged$Companion;

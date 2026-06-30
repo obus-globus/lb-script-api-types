@@ -9,10 +9,5 @@ export class NametagEquipment extends ValueGroup {
     // private /*not mapped: */ getSkipEmptySlot(): boolean;
     // private slots: EquipmentSlotChoice[];
     // private /*not mapped: */ getSlots(): EquipmentSlotChoice[];
-    /**
-     * Creates a list of items that should be rendered above the name tag.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEquipment.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagEquipment.kt:70}
-     */
     update(entity: LivingEntity, equipments: NametagRenderState$Equipments): void;
 }

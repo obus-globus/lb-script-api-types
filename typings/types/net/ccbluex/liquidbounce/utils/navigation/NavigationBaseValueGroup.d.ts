@@ -12,7 +12,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * Base class for navigation-related features that handles common movement functionality
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:41}
  */
 export abstract class NavigationBaseValueGroup<T extends unknown> extends ToggleableValueGroup {
     constructor(parent: EventListener | null, name: string, enabled: boolean)
@@ -30,13 +30,13 @@ export abstract class NavigationBaseValueGroup<T extends unknown> extends Toggle
      *
      * @returns Target position as Vec3d
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:58}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:63}
      */
     protected calculateGoalPosition(context: T): Vec3 | null;
     /**
      * Creates context for navigation
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:53}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:56}
      */
     protected createNavigationContext(): T;
     /**
@@ -44,7 +44,7 @@ export abstract class NavigationBaseValueGroup<T extends unknown> extends Toggle
      *
      * @returns Movement rotation
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:89}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:94}
      */
     getMovementRotation(): Rotation;
     /**
@@ -52,7 +52,7 @@ export abstract class NavigationBaseValueGroup<T extends unknown> extends Toggle
      *
      * @param event Movement input event to modify
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:65}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/utils/navigation/NavigationBaseValueGroup.kt:70}
      */
     protected handleMovementAssist(event: MovementInputEvent, context: T): void;
 }

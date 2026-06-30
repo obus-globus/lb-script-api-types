@@ -7,14 +7,13 @@ import type { PacketEvent } from '../../../../../../../../../../net/ccbluex/liqu
 import type { PlayerTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerTickEvent.d.ts'
 import type { Vec3 } from '../../../../../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Version 2.8.6
- * - **Tested on:** eu.loyisa.cn, anticheat-test.com
- * - ONLY WORKS ON 1.8 SERVERS
- *
+ * @anticheat Vulcan
+ * @anticheat Version 2.8.6
+ * @testedOn eu.loyisa.cn, anticheat-test.com
+ * @note ONLY WORKS ON 1.8 SERVERS
  * @author Nullable
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt:46}
  */
 export class FlyVulcan286MC18 extends Mode {
     static Companion: Tagged$Companion;
@@ -42,7 +41,7 @@ export class FlyVulcan286MC18 extends Mode {
      * are walking on air after walking off of a ledge.
      * This check can be triggered while desynced...
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt:73}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/vulcan/FlyVulcan286MC18.kt:93}
      */
     readonly packetHandler: EventHook<PacketEvent>;
     readonly parent: ModeValueGroup<any>;

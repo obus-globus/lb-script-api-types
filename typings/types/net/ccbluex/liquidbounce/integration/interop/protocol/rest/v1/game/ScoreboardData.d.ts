@@ -11,10 +11,10 @@ export class ScoreboardData extends Record {
      *
      * Taken from the Minecraft source code
      *
-     * @see Gui.extractScoreboardSidebar
-     * @see Gui.displayScoreboardSidebar
+     * @see net.minecraft.client.gui.Hud.extractScoreboardSidebar
+     * @see net.minecraft.client.gui.Hud.displayScoreboardSidebar
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt#L182 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt:182}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt:189}
      */
     static fromScoreboard(scoreboard: Scoreboard): ScoreboardData;
     constructor(header: Component, entries: (ScoreboardData$SidebarEntry | null)[])

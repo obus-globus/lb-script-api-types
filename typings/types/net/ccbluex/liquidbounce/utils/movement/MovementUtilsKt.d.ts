@@ -9,7 +9,7 @@ export class MovementUtilsKt extends Object {
      *
      * @param positionRelativeToPlayer relative position to player
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/movement/MovementUtils.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/utils/movement/MovementUtils.kt:41}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/movement/MovementUtils.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/utils/movement/MovementUtils.kt:45}
      */
     static getDegreesRelativeToView(positionRelativeToPlayer: Vec3, yaw: number): number;
     static getDirectionalInputForDegrees(directionalInput: DirectionalInput, dgs: number, deadAngle: number): DirectionalInput;

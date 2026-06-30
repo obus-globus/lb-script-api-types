@@ -11,7 +11,7 @@ export class TrajectoryInfo extends Record {
      * @see net.minecraft.world.item.CrossbowItem.performShooting
      * @see net.minecraft.world.item.CrossbowItem.ARROW_POWER
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:80}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L86 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:86}
      */
     static CROSSBOW_ARROW: TrajectoryInfo;
     static Companion: TrajectoryInfo$Companion;
@@ -19,7 +19,7 @@ export class TrajectoryInfo extends Record {
      * @see net.minecraft.world.item.ExperienceBottleItem.use
      * @see net.minecraft.world.entity.projectile.throwableitemprojectile.ThrownExperienceBottle.getDefaultGravity
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:65}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:69}
      */
     static EXP_BOTTLE: TrajectoryInfo;
     static FIREBALL: TrajectoryInfo;
@@ -27,14 +27,14 @@ export class TrajectoryInfo extends Record {
     /**
      * @see net.minecraft.world.entity.projectile.FishingHook.tick
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:71}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:74}
      */
     static FISHING_ROD: TrajectoryInfo;
     /**
      * @see net.minecraft.world.entity.projectile.ThrowableProjectile.getDefaultGravity
      * @see net.minecraft.world.entity.projectile.ThrowableProjectile.tick
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:55}
      */
     static GENERIC: TrajectoryInfo;
     static PERSISTENT: TrajectoryInfo;
@@ -44,7 +44,7 @@ export class TrajectoryInfo extends Record {
      * @see net.minecraft.world.item.WindChargeItem.use
      * @see net.minecraft.world.entity.projectile.hurtingprojectile.windcharge.AbstractWindCharge.getInertia
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L102 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:102}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:106}
      */
     static WIND_CHARGE: TrajectoryInfo;
     static bowWithUsageDuration(): TrajectoryInfo;
@@ -62,7 +62,7 @@ export class TrajectoryInfo extends Record {
     /**
      * Radius (!!) of the projectile
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:30}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.kt:33}
      */
     /*not mapped: */ hitboxRadius(): number;
     // private initialVelocity: number;

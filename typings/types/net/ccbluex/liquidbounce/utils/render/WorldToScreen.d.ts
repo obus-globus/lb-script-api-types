@@ -12,12 +12,17 @@ import type { Vector4f } from '../../../../../org/joml/Vector4f.d.ts'
 /**
  * This util should only be called from main thread
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:42}
  */
 export class WorldToScreen extends Object {
     static INSTANCE: WorldToScreen;
     static calculateMouseRay(paramarg0: Vec2): Line;
     static calculateMouseRay(posOnScreen: Vec2, cameraPos: Vec3): Line;
+    /**
+     * @see GameRenderer.projectPointToScreen
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:60}
+     */
     static calculateScreenPos(paramarg0: Vec3): Vec3f;
     static calculateScreenPos(pos: Vec3, cameraPos: Vec3): Vec3f;
     static calculateScreenRect(paramarg0: AABB): Rect;

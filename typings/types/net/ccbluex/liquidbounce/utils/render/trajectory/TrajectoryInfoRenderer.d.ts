@@ -28,11 +28,6 @@ export class TrajectoryInfoRenderer extends Object {
     // private renderOffset: Vec3;
     readonly trajectoryInfo: TrajectoryInfo;
     readonly trajectoryType: TrajectoryType;
-    /**
-     * Only used for rendering. No effect on simulation.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfoRenderer.kt:69}
-     */
     readonly type: TrajectoryInfoRenderer$Type;
     // private velocity: Vec3;
     // private checkForHits(posBefore: Vec3, posAfter: Vec3): Pair<HitResult, Vec3> | null;

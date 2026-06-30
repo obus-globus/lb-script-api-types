@@ -4,12 +4,12 @@ import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex
 import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Verus (b3896)
- * - **Tested on:** eu.loyisa.cn
- * - it gives you ~2 flags for damage
+ * @anticheat Verus
+ * @anticheatVersion b3896
+ * @testedOn eu.loyisa.cn
+ * @note it gives you ~2 flags for damage
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3896Damage.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3896Damage.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3896Damage.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3896Damage.kt:41}
  */
 export class FlyVerusB3896Damage extends Mode {
     static Companion: Tagged$Companion;

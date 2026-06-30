@@ -12,7 +12,7 @@ export class CrystalAuraDamageOptions extends ValueGroup {
     /**
      * Only places / breaks crystals that deal more damage to the enemy than to us.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt:48}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt:51}
      */
     readonly efficient: boolean;
     // private maxFriendDamage: number;
@@ -24,7 +24,7 @@ export class CrystalAuraDamageOptions extends ValueGroup {
     /**
      * Doesn't include blocks that will get blown away in the exposure calculation used for the damage calculation.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt:53}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt:56}
      */
     readonly terrain: boolean;
     /**
@@ -32,7 +32,7 @@ export class CrystalAuraDamageOptions extends ValueGroup {
      *
      * The first float is the self-damage, the second is the enemy damage.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt:60}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions.kt:65}
      */
     approximateExplosionDamage(pos: Vec3, requestingSubmodule: CrystalAuraDamageOptions$RequestingSubmodule): FloatFloatPair | null;
 }

@@ -6,17 +6,7 @@ import type { Tagged } from '../../../../../../../../net/ccbluex/liquidbounce/co
 import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 export class ModuleNoFall$NotCondition extends Enum<ModuleNoFall$NotCondition> implements BooleanSupplier, Tagged {
     static Companion: Tagged$Companion;
-    /**
-     * With Elytra - we don't want to reduce fall damage.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/ModuleNoFall.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/ModuleNoFall.kt:97}
-     */
     static WHILE_GLIDING: ModuleNoFall$NotCondition;
-    /**
-     * Check if we are holding a mace
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/ModuleNoFall.kt#L104 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/ModuleNoFall.kt:104}
-     */
     static WITH_MACE: ModuleNoFall$NotCondition;
     static getEntries(): ModuleNoFall$NotCondition[];
     static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };

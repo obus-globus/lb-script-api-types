@@ -8,10 +8,9 @@ import type { ClickPattern } from '../../../../../../../net/ccbluex/liquidbounce
  * This is a method that is not allowed on most servers and is considered cheating.
  * Unlikely to bypass and will result in twice the CPS (!!!).
  *
- * @remarks
- * - In the past I had a mouse with this feature and I always used it. @1zuna
+ * @note In the past I had a mouse with this feature and I always used it. @1zuna
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/pattern/patterns/DoubleClickPattern.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/pattern/patterns/DoubleClickPattern.kt:24}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/pattern/patterns/DoubleClickPattern.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/pattern/patterns/DoubleClickPattern.kt:33}
  */
 export class DoubleClickPattern extends Object implements ClickPattern {
     static INSTANCE: DoubleClickPattern;

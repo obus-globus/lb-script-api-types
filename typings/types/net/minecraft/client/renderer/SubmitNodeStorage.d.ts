@@ -4,6 +4,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Mesh } from '../../../../net/fabricmc/fabric/api/client/renderer/v1/mesh/Mesh.d.ts'
 import type { MeshView } from '../../../../net/fabricmc/fabric/api/client/renderer/v1/mesh/MeshView.d.ts'
+import type { SubmitRenderPhase } from '../../../../net/fabricmc/fabric/api/client/rendering/v1/SubmitRenderPhase.d.ts'
 import type { Font$DisplayMode } from '../../../../net/minecraft/client/gui/Font$DisplayMode.d.ts'
 import type { Model } from '../../../../net/minecraft/client/model/Model.d.ts'
 import type { SubmitNodeCollection } from '../../../../net/minecraft/client/renderer/SubmitNodeCollection.d.ts'
@@ -16,6 +17,7 @@ import type { EntityRenderState$LeashState } from '../../../../net/minecraft/cli
 import type { EntityRenderState$ShadowPiece } from '../../../../net/minecraft/client/renderer/entity/state/EntityRenderState$ShadowPiece.d.ts'
 import type { ModelFeatureRenderer$CrumblingOverlay } from '../../../../net/minecraft/client/renderer/feature/ModelFeatureRenderer$CrumblingOverlay.d.ts'
 import type { FeatureRenderPhase } from '../../../../net/minecraft/client/renderer/feature/phase/FeatureRenderPhase.d.ts'
+import type { SubmitNode } from '../../../../net/minecraft/client/renderer/feature/submit/SubmitNode.d.ts'
 import type { DrawableGizmoPrimitives$Group } from '../../../../net/minecraft/client/renderer/gizmos/DrawableGizmoPrimitives$Group.d.ts'
 import type { ItemStackRenderState$FoilType } from '../../../../net/minecraft/client/renderer/item/ItemStackRenderState$FoilType.d.ts'
 import type { RenderType } from '../../../../net/minecraft/client/renderer/rendertype/RenderType.d.ts'
@@ -44,6 +46,7 @@ export class SubmitNodeStorage extends Object implements SubmitNodeCollector {
     submitBlockModel(poseStack: PoseStack, renderType: RenderType, modelParts: BlockStateModelPart[], tintLayers: number[], lightCoords: number, overlayCoords: number, outlineColor: number): void;
     submitBreakingBlockModel(poseStack: PoseStack, parts: BlockStateModelPart[], progress: number): void;
     submitBreakingBlockModel(arg0: PoseStack, arg1: (Object | null)[], arg2: Mesh, arg3: number): void;
+    submitCustom(arg0: SubmitRenderPhase<SubmitNode>, arg1: SubmitNode): void;
     submitCustomGeometry(poseStack: PoseStack, renderType: RenderType, customGeometryRenderer: SubmitNodeCollector$CustomGeometryRenderer): void;
     submitFlame(poseStack: PoseStack, renderState: EntityRenderState, rotation: Quaternionf): void;
     submitGizmoPrimitives(group: DrawableGizmoPrimitives$Group, camera: CameraRenderState, onTop: boolean): void;

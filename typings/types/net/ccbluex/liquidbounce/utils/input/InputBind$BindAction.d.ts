@@ -9,31 +9,13 @@ import type { InputBind$BindAction$Companion } from '../../../../../net/ccbluex/
  *
  * @param tag display name used in config/ui
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L200 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:200}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L205 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:205}
  */
 export class InputBind$BindAction extends Enum<InputBind$BindAction> implements Tagged {
     static Companion: Tagged$Companion;
     static Companion: InputBind$BindAction$Companion;
-    /**
-     * Stay enabled while key is held and disable on release.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L211 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:211}
-     */
     static HOLD: InputBind$BindAction;
-    /**
-     * Start as enabled on press, then classify as:
-     * - hold if a repeat event is received before release
-     * - toggle if release is received first
-     * - toggle on unexpected fallback paths
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L216 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:216}
-     */
     static SMART: InputBind$BindAction;
-    /**
-     * Flip state when pressed.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L206 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:206}
-     */
     static TOGGLE: InputBind$BindAction;
     static getEntries(): InputBind$BindAction[];
     static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };

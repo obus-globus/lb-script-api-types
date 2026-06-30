@@ -6,12 +6,12 @@ import type { PacketEvent } from '../../../../../../../../../../net/ccbluex/liqu
 import type { PlayerJumpEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerJumpEvent.d.ts'
 import type { SpeedBHopBase } from '../../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/SpeedBHopBase.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Vulcan (V2.8.6)
- * - **Tested on:** anticheat-test.com, eu.loyisa.cn
- * - flags on specific blocks such as fences
+ * @anticheat Vulcan
+ * @anticheatVersion V2.8.6
+ * @testedOn anticheat-test.com, eu.loyisa.cn
+ * @note flags on specific blocks such as fences
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcanGround286.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcanGround286.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcanGround286.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/vulcan/SpeedVulcanGround286.kt:40}
  */
 export class SpeedVulcanGround286 extends SpeedBHopBase {
     static Companion: Tagged$Companion;

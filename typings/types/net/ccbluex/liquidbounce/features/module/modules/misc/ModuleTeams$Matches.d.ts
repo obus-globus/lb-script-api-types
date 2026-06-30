@@ -7,23 +7,8 @@ import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbo
 import type { LivingEntity } from '../../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 export class ModuleTeams$Matches extends Enum<ModuleTeams$Matches> implements Predicate<LivingEntity>, Tagged {
     static Companion: Tagged$Companion;
-    /**
-     * Checks if both names have the same color.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTeams.kt#L117 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTeams.kt:117}
-     */
     static NAME_COLOR: ModuleTeams$Matches;
-    /**
-     * Prefix check - this works on Hypixel BedWars, GommeHD Skywars and many other servers.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTeams.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTeams.kt:129}
-     */
     static PREFIX: ModuleTeams$Matches;
-    /**
-     * Check if {@link LivingEntity} is in your own team using scoreboard,
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTeams.kt#L110 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleTeams.kt:110}
-     */
     static SCOREBOARD_TEAM: ModuleTeams$Matches;
     static getEntries(): ModuleTeams$Matches[];
     static isEqual(paramarg0: Object): (param0: Object | null) => boolean;

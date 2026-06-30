@@ -10,13 +10,6 @@ import type { ModuleDebug$DebuggedKey } from '../../../../../../../net/ccbluex/l
 import type { ModuleDebug$ParameterCapture } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleDebug$ParameterCapture.d.ts'
 import type { FontRenderer } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/FontRenderer.d.ts'
 import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
-/**
- * Rotations module
- *
- * Allows you to see server-sided rotations.
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleDebug.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleDebug.kt:56}
- */
 export class ModuleDebug extends ClientModule {
     static INSTANCE: ModuleDebug;
     // private debugParameters: Map<ModuleDebug$DebuggedKey, ModuleDebug$ParameterCapture>;

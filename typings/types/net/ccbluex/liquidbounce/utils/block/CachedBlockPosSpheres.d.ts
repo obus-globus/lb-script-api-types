@@ -9,13 +9,11 @@ export class CachedBlockPosSpheres extends Object {
      * Gets all {@link BlockPos} (long value) within the specified radius range.
      * All positions are sorted by radius (ascending).
      *
-     * @throws IndexOutOfBoundsException if {@link fromRadius} or {@link toRadius} is out of range.
-     *
      * @param fromRadius the minimum radius (inclusive, 0 to {@link RADIUS})
      * @param toRadius the maximum radius (inclusive, {@link fromRadius} to {@link RADIUS})
-     * @returns a sorted immutable {@link LongList} view containing the block positions of radius range.
+     * @returns @throws IndexOutOfBoundsException if {@link fromRadius} or {@link toRadius} is out of range.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/CachedBlockPosSpheres.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/CachedBlockPosSpheres.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/CachedBlockPosSpheres.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/CachedBlockPosSpheres.kt:78}
      */
     rangeLong(fromRadius: number, toRadius: number): (Object | null)[];
 }

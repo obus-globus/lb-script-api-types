@@ -9,15 +9,6 @@ import type { ModuleParticles$Particle } from '../../../../../../../net/ccbluex/
 import type { ModuleParticles$Physical } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles$Physical.d.ts'
 import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 import type { Chronometer } from '../../../../../../../net/ccbluex/liquidbounce/utils/client/Chronometer.d.ts'
-/**
- * Particles
- *
- * Displays particles when attacking an entity.
- *
- * @author sqlerrorthing
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:54}
- */
 export class ModuleParticles extends ClientModule {
     static INSTANCE: ModuleParticles;
     // private attackEvent: EventHook<AttackEntityEvent>;

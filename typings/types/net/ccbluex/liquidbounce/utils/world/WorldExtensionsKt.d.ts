@@ -15,7 +15,7 @@ export class WorldExtensionsKt extends Object {
      *
      * @see LevelChunk.getBlockState
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:77}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:83}
      */
     static forEachBlock(levelChunkSection: LevelChunkSection, action: (param0: Object, param1: Object, param2: Object, param3: Object) => void): void;
     /**
@@ -25,23 +25,23 @@ export class WorldExtensionsKt extends Object {
      *
      * @see LevelChunk.getBlockState
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:64}
      */
     static forEachSectionBlock(levelChunk: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: (param0: Object, param1: Object) => void): void;
     static getBedRule(paramarg0: Level): BedRule;
-    static getEntitiesInCube(paramarg0: EntityGetter, paramarg1: Vec3, paramarg2: number, paramarg3: (param0: Entity | null) => boolean): (Entity | null)[];
-    static getEntitiesInCube(paramarg0: EntityGetter, paramarg1: Vec3, paramarg2: number, paramarg3: Entity, paramarg4: (param0: Entity) => boolean): Entity[];
+    static getEntitiesInCube(entityGetter: EntityGetter, midPos: Vec3, range: number, predicate: (param0: Entity | null) => boolean): (Entity | null)[];
+    static getEntitiesInCube(entityGetter: EntityGetter, midPos: Vec3, range: number, exclusion: Entity, predicate: (param0: Entity) => boolean): Entity[];
     /**
      * Returns the loaded section slice from section 0 through {@link ChunkAccess.highestFilledSectionIndex}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:54}
      */
     static getFilledSections(paramarg0: ChunkAccess): LevelChunkSection[];
     static getRespawnAnchorWorks(paramarg0: Level): boolean;
     /**
      * @returns if water and ice evaporates in this world (e.g. nether)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:38}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:42}
      */
     static getWaterEvaporates(paramarg0: Level): boolean;
     /**
@@ -49,7 +49,7 @@ export class WorldExtensionsKt extends Object {
      *
      * `index == (y >> 4) - (bottomY >> 4)`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:93}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L99 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:99}
      */
     static sectionBottomY(chunkAccess: ChunkAccess, index: number): number;
 }

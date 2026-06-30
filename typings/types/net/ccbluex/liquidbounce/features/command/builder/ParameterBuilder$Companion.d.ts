@@ -4,6 +4,7 @@ import type { ParameterBuilder } from '../../../../../../net/ccbluex/liquidbounc
 import type { ClientModule } from '../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 export class ParameterBuilder$Companion extends Object {
     BOOLEAN_VALIDATOR: Parameter$Verificator<boolean>;
+    FLOAT_VALIDATOR: Parameter$Verificator<number>;
     INTEGER_VALIDATOR: Parameter$Verificator<number>;
     MODULE_VALIDATOR: Parameter$Verificator<ClientModule>;
     NON_NEGATIVE_INTEGER_VALIDATOR: Parameter$Verificator<number>;

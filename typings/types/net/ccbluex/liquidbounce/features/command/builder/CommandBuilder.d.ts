@@ -27,14 +27,14 @@ export class CommandBuilder extends Object implements MinecraftShortcuts {
      * The command _friend_ would not be executable since it just acts as a
      * hub for its subcommands
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt:70}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt:78}
      */
     hub(): CommandBuilder;
     parameter(parameter: Parameter<Object>): CommandBuilder;
     /**
      * Doesn't allow the command do be executed if either the world or the player are `null`.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt:63}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/CommandBuilder.kt:66}
      */
     requiresIngame(): CommandBuilder;
     subcommand(subcommand: Command): CommandBuilder;

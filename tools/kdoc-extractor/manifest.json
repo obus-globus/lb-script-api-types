@@ -4,7 +4,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 105
+      "line": 106
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.CLIENT_NAME": {
@@ -12,7 +12,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 112
+      "line": 113
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.ClientResourceReloader": {
@@ -24,7 +24,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 512
+      "line": 513
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.IN_DEVELOPMENT": {
@@ -32,7 +32,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 148
+      "line": 149
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.identifier": {
@@ -40,7 +40,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 165
+      "line": 166
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeClient": {
@@ -48,7 +48,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 195
+      "line": 196
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeFeatures": {
@@ -56,7 +56,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 294
+      "line": 295
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeManagers": {
@@ -64,7 +64,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 246
+      "line": 247
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.initializeResources": {
@@ -72,7 +72,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 310
+      "line": 311
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.logger": {
@@ -80,7 +80,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 153
+      "line": 154
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.prepareGuiStage": {
@@ -88,7 +88,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 371
+      "line": 372
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.resource": {
@@ -99,7 +99,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 174
+      "line": 175
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.resourceToString": {
@@ -110,7 +110,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 185
+      "line": 186
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.shutdownClient": {
@@ -118,7 +118,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 431
+      "line": 432
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.shutdownHandler": {
@@ -126,7 +126,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 537
+      "line": 538
     }
   },
   "net.ccbluex.liquidbounce.LiquidBounce.startHandler": {
@@ -134,7 +134,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-      "line": 457
+      "line": 458
     }
   },
   "net.ccbluex.liquidbounce.additions.GuiGraphicsExtractorAddition": {
@@ -210,7 +210,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 257
+      "line": 260
     }
   },
   "net.ccbluex.liquidbounce.api.core.CoroutineScope.retrying": {
@@ -234,7 +234,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 92
+      "line": 93
     }
   },
   "net.ccbluex.liquidbounce.api.core.HttpClient.client": {
@@ -242,7 +242,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 169
+      "line": 170
     }
   },
   "net.ccbluex.liquidbounce.api.core.HttpClient.clientHttpApiInterceptor": {
@@ -250,7 +250,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 145
+      "line": 146
     }
   },
   "net.ccbluex.liquidbounce.api.core.Response.parse": {
@@ -258,7 +258,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 240
+      "line": 243
     }
   },
   "net.ccbluex.liquidbounce.api.core.Response.toFile": {
@@ -266,7 +266,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 273
+      "line": 276
     }
   },
   "net.ccbluex.liquidbounce.api.models.auth.ClientAccount": {
@@ -1505,6 +1505,14 @@
       "line": 57
     }
   },
+  "net.ccbluex.liquidbounce.event.events.GameRenderTaskQueueEvent": {
+    "doc": "We can use this event to populate the render task queue with tasks that should be\nexecuted in the same frame. This is useful for more responsive task execution\nand allows to also schedule tasks off-schedule.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
+      "line": 53
+    }
+  },
   "net.ccbluex.liquidbounce.event.events.PlayerInteractItemEvent": {
     "doc": "Warning: UseHotbarSlotOrOffHand won't stimulate this event",
     "kind": "class",
@@ -2172,7 +2180,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt",
-      "line": 149
+      "line": 153
     }
   },
   "net.ccbluex.liquidbounce.features.command.builder.ParameterBuilder.vararg": {
@@ -2180,7 +2188,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt",
-      "line": 130
+      "line": 134
     }
   },
   "net.ccbluex.liquidbounce.features.command.commandSet": {
@@ -2699,7 +2707,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/module/teleport/CommandTeleport.kt",
-      "line": 35
+      "line": 34
     }
   },
   "net.ccbluex.liquidbounce.features.command.commands.module.teleport.CommandVClip": {
@@ -2877,7 +2885,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt",
-      "line": 54
+      "line": 55
     }
   },
   "net.ccbluex.liquidbounce.features.marketplace.SubscribedItem.getNewestRevisionId": {
@@ -2885,7 +2893,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt",
-      "line": 90
+      "line": 91
     }
   },
   "net.ccbluex.liquidbounce.features.misc.HideAppearance": {
@@ -3089,7 +3097,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-      "line": 57
+      "line": 58
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAimbot.lookAt": {
@@ -3097,7 +3105,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-      "line": 160
+      "line": 158
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAutoClicker": {
@@ -4951,6 +4959,14 @@
       "line": 34
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.exploit.servercrasher.exploits.Log4jChatExploit": {
+    "doc": "Log4j exploit\n\nUses Log4j to crash the server.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/servercrasher/exploits/Log4jChatExploit.kt",
+      "line": 56
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.exploit.servercrasher.exploits.PaperWindow1201Exploit": {
     "doc": "PaperWindow exploit\n\nRequested from https://github.com/CCBlueX/LiquidBounce/issues/2113\nOriginal PR by https://github.com/AntiCope/meteor-crash-addon/pull/24\nCopy PR https://github.com/CCBlueX/LiquidBounce/pull/2189\n\nIssue fixed by https://github.com/PaperMC/Paper/commit/8493340be4fa69fa9369719272e5dff1b7a2f455",
     "kind": "object",
@@ -5074,12 +5090,32 @@
       "line": 58
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.fun.notebot.nbs.BufferedSource.readNbsData": {
+    "doc": "https://opennbs.org/nbs",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/notebot/nbs/Nbs.kt",
+      "line": 28
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.fun.notebot.nbs.InstrumentNote.getInstrumentEnumFromId": {
+    "doc": "Maps vanilla NBS instrument ids to Minecraft note block instruments.",
+    "see": [
+      "net.minecraft.world.level.block.NoteBlock",
+      "net.minecraft.world.level.block.state.properties.NoteBlockInstrument"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/notebot/nbs/NbsData.kt",
+      "line": 66
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.fun.notebot.nbs.SongData.name": {
     "doc": "The original name of file.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/notebot/nbs/NbsData.kt",
-      "line": 88
+      "line": 98
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.GenerationMode.File.generate": {
@@ -5184,6 +5220,15 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoPearl.kt",
       "line": 64
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleBetterTab": {
+    "doc": "ModuleBetterTab\n\n@author sqlerrorthing",
+    "since": "12/28/2024",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleBetterTab.kt",
+      "line": 37
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleBookBot": {
@@ -5326,7 +5371,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleMacros.kt",
-      "line": 47
+      "line": 48
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleMacros.COUNT": {
@@ -5334,7 +5379,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleMacros.kt",
-      "line": 50
+      "line": 51
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleMiddleClickAction": {
@@ -7427,7 +7472,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopConfig.kt",
-      "line": 45
+      "line": 46
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.LIMITED_ITEMS": {
@@ -7451,7 +7496,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop.kt",
-      "line": 394
+      "line": 393
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.ModuleAutoShop.checkPrice": {
@@ -7459,7 +7504,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop.kt",
-      "line": 456
+      "line": 455
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.ModuleAutoShop.getRequiredClicks": {
@@ -7467,7 +7512,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop.kt",
-      "line": 433
+      "line": 432
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.ModuleAutoShop.hasReceivedItems": {
@@ -7475,7 +7520,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop.kt",
-      "line": 290
+      "line": 289
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.ModuleAutoShop.simulateNextPurchases": {
@@ -7483,7 +7528,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/ModuleAutoShop.kt",
-      "line": 325
+      "line": 324
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.ShopConfigPreset": {
+    "doc": "Represents the locally available shop configurations",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/autoshop/AutoShopConfig.kt",
+      "line": 81
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.autoshop.hasBetterTierItem": {
@@ -7976,7 +8029,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallMLG.kt",
-      "line": 182
+      "line": 190
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.nofall.modes.NoFallMLG.getCurrentPickupTarget": {
@@ -8145,7 +8198,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/Totem.kt",
-      "line": 289
+      "line": 290
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.offhand.Totem.sendDirectly": {
@@ -8153,7 +8206,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/Totem.kt",
-      "line": 269
+      "line": 270
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.player.offhand.Totem.switchBackDelay": {
@@ -8218,6 +8271,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAnimations.kt",
       "line": 78
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAntiBlind": {
+    "doc": "AntiBlind module\n\nProtects you from potentially annoying screen effects that block your view.",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleAntiBlind.kt",
+      "line": 34
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleAntiBlind.TEXTURE_PUMPKIN_BLUR": {
@@ -8968,7 +9029,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleFastBreak.kt",
-      "line": 62
+      "line": 69
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleFastPlace": {
@@ -9076,6 +9137,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleProjectilePuncher.kt",
       "line": 83
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.world.ModuleStrongholdFinder": {
+    "doc": "Stronghold finder module.\n\nAutomatically tracks Eye of Ender throws and estimates the strongest stronghold chunk candidate\nusing a Bayesian posterior.\n\n[Article](https://github.com/Ninjabrain1/Ninjabrain-Bot/blob/main/triangulation.pdf)",
+    "kind": "object",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleStrongholdFinder.kt",
+      "line": 81
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleSurround": {
@@ -9457,6 +9526,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/MineRotationMode.kt",
       "line": 137
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.MineRotationMode": {
+    "doc": "Determines how rotating is handled.\n\nAlso provides procedures for when we can't look at the target position.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/MineRotationMode.kt",
+      "line": 29
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.packetmine.ModulePacketMine": {
@@ -9923,6 +10000,19 @@
       "line": 51
     }
   },
+  "net.ccbluex.liquidbounce.integration.backend.backends.cef.CefBrowserBackend": {
+    "doc": "Uses a modified fork of the JCEF library browser backend made for Minecraft.\nThis browser backend is based on Chromium and is the most advanced browser backend.\nJCEF is available through the MCEF library, which provides a Minecraft compatible version of JCEF.",
+    "see": [
+      "<a href=\"https://github.com/CCBlueX/java-cef/\">JCEF</a>",
+      "<a href=\"https://github.com/CCBlueX/mcef/\">MCEF</a>",
+      "@author Izuna <izuna.seikatsu@ccbluex.net>"
+    ],
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt",
+      "line": 64
+    }
+  },
   "net.ccbluex.liquidbounce.integration.backend.backends.cef.CefBrowserBackend.cleanup": {
     "doc": "Cleans up old cache directories.\n\nTODO: Check if we have an active PID using the cache directory, if so, check if the LiquidBounce\n  process attached to the JCEF PID is still running or not. If not, we could kill the JCEF process\n  and clean up the cache directory.",
     "kind": "function",
@@ -10264,6 +10354,14 @@
       "line": 28
     }
   },
+  "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.ApplicationCall.requireId": {
+    "doc": "Extract a required integer path parameter or respond with 403 Forbidden",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
+      "line": 38
+    }
+  },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.LocalStorageData": {
     "doc": "LocalStorage RestAPI\n\nAllows to persist data across different browser.\n\nSince we cannot rely on the browser's localStorage\nwe have to implement our own. This is a simple key-value store.\n\nEspecially because we have not enabled the CEF local storage",
     "kind": "class",
@@ -10277,7 +10375,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-      "line": 64
+      "line": 73
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.Routing.getMarketplaceItemReviews": {
@@ -10285,7 +10383,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-      "line": 151
+      "line": 159
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.Routing.getMarketplaceItemRevision": {
@@ -10293,7 +10391,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-      "line": 90
+      "line": 99
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.Routing.getMarketplaceItemRevisions": {
@@ -10301,7 +10399,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-      "line": 78
+      "line": 87
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.Routing.getMarketplaceItems": {
@@ -10309,7 +10407,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-      "line": 38
+      "line": 47
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.Routing.getProxyInfo": {
@@ -10325,7 +10423,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-      "line": 163
+      "line": 171
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.Routing.subscribeMarketplaceItem": {
@@ -10333,7 +10431,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-      "line": 102
+      "line": 110
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.client.Routing.unsubscribeMarketplaceItem": {
@@ -10341,7 +10439,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/client/MarketplaceFunctions.kt",
-      "line": 132
+      "line": 140
     }
   },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.Float.fixNaN": {
@@ -12170,6 +12268,14 @@
       "line": 150
     }
   },
+  "net.ccbluex.liquidbounce.script.ScriptApiRequired": {
+    "doc": "Marks a class, function or property as part of the LiquidBounce Script API.\nIt might not serve a purpose other than documentation.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/script/ScriptApiRequired.kt",
+      "line": 25
+    }
+  },
   "net.ccbluex.liquidbounce.script.ScriptManager": {
     "doc": "The ScriptManager allows to extend the client by loading supported scripts at runtime.\nScripts can be written in various languages when installed through GraalVM\nand can interact with the client through the Script API.\n\nScripts are stored in the scripts directory and can be organized in subdirectories when using a main script file.",
     "kind": "object",
@@ -12683,7 +12789,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 61
+      "line": 62
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.actualServerRotation": {
@@ -12691,7 +12797,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 107
+      "line": 108
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.allowedToUpdate": {
@@ -12699,7 +12805,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 243
+      "line": 241
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.currentRotation": {
@@ -12707,7 +12813,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 78
+      "line": 79
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.isRotatingAllowed": {
@@ -12715,7 +12821,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 144
+      "line": 145
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.packetHandler": {
@@ -12723,7 +12829,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 283
+      "line": 281
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.rotationTarget": {
@@ -12731,7 +12837,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 66
+      "line": 67
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.update": {
@@ -12739,7 +12845,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 161
+      "line": 162
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationMode.instant": {
@@ -13104,7 +13210,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt",
-      "line": 68
+      "line": 128
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.utils.RotationUtil.crosshairAngleToEntity": {
@@ -13112,7 +13218,29 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt",
-      "line": 56
+      "line": 116
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.aiming.utils.RotationUtil.mouseSensitivityFactor": {
+    "doc": "Calculates the sensitivity part from the vanilla mouse input path.\n\n[1.12.2 reference](https://github.com/WangTingZheng/mcp940/blob/d0c030a4139ce7cf3f284b180f0d9ea87bdf8141/src/minecraft/net/minecraft/client/renderer/EntityRenderer.java#L1268-L1299)",
+    "see": [
+      "net.minecraft.client.MouseHandler.turnPlayer"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt",
+      "line": 68
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.aiming.utils.RotationUtil.mouseTurnDelta": {
+    "doc": "Converts the values passed from `MouseHandler.turnPlayer` to the yaw/pitch delta applied by vanilla.\n\n[1.12.2 reference](https://github.com/WangTingZheng/mcp940/blob/d0c030a4139ce7cf3f284b180f0d9ea87bdf8141/src/minecraft/net/minecraft/entity/Entity.java#L479-L497)",
+    "see": [
+      "net.minecraft.world.entity.Entity.turn"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationUtil.kt",
+      "line": 87
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.utils.canSeeBox": {
@@ -13188,12 +13316,28 @@
       "line": 274
     }
   },
+  "net.ccbluex.liquidbounce.utils.aiming.utils.raytraceBox": {
+    "doc": "Find the best spot of a box to aim at.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt",
+      "line": 374
+    }
+  },
   "net.ccbluex.liquidbounce.utils.aiming.utils.raytraceBoxes": {
     "doc": "Samples all boxes that make up a shape and returns the globally best rotation across them.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt",
       "line": 314
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.aiming.utils.raytraceUpperBlockSide": {
+    "doc": "Find the best spot of the upper block side",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt",
+      "line": 515
     }
   },
   "net.ccbluex.liquidbounce.utils.block.AABB.collideBlockIntersects": {
@@ -13300,6 +13444,14 @@
       "line": 56
     }
   },
+  "net.ccbluex.liquidbounce.utils.block.BedBlock.getPotentialSecondBedBlock": {
+    "doc": "Returns the second bed block position that might not exist (normally beds are two blocks long tho).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
+      "line": 651
+    }
+  },
   "net.ccbluex.liquidbounce.utils.block.BlockGetter.raycast": {
     "doc": "Basically [BlockGetter.raycast] but this method allows us to exclude blocks using [exclude].",
     "kind": "function",
@@ -13313,7 +13465,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 719
+      "line": 722
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockPos.searchBedLayer": {
@@ -13322,6 +13474,15 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
       "line": 247
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.block.BlockPos.searchLayer": {
+    "doc": "Scan blocks outwards from center along given [directions], up to [layers]",
+    "returns": "The layer to the BlockPos (long value)",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
+      "line": 273
     }
   },
   "net.ccbluex.liquidbounce.utils.block.CachedBlockPosSpheres.rangeLong": {
@@ -13551,7 +13712,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 662
+      "line": 665
     }
   },
   "net.ccbluex.liquidbounce.utils.block.liquid.TimedPickupTracker": {
@@ -14055,6 +14216,17 @@
       "line": 28
     }
   },
+  "net.ccbluex.liquidbounce.utils.client.ChatComponent.addMessage": {
+    "doc": "Adds a message and assigns the ID to it.",
+    "see": [
+      "ChatComponent.addMessage"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ChatHudExtension.kt",
+      "line": 51
+    }
+  },
   "net.ccbluex.liquidbounce.utils.client.ChatComponent.removeMessage": {
     "doc": "Removes all messages with the given ID.",
     "kind": "function",
@@ -14329,7 +14501,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 131
+      "line": 139
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isNewerThanOrEquals1_21_5": {
@@ -14337,7 +14509,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 142
+      "line": 150
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isNewerThanOrEquals1_21_6": {
@@ -14345,7 +14517,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 153
+      "line": 161
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isNewerThanOrEquals1_21_9": {
@@ -14353,7 +14525,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 165
+      "line": 173
     }
   },
   "net.ccbluex.liquidbounce.utils.client.isOlderThanOrEqual1_15_2": {
@@ -14369,7 +14541,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ProtocolUtil.kt",
-      "line": 177
+      "line": 185
     }
   },
   "net.ccbluex.liquidbounce.utils.client.randomUsername": {
@@ -14424,7 +14596,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-        "line": 188
+        "line": 189
       }
     },
     {
@@ -14432,7 +14604,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-        "line": 197
+        "line": 198
       }
     }
   ],
@@ -14460,7 +14632,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-      "line": 179
+      "line": 180
     }
   },
   "net.ccbluex.liquidbounce.utils.combat.EntityTargetingInfo": {
@@ -14519,7 +14691,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt",
-      "line": 242
+      "line": 243
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.AABB.isOnMagmaBlock": {
@@ -14570,6 +14742,33 @@
       "line": 778
     }
   },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.calculateElytraTick": {
+    "doc": "Simulates one tick of elytra flight physics,\nmatching vanilla {@code LivingEntity.travel()} elytra branch.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 108
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.calculateFreeFallTick": {
+    "doc": "Simulates one tick of non-elytra free-fall physics,\nmatching vanilla {@code LivingEntity.travel()} air movement.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 81
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.FallingPlayer.playerMovementInput": {
+    "doc": "",
+    "see": [
+      "LivingEntity.INPUT_FRICTION"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/FallingPlayer.kt",
+      "line": 167
+    }
+  },
   "net.ccbluex.liquidbounce.utils.entity.LinearPositionExtrapolation": {
     "doc": "A utility class which assumes that the subject is moving at a specified speed.",
     "kind": "class",
@@ -14608,6 +14807,18 @@
       "line": 142
     }
   },
+  "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getDamageFromExplosion": {
+    "doc": "Mirrors the vanilla entity damage formula for explosions.\n\nPass [damageSource] when the original explosion type is known so shield checks and\nsource-sensitive tags stay aligned with vanilla.",
+    "see": [
+      "net.minecraft.world.level.ExplosionDamageCalculator#getEntityDamageAmount",
+      "net.minecraft.world.level.ServerExplosion#getSeenPercent"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
+      "line": 582
+    }
+  },
   "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getEffectiveDamage": {
     "doc": "Mirrors the vanilla damage-reduction pipeline after the base amount is known.\n\nBy default, this returns the remaining damage before absorption so callers can compare it\nagainst `health + absorptionAmount`. Pass [includeAbsorption] to mirror the final health\nloss applied by vanilla.",
     "see": [
@@ -14635,6 +14846,17 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
       "line": 535
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.entity.LivingEntity.getExposureToExplosion": {
+    "doc": "Basically [ServerExplosion.getSeenPercent] but this method allows us to exclude blocks using [exclude].",
+    "see": [
+      "net.minecraft.world.level.ServerExplosion.getSeenPercent"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt",
+      "line": 633
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.LocalPlayer.canStep": {
@@ -15661,6 +15883,15 @@
       "line": 77
     }
   },
+  "net.ccbluex.liquidbounce.utils.io.RandomAccessFile.skipLine": {
+    "doc": "Skips the current line in the file.",
+    "returns": "The number of bytes skipped.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/io/FileUtils.kt",
+      "line": 39
+    }
+  },
   "net.ccbluex.liquidbounce.utils.io.extractZip": [
     {
       "doc": "Extracts a ZIP archive from an [InputStream] to a specified [folder] and close it",
@@ -15977,6 +16208,14 @@
       "line": 41
     }
   },
+  "net.ccbluex.liquidbounce.utils.kotlin.isNotRoot": {
+    "doc": "Check if the class is not the root class.\n\nThe root class is the class [Record] or [Object].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ReflectionUtils.kt",
+      "line": 37
+    }
+  },
   "net.ccbluex.liquidbounce.utils.math.AABB.distanceToSqr": {
     "doc": "Squared distance from this box to a point without allocating a temporary [Vec3].",
     "see": [
@@ -16081,6 +16320,25 @@
       "line": 32
     }
   },
+  "net.ccbluex.liquidbounce.utils.math.ShapeJoiner": {
+    "doc": "Replacement of `ObjectRef<VoxelShape>`",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeMergeUtil.kt",
+      "line": 42
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.math.ShapeSurfaceMesh.findIndex": {
+    "doc": "",
+    "see": [
+      "VoxelShape.findIndex"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt",
+      "line": 453
+    }
+  },
   "net.ccbluex.liquidbounce.utils.math.Vec3.fma": {
     "doc": "",
     "returns": "[this] + [scale] * [other]",
@@ -16105,7 +16363,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt",
-      "line": 59
+      "line": 54
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.math.VoxelShape.shrink": {
+    "doc": "Shrinks a [VoxelShape] by the specified amounts on selected axes.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt",
+      "line": 164
     }
   },
   "net.ccbluex.liquidbounce.utils.math.VoxelShape.toSortedAabbs": {
@@ -16113,7 +16379,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/ShapeExtensions.kt",
-      "line": 83
+      "line": 78
     }
   },
   "net.ccbluex.liquidbounce.utils.math.findFunctionMinimumByBisect": {
@@ -16130,6 +16396,14 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt",
       "line": 36
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.math.geometry.LinearGeometry3": {
+    "doc": "Shared contract for one-dimensional linear geometry in 3D space.\n\nImplementations define their own valid parameter domain, while [anchor] and [direction]\nalways describe the shared supporting line equation `anchor + direction * t`.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/LinearGeometry3.kt",
+      "line": 49
     }
   },
   "net.ccbluex.liquidbounce.utils.math.geometry.LinearGeometry3.anchor": {

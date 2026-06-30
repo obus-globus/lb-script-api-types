@@ -8,12 +8,12 @@ import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/li
 import type { PacketEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { PlayerJumpEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerJumpEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Verus (b3896)
- * - **Tested on:** anticheat-test
- * - it can rarely flag once | needs 1.9x or above
+ * @anticheat Verus
+ * @anticheatVersion b3896
+ * @testedOn anticheat-test
+ * @note it can rarely flag once | needs 1.9x or above
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3869Flat.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3869Flat.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3869Flat.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/verus/FlyVerusB3869Flat.kt:46}
  */
 export class FlyVerusB3869Flat extends Mode {
     static Companion: Tagged$Companion;

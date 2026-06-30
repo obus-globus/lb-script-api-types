@@ -4,12 +4,12 @@ import type { Tagged$Companion } from '../../../../../../../../../../net/ccbluex
 import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerMoveEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Spartan (phase 524)
- * - **Tested on:** minecraft.vagdedes.com
- * - spartan flags less if your motion is stable, that's why we use PlayerMoveEvent
+ * @anticheat Spartan
+ * @anticheatVersion phase 524
+ * @testedOn minecraft.vagdedes.com
+ * @note spartan flags less if your motion is stable, that's why we use PlayerMoveEvent
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/spartan/FlySpartan524.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/spartan/FlySpartan524.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/spartan/FlySpartan524.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/spartan/FlySpartan524.kt:37}
  */
 export class FlySpartan524 extends Mode {
     static Companion: Tagged$Companion;

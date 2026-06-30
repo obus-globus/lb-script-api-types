@@ -14,10 +14,9 @@ import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/E
  *
  * This means the cancellation will not be **immediate** like {@link Thread.interrupt}.
  *
- * @param original The original {@link ContinuationInterceptor} such as a {@link CoroutineDispatcher}, because one {@link CoroutineContext} can only contain one value for a same key.
- * @author MukjepScarlet
+ * @param original @author MukjepScarlet
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:94}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:106}
  */
 export class EventListenerRunningContinuationInterceptor extends AbstractCoroutineContextElement implements ContinuationInterceptor {
     static Key: ContinuationInterceptor$Key;

@@ -6,12 +6,16 @@ import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/li
 import type { MovementInputEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/MovementInputEvent.d.ts'
 import type { PacketEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Sentinel (10.03.2024)
- * - **Tested on:** cubecraft.net
- * - Tested in SkyWars and EggWars, works fine and no automatic ban. It will auto-ban only when flying very large distances.  Thanks to icewormy3
+ * @anticheat Sentinel
+ * @anticheatVersion 10.03.2024
+ * @testedOn cubecraft.net
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel10thMar.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel10thMar.kt:33}
+ * @note Tested in SkyWars and EggWars, works fine and no automatic ban.
+ * It will auto-ban only when flying very large distances.
+ *
+ * Thanks to icewormy3
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel10thMar.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel10thMar.kt:43}
  */
 export class FlySentinel10thMar extends Mode {
     static Companion: Tagged$Companion;

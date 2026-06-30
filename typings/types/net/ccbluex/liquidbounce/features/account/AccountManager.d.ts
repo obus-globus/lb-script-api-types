@@ -24,13 +24,13 @@ export class AccountManager extends Config implements EventListener {
     /**
      * Cracked account. This can only be used to join cracked servers and not premium servers.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L116 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:116}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:119}
      */
     newCrackedAccount(username: string, online: boolean): void;
     /**
      * Create a new Microsoft Account using the OAuth2 flow which opens a browser window to authenticate the user
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L214 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:214}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt#L217 | src/main/kotlin/net/ccbluex/liquidbounce/features/account/AccountManager.kt:217}
      */
     newMicrosoftAccount(url: (param0: string) => void): void;
     // private newMicrosoftAccount(url: (param0: string) => void, success: (param0: MicrosoftAccount) => void, error: (param0: string) => void): void;

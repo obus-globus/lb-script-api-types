@@ -5,17 +5,7 @@ import type { Tagged } from '../../../../../../../net/ccbluex/liquidbounce/confi
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 export class ModuleBlockTrap$PlaceAt extends Enum<ModuleBlockTrap$PlaceAt> implements Tagged {
     static Companion: Tagged$Companion;
-    /**
-     * Allows placing crystals next to floor and keep them at the spot when disabled.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap.kt#L187 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap.kt:187}
-     */
     static FLOOR: ModuleBlockTrap$PlaceAt;
-    /**
-     * Allows placing crystals next to their legs and keep them at the spot when disabled.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap.kt#L182 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/ModuleBlockTrap.kt:182}
-     */
     static LEGS: ModuleBlockTrap$PlaceAt;
     static getEntries(): ModuleBlockTrap$PlaceAt[];
     static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };

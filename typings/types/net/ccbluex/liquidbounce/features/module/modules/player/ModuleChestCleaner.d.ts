@@ -11,7 +11,7 @@ import type { Item } from '../../../../../../../net/minecraft/world/item/Item.d.
  *
  * Automatically drops unwanted items from a chest.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleChestCleaner.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleChestCleaner.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleChestCleaner.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleChestCleaner.kt:42}
  */
 export class ModuleChestCleaner extends ClientModule {
     static INSTANCE: ModuleChestCleaner;

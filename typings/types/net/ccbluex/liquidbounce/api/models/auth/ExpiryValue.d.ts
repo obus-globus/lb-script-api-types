@@ -2,7 +2,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 /**
  * Represents a value that expires at a certain time defined by {@link expiresAt}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/ExpiryValue.kt#L21 | src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/ExpiryValue.kt:21}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/ExpiryValue.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/ExpiryValue.kt:24}
  */
 export class ExpiryValue<T extends unknown> extends Object {
     constructor(value: T, expiresAt: number)

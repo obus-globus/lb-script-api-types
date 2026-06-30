@@ -17,11 +17,6 @@ import type { Screen } from '../../../../../net/minecraft/client/gui/screens/Scr
 import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
 export class ScreenManager extends Object implements EventListener {
     static INSTANCE: ScreenManager;
-    /**
-     * Checks if the given screen is an active client screen.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt#L372 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt:372}
-     */
     static isClientScreen(paramarg0: Screen): boolean;
     readonly browserSettings: IntegrationBrowserSettings;
     // private effectUpdateHandler: EventHook<GameTickEvent>;
@@ -29,26 +24,9 @@ export class ScreenManager extends Object implements EventListener {
     // private handleBrowserReady: EventHook<BrowserReadyEvent>;
     // private keyHandler: EventHook<KeyboardKeyEvent>;
     // private logger: Logger;
-    /**
-     * The main browser will constantly be updated to display the current screen.
-     *
-     * May be null if the browser backend is not initialized. This can happen when
-     * {@link BrowserBackendManager.isSkipping} is true.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt:66}
-     */
     readonly mainBrowser: Browser | null;
     /*not mapped: */ getParent$net_ccbluex_liquidbounce(): Screen;
     readonly screen: CustomScreen | null;
-    /**
-     * Acknowledgement is used to detect desyncs between the integration browser and the client.
-     * It is reset when the client opens a new screen and confirmed when the integration browser
-     * opens the same screen.
-     *
-     * If the acknowledgement is not confirmed after 500ms, the integration browser will be reloaded.
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt#L81 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/ScreenManager.kt:81}
-     */
     readonly screenAcknowledgement: ScreenAcknowledgement;
     // private screenHandler: EventHook<ScreenEvent>;
     // private screenUpdater: EventHook<GameTickEvent>;

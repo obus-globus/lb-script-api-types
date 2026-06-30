@@ -6,13 +6,17 @@ import type { EventHook } from '../../../../../../../../../../net/ccbluex/liquid
 import type { GameTickEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 import type { PlayerMoveEvent } from '../../../../../../../../../../net/ccbluex/liquidbounce/event/events/PlayerMoveEvent.d.ts'
 /**
- * @remarks
- * - **Anticheat:** Sentinel (27.01.2024)
- * - **Tested on:** cubecraft.net
- * - Tested in SkyWars and EggWars, works fine and no automatic ban.
- * - Glides down and by pressing spacebar, it will go up. It also has a horizontal speed. This fly does not require any disabler.  Thanks to icewormy3
+ * @anticheat Sentinel
+ * @anticheatVersion 27.01.2024
+ * @testedOn cubecraft.net
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel27thJan.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel27thJan.kt:32}
+ * @note Tested in SkyWars and EggWars, works fine and no automatic ban.
+ * @note Glides down and by pressing spacebar, it will go up. It also has a horizontal speed.
+ * This fly does not require any disabler.
+ *
+ * Thanks to icewormy3
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel27thJan.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/sentinel/FlySentinel27thJan.kt:43}
  */
 export class FlySentinel27thJan extends Mode {
     static Companion: Tagged$Companion;

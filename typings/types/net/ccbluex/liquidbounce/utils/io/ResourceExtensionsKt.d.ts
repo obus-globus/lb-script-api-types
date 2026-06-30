@@ -4,21 +4,17 @@ export class ResourceExtensionsKt extends Object {
     /**
      * Find resource
      *
-     * @throws IllegalArgumentException If the path is invalid
+     * @param path @throws IllegalArgumentException If the path is invalid
      *
-     * @param path The *absolute* resource path
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt#L23 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt:23}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt:29}
      */
     static resource(path: string): InputStream;
     /**
      * Converts resource to string
      *
-     * @throws IllegalArgumentException If the path is invalid
+     * @param path @throws IllegalArgumentException If the path is invalid
      *
-     * @param path The *absolute* resource path
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt:34}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/ResourceExtensions.kt:40}
      */
     static resourceToString(path: string): string;
 }

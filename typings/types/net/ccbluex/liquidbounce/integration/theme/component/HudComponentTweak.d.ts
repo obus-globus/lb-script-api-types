@@ -6,7 +6,7 @@ import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounc
 /**
  * A set of tweaks that can be applied to the Original HUD by the component
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt#L24 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt:24}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt:27}
  */
 export class HudComponentTweak extends Enum<HudComponentTweak> implements Tagged {
     static Companion: Tagged$Companion;
@@ -18,15 +18,6 @@ export class HudComponentTweak extends Enum<HudComponentTweak> implements Tagged
     static DISABLE_SCOREBOARD: HudComponentTweak;
     static DISABLE_STATUS_BAR: HudComponentTweak;
     static DISABLE_STATUS_EFFECT_OVERLAY: HudComponentTweak;
-    /**
-     * Disables the Item Hotbar and draws only the items instead
-     * after drawing the overlay
-     *
-     * TODO: Might disable completely and make a way to draw
-     *   items in the overlay or via component
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt:29}
-     */
     static TWEAK_HOTBAR: HudComponentTweak;
     static getEntries(): HudComponentTweak[];
     static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };

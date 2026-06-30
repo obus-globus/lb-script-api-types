@@ -1497,7 +1497,6 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience").ModuleCustomAmbience;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience$CustomLightmap": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience$CustomLightmap").ModuleCustomAmbience$CustomLightmap;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience$CustomLightmap$EditorMode": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience$CustomLightmap$EditorMode").ModuleCustomAmbience$CustomLightmap$EditorMode;
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience$CustomLightmap$EditorMode$SingleColor": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience$CustomLightmap$EditorMode$SingleColor").ModuleCustomAmbience$CustomLightmap$EditorMode$SingleColor;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience$FogValueGroup": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience$FogValueGroup").ModuleCustomAmbience$FogValueGroup;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience$Precipitation": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience$Precipitation").ModuleCustomAmbience$Precipitation;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleCustomAmbience$SkyColor": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleCustomAmbience$SkyColor").ModuleCustomAmbience$SkyColor;
@@ -2021,7 +2020,6 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.ClientVertexFormats": typeof import("../types/net/ccbluex/liquidbounce/render/ClientVertexFormats").ClientVertexFormats;
     "net.ccbluex.liquidbounce.render.DrawMode": typeof import("../types/net/ccbluex/liquidbounce/render/DrawMode").DrawMode;
     "net.ccbluex.liquidbounce.render.FontFace": typeof import("../types/net/ccbluex/liquidbounce/render/FontFace").FontFace;
-    "net.ccbluex.liquidbounce.render.FontManager": typeof import("../types/net/ccbluex/liquidbounce/render/FontManager").FontManager;
     "net.ccbluex.liquidbounce.render.GenericColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/GenericColorMode").GenericColorMode;
     "net.ccbluex.liquidbounce.render.GenericDistanceHSBColorMode": typeof import("../types/net/ccbluex/liquidbounce/render/GenericDistanceHSBColorMode").GenericDistanceHSBColorMode;
     "net.ccbluex.liquidbounce.render.GenericDistanceHSBColorMode$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/GenericDistanceHSBColorMode$Companion").GenericDistanceHSBColorMode$Companion;
@@ -2485,7 +2483,9 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.math.PlaneMask": typeof import("../types/net/ccbluex/liquidbounce/utils/math/PlaneMask").PlaneMask;
     "net.ccbluex.liquidbounce.utils.math.PositionedVoxelShape": typeof import("../types/net/ccbluex/liquidbounce/utils/math/PositionedVoxelShape").PositionedVoxelShape;
     "net.ccbluex.liquidbounce.utils.math.ShapeExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/math/ShapeExtensionsKt").ShapeExtensionsKt;
-    "net.ccbluex.liquidbounce.utils.math.ShapeExtensionsKt$EntriesMappings": typeof import("../types/net/ccbluex/liquidbounce/utils/math/ShapeExtensionsKt$EntriesMappings").ShapeExtensionsKt$EntriesMappings;
+    "net.ccbluex.liquidbounce.utils.math.ShapeJoiner": typeof import("../types/net/ccbluex/liquidbounce/utils/math/ShapeJoiner").ShapeJoiner;
+    "net.ccbluex.liquidbounce.utils.math.ShapeMergeUtilKt": typeof import("../types/net/ccbluex/liquidbounce/utils/math/ShapeMergeUtilKt").ShapeMergeUtilKt;
+    "net.ccbluex.liquidbounce.utils.math.ShapeMergeUtilKt$EntriesMappings": typeof import("../types/net/ccbluex/liquidbounce/utils/math/ShapeMergeUtilKt$EntriesMappings").ShapeMergeUtilKt$EntriesMappings;
     "net.ccbluex.liquidbounce.utils.math.ShapeSurfaceMesh": typeof import("../types/net/ccbluex/liquidbounce/utils/math/ShapeSurfaceMesh").ShapeSurfaceMesh;
     "net.ccbluex.liquidbounce.utils.math.ShapeSurfaceMesh$Companion": typeof import("../types/net/ccbluex/liquidbounce/utils/math/ShapeSurfaceMesh$Companion").ShapeSurfaceMesh$Companion;
     "net.ccbluex.liquidbounce.utils.math.StringDistanceKt": typeof import("../types/net/ccbluex/liquidbounce/utils/math/StringDistanceKt").StringDistanceKt;

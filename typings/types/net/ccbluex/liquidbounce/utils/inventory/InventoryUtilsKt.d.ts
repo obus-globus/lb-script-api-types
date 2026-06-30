@@ -19,7 +19,7 @@ export class InventoryUtilsKt extends Object {
      * The result depends on current player context (e.g. creative state and durability filtering),
      * then ranks candidates by destroy speed and nearby-slot preference.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L89 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:89}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:107}
      */
     static findBestToolToMineBlock(iterable: (ItemSlot | null)[], blockState: BlockState, ignoreDurability: boolean, predicate: (param0: ItemStack, param1: BlockState) => boolean): ItemSlot | null;
     static findBlocksEndingWith(targets: (Object | null)[]): Block[];
@@ -30,7 +30,7 @@ export class InventoryUtilsKt extends Object {
     static getSlotsInContainer(abstractContainerScreen: AbstractContainerScreen<any>): ContainerItemSlot[];
     static getTypeOrNull(paramarg0: AbstractContainerMenu): MenuType<any>;
     static hasInventorySpace(): boolean;
-    static mergeableCapacityFor(paramarg0: ItemSlot[], paramarg1: ItemStack, paramarg2: ItemSlot[]): number;
+    static mergeableCapacityFor(iterable: ItemSlot[], itemStack: ItemStack, blacklist: ItemSlot[]): number;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot): InteractionResult;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot, paramarg2: number): InteractionResult;
     static useHotbarSlotOrOffhand(paramarg0: EventListener, paramarg1: HotbarItemSlot, paramarg2: number, paramarg3: number): InteractionResult;

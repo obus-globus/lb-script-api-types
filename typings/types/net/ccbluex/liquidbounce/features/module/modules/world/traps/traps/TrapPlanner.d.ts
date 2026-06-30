@@ -22,7 +22,7 @@ export abstract class TrapPlanner<T extends unknown> extends ToggleableValueGrou
     /**
      * Called during simulated tick event
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlanner.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlanner.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlanner.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlanner.kt:59}
      */
     plan(enemies: LivingEntity[]): BlockChangeIntent<T> | null;
     protected targetOverlapComparator(origin: BlockPos, orderedOffsets: BlockPos[], eyePos: Vec3): (param0: Object) => boolean;

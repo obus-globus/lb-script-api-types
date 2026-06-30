@@ -4,7 +4,7 @@ import type { EquipmentSlot } from '../../../../../../net/minecraft/world/entity
 /**
  * @see net.minecraft.world.item.equipment.ArmorMaterial.createAttributes
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorPiece.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorPiece.kt:28}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorPiece.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/armor/ArmorPiece.kt:31}
  */
 export class ArmorPiece extends Object {
 // (invalid TS: name contains '-')     static box-impl(paramarg0: ItemSlot): ArmorPiece;

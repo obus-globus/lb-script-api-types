@@ -20,14 +20,14 @@ export class PointFindingKt extends Object {
      * @param visibilityPredicate An optional predicate to determine if a given point is visible
      * @returns the best visible spot found or `null`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:149}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L170 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:170}
      */
     static findVisiblePointFromVirtualEye(virtualEyes: Vec3, box: AABB, rangeToTest: number, visibilityPredicate: VisibilityPredicate): Vec3;
     /**
      * Creates rotation matrices: The first allows to turn the vec (1.0, 0.0, 0.0) into the given {@link vec}.
      * The second allows to turn the given vec into (1.0, 0.0, 0.0).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:52}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:61}
      */
     static getRotationMatricesForVec(vec: Vec3): RotationMatrices;
     /**
@@ -35,7 +35,7 @@ export class PointFindingKt extends Object {
      *
      * @returns a list of projected points, or null if the virtual eye is inside the target box.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:68}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/PointFinding.kt:78}
      */
     static projectPointsOnBox(virtualEye: Vec3, targetBox: AABB, maxPoints: number, consumer: (param0: Object) => void): boolean;
     static projectPointsOnBox(virtualEye: Vec3, targetBox: AABB, maxPoints: number): Vec3[];

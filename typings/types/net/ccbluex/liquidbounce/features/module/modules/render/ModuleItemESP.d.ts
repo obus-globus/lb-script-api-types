@@ -9,13 +9,6 @@ import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/rend
 import type { Filter } from '../../../../../../../net/ccbluex/liquidbounce/utils/collection/Filter.d.ts'
 import type { Entity } from '../../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { Item } from '../../../../../../../net/minecraft/world/item/Item.d.ts'
-/**
- * ItemESP module
- *
- * Allows you to see dropped items through walls.
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemESP.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemESP.kt:57}
- */
 export class ModuleItemESP extends ClientModule {
     static INSTANCE: ModuleItemESP;
     readonly baseKey: string;

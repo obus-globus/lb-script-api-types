@@ -19,7 +19,7 @@ import type { MappableRingBuffer } from '../../../../net/minecraft/client/render
  *
  * @author MukjepScarlet
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:50}
  */
 export class GrowableMappableRingBuffer extends Object {
     static Companion: GrowableMappableRingBuffer$Companion;
@@ -31,7 +31,7 @@ export class GrowableMappableRingBuffer extends Object {
      *
      * @see net.ccbluex.liquidbounce.injection.mixins.blaze3d.MixinRenderSystem.onFlipFrame
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L188 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:188}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L204 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:204}
      */
     static cleanup(): void;
     constructor(label: string, usage: number, growPolicy: GrowableMappableRingBuffer$GrowPolicy)
@@ -43,7 +43,7 @@ export class GrowableMappableRingBuffer extends Object {
     /**
      * Clear the ring buffer and release all GPU resources.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L146 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:146}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L157 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:157}
      */
     clear(): void;
     // private ensureCapacityFor(minSize: number): void;
@@ -52,21 +52,23 @@ export class GrowableMappableRingBuffer extends Object {
      * current write offset. This is useful for per-frame usage patterns where
      * each frame starts writing from a fresh buffer.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:136}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:149}
      */
     rotate(): void;
     /**
      * Upload {@link data} into the ring buffer and return a slice covering the written region.
      *
      * Upload decision:
-     * 1. If the current buffer has enough remaining space, append at {@link currentOffset}.
-     * 2. Otherwise, if the buffer is large enough, rotate() and write from offset 0.
-     * 3. If the buffer is still too small for this upload, grow the ring and write from 0.
+     * 1. Align the current write offset to {@link alignment}.
+     * 2. If the current buffer has enough remaining space, append at the aligned offset.
+     * 3. Otherwise, if the buffer is large enough, rotate() and write from offset 0.
+     * 4. If the buffer is still too small for this upload, grow the ring and write from 0.
      *
      * @param data The data to upload. Its remaining() bytes will be copied.
+     * @param alignment Byte alignment for the returned slice offset.
      * @returns The uploaded {@link GpuBufferSlice}. Its lifetime is tied to the underlying ring buffer.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L88 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:88}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt#L102 | src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt:102}
      */
     upload(data: ByteBuffer, alignment: number): GpuBufferSlice;
 }

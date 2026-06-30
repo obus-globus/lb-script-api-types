@@ -4,6 +4,13 @@ import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce
 import type { ModuleAutoCrafter$OnFull } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoCrafter$OnFull.d.ts'
 import type { ModuleAutoCrafter$RecipeBookMenuType } from '../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoCrafter$RecipeBookMenuType.d.ts'
 import type { Item } from '../../../../../../../net/minecraft/world/item/Item.d.ts'
+/**
+ * AutoCrafter module
+ *
+ * Automatically crafts items using the Recipe Book.
+ *
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoCrafter.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleAutoCrafter.kt:46}
+ */
 export class ModuleAutoCrafter extends ClientModule {
     static INSTANCE: ModuleAutoCrafter;
     // private allowedContainers: ModuleAutoCrafter$RecipeBookMenuType[];

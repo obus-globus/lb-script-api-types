@@ -4,7 +4,7 @@ import type { Task } from '../../../../../net/ccbluex/liquidbounce/integration/t
 /**
  * Manages asynchronous tasks and their progress
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:28}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:31}
  */
 export class TaskManager extends Object {
     constructor(scope: CoroutineScope)
@@ -15,31 +15,31 @@ export class TaskManager extends Object {
     /**
      * Cancels a task
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:94}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:97}
      */
     cancel(taskName: string): void;
     /**
      * Marks a task as completed. This will also mark all subtasks as completed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:75}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:78}
      */
     complete(taskName: string): void;
     /**
      * Creates a new task
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:47}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:50}
      */
     createTask(name: string): Task;
     /**
      * Gets all active tasks
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L110 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:110}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:113}
      */
     getActiveTasks(): Task[];
     /**
      * Launches a task within the task manager's scope
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/TaskManager.kt:59}
      */
     launch<T extends unknown>(taskName: string, action: (param0: Task) => T): Task;
 }

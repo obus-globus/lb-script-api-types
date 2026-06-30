@@ -20,7 +20,7 @@ import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts
  * shown immediately when account switches, but we can reduce the stress
  * on the API and the connection of the user.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:49}
  */
 export class CosmeticService extends ValueGroup implements EventListener {
     static INSTANCE: CosmeticService;
@@ -44,7 +44,7 @@ export class CosmeticService extends ValueGroup implements EventListener {
      * and then call out {@link done}.
      * It will only refresh when the REFRESH_DELAY has passed or when {@link force} is true.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:66}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/features/cosmetic/CosmeticService.kt:71}
      */
     refreshCarriers(force: boolean, done: () => void): void;
     // private transferTemporaryOwnership(uuid: UUID): void;

@@ -17,9 +17,9 @@ import type { CefBrowser as CefBrowser_2 } from '../../../../../../../org/cef/br
  *
  * @see <a href="https://github.com/CCBlueX/java-cef/">JCEF</a>
  * @see <a href="https://github.com/CCBlueX/mcef/">MCEF</a>
- * @author Izuna <izuna.seikatsu@ccbluex.net>
+ * @see @author Izuna <izuna.seikatsu@ccbluex.net>
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt:53}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt:64}
  */
 export class CefBrowserBackend extends Object implements EventListener, BrowserBackend {
     constructor()
@@ -38,7 +38,7 @@ export class CefBrowserBackend extends Object implements EventListener, BrowserB
      *   process attached to the JCEF PID is still running or not. If not, we could kill the JCEF process
      *   and clean up the cache directory.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt:122}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt#L129 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/cef/CefBrowserBackend.kt:129}
      */
     cleanup(): void;
     createBrowser(url: string, position: BrowserViewport, settings: BrowserSettings, priority: number, inputAcceptor: InputAcceptor | null): CefBrowser;

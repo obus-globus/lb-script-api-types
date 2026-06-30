@@ -7,21 +7,6 @@ import type { ChargedProjectiles } from '../../../../../../net/minecraft/world/i
 export class HeldItemTrajectoryResolver extends Object {
     static INSTANCE: HeldItemTrajectoryResolver;
     static resolveHeldItemPrimaryShot(player: Player, stack: ItemStack, alwaysShowBow: boolean): TrajectoryDescriptor;
-    /**
-     * Resolves one or more rendered trajectory shots for held items.
-     *
-     * Crossbow behavior mirrors vanilla projectile loading/spread semantics:
-     *
-     * @see net.minecraft.core.component.DataComponents.CHARGED_PROJECTILES
-     * @see net.minecraft.world.item.component.ChargedProjectiles.items
-     * @see net.minecraft.world.item.ProjectileWeaponItem.draw
-     * @see net.minecraft.world.item.ProjectileWeaponItem.shoot
-     * @see net.minecraft.world.item.enchantment.EnchantmentHelper.processProjectileCount
-     * @see net.minecraft.world.item.enchantment.EnchantmentHelper.processProjectileSpread
-     * @see net.minecraft.world.item.CrossbowItem.createProjectile
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt:42}
-     */
     static resolveHeldItemShots(player: Player, stack: ItemStack, alwaysShowBow: boolean, includeMultiShot: boolean): TrajectoryShotDescriptor[];
     // private getShotYawOffsets(shotCount: number): number[];
     // private isCrossbowFirework(chargedProjectiles: ChargedProjectiles | null): boolean;

@@ -8,32 +8,15 @@ import type { DynamicTexture } from '../../../../../../../net/minecraft/client/r
 export class ModuleParticles$BuiltinParticle extends Enum<ModuleParticles$BuiltinParticle> implements Tagged {
     static CROWN: ModuleParticles$BuiltinParticle;
     static Companion: Tagged$Companion;
-    /**
-     * Original: https://www.svgrepo.com/svg/487288/dollar?edit=true
-     * Modified: @sqlerrorthing
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L154 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:154}
-     */
     static DOLLAR: ModuleParticles$BuiltinParticle;
     static HEART: ModuleParticles$BuiltinParticle;
     static LIGHTNING: ModuleParticles$BuiltinParticle;
     static LINE: ModuleParticles$BuiltinParticle;
-    /**
-     * Original: IDK (first: https://github.com/CCBlueX/LiquidBounce/pull/4976)
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L143 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:143}
-     */
     static ORBIZ: ModuleParticles$BuiltinParticle;
     static POINT: ModuleParticles$BuiltinParticle;
     static RHOMBUS: ModuleParticles$BuiltinParticle;
     static SNOWFLAKE: ModuleParticles$BuiltinParticle;
     static SPARK: ModuleParticles$BuiltinParticle;
-    /**
-     * Original: https://www.svgrepo.com/svg/528677/stars-minimalistic
-     * Modified: @sqlerrorthing
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt#L148 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleParticles.kt:148}
-     */
     static STAR: ModuleParticles$BuiltinParticle;
     static getEntries(): ModuleParticles$BuiltinParticle[];
     static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };

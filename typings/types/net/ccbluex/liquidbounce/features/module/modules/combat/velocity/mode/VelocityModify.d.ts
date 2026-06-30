@@ -3,11 +3,6 @@ import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbou
 import type { PacketEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/PacketEvent.d.ts'
 import type { VelocityMode } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityMode.d.ts'
 import type { VelocityModify$VelocityTriggerFilter } from '../../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityModify$VelocityTriggerFilter.d.ts'
-/**
- * Basic velocity which should bypass most servers with common anti-cheats like NCP.
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityModify.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityModify.kt:32}
- */
 export class VelocityModify extends VelocityMode {
     static Companion: Tagged$Companion;
     static INSTANCE: VelocityModify;

@@ -5,11 +5,6 @@ import type { ClosedRange } from '../../../../../kotlin/ranges/ClosedRange.d.ts'
 import type { RangedValue$Companion } from '../../../../../net/ccbluex/liquidbounce/config/types/RangedValue$Companion.d.ts'
 import type { Value } from '../../../../../net/ccbluex/liquidbounce/config/types/Value.d.ts'
 import type { ValueType } from '../../../../../net/ccbluex/liquidbounce/config/types/ValueType.d.ts'
-/**
- * Ranged value adds support for closed ranges
- *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/config/types/RangedValue.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/RangedValue.kt:26}
- */
 export class RangedValue<T extends unknown> extends Value<T> {
     static Companion: RangedValue$Companion;
     static squared(paramarg0: RangedValue<ClosedFloatingPointRange<number>>): ReadOnlyProperty<Object, ClosedFloatingPointRange<number>>;

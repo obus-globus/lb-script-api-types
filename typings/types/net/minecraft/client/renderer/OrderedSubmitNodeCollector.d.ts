@@ -4,6 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Mesh } from '../../../../net/fabricmc/fabric/api/client/renderer/v1/mesh/Mesh.d.ts'
 import type { MeshView } from '../../../../net/fabricmc/fabric/api/client/renderer/v1/mesh/MeshView.d.ts'
 import type { FabricOrderedSubmitNodeCollector } from '../../../../net/fabricmc/fabric/api/client/renderer/v1/render/FabricOrderedSubmitNodeCollector.d.ts'
+import type { FabricOrderedSubmitNodeCollector as FabricOrderedSubmitNodeCollector_2 } from '../../../../net/fabricmc/fabric/api/client/rendering/v1/FabricOrderedSubmitNodeCollector.d.ts'
 import type { OrderedSubmitNodeCollectorMixin } from '../../../../net/fabricmc/fabric/mixin/client/renderer/submit/OrderedSubmitNodeCollectorMixin.d.ts'
 import type { Font$DisplayMode } from '../../../../net/minecraft/client/gui/Font$DisplayMode.d.ts'
 import type { Model } from '../../../../net/minecraft/client/model/Model.d.ts'
@@ -34,7 +35,7 @@ import type { ItemDisplayContext } from '../../../../net/minecraft/world/item/It
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 import type { Quaternionf } from '../../../../org/joml/Quaternionf.d.ts'
-export interface OrderedSubmitNodeCollector extends Object, FabricOrderedSubmitNodeCollector, OrderedSubmitNodeCollectorMixin {
+export interface OrderedSubmitNodeCollector extends Object, FabricOrderedSubmitNodeCollector, FabricOrderedSubmitNodeCollector_2, OrderedSubmitNodeCollectorMixin {
     submitBlockModel(arg0: PoseStack, arg1: (param0: ChunkSectionLayer) => RenderType, arg2: boolean, arg3: BlockStateModelPart[], arg4: Mesh, arg5: number[], arg6: number, arg7: number, arg8: number): void;
     submitBlockModel(poseStack: PoseStack, renderType: RenderType, parts: BlockStateModelPart[], tintLayers: number[], lightCoords: number, overlayCoords: number, outlineColor: number): void;
     submitBreakingBlockModel(arg0: PoseStack, arg1: BlockStateModelPart[], arg2: Mesh, arg3: number): void;

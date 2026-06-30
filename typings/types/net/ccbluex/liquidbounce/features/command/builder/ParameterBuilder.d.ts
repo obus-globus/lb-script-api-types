@@ -7,6 +7,7 @@ import type { ClientModule } from '../../../../../../net/ccbluex/liquidbounce/fe
 export class ParameterBuilder<T extends unknown> extends Object {
     static BOOLEAN_VALIDATOR: Parameter$Verificator<boolean>;
     static Companion: ParameterBuilder$Companion;
+    static FLOAT_VALIDATOR: Parameter$Verificator<number>;
     static INTEGER_VALIDATOR: Parameter$Verificator<number>;
     static MODULE_VALIDATOR: Parameter$Verificator<ClientModule>;
     static NON_NEGATIVE_INTEGER_VALIDATOR: Parameter$Verificator<number>;
@@ -14,8 +15,8 @@ export class ParameterBuilder<T extends unknown> extends Object {
     static POSITIVE_INTEGER_VALIDATOR: Parameter$Verificator<number>;
     static STRING_VALIDATOR: Parameter$Verificator<string>;
     static begin(name: string): ParameterBuilder<Object>;
-    static floatRange(paramarg0: number, paramarg1: number): Parameter$Verificator<number>;
-    static intRange(paramarg0: number, paramarg1: number): Parameter$Verificator<number>;
+    static floatRange(min: number, max: number): Parameter$Verificator<number>;
+    static intRange(min: number, max: number): Parameter$Verificator<number>;
     private constructor(name: string)
     // private autocompletionHandler: AutoCompletionProvider | null;
     // private default: T | null;
@@ -30,7 +31,7 @@ export class ParameterBuilder<T extends unknown> extends Object {
      * meaning that typing the beginning like `diam` (without the prefix `minecraft:`)
      * will be enough to match strings such as `minecraft:diamond`, `minecraft:diamond_axe`, etc.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt#L106 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt:106}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt#L153 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt:153}
      */
     autocompletedFrom(ignoreCase: boolean, minecraftPlaceholders: boolean, placeholdersProvider: () => string[] | null): ParameterBuilder<T>;
     autocompletedWith(autocompletionHandler: AutoCompletionProvider): ParameterBuilder<T>;
@@ -44,7 +45,7 @@ export class ParameterBuilder<T extends unknown> extends Object {
      *
      * Only allowed at the end.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt:87}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt#L134 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/builder/ParameterBuilder.kt:134}
      */
     vararg(): ParameterBuilder<T>;
     verifiedBy(verifier: Parameter$Verificator<T>): ParameterBuilder<T>;

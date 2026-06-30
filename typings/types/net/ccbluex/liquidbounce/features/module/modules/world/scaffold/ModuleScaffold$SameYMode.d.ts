@@ -6,25 +6,9 @@ import type { Tagged$Companion } from '../../../../../../../../net/ccbluex/liqui
 import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockPos.d.ts'
 export class ModuleScaffold$SameYMode extends Enum<ModuleScaffold$SameYMode> implements Tagged {
     static Companion: Tagged$Companion;
-    /**
-     * Places blocks at the same Y level as the player, but only if the player is not falling
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt#L157 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt:157}
-     */
     static FALLING: ModuleScaffold$SameYMode;
-    /**
-     * Similar to FALLING, but only when a certain velocity is triggered and after
-     * 2 jumps
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt:162}
-     */
     static HYPIXEL: ModuleScaffold$SameYMode;
     static OFF: ModuleScaffold$SameYMode;
-    /**
-     * Places blocks at the same Y level as the player
-     *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/5f1d924995c7360e0ec79e16298d37205eea4da3/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/ModuleScaffold.kt:152}
-     */
     static ON: ModuleScaffold$SameYMode;
     static getEntries(): ModuleScaffold$SameYMode[];
     static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };

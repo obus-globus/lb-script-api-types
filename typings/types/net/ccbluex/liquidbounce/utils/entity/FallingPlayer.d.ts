@@ -18,7 +18,10 @@ export class FallingPlayer extends Object {
     y: number;
     // private yRot: number;
     z: number;
+    // private calculateElytraTick(rotationVec: Vec3): void;
     // private calculateForTick(rotationVec: Vec3): void;
+    // private calculateFreeFallTick(): void;
     findCollision(ticks: number): FallingPlayer$CollisionResult | null;
     // private hasStatusEffect(effect: Holder<MobEffect>): boolean;
+    // private playerMovementInput(): Vec3;
 }
