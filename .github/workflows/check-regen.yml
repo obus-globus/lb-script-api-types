@@ -26,7 +26,7 @@ on:
 
 permissions:
   contents: write      # push main + tags, create releases
-  id-token: write      # OIDC npm trusted publishing on the auto-release path
+  actions: write       # dispatch npm-publish.yml on the auto-release path
 
 concurrency:
   group: check-regen
@@ -230,41 +230,34 @@ jobs:
             echo "- **auto-release: $AUTO**"
           } >> "$GITHUB_STEP_SUMMARY"
 
-      # 6a. Clean + enabled -> merge to main, bump iteration, tag, release, and
-      #     publish to npm via OIDC trusted publishing (no token).
-      - name: Auto-merge + release + publish
+      # 6a. Clean + enabled -> merge to main, bump iteration, tag, create the
+      #     release, then dispatch npm-publish.yml (the single OIDC trusted
+      #     publisher) to publish. workflow_dispatch is the documented exception
+      #     to "GITHUB_TOKEN events don't trigger workflows", so the dispatch
+      #     actually fires; a token-created *release* would NOT, hence the dispatch.
+      - name: Auto-merge + release (then dispatch publish)
         if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          npm install -g npm@latest >/dev/null 2>&1   # OIDC trusted publishing needs npm >= 11.5.1
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name  "obus-globus"
           git config user.email "254700516+obus-globus@users.noreply.github.com"
-          # Bump the iteration in the working tree (not committed yet).
           (cd typings && npm version --no-git-tag-version patch)
           VER="$(node -p "require('./typings/package.json').version")"
-          # PUBLISH FIRST (OIDC trusted publishing — requires a trusted publisher
-          # for THIS workflow on npmjs.com; a token-created release can't trigger
-          # npm-publish.yml so we publish inline). If this fails, main is left
-          # untouched and the next run retries cleanly.
-          ( cd typings
-            npm publish
-            npm dist-tag add "@wunk/lb-script-api-types@$VER" \
-              "lb-$(node -p "require('./package.json').version.split('.').slice(0,2).join('.')")" || true
-          )
-          # Only after a successful publish: record it on main (commit + tag + release).
           git add typings tools/regen-types.sh tools/kdoc-extractor
           git commit -m "regen+release: v$VER — LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})
 
           Automated clean regen against ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}
-          (gate pass, canary ok, output sanity ok, MC unchanged) — auto-published v$VER."
+          (gate pass, canary ok, output sanity ok, MC unchanged) — auto-releasing v$VER."
           git tag -a "v$VER" -m "v$VER" HEAD
           git push origin HEAD:main "v$VER"
           LB_BLOCK="$(node -p "JSON.stringify(require('./typings/package.json').liquidbounce, null, 2)")"
-          gh release create "v$VER" --title "v$VER" --notes "$(printf 'Automated types build %s (LiquidBounce %s / MC %s), published to npm via OIDC.\n\nProvenance:\n```json\n%s\n```' "$VER" "${{ steps.lb.outputs.ver }}" "${{ steps.lb.outputs.mc }}" "$LB_BLOCK")" || true
-          echo "✅ Auto-published + released **v$VER**." >> "$GITHUB_STEP_SUMMARY"
+          gh release create "v$VER" --title "v$VER" --notes "$(printf 'Automated types build %s (LiquidBounce %s / MC %s).\n\nProvenance:\n```json\n%s\n```' "$VER" "${{ steps.lb.outputs.ver }}" "${{ steps.lb.outputs.mc }}" "$LB_BLOCK")"
+          # Publish via the single trusted-publisher workflow (OIDC, no token).
+          gh workflow run npm-publish.yml --ref main -f dry_run=false
+          echo "✅ Auto-released **v$VER** on main; dispatched npm-publish.yml to publish." >> "$GITHUB_STEP_SUMMARY"
 
       # 6b. Not clean / not enabled -> push a per-build branch for human review.
       - name: Push review branch
