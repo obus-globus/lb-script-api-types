@@ -21,6 +21,9 @@ on:
 
 permissions:
   contents: read
+  id-token: write   # OIDC: lets npm trusted publishing authenticate this workflow
+                    # (no long-lived NPM_TOKEN). Configure the trusted publisher on
+                    # npmjs.com for @wunk/lb-script-api-types -> this repo + workflow.
 
 jobs:
   publish:
@@ -33,6 +36,10 @@ jobs:
           node-version: 22
           registry-url: https://registry.npmjs.org
           scope: "@wunk"
+
+      # Trusted publishing (OIDC) requires npm >= 11.5.1; node 22 ships npm 10.x.
+      - name: Upgrade npm for OIDC trusted publishing
+        run: npm install -g npm@latest && npm --version
 
       - name: Resolve name + version
         id: pkg
@@ -61,29 +68,28 @@ jobs:
           else
             echo "published=false" >> "$GITHUB_OUTPUT"
           fi
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
+        # Authenticated via OIDC trusted publishing (no token) — needs the
+        # id-token: write permission above + a trusted publisher configured on
+        # npmjs.com. npm also attaches build provenance automatically.
         if: >-
           steps.exists.outputs.published == 'false' &&
           (github.event_name == 'release' || inputs.dry_run == false)
         working-directory: typings
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Point lb-<minor> dist-tag at this version
-        # Runs whenever this is a real (non-dry) release: after a fresh publish
-        # OR when the version was already published (so a missing/stale dist-tag
-        # can be repaired by re-running). `dist-tag add` is an idempotent upsert.
-        # The implicit success() means it's skipped if the Publish step failed.
+        # Best-effort: `dist-tag add` is a separate registry call that may not
+        # reuse the publish step's short-lived OIDC credential. Non-fatal — the
+        # publish itself is what matters; if this is skipped/fails, set it with
+        # `npm dist-tag add <pkg>@<ver> lb-<minor>` (a granular token / local
+        # `npm login`). `dist-tag add` is an idempotent upsert.
         if: >-
           github.event_name == 'release' || inputs.dry_run == false
+        continue-on-error: true
         working-directory: typings
         run: |
           npm dist-tag add "${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }}" \
             "${{ steps.pkg.outputs.lbtag }}"
           echo "::notice::${{ steps.pkg.outputs.lbtag }} -> ${{ steps.pkg.outputs.version }}"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
