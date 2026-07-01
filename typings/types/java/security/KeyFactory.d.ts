@@ -12,7 +12,6 @@ export class KeyFactory extends Object {
     static getInstance(paramarg0: string, paramarg1: string): KeyFactory;
     static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyFactory;
     constructor(arg0: KeyFactorySpi, arg1: { [key: string]: any }, arg2: string)
-    private constructor(arg0: string)
     readonly algorithm: string;
     // private lock: Object;
     readonly provider: { [key: string]: any };

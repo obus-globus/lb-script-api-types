@@ -16,7 +16,6 @@ export class RandomUtils extends Object {
     static secure(): RandomUtils;
     static secureStrong(): RandomUtils;
     constructor()
-    private constructor(arg0: () => Random)
     // private random: () => Random;
     random(): Random;
     randomBoolean(): boolean;

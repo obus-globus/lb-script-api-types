@@ -1,4 +1,3 @@
-import type { ZipArchiveEntry$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
@@ -15,8 +14,7 @@ export class ZipArchiveEntry$ExtraFieldParsingMode extends Enum<ZipArchiveEntry$
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ZipArchiveEntry$ExtraFieldParsingMode;
     static values(): (Object | null)[];
-    private constructor(arg2: ExtraFieldUtils$UnparseableExtraField)
-    constructor(arg2: ExtraFieldUtils$UnparseableExtraField, arg3: ZipArchiveEntry$1)
+    constructor(arg2: ExtraFieldUtils$UnparseableExtraField, arg3: ExtraFieldParsingBehavior)
     // private onUnparseableData: ExtraFieldUtils$UnparseableExtraField;
     createExtraField(arg0: ZipShort): ZipExtraField;
     fill(arg0: ZipExtraField, arg1: number[], arg2: number, arg3: number, arg4: boolean): ZipExtraField;

@@ -13,7 +13,6 @@ import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ClassNode extends LexicalContextExpression implements LexicalContextScope {
     static PRIVATE_CONSTRUCTOR_BINDING_NAME: TruffleString;
-    private constructor(classNode: ClassNode, ident: IdentNode, classHeritage: Expression, constructor: ClassElement, classElements: ClassElement[], classDecorators: Expression[])
     constructor(token: number, finish: number, ident: IdentNode, classHeritage: Expression, constructor: ClassElement, classElements: ClassElement[], classDecorators: Expression[], scope: Scope, staticElementCount: number, hasPrivateMethods: boolean, hasPrivateInstanceMethods: boolean, hasInstanceFieldsOrAccessors: boolean, hasClassElementDecorators: boolean)
     // private classDecorators: Expression[];
     readonly classElements: ClassElement[];

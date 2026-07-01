@@ -1,4 +1,3 @@
-import type { OutputStreamAppender$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { OutputStream } from '../../../../../../java/io/OutputStream.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
@@ -16,6 +15,5 @@ export class OutputStreamAppender extends AbstractOutputStreamAppender<OutputStr
     static createAppender(paramlayout: Layout<Serializable>, paramfilter: Filter, paramtarget: OutputStream, paramname: string, paramfollow: boolean, paramignore: boolean): OutputStreamAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: OutputStreamManager, arg4: boolean, arg5: Property[], arg6: OutputStreamAppender$1)
-    private constructor(name: string, layout: Layout<Serializable>, filter: Filter, manager: OutputStreamManager, ignoreExceptions: boolean, properties: Property[])
+    constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: OutputStreamManager, arg4: boolean, arg5: Property[], arg6: any)
 }

@@ -30,7 +30,6 @@ export class MeasureFormat extends UFormat {
     static getRangeFormat(paramarg0: ULocale, paramarg1: MeasureFormat$FormatWidth): string;
     constructor(arg0: ULocale, arg1: MeasureFormat$FormatWidth)
     constructor(arg0: ULocale, arg1: MeasureFormat$FormatWidth, arg2: NumberFormat, arg3: PluralRules)
-    private constructor(arg0: ULocale, arg1: MeasureFormat$FormatWidth, arg2: NumberFormat, arg3: PluralRules, arg4: MeasureFormat$NumericFormatters)
     // private formatWidth: MeasureFormat$FormatWidth;
     // private formatter1: MeasureFormat$NumberFormatterCacheEntry;
     // private formatter2: MeasureFormat$NumberFormatterCacheEntry;

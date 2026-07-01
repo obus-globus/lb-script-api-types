@@ -6,7 +6,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export abstract class MapMakerInternalMap$HashIterator<T extends unknown> extends Object implements Iterator<T> {
-    constructor(null_: Map<K, V>)
+    constructor(null_: Map<Object, Object>)
     // private currentSegment: MapMakerInternalMap$Segment<K, V, E, S>;
     // private currentTable: AtomicReferenceArray<E>;
     // private lastReturned: MapMakerInternalMap$WriteThroughEntry;

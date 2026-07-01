@@ -2,8 +2,8 @@ import type { ObjectListIterator } from '../../../../../../com/viaversion/viaver
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReferenceLinkedOpenHashSet$SetIterator extends Object implements ObjectListIterator<K> {
-    constructor(null_: K[])
-    constructor(null_: K[], arg1: K)
+    constructor(null_: Object[])
+    constructor(null_: Object[], arg1: Object)
     // private curr: number;
     // private index: number;
     // private next: number;

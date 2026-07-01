@@ -9,12 +9,10 @@ export class MerchantOffer extends Object {
     static CODEC: Codec<MerchantOffer>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, MerchantOffer>;
     static createFromStream(paraminput: RegistryFriendlyByteBuf): MerchantOffer;
-    private constructor(baseCostA: ItemCost, costB: Optional<ItemCost>, result: ItemStack, uses: number, maxUses: number, rewardExp: boolean, specialPriceDiff: number, demand: number, priceMultiplier: number, xp: number)
     constructor(baseCostA: ItemCost, costB: Optional<ItemCost>, result: ItemStack, maxUses: number, xp: number, priceMultiplier: number)
     constructor(baseCostA: ItemCost, costB: Optional<ItemCost>, result: ItemStack, uses: number, maxUses: number, xp: number, priceMultiplier: number)
     constructor(baseCostA: ItemCost, costB: Optional<ItemCost>, result: ItemStack, uses: number, maxUses: number, xp: number, priceMultiplier: number, demand: number)
     constructor(buy: ItemCost, result: ItemStack, maxUses: number, xp: number, priceMultiplier: number)
-    private constructor(offer: MerchantOffer)
     readonly baseCostA: ItemCost;
     readonly costB: Optional<ItemCost>;
     readonly demand: number;

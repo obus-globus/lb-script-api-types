@@ -11,7 +11,6 @@ export class ServerboundLockDifficultyPacket extends Object implements Packet<Se
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundLockDifficultyPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(locked: boolean)
-    private constructor(input: FriendlyByteBuf)
     readonly locked: boolean;
     handle(listener: ServerGamePacketListener): void;
     isLocked(): boolean;

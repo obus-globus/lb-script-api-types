@@ -91,7 +91,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-        "line": 241
+        "line": 243
       }
     },
     "net.ccbluex.liquidbounce.utils.sorting.compareByCondition": {

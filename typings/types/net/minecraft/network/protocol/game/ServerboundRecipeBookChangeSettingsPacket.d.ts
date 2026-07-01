@@ -11,7 +11,6 @@ import type { RecipeBookType } from '../../../../../net/minecraft/world/inventor
 export class ServerboundRecipeBookChangeSettingsPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundRecipeBookChangeSettingsPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(bookType: RecipeBookType, isOpen: boolean, isFiltering: boolean)
     readonly bookType: RecipeBookType;
     // private isFiltering: boolean;

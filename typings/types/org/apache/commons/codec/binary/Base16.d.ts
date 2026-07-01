@@ -1,4 +1,3 @@
-import type { Base16$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CodecPolicy } from '../../../../../org/apache/commons/codec/CodecPolicy.d.ts'
 import type { Base16$Builder } from '../../../../../org/apache/commons/codec/binary/Base16$Builder.d.ts'
@@ -12,8 +11,7 @@ export class Base16 extends BaseNCodec {
     constructor()
     constructor(arg0: boolean)
     constructor(arg0: boolean, arg1: CodecPolicy)
-    private constructor(arg0: Base16$Builder)
-    constructor(arg0: Base16$Builder, arg1: Base16$1)
+    constructor(arg0: Base16$Builder, arg1: any)
     decode(arg0: Object): Object;
     decode(arg0: number[]): number[];
     decode(arg0: number[], arg1: number, arg2: number, arg3: BaseNCodec$Context): void;

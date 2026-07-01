@@ -30,7 +30,6 @@ export class ClientboundGameEventPacket extends Object implements Packet<ClientG
     static THUNDER_LEVEL_CHANGE: ClientboundGameEventPacket$Type;
     static WIN_GAME: ClientboundGameEventPacket$Type;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(event: ClientboundGameEventPacket$Type, param: number)
     readonly event: ClientboundGameEventPacket$Type;
     readonly param: number;

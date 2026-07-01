@@ -15,7 +15,6 @@ export class WhileLoopStatement extends ConditionLoopStatement {
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: IterationConditionInitializer, arg1: Statement)
     constructor(arg0: Expression, arg1: Statement)
-    private constructor(arg0: Statement, arg1: Expression, arg2: IterationConditionInitializer)
     iterationConditionInitializer: IterationConditionInitializer;
     clone(): WhileLoopStatement;
     cloneInto(arg0: Root): WhileLoopStatement;

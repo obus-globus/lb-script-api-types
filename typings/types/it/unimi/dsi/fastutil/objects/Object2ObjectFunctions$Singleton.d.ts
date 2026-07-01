@@ -7,7 +7,6 @@ export class Object2ObjectFunctions$Singleton<K extends unknown, V extends unkno
     // private key: K;
     // private value: V;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     get(arg0: Object): V;
     getOrDefault(arg0: Object, arg1: V): V;

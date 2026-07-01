@@ -16,7 +16,6 @@ export abstract class Recycler<T extends unknown> extends Object {
     constructor(arg0: number, arg1: number, arg2: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: Thread, arg4: boolean)
     constructor(arg0: number, arg1: number, arg2: number, arg3: boolean)
-    private constructor(arg0: number, arg1: number, arg2: number, arg3: boolean, arg4: Thread, arg5: boolean)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number)
     // private localPool: Recycler$LocalPool<Object, T>;

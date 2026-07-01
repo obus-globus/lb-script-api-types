@@ -8,7 +8,6 @@ export class UnicodeLocaleExtension extends Extension {
     static isSingletonChar(paramarg0: string): boolean;
     static isType(paramarg0: string): boolean;
     static isTypeSubtag(paramarg0: string): boolean;
-    private constructor()
     constructor(arg0: string[], arg1: { [key: string]: string })
     // private _attributes: string[];
     // private _keywords: { [key: string]: string };

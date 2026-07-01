@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ASTWalker<R extends unknown> extends ASTBaseVisitor<R> {
     static walk(paramarg0: ASTListener, paramarg1: ASTNode): Object | null;
     constructor()
-    private constructor(arg0: ASTListener)
     // private listener: ASTListener;
     enterContext(arg0: ASTNode): void;
     enterNode(arg0: ASTListener, arg1: InnerASTNode): void;

@@ -6,7 +6,6 @@ export class Double2ShortFunctions$EmptyFunction extends AbstractDouble2ShortFun
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;

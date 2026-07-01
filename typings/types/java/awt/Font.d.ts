@@ -47,13 +47,8 @@ export class Font extends Object implements Serializable {
     static getFont(paramarg0: Map<AttributedCharacterIterator$Attribute, Object>): Font;
     static textRequiresLayout(paramarg0: string[], paramarg1: number, paramarg2: number): boolean;
     constructor(arg0: Font)
-    private constructor(arg0: File, arg1: number, arg2: boolean)
-    private constructor(arg0: string, arg1: number, arg2: number)
-    private constructor(arg0: string, arg1: number, arg2: number, arg3: boolean, arg4: Font2DHandle)
     constructor(arg0: string, arg1: number, arg2: number)
     constructor(arg0: Map<AttributedCharacterIterator$Attribute, Object | null>)
-    private constructor(arg0: AttributeValues, arg1: string, arg2: number, arg3: boolean, arg4: Font2DHandle)
-    private constructor(arg0: Font2D)
     // private createdFont: boolean;
     // private fRequestedAttributes: Map<Object, Object>;
     // private flmref: SoftReference<FontLineMetrics>;

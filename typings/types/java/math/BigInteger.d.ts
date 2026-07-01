@@ -13,18 +13,13 @@ export class BigInteger extends Number implements Comparable<BigInteger> {
     static probablePrime(paramarg0: number, paramarg1: Random): BigInteger;
     static valueOf(paramarg0: number): BigInteger;
     constructor(arg0: number[])
-    private constructor(arg0: number[], arg1: number)
     constructor(arg0: number[], arg1: number, arg2: number)
     constructor(arg0: string[], arg1: number, arg2: number)
     constructor(arg0: number, arg1: Random)
     constructor(arg0: number, arg1: number[])
     constructor(arg0: number, arg1: number[], arg2: number, arg3: number)
     constructor(arg0: number, arg1: number, arg2: Random)
-    private constructor(arg0: number, arg1: number[])
-    private constructor(arg0: number[])
     constructor(arg0: number[], arg1: number)
-    private constructor(arg0: number)
-    private constructor(arg0: number, arg1: number)
     constructor(arg0: string)
     constructor(arg0: string, arg1: number)
     // private bitCountPlusOne: number;

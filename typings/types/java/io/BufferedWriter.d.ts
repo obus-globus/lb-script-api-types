@@ -3,7 +3,6 @@ export class BufferedWriter extends Writer {
     static nullWriter(): Writer;
     constructor(arg0: Writer)
     constructor(arg0: Writer, arg1: number)
-    private constructor(arg0: Writer, arg1: number, arg2: number)
     // private cb: string[];
     // private maxChars: number;
     // private nChars: number;

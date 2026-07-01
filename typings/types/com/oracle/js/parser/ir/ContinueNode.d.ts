@@ -5,7 +5,6 @@ import type { NodeVisitor } from '../../../../../com/oracle/js/parser/ir/visitor
 import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/ir/visitor/TranslatorNodeVisitor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ContinueNode extends JumpStatement {
-    private constructor(continueNode: ContinueNode)
     constructor(lineNumber: number, token: number, finish: number, labelName: string)
     accept(visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;

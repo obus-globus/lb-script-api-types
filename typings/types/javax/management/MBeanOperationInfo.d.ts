@@ -17,7 +17,6 @@ export class MBeanOperationInfo extends MBeanFeatureInfo implements Cloneable {
     readonly signature: MBeanParameterInfo[];
     // private type: string;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     // private fastGetSignature(): MBeanParameterInfo[];
     getImpact(): number;

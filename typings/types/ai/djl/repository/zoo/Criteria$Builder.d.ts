@@ -11,7 +11,6 @@ import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Criteria$Builder<I extends unknown, O extends unknown> extends Object {
     constructor()
-    private constructor(arg0: Class<I>, arg1: Class<O>, arg2: Criteria$Builder<Object, Object>)
     // private application: Application;
     // private arguments: { [key: string]: Object };
     // private artifactId: string;

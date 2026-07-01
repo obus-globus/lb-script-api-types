@@ -10,7 +10,6 @@ export class ObjectRBTreeSet$Entry<K extends unknown> extends Object implements 
     black(): boolean;
     black(arg0: boolean): void;
     clone(): ObjectRBTreeSet$Entry<K>;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): ObjectRBTreeSet$Entry<K>;

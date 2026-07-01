@@ -137,6 +137,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.common.ShapeFlag": typeof import("../types/net/ccbluex/liquidbounce/common/ShapeFlag").ShapeFlag;
     "net.ccbluex.liquidbounce.common.StorageEspOutlineContext": typeof import("../types/net/ccbluex/liquidbounce/common/StorageEspOutlineContext").StorageEspOutlineContext;
     "net.ccbluex.liquidbounce.common.TweakedMethods": typeof import("../types/net/ccbluex/liquidbounce/common/TweakedMethods").TweakedMethods;
+    "net.ccbluex.liquidbounce.common.XRayBlockRenderContext": typeof import("../types/net/ccbluex/liquidbounce/common/XRayBlockRenderContext").XRayBlockRenderContext;
     "net.ccbluex.liquidbounce.config.ConfigSystem": typeof import("../types/net/ccbluex/liquidbounce/config/ConfigSystem").ConfigSystem;
     "net.ccbluex.liquidbounce.config.autoconfig.AutoConfig": typeof import("../types/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig").AutoConfig;
     "net.ccbluex.liquidbounce.config.autoconfig.AutoConfigMetadata": typeof import("../types/net/ccbluex/liquidbounce/config/autoconfig/AutoConfigMetadata").AutoConfigMetadata;
@@ -1589,7 +1590,6 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleStorageESP$StorageScanner": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP$StorageScanner").ModuleStorageESP$StorageScanner;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer").ModuleTNTTimer;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer$ShowTimer": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer$ShowTimer").ModuleTNTTimer$ShowTimer;
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer$ShowTimer$TimeUnit": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer$ShowTimer$TimeUnit").ModuleTNTTimer$ShowTimer$TimeUnit;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTracers": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTracers").ModuleTracers;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTrueSight": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTrueSight").ModuleTrueSight;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTrueSight$Sight": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTrueSight$Sight").ModuleTrueSight$Sight;
@@ -1597,6 +1597,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay").ModuleXRay;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleZoom": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleZoom").ModuleZoom;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleZoom$Scroll": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleZoom$Scroll").ModuleZoom$Scroll;
+    "net.ccbluex.liquidbounce.features.module.modules.render.TimeUnit": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/TimeUnit").TimeUnit;
     "net.ccbluex.liquidbounce.features.module.modules.render.cameraclip.ModuleCameraClip": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/cameraclip/ModuleCameraClip").ModuleCameraClip;
     "net.ccbluex.liquidbounce.features.module.modules.render.cameraclip.ModuleCameraClip$Animation": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/cameraclip/ModuleCameraClip$Animation").ModuleCameraClip$Animation;
     "net.ccbluex.liquidbounce.features.module.modules.render.cameraclip.ModuleCameraClip$ScrollAdjust": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/cameraclip/ModuleCameraClip$ScrollAdjust").ModuleCameraClip$ScrollAdjust;
@@ -1669,7 +1670,6 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.ModuleTrajectories": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories").ModuleTrajectories;
     "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.ModuleTrajectories$Show": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories$Show").ModuleTrajectories$Show;
     "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.TrajectoryDetailedInfoRenderer": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer").TrajectoryDetailedInfoRenderer;
-    "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.TrajectoryDetailedInfoRenderer$DurationUnit": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer$DurationUnit").TrajectoryDetailedInfoRenderer$DurationUnit;
     "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.TrajectoryDetailedInfoRenderer$ShowAt": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer$ShowAt").TrajectoryDetailedInfoRenderer$ShowAt;
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleAirPlace": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAirPlace").ModuleAirPlace;
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleAirPlace$CustomRange": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAirPlace$CustomRange").ModuleAirPlace$CustomRange;
@@ -2120,8 +2120,12 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.utils.ColorUtils": typeof import("../types/net/ccbluex/liquidbounce/render/utils/ColorUtils").ColorUtils;
     "net.ccbluex.liquidbounce.render.utils.ColorUtilsKt": typeof import("../types/net/ccbluex/liquidbounce/render/utils/ColorUtilsKt").ColorUtilsKt;
     "net.ccbluex.liquidbounce.render.utils.DistanceFadeUniformValueGroup": typeof import("../types/net/ccbluex/liquidbounce/render/utils/DistanceFadeUniformValueGroup").DistanceFadeUniformValueGroup;
+    "net.ccbluex.liquidbounce.render.utils.LineStripAsLinesVertexView": typeof import("../types/net/ccbluex/liquidbounce/render/utils/LineStripAsLinesVertexView").LineStripAsLinesVertexView;
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList": typeof import("../types/net/ccbluex/liquidbounce/render/utils/MutableVertexList").MutableVertexList;
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/utils/MutableVertexList$Companion").MutableVertexList$Companion;
     "net.ccbluex.liquidbounce.render.utils.RenderingDebug": typeof import("../types/net/ccbluex/liquidbounce/render/utils/RenderingDebug").RenderingDebug;
     "net.ccbluex.liquidbounce.render.utils.UnitCircle": typeof import("../types/net/ccbluex/liquidbounce/render/utils/UnitCircle").UnitCircle;
+    "net.ccbluex.liquidbounce.render.utils.VertexListKt": typeof import("../types/net/ccbluex/liquidbounce/render/utils/VertexListKt").VertexListKt;
     "net.ccbluex.liquidbounce.script.DebugProtocol": typeof import("../types/net/ccbluex/liquidbounce/script/DebugProtocol").DebugProtocol;
     "net.ccbluex.liquidbounce.script.PolyglotExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/script/PolyglotExtensionsKt").PolyglotExtensionsKt;
     "net.ccbluex.liquidbounce.script.PolyglotScript": typeof import("../types/net/ccbluex/liquidbounce/script/PolyglotScript").PolyglotScript;

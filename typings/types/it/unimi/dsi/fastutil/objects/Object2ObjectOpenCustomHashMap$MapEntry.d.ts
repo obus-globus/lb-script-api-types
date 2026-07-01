@@ -11,8 +11,8 @@ export class Object2ObjectOpenCustomHashMap$MapEntry extends Object implements P
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
     static lexComparator(): (param0: Object) => boolean;
     static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
-    constructor(null_: Map<K, V>)
-    constructor(null_: Map<K, V>, arg1: number)
+    constructor(null_: Map<Object, Object>)
+    constructor(null_: Map<Object, Object>, arg1: number)
     // private index: number;
     equals(arg0: Object | null): boolean;
     first<K extends unknown>(): K;

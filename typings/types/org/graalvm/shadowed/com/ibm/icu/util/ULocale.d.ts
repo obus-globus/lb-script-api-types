@@ -95,7 +95,6 @@ export class ULocale extends Object implements Serializable, Comparable<ULocale>
     static toUnicodeLocaleKey(paramkeyword: string): string;
     static toUnicodeLocaleType(paramkeyword: string, paramvalue: string): string;
     constructor(localeID: string)
-    private constructor(localeID: string, locale: Locale)
     constructor(a: string, b: string)
     constructor(a: string, b: string, c: string)
     // private baseLocale: BaseLocale;

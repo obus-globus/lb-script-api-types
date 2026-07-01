@@ -24,7 +24,6 @@ export class TimeUnitFormat extends MeasureFormat implements Cloneable {
     constructor()
     constructor(arg0: ULocale)
     constructor(arg0: ULocale, arg1: number)
-    private constructor(arg0: ULocale, arg1: number, arg2: NumberFormat)
     constructor(arg0: Locale)
     constructor(arg0: Locale, arg1: number)
     // private format: NumberFormat;
@@ -34,7 +33,6 @@ export class TimeUnitFormat extends MeasureFormat implements Cloneable {
     // private style: number;
     // private timeUnitToCountToPatterns: Map<TimeUnit, { [key: string]: Object[] }>;
     clone(): TimeUnitFormat;
-    protected clone(): Object;
     getNumberFormat(): NumberFormat;
     getNumberFormatInternal(): NumberFormat;
     getNumberFormatter(): LocalizedNumberFormatter;

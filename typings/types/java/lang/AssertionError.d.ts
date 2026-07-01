@@ -10,6 +10,5 @@ export class AssertionError extends Error {
     constructor(arg0: number)
     constructor(arg0: number)
     constructor(arg0: number)
-    private constructor(arg0: string)
     constructor(arg0: string, arg1: Throwable)
 }

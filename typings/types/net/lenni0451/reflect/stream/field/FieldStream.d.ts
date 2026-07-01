@@ -10,7 +10,6 @@ import type { RStream } from '../../../../../net/lenni0451/reflect/stream/RStrea
 import type { FieldWrapper } from '../../../../../net/lenni0451/reflect/stream/field/FieldWrapper.d.ts'
 export class FieldStream extends Object {
     constructor(arg0: RStream, arg1: boolean)
-    private constructor(arg0: RStream, arg1: FieldWrapper[])
     // private fields: FieldWrapper[];
     // private parent: RStream;
     by(arg0: number): FieldWrapper;

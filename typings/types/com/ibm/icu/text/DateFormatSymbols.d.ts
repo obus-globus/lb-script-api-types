@@ -33,7 +33,6 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     constructor(arg0: Calendar, arg1: ULocale)
     constructor(arg0: Calendar, arg1: Locale)
     constructor(arg0: ULocale)
-    private constructor(arg0: ULocale, arg1: ICUResourceBundle, arg2: string)
     constructor(arg0: Class<Calendar>, arg1: ULocale)
     constructor(arg0: Class<Calendar>, arg1: Locale)
     constructor(arg0: Locale)
@@ -82,7 +81,6 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     // private wideDayPeriods: string[];
     readonly zoneStrings: string[][];
     clone(): DateFormatSymbols;
-    protected clone(): Object;
     // private duplicate(arg0: string[][]): string[][];
     // private duplicate(arg0: string[]): string[];
     equals(arg0: Object | null): boolean;

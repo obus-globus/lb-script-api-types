@@ -5,8 +5,6 @@ import type { RegexASTNode } from '../../../../../../../com/oracle/truffle/regex
 import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class LookBehindAssertion extends LookAroundAssertion {
-    private constructor(copy: LookBehindAssertion, ast: RegexAST)
-    private constructor(copy: LookBehindAssertion, ast: RegexAST, compilationBuffer: CompilationBuffer)
     constructor(negated: boolean)
     copy(ast: RegexAST): LookBehindAssertion;
     copyRecursive(ast: RegexAST, compilationBuffer: CompilationBuffer): LookBehindAssertion;

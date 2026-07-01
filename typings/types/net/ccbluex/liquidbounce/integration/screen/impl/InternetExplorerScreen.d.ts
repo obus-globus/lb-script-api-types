@@ -22,7 +22,6 @@ export class InternetExplorerScreen extends Screen {
     selectedIndex: number;
     readonly url: string;
     extractRenderState(context: GuiGraphicsExtractor, mouseX: number, mouseY: number, delta: number): void;
-    protected init(): void;
     init(width: number, height: number): void;
     isPauseScreen(): boolean;
     onClose(): void;

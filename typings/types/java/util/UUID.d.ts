@@ -5,7 +5,6 @@ export class UUID extends Object implements Serializable, Comparable<UUID> {
     static fromString(paramarg0: string): UUID;
     static nameUUIDFromBytes(paramarg0: number[]): UUID;
     static randomUUID(): UUID;
-    private constructor(arg0: number[])
     constructor(arg0: number, arg1: number)
     // private leastSigBits: number;
     // private mostSigBits: number;

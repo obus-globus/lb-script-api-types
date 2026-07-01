@@ -1,9 +1,7 @@
-import type { Blake3$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Blake3$ChunkState } from '../../../../../org/apache/commons/codec/digest/Blake3$ChunkState.d.ts'
 export class Blake3$EngineState extends Object {
-    private constructor(arg0: number[], arg1: number)
-    constructor(arg0: number[], arg1: number, arg2: Blake3$1)
+    constructor(arg0: number[], arg1: number, arg2: any)
     // private cvStack: number[][];
     // private flags: number;
     // private key: number[];

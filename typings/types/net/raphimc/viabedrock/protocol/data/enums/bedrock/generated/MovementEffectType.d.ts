@@ -3,6 +3,7 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class MovementEffectType extends Enum<MovementEffectType> {
     static DOLPHIN_BOOST: MovementEffectType;
+    static GEYSER_BOOST: MovementEffectType;
     static GLIDE_BOOST: MovementEffectType;
     static getByName(paramarg0: string): MovementEffectType;
     static getByName(paramarg0: string, paramarg1: MovementEffectType): MovementEffectType;
@@ -15,5 +16,5 @@ export class MovementEffectType extends Enum<MovementEffectType> {
     private constructor(arg2: MovementEffectType)
     readonly value: number;
     getValue(): number;
-    name(): "GLIDE_BOOST" | "DOLPHIN_BOOST";
+    name(): "GLIDE_BOOST" | "DOLPHIN_BOOST" | "GEYSER_BOOST";
 }

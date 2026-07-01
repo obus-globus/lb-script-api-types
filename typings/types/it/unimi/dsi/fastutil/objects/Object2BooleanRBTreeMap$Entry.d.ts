@@ -10,7 +10,6 @@ export class Object2BooleanRBTreeMap$Entry<K extends unknown> extends AbstractOb
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Object2BooleanRBTreeMap$Entry<K>;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Object2BooleanRBTreeMap$Entry<K>;

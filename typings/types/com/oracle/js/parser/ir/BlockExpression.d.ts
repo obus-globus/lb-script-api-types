@@ -7,7 +7,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BlockExpression extends Expression {
-    private constructor(classNode: BlockExpression, block: Block)
     constructor(token: number, finish: number, block: Block)
     readonly block: Block;
     accept(visitor: NodeVisitor<LexicalContext>): Node;

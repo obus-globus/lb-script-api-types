@@ -10,7 +10,6 @@ export class AdvancementProgress extends Object implements Comparable<Advancemen
     static CODEC: Codec<AdvancementProgress>;
     static fromNetwork(paraminput: FriendlyByteBuf): AdvancementProgress;
     constructor()
-    private constructor(criteria: { [key: string]: CriterionProgress })
     // private criteria: { [key: string]: CriterionProgress };
     // private requirements: AdvancementRequirements;
     compareTo(o: AdvancementProgress): number;

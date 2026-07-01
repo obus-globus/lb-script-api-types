@@ -4,11 +4,9 @@ import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { RemoteChatSession$Data } from '../../../../../net/minecraft/network/chat/RemoteChatSession$Data.d.ts'
-import type { ServerPlayer } from '../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { GameType } from '../../../../../net/minecraft/world/level/GameType.d.ts'
 export class ClientboundPlayerInfoUpdatePacket$Entry extends Record {
     constructor(profileId: UUID, profile: GameProfile, listed: boolean, latency: number, gameMode: GameType, displayName: Component, showHat: boolean, listOrder: number, chatSession: RemoteChatSession$Data)
-    private constructor(player: ServerPlayer)
     // private chatSession: RemoteChatSession$Data;
     // private displayName: Component;
     // private gameMode: GameType;

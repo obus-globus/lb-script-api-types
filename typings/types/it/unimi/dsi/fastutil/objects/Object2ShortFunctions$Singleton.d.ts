@@ -7,7 +7,6 @@ export class Object2ShortFunctions$Singleton<K extends unknown> extends Abstract
     // private key: K;
     // private value: number;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     getOrDefault(arg0: Object, arg1: number): number;
     getShort(arg0: Object): number;

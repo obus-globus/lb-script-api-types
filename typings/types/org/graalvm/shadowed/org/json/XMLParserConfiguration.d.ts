@@ -10,7 +10,6 @@ export class XMLParserConfiguration extends ParserConfiguration {
     constructor(keepStrings: boolean)
     constructor(keepStrings: boolean, cDataTagName: string)
     constructor(keepStrings: boolean, cDataTagName: string, convertNilAttributeToNull: boolean)
-    private constructor(keepStrings: boolean, cDataTagName: string, convertNilAttributeToNull: boolean, xsiTypeMap: { [key: string]: XMLXsiTypeConverter<Object> }, forceList: string[], maxNestingDepth: number, closeEmptyTag: boolean, keepNumberAsString: boolean, keepBooleanAsString: boolean)
     constructor(cDataTagName: string)
     readonly cDataTagName: string;
     readonly closeEmptyTag: boolean;

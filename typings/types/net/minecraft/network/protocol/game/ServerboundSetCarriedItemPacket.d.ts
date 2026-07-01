@@ -11,7 +11,6 @@ export class ServerboundSetCarriedItemPacket extends Object implements Packet<Se
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetCarriedItemPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(slot: number)
-    private constructor(input: FriendlyByteBuf)
     readonly slot: number;
     getSlot(): number;
     handle(listener: ServerGamePacketListener): void;

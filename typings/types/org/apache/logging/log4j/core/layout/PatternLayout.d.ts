@@ -1,4 +1,3 @@
-import type { PatternLayout$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
@@ -25,8 +24,7 @@ export class PatternLayout extends AbstractStringLayout {
     static createSerializer(paramconfiguration: Configuration, paramreplace: RegexReplacement, parampattern: string, paramdefaultPattern: string, parampatternSelector: PatternSelector, paramalwaysWriteExceptions: boolean, paramnoConsoleNoAnsi: boolean): AbstractStringLayout$Serializer;
     static newBuilder(): PatternLayout$Builder;
     static newSerializerBuilder(): PatternLayout$SerializerBuilder;
-    private constructor(config: Configuration, replace: RegexReplacement, eventPattern: string, patternSelector: PatternSelector, charset: Charset, alwaysWriteExceptions: boolean, disableAnsi: boolean, noConsoleNoAnsi: boolean, headerPattern: string, footerPattern: string)
-    constructor(arg0: Configuration, arg1: RegexReplacement, arg2: string, arg3: PatternSelector, arg4: Charset, arg5: boolean, arg6: boolean, arg7: boolean, arg8: string, arg9: string, arg10: PatternLayout$1)
+    constructor(arg0: Configuration, arg1: RegexReplacement, arg2: string, arg3: PatternSelector, arg4: Charset, arg5: boolean, arg6: boolean, arg7: boolean, arg8: string, arg9: string, arg10: any)
     readonly conversionPattern: string;
     readonly eventSerializer: AbstractStringLayout$Serializer;
     // private patternSelector: PatternSelector;

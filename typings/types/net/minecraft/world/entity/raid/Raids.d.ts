@@ -6,7 +6,6 @@ import type { ServerLevel } from '../../../../../net/minecraft/server/level/Serv
 import type { ServerPlayer } from '../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 import type { Raid } from '../../../../../net/minecraft/world/entity/raid/Raid.d.ts'
 import type { Raider } from '../../../../../net/minecraft/world/entity/raid/Raider.d.ts'
-import type { Raids$RaidWithId } from '../../../../../net/minecraft/world/entity/raid/Raids$RaidWithId.d.ts'
 import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos.d.ts'
 import type { SavedData } from '../../../../../net/minecraft/world/level/saveddata/SavedData.d.ts'
 import type { SavedDataType } from '../../../../../net/minecraft/world/level/saveddata/SavedDataType.d.ts'
@@ -16,7 +15,6 @@ export class Raids extends SavedData {
     static canJoinRaid(paramraider: Raider): boolean;
     static load(paramtag: CompoundTag): Raids;
     constructor()
-    private constructor(raids: Raids$RaidWithId[], nextId: number, tick: number)
     // private nextId: number;
     // private raidMap: { [key: string]: any };
     // private tick: number;

@@ -29,7 +29,6 @@ export abstract class AbstractJsonLexer extends Object {
     consumeNumericLiteral(): number;
     consumeNumericLiteralFully(): number;
     consumeString(): string;
-    protected consumeString(source: CharSequence, startPosition: number, current: number): string;
     consumeStringChunked(isLenient: boolean, consumeChunk: (param0: string) => void): void;
     consumeStringLenient(): string;
     consumeStringLenientNotNull(): string;

@@ -1,4 +1,3 @@
-import type { LocalChannel$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AbstractChannel$AbstractUnsafe } from '../../../../io/netty/channel/AbstractChannel$AbstractUnsafe.d.ts'
 import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise.d.ts'
 import type { IoEvent } from '../../../../io/netty/channel/IoEvent.d.ts'
@@ -10,8 +9,7 @@ import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { ClosedChannelException } from '../../../../java/nio/channels/ClosedChannelException.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class LocalChannel$LocalUnsafe extends AbstractChannel$AbstractUnsafe implements LocalIoHandle {
-    private constructor(null_: LocalChannel)
-    constructor(null_: LocalChannel, arg1: LocalChannel$1)
+    constructor(null_: LocalChannel, arg1: () => void)
     // private shutdownHook: () => void;
     close(): void;
     close(arg0: ChannelPromise): void;

@@ -7,7 +7,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ThrowNode extends Statement {
-    private constructor(node: ThrowNode, expression: Expression, isSyntheticRethrow: boolean)
     constructor(lineNumber: number, token: number, finish: number, expression: Expression, isSyntheticRethrow: boolean)
     readonly expression: Expression;
     // private isSyntheticRethrow: boolean;

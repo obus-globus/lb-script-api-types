@@ -2,7 +2,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { DescriptorKindFilter$Companion$MaskToName } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/scopes/DescriptorKindFilter$Companion$MaskToName.d.ts'
 export class DescriptorKindFilter$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     getALL_KINDS_MASK(): number;
     getCLASSIFIERS_MASK(): number;

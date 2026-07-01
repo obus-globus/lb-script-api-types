@@ -15,7 +15,6 @@ export class ForNode extends LoopNode {
     static IS_FOR_IN: number;
     static IS_FOR_OF: number;
     static PER_ITERATION_SCOPE: number;
-    private constructor(forNode: ForNode, init: Expression, test: JoinPredecessorExpression, body: Block, modify: JoinPredecessorExpression, flags: number, controlFlowEscapes: boolean)
     constructor(lineNumber: number, token: number, finish: number, body: Block, flags: number, init: Expression, test: JoinPredecessorExpression, modify: JoinPredecessorExpression)
     // private flags: number;
     readonly init: Expression;

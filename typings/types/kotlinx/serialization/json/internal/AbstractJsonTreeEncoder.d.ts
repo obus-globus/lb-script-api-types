@@ -1,8 +1,7 @@
-import type { AbstractJsonTreeEncoder$inlineUnquotedLiteralEncoder$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
-import type { AbstractJsonTreeEncoder$inlineUnsignedNumberEncoder$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { SerializationStrategy } from '../../../../kotlinx/serialization/SerializationStrategy.d.ts'
 import type { SerialDescriptor } from '../../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
+import type { AbstractEncoder } from '../../../../kotlinx/serialization/encoding/AbstractEncoder.d.ts'
 import type { CompositeEncoder } from '../../../../kotlinx/serialization/encoding/CompositeEncoder.d.ts'
 import type { Encoder } from '../../../../kotlinx/serialization/encoding/Encoder.d.ts'
 import type { NamedValueEncoder } from '../../../../kotlinx/serialization/internal/NamedValueEncoder.d.ts'
@@ -43,8 +42,8 @@ export class AbstractJsonTreeEncoder extends NamedValueEncoder implements JsonEn
     protected encodeTaggedValue(tag: string, value: Object): void;
     protected endEncode(descriptor: SerialDescriptor): void;
     getCurrent(): JsonElement;
-    // private inlineUnquotedLiteralEncoder(tag: string, inlineDescriptor: SerialDescriptor): AbstractJsonTreeEncoder$inlineUnquotedLiteralEncoder$1;
-    // private inlineUnsignedNumberEncoder(tag: string): AbstractJsonTreeEncoder$inlineUnsignedNumberEncoder$1;
+    // private inlineUnquotedLiteralEncoder(tag: string, inlineDescriptor: SerialDescriptor): AbstractEncoder;
+    // private inlineUnsignedNumberEncoder(tag: string): AbstractEncoder;
     putElement(key: string, element: JsonElement): void;
     shouldEncodeElementDefault(descriptor: SerialDescriptor, index: number): boolean;
 }

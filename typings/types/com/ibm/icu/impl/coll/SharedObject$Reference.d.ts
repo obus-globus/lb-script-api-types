@@ -6,7 +6,6 @@ export class SharedObject$Reference<T extends SharedObject> extends Object imple
     // private ref: T;
     clear(): void;
     clone(): SharedObject$Reference<T>;
-    protected clone(): Object;
     copyOnWrite(): T;
     finalize(): void;
     readOnly(): T;

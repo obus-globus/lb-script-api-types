@@ -6,7 +6,6 @@ export class Float2FloatFunctions$EmptyFunction extends AbstractFloat2FloatFunct
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;

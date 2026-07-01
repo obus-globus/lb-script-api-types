@@ -31,7 +31,6 @@ export class BookViewScreen extends Screen {
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor()
     constructor(bookAccess: BookViewScreen$BookAccess)
-    private constructor(bookAccess: BookViewScreen$BookAccess, playTurnSound: boolean)
     // private backButton: PageButton;
     readonly bookAccess: BookViewScreen$BookAccess;
     // private cachedPage: number;

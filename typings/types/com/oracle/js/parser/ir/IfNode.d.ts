@@ -8,7 +8,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IfNode extends Statement {
-    private constructor(ifNode: IfNode, test: Expression, pass: Block, fail: Block)
     constructor(lineNumber: number, token: number, finish: number, test: Expression, pass: Block, fail: Block)
     readonly fail: Block;
     readonly pass: Block;

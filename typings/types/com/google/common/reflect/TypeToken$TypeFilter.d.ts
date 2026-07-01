@@ -1,5 +1,5 @@
-import type { TypeToken$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
+import type { Invokable$MethodInvokable } from '../../../../com/google/common/reflect/Invokable$MethodInvokable.d.ts'
 import type { TypeToken } from '../../../../com/google/common/reflect/TypeToken.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -10,8 +10,7 @@ export class TypeToken$TypeFilter extends Enum<TypeToken$TypeFilter> implements 
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TypeToken$TypeFilter;
     static values(): (Object | null)[];
-    private constructor()
-    constructor(arg2: TypeToken$1)
+    constructor(arg2: Invokable$MethodInvokable<T>)
     test(input: TypeToken<Object>): boolean;
     name(): "IGNORE_TYPE_VARIABLE_OR_WILDCARD" | "INTERFACE_ONLY";
 }

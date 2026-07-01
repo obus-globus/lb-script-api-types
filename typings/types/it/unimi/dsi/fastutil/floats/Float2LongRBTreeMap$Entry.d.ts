@@ -10,7 +10,6 @@ export class Float2LongRBTreeMap$Entry extends AbstractFloat2LongMap$BasicEntry 
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Float2LongRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Float2LongRBTreeMap$Entry;

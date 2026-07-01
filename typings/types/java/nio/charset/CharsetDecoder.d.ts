@@ -6,7 +6,6 @@ import type { CodingErrorAction } from '../../../java/nio/charset/CodingErrorAct
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class CharsetDecoder extends Object {
     constructor(arg0: Charset, arg1: number, arg2: number)
-    private constructor(arg0: Charset, arg1: number, arg2: number, arg3: string)
     // private averageCharsPerByte: number;
     // private charset: Charset;
     // private malformedInputAction: CodingErrorAction;

@@ -21,8 +21,8 @@ export class ReflectionToStringBuilder extends ToStringBuilder {
     static toStringExclude(paramarg0: Object, paramarg1: string[]): string;
     static toStringInclude(paramarg0: Object, paramarg1: (Object | null)[]): string;
     static toStringInclude(paramarg0: Object, paramarg1: string[]): string;
-    constructor(arg0: T, arg1: ToStringStyle, arg2: StringBuffer, arg3: Class<T>, arg4: boolean, arg5: boolean)
-    constructor(arg0: T, arg1: ToStringStyle, arg2: StringBuffer, arg3: Class<T>, arg4: boolean, arg5: boolean, arg6: boolean)
+    constructor(arg0: Object, arg1: ToStringStyle, arg2: StringBuffer, arg3: Class<Object>, arg4: boolean, arg5: boolean)
+    constructor(arg0: Object, arg1: ToStringStyle, arg2: StringBuffer, arg3: Class<Object>, arg4: boolean, arg5: boolean, arg6: boolean)
     constructor(arg0: Object)
     constructor(arg0: Object, arg1: ToStringStyle)
     constructor(arg0: Object, arg1: ToStringStyle, arg2: StringBuffer)

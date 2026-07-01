@@ -6,7 +6,6 @@ export class ServerAddress extends Object implements IServerAddress {
     static isValidAddress(paraminput: string): boolean;
     static parsePort(paramstr: string): number;
     static parseString(paraminput: string): ServerAddress;
-    private constructor(hostAndPort: HostAndPort)
     constructor(host: string, port: number)
     // private hostAndPort: HostAndPort;
     // private viaFabricPlus$netherNetAddress: NetherNetAddress;

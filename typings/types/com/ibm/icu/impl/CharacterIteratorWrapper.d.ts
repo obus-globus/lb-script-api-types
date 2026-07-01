@@ -2,7 +2,6 @@ import type { Replaceable } from '../../../../com/ibm/icu/text/Replaceable.d.ts'
 import type { UCharacterIterator } from '../../../../com/ibm/icu/text/UCharacterIterator.d.ts'
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
 import type { CharacterIterator } from '../../../../java/text/CharacterIterator.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
 export class CharacterIteratorWrapper extends UCharacterIterator implements Cloneable {
     static DONE: number;
@@ -15,7 +14,6 @@ export class CharacterIteratorWrapper extends UCharacterIterator implements Clon
     constructor(arg0: CharacterIterator)
     // private iterator: CharacterIterator;
     clone(): CharacterIteratorWrapper;
-    protected clone(): Object;
     current(): number;
     getCharacterIterator(): CharacterIterator;
     getIndex(): number;

@@ -10,7 +10,6 @@ export class ShortRBTreeSet$Entry extends Object implements Cloneable {
     black(): boolean;
     black(arg0: boolean): void;
     clone(): ShortRBTreeSet$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): ShortRBTreeSet$Entry;

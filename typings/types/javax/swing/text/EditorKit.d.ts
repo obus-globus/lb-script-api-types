@@ -13,7 +13,6 @@ import type { Cloneable } from '../../../java/lang/Cloneable.d.ts'
 export abstract class EditorKit extends Object implements Serializable, Cloneable {
     constructor()
     clone(): Object;
-    protected clone(): Object;
     createCaret(): Caret;
     createDefaultDocument(): Document;
     deinstall(arg0: JEditorPane): void;

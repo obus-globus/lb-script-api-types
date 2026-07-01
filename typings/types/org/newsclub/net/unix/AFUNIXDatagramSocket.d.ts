@@ -11,7 +11,6 @@ export class AFUNIXDatagramSocket extends AFDatagramSocket<AFUNIXSocketAddress> 
     static newInstance(paramarg0: AFSocketType): AFUNIXDatagramSocket;
     static setDatagramSocketImplFactory(paramarg0: DatagramSocketImplFactory): void;
     constructor(arg0: FileDescriptor)
-    private constructor(arg0: FileDescriptor, arg1: AFSocketType)
     clearReceivedFileDescriptors(): void;
     getChannel(): AFUNIXDatagramChannel;
     getPeerCredentials(): AFUNIXSocketCredentials;

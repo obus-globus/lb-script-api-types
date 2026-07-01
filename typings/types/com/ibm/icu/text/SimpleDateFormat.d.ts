@@ -171,7 +171,6 @@ export class SimpleDateFormat extends DateFormat implements Cloneable {
     constructor()
     constructor(arg0: string)
     constructor(arg0: string, arg1: DateFormatSymbols)
-    private constructor(arg0: string, arg1: DateFormatSymbols, arg2: Calendar, arg3: NumberFormat, arg4: ULocale, arg5: boolean, arg6: string)
     constructor(arg0: string, arg1: DateFormatSymbols, arg2: Calendar, arg3: ULocale, arg4: boolean, arg5: string)
     constructor(arg0: string, arg1: DateFormatSymbols, arg2: ULocale)
     constructor(arg0: string, arg1: ULocale)
@@ -201,7 +200,6 @@ export class SimpleDateFormat extends DateFormat implements Cloneable {
     applyLocalizedPattern(arg0: string): void;
     applyPattern(arg0: string): void;
     clone(): SimpleDateFormat;
-    protected clone(): Object;
     // private diffCalFieldValue(arg0: Calendar, arg1: Calendar, arg2: Object[], arg3: number): boolean;
     equals(arg0: Object | null): boolean;
     // private fastZeroPaddingNumber(arg0: StringBuffer, arg1: number, arg2: number, arg3: number): void;

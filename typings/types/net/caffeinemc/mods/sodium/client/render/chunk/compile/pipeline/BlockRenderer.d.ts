@@ -44,6 +44,7 @@ export class BlockRenderer extends AbstractBlockRenderContext implements BlockRe
     processQuad(arg0: MutableQuadViewImpl): void;
     release(): void;
     renderModel(arg0: BlockStateModel, arg1: BlockState, arg2: BlockPos, arg3: BlockPos): void;
+    // private renderModel$mixinextras$wrapped$20(arg0: BlockStateModel, arg1: BlockState, arg2: BlockPos, arg3: BlockPos): void;
     restoreBlock(): void;
     // private tintQuad(arg0: MutableQuadViewImpl): void;
 }

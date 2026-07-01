@@ -4,8 +4,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class LinkedListMultimap$DistinctKeyIterator extends Object implements Iterator<K> {
-    private constructor(null_: LinkedListMultimap<K, V>)
-    constructor(null_: LinkedListMultimap<K, V>, arg1: (Object | null)[])
+    constructor(null_: LinkedListMultimap<Object, Object>, arg1: (Object | null)[])
     // private current: LinkedListMultimap$Node<K, V>;
     // private expectedModCount: number;
     // private next: LinkedListMultimap$Node<K, V>;

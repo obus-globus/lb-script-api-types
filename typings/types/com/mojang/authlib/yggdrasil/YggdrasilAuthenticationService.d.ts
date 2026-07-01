@@ -16,7 +16,6 @@ export class YggdrasilAuthenticationService extends HttpAuthenticationService {
     static createOffline(paramarg0: Proxy, paramarg1: Environment): YggdrasilAuthenticationService;
     constructor(arg0: Proxy)
     constructor(arg0: Proxy, arg1: Environment)
-    private constructor(arg0: Proxy, arg1: ServicesKeySet, arg2: Environment)
     // private environment: Environment;
     readonly servicesKeySet: ServicesKeySet;
     createFriendsService(arg0: string): FriendsService;

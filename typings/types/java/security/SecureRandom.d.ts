@@ -15,7 +15,6 @@ export class SecureRandom extends Random {
     static getSeed(paramarg0: number): number[];
     constructor()
     constructor(arg0: SecureRandomSpi, arg1: { [key: string]: any })
-    private constructor(arg0: SecureRandomSpi, arg1: { [key: string]: any }, arg2: string)
     constructor(arg0: number[])
     readonly algorithm: string;
     // private counter: number;

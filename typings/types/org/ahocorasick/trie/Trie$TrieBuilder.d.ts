@@ -1,10 +1,8 @@
-import type { Trie$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { PayloadTrie$PayloadTrieBuilder } from '../../../org/ahocorasick/trie/PayloadTrie$PayloadTrieBuilder.d.ts'
 import type { Trie } from '../../../org/ahocorasick/trie/Trie.d.ts'
 export class Trie$TrieBuilder extends Object {
-    private constructor()
-    constructor(arg0: Trie$1)
+    constructor(arg0: any)
     // private delegate: PayloadTrie$PayloadTrieBuilder<string>;
     addKeyword(arg0: string): Trie$TrieBuilder;
     addKeywords(arg0: string[]): Trie$TrieBuilder;

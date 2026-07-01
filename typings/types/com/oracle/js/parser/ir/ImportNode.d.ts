@@ -8,9 +8,7 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ImportNode extends Node {
-    private constructor(node: ImportNode, moduleSpecifier: LiteralNode<TruffleString>, importClause: ImportClauseNode)
     constructor(token: number, start: number, finish: number, importClause: ImportClauseNode, moduleSpecifier: LiteralNode<TruffleString>, attributes: Map<TruffleString, TruffleString>)
-    private constructor(token: number, start: number, finish: number, moduleSpecifier: LiteralNode<TruffleString>, importClause: ImportClauseNode, attributes: Map<TruffleString, TruffleString>)
     constructor(token: number, start: number, finish: number, moduleSpecifier: LiteralNode<TruffleString>, attributes: Map<TruffleString, TruffleString>)
     readonly attributes: Map<TruffleString, TruffleString>;
     readonly importClause: ImportClauseNode;

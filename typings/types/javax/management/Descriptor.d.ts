@@ -3,7 +3,6 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../java/lang/Cloneable.d.ts'
 export interface Descriptor extends Serializable, Object, Cloneable{
     clone(): Object;
-    protected clone(): Object;
     getFieldNames(): string[];
     getFieldValue(arg0: string): Object;
     getFieldValues(arg0: string[]): Object[];

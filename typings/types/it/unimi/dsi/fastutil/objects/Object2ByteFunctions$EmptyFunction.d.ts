@@ -6,7 +6,6 @@ export class Object2ByteFunctions$EmptyFunction<K extends unknown> extends Abstr
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

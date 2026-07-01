@@ -13,7 +13,6 @@ export class BitSet extends Object implements Serializable, Cloneable {
     static valueOf(paramarg0: number[]): BitSet;
     constructor()
     constructor(arg0: number)
-    private constructor(arg0: number[])
     // private sizeIsSticky: boolean;
     // private words: number[];
     // private wordsInUse: number;
@@ -25,7 +24,6 @@ export class BitSet extends Object implements Serializable, Cloneable {
     clear(arg0: number): void;
     clear(arg0: number, arg1: number): void;
     clone(): Object;
-    protected clone(): Object;
     // private ensureCapacity(arg0: number): void;
     equals(arg0: Object | null): boolean;
     // private expandTo(arg0: number): void;

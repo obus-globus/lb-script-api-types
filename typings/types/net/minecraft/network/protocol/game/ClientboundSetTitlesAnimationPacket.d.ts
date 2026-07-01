@@ -11,7 +11,6 @@ export class ClientboundSetTitlesAnimationPacket extends Object implements Packe
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetTitlesAnimationPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(fadeIn: number, stay: number, fadeOut: number)
-    private constructor(input: FriendlyByteBuf)
     readonly fadeIn: number;
     readonly fadeOut: number;
     readonly stay: number;

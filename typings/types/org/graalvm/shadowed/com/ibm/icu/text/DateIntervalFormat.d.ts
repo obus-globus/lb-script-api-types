@@ -30,9 +30,7 @@ export class DateIntervalFormat extends UFormat {
     static getInstance(paramskeleton: string, paramdtitvinf: DateIntervalInfo): DateIntervalFormat;
     static getInstance(paramskeleton: string, paramlocale: ULocale): DateIntervalFormat;
     static getInstance(paramskeleton: string, paramlocale: ULocale, paramdtitvinf: DateIntervalInfo): DateIntervalFormat;
-    private constructor()
     constructor(skeleton: string, dtItvInfo: DateIntervalInfo, simpleDateFormat: SimpleDateFormat)
-    private constructor(skeleton: string, locale: ULocale, simpleDateFormat: SimpleDateFormat)
     // private fCapitalizationSetting: DisplayContext;
     // private fDateFormat: SimpleDateFormat;
     // private fDatePattern: string;

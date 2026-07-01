@@ -17,7 +17,6 @@ export class Socket extends Object implements Closeable {
     constructor(arg0: InetAddress, arg1: number, arg2: InetAddress, arg3: number)
     constructor(arg0: InetAddress, arg1: number, arg2: boolean)
     constructor(arg0: Proxy)
-    private constructor(arg0: SocketAddress, arg1: SocketAddress, arg2: boolean)
     constructor(arg0: SocketImpl)
     constructor(arg0: string, arg1: number)
     constructor(arg0: string, arg1: number, arg2: InetAddress, arg3: number)

@@ -3,7 +3,6 @@ import type { ToIntFunction } from '../../../../../java/util/function/ToIntFunct
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PlacedFeature } from '../../../../../net/minecraft/world/level/levelgen/placement/PlacedFeature.d.ts'
 export class FeatureSorter$StepFeatureData extends Record {
-    private constructor(features: PlacedFeature[])
     constructor(features: PlacedFeature[], indexMapping: (param0: PlacedFeature) => number)
     // private features: PlacedFeature[];
     // private indexMapping: (param0: PlacedFeature) => number;

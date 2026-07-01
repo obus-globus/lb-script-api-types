@@ -27,7 +27,6 @@ export class VillagerTrade extends Object implements Validatable {
     static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
     constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[])
     constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[], doubleTradePriceEnchantments: Holder<Enchantment>[])
-    private constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: NumberProvider, reputationDiscount: NumberProvider, xp: NumberProvider, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[], doubleTradePriceEnchantments: Optional<Holder<Enchantment>[]>)
     constructor(wants: TradeCost, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[])
     // private additionalWants: Optional<TradeCost>;
     // private doubleTradePriceEnchantments: Optional<Holder<Enchantment>[]>;

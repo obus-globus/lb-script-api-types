@@ -4,7 +4,6 @@ export class Socks5PrivateAuthStatus extends Object implements Comparable<Socks5
     static FAILURE: Socks5PrivateAuthStatus;
     static SUCCESS: Socks5PrivateAuthStatus;
     static valueOf(paramarg0: number): Socks5PrivateAuthStatus;
-    private constructor(arg0: number)
     constructor(arg0: number, arg1: string)
     // private byteValue: number;
     // private name: string;

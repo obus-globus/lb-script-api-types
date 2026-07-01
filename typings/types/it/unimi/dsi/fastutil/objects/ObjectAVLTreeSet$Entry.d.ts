@@ -10,7 +10,6 @@ export class ObjectAVLTreeSet$Entry<K extends unknown> extends Object implements
     balance(): number;
     balance(arg0: number): void;
     clone(): ObjectAVLTreeSet$Entry<K>;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

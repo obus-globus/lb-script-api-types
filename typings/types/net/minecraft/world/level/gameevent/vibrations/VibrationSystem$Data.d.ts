@@ -6,7 +6,6 @@ export class VibrationSystem$Data extends Object {
     static CODEC: Codec<VibrationSystem$Data>;
     static NBT_TAG_KEY: string;
     constructor()
-    private constructor(currentVibration: VibrationInfo, selectionStrategy: VibrationSelector, travelTimeInTicks: number, reloadVibrationParticle: boolean)
     readonly currentVibration: VibrationInfo;
     readonly reloadVibrationParticle: boolean;
     readonly selectionStrategy: VibrationSelector;

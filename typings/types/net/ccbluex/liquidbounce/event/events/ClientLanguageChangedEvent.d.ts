@@ -1,5 +1,8 @@
 import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { WebSocketEvent } from '../../../../../net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketEvent.d.ts'
+/**
+ * Fires when the client language is changed.
+ */
 export class ClientLanguageChangedEvent extends Event implements WebSocketEvent {
     constructor()
 }

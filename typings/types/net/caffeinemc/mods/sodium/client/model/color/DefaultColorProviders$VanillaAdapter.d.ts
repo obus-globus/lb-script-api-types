@@ -8,7 +8,6 @@ import type { BlockPos$MutableBlockPos } from '../../../../../../../net/minecraf
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class DefaultColorProviders$VanillaAdapter extends Object implements ColorProvider<BlockState> {
     constructor(arg0: BlockTintSource[])
-    private constructor(arg0: BlockTintSource)
     // private color: BlockTintSource[];
     getColors(arg0: LevelSlice, arg1: BlockPos, arg2: BlockPos$MutableBlockPos, arg3: BlockState, arg4: ModelQuadView, arg5: number[], arg6: boolean): void;
 }

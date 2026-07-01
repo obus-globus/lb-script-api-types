@@ -12,8 +12,6 @@ export class FilterMask extends Object {
     static PASS_THROUGH: FilterMask;
     static read(paraminput: FriendlyByteBuf): FilterMask;
     static write(paramoutput: FriendlyByteBuf, parammask: FilterMask): void;
-    private constructor(mask: BitSet)
-    private constructor(mask: BitSet, type: FilterMask$Type)
     constructor(length: number)
     // private mask: BitSet;
     // private type: FilterMask$Type;

@@ -52,7 +52,6 @@ export class SimpleFilteredSentenceBreakIterator extends BreakIterator implement
     readonly text: UCharacterIterator;
     // private breakExceptionAt(arg0: number): boolean;
     clone(): SimpleFilteredSentenceBreakIterator;
-    protected clone(): Object;
     current(): number;
     equals(arg0: Object | null): boolean;
     first(): number;

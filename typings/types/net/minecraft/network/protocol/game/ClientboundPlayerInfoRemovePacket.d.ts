@@ -13,7 +13,6 @@ export class ClientboundPlayerInfoRemovePacket extends Record implements Packet<
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundPlayerInfoRemovePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(profileIds: UUID[])
-    private constructor(input: FriendlyByteBuf)
     // private profileIds: UUID[];
     equals(o: Object | null): boolean;
     handle(listener: ClientGamePacketListener): void;

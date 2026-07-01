@@ -23,7 +23,6 @@ export class WolfVariant extends Record implements PriorityProvider<SpawnContext
     static pick(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramrandomSource: RandomSource, paramcontext: Object | null): Optional<Object>;
     static select(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramcontext: Object | null): Stream<Object>;
     static single(paramcheck: Object | null, parampriority: number): PriorityProvider$Selector<Object, any>[];
-    private constructor(adultInfo: WolfVariant$AssetInfo, babyInfo: WolfVariant$AssetInfo)
     constructor(adultInfo: WolfVariant$AssetInfo, babyInfo: WolfVariant$AssetInfo, spawnConditions: SpawnPrioritySelectors)
     // private adultInfo: WolfVariant$AssetInfo;
     // private babyInfo: WolfVariant$AssetInfo;

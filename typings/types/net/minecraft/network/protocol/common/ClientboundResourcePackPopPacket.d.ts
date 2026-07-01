@@ -14,7 +14,6 @@ export class ClientboundResourcePackPopPacket extends Record implements Packet<C
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundResourcePackPopPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(id: Optional<UUID>)
-    private constructor(input: FriendlyByteBuf)
     // private id: Optional<UUID>;
     equals(o: Object | null): boolean;
     handle(listener: ClientCommonPacketListener): void;

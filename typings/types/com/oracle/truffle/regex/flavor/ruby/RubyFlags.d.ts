@@ -9,7 +9,6 @@ export class RubyFlags extends AbstractConstantKeysObject {
     static isBitFlag(paramcandidateChar: number): boolean;
     static isTypeFlag(paramcandidateChar: number): boolean;
     static isValidFlagChar(paramcandidateChar: number): boolean;
-    private constructor(value: number, mode: RubyFlags$Mode)
     constructor(source: string)
     // private mode: RubyFlags$Mode;
     // private value: number;

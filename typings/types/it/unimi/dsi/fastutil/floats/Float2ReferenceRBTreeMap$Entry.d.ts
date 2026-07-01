@@ -10,7 +10,6 @@ export class Float2ReferenceRBTreeMap$Entry<V extends unknown> extends AbstractF
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Float2ReferenceRBTreeMap$Entry<V>;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Float2ReferenceRBTreeMap$Entry<V>;

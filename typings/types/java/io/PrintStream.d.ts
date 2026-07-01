@@ -19,8 +19,6 @@ export class PrintStream extends FilterOutputStream implements Closeable, Append
     constructor(arg0: OutputStream, arg1: boolean)
     constructor(arg0: OutputStream, arg1: boolean, arg2: Charset)
     constructor(arg0: OutputStream, arg1: boolean, arg2: string)
-    private constructor(arg0: boolean, arg1: OutputStream)
-    private constructor(arg0: boolean, arg1: Charset, arg2: OutputStream)
     constructor(arg0: string)
     constructor(arg0: string, arg1: Charset)
     constructor(arg0: string, arg1: string)

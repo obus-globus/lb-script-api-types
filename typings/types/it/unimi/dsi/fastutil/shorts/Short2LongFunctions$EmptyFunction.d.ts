@@ -6,7 +6,6 @@ export class Short2LongFunctions$EmptyFunction extends AbstractShort2LongFunctio
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;

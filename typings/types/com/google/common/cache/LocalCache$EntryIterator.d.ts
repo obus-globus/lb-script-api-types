@@ -2,6 +2,6 @@ import type { LocalCache$HashIterator } from '../../../../com/google/common/cach
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class LocalCache$EntryIterator extends LocalCache$HashIterator<Object> {
-    constructor(null_: Map<K, V>)
+    constructor(null_: Map<Object, Object>)
     next<K extends unknown, V extends unknown>(): Map$Entry<K, V>;
 }

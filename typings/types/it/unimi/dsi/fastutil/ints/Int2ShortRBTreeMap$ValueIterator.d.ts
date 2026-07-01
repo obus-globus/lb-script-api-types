@@ -2,7 +2,6 @@ import type { Int2ShortRBTreeMap$TreeIterator } from '../../../../../it/unimi/ds
 import type { ShortListIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/ShortListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Int2ShortRBTreeMap$ValueIterator extends Int2ShortRBTreeMap$TreeIterator implements ShortListIterator {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add(arg0: number): void;
     next(): number;

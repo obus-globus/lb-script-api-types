@@ -12,7 +12,6 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 import type { Matrix4fc } from '../../../../../org/joml/Matrix4fc.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class MissingItemModel extends Object implements ItemModel {
-    private constructor(quads: BakedQuad[], extents: () => Vector3fc[], properties: ModelRenderProperties, transform: Matrix4fc)
     constructor(quads: BakedQuad[], properties: ModelRenderProperties)
     // private extents: () => Vector3fc[];
     // private properties: ModelRenderProperties;

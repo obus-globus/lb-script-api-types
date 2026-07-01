@@ -5,7 +5,6 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2BooleanOpenCustomHashMap$EntryIterator extends Char2BooleanOpenCustomHashMap$MapIterator<(param0: Char2BooleanMap$Entry) => void> implements ObjectIterator<Char2BooleanMap$Entry> {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private entry: Char2BooleanOpenCustomHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Char2BooleanMap$Entry) => void, arg1: number): void;

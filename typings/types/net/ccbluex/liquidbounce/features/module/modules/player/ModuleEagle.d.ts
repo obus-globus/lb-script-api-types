@@ -7,7 +7,7 @@ import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce
  *
  * Legit trick to build faster.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleEagle.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleEagle.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleEagle.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleEagle.kt:40}
  */
 export class ModuleEagle extends ClientModule {
     static INSTANCE: ModuleEagle;

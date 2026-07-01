@@ -21,7 +21,6 @@ export class AsiExtraField extends Object implements Cloneable, UnixStat, ZipExt
     readonly link: string;
     readonly mode: number;
     // private uid: number;
-    protected clone(): Object;
     clone(): Object;
     getCentralDirectoryData(): number[];
     getCentralDirectoryLength(): ZipShort;

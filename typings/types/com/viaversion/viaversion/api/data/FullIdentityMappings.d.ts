@@ -4,7 +4,6 @@ import type { Mappings } from '../../../../../com/viaversion/viaversion/api/data
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class FullIdentityMappings extends Object implements FullMappings {
     constructor(arg0: MappingDataLoader$IdentifiersPair, arg1: Mappings)
-    private constructor(arg0: { [key: string]: any }, arg1: string[], arg2: Mappings)
     // private idToString: string[];
     // private mappings: Mappings;
     // private stringToId: { [key: string]: any };

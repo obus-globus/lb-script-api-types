@@ -10,7 +10,6 @@ export class Float2CharRBTreeMap$Entry extends AbstractFloat2CharMap$BasicEntry 
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Float2CharRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Float2CharRBTreeMap$Entry;

@@ -6,7 +6,6 @@ export class FileDescriptor extends Object {
     static in: FileDescriptor;
     static out: FileDescriptor;
     constructor()
-    private constructor(arg0: number)
     // private append: boolean;
     // private cleanup: PhantomCleanable<FileDescriptor>;
     // private closed: boolean;

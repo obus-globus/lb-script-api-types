@@ -34,9 +34,7 @@ export class Breakpoint extends Object {
     static newBuilder(paramsourceSection: SourceSection): Breakpoint$Builder;
     static newBuilder(paramsourceUri: URI): Breakpoint$Builder;
     static newExceptionBuilder(paramcaught: boolean, paramuncaught: boolean): Breakpoint$ExceptionBuilder;
-    private constructor()
     constructor(key: BreakpointLocation, suspendAnchor: SuspendAnchor)
-    private constructor(key: BreakpointLocation, suspendAnchor: SuspendAnchor, oneShot: boolean, exceptionFilter: BreakpointExceptionFilter, rootInstance: Object, resolveListener: Breakpoint$ResolveListener)
     // private breakpointBindingReady: boolean;
     readonly condition: string;
     // private conditionExistsUnchanged: Assumption;

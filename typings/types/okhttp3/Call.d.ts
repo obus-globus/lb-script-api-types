@@ -10,7 +10,6 @@ import type { Timeout } from '../okio/Timeout.d.ts'
 export interface Call extends Object, Cloneable {
     addEventListener(eventListener: EventListener): void;
     cancel(): void;
-    protected clone(): Object;
     clone(): Call;
     enqueue(responseCallback: Callback): void;
     execute(): Response;

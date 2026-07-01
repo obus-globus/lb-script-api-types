@@ -1,4 +1,3 @@
-import type { WebSocketClientProtocolConfig$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { WebSocketClientProtocolConfig } from '../../../../../../io/netty/handler/codec/http/websocketx/WebSocketClientProtocolConfig.d.ts'
 import type { WebSocketCloseStatus } from '../../../../../../io/netty/handler/codec/http/websocketx/WebSocketCloseStatus.d.ts'
 import type { WebSocketVersion } from '../../../../../../io/netty/handler/codec/http/websocketx/WebSocketVersion.d.ts'
@@ -6,10 +5,8 @@ import type { URI } from '../../../../../../java/net/URI.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class WebSocketClientProtocolConfig$Builder extends Object {
-    private constructor(arg0: WebSocketClientProtocolConfig)
-    constructor(arg0: WebSocketClientProtocolConfig, arg1: WebSocketClientProtocolConfig$1)
-    private constructor(arg0: URI, arg1: string, arg2: WebSocketVersion, arg3: boolean, arg4: Map$Entry<string, string>[], arg5: number, arg6: boolean, arg7: boolean, arg8: boolean, arg9: WebSocketCloseStatus, arg10: boolean, arg11: number, arg12: number, arg13: boolean, arg14: boolean, arg15: boolean)
-    constructor(arg0: URI, arg1: string, arg2: WebSocketVersion, arg3: boolean, arg4: Map$Entry<string, string>[], arg5: number, arg6: boolean, arg7: boolean, arg8: boolean, arg9: WebSocketCloseStatus, arg10: boolean, arg11: number, arg12: number, arg13: boolean, arg14: boolean, arg15: boolean, arg16: WebSocketClientProtocolConfig$1)
+    constructor(arg0: WebSocketClientProtocolConfig, arg1: any)
+    constructor(arg0: URI, arg1: string, arg2: WebSocketVersion, arg3: boolean, arg4: Map$Entry<string, string>[], arg5: number, arg6: boolean, arg7: boolean, arg8: boolean, arg9: WebSocketCloseStatus, arg10: boolean, arg11: number, arg12: number, arg13: boolean, arg14: boolean, arg15: boolean, arg16: any)
     // private absoluteUpgradeUrl: boolean;
     // private allowExtensions: boolean;
     // private allowMaskMismatch: boolean;

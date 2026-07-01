@@ -12,7 +12,6 @@ export class ServerboundChunkBatchReceivedPacket extends Record implements Packe
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundChunkBatchReceivedPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(desiredChunksPerTick: number)
-    private constructor(input: FriendlyByteBuf)
     // private desiredChunksPerTick: number;
     desiredChunksPerTick(): number;
     equals(o: Object | null): boolean;

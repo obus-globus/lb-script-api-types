@@ -50,7 +50,6 @@ export class Vector2d extends Object implements Externalizable, Cloneable, Vecto
     angle(arg0: Vector2dc): number;
     ceil(): Vector2d;
     ceil(arg0: Vector2d): Vector2d;
-    protected clone(): Object;
     clone(): Object;
     distance(arg0: number, arg1: number): number;
     distance(arg0: Vector2dc): number;

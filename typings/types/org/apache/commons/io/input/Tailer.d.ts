@@ -1,4 +1,3 @@
-import type { Tailer$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { AutoCloseable } from '../../../../../java/lang/AutoCloseable.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
@@ -25,9 +24,7 @@ export class Tailer extends Object implements AutoCloseable, Runnable {
     constructor(arg0: File, arg1: TailerListener, arg2: number, arg3: boolean, arg4: boolean)
     constructor(arg0: File, arg1: TailerListener, arg2: number, arg3: boolean, arg4: boolean, arg5: number)
     constructor(arg0: File, arg1: TailerListener, arg2: number, arg3: boolean, arg4: number)
-    private constructor(arg0: Tailer$Builder)
-    constructor(arg0: Tailer$Builder, arg1: Tailer$1)
-    private constructor(arg0: Tailer$Tailable, arg1: Charset, arg2: TailerListener, arg3: Duration, arg4: boolean, arg5: boolean, arg6: number, arg7: boolean)
+    constructor(arg0: Tailer$Builder, arg1: any)
     // private charset: Charset;
     readonly delayDuration: Duration;
     // private ignoreTouch: boolean;

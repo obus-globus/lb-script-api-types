@@ -7,7 +7,6 @@ export class Float2BooleanFunctions$Singleton extends AbstractFloat2BooleanFunct
     // private key: number;
     // private value: boolean;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     get(arg0: Object): boolean;

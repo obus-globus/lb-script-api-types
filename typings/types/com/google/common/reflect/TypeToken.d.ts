@@ -1,5 +1,5 @@
-import type { TypeToken$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Invokable } from '../../../../com/google/common/reflect/Invokable.d.ts'
+import type { Invokable$MethodInvokable } from '../../../../com/google/common/reflect/Invokable$MethodInvokable.d.ts'
 import type { TypeCapture } from '../../../../com/google/common/reflect/TypeCapture.d.ts'
 import type { TypeParameter } from '../../../../com/google/common/reflect/TypeParameter.d.ts'
 import type { TypeResolver } from '../../../../com/google/common/reflect/TypeResolver.d.ts'
@@ -17,8 +17,7 @@ export abstract class TypeToken<T extends unknown> extends TypeCapture<T> implem
     static of(paramtype: Type): TypeToken<Object>;
     constructor()
     constructor(declaringClass: Class<Object>)
-    private constructor(type: Type)
-    constructor(arg0: Type, arg1: TypeToken$1)
+    constructor(arg0: Type, arg1: Invokable$MethodInvokable<T>)
     // private covariantTypeResolver: TypeResolver;
     // private invariantTypeResolver: TypeResolver;
     // private runtimeType: Type;

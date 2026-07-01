@@ -7,7 +7,6 @@ export class MBeanParameterInfo extends MBeanFeatureInfo implements Cloneable {
     constructor(arg0: string, arg1: string, arg2: string, arg3: Descriptor)
     readonly type: string;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getType(): string;
     hashCode(): number;

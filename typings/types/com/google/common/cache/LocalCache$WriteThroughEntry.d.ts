@@ -7,7 +7,7 @@ export class LocalCache$WriteThroughEntry extends Object implements Map$Entry<K,
     static comparingByValue(): (param0: Object) => boolean;
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    constructor(null_: Map<K, V>, key: K, value: V)
+    constructor(null_: Map<Object, Object>, key: Object, value: Object)
     readonly key: K;
     readonly key: K;
     value: V;

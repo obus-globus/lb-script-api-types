@@ -46,7 +46,6 @@ export class Quaterniond extends Object implements Externalizable, Cloneable, Qu
     add(arg0: Quaterniondc): Quaterniond;
     add(arg0: Quaterniondc, arg1: Quaterniond): Quaterniond;
     angle(): number;
-    protected clone(): Object;
     clone(): Object;
     conjugate(): Quaterniond;
     conjugate(arg0: Quaterniond): Quaterniond;

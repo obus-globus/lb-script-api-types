@@ -7,7 +7,6 @@ export class Double2BooleanFunctions$Singleton extends AbstractDouble2BooleanFun
     // private key: number;
     // private value: boolean;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     get(arg0: Object): boolean;

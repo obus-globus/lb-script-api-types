@@ -7,7 +7,6 @@ import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tr
 export class ConditionalBackReferenceGroup extends Group {
     static groupNumberToBoundaryIndexEnd(paramgroupNumber: number): number;
     static groupNumberToBoundaryIndexStart(paramgroupNumber: number): number;
-    private constructor(copy: ConditionalBackReferenceGroup)
     constructor(referencedGroupNumber: number)
     readonly referencedGroupNumber: number;
     copy(ast: RegexAST): ConditionalBackReferenceGroup;

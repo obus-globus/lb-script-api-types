@@ -4,7 +4,6 @@ import type { ChannelPromise } from '../../../../io/netty/channel/ChannelPromise
 import type { AbstractEpollChannel } from '../../../../io/netty/channel/epoll/AbstractEpollChannel.d.ts'
 import type { AbstractEpollChannel$AbstractEpollUnsafe } from '../../../../io/netty/channel/epoll/AbstractEpollChannel$AbstractEpollUnsafe.d.ts'
 import type { EpollDomainDatagramChannelConfig } from '../../../../io/netty/channel/epoll/EpollDomainDatagramChannelConfig.d.ts'
-import type { LinuxSocket } from '../../../../io/netty/channel/epoll/LinuxSocket.d.ts'
 import type { DomainDatagramChannel } from '../../../../io/netty/channel/unix/DomainDatagramChannel.d.ts'
 import type { DomainSocketAddress } from '../../../../io/netty/channel/unix/DomainSocketAddress.d.ts'
 import type { PeerCredentials } from '../../../../io/netty/channel/unix/PeerCredentials.d.ts'
@@ -12,7 +11,6 @@ import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EpollDomainDatagramChannel extends AbstractEpollChannel implements DomainDatagramChannel {
     constructor()
-    private constructor(arg0: LinuxSocket, arg1: boolean)
     constructor(arg0: number)
     // private config: EpollDomainDatagramChannelConfig;
     readonly connected: boolean;

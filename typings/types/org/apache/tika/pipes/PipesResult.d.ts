@@ -12,7 +12,6 @@ export class PipesResult extends Object {
     constructor(arg0: PipesResult$STATUS)
     constructor(arg0: PipesResult$STATUS, arg1: string)
     constructor(arg0: PipesResult$STATUS, arg1: EmitData, arg2: boolean)
-    private constructor(arg0: PipesResult$STATUS, arg1: EmitData, arg2: string, arg3: boolean)
     constructor(arg0: EmitData)
     constructor(arg0: EmitData, arg1: string)
     readonly emitData: EmitData;

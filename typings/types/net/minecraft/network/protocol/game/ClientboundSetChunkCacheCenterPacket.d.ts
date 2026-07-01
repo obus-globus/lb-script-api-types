@@ -11,7 +11,6 @@ export class ClientboundSetChunkCacheCenterPacket extends Object implements Pack
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetChunkCacheCenterPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(x: number, z: number)
-    private constructor(input: FriendlyByteBuf)
     readonly x: number;
     readonly z: number;
     getX(): number;

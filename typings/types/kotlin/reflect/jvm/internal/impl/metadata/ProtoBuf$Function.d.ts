@@ -1,4 +1,3 @@
-import type { ProtoBuf$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -29,11 +28,8 @@ export class ProtoBuf$Function extends GeneratedMessageLite$ExtendableMessage<Pr
     static newRepeatedGeneratedExtension(paramarg0: MessageLite | null, paramarg1: MessageLite, paramarg2: Internal$EnumLiteMap<any>, paramarg3: number, paramarg4: WireFormat$FieldType, paramarg5: boolean, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
     static newSingularGeneratedExtension(paramarg0: MessageLite | null, paramarg1: Object | null, paramarg2: MessageLite, paramarg3: Internal$EnumLiteMap<any>, paramarg4: number, paramarg5: WireFormat$FieldType, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
     static parseFrom(paramarg0: InputStream, paramarg1: ExtensionRegistryLite): ProtoBuf$Function;
-    private constructor(arg0: boolean)
-    private constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite)
-    constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite, arg2: ProtoBuf$1)
-    constructor(arg0: GeneratedMessageLite$ExtendableBuilder<GeneratedMessageLite$ExtendableMessage<any>, GeneratedMessageLite$ExtendableBuilder<any, any>>, arg1: ProtoBuf$1)
-    private constructor(arg0: GeneratedMessageLite$ExtendableBuilder<ProtoBuf$Function, any>)
+    constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite, arg2: any)
+    constructor(arg0: GeneratedMessageLite$ExtendableBuilder<GeneratedMessageLite$ExtendableMessage<any>, GeneratedMessageLite$ExtendableBuilder<any, any>>, arg1: any)
     // private annotation_: ProtoBuf$Annotation[];
     // private bitField0_: number;
     // private compilerPluginData_: ProtoBuf$CompilerPluginData[];

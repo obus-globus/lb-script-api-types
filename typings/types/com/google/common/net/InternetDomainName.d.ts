@@ -3,7 +3,6 @@ export class InternetDomainName extends Object {
     static from(paramdomain: string): InternetDomainName;
     static isValid(paramname: string): boolean;
     constructor(name: string)
-    private constructor(name: string, parts: string[])
     // private name: string;
     // private parts: string[];
     // private publicSuffixIndexCache: number;

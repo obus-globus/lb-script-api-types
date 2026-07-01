@@ -11,7 +11,6 @@ import type { Level } from '../../../../net/minecraft/world/level/Level.d.ts'
 export class EntityEquipment extends Object implements EquipmentInfo, ChangeSubscriber$CountChangeSubscriber<Object>, MaybeInLevelObject {
     static CODEC: Codec<EntityEquipment>;
     constructor()
-    private constructor(items: { [key in EquipmentSlot]: ItemStack })
     // private hasUnsentEquipmentChanges: boolean;
     // private inLevel: boolean;
     // private items: { [key in EquipmentSlot]: ItemStack };

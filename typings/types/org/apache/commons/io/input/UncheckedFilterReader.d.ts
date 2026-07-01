@@ -1,4 +1,3 @@
-import type { UncheckedFilterReader$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { FilterReader } from '../../../../../java/io/FilterReader.d.ts'
 import type { Reader } from '../../../../../java/io/Reader.d.ts'
 import type { CharBuffer } from '../../../../../java/nio/CharBuffer.d.ts'
@@ -8,8 +7,7 @@ export class UncheckedFilterReader extends FilterReader {
     static builder(): UncheckedFilterReader$Builder;
     static nullReader(): Reader;
     static of(paramarg0: CharSequence): Reader;
-    private constructor(arg0: UncheckedFilterReader$Builder)
-    constructor(arg0: UncheckedFilterReader$Builder, arg1: UncheckedFilterReader$1)
+    constructor(arg0: UncheckedFilterReader$Builder, arg1: any)
     close(): void;
     mark(arg0: number): void;
     read(): number;

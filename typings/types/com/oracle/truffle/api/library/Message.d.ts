@@ -5,7 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Message extends Object {
     static resolve(paramlibraryClass: Class<Library>, parammessageName: string): Message;
     static resolve(paramlibraryClass: Class<Library>, parammessageName: string, paramfail: boolean): Message;
-    private constructor(libraryClass: Class<Library>, id: number, messageName: string, deprecated: boolean, returnType: Class<Object>, parameterTypes: Class<Object>[])
     constructor(libraryClass: Class<Library>, messageName: string, id: number, returnType: Class<Object>, parameterTypes: Class<Object>[])
     constructor(libraryClass: Class<Library>, messageName: string, id: number, deprecated: boolean, returnType: Class<Object>, parameterTypes: Class<Object>[])
     readonly deprecated: boolean;

@@ -22,7 +22,7 @@ export class EventListenerKt extends Object {
      *
      * @since 0.30.1
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L151 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:151}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L151 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:151}
      */
     static computedOn(eventListener: EventListener, initialValue: Object | null, priority: number, accumulator: (param0: Object, param1: Object) => Object | null): ReadWriteProperty<EventListener, Object>;
     static handler(eventListener: EventListener, eventClass: Class<Event>, priority: number, handler: (param0: Event | null) => void): EventHook<Event>;

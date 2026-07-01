@@ -41,7 +41,6 @@ export class MemberName extends Object implements Member, Cloneable {
     canBeStaticallyBound(): boolean;
     // private changeReferenceKind(arg0: number, arg1: number): MemberName;
     clone(): MemberName;
-    protected clone(): Object;
     ensureTypeVisible(arg0: Class<Object>): void;
     equals(arg0: MemberName): boolean;
     equals(arg0: Object | null): boolean;

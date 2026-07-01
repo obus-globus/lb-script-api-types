@@ -10,7 +10,6 @@ export class Long2ReferenceRBTreeMap$Entry<V extends unknown> extends AbstractLo
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Long2ReferenceRBTreeMap$Entry<V>;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Long2ReferenceRBTreeMap$Entry<V>;

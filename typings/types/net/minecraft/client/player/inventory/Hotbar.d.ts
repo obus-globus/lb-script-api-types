@@ -7,7 +7,6 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 export class Hotbar extends Object {
     static CODEC: Codec<Hotbar>;
     constructor()
-    private constructor(items: Dynamic<Object>[])
     // private items: Dynamic<Object>[];
     isEmpty(): boolean;
     load(registries: HolderLookup$Provider): ItemStack[];

@@ -2,7 +2,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ITokenProvider } from '../../../../org/spongepowered/asm/util/ITokenProvider.d.ts'
 export class ConstraintParser$Constraint extends Object {
     static NONE: ConstraintParser$Constraint;
-    private constructor()
     constructor(arg0: string)
     // private constraint: string[];
     // private expr: string;

@@ -6,7 +6,6 @@ export class Int2IntFunctions$EmptyFunction extends AbstractInt2IntFunction impl
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;

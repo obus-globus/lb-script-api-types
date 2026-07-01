@@ -10,7 +10,6 @@ import type { RStream } from '../../../../../net/lenni0451/reflect/stream/RStrea
 import type { MethodWrapper } from '../../../../../net/lenni0451/reflect/stream/method/MethodWrapper.d.ts'
 export class MethodStream extends Object {
     constructor(arg0: RStream, arg1: boolean)
-    private constructor(arg0: RStream, arg1: MethodWrapper[])
     // private methods: MethodWrapper[];
     // private parent: RStream;
     by(arg0: Class<Object>[]): MethodWrapper;

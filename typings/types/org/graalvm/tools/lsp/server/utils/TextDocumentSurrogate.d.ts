@@ -11,7 +11,6 @@ import type { SourceSectionReference } from '../../../../../../org/graalvm/tools
 import type { SourceWrapper } from '../../../../../../org/graalvm/tools/lsp/server/utils/SourceWrapper.d.ts'
 export class TextDocumentSurrogate extends Object {
     constructor(truffleFile: TruffleFile, languageInfo: LanguageInfo)
-    private constructor(blueprint: TextDocumentSurrogate)
     readonly changeEventsSinceLastSuccessfulParsing: TextDocumentContentChangeEvent[];
     readonly coverageAnalysisDone: boolean;
     readonly editorText: string;

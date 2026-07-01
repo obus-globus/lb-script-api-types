@@ -15,7 +15,6 @@ import type { FunctionDescriptor } from '../../../../kotlin/reflect/jvm/internal
 import type { DescriptorKType } from '../../../../kotlin/reflect/jvm/internal/types/DescriptorKType.d.ts'
 export class DescriptorKFunction extends DescriptorKCallable<Object> implements FunctionBase<Object>, FunctionWithAllInvokes, ReflectKFunction {
     constructor(container: KDeclarationContainerImpl, name: string, signature: string, boundReceiver: Object | null)
-    private constructor(container: KDeclarationContainerImpl, name: string, signature: string, descriptorInitialValue: FunctionDescriptor | null, rawBoundReceiver: Object | null, overriddenStorage: KCallableOverriddenStorage)
     constructor(container: KDeclarationContainerImpl, descriptor: FunctionDescriptor, overriddenStorage: KCallableOverriddenStorage)
     readonly arity: number;
     readonly caller: Caller<any>;

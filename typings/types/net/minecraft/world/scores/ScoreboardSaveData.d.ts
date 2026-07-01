@@ -3,7 +3,6 @@ import type { SavedDataType } from '../../../../net/minecraft/world/level/savedd
 import type { ScoreboardSaveData$Packed } from '../../../../net/minecraft/world/scores/ScoreboardSaveData$Packed.d.ts'
 export class ScoreboardSaveData extends SavedData {
     static TYPE: SavedDataType<ScoreboardSaveData>;
-    private constructor()
     constructor(data: ScoreboardSaveData$Packed)
     readonly data: ScoreboardSaveData$Packed;
     getData(): ScoreboardSaveData$Packed;

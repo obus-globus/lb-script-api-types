@@ -5,7 +5,6 @@ import type { MemberHandle } from '../../../../../org/spongepowered/tools/obfusc
 import type { TypeHandle } from '../../../../../org/spongepowered/tools/obfuscation/mirror/TypeHandle.d.ts'
 export class MethodHandle extends MemberHandle<MappingMethod> {
     constructor(arg0: TypeHandle, arg1: ExecutableElement)
-    private constructor(arg0: TypeHandle, arg1: ExecutableElement, arg2: string, arg3: string)
     constructor(arg0: TypeHandle, arg1: string, arg2: string)
     readonly element: ExecutableElement;
     // private ownerHandle: TypeHandle;

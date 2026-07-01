@@ -32,7 +32,6 @@ export class Matrix2d extends Object implements Externalizable, Cloneable, Matri
     _m11(arg0: number): Matrix2d;
     add(arg0: Matrix2dc): Matrix2d;
     add(arg0: Matrix2dc, arg1: Matrix2d): Matrix2d;
-    protected clone(): Object;
     clone(): Object;
     determinant(): number;
     equals(arg0: Object | null): boolean;

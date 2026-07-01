@@ -7,7 +7,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LabelNode extends LexicalContextStatement {
-    private constructor(labelNode: LabelNode, labelName: string, body: Block)
     constructor(lineNumber: number, token: number, finish: number, labelName: string, body: Block)
     readonly body: Block;
     readonly labelName: string;

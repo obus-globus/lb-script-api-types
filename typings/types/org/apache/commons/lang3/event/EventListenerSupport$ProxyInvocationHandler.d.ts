@@ -6,8 +6,8 @@ import type { EventListenerSupport } from '../../../../../org/apache/commons/lan
 import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/function/FailableConsumer.d.ts'
 export class EventListenerSupport$ProxyInvocationHandler extends Object implements InvocationHandler {
     static invokeDefault(paramarg0: Object, paramarg1: Method, paramarg2: (Object | null)[]): Object;
-    constructor(null_: EventListenerSupport<L>)
-    constructor(null_: EventListenerSupport<L>, arg1: (param0: Throwable) => void)
+    constructor(null_: EventListenerSupport<Object>)
+    constructor(null_: EventListenerSupport<Object>, arg1: (param0: Throwable) => void)
     // private handler: (param0: Throwable) => void;
     handle(arg0: Throwable): void;
     invoke(arg0: Object, arg1: Method, arg2: Object[]): Object;

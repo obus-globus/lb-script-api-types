@@ -6,7 +6,6 @@ import type { OptionKey } from '../../../../org/graalvm/options/OptionKey.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
 import type { SandboxPolicy } from '../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export class OptionValuesImpl extends Object implements OptionValues {
-    private constructor(copy: OptionValuesImpl)
     constructor(descriptors: OptionDescriptor[], sandboxPolicy: SandboxPolicy, preserveUnparsedValues: boolean, trackDeprecatedOptions: boolean)
     readonly descriptors: OptionDescriptor[];
     // private sandboxPolicy: SandboxPolicy;

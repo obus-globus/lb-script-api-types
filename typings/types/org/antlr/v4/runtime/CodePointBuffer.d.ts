@@ -1,4 +1,3 @@
-import type { CodePointBuffer$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { CharBuffer } from '../../../../java/nio/CharBuffer.d.ts'
 import type { IntBuffer } from '../../../../java/nio/IntBuffer.d.ts'
@@ -10,8 +9,7 @@ export class CodePointBuffer extends Object {
     static withBytes(paramarg0: ByteBuffer): CodePointBuffer;
     static withChars(paramarg0: CharBuffer): CodePointBuffer;
     static withInts(paramarg0: IntBuffer): CodePointBuffer;
-    private constructor(arg0: CodePointBuffer$Type, arg1: ByteBuffer, arg2: CharBuffer, arg3: IntBuffer)
-    constructor(arg0: CodePointBuffer$Type, arg1: ByteBuffer, arg2: CharBuffer, arg3: IntBuffer, arg4: CodePointBuffer$1)
+    constructor(arg0: CodePointBuffer$Type, arg1: ByteBuffer, arg2: CharBuffer, arg3: IntBuffer, arg4: any)
     // private byteBuffer: ByteBuffer;
     // private charBuffer: CharBuffer;
     // private intBuffer: IntBuffer;

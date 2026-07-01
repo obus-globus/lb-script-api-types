@@ -3,7 +3,6 @@ import type { SingleQuadParticle } from '../../../../net/minecraft/client/partic
 import type { SingleQuadParticle$Layer } from '../../../../net/minecraft/client/particle/SingleQuadParticle$Layer.d.ts'
 import type { TextureAtlasSprite } from '../../../../net/minecraft/client/renderer/texture/TextureAtlasSprite.d.ts'
 export class BreakingItemParticle extends SingleQuadParticle {
-    private constructor(level: ClientLevel, x: number, y: number, z: number, xa: number, ya: number, za: number, sprite: TextureAtlasSprite)
     constructor(level: ClientLevel, x: number, y: number, z: number, sprite: TextureAtlasSprite)
     readonly layer: SingleQuadParticle$Layer;
     // private uo: number;

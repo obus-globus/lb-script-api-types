@@ -125,7 +125,6 @@ export class SunGraphics2D extends Graphics2D implements Cloneable, Constrainabl
     clip(arg0: Shape): void;
     clipRect(arg0: number, arg1: number, arg2: number, arg3: number): void;
     // private clipTo(arg0: Rectangle, arg1: Rectangle): boolean;
-    protected clone(): Object;
     clone(): Object;
     cloneTransform(): AffineTransform;
     constrain(arg0: number, arg1: number, arg2: number, arg3: number): void;

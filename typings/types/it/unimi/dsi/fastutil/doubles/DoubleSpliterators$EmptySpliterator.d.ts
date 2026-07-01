@@ -18,7 +18,6 @@ export class DoubleSpliterators$EmptySpliterator extends Object implements Doubl
     constructor()
     characteristics(): number;
     clone(): Object;
-    protected clone(): Object;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => number;

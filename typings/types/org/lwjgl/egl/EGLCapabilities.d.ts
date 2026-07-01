@@ -2,7 +2,6 @@ import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { FunctionProvider } from '../../../org/lwjgl/system/FunctionProvider.d.ts'
 export class EGLCapabilities extends Object {
-    private constructor(arg0: string[], arg1: number[])
     constructor(arg0: EGLCapabilities, arg1: string[])
     constructor(arg0: (param0: ByteBuffer) => number, arg1: string[])
     EGL10: boolean;

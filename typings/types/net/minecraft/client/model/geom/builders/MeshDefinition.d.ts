@@ -5,7 +5,6 @@ import type { MeshTransformer } from '../../../../../../net/minecraft/client/mod
 import type { PartDefinition } from '../../../../../../net/minecraft/client/model/geom/builders/PartDefinition.d.ts'
 export class MeshDefinition extends Object {
     constructor()
-    private constructor(root: PartDefinition)
     readonly root: PartDefinition;
     apply(transformer: (param0: MeshDefinition) => MeshDefinition): MeshDefinition;
     getRoot(): PartDefinition;

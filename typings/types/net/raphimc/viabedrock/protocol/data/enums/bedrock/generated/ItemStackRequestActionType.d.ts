@@ -14,6 +14,8 @@ export class ItemStackRequestActionType extends Enum<ItemStackRequestActionType>
     static Create: ItemStackRequestActionType;
     static Destroy: ItemStackRequestActionType;
     static Drop: ItemStackRequestActionType;
+    static Endif: ItemStackRequestActionType;
+    static Ifdef: ItemStackRequestActionType;
     static Place: ItemStackRequestActionType;
     static PlaceInItemContainer_DEPRECATED: ItemStackRequestActionType;
     static ScreenBeaconPayment: ItemStackRequestActionType;
@@ -24,8 +26,6 @@ export class ItemStackRequestActionType extends Enum<ItemStackRequestActionType>
     static Take: ItemStackRequestActionType;
     static TakeFromItemContainer_DEPRECATED: ItemStackRequestActionType;
     static Test: ItemStackRequestActionType;
-    static endif: ItemStackRequestActionType;
-    static ifdef: ItemStackRequestActionType;
     static getByName(paramarg0: string): ItemStackRequestActionType;
     static getByName(paramarg0: string, paramarg1: ItemStackRequestActionType): ItemStackRequestActionType;
     static getByValue(paramarg0: number): ItemStackRequestActionType;
@@ -37,5 +37,5 @@ export class ItemStackRequestActionType extends Enum<ItemStackRequestActionType>
     private constructor(arg2: ItemStackRequestActionType)
     readonly value: number;
     getValue(): number;
-    name(): "Take" | "Place" | "Swap" | "Drop" | "Destroy" | "Consume" | "Create" | "PlaceInItemContainer_DEPRECATED" | "TakeFromItemContainer_DEPRECATED" | "ScreenLabTableCombine" | "ScreenBeaconPayment" | "ScreenHUDMineBlock" | "CraftRecipe" | "CraftRecipeAuto" | "CraftCreative" | "CraftRecipeOptional" | "CraftRepairAndDisenchant" | "CraftLoom" | "CraftNonImplemented_DEPRECATEDASKTYLAING" | "CraftResults_DEPRECATEDASKTYLAING" | "ifdef" | "TEST_INFRASTRUCTURE_ENABLED" | "Test" | "endif";
+    name(): "Take" | "Place" | "Swap" | "Drop" | "Destroy" | "Consume" | "Create" | "PlaceInItemContainer_DEPRECATED" | "TakeFromItemContainer_DEPRECATED" | "ScreenLabTableCombine" | "ScreenBeaconPayment" | "ScreenHUDMineBlock" | "CraftRecipe" | "CraftRecipeAuto" | "CraftCreative" | "CraftRecipeOptional" | "CraftRepairAndDisenchant" | "CraftLoom" | "CraftNonImplemented_DEPRECATEDASKTYLAING" | "CraftResults_DEPRECATEDASKTYLAING" | "Ifdef" | "TEST_INFRASTRUCTURE_ENABLED" | "Test" | "Endif";
 }

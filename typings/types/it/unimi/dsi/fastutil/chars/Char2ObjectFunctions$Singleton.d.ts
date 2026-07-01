@@ -7,7 +7,6 @@ export class Char2ObjectFunctions$Singleton<V extends unknown> extends AbstractC
     // private key: string;
     // private value: V;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     get(arg0: Object): V;

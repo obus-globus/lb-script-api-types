@@ -51,7 +51,6 @@ export class Quaternionf extends Object implements Externalizable, Cloneable, Qu
     add(arg0: Quaternionfc): Quaternionf;
     add(arg0: Quaternionfc, arg1: Quaternionf): Quaternionf;
     angle(): number;
-    protected clone(): Object;
     clone(): Object;
     conjugate(): Quaternionf;
     conjugate(arg0: Quaternionf): Quaternionf;

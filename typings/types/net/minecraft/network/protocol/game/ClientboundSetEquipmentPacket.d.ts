@@ -14,7 +14,6 @@ export class ClientboundSetEquipmentPacket extends Object implements Packet<Clie
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetEquipmentPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(entity: number, slots: Pair<EquipmentSlot, ItemStack>[])
-    private constructor(input: RegistryFriendlyByteBuf)
     readonly entity: number;
     readonly slots: Pair<EquipmentSlot, ItemStack>[];
     getEntity(): number;

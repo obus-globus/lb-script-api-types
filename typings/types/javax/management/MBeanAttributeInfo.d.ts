@@ -12,7 +12,6 @@ export class MBeanAttributeInfo extends MBeanFeatureInfo implements Cloneable {
     // private isRead: boolean;
     // private isWrite: boolean;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getType(): string;
     hashCode(): number;

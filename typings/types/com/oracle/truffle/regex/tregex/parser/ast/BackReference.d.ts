@@ -6,7 +6,6 @@ import type { RegexASTNode } from '../../../../../../../com/oracle/truffle/regex
 import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class BackReference extends QuantifiableTerm {
-    private constructor(copy: BackReference)
     constructor(referencedGroupNumbers: number[])
     readonly groupNumbers: number[];
     copy(ast: RegexAST): BackReference;

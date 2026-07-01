@@ -6,7 +6,7 @@ import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { DelegatingOps } from '../../../net/minecraft/resources/DelegatingOps.d.ts'
 export class DelegatingOps$DelegateListBuilder extends Object implements ListBuilder<T> {
-    constructor(null_: DelegatingOps<T>, original: ListBuilder<T>)
+    constructor(null_: DelegatingOps<Object>, original: ListBuilder<Object>)
     // private original: ListBuilder<T>;
     add<T extends unknown, E extends unknown>(arg0: E, arg1: Encoder<E>): ListBuilder<T>;
     add<T extends unknown, E extends unknown>(value: E, encoder: Encoder<E>): ListBuilder<T>;

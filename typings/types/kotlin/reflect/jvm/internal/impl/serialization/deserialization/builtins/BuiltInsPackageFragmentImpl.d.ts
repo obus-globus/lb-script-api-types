@@ -11,7 +11,6 @@ import type { StorageManager } from '../../../../../../../../kotlin/reflect/jvm/
 export class BuiltInsPackageFragmentImpl extends DeserializedPackageFragmentImpl implements BuiltInsPackageFragment {
     static Companion: BuiltInsPackageFragmentImpl$Companion;
     static toString(paramarg0: DeclarationDescriptor): string;
-    private constructor(arg0: FqName, arg1: StorageManager, arg2: ModuleDescriptor, arg3: ProtoBuf$PackageFragment, arg4: BuiltInsBinaryVersion, arg5: boolean)
     constructor(arg0: FqName, arg1: StorageManager, arg2: ModuleDescriptor, arg3: ProtoBuf$PackageFragment, arg4: BuiltInsBinaryVersion, arg5: boolean, arg6: DefaultConstructorMarker)
     // private isFallback: boolean;
     toString(): string;

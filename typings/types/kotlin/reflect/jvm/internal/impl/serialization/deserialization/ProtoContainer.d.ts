@@ -5,7 +5,6 @@ import type { NameResolver } from '../../../../../../../kotlin/reflect/jvm/inter
 import type { TypeTable } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/TypeTable.d.ts'
 import type { FqName } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
 export abstract class ProtoContainer extends Object {
-    private constructor(arg0: NameResolver, arg1: TypeTable, arg2: SourceElement)
     constructor(arg0: NameResolver, arg1: TypeTable, arg2: SourceElement, arg3: DefaultConstructorMarker)
     readonly nameResolver: NameResolver;
     readonly source: SourceElement;

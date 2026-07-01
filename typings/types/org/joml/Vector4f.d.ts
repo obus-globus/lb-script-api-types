@@ -58,7 +58,6 @@ export class Vector4f extends Object implements Externalizable, Cloneable, Vecto
     angleCos(arg0: Vector4fc): number;
     ceil(): Vector4f;
     ceil(arg0: Vector4f): Vector4f;
-    protected clone(): Object;
     clone(): Object;
     distance(arg0: number, arg1: number, arg2: number, arg3: number): number;
     distance(arg0: Vector4fc): number;

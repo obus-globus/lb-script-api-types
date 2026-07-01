@@ -1,4 +1,3 @@
-import type { HttpPostStandardRequestDecoder$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteProcessor } from '../../../../../../io/netty/util/ByteProcessor.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class HttpPostStandardRequestDecoder$UrlEncodedDetector extends Object implements ByteProcessor {
@@ -15,7 +14,6 @@ export class HttpPostStandardRequestDecoder$UrlEncodedDetector extends Object im
     static FIND_NON_NUL: ByteProcessor;
     static FIND_NUL: ByteProcessor;
     static FIND_SEMI_COLON: ByteProcessor;
-    private constructor()
-    constructor(arg0: HttpPostStandardRequestDecoder$1)
+    constructor(arg0: any)
     process(arg0: number): boolean;
 }

@@ -16,7 +16,6 @@ export class ClientboundAnimatePacket extends Object implements Packet<ClientGam
     static SWING_OFF_HAND: number;
     static WAKE_UP: number;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(entity: Entity, action: number)
     readonly action: number;
     readonly id: number;

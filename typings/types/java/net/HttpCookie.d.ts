@@ -4,7 +4,6 @@ export class HttpCookie extends Object implements Cloneable {
     static domainMatches(paramarg0: string, paramarg1: string): boolean;
     static parse(paramarg0: string): HttpCookie[];
     constructor(arg0: string, arg1: string)
-    private constructor(arg0: string, arg1: string, arg2: string)
     constructor(arg0: string, arg1: string, arg2: string, arg3: number)
     readonly comment: string;
     readonly commentURL: string;
@@ -21,7 +20,6 @@ export class HttpCookie extends Object implements Cloneable {
     readonly version: number;
     // private whenCreated: number;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     // private expiryDate2DeltaSeconds(arg0: string): number;
     getComment(): string;

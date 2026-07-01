@@ -101,7 +101,6 @@ export class RuleBasedNumberFormat extends NumberFormat implements Cloneable {
     // private scannerProvider: RbnfLenientScannerProvider;
     // private adjustForContext(arg0: string): string;
     clone(): RuleBasedNumberFormat;
-    protected clone(): Object;
     createPluralFormat(arg0: PluralRules$PluralType, arg1: string): PluralFormat;
     equals(arg0: Object | null): boolean;
     findRuleSet(arg0: string): NFRuleSet;

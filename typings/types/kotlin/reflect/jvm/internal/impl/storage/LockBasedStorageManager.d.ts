@@ -1,4 +1,3 @@
-import type { LockBasedStorageManager$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InterruptedException } from '../../../../../../java/lang/InterruptedException.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -16,8 +15,7 @@ export class LockBasedStorageManager extends Object implements StorageManager {
     static NO_LOCKS: StorageManager;
     constructor(arg0: string)
     constructor(arg0: string, arg1: () => void, arg2: (param0: InterruptedException) => void)
-    private constructor(arg0: string, arg1: LockBasedStorageManager$ExceptionHandlingStrategy, arg2: SimpleLock)
-    constructor(arg0: string, arg1: LockBasedStorageManager$ExceptionHandlingStrategy, arg2: SimpleLock, arg3: LockBasedStorageManager$1)
+    constructor(arg0: string, arg1: LockBasedStorageManager$ExceptionHandlingStrategy, arg2: SimpleLock, arg3: LockBasedStorageManager)
     // private debugText: string;
     // private exceptionHandlingStrategy: LockBasedStorageManager$ExceptionHandlingStrategy;
     // private lock: SimpleLock;

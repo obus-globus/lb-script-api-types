@@ -9,8 +9,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EconomicMap } from '../../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class NFAState extends BasicState<NFAState, NFAStateTransition> implements JsonConvertible {
     constructor(original: NFAState)
-    private constructor(id: number, stateSet: RegexASTNode[], flags: number, possibleResults: number[], finishedLookBehinds: LookBehindAssertion[], matchedConditionGroupsMap: EconomicMap<number, number[]>)
-    private constructor(id: number, stateSet: RegexASTNode[], flags: number, finishedLookBehinds: LookBehindAssertion[], matchedConditionGroupsMap: EconomicMap<number, number[]>)
     constructor(id: number, stateSet: RegexASTNode[], finishedLookBehinds: LookBehindAssertion[], hasPrefixStates: boolean, mustAdvance: boolean)
     constructor(id: number, stateSet: RegexASTNode[], finishedLookBehinds: LookBehindAssertion[], hasPrefixStates: boolean, mustAdvance: boolean, matchedConditionGroupsMap: EconomicMap<number, number[]>)
     readonly finishedLookBehinds: LookBehindAssertion[];

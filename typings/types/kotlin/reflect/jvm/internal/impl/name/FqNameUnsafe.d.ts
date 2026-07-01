@@ -7,7 +7,6 @@ export class FqNameUnsafe extends Object {
     static Companion: FqNameUnsafe$Companion;
     constructor(arg0: string)
     constructor(arg0: string, arg1: FqName)
-    private constructor(arg0: string, arg1: FqNameUnsafe, arg2: Name)
     constructor(arg0: string, arg1: FqNameUnsafe, arg2: Name, arg3: DefaultConstructorMarker)
     // private fqName: string;
     // private parent: FqNameUnsafe;

@@ -1,4 +1,3 @@
-import type { ZipFile$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Closeable } from '../../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../../java/io/File.d.ts'
 import type { InputStream } from '../../../../../../java/io/InputStream.d.ts'
@@ -8,6 +7,7 @@ import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Enumeration } from '../../../../../../java/util/Enumeration.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { InflaterInputStreamWithStatistics } from '../../../../../../org/apache/commons/compress/archivers/zip/InflaterInputStreamWithStatistics.d.ts'
 import type { ZipArchiveEntry } from '../../../../../../org/apache/commons/compress/archivers/zip/ZipArchiveEntry.d.ts'
 import type { ZipArchiveEntryPredicate } from '../../../../../../org/apache/commons/compress/archivers/zip/ZipArchiveEntryPredicate.d.ts'
 import type { ZipArchiveOutputStream } from '../../../../../../org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.d.ts'
@@ -26,11 +26,9 @@ export class ZipFile extends Object implements Closeable {
     constructor(arg0: File, arg1: string, arg2: boolean, arg3: boolean)
     constructor(arg0: SeekableByteChannel)
     constructor(arg0: SeekableByteChannel, arg1: string)
-    constructor(arg0: SeekableByteChannel, arg1: string, arg2: Charset, arg3: boolean, arg4: boolean, arg5: boolean, arg6: (param0: Object) => Object, arg7: ZipFile$1)
-    private constructor(arg0: SeekableByteChannel, arg1: string, arg2: Charset, arg3: boolean, arg4: boolean, arg5: boolean, arg6: (param0: InputStream) => InputStream)
+    constructor(arg0: SeekableByteChannel, arg1: string, arg2: Charset, arg3: boolean, arg4: boolean, arg5: boolean, arg6: (param0: Object) => Object, arg7: InflaterInputStreamWithStatistics)
     constructor(arg0: SeekableByteChannel, arg1: string, arg2: string, arg3: boolean)
     constructor(arg0: SeekableByteChannel, arg1: string, arg2: string, arg3: boolean, arg4: boolean)
-    private constructor(arg0: SeekableByteChannel, arg1: string, arg2: string, arg3: boolean, arg4: boolean, arg5: boolean)
     constructor(arg0: Path[])
     constructor(arg0: Path[], arg1: string)
     constructor(arg0: Path[], arg1: string, arg2: boolean)

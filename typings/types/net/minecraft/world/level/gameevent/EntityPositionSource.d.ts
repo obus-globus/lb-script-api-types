@@ -17,7 +17,6 @@ export class EntityPositionSource extends Object implements PositionSource {
     static CODEC: MapCodec<EntityPositionSource>;
     static STREAM_CODEC: StreamCodec<ByteBuf, EntityPositionSource>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, PositionSource>;
-    private constructor(entityOrUuidOrId: Either<Entity, Either<UUID, number>>, yOffset: number)
     constructor(entity: Entity, yOffset: number)
     // private entityOrUuidOrId: Either<Entity, Either<UUID, number>>;
     // private yOffset: number;

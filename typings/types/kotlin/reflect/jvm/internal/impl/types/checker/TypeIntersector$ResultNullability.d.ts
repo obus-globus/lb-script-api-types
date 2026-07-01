@@ -11,7 +11,6 @@ export class TypeIntersector$ResultNullability extends Enum<TypeIntersector$Resu
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeIntersector$ResultNullability;
     static values(): (Object | null)[];
-    private constructor()
     constructor(arg2: DefaultConstructorMarker)
     combine(arg0: UnwrappedType): TypeIntersector$ResultNullability;
     getResultNullability(arg0: UnwrappedType): TypeIntersector$ResultNullability;

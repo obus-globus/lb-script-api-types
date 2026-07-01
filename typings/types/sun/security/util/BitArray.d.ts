@@ -4,7 +4,6 @@ export class BitArray extends Object {
     constructor(arg0: number)
     constructor(arg0: number, arg1: number[])
     constructor(arg0: number, arg1: number[], arg2: number)
-    private constructor(arg0: BitArray)
     // private length: number;
     // private repn: number[];
     clone(): Object;

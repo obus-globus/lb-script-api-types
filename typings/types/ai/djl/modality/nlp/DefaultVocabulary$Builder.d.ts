@@ -1,12 +1,10 @@
-import type { DefaultVocabulary$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { DefaultVocabulary } from '../../../../ai/djl/modality/nlp/DefaultVocabulary.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DefaultVocabulary$Builder extends Object {
-    private constructor()
-    constructor(arg0: DefaultVocabulary$1)
+    constructor(arg0: any)
     // private maxTokens: number;
     // private minFrequency: number;
     // private reservedTokens: string[];

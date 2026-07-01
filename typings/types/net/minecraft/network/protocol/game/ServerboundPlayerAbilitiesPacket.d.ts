@@ -11,7 +11,6 @@ import type { Abilities } from '../../../../../net/minecraft/world/entity/player
 export class ServerboundPlayerAbilitiesPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundPlayerAbilitiesPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(abilities: Abilities)
     // private isFlying: boolean;
     // private viaFabricPlus$abilities: Abilities;

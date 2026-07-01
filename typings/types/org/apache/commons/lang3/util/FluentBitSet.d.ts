@@ -18,7 +18,6 @@ export class FluentBitSet extends Object implements Serializable, Cloneable {
     clear(arg0: number): FluentBitSet;
     clear(arg0: number, arg1: number): FluentBitSet;
     clear(arg0: number[]): FluentBitSet;
-    protected clone(): Object;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     flip(arg0: number): FluentBitSet;

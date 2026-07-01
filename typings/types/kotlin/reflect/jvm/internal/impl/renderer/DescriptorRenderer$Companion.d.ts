@@ -4,7 +4,6 @@ import type { ClassifierDescriptorWithTypeParameters } from '../../../../../../k
 import type { DescriptorRenderer } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRenderer.d.ts'
 import type { DescriptorRendererOptions } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererOptions.d.ts'
 export class DescriptorRenderer$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     getClassifierKindPrefix(arg0: ClassifierDescriptorWithTypeParameters): string;
     withOptions(arg0: (param0: DescriptorRendererOptions) => void): DescriptorRenderer;

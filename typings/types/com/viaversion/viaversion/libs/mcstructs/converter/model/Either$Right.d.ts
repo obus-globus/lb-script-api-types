@@ -1,4 +1,3 @@
-import type { Either$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Either } from '../../../../../../../com/viaversion/viaversion/libs/mcstructs/converter/model/Either.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -6,8 +5,7 @@ export class Either$Right<L extends unknown, R extends unknown> extends Object i
     static left(paramarg0: Object | null): Either<Object, Object>;
     static right(paramarg0: Object | null): Either<Object, Object>;
     static unwrap(paramarg0: Either<Object, Object>): Object | null;
-    private constructor(arg0: R)
-    constructor(arg0: Object, arg1: Either$1)
+    constructor(arg0: Object, arg1: any)
     readonly right: R;
     canEqual(arg0: Object): boolean;
     equals(arg0: Object | null): boolean;

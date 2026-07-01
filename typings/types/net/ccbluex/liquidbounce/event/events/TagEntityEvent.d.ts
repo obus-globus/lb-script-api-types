@@ -4,6 +4,9 @@ import type { EntityTargetingInfo } from '../../../../../net/ccbluex/liquidbounc
 import type { Priority } from '../../../../../net/ccbluex/liquidbounce/utils/kotlin/Priority.d.ts'
 import type { PriorityField } from '../../../../../net/ccbluex/liquidbounce/utils/kotlin/PriorityField.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
+/**
+ * Fires to classify an entity for targeting (target / friend / ignored, etc.), exposing the entity and its mutable targeting info.
+ */
 export class TagEntityEvent extends Event {
     constructor(entity: Entity, targetingInfo: EntityTargetingInfo)
     readonly entity: Entity;
@@ -13,13 +16,13 @@ export class TagEntityEvent extends Event {
     /**
      * Don't start combat this target
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt:51}
      */
     dontTarget(): void;
     /**
      * Fully ignore that target
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt:60}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/EntityEvents.kt:60}
      */
     ignore(): void;
 }

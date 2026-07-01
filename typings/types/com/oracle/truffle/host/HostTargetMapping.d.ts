@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { HostAccess$TargetMappingPrecedence } from '../../../../org/graalvm/polyglot/HostAccess$TargetMappingPrecedence.d.ts'
 export class HostTargetMapping extends Object implements Comparable<HostTargetMapping> {
-    constructor(sourceType: Class<S>, targetType: Class<T>, accepts: (param0: S) => boolean, converter: (param0: S) => T, precedence: HostAccess$TargetMappingPrecedence)
+    constructor(sourceType: Class<Object>, targetType: Class<Object>, accepts: (param0: Object) => boolean, converter: (param0: Object) => Object, precedence: HostAccess$TargetMappingPrecedence)
     // private accepts: (param0: Object) => boolean;
     // private converter: (param0: Object) => Object;
     // private hostPriority: number;

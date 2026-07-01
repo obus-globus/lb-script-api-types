@@ -5,7 +5,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { HashCache$ProviderCache } from '../../../net/minecraft/data/HashCache$ProviderCache.d.ts'
 export class HashCache$ProviderCacheBuilder extends Record {
     constructor(version: string)
-    private constructor(version: string, data: Map<Path[], HashCode>)
     // private data: Map<Path[], HashCode>;
     // private version: string;
     build(): HashCache$ProviderCache;

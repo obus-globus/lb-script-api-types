@@ -1,4 +1,3 @@
-import type { PublicClientApplication$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AbstractClientApplicationBase } from '../../../../com/microsoft/aad/msal4j/AbstractClientApplicationBase.d.ts'
 import type { AuthorizationCodeParameters } from '../../../../com/microsoft/aad/msal4j/AuthorizationCodeParameters.d.ts'
 import type { DeviceCodeFlowParameters } from '../../../../com/microsoft/aad/msal4j/DeviceCodeFlowParameters.d.ts'
@@ -16,8 +15,7 @@ import type { CompletableFuture } from '../../../../java/util/concurrent/Complet
 export class PublicClientApplication extends AbstractClientApplicationBase implements IPublicClientApplication {
     static DEFAULT_AUTHORITY: string;
     static builder(paramarg0: string): PublicClientApplication$Builder;
-    private constructor(arg0: PublicClientApplication$Builder)
-    constructor(arg0: PublicClientApplication$Builder, arg1: PublicClientApplication$1)
+    constructor(arg0: PublicClientApplication$Builder, arg1: any)
     // private broker: IBroker;
     // private brokerEnabled: boolean;
     acquireToken(arg0: AuthorizationCodeParameters): CompletableFuture<IAuthenticationResult>;

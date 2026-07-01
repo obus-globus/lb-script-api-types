@@ -93,7 +93,6 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     constructor(arg0: File, arg1: string)
     constructor(arg0: Path[])
     constructor(arg0: Path[], arg1: string, arg2: LinkOption[])
-    private constructor(arg0: boolean)
     constructor(arg0: number[])
     constructor(arg0: number[], arg1: ZipEncoding)
     constructor(arg0: number[], arg1: ZipEncoding, arg2: boolean)

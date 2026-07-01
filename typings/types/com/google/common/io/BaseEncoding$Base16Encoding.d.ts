@@ -9,7 +9,6 @@ export class BaseEncoding$Base16Encoding extends BaseEncoding$StandardBaseEncodi
     static base32Hex(): BaseEncoding;
     static base64(): BaseEncoding;
     static base64Url(): BaseEncoding;
-    private constructor(alphabet: BaseEncoding$Alphabet)
     constructor(name: string, alphabetChars: string)
     // private encoding: string[];
     decodeTo(target: number[], chars: CharSequence): number;

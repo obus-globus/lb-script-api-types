@@ -7,7 +7,6 @@ export class Char2FloatFunctions$Singleton extends AbstractChar2FloatFunction im
     // private key: string;
     // private value: number;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     get(arg0: Object): number;

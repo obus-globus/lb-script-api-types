@@ -89,7 +89,6 @@ export class ErrorTypeKind extends Enum<ErrorTypeKind> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): ErrorTypeKind;
     static values(): (Object | null)[];
-    private constructor(arg2: string, arg3: boolean)
     constructor(arg2: string, arg3: boolean, arg4: number, arg5: DefaultConstructorMarker)
     readonly debugMessage: string;
     // private isUnresolved: boolean;

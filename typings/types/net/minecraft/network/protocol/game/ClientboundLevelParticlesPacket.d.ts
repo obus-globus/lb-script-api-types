@@ -11,8 +11,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 export class ClientboundLevelParticlesPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundLevelParticlesPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    constructor(particle: T, overrideLimiter: boolean, alwaysShow: boolean, x: number, y: number, z: number, xDist: number, yDist: number, zDist: number, maxSpeed: number, count: number)
-    private constructor(input: RegistryFriendlyByteBuf)
+    constructor(particle: ParticleOptions, overrideLimiter: boolean, alwaysShow: boolean, x: number, y: number, z: number, xDist: number, yDist: number, zDist: number, maxSpeed: number, count: number)
     // private alwaysShow: boolean;
     readonly count: number;
     readonly maxSpeed: number;

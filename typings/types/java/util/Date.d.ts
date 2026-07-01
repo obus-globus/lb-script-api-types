@@ -21,7 +21,6 @@ export class Date extends Object implements Serializable, Cloneable, Comparable<
     after(arg0: Date): boolean;
     before(arg0: Date): boolean;
     clone(): Object;
-    protected clone(): Object;
     compareTo(arg0: Date): number;
     equals(arg0: Object | null): boolean;
     // private getCalendarDate(): BaseCalendar$Date;

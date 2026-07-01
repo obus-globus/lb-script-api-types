@@ -1,4 +1,3 @@
-import type { Crc16$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { Checksum } from '../../../../../java/util/zip/Checksum.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -22,8 +21,7 @@ export class Crc16 extends Object implements Checksum {
     static modbus(): Crc16;
     static nrsc5(): Crc16;
     static usb(): Crc16;
-    private constructor(arg0: Crc16$Builder)
-    constructor(arg0: Crc16$Builder, arg1: Crc16$1)
+    constructor(arg0: Crc16$Builder, arg1: any)
     // private crc: number;
     // private init: number;
     // private table: number[];

@@ -9,7 +9,6 @@ export class ReferenceMapper extends Object implements Serializable, IReferenceM
     static read(paramarg0: Reader, paramarg1: string): ReferenceMapper;
     static read(paramarg0: string): ReferenceMapper;
     constructor()
-    private constructor(arg0: boolean, arg1: string)
     readonly context: string;
     // private data: { [key: string]: { [key: string]: { [key: string]: string } } };
     // private mappings: { [key: string]: { [key: string]: string } };

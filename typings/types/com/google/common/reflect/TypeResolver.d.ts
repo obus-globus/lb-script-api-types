@@ -1,6 +1,6 @@
-import type { TypeResolver$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TypeResolver$TypeTable } from '../../../../com/google/common/reflect/TypeResolver$TypeTable.d.ts'
 import type { TypeResolver$TypeVariableKey } from '../../../../com/google/common/reflect/TypeResolver$TypeVariableKey.d.ts'
+import type { TypeVisitor } from '../../../../com/google/common/reflect/TypeVisitor.d.ts'
 import type { GenericArrayType } from '../../../../java/lang/reflect/GenericArrayType.d.ts'
 import type { ParameterizedType } from '../../../../java/lang/reflect/ParameterizedType.d.ts'
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
@@ -8,8 +8,7 @@ import type { WildcardType } from '../../../../java/lang/reflect/WildcardType.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TypeResolver extends Object {
     constructor()
-    private constructor(typeTable: TypeResolver$TypeTable)
-    constructor(arg0: TypeResolver$TypeTable, arg1: TypeResolver$1)
+    constructor(arg0: TypeResolver$TypeTable, arg1: TypeVisitor)
     // private typeTable: TypeResolver$TypeTable;
     // private resolveGenericArrayType(type: GenericArrayType): Type;
     // private resolveParameterizedType(type: ParameterizedType): ParameterizedType;

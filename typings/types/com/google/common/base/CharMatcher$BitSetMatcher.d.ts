@@ -1,6 +1,6 @@
-import type { CharMatcher$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { CharMatcher } from '../../../../com/google/common/base/CharMatcher.d.ts'
 import type { CharMatcher$NamedFastMatcher } from '../../../../com/google/common/base/CharMatcher$NamedFastMatcher.d.ts'
+import type { CharMatcher$NegatedFastMatcher } from '../../../../com/google/common/base/CharMatcher$NegatedFastMatcher.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { BitSet } from '../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -26,8 +26,7 @@ export class CharMatcher$BitSetMatcher extends CharMatcher$NamedFastMatcher {
     static noneOf(paramsequence: CharSequence): CharMatcher;
     static singleWidth(): CharMatcher;
     static whitespace(): CharMatcher;
-    private constructor(table: BitSet, description: string)
-    constructor(arg0: BitSet, arg1: string, arg2: CharMatcher$1)
+    constructor(arg0: BitSet, arg1: string, arg2: CharMatcher$NegatedFastMatcher)
     // private table: BitSet;
     matches(c: string): boolean;
     setBits(bitSet: BitSet): void;

@@ -11,7 +11,6 @@ export class ClientboundClearTitlesPacket extends Object implements Packet<Clien
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundClearTitlesPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(resetTimes: boolean)
-    private constructor(input: FriendlyByteBuf)
     // private resetTimes: boolean;
     handle(listener: ClientGamePacketListener): void;
     isSkippable(): boolean;

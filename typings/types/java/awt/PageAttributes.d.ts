@@ -16,7 +16,6 @@ export class PageAttributes extends Object implements Cloneable {
     readonly printQuality: PageAttributes$PrintQualityType;
     readonly printerResolution: number[];
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getColor(): PageAttributes$ColorType;
     getMedia(): PageAttributes$MediaType;

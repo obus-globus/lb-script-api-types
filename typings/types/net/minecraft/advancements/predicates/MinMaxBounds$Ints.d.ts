@@ -23,7 +23,6 @@ export class MinMaxBounds$Ints extends Record implements MinMaxBounds<number> {
     static exactly(paramvalue: number): MinMaxBounds$Ints;
     static fromReader(paramreader: StringReader): MinMaxBounds$Ints;
     static validateContainedInRange(paramallowed: MinMaxBounds<Number>): (param0: Object | null) => DataResult<Object>;
-    private constructor(bounds: MinMaxBounds$Bounds<number>)
     constructor(bounds: MinMaxBounds$Bounds<number>, boundsSqr: MinMaxBounds$Bounds<number>)
     // private bounds: MinMaxBounds$Bounds<number>;
     // private boundsSqr: MinMaxBounds$Bounds<number>;

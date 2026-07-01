@@ -1,9 +1,8 @@
-import type { SevenZFile$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
+import type { FilterInputStream } from '../../../../../../java/io/FilterInputStream.d.ts'
 import type { BitSet } from '../../../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SevenZFile$ArchiveStatistics extends Object {
-    private constructor()
-    constructor(arg0: SevenZFile$1)
+    constructor(arg0: FilterInputStream)
     // private folderHasCrc: BitSet;
     // private numberOfCoders: number;
     // private numberOfEntries: number;

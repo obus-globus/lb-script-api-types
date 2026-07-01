@@ -5,7 +5,6 @@ import type { WeakReference } from '../../java/lang/ref/WeakReference.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 export class ThreadGroup extends Object implements Thread$UncaughtExceptionHandler {
-    private constructor()
     constructor(arg0: ThreadGroup, arg1: string)
     constructor(arg0: ThreadGroup, arg1: string, arg2: number, arg3: boolean)
     constructor(arg0: string)

@@ -1,4 +1,3 @@
-import type { BuiltinModMetadata$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Version } from '../../../../../net/fabricmc/loader/api/Version.d.ts'
@@ -11,8 +10,7 @@ import type { AbstractModMetadata } from '../../../../../net/fabricmc/loader/imp
 export class BuiltinModMetadata extends AbstractModMetadata {
     static TYPE_BUILTIN: string;
     static TYPE_FABRIC_MOD: string;
-    private constructor(arg0: string, arg1: Version, arg2: ModEnvironment, arg3: string, arg4: string, arg5: Person[], arg6: Person[], arg7: ContactInformation, arg8: string[], arg9: { [key: number]: string }, arg10: ModDependency[])
-    constructor(arg0: string, arg1: Version, arg2: ModEnvironment, arg3: string, arg4: string, arg5: (Object | null)[], arg6: (Object | null)[], arg7: ContactInformation, arg8: (Object | null)[], arg9: Map<Object, Object>, arg10: (Object | null)[], arg11: BuiltinModMetadata$1)
+    constructor(arg0: string, arg1: Version, arg2: ModEnvironment, arg3: string, arg4: string, arg5: (Object | null)[], arg6: (Object | null)[], arg7: ContactInformation, arg8: (Object | null)[], arg9: Map<Object, Object>, arg10: (Object | null)[], arg11: any)
     readonly authors: Person[];
     readonly contact: ContactInformation;
     readonly contributors: Person[];

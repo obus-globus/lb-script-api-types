@@ -2,7 +2,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { JvmType$Primitive } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/JvmType$Primitive.d.ts'
 export class JvmType$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     getBOOLEAN$org_jetbrains_kotlin_descriptors_jvm(): JvmType$Primitive;
     getBYTE$org_jetbrains_kotlin_descriptors_jvm(): JvmType$Primitive;

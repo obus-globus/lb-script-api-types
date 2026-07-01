@@ -10,7 +10,6 @@ export class Double2IntRBTreeMap$Entry extends AbstractDouble2IntMap$BasicEntry 
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Double2IntRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Double2IntRBTreeMap$Entry;

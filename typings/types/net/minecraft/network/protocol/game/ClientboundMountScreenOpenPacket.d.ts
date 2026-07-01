@@ -11,7 +11,6 @@ export class ClientboundMountScreenOpenPacket extends Object implements Packet<C
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundMountScreenOpenPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(containerId: number, inventoryColumns: number, entityId: number)
-    private constructor(input: FriendlyByteBuf)
     readonly containerId: number;
     readonly entityId: number;
     readonly inventoryColumns: number;

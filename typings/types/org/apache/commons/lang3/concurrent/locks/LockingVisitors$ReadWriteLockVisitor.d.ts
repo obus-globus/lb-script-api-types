@@ -1,4 +1,3 @@
-import type { LockingVisitors$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ReadWriteLock } from '../../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { LockingVisitors$LockVisitor } from '../../../../../../org/apache/commons/lang3/concurrent/locks/LockingVisitors$LockVisitor.d.ts'
@@ -6,6 +5,5 @@ import type { LockingVisitors$ReadWriteLockVisitor$Builder } from '../../../../.
 export class LockingVisitors$ReadWriteLockVisitor<O extends unknown> extends LockingVisitors$LockVisitor<O, ReadWriteLock> {
     static builder(): LockingVisitors$ReadWriteLockVisitor$Builder<Object>;
     constructor(arg0: O, arg1: ReadWriteLock)
-    constructor(arg0: LockingVisitors$ReadWriteLockVisitor$Builder<Object>, arg1: LockingVisitors$1)
-    private constructor(arg0: LockingVisitors$ReadWriteLockVisitor$Builder<O>)
+    constructor(arg0: LockingVisitors$ReadWriteLockVisitor$Builder<Object>, arg1: any)
 }

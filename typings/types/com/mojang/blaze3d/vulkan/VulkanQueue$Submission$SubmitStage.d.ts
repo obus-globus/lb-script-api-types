@@ -4,7 +4,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { VkCommandBuffer } from '../../../../org/lwjgl/vulkan/VkCommandBuffer.d.ts'
 export class VulkanQueue$Submission$SubmitStage extends Record {
     constructor()
-    private constructor(waits: VulkanQueue$Submission$SemaphoreOp[], commandBuffers: VkCommandBuffer[], signals: VulkanQueue$Submission$SemaphoreOp[])
     // private commandBuffers: VkCommandBuffer[];
     // private signals: VulkanQueue$Submission$SemaphoreOp[];
     // private waits: VulkanQueue$Submission$SemaphoreOp[];

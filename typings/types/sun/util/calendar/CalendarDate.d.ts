@@ -25,7 +25,6 @@ export class CalendarDate extends Object implements Cloneable {
     addHours(arg0: number): CalendarDate;
     addMonth(arg0: number): CalendarDate;
     addYear(arg0: number): CalendarDate;
-    protected clone(): Object;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     getDayOfMonth(): number;

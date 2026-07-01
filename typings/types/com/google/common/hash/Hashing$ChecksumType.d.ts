@@ -1,4 +1,3 @@
-import type { Hashing$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { HashFunction } from '../../../../com/google/common/hash/HashFunction.d.ts'
 import type { ImmutableSupplier } from '../../../../com/google/common/hash/ImmutableSupplier.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -12,8 +11,7 @@ export class Hashing$ChecksumType extends Enum<Hashing$ChecksumType> implements 
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Hashing$ChecksumType;
     static values(): (Object | null)[];
-    private constructor(toString: string)
-    constructor(arg2: string, arg3: Hashing$1)
+    constructor(arg2: string, arg3: any)
     hashFunction: HashFunction;
     name(): "CRC_32" | "CRC_32C" | "ADLER_32";
 }

@@ -6,7 +6,6 @@ export class Char2IntFunctions$EmptyFunction extends AbstractChar2IntFunction im
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): number;

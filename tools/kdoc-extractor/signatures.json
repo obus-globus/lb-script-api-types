@@ -7788,6 +7788,12 @@
             "type": "T",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "aliases",
+            "type": "List<String>",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": "ChoiceListValue<T>",
@@ -7815,12 +7821,18 @@
             "type": "Set<T>",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "aliases",
+            "type": "List<String>",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": "ChoiceListValue<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 572
+          "line": 575
         }
       }
     ],
@@ -8138,7 +8150,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 633
+          "line": 642
         }
       }
     ],
@@ -8269,7 +8281,7 @@
         "returns": "ModeValueGroup<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 575
+          "line": 584
         }
       },
       {
@@ -8302,7 +8314,7 @@
         "returns": "ModeValueGroup<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 590
+          "line": 599
         }
       },
       {
@@ -8335,7 +8347,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 602
+          "line": 611
         }
       }
     ],
@@ -8885,7 +8897,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-          "line": 609
+          "line": 618
         }
       }
     ],
@@ -21362,7 +21374,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt",
-          "line": 262
+          "line": 260
         }
       }
     ],
@@ -21372,7 +21384,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt",
-          "line": 285
+          "line": 283
         }
       }
     ],
@@ -21389,7 +21401,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt",
-          "line": 256
+          "line": 254
         }
       }
     ],
@@ -21424,7 +21436,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt",
-          "line": 249
+          "line": 247
         }
       }
     ],
@@ -21434,7 +21446,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt",
-          "line": 83
+          "line": 82
         }
       }
     ],
@@ -25939,7 +25951,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/tpaura/modes/AStarMode.kt",
-          "line": 194
+          "line": 192
         }
       }
     ],
@@ -25949,7 +25961,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/tpaura/modes/AStarMode.kt",
-          "line": 120
+          "line": 119
         }
       }
     ],
@@ -25966,7 +25978,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/tpaura/modes/AStarMode.kt",
-          "line": 163
+          "line": 161
         }
       }
     ],
@@ -28636,7 +28648,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoPearl.kt",
-          "line": 243
+          "line": 244
         }
       }
     ],
@@ -28686,7 +28698,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleAutoPearl.kt",
-          "line": 239
+          "line": 240
         }
       }
     ],
@@ -31856,7 +31868,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-          "line": 80
+          "line": 79
         }
       }
     ],
@@ -31866,7 +31878,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-          "line": 75
+          "line": 74
         }
       }
     ],
@@ -33811,7 +33823,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-          "line": 66
+          "line": 73
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.allowsMovementOverride": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
+          "line": 70
         }
       }
     ],
@@ -33821,7 +33843,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-          "line": 172
+          "line": 179
         },
         "isExtension": true,
         "receiver": "Screen"
@@ -33833,7 +33855,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-          "line": 120
+          "line": 127
         }
       }
     ],
@@ -33850,7 +33872,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-          "line": 101
+          "line": 108
         }
       }
     ],
@@ -44054,40 +44076,6 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer.ShowTimer.TimeUnit.apply": [
-      {
-        "params": [
-          {
-            "name": "t",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "String",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-          "line": 68
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer.ShowTimer.TimeUnit.constructor": [
-      {
-        "params": [
-          {
-            "name": "tag",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-          "line": 64
-        }
-      }
-    ],
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer.getTntColor": [
       {
         "params": [
@@ -44101,7 +44089,7 @@
         "returns": "Color4b",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-          "line": 118
+          "line": 103
         }
       }
     ],
@@ -44111,7 +44099,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-          "line": 129
+          "line": 114
         }
       }
     ],
@@ -44214,7 +44202,83 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
-          "line": 284
+          "line": 330
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay.modifyDrawSide": [
+      {
+        "params": [
+          {
+            "name": "blockState",
+            "type": "BlockState",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "level",
+            "type": "BlockGetter",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "blockPos",
+            "type": "BlockPos",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "side",
+            "type": "Direction",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "original",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
+          "line": 292
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay.modifyShouldRenderFace": [
+      {
+        "params": [
+          {
+            "name": "original",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "state",
+            "type": "BlockState",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "otherState",
+            "type": "BlockState",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "side",
+            "type": "Direction",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
+          "line": 320
         }
       }
     ],
@@ -44224,7 +44288,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
-          "line": 293
+          "line": 339
         }
       }
     ],
@@ -44234,7 +44298,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
-          "line": 289
+          "line": 335
         }
       }
     ],
@@ -44257,7 +44321,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
-          "line": 261
+          "line": 265
         }
       },
       {
@@ -44284,7 +44348,64 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
-          "line": 273
+          "line": 312
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay.shouldRenderTransparentBackground": [
+      {
+        "params": [
+          {
+            "name": "blockState",
+            "type": "BlockState",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
+          "line": 277
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay.shouldSkipRender": [
+      {
+        "params": [
+          {
+            "name": "blockState",
+            "type": "BlockState",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "blockPos",
+            "type": "BlockPos",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
+          "line": 280
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay.transparentBackgroundAlpha": [
+      {
+        "params": [
+          {
+            "name": "blockState",
+            "type": "BlockState",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
+          "line": 283
         }
       }
     ],
@@ -44301,7 +44422,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
-          "line": 297
+          "line": 343
         }
       }
     ],
@@ -44451,6 +44572,40 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRadar.kt",
           "line": 75
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.TimeUnit.constructor": [
+      {
+        "params": [
+          {
+            "name": "tag",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/TimeUnit.kt",
+          "line": 24
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.TimeUnit.format": [
+      {
+        "params": [
+          {
+            "name": "ticks",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "String",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/TimeUnit.kt",
+          "line": 35
         }
       }
     ],
@@ -46526,7 +46681,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt",
-          "line": 217
+          "line": 235
         }
       }
     ],
@@ -46549,7 +46704,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt",
-          "line": 153
+          "line": 167
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -46561,41 +46716,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt",
-          "line": 77
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.TrajectoryDetailedInfoRenderer.DurationUnit.constructor": [
-      {
-        "params": [
-          {
-            "name": "tag",
-            "type": "String",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer.kt",
-          "line": 65
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.TrajectoryDetailedInfoRenderer.DurationUnit.format": [
-      {
-        "params": [
-          {
-            "name": "ticks",
-            "type": "Int",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "String",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer.kt",
-          "line": 76
+          "line": 81
         }
       }
     ],
@@ -46618,7 +46739,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer.kt",
-          "line": 49
+          "line": 48
         }
       }
     ],
@@ -46635,7 +46756,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer.kt",
-          "line": 42
+          "line": 41
         }
       }
     ],
@@ -46645,7 +46766,7 @@
         "returns": "Vec3f?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer.kt",
-          "line": 81
+          "line": 66
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -64028,7 +64149,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 321
+          "line": 349
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64065,7 +64186,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 382
+          "line": 410
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64102,7 +64223,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 398
+          "line": 426
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64127,7 +64248,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 547
+          "line": 575
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64158,7 +64279,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 570
+          "line": 598
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64195,7 +64316,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 172
+          "line": 174
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64232,7 +64353,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 157
+          "line": 159
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64269,7 +64390,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 131
+          "line": 133
         },
         "isExtension": true,
         "receiver": "RenderTarget"
@@ -64318,7 +64439,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 456
+          "line": 484
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64361,7 +64482,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 488
+          "line": 516
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64398,7 +64519,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 584
+          "line": 612
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64429,7 +64550,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 194
+          "line": 196
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64454,13 +64575,11 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 246
+          "line": 284
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.RenderShortcutsKt.drawLineStripAsLines": [
+      },
       {
         "params": [
           {
@@ -64471,7 +64590,7 @@
           },
           {
             "name": "positions",
-            "type": "Collection<Vec3>",
+            "type": "VertexList",
             "nullable": false,
             "vararg": false
           }
@@ -64479,7 +64598,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 262
+          "line": 294
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64504,7 +64623,30 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 230
+          "line": 257
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
+      },
+      {
+        "params": [
+          {
+            "name": "argb",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "positions",
+            "type": "VertexList",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
+          "line": 268
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64535,7 +64677,36 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 204
+          "line": 206
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEnvironment"
+      },
+      {
+        "params": [
+          {
+            "name": "argb",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "width",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "positions",
+            "type": "VertexList",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
+          "line": 227
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64572,7 +64743,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 414
+          "line": 442
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64609,7 +64780,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 530
+          "line": 558
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64640,7 +64811,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 341
+          "line": 369
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64683,7 +64854,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 359
+          "line": 387
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64714,7 +64885,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 288
+          "line": 316
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64739,7 +64910,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 276
+          "line": 304
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64776,7 +64947,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 310
+          "line": 338
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64819,7 +64990,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 84
+          "line": 86
         }
       }
     ],
@@ -64836,7 +65007,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 102
+          "line": 104
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64871,7 +65042,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 109
+          "line": 111
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64894,7 +65065,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 122
+          "line": 124
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64917,7 +65088,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 128
+          "line": 130
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -70230,6 +70401,409 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.render.utils.LineStripAsLinesVertexView.constructor": [
+      {
+        "params": [
+          {
+            "name": "source",
+            "type": "VertexList",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 137
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.LineStripAsLinesVertexView.toSourceIndex": [
+      {
+        "params": [],
+        "returns": "Int",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 148
+        },
+        "isExtension": true,
+        "receiver": "Int"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.LineStripAsLinesVertexView.x": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Float",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 142
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.LineStripAsLinesVertexView.y": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Float",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 144
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.LineStripAsLinesVertexView.z": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Float",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 146
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.add": [
+      {
+        "params": [
+          {
+            "name": "x",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "y",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "z",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 64
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "vec",
+            "type": "Vec3f",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 71
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "vec",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 73
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.addAll": [
+      {
+        "params": [
+          {
+            "name": "vertices",
+            "type": "Iterable<Vec3>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 75
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "vertices",
+            "type": "Iterable<T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "vertexMapper",
+            "type": "(T) -> Vec3",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 101
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.addAllRelative": [
+      {
+        "params": [
+          {
+            "name": "vertices",
+            "type": "Iterable<Vec3>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "origin",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 86
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "vertices",
+            "type": "Iterable<T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "origin",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "vertexMapper",
+            "type": "(T) -> Vec3",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 106
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.addAllRelativeToCamera": [
+      {
+        "params": [
+          {
+            "name": "vertices",
+            "type": "Iterable<Vec3>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "camera",
+            "type": "Camera",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 96
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "vertices",
+            "type": "Iterable<T>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "camera",
+            "type": "Camera",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "vertexMapper",
+            "type": "(T) -> Vec3",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 115
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.addRelative": [
+      {
+        "params": [
+          {
+            "name": "vec",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "origin",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 80
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.addRelativeToCamera": [
+      {
+        "params": [
+          {
+            "name": "vec",
+            "type": "Vec3",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "camera",
+            "type": "Camera",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MutableVertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 91
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.constructor": [
+      {
+        "params": [
+          {
+            "name": "initialVertexCapacity",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 51
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.toValueIndex": [
+      {
+        "params": [],
+        "returns": "Int",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 124
+        },
+        "isExtension": true,
+        "receiver": "Int"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.x": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Float",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 58
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.y": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Float",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 60
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList.z": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Float",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 62
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.render.utils.RenderingDebug.flipFrame": [
       {
         "params": [],
@@ -70271,6 +70845,111 @@
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/UnitCircle.kt",
           "line": 39
         }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.VertexList.vec": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "dest",
+            "type": "Vector3f",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Vector3f",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 38
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.VertexList.x": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Float",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 32
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.VertexList.y": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Float",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 34
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.VertexList.z": [
+      {
+        "params": [
+          {
+            "name": "index",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Float",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 36
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.VertexListKt.forEachVertex": [
+      {
+        "params": [
+          {
+            "name": "action",
+            "type": "(x: Float, y: Float, z: Float) -> Unit",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 42
+        },
+        "isExtension": true,
+        "receiver": "VertexList"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.utils.VertexListKt.lineStripAsLines": [
+      {
+        "params": [],
+        "returns": "VertexList",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/utils/VertexList.kt",
+          "line": 48
+        },
+        "isExtension": true,
+        "receiver": "VertexList"
       }
     ],
     "net.ccbluex.liquidbounce.script.DebugProtocol.constructor": [
@@ -94256,7 +94935,7 @@
         "returns": "Vector3f",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 173
+          "line": 175
         },
         "isExtension": true,
         "receiver": "Vector3f"
@@ -94268,7 +94947,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 212
+          "line": 214
         },
         "isExtension": true,
         "receiver": "Iterable<Vec3>"
@@ -94319,7 +94998,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 204
+          "line": 206
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94351,7 +95030,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 205
+          "line": 207
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94373,7 +95052,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 206
+          "line": 208
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94392,7 +95071,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 208
+          "line": 210
         },
         "isExtension": true,
         "receiver": "ChunkPos"
@@ -94475,7 +95154,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 165
+          "line": 167
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94494,7 +95173,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 197
+          "line": 199
         },
         "isExtension": true,
         "receiver": "Position"
@@ -94529,6 +95208,23 @@
         },
         "isExtension": true,
         "receiver": "Vec3"
+      },
+      {
+        "params": [
+          {
+            "name": "v",
+            "type": "Vector3fc",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Double",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
+          "line": 130
+        },
+        "isExtension": true,
+        "receiver": "Vec3"
       }
     ],
     "net.ccbluex.liquidbounce.utils.math.MinecraftVectorExtensionsKt.equals": [
@@ -94550,7 +95246,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 148
+          "line": 150
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94569,7 +95265,7 @@
         "returns": "AABB",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 226
+          "line": 228
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94613,7 +95309,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 185
+          "line": 187
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94630,7 +95326,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 187
+          "line": 189
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94653,7 +95349,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 189
+          "line": 191
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94672,7 +95368,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 191
+          "line": 193
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94689,7 +95385,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 193
+          "line": 195
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94712,7 +95408,7 @@
         "returns": "Double",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 195
+          "line": 197
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94731,7 +95427,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 140
+          "line": 142
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94827,7 +95523,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 267
+          "line": 269
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94844,7 +95540,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 273
+          "line": 275
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94875,7 +95571,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 179
+          "line": 181
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94904,7 +95600,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 182
+          "line": 184
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -94923,7 +95619,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 144
+          "line": 146
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -95012,7 +95708,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 250
+          "line": 252
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -95062,7 +95758,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 275
+          "line": 277
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -95079,7 +95775,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 281
+          "line": 283
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -95115,7 +95811,7 @@
         "returns": "Vector3f",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 170
+          "line": 172
         },
         "isExtension": true,
         "receiver": "Vector3f"
@@ -95144,7 +95840,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 259
+          "line": 261
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -95161,7 +95857,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 265
+          "line": 267
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -95180,7 +95876,7 @@
         "returns": "Vector3f",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 176
+          "line": 178
         },
         "isExtension": true,
         "receiver": "Vector3f"
@@ -95247,7 +95943,7 @@
         "returns": "BlockPos",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 244
+          "line": 246
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -95259,7 +95955,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 167
+          "line": 169
         },
         "isExtension": true,
         "receiver": "Vector3fc"
@@ -95288,7 +95984,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 233
+          "line": 235
         },
         "isExtension": true,
         "receiver": "Vec3i"
@@ -95300,7 +95996,7 @@
         "returns": "Vec3f",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 239
+          "line": 241
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -95312,7 +96008,7 @@
         "returns": "Vec3i",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 241
+          "line": 243
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -95363,7 +96059,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-          "line": 135
+          "line": 137
         },
         "isExtension": true,
         "receiver": "Vec3"
@@ -102213,7 +102909,7 @@
         "returns": "FloatArray",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 137
+          "line": 145
         }
       }
     ],
@@ -102230,7 +102926,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 120
+          "line": 127
         }
       }
     ],
@@ -102259,7 +102955,7 @@
         "returns": "TrajectoryDescriptor?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 109
+          "line": 116
         }
       }
     ],
@@ -102294,7 +102990,7 @@
         "returns": "List<TrajectoryShotDescriptor>?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 42
+          "line": 43
         }
       }
     ],
@@ -102302,7 +102998,7 @@
       {
         "params": [
           {
-            "name": "stack",
+            "name": "icon",
             "type": "ItemStack",
             "nullable": false,
             "vararg": false
@@ -102312,12 +103008,18 @@
             "type": "TrajectoryDescriptor",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "colorSource",
+            "type": "ItemStack",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": "List<TrajectoryShotDescriptor>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-          "line": 124
+          "line": 131
         }
       }
     ],
@@ -102340,7 +103042,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryDescriptors.kt",
-          "line": 25
+          "line": 26
         }
       }
     ],
@@ -102358,29 +103060,41 @@
             "type": "ItemStack",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "colorSource",
+            "type": "DataComponentGetter",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": "TrajectoryShotDescriptor",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryDescriptors.kt",
-          "line": 29
+          "line": 30
         }
       }
     ],
-    "net.ccbluex.liquidbounce.utils.render.trajectory.TrajectoryDisplayResolver.resolveEntityColor": [
+    "net.ccbluex.liquidbounce.utils.render.trajectory.TrajectoryDisplayResolver.resolveArrowColor": [
       {
         "params": [
           {
-            "name": "entity",
-            "type": "Entity",
+            "name": "colorSource",
+            "type": "DataComponentGetter",
             "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "entity",
+            "type": "Entity?",
+            "nullable": true,
             "vararg": false
           }
         ],
         "returns": "Color4b",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryDisplayResolver.kt",
-          "line": 33
+          "line": 61
         }
       }
     ],
@@ -102409,7 +103123,53 @@
         "returns": "ItemStack",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryDisplayResolver.kt",
-          "line": 43
+          "line": 89
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.render.trajectory.TrajectoryDisplayResolver.resolvePotionColor": [
+      {
+        "params": [
+          {
+            "name": "colorSource",
+            "type": "DataComponentGetter",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Color4b",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryDisplayResolver.kt",
+          "line": 80
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.render.trajectory.TrajectoryDisplayResolver.resolveTrajectoryColor": [
+      {
+        "params": [
+          {
+            "name": "trajectoryType",
+            "type": "TrajectoryType",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "colorSource",
+            "type": "DataComponentGetter",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "entity",
+            "type": "Entity?",
+            "nullable": true,
+            "vararg": false
+          }
+        ],
+        "returns": "Color4b",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryDisplayResolver.kt",
+          "line": 40
         }
       }
     ],
@@ -102526,12 +103286,18 @@
             "type": "ItemStack",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "colorSource",
+            "type": "DataComponentGetter",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryDescriptors.kt",
-          "line": 84
+          "line": 87
         }
       }
     ],

@@ -16,7 +16,6 @@ import type { MessageFormat } from '../../../../java/text/MessageFormat.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TimeZoneGenericNames extends Object implements Freezable<TimeZoneGenericNames>, Serializable {
     static getInstance(paramarg0: ULocale): TimeZoneGenericNames;
-    private constructor(arg0: ULocale)
     constructor(arg0: ULocale, arg1: TimeZoneNames)
     // private _frozen: boolean;
     // private _genericLocationNamesMap: { [key: string]: string };

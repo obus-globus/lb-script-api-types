@@ -11,7 +11,6 @@ export class ClientboundLoginCompressionPacket extends Object implements Packet<
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundLoginCompressionPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(compressionThreshold: number)
-    private constructor(input: FriendlyByteBuf)
     readonly compressionThreshold: number;
     getCompressionThreshold(): number;
     handle(listener: ClientLoginPacketListener): void;

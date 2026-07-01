@@ -1,12 +1,10 @@
-import type { HtmlLayout$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { HtmlLayout } from '../../../../../../org/apache/logging/log4j/core/layout/HtmlLayout.d.ts'
 import type { HtmlLayout$FontSize } from '../../../../../../org/apache/logging/log4j/core/layout/HtmlLayout$FontSize.d.ts'
 import type { Builder } from '../../../../../../org/apache/logging/log4j/core/util/Builder.d.ts'
 export class HtmlLayout$Builder extends Object implements Builder<HtmlLayout> {
-    private constructor()
-    constructor(arg0: HtmlLayout$1)
+    constructor(arg0: any)
     // private charset: Charset;
     // private contentType: string;
     // private datePattern: string;

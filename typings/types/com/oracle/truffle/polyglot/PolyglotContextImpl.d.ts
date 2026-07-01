@@ -50,7 +50,6 @@ import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 import type { AbstractPolyglotImpl$APIAccess } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$APIAccess.d.ts'
 export class PolyglotContextImpl extends Object implements PolyglotImpl$VMObject {
-    private constructor()
     constructor(engine: PolyglotEngineImpl, config: PolyglotContextConfig)
     constructor(creator: PolyglotLanguageContext, config: PolyglotContextConfig)
     // private activeSystemThreads: SystemThread$LanguageSystemThread[];

@@ -7,7 +7,6 @@ import type { Number } from '../../../../java/lang/Number.d.ts'
 export class JsonObject extends JsonElement {
     static fromJson(paramarg0: JsonReader): JsonObject;
     constructor()
-    private constructor(arg0: { [key: string]: JsonElement })
     // private properties: { [key: string]: JsonElement };
     getProperty(arg0: string): JsonElement;
     hasProperty(arg0: string): boolean;

@@ -10,7 +10,6 @@ export class Byte2LongAVLTreeMap$Entry extends AbstractByte2LongMap$BasicEntry i
     balance(): number;
     balance(arg0: number): void;
     clone(): Byte2LongAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

@@ -7,7 +7,6 @@ import type { TypeConstructor } from '../../../../../../kotlin/reflect/jvm/inter
 import type { TypeProjection } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeProjection.d.ts'
 export class TypeAliasExpansion extends Object {
     static Companion: TypeAliasExpansion$Companion;
-    private constructor(arg0: TypeAliasExpansion, arg1: TypeAliasDescriptor, arg2: TypeProjection[], arg3: Map<TypeParameterDescriptor, TypeProjection>)
     constructor(arg0: TypeAliasExpansion, arg1: TypeAliasDescriptor, arg2: (Object | null)[], arg3: Map<Object | null, Object | null>, arg4: DefaultConstructorMarker)
     readonly arguments: TypeProjection[];
     readonly descriptor: TypeAliasDescriptor;

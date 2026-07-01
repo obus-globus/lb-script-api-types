@@ -10,8 +10,7 @@ export class ReferenceImmutableList$Spliterator extends Object implements Object
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(null_: K[])
-    private constructor(null_: K[], arg1: number, arg2: number)
+    constructor(null_: Object[])
     // private max: number;
     // private pos: number;
     characteristics(): number;

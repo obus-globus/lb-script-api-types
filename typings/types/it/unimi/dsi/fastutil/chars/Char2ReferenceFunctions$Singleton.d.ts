@@ -7,7 +7,6 @@ export class Char2ReferenceFunctions$Singleton<V extends unknown> extends Abstra
     // private key: string;
     // private value: V;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     get(arg0: Object): V;

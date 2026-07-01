@@ -4,6 +4,7 @@ import type { TrajectoryDescriptor$Companion } from '../../../../../../net/ccblu
 import type { TrajectoryInfo } from '../../../../../../net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryInfo.d.ts'
 import type { TrajectoryShotDescriptor } from '../../../../../../net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryShotDescriptor.d.ts'
 import type { TrajectoryType } from '../../../../../../net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryType.d.ts'
+import type { DataComponentGetter } from '../../../../../../net/minecraft/core/component/DataComponentGetter.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class TrajectoryDescriptor extends Record {
     static BOW_ARROW: TrajectoryDescriptor;
@@ -30,6 +31,6 @@ export class TrajectoryDescriptor extends Record {
     copy(trajectoryInfo: TrajectoryInfo, trajectoryType: TrajectoryType): TrajectoryDescriptor;
     equals(other: Object | null): boolean;
     hashCode(): number;
-    toShotDescriptor(yawOffsetDegrees: number, icon: ItemStack): TrajectoryShotDescriptor;
+    toShotDescriptor(yawOffsetDegrees: number, icon: ItemStack, colorSource: DataComponentGetter): TrajectoryShotDescriptor;
     toString(): string;
 }

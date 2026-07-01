@@ -5,7 +5,7 @@ import type { Embedding } from '../../../../ai/djl/nn/core/Embedding.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Embedding$DefaultItem extends Object implements AbstractIndexedEmbedding<T> {
-    constructor(null_: Embedding<T>, arg1: T)
+    constructor(null_: Embedding<Object>, arg1: Object)
     // private defaultItem: T;
     decode<T extends unknown>(arg0: number[]): T;
     embed<T extends unknown>(arg0: T): number;

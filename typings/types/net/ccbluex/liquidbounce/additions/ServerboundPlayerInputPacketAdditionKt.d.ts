@@ -5,7 +5,7 @@ export class ServerboundPlayerInputPacketAdditionKt extends Object {
     /**
      * Changes the return value of record component {@link ServerboundPlayerInputPacket.input}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/additions/ServerboundPlayerInputPacketAddition.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/additions/ServerboundPlayerInputPacketAddition.kt:36}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/additions/ServerboundPlayerInputPacketAddition.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/additions/ServerboundPlayerInputPacketAddition.kt:36}
      */
     static getForceSneak(paramarg0: ServerboundPlayerInputPacket): boolean;
     static getRawInput(paramarg0: ServerboundPlayerInputPacket): Input;

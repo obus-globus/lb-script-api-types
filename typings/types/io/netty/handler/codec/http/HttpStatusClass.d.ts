@@ -1,4 +1,3 @@
-import type { HttpStatusClass$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AsciiString } from '../../../../../io/netty/util/AsciiString.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -16,8 +15,7 @@ export class HttpStatusClass extends Enum<HttpStatusClass> {
     static valueOf(paramarg0: CharSequence): HttpStatusClass;
     static valueOf(paramarg0: string): HttpStatusClass;
     static values(): (Object | null)[];
-    private constructor(arg2: number, arg3: number, arg4: string)
-    constructor(arg2: number, arg3: number, arg4: string, arg5: HttpStatusClass$1)
+    constructor(arg2: number, arg3: number, arg4: string, arg5: HttpStatusClass)
     // private defaultReasonPhrase: AsciiString;
     // private max: number;
     // private min: number;

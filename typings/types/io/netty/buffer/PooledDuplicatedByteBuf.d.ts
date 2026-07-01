@@ -1,7 +1,7 @@
-import type { PooledDuplicatedByteBuf$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AbstractPooledDerivedByteBuf } from '../../../io/netty/buffer/AbstractPooledDerivedByteBuf.d.ts'
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ByteProcessor } from '../../../io/netty/util/ByteProcessor.d.ts'
+import type { Recycler } from '../../../io/netty/util/Recycler.d.ts'
 import type { ObjectPool$Handle } from '../../../io/netty/util/internal/ObjectPool$Handle.d.ts'
 import type { InputStream } from '../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../java/io/OutputStream.d.ts'
@@ -11,8 +11,7 @@ import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringB
 import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class PooledDuplicatedByteBuf extends AbstractPooledDerivedByteBuf {
-    constructor(arg0: ObjectPool$Handle<Object>, arg1: PooledDuplicatedByteBuf$1)
-    private constructor(arg0: ObjectPool$Handle<PooledDuplicatedByteBuf>)
+    constructor(arg0: ObjectPool$Handle<Object>, arg1: Recycler<PooledDuplicatedByteBuf>)
     _getByte(arg0: number): number;
     _getInt(arg0: number): number;
     _getIntLE(arg0: number): number;

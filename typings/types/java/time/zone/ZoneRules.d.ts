@@ -11,9 +11,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class ZoneRules extends Object implements Serializable {
     static of(paramarg0: ZoneOffset): ZoneRules;
     static of(paramarg0: ZoneOffset, paramarg1: ZoneOffset, paramarg2: ZoneOffsetTransition[], paramarg3: ZoneOffsetTransition[], paramarg4: ZoneOffsetTransitionRule[]): ZoneRules;
-    private constructor(arg0: ZoneOffset)
     constructor(arg0: ZoneOffset, arg1: ZoneOffset, arg2: ZoneOffsetTransition[], arg3: ZoneOffsetTransition[], arg4: ZoneOffsetTransitionRule[])
-    private constructor(arg0: number[], arg1: ZoneOffset[], arg2: number[], arg3: ZoneOffset[], arg4: ZoneOffsetTransitionRule[])
     // private lastRules: ZoneOffsetTransitionRule[];
     // private lastRulesCache: { [key: number]: ZoneOffsetTransition[] };
     // private savingsInstantTransitions: number[];

@@ -15,10 +15,10 @@ export class StrSubstitutor extends Object {
     static replace(paramarg0: Object, paramarg1: { [key: string]: any }): string;
     static replaceSystemProperties(paramarg0: Object): string;
     constructor()
-    constructor(arg0: { [key: string]: V })
-    constructor(arg0: { [key: string]: V }, arg1: string, arg2: string)
-    constructor(arg0: { [key: string]: V }, arg1: string, arg2: string, arg3: string)
-    constructor(arg0: { [key: string]: V }, arg1: string, arg2: string, arg3: string, arg4: string)
+    constructor(arg0: { [key: string]: Object })
+    constructor(arg0: { [key: string]: Object }, arg1: string, arg2: string)
+    constructor(arg0: { [key: string]: Object }, arg1: string, arg2: string, arg3: string)
+    constructor(arg0: { [key: string]: Object }, arg1: string, arg2: string, arg3: string, arg4: string)
     constructor(arg0: StrLookup<Object>)
     constructor(arg0: StrLookup<Object>, arg1: string, arg2: string, arg3: string)
     constructor(arg0: StrLookup<Object>, arg1: string, arg2: string, arg3: string, arg4: string)

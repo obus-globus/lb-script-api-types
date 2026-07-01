@@ -16,7 +16,6 @@ export class DateIntervalInfo extends Object implements Serializable, Cloneable,
     // private fIntervalPatterns: { [key: string]: { [key: string]: DateIntervalInfo$PatternInfo } };
     // private fIntervalPatternsReadOnly: boolean;
     readonly frozen: boolean;
-    protected clone(): Object;
     clone(): Object;
     cloneAsThawed(): DateIntervalInfo;
     // private cloneUnfrozenDII(): Object;

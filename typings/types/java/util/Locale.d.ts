@@ -59,13 +59,11 @@ export class Locale extends Object implements Serializable, Cloneable {
     constructor(arg0: string)
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: string)
-    private constructor(arg0: BaseLocale, arg1: LocaleExtensions)
     // private baseLocale: BaseLocale;
     // private hashCodeValue: number;
     // private languageTag: string;
     // private localeExtensions: LocaleExtensions;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getBaseLocale(): BaseLocale;
     getCountry(): string;

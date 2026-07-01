@@ -9,7 +9,6 @@ export class TreeMultimap<K extends unknown, V extends unknown> extends Abstract
     static create(parammultimap: Multimap<Object, Object>): TreeMultimap<Object, Object>;
     static create(paramkeyComparator: (param0: Object) => boolean, paramvalueComparator: (param0: Object) => boolean): TreeMultimap<Object, Object>;
     constructor(keyComparator: (param0: Object) => boolean, valueComparator: (param0: Object) => boolean)
-    private constructor(keyComparator: (param0: Object) => boolean, valueComparator: (param0: Object) => boolean, multimap: Multimap<K, V>)
     // private keyComparator: (param0: Object) => boolean;
     // private valueComparator: (param0: Object) => boolean;
     asMap(): Map<K, V[]>;

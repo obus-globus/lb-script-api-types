@@ -1,4 +1,3 @@
-import type { Routes$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { LogEvent } from '../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Route } from '../../../../../../../org/apache/logging/log4j/core/appender/routing/Route.d.ts'
@@ -8,8 +7,7 @@ import type { AbstractScript } from '../../../../../../../org/apache/logging/log
 export class Routes extends Object {
     static createRoutes(parampattern: string, paramroutes: (Object | null)[]): Routes;
     static newBuilder(): Routes$Builder;
-    private constructor(configuration: Configuration, patternScript: AbstractScript, pattern: string, routes: Route[])
-    constructor(arg0: Configuration, arg1: AbstractScript, arg2: string, arg3: Route[], arg4: Routes$1)
+    constructor(arg0: Configuration, arg1: AbstractScript, arg2: string, arg3: Route[], arg4: any)
     // private configuration: Configuration;
     // private pattern: string;
     readonly patternScript: AbstractScript;

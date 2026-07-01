@@ -1,4 +1,3 @@
-import type { TimeBasedTriggeringPolicy$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { LogEvent } from '../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { AbstractTriggeringPolicy } from '../../../../../../../org/apache/logging/log4j/core/appender/rolling/AbstractTriggeringPolicy.d.ts'
@@ -9,8 +8,7 @@ export class TimeBasedTriggeringPolicy extends AbstractTriggeringPolicy {
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static createPolicy(paraminterval: string, parammodulate: string): TimeBasedTriggeringPolicy;
     static newBuilder(): TimeBasedTriggeringPolicy$Builder;
-    private constructor(interval: number, modulate: boolean, maxRandomDelayMillis: number)
-    constructor(arg0: number, arg1: boolean, arg2: number, arg3: TimeBasedTriggeringPolicy$1)
+    constructor(arg0: number, arg1: boolean, arg2: number, arg3: any)
     readonly interval: number;
     // private manager: RollingFileManager;
     // private maxRandomDelayMillis: number;

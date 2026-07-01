@@ -7,7 +7,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ImportSpecifierNode extends Node {
-    private constructor(node: ImportSpecifierNode, bindingIdentifier: IdentNode, identifier: PropertyKey)
     constructor(token: number, start: number, finish: number, bindingIdentifier: IdentNode, identifier: PropertyKey)
     readonly bindingIdentifier: IdentNode;
     readonly identifier: PropertyKey;

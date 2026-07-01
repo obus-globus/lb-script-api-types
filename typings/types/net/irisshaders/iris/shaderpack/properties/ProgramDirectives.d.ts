@@ -7,7 +7,6 @@ import type { ViewportData } from '../../../../../net/irisshaders/iris/gl/frameb
 import type { ProgramSource } from '../../../../../net/irisshaders/iris/shaderpack/programs/ProgramSource.d.ts'
 import type { ShaderProperties } from '../../../../../net/irisshaders/iris/shaderpack/properties/ShaderProperties.d.ts'
 export class ProgramDirectives extends Object {
-    private constructor(arg0: number[], arg1: ViewportData, arg2: AlphaTest, arg3: Optional<BlendModeOverride>, arg4: BufferBlendInformation[], arg5: number[], arg6: { [key: number]: boolean })
     constructor(arg0: ProgramSource, arg1: ShaderProperties, arg2: number[], arg3: BlendModeOverride)
     readonly alphaTestOverride: AlphaTest;
     readonly blendModeOverride: Optional<BlendModeOverride>;

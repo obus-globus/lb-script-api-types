@@ -10,7 +10,6 @@ export class Long2BooleanRBTreeMap$Entry extends AbstractLong2BooleanMap$BasicEn
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Long2BooleanRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Long2BooleanRBTreeMap$Entry;

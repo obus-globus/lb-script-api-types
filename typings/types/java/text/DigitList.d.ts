@@ -17,7 +17,6 @@ export class DigitList extends Object implements Cloneable {
     append(arg0: string): void;
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     // private extendDigits(arg0: number): void;
     fitsIntoLong(arg0: boolean, arg1: boolean): boolean;

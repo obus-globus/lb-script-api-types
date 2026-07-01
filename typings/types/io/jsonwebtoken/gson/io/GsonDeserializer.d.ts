@@ -6,7 +6,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class GsonDeserializer<T extends unknown> extends AbstractDeserializer<T> {
     constructor()
     constructor(arg0: Gson)
-    private constructor(arg0: Gson, arg1: Class<T>)
     // private gson: Gson;
     // private returnType: Class<T>;
     doDeserialize(arg0: Reader): T;

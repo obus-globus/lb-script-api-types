@@ -1,8 +1,8 @@
-import type { RealConnectionPool$cleanupTask$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Address } from '../../../okhttp3/Address.d.ts'
 import type { Route } from '../../../okhttp3/Route.d.ts'
+import type { Task } from '../../../okhttp3/internal/concurrent/Task.d.ts'
 import type { TaskQueue } from '../../../okhttp3/internal/concurrent/TaskQueue.d.ts'
 import type { TaskRunner } from '../../../okhttp3/internal/concurrent/TaskRunner.d.ts'
 import type { ConnectionListener } from '../../../okhttp3/internal/connection/ConnectionListener.d.ts'
@@ -13,7 +13,7 @@ export class RealConnectionPool extends Object {
     static Companion: RealConnectionPool$Companion;
     constructor(taskRunner: TaskRunner, maxIdleConnections: number, keepAliveDuration: number, timeUnit: TimeUnit, connectionListener: ConnectionListener)
     // private cleanupQueue: TaskQueue;
-    // private cleanupTask: RealConnectionPool$cleanupTask$1;
+    // private cleanupTask: Task;
     // private connectionListener: ConnectionListener;
     /*not mapped: */ getConnectionListener$okhttp(): ConnectionListener;
     // private connections: RealConnection[];

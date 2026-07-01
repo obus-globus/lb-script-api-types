@@ -29,12 +29,13 @@ export class MinecraftVectorExtensionsKt extends Object {
     static copy(paramarg0: Vec3, paramarg1: number, paramarg2: number, paramarg3: number): Vec3;
     static distanceToCenterSqr(position: Position, blockPos: number): number;
     static dot(vec3: Vec3, x: number, y: number, z: number): number;
+    static dot(vec3: Vec3, v: Vector3fc): number;
     static equals(vec3: Vec3, other: Vec3, tolerance: number): boolean;
     static expandToCube(vec3: Vec3, halfExtents: number): AABB;
     /**
      * @returns {@link this} + {@link scale} * {@link other}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:113}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:113}
      */
     static fma(vec3: Vec3, scale: number, other: Vec3): Vec3;
     static getBottomCenter(paramarg0: Vec3i): Vec3;
@@ -43,7 +44,7 @@ export class MinecraftVectorExtensionsKt extends Object {
     /**
      * @see Vec3.rotation
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:162}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L164 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:164}
      */
     static getYaw(paramarg0: Vec3): number;
     static horizontalDistanceTo(vec3: Vec3, x: number, z: number): number;
@@ -97,7 +98,7 @@ export class MinecraftVectorExtensionsKt extends Object {
      *
      * @returns a {@link Vec3} with same direction as the receiver and length of {@link newLength}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:135}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt#L137 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt:137}
      */
     static withLength(vec3: Vec3, newLength: number): Vec3;
 }

@@ -22,7 +22,6 @@ export class OceanRuinPieces$OceanRuinPiece extends TemplateStructurePiece {
     static createBoundingBox(parampieces: Stream<StructurePiece>): BoundingBox;
     static findCollisionPiece(parampieces: StructurePiece[], parambox: BoundingBox): StructurePiece;
     static reorient(paramlevel: BlockGetter, paramblockPos: BlockPos, paramblockState: BlockState): BlockState;
-    private constructor(structureTemplateManager: StructureTemplateManager, tag: CompoundTag, rotation: Rotation, integrity: number, biomeType: OceanRuinStructure$Type, isLarge: boolean)
     constructor(structureTemplateManager: StructureTemplateManager, templateLocation: Identifier, position: BlockPos, rotation: Rotation, integrity: number, biomeType: OceanRuinStructure$Type, isLarge: boolean)
     // private biomeType: OceanRuinStructure$Type;
     // private integrity: number;

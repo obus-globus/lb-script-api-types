@@ -1,7 +1,8 @@
-import type { CycleDetectingLockFactory$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
+import type { CycleDetectingLockFactory$LockGraphNode } from '../../../../../com/google/common/util/concurrent/CycleDetectingLockFactory$LockGraphNode.d.ts'
 import type { CycleDetectingLockFactory$Policy } from '../../../../../com/google/common/util/concurrent/CycleDetectingLockFactory$Policy.d.ts'
 import type { CycleDetectingLockFactory$PotentialDeadlockException } from '../../../../../com/google/common/util/concurrent/CycleDetectingLockFactory$PotentialDeadlockException.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { ThreadLocal } from '../../../../../java/lang/ThreadLocal.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class CycleDetectingLockFactory$Policies extends Enum<CycleDetectingLockFactory$Policies> implements CycleDetectingLockFactory$Policy {
@@ -11,8 +12,7 @@ export class CycleDetectingLockFactory$Policies extends Enum<CycleDetectingLockF
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CycleDetectingLockFactory$Policies;
     static values(): (Object | null)[];
-    private constructor()
-    constructor(arg2: CycleDetectingLockFactory$1)
+    constructor(arg2: ThreadLocal<CycleDetectingLockFactory$LockGraphNode[]>)
     handlePotentialDeadlock(exception: CycleDetectingLockFactory$PotentialDeadlockException): void;
     name(): "THROW" | "WARN" | "DISABLED";
 }

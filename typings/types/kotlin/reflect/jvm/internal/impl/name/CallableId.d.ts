@@ -5,7 +5,6 @@ import type { FqName } from '../../../../../../kotlin/reflect/jvm/internal/impl/
 import type { Name } from '../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 export class CallableId extends Object {
     static Companion: CallableId$Companion;
-    private constructor(arg0: FqName, arg1: FqName, arg2: Name, arg3: ClassId, arg4: FqName)
     constructor(arg0: FqName, arg1: Name)
     // private callableName: Name;
     // private classId: ClassId;

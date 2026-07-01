@@ -9,7 +9,6 @@ import type { RangeEncoderToStream } from '../../../../../../org/graalvm/shadowe
 export class LZMAOutputStream extends FinishableOutputStream {
     static nullOutputStream(): OutputStream;
     constructor(out: OutputStream, options: LZMA2Options, useEndMarker: boolean)
-    private constructor(out: OutputStream, options: LZMA2Options, useHeader: boolean, useEndMarker: boolean, expectedUncompressedSize: number, arrayCache: ArrayCache)
     constructor(out: OutputStream, options: LZMA2Options, useEndMarker: boolean, arrayCache: ArrayCache)
     constructor(out: OutputStream, options: LZMA2Options, inputSize: number)
     constructor(out: OutputStream, options: LZMA2Options, inputSize: number, arrayCache: ArrayCache)

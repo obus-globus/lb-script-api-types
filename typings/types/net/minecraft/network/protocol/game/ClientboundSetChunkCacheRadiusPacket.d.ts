@@ -11,7 +11,6 @@ export class ClientboundSetChunkCacheRadiusPacket extends Object implements Pack
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetChunkCacheRadiusPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(radius: number)
-    private constructor(input: FriendlyByteBuf)
     readonly radius: number;
     getRadius(): number;
     handle(listener: ClientGamePacketListener): void;

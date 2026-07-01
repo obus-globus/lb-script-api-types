@@ -15,7 +15,6 @@ export class ClientboundSoundPacket extends Object implements Packet<ClientGameP
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSoundPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(sound: Holder<SoundEvent>, source: SoundSource, x: number, y: number, z: number, volume: number, pitch: number, seed: number)
-    private constructor(input: RegistryFriendlyByteBuf)
     readonly pitch: number;
     readonly seed: number;
     readonly sound: Holder<SoundEvent>;

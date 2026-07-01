@@ -97,11 +97,9 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     static validatedStreamCodec(paramcodec: StreamCodec<RegistryFriendlyByteBuf, ItemStack>): StreamCodec<RegistryFriendlyByteBuf, ItemStack>;
     static without(paramarg0: ChangeSubscriber<Object>, paramarg1: ChangeSubscriber<Object>): ChangeSubscriber<Object>;
     static without(paramarg0: ChangeSubscriber<Object>, paramarg1: ChangeSubscriber<Object>, paramarg2: number, paramarg3: boolean): ChangeSubscriber<Object>;
-    private constructor(nullMarker: void)
     constructor(item: Holder<Item>)
     constructor(item: Holder<Item>, count: number)
     constructor(item: Holder<Item>, count: number, components: DataComponentPatch)
-    private constructor(item: Holder<Item>, count: number, components: (Object | null)[])
     constructor(item: ItemLike)
     constructor(item: ItemLike, count: number)
     readonly components: (Object | null)[];

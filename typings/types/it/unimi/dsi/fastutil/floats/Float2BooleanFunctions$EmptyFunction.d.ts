@@ -6,7 +6,6 @@ export class Float2BooleanFunctions$EmptyFunction extends AbstractFloat2BooleanF
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): boolean;

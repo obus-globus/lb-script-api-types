@@ -1,4 +1,3 @@
-import type { LockingVisitors$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Lock } from '../../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -7,8 +6,7 @@ import type { FailableConsumer } from '../../../../../../org/apache/commons/lang
 import type { FailableFunction } from '../../../../../../org/apache/commons/lang3/function/FailableFunction.d.ts'
 export class LockingVisitors$LockVisitor<O extends unknown, L extends unknown> extends Object {
     constructor(arg0: O, arg1: L, arg2: () => Lock, arg3: () => Lock)
-    constructor(arg0: LockingVisitors$LockVisitor$LVBuilder<Object, Object, LockingVisitors$LockVisitor$LVBuilder<Object, Object, any>>, arg1: LockingVisitors$1)
-    private constructor(arg0: LockingVisitors$LockVisitor$LVBuilder<O, L, any>)
+    constructor(arg0: LockingVisitors$LockVisitor$LVBuilder<Object, Object, LockingVisitors$LockVisitor$LVBuilder<Object, Object, any>>, arg1: any)
     readonly lock: L;
     readonly object: O;
     // private readLockSupplier: () => Lock;

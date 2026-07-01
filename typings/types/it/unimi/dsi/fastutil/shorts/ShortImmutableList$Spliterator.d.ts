@@ -13,7 +13,6 @@ export class ShortImmutableList$Spliterator extends Object implements ShortSplit
     static SORTED: number;
     static SUBSIZED: number;
     constructor(null_: (Object | null)[])
-    private constructor(null_: (Object | null)[], arg1: number, arg2: number)
     // private max: number;
     // private pos: number;
     characteristics(): number;

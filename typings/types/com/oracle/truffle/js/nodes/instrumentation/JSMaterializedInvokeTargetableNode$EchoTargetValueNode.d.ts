@@ -17,7 +17,6 @@ export class JSMaterializedInvokeTargetableNode$EchoTargetValueNode extends JSTa
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     constructor(from: JSTargetableNode)
-    private constructor(targetExpression: string)
     // private targetExpression: string;
     copyUninitialized(materializedTags: Class<Tag>[]): JavaScriptNode;
     execute(frame: VirtualFrame): Object;

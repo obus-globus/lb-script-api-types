@@ -1,9 +1,7 @@
-import type { MemoryManage$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { MemoryUtil$MemoryAllocator } from '../../../org/lwjgl/system/MemoryUtil$MemoryAllocator.d.ts'
 export class MemoryManage$StdlibAllocator extends Object implements MemoryUtil$MemoryAllocator {
-    private constructor()
-    constructor(arg0: MemoryManage$1)
+    constructor(arg0: any)
     aligned_alloc(arg0: number, arg1: number): number;
     aligned_free(arg0: number): void;
     calloc(arg0: number, arg1: number): number;

@@ -6,7 +6,6 @@ export class Int2LongFunctions$EmptyFunction extends AbstractInt2LongFunction im
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;

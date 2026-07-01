@@ -10,7 +10,6 @@ import type { UnwrappedType } from '../../../../../../kotlin/reflect/jvm/interna
 import type { KotlinTypeRefiner } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 import type { KotlinTypeMarker } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/KotlinTypeMarker.d.ts'
 export abstract class KotlinType extends Object implements Annotated, KotlinTypeMarker {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     // private cachedHashCode: number;
     // private computeHashCode(): number;

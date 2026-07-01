@@ -57,7 +57,6 @@ export class RuleBasedTimeZone extends BasicTimeZone implements Cloneable {
     // private upToDate: boolean;
     addTransitionRule(arg0: TimeZoneRule): void;
     clone(): RuleBasedTimeZone;
-    protected clone(): Object;
     cloneAsThawed(): RuleBasedTimeZone;
     // private complete(): void;
     // private findRuleInFinal(arg0: number, arg1: boolean, arg2: number, arg3: number): TimeZoneRule;

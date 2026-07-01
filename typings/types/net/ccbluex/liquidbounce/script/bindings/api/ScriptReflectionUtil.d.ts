@@ -9,6 +9,11 @@ export class ScriptReflectionUtil extends Object {
     // private fieldCache: Map<Pair<Class<Object>, string>, Field>;
     // private methodCache: Map<Triple<Class<Object>, string, Class<Object>[]>, Method>;
     // private primitiveTypeMap: Map<Class<Object>, Class<Object> | null>;
+    /**
+     * Resolves a Java class by its fully-qualified name (accepts `/` or `.` separators).
+     *
+     * @param name the class name to resolve
+     */
     classByName(name: string): Class<Object>;
     // private findMethodInternal(clazz: Class<Object>, name: string, args: (Object | null)[], methodProvider: (param0: Class<Object>) => Method[]): Method;
     /**
@@ -18,7 +23,7 @@ export class ScriptReflectionUtil extends Object {
      * @param name - method name in yarn mapping
      * @returns - the value stored in field
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:97}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:97}
      */
     getDeclaredField(clazz: Class<Object>, name: string): Object | null;
     /**
@@ -28,14 +33,14 @@ export class ScriptReflectionUtil extends Object {
      * @param name - method name in yarn mapping
      * @returns - the value stored in field
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:77}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:77}
      */
     getField(obj: Object, name: string): Object | null;
     /**
      * Invalidate the cache.
      * Allows user to invalidate the cache for whatever reason, like dynamic class loading.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:39}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:39}
      */
     invalidateCache(): void;
     /**
@@ -48,7 +53,7 @@ export class ScriptReflectionUtil extends Object {
      * @param args - arguments of method
      * @returns - result of invoking method
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L163 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:163}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L163 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:163}
      */
     invokeDeclaredMethod(clazz: Class<Object>, name: string, args: (Object | null)[]): Object | null;
     /**
@@ -61,10 +66,28 @@ export class ScriptReflectionUtil extends Object {
      * @param args @exception - throw IllegalArgumentException when an argument is null  Example when used in js: ```javascript   mod.on("overlayRender", (event) => {     if (!mc.player || !mc.world)       return;      ReflectionUtil.invokeMethod(event.context, "fill", 100, 100, 200, 200, -1);   }) ```
      * @returns - result of invoking method
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L145 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:145}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt#L145 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptReflectionUtil.kt:145}
      */
     invokeMethod(obj: Object, name: string, args: (Object | null)[]): Object | null;
+    /**
+     * Constructs a new instance of the class using the declared constructor matching the given arguments.
+     *
+     * @param clazz the class to instantiate
+     * @param args the constructor arguments
+     */
     newInstance(clazz: Class<Object>, args: (Object | null)[]): Object | null;
+    /**
+     * Resolves a class by name and constructs a new instance using the declared constructor matching the given arguments.
+     *
+     * @param name the class name to instantiate
+     * @param args the constructor arguments
+     */
     newInstanceByName(name: string, args: (Object | null)[]): Object | null;
+    /**
+     * Constructs a new instance of the given object's class using the declared constructor matching the given arguments.
+     *
+     * @param obj an object whose class to instantiate
+     * @param args the constructor arguments
+     */
     newInstanceByObject(obj: Object, args: (Object | null)[]): Object | null;
 }

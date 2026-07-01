@@ -28,7 +28,6 @@ export class RealmsResetWorldScreen extends RealmsScreen {
     static forResetSlot(paramlastScreen: Screen, paramserverData: RealmsServer, paramresetWorldRunnable: () => void): RealmsResetWorldScreen;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(lastScreen: Screen, serverData: RealmsServer, slot: number, title: Component, subtitle: Component, resetTaskTitle: Component, realmCreationTask: RealmCreationTask, resetWorldRunnable: () => void)
-    private constructor(lastScreen: Screen, serverData: RealmsServer, slot: number, title: Component, subtitle: Component, resetTaskTitle: Component, resetWorldRunnable: () => void)
     // private adventuremaps: WorldTemplatePaginatedList;
     // private experiences: WorldTemplatePaginatedList;
     // private inspirations: WorldTemplatePaginatedList;

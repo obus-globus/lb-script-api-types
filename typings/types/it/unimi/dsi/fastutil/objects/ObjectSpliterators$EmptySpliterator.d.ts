@@ -15,7 +15,6 @@ export class ObjectSpliterators$EmptySpliterator<K extends unknown> extends Obje
     constructor()
     characteristics(): number;
     clone(): Object;
-    protected clone(): Object;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: K) => void): void;
     // private readResolve(): Object;

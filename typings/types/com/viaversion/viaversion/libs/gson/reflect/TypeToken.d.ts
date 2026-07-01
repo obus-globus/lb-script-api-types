@@ -7,7 +7,6 @@ export class TypeToken<T extends unknown> extends Object {
     static getArray(paramarg0: Type): TypeToken<Object>;
     static getParameterized(paramarg0: Type, paramarg1: (Object | null)[]): TypeToken<Object>;
     constructor()
-    private constructor(arg0: Type)
     // private hashCode: number;
     readonly rawType: Class<T>;
     readonly type: Type;

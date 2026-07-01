@@ -12,7 +12,6 @@ export class PropertiesUtil extends Object {
     static partitionOnCommonPrefixes(paramproperties: { [key: string]: any }, paramincludeBaseKey: boolean): { [key: string]: { [key: string]: any } };
     constructor(props: { [key: string]: any })
     constructor(propertiesFileName: string)
-    private constructor(propertiesFileName: string, useTccl: boolean)
     constructor(source: PropertySource)
     // private environment: PropertiesUtil$Environment;
     addPropertySource(propertySource: PropertySource): void;

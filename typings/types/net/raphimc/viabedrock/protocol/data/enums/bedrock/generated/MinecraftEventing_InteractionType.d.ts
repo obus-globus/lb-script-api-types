@@ -7,6 +7,7 @@ export class MinecraftEventing_InteractionType extends Enum<MinecraftEventing_In
     static Commanding: MinecraftEventing_InteractionType;
     static Crafted: MinecraftEventing_InteractionType;
     static Curing: MinecraftEventing_InteractionType;
+    static Equipping: MinecraftEventing_InteractionType;
     static Feeding: MinecraftEventing_InteractionType;
     static Igniting: MinecraftEventing_InteractionType;
     static Leashing: MinecraftEventing_InteractionType;
@@ -29,5 +30,5 @@ export class MinecraftEventing_InteractionType extends Enum<MinecraftEventing_In
     private constructor(arg2: MinecraftEventing_InteractionType)
     readonly value: number;
     getValue(): number;
-    name(): "Breeding" | "Taming" | "Curing" | "Crafted" | "Shearing" | "Milking" | "Trading" | "Feeding" | "Igniting" | "Coloring" | "Naming" | "Leashing" | "Unleashing" | "PetSleep" | "Trusting" | "Commanding";
+    name(): "Breeding" | "Taming" | "Curing" | "Crafted" | "Shearing" | "Milking" | "Trading" | "Feeding" | "Igniting" | "Coloring" | "Naming" | "Leashing" | "Unleashing" | "PetSleep" | "Trusting" | "Commanding" | "Equipping";
 }

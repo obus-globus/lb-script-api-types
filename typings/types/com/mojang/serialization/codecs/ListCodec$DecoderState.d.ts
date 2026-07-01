@@ -6,7 +6,7 @@ import type { ListCodec } from '../../../../com/mojang/serialization/codecs/List
 import type { Stream$Builder } from '../../../../java/util/stream/Stream$Builder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ListCodec$DecoderState<T extends unknown> extends Object {
-    private constructor(null_: ListCodec<E>, arg1: DynamicOps<T>)
+    private constructor(null_: ListCodec<Object>, arg1: DynamicOps<T>)
     // private elements: E[];
     // private failed: Stream$Builder<T>;
     // private ops: DynamicOps<T>;

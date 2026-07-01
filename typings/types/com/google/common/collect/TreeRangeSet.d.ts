@@ -1,4 +1,3 @@
-import type { TreeRangeSet$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AbstractRangeSet } from '../../../../com/google/common/collect/AbstractRangeSet.d.ts'
 import type { Cut } from '../../../../com/google/common/collect/Cut.d.ts'
 import type { Range } from '../../../../com/google/common/collect/Range.d.ts'
@@ -10,8 +9,7 @@ export class TreeRangeSet<C extends Comparable<Object>> extends AbstractRangeSet
     static create(): TreeRangeSet<any>;
     static create(paramrangeSet: RangeSet<any>): TreeRangeSet<any>;
     static create(paramranges: Range<any>[]): TreeRangeSet<any>;
-    constructor(arg0: Map<Object, Object>, arg1: TreeRangeSet$1)
-    private constructor(rangesByLowerCut: Map<Cut<C>, Range<C>>)
+    constructor(arg0: Map<Object, Object>, arg1: any)
     // private asDescendingSetOfRanges: Range<C>[];
     // private asRanges: Range<C>[];
     // private complement: RangeSet<C>;

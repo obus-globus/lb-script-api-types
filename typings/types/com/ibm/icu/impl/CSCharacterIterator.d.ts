@@ -8,7 +8,6 @@ export class CSCharacterIterator extends Object implements CharacterIterator, Cl
     readonly index: number;
     // private seq: CharSequence;
     clone(): CSCharacterIterator;
-    protected clone(): Object;
     current(): string;
     first(): string;
     getBeginIndex(): number;

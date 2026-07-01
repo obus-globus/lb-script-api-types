@@ -12,7 +12,6 @@ export class ClientboundBlockChangedAckPacket extends Record implements Packet<C
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundBlockChangedAckPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(sequence: number)
-    private constructor(input: FriendlyByteBuf)
     // private sequence: number;
     equals(o: Object | null): boolean;
     handle(listener: ClientGamePacketListener): void;

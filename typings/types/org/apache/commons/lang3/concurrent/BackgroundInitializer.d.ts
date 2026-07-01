@@ -1,4 +1,3 @@
-import type { BackgroundInitializer$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Exception } from '../../../../../java/lang/Exception.d.ts'
 import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { ExecutorService } from '../../../../../java/util/concurrent/ExecutorService.d.ts'
@@ -13,8 +12,7 @@ export class BackgroundInitializer<T extends unknown> extends AbstractConcurrent
     static builder(): BackgroundInitializer$Builder<BackgroundInitializer<Object>, Object>;
     constructor()
     constructor(arg0: ExecutorService)
-    constructor(arg0: () => Object, arg1: (param0: Object) => void, arg2: ExecutorService, arg3: BackgroundInitializer$1)
-    private constructor(arg0: () => T, arg1: (param0: T) => void, arg2: ExecutorService)
+    constructor(arg0: () => Object, arg1: (param0: Object) => void, arg2: ExecutorService, arg3: any)
     // private executor: ExecutorService;
     readonly externalExecutor: ExecutorService;
     readonly future: Future<T>;

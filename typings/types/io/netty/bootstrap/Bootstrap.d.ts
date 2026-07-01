@@ -10,7 +10,6 @@ import type { SocketAddress } from '../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Bootstrap extends AbstractBootstrap<Bootstrap, Channel> {
     constructor()
-    private constructor(arg0: Bootstrap)
     // private config: BootstrapConfig;
     // private disableResolver: boolean;
     // private externalResolver: Bootstrap$ExternalAddressResolver;

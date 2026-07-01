@@ -12,7 +12,6 @@ import type { TypeConstructor } from '../../../../../../../kotlin/reflect/jvm/in
 import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class IntegerLiteralTypeConstructor extends Object implements TypeConstructor {
     static Companion: IntegerLiteralTypeConstructor$Companion;
-    private constructor(arg0: number, arg1: ModuleDescriptor, arg2: KotlinType[])
     constructor(arg0: number, arg1: ModuleDescriptor, arg2: (Object | null)[], arg3: DefaultConstructorMarker)
     // private module: ModuleDescriptor;
     readonly possibleTypes: KotlinType[];

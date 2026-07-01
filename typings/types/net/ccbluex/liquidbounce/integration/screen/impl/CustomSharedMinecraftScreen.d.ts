@@ -22,7 +22,6 @@ export class CustomSharedMinecraftScreen extends Screen {
     readonly parentScreen: Screen | null;
     readonly screenType: CustomScreenType;
     // private theme: Theme;
-    protected init(): void;
     init(width: number, height: number): void;
     isPauseScreen(): boolean;
     onClose(): void;

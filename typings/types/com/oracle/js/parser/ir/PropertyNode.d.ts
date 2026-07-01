@@ -8,7 +8,6 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PropertyNode extends Node {
-    private constructor(propertyNode: PropertyNode, key: Expression, value: Expression, getter: FunctionNode, setter: FunctionNode, isStatic: boolean, computed: boolean, coverInitializedName: boolean, proto: boolean)
     constructor(token: number, finish: number, key: Expression, value: Expression, getter: FunctionNode, setter: FunctionNode, isStatic: boolean, computed: boolean, isAnonymousFunctionDefinition: boolean)
     constructor(token: number, finish: number, key: Expression, value: Expression, getter: FunctionNode, setter: FunctionNode, isStatic: boolean, computed: boolean, coverInitializedName: boolean, proto: boolean)
     constructor(token: number, finish: number, key: Expression, value: Expression, getter: FunctionNode, setter: FunctionNode, isStatic: boolean, computed: boolean, coverInitializedName: boolean, proto: boolean, classField: boolean, isAnonymousFunctionDefinition: boolean)

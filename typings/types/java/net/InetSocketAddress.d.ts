@@ -8,7 +8,6 @@ export class InetSocketAddress extends SocketAddress {
     static createUnresolved(paramarg0: string, paramarg1: number): InetSocketAddress;
     constructor(arg0: InetAddress, arg1: number)
     constructor(arg0: number)
-    private constructor(arg0: number, arg1: string)
     constructor(arg0: string, arg1: number)
     // private holder: InetSocketAddress$InetSocketAddressHolder;
     equals(arg0: Object | null): boolean;

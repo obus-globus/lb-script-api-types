@@ -13,7 +13,6 @@ export class ServerboundHelloPacket extends Record implements Packet<ServerLogin
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundHelloPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(name: string, profileId: UUID)
-    private constructor(input: FriendlyByteBuf)
     // private name: string;
     // private profileId: UUID;
     equals(o: Object | null): boolean;

@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
  * A circular buffer that maintains double the cycle length and regenerates the second half
  * when reaching the midpoint
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:26}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:26}
  */
 export class RollingClickArray extends Object {
     constructor(cycleLength: number, iterations: number)
@@ -16,26 +16,26 @@ export class RollingClickArray extends Object {
     /**
      * Advances the head position and returns true if halfway point reached
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:55}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:55}
      */
     advance(amount: number): boolean;
     /**
      * Clears the array
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:63}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:63}
      */
     clear(): void;
     /**
      * Gets value at relative index from current head
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:39}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:39}
      */
     get(relativeIndex: number): number;
     push(cycleArray: number[]): void;
     /**
      * Sets value at relative index from current head
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:47}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/utils/clicking/RollingClickArray.kt:47}
      */
     set(relativeIndex: number, value: number): void;
 }

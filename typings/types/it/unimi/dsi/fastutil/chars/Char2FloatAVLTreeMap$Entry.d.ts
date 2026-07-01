@@ -10,7 +10,6 @@ export class Char2FloatAVLTreeMap$Entry extends AbstractChar2FloatMap$BasicEntry
     balance(): number;
     balance(arg0: number): void;
     clone(): Char2FloatAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

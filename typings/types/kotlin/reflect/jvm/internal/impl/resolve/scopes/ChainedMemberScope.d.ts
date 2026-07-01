@@ -13,7 +13,6 @@ import type { MemberScope$Companion } from '../../../../../../../kotlin/reflect/
 export class ChainedMemberScope extends Object implements MemberScope {
     static Companion: ChainedMemberScope$Companion;
     static Companion: MemberScope$Companion;
-    private constructor(arg0: string, arg1: MemberScope[])
     constructor(arg0: string, arg1: MemberScope[], arg2: DefaultConstructorMarker)
     // private debugName: string;
     // private scopes: MemberScope[];

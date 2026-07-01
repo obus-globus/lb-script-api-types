@@ -7,7 +7,6 @@ export class FqName extends Object {
     static ROOT: FqName;
     constructor(arg0: string)
     constructor(arg0: FqNameUnsafe)
-    private constructor(arg0: FqNameUnsafe, arg1: FqName)
     // private fqName: FqNameUnsafe;
     // private parent: FqName;
     asString(): string;

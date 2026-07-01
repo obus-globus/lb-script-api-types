@@ -7,7 +7,6 @@ import type { Number } from '../../../../java/lang/Number.d.ts'
 export class JsonArray extends JsonElement {
     static fromJson(paramarg0: JsonReader): JsonArray;
     constructor()
-    private constructor(arg0: JsonElement[])
     // private elements: JsonElement[];
     addElement(arg0: JsonElement): JsonArray;
     addElement(arg0: boolean): JsonArray;

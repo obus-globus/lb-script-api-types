@@ -2,7 +2,6 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ParallelMapTransform$Container<K extends unknown, U extends unknown, V extends unknown> extends Record {
-    private constructor(operation: (param0: K, param1: U) => V, keys: Object[], values: Object[])
     constructor(operation: (param0: K, param1: U) => V, size: number)
     // private keys: Object[];
     // private operation: (param0: K, param1: U) => V;

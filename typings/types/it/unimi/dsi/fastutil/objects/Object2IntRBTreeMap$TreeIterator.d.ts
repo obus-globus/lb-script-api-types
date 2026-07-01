@@ -2,7 +2,7 @@ import type { Object2IntRBTreeMap$Entry } from '../../../../../it/unimi/dsi/fast
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2IntRBTreeMap$TreeIterator extends Object {
     constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: K)
+    constructor(null_: { [key: string]: any }, arg1: Object)
     // private curr: Object2IntRBTreeMap$Entry<K>;
     // private index: number;
     // private next: Object2IntRBTreeMap$Entry<K>;

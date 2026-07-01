@@ -9,7 +9,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CatchNode extends Statement {
-    private constructor(catchNode: CatchNode, exception: IdentNode, pattern: Expression, exceptionCondition: Expression, body: Block, isSyntheticRethrow: boolean)
     constructor(lineNumber: number, token: number, finish: number, exception: IdentNode, pattern: Expression, exceptionCondition: Expression, body: Block, isSyntheticRethrow: boolean)
     readonly body: Block;
     readonly exception: IdentNode;

@@ -17,7 +17,6 @@ export class CharSpliterators$EmptySpliterator extends Object implements CharSpl
     constructor()
     characteristics(): number;
     clone(): Object;
-    protected clone(): Object;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: string) => void): void;
     getComparator(): (param0: string, param1: string) => number;

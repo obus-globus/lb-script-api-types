@@ -11,7 +11,6 @@ export class ServerboundPaddleBoatPacket extends Object implements Packet<Server
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundPaddleBoatPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(left: boolean, right: boolean)
-    private constructor(input: FriendlyByteBuf)
     readonly left: boolean;
     readonly right: boolean;
     getLeft(): boolean;

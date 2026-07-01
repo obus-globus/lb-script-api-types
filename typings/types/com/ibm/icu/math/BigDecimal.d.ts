@@ -20,7 +20,6 @@ export class BigDecimal extends Number implements Serializable, Comparable<BigDe
     static valueOf(paramarg0: number): BigDecimal;
     static valueOf(paramarg0: number): BigDecimal;
     static valueOf(paramarg0: number, paramarg1: number): BigDecimal;
-    private constructor()
     constructor(arg0: BigDecimal_2)
     constructor(arg0: BigInteger)
     constructor(arg0: BigInteger, arg1: number)

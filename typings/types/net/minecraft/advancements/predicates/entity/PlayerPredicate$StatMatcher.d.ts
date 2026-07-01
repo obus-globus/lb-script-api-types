@@ -9,7 +9,6 @@ import type { StatsCounter } from '../../../../../net/minecraft/stats/StatsCount
 export class PlayerPredicate$StatMatcher<T extends unknown> extends Record {
     static CODEC: Codec<PlayerPredicate$StatMatcher<Object>>;
     constructor(type: Stat<T>[], value: Holder<T>, range: MinMaxBounds$Ints)
-    private constructor(type: Stat<T>[], value: Holder<T>, range: MinMaxBounds$Ints, stat: () => Stat<T>)
     // private range: MinMaxBounds$Ints;
     // private stat: () => Stat<T>;
     // private type: Stat<T>[];

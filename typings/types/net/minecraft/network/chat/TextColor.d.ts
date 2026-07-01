@@ -24,7 +24,6 @@ export class TextColor extends Object implements TextColorAddition {
     static fromLegacyFormat(paramformat: ChatFormatting): TextColor;
     static fromRgb(paramrgb: number): TextColor;
     static parseColor(paramcolor: string): DataResult<TextColor>;
-    private constructor(value: number)
     constructor(value: number, name: string)
     // private bypassesNameProtect: boolean;
     // private name: string;

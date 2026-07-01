@@ -10,7 +10,6 @@ export class Char2ReferenceAVLTreeMap$Entry<V extends unknown> extends AbstractC
     balance(): number;
     balance(arg0: number): void;
     clone(): Char2ReferenceAVLTreeMap$Entry<V>;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

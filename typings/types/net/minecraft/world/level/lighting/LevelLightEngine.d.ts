@@ -13,7 +13,6 @@ import type { LightEventListener } from '../../../../../net/minecraft/world/leve
 export class LevelLightEngine extends Object implements LightEventListener {
     static EMPTY: LevelLightEngine;
     static LIGHT_SECTION_PADDING: number;
-    private constructor()
     constructor(chunkSource: LightChunkGetter, hasBlockLight: boolean, hasSkyLight: boolean)
     // private blockEngine: LightEngine<any, any>;
     // private levelHeightAccessor: LevelHeightAccessor;

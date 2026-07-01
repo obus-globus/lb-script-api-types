@@ -3,7 +3,7 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class InventorySource_InventorySourceFlags extends Enum<InventorySource_InventorySourceFlags> {
     static NoFlag: InventorySource_InventorySourceFlags;
-    static WorldInteraction_Random: InventorySource_InventorySourceFlags;
+    static WorldInteractionRandom: InventorySource_InventorySourceFlags;
     static getByName(paramarg0: string): InventorySource_InventorySourceFlags;
     static getByName(paramarg0: string, paramarg1: InventorySource_InventorySourceFlags): InventorySource_InventorySourceFlags;
     static getByValue(paramarg0: number): InventorySource_InventorySourceFlags;
@@ -15,5 +15,5 @@ export class InventorySource_InventorySourceFlags extends Enum<InventorySource_I
     private constructor(arg2: InventorySource_InventorySourceFlags)
     readonly value: number;
     getValue(): number;
-    name(): "NoFlag" | "WorldInteraction_Random";
+    name(): "NoFlag" | "WorldInteractionRandom";
 }

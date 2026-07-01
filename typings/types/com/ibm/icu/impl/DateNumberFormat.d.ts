@@ -63,7 +63,6 @@ export class DateNumberFormat extends NumberFormat implements Cloneable {
     // private positiveOnly: boolean;
     readonly zeroDigit: string;
     clone(): DateNumberFormat;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     format(arg0: BigDecimal): string;
     format(arg0: BigDecimal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;

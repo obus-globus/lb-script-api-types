@@ -15,7 +15,7 @@ export class TutorialSteps extends Enum<TutorialSteps> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TutorialSteps;
     static values(): (Object | null)[];
-    private constructor(name: string, constructor: (param0: Tutorial) => T)
+    private constructor(name: string, constructor: (param0: Tutorial) => TutorialStepInstance)
     // private constructor: (param0: Tutorial) => TutorialStepInstance;
     create(tutorial: Tutorial): TutorialStepInstance;
     getName(): string;

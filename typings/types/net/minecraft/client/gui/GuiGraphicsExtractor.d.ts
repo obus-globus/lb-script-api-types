@@ -48,7 +48,6 @@ import type { Quaternionfc } from '../../../../org/joml/Quaternionfc.d.ts'
 import type { Vector3fc } from '../../../../org/joml/Vector3fc.d.ts'
 export class GuiGraphicsExtractor extends Object implements GuiGraphicsExtractorAddition {
     constructor(minecraft: Minecraft, guiRenderState: GuiRenderState, mouseX: number, mouseY: number)
-    private constructor(minecraft: Minecraft, pose: Matrix3x2fStack, guiRenderState: GuiRenderState, mouseX: number, mouseY: number)
     // private clickableTextStyle: Style;
     // private deferredTooltip: () => void;
     guiRenderState: GuiRenderState;

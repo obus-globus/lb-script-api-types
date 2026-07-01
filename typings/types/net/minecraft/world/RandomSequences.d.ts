@@ -9,7 +9,6 @@ export class RandomSequences extends SavedData {
     static CODEC: Codec<RandomSequences>;
     static TYPE: SavedDataType<RandomSequences>;
     constructor()
-    private constructor(salt: number, includeWorldSeed: boolean, includeSequenceId: boolean, sequences: Map<Identifier, RandomSequence>)
     // private includeSequenceId: boolean;
     // private includeWorldSeed: boolean;
     // private salt: number;

@@ -7,7 +7,7 @@ import type { NamedRule } from '../../../../../net/minecraft/util/parsing/packra
 import type { ParseState } from '../../../../../net/minecraft/util/parsing/packrat/ParseState.d.ts'
 import type { Scope } from '../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
 export class CachedParseState$Silent extends Object implements ParseState<S> {
-    private constructor(null_: CachedParseState<S>)
+    private constructor(null_: CachedParseState<Object>)
     // private silentCollector: ErrorCollector<S>;
     acquireControl(): Control;
     errorCollector<S extends unknown>(): ErrorCollector<S>;

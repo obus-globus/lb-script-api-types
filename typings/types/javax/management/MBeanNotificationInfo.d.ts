@@ -9,7 +9,6 @@ export class MBeanNotificationInfo extends MBeanFeatureInfo implements Cloneable
     // private arrayGettersSafe: boolean;
     // private types: string[];
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     // private fastGetNotifTypes(): string[];
     getNotifTypes(): string[];

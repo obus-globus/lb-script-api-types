@@ -6,7 +6,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ByteLinkedOpenHashMap$FastEntryIterator extends Object2ByteLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<Object2ByteMap$Entry<K>> {
     constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: K)
+    constructor(null_: { [key: string]: any }, arg1: Object)
     // private entry: Object2ByteLinkedOpenHashMap$MapEntry;
     acceptOnIndex<K extends unknown>(arg0: (param0: Object2ByteMap$Entry<K>) => void, arg1: number): void;
     add<K extends unknown>(arg0: Object2ByteMap$Entry<K>): void;

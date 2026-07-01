@@ -15,7 +15,6 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { DependencySorter$Entry } from '../../../../../net/minecraft/util/DependencySorter$Entry.d.ts'
 export class FontManager$UnresolvedBuilderBundle extends Record implements DependencySorter$Entry<Identifier> {
     constructor(fontId: Identifier)
-    private constructor(fontId: Identifier, builders: FontManager$BuilderResult[], dependencies: Identifier[])
     // private builders: FontManager$BuilderResult[];
     // private dependencies: Identifier[];
     // private fontId: Identifier;

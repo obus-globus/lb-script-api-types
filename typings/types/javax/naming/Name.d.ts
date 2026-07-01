@@ -9,7 +9,6 @@ export interface Name extends Serializable, Object, Cloneable, Comparable<Object
     addAll(arg0: Name): Name;
     addAll(arg0: number, arg1: Name): Name;
     clone(): Object;
-    protected clone(): Object;
     compareTo(arg0: Object): number;
     endsWith(arg0: Name): boolean;
     get(arg0: number): string;

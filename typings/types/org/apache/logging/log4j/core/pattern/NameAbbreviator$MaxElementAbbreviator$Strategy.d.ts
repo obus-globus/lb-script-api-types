@@ -1,4 +1,3 @@
-import type { NameAbbreviator$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
@@ -9,8 +8,7 @@ export class NameAbbreviator$MaxElementAbbreviator$Strategy extends Enum<NameAbb
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): NameAbbreviator$MaxElementAbbreviator$Strategy;
     static values(): (Object | null)[];
-    private constructor(minCount: number)
-    constructor(arg2: number, arg3: NameAbbreviator$1)
+    constructor(arg2: number, arg3: any)
     // private minCount: number;
     abbreviate(count: number, original: string, destination: StringBuilder): void;
     name(): "DROP" | "RETAIN";

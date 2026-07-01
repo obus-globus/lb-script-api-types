@@ -9,7 +9,6 @@ import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BinaryNode extends Expression implements Assignment<Expression> {
     static isLogical(paramtokenType: TokenType): boolean;
-    private constructor(binaryNode: BinaryNode, lhs: Expression, rhs: Expression)
     constructor(token: number, lhs: Expression, rhs: Expression)
     readonly lhs: Expression;
     readonly rhs: Expression;

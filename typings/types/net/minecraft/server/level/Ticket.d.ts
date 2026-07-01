@@ -4,7 +4,6 @@ import type { TicketType } from '../../../../net/minecraft/server/level/TicketTy
 export class Ticket extends Object {
     static CODEC: MapCodec<Ticket>;
     constructor(type: TicketType, ticketLevel: number)
-    private constructor(type: TicketType, ticketLevel: number, ticksLeft: number)
     readonly ticketLevel: number;
     // private ticksLeft: number;
     readonly type: TicketType;

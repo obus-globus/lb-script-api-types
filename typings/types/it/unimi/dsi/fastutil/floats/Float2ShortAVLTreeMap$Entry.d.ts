@@ -10,7 +10,6 @@ export class Float2ShortAVLTreeMap$Entry extends AbstractFloat2ShortMap$BasicEnt
     balance(): number;
     balance(arg0: number): void;
     clone(): Float2ShortAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

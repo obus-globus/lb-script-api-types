@@ -55,7 +55,6 @@ export class Vector4L extends Object implements Externalizable, Cloneable, Vecto
     add(arg0: Vector4Lc, arg1: Vector4L): Vector4L;
     add(arg0: Vector4ic): Vector4L;
     add(arg0: Vector4ic, arg1: Vector4L): Vector4L;
-    protected clone(): Object;
     clone(): Object;
     distance(arg0: number, arg1: number, arg2: number, arg3: number): number;
     distance(arg0: Vector4Lc): number;

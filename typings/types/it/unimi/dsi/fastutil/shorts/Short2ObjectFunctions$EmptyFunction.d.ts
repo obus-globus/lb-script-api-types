@@ -6,7 +6,6 @@ export class Short2ObjectFunctions$EmptyFunction<V extends unknown> extends Abst
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): V;

@@ -9,7 +9,6 @@ export class FrameDescriptor extends Object implements Cloneable {
     static newBuilder(paramcapacity: number): FrameDescriptor$Builder;
     constructor()
     constructor(defaultValue: Object)
-    private constructor(defaultValue: Object, indexedSlotCount: number, indexedSlotTags: number[], indexedSlotNames: Object[], indexedSlotInfos: Object[], info: Object)
     // private activeAuxiliarySlotCount: number;
     // private auxiliarySlotCount: number;
     // private auxiliarySlotMap: EconomicMap<Object, number>;

@@ -6,7 +6,6 @@ export class Char2CharFunctions$EmptyFunction extends AbstractChar2CharFunction 
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): string;

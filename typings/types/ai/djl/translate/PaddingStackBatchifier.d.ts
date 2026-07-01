@@ -1,4 +1,3 @@
-import type { PaddingStackBatchifier$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { NDArray } from '../../../ai/djl/ndarray/NDArray.d.ts'
 import type { NDManager } from '../../../ai/djl/ndarray/NDManager.d.ts'
 import type { Batchifier } from '../../../ai/djl/translate/Batchifier.d.ts'
@@ -11,8 +10,7 @@ export class PaddingStackBatchifier extends Object implements Batchifier {
     static findMaxSize(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): number;
     static fromString(paramarg0: string): Batchifier;
     static padArrays(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: NDArray, paramarg4: number): number[];
-    private constructor(arg0: PaddingStackBatchifier$Builder)
-    constructor(arg0: PaddingStackBatchifier$Builder, arg1: PaddingStackBatchifier$1)
+    constructor(arg0: PaddingStackBatchifier$Builder, arg1: any)
     // private arraysToPad: number[];
     // private dimsToPad: number[];
     // private includeValidLengths: boolean;

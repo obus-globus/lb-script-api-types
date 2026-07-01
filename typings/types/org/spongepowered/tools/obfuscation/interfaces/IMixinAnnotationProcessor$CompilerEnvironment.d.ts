@@ -1,4 +1,3 @@
-import type { IMixinAnnotationProcessor$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ProcessingEnvironment } from '../../../../../javax/annotation/processing/ProcessingEnvironment.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -11,8 +10,7 @@ export class IMixinAnnotationProcessor$CompilerEnvironment extends Enum<IMixinAn
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): IMixinAnnotationProcessor$CompilerEnvironment;
     static values(): (Object | null)[];
-    private constructor(arg2: boolean, arg3: string)
-    constructor(arg2: boolean, arg3: string, arg4: IMixinAnnotationProcessor$1)
+    constructor(arg2: boolean, arg3: string, arg4: any)
     readonly friendlyName: string;
     // private isDevelopmentEnvironment: boolean;
     getFriendlyName(): string;

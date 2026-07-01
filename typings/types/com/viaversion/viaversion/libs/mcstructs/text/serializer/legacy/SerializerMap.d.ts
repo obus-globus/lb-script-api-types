@@ -1,4 +1,3 @@
-import type { SerializerMap$1 } from '../../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Tag } from '../../../../../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { SNbt } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/snbt/SNbt.d.ts'
 import type { EventSerializer } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/legacy/EventSerializer.d.ts'
@@ -8,8 +7,7 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SerializerMap<R extends unknown, A extends Enum<A>, IO extends unknown> extends Object {
     static create(paramarg0: SNbt<any>): SerializerMap$Builder<Object, any, Object>;
-    constructor(arg0: SNbt<Tag>, arg1: (Object | null)[], arg2: (param0: Object) => Object, arg3: SerializerMap$1)
-    private constructor(arg0: SNbt<any>, arg1: EventSerializer<R, R, A, IO>[], arg2: (param0: R) => A)
+    constructor(arg0: SNbt<Tag>, arg1: (Object | null)[], arg2: (param0: Object) => Object, arg3: any)
     // private sNbt: SNbt<any>;
     // private serializers: Map<A, EventSerializer<R, R, A, IO>[]>;
     // private toActionFunction: (param0: R) => A;

@@ -10,7 +10,6 @@ export class Byte2CharAVLTreeMap$Entry extends AbstractByte2CharMap$BasicEntry i
     balance(): number;
     balance(arg0: number): void;
     clone(): Byte2CharAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

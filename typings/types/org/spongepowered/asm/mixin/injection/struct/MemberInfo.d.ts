@@ -22,8 +22,6 @@ export class MemberInfo extends Object implements ITargetSelectorConstructor, IT
     constructor(arg0: string, arg1: string, arg2: Quantifier)
     constructor(arg0: string, arg1: Quantifier)
     constructor(arg0: AbstractInsnNode)
-    private constructor(arg0: MemberInfo, arg1: string)
-    private constructor(arg0: MemberInfo, arg1: MappingMethod, arg2: boolean)
     constructor(arg0: IMapping<Object>)
     readonly desc: string;
     // private forceField: boolean;

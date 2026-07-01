@@ -18,7 +18,6 @@ export class SimpleSoundInstance extends AbstractSoundInstance {
     static forUI(paramsound: SoundEvent, parampitch: number): SimpleSoundInstance;
     static forUI(paramsound: SoundEvent, parampitch: number, paramvolume: number): SimpleSoundInstance;
     constructor(location: Identifier, source: SoundSource, volume: number, pitch: number, random: RandomSource, looping: boolean, delay: number, attenuation: SoundInstance$Attenuation, x: number, y: number, z: number, relative: boolean)
-    private constructor(sound: SoundEvent, source: SoundSource, volume: number, pitch: number, random: RandomSource, looping: boolean, delay: number, attenuation: SoundInstance$Attenuation, x: number, y: number, z: number)
     constructor(sound: SoundEvent, source: SoundSource, volume: number, pitch: number, random: RandomSource, x: number, y: number, z: number)
     constructor(sound: SoundEvent, source: SoundSource, volume: number, pitch: number, random: RandomSource, pos: BlockPos)
 }

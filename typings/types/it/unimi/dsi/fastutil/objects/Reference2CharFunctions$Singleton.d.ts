@@ -7,7 +7,6 @@ export class Reference2CharFunctions$Singleton<K extends unknown> extends Abstra
     // private key: K;
     // private value: string;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     getChar(arg0: Object): string;
     getOrDefault(arg0: Object, arg1: string): string;

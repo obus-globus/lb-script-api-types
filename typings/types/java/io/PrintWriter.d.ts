@@ -18,7 +18,6 @@ export class PrintWriter extends Writer {
     constructor(arg0: Writer)
     constructor(arg0: Writer, arg1: Object)
     constructor(arg0: Writer, arg1: boolean)
-    private constructor(arg0: Charset, arg1: File)
     constructor(arg0: string)
     constructor(arg0: string, arg1: Charset)
     constructor(arg0: string, arg1: string)

@@ -46,7 +46,6 @@ export class Vector3i extends Object implements Externalizable, Cloneable, Vecto
     add(arg0: number, arg1: number, arg2: number, arg3: Vector3i): Vector3i;
     add(arg0: Vector3ic): Vector3i;
     add(arg0: Vector3ic, arg1: Vector3i): Vector3i;
-    protected clone(): Object;
     clone(): Object;
     distance(arg0: number, arg1: number, arg2: number): number;
     distance(arg0: Vector3ic): number;

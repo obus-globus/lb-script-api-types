@@ -2,7 +2,6 @@ import type { ResultSetMetaData } from '../../../../../../../../java/sql/ResultS
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class JdbcDatabaseManager$ResultSetColumnMetaData extends Object {
     constructor(rsMetaData: ResultSetMetaData, j: number)
-    private constructor(schemaName: string, catalogName: string, tableName: string, name: string, label: string, displaySize: number, type: number, typeName: string, className: string, precision: number, scale: number)
     readonly catalogName: string;
     readonly className: string;
     readonly displaySize: number;

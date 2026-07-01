@@ -14,7 +14,6 @@ export class ServerboundSetJigsawBlockPacket extends Object implements Packet<Se
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetJigsawBlockPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(blockPos: BlockPos, name: Identifier, target: Identifier, pool: Identifier, finalState: string, joint: JigsawBlockEntity$JointType, selectionPriority: number, placementPriority: number)
-    private constructor(input: FriendlyByteBuf)
     readonly finalState: string;
     readonly joint: JigsawBlockEntity$JointType;
     readonly name: Identifier;

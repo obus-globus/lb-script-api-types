@@ -1,4 +1,3 @@
-import type { BOMInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { ByteOrderMark } from '../../../../../org/apache/commons/io/ByteOrderMark.d.ts'
 import type { BOMInputStream$Builder } from '../../../../../org/apache/commons/io/input/BOMInputStream$Builder.d.ts'
@@ -10,8 +9,7 @@ export class BOMInputStream extends ProxyInputStream {
     constructor(arg0: InputStream, arg1: ByteOrderMark[])
     constructor(arg0: InputStream, arg1: boolean)
     constructor(arg0: InputStream, arg1: boolean, arg2: ByteOrderMark[])
-    private constructor(arg0: BOMInputStream$Builder)
-    constructor(arg0: BOMInputStream$Builder, arg1: BOMInputStream$1)
+    constructor(arg0: BOMInputStream$Builder, arg1: any)
     // private bomList: ByteOrderMark[];
     // private byteOrderMark: ByteOrderMark;
     // private fbIndex: number;

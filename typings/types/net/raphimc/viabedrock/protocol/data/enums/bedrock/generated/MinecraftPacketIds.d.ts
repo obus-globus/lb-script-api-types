@@ -3,13 +3,16 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static ActorEvent: MinecraftPacketIds;
+    static ActorFall: MinecraftPacketIds;
     static ActorPickRequest: MinecraftPacketIds;
     static AddActor: MinecraftPacketIds;
     static AddBehaviorTree: MinecraftPacketIds;
+    static AddEntity: MinecraftPacketIds;
     static AddItemActor: MinecraftPacketIds;
     static AddPainting: MinecraftPacketIds;
     static AddPlayer: MinecraftPacketIds;
     static AddVolumeEntityPacket: MinecraftPacketIds;
+    static AdventureSettings: MinecraftPacketIds;
     static AgentAction: MinecraftPacketIds;
     static AgentAnimation: MinecraftPacketIds;
     static Animate: MinecraftPacketIds;
@@ -20,6 +23,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static AwardAchievementPacket: MinecraftPacketIds;
     static BiomeDefinitionList: MinecraftPacketIds;
     static BlockActorData: MinecraftPacketIds;
+    static BlockPalette: MinecraftPacketIds;
     static BlockPickRequest: MinecraftPacketIds;
     static BookEdit: MinecraftPacketIds;
     static BossEvent: MinecraftPacketIds;
@@ -39,6 +43,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static ClientCacheMissResponsePacket: MinecraftPacketIds;
     static ClientCacheStatus: MinecraftPacketIds;
     static ClientCameraAimAssist: MinecraftPacketIds;
+    static ClientCheatAbilityPacket: MinecraftPacketIds;
     static ClientMovementPredictionSyncPacket: MinecraftPacketIds;
     static ClientToServerHandshake: MinecraftPacketIds;
     static ClientboundAttributeLayerSyncPacket: MinecraftPacketIds;
@@ -48,6 +53,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static ClientboundDataDrivenUIReload: MinecraftPacketIds;
     static ClientboundDataDrivenUIShowScreen: MinecraftPacketIds;
     static ClientboundDataStore: MinecraftPacketIds;
+    static ClientboundLoadingScreenPacket: MinecraftPacketIds;
     static ClientboundTextureShiftPacket: MinecraftPacketIds;
     static CodeBuilderPacket: MinecraftPacketIds;
     static CodeBuilderSourcePacket: MinecraftPacketIds;
@@ -55,12 +61,14 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static CommandOutput: MinecraftPacketIds;
     static CommandRequest: MinecraftPacketIds;
     static CompletedUsingItem: MinecraftPacketIds;
+    static CompressedBiomeDefinitionList: MinecraftPacketIds;
     static ContainerClose: MinecraftPacketIds;
     static ContainerOpen: MinecraftPacketIds;
     static ContainerRegistryCleanup: MinecraftPacketIds;
     static ContainerSetData: MinecraftPacketIds;
     static CorrectPlayerMovePredictionPacket: MinecraftPacketIds;
     static CraftingData: MinecraftPacketIds;
+    static CraftingEvent: MinecraftPacketIds;
     static CreatePhotoPacket: MinecraftPacketIds;
     static CreativeContent: MinecraftPacketIds;
     static CurrentStructureFeaturePacket: MinecraftPacketIds;
@@ -74,6 +82,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static Emote: MinecraftPacketIds;
     static EmoteList: MinecraftPacketIds;
     static FeatureRegistryPacket: MinecraftPacketIds;
+    static FilterTextPacket: MinecraftPacketIds;
     static FullChunkData: MinecraftPacketIds;
     static GameRulesChanged: MinecraftPacketIds;
     static GameTestRequestPacket: MinecraftPacketIds;
@@ -85,6 +94,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static InventoryContent: MinecraftPacketIds;
     static InventorySlot: MinecraftPacketIds;
     static InventoryTransaction: MinecraftPacketIds;
+    static ItemFrameDropItem: MinecraftPacketIds;
     static ItemRegistryPacket: MinecraftPacketIds;
     static ItemStackRequest: MinecraftPacketIds;
     static ItemStackResponse: MinecraftPacketIds;
@@ -97,6 +107,8 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static LevelEvent: MinecraftPacketIds;
     static LevelEventGeneric: MinecraftPacketIds;
     static LevelSoundEvent: MinecraftPacketIds;
+    static LevelSoundEventV1: MinecraftPacketIds;
+    static LevelSoundEventV2: MinecraftPacketIds;
     static LocatorBarPacket: MinecraftPacketIds;
     static Login: MinecraftPacketIds;
     static MapCreateLockedCopy: MinecraftPacketIds;
@@ -119,6 +131,9 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static OpenSign: MinecraftPacketIds;
     static PacketViolationWarning: MinecraftPacketIds;
     static PartyChanged: MinecraftPacketIds;
+    static PartyDestinationCookieResponse: MinecraftPacketIds;
+    static PassengerJump: MinecraftPacketIds;
+    static PhotoInfoRequest: MinecraftPacketIds;
     static PhotoTransfer: MinecraftPacketIds;
     static Ping: MinecraftPacketIds;
     static PlaySound: MinecraftPacketIds;
@@ -131,6 +146,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static PlayerEquipment: MinecraftPacketIds;
     static PlayerFogSetting: MinecraftPacketIds;
     static PlayerHotbar: MinecraftPacketIds;
+    static PlayerInput: MinecraftPacketIds;
     static PlayerList: MinecraftPacketIds;
     static PlayerLocation: MinecraftPacketIds;
     static PlayerSkin: MinecraftPacketIds;
@@ -144,6 +160,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static PurchaseReceipt: MinecraftPacketIds;
     static RefreshEntitlementsPacket: MinecraftPacketIds;
     static RemoveActor: MinecraftPacketIds;
+    static RemoveEntity: MinecraftPacketIds;
     static RemoveObjective: MinecraftPacketIds;
     static RemoveVolumeEntityPacket: MinecraftPacketIds;
     static RequestAbilityPacket: MinecraftPacketIds;
@@ -160,6 +177,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static Respawn: MinecraftPacketIds;
     static ScriptCustomEvent: MinecraftPacketIds;
     static ScriptMessagePacket: MinecraftPacketIds;
+    static SendPartyDestinationCookie: MinecraftPacketIds;
     static ServerPlayerPostMovePosition: MinecraftPacketIds;
     static ServerPresenceInfo: MinecraftPacketIds;
     static ServerSettingsRequest: MinecraftPacketIds;
@@ -183,6 +201,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static SetHudPacket: MinecraftPacketIds;
     static SetLastHurtBy: MinecraftPacketIds;
     static SetLocalPlayerAsInit: MinecraftPacketIds;
+    static SetMovementAuthorityMode: MinecraftPacketIds;
     static SetPlayerGameType: MinecraftPacketIds;
     static SetPlayerInventoryOptions: MinecraftPacketIds;
     static SetScore: MinecraftPacketIds;
@@ -211,6 +230,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static SyncWorldClocks: MinecraftPacketIds;
     static TakeItemActor: MinecraftPacketIds;
     static Text: MinecraftPacketIds;
+    static TickSync: MinecraftPacketIds;
     static TickingAreasLoadStatus: MinecraftPacketIds;
     static TileEvent: MinecraftPacketIds;
     static TitleSpecificPacketsEnd: MinecraftPacketIds;
@@ -231,6 +251,7 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     static UpdateSoftEnum: MinecraftPacketIds;
     static UpdateSubChunkBlocks: MinecraftPacketIds;
     static UpdateTrade: MinecraftPacketIds;
+    static VideoStreamConnect: MinecraftPacketIds;
     static VoxelShapesPacket: MinecraftPacketIds;
     static getByName(paramarg0: string): MinecraftPacketIds;
     static getByName(paramarg0: string, paramarg1: MinecraftPacketIds): MinecraftPacketIds;
@@ -243,5 +264,5 @@ export class MinecraftPacketIds extends Enum<MinecraftPacketIds> {
     private constructor(arg2: MinecraftPacketIds)
     readonly value: number;
     getValue(): number;
-    name(): "KeepAlive" | "Login" | "PlayStatus" | "ServerToClientHandshake" | "ClientToServerHandshake" | "Disconnect" | "ResourcePacksInfo" | "ResourcePackStack" | "ResourcePackClientResponse" | "Text" | "SetTime" | "StartGame" | "AddPlayer" | "AddActor" | "RemoveActor" | "AddItemActor" | "ServerPlayerPostMovePosition" | "TakeItemActor" | "MoveAbsoluteActor" | "MovePlayer" | "UpdateBlock" | "AddPainting" | "LevelEvent" | "TileEvent" | "ActorEvent" | "MobEffect" | "UpdateAttributes" | "InventoryTransaction" | "PlayerEquipment" | "MobArmorEquipment" | "Interact" | "BlockPickRequest" | "ActorPickRequest" | "PlayerAction" | "HurtArmor" | "SetActorData" | "SetActorMotion" | "SetActorLink" | "SetHealth" | "SetSpawnPosition" | "Animate" | "Respawn" | "ContainerOpen" | "ContainerClose" | "PlayerHotbar" | "InventoryContent" | "InventorySlot" | "ContainerSetData" | "CraftingData" | "GuiDataPickItem" | "BlockActorData" | "FullChunkData" | "SetCommandsEnabled" | "SetDifficulty" | "ChangeDimension" | "SetPlayerGameType" | "PlayerList" | "SimpleEvent" | "LegacyTelemetryEvent" | "SpawnExperienceOrb" | "MapData" | "MapInfoRequest" | "RequestChunkRadius" | "ChunkRadiusUpdated" | "GameRulesChanged" | "Camera" | "BossEvent" | "ShowCredits" | "AvailableCommands" | "CommandRequest" | "CommandBlockUpdate" | "CommandOutput" | "UpdateTrade" | "UpdateEquip" | "ResourcePackDataInfo" | "ResourcePackChunkData" | "ResourcePackChunkRequest" | "Transfer" | "PlaySound" | "StopSound" | "SetTitle" | "AddBehaviorTree" | "StructureBlockUpdate" | "ShowStoreOffer" | "PurchaseReceipt" | "PlayerSkin" | "SubclientLogin" | "AutomationClientConnect" | "SetLastHurtBy" | "BookEdit" | "NPCRequest" | "PhotoTransfer" | "ShowModalForm" | "ModalFormResponse" | "ServerSettingsRequest" | "ServerSettingsResponse" | "ShowProfile" | "SetDefaultGameType" | "RemoveObjective" | "SetDisplayObjective" | "SetScore" | "LabTable" | "UpdateBlockSynced" | "MoveDeltaActor" | "SetScoreboardIdentity" | "SetLocalPlayerAsInit" | "UpdateSoftEnum" | "Ping" | "ScriptCustomEvent" | "SpawnParticleEffect" | "AvailableActorIDList" | "NetworkChunkPublisherUpdate" | "BiomeDefinitionList" | "LevelSoundEvent" | "LevelEventGeneric" | "LecternUpdate" | "ClientCacheStatus" | "OnScreenTextureAnimation" | "MapCreateLockedCopy" | "StructureTemplateDataExportRequest" | "StructureTemplateDataExportResponse" | "ClientCacheBlobStatusPacket" | "ClientCacheMissResponsePacket" | "EducationSettingsPacket" | "Emote" | "MultiplayerSettingsPacket" | "SettingsCommandPacket" | "AnvilDamage" | "CompletedUsingItem" | "NetworkSettings" | "PlayerAuthInputPacket" | "CreativeContent" | "PlayerEnchantOptions" | "ItemStackRequest" | "ItemStackResponse" | "PlayerArmorDamage" | "CodeBuilderPacket" | "UpdatePlayerGameType" | "EmoteList" | "PositionTrackingDBServerBroadcast" | "PositionTrackingDBClientRequest" | "DebugInfoPacket" | "PacketViolationWarning" | "MotionPredictionHints" | "TriggerAnimation" | "CameraShake" | "PlayerFogSetting" | "CorrectPlayerMovePredictionPacket" | "ItemRegistryPacket" | "ClientBoundDebugRendererPacket" | "SyncActorProperty" | "AddVolumeEntityPacket" | "RemoveVolumeEntityPacket" | "SimulationTypePacket" | "NpcDialoguePacket" | "EduUriResourcePacket" | "CreatePhotoPacket" | "UpdateSubChunkBlocks" | "SubChunkPacket" | "SubChunkRequestPacket" | "PlayerStartItemCooldown" | "ScriptMessagePacket" | "CodeBuilderSourcePacket" | "TickingAreasLoadStatus" | "DimensionDataPacket" | "AgentAction" | "ChangeMobProperty" | "LessonProgressPacket" | "RequestAbilityPacket" | "RequestPermissionsPacket" | "ToastRequest" | "UpdateAbilitiesPacket" | "UpdateAdventureSettingsPacket" | "DeathInfo" | "EditorNetworkPacket" | "FeatureRegistryPacket" | "ServerStats" | "RequestNetworkSettings" | "GameTestRequestPacket" | "GameTestResultsPacket" | "PlayerClientInputPermissions" | "CameraPresets" | "UnlockedRecipes" | "TitleSpecificPacketsStart" | "TitleSpecificPacketsEnd" | "CameraInstruction" | "TrimData" | "OpenSign" | "AgentAnimation" | "RefreshEntitlementsPacket" | "PlayerToggleCrafterSlotRequestPacket" | "SetPlayerInventoryOptions" | "SetHudPacket" | "AwardAchievementPacket" | "ClientboundCloseScreen" | "ServerboundLoadingScreenPacket" | "JigsawStructureDataPacket" | "CurrentStructureFeaturePacket" | "ServerboundDiagnosticsPacket" | "CameraAimAssist" | "ContainerRegistryCleanup" | "MovementEffect" | "CameraAimAssistPresets" | "ClientCameraAimAssist" | "ClientMovementPredictionSyncPacket" | "UpdateClientOptions" | "PlayerVideoCapturePacket" | "PlayerUpdateEntityOverridesPacket" | "PlayerLocation" | "ClientboundControlSchemeSetPacket" | "PrimitiveShapesPacket" | "ServerboundPackSettingChange" | "ClientboundDataStore" | "GraphicsParameterOverridePacket" | "ServerboundDataStore" | "ClientboundDataDrivenUIShowScreen" | "ClientboundDataDrivenUICloseScreen" | "ClientboundDataDrivenUIReload" | "ClientboundTextureShiftPacket" | "VoxelShapesPacket" | "CameraSpline" | "CameraAimAssistActorPriority" | "ResourcePacksReadyForValidation" | "LocatorBarPacket" | "PartyChanged" | "ServerboundDataDrivenScreenClosed" | "SyncWorldClocks" | "ClientboundAttributeLayerSyncPacket" | "ServerStoreInfo" | "ServerPresenceInfo";
+    name(): "KeepAlive" | "Login" | "PlayStatus" | "ServerToClientHandshake" | "ClientToServerHandshake" | "Disconnect" | "ResourcePacksInfo" | "ResourcePackStack" | "ResourcePackClientResponse" | "Text" | "SetTime" | "StartGame" | "AddPlayer" | "AddActor" | "RemoveActor" | "AddItemActor" | "ServerPlayerPostMovePosition" | "TakeItemActor" | "MoveAbsoluteActor" | "MovePlayer" | "PassengerJump" | "UpdateBlock" | "AddPainting" | "TickSync" | "LevelSoundEventV1" | "LevelEvent" | "TileEvent" | "ActorEvent" | "MobEffect" | "UpdateAttributes" | "InventoryTransaction" | "PlayerEquipment" | "MobArmorEquipment" | "Interact" | "BlockPickRequest" | "ActorPickRequest" | "PlayerAction" | "ActorFall" | "HurtArmor" | "SetActorData" | "SetActorMotion" | "SetActorLink" | "SetHealth" | "SetSpawnPosition" | "Animate" | "Respawn" | "ContainerOpen" | "ContainerClose" | "PlayerHotbar" | "InventoryContent" | "InventorySlot" | "ContainerSetData" | "CraftingData" | "CraftingEvent" | "GuiDataPickItem" | "AdventureSettings" | "BlockActorData" | "PlayerInput" | "FullChunkData" | "SetCommandsEnabled" | "SetDifficulty" | "ChangeDimension" | "SetPlayerGameType" | "PlayerList" | "SimpleEvent" | "LegacyTelemetryEvent" | "SpawnExperienceOrb" | "MapData" | "MapInfoRequest" | "RequestChunkRadius" | "ChunkRadiusUpdated" | "ItemFrameDropItem" | "GameRulesChanged" | "Camera" | "BossEvent" | "ShowCredits" | "AvailableCommands" | "CommandRequest" | "CommandBlockUpdate" | "CommandOutput" | "UpdateTrade" | "UpdateEquip" | "ResourcePackDataInfo" | "ResourcePackChunkData" | "ResourcePackChunkRequest" | "Transfer" | "PlaySound" | "StopSound" | "SetTitle" | "AddBehaviorTree" | "StructureBlockUpdate" | "ShowStoreOffer" | "PurchaseReceipt" | "PlayerSkin" | "SubclientLogin" | "AutomationClientConnect" | "SetLastHurtBy" | "BookEdit" | "NPCRequest" | "PhotoTransfer" | "ShowModalForm" | "ModalFormResponse" | "ServerSettingsRequest" | "ServerSettingsResponse" | "ShowProfile" | "SetDefaultGameType" | "RemoveObjective" | "SetDisplayObjective" | "SetScore" | "LabTable" | "UpdateBlockSynced" | "MoveDeltaActor" | "SetScoreboardIdentity" | "SetLocalPlayerAsInit" | "UpdateSoftEnum" | "Ping" | "BlockPalette" | "ScriptCustomEvent" | "SpawnParticleEffect" | "AvailableActorIDList" | "LevelSoundEventV2" | "NetworkChunkPublisherUpdate" | "BiomeDefinitionList" | "LevelSoundEvent" | "LevelEventGeneric" | "LecternUpdate" | "VideoStreamConnect" | "AddEntity" | "RemoveEntity" | "ClientCacheStatus" | "OnScreenTextureAnimation" | "MapCreateLockedCopy" | "StructureTemplateDataExportRequest" | "StructureTemplateDataExportResponse" | "ClientCacheBlobStatusPacket" | "ClientCacheMissResponsePacket" | "EducationSettingsPacket" | "Emote" | "MultiplayerSettingsPacket" | "SettingsCommandPacket" | "AnvilDamage" | "CompletedUsingItem" | "NetworkSettings" | "PlayerAuthInputPacket" | "CreativeContent" | "PlayerEnchantOptions" | "ItemStackRequest" | "ItemStackResponse" | "PlayerArmorDamage" | "CodeBuilderPacket" | "UpdatePlayerGameType" | "EmoteList" | "PositionTrackingDBServerBroadcast" | "PositionTrackingDBClientRequest" | "DebugInfoPacket" | "PacketViolationWarning" | "MotionPredictionHints" | "TriggerAnimation" | "CameraShake" | "PlayerFogSetting" | "CorrectPlayerMovePredictionPacket" | "ItemRegistryPacket" | "FilterTextPacket" | "ClientBoundDebugRendererPacket" | "SyncActorProperty" | "AddVolumeEntityPacket" | "RemoveVolumeEntityPacket" | "SimulationTypePacket" | "NpcDialoguePacket" | "EduUriResourcePacket" | "CreatePhotoPacket" | "UpdateSubChunkBlocks" | "PhotoInfoRequest" | "SubChunkPacket" | "SubChunkRequestPacket" | "PlayerStartItemCooldown" | "ScriptMessagePacket" | "CodeBuilderSourcePacket" | "TickingAreasLoadStatus" | "DimensionDataPacket" | "AgentAction" | "ChangeMobProperty" | "LessonProgressPacket" | "RequestAbilityPacket" | "RequestPermissionsPacket" | "ToastRequest" | "UpdateAbilitiesPacket" | "UpdateAdventureSettingsPacket" | "DeathInfo" | "EditorNetworkPacket" | "FeatureRegistryPacket" | "ServerStats" | "RequestNetworkSettings" | "GameTestRequestPacket" | "GameTestResultsPacket" | "PlayerClientInputPermissions" | "ClientCheatAbilityPacket" | "CameraPresets" | "UnlockedRecipes" | "TitleSpecificPacketsStart" | "TitleSpecificPacketsEnd" | "CameraInstruction" | "CompressedBiomeDefinitionList" | "TrimData" | "OpenSign" | "AgentAnimation" | "RefreshEntitlementsPacket" | "PlayerToggleCrafterSlotRequestPacket" | "SetPlayerInventoryOptions" | "SetHudPacket" | "AwardAchievementPacket" | "ClientboundCloseScreen" | "ClientboundLoadingScreenPacket" | "ServerboundLoadingScreenPacket" | "JigsawStructureDataPacket" | "CurrentStructureFeaturePacket" | "ServerboundDiagnosticsPacket" | "CameraAimAssist" | "ContainerRegistryCleanup" | "MovementEffect" | "SetMovementAuthorityMode" | "CameraAimAssistPresets" | "ClientCameraAimAssist" | "ClientMovementPredictionSyncPacket" | "UpdateClientOptions" | "PlayerVideoCapturePacket" | "PlayerUpdateEntityOverridesPacket" | "PlayerLocation" | "ClientboundControlSchemeSetPacket" | "PrimitiveShapesPacket" | "ServerboundPackSettingChange" | "ClientboundDataStore" | "GraphicsParameterOverridePacket" | "ServerboundDataStore" | "ClientboundDataDrivenUIShowScreen" | "ClientboundDataDrivenUICloseScreen" | "ClientboundDataDrivenUIReload" | "ClientboundTextureShiftPacket" | "VoxelShapesPacket" | "CameraSpline" | "CameraAimAssistActorPriority" | "ResourcePacksReadyForValidation" | "LocatorBarPacket" | "PartyChanged" | "ServerboundDataDrivenScreenClosed" | "SyncWorldClocks" | "ClientboundAttributeLayerSyncPacket" | "ServerStoreInfo" | "ServerPresenceInfo" | "SendPartyDestinationCookie" | "PartyDestinationCookieResponse";
 }

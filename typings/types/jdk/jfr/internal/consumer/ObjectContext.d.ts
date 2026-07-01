@@ -5,7 +5,6 @@ import type { TimeConverter } from '../../../../jdk/jfr/internal/consumer/TimeCo
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ObjectContext extends Object {
     constructor(arg0: EventType, arg1: ValueDescriptor[], arg2: TimeConverter)
-    private constructor(arg0: Map<ValueDescriptor, ObjectContext>, arg1: EventType, arg2: ValueDescriptor[], arg3: TimeConverter)
     // private contextLookup: Map<ValueDescriptor, ObjectContext>;
     eventType: EventType;
     fields: ValueDescriptor[];

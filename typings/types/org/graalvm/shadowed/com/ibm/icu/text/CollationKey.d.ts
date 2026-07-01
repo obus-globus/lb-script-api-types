@@ -3,7 +3,6 @@ import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { RawCollationKey } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/RawCollationKey.d.ts'
 export class CollationKey extends Object implements Comparable<CollationKey> {
     constructor(source: string, key: number[])
-    private constructor(source: string, key: number[], length: number)
     constructor(source: string, key: RawCollationKey)
     // private m_hashCode_: number;
     // private m_key_: number[];

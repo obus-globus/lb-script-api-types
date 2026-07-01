@@ -15,8 +15,7 @@ import type { ClientboundCommandsPacket$NodeInspector } from '../../../../../net
 export class ClientboundCommandsPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundCommandsPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    constructor(root: RootCommandNode<S>, inspector: ClientboundCommandsPacket$NodeInspector<S>)
-    private constructor(input: FriendlyByteBuf)
+    constructor(root: RootCommandNode<Object>, inspector: ClientboundCommandsPacket$NodeInspector<Object>)
     // private entries: ClientboundCommandsPacket$Entry[];
     // private rootIndex: number;
     getRoot<S extends unknown>(context: CommandBuildContext, builder: ClientboundCommandsPacket$NodeBuilder<S>): RootCommandNode<S>;

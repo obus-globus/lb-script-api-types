@@ -5,7 +5,6 @@ export class InventorySourceType extends Enum<InventorySourceType> {
     static ContainerInventory: InventorySourceType;
     static CreativeInventory: InventorySourceType;
     static GlobalInventory: InventorySourceType;
-    static InvalidInventory: InventorySourceType;
     static NonImplementedFeatureTODO: InventorySourceType;
     static WorldInteraction: InventorySourceType;
     static getByName(paramarg0: string): InventorySourceType;
@@ -19,5 +18,5 @@ export class InventorySourceType extends Enum<InventorySourceType> {
     private constructor(arg2: InventorySourceType)
     readonly value: number;
     getValue(): number;
-    name(): "InvalidInventory" | "ContainerInventory" | "GlobalInventory" | "WorldInteraction" | "CreativeInventory" | "NonImplementedFeatureTODO";
+    name(): "ContainerInventory" | "GlobalInventory" | "WorldInteraction" | "CreativeInventory" | "NonImplementedFeatureTODO";
 }

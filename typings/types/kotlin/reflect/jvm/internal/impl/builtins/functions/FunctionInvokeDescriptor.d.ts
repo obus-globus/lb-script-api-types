@@ -18,7 +18,6 @@ export class FunctionInvokeDescriptor extends SimpleFunctionDescriptorImpl {
     static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor): ValueParameterDescriptor[];
     static getSubstitutedValueParameters(paramarg0: FunctionDescriptor, paramarg1: ValueParameterDescriptor[], paramarg2: TypeSubstitutor, paramarg3: boolean, paramarg4: boolean, paramarg5: (Object | null)[]): ValueParameterDescriptor[];
     static toString(paramarg0: DeclarationDescriptor): string;
-    private constructor(arg0: DeclarationDescriptor, arg1: FunctionInvokeDescriptor, arg2: CallableMemberDescriptor$Kind, arg3: boolean)
     constructor(arg0: DeclarationDescriptor, arg1: FunctionInvokeDescriptor, arg2: CallableMemberDescriptor$Kind, arg3: boolean, arg4: DefaultConstructorMarker)
     createSubstitutedCopy(arg0: DeclarationDescriptor, arg1: FunctionDescriptor, arg2: CallableMemberDescriptor$Kind, arg3: Name, arg4: AnnotationDescriptor[], arg5: SourceElement): FunctionDescriptorImpl;
     doSubstitute(arg0: FunctionDescriptorImpl$CopyConfiguration): FunctionDescriptor;

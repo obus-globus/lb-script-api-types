@@ -10,7 +10,6 @@ export class Char2IntRBTreeMap$Entry extends AbstractChar2IntMap$BasicEntry impl
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Char2IntRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Char2IntRBTreeMap$Entry;

@@ -6,7 +6,6 @@ export class Double2CharFunctions$EmptyFunction extends AbstractDouble2CharFunct
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): string;

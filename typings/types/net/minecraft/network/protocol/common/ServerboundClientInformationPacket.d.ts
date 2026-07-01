@@ -12,7 +12,6 @@ import type { ClientInformation } from '../../../../../net/minecraft/server/leve
 export class ServerboundClientInformationPacket extends Record implements Packet<ServerCommonPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundClientInformationPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(information: ClientInformation)
     // private information: ClientInformation;
     equals(o: Object | null): boolean;

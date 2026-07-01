@@ -1,4 +1,3 @@
-import type { Log4jLogEvent$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ObjectInputStream } from '../../../../../../java/io/ObjectInputStream.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { StackTraceElement } from '../../../../../../java/lang/StackTraceElement.d.ts'
@@ -12,7 +11,6 @@ import type { Log4jLogEvent$Builder } from '../../../../../../org/apache/logging
 import type { ThrowableProxy } from '../../../../../../org/apache/logging/log4j/core/impl/ThrowableProxy.d.ts'
 import type { Instant } from '../../../../../../org/apache/logging/log4j/core/time/Instant.d.ts'
 import type { MutableInstant } from '../../../../../../org/apache/logging/log4j/core/time/MutableInstant.d.ts'
-import type { Clock } from '../../../../../../org/apache/logging/log4j/core/util/Clock.d.ts'
 import type { NanoClock } from '../../../../../../org/apache/logging/log4j/core/util/NanoClock.d.ts'
 import type { Message } from '../../../../../../org/apache/logging/log4j/message/Message.d.ts'
 import type { ReadOnlyStringMap } from '../../../../../../org/apache/logging/log4j/util/ReadOnlyStringMap.d.ts'
@@ -33,10 +31,7 @@ export class Log4jLogEvent extends Object implements LogEvent {
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, source: StackTraceElement, level: Level, message: Message, properties: Property[], t: Throwable)
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, t: Throwable)
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, t: Throwable, mdc: { [key: string]: string }, ndc: (Object | null)[], threadName: string, location: StackTraceElement, timestampMillis: number)
-    private constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, thrown: Throwable, contextData: StringMap, contextStack: (Object | null)[], threadId: number, threadName: string, threadPriority: number, source: StackTraceElement, nanoTime: number)
-    private constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, thrown: Throwable, contextData: StringMap, contextStack: (Object | null)[], threadId: number, threadName: string, threadPriority: number, source: StackTraceElement, timestampMillis: number, nanoOfMillisecond: number, nanoTime: number)
-    constructor(arg0: string, arg1: Marker, arg2: string, arg3: Level, arg4: Message, arg5: Throwable, arg6: StringMap, arg7: (Object | null)[], arg8: number, arg9: string, arg10: number, arg11: StackTraceElement, arg12: number, arg13: number, arg14: number, arg15: Log4jLogEvent$1)
-    private constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, thrown: Throwable, contextData: StringMap, contextStack: (Object | null)[], threadId: number, threadName: string, threadPriority: number, source: StackTraceElement, clock: Clock, nanoTime: number)
+    constructor(arg0: string, arg1: Marker, arg2: string, arg3: Level, arg4: Message, arg5: Throwable, arg6: StringMap, arg7: (Object | null)[], arg8: number, arg9: string, arg10: number, arg11: StackTraceElement, arg12: number, arg13: number, arg14: number, arg15: any)
     constructor(loggerName: string, marker: Marker, loggerFQCN: string, level: Level, message: Message, properties: Property[], t: Throwable)
     readonly contextData: StringMap;
     readonly contextStack: (Object | null)[];

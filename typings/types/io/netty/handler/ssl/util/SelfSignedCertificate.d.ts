@@ -1,4 +1,3 @@
-import type { SelfSignedCertificate$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { SelfSignedCertificate$Builder } from '../../../../../io/netty/handler/ssl/util/SelfSignedCertificate$Builder.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { PrivateKey } from '../../../../../java/security/PrivateKey.d.ts'
@@ -9,8 +8,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SelfSignedCertificate extends Object {
     static builder(): SelfSignedCertificate$Builder;
     constructor()
-    private constructor(arg0: SelfSignedCertificate$Builder)
-    constructor(arg0: SelfSignedCertificate$Builder, arg1: SelfSignedCertificate$1)
+    constructor(arg0: SelfSignedCertificate$Builder, arg1: any)
     constructor(arg0: Date, arg1: Date)
     constructor(arg0: Date, arg1: Date, arg2: string, arg3: number)
     constructor(arg0: string)

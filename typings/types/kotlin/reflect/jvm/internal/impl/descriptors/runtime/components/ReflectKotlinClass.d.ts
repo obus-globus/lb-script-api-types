@@ -10,7 +10,6 @@ import type { ClassId } from '../../../../../../../../kotlin/reflect/jvm/interna
 export class ReflectKotlinClass extends Object implements KotlinJvmBinaryClass {
     static Factory: ReflectKotlinClass$Factory;
     constructor(arg0: Class<Object>, arg1: KotlinClassHeader, arg2: DefaultConstructorMarker)
-    private constructor(arg0: Class<Object>, arg1: KotlinClassHeader)
     readonly classHeader: KotlinClassHeader;
     readonly klass: Class<Object>;
     equals(arg0: Object | null): boolean;

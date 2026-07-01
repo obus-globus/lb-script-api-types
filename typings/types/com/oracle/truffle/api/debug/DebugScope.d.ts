@@ -11,7 +11,6 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DebugScope extends Object {
     constructor(scope: Object, session: DebuggerSession, event: SuspendedEvent, node: Node, frame: Frame, root: RootNode)
-    private constructor(scope: Object, session: DebuggerSession, event: SuspendedEvent, node: Node, frame: Frame, root: RootNode, language: LanguageInfo)
     constructor(scope: Object, session: DebuggerSession, language: LanguageInfo)
     // private event: SuspendedEvent;
     // private frame: Frame;

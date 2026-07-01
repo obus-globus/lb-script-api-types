@@ -7,7 +7,6 @@ export class Reference2FloatFunctions$Singleton<K extends unknown> extends Abstr
     // private key: K;
     // private value: number;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     getFloat(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;

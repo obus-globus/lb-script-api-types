@@ -10,7 +10,6 @@ export class Object2LongAVLTreeMap$Entry<K extends unknown> extends AbstractObje
     balance(): number;
     balance(arg0: number): void;
     clone(): Object2LongAVLTreeMap$Entry<K>;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

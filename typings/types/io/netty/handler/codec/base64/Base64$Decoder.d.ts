@@ -1,4 +1,3 @@
-import type { Base64$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ByteBufAllocator } from '../../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { Base64Dialect } from '../../../../../io/netty/handler/codec/base64/Base64Dialect.d.ts'
@@ -18,8 +17,7 @@ export class Base64$Decoder extends Object implements ByteProcessor {
     static FIND_NON_NUL: ByteProcessor;
     static FIND_NUL: ByteProcessor;
     static FIND_SEMI_COLON: ByteProcessor;
-    private constructor()
-    constructor(arg0: Base64$1)
+    constructor(arg0: any)
     // private b4: number[];
     // private b4Posn: number;
     // private decodabet: number[];

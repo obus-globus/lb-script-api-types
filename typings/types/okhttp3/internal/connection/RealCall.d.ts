@@ -1,4 +1,3 @@
-import type { RealCall$timeout$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { IOException } from '../../../java/io/IOException.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Socket } from '../../../java/net/Socket.d.ts'
@@ -21,6 +20,7 @@ import type { RealConnection } from '../../../okhttp3/internal/connection/RealCo
 import type { RealConnectionPool } from '../../../okhttp3/internal/connection/RealConnectionPool.d.ts'
 import type { RoutePlanner$Plan } from '../../../okhttp3/internal/connection/RoutePlanner$Plan.d.ts'
 import type { RealInterceptorChain } from '../../../okhttp3/internal/http/RealInterceptorChain.d.ts'
+import type { AsyncTimeout } from '../../../okio/AsyncTimeout.d.ts'
 import type { Timeout } from '../../../okio/Timeout.d.ts'
 export class RealCall extends Object implements Cloneable, Call, Lockable {
     constructor(client: OkHttpClient, originalRequest: Request, forWebSocket: boolean)
@@ -46,14 +46,13 @@ export class RealCall extends Object implements Cloneable, Call, Lockable {
     // private socketSinkOpen: boolean;
     // private socketSourceOpen: boolean;
     // private tags: AtomicReference<Tags>;
-    // private timeout: RealCall$timeout$1;
+    // private timeout: AsyncTimeout;
     // private timeoutEarlyExit: boolean;
     acquireConnectionNoEvents(connection: RealConnection): void;
     addEventListener(eventListener: EventListener): void;
     // private callDone(e: IOException | null): IOException | null;
     // private callStart(): void;
     cancel(): void;
-    protected clone(): Object;
     clone(): Call;
     enqueue(responseCallback: Callback): void;
     enterNetworkInterceptorExchange(request: Request, newRoutePlanner: boolean, chain: RealInterceptorChain): void;

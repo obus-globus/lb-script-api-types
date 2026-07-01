@@ -9,7 +9,6 @@ export class FieldHandle extends MemberHandle<MappingField> {
     constructor(arg0: TypeElement, arg1: VariableElement, arg2: boolean)
     constructor(arg0: string, arg1: VariableElement)
     constructor(arg0: string, arg1: VariableElement, arg2: boolean)
-    private constructor(arg0: string, arg1: VariableElement, arg2: boolean, arg3: string, arg4: string)
     constructor(arg0: string, arg1: string, arg2: string)
     constructor(arg0: TypeHandle, arg1: VariableElement, arg2: boolean, arg3: string, arg4: string)
     constructor(arg0: TypeHandle, arg1: string, arg2: string)

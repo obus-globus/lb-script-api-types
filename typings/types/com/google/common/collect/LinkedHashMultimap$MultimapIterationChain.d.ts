@@ -1,9 +1,9 @@
-import type { LinkedHashMultimap$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { LinkedHashMultimap$ValueEntry } from '../../../../com/google/common/collect/LinkedHashMultimap$ValueEntry.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Iterator } from '../../../../java/util/Iterator.d.ts'
+import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class LinkedHashMultimap$MultimapIterationChain<K extends unknown, V extends unknown> extends Object {
-    private constructor()
-    constructor(arg0: LinkedHashMultimap$1)
+    constructor(arg0: Iterator<Map$Entry<K, V>>)
     // private firstEntry: LinkedHashMultimap$ValueEntry<K, V>;
     // private lastEntry: LinkedHashMultimap$ValueEntry<K, V>;
     append(newEntry: LinkedHashMultimap$ValueEntry<K, V>): void;

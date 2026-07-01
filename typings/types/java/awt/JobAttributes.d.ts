@@ -25,7 +25,6 @@ export class JobAttributes extends Object implements Cloneable {
     readonly sides: JobAttributes$SidesType;
     readonly toPage: number;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getCopies(): number;
     getDefaultSelection(): JobAttributes$DefaultSelectionType;

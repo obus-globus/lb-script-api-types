@@ -96,7 +96,6 @@ export class ULocale extends Object implements Serializable, Cloneable, Comparab
     static toUnicodeLocaleKey(paramarg0: string): string;
     static toUnicodeLocaleType(paramarg0: string, paramarg1: string): string;
     constructor(arg0: string)
-    private constructor(arg0: string, arg1: Locale)
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: string)
     // private baseLocale: BaseLocale;
@@ -105,7 +104,6 @@ export class ULocale extends Object implements Serializable, Cloneable, Comparab
     // private localeID: string;
     // private base(): BaseLocale;
     clone(): ULocale;
-    protected clone(): Object;
     compareTo(arg0: ULocale): number;
     equals(arg0: Object | null): boolean;
     // private extensions(): LocaleExtensions;

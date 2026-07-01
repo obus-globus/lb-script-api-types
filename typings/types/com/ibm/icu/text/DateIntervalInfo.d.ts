@@ -17,7 +17,6 @@ export class DateIntervalInfo extends Object implements Freezable<DateIntervalIn
     // private fIntervalPatternsReadOnly: boolean;
     readonly frozen: boolean;
     clone(): DateIntervalInfo;
-    protected clone(): Object;
     cloneAsThawed(): DateIntervalInfo;
     // private cloneUnfrozenDII(): DateIntervalInfo;
     equals(arg0: Object | null): boolean;

@@ -8,7 +8,6 @@ import type { AttributeKey } from '../../../io/netty/util/AttributeKey.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class ServerBootstrap extends AbstractBootstrap<ServerBootstrap, ServerChannel> {
     constructor()
-    private constructor(arg0: ServerBootstrap)
     // private childAttrs: Map<AttributeKey<Object>, Object>;
     // private childGroup: (Object | null)[];
     // private childHandler: ChannelHandler;

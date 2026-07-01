@@ -13,7 +13,6 @@ export abstract class SimpleJsonResourceReloadListener<T extends unknown> extend
     static scanDirectory(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
     static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
     constructor(codec: Codec<T>, lister: FileToIdConverter)
-    private constructor(ops: DynamicOps<JsonElement>, codec: Codec<T>, lister: FileToIdConverter)
     constructor(registries: HolderLookup$Provider, codec: Codec<T>, registryKey: ResourceKey<T[]>)
     // private codec: Codec<T>;
     // private lister: FileToIdConverter;

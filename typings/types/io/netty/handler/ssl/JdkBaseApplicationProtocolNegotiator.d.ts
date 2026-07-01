@@ -6,7 +6,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class JdkBaseApplicationProtocolNegotiator extends Object implements JdkApplicationProtocolNegotiator {
     constructor(arg0: JdkApplicationProtocolNegotiator$SslEngineWrapperFactory, arg1: JdkApplicationProtocolNegotiator$ProtocolSelectorFactory, arg2: JdkApplicationProtocolNegotiator$ProtocolSelectionListenerFactory, arg3: string[])
     constructor(arg0: JdkApplicationProtocolNegotiator$SslEngineWrapperFactory, arg1: JdkApplicationProtocolNegotiator$ProtocolSelectorFactory, arg2: JdkApplicationProtocolNegotiator$ProtocolSelectionListenerFactory, arg3: string[])
-    private constructor(arg0: JdkApplicationProtocolNegotiator$SslEngineWrapperFactory, arg1: JdkApplicationProtocolNegotiator$ProtocolSelectorFactory, arg2: JdkApplicationProtocolNegotiator$ProtocolSelectionListenerFactory, arg3: string[])
     // private listenerFactory: JdkApplicationProtocolNegotiator$ProtocolSelectionListenerFactory;
     // private protocols: string[];
     // private selectorFactory: JdkApplicationProtocolNegotiator$ProtocolSelectorFactory;

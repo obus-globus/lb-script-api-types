@@ -15,7 +15,6 @@ export class OpenSslX509KeyManagerFactory extends KeyManagerFactory {
     static newKeyless(paramarg0: InputStream): OpenSslX509KeyManagerFactory;
     static newKeyless(paramarg0: (Object | null)[]): OpenSslX509KeyManagerFactory;
     constructor()
-    private constructor(arg0: OpenSslX509KeyManagerFactory$OpenSslKeyManagerFactorySpi)
     constructor(arg0: { [key: string]: any })
     constructor(arg0: string, arg1: { [key: string]: any })
     // private spi: OpenSslX509KeyManagerFactory$OpenSslKeyManagerFactorySpi;

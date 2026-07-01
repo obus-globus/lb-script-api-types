@@ -12,7 +12,6 @@ export class ServerboundJigsawGeneratePacket extends Object implements Packet<Se
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundJigsawGeneratePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(blockPos: BlockPos, levels: number, keepJigsaws: boolean)
-    private constructor(input: FriendlyByteBuf)
     // private keepJigsaws: boolean;
     // private levels: number;
     readonly pos: BlockPos;

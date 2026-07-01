@@ -5,7 +5,7 @@ import type { ListenableFuture } from '../../../../../com/google/common/util/con
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CombinedFuture$AsyncCallableInterruptibleTask extends CombinedFuture$CombinedFutureInterruptibleTask<Object> {
-    constructor(null_: CombinedFuture<V>, callable: () => ListenableFuture<V>, listenerExecutor: Executor)
+    constructor(null_: CombinedFuture<Object>, callable: () => ListenableFuture<Object>, listenerExecutor: Executor)
     // private callable: () => ListenableFuture<V>;
     runInterruptibly<V extends unknown>(): ListenableFuture<V>;
     setValue<V extends unknown>(value: ListenableFuture<V>): void;

@@ -6,7 +6,6 @@ import type { TransferHandler$DropLocation } from '../../javax/swing/TransferHan
 import type { Object } from '../../java/lang/Object.d.ts'
 export class TransferHandler$TransferSupport extends Object {
     constructor(arg0: Component, arg1: Transferable)
-    private constructor(arg0: Component, arg1: DropTargetEvent)
     readonly component: Component;
     readonly dropAction: number;
     readonly dropLocation: TransferHandler$DropLocation;

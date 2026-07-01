@@ -18,7 +18,6 @@ export class BigInt extends Object implements TruffleObject, Comparable<BigInt> 
     static valueOf(parami: number): BigInt;
     static valueOfUnsigned(parami: number): BigInt;
     constructor(v: BigInteger)
-    private constructor(v: BigInteger, foreign: boolean)
     readonly foreign: boolean;
     // private value: BigInteger;
     abs(): BigInt;

@@ -17,7 +17,6 @@ export class BooleanSpliterators$EmptySpliterator extends Object implements Bool
     constructor()
     characteristics(): number;
     clone(): Object;
-    protected clone(): Object;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     getComparator(): (param0: boolean, param1: boolean) => number;

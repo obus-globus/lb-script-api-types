@@ -1,4 +1,3 @@
-import type { PatternLayout$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
@@ -7,8 +6,7 @@ import type { PatternSelector } from '../../../../../../org/apache/logging/log4j
 import type { RegexReplacement } from '../../../../../../org/apache/logging/log4j/core/pattern/RegexReplacement.d.ts'
 import type { Builder } from '../../../../../../org/apache/logging/log4j/core/util/Builder.d.ts'
 export class PatternLayout$Builder extends Object implements Builder<PatternLayout> {
-    private constructor()
-    constructor(arg0: PatternLayout$1)
+    constructor(arg0: any)
     // private alwaysWriteExceptions: boolean;
     // private charset: Charset;
     // private configuration: Configuration;

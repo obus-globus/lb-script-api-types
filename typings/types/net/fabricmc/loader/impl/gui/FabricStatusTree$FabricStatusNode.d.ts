@@ -1,4 +1,3 @@
-import type { FabricStatusTree$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { DataInputStream } from '../../../../../java/io/DataInputStream.d.ts'
 import type { DataOutputStream } from '../../../../../java/io/DataOutputStream.d.ts'
 import type { StackTraceElement } from '../../../../../java/lang/StackTraceElement.d.ts'
@@ -7,8 +6,7 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { FabricStatusTree$FabricTreeWarningLevel } from '../../../../../net/fabricmc/loader/impl/gui/FabricStatusTree$FabricTreeWarningLevel.d.ts'
 export class FabricStatusTree$FabricStatusNode extends Object {
     constructor(arg0: FabricStatusTree$FabricStatusNode, arg1: DataInputStream)
-    private constructor(arg0: FabricStatusTree$FabricStatusNode, arg1: string)
-    constructor(arg0: FabricStatusTree$FabricStatusNode, arg1: string, arg2: FabricStatusTree$1)
+    constructor(arg0: FabricStatusTree$FabricStatusNode, arg1: string, arg2: any)
     children: FabricStatusTree$FabricStatusNode[];
     details: string;
     expandByDefault: boolean;

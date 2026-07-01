@@ -11,7 +11,6 @@ import type { StructureProcessor } from '../../../../../../../net/minecraft/worl
 import type { StructureTemplate$StructureBlockInfo } from '../../../../../../../net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate$StructureBlockInfo.d.ts'
 export class BlockRotProcessor extends Object implements StructureProcessor {
     static MAP_CODEC: MapCodec<BlockRotProcessor>;
-    private constructor(blockTagKey: Optional<Holder<Block>[]>, integrity: number)
     constructor(integrity: number)
     constructor(tag: Holder<Block>[], integrity: number)
     // private integrity: number;

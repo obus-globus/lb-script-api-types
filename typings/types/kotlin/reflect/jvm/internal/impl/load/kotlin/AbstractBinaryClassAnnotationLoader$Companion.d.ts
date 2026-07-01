@@ -5,7 +5,6 @@ import type { KotlinJvmBinaryClass } from '../../../../../../../kotlin/reflect/j
 import type { MetadataVersion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/MetadataVersion.d.ts'
 import type { ProtoContainer } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/ProtoContainer.d.ts'
 export class AbstractBinaryClassAnnotationLoader$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     getSpecialCaseContainerClass(arg0: ProtoContainer, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: KotlinClassFinder, arg6: MetadataVersion): KotlinJvmBinaryClass;
 }

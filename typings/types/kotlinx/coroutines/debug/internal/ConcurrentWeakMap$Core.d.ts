@@ -3,7 +3,7 @@ import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { AtomicArray } from '../../../../kotlinx/atomicfu/AtomicArray.d.ts'
 import type { HashedWeakRef } from '../../../../kotlinx/coroutines/debug/internal/HashedWeakRef.d.ts'
 export class ConcurrentWeakMap$Core extends Object {
-    constructor(null_: Map<K, V>, allocated: number)
+    constructor(null_: Map<Object, Object>, allocated: number)
     cleanWeakRef(weakRef: HashedWeakRef<Object>): void;
     getImpl<V extends unknown, K extends unknown>(key: K): V | null;
     // private index(hash: number): number;

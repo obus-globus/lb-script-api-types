@@ -3,7 +3,6 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class CharObjectHashMap$PrimitiveIterator extends Object implements CharObjectMap$PrimitiveEntry<V>, Iterator<CharObjectMap$PrimitiveEntry<V>> {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: CharObjectMap$PrimitiveEntry<Object>[])
     // private entryIndex: number;
     // private nextIndex: number;

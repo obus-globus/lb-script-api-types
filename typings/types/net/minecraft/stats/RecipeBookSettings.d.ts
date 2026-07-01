@@ -9,7 +9,6 @@ export class RecipeBookSettings extends Object {
     static MAP_CODEC: MapCodec<RecipeBookSettings>;
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, RecipeBookSettings>;
     constructor()
-    private constructor(crafting: RecipeBookSettings$TypeSettings, furnace: RecipeBookSettings$TypeSettings, blastFurnace: RecipeBookSettings$TypeSettings, smoker: RecipeBookSettings$TypeSettings)
     // private blastFurnace: RecipeBookSettings$TypeSettings;
     // private crafting: RecipeBookSettings$TypeSettings;
     // private furnace: RecipeBookSettings$TypeSettings;

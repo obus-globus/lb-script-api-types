@@ -7,7 +7,6 @@ import type { FileChannel } from '../../java/nio/channels/FileChannel.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class RandomAccessFile extends Object implements Closeable, DataInput, DataOutput {
     constructor(arg0: File, arg1: string)
-    private constructor(arg0: File, arg1: string, arg2: boolean)
     constructor(arg0: string, arg1: string)
     // private buffer: number[];
     readonly channel: FileChannel;

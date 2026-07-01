@@ -22,7 +22,6 @@ export class MBeanInfo extends Object implements Serializable, DescriptorRead, C
     readonly notifications: MBeanNotificationInfo[];
     readonly operations: MBeanOperationInfo[];
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     // private fastGetAttributes(): MBeanAttributeInfo[];
     // private fastGetConstructors(): MBeanConstructorInfo[];

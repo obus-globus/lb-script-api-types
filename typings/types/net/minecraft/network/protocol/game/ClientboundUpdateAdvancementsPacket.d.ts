@@ -14,7 +14,6 @@ export class ClientboundUpdateAdvancementsPacket extends Object implements Packe
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundUpdateAdvancementsPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(reset: boolean, newAdvancements: AdvancementHolder[], removedAdvancements: Identifier[], progress: Map<Identifier, AdvancementProgress>, showAdvancements: boolean)
-    private constructor(input: RegistryFriendlyByteBuf)
     readonly added: AdvancementHolder[];
     readonly progress: Map<Identifier, AdvancementProgress>;
     readonly removed: Identifier[];

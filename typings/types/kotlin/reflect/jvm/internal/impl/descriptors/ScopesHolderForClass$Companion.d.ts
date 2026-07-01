@@ -6,7 +6,6 @@ import type { MemberScope } from '../../../../../../kotlin/reflect/jvm/internal/
 import type { StorageManager } from '../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
 import type { KotlinTypeRefiner } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class ScopesHolderForClass$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     create<T extends MemberScope>(arg0: ClassDescriptor, arg1: StorageManager, arg2: KotlinTypeRefiner, arg3: (param0: KotlinTypeRefiner) => T): ScopesHolderForClass<T>;
 }

@@ -33,7 +33,6 @@ export class MicroProps extends Object implements Cloneable, MicroPropsGenerator
     sign: NumberFormatter$SignDisplay;
     symbols: DecimalFormatSymbols;
     useCurrency: boolean;
-    protected clone(): Object;
     clone(): Object;
     processQuantity(quantity: DecimalQuantity): MicroProps;
 }

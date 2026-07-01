@@ -30,7 +30,6 @@ export class Matrix3x2f extends Object implements Externalizable, Cloneable, Mat
     _m11(arg0: number): Matrix3x2f;
     _m20(arg0: number): Matrix3x2f;
     _m21(arg0: number): Matrix3x2f;
-    protected clone(): Object;
     clone(): Object;
     determinant(): number;
     equals(arg0: Object | null): boolean;

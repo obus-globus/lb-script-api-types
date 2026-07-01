@@ -15,7 +15,6 @@ export abstract class BreakIterator extends Object implements Cloneable {
     static getWordInstance(paramarg0: Locale): BreakIterator;
     constructor()
     clone(): Object;
-    protected clone(): Object;
     current(): number;
     first(): number;
     following(arg0: number): number;

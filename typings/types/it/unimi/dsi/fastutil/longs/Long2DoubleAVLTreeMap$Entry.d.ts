@@ -10,7 +10,6 @@ export class Long2DoubleAVLTreeMap$Entry extends AbstractLong2DoubleMap$BasicEnt
     balance(): number;
     balance(arg0: number): void;
     clone(): Long2DoubleAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

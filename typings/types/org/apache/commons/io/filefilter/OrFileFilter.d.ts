@@ -10,9 +10,7 @@ import type { IOFileFilter } from '../../../../../org/apache/commons/io/filefilt
 export class OrFileFilter extends AbstractFileFilter implements Serializable, ConditionalFileFilter {
     static EMPTY_STRING_ARRAY: (Object | null)[];
     constructor()
-    private constructor(arg0: IOFileFilter[])
     constructor(arg0: IOFileFilter[])
-    private constructor(arg0: number)
     constructor(arg0: IOFileFilter[])
     constructor(arg0: IOFileFilter, arg1: IOFileFilter)
     readonly fileFilters: IOFileFilter[];

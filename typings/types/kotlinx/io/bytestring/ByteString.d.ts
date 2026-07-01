@@ -3,7 +3,6 @@ import type { Comparable } from '../../../java/lang/Comparable.d.ts'
 import type { ByteString$Companion } from '../../../kotlinx/io/bytestring/ByteString$Companion.d.ts'
 export class ByteString extends Object implements Comparable<ByteString> {
     static Companion: ByteString$Companion;
-    private constructor(data: number[], dummy: Object | null)
     constructor(data: number[], startIndex: number, endIndex: number)
     // private data: number[];
     // private hashCode: number;

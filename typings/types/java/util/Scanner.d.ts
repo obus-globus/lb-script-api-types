@@ -8,7 +8,6 @@ import type { BigInteger } from '../../java/math/BigInteger.d.ts'
 import type { CharBuffer } from '../../java/nio/CharBuffer.d.ts'
 import type { ReadableByteChannel } from '../../java/nio/channels/ReadableByteChannel.d.ts'
 import type { Charset } from '../../java/nio/charset/Charset.d.ts'
-import type { CharsetDecoder } from '../../java/nio/charset/CharsetDecoder.d.ts'
 import type { Path } from '../../java/nio/file/Path.d.ts'
 import type { Locale } from '../../java/util/Locale.d.ts'
 import type { Scanner$PatternLRUCache } from '../../java/util/Scanner$PatternLRUCache.d.ts'
@@ -22,13 +21,11 @@ import type { Iterator } from '../../java/util/Iterator.d.ts'
 export class Scanner extends Object implements Closeable, Iterator<string> {
     constructor(arg0: File)
     constructor(arg0: File, arg1: Charset)
-    private constructor(arg0: File, arg1: CharsetDecoder)
     constructor(arg0: File, arg1: string)
     constructor(arg0: InputStream)
     constructor(arg0: InputStream, arg1: Charset)
     constructor(arg0: InputStream, arg1: string)
     constructor(arg0: Readable)
-    private constructor(arg0: Readable, arg1: Pattern)
     constructor(arg0: ReadableByteChannel)
     constructor(arg0: ReadableByteChannel, arg1: Charset)
     constructor(arg0: ReadableByteChannel, arg1: string)

@@ -16,7 +16,6 @@ export class SimpleAttributeSet extends Object implements Serializable, MutableA
     addAttribute(arg0: Object, arg1: Object): void;
     addAttributes(arg0: AttributeSet): void;
     clone(): Object;
-    protected clone(): Object;
     containsAttribute(arg0: Object, arg1: Object): boolean;
     containsAttributes(arg0: AttributeSet): boolean;
     copyAttributes(): AttributeSet;

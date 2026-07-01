@@ -12,7 +12,6 @@ export class ClientboundTagQueryPacket extends Object implements Packet<ClientGa
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundTagQueryPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(transactionId: number, tag: CompoundTag)
-    private constructor(input: FriendlyByteBuf)
     readonly tag: CompoundTag;
     readonly transactionId: number;
     getTag(): CompoundTag;

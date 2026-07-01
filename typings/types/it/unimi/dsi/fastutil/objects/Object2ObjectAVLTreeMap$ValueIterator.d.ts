@@ -2,8 +2,7 @@ import type { Object2ObjectAVLTreeMap$TreeIterator } from '../../../../../it/uni
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ObjectAVLTreeMap$ValueIterator extends Object2ObjectAVLTreeMap$TreeIterator implements ObjectListIterator<V> {
-    private constructor(null_: Map<K, V>)
-    constructor(null_: Map<K, V>, arg1: (Object | null)[])
+    constructor(null_: Map<Object, Object>, arg1: (Object | null)[])
     add<V extends unknown>(arg0: V): void;
     next<V extends unknown>(): V;
     previous<V extends unknown>(): V;

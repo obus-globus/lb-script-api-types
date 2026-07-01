@@ -3,7 +3,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Range } from '../../../../../../org/graalvm/tools/lsp/server/types/Range.d.ts'
 export class SourceSectionReference extends Object {
     static from(paramsection: SourceSection): SourceSectionReference;
-    private constructor()
     constructor(section: SourceSectionReference)
     readonly endColumn: number;
     readonly endLine: number;

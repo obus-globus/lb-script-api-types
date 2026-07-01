@@ -7,7 +7,6 @@ import type { Sequence } from '../../../../../../../com/oracle/truffle/regex/tre
 import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class SubexpressionCall extends QuantifiableTerm {
-    private constructor(copy: SubexpressionCall)
     constructor(groupNr: number)
     readonly groupNr: number;
     copy(ast: RegexAST): SubexpressionCall;

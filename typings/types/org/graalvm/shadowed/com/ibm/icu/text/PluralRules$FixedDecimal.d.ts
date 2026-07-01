@@ -15,7 +15,6 @@ export class PluralRules$FixedDecimal extends Number implements Comparable<Plura
     constructor(n: number, v: number, f: number, e: number)
     constructor(n: number, v: number, f: number, e: number, c: number)
     constructor(n: number)
-    private constructor(other: PluralRules$FixedDecimal)
     readonly baseFactor: number;
     readonly decimalDigits: number;
     readonly decimalDigitsWithoutTrailingZeros: number;

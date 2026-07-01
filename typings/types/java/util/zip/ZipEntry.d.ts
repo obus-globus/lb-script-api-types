@@ -63,7 +63,6 @@ export class ZipEntry extends Object implements ZipConstants, Cloneable {
     size: number;
     // private xdostime: number;
     clone(): Object;
-    protected clone(): Object;
     getComment(): string;
     getCompressedSize(): number;
     getCrc(): number;

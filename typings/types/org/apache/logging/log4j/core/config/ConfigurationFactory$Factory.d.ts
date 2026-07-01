@@ -1,4 +1,3 @@
-import type { ConfigurationFactory$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { ClassLoader } from '../../../../../../java/lang/ClassLoader.d.ts'
 import type { URI } from '../../../../../../java/net/URI.d.ts'
@@ -25,8 +24,7 @@ export class ConfigurationFactory$Factory extends ConfigurationFactory {
     static removeConfigurationFactory(paramfactory: ConfigurationFactory): void;
     static resetConfigurationFactory(): void;
     static setConfigurationFactory(paramfactory: ConfigurationFactory): void;
-    private constructor()
-    constructor(arg0: ConfigurationFactory$1)
+    constructor(arg0: any)
     // private getConfiguration(requiredVersion: string, loggerContext: LoggerContext, configLocationStr: string): Configuration;
     // private getConfiguration(loggerContext: LoggerContext, isTest: boolean, name: string): Configuration;
     // private getConfiguration(loggerContext: LoggerContext, configLocationStr: string): Configuration;

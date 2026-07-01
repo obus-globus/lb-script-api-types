@@ -9,7 +9,6 @@ export class PluralRules$FixedDecimal extends Number implements PluralRules$IFix
     static createWithExponent(paramarg0: number, paramarg1: number, paramarg2: number): PluralRules$FixedDecimal;
     static decimals(paramarg0: number): number;
     static getOperand(paramarg0: string): PluralRules$Operand;
-    private constructor(arg0: PluralRules$FixedDecimal)
     constructor(arg0: number)
     constructor(arg0: number, arg1: number)
     constructor(arg0: number, arg1: number, arg2: number)

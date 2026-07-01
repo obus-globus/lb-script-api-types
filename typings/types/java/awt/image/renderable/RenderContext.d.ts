@@ -11,7 +11,6 @@ export class RenderContext extends Object implements Cloneable {
     // private hints: { [key: string]: any };
     // private usr2dev: AffineTransform;
     clone(): Object;
-    protected clone(): Object;
     concatenateTransform(arg0: AffineTransform): void;
     concetenateTransform(arg0: AffineTransform): void;
     getAreaOfInterest(): Shape;

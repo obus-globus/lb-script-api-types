@@ -2,7 +2,6 @@ import type { ByteListIterator } from '../../../../../it/unimi/dsi/fastutil/byte
 import type { Char2ByteAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/chars/Char2ByteAVLTreeMap$TreeIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Char2ByteAVLTreeMap$ValueIterator extends Char2ByteAVLTreeMap$TreeIterator implements ByteListIterator {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add(arg0: number): void;
     next(): number;

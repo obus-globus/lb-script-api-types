@@ -1,7 +1,7 @@
 import type { ObjectListIterator } from '../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class WeightedSortedList$WeightedListIterator extends Object implements ObjectListIterator<E> {
-    constructor(null_: E[], startIndex: number)
+    constructor(null_: (Object | null)[], startIndex: number)
     // private cursor: number;
     // private lastRet: number;
     add<E extends unknown>(arg0: E): void;

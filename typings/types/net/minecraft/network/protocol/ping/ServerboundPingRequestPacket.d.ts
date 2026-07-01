@@ -9,7 +9,6 @@ import type { ServerPingPacketListener } from '../../../../../net/minecraft/netw
 export class ServerboundPingRequestPacket extends Object implements Packet<ServerPingPacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundPingRequestPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: ByteBuf)
     constructor(time: number)
     readonly time: number;
     getTime(): number;

@@ -62,7 +62,6 @@ export class Vector3f extends Object implements Externalizable, Cloneable, Vecto
     angleSigned(arg0: Vector3fc, arg1: Vector3fc): number;
     ceil(): Vector3f;
     ceil(arg0: Vector3f): Vector3f;
-    protected clone(): Object;
     clone(): Object;
     cross(arg0: number, arg1: number, arg2: number): Vector3f;
     cross(arg0: number, arg1: number, arg2: number, arg3: Vector3f): Vector3f;

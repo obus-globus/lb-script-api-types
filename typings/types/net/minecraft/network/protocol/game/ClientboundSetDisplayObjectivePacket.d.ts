@@ -12,7 +12,6 @@ import type { Objective } from '../../../../../net/minecraft/world/scores/Object
 export class ClientboundSetDisplayObjectivePacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetDisplayObjectivePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(slot: DisplaySlot, objective: Objective)
     readonly objectiveName: string;
     readonly slot: DisplaySlot;

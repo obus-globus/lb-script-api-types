@@ -11,7 +11,6 @@ export class DisjointKeysUnionTypeSubstitution extends TypeSubstitution {
     static Companion: TypeSubstitution$Companion;
     static EMPTY: TypeSubstitution;
     static create(paramarg0: TypeSubstitution, paramarg1: TypeSubstitution): TypeSubstitution;
-    private constructor(arg0: TypeSubstitution, arg1: TypeSubstitution)
     constructor(arg0: TypeSubstitution, arg1: TypeSubstitution, arg2: DefaultConstructorMarker)
     // private first: TypeSubstitution;
     // private second: TypeSubstitution;

@@ -1,4 +1,3 @@
-import type { Trie$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { Emit } from '../../../org/ahocorasick/trie/Emit.d.ts'
@@ -9,8 +8,7 @@ import type { EmitHandler } from '../../../org/ahocorasick/trie/handler/EmitHand
 import type { StatefulEmitHandler } from '../../../org/ahocorasick/trie/handler/StatefulEmitHandler.d.ts'
 export class Trie extends Object {
     static builder(): Trie$TrieBuilder;
-    constructor(arg0: PayloadTrie<Object>, arg1: Trie$1)
-    private constructor(arg0: PayloadTrie<string>)
+    constructor(arg0: PayloadTrie<Object>, arg1: any)
     // private payloadTrie: PayloadTrie<string>;
     containsMatch(arg0: CharSequence): boolean;
     firstMatch(arg0: CharSequence): Emit;

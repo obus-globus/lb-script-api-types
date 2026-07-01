@@ -10,7 +10,6 @@ export class KeyGenerator extends Object {
     static getInstance(paramarg0: string, paramarg1: string): KeyGenerator;
     static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyGenerator;
     constructor(arg0: KeyGeneratorSpi, arg1: { [key: string]: any }, arg2: string)
-    private constructor(arg0: string)
     readonly algorithm: string;
     // private initKeySize: number;
     // private initParams: AlgorithmParameterSpec;

@@ -2,7 +2,6 @@ import type { Short2LongMap$Entry } from '../../../../../it/unimi/dsi/fastutil/s
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Short2LongLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: { [key: string]: any })
-    private constructor(null_: { [key: string]: any }, arg1: number)
     constructor(null_: { [key: string]: any }, arg1: number, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;

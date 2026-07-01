@@ -1,4 +1,3 @@
-import type { ReadOnlyHttpHeaders$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -10,8 +9,7 @@ export class ReadOnlyHttpHeaders$ReadOnlyStringIterator extends Object implement
     static comparingByValue(): (param0: Object) => boolean;
     static comparingByValue(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    private constructor(null_: (Object | null)[])
-    constructor(null_: (Object | null)[], arg1: ReadOnlyHttpHeaders$1)
+    constructor(null_: (Object | null)[], arg1: any)
     readonly key: string;
     readonly key: string;
     // private nextNameIndex: number;

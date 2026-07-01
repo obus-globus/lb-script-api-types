@@ -1,4 +1,3 @@
-import type { RoutingAppender$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Future } from '../../../../../../../java/util/concurrent/Future.d.ts'
 import type { TimeUnit } from '../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
@@ -25,8 +24,7 @@ export class RoutingAppender extends AbstractAppender {
     static createAppender(paramname: string, paramignore: string, paramroutes: Routes, paramconfig: Configuration, paramrewritePolicy: RewritePolicy, parampurgePolicy: PurgePolicy, paramfilter: Filter): RoutingAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
-    private constructor(name: string, filter: Filter, ignoreExceptions: boolean, routes: Routes, rewritePolicy: RewritePolicy, configuration: Configuration, purgePolicy: PurgePolicy, defaultRouteScript: AbstractScript, properties: Property[])
-    constructor(arg0: string, arg1: Filter, arg2: boolean, arg3: Routes, arg4: RewritePolicy, arg5: Configuration, arg6: PurgePolicy, arg7: AbstractScript, arg8: Property[], arg9: RoutingAppender$1)
+    constructor(arg0: string, arg1: Filter, arg2: boolean, arg3: Routes, arg4: RewritePolicy, arg5: Configuration, arg6: PurgePolicy, arg7: AbstractScript, arg8: Property[], arg9: any)
     readonly configuration: Configuration;
     // private createdAppenders: { [key: string]: RoutingAppender$CreatedRouteAppenderControl };
     // private createdAppendersUnmodifiableView: { [key: string]: AppenderControl };

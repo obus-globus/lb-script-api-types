@@ -1,7 +1,6 @@
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ChatUtil$ChatFormattingState extends Object {
-    private constructor(arg0: string)
     constructor(arg0: string[], arg1: string, arg2: string)
     // private color: string;
     // private defaultColor: string;

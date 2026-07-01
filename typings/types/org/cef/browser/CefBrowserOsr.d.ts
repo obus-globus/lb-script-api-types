@@ -17,7 +17,6 @@ import type { CefRenderHandler } from '../../../org/cef/handler/CefRenderHandler
 import type { CefScreenInfo } from '../../../org/cef/handler/CefScreenInfo.d.ts'
 export class CefBrowserOsr extends CefBrowser_N implements CefRenderHandler {
     constructor(arg0: CefClient, arg1: string, arg2: boolean, arg3: CefRequestContext, arg4: CefBrowserSettings)
-    private constructor(arg0: CefClient, arg1: string, arg2: boolean, arg3: CefRequestContext, arg4: CefBrowserOsr, arg5: Point, arg6: CefBrowserSettings)
     // private browser_rect_: Rectangle;
     // private depth: number;
     // private depth_per_component: number;

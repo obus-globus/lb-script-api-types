@@ -28,7 +28,6 @@ export class TextComponentSerializer extends Object implements ConsumerTracking 
     static V1_9: TextComponentSerializer;
     static V26_1: TextComponentSerializer;
     constructor(arg0: TextComponentCodec, arg1: () => Gson)
-    private constructor(arg0: TextComponentCodec, arg1: () => Gson, arg2: boolean)
     constructor(arg0: () => Gson)
     constructor(arg0: () => Gson, arg1: boolean)
     readonly gson: Gson;

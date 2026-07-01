@@ -20,7 +20,6 @@ import type { TextureStage } from '../../../../../net/irisshaders/iris/shaderpac
 import type { CustomUniforms$Builder } from '../../../../../net/irisshaders/iris/uniforms/custom/CustomUniforms$Builder.d.ts'
 export class ShaderProperties extends Object {
     static empty(): ShaderProperties;
-    private constructor()
     constructor(arg0: string, arg1: ShaderPackOptions, arg2: StringPair[])
     readonly alphaTestOverrides: { [key: string]: AlphaTest };
     readonly backFaceCutout: OptionalBoolean;

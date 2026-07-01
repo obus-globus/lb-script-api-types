@@ -31,9 +31,7 @@ export class DateIntervalFormat extends UFormat implements Cloneable {
     static getInstance(paramarg0: string, paramarg1: ULocale, paramarg2: DateIntervalInfo): DateIntervalFormat;
     static getInstance(paramarg0: string, paramarg1: Locale): DateIntervalFormat;
     static getInstance(paramarg0: string, paramarg1: Locale, paramarg2: DateIntervalInfo): DateIntervalFormat;
-    private constructor()
     constructor(arg0: string, arg1: DateIntervalInfo, arg2: SimpleDateFormat)
-    private constructor(arg0: string, arg1: ULocale, arg2: SimpleDateFormat)
     // private fCapitalizationSetting: DisplayContext;
     // private fDateFormat: SimpleDateFormat;
     // private fDatePattern: string;
@@ -46,7 +44,6 @@ export class DateIntervalFormat extends UFormat implements Cloneable {
     // private fToCalendar: Calendar;
     // private isDateIntervalInfoDefault: boolean;
     clone(): DateIntervalFormat;
-    protected clone(): Object;
     // private concatSingleDate2TimeInterval(arg0: string, arg1: string, arg2: number, arg3: { [key: string]: DateIntervalInfo$PatternInfo }): void;
     // private fallbackFormat(arg0: Calendar, arg1: Calendar, arg2: boolean, arg3: StringBuffer, arg4: FieldPosition, arg5: DateIntervalFormat$FormatOutput, arg6: FieldPosition[]): StringBuffer;
     // private fallbackFormat(arg0: Calendar, arg1: Calendar, arg2: boolean, arg3: StringBuffer, arg4: FieldPosition, arg5: DateIntervalFormat$FormatOutput, arg6: FieldPosition[], arg7: string): StringBuffer;

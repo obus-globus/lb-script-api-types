@@ -8,7 +8,6 @@ export class NumericEntityEscaper extends CodePointTranslator {
     static hex(paramarg0: number): string;
     static outsideOf(paramarg0: number, paramarg1: number): NumericEntityEscaper;
     constructor()
-    private constructor(arg0: number, arg1: number, arg2: boolean)
     // private above: number;
     // private below: number;
     // private between: boolean;

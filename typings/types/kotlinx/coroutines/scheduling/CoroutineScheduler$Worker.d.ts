@@ -35,7 +35,6 @@ export class CoroutineScheduler$Worker extends Thread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    private constructor(null_: CoroutineScheduler)
     constructor(null_: CoroutineScheduler, index: number)
     // private executeTask(task: Task): void;
     // private findAnyTask(scanLocalQueue: boolean): Task | null;

@@ -14,7 +14,6 @@ export class JdkZlibDecoder extends ZlibDecoder {
     constructor(arg0: ZlibWrapper)
     constructor(arg0: ZlibWrapper, arg1: boolean)
     constructor(arg0: ZlibWrapper, arg1: boolean, arg2: number)
-    private constructor(arg0: ZlibWrapper, arg1: number[], arg2: boolean, arg3: number)
     constructor(arg0: ZlibWrapper, arg1: number)
     constructor(arg0: boolean)
     constructor(arg0: boolean, arg1: number)

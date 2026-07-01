@@ -8,7 +8,6 @@ import type { TypeParameterMarker } from '../../../../kotlin/reflect/jvm/interna
 export class KTypeParameterImpl extends KTypeParameterBase implements TypeConstructorMarker, TypeParameterMarker {
     constructor(container: KTypeParameterOwnerImpl, name: string, variance: KVariance, isReified: boolean)
     constructor(container: KTypeParameterOwnerImpl, descriptor: TypeParameterDescriptor)
-    private constructor(descriptor: TypeParameterDescriptor | null, container: KTypeParameterOwnerImpl, name: string, variance: KVariance, isReified: boolean)
     // private _descriptor: TypeParameterDescriptor | null;
     readonly descriptor: TypeParameterDescriptor;
     // private isReified: boolean;

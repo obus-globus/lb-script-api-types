@@ -6,7 +6,6 @@ export class Object2BooleanFunctions$EmptyFunction<K extends unknown> extends Ab
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): boolean;
     defaultReturnValue(arg0: boolean): void;

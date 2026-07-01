@@ -32,7 +32,6 @@ export abstract class Collator extends Object implements Comparator<Object>, Clo
     // private decmp: number;
     readonly strength: number;
     clone(): Object;
-    protected clone(): Object;
     compare(arg0: Object, arg1: Object): number;
     compare(arg0: string, arg1: string): number;
     equals(arg0: Object | null): boolean;

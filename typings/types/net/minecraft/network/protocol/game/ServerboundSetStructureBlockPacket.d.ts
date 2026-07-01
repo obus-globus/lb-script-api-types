@@ -17,7 +17,6 @@ export class ServerboundSetStructureBlockPacket extends Object implements Packet
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetStructureBlockPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(pos: BlockPos, updateType: StructureBlockEntity$UpdateType, mode: StructureMode, name: string, offset: BlockPos, size: Vec3i, mirror: Mirror, rotation: Rotation, data: string, ignoreEntities: boolean, strict: boolean, showAir: boolean, showBoundingBox: boolean, integrity: number, seed: number)
-    private constructor(input: FriendlyByteBuf)
     readonly data: string;
     readonly ignoreEntities: boolean;
     readonly integrity: number;

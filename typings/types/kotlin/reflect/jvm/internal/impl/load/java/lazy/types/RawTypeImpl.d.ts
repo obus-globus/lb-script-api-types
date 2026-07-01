@@ -8,7 +8,6 @@ import type { TypeAttribute } from '../../../../../../../../../kotlin/reflect/jv
 import type { KotlinTypeRefiner } from '../../../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class RawTypeImpl extends FlexibleType implements RawType {
     constructor(arg0: SimpleType, arg1: SimpleType)
-    private constructor(arg0: SimpleType, arg1: SimpleType, arg2: boolean)
     getDelegate(): SimpleType;
     getMemberScope(): MemberScope;
     makeNullableAsSpecified(arg0: boolean): RawTypeImpl;

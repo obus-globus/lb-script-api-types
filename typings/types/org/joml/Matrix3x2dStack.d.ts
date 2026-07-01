@@ -10,7 +10,6 @@ export class Matrix3x2dStack extends Matrix3x2d implements Cloneable {
     // private curr: number;
     // private mats: Matrix3x2d[];
     clear(): Matrix3x2dStack;
-    protected clone(): Object;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     equals(arg0: Matrix3x2dc, arg1: number): boolean;

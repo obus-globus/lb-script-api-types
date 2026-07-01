@@ -11,7 +11,6 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
 export class ClientboundSetEntityLinkPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetEntityLinkPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(sourceEntity: Entity, destEntity: Entity)
     readonly destId: number;
     readonly sourceId: number;

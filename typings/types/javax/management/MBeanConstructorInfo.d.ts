@@ -11,7 +11,6 @@ export class MBeanConstructorInfo extends MBeanFeatureInfo implements Cloneable 
     // private arrayGettersSafe: boolean;
     readonly signature: MBeanParameterInfo[];
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     // private fastGetSignature(): MBeanParameterInfo[];
     getSignature(): MBeanParameterInfo[];

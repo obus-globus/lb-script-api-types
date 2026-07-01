@@ -10,7 +10,6 @@ export class Short2LongAVLTreeMap$Entry extends AbstractShort2LongMap$BasicEntry
     balance(): number;
     balance(arg0: number): void;
     clone(): Short2LongAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

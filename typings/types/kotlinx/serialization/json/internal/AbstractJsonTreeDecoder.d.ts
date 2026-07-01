@@ -33,7 +33,6 @@ export class AbstractJsonTreeDecoder extends NamedValueDecoder implements JsonDe
     decodeJsonElement(): JsonElement;
     decodeNotNullMark(): boolean;
     decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
-    protected decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     protected decodeTaggedBoolean(tag: string): boolean;
     protected decodeTaggedByte(tag: string): number;
     protected decodeTaggedChar(tag: string): string;
@@ -50,7 +49,6 @@ export class AbstractJsonTreeDecoder extends NamedValueDecoder implements JsonDe
     endStructure(descriptor: SerialDescriptor): void;
     // private getPrimitiveValue<T extends unknown>(tag: string, primitiveName: string, convert: (param0: JsonPrimitive) => T | null): T;
     protected getPrimitiveValue(tag: string, descriptor: SerialDescriptor): JsonPrimitive;
-    protected renderTagStack(): string;
     renderTagStack(currentTag: string): string;
     // private unparsedPrimitive(literal: JsonPrimitive, primitive: string, tag: string): void;
 }

@@ -10,7 +10,6 @@ export class Int2DoubleAVLTreeMap$Entry extends AbstractInt2DoubleMap$BasicEntry
     balance(): number;
     balance(arg0: number): void;
     clone(): Int2DoubleAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

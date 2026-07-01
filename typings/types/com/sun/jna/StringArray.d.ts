@@ -13,7 +13,6 @@ export class StringArray extends Memory implements Function$PostCallRead {
     static nativeValue(paramarg0: Pointer, paramarg1: number): void;
     static purge(): void;
     constructor(arg0: WString[])
-    private constructor(arg0: Object[], arg1: string)
     constructor(arg0: string[])
     constructor(arg0: string[], arg1: boolean)
     constructor(arg0: string[], arg1: string)

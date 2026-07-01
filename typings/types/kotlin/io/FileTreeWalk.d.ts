@@ -6,7 +6,6 @@ import type { FileWalkDirection } from '../../kotlin/io/FileWalkDirection.d.ts'
 import type { Sequence } from '../../kotlin/sequences/Sequence.d.ts'
 export class FileTreeWalk extends Object implements Sequence<File> {
     constructor(start: File, direction: FileWalkDirection)
-    private constructor(start: File, direction: FileWalkDirection, onEnter: ((param0: File) => boolean) | null, onLeave: ((param0: File) => void) | null, onFail: ((param0: File, param1: IOException) => void) | null, maxDepth: number)
     // private direction: FileWalkDirection;
     // private maxDepth: number;
     // private onEnter: ((param0: File) => boolean) | null;

@@ -10,7 +10,6 @@ export class Int2BooleanAVLTreeMap$Entry extends AbstractInt2BooleanMap$BasicEnt
     balance(): number;
     balance(arg0: number): void;
     clone(): Int2BooleanAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

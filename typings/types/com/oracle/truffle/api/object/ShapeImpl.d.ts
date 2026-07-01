@@ -22,7 +22,6 @@ export class ShapeImpl extends Shape {
     static newBuilder(): Shape$Builder;
     static newBuilder(parambaseShape: Shape): Shape$DerivedBuilder;
     constructor(layout: Layout, parent: ShapeImpl, objectType: Object, sharedData: Object, propertyMap: { [key: string]: any }, transition: Transition, allocator: ShapeImpl$BaseAllocator, flags: number)
-    private constructor(layout: Layout, parent: ShapeImpl, objectType: Object, sharedData: Object, propertyMap: { [key: string]: any }, transitionFromParent: Transition, objectArraySize: number, objectFieldSize: number, primitiveFieldSize: number, primitiveArraySize: number, flags: number, singleContextAssumption: Assumption)
     constructor(layout: Layout, dynamicType: Object, sharedData: Object, flags: number, constantObjectAssumption: Assumption)
     readonly depth: number;
     readonly flags: number;

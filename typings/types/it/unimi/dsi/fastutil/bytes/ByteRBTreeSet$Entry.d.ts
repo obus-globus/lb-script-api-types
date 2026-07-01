@@ -10,7 +10,6 @@ export class ByteRBTreeSet$Entry extends Object implements Cloneable {
     black(): boolean;
     black(arg0: boolean): void;
     clone(): ByteRBTreeSet$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): ByteRBTreeSet$Entry;

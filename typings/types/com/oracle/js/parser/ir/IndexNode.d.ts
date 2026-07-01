@@ -7,7 +7,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IndexNode extends BaseNode {
-    private constructor(indexNode: IndexNode, base: Expression, index: Expression, isSuper: boolean)
     constructor(token: number, finish: number, base: Expression, index: Expression)
     constructor(token: number, finish: number, base: Expression, index: Expression, isSuper: boolean, optional: boolean, optionalChain: boolean)
     readonly index: Expression;

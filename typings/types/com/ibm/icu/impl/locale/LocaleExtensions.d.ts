@@ -8,7 +8,6 @@ export class LocaleExtensions extends Object {
     static NUMBER_THAI: LocaleExtensions;
     static isValidKey(paramarg0: string): boolean;
     static isValidUnicodeLocaleKey(paramarg0: string): boolean;
-    private constructor()
     constructor(arg0: Map<InternalLocaleBuilder$CaseInsensitiveChar, string>, arg1: InternalLocaleBuilder$CaseInsensitiveString[], arg2: Map<InternalLocaleBuilder$CaseInsensitiveString, string>)
     // private _id: string;
     // private _map: { [key: string]: Extension };

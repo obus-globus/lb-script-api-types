@@ -1,4 +1,4 @@
-import type { DateFormatter$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
+import type { FastThreadLocal } from '../../../../io/netty/util/concurrent/FastThreadLocal.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
 import type { Date } from '../../../../java/util/Date.d.ts'
 import type { GregorianCalendar } from '../../../../java/util/GregorianCalendar.d.ts'
@@ -9,8 +9,7 @@ export class DateFormatter extends Object {
     static format(paramarg0: Date): string;
     static parseHttpDate(paramarg0: CharSequence): Date;
     static parseHttpDate(paramarg0: CharSequence, paramarg1: number, paramarg2: number): Date;
-    private constructor()
-    constructor(arg0: DateFormatter$1)
+    constructor(arg0: FastThreadLocal<DateFormatter>)
     // private cal: GregorianCalendar;
     // private dayOfMonth: number;
     // private dayOfMonthFound: boolean;

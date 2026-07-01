@@ -11,7 +11,6 @@ export class RealmsWorldOptions extends ValueObject implements ReflectionBasedSe
     static createEmptyDefaults(): RealmsWorldOptions;
     static createFromSettings(paramsettings: LevelSettings, paramworldVersion: string): RealmsWorldOptions;
     static parse(paramgson: GuardedSerializer, paramjson: string): RealmsWorldOptions;
-    private constructor()
     constructor(spawnProtection: number, difficulty: number, gameMode: number, forceGameMode: boolean, slotName: string, version: string, compatibility: RealmsServer$Compatibility)
     compatibility: RealmsServer$Compatibility;
     difficulty: number;

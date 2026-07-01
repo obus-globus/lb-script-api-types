@@ -5,7 +5,6 @@ export class SignatureWriter extends SignatureVisitor {
     static INSTANCEOF: string;
     static SUPER: string;
     constructor()
-    private constructor(arg0: StringBuilder)
     // private argumentStack: number;
     // private hasFormals: boolean;
     // private hasParameters: boolean;

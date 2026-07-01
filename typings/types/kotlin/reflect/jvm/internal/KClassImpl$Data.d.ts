@@ -13,7 +13,7 @@ import type { TypeParameterTable } from '../../../../kotlin/reflect/jvm/internal
 import type { ClassDescriptor } from '../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { KmClass } from '../../../../kotlin/reflect/jvm/internal/impl/km/KmClass.d.ts'
 export class KClassImpl$Data extends KDeclarationContainerImpl$Data {
-    constructor(null_: KClassImpl<T>)
+    constructor(null_: KClassImpl<Object>)
     readonly allMembers: ReflectKCallable<Object>[];
     readonly allNonStaticMembers: ReflectKCallable<Object>[];
     readonly allStaticMembers: ReflectKCallable<Object>[];

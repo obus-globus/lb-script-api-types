@@ -9,7 +9,6 @@ import type { ContextKeySet } from '../../../../../../net/minecraft/util/context
 import type { LootContextUser } from '../../../../../../net/minecraft/world/level/storage/loot/LootContextUser.d.ts'
 export class ValidationContext extends Object {
     constructor(reporter: ProblemReporter, contextKeySet: ContextKeySet)
-    private constructor(reporter: ProblemReporter, contextKeySet: ContextKeySet, resolver: Optional<HolderGetter$Provider>, visitedElements: ResourceKey<Object>[])
     constructor(reporter: ProblemReporter, contextKeySet: ContextKeySet, resolver: HolderGetter$Provider)
     // private contextKeySet: ContextKeySet;
     // private reporter: ProblemReporter;

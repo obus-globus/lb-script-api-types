@@ -5,7 +5,6 @@ import type { SourceSection } from '../../../../com/oracle/truffle/api/source/So
 export class PolyglotEngineImpl$InterruptExecution extends AbstractTruffleException {
     static UNLIMITED_STACK_TRACE: number;
     constructor(location: Node)
-    private constructor(location: Node, sourceSection: SourceSection)
     constructor(sourceSection: SourceSection)
     readonly sourceSection: SourceSection;
     getExceptionType(): ExceptionType;

@@ -3,7 +3,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ICU4JFeature$ResourceEntry extends Record {
     constructor(className: string, resourcePath: string)
     constructor(classNames: string[], resourcePath: string)
-    private constructor(classNames: string[], resourcePaths: string[])
     // private classNames: string[];
     // private resourcePaths: string[];
     classNames(): string[];

@@ -12,7 +12,6 @@ export class ServerboundBlockEntityTagQueryPacket extends Object implements Pack
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundBlockEntityTagQueryPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(transactionId: number, pos: BlockPos)
-    private constructor(input: FriendlyByteBuf)
     readonly pos: BlockPos;
     readonly transactionId: number;
     getPos(): BlockPos;

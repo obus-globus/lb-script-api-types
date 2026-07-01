@@ -1,10 +1,8 @@
-import type { MinMaxPriorityQueue$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Ordering } from '../../../../com/google/common/collect/Ordering.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MinMaxPriorityQueue$Builder<B extends unknown> extends Object {
-    constructor(arg0: (param0: Object) => boolean, arg1: MinMaxPriorityQueue$1)
-    private constructor(comparator: (param0: Object) => boolean)
+    constructor(arg0: (param0: Object) => boolean, arg1: any)
     // private comparator: (param0: Object) => boolean;
     // private expectedSize: number;
     // private maximumSize: number;

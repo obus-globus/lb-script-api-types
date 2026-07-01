@@ -13,7 +13,6 @@ export class ClientboundUpdateEnabledFeaturesPacket extends Record implements Pa
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundUpdateEnabledFeaturesPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(features: Identifier[])
-    private constructor(input: FriendlyByteBuf)
     // private features: Identifier[];
     equals(o: Object | null): boolean;
     features(): Identifier[];

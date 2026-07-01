@@ -10,7 +10,6 @@ export class Char2BooleanRBTreeMap$Entry extends AbstractChar2BooleanMap$BasicEn
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Char2BooleanRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Char2BooleanRBTreeMap$Entry;

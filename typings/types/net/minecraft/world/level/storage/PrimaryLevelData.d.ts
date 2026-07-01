@@ -23,7 +23,6 @@ export class PrimaryLevelData extends Object implements ServerLevelData, WorldDa
     static writeLastPlayed(paramtag: CompoundTag): void;
     static writeVersionTag(paramtag: Dynamic<Object>): Dynamic<Object>;
     static writeVersionTag(paramtag: CompoundTag): void;
-    private constructor(singlePlayerUUID: UUID, wasModded: boolean, respawnData: LevelData$RespawnData, gameTime: number, version: number, initialized: boolean, knownServerBrands: string[], removedFeatureFlags: string[], settings: LevelSettings, specialWorldProperty: PrimaryLevelData$SpecialWorldProperty, worldGenSettingsLifecycle: Lifecycle)
     constructor(levelSettings: LevelSettings, specialWorldProperty: PrimaryLevelData$SpecialWorldProperty, lifecycle: Lifecycle)
     readonly gameTime: number;
     readonly initialized: boolean;

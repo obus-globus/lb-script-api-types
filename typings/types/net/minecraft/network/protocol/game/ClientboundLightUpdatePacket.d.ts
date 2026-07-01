@@ -14,7 +14,6 @@ import type { LevelLightEngine } from '../../../../../net/minecraft/world/level/
 export class ClientboundLightUpdatePacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundLightUpdatePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(pos: ChunkPos, lightEngine: LevelLightEngine, skyChangedLightSectionFilter: BitSet, blockChangedLightSectionFilter: BitSet)
     readonly lightData: ClientboundLightUpdatePacketData;
     readonly x: number;

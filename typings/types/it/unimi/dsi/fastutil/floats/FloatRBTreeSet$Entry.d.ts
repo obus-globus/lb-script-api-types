@@ -10,7 +10,6 @@ export class FloatRBTreeSet$Entry extends Object implements Cloneable {
     black(): boolean;
     black(arg0: boolean): void;
     clone(): FloatRBTreeSet$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): FloatRBTreeSet$Entry;

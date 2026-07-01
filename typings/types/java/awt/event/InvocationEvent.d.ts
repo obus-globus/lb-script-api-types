@@ -31,7 +31,6 @@ export class InvocationEvent extends AWTEvent implements ActiveEvent {
     constructor(arg0: Object, arg1: () => void)
     constructor(arg0: Object, arg1: () => void, arg2: () => void, arg3: boolean)
     constructor(arg0: Object, arg1: () => void, arg2: Object, arg3: boolean)
-    private constructor(arg0: Object, arg1: number, arg2: () => void, arg3: Object, arg4: () => void, arg5: boolean)
     constructor(arg0: Object, arg1: number, arg2: () => void, arg3: Object, arg4: boolean)
     // private catchExceptions: boolean;
     readonly dispatched: boolean;

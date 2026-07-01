@@ -7,7 +7,6 @@ export class FeatureSetBuilder$MemberSupportBuilder extends Object {
     constructor()
     constructor(arg0: boolean)
     constructor(arg0: FeatureSet$MemberSupport)
-    private constructor(arg0: FeatureSetBuilder$NameFeatureBuilder, arg1: FeatureSetBuilder$DescFeatureBuilder)
     // private descriptors: FeatureSetBuilder$DescFeatureBuilder;
     // private names: FeatureSetBuilder$NameFeatureBuilder;
     build(): FeatureSet$MemberSupport;

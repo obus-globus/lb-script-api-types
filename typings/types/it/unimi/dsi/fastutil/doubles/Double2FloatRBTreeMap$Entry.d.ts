@@ -10,7 +10,6 @@ export class Double2FloatRBTreeMap$Entry extends AbstractDouble2FloatMap$BasicEn
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Double2FloatRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Double2FloatRBTreeMap$Entry;

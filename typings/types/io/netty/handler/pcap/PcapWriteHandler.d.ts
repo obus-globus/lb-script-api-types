@@ -1,4 +1,3 @@
-import type { PcapWriteHandler$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ByteBufAllocator } from '../../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelDuplexHandler } from '../../../../io/netty/channel/ChannelDuplexHandler.d.ts'
@@ -18,8 +17,7 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class PcapWriteHandler extends ChannelDuplexHandler implements Closeable {
     static builder(): PcapWriteHandler$Builder;
     static writeGlobalHeader(paramarg0: OutputStream): void;
-    private constructor(arg0: PcapWriteHandler$Builder, arg1: OutputStream)
-    constructor(arg0: PcapWriteHandler$Builder, arg1: OutputStream, arg2: PcapWriteHandler$1)
+    constructor(arg0: PcapWriteHandler$Builder, arg1: OutputStream, arg2: any)
     constructor(arg0: OutputStream)
     constructor(arg0: OutputStream, arg1: boolean, arg2: boolean)
     // private captureZeroByte: boolean;

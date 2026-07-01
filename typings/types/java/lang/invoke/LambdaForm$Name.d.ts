@@ -15,7 +15,6 @@ export class LambdaForm$Name extends Object {
     constructor(arg0: MethodHandle, arg1: Object[])
     constructor(arg0: MethodType, arg1: Object[])
     constructor(arg0: number, arg1: LambdaForm$BasicType)
-    private constructor(arg0: number, arg1: LambdaForm$BasicType, arg2: LambdaForm$NamedFunction, arg3: Object[], arg4: Object)
     // private arguments: Object[];
     // private constraint: Object;
     // private function: LambdaForm$NamedFunction;

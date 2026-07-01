@@ -31,7 +31,6 @@ export class ViewedInventoryScreen extends Screen {
     // private drawSlot(context: GuiGraphicsExtractor, slot: Slot): void;
     extractBackground(context: GuiGraphicsExtractor, mouseX: number, mouseY: number, delta: number): void;
     extractRenderState(context: GuiGraphicsExtractor, mouseX: number, mouseY: number, delta: number): void;
-    protected init(): void;
     init(width: number, height: number): void;
     isPauseScreen(): boolean;
     // private isPointOverSlot(slot: Slot, pointX: number, pointY: number): boolean;

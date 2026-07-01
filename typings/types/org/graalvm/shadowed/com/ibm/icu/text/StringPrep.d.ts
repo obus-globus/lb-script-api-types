@@ -1,6 +1,5 @@
 import type { InputStream } from '../../../../../../../java/io/InputStream.d.ts'
 import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d.ts'
-import type { ByteBuffer } from '../../../../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharTrie } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/CharTrie.d.ts'
 import type { UBiDiProps } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/UBiDiProps.d.ts'
@@ -25,7 +24,6 @@ export class StringPrep extends Object {
     static RFC4518_LDAP_CI: number;
     static getInstance(paramprofile: number): StringPrep;
     constructor(inputStream: InputStream)
-    private constructor(bytes: ByteBuffer)
     // private bdp: UBiDiProps;
     // private checkBiDi: boolean;
     // private doNFKC: boolean;

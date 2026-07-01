@@ -18,7 +18,6 @@ export class LongSpliterators$EmptySpliterator extends Object implements LongSpl
     constructor()
     characteristics(): number;
     clone(): Object;
-    protected clone(): Object;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => number;

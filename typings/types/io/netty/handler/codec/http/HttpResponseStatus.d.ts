@@ -67,9 +67,7 @@ export class HttpResponseStatus extends Object implements Comparable<HttpRespons
     static parseLine(paramarg0: string): HttpResponseStatus;
     static valueOf(paramarg0: number): HttpResponseStatus;
     static valueOf(paramarg0: number, paramarg1: string): HttpResponseStatus;
-    private constructor(arg0: number)
     constructor(arg0: number, arg1: string)
-    private constructor(arg0: number, arg1: string, arg2: boolean)
     // private bytes: number[];
     // private code: number;
     // private codeAsText: AsciiString;

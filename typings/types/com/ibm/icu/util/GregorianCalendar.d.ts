@@ -90,7 +90,6 @@ export class GregorianCalendar extends Calendar implements Cloneable {
     // private invertGregorian: boolean;
     // private isGregorian: boolean;
     clone(): GregorianCalendar;
-    protected clone(): Object;
     getActualMaximum(arg0: number): number;
     getActualMinimum(arg0: number): number;
     getGregorianChange(): Date;

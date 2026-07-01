@@ -16,7 +16,7 @@ import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.
  *
  * Show the names and quantities of items in several boxes.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags.kt:63}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleItemTags.kt:63}
  */
 export class ModuleItemTags extends ClientModule {
     static INSTANCE: ModuleItemTags;

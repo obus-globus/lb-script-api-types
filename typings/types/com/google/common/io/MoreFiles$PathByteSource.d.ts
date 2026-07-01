@@ -1,5 +1,5 @@
-import type { MoreFiles$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Optional } from '../../../../com/google/common/base/Optional.d.ts'
+import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { ByteProcessor } from '../../../../com/google/common/io/ByteProcessor.d.ts'
 import type { ByteSource } from '../../../../com/google/common/io/ByteSource.d.ts'
 import type { CharSource } from '../../../../com/google/common/io/CharSource.d.ts'
@@ -16,8 +16,7 @@ export class MoreFiles$PathByteSource extends ByteSource {
     static concat(paramsources: Iterator<ByteSource>): ByteSource;
     static empty(): ByteSource;
     static wrap(paramb: number[]): ByteSource;
-    private constructor(path: Path[], options: OpenOption[])
-    constructor(arg0: Path[], arg1: OpenOption[], arg2: MoreFiles$1)
+    constructor(arg0: Path[], arg1: OpenOption[], arg2: (param0: Object) => boolean)
     // private followLinks: boolean;
     // private options: OpenOption[];
     // private path: Path[];

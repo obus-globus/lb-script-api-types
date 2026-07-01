@@ -15,7 +15,6 @@ export class HttpDecoderConfig extends Object implements Cloneable {
     readonly trailersFactory: HttpHeadersFactory;
     readonly useRfc9112TransferEncoding: boolean;
     clone(): HttpDecoderConfig;
-    protected clone(): Object;
     getHeadersFactory(): HttpHeadersFactory;
     getInitialBufferSize(): number;
     getMaxChunkSize(): number;

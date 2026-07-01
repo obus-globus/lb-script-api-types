@@ -3,7 +3,6 @@ import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/i
 import type { FunctionClassKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/functions/FunctionClassKind.d.ts'
 import type { FunctionTypeKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/functions/FunctionTypeKind.d.ts'
 export class FunctionClassKind$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     getFunctionClassKind(arg0: FunctionTypeKind): FunctionClassKind;
 }

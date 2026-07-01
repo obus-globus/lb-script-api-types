@@ -3,5 +3,4 @@ export class CharArrayPoolBatchSize extends CharArrayPoolBase {
     static INSTANCE: CharArrayPoolBatchSize;
     release(array: string[]): void;
     take(): string[];
-    protected take(size: number): string[];
 }

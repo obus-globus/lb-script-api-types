@@ -981,7 +981,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 633
+      "line": 642
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.restore": {
@@ -1619,7 +1619,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/blink/BlinkManager.kt",
-      "line": 78
+      "line": 77
     }
   },
   "net.ccbluex.liquidbounce.features.blink.esp.BlinkEspModel.renderHandler": {
@@ -3329,7 +3329,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt",
-      "line": 51
+      "line": 50
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleTickBase.range": {
@@ -3337,7 +3337,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleTickBase.kt",
-      "line": 61
+      "line": 60
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleTimerRange": {
@@ -5802,7 +5802,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 63
+      "line": 62
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleFreeze.Cancel": {
@@ -5850,7 +5850,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleFreeze.kt",
-      "line": 98
+      "line": 97
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.ModuleNoClip": {
@@ -6377,12 +6377,20 @@
       "line": 61
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.allowsMovementOverride": {
+    "doc": "Whether SnapTap (and similar movement modules) should allow their input\noverrides when a screen is open. True only when InventoryMove is enabled\nand in NORMAL mode (free movement in inventory).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
+      "line": 70
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.doNotAllowClicking": {
     "doc": "Restricts user from clicking while moving in inventory.",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 89
+      "line": 96
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.ModuleInventoryMove.isInCreativeSearchField": {
@@ -6390,7 +6398,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/inventorymove/ModuleInventoryMove.kt",
-      "line": 172
+      "line": 179
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.movement.inventorymove.features.InventoryMoveBlinkFeature.maximumTime": {
@@ -8695,7 +8703,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-      "line": 50
+      "line": 47
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer.getTntColor": {
@@ -8703,7 +8711,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer.kt",
-      "line": 118
+      "line": 103
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTracers": {
@@ -8743,7 +8751,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
-      "line": 123
+      "line": 124
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay.applyDefaults": {
@@ -8751,7 +8759,19 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
-      "line": 284
+      "line": 330
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay.modifyDrawSide": {
+    "doc": "Keeps vanilla/Sodium face culling unless this is a whitelisted XRay block hidden behind another block.",
+    "see": [
+      "net.minecraft.client.renderer.block.ModelBlockRenderer.shouldRenderFace",
+      "net.caffeinemc.mods.sodium.client.render.model.AbstractBlockRenderContext.shouldDrawSide"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
+      "line": 292
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay.shouldRender": {
@@ -8759,7 +8779,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt",
-      "line": 261
+      "line": 265
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleZoom": {
@@ -8949,7 +8969,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt",
-      "line": 50
+      "line": 52
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.ModuleTrajectories.drawHypotheticalTrajectory": {
@@ -8957,7 +8977,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt",
-      "line": 153
+      "line": 167
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.world.ModuleAirPlace": {
@@ -11238,7 +11258,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 58
+      "line": 60
     }
   },
   "net.ccbluex.liquidbounce.render.Matrix3x2fc.transformMaxBounds": {
@@ -11309,7 +11329,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 321
+      "line": 349
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSide": {
@@ -11317,7 +11337,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 382
+      "line": 410
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSides": {
@@ -11325,7 +11345,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 398
+      "line": 426
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCircleOutline": {
@@ -11337,7 +11357,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 570
+      "line": 598
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCustomMesh": {
@@ -11345,7 +11365,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 172
+      "line": 174
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCustomMeshTextured": {
@@ -11353,7 +11373,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 157
+      "line": 159
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawGradientCircle": {
@@ -11367,7 +11387,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 456
+      "line": 484
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawImmediate": {
@@ -11386,7 +11406,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 194
+      "line": 196
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLineStrip": {
@@ -11397,18 +11417,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 246
-    }
-  },
-  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLineStripAsLines": {
-    "doc": "Function to draw a 'line strip' using the specified [positions] vectors,\nactual pipeline is [ClientRenderPipelines.Lines].",
-    "params": {
-      "positions": "The vectors representing the line strip, the size should be even."
-    },
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 262
+      "line": 284
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLines": {
@@ -11419,7 +11428,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 230
+      "line": 257
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLinesWithWidth": {
@@ -11427,7 +11436,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 204
+      "line": 206
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawPlane": {
@@ -11435,7 +11444,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 414
+      "line": 442
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.endWorldFrame": {
@@ -11502,7 +11511,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-        "line": 122
+        "line": 124
       }
     },
     {
@@ -11510,7 +11519,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-        "line": 128
+        "line": 130
       }
     }
   ],
@@ -12122,7 +12131,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 84
+      "line": 86
     }
   },
   "net.ccbluex.liquidbounce.script.PolyglotScript.RegisterScript.apply": {
@@ -16354,7 +16363,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-      "line": 135
+      "line": 137
     }
   },
   "net.ccbluex.liquidbounce.utils.math.VoxelShape.boundsOrNull": {
@@ -16549,7 +16558,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MinecraftVectorExtensions.kt",
-      "line": 162
+      "line": 164
     }
   },
   "net.ccbluex.liquidbounce.utils.movement.getDegreesRelativeToView": {
@@ -17112,7 +17121,18 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/HeldItemTrajectoryResolver.kt",
-      "line": 137
+      "line": 145
+    }
+  },
+  "net.ccbluex.liquidbounce.utils.render.trajectory.TrajectoryDisplayResolver.POTION_ARROW_COLOR_NONE": {
+    "doc": "",
+    "see": [
+      "Arrow.NO_EFFECT_COLOR"
+    ],
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryDisplayResolver.kt",
+      "line": 38
     }
   },
   "net.ccbluex.liquidbounce.utils.render.trajectory.TrajectoryInfo.CROSSBOW_ARROW": {

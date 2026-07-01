@@ -5,7 +5,6 @@ export class ChunkHeader extends Object {
     static CHUNK_SIZE_POSITION: number;
     static HEADER_SIZE: number;
     constructor(arg0: RecordingInput)
-    private constructor(arg0: RecordingInput, arg1: number, arg2: number)
     // private absoluteChunkEnd: number;
     readonly absoluteChunkStart: number;
     readonly absoluteEventStart: number;

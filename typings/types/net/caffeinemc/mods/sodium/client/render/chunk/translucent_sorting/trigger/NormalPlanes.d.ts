@@ -5,7 +5,6 @@ import type { Vector3fc } from '../../../../../../../../../org/joml/Vector3fc.d.
 export class NormalPlanes extends Object {
     constructor(arg0: SectionPos, arg1: number)
     constructor(arg0: SectionPos, arg1: Vector3fc)
-    private constructor(arg0: SectionPos, arg1: Vector3fc, arg2: number)
     // private alignedDirection: number;
     // private baseDistance: number;
     // private distanceRange: DoubleInterval;

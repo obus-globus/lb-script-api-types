@@ -10,7 +10,6 @@ export class BedrockBlockArray extends Object implements DataPalette, Cloneable 
     readonly data: NibbleArray;
     addId(arg0: number): void;
     clear(): void;
-    protected clone(): Object;
     clone(): BedrockBlockArray;
     getBlocks(): number[];
     getData(): NibbleArray;

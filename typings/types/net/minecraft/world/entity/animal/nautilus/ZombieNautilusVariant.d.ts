@@ -24,7 +24,6 @@ export class ZombieNautilusVariant extends Record implements PriorityProvider<Sp
     static pick(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramrandomSource: RandomSource, paramcontext: Object | null): Optional<Object>;
     static select(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramcontext: Object | null): Stream<Object>;
     static single(paramcheck: Object | null, parampriority: number): PriorityProvider$Selector<Object, any>[];
-    private constructor(assetInfo: ModelAndTexture<ZombieNautilusVariant$ModelType>)
     constructor(modelAndTexture: ModelAndTexture<ZombieNautilusVariant$ModelType>, spawnConditions: SpawnPrioritySelectors)
     // private modelAndTexture: ModelAndTexture<ZombieNautilusVariant$ModelType>;
     // private spawnConditions: SpawnPrioritySelectors;

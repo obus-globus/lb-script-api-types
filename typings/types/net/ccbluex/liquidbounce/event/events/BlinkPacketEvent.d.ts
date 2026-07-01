@@ -2,6 +2,9 @@ import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.
 import type { TransferOrigin } from '../../../../../net/ccbluex/liquidbounce/event/events/TransferOrigin.d.ts'
 import type { BlinkManager$Action } from '../../../../../net/ccbluex/liquidbounce/features/blink/BlinkManager$Action.d.ts'
 import type { Packet } from '../../../../../net/minecraft/network/protocol/Packet.d.ts'
+/**
+ * Fires when a packet is queued or released by the Blink module, exposing the packet and its transfer origin.
+ */
 export class BlinkPacketEvent extends Event {
     constructor(packet: Packet<any> | null, origin: TransferOrigin)
     action: BlinkManager$Action;

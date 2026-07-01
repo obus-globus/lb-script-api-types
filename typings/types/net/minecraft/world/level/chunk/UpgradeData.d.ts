@@ -9,8 +9,6 @@ import type { SavedTick } from '../../../../../net/minecraft/world/ticks/SavedTi
 export class UpgradeData extends Object {
     static EMPTY: UpgradeData;
     constructor(tag: CompoundTag, levelHeightAccessor: LevelHeightAccessor)
-    private constructor(levelHeightAccessor: LevelHeightAccessor)
-    private constructor(source: UpgradeData)
     // private index: number[][];
     // private neighborBlockTicks: SavedTick<Block>[];
     // private neighborFluidTicks: SavedTick<Fluid>[];

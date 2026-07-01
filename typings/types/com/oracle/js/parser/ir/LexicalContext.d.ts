@@ -7,7 +7,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 export class LexicalContext extends Object {
     constructor()
-    private constructor(from: LexicalContext)
     // private sp: number;
     // private stack: LexicalContextNode[];
     contains(node: LexicalContextNode): boolean;

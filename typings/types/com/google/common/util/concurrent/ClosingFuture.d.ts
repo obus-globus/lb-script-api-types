@@ -1,4 +1,3 @@
-import type { ClosingFuture$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AsyncFunction } from '../../../../../com/google/common/util/concurrent/AsyncFunction.d.ts'
 import type { ClosingFuture$AsyncClosingCallable } from '../../../../../com/google/common/util/concurrent/ClosingFuture$AsyncClosingCallable.d.ts'
 import type { ClosingFuture$AsyncClosingFunction } from '../../../../../com/google/common/util/concurrent/ClosingFuture$AsyncClosingFunction.d.ts'
@@ -16,6 +15,7 @@ import type { ClosingFuture$ValueAndCloserConsumer } from '../../../../../com/go
 import type { FluentFuture } from '../../../../../com/google/common/util/concurrent/FluentFuture.d.ts'
 import type { ListenableFuture } from '../../../../../com/google/common/util/concurrent/ListenableFuture.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
+import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { CountDownLatch } from '../../../../../java/util/concurrent/CountDownLatch.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
@@ -34,9 +34,7 @@ export class ClosingFuture<V extends unknown> extends Object {
     static whenAllSucceed(paramfuture1: ClosingFuture<Object>, paramfuture2: ClosingFuture<Object>, paramfuture3: ClosingFuture<Object>, paramfuture4: ClosingFuture<Object>, paramfuture5: ClosingFuture<Object>, paramfuture6: ClosingFuture<Object>, parammoreFutures: Object | null): ClosingFuture$Combiner;
     static whenAllSucceed(paramfutures: ClosingFuture<Object>[]): ClosingFuture$Combiner;
     static withoutCloser(paramfunction: (param0: Object | null) => ListenableFuture<Object>): (param0: ClosingFuture$DeferredCloser, param1: Object | null) => ClosingFuture<Object>;
-    constructor(arg0: ListenableFuture<Object>, arg1: ClosingFuture$1)
-    private constructor(future: ListenableFuture<V>)
-    private constructor(future: ListenableFuture<V>, closeables: { [key: string]: any })
+    constructor(arg0: ListenableFuture<Object>, arg1: () => V)
     // private state: ClosingFuture$State<V>;
     // private becomeSubsumedInto(otherCloseables: { [key: string]: any }): void;
     cancel(mayInterruptIfRunning: boolean): boolean;

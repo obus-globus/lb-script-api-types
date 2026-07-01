@@ -7,7 +7,6 @@ export class Paper extends Object implements Cloneable {
     // private mImageableArea: Rectangle2D;
     // private mWidth: number;
     clone(): Object;
-    protected clone(): Object;
     getHeight(): number;
     getImageableHeight(): number;
     getImageableWidth(): number;

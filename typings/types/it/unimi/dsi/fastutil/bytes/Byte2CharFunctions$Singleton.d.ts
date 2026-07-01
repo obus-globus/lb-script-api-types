@@ -7,7 +7,6 @@ export class Byte2CharFunctions$Singleton extends AbstractByte2CharFunction impl
     // private key: number;
     // private value: string;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     get(arg0: Object): string;

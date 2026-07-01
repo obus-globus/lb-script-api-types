@@ -10,7 +10,6 @@ export class Char2ReferenceRBTreeMap$Entry<V extends unknown> extends AbstractCh
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Char2ReferenceRBTreeMap$Entry<V>;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Char2ReferenceRBTreeMap$Entry<V>;

@@ -26,7 +26,6 @@ export class Matrix2f extends Object implements Externalizable, Cloneable, Matri
     _m11(arg0: number): Matrix2f;
     add(arg0: Matrix2fc): Matrix2f;
     add(arg0: Matrix2fc, arg1: Matrix2f): Matrix2f;
-    protected clone(): Object;
     clone(): Object;
     determinant(): number;
     equals(arg0: Object | null): boolean;

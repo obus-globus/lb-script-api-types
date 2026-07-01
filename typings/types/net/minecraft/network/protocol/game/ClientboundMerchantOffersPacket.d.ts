@@ -11,7 +11,6 @@ export class ClientboundMerchantOffersPacket extends Object implements Packet<Cl
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundMerchantOffersPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(containerId: number, offers: (Object | null)[], merchantLevel: number, merchantXp: number, showProgress: boolean, canRestock: boolean)
-    private constructor(input: RegistryFriendlyByteBuf)
     // private canRestock: boolean;
     readonly containerId: number;
     readonly offers: (Object | null)[];

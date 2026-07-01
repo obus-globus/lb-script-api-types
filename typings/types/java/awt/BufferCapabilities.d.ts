@@ -8,7 +8,6 @@ export class BufferCapabilities extends Object implements Cloneable {
     readonly flipContents: BufferCapabilities$FlipContents;
     // private frontCaps: ImageCapabilities;
     clone(): Object;
-    protected clone(): Object;
     getBackBufferCapabilities(): ImageCapabilities;
     getFlipContents(): BufferCapabilities$FlipContents;
     getFrontBufferCapabilities(): ImageCapabilities;

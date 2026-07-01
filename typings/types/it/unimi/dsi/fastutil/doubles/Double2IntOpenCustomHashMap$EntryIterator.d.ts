@@ -5,7 +5,6 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2IntOpenCustomHashMap$EntryIterator extends Double2IntOpenCustomHashMap$MapIterator<(param0: Double2IntMap$Entry) => void> implements ObjectIterator<Double2IntMap$Entry> {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private entry: Double2IntOpenCustomHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Double2IntMap$Entry) => void, arg1: number): void;

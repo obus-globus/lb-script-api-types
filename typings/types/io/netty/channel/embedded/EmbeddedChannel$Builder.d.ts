@@ -1,14 +1,13 @@
-import type { EmbeddedChannel$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Channel } from '../../../../io/netty/channel/Channel.d.ts'
 import type { ChannelConfig } from '../../../../io/netty/channel/ChannelConfig.d.ts'
 import type { ChannelHandler } from '../../../../io/netty/channel/ChannelHandler.d.ts'
 import type { ChannelId } from '../../../../io/netty/channel/ChannelId.d.ts'
+import type { ChannelInitializer } from '../../../../io/netty/channel/ChannelInitializer.d.ts'
 import type { EmbeddedChannel } from '../../../../io/netty/channel/embedded/EmbeddedChannel.d.ts'
 import type { Ticker } from '../../../../io/netty/util/concurrent/Ticker.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EmbeddedChannel$Builder extends Object {
-    private constructor()
-    constructor(arg0: EmbeddedChannel$1)
+    constructor(arg0: ChannelInitializer<Channel>)
     // private channelId: ChannelId;
     // private config: ChannelConfig;
     // private handler: ChannelHandler;

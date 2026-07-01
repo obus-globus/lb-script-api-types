@@ -5,6 +5,8 @@ import type { TrajectoryInfoRenderer } from '../../../../../../net/ccbluex/liqui
 import type { TrajectoryType } from '../../../../../../net/ccbluex/liquidbounce/utils/render/trajectory/TrajectoryType.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
+import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class TrajectoryInfoRenderer$Companion extends Object {
-    getHypotheticalTrajectory(owner: Entity, trajectoryInfo: TrajectoryInfo, trajectoryType: TrajectoryType, rotation: Rotation, icon: ItemStack, partialTicks: number): TrajectoryInfoRenderer;
+    getHypotheticalTrajectory(simulationOwner: Entity, trajectoryInfo: TrajectoryInfo, trajectoryType: TrajectoryType, rotation: Rotation, icon: ItemStack, partialTicks: number): TrajectoryInfoRenderer;
+    // private projectileDirectionFromRotation(yawRadians: number, pitchRadians: number, pitchWithRollRadians: number): Vec3;
 }

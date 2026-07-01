@@ -6,7 +6,6 @@ export class ByteArrayBuilder extends OutputStream {
     static nullOutputStream(): OutputStream;
     constructor()
     constructor(arg0: BufferRecycler)
-    private constructor(arg0: BufferRecycler, arg1: number[], arg2: number)
     constructor(arg0: BufferRecycler, arg1: number)
     // private _bufferRecycler: BufferRecycler;
     // private _currBlock: number[];

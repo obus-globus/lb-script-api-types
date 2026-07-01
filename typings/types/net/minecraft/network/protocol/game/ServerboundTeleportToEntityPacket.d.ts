@@ -14,7 +14,6 @@ export class ServerboundTeleportToEntityPacket extends Object implements Packet<
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundTeleportToEntityPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(uuid: UUID)
-    private constructor(input: FriendlyByteBuf)
     // private uuid: UUID;
     getEntity(level: ServerLevel): Entity;
     handle(listener: ServerGamePacketListener): void;

@@ -5,7 +5,6 @@ import type { Writer } from '../../../../../../java/io/Writer.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 export class PrintWriterWrapper extends PrintWriter {
     static nullWriter(): Writer;
-    private constructor(outWrapper: OutputStreamWrapper, autoFlush: boolean, charset: Charset)
     constructor(out: OutputStream, autoFlush: boolean, charset: Charset)
     // private outWrapper: OutputStreamWrapper;
     getDelegate(): OutputStream;

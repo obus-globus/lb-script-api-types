@@ -7,7 +7,6 @@ export class Long2ByteFunctions$Singleton extends AbstractLong2ByteFunction impl
     // private key: number;
     // private value: number;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     get(arg0: Object): number;

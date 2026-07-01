@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ListIterator } from '../../../../java/util/ListIterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class LinkedListMultimap$NodeIterator extends Object implements ListIterator<Map$Entry<K, V>> {
-    constructor(null_: LinkedListMultimap<K, V>, index: number)
+    constructor(null_: LinkedListMultimap<Object, Object>, index: number)
     // private current: LinkedListMultimap$Node<K, V>;
     // private expectedModCount: number;
     // private next: LinkedListMultimap$Node<K, V>;

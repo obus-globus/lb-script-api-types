@@ -6,7 +6,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2DoubleLinkedOpenHashMap$FastEntryIterator extends Reference2DoubleLinkedOpenHashMap$MapIterator<Object> implements ObjectListIterator<Reference2DoubleMap$Entry<K>> {
     constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: K)
+    constructor(null_: { [key: string]: any }, arg1: Object)
     // private entry: Reference2DoubleLinkedOpenHashMap$MapEntry;
     acceptOnIndex<K extends unknown>(arg0: (param0: Reference2DoubleMap$Entry<K>) => void, arg1: number): void;
     add<K extends unknown>(arg0: Reference2DoubleMap$Entry<K>): void;

@@ -1,4 +1,3 @@
-import type { DiskLruCache$cleanupTask$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Closeable } from '../../../java/io/Closeable.d.ts'
 import type { Flushable } from '../../../java/io/Flushable.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
@@ -9,6 +8,7 @@ import type { DiskLruCache$Editor } from '../../../okhttp3/internal/cache/DiskLr
 import type { DiskLruCache$Entry } from '../../../okhttp3/internal/cache/DiskLruCache$Entry.d.ts'
 import type { DiskLruCache$Snapshot } from '../../../okhttp3/internal/cache/DiskLruCache$Snapshot.d.ts'
 import type { Lockable } from '../../../okhttp3/internal/concurrent/Lockable.d.ts'
+import type { Task } from '../../../okhttp3/internal/concurrent/Task.d.ts'
 import type { TaskQueue } from '../../../okhttp3/internal/concurrent/TaskQueue.d.ts'
 import type { TaskRunner } from '../../../okhttp3/internal/concurrent/TaskRunner.d.ts'
 import type { BufferedSink } from '../../../okio/BufferedSink.d.ts'
@@ -31,7 +31,7 @@ export class DiskLruCache extends Object implements Closeable, Flushable, Lockab
     // private appVersion: number;
     // private civilizedFileSystem: boolean;
     // private cleanupQueue: TaskQueue;
-    // private cleanupTask: DiskLruCache$cleanupTask$1;
+    // private cleanupTask: Task;
     closed: boolean;
     readonly directory: Path;
     // private fileSystem: FileSystem;

@@ -1,9 +1,8 @@
-import type { Escapers$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
+import type { CharEscaper } from '../../../../com/google/common/escape/CharEscaper.d.ts'
 import type { Escaper } from '../../../../com/google/common/escape/Escaper.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Escapers$Builder extends Object {
-    private constructor()
-    constructor(arg0: Escapers$1)
+    constructor(arg0: CharEscaper)
     // private replacementMap: { [key: string]: string };
     // private safeMax: string;
     // private safeMin: string;

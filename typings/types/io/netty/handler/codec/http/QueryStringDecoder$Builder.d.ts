@@ -1,11 +1,9 @@
-import type { QueryStringDecoder$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { QueryStringDecoder } from '../../../../../io/netty/handler/codec/http/QueryStringDecoder.d.ts'
 import type { URI } from '../../../../../java/net/URI.d.ts'
 import type { Charset } from '../../../../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class QueryStringDecoder$Builder extends Object {
-    private constructor()
-    constructor(arg0: QueryStringDecoder$1)
+    constructor(arg0: any)
     // private charset: Charset;
     // private hasPath: boolean;
     // private htmlQueryDecoding: boolean;

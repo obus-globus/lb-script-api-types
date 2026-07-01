@@ -1,4 +1,3 @@
-import type { ProtoBuf$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ProtoBuf$VersionRequirementTableOrBuilder } from '../../../../../../kotlin/reflect/jvm/internal/impl/metadata/ProtoBuf$VersionRequirementTableOrBuilder.d.ts'
@@ -21,11 +20,8 @@ export class ProtoBuf$VersionRequirementTable extends GeneratedMessageLite imple
     static newBuilder(paramarg0: ProtoBuf$VersionRequirementTable): ProtoBuf$VersionRequirementTable$Builder;
     static newRepeatedGeneratedExtension(paramarg0: MessageLite | null, paramarg1: MessageLite, paramarg2: Internal$EnumLiteMap<any>, paramarg3: number, paramarg4: WireFormat$FieldType, paramarg5: boolean, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
     static newSingularGeneratedExtension(paramarg0: MessageLite | null, paramarg1: Object | null, paramarg2: MessageLite, paramarg3: Internal$EnumLiteMap<any>, paramarg4: number, paramarg5: WireFormat$FieldType, paramarg6: Class<Object>): GeneratedMessageLite$GeneratedExtension<MessageLite, Object>;
-    private constructor(arg0: boolean)
-    private constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite)
-    constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite, arg2: ProtoBuf$1)
-    private constructor(arg0: GeneratedMessageLite$Builder<GeneratedMessageLite, GeneratedMessageLite$Builder<any, any>>)
-    constructor(arg0: GeneratedMessageLite$Builder<GeneratedMessageLite, GeneratedMessageLite$Builder<any, any>>, arg1: ProtoBuf$1)
+    constructor(arg0: CodedInputStream, arg1: ExtensionRegistryLite, arg2: any)
+    constructor(arg0: GeneratedMessageLite$Builder<GeneratedMessageLite, GeneratedMessageLite$Builder<any, any>>, arg1: any)
     // private memoizedIsInitialized: number;
     // private memoizedSerializedSize: number;
     // private requirement_: ProtoBuf$VersionRequirement[];

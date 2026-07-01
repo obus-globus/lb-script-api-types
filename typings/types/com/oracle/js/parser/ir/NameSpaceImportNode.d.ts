@@ -6,7 +6,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class NameSpaceImportNode extends Node {
-    private constructor(node: NameSpaceImportNode, bindingIdentifier: IdentNode)
     constructor(token: number, start: number, finish: number, bindingIdentifier: IdentNode)
     readonly bindingIdentifier: IdentNode;
     accept(visitor: NodeVisitor<LexicalContext>): Node;

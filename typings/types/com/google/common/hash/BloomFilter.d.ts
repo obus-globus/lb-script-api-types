@@ -1,4 +1,3 @@
-import type { BloomFilter$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { BloomFilter$Strategy } from '../../../../com/google/common/hash/BloomFilter$Strategy.d.ts'
 import type { BloomFilterStrategies$LockFreeBitArray } from '../../../../com/google/common/hash/BloomFilterStrategies$LockFreeBitArray.d.ts'
@@ -17,8 +16,7 @@ export class BloomFilter<T extends unknown> extends Object implements Predicate<
     static readFrom(paramin: InputStream, paramfunnel: Funnel<Object>): BloomFilter<Object>;
     static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): Collector<Object, Object, BloomFilter<Object>>;
     static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): Collector<Object, Object, BloomFilter<Object>>;
-    constructor(arg0: BloomFilterStrategies$LockFreeBitArray, arg1: number, arg2: Funnel<Object>, arg3: BloomFilter$Strategy, arg4: BloomFilter$1)
-    private constructor(bits: BloomFilterStrategies$LockFreeBitArray, numHashFunctions: number, funnel: Funnel<T>, strategy: BloomFilter$Strategy)
+    constructor(arg0: BloomFilterStrategies$LockFreeBitArray, arg1: number, arg2: Funnel<Object>, arg3: BloomFilter$Strategy, arg4: any)
     // private bits: BloomFilterStrategies$LockFreeBitArray;
     // private funnel: Funnel<T>;
     // private numHashFunctions: number;

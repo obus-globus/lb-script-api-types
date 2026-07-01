@@ -6,7 +6,6 @@ export class Byte2BooleanFunctions$EmptyFunction extends AbstractByte2BooleanFun
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): boolean;

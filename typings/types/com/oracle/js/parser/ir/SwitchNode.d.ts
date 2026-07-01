@@ -9,7 +9,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class SwitchNode extends BreakableStatement {
-    private constructor(switchNode: SwitchNode, expression: Expression, cases: CaseNode[], defaultCaseIndex: number)
     constructor(lineNumber: number, token: number, finish: number, expression: Expression, cases: CaseNode[], defaultCaseIndex: number)
     readonly cases: CaseNode[];
     // private defaultCaseIndex: number;

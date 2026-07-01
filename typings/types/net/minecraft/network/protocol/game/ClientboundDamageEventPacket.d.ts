@@ -19,7 +19,6 @@ export class ClientboundDamageEventPacket extends Record implements Packet<Clien
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundDamageEventPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(entityId: number, sourceType: Holder<DamageType>, sourceCauseId: number, sourceDirectId: number, sourcePosition: Optional<Vec3>)
-    private constructor(input: RegistryFriendlyByteBuf)
     constructor(entity: Entity, source: DamageSource)
     // private entityId: number;
     // private sourceCauseId: number;

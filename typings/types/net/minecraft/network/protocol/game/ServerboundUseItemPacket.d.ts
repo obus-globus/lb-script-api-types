@@ -11,7 +11,6 @@ import type { InteractionHand } from '../../../../../net/minecraft/world/Interac
 export class ServerboundUseItemPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundUseItemPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(hand: InteractionHand, sequence: number, yRot: number, xRot: number)
     readonly hand: InteractionHand;
     readonly sequence: number;

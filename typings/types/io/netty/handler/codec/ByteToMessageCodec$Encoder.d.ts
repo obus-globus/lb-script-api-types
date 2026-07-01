@@ -5,8 +5,8 @@ import type { MessageToByteEncoder } from '../../../../io/netty/handler/codec/Me
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ByteToMessageCodec$Encoder extends MessageToByteEncoder<I> {
-    constructor(null_: ByteToMessageCodec<I>, arg1: boolean)
-    constructor(null_: ByteToMessageCodec<I>, arg1: boolean, arg2: Class<I>)
+    constructor(null_: ByteToMessageCodec<Object>, arg1: boolean)
+    constructor(null_: ByteToMessageCodec<Object>, arg1: boolean, arg2: Class<Object>)
     acceptOutboundMessage(arg0: Object): boolean;
     encode<I extends unknown>(arg0: ChannelHandlerContext, arg1: I, arg2: ByteBuf): void;
 }

@@ -7,7 +7,6 @@ export class Reference2BooleanFunctions$Singleton<K extends unknown> extends Abs
     // private key: K;
     // private value: boolean;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     getBoolean(arg0: Object): boolean;
     getOrDefault(arg0: Object, arg1: boolean): boolean;

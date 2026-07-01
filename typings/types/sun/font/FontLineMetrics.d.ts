@@ -8,7 +8,6 @@ export class FontLineMetrics extends LineMetrics implements Cloneable {
     cm: CoreMetrics;
     frc: FontRenderContext;
     numchars: number;
-    protected clone(): Object;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     getAscent(): number;

@@ -28,7 +28,6 @@ export class TRegexDFAExecutorNode extends TRegexExecutorNode {
     static inputIncRaw(paramindex: number, paramoffset: number, paramforward: boolean): number;
     constructor(source: RegexSource, props: TRegexDFAExecutorProperties, numberOfCaptureGroups: number, maxNumberOfNFAStates: number, indexOfParameters: TruffleString$CodePointSet[], states: DFAAbstractNode[], debugRecorder: TRegexDFAExecutorDebugRecorder, innerLiteralPrefixMatcher: TRegexDFAExecutorNode, counterDataBuilder: CounterTrackerData$Builder, counterTrackers: CounterTracker[], numberOfNFAStates: number, regressionTestMode: boolean)
     constructor(source: RegexSource, props: TRegexDFAExecutorProperties, numberOfCaptureGroups: number, numberOfTransitions: number, maxNumberOfNFAStates: number, indexOfParameters: TruffleString$CodePointSet[], states: DFAAbstractNode[], cgResultOrder: number[], debugRecorder: TRegexDFAExecutorDebugRecorder, innerLiteralPrefixMatcher: TRegexDFAExecutorNode, counterDataBuilder: CounterTrackerData$Builder, counterTrackers: CounterTracker[], numberOfNFAStates: number, regressionTestMode: boolean)
-    private constructor(copy: TRegexDFAExecutorNode, innerLiteralPrefixMatcher: TRegexDFAExecutorNode)
     // private cgResultOrder: number[];
     // private counterDataBuilder: CounterTrackerData$Builder;
     readonly counterTrackers: CounterTracker[];

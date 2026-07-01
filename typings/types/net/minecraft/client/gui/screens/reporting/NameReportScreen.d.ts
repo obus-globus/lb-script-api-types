@@ -24,7 +24,6 @@ export class NameReportScreen extends AbstractReportScreen<NameReport$Builder> {
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(lastScreen: Screen, reportingContext: ReportingContext, playerId: UUID, reportedName: string)
     constructor(lastScreen: Screen, reportingContext: ReportingContext, draft: NameReport)
-    private constructor(lastScreen: Screen, reportingContext: ReportingContext, reportBuilder: NameReport$Builder)
     // private commentBox: MultiLineEditBox;
     addContent(): void;
     mouseReleased(event: MouseButtonEvent): boolean;

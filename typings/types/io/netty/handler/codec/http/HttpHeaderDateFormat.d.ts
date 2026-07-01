@@ -1,4 +1,4 @@
-import type { HttpHeaderDateFormat$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
+import type { FastThreadLocal } from '../../../../../io/netty/util/concurrent/FastThreadLocal.d.ts'
 import type { DateFormat } from '../../../../../java/text/DateFormat.d.ts'
 import type { ParsePosition } from '../../../../../java/text/ParsePosition.d.ts'
 import type { SimpleDateFormat } from '../../../../../java/text/SimpleDateFormat.d.ts'
@@ -41,8 +41,7 @@ export class HttpHeaderDateFormat extends SimpleDateFormat {
     static getTimeInstance(): DateFormat;
     static getTimeInstance(paramarg0: number): DateFormat;
     static getTimeInstance(paramarg0: number, paramarg1: Locale): DateFormat;
-    private constructor()
-    constructor(arg0: HttpHeaderDateFormat$1)
+    constructor(arg0: FastThreadLocal<HttpHeaderDateFormat>)
     // private format1: SimpleDateFormat;
     // private format2: SimpleDateFormat;
     parse(arg0: string): Date;

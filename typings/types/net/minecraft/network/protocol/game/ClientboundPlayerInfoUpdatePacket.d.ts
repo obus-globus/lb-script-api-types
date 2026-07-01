@@ -15,7 +15,6 @@ export class ClientboundPlayerInfoUpdatePacket extends Object implements Packet<
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     static createPlayerInitializing(paramplayers: ServerPlayer[]): ClientboundPlayerInfoUpdatePacket;
     constructor(actions: ClientboundPlayerInfoUpdatePacket$Action[], players: ServerPlayer[])
-    private constructor(input: RegistryFriendlyByteBuf)
     constructor(action: ClientboundPlayerInfoUpdatePacket$Action, player: ServerPlayer)
     // private actions: ClientboundPlayerInfoUpdatePacket$Action[];
     // private entries: ClientboundPlayerInfoUpdatePacket$Entry[];

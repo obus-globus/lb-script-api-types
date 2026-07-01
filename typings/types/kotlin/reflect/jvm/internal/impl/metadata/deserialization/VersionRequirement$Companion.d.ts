@@ -4,7 +4,6 @@ import type { NameResolver } from '../../../../../../../kotlin/reflect/jvm/inter
 import type { VersionRequirement } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/VersionRequirement.d.ts'
 import type { VersionRequirementTable } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/VersionRequirementTable.d.ts'
 export class VersionRequirement$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     create(arg0: number, arg1: NameResolver, arg2: VersionRequirementTable): VersionRequirement;
 }

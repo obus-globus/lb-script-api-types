@@ -1,4 +1,3 @@
-import type { MultimapBuilder$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Multimap } from '../../../../com/google/common/collect/Multimap.d.ts'
 import type { MultimapBuilder$MultimapBuilderWithKeys } from '../../../../com/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -13,8 +12,7 @@ export abstract class MultimapBuilder<K0 extends unknown, V0 extends unknown> ex
     static linkedHashKeys(paramexpectedKeys: number): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static treeKeys(paramcomparator: (param0: Object) => boolean): MultimapBuilder$MultimapBuilderWithKeys<Object>;
     static treeKeys(): MultimapBuilder$MultimapBuilderWithKeys<Comparable<Object>>;
-    private constructor()
-    constructor(arg0: MultimapBuilder$1)
+    constructor(arg0: MultimapBuilder$MultimapBuilderWithKeys<Object>)
     build<K extends K0, V extends V0>(): Multimap<K, V>;
     build<K extends K0, V extends V0>(multimap: Multimap<K, V>): Multimap<K, V>;
 }

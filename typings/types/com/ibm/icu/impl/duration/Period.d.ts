@@ -4,7 +4,6 @@ export class Period extends Object {
     static at(paramarg0: number, paramarg1: TimeUnit): Period;
     static lessThan(paramarg0: number, paramarg1: TimeUnit): Period;
     static moreThan(paramarg0: number, paramarg1: TimeUnit): Period;
-    private constructor(arg0: number, arg1: boolean, arg2: number, arg3: TimeUnit)
     constructor(arg0: number, arg1: boolean, arg2: number[])
     // private counts: number[];
     // private timeLimit: number;

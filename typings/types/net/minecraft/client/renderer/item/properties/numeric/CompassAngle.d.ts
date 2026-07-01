@@ -9,7 +9,6 @@ import type { ItemStack } from '../../../../../../../net/minecraft/world/item/It
 export class CompassAngle extends Object implements RangeSelectItemModelProperty {
     static MAP_CODEC: MapCodec<CompassAngle>;
     constructor(wobble: boolean, compassTarget: CompassAngleState$CompassTarget)
-    private constructor(state: CompassAngleState)
     // private state: CompassAngleState;
     get(itemStack: ItemStack, level: ClientLevel, owner: ItemOwner, seed: number): number;
     type(): MapCodec<CompassAngle>;

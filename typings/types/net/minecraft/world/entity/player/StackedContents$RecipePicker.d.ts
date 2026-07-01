@@ -4,7 +4,7 @@ import type { StackedContents } from '../../../../../net/minecraft/world/entity/
 import type { StackedContents$IngredientInfo } from '../../../../../net/minecraft/world/entity/player/StackedContents$IngredientInfo.d.ts'
 import type { StackedContents$Output } from '../../../../../net/minecraft/world/entity/player/StackedContents$Output.d.ts'
 export class StackedContents$RecipePicker extends Object {
-    constructor(null_: StackedContents<T>, ingredients: (param0: T) => boolean[])
+    constructor(null_: StackedContents<Object>, ingredients: (param0: Object) => boolean[])
     // private data: BitSet;
     // private ingredientCount: number;
     // private ingredients: (param0: T) => boolean[];

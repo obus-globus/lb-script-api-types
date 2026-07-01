@@ -1,4 +1,3 @@
-import type { QueueInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { Duration } from '../../../../../java/time/Duration.d.ts'
 import type { QueueInputStream$Builder } from '../../../../../org/apache/commons/io/input/QueueInputStream$Builder.d.ts'
@@ -8,8 +7,7 @@ export class QueueInputStream extends InputStream {
     static nullInputStream(): InputStream;
     constructor()
     constructor(arg0: number[])
-    private constructor(arg0: QueueInputStream$Builder)
-    constructor(arg0: QueueInputStream$Builder, arg1: QueueInputStream$1)
+    constructor(arg0: QueueInputStream$Builder, arg1: any)
     // private blockingQueue: number[];
     // private timeoutNanos: number;
     getBlockingQueue(): number[];

@@ -19,7 +19,6 @@ export class FrameNode extends AbstractInsnNode {
     static TABLESWITCH_INSN: number;
     static TYPE_INSN: number;
     static VAR_INSN: number;
-    private constructor()
     constructor(arg0: number, arg1: number, arg2: Object[], arg3: number, arg4: Object[])
     local: Object[];
     stack: Object[];

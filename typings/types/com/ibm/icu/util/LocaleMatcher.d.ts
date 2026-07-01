@@ -11,7 +11,6 @@ import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LocaleMatcher extends Object {
     static builder(): LocaleMatcher$Builder;
-    private constructor(arg0: LocaleMatcher$Builder)
     constructor(arg0: ULocale[])
     constructor(arg0: string)
     // private defaultLocale: Locale;

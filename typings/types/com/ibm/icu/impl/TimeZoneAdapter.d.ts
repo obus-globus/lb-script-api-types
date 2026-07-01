@@ -20,7 +20,6 @@ export class TimeZoneAdapter extends TimeZone_2 implements Cloneable {
     constructor(arg0: TimeZone)
     // private zone: TimeZone;
     clone(): TimeZoneAdapter;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getOffset(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): number;
     getOffset(arg0: number): number;

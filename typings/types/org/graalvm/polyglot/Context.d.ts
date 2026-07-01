@@ -11,9 +11,7 @@ export class Context extends Object implements AutoCloseable {
     static create(parampermittedLanguages: (Object | null)[]): Context;
     static getCurrent(): Context;
     static newBuilder(parampermittedLanguages: (Object | null)[]): Context$Builder;
-    private constructor()
-    private constructor(creatorAPI: Context)
-    constructor(dispatch: AbstractPolyglotImpl$AbstractContextDispatch, receiver: T, parentContext: Context, engine: Engine)
+    constructor(dispatch: AbstractPolyglotImpl$AbstractContextDispatch, receiver: Object, parentContext: Context, engine: Engine)
     // private creatorContext: Context;
     // private currentAPI: Context;
     // private dispatch: AbstractPolyglotImpl$AbstractContextDispatch;

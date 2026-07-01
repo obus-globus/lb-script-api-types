@@ -13,7 +13,6 @@ export class ClientboundUpdateTagsPacket extends Object implements Packet<Client
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundUpdateTagsPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(tags: Map<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>)
-    private constructor(input: FriendlyByteBuf)
     readonly tags: Map<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>;
     getTags(): Map<ResourceKey<(Object | null)[]>, TagNetworkSerialization$NetworkPayload>;
     handle(listener: ClientCommonPacketListener): void;

@@ -18,7 +18,6 @@ export class ClientboundSetObjectivePacket extends Object implements Packet<Clie
     static METHOD_REMOVE: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetObjectivePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: RegistryFriendlyByteBuf)
     constructor(objective: Objective, method: number)
     readonly displayName: Component;
     readonly method: number;

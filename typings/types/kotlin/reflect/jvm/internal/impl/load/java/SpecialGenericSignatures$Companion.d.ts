@@ -5,7 +5,6 @@ import type { SpecialGenericSignatures$SpecialSignatureInfo } from '../../../../
 import type { SpecialGenericSignatures$TypeSafeBarrierDescription } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/java/SpecialGenericSignatures$TypeSafeBarrierDescription.d.ts'
 import type { Name } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/Name.d.ts'
 export class SpecialGenericSignatures$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     getBuiltinFunctionNamesByJvmName(arg0: Name): Name;
     getERASED_COLLECTION_PARAMETER_SIGNATURES(): string[];

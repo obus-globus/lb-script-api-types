@@ -14,7 +14,6 @@ export class BlendedNoise extends Object implements DensityFunction$SimpleFuncti
     static CODEC: KeyDispatchDataCodec<BlendedNoise>;
     static createUnseeded(paramxzScale: number, paramyScale: number, paramxzFactor: number, paramyFactor: number, paramsmearScaleMultiplier: number): BlendedNoise;
     constructor(random: RandomSource, xzScale: number, yScale: number, xzFactor: number, yFactor: number, smearScaleMultiplier: number)
-    private constructor(minLimitNoise: PerlinNoise, maxLimitNoise: PerlinNoise, mainNoise: PerlinNoise, xzScale: number, yScale: number, xzFactor: number, yFactor: number, smearScaleMultiplier: number)
     // private mainNoise: PerlinNoise;
     // private maxLimitNoise: PerlinNoise;
     // private maxValue: number;

@@ -8,7 +8,6 @@ export class Explanation extends Object implements Comparable<Explanation> {
     constructor(arg0: Explanation$ErrorKind, arg1: ModCandidateImpl)
     constructor(arg0: Explanation$ErrorKind, arg1: ModCandidateImpl, arg2: string)
     constructor(arg0: Explanation$ErrorKind, arg1: ModCandidateImpl, arg2: ModDependency)
-    private constructor(arg0: Explanation$ErrorKind, arg1: ModCandidateImpl, arg2: ModDependency, arg3: string)
     // private cmpId: number;
     // private data: string;
     // private dep: ModDependency;

@@ -6,7 +6,6 @@ export class MimeTypeParameterList extends Object implements Cloneable {
     constructor(arg0: string)
     // private parameters: { [key: string]: string };
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     get(arg0: string): string;
     getNames(): Enumeration<string>;

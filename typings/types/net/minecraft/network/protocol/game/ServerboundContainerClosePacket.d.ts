@@ -11,7 +11,6 @@ export class ServerboundContainerClosePacket extends Object implements Packet<Se
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundContainerClosePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(containerId: number)
-    private constructor(input: FriendlyByteBuf)
     readonly containerId: number;
     getContainerId(): number;
     handle(listener: ServerGamePacketListener): void;

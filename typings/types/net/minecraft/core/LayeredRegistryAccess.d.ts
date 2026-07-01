@@ -2,7 +2,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { RegistryAccess$Frozen } from '../../../net/minecraft/core/RegistryAccess$Frozen.d.ts'
 export class LayeredRegistryAccess<T extends unknown> extends Object {
     constructor(keys: T[])
-    private constructor(keys: T[], values: RegistryAccess$Frozen[])
     // private composite: RegistryAccess$Frozen;
     // private keys: T[];
     // private values: RegistryAccess$Frozen[];

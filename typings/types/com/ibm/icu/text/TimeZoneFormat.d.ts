@@ -44,7 +44,6 @@ export class TimeZoneFormat extends UFormat implements Freezable<TimeZoneFormat>
     // private appendOffsetDigits(arg0: StringBuilder, arg1: number, arg2: number): void;
     // private checkAbuttingHoursAndMinutes(): void;
     clone(): TimeZoneFormat;
-    protected clone(): Object;
     cloneAsThawed(): TimeZoneFormat;
     format(arg0: TimeZoneFormat$Style, arg1: TimeZone, arg2: number): string;
     format(arg0: TimeZoneFormat$Style, arg1: TimeZone, arg2: number, arg3: Output<TimeZoneFormat$TimeType>): string;

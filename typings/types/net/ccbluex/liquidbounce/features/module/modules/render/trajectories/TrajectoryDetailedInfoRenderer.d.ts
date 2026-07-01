@@ -1,7 +1,7 @@
 import type { ToggleableValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.d.ts'
 import type { EventHook } from '../../../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { OverlayRenderEvent } from '../../../../../../../../net/ccbluex/liquidbounce/event/events/OverlayRenderEvent.d.ts'
-import type { TrajectoryDetailedInfoRenderer$DurationUnit } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer$DurationUnit.d.ts'
+import type { TimeUnit } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/TimeUnit.d.ts'
 import type { TrajectoryDetailedInfoRenderer$ShowAt } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer$ShowAt.d.ts'
 import type { FontRenderer } from '../../../../../../../../net/ccbluex/liquidbounce/render/engine/font/FontRenderer.d.ts'
 import type { Color4b } from '../../../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
@@ -12,8 +12,6 @@ export class TrajectoryDetailedInfoRenderer extends ToggleableValueGroup {
     // private /*not mapped: */ getColor(): Color4b;
     // private distance: boolean;
     // private /*not mapped: */ getDistance(): boolean;
-    // private durationUnit: TrajectoryDetailedInfoRenderer$DurationUnit;
-    // private /*not mapped: */ getDurationUnit(): TrajectoryDetailedInfoRenderer$DurationUnit;
     // private /*not mapped: */ getFontRenderer(): FontRenderer;
     // private item: boolean;
     // private /*not mapped: */ getItem(): boolean;
@@ -26,4 +24,6 @@ export class TrajectoryDetailedInfoRenderer extends ToggleableValueGroup {
     // private /*not mapped: */ getScale(): number;
     // private showAt: TrajectoryDetailedInfoRenderer$ShowAt;
     // private /*not mapped: */ getShowAt(): TrajectoryDetailedInfoRenderer$ShowAt;
+    // private timeUnit: TimeUnit;
+    // private /*not mapped: */ getTimeUnit(): TimeUnit;
 }

@@ -47,7 +47,6 @@ export abstract class TimeZone extends Object implements Serializable, Cloneable
     constructor(ID: string)
     readonly ID: string;
     // private _getDisplayName(style: number, daylight: boolean, locale: ULocale): string;
-    protected clone(): Object;
     clone(): Object;
     cloneAsThawed(): TimeZone;
     equals(obj: Object | null): boolean;

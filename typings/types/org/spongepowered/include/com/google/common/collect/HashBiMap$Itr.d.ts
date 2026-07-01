@@ -3,7 +3,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
 import type { HashBiMap$BiEntry } from '../../../../../../../org/spongepowered/include/com/google/common/collect/HashBiMap$BiEntry.d.ts'
 export abstract class HashBiMap$Itr<T extends unknown> extends Object implements Iterator<T> {
-    constructor(null_: Map<K, V>)
+    constructor(null_: Map<Object, Object>)
     // private expectedModCount: number;
     // private next: HashBiMap$BiEntry<K, V>;
     // private toRemove: HashBiMap$BiEntry<K, V>;

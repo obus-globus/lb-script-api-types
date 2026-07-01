@@ -1,4 +1,3 @@
-import type { FabricLoaderImpl$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { File } from '../../../../java/io/File.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { StringBuilder } from '../../../../java/lang/StringBuilder.d.ts'
@@ -26,8 +25,7 @@ export class FabricLoaderImpl extends FabricLoader {
     static MOD_ID: string;
     static REMAPPED_JARS_DIR_NAME: string;
     static VERSION: string;
-    private constructor()
-    constructor(arg0: FabricLoaderImpl$1)
+    constructor(arg0: any)
     // private adapterMap: { [key: string]: LanguageAdapter };
     readonly classTweaker: ClassTweaker;
     readonly configDir: Path[];

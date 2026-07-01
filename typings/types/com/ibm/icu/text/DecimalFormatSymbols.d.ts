@@ -22,9 +22,7 @@ export class DecimalFormatSymbols extends Object implements Serializable, Clonea
     static getInstance(paramarg0: Locale): DecimalFormatSymbols;
     constructor()
     constructor(arg0: ULocale)
-    private constructor(arg0: ULocale, arg1: NumberingSystem)
     constructor(arg0: Locale)
-    private constructor(arg0: Locale, arg1: NumberingSystem)
     // private NaN: string;
     // private actualLocale: ULocale;
     // private approximatelyString: string;
@@ -67,7 +65,6 @@ export class DecimalFormatSymbols extends Object implements Serializable, Clonea
     // private validLocale: ULocale;
     readonly zeroDigit: string;
     clone(): DecimalFormatSymbols;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getApproximatelySignString(): string;
     getCodePointZero(): number;

@@ -1,4 +1,3 @@
-import type { JdbcAppender$1 } from '../../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Serializable } from '../../../../../../../../java/io/Serializable.d.ts'
 import type { TimeUnit } from '../../../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
@@ -17,8 +16,7 @@ export class JdbcAppender extends AbstractDatabaseAppender<JdbcDatabaseManager> 
     static createAppender(paramname: string, paramignore: string, paramfilter: Filter, paramconnectionSource: ConnectionSource, parambufferSize: string, paramtableName: string, paramcolumnConfigs: (Object | null)[]): JdbcAppender;
     static newBuilder(): Object | null;
     static parseInt(params: string, paramdefaultValue: number): number;
-    constructor(arg0: string, arg1: Filter, arg2: Layout<Serializable>, arg3: boolean, arg4: Property[], arg5: JdbcDatabaseManager, arg6: JdbcAppender$1)
-    private constructor(name: string, filter: Filter, layout: Layout<Serializable>, ignoreExceptions: boolean, properties: Property[], manager: JdbcDatabaseManager)
+    constructor(arg0: string, arg1: Filter, arg2: Layout<Serializable>, arg3: boolean, arg4: Property[], arg5: JdbcDatabaseManager, arg6: any)
     // private description: string;
     toString(): string;
 }

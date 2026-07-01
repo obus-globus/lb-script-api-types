@@ -4,7 +4,6 @@ export class BufferedOutputStream extends FilterOutputStream {
     static nullOutputStream(): OutputStream;
     constructor(arg0: OutputStream)
     constructor(arg0: OutputStream, arg1: number)
-    private constructor(arg0: OutputStream, arg1: number, arg2: number)
     // private buf: number[];
     // private count: number;
     // private maxBufSize: number;

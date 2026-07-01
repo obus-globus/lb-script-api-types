@@ -14,7 +14,6 @@ export class TypeIntersectionScope extends AbstractScopeAdapter {
     static Companion: MemberScope$Companion;
     static Companion: TypeIntersectionScope$Companion;
     static create(paramarg0: string, paramarg1: KotlinType[]): MemberScope;
-    private constructor(arg0: string, arg1: MemberScope)
     constructor(arg0: string, arg1: MemberScope, arg2: DefaultConstructorMarker)
     // private debugName: string;
     // private workerScope: MemberScope;

@@ -1,4 +1,3 @@
-import type { StandardTable$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { StandardTable } from '../../../../com/google/common/collect/StandardTable.d.ts'
 import type { Table$Cell } from '../../../../com/google/common/collect/Table$Cell.d.ts'
 import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
@@ -6,8 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class StandardTable$CellIterator extends Object implements Iterator<Table$Cell<R, C, V>> {
-    private constructor(null_: StandardTable<R, C, V>)
-    constructor(null_: StandardTable<R, C, V>, arg1: StandardTable$1)
+    constructor(null_: StandardTable<Object, Object, Object>, arg1: any)
     // private columnIterator: Iterator<Map$Entry<C, V>>;
     // private rowEntry: Map$Entry<R, Map<C, V>>;
     // private rowIterator: Iterator<Map$Entry<R, Map<C, V>>>;

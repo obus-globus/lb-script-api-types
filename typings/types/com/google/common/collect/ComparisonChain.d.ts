@@ -1,11 +1,9 @@
-import type { ComparisonChain$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export abstract class ComparisonChain extends Object {
     static start(): ComparisonChain;
-    private constructor()
-    constructor(arg0: ComparisonChain$1)
+    constructor(arg0: ComparisonChain)
     compare<T extends unknown>(left: T, right: T, comparator: (param0: Object) => boolean): ComparisonChain;
     compare(left: boolean, right: boolean): ComparisonChain;
     compare(left: Comparable<Object>, right: Comparable<Object>): ComparisonChain;

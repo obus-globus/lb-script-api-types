@@ -5,7 +5,6 @@ import type { Reference2ShortOpenCustomHashMap$MapIterator } from '../../../../.
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2ShortOpenCustomHashMap$EntryIterator extends Reference2ShortOpenCustomHashMap$MapIterator<Object> implements ObjectIterator<Reference2ShortMap$Entry<K>> {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private entry: Reference2ShortOpenCustomHashMap$MapEntry;
     acceptOnIndex<K extends unknown>(arg0: (param0: Reference2ShortMap$Entry<K>) => void, arg1: number): void;

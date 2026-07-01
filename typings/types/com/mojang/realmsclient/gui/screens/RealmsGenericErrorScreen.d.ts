@@ -1,5 +1,4 @@
 import type { RealmsServiceException } from '../../../../../com/mojang/realmsclient/exception/RealmsServiceException.d.ts'
-import type { RealmsGenericErrorScreen$ErrorMessage } from '../../../../../com/mojang/realmsclient/gui/screens/RealmsGenericErrorScreen$ErrorMessage.d.ts'
 import type { Minecraft } from '../../../../../net/minecraft/client/Minecraft.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { MultiLineLabel } from '../../../../../net/minecraft/client/gui/components/MultiLineLabel.d.ts'
@@ -20,7 +19,6 @@ export class RealmsGenericErrorScreen extends RealmsScreen {
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(realmsServiceException: RealmsServiceException, nextScreen: Screen)
-    private constructor(message: RealmsGenericErrorScreen$ErrorMessage, nextScreen: Screen)
     constructor(message: Component, nextScreen: Screen)
     constructor(title: Component, message: Component, nextScreen: Screen)
     // private detail: Component;

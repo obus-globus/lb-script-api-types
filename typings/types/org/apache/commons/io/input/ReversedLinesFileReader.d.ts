@@ -1,4 +1,3 @@
-import type { ReversedLinesFileReader$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Closeable } from '../../../../../java/io/Closeable.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { SeekableByteChannel } from '../../../../../java/nio/channels/SeekableByteChannel.d.ts'
@@ -20,8 +19,7 @@ export class ReversedLinesFileReader extends Object implements Closeable, IOIter
     constructor(arg0: Path[], arg1: Charset)
     constructor(arg0: Path[], arg1: number, arg2: Charset)
     constructor(arg0: Path[], arg1: number, arg2: string)
-    private constructor(arg0: ReversedLinesFileReader$Builder)
-    constructor(arg0: ReversedLinesFileReader$Builder, arg1: ReversedLinesFileReader$1)
+    constructor(arg0: ReversedLinesFileReader$Builder, arg1: IOIterator<string>)
     // private avoidNewlineSplitBufferSize: number;
     // private blockSize: number;
     // private byteDecrement: number;

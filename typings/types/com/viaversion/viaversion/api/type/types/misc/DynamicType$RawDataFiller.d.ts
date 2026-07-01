@@ -4,6 +4,6 @@ import type { IdHolder } from '../../../../../../../com/viaversion/viaversion/ut
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class DynamicType$RawDataFiller extends Object {
-    constructor(null_: DynamicType<T>)
+    constructor(null_: DynamicType<IdHolder>)
     reader<T extends IdHolder>(arg0: number, arg1: (param0: ByteBuf, param1: T) => void): DynamicType$RawDataFiller;
 }

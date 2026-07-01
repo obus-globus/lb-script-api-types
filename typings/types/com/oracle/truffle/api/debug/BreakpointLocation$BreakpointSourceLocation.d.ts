@@ -9,7 +9,6 @@ import type { SourceSection } from '../../../../../com/oracle/truffle/api/source
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BreakpointLocation$BreakpointSourceLocation extends BreakpointLocation {
-    private constructor()
     constructor(key: Object, sourceElements: SourceElement[], sourceSection: SourceSection)
     constructor(key: Object, sourceElements: SourceElement[], line: number, column: number)
     // private column: number;

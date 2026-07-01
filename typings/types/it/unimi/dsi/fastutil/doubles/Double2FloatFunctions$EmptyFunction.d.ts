@@ -6,7 +6,6 @@ export class Double2FloatFunctions$EmptyFunction extends AbstractDouble2FloatFun
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): number;

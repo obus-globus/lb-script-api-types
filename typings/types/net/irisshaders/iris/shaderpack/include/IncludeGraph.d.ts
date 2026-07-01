@@ -6,7 +6,6 @@ import type { AbsolutePackPath } from '../../../../../net/irisshaders/iris/shade
 import type { FileNode } from '../../../../../net/irisshaders/iris/shaderpack/include/FileNode.d.ts'
 import type { LineTransform } from '../../../../../net/irisshaders/iris/shaderpack/transform/line/LineTransform.d.ts'
 export class IncludeGraph extends Object {
-    private constructor(arg0: Map<AbsolutePackPath, FileNode>, arg1: Map<AbsolutePackPath, RusticError>)
     constructor(arg0: Path[], arg1: AbsolutePackPath[], arg2: boolean)
     readonly failures: Map<AbsolutePackPath, RusticError>;
     readonly nodes: Map<AbsolutePackPath, FileNode>;

@@ -22,7 +22,6 @@ export class Logger extends Object {
     static getGlobal(): Logger;
     static getLogger(paramarg0: string): Logger;
     static getLogger(paramarg0: string, paramarg1: string): Logger;
-    private constructor(arg0: string)
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: Module, arg3: LogManager, arg4: boolean)
     // private anonymous: boolean;

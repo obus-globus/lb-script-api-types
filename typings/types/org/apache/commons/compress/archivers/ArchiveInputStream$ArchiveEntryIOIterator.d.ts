@@ -7,7 +7,7 @@ import type { IOIterator } from '../../../../../org/apache/commons/io/function/I
 export class ArchiveInputStream$ArchiveEntryIOIterator extends Object implements IOIterator<E> {
     static adapt(paramarg0: (Object | null)[]): IOIterator<Object>;
     static adapt(paramarg0: Iterator<Object>): IOIterator<Object>;
-    constructor(null_: ArchiveInputStream<E>)
+    constructor(null_: ArchiveInputStream<ArchiveEntry>)
     // private next: E;
     asIterator<E extends ArchiveEntry>(): Iterator<E>;
     forEachRemaining<E extends ArchiveEntry>(arg0: (param0: E) => void): void;

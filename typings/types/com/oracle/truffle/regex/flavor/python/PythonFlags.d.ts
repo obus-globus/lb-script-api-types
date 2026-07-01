@@ -11,7 +11,6 @@ export class PythonFlags extends AbstractConstantKeysObject {
     static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
     static isTypeFlagChar(paramcandidateChar: number): boolean;
     static isValidFlagChar(paramcandidateChar: number): boolean;
-    private constructor(value: number)
     constructor(source: string)
     // private value: number;
     addFlag(flagChar: number): PythonFlags;

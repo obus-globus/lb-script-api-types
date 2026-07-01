@@ -172,7 +172,6 @@ export class SimpleDateFormat extends DateFormat {
     constructor(pattern: string, loc: Locale)
     constructor(pattern: string, override: string, loc: ULocale)
     constructor(pattern: string, formatData: DateFormatSymbols)
-    private constructor(pattern: string, formatData: DateFormatSymbols, calendar: Calendar, numberFormat: NumberFormat, locale: ULocale, useFastFormat: boolean, override: string)
     constructor(pattern: string, formatData: DateFormatSymbols, calendar: Calendar, locale: ULocale, useFastFormat: boolean, override: string)
     constructor(pattern: string, formatData: DateFormatSymbols, loc: ULocale)
     constructor(pattern: string, loc: ULocale)

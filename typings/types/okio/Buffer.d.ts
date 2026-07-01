@@ -20,7 +20,6 @@ export class Buffer extends Object implements ByteChannel, Cloneable, BufferedSi
     size(): number;
     buffer(): Buffer;
     clear(): void;
-    protected clone(): Object;
     clone(): Buffer;
     close(): void;
     completeSegmentByteCount(): number;

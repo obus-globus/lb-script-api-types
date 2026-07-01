@@ -6,7 +6,6 @@ export class SharedObject extends Object implements Cloneable {
     readonly refCount: AtomicInteger;
     addRef(): void;
     clone(): SharedObject;
-    protected clone(): Object;
     deleteIfZeroRefCount(): void;
     getRefCount(): number;
     removeRef(): void;

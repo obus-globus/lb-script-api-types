@@ -16,7 +16,6 @@ export class AnnotationUseSiteTarget extends Enum<AnnotationUseSiteTarget> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnnotationUseSiteTarget;
     static values(): (Object | null)[];
-    private constructor(arg2: string)
     constructor(arg2: string, arg3: number, arg4: DefaultConstructorMarker)
     readonly renderName: string;
     getRenderName(): string;

@@ -4,7 +4,7 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ShortLinkedOpenCustomHashMap$KeyIterator extends Object2ShortLinkedOpenCustomHashMap$MapIterator<Object> implements ObjectListIterator<K> {
     constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: K)
+    constructor(null_: { [key: string]: any }, arg1: Object)
     acceptOnIndex<K extends unknown>(arg0: (param0: K) => void, arg1: number): void;
     add<K extends unknown>(arg0: K): void;
     next<K extends unknown>(): K;

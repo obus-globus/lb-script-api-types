@@ -8,7 +8,6 @@ import type { TypeAttribute } from '../../../../../../kotlin/reflect/jvm/interna
 import type { DefinitelyNotNullTypeMarker } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/model/DefinitelyNotNullTypeMarker.d.ts'
 export class DefinitelyNotNullType extends DelegatingSimpleType implements CustomTypeParameter, DefinitelyNotNullTypeMarker {
     static Companion: DefinitelyNotNullType$Companion;
-    private constructor(arg0: SimpleType, arg1: boolean)
     constructor(arg0: SimpleType, arg1: boolean, arg2: DefaultConstructorMarker)
     readonly original: SimpleType;
     // private useCorrectedNullabilityForTypeParameters: boolean;

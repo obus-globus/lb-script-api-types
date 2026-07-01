@@ -10,7 +10,6 @@ export class Float2LongAVLTreeMap$Entry extends AbstractFloat2LongMap$BasicEntry
     balance(): number;
     balance(arg0: number): void;
     clone(): Float2LongAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

@@ -5,7 +5,6 @@ import type { AFSocket } from '../../../../org/newsclub/net/unix/AFSocket.d.ts'
 import type { AFSocketAddress } from '../../../../org/newsclub/net/unix/AFSocketAddress.d.ts'
 import type { AFSocketCapability } from '../../../../org/newsclub/net/unix/AFSocketCapability.d.ts'
 import type { AFSocketFactory } from '../../../../org/newsclub/net/unix/AFSocketFactory.d.ts'
-import type { AFSocketImpl } from '../../../../org/newsclub/net/unix/AFSocketImpl.d.ts'
 import type { AFUNIXSocketAddress } from '../../../../org/newsclub/net/unix/AFUNIXSocketAddress.d.ts'
 import type { AFUNIXSocketCapability } from '../../../../org/newsclub/net/unix/AFUNIXSocketCapability.d.ts'
 import type { AFUNIXSocketChannel } from '../../../../org/newsclub/net/unix/AFUNIXSocketChannel.d.ts'
@@ -27,7 +26,6 @@ export class AFUNIXSocket extends AFSocket<AFUNIXSocketAddress> implements AFUNI
     static supports(paramarg0: AFSocketCapability): boolean;
     static supports(paramarg0: AFUNIXSocketCapability): boolean;
     constructor(arg0: FileDescriptor, arg1: AFSocketFactory<AFUNIXSocketAddress>)
-    private constructor(arg0: AFSocketImpl<AFUNIXSocketAddress>, arg1: AFSocketFactory<AFUNIXSocketAddress>)
     clearReceivedFileDescriptors(): void;
     getChannel(): AFUNIXSocketChannel;
     getPeerCredentials(): AFUNIXSocketCredentials;

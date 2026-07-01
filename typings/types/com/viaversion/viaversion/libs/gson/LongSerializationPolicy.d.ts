@@ -1,4 +1,3 @@
-import type { LongSerializationPolicy$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { JsonElement } from '../../../../../com/viaversion/viaversion/libs/gson/JsonElement.d.ts'
 import type { TypeAdapter } from '../../../../../com/viaversion/viaversion/libs/gson/TypeAdapter.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
@@ -11,8 +10,7 @@ export class LongSerializationPolicy extends Enum<LongSerializationPolicy> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): LongSerializationPolicy;
     static values(): (Object | null)[];
-    private constructor()
-    constructor(arg2: LongSerializationPolicy$1)
+    constructor(arg2: LongSerializationPolicy)
     serialize(arg0: number): JsonElement;
     typeAdapter(): TypeAdapter<Number>;
     name(): "DEFAULT" | "STRING";

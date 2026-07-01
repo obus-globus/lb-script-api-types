@@ -6,7 +6,6 @@ import type { FeatureSetBuilder$NameFeatureBuilder } from '../../../../../../../
 export class FeatureSetBuilder$LocalSupportBuilder extends Object {
     constructor()
     constructor(arg0: boolean)
-    private constructor(arg0: FeatureSet$FeaturePresence, arg1: FeatureSet$FeaturePresence, arg2: FeatureSet$FeaturePresence, arg3: FeatureSet$FeaturePresence, arg4: FeatureSet$FeaturePresence, arg5: FeatureSetBuilder$NameFeatureBuilder, arg6: FeatureSetBuilder$DescFeatureBuilder)
     constructor(arg0: FeatureSet$LocalSupport)
     // private descriptors: FeatureSetBuilder$DescFeatureBuilder;
     // private endOpIndices: FeatureSet$FeaturePresence;

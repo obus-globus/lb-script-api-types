@@ -59,7 +59,6 @@ export class VTimeZone extends BasicTimeZone implements Cloneable {
     // private tzurl: string;
     // private vtzlines: string[];
     clone(): VTimeZone;
-    protected clone(): Object;
     cloneAsThawed(): VTimeZone;
     freeze(): TimeZone;
     getLastModified(): Date;

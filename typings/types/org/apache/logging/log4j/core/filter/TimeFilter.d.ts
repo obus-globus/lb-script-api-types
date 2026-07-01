@@ -17,7 +17,6 @@ export class TimeFilter extends AbstractFilter {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
     static createFilter(paramstart: string, paramend: string, paramtz: string, parammatch: Filter$Result, parammismatch: Filter$Result): TimeFilter;
-    private constructor(start: LocalTime, end: LocalTime, timeZone: ZoneId, onMatch: Filter$Result, onMismatch: Filter$Result)
     constructor(start: LocalTime, end: LocalTime, timeZone: ZoneId, onMatch: Filter$Result, onMismatch: Filter$Result, now: LocalDate)
     // private duration: number;
     // private end: number;

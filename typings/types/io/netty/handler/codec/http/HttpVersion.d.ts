@@ -8,7 +8,6 @@ export class HttpVersion extends Object implements Comparable<HttpVersion> {
     constructor(arg0: string, arg1: boolean)
     constructor(arg0: string, arg1: boolean, arg2: boolean)
     constructor(arg0: string, arg1: number, arg2: number, arg3: boolean)
-    private constructor(arg0: string, arg1: number, arg2: number, arg3: boolean, arg4: boolean)
     // private bytes: number[];
     readonly keepAliveDefault: boolean;
     // private majorVersion: number;

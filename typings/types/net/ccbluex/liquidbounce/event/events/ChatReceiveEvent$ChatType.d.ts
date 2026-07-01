@@ -3,6 +3,9 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { Tagged$Companion } from '../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
+/**
+ * Received-chat message type: CHAT_MESSAGE, DISGUISED_CHAT_MESSAGE or GAME_MESSAGE.
+ */
 export class ChatReceiveEvent$ChatType extends Enum<ChatReceiveEvent$ChatType> implements Tagged {
     static CHAT_MESSAGE: ChatReceiveEvent$ChatType;
     static Companion: Tagged$Companion;

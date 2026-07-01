@@ -7,7 +7,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BlockStatement extends Statement {
-    private constructor(blockStatement: BlockStatement, block: Block)
     constructor(lineNumber: number, block: Block)
     readonly block: Block;
     accept(visitor: NodeVisitor<LexicalContext>): Node;

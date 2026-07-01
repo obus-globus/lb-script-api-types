@@ -8,7 +8,6 @@ import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class HostMethodDesc$SingleMethod extends HostMethodDesc {
     constructor(executable: Executable, parametersScoped: boolean, onlyVisibleFromJniName: boolean)
-    private constructor(varArgs: boolean, parameterTypes: Class<Object>[], genericParameterTypes: Type[], scopedStaticParameters: number[], scopedStaticParameterCount: number)
     readonly genericParameterTypes: Type[];
     readonly onlyVisibleFromJniName: boolean;
     readonly parameterTypes: Class<Object>[];

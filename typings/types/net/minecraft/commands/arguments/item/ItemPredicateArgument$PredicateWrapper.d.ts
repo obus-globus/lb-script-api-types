@@ -10,7 +10,6 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ItemPredicateArgument$PredicateWrapper extends Record {
     constructor(holder: Holder$Reference<DataComponentPredicate$Type<any>>)
-    private constructor(id: Identifier, type: Decoder<(param0: ItemStack) => boolean>)
     // private id: Identifier;
     // private type: Decoder<(param0: ItemStack) => boolean>;
     decode(reader: ImmutableStringReader, value: Dynamic<Object>): (param0: ItemStack) => boolean;

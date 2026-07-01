@@ -12,7 +12,6 @@ export class ClientboundPlayerCombatEndPacket extends Object implements Packet<C
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundPlayerCombatEndPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(duration: number)
-    private constructor(input: FriendlyByteBuf)
     constructor(tracker: CombatTracker)
     // private duration: number;
     handle(listener: ClientGamePacketListener): void;

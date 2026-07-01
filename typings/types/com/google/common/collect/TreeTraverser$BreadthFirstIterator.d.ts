@@ -3,7 +3,7 @@ import type { TreeTraverser } from '../../../../com/google/common/collect/TreeTr
 import type { UnmodifiableIterator } from '../../../../com/google/common/collect/UnmodifiableIterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TreeTraverser$BreadthFirstIterator extends UnmodifiableIterator<T> implements PeekingIterator<T> {
-    constructor(null_: TreeTraverser<T>, root: T)
+    constructor(null_: TreeTraverser<Object>, root: Object)
     // private queue: T[];
     hasNext(): boolean;
     next<T extends unknown>(): T;

@@ -252,7 +252,6 @@ export class KeyEvent extends InputEvent {
     constructor(arg0: Component, arg1: number, arg2: number, arg3: number, arg4: number)
     constructor(arg0: Component, arg1: number, arg2: number, arg3: number, arg4: number, arg5: string)
     constructor(arg0: Component, arg1: number, arg2: number, arg3: number, arg4: number, arg5: string, arg6: number)
-    private constructor(arg0: Component, arg1: number, arg2: number, arg3: number, arg4: number, arg5: string, arg6: number, arg7: boolean)
     readonly extendedKeyCode: number;
     // private isProxyActive: boolean;
     keyChar: string;

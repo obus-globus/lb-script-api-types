@@ -1,4 +1,3 @@
-import type { BasicThreadFactory$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Thread } from '../../../../../java/lang/Thread.d.ts'
 import type { Thread$UncaughtExceptionHandler } from '../../../../../java/lang/Thread$UncaughtExceptionHandler.d.ts'
@@ -9,8 +8,7 @@ import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { BasicThreadFactory$Builder } from '../../../../../org/apache/commons/lang3/concurrent/BasicThreadFactory$Builder.d.ts'
 export class BasicThreadFactory extends Object implements ThreadFactory {
     static builder(): BasicThreadFactory$Builder;
-    private constructor(arg0: BasicThreadFactory$Builder)
-    constructor(arg0: BasicThreadFactory$Builder, arg1: BasicThreadFactory$1)
+    constructor(arg0: BasicThreadFactory$Builder, arg1: any)
     // private daemon: boolean;
     readonly namingPattern: string;
     readonly priority: number;

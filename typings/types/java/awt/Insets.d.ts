@@ -8,7 +8,6 @@ export class Insets extends Object implements Serializable, Cloneable {
     right: number;
     top: number;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     set(arg0: number, arg1: number, arg2: number, arg3: number): void;

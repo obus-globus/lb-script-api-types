@@ -12,7 +12,6 @@ import type { ClientboundCustomChatCompletionsPacket$Action } from '../../../../
 export class ClientboundCustomChatCompletionsPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundCustomChatCompletionsPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(action: ClientboundCustomChatCompletionsPacket$Action, entries: string[])
     // private action: ClientboundCustomChatCompletionsPacket$Action;
     // private entries: string[];

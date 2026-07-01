@@ -16,7 +16,6 @@ export class ObjectStreamClass extends Object implements Serializable {
     static lookup(paramarg0: Class<Object>): ObjectStreamClass;
     static lookupAny(paramarg0: Class<Object>): ObjectStreamClass;
     constructor()
-    private constructor(arg0: Class<Object>)
     // private canonicalCtr: MethodHandle;
     // private cl: Class<Object>;
     // private cons: Constructor<Object>;

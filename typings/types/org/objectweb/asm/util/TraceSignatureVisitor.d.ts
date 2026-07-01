@@ -5,7 +5,6 @@ export class TraceSignatureVisitor extends SignatureVisitor {
     static EXTENDS: string;
     static INSTANCEOF: string;
     static SUPER: string;
-    private constructor(arg0: StringBuilder)
     constructor(arg0: number)
     readonly declaration: StringBuilder;
     readonly exceptions: StringBuilder;

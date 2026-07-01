@@ -5,7 +5,6 @@ export class DictionaryBreakEngine$DequeI extends Object implements Cloneable {
     // private data: number[];
     // private firstIdx: number;
     // private lastIdx: number;
-    protected clone(): Object;
     clone(): Object;
     contains(v: number): boolean;
     elementAt(i: number): number;

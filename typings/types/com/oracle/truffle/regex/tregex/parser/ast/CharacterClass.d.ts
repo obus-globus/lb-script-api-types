@@ -11,7 +11,6 @@ import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tr
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class CharacterClass extends QuantifiableTerm {
     constructor(charSet: (Object | null)[])
-    private constructor(copy: CharacterClass, charSet: (Object | null)[])
     readonly charSet: (Object | null)[];
     readonly lookBehindEntries: LookBehindAssertion[];
     addLookBehindEntry(ast: RegexAST, lookBehindEntry: LookBehindAssertion): void;

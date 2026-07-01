@@ -4,7 +4,6 @@ import type { LZ4FrameOutputStream$FLG$Bits } from '../../../net/jpountz/lz4/LZ4
 export class LZ4FrameOutputStream$FLG extends Object {
     static fromByte(paramarg0: number): LZ4FrameOutputStream$FLG;
     constructor(arg0: number, arg1: LZ4FrameOutputStream$FLG$Bits[])
-    private constructor(arg0: number, arg1: number)
     // private bitSet: BitSet;
     readonly version: number;
     getVersion(): number;

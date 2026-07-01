@@ -12,7 +12,7 @@ export class RegistryContainsResourceCondition extends Record implements Resourc
     static CODEC: MapCodec<RegistryContainsResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
     static LIST_CODEC: Codec<ResourceCondition[]>;
-    constructor(arg0: ResourceKey<T>[])
+    constructor(arg0: ResourceKey<Object>[])
     constructor(arg0: Identifier, arg1: Identifier[])
     constructor(registry: Identifier, entries: Identifier[])
     // private entries: Identifier[];

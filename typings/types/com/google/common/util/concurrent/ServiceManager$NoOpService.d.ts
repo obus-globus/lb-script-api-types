@@ -1,8 +1,8 @@
-import type { ServiceManager$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AbstractService } from '../../../../../com/google/common/util/concurrent/AbstractService.d.ts'
+import type { ListenerCallQueue$Event } from '../../../../../com/google/common/util/concurrent/ListenerCallQueue$Event.d.ts'
+import type { ServiceManager$Listener } from '../../../../../com/google/common/util/concurrent/ServiceManager$Listener.d.ts'
 export class ServiceManager$NoOpService extends AbstractService {
-    private constructor()
-    constructor(arg0: ServiceManager$1)
+    constructor(arg0: ListenerCallQueue$Event<ServiceManager$Listener>)
     doStart(): void;
     doStop(): void;
 }

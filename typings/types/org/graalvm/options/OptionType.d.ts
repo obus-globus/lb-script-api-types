@@ -10,8 +10,6 @@ export class OptionType<T extends unknown> extends Object {
     constructor(name: string, defaultValue: T, stringConverter: (param0: string) => T, validator: (param0: T) => void)
     constructor(name: string, stringConverter: (param0: string) => T)
     constructor(name: string, stringConverter: (param0: string) => T, validator: (param0: T) => void)
-    private constructor(name: string, stringConverter: (param0: string) => T, isDefaultType: boolean)
-    private constructor(name: string, converter: (param0: T, param1: string, param2: string) => T, validator: (param0: T) => void, isOptionMap: boolean, isDefaultType: boolean)
     // private converter: (param0: T, param1: string, param2: string) => T;
     // private isDefaultType: boolean;
     // private isOptionMap: boolean;

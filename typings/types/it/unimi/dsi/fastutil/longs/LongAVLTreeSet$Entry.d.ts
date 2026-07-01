@@ -10,7 +10,6 @@ export class LongAVLTreeSet$Entry extends Object implements Cloneable {
     balance(): number;
     balance(arg0: number): void;
     clone(): LongAVLTreeSet$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

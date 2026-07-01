@@ -7,7 +7,6 @@ export abstract class MessageDigest extends MessageDigestSpi {
     static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): MessageDigest;
     static isEqual(paramarg0: number[], paramarg1: number[]): boolean;
     constructor(arg0: string)
-    private constructor(arg0: string, arg1: { [key: string]: any })
     readonly algorithm: string;
     readonly provider: { [key: string]: any };
     // private state: number;

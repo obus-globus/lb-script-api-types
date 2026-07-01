@@ -1,4 +1,3 @@
-import type { FieldNamingPolicy$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { FieldNamingStrategy } from '../../../com/google/gson/FieldNamingStrategy.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Field } from '../../../java/lang/reflect/Field.d.ts'
@@ -15,8 +14,7 @@ export class FieldNamingPolicy extends Enum<FieldNamingPolicy> implements FieldN
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): FieldNamingPolicy;
     static values(): (Object | null)[];
-    private constructor()
-    constructor(arg2: FieldNamingPolicy$1)
+    constructor(arg2: FieldNamingPolicy)
     alternateNames(arg0: Field): string[];
     translateName(arg0: Field): string;
     name(): "IDENTITY" | "UPPER_CAMEL_CASE" | "UPPER_CAMEL_CASE_WITH_SPACES" | "UPPER_CASE_WITH_UNDERSCORES" | "LOWER_CASE_WITH_UNDERSCORES" | "LOWER_CASE_WITH_DASHES" | "LOWER_CASE_WITH_DOTS";

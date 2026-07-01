@@ -5,7 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class MeasureUnitImpl$UnitsParser$Token extends Object {
     static tokenWithConstant(paramarg0: string): MeasureUnitImpl$UnitsParser$Token;
     constructor(arg0: number)
-    private constructor(arg0: number, arg1: MeasureUnitImpl$UnitsParser$Token$Type)
     // private fMatch: number;
     readonly type: MeasureUnitImpl$UnitsParser$Token$Type;
     // private calculateType(arg0: number): MeasureUnitImpl$UnitsParser$Token$Type;

@@ -10,7 +10,6 @@ export class Int2ObjectAVLTreeMap$Entry<V extends unknown> extends AbstractInt2O
     balance(): number;
     balance(arg0: number): void;
     clone(): Int2ObjectAVLTreeMap$Entry<V>;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

@@ -8,7 +8,6 @@ export class RenderingFormat extends Enum<RenderingFormat> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): RenderingFormat;
     static values(): (Object | null)[];
-    private constructor()
     constructor(arg2: DefaultConstructorMarker)
     escape(arg0: string): string;
     name(): "PLAIN" | "HTML";

@@ -6,7 +6,6 @@ export class Cursor extends Object implements Cloneable {
     // private column: number;
     // private index: number;
     // private line: number;
-    protected clone(): Object;
     clone(): Cursor;
     column(): number;
     equals(arg0: Object | null): boolean;

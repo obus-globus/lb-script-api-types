@@ -1,9 +1,7 @@
-import type { FactorTracker$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { FactorTracker } from '../../../../ai/djl/training/tracker/FactorTracker.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class FactorTracker$Builder extends Object {
-    private constructor()
-    constructor(arg0: FactorTracker$1)
+    constructor(arg0: any)
     // private baseValue: number;
     // private factor: number;
     // private maxUpdates: number;

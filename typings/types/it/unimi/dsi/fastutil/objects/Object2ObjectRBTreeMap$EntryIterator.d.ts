@@ -3,8 +3,8 @@ import type { Object2ObjectRBTreeMap$TreeIterator } from '../../../../../it/unim
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2ObjectRBTreeMap$EntryIterator extends Object2ObjectRBTreeMap$TreeIterator implements ObjectListIterator<Object2ObjectMap$Entry<K, V>> {
-    constructor(null_: Map<K, V>)
-    constructor(null_: Map<K, V>, arg1: K)
+    constructor(null_: Map<Object, Object>)
+    constructor(null_: Map<Object, Object>, arg1: Object)
     add<K extends unknown, V extends unknown>(arg0: Object2ObjectMap$Entry<K, V>): void;
     next<K extends unknown, V extends unknown>(): Object2ObjectMap$Entry<K, V>;
     previous<K extends unknown, V extends unknown>(): Object2ObjectMap$Entry<K, V>;

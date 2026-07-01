@@ -12,7 +12,6 @@ export class ClientboundResetScorePacket extends Record implements Packet<Client
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundResetScorePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(owner: string, objectiveName: string)
-    private constructor(input: FriendlyByteBuf)
     // private objectiveName: string;
     // private owner: string;
     equals(o: Object | null): boolean;

@@ -21,7 +21,6 @@ export class Block extends Node implements BreakableNode, Flags<Block>, LexicalC
     static IS_SYNTHETIC: number;
     static IS_TERMINAL: number;
     static NEEDS_SCOPE: number;
-    private constructor(block: Block, finish: number, statements: Statement[], flags: number)
     constructor(token: number, finish: number, flags: number, scope: Scope, statements: Statement[])
     readonly flags: number;
     readonly scope: Scope;

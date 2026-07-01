@@ -13,7 +13,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 export class EmptyByteBuf extends ByteBuf {
     constructor(arg0: ByteBufAllocator)
-    private constructor(arg0: ByteBufAllocator, arg1: ByteOrder)
     // private alloc: ByteBufAllocator;
     // private order: ByteOrder;
     // private str: string;

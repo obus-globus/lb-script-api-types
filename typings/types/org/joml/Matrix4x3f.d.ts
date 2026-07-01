@@ -76,7 +76,6 @@ export class Matrix4x3f extends Object implements Externalizable, Cloneable, Mat
     billboardCylindrical(arg0: Vector3fc, arg1: Vector3fc, arg2: Vector3fc): Matrix4x3f;
     billboardSpherical(arg0: Vector3fc, arg1: Vector3fc): Matrix4x3f;
     billboardSpherical(arg0: Vector3fc, arg1: Vector3fc, arg2: Vector3fc): Matrix4x3f;
-    protected clone(): Object;
     clone(): Object;
     cofactor3x3(): Matrix4x3f;
     cofactor3x3(arg0: Matrix3f): Matrix3f;

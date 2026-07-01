@@ -14,7 +14,6 @@ export class Manifest extends Object implements Cloneable {
     // private jv: JarVerifier;
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getAttributes(arg0: string): { [key: string]: any };
     getEntries(): { [key: string]: { [key: string]: any } };

@@ -5,7 +5,6 @@ export abstract class Point2D extends Object implements Cloneable {
     static distanceSq(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;
     constructor()
     clone(): Object;
-    protected clone(): Object;
     distance(arg0: Point2D): number;
     distance(arg0: number, arg1: number): number;
     distanceSq(arg0: Point2D): number;

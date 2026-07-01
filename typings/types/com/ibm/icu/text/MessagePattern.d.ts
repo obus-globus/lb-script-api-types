@@ -28,7 +28,6 @@ export class MessagePattern extends Object implements Freezable<MessagePattern>,
     clear(): void;
     clearPatternAndSetApostropheMode(arg0: MessagePattern$ApostropheMode): void;
     clone(): MessagePattern;
-    protected clone(): Object;
     cloneAsThawed(): MessagePattern;
     countParts(): number;
     equals(arg0: Object | null): boolean;

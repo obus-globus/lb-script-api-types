@@ -17,7 +17,6 @@ export class Segment extends Object implements CharacterIterator, CharSequence, 
     // private pos: number;
     chars(): IntStream;
     clone(): Object;
-    protected clone(): Object;
     codePoints(): IntStream;
     current(): string;
     first(): string;

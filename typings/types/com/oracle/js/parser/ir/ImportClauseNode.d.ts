@@ -8,10 +8,8 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ImportClauseNode extends Node {
-    private constructor(node: ImportClauseNode, defaultBinding: IdentNode, nameSpaceImport: NameSpaceImportNode, namedImports: NamedImportsNode)
     constructor(token: number, start: number, finish: number, defaultBinding: IdentNode)
     constructor(token: number, start: number, finish: number, defaultBinding: IdentNode, nameSpaceImport: NameSpaceImportNode)
-    private constructor(token: number, start: number, finish: number, defaultBinding: IdentNode, nameSpaceImport: NameSpaceImportNode, namedImports: NamedImportsNode)
     constructor(token: number, start: number, finish: number, defaultBinding: IdentNode, namedImports: NamedImportsNode)
     constructor(token: number, start: number, finish: number, nameSpaceImport: NameSpaceImportNode)
     constructor(token: number, start: number, finish: number, namedImportsNode: NamedImportsNode)

@@ -15,7 +15,6 @@ export class FunctionCallExpression extends TerminalExpression {
     static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: Identifier)
-    private constructor(arg0: Identifier, arg1: TypeSpecifier, arg2: FunctionCallExpression$FunctionReferenceType, arg3: Stream<Expression>)
     constructor(arg0: Identifier, arg1: Stream<Expression>)
     constructor(arg0: TypeSpecifier)
     constructor(arg0: TypeSpecifier, arg1: Stream<Expression>)

@@ -6,7 +6,6 @@ export class Int2BooleanFunctions$EmptyFunction extends AbstractInt2BooleanFunct
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     defaultReturnValue(): boolean;

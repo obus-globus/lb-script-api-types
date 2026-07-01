@@ -1,4 +1,3 @@
-import type { HtmlLayout$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { StringBuilder } from '../../../../../../java/lang/StringBuilder.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -12,8 +11,7 @@ export class HtmlLayout extends AbstractStringLayout {
     static createDefaultLayout(): HtmlLayout;
     static createLayout(paramlocationInfo: boolean, paramtitle: string, paramcontentType: string, paramcharset: Charset, paramfontSize: string, paramfont: string): HtmlLayout;
     static newBuilder(): HtmlLayout$Builder;
-    private constructor(locationInfo: boolean, title: string, contentType: string, charset: Charset, font: string, fontSize: string, headerSize: string, datePattern: string, timezone: string)
-    constructor(arg0: boolean, arg1: string, arg2: string, arg3: Charset, arg4: string, arg5: string, arg6: string, arg7: string, arg8: string, arg9: HtmlLayout$1)
+    constructor(arg0: boolean, arg1: string, arg2: string, arg3: Charset, arg4: string, arg5: string, arg6: string, arg7: string, arg8: string, arg9: any)
     readonly contentType: string;
     // private datePatternConverter: DatePatternConverter;
     // private font: string;

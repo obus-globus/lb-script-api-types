@@ -71,7 +71,6 @@ export class DecimalFormatProperties extends Object implements Serializable, Clo
     // private _hashCodeHelper(arg0: number): number;
     clear(): DecimalFormatProperties;
     clone(): DecimalFormatProperties;
-    protected clone(): Object;
     copyFrom(arg0: DecimalFormatProperties): DecimalFormatProperties;
     equals(arg0: Object | null): boolean;
     getCompactCustomData(): { [key: string]: { [key: string]: string } };

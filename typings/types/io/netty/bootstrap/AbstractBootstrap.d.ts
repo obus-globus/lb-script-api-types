@@ -37,7 +37,6 @@ export abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
     channelFactory(arg0: ChannelFactory<C>): B;
     channelFactory(arg0: ChannelFactory_2<C>): B;
     clone(): B;
-    protected clone(): Object;
     config(): AbstractBootstrapConfig<B, C>;
     // private doBind(arg0: SocketAddress): ChannelFuture;
     extensionsClassLoader(arg0: ClassLoader): B;

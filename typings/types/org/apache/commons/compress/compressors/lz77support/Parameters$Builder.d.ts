@@ -1,9 +1,7 @@
-import type { Parameters$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Parameters } from '../../../../../../org/apache/commons/compress/compressors/lz77support/Parameters.d.ts'
 export class Parameters$Builder extends Object {
-    private constructor(arg0: number)
-    constructor(arg0: number, arg1: Parameters$1)
+    constructor(arg0: number, arg1: any)
     // private lazyMatches: boolean;
     // private lazyThreshold: number;
     // private maxBackReferenceLength: number;

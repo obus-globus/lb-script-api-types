@@ -5,7 +5,6 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 export class Payload extends Object {
     constructor(arg0: { [key: string]: any })
-    private constructor(arg0: { [key: string]: any }, arg1: CharSequence, arg2: number[], arg3: InputStream, arg4: string)
     constructor(arg0: InputStream, arg1: string)
     constructor(arg0: number[], arg1: string)
     constructor(arg0: CharSequence, arg1: string)

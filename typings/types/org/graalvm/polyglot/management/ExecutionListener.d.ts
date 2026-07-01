@@ -5,7 +5,6 @@ import type { AbstractPolyglotImpl$AbstractExecutionListenerDispatch } from '../
 import type { ExecutionListener$Builder } from '../../../../org/graalvm/polyglot/management/ExecutionListener$Builder.d.ts'
 export class ExecutionListener extends Object implements AutoCloseable {
     static newBuilder(): ExecutionListener$Builder;
-    private constructor()
     constructor(dispatch: AbstractPolyglotImpl$AbstractExecutionListenerDispatch, receiver: Object, creatorEngine: Engine)
     // private creatorEngine: Engine;
     // private dispatch: AbstractPolyglotImpl$AbstractExecutionListenerDispatch;

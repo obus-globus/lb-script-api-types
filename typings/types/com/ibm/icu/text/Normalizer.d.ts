@@ -76,7 +76,6 @@ export class Normalizer extends Object implements Cloneable {
     readonly text: UCharacterIterator;
     // private clearBuffer(): void;
     clone(): Normalizer;
-    protected clone(): Object;
     current(): number;
     endIndex(): number;
     first(): number;

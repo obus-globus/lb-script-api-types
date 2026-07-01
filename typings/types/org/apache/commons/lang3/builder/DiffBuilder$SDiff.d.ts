@@ -1,4 +1,3 @@
-import type { DiffBuilder$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
@@ -11,8 +10,7 @@ export class DiffBuilder$SDiff<T extends unknown> extends Diff<T> {
     static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
     static of(paramarg0: Map$Entry<Object, Object>): Pair<Object, Object>;
     static ofNonNull(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
-    constructor(arg0: string, arg1: DiffBuilder$SerializableSupplier<Object>, arg2: DiffBuilder$SerializableSupplier<Object>, arg3: Class<Object>, arg4: DiffBuilder$1)
-    private constructor(arg0: string, arg1: DiffBuilder$SerializableSupplier<T>, arg2: DiffBuilder$SerializableSupplier<T>, arg3: Class<T>)
+    constructor(arg0: string, arg1: DiffBuilder$SerializableSupplier<Object>, arg2: DiffBuilder$SerializableSupplier<Object>, arg3: Class<Object>, arg4: any)
     // private leftSupplier: DiffBuilder$SerializableSupplier<T>;
     // private rightSupplier: DiffBuilder$SerializableSupplier<T>;
     getLeft(): T;

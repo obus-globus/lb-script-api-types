@@ -9,7 +9,6 @@ export class UV2f extends Object {
 // (invalid TS: name contains '-')     static hashCode-impl(paramarg0: number): number;
 // (invalid TS: name contains '-')     static toString-impl(paramarg0: number): string;
     constructor(u: number, v: number)
-    private constructor(bits: number)
     // private bits: number;
 // (invalid TS: name contains '-')     /*not mapped: */ getU-impl(): number;
 // (invalid TS: name contains '-')     /*not mapped: */ getV-impl(): number;

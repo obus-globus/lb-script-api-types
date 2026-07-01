@@ -10,7 +10,6 @@ export class DoubleBigListIterators$EmptyBigListIterator extends Object implemen
     add(arg0: number): void;
     back(arg0: number): number;
     clone(): Object;
-    protected clone(): Object;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;

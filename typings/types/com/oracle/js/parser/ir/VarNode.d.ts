@@ -15,7 +15,6 @@ export class VarNode extends Statement implements Assignment<IdentNode> {
     static IS_EXPORT: number;
     static IS_LAST_FUNCTION_DECLARATION: number;
     static IS_LET: number;
-    private constructor(varNode: VarNode, name: IdentNode, init: Expression, flags: number)
     constructor(lineNumber: number, token: number, finish: number, name: IdentNode, init: Expression)
     constructor(lineNumber: number, token: number, finish: number, name: IdentNode, init: Expression, flags: number)
     constructor(lineNumber: number, token: number, sourceOrder: number, finish: number, name: IdentNode, init: Expression, flags: number)

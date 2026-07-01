@@ -4,7 +4,6 @@ import type { UCharacterIterator } from '../../../../com/ibm/icu/text/UCharacter
 import type { VersionInfo } from '../../../../com/ibm/icu/util/VersionInfo.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { StringBuffer } from '../../../../java/lang/StringBuffer.d.ts'
-import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class StringPrep extends Object {
     static ALLOW_UNASSIGNED: number;
@@ -25,7 +24,6 @@ export class StringPrep extends Object {
     static RFC4518_LDAP_CI: number;
     static getInstance(paramarg0: number): StringPrep;
     constructor(arg0: InputStream)
-    private constructor(arg0: ByteBuffer)
     // private bdp: UBiDiProps;
     // private checkBiDi: boolean;
     // private doNFKC: boolean;

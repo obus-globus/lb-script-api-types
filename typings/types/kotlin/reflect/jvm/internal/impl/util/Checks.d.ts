@@ -10,7 +10,6 @@ export class Checks extends Object {
     constructor(arg0: (Object | null)[], arg1: Check[], arg2: (param0: Object | null) => Object | null, arg3: number, arg4: DefaultConstructorMarker)
     constructor(arg0: Name, arg1: Check[], arg2: (param0: FunctionDescriptor) => string)
     constructor(arg0: Name, arg1: Check[], arg2: (param0: Object | null) => Object | null, arg3: number, arg4: DefaultConstructorMarker)
-    private constructor(arg0: Name, arg1: Regex, arg2: Name[], arg3: (param0: FunctionDescriptor) => string, arg4: Check[])
     constructor(arg0: Regex, arg1: Check[], arg2: (param0: FunctionDescriptor) => string)
     constructor(arg0: Regex, arg1: Check[], arg2: (param0: Object | null) => Object | null, arg3: number, arg4: DefaultConstructorMarker)
     // private additionalCheck: (param0: FunctionDescriptor) => string;

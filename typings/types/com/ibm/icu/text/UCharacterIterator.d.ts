@@ -14,7 +14,6 @@ export abstract class UCharacterIterator extends Object implements UForwardChara
     static getInstance(paramarg0: CharacterIterator): UCharacterIterator;
     constructor()
     clone(): UCharacterIterator;
-    protected clone(): Object;
     current(): number;
     currentCodePoint(): number;
     getCharacterIterator(): CharacterIterator;

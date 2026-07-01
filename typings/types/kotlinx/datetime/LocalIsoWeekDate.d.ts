@@ -7,7 +7,6 @@ export class LocalIsoWeekDate extends Object implements Comparable<LocalIsoWeekD
     static Companion: LocalIsoWeekDate$Companion;
     constructor(isoWeekYear: number, isoWeekNumber: number, dayOfWeek: number)
     constructor(isoWeekYear: number, isoWeekNumber: number, dayOfWeek: DayOfWeek)
-    private constructor(isoWeekYear: number, isoWeekNumber: number, dayOfWeek: DayOfWeek, unit: void)
     readonly dayOfWeek: DayOfWeek;
     readonly isoWeekNumber: number;
     readonly isoWeekYear: number;

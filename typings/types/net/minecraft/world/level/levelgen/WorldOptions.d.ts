@@ -10,7 +10,6 @@ export class WorldOptions extends Object {
     static randomSeed(): number;
     static testWorldWithRandomSeed(): WorldOptions;
     constructor(seed: number, generateStructures: boolean, generateBonusChest: boolean)
-    private constructor(seed: number, generateStructures: boolean, generateBonusChest: boolean, legacyCustomOptions: Optional<string>)
     // private generateBonusChest: boolean;
     // private generateStructures: boolean;
     // private legacyCustomOptions: Optional<string>;

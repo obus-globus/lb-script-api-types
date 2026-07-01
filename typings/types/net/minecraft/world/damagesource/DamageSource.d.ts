@@ -12,7 +12,6 @@ export class DamageSource extends Object {
     constructor(type: Holder<DamageType>)
     constructor(type: Holder<DamageType>, causingEntity: Entity)
     constructor(type: Holder<DamageType>, directEntity: Entity, causingEntity: Entity)
-    private constructor(type: Holder<DamageType>, directEntity: Entity, causingEntity: Entity, damageSourcePosition: Vec3)
     constructor(type: Holder<DamageType>, damageSourcePosition: Vec3)
     // private causingEntity: Entity;
     // private damageSourcePosition: Vec3;

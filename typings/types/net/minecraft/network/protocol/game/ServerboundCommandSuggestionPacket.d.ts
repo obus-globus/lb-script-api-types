@@ -11,7 +11,6 @@ export class ServerboundCommandSuggestionPacket extends Object implements Packet
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundCommandSuggestionPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(id: number, command: string)
-    private constructor(input: FriendlyByteBuf)
     readonly command: string;
     readonly id: number;
     getCommand(): string;

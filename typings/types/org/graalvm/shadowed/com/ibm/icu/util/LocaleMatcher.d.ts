@@ -12,7 +12,6 @@ import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/
 export class LocaleMatcher extends Object {
     static builder(): LocaleMatcher$Builder;
     constructor(supportedLocales: string)
-    private constructor(builder: LocaleMatcher$Builder)
     constructor(supportedLocales: ULocale[])
     // private defaultLocale: Locale;
     // private defaultULocale: ULocale;

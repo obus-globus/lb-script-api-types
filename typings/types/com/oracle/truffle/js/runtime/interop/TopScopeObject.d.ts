@@ -6,7 +6,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class TopScopeObject extends Object implements TruffleObject {
     static empty(): TopScopeObject;
     constructor(objects: Object[])
-    private constructor(objects: Object[], index: number)
     // private objects: Object[];
     // private scopeIndex: number;
     getLanguage(): Class<TruffleLanguage<Object>>;

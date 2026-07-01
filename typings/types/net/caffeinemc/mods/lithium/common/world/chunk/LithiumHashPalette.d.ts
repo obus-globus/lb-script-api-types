@@ -7,7 +7,6 @@ import type { PaletteResize } from '../../../../../../../net/minecraft/world/lev
 export class LithiumHashPalette<T extends unknown> extends Object implements Palette<T> {
     static create(paramarg0: number, paramarg1: (Object | null)[]): Palette<Object>;
     constructor(arg0: number)
-    private constructor(arg0: number, arg1: T[], arg2: { [key: string]: any }, arg3: number)
     constructor(arg0: number, arg1: T[])
     // private entries: T[];
     // private indexBits: number;

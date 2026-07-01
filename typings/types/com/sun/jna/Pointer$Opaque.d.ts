@@ -1,4 +1,3 @@
-import type { Pointer$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Pointer } from '../../../com/sun/jna/Pointer.d.ts'
 import type { WString } from '../../../com/sun/jna/WString.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
@@ -8,8 +7,7 @@ export class Pointer$Opaque extends Pointer {
     static createConstant(paramarg0: number): Pointer;
     static nativeValue(paramarg0: Pointer): number;
     static nativeValue(paramarg0: Pointer, paramarg1: number): void;
-    private constructor(arg0: number)
-    constructor(arg0: number, arg1: Pointer$1)
+    constructor(arg0: number, arg1: any)
     // private MSG: string;
     clear(arg0: number): void;
     dump(arg0: number, arg1: number): string;

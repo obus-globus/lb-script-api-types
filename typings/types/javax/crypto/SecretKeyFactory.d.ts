@@ -10,7 +10,6 @@ export class SecretKeyFactory extends Object {
     static getInstance(paramarg0: string, paramarg1: string): SecretKeyFactory;
     static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): SecretKeyFactory;
     constructor(arg0: SecretKeyFactorySpi, arg1: { [key: string]: any }, arg2: string)
-    private constructor(arg0: string)
     readonly algorithm: string;
     // private lock: Object;
     readonly provider: { [key: string]: any };

@@ -6,7 +6,6 @@ export class Int2IntMapBiMappings extends Object implements BiMappings {
     static of(paramarg0: Mappings, paramarg1: Mappings): BiMappings;
     static of(paramarg0: { [key: string]: any }): Int2IntMapBiMappings;
     constructor(arg0: { [key: string]: any })
-    private constructor(arg0: { [key: string]: any }, arg1: Int2IntMapBiMappings)
     // private inverse: Int2IntMapBiMappings;
     // private mappings: { [key: string]: any };
     getNewId(arg0: number): number;

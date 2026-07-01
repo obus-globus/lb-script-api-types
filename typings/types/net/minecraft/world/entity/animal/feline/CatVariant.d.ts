@@ -23,7 +23,6 @@ export class CatVariant extends Record implements PriorityProvider<SpawnContext,
     static pick(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramrandomSource: RandomSource, paramcontext: Object | null): Optional<Object>;
     static select(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramcontext: Object | null): Stream<Object>;
     static single(paramcheck: Object | null, parampriority: number): PriorityProvider$Selector<Object, any>[];
-    private constructor(adultAssetInfo: ClientAsset$ResourceTexture, babyAssetInfo: ClientAsset$ResourceTexture)
     constructor(adultAssetInfo: ClientAsset$ResourceTexture, babyAssetInfo: ClientAsset$ResourceTexture, spawnConditions: SpawnPrioritySelectors)
     // private adultAssetInfo: ClientAsset$ResourceTexture;
     // private babyAssetInfo: ClientAsset$ResourceTexture;

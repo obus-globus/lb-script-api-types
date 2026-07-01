@@ -10,7 +10,6 @@ export class Int2LongRBTreeMap$Entry extends AbstractInt2LongMap$BasicEntry impl
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Int2LongRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Int2LongRBTreeMap$Entry;

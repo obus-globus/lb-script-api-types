@@ -52,7 +52,6 @@ export class JavaTimeZone extends TimeZone implements Cloneable {
     // private javacal: Calendar;
     // private javatz: TimeZone_2;
     clone(): JavaTimeZone;
-    protected clone(): Object;
     cloneAsThawed(): JavaTimeZone;
     freeze(): TimeZone;
     getDSTSavings(): number;

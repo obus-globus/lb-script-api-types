@@ -12,7 +12,6 @@ export class CollationElementIterator extends Object {
     static tertiaryOrder(paramce: number): number;
     constructor(source: CharacterIterator, collator: RuleBasedCollator)
     constructor(source: string, collator: RuleBasedCollator)
-    private constructor(collator: RuleBasedCollator)
     constructor(source: UCharacterIterator, collator: RuleBasedCollator)
     // private dir_: number;
     // private iter_: CollationIterator;

@@ -2,7 +2,6 @@ import type { Reference2BooleanMap$Entry } from '../../../../../it/unimi/dsi/fas
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Reference2BooleanLinkedOpenHashMap$MapIterator<ConsumerType extends unknown> extends Object {
     constructor(null_: { [key: string]: any })
-    private constructor(null_: { [key: string]: any }, arg1: K)
     constructor(null_: { [key: string]: any }, arg1: Object, arg2: (Object | null)[])
     // private curr: number;
     // private index: number;

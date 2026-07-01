@@ -27,7 +27,6 @@ export class SkinReportScreen extends AbstractReportScreen<SkinReport$Builder> {
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(lastScreen: Screen, reportingContext: ReportingContext, playerId: UUID, skinGetter: () => PlayerSkin)
     constructor(lastScreen: Screen, reportingContext: ReportingContext, draft: SkinReport)
-    private constructor(lastScreen: Screen, reportingContext: ReportingContext, reportBuilder: SkinReport$Builder)
     // private commentBox: MultiLineEditBox;
     // private selectReasonButton: Button;
     addContent(): void;

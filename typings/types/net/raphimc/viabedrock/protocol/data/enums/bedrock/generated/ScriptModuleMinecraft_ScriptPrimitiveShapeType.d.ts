@@ -5,7 +5,11 @@ export class ScriptModuleMinecraft_ScriptPrimitiveShapeType extends Enum<ScriptM
     static Arrow: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static Box: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static Circle: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
+    static Cone: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
+    static Cylinder: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
+    static Ellipsoid: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static Line: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
+    static Pyramid: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static Sphere: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static Text: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static getByName(paramarg0: string): ScriptModuleMinecraft_ScriptPrimitiveShapeType;
@@ -19,5 +23,5 @@ export class ScriptModuleMinecraft_ScriptPrimitiveShapeType extends Enum<ScriptM
     private constructor(arg2: ScriptModuleMinecraft_ScriptPrimitiveShapeType)
     readonly value: number;
     getValue(): number;
-    name(): "Line" | "Box" | "Sphere" | "Circle" | "Text" | "Arrow";
+    name(): "Line" | "Box" | "Sphere" | "Circle" | "Text" | "Arrow" | "Cylinder" | "Pyramid" | "Ellipsoid" | "Cone";
 }

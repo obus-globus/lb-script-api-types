@@ -17,7 +17,6 @@ export class ImmutableRangeSet<C extends Comparable<Object>> extends AbstractRan
     static toImmutableRangeSet(): Collector<Range<any>, Object, ImmutableRangeSet<any>>;
     static unionOf(paramranges: Range<any>[]): ImmutableRangeSet<any>;
     constructor(ranges: Range<C>[])
-    private constructor(ranges: Range<C>[], complement: ImmutableRangeSet<C>)
     // private complement: ImmutableRangeSet<C>;
     // private lazyComplement: ImmutableRangeSet<C>;
     // private ranges: Range<C>[];

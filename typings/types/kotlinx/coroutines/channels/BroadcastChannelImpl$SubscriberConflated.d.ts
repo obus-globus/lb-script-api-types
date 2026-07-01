@@ -1,3 +1,4 @@
+import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { BroadcastChannelImpl } from '../../../kotlinx/coroutines/channels/BroadcastChannelImpl.d.ts'
 import type { Channel$Factory } from '../../../kotlinx/coroutines/channels/Channel$Factory.d.ts'
@@ -10,6 +11,6 @@ export class BroadcastChannelImpl$SubscriberConflated extends ConflatedBufferedC
     static OPTIONAL_CHANNEL: number;
     static RENDEZVOUS: number;
     static UNLIMITED: number;
-    constructor(null_: BroadcastChannelImpl<E>)
+    constructor(null_: BroadcastChannelImpl<Object>)
     cancelImpl(cause: Throwable | null): boolean;
 }

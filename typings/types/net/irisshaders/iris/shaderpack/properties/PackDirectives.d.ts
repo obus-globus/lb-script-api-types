@@ -12,7 +12,6 @@ import type { TextureStage } from '../../../../../net/irisshaders/iris/shaderpac
 import type { Vector2i } from '../../../../../org/joml/Vector2i.d.ts'
 export class PackDirectives extends Object {
     constructor(arg0: number[], arg1: PackDirectives)
-    private constructor(arg0: number[], arg1: PackShadowDirectives)
     constructor(arg0: number[], arg1: ShaderProperties)
     readonly ambientOcclusionLevel: number;
     // private breaksAnisotropy: boolean;

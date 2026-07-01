@@ -17,7 +17,6 @@ export class FontInfo extends Object implements Cloneable {
     originX: number;
     originY: number;
     pixelHeight: number;
-    protected clone(): Object;
     clone(): Object;
     mtx(arg0: number[]): string;
     toString(): string;

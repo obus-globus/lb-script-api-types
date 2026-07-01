@@ -16,7 +16,6 @@ export class PotDecorations extends Record implements TooltipProvider {
     static EMPTY: PotDecorations;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, PotDecorations>;
     constructor(back: Optional<Item>, left: Optional<Item>, right: Optional<Item>, front: Optional<Item>)
-    private constructor(items: Item[])
     constructor(back: Item, left: Item, right: Item, front: Item)
     // private back: Optional<Item>;
     // private front: Optional<Item>;

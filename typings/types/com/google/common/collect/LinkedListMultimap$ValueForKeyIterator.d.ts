@@ -3,8 +3,8 @@ import type { LinkedListMultimap$Node } from '../../../../com/google/common/coll
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { ListIterator } from '../../../../java/util/ListIterator.d.ts'
 export class LinkedListMultimap$ValueForKeyIterator extends Object implements ListIterator<V> {
-    constructor(null_: LinkedListMultimap<K, V>, key: K)
-    constructor(null_: LinkedListMultimap<K, V>, key: K, index: number)
+    constructor(null_: LinkedListMultimap<Object, Object>, key: Object)
+    constructor(null_: LinkedListMultimap<Object, Object>, key: Object, index: number)
     // private current: LinkedListMultimap$Node<K, V>;
     // private key: K;
     // private next: LinkedListMultimap$Node<K, V>;

@@ -5,7 +5,6 @@ import type { Short2ByteOpenCustomHashMap$MapIterator } from '../../../../../it/
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2ByteOpenCustomHashMap$EntryIterator extends Short2ByteOpenCustomHashMap$MapIterator<(param0: Short2ByteMap$Entry) => void> implements ObjectIterator<Short2ByteMap$Entry> {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private entry: Short2ByteOpenCustomHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Short2ByteMap$Entry) => void, arg1: number): void;

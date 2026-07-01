@@ -10,7 +10,6 @@ import type { Cloneable } from '../../java/lang/Cloneable.d.ts'
 export abstract class Format extends Object implements Serializable, Cloneable {
     constructor()
     clone(): Object;
-    protected clone(): Object;
     createAttributedCharacterIterator(arg0: AttributedCharacterIterator, arg1: AttributedCharacterIterator$Attribute, arg2: Object): AttributedCharacterIterator;
     createAttributedCharacterIterator(arg0: AttributedCharacterIterator[]): AttributedCharacterIterator;
     createAttributedCharacterIterator(arg0: string): AttributedCharacterIterator;

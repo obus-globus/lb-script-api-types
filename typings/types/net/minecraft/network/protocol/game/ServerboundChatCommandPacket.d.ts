@@ -12,7 +12,6 @@ export class ServerboundChatCommandPacket extends Record implements Packet<Serve
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundChatCommandPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(command: string)
-    private constructor(input: FriendlyByteBuf)
     // private command: string;
     command(): string;
     equals(o: Object | null): boolean;

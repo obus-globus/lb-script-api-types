@@ -4,8 +4,6 @@ import type { PermissionSet } from '../../../../net/minecraft/server/permissions
 export class PermissionSetUnion extends Object implements PermissionSet {
     static ALL_PERMISSIONS: PermissionSet;
     static NO_PERMISSIONS: PermissionSet;
-    private constructor(oldPermissions: PermissionSet[], other: PermissionSet[])
-    private constructor(oldPermissions: PermissionSet[], other: PermissionSet)
     constructor(first: PermissionSet, second: PermissionSet)
     readonly permissions: PermissionSet[];
     // private ensureNoUnionsWithinUnions(): void;

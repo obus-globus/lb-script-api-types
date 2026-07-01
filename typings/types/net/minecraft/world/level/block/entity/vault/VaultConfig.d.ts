@@ -12,7 +12,6 @@ export class VaultConfig extends Record {
     static CODEC: Codec<VaultConfig>;
     static DEFAULT: VaultConfig;
     static TAG_NAME: string;
-    private constructor()
     constructor(lootTable: ResourceKey<LootTable>, activationRange: number, deactivationRange: number, keyItem: ItemStack, overrideDisplayItems: Optional<ResourceKey<LootTable>>)
     constructor(lootTable: ResourceKey<LootTable>, activationRange: number, deactivationRange: number, keyItem: ItemStack, overrideLootTableToDisplay: Optional<ResourceKey<LootTable>>, playerDetector: PlayerDetector, entitySelector: PlayerDetector$EntitySelector)
     // private activationRange: number;

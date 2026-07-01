@@ -10,7 +10,6 @@ export class Object2DoubleAVLTreeMap$Entry<K extends unknown> extends AbstractOb
     balance(): number;
     balance(arg0: number): void;
     clone(): Object2DoubleAVLTreeMap$Entry<K>;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

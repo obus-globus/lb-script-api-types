@@ -73,7 +73,6 @@ export class CommandSourceStack extends Object implements PermissionContextOwner
     static suggestResource(paramvalues: Stream<Identifier>, parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: Stream<Identifier>, parambuilder: SuggestionsBuilder, paramprefix: string): CompletableFuture<Suggestions>;
     constructor(source: CommandSource, position: Vec3, rotation: Vec2, level: ServerLevel, permissions: PermissionSet, textName: string, displayName: Component, server: MinecraftServer, entity: Entity)
-    private constructor(source: CommandSource, position: Vec3, rotation: Vec2, level: ServerLevel, permissions: PermissionSet, textName: string, displayName: Component, server: MinecraftServer, entity: Entity, silent: boolean, resultCallback: (param0: boolean, param1: number) => void, anchor: EntityAnchorArgument$Anchor, signingContext: CommandSigningContext, chatMessageChainer: (param0: CompletableFuture<Object>, param1: (param0: Object | null) => void) => void)
     readonly anchor: EntityAnchorArgument$Anchor;
     readonly chatMessageChainer: (param0: CompletableFuture<Object>, param1: (param0: Object | null) => void) => void;
     // private context: PermissionContext;

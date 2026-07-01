@@ -10,7 +10,6 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IdentNode extends Expression implements FunctionCall, PropertyKey {
-    private constructor(identNode: IdentNode, name: string, nameTS: TruffleString, flags: number)
     constructor(token: number, finish: number, name: TruffleString)
     // private flags: number;
     readonly name: string;

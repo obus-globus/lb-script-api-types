@@ -4,7 +4,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BiMappingsBase extends Object implements BiMappings {
     static of(paramarg0: Mappings): BiMappings;
     static of(paramarg0: Mappings, paramarg1: Mappings): BiMappings;
-    private constructor(arg0: Mappings, arg1: BiMappingsBase)
     constructor(arg0: Mappings, arg1: Mappings)
     // private inverse: BiMappingsBase;
     // private mappings: Mappings;

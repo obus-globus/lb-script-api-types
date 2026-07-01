@@ -11,7 +11,6 @@ export class Waypoint$Icon extends Object {
     static NULL: Waypoint$Icon;
     static STREAM_CODEC: StreamCodec<ByteBuf, Waypoint$Icon>;
     constructor()
-    private constructor(style: ResourceKey<WaypointStyleAsset>, color: Optional<number>)
     color: Optional<number>;
     style: ResourceKey<WaypointStyleAsset>;
     cloneAndAssignStyle(livingEntity: LivingEntity): Waypoint$Icon;

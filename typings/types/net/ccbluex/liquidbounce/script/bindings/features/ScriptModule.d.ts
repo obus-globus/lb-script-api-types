@@ -5,17 +5,23 @@ import type { Event } from '../../../../../../net/ccbluex/liquidbounce/event/Eve
 import type { ClientModule } from '../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { PolyglotScript } from '../../../../../../net/ccbluex/liquidbounce/script/PolyglotScript.d.ts'
 import type { Value as Value_2 } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
+/**
+ * A client module defined by a script - the object passed to a `registerModule` callback. Register event handlers on it with `on(...)`, expose settings, and it participates in the client's module system.
+ */
 export class ScriptModule extends ClientModule {
     constructor(script: PolyglotScript, moduleObject: { [key: string]: Object })
     // private _description: string | null;
     // private _values: { [key: string]: Value<Object> };
     description: () => string | null;
     // private events: { [key: string]: Value_2 };
+    /**
+     * The script that owns this module.
+     */
     readonly script: PolyglotScript;
     /**
      * Allows the user to access values by typing module.settings.<valuename>
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:59}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L59 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:59}
      */
     readonly settings: { [key: string]: Value<Object> };
     tag: string | null;
@@ -27,7 +33,7 @@ export class ScriptModule extends ClientModule {
      * @param eventName Name of the event.
      * @param handler JavaScript function used to handle the event.   1. `() => void` (enable/disable)   2. `(Event) => void` (handler<T>)   3. `async (Event) => void` (sequenceHandler<T>)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:87}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt#L87 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.kt:87}
      */
     on(eventName: string, handler: Value_2): void;
     onDisabled(): void;

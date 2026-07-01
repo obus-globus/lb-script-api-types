@@ -54,7 +54,6 @@ export class RuleBasedBreakIterator extends BreakIterator {
     static registerInstance(paramiter: BreakIterator, paramlocale: Locale, paramkind: number): Object;
     static registerInstance(paramiter: BreakIterator, paramlocale: ULocale, paramkind: number): Object;
     static unregister(paramkey: Object): boolean;
-    private constructor()
     constructor(rules: string)
     // private fBreakCache: RuleBasedBreakIterator$BreakCache;
     // private fDictionaryCache: RuleBasedBreakIterator$DictionaryCache;

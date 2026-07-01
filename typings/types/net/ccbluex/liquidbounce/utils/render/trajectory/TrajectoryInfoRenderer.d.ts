@@ -19,18 +19,19 @@ export class TrajectoryInfoRenderer extends Object {
     static getHypotheticalTrajectory(paramarg0: Entity, paramarg1: TrajectoryInfo, paramarg2: TrajectoryType, paramarg3: Rotation): TrajectoryInfoRenderer;
     static getHypotheticalTrajectory(paramarg0: Entity, paramarg1: TrajectoryInfo, paramarg2: TrajectoryType, paramarg3: Rotation, paramarg4: ItemStack): TrajectoryInfoRenderer;
     static getHypotheticalTrajectory(paramarg0: Entity, paramarg1: TrajectoryInfo, paramarg2: TrajectoryType, paramarg3: Rotation, paramarg4: ItemStack, paramarg5: number): TrajectoryInfoRenderer;
-    constructor(owner: Entity, icon: ItemStack, velocity: Vec3, pos: Vec3, trajectoryInfo: TrajectoryInfo, trajectoryType: TrajectoryType, type: TrajectoryInfoRenderer$Type, renderOffset: Vec3)
+    constructor(simulationOwner: Entity, displayOwner: Entity | null, icon: ItemStack, velocity: Vec3, pos: Vec3, trajectoryInfo: TrajectoryInfo, trajectoryType: TrajectoryType, type: TrajectoryInfoRenderer$Type, renderOffset: Vec3)
+    readonly displayOwner: Entity | null;
     // private hitbox: AABB;
     readonly icon: ItemStack;
     // private mutableBlockPos: BlockPos$MutableBlockPos;
-    readonly owner: Entity;
     // private pos: Vec3;
     // private renderOffset: Vec3;
+    readonly simulationOwner: Entity;
     readonly trajectoryInfo: TrajectoryInfo;
     readonly trajectoryType: TrajectoryType;
     readonly type: TrajectoryInfoRenderer$Type;
     // private velocity: Vec3;
     // private checkForHits(posBefore: Vec3, posAfter: Vec3): Pair<HitResult, Vec3> | null;
-    drawTrajectoryForProjectile(env: WorldRenderEnvironment, maxTicks: number, partialTicks: number, trajectoryColor: Color4b, blockHitColor: Color4b | null, entityHitColor: Color4b | null): TrajectoryInfoRenderer$SimulationResult;
+    drawTrajectoryForProjectile(env: WorldRenderEnvironment, maxTicks: number, partialTicks: number, trajectoryColor: Color4b, blockHitColor: Color4b | null, entityHitColor: Color4b | null, lineWidth: number): TrajectoryInfoRenderer$SimulationResult;
     runSimulation(maxTicks: number): TrajectoryInfoRenderer$SimulationResult;
 }

@@ -13,7 +13,6 @@ export class CharArraySet$Spliterator extends Object implements CharSpliterator 
     static SORTED: number;
     static SUBSIZED: number;
     constructor(null_: (Object | null)[])
-    private constructor(null_: (Object | null)[], arg1: number, arg2: number, arg3: boolean)
     // private hasSplit: boolean;
     // private max: number;
     // private pos: number;

@@ -7,7 +7,6 @@ import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Key } from '../../../../java/security/Key.d.ts'
 import type { SecretKey } from '../../../../javax/crypto/SecretKey.d.ts'
 export class DefaultMacAlgorithm extends AbstractSecureDigestAlgorithm<SecretKey, SecretKey> implements MacAlgorithm {
-    private constructor(arg0: number)
     constructor(arg0: string, arg1: string, arg2: number)
     // private minKeyBitLength: number;
     // private assertAlgorithmName(arg0: SecretKey, arg1: boolean): void;

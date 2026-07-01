@@ -8,7 +8,6 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AccessNode extends BaseNode {
-    private constructor(accessNode: AccessNode, base: Expression, property: TruffleString, isSuper: boolean)
     constructor(token: number, finish: number, base: Expression, property: TruffleString)
     constructor(token: number, finish: number, base: Expression, property: TruffleString, isSuper: boolean, isPrivate: boolean, optional: boolean, optionalChain: boolean)
     // private isPrivate: boolean;

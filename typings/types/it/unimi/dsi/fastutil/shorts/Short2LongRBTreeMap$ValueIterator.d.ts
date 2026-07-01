@@ -2,7 +2,6 @@ import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/long
 import type { Short2LongRBTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/shorts/Short2LongRBTreeMap$TreeIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Short2LongRBTreeMap$ValueIterator extends Short2LongRBTreeMap$TreeIterator implements LongListIterator {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add(arg0: number): void;
     next(): number;

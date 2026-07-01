@@ -1,4 +1,3 @@
-import type { CaseFormat$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { CharMatcher } from '../../../../com/google/common/base/CharMatcher.d.ts'
 import type { Converter } from '../../../../com/google/common/base/Converter.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
@@ -13,8 +12,7 @@ export class CaseFormat extends Enum<CaseFormat> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): CaseFormat;
     static values(): (Object | null)[];
-    private constructor(wordBoundary: CharMatcher, wordSeparator: string)
-    constructor(arg2: CharMatcher, arg3: string, arg4: CaseFormat$1)
+    constructor(arg2: CharMatcher, arg3: string, arg4: CaseFormat)
     // private wordBoundary: CharMatcher;
     // private wordSeparator: string;
     convert(format: CaseFormat, s: string): string;

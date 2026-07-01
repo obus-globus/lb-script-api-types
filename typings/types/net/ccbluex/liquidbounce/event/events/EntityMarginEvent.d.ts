@@ -1,5 +1,8 @@
 import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
+/**
+ * Fires when an entity's hitbox margin (used for hit detection) is adjusted, exposing the entity and the margin.
+ */
 export class EntityMarginEvent extends Event {
     constructor(entity: Entity, margin: number)
     readonly entity: Entity;

@@ -25,7 +25,6 @@ export class ChatReportScreen extends AbstractReportScreen<ChatReport$Builder> {
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(lastScreen: Screen, reportingContext: ReportingContext, playerId: UUID)
     constructor(lastScreen: Screen, reportingContext: ReportingContext, draft: ChatReport)
-    private constructor(lastScreen: Screen, reportingContext: ReportingContext, reportBuilder: ChatReport$Builder)
     // private commentBox: MultiLineEditBox;
     // private selectMessagesButton: Button;
     // private selectReasonButton: Button;

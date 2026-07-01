@@ -12,7 +12,6 @@ export class SplittableRandom extends Object implements RandomGenerator, RandomG
     static of(paramarg0: string): RandomGenerator$SplittableGenerator;
     constructor()
     constructor(arg0: number)
-    private constructor(arg0: number, arg1: number)
     // private gamma: number;
     // private proxy: SplittableRandom$AbstractSplittableGeneratorProxy;
     // private seed: number;

@@ -6,7 +6,6 @@ export class FeatureSetBuilder$ClassSupportBuilder extends Object {
     constructor()
     constructor(arg0: boolean)
     constructor(arg0: FeatureSet$ClassSupport)
-    private constructor(arg0: FeatureSetBuilder$NameFeatureBuilder, arg1: boolean)
     // private hasRepackaging: boolean;
     // private names: FeatureSetBuilder$NameFeatureBuilder;
     build(): FeatureSet$ClassSupport;

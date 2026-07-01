@@ -35,7 +35,6 @@ export class DecimalFormatSymbols extends Object implements Serializable, Clonea
     // private serialVersionOnStream: number;
     readonly zeroDigit: string;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     // private findNonFormatChar(arg0: string, arg1: string): string;
     getCurrency(): Currency;

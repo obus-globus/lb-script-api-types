@@ -10,7 +10,6 @@ export class Float2ReferenceAVLTreeMap$Entry<V extends unknown> extends Abstract
     balance(): number;
     balance(arg0: number): void;
     clone(): Float2ReferenceAVLTreeMap$Entry<V>;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

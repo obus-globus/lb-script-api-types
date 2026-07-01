@@ -26,7 +26,6 @@ import type { LevelEvent } from '../../../../../net/raphimc/viabedrock/protocol/
 import type { NoteBlockInstrument } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/NoteBlockInstrument.d.ts'
 import type { ParticleType } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ParticleType.d.ts'
 import type { SharedTypes_Legacy_ActorDamageCause } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/SharedTypes_Legacy_ActorDamageCause.d.ts'
-import type { SharedTypes_Legacy_LevelSoundEvent } from '../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/SharedTypes_Legacy_LevelSoundEvent.d.ts'
 export class BedrockMappingData extends MappingDataBase {
     constructor()
     readonly bedrockBiomeDefinitions: Map$Entry<string, Tag>[];
@@ -47,7 +46,7 @@ export class BedrockMappingData extends MappingDataBase {
     readonly bedrockItemUpgrader: ItemUpgrader;
     readonly bedrockLegacyBlockStates: { [key: string]: any };
     readonly bedrockLegacyBlocks: { [key: string]: number };
-    readonly bedrockLevelSoundEvents: { [key in SharedTypes_Legacy_LevelSoundEvent]: { [key: string]: SoundDefinitions$ConfiguredSound } };
+    readonly bedrockLevelSoundEvents: { [key: string]: { [key: string]: SoundDefinitions$ConfiguredSound } };
     readonly bedrockMetaItems: string[];
     readonly bedrockNoteBlockInstrumentSounds: { [key in NoteBlockInstrument]: string };
     readonly bedrockResourcePacks: Map<ResourcePack$Key, ResourcePack>;
@@ -105,7 +104,7 @@ export class BedrockMappingData extends MappingDataBase {
     getBedrockItemUpgrader(): ItemUpgrader;
     getBedrockLegacyBlockStates(): { [key: string]: any };
     getBedrockLegacyBlocks(): { [key: string]: number };
-    getBedrockLevelSoundEvents(): { [key in SharedTypes_Legacy_LevelSoundEvent]: { [key: string]: SoundDefinitions$ConfiguredSound } };
+    getBedrockLevelSoundEvents(): { [key: string]: { [key: string]: SoundDefinitions$ConfiguredSound } };
     getBedrockMetaItems(): string[];
     getBedrockNoteBlockInstrumentSounds(): { [key in NoteBlockInstrument]: string };
     getBedrockResourcePacks(): Map<ResourcePack$Key, ResourcePack>;

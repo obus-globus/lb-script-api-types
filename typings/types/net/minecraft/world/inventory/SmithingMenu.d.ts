@@ -39,7 +39,6 @@ export class SmithingMenu extends ItemCombinerMenu {
     static isValidQuickcraftType(paramtype: number, paramplayer: Player): boolean;
     constructor(containerId: number, inventory: (Object | null)[])
     constructor(containerId: number, inventory: (Object | null)[], access: ContainerLevelAccess)
-    private constructor(containerId: number, inventory: (Object | null)[], access: ContainerLevelAccess, level: Level)
     // private additionItemTest: RecipePropertySet;
     // private baseItemTest: RecipePropertySet;
     // private hasRecipeError: DataSlot;

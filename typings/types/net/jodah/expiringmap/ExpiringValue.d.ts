@@ -4,7 +4,6 @@ import type { ExpirationPolicy } from '../../../net/jodah/expiringmap/Expiration
 export class ExpiringValue<V extends unknown> extends Object {
     constructor(arg0: V)
     constructor(arg0: V, arg1: number, arg2: TimeUnit)
-    private constructor(arg0: V, arg1: number, arg2: TimeUnit, arg3: ExpirationPolicy)
     constructor(arg0: V, arg1: ExpirationPolicy)
     constructor(arg0: V, arg1: ExpirationPolicy, arg2: number, arg3: TimeUnit)
     readonly duration: number;

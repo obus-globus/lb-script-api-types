@@ -8,7 +8,6 @@ export class BedrockBiomeArray extends Object implements DataPalette, Cloneable 
     // private biomes: number[];
     addId(arg0: number): void;
     clear(): void;
-    protected clone(): Object;
     clone(): BedrockBiomeArray;
     idAt(arg0: number, arg1: number, arg2: number): number;
     idAt(arg0: number): number;

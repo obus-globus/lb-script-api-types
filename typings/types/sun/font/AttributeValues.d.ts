@@ -58,7 +58,6 @@ export class AttributeValues extends Object implements Cloneable {
     anyDefined(arg0: number): boolean;
     anyNonDefault(arg0: number): boolean;
     applyIMHighlight(): AttributeValues;
-    protected clone(): Object;
     clone(): AttributeValues;
     defineAll(arg0: number): void;
     equals(arg0: Object | null): boolean;

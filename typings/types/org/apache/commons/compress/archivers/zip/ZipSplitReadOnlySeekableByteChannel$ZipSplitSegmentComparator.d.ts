@@ -1,4 +1,3 @@
-import type { ZipSplitReadOnlySeekableByteChannel$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Path } from '../../../../../../java/nio/file/Path.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
@@ -18,8 +17,7 @@ export class ZipSplitReadOnlySeekableByteChannel$ZipSplitSegmentComparator exten
     static nullsFirst(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static reverseOrder(): (param0: Object) => boolean;
-    private constructor()
-    constructor(arg0: ZipSplitReadOnlySeekableByteChannel$1)
+    constructor(arg0: any)
     compare(arg0: Path[], arg1: Path[]): number;
     reversed(): (param0: Object) => boolean;
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;

@@ -2,7 +2,6 @@ import type { CharListIterator } from '../../../../../it/unimi/dsi/fastutil/char
 import type { Float2CharAVLTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/floats/Float2CharAVLTreeMap$TreeIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Float2CharAVLTreeMap$ValueIterator extends Float2CharAVLTreeMap$TreeIterator implements CharListIterator {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add(arg0: string): void;
     next(): string;

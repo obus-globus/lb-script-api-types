@@ -1,4 +1,3 @@
-import type { AccumulatorPathVisitor$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { IOException } from '../../../../../java/io/IOException.d.ts'
 import type { FileVisitResult } from '../../../../../java/nio/file/FileVisitResult.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
@@ -19,8 +18,7 @@ export class AccumulatorPathVisitor extends CountingPathVisitor {
     static withLongCounters(paramarg0: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, paramarg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult): AccumulatorPathVisitor;
     static withLongCounters(): CountingPathVisitor;
     constructor()
-    private constructor(arg0: AccumulatorPathVisitor$Builder)
-    constructor(arg0: AccumulatorPathVisitor$Builder, arg1: AccumulatorPathVisitor$1)
+    constructor(arg0: AccumulatorPathVisitor$Builder, arg1: any)
     constructor(arg0: Counters$PathCounters)
     constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult)
     constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg3: (param0: Path[], param1: IOException) => FileVisitResult)

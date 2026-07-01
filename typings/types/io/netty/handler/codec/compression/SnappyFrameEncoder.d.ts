@@ -5,7 +5,6 @@ import type { Snappy } from '../../../../../io/netty/handler/codec/compression/S
 export class SnappyFrameEncoder extends MessageToByteEncoder<ByteBuf> {
     static snappyEncoderWithJumboFrames(): SnappyFrameEncoder;
     constructor()
-    private constructor(arg0: number)
     // private sliceSize: number;
     // private snappy: Snappy;
     // private started: boolean;

@@ -12,7 +12,6 @@ export class ClientboundHelloPacket extends Object implements Packet<ClientLogin
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundHelloPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(serverId: string, publicKey: number[], challenge: number[], shouldAuthenticate: boolean)
-    private constructor(input: FriendlyByteBuf)
     readonly challenge: number[];
     readonly publicKey: number[];
     readonly serverId: string;

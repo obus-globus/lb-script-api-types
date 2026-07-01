@@ -2,18 +2,18 @@ import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class TextPacketType extends Enum<TextPacketType> {
-    static announcement: TextPacketType;
-    static chat: TextPacketType;
-    static jukeboxPopup: TextPacketType;
-    static popup: TextPacketType;
-    static raw: TextPacketType;
-    static systemMessage: TextPacketType;
-    static textObject: TextPacketType;
-    static textObjectAnnouncement: TextPacketType;
-    static textObjectWhisper: TextPacketType;
-    static tip: TextPacketType;
-    static translate: TextPacketType;
-    static whisper: TextPacketType;
+    static Announcement: TextPacketType;
+    static Chat: TextPacketType;
+    static JukeboxPopup: TextPacketType;
+    static Popup: TextPacketType;
+    static Raw: TextPacketType;
+    static SystemMessage: TextPacketType;
+    static TextObject: TextPacketType;
+    static TextObjectAnnouncement: TextPacketType;
+    static TextObjectWhisper: TextPacketType;
+    static Tip: TextPacketType;
+    static Translate: TextPacketType;
+    static Whisper: TextPacketType;
     static getByName(paramarg0: string): TextPacketType;
     static getByName(paramarg0: string, paramarg1: TextPacketType): TextPacketType;
     static getByValue(paramarg0: number): TextPacketType;
@@ -25,5 +25,5 @@ export class TextPacketType extends Enum<TextPacketType> {
     private constructor(arg2: TextPacketType)
     readonly value: number;
     getValue(): number;
-    name(): "raw" | "chat" | "translate" | "popup" | "jukeboxPopup" | "tip" | "systemMessage" | "whisper" | "announcement" | "textObjectWhisper" | "textObject" | "textObjectAnnouncement";
+    name(): "Raw" | "Chat" | "Translate" | "Popup" | "JukeboxPopup" | "Tip" | "SystemMessage" | "Whisper" | "Announcement" | "TextObjectWhisper" | "TextObject" | "TextObjectAnnouncement";
 }

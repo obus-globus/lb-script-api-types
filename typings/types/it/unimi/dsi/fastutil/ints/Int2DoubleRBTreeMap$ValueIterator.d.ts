@@ -2,7 +2,6 @@ import type { DoubleListIterator } from '../../../../../it/unimi/dsi/fastutil/do
 import type { Int2DoubleRBTreeMap$TreeIterator } from '../../../../../it/unimi/dsi/fastutil/ints/Int2DoubleRBTreeMap$TreeIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Int2DoubleRBTreeMap$ValueIterator extends Int2DoubleRBTreeMap$TreeIterator implements DoubleListIterator {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add(arg0: number): void;
     next(): number;

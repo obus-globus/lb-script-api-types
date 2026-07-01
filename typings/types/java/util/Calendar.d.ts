@@ -90,7 +90,6 @@ export abstract class Calendar extends Object implements Serializable, Cloneable
     clear(): void;
     clear(arg0: number): void;
     clone(): Object;
-    protected clone(): Object;
     compareTo(arg0: Calendar): number;
     // private compareTo(arg0: number): number;
     complete(): void;

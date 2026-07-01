@@ -6,7 +6,6 @@ import type { RuntimeModuleData$Companion } from '../../../../../../../../kotlin
 import type { DeserializationComponents } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/DeserializationComponents.d.ts'
 export class RuntimeModuleData extends Object {
     static Companion: RuntimeModuleData$Companion;
-    private constructor(arg0: DeserializationComponents, arg1: PackagePartScopeCache)
     constructor(arg0: DeserializationComponents, arg1: PackagePartScopeCache, arg2: DefaultConstructorMarker)
     readonly deserialization: DeserializationComponents;
     readonly packagePartScopeCache: PackagePartScopeCache;

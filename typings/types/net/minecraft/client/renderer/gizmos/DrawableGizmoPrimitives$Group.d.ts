@@ -6,7 +6,6 @@ import type { DrawableGizmoPrimitives$Quad } from '../../../../../net/minecraft/
 import type { DrawableGizmoPrimitives$Text } from '../../../../../net/minecraft/client/renderer/gizmos/DrawableGizmoPrimitives$Text.d.ts'
 import type { DrawableGizmoPrimitives$TriangleFan } from '../../../../../net/minecraft/client/renderer/gizmos/DrawableGizmoPrimitives$TriangleFan.d.ts'
 export class DrawableGizmoPrimitives$Group extends Record {
-    private constructor(opaque: boolean)
     constructor(opaque: boolean, lines: DrawableGizmoPrimitives$Line[], quads: DrawableGizmoPrimitives$Quad[], triangleFans: DrawableGizmoPrimitives$TriangleFan[], texts: DrawableGizmoPrimitives$Text[], points: DrawableGizmoPrimitives$Point[])
     // private lines: DrawableGizmoPrimitives$Line[];
     // private opaque: boolean;

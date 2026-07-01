@@ -2,8 +2,6 @@ import type { ThreadLocal } from '../../java/lang/ThreadLocal.d.ts'
 import type { ThreadLocal$ThreadLocalMap$Entry } from '../../java/lang/ThreadLocal$ThreadLocalMap$Entry.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class ThreadLocal$ThreadLocalMap extends Object {
-    private constructor()
-    private constructor(arg0: ThreadLocal$ThreadLocalMap)
     constructor(arg0: ThreadLocal<Object>, arg1: Object)
     // private size: number;
     // private table: ThreadLocal$ThreadLocalMap$Entry[];

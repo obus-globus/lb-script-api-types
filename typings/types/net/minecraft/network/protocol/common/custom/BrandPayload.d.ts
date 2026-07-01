@@ -16,7 +16,6 @@ export class BrandPayload extends Record implements CustomPacketPayload {
     static codec(paramfallback: CustomPacketPayload$FallbackProvider<FriendlyByteBuf>, paramtypes: CustomPacketPayload$TypeAndCodec<any, any>[]): StreamCodec<FriendlyByteBuf, CustomPacketPayload>;
     static createType(paramid: string): CustomPacketPayload$Type<CustomPacketPayload>;
     constructor(brand: string)
-    private constructor(input: FriendlyByteBuf)
     // private brand: string;
     brand(): string;
     equals(o: Object | null): boolean;

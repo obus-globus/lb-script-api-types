@@ -1,12 +1,10 @@
-import type { RandomAccessFileOutputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { RandomAccessFile } from '../../../../../java/io/RandomAccessFile.d.ts'
 import type { RandomAccessFileOutputStream$Builder } from '../../../../../org/apache/commons/io/output/RandomAccessFileOutputStream$Builder.d.ts'
 export class RandomAccessFileOutputStream extends OutputStream {
     static builder(): RandomAccessFileOutputStream$Builder;
     static nullOutputStream(): OutputStream;
-    private constructor(arg0: RandomAccessFileOutputStream$Builder)
-    constructor(arg0: RandomAccessFileOutputStream$Builder, arg1: RandomAccessFileOutputStream$1)
+    constructor(arg0: RandomAccessFileOutputStream$Builder, arg1: any)
     readonly randomAccessFile: RandomAccessFile;
     close(): void;
     flush(): void;

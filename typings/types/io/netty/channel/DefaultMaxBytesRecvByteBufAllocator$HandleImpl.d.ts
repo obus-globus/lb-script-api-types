@@ -1,4 +1,3 @@
-import type { DefaultMaxBytesRecvByteBufAllocator$1 } from '../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { ByteBufAllocator } from '../../../io/netty/buffer/ByteBufAllocator.d.ts'
 import type { ChannelConfig } from '../../../io/netty/channel/ChannelConfig.d.ts'
@@ -7,8 +6,7 @@ import type { RecvByteBufAllocator$ExtendedHandle } from '../../../io/netty/chan
 import type { UncheckedBooleanSupplier } from '../../../io/netty/util/UncheckedBooleanSupplier.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class DefaultMaxBytesRecvByteBufAllocator$HandleImpl extends Object implements RecvByteBufAllocator$ExtendedHandle {
-    private constructor(null_: DefaultMaxBytesRecvByteBufAllocator)
-    constructor(null_: DefaultMaxBytesRecvByteBufAllocator, arg1: DefaultMaxBytesRecvByteBufAllocator$1)
+    constructor(null_: DefaultMaxBytesRecvByteBufAllocator, arg1: any)
     // private attemptBytesRead: number;
     // private bytesToRead: number;
     // private defaultMaybeMoreSupplier: UncheckedBooleanSupplier;

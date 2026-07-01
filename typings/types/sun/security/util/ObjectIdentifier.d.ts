@@ -9,7 +9,6 @@ export class ObjectIdentifier extends Object implements Serializable {
     static of(paramarg0: string): ObjectIdentifier;
     static of(paramarg0: KnownOIDs): ObjectIdentifier;
     constructor(arg0: number[])
-    private constructor(arg0: string)
     constructor(arg0: DerInputStream)
     // private componentLen: number;
     // private components: Object;

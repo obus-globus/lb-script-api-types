@@ -8,7 +8,6 @@ import type { Clinit } from '../../../../../org/spongepowered/asm/mixin/transfor
 export class MixinApplicatorEnum$EnumClinit extends Clinit {
     static prepare(paramarg0: AbstractInsnNode[]): Clinit;
     constructor(null_: MixinApplicatorEnum)
-    private constructor(null_: MixinApplicatorEnum, arg1: AbstractInsnNode[])
     appendInsns(arg0: IMixinInfo, arg1: MethodNode, arg2: Map<LabelNode, LabelNode>): void;
     // private concatEnumValues(): AbstractInsnNode[];
     // private isCurrentOrdinalCall(arg0: AbstractInsnNode): boolean;

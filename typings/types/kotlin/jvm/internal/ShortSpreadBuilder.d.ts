@@ -4,5 +4,4 @@ export class ShortSpreadBuilder extends PrimitiveSpreadBuilder<number[]> {
     // private values: number[];
     add(value: number): void;
     toArray(): number[];
-    protected toArray(values: number[], result: number[]): number[];
 }

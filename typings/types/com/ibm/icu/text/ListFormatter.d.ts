@@ -13,7 +13,6 @@ export class ListFormatter extends Object {
     static getInstance(paramarg0: Locale): ListFormatter;
     static getInstance(paramarg0: Locale, paramarg1: ListFormatter$Type, paramarg2: ListFormatter$Width): ListFormatter;
     constructor(arg0: string, arg1: string, arg2: string, arg3: string)
-    private constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: ULocale)
     readonly locale: ULocale;
     // private middle: string;
     // private patternHandler: ListFormatter$PatternHandler;

@@ -17,7 +17,6 @@ export class FloatSpliterators$EmptySpliterator extends Object implements FloatS
     constructor()
     characteristics(): number;
     clone(): Object;
-    protected clone(): Object;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => number;

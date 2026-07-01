@@ -4,7 +4,7 @@ import type { ExpressionInterpreter } from '../../../../team/unnamed/mocha/runti
 import type { Function$Argument } from '../../../../team/unnamed/mocha/runtime/value/Function$Argument.d.ts'
 import type { Value } from '../../../../team/unnamed/mocha/runtime/value/Value.d.ts'
 export class ExpressionInterpreter$FunctionArgumentImpl extends Object implements Function$Argument {
-    constructor(null_: ExpressionInterpreter<T>, arg1: Expression)
+    constructor(null_: ExpressionInterpreter<Object>, arg1: Expression)
     // private expression: Expression;
     eval(): Value;
     expression(): Expression;

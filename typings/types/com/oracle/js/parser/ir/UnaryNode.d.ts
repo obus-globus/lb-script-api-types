@@ -7,7 +7,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class UnaryNode extends Expression implements Assignment<Expression> {
-    private constructor(unaryNode: UnaryNode, expression: Expression)
     constructor(token: number, rhs: Expression)
     constructor(token: number, start: number, finish: number, expression: Expression)
     readonly expression: Expression;

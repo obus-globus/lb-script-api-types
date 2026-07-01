@@ -8,7 +8,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class WhileNode extends LoopNode {
-    private constructor(whileNode: WhileNode, test: JoinPredecessorExpression, body: Block, controlFlowEscapes: boolean)
     constructor(lineNumber: number, token: number, finish: number, isDoWhile: boolean, test: JoinPredecessorExpression, body: Block)
     // private isDoWhile: boolean;
     accept(lc: LexicalContext, visitor: NodeVisitor<LexicalContext>): Node;

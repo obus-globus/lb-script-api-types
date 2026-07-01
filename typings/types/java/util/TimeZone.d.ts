@@ -20,7 +20,6 @@ export abstract class TimeZone extends Object implements Serializable, Cloneable
     readonly ID: string;
     // private zoneId: ZoneId;
     clone(): Object;
-    protected clone(): Object;
     getDSTSavings(): number;
     getDisplayName(): string;
     getDisplayName(arg0: Locale): string;

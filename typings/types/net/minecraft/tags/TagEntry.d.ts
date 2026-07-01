@@ -13,7 +13,6 @@ export class TagEntry extends Object implements TagEntryAccessor {
     static optionalTag(paramid: Identifier): TagEntry;
     static tag(paramid: Identifier): TagEntry;
     constructor(id: Identifier, tag: boolean, required: boolean)
-    private constructor(elementOrTag: ExtraCodecs$TagOrElementLocation, required: boolean)
     id: Identifier;
     required: boolean;
     tag: boolean;

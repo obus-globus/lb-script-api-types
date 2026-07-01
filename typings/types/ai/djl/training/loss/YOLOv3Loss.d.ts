@@ -1,4 +1,3 @@
-import type { YOLOv3Loss$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { NDManager } from '../../../../ai/djl/ndarray/NDManager.d.ts'
 import type { Shape } from '../../../../ai/djl/ndarray/types/Shape.d.ts'
@@ -48,8 +47,7 @@ export class YOLOv3Loss extends Loss {
     static softmaxCrossEntropyLoss(): SoftmaxCrossEntropyLoss;
     static softmaxCrossEntropyLoss(paramarg0: string): SoftmaxCrossEntropyLoss;
     static softmaxCrossEntropyLoss(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: boolean): SoftmaxCrossEntropyLoss;
-    private constructor(arg0: YOLOv3Loss$Builder)
-    constructor(arg0: YOLOv3Loss$Builder, arg1: YOLOv3Loss$1)
+    constructor(arg0: YOLOv3Loss$Builder, arg1: any)
     // private anchors: number[];
     // private boxAttr: number;
     // private ignoreThreshold: number;

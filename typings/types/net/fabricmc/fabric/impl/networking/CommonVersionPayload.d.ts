@@ -16,7 +16,6 @@ export class CommonVersionPayload extends Record implements CustomPacketPayload 
     static codec(paramfallback: CustomPacketPayload$FallbackProvider<FriendlyByteBuf>, paramtypes: CustomPacketPayload$TypeAndCodec<any, any>[]): StreamCodec<FriendlyByteBuf, CustomPacketPayload>;
     static createType(paramid: string): CustomPacketPayload$Type<CustomPacketPayload>;
     constructor(versions: number[])
-    private constructor(arg0: FriendlyByteBuf)
     // private versions: number[];
     equals(arg0: Object | null): boolean;
     hashCode(): number;

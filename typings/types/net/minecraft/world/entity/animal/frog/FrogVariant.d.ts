@@ -23,7 +23,6 @@ export class FrogVariant extends Record implements PriorityProvider<SpawnContext
     static pick(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramrandomSource: RandomSource, paramcontext: Object | null): Optional<Object>;
     static select(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramcontext: Object | null): Stream<Object>;
     static single(paramcheck: Object | null, parampriority: number): PriorityProvider$Selector<Object, any>[];
-    private constructor(assetInfo: ClientAsset$ResourceTexture)
     constructor(assetInfo: ClientAsset$ResourceTexture, spawnConditions: SpawnPrioritySelectors)
     // private assetInfo: ClientAsset$ResourceTexture;
     // private spawnConditions: SpawnPrioritySelectors;

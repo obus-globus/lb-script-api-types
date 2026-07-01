@@ -1,4 +1,3 @@
-import type { BertBlock$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { NDManager } from '../../../../ai/djl/ndarray/NDManager.d.ts'
 import type { DataType } from '../../../../ai/djl/ndarray/types/DataType.d.ts'
@@ -17,8 +16,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BertBlock extends AbstractBlock {
     static builder(): BertBlock$Builder;
     static createAttentionMaskFromInputMask(paramarg0: NDArray, paramarg1: NDArray): NDArray;
-    private constructor(arg0: BertBlock$Builder)
-    constructor(arg0: BertBlock$Builder, arg1: BertBlock$1)
+    constructor(arg0: BertBlock$Builder, arg1: any)
     // private embeddingDropout: Dropout;
     // private embeddingNorm: BatchNorm;
     readonly embeddingSize: number;

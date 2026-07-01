@@ -6,7 +6,6 @@ export class Reference2CharFunctions$EmptyFunction<K extends unknown> extends Ab
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): string;
     defaultReturnValue(arg0: string): void;

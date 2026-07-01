@@ -58,7 +58,6 @@ export class RuleBasedCollator extends Collator implements Cloneable {
     // private adoptTailoring(arg0: CollationTailoring): void;
     // private checkNotFrozen(): void;
     clone(): RuleBasedCollator;
-    protected clone(): Object;
     cloneAsThawed(): RuleBasedCollator;
     compare(arg0: Object, arg1: Object): number;
     compare(arg0: string, arg1: string): number;

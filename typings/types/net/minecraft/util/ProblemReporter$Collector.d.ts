@@ -8,7 +8,6 @@ export class ProblemReporter$Collector extends Object implements ProblemReporter
     static DISCARDING: ProblemReporter;
     static EMPTY_ROOT: () => string;
     constructor()
-    private constructor(parent: ProblemReporter$Collector, path: () => string)
     constructor(root: () => string)
     // private element: () => string;
     // private parent: ProblemReporter$Collector;

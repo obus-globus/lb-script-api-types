@@ -25,7 +25,6 @@ export class PassthroughNDManager extends Object implements NDManager {
     static newBaseManager(paramarg0: string): NDManager;
     static nextUid(): string;
     static subManagerOf(paramarg0: NDResource): NDManager;
-    private constructor()
     constructor(arg0: Engine, arg1: Device)
     readonly device: Device;
     readonly engine: Engine;

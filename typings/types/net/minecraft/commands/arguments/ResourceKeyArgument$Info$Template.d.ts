@@ -6,7 +6,7 @@ import type { ArgumentTypeInfo } from '../../../../net/minecraft/commands/synchr
 import type { ArgumentTypeInfo$Template } from '../../../../net/minecraft/commands/synchronization/ArgumentTypeInfo$Template.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 export class ResourceKeyArgument$Info$Template extends Object implements ArgumentTypeInfo$Template<ResourceKeyArgument<T>> {
-    private constructor(null_: ResourceKeyArgument$Info<T>, registryKey: ResourceKey<T[]>)
+    private constructor(null_: ResourceKeyArgument$Info<Object>, registryKey: ResourceKey<Object[]>)
     // private registryKey: ResourceKey<T[]>;
     instantiate<T extends unknown>(context: CommandBuildContext): ResourceKeyArgument<T>;
     type<T extends unknown>(): ArgumentTypeInfo<ResourceKeyArgument<T>, any>;

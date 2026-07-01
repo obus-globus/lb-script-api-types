@@ -5,7 +5,6 @@ import type { FrameInstance } from '../../../../../com/oracle/truffle/api/frame/
 import type { SourceSection } from '../../../../../com/oracle/truffle/api/source/SourceSection.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DebugException$CatchLocation extends Object {
-    private constructor(session: DebuggerSession, section: SourceSection, frameInstance: FrameInstance, depth: number)
     constructor(section: SourceSection, frameInstance: FrameInstance, depth: number)
     // private depth: number;
     readonly frame: DebugStackFrame;

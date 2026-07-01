@@ -4,7 +4,6 @@ export class KQueueIoEvent extends Object implements IoEvent {
     static newEvent(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): KQueueIoEvent;
     static newEvent(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): KQueueIoEvent;
     constructor()
-    private constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number)
     // private data: number;
     // private fflags: number;
     // private filter: number;

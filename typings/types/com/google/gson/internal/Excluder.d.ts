@@ -19,7 +19,6 @@ export class Excluder extends Object implements TypeAdapterFactory, Cloneable {
     // private serializeInnerClasses: boolean;
     // private version: number;
     clone(): Excluder;
-    protected clone(): Object;
     create<T extends unknown>(arg0: Gson, arg1: TypeToken<T>): TypeAdapter<T>;
     disableInnerClassSerialization(): Excluder;
     excludeClass(arg0: Class<Object>, arg1: boolean): boolean;

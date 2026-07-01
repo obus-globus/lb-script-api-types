@@ -10,7 +10,6 @@ export class Double2BooleanAVLTreeMap$Entry extends AbstractDouble2BooleanMap$Ba
     balance(): number;
     balance(arg0: number): void;
     clone(): Double2BooleanAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

@@ -1,4 +1,3 @@
-import type { TimedSemaphore$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ScheduledExecutorService } from '../../../../../java/util/concurrent/ScheduledExecutorService.d.ts'
 import type { ScheduledFuture } from '../../../../../java/util/concurrent/ScheduledFuture.d.ts'
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
@@ -9,8 +8,7 @@ export class TimedSemaphore extends Object {
     static builder(): TimedSemaphore$Builder;
     constructor(arg0: ScheduledExecutorService, arg1: number, arg2: TimeUnit, arg3: number)
     constructor(arg0: number, arg1: TimeUnit, arg2: number)
-    private constructor(arg0: TimedSemaphore$Builder)
-    constructor(arg0: TimedSemaphore$Builder, arg1: TimedSemaphore$1)
+    constructor(arg0: TimedSemaphore$Builder, arg1: any)
     readonly acquireCount: number;
     // private executorService: ScheduledExecutorService;
     // private lastCallsPerPeriod: number;

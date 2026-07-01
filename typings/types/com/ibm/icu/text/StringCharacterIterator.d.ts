@@ -11,7 +11,6 @@ export class StringCharacterIterator extends Object implements CharacterIterator
     // private pos: number;
     readonly text: string;
     clone(): StringCharacterIterator;
-    protected clone(): Object;
     current(): string;
     equals(arg0: Object | null): boolean;
     first(): string;

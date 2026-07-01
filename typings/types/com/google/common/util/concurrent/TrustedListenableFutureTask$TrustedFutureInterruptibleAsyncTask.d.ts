@@ -5,7 +5,7 @@ import type { TrustedListenableFutureTask } from '../../../../../com/google/comm
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class TrustedListenableFutureTask$TrustedFutureInterruptibleAsyncTask extends InterruptibleTask<ListenableFuture<V>> {
-    constructor(null_: TrustedListenableFutureTask<V>, callable: () => ListenableFuture<V>)
+    constructor(null_: TrustedListenableFutureTask<Object>, callable: () => ListenableFuture<Object>)
     // private callable: () => ListenableFuture<V>;
     afterRanInterruptiblyFailure(error: Throwable): void;
     afterRanInterruptiblySuccess<V extends unknown>(result: ListenableFuture<V>): void;

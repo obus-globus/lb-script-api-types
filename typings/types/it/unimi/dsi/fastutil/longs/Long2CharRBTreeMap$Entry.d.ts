@@ -10,7 +10,6 @@ export class Long2CharRBTreeMap$Entry extends AbstractLong2CharMap$BasicEntry im
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Long2CharRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Long2CharRBTreeMap$Entry;

@@ -2,6 +2,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../../../net/minecraft/core/Direction.d.ts'
+import type { BlockGetter } from '../../../../../../../net/minecraft/world/level/BlockGetter.d.ts'
 import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockState } from '../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 /**
@@ -11,10 +12,11 @@ import type { BlockState } from '../../../../../../../net/minecraft/world/level/
  *
  * Command: {@link CommandXRay}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L123 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:123}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:124}
  */
 export class ModuleXRay extends ClientModule {
     static INSTANCE: ModuleXRay;
+    readonly backgroundOpacity: number;
     readonly blocks: Block[];
     // private defaultBlocks: Block[];
     // private exposedOnly: boolean;
@@ -23,9 +25,19 @@ export class ModuleXRay extends ClientModule {
     /**
      * Resets the block list to the default values
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L284 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:284}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L330 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:330}
      */
     applyDefaults(): void;
+    /**
+     * Keeps vanilla/Sodium face culling unless this is a whitelisted XRay block hidden behind another block.
+     *
+     * @see net.minecraft.client.renderer.block.ModelBlockRenderer.shouldRenderFace
+     * @see net.caffeinemc.mods.sodium.client.render.model.AbstractBlockRenderContext.shouldDrawSide
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L292 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:292}
+     */
+    modifyDrawSide(blockState: BlockState, level: BlockGetter, blockPos: BlockPos, side: Direction, original: boolean): boolean;
+    modifyShouldRenderFace(original: boolean, state: BlockState, otherState: BlockState, side: Direction): boolean;
     onDisabled(): void;
     onEnabled(): void;
     /**
@@ -33,9 +45,12 @@ export class ModuleXRay extends ClientModule {
      * This can be used to exclude blocks that should not be rendered.
      * Also features an option to only render blocks that are exposed to air.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L261 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:261}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L265 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:265}
      */
     shouldRender(blockState: BlockState, blockPos: BlockPos): boolean;
     shouldRender(state: BlockState, otherState: BlockState, side: Direction): boolean;
+    shouldRenderTransparentBackground(blockState: BlockState): boolean;
+    shouldSkipRender(blockState: BlockState, blockPos: BlockPos): boolean;
+    transparentBackgroundAlpha(blockState: BlockState): number;
     valueChangedReload(it: Object): void;
 }

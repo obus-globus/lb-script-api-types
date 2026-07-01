@@ -1,4 +1,3 @@
-import type { ImmutableLongArray$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ImmutableLongArray$Builder } from '../../../../com/google/common/primitives/ImmutableLongArray$Builder.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Spliterator$OfLong } from '../../../../java/util/Spliterator$OfLong.d.ts'
@@ -20,9 +19,7 @@ export class ImmutableLongArray extends Object implements Serializable {
     static of(parame0: number, parame1: number, parame2: number, parame3: number, parame4: number): ImmutableLongArray;
     static of(parame0: number, parame1: number, parame2: number, parame3: number, parame4: number, parame5: number): ImmutableLongArray;
     static of(paramfirst: number, paramrest: number[]): ImmutableLongArray;
-    private constructor(array: number[])
-    private constructor(array: number[], start: number, end: number)
-    constructor(arg0: number[], arg1: number, arg2: number, arg3: ImmutableLongArray$1)
+    constructor(arg0: number[], arg1: number, arg2: number, arg3: any)
     // private array: number[];
     // private end: number;
     // private start: number;

@@ -28,7 +28,6 @@ export class AffineTransform extends Object implements Serializable, Cloneable {
     constructor()
     constructor(arg0: AffineTransform)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number)
-    private constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number, arg6: number)
     constructor(arg0: number[])
     constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number)
     constructor(arg0: number[])
@@ -42,7 +41,6 @@ export class AffineTransform extends Object implements Serializable, Cloneable {
     readonly type: number;
     // private calculateType(): void;
     clone(): Object;
-    protected clone(): Object;
     concatenate(arg0: AffineTransform): void;
     createInverse(): AffineTransform;
     createTransformedShape(arg0: Shape): Shape;

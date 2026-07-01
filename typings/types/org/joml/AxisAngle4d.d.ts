@@ -37,7 +37,6 @@ export class AxisAngle4d extends Object implements Externalizable, Cloneable {
     x: number;
     y: number;
     z: number;
-    protected clone(): Object;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     get(arg0: AxisAngle4d): AxisAngle4d;

@@ -7,7 +7,6 @@ export class Char2BooleanFunctions$Singleton extends AbstractChar2BooleanFunctio
     // private key: string;
     // private value: boolean;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     get(arg0: Object): boolean;

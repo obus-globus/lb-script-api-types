@@ -13,7 +13,6 @@ export class MimeType extends Object implements Externalizable, Cloneable {
     readonly primaryType: string;
     readonly subType: string;
     clone(): Object;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getBaseType(): string;
     getParameter(arg0: string): string;

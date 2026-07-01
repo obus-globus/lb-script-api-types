@@ -19,7 +19,6 @@ export abstract class ClassLoader extends Object {
     static getSystemResources(paramarg0: string): Enumeration<URL>;
     constructor()
     constructor(arg0: ClassLoader)
-    private constructor(arg0: void, arg1: string, arg2: ClassLoader)
     constructor(arg0: string, arg1: ClassLoader)
     addClass(arg0: Class<Object>): void;
     // private checkCerts(arg0: string, arg1: CodeSource): void;

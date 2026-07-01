@@ -13,7 +13,6 @@ export class CompactByteArray extends Object implements Cloneable {
     // private values: number[];
     // private blockTouched(arg0: number): boolean;
     clone(): CompactByteArray;
-    protected clone(): Object;
     compact(): void;
     compact(arg0: boolean): void;
     elementAt(arg0: string): number;

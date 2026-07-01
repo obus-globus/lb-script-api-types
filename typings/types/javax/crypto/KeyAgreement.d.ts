@@ -10,7 +10,6 @@ export class KeyAgreement extends Object {
     static getInstance(paramarg0: string): KeyAgreement;
     static getInstance(paramarg0: string, paramarg1: string): KeyAgreement;
     static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): KeyAgreement;
-    private constructor(arg0: Provider$Service, arg1: Iterator<Provider$Service>, arg2: string)
     constructor(arg0: KeyAgreementSpi, arg1: { [key: string]: any }, arg2: string)
     readonly algorithm: string;
     // private firstService: Provider$Service;

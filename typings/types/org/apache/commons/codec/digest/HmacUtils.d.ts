@@ -49,7 +49,6 @@ export class HmacUtils extends Object {
     static updateHmac(paramarg0: Mac, paramarg1: InputStream): Mac;
     static updateHmac(paramarg0: Mac, paramarg1: string): Mac;
     constructor()
-    private constructor(arg0: Mac)
     constructor(arg0: string, arg1: number[])
     constructor(arg0: string, arg1: string)
     constructor(arg0: HmacAlgorithms, arg1: number[])

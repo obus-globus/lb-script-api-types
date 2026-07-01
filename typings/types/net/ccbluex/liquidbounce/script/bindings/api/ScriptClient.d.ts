@@ -15,20 +15,38 @@ import type { CombatManager } from '../../../../../../net/ccbluex/liquidbounce/u
  *
  * @since 1.0
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt:39}
  */
 export class ScriptClient extends Object {
     static INSTANCE: ScriptClient;
+    /**
+     * The client's combat manager.
+     */
     readonly combatManager: CombatManager;
+    /**
+     * The client's command manager.
+     */
     readonly commandManager: CommandManager;
+    /**
+     * The client's configuration system.
+     */
     readonly configSystem: ConfigSystem;
+    /**
+     * The client's event manager.
+     */
     readonly eventManager: EventManager;
+    /**
+     * The client's module manager.
+     */
     readonly moduleManager: ModuleManager;
+    /**
+     * The client's script manager.
+     */
     readonly scriptManager: ScriptManager;
     /**
      * Shows {@link message} in the client-chat
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt:52}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt:52}
      */
     displayChatMessage(message: string): void;
 }

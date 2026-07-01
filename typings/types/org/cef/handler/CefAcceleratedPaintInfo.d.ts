@@ -6,6 +6,5 @@ export class CefAcceleratedPaintInfo extends Object implements Cloneable {
     format: number;
     height: number;
     width: number;
-    protected clone(): Object;
     clone(): CefAcceleratedPaintInfo;
 }

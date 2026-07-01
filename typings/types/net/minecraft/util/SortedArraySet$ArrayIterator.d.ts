@@ -2,7 +2,7 @@ import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../java/util/Iterator.d.ts'
 export class SortedArraySet$ArrayIterator extends Object implements Iterator<T> {
-    private constructor(null_: T[])
+    private constructor(null_: Object[])
     // private index: number;
     // private last: number;
     forEachRemaining<T extends unknown>(arg0: (param0: T) => void): void;

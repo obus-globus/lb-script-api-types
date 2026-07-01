@@ -15,7 +15,6 @@ export class TicketStorage extends SavedData {
     static CODEC: Codec<TicketStorage>;
     static TYPE: SavedDataType<TicketStorage>;
     constructor()
-    private constructor(tickets: { [key: string]: any }, deactivatedTickets: { [key: string]: any })
     // private chunksWithForcedTickets: (Object | null)[];
     // private deactivatedTickets: { [key: string]: any };
     readonly loadingChunkUpdatedListener: (param0: number, param1: number, param2: boolean) => void;

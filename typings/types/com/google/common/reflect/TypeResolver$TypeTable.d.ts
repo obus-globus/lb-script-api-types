@@ -4,7 +4,6 @@ import type { TypeVariable } from '../../../../java/lang/reflect/TypeVariable.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TypeResolver$TypeTable extends Object {
     constructor()
-    private constructor(map: Map<TypeResolver$TypeVariableKey, Type>)
     // private map: Map<TypeResolver$TypeVariableKey, Type>;
     resolve(var_: TypeVariable<any>): Type;
     resolveInternal(var_: TypeVariable<any>, forDependants: TypeResolver$TypeTable): Type;

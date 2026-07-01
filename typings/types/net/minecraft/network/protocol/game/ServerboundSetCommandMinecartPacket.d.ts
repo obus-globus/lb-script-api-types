@@ -13,7 +13,6 @@ export class ServerboundSetCommandMinecartPacket extends Object implements Packe
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetCommandMinecartPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(entity: number, command: string, trackOutput: boolean)
-    private constructor(input: FriendlyByteBuf)
     readonly command: string;
     // private entity: number;
     readonly trackOutput: boolean;

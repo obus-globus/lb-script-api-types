@@ -25,7 +25,6 @@ export class Cipher extends Object {
     static getMaxAllowedKeyLength(paramarg0: string): number;
     static getMaxAllowedParameterSpec(paramarg0: string): AlgorithmParameterSpec;
     constructor(arg0: CipherSpi, arg1: { [key: string]: any }, arg2: string)
-    private constructor(arg0: CipherSpi, arg1: Provider$Service, arg2: Iterator<Provider$Service>, arg3: string, arg4: Cipher$Transform[])
     constructor(arg0: CipherSpi, arg1: string)
     // private cryptoPerm: CryptoPermission;
     // private exmech: ExemptionMechanism;

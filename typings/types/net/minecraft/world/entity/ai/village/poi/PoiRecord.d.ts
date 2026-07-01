@@ -6,7 +6,6 @@ import type { PoiRecord$Packed } from '../../../../../../../net/minecraft/world/
 import type { PoiType } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiType.d.ts'
 export class PoiRecord extends Object {
     constructor(pos: BlockPos, poiType: Holder<PoiType>, setDirty: () => void)
-    private constructor(pos: BlockPos, poiType: Holder<PoiType>, freeTickets: number, setDirty: () => void)
     readonly freeTickets: number;
     readonly poiType: Holder<PoiType>;
     readonly pos: BlockPos;

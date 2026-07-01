@@ -39,7 +39,6 @@ export class Vector2L extends Object implements Externalizable, Cloneable, Vecto
     add(arg0: Vector2Lc, arg1: Vector2L): Vector2L;
     add(arg0: Vector2ic): Vector2L;
     add(arg0: Vector2ic, arg1: Vector2L): Vector2L;
-    protected clone(): Object;
     clone(): Object;
     distance(arg0: number, arg1: number): number;
     distance(arg0: Vector2Lc): number;

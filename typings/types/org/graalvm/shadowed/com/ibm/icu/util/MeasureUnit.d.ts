@@ -207,7 +207,6 @@ export class MeasureUnit extends Object implements Serializable {
     static getAvailableTypes(): string[];
     static internalGetInstance(paramtype: string, paramsubType: string): MeasureUnit;
     constructor(type: string, subType: string)
-    private constructor(measureUnitImpl: MeasureUnitImpl)
     // private measureUnitImpl: MeasureUnitImpl;
     // private subType: string;
     readonly type: string;

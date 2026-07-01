@@ -14,7 +14,6 @@ export class Area extends Object implements Shape, Cloneable {
     // private curves: Curve[];
     add(arg0: Area): void;
     clone(): Object;
-    protected clone(): Object;
     contains(arg0: Point2D): boolean;
     contains(arg0: Rectangle2D): boolean;
     contains(arg0: number, arg1: number): boolean;

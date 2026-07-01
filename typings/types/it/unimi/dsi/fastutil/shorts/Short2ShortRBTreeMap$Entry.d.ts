@@ -10,7 +10,6 @@ export class Short2ShortRBTreeMap$Entry extends AbstractShort2ShortMap$BasicEntr
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Short2ShortRBTreeMap$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Short2ShortRBTreeMap$Entry;

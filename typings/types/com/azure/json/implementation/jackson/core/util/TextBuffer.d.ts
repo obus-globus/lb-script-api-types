@@ -5,7 +5,6 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class TextBuffer extends Object {
     static fromInitial(paramarg0: string[]): TextBuffer;
     constructor(arg0: BufferRecycler)
-    private constructor(arg0: BufferRecycler, arg1: string[])
     // private _allocator: BufferRecycler;
     // private _currentSegment: string[];
     // private _currentSize: number;

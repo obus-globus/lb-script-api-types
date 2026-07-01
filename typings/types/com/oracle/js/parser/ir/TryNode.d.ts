@@ -9,7 +9,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TryNode extends Statement {
-    private constructor(tryNode: TryNode, body: Block, catchBlocks: Block[], finallyBody: Block)
     constructor(lineNumber: number, token: number, finish: number, body: Block, catchBlocks: Block[], finallyBody: Block)
     readonly body: Block;
     readonly catchBlocks: Block[];

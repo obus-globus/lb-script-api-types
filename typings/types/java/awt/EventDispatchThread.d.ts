@@ -33,7 +33,6 @@ export class EventDispatchThread extends Thread {
     static sleep(paramarg0: number, paramarg1: number): void;
     static startVirtualThread(paramarg0: () => void): Thread;
     static yield(): void;
-    private constructor()
     constructor(arg0: ThreadGroup, arg1: string, arg2: EventQueue)
     // private doDispatch: boolean;
     // private eventFilters: EventFilter[];

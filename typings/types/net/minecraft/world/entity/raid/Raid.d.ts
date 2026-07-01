@@ -32,7 +32,6 @@ export class Raid extends Object {
     static getBannerComponentPatch(parampatternGetter: HolderGetter<BannerPattern>): DataComponentPatch;
     static getOminousBannerInstance(parampatternGetter: HolderGetter<BannerPattern>): ItemStack;
     static getOminousBannerTemplate(parampatternGetter: HolderGetter<BannerPattern>): ItemStackTemplate;
-    private constructor(started: boolean, active: boolean, ticksActive: number, raidOmenLevel: number, groupsSpawned: number, raidCooldownTicks: number, postRaidTicks: number, totalHealth: number, numGroups: number, status: Raid$RaidStatus, center: BlockPos, heroesOfTheVillage: UUID[])
     constructor(center: BlockPos, difficulty: Difficulty)
     readonly active: boolean;
     // private celebrationTicks: number;

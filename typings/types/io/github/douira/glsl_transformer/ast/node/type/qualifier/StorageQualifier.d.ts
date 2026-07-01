@@ -14,7 +14,6 @@ export class StorageQualifier extends TypeQualifierPart {
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: StorageQualifier$StorageType)
     constructor(arg0: Stream<Identifier>)
-    private constructor(arg0: Stream<Identifier>, arg1: StorageQualifier$StorageType)
     storageType: StorageQualifier$StorageType;
     typeNames: Identifier[];
     clone(): StorageQualifier;

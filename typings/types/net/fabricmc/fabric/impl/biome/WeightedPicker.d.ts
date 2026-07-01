@@ -4,7 +4,6 @@ import type { WeightedPicker$WeightedEntry } from '../../../../../net/fabricmc/f
 import type { ImprovedNoise } from '../../../../../net/minecraft/world/level/levelgen/synth/ImprovedNoise.d.ts'
 export class WeightedPicker<T extends unknown> extends Object {
     constructor()
-    private constructor(arg0: number, arg1: WeightedPicker$WeightedEntry<T>[])
     // private currentTotal: number;
     // private entries: WeightedPicker$WeightedEntry<T>[];
     add(arg0: T, arg1: number): void;

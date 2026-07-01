@@ -70,7 +70,6 @@ export class FallingBlockEntity extends Entity {
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<FallingBlockEntity>, level: Level)
-    private constructor(level: Level, x: number, y: number, z: number, blockState: BlockState)
     blockData: CompoundTag;
     readonly blockState: BlockState;
     // private cancelDrop: boolean;

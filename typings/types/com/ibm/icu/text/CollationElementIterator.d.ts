@@ -10,7 +10,6 @@ export class CollationElementIterator extends Object {
     static primaryOrder(paramarg0: number): number;
     static secondaryOrder(paramarg0: number): number;
     static tertiaryOrder(paramarg0: number): number;
-    private constructor(arg0: RuleBasedCollator)
     constructor(arg0: UCharacterIterator, arg1: RuleBasedCollator)
     constructor(arg0: CharacterIterator, arg1: RuleBasedCollator)
     constructor(arg0: string, arg1: RuleBasedCollator)

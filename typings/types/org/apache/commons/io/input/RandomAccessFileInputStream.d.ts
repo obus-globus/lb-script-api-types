@@ -1,4 +1,3 @@
-import type { RandomAccessFileInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { RandomAccessFile } from '../../../../../java/io/RandomAccessFile.d.ts'
@@ -9,8 +8,7 @@ export class RandomAccessFileInputStream extends AbstractInputStream {
     static nullInputStream(): InputStream;
     constructor(arg0: RandomAccessFile)
     constructor(arg0: RandomAccessFile, arg1: boolean)
-    private constructor(arg0: RandomAccessFileInputStream$Builder)
-    constructor(arg0: RandomAccessFileInputStream$Builder, arg1: RandomAccessFileInputStream$1)
+    constructor(arg0: RandomAccessFileInputStream$Builder, arg1: any)
     // private propagateClose: boolean;
     readonly randomAccessFile: RandomAccessFile;
     available(): number;

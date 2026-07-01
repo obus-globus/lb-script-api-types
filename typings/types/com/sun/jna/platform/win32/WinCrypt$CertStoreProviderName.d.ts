@@ -5,7 +5,6 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class WinCrypt$CertStoreProviderName extends Object implements NativeMapped {
     constructor()
-    private constructor(arg0: Pointer)
     constructor(arg0: number)
     constructor(arg0: string)
     // private pointer: Pointer;

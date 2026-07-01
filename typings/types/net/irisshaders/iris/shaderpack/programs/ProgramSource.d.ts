@@ -6,7 +6,6 @@ import type { ProgramDirectives } from '../../../../../net/irisshaders/iris/shad
 import type { ShaderProperties } from '../../../../../net/irisshaders/iris/shaderpack/properties/ShaderProperties.d.ts'
 export class ProgramSource extends Object {
     constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: ProgramSet, arg7: ShaderProperties, arg8: BlendModeOverride)
-    private constructor(arg0: string, arg1: string, arg2: string, arg3: string, arg4: string, arg5: string, arg6: ProgramDirectives, arg7: ProgramSet)
     readonly directives: ProgramDirectives;
     readonly fragmentSource: string;
     readonly geometrySource: string;

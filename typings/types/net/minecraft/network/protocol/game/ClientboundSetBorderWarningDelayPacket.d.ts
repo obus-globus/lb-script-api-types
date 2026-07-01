@@ -11,7 +11,6 @@ import type { WorldBorder } from '../../../../../net/minecraft/world/level/borde
 export class ClientboundSetBorderWarningDelayPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetBorderWarningDelayPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(border: WorldBorder)
     readonly warningDelay: number;
     getWarningDelay(): number;

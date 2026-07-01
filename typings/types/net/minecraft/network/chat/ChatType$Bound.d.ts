@@ -8,7 +8,6 @@ import type { Component } from '../../../../net/minecraft/network/chat/Component
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class ChatType$Bound extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ChatType$Bound>;
-    private constructor(chatType: Holder<ChatType>, name: Component)
     constructor(chatType: Holder<ChatType>, name: Component, targetName: Optional<Component>)
     // private chatType: Holder<ChatType>;
     // private name: Component;

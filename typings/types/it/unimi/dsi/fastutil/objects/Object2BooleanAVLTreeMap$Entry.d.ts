@@ -10,7 +10,6 @@ export class Object2BooleanAVLTreeMap$Entry<K extends unknown> extends AbstractO
     balance(): number;
     balance(arg0: number): void;
     clone(): Object2BooleanAVLTreeMap$Entry<K>;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

@@ -5,8 +5,6 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Base64Variant extends Object implements Serializable {
     static BASE64_VALUE_INVALID: number;
     static BASE64_VALUE_PADDING: number;
-    private constructor(arg0: Base64Variant, arg1: Base64Variant$PaddingReadBehaviour)
-    private constructor(arg0: Base64Variant, arg1: string, arg2: boolean, arg3: string, arg4: Base64Variant$PaddingReadBehaviour, arg5: number)
     constructor(arg0: Base64Variant, arg1: string, arg2: boolean, arg3: string, arg4: number)
     constructor(arg0: Base64Variant, arg1: string, arg2: number)
     constructor(arg0: string, arg1: string, arg2: boolean, arg3: string, arg4: number)

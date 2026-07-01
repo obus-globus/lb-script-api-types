@@ -1,4 +1,3 @@
-import type { ServiceLoaderUtil$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Spliterators$AbstractSpliterator } from '../../../../../java/util/Spliterators$AbstractSpliterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
@@ -14,8 +13,7 @@ export class ServiceLoaderUtil$ServiceLoaderSpliterator<S extends unknown> exten
     static SIZED: number;
     static SORTED: number;
     static SUBSIZED: number;
-    constructor(arg0: Class<Object>, arg1: (Object | null)[], arg2: Logger, arg3: ServiceLoaderUtil$1)
-    private constructor(serviceType: Class<S>, serviceLoader: S[], logger: Logger)
+    constructor(arg0: Class<Object>, arg1: (Object | null)[], arg2: Logger, arg3: any)
     // private logger: Logger;
     // private serviceIterator: Iterator<S>;
     // private serviceName: string;

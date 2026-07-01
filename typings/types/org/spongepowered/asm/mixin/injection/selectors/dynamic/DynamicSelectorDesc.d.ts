@@ -17,11 +17,7 @@ export class DynamicSelectorDesc extends Object implements ITargetSelectorByName
     static parse(paramarg0: string, paramarg1: ISelectorContext): DynamicSelectorDesc;
     static parse(paramarg0: IAnnotationHandle, paramarg1: ISelectorContext): DynamicSelectorDesc;
     static resolve(paramarg0: ISelectorContext): DynamicSelectorDesc;
-    private constructor(arg0: InvalidSelectorException)
     constructor(arg0: InvalidSelectorException, arg1: string, arg2: Type, arg3: string, arg4: Type[], arg5: Type, arg6: Quantifier, arg7: IAnnotationHandle[], arg8: boolean)
-    private constructor(arg0: DynamicSelectorDesc, arg1: Type)
-    private constructor(arg0: DynamicSelectorDesc, arg1: Quantifier)
-    private constructor(arg0: IResolvedDescriptor)
     readonly args: Type[];
     // private disabled: boolean;
     readonly id: string;

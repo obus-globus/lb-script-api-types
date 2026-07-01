@@ -10,7 +10,6 @@ export class Float2BooleanAVLTreeMap$Entry extends AbstractFloat2BooleanMap$Basi
     balance(): number;
     balance(arg0: number): void;
     clone(): Float2BooleanAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

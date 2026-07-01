@@ -6,10 +6,7 @@ import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PalettedContainerROExtension } from '../../../../../net/caffeinemc/mods/sodium/client/world/PalettedContainerROExtension.d.ts'
 import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
-import type { BitStorage } from '../../../../../net/minecraft/util/BitStorage.d.ts'
 import type { ThreadingDetector } from '../../../../../net/minecraft/util/ThreadingDetector.d.ts'
-import type { Configuration } from '../../../../../net/minecraft/world/level/chunk/Configuration.d.ts'
-import type { Palette } from '../../../../../net/minecraft/world/level/chunk/Palette.d.ts'
 import type { PaletteResize } from '../../../../../net/minecraft/world/level/chunk/PaletteResize.d.ts'
 import type { PalettedContainer$CountConsumer } from '../../../../../net/minecraft/world/level/chunk/PalettedContainer$CountConsumer.d.ts'
 import type { PalettedContainer$Data } from '../../../../../net/minecraft/world/level/chunk/PalettedContainer$Data.d.ts'
@@ -24,8 +21,6 @@ export class PalettedContainer<T extends unknown> extends Object implements Pale
     static of(paramarg0: PalettedContainerRO<Object>): PalettedContainerROExtension<Object>;
     static unpack(paramstrategy: Strategy<Object>, paramdiscData: PalettedContainerRO$PackedData<Object>): DataResult<PalettedContainer<Object>>;
     constructor(initialValue: T, strategy: Strategy<T>)
-    private constructor(source: PalettedContainer<T>)
-    private constructor(strategy: Strategy<T>, dataConfiguration: Configuration, storage: BitStorage, palette: Palette<T>)
     // private data: PalettedContainer$Data<T>;
     // private strategy: Strategy<T>;
     // private threadingDetector: ThreadingDetector;

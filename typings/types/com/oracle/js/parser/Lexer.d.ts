@@ -13,7 +13,6 @@ export class Lexer extends Scanner implements StringPool {
     static isEOL(paramch: string): boolean;
     static isStringLineTerminator(paramch: string): boolean;
     static isWhitespace(paramch: string): boolean;
-    private constructor(lexer: Lexer, state: Lexer$State)
     constructor(source: Source, stream: TokenStream, scripting: boolean, ecmaScriptVersion: number, shebang: boolean, isModule: boolean, allowBigInt: boolean, annexB: boolean)
     constructor(source: Source, start: number, len: number, stream: TokenStream, scripting: boolean, ecmaScriptVersion: number, shebang: boolean, isModule: boolean, pauseOnFunctionBody: boolean, allowBigInt: boolean, annexB: boolean)
     // private allowBigInt: boolean;

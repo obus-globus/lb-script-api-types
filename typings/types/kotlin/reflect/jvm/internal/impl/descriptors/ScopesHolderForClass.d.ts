@@ -8,7 +8,6 @@ import type { StorageManager } from '../../../../../../kotlin/reflect/jvm/intern
 import type { KotlinTypeRefiner } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 export class ScopesHolderForClass<T extends MemberScope> extends Object {
     static Companion: ScopesHolderForClass$Companion;
-    private constructor(arg0: ClassDescriptor, arg1: StorageManager, arg2: (param0: KotlinTypeRefiner) => T, arg3: KotlinTypeRefiner)
     constructor(arg0: ClassDescriptor, arg1: StorageManager, arg2: (param0: Object | null) => Object | null, arg3: KotlinTypeRefiner, arg4: DefaultConstructorMarker)
     // private classDescriptor: ClassDescriptor;
     // private kotlinTypeRefinerForOwnerModule: KotlinTypeRefiner;

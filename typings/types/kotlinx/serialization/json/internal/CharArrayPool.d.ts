@@ -3,5 +3,4 @@ export class CharArrayPool extends CharArrayPoolBase {
     static INSTANCE: CharArrayPool;
     release(array: string[]): void;
     take(): string[];
-    protected take(size: number): string[];
 }

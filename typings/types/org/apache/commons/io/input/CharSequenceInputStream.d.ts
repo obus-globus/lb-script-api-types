@@ -1,4 +1,3 @@
-import type { CharSequenceInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { CharBuffer } from '../../../../../java/nio/CharBuffer.d.ts'
@@ -13,8 +12,7 @@ export class CharSequenceInputStream extends InputStream {
     constructor(arg0: CharSequence, arg1: Charset, arg2: number)
     constructor(arg0: CharSequence, arg1: string)
     constructor(arg0: CharSequence, arg1: string, arg2: number)
-    private constructor(arg0: CharSequenceInputStream$Builder)
-    constructor(arg0: CharSequenceInputStream$Builder, arg1: CharSequenceInputStream$1)
+    constructor(arg0: CharSequenceInputStream$Builder, arg1: any)
     // private bBuf: ByteBuffer;
     // private bBufMark: number;
     // private cBuf: CharBuffer;

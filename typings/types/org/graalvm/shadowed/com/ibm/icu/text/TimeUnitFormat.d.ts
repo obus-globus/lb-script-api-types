@@ -25,7 +25,6 @@ export class TimeUnitFormat extends MeasureFormat {
     constructor(locale: Locale, style: number)
     constructor(locale: ULocale)
     constructor(locale: ULocale, style: number)
-    private constructor(locale: ULocale, style: number, numberFormat: NumberFormat)
     // private format: NumberFormat;
     // private isReady: boolean;
     readonly locale: ULocale;

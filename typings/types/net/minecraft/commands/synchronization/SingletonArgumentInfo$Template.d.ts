@@ -6,7 +6,7 @@ import type { ArgumentTypeInfo } from '../../../../net/minecraft/commands/synchr
 import type { ArgumentTypeInfo$Template } from '../../../../net/minecraft/commands/synchronization/ArgumentTypeInfo$Template.d.ts'
 import type { SingletonArgumentInfo } from '../../../../net/minecraft/commands/synchronization/SingletonArgumentInfo.d.ts'
 export class SingletonArgumentInfo$Template extends Object implements ArgumentTypeInfo$Template<A> {
-    constructor(null_: SingletonArgumentInfo<A>, constructor: (param0: CommandBuildContext) => A)
+    constructor(null_: SingletonArgumentInfo<ArgumentType<Object>>, constructor: (param0: CommandBuildContext) => ArgumentType<Object>)
     // private constructor: (param0: CommandBuildContext) => A;
     instantiate<A extends ArgumentType<Object>>(context: CommandBuildContext): A;
     type<A extends ArgumentType<Object>>(): ArgumentTypeInfo<A, any>;

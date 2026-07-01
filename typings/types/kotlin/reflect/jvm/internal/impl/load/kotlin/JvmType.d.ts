@@ -3,7 +3,6 @@ import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/i
 import type { JvmType$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/JvmType$Companion.d.ts'
 export abstract class JvmType extends Object {
     static Companion: JvmType$Companion;
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     toString(): string;
 }

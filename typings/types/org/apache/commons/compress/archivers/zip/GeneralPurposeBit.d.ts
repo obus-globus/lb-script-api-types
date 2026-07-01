@@ -10,7 +10,6 @@ export class GeneralPurposeBit extends Object implements Cloneable {
     // private numberOfShannonFanoTrees: number;
     // private slidingDictionarySize: number;
     // private strongEncryptionFlag: boolean;
-    protected clone(): Object;
     clone(): Object;
     encode(): number[];
     encode(arg0: number[], arg1: number): void;

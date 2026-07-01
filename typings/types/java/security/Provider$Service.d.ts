@@ -5,7 +5,6 @@ import type { Provider$EngineDescription } from '../../java/security/Provider$En
 import type { Provider$UString } from '../../java/security/Provider$UString.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class Provider$Service extends Object {
-    private constructor(arg0: { [key: string]: any }, arg1: string, arg2: string)
     constructor(arg0: { [key: string]: any }, arg1: string, arg2: string, arg3: string, arg4: string[], arg5: { [key: string]: string })
     readonly algorithm: string;
     // private aliases: string[];

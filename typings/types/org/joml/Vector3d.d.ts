@@ -67,7 +67,6 @@ export class Vector3d extends Object implements Externalizable, Cloneable, Vecto
     angleSigned(arg0: Vector3dc, arg1: Vector3dc): number;
     ceil(): Vector3d;
     ceil(arg0: Vector3d): Vector3d;
-    protected clone(): Object;
     clone(): Object;
     cross(arg0: number, arg1: number, arg2: number): Vector3d;
     cross(arg0: number, arg1: number, arg2: number, arg3: Vector3d): Vector3d;

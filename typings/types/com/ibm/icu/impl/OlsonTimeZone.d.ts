@@ -72,7 +72,6 @@ export class OlsonTimeZone extends BasicTimeZone implements Cloneable {
     // private typeMapData: number[];
     // private typeOffsets: number[];
     clone(): OlsonTimeZone;
-    protected clone(): Object;
     cloneAsThawed(): OlsonTimeZone;
     // private construct(arg0: UResourceBundle, arg1: UResourceBundle, arg2: string): void;
     // private constructEmpty(): void;

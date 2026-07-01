@@ -9,7 +9,6 @@ export class PageFormat extends Object implements Cloneable {
     // private mOrientation: number;
     // private mPaper: Paper;
     clone(): Object;
-    protected clone(): Object;
     getHeight(): number;
     getImageableHeight(): number;
     getImageableWidth(): number;

@@ -1,4 +1,3 @@
-import type { UnsynchronizedBufferedInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { UnsynchronizedBufferedInputStream$Builder } from '../../../../../org/apache/commons/io/input/UnsynchronizedBufferedInputStream$Builder.d.ts'
 import type { UnsynchronizedFilterInputStream } from '../../../../../org/apache/commons/io/input/UnsynchronizedFilterInputStream.d.ts'
@@ -6,8 +5,7 @@ import type { UnsynchronizedFilterInputStream$Builder } from '../../../../../org
 export class UnsynchronizedBufferedInputStream extends UnsynchronizedFilterInputStream {
     static builder(): UnsynchronizedFilterInputStream$Builder;
     static nullInputStream(): InputStream;
-    private constructor(arg0: UnsynchronizedBufferedInputStream$Builder)
-    constructor(arg0: UnsynchronizedBufferedInputStream$Builder, arg1: UnsynchronizedBufferedInputStream$1)
+    constructor(arg0: UnsynchronizedBufferedInputStream$Builder, arg1: any)
     // private buffer: number[];
     // private count: number;
     // private markLimit: number;

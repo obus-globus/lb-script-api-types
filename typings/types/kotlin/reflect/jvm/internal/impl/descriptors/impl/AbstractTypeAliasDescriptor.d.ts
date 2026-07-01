@@ -1,4 +1,3 @@
-import type { AbstractTypeAliasDescriptor$typeConstructor$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { ClassDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ClassDescriptor.d.ts'
 import type { DeclarationDescriptor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptor.d.ts'
@@ -22,7 +21,7 @@ export abstract class AbstractTypeAliasDescriptor extends DeclarationDescriptorN
     // private constructors$delegate: NotNullLazyValue<Object>;
     // private declaredTypeParametersImpl: TypeParameterDescriptor[];
     // private storageManager: StorageManager;
-    readonly typeConstructor: AbstractTypeAliasDescriptor$typeConstructor$1;
+    readonly typeConstructor: TypeConstructor;
     // private visibilityImpl: DescriptorVisibility;
     accept<R extends unknown, D extends unknown>(arg0: DeclarationDescriptorVisitor<R, D>, arg1: D): R;
     computeDefaultType(): SimpleType;

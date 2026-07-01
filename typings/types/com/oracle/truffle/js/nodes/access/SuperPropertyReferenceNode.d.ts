@@ -19,7 +19,6 @@ export class SuperPropertyReferenceNode extends JSTargetableNode implements Repe
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    private constructor(baseNode: JavaScriptNode, thisValueNode: JavaScriptNode)
     constructor(copy: SuperPropertyReferenceNode)
     // private baseValueNode: JavaScriptNode;
     // private thisValueNode: JavaScriptNode;

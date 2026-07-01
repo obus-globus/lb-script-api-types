@@ -12,7 +12,6 @@ export class GossipContainer extends Object {
     static CODEC: Codec<GossipContainer>;
     static DISCARD_THRESHOLD: number;
     constructor()
-    private constructor(entries: GossipContainer$GossipEntry[])
     // private gossips: Map<UUID, GossipContainer$EntityGossips>;
     add(target: UUID, type: GossipType, amountToAdd: number): void;
     clear(): void;

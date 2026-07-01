@@ -22,7 +22,6 @@ export class OrdinaryCreateFromConstructorNode extends JavaScriptNode {
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAddExpressionTag(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
     static transferSourceSectionAndTags(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;
-    private constructor(getPrototypeFromConstructorNode: GetPrototypeFromConstructorNode, createObjectNode: CreateObjectNode$CreateObjectWithPrototypeNode)
     constructor(context: JSContext, constructorNode: JavaScriptNode, intrinsicDefaultProto: (param0: JSRealm) => JSDynamicObject, jsclass: JSClass)
     // private createObjectNode: CreateObjectNode$CreateObjectWithPrototypeNode;
     // private getPrototypeFromConstructorNode: GetPrototypeFromConstructorNode;

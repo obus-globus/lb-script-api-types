@@ -20,7 +20,6 @@ export class BundleContents extends Object implements BundleContentsAccessor, To
     static canItemBeInBundle(paramitemToAdd: ItemStack): boolean;
     static getWeight(paramarg0: ItemInstance): DataResult<Fraction>;
     constructor(items: ItemStackTemplate[])
-    private constructor(items: ItemStackTemplate[], selectedItem: number)
     // private items: ItemStackTemplate[];
     readonly selectedItem: number;
     // private weight: () => DataResult<Fraction>;

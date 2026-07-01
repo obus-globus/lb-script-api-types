@@ -10,7 +10,6 @@ export class Object2ReferenceRBTreeMap$Entry<K extends unknown, V extends unknow
     black(): boolean;
     black(arg0: boolean): void;
     clone(): Object2ReferenceRBTreeMap$Entry<K, V>;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): Object2ReferenceRBTreeMap$Entry<K, V>;

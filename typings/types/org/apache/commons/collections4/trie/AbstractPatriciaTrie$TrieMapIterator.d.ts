@@ -3,7 +3,7 @@ import type { OrderedMapIterator } from '../../../../../org/apache/commons/colle
 import type { AbstractPatriciaTrie$TrieEntry } from '../../../../../org/apache/commons/collections4/trie/AbstractPatriciaTrie$TrieEntry.d.ts'
 import type { AbstractPatriciaTrie$TrieIterator } from '../../../../../org/apache/commons/collections4/trie/AbstractPatriciaTrie$TrieIterator.d.ts'
 export class AbstractPatriciaTrie$TrieMapIterator extends AbstractPatriciaTrie$TrieIterator<Object> implements OrderedMapIterator<K, V> {
-    private constructor(null_: Map<K, V>)
+    private constructor(null_: Map<Object, Object>)
     // private previous: AbstractPatriciaTrie$TrieEntry<K, V>;
     getKey<K extends unknown>(): K;
     getValue<V extends unknown>(): V;

@@ -18,7 +18,7 @@ export class TextProcessingEventOrigin extends Enum<TextProcessingEventOrigin> {
     static SlashCommandChat: TextProcessingEventOrigin;
     static SummonCommand: TextProcessingEventOrigin;
     static TitleCommand: TextProcessingEventOrigin;
-    static unknown: TextProcessingEventOrigin;
+    static Unknown: TextProcessingEventOrigin;
     static getByName(paramarg0: string): TextProcessingEventOrigin;
     static getByName(paramarg0: string, paramarg1: TextProcessingEventOrigin): TextProcessingEventOrigin;
     static getByValue(paramarg0: number): TextProcessingEventOrigin;
@@ -30,5 +30,5 @@ export class TextProcessingEventOrigin extends Enum<TextProcessingEventOrigin> {
     private constructor(arg2: TextProcessingEventOrigin)
     readonly value: number;
     getValue(): number;
-    name(): "unknown" | "ServerChatPublic" | "ServerChatWhisper" | "SignText" | "AnvilText" | "BookAndQuillText" | "CommandBlockText" | "BlockActorDataText" | "JoinEventText" | "LeaveEventText" | "SlashCommandChat" | "CartographyText" | "KickCommand" | "TitleCommand" | "SummonCommand" | "ServerForm" | "DataDrivenUI";
+    name(): "Unknown" | "ServerChatPublic" | "ServerChatWhisper" | "SignText" | "AnvilText" | "BookAndQuillText" | "CommandBlockText" | "BlockActorDataText" | "JoinEventText" | "LeaveEventText" | "SlashCommandChat" | "CartographyText" | "KickCommand" | "TitleCommand" | "SummonCommand" | "ServerForm" | "DataDrivenUI";
 }

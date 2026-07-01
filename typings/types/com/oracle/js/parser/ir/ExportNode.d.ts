@@ -11,8 +11,6 @@ import type { TruffleString } from '../../../../../com/oracle/truffle/api/string
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ExportNode extends Node {
-    private constructor(node: ExportNode, namedExports: NamedExportsNode, moduleSpecifier: LiteralNode<TruffleString>, exportIdent: PropertyKey, var_: VarNode, expression: Expression, attributes: Map<TruffleString, TruffleString>)
-    private constructor(token: number, start: number, finish: number, namedExports: NamedExportsNode, moduleSpecifier: LiteralNode<TruffleString>, exportIdent: PropertyKey, var_: VarNode, expression: Expression, isDefault: boolean, attributes: Map<TruffleString, TruffleString>)
     constructor(token: number, start: number, finish: number, exportClause: NamedExportsNode, moduleSpecifier: LiteralNode<TruffleString>, attributes: Map<TruffleString, TruffleString>)
     constructor(token: number, start: number, finish: number, ident: PropertyKey, expression: Expression, isDefault: boolean)
     constructor(token: number, start: number, finish: number, ident: PropertyKey, moduleSpecifier: LiteralNode<TruffleString>, attributes: Map<TruffleString, TruffleString>)

@@ -12,7 +12,6 @@ export class ClientboundOpenSignEditorPacket extends Object implements Packet<Cl
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundOpenSignEditorPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(pos: BlockPos, isFrontText: boolean)
-    private constructor(input: FriendlyByteBuf)
     // private isFrontText: boolean;
     readonly pos: BlockPos;
     getPos(): BlockPos;

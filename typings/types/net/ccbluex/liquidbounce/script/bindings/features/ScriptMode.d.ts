@@ -14,7 +14,7 @@ export class ScriptMode extends Mode {
     /**
      * Allows the user to access values by typing module.settings.<valuename>
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt:40}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt:40}
      */
     readonly settings: { [key: string]: Value<Object> };
     // private callEvent(event: string, payload: Event | null): void;
@@ -27,7 +27,7 @@ export class ScriptMode extends Mode {
      * @param eventName Name of the event.
      * @param handler JavaScript function used to handle the event.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt:57}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.kt:57}
      */
     on(eventName: string, handler: Value_2): void;
 }

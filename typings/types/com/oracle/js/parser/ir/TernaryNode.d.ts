@@ -7,7 +7,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TernaryNode extends Expression {
-    private constructor(ternaryNode: TernaryNode, test: Expression, trueExpr: JoinPredecessorExpression, falseExpr: JoinPredecessorExpression)
     constructor(token: number, test: Expression, trueExpr: JoinPredecessorExpression, falseExpr: JoinPredecessorExpression)
     // private falseExpr: JoinPredecessorExpression;
     readonly test: Expression;

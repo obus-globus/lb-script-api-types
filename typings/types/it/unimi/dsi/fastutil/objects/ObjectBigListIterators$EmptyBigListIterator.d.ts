@@ -8,7 +8,6 @@ export class ObjectBigListIterators$EmptyBigListIterator<K extends unknown> exte
     add(arg0: K): void;
     back(arg0: number): number;
     clone(): Object;
-    protected clone(): Object;
     forEachRemaining(arg0: (param0: K) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;

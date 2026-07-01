@@ -25,7 +25,6 @@ export class CowVariant extends Record implements PriorityProvider<SpawnContext,
     static pick(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramrandomSource: RandomSource, paramcontext: Object | null): Optional<Object>;
     static select(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramcontext: Object | null): Stream<Object>;
     static single(paramcheck: Object | null, parampriority: number): PriorityProvider$Selector<Object, any>[];
-    private constructor(assetInfo: ModelAndTexture<CowVariant$ModelType>, babyTexture: ClientAsset$ResourceTexture)
     constructor(modelAndTexture: ModelAndTexture<CowVariant$ModelType>, babyTexture: ClientAsset$ResourceTexture, spawnConditions: SpawnPrioritySelectors)
     // private babyTexture: ClientAsset$ResourceTexture;
     // private modelAndTexture: ModelAndTexture<CowVariant$ModelType>;

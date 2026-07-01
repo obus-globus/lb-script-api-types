@@ -70,7 +70,6 @@ export class DecimalFormatProperties extends Object implements Serializable, Clo
     // private _hashCodeHelper(value: boolean): number;
     // private _hashCodeHelper(value: number): number;
     clear(): DecimalFormatProperties;
-    protected clone(): Object;
     clone(): DecimalFormatProperties;
     copyFrom(other: DecimalFormatProperties): DecimalFormatProperties;
     equals(other: Object | null): boolean;

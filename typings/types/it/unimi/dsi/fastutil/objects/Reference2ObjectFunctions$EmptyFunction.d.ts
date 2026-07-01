@@ -6,7 +6,6 @@ export class Reference2ObjectFunctions$EmptyFunction<K extends unknown, V extend
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): V;
     defaultReturnValue(arg0: V): void;

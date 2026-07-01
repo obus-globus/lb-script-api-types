@@ -1,4 +1,3 @@
-import type { BurstFilter$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
@@ -17,8 +16,7 @@ export class BurstFilter extends AbstractFilter {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: (Object | null)[];
     static newBuilder(): BurstFilter$Builder;
-    private constructor(level: Level, rate: number, maxBurst: number, onMatch: Filter$Result, onMismatch: Filter$Result)
-    constructor(arg0: Level, arg1: number, arg2: number, arg3: Filter$Result, arg4: Filter$Result, arg5: BurstFilter$1)
+    constructor(arg0: Level, arg1: number, arg2: number, arg3: Filter$Result, arg4: Filter$Result, arg5: any)
     readonly available: BurstFilter$LogDelay[];
     // private burstInterval: number;
     // private history: BurstFilter$LogDelay[];

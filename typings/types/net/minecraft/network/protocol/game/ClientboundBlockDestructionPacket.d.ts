@@ -12,7 +12,6 @@ export class ClientboundBlockDestructionPacket extends Object implements Packet<
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundBlockDestructionPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(id: number, pos: BlockPos, progress: number)
-    private constructor(input: FriendlyByteBuf)
     readonly id: number;
     readonly pos: BlockPos;
     readonly progress: number;

@@ -10,7 +10,6 @@ export class LinearLayout extends Object implements Layout {
     static horizontal(): LinearLayout;
     static vertical(): LinearLayout;
     constructor(x: number, y: number, orientation: LinearLayout$Orientation)
-    private constructor(orientation: LinearLayout$Orientation)
     // private nextChildIndex: number;
     // private orientation: LinearLayout$Orientation;
     // private wrapped: GridLayout;

@@ -6,7 +6,6 @@ import type { TypeConstructorSubstitution } from '../../../../../../kotlin/refle
 import type { TypeProjection } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeProjection.d.ts'
 import type { TypeSubstitution } from '../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitution.d.ts'
 export class TypeConstructorSubstitution$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     create(arg0: KotlinType): TypeSubstitution;
     create(arg0: TypeConstructor, arg1: TypeProjection[]): TypeSubstitution;

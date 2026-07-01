@@ -10,7 +10,6 @@ export class Mac extends Object implements Cloneable {
     static getInstance(paramarg0: string): Mac;
     static getInstance(paramarg0: string, paramarg1: string): Mac;
     static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): Mac;
-    private constructor(arg0: Provider$Service, arg1: Iterator<Provider$Service>, arg2: string)
     constructor(arg0: MacSpi, arg1: { [key: string]: any }, arg2: string)
     readonly algorithm: string;
     // private firstService: Provider$Service;
@@ -22,7 +21,6 @@ export class Mac extends Object implements Cloneable {
     chooseFirstProvider(): void;
     // private chooseProvider(arg0: Key, arg1: AlgorithmParameterSpec): void;
     clone(): Object;
-    protected clone(): Object;
     doFinal(): number[];
     doFinal(arg0: number[]): number[];
     doFinal(arg0: number[], arg1: number): void;

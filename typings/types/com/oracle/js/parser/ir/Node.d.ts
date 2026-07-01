@@ -16,7 +16,6 @@ export abstract class Node extends Object implements Cloneable {
     accept(visitor: NodeVisitor<LexicalContext>): Node;
     accept<R extends unknown>(visitor: TranslatorNodeVisitor<LexicalContext, R>): R;
     clone(): Object;
-    protected clone(): Object;
     equals(other: Object | null): boolean;
     getFinish(): number;
     getSourceOrder(): number;

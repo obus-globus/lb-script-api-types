@@ -23,7 +23,6 @@ export class MethodHandles$Lookup extends Object {
     static PUBLIC: number;
     static UNCONDITIONAL: number;
     constructor(arg0: Class<Object>)
-    private constructor(arg0: Class<Object>, arg1: Class<Object>, arg2: number)
     // private cachedProtectionDomain: ProtectionDomain;
     // private prevLookupClass: Class<Object>;
     accessClass<T extends unknown>(arg0: Class<T>): Class<T>;

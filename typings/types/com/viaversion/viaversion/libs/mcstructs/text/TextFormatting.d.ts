@@ -33,8 +33,6 @@ export class TextFormatting extends Object {
     static getClosestFormattingColor(paramarg0: number): TextFormatting;
     static parse(paramarg0: string): TextFormatting;
     constructor(arg0: number)
-    private constructor(arg0: string, arg1: string)
-    private constructor(arg0: string, arg1: string, arg2: number)
     readonly code: string;
     readonly name: string;
     readonly ordinal: number;

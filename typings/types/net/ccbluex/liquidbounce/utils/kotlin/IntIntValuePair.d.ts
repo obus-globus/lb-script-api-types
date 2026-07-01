@@ -11,7 +11,6 @@ export class IntIntValuePair extends Object {
 // (invalid TS: name contains '-')     static hashCode-impl(paramarg0: number): number;
 // (invalid TS: name contains '-')     static toString-impl(paramarg0: number): string;
     constructor(left: number, right: number)
-    private constructor(bits: number)
     // private bits: number;
 // (invalid TS: name contains '-')     /*not mapped: */ getLeft-impl(): number;
 // (invalid TS: name contains '-')     /*not mapped: */ getRight-impl(): number;

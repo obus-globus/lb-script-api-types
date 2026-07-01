@@ -19,7 +19,6 @@ export class CommonRegisterPayload extends Record implements CustomPacketPayload
     static codec(paramfallback: CustomPacketPayload$FallbackProvider<FriendlyByteBuf>, paramtypes: CustomPacketPayload$TypeAndCodec<any, any>[]): StreamCodec<FriendlyByteBuf, CustomPacketPayload>;
     static createType(paramid: string): CustomPacketPayload$Type<CustomPacketPayload>;
     constructor(version: number, protocol: string, channels: Identifier[])
-    private constructor(arg0: FriendlyByteBuf)
     // private channels: Identifier[];
     // private protocol: string;
     // private version: number;

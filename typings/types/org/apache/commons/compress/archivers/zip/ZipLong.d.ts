@@ -16,7 +16,6 @@ export class ZipLong extends Object implements Serializable, Cloneable {
     constructor(arg0: number)
     constructor(arg0: number)
     readonly value: number;
-    protected clone(): Object;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     getBytes(): number[];

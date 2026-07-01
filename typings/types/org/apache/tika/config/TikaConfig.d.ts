@@ -42,7 +42,6 @@ export class TikaConfig extends Object {
     constructor(arg0: Document, arg1: ServiceLoader)
     constructor(arg0: Element)
     constructor(arg0: Element, arg1: ClassLoader)
-    private constructor(arg0: Element, arg1: ServiceLoader)
     readonly autoDetectParserConfig: AutoDetectParserConfig;
     readonly detector: CompositeDetector;
     readonly encodingDetector: EncodingDetector;

@@ -20,8 +20,6 @@ export class File extends Object implements Serializable, Comparable<File> {
     constructor(arg0: File, arg1: string)
     constructor(arg0: URI)
     constructor(arg0: string)
-    private constructor(arg0: string, arg1: File)
-    private constructor(arg0: string, arg1: number)
     constructor(arg0: string, arg1: string)
     // private filePath: Path[];
     readonly path: string;

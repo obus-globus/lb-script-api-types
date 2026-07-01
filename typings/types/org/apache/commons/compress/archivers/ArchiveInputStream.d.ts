@@ -7,7 +7,6 @@ import type { IOIterator } from '../../../../../org/apache/commons/io/function/I
 export abstract class ArchiveInputStream<E extends ArchiveEntry> extends FilterInputStream {
     static nullInputStream(): InputStream;
     constructor()
-    private constructor(arg0: InputStream, arg1: Charset)
     constructor(arg0: InputStream, arg1: string)
     readonly bytesRead: number;
     readonly charset: Charset;

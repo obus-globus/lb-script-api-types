@@ -9,7 +9,6 @@ export class AnnotationArgumentsRenderingPolicy extends Enum<AnnotationArguments
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): AnnotationArgumentsRenderingPolicy;
     static values(): (Object | null)[];
-    private constructor(arg2: boolean, arg3: boolean)
     constructor(arg2: boolean, arg3: boolean, arg4: number, arg5: DefaultConstructorMarker)
     readonly includeAnnotationArguments: boolean;
     readonly includeEmptyAnnotationArguments: boolean;

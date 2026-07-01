@@ -6,7 +6,6 @@ export class ExtensionRegistryLite extends Object {
     static getEmptyRegistry(): ExtensionRegistryLite;
     static newInstance(): ExtensionRegistryLite;
     constructor()
-    private constructor(arg0: boolean)
     constructor(arg0: ExtensionRegistryLite)
     // private extensionsByNumber: Map<ExtensionRegistryLite$ObjectIntPair, GeneratedMessageLite$GeneratedExtension<any, Object>>;
     add(arg0: GeneratedMessageLite$GeneratedExtension<any, Object>): void;

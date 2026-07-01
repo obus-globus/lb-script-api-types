@@ -73,7 +73,6 @@ export class Painting extends HangingEntity {
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
     constructor(type: EntityType<Painting>, level: Level)
-    private constructor(level: Level, blockPos: BlockPos)
     constructor(level: Level, blockPos: BlockPos, direction: Direction, variant: Holder<PaintingVariant>)
     addAdditionalSaveData(output: ValueOutput): void;
     applyImplicitComponent<T extends unknown>(type: DataComponentType<T>, value: T): boolean;

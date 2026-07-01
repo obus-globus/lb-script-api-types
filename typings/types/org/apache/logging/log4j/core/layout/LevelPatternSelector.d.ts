@@ -1,4 +1,3 @@
-import type { LevelPatternSelector$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
@@ -11,8 +10,7 @@ export class LevelPatternSelector extends Object implements LocationAware, Patte
     static ELEMENT_TYPE: string;
     static createSelector(paramproperties: (Object | null)[], paramdefaultPattern: string, paramalwaysWriteExceptions: boolean, paramnoConsoleNoAnsi: boolean, paramconfiguration: Configuration): LevelPatternSelector;
     static newBuilder(): LevelPatternSelector$Builder;
-    private constructor(properties: PatternMatch[], defaultPattern: string, alwaysWriteExceptions: boolean, disableAnsi: boolean, noConsoleNoAnsi: boolean, config: Configuration)
-    constructor(arg0: PatternMatch[], arg1: string, arg2: boolean, arg3: boolean, arg4: boolean, arg5: Configuration, arg6: LevelPatternSelector$1)
+    constructor(arg0: PatternMatch[], arg1: string, arg2: boolean, arg3: boolean, arg4: boolean, arg5: Configuration, arg6: any)
     constructor(properties: PatternMatch[], defaultPattern: string, alwaysWriteExceptions: boolean, noConsoleNoAnsi: boolean, config: Configuration)
     // private defaultFormatters: PatternFormatter[];
     // private defaultPattern: string;

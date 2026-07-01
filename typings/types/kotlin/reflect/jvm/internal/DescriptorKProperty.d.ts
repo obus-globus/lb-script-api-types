@@ -14,7 +14,6 @@ import type { DescriptorKType } from '../../../../kotlin/reflect/jvm/internal/ty
 export abstract class DescriptorKProperty<V extends unknown> extends DescriptorKCallable<V> implements ReflectKProperty<V> {
     static Companion: DescriptorKProperty$Companion;
     constructor(container: KDeclarationContainerImpl, name: string, signature: string, boundReceiver: Object | null)
-    private constructor(container: KDeclarationContainerImpl, name: string, signature: string, descriptorInitialValue: PropertyDescriptor | null, rawBoundReceiver: Object | null, overriddenStorage: KCallableOverriddenStorage)
     constructor(container: KDeclarationContainerImpl, descriptor: PropertyDescriptor, overriddenStorage: KCallableOverriddenStorage)
     readonly caller: Caller<any>;
     readonly callerWithDefaults: Caller<any> | null;

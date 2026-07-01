@@ -1,14 +1,11 @@
-import type { WebSocketServerProtocolConfig$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { WebSocketCloseStatus } from '../../../../../../io/netty/handler/codec/http/websocketx/WebSocketCloseStatus.d.ts'
 import type { WebSocketDecoderConfig } from '../../../../../../io/netty/handler/codec/http/websocketx/WebSocketDecoderConfig.d.ts'
 import type { WebSocketDecoderConfig$Builder } from '../../../../../../io/netty/handler/codec/http/websocketx/WebSocketDecoderConfig$Builder.d.ts'
 import type { WebSocketServerProtocolConfig } from '../../../../../../io/netty/handler/codec/http/websocketx/WebSocketServerProtocolConfig.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class WebSocketServerProtocolConfig$Builder extends Object {
-    private constructor(arg0: WebSocketServerProtocolConfig)
-    constructor(arg0: WebSocketServerProtocolConfig, arg1: WebSocketServerProtocolConfig$1)
-    private constructor(arg0: string, arg1: string, arg2: boolean, arg3: number, arg4: number, arg5: boolean, arg6: WebSocketCloseStatus, arg7: boolean, arg8: WebSocketDecoderConfig)
-    constructor(arg0: string, arg1: string, arg2: boolean, arg3: number, arg4: number, arg5: boolean, arg6: WebSocketCloseStatus, arg7: boolean, arg8: WebSocketDecoderConfig, arg9: WebSocketServerProtocolConfig$1)
+    constructor(arg0: WebSocketServerProtocolConfig, arg1: any)
+    constructor(arg0: string, arg1: string, arg2: boolean, arg3: number, arg4: number, arg5: boolean, arg6: WebSocketCloseStatus, arg7: boolean, arg8: WebSocketDecoderConfig, arg9: any)
     // private checkStartsWith: boolean;
     // private decoderConfig: WebSocketDecoderConfig;
     // private decoderConfigBuilder: WebSocketDecoderConfig$Builder;

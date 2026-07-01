@@ -7,7 +7,6 @@ export class UCharacterIteratorWrapper extends Object implements CharacterIterat
     constructor(arg0: UCharacterIterator)
     // private iterator: UCharacterIterator;
     clone(): UCharacterIteratorWrapper;
-    protected clone(): Object;
     current(): string;
     first(): string;
     getBeginIndex(): number;

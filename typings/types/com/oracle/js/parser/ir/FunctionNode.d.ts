@@ -48,7 +48,6 @@ export class FunctionNode extends LexicalContextExpression implements Flags<Func
     static USES_THIS: number;
     static getSourceName(paramsource: Source): string;
     constructor(source: Source, lineNumber: number, token: number, finish: number, firstToken: number, lastToken: number, ident: IdentNode, name: TruffleString, length: number, numOfParams: number, parameters: IdentNode[], flags: number, body: Block, endParserState: Object, module: Module, internalName: TruffleString)
-    private constructor(functionNode: FunctionNode, lastToken: number, endParserState: Object, flags: number, name: TruffleString, body: Block, parameters: IdentNode[], source: Source)
     readonly body: Block;
     readonly endParserState: Object;
     readonly firstToken: number;

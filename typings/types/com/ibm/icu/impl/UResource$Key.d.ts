@@ -6,7 +6,6 @@ import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class UResource$Key extends Object implements CharSequence, Cloneable, Comparable<UResource$Key> {
     static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
     constructor()
-    private constructor(arg0: number[], arg1: number, arg2: number)
     constructor(arg0: string)
     // private bytes: number[];
     // private length: number;
@@ -15,7 +14,6 @@ export class UResource$Key extends Object implements CharSequence, Cloneable, Co
     // private s: string;
     chars(): IntStream;
     clone(): UResource$Key;
-    protected clone(): Object;
     codePoints(): IntStream;
     compareTo(arg0: UResource$Key): number;
     compareTo(arg0: CharSequence): number;

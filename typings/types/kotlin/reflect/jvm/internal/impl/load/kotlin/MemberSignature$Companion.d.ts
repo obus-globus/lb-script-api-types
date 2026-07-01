@@ -5,7 +5,6 @@ import type { NameResolver } from '../../../../../../../kotlin/reflect/jvm/inter
 import type { JvmProtoBuf$JvmMethodSignature } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/jvm/JvmProtoBuf$JvmMethodSignature.d.ts'
 import type { JvmMemberSignature } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/jvm/deserialization/JvmMemberSignature.d.ts'
 export class MemberSignature$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     fromFieldNameAndDesc(arg0: string, arg1: string): MemberSignature;
     fromJvmMemberSignature(arg0: JvmMemberSignature): MemberSignature;

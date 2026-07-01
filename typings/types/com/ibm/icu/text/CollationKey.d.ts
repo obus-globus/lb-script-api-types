@@ -4,7 +4,6 @@ import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class CollationKey extends Object implements Comparable<CollationKey> {
     constructor(arg0: string, arg1: RawCollationKey)
     constructor(arg0: string, arg1: number[])
-    private constructor(arg0: string, arg1: number[], arg2: number)
     // private m_hashCode_: number;
     // private m_key_: number[];
     // private m_length_: number;

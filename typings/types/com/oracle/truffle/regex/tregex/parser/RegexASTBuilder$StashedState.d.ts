@@ -7,7 +7,6 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class RegexASTBuilder$StashedState extends Record implements AutoCloseable {
     constructor(builder: RegexASTBuilder)
-    private constructor(builder: RegexASTBuilder, curGroup: Group, curSequence: Sequence, curTerm: Term)
     // private builder: RegexASTBuilder;
     // private curGroup: Group;
     // private curSequence: Sequence;

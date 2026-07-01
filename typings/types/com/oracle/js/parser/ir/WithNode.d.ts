@@ -8,7 +8,6 @@ import type { TranslatorNodeVisitor } from '../../../../../com/oracle/js/parser/
 import type { StringBuilder } from '../../../../../java/lang/StringBuilder.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class WithNode extends LexicalContextStatement {
-    private constructor(node: WithNode, expression: Expression, body: Block)
     constructor(lineNumber: number, token: number, finish: number, expression: Expression, body: Block)
     readonly body: Block;
     readonly expression: Expression;

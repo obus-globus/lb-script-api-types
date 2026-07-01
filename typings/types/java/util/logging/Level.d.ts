@@ -14,7 +14,6 @@ export class Level extends Object implements Serializable {
     static parse(paramarg0: string): Level;
     constructor(arg0: string, arg1: number)
     constructor(arg0: string, arg1: number, arg2: string)
-    private constructor(arg0: string, arg1: number, arg2: string, arg3: boolean)
     // private cachedLocale: Locale;
     // private localizedLevelName: string;
     readonly name: string;

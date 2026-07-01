@@ -1,11 +1,9 @@
-import type { ImmutableTypeToInstanceMap$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ImmutableMap$Builder } from '../../../../com/google/common/collect/ImmutableMap$Builder.d.ts'
 import type { TypeToken } from '../../../../com/google/common/reflect/TypeToken.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ImmutableTypeToInstanceMap$Builder<B extends unknown> extends Object {
-    private constructor()
-    constructor(arg0: ImmutableTypeToInstanceMap$1)
+    constructor(arg0: any)
     // private mapBuilder: ImmutableMap$Builder<TypeToken<B>, B>;
     build(): { [key: string]: any };
     put<T extends B>(key: TypeToken<T>, value: T): ImmutableTypeToInstanceMap$Builder<B>;

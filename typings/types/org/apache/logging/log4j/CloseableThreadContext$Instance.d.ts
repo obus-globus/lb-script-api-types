@@ -1,9 +1,7 @@
-import type { CloseableThreadContext$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CloseableThreadContext$Instance extends Object implements AutoCloseable {
-    private constructor()
-    constructor(arg0: CloseableThreadContext$1)
+    constructor(arg0: any)
     // private originalValues: { [key: string]: string };
     // private pushCount: number;
     close(): void;

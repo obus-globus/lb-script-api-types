@@ -16,7 +16,6 @@ export class XoroshiroRandomSource extends Object implements RandomSource {
     constructor(seed: number)
     constructor(seedLo: number, seedHi: number)
     constructor(seed: RandomSupport$Seed128bit)
-    private constructor(randomNumberGenerator: Xoroshiro128PlusPlus)
     // private gaussianSource: MarsagliaPolarGaussian;
     // private randomNumberGenerator: Xoroshiro128PlusPlus;
     consumeCount(rounds: number): void;

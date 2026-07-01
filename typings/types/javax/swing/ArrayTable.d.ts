@@ -5,7 +5,6 @@ export class ArrayTable extends Object implements Cloneable {
     // private table: Object;
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     get(arg0: Object): Object;
     getKeys(arg0: Object[]): Object[];

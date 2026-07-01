@@ -5,7 +5,6 @@ import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/object
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Long2FloatOpenHashMap$FastEntryIterator extends Long2FloatOpenHashMap$MapIterator<(param0: Long2FloatMap$Entry) => void> implements ObjectIterator<Long2FloatMap$Entry> {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     // private entry: Long2FloatOpenHashMap$MapEntry;
     acceptOnIndex(arg0: (param0: Long2FloatMap$Entry) => void, arg1: number): void;

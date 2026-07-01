@@ -2,7 +2,6 @@ import type { Double2LongAVLTreeMap$TreeIterator } from '../../../../../it/unimi
 import type { LongListIterator } from '../../../../../it/unimi/dsi/fastutil/longs/LongListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Double2LongAVLTreeMap$ValueIterator extends Double2LongAVLTreeMap$TreeIterator implements LongListIterator {
-    private constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: (Object | null)[])
     add(arg0: number): void;
     next(): number;

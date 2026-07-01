@@ -13,7 +13,6 @@ export class ServerboundSetCommandBlockPacket extends Object implements Packet<S
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetCommandBlockPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(pos: BlockPos, command: string, mode: CommandBlockEntity$Mode, trackOutput: boolean, conditional: boolean, automatic: boolean)
-    private constructor(input: FriendlyByteBuf)
     readonly automatic: boolean;
     readonly command: string;
     readonly conditional: boolean;

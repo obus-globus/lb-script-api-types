@@ -54,7 +54,6 @@ export abstract class Collator extends Object implements Freezable<Collator>, Co
     constructor()
     // private checkNotFrozen(): void;
     clone(): Collator;
-    protected clone(): Object;
     cloneAsThawed(): Collator;
     compare(arg0: Object, arg1: Object): number;
     compare(arg0: string, arg1: string): number;

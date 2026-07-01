@@ -1,4 +1,3 @@
-import type { ScriptArbiter$1 } from '../../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { Arbiter } from '../../../../../../../org/apache/logging/log4j/core/config/arbiters/Arbiter.d.ts'
@@ -7,8 +6,7 @@ import type { AbstractScript } from '../../../../../../../org/apache/logging/log
 export class ScriptArbiter extends Object implements Arbiter {
     static ELEMENT_TYPE: string;
     static newBuilder(): ScriptArbiter$Builder;
-    private constructor(configuration: Configuration, script: AbstractScript)
-    constructor(arg0: Configuration, arg1: AbstractScript, arg2: ScriptArbiter$1)
+    constructor(arg0: Configuration, arg1: AbstractScript, arg2: any)
     // private configuration: Configuration;
     // private script: AbstractScript;
     isCondition(): boolean;

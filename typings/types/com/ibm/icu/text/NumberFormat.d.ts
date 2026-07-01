@@ -74,7 +74,6 @@ export abstract class NumberFormat extends UFormat implements Cloneable {
     readonly parseStrict: boolean;
     // private serialVersionOnStream: number;
     clone(): NumberFormat;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     format(arg0: BigDecimal): string;
     format(arg0: BigDecimal, arg1: StringBuffer, arg2: FieldPosition): StringBuffer;

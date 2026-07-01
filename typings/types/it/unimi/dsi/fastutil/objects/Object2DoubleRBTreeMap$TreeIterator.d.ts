@@ -2,7 +2,7 @@ import type { Object2DoubleRBTreeMap$Entry } from '../../../../../it/unimi/dsi/f
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2DoubleRBTreeMap$TreeIterator extends Object {
     constructor(null_: { [key: string]: any })
-    constructor(null_: { [key: string]: any }, arg1: K)
+    constructor(null_: { [key: string]: any }, arg1: Object)
     // private curr: Object2DoubleRBTreeMap$Entry<K>;
     // private index: number;
     // private next: Object2DoubleRBTreeMap$Entry<K>;

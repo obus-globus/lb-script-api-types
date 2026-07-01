@@ -17,7 +17,6 @@ export class ByteSpliterators$EmptySpliterator extends Object implements ByteSpl
     constructor()
     characteristics(): number;
     clone(): Object;
-    protected clone(): Object;
     estimateSize(): number;
     forEachRemaining(arg0: (param0: number) => void): void;
     getComparator(): (param0: number, param1: number) => number;

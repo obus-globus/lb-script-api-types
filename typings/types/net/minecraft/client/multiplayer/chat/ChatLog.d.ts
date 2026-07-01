@@ -4,7 +4,6 @@ import type { LoggedChatEvent } from '../../../../../net/minecraft/client/multip
 export class ChatLog extends Object {
     static codec(paramcapacity: number): Codec<ChatLog>;
     constructor(capacity: number)
-    private constructor(capacity: number, buffer: LoggedChatEvent[])
     // private buffer: LoggedChatEvent[];
     // private nextId: number;
     end(): number;

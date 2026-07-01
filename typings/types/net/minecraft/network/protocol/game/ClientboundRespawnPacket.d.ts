@@ -15,7 +15,6 @@ export class ClientboundRespawnPacket extends Record implements Packet<ClientGam
     static KEEP_ENTITY_DATA: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundRespawnPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: RegistryFriendlyByteBuf)
     constructor(commonPlayerSpawnInfo: CommonPlayerSpawnInfo, dataToKeep: number)
     // private commonPlayerSpawnInfo: CommonPlayerSpawnInfo;
     // private dataToKeep: number;

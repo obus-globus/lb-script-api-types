@@ -44,7 +44,6 @@ export abstract class TaggedDecoder<Tag extends unknown> extends Object implemen
     decodeSequentially(): boolean;
     decodeSerializableElement<T extends unknown>(descriptor: SerialDescriptor, index: number, deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>): T;
-    protected decodeSerializableValue<T extends unknown>(deserializer: DeserializationStrategy<T>, previousValue: T | null): T;
     decodeShort(): number;
     decodeShortElement(descriptor: SerialDescriptor, index: number): number;
     decodeString(): string;

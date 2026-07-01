@@ -16,7 +16,6 @@ export class ConfigurationSource extends Object {
     constructor(stream: InputStream, url: URL)
     constructor(stream: InputStream, url: URL, lastModified: number)
     constructor(stream: InputStream, path: Path[])
-    private constructor(data: number[], url: URL, lastModified: number)
     constructor(source: Source, data: number[], lastModified: number)
     // private currentLastModified: number;
     readonly data: number[];

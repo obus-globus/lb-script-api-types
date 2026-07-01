@@ -7,7 +7,6 @@ export class Object2LongFunctions$Singleton<K extends unknown> extends AbstractO
     // private key: K;
     // private value: number;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     getLong(arg0: Object): number;
     getOrDefault(arg0: Object, arg1: number): number;

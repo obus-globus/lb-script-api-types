@@ -35,7 +35,6 @@ export class StrTokenizer extends Object implements Cloneable, ListIterator<stri
     add(arg0: string): void;
     // private addToken(arg0: string[], arg1: string): void;
     // private checkTokenized(): void;
-    protected clone(): Object;
     clone(): Object;
     cloneReset(): Object;
     getContent(): string;

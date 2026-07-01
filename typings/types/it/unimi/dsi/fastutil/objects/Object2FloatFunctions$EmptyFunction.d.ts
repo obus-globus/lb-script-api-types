@@ -6,7 +6,6 @@ export class Object2FloatFunctions$EmptyFunction<K extends unknown> extends Abst
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     defaultReturnValue(): number;
     defaultReturnValue(arg0: number): void;

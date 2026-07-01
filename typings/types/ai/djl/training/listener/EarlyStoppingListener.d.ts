@@ -1,4 +1,3 @@
-import type { EarlyStoppingListener$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Trainer } from '../../../../ai/djl/training/Trainer.d.ts'
 import type { TrainingResult } from '../../../../ai/djl/training/TrainingResult.d.ts'
 import type { EarlyStoppingListener$Builder } from '../../../../ai/djl/training/listener/EarlyStoppingListener$Builder.d.ts'
@@ -7,8 +6,7 @@ import type { TrainingListener$BatchData } from '../../../../ai/djl/training/lis
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EarlyStoppingListener extends Object implements TrainingListener {
     static builder(): EarlyStoppingListener$Builder;
-    private constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: string)
-    constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: string, arg6: EarlyStoppingListener$1)
+    constructor(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: string, arg6: any)
     // private earlyStopPctImprovement: number;
     // private epochPatience: number;
     // private maxMillis: number;

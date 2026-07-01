@@ -29,7 +29,6 @@ export abstract class FabricCodecDataProvider<T extends unknown> extends Object 
     static saveStable(paramcache: CachedOutput, paramroot: JsonElement, parampath: Path[][]): CompletableFuture<Object>;
     constructor(arg0: FabricPackOutput, arg1: CompletableFuture<HolderLookup$Provider>, arg2: PackOutput$Target, arg3: string, arg4: Codec<T>)
     constructor(arg0: FabricPackOutput, arg1: CompletableFuture<HolderLookup$Provider>, arg2: ResourceKey<(Object | null)[]>, arg3: Codec<T>)
-    private constructor(arg0: PackOutput$PathProvider, arg1: CompletableFuture<HolderLookup$Provider>, arg2: Codec<T>)
     // private codec: Codec<T>;
     // private pathProvider: PackOutput$PathProvider;
     // private registriesFuture: CompletableFuture<HolderLookup$Provider>;

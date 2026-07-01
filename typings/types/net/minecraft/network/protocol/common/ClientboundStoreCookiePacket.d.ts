@@ -13,7 +13,6 @@ export class ClientboundStoreCookiePacket extends Record implements Packet<Clien
     static PAYLOAD_STREAM_CODEC: StreamCodec<ByteBuf, number[]>;
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundStoreCookiePacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(key: Identifier, payload: number[])
     // private key: Identifier;
     // private payload: number[];

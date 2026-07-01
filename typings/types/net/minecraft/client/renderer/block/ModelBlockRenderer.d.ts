@@ -37,5 +37,6 @@ export class ModelBlockRenderer extends Object {
     // private shouldRenderFace(level: BlockAndTintGetter, state: BlockState, direction: Direction, neighborPos: BlockPos): boolean;
     // private tesselateAmbientOcclusion(output: (param0: number, param1: number, param2: number, param3: BakedQuad, param4: QuadInstance) => void, x: number, y: number, z: number, parts: BlockStateModelPart[], level: BlockAndTintGetter, state: BlockState, pos: BlockPos): void;
     tesselateBlock(output: (param0: number, param1: number, param2: number, param3: BakedQuad, param4: QuadInstance) => void, x: number, y: number, z: number, level: BlockAndTintGetter, pos: BlockPos, blockState: BlockState, model: BlockStateModel, seed: number): void;
+    // private tesselateBlock$mixinextras$wrapped$21(arg0: (param0: number, param1: number, param2: number, param3: BakedQuad, param4: QuadInstance) => void, arg1: number, arg2: number, arg3: number, arg4: BlockAndTintGetter, arg5: BlockPos, arg6: BlockState, arg7: BlockStateModel, arg8: number): void;
     // private tesselateFlat(output: (param0: number, param1: number, param2: number, param3: BakedQuad, param4: QuadInstance) => void, x: number, y: number, z: number, parts: BlockStateModelPart[], level: BlockAndTintGetter, state: BlockState, pos: BlockPos): void;
 }

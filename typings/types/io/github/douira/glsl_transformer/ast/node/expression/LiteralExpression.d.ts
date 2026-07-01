@@ -19,7 +19,6 @@ export class LiteralExpression extends TerminalExpression {
     constructor(arg0: Type, arg1: number)
     constructor(arg0: Type, arg1: number)
     constructor(arg0: Type, arg1: number, arg2: LiteralExpression$IntegerFormat)
-    private constructor(arg0: Type, arg1: string, arg2: boolean, arg3: number, arg4: LiteralExpression$IntegerFormat, arg5: number)
     constructor(arg0: boolean)
     constructor(arg0: string)
     // private booleanValue: boolean;

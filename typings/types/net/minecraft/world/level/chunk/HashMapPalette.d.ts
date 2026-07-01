@@ -7,7 +7,6 @@ export class HashMapPalette<T extends unknown> extends Object implements Palette
     static create(parambits: number, parampaletteEntries: (Object | null)[]): Palette<Object>;
     constructor(bits: number)
     constructor(bits: number, values: T[])
-    private constructor(bits: number, values: T[])
     // private bits: number;
     // private values: T[];
     copy(): Palette<T>;

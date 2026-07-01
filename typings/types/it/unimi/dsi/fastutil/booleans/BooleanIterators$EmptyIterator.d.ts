@@ -9,7 +9,6 @@ export class BooleanIterators$EmptyIterator extends Object implements BooleanLis
     add(arg0: boolean): void;
     back(arg0: number): number;
     clone(): Object;
-    protected clone(): Object;
     forEachRemaining(arg0: (param0: boolean) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;

@@ -10,7 +10,6 @@ export class FloatAVLTreeSet$Entry extends Object implements Cloneable {
     balance(): number;
     balance(arg0: number): void;
     clone(): FloatAVLTreeSet$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

@@ -8,7 +8,6 @@ export class ObjectIterators$EmptyIterator<K extends unknown> extends Object imp
     add(arg0: K): void;
     back(arg0: number): number;
     clone(): Object;
-    protected clone(): Object;
     forEachRemaining(arg0: (param0: K) => void): void;
     hasNext(): boolean;
     hasPrevious(): boolean;

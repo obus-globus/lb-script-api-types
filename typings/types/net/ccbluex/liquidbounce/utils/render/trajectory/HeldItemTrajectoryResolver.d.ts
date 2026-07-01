@@ -12,5 +12,5 @@ export class HeldItemTrajectoryResolver extends Object {
     // private isCrossbowFirework(chargedProjectiles: ChargedProjectiles | null): boolean;
     resolveHeldItemPrimaryShot(player: Player, stack: ItemStack, alwaysShowBow: boolean): TrajectoryDescriptor | null;
     resolveHeldItemShots(player: Player, stack: ItemStack, alwaysShowBow: boolean, includeMultiShot: boolean): TrajectoryShotDescriptor[] | null;
-    // private singleShot(stack: ItemStack, trajectoryDescriptor: TrajectoryDescriptor): TrajectoryShotDescriptor[];
+    // private singleShot(icon: ItemStack, trajectoryDescriptor: TrajectoryDescriptor, colorSource: ItemStack): TrajectoryShotDescriptor[];
 }

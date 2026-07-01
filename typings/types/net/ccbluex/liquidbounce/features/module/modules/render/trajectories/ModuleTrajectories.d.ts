@@ -11,15 +11,19 @@ import type { TrajectoryType } from '../../../../../../../../net/ccbluex/liquidb
  *
  * Allows you to see where projectile items will land.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt:50}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories.kt:52}
  */
 export class ModuleTrajectories extends ClientModule {
     static INSTANCE: ModuleTrajectories;
+    // private activeLineWidth: number;
+    // private /*not mapped: */ getActiveLineWidth(): number;
     // private /*not mapped: */ getActiveTrajectoryArrow(): boolean;
     // private /*not mapped: */ getActiveTrajectoryOther(): boolean;
     // private /*not mapped: */ getAlwaysShowBow(): boolean;
     // private cullBehindPlayer: boolean;
     // private /*not mapped: */ getCullBehindPlayer(): boolean;
+    // private lineWidth: number;
+    // private /*not mapped: */ getLineWidth(): number;
     // private maxRenderDistance: number;
     // private /*not mapped: */ getMaxRenderDistance(): number;
     // private maxSimulatedTicks: number;

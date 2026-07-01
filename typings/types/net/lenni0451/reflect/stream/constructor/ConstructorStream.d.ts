@@ -10,7 +10,6 @@ import type { RStream } from '../../../../../net/lenni0451/reflect/stream/RStrea
 import type { ConstructorWrapper } from '../../../../../net/lenni0451/reflect/stream/constructor/ConstructorWrapper.d.ts'
 export class ConstructorStream extends Object {
     constructor(arg0: RStream)
-    private constructor(arg0: RStream, arg1: ConstructorWrapper[])
     // private constructors: ConstructorWrapper[];
     // private parent: RStream;
     by(arg0: Class<Object>[]): ConstructorWrapper;

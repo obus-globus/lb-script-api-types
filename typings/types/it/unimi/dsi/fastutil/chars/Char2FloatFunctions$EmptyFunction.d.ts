@@ -6,7 +6,6 @@ export class Char2FloatFunctions$EmptyFunction extends AbstractChar2FloatFunctio
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): number;

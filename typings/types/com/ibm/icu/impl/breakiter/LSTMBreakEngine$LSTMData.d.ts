@@ -2,7 +2,6 @@ import type { LSTMBreakEngine$EmbeddingType } from '../../../../../com/ibm/icu/i
 import type { UResourceBundle } from '../../../../../com/ibm/icu/util/UResourceBundle.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LSTMBreakEngine$LSTMData extends Object {
-    private constructor()
     constructor(arg0: UResourceBundle)
     fBackwardB: number[];
     fBackwardU: number[][];

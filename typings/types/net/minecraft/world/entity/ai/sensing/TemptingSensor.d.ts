@@ -15,7 +15,6 @@ export class TemptingSensor extends Sensor<PathfinderMob> {
     static isEntityTargetable(paramlevel: ServerLevel, parambody: LivingEntity, paramentity: LivingEntity): boolean;
     static rememberPositives(paraminvocations: number, parampredicate: (param0: Object | null, param1: Object | null) => boolean): (param0: Object | null, param1: Object | null) => boolean;
     static wasEntityAttackableLastNTicks(parambody: LivingEntity, paramticks: number): (param0: ServerLevel, param1: LivingEntity) => boolean;
-    private constructor(temptations: (param0: PathfinderMob, param1: ItemStack) => boolean)
     constructor(tt: (param0: ItemStack) => boolean)
     // private temptations: (param0: PathfinderMob, param1: ItemStack) => boolean;
     doTick(arg0: ServerLevel, arg1: PathfinderMob): void;

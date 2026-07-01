@@ -13,7 +13,6 @@ export class ClientboundBlockEventPacket extends Object implements Packet<Client
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundBlockEventPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(pos: BlockPos, block: Block, b0: number, b1: number)
-    private constructor(input: RegistryFriendlyByteBuf)
     readonly b0: number;
     readonly b1: number;
     readonly block: Block;

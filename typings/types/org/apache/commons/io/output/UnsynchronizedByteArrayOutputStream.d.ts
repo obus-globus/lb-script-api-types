@@ -1,4 +1,3 @@
-import type { UnsynchronizedByteArrayOutputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { Charset } from '../../../../../java/nio/charset/Charset.d.ts'
@@ -13,8 +12,7 @@ export class UnsynchronizedByteArrayOutputStream extends AbstractByteArrayOutput
     static toBufferedInputStream(paramarg0: InputStream, paramarg1: number): InputStream;
     constructor()
     constructor(arg0: number)
-    private constructor(arg0: UnsynchronizedByteArrayOutputStream$Builder)
-    constructor(arg0: UnsynchronizedByteArrayOutputStream$Builder, arg1: UnsynchronizedByteArrayOutputStream$1)
+    constructor(arg0: UnsynchronizedByteArrayOutputStream$Builder, arg1: any)
     reset(): void;
     size(): number;
     toByteArray(): number[];

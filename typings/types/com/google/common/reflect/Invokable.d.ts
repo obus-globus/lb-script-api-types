@@ -18,7 +18,7 @@ export abstract class Invokable<T extends unknown, R extends unknown> extends Ob
     static PUBLIC: number;
     static from(paramconstructor: Constructor<Object>): Invokable<Object, Object>;
     static from(parammethod: Method): Invokable<Object, Object>;
-    constructor(member: M)
+    constructor(member: AccessibleObject)
     // private accessibleObject: AccessibleObject;
     // private member: Member;
     accessFlags(): AccessFlag[];

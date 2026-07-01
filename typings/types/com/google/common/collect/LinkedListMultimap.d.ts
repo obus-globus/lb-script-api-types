@@ -14,8 +14,6 @@ export class LinkedListMultimap<K extends unknown, V extends unknown> extends Ab
     static create(parammultimap: Multimap<Object, Object>): LinkedListMultimap<Object, Object>;
     static create(paramexpectedKeys: number): LinkedListMultimap<Object, Object>;
     constructor()
-    private constructor(multimap: Multimap<K, V>)
-    private constructor(expectedKeys: number)
     // private head: LinkedListMultimap$Node<K, V>;
     // private keyToKeyList: Map<K, LinkedListMultimap$KeyList<K, V>>;
     // private modCount: number;

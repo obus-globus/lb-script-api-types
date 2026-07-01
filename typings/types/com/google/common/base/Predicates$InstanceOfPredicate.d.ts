@@ -1,11 +1,9 @@
-import type { Predicates$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Predicate } from '../../../../com/google/common/base/Predicate.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Predicates$InstanceOfPredicate<T extends unknown> extends Object implements Predicate<T>, Serializable {
-    constructor(arg0: Class<Object>, arg1: Predicates$1)
-    private constructor(clazz: Class<Object>)
+    constructor(arg0: Class<Object>, arg1: any)
     // private clazz: Class<Object>;
     apply(o: T): boolean;
     equals(obj: Object | null): boolean;

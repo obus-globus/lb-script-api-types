@@ -2,8 +2,8 @@ import type { ObjectAVLTreeSet$Entry } from '../../../../../it/unimi/dsi/fastuti
 import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectListIterator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectAVLTreeSet$SetIterator extends Object implements ObjectListIterator<K> {
-    constructor(null_: K[])
-    constructor(null_: K[], arg1: K)
+    constructor(null_: Object[])
+    constructor(null_: Object[], arg1: Object)
     // private curr: ObjectAVLTreeSet$Entry<K>;
     // private index: number;
     // private next: ObjectAVLTreeSet$Entry<K>;

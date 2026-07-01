@@ -15,7 +15,7 @@ import type { InputHandler } from '../../../../../../net/ccbluex/liquidbounce/in
  *
  * This {@link EventListener} needs to be unregistered when the browser is closed.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/input/InputListener.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/input/InputListener.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/input/InputListener.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/input/InputListener.kt:42}
  */
 export class InputListener extends Object implements AutoCloseable, EventListener {
     constructor(browser: Browser, inputHandler: InputHandler, acceptor: InputAcceptor)

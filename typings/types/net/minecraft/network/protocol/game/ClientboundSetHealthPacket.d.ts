@@ -11,7 +11,6 @@ export class ClientboundSetHealthPacket extends Object implements Packet<ClientG
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetHealthPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(health: number, food: number, saturation: number)
-    private constructor(input: FriendlyByteBuf)
     readonly food: number;
     readonly health: number;
     readonly saturation: number;

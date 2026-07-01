@@ -4,7 +4,7 @@ import type { ResourceTask } from '../../../../../../net/ccbluex/liquidbounce/in
 /**
  * An asynchronous task with progress tracking
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:28}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:28}
  */
 export class Task extends Object {
     constructor(name: string)
@@ -18,25 +18,25 @@ export class Task extends Object {
     /**
      * Checks if all subtasks are completed
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:63}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:63}
      */
     areAllSubTasksCompleted(): boolean;
     /**
      * Calculates aggregate progress of all subtasks
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:55}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:55}
      */
     calculateProgress(): number;
     /**
      * Creates or gets an existing download sub-task
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:48}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:48}
      */
     getOrCreateFileTask(subTaskName: string): ResourceTask;
     /**
      * Creates or gets an existing sub-task
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:41}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/integration/task/type/Task.kt:41}
      */
     getOrCreateTask(subTaskName: string): Task;
 }

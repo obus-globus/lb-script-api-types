@@ -4,7 +4,6 @@ import type { ProtoBuf$VersionRequirement } from '../../../../../../../kotlin/re
 import type { VersionRequirementTable$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/VersionRequirementTable$Companion.d.ts'
 export class VersionRequirementTable extends Object {
     static Companion: VersionRequirementTable$Companion;
-    private constructor(arg0: ProtoBuf$VersionRequirement[])
     constructor(arg0: (Object | null)[], arg1: DefaultConstructorMarker)
     // private infos: ProtoBuf$VersionRequirement[];
     get(arg0: number): ProtoBuf$VersionRequirement;

@@ -12,7 +12,6 @@ import type { ChunkPos } from '../../../../../net/minecraft/world/level/ChunkPos
 export class ClientboundForgetLevelChunkPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundForgetLevelChunkPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(pos: ChunkPos)
     // private pos: ChunkPos;
     equals(o: Object | null): boolean;

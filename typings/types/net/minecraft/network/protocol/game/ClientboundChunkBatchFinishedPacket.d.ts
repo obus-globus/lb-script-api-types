@@ -12,7 +12,6 @@ export class ClientboundChunkBatchFinishedPacket extends Record implements Packe
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundChunkBatchFinishedPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(batchSize: number)
-    private constructor(input: FriendlyByteBuf)
     // private batchSize: number;
     batchSize(): number;
     equals(o: Object | null): boolean;

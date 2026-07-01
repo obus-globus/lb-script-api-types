@@ -6,7 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class TreeRangeMap$SubRangeMap extends Object implements RangeMap<K, V> {
-    constructor(null_: TreeRangeMap<K, V>, subRange: Range<K>)
+    constructor(null_: TreeRangeMap<Comparable<Object>, Object>, subRange: Range<Comparable<Object>>)
     // private subRange: Range<K>;
     asDescendingMapOfRanges<K extends Comparable<Object>, V extends unknown>(): Map<Range<K>, V>;
     asMapOfRanges<K extends Comparable<Object>, V extends unknown>(): Map<Range<K>, V>;

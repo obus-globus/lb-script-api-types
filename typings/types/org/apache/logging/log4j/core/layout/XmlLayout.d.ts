@@ -1,4 +1,3 @@
-import type { XmlLayout$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { AbstractJacksonLayout } from '../../../../../../org/apache/logging/log4j/core/layout/AbstractJacksonLayout.d.ts'
@@ -6,6 +5,5 @@ import type { KeyValuePair } from '../../../../../../org/apache/logging/log4j/co
 export class XmlLayout extends AbstractJacksonLayout {
     static ELEMENT_TYPE: string;
     constructor(locationInfo: boolean, properties: boolean, complete: boolean, compact: boolean, charset: Charset, includeStacktrace: boolean)
-    private constructor(config: Configuration, locationInfo: boolean, properties: boolean, complete: boolean, compact: boolean, endOfLine: string, charset: Charset, includeStacktrace: boolean, stacktraceAsString: boolean, includeNullDelimiter: boolean, includeTimeMillis: boolean, additionalFields: KeyValuePair[])
-    constructor(arg0: Configuration, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: string, arg6: Charset, arg7: boolean, arg8: boolean, arg9: boolean, arg10: boolean, arg11: KeyValuePair[], arg12: XmlLayout$1)
+    constructor(arg0: Configuration, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean, arg5: string, arg6: Charset, arg7: boolean, arg8: boolean, arg9: boolean, arg10: boolean, arg11: KeyValuePair[], arg12: any)
 }

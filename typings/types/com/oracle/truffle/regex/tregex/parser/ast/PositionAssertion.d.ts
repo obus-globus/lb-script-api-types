@@ -6,7 +6,6 @@ import type { Term } from '../../../../../../../com/oracle/truffle/regex/tregex/
 import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonObject.d.ts'
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class PositionAssertion extends Term {
-    private constructor(copy: PositionAssertion)
     constructor(type: PositionAssertion$Type)
     readonly next: RegexASTNode;
     type: PositionAssertion$Type;

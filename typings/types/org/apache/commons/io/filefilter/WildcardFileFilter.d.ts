@@ -1,4 +1,3 @@
-import type { WildcardFileFilter$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { FileVisitResult } from '../../../../../java/nio/file/FileVisitResult.d.ts'
@@ -17,9 +16,7 @@ export class WildcardFileFilter extends AbstractFileFilter implements Serializab
     constructor(arg0: string, arg1: IOCase)
     constructor(arg0: string[])
     constructor(arg0: string[], arg1: IOCase)
-    private constructor(arg0: IOCase, arg1: string[])
-    private constructor(arg0: WildcardFileFilter$Builder)
-    constructor(arg0: WildcardFileFilter$Builder, arg1: WildcardFileFilter$1)
+    constructor(arg0: WildcardFileFilter$Builder, arg1: any)
     // private ioCase: IOCase;
     // private wildcards: string[];
     accept(arg0: File): boolean;

@@ -1,4 +1,3 @@
-import type { Base16OutputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { OutputStream } from '../../../../../java/io/OutputStream.d.ts'
 import type { CodecPolicy } from '../../../../../org/apache/commons/codec/CodecPolicy.d.ts'
 import type { Base16 } from '../../../../../org/apache/commons/codec/binary/Base16.d.ts'
@@ -11,6 +10,5 @@ export class Base16OutputStream extends BaseNCodecOutputStream<Base16, Base16Out
     constructor(arg0: OutputStream, arg1: boolean)
     constructor(arg0: OutputStream, arg1: boolean, arg2: boolean)
     constructor(arg0: OutputStream, arg1: boolean, arg2: boolean, arg3: CodecPolicy)
-    private constructor(arg0: Base16OutputStream$Builder)
-    constructor(arg0: Base16OutputStream$Builder, arg1: Base16OutputStream$1)
+    constructor(arg0: Base16OutputStream$Builder, arg1: any)
 }

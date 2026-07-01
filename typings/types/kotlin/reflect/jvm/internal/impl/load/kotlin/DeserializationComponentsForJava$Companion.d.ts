@@ -6,7 +6,6 @@ import type { DeserializationComponentsForJava$Companion$ModuleData } from '../.
 import type { KotlinClassFinder } from '../../../../../../../kotlin/reflect/jvm/internal/impl/load/kotlin/KotlinClassFinder.d.ts'
 import type { ErrorReporter } from '../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/ErrorReporter.d.ts'
 export class DeserializationComponentsForJava$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     createModuleData(arg0: KotlinClassFinder, arg1: KotlinClassFinder, arg2: JavaClassFinder, arg3: string, arg4: ErrorReporter, arg5: JavaSourceElementFactory): DeserializationComponentsForJava$Companion$ModuleData;
 }

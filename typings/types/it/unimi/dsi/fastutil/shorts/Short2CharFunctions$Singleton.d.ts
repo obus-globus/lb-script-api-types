@@ -7,7 +7,6 @@ export class Short2CharFunctions$Singleton extends AbstractShort2CharFunction im
     // private key: number;
     // private value: string;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     get(arg0: Object): string;

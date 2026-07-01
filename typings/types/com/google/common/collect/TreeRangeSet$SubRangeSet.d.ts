@@ -7,7 +7,7 @@ export class TreeRangeSet$SubRangeSet extends TreeRangeSet<C> {
     static create(): TreeRangeSet<any>;
     static create(paramrangeSet: RangeSet<any>): TreeRangeSet<any>;
     static create(paramranges: Range<any>[]): TreeRangeSet<any>;
-    constructor(null_: TreeRangeSet<C>, restriction: Range<C>)
+    constructor(null_: TreeRangeSet<Comparable<Object>>, restriction: Range<Comparable<Object>>)
     // private restriction: Range<C>;
     add<C extends Comparable<Object>>(rangeToAdd: Range<C>): void;
     clear(): void;

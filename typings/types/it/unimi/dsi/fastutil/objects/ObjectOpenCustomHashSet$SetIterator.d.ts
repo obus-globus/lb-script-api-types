@@ -1,10 +1,8 @@
-import type { ObjectOpenCustomHashSet$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ObjectIterator } from '../../../../../it/unimi/dsi/fastutil/objects/ObjectIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectOpenCustomHashSet$SetIterator extends Object implements ObjectIterator<K> {
-    private constructor(null_: K[])
-    constructor(null_: K[], arg1: ObjectOpenCustomHashSet$1)
+    constructor(null_: Object[], arg1: any)
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

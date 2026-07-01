@@ -46,7 +46,6 @@ export class Matrix3d extends Object implements Externalizable, Cloneable, Matri
     _m22(arg0: number): Matrix3d;
     add(arg0: Matrix3dc): Matrix3d;
     add(arg0: Matrix3dc, arg1: Matrix3d): Matrix3d;
-    protected clone(): Object;
     clone(): Object;
     cofactor(): Matrix3d;
     cofactor(arg0: Matrix3d): Matrix3d;

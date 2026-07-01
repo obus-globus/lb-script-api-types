@@ -6,7 +6,6 @@ import type { ServerLevel } from '../../../../../../net/minecraft/server/level/S
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 export class NearestVisibleLivingEntities extends Object {
     static empty(): NearestVisibleLivingEntities;
-    private constructor()
     constructor(level: ServerLevel, body: LivingEntity, livingEntities: LivingEntity[])
     // private lineOfSightTest: (param0: LivingEntity) => boolean;
     // private nearbyEntities: LivingEntity[];

@@ -11,7 +11,6 @@ export class Pack200CompressorInputStream extends CompressorInputStream {
     constructor(arg0: File, arg1: Pack200Strategy)
     constructor(arg0: File, arg1: Pack200Strategy, arg2: { [key: string]: string })
     constructor(arg0: InputStream)
-    private constructor(arg0: InputStream, arg1: File, arg2: Pack200Strategy, arg3: { [key: string]: string })
     constructor(arg0: InputStream, arg1: { [key: string]: string })
     constructor(arg0: InputStream, arg1: Pack200Strategy)
     constructor(arg0: InputStream, arg1: Pack200Strategy, arg2: { [key: string]: string })

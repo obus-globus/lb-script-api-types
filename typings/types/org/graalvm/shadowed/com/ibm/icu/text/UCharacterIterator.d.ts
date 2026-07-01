@@ -13,7 +13,6 @@ export abstract class UCharacterIterator extends Object implements Cloneable, UF
     static getInstance(paramsource: CharacterIterator): UCharacterIterator;
     static getInstance(paramsource: Replaceable): UCharacterIterator;
     constructor()
-    protected clone(): Object;
     clone(): Object;
     current(): number;
     currentCodePoint(): number;

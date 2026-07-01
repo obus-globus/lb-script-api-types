@@ -23,7 +23,6 @@ export class SingleItemRecipeBuilder extends Object implements RecipeBuilder {
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
     static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<any>>;
     static stonecutting(paramingredient: Ingredient, paramcategory: RecipeCategory, paramresult: ItemLike, paramcount: number): SingleItemRecipeBuilder;
-    private constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null, ingredient: Ingredient, result: ItemStackTemplate)
     constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null, ingredient: Ingredient, result: ItemLike, count: number)
     // private advancementBuilder: RecipeUnlockAdvancementBuilder;
     // private category: RecipeCategory;

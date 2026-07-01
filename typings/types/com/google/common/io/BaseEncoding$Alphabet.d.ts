@@ -1,7 +1,6 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BaseEncoding$Alphabet extends Object {
     constructor(name: string, chars: string[])
-    private constructor(name: string, chars: string[], decodabet: number[], ignoreCase: boolean)
     // private bitsPerChar: number;
     // private bytesPerChunk: number;
     // private chars: string[];

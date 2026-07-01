@@ -6,7 +6,6 @@ export class Char2BooleanFunctions$EmptyFunction extends AbstractChar2BooleanFun
     constructor()
     clear(): void;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: string): boolean;
     defaultReturnValue(): boolean;

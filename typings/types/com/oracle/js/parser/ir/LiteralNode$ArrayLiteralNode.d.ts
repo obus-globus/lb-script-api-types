@@ -22,7 +22,6 @@ export class LiteralNode$ArrayLiteralNode extends LiteralNode<Expression[]> impl
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: Number): LiteralNode<Number>;
     static newInstance(paramtoken: number, paramfinish: number, paramvalue: Number, paramtoStringConverter: (param0: Number) => TruffleString): LiteralNode<Number>;
     static newInstance(paramtoken: number, paramfinish: number): LiteralNode<Object>;
-    private constructor(node: LiteralNode$ArrayLiteralNode, value: Expression[])
     constructor(token: number, finish: number, value: Expression[])
     constructor(token: number, finish: number, value: Expression[], hasSpread: boolean, hasTrailingComma: boolean)
     // private hasSpread: boolean;

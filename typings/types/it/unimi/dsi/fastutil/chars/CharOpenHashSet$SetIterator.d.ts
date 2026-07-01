@@ -1,12 +1,10 @@
-import type { CharOpenHashSet$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { CharConsumer } from '../../../../../it/unimi/dsi/fastutil/chars/CharConsumer.d.ts'
 import type { CharIterator } from '../../../../../it/unimi/dsi/fastutil/chars/CharIterator.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { IntConsumer } from '../../../../../java/util/function/IntConsumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharOpenHashSet$SetIterator extends Object implements CharIterator {
-    private constructor(null_: (Object | null)[])
-    constructor(null_: (Object | null)[], arg1: CharOpenHashSet$1)
+    constructor(null_: (Object | null)[], arg1: any)
     // private c: number;
     // private last: number;
     // private mustReturnNull: boolean;

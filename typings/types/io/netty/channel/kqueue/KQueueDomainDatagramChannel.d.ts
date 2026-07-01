@@ -1,6 +1,5 @@
 import type { AbstractKQueueChannel$AbstractKQueueUnsafe } from '../../../../io/netty/channel/kqueue/AbstractKQueueChannel$AbstractKQueueUnsafe.d.ts'
 import type { AbstractKQueueDatagramChannel } from '../../../../io/netty/channel/kqueue/AbstractKQueueDatagramChannel.d.ts'
-import type { BsdSocket } from '../../../../io/netty/channel/kqueue/BsdSocket.d.ts'
 import type { KQueueDomainDatagramChannelConfig } from '../../../../io/netty/channel/kqueue/KQueueDomainDatagramChannelConfig.d.ts'
 import type { DomainDatagramChannel } from '../../../../io/netty/channel/unix/DomainDatagramChannel.d.ts'
 import type { DomainSocketAddress } from '../../../../io/netty/channel/unix/DomainSocketAddress.d.ts'
@@ -9,7 +8,6 @@ import type { SocketAddress } from '../../../../java/net/SocketAddress.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class KQueueDomainDatagramChannel extends AbstractKQueueDatagramChannel implements DomainDatagramChannel {
     constructor()
-    private constructor(arg0: BsdSocket, arg1: boolean)
     constructor(arg0: number)
     // private config: KQueueDomainDatagramChannelConfig;
     readonly connected: boolean;

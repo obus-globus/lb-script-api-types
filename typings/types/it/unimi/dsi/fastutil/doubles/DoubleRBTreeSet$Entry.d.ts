@@ -10,7 +10,6 @@ export class DoubleRBTreeSet$Entry extends Object implements Cloneable {
     black(): boolean;
     black(arg0: boolean): void;
     clone(): DoubleRBTreeSet$Entry;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     left(): DoubleRBTreeSet$Entry;

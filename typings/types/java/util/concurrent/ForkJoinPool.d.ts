@@ -27,7 +27,6 @@ export class ForkJoinPool extends AbstractExecutorService implements ScheduledEx
     static getCommonPoolParallelism(): number;
     static managedBlock(paramarg0: ForkJoinPool$ManagedBlocker): void;
     constructor()
-    private constructor(arg0: number)
     constructor(arg0: number)
     constructor(arg0: number, arg1: ForkJoinPool$ForkJoinWorkerThreadFactory, arg2: (param0: Thread, param1: Throwable) => void, arg3: boolean)
     constructor(arg0: number, arg1: ForkJoinPool$ForkJoinWorkerThreadFactory, arg2: (param0: Thread, param1: Throwable) => void, arg3: boolean, arg4: number, arg5: number, arg6: number, arg7: (param0: ForkJoinPool) => boolean, arg8: number, arg9: TimeUnit)

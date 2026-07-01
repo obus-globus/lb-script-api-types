@@ -1,6 +1,9 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
+/**
+ * Client-chat connection states: CONNECTING, CONNECTED, LOGGING_IN, LOGGED_IN, DISCONNECTED, AUTHENTICATION_FAILED.
+ */
 export class ClientChatStateChange$State extends Enum<ClientChatStateChange$State> {
     static AUTHENTICATION_FAILED: ClientChatStateChange$State;
     static CONNECTED: ClientChatStateChange$State;

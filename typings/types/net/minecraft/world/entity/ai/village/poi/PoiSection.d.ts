@@ -16,7 +16,6 @@ import type { PoiSection$Packed } from '../../../../../../../net/minecraft/world
 import type { PoiType } from '../../../../../../../net/minecraft/world/entity/ai/village/poi/PoiType.d.ts'
 export class PoiSection extends Object implements PointOfInterestSetExtended {
     constructor(setDirty: () => void)
-    private constructor(setDirty: () => void, isValid: boolean, records: PoiRecord[])
     // private byType: Map<Holder<PoiType>, PoiRecord[]>;
     // private isValid: boolean;
     // private records: { [key: string]: any };

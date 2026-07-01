@@ -4,7 +4,7 @@ import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { Iterator } from '../../../../../../../java/util/Iterator.d.ts'
 import type { Interval } from '../../../../../../../net/caffeinemc/mods/sodium/client/util/interval_tree/Interval.d.ts'
 export class TreeNode$TreeNodeIterator extends Object implements Iterator<Interval<T>> {
-    constructor(null_: Interval<T>[])
+    constructor(null_: Interval<Comparable<T>>[])
     // private currentInterval: Interval<T>;
     // private currentNode: Interval<T>[];
     // private iterator: Iterator<Interval<T>>;

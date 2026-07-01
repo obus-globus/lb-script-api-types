@@ -1,10 +1,8 @@
-import type { PropertiesUtil$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ThreadLocal } from '../../../../../java/lang/ThreadLocal.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { PropertySource } from '../../../../../org/apache/logging/log4j/util/PropertySource.d.ts'
 export class PropertiesUtil$Environment extends Object {
-    private constructor(propertySource: PropertySource)
-    constructor(arg0: PropertySource, arg1: PropertiesUtil$1)
+    constructor(arg0: PropertySource, arg1: any)
     // private CURRENT_PROPERTY_SOURCE: ThreadLocal<PropertySource>;
     // private sources: PropertySource[];
     // private addPropertySource(propertySource: PropertySource): void;

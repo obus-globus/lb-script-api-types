@@ -1,4 +1,3 @@
-import type { IdEmbedding$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { Device } from '../../../../ai/djl/Device.d.ts'
 import type { NDArray } from '../../../../ai/djl/ndarray/NDArray.d.ts'
 import type { NDManager } from '../../../../ai/djl/ndarray/NDManager.d.ts'
@@ -11,8 +10,7 @@ import type { ParameterStore } from '../../../../ai/djl/training/ParameterStore.
 import type { Pair } from '../../../../ai/djl/util/Pair.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class IdEmbedding extends AbstractBlock {
-    private constructor(arg0: IdEmbedding$Builder)
-    constructor(arg0: IdEmbedding$Builder, arg1: IdEmbedding$1)
+    constructor(arg0: IdEmbedding$Builder, arg1: any)
     // private dictionarySize: number;
     // private embedding: Parameter;
     // private embeddingSize: number;

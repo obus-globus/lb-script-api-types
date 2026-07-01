@@ -1,5 +1,5 @@
-import type { Resources$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ByteSource } from '../../../../com/google/common/io/ByteSource.d.ts'
+import type { LineProcessor } from '../../../../com/google/common/io/LineProcessor.d.ts'
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { URL } from '../../../../java/net/URL.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -10,8 +10,7 @@ export class Resources$UrlByteSource extends ByteSource {
     static concat(paramsources: Iterator<ByteSource>): ByteSource;
     static empty(): ByteSource;
     static wrap(paramb: number[]): ByteSource;
-    private constructor(url: URL)
-    constructor(arg0: URL, arg1: Resources$1)
+    constructor(arg0: URL, arg1: LineProcessor<string[]>)
     // private url: URL;
     openStream(): InputStream;
     toString(): string;

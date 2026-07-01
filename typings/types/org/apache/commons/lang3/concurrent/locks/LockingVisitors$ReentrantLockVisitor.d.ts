@@ -1,4 +1,3 @@
-import type { LockingVisitors$1 } from '../../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { ReentrantLock } from '../../../../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { LockingVisitors$LockVisitor } from '../../../../../../org/apache/commons/lang3/concurrent/locks/LockingVisitors$LockVisitor.d.ts'
@@ -6,6 +5,5 @@ import type { LockingVisitors$ReentrantLockVisitor$Builder } from '../../../../.
 export class LockingVisitors$ReentrantLockVisitor<O extends unknown> extends LockingVisitors$LockVisitor<O, ReentrantLock> {
     static builder(): LockingVisitors$ReentrantLockVisitor$Builder<Object>;
     constructor(arg0: O, arg1: ReentrantLock)
-    constructor(arg0: LockingVisitors$ReentrantLockVisitor$Builder<Object>, arg1: LockingVisitors$1)
-    private constructor(arg0: LockingVisitors$ReentrantLockVisitor$Builder<O>)
+    constructor(arg0: LockingVisitors$ReentrantLockVisitor$Builder<Object>, arg1: any)
 }

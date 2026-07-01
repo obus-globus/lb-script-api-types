@@ -7,7 +7,6 @@ import type { AbstractEpollChannel } from '../../../../io/netty/channel/epoll/Ab
 import type { AbstractEpollChannel$AbstractEpollUnsafe } from '../../../../io/netty/channel/epoll/AbstractEpollChannel$AbstractEpollUnsafe.d.ts'
 import type { EpollDatagramChannelConfig } from '../../../../io/netty/channel/epoll/EpollDatagramChannelConfig.d.ts'
 import type { EpollRecvByteAllocatorHandle } from '../../../../io/netty/channel/epoll/EpollRecvByteAllocatorHandle.d.ts'
-import type { LinuxSocket } from '../../../../io/netty/channel/epoll/LinuxSocket.d.ts'
 import type { NativeDatagramPacketArray } from '../../../../io/netty/channel/epoll/NativeDatagramPacketArray.d.ts'
 import type { DatagramChannel } from '../../../../io/netty/channel/socket/DatagramChannel.d.ts'
 import type { InternetProtocolFamily } from '../../../../io/netty/channel/socket/InternetProtocolFamily.d.ts'
@@ -22,7 +21,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EpollDatagramChannel extends AbstractEpollChannel implements DatagramChannel {
     static isSegmentedDatagramPacketSupported(): boolean;
     constructor()
-    private constructor(arg0: LinuxSocket, arg1: boolean)
     constructor(arg0: InternetProtocolFamily)
     constructor(arg0: SocketProtocolFamily)
     constructor(arg0: number)

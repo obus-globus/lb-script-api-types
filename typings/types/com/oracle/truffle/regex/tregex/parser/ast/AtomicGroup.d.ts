@@ -7,8 +7,6 @@ import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/t
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class AtomicGroup extends RegexASTSubtreeRootNode {
     constructor()
-    private constructor(copy: AtomicGroup, ast: RegexAST)
-    private constructor(copy: AtomicGroup, ast: RegexAST, compilationBuffer: CompilationBuffer)
     copy(ast: RegexAST): RegexASTSubtreeRootNode;
     copyRecursive(ast: RegexAST, compilationBuffer: CompilationBuffer): Term;
     equalsSemantic(obj: RegexASTNode): boolean;

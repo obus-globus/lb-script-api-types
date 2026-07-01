@@ -1,5 +1,8 @@
 import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
+/**
+ * Fires to determine a block's velocity multiplier (e.g. soul sand, honey), exposing the block and the multiplier.
+ */
 export class BlockVelocityMultiplierEvent extends Event {
     constructor(block: Block, multiplier: number)
     readonly block: Block;

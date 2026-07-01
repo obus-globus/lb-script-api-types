@@ -10,7 +10,6 @@ export class X7875_NewUnix extends Object implements Serializable, Cloneable, Zi
     // private gid: BigInteger;
     // private uid: BigInteger;
     // private version: number;
-    protected clone(): Object;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     getCentralDirectoryData(): number[];

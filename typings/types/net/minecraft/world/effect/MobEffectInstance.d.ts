@@ -26,7 +26,6 @@ export class MobEffectInstance extends Object implements Comparable<MobEffectIns
     constructor(effect: Holder<MobEffect>, duration: number, amplifier: number, ambient: boolean, visible: boolean)
     constructor(effect: Holder<MobEffect>, duration: number, amplifier: number, ambient: boolean, visible: boolean, showIcon: boolean)
     constructor(effect: Holder<MobEffect>, duration: number, amplifier: number, ambient: boolean, visible: boolean, showIcon: boolean, hiddenEffect: MobEffectInstance)
-    private constructor(effect: Holder<MobEffect>, details: MobEffectInstance$Details)
     constructor(copy: MobEffectInstance)
     readonly ambient: boolean;
     readonly amplifier: number;

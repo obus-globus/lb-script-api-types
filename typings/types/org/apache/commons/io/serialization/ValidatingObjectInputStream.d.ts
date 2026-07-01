@@ -1,4 +1,3 @@
-import type { ValidatingObjectInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { ObjectInputStream } from '../../../../../java/io/ObjectInputStream.d.ts'
 import type { ObjectStreamClass } from '../../../../../java/io/ObjectStreamClass.d.ts'
@@ -43,9 +42,7 @@ export class ValidatingObjectInputStream extends ObjectInputStream {
     static builder(): ValidatingObjectInputStream$Builder;
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream)
-    private constructor(arg0: InputStream, arg1: ObjectStreamClassPredicate)
-    private constructor(arg0: ValidatingObjectInputStream$Builder)
-    constructor(arg0: ValidatingObjectInputStream$Builder, arg1: ValidatingObjectInputStream$1)
+    constructor(arg0: ValidatingObjectInputStream$Builder, arg1: any)
     // private predicate: ObjectStreamClassPredicate;
     accept(arg0: Pattern): ValidatingObjectInputStream;
     accept(arg0: Class<Object>[]): ValidatingObjectInputStream;

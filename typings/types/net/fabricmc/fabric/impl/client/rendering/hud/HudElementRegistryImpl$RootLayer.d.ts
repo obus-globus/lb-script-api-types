@@ -6,7 +6,6 @@ import type { DeltaTracker } from '../../../../../../../net/minecraft/client/Del
 import type { GuiGraphicsExtractor } from '../../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class HudElementRegistryImpl$RootLayer extends Record {
-    private constructor(arg0: Identifier)
     constructor(id: Identifier, layers: HudLayer[])
     // private id: Identifier;
     // private layers: HudLayer[];

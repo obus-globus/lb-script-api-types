@@ -1658,7 +1658,6 @@ interface JavaTypeRegistry {
     "com.google.gson.JsonStreamParser": typeof import("../types/com/google/gson/JsonStreamParser").JsonStreamParser;
     "com.google.gson.JsonSyntaxException": typeof import("../types/com/google/gson/JsonSyntaxException").JsonSyntaxException;
     "com.google.gson.LongSerializationPolicy": typeof import("../types/com/google/gson/LongSerializationPolicy").LongSerializationPolicy;
-    "com.google.gson.LongSerializationPolicy$1": typeof import("../types/com/google/gson/LongSerializationPolicy$1").LongSerializationPolicy$1;
     "com.google.gson.ReflectionAccessFilter$FilterResult": typeof import("../types/com/google/gson/ReflectionAccessFilter$FilterResult").ReflectionAccessFilter$FilterResult;
     "com.google.gson.Strictness": typeof import("../types/com/google/gson/Strictness").Strictness;
     "com.google.gson.ToNumberPolicy": typeof import("../types/com/google/gson/ToNumberPolicy").ToNumberPolicy;
@@ -14220,13 +14219,14 @@ interface JavaTypeRegistry {
     "com.viaversion.viaversion.api.type.types.version.VersionedTypes": typeof import("../types/com/viaversion/viaversion/api/type/types/version/VersionedTypes").VersionedTypes;
     "com.viaversion.viaversion.codec.CodecRegistryContext": typeof import("../types/com/viaversion/viaversion/codec/CodecRegistryContext").CodecRegistryContext;
     "com.viaversion.viaversion.codec.OpsBase": typeof import("../types/com/viaversion/viaversion/codec/OpsBase").OpsBase;
-    "com.viaversion.viaversion.codec.hash.CRC32C": typeof import("../types/com/viaversion/viaversion/codec/hash/CRC32C").CRC32C;
+    "com.viaversion.viaversion.codec.hash.FallbackCRC32C": typeof import("../types/com/viaversion/viaversion/codec/hash/FallbackCRC32C").FallbackCRC32C;
     "com.viaversion.viaversion.codec.hash.HashBuilder": typeof import("../types/com/viaversion/viaversion/codec/hash/HashBuilder").HashBuilder;
     "com.viaversion.viaversion.codec.hash.HashOps": typeof import("../types/com/viaversion/viaversion/codec/hash/HashOps").HashOps;
     "com.viaversion.viaversion.codec.hash.HashOps$CollectionHashBuilder": typeof import("../types/com/viaversion/viaversion/codec/hash/HashOps$CollectionHashBuilder").HashOps$CollectionHashBuilder;
     "com.viaversion.viaversion.codec.hash.HashOps$ListHashBuilder": typeof import("../types/com/viaversion/viaversion/codec/hash/HashOps$ListHashBuilder").HashOps$ListHashBuilder;
     "com.viaversion.viaversion.codec.hash.HashOps$MapHashBuilder": typeof import("../types/com/viaversion/viaversion/codec/hash/HashOps$MapHashBuilder").HashOps$MapHashBuilder;
     "com.viaversion.viaversion.codec.hash.HashOps$MapHashBuilder$Entry": typeof import("../types/com/viaversion/viaversion/codec/hash/HashOps$MapHashBuilder$Entry").HashOps$MapHashBuilder$Entry;
+    "com.viaversion.viaversion.codec.hash.JavaCRC32C": typeof import("../types/com/viaversion/viaversion/codec/hash/JavaCRC32C").JavaCRC32C;
     "com.viaversion.viaversion.commands.ViaCommandHandler": typeof import("../types/com/viaversion/viaversion/commands/ViaCommandHandler").ViaCommandHandler;
     "com.viaversion.viaversion.commands.defaultsubs.AutoTeamSubCmd": typeof import("../types/com/viaversion/viaversion/commands/defaultsubs/AutoTeamSubCmd").AutoTeamSubCmd;
     "com.viaversion.viaversion.commands.defaultsubs.DebugSubCmd": typeof import("../types/com/viaversion/viaversion/commands/defaultsubs/DebugSubCmd").DebugSubCmd;
@@ -15615,6 +15615,7 @@ interface JavaTypeRegistry {
     "com.viaversion.viaversion.util.Config": typeof import("../types/com/viaversion/viaversion/util/Config").Config;
     "com.viaversion.viaversion.util.Config$CustomSafeConstructor": typeof import("../types/com/viaversion/viaversion/util/Config$CustomSafeConstructor").Config$CustomSafeConstructor;
     "com.viaversion.viaversion.util.ConfigSection": typeof import("../types/com/viaversion/viaversion/util/ConfigSection").ConfigSection;
+    "com.viaversion.viaversion.util.CustomKey": typeof import("../types/com/viaversion/viaversion/util/CustomKey").CustomKey;
     "com.viaversion.viaversion.util.DumpUtil": typeof import("../types/com/viaversion/viaversion/util/DumpUtil").DumpUtil;
     "com.viaversion.viaversion.util.DumpUtil$DumpErrorType": typeof import("../types/com/viaversion/viaversion/util/DumpUtil$DumpErrorType").DumpUtil$DumpErrorType;
     "com.viaversion.viaversion.util.DumpUtil$DumpException": typeof import("../types/com/viaversion/viaversion/util/DumpUtil$DumpException").DumpUtil$DumpException;
@@ -15626,6 +15627,10 @@ interface JavaTypeRegistry {
     "com.viaversion.viaversion.util.KeyMappings": typeof import("../types/com/viaversion/viaversion/util/KeyMappings").KeyMappings;
     "com.viaversion.viaversion.util.Limit": typeof import("../types/com/viaversion/viaversion/util/Limit").Limit;
     "com.viaversion.viaversion.util.MathUtil": typeof import("../types/com/viaversion/viaversion/util/MathUtil").MathUtil;
+    "com.viaversion.viaversion.util.MinecraftKey": typeof import("../types/com/viaversion/viaversion/util/MinecraftKey").MinecraftKey;
+    "com.viaversion.viaversion.util.MinecraftKey$ColonPrefixedMinecraftKey": typeof import("../types/com/viaversion/viaversion/util/MinecraftKey$ColonPrefixedMinecraftKey").MinecraftKey$ColonPrefixedMinecraftKey;
+    "com.viaversion.viaversion.util.MinecraftKey$CompactMinecraftKey": typeof import("../types/com/viaversion/viaversion/util/MinecraftKey$CompactMinecraftKey").MinecraftKey$CompactMinecraftKey;
+    "com.viaversion.viaversion.util.MinecraftKey$FullMinecraftKey": typeof import("../types/com/viaversion/viaversion/util/MinecraftKey$FullMinecraftKey").MinecraftKey$FullMinecraftKey;
     "com.viaversion.viaversion.util.Pair": typeof import("../types/com/viaversion/viaversion/util/Pair").Pair;
     "com.viaversion.viaversion.util.PipelineUtil": typeof import("../types/com/viaversion/viaversion/util/PipelineUtil").PipelineUtil;
     "com.viaversion.viaversion.util.ProtocolLogger": typeof import("../types/com/viaversion/viaversion/util/ProtocolLogger").ProtocolLogger;
@@ -23635,7 +23640,6 @@ interface JavaTypeRegistry {
     "java.lang.module.ModuleDescriptor$Version": typeof import("../types/java/lang/module/ModuleDescriptor$Version").ModuleDescriptor$Version;
     "java.lang.module.ModuleReference": typeof import("../types/java/lang/module/ModuleReference").ModuleReference;
     "java.lang.module.ResolvedModule": typeof import("../types/java/lang/module/ResolvedModule").ResolvedModule;
-    "java.lang.module.Resolver": typeof import("../types/java/lang/module/Resolver").Resolver;
     "java.lang.ref.Cleaner": typeof import("../types/java/lang/ref/Cleaner").Cleaner;
     "java.lang.ref.PhantomReference": typeof import("../types/java/lang/ref/PhantomReference").PhantomReference;
     "java.lang.ref.Reference": typeof import("../types/java/lang/ref/Reference").Reference;
@@ -24101,6 +24105,7 @@ interface JavaTypeRegistry {
     "java.util.regex.PatternSyntaxException": typeof import("../types/java/util/regex/PatternSyntaxException").PatternSyntaxException;
     "java.util.stream.Collector$Characteristics": typeof import("../types/java/util/stream/Collector$Characteristics").Collector$Characteristics;
     "java.util.zip.CRC32": typeof import("../types/java/util/zip/CRC32").CRC32;
+    "java.util.zip.CRC32C": typeof import("../types/java/util/zip/CRC32C").CRC32C;
     "java.util.zip.CheckedInputStream": typeof import("../types/java/util/zip/CheckedInputStream").CheckedInputStream;
     "java.util.zip.Deflater": typeof import("../types/java/util/zip/Deflater").Deflater;
     "java.util.zip.Deflater$DeflaterZStreamRef": typeof import("../types/java/util/zip/Deflater$DeflaterZStreamRef").Deflater$DeflaterZStreamRef;
@@ -24344,7 +24349,6 @@ interface JavaTypeRegistry {
     "jdk.internal.loader.Resource": typeof import("../types/jdk/internal/loader/Resource").Resource;
     "jdk.internal.loader.URLClassPath": typeof import("../types/jdk/internal/loader/URLClassPath").URLClassPath;
     "jdk.internal.loader.URLClassPath$Loader": typeof import("../types/jdk/internal/loader/URLClassPath$Loader").URLClassPath$Loader;
-    "jdk.internal.module.ModuleTarget": typeof import("../types/jdk/internal/module/ModuleTarget").ModuleTarget;
     "jdk.internal.module.ServicesCatalog": typeof import("../types/jdk/internal/module/ServicesCatalog").ServicesCatalog;
     "jdk.internal.module.ServicesCatalog$ServiceProvider": typeof import("../types/jdk/internal/module/ServicesCatalog$ServiceProvider").ServicesCatalog$ServiceProvider;
     "jdk.internal.ref.CleanerImpl": typeof import("../types/jdk/internal/ref/CleanerImpl").CleanerImpl;
@@ -25755,6 +25759,7 @@ interface JavaTypeRegistry {
     "kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite": typeof import("../types/kotlin/reflect/jvm/internal/impl/protobuf/AbstractMessageLite").AbstractMessageLite;
     "kotlin.reflect.jvm.internal.impl.protobuf.AbstractMessageLite$Builder": typeof import("../types/kotlin/reflect/jvm/internal/impl/protobuf/AbstractMessageLite$Builder").AbstractMessageLite$Builder;
     "kotlin.reflect.jvm.internal.impl.protobuf.AbstractParser": typeof import("../types/kotlin/reflect/jvm/internal/impl/protobuf/AbstractParser").AbstractParser;
+    "kotlin.reflect.jvm.internal.impl.protobuf.BoundedByteString$1": typeof import("../types/kotlin/reflect/jvm/internal/impl/protobuf/BoundedByteString$1").BoundedByteString$1;
     "kotlin.reflect.jvm.internal.impl.protobuf.BoundedByteString$BoundedByteIterator": typeof import("../types/kotlin/reflect/jvm/internal/impl/protobuf/BoundedByteString$BoundedByteIterator").BoundedByteString$BoundedByteIterator;
     "kotlin.reflect.jvm.internal.impl.protobuf.ByteString$Output": typeof import("../types/kotlin/reflect/jvm/internal/impl/protobuf/ByteString$Output").ByteString$Output;
     "kotlin.reflect.jvm.internal.impl.protobuf.CodedInputStream": typeof import("../types/kotlin/reflect/jvm/internal/impl/protobuf/CodedInputStream").CodedInputStream;
@@ -28169,6 +28174,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.common.ShapeFlag": typeof import("../types/net/ccbluex/liquidbounce/common/ShapeFlag").ShapeFlag;
     "net.ccbluex.liquidbounce.common.StorageEspOutlineContext": typeof import("../types/net/ccbluex/liquidbounce/common/StorageEspOutlineContext").StorageEspOutlineContext;
     "net.ccbluex.liquidbounce.common.TweakedMethods": typeof import("../types/net/ccbluex/liquidbounce/common/TweakedMethods").TweakedMethods;
+    "net.ccbluex.liquidbounce.common.XRayBlockRenderContext": typeof import("../types/net/ccbluex/liquidbounce/common/XRayBlockRenderContext").XRayBlockRenderContext;
     "net.ccbluex.liquidbounce.config.ConfigSystem": typeof import("../types/net/ccbluex/liquidbounce/config/ConfigSystem").ConfigSystem;
     "net.ccbluex.liquidbounce.config.autoconfig.AutoConfig": typeof import("../types/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig").AutoConfig;
     "net.ccbluex.liquidbounce.config.autoconfig.AutoConfigMetadata": typeof import("../types/net/ccbluex/liquidbounce/config/autoconfig/AutoConfigMetadata").AutoConfigMetadata;
@@ -29621,7 +29627,6 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleStorageESP$StorageScanner": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP$StorageScanner").ModuleStorageESP$StorageScanner;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer").ModuleTNTTimer;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer$ShowTimer": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer$ShowTimer").ModuleTNTTimer$ShowTimer;
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer$ShowTimer$TimeUnit": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTNTTimer$ShowTimer$TimeUnit").ModuleTNTTimer$ShowTimer$TimeUnit;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTracers": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTracers").ModuleTracers;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTrueSight": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTrueSight").ModuleTrueSight;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTrueSight$Sight": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleTrueSight$Sight").ModuleTrueSight$Sight;
@@ -29629,6 +29634,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleXRay": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay").ModuleXRay;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleZoom": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleZoom").ModuleZoom;
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleZoom$Scroll": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/ModuleZoom$Scroll").ModuleZoom$Scroll;
+    "net.ccbluex.liquidbounce.features.module.modules.render.TimeUnit": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/TimeUnit").TimeUnit;
     "net.ccbluex.liquidbounce.features.module.modules.render.cameraclip.ModuleCameraClip": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/cameraclip/ModuleCameraClip").ModuleCameraClip;
     "net.ccbluex.liquidbounce.features.module.modules.render.cameraclip.ModuleCameraClip$Animation": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/cameraclip/ModuleCameraClip$Animation").ModuleCameraClip$Animation;
     "net.ccbluex.liquidbounce.features.module.modules.render.cameraclip.ModuleCameraClip$ScrollAdjust": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/cameraclip/ModuleCameraClip$ScrollAdjust").ModuleCameraClip$ScrollAdjust;
@@ -29701,7 +29707,6 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.ModuleTrajectories": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories").ModuleTrajectories;
     "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.ModuleTrajectories$Show": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/ModuleTrajectories$Show").ModuleTrajectories$Show;
     "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.TrajectoryDetailedInfoRenderer": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer").TrajectoryDetailedInfoRenderer;
-    "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.TrajectoryDetailedInfoRenderer$DurationUnit": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer$DurationUnit").TrajectoryDetailedInfoRenderer$DurationUnit;
     "net.ccbluex.liquidbounce.features.module.modules.render.trajectories.TrajectoryDetailedInfoRenderer$ShowAt": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/render/trajectories/TrajectoryDetailedInfoRenderer$ShowAt").TrajectoryDetailedInfoRenderer$ShowAt;
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleAirPlace": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAirPlace").ModuleAirPlace;
     "net.ccbluex.liquidbounce.features.module.modules.world.ModuleAirPlace$CustomRange": typeof import("../types/net/ccbluex/liquidbounce/features/module/modules/world/ModuleAirPlace$CustomRange").ModuleAirPlace$CustomRange;
@@ -30152,8 +30157,12 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.utils.ColorUtils": typeof import("../types/net/ccbluex/liquidbounce/render/utils/ColorUtils").ColorUtils;
     "net.ccbluex.liquidbounce.render.utils.ColorUtilsKt": typeof import("../types/net/ccbluex/liquidbounce/render/utils/ColorUtilsKt").ColorUtilsKt;
     "net.ccbluex.liquidbounce.render.utils.DistanceFadeUniformValueGroup": typeof import("../types/net/ccbluex/liquidbounce/render/utils/DistanceFadeUniformValueGroup").DistanceFadeUniformValueGroup;
+    "net.ccbluex.liquidbounce.render.utils.LineStripAsLinesVertexView": typeof import("../types/net/ccbluex/liquidbounce/render/utils/LineStripAsLinesVertexView").LineStripAsLinesVertexView;
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList": typeof import("../types/net/ccbluex/liquidbounce/render/utils/MutableVertexList").MutableVertexList;
+    "net.ccbluex.liquidbounce.render.utils.MutableVertexList$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/utils/MutableVertexList$Companion").MutableVertexList$Companion;
     "net.ccbluex.liquidbounce.render.utils.RenderingDebug": typeof import("../types/net/ccbluex/liquidbounce/render/utils/RenderingDebug").RenderingDebug;
     "net.ccbluex.liquidbounce.render.utils.UnitCircle": typeof import("../types/net/ccbluex/liquidbounce/render/utils/UnitCircle").UnitCircle;
+    "net.ccbluex.liquidbounce.render.utils.VertexListKt": typeof import("../types/net/ccbluex/liquidbounce/render/utils/VertexListKt").VertexListKt;
     "net.ccbluex.liquidbounce.script.DebugProtocol": typeof import("../types/net/ccbluex/liquidbounce/script/DebugProtocol").DebugProtocol;
     "net.ccbluex.liquidbounce.script.PolyglotExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/script/PolyglotExtensionsKt").PolyglotExtensionsKt;
     "net.ccbluex.liquidbounce.script.PolyglotScript": typeof import("../types/net/ccbluex/liquidbounce/script/PolyglotScript").PolyglotScript;
@@ -40578,6 +40587,8 @@ interface JavaTypeRegistry {
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.AttributeOperands": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/AttributeOperands").AttributeOperands;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.BiomeTemperatureCategory": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/BiomeTemperatureCategory").BiomeTemperatureCategory;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.BookEditAction": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/BookEditAction").BookEditAction;
+    "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.BossBarColor": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/BossBarColor").BossBarColor;
+    "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.BossBarOverlay": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/BossBarOverlay").BossBarOverlay;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.BossEventUpdateType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/BossEventUpdateType").BossEventUpdateType;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.BuildPlatform": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/BuildPlatform").BuildPlatform;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.CameraAimAssistPacketPayload_Action": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/CameraAimAssistPacketPayload_Action").CameraAimAssistPacketPayload_Action;
@@ -40648,7 +40659,9 @@ interface JavaTypeRegistry {
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ItemStackNetResult": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemStackNetResult").ItemStackNetResult;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ItemStackRequestActionType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemStackRequestActionType").ItemStackRequestActionType;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ItemUseInventoryTransaction_ActionType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemUseInventoryTransaction_ActionType").ItemUseInventoryTransaction_ActionType;
+    "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ItemUseInventoryTransaction_ClientCooldownState": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemUseInventoryTransaction_ClientCooldownState").ItemUseInventoryTransaction_ClientCooldownState;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ItemUseInventoryTransaction_PredictedResult": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemUseInventoryTransaction_PredictedResult").ItemUseInventoryTransaction_PredictedResult;
+    "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ItemUseInventoryTransaction_TriggerType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemUseInventoryTransaction_TriggerType").ItemUseInventoryTransaction_TriggerType;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ItemUseMethod": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemUseMethod").ItemUseMethod;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ItemUseOnActorInventoryTransaction_ActionType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemUseOnActorInventoryTransaction_ActionType").ItemUseOnActorInventoryTransaction_ActionType;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ItemVersion": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ItemVersion").ItemVersion;
@@ -40685,6 +40698,7 @@ interface JavaTypeRegistry {
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.PacketViolationSeverity": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/PacketViolationSeverity").PacketViolationSeverity;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.PacketViolationType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/PacketViolationType").PacketViolationType;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.ParticleType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ParticleType").ParticleType;
+    "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.PartyDestinationCookieIntent": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/PartyDestinationCookieIntent").PartyDestinationCookieIntent;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.Persona_AnimatedTextureType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/Persona_AnimatedTextureType").Persona_AnimatedTextureType;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.Persona_AnimationExpression": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/Persona_AnimationExpression").Persona_AnimationExpression;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.Persona_ArmSize_Type": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/Persona_ArmSize_Type").Persona_ArmSize_Type;
@@ -40734,6 +40748,7 @@ interface JavaTypeRegistry {
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.SimulationType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/SimulationType").SimulationType;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.Social_GamePublishSetting": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/Social_GamePublishSetting").Social_GamePublishSetting;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.SoftEnumUpdateType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/SoftEnumUpdateType").SoftEnumUpdateType;
+    "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.SoundDataEvent": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/SoundDataEvent").SoundDataEvent;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.SpawnBiomeType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/SpawnBiomeType").SpawnBiomeType;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.SpawnPositionType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/SpawnPositionType").SpawnPositionType;
     "net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.StructureBlockType": typeof import("../types/net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/StructureBlockType").StructureBlockType;

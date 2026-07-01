@@ -14,7 +14,6 @@ export class CommandLine$Help$Ansi$Text extends Object implements Cloneable {
     // private addStyledSection(start: number, length: number, startStyle: string, endStyle: string): void;
     append(string: string): CommandLine$Help$Ansi$Text;
     append(other: CommandLine$Help$Ansi$Text): CommandLine$Help$Ansi$Text;
-    protected clone(): Object;
     clone(): Object;
     equals(obj: Object | null): boolean;
     // private findSectionContaining(index: number): CommandLine$Help$Ansi$StyledSection;

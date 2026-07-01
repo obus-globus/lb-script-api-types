@@ -1,13 +1,14 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ToggleableMovementTracker } from '../../../../../net/caffeinemc/mods/lithium/common/tracking/entity/ToggleableMovementTracker.d.ts'
 import type { Entity$RemovalReason } from '../../../../../net/minecraft/world/entity/Entity$RemovalReason.d.ts'
+import type { EntityAccess } from '../../../../../net/minecraft/world/level/entity/EntityAccess.d.ts'
 import type { EntityInLevelCallback } from '../../../../../net/minecraft/world/level/entity/EntityInLevelCallback.d.ts'
 import type { EntitySection } from '../../../../../net/minecraft/world/level/entity/EntitySection.d.ts'
 import type { PersistentEntitySectionManager } from '../../../../../net/minecraft/world/level/entity/PersistentEntitySectionManager.d.ts'
 import type { Visibility } from '../../../../../net/minecraft/world/level/entity/Visibility.d.ts'
 export class PersistentEntitySectionManager$Callback extends Object implements ToggleableMovementTracker, EntityInLevelCallback {
     static NULL: EntityInLevelCallback;
-    private constructor(null_: PersistentEntitySectionManager<T>, entity: T, currentSectionKey: number, currentSection: EntitySection<T>)
+    private constructor(null_: PersistentEntitySectionManager<EntityAccess>, entity: EntityAccess, currentSectionKey: number, currentSection: EntitySection<EntityAccess>)
     // private currentSection: EntitySection<T>;
     // private currentSectionKey: number;
     // private entity: T;

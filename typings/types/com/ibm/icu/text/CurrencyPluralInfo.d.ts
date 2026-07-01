@@ -17,7 +17,6 @@ export class CurrencyPluralInfo extends Object implements Serializable, Cloneabl
     readonly pluralRules: PluralRules;
     // private ulocale: ULocale;
     clone(): CurrencyPluralInfo;
-    protected clone(): Object;
     equals(arg0: Object | null): boolean;
     getCurrencyPluralPattern(arg0: string): string;
     getLocale(): ULocale;

@@ -7,8 +7,6 @@ import type { Future } from '../../../../java/util/concurrent/Future.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class TruffleContext extends Object implements AutoCloseable {
-    private constructor()
-    private constructor(creatorContext: TruffleContext)
     constructor(polyglotContext: Object, parentContext: TruffleContext)
     // private creator: boolean;
     // private creatorContext: TruffleContext;

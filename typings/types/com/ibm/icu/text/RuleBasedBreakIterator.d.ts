@@ -55,7 +55,6 @@ export class RuleBasedBreakIterator extends BreakIterator implements Cloneable {
     static registerInstance(paramarg0: BreakIterator, paramarg1: ULocale, paramarg2: number): Object;
     static registerInstance(paramarg0: BreakIterator, paramarg1: Locale, paramarg2: number): Object;
     static unregister(paramarg0: Object): boolean;
-    private constructor()
     constructor(arg0: string)
     // private fBreakCache: RuleBasedBreakIterator$BreakCache;
     // private fDictionaryCache: RuleBasedBreakIterator$DictionaryCache;
@@ -68,7 +67,6 @@ export class RuleBasedBreakIterator extends BreakIterator implements Cloneable {
     // private fRuleStatusIndex: number;
     // private fText: CharacterIterator;
     clone(): RuleBasedBreakIterator;
-    protected clone(): Object;
     current(): number;
     dump(arg0: PrintStream): void;
     equals(arg0: Object | null): boolean;

@@ -12,7 +12,6 @@ import type { SoundSource } from '../../../../../net/minecraft/sounds/SoundSourc
 export class ClientboundStopSoundPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundStopSoundPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
-    private constructor(input: FriendlyByteBuf)
     constructor(name: Identifier, source: SoundSource)
     readonly name: Identifier;
     readonly source: SoundSource;

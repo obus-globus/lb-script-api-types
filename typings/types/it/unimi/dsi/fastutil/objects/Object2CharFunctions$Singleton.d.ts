@@ -7,7 +7,6 @@ export class Object2CharFunctions$Singleton<K extends unknown> extends AbstractO
     // private key: K;
     // private value: string;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     getChar(arg0: Object): string;
     getOrDefault(arg0: Object, arg1: string): string;

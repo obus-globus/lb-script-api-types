@@ -7,7 +7,6 @@ import type { FallbackResourceManager$ResourceWithSource } from '../../../../../
 import type { IoSupplier } from '../../../../../net/minecraft/server/packs/resources/IoSupplier.d.ts'
 export class FallbackResourceManager$EntryStack extends Record {
     constructor(fileLocation: Identifier)
-    private constructor(fileLocation: Identifier, metadataLocation: Identifier, fileSources: FallbackResourceManager$ResourceWithSource[], metaSources: Map<PackResources, () => InputStream>)
     // private fileLocation: Identifier;
     // private fileSources: FallbackResourceManager$ResourceWithSource[];
     // private metaSources: Map<PackResources, () => InputStream>;

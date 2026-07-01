@@ -5,7 +5,6 @@ import type { PolyglotLanguageContext } from '../../../../com/oracle/truffle/pol
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PolyglotBindings extends Object implements TruffleObject {
     constructor(context: PolyglotContextImpl)
-    private constructor(context: PolyglotContextImpl, languageContext: PolyglotLanguageContext)
     constructor(languageContext: PolyglotLanguageContext)
     // private context: PolyglotContextImpl;
     // private languageContext: PolyglotLanguageContext;

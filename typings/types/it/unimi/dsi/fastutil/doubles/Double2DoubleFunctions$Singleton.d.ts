@@ -7,7 +7,6 @@ export class Double2DoubleFunctions$Singleton extends AbstractDouble2DoubleFunct
     // private key: number;
     // private value: number;
     clone(): Object;
-    protected clone(): Object;
     containsKey(arg0: Object): boolean;
     containsKey(arg0: number): boolean;
     get(arg0: Object): number;

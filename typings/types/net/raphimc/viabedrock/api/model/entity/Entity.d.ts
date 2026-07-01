@@ -5,7 +5,6 @@ import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ActorDataIDs } from '../../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ActorDataIDs.d.ts'
 import type { ActorFlags } from '../../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/ActorFlags.d.ts'
-import type { SharedTypes_Legacy_LevelSoundEvent } from '../../../../../../net/raphimc/viabedrock/protocol/data/enums/bedrock/generated/SharedTypes_Legacy_LevelSoundEvent.d.ts'
 import type { Position3f } from '../../../../../../net/raphimc/viabedrock/protocol/model/Position3f.d.ts'
 export class Entity extends Object {
     constructor(arg0: UserConnection, arg1: number, arg2: number, arg3: string, arg4: number, arg5: UUID, arg6: EntityTypes26_2)
@@ -33,7 +32,7 @@ export class Entity extends Object {
     javaType(): EntityTypes26_2;
     javaUuid(): UUID;
     onEntityDataChanged(): void;
-    playSound(arg0: SharedTypes_Legacy_LevelSoundEvent): void;
+    playSound(arg0: string): void;
     remove(): void;
     runtimeId(): number;
     setHasBossBar(arg0: boolean): void;

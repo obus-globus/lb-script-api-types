@@ -1,4 +1,3 @@
-import type { ReadAheadInputStream$1 } from '../../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
 import type { FilterInputStream } from '../../../../../java/io/FilterInputStream.d.ts'
 import type { InputStream } from '../../../../../java/io/InputStream.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
@@ -13,9 +12,7 @@ export class ReadAheadInputStream extends FilterInputStream {
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream, arg1: number)
     constructor(arg0: InputStream, arg1: number, arg2: ExecutorService)
-    private constructor(arg0: InputStream, arg1: number, arg2: ExecutorService, arg3: boolean)
-    private constructor(arg0: ReadAheadInputStream$Builder)
-    constructor(arg0: ReadAheadInputStream$Builder, arg1: ReadAheadInputStream$1)
+    constructor(arg0: ReadAheadInputStream$Builder, arg1: any)
     // private activeBuffer: ByteBuffer;
     // private asyncReadComplete: Condition;
     // private endOfStream: boolean;

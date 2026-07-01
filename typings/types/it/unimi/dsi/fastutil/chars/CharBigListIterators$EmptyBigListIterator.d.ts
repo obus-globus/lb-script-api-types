@@ -10,7 +10,6 @@ export class CharBigListIterators$EmptyBigListIterator extends Object implements
     add(arg0: string): void;
     back(arg0: number): number;
     clone(): Object;
-    protected clone(): Object;
     forEachRemaining(arg0: (param0: string) => void): void;
     forEachRemaining(arg0: (param0: number) => void): void;
     hasNext(): boolean;

@@ -20,7 +20,6 @@ export class CodeOfConductScreen extends WarningScreen {
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
     constructor(serverData: ServerData, parent: Screen, codeOfConductText: string, resultConsumer: (param0: boolean) => void)
-    private constructor(serverData: ServerData, parent: Screen, contents: Component, codeOfConductText: string, resultConsumer: (param0: boolean) => void)
     // private codeOfConductText: string;
     // private parent: Screen;
     // private resultConsumer: (param0: boolean) => void;

@@ -13,7 +13,6 @@ export class StructuredDataMessage extends MapMessage<StructuredDataMessage, str
     constructor(id: StructuredDataId, msg: string, type: string, maxLength: number)
     constructor(id: StructuredDataId, msg: string, type: string, data: { [key: string]: string })
     constructor(id: StructuredDataId, msg: string, type: string, data: { [key: string]: string }, maxLength: number)
-    private constructor(msg: StructuredDataMessage, map: { [key: string]: string })
     readonly id: StructuredDataId;
     // private maxLength: number;
     // private message: string;

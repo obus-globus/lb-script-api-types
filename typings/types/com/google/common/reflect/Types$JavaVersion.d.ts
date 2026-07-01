@@ -1,4 +1,4 @@
-import type { Types$1 } from '../../../../com/google/gson/LongSerializationPolicy$1.d.ts'
+import type { TypeVisitor } from '../../../../com/google/common/reflect/TypeVisitor.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
@@ -11,8 +11,7 @@ export class Types$JavaVersion extends Enum<Types$JavaVersion> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Types$JavaVersion;
     static values(): (Object | null)[];
-    private constructor()
-    constructor(arg2: Types$1)
+    constructor(arg2: TypeVisitor)
     jdkTypeDuplicatesOwnerName(): boolean;
     newArrayType(componentType: Type): Type;
     typeName(type: Type): string;

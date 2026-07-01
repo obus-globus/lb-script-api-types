@@ -16,7 +16,6 @@ import type { TimeZone } from '../../../../../../../org/graalvm/shadowed/com/ibm
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class TimeZoneGenericNames extends Object implements Serializable, Freezable<TimeZoneGenericNames> {
     static getInstance(paramlocale: ULocale): TimeZoneGenericNames;
-    private constructor(locale: ULocale)
     constructor(locale: ULocale, tznames: TimeZoneNames)
     // private _frozen: boolean;
     // private _genericLocationNamesMap: { [key: string]: string };

@@ -15,8 +15,7 @@ export class Engine extends Object implements AutoCloseable {
     static findHome(): Path[][];
     static newBuilder(): Engine$Builder;
     static newBuilder(parampermittedLanguages: (Object | null)[]): Engine$Builder;
-    private constructor(engine: Engine)
-    constructor(dispatch: AbstractPolyglotImpl$AbstractEngineDispatch, receiver: T)
+    constructor(dispatch: AbstractPolyglotImpl$AbstractEngineDispatch, receiver: Object)
     // private creatorEngine: Engine;
     // private currentAPI: Engine;
     // private dispatch: AbstractPolyglotImpl$AbstractEngineDispatch;

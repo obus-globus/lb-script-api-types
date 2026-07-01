@@ -38,7 +38,6 @@ export class MessageFormat extends UFormat implements Cloneable {
     // private argNameMatches(arg0: number, arg1: string, arg2: number): boolean;
     // private cacheExplicitFormats(): void;
     clone(): MessageFormat;
-    protected clone(): Object;
     // private createAppropriateFormat(arg0: string, arg1: string): Format;
     dateTimeFormatForPatternOrSkeleton(arg0: string): Format;
     equals(arg0: Object | null): boolean;

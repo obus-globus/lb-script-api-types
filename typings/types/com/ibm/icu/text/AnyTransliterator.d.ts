@@ -27,7 +27,6 @@ export class AnyTransliterator extends Transliterator {
     static registerInstance(paramarg0: Transliterator): void;
     static unregister(paramarg0: string): void;
     constructor(arg0: string, arg1: UnicodeFilter, arg2: string, arg3: number, arg4: Transliterator, arg5: { [key: number]: Transliterator })
-    private constructor(arg0: string, arg1: string, arg2: string, arg3: number)
     // private cache: { [key: number]: Transliterator };
     // private target: string;
     // private targetScript: number;

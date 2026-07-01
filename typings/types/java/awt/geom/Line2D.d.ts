@@ -15,7 +15,6 @@ export abstract class Line2D extends Object implements Shape, Cloneable {
     static relativeCCW(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number): number;
     constructor()
     clone(): Object;
-    protected clone(): Object;
     contains(arg0: Point2D): boolean;
     contains(arg0: Rectangle2D): boolean;
     contains(arg0: number, arg1: number): boolean;

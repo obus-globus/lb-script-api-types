@@ -4,7 +4,6 @@ import type { JsonValue } from '../../../../../com/oracle/truffle/regex/tregex/u
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PreCalculatedResultFactory extends Object implements JsonConvertible {
     constructor(nGroups: number, trackLastGroup: boolean)
-    private constructor(nGroups: number, result: number[], length: number)
     readonly length: number;
     // private nGroups: number;
     // private result: number[];

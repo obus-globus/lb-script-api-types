@@ -20,7 +20,6 @@ export class X5455_ExtendedTimestamp extends Object implements Serializable, Clo
     readonly createTime: ZipLong;
     readonly flags: number;
     readonly modifyTime: ZipLong;
-    protected clone(): Object;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     getAccessFileTime(): FileTime;

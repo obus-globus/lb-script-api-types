@@ -4,7 +4,6 @@ import type { IntegerLiteralTypeConstructor } from '../../../../../../../kotlin/
 import type { IntegerLiteralTypeConstructor$Companion$Mode } from '../../../../../../../kotlin/reflect/jvm/internal/impl/resolve/constants/IntegerLiteralTypeConstructor$Companion$Mode.d.ts'
 import type { SimpleType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/SimpleType.d.ts'
 export class IntegerLiteralTypeConstructor$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     // private findCommonSuperTypeOrIntersectionType(arg0: SimpleType[], arg1: IntegerLiteralTypeConstructor$Companion$Mode): SimpleType;
     findIntersectionType(arg0: SimpleType[]): SimpleType;

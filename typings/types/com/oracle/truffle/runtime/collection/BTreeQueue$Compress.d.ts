@@ -3,7 +3,7 @@ import type { BTreeQueue$Leaf } from '../../../../../com/oracle/truffle/runtime/
 import type { BTreeQueue$Node } from '../../../../../com/oracle/truffle/runtime/collection/BTreeQueue$Node.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BTreeQueue$Compress extends Object {
-    constructor(null_: BTreeQueue<E>, removedValue: E, target: BTreeQueue$Leaf<E>)
+    constructor(null_: BTreeQueue<Object>, removedValue: Object, target: BTreeQueue$Leaf<Object>)
     // private removedValue: E;
     // private target: BTreeQueue$Node<E>;
 }

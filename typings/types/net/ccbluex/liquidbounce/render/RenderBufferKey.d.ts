@@ -6,7 +6,7 @@ import type { AbstractTexture } from '../../../../net/minecraft/client/renderer/
 /**
  * Buffer grouping key used by {@link BatchCollector}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L103 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:103}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L103 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:103}
  */
 export class RenderBufferKey extends Record {
     constructor(pipeline: RenderPipeline, textures: { [key: string]: AbstractTexture }, uniforms: { [key: string]: GpuBufferSlice })

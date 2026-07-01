@@ -26,7 +26,6 @@ export class AnyTransliterator extends Transliterator {
     static registerFactory(paramID: string, paramfactory: Transliterator$Factory): void;
     static registerInstance(paramtrans: Transliterator): void;
     static unregister(paramID: string): void;
-    private constructor(id: string, theTarget: string, theVariant: string, theTargetScript: number)
     constructor(id: string, filter: UnicodeFilter, target2: string, targetScript2: number, widthFix2: Transliterator, cache2: { [key: number]: Transliterator })
     // private cache: { [key: number]: Transliterator };
     // private target: string;

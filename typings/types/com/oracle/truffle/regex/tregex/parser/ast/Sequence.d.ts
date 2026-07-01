@@ -10,7 +10,6 @@ import type { JsonObject } from '../../../../../../../com/oracle/truffle/regex/t
 import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tregex/util/json/JsonValue.d.ts'
 export class Sequence extends RegexASTNode implements RegexASTVisitorIterable {
     constructor()
-    private constructor(copy: Sequence)
     readonly terms: Term[];
     // private visitorIterationIndex: number;
     add(term: Term): void;

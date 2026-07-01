@@ -7,7 +7,6 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { Comparable } from '../../java/lang/Comparable.d.ts'
 export class URI extends Object implements Serializable, Comparable<URI> {
     static create(paramarg0: string): URI;
-    private constructor()
     constructor(arg0: string)
     constructor(arg0: string, arg1: string)
     constructor(arg0: string, arg1: string, arg2: string)

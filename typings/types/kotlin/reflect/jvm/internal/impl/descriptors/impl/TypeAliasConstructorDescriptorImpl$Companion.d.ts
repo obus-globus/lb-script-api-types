@@ -6,7 +6,6 @@ import type { TypeAliasConstructorDescriptor } from '../../../../../../../kotlin
 import type { StorageManager } from '../../../../../../../kotlin/reflect/jvm/internal/impl/storage/StorageManager.d.ts'
 import type { TypeSubstitutor } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSubstitutor.d.ts'
 export class TypeAliasConstructorDescriptorImpl$Companion extends Object {
-    private constructor()
     constructor(arg0: DefaultConstructorMarker)
     createIfAvailable(arg0: StorageManager, arg1: TypeAliasDescriptor, arg2: ClassConstructorDescriptor): TypeAliasConstructorDescriptor;
     // private getTypeSubstitutorForUnderlyingClass(arg0: TypeAliasDescriptor): TypeSubstitutor;

@@ -4,7 +4,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export abstract class ConcurrentSkipListIntObjMultimap$Iter<T extends unknown> extends Object implements Iterator<T> {
-    constructor(null_: ConcurrentSkipListIntObjMultimap$IntEntry<V>[])
+    constructor(null_: ConcurrentSkipListIntObjMultimap$IntEntry<Object>[])
     // private lastReturned: ConcurrentSkipListIntObjMultimap$Node<V>;
     // private next: ConcurrentSkipListIntObjMultimap$Node<V>;
     // private nextValue: V;

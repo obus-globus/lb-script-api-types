@@ -10,7 +10,6 @@ import type { SelectClause2 } from '../../../kotlinx/coroutines/selects/SelectCl
 export class ConflatedBroadcastChannel<E extends unknown> extends Object implements BroadcastChannel<E> {
     constructor()
     constructor(value: E)
-    private constructor(broadcast: BroadcastChannelImpl<E>)
     // private broadcast: BroadcastChannelImpl<E>;
     /*not mapped: */ isClosedForSend(): boolean;
     readonly onSend: SelectClause2<E, SendChannel<E>>;

@@ -5,7 +5,6 @@ import type { Environment } from '../../../../../../com/oracle/truffle/js/parser
 import type { Environment$VarRef } from '../../../../../../com/oracle/truffle/js/parser/env/Environment$VarRef.d.ts'
 export class Environment$GlobalVarRef extends Environment$VarRef {
     constructor(null_: Environment, name: TruffleString)
-    private constructor(null_: Environment, name: TruffleString, required: boolean)
     // private required: boolean;
     createDeleteNode(): JavaScriptNode;
     createReadNode(): JavaScriptNode;

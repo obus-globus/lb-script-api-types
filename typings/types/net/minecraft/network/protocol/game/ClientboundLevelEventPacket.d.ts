@@ -12,7 +12,6 @@ export class ClientboundLevelEventPacket extends Object implements Packet<Client
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundLevelEventPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(type: number, pos: BlockPos, data: number, globalEvent: boolean)
-    private constructor(input: FriendlyByteBuf)
     readonly data: number;
     readonly globalEvent: boolean;
     readonly pos: BlockPos;

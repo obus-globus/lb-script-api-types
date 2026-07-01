@@ -2,7 +2,6 @@ import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.t
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
-import type { Holder$Reference } from '../../../../../../net/minecraft/core/Holder$Reference.d.ts'
 import type { HolderGetter } from '../../../../../../net/minecraft/core/HolderGetter.d.ts'
 import type { Biome } from '../../../../../../net/minecraft/world/level/biome/Biome.d.ts'
 import type { BiomeGenerationSettings } from '../../../../../../net/minecraft/world/level/biome/BiomeGenerationSettings.d.ts'
@@ -15,7 +14,6 @@ export class FlatLevelGeneratorSettings extends Object {
     static createLakesList(paramplacedFeatures: HolderGetter<PlacedFeature>): Holder<PlacedFeature>[];
     static getDefault(parambiomes: HolderGetter<Biome>, paramstructureSets: HolderGetter<StructureSet>, paramplacedFeatures: HolderGetter<PlacedFeature>): FlatLevelGeneratorSettings;
     static getDefaultBiome(parambiomes: HolderGetter<Biome>): Holder<Biome>;
-    private constructor(structureOverrides: Optional<Holder<StructureSet>[]>, layers: FlatLayerInfo[], lakes: boolean, features: boolean, biome: Optional<Holder<Biome>>, fallbackBiome: Holder$Reference<Biome>, lavaUnderground: Holder<PlacedFeature>, lavaSurface: Holder<PlacedFeature>)
     constructor(structureOverrides: Optional<Holder<StructureSet>[]>, biome: Holder<Biome>, lakes: Holder<PlacedFeature>[])
     // private addLakes: boolean;
     readonly biome: Holder<Biome>;

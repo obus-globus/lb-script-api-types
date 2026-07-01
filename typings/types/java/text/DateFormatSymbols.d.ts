@@ -9,7 +9,6 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     static getInstance(paramarg0: Locale): DateFormatSymbols;
     constructor()
     constructor(arg0: Locale)
-    private constructor(arg0: boolean)
     // private ampms: string[];
     // private cachedHashCode: number;
     eras: string[];
@@ -23,7 +22,6 @@ export class DateFormatSymbols extends Object implements Serializable, Cloneable
     weekdays: string[];
     zoneStrings: string[][];
     clone(): Object;
-    protected clone(): Object;
     // private copyMembers(arg0: DateFormatSymbols, arg1: DateFormatSymbols): void;
     equals(arg0: Object | null): boolean;
     getAmPmStrings(): string[];

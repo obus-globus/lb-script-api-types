@@ -12,7 +12,6 @@ export class Random extends Object implements Serializable, RandomGenerator {
     static getDefault(): RandomGenerator;
     static of(paramarg0: string): RandomGenerator;
     constructor()
-    private constructor(arg0: void)
     constructor(arg0: number)
     // private haveNextNextGaussian: boolean;
     // private nextNextGaussian: number;

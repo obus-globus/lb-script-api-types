@@ -10,7 +10,6 @@ export class Double2ByteAVLTreeMap$Entry extends AbstractDouble2ByteMap$BasicEnt
     balance(): number;
     balance(arg0: number): void;
     clone(): Double2ByteAVLTreeMap$Entry;
-    protected clone(): Object;
     decBalance(): void;
     equals(arg0: Object | null): boolean;
     hashCode(): number;

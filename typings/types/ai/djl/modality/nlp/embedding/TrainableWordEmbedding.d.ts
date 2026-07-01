@@ -14,8 +14,6 @@ export class TrainableWordEmbedding extends Embedding<string> implements WordEmb
     static fromPretrained(paramarg0: NDArray, paramarg1: string[], paramarg2: SparseFormat): TrainableWordEmbedding;
     constructor(arg0: Vocabulary, arg1: number)
     constructor(arg0: TrainableWordEmbedding$Builder)
-    private constructor(arg0: NDArray, arg1: string[])
-    private constructor(arg0: NDArray, arg1: string[], arg2: SparseFormat)
     // private vocabulary: Vocabulary;
     decode(arg0: number[]): string;
     embed(arg0: NDManager, arg1: string[]): NDArray;
