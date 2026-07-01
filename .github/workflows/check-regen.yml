@@ -323,10 +323,19 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name  "obus-globus"
           git config user.email "254700516+obus-globus@users.noreply.github.com"
+          # GITHUB_TOKEN cannot push a branch whose .github/workflows/* differ
+          # from the default branch (it can't hold the `workflows` scope). If main
+          # advanced its workflow files after this run checked out (e.g. a
+          # concurrent edit), the review branch would carry a stale workflow diff
+          # and the push would be rejected. Sync the workflow dir to the current
+          # remote main first so the branch never carries a workflow delta.
+          git fetch origin main --quiet || true
+          git checkout origin/main -- .github 2>/dev/null || true
           git checkout -b "$LB_BRANCH"
           # Stage only the intended outputs (NOT `git add -A`: root-owned mounts
-          # gradle-cache/ and tools/regen/.module-cache/ must not be committed).
-          git add typings README.md tools/regen-types.sh tools/kdoc-extractor
+          # gradle-cache/ and tools/regen/.module-cache/ must not be committed);
+          # `.github` (synced above) is added so the branch matches remote main.
+          git add typings README.md tools/regen-types.sh tools/kdoc-extractor .github
           git commit -m "regen: LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)
 
           Automated regen against ccbluex/liquidbounce@$LB_SHA.
