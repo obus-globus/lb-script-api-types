@@ -132,6 +132,21 @@ you the module to attach `on()` handlers to. The runtime globals (`mc`, `Client`
 `RotationUtil`, `MovementUtil`, `Setting`, and the rest) are typed and carry hover
 docs, so autocomplete works throughout.
 
+### Async HTTP
+
+`AsyncUtil.request(...)` sends an HTTP request and returns a JS `Promise` that
+resolves to an `okhttp3.Response`. The promise is typed opaquely (as the GraalVM
+`Value`), so cast the awaited result to `Response` for typed access to `.code()`,
+`.body().string()`, headers, and the rest:
+
+```ts
+import type { Response } from "@wunk/lb-script-api-types/types/okhttp3/Response";
+
+const res = await AsyncUtil.request((b) => b.url("https://example.com")) as unknown as Response;
+print("status: " + res.code());
+print("body: " + res.body().string());
+```
+
 ## Versioning
 
 `<lb-major>.<lb-minor>.<iteration>`: `major.minor` track the LiquidBounce
