@@ -891,6 +891,22 @@ else
     echo "post-patches: T-Doc-Phase-C skipped (manifest or apply script missing)"
 fi
 
+# W3 — hand-authored event-class docs. A SECOND apply-kdoc pass over a curated
+# overlay manifest documents the event classes LiquidBounce's source leaves
+# undocumented (117/121). apply-kdoc skips any class that already carries a doc
+# block, so the pass above (real upstream KDoc) always wins and this only fills
+# genuine gaps — an overlay entry self-retires once LB documents that class.
+# Version-independent (no source line refs), so it runs whenever KDoc is on.
+EVENT_OVERLAY="$REPO_ROOT/tools/regen/event-docs-overlay.json"
+if [ "$SKIP_KDOC_EFF" == "1" ]; then
+    echo "post-patches: W3 event-class overlay skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
+elif [ -f "$EVENT_OVERLAY" ] && [ -f "$APPLY_SCRIPT" ]; then
+    python3 "$APPLY_SCRIPT" "$PKG_ROOT" "$EVENT_OVERLAY" || \
+        { echo "post-patches: ERROR — apply-kdoc (event overlay) CRASHED (continuing; event docs missing)" >&2; POSTPATCH_FAILED=1; }
+else
+    echo "post-patches: W3 event-class overlay skipped (overlay or apply script missing)"
+fi
+
 # -----------------------------------------------------------------------------
 # #12b — real parameter names. ts-generator emits JVM-erased placeholders
 # (`paramarg0`, `paramarg1`, ...). apply-signatures.py rewrites them to the
@@ -934,9 +950,13 @@ fi
 # (passed only when KDoc is enabled, so summaries drop but @see survives).
 EVENTDOC_SCRIPT="$REPO_ROOT/tools/regen/apply-event-docs.py"
 if [ -f "$EVENTDOC_SCRIPT" ]; then
-    EVENTDOC_MANIFEST=""
-    [ "$SKIP_KDOC_EFF" != "1" ] && EVENTDOC_MANIFEST="$MANIFEST"
-    python3 "$EVENTDOC_SCRIPT" "$PKG_ROOT" ${EVENTDOC_MANIFEST:+"$EVENTDOC_MANIFEST"} || \
+    # Pass the extracted manifest FIRST (upstream wins) then the W3 overlay, so
+    # on() overloads get a summary line for both upstream-documented and
+    # overlay-documented events. Under SKIP_KDOC neither is passed (only @see).
+    EVENTDOC_MANIFESTS=()
+    [ "$SKIP_KDOC_EFF" != "1" ] && [ -f "$MANIFEST" ] && EVENTDOC_MANIFESTS+=("$MANIFEST")
+    [ "$SKIP_KDOC_EFF" != "1" ] && [ -f "$EVENT_OVERLAY" ] && EVENTDOC_MANIFESTS+=("$EVENT_OVERLAY")
+    python3 "$EVENTDOC_SCRIPT" "$PKG_ROOT" ${EVENTDOC_MANIFESTS[@]+"${EVENTDOC_MANIFESTS[@]}"} || \
         { echo "post-patches: ERROR — apply-event-docs CRASHED (continuing; on() docs missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: on() event docs skipped (apply script missing)"

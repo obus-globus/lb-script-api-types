@@ -63,7 +63,10 @@ def manifest_docs(manifest_path: Optional[Path]) -> dict[str, str]:
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(prog="apply-event-docs")
     ap.add_argument("pkg_root", type=Path)
-    ap.add_argument("manifest", type=Path, nargs="?", default=None)
+    # One or more KDoc manifests. Earlier manifests win (the extracted upstream
+    # manifest is passed first, the hand-authored W3 overlay second), so an
+    # overlay summary only fills a gap where upstream has no KDoc.
+    ap.add_argument("manifest", type=Path, nargs="*", default=[])
     args = ap.parse_args(argv)
 
     aug = args.pkg_root.resolve() / AUG_REL
@@ -71,7 +74,10 @@ def main(argv: list[str]) -> int:
         print(f"apply-event-docs: skip — {aug} not found", file=sys.stderr)
         return 0
 
-    docs = manifest_docs(args.manifest)
+    docs: dict[str, str] = {}
+    for mp in args.manifest:
+        for fqn, summary in manifest_docs(mp).items():
+            docs.setdefault(fqn, summary)
     lines = aug.read_text(encoding="utf-8").split("\n")
 
     # name -> fqn from the import block.
