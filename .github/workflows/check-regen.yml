@@ -27,6 +27,7 @@ on:
 permissions:
   contents: write      # push main + tags, create releases
   actions: write       # dispatch npm-publish.yml on the auto-release path
+  issues: write        # open a "needs review"/failure notification issue (fail-open)
 
 concurrency:
   group: check-regen
@@ -309,3 +310,64 @@ jobs:
           Needs review (a gate/canary/sanity/gentest not all-clean, an MC bump, or auto-release disabled)."
           git push origin "${{ steps.lb.outputs.branch }}"
           echo "Pushed review branch \`${{ steps.lb.outputs.branch }}\` (needs a human)." >> "$GITHUB_STEP_SUMMARY"
+
+      # Human-in-the-loop signal. The review-branch path is otherwise silent (a
+      # branch appears + a step summary you'd only see by opening the run), so
+      # open a GitHub issue to notify the owner through normal channels.
+      # FAIL-OPEN — unlike the gates (fail-closed), a notification failure must
+      # NEVER block or break the pipeline: continue-on-error + a `|| true` guard.
+      #
+      # CHANNEL CHOICE (for review): a GitHub issue is the zero-config default —
+      # it uses the built-in GITHUB_TOKEN, needs no secret, and threads into the
+      # repo's normal notifications. If you'd rather be pinged in Discord (likely
+      # preferable given where you actually watch), swap the `gh issue create`
+      # for a `curl` to a Discord webhook — that needs a DISCORD_WEBHOOK repo
+      # secret but is a drop-in replacement here (keep the same fail-open guard).
+      - name: Notify — regen needs review
+        if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto != 'true' && steps.decide.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          BRANCH_URL="${{ github.server_url }}/${{ github.repository }}/tree/${{ steps.lb.outputs.branch }}"
+          BODY="$(cat <<EOF
+          An automated regen routed to the **review branch** instead of auto-releasing — it needs a human.
+
+          - Branch: [\`${{ steps.lb.outputs.branch }}\`]($BRANCH_URL)
+          - Upstream: \`ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}\` (v${{ steps.lb.outputs.ver }}, mc \`${{ steps.lb.outputs.mc }}\`)
+          - Gates: gate=\`${{ steps.gate.outputs.gate }}\` · canary=\`${{ steps.canary.outputs.canary }}\` · sanity=\`${{ steps.sanity.outputs.sanity }}\` · gentest=\`${{ steps.gentest.outputs.gentest }}\`
+          - Reason: a gate/canary/sanity/gentest was not all-clean, an MC bump, or auto-release is disabled.
+          - [Workflow run]($RUN_URL)
+
+          Review the branch and merge if it's good.
+          EOF
+          )"
+          gh issue create \
+            --title "Regen needs review: LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})" \
+            --body "$BODY" \
+            --label "regen-review" 2>/dev/null \
+          || gh issue create \
+            --title "Regen needs review: LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})" \
+            --body "$BODY" \
+          || echo "::warning::notify (needs-review) failed — non-blocking, review branch \`${{ steps.lb.outputs.branch }}\` still pushed."
+
+      # Catch-all for a HARD failure (regen crash, image build, an uncaught
+      # step) that never reached the review/release routing — otherwise the only
+      # signal is GitHub's default scheduled-failure email to the workflow's
+      # account. Also fail-open.
+      - name: Notify — regen job failed
+        if: failure() && steps.branch.outputs.exists == 'false'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          gh issue create \
+            --title "Regen FAILED: LiquidBounce ${{ steps.lb.outputs.ver }} (${{ steps.lb.outputs.short }})" \
+            --body "$(printf 'The daily regen job failed before it could route to a review branch or release.\n\n- Upstream: `ccbluex/liquidbounce@%s`\n- [Workflow run](%s)\n\nCheck the run logs.' "${{ steps.lb.outputs.sha }}" "$RUN_URL")" \
+            --label "regen-review" 2>/dev/null \
+          || gh issue create \
+            --title "Regen FAILED: LiquidBounce ${{ steps.lb.outputs.ver }} (${{ steps.lb.outputs.short }})" \
+            --body "$(printf 'The daily regen job failed. [Workflow run](%s). Check the run logs.' "$RUN_URL")" \
+          || echo "::warning::notify (job-failed) could not open an issue — non-blocking."
