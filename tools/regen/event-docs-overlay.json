@@ -2,145 +2,93 @@
   "_comment": "W3 — hand-authored TSDoc overlay for event classes that LiquidBounce's source does not (yet) document. Applied by post-patches.sh via a SECOND apply-kdoc.py pass, AFTER the extracted manifest. apply-kdoc skips any class that already has a doc block, so genuine upstream KDoc always wins and these only fill gaps (an entry self-retires once LB documents that class). Descriptions are derived from each event's class name, @Tag and constructor signature in references/liquidbounce; `source` is intentionally omitted so no version-specific permalink drifts. Schema is the v2 kdoc manifest (tools/kdoc-extractor/manifest.schema.json).",
   "schemaVersion": 2,
   "entries": {
-    "net.ccbluex.liquidbounce.event.events.GameTickEvent": {
+    "net.ccbluex.liquidbounce.event.events.AccountManagerAdditionResultEvent": {
       "kind": "class",
-      "doc": "Fires on every client game tick (the main ~20 TPS client loop). The most common hook for periodic per-tick logic."
+      "doc": "Reports the result of adding an account through the Account Manager, exposing the added username or an error."
     },
-    "net.ccbluex.liquidbounce.event.events.PlayerTickEvent": {
+    "net.ccbluex.liquidbounce.event.events.AccountManagerLoginResultEvent": {
       "kind": "class",
-      "doc": "Fires each client player tick, before movement is processed. Cancellable — cancelling skips the player's tick."
+      "doc": "Reports the result of an Account Manager login, exposing the logged-in username or an error."
     },
-    "net.ccbluex.liquidbounce.event.events.PlayerPostTickEvent": {
+    "net.ccbluex.liquidbounce.event.events.AccountManagerMessageEvent": {
       "kind": "class",
-      "doc": "Fires each client player tick, after movement has been processed."
+      "doc": "A status message emitted by the Account Manager."
     },
-    "net.ccbluex.liquidbounce.event.events.PlayerMovementTickEvent": {
+    "net.ccbluex.liquidbounce.event.events.AccountManagerRemovalResultEvent": {
       "kind": "class",
-      "doc": "Fires during the player's movement-tick phase, as movement is applied."
+      "doc": "Reports the result of removing an account through the Account Manager, exposing the removed username."
     },
-    "net.ccbluex.liquidbounce.event.events.KeyEvent": {
+    "net.ccbluex.liquidbounce.event.events.AllowAutoJumpEvent": {
       "kind": "class",
-      "doc": "A raw keyboard key press or release, reported with the key and GLFW action code."
-    },
-    "net.ccbluex.liquidbounce.event.events.KeyboardKeyEvent": {
-      "kind": "class",
-      "doc": "A keyboard key event carrying the key, key/scan codes, GLFW action, modifier flags and the active screen (if any)."
-    },
-    "net.ccbluex.liquidbounce.event.events.KeyboardCharEvent": {
-      "kind": "class",
-      "doc": "A translated character (Unicode code point) input event, e.g. for typing into text fields."
-    },
-    "net.ccbluex.liquidbounce.event.events.KeybindChangeEvent": {
-      "kind": "class",
-      "doc": "Fires when the client's keybind configuration changes."
-    },
-    "net.ccbluex.liquidbounce.event.events.KeybindIsPressedEvent": {
-      "kind": "class",
-      "doc": "Reports whether a given key binding is currently pressed, exposing the key binding and the pressed state."
-    },
-    "net.ccbluex.liquidbounce.event.events.MouseButtonEvent": {
-      "kind": "class",
-      "doc": "A mouse button press or release, with the button, GLFW action, modifier flags and the active screen (if any)."
-    },
-    "net.ccbluex.liquidbounce.event.events.MouseScrollEvent": {
-      "kind": "class",
-      "doc": "A mouse wheel scroll, reported as horizontal and vertical deltas."
-    },
-    "net.ccbluex.liquidbounce.event.events.MouseScrollInHotbarEvent": {
-      "kind": "class",
-      "doc": "A mouse scroll routed to hotbar slot selection, exposing the scroll speed. Cancellable."
-    },
-    "net.ccbluex.liquidbounce.event.events.MouseCursorEvent": {
-      "kind": "class",
-      "doc": "The current mouse cursor position, exposing its x and y coordinates."
-    },
-    "net.ccbluex.liquidbounce.event.events.MouseRotationEvent": {
-      "kind": "class",
-      "doc": "Camera rotation derived from raw mouse-movement deltas. Cancellable — cancelling suppresses the look rotation."
-    },
-    "net.ccbluex.liquidbounce.event.events.WindowResizeEvent": {
-      "kind": "class",
-      "doc": "Fires when the game window is resized, exposing the new width and height."
-    },
-    "net.ccbluex.liquidbounce.event.events.FramebufferResizeEvent": {
-      "kind": "class",
-      "doc": "Fires when the render framebuffer is resized, exposing the new width and height."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerMoveEvent": {
-      "kind": "class",
-      "doc": "Fires as the player's motion is applied, exposing the mover type and the (mutable) movement vector, so handlers can alter movement."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerJumpEvent": {
-      "kind": "class",
-      "doc": "Fires when the player initiates a jump, exposing the (mutable) jump motion and yaw. Cancellable — cancelling prevents the jump."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerAfterJumpEvent": {
-      "kind": "class",
-      "doc": "Fires immediately after a jump's motion has been applied."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerNetworkMovementTickEvent": {
-      "kind": "class",
-      "doc": "Fires around the movement-packet sync (PRE/POST phase), exposing the position and on-ground flag reported to the server. Cancellable."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerPushOutEvent": {
-      "kind": "class",
-      "doc": "Fires when the player is being pushed out of a block collision. Cancellable."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerVelocityStrafe": {
-      "kind": "class",
-      "doc": "Fires during strafe velocity calculation, exposing the movement input, speed, yaw and the resulting velocity."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerStepEvent": {
-      "kind": "class",
-      "doc": "Fires when the player's auto-step height is calculated, exposing the step height."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerStepSuccessEvent": {
-      "kind": "class",
-      "doc": "Fires after a successful step-up, exposing the attempted and adjusted movement vectors."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerSafeWalkEvent": {
-      "kind": "class",
-      "doc": "Fires to determine whether safe-walk (ledge edge protection) is active."
-    },
-    "net.ccbluex.liquidbounce.event.events.PlayerStrideEvent": {
-      "kind": "class",
-      "doc": "Fires during stride-force adjustment, exposing the stride force."
-    },
-    "net.ccbluex.liquidbounce.event.events.MovementInputEvent": {
-      "kind": "class",
-      "doc": "Exposes the player's per-tick movement input (directional input plus the jump and sneak flags)."
+      "doc": "Fires to determine whether auto-jump is allowed, exposing the current flag."
     },
     "net.ccbluex.liquidbounce.event.events.AttackEntityEvent": {
       "kind": "class",
       "doc": "Fires when the player attacks an entity, exposing the target entity. Cancellable — cancelling prevents the attack."
     },
-    "net.ccbluex.liquidbounce.event.events.PlayerInteractedItemEvent": {
+    "net.ccbluex.liquidbounce.event.events.BedStateChangeEvent": {
       "kind": "class",
-      "doc": "Fires after an item interaction completes, exposing the hand used and the interaction result."
-    },
-    "net.ccbluex.liquidbounce.event.events.TagEntityEvent": {
-      "kind": "class",
-      "doc": "Fires to classify an entity for targeting (target / friend / ignored, etc.), exposing the entity and its mutable targeting info."
-    },
-    "net.ccbluex.liquidbounce.event.events.PacketEvent": {
-      "kind": "class",
-      "doc": "Fires for every packet sent or received, exposing the transfer origin and the packet. Cancellable — cancelling drops the packet."
+      "doc": "Fires when the tracked bed states change."
     },
     "net.ccbluex.liquidbounce.event.events.BlinkPacketEvent": {
       "kind": "class",
       "doc": "Fires when a packet is queued or released by the Blink module, exposing the packet and its transfer origin."
     },
-    "net.ccbluex.liquidbounce.event.events.PipelineEvent": {
+    "net.ccbluex.liquidbounce.event.events.BlockAttackEvent": {
       "kind": "class",
-      "doc": "Fires when a network channel pipeline is initialized, exposing the pipeline and whether the connection is local."
+      "doc": "Fires when the player starts breaking a block, exposing its position. Cancellable."
     },
-    "net.ccbluex.liquidbounce.event.events.TickPacketProcessEvent": {
+    "net.ccbluex.liquidbounce.event.events.BlockBreakingProgressEvent": {
       "kind": "class",
-      "doc": "Fires during the packet-processing phase of the client tick."
+      "doc": "Fires as block-breaking progresses, exposing the target block position."
     },
-    "net.ccbluex.liquidbounce.event.events.WorldChangeEvent": {
+    "net.ccbluex.liquidbounce.event.events.BlockChangeEvent": {
       "kind": "class",
-      "doc": "Fires when the client world is loaded or unloaded; the world is null when leaving a world."
+      "doc": "Fires when a block changes, exposing the position and the new block state."
+    },
+    "net.ccbluex.liquidbounce.event.events.BlockCountChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when the tracked block count changes, exposing the block and the new count."
+    },
+    "net.ccbluex.liquidbounce.event.events.BlockShapeEvent": {
+      "kind": "class",
+      "doc": "Fires when a block's collision shape is queried, exposing the block state, position and voxel shape."
+    },
+    "net.ccbluex.liquidbounce.event.events.BlockSlipperinessMultiplierEvent": {
+      "kind": "class",
+      "doc": "Fires to determine a block's slipperiness/friction multiplier (e.g. ice), exposing the block and the multiplier."
+    },
+    "net.ccbluex.liquidbounce.event.events.BlockVelocityMultiplierEvent": {
+      "kind": "class",
+      "doc": "Fires to determine a block's velocity multiplier (e.g. soul sand, honey), exposing the block and the multiplier."
+    },
+    "net.ccbluex.liquidbounce.event.events.BrowserReadyEvent": {
+      "kind": "class",
+      "doc": "Fires when the integrated browser is ready."
+    },
+    "net.ccbluex.liquidbounce.event.events.BrowserUrlChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when an integrated browser tab's URL changes, exposing the tab index and the new URL."
+    },
+    "net.ccbluex.liquidbounce.event.events.CancelBlockBreakingEvent": {
+      "kind": "class",
+      "doc": "Fires to cancel the current block-breaking action. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.ChatReceiveEvent": {
+      "kind": "class",
+      "doc": "Fires when a chat or system message is received, exposing the raw message string and its component form. Cancellable — cancelling hides the message."
+    },
+    "net.ccbluex.liquidbounce.event.events.ChatReceiveEvent.ChatType": {
+      "kind": "class",
+      "doc": "Received-chat message type: CHAT_MESSAGE, DISGUISED_CHAT_MESSAGE or GAME_MESSAGE."
+    },
+    "net.ccbluex.liquidbounce.event.events.ChatSendEvent": {
+      "kind": "class",
+      "doc": "Fires when the player sends a chat message, exposing the message text. Cancellable — cancelling stops the message from being sent."
+    },
+    "net.ccbluex.liquidbounce.event.events.ChunkDeltaUpdateEvent": {
+      "kind": "class",
+      "doc": "Fires when multiple blocks in a chunk section change at once (a batched section-blocks-update packet)."
     },
     "net.ccbluex.liquidbounce.event.events.ChunkLoadEvent": {
       "kind": "class",
@@ -150,85 +98,413 @@
       "kind": "class",
       "doc": "Fires when a chunk is unloaded, exposing its chunk position."
     },
-    "net.ccbluex.liquidbounce.event.events.ChunkDeltaUpdateEvent": {
+    "net.ccbluex.liquidbounce.event.events.ClickGuiScaleChangeEvent": {
       "kind": "class",
-      "doc": "Fires when multiple blocks in a chunk section change at once (a batched section-blocks-update packet)."
+      "doc": "Fires when the ClickGUI scale changes, exposing the new scale."
     },
-    "net.ccbluex.liquidbounce.event.events.BlockChangeEvent": {
+    "net.ccbluex.liquidbounce.event.events.ClickGuiValueChangeEvent": {
       "kind": "class",
-      "doc": "Fires when a block changes, exposing the position and the new block state."
+      "doc": "Fires when a value changes in the ClickGUI, exposing the affected configurable."
     },
-    "net.ccbluex.liquidbounce.event.events.BlockAttackEvent": {
+    "net.ccbluex.liquidbounce.event.events.ClientChatErrorEvent": {
       "kind": "class",
-      "doc": "Fires when the player starts breaking a block, exposing its position. Cancellable."
+      "doc": "Fires when the client chat encounters an error, exposing the error message."
     },
-    "net.ccbluex.liquidbounce.event.events.BlockShapeEvent": {
+    "net.ccbluex.liquidbounce.event.events.ClientChatJwtTokenEvent": {
       "kind": "class",
-      "doc": "Fires when a block's collision shape is queried, exposing the block state, position and voxel shape."
+      "doc": "Fires when a JWT token is issued for client-chat authentication."
     },
-    "net.ccbluex.liquidbounce.event.events.BlockBreakingProgressEvent": {
+    "net.ccbluex.liquidbounce.event.events.ClientChatMessageEvent": {
       "kind": "class",
-      "doc": "Fires as block-breaking progresses, exposing the target block position."
+      "doc": "Fires when a message is received in the client chat, exposing the sender, the message and the chat group."
     },
-    "net.ccbluex.liquidbounce.event.events.BlockVelocityMultiplierEvent": {
+    "net.ccbluex.liquidbounce.event.events.ClientChatMessageEvent.ChatGroup": {
       "kind": "class",
-      "doc": "Fires to determine a block's velocity multiplier (e.g. soul sand, honey), exposing the block and the multiplier."
+      "doc": "Client-chat message group: PUBLIC_CHAT or PRIVATE_CHAT."
     },
-    "net.ccbluex.liquidbounce.event.events.BlockSlipperinessMultiplierEvent": {
+    "net.ccbluex.liquidbounce.event.events.ClientChatStateChange": {
       "kind": "class",
-      "doc": "Fires to determine a block's slipperiness/friction multiplier (e.g. ice), exposing the block and the multiplier."
+      "doc": "Fires when the client-chat connection state changes, exposing the new state."
     },
-    "net.ccbluex.liquidbounce.event.events.WorldEntityRemoveEvent": {
+    "net.ccbluex.liquidbounce.event.events.ClientChatStateChange.State": {
       "kind": "class",
-      "doc": "Fires when an entity is removed from the world, exposing the entity and the removal reason."
+      "doc": "Client-chat connection states: CONNECTING, CONNECTED, LOGGING_IN, LOGGED_IN, DISCONNECTED, AUTHENTICATION_FAILED."
+    },
+    "net.ccbluex.liquidbounce.event.events.ClientLanguageChangedEvent": {
+      "kind": "class",
+      "doc": "Fires when the client language is changed."
+    },
+    "net.ccbluex.liquidbounce.event.events.ClientPlayerDataEvent": {
+      "kind": "class",
+      "doc": "Fires when the client's player data is updated."
+    },
+    "net.ccbluex.liquidbounce.event.events.ClientPlayerEffectEvent": {
+      "kind": "class",
+      "doc": "Fires when the client player's active status effects are updated."
+    },
+    "net.ccbluex.liquidbounce.event.events.ClientPlayerInventoryEvent": {
+      "kind": "class",
+      "doc": "Fires when the client player's inventory data is updated."
+    },
+    "net.ccbluex.liquidbounce.event.events.ClientShutdownEvent": {
+      "kind": "class",
+      "doc": "Fires when the client is shutting down."
+    },
+    "net.ccbluex.liquidbounce.event.events.ClientStartEvent": {
+      "kind": "class",
+      "doc": "Fires once when the client has started."
+    },
+    "net.ccbluex.liquidbounce.event.events.ComponentsUpdateEvent": {
+      "kind": "class",
+      "doc": "Fires when the HUD components are updated, exposing the updated component list."
+    },
+    "net.ccbluex.liquidbounce.event.events.DeathEvent": {
+      "kind": "class",
+      "doc": "Fires when the local player dies."
+    },
+    "net.ccbluex.liquidbounce.event.events.DisconnectEvent": {
+      "kind": "class",
+      "doc": "Fires when the client disconnects from a server."
+    },
+    "net.ccbluex.liquidbounce.event.events.EntityEquipmentChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when an entity's equipment changes in a slot, exposing the entity, the equipment slot and the item."
+    },
+    "net.ccbluex.liquidbounce.event.events.EntityHealthUpdateEvent": {
+      "kind": "class",
+      "doc": "Fires when a living entity's health changes, exposing the entity and its old, new and max health."
+    },
+    "net.ccbluex.liquidbounce.event.events.EntityMarginEvent": {
+      "kind": "class",
+      "doc": "Fires when an entity's hitbox margin (used for hit detection) is adjusted, exposing the entity and the margin."
+    },
+    "net.ccbluex.liquidbounce.event.events.FluidPushEvent": {
+      "kind": "class",
+      "doc": "Fires when the player is pushed by a fluid current. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.FpsChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when the measured frame rate changes, exposing the new FPS."
+    },
+    "net.ccbluex.liquidbounce.event.events.FpsLimitEvent": {
+      "kind": "class",
+      "doc": "Fires when the frame-rate limit is applied, exposing the limit."
+    },
+    "net.ccbluex.liquidbounce.event.events.FramebufferResizeEvent": {
+      "kind": "class",
+      "doc": "Fires when the render framebuffer is resized, exposing the new width and height."
+    },
+    "net.ccbluex.liquidbounce.event.events.GameModeChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when the player's game mode changes, exposing the new game mode."
     },
     "net.ccbluex.liquidbounce.event.events.GameRenderEvent": {
       "kind": "class",
       "doc": "Fires at the start of the main render frame."
     },
-    "net.ccbluex.liquidbounce.event.events.WorldRenderEvent": {
+    "net.ccbluex.liquidbounce.event.events.GameTickEvent": {
       "kind": "class",
-      "doc": "Fires while the world is rendered, exposing the pose stack, camera and partial-tick fraction — for depth-correct 3D rendering."
-    },
-    "net.ccbluex.liquidbounce.event.events.OverlayRenderEvent": {
-      "kind": "class",
-      "doc": "Fires while the in-game overlay/HUD is rendered (after the world, before screens), exposing the draw context and tick delta."
-    },
-    "net.ccbluex.liquidbounce.event.events.ScreenRenderEvent": {
-      "kind": "class",
-      "doc": "Fires while the current GUI screen is rendered (the topmost layer), exposing the draw context and partial-tick fraction."
-    },
-    "net.ccbluex.liquidbounce.event.events.ChatSendEvent": {
-      "kind": "class",
-      "doc": "Fires when the player sends a chat message, exposing the message text. Cancellable — cancelling stops the message from being sent."
-    },
-    "net.ccbluex.liquidbounce.event.events.ChatReceiveEvent": {
-      "kind": "class",
-      "doc": "Fires when a chat or system message is received, exposing the raw message string and its component form. Cancellable — cancelling hides the message."
-    },
-    "net.ccbluex.liquidbounce.event.events.ScreenEvent": {
-      "kind": "class",
-      "doc": "Fires when a GUI screen is opened or closed, exposing the screen (null when closing). Cancellable."
-    },
-    "net.ccbluex.liquidbounce.event.events.ModuleToggleEvent": {
-      "kind": "class",
-      "doc": "Fires when a module is enabled or disabled, exposing the module name and its new enabled state."
-    },
-    "net.ccbluex.liquidbounce.event.events.ModuleActivationEvent": {
-      "kind": "class",
-      "doc": "Fires when a module is activated, exposing the module name."
-    },
-    "net.ccbluex.liquidbounce.event.events.NotificationEvent": {
-      "kind": "class",
-      "doc": "Fires when the client shows a notification, exposing its title, message and severity."
+      "doc": "Fires on every client game tick (the main ~20 TPS client loop). The most common hook for periodic per-tick logic."
     },
     "net.ccbluex.liquidbounce.event.events.HealthUpdateEvent": {
       "kind": "class",
       "doc": "Fires when the player's health, hunger or saturation changes, exposing the new and previous values."
     },
-    "net.ccbluex.liquidbounce.event.events.DeathEvent": {
+    "net.ccbluex.liquidbounce.event.events.InputHandleEvent": {
       "kind": "class",
-      "doc": "Fires when the local player dies."
+      "doc": "Fires while the client's input is handled each tick."
+    },
+    "net.ccbluex.liquidbounce.event.events.ItemLoreQueryEvent": {
+      "kind": "class",
+      "doc": "Fires when an item's lore (tooltip lines) is queried, exposing the item stack and the mutable lore list."
+    },
+    "net.ccbluex.liquidbounce.event.events.KeyEvent": {
+      "kind": "class",
+      "doc": "A raw keyboard key press or release, reported with the key and GLFW action code."
+    },
+    "net.ccbluex.liquidbounce.event.events.KeybindChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when the client's keybind configuration changes."
+    },
+    "net.ccbluex.liquidbounce.event.events.KeybindIsPressedEvent": {
+      "kind": "class",
+      "doc": "Reports whether a given key binding is currently pressed, exposing the key binding and the pressed state."
+    },
+    "net.ccbluex.liquidbounce.event.events.KeyboardCharEvent": {
+      "kind": "class",
+      "doc": "A translated character (Unicode code point) input event, e.g. for typing into text fields."
+    },
+    "net.ccbluex.liquidbounce.event.events.KeyboardKeyEvent": {
+      "kind": "class",
+      "doc": "A keyboard key event carrying the key, key/scan codes, GLFW action, modifier flags and the active screen (if any)."
+    },
+    "net.ccbluex.liquidbounce.event.events.ModuleActivationEvent": {
+      "kind": "class",
+      "doc": "Fires when a module is activated, exposing the module name."
+    },
+    "net.ccbluex.liquidbounce.event.events.ModuleToggleEvent": {
+      "kind": "class",
+      "doc": "Fires when a module is enabled or disabled, exposing the module name and its new enabled state."
+    },
+    "net.ccbluex.liquidbounce.event.events.MouseButtonEvent": {
+      "kind": "class",
+      "doc": "A mouse button press or release, with the button, GLFW action, modifier flags and the active screen (if any)."
+    },
+    "net.ccbluex.liquidbounce.event.events.MouseCursorEvent": {
+      "kind": "class",
+      "doc": "The current mouse cursor position, exposing its x and y coordinates."
+    },
+    "net.ccbluex.liquidbounce.event.events.MouseRotationEvent": {
+      "kind": "class",
+      "doc": "Camera rotation derived from raw mouse-movement deltas. Cancellable — cancelling suppresses the look rotation."
+    },
+    "net.ccbluex.liquidbounce.event.events.MouseScrollEvent": {
+      "kind": "class",
+      "doc": "A mouse wheel scroll, reported as horizontal and vertical deltas."
+    },
+    "net.ccbluex.liquidbounce.event.events.MouseScrollInHotbarEvent": {
+      "kind": "class",
+      "doc": "A mouse scroll routed to hotbar slot selection, exposing the scroll speed. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.MovementInputEvent": {
+      "kind": "class",
+      "doc": "Exposes the player's per-tick movement input (directional input plus the jump and sneak flags)."
+    },
+    "net.ccbluex.liquidbounce.event.events.NotificationEvent": {
+      "kind": "class",
+      "doc": "Fires when the client shows a notification, exposing its title, message and severity."
+    },
+    "net.ccbluex.liquidbounce.event.events.NotificationEvent.Severity": {
+      "kind": "class",
+      "doc": "Notification severity level: INFO, SUCCESS, ERROR, ENABLED or DISABLED."
+    },
+    "net.ccbluex.liquidbounce.event.events.OverlayMessageEvent": {
+      "kind": "class",
+      "doc": "Fires when an action-bar/overlay message is displayed, exposing the text and whether it is tinted."
+    },
+    "net.ccbluex.liquidbounce.event.events.OverlayRenderEvent": {
+      "kind": "class",
+      "doc": "Fires while the in-game overlay/HUD is rendered (after the world, before screens), exposing the draw context and tick delta."
+    },
+    "net.ccbluex.liquidbounce.event.events.PacketEvent": {
+      "kind": "class",
+      "doc": "Fires for every packet sent or received, exposing the transfer origin and the packet. Cancellable — cancelling drops the packet."
+    },
+    "net.ccbluex.liquidbounce.event.events.PerspectiveEvent": {
+      "kind": "class",
+      "doc": "Fires while the camera perspective is updated."
+    },
+    "net.ccbluex.liquidbounce.event.events.PipelineEvent": {
+      "kind": "class",
+      "doc": "Fires when a network channel pipeline is initialized, exposing the pipeline and whether the connection is local."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerAfterJumpEvent": {
+      "kind": "class",
+      "doc": "Fires immediately after a jump's motion has been applied."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerFluidCollisionCheckEvent": {
+      "kind": "class",
+      "doc": "Fires during a player fluid-collision check, exposing the fluid tag. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerInteractedItemEvent": {
+      "kind": "class",
+      "doc": "Fires after an item interaction completes, exposing the hand used and the interaction result."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerJumpEvent": {
+      "kind": "class",
+      "doc": "Fires when the player initiates a jump, exposing the (mutable) jump motion and yaw. Cancellable — cancelling prevents the jump."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerMoveEvent": {
+      "kind": "class",
+      "doc": "Fires as the player's motion is applied, exposing the mover type and the (mutable) movement vector, so handlers can alter movement."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerMovementTickEvent": {
+      "kind": "class",
+      "doc": "Fires during the player's movement-tick phase, as movement is applied."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerNetworkMovementTickEvent": {
+      "kind": "class",
+      "doc": "Fires around the movement-packet sync (PRE/POST phase), exposing the position and on-ground flag reported to the server. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerPostTickEvent": {
+      "kind": "class",
+      "doc": "Fires each client player tick, after movement has been processed."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerPushOutEvent": {
+      "kind": "class",
+      "doc": "Fires when the player is being pushed out of a block collision. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerSafeWalkEvent": {
+      "kind": "class",
+      "doc": "Fires to determine whether safe-walk (ledge edge protection) is active."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerSneakMultiplier": {
+      "kind": "class",
+      "doc": "Fires when the player's sneak movement multiplier is adjusted, exposing the multiplier."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerStepEvent": {
+      "kind": "class",
+      "doc": "Fires when the player's auto-step height is calculated, exposing the step height."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerStepSuccessEvent": {
+      "kind": "class",
+      "doc": "Fires after a successful step-up, exposing the attempted and adjusted movement vectors."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerStrideEvent": {
+      "kind": "class",
+      "doc": "Fires during stride-force adjustment, exposing the stride force."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerTickEvent": {
+      "kind": "class",
+      "doc": "Fires each client player tick, before movement is processed. Cancellable — cancelling skips the player's tick."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerUseMultiplier": {
+      "kind": "class",
+      "doc": "Fires when the player's movement multiplier while using an item is adjusted, exposing the forward and sideways factors."
+    },
+    "net.ccbluex.liquidbounce.event.events.PlayerVelocityStrafe": {
+      "kind": "class",
+      "doc": "Fires during strafe velocity calculation, exposing the movement input, speed, yaw and the resulting velocity."
+    },
+    "net.ccbluex.liquidbounce.event.events.ProxyCheckResultEvent": {
+      "kind": "class",
+      "doc": "Reports the result of a proxy check, exposing the proxy or an error."
+    },
+    "net.ccbluex.liquidbounce.event.events.RefreshArrayListEvent": {
+      "kind": "class",
+      "doc": "Fires to request a refresh of the ArrayList HUD element."
+    },
+    "net.ccbluex.liquidbounce.event.events.ResourceReloadEvent": {
+      "kind": "class",
+      "doc": "Fires when the game's resources have been reloaded."
+    },
+    "net.ccbluex.liquidbounce.event.events.RotationUpdateEvent": {
+      "kind": "class",
+      "doc": "Fires when the player's rotation is updated."
+    },
+    "net.ccbluex.liquidbounce.event.events.ScaleFactorChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when the GUI scale factor changes, exposing the new scale factor."
+    },
+    "net.ccbluex.liquidbounce.event.events.ScheduleInventoryActionEvent": {
+      "kind": "class",
+      "doc": "Fires to schedule inventory actions, exposing the action chain list."
+    },
+    "net.ccbluex.liquidbounce.event.events.ScreenEvent": {
+      "kind": "class",
+      "doc": "Fires when a GUI screen is opened or closed, exposing the screen (null when closing). Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.ScreenRenderEvent": {
+      "kind": "class",
+      "doc": "Fires while the current GUI screen is rendered (the topmost layer), exposing the draw context and partial-tick fraction."
+    },
+    "net.ccbluex.liquidbounce.event.events.SelectHotbarSlotSilentlyEvent": {
+      "kind": "class",
+      "doc": "Fires when a hotbar slot is selected silently, exposing the requester and the target slot. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.ServerConnectEvent": {
+      "kind": "class",
+      "doc": "Fires when the client is connecting to a server, exposing the connect screen, address and server info. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.ServerPingedEvent": {
+      "kind": "class",
+      "doc": "Fires when a server is pinged in the multiplayer list, exposing the server data."
+    },
+    "net.ccbluex.liquidbounce.event.events.SpaceSeperatedNamesChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when the space-separated-names setting changes, exposing the new value."
+    },
+    "net.ccbluex.liquidbounce.event.events.SprintEvent": {
+      "kind": "class",
+      "doc": "Fires when the player's sprint state is updated, exposing the directional input, the sprint flag and the source of the update."
+    },
+    "net.ccbluex.liquidbounce.event.events.SprintEvent.Source": {
+      "kind": "class",
+      "doc": "Origin of a sprint update: INPUT, MOVEMENT_TICK or NETWORK."
+    },
+    "net.ccbluex.liquidbounce.event.events.TagEntityEvent": {
+      "kind": "class",
+      "doc": "Fires to classify an entity for targeting (target / friend / ignored, etc.), exposing the entity and its mutable targeting info."
+    },
+    "net.ccbluex.liquidbounce.event.events.TargetChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when the current combat target changes, exposing the new target (null when cleared)."
+    },
+    "net.ccbluex.liquidbounce.event.events.ThemeColorChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when a theme color changes, exposing the theme id, the color name and the new value."
+    },
+    "net.ccbluex.liquidbounce.event.events.TickPacketProcessEvent": {
+      "kind": "class",
+      "doc": "Fires during the packet-processing phase of the client tick."
+    },
+    "net.ccbluex.liquidbounce.event.events.TitleEvent": {
+      "kind": "class",
+      "doc": "Base type for title-bar events (title text, subtitle text, fade timing, clear). Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.TitleEvent.Clear": {
+      "kind": "class",
+      "doc": "Fires when the on-screen title is cleared, exposing whether the fade timings are reset. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.TitleEvent.Fade": {
+      "kind": "class",
+      "doc": "Fires when the title fade timing is set, exposing the fade-in, stay and fade-out ticks. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.TitleEvent.Subtitle": {
+      "kind": "class",
+      "doc": "Fires when the on-screen subtitle text is set, exposing the text component. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.TitleEvent.TextContent": {
+      "kind": "class",
+      "doc": "Base type for title-bar events that carry a text component (title and subtitle). Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.TitleEvent.Title": {
+      "kind": "class",
+      "doc": "Fires when the on-screen title text is set, exposing the text component. Cancellable."
+    },
+    "net.ccbluex.liquidbounce.event.events.TransferOrigin": {
+      "kind": "class",
+      "doc": "Packet transfer direction: INCOMING (received) or OUTGOING (sent)."
+    },
+    "net.ccbluex.liquidbounce.event.events.UseCooldownEvent": {
+      "kind": "class",
+      "doc": "Fires when the item-use cooldown is updated, exposing the cooldown in ticks."
+    },
+    "net.ccbluex.liquidbounce.event.events.UserLoggedInEvent": {
+      "kind": "class",
+      "doc": "Fires when the user logs in to their account."
+    },
+    "net.ccbluex.liquidbounce.event.events.UserLoggedOutEvent": {
+      "kind": "class",
+      "doc": "Fires when the user logs out of their account."
+    },
+    "net.ccbluex.liquidbounce.event.events.ValueChangedEvent": {
+      "kind": "class",
+      "doc": "Fires when a configuration value changes, exposing the changed value."
+    },
+    "net.ccbluex.liquidbounce.event.events.VirtualScreenEvent": {
+      "kind": "class",
+      "doc": "Fires when a virtual (custom) screen is opened or closed, exposing the screen type, name and action."
+    },
+    "net.ccbluex.liquidbounce.event.events.VirtualScreenEvent.Action": {
+      "kind": "class",
+      "doc": "Virtual screen action: OPEN or CLOSE."
+    },
+    "net.ccbluex.liquidbounce.event.events.WindowResizeEvent": {
+      "kind": "class",
+      "doc": "Fires when the game window is resized, exposing the new width and height."
+    },
+    "net.ccbluex.liquidbounce.event.events.WorldChangeEvent": {
+      "kind": "class",
+      "doc": "Fires when the client world is loaded or unloaded; the world is null when leaving a world."
+    },
+    "net.ccbluex.liquidbounce.event.events.WorldEntityRemoveEvent": {
+      "kind": "class",
+      "doc": "Fires when an entity is removed from the world, exposing the entity and the removal reason."
+    },
+    "net.ccbluex.liquidbounce.event.events.WorldRenderEvent": {
+      "kind": "class",
+      "doc": "Fires while the world is rendered, exposing the pose stack, camera and partial-tick fraction — for depth-correct 3D rendering."
     }
   }
 }
