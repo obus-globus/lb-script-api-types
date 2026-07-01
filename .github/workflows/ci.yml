@@ -37,7 +37,7 @@ jobs:
           cache: npm
 
       - name: Install tooling
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Typecheck gate
         run: npm run typecheck
@@ -55,7 +55,7 @@ jobs:
           cache: npm
 
       - name: Install tooling
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Packaging canary (pack → install → consumer tsc)
         run: npm run canary

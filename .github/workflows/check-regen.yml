@@ -47,10 +47,15 @@ jobs:
       #    straight from the remote (no full clone needed).
       - name: Resolve upstream LiquidBounce build
         id: lb
+        env:
+          # Pass the untrusted dispatch input through env (never interpolate a
+          # ${{ }} expression straight into a run: script — that is a shell
+          # injection surface).
+          LB_REF: ${{ inputs.lb_ref }}
         run: |
           set -euo pipefail
           # On a `schedule` event there are no inputs -> default to nextgen.
-          REF="${{ inputs.lb_ref }}"; REF="${REF:-nextgen}"
+          REF="${LB_REF:-nextgen}"
           SHA="$(git ls-remote https://github.com/ccbluex/liquidbounce.git "$REF" | head -n1 | cut -f1)"
           if [ -z "$SHA" ]; then
             # treat the input as a literal SHA if it didn't resolve as a ref
@@ -81,24 +86,29 @@ jobs:
       #    daily run), or a review branch for it already exists (pending merge).
       - name: Check if already done
         id: branch
+        env:
+          LB_SHA: ${{ steps.lb.outputs.sha }}
+          LB_BRANCH: ${{ steps.lb.outputs.branch }}
         run: |
           set -euo pipefail
           CURRENT_PIN="$(grep -E '^PINNED_SHA=' tools/regen-types.sh | head -n1 | cut -d'"' -f2)"
-          if [ "$CURRENT_PIN" = "${{ steps.lb.outputs.sha }}" ]; then
+          if [ "$CURRENT_PIN" = "$LB_SHA" ]; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
-            echo "main is already pinned to ${{ steps.lb.outputs.sha }} — up to date, nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
-          elif git ls-remote --exit-code --heads origin "${{ steps.lb.outputs.branch }}" >/dev/null 2>&1; then
+            echo "main is already pinned to $LB_SHA — up to date, nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
+          elif git ls-remote --exit-code --heads origin "$LB_BRANCH" >/dev/null 2>&1; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
-            echo "Branch ${{ steps.lb.outputs.branch }} already exists (pending review) — nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "Branch $LB_BRANCH already exists (pending review) — nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
           else
             echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Bump PINNED_SHA to the upstream build
         if: steps.branch.outputs.exists == 'false'
+        env:
+          LB_SHA: ${{ steps.lb.outputs.sha }}
         run: |
           set -euo pipefail
-          sed -i -E "s|^PINNED_SHA=.*|PINNED_SHA=\"${{ steps.lb.outputs.sha }}\"|" tools/regen-types.sh
+          sed -i -E "s|^PINNED_SHA=.*|PINNED_SHA=\"$LB_SHA\"|" tools/regen-types.sh
           grep -n '^PINNED_SHA=' tools/regen-types.sh
 
       - name: Free up disk
@@ -271,6 +281,10 @@ jobs:
         if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
+          LB_VER: ${{ steps.lb.outputs.ver }}
+          LB_MC: ${{ steps.lb.outputs.mc }}
+          LB_SHORT: ${{ steps.lb.outputs.short }}
+          LB_SHA: ${{ steps.lb.outputs.sha }}
         run: |
           set -euo pipefail
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
@@ -279,14 +293,14 @@ jobs:
           (cd typings && npm version --no-git-tag-version patch)
           VER="$(node -p "require('./typings/package.json').version")"
           git add typings README.md tools/regen-types.sh tools/kdoc-extractor
-          git commit -m "regen+release: v$VER — LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})
+          git commit -m "regen+release: v$VER — LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)
 
-          Automated clean regen against ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}
+          Automated clean regen against ccbluex/liquidbounce@$LB_SHA
           (gate pass, canary ok, output sanity ok, MC unchanged) — auto-releasing v$VER."
           git tag -a "v$VER" -m "v$VER" HEAD
           git push origin HEAD:main "v$VER"
           LB_BLOCK="$(node -p "JSON.stringify(require('./typings/package.json').liquidbounce, null, 2)")"
-          gh release create "v$VER" --title "v$VER" --notes "$(printf 'Automated types build %s (LiquidBounce %s / MC %s).\n\nProvenance:\n```json\n%s\n```' "$VER" "${{ steps.lb.outputs.ver }}" "${{ steps.lb.outputs.mc }}" "$LB_BLOCK")"
+          gh release create "v$VER" --title "v$VER" --notes "$(printf 'Automated types build %s (LiquidBounce %s / MC %s).\n\nProvenance:\n```json\n%s\n```' "$VER" "$LB_VER" "$LB_MC" "$LB_BLOCK")"
           # Publish via the single trusted-publisher workflow (OIDC, no token).
           gh workflow run npm-publish.yml --ref main -f dry_run=false
           echo "✅ Auto-released **v$VER** on main; dispatched npm-publish.yml to publish." >> "$GITHUB_STEP_SUMMARY"
@@ -294,22 +308,32 @@ jobs:
       # 6b. Not clean / not enabled -> push a per-build branch for human review.
       - name: Push review branch
         if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto != 'true' && steps.decide.outputs.changed == 'true'
+        env:
+          LB_VER: ${{ steps.lb.outputs.ver }}
+          LB_MC: ${{ steps.lb.outputs.mc }}
+          LB_SHORT: ${{ steps.lb.outputs.short }}
+          LB_SHA: ${{ steps.lb.outputs.sha }}
+          LB_BRANCH: ${{ steps.lb.outputs.branch }}
+          GATE: ${{ steps.gate.outputs.gate }}
+          CANARY: ${{ steps.canary.outputs.canary }}
+          SANITY: ${{ steps.sanity.outputs.sanity }}
+          GENTEST: ${{ steps.gentest.outputs.gentest }}
         run: |
           set -euo pipefail
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name  "obus-globus"
           git config user.email "254700516+obus-globus@users.noreply.github.com"
-          git checkout -b "${{ steps.lb.outputs.branch }}"
+          git checkout -b "$LB_BRANCH"
           # Stage only the intended outputs (NOT `git add -A`: root-owned mounts
           # gradle-cache/ and tools/regen/.module-cache/ must not be committed).
           git add typings README.md tools/regen-types.sh tools/kdoc-extractor
-          git commit -m "regen: LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})
+          git commit -m "regen: LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)
 
-          Automated regen against ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}.
-          gate=${{ steps.gate.outputs.gate }} canary=${{ steps.canary.outputs.canary }} sanity=${{ steps.sanity.outputs.sanity }} gentest=${{ steps.gentest.outputs.gentest }}.
+          Automated regen against ccbluex/liquidbounce@$LB_SHA.
+          gate=$GATE canary=$CANARY sanity=$SANITY gentest=$GENTEST.
           Needs review (a gate/canary/sanity/gentest not all-clean, an MC bump, or auto-release disabled)."
-          git push origin "${{ steps.lb.outputs.branch }}"
-          echo "Pushed review branch \`${{ steps.lb.outputs.branch }}\` (needs a human)." >> "$GITHUB_STEP_SUMMARY"
+          git push origin "$LB_BRANCH"
+          echo "Pushed review branch \`$LB_BRANCH\` (needs a human)." >> "$GITHUB_STEP_SUMMARY"
 
       # Human-in-the-loop signal. The review-branch path is otherwise silent (a
       # branch appears + a step summary you'd only see by opening the run), so
@@ -328,29 +352,37 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
+          SERVER_URL: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          LB_VER: ${{ steps.lb.outputs.ver }}
+          LB_MC: ${{ steps.lb.outputs.mc }}
+          LB_SHORT: ${{ steps.lb.outputs.short }}
+          LB_SHA: ${{ steps.lb.outputs.sha }}
+          LB_BRANCH: ${{ steps.lb.outputs.branch }}
+          GATE: ${{ steps.gate.outputs.gate }}
+          CANARY: ${{ steps.canary.outputs.canary }}
+          SANITY: ${{ steps.sanity.outputs.sanity }}
+          GENTEST: ${{ steps.gentest.outputs.gentest }}
         run: |
-          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          BRANCH_URL="${{ github.server_url }}/${{ github.repository }}/tree/${{ steps.lb.outputs.branch }}"
+          RUN_URL="$SERVER_URL/$REPO/actions/runs/$RUN_ID"
+          BRANCH_URL="$SERVER_URL/$REPO/tree/$LB_BRANCH"
+          TITLE="Regen needs review: LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)"
           BODY="$(cat <<EOF
           An automated regen routed to the **review branch** instead of auto-releasing — it needs a human.
 
-          - Branch: [\`${{ steps.lb.outputs.branch }}\`]($BRANCH_URL)
-          - Upstream: \`ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}\` (v${{ steps.lb.outputs.ver }}, mc \`${{ steps.lb.outputs.mc }}\`)
-          - Gates: gate=\`${{ steps.gate.outputs.gate }}\` · canary=\`${{ steps.canary.outputs.canary }}\` · sanity=\`${{ steps.sanity.outputs.sanity }}\` · gentest=\`${{ steps.gentest.outputs.gentest }}\`
+          - Branch: [\`$LB_BRANCH\`]($BRANCH_URL)
+          - Upstream: \`ccbluex/liquidbounce@$LB_SHA\` (v$LB_VER, mc \`$LB_MC\`)
+          - Gates: gate=\`$GATE\` · canary=\`$CANARY\` · sanity=\`$SANITY\` · gentest=\`$GENTEST\`
           - Reason: a gate/canary/sanity/gentest was not all-clean, an MC bump, or auto-release is disabled.
           - [Workflow run]($RUN_URL)
 
           Review the branch and merge if it's good.
           EOF
           )"
-          gh issue create \
-            --title "Regen needs review: LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})" \
-            --body "$BODY" \
-            --label "regen-review" 2>/dev/null \
-          || gh issue create \
-            --title "Regen needs review: LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})" \
-            --body "$BODY" \
-          || echo "::warning::notify (needs-review) failed — non-blocking, review branch \`${{ steps.lb.outputs.branch }}\` still pushed."
+          gh issue create --title "$TITLE" --body "$BODY" --label "regen-review" 2>/dev/null \
+          || gh issue create --title "$TITLE" --body "$BODY" \
+          || echo "::warning::notify (needs-review) failed — non-blocking, review branch \`$LB_BRANCH\` still pushed."
 
       # Catch-all for a HARD failure (regen crash, image build, an uncaught
       # step) that never reached the review/release routing — otherwise the only
@@ -361,13 +393,18 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
+          SERVER_URL: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          LB_VER: ${{ steps.lb.outputs.ver }}
+          LB_SHORT: ${{ steps.lb.outputs.short }}
+          LB_SHA: ${{ steps.lb.outputs.sha }}
         run: |
-          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          gh issue create \
-            --title "Regen FAILED: LiquidBounce ${{ steps.lb.outputs.ver }} (${{ steps.lb.outputs.short }})" \
-            --body "$(printf 'The daily regen job failed before it could route to a review branch or release.\n\n- Upstream: `ccbluex/liquidbounce@%s`\n- [Workflow run](%s)\n\nCheck the run logs.' "${{ steps.lb.outputs.sha }}" "$RUN_URL")" \
+          RUN_URL="$SERVER_URL/$REPO/actions/runs/$RUN_ID"
+          TITLE="Regen FAILED: LiquidBounce $LB_VER ($LB_SHORT)"
+          gh issue create --title "$TITLE" \
+            --body "$(printf 'The daily regen job failed before it could route to a review branch or release.\n\n- Upstream: `ccbluex/liquidbounce@%s`\n- [Workflow run](%s)\n\nCheck the run logs.' "$LB_SHA" "$RUN_URL")" \
             --label "regen-review" 2>/dev/null \
-          || gh issue create \
-            --title "Regen FAILED: LiquidBounce ${{ steps.lb.outputs.ver }} (${{ steps.lb.outputs.short }})" \
+          || gh issue create --title "$TITLE" \
             --body "$(printf 'The daily regen job failed. [Workflow run](%s). Check the run logs.' "$RUN_URL")" \
           || echo "::warning::notify (job-failed) could not open an issue — non-blocking."
