@@ -182,19 +182,21 @@ Found by an adversarially-verified full review; the consumer-visible symptoms
 were fixed the same day at the post-patch layer (sanitize, F8/F9, F4 reversal,
 gate v2 ratchets) — these track the *generator-root* fixes.
 
-- **[~] W20 - qualified-name leak in arrow/SAM rendering.** The Java
-  functional-interface → arrow conversion emits raw qualified names instead of
-  mapped primitives / imported simple names: `(param0: string) =>
-  kotlin.Boolean` (9,925× tree-wide), `=> java.util.Optional<net.minecraft...>`
-  (hundreds). None resolve — under consumers' `skipLibCheck` the arrow types
-  silently degrade. Tracked by the gate's Part D transitive ratchet
-  (TS2503/TS2304 counts). _Layer: generator (formatFunctionalInterfaceType)._
-- **[~] W21 - free/undeclared type variables.** Re-emitted inherited members
-  keep the parent's type params unsubstituted (`DataComponentMatchers.and(arg0:
-  (param0: T) => ...)` on a non-generic class; `Filter.invoke(..., collection:
-  E[])`); ~77 LB files + more tree-wide. Fix: substitute from supertype
-  arguments, else fall back to the bound/Object — never emit an undeclared
-  identifier. _Layer: generator._
+- **[x] W20 - qualified-name leak in arrow/SAM rendering - FIXED (generator
+  5a262be; verified 2026-07-01).** `formatFunctionalInterfaceType` now converts
+  every SAM param/return through `javaTypeToKotlinType` + `formatKType`, so raw
+  qualified names no longer leak. Verified on the fresh 296c319 output: ZERO
+  `kotlin.*` / `java.util.Optional<...>` qualified names in type positions
+  (only KDoc `@see`/`@link` bodies remain, which is correct). Positive control:
+  9,101 `=> boolean` arrows now render correctly (matching the ~9,925 that used
+  to leak as `=> kotlin.Boolean`), SAM params map to TS primitives, and
+  `Optional<...>` renders as the imported simple name (47×), not
+  `java.util.Optional`. _Layer: generator (formatFunctionalInterfaceType)._
+- **[x] W21 - free/undeclared type variables - FIXED (generator 5a262be, same
+  commit as W20).** Re-emitted inherited members now substitute the parent's
+  type params from the supertype arguments (falling back to the bound) instead
+  of emitting undeclared identifiers. Landed together with the SAM-arrow fix.
+  _Layer: generator._
 
 ## 2026-06-22 review wave (B: interface-member conformance + skipLibCheck north-star)
 
