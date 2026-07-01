@@ -27,7 +27,6 @@ on:
 permissions:
   contents: write      # push main + tags, create releases
   actions: write       # dispatch npm-publish.yml on the auto-release path
-  issues: write        # open a "needs review"/failure notification issue (fail-open)
 
 concurrency:
   group: check-regen
@@ -346,52 +345,38 @@ jobs:
 
       # Human-in-the-loop signal. The review-branch path is otherwise silent (a
       # branch appears + a step summary you'd only see by opening the run), so
-      # open a GitHub issue to notify the owner through normal channels.
-      # FAIL-OPEN — unlike the gates (fail-closed), a notification failure must
-      # NEVER block or break the pipeline: continue-on-error + a `|| true` guard.
-      #
-      # CHANNEL CHOICE (for review): a GitHub issue is the zero-config default —
-      # it uses the built-in GITHUB_TOKEN, needs no secret, and threads into the
-      # repo's normal notifications. If you'd rather be pinged in Discord (likely
-      # preferable given where you actually watch), swap the `gh issue create`
-      # for a `curl` to a Discord webhook — that needs a DISCORD_WEBHOOK repo
-      # secret but is a drop-in replacement here (keep the same fail-open guard).
+      # ping Discord (where the owner watches) via a webhook.
+      # FAIL-OPEN - unlike the gates (fail-closed), a notification failure must
+      # NEVER block or break the pipeline: continue-on-error + `|| true`, and a
+      # graceful skip if the DISCORD_WEBHOOK secret is absent.
       - name: Notify — regen needs review
         if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto != 'true' && steps.decide.outputs.changed == 'true'
         continue-on-error: true
         env:
-          GH_TOKEN: ${{ github.token }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           SERVER_URL: ${{ github.server_url }}
           REPO: ${{ github.repository }}
           RUN_ID: ${{ github.run_id }}
           LB_VER: ${{ steps.lb.outputs.ver }}
           LB_MC: ${{ steps.lb.outputs.mc }}
           LB_SHORT: ${{ steps.lb.outputs.short }}
-          LB_SHA: ${{ steps.lb.outputs.sha }}
           LB_BRANCH: ${{ steps.lb.outputs.branch }}
           GATE: ${{ steps.gate.outputs.gate }}
           CANARY: ${{ steps.canary.outputs.canary }}
           SANITY: ${{ steps.sanity.outputs.sanity }}
           GENTEST: ${{ steps.gentest.outputs.gentest }}
         run: |
+          [ -n "${DISCORD_WEBHOOK:-}" ] || { echo "::warning::DISCORD_WEBHOOK secret not set - skipping notify"; exit 0; }
           RUN_URL="$SERVER_URL/$REPO/actions/runs/$RUN_ID"
           BRANCH_URL="$SERVER_URL/$REPO/tree/$LB_BRANCH"
-          TITLE="Regen needs review: LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)"
-          BODY="$(cat <<EOF
-          An automated regen routed to the **review branch** instead of auto-releasing — it needs a human.
-
-          - Branch: [\`$LB_BRANCH\`]($BRANCH_URL)
-          - Upstream: \`ccbluex/liquidbounce@$LB_SHA\` (v$LB_VER, mc \`$LB_MC\`)
-          - Gates: gate=\`$GATE\` · canary=\`$CANARY\` · sanity=\`$SANITY\` · gentest=\`$GENTEST\`
-          - Reason: a gate/canary/sanity/gentest was not all-clean, an MC bump, or auto-release is disabled.
-          - [Workflow run]($RUN_URL)
-
-          Review the branch and merge if it's good.
-          EOF
-          )"
-          gh issue create --title "$TITLE" --body "$BODY" --label "regen-review" 2>/dev/null \
-          || gh issue create --title "$TITLE" --body "$BODY" \
-          || echo "::warning::notify (needs-review) failed — non-blocking, review branch \`$LB_BRANCH\` still pushed."
+          # printf %s (not string interpolation) keeps the upstream-derived values
+          # out of the format string; jq escapes them for JSON; <> suppresses the
+          # Discord link previews.
+          CONTENT="$(printf '🔁 **Regen needs review**: LiquidBounce %s (mc %s, `%s`)\nRouted to a review branch instead of auto-releasing.\nGates: gate=`%s` canary=`%s` sanity=`%s` gentest=`%s`\nBranch: <%s>\nRun: <%s>' \
+            "$LB_VER" "$LB_MC" "$LB_SHORT" "$GATE" "$CANARY" "$SANITY" "$GENTEST" "$BRANCH_URL" "$RUN_URL")"
+          jq -nc --arg c "$CONTENT" '{content:$c}' \
+            | curl -sS -m 15 -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK" \
+            || echo "::warning::Discord notify (needs-review) failed - non-blocking, review branch \`$LB_BRANCH\` still pushed."
 
       # Catch-all for a HARD failure (regen crash, image build, an uncaught
       # step) that never reached the review/release routing — otherwise the only
@@ -401,19 +386,17 @@ jobs:
         if: failure() && steps.branch.outputs.exists == 'false'
         continue-on-error: true
         env:
-          GH_TOKEN: ${{ github.token }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           SERVER_URL: ${{ github.server_url }}
           REPO: ${{ github.repository }}
           RUN_ID: ${{ github.run_id }}
           LB_VER: ${{ steps.lb.outputs.ver }}
           LB_SHORT: ${{ steps.lb.outputs.short }}
-          LB_SHA: ${{ steps.lb.outputs.sha }}
         run: |
+          [ -n "${DISCORD_WEBHOOK:-}" ] || { echo "::warning::DISCORD_WEBHOOK secret not set - skipping notify"; exit 0; }
           RUN_URL="$SERVER_URL/$REPO/actions/runs/$RUN_ID"
-          TITLE="Regen FAILED: LiquidBounce $LB_VER ($LB_SHORT)"
-          gh issue create --title "$TITLE" \
-            --body "$(printf 'The daily regen job failed before it could route to a review branch or release.\n\n- Upstream: `ccbluex/liquidbounce@%s`\n- [Workflow run](%s)\n\nCheck the run logs.' "$LB_SHA" "$RUN_URL")" \
-            --label "regen-review" 2>/dev/null \
-          || gh issue create --title "$TITLE" \
-            --body "$(printf 'The daily regen job failed. [Workflow run](%s). Check the run logs.' "$RUN_URL")" \
-          || echo "::warning::notify (job-failed) could not open an issue — non-blocking."
+          CONTENT="$(printf '🛑 **Regen FAILED**: LiquidBounce %s (`%s`)\nThe job failed before it could route to a review branch or release.\nRun: <%s>' \
+            "$LB_VER" "$LB_SHORT" "$RUN_URL")"
+          jq -nc --arg c "$CONTENT" '{content:$c}' \
+            | curl -sS -m 15 -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK" \
+            || echo "::warning::Discord notify (job-failed) failed - non-blocking."
