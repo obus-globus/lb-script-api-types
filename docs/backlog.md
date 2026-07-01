@@ -149,8 +149,22 @@ tree-sitter extractor can.
   import *and* every reference (`tsNameFor`). Unit test covers import + reference
   aliasing; full suite green. Clears all 562 on the next regen (incl. the
   ScriptMode case behind registerMode). _Layer: generator._
-- **[ ] W13 - `okhttp3.Response` leak.** `ScriptAsyncUtil.asyncHttp()` returns the
-  raw okhttp type - **19** LB files reference `okhttp3` (verified). Add a `ScriptHttpResponse` facade. _Layer: augmentation._
+- **[~] W13 - `okhttp3.Response` leak - PREMISE STALE (re-investigated 2026-07-01).**
+  The current binding is `ScriptAsyncUtil.request(block: (Request$Builder) => void):
+  Value` (script/bindings/api/ScriptAsyncUtil.kt:178) — it returns the opaque
+  GraalVM `Value` (a JS Promise), **not** a raw `okhttp3.Response`. The KDoc
+  *says* `@return Promise<okhttp3.Response>` but the static type is `Value`, so
+  there is **no raw-Response return leak** and the promise resolution is simply
+  untyped. okhttp3 appears in the script surface ONLY as the `Request$Builder`
+  **parameter** (scripts legitimately call `.url()/.header()/...` on it) — grep
+  confirms zero okhttp3 in ambient/augmentations. The envisioned
+  `ScriptHttpResponse` facade also does NOT work at the augmentation layer:
+  interface-declaration-merge ADDS overloads, so `request(block): Promise<Facade>`
+  can't OVERRIDE the generated `request(block): Value` (identical params → the
+  original wins). A real improvement (type the promise resolution) would need a
+  generator/post-patch that rewrites the return type — a design decision, not a
+  mechanical augmentation. Deferred pending a decision on whether to expose the
+  real Response or a curated facade + where to define it. _Layer: generator/post-patch, not augmentation._
 - **[ ] W17 - missing runtime helpers.** Some methods that exist at runtime are
   absent from the types. _The audit's `getItemId` example is ambiguous - verified
   `getItemId` does appear (on unrelated viaversion/iris classes), so the example
