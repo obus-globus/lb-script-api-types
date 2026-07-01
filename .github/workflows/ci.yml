@@ -14,6 +14,13 @@ on:
   pull_request:
   workflow_dispatch:
 
+# Least privilege: this is the only workflow that runs on `pull_request`, so it
+# is reachable by fork PRs now that the repo is public. It only reads the tree
+# and runs the typecheck/canary gates (no writes, no secrets). GitHub already
+# hands fork-PR runs a read-only token; pin it explicitly.
+permissions:
+  contents: read
+
 jobs:
   typecheck:
     runs-on: ubuntu-latest
