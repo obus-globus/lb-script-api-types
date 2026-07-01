@@ -94,6 +94,44 @@ const silentHotbar = Java.type<{ INSTANCE: SilentHotbar }>(
     "net.ccbluex.liquidbounce.utils.client.SilentHotbar").INSTANCE;
 ```
 
+## Quickstart
+
+A minimal script: register the script, add a module, and handle a few events.
+Each event name autocompletes and its payload is typed.
+
+```ts
+const script = registerScript({
+    name: "ExampleScript",
+    version: "1.0.0",
+    authors: ["you"],
+});
+
+script.registerModule({ name: "Example", category: "Misc" }, (module) => {
+    // Module lifecycle.
+    module.on("enable", () => print("Example enabled"));
+
+    // Typed event payloads: `event` is the AttackEntityEvent.
+    module.on("attack", (event) => {
+        print("attacking " + event.entity);
+    });
+
+    // Runs every client tick while the module is enabled.
+    module.on("gameTick", () => {
+        if (MovementUtil.isMoving()) {
+            MovementUtil.strafe();
+        }
+    });
+});
+
+// Script lifecycle.
+script.on("load", () => print("loaded"));
+```
+
+`registerScript` returns your script handle; `registerModule`'s callback hands
+you the module to attach `on()` handlers to. The runtime globals (`mc`, `Client`,
+`RotationUtil`, `MovementUtil`, `Setting`, and the rest) are typed and carry hover
+docs, so autocomplete works throughout.
+
 ## Versioning
 
 `<lb-major>.<lb-minor>.<iteration>`: `major.minor` track the LiquidBounce
