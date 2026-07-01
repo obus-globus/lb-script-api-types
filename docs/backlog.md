@@ -165,6 +165,18 @@ tree-sitter extractor can.
   generator/post-patch that rewrites the return type — a design decision, not a
   mechanical augmentation. Deferred pending a decision on whether to expose the
   real Response or a curated facade + where to define it. _Layer: generator/post-patch, not augmentation._
+  **Option B validated (2026-07-01, regen-output only, not shipped):** retyping
+  `request(): Value` → `Promise<Response>` + importing okhttp3.Response is NOT
+  gate-clean — it adds **+5** skipLibCheck:false errors (879→884), ALL in one
+  transitively-pulled file `okhttp3/internal/connection/RealConnection.d.ts`
+  (TS2416 ×2, TS2300, TS2717, TS2417). They're okhttp's OWN latent errors,
+  invisible to consumers (skipLibCheck:true → `Promise<Response>` autocompletes
+  fine) but they trip the gate's per-code ratchet → the regen would route to
+  review, not auto-release. So B needs either a re-baseline of those 5 or a
+  narrower type. **Option C (a curated `ScriptHttpResponse` facade) imports none
+  of okhttp's graph, so it stays gate-clean** — the tradeoff is B = full/accurate
+  Response but +5 gate debt vs C = clean gate but a hand-maintained facade.
+  Decision (A/B/C + re-baseline?) still maintainer's.
 - **[~] W17 - missing runtime helpers - ENUMERATED, no clean fix (2026-07-01).**
   Discovery pass done. (1) Global bindings: COMPLETE + gated — all 28 `putMember`
   bindings (ScriptContextProvider.kt) + `registerScript` are in ambient.d.ts,
