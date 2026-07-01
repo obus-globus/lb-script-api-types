@@ -907,6 +907,20 @@ else
     echo "post-patches: W3 event-class overlay skipped (overlay or apply script missing)"
 fi
 
+# Hand-authored docs for the script-binding API surface (the Script* runtime
+# bindings + registerScript/PolyglotScript + ScriptModule). Same gap-filling,
+# upstream-wins, self-retiring overlay as the event pass above — a further
+# apply-kdoc pass over a curated manifest, applied AFTER the extracted KDoc.
+BINDING_OVERLAY="$REPO_ROOT/tools/regen/binding-docs-overlay.json"
+if [ "$SKIP_KDOC_EFF" == "1" ]; then
+    echo "post-patches: binding-API overlay skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
+elif [ -f "$BINDING_OVERLAY" ] && [ -f "$APPLY_SCRIPT" ]; then
+    python3 "$APPLY_SCRIPT" "$PKG_ROOT" "$BINDING_OVERLAY" || \
+        { echo "post-patches: ERROR — apply-kdoc (binding overlay) CRASHED (continuing; binding docs missing)" >&2; POSTPATCH_FAILED=1; }
+else
+    echo "post-patches: binding-API overlay skipped (overlay or apply script missing)"
+fi
+
 # -----------------------------------------------------------------------------
 # #12b — real parameter names. ts-generator emits JVM-erased placeholders
 # (`paramarg0`, `paramarg1`, ...). apply-signatures.py rewrites them to the
