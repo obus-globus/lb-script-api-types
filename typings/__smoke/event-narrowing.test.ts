@@ -1,7 +1,7 @@
 // Phase 5.2 smoke test — verifies the augmentation cascade actually
 // produces a real type for `event` inside a `ScriptModule.on(...)` handler.
 //
-// Two-sided assertion (per reviewer's instruction): if the void.d.ts cascade
+// Two-sided assertion: if the void.d.ts cascade
 // were still active (or the augmentation barrel weren't being picked up),
 // `event` would collapse to `any` and the @ts-expect-error below would
 // no longer consume an error — that is the cascade-broken signal.

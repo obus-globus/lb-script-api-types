@@ -176,7 +176,7 @@ tree-sitter extractor can.
   narrower type. **Option C (a curated `ScriptHttpResponse` facade) imports none
   of okhttp's graph, so it stays gate-clean** — the tradeoff is B = full/accurate
   Response but +5 gate debt vs C = clean gate but a hand-maintained facade.
-  DECISION (maintainer, 2026-07-01): **option A — keep `request()` returning the
+  DECISION (the maintainer, 2026-07-01): **option A — keep `request()` returning the
   opaque `Value`, but document it.** Added an "Async HTTP" note to the README
   (branch `docs/readme-quickstart`) showing that the promise resolves to an
   `okhttp3.Response` and how to cast the awaited result (`as unknown as Response`)
@@ -196,7 +196,7 @@ tree-sitter extractor can.
   clean; arguably unnecessary (method forms work). Recommend: don't sweep; at most
   a curated bean-property overlay on a few hot types (mc.player) via augmentation.
   _Layer: n/a for a clean fix; residual is a design call._
-  DECISION (maintainer, 2026-07-01): **document it, do not implement.** A full sweep
+  DECISION (the maintainer, 2026-07-01): **document it, do not implement.** A full sweep
   is the TS2300/TS2717 burn zone and a curated overlay is convenience-only, so the
   runtime behaviour (getters readable as bare `.x` properties; Java collections
   indexable JS-style) is now documented in the published README instead. Won't-do.
@@ -231,7 +231,7 @@ gate v2 ratchets) — these track the *generator-root* fixes.
 
 ## 2026-06-22 review wave (B: interface-member conformance + skipLibCheck north-star)
 
-> **North-star (maintainer, 2026-06-22): make the tree clean even WITHOUT
+> **North-star (the maintainer, 2026-06-22): make the tree clean even WITHOUT
 > `skipLibCheck`.** We will still ship/recommend `skipLibCheck` (a 56k-file
 > declaration set wants it purely for compile speed - it's the normal contract
 > for large generated typings), but the goal is that a consumer who turns it OFF

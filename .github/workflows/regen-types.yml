@@ -110,4 +110,4 @@ jobs:
             Automated regeneration via the headless LiquidBounce introspection flow
             (`run-regen.sh`). Review the diff before merging.
           add-paths: typings/
-          delete-branch: true
+          delete-branch: false

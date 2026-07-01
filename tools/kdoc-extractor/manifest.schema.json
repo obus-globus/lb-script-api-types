@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/obus-globus/liquidbounce-helper/tools/kdoc-extractor/manifest.schema.json",
+  "$id": "https://github.com/obus-globus/lb-script-api-types/tools/kdoc-extractor/manifest.schema.json",
   "title": "kdoc-extractor manifest",
   "description": "Output of the T-Doc Phase B kdoc-extractor (PSI walker). Envelope wraps FQN→entry map; consumed by tools/regen/apply-kdoc.py and ts-generator's KDocSource.",
   "type": "object",
