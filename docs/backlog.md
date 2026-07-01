@@ -176,7 +176,11 @@ tree-sitter extractor can.
   narrower type. **Option C (a curated `ScriptHttpResponse` facade) imports none
   of okhttp's graph, so it stays gate-clean** — the tradeoff is B = full/accurate
   Response but +5 gate debt vs C = clean gate but a hand-maintained facade.
-  Decision (A/B/C + re-baseline?) still maintainer's.
+  DECISION (maintainer, 2026-07-01): **option A — keep `request()` returning the
+  opaque `Value`, but document it.** Added an "Async HTTP" note to the README
+  (branch `docs/readme-quickstart`) showing that the promise resolves to an
+  `okhttp3.Response` and how to cast the awaited result (`as unknown as Response`)
+  for typed access; the example is verified to type-check. No type/gate change.
 - **[~] W17 - missing runtime helpers - ENUMERATED, no clean fix (2026-07-01).**
   Discovery pass done. (1) Global bindings: COMPLETE + gated — all 28 `putMember`
   bindings (ScriptContextProvider.kt) + `registerScript` are in ambient.d.ts,
