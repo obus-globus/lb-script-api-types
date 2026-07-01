@@ -45,7 +45,15 @@ run_case() {
     }
     node() {
       local expr="$*"
-      if [[ "$expr" == *"readFileSync(0)"* ]]; then echo "$MOCK_OLD_MC"; else echo "$MOCK_NEW_MC"; fi
+      if [[ "$expr" == *"readFileSync(0)"* ]]; then
+        # This form is fed via `git show ... | node`. Drain the pipe fully before
+        # replying, else the upstream `git` can catch SIGPIPE and (with
+        # `set -o pipefail`) abort the Decide script mid-way — a timing race.
+        cat >/dev/null 2>&1 || true
+        echo "$MOCK_OLD_MC"
+      else
+        echo "$MOCK_NEW_MC"
+      fi
     }
     export -f git node
     '"$script"'
