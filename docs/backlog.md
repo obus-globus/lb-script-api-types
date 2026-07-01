@@ -165,10 +165,21 @@ tree-sitter extractor can.
   generator/post-patch that rewrites the return type — a design decision, not a
   mechanical augmentation. Deferred pending a decision on whether to expose the
   real Response or a curated facade + where to define it. _Layer: generator/post-patch, not augmentation._
-- **[ ] W17 - missing runtime helpers.** Some methods that exist at runtime are
-  absent from the types. _The audit's `getItemId` example is ambiguous - verified
-  `getItemId` does appear (on unrelated viaversion/iris classes), so the example
-  is bad._ Needs a real enumeration pass to become actionable. _Layer: augmentation / generator._
+- **[~] W17 - missing runtime helpers - ENUMERATED, no clean fix (2026-07-01).**
+  Discovery pass done. (1) Global bindings: COMPLETE + gated — all 28 `putMember`
+  bindings (ScriptContextProvider.kt) + `registerScript` are in ambient.d.ts,
+  cross-checked vs runtime-bindings.json by check-ambient-contract.py. (2)
+  Intrinsics COMPLETE (Java.type/from/to/extend/super, Polyglot, print, load,
+  script.on). (3) No per-class reflected-method gap (getItemId already debunked;
+  generator emits all reflected public members). (4) The ONLY genuine runtime>types
+  delta is GraalJS JavaBean-property sugar: LB uses `HostAccess.ALL`
+  (PolyglotScript.kt:60), so `getX()`/`isX()` are also callable as `.x`, plus
+  Java List/array interop (`.length`, `[i]`). Closing it = emitting `.foo` aliases
+  for **~48,031** getters against **~16,749** colliding lowercase fields → the
+  TS2300/TS2717 static-hiding burn-zone (already a documented dead-end). NOT
+  clean; arguably unnecessary (method forms work). Recommend: don't sweep; at most
+  a curated bean-property overlay on a few hot types (mc.player) via augmentation.
+  _Layer: n/a for a clean fix; residual is a design call._
 - **[x] W19 - overloaded-method redeclaration variance.** Fixed in the
   generator: `functionsOf` now re-emits the inherited sibling overloads of any
   method name a subclass redeclares (matched by `overloadSignature`), so a child
