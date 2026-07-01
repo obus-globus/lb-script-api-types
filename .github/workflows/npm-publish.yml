@@ -6,10 +6,10 @@ name: Publish to npm
 # docs/versioning.md). The exact LB build is in the package.json `liquidbounce`
 # block. Consumers pin a LiquidBounce line with a semver range,
 # `npm i @wunk/lb-script-api-types@^0.38.0` (newest 0.38-line types, stops before
-# 0.39) — so no custom dist-tag is maintained.
+# 0.39) - so no custom dist-tag is maintained.
 #
 # Access is controlled by publishConfig.access ("public"). Authentication is npm
-# OIDC trusted publishing (id-token below) — no long-lived NPM_TOKEN.
+# OIDC trusted publishing (id-token below) - no long-lived NPM_TOKEN.
 on:
   release:
     types: [published]
