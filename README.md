@@ -1,12 +1,14 @@
 # LiquidBounce Script-API types + generator
 
+<!-- lb-badges:start -->
 [![npm](https://img.shields.io/npm/v/@wunk/lb-script-api-types?label=npm&color=cb3837)](https://www.npmjs.com/package/@wunk/lb-script-api-types)
-[![Minecraft](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.npmjs.org%2F%40wunk%2Flb-script-api-types%2Flatest&query=%24.liquidbounce.minecraft&label=Minecraft&color=2ea44f)](https://www.npmjs.com/package/@wunk/lb-script-api-types)
-[![LiquidBounce](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.npmjs.org%2F%40wunk%2Flb-script-api-types%2Flatest&query=%24.liquidbounce.version&label=LiquidBounce&color=5865f2)](https://github.com/CCBlueX/LiquidBounce)
-[![LB build](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fregistry.npmjs.org%2F%40wunk%2Flb-script-api-types%2Flatest&query=%24.liquidbounce.ref&label=LB%20build&color=555)](https://github.com/CCBlueX/LiquidBounce)
+[![Minecraft](https://img.shields.io/badge/Minecraft-26.2-2ea44f)](https://www.npmjs.com/package/@wunk/lb-script-api-types)
+[![LiquidBounce](https://img.shields.io/badge/LiquidBounce-0.38.1-5865f2)](https://github.com/CCBlueX/LiquidBounce/commit/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71)
+[![LB build](https://img.shields.io/badge/LB_build-v0.38.0--73--g553a3caf4-555)](https://github.com/CCBlueX/LiquidBounce/commit/553a3caf47807e98e69ea3ce0e17bcd9e52eeb71)
+<!-- lb-badges:end -->
 
-The badges track the latest published build (Minecraft version, LiquidBounce
-version, and the LB `git describe`), read live from the npm registry.
+The badges track the build these types were generated from; the LiquidBounce and
+LB-build badges link to that exact LiquidBounce commit.
 
 TypeScript types for the **LiquidBounce** (nextgen, MC 1.21+) GraalJS **script
 API**: the Java/Kotlin/Minecraft surface a LiquidBounce script can reach at

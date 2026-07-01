@@ -100,6 +100,9 @@ if [[ "$PROMOTE" == "1" ]]; then
   echo "Promoted into typings/ ($(find "$REPO_ROOT/typings/types" -name '*.d.ts' | wc -l) .d.ts)."
   # Stamp the package version to the LiquidBounce build these types were made for.
   node "$REPO_ROOT/scripts/stamp-version.mjs"
+  # Refresh the README build-provenance badges (incl. the LB commit links) from
+  # the freshly-stamped package.json.
+  node "$REPO_ROOT/scripts/stamp-readme-badges.mjs"
   if [[ "${SKIP_GATES:-0}" == "1" ]]; then
     # The CI auto-regen runs the authoritative gates (typecheck, canary, output
     # sanity) as separate workflow steps so it can branch on each result, and it
