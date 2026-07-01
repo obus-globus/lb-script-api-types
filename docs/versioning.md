@@ -35,8 +35,7 @@ The package version is **`<lb-major>.<lb-minor>.<iteration>`**:
 
 ## Pinning a LiquidBounce line
 
-Pin a LiquidBounce line with a semver range - no custom dist-tag is maintained
-(only npm's built-in `latest`):
+Pin a LiquidBounce line with a semver range:
 
 ```bash
 npm i @wunk/lb-script-api-types@^0.38.0   # newest types for the LB 0.38 line
@@ -44,10 +43,7 @@ npm i @wunk/lb-script-api-types           # newest overall (latest)
 ```
 
 `^0.38.0` resolves to the newest `0.38.x` and stops before `0.39`, so it keeps you
-on your LiquidBounce line while still picking up type-only iterations. (An earlier
-`lb-<major>.<minor>` dist-tag was dropped: it duplicated the semver range and
-couldn't be auto-maintained under OIDC trusted publishing without a long-lived
-token.)
+on your LiquidBounce line while still picking up type-only iterations.
 
 ## How the version is maintained
 
