@@ -41,6 +41,15 @@ live behind `.static`** (`Hand.static.MAIN_HAND`,
 against older typings but is `undefined` at runtime; these types model the
 real reachable surface (verified in a live client).
 
+Scripts run under GraalJS with full host access, so Java **getters are also
+readable as bare properties** at runtime: `entity.getHealth()` also works as
+`entity.health`, and `entity.isOnGround()` as `entity.onGround`. The types only
+carry the method form, so use `getHealth()` for typed access; the shorthand
+`.health` runs but is not typed (there are ~48k getters, and generating every
+alias would collide with same-named fields). Java collections and arrays likewise
+support JS indexing at runtime (`list[0]`, `list.length`, `for (const x of list)`)
+while the types expose the Java surface (`list.get(0)`, `list.size()`).
+
 Now `mc`, `Client`, `RotationUtil`, `Setting`, `Java.type`, and the rest are
 globally typed. Event handlers are typed per event, since `ScriptModule.on()` has
 one overload for each LiquidBounce event:

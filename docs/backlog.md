@@ -196,6 +196,10 @@ tree-sitter extractor can.
   clean; arguably unnecessary (method forms work). Recommend: don't sweep; at most
   a curated bean-property overlay on a few hot types (mc.player) via augmentation.
   _Layer: n/a for a clean fix; residual is a design call._
+  DECISION (maintainer, 2026-07-01): **document it, do not implement.** A full sweep
+  is the TS2300/TS2717 burn zone and a curated overlay is convenience-only, so the
+  runtime behaviour (getters readable as bare `.x` properties; Java collections
+  indexable JS-style) is now documented in the published README instead. Won't-do.
 - **[x] W19 - overloaded-method redeclaration variance.** Fixed in the
   generator: `functionsOf` now re-emits the inherited sibling overloads of any
   method name a subclass redeclares (matched by `overloadSignature`), so a child
