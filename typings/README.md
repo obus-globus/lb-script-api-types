@@ -94,6 +94,59 @@ const silentHotbar = Java.type<{ INSTANCE: SilentHotbar }>(
     "net.ccbluex.liquidbounce.utils.client.SilentHotbar").INSTANCE;
 ```
 
+## Quickstart
+
+A minimal script: register the script, add a module, and handle a few events.
+Each event name autocompletes and its payload is typed.
+
+```ts
+const script = registerScript({
+    name: "ExampleScript",
+    version: "1.0.0",
+    authors: ["you"],
+});
+
+script.registerModule({ name: "Example", category: "Misc" }, (module) => {
+    // Module lifecycle.
+    module.on("enable", () => print("Example enabled"));
+
+    // Typed event payloads: `event` is the AttackEntityEvent.
+    module.on("attack", (event) => {
+        print("attacking " + event.entity);
+    });
+
+    // Runs every client tick while the module is enabled.
+    module.on("gameTick", () => {
+        if (MovementUtil.isMoving()) {
+            MovementUtil.strafe();
+        }
+    });
+});
+
+// Script lifecycle.
+script.on("load", () => print("loaded"));
+```
+
+`registerScript` returns your script handle; `registerModule`'s callback hands
+you the module to attach `on()` handlers to. The runtime globals (`mc`, `Client`,
+`RotationUtil`, `MovementUtil`, `Setting`, and the rest) are typed and carry hover
+docs, so autocomplete works throughout.
+
+### Async HTTP
+
+`AsyncUtil.request(...)` sends an HTTP request and returns a JS `Promise` that
+resolves to an `okhttp3.Response`. The promise is typed opaquely (as the GraalVM
+`Value`), so cast the awaited result to `Response` for typed access to `.code()`,
+`.body().string()`, headers, and the rest:
+
+```ts
+import type { Response } from "@wunk/lb-script-api-types/types/okhttp3/Response";
+
+const res = await AsyncUtil.request((b) => b.url("https://example.com")) as unknown as Response;
+print("status: " + res.code());
+print("body: " + res.body().string());
+```
+
 ## Versioning
 
 `<lb-major>.<lb-minor>.<iteration>`: `major.minor` track the LiquidBounce
