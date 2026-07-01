@@ -24,7 +24,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.AttackEntityEvent": {
       "kind": "class",
-      "doc": "Fires when the player attacks an entity, exposing the target entity. Cancellable — cancelling prevents the attack."
+      "doc": "Fires when the player attacks an entity, exposing the target entity. Cancellable - cancelling prevents the attack."
     },
     "net.ccbluex.liquidbounce.event.events.BedStateChangeEvent": {
       "kind": "class",
@@ -76,7 +76,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.ChatReceiveEvent": {
       "kind": "class",
-      "doc": "Fires when a chat or system message is received, exposing the raw message string and its component form. Cancellable — cancelling hides the message."
+      "doc": "Fires when a chat or system message is received, exposing the raw message string and its component form. Cancellable - cancelling hides the message."
     },
     "net.ccbluex.liquidbounce.event.events.ChatReceiveEvent.ChatType": {
       "kind": "class",
@@ -84,7 +84,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.ChatSendEvent": {
       "kind": "class",
-      "doc": "Fires when the player sends a chat message, exposing the message text. Cancellable — cancelling stops the message from being sent."
+      "doc": "Fires when the player sends a chat message, exposing the message text. Cancellable - cancelling stops the message from being sent."
     },
     "net.ccbluex.liquidbounce.event.events.ChunkDeltaUpdateEvent": {
       "kind": "class",
@@ -204,7 +204,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.GameTickEvent": {
       "kind": "class",
-      "doc": "Fires on every client game tick (the main ~20 TPS client loop). The most common hook for periodic per-tick logic."
+      "doc": "Fires on every client game tick."
     },
     "net.ccbluex.liquidbounce.event.events.HealthUpdateEvent": {
       "kind": "class",
@@ -220,7 +220,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.KeyEvent": {
       "kind": "class",
-      "doc": "A raw keyboard key press or release, reported with the key and GLFW action code."
+      "doc": "A raw keyboard key press or release, reported with the key and the action code."
     },
     "net.ccbluex.liquidbounce.event.events.KeybindChangeEvent": {
       "kind": "class",
@@ -256,7 +256,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.MouseRotationEvent": {
       "kind": "class",
-      "doc": "Camera rotation derived from raw mouse-movement deltas. Cancellable — cancelling suppresses the look rotation."
+      "doc": "Camera rotation derived from raw mouse-movement deltas. Cancellable - cancelling suppresses the look rotation."
     },
     "net.ccbluex.liquidbounce.event.events.MouseScrollEvent": {
       "kind": "class",
@@ -288,7 +288,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.PacketEvent": {
       "kind": "class",
-      "doc": "Fires for every packet sent or received, exposing the transfer origin and the packet. Cancellable — cancelling drops the packet."
+      "doc": "Fires for every packet sent or received, exposing the transfer origin and the packet. Cancellable - cancelling drops the packet."
     },
     "net.ccbluex.liquidbounce.event.events.PerspectiveEvent": {
       "kind": "class",
@@ -312,7 +312,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.PlayerJumpEvent": {
       "kind": "class",
-      "doc": "Fires when the player initiates a jump, exposing the (mutable) jump motion and yaw. Cancellable — cancelling prevents the jump."
+      "doc": "Fires when the player initiates a jump, exposing the (mutable) jump motion and yaw. Cancellable - cancelling prevents the jump."
     },
     "net.ccbluex.liquidbounce.event.events.PlayerMoveEvent": {
       "kind": "class",
@@ -356,7 +356,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.PlayerTickEvent": {
       "kind": "class",
-      "doc": "Fires each client player tick, before movement is processed. Cancellable — cancelling skips the player's tick."
+      "doc": "Fires each client player tick, before movement is processed. Cancellable - cancelling skips the player's tick."
     },
     "net.ccbluex.liquidbounce.event.events.PlayerUseMultiplier": {
       "kind": "class",
@@ -504,7 +504,7 @@
     },
     "net.ccbluex.liquidbounce.event.events.WorldRenderEvent": {
       "kind": "class",
-      "doc": "Fires while the world is rendered, exposing the pose stack, camera and partial-tick fraction — for depth-correct 3D rendering."
+      "doc": "Fires while the world is rendered, exposing the pose stack, camera and partial-tick fraction - for depth-correct 3D rendering."
     }
   }
 }

@@ -21,19 +21,25 @@
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptMovementUtil.strafeWithSpeed": {
       "kind": "function",
       "doc": "Applies strafe movement using the given horizontal speed.",
-      "params": { "speed": "the horizontal speed to strafe at" }
+      "params": {
+        "speed": "the horizontal speed to strafe at"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptMovementUtil.strafeWithStrength": {
       "kind": "function",
       "doc": "Applies strafe movement using the given strength (how strongly the velocity is steered toward the input direction).",
-      "params": { "strength": "the strafe strength" }
+      "params": {
+        "strength": "the strafe strength"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptMovementUtil.strafeWithSpeedAndStrength": {
       "kind": "function",
       "doc": "Applies strafe movement using both a horizontal speed and a strength.",
-      "params": { "speed": "the horizontal speed to strafe at", "strength": "the strafe strength" }
+      "params": {
+        "speed": "the horizontal speed to strafe at",
+        "strength": "the strafe strength"
+      }
     },
-
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptNetworkUtil": {
       "kind": "class",
       "doc": "Helpers for sending movement, chat and command packets to the server (the `NetworkUtil` global)."
@@ -41,34 +47,59 @@
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptNetworkUtil.movePlayerGround": {
       "kind": "function",
       "doc": "Sends a status-only movement packet (no position/rotation), reporting the on-ground and horizontal-collision state.",
-      "params": { "onGround": "whether the player is on the ground", "horizontalCollision": "whether the player is horizontally colliding" }
+      "params": {
+        "onGround": "whether the player is on the ground",
+        "horizontalCollision": "whether the player is horizontally colliding"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptNetworkUtil.movePlayerPosition": {
       "kind": "function",
       "doc": "Sends a position movement packet with the given coordinates.",
-      "params": { "x": "the x coordinate", "y": "the y coordinate", "z": "the z coordinate", "onGround": "whether the player is on the ground", "horizontalCollision": "whether the player is horizontally colliding" }
+      "params": {
+        "x": "the x coordinate",
+        "y": "the y coordinate",
+        "z": "the z coordinate",
+        "onGround": "whether the player is on the ground",
+        "horizontalCollision": "whether the player is horizontally colliding"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptNetworkUtil.movePlayerPositionAndLook": {
       "kind": "function",
       "doc": "Sends a position-and-rotation movement packet with the given coordinates and look angles.",
-      "params": { "x": "the x coordinate", "y": "the y coordinate", "z": "the z coordinate", "yaw": "the yaw angle", "pitch": "the pitch angle", "onGround": "whether the player is on the ground", "horizontalCollision": "whether the player is horizontally colliding" }
+      "params": {
+        "x": "the x coordinate",
+        "y": "the y coordinate",
+        "z": "the z coordinate",
+        "yaw": "the yaw angle",
+        "pitch": "the pitch angle",
+        "onGround": "whether the player is on the ground",
+        "horizontalCollision": "whether the player is horizontally colliding"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptNetworkUtil.movePlayerLook": {
       "kind": "function",
       "doc": "Sends a rotation-only movement packet with the given look angles.",
-      "params": { "yaw": "the yaw angle", "pitch": "the pitch angle", "onGround": "whether the player is on the ground", "horizontalCollision": "whether the player is horizontally colliding" }
+      "params": {
+        "yaw": "the yaw angle",
+        "pitch": "the pitch angle",
+        "onGround": "whether the player is on the ground",
+        "horizontalCollision": "whether the player is horizontally colliding"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptNetworkUtil.sendChatMessage": {
       "kind": "function",
       "doc": "Sends a chat message to the server.",
-      "params": { "message": "the chat message to send" }
+      "params": {
+        "message": "the chat message to send"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptNetworkUtil.sendCommand": {
       "kind": "function",
       "doc": "Sends a command to the server (without the leading slash).",
-      "params": { "command": "the command to send" }
+      "params": {
+        "command": "the command to send"
+      }
     },
-
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptInteractionUtil": {
       "kind": "class",
       "doc": "Helpers for attacking, interacting with and using items on entities and blocks (the `InteractionUtil` global)."
@@ -76,19 +107,28 @@
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptInteractionUtil.attackEntity": {
       "kind": "function",
       "doc": "Attacks the given entity (no-op if it is the local player).",
-      "params": { "entity": "the entity to attack", "swing": "whether to show the arm swing", "keepSprint": "whether to keep sprinting through the attack" }
+      "params": {
+        "entity": "the entity to attack",
+        "swing": "whether to show the arm swing",
+        "keepSprint": "whether to keep sprinting through the attack"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptInteractionUtil.interactEntity": {
       "kind": "function",
       "doc": "Interacts with the given entity at the hit result using the given hand (no-op if it is the local player).",
-      "params": { "entity": "the entity to interact with", "hitResult": "the entity hit result", "hand": "the hand to interact with" }
+      "params": {
+        "entity": "the entity to interact with",
+        "hitResult": "the entity hit result",
+        "hand": "the hand to interact with"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptInteractionUtil.useItem": {
       "kind": "function",
       "doc": "Uses (activates) the item held in the given hand.",
-      "params": { "hand": "the hand whose item to use" }
+      "params": {
+        "hand": "the hand whose item to use"
+      }
     },
-
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptBlockUtil": {
       "kind": "class",
       "doc": "Helpers for constructing block positions and reading the world's blocks (the `BlockUtil` global)."
@@ -96,19 +136,26 @@
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptBlockUtil.newBlockPos": {
       "kind": "function",
       "doc": "Creates a block position from integer coordinates.",
-      "params": { "x": "the x coordinate", "y": "the y coordinate", "z": "the z coordinate" }
+      "params": {
+        "x": "the x coordinate",
+        "y": "the y coordinate",
+        "z": "the z coordinate"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptBlockUtil.getBlock": {
       "kind": "function",
       "doc": "Returns the block at the given position.",
-      "params": { "blockPos": "the position to query" }
+      "params": {
+        "blockPos": "the position to query"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptBlockUtil.getState": {
       "kind": "function",
       "doc": "Returns the block state at the given position, or null if unavailable.",
-      "params": { "blockPos": "the position to query" }
+      "params": {
+        "blockPos": "the position to query"
+      }
     },
-
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptPrimitives.boolean": {
       "kind": "function",
       "doc": "Coerces the argument to a JVM `boolean` (useful when passing a value into Java interop that requires the exact primitive type)."
@@ -141,7 +188,6 @@
       "kind": "function",
       "doc": "Coerces the argument to a JVM `double`; a string is parsed."
     },
-
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptParameterValidator": {
       "kind": "class",
       "doc": "Validates and parses command-parameter strings, returning an object with either an accepted value or an error (the `ParameterValidator` global)."
@@ -149,24 +195,31 @@
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptParameterValidator.string": {
       "kind": "function",
       "doc": "Validates the parameter as a string.",
-      "params": { "param": "the raw parameter string" }
+      "params": {
+        "param": "the raw parameter string"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptParameterValidator.module": {
       "kind": "function",
       "doc": "Validates the parameter as an existing module name.",
-      "params": { "param": "the raw parameter string" }
+      "params": {
+        "param": "the raw parameter string"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptParameterValidator.integer": {
       "kind": "function",
       "doc": "Validates and parses the parameter as an integer.",
-      "params": { "param": "the raw parameter string" }
+      "params": {
+        "param": "the raw parameter string"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptParameterValidator.positiveInteger": {
       "kind": "function",
       "doc": "Validates and parses the parameter as a positive integer.",
-      "params": { "param": "the raw parameter string" }
+      "params": {
+        "param": "the raw parameter string"
+      }
     },
-
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptUnsafeThread": {
       "kind": "class",
       "doc": "Runs a callback on a new background thread (the `UnsafeThread` global). Unsafe: the callback runs off the client thread, so touching game state directly is not thread-safe."
@@ -174,30 +227,41 @@
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptUnsafeThread.run": {
       "kind": "function",
       "doc": "Runs the callback on a new thread and returns that thread.",
-      "params": { "callback": "the callback to run off-thread" }
+      "params": {
+        "callback": "the callback to run off-thread"
+      }
     },
-
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptReflectionUtil.classByName": {
       "kind": "function",
       "doc": "Resolves a Java class by its fully-qualified name (accepts `/` or `.` separators).",
-      "params": { "name": "the class name to resolve" }
+      "params": {
+        "name": "the class name to resolve"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptReflectionUtil.newInstance": {
       "kind": "function",
       "doc": "Constructs a new instance of the class using the declared constructor matching the given arguments.",
-      "params": { "clazz": "the class to instantiate", "args": "the constructor arguments" }
+      "params": {
+        "clazz": "the class to instantiate",
+        "args": "the constructor arguments"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptReflectionUtil.newInstanceByName": {
       "kind": "function",
       "doc": "Resolves a class by name and constructs a new instance using the declared constructor matching the given arguments.",
-      "params": { "name": "the class name to instantiate", "args": "the constructor arguments" }
+      "params": {
+        "name": "the class name to instantiate",
+        "args": "the constructor arguments"
+      }
     },
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptReflectionUtil.newInstanceByObject": {
       "kind": "function",
       "doc": "Constructs a new instance of the given object's class using the declared constructor matching the given arguments.",
-      "params": { "obj": "an object whose class to instantiate", "args": "the constructor arguments" }
+      "params": {
+        "obj": "an object whose class to instantiate",
+        "args": "the constructor arguments"
+      }
     },
-
     "net.ccbluex.liquidbounce.script.bindings.api.ScriptClient.eventManager": {
       "kind": "property",
       "doc": "The client's event manager."
@@ -222,7 +286,6 @@
       "kind": "property",
       "doc": "The client's combat manager."
     },
-
     "net.ccbluex.liquidbounce.script.PolyglotScript.scriptName": {
       "kind": "property",
       "doc": "The script's declared name (set from the object passed to `registerScript`)."
@@ -235,10 +298,9 @@
       "kind": "property",
       "doc": "The script's declared authors (set from the object passed to `registerScript`)."
     },
-
     "net.ccbluex.liquidbounce.script.bindings.features.ScriptModule": {
       "kind": "class",
-      "doc": "A client module defined by a script — the object passed to a `registerModule` callback. Register event handlers on it with `on(...)`, expose settings, and it participates in the client's module system."
+      "doc": "A client module defined by a script - the object passed to a `registerModule` callback. Register event handlers on it with `on(...)`, expose settings, and it participates in the client's module system."
     },
     "net.ccbluex.liquidbounce.script.bindings.features.ScriptModule.script": {
       "kind": "property",
