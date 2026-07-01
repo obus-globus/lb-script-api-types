@@ -316,6 +316,13 @@ jobs:
       # open a GitHub issue to notify the owner through normal channels.
       # FAIL-OPEN — unlike the gates (fail-closed), a notification failure must
       # NEVER block or break the pipeline: continue-on-error + a `|| true` guard.
+      #
+      # CHANNEL CHOICE (for review): a GitHub issue is the zero-config default —
+      # it uses the built-in GITHUB_TOKEN, needs no secret, and threads into the
+      # repo's normal notifications. If you'd rather be pinged in Discord (likely
+      # preferable given where you actually watch), swap the `gh issue create`
+      # for a `curl` to a Discord webhook — that needs a DISCORD_WEBHOOK repo
+      # secret but is a drop-in replacement here (keep the same fail-open guard).
       - name: Notify — regen needs review
         if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto != 'true' && steps.decide.outputs.changed == 'true'
         continue-on-error: true
