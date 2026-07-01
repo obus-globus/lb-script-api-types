@@ -235,8 +235,7 @@ can ship type-only improvements between LB releases). `0.38.2` means "our 3rd
 type build for the LB 0.38 line".
 
 ```bash
-npm i @wunk/lb-script-api-types@^0.38.0    # newest types for LB 0.38.x
-npm i @wunk/lb-script-api-types@lb-0.38    # same, via the LB-line dist-tag
+npm i @wunk/lb-script-api-types@^0.38.0    # newest types for the LB 0.38.x line
 npm view @wunk/lb-script-api-types liquidbounce   # exact LB build / commit / MC
 ```
 

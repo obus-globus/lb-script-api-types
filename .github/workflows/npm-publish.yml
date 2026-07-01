@@ -4,11 +4,12 @@ name: Publish to npm
 # no build step. Version is `<lb-major>.<lb-minor>.<iteration>`: major.minor track
 # the LiquidBounce release line, the patch is our own iteration (see
 # docs/versioning.md). The exact LB build is in the package.json `liquidbounce`
-# block. After publishing, an `lb-<major>.<minor>` dist-tag (e.g. `lb-0.38`) is
-# pointed at this version so consumers can `npm i ...@lb-0.38`.
+# block. Consumers pin a LiquidBounce line with a semver range,
+# `npm i @wunk/lb-script-api-types@^0.38.0` (newest 0.38-line types, stops before
+# 0.39) — so no custom dist-tag is maintained.
 #
-# Access is controlled by publishConfig.access ("public"). Needs a repo/org secret
-# NPM_TOKEN with publish rights for the @wunk scope.
+# Access is controlled by publishConfig.access ("public"). Authentication is npm
+# OIDC trusted publishing (id-token below) — no long-lived NPM_TOKEN.
 on:
   release:
     types: [published]
@@ -47,12 +48,9 @@ jobs:
         run: |
           name="$(node -p "require('./package.json').name")"
           version="$(node -p "require('./package.json').version")"
-          # LB line dist-tag: lb-<major>.<minor> (e.g. lb-0.38).
-          lbtag="lb-$(node -p "require('./package.json').version.split('.').slice(0,2).join('.')")"
           echo "name=$name"       >> "$GITHUB_OUTPUT"
           echo "version=$version" >> "$GITHUB_OUTPUT"
-          echo "lbtag=$lbtag"     >> "$GITHUB_OUTPUT"
-          echo "Package: $name@$version (LB $(node -p "require('./package.json').liquidbounce.version")) dist-tag $lbtag"
+          echo "Package: $name@$version (LB $(node -p "require('./package.json').liquidbounce.version"))"
 
       - name: Verify package contents
         working-directory: typings
@@ -78,18 +76,3 @@ jobs:
           (github.event_name == 'release' || inputs.dry_run == false)
         working-directory: typings
         run: npm publish
-
-      - name: Point lb-<minor> dist-tag at this version
-        # Best-effort: `dist-tag add` is a separate registry call that may not
-        # reuse the publish step's short-lived OIDC credential. Non-fatal — the
-        # publish itself is what matters; if this is skipped/fails, set it with
-        # `npm dist-tag add <pkg>@<ver> lb-<minor>` (a granular token / local
-        # `npm login`). `dist-tag add` is an idempotent upsert.
-        if: >-
-          github.event_name == 'release' || inputs.dry_run == false
-        continue-on-error: true
-        working-directory: typings
-        run: |
-          npm dist-tag add "${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }}" \
-            "${{ steps.pkg.outputs.lbtag }}"
-          echo "::notice::${{ steps.pkg.outputs.lbtag }} -> ${{ steps.pkg.outputs.version }}"

@@ -33,15 +33,21 @@ The package version is **`<lb-major>.<lb-minor>.<iteration>`**:
 > build is always in the `liquidbounce` block. This mirrors how `@types/*`
 > versions track an upstream (`@types/react@18.2.45` → React 18.2, types iter 45).
 
-## dist-tags
+## Pinning a LiquidBounce line
 
-Every publish also points an **`lb-<major>.<minor>`** dist-tag at itself:
+Pin a LiquidBounce line with a semver range - no custom dist-tag is maintained
+(only npm's built-in `latest`):
 
 ```bash
-npm i @wunk/lb-script-api-types@lb-0.38   # newest types for LB 0.38
+npm i @wunk/lb-script-api-types@^0.38.0   # newest types for the LB 0.38 line
 npm i @wunk/lb-script-api-types           # newest overall (latest)
-npm i @wunk/lb-script-api-types@^0.38.0   # same as lb-0.38, via semver range
 ```
+
+`^0.38.0` resolves to the newest `0.38.x` and stops before `0.39`, so it keeps you
+on your LiquidBounce line while still picking up type-only iterations. (An earlier
+`lb-<major>.<minor>` dist-tag was dropped: it duplicated the semver range and
+couldn't be auto-maintained under OIDC trusted publishing without a long-lived
+token.)
 
 ## How the version is maintained
 
@@ -60,23 +66,17 @@ node scripts/stamp-version.mjs --check    # print, don't write
 
 ## Release flows
 
-> **CI publish caveat (2026-06-10):** the repo's `NPM_TOKEN` secret currently
-> holds the VM's granular token, which appears to be **IP-allowlisted** — CI
-> runners get `E404` on `PUT` (npm hides the package from unauthorized
-> callers) while the same token publishes fine from the VM. Until a
-> CI-suitable token is minted in the npm web UI (granular, publish rights on
-> @wunk, **no IP allowlist**) and stored as `NPM_TOKEN`, releases publish
-> from the VM: `cd typings && npm publish && npm dist-tag add
-> @wunk/lb-script-api-types@<ver> lb-<major>.<minor>` (what
-> `scripts/cut-release.sh` prepares is unaffected — tag + GitHub Release
-> still drive the changelog).
+Publishing is authenticated by npm **OIDC trusted publishing** (no long-lived
+token): a GitHub Release fires `.github/workflows/npm-publish.yml`, which
+`npm publish`es the `typings/` package. The daily auto-regen does the same
+automatically on a clean regen. Either way the release/tag drive the changelog.
 
 **A. Type-only improvement (LB unchanged).** Bump the iteration by hand and cut a
 release:
 ```bash
 cd typings && npm version patch          # 0.38.1 -> 0.38.2, creates a git tag
 git push --follow-tags
-# create a GitHub Release for the tag -> npm-publish.yml publishes + sets lb-0.38
+# create a GitHub Release for the tag -> npm-publish.yml publishes
 ```
 
 **B. New LiquidBounce build.** Bump the pin and regenerate; the stamp resets the
@@ -86,12 +86,11 @@ version when LB's minor advanced and always refreshes provenance:
 ./fetch-references.sh && ./run-regen.sh   # regenerates types + stamps the version
 cd typings && npm version patch           # only if same LB line and you want a new iter
 git commit -am "regen for LB <x>" && git push --follow-tags
-# GitHub Release -> publish + lb-<minor> dist-tag
+# GitHub Release -> npm-publish.yml publishes
 ```
 
 The publish workflow is **idempotent**: it skips if that exact version is already
-on npm (so re-running a release is safe), and sets the `lb-<minor>` dist-tag only
-on a fresh publish.
+on npm, so re-running a release is safe.
 
 ## Policy & edge cases
 
