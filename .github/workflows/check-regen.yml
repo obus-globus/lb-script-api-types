@@ -199,6 +199,36 @@ jobs:
             echo "sanity=fail" >> "$GITHUB_OUTPUT"
           fi
 
+      # Generator unit/regression tests (Kotest) — guards the generator-root
+      # fixes (ctor visibility incl. the TS2675 null-visibility case, overload
+      # dedup, type-param substitution) from silently regressing. Run inside the
+      # already-built regen image (JDK 21 + warm /cache/gradle from the shadowJar
+      # build), so no extra toolchain/build is added. Fail-closed like the other
+      # gates: a failure sets gentest=fail and the decision step routes to the
+      # review branch instead of auto-releasing.
+      - name: Generator regression tests
+        id: gentest
+        if: steps.branch.outputs.exists == 'false'
+        continue-on-error: true
+        run: |
+          if docker run --rm -e HOME=/work \
+               -v "$PWD":/work \
+               -v "$PWD/gradle-cache":/cache/gradle \
+               --entrypoint bash lb-regen:ci -c '
+                 set -e
+                 git config --global --add safe.directory "*"
+                 cd /work/generator
+                 JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64 \
+                   PATH=/usr/lib/jvm/java-21-openjdk-amd64/bin:$PATH \
+                   ./gradlew --no-daemon test'; then
+            echo "gentest=pass" >> "$GITHUB_OUTPUT"; echo "Generator tests: PASS" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "gentest=fail" >> "$GITHUB_OUTPUT"; echo "Generator tests: FAIL" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          # Reclaim ownership of the container-written build tree so later steps
+          # (git status, cache save) can read it.
+          sudo chown -R "$(id -u):$(id -g)" . || true
+
       # 5. Decide: a clean regen (gate+canary+sanity pass, MC unchanged, real
       #    changes) on an enabled repo auto-ships; anything else -> review branch.
       - name: Decide auto-release vs review
@@ -219,13 +249,14 @@ jobs:
              && [ "${{ steps.gate.outputs.gate }}" = "pass" ] \
              && [ "${{ steps.canary.outputs.canary }}" = "pass" ] \
              && [ "${{ steps.sanity.outputs.sanity }}" = "pass" ] \
+             && [ "${{ steps.gentest.outputs.gentest }}" = "pass" ] \
              && [ "$MC_SAME" = "true" ]; then
             AUTO=true
           fi
           echo "auto=$AUTO" >> "$GITHUB_OUTPUT"
           {
             echo "### Decision"
-            echo "- gate: \`${{ steps.gate.outputs.gate }}\` · canary: \`${{ steps.canary.outputs.canary }}\` · sanity: \`${{ steps.sanity.outputs.sanity }}\` · mc-unchanged: \`$MC_SAME\` (was \`$OLD_MC\`, now \`$NEW_MC\`)"
+            echo "- gate: \`${{ steps.gate.outputs.gate }}\` · canary: \`${{ steps.canary.outputs.canary }}\` · sanity: \`${{ steps.sanity.outputs.sanity }}\` · gentest: \`${{ steps.gentest.outputs.gentest }}\` · mc-unchanged: \`$MC_SAME\` (was \`$OLD_MC\`, now \`$NEW_MC\`)"
             echo "- AUTO_RELEASE var: \`${{ vars.AUTO_RELEASE }}\`"
             echo "- **auto-release: $AUTO**"
           } >> "$GITHUB_STEP_SUMMARY"
@@ -274,7 +305,7 @@ jobs:
           git commit -m "regen: LiquidBounce ${{ steps.lb.outputs.ver }} (mc ${{ steps.lb.outputs.mc }}, ${{ steps.lb.outputs.short }})
 
           Automated regen against ccbluex/liquidbounce@${{ steps.lb.outputs.sha }}.
-          gate=${{ steps.gate.outputs.gate }} canary=${{ steps.canary.outputs.canary }} sanity=${{ steps.sanity.outputs.sanity }}.
-          Needs review (gate/canary/sanity not all-clean, an MC bump, or auto-release disabled)."
+          gate=${{ steps.gate.outputs.gate }} canary=${{ steps.canary.outputs.canary }} sanity=${{ steps.sanity.outputs.sanity }} gentest=${{ steps.gentest.outputs.gentest }}.
+          Needs review (a gate/canary/sanity/gentest not all-clean, an MC bump, or auto-release disabled)."
           git push origin "${{ steps.lb.outputs.branch }}"
           echo "Pushed review branch \`${{ steps.lb.outputs.branch }}\` (needs a human)." >> "$GITHUB_STEP_SUMMARY"
