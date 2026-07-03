@@ -25,7 +25,7 @@ import type { CommandServerInfo$DetectionType } from '../../../../../../../net/c
  *
  * The command supports active detection modes for more thorough analysis.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt:64}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/CommandServerInfo.kt:64}
  */
 export class CommandServerInfo extends Object implements EventListener, Command$Factory {
     static INSTANCE: CommandServerInfo;

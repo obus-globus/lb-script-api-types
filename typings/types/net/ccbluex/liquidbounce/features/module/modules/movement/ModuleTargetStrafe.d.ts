@@ -14,7 +14,7 @@ import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.
  *
  * Handles strafing around a locked target.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTargetStrafe.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTargetStrafe.kt:69}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTargetStrafe.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTargetStrafe.kt:69}
  */
 export class ModuleTargetStrafe extends ClientModule {
     static INSTANCE: ModuleTargetStrafe;

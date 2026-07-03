@@ -4,7 +4,7 @@ import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 /**
  * Schedules tasks that must run inside {@link net.minecraft.client.Minecraft.tick}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/event/TickLoopTaskExecutor.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/event/TickLoopTaskExecutor.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/event/TickLoopTaskExecutor.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/event/TickLoopTaskExecutor.kt:29}
  */
 export class TickLoopTaskExecutor extends Object {
     static INSTANCE: TickLoopTaskExecutor;

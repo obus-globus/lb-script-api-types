@@ -10,7 +10,7 @@ import type { AxochatPacket } from '../../../../../../net/ccbluex/liquidbounce/f
  *
  * Allows serializing packets from class to json
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt:39}
  */
 export class PacketSerializer extends Object implements JsonSerializer<AxochatPacket> {
     constructor()
@@ -19,7 +19,7 @@ export class PacketSerializer extends Object implements JsonSerializer<AxochatPa
     /**
      * Register packet
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt:46}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt:46}
      */
     registerPacket(packetName: string, packetClass: Class<AxochatPacket>): void;
     /**
@@ -37,7 +37,7 @@ export class PacketSerializer extends Object implements JsonSerializer<AxochatPa
      * @param typeOfSrc the actual type (fully genericized version) of the source object.
      * @returns a JsonElement corresponding to the specified object.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt:69}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/PacketGsonExtension.kt:69}
      */
     serialize(src: AxochatPacket, typeOfSrc: Type, context: JsonSerializationContext): JsonElement;
 }

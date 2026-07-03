@@ -9,7 +9,7 @@ export class PacketExtensionsKt extends Object {
      * In version <= 1.21.11 {@link ServerboundAttackPacket} & {@link ServerboundSpectatorActionPacket}
      * belong to {@link ServerboundInteractPacket}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt:75}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt:75}
      */
     static getEntityIdC2SInteractOrAttack(paramarg0: Packet<any>): number;
     static getPosition(paramarg0: ServerboundMovePlayerPacket): Vec3;
@@ -17,7 +17,7 @@ export class PacketExtensionsKt extends Object {
     /**
      * @see net.minecraft.world.entity.LivingEntity.checkTotemDeathProtection
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt#L86 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt:86}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt#L86 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt:86}
      */
     static isDeathProtection(paramarg0: ClientboundEntityEventPacket): boolean;
     static isLocalPlayerDamage(paramarg0: Packet<any>): boolean;

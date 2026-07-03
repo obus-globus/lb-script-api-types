@@ -17,7 +17,7 @@ import type { TaskManager } from '../../../../../../../net/ccbluex/liquidbounce/
  *
  * @author Izuna <izuna.seikatsu@ccbluex.net>
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowserBackend.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowserBackend.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowserBackend.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/backends/external/ExternalSystemBrowserBackend.kt:40}
  */
 export class ExternalSystemBrowserBackend extends Object implements EventListener, BrowserBackend {
     constructor()

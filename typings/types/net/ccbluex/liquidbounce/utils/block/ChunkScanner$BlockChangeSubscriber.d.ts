@@ -9,7 +9,7 @@ export interface ChunkScanner$BlockChangeSubscriber extends Object{
      * If this is true {@link recordBlock} is called on chunk updates and on single block updates.
      * This might be inefficient for some modules, so they can choose to not call that method on chunk updates.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L271 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:271}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L271 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:271}
      */
     readonly shouldCallRecordBlockOnChunkUpdate: boolean;
     /**
@@ -17,7 +17,7 @@ export interface ChunkScanner$BlockChangeSubscriber extends Object{
      *
      * @param chunk a non-empty chunk
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L289 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:289}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L289 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:289}
      */
     chunkUpdate(chunk: LevelChunk): void;
     clearAllChunks(): void;
@@ -30,7 +30,7 @@ export interface ChunkScanner$BlockChangeSubscriber extends Object{
      * @param state The new {@link BlockState} of {@link pos}.
      * @param cleared If the block is in section already cleared. Or, does it not need to check existing records
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L282 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:282}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L282 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:282}
      */
     recordBlock(pos: BlockPos, state: BlockState, cleared: boolean): void;
 }

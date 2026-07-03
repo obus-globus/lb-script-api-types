@@ -63,7 +63,7 @@ export class ItemStackListRenderState extends Object implements GuiRearrangeable
     /**
      * @param rowLength The maximum count of stack which can be placed in one row.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.kt:74}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemStackListRenderState.kt:74}
      */
     rowLength(rowLength: number): ItemStackListRenderState;
     scale(scale: number): ItemStackListRenderState;

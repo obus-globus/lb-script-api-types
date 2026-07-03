@@ -51,7 +51,7 @@ export class RenderExtensionsKt extends Object {
     /**
      * Read and close source. Accepts JPEG and PNG.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt#L346 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt:346}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt#L346 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt:346}
      */
     static readNativeImage(paramarg0: File): NativeImage;
     static readNativeImage(paramarg0: InputStream): NativeImage;
@@ -59,7 +59,7 @@ export class RenderExtensionsKt extends Object {
     /**
      * Should be called from main thread.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt#L332 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt:332}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt#L332 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt:332}
      */
     static registerTexture(nativeImage: NativeImage, identifier: Identifier): DynamicTexture;
     static reset(poseStack: PoseStack): void;
@@ -72,7 +72,7 @@ export class RenderExtensionsKt extends Object {
     /**
      * @see net.minecraft.client.Screenshot.takeScreenshot
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt#L239 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt:239}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt#L239 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt:239}
      */
     static toNativeImage(bufferedImage: BufferedImage): NativeImage;
     static toNativeImage(bufferedImage: GpuTexture): CompletableFuture<NativeImage>;

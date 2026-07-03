@@ -10,7 +10,7 @@ import type { MinecraftShortcuts } from '../../../../../../net/ccbluex/liquidbou
  * to register event handlers that are only active when the state is on,
  * it also features {@link onEnabled} and {@link onDisabled} which are called when the state is toggled.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.kt:39}
  */
 export abstract class ToggleableValueGroup extends ValueGroup implements EventListener, Toggleable, MinecraftShortcuts {
     constructor(parent: EventListener | null, name: string, enabled: boolean, aliases: string[])
@@ -20,7 +20,7 @@ export abstract class ToggleableValueGroup extends ValueGroup implements EventLi
      * Because we pass the parent to the Listenable, we can simply
      * call the super.handleEvents() and it will return false if the upper-listenable is disabled.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.kt:93}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ToggleableValueGroup.kt:93}
      */
     readonly running: boolean;
     children(): EventListener[];

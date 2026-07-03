@@ -6,7 +6,7 @@ export class EventKt extends Object {
     /**
      * Retrieves the name that the event is supposed to be associated with in JavaScript.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/event/Event.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/event/Event.kt:68}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/event/Event.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/event/Event.kt:68}
      */
     static getEventName(paramarg0: Class<Event>): string;
 }

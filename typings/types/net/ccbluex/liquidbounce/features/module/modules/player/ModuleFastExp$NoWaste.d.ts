@@ -12,14 +12,14 @@ export class ModuleFastExp$NoWaste extends ToggleableValueGroup {
      *
      * This should prevent the module from repairing armor after every 2 or 3 received hits.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt:97}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt:97}
      */
     readonly maxDurabilityToContinueRepair: number;
     /**
      * If at least one of the items to repair has durability lower than or equal to {@link minDurabilityToStartRepair},
      * the module will start throwing experience bottles.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt:84}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleFastExp.kt:84}
      */
     readonly minDurabilityToStartRepair: number;
 }

@@ -8,7 +8,7 @@ import type { RangeValueGroup } from '../../../../../../../net/ccbluex/liquidbou
  * @see net.ccbluex.liquidbounce.injection.mixins.minecraft.entity.MixinPlayer
  * @see net.ccbluex.liquidbounce.injection.mixins.minecraft.item.MixinAttackRange
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleReach.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleReach.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleReach.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleReach.kt:33}
  */
 export class ModuleReach extends ClientModule {
     static INSTANCE: ModuleReach;

@@ -9,7 +9,7 @@ import type { BlockPos } from '../../../../../../../net/minecraft/core/BlockPos.
  *
  * Detects and displays safe spots for Crystal PvP.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHoleESP.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHoleESP.kt:49}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHoleESP.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHoleESP.kt:49}
  */
 export class ModuleHoleESP extends ClientModule implements HoleManagerSubscriber {
     static INSTANCE: ModuleHoleESP;

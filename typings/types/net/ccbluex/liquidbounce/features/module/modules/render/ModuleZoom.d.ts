@@ -8,7 +8,7 @@ import type { Easing } from '../../../../../../../net/ccbluex/liquidbounce/utils
  *
  * The mouse is slowed down with the help of mixins in {@link MixinMouseHandler}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleZoom.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleZoom.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleZoom.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleZoom.kt:41}
  */
 export class ModuleZoom extends ClientModule {
     static INSTANCE: ModuleZoom;

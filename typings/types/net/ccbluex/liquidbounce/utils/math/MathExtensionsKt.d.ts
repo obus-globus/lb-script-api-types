@@ -22,7 +22,7 @@ export class MathExtensionsKt extends Object {
      * @returns The rounded value
      * @see https://stackoverflow.com/a/2808648/9140494
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MathExtensions.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MathExtensions.kt:53}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MathExtensions.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MathExtensions.kt:53}
      */
     static roundToDecimalPlaces(paramarg0: number, paramarg1: number): number;
     static roundToDecimalPlaces(paramarg0: number, paramarg1: number): number;

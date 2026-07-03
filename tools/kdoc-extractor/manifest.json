@@ -1494,7 +1494,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-      "line": 45
+      "line": 67
     }
   },
   "net.ccbluex.liquidbounce.event.events.DrawOutlinesEvent.markDirty": {
@@ -1502,7 +1502,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-      "line": 57
+      "line": 79
     }
   },
   "net.ccbluex.liquidbounce.event.events.GameRenderTaskQueueEvent": {
@@ -10989,14 +10989,6 @@
       "line": 47
     }
   },
-  "net.ccbluex.liquidbounce.render.DrawMode": {
-    "doc": "Submission strategy for geometry started in [WorldRenderEnvironment].",
-    "kind": "class",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 95
-    }
-  },
   "net.ccbluex.liquidbounce.render.DrawParameters": {
     "doc": "",
     "params": {
@@ -11258,7 +11250,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 60
+      "line": 59
     }
   },
   "net.ccbluex.liquidbounce.render.Matrix3x2fc.transformMaxBounds": {
@@ -11278,15 +11270,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 84
-    }
-  },
-  "net.ccbluex.liquidbounce.render.RenderBufferKey": {
-    "doc": "Buffer grouping key used by [BatchCollector].",
-    "kind": "class",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 103
+      "line": 69
     }
   },
   "net.ccbluex.liquidbounce.render.RenderPass.bindAndDraw": {
@@ -11305,23 +11289,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 199
-    }
-  },
-  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.batch": {
-    "doc": "Temporarily switches the environment to batch mode.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 229
-    }
-  },
-  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.beginWorldFrame": {
-    "doc": "Starts world-frame scoped rendering context.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 347
+      "line": 82
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBox": {
@@ -11329,7 +11297,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 349
+      "line": 323
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSide": {
@@ -11337,7 +11305,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 410
+      "line": 384
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawBoxSides": {
@@ -11345,7 +11313,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 426
+      "line": 400
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCircleOutline": {
@@ -11357,7 +11325,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 598
+      "line": 572
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCustomMesh": {
@@ -11365,7 +11333,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 174
+      "line": 152
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawCustomMeshTextured": {
@@ -11373,7 +11341,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 159
+      "line": 137
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawGradientCircle": {
@@ -11387,18 +11355,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 484
-    }
-  },
-  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawImmediate": {
-    "doc": "Reference: (1.21.5-10/Yarn: RenderLayer.MultiPhase.draw)",
-    "see": [
-      "net.minecraft.client.renderer.rendertype.RenderType.draw"
-    ],
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 306
+      "line": 458
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLine": {
@@ -11406,7 +11363,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 196
+      "line": 170
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLineStrip": {
@@ -11417,7 +11374,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 284
+      "line": 258
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLines": {
@@ -11428,7 +11385,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 257
+      "line": 231
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawLinesWithWidth": {
@@ -11436,7 +11393,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 206
+      "line": 180
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawPlane": {
@@ -11444,31 +11401,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 442
-    }
-  },
-  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.endWorldFrame": {
-    "doc": "Flushes and clears world-frame scoped rendering context.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 364
-    }
-  },
-  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.finish": {
-    "doc": "Low-level completion for a [VertexConsumer] obtained from [start].\n\nPrefer [net.ccbluex.liquidbounce.render.drawCustomMesh] for regular use.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 266
-    }
-  },
-  "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.immediate": {
-    "doc": "Temporarily switches the environment to immediate mode.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 234
+      "line": 416
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.relativeToCamera": [
@@ -11477,7 +11410,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 214
+        "line": 91
       }
     },
     {
@@ -11485,7 +11418,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 219
+        "line": 100
       }
     },
     {
@@ -11493,16 +11426,24 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-        "line": 224
+        "line": 109
+      }
+    },
+    {
+      "doc": "Converts a world-space position to the camera-relative coordinate system.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
+        "line": 118
       }
     }
   ],
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.start": {
-    "doc": "Low-level draw entrypoint.\n\nPrefer [net.ccbluex.liquidbounce.render.drawCustomMesh] for regular use.",
+    "doc": "Low-level draw entrypoint.\n\nThe returned scope must be closed after writing vertices.\n\nPrefer [net.ccbluex.liquidbounce.render.drawCustomMesh] for regular use.",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-      "line": 241
+      "line": 131
     }
   },
   "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.withPositionRelativeToCamera": [
@@ -11511,7 +11452,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-        "line": 124
+        "line": 102
       }
     },
     {
@@ -11519,7 +11460,7 @@
       "kind": "function",
       "source": {
         "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-        "line": 130
+        "line": 108
       }
     }
   ],
@@ -12032,6 +11973,14 @@
       "line": 212
     }
   },
+  "net.ccbluex.liquidbounce.render.mesh.MeshBuildScope": {
+    "doc": "Scoped vertex writing target owned by [BatchCollector].\n\nClose the scope after writing vertices so collector-specific draw finalization can run.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshBuildScope.kt",
+      "line": 29
+    }
+  },
   "net.ccbluex.liquidbounce.render.mesh.MeshDraw": {
     "doc": "GPU-ready draw descriptor produced from [MeshData].\n\nIt stores uploaded vertex data plus an index binding strategy\nand the draw parameters needed by [RenderPass.bindAndDraw].",
     "kind": "class",
@@ -12097,6 +12046,17 @@
       "line": 142
     }
   },
+  "net.ccbluex.liquidbounce.render.mesh.RenderPipeline.canConsolidateConsecutiveGeometry": {
+    "doc": "",
+    "see": [
+      "net.minecraft.client.renderer.rendertype.RenderType.canConsolidateConsecutiveGeometry"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+      "line": 171
+    }
+  },
   "net.ccbluex.liquidbounce.render.process": [
     {
       "doc": "",
@@ -12121,19 +12081,6 @@
       }
     }
   ],
-  "net.ccbluex.liquidbounce.render.renderEnvironmentForWorld": {
-    "doc": "Helper function to render an environment with the specified [poseStack] and [draw] block.",
-    "params": {
-      "poseStack": "The matrix stack for rendering.",
-      "mode": "The default draw mode for [draw].",
-      "draw": "The block of code to be executed in the rendering environment."
-    },
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-      "line": 86
-    }
-  },
   "net.ccbluex.liquidbounce.script.PolyglotScript.RegisterScript.apply": {
     "doc": "Global function 'registerScript' which is called to register a script.",
     "params": {

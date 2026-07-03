@@ -5,7 +5,7 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
  *
  * Makes it easier to eat
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleSmartEat.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleSmartEat.kt:54}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleSmartEat.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/ModuleSmartEat.kt:54}
  */
 export class ModuleSmartEat extends ClientModule {
     static INSTANCE: ModuleSmartEat;

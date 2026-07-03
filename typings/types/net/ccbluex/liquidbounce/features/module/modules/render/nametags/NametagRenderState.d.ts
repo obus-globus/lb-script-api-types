@@ -13,13 +13,13 @@ export class NametagRenderState extends Object {
     /**
      * Updated on frame.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagRenderState.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagRenderState.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagRenderState.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagRenderState.kt:51}
      */
     screenPos: Vec3f | null;
     /**
      * The text to render as nametag
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagRenderState.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagRenderState.kt:44}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagRenderState.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/nametags/NametagRenderState.kt:44}
      */
     text: Component;
     calculateScreenPos(tickDelta: number): Vec3f | null;
