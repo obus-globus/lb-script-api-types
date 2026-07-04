@@ -271,8 +271,8 @@ jobs:
             echo "- **auto-release: $AUTO**"
           } >> "$GITHUB_STEP_SUMMARY"
 
-      # 6a. Clean + enabled -> merge to main, bump iteration, tag, create the
-      #     release, then dispatch npm-publish.yml (the single OIDC trusted
+      # 6a. Clean + enabled -> merge to main, tag the already-stamped version,
+      #     create the release, then dispatch npm-publish.yml (the single OIDC trusted
       #     publisher) to publish. workflow_dispatch is the documented exception
       #     to "GITHUB_TOKEN events don't trigger workflows", so the dispatch
       #     actually fires; a token-created *release* would NOT, hence the dispatch.
@@ -289,7 +289,10 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name  "obus-globus"
           git config user.email "254700516+obus-globus@users.noreply.github.com"
-          (cd typings && npm version --no-git-tag-version patch)
+          # The version is already final: stamp-version.mjs (run during regen)
+          # encodes <lb-major>.<lb-minor>.<lb-patch*1000 + scriptBuild>, where the
+          # scriptBuild is the next free build for this LB patch derived from the
+          # npm registry. No `npm version patch` here - that would double-bump.
           VER="$(node -p "require('./typings/package.json').version")"
           git add typings README.md tools/regen-types.sh tools/kdoc-extractor
           git commit -m "regen+release: v$VER — LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)

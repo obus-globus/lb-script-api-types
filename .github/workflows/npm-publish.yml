@@ -1,9 +1,10 @@
 name: Publish to npm
 
 # Publishes the typings/ package (@wunk/lb-script-api-types). Types-only —
-# no build step. Version is `<lb-major>.<lb-minor>.<iteration>`: major.minor track
-# the LiquidBounce release line, the patch is our own iteration (see
-# docs/versioning.md). The exact LB build is in the package.json `liquidbounce`
+# no build step. Version is `<lb-major>.<lb-minor>.<lb-patch*1000 + scriptBuild>`:
+# major.minor track the LiquidBounce release line, the patch slot packs LB's own
+# patch (high digits) plus our script-api build (low 3 digits) - see
+# docs/versioning.md. The exact LB build is in the package.json `liquidbounce`
 # block. Consumers pin a LiquidBounce line with a semver range,
 # `npm i @wunk/lb-script-api-types@^0.38.0` (newest 0.38-line types, stops before
 # 0.39) - so no custom dist-tag is maintained.

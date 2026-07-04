@@ -170,11 +170,11 @@ print("body: " + res.body().string());
 
 ## Versioning
 
-`<lb-major>.<lb-minor>.<iteration>`: `major.minor` track the LiquidBounce
-release line; the patch is this package's own iteration counter (so type-only
-improvements can ship between LB releases). `0.38.2` = "3rd type build for the
-LB 0.38 line". The exact LB commit and Minecraft version are in the
-`package.json` `liquidbounce` block:
+`<lb-major>.<lb-minor>.<lb-patch*1000 + scriptBuild>`: `major.minor` track the
+LiquidBounce release line; the patch slot packs LB's own patch (high digits) plus
+this package's script-api build counter (low 3 digits), since semver has only
+three components. `0.38.1005` = "LB 0.38.1, script build 5". The exact LB commit
+and Minecraft version are in the `package.json` `liquidbounce` block:
 
 ```bash
 npm view @wunk/lb-script-api-types liquidbounce

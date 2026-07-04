@@ -229,10 +229,10 @@ The manifests stay committed; these only gate whether they are applied during
 
 ## Versioning
 
-The version is `<lb-major>.<lb-minor>.<iteration>`: `major.minor` track the
-LiquidBounce release line, and the `patch` is our own iteration counter (so we
-can ship type-only improvements between LB releases). `0.38.2` means "our 3rd
-type build for the LB 0.38 line".
+The version is `<lb-major>.<lb-minor>.<lb-patch*1000 + scriptBuild>`: `major.minor`
+track the LiquidBounce release line, and the `patch` slot packs LB's own patch in
+its high digits plus our script-api build counter in the low 3 digits (semver only
+has three components). `0.38.1005` means "LB 0.38.1, our script build 5".
 
 ```bash
 npm i @wunk/lb-script-api-types@^0.38.0    # newest types for the LB 0.38.x line
@@ -240,9 +240,10 @@ npm view @wunk/lb-script-api-types liquidbounce   # exact LB build / commit / MC
 ```
 
 The exact LB build lives in the `package.json` `liquidbounce` block.
-`scripts/stamp-version.mjs` keeps `major.minor` synced to the LB line on every
-`run-regen.sh`; the iteration is bumped by hand (`cd typings && npm version
-patch`) when you cut a release. Full flow in [docs/versioning.md](docs/versioning.md).
+`scripts/stamp-version.mjs` computes the whole version on every `run-regen.sh`:
+`major.minor.lbPatch` from LB's `mod_version`, and `scriptBuild` derived from the
+npm registry (next free build for this LB patch), so there is no manual bump. Full
+flow in [docs/versioning.md](docs/versioning.md).
 
 ## Publishing to npm
 
