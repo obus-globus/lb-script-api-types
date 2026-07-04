@@ -41823,16 +41823,178 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.forChams": [
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.beginFrameIfNeeded": [
       {
         "params": [],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-          "line": 46
-        },
-        "isExtension": true,
-        "receiver": "RenderPipeline.Builder"
+          "line": 143
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.compositeIfNeeded": [
+      {
+        "params": [
+          {
+            "name": "target",
+            "type": "RenderTarget",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 152
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.isHeldItemSubmit": [
+      {
+        "params": [
+          {
+            "name": "submit",
+            "type": "ItemFeatureRenderer.Submit",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 123
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.markHeldItemSubmitIfActive": [
+      {
+        "params": [
+          {
+            "name": "submit",
+            "type": "ItemFeatureRenderer.Submit",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 114
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.onDisabled": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 171
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapCurrentHeldItemRenderTypeIfNeeded": [
+      {
+        "params": [
+          {
+            "name": "renderType",
+            "type": "RenderType",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "RenderType",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 137
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapHeldItemRenderTypeIfNeeded": [
+      {
+        "params": [
+          {
+            "name": "submit",
+            "type": "ItemFeatureRenderer.Submit",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "renderType",
+            "type": "RenderType",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "RenderType",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 127
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapIfNeeded": [
+      {
+        "params": [
+          {
+            "name": "renderType",
+            "type": "RenderType",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "entity",
+            "type": "Entity?",
+            "nullable": true,
+            "vararg": false
+          }
+        ],
+        "returns": "RenderType",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 95
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.supports": [
+      {
+        "params": [
+          {
+            "name": "renderType",
+            "type": "RenderType",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 91
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.withHeldItemContext": [
+      {
+        "params": [
+          {
+            "name": "entity",
+            "type": "Entity?",
+            "nullable": true,
+            "vararg": false
+          },
+          {
+            "name": "block",
+            "type": "Runnable",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 105
+        }
       }
     ],
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleClickGui.invalidate": [
@@ -64847,6 +65009,25 @@
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.RenderTypeExtensionsKt.withOutputTarget": [
+      {
+        "params": [
+          {
+            "name": "outputTarget",
+            "type": "OutputTarget",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "RenderSetup",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderTypeExtensions.kt",
+          "line": 25
+        },
+        "isExtension": true,
+        "receiver": "RenderSetup"
       }
     ],
     "net.ccbluex.liquidbounce.render.VertexBuilderKt.addBoxFaces": [

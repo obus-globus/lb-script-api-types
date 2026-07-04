@@ -9,7 +9,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 /**
  * A face. Axis aligned
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/geometry/AlignedFace.kt:36}
  */
 export class AlignedFace extends Object {
     constructor(from: Vec3, to: Vec3)

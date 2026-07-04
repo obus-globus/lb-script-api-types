@@ -27,7 +27,7 @@ export class SubscribedItem extends Object {
      *
      * This ensures instead of e.g., /marketplace/items/265/1713, it returns /marketplace/items/265/1713/dist
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt:55}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt:55}
      */
     getInstallationFolder(): File | null;
     /**
@@ -37,7 +37,7 @@ export class SubscribedItem extends Object {
      * by the Marketplace API as first item. We do not
      * use versioning here, therefore it could also work as downgrade.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt:91}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/features/marketplace/SubscribedItem.kt:91}
      */
     getNewestRevisionId(): number | null;
     hashCode(): number;

@@ -11,7 +11,7 @@ import type { PlayerNetworkMovementTickEvent } from '../../../../../../../../../
  *   January 15, 2026
  * @testedOn test.ccbluex.net
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2373Jan15.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2373Jan15.kt:43}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2373Jan15.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2373Jan15.kt:43}
  */
 export class FlyGrim2373Jan15 extends Mode {
     static Companion: Tagged$Companion;

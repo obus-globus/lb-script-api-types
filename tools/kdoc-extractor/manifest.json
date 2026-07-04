@@ -8363,12 +8363,68 @@
       "line": 101
     }
   },
-  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams": {
-    "doc": "TODO: Known issue: player armor + hand items",
-    "kind": "object",
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.beginFrameIfNeeded": {
+    "doc": "Ensures the chams target exists before any remapped draws in this frame.",
+    "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 42
+      "line": 143
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.compositeIfNeeded": {
+    "doc": "Blits the accumulated chams target into the main render target.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+      "line": 152
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.isHeldItemSubmit": {
+    "doc": "Returns whether the submit was created from a held-item context.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+      "line": 123
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.markHeldItemSubmitIfActive": {
+    "doc": "Marks an item submit as coming from the current held-item context.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+      "line": 114
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapCurrentHeldItemRenderTypeIfNeeded": {
+    "doc": "Remaps an immediate held-item render type using the current scoped entity.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+      "line": 137
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapHeldItemRenderTypeIfNeeded": {
+    "doc": "Remaps a deferred held-item render type to the chams target when applicable.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+      "line": 127
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapIfNeeded": {
+    "doc": "Remaps an entity render type to the chams target when applicable.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+      "line": 95
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.withHeldItemContext": {
+    "doc": "Runs a third-person held-item submission with the current entity bound.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+      "line": 105
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleClickGui": {

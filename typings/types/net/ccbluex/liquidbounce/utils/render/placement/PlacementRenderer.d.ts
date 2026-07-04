@@ -14,7 +14,7 @@ import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
  * Modules that want to provide a color not set in here can simply extend this class, register all settings except for
  * the color settings, and override the color getters as needed.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:42}
  */
 export class PlacementRenderer extends ToggleableValueGroup {
     constructor(name: string, enabled: boolean, module: EventListener, keep: boolean, clump: boolean, defaultColor: Color4b)
@@ -36,7 +36,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
     /**
      * Only run when the module and this is enabled or out-animations are running.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L190 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:190}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L190 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:190}
      */
     readonly running: boolean;
     readonly startSize: number;
@@ -49,7 +49,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
      * @param pos The position, can be {@link BlockPos.MutableBlockPos}.
      * @param handlerId To which handler the block should be added.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L103 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:103}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L103 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:103}
      */
     addBlock(pos: BlockPos, update: boolean, box: AABB, handlerId: number): void;
     /**
@@ -58,7 +58,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
      *
      * Performed on all handlers in this renderer.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L167 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:167}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L167 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:167}
      */
     clearSilently(): void;
     /**
@@ -66,7 +66,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
      *
      * @param id The handler requesting the color.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L198 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:198}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L198 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:198}
      */
     getColor(id: number): Color4b;
     /**
@@ -74,7 +74,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
      *
      * @param id The handler requesting the color.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L205 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:205}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L205 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:205}
      */
     getOutlineColor(id: number): Color4b;
     onDisabled(): void;
@@ -84,7 +84,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
      * @param pos The position, can be {@link BlockPos.MutableBlockPos}.
      * @param handlerId From which handler the block should be removed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:119}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:119}
      */
     removeBlock(pos: BlockPos, handlerId: number): void;
     /**
@@ -95,7 +95,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
      *
      * @param handlerId On which handler the update should be performed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:136}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:136}
      */
     updateAll(handlerId: number): void;
     /**
@@ -105,7 +105,7 @@ export class PlacementRenderer extends ToggleableValueGroup {
      *
      * @param handlerId On which handler the update should be performed.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0a21163cac7d7e3736ae038e79bf85f09f24d875/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:152}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderer.kt:152}
      */
     updateBox(pos: BlockPos, box: AABB, handlerId: number): void;
 }

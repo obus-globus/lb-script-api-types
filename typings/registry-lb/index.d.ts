@@ -2032,6 +2032,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.Render3DKt": typeof import("../types/net/ccbluex/liquidbounce/render/Render3DKt").Render3DKt;
     "net.ccbluex.liquidbounce.render.RenderPassExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/render/RenderPassExtensionsKt").RenderPassExtensionsKt;
     "net.ccbluex.liquidbounce.render.RenderShortcutsKt": typeof import("../types/net/ccbluex/liquidbounce/render/RenderShortcutsKt").RenderShortcutsKt;
+    "net.ccbluex.liquidbounce.render.RenderTypeExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/render/RenderTypeExtensionsKt").RenderTypeExtensionsKt;
     "net.ccbluex.liquidbounce.render.StaticGpuBufferPool": typeof import("../types/net/ccbluex/liquidbounce/render/StaticGpuBufferPool").StaticGpuBufferPool;
     "net.ccbluex.liquidbounce.render.StaticGpuBufferPool$Pool": typeof import("../types/net/ccbluex/liquidbounce/render/StaticGpuBufferPool$Pool").StaticGpuBufferPool$Pool;
     "net.ccbluex.liquidbounce.render.VertexBuilderKt": typeof import("../types/net/ccbluex/liquidbounce/render/VertexBuilderKt").VertexBuilderKt;
