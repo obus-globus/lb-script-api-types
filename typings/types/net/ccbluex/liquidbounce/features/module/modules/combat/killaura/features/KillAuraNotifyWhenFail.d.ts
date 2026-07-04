@@ -1,6 +1,6 @@
-import type { PoseStack } from '../../../../../../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { ObjectLongMutablePair } from '../../../../../../../../../it/unimi/dsi/fastutil/objects/ObjectLongMutablePair.d.ts'
 import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
+import type { WorldRenderEnvironment } from '../../../../../../../../../net/ccbluex/liquidbounce/render/WorldRenderEnvironment.d.ts'
 import type { Rotation } from '../../../../../../../../../net/ccbluex/liquidbounce/utils/aiming/data/Rotation.d.ts'
 import type { Entity } from '../../../../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { AABB } from '../../../../../../../../../net/minecraft/world/phys/AABB.d.ts'
@@ -13,5 +13,5 @@ export class KillAuraNotifyWhenFail extends Object {
     /*not mapped: */ getFailedHits$net_ccbluex_liquidbounce(): ObjectLongMutablePair<Vec3>[];
     failedHitsIncrement: number;
     notifyForFailedHit(entity: Entity, rotation: Rotation): void;
-    renderFailedHits(matrixStack: PoseStack): void;
+    renderFailedHits(env: WorldRenderEnvironment): void;
 }

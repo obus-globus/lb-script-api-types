@@ -16,7 +16,7 @@ import type { Priority } from '../../../../../net/ccbluex/liquidbounce/utils/kot
 /**
  * A rotation manager
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:62}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:62}
  */
 export class RotationManager extends Object implements EventListener {
     static INSTANCE: RotationManager;
@@ -26,13 +26,13 @@ export class RotationManager extends Object implements EventListener {
      * The value is not being written by the packets, but we gather the Rotation from the last yaw and pitch variables
      * from our player instance handled by the sendMovementPackets() function.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L108 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:108}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L108 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:108}
      */
     readonly actualServerRotation: Rotation;
     /**
      * The rotation we want to aim at. This DOES NOT mean that the server already received this rotation.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:79}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:79}
      */
     currentRotation: Rotation | null;
     // private /*not mapped: */ getFakeLagging(): boolean;
@@ -46,7 +46,7 @@ export class RotationManager extends Object implements EventListener {
      * sometimes we update the rotation off chain (e.g. on interactItem)
      * and the player.lastYaw and player.lastPitch are not updated.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L281 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:281}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L281 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:281}
      */
     readonly packetHandler: EventHook<PacketEvent>;
     playerRotation: Rotation | null;
@@ -65,7 +65,7 @@ export class RotationManager extends Object implements EventListener {
     /**
      * Checks if the rotation is allowed to be updated
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L145 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:145}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L145 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:145}
      */
     isRotatingAllowed(rotationTarget: RotationTarget): boolean;
     parent(): EventListener | null;
@@ -73,7 +73,7 @@ export class RotationManager extends Object implements EventListener {
     /**
      * Our final target rotation. This rotation is only used to define our current rotation.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:67}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:67}
      */
     setRotationTarget(plan: RotationTarget, priority: Priority, provider: ClientModule): void;
     setRotationTarget(rotation: Rotation, considerInventory: boolean, valueGroup: RotationsValueGroup, priority: Priority, provider: ClientModule, whenReached: RestrictedSingleUseAction | null): void;
@@ -81,7 +81,7 @@ export class RotationManager extends Object implements EventListener {
     /**
      * Update current rotation to a new rotation step
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:162}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt#L162 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt:162}
      */
     update(): void;
 }

@@ -12111,7 +12111,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 46
+          "line": 68
         }
       }
     ],
@@ -12121,7 +12121,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 57
+          "line": 79
         }
       }
     ],
@@ -12727,7 +12727,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 63
+          "line": 85
         }
       }
     ],
@@ -13287,7 +13287,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 34
+          "line": 36
         }
       }
     ],
@@ -13774,6 +13774,16 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.event.events.WorldRenderEvent.close": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
+          "line": 55
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.event.events.WorldRenderEvent.constructor": [
       {
         "params": [
@@ -13794,12 +13804,18 @@
             "type": "Float",
             "nullable": false,
             "vararg": false
+          },
+          {
+            "name": "renderTarget",
+            "type": "RenderTarget",
+            "nullable": false,
+            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-          "line": 37
+          "line": 39
         }
       }
     ],
@@ -25603,46 +25619,6 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraNotifyWhenFail.notifyForFailedHit": [
-      {
-        "params": [
-          {
-            "name": "entity",
-            "type": "Entity",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "rotation",
-            "type": "Rotation",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraNotifyWhenFail.kt",
-          "line": 70
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraNotifyWhenFail.renderFailedHits": [
-      {
-        "params": [
-          {
-            "name": "matrixStack",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraNotifyWhenFail.kt",
-          "line": 92
-        }
-      }
-    ],
     "net.ccbluex.liquidbounce.features.module.modules.combat.killaura.features.KillAuraRange.migrateFromValues": [
       {
         "params": [
@@ -25995,7 +25971,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/tpaura/modes/ImmediateMode.kt",
-          "line": 97
+          "line": 95
         }
       }
     ],
@@ -41847,16 +41823,178 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.forChams": [
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.beginFrameIfNeeded": [
       {
         "params": [],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-          "line": 46
-        },
-        "isExtension": true,
-        "receiver": "RenderPipeline.Builder"
+          "line": 143
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.compositeIfNeeded": [
+      {
+        "params": [
+          {
+            "name": "target",
+            "type": "RenderTarget",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 152
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.isHeldItemSubmit": [
+      {
+        "params": [
+          {
+            "name": "submit",
+            "type": "ItemFeatureRenderer.Submit",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 123
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.markHeldItemSubmitIfActive": [
+      {
+        "params": [
+          {
+            "name": "submit",
+            "type": "ItemFeatureRenderer.Submit",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 114
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.onDisabled": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 171
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapCurrentHeldItemRenderTypeIfNeeded": [
+      {
+        "params": [
+          {
+            "name": "renderType",
+            "type": "RenderType",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "RenderType",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 137
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapHeldItemRenderTypeIfNeeded": [
+      {
+        "params": [
+          {
+            "name": "submit",
+            "type": "ItemFeatureRenderer.Submit",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "renderType",
+            "type": "RenderType",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "RenderType",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 127
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapIfNeeded": [
+      {
+        "params": [
+          {
+            "name": "renderType",
+            "type": "RenderType",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "entity",
+            "type": "Entity?",
+            "nullable": true,
+            "vararg": false
+          }
+        ],
+        "returns": "RenderType",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 95
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.supports": [
+      {
+        "params": [
+          {
+            "name": "renderType",
+            "type": "RenderType",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 91
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.withHeldItemContext": [
+      {
+        "params": [
+          {
+            "name": "entity",
+            "type": "Entity?",
+            "nullable": true,
+            "vararg": false
+          },
+          {
+            "name": "block",
+            "type": "Runnable",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
+          "line": 105
+        }
       }
     ],
     "net.ccbluex.liquidbounce.features.module.modules.render.ModuleClickGui.invalidate": [
@@ -43548,7 +43686,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleRotations.kt",
-          "line": 132
+          "line": 129
         }
       }
     ],
@@ -61170,75 +61308,6 @@
         }
       }
     ],
-    "net.ccbluex.liquidbounce.render.BatchCollector.flush": [
-      {
-        "params": [
-          {
-            "name": "renderTarget",
-            "type": "RenderTarget",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "dynamicTransforms",
-            "type": "GpuBufferSlice",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 141
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.BatchCollector.key": [
-      {
-        "params": [
-          {
-            "name": "pipeline",
-            "type": "RenderPipeline",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "textures",
-            "type": "Map<String, AbstractTexture>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "uniforms",
-            "type": "Map<String, GpuBufferSlice>",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "RenderBufferKey",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 120
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.BatchCollector.start": [
-      {
-        "params": [
-          {
-            "name": "key",
-            "type": "RenderBufferKey",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "VertexConsumer",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 136
-        }
-      }
-    ],
     "net.ccbluex.liquidbounce.render.BoxVertexIterator.BoxVertexConsumer.invoke": [
       {
         "params": [
@@ -63523,107 +63592,6 @@
         "receiver": "GuiGraphicsExtractor.ScissorStack"
       }
     ],
-    "net.ccbluex.liquidbounce.render.Render3DKt.copyFrom": [
-      {
-        "params": [
-          {
-            "name": "source",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 396
-        },
-        "isExtension": true,
-        "receiver": "PoseStack"
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.Render3DKt.relativeTo": [
-      {
-        "params": [
-          {
-            "name": "camera",
-            "type": "Camera",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Vec3",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 404
-        },
-        "isExtension": true,
-        "receiver": "Vec3f"
-      },
-      {
-        "params": [
-          {
-            "name": "camera",
-            "type": "Camera",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Vec3",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 410
-        },
-        "isExtension": true,
-        "receiver": "Position"
-      },
-      {
-        "params": [
-          {
-            "name": "camera",
-            "type": "Camera",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Vec3",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 416
-        },
-        "isExtension": true,
-        "receiver": "Vec3i"
-      },
-      {
-        "params": [
-          {
-            "name": "camera",
-            "type": "Camera",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Vec3",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 422
-        },
-        "isExtension": true,
-        "receiver": "Vector3fc"
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.Render3DKt.requiresImmediateDrawInBatch": [
-      {
-        "params": [],
-        "returns": "Boolean",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 401
-        },
-        "isExtension": true,
-        "receiver": "RenderPipeline"
-      }
-    ],
     "net.ccbluex.liquidbounce.render.Render3DKt.translate": [
       {
         "params": [
@@ -63649,7 +63617,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 74
+          "line": 59
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -63666,7 +63634,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 77
+          "line": 62
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -63689,7 +63657,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 84
+          "line": 69
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -63708,7 +63676,7 @@
         "returns": "T",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 56
+          "line": 41
         }
       }
     ],
@@ -63725,39 +63693,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 65
+          "line": 50
         },
         "isExtension": true,
         "receiver": "PoseStack"
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.RenderBufferKey.constructor": [
-      {
-        "params": [
-          {
-            "name": "pipeline",
-            "type": "RenderPipeline",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "textures",
-            "type": "Map<String, AbstractTexture>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "uniforms",
-            "type": "Map<String, GpuBufferSlice>",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 104
-        }
       }
     ],
     "net.ccbluex.liquidbounce.render.RenderPassExtensionsKt.bindAndDraw": [
@@ -64149,7 +64088,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 349
+          "line": 323
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64186,7 +64125,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 410
+          "line": 384
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64223,7 +64162,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 426
+          "line": 400
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64248,7 +64187,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 575
+          "line": 549
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64279,7 +64218,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 598
+          "line": 572
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64316,7 +64255,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 174
+          "line": 152
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64353,7 +64292,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 159
+          "line": 137
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64390,7 +64329,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 133
+          "line": 111
         },
         "isExtension": true,
         "receiver": "RenderTarget"
@@ -64439,7 +64378,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 484
+          "line": 458
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64482,7 +64421,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 516
+          "line": 490
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64519,7 +64458,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 612
+          "line": 586
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64550,7 +64489,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 196
+          "line": 170
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64575,7 +64514,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 284
+          "line": 258
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64598,7 +64537,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 294
+          "line": 268
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64623,7 +64562,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 257
+          "line": 231
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64646,7 +64585,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 268
+          "line": 242
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64677,7 +64616,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 206
+          "line": 180
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64706,7 +64645,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 227
+          "line": 201
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64743,7 +64682,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 442
+          "line": 416
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64780,7 +64719,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 558
+          "line": 532
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64811,7 +64750,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 369
+          "line": 343
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64854,7 +64793,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 387
+          "line": 361
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64885,7 +64824,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 316
+          "line": 290
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64910,7 +64849,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 304
+          "line": 278
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -64947,39 +64886,15 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 338
+          "line": 312
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
       }
     ],
-    "net.ccbluex.liquidbounce.render.RenderShortcutsKt.renderEnvironmentForWorld": [
+    "net.ccbluex.liquidbounce.render.RenderShortcutsKt.renderEnvironment": [
       {
         "params": [
-          {
-            "name": "poseStack",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "renderTarget",
-            "type": "RenderTarget",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "mode",
-            "type": "DrawMode",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "camera",
-            "type": "Camera",
-            "nullable": false,
-            "vararg": false
-          },
           {
             "name": "draw",
             "type": "WorldRenderEnvironment.() -> Unit",
@@ -64990,8 +64905,10 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 86
-        }
+          "line": 78
+        },
+        "isExtension": true,
+        "receiver": "WorldRenderEvent"
       }
     ],
     "net.ccbluex.liquidbounce.render.RenderShortcutsKt.withPositionRelativeToCamera": [
@@ -65007,7 +64924,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 104
+          "line": 82
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -65042,7 +64959,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 111
+          "line": 89
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -65065,7 +64982,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 124
+          "line": 102
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
@@ -65088,10 +65005,29 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderShortcuts.kt",
-          "line": 130
+          "line": 108
         },
         "isExtension": true,
         "receiver": "WorldRenderEnvironment"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.RenderTypeExtensionsKt.withOutputTarget": [
+      {
+        "params": [
+          {
+            "name": "outputTarget",
+            "type": "OutputTarget",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "RenderSetup",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/RenderTypeExtensions.kt",
+          "line": 25
+        },
+        "isExtension": true,
+        "receiver": "RenderSetup"
       }
     ],
     "net.ccbluex.liquidbounce.render.VertexBuilderKt.addBoxFaces": [
@@ -65711,87 +65647,6 @@
         "receiver": "VertexConsumer"
       }
     ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.ActiveWorldFrame.constructor": [
-      {
-        "params": [
-          {
-            "name": "renderTarget",
-            "type": "RenderTarget",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "poseStack",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "camera",
-            "type": "Camera",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "collector",
-            "type": "BatchCollector",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 328
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.batch": [
-      {
-        "params": [
-          {
-            "name": "block",
-            "type": "WorldRenderEnvironment.() -> Unit",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 229
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.beginWorldFrame": [
-      {
-        "params": [
-          {
-            "name": "renderTarget",
-            "type": "RenderTarget",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "eventPoseStack",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "camera",
-            "type": "Camera",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 347
-        }
-      }
-    ],
     "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.constructor": [
       {
         "params": [
@@ -65818,130 +65673,12 @@
             "type": "BatchCollector",
             "nullable": false,
             "vararg": false
-          },
-          {
-            "name": "frameBoundCollector",
-            "type": "Boolean",
-            "nullable": false,
-            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 199
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.create": [
-      {
-        "params": [
-          {
-            "name": "renderTarget",
-            "type": "RenderTarget",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "poseStack",
-            "type": "PoseStack",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "camera",
-            "type": "Camera",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "WorldRenderEnvironment",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 371
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.drawImmediate": [
-      {
-        "params": [
-          {
-            "name": "key",
-            "type": "RenderBufferKey",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "meshData",
-            "type": "MeshData",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 306
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.endWorldFrame": [
-      {
-        "params": [],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 364
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.finish": [
-      {
-        "params": [
-          {
-            "name": "consumer",
-            "type": "VertexConsumer",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "submit",
-            "type": "Boolean",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 266
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.flushBatchIfLocalEnvironment": [
-      {
-        "params": [],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 283
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.immediate": [
-      {
-        "params": [
-          {
-            "name": "block",
-            "type": "WorldRenderEnvironment.() -> Unit",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 234
+          "line": 82
         }
       }
     ],
@@ -65958,7 +65695,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 214
+          "line": 91
         }
       },
       {
@@ -65973,7 +65710,7 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 219
+          "line": 100
         }
       },
       {
@@ -65988,7 +65725,22 @@
         "returns": "Vec3",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 224
+          "line": 109
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "pos",
+            "type": "Vector3fc",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Vec3",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
+          "line": 118
         }
       }
     ],
@@ -66014,33 +65766,10 @@
             "vararg": false
           }
         ],
-        "returns": "VertexConsumer",
+        "returns": "MeshBuildScope",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 241
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.WorldRenderEnvironment.withMode": [
-      {
-        "params": [
-          {
-            "name": "mode",
-            "type": "DrawMode",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "block",
-            "type": "WorldRenderEnvironment.() -> Unit",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt",
-          "line": 290
+          "line": 131
         }
       }
     ],
@@ -70054,6 +69783,213 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/gui/ItemImageAtlas.kt",
           "line": 212
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.BuiltDraw.compareTo": [
+      {
+        "params": [
+          {
+            "name": "other",
+            "type": "BuiltDraw",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Int",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 55
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.BuiltDraw.constructor": [
+      {
+        "params": [
+          {
+            "name": "key",
+            "type": "RenderDrawKey",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "meshDraw",
+            "type": "MeshDraw",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "order",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 50
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.ConsolidatedMeshBuildScope.close": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 142
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.ConsolidatedMeshBuildScope.constructor": [
+      {
+        "params": [
+          {
+            "name": "consumer",
+            "type": "BufferBuilder",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 138
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.PendingDraw.constructor": [
+      {
+        "params": [
+          {
+            "name": "key",
+            "type": "RenderDrawKey",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "builder",
+            "type": "BufferBuilder",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "order",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "readyToBuild",
+            "type": "Boolean",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 43
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.SeparateMeshBuildScope.close": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 156
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.SeparateMeshBuildScope.constructor": [
+      {
+        "params": [
+          {
+            "name": "draw",
+            "type": "PendingDraw",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 148
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.clearBuilders": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 133
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.flush": [
+      {
+        "params": [
+          {
+            "name": "renderTarget",
+            "type": "RenderTarget",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "dynamicTransforms",
+            "type": "GpuBufferSlice",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 86
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollector.start": [
+      {
+        "params": [
+          {
+            "name": "key",
+            "type": "RenderDrawKey",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "MeshBuildScope",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 75
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.BatchCollectorKt.canConsolidateConsecutiveGeometry": [
+      {
+        "params": [],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/BatchCollector.kt",
+          "line": 171
+        },
+        "isExtension": true,
+        "receiver": "RenderPipeline"
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.mesh.MeshBuildScope.close": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshBuildScope.kt",
+          "line": 33
         }
       }
     ],

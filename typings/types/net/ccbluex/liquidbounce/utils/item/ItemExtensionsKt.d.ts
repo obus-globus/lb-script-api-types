@@ -18,7 +18,7 @@ export class ItemExtensionsKt extends Object {
      *
      * @docs https://minecraft.gamepedia.com/Commands/give
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:100}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L100 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:100}
      */
     static createItem(paramarg0: string, paramarg1: number): ItemStack;
     static createItem(paramarg0: ClientLevel, paramarg1: string): ItemStack;
@@ -30,7 +30,7 @@ export class ItemExtensionsKt extends Object {
      * @see net.minecraft.world.item.component.ItemAttributeModifiers
      * @see net.minecraft.world.entity.ai.attributes.AttributeInstance
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L208 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:208}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L208 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:208}
      */
     static getAttributeValue(paramarg0: DataComponentGetter, paramarg1: Holder<Attribute>): number;
     static getAttributeValue(paramarg0: DataComponentGetter, paramarg1: Holder<Attribute>, paramarg2: EquipmentSlot): number;
@@ -38,7 +38,7 @@ export class ItemExtensionsKt extends Object {
     /**
      * Get {@link Block} of inner item if it is {@link BlockItem}, or null if not
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L265 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:265}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L265 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:265}
      */
     static getBlock(itemStack: ItemStack): Block;
     /**
@@ -46,7 +46,7 @@ export class ItemExtensionsKt extends Object {
      * @see net.minecraft.world.entity.ai.attributes.Attributes.MINING_EFFICIENCY
      * @see net.minecraft.world.item.enchantment.LevelBasedValue.LevelsSquared
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L250 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:250}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L250 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:250}
      */
     static getDestroySpeedWithEnchantment(itemStack: ItemStack, state: BlockState): number;
     static getDurability(paramarg0: ItemStack): number;
@@ -60,7 +60,7 @@ export class ItemExtensionsKt extends Object {
      * @returns if this item stack has same {@link Item} and {@link net.minecraft.core.component.DataComponentPatch}
 with the other item stack
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L155 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:155}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L155 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:155}
      */
     static isMergeable(itemStack: ItemStack, other: ItemStack): boolean;
     /**
@@ -68,7 +68,7 @@ with the other item stack
      *
      * @see net.minecraft.client.multiplayer.MultiPlayerGameMode.handleCreativeModeItemAdd
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:119}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt#L119 | src/main/kotlin/net/ccbluex/liquidbounce/utils/item/ItemExtensions.kt:119}
      */
     static setInventoryItemCreative(localPlayer: LocalPlayer, slot: number, itemStack: ItemStack, animation: boolean): void;
     static toRegistryEntryOrNull(resourceKey: ResourceKey<Enchantment>): Holder<Enchantment>;

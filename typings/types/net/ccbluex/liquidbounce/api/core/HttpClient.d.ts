@@ -15,7 +15,7 @@ export class HttpClient extends Object {
     /**
      * Unfortunately, Lunar Client uses OkHttp 4.12.0 which does not have {@link Headers.EMPTY}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:93}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:93}
      * @deprecated Use Headers.EMPTY instead when Lunar Client updates OkHttp to 5.10 or newer.
      */
     static EMPTY_HEADERS: Pair<string, string>[];
@@ -23,7 +23,7 @@ export class HttpClient extends Object {
     /**
      * API client
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/707b7339b27ee1da75cb769c96b0d9d292d0a8ad/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L170 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:170}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L170 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:170}
      */
     static getClient(): OkHttpClient;
     static sendAsync(call: Call): CompletableFuture<Response>;
