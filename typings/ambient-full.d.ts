@@ -1,6 +1,6 @@
 // Full-typing entry: the ambient globals PLUS the complete Java.type string-literal
 // registry, in a single reference. With this on, every `Java.type("fully.Qualified.Name")`
-// is typed straight from the string — no per-handle casts and no separate registry
+// is typed straight from the string - no per-handle casts and no separate registry
 // opt-in:
 //
 //     // tsconfig: "types": ["@wunk/lb-script-api-types/ambient-full"]

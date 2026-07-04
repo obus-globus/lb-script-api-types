@@ -1,10 +1,10 @@
-// Phase 5.2 smoke test — verifies the augmentation cascade actually
+// Phase 5.2 smoke test - verifies the augmentation cascade actually
 // produces a real type for `event` inside a `ScriptModule.on(...)` handler.
 //
 // Two-sided assertion: if the void.d.ts cascade
 // were still active (or the augmentation barrel weren't being picked up),
 // `event` would collapse to `any` and the @ts-expect-error below would
-// no longer consume an error — that is the cascade-broken signal.
+// no longer consume an error - that is the cascade-broken signal.
 
 import type {} from '../augmentations/index.d.ts';
 import type { ScriptModule } from '../types/net/ccbluex/liquidbounce/script/bindings/features/ScriptModule.d.ts';
@@ -12,7 +12,7 @@ import type { AttackEntityEvent } from '../types/net/ccbluex/liquidbounce/event/
 import type { Entity } from '../types/net/minecraft/world/entity/Entity.d.ts';
 
 // Minimal compile-time type asserter. Avoids pulling in `tsd`/`expect-type`
-// as a workspace dep — equivalent guarantee, zero footprint.
+// as a workspace dep - equivalent guarantee, zero footprint.
 type Equals<A, B> =
     (<T>() => T extends A ? 1 : 2) extends (<T>() => T extends B ? 1 : 2)
         ? true
@@ -26,12 +26,12 @@ mc.on('attack', (event) => {
     // Positive #1: the overload picks AttackEntityEvent (not `any`).
     assertExactly<Equals<typeof event, AttackEntityEvent>>();
 
-    // Positive #2: chain past the overload pick into a real field — `event.entity`
+    // Positive #2: chain past the overload pick into a real field - `event.entity`
     // resolves to net.minecraft.world.entity.Entity.
     assertExactly<Equals<typeof event.entity, Entity>>();
 
     // Positive #3: a deep method on the chained type narrows correctly.
-    // Entity.getX() emits as `getX(): number` — must remain `number`.
+    // Entity.getX() emits as `getX(): number` - must remain `number`.
     expectType<number>(event.entity.getX());
     expectType<boolean>(event.entity.isAlive());
 
@@ -39,14 +39,14 @@ mc.on('attack', (event) => {
     // be a real compile error. If the cascade collapsed `event` to `any`,
     // `event.entity.getX()` would be `any`, this assignment would type-check,
     // and `@ts-expect-error` would itself become an unused-suppression error.
-    // @ts-expect-error — getX() returns number, not string
+    // @ts-expect-error - getX() returns number, not string
     const s: string = event.entity.getX();
     void s;
 
-    // Negative #2: a non-existent field must error. Same cascade signal —
+    // Negative #2: a non-existent field must error. Same cascade signal -
     // if `event.entity` were `any`, this property access would silently
     // succeed and the directive would be flagged as unused.
-    // @ts-expect-error — Entity has no `nonexistentFieldXyz` member
+    // @ts-expect-error - Entity has no `nonexistentFieldXyz` member
     const x = event.entity.nonexistentFieldXyz;
     void x;
 });
@@ -55,10 +55,10 @@ mc.on('attack', (event) => {
 // Before T-10, ScriptModule.d.ts shipped a generic
 //   on(eventName: string, handler: Value): void;
 // alongside the 122 narrowed overloads from the augmentation. TS overload
-// resolution iterates all signatures and picks the first match — the
+// resolution iterates all signatures and picks the first match - the
 // generic accepted ANY string, so `mod.on("attck", ...)` typo'd silently.
 // T-10 strips the generic overload; only the augmentation's literal-name
 // overloads remain. If this @ts-expect-error stops consuming an error,
 // the generic overload has crept back in (regression).
-// @ts-expect-error — "definitely_not_a_real_event_xyz" is not a known event name
+// @ts-expect-error - "definitely_not_a_real_event_xyz" is not a known event name
 mc.on('definitely_not_a_real_event_xyz', () => {});

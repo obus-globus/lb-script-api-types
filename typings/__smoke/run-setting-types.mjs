@@ -1,4 +1,4 @@
-// Smoke runner for setting-types.test.ts — mirrors run.mjs but targets the
+// Smoke runner for setting-types.test.ts - mirrors run.mjs but targets the
 // Phase 5.3.1 intRange type smoke test.
 //
 // Run: node packages/script-api-types/__smoke/run-setting-types.mjs
@@ -62,7 +62,7 @@ console.log(`smoke: ${ours.length} in-file diagnostic(s), ${outOfTree} out-of-tr
 
 if (ok) {
     console.log(
-        "OK: setting-types.test.ts compiles cleanly — intRange() has struct shape, " +
+        "OK: setting-types.test.ts compiles cleanly - intRange() has struct shape, " +
         "not (Object | null)[]. @ts-expect-error consumed a real error.",
     );
     process.exit(0);

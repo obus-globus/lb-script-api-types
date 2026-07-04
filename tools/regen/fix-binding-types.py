@@ -7,7 +7,7 @@ Found while building NodeFlow (obus-globus/lb-nodeflow, docs/09-type-gen-fixes):
       (Vec3/Mth/InteractionHand/Axis appear twice) -> dedupe.
   F2  PolyglotScript category JSDoc lists a non-existent "Client" category
       (ModuleCategories has only 8; "Client" NPEs at runtime) -> drop it.
-  F4  REVERSED (2026-06-09): SilentHotbar is NOT a runtime global — no
+  F4  REVERSED (2026-06-09): SilentHotbar is NOT a runtime global - no
       `putMember("SilentHotbar", ...)` exists anywhere in LiquidBounce (verified
       at pin b759cac57 and at nextgen HEAD). The old F4 *added* an ambient
       `export const SilentHotbar`, which typechecked code that throws
@@ -28,9 +28,9 @@ Found while building NodeFlow (obus-globus/lb-nodeflow, docs/09-type-gen-fixes):
       `localStorage` degraded to `any` (or, with lib.dom loaded, silently
       resolved to DOM Storage). Replace the import with an inline
       ScriptLocalStorage facade matching the Java Map surface.
-  F9  `Axis` / `RotationAxis` are bound as `Axis::class.java` — a host CLASS
+  F9  `Axis` / `RotationAxis` are bound as `Axis::class.java` - a host CLASS
       handle whose usable surface is the static constants XN/XP/YN/YP/ZN/ZP
-      (+ static of(Vector3f)) — but ts-defgen types them as the *instance*
+      (+ static of(Vector3f)) - but ts-defgen types them as the *instance*
       interface (only rotation()/rotationDegrees()). Retype both as an
       AxisClassHandle facade exposing the statics.
 
@@ -105,7 +105,7 @@ amb_text = re.sub(
 if amb_text != _before:
     changed.append("F4 removed fictional SilentHotbar global")
 
-# --- F8: localStorage — replace the broken ConcurrentHashMap import with an
+# --- F8: localStorage - replace the broken ConcurrentHashMap import with an
 # honest facade. The generator imports java/util/concurrent/ConcurrentHashMap,
 # which it never emits (JDK classes are off the scanned classpath), so the
 # import is unresolvable and localStorage silently loses its type.
@@ -119,7 +119,7 @@ amb_text = re.sub(
 if F8_BEGIN not in amb_text:
     facade = f"""    {F8_BEGIN}
     /**
-     * The shared script storage — at runtime a Java
+     * The shared script storage - at runtime a Java
      * `ConcurrentHashMap<String, Any>` bound by `ScriptContextProvider`
      * (NOT the DOM `localStorage` / Web Storage API). Java `Map` member
      * access: `get`/`put`/`remove`/..., values are arbitrary host or guest
@@ -153,7 +153,7 @@ amb_text = amb_text.replace(
 if amb_text != _before:
     changed.append("F8 localStorage facade")
 
-# --- F9: Axis / RotationAxis — class-handle facade with the static constants.
+# --- F9: Axis / RotationAxis - class-handle facade with the static constants.
 # Runtime binds `Axis::class.java`; the usable surface is Axis.XP/.YP/... and
 # Axis.of(Vector3f), none of which exist on the generated instance interface.
 F9_BEGIN = "// F9: Axis class-handle facade begin"
@@ -210,10 +210,10 @@ amb_text = amb_text.replace(
 if amb_text != _before:
     changed.append("F9 Axis/RotationAxis class-handle facade")
 
-# --- F10: class-value bindings — statics live behind `.static` ---------------
+# --- F10: class-value bindings - statics live behind `.static` ---------------
 # `putMember(name, X::class.java)` hands scripts a raw java.lang.Class VALUE.
 # Verified in a live client (GraalJS nashorn-compat): `new X(...)` constructs
-# directly, but `X.MAIN_HAND` / `X.clamp(...)` are UNDEFINED — statics (incl.
+# directly, but `X.MAIN_HAND` / `X.clamp(...)` are UNDEFINED - statics (incl.
 # enum constants) are only reachable via `X.static.<member>`. The plain
 # `typeof X_` typing claimed direct statics, so e.g. `Hand.MAIN_HAND`
 # typechecked and silently passed undefined at runtime. Rewrite every
@@ -232,7 +232,7 @@ if bindings_sidecar.exists():
     /**
      * A raw `java.lang.Class` value bound into the script context. Under
      * GraalJS nashorn-compat it constructs directly (`new BlockPos(1, 2, 3)`),
-     * but STATIC members — including enum constants — are only reachable via
+     * but STATIC members - including enum constants - are only reachable via
      * `.static`: `Hand.static.MAIN_HAND`, `MathHelper.static.clamp(...)`.
      * Direct static access returns `undefined` at runtime. `.static` also
      * carries the full constructor-overload set: `new (BlockPos.static)(...)`.
@@ -255,16 +255,16 @@ if bindings_sidecar.exists():
     if amb_text != _before:
         changed.append(f"F10 .static class bindings ({len(class_binding_names)})")
 else:
-    print("fix-binding-types: F10 skipped — no runtime-bindings.json yet", file=sys.stderr)
+    print("fix-binding-types: F10 skipped - no runtime-bindings.json yet", file=sys.stderr)
 
-# --- F11: typed Java.type — string-literal registry overload ----------------
+# --- F11: typed Java.type - string-literal registry overload ----------------
 # Ambient declares an EMPTY JavaTypeRegistry merge target + an overload that
 # maps class-name literals through it. Zero cost / no behavior change by
 # default (keyof {} = never, calls fall through to the generic overload);
 # the generated registry-lb / registry-full packages populate it when a
 # consumer opts in via tsconfig "types". Works for plain-JS users through
 # the editor language service.
-F11_IFACE = """    /** Merge target for the optional Java.type string-literal registry —
+F11_IFACE = """    /** Merge target for the optional Java.type string-literal registry -
      *  add "@wunk/lb-script-api-types/registry-lb" (or registry-full) to your
      *  tsconfig/jsconfig "types" to populate it. Empty by default: zero
      *  compile cost; Java.type falls back to the generic overload. */

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-apply-deprecations — W2 post-patch.
+apply-deprecations - W2 post-patch.
 
 Injects `@deprecated <message>` TSDoc onto declarations carrying a Kotlin
 `@Deprecated(...)` annotation, using the manifest produced by
@@ -13,7 +13,7 @@ the types. This recovers them from source.
 
 Behaviour:
   * If the target declaration already has a TSDoc block, merge a
-    `@deprecated` line into it (before the closing `*​/`), unless one is
+    `@deprecated` line into it (before the closing `*/`), unless one is
     already present (idempotent).
   * Otherwise, prepend a fresh `/** @deprecated <message> */` block.
 
@@ -138,7 +138,7 @@ def inject(text: str, pattern: re.Pattern[str], entry: dict) -> tuple[str, bool]
             close_idx = i
         break
     if close_idx is not None and "/**" in lines[close_idx]:
-        # One-line `/** doc */` — expand it; inserting above the line would
+        # One-line `/** doc */` - expand it; inserting above the line would
         # land the @deprecated outside the comment.
         if "@deprecated" in lines[close_idx]:
             return text, False
@@ -152,9 +152,9 @@ def inject(text: str, pattern: re.Pattern[str], entry: dict) -> tuple[str, bool]
             repl.append(f"{ind} */")
             lines[close_idx:close_idx + 1] = repl
             return "\n".join(lines) + text[decl_start:], True
-        close_idx = None  # malformed one-liner — fall through to a new block
+        close_idx = None  # malformed one-liner - fall through to a new block
     if close_idx is not None:
-        # Existing block — find its `/**` opener; a plain `/* ... */` comment
+        # Existing block - find its `/**` opener; a plain `/* ... */` comment
         # is NOT a doc block (inserting into it would emit a parse error).
         j = close_idx
         while j >= 0 and "/**" not in lines[j]:
@@ -172,7 +172,7 @@ def inject(text: str, pattern: re.Pattern[str], entry: dict) -> tuple[str, bool]
         block_indent = (re.match(r"[ \t]*", lines[close_idx]).group(0))[:-1] or indent
         lines.insert(close_idx, dep_line(entry, block_indent))
         return "\n".join(lines) + text[decl_start:], True
-    # No block — create one.
+    # No block - create one.
     new_block = f"{indent}/**\n{dep_line(entry, indent)}\n{indent} */\n"
     return text[:decl_start] + new_block + text[decl_start:], True
 
@@ -185,7 +185,7 @@ def main(argv: list[str]) -> int:
 
     types_root = args.pkg_root.resolve() / "types"
     if not types_root.is_dir():
-        print(f"apply-deprecations: skip — {types_root} not a directory", file=sys.stderr)
+        print(f"apply-deprecations: skip - {types_root} not a directory", file=sys.stderr)
         return 0
 
     doc = json.loads(args.deprecations.read_text(encoding="utf-8"))

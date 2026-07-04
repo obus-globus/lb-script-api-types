@@ -5,12 +5,12 @@
 # Why: T-1 (in ts-defgen.js) auto-detects classes implementing
 # java.util.function.Function and emits the export as `Type_['apply']` which
 # IS callable but exposes the raw Java parameter shape (typically
-# Map<String, Object> → `{ [key: string]: Object }`). For a small number of
+# Map<String, Object> -> `{ [key: string]: Object }`). For a small number of
 # script-API entry points the parameter is a runtime contract with named
 # keys; we narrow the parameter type here so users get autocomplete on
 # those keys.
 #
-# This is intentionally a tiny, explicit, idempotent overlay — NOT a general
+# This is intentionally a tiny, explicit, idempotent overlay - NOT a general
 # patcher. Each refinement is scoped to one named binding.
 #
 # Idempotency: every transform is a no-op when its target line already
@@ -68,7 +68,7 @@ already_have_polyglot_import = import_new in src
 
 if import_old in src:
     if already_have_polyglot_import:
-        # PolyglotScript already imported elsewhere — just drop the
+        # PolyglotScript already imported elsewhere - just drop the
         # RegisterScript line, preserving the surrounding newline.
         src = src.replace(import_old + "\n", "")
     else:
@@ -118,9 +118,9 @@ PY
 #     val module = ScriptModule(this, moduleObject)
 #     callback.accept(module)
 #
-# There is no static signal for this — the type promotion must be expressed
+# There is no static signal for this - the type promotion must be expressed
 # as an overlay. We also narrow the descriptor parameter to the runtime
-# contract { name; category; …extras } so authors get autocomplete on the
+# contract { name; category; ...extras } so authors get autocomplete on the
 # two required keys.
 python3 - "$PKG_ROOT/types/net/ccbluex/liquidbounce/script/PolyglotScript.d.ts" <<'PY'
 import re, sys
@@ -128,7 +128,7 @@ from pathlib import Path
 
 path = Path(sys.argv[1])
 if not path.exists():
-    print(f"post-patches: skipping P-02 — {path} not found", file=sys.stderr)
+    print(f"post-patches: skipping P-02 - {path} not found", file=sys.stderr)
     sys.exit(0)
 
 src = path.read_text()
@@ -153,7 +153,7 @@ if script_module_import not in src:
         src = src[:end] + "\n" + script_module_import + src[end:]
     else:
         print(
-            "post-patches: WARNING P-02 — no ClientModule import found in "
+            "post-patches: WARNING P-02 - no ClientModule import found in "
             "PolyglotScript.d.ts; ScriptModule import not added",
             file=sys.stderr,
         )
@@ -198,8 +198,8 @@ PY
 #
 # Same shape as registerModule: the Kotlin signature is
 # `registerMode(ModeValueGroup<Mode>, Map<String, Any>, Consumer<Mode>)` but at
-# runtime the callback receives a ScriptMode — PolyglotScript.kt does
-# `ScriptMode(modeObject, modeValueGroup).apply { callback.accept(this) }` — so
+# runtime the callback receives a ScriptMode - PolyglotScript.kt does
+# `ScriptMode(modeObject, modeValueGroup).apply { callback.accept(this) }` - so
 # the handler should see a ScriptMode (the polyglot proxy with the script-mode
 # helpers), not a bare Mode. registerChoice delegates to registerMode, so it
 # yields a ScriptMode too. We also relax the descriptor's Object index to
@@ -210,7 +210,7 @@ from pathlib import Path
 
 path = Path(sys.argv[1])
 if not path.exists():
-    print(f"post-patches: skipping P-02b — {path} not found", file=sys.stderr)
+    print(f"post-patches: skipping P-02b - {path} not found", file=sys.stderr)
     sys.exit(0)
 
 src = path.read_text()
@@ -261,7 +261,7 @@ else:
     print(f"post-patches: refined {path.name} (P-02b: registerMode/registerChoice)")
 
 # Sanity (same post-hoc assertion as P-01/P-02): the refined forms must be
-# present afterwards — if upstream reshaped/renamed the methods, fail loudly
+# present afterwards - if upstream reshaped/renamed the methods, fail loudly
 # instead of silently shipping un-narrowed callbacks.
 final = path.read_text()
 for fn in ("registerMode", "registerChoice"):
@@ -288,7 +288,7 @@ PY
 # when the user's own code is clean.
 #
 # Strategy: ONLY transform identifiers that are unambiguously in parameter
-# position — preceded by `(` or `, ` and followed by `?: ` or `: `. Append a
+# position - preceded by `(` or `, ` and followed by `?: ` or `: `. Append a
 # single `_` to disambiguate from the keyword. Idempotent because the
 # renamed form (e.g. `null_`) no longer matches the pattern.
 python3 - "$PKG_ROOT/types" <<'PY'
@@ -297,7 +297,7 @@ from pathlib import Path
 
 types_root = Path(sys.argv[1])
 if not types_root.is_dir():
-    print(f"post-patches: skipping T-3 — {types_root} not a directory", file=sys.stderr)
+    print(f"post-patches: skipping T-3 - {types_root} not a directory", file=sys.stderr)
     sys.exit(0)
 
 # Reserved words that cannot be used as identifiers in TS strict mode.
@@ -308,7 +308,7 @@ RESERVED = (
     "with|implements|interface|let|package|private|protected|public|static|"
     "yield|await"
 )
-# Note: `this` is intentionally excluded — TypeScript supports a typed
+# Note: `this` is intentionally excluded - TypeScript supports a typed
 # `this` parameter in function signatures (`(this: T, ...) => R`) which
 # T-7 relies on, and no real Java/Kotlin parameter is ever named `this`
 # at the bytecode level, so excluding it is also a no-op for raw output.
@@ -352,7 +352,7 @@ for path in types_root.rglob("*.d.ts"):
             parts[i] = new_segment
             file_subs += n
     if file_subs:
-        # Re-interleave: parts[0] + comments[0] + parts[1] + comments[1] + …
+        # Re-interleave: parts[0] + comments[0] + parts[1] + comments[1] + ...
         rebuilt = []
         for i, p in enumerate(parts):
             rebuilt.append(p)
@@ -364,7 +364,7 @@ for path in types_root.rglob("*.d.ts"):
 
 elapsed = time.time() - start
 print(
-    f"post-patches: T-3 renamed reserved-word params — "
+    f"post-patches: T-3 renamed reserved-word params - "
     f"{total_subs} substitutions across {changed_files}/{total_files} files "
     f"({elapsed:.1f}s)"
 )
@@ -392,7 +392,7 @@ if marker_begin in src:
     sys.exit(0)
 
 block = f'''{marker_begin}
-    // Truffle/GraalVM host-provided globals — exposed to every polyglot
+    // Truffle/GraalVM host-provided globals - exposed to every polyglot
     // script but invisible to `Object.entries(globalThis)`. See:
     //   https://www.graalvm.org/jdk25/reference-manual/js/JavaInteroperability/
     //   https://www.graalvm.org/jdk25/reference-manual/polyglot-programming/
@@ -419,7 +419,7 @@ block = f'''{marker_begin}
         asJSONCompatible(obj: any): any;
     }}
     const Java: JavaIntrinsic;
-    /** GraalVM polyglot bindings — shared key/value space across languages. */
+    /** GraalVM polyglot bindings - shared key/value space across languages. */
     interface PolyglotIntrinsic {{
         import<T = unknown>(name: string): T;
         export<T>(name: string, value: T): void;
@@ -456,7 +456,7 @@ new_src, n = re.subn(
 )
 if n == 0:
     print(
-        f"post-patches: WARNING T-4 — `declare global {{` not found in {path.name}; "
+        f"post-patches: WARNING T-4 - `declare global {{` not found in {path.name}; "
         "GraalVM intrinsics not injected",
         file=sys.stderr,
     )
@@ -469,7 +469,7 @@ PY
 # T-5: PolyglotScript.on() literal-string overloads. The Kotlin signature
 # is `on(eventName: String, handler: Runnable)` (which the generator emits
 # as `on(eventName: string, handler: () => void): void`). Only three
-# event names are ever dispatched: "load", "enable", "disable" — see
+# event names are ever dispatched: "load", "enable", "disable" - see
 # PolyglotScript.kt callGlobalEvent() callers. Adding string-literal
 # overloads gives autocomplete on those names and rejects typos. The
 # generic string fallback is preserved as the last overload so power-users
@@ -480,7 +480,7 @@ from pathlib import Path
 
 path = Path(sys.argv[1])
 if not path.exists():
-    print(f"post-patches: skipping T-5 — {path} not found", file=sys.stderr)
+    print(f"post-patches: skipping T-5 - {path} not found", file=sys.stderr)
     sys.exit(0)
 
 src = path.read_text()
@@ -496,14 +496,14 @@ old_line = re.compile(
 replacement = (
     f'{overload_block_marker}\n'
     f'    /** @deprecated Only "load" | "enable" | "disable" are dispatched '
-    f'by PolyglotScript — see `callGlobalEvent` in PolyglotScript.kt. Use the '
+    f'by PolyglotScript - see `callGlobalEvent` in PolyglotScript.kt. Use the '
     f'literal-overload above for editor autocomplete. */\n'
     f'    on(eventName: string, handler: () => void): void;'
 )
 new_src, n = old_line.subn(replacement, src, count=1)
 if n == 0:
     print(
-        f"post-patches: WARNING T-5 — generic on() signature not found in {path.name}",
+        f"post-patches: WARNING T-5 - generic on() signature not found in {path.name}",
         file=sys.stderr,
     )
     sys.exit(0)
@@ -525,7 +525,7 @@ from pathlib import Path
 
 path = Path(sys.argv[1])
 if not path.exists():
-    print(f"post-patches: skipping T-6 — {path} not found", file=sys.stderr)
+    print(f"post-patches: skipping T-6 - {path} not found", file=sys.stderr)
     sys.exit(0)
 
 src = path.read_text()
@@ -591,7 +591,7 @@ for method, refined in SIGS:
     indented = "    " + refined
     if indented in src:
         continue  # idempotent
-    # Match: `    <method>(value: Value): <return>;` — generated form. The
+    # Match: `    <method>(value: Value): <return>;` - generated form. The
     # param type may be aliased (`Value_2`) by the W12b import-collision fix
     # when the file imports two `Value` types, so tolerate a `_N` suffix.
     raw_pat = re.compile(
@@ -614,13 +614,13 @@ else:
 PY
 
 # -----------------------------------------------------------------------------
-# T-7 — DSL receiver lambda: ValueGroup.curve
+# T-7 - DSL receiver lambda: ValueGroup.curve
 # -----------------------------------------------------------------------------
 # Kotlin signature:
 #   inline fun curve(name: String, block: CurveValue.Builder.() -> Unit): CurveValue
 # Generated TS:
 #   curve(name: string, block: Function1<CurveValue$Builder, void>): CurveValue;
-# Function1 is an interface with an `invoke` method — TS callers can't pass an
+# Function1 is an interface with an `invoke` method - TS callers can't pass an
 # arrow function. The receiver (`this` inside block) is lost entirely.
 #
 # Refined to a TS function type with `this`-parameter binding so callers can
@@ -638,8 +638,8 @@ src = path.read_text()
 refined = "    curve(name: string, block: (this: CurveValue$Builder) => void): CurveValue;"
 
 # Match the generator's curve(block) param in either form: the nominal
-# `Function1<CurveValue$Builder, void>` or — since the W5a function-type-arrow
-# change — the arrow `(param0: CurveValue$Builder) => void`. Rewrite the block
+# `Function1<CurveValue$Builder, void>` or - since the W5a function-type-arrow
+# change - the arrow `(param0: CurveValue$Builder) => void`. Rewrite the block
 # to a receiver-typed lambda so `this` is `CurveValue$Builder` inside.
 raw_pat = re.compile(
     r"^[ \t]*curve\(name: string, block: "
@@ -656,15 +656,15 @@ else:
         path.write_text(src)
         print(f"post-patches: T-7 refined ValueGroup.curve in {path.name}")
     else:
-        print(f"post-patches: T-7 skip — raw curve signature not found in {path.name}")
+        print(f"post-patches: T-7 skip - raw curve signature not found in {path.name}")
 PY
 fi
 
 # -----------------------------------------------------------------------------
-# T-Doc (Phase A POC) — inject TSDoc comments on a curated set of high-traffic
+# T-Doc (Phase A POC) - inject TSDoc comments on a curated set of high-traffic
 # script-facing methods so authors get docstring tooltips in VS Code without
 # having to read Kotlin source. This is a manual seed; the eventual fix
-# (Issue #11) is a kdoc-extractor → ts-generator pipeline that automates the
+# (Issue #11) is a kdoc-extractor -> ts-generator pipeline that automates the
 # whole surface. For now, hard-coding the highest-traffic ~5 endpoints proves
 # the rendering pathway works and gives immediate UX lift.
 #
@@ -678,8 +678,8 @@ from pathlib import Path
 root = Path(sys.argv[1])
 
 # Each entry: (relative file path under root,
-#              marker — the exact line we anchor before,
-#              docstring text — already wrapped in /** ... */ with leading indent)
+#              marker - the exact line we anchor before,
+#              docstring text - already wrapped in /** ... */ with leading indent)
 # Idempotency: skip if the docstring's first line is already present
 # directly above the marker.
 
@@ -691,7 +691,7 @@ DOCS = [
         "    export const registerScript: (scriptObject: { name: string; version: string; authors: string[] }) => PolyglotScript_;",
         """    /**
      * Registers a new script with LiquidBounce. **Must be called exactly once**
-     * at the top level of every script — the return value is your script
+     * at the top level of every script - the return value is your script
      * handle (used to register modules, listen for lifecycle events, etc.).
      *
      * @param scriptObject Identity metadata for this script.
@@ -711,7 +711,7 @@ DOCS = [
      * script.on("load", () => print("loaded"));
      * ```
      *
-     * Source: `PolyglotScript.kt` — `RegisterScript.apply`, KDoc.
+     * Source: `PolyglotScript.kt` - `RegisterScript.apply`, KDoc.
      */""",
     ),
     # PolyglotScript.registerModule
@@ -739,10 +739,10 @@ DOCS = [
      * });
      * ```
      *
-     * Source: `PolyglotScript.kt:213` — KDoc on `fun registerModule`.
+     * Source: `PolyglotScript.kt:213` - KDoc on `fun registerModule`.
      */""",
     ),
-    # PolyglotScript.on — literal-event overload (the narrow one only; the
+    # PolyglotScript.on - literal-event overload (the narrow one only; the
     # @deprecated fallback already has a comment so we leave it alone).
     (
         "types/net/ccbluex/liquidbounce/script/PolyglotScript.d.ts",
@@ -751,13 +751,13 @@ DOCS = [
      * Binds a handler to one of this script's lifecycle events.
      *
      * @param eventName Lifecycle event to listen for:
-     *   - `"load"` — fired once when LiquidBounce finishes loading this
+     *   - `"load"` - fired once when LiquidBounce finishes loading this
      *               script source (before any module registration takes
      *               effect). Use it for one-time global setup.
-     *   - `"enable"` — fired every time the user enables this script in
+     *   - `"enable"` - fired every time the user enables this script in
      *                 the script manager (after `load`, and after each
      *                 hot-reload).
-     *   - `"disable"` — fired when the user disables / unloads this
+     *   - `"disable"` - fired when the user disables / unloads this
      *                  script. Use it to release resources, unbind
      *                  external listeners, etc.
      * @param handler Zero-argument callback. None of the three lifecycle
@@ -769,7 +769,7 @@ DOCS = [
      * script.on("disable", () => print("bye"));
      * ```
      *
-     * Source: `PolyglotScript.kt:282` — KDoc on `fun on`; payload shape
+     * Source: `PolyglotScript.kt:282` - KDoc on `fun on`; payload shape
      * confirmed by `callGlobalEvent` call sites.
      */""",
     ),
@@ -796,11 +796,11 @@ DOCS = [
      * });
      * ```
      *
-     * Source: `ValueGroup.kt:502` — inline DSL builder. (Method has no
+     * Source: `ValueGroup.kt:502` - inline DSL builder. (Method has no
      * KDoc in upstream; this docstring is authored locally.)
      */""",
     ),
-    # ScriptSetting.boolean — pick one factory as POC; the others can be
+    # ScriptSetting.boolean - pick one factory as POC; the others can be
     # auto-generated later by the kdoc-extractor pipeline.
     (
         "types/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.d.ts",
@@ -819,7 +819,7 @@ DOCS = [
      * if (loud.get()) print("loud!");
      * ```
      *
-     * Source: `ScriptSetting.kt:43` — `fun boolean(value: PolyglotValue)`,
+     * Source: `ScriptSetting.kt:43` - `fun boolean(value: PolyglotValue)`,
      * reads the `name` and `default` members. Class-level KDoc states
      * "Object used by the script API to provide an idiomatic way of
      * creating module values."
@@ -857,10 +857,10 @@ print(
 PY
 
 # -----------------------------------------------------------------------------
-# T-Doc Phase C — automated KDoc → TSDoc injection from
+# T-Doc Phase C - automated KDoc -> TSDoc injection from
 # tools/kdoc-extractor/manifest.json. Adds TSDoc blocks to all classes and
 # members where KDoc exists in the LiquidBounce source. Skips any
-# declaration that already has a /** … */ block (which preserves the
+# declaration that already has a /** ... */ block (which preserves the
 # hand-curated Phase A docs).
 #
 # The manifest is committed to git alongside the extractor so this step is
@@ -886,43 +886,43 @@ if [ "$SKIP_KDOC_EFF" == "1" ]; then
     echo "post-patches: T-Doc-Phase-C skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
 elif [ -f "$MANIFEST" ] && [ -f "$APPLY_SCRIPT" ]; then
     python3 "$APPLY_SCRIPT" "$PKG_ROOT" "$MANIFEST" || \
-        { echo "post-patches: ERROR — apply-kdoc CRASHED (continuing; TSDoc missing)" >&2; POSTPATCH_FAILED=1; }
+        { echo "post-patches: ERROR - apply-kdoc CRASHED (continuing; TSDoc missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: T-Doc-Phase-C skipped (manifest or apply script missing)"
 fi
 
-# W3 — hand-authored event-class docs. A SECOND apply-kdoc pass over a curated
+# W3 - hand-authored event-class docs. A SECOND apply-kdoc pass over a curated
 # overlay manifest documents the event classes LiquidBounce's source leaves
 # undocumented (117/121). apply-kdoc skips any class that already carries a doc
 # block, so the pass above (real upstream KDoc) always wins and this only fills
-# genuine gaps — an overlay entry self-retires once LB documents that class.
+# genuine gaps - an overlay entry self-retires once LB documents that class.
 # Version-independent (no source line refs), so it runs whenever KDoc is on.
 EVENT_OVERLAY="$REPO_ROOT/tools/regen/event-docs-overlay.json"
 if [ "$SKIP_KDOC_EFF" == "1" ]; then
     echo "post-patches: W3 event-class overlay skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
 elif [ -f "$EVENT_OVERLAY" ] && [ -f "$APPLY_SCRIPT" ]; then
     python3 "$APPLY_SCRIPT" "$PKG_ROOT" "$EVENT_OVERLAY" || \
-        { echo "post-patches: ERROR — apply-kdoc (event overlay) CRASHED (continuing; event docs missing)" >&2; POSTPATCH_FAILED=1; }
+        { echo "post-patches: ERROR - apply-kdoc (event overlay) CRASHED (continuing; event docs missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: W3 event-class overlay skipped (overlay or apply script missing)"
 fi
 
 # Hand-authored docs for the script-binding API surface (the Script* runtime
 # bindings + registerScript/PolyglotScript + ScriptModule). Same gap-filling,
-# upstream-wins, self-retiring overlay as the event pass above — a further
+# upstream-wins, self-retiring overlay as the event pass above - a further
 # apply-kdoc pass over a curated manifest, applied AFTER the extracted KDoc.
 BINDING_OVERLAY="$REPO_ROOT/tools/regen/binding-docs-overlay.json"
 if [ "$SKIP_KDOC_EFF" == "1" ]; then
     echo "post-patches: binding-API overlay skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
 elif [ -f "$BINDING_OVERLAY" ] && [ -f "$APPLY_SCRIPT" ]; then
     python3 "$APPLY_SCRIPT" "$PKG_ROOT" "$BINDING_OVERLAY" || \
-        { echo "post-patches: ERROR — apply-kdoc (binding overlay) CRASHED (continuing; binding docs missing)" >&2; POSTPATCH_FAILED=1; }
+        { echo "post-patches: ERROR - apply-kdoc (binding overlay) CRASHED (continuing; binding docs missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: binding-API overlay skipped (overlay or apply script missing)"
 fi
 
 # -----------------------------------------------------------------------------
-# #12b — real parameter names. ts-generator emits JVM-erased placeholders
+# #12b - real parameter names. ts-generator emits JVM-erased placeholders
 # (`paramarg0`, `paramarg1`, ...). apply-signatures.py rewrites them to the
 # real source names from the committed signatures manifest, using
 # conservative arity-unique matching (a wrong name is worse than an obvious
@@ -935,13 +935,13 @@ if [ "$SKIP_PARAM_NAMES_EFF" == "1" ]; then
     echo "post-patches: param-name rename skipped (SKIP_PARAM_NAMES/SKIP_SOURCE_ENRICHMENT)"
 elif [ -f "$SIGNATURES" ] && [ -f "$SIG_SCRIPT" ]; then
     python3 "$SIG_SCRIPT" "$PKG_ROOT" "$SIGNATURES" || \
-        { echo "post-patches: ERROR — apply-signatures CRASHED (continuing; param names missing)" >&2; POSTPATCH_FAILED=1; }
+        { echo "post-patches: ERROR - apply-signatures CRASHED (continuing; param names missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: param-name rename skipped (signatures or apply script missing)"
 fi
 
 # -----------------------------------------------------------------------------
-# W2 — @deprecated. The reflection generator doesn't surface Kotlin's
+# W2 - @deprecated. The reflection generator doesn't surface Kotlin's
 # @Deprecated annotation; apply-deprecations.py injects @deprecated TSDoc from
 # the committed deprecations manifest (source-derived, so gated under the same
 # doc-enrichment toggle as KDoc). Runs after apply-kdoc so it can merge into
@@ -952,13 +952,13 @@ if [ "$SKIP_KDOC_EFF" == "1" ]; then
     echo "post-patches: @deprecated skipped (SKIP_KDOC/SKIP_SOURCE_ENRICHMENT)"
 elif [ -f "$DEPRECATIONS" ] && [ -f "$DEP_SCRIPT" ]; then
     python3 "$DEP_SCRIPT" "$PKG_ROOT" "$DEPRECATIONS" || \
-        { echo "post-patches: ERROR — apply-deprecations CRASHED (continuing; @deprecated missing)" >&2; POSTPATCH_FAILED=1; }
+        { echo "post-patches: ERROR - apply-deprecations CRASHED (continuing; @deprecated missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: @deprecated skipped (deprecations or apply script missing)"
 fi
 
 # -----------------------------------------------------------------------------
-# W4 — document the ScriptModule.on() event overloads. apply-event-docs.py adds
+# W4 - document the ScriptModule.on() event overloads. apply-event-docs.py adds
 # `@see {@link <Event>}` (read off the overload itself, so it's purely structural
 # and runs even under SKIP_KDOC) + a one-line summary from the KDoc manifest
 # (passed only when KDoc is enabled, so summaries drop but @see survives).
@@ -971,13 +971,13 @@ if [ -f "$EVENTDOC_SCRIPT" ]; then
     [ "$SKIP_KDOC_EFF" != "1" ] && [ -f "$MANIFEST" ] && EVENTDOC_MANIFESTS+=("$MANIFEST")
     [ "$SKIP_KDOC_EFF" != "1" ] && [ -f "$EVENT_OVERLAY" ] && EVENTDOC_MANIFESTS+=("$EVENT_OVERLAY")
     python3 "$EVENTDOC_SCRIPT" "$PKG_ROOT" ${EVENTDOC_MANIFESTS[@]+"${EVENTDOC_MANIFESTS[@]}"} || \
-        { echo "post-patches: ERROR — apply-event-docs CRASHED (continuing; on() docs missing)" >&2; POSTPATCH_FAILED=1; }
+        { echo "post-patches: ERROR - apply-event-docs CRASHED (continuing; on() docs missing)" >&2; POSTPATCH_FAILED=1; }
 else
     echo "post-patches: on() event docs skipped (apply script missing)"
 fi
 
 # -----------------------------------------------------------------------------
-# T-9 — kotlin.Any? nullable-suffix bleed (Issue #10)
+# T-9 - kotlin.Any? nullable-suffix bleed (Issue #10)
 # -----------------------------------------------------------------------------
 # ts-generator emits Kotlin's `Any?` (nullable Any) verbatim, including the
 # trailing `?`. In TypeScript this is:
@@ -985,7 +985,7 @@ fi
 #   - Invalid in property-initializer position: `: kotlin.Any?[];` ->
 #     TS1442/TS1144 (parser reads `?` as start of conditional/optional).
 #   - Mostly tolerated in function-return position (parser treats as
-#     conditional-type prefix and bails), but still semantically wrong —
+#     conditional-type prefix and bails), but still semantically wrong -
 #     authors get no autocomplete on the returned value.
 #
 # Replace every `kotlin.Any?` (with or without trailing `[]`) with
@@ -1002,7 +1002,7 @@ from pathlib import Path
 
 types_root = Path(sys.argv[1])
 if not types_root.is_dir():
-    print(f"post-patches: T-9 skip — {types_root} not a directory", file=sys.stderr)
+    print(f"post-patches: T-9 skip - {types_root} not a directory", file=sys.stderr)
     sys.exit(0)
 
 PAT = re.compile(r"\bkotlin\.Any\?(\[\])?")
@@ -1024,20 +1024,20 @@ for path in types_root.rglob("*.d.ts"):
         changed_files += 1
 
 print(
-    f"post-patches: T-9 replaced kotlin.Any? -> unknown — "
+    f"post-patches: T-9 replaced kotlin.Any? -> unknown - "
     f"{total_subs} substitutions across {changed_files}/{total_files} files"
 )
 PY
 
 # ----------------------------------------------------------------------
-# T-10 — strip ScriptModule.on(eventName: string, ...) so the 122 narrowed
+# T-10 - strip ScriptModule.on(eventName: string, ...) so the 122 narrowed
 # overloads in augmentations/ScriptModule.augmentation.d.ts can actually
 # take effect. (Resolves Issue #7.)
 #
 # Root cause: ts-generator emits `on(eventName: string, handler: Value):
 # void` directly on `ScriptModule` from the Kotlin source. The augmentation
-# barrel (`augmentations/index.d.ts` → `ScriptModule.augmentation.d.ts`)
-# does load — it `declare module`s the interface and adds 122 narrowed
+# barrel (`augmentations/index.d.ts` -> `ScriptModule.augmentation.d.ts`)
+# does load - it `declare module`s the interface and adds 122 narrowed
 # overloads. But TS overload resolution iterates all known signatures and
 # accepts the first match; the generic `(eventName: string, ...)` accepts
 # any string, so typos like `mod.on("attck", ...)` silently typecheck and
@@ -1045,8 +1045,8 @@ PY
 #
 # Fix: remove the generic overload. The augmentation's overloads remain
 # the only signatures for `.on(...)`, so:
-#   - `mod.on("attack", e => ...)`  → e: AttackEntityEvent (already worked)
-#   - `mod.on("attck", ...)`        → TS2769: name not assignable (now)
+#   - `mod.on("attack", e => ...)`  -> e: AttackEntityEvent (already worked)
+#   - `mod.on("attck", ...)`        -> TS2769: name not assignable (now)
 #
 # The augmentation also covers `"enable" | "disable"` so the lifecycle
 # events still resolve correctly.
@@ -1059,7 +1059,7 @@ from pathlib import Path
 
 target = Path(sys.argv[1])
 if not target.is_file():
-    print(f"post-patches: T-10 skip — {target} not found", file=sys.stderr)
+    print(f"post-patches: T-10 skip - {target} not found", file=sys.stderr)
     sys.exit(0)
 
 text = target.read_text(encoding="utf-8")
@@ -1070,17 +1070,17 @@ new_text, n = PAT.subn(
 )
 
 if n == 0:
-    print("post-patches: T-10 no-op (no base on() found — augmentation may already be sole signature)")
+    print("post-patches: T-10 no-op (no base on() found - augmentation may already be sole signature)")
 elif n == 1:
     target.write_text(new_text, encoding="utf-8")
     print("post-patches: T-10 stripped base ScriptModule.on(eventName: string, handler: Value)")
 else:
-    print(f"post-patches: T-10 unexpected — matched {n} times; aborting to avoid corruption", file=sys.stderr)
+    print(f"post-patches: T-10 unexpected - matched {n} times; aborting to avoid corruption", file=sys.stderr)
     sys.exit(1)
 PY
 
 # ----------------------------------------------------------------------
-# T-#7 augmentation barrel sanity — keep augmentations/index.d.ts
+# T-#7 augmentation barrel sanity - keep augmentations/index.d.ts
 # loading the ScriptModule augmentation as a side effect. Without this,
 # the 122 narrowed `on(...)` overloads never reach the ambient surface.
 # Idempotent: writes only if missing or empty.
@@ -1088,7 +1088,7 @@ AUG_INDEX="$PKG_ROOT/augmentations/index.d.ts"
 if [[ -d "$PKG_ROOT/augmentations" ]]; then
     if [[ ! -s "$AUG_INDEX" ]] || ! grep -q "ScriptModule.augmentation" "$AUG_INDEX"; then
         cat > "$AUG_INDEX" <<'AUG'
-// Augmentation barrel — side-effect import wires the augmentation files
+// Augmentation barrel - side-effect import wires the augmentation files
 // into the ambient module so the typed-event overloads merge with the
 // ScriptModule interface. Keep as side-effect imports (not re-exports);
 // the augmentation files have no values to re-export.
@@ -1113,7 +1113,7 @@ fi
 # W-#18 ClientLevel.getEntities re-expose.
 #
 # `mc.level` is typed as `ClientLevel`, which overrides `getEntities` with
-# a single 0-arg form — shadowing the four useful overloads from the
+# a single 0-arg form - shadowing the four useful overloads from the
 # parent `Level`. ts-gen emits the (correct) override but the result is
 # a frustrating ergonomics regression for script authors.
 #
@@ -1123,11 +1123,11 @@ fi
 AUG_CLIENTLEVEL="$PKG_ROOT/augmentations/ClientLevel.augmentation.d.ts"
 if [[ -d "$PKG_ROOT/augmentations" ]] && [[ ! -s "$AUG_CLIENTLEVEL" ]]; then
     cat > "$AUG_CLIENTLEVEL" <<'AUG'
-// ClientLevel augmentation — re-expose getEntities overloads.
+// ClientLevel augmentation - re-expose getEntities overloads.
 //
 // Problem: `mc.level` is typed as `ClientLevel` (a subclass of `Level`).
 // `ClientLevel` declares its own `getEntities(): LevelEntityGetter<Entity>`
-// which shadows the four other overloads from the parent `Level` —
+// which shadows the four other overloads from the parent `Level` -
 // in particular the script-author-friendly form
 //   `getEntities(except, AABB, selector)`
 // which TS rejects on `mc.level` even though it works at runtime.
@@ -1146,7 +1146,7 @@ if [[ -d "$PKG_ROOT/augmentations" ]] && [[ ! -s "$AUG_CLIENTLEVEL" ]]; then
 // overloaded methods (`onSyncedDataUpdated`) with fewer overloads,
 // making LocalPlayer structurally non-assignable to Entity (TS
 // overload variance is invariant on parameter list). The
-// `mc.level.getEntities(mc.player, …)` call is by far the most common
+// `mc.level.getEntities(mc.player, ...)` call is by far the most common
 // script pattern, so the union is worth its weight. See audit W19.
 
 import type { Entity } from '../types/net/minecraft/world/entity/Entity.d.ts';
@@ -1170,18 +1170,18 @@ fi
 # W-#12 ScriptReflectionUtil narrowing.
 #
 # ts-gen emits ScriptReflectionUtil methods with `Class<Object>` params
-# and `Object | null` returns (audit row W12 — reflection types leak).
+# and `Object | null` returns (audit row W12 - reflection types leak).
 # Scripts that know what they're asking for still get back raw Object.
 #
 # Fix: declaration-merge an interface onto ScriptReflectionUtil that adds
-# generic overloads — callers passing a typed Class<T> get back T | null.
+# generic overloads - callers passing a typed Class<T> get back T | null.
 # The original `Class<Object>` overloads remain (TS declaration merging
 # is additive); overload resolution picks the more-specific generic form
 # at the call site. Idempotent: only writes when missing.
 AUG_REFLECT="$PKG_ROOT/augmentations/ScriptReflectionUtil.augmentation.d.ts"
 if [[ -d "$PKG_ROOT/augmentations" ]] && [[ ! -s "$AUG_REFLECT" ]]; then
     cat > "$AUG_REFLECT" <<'AUG'
-// ScriptReflectionUtil augmentation — generic-typed overloads for reflection.
+// ScriptReflectionUtil augmentation - generic-typed overloads for reflection.
 //
 // Problem: ts-gen emits ScriptReflectionUtil methods with `Class<Object>`
 // parameters and `Object | null` returns (audit row W12). Scripts that
@@ -1201,11 +1201,11 @@ import type { Object } from '../types/java/lang/Object.d.ts';
 // Generic-parameter semantics:
 //   * `clazz: Class<T>` propagates ONLY when the return is an actual instance
 //     of T (i.e. `newInstance`). For `getDeclaredField` the return is the
-//     static field's value type, which has no relation to T — so the
+//     static field's value type, which has no relation to T - so the
 //     class parameter stays `Class<Object>` and the caller annotates the
 //     expected field-value type as `T` (same pattern as the existing
 //     invoke* overloads).
-//   * `obj: Object` stays `Object` everywhere — the object's runtime type
+//   * `obj: Object` stays `Object` everywhere - the object's runtime type
 //     does not constrain the field/return type the caller is asking for.
 //   * Where T appears in the return-type position only, it is unconstrained
 //     and acts as a caller-asserted cast. Same pattern as the existing
@@ -1229,7 +1229,7 @@ fi
 # ----------------------------------------------------------------------
 # T-#JS-1 fix typesVersions wildcard so `types/foo` resolves to
 # `./types/foo` instead of the doubled `./types/types/foo`. The upstream
-# NPMGen emits a single wildcard pattern `*` → ["./types/*",
+# NPMGen emits a single wildcard pattern `*` -> ["./types/*",
 # "./augmentations/*", "ambient/..."], which prefixes "types/" twice when
 # the import path already starts with "types/". Splitting into three
 # explicit key patterns (types/*, augmentations/*, ambient) lets users
@@ -1262,14 +1262,14 @@ PY
 fi
 
 # ---------------------------------------------------------------------------
-# Binding-type corrections (F1/F2/F4/F5/F6/F8/F9) — see fix-binding-types.py.
+# Binding-type corrections (F1/F2/F4/F5/F6/F8/F9) - see fix-binding-types.py.
 # Idempotent; runs late so it also cleans anything re-emitted above.
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/fix-binding-types.py" "$PKG_ROOT" || \
-  { echo "post-patches: ERROR — fix-binding-types.py CRASHED" >&2; POSTPATCH_FAILED=1; }
+  { echo "post-patches: ERROR - fix-binding-types.py CRASHED" >&2; POSTPATCH_FAILED=1; }
 
 # ---------------------------------------------------------------------------
-# F7 — field/method name collisions. Java lets a field and a method share a
+# F7 - field/method name collisions. Java lets a field and a method share a
 # name (Mojang `onGround` + `onGround()`, records, JOML math, Map.Entry); TS
 # forbids it and the field declaration silently shadows the method. Drop one
 # declaration per class so the survivor is usable (mutable field + pure getter
@@ -1277,41 +1277,41 @@ python3 "$(dirname "$0")/fix-binding-types.py" "$PKG_ROOT" || \
 # fix-member-collisions.py. (To be folded into the Kotlin generator next regen.)
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/fix-member-collisions.py" "$PKG_ROOT" || \
-  { echo "post-patches: ERROR — fix-member-collisions.py CRASHED" >&2; POSTPATCH_FAILED=1; }
+  { echo "post-patches: ERROR - fix-member-collisions.py CRASHED" >&2; POSTPATCH_FAILED=1; }
 
 # ---------------------------------------------------------------------------
-# S1-S3 — delete/repair generated files that are not valid TypeScript:
+# S1-S3 - delete/repair generated files that are not valid TypeScript:
 # package-info descriptors, unimportable `-Name` Kotlin file-facades, and
 # Kotlin function supertypes leaking into implements/extends clauses. See
 # sanitize-invalid-dts.py. Idempotent.
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/sanitize-invalid-dts.py" "$PKG_ROOT" || \
-  { echo "post-patches: ERROR — sanitize-invalid-dts.py CRASHED" >&2; POSTPATCH_FAILED=1; }
+  { echo "post-patches: ERROR - sanitize-invalid-dts.py CRASHED" >&2; POSTPATCH_FAILED=1; }
 
 # ---------------------------------------------------------------------------
-# Java.type string-literal registries (opt-in typed Java.type) — generated
+# Java.type string-literal registries (opt-in typed Java.type) - generated
 # from the sanitized tree so deleted/repaired files never get entries. See
 # generate-java-type-registry.py; the ambient overload is F11.
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/generate-java-type-registry.py" "$PKG_ROOT" || \
-  { echo "post-patches: ERROR — generate-java-type-registry.py CRASHED" >&2; POSTPATCH_FAILED=1; }
+  { echo "post-patches: ERROR - generate-java-type-registry.py CRASHED" >&2; POSTPATCH_FAILED=1; }
 
 # ---------------------------------------------------------------------------
-# Ambient runtime contract — ambient.d.ts exports must match the runtime
+# Ambient runtime contract - ambient.d.ts exports must match the runtime
 # bindings ts-defgen dumped from the live client (runtime-bindings.json), and
 # the hand-written facades (Axis, ScriptLocalStorage) must only promise
 # members the runtime classes actually have. SKIPs when the sidecar is absent.
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/check-ambient-contract.py" "$PKG_ROOT" || \
-  { echo "post-patches: ERROR — ambient/runtime contract mismatch" >&2; POSTPATCH_FAILED=1; }
+  { echo "post-patches: ERROR - ambient/runtime contract mismatch" >&2; POSTPATCH_FAILED=1; }
 
 # ---------------------------------------------------------------------------
-# Failure gate — LAST, after every patch step. A crashed step above only sets
+# Failure gate - LAST, after every patch step. A crashed step above only sets
 # POSTPATCH_FAILED so the remaining steps still run; the regen then fails
 # once, loudly, with every error visible.
 # ---------------------------------------------------------------------------
 if [[ "$POSTPATCH_FAILED" == "1" ]]; then
-  echo "post-patches: FAILED — one or more patch steps crashed (see ERROR lines above); the output is INCOMPLETE." >&2
+  echo "post-patches: FAILED - one or more patch steps crashed (see ERROR lines above); the output is INCOMPLETE." >&2
   exit 1
 fi
 

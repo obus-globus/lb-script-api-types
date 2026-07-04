@@ -33,7 +33,7 @@ if [[ ! -x "$PY" ]]; then
 fi
 
 if [[ ! -d "$LB_DIR/src/main/kotlin" ]]; then
-    echo "FAIL: $LB_DIR has no src/main/kotlin — run ./fetch-references.sh first" >&2
+    echo "FAIL: $LB_DIR has no src/main/kotlin - run ./fetch-references.sh first" >&2
     exit 2
 fi
 
@@ -41,7 +41,7 @@ echo "Extracting KDocs from $LB_DIR ..." >&2
 "$PY" "$EXTRACT" --project "$LB_DIR" --out "$OUT"
 echo "Manifest written to $OUT" >&2
 
-# Record which LB SHA this manifest reflects — run-regen.sh compares it to the
+# Record which LB SHA this manifest reflects - run-regen.sh compares it to the
 # checkout and auto-refreshes after a pin bump (the .manifest-sha is shared with
 # refresh-signatures.sh; whichever runs last wins, both read $LB_DIR).
 git -C "$LB_DIR" rev-parse HEAD > "$(dirname "$OUT")/.manifest-sha" 2>/dev/null || true

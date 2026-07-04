@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-apply-event-docs — W4 post-patch.
+apply-event-docs - W4 post-patch.
 
 Adds a TSDoc block to each generated `ScriptModule.on(eventName, handler)`
 overload in `augmentations/ScriptModule.augmentation.d.ts`:
@@ -71,7 +71,7 @@ def main(argv: list[str]) -> int:
 
     aug = args.pkg_root.resolve() / AUG_REL
     if not aug.is_file():
-        print(f"apply-event-docs: skip — {aug} not found", file=sys.stderr)
+        print(f"apply-event-docs: skip - {aug} not found", file=sys.stderr)
         return 0
 
     docs: dict[str, str] = {}

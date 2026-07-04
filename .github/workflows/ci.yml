@@ -1,11 +1,11 @@
 name: typecheck
 
-# Gates for the committed types tree — no regeneration / JVM / Xvfb involved.
+# Gates for the committed types tree - no regeneration / JVM / Xvfb involved.
 #   typecheck: surface smoke tests + whole-package syntax ratchet +
 #              import-resolution + semantic surface check (see
 #              docs/typecheck-gate.md).
 #   package-canary: npm-packs typings/ and compiles a probe consumer against
-#              the installed tarball with a stock tsconfig — catches
+#              the installed tarball with a stock tsconfig - catches
 #              files-glob / typesVersions / silent-any packaging breakage.
 
 on:
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        # The generator submodule is not needed — the gate runs against the
+        # The generator submodule is not needed - the gate runs against the
         # committed typings/ tree.
         with:
           submodules: false
@@ -57,5 +57,5 @@ jobs:
       - name: Install tooling
         run: npm ci --ignore-scripts
 
-      - name: Packaging canary (pack → install → consumer tsc)
+      - name: Packaging canary (pack -> install -> consumer tsc)
         run: npm run canary

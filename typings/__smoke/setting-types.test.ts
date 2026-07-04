@@ -1,4 +1,4 @@
-// Phase 5.3.1 smoke test — verifies IntRange no longer collapses to
+// Phase 5.3.1 smoke test - verifies IntRange no longer collapses to
 // `(Object | null)[]` in the generated ScriptSetting types.
 //
 // Two-sided assertion: if the predefinedMappings fix were absent, intRange()
@@ -6,7 +6,7 @@
 // `start`/`endInclusive`/`step` would cause TS2339 errors that are NOT
 // wrapped in @ts-expect-error, causing the smoke to fail.
 // If the fix regresses, the @ts-expect-error below would stop consuming
-// a real error (TS2578 surfacing) — also a failure.
+// a real error (TS2578 surfacing) - also a failure.
 
 import type {} from '../augmentations/index.d.ts';
 import type { ScriptSetting } from '../types/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.d.ts';
@@ -24,7 +24,7 @@ const _step: number = v.step;
 
 // Negative: `length` is a property of an array but NOT of the struct shape.
 // This @ts-expect-error would become unused (TS2578) if we regress to the
-// array type — that's the regression detection signal.
-// @ts-expect-error TS2339 — `length` is not a property of the struct
+// array type - that's the regression detection signal.
+// @ts-expect-error TS2339 - `length` is not a property of the struct
 const _bad = v.length;
 

@@ -1,6 +1,6 @@
 name: Publish to npm
 
-# Publishes the typings/ package (@wunk/lb-script-api-types). Types-only —
+# Publishes the typings/ package (@wunk/lb-script-api-types). Types-only -
 # no build step. Version is `<lb-major>.<lb-minor>.<lb-patch*1000 + scriptBuild>`:
 # major.minor track the LiquidBounce release line, the patch slot packs LB's own
 # patch (high digits) plus our script-api build (low 3 digits) - see
@@ -63,13 +63,13 @@ jobs:
         run: |
           if npm view "${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }}" version >/dev/null 2>&1; then
             echo "published=true" >> "$GITHUB_OUTPUT"
-            echo "::notice::${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }} already on npm — bump the LB pin / version to publish a new one."
+            echo "::notice::${{ steps.pkg.outputs.name }}@${{ steps.pkg.outputs.version }} already on npm - bump the LB pin / version to publish a new one."
           else
             echo "published=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Publish
-        # Authenticated via OIDC trusted publishing (no token) — needs the
+        # Authenticated via OIDC trusted publishing (no token) - needs the
         # id-token: write permission above + a trusted publisher configured on
         # npmjs.com. npm also attaches build provenance automatically.
         if: >-

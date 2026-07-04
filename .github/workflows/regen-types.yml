@@ -1,12 +1,12 @@
 name: Regenerate script-api types
 
-# Runs the WHOLE type-generation flow (build generator → headless LiquidBounce
-# introspection → apply-kdoc + fix-binding → promote) inside the regen container,
+# Runs the WHOLE type-generation flow (build generator -> headless LiquidBounce
+# introspection -> apply-kdoc + fix-binding -> promote) inside the regen container,
 # then opens a PR if the committed typings/ changed.
 #
 # NOTE: the flow launches a real Minecraft client headlessly (~50-60 min on Mesa
 # softpipe) and downloads several GB of Gradle/MC deps. GitHub-hosted runners are
-# resource-constrained (2 vCPU / ~14 GB disk) — this may be slow or run out of
+# resource-constrained (2 vCPU / ~14 GB disk) - this may be slow or run out of
 # disk; a larger or self-hosted runner is recommended for routine use. The Gradle
 # cache is persisted across runs to skip the re-downloads.
 on:
@@ -54,11 +54,11 @@ jobs:
         run: |
           # tools/regen-output/ is gitignored and this workflow restores no
           # artifact into it, so on a fresh hosted runner skip_regen can only
-          # fail — catch it here, before the image build + LB clone burn
+          # fail - catch it here, before the image build + LB clone burn
           # minutes. To use skip_regen, run on a self-hosted runner with the
           # output present (or add an artifact-restore step).
           if [ ! -d "tools/regen-output/@ccbluex/liquidbounce-script-api" ]; then
-            echo "::error::skip_regen=true but tools/regen-output/ is empty — nothing to re-promote on this runner." >&2
+            echo "::error::skip_regen=true but tools/regen-output/ is empty - nothing to re-promote on this runner." >&2
             exit 1
           fi
 
@@ -96,7 +96,7 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No changes to typings/ — generator reproduced the committed tree."
+            echo "No changes to typings/ - generator reproduced the committed tree."
           fi
 
       - name: Open PR with regenerated types

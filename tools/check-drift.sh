@@ -51,7 +51,7 @@ upstream_ids="$(extract "$upstream")"
 local_ids="$(extract "$(cat "$local_file")")"
 
 # Bindings we intentionally omit in the headless runner (Minecraft value
-# types — scripts that need them get an L4-UNBOUND-MC-TYPES info diagnostic).
+# types - scripts that need them get an L4-UNBOUND-MC-TYPES info diagnostic).
 intentional_omissions=$(printf "Vec3i\nVec3d\nBlockPos\nHand\nRotationAxis\nMathHelper\nregisterScript\n")
 
 missing="$(comm -23 <(echo "$upstream_ids") <(echo "$local_ids") | grep -vxF "$intentional_omissions" || true)"
@@ -67,7 +67,7 @@ fi
 # Also diff the Graal Context.Builder option set between our HeadlessScript
 # (reimpl of PolyglotScript) and upstream PolyglotScript at the pinned SHA.
 # Upstream changing its security posture (allowNativeAccess, allowIO, ...)
-# is material — we want a heads-up.
+# is material - we want a heads-up.
 upstream_ps_path="src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt"
 upstream_ps=$(cd "$lb" && git show "$sha:$upstream_ps_path" 2>/dev/null || true)
 local_ps="$repo/tools/script-runner/src/main/kotlin/net/ccbluex/scriptrunner/HeadlessScript.kt"

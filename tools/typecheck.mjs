@@ -1,36 +1,36 @@
-// typecheck.mjs — the CI typecheck gate for @wunk/lb-script-api-types.
+// typecheck.mjs - the CI typecheck gate for @wunk/lb-script-api-types.
 //
 // Four independent checks, all run; the process fails if any fails.
 //
-//   Part A — surface smoke tests.
+//   Part A - surface smoke tests.
 //     Compiles every typings/__smoke/*.test.ts and asserts ZERO diagnostics
 //     originate in the test file. Because the tests use `@ts-expect-error`,
 //     a *missing* error surfaces as TS2578 ("unused @ts-expect-error") IN the
-//     file — so "zero in-file diagnostics" simultaneously verifies the
+//     file - so "zero in-file diagnostics" simultaneously verifies the
 //     positive type assertions hold AND every negative assertion still errors.
 //     This is the high-value check: it exercises the real script-author
 //     surface (typed on() overloads, ScriptSetting factories, DSL receivers,
 //     GraalVM intrinsics, registerScript, registerMode) end to end.
 //
-//   Part B — whole-package syntactic ratchet.
+//   Part B - whole-package syntactic ratchet.
 //     Parses EVERY shipped .d.ts (types/ + ambient/ + augmentations/) and
-//     collects *syntactic* diagnostics (parse errors — no type checking).
-//     Frozen in __smoke/syntax-baseline.json (currently EMPTY — the
+//     collects *syntactic* diagnostics (parse errors - no type checking).
+//     Frozen in __smoke/syntax-baseline.json (currently EMPTY - the
 //     sanitize-invalid-dts post-patch keeps the tree parse-clean); the gate
 //     fails on NEW parse errors anywhere in the package.
 //
-//   Part C — relative-import resolution. Zero tolerance.
-//     Every `from './…'` specifier in the package must resolve to a real
+//   Part C - relative-import resolution. Zero tolerance.
+//     Every `from './...'` specifier in the package must resolve to a real
 //     file. A broken relative import is invisible under consumers'
 //     skipLibCheck and silently degrades the imported type to `any` (this is
 //     how the TitleEvent payloads and localStorage shipped untyped).
 //
-//   Part D — semantic surface check (skipLibCheck:false).
+//   Part D - semantic surface check (skipLibCheck:false).
 //     Type-checks the script-author surface (ambient, augmentations, script
 //     bindings, event payloads) with full semantics. Errors IN those files
 //     are ratcheted as exact entries; errors in transitively-loaded generated
 //     files (the kotlin.*-leak long tail) are ratcheted as per-TS-code counts
-//     in __smoke/semantic-baseline.json — the debt can only shrink.
+//     in __smoke/semantic-baseline.json - the debt can only shrink.
 //
 // Run:  npm run typecheck                  (from repo root)
 //       npm run typecheck:update-baseline  (re-freeze the B + D baselines)
@@ -63,7 +63,7 @@ const BASELINE = path.join(SMOKE_DIR, "syntax-baseline.json");
 const UPDATE_BASELINE = process.argv.includes("--update-baseline");
 // --tighten: like a normal check (growth still FAILS), but when debt shrank,
 // rewrite the baselines to the smaller current set. Safe to run
-// unconditionally after a regen — unlike --update-baseline, it can never
+// unconditionally after a regen - unlike --update-baseline, it can never
 // freeze a regression in.
 const TIGHTEN = process.argv.includes("--tighten");
 
@@ -87,7 +87,7 @@ function walk(dir, pred, acc = []) {
 }
 
 // ---------------------------------------------------------------------------
-// Part A — surface smoke tests
+// Part A - surface smoke tests
 // ---------------------------------------------------------------------------
 function partA() {
     const tsconfigPath = path.join(SMOKE_DIR, "tsconfig.json");
@@ -98,7 +98,7 @@ function partA() {
     }
     const parsed = ts.parseJsonConfigFileContent(cfg.config, ts.sys, SMOKE_DIR);
     if (parsed.errors && parsed.errors.length) {
-        console.error(`  FAIL — ${parsed.errors.length} tsconfig error(s) (gate cannot trust the result):`);
+        console.error(`  FAIL - ${parsed.errors.length} tsconfig error(s) (gate cannot trust the result):`);
         for (const d of parsed.errors) console.error(`      ${fmt(d)}`);
         return { ok: false, ran: 0 };
     }
@@ -111,11 +111,11 @@ function partA() {
     // A green no-op gate would be worse than a red one: if the tests ever stop
     // matching, fail loudly rather than report "0 clean".
     if (tests.length === 0) {
-        console.error(`  FAIL — no *.test.ts found in ${path.relative(REPO, SMOKE_DIR)}`);
+        console.error(`  FAIL - no *.test.ts found in ${path.relative(REPO, SMOKE_DIR)}`);
         return { ok: false, ran: 0 };
     }
 
-    // One program over all test files — they're independent modules, so a
+    // One program over all test files - they're independent modules, so a
     // diagnostic is attributed to whichever test file it lives in.
     const program = ts.createProgram({ rootNames: tests, options: parsed.options });
     const all = ts.getPreEmitDiagnostics(program);
@@ -123,12 +123,12 @@ function partA() {
     let ok = true;
 
     // Fileless diagnostics (bad tsconfig option/lib, etc.) aren't attributable
-    // to a test file but mean the program never type-checked correctly — they'd
+    // to a test file but mean the program never type-checked correctly - they'd
     // otherwise be silently dropped and the gate would pass green.
     const fileless = all.filter((d) => !d.file);
     if (fileless.length) {
         ok = false;
-        console.error(`  FAIL — ${fileless.length} project-level diagnostic(s) (gate cannot trust the result):`);
+        console.error(`  FAIL - ${fileless.length} project-level diagnostic(s) (gate cannot trust the result):`);
         for (const d of fileless) console.error(`      ${fmt(d)}`);
     }
 
@@ -137,7 +137,7 @@ function partA() {
         const rel = path.relative(REPO, test);
         if (mine.length) {
             ok = false;
-            console.error(`  FAIL ${rel} — ${mine.length} diagnostic(s):`);
+            console.error(`  FAIL ${rel} - ${mine.length} diagnostic(s):`);
             for (const d of mine) console.error(`      ${fmt(d)}`);
         } else {
             console.error(`  ok   ${rel}`);
@@ -147,16 +147,16 @@ function partA() {
 }
 
 // ---------------------------------------------------------------------------
-// Parts B + C — whole-package syntactic ratchet + import-resolution scan.
+// Parts B + C - whole-package syntactic ratchet + import-resolution scan.
 // One pass: every shipped .d.ts (types/ + ambient/ + augmentations/) is read
 // once, parsed for syntax errors (B) and its relative import specifiers
 // resolved against the filesystem (C). Part B is baselined (ratchet); Part C
-// is zero-tolerance — a broken relative import silently degrades the imported
+// is zero-tolerance - a broken relative import silently degrades the imported
 // type to `any` for every skipLibCheck consumer, which is how the TitleEvent
 // payloads and localStorage shipped untyped.
 // ---------------------------------------------------------------------------
 // Both static `from "..."` and dynamic-import TYPE specifiers
-// (`typeof import("...")` — the Java.type registries are built from these).
+// (`typeof import("...")` - the Java.type registries are built from these).
 const IMPORT_SPEC = /(?:from\s+|import\()\s*['"]([^'"]+)['"]/g;
 
 function partBC() {
@@ -203,7 +203,7 @@ function partBC() {
         const fixed = [...baseline].filter((e) => !current.has(e));
         if (novel.length) {
             ok = false;
-            console.error(`  FAIL — ${novel.length} NEW parse error(s) in the package (${files.length} files):`);
+            console.error(`  FAIL - ${novel.length} NEW parse error(s) in the package (${files.length} files):`);
             for (const e of novel.slice(0, 40)) console.error(`      ${e}`);
             console.error(`  (if intentional, re-freeze with: npm run typecheck:update-baseline)`);
         } else {
@@ -212,9 +212,9 @@ function partBC() {
         if (fixed.length) {
             if (TIGHTEN && !novel.length) {
                 writeFileSync(BASELINE, JSON.stringify(sorted, null, 2) + "\n");
-                console.error(`  tightened — ${fixed.length} fixed entr(ies) removed from the syntax baseline`);
+                console.error(`  tightened - ${fixed.length} fixed entr(ies) removed from the syntax baseline`);
             } else {
-                console.error(`  note — ${fixed.length} baselined error(s) no longer present; ` +
+                console.error(`  note - ${fixed.length} baselined error(s) no longer present; ` +
                     `tighten with: npm run typecheck:update-baseline`);
             }
         }
@@ -222,7 +222,7 @@ function partBC() {
 
     if (brokenImports.length) {
         ok = false;
-        console.error(`  FAIL — ${brokenImports.length} unresolvable relative import(s):`);
+        console.error(`  FAIL - ${brokenImports.length} unresolvable relative import(s):`);
         for (const b of brokenImports.slice(0, 40)) console.error(`      ${b.file} -> ${b.spec}`);
     } else {
         console.error(`  ok   imports: all relative specifiers resolve`);
@@ -231,11 +231,11 @@ function partBC() {
 }
 
 // ---------------------------------------------------------------------------
-// Part D — semantic check (skipLibCheck:false) of the script-author surface.
+// Part D - semantic check (skipLibCheck:false) of the script-author surface.
 // Roots: ambient + augmentations + script bindings + event payloads. Errors
 // located IN those surface files are ratcheted as exact entries (target:
 // empty); errors in transitively-loaded files (the long tail of generated MC/
-// third-party types — kotlin.* leaks etc.) are ratcheted as per-TS-code
+// third-party types - kotlin.* leaks etc.) are ratcheted as per-TS-code
 // counts so the debt can only shrink. Both live in semantic-baseline.json.
 // ---------------------------------------------------------------------------
 const SEMANTIC_BASELINE = path.join(SMOKE_DIR, "semantic-baseline.json");
@@ -250,7 +250,7 @@ function partD() {
     const rootNames = SURFACE_DIRS.filter((d) => existsSync(d))
         .flatMap((d) => walk(d, (p) => p.endsWith(".d.ts")));
     if (rootNames.length === 0) {
-        console.error("  (skip — no surface files found)");
+        console.error("  (skip - no surface files found)");
         return { ok: true };
     }
     const program = ts.createProgram({
@@ -302,7 +302,7 @@ function partD() {
     const novel = surface.filter((e) => !baseSurface.has(e));
     if (novel.length) {
         ok = false;
-        console.error(`  FAIL — ${novel.length} NEW semantic error(s) in surface files:`);
+        console.error(`  FAIL - ${novel.length} NEW semantic error(s) in surface files:`);
         for (const e of novel.slice(0, 40)) console.error(`      ${e}`);
     } else {
         console.error(`  ok   surface: ${surface.length} known error(s), 0 new (roots: ${rootNames.length} files)`);
@@ -315,7 +315,7 @@ function partD() {
     }
     if (regressions.length) {
         ok = false;
-        console.error(`  FAIL — transitive semantic debt grew:`);
+        console.error(`  FAIL - transitive semantic debt grew:`);
         for (const r of regressions) console.error(`      ${r}`);
         console.error(`  (if intentional, re-freeze with: npm run typecheck:update-baseline)`);
     } else {
@@ -323,7 +323,7 @@ function partD() {
         const allowedTotal = Object.values(baseline.transitive || {}).reduce((a, b) => a + b, 0);
         console.error(`  ok   transitive: ${total} error(s) within baseline (${allowedTotal} allowed)`);
         if (total < allowedTotal) {
-            console.error(`  note — debt shrank; tighten with: npm run typecheck:update-baseline`);
+            console.error(`  note - debt shrank; tighten with: npm run typecheck:update-baseline`);
         }
     }
 
@@ -333,7 +333,7 @@ function partD() {
         const prev = existsSync(SEMANTIC_BASELINE) ? readFileSync(SEMANTIC_BASELINE, "utf8") : "";
         if (next !== prev) {
             writeFileSync(SEMANTIC_BASELINE, next);
-            console.error(`  tightened — semantic baseline rewritten to the smaller current set`);
+            console.error(`  tightened - semantic baseline rewritten to the smaller current set`);
         }
     }
     return { ok };
@@ -349,8 +349,8 @@ const d = partD();
 
 console.error("");
 if (a.ok && bc.ok && d.ok) {
-    console.error(`PASS — ${a.ran} smoke test(s) clean, syntax/imports/semantics green.`);
+    console.error(`PASS - ${a.ran} smoke test(s) clean, syntax/imports/semantics green.`);
     process.exit(0);
 }
-console.error("FAIL — typecheck gate did not pass (see above).");
+console.error("FAIL - typecheck gate did not pass (see above).");
 process.exit(1);

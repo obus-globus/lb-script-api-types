@@ -36,7 +36,7 @@ file-facade classes, Kotlin function supertypes in heritage clauses, members
 named `constructor`). The gate fails on any **new** parse error anywhere in
 the package.
 
-**Part C - relative-import resolution. Zero tolerance.** Every `from './…'`
+**Part C - relative-import resolution. Zero tolerance.** Every `from './...'`
 specifier in the package must resolve to a real file. Broken relative imports
 are invisible under consumers' `skipLibCheck: true` and silently degrade the
 imported type to `any` - this is exactly how the TitleEvent payloads and

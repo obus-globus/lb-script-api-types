@@ -1,11 +1,11 @@
-// Smoke test — P-02b: `registerMode` / `registerChoice` callbacks receive a
+// Smoke test - P-02b: `registerMode` / `registerChoice` callbacks receive a
 // ScriptMode (the polyglot proxy with the script-mode helpers), not a bare
 // `Mode`. PolyglotScript.kt does
 // `ScriptMode(modeObject, modeValueGroup).apply { callback.accept(this) }`.
 //
 // Two-sided assertion (same pattern as register-script-callable):
 //   Positive: the callback parameter is assignable to ScriptMode.
-//   Negative: a wrong assignment errors — if the narrowing vanishes and the
+//   Negative: a wrong assignment errors - if the narrowing vanishes and the
 //             parameter degrades to a bare Mode/any, the @ts-expect-error
 //             becomes unused (TS2578) and surfaces as a failure.
 
@@ -23,7 +23,7 @@ script.registerMode(group, { name: "TestMode" }, (mode) => {
 });
 
 script.registerChoice(group, { name: "TestChoice" }, (mode) => {
-    // @ts-expect-error TS2322 — ScriptMode is not a string; if the P-02b
+    // @ts-expect-error TS2322 - ScriptMode is not a string; if the P-02b
     // narrowing is lost (param becomes any), this turns into TS2578.
     const s: string = mode;
     void s;

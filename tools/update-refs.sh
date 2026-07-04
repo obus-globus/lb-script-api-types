@@ -35,13 +35,13 @@ du -sh "$REFS"/*/
 echo
 echo "== Applying reference patches (tools/patches/) =="
 "$REPO_ROOT/tools/patches/apply.sh" || {
-  echo "WARN: some reference patches failed — dependent tooling may not work until they are refreshed." >&2
+  echo "WARN: some reference patches failed - dependent tooling may not work until they are refreshed." >&2
 }
 
 echo
 echo "== Decompiling Minecraft sources (via LB's fabric-loom genSources) =="
 "$REPO_ROOT/tools/decompile-minecraft.sh" || {
-  echo "WARN: Minecraft source decompilation failed — MC source grep/qa-agent will be unavailable." >&2
+  echo "WARN: Minecraft source decompilation failed - MC source grep/qa-agent will be unavailable." >&2
 }
 
 echo

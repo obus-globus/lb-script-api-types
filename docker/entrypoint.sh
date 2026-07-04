@@ -16,7 +16,7 @@ REPO_URL="${REPO_URL:-https://github.com/obus-globus/lb-script-api-types.git}"
 REPO_REF="${REPO_REF:-main}"
 
 if [[ ! -e "$WORK/run-regen.sh" ]]; then
-  echo "==> No repo at $WORK — cloning $REPO_URL@$REPO_REF"
+  echo "==> No repo at $WORK - cloning $REPO_URL@$REPO_REF"
   # /work may be a non-empty volume mountpoint; clone into a temp then move in.
   tmp="$(mktemp -d)"
   git clone --branch "$REPO_REF" --recurse-submodules "$REPO_URL" "$tmp/repo"
@@ -25,7 +25,7 @@ if [[ ! -e "$WORK/run-regen.sh" ]]; then
   rm -rf "$tmp"
 else
   echo "==> Reusing repo at $WORK (git pull)"
-  git -C "$WORK" pull --ff-only || echo "   (pull skipped — detached/dirty)"
+  git -C "$WORK" pull --ff-only || echo "   (pull skipped - detached/dirty)"
 fi
 
 cd "$WORK"
@@ -38,7 +38,7 @@ git submodule update --init --recursive generator || true
 if [[ ! -d "$WORK/node_modules/typescript" ]]; then
   echo "==> installing npm devDeps (typescript) for the drift gates"
   npm ci --no-audit --no-fund || npm install --no-audit --no-fund \
-    || echo "   WARN: npm install failed — post-promote gates may not run"
+    || echo "   WARN: npm install failed - post-promote gates may not run"
 fi
 
 exec ./run-regen.sh "$@"

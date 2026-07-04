@@ -9,19 +9,19 @@
 #
 # --no-regen (default) assumes tools/regen-output/ is already populated by a
 # prior `tools/regen-types.sh` run. Without --no-regen this script will
-# invoke regen-types.sh first — slow, only useful ad-hoc.
+# invoke regen-types.sh first - slow, only useful ad-hoc.
 #
-# Pipeline note: as of phase 5.2 the gate is a *rolling self-baseline* —
+# Pipeline note: as of phase 5.2 the gate is a *rolling self-baseline* -
 # regen output is compared against the committed `typings/`
 # tree (which itself was produced by an earlier regen + hand-curated
 # package.json). This is the right metric because Phase 5.2+ intentionally
 # diverges from CCBlueX's last-published npm package (void rename,
 # augmentations index, etc.). The committed tree advances when a regen
-# is intentionally promoted — diffs against it then highlight unintended
+# is intentionally promoted - diffs against it then highlight unintended
 # drift.
 #
 # package.json is excluded from the diff entirely (the committed one is
-# hand-curated each time we promote — different name, private flag,
+# hand-curated each time we promote - different name, private flag,
 # version pin form). The regen-emitted version string is surfaced
 # informationally for sanity.
 #
@@ -61,13 +61,13 @@ if [[ ! -d "$BASE_PKG" ]]; then
 fi
 
 # Diff strategy: a full recursive diff, excluding package.json (hand-curated
-# in the committed tree each promotion — see header).
+# in the committed tree each promotion - see header).
 tmp_diff="$(mktemp)"
 trap 'rm -f "$tmp_diff"' EXIT
 
 # Excluded: package.json (hand-curated), __smoke (hand-maintained tests),
 # tsconfig.json/README.md/LICENSE (hand-maintained, never emitted by the
-# generator — without these excludes the gate fails even right after a
+# generator - without these excludes the gate fails even right after a
 # clean promote).
 diff -rq --exclude=package.json --exclude=__smoke --exclude=tsconfig.json \
   --exclude=README.md --exclude=LICENSE "$BASE_PKG" "$OUT_PKG" > "$tmp_diff" 2>&1 || true

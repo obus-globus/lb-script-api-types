@@ -36,7 +36,7 @@ Pull in the ambient script globals through `tsconfig.json`:
 ```jsonc
 {
   "compilerOptions": {
-    "lib": ["es2023"],            // no DOM — see below
+    "lib": ["es2023"],            // no DOM - see below
     "types": ["@wunk/lb-script-api-types/ambient"]
   }
 }
@@ -58,7 +58,7 @@ RotationUtil.aimAt(/* ... */);
 
 Class-value bindings (`Vec3i`, `BlockPos`, `Hand`, `MathHelper`,
 `RotationAxis`, ...) are raw `java.lang.Class` values at runtime: construct
-directly (`new Vec3i(1, 2, 3)`), but **statics — including enum constants —
+directly (`new Vec3i(1, 2, 3)`), but **statics - including enum constants -
 live behind `.static`** (`Hand.static.MAIN_HAND`,
 `RotationAxis.static.YP.rotationDegrees(90)`,
 `MathHelper.static.clamp(...)`). Direct static access compiles against older
@@ -69,7 +69,7 @@ surface (verified in a live client).
 
 By default `Java.type(...)` returns `any` (or takes an explicit generic).
 Opt into the string-literal registry and it is fully typed from the class
-name alone — autocomplete on the string, typed statics/constructors on the
+name alone - autocomplete on the string, typed statics/constructors on the
 result. Works in plain JS too (the editor language service picks it up from
 jsconfig):
 
@@ -82,10 +82,10 @@ jsconfig):
 
 ```ts
 const SilentHotbar = Java.type("net.ccbluex.liquidbounce.utils.client.SilentHotbar");
-SilentHotbar.INSTANCE.serversideSlot;   // typed — no generic, no import
+SilentHotbar.INSTANCE.serversideSlot;   // typed - no generic, no import
 ```
 
-`registry-full` covers every generated class (~49k) — great for editor use,
+`registry-full` covers every generated class (~49k) - great for editor use,
 but it adds tens of seconds to batch `tsc` runs, so prefer `registry-lb` in
 CI. Unknown class names fall back to the generic `any` overload either way.
 
@@ -181,7 +181,7 @@ The `types/` tree is generated, not hand-edited. The whole flow is one command:
 
 Prereqs: `xvfb-run`, `glxinfo` (mesa-utils), JDK 25, and JDK 21.
 
-**Bumping to a newer LiquidBounce build** — the checklist:
+**Bumping to a newer LiquidBounce build** - the checklist:
 
 1. Set `PINNED_SHA` in `tools/regen-types.sh` (the single source of truth;
    `fetch-references.sh` derives from it and fails loudly if it can't).
@@ -191,10 +191,10 @@ Prereqs: `xvfb-run`, `glxinfo` (mesa-utils), JDK 25, and JDK 21.
    gracefully for most changes (conservative matching just skips what no
    longer fits) but a same-arity parameter rename upstream would keep a stale
    name until refreshed.
-3. `./run-regen.sh` — the promote step verifies the output was generated from
+3. `./run-regen.sh` - the promote step verifies the output was generated from
    the checked-out SHA, then runs the augmentation drift gate (every `on()`
    overload cross-checked against LB's `ALL_EVENT_CLASSES`/`@Tag` source).
-4. `npm run typecheck` — if the semantic ratchets shrank (they should never
+4. `npm run typecheck` - if the semantic ratchets shrank (they should never
    grow), tighten with `npm run typecheck:update-baseline` and commit.
 
 If regen crashes, see

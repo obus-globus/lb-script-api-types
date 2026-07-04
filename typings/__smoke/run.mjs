@@ -1,15 +1,15 @@
-// Smoke runner — drives tsc programmatically, then filters diagnostics
+// Smoke runner - drives tsc programmatically, then filters diagnostics
 // down to those originating in `event-narrowing.test.ts`. The wider
 // `@liquidbounce-helper/script-api-types` package contains many .d.ts
 // files with Java reserved-word parameter names (`var`, `function`,
 // `null`) that produce TS1390/TS1442/TS1359 *syntax* errors when the
-// whole tree is parsed — those aren't introduced by our augmentation
+// whole tree is parsed - those aren't introduced by our augmentation
 // fix and are out of scope for this gate. We only assert that:
 //   1. Our smoke file itself produces zero unsuppressed diagnostics.
 //   2. Both `@ts-expect-error` directives consume a real error (i.e.,
 //      no TS2578 "Unused '@ts-expect-error' directive" surfaces). If
 //      either pops, the augmentation cascade is silently producing
-//      `any` again — that's the regression signal.
+//      `any` again - that's the regression signal.
 //
 // Run: node packages/script-api-types/__smoke/run.mjs
 

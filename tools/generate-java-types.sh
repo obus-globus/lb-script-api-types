@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Generate docs/refs/java-types.txt — an allowlist of fully-qualified class
+# Generate docs/refs/java-types.txt - an allowlist of fully-qualified class
 # names reachable from LiquidBounce's runtime classpath + the JDK's jmods.
 #
 # Used by the LB-JAVA-TYPE-UNKNOWN L2 rule. See docs/40-tooling-architecture.md
@@ -63,7 +63,7 @@ else
 fi
 
 if [[ -z "$JMODS" ]]; then
-  echo "== WARN: no JDK jmods/ directory found — java.*/jdk.*/javax.* will be missing from the allowlist."
+  echo "== WARN: no JDK jmods/ directory found - java.*/jdk.*/javax.* will be missing from the allowlist."
   : > "$TMP/jdk.raw"
 else
   echo "== scanning jmods at $JMODS"
@@ -72,7 +72,7 @@ else
     if [[ -n "$candidate" && -x "$candidate" ]]; then JMOD_TOOL="$candidate"; break; fi
   done
   if [[ -z "$JMOD_TOOL" ]]; then
-    echo "== WARN: no jmod tool found alongside jmods/ — java.*/jdk.*/javax.* will be missing."
+    echo "== WARN: no jmod tool found alongside jmods/ - java.*/jdk.*/javax.* will be missing."
     : > "$TMP/jdk.raw"
   else
     : > "$TMP/jdk.raw"

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ts-extract.py — tree-sitter-based KDoc extractor for the
+ts-extract.py - tree-sitter-based KDoc extractor for the
 @liquidbounce-helper/script-api-types Phase B pipeline.
 
 Same output schema as hybrid-extract.py (the LSP+regex version):
@@ -25,12 +25,12 @@ Same output schema as hybrid-extract.py (the LSP+regex version):
 
 Why a tree-sitter rewrite of hybrid-extract.py:
 
-  • No 1.2 GB kotlin-lsp dependency. tree-sitter-kotlin is a 2 MB
+  - No 1.2 GB kotlin-lsp dependency. tree-sitter-kotlin is a 2 MB
     Python wheel.
-  • No JSON-RPC dance / startup race.
-  • Synchronous in-process; the full LB checkout extracts in seconds
+  - No JSON-RPC dance / startup race.
+  - Synchronous in-process; the full LB checkout extracts in seconds
     instead of ~50 s.
-  • Single file, no Gradle / JVM / DAEMON involvement.
+  - Single file, no Gradle / JVM / DAEMON involvement.
 
 Setup (one-time):
 
@@ -62,13 +62,13 @@ PARSER = Parser(LANG)
 
 
 # ------------------------------------------------------------------------
-# KDoc text parser — shared with hybrid-extract.py semantics
+# KDoc text parser - shared with hybrid-extract.py semantics
 # ------------------------------------------------------------------------
 TAG_RE = re.compile(r"^@(\w+)(?:\s+(.*))?$")
 
 
 def _strip_kdoc(text: str) -> str:
-    """Strip the surrounding /** … */ and leading ` * `."""
+    """Strip the surrounding /** ... */ and leading ` * `."""
     text = text.strip()
     if text.startswith("/**"):
         text = text[3:]
@@ -92,7 +92,7 @@ def _strip_kdoc(text: str) -> str:
 
 
 def parse_kdoc(raw: str) -> Optional[dict[str, Any]]:
-    """Parse a KDoc /** … */ block text into our manifest entry shape."""
+    """Parse a KDoc /** ... */ block text into our manifest entry shape."""
     body = _strip_kdoc(raw)
     if not body.strip():
         return None
@@ -160,7 +160,7 @@ def parse_kdoc(raw: str) -> Optional[dict[str, Any]]:
                 current = ("sample",)
                 buf = [rest] if rest else []
             else:
-                # Unknown tag — fold into the previous bucket's text.
+                # Unknown tag - fold into the previous bucket's text.
                 if current is None:
                     doc_lines.append(line)
                 else:
@@ -235,7 +235,7 @@ def _find_identifier(n: Node) -> Optional[str]:
             return None
         return _node_text_at(n, ident_children[-1])
     if n.type == "property_declaration":
-        # variable_declaration → identifier
+        # variable_declaration -> identifier
         for c in n.children:
             if c.type == "variable_declaration":
                 for cc in c.children:
@@ -259,7 +259,7 @@ def _node_text_at(parent: Node, child: Node) -> str:
 
 def _is_function_receiver(fn_node: Node) -> Optional[str]:
     """For function_declaration: return the receiver type as a string if it
-    is an extension function (e.g. `fun String.foo()` → 'String'); else None.
+    is an extension function (e.g. `fun String.foo()` -> 'String'); else None.
     """
     children = list(fn_node.children)
     # Find user_type followed by '.' followed by identifier near the start.
@@ -290,7 +290,7 @@ def _preceding_kdoc(node: Node) -> Optional[str]:
             text = sib.text.decode("utf-8", "replace") if sib.text else ""
             if text.startswith("/**"):
                 return text
-            # /* … */ but not a KDoc — stop searching (it would shadow KDoc above).
+            # /* ... */ but not a KDoc - stop searching (it would shadow KDoc above).
             return None
         if t == "line_comment":
             # //-comments are skipped (don't shadow).
@@ -318,7 +318,7 @@ def _preceding_kdoc(node: Node) -> Optional[str]:
 def _extract_package(root: Node) -> str:
     for c in root.children:
         if c.type == "package_header":
-            # `package <qualified_identifier>` — collect identifiers and backticks.
+            # `package <qualified_identifier>` - collect identifiers and backticks.
             parts: list[str] = []
             for cc in c.children:
                 if cc.type == "qualified_identifier":
@@ -437,7 +437,7 @@ def _walk(
                 continue
             name = name.strip("`")
 
-            # Signature capture (#12b) — independent of KDoc, keyed by the
+            # Signature capture (#12b) - independent of KDoc, keyed by the
             # FQN ts-generator emits the declaration onto.
             if kind == "function":
                 recv = _is_function_receiver(child)
@@ -445,7 +445,7 @@ def _walk(
                 _record_signature(child, name, owner, rel_file, sigs,
                                    receiver=recv)
             elif kind == "constructor":
-                # secondary_constructor — owner is the enclosing class.
+                # secondary_constructor - owner is the enclosing class.
                 owner = _owner_fqn(parent_parts, package, rel_file)
                 _record_signature(child, "constructor", owner, rel_file, sigs)
 
@@ -559,7 +559,7 @@ def _child_of_type(node: Node, type_name: str) -> Optional[Node]:
 
 
 # ------------------------------------------------------------------------
-# Signature extraction (T-Doc #12b — real parameter names + types)
+# Signature extraction (T-Doc #12b - real parameter names + types)
 #
 # Independent of KDoc: we capture the structured value-parameter list for
 # *every* function / constructor so the post-patch can rename the generated
@@ -711,7 +711,7 @@ def _deprecation_of(child: Node) -> Optional[dict[str, str]]:
                     if message is None:
                         message = _string_content(sl)
                     continue
-                # ReplaceWith("...") — a `call_expression` (positional or
+                # ReplaceWith("...") - a `call_expression` (positional or
                 # `replaceWith = ReplaceWith(...)` named) whose name is an
                 # `identifier`; its string is nested one level deeper.
                 inner = _child_of_type(va, "call_expression")
@@ -733,7 +733,7 @@ def _deprecation_of(child: Node) -> Optional[dict[str, str]]:
             out["message"] = message
         if replace_with:
             out["replaceWith"] = replace_with
-        return out  # may be {} — still flags "deprecated" with no message
+        return out  # may be {} - still flags "deprecated" with no message
     return None
 
 
@@ -765,10 +765,10 @@ def main() -> int:
                          "extractor; only pass --out if you intend to overwrite "
                          "it with the tree-sitter variant.")
     ap.add_argument("--signatures-out", default=None,
-                    help="Output signatures.json path (#12b — real parameter "
+                    help="Output signatures.json path (#12b - real parameter "
                          "names + types for the paramargN rename post-patch).")
     ap.add_argument("--deprecations-out", default=None,
-                    help="Output deprecations.json path (W2 — @Deprecated "
+                    help="Output deprecations.json path (W2 - @Deprecated "
                          "annotation messages for the @deprecated TSDoc post-patch).")
     ap.add_argument(
         "--source-roots",
@@ -854,7 +854,7 @@ def main() -> int:
         Path(args.out).write_text(json.dumps(final, indent=2, ensure_ascii=False) + "\n")
         print(
             f"[ts] wrote {len(final)} unique FQNs (from {kdocs} KDocs in "
-            f"{files_with_kdoc} files) → {args.out}",
+            f"{files_with_kdoc} files) -> {args.out}",
             file=sys.stderr,
         )
 
@@ -873,7 +873,7 @@ def main() -> int:
         print(
             f"[ts] wrote signatures for {len(sigs)} members "
             f"({total_overloads} overloads, {total_params} params) "
-            f"→ {args.signatures_out}",
+            f"-> {args.signatures_out}",
             file=sys.stderr,
         )
 
@@ -886,7 +886,7 @@ def main() -> int:
             json.dumps(envelope, indent=2, ensure_ascii=False) + "\n"
         )
         print(
-            f"[ts] wrote {len(deps)} @Deprecated entries → {args.deprecations_out}",
+            f"[ts] wrote {len(deps)} @Deprecated entries -> {args.deprecations_out}",
             file=sys.stderr,
         )
     return 0

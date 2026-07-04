@@ -1,4 +1,4 @@
-# typing-verify — runtime verification example
+# typing-verify - runtime verification example
 
 A complete LiquidBounce script that doubles as the runtime test of
 `@wunk/lb-script-api-types`: it typechecks with a strict stock consumer

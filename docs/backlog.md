@@ -151,38 +151,38 @@ tree-sitter extractor can.
   ScriptMode case behind registerMode). _Layer: generator._
 - **[~] W13 - `okhttp3.Response` leak - PREMISE STALE (re-investigated 2026-07-01).**
   The current binding is `ScriptAsyncUtil.request(block: (Request$Builder) => void):
-  Value` (script/bindings/api/ScriptAsyncUtil.kt:178) — it returns the opaque
+  Value` (script/bindings/api/ScriptAsyncUtil.kt:178) - it returns the opaque
   GraalVM `Value` (a JS Promise), **not** a raw `okhttp3.Response`. The KDoc
   *says* `@return Promise<okhttp3.Response>` but the static type is `Value`, so
   there is **no raw-Response return leak** and the promise resolution is simply
   untyped. okhttp3 appears in the script surface ONLY as the `Request$Builder`
-  **parameter** (scripts legitimately call `.url()/.header()/...` on it) — grep
+  **parameter** (scripts legitimately call `.url()/.header()/...` on it) - grep
   confirms zero okhttp3 in ambient/augmentations. The envisioned
   `ScriptHttpResponse` facade also does NOT work at the augmentation layer:
   interface-declaration-merge ADDS overloads, so `request(block): Promise<Facade>`
-  can't OVERRIDE the generated `request(block): Value` (identical params → the
+  can't OVERRIDE the generated `request(block): Value` (identical params -> the
   original wins). A real improvement (type the promise resolution) would need a
-  generator/post-patch that rewrites the return type — a design decision, not a
+  generator/post-patch that rewrites the return type - a design decision, not a
   mechanical augmentation. Deferred pending a decision on whether to expose the
   real Response or a curated facade + where to define it. _Layer: generator/post-patch, not augmentation._
   **Option B validated (2026-07-01, regen-output only, not shipped):** retyping
-  `request(): Value` → `Promise<Response>` + importing okhttp3.Response is NOT
-  gate-clean — it adds **+5** skipLibCheck:false errors (879→884), ALL in one
+  `request(): Value` -> `Promise<Response>` + importing okhttp3.Response is NOT
+  gate-clean - it adds **+5** skipLibCheck:false errors (879->884), ALL in one
   transitively-pulled file `okhttp3/internal/connection/RealConnection.d.ts`
-  (TS2416 ×2, TS2300, TS2717, TS2417). They're okhttp's OWN latent errors,
-  invisible to consumers (skipLibCheck:true → `Promise<Response>` autocompletes
-  fine) but they trip the gate's per-code ratchet → the regen would route to
+  (TS2416 x2, TS2300, TS2717, TS2417). They're okhttp's OWN latent errors,
+  invisible to consumers (skipLibCheck:true -> `Promise<Response>` autocompletes
+  fine) but they trip the gate's per-code ratchet -> the regen would route to
   review, not auto-release. So B needs either a re-baseline of those 5 or a
   narrower type. **Option C (a curated `ScriptHttpResponse` facade) imports none
-  of okhttp's graph, so it stays gate-clean** — the tradeoff is B = full/accurate
+  of okhttp's graph, so it stays gate-clean** - the tradeoff is B = full/accurate
   Response but +5 gate debt vs C = clean gate but a hand-maintained facade.
-  DECISION (the maintainer, 2026-07-01): **option A — keep `request()` returning the
+  DECISION (the maintainer, 2026-07-01): **option A - keep `request()` returning the
   opaque `Value`, but document it.** Added an "Async HTTP" note to the README
   (branch `docs/readme-quickstart`) showing that the promise resolves to an
   `okhttp3.Response` and how to cast the awaited result (`as unknown as Response`)
   for typed access; the example is verified to type-check. No type/gate change.
 - **[~] W17 - missing runtime helpers - ENUMERATED, no clean fix (2026-07-01).**
-  Discovery pass done. (1) Global bindings: COMPLETE + gated — all 28 `putMember`
+  Discovery pass done. (1) Global bindings: COMPLETE + gated - all 28 `putMember`
   bindings (ScriptContextProvider.kt) + `registerScript` are in ambient.d.ts,
   cross-checked vs runtime-bindings.json by check-ambient-contract.py. (2)
   Intrinsics COMPLETE (Java.type/from/to/extend/super, Polyglot, print, load,
@@ -191,7 +191,7 @@ tree-sitter extractor can.
   delta is GraalJS JavaBean-property sugar: LB uses `HostAccess.ALL`
   (PolyglotScript.kt:60), so `getX()`/`isX()` are also callable as `.x`, plus
   Java List/array interop (`.length`, `[i]`). Closing it = emitting `.foo` aliases
-  for **~48,031** getters against **~16,749** colliding lowercase fields → the
+  for **~48,031** getters against **~16,749** colliding lowercase fields -> the
   TS2300/TS2717 static-hiding burn-zone (already a documented dead-end). NOT
   clean; arguably unnecessary (method forms work). Recommend: don't sweep; at most
   a curated bean-property overlay on a few hot types (mc.player) via augmentation.
@@ -211,7 +211,7 @@ tree-sitter extractor can.
 
 Found by an adversarially-verified full review; the consumer-visible symptoms
 were fixed the same day at the post-patch layer (sanitize, F8/F9, F4 reversal,
-gate v2 ratchets) — these track the *generator-root* fixes.
+gate v2 ratchets) - these track the *generator-root* fixes.
 
 - **[x] W20 - qualified-name leak in arrow/SAM rendering - FIXED (generator
   5a262be; verified 2026-07-01).** `formatFunctionalInterfaceType` now converts
@@ -221,7 +221,7 @@ gate v2 ratchets) — these track the *generator-root* fixes.
   (only KDoc `@see`/`@link` bodies remain, which is correct). Positive control:
   9,101 `=> boolean` arrows now render correctly (matching the ~9,925 that used
   to leak as `=> kotlin.Boolean`), SAM params map to TS primitives, and
-  `Optional<...>` renders as the imported simple name (47×), not
+  `Optional<...>` renders as the imported simple name (47x), not
   `java.util.Optional`. _Layer: generator (formatFunctionalInterfaceType)._
 - **[x] W21 - free/undeclared type variables - FIXED (generator 5a262be, same
   commit as W20).** Re-emitted inherited members now substitute the parent's
@@ -336,17 +336,17 @@ Performance work (do in order): proper closing -> GraalJS JIT -> caching.
   (`runClient exit 0`) in **~34 min** instead of grinding to the 60m timeout (and
   ~100m at 120m). The walk itself is ~21 min + ~11 min emission; the win is
   eliminating the post-output idle.
-- **[x] GraalJS JIT — INVESTIGATED, NO WIN, NOT ADOPTED.** Hypothesis was that the
+- **[x] GraalJS JIT - INVESTIGATED, NO WIN, NOT ADOPTED.** Hypothesis was that the
   regen runs GraalJS on the Truffle *fallback* runtime (stock OpenJDK 25 -> log:
   "fallback runtime that does not support runtime compilation"), so the ts-defgen.js
   loop is interpreted. Tested by running the whole regen on **Oracle GraalVM JDK
   25.0.3** (exact match to the bundled GraalVM Polyglot 25.0.3); the fallback warning
   disappeared (Truffle JIT genuinely active via libgraal/JVMCI). **But the wall-clock
-  was unchanged: ~34 min vs ~34m31s stock (walk ~22.5 vs ~21 min — a wash, within
+  was unchanged: ~34 min vs ~34m31s stock (walk ~22.5 vs ~21 min - a wash, within
   noise).** Reason: the expensive work is the transitive reflection walk in
   `TypeScriptGenerator.kt`, which is **host Kotlin bytecode** (already C2/Graal
   JIT-compiled regardless), not guest JS. ts-defgen.js's JS is a thin loop that
-  invokes the generator **once** — there's almost no hot guest code for Truffle to
+  invokes the generator **once** - there's almost no hot guest code for Truffle to
   compile. GraalVM also leaks a few of its own JDK classes into the tree (+159 files,
   +23 `com/oracle`), i.e. a small output delta for zero gain. Reverted
   `tools/regen-types.sh` to stock OpenJDK 25. GraalVM JDK 25 left installed at
@@ -371,9 +371,9 @@ Performance work (do in order): proper closing -> GraalJS JIT -> caching.
   generator `ModuleCache.kt` (+ `GeneratedModule`/`CachedModule` + visitClass
   hook in `TypeScriptGenerator.kt`), `moduleCacheTests.kt` (cold->warm identical
   + tamper-invalidation), `tools/regen-types.sh`, `.gitignore`.
-- **[x] O(1) module index (THE big win — regen ~34.5 min -> ~6 min).** The walk's
+- **[x] O(1) module index (THE big win - regen ~34.5 min -> ~6 min).** The walk's
   visited-check and import resolution located a class's module with
-  `modules.keys.find { isSameClass }` — a linear scan run once per class AND once
+  `modules.keys.find { isSameClass }` - a linear scan run once per class AND once
   per dependent, i.e. O(n^2) over ~57k classes, recomputing `qualifiedName`
   reflectively each comparison. THIS, not reflection, was the dominant cost. Added
   a `modulesByName` HashMap mirroring the module map (keyed exactly as isSameClass
@@ -384,11 +384,11 @@ Performance work (do in order): proper closing -> GraalJS JIT -> caching.
   commented-out invalid line). Guarded by the determinism + dedupe + cache tests.
   Shipped: generator `d55dbd2`.
 
-  **Post-O(1), the cache's value is environment-dependent — marginal locally,
+  **Post-O(1), the cache's value is environment-dependent - marginal locally,
   large on CI.** On this (fast) box reflection is cheap (~1m45s whole walk), so
   reuse saves only ~1 min (warm walk ~18s vs ~1m45s). But on the GitHub-hosted CI
   runner the softpipe walk is ~8x slower (~14 min cold), and the cache collapses
-  it to ~65s — measured **CI regen-flow 30m47s cold -> 10m04s warm (~20 min /
+  it to ~65s - measured **CI regen-flow 30m47s cold -> 10m04s warm (~20 min /
   ~67% faster)** at 99.5% reuse. So the cache earns its keep on slow CI; keep it.
 
   **CI cache prerequisites (all fixed 2026-06-24):** the persisted cache only
@@ -401,17 +401,17 @@ Performance work (do in order): proper closing -> GraalJS JIT -> caching.
   restore-keys; sha-gated so a stale restore is safe). Also required for the
   container to run the flow at all: rsync (promote), Node 22 + npm (LB's
   :npmInstallTheme), and a repo-root `npm ci` (typescript for the post-promote
-  drift gates) — all added to docker/Dockerfile / entrypoint.sh.
+  drift gates) - all added to docker/Dockerfile / entrypoint.sh.
 
 - **[done-superseded] Caching the stable subtree.** Measured class
   distribution of the 59,371-file tree: volatile jars (net.minecraft 8855, net.ccbluex
   2739, com.viaversion 2789, com.mojang 1063, net.fabricmc/raphimc/caffeinemc/
-  irisshaders ~4300) ~= 20k classes; the rest — fastutil (6050), graalvm/oracle
-  (~10k, polyglot), apache, kotlin, JDK, guava, lwjgl, netty, icu — are **~30k
+  irisshaders ~4300) ~= 20k classes; the rest - fastutil (6050), graalvm/oracle
+  (~10k, polyglot), apache, kotlin, JDK, guava, lwjgl, netty, icu - are **~30k
   foundational-library classes that never reference the volatile jars**, so their
   rendered `.d.ts` is stable across an MC bump. **Design (sound):** the generator does
   a *transitive closure* (`visitClass` -> `module.dependentTypes.forEach { visitClass }`,
-  TypeScriptGenerator.kt:1568), so filtering the input set can't skip a class — it gets
+  TypeScriptGenerator.kt:1568), so filtering the input set can't skip a class - it gets
   re-reached. Caching must live *inside* the generator: a `ModuleCache` keyed by
   **(source-jar content sha + generator sha)**. In `visitClass`, if the class's jar is
   in a **foundational allowlist** (java/kotlin/netty/fastutil/guava/graalvm/apache/lwjgl/

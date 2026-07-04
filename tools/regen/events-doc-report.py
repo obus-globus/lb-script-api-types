@@ -8,13 +8,13 @@ exactly the kind of thing a Phase A hand-written KDoc block would
 benefit, so the report doubles as a prioritised worklist.
 
 Inputs are taken from the committed types package:
-  * `augmentations/ScriptModule.augmentation.d.ts` — authoritative list
+  * `augmentations/ScriptModule.augmentation.d.ts` - authoritative list
     of (eventName, EventClass) pairs script authors actually subscribe
     to. We parse the `on(eventName: "...", handler: (...: Foo) => void)`
     overloads. The augmentation is generated from LB's
     `ScriptModule.on` Kotlin annotations, so this stays in sync with
     upstream's intent.
-  * `types/.../events/<EventClass>.d.ts` — for each event class, look at
+  * `types/.../events/<EventClass>.d.ts` - for each event class, look at
     the lines immediately above `export class <EventClass>` for a `/**`
     block. Anything else (no comment, `// foo` only, etc.) counts as
     undocumented.
@@ -53,7 +53,7 @@ ON_OVERLOAD = re.compile(
     r'\([^:]+:\s*(?P<klass>[A-Za-z_][\w$]*)\)\s*=>\s*void\)\s*:\s*void;\s*$',
     re.MULTILINE,
 )
-# Top-of-file `import type { Foo } from '<path>'` lines — we resolve
+# Top-of-file `import type { Foo } from '<path>'` lines - we resolve
 # `klass` to a file path via these.
 IMPORT_LINE = re.compile(
     r"^import\s+type\s+\{\s*(?P<klass>[A-Za-z_][\w$]*)\s*\}\s+from\s+'(?P<path>[^']+)';?\s*$",
@@ -92,7 +92,7 @@ CLASS_DECL = re.compile(
 
 def class_has_tsdoc(path: Path, klass: str) -> bool:
     """True iff the `export class <klass>` declaration in `path` has a
-    `/** … */` TSDoc block immediately above it (allowing only blank
+    `/** ... */` TSDoc block immediately above it (allowing only blank
     lines between the comment close and the declaration)."""
     if path is None or not path.is_file():
         return False
@@ -111,7 +111,7 @@ def class_has_tsdoc(path: Path, klass: str) -> bool:
         if end == -1:
             return False
         # The block must be at the start of a line (after stripped
-        # whitespace) — i.e. it must be a doc comment, not an inline
+        # whitespace) - i.e. it must be a doc comment, not an inline
         # comment dangling off code.
         line_start = lead.rfind("\n", 0, end) + 1
         between = lead[line_start:end]
@@ -139,7 +139,7 @@ def build_report(entries: list[tuple[str, str, Path | None]]) -> str:
         "every event a script can subscribe to via "
         "`script.on(...)`, with documentation status on the generated "
         "event class. This is a *prioritised worklist* for Phase A "
-        "hand-written KDoc — any line in the undocumented section is a "
+        "hand-written KDoc - any line in the undocumented section is a "
         "candidate for a curated entry that will appear in IDE hover "
         "info."
     )
@@ -161,7 +161,7 @@ def build_report(entries: list[tuple[str, str, Path | None]]) -> str:
     lines.append("## Undocumented events")
     lines.append("")
     if not undocumented:
-        lines.append("_None — every scriptable event has a TSDoc block._")
+        lines.append("_None - every scriptable event has a TSDoc block._")
         lines.append("")
     else:
         lines.append(
@@ -189,7 +189,7 @@ def build_report(entries: list[tuple[str, str, Path | None]]) -> str:
     lines.append("")
     lines.append("```")
     for name, klass, path in documented:
-        lines.append(f'  "{name}"  →  {klass}')
+        lines.append(f'  "{name}"  ->  {klass}')
     lines.append("```")
     lines.append("")
     lines.append("</details>")
@@ -207,12 +207,12 @@ def main() -> int:
     args = parser.parse_args()
 
     if not AUGMENTATION.is_file():
-        print(f"events-doc-report: SKIP — {AUGMENTATION} missing", file=sys.stderr)
+        print(f"events-doc-report: SKIP - {AUGMENTATION} missing", file=sys.stderr)
         return 0
     entries = parse_augmentation()
     if not entries:
         print(
-            "events-doc-report: SKIP — augmentation has no on(eventName, ...) overloads",
+            "events-doc-report: SKIP - augmentation has no on(eventName, ...) overloads",
             file=sys.stderr,
         )
         return 0
@@ -220,7 +220,7 @@ def main() -> int:
     if args.check:
         if not REPORT_PATH.is_file():
             print(
-                f"events-doc-report: STALE — {REPORT_PATH} does not exist; "
+                f"events-doc-report: STALE - {REPORT_PATH} does not exist; "
                 "run `python3 tools/regen/events-doc-report.py`",
                 file=sys.stderr,
             )
@@ -228,20 +228,20 @@ def main() -> int:
         existing = REPORT_PATH.read_text(encoding="utf-8")
         if existing != new:
             print(
-                f"events-doc-report: STALE — committed report at "
+                f"events-doc-report: STALE - committed report at "
                 f"{REPORT_PATH} doesn't match current types tree; "
                 "run `python3 tools/regen/events-doc-report.py`",
                 file=sys.stderr,
             )
             return 1
-        print(f"events-doc-report: OK — {REPORT_PATH} is up to date")
+        print(f"events-doc-report: OK - {REPORT_PATH} is up to date")
         return 0
 
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text(new, encoding="utf-8")
     docu = sum(1 for _, k, p in entries if class_has_tsdoc(p, k))
     print(
-        f"events-doc-report: wrote {REPORT_PATH.relative_to(REPO_ROOT)} — "
+        f"events-doc-report: wrote {REPORT_PATH.relative_to(REPO_ROOT)} - "
         f"{docu}/{len(entries)} documented "
         f"({docu / len(entries) * 100:.1f}%)"
     )

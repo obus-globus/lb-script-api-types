@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-apply-kdoc — Phase C of Issue #11.
+apply-kdoc - Phase C of Issue #11.
 
 Reads the JSON manifest produced by tools/kdoc-extractor/kotlinc/ (PSI
-extractor — see tools/kdoc-extractor/refresh-manifest.sh) and
+extractor - see tools/kdoc-extractor/refresh-manifest.sh) and
 injects TSDoc blocks into the generated .d.ts files at
 $PKG_ROOT/types/...
 
@@ -107,7 +107,7 @@ RE_KDOC_LINK = re.compile(r"\[([\w.$]+)\]")
 
 # Member declaration: `    methodName(...` or `    methodName:` or
 # `    methodName?:` (static or instance, single-line head).
-# Accepts optional visibility (public/protected/private — TS-style),
+# Accepts optional visibility (public/protected/private - TS-style),
 # abstract, static, readonly, get/set modifiers.
 # Also matches ts-generator's `/*not mapped: */ methodName(` form, which is
 # emitted for Kotlin extension properties/functions that can't be fully
@@ -201,7 +201,7 @@ def render_tsdoc(entry: dict, indent: str, lb_sha: str | None = None,
         if anticheat:
             ac_parts.append(kdoc_links_to_tsdoc(anticheat).strip())
         if anticheat_version:
-            # Don't auto-prefix `v` — LB version strings are diverse
+            # Don't auto-prefix `v` - LB version strings are diverse
             # (`b3896`, `2.7.5`, `14.07.2025`) and a forced `v` looks wrong.
             ac_parts.append(f"({kdoc_links_to_tsdoc(anticheat_version).strip()})")
         if ac_parts:
@@ -245,7 +245,7 @@ def render_tsdoc(entry: dict, indent: str, lb_sha: str | None = None,
 
 
 def has_existing_tsdoc(src: str, decl_match: re.Match[str], first_doc_line: str) -> bool:
-    """Idempotency: skip if any /** … */ block already sits immediately above
+    """Idempotency: skip if any /** ... */ block already sits immediately above
     the declaration (separated only by blank / annotation lines)."""
     decl_line_start = src.rfind("\n", 0, decl_match.start()) + 1
     window_start = max(0, decl_line_start - 4000)
@@ -327,7 +327,7 @@ def inject_member(
         if not force:
             return src, False, "already-present"
         src = strip_existing_tsdoc(src, m)
-        # Pattern position may have moved — re-search.
+        # Pattern position may have moved - re-search.
         m = pat.search(src)
         if not m:
             return src, False, "no-match"
@@ -384,7 +384,7 @@ def inject_typealias(src: str, name: str, entry: dict,
 
 
 # Match `// private foo(` or `// private foo:` etc.
-# ts-generator emits these for Kotlin's `private` members — they are
+# ts-generator emits these for Kotlin's `private` members - they are
 # present in source as comments only, so we can't inject TSDoc and
 # nobody would benefit (private members aren't part of the script API).
 # Also matches the combined form `// private /*not mapped: */ foo(` that
@@ -419,7 +419,7 @@ def _bean_getter_forms(member: str, kind: str | None) -> list[str]:
     if member.startswith("is") and len(member) > 2 and member[2].isupper():
         return [member]
     # Properties always have a getter; var adds a setter (we can't know
-    # var vs val from manifest, so include both — they're harmless if
+    # var vs val from manifest, so include both - they're harmless if
     # absent because inject_member returns no-match individually).
     return [f"get{cap}", f"set{cap}"]
 
@@ -467,7 +467,7 @@ def candidate_member_lookups(
             out.append((companion_path, alt, "companion-getter"))
     # Constructor alias: the PSI extractor stores constructor KDoc under an
     # FQN whose last segment is the class name (e.g. `InputBind.InputBind`).
-    # The .d.ts spells these as `constructor(…)`, so try "constructor" as an
+    # The .d.ts spells these as `constructor(...)`, so try "constructor" as an
     # alternative member name when kind == "constructor".
     if kind == "constructor":
         out.append((direct_path, "constructor", "constructor-alias"))
@@ -477,7 +477,7 @@ def candidate_member_lookups(
 
 
 def validate_manifest(manifest: object) -> list[str]:
-    """Lightweight schema check — surfaces accidental drift in the
+    """Lightweight schema check - surfaces accidental drift in the
     extractor's output without requiring jsonschema as a dependency.
     Returns a list of human-readable error strings (empty on success)."""
     errs: list[str] = []
@@ -539,7 +539,7 @@ def validate_manifest(manifest: object) -> list[str]:
 
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(prog="apply-kdoc",
-                                 description="T-Doc Phase C — inject KDoc TSDoc blocks into .d.ts")
+                                 description="T-Doc Phase C - inject KDoc TSDoc blocks into .d.ts")
     ap.add_argument("pkg_root", type=Path, help="path to package (must contain types/)")
     ap.add_argument("manifest", type=Path, help="path to kdoc manifest.json")
     ap.add_argument("--lb-sha", default=None,
@@ -567,7 +567,7 @@ def main(argv: list[str]) -> int:
 
     types_root = pkg_root / "types"
     if not types_root.is_dir():
-        print(f"apply-kdoc: skip — {types_root} not a directory", file=sys.stderr)
+        print(f"apply-kdoc: skip - {types_root} not a directory", file=sys.stderr)
         return 0
 
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -593,7 +593,7 @@ def main(argv: list[str]) -> int:
             for e in errs[:20]:
                 print(f"  - {e}", file=sys.stderr)
             if len(errs) > 20:
-                print(f"  … {len(errs) - 20} more", file=sys.stderr)
+                print(f"  ... {len(errs) - 20} more", file=sys.stderr)
             return 3
 
     # Resolve LB sha: explicit > auto-detect from references/liquidbounce.
@@ -604,7 +604,7 @@ def main(argv: list[str]) -> int:
     if lb_sha:
         print(f"apply-kdoc: Source: permalinks pinned to {lb_sha[:12]}", file=sys.stderr)
     if args.force_overwrite:
-        print("apply-kdoc: WARNING — --force-overwrite is on, existing "
+        print("apply-kdoc: WARNING - --force-overwrite is on, existing "
               "TSDoc blocks above manifest-known FQNs will be replaced. "
               "Phase A curated docs will need to be re-applied via "
               "post-patches.sh.", file=sys.stderr)
@@ -625,7 +625,7 @@ def main(argv: list[str]) -> int:
         "overwritten": 0,
     }
     file_cache: dict[Path, str] = {}
-    # Diagnostic categories — recorded only if --report is given.
+    # Diagnostic categories - recorded only if --report is given.
     report_rows: list[tuple[str, str, str]] = []  # (fqn, category, detail)
 
     def get(path: Path) -> str:
@@ -637,13 +637,13 @@ def main(argv: list[str]) -> int:
         """Resolve `parent_fqn` (the FQN of the class/object containing the
         member) to a .d.ts path. Tries:
           1. parent_fqn as-is in dts_index
-          2. *Kt sibling at parent_fqn.<SourceFile>Kt — covers true
+          2. *Kt sibling at parent_fqn.<SourceFile>Kt - covers true
              package-level top-level functions/properties whose `parent`
              was emitted by the extractor as the package itself.
-          3. *Kt sibling at <pkg>.<SourceFile>Kt — covers extension
+          3. *Kt sibling at <pkg>.<SourceFile>Kt - covers extension
              functions whose extractor `parent` is the receiver type
              (e.g. `Response.parse` where Response is in another package).
-        Returns (path, lookup-method) — path is None if none hit."""
+        Returns (path, lookup-method) - path is None if none hit."""
         if parent_fqn in dts_index:
             return dts_index[parent_fqn], "direct"
         src_file = entry.get("source", {}).get("file", "")
@@ -692,7 +692,7 @@ def main(argv: list[str]) -> int:
 
             if fqn in dts_index:
                 path = dts_index[fqn]
-                # Use the .d.ts file basename as the class name — for
+                # Use the .d.ts file basename as the class name - for
                 # nested classes the on-disk name preserves `$`
                 # (e.g. `Outer$Inner.d.ts` declares `class Outer$Inner`),
                 # whereas FQN's last segment is just `Inner`.
@@ -716,7 +716,7 @@ def main(argv: list[str]) -> int:
                                             f"file={path.relative_to(types_root)}"))
                 continue
 
-            # Member of class — parent FQN must be in dts_index (with
+            # Member of class - parent FQN must be in dts_index (with
             # Kt-fallback for top-level functions).
             parts = fqn.rsplit(".", 1)
             if len(parts) != 2:
@@ -730,11 +730,11 @@ def main(argv: list[str]) -> int:
             # before giving up. Covers three cases:
             #   1. Direct hit (most common).
             #   2. Extension fn whose parent FQN happens to also be a
-            #      real class — direct lookup returns the wrong file; we
+            #      real class - direct lookup returns the wrong file; we
             #      need to also try the Kt-recv sibling.
             #   3. Kotlin property emitted as a JVM bean getter
-            #      (`val foo` → `getFoo()`, `val isFoo` → `isFoo()`,
-            #      `var foo` → both `getFoo()` and `setFoo(v)`).
+            #      (`val foo` -> `getFoo()`, `val isFoo` -> `isFoo()`,
+            #      `var foo` -> both `getFoo()` and `setFoo(v)`).
             kind = entry.get("kind")
             path, lookup = resolve_member_parent(parent_fqn, entry)
             if path is None:
@@ -768,7 +768,7 @@ def main(argv: list[str]) -> int:
             # None of the candidates landed.
             # Reclassify a known sub-bucket: members ts-generator emitted
             # only as `// private foo(...)` comments. Check across ALL
-            # candidate (path, member-name) pairs — this covers companion
+            # candidate (path, member-name) pairs - this covers companion
             # files whose `// private member:` comments would otherwise
             # be invisible to the original single-path check.
             if any(is_private_comment_only(get(cp), cm) for cp, cm, _ in candidates):

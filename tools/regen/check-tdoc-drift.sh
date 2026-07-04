@@ -4,7 +4,7 @@
 #
 # Re-runs the kdoc-extractor against the current references/liquidbounce
 # checkout and verifies the committed manifest is up-to-date. Also re-runs
-# apply-kdoc against the committed types/ tree and verifies no diff —
+# apply-kdoc against the committed types/ tree and verifies no diff -
 # catches the case where someone bumped manifest.json but forgot to apply
 # (or where post-patches.sh logic drifted from apply-kdoc.py output).
 #
@@ -33,19 +33,19 @@ LB_DIR="$REPO_ROOT/references/liquidbounce"
 
 # Sanity checks.
 if [[ ! -d "$LB_DIR" ]]; then
-    echo "tdoc-drift: SKIP — references/liquidbounce missing (need submodule init)" >&2
+    echo "tdoc-drift: SKIP - references/liquidbounce missing (need submodule init)" >&2
     exit 0
 fi
 if [[ ! -x "$EXTRACTOR_BIN" ]]; then
-    echo "tdoc-drift: SKIP — extractor not built; run tools/kdoc-extractor/refresh-manifest.sh to build" >&2
+    echo "tdoc-drift: SKIP - extractor not built; run tools/kdoc-extractor/refresh-manifest.sh to build" >&2
     exit 0
 fi
 if [[ ! -f "$APPLY_SCRIPT" ]]; then
-    echo "tdoc-drift: FAIL — apply-kdoc.py missing at $APPLY_SCRIPT" >&2
+    echo "tdoc-drift: FAIL - apply-kdoc.py missing at $APPLY_SCRIPT" >&2
     exit 2
 fi
 
-# Stage 1 — regenerate manifest into a temp path, diff against committed.
+# Stage 1 - regenerate manifest into a temp path, diff against committed.
 TMP_DIR="$(mktemp -d)"
 trap 'rm -rf "$TMP_DIR"' EXIT
 FRESH_MANIFEST="$TMP_DIR/manifest.json"
@@ -64,15 +64,15 @@ fi
 "$EXTRACTOR_BIN" --project "$LB_DIR" --out "$FRESH_MANIFEST" >&2
 
 if ! git --no-pager diff --no-index --exit-code -- "$COMMITTED_MANIFEST" "$FRESH_MANIFEST" >/tmp/tdoc-manifest.diff 2>&1; then
-    echo "tdoc-drift: FAIL — committed manifest is stale vs LB HEAD" >&2
-    echo "  → run tools/kdoc-extractor/refresh-manifest.sh and commit the result" >&2
+    echo "tdoc-drift: FAIL - committed manifest is stale vs LB HEAD" >&2
+    echo "  -> run tools/kdoc-extractor/refresh-manifest.sh and commit the result" >&2
     echo "  (first 60 lines of diff:)" >&2
     head -60 /tmp/tdoc-manifest.diff >&2 || true
     exit 1
 fi
-echo "tdoc-drift: manifest matches LB HEAD ✓" >&2
+echo "tdoc-drift: manifest matches LB HEAD OK" >&2
 
-# Stage 2 — re-apply kdoc to a snapshot of typings and
+# Stage 2 - re-apply kdoc to a snapshot of typings and
 # verify no changes. Catches drift between manifest entries and what's
 # currently injected (e.g. someone hand-edited a TSDoc block, or
 # apply-kdoc.py was changed without re-applying).
@@ -84,13 +84,13 @@ python3 "$APPLY_SCRIPT" "$APPLIED_COPY" "$COMMITTED_MANIFEST" >&2
 if ! git --no-pager diff --no-index --exit-code -- \
         "$REPO_ROOT/typings/types" \
         "$APPLIED_COPY/types" >/tmp/tdoc-apply.diff 2>&1; then
-    echo "tdoc-drift: FAIL — committed types/ doesn't match apply-kdoc output" >&2
-    echo "  → run: python3 tools/regen/apply-kdoc.py typings tools/kdoc-extractor/manifest.json" >&2
+    echo "tdoc-drift: FAIL - committed types/ doesn't match apply-kdoc output" >&2
+    echo "  -> run: python3 tools/regen/apply-kdoc.py typings tools/kdoc-extractor/manifest.json" >&2
     echo "  (first 80 lines of diff:)" >&2
     head -80 /tmp/tdoc-apply.diff >&2 || true
     exit 1
 fi
-echo "tdoc-drift: apply-kdoc output matches committed types ✓" >&2
+echo "tdoc-drift: apply-kdoc output matches committed types OK" >&2
 
 echo "tdoc-drift: OK"
 exit 0

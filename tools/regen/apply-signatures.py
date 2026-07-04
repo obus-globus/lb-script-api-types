@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-apply-signatures — T-Doc #12b post-patch.
+apply-signatures - T-Doc #12b post-patch.
 
 Renames the generated `paramargN` placeholder parameter names in the
 `.d.ts` tree back to their real source names, using the structured
@@ -16,7 +16,7 @@ reads the LiquidBounce *source*, where the names still exist, and emits
 them keyed by the same owner FQN ts-generator emits onto. This patch
 threads those names into the declarations.
 
-Matching is deliberately conservative — a *wrong* name is worse than an
+Matching is deliberately conservative - a *wrong* name is worse than an
 obviously-meaningless `paramarg0`, so we only rename when the mapping is
 unambiguous:
 
@@ -69,7 +69,7 @@ PARAMARG_RE = re.compile(r"\bparamarg(\d+)\b")
 # the source. That inflated arity can coincidentally equal a real source
 # overload's arity and get mislabeled (the continuation slot named after a
 # real param). The continuation is never a source param, so any declaration
-# carrying one is skipped — its arity does not correspond to the source.
+# carrying one is skipped - its arity does not correspond to the source.
 CONTINUATION_RE = re.compile(r"\bContinuation\s*<")
 
 
@@ -177,7 +177,7 @@ def pick_overload(overloads: list[dict], dts_arity: int) -> Optional[dict]:
     pool = []
     for o in overloads:
         # Suspend source overloads have an extra reflected Continuation param, so
-        # their source arity never matches the .d.ts arity space — never match
+        # their source arity never matches the .d.ts arity space - never match
         # one (it would assign wrong names to a coincidental same-arity decl).
         if o.get("suspend"):
             continue
@@ -266,7 +266,7 @@ def rename_in_file(
 def main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(
         prog="apply-signatures",
-        description="T-Doc #12b — rename paramargN to real source names",
+        description="T-Doc #12b - rename paramargN to real source names",
     )
     ap.add_argument("pkg_root", type=Path, help="package root (contains types/)")
     ap.add_argument("signatures", type=Path, help="signatures.json from ts-extract")
@@ -277,7 +277,7 @@ def main(argv: list[str]) -> int:
     pkg_root = args.pkg_root.resolve()
     types_root = pkg_root / "types"
     if not types_root.is_dir():
-        print(f"apply-signatures: skip — {types_root} not a directory", file=sys.stderr)
+        print(f"apply-signatures: skip - {types_root} not a directory", file=sys.stderr)
         return 0
 
     doc = json.loads(args.signatures.read_text(encoding="utf-8"))

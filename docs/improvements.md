@@ -28,7 +28,7 @@ For what's **still on the table**, see [backlog.md](backlog.md).
 | | `PolyglotScript.on()` narrowed to the 3 real lifecycle literals (`load`/`enable`/`disable`) | post-patch |
 | | DSL receiver lambdas (e.g. `ValueGroup.curve { ... }`) typed correctly | post-patch |
 | **Bindings** | F1-F9 fixes: dedup ambient block, drop the phantom `Client` category, `Hand` alias, `attackEntity` `@JvmName`, **field/method name collisions** (`onGround()` un-shadowed), honest `localStorage` facade, `Axis`/`RotationAxis` class-handle facade, fictional `SilentHotbar` global removed | post-patch |
-| | **S1-S4 sanitize**: invalid generated files deleted/repaired (1,026 `package-info` descriptors, 20 unimportable `-Name` file-facades, 872 Kotlin-function-supertype heritage clauses, `constructor`-named members) — whole package parses clean | post-patch |
+| | **S1-S4 sanitize**: invalid generated files deleted/repaired (1,026 `package-info` descriptors, 20 unimportable `-Name` file-facades, 872 Kotlin-function-supertype heritage clauses, `constructor`-named members) - whole package parses clean | post-patch |
 | **Globals** | Auto-detected `ambient.d.ts` (`mc`, `Client`, `RotationUtil`, `Setting`, ...) + GraalVM JS intrinsics declared in `declare global` | ts-defgen + post-patch |
 | **Docs** | **KDoc -> TSDoc injection** - LiquidBounce's Kotlin doc comments become hover docs on classes/members | post-patch (`apply-kdoc`) |
 | **Augmentations** | Hand-written overlays for `ScriptModule`, `ClientLevel`, `ScriptReflectionUtil` + a barrel index | augmentation |
@@ -129,7 +129,7 @@ Idempotent corrections for runtime-vs-reflection name mismatches:
   exist; using it NPEs at runtime).
 - **F4 (reversed 2026-06-09)** - the original F4 *added* `SilentHotbar` as an
   ambient global, but LiquidBounce never `putMember`s it (verified at the pin
-  and at HEAD) — the export typechecked code that ReferenceErrors at runtime.
+  and at HEAD) - the export typechecked code that ReferenceErrors at runtime.
   F4 now **removes** the export; the README documents the `Java.type` recipe
   (the generated type stays importable).
 - **F5** - `ScriptInteractionUtil.attackEntityJs` is `@JvmName("attackEntity")`;
@@ -142,7 +142,7 @@ Idempotent corrections for runtime-vs-reflection name mismatches:
   with `lib.dom` loaded). Replaced with an inline `ScriptLocalStorage` facade
   matching the Java `Map` surface.
 - **F9** - `Axis` / `RotationAxis` are bound as `Axis::class.java` (a host
-  *class handle*), but were typed as the instance interface — so the real
+  *class handle*), but were typed as the instance interface - so the real
   surface (`XP/XN/YP/YN/ZP/ZN`, `of()`) didn't typecheck while nonexistent
   instance calls did. Retyped via an `AxisClassHandle` facade.
 - **F7** - resolve Java **field/method name collisions** (`fix-member-collisions.py`).
@@ -151,9 +151,9 @@ Idempotent corrections for runtime-vs-reflection name mismatches:
   declaration silently shadows the method and `x.onGround()` becomes "not
   callable". Drop one declaration per class so the survivor is usable, by a
   heuristic that never loses functionality:
-    - *mutable field + a method whose every overload is zero-arg* → keep the
+    - *mutable field + a method whose every overload is zero-arg* -> keep the
       **field** (`Vec3.x`, matrix `.m00`, callable T-1 bindings);
-    - *otherwise* (readonly field, **or** any parameterized overload) → keep the
+    - *otherwise* (readonly field, **or** any parameterized overload) -> keep the
       **method** (`Entity.onGround()`, record `.value()`, enum `.name()`).
   Either form is reachable at runtime regardless (GraalJS resolves field-read vs
   method-invoke by usage); the choice only decides which form is *typed*. The

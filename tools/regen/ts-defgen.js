@@ -104,7 +104,7 @@ function findAllClassInfos() {
     // @CallerSensitive method that used to throw under Java 25's GraalVM host
     // interop, which is why we previously routed around it via a Fabric-mod
     // ScriptHelper static; LiquidBounce b759cac57 (PR #8437) fixed that at the
-    // Truffle layer, so the direct call works again — and because the generator
+    // Truffle layer, so the direct call works again - and because the generator
     // classes are now loaded via a child URLClassLoader (see generate()), they
     // are NOT on this classloader and so no longer leak into the output as
     // types/me/commandblock2 / types/me/ntrrgc.
@@ -229,10 +229,10 @@ function generate(path, packageName) {
                 kdocSource = fromJsonMethod.invoke(null, json);
                 Client.displayChatMessage("loaded kdoc manifest with " + kdocSource.size() + " entries");
             } else {
-                Client.displayChatMessage("kdoc manifest absent at " + manifestPath + " — emitting without inline TSDoc");
+                Client.displayChatMessage("kdoc manifest absent at " + manifestPath + " - emitting without inline TSDoc");
             }
         } catch (e) {
-            Client.displayChatMessage("kdoc manifest load failed: " + e + " — continuing without inline TSDoc");
+            Client.displayChatMessage("kdoc manifest load failed: " + e + " - continuing without inline TSDoc");
             kdocSource = null;
         }
 
@@ -326,7 +326,7 @@ ${eventEntries.map((entry) => `on(eventName: "${entry[0]}", handler: (${entry[0]
             Java.type("java.nio.charset.StandardCharsets").UTF_8);
         // Runtime-bindings sidecar: dump every real script-context binding
         // (name, backing Java class, member names) so post-patch can verify
-        // ambient.d.ts against RUNTIME truth (check-ambient-contract.py) —
+        // ambient.d.ts against RUNTIME truth (check-ambient-contract.py) -
         // an ambient export with no runtime binding is a typing that
         // ReferenceErrors in real scripts (the F4/SilentHotbar bug class).
         try {
@@ -410,7 +410,7 @@ if (Java.type("java.lang.System").getenv("SCRIPT_TYPEGEN_BUILD")) {
     // generate() writes + flushes every .d.ts synchronously before returning, so
     // the output is complete here. We deliberately do NOT call mc.close(): on
     // MC 26.2 it no longer terminates the JVM (the client then idles until the
-    // regen timeout — ~100 min wasted), and it can itself block. Flush stdout and
+    // regen timeout - ~100 min wasted), and it can itself block. Flush stdout and
     // HARD-exit via Runtime.halt (skips shutdown hooks that could re-hang) so the
     // run finishes the moment introspection completes (~15-20 min, not ~2 h).
     try { Java.type("java.lang.System").out.flush(); } catch (e) { /* ignore */ }

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/obus-globus/lb-script-api-types/tools/kdoc-extractor/manifest.schema.json",
   "title": "kdoc-extractor manifest",
-  "description": "Output of the T-Doc Phase B kdoc-extractor (PSI walker). Envelope wraps FQN→entry map; consumed by tools/regen/apply-kdoc.py and ts-generator's KDocSource.",
+  "description": "Output of the T-Doc Phase B kdoc-extractor (PSI walker). Envelope wraps FQN->entry map; consumed by tools/regen/apply-kdoc.py and ts-generator's KDocSource.",
   "type": "object",
   "required": ["schemaVersion", "entries"],
   "additionalProperties": false,
@@ -14,7 +14,7 @@
     },
     "entries": {
       "type": "object",
-      "description": "Map of fully-qualified Kotlin name → entry (or list of entries for overloads).",
+      "description": "Map of fully-qualified Kotlin name -> entry (or list of entries for overloads).",
       "additionalProperties": {
         "oneOf": [
           { "$ref": "#/$defs/entry" },
@@ -53,7 +53,7 @@
         "params": {
           "type": "object",
           "additionalProperties": { "type": "string" },
-          "description": "@param name → KDoc description."
+          "description": "@param name -> KDoc description."
         },
         "returns":    { "type": "string", "description": "@return value description." },
         "deprecated": { "type": "string", "description": "@deprecated message." },

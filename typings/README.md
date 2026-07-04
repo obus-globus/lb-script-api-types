@@ -33,7 +33,7 @@ Pull in the ambient script globals through `tsconfig.json`:
 ```jsonc
 {
   "compilerOptions": {
-    "lib": ["es2023"],            // no DOM — see below
+    "lib": ["es2023"],            // no DOM - see below
     "types": ["@wunk/lb-script-api-types/ambient"]
   }
 }
@@ -47,7 +47,7 @@ don't exist at runtime.
 
 Class-value bindings (`Vec3i`, `BlockPos`, `Hand`, `MathHelper`,
 `RotationAxis`, ...) are raw `java.lang.Class` values at runtime: construct
-directly (`new Vec3i(1, 2, 3)`), but **statics — including enum constants —
+directly (`new Vec3i(1, 2, 3)`), but **statics - including enum constants -
 live behind `.static`** (`Hand.static.MAIN_HAND`,
 `RotationAxis.static.YP.rotationDegrees(90)`). Direct static access compiles
 against older typings but is `undefined` at runtime; these types model the
@@ -85,7 +85,7 @@ The package ships one `.d.ts` per class (mirroring the JVM package layout), so
 
 By default `Java.type(...)` returns `any` (or takes an explicit generic).
 Opt into the string-literal registry and it is fully typed from the class
-name alone — autocomplete on the string, typed statics/constructors on the
+name alone - autocomplete on the string, typed statics/constructors on the
 result. Works in plain JS too (the editor language service picks it up from
 jsconfig):
 
@@ -98,10 +98,10 @@ jsconfig):
 
 ```ts
 const SilentHotbar = Java.type("net.ccbluex.liquidbounce.utils.client.SilentHotbar");
-SilentHotbar.INSTANCE.serversideSlot;   // typed — no generic, no import
+SilentHotbar.INSTANCE.serversideSlot;   // typed - no generic, no import
 ```
 
-`registry-full` covers every generated class (~49k) — great for editor use,
+`registry-full` covers every generated class (~49k) - great for editor use,
 but it adds tens of seconds to batch `tsc` runs, so prefer `registry-lb` in
 CI. Unknown class names fall back to the generic `any` overload either way.
 

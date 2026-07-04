@@ -4,7 +4,7 @@ Output sanity gate for the auto-regen pipeline.
 
 A regen can succeed and still ship a SILENTLY BROKEN tree (e.g. the unanchored
 `references/` .gitignore once dropped net.minecraft.references.* classes while
-the registry still referenced them — a dangling import nobody noticed). The
+the registry still referenced them - a dangling import nobody noticed). The
 typecheck gate catches *some* of that, but this is a cheap, direct, version-
 independent backstop that's meant to be a HARD gate for auto-merge/publish:
 
@@ -12,7 +12,7 @@ independent backstop that's meant to be a HARD gate for auto-merge/publish:
      (registry-lb, registry-full) reference must have an emitted `.d.ts`.
      This is exactly the BlockItemId failure mode.
   2. floor: the types tree must have at least --min-types files (catches a
-     catastrophic drop — half the tree vanishing, etc.).
+     catastrophic drop - half the tree vanishing, etc.).
   3. optional delta: if --baseline-count is given, fail when the new count is
      more than --max-shrink-pct smaller than the baseline (catches a smaller-
      but-still-large silent drop that's above the absolute floor).
@@ -76,7 +76,7 @@ def main() -> int:
     pkg = args.pkg_root
     types_dir = pkg / "types"
     if not types_dir.is_dir():
-        print(f"FAIL: {types_dir} not found — wrong --pkg-root?", file=sys.stderr)
+        print(f"FAIL: {types_dir} not found - wrong --pkg-root?", file=sys.stderr)
         return 2
 
     problems: list[str] = []

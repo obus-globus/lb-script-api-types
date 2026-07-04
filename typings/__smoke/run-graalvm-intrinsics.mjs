@@ -1,4 +1,4 @@
-// Smoke runner for graalvm-intrinsics.test.ts — verifies T-4 declarations
+// Smoke runner for graalvm-intrinsics.test.ts - verifies T-4 declarations
 // (Java.type, Polyglot.import/export, print, load, Graal, ...) compile and
 // reject mis-uses.
 //
@@ -63,5 +63,5 @@ console.log(`smoke: ${ours.length} in-file diagnostic(s), ${outOfTree} out-of-tr
 
 if (!ok) process.exit(1);
 console.log(
-    "OK: graalvm-intrinsics.test.ts — Java.type, Polyglot, print, Graal compile; mis-uses still rejected.",
+    "OK: graalvm-intrinsics.test.ts - Java.type, Polyglot, print, Graal compile; mis-uses still rejected.",
 );

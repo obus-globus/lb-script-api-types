@@ -1,4 +1,4 @@
-// Smoke test — verifies T-Doc Phase A (hand-curated) AND Phase C (manifest-
+// Smoke test - verifies T-Doc Phase A (hand-curated) AND Phase C (manifest-
 // driven) TSDoc tooltips have attached to script-facing methods. The
 // manifest-driven entries are picked from FQNs that we know were in the
 // kdoc-extractor output AND in the script-api-types surface, so the
@@ -8,11 +8,11 @@
 // Two layers of assertions:
 //   1. Hand-picked Phase A + Phase C tooltips MUST be present (the
 //      `REQUIRED_DOCS` table).
-//   2. Aggregate coverage MUST be ≥ MIN_MODULE_DOC_PCT % across all
+//   2. Aggregate coverage MUST be >= MIN_MODULE_DOC_PCT % across all
 //      `net/ccbluex/liquidbounce/features/module/modules/*` class files
-//      — catches silent loss of upstream KDocs after a regen.
+//      - catches silent loss of upstream KDocs after a regen.
 //   3. Every Source: footer in the package MUST point at the LB sha
-//      currently checked out under references/liquidbounce — catches
+//      currently checked out under references/liquidbounce - catches
 //      stale permalinks after an LB bump.
 
 import { dirname, resolve } from "node:path";
@@ -84,7 +84,7 @@ for (const [relPath, member, expectedSubstr] of REQUIRED_DOCS) {
     const absPath = resolve(packageRoot, relPath);
     const raw = readFileSync(absPath, "utf8");
     if (!raw.includes(expectedSubstr)) {
-        console.error(`FAIL ${relPath}: TSDoc substring missing — "${expectedSubstr}"`);
+        console.error(`FAIL ${relPath}: TSDoc substring missing - "${expectedSubstr}"`);
         failures++;
         continue;
     }
@@ -106,7 +106,7 @@ if (failures > 0) {
 console.log(`\nOK: ${REQUIRED_DOCS.length}/${REQUIRED_DOCS.length} required TSDoc blocks present`);
 
 // ---------------------------------------------------------------
-// Aggregate coverage check — every `class` / `interface` declaration in
+// Aggregate coverage check - every `class` / `interface` declaration in
 // the modules tree must have a /** ... */ block immediately above it.
 // We're lenient about exact threshold because not every Kotlin class has
 // a KDoc upstream, but a sudden drop is suspicious.
@@ -163,7 +163,7 @@ if (pct < MIN_MODULE_DOC_PCT) {
 }
 
 // ---------------------------------------------------------------
-// Source-link freshness — every {@link https://github.com/.../blob/<sha>/...}
+// Source-link freshness - every {@link https://github.com/.../blob/<sha>/...}
 // must point at the currently checked-out LB sha (or be sha-less, if
 // references/liquidbounce isn't a git checkout).
 // ---------------------------------------------------------------
@@ -192,13 +192,13 @@ if (expectedSha) {
         console.error(`\nFAIL: stale Source: permalinks in ${staleByFile.size} files (expected sha ${expectedSha.slice(0, 12)}):`);
         let shown = 0;
         for (const [f, shas] of staleByFile) {
-            console.error(`  ${f.replace(packageRoot, ".")} → ${[...shas].map((s) => s.slice(0, 12)).join(", ")}`);
-            if (++shown >= 5) { console.error(`  … ${staleByFile.size - shown} more`); break; }
+            console.error(`  ${f.replace(packageRoot, ".")} -> ${[...shas].map((s) => s.slice(0, 12)).join(", ")}`);
+            if (++shown >= 5) { console.error(`  ... ${staleByFile.size - shown} more`); break; }
         }
         console.error(`\nRun: python3 tools/regen/apply-kdoc.py packages/script-api-types tools/kdoc-extractor/manifest.json`);
         process.exit(1);
     }
     console.log(`OK: all Source: permalinks pinned to ${expectedSha.slice(0, 12)}`);
 } else {
-    console.log("(skipped permalink freshness check — references/liquidbounce is not a git checkout)");
+    console.log("(skipped permalink freshness check - references/liquidbounce is not a git checkout)");
 }

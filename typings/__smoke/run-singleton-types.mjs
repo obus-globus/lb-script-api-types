@@ -1,4 +1,4 @@
-// Smoke runner for singleton-types.test.ts — mirrors run-setting-types.mjs
+// Smoke runner for singleton-types.test.ts - mirrors run-setting-types.mjs
 // but targets the Phase 5.3.2 singleton Collection type smoke test.
 //
 // Run: node packages/script-api-types/__smoke/run-singleton-types.mjs
@@ -62,7 +62,7 @@ console.log(`smoke: ${ours.length} in-file diagnostic(s), ${outOfTree} out-of-tr
 
 if (ok) {
     console.log(
-        "OK: singleton-types.test.ts compiles cleanly — moduleManager/commandManager " +
+        "OK: singleton-types.test.ts compiles cleanly - moduleManager/commandManager " +
         "are properly typed, not (Object | null)[]. @ts-expect-error consumed real errors.",
     );
     process.exit(0);

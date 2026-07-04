@@ -1,4 +1,4 @@
-// Smoke runner for register-script-callable.test.ts — verifies that
+// Smoke runner for register-script-callable.test.ts - verifies that
 // `registerScript(...)` is directly callable (no TS2349).
 //
 // Run: node packages/script-api-types/__smoke/run-register-script-callable.mjs
@@ -62,7 +62,7 @@ console.log(`smoke: ${ours.length} in-file diagnostic(s), ${outOfTree} out-of-tr
 
 if (ok) {
     console.log(
-        "OK: register-script-callable.test.ts — registerScript(...) is callable " +
+        "OK: register-script-callable.test.ts - registerScript(...) is callable " +
         "(TS2349 fixed), @ts-expect-error on bad arg consumed a real TS2345.",
     );
     process.exit(0);

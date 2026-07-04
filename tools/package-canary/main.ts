@@ -1,11 +1,11 @@
-// Packaging canary — compiled against the PACKED package (npm pack →
+// Packaging canary - compiled against the PACKED package (npm pack ->
 // install tarball), with a stock consumer tsconfig. Catches what the
 // in-repo gate structurally can't: files-glob mistakes, typesVersions
 // resolution, the `types` entry, and ambient/augmentation wiring as a
 // consumer actually experiences it (skipLibCheck: true).
 //
 // Same convention as the __smoke suite: positive probes must compile,
-// negative probes use @ts-expect-error — if a type silently degrades to
+// negative probes use @ts-expect-error - if a type silently degrades to
 // `any`, the directive turns unused (TS2578) and the canary fails.
 
 const script = registerScript({ name: "canary", version: "1.0.0", authors: ["ci"] });
@@ -17,7 +17,7 @@ script.registerModule({ name: "m", category: "Combat", description: "d" }, (modu
         // @ts-expect-error attack payload is typed, not any
         e.thisPropertyDoesNotExist;
     });
-    // The nested-event class (TitleEvent$Title) — was silently `any` before
+    // The nested-event class (TitleEvent$Title) - was silently `any` before
     // the binary-name import fix.
     module.on("title", (e) => {
         // @ts-expect-error title payload is typed, not any
@@ -36,7 +36,7 @@ void n;
 localStorage.getItem("k");
 
 // Class-value bindings: construct directly, statics ONLY via .static
-// (verified in a live client — direct static access is undefined at runtime).
+// (verified in a live client - direct static access is undefined at runtime).
 const q = RotationAxis.static.YP.rotationDegrees(90);
 void q;
 // Single-overload ctor: direct `new` carries the signature.
@@ -58,7 +58,7 @@ InteractionUtil.useItem(Hand.static.MAIN_HAND);
 SilentHotbar.INSTANCE;
 
 // Typed Java.type via the opt-in registry (registry-lb in tsconfig types):
-// fully inferred from the string literal — no generic, no import.
+// fully inferred from the string literal - no generic, no import.
 const shClass = Java.type("net.ccbluex.liquidbounce.utils.client.SilentHotbar");
 const slot: number = shClass.INSTANCE.serversideSlot;
 void slot;

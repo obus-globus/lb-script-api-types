@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Regenerate tools/kdoc-extractor/signatures.json from the current
-# LiquidBounce checkout (#12b — real parameter names + types).
+# LiquidBounce checkout (#12b - real parameter names + types).
 #
 # The signatures manifest carries the structured value-parameter list
 # (name, type, nullable, vararg, receiver) for every function/constructor,
@@ -31,7 +31,7 @@ if [[ ! -x "$PY" ]]; then
 fi
 
 if [[ ! -d "$LB_DIR/src/main/kotlin" ]]; then
-    echo "FAIL: $LB_DIR has no src/main/kotlin — run ./fetch-references.sh first" >&2
+    echo "FAIL: $LB_DIR has no src/main/kotlin - run ./fetch-references.sh first" >&2
     exit 2
 fi
 

@@ -11,7 +11,7 @@
 # reference tree stays consistent with the tools that depend on it.
 #
 # A patch that fails to apply prints a loud warning but the script keeps
-# going — the caller is expected to surface the failure in its own log.
+# going - the caller is expected to surface the failure in its own log.
 
 set -euo pipefail
 
@@ -31,7 +31,7 @@ for patch in "$PATCHES"/*.patch; do
       | sed -E 's|^diff --git a/([^ ]+) b/.*|\1|; s|^\+\+\+ b/||; s|^--- a/||' \
       | head -1)"
     if [[ -z "$first_path" ]]; then
-      echo "WARN: $patch has no recognisable path header — skipping" >&2
+      echo "WARN: $patch has no recognisable path header - skipping" >&2
       failed=1; continue
     fi
     target_name="${first_path%%/*}"
@@ -42,7 +42,7 @@ for patch in "$PATCHES"/*.patch; do
   fi
   target="$REFS/$target_name"
   if [[ ! -d "$target" ]]; then
-    echo "WARN: $patch targets $target_name which is not checked out — skipping" >&2
+    echo "WARN: $patch targets $target_name which is not checked out - skipping" >&2
     failed=1; continue
   fi
 
@@ -53,7 +53,7 @@ for patch in "$PATCHES"/*.patch; do
     continue
   fi
   if ! git -C "$target" apply --check "$patch" 2>/dev/null; then
-    echo "WARN: $patch no longer applies cleanly — upstream likely drifted. Needs re-authoring." >&2
+    echo "WARN: $patch no longer applies cleanly - upstream likely drifted. Needs re-authoring." >&2
     failed=1; continue
   fi
   git -C "$target" apply "$patch"
@@ -61,6 +61,6 @@ done
 
 if [[ $failed -ne 0 ]]; then
   echo >&2
-  echo "One or more reference patches failed — see docs/references-patches.md for recovery." >&2
+  echo "One or more reference patches failed - see docs/references-patches.md for recovery." >&2
   exit 1
 fi

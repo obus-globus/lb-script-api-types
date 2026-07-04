@@ -1,5 +1,5 @@
-// Smoke test — verifies T-6: ScriptSetting factory parameters are typed
-// objects with named keys (name, default, range, suffix, choices, …)
+// Smoke test - verifies T-6: ScriptSetting factory parameters are typed
+// objects with named keys (name, default, range, suffix, choices, ...)
 // instead of opaque `org.graalvm.polyglot.Value`. Without this, autocomplete
 // shows nothing and authors have to read Kotlin source to know what to pass.
 //
@@ -52,17 +52,17 @@ void _mc;
 // --- Negative ---
 
 // Missing required `range`.
-// @ts-expect-error TS2345 — range is required
+// @ts-expect-error TS2345 - range is required
 setting.int({ name: "x", default: 0 });
 
-// Wrong default type (boolean → number expected).
-// @ts-expect-error TS2322 — boolean is not number
+// Wrong default type (boolean -> number expected).
+// @ts-expect-error TS2322 - boolean is not number
 setting.int({ name: "x", default: true, range: [0, 1] });
 
 // Choose: default is not one of the choices (literal narrowing rejects it).
-// @ts-expect-error TS2322 — "missing" is not in choices union
+// @ts-expect-error TS2322 - "missing" is not in choices union
 setting.choose({ name: "mode", choices: ["a", "b"] as const, default: "missing" });
 
 // multiChoose default is an array of strings, but only choice members are allowed.
-// @ts-expect-error TS2322 — "c" is not in choices
+// @ts-expect-error TS2322 - "c" is not in choices
 setting.multiChoose({ name: "f", choices: ["a", "b"] as const, default: ["c"] });

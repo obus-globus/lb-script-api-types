@@ -1,8 +1,8 @@
 name: Check upstream LiquidBounce & regenerate
 
 # Runs daily (and on manual dispatch). Detects the current upstream LiquidBounce
-# (nextgen) version + commit, and — unless we're already on it (main's pin) or a
-# branch already exists for that build — bumps the pin, runs the whole regen flow
+# (nextgen) version + commit, and - unless we're already on it (main's pin) or a
+# branch already exists for that build - bumps the pin, runs the whole regen flow
 # against it, and pushes the result to a per-build branch for review. It does NOT
 # publish and does NOT open a PR.
 #
@@ -12,7 +12,7 @@ name: Check upstream LiquidBounce & regenerate
 #
 # Same caveats as regen-types.yml: the flow launches a headless Minecraft client
 # (~50-60 min on Mesa softpipe) and pulls several GB; GitHub-hosted runners are
-# tight on disk/CPU — a self-hosted runner is recommended for routine use.
+# tight on disk/CPU - a self-hosted runner is recommended for routine use.
 on:
   schedule:
     # Daily at 04:07 UTC. Off the top of the hour (GitHub delays/sheds those).
@@ -48,7 +48,7 @@ jobs:
         id: lb
         env:
           # Pass the untrusted dispatch input through env (never interpolate a
-          # ${{ }} expression straight into a run: script — that is a shell
+          # ${{ }} expression straight into a run: script - that is a shell
           # injection surface).
           LB_REF: ${{ inputs.lb_ref }}
         run: |
@@ -64,7 +64,7 @@ jobs:
           RAW="https://raw.githubusercontent.com/ccbluex/liquidbounce/$SHA"
           # mod_version lives in gradle.properties; the concrete Minecraft version
           # lives in gradle/libs.versions.toml (gradle.properties only has a RANGE,
-          # mod_mc_version) — same source stamp-version.mjs reads.
+          # mod_mc_version) - same source stamp-version.mjs reads.
           VER="$(curl -fsSL "$RAW/gradle.properties" | grep -E '^mod_version=' | head -n1 | cut -d= -f2 | tr -d '[:space:]')"
           MC="$(curl -fsSL "$RAW/gradle/libs.versions.toml" | grep -E '^[[:space:]]*minecraft[[:space:]]*=' | head -n1 | sed -E 's/.*=[[:space:]]*"?([^"#]+)"?.*/\1/' | tr -d '[:space:]')"
           BRANCH="regen/lb-${VER:-unknown}-${SHORT}"
@@ -81,7 +81,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       # 2. Skip when there's nothing to do: either main is already pinned to this
-      #    upstream build (we regenerated + merged it — the common case for the
+      #    upstream build (we regenerated + merged it - the common case for the
       #    daily run), or a review branch for it already exists (pending merge).
       - name: Check if already done
         id: branch
@@ -93,10 +93,10 @@ jobs:
           CURRENT_PIN="$(grep -E '^PINNED_SHA=' tools/regen-types.sh | head -n1 | cut -d'"' -f2)"
           if [ "$CURRENT_PIN" = "$LB_SHA" ]; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
-            echo "main is already pinned to $LB_SHA — up to date, nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "main is already pinned to $LB_SHA - up to date, nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
           elif git ls-remote --exit-code --heads origin "$LB_BRANCH" >/dev/null 2>&1; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
-            echo "Branch $LB_BRANCH already exists (pending review) — nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "Branch $LB_BRANCH already exists (pending review) - nothing to do." | tee -a "$GITHUB_STEP_SUMMARY"
           else
             echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
@@ -127,7 +127,7 @@ jobs:
       # Persist the generator's per-class render cache (ModuleCache) across runs so
       # the introspection walk reuses prior renders. Correctness is enforced inside
       # the generator (each entry is keyed by jar + generator content shas), so a
-      # stale restore is safe — it just yields fewer hits. Unique key per run +
+      # stale restore is safe - it just yields fewer hits. Unique key per run +
       # prefix restore-keys = always restore the latest, always save a fresh copy.
       - name: Cache ModuleCache render cache
         if: steps.branch.outputs.exists == 'false'
@@ -137,8 +137,8 @@ jobs:
           key: regen-modcache-${{ runner.os }}-${{ github.run_id }}
           restore-keys: regen-modcache-${{ runner.os }}-
 
-      # 3. Run the whole flow inside the regen container (build generator →
-      #    headless introspection → manifest refresh → post-patches → promote →
+      # 3. Run the whole flow inside the regen container (build generator ->
+      #    headless introspection -> manifest refresh -> post-patches -> promote ->
       #    stamp + gate). continue-on-error: a NEW Minecraft version legitimately
       #    grows the gate's error set, which we want surfaced for review, not used
       #    to block the branch (the human re-baselines on merge). typings/ is
@@ -161,7 +161,7 @@ jobs:
             lb-regen:ci
           rc=$?
           # Always reclaim ownership of the container-written tree (root-owned),
-          # even if the regen failed — later steps (cache save, gate, git add) and
+          # even if the regen failed - later steps (cache save, gate, git add) and
           # the actions/cache post-step must be able to read/write it.
           sudo chown -R "$(id -u):$(id -g)" . || true
           exit $rc
@@ -176,7 +176,7 @@ jobs:
 
       # 4. Authoritative gates (single run here; the container skips them via
       #    SKIP_GATES=1). Each is non-blocking and records a pass/fail output so
-      #    the decision step can branch on it — fail-closed: anything other than a
+      #    the decision step can branch on it - fail-closed: anything other than a
       #    clean "pass" sends the regen to the review-branch path, never auto-ship.
       - name: Typecheck gate
         id: gate
@@ -209,7 +209,7 @@ jobs:
             echo "sanity=fail" >> "$GITHUB_OUTPUT"
           fi
 
-      # Generator unit/regression tests (Kotest) — guards the generator-root
+      # Generator unit/regression tests (Kotest) - guards the generator-root
       # fixes (ctor visibility incl. the TS2675 null-visibility case, overload
       # dedup, type-param substitution) from silently regressing. Run inside the
       # already-built regen image (JDK 21 + warm /cache/gradle from the shadowJar
@@ -247,7 +247,7 @@ jobs:
         run: |
           set -euo pipefail
           if [ -z "$(git status --porcelain typings/ README.md tools/regen-types.sh tools/kdoc-extractor/)" ]; then
-            echo "::warning::regen produced no changes (failed before promote?) — nothing to do."
+            echo "::warning::regen produced no changes (failed before promote?) - nothing to do."
             echo "auto=false" >> "$GITHUB_OUTPUT"; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
           echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -266,7 +266,7 @@ jobs:
           echo "auto=$AUTO" >> "$GITHUB_OUTPUT"
           {
             echo "### Decision"
-            echo "- gate: \`${{ steps.gate.outputs.gate }}\` · canary: \`${{ steps.canary.outputs.canary }}\` · sanity: \`${{ steps.sanity.outputs.sanity }}\` · gentest: \`${{ steps.gentest.outputs.gentest }}\` · mc-unchanged: \`$MC_SAME\` (was \`$OLD_MC\`, now \`$NEW_MC\`)"
+            echo "- gate: \`${{ steps.gate.outputs.gate }}\` | canary: \`${{ steps.canary.outputs.canary }}\` | sanity: \`${{ steps.sanity.outputs.sanity }}\` | gentest: \`${{ steps.gentest.outputs.gentest }}\` | mc-unchanged: \`$MC_SAME\` (was \`$OLD_MC\`, now \`$NEW_MC\`)"
             echo "- AUTO_RELEASE var: \`${{ vars.AUTO_RELEASE }}\`"
             echo "- **auto-release: $AUTO**"
           } >> "$GITHUB_STEP_SUMMARY"
@@ -295,17 +295,17 @@ jobs:
           # npm registry. No `npm version patch` here - that would double-bump.
           VER="$(node -p "require('./typings/package.json').version")"
           git add typings README.md tools/regen-types.sh tools/kdoc-extractor
-          git commit -m "regen+release: v$VER — LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)
+          git commit -m "regen+release: v$VER - LiquidBounce $LB_VER (mc $LB_MC, $LB_SHORT)
 
           Automated clean regen against ccbluex/liquidbounce@$LB_SHA
-          (gate pass, canary ok, output sanity ok, MC unchanged) — auto-releasing v$VER."
+          (gate pass, canary ok, output sanity ok, MC unchanged) - auto-releasing v$VER."
           git tag -a "v$VER" -m "v$VER" HEAD
           git push origin HEAD:main "v$VER"
           LB_BLOCK="$(node -p "JSON.stringify(require('./typings/package.json').liquidbounce, null, 2)")"
           gh release create "v$VER" --title "v$VER" --notes "$(printf 'Automated types build %s (LiquidBounce %s / MC %s).\n\nProvenance:\n```json\n%s\n```' "$VER" "$LB_VER" "$LB_MC" "$LB_BLOCK")"
           # Publish via the single trusted-publisher workflow (OIDC, no token).
           gh workflow run npm-publish.yml --ref main -f dry_run=false
-          echo "✅ Auto-released **v$VER** on main; dispatched npm-publish.yml to publish." >> "$GITHUB_STEP_SUMMARY"
+          echo "Auto-released **v$VER** on main; dispatched npm-publish.yml to publish." >> "$GITHUB_STEP_SUMMARY"
 
       # 6b. Not clean / not enabled -> push a per-build branch for human review.
       - name: Push review branch
@@ -352,7 +352,7 @@ jobs:
       # FAIL-OPEN - unlike the gates (fail-closed), a notification failure must
       # NEVER block or break the pipeline: continue-on-error + `|| true`, and a
       # graceful skip if the DISCORD_WEBHOOK secret is absent.
-      - name: Notify — regen needs review
+      - name: Notify - regen needs review
         if: steps.branch.outputs.exists == 'false' && steps.decide.outputs.auto != 'true' && steps.decide.outputs.changed == 'true'
         continue-on-error: true
         env:
@@ -375,17 +375,17 @@ jobs:
           # printf %s (not string interpolation) keeps the upstream-derived values
           # out of the format string; jq escapes them for JSON; <> suppresses the
           # Discord link previews.
-          CONTENT="$(printf '🔁 **Regen needs review**: LiquidBounce %s (mc %s, `%s`)\nRouted to a review branch instead of auto-releasing.\nGates: gate=`%s` canary=`%s` sanity=`%s` gentest=`%s`\nBranch: <%s>\nRun: <%s>' \
+          CONTENT="$(printf '**Regen needs review**: LiquidBounce %s (mc %s, `%s`)\nRouted to a review branch instead of auto-releasing.\nGates: gate=`%s` canary=`%s` sanity=`%s` gentest=`%s`\nBranch: <%s>\nRun: <%s>' \
             "$LB_VER" "$LB_MC" "$LB_SHORT" "$GATE" "$CANARY" "$SANITY" "$GENTEST" "$BRANCH_URL" "$RUN_URL")"
           jq -nc --arg c "$CONTENT" '{content:$c}' \
             | curl -sS -m 15 -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK" \
             || echo "::warning::Discord notify (needs-review) failed - non-blocking, review branch \`$LB_BRANCH\` still pushed."
 
       # Catch-all for a HARD failure (regen crash, image build, an uncaught
-      # step) that never reached the review/release routing — otherwise the only
+      # step) that never reached the review/release routing - otherwise the only
       # signal is GitHub's default scheduled-failure email to the workflow's
       # account. Also fail-open.
-      - name: Notify — regen job failed
+      - name: Notify - regen job failed
         if: failure() && steps.branch.outputs.exists == 'false'
         continue-on-error: true
         env:
@@ -398,7 +398,7 @@ jobs:
         run: |
           [ -n "${DISCORD_WEBHOOK:-}" ] || { echo "::warning::DISCORD_WEBHOOK secret not set - skipping notify"; exit 0; }
           RUN_URL="$SERVER_URL/$REPO/actions/runs/$RUN_ID"
-          CONTENT="$(printf '🛑 **Regen FAILED**: LiquidBounce %s (`%s`)\nThe job failed before it could route to a review branch or release.\nRun: <%s>' \
+          CONTENT="$(printf '**Regen FAILED**: LiquidBounce %s (`%s`)\nThe job failed before it could route to a review branch or release.\nRun: <%s>' \
             "$LB_VER" "$LB_SHORT" "$RUN_URL")"
           jq -nc --arg c "$CONTENT" '{content:$c}' \
             | curl -sS -m 15 -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK" \

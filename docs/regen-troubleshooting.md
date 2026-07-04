@@ -6,7 +6,7 @@
 fails the instant it starts reflecting:
 
 ```
-LiquidBounce ▸ Error generating TypeScript definitions:
+LiquidBounce > Error generating TypeScript definitions:
   Class kotlin.reflect.KParameter$Kind does not have member field
   'kotlin.reflect.KParameter$Kind CONTEXT'
 [ScriptAPI] Failed to load script 'ts-defgen.js'.

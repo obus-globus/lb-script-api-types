@@ -1,4 +1,4 @@
-// Smoke runner for dsl-receiver.test.ts — verifies T-6 declarations
+// Smoke runner for dsl-receiver.test.ts - verifies T-6 declarations
 // (Java.type, Polyglot.import/export, print, load, Graal, ...) compile and
 // reject mis-uses.
 //
@@ -63,5 +63,5 @@ console.log(`smoke: ${ours.length} in-file diagnostic(s), ${outOfTree} out-of-tr
 
 if (!ok) process.exit(1);
 console.log(
-    "OK: dsl-receiver.test.ts — ValueGroup.curve receiver lambda typed correctly",
+    "OK: dsl-receiver.test.ts - ValueGroup.curve receiver lambda typed correctly",
 );

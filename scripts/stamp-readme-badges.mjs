@@ -45,7 +45,7 @@ for (const rel of ["typings/README.md", "README.md"]) {
     const p = resolve(root, rel);
     if (!existsSync(p)) continue;
     const cur = readFileSync(p, "utf8");
-    if (!re.test(cur)) { console.error(`stamp-readme-badges: no markers in ${rel} — skipped`); continue; }
+    if (!re.test(cur)) { console.error(`stamp-readme-badges: no markers in ${rel} - skipped`); continue; }
     const next = cur.replace(re, block);
     if (next !== cur) { writeFileSync(p, next); changed++; console.error(`stamp-readme-badges: updated ${rel}`); }
 }

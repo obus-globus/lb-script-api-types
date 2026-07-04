@@ -7,7 +7,7 @@
 # harness extracts the REAL step script from the workflow YAML (so it can't drift
 # from what actually runs), substitutes the ${{ }} step-output tokens and stubs
 # git/node per case, runs it, and asserts auto/changed + the derived route across
-# the full matrix. Nothing real is touched — no git writes, no regen, no publish.
+# the full matrix. Nothing real is touched - no git writes, no regen, no publish.
 #
 # Usage: tools/regen/test-decide-routing.sh   (needs bash + ruby)
 set -uo pipefail
@@ -48,7 +48,7 @@ run_case() {
       if [[ "$expr" == *"readFileSync(0)"* ]]; then
         # This form is fed via `git show ... | node`. Drain the pipe fully before
         # replying, else the upstream `git` can catch SIGPIPE and (with
-        # `set -o pipefail`) abort the Decide script mid-way — a timing race.
+        # `set -o pipefail`) abort the Decide script mid-way - a timing race.
         cat >/dev/null 2>&1 || true
         echo "$MOCK_OLD_MC"
       else
@@ -94,5 +94,5 @@ run_case "7 no-changes"       true pass pass pass pass 1.21 1.21 false false fal
 run_case "8 auto-disabled"    false pass pass pass pass 1.21 1.21 true false true  review
 
 echo
-if [ "$fail" = 0 ]; then echo "ALL CASES PASS — fail-closed routing verified."; else echo "FAILURES PRESENT."; fi
+if [ "$fail" = 0 ]; then echo "ALL CASES PASS - fail-closed routing verified."; else echo "FAILURES PRESENT."; fi
 exit $fail

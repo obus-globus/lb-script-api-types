@@ -3,25 +3,25 @@
 
 The reflection generator emits a file per JVM class, including some whose
 class name cannot be a TS identifier or whose heritage clause TS can't parse.
-They are dead weight — no script can import them — but any consumer with a
+They are dead weight - no script can import them - but any consumer with a
 broad `include` glob gets hard parse errors from them, and the typecheck
 gate's full-tree syntax walk would trip on them forever.
 
 Three repairs, all idempotent:
 
-  S1  delete `package-info.d.ts` files — Java package descriptors
+  S1  delete `package-info.d.ts` files - Java package descriptors
       (`export interface package-info` is a parse error; ~1k files).
   S2  delete files whose exported declaration name is not a valid TS
-      identifier — Kotlin file-facade classes like okio's `-Base64` /
+      identifier - Kotlin file-facade classes like okio's `-Base64` /
       `-DeprecatedOkio` and LB's fastutil `-internal` / `weighted-terminal`
       (`export class -Base64` is a parse error, and the name being
       unimportable means deletion loses nothing). Safety: a candidate is NOT
       deleted (only reported) if any file outside the deletion set imports it.
-  S3  strip *top-level* function-type entries from heritage clauses —
+  S3  strip *top-level* function-type entries from heritage clauses -
       `class X extends Object implements () => void, Handler` is a parse
       error (Kotlin function supertypes); arrows nested inside generic args
       (`implements JsonSerializer<() => T>`) are valid and left alone.
-  S4  comment out FIELD declarations named `constructor` —
+  S4  comment out FIELD declarations named `constructor` -
       `readonly constructor: X;` is a Java field name TS cannot represent
       in a class (parse error); the member is shadowed by the JS builtin at
       runtime anyway. Real `constructor(...)` declarations are untouched.
@@ -131,7 +131,7 @@ def main():
             candidates[p] = "invalid identifier: " + ", ".join(
                 n for n in names if not IDENT.match(n))
 
-    # --- pass 2: safety — is any candidate imported from outside the set? --
+    # --- pass 2: safety - is any candidate imported from outside the set? --
     referenced = set()
     if candidates:
         cand_resolved = {c.resolve() for c in candidates}

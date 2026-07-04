@@ -3,7 +3,7 @@
 # Regenerate the @liquidbounce-helper/script-api-types .d.ts tree by running
 # LiquidBounce's own ts-defgen.js inside a real (xvfb-driven) client launch
 # via Gradle. This mirrors CCBlueX's own CI workflow at
-# references/liquidbounce/.github/workflows/generate-definitions.yml — the
+# references/liquidbounce/.github/workflows/generate-definitions.yml - the
 # only substitution is that our forked ts-generator shadow jar is dropped
 # in at the path ts-defgen.js loads from instead of being downloaded from
 # CCBlueX's release repo.
@@ -68,7 +68,7 @@ if [[ "$REGEN" == "1" ]]; then
     exit 1
   fi
 
-  # Java 25 — LB nextgen 0.38+ requires JVM 25 (buildSrc depends on Gradle
+  # Java 25 - LB nextgen 0.38+ requires JVM 25 (buildSrc depends on Gradle
   # plugins built against Java 25). Earlier LB versions used 21.
   JAVA_HOME_25="/usr/lib/jvm/java-25-openjdk-amd64"
   if [[ ! -x "$JAVA_HOME_25/bin/java" ]]; then
@@ -79,20 +79,20 @@ if [[ "$REGEN" == "1" ]]; then
   export PATH="$JAVA_HOME/bin:$PATH"
 
   # 2. Build / reuse our forked ts-generator shadow jar. Cache check via
-  #    mtime — a touched source file invalidates the jar.
+  #    mtime - a touched source file invalidates the jar.
   TS_GEN_JAR="$TS_GEN_DIR/build/libs/ts-generator-1.1.4-all.jar"
   build_jar=0
   if [[ "${SKIP_JAR_BUILD:-0}" == "1" ]]; then
-    echo "SKIP_JAR_BUILD=1 — using existing $TS_GEN_JAR" >&2
+    echo "SKIP_JAR_BUILD=1 - using existing $TS_GEN_JAR" >&2
   elif [[ ! -f "$TS_GEN_JAR" ]]; then
     build_jar=1
   elif find "$TS_GEN_DIR/src" -type f -newer "$TS_GEN_JAR" -print -quit 2>/dev/null | grep -q .; then
-    echo "ts-generator sources newer than jar; rebuilding…" >&2
+    echo "ts-generator sources newer than jar; rebuilding..." >&2
     build_jar=1
   fi
   if [[ "$build_jar" == "1" ]]; then
     # ts-generator's Gradle 8.10 / Kotlin 2.0 can't read Java 25 class files
-    # ("Unsupported class file major version 69") — build the shadow jar with
+    # ("Unsupported class file major version 69") - build the shadow jar with
     # Java 21 even though we run LB with Java 25 below.
     JAVA_HOME_21="/usr/lib/jvm/java-21-openjdk-amd64"
     if [[ ! -x "$JAVA_HOME_21/bin/java" ]]; then
@@ -117,7 +117,7 @@ if [[ "$REGEN" == "1" ]]; then
   # The mod wrapper is no longer used (see note at 3b), so always remove it.
   rm -f "$LB_DIR/run/mods/ts-generator-mod.jar"
 
-  # File copy (not symlink — gradle holds file locks during runClient and
+  # File copy (not symlink - gradle holds file locks during runClient and
   # symlinks across filesystems can race).
   cp -f "$TS_GEN_JAR" "$STAGE/ts-generator.jar"
   cp -f "$REPO_ROOT/tools/regen/ts-defgen.js" "$STAGE/ts-defgen.js"
@@ -127,7 +127,7 @@ if [[ "$REGEN" == "1" ]]; then
   # post-patches.sh honours the same vars for the post-patch apply-kdoc step.
   if [[ "${SKIP_KDOC:-0}" == "1" || "${SKIP_SOURCE_ENRICHMENT:-0}" == "1" ]]; then
     rm -f "$STAGE/manifest.json"
-    echo "SKIP_KDOC/SKIP_SOURCE_ENRICHMENT — not staging manifest.json (no inline TSDoc)" >&2
+    echo "SKIP_KDOC/SKIP_SOURCE_ENRICHMENT - not staging manifest.json (no inline TSDoc)" >&2
   else
     cp -f "$REPO_ROOT/tools/kdoc-extractor/manifest.json" "$STAGE/manifest.json"
   fi
@@ -141,13 +141,13 @@ if [[ "$REGEN" == "1" ]]; then
   #     mixin forcing HostMethodDesc$SingleMethod.isCallerSensitive=true, so the
   #     stock URLClassLoader path works again. ts-defgen.js now loads the
   #     generator via URLClassLoader (matching upstream) and enumerates classes
-  #     via ClassPath.from(getContextClassLoader()) — no mod, and our generator's
+  #     via ClassPath.from(getContextClassLoader()) - no mod, and our generator's
   #     own me/* classes no longer leak into the output.
 
   # 4. Wipe any previous output to guarantee clean regen.
   rm -rf "$STAGE/@ccbluex"
 
-  echo "Regenerating types via runClient (this takes 5–15 minutes)…" >&2
+  echo "Regenerating types via runClient (this takes 5-15 minutes)..." >&2
   echo "  ts-generator.jar: $(du -h "$STAGE/ts-generator.jar" | cut -f1)" >&2
 
   # 4b. Clear stale LWJGL native cache. After a host mesa/libgl upgrade
@@ -161,7 +161,7 @@ if [[ "$REGEN" == "1" ]]; then
   #     warm cache it reuses the prior run's rendered .d.ts for foundational
   #     library classes (JDK, kotlin, fastutil, netty, guava, log4j, lwjgl,
   #     icu4j, graalvm/truffle, ...) whose source jar is byte-for-byte unchanged,
-  #     skipping their reflection — roughly half the class graph. The cache is
+  #     skipping their reflection - roughly half the class graph. The cache is
   #     keyed by jar content sha + the generator jar's own sha, so any generator
   #     change or dependency bump invalidates the affected entries automatically.
   #     Set SKIP_REGEN_CACHE=1 to force a full cold regen (also done implicitly
@@ -169,7 +169,7 @@ if [[ "$REGEN" == "1" ]]; then
   REGEN_CACHE_DIR="${REGEN_CACHE_DIR:-$REPO_ROOT/tools/regen/.module-cache}"
   if [[ "${SKIP_REGEN_CACHE:-0}" == "1" ]]; then
     unset TSGEN_CACHE_DIR
-    echo "SKIP_REGEN_CACHE=1 — render cache disabled (full cold regen)" >&2
+    echo "SKIP_REGEN_CACHE=1 - render cache disabled (full cold regen)" >&2
   else
     mkdir -p "$REGEN_CACHE_DIR"
     # Exported (not an inline assignment prefix): the runClient subshell and the

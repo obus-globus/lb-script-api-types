@@ -1,10 +1,10 @@
 /// <reference types="@wunk/lb-script-api-types/ambient" />
 //
-// TypingVerify — runtime verification of @wunk/lb-script-api-types.
+// TypingVerify - runtime verification of @wunk/lb-script-api-types.
 //
 // Every probe below exercises a surface this types build fixed or hardened.
 // Each prints exactly one line to stdout: "[TypingVerify] OK <probe>: <detail>"
-// or "[TypingVerify] FAIL <probe>: <error>" — so the harness can assert the
+// or "[TypingVerify] FAIL <probe>: <error>" - so the harness can assert the
 // outcome from the client log. The same checks are *compile-time* proofs too:
 // this file typechecks with the strict stock consumer config.
 //
@@ -12,7 +12,7 @@
 //   F8  localStorage is the Java ConcurrentHashMap facade (put/get/size)
 //   F9  Axis / RotationAxis are class handles (static XP..ZN constants)
 //   F6  Hand alias for InteractionHand
-//   F4  SilentHotbar is NOT a global — reached via Java.type (and the global
+//   F4  SilentHotbar is NOT a global - reached via Java.type (and the global
 //       really is absent at runtime)
 //   T-5 Setting factories (typed option objects), .get() value access
 //   E   typed per-event on() overloads incl. the nested TitleEvent classes
@@ -94,11 +94,11 @@ script.registerModule({
     description: "Verifies @wunk/lb-script-api-types runtime contracts.",
 }, (mod) => {
     mod.on("enable", () => {
-        print(`${TAG} module enabled — running probes`);
+        print(`${TAG} module enabled - running probes`);
         runProbes();
     });
 
-    // Typed payload overloads — the nested TitleEvent classes were silently
+    // Typed payload overloads - the nested TitleEvent classes were silently
     // `any` before the binary-name import fix; now they typecheck for real.
     mod.on("title", (e) => print(`${TAG} title event: ${e.text}`));
     mod.on("subtitle", (e) => print(`${TAG} subtitle event: ${e.text}`));
@@ -107,6 +107,6 @@ script.registerModule({
 });
 
 script.on("load", () => {
-    print(`${TAG} script loaded — running probes at load time`);
+    print(`${TAG} script loaded - running probes at load time`);
     runProbes();
 });

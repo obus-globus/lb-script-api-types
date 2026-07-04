@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Positive-control tests for check-output-sanity.py — the fail-closed gate that
+Positive-control tests for check-output-sanity.py - the fail-closed gate that
 catches SILENTLY BROKEN regen output (the BlockItemId/gitignore drop class of
 bug). A gate is only worth anything if it actually fires on the bug it exists
 for, so each case here builds a minimal fixture package tree that replicates one
@@ -29,7 +29,7 @@ def build_pkg(root: Path, *, types: list[str], reg_lb: list[str], reg_full: list
     """Create a fixture package. `types` are relative paths under types/ (each
     gets an emitted .d.ts); `reg_lb`/`reg_full` are the type paths each registry
     references via `typeof import("../types/<path>")` (a ref whose target isn't
-    in `types` is a dangling reference — the BlockItemId bug)."""
+    in `types` is a dangling reference - the BlockItemId bug)."""
     for rel in types:
         f = root / "types" / (rel + ".d.ts")
         f.parent.mkdir(parents=True, exist_ok=True)
@@ -58,7 +58,7 @@ def run_gate(pkg: Path, *args: str) -> tuple[int, str]:
 def main() -> int:
     # (name, builder-args, gate-args, expect_rc, expect_substr)
     # A clean case expects rc 0. A catch case expects rc 1 (the "problem"
-    # exit — NOT 2, which is a bad-pkg-root arg error) AND a substring proving
+    # exit - NOT 2, which is a bad-pkg-root arg error) AND a substring proving
     # the gate failed for the RIGHT reason, not incidentally.
     cases = [
         # 1. Clean tree: 3 emitted types, every registry ref resolves. -> exit 0.
@@ -111,9 +111,9 @@ def main() -> int:
 
     print()
     if fail:
-        print("FAILURES PRESENT — the gate did not behave as expected.")
+        print("FAILURES PRESENT - the gate did not behave as expected.")
     else:
-        print("ALL CASES PASS — output-sanity gate fires (rc 1 + right reason) on each silent-drop mode.")
+        print("ALL CASES PASS - output-sanity gate fires (rc 1 + right reason) on each silent-drop mode.")
     return fail
 
 
