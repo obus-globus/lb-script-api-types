@@ -28,11 +28,11 @@ import { ScriptAsyncUtil as ScriptAsyncUtil_ } from "../types/net/ccbluex/liquid
 import { PolyglotScript as PolyglotScript_ } from "../types/net/ccbluex/liquidbounce/script/PolyglotScript";
 declare global {
     // T-4: GraalVM intrinsics begin
-    // Truffle/GraalVM host-provided globals — exposed to every polyglot
+    // Truffle/GraalVM host-provided globals - exposed to every polyglot
     // script but invisible to `Object.entries(globalThis)`. See:
     //   https://www.graalvm.org/jdk25/reference-manual/js/JavaInteroperability/
     //   https://www.graalvm.org/jdk25/reference-manual/polyglot-programming/
-    /** Merge target for the optional Java.type string-literal registry —
+    /** Merge target for the optional Java.type string-literal registry -
      *  add "@wunk/lb-script-api-types/registry-lb" (or registry-full) to your
      *  tsconfig/jsconfig "types" to populate it. Empty by default: zero
      *  compile cost; Java.type falls back to the generic overload. */
@@ -62,7 +62,7 @@ declare global {
         asJSONCompatible(obj: any): any;
     }
     const Java: JavaIntrinsic;
-    /** GraalVM polyglot bindings — shared key/value space across languages. */
+    /** GraalVM polyglot bindings - shared key/value space across languages. */
     interface PolyglotIntrinsic {
         import<T = unknown>(name: string): T;
         export<T>(name: string, value: T): void;
@@ -93,7 +93,7 @@ declare global {
     /**
      * A raw `java.lang.Class` value bound into the script context. Under
      * GraalJS nashorn-compat it constructs directly (`new BlockPos(1, 2, 3)`),
-     * but STATIC members — including enum constants — are only reachable via
+     * but STATIC members - including enum constants - are only reachable via
      * `.static`: `Hand.static.MAIN_HAND`, `MathHelper.static.clamp(...)`.
      * Direct static access returns `undefined` at runtime. `.static` also
      * carries the full constructor-overload set: `new (BlockPos.static)(...)`.
@@ -126,7 +126,7 @@ declare global {
 
     // F8: ScriptLocalStorage facade begin
     /**
-     * The shared script storage — at runtime a Java
+     * The shared script storage - at runtime a Java
      * `ConcurrentHashMap<String, Any>` bound by `ScriptContextProvider`
      * (NOT the DOM `localStorage` / Web Storage API). Java `Map` member
      * access: `get`/`put`/`remove`/..., values are arbitrary host or guest
@@ -183,7 +183,7 @@ declare global {
 
     /**
      * Registers a new script with LiquidBounce. **Must be called exactly once**
-     * at the top level of every script — the return value is your script
+     * at the top level of every script - the return value is your script
      * handle (used to register modules, listen for lifecycle events, etc.).
      *
      * @param scriptObject Identity metadata for this script.
@@ -203,7 +203,7 @@ declare global {
      * script.on("load", () => print("loaded"));
      * ```
      *
-     * Source: `PolyglotScript.kt` — `RegisterScript.apply`, KDoc.
+     * Source: `PolyglotScript.kt` - `RegisterScript.apply`, KDoc.
      */
     export const registerScript: (scriptObject: { name: string; version: string; authors: string[] }) => PolyglotScript_;
 

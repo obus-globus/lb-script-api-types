@@ -23,14 +23,14 @@ export class EntityExtensionsKt extends Object {
      *
      * @see net.minecraft.world.entity.LivingEntity#applyItemBlocking
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L133 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:133}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L133 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:133}
      */
     static blockedByShield(paramarg0: LivingEntity, paramarg1: DamageSource): boolean;
     static blockedByShield(livingEntity: LivingEntity, source: DamageSource, damageAmount: number): boolean;
     /**
      * Allows to calculate the distance between the current entity and {@link entity} from the nearest corner of the bounding box
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L398 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:398}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L398 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:398}
      */
     static boxedDistanceTo(paramarg0: Entity, paramarg1: Entity): number;
     static cameraDistance(position: Position): number;
@@ -41,19 +41,19 @@ export class EntityExtensionsKt extends Object {
      *
      * TODO: Use Minecraft Step logic instead of this basic collision check.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L309 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:309}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L309 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:309}
      */
     static canStep(localPlayer: LocalPlayer, height: number): boolean;
     /**
      * Check if the entity box collides with any block in the world at the given {@link pos}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L771 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:771}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L771 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:771}
      */
     static doesCollideAt(entity: Entity, pos: Vec3): boolean;
     /**
      * Check if the entity collides with anything below his bounding box.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L759 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:759}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L759 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:759}
      */
     static doesNotCollideBelow(entity: Entity, until: number): boolean;
     /**
@@ -63,7 +63,7 @@ export class EntityExtensionsKt extends Object {
      * Currently, uses the following sources:
      * 1. Scoreboard
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L720 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:720}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L720 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:720}
      */
     static getActualHealth(livingEntity: LivingEntity, fromScoreboard: boolean): number;
     static getAirTicks(paramarg0: LocalPlayer): number;
@@ -80,7 +80,7 @@ export class EntityExtensionsKt extends Object {
      * @see net.minecraft.world.level.ExplosionDamageCalculator#getEntityDamageAmount
      * @see net.minecraft.world.level.ServerExplosion#getSeenPercent
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L582 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:582}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L582 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:582}
      */
     static getDamageFromExplosion(livingEntity: LivingEntity, pos: Vec3, power: number, explosionRange: number, damageDistance: number, exclude: BlockPos[], include: BlockPos, maxBlastResistance: number, entityBoundingBox: AABB, damageSource: DamageSource): number;
     static getDirection(paramarg0: LocalPlayer): number;
@@ -97,7 +97,7 @@ export class EntityExtensionsKt extends Object {
      * @see net.minecraft.world.entity.LivingEntity#getDamageAfterMagicAbsorb
      * @see net.minecraft.world.entity.LivingEntity#actuallyHurt
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L452 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:452}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L452 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:452}
      */
     static getEffectiveDamage(paramarg0: LivingEntity, paramarg1: DamageSource, paramarg2: number): number;
     static getEffectiveDamage(paramarg0: LivingEntity, paramarg1: DamageSource, paramarg2: number, paramarg3: boolean): number;
@@ -114,7 +114,7 @@ export class EntityExtensionsKt extends Object {
      * @see net.minecraft.world.entity.vehicle.minecart.MinecartTNT.explode
      * @see net.minecraft.world.entity.monster.Creeper
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L535 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:535}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L535 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:535}
      */
     static getExplosionDamageFromEntity(livingEntity: LivingEntity, entity: Entity): number;
     /**
@@ -122,7 +122,7 @@ export class EntityExtensionsKt extends Object {
      *
      * @see net.minecraft.world.level.ServerExplosion.getSeenPercent
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L633 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:633}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L633 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:633}
      */
     static getExposureToExplosion(livingEntity: LivingEntity, source: Vec3, exclude: BlockPos[], include: BlockPos, maxBlastResistance: number, entityBoundingBox: AABB): number;
     static getFeetBlockPos(localPlayer: LocalPlayer): BlockPos;
@@ -130,14 +130,14 @@ export class EntityExtensionsKt extends Object {
     /**
      * Check if the attack speed is below 1 tick. If so, we have a cooldown.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L212 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:212}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L212 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:212}
      */
     static getHasCooldown(paramarg0: LocalPlayer): boolean;
     static getHorizontalSpeed(paramarg0: Entity): number;
     /**
      * @see <a href="https://minecraft.fandom.com/wiki/Magma_Block#Damage">Magma Block — Damage</a>
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L837 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:837}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L837 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:837}
      */
     static getImmuneToMagmaBlocks(paramarg0: LocalPlayer): boolean;
     static getInitial(paramarg0: ClientInput): Input;
@@ -170,13 +170,13 @@ export class EntityExtensionsKt extends Object {
     /**
      * @receiver the specific bounding box of a player, mob or even another block.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L847 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:847}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L847 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:847}
      */
     static isOnMagmaBlock(aABB: AABB): boolean;
     /**
      * @see LocalPlayer.isSlowDueToUsingItem
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L251 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:251}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L251 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:251}
      */
     static isSlowDueToUsingItem(paramarg0: Player): boolean;
     static lastRenderPos(entity: Entity): Vec3;
@@ -192,7 +192,7 @@ export class EntityExtensionsKt extends Object {
     /**
      * Check if the entity is likely falling to the void based on the given position and bounding box.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L778 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:778}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt#L778 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/EntityExtensions.kt:778}
      */
     static wouldFallIntoVoid(entity: Entity, pos: Vec3, voidLevel: number, safetyExpand: number): boolean;
 }

@@ -1,4 +1,4 @@
-// ScriptReflectionUtil augmentation — generic-typed overloads for reflection.
+// ScriptReflectionUtil augmentation - generic-typed overloads for reflection.
 //
 // Problem: ts-gen emits ScriptReflectionUtil methods with `Class<Object>`
 // parameters and `Object | null` returns (audit row W12). Scripts that
@@ -18,11 +18,11 @@ import type { Object } from '../types/java/lang/Object.d.ts';
 // Generic-parameter semantics:
 //   * `clazz: Class<T>` propagates ONLY when the return is an actual instance
 //     of T (i.e. `newInstance`). For `getDeclaredField` the return is the
-//     static field's value type, which has no relation to T — so the
+//     static field's value type, which has no relation to T - so the
 //     class parameter stays `Class<Object>` and the caller annotates the
 //     expected field-value type as `T` (same pattern as the existing
 //     invoke* overloads).
-//   * `obj: Object` stays `Object` everywhere — the object's runtime type
+//   * `obj: Object` stays `Object` everywhere - the object's runtime type
 //     does not constrain the field/return type the caller is asking for.
 //   * Where T appears in the return-type position only, it is unconstrained
 //     and acts as a caller-asserted cast. Same pattern as the existing

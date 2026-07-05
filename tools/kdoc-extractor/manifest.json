@@ -1494,7 +1494,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-      "line": 67
+      "line": 70
     }
   },
   "net.ccbluex.liquidbounce.event.events.DrawOutlinesEvent.markDirty": {
@@ -1502,7 +1502,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
-      "line": 79
+      "line": 82
     }
   },
   "net.ccbluex.liquidbounce.event.events.GameRenderTaskQueueEvent": {
@@ -3105,7 +3105,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleAimbot.kt",
-      "line": 158
+      "line": 157
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.ModuleAutoClicker": {
@@ -5265,7 +5265,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleEasyPearl.kt",
-      "line": 61
+      "line": 68
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleEasyPearl.getPositionPlayerLookAt": {
@@ -5274,7 +5274,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleEasyPearl.kt",
-      "line": 207
+      "line": 249
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleEasyPearl.getTargetRotation": {
@@ -5286,7 +5286,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleEasyPearl.kt",
-      "line": 215
+      "line": 257
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleEasyPearl.interactItemHandler": {
@@ -5294,7 +5294,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleEasyPearl.kt",
-      "line": 83
+      "line": 94
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleEasyPearl.isRotationDone": {
@@ -5306,7 +5306,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleEasyPearl.kt",
-      "line": 196
+      "line": 238
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleEasyPearl.worldRenderHandler": {
@@ -5314,7 +5314,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleEasyPearl.kt",
-      "line": 145
+      "line": 156
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.misc.ModuleElytraSwap": {
@@ -12817,7 +12817,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 241
+      "line": 240
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.currentRotation": {
@@ -12841,7 +12841,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/RotationManager.kt",
-      "line": 281
+      "line": 280
     }
   },
   "net.ccbluex.liquidbounce.utils.aiming.RotationManager.rotationTarget": {
@@ -16954,7 +16954,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt",
-      "line": 197
+      "line": 195
     }
   },
   "net.ccbluex.liquidbounce.utils.render.placement.PlacementRenderHandler.clear": {
@@ -16962,7 +16962,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt",
-      "line": 293
+      "line": 291
     }
   },
   "net.ccbluex.liquidbounce.utils.render.placement.PlacementRenderHandler.clearSilently": {
@@ -16970,7 +16970,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt",
-      "line": 273
+      "line": 271
     }
   },
   "net.ccbluex.liquidbounce.utils.render.placement.PlacementRenderHandler.contains": {
@@ -16978,7 +16978,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt",
-      "line": 187
+      "line": 185
     }
   },
   "net.ccbluex.liquidbounce.utils.render.placement.PlacementRenderHandler.removeBlock": {
@@ -16989,7 +16989,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt",
-      "line": 214
+      "line": 212
     }
   },
   "net.ccbluex.liquidbounce.utils.render.placement.PlacementRenderHandler.updateAll": {
@@ -16997,7 +16997,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt",
-      "line": 238
+      "line": 236
     }
   },
   "net.ccbluex.liquidbounce.utils.render.placement.PlacementRenderHandler.updateBox": {
@@ -17005,7 +17005,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt",
-      "line": 257
+      "line": 255
     }
   },
   "net.ccbluex.liquidbounce.utils.render.placement.PlacementRenderHandler.updateNeighbors": {
@@ -17013,7 +17013,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/placement/PlacementRenderHandler.kt",
-      "line": 162
+      "line": 160
     }
   },
   "net.ccbluex.liquidbounce.utils.render.placement.PlacementRenderer": {

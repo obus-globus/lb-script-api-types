@@ -15,6 +15,6 @@ export class BatchCollector extends Object {
     // private consolidatedDraws: Map<RenderDrawKey, BatchCollector$PendingDraw>;
     // private drawOrder: BatchCollector$PendingDraw[];
     // private clearBuilders(): void;
-    flush(renderTarget: RenderTarget, dynamicTransforms: GpuBufferSlice): void;
+    flush(renderTarget: RenderTarget, dynamicTransforms: GpuBufferSlice | null): void;
     start(key: RenderDrawKey): MeshBuildScope;
 }

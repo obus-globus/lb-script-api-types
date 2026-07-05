@@ -17,6 +17,14 @@
         "line": 171
       }
     },
+    "net.ccbluex.liquidbounce.event.events.WorldRenderEvent.matrixStack": {
+      "message": "For scripts only",
+      "kind": "property",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt",
+        "line": 46
+      }
+    },
     "net.ccbluex.liquidbounce.features.module.ModuleCategory.readableName": {
       "message": "For script compatibility only. Use choiceName instead",
       "replaceWith": "choiceName",

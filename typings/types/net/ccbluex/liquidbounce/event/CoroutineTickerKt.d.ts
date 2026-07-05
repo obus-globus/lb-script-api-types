@@ -8,7 +8,7 @@ export class CoroutineTickerKt extends Object {
      *
      * @returns if we passed the time of {@link ticks} without breaking the loop.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L139 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:139}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L139 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:139}
      */
     static tickConditional(paramarg0: number, paramarg1: () => boolean, paramarg2: Continuation<Object>): Object;
     /**
@@ -24,7 +24,7 @@ export class CoroutineTickerKt extends Object {
      * @param stopAt the callback of elapsed ticks. Will be called on game tick.
      * @returns the times of {@link stopAt} to be executed (equals to elapsed ticks)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:107}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:107}
      */
     static tickUntil(paramarg0: (param0: number) => boolean, paramarg1: Continuation<Object>): Object;
     /**
@@ -33,14 +33,14 @@ export class CoroutineTickerKt extends Object {
      *
      * Note: When TPS is not 20, this won't be actual `seconds`.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L167 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:167}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L167 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:167}
      */
     static waitSeconds(paramarg0: number, paramarg1: Continuation<Object>): Object;
     /**
      * Waits a fixed amount of ticks before continuing.
      * Re-entry at the game tick.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:152}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt#L152 | src/main/kotlin/net/ccbluex/liquidbounce/event/CoroutineTicker.kt:152}
      */
     static waitTicks(paramarg0: number, paramarg1: Continuation<Object>): Object;
 }

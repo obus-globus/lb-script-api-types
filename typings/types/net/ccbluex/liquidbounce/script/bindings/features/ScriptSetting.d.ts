@@ -12,7 +12,7 @@ import type { Value as Value_2 } from '../../../../../../org/graalvm/polyglot/Va
 /**
  * Object used by the script API to provide an idiomatic way of creating module values.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/e73028e2d505b1129c66eaed525374f04a646764/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt:39}
  */
 export class ScriptSetting extends Object {
     static INSTANCE: ScriptSetting;
@@ -30,7 +30,7 @@ export class ScriptSetting extends Object {
      * if (loud.get()) print("loud!");
      * ```
      *
-     * Source: `ScriptSetting.kt:43` — `fun boolean(value: PolyglotValue)`,
+     * Source: `ScriptSetting.kt:43` - `fun boolean(value: PolyglotValue)`,
      * reads the `name` and `default` members. Class-level KDoc states
      * "Object used by the script API to provide an idiomatic way of
      * creating module values."

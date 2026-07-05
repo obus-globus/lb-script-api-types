@@ -9,12 +9,16 @@ import type { Camera } from '../../../../../net/minecraft/client/Camera.d.ts'
  * Fires while the world is rendered, exposing the pose stack, camera and partial-tick fraction - for depth-correct 3D rendering.
  */
 export class WorldRenderEvent extends Event implements AutoCloseable {
-    constructor(matrixStack: PoseStack, camera: Camera, partialTicks: number, renderTarget: RenderTarget)
+    constructor(poseStack: PoseStack, camera: Camera, partialTicks: number, renderTarget: RenderTarget)
     // private batchCollector: BatchCollector;
     readonly camera: Camera;
     readonly environment: WorldRenderEnvironment;
+    /**
+     * @deprecated For scripts only
+     */
     readonly matrixStack: PoseStack;
     readonly partialTicks: number;
+    readonly poseStack: PoseStack;
     readonly renderTarget: RenderTarget;
     close(): void;
 }

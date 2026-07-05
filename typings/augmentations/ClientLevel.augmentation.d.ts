@@ -1,8 +1,8 @@
-// ClientLevel augmentation — re-expose getEntities overloads.
+// ClientLevel augmentation - re-expose getEntities overloads.
 //
 // Problem: `mc.level` is typed as `ClientLevel` (a subclass of `Level`).
 // `ClientLevel` declares its own `getEntities(): LevelEntityGetter<Entity>`
-// which shadows the four other overloads from the parent `Level` —
+// which shadows the four other overloads from the parent `Level` -
 // in particular the script-author-friendly form
 //   `getEntities(except, AABB, selector)`
 // which TS rejects on `mc.level` even though it works at runtime.
@@ -21,7 +21,7 @@
 // overloaded methods (`onSyncedDataUpdated`) with fewer overloads,
 // making LocalPlayer structurally non-assignable to Entity (TS
 // overload variance is invariant on parameter list). The
-// `mc.level.getEntities(mc.player, …)` call is by far the most common
+// `mc.level.getEntities(mc.player, ...)` call is by far the most common
 // script pattern, so the union is worth its weight. See audit W19.
 
 import type { Entity } from '../types/net/minecraft/world/entity/Entity.d.ts';
