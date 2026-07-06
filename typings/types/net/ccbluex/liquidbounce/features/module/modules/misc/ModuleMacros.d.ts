@@ -7,7 +7,7 @@ import type { ModuleMacros$Macro } from '../../../../../../../net/ccbluex/liquid
  *
  * Lets you execute chat messages or item actions using custom keybinds.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleMacros.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleMacros.kt:48}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleMacros.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/ModuleMacros.kt:48}
  */
 export class ModuleMacros extends ClientModule {
     static INSTANCE: ModuleMacros;

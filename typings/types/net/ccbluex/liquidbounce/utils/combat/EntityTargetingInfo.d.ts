@@ -9,7 +9,7 @@ import type { EntityTargetingInfo$Companion } from '../../../../../net/ccbluex/l
  *
  * This can be adjusted by the .target command and the panel inside the ClickGUI.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:75}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L75 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:75}
  */
 export class EntityTargetingInfo extends Object {
     static Companion: EntityTargetingInfo$Companion;

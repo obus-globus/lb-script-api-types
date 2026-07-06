@@ -9834,6 +9834,18 @@
       "line": 44
     }
   },
+  "net.ccbluex.liquidbounce.features.module.modules.world.scaffold.techniques.ScaffoldGodBridgeTechnique.canJumpTwoBlocksHigh": {
+    "doc": "Uses vanilla jump power as the initial upward velocity and then integrates the\nvanilla per-tick gravity/drag until the upward motion is exhausted.",
+    "see": [
+      "net.minecraft.world.entity.LivingEntity.getJumpPower",
+      "net.minecraft.world.entity.LivingEntity.jumpFromGround"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
+      "line": 214
+    }
+  },
   "net.ccbluex.liquidbounce.features.module.modules.world.scaffold.techniques.ScaffoldNormalTechnique": {
     "doc": "Normal technique, which is basically just normal scaffold.",
     "kind": "object",

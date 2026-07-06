@@ -5,7 +5,7 @@ export class ProxyValidatorKt extends Object {
      * Checks if a proxy is valid and can be used for Minecraft. This will use network resources to check the proxy,
      * as well as update the ip information of the proxy.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyValidator.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyValidator.kt:83}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyValidator.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyValidator.kt:83}
      */
     static check(proxy: Proxy, success: (param0: Object) => void, failure: (param0: Object) => void): Object;
 }

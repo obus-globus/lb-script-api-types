@@ -15,7 +15,7 @@ export class AuthMiddleware extends Object implements Middleware$OnRequest, Midd
     /**
      * On request handler
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt:58}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/middleware/AuthMiddleware.kt:58}
      */
     invoke(ctx: ChannelHandlerContext, request: HttpRequest): FullHttpResponse | null;
     invoke(context: RequestContext): FullHttpResponse | null;

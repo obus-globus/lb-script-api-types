@@ -8,7 +8,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
  * The functions provided by this util can explicitly
  * convert script numbers or strings into primitives of the JVM.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptPrimitives.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptPrimitives.kt:30}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptPrimitives.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptPrimitives.kt:30}
  */
 export class ScriptPrimitives extends Object {
     static INSTANCE: ScriptPrimitives;

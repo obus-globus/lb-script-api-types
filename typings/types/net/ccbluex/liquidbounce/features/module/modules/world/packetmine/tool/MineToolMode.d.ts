@@ -11,7 +11,7 @@ import type { BlockState } from '../../../../../../../../../net/minecraft/world/
 /**
  * Determines when to switch to a tool and calculates the breaking process delta.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/MineToolMode.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/MineToolMode.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/MineToolMode.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/packetmine/tool/MineToolMode.kt:42}
  */
 export class MineToolMode extends Mode implements MinecraftShortcuts {
     static Companion: Tagged$Companion;

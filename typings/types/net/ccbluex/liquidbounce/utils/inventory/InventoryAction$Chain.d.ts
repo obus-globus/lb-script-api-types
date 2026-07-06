@@ -7,7 +7,7 @@ import type { Priority } from '../../../../../net/ccbluex/liquidbounce/utils/kot
  * A chained inventory action is a list of inventory actions that have to be executed in order
  * and CANNOT be stopped in between
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt#L264 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt:264}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt#L264 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryAction.kt:264}
  */
 export class InventoryAction$Chain extends Record {
     constructor(inventoryConstraints: InventoryConstraints, actions: InventoryAction[], priority: Priority)

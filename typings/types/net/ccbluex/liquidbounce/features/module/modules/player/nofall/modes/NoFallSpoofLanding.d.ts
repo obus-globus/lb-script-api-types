@@ -10,7 +10,7 @@ import type { Vec3 } from '../../../../../../../../../net/minecraft/world/phys/V
  *
  * @author jiuxian_baka
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpoofLanding.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpoofLanding.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpoofLanding.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/nofall/modes/NoFallSpoofLanding.kt:44}
  */
 export class NoFallSpoofLanding extends NoFallMode {
     static Companion: Tagged$Companion;

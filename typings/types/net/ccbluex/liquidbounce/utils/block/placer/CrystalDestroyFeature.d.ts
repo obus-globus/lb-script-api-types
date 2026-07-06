@@ -28,7 +28,7 @@ export class CrystalDestroyFeature extends ToggleableValueGroup {
     /**
      * This should be called when the module using this destroyer is disabled.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/CrystalDestroyFeature.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/CrystalDestroyFeature.kt:135}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/CrystalDestroyFeature.kt#L135 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/placer/CrystalDestroyFeature.kt:135}
      */
     onDisable(): void;
     // private wouldKill(target: EndCrystal): boolean;

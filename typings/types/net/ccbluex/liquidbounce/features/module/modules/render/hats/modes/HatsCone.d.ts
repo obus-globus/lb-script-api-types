@@ -4,7 +4,7 @@ import type { HatsMode } from '../../../../../../../../../net/ccbluex/liquidboun
 /**
  * @author minecrrrr
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsCone.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsCone.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsCone.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/hats/modes/HatsCone.kt:36}
  */
 export class HatsCone extends HatsMode {
     static Companion: Tagged$Companion;

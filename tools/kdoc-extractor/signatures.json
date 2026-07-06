@@ -52474,7 +52474,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
-          "line": 58
+          "line": 61
         }
       },
       {
@@ -52495,7 +52495,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
-          "line": 67
+          "line": 70
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.features.module.modules.world.scaffold.techniques.ScaffoldGodBridgeTechnique.canJumpTwoBlocksHigh": [
+      {
+        "params": [],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
+          "line": 214
         }
       }
     ],
@@ -52530,7 +52540,7 @@
         "returns": "BlockPlacementTarget?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
-          "line": 123
+          "line": 133
         }
       }
     ],
@@ -52547,7 +52557,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
-          "line": 184
+          "line": 194
         }
       }
     ],
@@ -52564,7 +52574,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
-          "line": 188
+          "line": 198
         }
       }
     ],
@@ -52581,7 +52591,7 @@
         "returns": "Rotation",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
-          "line": 163
+          "line": 173
         }
       }
     ],
@@ -52598,7 +52608,7 @@
         "returns": "Rotation?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
-          "line": 142
+          "line": 152
         }
       }
     ],
@@ -52621,7 +52631,7 @@
         "returns": "LedgeAction",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/scaffold/techniques/ScaffoldGodBridgeTechnique.kt",
-          "line": 74
+          "line": 77
         }
       }
     ],

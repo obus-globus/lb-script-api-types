@@ -12,7 +12,7 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
  *
  * Currently only used as backup
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/0f34808bf6954ff6126dde353ff9e896eb4a2ead/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/PolynomialProjectileAngleCalculator.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/PolynomialProjectileAngleCalculator.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/PolynomialProjectileAngleCalculator.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/projectiles/PolynomialProjectileAngleCalculator.kt:39}
  */
 export class PolynomialProjectileAngleCalculator extends Object implements ProjectileAngleCalculator {
     static INSTANCE: PolynomialProjectileAngleCalculator;

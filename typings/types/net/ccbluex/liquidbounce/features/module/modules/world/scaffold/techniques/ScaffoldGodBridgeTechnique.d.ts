@@ -12,6 +12,8 @@ import type { Vec3 } from '../../../../../../../../../net/minecraft/world/phys/V
 export class ScaffoldGodBridgeTechnique extends ScaffoldTechnique implements ScaffoldLedgeExtension {
     static Companion: Tagged$Companion;
     static INSTANCE: ScaffoldGodBridgeTechnique;
+    // private VANILLA_GRAVITY: number;
+    // private VANILLA_VERTICAL_DRAG: number;
     // private forceSneakBelowCount: number;
     // private /*not mapped: */ getForceSneakBelowCount(): number;
     // private isOnRightSide: boolean;
@@ -19,6 +21,7 @@ export class ScaffoldGodBridgeTechnique extends ScaffoldTechnique implements Sca
     // private /*not mapped: */ getModes(): ScaffoldGodBridgeTechnique$Mode[];
     // private sneakTime: { start: number; endInclusive: number; step: number };
     // private /*not mapped: */ getSneakTime(): { start: number; endInclusive: number; step: number };
+    // private canJumpTwoBlocksHigh(): boolean;
     findPlacementTarget(predictedPos: Vec3, predictedPose: Pose, optimalLine: Line | null, bestStack: ItemStack): BlockPlacementTarget | null;
     // private getRotationForDiagonalInput(movingYaw: number): Rotation;
     // private getRotationForNoInput(target: BlockPlacementTarget): Rotation;
