@@ -7,7 +7,7 @@ import type { ToggleableValueGroup } from '../../../../../net/ccbluex/liquidboun
  *
  * To combat this, we simply use a new cache directory for each UUID that we use.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/spoofer/SpooferFingerprint.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/spoofer/SpooferFingerprint.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/spoofer/SpooferFingerprint.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/features/spoofer/SpooferFingerprint.kt:31}
  */
 export class SpooferFingerprint extends ToggleableValueGroup {
     static INSTANCE: SpooferFingerprint;

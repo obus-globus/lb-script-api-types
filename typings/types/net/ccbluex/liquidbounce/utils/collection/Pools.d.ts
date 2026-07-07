@@ -23,7 +23,7 @@ export class Pools extends Object {
     /**
      * Use {@link Pools.StringBuilder} to build {@link String}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Pools.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Pools.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Pools.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/utils/collection/Pools.kt:56}
      */
     buildStringPooled(builderAction: (param0: StringBuilder) => void): string;
     buildStringPooled(capacity: number, builderAction: (param0: StringBuilder) => void): string;

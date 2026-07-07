@@ -13530,7 +13530,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-      "line": 289
+      "line": 305
     }
   },
   "net.ccbluex.liquidbounce.utils.block.ChunkScanner.BlockChangeSubscriber.recordBlock": {
@@ -13543,7 +13543,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-      "line": 282
+      "line": 298
     }
   },
   "net.ccbluex.liquidbounce.utils.block.ChunkScanner.BlockChangeSubscriber.shouldCallRecordBlockOnChunkUpdate": {
@@ -13551,18 +13551,21 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-      "line": 271
+      "line": 287
     }
   },
   "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.ChunkLoad": {
-    "doc": "Scans single new chunk",
+    "doc": "Scans single new chunk or replaced chunk.",
     "params": {
       "chunk": "should be non-empty"
     },
+    "see": [
+      "net.minecraft.client.multiplayer.ClientChunkCache.replaceWithPacketData"
+    ],
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-      "line": 210
+      "line": 223
     }
   },
   "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.NewSubscriber": {
@@ -13573,7 +13576,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-      "line": 184
+      "line": 195
     }
   },
   "net.ccbluex.liquidbounce.utils.block.ChunkScanner.cancelCurrentJobs": {
@@ -13581,7 +13584,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-      "line": 148
+      "line": 158
     }
   },
   "net.ccbluex.liquidbounce.utils.block.ChunkScanner.dispatcher": {
@@ -13589,18 +13592,19 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-      "line": 130
+      "line": 140
     }
   },
   "net.ccbluex.liquidbounce.utils.block.ChunkScanner.scanChunkSections": {
     "doc": "",
     "see": [
-      "LevelChunk.getBlockState"
+      "LevelChunk.getBlockState",
+      "net.minecraft.world.level.chunk.LevelChunkSection.hasOnlyAir"
     ],
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-      "line": 160
+      "line": 171
     }
   },
   "net.ccbluex.liquidbounce.utils.block.ChunkScanner.worldJob": {
@@ -13608,7 +13612,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-      "line": 137
+      "line": 147
     }
   },
   "net.ccbluex.liquidbounce.utils.block.MovableRegionScanner.moveTo": {

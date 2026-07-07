@@ -12,7 +12,7 @@ import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.
  *
  * Leaves traces behind players.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt:54}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt:54}
  */
 export class ModuleBreadcrumbs extends ClientModule {
     static INSTANCE: ModuleBreadcrumbs;
@@ -30,7 +30,7 @@ export class ModuleBreadcrumbs extends ClientModule {
     /**
      * Updates all trails.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt#L101 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt:101}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt#L101 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleBreadcrumbs.kt:101}
      */
     readonly updateHandler: EventHook<GameTickEvent>;
     // private worldChangeHandler: EventHook<WorldChangeEvent>;

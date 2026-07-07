@@ -12,7 +12,7 @@ import type { Block } from '../../../../../../../../../net/minecraft/world/level
  * ChestAura feature is responsible for automatically interacting with storage blocks (such as chests)
  * within a specified range and line of sight of the player.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureChestAura.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureChestAura.kt:61}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureChestAura.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/cheststealer/features/FeatureChestAura.kt:61}
  */
 export class FeatureChestAura extends ToggleableValueGroup {
     static INSTANCE: FeatureChestAura;

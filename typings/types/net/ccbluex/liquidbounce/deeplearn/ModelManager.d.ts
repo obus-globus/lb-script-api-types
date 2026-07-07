@@ -14,7 +14,7 @@ export class ModelManager extends ValueGroup implements EventListener {
      * The name can contain uppercase characters,
      * but the file should always be lowercase.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:42}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:42}
      */
     readonly combatModels: string[];
     // private logger: Logger;
@@ -25,20 +25,20 @@ export class ModelManager extends ValueGroup implements EventListener {
      * when reloading the models. Otherwise, the models are loaded on startup
      * through the choice initialization.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:71}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:71}
      */
     load(): void;
     parent(): EventListener | null;
     /**
      * Clear out all models and load-in the models again.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:105}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L105 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:105}
      */
     reload(): void;
     /**
      * Unload all models.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:97}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/ModelManager.kt:97}
      */
     unload(): void;
     unregister(): void;

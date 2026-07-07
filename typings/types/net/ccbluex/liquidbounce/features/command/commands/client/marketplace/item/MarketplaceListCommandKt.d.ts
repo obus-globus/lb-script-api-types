@@ -4,7 +4,7 @@ export class MarketplaceListCommandKt extends Object {
     /**
      * List marketplace items
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/item/MarketplaceListCommand.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/item/MarketplaceListCommand.kt:41}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/item/MarketplaceListCommand.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/client/marketplace/item/MarketplaceListCommand.kt:41}
      */
     static marketplaceListCommand(): Command;
 }

@@ -78866,7 +78866,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 289
+          "line": 305
         }
       }
     ],
@@ -78876,7 +78876,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 293
+          "line": 309
         }
       }
     ],
@@ -78893,7 +78893,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 291
+          "line": 307
         }
       }
     ],
@@ -78922,7 +78922,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 282
+          "line": 298
         }
       }
     ],
@@ -78945,17 +78945,24 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 255
+          "line": 271
         }
       }
     ],
-    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.BlockUpdate.run": [
+    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.BlockUpdate.invoke": [
       {
-        "params": [],
+        "params": [
+          {
+            "name": "scope",
+            "type": "CoroutineScope",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 256
+          "line": 272
         },
         "suspend": true
       }
@@ -78973,17 +78980,24 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 210
+          "line": 223
         }
       }
     ],
-    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.ChunkLoad.run": [
+    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.ChunkLoad.invoke": [
       {
-        "params": [],
+        "params": [
+          {
+            "name": "scope",
+            "type": "CoroutineScope",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 211
+          "line": 224
         },
         "suspend": true
       }
@@ -79001,17 +79015,24 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 237
+          "line": 253
         }
       }
     ],
-    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.ChunkSectionUpdate.run": [
+    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.ChunkSectionUpdate.invoke": [
       {
-        "params": [],
+        "params": [
+          {
+            "name": "scope",
+            "type": "CoroutineScope",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 238
+          "line": 254
         },
         "suspend": true
       }
@@ -79029,17 +79050,24 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 247
+          "line": 263
         }
       }
     ],
-    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.ChunkUnload.run": [
+    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.ChunkUnload.invoke": [
       {
-        "params": [],
+        "params": [
+          {
+            "name": "scope",
+            "type": "CoroutineScope",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 248
+          "line": 264
         },
         "suspend": true
       }
@@ -79063,28 +79091,24 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 184
+          "line": 195
         }
       }
     ],
-    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.NewSubscriber.run": [
+    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.NewSubscriber.invoke": [
       {
-        "params": [],
+        "params": [
+          {
+            "name": "scope",
+            "type": "CoroutineScope",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 185
-        },
-        "suspend": true
-      }
-    ],
-    "net.ccbluex.liquidbounce.utils.block.ChunkScanner.UpdateRequest.run": [
-      {
-        "params": [],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 177
+          "line": 196
         },
         "suspend": true
       }
@@ -79095,7 +79119,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 173
+          "line": 186
         }
       }
     ],
@@ -79105,7 +79129,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 148
+          "line": 158
         }
       }
     ],
@@ -79128,7 +79152,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 160
+          "line": 171
         },
         "suspend": true
       }
@@ -79139,7 +79163,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 152
+          "line": 162
         }
       }
     ],
@@ -79156,7 +79180,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 62
+          "line": 63
         }
       }
     ],
@@ -79173,7 +79197,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt",
-          "line": 84
+          "line": 85
         }
       }
     ],

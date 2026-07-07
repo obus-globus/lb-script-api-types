@@ -25,7 +25,7 @@ export class SigmoidAngleSmooth extends FactorAngleSmooth {
      * @param currentRotation The current rotation
      * @param targetRotation The target rotation
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/SigmoidAngleSmooth.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/SigmoidAngleSmooth.kt:47}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/SigmoidAngleSmooth.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/SigmoidAngleSmooth.kt:47}
      */
     calculateFactors(rotationTarget: RotationTarget | null, currentRotation: Rotation, targetRotation: Rotation): Vec2;
     // private computeFactor(rotationDifference: number, turnSpeed: number): number;

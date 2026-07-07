@@ -15,7 +15,7 @@ import type { CombatManager } from '../../../../../../net/ccbluex/liquidbounce/u
  *
  * @since 1.0
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt:39}
  */
 export class ScriptClient extends Object {
     static INSTANCE: ScriptClient;
@@ -46,7 +46,7 @@ export class ScriptClient extends Object {
     /**
      * Shows {@link message} in the client-chat
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt:52}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptClient.kt:52}
      */
     displayChatMessage(message: string): void;
 }

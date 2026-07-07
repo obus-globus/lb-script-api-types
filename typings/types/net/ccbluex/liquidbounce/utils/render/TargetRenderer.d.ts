@@ -10,7 +10,7 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
 /**
  * A target tracker to choose the best enemy to attack
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/TargetRenderer.kt#L82 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/TargetRenderer.kt:82}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/TargetRenderer.kt#L82 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/TargetRenderer.kt:82}
  */
 export class TargetRenderer extends ToggleableValueGroup {
     constructor(owner: ToggleableValueGroup, target: () => Entity | null)

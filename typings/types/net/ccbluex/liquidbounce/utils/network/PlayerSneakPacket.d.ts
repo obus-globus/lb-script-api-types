@@ -8,7 +8,7 @@ import type { LegacyPacket } from '../../../../../net/ccbluex/liquidbounce/utils
 /**
  * https://github.com/ViaVersion/ViaFabricPlus/blob/56c4959000e68d77fd415b89af7a95478d825079/src/main/java/com/viaversion/viafabricplus/injection/mixin/features/movement/sprinting_and_sneaking/MixinClientPlayerEntity.java#L251-L264
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PlayerSneakPacket.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PlayerSneakPacket.kt:31}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PlayerSneakPacket.kt#L31 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PlayerSneakPacket.kt:31}
  */
 export class PlayerSneakPacket extends Enum<PlayerSneakPacket> implements LegacyPacket {
     static START: PlayerSneakPacket;

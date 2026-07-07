@@ -15,13 +15,13 @@ export class InteractionUtilsKt extends Object {
      * @returns {@link MultiPlayerGameMode.useItemOn} result
      * @see net.minecraft.client.Minecraft.startUseItem
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L196 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:196}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L196 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:196}
      */
     static interactBlock(hitResult: BlockHitResult, hand: InteractionHand, swingMode: SwingMode): InteractionResult;
     /**
      * @returns {@link MultiPlayerGameMode.useItemOn} or {@link MultiPlayerGameMode.useItem} result
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L219 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:219}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L219 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:219}
      */
     static interactBlockLikeVanilla(hitResult: BlockHitResult, swingMode: SwingMode, rotation: Rotation): StrictInteractionResult;
     /**
@@ -31,13 +31,13 @@ export class InteractionUtilsKt extends Object {
      * @returns Cannot interact -> null; else -> {@link MultiPlayerGameMode.interact} result
      * @see net.minecraft.client.Minecraft.startUseItem
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:124}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:124}
      */
     static interactEntity(entity: Entity, hitResult: EntityHitResult, hand: InteractionHand, swingMode: SwingMode): InteractionResult;
     /**
      * @returns Cannot interact -> null; else -> {@link MultiPlayerGameMode.interact} or {@link MultiPlayerGameMode.useItem} result
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L150 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:150}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L150 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:150}
      */
     static interactEntityLikeVanilla(entity: Entity, hitResult: EntityHitResult, swingMode: SwingMode, rotation: Rotation): StrictInteractionResult;
     static shouldSwingHand(interactionResult: InteractionResult): boolean;

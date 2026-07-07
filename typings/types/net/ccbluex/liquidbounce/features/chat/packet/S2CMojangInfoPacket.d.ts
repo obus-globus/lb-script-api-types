@@ -7,7 +7,7 @@ import type { AxochatPacket$S2C } from '../../../../../../net/ccbluex/liquidboun
  *
  * @param sessionHash session_hash to authenticate with Mojang
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:38}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt#L38 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ClientPackets.kt:38}
  */
 export class S2CMojangInfoPacket extends Object implements AxochatPacket$S2C {
     constructor(sessionHash: string)

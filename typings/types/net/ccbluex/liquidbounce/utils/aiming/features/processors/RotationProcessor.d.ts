@@ -5,7 +5,7 @@ import type { Rotation } from '../../../../../../../net/ccbluex/liquidbounce/uti
  * Processes the rotation from the current to the target rotation.
  * This can be used to apply additional features to the rotation calculation.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/RotationProcessor.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/RotationProcessor.kt:28}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/RotationProcessor.kt#L28 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/RotationProcessor.kt:28}
  */
 export interface RotationProcessor extends Object{
     process(rotationTarget: RotationTarget, currentRotation: Rotation, targetRotation: Rotation): Rotation;

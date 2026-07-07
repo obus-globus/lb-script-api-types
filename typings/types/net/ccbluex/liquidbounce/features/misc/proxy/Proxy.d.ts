@@ -8,7 +8,7 @@ import type { Proxy$Type } from '../../../../../../net/ccbluex/liquidbounce/feat
 /**
  * Contains serializable proxy data
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/Proxy.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/Proxy.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/Proxy.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/Proxy.kt:29}
  */
 export class Proxy extends Object {
     static Companion: Proxy$Companion;

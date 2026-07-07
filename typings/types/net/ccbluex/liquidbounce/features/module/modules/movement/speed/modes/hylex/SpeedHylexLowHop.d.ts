@@ -10,7 +10,7 @@ import type { SpeedBHopBase } from '../../../../../../../../../../net/ccbluex/li
  * Works because of a silly exemption from Hylex
  * @author @liquidsquid1
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/hylex/SpeedHylexLowHop.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/hylex/SpeedHylexLowHop.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/hylex/SpeedHylexLowHop.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/modes/hylex/SpeedHylexLowHop.kt:35}
  */
 export class SpeedHylexLowHop extends SpeedBHopBase {
     static Companion: Tagged$Companion;

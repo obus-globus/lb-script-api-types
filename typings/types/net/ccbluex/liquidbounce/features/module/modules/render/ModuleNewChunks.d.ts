@@ -10,7 +10,7 @@ import type { ChunkPos } from '../../../../../../../net/minecraft/world/level/Ch
  *
  * Highlights chunks that are likely newly generated.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleNewChunks.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleNewChunks.kt:48}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleNewChunks.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleNewChunks.kt:48}
  */
 export class ModuleNewChunks extends ClientModule {
     static INSTANCE: ModuleNewChunks;

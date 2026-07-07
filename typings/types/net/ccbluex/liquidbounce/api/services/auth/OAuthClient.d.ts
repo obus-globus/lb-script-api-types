@@ -7,7 +7,7 @@ import type { EventListener } from '../../../../../../net/ccbluex/liquidbounce/e
 /**
  * OAuth client for handling the authentication flow
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:54}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:54}
  */
 export class OAuthClient extends Object implements EventListener {
     static INSTANCE: OAuthClient;
@@ -20,7 +20,7 @@ export class OAuthClient extends Object implements EventListener {
     /**
      * Renew an expired session using its refresh token
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:91}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:91}
      */
     renewToken(session: OAuthSession): OAuthSession;
     /**
@@ -29,7 +29,7 @@ export class OAuthClient extends Object implements EventListener {
      * @param onUrl Callback for when the authorization URL is ready
      * @returns Client account with the authenticated session
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:67}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/api/services/auth/OAuthClient.kt:67}
      */
     startAuth(onUrl: (param0: string) => void): ClientAccount;
     // private startNettyServer(): number;

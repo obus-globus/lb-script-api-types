@@ -9,7 +9,7 @@ import type { Tagged$Companion } from '../../../../../net/ccbluex/liquidbounce/c
  *
  * The first argument is the source string, and the second argument is the target string to match against.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/StringMatchMode.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/StringMatchMode.kt:30}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/text/StringMatchMode.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/utils/text/StringMatchMode.kt:30}
  */
 export class StringMatchMode extends Enum<StringMatchMode> implements BiPredicate<string, string>, Tagged {
     static CONTAINS: StringMatchMode;

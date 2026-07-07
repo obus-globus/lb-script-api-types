@@ -13,7 +13,7 @@ import type { ModuleManager$SmartBindMouseState } from '../../../../../net/ccblu
 /**
  * A fairly simple module manager
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L280 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:280}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt#L280 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ModuleManager.kt:280}
  */
 export class ModuleManager extends Object implements EventListener {
     static INSTANCE: ModuleManager;

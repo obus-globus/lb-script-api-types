@@ -29,7 +29,7 @@ export class ChunkScanner extends Object implements EventListener, MinecraftShor
     /**
      * Cancel all existing enqueue(emit) jobs and scanner jobs
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L148 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:148}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt#L158 | src/main/kotlin/net/ccbluex/liquidbounce/utils/block/ChunkScanner.kt:158}
      */
     cancelCurrentJobs(): void;
     children(): EventListener[];

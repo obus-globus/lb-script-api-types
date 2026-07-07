@@ -7,7 +7,7 @@ import type { Event } from '../../../../../net/ccbluex/liquidbounce/event/Event.
  *
  * Note: After writing to the outline framebuffer {@link markDirty} must be called.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt:70}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt#L70 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt:70}
  */
 export class DrawOutlinesEvent extends Event {
     constructor(renderTarget: RenderTarget, pose: PoseStack, partialTicks: number)
@@ -18,7 +18,7 @@ export class DrawOutlinesEvent extends Event {
     /**
      * Called when the framebuffer was edited.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt#L82 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt:82}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt#L82 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/DrawEvents.kt:82}
      */
     markDirty(): void;
 }

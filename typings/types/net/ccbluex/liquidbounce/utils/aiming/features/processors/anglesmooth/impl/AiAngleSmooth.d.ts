@@ -13,7 +13,7 @@ import type { AiAngleSmooth$OutputMultiplier } from '../../../../../../../../../
  * and then train a model - after that you will be able to use it with
  * {@link net.ccbluex.liquidbounce.utils.aiming.features.processors.anglesmooth.impl.AiAngleSmooth}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/144cde7d640da47d1d98dbd04cfd7a29440805b4/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/AiAngleSmooth.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/AiAngleSmooth.kt:51}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/AiAngleSmooth.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/features/processors/anglesmooth/impl/AiAngleSmooth.kt:51}
  */
 export class AiAngleSmooth extends AngleSmooth {
     static Companion: Tagged$Companion;
