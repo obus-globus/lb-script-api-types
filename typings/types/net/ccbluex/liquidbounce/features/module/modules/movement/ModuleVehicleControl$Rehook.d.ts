@@ -4,7 +4,7 @@ import type { GameTickEvent } from '../../../../../../../net/ccbluex/liquidbounc
 /**
  * Bypasses BoatFly checks on anti-cheats such as Vulcan 2.9.1
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/fc8688f1fc8b0c8dfed8d3dc547a47ad55374af5/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleControl.kt#L138 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleControl.kt:138}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/9e7b00e677594d328d20ab213c6936c4d553b720/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleControl.kt#L138 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleVehicleControl.kt:138}
  */
 export class ModuleVehicleControl$Rehook extends ToggleableValueGroup {
     static INSTANCE: ModuleVehicleControl$Rehook;
