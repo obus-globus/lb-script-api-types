@@ -6,7 +6,7 @@ import type { RangeValueGroup } from '../../../../../../../../../net/ccbluex/liq
 /**
  * Allows adjusting your attack range and scan range.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt:34}
  */
 export class KillAuraRange extends RangeValueGroup implements MinecraftShortcuts {
     static INSTANCE: KillAuraRange;
@@ -19,9 +19,9 @@ export class KillAuraRange extends RangeValueGroup implements MinecraftShortcuts
      *
      * todo: remove this when no one uses the format anymore
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt:58}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/killaura/features/KillAuraRange.kt:58}
      */
-    migrateFromValues(map: { [key: string]: JsonObject }): void;
+    migrateFromValues(map: { [key: string]: JsonObject[] }): void;
     update(): void;
     // private withDummy<T extends unknown>(name: string, jsonObject: JsonObject, value: T): T;
 }

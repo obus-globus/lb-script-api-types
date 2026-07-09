@@ -6,16 +6,18 @@ import type { WebHudComponent } from '../../../../../../net/ccbluex/liquidbounce
  * Factory for creating components from JSON deserialization.
  *
  * @param name Component name
+ * @param description Short description of the component
  * @param enabled Whether the component is enabled
  * @param alignment JSON alignment data
  * @param tweaks Optional tweaks array
  * @param values Optional values array
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt:42}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt:43}
  */
 export class HudComponentFactory$JsonHudComponentFactory extends HudComponentFactory {
-    constructor(name: string, enabled: boolean, singleton: boolean, alignment: JsonObject, tweaks: HudComponentTweak[] | null, values: JsonObject[] | null)
+    constructor(name: string, description: string | null, enabled: boolean, singleton: boolean, alignment: JsonObject, tweaks: HudComponentTweak[] | null, values: JsonObject[] | null)
     // private alignment: JsonObject;
+    // private description: string | null;
     readonly enabled: boolean;
     readonly name: string;
     readonly singleton: boolean;

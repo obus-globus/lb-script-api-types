@@ -5,12 +5,13 @@ import type { DisconnectEvent } from '../../../../../../../net/ccbluex/liquidbou
 import type { ScreenEvent } from '../../../../../../../net/ccbluex/liquidbounce/event/events/ScreenEvent.d.ts'
 import type { ClientModule } from '../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
 import type { CustomOverlay } from '../../../../../../../net/ccbluex/liquidbounce/integration/screen/impl/CustomOverlay.d.ts'
+import type { Screen } from '../../../../../../../net/minecraft/client/gui/screens/Screen.d.ts'
 /**
  * Module HUD
  *
  * The client in-game dashboard.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt:52}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt:55}
  */
 export class ModuleHud extends ClientModule {
     static INSTANCE: ModuleHud;
@@ -18,6 +19,7 @@ export class ModuleHud extends ClientModule {
     // private browserReadyHandler: EventHook<BrowserReadyEvent>;
     readonly components: ValueGroup;
     // private disconnectHandler: EventHook<DisconnectEvent>;
+    hudEditorSelected: boolean;
     /*not mapped: */ isBlurEffectActive(): boolean;
     // private /*not mapped: */ isVisible(): boolean;
     // private overlay: CustomOverlay;
@@ -26,13 +28,16 @@ export class ModuleHud extends ClientModule {
     // private spaceSeperatedNames: boolean;
     // private /*not mapped: */ getSpaceSeperatedNames(): boolean;
     readonly themes: ValueGroup;
+    // private isClickGuiScreen(screen: Screen | null): boolean;
     onDisabled(): void;
     onEnabled(): void;
     reopen(): void;
+    // private shouldShowOverlay(screen: Screen | null): boolean;
+    // private updateOverlayVisibility(screen: Screen | null): void;
     /**
      * Updates {@link themes} content
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt:96}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt#L125 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt:125}
      */
     updateThemes(): void;
 }

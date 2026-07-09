@@ -17,7 +17,7 @@ export class AutoConfig extends Object {
     /**
      * Deserialize module configurable from a reader
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L109 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:109}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L109 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:109}
      */
     loadAutoConfig(jsonObject: JsonObject, modules: ValueGroup[]): void;
     loadAutoConfig(reader: Reader, modules: ValueGroup[]): void;
@@ -28,13 +28,13 @@ export class AutoConfig extends Object {
      *
      * @returns successfully reloaded or not
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:85}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L85 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:85}
      */
     reloadConfigs(): boolean;
     /**
      * Created an auto config, which stores the moduleConfigur
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L257 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:257}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt#L257 | src/main/kotlin/net/ccbluex/liquidbounce/config/autoconfig/AutoConfig.kt:257}
      */
     serializeAutoConfig(writer: Writer, includeConfiguration: IncludeConfiguration, autoSettingsType: AutoSettingsType, statusType: AutoSettingsStatusType): void;
     withLoading(block: () => void): void;

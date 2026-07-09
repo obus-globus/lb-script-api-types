@@ -478,7 +478,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/ConfigSystem.kt",
-      "line": 291
+      "line": 298
     }
   },
   "net.ccbluex.liquidbounce.config.ConfigSystem.deserializeValueGroup": [
@@ -954,7 +954,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 106
+      "line": 111
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.baseKey": {
@@ -962,7 +962,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 113
+      "line": 118
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.constructBaseKey": {
@@ -970,7 +970,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 152
+      "line": 157
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.json": {
@@ -981,7 +981,15 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 642
+      "line": 647
+    }
+  },
+  "net.ccbluex.liquidbounce.config.types.group.ValueGroup.prepareDeserialize": {
+    "doc": "Allows dynamic groups to create their children before stored values are applied.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
+      "line": 105
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.restore": {
@@ -989,7 +997,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 287
+      "line": 292
     }
   },
   "net.ccbluex.liquidbounce.config.types.group.ValueGroup.updateChildState": {
@@ -1005,7 +1013,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/config/types/group/ValueGroup.kt",
-      "line": 125
+      "line": 130
     }
   },
   "net.ccbluex.liquidbounce.config.types.list.ListValue.innerType": {
@@ -3378,6 +3386,17 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/aimbot/autobow/AutoBowAimbotFeature.kt",
       "line": 44
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.combat.aimbot.autobow.AutoBowAutoShootFeature.projectileEntityHitMargin": {
+    "doc": "",
+    "see": [
+      "net.minecraft.world.entity.projectile.ProjectileUtil.computeMargin"
+    ],
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/aimbot/autobow/AutoBowAutoShootFeature.kt",
+      "line": 210
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.combat.aimbot.autobow.AutoBowFastChargeFeature": {
@@ -8586,7 +8605,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt",
-      "line": 52
+      "line": 55
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleHud.Blur.alphaBlendRange": {
@@ -8594,7 +8613,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt",
-      "line": 75
+      "line": 104
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleHud.updateThemes": {
@@ -8602,7 +8621,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt",
-      "line": 96
+      "line": 125
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleItemChams": {
@@ -10566,6 +10585,22 @@
       "line": 39
     }
   },
+  "net.ccbluex.liquidbounce.integration.screen.impl.CustomSharedMinecraftScreen.isInGameUi": {
+    "doc": "Disable [Screen.extractBlurredBackground]",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomSharedMinecraftScreen.kt",
+      "line": 56
+    }
+  },
+  "net.ccbluex.liquidbounce.integration.screen.impl.CustomStandaloneMinecraftScreen.isInGameUi": {
+    "doc": "Disable [Screen.extractBlurredBackground]",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomStandaloneMinecraftScreen.kt",
+      "line": 73
+    }
+  },
   "net.ccbluex.liquidbounce.integration.screen.isLunar": {
     "doc": "Checks for Lunar client screens\n\nTODO: Do not simply replace any Lunar Screen with the title screen, if not in a world",
     "kind": "property",
@@ -10763,7 +10798,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt",
-      "line": 56
+      "line": 58
     }
   },
   "net.ccbluex.liquidbounce.integration.theme.Theme.getUrl": {
@@ -10771,7 +10806,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt",
-      "line": 229
+      "line": 308
     }
   },
   "net.ccbluex.liquidbounce.integration.theme.ThemeBackground.Image": {
@@ -10841,6 +10876,7 @@
     "doc": "Factory for creating components from JSON deserialization.",
     "params": {
       "name": "Component name",
+      "description": "Short description of the component",
       "enabled": "Whether the component is enabled",
       "alignment": "JSON alignment data",
       "tweaks": "Optional tweaks array",
@@ -10849,7 +10885,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt",
-      "line": 42
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.integration.theme.component.HudComponentFactory.NativeHudComponentFactory": {
@@ -10862,7 +10898,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt",
-      "line": 68
+      "line": 71
     }
   },
   "net.ccbluex.liquidbounce.integration.theme.component.HudComponentFactory.createComponent": {
@@ -10871,7 +10907,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt",
-      "line": 82
+      "line": 85
     }
   },
   "net.ccbluex.liquidbounce.integration.theme.component.HudComponentTweak": {
@@ -10880,6 +10916,36 @@
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt",
       "line": 27
+    }
+  },
+  "net.ccbluex.liquidbounce.integration.theme.component.components.NativeHudComponent.WEB_HUD_BASE_SCALE": {
+    "doc": "The browser HUD uses GUI scale 2 as its layout coordinate space and then zooms by\ncurrentGuiScale / 2. Native components have to expose their editor dimensions and\ninterpret stored offsets in that same coordinate space.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt",
+      "line": 81
+    }
+  },
+  "net.ccbluex.liquidbounce.integration.theme.component.components.NativeHudComponent.guiScaledHeight": {
+    "doc": "",
+    "see": [
+      "com.mojang.blaze3d.platform.Window.guiScaledHeight"
+    ],
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt",
+      "line": 43
+    }
+  },
+  "net.ccbluex.liquidbounce.integration.theme.component.components.NativeHudComponent.guiScaledWidth": {
+    "doc": "",
+    "see": [
+      "com.mojang.blaze3d.platform.Window.guiScaledWidth"
+    ],
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent.kt",
+      "line": 38
     }
   },
   "net.ccbluex.liquidbounce.integration.theme.component.components.minimap.ATLAS_SIZE": {
@@ -11114,7 +11180,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 65
+      "line": 67
     }
   },
   "net.ccbluex.liquidbounce.render.FontManager.COMMON_FONT": {
@@ -11122,7 +11188,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 49
+      "line": 51
     }
   },
   "net.ccbluex.liquidbounce.render.FontManager.DEFAULT_FONT_SIZE": {
@@ -11130,7 +11196,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 101
+      "line": 105
     }
   },
   "net.ccbluex.liquidbounce.render.FontManager.FONT_RENDERER": {
@@ -11138,7 +11204,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 94
+      "line": 98
     }
   },
   "net.ccbluex.liquidbounce.render.FontManager.fontFace": {
@@ -11146,7 +11212,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 113
+      "line": 117
     }
   },
   "net.ccbluex.liquidbounce.render.FontManager.fontFaces": {
@@ -11154,7 +11220,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 81
+      "line": 83
     }
   },
   "net.ccbluex.liquidbounce.render.FontManager.glyphManager": {
@@ -11162,7 +11228,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-      "line": 107
+      "line": 111
     }
   },
   "net.ccbluex.liquidbounce.render.GenericColorMode.isParamSensitive": {
@@ -16844,6 +16910,15 @@
       }
     }
   ],
+  "net.ccbluex.liquidbounce.utils.render.Alignment.getBounds": {
+    "doc": "",
+    "returns": "Scaled bounds follows [com.mojang.blaze3d.platform.Window.guiScale]",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/Alignment.kt",
+      "line": 64
+    }
+  },
   "net.ccbluex.liquidbounce.utils.render.BufferedSource.readNativeImage": {
     "doc": "Read and close source. Accepts JPEG and PNG.",
     "kind": "function",

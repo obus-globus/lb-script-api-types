@@ -6,7 +6,7 @@ import type { AxochatPacket$C2S } from '../../../../../../net/ccbluex/liquidboun
  * @param receiver receiver is an ID.
  * @param content content of the message.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:96}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/packet/ServerPackets.kt:96}
  */
 export class C2SPrivateMessagePacket extends Object implements AxochatPacket$C2S {
     constructor(receiver: string, content: string)

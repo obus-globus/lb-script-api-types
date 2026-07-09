@@ -3,7 +3,7 @@ import type { ExpiryValue } from '../../../../../../net/ccbluex/liquidbounce/api
 /**
  * Contains the access token and the refresh token.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/OAuthSession.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/OAuthSession.kt:26}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/OAuthSession.kt#L26 | src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/OAuthSession.kt:26}
  */
 export class OAuthSession extends Object {
     constructor(accessToken: ExpiryValue<string>, refreshToken: string)

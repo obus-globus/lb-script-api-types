@@ -16,7 +16,7 @@ import type { TargetTracker } from '../../../../../../../../net/ccbluex/liquidbo
  * Ignite: Automatically sets targets around you on fire.
  * AutoWeb: Automatically places cobwebs at targets around you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt:48}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt:48}
  */
 export class ModuleAutoTrap extends ClientModule {
     static INSTANCE: ModuleAutoTrap;

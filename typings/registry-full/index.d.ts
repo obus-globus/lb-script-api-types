@@ -28334,6 +28334,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.event.events.ClientShutdownEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/ClientShutdownEvent").ClientShutdownEvent;
     "net.ccbluex.liquidbounce.event.events.ClientStartEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/ClientStartEvent").ClientStartEvent;
     "net.ccbluex.liquidbounce.event.events.ComponentsUpdateEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/ComponentsUpdateEvent").ComponentsUpdateEvent;
+    "net.ccbluex.liquidbounce.event.events.ComponentsUpdateEvent$Source": typeof import("../types/net/ccbluex/liquidbounce/event/events/ComponentsUpdateEvent$Source").ComponentsUpdateEvent$Source;
     "net.ccbluex.liquidbounce.event.events.DeathEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/DeathEvent").DeathEvent;
     "net.ccbluex.liquidbounce.event.events.DisconnectEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/DisconnectEvent").DisconnectEvent;
     "net.ccbluex.liquidbounce.event.events.DrawOutlinesEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/DrawOutlinesEvent").DrawOutlinesEvent;
@@ -29966,6 +29967,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.integration.theme.Background": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/Background").Background;
     "net.ccbluex.liquidbounce.integration.theme.Theme": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/Theme").Theme;
     "net.ccbluex.liquidbounce.integration.theme.Theme$Companion": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/Theme$Companion").Theme$Companion;
+    "net.ccbluex.liquidbounce.integration.theme.Theme$ComponentCatalogEntry": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/Theme$ComponentCatalogEntry").Theme$ComponentCatalogEntry;
+    "net.ccbluex.liquidbounce.integration.theme.Theme$ComponentSettings": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/Theme$ComponentSettings").Theme$ComponentSettings;
     "net.ccbluex.liquidbounce.integration.theme.Theme$Origin": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/Theme$Origin").Theme$Origin;
     "net.ccbluex.liquidbounce.integration.theme.ThemeBackground$Image": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/ThemeBackground$Image").ThemeBackground$Image;
     "net.ccbluex.liquidbounce.integration.theme.ThemeBackground$Minecraft": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/ThemeBackground$Minecraft").ThemeBackground$Minecraft;
@@ -29981,6 +29984,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.integration.theme.component.HudComponentManager": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/HudComponentManager").HudComponentManager;
     "net.ccbluex.liquidbounce.integration.theme.component.HudComponentTweak": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak").HudComponentTweak;
     "net.ccbluex.liquidbounce.integration.theme.component.components.NativeHudComponent": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent").NativeHudComponent;
+    "net.ccbluex.liquidbounce.integration.theme.component.components.NativeHudComponent$Companion": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent$Companion").NativeHudComponent$Companion;
     "net.ccbluex.liquidbounce.integration.theme.component.components.WebHudComponent": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/components/WebHudComponent").WebHudComponent;
     "net.ccbluex.liquidbounce.integration.theme.component.components.minimap.ChunkRenderer": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/components/minimap/ChunkRenderer").ChunkRenderer;
     "net.ccbluex.liquidbounce.integration.theme.component.components.minimap.ChunkRenderer$MinimapChunkUpdateSubscriber": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/components/minimap/ChunkRenderer$MinimapChunkUpdateSubscriber").ChunkRenderer$MinimapChunkUpdateSubscriber;

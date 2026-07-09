@@ -62,7 +62,7 @@
   "liquidbounce": {
     "version": "0.38.1",
     "minecraft": "26.2",
-    "commit": "beffa1e580bb0cb76b9ba9d386521684cb421b73",
-    "ref": "v0.38.0-92-gbeffa1e58"
+    "commit": "a70a63864fcba3b841f36d8b1ab0c71ea03e76f8",
+    "ref": "v0.38.0-98-ga70a63864"
   }
 }

@@ -39,7 +39,7 @@ export class ItemType extends Enum<ItemType> {
      * ## Used values
      * - Specialization (see above): 10 per level
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt:97}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt#L97 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt:97}
      */
     readonly allocationPriority: Priority;
     readonly defaultCategory: ItemCategory;
@@ -49,7 +49,7 @@ export class ItemType extends Enum<ItemType> {
      * To stop the invcleaner from keeping items of every type, we can specify what function a specific item serves.
      * If that function is already served, we can just ignore it.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt#L103 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt:103}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt#L103 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategorization.kt:103}
      */
     readonly providedFunction: ItemFunction | null;
     name(): "ARMOR" | "SWORD" | "WEAPON" | "SPEAR" | "MACE" | "BOW" | "CROSSBOW" | "ARROW" | "TOOL" | "ROD" | "THROWABLE" | "SHIELD" | "FOOD" | "BUCKET" | "PEARL" | "GAPPLE" | "POTION" | "BLOCK" | "NONE";

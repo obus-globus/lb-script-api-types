@@ -3,7 +3,7 @@ import type { HudComponent } from '../../../../../../../net/ccbluex/liquidbounce
 import type { HudComponentTweak } from '../../../../../../../net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.d.ts'
 import type { Alignment } from '../../../../../../../net/ccbluex/liquidbounce/utils/render/Alignment.d.ts'
 export class WebHudComponent extends HudComponent {
-    constructor(name: string, enabled: boolean, alignment: Alignment, tweaks: HudComponentTweak[], values: JsonObject[])
+    constructor(name: string, enabled: boolean, alignment: Alignment, tweaks: HudComponentTweak[], values: JsonObject[], description: string)
     readonly values: JsonObject[];
     walkInit(): void;
 }

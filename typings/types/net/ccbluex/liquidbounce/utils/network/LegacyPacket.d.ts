@@ -8,26 +8,26 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
  *
  * This class can be implemented and sent over {@link sendPacket} to imitated behavior from older minecraft versions.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:34}
  */
 export interface LegacyPacket extends Object{
     /**
      * The type of the packet.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:45}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L45 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:45}
      */
     readonly packetType: PacketType;
     /**
      * Should provide the class of the protocol from the version where the packet got removed to the version where it
      * was still present.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:40}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:40}
      */
     readonly protocol: Class<Protocol<any, any, any, any>>;
     /**
      * Writes the actual information to the {@link packetWrapper}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:50}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/LegacyPacket.kt:50}
      */
     write(packetWrapper: PacketWrapper): void;
 }

@@ -9,7 +9,7 @@ import type { InputBind$BindAction$Companion } from '../../../../../net/ccbluex/
  *
  * @param tag display name used in config/ui
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L205 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:205}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt#L205 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputBind.kt:205}
  */
 export class InputBind$BindAction extends Enum<InputBind$BindAction> implements Tagged {
     static Companion: Tagged$Companion;

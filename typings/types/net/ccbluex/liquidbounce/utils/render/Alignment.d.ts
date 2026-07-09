@@ -7,9 +7,17 @@ export class Alignment extends ValueGroup {
     static Companion: Alignment$Companion;
     static center(): Alignment;
     constructor(horizontalAlignment: Alignment$ScreenAxisX, horizontalOffset: number, verticalAlignment: Alignment$ScreenAxisY, verticalOffset: number)
+    readonly guiScaledHorizontalOffset: number;
+    readonly guiScaledVerticalOffset: number;
     readonly horizontalAlignment: Alignment$ScreenAxisX;
     readonly horizontalOffset: number;
     readonly verticalAlignment: Alignment$ScreenAxisY;
     readonly verticalOffset: number;
+    /**
+     * @returns Scaled bounds follows {@link com.mojang.blaze3d.platform.Window.guiScale}
+     *
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/Alignment.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/Alignment.kt:64}
+     */
     getBounds(width: number, height: number): BoundingBox2f;
+    setFrom(other: Alignment): void;
 }

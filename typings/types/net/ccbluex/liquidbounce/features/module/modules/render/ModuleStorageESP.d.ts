@@ -16,7 +16,7 @@ import type { VoxelShape } from '../../../../../../../net/minecraft/world/phys/s
  *
  * Allows you to see chests, dispensers, etc. through walls.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt:90}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt:90}
  */
 export class ModuleStorageESP extends ClientModule {
     static INSTANCE: ModuleStorageESP;

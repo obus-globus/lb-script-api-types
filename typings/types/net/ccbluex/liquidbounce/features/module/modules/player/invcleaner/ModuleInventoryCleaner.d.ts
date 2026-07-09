@@ -12,7 +12,7 @@ import type { PlayerInventoryConstraints } from '../../../../../../../../net/ccb
  *
  * Automatically throws away useless items and sorts them.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt:47}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt#L47 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ModuleInventoryCleaner.kt:47}
  */
 export class ModuleInventoryCleaner extends ClientModule {
     static INSTANCE: ModuleInventoryCleaner;

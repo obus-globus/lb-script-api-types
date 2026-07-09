@@ -28,5 +28,6 @@ export class AutoBowAutoShootFeature extends ToggleableValueGroup {
     // private getChargedRandom(): number;
     // private getHypotheticalHit(): Entity | null;
     onDisabled(): void;
+    // private projectileEntityHitMargin(tickCount: number): number;
     // private updateChargeRandom(): void;
 }

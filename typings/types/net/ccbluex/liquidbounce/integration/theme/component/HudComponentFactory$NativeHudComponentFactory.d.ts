@@ -7,7 +7,7 @@ import type { HudComponentFactory } from '../../../../../../net/ccbluex/liquidbo
  * @param enabled Whether the component is enabled
  * @param function Function producing the component
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt#L68 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt:68}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt#L71 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory.kt:71}
  */
 export class HudComponentFactory$NativeHudComponentFactory extends HudComponentFactory {
     constructor(name: string, enabled: boolean, singleton: boolean, function_: () => HudComponent)
