@@ -28,9 +28,12 @@
 //   Part D - semantic surface check (skipLibCheck:false).
 //     Type-checks the script-author surface (ambient, augmentations, script
 //     bindings, event payloads) with full semantics. Errors IN those files
-//     are ratcheted as exact entries; errors in transitively-loaded generated
-//     files (the kotlin.*-leak long tail) are ratcheted as per-TS-code counts
-//     in __smoke/semantic-baseline.json - the debt can only shrink.
+//     are ratcheted as `file:TScode:symbol#N` entries - keyed by the enclosing
+//     declaration, not the line, so an upstream doc/import shift above a known
+//     error doesn't read as new (the #N index still catches an added error on
+//     the same symbol). Errors in transitively-loaded generated files (the
+//     kotlin.*-leak long tail) are ratcheted as per-TS-code counts in
+//     __smoke/semantic-baseline.json - the debt can only shrink.
 //
 // Run:  npm run typecheck                  (from repo root)
 //       npm run typecheck:update-baseline  (re-freeze the B + D baselines)
@@ -246,6 +249,26 @@ const SURFACE_DIRS = [
     path.join(LB_ROOT, "event", "events"),
 ];
 
+// Name of the nearest named declaration (class / interface / enum / function /
+// method / property / type alias / variable) whose span contains `pos`. Deepest
+// wins, so a member-level error keys to the member and a class-level error to
+// the class. Returns null when no named ancestor contains the position. Used to
+// key surface baseline entries by symbol instead of by line number.
+function enclosingSymbol(sourceFile, pos) {
+    let best = null;
+    const visit = (node) => {
+        if (pos < node.getStart(sourceFile) || pos >= node.getEnd()) return;
+        const nm = node.name;
+        if (nm) {
+            if (ts.isIdentifier(nm) || ts.isPrivateIdentifier(nm)) best = nm.text;
+            else if (ts.isStringLiteralLike(nm) || ts.isNumericLiteral(nm)) best = nm.text;
+        }
+        ts.forEachChild(node, visit);
+    };
+    ts.forEachChild(sourceFile, visit);
+    return best;
+}
+
 function partD() {
     const rootNames = SURFACE_DIRS.filter((d) => existsSync(d))
         .flatMap((d) => walk(d, (p) => p.endsWith(".d.ts")));
@@ -267,16 +290,29 @@ function partD() {
     const all = ts.getPreEmitDiagnostics(program)
         .filter((d) => d.category === ts.DiagnosticCategory.Error);
 
-    const surface = [];                 // exact entries in surface files
+    const surface = [];                 // symbol-keyed entries in surface files
+    const surfaceSeen = new Map();      // baseKey -> running occurrence index
     const transitive = new Map();       // TS code -> count elsewhere
     const isSurface = (f) => SURFACE_DIRS.some((d) => f.startsWith(d + path.sep));
+    const shortMsg = (d) => ts.flattenDiagnosticMessageText(d.messageText, " ").replace(/\s+/g, " ").slice(0, 80);
     for (const d of all) {
-        if (!d.file) { surface.push(`(project):TS${d.code}: ${ts.flattenDiagnosticMessageText(d.messageText, " ")}`); continue; }
+        if (!d.file) { surface.push(`(project):TS${d.code}: ${shortMsg(d)}`); continue; }
         const file = path.resolve(d.file.fileName);
         if (isSurface(file)) {
-            const lc = d.file.getLineAndCharacterOfPosition(d.start);
+            // Key surface errors by file + code + the enclosing named declaration
+            // (class / interface / member), NOT the line number. An upstream doc
+            // comment or import added above a symbol shifts every line beneath it,
+            // which under line-keying reads as a spurious "new" surface error and
+            // forces a manual review for a pure relocation. The occurrence index
+            // (#N) preserves the count, so a genuinely NEW error of the same code
+            // on the same symbol still trips the gate. A symbol-less diagnostic
+            // (rare on the surface) falls back to its line-free message text.
             const rel = path.relative(TYPINGS, file).split(path.sep).join("/");
-            surface.push(`${rel}:${lc.line + 1}:TS${d.code}`);
+            const symbol = enclosingSymbol(d.file, d.start) || shortMsg(d);
+            const base = `${rel}:TS${d.code}:${symbol}`;
+            const idx = surfaceSeen.get(base) || 0;
+            surfaceSeen.set(base, idx + 1);
+            surface.push(`${base}#${idx}`);
         } else {
             const key = `TS${d.code}`;
             transitive.set(key, (transitive.get(key) || 0) + 1);

@@ -49,9 +49,13 @@ with full semantics, the way no consumer ever does (everyone runs
 `skipLibCheck`). Two ratchets in
 [`typings/__smoke/semantic-baseline.json`](../typings/__smoke/semantic-baseline.json):
 
-- errors located **in** surface files: exact `file:line:code` entries
-  (target: empty; the current set is generator-layer debt, e.g. `TS2420`
-  from erased supertype mismatches);
+- errors located **in** surface files: `file:code:symbol#N` entries keyed by
+  the enclosing declaration (class / interface / member), **not** the line
+  number - so an upstream doc comment or import added above a known error
+  doesn't shift its line and read as a spurious "new" error (the `#N`
+  occurrence index still catches a genuinely new error of the same code on the
+  same symbol). Target: empty; the current set is generator-layer debt, e.g.
+  `TS2420` from erased supertype mismatches;
 - errors in **transitively-loaded** generated files (the `kotlin.*`-leak
   long tail across the MC/third-party namespaces): per-TS-code **counts**,
   so the debt can only shrink.
