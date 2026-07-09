@@ -12,7 +12,7 @@ import type { BlockState } from '../../../../../../../net/minecraft/world/level/
  *
  * Command: {@link CommandXRay}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:124}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:124}
  */
 export class ModuleXRay extends ClientModule {
     static INSTANCE: ModuleXRay;
@@ -25,7 +25,7 @@ export class ModuleXRay extends ClientModule {
     /**
      * Resets the block list to the default values
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L330 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:330}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L330 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:330}
      */
     applyDefaults(): void;
     /**
@@ -34,7 +34,7 @@ export class ModuleXRay extends ClientModule {
      * @see net.minecraft.client.renderer.block.ModelBlockRenderer.shouldRenderFace
      * @see net.caffeinemc.mods.sodium.client.render.model.AbstractBlockRenderContext.shouldDrawSide
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L292 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:292}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L292 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:292}
      */
     modifyDrawSide(blockState: BlockState, level: BlockGetter, blockPos: BlockPos, side: Direction, original: boolean): boolean;
     modifyShouldRenderFace(original: boolean, state: BlockState, otherState: BlockState, side: Direction): boolean;
@@ -45,7 +45,7 @@ export class ModuleXRay extends ClientModule {
      * This can be used to exclude blocks that should not be rendered.
      * Also features an option to only render blocks that are exposed to air.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L265 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:265}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt#L265 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleXRay.kt:265}
      */
     shouldRender(blockState: BlockState, blockPos: BlockPos): boolean;
     shouldRender(state: BlockState, otherState: BlockState, side: Direction): boolean;

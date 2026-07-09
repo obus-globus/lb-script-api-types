@@ -76,7 +76,6 @@ export class Hud extends Object implements MixinHudAccessor, HudAccessor {
     clearCache(): void;
     clearTitles(): void;
     // private displayScoreboardSidebar(graphics: GuiGraphicsExtractor, objective: Objective): void;
-    // private drawHotbar(arg0: GuiGraphicsExtractor, arg1: DeltaTracker, arg2: HudComponent): void;
     // private extractAirBubbles(graphics: GuiGraphicsExtractor, player: Player, vehicleHearts: number, yLineAir: number, xRight: number): void;
     // private extractBossOverlay(graphics: GuiGraphicsExtractor, deltaTracker: DeltaTracker): void;
     // private extractCameraOverlays(graphics: GuiGraphicsExtractor, deltaTracker: DeltaTracker): void;
@@ -91,6 +90,7 @@ export class Hud extends Object implements MixinHudAccessor, HudAccessor {
     // private extractHeart(graphics: GuiGraphicsExtractor, type: Hud$HeartType, xo: number, yo: number, isHardcore: boolean, blinks: boolean, half: boolean): void;
     // private extractHearts(graphics: GuiGraphicsExtractor, player: Player, xLeft: number, yLineBase: number, healthRowHeight: number, heartOffsetIndex: number, maxHealth: number, currentHealth: number, oldHealth: number, absorption: number, blink: boolean): void;
     // private extractHotbarAndDecorations(graphics: GuiGraphicsExtractor, deltaTracker: DeltaTracker): void;
+    // private extractHotbarForHud(arg0: GuiGraphicsExtractor, arg1: DeltaTracker, arg2: HudComponent): void;
     // private extractItemHotbar(graphics: GuiGraphicsExtractor, deltaTracker: DeltaTracker): void;
     // private extractOverlayMessage(graphics: GuiGraphicsExtractor, deltaTracker: DeltaTracker): void;
     // private extractPlayerHealth(graphics: GuiGraphicsExtractor): void;

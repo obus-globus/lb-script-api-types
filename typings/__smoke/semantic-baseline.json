@@ -20,7 +20,7 @@
     "types/net/ccbluex/liquidbounce/event/events/ClientPlayerDataEvent.d.ts:7:TS2420",
     "types/net/ccbluex/liquidbounce/event/events/ClientPlayerEffectEvent.d.ts:7:TS2420",
     "types/net/ccbluex/liquidbounce/event/events/ClientPlayerInventoryEvent.d.ts:7:TS2420",
-    "types/net/ccbluex/liquidbounce/event/events/ComponentsUpdateEvent.d.ts:8:TS2420",
+    "types/net/ccbluex/liquidbounce/event/events/ComponentsUpdateEvent.d.ts:9:TS2420",
     "types/net/ccbluex/liquidbounce/event/events/DeathEvent.d.ts:6:TS2420",
     "types/net/ccbluex/liquidbounce/event/events/DisconnectEvent.d.ts:6:TS2420",
     "types/net/ccbluex/liquidbounce/event/events/FpsChangeEvent.d.ts:6:TS2420",

@@ -5,6 +5,7 @@ import type { MinimapHudComponent$ExtraElement } from '../../../../../../../../n
 import type { ItemStack } from '../../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class MinimapHudComponent extends NativeHudComponent {
     static INSTANCE: MinimapHudComponent;
+    static WEB_HUD_BASE_SCALE: number;
     // private CLOCK: ItemStack;
     // private /*not mapped: */ getCLOCK(): ItemStack;
     // private COMPASS: ItemStack;
@@ -12,6 +13,8 @@ export class MinimapHudComponent extends NativeHudComponent {
     // private extraElements: MinimapHudComponent$ExtraElement[];
     // private fixedDirection: boolean;
     // private /*not mapped: */ getFixedDirection(): boolean;
+    readonly guiScaledHeight: number;
+    readonly guiScaledWidth: number;
     readonly renderHandler: EventHook<OverlayRenderEvent>;
     // private size: number;
     // private /*not mapped: */ getSize(): number;

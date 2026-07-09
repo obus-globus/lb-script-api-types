@@ -21,7 +21,7 @@ export class Render2DKt extends Object {
     /**
      * Float version of {@link GuiGraphicsExtractor.drawHorizontalLine}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L258 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:258}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L258 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:258}
      */
     static drawHorizontalLine(guiGraphicsExtractor: GuiGraphicsExtractor, x1: number, x2: number, y: number, thickness: number, color: Color4b): void;
     static drawLines(guiGraphicsExtractor: GuiGraphicsExtractor, points: number[], argb: number, bounds: ScreenRectangle, cull: boolean): void;
@@ -34,20 +34,20 @@ export class Render2DKt extends Object {
     /**
      * Float version of {@link GuiGraphicsExtractor.drawVerticalLine}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L265 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:265}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L265 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:265}
      */
     static drawVerticalLine(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y1: number, y2: number, thickness: number, color: Color4b): void;
     /**
      * @see net.minecraft.client.gui.render.state.ColoredRectangleRenderState.getBounds
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:84}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L84 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:84}
      */
     static getBounds(guiGraphicsExtractor: GuiGraphicsExtractor, left: number, top: number, right: number, bottom: number): ScreenRectangle;
     static getBounds(guiGraphicsExtractor: GuiGraphicsExtractor, box: BoundingBox2f): ScreenRectangle;
     /**
      * @see net.minecraft.client.gui.render.state.ColoredRectangleRenderState.getBounds
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:92}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt#L92 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt:92}
      */
     static getBoundsXYWH(guiGraphicsExtractor: GuiGraphicsExtractor, x: number, y: number, w: number, h: number): ScreenRectangle;
     static withPush(scissorStack: GuiGraphicsExtractor$ScissorStack, rect: ScreenRectangle, block: (param0: Object) => void): void;
