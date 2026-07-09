@@ -8,7 +8,7 @@ import type { HotbarItemSlot } from '../../../../../net/ccbluex/liquidbounce/uti
  * Manages things like {@link ModuleScaffold}'s silent mode.
  * Not thread safe, please only use this on the main-thread of minecraft
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/9e7b00e677594d328d20ab213c6936c4d553b720/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt:34}
  */
 export class SilentHotbar extends Object implements EventListener {
     static INSTANCE: SilentHotbar;
@@ -17,7 +17,7 @@ export class SilentHotbar extends Object implements EventListener {
     /**
      * Returns the slot that interactions would take place with
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/9e7b00e677594d328d20ab213c6936c4d553b720/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt:42}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt:42}
      */
     readonly serversideSlot: number;
     // private tickHandler: EventHook<GameTickEvent>;
@@ -27,7 +27,7 @@ export class SilentHotbar extends Object implements EventListener {
     /**
      * Returns if the slot is currently getting modified by a given requester
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/9e7b00e677594d328d20ab213c6936c4d553b720/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt:79}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt#L79 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt:79}
      */
     isSlotModifiedBy(requester: Object | null): boolean;
     parent(): EventListener | null;
@@ -36,7 +36,7 @@ export class SilentHotbar extends Object implements EventListener {
      * Silently selects a main-hand hotbar slot for duration of {@link ticksUntilReset}.
      * Offhand is ignored because it is not selected through held-item changes.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/9e7b00e677594d328d20ab213c6936c4d553b720/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt:52}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/beffa1e580bb0cb76b9ba9d386521684cb421b73/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt#L52 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/SilentHotbar.kt:52}
      */
     selectSlotSilently(requester: Object | null, slot: number, ticksUntilReset: number): void;
     selectSlotSilently(requester: Object | null, slot: HotbarItemSlot, ticksUntilReset: number): void;

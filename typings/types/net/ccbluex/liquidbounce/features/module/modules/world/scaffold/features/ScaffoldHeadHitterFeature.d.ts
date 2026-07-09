@@ -3,6 +3,9 @@ import type { EventHook } from '../../../../../../../../../net/ccbluex/liquidbou
 import type { GameTickEvent } from '../../../../../../../../../net/ccbluex/liquidbounce/event/events/GameTickEvent.d.ts'
 export class ScaffoldHeadHitterFeature extends ToggleableValueGroup {
     static INSTANCE: ScaffoldHeadHitterFeature;
+    // private jumpCooldown: number;
+    // private jumpDelay: { start: number; endInclusive: number; step: number };
+    // private /*not mapped: */ getJumpDelay(): { start: number; endInclusive: number; step: number };
     readonly repeatable: EventHook<GameTickEvent>;
     // private canHeadHit(): boolean;
 }
