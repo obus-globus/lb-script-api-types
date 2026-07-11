@@ -50,7 +50,7 @@ export class TruffleFromLibGraal$Id extends Enum<TruffleFromLibGraal$Id> impleme
     static PrepareForCompilation: TruffleFromLibGraal$Id;
     static RegisterOptimizedAssumptionDependency: TruffleFromLibGraal$Id;
     static SetCallCounts: TruffleFromLibGraal$Id;
-    static encodeMethodSignature(paramreturnType: Class<Object>, paramparameterTypes: Object | null): string;
+    static encodeMethodSignature(paramreturnType: Class<Object>, ...paramparameterTypes: Object | null): string;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TruffleFromLibGraal$Id;
     static values(): (Object | null)[];

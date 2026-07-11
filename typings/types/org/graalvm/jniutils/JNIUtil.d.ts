@@ -141,7 +141,7 @@ export class JNIUtil extends Object {
     static createHSString(paramenv: JNI$JNIEnv, paramstring: string): JNI$JString;
     static createString(paramenv: JNI$JNIEnv, paramhsString: JNI$JString): string;
     static encodeFieldSignature(paramtype: Class<Object>): string;
-    static encodeMethodSignature(paramreturnType: Class<Object>, paramparameterTypes: Object | null): string;
+    static encodeMethodSignature(paramreturnType: Class<Object>, ...paramparameterTypes: Object | null): string;
     static findClass(paramenv: JNI$JNIEnv, parambinaryName: string): JNI$JClass;
     static findClass(paramenv: JNI$JNIEnv, paramclassLoader: JNI$JObject, parambinaryName: string): JNI$JClass;
     static findClass(paramenv: JNI$JNIEnv, paramclassLoader: JNI$JObject, parambinaryName: string, paramrequired: boolean): JNI$JClass;
@@ -152,7 +152,7 @@ export class JNIUtil extends Object {
     static getInternalName(paramfqn: string): string;
     static getJVMCIClassLoader(paramenv: JNI$JNIEnv): JNI$JObject;
     static getSystemClassLoader(paramenv: JNI$JNIEnv): JNI$JObject;
-    static trace(paramlevel: number, paramformat: string, paramargs: (Object | null)[]): void;
+    static trace(paramlevel: number, paramformat: string, ...paramargs: (Object | null)[]): void;
     static trace(paramlevel: number, paramthrowable: Throwable): void;
     static tracingAt(paramlevel: number): boolean;
     private constructor()

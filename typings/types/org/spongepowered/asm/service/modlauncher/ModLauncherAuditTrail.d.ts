@@ -9,5 +9,5 @@ export class ModLauncherAuditTrail extends Object implements IMixinAuditTrail {
     onGenerate(arg0: string, arg1: string): void;
     onPostProcess(arg0: string): void;
     setConsumer(arg0: string, arg1: (param0: string[]) => void): void;
-    // private writeActivity(arg0: string, arg1: string[]): void;
+    // private writeActivity(arg0: string, ...arg1: string[]): void;
 }

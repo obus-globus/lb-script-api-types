@@ -40,6 +40,7 @@ export class Relation<K extends unknown, V extends unknown> extends Object imple
     removeAll(arg0: K): V[];
     removeAll(arg0: K, arg1: V[]): boolean;
     removeAll(arg0: Relation<K, V>): boolean;
+    removeAll(...arg0: K[]): V[];
     removeAll(arg0: K[]): V[];
     size(): number;
     toString(): string;

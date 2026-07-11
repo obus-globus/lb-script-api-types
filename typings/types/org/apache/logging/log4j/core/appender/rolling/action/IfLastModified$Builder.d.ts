@@ -12,5 +12,5 @@ export class IfLastModified$Builder extends Object implements Builder<IfLastModi
     getErrorPrefix(): string;
     isValid(): boolean;
     setAge(age: Duration): IfLastModified$Builder;
-    setNestedConditions(nestedConditions: PathCondition[]): IfLastModified$Builder;
+    setNestedConditions(...nestedConditions: PathCondition[]): IfLastModified$Builder;
 }

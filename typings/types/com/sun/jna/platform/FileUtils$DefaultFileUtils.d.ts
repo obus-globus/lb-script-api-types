@@ -5,5 +5,5 @@ export class FileUtils$DefaultFileUtils extends FileUtils {
     constructor(arg0: any)
     // private getTrashDirectory(): File;
     hasTrash(): boolean;
-    moveToTrash(arg0: File[]): void;
+    moveToTrash(...arg0: File[]): void;
 }

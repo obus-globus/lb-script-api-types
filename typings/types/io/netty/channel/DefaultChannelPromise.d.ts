@@ -14,7 +14,7 @@ export class DefaultChannelPromise extends DefaultPromise<void> implements Chann
     // private channel: Channel;
     // private checkpoint: number;
     addListener(arg0: GenericFutureListener<Future<void>>): ChannelPromise;
-    addListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
+    addListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
     await(): ChannelPromise;
     await(arg0: number): boolean;
     await(arg0: number, arg1: TimeUnit): boolean;
@@ -29,7 +29,7 @@ export class DefaultChannelPromise extends DefaultPromise<void> implements Chann
     isVoid(): boolean;
     promise(): ChannelPromise;
     removeListener(arg0: GenericFutureListener<Future<void>>): ChannelPromise;
-    removeListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
+    removeListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
     setFailure(arg0: Throwable): ChannelPromise;
     setSuccess(): ChannelPromise;
     setSuccess(arg0: void): ChannelPromise;

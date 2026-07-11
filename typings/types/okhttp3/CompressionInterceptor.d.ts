@@ -6,7 +6,7 @@ import type { Interceptor$Companion } from '../okhttp3/Interceptor$Companion.d.t
 import type { Response } from '../okhttp3/Response.d.ts'
 export class CompressionInterceptor extends Object implements Interceptor {
     static Companion: Interceptor$Companion;
-    constructor(algorithms: CompressionInterceptor$DecompressionAlgorithm[])
+    constructor(...algorithms: CompressionInterceptor$DecompressionAlgorithm[])
     // private acceptEncoding: string;
     /*not mapped: */ getAcceptEncoding$okhttp(): string;
     readonly algorithms: CompressionInterceptor$DecompressionAlgorithm[];

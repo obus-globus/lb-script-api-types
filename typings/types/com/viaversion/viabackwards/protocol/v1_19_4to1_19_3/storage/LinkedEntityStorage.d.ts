@@ -6,5 +6,5 @@ export class LinkedEntityStorage extends EntityPositionStorage implements Storab
     entities(): number[];
     onRemove(): void;
     remove(arg0: UserConnection): void;
-    setEntities(arg0: number[]): void;
+    setEntities(...arg0: number[]): void;
 }

@@ -31,22 +31,22 @@ export class IntegerOptionBuilderImpl extends StatefulOptionBuilderImpl<IntegerO
     setBinding(arg0: (param0: number) => void, arg1: () => number): IntegerOptionBuilder;
     setBinding(arg0: OptionBinding<number>): IntegerOptionBuilder;
     setControlHiddenWhenDisabled(arg0: boolean): IntegerOptionBuilder;
-    setDefaultProvider(arg0: (param0: ConfigState) => number, arg1: Identifier[]): IntegerOptionBuilder;
+    setDefaultProvider(arg0: (param0: ConfigState) => number, ...arg1: Identifier[]): IntegerOptionBuilder;
     setDefaultValue(arg0: number): IntegerOptionBuilder;
     setEnabled(arg0: boolean): IntegerOptionBuilder;
-    setEnabledProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): IntegerOptionBuilder;
-    setFlags(arg0: OptionFlag[]): IntegerOptionBuilder;
-    setFlags(arg0: Identifier[]): IntegerOptionBuilder;
+    setEnabledProvider(arg0: (param0: ConfigState) => boolean, ...arg1: Identifier[]): IntegerOptionBuilder;
+    setFlags(...arg0: OptionFlag[]): IntegerOptionBuilder;
+    setFlags(...arg0: Identifier[]): IntegerOptionBuilder;
     setImpact(arg0: OptionImpact): IntegerOptionBuilder;
     setName(arg0: Component): IntegerOptionBuilder;
     setRange(arg0: number, arg1: number, arg2: number): IntegerOptionBuilder;
     setRange(arg0: Range): IntegerOptionBuilder;
-    setRangeProvider(arg0: (param0: ConfigState) => SteppedValidator, arg1: Identifier[]): IntegerOptionBuilder;
+    setRangeProvider(arg0: (param0: ConfigState) => SteppedValidator, ...arg1: Identifier[]): IntegerOptionBuilder;
     setStorageHandler(arg0: () => void): IntegerOptionBuilder;
     setTooltip(arg0: (param0: number) => Component): IntegerOptionBuilder;
     setTooltip(arg0: Component): IntegerOptionBuilder;
     setValidator(arg0: SteppedValidator): IntegerOptionBuilder;
-    setValidatorProvider(arg0: (param0: ConfigState) => SteppedValidator, arg1: Identifier[]): IntegerOptionBuilder;
+    setValidatorProvider(arg0: (param0: ConfigState) => SteppedValidator, ...arg1: Identifier[]): IntegerOptionBuilder;
     setValueFormatter(arg0: (param0: number) => Component): IntegerOptionBuilder;
     validateData(): void;
 }

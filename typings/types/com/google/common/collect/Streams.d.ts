@@ -16,10 +16,10 @@ import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class Streams extends Object {
-    static concat(paramstreams: Object | null): Stream<Object>;
-    static concat(paramstreams: (Object | null)[]): DoubleStream;
-    static concat(paramstreams: (Object | null)[]): IntStream;
-    static concat(paramstreams: (Object | null)[]): LongStream;
+    static concat(...paramstreams: Object | null): Stream<Object>;
+    static concat(...paramstreams: (Object | null)[]): DoubleStream;
+    static concat(...paramstreams: (Object | null)[]): IntStream;
+    static concat(...paramstreams: (Object | null)[]): LongStream;
     static findLast(paramstream: Stream<Object>): Optional_2<Object>;
     static findLast(paramstream: DoubleStream): OptionalDouble;
     static findLast(paramstream: IntStream): OptionalInt;

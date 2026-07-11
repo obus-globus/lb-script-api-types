@@ -4,6 +4,6 @@ import type { AbstractCharacterFilterReader } from '../../../../../org/apache/co
 export class CharacterSetFilterReader extends AbstractCharacterFilterReader {
     static nullReader(): Reader;
     static of(paramarg0: CharSequence): Reader;
-    constructor(arg0: Reader, arg1: number[])
+    constructor(arg0: Reader, ...arg1: number[])
     constructor(arg0: Reader, arg1: number[])
 }

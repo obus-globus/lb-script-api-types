@@ -11,7 +11,7 @@ export class JAnsiTextRenderer extends Object implements TextRenderer {
     readonly styleMap: { [key: string]: string };
     getStyleMap(): { [key: string]: string };
     render(input: StringBuilder, output: StringBuilder): void;
-    // private render(input: string, output: StringBuilder, styleNames: string[]): void;
+    // private render(input: string, output: StringBuilder, ...styleNames: string[]): void;
     render(input: string, output: StringBuilder, styleName: string): void;
     toString(): string;
 }

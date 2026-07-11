@@ -7,7 +7,7 @@ import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockP
  * Allows the crystal aura to send a break packet right when a crystal is placed by predicting the
  * expected entity id.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleIdPredict.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleIdPredict.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleIdPredict.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/SubmoduleIdPredict.kt:44}
  */
 export class SubmoduleIdPredict extends ToggleableValueGroup {
     static INSTANCE: SubmoduleIdPredict;

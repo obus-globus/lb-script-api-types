@@ -1560,7 +1560,7 @@ export class GL45C extends GL44C {
     static glCreateSamplers(paramarg0: IntBuffer): void;
     static glCreateShader(paramarg0: number): number;
     static glCreateShaderProgramv(paramarg0: number, paramarg1: CharSequence): number;
-    static glCreateShaderProgramv(paramarg0: number, paramarg1: (Object | null)[]): number;
+    static glCreateShaderProgramv(paramarg0: number, ...paramarg1: (Object | null)[]): number;
     static glCreateShaderProgramv(paramarg0: number, paramarg1: PointerBuffer): number;
     static glCreateTextures(paramarg0: number): number;
     static glCreateTextures(paramarg0: number, paramarg1: number[]): void;
@@ -2401,7 +2401,7 @@ export class GL45C extends GL44C {
     static glShaderBinary(paramarg0: number[], paramarg1: number, paramarg2: ByteBuffer): void;
     static glShaderBinary(paramarg0: IntBuffer, paramarg1: number, paramarg2: ByteBuffer): void;
     static glShaderSource(paramarg0: number, paramarg1: CharSequence): void;
-    static glShaderSource(paramarg0: number, paramarg1: (Object | null)[]): void;
+    static glShaderSource(paramarg0: number, ...paramarg1: (Object | null)[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glShaderStorageBlockBinding(paramarg0: number, paramarg1: number, paramarg2: number): void;

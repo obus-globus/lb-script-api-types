@@ -21,7 +21,7 @@ export class Relative extends Enum<Relative> {
     static pack(paramset: Relative[]): number;
     static position(paramrelativeX: boolean, paramrelativeY: boolean, paramrelativeZ: boolean): Relative[];
     static rotation(paramrelativeYRot: boolean, paramrelativeXRot: boolean): Relative[];
-    static union(paramsets: Object | null): Relative[];
+    static union(...paramsets: Object | null): Relative[];
     static unpack(paramvalue: number): Relative[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Relative;

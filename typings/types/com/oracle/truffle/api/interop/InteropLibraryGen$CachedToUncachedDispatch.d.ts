@@ -39,7 +39,7 @@ export class InteropLibraryGen$CachedToUncachedDispatch extends InteropLibrary {
     asTime(receiver_: Object): LocalTime;
     asTimeZone(receiver_: Object): ZoneId;
     asTruffleString(receiver_: Object): TruffleString;
-    execute(receiver_: Object, arguments: Object[]): Object;
+    execute(receiver_: Object, ...arguments: Object[]): Object;
     fitsInBigInteger(receiver_: Object): boolean;
     fitsInByte(receiver_: Object): boolean;
     fitsInDouble(receiver_: Object): boolean;
@@ -90,8 +90,8 @@ export class InteropLibraryGen$CachedToUncachedDispatch extends InteropLibrary {
     hasScopeParent(receiver_: Object): boolean;
     hasSourceLocation(receiver_: Object): boolean;
     identityHashCode(receiver_: Object): number;
-    instantiate(receiver_: Object, arguments: Object[]): Object;
-    invokeMember(receiver_: Object, member: string, arguments: Object[]): Object;
+    instantiate(receiver_: Object, ...arguments: Object[]): Object;
+    invokeMember(receiver_: Object, member: string, ...arguments: Object[]): Object;
     isArrayElementInsertable(receiver_: Object, index: number): boolean;
     isArrayElementModifiable(receiver_: Object, index: number): boolean;
     isArrayElementReadable(receiver_: Object, index: number): boolean;

@@ -105,7 +105,7 @@ export class BlockBehaviour$Properties extends Object implements FabricBlock$Fab
     pushReaction(pushReaction: PushReaction): BlockBehaviour$Properties;
     randomTicks(): BlockBehaviour$Properties;
     replaceable(): BlockBehaviour$Properties;
-    requiredFeatures(flags: FeatureFlag[]): BlockBehaviour$Properties;
+    requiredFeatures(...flags: FeatureFlag[]): BlockBehaviour$Properties;
     requiresCorrectToolForDrops(): BlockBehaviour$Properties;
     setId(id: ResourceKey<Block>): BlockBehaviour$Properties;
     sound(soundType: SoundType): BlockBehaviour$Properties;

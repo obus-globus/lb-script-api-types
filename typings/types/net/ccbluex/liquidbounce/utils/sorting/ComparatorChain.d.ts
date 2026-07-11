@@ -15,7 +15,7 @@ export class ComparatorChain<T extends unknown> extends Object implements Compar
     static nullsFirst(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static reverseOrder(): (param0: Object) => boolean;
-    constructor(comparisonFunctions: (param0: Object) => boolean[])
+    constructor(...comparisonFunctions: (param0: Object) => boolean[])
     // private comparisonFunctions: (param0: Object) => boolean[];
     compare(o1: T, o2: T): number;
     reversed(): (param0: Object) => boolean;

@@ -3,7 +3,7 @@ import type { Collector } from '../../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 export class LangCollectors extends Object {
-    static collect(paramarg0: Collector<Object, Object, Object>, paramarg1: Object | null): Object | null;
+    static collect(paramarg0: Collector<Object, Object, Object>, ...paramarg1: Object | null): Object | null;
     static joining(): Collector<Object, Object, string>;
     static joining(paramarg0: CharSequence): Collector<Object, Object, string>;
     static joining(paramarg0: CharSequence, paramarg1: CharSequence, paramarg2: CharSequence): Collector<Object, Object, string>;

@@ -9,5 +9,5 @@ export class CurveValue$Builder extends Object {
     xAxis: CurveValue$Axis | null;
     yAxis: CurveValue$Axis | null;
     build(): CurveValue;
-    points(values: Vector2f[]): CurveValue$Builder;
+    points(...values: Vector2f[]): CurveValue$Builder;
 }

@@ -20,7 +20,7 @@ export class EmbeddedChannel$Builder extends Object {
     channelId(arg0: ChannelId): EmbeddedChannel$Builder;
     config(arg0: ChannelConfig): EmbeddedChannel$Builder;
     handlers(arg0: ChannelHandler): EmbeddedChannel$Builder;
-    handlers(arg0: ChannelHandler[]): EmbeddedChannel$Builder;
+    handlers(...arg0: ChannelHandler[]): EmbeddedChannel$Builder;
     hasDisconnect(arg0: boolean): EmbeddedChannel$Builder;
     parent(arg0: Channel): EmbeddedChannel$Builder;
     register(arg0: boolean): EmbeddedChannel$Builder;

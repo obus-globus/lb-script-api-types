@@ -10,7 +10,7 @@ export class IconSet extends Enum<IconSet> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): IconSet;
     static values(): (Object | null)[];
-    private constructor(path: string[])
+    private constructor(...path: string[])
     // private path: string[];
     // private getFile(resources: PackResources, fileName: string): () => InputStream;
     getMacIcon(resources: PackResources): () => InputStream;

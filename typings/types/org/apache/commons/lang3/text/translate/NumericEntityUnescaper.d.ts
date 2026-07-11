@@ -4,7 +4,7 @@ import type { CharSequenceTranslator } from '../../../../../../org/apache/common
 import type { NumericEntityUnescaper$OPTION } from '../../../../../../org/apache/commons/lang3/text/translate/NumericEntityUnescaper$OPTION.d.ts'
 export class NumericEntityUnescaper extends CharSequenceTranslator {
     static hex(paramarg0: number): string;
-    constructor(arg0: NumericEntityUnescaper$OPTION[])
+    constructor(...arg0: NumericEntityUnescaper$OPTION[])
     // private options: NumericEntityUnescaper$OPTION[];
     isSet(arg0: NumericEntityUnescaper$OPTION): boolean;
     translate(arg0: CharSequence): string;

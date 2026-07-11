@@ -13,7 +13,7 @@ export abstract class RecurrentBlock extends AbstractBlock {
     // private numLayers: number;
     // private returnState: boolean;
     // private stateSize: number;
-    beforeInitialize(arg0: Shape[]): void;
+    beforeInitialize(...arg0: Shape[]): void;
     getNumDirections(): number;
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];

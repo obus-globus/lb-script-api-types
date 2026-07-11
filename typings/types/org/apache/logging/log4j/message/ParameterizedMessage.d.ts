@@ -19,7 +19,7 @@ export class ParameterizedMessage extends Object implements Message, StringBuild
     static identityToString(paramobj: Object): string;
     constructor(pattern: string, arg: Object)
     constructor(pattern: string, arg0: Object, arg1: Object)
-    constructor(pattern: string, args: Object[])
+    constructor(pattern: string, ...args: Object[])
     constructor(pattern: string, args: Object[], throwable: Throwable)
     constructor(pattern: string, args: string[], throwable: Throwable)
     // private args: Object[];

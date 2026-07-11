@@ -7,7 +7,7 @@ export class Predicates extends Object {
     static alwaysFalse(): (param0: Object) => boolean;
     static alwaysTrue(): (param0: Object) => boolean;
     static and(paramfirst: (param0: Object) => boolean, paramsecond: (param0: Object) => boolean): (param0: Object) => boolean;
-    static and(paramcomponents: Object | null): (param0: Object) => boolean;
+    static and(...paramcomponents: Object | null): (param0: Object) => boolean;
     static and(paramcomponents: (param0: Object) => boolean[]): (param0: Object) => boolean;
     static compose(parampredicate: (param0: Object) => boolean, paramfunction: (param0: Object) => boolean): (param0: Object) => boolean;
     static contains(parampattern: Pattern): (param0: Object) => boolean;
@@ -19,7 +19,7 @@ export class Predicates extends Object {
     static not(parampredicate: (param0: Object) => boolean): (param0: Object) => boolean;
     static notNull(): (param0: Object) => boolean;
     static or(paramfirst: (param0: Object) => boolean, paramsecond: (param0: Object) => boolean): (param0: Object) => boolean;
-    static or(paramcomponents: Object | null): (param0: Object) => boolean;
+    static or(...paramcomponents: Object | null): (param0: Object) => boolean;
     static or(paramcomponents: (param0: Object) => boolean[]): (param0: Object) => boolean;
     static subtypeOf(paramclazz: Class<Object>): (param0: Object) => boolean;
     private constructor()

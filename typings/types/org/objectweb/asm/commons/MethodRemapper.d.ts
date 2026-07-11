@@ -17,7 +17,7 @@ export class MethodRemapper extends MethodVisitor {
     visitFieldInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitFrame(arg0: number, arg1: number, arg2: Object[], arg3: number, arg4: Object[]): void;
     visitInsnAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): AnnotationVisitor;
-    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): void;
+    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): void;
     visitLdcInsn(arg0: Object): void;
     visitLocalVariable(arg0: string, arg1: string, arg2: string, arg3: Label, arg4: Label, arg5: number): void;
     visitLocalVariableAnnotation(arg0: number, arg1: TypePath, arg2: Label[], arg3: Label[], arg4: number[], arg5: string, arg6: boolean): AnnotationVisitor;

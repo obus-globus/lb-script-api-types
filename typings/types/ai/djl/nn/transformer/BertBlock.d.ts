@@ -35,5 +35,5 @@ export class BertBlock extends AbstractBlock {
     getTokenDictionarySize(): number;
     getTokenEmbedding(): IdEmbedding;
     getTypeDictionarySize(): number;
-    initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
+    initializeChildBlocks(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
 }

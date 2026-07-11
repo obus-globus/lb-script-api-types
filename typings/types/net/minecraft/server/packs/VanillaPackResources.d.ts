@@ -29,7 +29,7 @@ export class VanillaPackResources extends Object implements PackResources {
     getMetadataSection<T extends unknown>(metadataSerializer: MetadataSectionType<T>): T;
     getNamespaces(type: PackType): string[];
     getResource(type: PackType, location: Identifier): () => InputStream;
-    getRootResource(path: string[]): () => InputStream;
+    getRootResource(...path: string[]): () => InputStream;
     knownPackInfo(): Optional<KnownPack>;
     listRawPaths(type: PackType, resource: Identifier, output: (param0: Path[]) => void): void;
     listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;

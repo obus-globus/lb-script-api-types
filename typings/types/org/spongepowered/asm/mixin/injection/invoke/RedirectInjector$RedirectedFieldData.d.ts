@@ -14,6 +14,6 @@ export class RedirectInjector$RedirectedFieldData extends Injector$InjectorData 
     // private opcode: number;
     // private owner: Type;
     // private type: Type;
-    getArrayArgs(arg0: Type[]): Type[];
+    getArrayArgs(...arg0: Type[]): Type[];
     getTotalDimensions(): number;
 }

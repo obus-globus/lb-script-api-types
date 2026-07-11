@@ -23,7 +23,7 @@ export class AxochatClient extends Object {
     /**
      * Ban user from server
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L228 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:228}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L228 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:228}
      */
     banUser(target: string): void;
     /**
@@ -31,7 +31,7 @@ export class AxochatClient extends Object {
      * Supports SSL and non-SSL connections.
      * Be aware SSL takes insecure certificates.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:127}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L127 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:127}
      */
     connect(): Result<void>;
     disconnect(): void;
@@ -39,38 +39,38 @@ export class AxochatClient extends Object {
     /**
      * Handle incoming message of websocket
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L348 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:348}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L348 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:348}
      */
     handlePlainMessage(message: string): void;
     /**
      * Login to web socket via JWT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L252 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:252}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L252 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:252}
      */
     loginViaJwt(token: string): void;
     reconnect(): void;
     /**
      * Request Mojang authentication details for login
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L212 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:212}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L212 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:212}
      */
     requestMojangLogin(): void;
     /**
      * Send chat message to server
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L217 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:217}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L217 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:217}
      */
     sendMessage(message: string): void;
     /**
      * Send packet to server
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L260 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:260}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L260 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:260}
      */
     sendPacket(packet: AxochatPacket$C2S): void;
     /**
      * Send private chat message to server
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L222 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:222}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L222 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:222}
      */
     sendPrivateMessage(receiver: string, message: string): void;
     // private toUUID(target: string): string;
@@ -78,7 +78,7 @@ export class AxochatClient extends Object {
     /**
      * Unban user from server
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L233 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:233}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt#L233 | src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt:233}
      */
     unbanUser(target: string): void;
 }

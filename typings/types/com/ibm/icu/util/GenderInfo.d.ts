@@ -8,5 +8,6 @@ export class GenderInfo extends Object {
     static getInstance(paramarg0: Locale): GenderInfo;
     constructor(arg0: GenderInfo$ListGenderStyle)
     // private style: GenderInfo$ListGenderStyle;
+    getListGender(...arg0: GenderInfo$Gender[]): GenderInfo$Gender;
     getListGender(arg0: GenderInfo$Gender[]): GenderInfo$Gender;
 }

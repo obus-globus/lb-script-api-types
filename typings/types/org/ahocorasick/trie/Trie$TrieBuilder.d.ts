@@ -5,6 +5,7 @@ export class Trie$TrieBuilder extends Object {
     constructor(arg0: any)
     // private delegate: PayloadTrie$PayloadTrieBuilder<string>;
     addKeyword(arg0: string): Trie$TrieBuilder;
+    addKeywords(...arg0: string[]): Trie$TrieBuilder;
     addKeywords(arg0: string[]): Trie$TrieBuilder;
     build(): Trie;
     caseInsensitive(): Trie$TrieBuilder;

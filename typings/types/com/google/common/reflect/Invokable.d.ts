@@ -44,7 +44,7 @@ export abstract class Invokable<T extends unknown, R extends unknown> extends Ob
     getReturnType(): TypeToken<R>;
     getTypeParameters(): TypeVariable<any>[];
     hashCode(): number;
-    invoke(receiver: T, args: Object[]): R;
+    invoke(receiver: T, ...args: Object[]): R;
     invokeInternal(receiver: Object, args: Object[]): Object;
     isAbstract(): boolean;
     isAccessible(): boolean;

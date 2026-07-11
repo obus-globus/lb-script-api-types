@@ -6,7 +6,7 @@ import type { SocketChannel } from '../../../../../../java/nio/channels/SocketCh
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InspectorServer$HTTPChannelWrapper extends Object implements ByteChannel {
-    constructor(channel: SocketChannel, interceptors: (param0: InspectorServer$HttpRequest) => InspectorServer$HttpResponse[])
+    constructor(channel: SocketChannel, ...interceptors: (param0: InspectorServer$HttpRequest) => InspectorServer$HttpResponse[])
     // private buffer: ByteBuffer;
     // private channel: SocketChannel;
     // private interceptors: (param0: InspectorServer$HttpRequest) => InspectorServer$HttpResponse[];

@@ -12,7 +12,7 @@ export class UtcOffsetFormat$Builder extends Object implements AbstractDateTimeF
     constructor(actualBuilder: AppendableFormatStructure<UtcOffsetFieldContainer>)
     readonly actualBuilder: AppendableFormatStructure<UtcOffsetFieldContainer>;
     addFormatStructureForOffset(structure: FormatStructure<UtcOffsetFieldContainer>): void;
-    appendAlternativeParsingImpl(otherFormats: (param0: UtcOffsetFormat$Builder) => void[], mainFormat: (param0: UtcOffsetFormat$Builder) => void): void;
+    appendAlternativeParsingImpl(...otherFormats: (param0: UtcOffsetFormat$Builder) => void[], mainFormat: (param0: UtcOffsetFormat$Builder) => void): void;
     appendOptionalImpl(onZero: string, format: (param0: UtcOffsetFormat$Builder) => void): void;
     build(): CachedFormatStructure<UtcOffsetFieldContainer>;
     chars(value: string): void;

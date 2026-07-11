@@ -9,7 +9,7 @@ import type { FabricLauncher } from '../../../../../net/fabricmc/loader/impl/lau
 export class GameProviderHelper extends Object {
     static addLibrary(paramarg0: string, paramarg1: Path[][][]): void;
     static deobfuscate(paramarg0: { [key: string]: Path[][] }, paramarg1: string, paramarg2: string, paramarg3: string, paramarg4: Path[][], paramarg5: FabricLauncher): { [key: string]: Path[][] };
-    static findFirst(paramarg0: Path[][][], paramarg1: Map<Path[][], ZipFile>, paramarg2: boolean, paramarg3: (Object | null)[]): GameProviderHelper$FindResult;
+    static findFirst(paramarg0: Path[][][], paramarg1: Map<Path[][], ZipFile>, paramarg2: boolean, ...paramarg3: (Object | null)[]): GameProviderHelper$FindResult;
     static getCommonGameJar(): Path[][];
     static getEnvGameJar(paramarg0: EnvType): Path[][];
     static getLibraries(paramarg0: string): Path[][][];

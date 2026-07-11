@@ -12,8 +12,8 @@ export class FingerprintTrustManagerFactory extends SimpleTrustManagerFactory {
     static getInstance(paramarg0: string): TrustManagerFactory;
     static getInstance(paramarg0: string, paramarg1: string): TrustManagerFactory;
     static getInstance(paramarg0: string, paramarg1: { [key: string]: any }): TrustManagerFactory;
-    constructor(arg0: number[][])
-    constructor(arg0: string[])
+    constructor(...arg0: number[][])
+    constructor(...arg0: string[])
     constructor(arg0: string, arg1: number[][])
     constructor(arg0: string[])
     // private fingerprints: number[][];

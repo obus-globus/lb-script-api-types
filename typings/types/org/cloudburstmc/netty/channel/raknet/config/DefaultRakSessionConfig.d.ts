@@ -20,7 +20,7 @@ export class DefaultRakSessionConfig extends DefaultChannelConfig implements Rak
     getMtu(): number;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getOrderingChannels(): number;
     getProtocolVersion(): number;
     getSessionTimeout(): number;

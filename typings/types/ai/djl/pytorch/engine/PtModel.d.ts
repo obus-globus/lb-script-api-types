@@ -7,7 +7,7 @@ import type { Path } from '../../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PtModel extends BaseModel {
     constructor(arg0: string, arg1: Device)
-    // private findModelFile(arg0: string[]): Path[];
+    // private findModelFile(...arg0: string[]): Path[];
     getArtifactNames(): string[];
     load(arg0: InputStream): void;
     load(arg0: InputStream, arg1: boolean): void;

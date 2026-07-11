@@ -22,7 +22,7 @@ export interface Filter extends Object, LifeCycle{
     filter(logger: Logger, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): Filter$Result;
-    filter(logger: Logger, level: Level, marker: Marker, msg: string, params: Object[]): Filter$Result;
+    filter(logger: Logger, level: Level, marker: Marker, msg: string, ...params: Object[]): Filter$Result;
     filter(logger: Logger, level: Level, marker: Marker, msg: Message, t: Throwable): Filter$Result;
     getOnMatch(): Filter$Result;
     getOnMismatch(): Filter$Result;

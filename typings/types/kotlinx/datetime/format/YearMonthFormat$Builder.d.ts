@@ -13,7 +13,7 @@ export class YearMonthFormat$Builder extends Object implements AbstractDateTimeF
     constructor(actualBuilder: AppendableFormatStructure<YearMonthFieldContainer>)
     readonly actualBuilder: AppendableFormatStructure<YearMonthFieldContainer>;
     addFormatStructureForYearMonth(structure: FormatStructure<YearMonthFieldContainer>): void;
-    appendAlternativeParsingImpl(otherFormats: (param0: YearMonthFormat$Builder) => void[], mainFormat: (param0: YearMonthFormat$Builder) => void): void;
+    appendAlternativeParsingImpl(...otherFormats: (param0: YearMonthFormat$Builder) => void[], mainFormat: (param0: YearMonthFormat$Builder) => void): void;
     appendOptionalImpl(onZero: string, format: (param0: YearMonthFormat$Builder) => void): void;
     build(): CachedFormatStructure<YearMonthFieldContainer>;
     chars(value: string): void;

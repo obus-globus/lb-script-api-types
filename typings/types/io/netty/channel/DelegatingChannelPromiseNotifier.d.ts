@@ -16,7 +16,7 @@ export class DelegatingChannelPromiseNotifier extends Object implements ChannelF
     // private delegate: ChannelPromise;
     // private logNotifyFailure: boolean;
     addListener(arg0: GenericFutureListener<Future<void>>): ChannelPromise;
-    addListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
+    addListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
     await(): ChannelPromise;
     await(arg0: number): boolean;
     await(arg0: number, arg1: TimeUnit): boolean;
@@ -36,7 +36,7 @@ export class DelegatingChannelPromiseNotifier extends Object implements ChannelF
     isVoid(): boolean;
     operationComplete(arg0: ChannelFuture): void;
     removeListener(arg0: GenericFutureListener<Future<void>>): ChannelPromise;
-    removeListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
+    removeListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
     setFailure(arg0: Throwable): ChannelPromise;
     setSuccess(): ChannelPromise;
     setSuccess(arg0: void): ChannelPromise;

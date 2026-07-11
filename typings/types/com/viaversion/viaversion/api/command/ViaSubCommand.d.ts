@@ -6,6 +6,6 @@ export interface ViaSubCommand extends Object{
     name(): string;
     onTabComplete(arg0: ViaCommandSender, arg1: string[]): string[];
     permission(): string;
-    sendMessage(arg0: ViaCommandSender, arg1: string, arg2: Object[]): void;
+    sendMessage(arg0: ViaCommandSender, arg1: string, ...arg2: Object[]): void;
     usage(): string;
 }

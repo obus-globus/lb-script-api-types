@@ -12,7 +12,7 @@ import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts
 /**
  * A module also called 'hack' can be enabled and handle events
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:55}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:55}
  */
 export class ClientModule extends ToggleableValueGroup implements EventListener, MinecraftShortcuts {
     constructor(name: string, category: ModuleCategory, bind: number, bindAction: InputBind$BindAction, state: boolean, notActivatable: boolean, disableActivation: boolean, disableOnQuit: boolean, aliases: string[], hide: boolean)
@@ -36,13 +36,13 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
      *
      * Note: This overwrites {@link ToggleableValueGroup} declaration of {@link running}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:80}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L80 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:80}
      */
     readonly running: boolean;
     /**
      * Allows the user to access values by typing module.settings.<valuename>
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:115}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:115}
      */
     readonly settings: { [key: string]: Value<Object> };
     readonly tag: string | null;
@@ -51,15 +51,15 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
     /**
      * Launches an async task on {@link eventListenerScope} when module is turned on.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:149}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L149 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:149}
      */
     enabledEffect(): void;
-    message(key: string, args: Object[]): MutableComponent;
+    message(key: string, ...args: Object[]): MutableComponent;
     onEnabledValueRegistration(value: Value<boolean>): Value<boolean>;
     /**
      * Called when the module is registered in the module manager.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L128 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:128}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L128 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:128}
      */
     onRegistration(): void;
     onToggled(state: boolean): boolean;
@@ -73,7 +73,7 @@ export class ClientModule extends ToggleableValueGroup implements EventListener,
      *
      * Requires that {@link ValueGroup.walkKeyPath} has previously been run.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L195 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:195}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt#L195 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/ClientModule.kt:195}
      */
     verifyFallbackDescription(): void;
 }

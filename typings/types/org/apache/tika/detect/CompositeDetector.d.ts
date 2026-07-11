@@ -6,7 +6,7 @@ import type { Metadata } from '../../../../org/apache/tika/metadata/Metadata.d.t
 import type { MediaType } from '../../../../org/apache/tika/mime/MediaType.d.ts'
 import type { MediaTypeRegistry } from '../../../../org/apache/tika/mime/MediaTypeRegistry.d.ts'
 export class CompositeDetector extends Object implements Detector {
-    constructor(arg0: Detector[])
+    constructor(...arg0: Detector[])
     constructor(arg0: Detector[])
     constructor(arg0: MediaTypeRegistry, arg1: Detector[])
     constructor(arg0: MediaTypeRegistry, arg1: Detector[], arg2: Class<Detector>[])

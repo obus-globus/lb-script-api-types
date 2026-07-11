@@ -13,7 +13,7 @@ export class InteropLibraryGen extends LibraryFactory<InteropLibrary> {
     createAssertions(delegate: InteropLibrary): InteropLibrary;
     createDelegate(delegateLibrary: InteropLibrary): InteropLibrary;
     createDispatchImpl(limit: number): InteropLibrary;
-    createMessageBitSet(messages: Message[]): FinalBitSet;
+    createMessageBitSet(...messages: Message[]): FinalBitSet;
     createProxy(library: ReflectionLibrary): InteropLibrary;
     createUncachedDispatch(): InteropLibrary;
     genericDispatch(originalLib: Library, receiver: Object, message: Message, args: Object[], offset: number): Object;

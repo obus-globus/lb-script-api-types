@@ -62,7 +62,7 @@ export class SubmitNodeCollection extends Object implements OrderedSubmitNodeCol
     submitBreakingBlockModel(arg0: PoseStack, arg1: (Object | null)[], arg2: Mesh, arg3: number): void;
     submitCustom(arg0: SubmitRenderPhase<SubmitNode>, arg1: SubmitNode): void;
     submitCustomGeometry(poseStack: PoseStack, renderType: RenderType, customGeometryRenderer: SubmitNodeCollector$CustomGeometryRenderer): void;
-    // private submitCustomGeometry$mixinextras$wrapped$41(arg0: PoseStack, arg1: RenderType, arg2: SubmitNodeCollector$CustomGeometryRenderer): void;
+    // private submitCustomGeometry$mixinextras$wrapped$43(arg0: PoseStack, arg1: RenderType, arg2: SubmitNodeCollector$CustomGeometryRenderer): void;
     submitFlame(poseStack: PoseStack, renderState: EntityRenderState, rotation: Quaternionf): void;
     submitGizmoPrimitives(group: DrawableGizmoPrimitives$Group, camera: CameraRenderState, onTop: boolean): void;
     submitItem(poseStack: PoseStack, displayContext: ItemDisplayContext, lightCoords: number, overlayCoords: number, outlineColor: number, tintLayers: number[], quads: BakedQuad[], foilType: ItemStackRenderState$FoilType): void;
@@ -72,7 +72,7 @@ export class SubmitNodeCollection extends Object implements OrderedSubmitNodeCol
     submitModel<S extends unknown>(model: Model<S>, state: S, poseStack: PoseStack, renderType: RenderType, lightCoords: number, overlayCoords: number, outlineColor: number, crumblingOverlay: ModelFeatureRenderer$CrumblingOverlay): void;
     submitModel<S extends unknown>(model: Model<S>, state: S, poseStack: PoseStack, texture: Identifier, lightCoords: number, overlayCoords: number, outlineColor: number, crumblingOverlay: ModelFeatureRenderer$CrumblingOverlay): void;
     submitModel<S extends unknown>(model: Model<S>, state: S, poseStack: PoseStack, renderType: RenderType, lightCoords: number, overlayCoords: number, tintedColor: number, sprite: TextureAtlasSprite, outlineColor: number, crumblingOverlay: ModelFeatureRenderer$CrumblingOverlay): void;
-    // private submitModel$mixinextras$wrapped$39(arg0: Model<Object>, arg1: Object, arg2: PoseStack, arg3: RenderType, arg4: number, arg5: number, arg6: number, arg7: TextureAtlasSprite, arg8: number, arg9: ModelFeatureRenderer$CrumblingOverlay): void;
+    // private submitModel$mixinextras$wrapped$41(arg0: Model<Object>, arg1: Object, arg2: PoseStack, arg3: RenderType, arg4: number, arg5: number, arg6: number, arg7: TextureAtlasSprite, arg8: number, arg9: ModelFeatureRenderer$CrumblingOverlay): void;
     submitModelPart(modelPart: ModelPart, poseStack: PoseStack, renderType: RenderType, lightCoords: number, overlayCoords: number, sprite: TextureAtlasSprite): void;
     submitModelPart(modelPart: ModelPart, poseStack: PoseStack, renderType: RenderType, lightCoords: number, overlayCoords: number, sprite: TextureAtlasSprite, tintedColor: number, crumblingOverlay: ModelFeatureRenderer$CrumblingOverlay): void;
     submitModelPart(modelPart: ModelPart, poseStack: PoseStack, renderType: RenderType, lightCoords: number, overlayCoords: number, sprite: TextureAtlasSprite, tintedColor: number, crumblingOverlay: ModelFeatureRenderer$CrumblingOverlay, outlineColor: number): void;

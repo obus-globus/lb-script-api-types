@@ -6,6 +6,6 @@ export interface RuntimeSerializationSupport<C extends unknown> extends Object{
     registerIncludingAssociatedClasses(condition: C, clazz: Class<Object>): void;
     registerLambdaCapturingClass(condition: C, lambdaCapturingClass: Class<Object>): void;
     registerLambdaCapturingClass(condition: C, lambdaCapturingClassName: string): void;
-    registerProxyClass(condition: C, implementedInterfaces: Class<Object>[]): void;
+    registerProxyClass(condition: C, ...implementedInterfaces: Class<Object>[]): void;
     registerProxyClass(condition: C, implementedInterfaces: string[]): void;
 }

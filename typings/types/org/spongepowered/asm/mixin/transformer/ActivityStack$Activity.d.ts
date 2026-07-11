@@ -7,8 +7,8 @@ export class ActivityStack$Activity extends Object implements IActivityContext$I
     // private last: ActivityStack$Activity;
     // private next: ActivityStack$Activity;
     append(arg0: string): void;
-    append(arg0: string, arg1: Object[]): void;
+    append(arg0: string, ...arg1: Object[]): void;
     end(): void;
     next(arg0: string): void;
-    next(arg0: string, arg1: Object[]): void;
+    next(arg0: string, ...arg1: Object[]): void;
 }

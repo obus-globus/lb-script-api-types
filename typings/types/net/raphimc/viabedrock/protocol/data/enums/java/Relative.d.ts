@@ -14,7 +14,7 @@ export class Relative extends Enum<Relative> {
     static Y: Relative;
     static Y_ROT: Relative;
     static Z: Relative;
-    static union(paramarg0: Object | null): Relative[];
+    static union(...paramarg0: Object | null): Relative[];
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Relative;
     static values(): (Object | null)[];

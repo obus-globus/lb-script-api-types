@@ -5,7 +5,7 @@ import type { Component } from '../../../../../../../net/minecraft/network/chat/
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export interface OptionBuilder extends Object {
     setEnabled(arg0: boolean): OptionBuilder;
-    setEnabledProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): OptionBuilder;
+    setEnabledProvider(arg0: (param0: ConfigState) => boolean, ...arg1: Identifier[]): OptionBuilder;
     setName(arg0: Component): OptionBuilder;
     setTooltip(arg0: Component): OptionBuilder;
 }

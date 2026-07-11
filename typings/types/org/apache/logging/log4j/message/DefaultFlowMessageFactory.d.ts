@@ -13,7 +13,7 @@ export class DefaultFlowMessageFactory extends Object implements Serializable, F
     getEntryText(): string;
     getExitText(): string;
     // private makeImmutable(message: Message): Message;
-    newEntryMessage(format: string, params: Object[]): EntryMessage;
+    newEntryMessage(format: string, ...params: Object[]): EntryMessage;
     newEntryMessage(message: Message): EntryMessage;
     newExitMessage(result: Object, message: EntryMessage): ExitMessage;
     newExitMessage(result: Object, message: Message): ExitMessage;

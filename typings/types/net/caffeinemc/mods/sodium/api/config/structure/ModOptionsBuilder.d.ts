@@ -10,7 +10,7 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 export interface ModOptionsBuilder extends Object {
     addPage(arg0: PageBuilder): ModOptionsBuilder;
     formatVersion(arg0: (param0: string) => string): ModOptionsBuilder;
-    registerFlagHook(arg0: (param0: Identifier[], param1: ConfigState) => void, arg1: Identifier[]): ModOptionsBuilder;
+    registerFlagHook(arg0: (param0: Identifier[], param1: ConfigState) => void, ...arg1: Identifier[]): ModOptionsBuilder;
     registerFlagHook(arg0: FlagHook): ModOptionsBuilder;
     registerOptionOverlay(arg0: Identifier, arg1: OptionBuilder): ModOptionsBuilder;
     registerOptionReplacement(arg0: Identifier, arg1: OptionBuilder): ModOptionsBuilder;

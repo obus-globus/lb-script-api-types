@@ -10,5 +10,5 @@ export interface AFUNIXSocketExtensions extends Object, AFSocketExtensions{
     getReceivedFileDescriptors(): FileDescriptor[];
     hasOutboundFileDescriptors(): boolean;
     setAncillaryReceiveBufferSize(arg0: number): void;
-    setOutboundFileDescriptors(arg0: FileDescriptor[]): void;
+    setOutboundFileDescriptors(...arg0: FileDescriptor[]): void;
 }

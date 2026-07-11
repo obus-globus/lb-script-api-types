@@ -40,9 +40,10 @@ export class DelegatingConverter<T extends unknown> extends Object implements Da
     fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<T>;
     getDelegate(): DataConverter<T>;
+    mergeList(arg0: T, ...arg1: T[]): Result<T>;
     mergeList(arg0: T, arg1: T[]): Result<T>;
     mergeMap(arg0: T, arg1: T, arg2: T): Result<T>;
-    mergeMap(arg0: T, arg1: T[]): Result<T>;
+    mergeMap(arg0: T, ...arg1: T[]): Result<T>;
     mergeMap(arg0: T, arg1: Map<T, T>): Result<T>;
     toCodec(): Codec<T>;
 }

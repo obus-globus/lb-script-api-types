@@ -34,8 +34,8 @@ export class PassthroughNDManager extends Object implements NDManager {
     arange(arg0: number, arg1: number, arg2: number): NDArray;
     arange(arg0: number, arg1: number, arg2: number, arg3: DataType, arg4: Device): NDArray;
     arange(arg0: number, arg1: number, arg2: number, arg3: DataType): NDArray;
-    attachAll(arg0: NDResource[]): void;
-    attachInternal(arg0: string, arg1: AutoCloseable[]): void;
+    attachAll(...arg0: NDResource[]): void;
+    attachInternal(arg0: string, ...arg1: AutoCloseable[]): void;
     attachUncappedInternal(arg0: string, arg1: AutoCloseable): void;
     cap(): void;
     close(): void;
@@ -116,7 +116,7 @@ export class PassthroughNDManager extends Object implements NDManager {
     samplePoisson(arg0: NDArray): NDArray;
     samplePoisson(arg0: NDArray, arg1: Shape): NDArray;
     setName(arg0: string): void;
-    tempAttachAll(arg0: NDResource[]): void;
+    tempAttachAll(...arg0: NDResource[]): void;
     tempAttachInternal(arg0: NDManager, arg1: string, arg2: NDResource): void;
     truncatedNormal(arg0: Shape): NDArray;
     truncatedNormal(arg0: Shape, arg1: DataType): NDArray;

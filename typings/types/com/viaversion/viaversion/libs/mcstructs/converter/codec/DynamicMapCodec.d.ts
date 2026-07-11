@@ -46,9 +46,9 @@ export class DynamicMapCodec<K extends unknown, V extends unknown> extends Objec
     static minExclusiveFloat(paramarg0: number): Codec<number>;
     static minFloat(paramarg0: number): Codec<number>;
     static minInt(paramarg0: number): Codec<number>;
-    static named(paramarg0: Object | null): Codec<NamedType>;
+    static named(...paramarg0: Object | null): Codec<NamedType>;
     static ofThrowing(paramarg0: (param0: DataConverter<Object>, param1: Object | null) => Result<Object>, paramarg1: (param0: DataConverter<Object>, param1: Object | null) => Result<Object>): Codec<Object>;
-    static oneOf(paramarg0: Object | null): Codec<Object>;
+    static oneOf(...paramarg0: Object | null): Codec<Object>;
     static rangedFloat(paramarg0: number, paramarg1: number): Codec<number>;
     static rangedInt(paramarg0: number, paramarg1: number): Codec<number>;
     static recursive(paramarg0: (param0: Codec<Object>) => Codec<Object>): Codec<Object>;

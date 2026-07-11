@@ -16,7 +16,7 @@ export class MethodType extends Object implements Serializable, Constable, TypeD
     static genericMethodType(paramarg0: number, paramarg1: boolean): MethodType;
     static methodType(paramarg0: Class<Object>): MethodType;
     static methodType(paramarg0: Class<Object>, paramarg1: Class<Object>): MethodType;
-    static methodType(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: Object | null): MethodType;
+    static methodType(paramarg0: Class<Object>, paramarg1: Class<Object>, ...paramarg2: Object | null): MethodType;
     static methodType(paramarg0: Class<Object>, paramarg1: Object | null): MethodType;
     static methodType(paramarg0: Class<Object>, paramarg1: MethodType): MethodType;
     static methodType(paramarg0: Class<Object>, paramarg1: Class<Object>[]): MethodType;
@@ -27,6 +27,7 @@ export class MethodType extends Object implements Serializable, Constable, TypeD
     // private ptypes: Class<Object>[];
     // private rtype: Class<Object>;
     // private wrapAlt: Object;
+    appendParameterTypes(...arg0: Class<Object>[]): MethodType;
     appendParameterTypes(arg0: Class<Object>[]): MethodType;
     asCollectorType(arg0: Class<Object>, arg1: number, arg2: number): MethodType;
     asSpreaderType(arg0: Class<Object>, arg1: number, arg2: number): MethodType;
@@ -47,6 +48,7 @@ export class MethodType extends Object implements Serializable, Constable, TypeD
     hasPrimitives(): boolean;
     hasWrappers(): boolean;
     hashCode(): number;
+    insertParameterTypes(arg0: number, ...arg1: Class<Object>[]): MethodType;
     insertParameterTypes(arg0: number, arg1: Class<Object>[]): MethodType;
     invokerType(): MethodType;
     invokers(): Invokers;
@@ -63,7 +65,7 @@ export class MethodType extends Object implements Serializable, Constable, TypeD
     ptypes(): Class<Object>[];
     // private readObject(arg0: ObjectInputStream): void;
     // private readResolve(): Object;
-    replaceParameterTypes(arg0: number, arg1: number, arg2: Class<Object>[]): MethodType;
+    replaceParameterTypes(arg0: number, arg1: number, ...arg2: Class<Object>[]): MethodType;
     returnType(): Class<Object>;
     rtype(): Class<Object>;
     setForm(arg0: MethodTypeForm): void;

@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class StrMatcher extends Object {
     static charMatcher(paramarg0: string): StrMatcher;
-    static charSetMatcher(paramarg0: string[]): StrMatcher;
+    static charSetMatcher(...paramarg0: string[]): StrMatcher;
     static charSetMatcher(paramarg0: string): StrMatcher;
     static commaMatcher(): StrMatcher;
     static doubleQuoteMatcher(): StrMatcher;

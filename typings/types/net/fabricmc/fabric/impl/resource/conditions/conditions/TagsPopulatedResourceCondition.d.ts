@@ -12,8 +12,8 @@ export class TagsPopulatedResourceCondition extends Record implements ResourceCo
     static CODEC: MapCodec<TagsPopulatedResourceCondition>;
     static CONDITION_CODEC: Codec<ResourceCondition>;
     static LIST_CODEC: Codec<ResourceCondition[]>;
-    constructor(arg0: TagKey<Object>[])
-    constructor(arg0: Identifier, arg1: TagKey<Object>[])
+    constructor(...arg0: TagKey<Object>[])
+    constructor(arg0: Identifier, ...arg1: TagKey<Object>[])
     constructor(registry: Identifier, tags: Identifier[])
     // private registry: Identifier;
     // private tags: Identifier[];

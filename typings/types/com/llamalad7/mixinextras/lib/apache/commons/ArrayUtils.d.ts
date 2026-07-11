@@ -21,8 +21,8 @@ export class ArrayUtils extends Object {
     static EMPTY_STRING_ARRAY: (Object | null)[];
     static add(paramarg0: Object | null, paramarg1: Object | null): Object | null;
     static add(paramarg0: Object | null, paramarg1: number, paramarg2: Object | null): Object | null;
-    static addAll(paramarg0: Object | null, paramarg1: Object | null): Object | null;
-    static addAll(paramarg0: number[], paramarg1: number[]): number[];
+    static addAll(paramarg0: Object | null, ...paramarg1: Object | null): Object | null;
+    static addAll(paramarg0: number[], ...paramarg1: number[]): number[];
     static clone(paramarg0: Object | null): Object | null;
     static clone(paramarg0: number[]): number[];
     static getLength(paramarg0: Object): number;

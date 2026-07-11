@@ -7,7 +7,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 export class ScreenNarrationCollector$Output extends Object implements NarrationElementOutput {
     private constructor(null_: ScreenNarrationCollector, depth: number)
     // private depth: number;
-    add(type: NarratedElementType, contents: Component[]): void;
+    add(type: NarratedElementType, ...contents: Component[]): void;
     add(type: NarratedElementType, contents: string): void;
     add(type: NarratedElementType, contents: Component): void;
     add(type: NarratedElementType, contents: NarrationThunk<Object>): void;

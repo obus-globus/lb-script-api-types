@@ -17,7 +17,7 @@ export class EnchantmentValueEstimator extends Object implements Comparator<Item
     static nullsFirst(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static nullsLast(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     static reverseOrder(): (param0: Object) => boolean;
-    constructor(weightedEnchantments: EnchantmentValueEstimator$WeightedEnchantment[])
+    constructor(...weightedEnchantments: EnchantmentValueEstimator$WeightedEnchantment[])
     // private weightedEnchantments: EnchantmentValueEstimator$WeightedEnchantment[];
     compare(o1: ItemStack, o2: ItemStack): number;
     estimateValue(itemStack: ItemStack): number;

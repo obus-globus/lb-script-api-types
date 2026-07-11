@@ -3,8 +3,8 @@
 <!-- lb-badges:start -->
 [![npm](https://img.shields.io/npm/v/@wunk/lb-script-api-types?label=npm&color=cb3837)](https://www.npmjs.com/package/@wunk/lb-script-api-types)
 [![Minecraft](https://img.shields.io/badge/Minecraft-26.2-2ea44f)](https://www.npmjs.com/package/@wunk/lb-script-api-types)
-[![LiquidBounce](https://img.shields.io/badge/LiquidBounce-0.38.1-5865f2)](https://github.com/CCBlueX/LiquidBounce/commit/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8)
-[![LB build](https://img.shields.io/badge/LB_build-v0.38.0--98--ga70a63864-555)](https://github.com/CCBlueX/LiquidBounce/commit/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8)
+[![LiquidBounce](https://img.shields.io/badge/LiquidBounce-0.38.1-5865f2)](https://github.com/CCBlueX/LiquidBounce/commit/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa)
+[![LB build](https://img.shields.io/badge/LB_build-v0.38.0--101--g2f6d19f36-555)](https://github.com/CCBlueX/LiquidBounce/commit/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa)
 <!-- lb-badges:end -->
 
 The badges track the build these types were generated from; the LiquidBounce and

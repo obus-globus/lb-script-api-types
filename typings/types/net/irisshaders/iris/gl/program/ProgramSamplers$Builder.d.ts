@@ -18,14 +18,14 @@ export class ProgramSamplers$Builder extends Object implements SamplerHolder {
     // private remainingUnits: number;
     // private reservedTextureUnits: number[];
     // private samplers: ImmutableList$Builder<SamplerBinding>;
-    addDefaultSampler(arg0: () => number, arg1: string[]): boolean;
-    addDefaultSampler(arg0: TextureType, arg1: () => number, arg2: ValueUpdateNotifier, arg3: () => GlSampler, arg4: string[]): boolean;
-    addDynamicSampler(arg0: () => number, arg1: GlSampler, arg2: string[]): boolean;
-    addDynamicSampler(arg0: () => number, arg1: GlSampler, arg2: ValueUpdateNotifier, arg3: string[]): boolean;
-    addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: () => GlSampler, arg3: string[]): boolean;
-    // private addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: () => GlSampler, arg3: boolean, arg4: ValueUpdateNotifier, arg5: string[]): boolean;
-    addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: ValueUpdateNotifier, arg3: () => GlSampler, arg4: string[]): boolean;
-    addExternalSampler(arg0: number, arg1: string[]): void;
+    addDefaultSampler(arg0: () => number, ...arg1: string[]): boolean;
+    addDefaultSampler(arg0: TextureType, arg1: () => number, arg2: ValueUpdateNotifier, arg3: () => GlSampler, ...arg4: string[]): boolean;
+    addDynamicSampler(arg0: () => number, arg1: GlSampler, ...arg2: string[]): boolean;
+    addDynamicSampler(arg0: () => number, arg1: GlSampler, arg2: ValueUpdateNotifier, ...arg3: string[]): boolean;
+    addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: () => GlSampler, ...arg3: string[]): boolean;
+    // private addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: () => GlSampler, arg3: boolean, arg4: ValueUpdateNotifier, ...arg5: string[]): boolean;
+    addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: ValueUpdateNotifier, arg3: () => GlSampler, ...arg4: string[]): boolean;
+    addExternalSampler(arg0: number, ...arg1: string[]): void;
     build(): ProgramSamplers;
     hasSampler(arg0: string): boolean;
 }

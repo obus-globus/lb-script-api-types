@@ -7,7 +7,7 @@ export class DynamicRegistries extends Object {
     static getDynamicRegistries(): RegistryDataLoader$RegistryData<Object>[];
     static getWorldRegistries(): RegistryDataLoader$RegistryData<Object>[];
     static register(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Codec<Object>): void;
-    static registerSynced(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Codec<Object>, paramarg2: Codec<Object>, paramarg3: (Object | null)[]): void;
-    static registerSynced(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Codec<Object>, paramarg2: (Object | null)[]): void;
+    static registerSynced(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Codec<Object>, paramarg2: Codec<Object>, ...paramarg3: (Object | null)[]): void;
+    static registerSynced(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Codec<Object>, ...paramarg2: (Object | null)[]): void;
     private constructor()
 }

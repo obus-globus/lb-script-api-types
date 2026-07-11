@@ -24,7 +24,7 @@ export class ObjectUtil extends Object {
     static checkPositiveOrZero(paramarg0: number, paramarg1: string): number;
     static checkPositiveOrZero(paramarg0: number, paramarg1: string): number;
     static checkPositiveOrZero(paramarg0: number, paramarg1: string): number;
-    static deepCheckNotNull(paramarg0: string, paramarg1: Object | null): Object | null;
+    static deepCheckNotNull(paramarg0: string, ...paramarg1: Object | null): Object | null;
     static intValue(paramarg0: number, paramarg1: number): number;
     static longValue(paramarg0: number, paramarg1: number): number;
     private constructor()

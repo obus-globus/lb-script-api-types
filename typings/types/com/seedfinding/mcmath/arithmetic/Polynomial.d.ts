@@ -2,7 +2,7 @@ import type { Rational } from '../../../../com/seedfinding/mcmath/arithmetic/Rat
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Polynomial extends Object {
     constructor(arg0: Rational, arg1: number)
-    constructor(arg0: Rational[])
+    constructor(...arg0: Rational[])
     readonly coefficients: Rational[];
     degree: number;
     // private derivative: Polynomial;

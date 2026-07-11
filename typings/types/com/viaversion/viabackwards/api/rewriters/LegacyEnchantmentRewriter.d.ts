@@ -14,5 +14,5 @@ export class LegacyEnchantmentRewriter extends Object {
     registerEnchantment(arg0: number, arg1: string): void;
     rewriteEnchantmentsToClient(arg0: Map$Entry<string, Tag>[], arg1: boolean): void;
     rewriteEnchantmentsToServer(arg0: Map$Entry<string, Tag>[], arg1: boolean): void;
-    setHideLevelForEnchants(arg0: number[]): void;
+    setHideLevelForEnchants(...arg0: number[]): void;
 }

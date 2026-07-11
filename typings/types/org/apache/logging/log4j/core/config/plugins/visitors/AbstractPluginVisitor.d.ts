@@ -13,7 +13,7 @@ export abstract class AbstractPluginVisitor<A extends Annotation> extends Object
     // private member: Member;
     // private substitutor: StrSubstitutor;
     convert(value: string, defaultValue: Object): Object;
-    setAliases(someAliases: string[]): PluginVisitor<A>;
+    setAliases(...someAliases: string[]): PluginVisitor<A>;
     setAnnotation(anAnnotation: Annotation): PluginVisitor<A>;
     setConversionType(aConversionType: Class<Object>): PluginVisitor<A>;
     setMember(aMember: Member): PluginVisitor<A>;

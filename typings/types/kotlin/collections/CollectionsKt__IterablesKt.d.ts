@@ -5,7 +5,7 @@ import type { Pair } from '../../kotlin/Pair.d.ts'
 import type { CollectionsKt__CollectionsKt } from '../../kotlin/collections/CollectionsKt__CollectionsKt.d.ts'
 import type { Random as Random_2 } from '../../kotlin/random/Random.d.ts'
 export class CollectionsKt__IterablesKt extends CollectionsKt__CollectionsKt {
-    static arrayListOf(paramarg0: Object | null): (Object | null)[];
+    static arrayListOf(...paramarg0: Object | null): (Object | null)[];
     static asCollection(paramarg0: Object | null, paramarg1: boolean): (Object | null)[];
     static binarySearch(paramarg0: (Object | null)[], paramarg1: Object | null, paramarg2: number, paramarg3: number): number;
     static binarySearch(paramarg0: (Object | null)[], paramarg1: Object | null, paramarg2: (param0: Object) => boolean, paramarg3: number, paramarg4: number): number;
@@ -24,10 +24,10 @@ export class CollectionsKt__IterablesKt extends CollectionsKt__CollectionsKt {
     static getIndices(paramarg0: Object[]): { start: number; endInclusive: number; step: number };
     static getLastIndex(paramarg0: (Object | null)[]): number;
     static listOf(paramarg0: Object | null): (Object | null)[];
-    static listOf(paramarg0: Object | null): (Object | null)[];
+    static listOf(...paramarg0: Object | null): (Object | null)[];
     static listOfNotNull(paramarg0: Object | null): (Object | null)[];
-    static listOfNotNull(paramarg0: Object | null): (Object | null)[];
-    static mutableListOf(paramarg0: Object | null): (Object | null)[];
+    static listOfNotNull(...paramarg0: Object | null): (Object | null)[];
+    static mutableListOf(...paramarg0: Object | null): (Object | null)[];
     static optimizeReadOnlyList(paramarg0: (Object | null)[]): (Object | null)[];
     static shuffled(paramarg0: (Object | null)[]): (Object | null)[];
     static shuffled(paramarg0: (Object | null)[], paramarg1: Random): (Object | null)[];

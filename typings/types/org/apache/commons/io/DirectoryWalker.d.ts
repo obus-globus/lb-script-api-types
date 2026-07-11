@@ -10,7 +10,7 @@ export abstract class DirectoryWalker<T extends unknown> extends Object {
     // private depthLimit: number;
     // private filter: (param0: File) => boolean;
     checkIfCancelled(arg0: File, arg1: number, arg2: T[]): void;
-    filterDirectoryContents(arg0: File, arg1: number, arg2: File[]): File[];
+    filterDirectoryContents(arg0: File, arg1: number, ...arg2: File[]): File[];
     handleCancelled(arg0: File, arg1: T[], arg2: DirectoryWalker$CancelException): void;
     handleDirectory(arg0: File, arg1: number, arg2: T[]): boolean;
     handleDirectoryEnd(arg0: File, arg1: number, arg2: T[]): void;

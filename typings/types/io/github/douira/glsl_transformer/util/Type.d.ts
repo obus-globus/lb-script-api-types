@@ -88,8 +88,8 @@ export class Type extends Enum<Type> implements TokenTyped {
     static valueOf(paramarg0: string): Type;
     static values(): (Object | null)[];
     private constructor(arg2: Type$NumberType, arg3: string, arg4: string)
-    private constructor(arg2: number, arg3: Type$NumberType, arg4: string, arg5: string, arg6: number, arg7: number[])
-    private constructor(arg2: number, arg3: number, arg4: Type$NumberType, arg5: string, arg6: string, arg7: number, arg8: number[])
+    private constructor(arg2: number, arg3: Type$NumberType, arg4: string, arg5: string, arg6: number, ...arg7: number[])
+    private constructor(arg2: number, arg3: number, arg4: Type$NumberType, arg5: string, arg6: string, arg7: number, ...arg8: number[])
     // private SCALAR_DIMENSIONS: number[];
     readonly bitDepth: number;
     readonly compactName: string;

@@ -22,13 +22,13 @@ export class AsmClassRemapper$AsmMethodRemapper extends MethodRemapper {
     // private tr: TinyRemapper;
     createAnnotationRemapper(arg0: string, arg1: AnnotationVisitor): AnnotationVisitor;
     createAnnotationRemapper(arg0: AnnotationVisitor): AnnotationVisitor;
-    // private getLambdaImplementedMethod(arg0: string, arg1: string, arg2: Handle, arg3: string[], arg4: Object[]): Handle;
+    // private getLambdaImplementedMethod(arg0: string, arg1: string, arg2: Handle, arg3: string[], ...arg4: Object[]): Handle;
     // private getNameFromType(arg0: string, arg1: boolean): string;
     // private isValidLvName(arg0: string): boolean;
     // private processLocals(): void;
     visitEnd(): void;
     visitFieldInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
-    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): void;
+    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): void;
     visitLdcInsn(arg0: Object): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string, arg4: boolean): void;

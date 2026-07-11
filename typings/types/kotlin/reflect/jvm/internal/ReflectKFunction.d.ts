@@ -8,7 +8,7 @@ export interface ReflectKFunction extends Object, KotlinGenericDeclaration, KFun
     /*not mapped: */ isPrimaryConstructor(): boolean;
     readonly overridden: ReflectKFunction[];
     readonly signature: string;
-    call(args: (Object | null)[]): Object | null;
+    call(...args: (Object | null)[]): Object | null;
     callBy(args: Map<KParameter, Object | null>): Object | null;
     findJavaDeclaration(): GenericDeclaration | null;
 }

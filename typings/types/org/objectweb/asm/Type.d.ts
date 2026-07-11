@@ -33,9 +33,9 @@ export class Type extends Object {
     static getDescriptor(paramarg0: Class<Object>): string;
     static getInternalName(paramarg0: Class<Object>): string;
     static getMethodDescriptor(paramarg0: Method): string;
-    static getMethodDescriptor(paramarg0: Type, paramarg1: (Object | null)[]): string;
+    static getMethodDescriptor(paramarg0: Type, ...paramarg1: (Object | null)[]): string;
     static getMethodType(paramarg0: string): Type;
-    static getMethodType(paramarg0: Type, paramarg1: (Object | null)[]): Type;
+    static getMethodType(paramarg0: Type, ...paramarg1: (Object | null)[]): Type;
     static getObjectType(paramarg0: string): Type;
     static getReturnType(paramarg0: string): Type;
     static getReturnType(paramarg0: Method): Type;

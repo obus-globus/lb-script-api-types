@@ -19,7 +19,7 @@ export class ThreadContext extends Object {
     static peek(): string;
     static pop(): string;
     static push(parammessage: string): void;
-    static push(parammessage: string, paramargs: (Object | null)[]): void;
+    static push(parammessage: string, ...paramargs: (Object | null)[]): void;
     static put(paramkey: string, paramvalue: string): void;
     static putAll(paramm: { [key: string]: string }): void;
     static putIfNull(paramkey: string, paramvalue: string): void;

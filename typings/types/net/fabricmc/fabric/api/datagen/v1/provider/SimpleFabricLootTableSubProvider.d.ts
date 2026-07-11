@@ -23,5 +23,5 @@ export abstract class SimpleFabricLootTableSubProvider extends Object implements
     // private registryLookupFuture: CompletableFuture<HolderLookup$Provider>;
     getName(): string;
     run(arg0: CachedOutput): CompletableFuture<Object>;
-    withConditions(arg0: (param0: ResourceKey<LootTable>, param1: LootTable$Builder) => void, arg1: ResourceCondition[]): (param0: ResourceKey<LootTable>, param1: LootTable$Builder) => void;
+    withConditions(arg0: (param0: ResourceKey<LootTable>, param1: LootTable$Builder) => void, ...arg1: ResourceCondition[]): (param0: ResourceKey<LootTable>, param1: LootTable$Builder) => void;
 }

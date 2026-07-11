@@ -18,5 +18,5 @@ export class CompositeRenderer extends Object implements Initializable, Renderer
     getLeafRenderer(arg0: MediaType): Renderer;
     getSupportedTypes(arg0: ParseContext): MediaType[];
     initialize(arg0: { [key: string]: Param<Object> }): void;
-    render(arg0: InputStream, arg1: Metadata, arg2: ParseContext, arg3: RenderRequest[]): RenderResults;
+    render(arg0: InputStream, arg1: Metadata, arg2: ParseContext, ...arg3: RenderRequest[]): RenderResults;
 }

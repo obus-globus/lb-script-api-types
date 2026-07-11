@@ -17,7 +17,7 @@ export class BinaryExpression$Operator extends Enum<BinaryExpression$Operator> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): BinaryExpression$Operator;
     static values(): (Object | null)[];
-    private constructor(arg2: number[])
+    private constructor(...arg2: number[])
     // private opcodes: number[];
     matches(arg0: AbstractInsnNode): boolean;
     name(): "MULT" | "DIV" | "MOD" | "PLUS" | "MINUS" | "SHL" | "SHR" | "USHR" | "BITWISE_AND" | "BITWISE_XOR" | "BITWISE_OR";

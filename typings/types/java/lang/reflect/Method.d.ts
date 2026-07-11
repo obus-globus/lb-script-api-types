@@ -46,7 +46,7 @@ export class Method extends Executable {
     handleParameterNumberMismatch(arg0: number, arg1: Class<Object>[]): boolean;
     hasGenericInformation(): boolean;
     hashCode(): number;
-    invoke(arg0: Object, arg1: Object[]): Object;
+    invoke(arg0: Object, ...arg1: Object[]): Object;
     // private invoke(arg0: Object, arg1: Object[], arg2: Class<Object>): Object;
     isBridge(): boolean;
     // private isCallerSensitive(): boolean;

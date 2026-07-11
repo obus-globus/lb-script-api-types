@@ -9,7 +9,7 @@ export class AbstractOrigin$CharSequenceOrigin extends AbstractOrigin<CharSequen
     getByteArray(): number[];
     getByteArray(arg0: number, arg1: number): number[];
     getCharSequence(arg0: Charset): CharSequence;
-    getInputStream(arg0: OpenOption[]): InputStream;
+    getInputStream(...arg0: OpenOption[]): InputStream;
     getReader(arg0: Charset): Reader;
     size(): number;
 }

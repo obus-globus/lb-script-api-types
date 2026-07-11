@@ -26,7 +26,7 @@ export class FileEntry extends Object implements Serializable {
     isExists(): boolean;
     newChildInstance(arg0: File): FileEntry;
     refresh(arg0: File): boolean;
-    setChildren(arg0: FileEntry[]): void;
+    setChildren(...arg0: FileEntry[]): void;
     setDirectory(arg0: boolean): void;
     setExists(arg0: boolean): void;
     setLastModified(arg0: FileTime): void;

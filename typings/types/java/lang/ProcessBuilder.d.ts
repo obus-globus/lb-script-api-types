@@ -4,7 +4,7 @@ import type { ProcessBuilder$Redirect } from '../../java/lang/ProcessBuilder$Red
 import type { Object } from '../../java/lang/Object.d.ts'
 export class ProcessBuilder extends Object {
     static startPipeline(paramarg0: ProcessBuilder[]): Process[];
-    constructor(arg0: string[])
+    constructor(...arg0: string[])
     constructor(arg0: string[])
     // private command: string[];
     // private directory: File;
@@ -12,6 +12,7 @@ export class ProcessBuilder extends Object {
     // private redirectErrorStream: boolean;
     // private redirects: ProcessBuilder$Redirect[];
     command(): string[];
+    command(...arg0: string[]): ProcessBuilder;
     command(arg0: string[]): ProcessBuilder;
     directory(): File;
     directory(arg0: File): ProcessBuilder;

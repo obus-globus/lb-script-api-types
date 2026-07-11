@@ -6,5 +6,6 @@ export class ServerCookieEncoder extends CookieEncoder {
     private constructor(arg0: boolean)
     encode(arg0: Cookie[]): string[];
     encode(arg0: Cookie): string;
+    encode(...arg0: Cookie[]): string[];
     encode(arg0: string, arg1: string): string;
 }

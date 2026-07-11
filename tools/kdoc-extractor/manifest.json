@@ -8387,7 +8387,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 143
+      "line": 144
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.compositeIfNeeded": {
@@ -8395,7 +8395,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 152
+      "line": 153
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.isHeldItemSubmit": {
@@ -8403,7 +8403,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 123
+      "line": 124
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.markHeldItemSubmitIfActive": {
@@ -8411,7 +8411,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 114
+      "line": 115
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapCurrentHeldItemRenderTypeIfNeeded": {
@@ -8419,7 +8419,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 137
+      "line": 138
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapHeldItemRenderTypeIfNeeded": {
@@ -8427,7 +8427,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 127
+      "line": 128
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapIfNeeded": {
@@ -8435,7 +8435,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 95
+      "line": 96
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.withHeldItemContext": {
@@ -8443,7 +8443,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 105
+      "line": 106
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleClickGui": {
@@ -8613,6 +8613,14 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt",
+      "line": 109
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleHud.Blur.sigma": {
+    "doc": "Gaussian sigma controlling blur strength. Higher values produce stronger blur.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt",
       "line": 104
     }
   },
@@ -8621,7 +8629,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt",
-      "line": 125
+      "line": 130
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleItemChams": {
@@ -11037,6 +11045,14 @@
       "line": 233
     }
   },
+  "net.ccbluex.liquidbounce.render.CachedUniform": {
+    "doc": "Retains the last uniform slice across frames and uploads a new one only when [T] changes.\n\nThe backing ring buffer prevents an update from overwriting data still consumed by the GPU.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/CachedUniform.kt",
+      "line": 31
+    }
+  },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.JCEF.Blit": {
     "doc": "",
     "see": [
@@ -11045,7 +11061,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 139
+      "line": 141
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.JCEF_COMPATIBLE_BLEND": {
@@ -11064,7 +11080,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 219
+      "line": 221
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.Outline": {
@@ -11076,7 +11092,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 407
+      "line": 409
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.OutlineQuads": {
@@ -11088,7 +11104,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 305
+      "line": 307
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.precompile": {
@@ -11096,7 +11112,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 465
+      "line": 481
     }
   },
   "net.ccbluex.liquidbounce.render.ClientVertexFormats.GRADIENT_CIRCLE": {
@@ -11346,7 +11362,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt",
-      "line": 258
+      "line": 259
     }
   },
   "net.ccbluex.liquidbounce.render.GuiGraphicsExtractor.drawVerticalLine": {
@@ -11354,13 +11370,13 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt",
-      "line": 265
+      "line": 266
     }
   },
   "net.ccbluex.liquidbounce.render.GuiGraphicsExtractor.getBounds": {
     "doc": "",
     "see": [
-      "net.minecraft.client.gui.render.state.ColoredRectangleRenderState.getBounds"
+      "net.minecraft.client.renderer.state.gui.ColoredRectangleRenderState.getBounds"
     ],
     "kind": "function",
     "source": {
@@ -11371,7 +11387,7 @@
   "net.ccbluex.liquidbounce.render.GuiGraphicsExtractor.getBoundsXYWH": {
     "doc": "",
     "see": [
-      "net.minecraft.client.gui.render.state.ColoredRectangleRenderState.getBounds"
+      "net.minecraft.client.renderer.state.gui.ColoredRectangleRenderState.getBounds"
     ],
     "kind": "function",
     "source": {
@@ -11598,12 +11614,20 @@
       }
     }
   ],
+  "net.ccbluex.liquidbounce.render.engine.BlurEffectRenderer.writeKernel": {
+    "doc": "Precomputes normalized Gaussian kernel weights packed as vec4[23] into the kernel UBO.\nWeights are already normalized so the shader just sums weighted samples — no exp(), no division.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/BlurEffectRenderer.kt",
+      "line": 155
+    }
+  },
   "net.ccbluex.liquidbounce.render.engine.LazyRenderTargetHolder": {
     "doc": "A holder for a RenderTarget that initializes it lazily and handles resizing.",
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
-      "line": 32
+      "line": 33
     }
   },
   "net.ccbluex.liquidbounce.render.engine.LazyRenderTargetHolder.close": {
@@ -11611,17 +11635,27 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
-      "line": 42
+      "line": 51
     }
   },
-  "net.ccbluex.liquidbounce.render.engine.LazyRenderTargetHolder.initAndGet": {
-    "doc": "Initializes the RenderTarget if needed, or resizes/clears it if it already exists, then returns it.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
-      "line": 50
+  "net.ccbluex.liquidbounce.render.engine.LazyRenderTargetHolder.initAndGet": [
+    {
+      "doc": "Initializes the RenderTarget if needed, or resizes/clears it if it already exists, then returns it.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
+        "line": 59
+      }
+    },
+    {
+      "doc": "Initializes the RenderTarget with the requested size.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
+        "line": 64
+      }
     }
-  },
+  ],
   "net.ccbluex.liquidbounce.render.engine.OutlineShaderRenderer": {
     "doc": "For [net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP] outline mode.",
     "see": [

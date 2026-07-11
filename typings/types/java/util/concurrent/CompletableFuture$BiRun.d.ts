@@ -20,7 +20,7 @@ export class CompletableFuture$BiRun<T extends unknown, U extends unknown> exten
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: Object | null): void;
     constructor(arg0: Executor, arg1: CompletableFuture<void>, arg2: CompletableFuture<T>, arg3: CompletableFuture<U>, arg4: () => void)
     // private fn: () => void;
     tryFire(arg0: number): CompletableFuture<void>;

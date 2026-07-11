@@ -10,7 +10,7 @@ export class BlockPatternBuilder extends Object {
     // private pattern: string[][];
     // private unknownCharacters: (Object | null)[];
     // private width: number;
-    aisle(aisle: string[]): BlockPatternBuilder;
+    aisle(...aisle: string[]): BlockPatternBuilder;
     build(): BlockPattern;
     // private createPattern(): (param0: BlockInWorld) => boolean[][][];
     where(character: string, predicate: (param0: BlockInWorld) => boolean): BlockPatternBuilder;

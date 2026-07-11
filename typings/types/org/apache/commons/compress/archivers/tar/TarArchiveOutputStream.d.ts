@@ -43,7 +43,7 @@ export class TarArchiveOutputStream extends ArchiveOutputStream<TarArchiveEntry>
     close(): void;
     closeArchiveEntry(): void;
     createArchiveEntry(arg0: File, arg1: string): TarArchiveEntry;
-    createArchiveEntry(arg0: Path[], arg1: string, arg2: LinkOption[]): TarArchiveEntry;
+    createArchiveEntry(arg0: Path[], arg1: string, ...arg2: LinkOption[]): TarArchiveEntry;
     // private encodeExtendedPaxHeadersContents(arg0: { [key: string]: string }): number[];
     // private failForBigNumber(arg0: string, arg1: number, arg2: number): void;
     // private failForBigNumber(arg0: string, arg1: number, arg2: number, arg3: string): void;

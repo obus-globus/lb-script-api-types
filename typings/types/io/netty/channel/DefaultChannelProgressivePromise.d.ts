@@ -14,7 +14,7 @@ export class DefaultChannelProgressivePromise extends DefaultProgressivePromise<
     // private channel: Channel;
     // private checkpoint: number;
     addListener(arg0: GenericFutureListener<Future<void>>): ChannelProgressivePromise;
-    addListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelProgressivePromise;
+    addListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelProgressivePromise;
     await(): ChannelProgressivePromise;
     await(arg0: number): boolean;
     await(arg0: number, arg1: TimeUnit): boolean;
@@ -29,7 +29,7 @@ export class DefaultChannelProgressivePromise extends DefaultProgressivePromise<
     isVoid(): boolean;
     promise(): ChannelProgressivePromise;
     removeListener(arg0: GenericFutureListener<Future<void>>): ChannelProgressivePromise;
-    removeListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelProgressivePromise;
+    removeListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelProgressivePromise;
     setFailure(arg0: Throwable): ChannelProgressivePromise;
     setProgress(arg0: number, arg1: number): ChannelProgressivePromise;
     setSuccess(): ChannelProgressivePromise;

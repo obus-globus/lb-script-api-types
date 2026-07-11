@@ -15,7 +15,7 @@ export class IntIterators extends Object {
     static any(paramarg0: IntIterator, paramarg1: (param0: number) => boolean): boolean;
     static asIntIterator(paramarg0: Iterator<Object>): IntIterator;
     static asIntIterator(paramarg0: ListIterator<Object>): IntListIterator;
-    static concat(paramarg0: (Object | null)[]): IntIterator;
+    static concat(...paramarg0: (Object | null)[]): IntIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): IntIterator;
     static fromTo(paramarg0: number, paramarg1: number): IntListIterator;
     static indexOf(paramarg0: IntIterator, paramarg1: (param0: number) => boolean): number;

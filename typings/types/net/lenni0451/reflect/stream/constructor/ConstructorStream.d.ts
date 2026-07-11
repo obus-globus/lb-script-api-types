@@ -12,20 +12,20 @@ export class ConstructorStream extends Object {
     constructor(arg0: RStream)
     // private constructors: ConstructorWrapper[];
     // private parent: RStream;
-    by(arg0: Class<Object>[]): ConstructorWrapper;
+    by(...arg0: Class<Object>[]): ConstructorWrapper;
     by(arg0: number): ConstructorWrapper;
     copy(): ConstructorStream;
     filter(arg0: (param0: ConstructorWrapper) => boolean): ConstructorStream;
-    filter(arg0: Class<Object>[]): ConstructorStream;
+    filter(...arg0: Class<Object>[]): ConstructorStream;
     filter(arg0: boolean): ConstructorStream;
     filterAnnotation(arg0: Class<Object>): ConstructorStream;
-    filterParameters(arg0: Class<Object>[]): ConstructorStream;
+    filterParameters(...arg0: Class<Object>[]): ConstructorStream;
     filterStatic(arg0: boolean): ConstructorStream;
     forEach(arg0: (param0: ConstructorWrapper) => void): ConstructorStream;
     iterator(): Iterator<ConstructorWrapper>;
     jstream(): Stream<ConstructorWrapper>;
     map<T extends unknown>(arg0: (param0: ConstructorWrapper) => T): Stream<T>;
-    opt(arg0: Class<Object>[]): Optional<ConstructorWrapper>;
+    opt(...arg0: Class<Object>[]): Optional<ConstructorWrapper>;
     opt(arg0: number): Optional<ConstructorWrapper>;
     parent(): RStream;
     size(): number;

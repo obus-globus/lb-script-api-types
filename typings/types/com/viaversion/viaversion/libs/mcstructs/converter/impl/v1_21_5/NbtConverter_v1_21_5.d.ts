@@ -10,5 +10,6 @@ export class NbtConverter_v1_21_5 extends NbtConverter_v1_20_3 {
     constructor()
     constructor(arg0: SNbt<Map$Entry<string, Tag>[]>)
     forkIfDefault(): DataConverter<Tag>;
+    mergeList(arg0: Tag, ...arg1: Tag[]): Result<Tag>;
     mergeList(arg0: Tag, arg1: Tag[]): Result<Tag>;
 }

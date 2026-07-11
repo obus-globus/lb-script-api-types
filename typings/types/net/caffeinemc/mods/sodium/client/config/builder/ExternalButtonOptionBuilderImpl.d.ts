@@ -15,7 +15,7 @@ export class ExternalButtonOptionBuilderImpl extends StaticOptionBuilderImpl<Ext
     getCurrentScreenConsumer(): (param0: Screen) => void;
     getOptionClass(): Class<ExternalButtonOption>;
     setEnabled(arg0: boolean): ExternalButtonOptionBuilder;
-    setEnabledProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): ExternalButtonOptionBuilder;
+    setEnabledProvider(arg0: (param0: ConfigState) => boolean, ...arg1: Identifier[]): ExternalButtonOptionBuilder;
     setName(arg0: Component): ExternalButtonOptionBuilder;
     setScreenConsumer(arg0: (param0: Screen) => void): ExternalButtonOptionBuilder;
     setTooltip(arg0: Component): ExternalButtonOptionBuilder;

@@ -28,7 +28,7 @@ export class LambdaFormBuffer extends Object {
     // private noteDuplicate(arg0: number, arg1: number): void;
     ownedCount(): number;
     renameParameter(arg0: number, arg1: LambdaForm$Name): LambdaFormBuffer;
-    replaceFunctions(arg0: LambdaForm$NamedFunction[], arg1: LambdaForm$NamedFunction[], arg2: Object[]): LambdaFormBuffer;
+    replaceFunctions(arg0: LambdaForm$NamedFunction[], arg1: LambdaForm$NamedFunction[], ...arg2: Object[]): LambdaFormBuffer;
     // private replaceName(arg0: number, arg1: LambdaForm$Name): void;
     replaceParameterByCopy(arg0: number, arg1: number): LambdaFormBuffer;
     replaceParameterByNewExpression(arg0: number, arg1: LambdaForm$Name): LambdaFormBuffer;

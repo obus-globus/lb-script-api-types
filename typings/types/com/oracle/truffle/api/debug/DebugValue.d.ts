@@ -35,7 +35,7 @@ export abstract class DebugValue extends Object {
     canExecute(): boolean;
     createAsInLanguage(language: LanguageInfo): DebugValue;
     equals(obj: Object | null): boolean;
-    execute(arguments: DebugValue[]): DebugValue;
+    execute(...arguments: DebugValue[]): DebugValue;
     fitsInBigInteger(): boolean;
     fitsInByte(): boolean;
     fitsInDouble(): boolean;

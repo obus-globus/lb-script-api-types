@@ -14,11 +14,11 @@ export class RVector extends Object {
     static basis(paramarg0: number, paramarg1: number, paramarg2: BigInteger): RVector;
     static basis(paramarg0: number, paramarg1: number, paramarg2: number): RVector;
     static zero(paramarg0: number): RVector;
-    constructor(arg0: Real[])
-    constructor(arg0: BigInteger[])
+    constructor(...arg0: Real[])
+    constructor(...arg0: BigInteger[])
     constructor(arg0: number)
     constructor(arg0: number, arg1: (param0: number) => Real)
-    constructor(arg0: number[])
+    constructor(...arg0: number[])
     readonly elements: Real[];
     add(arg0: RVector): RVector;
     addAndSet(arg0: RVector): RVector;

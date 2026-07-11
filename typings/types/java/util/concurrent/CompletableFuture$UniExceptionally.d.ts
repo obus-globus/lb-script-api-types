@@ -22,7 +22,7 @@ export class CompletableFuture$UniExceptionally<T extends unknown> extends Compl
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: Object | null): void;
     constructor(arg0: Executor, arg1: CompletableFuture<T>, arg2: CompletableFuture<T>, arg3: (param0: Throwable) => T)
     // private fn: (param0: Throwable) => T;
     tryFire(arg0: number): CompletableFuture<T>;

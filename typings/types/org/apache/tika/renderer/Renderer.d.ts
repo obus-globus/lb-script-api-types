@@ -8,5 +8,5 @@ import type { RenderRequest } from '../../../../org/apache/tika/renderer/RenderR
 import type { RenderResults } from '../../../../org/apache/tika/renderer/RenderResults.d.ts'
 export interface Renderer extends Serializable, Object{
     getSupportedTypes(arg0: ParseContext): MediaType[];
-    render(arg0: InputStream, arg1: Metadata, arg2: ParseContext, arg3: RenderRequest[]): RenderResults;
+    render(arg0: InputStream, arg1: Metadata, arg2: ParseContext, ...arg3: RenderRequest[]): RenderResults;
 }

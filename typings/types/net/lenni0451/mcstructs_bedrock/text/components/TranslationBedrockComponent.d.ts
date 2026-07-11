@@ -2,7 +2,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BedrockComponent } from '../../../../../net/lenni0451/mcstructs_bedrock/text/BedrockComponent.d.ts'
 export class TranslationBedrockComponent extends BedrockComponent {
-    constructor(arg0: string, arg1: Object[])
+    constructor(arg0: string, ...arg1: Object[])
     constructor(arg0: string, arg1: Object[])
     readonly args: Object[];
     readonly key: string;

@@ -19,8 +19,8 @@ export interface Types extends Object{
     directSupertypes(arg0: TypeMirror): TypeMirror[];
     erasure(arg0: TypeMirror): TypeMirror;
     getArrayType(arg0: TypeMirror): ArrayType;
-    getDeclaredType(arg0: TypeElement, arg1: TypeMirror[]): DeclaredType;
-    getDeclaredType(arg0: DeclaredType, arg1: TypeElement, arg2: TypeMirror[]): DeclaredType;
+    getDeclaredType(arg0: TypeElement, ...arg1: TypeMirror[]): DeclaredType;
+    getDeclaredType(arg0: DeclaredType, arg1: TypeElement, ...arg2: TypeMirror[]): DeclaredType;
     getNoType(arg0: TypeKind): NoType;
     getNullType(): NullType;
     getPrimitiveType(arg0: TypeKind): PrimitiveType;

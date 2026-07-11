@@ -12,5 +12,5 @@ export class PathsKt__PathRecursiveFunctionsKt extends PathsKt__PathReadWriteKt 
     static copyToRecursively(paramarg0: Path[][], paramarg1: Path[][], paramarg2: (param0: Object, param1: Object, param2: Object) => OnErrorResult, paramarg3: boolean, paramarg4: (param0: Object, param1: Object, param2: Object) => CopyActionResult): Path[][];
     static deleteRecursively(paramarg0: Path[][]): void;
     static readText(paramarg0: Path[][], paramarg1: Charset): string;
-    static writeText(paramarg0: Path[][], paramarg1: CharSequence, paramarg2: Charset, paramarg3: (Object | null)[]): void;
+    static writeText(paramarg0: Path[][], paramarg1: CharSequence, paramarg2: Charset, ...paramarg3: (Object | null)[]): void;
 }

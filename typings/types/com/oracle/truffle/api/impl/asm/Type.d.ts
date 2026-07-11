@@ -32,9 +32,9 @@ export class Type extends Object {
     static getConstructorDescriptor(paramconstructor: Constructor<Object>): string;
     static getDescriptor(paramclazz: Class<Object>): string;
     static getInternalName(paramclazz: Class<Object>): string;
-    static getMethodDescriptor(paramreturnType: Type, paramargumentTypes: (Object | null)[]): string;
+    static getMethodDescriptor(paramreturnType: Type, ...paramargumentTypes: (Object | null)[]): string;
     static getMethodDescriptor(parammethod: Method): string;
-    static getMethodType(paramreturnType: Type, paramargumentTypes: (Object | null)[]): Type;
+    static getMethodType(paramreturnType: Type, ...paramargumentTypes: (Object | null)[]): Type;
     static getMethodType(parammethodDescriptor: string): Type;
     static getObjectType(paraminternalName: string): Type;
     static getReturnType(parammethodDescriptor: string): Type;

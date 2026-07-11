@@ -16,7 +16,7 @@ export class LongIterators extends Object {
     static any(paramarg0: LongIterator, paramarg1: (param0: number) => boolean): boolean;
     static asLongIterator(paramarg0: Iterator<Object>): LongIterator;
     static asLongIterator(paramarg0: ListIterator<Object>): LongListIterator;
-    static concat(paramarg0: (Object | null)[]): LongIterator;
+    static concat(...paramarg0: (Object | null)[]): LongIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): LongIterator;
     static fromTo(paramarg0: number, paramarg1: number): LongBidirectionalIterator;
     static indexOf(paramarg0: LongIterator, paramarg1: (param0: number) => boolean): number;

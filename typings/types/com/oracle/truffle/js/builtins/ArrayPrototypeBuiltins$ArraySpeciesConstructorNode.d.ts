@@ -35,14 +35,14 @@ export class ArrayPrototypeBuiltins$ArraySpeciesConstructorNode extends JavaScri
     // private typedArrayLengthNode: TypedArrayLengthNode;
     // private arrayCreate(length: number): JSArrayObject;
     arraySpeciesCreate(originalArray: Object, length: number): Object;
-    construct(constructor: Object, userArgs: Object[]): Object;
+    construct(constructor: Object, ...userArgs: Object[]): Object;
     createEmptyContainer(thisObj: Object, size: number): Object;
     // private getConstructorProperty(obj: Object): Object;
     // private getSpeciesProperty(obj: Object): Object;
     isArray(thisObj: Object): boolean;
     speciesConstructor(thisObj: JSDynamicObject, defaultConstructor: JSDynamicObject): Object;
-    typedArrayCreate(constructor: Object, args: Object[]): JSTypedArrayObject;
+    typedArrayCreate(constructor: Object, ...args: Object[]): JSTypedArrayObject;
     typedArrayCreate(constructor: Object, length: number): JSTypedArrayObject;
-    typedArrayCreateSameType(thisObj: JSTypedArrayObject, args: Object[]): JSTypedArrayObject;
-    typedArraySpeciesCreate(thisObj: JSTypedArrayObject, args: Object[]): JSTypedArrayObject;
+    typedArrayCreateSameType(thisObj: JSTypedArrayObject, ...args: Object[]): JSTypedArrayObject;
+    typedArraySpeciesCreate(thisObj: JSTypedArrayObject, ...args: Object[]): JSTypedArrayObject;
 }

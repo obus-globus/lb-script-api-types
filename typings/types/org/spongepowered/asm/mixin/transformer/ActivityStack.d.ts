@@ -11,7 +11,7 @@ export class ActivityStack extends Object implements IActivityContext {
     // private head: ActivityStack$Activity;
     // private tail: ActivityStack$Activity;
     begin(arg0: string): IActivityContext$IActivity;
-    begin(arg0: string, arg1: Object[]): IActivityContext$IActivity;
+    begin(arg0: string, ...arg1: Object[]): IActivityContext$IActivity;
     clear(): void;
     end(arg0: ActivityStack$Activity): void;
     toString(): string;

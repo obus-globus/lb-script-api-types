@@ -7,6 +7,6 @@ import type { AbstractOrigin } from '../../../../../org/apache/commons/io/build/
 export class AbstractOrigin$URIOrigin extends AbstractOrigin<URI, AbstractOrigin$URIOrigin> {
     constructor(arg0: URI)
     getFile(): File;
-    getInputStream(arg0: OpenOption[]): InputStream;
+    getInputStream(...arg0: OpenOption[]): InputStream;
     getPath(): Path[];
 }

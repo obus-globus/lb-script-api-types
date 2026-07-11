@@ -8,8 +8,8 @@ export class Result$Success<T extends unknown> extends Object implements Result<
     static error(paramarg0: Throwable): Result<Object>;
     static mergeErrors(paramarg0: string, paramarg1: Result<Object>[]): Result<Object>;
     static success(paramarg0: Object | null): Result<Object>;
-    static unexpected(paramarg0: Object, paramarg1: Object | null): Result<Object>;
-    static unexpected(paramarg0: Object, paramarg1: (Object | null)[]): Result<Object>;
+    static unexpected(paramarg0: Object, ...paramarg1: Object | null): Result<Object>;
+    static unexpected(paramarg0: Object, ...paramarg1: (Object | null)[]): Result<Object>;
     constructor(arg0: Object, arg1: any)
     // private result: T;
     canEqual(arg0: Object): boolean;

@@ -19,7 +19,7 @@ export class ObjectSpliterators extends Object {
     static asSpliteratorFromSorted(paramarg0: ObjectIterator<Object>, paramarg1: number, paramarg2: number, paramarg3: (param0: Object) => boolean): ObjectSpliterator<Object>;
     static asSpliteratorFromSortedUnknownSize(paramarg0: ObjectIterator<Object>, paramarg1: number, paramarg2: (param0: Object) => boolean): ObjectSpliterator<Object>;
     static asSpliteratorUnknownSize(paramarg0: ObjectIterator<Object>, paramarg1: number): ObjectSpliterator<Object>;
-    static concat(paramarg0: Object | null): ObjectSpliterator<Object>;
+    static concat(...paramarg0: Object | null): ObjectSpliterator<Object>;
     static concat(paramarg0: Object | null, paramarg1: number, paramarg2: number): ObjectSpliterator<Object>;
     static emptySpliterator(): ObjectSpliterator<Object>;
     static onEachMatching(paramarg0: Spliterator<Object>, paramarg1: (param0: Object) => boolean, paramarg2: (param0: Object) => void): void;

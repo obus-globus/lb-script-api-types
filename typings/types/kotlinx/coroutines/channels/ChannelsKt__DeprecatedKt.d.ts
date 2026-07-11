@@ -14,7 +14,7 @@ export class ChannelsKt__DeprecatedKt extends Object {
     static consume(paramarg0: BroadcastChannel<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
     static consumeEach(paramarg0: BroadcastChannel<Object>, paramarg1: (param0: Object) => void, paramarg2: Continuation<Object>): Object;
     static consumes(paramarg0: ReceiveChannel<Object>): (param0: Throwable) => void;
-    static consumesAll(paramarg0: Object | null): (param0: Throwable) => void;
+    static consumesAll(...paramarg0: Object | null): (param0: Throwable) => void;
     static count(paramarg0: ReceiveChannel<Object>, paramarg1: Continuation<Object>): Object;
     static distinct(paramarg0: ReceiveChannel<Object>): ReceiveChannel<Object>;
     static distinctBy(paramarg0: ReceiveChannel<Object>, paramarg1: CoroutineContext, paramarg2: (param0: Object, param1: Object) => Object): ReceiveChannel<Object>;

@@ -14,5 +14,5 @@ export class MixinInfo$MixinMethodNode extends MethodNodeEx {
     isInjector(): boolean;
     isSurrogate(): boolean;
     isSynthetic(): boolean;
-    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): void;
+    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): void;
 }

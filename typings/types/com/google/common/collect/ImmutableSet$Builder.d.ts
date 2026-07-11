@@ -9,7 +9,7 @@ export class ImmutableSet$Builder<E extends unknown> extends ImmutableCollection
     // private forceCopy: boolean;
     // private impl: ImmutableSet$SetBuilderImpl<E>;
     add(element: E): ImmutableSet$Builder<E>;
-    add(elements: E[]): ImmutableSet$Builder<E>;
+    add(...elements: E[]): ImmutableSet$Builder<E>;
     addAll(elements: E[]): ImmutableSet$Builder<E>;
     addAll(elements: Iterator<E>): ImmutableSet$Builder<E>;
     build(): E[];

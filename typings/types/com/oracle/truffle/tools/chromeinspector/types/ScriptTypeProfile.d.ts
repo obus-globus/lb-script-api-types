@@ -2,7 +2,7 @@ import type { TypeProfileEntry } from '../../../../../../com/oracle/truffle/tool
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { JSONObject } from '../../../../../../org/graalvm/shadowed/org/json/JSONObject.d.ts'
 export class ScriptTypeProfile extends Object {
-    constructor(scriptId: number, url: string, entries: TypeProfileEntry[])
+    constructor(scriptId: number, url: string, ...entries: TypeProfileEntry[])
     readonly entries: TypeProfileEntry[];
     readonly scriptId: number;
     readonly url: string;

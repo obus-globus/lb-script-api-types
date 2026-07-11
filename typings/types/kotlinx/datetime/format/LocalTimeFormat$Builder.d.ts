@@ -14,7 +14,7 @@ export class LocalTimeFormat$Builder extends Object implements AbstractDateTimeF
     addFormatStructureForTime(structure: FormatStructure<TimeFieldContainer>): void;
     amPmHour(padding: Padding): void;
     amPmMarker(am: string, pm: string): void;
-    appendAlternativeParsingImpl(otherFormats: (param0: LocalTimeFormat$Builder) => void[], mainFormat: (param0: LocalTimeFormat$Builder) => void): void;
+    appendAlternativeParsingImpl(...otherFormats: (param0: LocalTimeFormat$Builder) => void[], mainFormat: (param0: LocalTimeFormat$Builder) => void): void;
     appendOptionalImpl(onZero: string, format: (param0: LocalTimeFormat$Builder) => void): void;
     build(): CachedFormatStructure<TimeFieldContainer>;
     chars(value: string): void;

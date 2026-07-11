@@ -7,7 +7,7 @@ import type { ProxyInputStream } from '../../../../../org/apache/commons/io/inpu
 export class ObservableInputStream extends ProxyInputStream {
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream)
-    constructor(arg0: InputStream, arg1: ObservableInputStream$Observer[])
+    constructor(arg0: InputStream, ...arg1: ObservableInputStream$Observer[])
     constructor(arg0: ObservableInputStream$AbstractBuilder<any>)
     readonly observers: ObservableInputStream$Observer[];
     add(arg0: ObservableInputStream$Observer): void;

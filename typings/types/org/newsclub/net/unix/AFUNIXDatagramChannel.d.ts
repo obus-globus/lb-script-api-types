@@ -16,5 +16,5 @@ export class AFUNIXDatagramChannel extends AFDatagramChannel<AFUNIXSocketAddress
     getPeerCredentials(): AFUNIXSocketCredentials;
     getReceivedFileDescriptors(): FileDescriptor[];
     hasOutboundFileDescriptors(): boolean;
-    setOutboundFileDescriptors(arg0: FileDescriptor[]): void;
+    setOutboundFileDescriptors(...arg0: FileDescriptor[]): void;
 }

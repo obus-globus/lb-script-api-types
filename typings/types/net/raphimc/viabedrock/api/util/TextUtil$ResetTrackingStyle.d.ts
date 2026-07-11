@@ -5,5 +5,5 @@ export class TextUtil$ResetTrackingStyle extends Style {
     // private wasReset: boolean;
     copy(): Style;
     setFormatting(arg0: TextFormatting): Style;
-    setFormatting(arg0: TextFormatting[]): Style;
+    setFormatting(...arg0: TextFormatting[]): Style;
 }

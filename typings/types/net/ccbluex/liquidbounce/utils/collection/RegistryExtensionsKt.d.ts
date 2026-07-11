@@ -5,7 +5,7 @@ import type { Block } from '../../../../../net/minecraft/world/level/block/Block
 export class RegistryExtensionsKt extends Object {
     static asComparator(registry: (Object | null)[]): (param0: Object) => boolean;
     static blockSortedSetOf(): Block[];
-    static blockSortedSetOf(blocks: (Object | null)[]): Block[];
+    static blockSortedSetOf(...blocks: (Object | null)[]): Block[];
     static itemSortedSetOf(): Item[];
-    static itemSortedSetOf(items: (Object | null)[]): Item[];
+    static itemSortedSetOf(...items: (Object | null)[]): Item[];
 }

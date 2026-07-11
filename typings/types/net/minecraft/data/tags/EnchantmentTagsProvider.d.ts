@@ -13,5 +13,5 @@ export abstract class EnchantmentTagsProvider extends TagsProvider<Enchantment> 
     static KEY_COMPARATOR: (param0: Object) => boolean;
     static LOGGER: Logger;
     constructor(output: PackOutput, lookupProvider: CompletableFuture<HolderLookup$Provider>)
-    tooltipOrder(registries: HolderLookup$Provider, order: ResourceKey<Enchantment>[]): void;
+    tooltipOrder(registries: HolderLookup$Provider, ...order: ResourceKey<Enchantment>[]): void;
 }

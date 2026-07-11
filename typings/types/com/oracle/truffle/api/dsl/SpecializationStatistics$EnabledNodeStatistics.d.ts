@@ -14,10 +14,10 @@ export class SpecializationStatistics$EnabledNodeStatistics extends Specializati
     // private specializations: SpecializationStatistics$TypeCombination[];
     acceptExecute(specializationIndex: number, arg0: Class<Object>): void;
     acceptExecute(specializationIndex: number, arg0: Class<Object>, arg1: Class<Object>): void;
-    acceptExecute(specializationIndex: number, args: Class<Object>[]): void;
-    // private findCombination(specializationIndex: number, args: Class<Object>[]): SpecializationStatistics$TypeCombination;
+    acceptExecute(specializationIndex: number, ...args: Class<Object>[]): void;
+    // private findCombination(specializationIndex: number, ...args: Class<Object>[]): SpecializationStatistics$TypeCombination;
     getSourceSection(): SourceSection;
-    // private insertCombination(specializationIndex: number, args: Class<Object>[]): SpecializationStatistics$TypeCombination;
+    // private insertCombination(specializationIndex: number, ...args: Class<Object>[]): SpecializationStatistics$TypeCombination;
     isCollected(): boolean;
     resolveValueClass(value: Object): Class<Object>;
 }

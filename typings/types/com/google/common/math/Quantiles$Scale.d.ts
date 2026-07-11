@@ -5,5 +5,6 @@ export class Quantiles$Scale extends Object {
     constructor(arg0: number, arg1: any)
     // private scale: number;
     index(index: number): Quantiles$ScaleAndIndex;
+    indexes(...indexes: number[]): Quantiles$ScaleAndIndexes;
     indexes(indexes: number[]): Quantiles$ScaleAndIndexes;
 }

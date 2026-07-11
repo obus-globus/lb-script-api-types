@@ -16,10 +16,10 @@ export class TagRewriter<C extends ClientboundPacketType> extends Object impleme
     // private toRemoveRegistries: string[];
     // private toRename: { [key in RegistryType]: { [key: string]: string } };
     addEmptyTag(arg0: RegistryType, arg1: string): void;
-    addEmptyTags(arg0: RegistryType, arg1: string[]): void;
-    addEntityTag(arg0: string, arg1: EntityType[]): void;
-    addTag(arg0: RegistryType, arg1: string, arg2: number[]): void;
-    addTagRaw(arg0: RegistryType, arg1: string, arg2: number[]): void;
+    addEmptyTags(arg0: RegistryType, ...arg1: string[]): void;
+    addEntityTag(arg0: string, ...arg1: EntityType[]): void;
+    addTag(arg0: RegistryType, arg1: string, ...arg2: number[]): void;
+    addTagRaw(arg0: RegistryType, arg1: string, ...arg2: number[]): void;
     appendNewTags(arg0: PacketWrapper, arg1: RegistryType): void;
     getHandler(arg0: RegistryType): (param0: PacketWrapper) => void;
     getNewTags(arg0: RegistryType): TagData[];

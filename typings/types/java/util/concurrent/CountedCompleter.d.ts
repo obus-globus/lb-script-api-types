@@ -18,7 +18,7 @@ export abstract class CountedCompleter<T extends unknown> extends ForkJoinTask<T
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: Object | null): void;
     constructor()
     constructor(arg0: CountedCompleter<Object>)
     constructor(arg0: CountedCompleter<Object>, arg1: number)

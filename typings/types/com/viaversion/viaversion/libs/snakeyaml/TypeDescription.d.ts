@@ -22,7 +22,7 @@ export class TypeDescription extends Object {
     readonly propertyUtils: PropertyUtils;
     readonly tag: Tag;
     readonly type: Class<Object>;
-    addPropertyParameters(arg0: string, arg1: Class<Object>[]): void;
+    addPropertyParameters(arg0: string, ...arg1: Class<Object>[]): void;
     // private checkDelegates(): void;
     // private discoverProperty(arg0: string): Property;
     finalizeConstruction(arg0: Object): Object;
@@ -34,12 +34,12 @@ export class TypeDescription extends Object {
     newInstance(arg0: string, arg1: Node): Object;
     putListPropertyType(arg0: string, arg1: Class<Object>): void;
     putMapPropertyType(arg0: string, arg1: Class<Object>, arg2: Class<Object>): void;
-    setExcludes(arg0: string[]): void;
-    setIncludes(arg0: string[]): void;
+    setExcludes(...arg0: string[]): void;
+    setIncludes(...arg0: string[]): void;
     setProperty(arg0: Object, arg1: string, arg2: Object): boolean;
     setPropertyUtils(arg0: PropertyUtils): void;
     setupPropertyType(arg0: string, arg1: Node): boolean;
     substituteProperty(arg0: PropertySubstitute): void;
-    substituteProperty(arg0: string, arg1: Class<Object>, arg2: string, arg3: string, arg4: Class<Object>[]): void;
+    substituteProperty(arg0: string, arg1: Class<Object>, arg2: string, arg3: string, ...arg4: Class<Object>[]): void;
     toString(): string;
 }

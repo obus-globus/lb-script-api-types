@@ -9,6 +9,6 @@ export class StepConfig$Builder extends Object {
     // private stepElements: SourceElement[];
     build(): StepConfig;
     count(count: number): StepConfig$Builder;
-    sourceElements(elements: SourceElement[]): StepConfig$Builder;
-    suspendAnchors(element: SourceElement, anchors: SuspendAnchor[]): StepConfig$Builder;
+    sourceElements(...elements: SourceElement[]): StepConfig$Builder;
+    suspendAnchors(element: SourceElement, ...anchors: SuspendAnchor[]): StepConfig$Builder;
 }

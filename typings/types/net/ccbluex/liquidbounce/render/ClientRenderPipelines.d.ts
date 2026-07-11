@@ -5,7 +5,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientRenderPipelines extends Object {
     static Blend: RenderPipeline;
-    static GuiBlur: RenderPipeline;
+    static GuiBlurH: RenderPipeline;
+    static GuiBlurV: RenderPipeline;
     static INSTANCE: ClientRenderPipelines;
     static ItemChams: RenderPipeline;
     static LineStrip: RenderPipeline;
@@ -13,14 +14,14 @@ export class ClientRenderPipelines extends Object {
     /**
      * @see RenderPipelines.LINES_TRANSLUCENT
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L219 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:219}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L221 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:221}
      */
     static LinesWithWidth: RenderPipeline;
     /**
      * @see RenderPipelines.ENTITY_OUTLINE_BLIT
      * @see RenderPipelines.OUTLINE_SNIPPET
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L407 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:407}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L409 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:409}
      */
     static Outline: RenderPipeline;
     static Quads: RenderPipeline;
@@ -33,7 +34,8 @@ export class ClientRenderPipelines extends Object {
     Blend: RenderPipeline;
     // private GradientCircle: RenderPipeline;
     // private GradientCircleNoDepthTest: RenderPipeline;
-    GuiBlur: RenderPipeline;
+    GuiBlurH: RenderPipeline;
+    GuiBlurV: RenderPipeline;
     // private Heart: RenderPipeline;
     // private HeartNoDepthTest: RenderPipeline;
     ItemChams: RenderPipeline;
@@ -63,7 +65,7 @@ export class ClientRenderPipelines extends Object {
     /**
      * Precompile
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L465 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:465}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt#L481 | src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt:481}
      */
     precompile(): void;
     relativeLines(useColor: boolean): RenderPipeline;

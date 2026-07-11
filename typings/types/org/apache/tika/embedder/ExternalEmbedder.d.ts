@@ -11,8 +11,8 @@ import type { ParseContext } from '../../../../org/apache/tika/parser/ParseConte
 export class ExternalEmbedder extends Object implements Embedder {
     static METADATA_COMMAND_ARGUMENTS_SERIALIZED_TOKEN: string;
     static METADATA_COMMAND_ARGUMENTS_TOKEN: string;
-    static check(paramarg0: string, paramarg1: number[]): boolean;
-    static check(paramarg0: (Object | null)[], paramarg1: number[]): boolean;
+    static check(paramarg0: string, ...paramarg1: number[]): boolean;
+    static check(paramarg0: (Object | null)[], ...paramarg1: number[]): boolean;
     constructor()
     readonly command: string[];
     readonly commandAppendOperator: string;
@@ -36,7 +36,7 @@ export class ExternalEmbedder extends Object implements Embedder {
     // private sendInputStreamToStdIn(arg0: InputStream, arg1: Process): void;
     // private sendStdErrToOutputStream(arg0: Process, arg1: OutputStream): void;
     // private sendStdOutToOutputStream(arg0: Process, arg1: OutputStream): void;
-    setCommand(arg0: string[]): void;
+    setCommand(...arg0: string[]): void;
     setCommandAppendOperator(arg0: string): void;
     setCommandAssignmentDelimeter(arg0: string): void;
     setCommandAssignmentOperator(arg0: string): void;

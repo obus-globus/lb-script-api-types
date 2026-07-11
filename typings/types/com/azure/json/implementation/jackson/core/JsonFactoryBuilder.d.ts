@@ -21,20 +21,20 @@ export class JsonFactoryBuilder extends TSFBuilder<JsonFactory, JsonFactoryBuild
     configure(arg0: JsonWriteFeature, arg1: boolean): JsonFactoryBuilder;
     disable(arg0: JsonFactory$Feature): JsonFactoryBuilder;
     disable(arg0: StreamReadFeature): JsonFactoryBuilder;
-    disable(arg0: StreamReadFeature, arg1: StreamReadFeature[]): JsonFactoryBuilder;
+    disable(arg0: StreamReadFeature, ...arg1: StreamReadFeature[]): JsonFactoryBuilder;
     disable(arg0: StreamWriteFeature): JsonFactoryBuilder;
-    disable(arg0: StreamWriteFeature, arg1: StreamWriteFeature[]): JsonFactoryBuilder;
+    disable(arg0: StreamWriteFeature, ...arg1: StreamWriteFeature[]): JsonFactoryBuilder;
     disable(arg0: JsonReadFeature): JsonFactoryBuilder;
-    disable(arg0: JsonReadFeature, arg1: JsonReadFeature[]): JsonFactoryBuilder;
+    disable(arg0: JsonReadFeature, ...arg1: JsonReadFeature[]): JsonFactoryBuilder;
     disable(arg0: JsonWriteFeature): JsonFactoryBuilder;
-    disable(arg0: JsonWriteFeature, arg1: JsonWriteFeature[]): JsonFactoryBuilder;
+    disable(arg0: JsonWriteFeature, ...arg1: JsonWriteFeature[]): JsonFactoryBuilder;
     enable(arg0: JsonFactory$Feature): JsonFactoryBuilder;
     enable(arg0: StreamReadFeature): JsonFactoryBuilder;
-    enable(arg0: StreamReadFeature, arg1: StreamReadFeature[]): JsonFactoryBuilder;
+    enable(arg0: StreamReadFeature, ...arg1: StreamReadFeature[]): JsonFactoryBuilder;
     enable(arg0: StreamWriteFeature): JsonFactoryBuilder;
-    enable(arg0: StreamWriteFeature, arg1: StreamWriteFeature[]): JsonFactoryBuilder;
+    enable(arg0: StreamWriteFeature, ...arg1: StreamWriteFeature[]): JsonFactoryBuilder;
     enable(arg0: JsonReadFeature): JsonFactoryBuilder;
-    enable(arg0: JsonReadFeature, arg1: JsonReadFeature[]): JsonFactoryBuilder;
+    enable(arg0: JsonReadFeature, ...arg1: JsonReadFeature[]): JsonFactoryBuilder;
     enable(arg0: JsonWriteFeature): JsonFactoryBuilder;
-    enable(arg0: JsonWriteFeature, arg1: JsonWriteFeature[]): JsonFactoryBuilder;
+    enable(arg0: JsonWriteFeature, ...arg1: JsonWriteFeature[]): JsonFactoryBuilder;
 }

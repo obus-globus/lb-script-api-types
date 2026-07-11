@@ -39,10 +39,10 @@ export class MutableComponent extends Object implements Component {
     static score(parampattern: CompilableString<EntitySelector>, paramobjective: string): MutableComponent;
     static selector(parampattern: CompilableString<EntitySelector>, paramseparator: Optional<Component>): MutableComponent;
     static translatable(paramkey: string): MutableComponent;
-    static translatable(paramkey: string, paramargs: (Object | null)[]): MutableComponent;
-    static translatableEscape(paramkey: string, paramargs: (Object | null)[]): MutableComponent;
+    static translatable(paramkey: string, ...paramargs: (Object | null)[]): MutableComponent;
+    static translatableEscape(paramkey: string, ...paramargs: (Object | null)[]): MutableComponent;
     static translatableWithFallback(paramkey: string, paramfallback: string): MutableComponent;
-    static translatableWithFallback(paramkey: string, paramfallback: string, paramargs: (Object | null)[]): MutableComponent;
+    static translatableWithFallback(paramkey: string, paramfallback: string, ...paramargs: (Object | null)[]): MutableComponent;
     static translationArg(parammessage: Message): Component;
     static translationArg(paramuri: URI): Component;
     static translationArg(paramdate: Date): Component;
@@ -78,7 +78,7 @@ export class MutableComponent extends Object implements Component {
     withColor(color: number): MutableComponent;
     withColor(color: TextColor): MutableComponent;
     withStyle(updater: (param0: Style) => Object | null): MutableComponent;
-    withStyle(formats: ChatFormatting[]): MutableComponent;
+    withStyle(...formats: ChatFormatting[]): MutableComponent;
     withStyle(format: ChatFormatting): MutableComponent;
     withStyle(patch: Style): MutableComponent;
     withoutShadow(): MutableComponent;

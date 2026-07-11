@@ -4,9 +4,9 @@ import type { ToIntFunction } from '../../../../java/util/function/ToIntFunction
 import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EnumUtils extends Object {
-    static generateBitVector(paramarg0: Class<Object>, paramarg1: Object | null): number;
+    static generateBitVector(paramarg0: Class<Object>, ...paramarg1: Object | null): number;
     static generateBitVector(paramarg0: Class<Object>, paramarg1: (Object | null)[]): number;
-    static generateBitVectors(paramarg0: Class<Object>, paramarg1: Object | null): number[];
+    static generateBitVectors(paramarg0: Class<Object>, ...paramarg1: Object | null): number[];
     static generateBitVectors(paramarg0: Class<Object>, paramarg1: (Object | null)[]): number[];
     static getEnum(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static getEnum(paramarg0: Class<Object>, paramarg1: string, paramarg2: Object | null): Object | null;
@@ -21,7 +21,7 @@ export class EnumUtils extends Object {
     static isValidEnum(paramarg0: Class<Object>, paramarg1: string): boolean;
     static isValidEnumIgnoreCase(paramarg0: Class<Object>, paramarg1: string): boolean;
     static processBitVector(paramarg0: Class<Object>, paramarg1: number): (Object | null)[];
-    static processBitVectors(paramarg0: Class<Object>, paramarg1: number[]): (Object | null)[];
+    static processBitVectors(paramarg0: Class<Object>, ...paramarg1: number[]): (Object | null)[];
     static stream(paramarg0: Class<Object>): Stream<Object>;
     constructor()
 }

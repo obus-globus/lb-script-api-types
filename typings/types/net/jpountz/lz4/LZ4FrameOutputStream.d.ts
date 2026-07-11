@@ -10,9 +10,9 @@ export class LZ4FrameOutputStream extends FilterOutputStream {
     static nullOutputStream(): OutputStream;
     constructor(arg0: OutputStream)
     constructor(arg0: OutputStream, arg1: LZ4FrameOutputStream$BLOCKSIZE)
-    constructor(arg0: OutputStream, arg1: LZ4FrameOutputStream$BLOCKSIZE, arg2: LZ4FrameOutputStream$FLG$Bits[])
-    constructor(arg0: OutputStream, arg1: LZ4FrameOutputStream$BLOCKSIZE, arg2: number, arg3: LZ4FrameOutputStream$FLG$Bits[])
-    constructor(arg0: OutputStream, arg1: LZ4FrameOutputStream$BLOCKSIZE, arg2: number, arg3: LZ4Compressor, arg4: XXHash32, arg5: LZ4FrameOutputStream$FLG$Bits[])
+    constructor(arg0: OutputStream, arg1: LZ4FrameOutputStream$BLOCKSIZE, ...arg2: LZ4FrameOutputStream$FLG$Bits[])
+    constructor(arg0: OutputStream, arg1: LZ4FrameOutputStream$BLOCKSIZE, arg2: number, ...arg3: LZ4FrameOutputStream$FLG$Bits[])
+    constructor(arg0: OutputStream, arg1: LZ4FrameOutputStream$BLOCKSIZE, arg2: number, arg3: LZ4Compressor, arg4: XXHash32, ...arg5: LZ4FrameOutputStream$FLG$Bits[])
     // private buffer: ByteBuffer;
     // private checksum: XXHash32;
     // private compressedBuffer: number[];

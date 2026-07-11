@@ -100,7 +100,7 @@ export abstract class GraalJSTranslator extends TranslatorNodeVisitor<LexicalCon
     // private collectGlobalVars(functionNode: FunctionNode, configurable: boolean): JavaScriptNode[];
     // private createArrayLiteral(elementExpressions: Expression[]): JavaScriptNode;
     // private createAwaitNode(expression: JavaScriptNode): JavaScriptNode;
-    // private createBlock(statements: JavaScriptNode[]): JavaScriptNode;
+    // private createBlock(...statements: JavaScriptNode[]): JavaScriptNode;
     // private createBlock(statements: JavaScriptNode[], terminal: boolean, expressionBlock: boolean): JavaScriptNode;
     // private createCallApplyArgumentsNode(function_: JavaScriptNode, args: JavaScriptNode[]): JavaScriptNode;
     // private createCallDirectSuper(function_: JavaScriptNode, args: JavaScriptNode[], inDefaultDerivedConstructor: boolean): JavaScriptNode;

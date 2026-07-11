@@ -10,7 +10,7 @@ export abstract class ReflectKCallableImpl<R extends unknown> extends Object imp
     /*not mapped: */ isFinal(): boolean;
     /*not mapped: */ isOpen(): boolean;
     readonly overriddenStorage: KCallableOverriddenStorage;
-    call(args: (Object | null)[]): R;
+    call(...args: (Object | null)[]): R;
     callBy(args: Map<KParameter, Object | null>): R;
     getAbsentArguments(): (Object | null)[];
 }

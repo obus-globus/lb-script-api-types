@@ -63,7 +63,7 @@ export class DateTimeFormatter extends Object {
     parse(arg0: CharSequence): TemporalAccessor;
     parse(arg0: CharSequence, arg1: ParsePosition): TemporalAccessor;
     parse<T extends unknown>(arg0: CharSequence, arg1: (param0: TemporalAccessor) => T): T;
-    parseBest(arg0: CharSequence, arg1: (param0: TemporalAccessor) => Object | null[]): TemporalAccessor;
+    parseBest(arg0: CharSequence, ...arg1: (param0: TemporalAccessor) => Object | null[]): TemporalAccessor;
     // private parseResolved0(arg0: CharSequence, arg1: ParsePosition): TemporalAccessor;
     parseUnresolved(arg0: CharSequence, arg1: ParsePosition): TemporalAccessor;
     // private parseUnresolved0(arg0: CharSequence, arg1: ParsePosition): DateTimeParseContext;
@@ -74,6 +74,7 @@ export class DateTimeFormatter extends Object {
     withChronology(arg0: Chronology): DateTimeFormatter;
     withDecimalStyle(arg0: DecimalStyle): DateTimeFormatter;
     withLocale(arg0: Locale): DateTimeFormatter;
+    withResolverFields(...arg0: TemporalField[]): DateTimeFormatter;
     withResolverFields(arg0: TemporalField[]): DateTimeFormatter;
     withResolverStyle(arg0: ResolverStyle): DateTimeFormatter;
     withZone(arg0: ZoneId): DateTimeFormatter;

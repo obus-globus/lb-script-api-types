@@ -5,7 +5,7 @@ import type { CustomFormBuilder } from '../../../../../net/lenni0451/mcstructs_b
 export class CustomForm extends Form {
     static DEFAULT_TRANSLATOR: (param0: string) => string;
     static builder(): CustomFormBuilder;
-    constructor(arg0: string, arg1: FormElement[])
+    constructor(arg0: string, ...arg1: FormElement[])
     readonly elements: FormElement[];
     deserializeResponse(arg0: string): void;
     getElements(): FormElement[];

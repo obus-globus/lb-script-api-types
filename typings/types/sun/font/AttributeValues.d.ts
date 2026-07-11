@@ -22,7 +22,7 @@ export class AttributeValues extends Object implements Cloneable {
     static getCharTransform(paramarg0: Map<Object, Object>): AffineTransform;
     static getJustification(paramarg0: Map<Object, Object>): number;
     static getMask(paramarg0: EAttribute): number;
-    static getMask(paramarg0: (Object | null)[]): number;
+    static getMask(...paramarg0: (Object | null)[]): number;
     static getNumericShaping(paramarg0: Map<Object, Object>): NumericShaper;
     static getTracking(paramarg0: Map<Object, Object>): number;
     static is16Hashtable(paramarg0: Map<Object, Object>): boolean;

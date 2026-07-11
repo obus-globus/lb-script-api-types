@@ -4,7 +4,7 @@ import type { WeakReference } from '../../../../java/lang/ref/WeakReference.d.ts
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Closeables extends Object implements Closeable {
     constructor()
-    constructor(arg0: Closeable[])
+    constructor(...arg0: Closeable[])
     readonly closed: boolean;
     // private list: WeakReference<Closeable>[];
     add(arg0: Closeable): boolean;

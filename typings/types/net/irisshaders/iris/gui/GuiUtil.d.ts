@@ -12,6 +12,6 @@ export class GuiUtil extends Object {
     static drawTextPanel(paramarg0: Font, paramarg1: GuiGraphicsExtractor, paramarg2: Component, paramarg3: number, paramarg4: number): void;
     static playButtonClickSound(): void;
     static shortenText(paramarg0: Font, paramarg1: MutableComponent, paramarg2: number): MutableComponent;
-    static translateOrDefault(paramarg0: MutableComponent, paramarg1: string, paramarg2: (Object | null)[]): MutableComponent;
+    static translateOrDefault(paramarg0: MutableComponent, paramarg1: string, ...paramarg2: (Object | null)[]): MutableComponent;
     private constructor()
 }

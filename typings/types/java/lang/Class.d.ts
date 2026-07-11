@@ -65,7 +65,7 @@ export class Class<T extends unknown> extends Object implements Serializable, Co
     desiredAssertionStatus(): boolean;
     // private elementType(): Class<Object>;
     enumConstantDirectory(): { [key: string]: T };
-    findMethod(arg0: boolean, arg1: string, arg2: Class<Object>[]): Method;
+    findMethod(arg0: boolean, arg1: string, ...arg2: Class<Object>[]): Method;
     getAnnotatedInterfaces(): AnnotatedType[];
     getAnnotatedSuperclass(): AnnotatedType;
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;
@@ -85,7 +85,7 @@ export class Class<T extends unknown> extends Object implements Serializable, Co
     getClasses(): Class<Object>[];
     getComponentType(): Class<Object>;
     getConstantPool(): ConstantPool;
-    getConstructor(arg0: Class<Object>[]): Constructor<T>;
+    getConstructor(...arg0: Class<Object>[]): Constructor<T>;
     // private getConstructor0(arg0: Class<Object>[], arg1: number): Constructor<T>;
     getConstructors(): Constructor<Object>[];
     getDeclaredAnnotation<A extends Annotation>(arg0: Class<A>): A;
@@ -96,16 +96,16 @@ export class Class<T extends unknown> extends Object implements Serializable, Co
     getDeclaredAnnotationsByType(arg0: Class<T>): T[];
     getDeclaredClasses(): Class<Object>[];
     // private getDeclaredClasses0(): Class<Object>[];
-    getDeclaredConstructor(arg0: Class<Object>[]): Constructor<T>;
+    getDeclaredConstructor(...arg0: Class<Object>[]): Constructor<T>;
     getDeclaredConstructors(): Constructor<Object>[];
     // private getDeclaredConstructors0(arg0: boolean): Constructor<T>[];
     getDeclaredField(arg0: string): Field;
     getDeclaredFields(): Field[];
     // private getDeclaredFields0(arg0: boolean): Field[];
-    getDeclaredMethod(arg0: string, arg1: Class<Object>[]): Method;
+    getDeclaredMethod(arg0: string, ...arg1: Class<Object>[]): Method;
     getDeclaredMethods(): Method[];
     // private getDeclaredMethods0(arg0: boolean): Method[];
-    getDeclaredPublicMethods(arg0: string, arg1: Class<Object>[]): Method[];
+    getDeclaredPublicMethods(arg0: string, ...arg1: Class<Object>[]): Method[];
     getDeclaringClass(): Class<Object>;
     // private getDeclaringClass0(): Class<Object>;
     getEnclosingClass(): Class<Object>;
@@ -126,7 +126,7 @@ export class Class<T extends unknown> extends Object implements Serializable, Co
     getInterfaces(): Class<Object>[];
     // private getInterfaces(arg0: boolean): Class<Object>[];
     // private getInterfaces0(): Class<Object>[];
-    getMethod(arg0: string, arg1: Class<Object>[]): Method;
+    getMethod(arg0: string, ...arg1: Class<Object>[]): Method;
     // private getMethod0(arg0: string, arg1: Class<Object>[]): Method;
     getMethods(): Method[];
     // private getMethodsRecursive(arg0: string, arg1: Class<Object>[], arg2: boolean, arg3: boolean): PublicMethods$MethodList;

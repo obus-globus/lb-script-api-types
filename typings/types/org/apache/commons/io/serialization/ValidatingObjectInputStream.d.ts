@@ -45,15 +45,15 @@ export class ValidatingObjectInputStream extends ObjectInputStream {
     constructor(arg0: ValidatingObjectInputStream$Builder, arg1: any)
     // private predicate: ObjectStreamClassPredicate;
     accept(arg0: Pattern): ValidatingObjectInputStream;
-    accept(arg0: Class<Object>[]): ValidatingObjectInputStream;
-    accept(arg0: string[]): ValidatingObjectInputStream;
+    accept(...arg0: Class<Object>[]): ValidatingObjectInputStream;
+    accept(...arg0: string[]): ValidatingObjectInputStream;
     accept(arg0: (param0: string) => boolean): ValidatingObjectInputStream;
     // private checkClassName(arg0: string): void;
     invalidClassNameFound(arg0: string): void;
     readObjectCast<T extends unknown>(): T;
     reject(arg0: Pattern): ValidatingObjectInputStream;
-    reject(arg0: Class<Object>[]): ValidatingObjectInputStream;
-    reject(arg0: string[]): ValidatingObjectInputStream;
+    reject(...arg0: Class<Object>[]): ValidatingObjectInputStream;
+    reject(...arg0: string[]): ValidatingObjectInputStream;
     reject(arg0: (param0: string) => boolean): ValidatingObjectInputStream;
     resolveClass(arg0: ObjectStreamClass): Class<Object>;
 }

@@ -8,23 +8,23 @@ export abstract class Strings extends Object {
     constructor(arg0: boolean, arg1: boolean, arg2: any)
     // private ignoreCase: boolean;
     // private nullIsLess: boolean;
-    appendIfMissing(arg0: string, arg1: CharSequence, arg2: CharSequence[]): string;
+    appendIfMissing(arg0: string, arg1: CharSequence, ...arg2: CharSequence[]): string;
     compare(arg0: string, arg1: string): number;
     contains(arg0: CharSequence, arg1: CharSequence): boolean;
-    containsAny(arg0: CharSequence, arg1: CharSequence[]): boolean;
+    containsAny(arg0: CharSequence, ...arg1: CharSequence[]): boolean;
     endsWith(arg0: CharSequence, arg1: CharSequence): boolean;
-    endsWithAny(arg0: CharSequence, arg1: CharSequence[]): boolean;
+    endsWithAny(arg0: CharSequence, ...arg1: CharSequence[]): boolean;
     equals(other: Object | null): boolean;
     equals(arg0: CharSequence, arg1: CharSequence): boolean;
     equals(arg0: string, arg1: string): boolean;
-    equalsAny(arg0: CharSequence, arg1: CharSequence[]): boolean;
+    equalsAny(arg0: CharSequence, ...arg1: CharSequence[]): boolean;
     indexOf(arg0: CharSequence, arg1: CharSequence): number;
     indexOf(arg0: CharSequence, arg1: CharSequence, arg2: number): number;
     isCaseSensitive(): boolean;
     isNullIsLess(): boolean;
     lastIndexOf(arg0: CharSequence, arg1: CharSequence): number;
     lastIndexOf(arg0: CharSequence, arg1: CharSequence, arg2: number): number;
-    prependIfMissing(arg0: string, arg1: CharSequence, arg2: CharSequence[]): string;
+    prependIfMissing(arg0: string, arg1: CharSequence, ...arg2: CharSequence[]): string;
     remove(arg0: string, arg1: string): string;
     removeEnd(arg0: string, arg1: CharSequence): string;
     removeStart(arg0: string, arg1: CharSequence): string;
@@ -32,5 +32,5 @@ export abstract class Strings extends Object {
     replace(arg0: string, arg1: string, arg2: string, arg3: number): string;
     replaceOnce(arg0: string, arg1: string, arg2: string): string;
     startsWith(arg0: CharSequence, arg1: CharSequence): boolean;
-    startsWithAny(arg0: CharSequence, arg1: CharSequence[]): boolean;
+    startsWithAny(arg0: CharSequence, ...arg1: CharSequence[]): boolean;
 }

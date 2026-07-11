@@ -8,6 +8,7 @@ import type { Priority } from '../../../../../net/ccbluex/liquidbounce/utils/kot
  */
 export class ScheduleInventoryActionEvent extends Event {
     constructor(schedule: InventoryAction$Chain[])
+    schedule(constrains: InventoryConstraints, ...actions: InventoryAction[], priority: Priority): void;
     schedule(constrains: InventoryConstraints, actions: InventoryAction[], priority: Priority): void;
     schedule(constrains: InventoryConstraints, action: InventoryAction, priority: Priority): void;
 }

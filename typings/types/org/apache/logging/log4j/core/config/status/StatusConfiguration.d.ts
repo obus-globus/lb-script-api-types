@@ -13,6 +13,6 @@ export class StatusConfiguration extends Object {
     withDestination(destination: string): StatusConfiguration;
     withStatus(level: string): StatusConfiguration;
     withStatus(level: Level): StatusConfiguration;
-    withVerboseClasses(verboseClasses: string[]): StatusConfiguration;
+    withVerboseClasses(...verboseClasses: string[]): StatusConfiguration;
     withVerbosity(verbosity: string): StatusConfiguration;
 }

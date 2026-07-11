@@ -35,5 +35,5 @@ export abstract class FabricAdvancementProvider extends Object implements DataPr
     getName(): string;
     // private getOutputPath(arg0: AdvancementHolder): Path[];
     run(arg0: CachedOutput): CompletableFuture<Object>;
-    withConditions(arg0: (param0: AdvancementHolder) => void, arg1: ResourceCondition[]): (param0: AdvancementHolder) => void;
+    withConditions(arg0: (param0: AdvancementHolder) => void, ...arg1: ResourceCondition[]): (param0: AdvancementHolder) => void;
 }

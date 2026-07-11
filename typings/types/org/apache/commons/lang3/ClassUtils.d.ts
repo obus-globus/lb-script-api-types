@@ -35,7 +35,7 @@ export class ClassUtils extends Object {
     static getPackageName(paramarg0: Class<Object>): string;
     static getPackageName(paramarg0: Object, paramarg1: string): string;
     static getPackageName(paramarg0: string): string;
-    static getPublicMethod(paramarg0: Class<Object>, paramarg1: string, paramarg2: Object | null): Method;
+    static getPublicMethod(paramarg0: Class<Object>, paramarg1: string, ...paramarg2: Object | null): Method;
     static getShortCanonicalName(paramarg0: Class<Object>): string;
     static getShortCanonicalName(paramarg0: Object, paramarg1: string): string;
     static getShortCanonicalName(paramarg0: string): string;
@@ -50,16 +50,16 @@ export class ClassUtils extends Object {
     static hierarchy(paramarg0: Class<Object>, paramarg1: ClassUtils$Interfaces): Class<Object>[];
     static isAssignable(paramarg0: Class<Object>, paramarg1: Class<Object>): boolean;
     static isAssignable(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: boolean): boolean;
-    static isAssignable(paramarg0: Object | null, paramarg1: Object | null): boolean;
+    static isAssignable(paramarg0: Object | null, ...paramarg1: Object | null): boolean;
     static isAssignable(paramarg0: Object | null, paramarg1: Object | null, paramarg2: boolean): boolean;
     static isInnerClass(paramarg0: Class<Object>): boolean;
     static isPrimitiveOrWrapper(paramarg0: Class<Object>): boolean;
     static isPrimitiveWrapper(paramarg0: Class<Object>): boolean;
     static isPublic(paramarg0: Class<Object>): boolean;
     static primitiveToWrapper(paramarg0: Class<Object>): Class<Object>;
-    static primitivesToWrappers(paramarg0: Object | null): Object | null;
-    static toClass(paramarg0: (Object | null)[]): Object | null;
+    static primitivesToWrappers(...paramarg0: Object | null): Object | null;
+    static toClass(...paramarg0: (Object | null)[]): Object | null;
     static wrapperToPrimitive(paramarg0: Class<Object>): Class<Object>;
-    static wrappersToPrimitives(paramarg0: Object | null): Object | null;
+    static wrappersToPrimitives(...paramarg0: Object | null): Object | null;
     constructor()
 }

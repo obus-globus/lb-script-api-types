@@ -22,7 +22,7 @@ export abstract class ArgumentAcceptingOptionSpec<V extends unknown> extends Abs
     canConvertArgument(arg0: string): boolean;
     convert(arg0: string): V;
     defaultValues(): V[];
-    defaultsTo(arg0: V, arg1: V[]): ArgumentAcceptingOptionSpec<V>;
+    defaultsTo(arg0: V, ...arg1: V[]): ArgumentAcceptingOptionSpec<V>;
     defaultsTo(arg0: V[]): ArgumentAcceptingOptionSpec<V>;
     describedAs(arg0: string): ArgumentAcceptingOptionSpec<V>;
     detectOptionArgument(arg0: OptionParser, arg1: ArgumentList, arg2: OptionSet): void;

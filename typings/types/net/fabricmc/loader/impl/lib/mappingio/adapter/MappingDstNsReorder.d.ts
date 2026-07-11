@@ -2,7 +2,7 @@ import type { MappedElementKind } from '../../../../../../../net/fabricmc/loader
 import type { MappingVisitor } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/MappingVisitor.d.ts'
 import type { ForwardingMappingVisitor } from '../../../../../../../net/fabricmc/loader/impl/lib/mappingio/adapter/ForwardingMappingVisitor.d.ts'
 export class MappingDstNsReorder extends ForwardingMappingVisitor {
-    constructor(arg0: MappingVisitor, arg1: string[])
+    constructor(arg0: MappingVisitor, ...arg1: string[])
     constructor(arg0: MappingVisitor, arg1: string[])
     // private newDstNs: string[];
     // private nsMap: number[];

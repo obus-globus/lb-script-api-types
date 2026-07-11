@@ -18,7 +18,7 @@ export class ExpressionResolver extends Object {
     extractLogs(): string[];
     // private log(arg0: () => string): void;
     // private log(arg0: string): void;
-    // private log(arg0: string, arg1: Object[]): void;
+    // private log(arg0: string, ...arg1: Object[]): void;
     // private resolveCallExpression(arg0: Type, arg1: string, arg2: ExpressionElement[], arg3: boolean, arg4: boolean): Expression;
     resolveCallExpressionInternal(arg0: Type, arg1: string, arg2: ExpressionElement[], arg3: boolean): Expression;
     resolveExpression(arg0: Type, arg1: ExpressionElement): Expression;

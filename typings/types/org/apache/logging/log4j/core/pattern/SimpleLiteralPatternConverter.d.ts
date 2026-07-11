@@ -7,7 +7,7 @@ export abstract class SimpleLiteralPatternConverter extends LogEventPatternConve
     static CATEGORY: string;
     constructor(arg0: any)
     format(output: StringBuilder): void;
-    format(output: StringBuilder, args: Object[]): void;
+    format(output: StringBuilder, ...args: Object[]): void;
     format(ignored: Object, output: StringBuilder): void;
     format(ignored: LogEvent, output: StringBuilder): void;
     handlesThrowable(): boolean;

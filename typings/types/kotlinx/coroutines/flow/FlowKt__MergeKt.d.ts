@@ -9,6 +9,6 @@ export class FlowKt__MergeKt extends Object {
     static getDEFAULT_CONCURRENCY(): number;
     static mapLatest(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object) => Object): Flow<Object>;
     static merge(paramarg0: Flow<Object>[]): Flow<Object>;
-    static merge(paramarg0: Object | null): Flow<Object>;
+    static merge(...paramarg0: Object | null): Flow<Object>;
     static transformLatest(paramarg0: Flow<Object>, paramarg1: (param0: Object, param1: Object, param2: Object) => Object): Flow<Object>;
 }

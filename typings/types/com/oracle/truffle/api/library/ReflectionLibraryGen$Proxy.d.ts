@@ -9,5 +9,5 @@ export class ReflectionLibraryGen$Proxy extends ReflectionLibrary {
     constructor(lib: ReflectionLibrary)
     // private lib: ReflectionLibrary;
     accepts(receiver_: Object): boolean;
-    send(receiver_: Object, message: Message, args: Object[]): Object;
+    send(receiver_: Object, message: Message, ...args: Object[]): Object;
 }

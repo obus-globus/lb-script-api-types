@@ -9,6 +9,6 @@ import type { StructureSet } from '../../../../../../net/minecraft/world/level/l
 export class FlatLevelGeneratorPresets$Bootstrap extends Object {
     private constructor(context: BootstrapContext<FlatLevelGeneratorPreset>)
     // private context: BootstrapContext<FlatLevelGeneratorPreset>;
-    // private register(key: ResourceKey<FlatLevelGeneratorPreset>, icon: ItemLike, biome: ResourceKey<Biome>, structures: ResourceKey<StructureSet>[], decoration: boolean, addLakes: boolean, layers: FlatLayerInfo[]): void;
+    // private register(key: ResourceKey<FlatLevelGeneratorPreset>, icon: ItemLike, biome: ResourceKey<Biome>, structures: ResourceKey<StructureSet>[], decoration: boolean, addLakes: boolean, ...layers: FlatLayerInfo[]): void;
     run(): void;
 }

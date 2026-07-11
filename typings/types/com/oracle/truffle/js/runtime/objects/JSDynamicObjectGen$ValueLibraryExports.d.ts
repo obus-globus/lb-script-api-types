@@ -3,7 +3,7 @@ import type { ValueLibrary } from '../../../../../../com/oracle/truffle/js/api/V
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSDynamicObjectGen$ValueLibraryExports extends LibraryExport<ValueLibrary> {
-    static register(paramreceiverClass: Class<Object>, paramlibs: Object | null): void;
+    static register(paramreceiverClass: Class<Object>, ...paramlibs: Object | null): void;
     private constructor()
     createCached(receiver: Object): ValueLibrary;
     createUncached(receiver: Object): ValueLibrary;

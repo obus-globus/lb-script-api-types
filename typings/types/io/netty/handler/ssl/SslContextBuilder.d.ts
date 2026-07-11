@@ -24,8 +24,8 @@ export class SslContextBuilder extends Object {
     static forServer(paramarg0: InputStream, paramarg1: InputStream, paramarg2: string): SslContextBuilder;
     static forServer(paramarg0: PrivateKey, paramarg1: X509Certificate[]): SslContextBuilder;
     static forServer(paramarg0: PrivateKey, paramarg1: string, paramarg2: X509Certificate[]): SslContextBuilder;
-    static forServer(paramarg0: PrivateKey, paramarg1: string, paramarg2: (Object | null)[]): SslContextBuilder;
-    static forServer(paramarg0: PrivateKey, paramarg1: (Object | null)[]): SslContextBuilder;
+    static forServer(paramarg0: PrivateKey, paramarg1: string, ...paramarg2: (Object | null)[]): SslContextBuilder;
+    static forServer(paramarg0: PrivateKey, ...paramarg1: (Object | null)[]): SslContextBuilder;
     static forServer(paramarg0: KeyManager): SslContextBuilder;
     static forServer(paramarg0: KeyManagerFactory): SslContextBuilder;
     private constructor(arg0: boolean)
@@ -54,6 +54,7 @@ export class SslContextBuilder extends Object {
     // private trustCertCollection: X509Certificate[];
     // private trustManagerFactory: TrustManagerFactory;
     addCredential(arg0: OpenSslCredential): SslContextBuilder;
+    addCredentials(...arg0: OpenSslCredential[]): SslContextBuilder;
     addCredentials(arg0: OpenSslCredential[]): SslContextBuilder;
     applicationProtocolConfig(arg0: ApplicationProtocolConfig): SslContextBuilder;
     build(): SslContext;
@@ -66,12 +67,15 @@ export class SslContextBuilder extends Object {
     keyManager(arg0: File, arg1: File, arg2: string): SslContextBuilder;
     keyManager(arg0: InputStream, arg1: InputStream): SslContextBuilder;
     keyManager(arg0: InputStream, arg1: InputStream, arg2: string): SslContextBuilder;
-    keyManager(arg0: PrivateKey, arg1: X509Certificate[]): SslContextBuilder;
+    keyManager(arg0: PrivateKey, ...arg1: X509Certificate[]): SslContextBuilder;
+    keyManager(arg0: PrivateKey, arg1: string, ...arg2: X509Certificate[]): SslContextBuilder;
     keyManager(arg0: PrivateKey, arg1: string, arg2: X509Certificate[]): SslContextBuilder;
+    keyManager(arg0: PrivateKey, arg1: X509Certificate[]): SslContextBuilder;
     keyManager(arg0: KeyManager): SslContextBuilder;
     keyManager(arg0: KeyManagerFactory): SslContextBuilder;
     keyStoreType(arg0: string): SslContextBuilder;
     option<T extends unknown>(arg0: SslContextOption<T>, arg1: T): SslContextBuilder;
+    protocols(...arg0: string[]): SslContextBuilder;
     protocols(arg0: string[]): SslContextBuilder;
     secureRandom(arg0: SecureRandom): SslContextBuilder;
     serverName(arg0: SNIServerName): SslContextBuilder;
@@ -84,5 +88,6 @@ export class SslContextBuilder extends Object {
     trustManager(arg0: InputStream): SslContextBuilder;
     trustManager(arg0: TrustManager): SslContextBuilder;
     trustManager(arg0: TrustManagerFactory): SslContextBuilder;
+    trustManager(...arg0: X509Certificate[]): SslContextBuilder;
     trustManager(arg0: X509Certificate[]): SslContextBuilder;
 }

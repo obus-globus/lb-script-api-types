@@ -10,7 +10,7 @@ export class ObjectIterators extends Object {
     static any(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): boolean;
     static asObjectIterator(paramarg0: Iterator<Object>): ObjectIterator<Object>;
     static asObjectIterator(paramarg0: ListIterator<Object>): ObjectListIterator<Object>;
-    static concat(paramarg0: Object | null): ObjectIterator<Object>;
+    static concat(...paramarg0: Object | null): ObjectIterator<Object>;
     static concat(paramarg0: Object | null, paramarg1: number, paramarg2: number): ObjectIterator<Object>;
     static emptyIterator(): ObjectIterator<Object>;
     static indexOf(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): number;

@@ -24,7 +24,7 @@ export abstract class ForkJoinTask<V extends unknown> extends Object implements 
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: Object | null): void;
     constructor()
     // private aux: ForkJoinTask$Aux;
     // private status: number;

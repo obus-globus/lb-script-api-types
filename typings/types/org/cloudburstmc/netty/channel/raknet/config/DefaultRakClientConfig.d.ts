@@ -21,7 +21,7 @@ export class DefaultRakClientConfig extends DefaultRakSessionConfig {
     getMtuSizes(): number[];
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getServerGuid(): number;
     getSessionTimeout(): number;
     getTimeBetweenSendConnectionAttemptsMS(): number;

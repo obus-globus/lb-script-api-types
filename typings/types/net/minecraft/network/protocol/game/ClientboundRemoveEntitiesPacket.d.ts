@@ -12,7 +12,7 @@ export class ClientboundRemoveEntitiesPacket extends Object implements Clientbou
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundRemoveEntitiesPacket>;
     static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
     constructor(ids: (Object | null)[])
-    constructor(ids: number[])
+    constructor(...ids: number[])
     readonly entityIds: (Object | null)[];
     // private liquid_bounce$containsCrystal: boolean;
     getEntityIds(): (Object | null)[];

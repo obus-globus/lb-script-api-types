@@ -33,7 +33,7 @@ export class SequencesKt___SequencesJvmKt extends SequencesKt__SequencesKt {
     static minWith(paramarg0: Sequence<Object>, paramarg1: (param0: Object) => boolean): Object;
     static sequence(paramarg0: (param0: Object, param1: Object) => Object): Sequence<Object>;
     static sequenceOf(paramarg0: Object | null): Sequence<Object>;
-    static sequenceOf(paramarg0: Object | null): Sequence<Object>;
+    static sequenceOf(...paramarg0: Object | null): Sequence<Object>;
     static shuffled(paramarg0: Sequence<Object>): Sequence<Object>;
     static shuffled(paramarg0: Sequence<Object>, paramarg1: Random): Sequence<Object>;
     static toSortedSet(paramarg0: Sequence<Object>): (Object | null)[];

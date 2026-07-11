@@ -13,13 +13,13 @@ export class Shape extends Object {
     static parseShapes(paramarg0: string): Pair<DataType, Shape>[];
     static update(paramarg0: Shape, paramarg1: number, paramarg2: number): Shape;
     constructor(arg0: Pair<number, LayoutType>[])
-    constructor(arg0: number[])
+    constructor(...arg0: number[])
     constructor(arg0: number[], arg1: LayoutType[])
     constructor(arg0: number[], arg1: string)
     constructor(arg0: number[])
     readonly layout: LayoutType[];
     readonly shape: number[];
-    add(arg0: number[]): Shape;
+    add(...arg0: number[]): Shape;
     addAll(arg0: Shape): Shape;
     dimension(): number;
     equals(arg0: Object | null): boolean;
@@ -41,7 +41,7 @@ export class Shape extends Object {
     isScalar(): boolean;
     map(arg0: (param0: Pair<number, LayoutType>) => Pair<number, LayoutType>): Shape;
     size(): number;
-    size(arg0: number[]): number;
+    size(...arg0: number[]): number;
     slice(arg0: number): Shape;
     slice(arg0: number, arg1: number): Shape;
     stream(): Stream<Pair<number, LayoutType>>;

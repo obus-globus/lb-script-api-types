@@ -7,13 +7,13 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export interface ChannelPromise extends ChannelFuture, Promise<void>, Object{
     addListener(arg0: GenericFutureListener<Future<void>>): ChannelPromise;
-    addListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
+    addListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
     await(): ChannelPromise;
     awaitUninterruptibly(): ChannelPromise;
     channel(): Channel;
     isVoid(): boolean;
     removeListener(arg0: GenericFutureListener<Future<void>>): ChannelPromise;
-    removeListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
+    removeListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelPromise;
     setFailure(arg0: Throwable): ChannelPromise;
     setSuccess(): ChannelPromise;
     setSuccess(arg0: void): ChannelPromise;

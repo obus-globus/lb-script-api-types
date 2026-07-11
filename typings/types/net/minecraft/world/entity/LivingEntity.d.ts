@@ -291,7 +291,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     die(source: DamageSource): void;
     // private dismountVehicle(vehicle: Entity): void;
     doAutoAttackOnTouch(entity: LivingEntity): void;
-    doHurtEquipment(damageSource: DamageSource, damage: number, slots: EquipmentSlot[]): void;
+    doHurtEquipment(damageSource: DamageSource, damage: number, ...slots: EquipmentSlot[]): void;
     doHurtTarget(level: ServerLevel, target: Entity): boolean;
     doPush(entity: Entity): void;
     doesEmitEquipEvent(slot: EquipmentSlot): boolean;
@@ -460,7 +460,7 @@ export abstract class LivingEntity extends Entity implements FeetBlockCachingEnt
     isInvertedHealAndHarm(): boolean;
     isInvulnerableTo(level: ServerLevel, source: DamageSource): boolean;
     isJumping(): boolean;
-    isLookingAtMe(target: LivingEntity, coneSize: number, adjustForDistance: boolean, seeThroughTransparentBlocks: boolean, gazeHeights: number[]): boolean;
+    isLookingAtMe(target: LivingEntity, coneSize: number, adjustForDistance: boolean, seeThroughTransparentBlocks: boolean, ...gazeHeights: number[]): boolean;
     isPickable(): boolean;
     isPushable(): boolean;
     isSensitiveToWater(): boolean;

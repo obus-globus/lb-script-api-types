@@ -6,7 +6,7 @@ export interface TypeDescriptor$OfMethod<F extends TypeDescriptor$OfField<F>, M 
     changeReturnType(arg0: F): M;
     descriptorString(): string;
     dropParameterTypes(arg0: number, arg1: number): M;
-    insertParameterTypes(arg0: number, arg1: F[]): M;
+    insertParameterTypes(arg0: number, ...arg1: F[]): M;
     parameterArray(): F[];
     parameterCount(): number;
     parameterList(): F[];

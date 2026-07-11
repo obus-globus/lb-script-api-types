@@ -23,7 +23,7 @@ import type { ScoreHolder } from '../../../../../../../../net/minecraft/world/sc
  * A special {@link FakePlayer} that moves following a recorded path
  * of {@link PosPoseSnapshot}.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/MovingFakePlayer.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/MovingFakePlayer.kt:29}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/MovingFakePlayer.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/commands/ingame/fakeplayer/MovingFakePlayer.kt:29}
  */
 export class MovingFakePlayer extends FakePlayer {
     static ARMOR_SLOT_OFFSET: number;
@@ -124,7 +124,7 @@ export class MovingFakePlayer extends FakePlayer {
     static getViewScale(): number;
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
-    constructor(snapshots: PosPoseSnapshot[], level: ClientLevel, gameProfile: GameProfile, onRemoval: ((param0: FakePlayer) => void) | null)
+    constructor(...snapshots: PosPoseSnapshot[], level: ClientLevel, gameProfile: GameProfile, onRemoval: ((param0: FakePlayer) => void) | null)
     // private index: number;
     // private snapshots: PosPoseSnapshot[];
     tick(): void;

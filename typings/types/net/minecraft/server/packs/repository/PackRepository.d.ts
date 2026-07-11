@@ -7,7 +7,7 @@ import type { RepositorySource } from '../../../../../net/minecraft/server/packs
 import type { FeatureFlagSet } from '../../../../../net/minecraft/world/flag/FeatureFlagSet.d.ts'
 export class PackRepository extends Object {
     static displayPackList(parampacks: Pack[]): string;
-    constructor(sources: (param0: (param0: Pack) => void) => void[])
+    constructor(...sources: (param0: (param0: Pack) => void) => void[])
     // private available: { [key: string]: Pack };
     readonly selected: Pack[];
     sources: (param0: (param0: Pack) => void) => void[];

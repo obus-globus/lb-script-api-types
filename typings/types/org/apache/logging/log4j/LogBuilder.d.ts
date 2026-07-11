@@ -20,8 +20,8 @@ export interface LogBuilder extends Object {
     log(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     log(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     log(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    log(message: string, params: Object[]): void;
-    log(message: string, params: () => Object | null[]): void;
+    log(message: string, ...params: Object[]): void;
+    log(message: string, ...params: () => Object | null[]): void;
     log(message: Message): void;
     log(messageSupplier: () => Message): void;
     logAndGet(messageSupplier: () => Message): Message;

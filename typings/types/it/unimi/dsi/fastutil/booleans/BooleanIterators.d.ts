@@ -12,7 +12,7 @@ export class BooleanIterators extends Object {
     static any(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => boolean): boolean;
     static asBooleanIterator(paramarg0: Iterator<Object>): BooleanIterator;
     static asBooleanIterator(paramarg0: ListIterator<Object>): BooleanListIterator;
-    static concat(paramarg0: (Object | null)[]): BooleanIterator;
+    static concat(...paramarg0: (Object | null)[]): BooleanIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): BooleanIterator;
     static indexOf(paramarg0: BooleanIterator, paramarg1: (param0: boolean) => boolean): number;
     static pour(paramarg0: BooleanIterator, paramarg1: (Object | null)[]): number;

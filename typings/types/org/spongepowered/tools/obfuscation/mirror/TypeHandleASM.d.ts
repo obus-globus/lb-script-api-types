@@ -29,7 +29,7 @@ export class TypeHandleASM extends TypeHandle {
     findMethod(arg0: string, arg1: string, arg2: boolean): MethodHandle;
     getAnnotation(arg0: Class<Annotation>): IAnnotationHandle;
     getEnclosedElements(): Element[];
-    getEnclosedElements<T extends Element>(arg0: ElementKind[]): T[];
+    getEnclosedElements<T extends Element>(...arg0: ElementKind[]): T[];
     getInterfaces(): TypeHandle[];
     getMethods(): MethodHandle[];
     getSuperclass(): TypeHandle;

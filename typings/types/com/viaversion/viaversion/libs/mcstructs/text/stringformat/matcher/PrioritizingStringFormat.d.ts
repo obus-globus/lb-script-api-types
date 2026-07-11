@@ -13,7 +13,7 @@ export class PrioritizingStringFormat extends StringFormat {
     static vanilla(paramarg0: boolean): StringFormat;
     static vanilla(paramarg0: string): StringFormat;
     static vanilla(paramarg0: string, paramarg1: boolean): StringFormat;
-    constructor(arg0: StringFormat[])
+    constructor(...arg0: StringFormat[])
     // private matchers: StringFormat[];
     canRead(arg0: TextStringReader): boolean;
     canWrite(arg0: TextFormatting): boolean;

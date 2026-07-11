@@ -469,7 +469,7 @@ export class Strings extends Object {
     static compareTo(parama: TruffleString, paramb: TruffleString): number;
     static concat(paramnode: TruffleString$ConcatNode, params1: TruffleString, params2: TruffleString): TruffleString;
     static concat(params1: TruffleString, params2: TruffleString): TruffleString;
-    static concatAll(params: TruffleString, paramconcat: (Object | null)[]): TruffleString;
+    static concatAll(params: TruffleString, ...paramconcat: (Object | null)[]): TruffleString;
     static constant(params: string): TruffleString;
     static contains(params: TruffleString, paramc: string): boolean;
     static convertJavaStringArray(paramarray: (Object | null)[]): (Object | null)[];
@@ -478,7 +478,7 @@ export class Strings extends Object {
     static equals(paramnode: TruffleString$EqualNode, params1: TruffleString, params2: TruffleString): boolean;
     static equals(params1: TruffleString, params2: TruffleString): boolean;
     static flatten(parammaterializeNode: TruffleString$MaterializeNode, paramvalue: TruffleString): TruffleString;
-    static format(paramformatString: string, paramargs: (Object | null)[]): TruffleString;
+    static format(paramformatString: string, ...paramargs: (Object | null)[]): TruffleString;
     static fromBigInt(parambi: BigInt): TruffleString;
     static fromBigInt(parambi: BigInt, paramradix: number): TruffleString;
     static fromBoolean(paramb: boolean): TruffleString;
@@ -490,7 +490,7 @@ export class Strings extends Object {
     static fromInt(paramintValue: number): TruffleString;
     static fromJavaString(paramnode: TruffleString$FromJavaStringNode, paramstr: string): TruffleString;
     static fromJavaString(paramstr: string): TruffleString;
-    static fromJavaStringArray(paramstrings: (Object | null)[]): (Object | null)[];
+    static fromJavaStringArray(...paramstrings: (Object | null)[]): (Object | null)[];
     static fromLong(paramnode: TruffleString$FromLongNode, paramlongValue: number): TruffleString;
     static fromLong(paramlongValue: number): TruffleString;
     static fromNumber(paramnumber: Number): TruffleString;
@@ -505,7 +505,7 @@ export class Strings extends Object {
     static indexOf(params1: TruffleString, params2: TruffleString, paramfromIndex: number): number;
     static indexOf(params1: TruffleString, params2: TruffleString, paramfromIndex: number, paramtoIndex: number): number;
     static indexOf(params: TruffleString, paramcodepoint: number, paramfromIndex: number): number;
-    static indexOfAny(paramnode: TruffleString$CharIndexOfAnyCharUTF16Node, params: TruffleString, paramchars: string[]): number;
+    static indexOfAny(paramnode: TruffleString$CharIndexOfAnyCharUTF16Node, params: TruffleString, ...paramchars: string[]): number;
     static interopAsString(paramstringInterop: InteropLibrary, paramkey: Object): string;
     static interopAsString(paramkey: Object): string;
     static interopAsTruffleString(paramkey: Object): TruffleString;

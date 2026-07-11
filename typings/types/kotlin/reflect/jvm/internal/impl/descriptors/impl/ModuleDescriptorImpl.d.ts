@@ -46,6 +46,7 @@ export class ModuleDescriptorImpl extends DeclarationDescriptorImpl implements M
     initialize(arg0: PackageFragmentProvider): void;
     // private isInitialized(): boolean;
     isValid(): boolean;
+    setDependencies(...arg0: ModuleDescriptorImpl[]): void;
     setDependencies(arg0: ModuleDescriptorImpl[]): void;
     setDependencies(arg0: ModuleDescriptorImpl[], arg1: ModuleDescriptorImpl[]): void;
     setDependencies(arg0: ModuleDependencies): void;

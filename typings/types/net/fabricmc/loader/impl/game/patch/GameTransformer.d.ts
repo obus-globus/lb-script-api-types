@@ -5,7 +5,7 @@ import type { FabricLauncher } from '../../../../../../net/fabricmc/loader/impl/
 import type { SimpleClassPath } from '../../../../../../net/fabricmc/loader/impl/util/SimpleClassPath.d.ts'
 import type { ClassNode } from '../../../../../../org/objectweb/asm/tree/ClassNode.d.ts'
 export class GameTransformer extends Object {
-    constructor(arg0: GamePatch[])
+    constructor(...arg0: GamePatch[])
     // private entrypointsLocated: boolean;
     // private patchedClasses: { [key: string]: number[] };
     // private patches: GamePatch[];

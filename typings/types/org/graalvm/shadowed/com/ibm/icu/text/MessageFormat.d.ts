@@ -19,7 +19,7 @@ import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/
 import type { ULocale$Type } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale$Type.d.ts'
 export class MessageFormat extends UFormat {
     static autoQuoteApostrophe(parampattern: string): string;
-    static format(parampattern: string, paramarguments: (Object | null)[]): string;
+    static format(parampattern: string, ...paramarguments: (Object | null)[]): string;
     static format(parampattern: string, paramarguments: { [key: string]: Object }): string;
     constructor(pattern: string)
     constructor(pattern: string, locale: Locale)

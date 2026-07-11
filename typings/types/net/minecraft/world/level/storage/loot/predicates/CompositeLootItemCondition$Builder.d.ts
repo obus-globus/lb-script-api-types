@@ -5,7 +5,7 @@ import type { AnyOfCondition$Builder } from '../../../../../../../net/minecraft/
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 import type { LootItemCondition$Builder } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder.d.ts'
 export abstract class CompositeLootItemCondition$Builder extends Object implements LootItemCondition$Builder {
-    constructor(terms: () => LootItemCondition[])
+    constructor(...terms: () => LootItemCondition[])
     // private terms: ImmutableList$Builder<LootItemCondition>;
     addTerm(term: () => LootItemCondition): void;
     and(other: () => LootItemCondition): AllOfCondition$Builder;

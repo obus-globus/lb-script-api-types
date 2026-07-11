@@ -37,14 +37,14 @@ export abstract class Accessor$LanguageSupport extends Accessor$Support {
     addStackFrameInfo(callNode: Node, root: RootCallTarget, e: Throwable, frame: Frame): void;
     areOptionsCompatible(language: TruffleLanguage<Object>, firstContextOptions: OptionValues, newContextOptions: OptionValues): boolean;
     closeEngineLoggers(loggers: Object): void;
-    configureLoggers(polyglotContext: Object, logLevels: { [key: string]: Level }, loggers: Object[]): void;
+    configureLoggers(polyglotContext: Object, logLevels: { [key: string]: Level }, ...loggers: Object[]): void;
     createEngineLoggers(spi: Object): Object;
     createEnv(polyglotLanguageContext: Object, language: TruffleLanguage<Object>, stdOut: OutputStream, stdErr: OutputStream, stdIn: InputStream, config: { [key: string]: Object }, options: OptionValues, applicationArguments: string[]): TruffleLanguage$Env;
     createEnvContext(localEnv: TruffleLanguage$Env, servicesCollector: Object[]): Object;
     createFileSystemContext(engineObject: Object, fileSystem: FileSystem): Object;
     createInstrument(polyglotInstrument: Object, id: string, name: string, version: string): InstrumentInfo;
     createInternalResourceEnv(resource: InternalResource, contextPreinitializationCheck: () => boolean): InternalResource$Env;
-    createOptionDescriptorsUnion(descriptors: OptionDescriptor[][]): OptionDescriptor[];
+    createOptionDescriptorsUnion(...descriptors: OptionDescriptor[][]): OptionDescriptor[];
     createTruffleContext(impl: Object, parentContext: TruffleContext): TruffleContext;
     describeOptions(language: TruffleLanguage<Object>, requiredGroup: string): OptionDescriptor[];
     describeSourceOptions(language: TruffleLanguage<Object>, requiredGroup: string): OptionDescriptor[];
@@ -94,7 +94,7 @@ export abstract class Accessor$LanguageSupport extends Accessor$Support {
     isTruffleStackTrace(t: Throwable): boolean;
     isVisible(env: TruffleLanguage$Env, value: Object): boolean;
     notifyTLActionBlocked(action: ThreadLocalAction, access: ThreadLocalAction$Access, blocked: boolean): void;
-    parse(env: TruffleLanguage$Env, code: Source, optionValues: OptionValues, context: Node, argumentNames: string[]): CallTarget;
+    parse(env: TruffleLanguage$Env, code: Source, optionValues: OptionValues, context: Node, ...argumentNames: string[]): CallTarget;
     parseInline(env: TruffleLanguage$Env, code: Source, optionValues: OptionValues, context: Node, frame: MaterializedFrame): ExecutableNode;
     patchEnvContext(env: TruffleLanguage$Env, stdOut: OutputStream, stdErr: OutputStream, stdIn: InputStream, config: { [key: string]: Object }, options: OptionValues, applicationArguments: string[]): TruffleLanguage$Env;
     performTLAction(action: ThreadLocalAction, access: ThreadLocalAction$Access): void;

@@ -3,7 +3,7 @@ import type { Modifier as Modifier_2 } from '../../../../javax/lang/model/elemen
 import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export interface RequiredModifiers extends Annotation, Object{
-    constructor(modifier: Modifier[], value: Modifier_2[])
+    constructor(modifier: Modifier[], ...value: Modifier_2[])
     /*not mapped: */ modifier(): Modifier[];
     /*not mapped: */ value(): Modifier_2[];
 }

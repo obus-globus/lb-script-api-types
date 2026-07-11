@@ -15,7 +15,7 @@ export class SignatureEnhancementBuilder$ClassEnhancementBuilder$FunctionEnhance
     // private returnValueStatus: ReturnValueStatus;
     build(): Pair<string, PredefinedFunctionEnhancementInfo>;
     mustUseReturnValue(): void;
-    parameter(arg0: string, arg1: JavaTypeQualifiers[]): void;
-    returns(arg0: string, arg1: JavaTypeQualifiers[]): void;
+    parameter(arg0: string, ...arg1: JavaTypeQualifiers[]): void;
+    returns(arg0: string, ...arg1: JavaTypeQualifiers[]): void;
     returns(arg0: JvmPrimitiveType): void;
 }

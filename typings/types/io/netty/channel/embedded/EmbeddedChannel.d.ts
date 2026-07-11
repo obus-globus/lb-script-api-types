@@ -20,16 +20,16 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class EmbeddedChannel extends AbstractChannel {
     static builder(): EmbeddedChannel$Builder;
     constructor()
-    constructor(arg0: Channel, arg1: ChannelId, arg2: boolean, arg3: boolean, arg4: ChannelHandler[])
+    constructor(arg0: Channel, arg1: ChannelId, arg2: boolean, arg3: boolean, ...arg4: ChannelHandler[])
     constructor(arg0: ChannelId)
-    constructor(arg0: ChannelId, arg1: ChannelHandler[])
-    constructor(arg0: ChannelId, arg1: boolean, arg2: ChannelConfig, arg3: ChannelHandler[])
-    constructor(arg0: ChannelId, arg1: boolean, arg2: ChannelHandler[])
-    constructor(arg0: ChannelId, arg1: boolean, arg2: boolean, arg3: ChannelHandler[])
+    constructor(arg0: ChannelId, ...arg1: ChannelHandler[])
+    constructor(arg0: ChannelId, arg1: boolean, arg2: ChannelConfig, ...arg3: ChannelHandler[])
+    constructor(arg0: ChannelId, arg1: boolean, ...arg2: ChannelHandler[])
+    constructor(arg0: ChannelId, arg1: boolean, arg2: boolean, ...arg3: ChannelHandler[])
     constructor(arg0: EmbeddedChannel$Builder)
-    constructor(arg0: ChannelHandler[])
-    constructor(arg0: boolean, arg1: ChannelHandler[])
-    constructor(arg0: boolean, arg1: boolean, arg2: ChannelHandler[])
+    constructor(...arg0: ChannelHandler[])
+    constructor(arg0: boolean, ...arg1: ChannelHandler[])
+    constructor(arg0: boolean, arg1: boolean, ...arg2: ChannelHandler[])
     // private cancelRemainingScheduledTasks: boolean;
     // private config: ChannelConfig;
     // private executingStackCnt: number;
@@ -103,17 +103,17 @@ export class EmbeddedChannel extends AbstractChannel {
     runPendingTasks(): void;
     runScheduledPendingTasks(): number;
     // private setup(arg0: boolean, arg1: ChannelHandler): void;
-    // private setup(arg0: boolean, arg1: ChannelHandler[]): void;
+    // private setup(arg0: boolean, ...arg1: ChannelHandler[]): void;
     unfreezeTime(): void;
     unsafe(): Channel$Unsafe;
     write(arg0: Object): ChannelFuture;
     write(arg0: Object, arg1: ChannelPromise): ChannelFuture;
     writeAndFlush(arg0: Object): ChannelFuture;
     writeAndFlush(arg0: Object, arg1: ChannelPromise): ChannelFuture;
-    writeInbound(arg0: Object[]): boolean;
+    writeInbound(...arg0: Object[]): boolean;
     writeOneInbound(arg0: Object): ChannelFuture;
     writeOneInbound(arg0: Object, arg1: ChannelPromise): ChannelFuture;
     writeOneOutbound(arg0: Object): ChannelFuture;
     writeOneOutbound(arg0: Object, arg1: ChannelPromise): ChannelFuture;
-    writeOutbound(arg0: Object[]): boolean;
+    writeOutbound(...arg0: Object[]): boolean;
 }

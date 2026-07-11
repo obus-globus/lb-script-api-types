@@ -4,5 +4,5 @@ export class MacFileUtils extends FileUtils {
     static getInstance(): FileUtils;
     constructor()
     hasTrash(): boolean;
-    moveToTrash(arg0: File[]): void;
+    moveToTrash(...arg0: File[]): void;
 }

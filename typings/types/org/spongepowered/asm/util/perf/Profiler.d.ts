@@ -13,8 +13,8 @@ export class Profiler extends Object {
     // private phases: string[];
     readonly sections: { [key: string]: Profiler$Section };
     // private stack: Profiler$Section[];
-    begin(arg0: string[]): Profiler$Section;
-    begin(arg0: number, arg1: string[]): Profiler$Section;
+    begin(...arg0: string[]): Profiler$Section;
+    begin(arg0: number, ...arg1: string[]): Profiler$Section;
     begin(arg0: number, arg1: string): Profiler$Section;
     begin(arg0: string): Profiler$Section;
     end(arg0: Profiler$Section): void;

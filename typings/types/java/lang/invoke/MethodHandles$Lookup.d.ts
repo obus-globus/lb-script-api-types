@@ -36,8 +36,8 @@ export class MethodHandles$Lookup extends Object {
     // private checkSpecialCaller(arg0: Class<Object>, arg1: Class<Object>): void;
     checkSymbolicClass(arg0: Class<Object>): void;
     defineClass(arg0: number[]): Class<Object>;
-    defineHiddenClass(arg0: number[], arg1: boolean, arg2: MethodHandles$Lookup$ClassOption[]): MethodHandles$Lookup;
-    defineHiddenClassWithClassData(arg0: number[], arg1: Object, arg2: boolean, arg3: MethodHandles$Lookup$ClassOption[]): MethodHandles$Lookup;
+    defineHiddenClass(arg0: number[], arg1: boolean, ...arg2: MethodHandles$Lookup$ClassOption[]): MethodHandles$Lookup;
+    defineHiddenClassWithClassData(arg0: number[], arg1: Object, arg2: boolean, ...arg3: MethodHandles$Lookup$ClassOption[]): MethodHandles$Lookup;
     dropLookupMode(arg0: number): MethodHandles$Lookup;
     ensureInitialized<T extends unknown>(arg0: Class<T>): Class<T>;
     findBoundCallerLookup(arg0: MemberName): MethodHandles$Lookup;

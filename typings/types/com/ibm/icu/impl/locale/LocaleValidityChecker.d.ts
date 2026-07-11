@@ -4,7 +4,7 @@ import type { LocaleValidityChecker$Where } from '../../../../../com/ibm/icu/imp
 import type { ULocale } from '../../../../../com/ibm/icu/util/ULocale.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LocaleValidityChecker extends Object {
-    constructor(arg0: ValidIdentifiers$Datasubtype[])
+    constructor(...arg0: ValidIdentifiers$Datasubtype[])
     constructor(arg0: ValidIdentifiers$Datasubtype[])
     // private allowsDeprecated: boolean;
     readonly datasubtypes: ValidIdentifiers$Datasubtype[];

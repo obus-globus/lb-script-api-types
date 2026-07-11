@@ -22,14 +22,14 @@ export class MapsKt___MapsJvmKt extends MapsKt__MapsKt {
     static getOrPut(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: () => Object | null): Object | null;
     static getOrPutIfNullImpl(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: Object | null): Object | null;
     static getValue(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null): Object | null;
-    static hashMapOf(paramarg0: Object | null): Map<Object | null, Object | null>;
-    static linkedMapOf(paramarg0: Object | null): Map<Object | null, Object | null>;
+    static hashMapOf(...paramarg0: Object | null): Map<Object | null, Object | null>;
+    static linkedMapOf(...paramarg0: Object | null): Map<Object | null, Object | null>;
     static mapCapacity(paramarg0: number): number;
     static mapEntryOf(paramarg0: Object | null, paramarg1: Object | null): Map$Entry<Object, Object>;
     static mapKeys(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => Object | null): Map<Object | null, Object | null>;
     static mapKeysTo(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: (param0: Object) => Object | null): Object | null;
     static mapOf(paramarg0: Pair<Object, Object>): Map<Object | null, Object | null>;
-    static mapOf(paramarg0: Object | null): Map<Object | null, Object | null>;
+    static mapOf(...paramarg0: Object | null): Map<Object | null, Object | null>;
     static mapValues(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => Object | null): Map<Object | null, Object | null>;
     static mapValuesTo(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: (param0: Object) => Object | null): Object | null;
     static minBy(paramarg0: Map<Object | null, Object | null>, paramarg1: (param0: Object) => Object | null): Map$Entry<Object, Object>;
@@ -38,7 +38,7 @@ export class MapsKt___MapsJvmKt extends MapsKt__MapsKt {
     static minus(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null): Map<Object | null, Object | null>;
     static minus(paramarg0: Map<Object | null, Object | null>, paramarg1: (Object | null)[]): Map<Object | null, Object | null>;
     static minus(paramarg0: Map<Object | null, Object | null>, paramarg1: Sequence<Object>): Map<Object | null, Object | null>;
-    static mutableMapOf(paramarg0: Object | null): Map<Object | null, Object | null>;
+    static mutableMapOf(...paramarg0: Object | null): Map<Object | null, Object | null>;
     static optimizeReadOnlyMap(paramarg0: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
     static plus(paramarg0: Map<Object | null, Object | null>, paramarg1: Pair<Object, Object>[]): Map<Object | null, Object | null>;
     static plus(paramarg0: Map<Object | null, Object | null>, paramarg1: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
@@ -48,8 +48,8 @@ export class MapsKt___MapsJvmKt extends MapsKt__MapsKt {
     static putAll(paramarg0: Map<Object, Object>, paramarg1: Pair<Object, Object>[]): void;
     static putAll(paramarg0: Map<Object, Object>, paramarg1: Object | null): void;
     static putAll(paramarg0: Map<Object, Object>, paramarg1: Sequence<Pair<Object, Object>>): void;
-    static sortedMapOf(paramarg0: Object | null): Map<Object | null, Object | null>;
-    static sortedMapOf(paramarg0: (param0: Object) => boolean, paramarg1: Object | null): Map<Object | null, Object | null>;
+    static sortedMapOf(...paramarg0: Object | null): Map<Object | null, Object | null>;
+    static sortedMapOf(paramarg0: (param0: Object) => boolean, ...paramarg1: Object | null): Map<Object | null, Object | null>;
     static toMap(paramarg0: Pair<Object, Object>[], paramarg1: Object | null): Object | null;
     static toMap(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null): Object | null;
     static toMap(paramarg0: Object | null, paramarg1: Object | null): Object | null;

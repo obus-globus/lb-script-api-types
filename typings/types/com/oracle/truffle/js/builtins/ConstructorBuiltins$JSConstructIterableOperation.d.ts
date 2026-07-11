@@ -32,7 +32,7 @@ export abstract class ConstructorBuiltins$JSConstructIterableOperation extends C
     // private getIteratorValueNode: IteratorValueNode;
     // private iteratorCloseNode: IteratorCloseNode;
     // private iteratorStepNode: IteratorStepNode;
-    call(target: Object, function_: Object, userArguments: Object[]): Object;
+    call(target: Object, function_: Object, ...userArguments: Object[]): Object;
     getAdderFn(obj: JSDynamicObject, name: TruffleString): Object;
     getIteratorValue(iteratorResult: Object): Object;
     iteratorCloseAbrupt(iterator: Object): void;

@@ -8,8 +8,8 @@ export class Result$Error<T extends unknown> extends Object implements Result<T>
     static error(paramarg0: Throwable): Result<Object>;
     static mergeErrors(paramarg0: string, paramarg1: Result<Object>[]): Result<Object>;
     static success(paramarg0: Object | null): Result<Object>;
-    static unexpected(paramarg0: Object, paramarg1: Object | null): Result<Object>;
-    static unexpected(paramarg0: Object, paramarg1: (Object | null)[]): Result<Object>;
+    static unexpected(paramarg0: Object, ...paramarg1: Object | null): Result<Object>;
+    static unexpected(paramarg0: Object, ...paramarg1: (Object | null)[]): Result<Object>;
     constructor(arg0: CodecException, arg1: any)
     readonly error: CodecException;
     canEqual(arg0: Object): boolean;

@@ -5,9 +5,9 @@ import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { PathCondition } from '../../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/PathCondition.d.ts'
 export class IfFileName extends Object implements PathCondition {
     static EMPTY_ARRAY: (Object | null)[];
-    static copy(paramsource: (Object | null)[]): (Object | null)[];
-    static createNameCondition(paramglob: string, paramregex: string, paramnestedConditions: (Object | null)[]): IfFileName;
-    private constructor(glob: string, regex: string, nestedConditions: PathCondition[])
+    static copy(...paramsource: (Object | null)[]): (Object | null)[];
+    static createNameCondition(paramglob: string, paramregex: string, ...paramnestedConditions: (Object | null)[]): IfFileName;
+    private constructor(glob: string, regex: string, ...nestedConditions: PathCondition[])
     readonly nestedConditions: PathCondition[];
     // private pathMatcher: (param0: Path[][]) => boolean;
     readonly syntaxAndPattern: string;

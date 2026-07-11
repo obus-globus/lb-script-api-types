@@ -15,7 +15,7 @@ export class VanillaPackResourcesBuilder extends Object {
     // private rootPaths: Path[][];
     applyDevelopmentConfig(): VanillaPackResourcesBuilder;
     build(location: PackLocationInfo): VanillaPackResources;
-    exposeNamespace(namespaces: string[]): VanillaPackResourcesBuilder;
+    exposeNamespace(...namespaces: string[]): VanillaPackResourcesBuilder;
     pushAssetPath(packType: PackType, path: Path[]): VanillaPackResourcesBuilder;
     pushClasspathResources(packType: PackType, source: Class<Object>): VanillaPackResourcesBuilder;
     pushJarResources(): VanillaPackResourcesBuilder;

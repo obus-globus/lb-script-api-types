@@ -5,7 +5,7 @@ import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class ImmutableSortedMultiset$Builder<E extends unknown> extends ImmutableMultiset$Builder<E> {
     constructor(comparator: (param0: Object) => boolean)
     add(element: E): ImmutableSortedMultiset$Builder<E>;
-    add(elements: E[]): ImmutableSortedMultiset$Builder<E>;
+    add(...elements: E[]): ImmutableSortedMultiset$Builder<E>;
     addAll(elements: E[]): ImmutableSortedMultiset$Builder<E>;
     addAll(elements: Iterator<E>): ImmutableSortedMultiset$Builder<E>;
     addCopies(element: E, occurrences: number): ImmutableSortedMultiset$Builder<E>;

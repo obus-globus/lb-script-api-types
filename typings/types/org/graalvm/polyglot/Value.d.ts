@@ -46,8 +46,8 @@ export class Value extends AbstractValue {
     canInstantiate(): boolean;
     canInvokeMember(identifier: string): boolean;
     equals(obj: Object | null): boolean;
-    execute(arguments: Object[]): Value;
-    executeVoid(arguments: Object[]): void;
+    execute(...arguments: Object[]): Value;
+    executeVoid(...arguments: Object[]): void;
     fitsInBigInteger(): boolean;
     fitsInByte(): boolean;
     fitsInDouble(): boolean;
@@ -84,7 +84,7 @@ export class Value extends AbstractValue {
     hasMembers(): boolean;
     hasMetaParents(): boolean;
     hashCode(): number;
-    invokeMember(identifier: string, arguments: Object[]): Value;
+    invokeMember(identifier: string, ...arguments: Object[]): Value;
     isBoolean(): boolean;
     isBufferWritable(): boolean;
     isDate(): boolean;
@@ -102,7 +102,7 @@ export class Value extends AbstractValue {
     isString(): boolean;
     isTime(): boolean;
     isTimeZone(): boolean;
-    newInstance(arguments: Object[]): Value;
+    newInstance(...arguments: Object[]): Value;
     pin(): void;
     putHashEntry(key: Object, value: Object): void;
     putMember(identifier: string, value: Object): void;

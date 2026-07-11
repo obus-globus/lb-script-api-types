@@ -30,6 +30,7 @@ export class CycleButton$Builder<T extends unknown> extends Object {
     withSprite(spriteSupplier: (param0: CycleButton<T>, param1: T) => Identifier): CycleButton$Builder<T>;
     withTooltip(tooltipSupplier: (param0: T) => Tooltip): CycleButton$Builder<T>;
     withValues(altCondition: () => boolean, values: T[], altValues: T[]): CycleButton$Builder<T>;
+    withValues(...values: T[]): CycleButton$Builder<T>;
     withValues(values: T[]): CycleButton$Builder<T>;
     withValues(values: T[], altValues: T[]): CycleButton$Builder<T>;
     withValues(valueListSupplier: CycleButton$ValueListSupplier<T>): CycleButton$Builder<T>;

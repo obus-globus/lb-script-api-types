@@ -5,5 +5,5 @@ import type { CommandLine$IExceptionHandler } from '../../../../../../../org/apa
 import type { CommandLine$ParameterException } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$ParameterException.d.ts'
 export class CommandLine$DefaultExceptionHandler extends Object implements CommandLine$IExceptionHandler {
     constructor()
-    handleException(ex: CommandLine$ParameterException, out: PrintStream, ansi: CommandLine$Help$Ansi, args: string[]): Object[];
+    handleException(ex: CommandLine$ParameterException, out: PrintStream, ansi: CommandLine$Help$Ansi, ...args: string[]): Object[];
 }

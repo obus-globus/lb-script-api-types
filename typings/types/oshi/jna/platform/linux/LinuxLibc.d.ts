@@ -42,7 +42,7 @@ export interface LinuxLibc extends LibC, Object, CLibrary{
     setuid(arg0: number): number;
     setutxent(): void;
     statvfs(arg0: string, arg1: LibC$Statvfs): number;
-    syscall(arg0: NativeLong, arg1: Object[]): NativeLong;
+    syscall(arg0: NativeLong, ...arg1: Object[]): NativeLong;
     sysctlbyname(arg0: string, arg1: Pointer, arg2: LibCAPI$size_t$ByReference, arg3: Pointer, arg4: LibCAPI$size_t): number;
     sysctlnametomib(arg0: string, arg1: Pointer, arg2: LibCAPI$size_t$ByReference): number;
     sysinfo(arg0: LibC$Sysinfo): number;

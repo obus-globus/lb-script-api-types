@@ -5,7 +5,7 @@ import type { ActionFormBuilder } from '../../../../../net/lenni0451/mcstructs_b
 export class ActionForm extends Form {
     static DEFAULT_TRANSLATOR: (param0: string) => string;
     static builder(): ActionFormBuilder;
-    constructor(arg0: string, arg1: string, arg2: FormElement[])
+    constructor(arg0: string, arg1: string, ...arg2: FormElement[])
     readonly clickedButton: number;
     readonly elements: FormElement[];
     readonly text: string;

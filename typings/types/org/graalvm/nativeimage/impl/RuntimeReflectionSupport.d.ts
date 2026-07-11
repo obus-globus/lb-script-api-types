@@ -4,7 +4,7 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { ConfigurationCondition } from '../../../../org/graalvm/nativeimage/impl/ConfigurationCondition.d.ts'
 import type { ReflectionRegistry } from '../../../../org/graalvm/nativeimage/impl/ReflectionRegistry.d.ts'
 export interface RuntimeReflectionSupport extends Object, ReflectionRegistry{
-    register(condition: ConfigurationCondition, classes: Class<Object>[]): void;
+    register(condition: ConfigurationCondition, ...classes: Class<Object>[]): void;
     registerAllClassesQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;
     registerAllConstructorsQuery(condition: ConfigurationCondition, queriedOnly: boolean, clazz: Class<Object>): void;
     registerAllDeclaredClassesQuery(condition: ConfigurationCondition, clazz: Class<Object>): void;

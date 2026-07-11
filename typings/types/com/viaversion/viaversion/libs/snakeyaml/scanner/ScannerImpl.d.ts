@@ -39,7 +39,7 @@ export class ScannerImpl extends Object implements Scanner {
     // private checkKey(): boolean;
     // private checkPlain(): boolean;
     checkToken(arg0: Token$ID): boolean;
-    checkToken(arg0: Token$ID[]): boolean;
+    checkToken(...arg0: Token$ID[]): boolean;
     // private checkValue(): boolean;
     // private escapeChar(arg0: string): string;
     // private fetchAlias(): void;
@@ -70,7 +70,7 @@ export class ScannerImpl extends Object implements Scanner {
     // private fetchTag(): void;
     // private fetchValue(): void;
     getToken(): Token;
-    // private makeTokenList(arg0: Token[]): Token[];
+    // private makeTokenList(...arg0: Token[]): Token[];
     // private needMoreTokens(): boolean;
     // private nextPossibleSimpleKey(): number;
     peekToken(): Token;

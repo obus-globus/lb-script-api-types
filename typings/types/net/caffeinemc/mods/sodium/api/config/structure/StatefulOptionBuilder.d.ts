@@ -15,12 +15,12 @@ export interface StatefulOptionBuilder<V extends unknown> extends Object, Option
     setBinding(arg0: (param0: V) => void, arg1: () => V): StatefulOptionBuilder<V>;
     setBinding(arg0: OptionBinding<V>): StatefulOptionBuilder<V>;
     setControlHiddenWhenDisabled(arg0: boolean): StatefulOptionBuilder<V>;
-    setDefaultProvider(arg0: (param0: ConfigState) => V, arg1: Identifier[]): StatefulOptionBuilder<V>;
+    setDefaultProvider(arg0: (param0: ConfigState) => V, ...arg1: Identifier[]): StatefulOptionBuilder<V>;
     setDefaultValue(arg0: V): StatefulOptionBuilder<V>;
     setEnabled(arg0: boolean): OptionBuilder;
-    setEnabledProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): OptionBuilder;
-    setFlags(arg0: OptionFlag[]): StatefulOptionBuilder<V>;
-    setFlags(arg0: Identifier[]): StatefulOptionBuilder<V>;
+    setEnabledProvider(arg0: (param0: ConfigState) => boolean, ...arg1: Identifier[]): OptionBuilder;
+    setFlags(...arg0: OptionFlag[]): StatefulOptionBuilder<V>;
+    setFlags(...arg0: Identifier[]): StatefulOptionBuilder<V>;
     setImpact(arg0: OptionImpact): StatefulOptionBuilder<V>;
     setName(arg0: Component): StatefulOptionBuilder<V>;
     setStorageHandler(arg0: () => void): StatefulOptionBuilder<V>;

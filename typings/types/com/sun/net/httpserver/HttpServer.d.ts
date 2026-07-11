@@ -6,7 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class HttpServer extends Object {
     static create(): HttpServer;
     static create(paramarg0: InetSocketAddress, paramarg1: number): HttpServer;
-    static create(paramarg0: InetSocketAddress, paramarg1: number, paramarg2: string, paramarg3: HttpHandler, paramarg4: (Object | null)[]): HttpServer;
+    static create(paramarg0: InetSocketAddress, paramarg1: number, paramarg2: string, paramarg3: HttpHandler, ...paramarg4: (Object | null)[]): HttpServer;
     constructor()
     bind(arg0: InetSocketAddress, arg1: number): void;
     createContext(arg0: string): HttpContext;

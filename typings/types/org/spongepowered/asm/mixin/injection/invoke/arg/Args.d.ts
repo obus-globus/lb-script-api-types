@@ -4,6 +4,6 @@ export abstract class Args extends Object {
     // private values: Object[];
     get<T extends unknown>(arg0: number): T;
     set<T extends unknown>(arg0: number, arg1: T): void;
-    setAll(arg0: Object[]): void;
+    setAll(...arg0: Object[]): void;
     size(): number;
 }

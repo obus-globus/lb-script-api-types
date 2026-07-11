@@ -13,11 +13,11 @@ export class CheckModuleAdapter extends ModuleVisitor {
     // private visitEndCalled: boolean;
     // private checkVisitEndNotCalled(): void;
     visitEnd(): void;
-    visitExport(arg0: string, arg1: number, arg2: string[]): void;
+    visitExport(arg0: string, arg1: number, ...arg2: string[]): void;
     visitMainClass(arg0: string): void;
-    visitOpen(arg0: string, arg1: number, arg2: string[]): void;
+    visitOpen(arg0: string, arg1: number, ...arg2: string[]): void;
     visitPackage(arg0: string): void;
-    visitProvide(arg0: string, arg1: string[]): void;
+    visitProvide(arg0: string, ...arg1: string[]): void;
     visitRequire(arg0: string, arg1: number, arg2: string): void;
     visitUse(arg0: string): void;
 }

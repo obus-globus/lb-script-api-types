@@ -7,6 +7,6 @@ export class TypeUtils$WildcardTypeBuilder extends Object implements Builder<Wil
     // private lowerBounds: Type[];
     // private upperBounds: Type[];
     build(): WildcardType;
-    withLowerBounds(arg0: Type[]): TypeUtils$WildcardTypeBuilder;
-    withUpperBounds(arg0: Type[]): TypeUtils$WildcardTypeBuilder;
+    withLowerBounds(...arg0: Type[]): TypeUtils$WildcardTypeBuilder;
+    withUpperBounds(...arg0: Type[]): TypeUtils$WildcardTypeBuilder;
 }

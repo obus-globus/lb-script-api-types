@@ -10,7 +10,7 @@ import type { MCVersion } from '../../../../com/seedfinding/mccore/version/MCVer
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Biome extends Object {
-    static applyAll(paramarg0: (param0: number) => boolean, paramarg1: number[]): boolean;
+    static applyAll(paramarg0: (param0: number) => boolean, ...paramarg1: number[]): boolean;
     static areSimilar(paramarg0: number, paramarg1: Biome, paramarg2: MCVersion): boolean;
     static equalsOrDefault(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static isOcean(paramarg0: number): boolean;

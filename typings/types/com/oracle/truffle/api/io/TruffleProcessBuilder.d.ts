@@ -20,6 +20,7 @@ export class TruffleProcessBuilder extends Object {
     // private polyglotLanguageContext: Object;
     // private redirectErrorStream: boolean;
     clearEnvironment(clear: boolean): TruffleProcessBuilder;
+    command(...command: string[]): TruffleProcessBuilder;
     command(command: string[]): TruffleProcessBuilder;
     createRedirectToStream(stream: OutputStream): ProcessHandler$Redirect;
     directory(currentWorkingDirectory: TruffleFile): TruffleProcessBuilder;

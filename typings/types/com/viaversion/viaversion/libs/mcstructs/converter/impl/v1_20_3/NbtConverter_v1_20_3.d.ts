@@ -47,9 +47,10 @@ export class NbtConverter_v1_20_3 extends Object implements DataConverter<Tag> {
     emptyMap(): Tag;
     fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<Tag>;
+    mergeList(arg0: Tag, ...arg1: Tag[]): Result<Tag>;
     mergeList(arg0: Tag, arg1: Tag[]): Result<Tag>;
     mergeMap(arg0: Tag, arg1: Tag, arg2: Tag): Result<Tag>;
-    mergeMap(arg0: Tag, arg1: Tag[]): Result<Tag>;
+    mergeMap(arg0: Tag, ...arg1: Tag[]): Result<Tag>;
     mergeMap(arg0: Tag, arg1: Map<Tag, Tag>): Result<Tag>;
     setCurrentConsumer(arg0: (param0: string) => void): void;
     toCodec(): Codec<Tag>;

@@ -12,7 +12,7 @@ export class ValueLibraryGen extends LibraryFactory<ValueLibrary> {
     private constructor()
     createDelegate(delegateLibrary: ValueLibrary): ValueLibrary;
     createDispatchImpl(limit: number): ValueLibrary;
-    createMessageBitSet(messages: Message[]): FinalBitSet;
+    createMessageBitSet(...messages: Message[]): FinalBitSet;
     createProxy(library: ReflectionLibrary): ValueLibrary;
     createUncachedDispatch(): ValueLibrary;
     genericDispatch(originalLib: Library, receiver: Object, message: Message, args: Object[], offset: number): Object;

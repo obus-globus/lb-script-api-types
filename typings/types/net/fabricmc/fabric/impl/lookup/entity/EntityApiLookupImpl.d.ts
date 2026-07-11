@@ -25,6 +25,6 @@ export class EntityApiLookupImpl<A extends unknown, C extends unknown> extends O
     getProvider(arg0: EntityType<any>): EntityApiLookup$EntityApiProvider<A, C>;
     registerFallback(arg0: EntityApiLookup$EntityApiProvider<A, C>): void;
     registerForType<T extends Entity>(arg0: (param0: T, param1: C) => A, arg1: EntityType<T>): void;
-    registerForTypes(arg0: EntityApiLookup$EntityApiProvider<A, C>, arg1: EntityType<any>[]): void;
-    registerSelf(arg0: EntityType<any>[]): void;
+    registerForTypes(arg0: EntityApiLookup$EntityApiProvider<A, C>, ...arg1: EntityType<any>[]): void;
+    registerSelf(...arg0: EntityType<any>[]): void;
 }

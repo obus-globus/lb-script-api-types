@@ -12,7 +12,7 @@ export class DatePatternConverter extends LogEventPatternConverter implements Ar
     static newInstance(paramoptions: (Object | null)[]): DatePatternConverter;
     private constructor(options: string[])
     // private formatter: InstantFormatter;
-    format(buffer: StringBuilder, objects: Object[]): void;
+    format(buffer: StringBuilder, ...objects: Object[]): void;
     format(date: Date, buffer: StringBuilder): void;
     format(object: Object, buffer: StringBuilder): void;
     format(epochMillis: number, buffer: StringBuilder): void;

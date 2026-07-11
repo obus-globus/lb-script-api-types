@@ -4,7 +4,7 @@ export class ImmutableList$Builder<E extends unknown> extends ImmutableCollectio
     constructor()
     constructor(arg0: number)
     add(arg0: E): ImmutableList$Builder<E>;
-    add(arg0: E[]): ImmutableList$Builder<E>;
+    add(...arg0: E[]): ImmutableList$Builder<E>;
     addAll(arg0: E[]): ImmutableList$Builder<E>;
     build(): E[];
 }

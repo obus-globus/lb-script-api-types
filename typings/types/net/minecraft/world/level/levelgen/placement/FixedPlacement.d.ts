@@ -10,7 +10,7 @@ import type { PlacementModifierType } from '../../../../../../net/minecraft/worl
 export class FixedPlacement extends PlacementModifier {
     static CODEC: Codec<PlacementModifier>;
     static CODEC: MapCodec<FixedPlacement>;
-    static of(parampos: (Object | null)[]): FixedPlacement;
+    static of(...parampos: (Object | null)[]): FixedPlacement;
     private constructor(positions: BlockPos[])
     // private positions: BlockPos[];
     getPositions(context: PlacementContext, random: RandomSource, origin: BlockPos): Stream<BlockPos>;

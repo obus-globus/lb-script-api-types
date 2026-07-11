@@ -6,10 +6,10 @@ import type { Number } from '../../../../java/lang/Number.d.ts'
 export class Shorts extends ShortsMethodsForWeb {
     static BYTES: number;
     static MAX_POWER_OF_TWO: number;
-    static asList(parambackingArray: number[]): number[];
+    static asList(...parambackingArray: number[]): number[];
     static checkedCast(paramvalue: number): number;
     static compare(parama: number, paramb: number): number;
-    static concat(paramarrays: (Object | null)[]): number[];
+    static concat(...paramarrays: (Object | null)[]): number[];
     static constrainToRange(paramvalue: number, parammin: number, parammax: number): number;
     static contains(paramarray: number[], paramtarget: number): boolean;
     static ensureCapacity(paramarray: number[], paramminLength: number, parampadding: number): number[];
@@ -18,11 +18,11 @@ export class Shorts extends ShortsMethodsForWeb {
     static hashCode(paramvalue: number): number;
     static indexOf(paramarray: number[], paramtarget: number): number;
     static indexOf(paramarray: number[], paramtarget: number[]): number;
-    static join(paramseparator: string, paramarray: number[]): string;
+    static join(paramseparator: string, ...paramarray: number[]): string;
     static lastIndexOf(paramarray: number[], paramtarget: number): number;
     static lexicographicalComparator(): (param0: Object) => boolean;
-    static max(paramarray: number[]): number;
-    static min(paramarray: number[]): number;
+    static max(...paramarray: number[]): number;
+    static min(...paramarray: number[]): number;
     static reverse(paramarray: number[]): void;
     static reverse(paramarray: number[], paramfromIndex: number, paramtoIndex: number): void;
     static rotate(paramarray: number[], paramdistance: number): void;

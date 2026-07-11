@@ -39,7 +39,7 @@ export class Relation<K extends unknown, V extends unknown> extends Object imple
     remove(key: K, value: V): boolean;
     removeAll(key: K): V[];
     removeAll(key: K, toBeRemoved: V[]): boolean;
-    removeAll(keys: K[]): V[];
+    removeAll(...keys: K[]): V[];
     removeAll(toBeRemoved: K[]): V[];
     removeAll(toBeRemoved: Relation<K, V>): boolean;
     size(): number;

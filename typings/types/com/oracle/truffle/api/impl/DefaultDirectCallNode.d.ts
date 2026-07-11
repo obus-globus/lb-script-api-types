@@ -5,7 +5,7 @@ export class DefaultDirectCallNode extends DirectCallNode {
     static create(paramtarget: CallTarget): DirectCallNode;
     constructor(target: CallTarget)
     readonly inliningForced: boolean;
-    call(arguments: Object[]): Object;
+    call(...arguments: Object[]): Object;
     cloneCallTarget(): boolean;
     forceInlining(): void;
     getClonedCallTarget(): CallTarget;

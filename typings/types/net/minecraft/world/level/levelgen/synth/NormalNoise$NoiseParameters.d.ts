@@ -6,7 +6,7 @@ export class NormalNoise$NoiseParameters extends Record {
     static CODEC: Codec<Holder<NormalNoise$NoiseParameters>>;
     static DIRECT_CODEC: Codec<NormalNoise$NoiseParameters>;
     constructor(firstOctave: number, amplitudes: (Object | null)[])
-    constructor(firstOctave: number, firstAmplitude: number, amplitudes: number[])
+    constructor(firstOctave: number, firstAmplitude: number, ...amplitudes: number[])
     constructor(firstOctave: number, amplitudes: number[])
     // private amplitudes: (Object | null)[];
     // private firstOctave: number;

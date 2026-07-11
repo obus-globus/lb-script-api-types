@@ -10,7 +10,7 @@ export class HeapDump$InstanceBuilder extends Object {
     // private namesAndValues: Object[];
     // private assertType(name: string, valueType: Class<Object>): void;
     dumpInstance(): HeapDump$ObjectInstance;
-    // private dumpInstance(thiz: HeapDump, stringValueSeq: Object[]): void;
+    // private dumpInstance(thiz: HeapDump, ...stringValueSeq: Object[]): void;
     id(): HeapDump$ObjectInstance;
     put(name: string, value: HeapDump$ObjectInstance): HeapDump$InstanceBuilder;
     putBoolean(name: string, value: boolean): HeapDump$InstanceBuilder;

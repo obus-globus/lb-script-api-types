@@ -17,9 +17,9 @@ export class WeightedList<E extends unknown> extends Object {
     static nonEmptyCodec(paramelementCodec: MapCodec<Object>): Codec<WeightedList<Object>>;
     static of(): WeightedList<Object>;
     static of(paramvalue: Object | null): WeightedList<Object>;
-    static of(paramitems: Object | null): WeightedList<Object>;
+    static of(...paramitems: Object | null): WeightedList<Object>;
     static of(paramitems: Weighted<Object>[]): WeightedList<Object>;
-    static of(paramitems: Object | null): WeightedList<Object>;
+    static of(...paramitems: Object | null): WeightedList<Object>;
     static streamCodec(paramelementCodec: StreamCodec<ByteBuf, Object>): StreamCodec<ByteBuf, WeightedList<Object>>;
     private constructor(items: Weighted<E>[])
     // private items: Weighted<E>[];

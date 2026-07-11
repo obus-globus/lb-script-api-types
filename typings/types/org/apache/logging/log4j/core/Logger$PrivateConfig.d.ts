@@ -31,7 +31,7 @@ export class Logger$PrivateConfig extends Object {
     filter(level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): boolean;
     filter(level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): boolean;
     filter(level: Level, marker: Marker, msg: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): boolean;
-    filter(level: Level, marker: Marker, msg: string, p1: Object[]): boolean;
+    filter(level: Level, marker: Marker, msg: string, ...p1: Object[]): boolean;
     filter(level: Level, marker: Marker, msg: string, t: Throwable): boolean;
     filter(level: Level, marker: Marker, msg: Message, t: Throwable): boolean;
     hasFilter(): boolean;

@@ -13,7 +13,7 @@ export class HttpChunkLineValidatingByteProcessor$State extends Enum<HttpChunkLi
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): HttpChunkLineValidatingByteProcessor$State;
     static values(): (Object | null)[];
-    private constructor(arg2: HttpChunkLineValidatingByteProcessor$Match[])
+    private constructor(...arg2: HttpChunkLineValidatingByteProcessor$Match[])
     // private matches: HttpChunkLineValidatingByteProcessor$Match[];
     match(arg0: number): HttpChunkLineValidatingByteProcessor$State;
     name(): "Size" | "ChunkExtName" | "ChunkExtValStart" | "ChunkExtValQuoted" | "ChunkExtValQuotedEscape" | "ChunkExtValQuotedEnd" | "ChunkExtValToken";

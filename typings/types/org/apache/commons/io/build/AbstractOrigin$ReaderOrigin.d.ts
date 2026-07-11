@@ -9,6 +9,6 @@ export class AbstractOrigin$ReaderOrigin extends AbstractOrigin<Reader, Abstract
     getByteArray(): number[];
     getByteArray(arg0: number, arg1: number): number[];
     getCharSequence(arg0: Charset): CharSequence;
-    getInputStream(arg0: OpenOption[]): InputStream;
+    getInputStream(...arg0: OpenOption[]): InputStream;
     getReader(arg0: Charset): Reader;
 }

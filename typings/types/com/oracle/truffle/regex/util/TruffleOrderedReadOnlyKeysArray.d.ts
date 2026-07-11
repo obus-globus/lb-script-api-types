@@ -2,7 +2,7 @@ import type { AbstractRegexObject } from '../../../../../com/oracle/truffle/rege
 export class TruffleOrderedReadOnlyKeysArray extends AbstractRegexObject {
     static createNamedCaptureGroupMapInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
     static createNamedCaptureGroupMapListInt(paramnamedCaptureGroups: { [key: string]: number[] }): AbstractRegexObject;
-    constructor(keys: string[])
+    constructor(...keys: string[])
     // private keys: string[];
     contains(key: string): boolean;
     getArraySize(): number;

@@ -7,5 +7,5 @@ export abstract class CharSequenceTranslator extends Object {
     translate(arg0: CharSequence): string;
     translate(arg0: CharSequence, arg1: Writer): void;
     translate(arg0: CharSequence, arg1: number, arg2: Writer): number;
-    with(arg0: CharSequenceTranslator[]): CharSequenceTranslator;
+    with(...arg0: CharSequenceTranslator[]): CharSequenceTranslator;
 }

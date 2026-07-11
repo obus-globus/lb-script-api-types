@@ -6,5 +6,6 @@ export class FingerprintTrustManagerFactoryBuilder extends Object {
     // private algorithm: string;
     // private fingerprints: string[];
     build(): FingerprintTrustManagerFactory;
+    fingerprints(...arg0: CharSequence[]): FingerprintTrustManagerFactoryBuilder;
     fingerprints(arg0: CharSequence[]): FingerprintTrustManagerFactoryBuilder;
 }

@@ -18,7 +18,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class Futures extends GwtFuturesCatchingSpecialization {
     static addCallback(paramfuture: ListenableFuture<Object>, paramcallback: FutureCallback<Object>, paramexecutor: Executor): void;
-    static allAsList(paramfutures: Object | null): ListenableFuture<(Object | null)[]>;
+    static allAsList(...paramfutures: Object | null): ListenableFuture<(Object | null)[]>;
     static allAsList(paramfutures: ListenableFuture<Object>[]): ListenableFuture<(Object | null)[]>;
     static catching(paraminput: ListenableFuture<Object>, paramexceptionType: Class<Throwable>, paramfallback: (param0: Object) => boolean, paramexecutor: Executor): ListenableFuture<Object>;
     static catchingAsync(paraminput: ListenableFuture<Object>, paramexceptionType: Class<Throwable>, paramfallback: (param0: Object) => ListenableFuture<Object>, paramexecutor: Executor): ListenableFuture<Object>;
@@ -39,13 +39,13 @@ export class Futures extends GwtFuturesCatchingSpecialization {
     static submit(paramcallable: () => Object | null, paramexecutor: Executor): ListenableFuture<Object>;
     static submit(paramrunnable: () => void, paramexecutor: Executor): ListenableFuture<void>;
     static submitAsync(paramcallable: () => ListenableFuture<Object>, paramexecutor: Executor): ListenableFuture<Object>;
-    static successfulAsList(paramfutures: Object | null): ListenableFuture<(Object | null)[]>;
+    static successfulAsList(...paramfutures: Object | null): ListenableFuture<(Object | null)[]>;
     static successfulAsList(paramfutures: ListenableFuture<Object>[]): ListenableFuture<(Object | null)[]>;
     static transform(paraminput: ListenableFuture<Object>, paramfunction: (param0: Object) => boolean, paramexecutor: Executor): ListenableFuture<Object>;
     static transformAsync(paraminput: ListenableFuture<Object>, paramfunction: (param0: Object) => ListenableFuture<Object>, paramexecutor: Executor): ListenableFuture<Object>;
-    static whenAllComplete(paramfutures: Object | null): Futures$FutureCombiner<Object>;
+    static whenAllComplete(...paramfutures: Object | null): Futures$FutureCombiner<Object>;
     static whenAllComplete(paramfutures: ListenableFuture<Object>[]): Futures$FutureCombiner<Object>;
-    static whenAllSucceed(paramfutures: Object | null): Futures$FutureCombiner<Object>;
+    static whenAllSucceed(...paramfutures: Object | null): Futures$FutureCombiner<Object>;
     static whenAllSucceed(paramfutures: ListenableFuture<Object>[]): Futures$FutureCombiner<Object>;
     static withTimeout(paramdelegate: ListenableFuture<Object>, paramtime: Duration, paramscheduledExecutor: ScheduledExecutorService): ListenableFuture<Object>;
     static withTimeout(paramdelegate: ListenableFuture<Object>, paramtime: number, paramunit: TimeUnit, paramscheduledExecutor: ScheduledExecutorService): ListenableFuture<Object>;

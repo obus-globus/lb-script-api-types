@@ -24,11 +24,11 @@ export abstract class BaseNCodec$AbstractBuilder<T extends unknown, B extends Ba
     setDecodeTable(arg0: number[]): B;
     setDecodeTableRaw(arg0: number[]): B;
     setDecodingPolicy(arg0: CodecPolicy): B;
-    setEncodeTable(arg0: number[]): B;
-    setEncodeTableRaw(arg0: number[]): B;
+    setEncodeTable(...arg0: number[]): B;
+    setEncodeTableRaw(...arg0: number[]): B;
     setEncodedBlockSize(arg0: number): B;
     setLineLength(arg0: number): B;
-    setLineSeparator(arg0: number[]): B;
+    setLineSeparator(...arg0: number[]): B;
     setPadding(arg0: number): B;
     setUnencodedBlockSize(arg0: number): B;
 }

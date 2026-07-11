@@ -11,7 +11,7 @@ import type { MemberScope$Companion } from '../../../../../../../kotlin/reflect/
 import type { ErrorScopeKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/error/ErrorScopeKind.d.ts'
 export class ErrorScope extends Object implements MemberScope {
     static Companion: MemberScope$Companion;
-    constructor(arg0: ErrorScopeKind, arg1: string[])
+    constructor(arg0: ErrorScopeKind, ...arg1: string[])
     // private debugMessage: string;
     // private kind: ErrorScopeKind;
     getClassifierNames(): Name[];

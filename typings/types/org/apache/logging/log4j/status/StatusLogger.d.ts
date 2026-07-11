@@ -66,7 +66,7 @@ export class StatusLogger extends AbstractLogger {
     isEnabled(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): boolean;
     isEnabled(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): boolean;
     isEnabled(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): boolean;
-    isEnabled(level: Level, marker: Marker, message: string, params: Object[]): boolean;
+    isEnabled(level: Level, marker: Marker, message: string, ...params: Object[]): boolean;
     isEnabled(level: Level, marker: Marker, message: string, throwable: Throwable): boolean;
     isEnabled(level: Level, marker: Marker, message: Message, throwable: Throwable): boolean;
     // private isLevelEnabled(filteringLevel: Level, messageLevel: Level): boolean;
@@ -83,8 +83,8 @@ export class StatusLogger extends AbstractLogger {
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    logMessage(fqcn: string, level: Level, marker: Marker, message: string, params: Object[]): void;
-    logMessage(fqcn: string, level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, ...params: Object[]): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, ...paramSuppliers: () => Object | null[]): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: Message, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;

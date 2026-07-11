@@ -40,7 +40,7 @@ export class ReusableParameterizedMessage extends Object implements Clearable, P
     set(messagePattern: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): ReusableParameterizedMessage;
     set(messagePattern: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): ReusableParameterizedMessage;
     set(messagePattern: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): ReusableParameterizedMessage;
-    set(messagePattern: string, arguments: Object[]): ReusableParameterizedMessage;
+    set(messagePattern: string, ...arguments: Object[]): ReusableParameterizedMessage;
     swapParameters(emptyReplacement: Object[]): Object[];
     toString(): string;
     // private writeReplace(): Object;

@@ -71,7 +71,7 @@ export abstract class RegexLexer extends Object {
     featureEnabledSpecialGroups(): boolean;
     featureEnabledUnicodePropertyEscapes(): boolean;
     featureEnabledZLowerCaseAssertion(): boolean;
-    findChars(chars: string[]): boolean;
+    findChars(...chars: string[]): boolean;
     finishSurrogatePair(c: string): number;
     getCompilationBuffer(): CompilationBuffer;
     getDotCodePointSet(): (Object | null)[];

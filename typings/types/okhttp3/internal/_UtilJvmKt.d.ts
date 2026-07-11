@@ -27,9 +27,9 @@ export class _UtilJvmKt extends Object {
     static closeQuietly(paramarg0: ServerSocket): void;
     static closeQuietly(paramarg0: Socket): void;
     static discard(paramarg0: Source, paramarg1: number, paramarg2: TimeUnit): boolean;
-    static format(paramarg0: string, paramarg1: (Object | null)[]): string;
+    static format(paramarg0: string, ...paramarg1: (Object | null)[]): string;
     static headersContentLength(paramarg0: Response): number;
-    static immutableListOf(paramarg0: Object | null): (Object | null)[];
+    static immutableListOf(...paramarg0: Object | null): (Object | null)[];
     static isHealthy(paramarg0: Socket, paramarg1: BufferedSource): boolean;
     static readBomAsCharset(paramarg0: BufferedSource, paramarg1: Charset): Charset;
     static readFieldOrNull(paramarg0: Object, paramarg1: Class<Object>, paramarg2: string): Object | null;

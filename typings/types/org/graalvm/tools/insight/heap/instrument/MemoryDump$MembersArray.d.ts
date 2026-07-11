@@ -3,7 +3,7 @@ import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class MemoryDump$MembersArray extends Object implements TruffleObject {
-    private constructor(members: string[])
+    private constructor(...members: string[])
     // private members: string[];
     getArraySize(): number;
     hasArrayElements(): boolean;

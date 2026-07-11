@@ -8,7 +8,7 @@ export class EquipmentClientInfo$Builder extends Object {
     // private layersByType: { [key in EquipmentClientInfo$LayerType]: EquipmentClientInfo$Layer[] };
     addHumanoidLayers(textureId: Identifier): EquipmentClientInfo$Builder;
     addHumanoidLayers(textureId: Identifier, dyeable: boolean): EquipmentClientInfo$Builder;
-    addLayers(type: EquipmentClientInfo$LayerType, layers: EquipmentClientInfo$Layer[]): EquipmentClientInfo$Builder;
+    addLayers(type: EquipmentClientInfo$LayerType, ...layers: EquipmentClientInfo$Layer[]): EquipmentClientInfo$Builder;
     addMainHumanoidLayer(textureId: Identifier, dyeable: boolean): EquipmentClientInfo$Builder;
     build(): EquipmentClientInfo;
 }

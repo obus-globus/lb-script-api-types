@@ -12,7 +12,7 @@ export class InvalidSelector extends Object implements ITargetSelector {
     // private cause: Throwable;
     // private input: string;
     attach(arg0: ISelectorContext): ITargetSelector;
-    configure(arg0: ITargetSelector$Configure, arg1: string[]): ITargetSelector;
+    configure(arg0: ITargetSelector$Configure, ...arg1: string[]): ITargetSelector;
     getMaxMatchCount(): number;
     getMinMatchCount(): number;
     match<TNode extends unknown>(arg0: ElementNode<TNode>): MatchResult;

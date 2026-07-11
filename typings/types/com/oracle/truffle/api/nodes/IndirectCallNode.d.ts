@@ -5,5 +5,5 @@ export abstract class IndirectCallNode extends Node {
     static create(): IndirectCallNode;
     static getUncached(): IndirectCallNode;
     constructor()
-    call(target: CallTarget, arguments: Object[]): Object;
+    call(target: CallTarget, ...arguments: Object[]): Object;
 }

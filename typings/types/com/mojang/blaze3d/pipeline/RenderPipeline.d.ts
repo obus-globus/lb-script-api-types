@@ -11,7 +11,7 @@ import type { FabricRenderPipelineImpl } from '../../../../net/fabricmc/fabric/i
 import type { ShaderDefines } from '../../../../net/minecraft/client/renderer/ShaderDefines.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class RenderPipeline extends Object implements FabricRenderPipeline, FabricRenderPipelineImpl {
-    static builder(paramsnippets: (Object | null)[]): RenderPipeline$Builder;
+    static builder(...paramsnippets: (Object | null)[]): RenderPipeline$Builder;
     static updateSortKeySeed(): void;
     constructor(location: Identifier, vertexShader: Identifier, fragmentShader: Identifier, shaderDefines: ShaderDefines, bindGroupLayouts: BindGroupLayout[], colorTargetStates: ColorTargetState[], depthStencilState: DepthStencilState, polygonMode: PolygonMode, cull: boolean, vertexFormatPerBuffer: VertexFormat[], primitiveTopology: PrimitiveTopology, sortKey: number)
     readonly bindGroupLayouts: BindGroupLayout[];

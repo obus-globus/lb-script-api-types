@@ -5,10 +5,10 @@ export class CommandLine$Tracer extends Object {
     constructor(arg0: any)
     // private level: CommandLine$TraceLevel;
     // private stream: PrintStream;
-    debug(msg: string, params: Object[]): void;
-    info(msg: string, params: Object[]): void;
+    debug(msg: string, ...params: Object[]): void;
+    info(msg: string, ...params: Object[]): void;
     isDebug(): boolean;
     isInfo(): boolean;
     isWarn(): boolean;
-    warn(msg: string, params: Object[]): void;
+    warn(msg: string, ...params: Object[]): void;
 }

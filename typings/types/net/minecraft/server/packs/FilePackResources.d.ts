@@ -22,6 +22,6 @@ export class FilePackResources extends AbstractPackResources {
     getNamespaces(type: PackType): string[];
     // private getResource(path: string): () => InputStream;
     getResource(type: PackType, location: Identifier): () => InputStream;
-    getRootResource(path: string[]): () => InputStream;
+    getRootResource(...path: string[]): () => InputStream;
     listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
 }

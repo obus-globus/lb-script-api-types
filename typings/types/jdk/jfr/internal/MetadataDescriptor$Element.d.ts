@@ -11,7 +11,7 @@ export class MetadataDescriptor$Element extends Object {
     attribute(arg0: string): string;
     attribute(arg0: string, arg1: number): number;
     attribute(arg0: string, arg1: string): string;
-    elements(arg0: string[]): MetadataDescriptor$Element[];
+    elements(...arg0: string[]): MetadataDescriptor$Element[];
     longValue(arg0: string): number;
     newChild(arg0: string): MetadataDescriptor$Element;
     toString(): string;

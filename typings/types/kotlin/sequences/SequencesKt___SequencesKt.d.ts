@@ -163,7 +163,7 @@ export class SequencesKt___SequencesKt extends SequencesKt___SequencesJvmKt {
     static scanIndexed(paramarg0: Sequence<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object, param2: Object) => Object | null): Sequence<Object>;
     static sequence(paramarg0: (param0: Object, param1: Object) => Object): Sequence<Object>;
     static sequenceOf(paramarg0: Object | null): Sequence<Object>;
-    static sequenceOf(paramarg0: Object | null): Sequence<Object>;
+    static sequenceOf(...paramarg0: Object | null): Sequence<Object>;
     static shuffled(paramarg0: Sequence<Object>): Sequence<Object>;
     static shuffled(paramarg0: Sequence<Object>, paramarg1: Random): Sequence<Object>;
     static single(paramarg0: Sequence<Object>): Object | null;

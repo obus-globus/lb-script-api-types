@@ -5,8 +5,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class NDIndex extends Object {
     static sliceAxis(paramarg0: number, paramarg1: number, paramarg2: number): NDIndex;
     constructor()
-    constructor(arg0: number[])
-    constructor(arg0: string, arg1: Object[])
+    constructor(...arg0: number[])
+    constructor(arg0: string, ...arg1: Object[])
     readonly ellipsisIndex: number;
     readonly indices: NDIndexElement[];
     readonly rank: number;
@@ -15,8 +15,8 @@ export class NDIndex extends Object {
     addBooleanIndex(arg0: NDArray): NDIndex;
     addEllipseDim(): NDIndex;
     // private addIndexItem(arg0: string, arg1: number, arg2: Object[]): number;
-    addIndices(arg0: number[]): NDIndex;
-    addIndices(arg0: string, arg1: Object[]): NDIndex;
+    addIndices(...arg0: number[]): NDIndex;
+    addIndices(arg0: string, ...arg1: Object[]): NDIndex;
     addPickDim(arg0: NDArray): NDIndex;
     addSliceDim(arg0: number, arg1: number): NDIndex;
     addSliceDim(arg0: number, arg1: number, arg2: number): NDIndex;
@@ -24,6 +24,6 @@ export class NDIndex extends Object {
     getEllipsisIndex(): number;
     getIndices(): NDIndexElement[];
     getRank(): number;
-    // private parseSliceItem(arg0: string, arg1: number, arg2: Object[]): number;
+    // private parseSliceItem(arg0: string, arg1: number, ...arg2: Object[]): number;
     stream(): Stream<NDIndexElement>;
 }

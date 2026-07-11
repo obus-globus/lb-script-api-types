@@ -10,10 +10,10 @@ export class LambdaForm$Name extends Object {
     constructor(arg0: LambdaForm$NamedFunction)
     constructor(arg0: LambdaForm$NamedFunction, arg1: Object)
     constructor(arg0: LambdaForm$NamedFunction, arg1: Object, arg2: Object)
-    constructor(arg0: LambdaForm$NamedFunction, arg1: Object[])
-    constructor(arg0: MemberName, arg1: Object[])
-    constructor(arg0: MethodHandle, arg1: Object[])
-    constructor(arg0: MethodType, arg1: Object[])
+    constructor(arg0: LambdaForm$NamedFunction, ...arg1: Object[])
+    constructor(arg0: MemberName, ...arg1: Object[])
+    constructor(arg0: MethodHandle, ...arg1: Object[])
+    constructor(arg0: MethodType, ...arg1: Object[])
     constructor(arg0: number, arg1: LambdaForm$BasicType)
     // private arguments: Object[];
     // private constraint: Object;
@@ -38,7 +38,7 @@ export class LambdaForm$Name extends Object {
     toString(): string;
     type(): LambdaForm$BasicType;
     typeChar(): string;
-    // private typesMatch(arg0: LambdaForm$NamedFunction, arg1: Object[]): boolean;
+    // private typesMatch(arg0: LambdaForm$NamedFunction, ...arg1: Object[]): boolean;
     withConstraint(arg0: Object): LambdaForm$Name;
     withIndex(arg0: number): LambdaForm$Name;
 }

@@ -7,6 +7,6 @@ export class MenuTabBar$Builder extends TabNavigationBar$Builder {
     private constructor(tabManager: TabManager, width: number)
     addTab(button: TabButton, tab: Tab): TabNavigationBar$Builder;
     addTab(tab: Tab): MenuTabBar$Builder;
-    addTabs(tabs: Tab[]): MenuTabBar$Builder;
+    addTabs(...tabs: Tab[]): MenuTabBar$Builder;
     build(): MenuTabBar;
 }

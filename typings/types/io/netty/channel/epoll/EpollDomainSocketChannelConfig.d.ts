@@ -16,7 +16,7 @@ export class EpollDomainSocketChannelConfig extends EpollChannelConfig implement
     // private mode: DomainSocketReadMode;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReadMode(): DomainSocketReadMode;
     getReceiveBufferSize(): number;
     getSendBufferSize(): number;

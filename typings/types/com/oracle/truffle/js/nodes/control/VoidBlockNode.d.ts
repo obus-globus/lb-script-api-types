@@ -10,7 +10,7 @@ export class VoidBlockNode extends AbstractBlockNode implements SequenceNode {
     static EMPTY: Object;
     static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
     static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
-    static createVoidBlock(paramstatements: (Object | null)[]): JavaScriptNode;
+    static createVoidBlock(...paramstatements: (Object | null)[]): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;

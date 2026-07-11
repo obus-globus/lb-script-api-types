@@ -13,7 +13,7 @@ export class OptimizedDirectCallNode extends DirectCallNode {
     // private exceptionProfile: Class<Throwable>;
     readonly inliningForced: boolean;
     // private splitDecided: boolean;
-    call(arguments: Object[]): Object;
+    call(...arguments: Object[]): Object;
     cloneCallTarget(): boolean;
     forceInlining(): void;
     getCallCount(): number;

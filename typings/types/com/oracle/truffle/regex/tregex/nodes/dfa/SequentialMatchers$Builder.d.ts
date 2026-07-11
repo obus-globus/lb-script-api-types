@@ -5,7 +5,7 @@ export class SequentialMatchers$Builder extends Object {
     constructor(nBuffers: number)
     // private buffers: CharMatcher[][];
     readonly noMatchSuccessor: number;
-    createSplitMatcher(i: number, cps: (Object | null)[], compilationBuffer: CompilationBuffer, splitRanges: (Object | null)[][]): void;
+    createSplitMatcher(i: number, cps: (Object | null)[], compilationBuffer: CompilationBuffer, ...splitRanges: (Object | null)[][]): void;
     estimatedCost(i: number): number;
     getBuffer(i: number): CharMatcher[];
     getNoMatchSuccessor(): number;

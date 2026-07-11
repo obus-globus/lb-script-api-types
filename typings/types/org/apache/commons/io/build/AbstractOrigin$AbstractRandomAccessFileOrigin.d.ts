@@ -12,10 +12,10 @@ export abstract class AbstractOrigin$AbstractRandomAccessFileOrigin<T extends Ra
     getByteArray(): number[];
     getByteArray(arg0: number, arg1: number): number[];
     getCharSequence(arg0: Charset): CharSequence;
-    getInputStream(arg0: OpenOption[]): InputStream;
-    getOutputStream(arg0: OpenOption[]): OutputStream;
-    getRandomAccessFile(arg0: OpenOption[]): T;
+    getInputStream(...arg0: OpenOption[]): InputStream;
+    getOutputStream(...arg0: OpenOption[]): OutputStream;
+    getRandomAccessFile(...arg0: OpenOption[]): T;
     getReader(arg0: Charset): Reader;
-    getWriter(arg0: Charset, arg1: OpenOption[]): Writer;
+    getWriter(arg0: Charset, ...arg1: OpenOption[]): Writer;
     size(): number;
 }

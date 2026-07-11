@@ -10,7 +10,7 @@ export class LiteralPatternConverter extends LogEventPatternConverter implements
     // private config: Configuration;
     readonly literal: string;
     // private substitute: boolean;
-    format(output: StringBuilder, objects: Object[]): void;
+    format(output: StringBuilder, ...objects: Object[]): void;
     format(obj: Object, output: StringBuilder): void;
     format(event: LogEvent, toAppendTo: StringBuilder): void;
     getLiteral(): string;

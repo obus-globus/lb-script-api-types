@@ -11,11 +11,11 @@ export class Iterables extends Object {
     static concat(parama: (Object | null)[], paramb: (Object | null)[]): (Object | null)[];
     static concat(parama: (Object | null)[], paramb: (Object | null)[], paramc: (Object | null)[]): (Object | null)[];
     static concat(parama: (Object | null)[], paramb: (Object | null)[], paramc: (Object | null)[], paramd: (Object | null)[]): (Object | null)[];
-    static concat(paraminputs: Object | null): (Object | null)[];
+    static concat(...paraminputs: Object | null): (Object | null)[];
     static concat(paraminputs: (Object | null)[][]): (Object | null)[];
     static consumingIterable(paramiterable: (Object | null)[]): (Object | null)[];
     static contains(paramiterable: Object[], paramelement: Object): boolean;
-    static cycle(paramelements: Object | null): (Object | null)[];
+    static cycle(...paramelements: Object | null): (Object | null)[];
     static cycle(paramiterable: (Object | null)[]): (Object | null)[];
     static elementsEqual(paramiterable1: Object[], paramiterable2: Object[]): boolean;
     static filter(paramunfiltered: Object[], paramdesiredType: Class<Object>): (Object | null)[];

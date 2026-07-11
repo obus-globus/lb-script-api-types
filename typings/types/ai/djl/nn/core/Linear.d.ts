@@ -19,7 +19,7 @@ export class Linear extends AbstractBlock {
     // private inputShape: Shape;
     // private units: number;
     // private weight: Parameter;
-    beforeInitialize(arg0: Shape[]): void;
+    beforeInitialize(...arg0: Shape[]): void;
     describeInput(): Pair<string, Shape>[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];

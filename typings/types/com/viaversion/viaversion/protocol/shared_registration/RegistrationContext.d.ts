@@ -16,9 +16,9 @@ export class RegistrationContext<CU extends ClientboundPacketType, SU extends Se
     // private protocol: AbstractProtocol<CU, any, any, SU>;
     castProtocol<P extends AbstractProtocol<CU, any, any, SU>>(): P;
     clientbound(arg0: ClientboundPacketType, arg1: (param0: CU) => void): void;
-    clientbound(arg0: ClientboundPacketType, arg1: (param0: CU) => void, arg2: PacketBound[]): void;
+    clientbound(arg0: ClientboundPacketType, arg1: (param0: CU) => void, ...arg2: PacketBound[]): void;
     clientboundHandler(arg0: ClientboundPacketType, arg1: (param0: PacketWrapper) => void): void;
-    clientboundHandler(arg0: ClientboundPacketType, arg1: (param0: PacketWrapper) => void, arg2: PacketBound[]): void;
+    clientboundHandler(arg0: ClientboundPacketType, arg1: (param0: PacketWrapper) => void, ...arg2: PacketBound[]): void;
     clientboundPacketType(arg0: ClientboundPacketType): CU;
     equals(arg0: Object | null): boolean;
     hashCode(): number;
@@ -27,10 +27,10 @@ export class RegistrationContext<CU extends ClientboundPacketType, SU extends Se
     protocol(): AbstractProtocol<CU, any, any, SU>;
     protocol<P extends AbstractProtocol<CU, any, any, SU>>(arg0: Class<P>): P;
     serverbound(arg0: ServerboundPacketType, arg1: (param0: SU) => void): void;
-    serverbound(arg0: ServerboundPacketType, arg1: (param0: SU) => void, arg2: PacketBound[]): void;
+    serverbound(arg0: ServerboundPacketType, arg1: (param0: SU) => void, ...arg2: PacketBound[]): void;
     serverboundHandler(arg0: ServerboundPacketType, arg1: (param0: PacketWrapper) => void): void;
-    serverboundHandler(arg0: ServerboundPacketType, arg1: (param0: PacketWrapper) => void, arg2: PacketBound[]): void;
+    serverboundHandler(arg0: ServerboundPacketType, arg1: (param0: PacketWrapper) => void, ...arg2: PacketBound[]): void;
     serverboundPacketType(arg0: ServerboundPacketType): SU;
-    // private shouldSkip(arg0: PacketBound[]): boolean;
+    // private shouldSkip(...arg0: PacketBound[]): boolean;
     toString(): string;
 }

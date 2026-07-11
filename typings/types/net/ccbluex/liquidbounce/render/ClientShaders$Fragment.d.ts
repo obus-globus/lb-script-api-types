@@ -9,7 +9,8 @@ export class ClientShaders$Fragment extends ClientShaders {
     static EntityOutline: Identifier;
     static Glow: Identifier;
     static GradientCircle: Identifier;
-    static GuiBlur: Identifier;
+    static GuiBlurH: Identifier;
+    static GuiBlurV: Identifier;
     static GuiCircleLut: Identifier;
     static GuiRoundedRect: Identifier;
     static HeartSDF: Identifier;
@@ -22,7 +23,8 @@ export class ClientShaders$Fragment extends ClientShaders {
     EntityOutline: Identifier;
     Glow: Identifier;
     GradientCircle: Identifier;
-    GuiBlur: Identifier;
+    GuiBlurH: Identifier;
+    GuiBlurV: Identifier;
     GuiCircleLut: Identifier;
     GuiRoundedRect: Identifier;
     HeartSDF: Identifier;

@@ -9,7 +9,7 @@ export class DefaultNetherChannelConfig extends DefaultChannelConfig {
     // private portAllocatorConfig: PortAllocatorConfig;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
     setPortAllocatorConfig(arg0: PortAllocatorConfig): void;
 }

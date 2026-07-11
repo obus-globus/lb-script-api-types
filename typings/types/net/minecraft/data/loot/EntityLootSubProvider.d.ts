@@ -33,5 +33,5 @@ export abstract class EntityLootSubProvider extends Object implements FabricEnti
     killedByFrog(entityTypes: HolderGetter<EntityType<any>>): () => LootItemCondition;
     killedByFrogVariant(entityTypes: HolderGetter<EntityType<any>>, frogVariants: HolderGetter<FrogVariant>, variant: ResourceKey<FrogVariant>): () => LootItemCondition;
     shouldSmeltLoot(): AnyOfCondition$Builder;
-    withConditions(arg0: ResourceCondition[]): EntityLootSubProvider;
+    withConditions(...arg0: ResourceCondition[]): EntityLootSubProvider;
 }

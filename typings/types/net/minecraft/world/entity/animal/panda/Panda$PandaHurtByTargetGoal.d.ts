@@ -5,7 +5,7 @@ import type { Mob } from '../../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { HurtByTargetGoal } from '../../../../../../net/minecraft/world/entity/ai/goal/target/HurtByTargetGoal.d.ts'
 import type { Panda } from '../../../../../../net/minecraft/world/entity/animal/panda/Panda.d.ts'
 export class Panda$PandaHurtByTargetGoal extends HurtByTargetGoal {
-    constructor(mob: Panda, ignoreDamageFromTheseTypes: Class<Object>[])
+    constructor(mob: Panda, ...ignoreDamageFromTheseTypes: Class<Object>[])
     // private panda: Panda;
     alertOther(other: Mob, hurtByMob: LivingEntity): void;
     canContinueToUse(): boolean;

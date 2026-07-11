@@ -10,7 +10,7 @@ export class AnyOfCondition extends CompositeLootItemCondition {
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<AnyOfCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;
-    static anyOf(paramterms: (Object | null)[]): AnyOfCondition$Builder;
+    static anyOf(...paramterms: (Object | null)[]): AnyOfCondition$Builder;
     private constructor(terms: LootItemCondition[])
     codec(): MapCodec<AnyOfCondition>;
 }

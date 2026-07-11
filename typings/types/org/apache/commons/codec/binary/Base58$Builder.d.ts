@@ -3,5 +3,5 @@ import type { BaseNCodec$AbstractBuilder } from '../../../../../org/apache/commo
 export class Base58$Builder extends BaseNCodec$AbstractBuilder<Base58, Base58$Builder> {
     constructor()
     get(): Base58;
-    setEncodeTable(arg0: number[]): Base58$Builder;
+    setEncodeTable(...arg0: number[]): Base58$Builder;
 }

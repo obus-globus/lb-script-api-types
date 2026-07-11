@@ -6,9 +6,9 @@ export class RandomStringUtils extends Object {
     static insecure(): RandomStringUtils;
     static random(paramarg0: number): string;
     static random(paramarg0: number, paramarg1: boolean, paramarg2: boolean): string;
-    static random(paramarg0: number, paramarg1: string[]): string;
+    static random(paramarg0: number, ...paramarg1: string[]): string;
     static random(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: boolean): string;
-    static random(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: boolean, paramarg5: string[]): string;
+    static random(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: boolean, ...paramarg5: string[]): string;
     static random(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: boolean, paramarg4: boolean, paramarg5: string[], paramarg6: Random): string;
     static random(paramarg0: number, paramarg1: string): string;
     static randomAlphabetic(paramarg0: number): string;
@@ -29,9 +29,9 @@ export class RandomStringUtils extends Object {
     // private random: () => RandomUtils;
     next(arg0: number): string;
     next(arg0: number, arg1: boolean, arg2: boolean): string;
-    next(arg0: number, arg1: string[]): string;
+    next(arg0: number, ...arg1: string[]): string;
     next(arg0: number, arg1: number, arg2: number, arg3: boolean, arg4: boolean): string;
-    next(arg0: number, arg1: number, arg2: number, arg3: boolean, arg4: boolean, arg5: string[]): string;
+    next(arg0: number, arg1: number, arg2: number, arg3: boolean, arg4: boolean, ...arg5: string[]): string;
     next(arg0: number, arg1: string): string;
     nextAlphabetic(arg0: number): string;
     nextAlphabetic(arg0: number, arg1: number): string;

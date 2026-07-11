@@ -17,9 +17,11 @@ export class FieldStream extends Object {
     copy(): FieldStream;
     filter(arg0: Class<Object>): FieldStream;
     filter(arg0: (param0: FieldWrapper) => boolean): FieldStream;
-    filter(arg0: string[]): FieldStream;
+    filter(...arg0: string[]): FieldStream;
     filter(arg0: boolean): FieldStream;
+    filter(arg0: string[]): FieldStream;
     filterAnnotation(arg0: Class<Object>): FieldStream;
+    filterNames(...arg0: string[]): FieldStream;
     filterNames(arg0: string[]): FieldStream;
     filterStatic(arg0: boolean): FieldStream;
     filterType(arg0: Class<Object>): FieldStream;

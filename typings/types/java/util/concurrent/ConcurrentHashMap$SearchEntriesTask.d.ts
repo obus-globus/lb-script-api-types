@@ -22,7 +22,7 @@ export class ConcurrentHashMap$SearchEntriesTask<K extends unknown, V extends un
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: Object | null): void;
     constructor(arg0: ConcurrentHashMap$BulkTask<K, V, Object>, arg1: number, arg2: number, arg3: number, arg4: ConcurrentHashMap$Node<K, V>[], arg5: (param0: Map$Entry<K, V>) => U, arg6: AtomicReference<U>)
     // private result: AtomicReference<U>;
     // private searchFunction: (param0: Map$Entry<K, V>) => U;

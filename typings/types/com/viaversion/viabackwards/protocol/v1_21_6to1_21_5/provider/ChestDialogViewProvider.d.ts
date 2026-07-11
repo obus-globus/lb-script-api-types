@@ -30,8 +30,8 @@ export class ChestDialogViewProvider extends Object implements DialogViewProvide
     createActionButtonItem(arg0: UserConnection, arg1: Button): Item;
     createCloseButtonItem(arg0: Tag): Item;
     createItem(arg0: string, arg1: Tag): Item;
-    createItem(arg0: string, arg1: Tag, arg2: Tag[]): Item;
-    createItem(arg0: string, arg1: Tag, arg2: string[]): Item;
+    createItem(arg0: string, arg1: Tag, ...arg2: Tag[]): Item;
+    createItem(arg0: string, arg1: Tag, ...arg2: string[]): Item;
     createPageNavigationItem(): Item;
     createTextCopyItem(arg0: string): Item;
     createTextInputItem(arg0: string): Item;

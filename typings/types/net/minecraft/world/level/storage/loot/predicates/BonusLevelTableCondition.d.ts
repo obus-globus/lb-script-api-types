@@ -13,7 +13,7 @@ export class BonusLevelTableCondition extends Record implements LootItemConditio
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<BonusLevelTableCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;
-    static bonusLevelFlatChance(paramenchantment: Holder<Enchantment>, paramchances: number[]): () => LootItemCondition;
+    static bonusLevelFlatChance(paramenchantment: Holder<Enchantment>, ...paramchances: number[]): () => LootItemCondition;
     constructor(enchantment: Holder<Enchantment>, values: number[])
     // private enchantment: Holder<Enchantment>;
     // private values: number[];

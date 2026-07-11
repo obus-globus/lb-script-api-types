@@ -36,7 +36,7 @@ export class CommandLine$Interpreter extends Object {
     // private isAnyHelpRequested(): boolean;
     // private isOption(arg: string): boolean;
     // private optionDescription(prefix: string, field: Field, index: number): string;
-    parse(args: string[]): CommandLine[];
+    parse(...args: string[]): CommandLine[];
     // private parse(parsedCommands: CommandLine[], argumentStack: string[], originalArgs: string[]): void;
     // private processArguments(parsedCommands: CommandLine[], args: string[], required: Field[], initialized: Field[], originalArgs: string[]): void;
     // private processClusteredShortOptions(required: Field[], initialized: Field[], arg: string, args: string[]): void;

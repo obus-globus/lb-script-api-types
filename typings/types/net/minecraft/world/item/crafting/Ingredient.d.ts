@@ -24,7 +24,7 @@ export class Ingredient extends Object implements Predicate<ItemStack>, FabricIn
     static of(paramstream: Stream<ItemLike>): Ingredient;
     static of(paramtag: Holder<Item>[]): Ingredient;
     static of(paramitemLike: ItemLike): Ingredient;
-    static of(paramitems: (Object | null)[]): Ingredient;
+    static of(...paramitems: (Object | null)[]): Ingredient;
     static optionalIngredientToDisplay(paramingredient: Optional<Ingredient>): SlotDisplay;
     static testOptionalIngredient(paramingredient: Optional<Ingredient>, paramstack: ItemStack): boolean;
     constructor(values: Holder<Item>[])

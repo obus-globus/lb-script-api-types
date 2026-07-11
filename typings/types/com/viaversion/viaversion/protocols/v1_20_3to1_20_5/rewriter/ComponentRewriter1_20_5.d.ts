@@ -127,8 +127,8 @@ export class ComponentRewriter1_20_5<C extends ClientboundPacketType> extends Js
     enchantmentsToTag(arg0: Enchantments): Map$Entry<string, Tag>[];
     entityDataFromTag(arg0: Tag): Map$Entry<string, Tag>[];
     entityDataToTag(arg0: Map$Entry<string, Tag>[]): Map$Entry<string, Tag>[];
-    enumEntryFromTag(arg0: StringTag, arg1: string[]): number;
-    enumEntryToTag(arg0: number, arg1: string[]): StringTag;
+    enumEntryFromTag(arg0: StringTag, ...arg1: string[]): number;
+    enumEntryToTag(arg0: number, ...arg1: string[]): StringTag;
     filterableComponentFromTag(arg0: Map$Entry<string, Tag>[]): FilterableComponent;
     filterableComponentToTag(arg0: Map$Entry<string, Tag>[], arg1: FilterableComponent): void;
     filterableStringFromTag(arg0: Map$Entry<string, Tag>[]): FilterableString;

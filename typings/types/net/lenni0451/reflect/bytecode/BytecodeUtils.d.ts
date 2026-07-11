@@ -10,7 +10,7 @@ export class BytecodeUtils extends Object {
     static getLoadOpcode(paramarg0: Class<Object>): string;
     static getReturnOpcode(paramarg0: Class<Object>): string;
     static getStackSize(paramarg0: Class<Object>): number;
-    static mdesc(paramarg0: Class<Object>, paramarg1: Object | null): string;
+    static mdesc(paramarg0: Class<Object>, ...paramarg1: Object | null): string;
     static slash(paramarg0: Class<Object>): string;
     static slash(paramarg0: string): string;
     static unboxed(paramarg0: Class<Object>): Class<Object>;

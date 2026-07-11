@@ -47,7 +47,7 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     // private assertHasNoSourceSection(receiver: Object): boolean;
     // private assertMetaObject(receiver: Object): boolean;
     // private assertNoMetaObject(receiver: Object): boolean;
-    execute(receiver: Object, arguments: Object[]): Object;
+    execute(receiver: Object, ...arguments: Object[]): Object;
     fitsInBigInteger(receiver: Object): boolean;
     fitsInByte(receiver: Object): boolean;
     fitsInDouble(receiver: Object): boolean;
@@ -99,8 +99,8 @@ export class InteropLibrary$Asserts extends InteropLibrary {
     hasScopeParent(receiver: Object): boolean;
     hasSourceLocation(receiver: Object): boolean;
     identityHashCode(receiver: Object): number;
-    instantiate(receiver: Object, arguments: Object[]): Object;
-    invokeMember(receiver: Object, identifier: string, arguments: Object[]): Object;
+    instantiate(receiver: Object, ...arguments: Object[]): Object;
+    invokeMember(receiver: Object, identifier: string, ...arguments: Object[]): Object;
     isArrayElementInsertable(receiver: Object, index: number): boolean;
     isArrayElementModifiable(receiver: Object, index: number): boolean;
     isArrayElementReadable(receiver: Object, index: number): boolean;

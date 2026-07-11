@@ -120,7 +120,7 @@ export class RuleBasedCollator extends Collator implements Cloneable {
     setMaxVariable(arg0: number): RuleBasedCollator;
     setNumericCollation(arg0: boolean): void;
     setNumericCollationDefault(): void;
-    setReorderCodes(arg0: number[]): void;
+    setReorderCodes(...arg0: number[]): void;
     setStrength(arg0: number): void;
     setStrengthDefault(): void;
     setUpperCaseFirst(arg0: boolean): void;

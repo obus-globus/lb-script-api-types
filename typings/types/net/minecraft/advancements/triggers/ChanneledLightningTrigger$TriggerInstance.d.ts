@@ -9,7 +9,7 @@ import type { LootContext } from '../../../../net/minecraft/world/level/storage/
 import type { ValidationContextSource } from '../../../../net/minecraft/world/level/storage/loot/ValidationContextSource.d.ts'
 export class ChanneledLightningTrigger$TriggerInstance extends Record implements SimpleCriterionTrigger$SimpleInstance {
     static CODEC: Codec<ChanneledLightningTrigger$TriggerInstance>;
-    static channeledLightning(paramvictims: (Object | null)[]): Criterion<ChanneledLightningTrigger$TriggerInstance>;
+    static channeledLightning(...paramvictims: (Object | null)[]): Criterion<ChanneledLightningTrigger$TriggerInstance>;
     constructor(player: Optional<ContextAwarePredicate>, victims: ContextAwarePredicate[])
     // private player: Optional<ContextAwarePredicate>;
     // private victims: ContextAwarePredicate[];

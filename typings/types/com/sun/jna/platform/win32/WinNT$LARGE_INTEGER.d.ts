@@ -15,8 +15,8 @@ export class WinNT$LARGE_INTEGER extends Structure implements Comparable<WinNT$L
     static compare(paramarg0: WinNT$LARGE_INTEGER, paramarg1: WinNT$LARGE_INTEGER): number;
     static compare(paramarg0: WinNT$LARGE_INTEGER, paramarg1: number): number;
     static createFieldsOrder(paramarg0: string): string[];
-    static createFieldsOrder(paramarg0: (Object | null)[]): string[];
-    static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
+    static createFieldsOrder(...paramarg0: (Object | null)[]): string[];
+    static createFieldsOrder(paramarg0: string[], ...paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static newInstance(paramarg0: Class<Structure>): Structure | null;
     static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;

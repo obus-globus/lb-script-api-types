@@ -25,7 +25,7 @@ export class CustomIngredientImpl extends Ingredient {
     static of(paramstream: Stream<ItemLike>): Ingredient;
     static of(paramtag: Holder<Item>[]): Ingredient;
     static of(paramitemLike: ItemLike): Ingredient;
-    static of(paramitems: (Object | null)[]): Ingredient;
+    static of(...paramitems: (Object | null)[]): Ingredient;
     static optionalIngredientToDisplay(paramingredient: Optional<Ingredient>): SlotDisplay;
     static registerSerializer(paramarg0: CustomIngredientSerializer<any>): void;
     static testOptionalIngredient(paramingredient: Optional<Ingredient>, paramstack: ItemStack): boolean;

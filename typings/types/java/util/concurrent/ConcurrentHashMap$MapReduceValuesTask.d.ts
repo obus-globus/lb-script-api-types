@@ -21,7 +21,7 @@ export class ConcurrentHashMap$MapReduceValuesTask<K extends unknown, V extends 
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: Object | null): void;
     constructor(arg0: ConcurrentHashMap$BulkTask<K, V, Object>, arg1: number, arg2: number, arg3: number, arg4: ConcurrentHashMap$Node<K, V>[], arg5: ConcurrentHashMap$MapReduceValuesTask<K, V, U>, arg6: (param0: V) => U, arg7: (param0: U, param1: U) => U)
     // private nextRight: ConcurrentHashMap$MapReduceValuesTask<K, V, U>;
     // private reducer: (param0: U, param1: U) => U;

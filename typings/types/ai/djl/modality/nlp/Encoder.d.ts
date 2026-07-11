@@ -16,7 +16,7 @@ export abstract class Encoder extends AbstractBlock {
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     getStates(arg0: (Object | null)[]): (Object | null)[];
-    initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
+    initializeChildBlocks(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
     loadParameters(arg0: NDManager, arg1: DataInputStream): void;
     saveParameters(arg0: DataOutputStream): void;
 }

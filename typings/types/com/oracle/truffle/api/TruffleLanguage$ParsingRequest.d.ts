@@ -4,7 +4,7 @@ import type { Source } from '../../../../com/oracle/truffle/api/source/Source.d.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { OptionValues } from '../../../../org/graalvm/options/OptionValues.d.ts'
 export class TruffleLanguage$ParsingRequest extends Object {
-    constructor(source: Source, optionValues: OptionValues, argumentNames: string[])
+    constructor(source: Source, optionValues: OptionValues, ...argumentNames: string[])
     readonly argumentNames: string[];
     // private disposed: boolean;
     readonly optionValues: OptionValues;

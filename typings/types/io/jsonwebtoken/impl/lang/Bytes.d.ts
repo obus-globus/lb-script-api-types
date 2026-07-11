@@ -7,7 +7,7 @@ export class Bytes extends Object {
     static bitsMsg(paramarg0: number): string;
     static bytesMsg(paramarg0: number): string;
     static clear(paramarg0: number[]): void;
-    static concat(paramarg0: (Object | null)[]): number[];
+    static concat(...paramarg0: (Object | null)[]): number[];
     static endsWith(paramarg0: number[], paramarg1: number[]): boolean;
     static increment(paramarg0: number[]): void;
     static indexOf(paramarg0: number[], paramarg1: number[]): number;

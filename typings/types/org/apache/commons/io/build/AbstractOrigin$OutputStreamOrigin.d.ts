@@ -5,6 +5,6 @@ import type { OpenOption } from '../../../../../java/nio/file/OpenOption.d.ts'
 import type { AbstractOrigin } from '../../../../../org/apache/commons/io/build/AbstractOrigin.d.ts'
 export class AbstractOrigin$OutputStreamOrigin extends AbstractOrigin<OutputStream, AbstractOrigin$OutputStreamOrigin> {
     constructor(arg0: OutputStream)
-    getOutputStream(arg0: OpenOption[]): OutputStream;
-    getWriter(arg0: Charset, arg1: OpenOption[]): Writer;
+    getOutputStream(...arg0: OpenOption[]): OutputStream;
+    getWriter(arg0: Charset, ...arg1: OpenOption[]): Writer;
 }

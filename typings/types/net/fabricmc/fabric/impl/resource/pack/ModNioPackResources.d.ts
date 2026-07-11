@@ -36,7 +36,7 @@ export class ModNioPackResources extends Object implements ModPackResources, Pac
     getNamespaces(arg0: PackType): string[];
     // private getPath(arg0: string): Path[];
     getResource(arg0: PackType, arg1: Identifier): () => InputStream;
-    getRootResource(arg0: string[]): () => InputStream;
+    getRootResource(...arg0: string[]): () => InputStream;
     // private hasAbsentNs(arg0: string): boolean;
     knownPackInfo(): Optional<KnownPack>;
     listResources(arg0: PackType, arg1: string, arg2: string, arg3: (param0: Object | null, param1: Object | null) => void): void;

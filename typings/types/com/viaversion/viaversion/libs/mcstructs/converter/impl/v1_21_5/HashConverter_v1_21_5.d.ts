@@ -47,9 +47,10 @@ export class HashConverter_v1_21_5 extends Object implements DataConverter<HashC
     emptyMap(): HashCode;
     fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<HashCode>;
+    mergeList(arg0: HashCode, ...arg1: HashCode[]): Result<HashCode>;
     mergeList(arg0: HashCode, arg1: HashCode[]): Result<HashCode>;
     mergeMap(arg0: HashCode, arg1: HashCode, arg2: HashCode): Result<HashCode>;
-    mergeMap(arg0: HashCode, arg1: HashCode[]): Result<HashCode>;
+    mergeMap(arg0: HashCode, ...arg1: HashCode[]): Result<HashCode>;
     mergeMap(arg0: HashCode, arg1: Map<HashCode, HashCode>): Result<HashCode>;
     toCodec(): Codec<HashCode>;
 }

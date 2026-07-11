@@ -13,8 +13,8 @@ export class WinBase$FILETIME$ByReference extends WinBase$FILETIME implements St
     static autoRead(paramarg0: (Object | null)[]): void;
     static autoWrite(paramarg0: (Object | null)[]): void;
     static createFieldsOrder(paramarg0: string): string[];
-    static createFieldsOrder(paramarg0: (Object | null)[]): string[];
-    static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
+    static createFieldsOrder(...paramarg0: (Object | null)[]): string[];
+    static createFieldsOrder(paramarg0: string[], ...paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static dateToFileTime(paramarg0: Date): number;
     static filetimeToDate(paramarg0: number, paramarg1: number): Date;

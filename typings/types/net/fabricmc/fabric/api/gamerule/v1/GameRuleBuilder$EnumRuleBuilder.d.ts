@@ -23,5 +23,5 @@ export class GameRuleBuilder$EnumRuleBuilder<E extends Enum<E>> extends GameRule
     codec(arg0: Codec<E>): GameRuleBuilder$EnumRuleBuilder<E>;
     commandResultSupplier(arg0: (param0: E) => number): GameRuleBuilder$EnumRuleBuilder<E>;
     requiredFeatures(arg0: FeatureFlagSet): GameRuleBuilder$EnumRuleBuilder<E>;
-    supportedValues(arg0: E[]): GameRuleBuilder$EnumRuleBuilder<E>;
+    supportedValues(...arg0: E[]): GameRuleBuilder$EnumRuleBuilder<E>;
 }

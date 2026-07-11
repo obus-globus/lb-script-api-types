@@ -4,6 +4,6 @@ import type { PoiType } from '../../../../../../../../../net/minecraft/world/ent
 import type { BlockState } from '../../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class PoiHelper extends Object {
     static register(paramarg0: Identifier, paramarg1: number, paramarg2: number, paramarg3: BlockState[]): PoiType;
-    static register(paramarg0: Identifier, paramarg1: number, paramarg2: number, paramarg3: (Object | null)[]): PoiType;
+    static register(paramarg0: Identifier, paramarg1: number, paramarg2: number, ...paramarg3: (Object | null)[]): PoiType;
     private constructor()
 }

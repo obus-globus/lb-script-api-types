@@ -30047,6 +30047,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.BoxVertexIteratorKt": typeof import("../types/net/ccbluex/liquidbounce/render/BoxVertexIteratorKt").BoxVertexIteratorKt;
     "net.ccbluex.liquidbounce.render.CachedMeshStorage": typeof import("../types/net/ccbluex/liquidbounce/render/CachedMeshStorage").CachedMeshStorage;
     "net.ccbluex.liquidbounce.render.CachedMeshStorage$UploadContext": typeof import("../types/net/ccbluex/liquidbounce/render/CachedMeshStorage$UploadContext").CachedMeshStorage$UploadContext;
+    "net.ccbluex.liquidbounce.render.CachedUniform": typeof import("../types/net/ccbluex/liquidbounce/render/CachedUniform").CachedUniform;
     "net.ccbluex.liquidbounce.render.ClientRenderPipelines": typeof import("../types/net/ccbluex/liquidbounce/render/ClientRenderPipelines").ClientRenderPipelines;
     "net.ccbluex.liquidbounce.render.ClientRenderPipelines$GUI": typeof import("../types/net/ccbluex/liquidbounce/render/ClientRenderPipelines$GUI").ClientRenderPipelines$GUI;
     "net.ccbluex.liquidbounce.render.ClientRenderPipelines$JCEF": typeof import("../types/net/ccbluex/liquidbounce/render/ClientRenderPipelines$JCEF").ClientRenderPipelines$JCEF;
@@ -30080,6 +30081,8 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.VertexBuilderKt$WhenMappings": typeof import("../types/net/ccbluex/liquidbounce/render/VertexBuilderKt$WhenMappings").VertexBuilderKt$WhenMappings;
     "net.ccbluex.liquidbounce.render.WorldRenderEnvironment": typeof import("../types/net/ccbluex/liquidbounce/render/WorldRenderEnvironment").WorldRenderEnvironment;
     "net.ccbluex.liquidbounce.render.engine.BlurEffectRenderer": typeof import("../types/net/ccbluex/liquidbounce/render/engine/BlurEffectRenderer").BlurEffectRenderer;
+    "net.ccbluex.liquidbounce.render.engine.BlurEffectRenderer$BlurBlendUniform": typeof import("../types/net/ccbluex/liquidbounce/render/engine/BlurEffectRenderer$BlurBlendUniform").BlurEffectRenderer$BlurBlendUniform;
+    "net.ccbluex.liquidbounce.render.engine.BlurEffectRenderer$BlurKernelUniform": typeof import("../types/net/ccbluex/liquidbounce/render/engine/BlurEffectRenderer$BlurKernelUniform").BlurEffectRenderer$BlurKernelUniform;
     "net.ccbluex.liquidbounce.render.engine.LazyRenderTargetHolder": typeof import("../types/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder").LazyRenderTargetHolder;
     "net.ccbluex.liquidbounce.render.engine.OutlineShaderRenderer": typeof import("../types/net/ccbluex/liquidbounce/render/engine/OutlineShaderRenderer").OutlineShaderRenderer;
     "net.ccbluex.liquidbounce.render.engine.OverlayShaderRenderer": typeof import("../types/net/ccbluex/liquidbounce/render/engine/OverlayShaderRenderer").OverlayShaderRenderer;

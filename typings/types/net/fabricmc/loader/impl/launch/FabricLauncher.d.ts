@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EnvType } from '../../../../../net/fabricmc/api/EnvType.d.ts'
 import type { MappingConfiguration } from '../../../../../net/fabricmc/loader/impl/launch/MappingConfiguration.d.ts'
 export interface FabricLauncher extends Object{
-    addToClassPath(arg0: Path[], arg1: string[]): void;
+    addToClassPath(arg0: Path[], ...arg1: string[]): void;
     getClassByteArray(arg0: string, arg1: boolean): number[];
     getClassPath(): Path[][];
     getEntrypoint(): string;
@@ -19,6 +19,6 @@ export interface FabricLauncher extends Object{
     isClassLoaded(arg0: string): boolean;
     isDevelopment(): boolean;
     loadIntoTarget(arg0: string): Class<Object>;
-    setAllowedPrefixes(arg0: Path[], arg1: string[]): void;
+    setAllowedPrefixes(arg0: Path[], ...arg1: string[]): void;
     setValidParentClassPath(arg0: Path[][]): void;
 }

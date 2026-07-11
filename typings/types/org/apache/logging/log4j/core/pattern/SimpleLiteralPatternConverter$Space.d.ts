@@ -6,7 +6,7 @@ export class SimpleLiteralPatternConverter$Space extends SimpleLiteralPatternCon
     static CATEGORY: string;
     private constructor()
     format(output: StringBuilder): void;
-    format(output: StringBuilder, args: Object[]): void;
+    format(output: StringBuilder, ...args: Object[]): void;
     format(ignored: Object, output: StringBuilder): void;
     format(ignored: LogEvent, output: StringBuilder): void;
 }

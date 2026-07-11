@@ -18,7 +18,7 @@ export class EpollChannelConfig extends DefaultChannelConfig {
     getMaxBytesPerGatheringWrite(): number;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     setAllocator(arg0: ByteBufAllocator): EpollChannelConfig;
     setAutoRead(arg0: boolean): EpollChannelConfig;
     setConnectTimeoutMillis(arg0: number): EpollChannelConfig;

@@ -52,7 +52,7 @@ export class HostAccess$Builder extends Object {
     allowIteratorAccess(iteratorAccess: boolean): HostAccess$Builder;
     allowListAccess(listAccess: boolean): HostAccess$Builder;
     allowMapAccess(mapAccess: boolean): HostAccess$Builder;
-    allowMutableTargetMappings(mapping: HostAccess$MutableTargetMapping[]): HostAccess$Builder;
+    allowMutableTargetMappings(...mapping: HostAccess$MutableTargetMapping[]): HostAccess$Builder;
     allowPublicAccess(allow: boolean): HostAccess$Builder;
     build(): HostAccess;
     denyAccess(clazz: Class<Object>): HostAccess$Builder;

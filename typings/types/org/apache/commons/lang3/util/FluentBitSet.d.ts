@@ -17,7 +17,7 @@ export class FluentBitSet extends Object implements Serializable, Cloneable {
     clear(): FluentBitSet;
     clear(arg0: number): FluentBitSet;
     clear(arg0: number, arg1: number): FluentBitSet;
-    clear(arg0: number[]): FluentBitSet;
+    clear(...arg0: number[]): FluentBitSet;
     clone(): Object;
     equals(arg0: Object | null): boolean;
     flip(arg0: number): FluentBitSet;
@@ -32,7 +32,7 @@ export class FluentBitSet extends Object implements Serializable, Cloneable {
     nextClearBit(arg0: number): number;
     nextSetBit(arg0: number): number;
     or(arg0: BitSet): FluentBitSet;
-    or(arg0: FluentBitSet[]): FluentBitSet;
+    or(...arg0: FluentBitSet[]): FluentBitSet;
     or(arg0: FluentBitSet): FluentBitSet;
     previousClearBit(arg0: number): number;
     previousSetBit(arg0: number): number;
@@ -40,7 +40,7 @@ export class FluentBitSet extends Object implements Serializable, Cloneable {
     set(arg0: number, arg1: boolean): FluentBitSet;
     set(arg0: number, arg1: number): FluentBitSet;
     set(arg0: number, arg1: number, arg2: boolean): FluentBitSet;
-    set(arg0: number[]): FluentBitSet;
+    set(...arg0: number[]): FluentBitSet;
     setInclusive(arg0: number, arg1: number): FluentBitSet;
     size(): number;
     stream(): IntStream;

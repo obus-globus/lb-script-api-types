@@ -19,7 +19,7 @@ import type { InvocationHandler } from '../../../../../../../java/lang/reflect/I
 import type { Method } from '../../../../../../../java/lang/reflect/Method.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ProxyObject extends Object implements IConnectionPoint, IDispatch_2, IRawDispatchHandle, InvocationHandler {
-    static invokeDefault(paramarg0: Object, paramarg1: Method, paramarg2: (Object | null)[]): Object;
+    static invokeDefault(paramarg0: Object, paramarg1: Method, ...paramarg2: (Object | null)[]): Object;
     constructor(arg0: Class<Object>, arg1: IDispatch, arg2: ObjectFactory)
     // private factory: ObjectFactory;
     readonly rawDispatch: IDispatch;
@@ -34,14 +34,14 @@ export class ProxyObject extends Object implements IConnectionPoint, IDispatch_2
     // private getIID(arg0: ComInterface): Guid$IID;
     // private getMethodName(arg0: Method, arg1: ComMethod): string;
     // private getMutatorName(arg0: Method, arg1: ComProperty): string;
-    getProperty<T extends unknown>(arg0: Class<T>, arg1: OaIdl$DISPID, arg2: Object[]): T;
-    getProperty<T extends unknown>(arg0: Class<T>, arg1: string, arg2: Object[]): T;
+    getProperty<T extends unknown>(arg0: Class<T>, arg1: OaIdl$DISPID, ...arg2: Object[]): T;
+    getProperty<T extends unknown>(arg0: Class<T>, arg1: string, ...arg2: Object[]): T;
     getRawDispatch(): IDispatch;
     // private getUnknownId(): number;
     hashCode(): number;
     invoke(arg0: Object, arg1: Method, arg2: Object[]): Object;
-    invokeMethod<T extends unknown>(arg0: Class<T>, arg1: OaIdl$DISPID, arg2: Object[]): T;
-    invokeMethod<T extends unknown>(arg0: Class<T>, arg1: string, arg2: Object[]): T;
+    invokeMethod<T extends unknown>(arg0: Class<T>, arg1: OaIdl$DISPID, ...arg2: Object[]): T;
+    invokeMethod<T extends unknown>(arg0: Class<T>, arg1: string, ...arg2: Object[]): T;
     oleMethod(arg0: number, arg1: Variant$VARIANT$ByReference, arg2: IDispatch, arg3: OaIdl$DISPID): WinNT$HRESULT;
     oleMethod(arg0: number, arg1: Variant$VARIANT$ByReference, arg2: IDispatch, arg3: OaIdl$DISPID, arg4: Variant$VARIANT): WinNT$HRESULT;
     oleMethod(arg0: number, arg1: Variant$VARIANT$ByReference, arg2: IDispatch, arg3: OaIdl$DISPID, arg4: Variant$VARIANT[]): WinNT$HRESULT;
@@ -58,9 +58,9 @@ export class ProxyObject extends Object implements IConnectionPoint, IDispatch_2
     resolveDispId(arg0: IDispatch, arg1: string): OaIdl$DISPID;
     resolveDispId(arg0: string): OaIdl$DISPID;
     setProperty<T extends unknown>(arg0: OaIdl$DISPID, arg1: T): void;
-    // private setProperty(arg0: OaIdl$DISPID, arg1: Object[]): void;
+    // private setProperty(arg0: OaIdl$DISPID, ...arg1: Object[]): void;
     setProperty<T extends unknown>(arg0: string, arg1: T): void;
-    // private setProperty(arg0: string, arg1: Object[]): void;
+    // private setProperty(arg0: string, ...arg1: Object[]): void;
     toString(): string;
     unadvise(arg0: Class<Object>, arg1: IComEventCallbackCookie): void;
     // private unfoldWhenVarargs(arg0: Method, arg1: Object[]): Object[];

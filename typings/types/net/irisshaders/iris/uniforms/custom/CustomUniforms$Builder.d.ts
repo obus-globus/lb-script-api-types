@@ -8,6 +8,6 @@ export class CustomUniforms$Builder extends Object {
     constructor()
     // private variables: { [key: string]: CustomUniforms$Builder$Variable };
     addVariable(arg0: string, arg1: string, arg2: string, arg3: boolean): void;
-    build(arg0: (param0: UniformHolder) => void[]): CustomUniforms;
+    build(...arg0: (param0: UniformHolder) => void[]): CustomUniforms;
     build(arg0: CustomUniformFixedInputUniformsHolder): CustomUniforms;
 }

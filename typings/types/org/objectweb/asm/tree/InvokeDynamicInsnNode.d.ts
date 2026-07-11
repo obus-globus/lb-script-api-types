@@ -20,7 +20,7 @@ export class InvokeDynamicInsnNode extends AbstractInsnNode {
     static TABLESWITCH_INSN: number;
     static TYPE_INSN: number;
     static VAR_INSN: number;
-    constructor(arg0: string, arg1: string, arg2: Handle, arg3: Object[])
+    constructor(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[])
     bsm: Handle;
     bsmArgs: Object[];
     desc: string;

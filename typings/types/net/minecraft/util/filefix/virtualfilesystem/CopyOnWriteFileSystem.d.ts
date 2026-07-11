@@ -16,8 +16,8 @@ export class CopyOnWriteFileSystem extends FileSystem {
     static createDirectories(paramdirectories: Path[][][]): void;
     static hardLinkFiles(parammoves: FileMove[]): void;
     static moveFiles(parammoves: FileMove[]): void;
-    static moveFilesWithRetry(parammoves: FileMove[], paramoptions: (Object | null)[]): void;
-    static tryRevertMoves(parammoves: FileMove[], paramoptions: (Object | null)[]): FileMove[];
+    static moveFilesWithRetry(parammoves: FileMove[], ...paramoptions: (Object | null)[]): void;
+    static tryRevertMoves(parammoves: FileMove[], ...paramoptions: (Object | null)[]): FileMove[];
     private constructor(name: string, baseDirectory: Path[], tmpDirectory: Path[], skippedPaths: (param0: Path[][]) => boolean)
     // private baseDirectory: Path[];
     // private fileTree: DirectoryNode;
@@ -36,7 +36,7 @@ export class CopyOnWriteFileSystem extends FileSystem {
     createTemporaryFilePath(): Path[];
     fileTree(): DirectoryNode;
     getFileStores(): FileStore[];
-    getPath(first: string, more: string[]): (Object | null)[];
+    getPath(first: string, ...more: string[]): (Object | null)[];
     getPathMatcher(syntaxAndPattern: string): (param0: Path[][]) => boolean;
     getRootDirectories(): Path[][];
     getSeparator(): string;

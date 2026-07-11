@@ -13,11 +13,11 @@ export class MemberMatcher extends Object implements ITargetSelector {
     // private parseException: Exception;
     // private patterns: Pattern[];
     attach(arg0: ISelectorContext): ITargetSelector;
-    configure(arg0: ITargetSelector$Configure, arg1: string[]): ITargetSelector;
+    configure(arg0: ITargetSelector$Configure, ...arg1: string[]): ITargetSelector;
     getMaxMatchCount(): number;
     getMinMatchCount(): number;
     match<TNode extends unknown>(arg0: ElementNode<TNode>): MatchResult;
-    // private matches(arg0: string[]): MatchResult;
+    // private matches(...arg0: string[]): MatchResult;
     next(): ITargetSelector;
     toString(): string;
     validate(): ITargetSelector;

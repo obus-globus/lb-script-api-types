@@ -67,7 +67,7 @@ export class TruffleInstrument$Env extends Object {
     lookup<S extends unknown>(language: LanguageInfo, type: Class<S>): S;
     onCreate(instrument: TruffleInstrument): Object[];
     out(): OutputStream;
-    parse(source: Source, argumentNames: string[]): CallTarget;
+    parse(source: Source, ...argumentNames: string[]): CallTarget;
     parseInline(source: Source, node: Node, frame: MaterializedFrame): ExecutableNode;
     registerService(service: Object): void;
     setAsynchronousStackDepth(depth: number): void;

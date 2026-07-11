@@ -4,11 +4,11 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export interface Promise<V extends unknown> extends Future<V>, Object{
     addListener(arg0: GenericFutureListener<Future<V>>): Promise<V>;
-    addListeners(arg0: GenericFutureListener<Future<V>>[]): Promise<V>;
+    addListeners(...arg0: GenericFutureListener<Future<V>>[]): Promise<V>;
     await(): Promise<V>;
     awaitUninterruptibly(): Promise<V>;
     removeListener(arg0: GenericFutureListener<Future<V>>): Promise<V>;
-    removeListeners(arg0: GenericFutureListener<Future<V>>[]): Promise<V>;
+    removeListeners(...arg0: GenericFutureListener<Future<V>>[]): Promise<V>;
     setFailure(arg0: Throwable): Promise<V>;
     setSuccess(arg0: V): Promise<V>;
     setUncancellable(): boolean;

@@ -4,7 +4,7 @@ import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class ByteSource$SlicedByteSource extends ByteSource {
-    static concat(paramsources: (Object | null)[]): ByteSource;
+    static concat(...paramsources: (Object | null)[]): ByteSource;
     static concat(paramsources: ByteSource[]): ByteSource;
     static concat(paramsources: Iterator<ByteSource>): ByteSource;
     static empty(): ByteSource;

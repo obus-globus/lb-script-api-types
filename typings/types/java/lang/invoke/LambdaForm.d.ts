@@ -38,8 +38,8 @@ export class LambdaForm extends Object {
     // private generateDebugName(): string;
     hashCode(): number;
     interpretName(arg0: LambdaForm$Name, arg1: Object[]): Object;
-    interpretWithArguments(arg0: Object[]): Object;
-    interpretWithArgumentsTracing(arg0: Object[]): Object;
+    interpretWithArguments(...arg0: Object[]): Object;
+    interpretWithArgumentsTracing(...arg0: Object[]): Object;
     isGuardWithCatch(arg0: number): boolean;
     isLoop(arg0: number): boolean;
     // private isMatchingIdiom(arg0: number, arg1: string, arg2: number): boolean;

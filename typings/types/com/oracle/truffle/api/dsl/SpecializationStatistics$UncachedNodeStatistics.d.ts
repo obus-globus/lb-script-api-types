@@ -11,7 +11,7 @@ export class SpecializationStatistics$UncachedNodeStatistics extends Specializat
     // private specializationNames: string[];
     acceptExecute(specializationIndex: number, arg0: Class<Object>): void;
     acceptExecute(specializationIndex: number, arg0: Class<Object>, arg1: Class<Object>): void;
-    acceptExecute(specializationIndex: number, args: Class<Object>[]): void;
+    acceptExecute(specializationIndex: number, ...args: Class<Object>[]): void;
     // private createUncachedStatistic(statistics: SpecializationStatistics, n: Node): SpecializationStatistics$EnabledNodeStatistics;
     // private lookup(): SpecializationStatistics$NodeStatistics;
     resolveValueClass(value: Object): Class<Object>;

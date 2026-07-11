@@ -3,7 +3,7 @@ import type { BaseNCodec$AbstractBuilder } from '../../../../../org/apache/commo
 export class Base32$Builder extends BaseNCodec$AbstractBuilder<Base32, Base32$Builder> {
     constructor()
     get(): Base32;
-    setEncodeTable(arg0: number[]): Base32$Builder;
+    setEncodeTable(...arg0: number[]): Base32$Builder;
     setHexDecodeTable(arg0: boolean): Base32$Builder;
     setHexEncodeTable(arg0: boolean): Base32$Builder;
 }

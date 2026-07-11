@@ -22,7 +22,7 @@ export class DefaultTrainingConfig extends Object implements TrainingConfig {
     readonly optimizer: Optimizer;
     addEvaluator(arg0: Evaluator): DefaultTrainingConfig;
     addEvaluators<T extends Evaluator>(arg0: T[]): DefaultTrainingConfig;
-    addTrainingListeners(arg0: TrainingListener[]): DefaultTrainingConfig;
+    addTrainingListeners(...arg0: TrainingListener[]): DefaultTrainingConfig;
     getDevices(): Device[];
     getEvaluators(): Evaluator[];
     getExecutorService(): ExecutorService;

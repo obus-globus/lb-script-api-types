@@ -6,6 +6,6 @@ export class BuiltInsBinaryVersion extends BinaryVersion {
     static Companion: BinaryVersion$Companion;
     static INSTANCE: BuiltInsBinaryVersion;
     static INVALID_VERSION: BuiltInsBinaryVersion;
-    constructor(arg0: number[])
+    constructor(...arg0: number[])
     isCompatibleWithCurrentCompilerVersion(): boolean;
 }

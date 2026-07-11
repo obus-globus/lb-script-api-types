@@ -53,7 +53,7 @@ export class Style extends Object implements Copyable<Style> {
     setFont(arg0: Identifier): Style;
     setFont(arg0: FontDescription): Style;
     setFormatting(arg0: TextFormatting): Style;
-    setFormatting(arg0: TextFormatting[]): Style;
+    setFormatting(...arg0: TextFormatting[]): Style;
     setHoverEvent(arg0: HoverEvent): Style;
     setInsertion(arg0: string): Style;
     setItalic(arg0: boolean): Style;

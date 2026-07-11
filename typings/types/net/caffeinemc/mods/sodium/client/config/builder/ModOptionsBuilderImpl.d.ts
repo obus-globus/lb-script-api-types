@@ -28,7 +28,7 @@ export class ModOptionsBuilderImpl extends Object implements ModOptionsBuilder {
     addPage(arg0: PageBuilder): ModOptionsBuilder;
     build(): ModOptions;
     formatVersion(arg0: (param0: string) => string): ModOptionsBuilder;
-    registerFlagHook(arg0: (param0: Identifier[], param1: ConfigState) => void, arg1: Identifier[]): ModOptionsBuilder;
+    registerFlagHook(arg0: (param0: Identifier[], param1: ConfigState) => void, ...arg1: Identifier[]): ModOptionsBuilder;
     registerFlagHook(arg0: FlagHook): ModOptionsBuilder;
     registerOptionOverlay(arg0: Identifier, arg1: OptionBuilder): ModOptionsBuilder;
     registerOptionReplacement(arg0: Identifier, arg1: OptionBuilder): ModOptionsBuilder;

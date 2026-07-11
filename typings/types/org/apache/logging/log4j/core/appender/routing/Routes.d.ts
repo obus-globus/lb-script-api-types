@@ -5,7 +5,7 @@ import type { Routes$Builder } from '../../../../../../../org/apache/logging/log
 import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { AbstractScript } from '../../../../../../../org/apache/logging/log4j/core/script/AbstractScript.d.ts'
 export class Routes extends Object {
-    static createRoutes(parampattern: string, paramroutes: (Object | null)[]): Routes;
+    static createRoutes(parampattern: string, ...paramroutes: (Object | null)[]): Routes;
     static newBuilder(): Routes$Builder;
     constructor(arg0: Configuration, arg1: AbstractScript, arg2: string, arg3: Route[], arg4: any)
     // private configuration: Configuration;

@@ -9,8 +9,8 @@ export class DefaultCallTarget extends Object implements RootCallTarget {
     // private initialized: boolean;
     // private loaded: boolean;
     readonly rootNode: RootNode;
-    call(location: Node, args: Object[]): Object;
-    call(args: Object[]): Object;
+    call(location: Node, ...args: Object[]): Object;
+    call(...args: Object[]): Object;
     getRootNode(): RootNode;
     // private initialize(): void;
     isLoaded(): boolean;

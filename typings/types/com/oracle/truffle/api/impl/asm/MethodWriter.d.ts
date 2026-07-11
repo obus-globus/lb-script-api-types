@@ -94,7 +94,7 @@ export class MethodWriter extends MethodVisitor {
     visitInsn(opcode: number): void;
     visitInsnAnnotation(typeRef: number, typePath: TypePath, descriptor: string, visible: boolean): AnnotationVisitor;
     visitIntInsn(opcode: number, operand: number): void;
-    visitInvokeDynamicInsn(name: string, descriptor: string, bootstrapMethodHandle: Handle, bootstrapMethodArguments: Object[]): void;
+    visitInvokeDynamicInsn(name: string, descriptor: string, bootstrapMethodHandle: Handle, ...bootstrapMethodArguments: Object[]): void;
     visitJumpInsn(opcode: number, label: Label): void;
     visitLabel(label: Label): void;
     visitLdcInsn(value: Object): void;
@@ -109,7 +109,7 @@ export class MethodWriter extends MethodVisitor {
     visitParameter(name: string, access: number): void;
     visitParameterAnnotation(parameter: number, annotationDescriptor: string, visible: boolean): AnnotationVisitor;
     // private visitSwitchInsn(dflt: Label, labels: Label[]): void;
-    visitTableSwitchInsn(min: number, max: number, dflt: Label, labels: Label[]): void;
+    visitTableSwitchInsn(min: number, max: number, dflt: Label, ...labels: Label[]): void;
     visitTryCatchAnnotation(typeRef: number, typePath: TypePath, descriptor: string, visible: boolean): AnnotationVisitor;
     visitTryCatchBlock(start: Label, end: Label, handler: Label, type: string): void;
     visitTypeAnnotation(typeRef: number, typePath: TypePath, descriptor: string, visible: boolean): AnnotationVisitor;

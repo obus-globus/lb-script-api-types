@@ -18,19 +18,19 @@ export abstract class MarkerIgnoringBase extends NamedLoggerBase implements Logg
     debug(arg0: Marker, arg1: string): void;
     debug(arg0: Marker, arg1: string, arg2: Object): void;
     debug(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
-    debug(arg0: Marker, arg1: string, arg2: Object[]): void;
+    debug(arg0: Marker, arg1: string, ...arg2: Object[]): void;
     debug(arg0: Marker, arg1: string, arg2: Throwable): void;
     error(arg0: string): void;
     error(arg0: Marker, arg1: string): void;
     error(arg0: Marker, arg1: string, arg2: Object): void;
     error(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
-    error(arg0: Marker, arg1: string, arg2: Object[]): void;
+    error(arg0: Marker, arg1: string, ...arg2: Object[]): void;
     error(arg0: Marker, arg1: string, arg2: Throwable): void;
     info(arg0: string): void;
     info(arg0: Marker, arg1: string): void;
     info(arg0: Marker, arg1: string, arg2: Object): void;
     info(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
-    info(arg0: Marker, arg1: string, arg2: Object[]): void;
+    info(arg0: Marker, arg1: string, ...arg2: Object[]): void;
     info(arg0: Marker, arg1: string, arg2: Throwable): void;
     isDebugEnabled(): boolean;
     isDebugEnabled(arg0: Marker): boolean;
@@ -49,12 +49,12 @@ export abstract class MarkerIgnoringBase extends NamedLoggerBase implements Logg
     trace(arg0: Marker, arg1: string): void;
     trace(arg0: Marker, arg1: string, arg2: Object): void;
     trace(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
-    trace(arg0: Marker, arg1: string, arg2: Object[]): void;
+    trace(arg0: Marker, arg1: string, ...arg2: Object[]): void;
     trace(arg0: Marker, arg1: string, arg2: Throwable): void;
     warn(arg0: string): void;
     warn(arg0: Marker, arg1: string): void;
     warn(arg0: Marker, arg1: string, arg2: Object): void;
     warn(arg0: Marker, arg1: string, arg2: Object, arg3: Object): void;
-    warn(arg0: Marker, arg1: string, arg2: Object[]): void;
+    warn(arg0: Marker, arg1: string, ...arg2: Object[]): void;
     warn(arg0: Marker, arg1: string, arg2: Throwable): void;
 }

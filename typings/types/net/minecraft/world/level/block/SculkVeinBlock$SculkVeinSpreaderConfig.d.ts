@@ -6,7 +6,7 @@ import type { MultifaceSpreader$SpreadType } from '../../../../../net/minecraft/
 import type { SculkVeinBlock } from '../../../../../net/minecraft/world/level/block/SculkVeinBlock.d.ts'
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class SculkVeinBlock$SculkVeinSpreaderConfig extends MultifaceSpreader$DefaultSpreaderConfig {
-    constructor(null_: SculkVeinBlock, spreadTypes: MultifaceSpreader$SpreadType[])
+    constructor(null_: SculkVeinBlock, ...spreadTypes: MultifaceSpreader$SpreadType[])
     readonly spreadTypes: MultifaceSpreader$SpreadType[];
     getSpreadTypes(): MultifaceSpreader$SpreadType[];
     isOtherBlockValidAsSource(state: BlockState): boolean;

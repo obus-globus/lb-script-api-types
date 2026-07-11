@@ -42,7 +42,7 @@ export class KnotClassDelegate<T extends ClassLoader & KnotClassDelegate$ClassLo
     // private isValidParentUrl(arg0: URL, arg1: string): boolean;
     loadClass(arg0: string, arg1: boolean): Class<Object>;
     loadIntoTarget(arg0: string): Class<Object>;
-    setAllowedPrefixes(arg0: Path[], arg1: string[]): void;
+    setAllowedPrefixes(arg0: Path[], ...arg1: string[]): void;
     setValidParentClassPath(arg0: Path[][]): void;
     tryLoadClass(arg0: string, arg1: boolean): Class<Object>;
 }

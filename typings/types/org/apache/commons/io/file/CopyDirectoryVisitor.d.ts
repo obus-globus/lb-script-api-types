@@ -9,8 +9,8 @@ import type { PathFilter } from '../../../../../org/apache/commons/io/file/PathF
 export class CopyDirectoryVisitor extends CountingPathVisitor {
     static withBigIntegerCounters(): CountingPathVisitor;
     static withLongCounters(): CountingPathVisitor;
-    constructor(arg0: Counters$PathCounters, arg1: Path[], arg2: Path[], arg3: CopyOption[])
-    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg3: Path[], arg4: Path[], arg5: CopyOption[])
+    constructor(arg0: Counters$PathCounters, arg1: Path[], arg2: Path[], ...arg3: CopyOption[])
+    constructor(arg0: Counters$PathCounters, arg1: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path[][], param1: BasicFileAttributes) => FileVisitResult, arg3: Path[], arg4: Path[], ...arg5: CopyOption[])
     readonly copyOptions: CopyOption[];
     readonly sourceDirectory: Path[];
     readonly targetDirectory: Path[];

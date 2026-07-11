@@ -12,7 +12,7 @@ export class PromiseLibraryGen extends LibraryFactory<PromiseLibrary> {
     private constructor()
     createDelegate(delegateLibrary: PromiseLibrary): PromiseLibrary;
     createDispatchImpl(limit: number): PromiseLibrary;
-    createMessageBitSet(messages: Message[]): FinalBitSet;
+    createMessageBitSet(...messages: Message[]): FinalBitSet;
     createProxy(library: ReflectionLibrary): PromiseLibrary;
     createUncachedDispatch(): PromiseLibrary;
     genericDispatch(originalLib: Library, receiver: Object, message: Message, args: Object[], offset: number): Object;

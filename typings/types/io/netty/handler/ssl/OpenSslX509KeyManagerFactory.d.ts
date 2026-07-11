@@ -13,7 +13,7 @@ export class OpenSslX509KeyManagerFactory extends KeyManagerFactory {
     static newEngineBased(paramarg0: (Object | null)[], paramarg1: string): OpenSslX509KeyManagerFactory;
     static newKeyless(paramarg0: File): OpenSslX509KeyManagerFactory;
     static newKeyless(paramarg0: InputStream): OpenSslX509KeyManagerFactory;
-    static newKeyless(paramarg0: (Object | null)[]): OpenSslX509KeyManagerFactory;
+    static newKeyless(...paramarg0: (Object | null)[]): OpenSslX509KeyManagerFactory;
     constructor()
     constructor(arg0: { [key: string]: any })
     constructor(arg0: string, arg1: { [key: string]: any })

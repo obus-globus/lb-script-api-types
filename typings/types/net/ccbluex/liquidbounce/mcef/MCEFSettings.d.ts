@@ -11,8 +11,8 @@ export class MCEFSettings extends Object {
     readonly multiPartDownloadConfig: MultiPartDownloadConfig;
     readonly okHttpClient: OkHttpClient;
     readonly userAgent: string;
-    appendCefSwitches(arg0: string[]): void;
-    appendHosts(arg0: string[]): void;
+    appendCefSwitches(...arg0: string[]): void;
+    appendHosts(...arg0: string[]): void;
     getCacheDirectory(): File;
     getCefSwitches(): string[];
     getHosts(): string[];
@@ -20,8 +20,8 @@ export class MCEFSettings extends Object {
     getMultiPartDownloadConfig(): MultiPartDownloadConfig;
     getOkHttpClient(): OkHttpClient;
     getUserAgent(): string;
-    removeCefSwitches(arg0: string[]): void;
-    removeHosts(arg0: string[]): void;
+    removeCefSwitches(...arg0: string[]): void;
+    removeHosts(...arg0: string[]): void;
     setCacheDirectory(arg0: File): void;
     setCefSwitches(arg0: string[]): void;
     setHosts(arg0: string[]): void;

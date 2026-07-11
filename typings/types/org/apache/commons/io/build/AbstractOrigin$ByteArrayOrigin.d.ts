@@ -7,7 +7,7 @@ export class AbstractOrigin$ByteArrayOrigin extends AbstractOrigin<number[], Abs
     constructor(arg0: number[])
     getByteArray(): number[];
     getByteArray(arg0: number, arg1: number): number[];
-    getInputStream(arg0: OpenOption[]): InputStream;
+    getInputStream(...arg0: OpenOption[]): InputStream;
     getReader(arg0: Charset): Reader;
     size(): number;
 }

@@ -9,7 +9,7 @@ import type { Parser } from '../../../../org/apache/tika/parser/Parser.d.ts'
 import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts'
 export class CompositeParser extends Object implements Parser {
     constructor()
-    constructor(arg0: MediaTypeRegistry, arg1: Parser[])
+    constructor(arg0: MediaTypeRegistry, ...arg1: Parser[])
     constructor(arg0: MediaTypeRegistry, arg1: Parser[])
     constructor(arg0: MediaTypeRegistry, arg1: Parser[], arg2: Class<Parser>[])
     readonly fallback: Parser;

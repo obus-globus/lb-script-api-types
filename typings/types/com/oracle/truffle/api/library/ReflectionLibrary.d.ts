@@ -7,5 +7,5 @@ export abstract class ReflectionLibrary extends Library {
     static getUncached(): ReflectionLibrary;
     static getUncached(paramv: Object): ReflectionLibrary;
     constructor()
-    send(receiver: Object, message: Message, args: Object[]): Object;
+    send(receiver: Object, message: Message, ...args: Object[]): Object;
 }

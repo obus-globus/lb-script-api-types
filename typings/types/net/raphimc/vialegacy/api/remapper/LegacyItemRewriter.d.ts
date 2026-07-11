@@ -23,7 +23,7 @@ export abstract class LegacyItemRewriter<C extends ClientboundPacketType, S exte
     addNonExistentItem(arg0: number, arg1: number): void;
     addNonExistentItem(arg0: number, arg1: number, arg2: number): void;
     addNonExistentItemRange(arg0: number, arg1: number): void;
-    addNonExistentItems(arg0: number[]): void;
+    addNonExistentItems(...arg0: number[]): void;
     addRemappedItem(arg0: number, arg1: number, arg2: number, arg3: number, arg4: string): void;
     addRemappedItem(arg0: number, arg1: number, arg2: number, arg3: string): void;
     addRemappedItem(arg0: number, arg1: number, arg2: string): void;

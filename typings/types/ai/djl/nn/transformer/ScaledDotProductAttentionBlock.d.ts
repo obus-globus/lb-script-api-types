@@ -29,5 +29,5 @@ export class ScaledDotProductAttentionBlock extends AbstractBlock {
     getQueryProjection(): Linear;
     getResultProjection(): Linear;
     getValueProjection(): Linear;
-    initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
+    initializeChildBlocks(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
 }

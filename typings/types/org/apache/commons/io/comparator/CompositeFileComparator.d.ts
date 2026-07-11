@@ -4,7 +4,7 @@ import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractFileComparator } from '../../../../../org/apache/commons/io/comparator/AbstractFileComparator.d.ts'
 export class CompositeFileComparator extends AbstractFileComparator implements Serializable {
-    constructor(arg0: (param0: Object) => boolean[])
+    constructor(...arg0: (param0: Object) => boolean[])
     constructor(arg0: (param0: Object) => boolean[])
     // private delegates: (param0: Object) => boolean[];
     compare(arg0: File, arg1: File): number;

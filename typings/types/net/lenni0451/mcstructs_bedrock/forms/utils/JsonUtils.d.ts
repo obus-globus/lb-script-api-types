@@ -2,7 +2,7 @@ import type { JsonElement } from '../../../../../com/google/gson/JsonElement.d.t
 import type { JsonObject } from '../../../../../com/google/gson/JsonObject.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class JsonUtils extends Object {
-    static ensureContains(paramarg0: JsonObject, paramarg1: (Object | null)[]): void;
+    static ensureContains(paramarg0: JsonObject, ...paramarg1: (Object | null)[]): void;
     static ensureContainsArray(paramarg0: JsonObject, paramarg1: string): JsonElement[];
     static ensureContainsBoolean(paramarg0: JsonObject, paramarg1: string): boolean;
     static ensureContainsFloat(paramarg0: JsonObject, paramarg1: string): number;

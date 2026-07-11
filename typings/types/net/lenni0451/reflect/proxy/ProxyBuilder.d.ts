@@ -35,7 +35,7 @@ export class ProxyBuilder extends Object {
     getSuperClass(): Class<Object>;
     // private reset(): void;
     setClassDefiner(arg0: ProxyClassDefiner): ProxyBuilder;
-    setInterfaces(arg0: Class<Object>[]): ProxyBuilder;
+    setInterfaces(...arg0: Class<Object>[]): ProxyBuilder;
     setInvocationHandler(arg0: InvocationHandler): ProxyBuilder;
     setMethodFilter(arg0: (param0: Method) => boolean): ProxyBuilder;
     setMethodMapper(arg0: (param0: Method) => Method): ProxyBuilder;

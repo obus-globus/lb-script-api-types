@@ -20,7 +20,7 @@ export class TypeRewriteRule$Nop extends Enum<TypeRewriteRule$Nop> implements Ty
     static orElse(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
     static orElse(paramarg0: TypeRewriteRule, paramarg1: () => TypeRewriteRule): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
-    static seq(paramarg0: TypeRewriteRule, paramarg1: (Object | null)[]): TypeRewriteRule;
+    static seq(paramarg0: TypeRewriteRule, ...paramarg1: (Object | null)[]): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule[]): TypeRewriteRule;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): TypeRewriteRule$Nop;

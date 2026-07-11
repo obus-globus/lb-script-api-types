@@ -3,7 +3,7 @@ import type { LibraryExport } from '../../../../../com/oracle/truffle/api/librar
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class DefaultByteExportsGen$InteropLibraryExports extends LibraryExport<InteropLibrary> {
-    static register(paramreceiverClass: Class<Object>, paramlibs: Object | null): void;
+    static register(paramreceiverClass: Class<Object>, ...paramlibs: Object | null): void;
     private constructor()
     createCached(receiver: Object): InteropLibrary;
     createUncached(receiver: Object): InteropLibrary;

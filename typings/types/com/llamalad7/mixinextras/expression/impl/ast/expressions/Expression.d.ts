@@ -7,10 +7,10 @@ export abstract class Expression extends Object {
     readonly src: ExpressionSource;
     capture(arg0: FlowValue, arg1: ExpressionContext): void;
     getSrc(): ExpressionSource;
-    inputsMatch(arg0: FlowValue, arg1: ExpressionContext, arg2: Expression[]): boolean;
-    inputsMatch(arg0: FlowValue, arg1: ExpressionContext, arg2: boolean, arg3: Expression[]): boolean;
-    inputsMatch(arg0: number, arg1: FlowValue, arg2: ExpressionContext, arg3: Expression[]): boolean;
-    inputsMatch(arg0: number, arg1: FlowValue, arg2: ExpressionContext, arg3: boolean, arg4: Expression[]): boolean;
+    inputsMatch(arg0: FlowValue, arg1: ExpressionContext, ...arg2: Expression[]): boolean;
+    inputsMatch(arg0: FlowValue, arg1: ExpressionContext, arg2: boolean, ...arg3: Expression[]): boolean;
+    inputsMatch(arg0: number, arg1: FlowValue, arg2: ExpressionContext, ...arg3: Expression[]): boolean;
+    inputsMatch(arg0: number, arg1: FlowValue, arg2: ExpressionContext, arg3: boolean, ...arg4: Expression[]): boolean;
     matches(arg0: FlowValue, arg1: ExpressionContext): boolean;
     matchesImpl(arg0: FlowValue, arg1: ExpressionContext): boolean;
 }

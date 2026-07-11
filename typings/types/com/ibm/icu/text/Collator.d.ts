@@ -78,7 +78,7 @@ export abstract class Collator extends Object implements Freezable<Collator>, Co
     setDecomposition(arg0: number): void;
     setLocale(arg0: ULocale, arg1: ULocale): void;
     setMaxVariable(arg0: number): Collator;
-    setReorderCodes(arg0: number[]): void;
+    setReorderCodes(...arg0: number[]): void;
     setStrength(arg0: number): void;
     setStrength2(arg0: number): Collator;
     setVariableTop(arg0: number): void;

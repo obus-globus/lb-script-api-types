@@ -4,8 +4,8 @@ import type { IpFilterRuleType } from '../../../../io/netty/handler/ipfilter/IpF
 import type { IpSubnetFilterRule } from '../../../../io/netty/handler/ipfilter/IpSubnetFilterRule.d.ts'
 import type { InetSocketAddress } from '../../../../java/net/InetSocketAddress.d.ts'
 export class IpSubnetFilter extends AbstractRemoteAddressFilter<InetSocketAddress> {
-    constructor(arg0: IpSubnetFilterRule[])
-    constructor(arg0: boolean, arg1: IpSubnetFilterRule[])
+    constructor(...arg0: IpSubnetFilterRule[])
+    constructor(arg0: boolean, ...arg1: IpSubnetFilterRule[])
     constructor(arg0: boolean, arg1: IpSubnetFilterRule[])
     constructor(arg0: IpSubnetFilterRule[])
     // private acceptIfNotFound: boolean;

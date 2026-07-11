@@ -9,7 +9,7 @@ export class OptimizedIndirectCallNode extends IndirectCallNode {
     static getUncached(): IndirectCallNode;
     constructor()
     // private exceptionProfile: Class<Throwable>;
-    call(target: CallTarget, arguments: Object[]): Object;
+    call(target: CallTarget, ...arguments: Object[]): Object;
     // private handleException(t: Throwable): RuntimeException;
     // private profileExceptionType<T extends Throwable>(value: T): T;
 }

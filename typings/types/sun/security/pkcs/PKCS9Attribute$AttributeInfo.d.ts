@@ -6,7 +6,7 @@ import type { PKCS9Attribute$Encoder } from '../../../sun/security/pkcs/PKCS9Att
 import type { DerOutputStream } from '../../../sun/security/util/DerOutputStream.d.ts'
 import type { DerValue } from '../../../sun/security/util/DerValue.d.ts'
 export class PKCS9Attribute$AttributeInfo<T extends unknown> extends Record {
-    private constructor(singleValued: boolean, valueClass: Class<Object>, decoder: (param0: DerValue) => T, encoder: (param0: DerOutputStream, param1: T) => void, valueTags: number[])
+    private constructor(singleValued: boolean, valueClass: Class<Object>, decoder: (param0: DerValue) => T, encoder: (param0: DerOutputStream, param1: T) => void, ...valueTags: number[])
     // private decoder: (param0: DerValue) => T;
     // private encoder: (param0: DerOutputStream, param1: T) => void;
     // private singleValued: boolean;

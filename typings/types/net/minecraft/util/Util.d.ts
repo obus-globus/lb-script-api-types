@@ -53,7 +53,7 @@ export class Util extends Object {
     static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static allOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean, paramcondition5: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static allOf(paramconditions: Object | null): (param0: Object | null) => boolean;
+    static allOf(...paramconditions: Object | null): (param0: Object | null) => boolean;
     static allOfEnumExcept(paramvalue: Object | null): (Object | null)[];
     static anyOf(): (param0: Object | null) => boolean;
     static anyOf(paramconditions: (param0: Object) => boolean[]): (param0: Object | null) => boolean;
@@ -62,13 +62,13 @@ export class Util extends Object {
     static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean): (param0: Object | null) => boolean;
     static anyOf(paramcondition1: (param0: Object) => boolean, paramcondition2: (param0: Object) => boolean, paramcondition3: (param0: Object) => boolean, paramcondition4: (param0: Object) => boolean, paramcondition5: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static anyOf(paramconditions: Object | null): (param0: Object | null) => boolean;
+    static anyOf(...paramconditions: Object | null): (param0: Object | null) => boolean;
     static backgroundExecutor(): TracingExecutor;
     static blockUntilDone(paramtask: (param0: Executor) => Object | null, paramcompletionCheck: (param0: Object | null) => boolean): Object | null;
     static blockUntilDone(paramtask: (param0: Executor) => CompletableFuture<Object>): CompletableFuture<Object>;
     static copyAndAdd(paramelement: Object | null, paramlist: (Object | null)[]): (Object | null)[];
     static copyAndAdd(paramlist: (Object | null)[], paramelement: Object | null): (Object | null)[];
-    static copyAndAdd(paramlist: (Object | null)[], paramelements: Object | null): (Object | null)[];
+    static copyAndAdd(paramlist: (Object | null)[], ...paramelements: Object | null): (Object | null)[];
     static copyAndPut(parammap: Map<Object | null, Object | null>, paramkey: Object | null, paramvalue: Object | null): Map<Object | null, Object | null>;
     static copyBetweenDirs(paramsourceDir: Path[][], paramtargetDir: Path[][], paramsourcePath: Path[][]): void;
     static createIndexIdentityLookup(paramvalues: (Object | null)[]): (param0: Object | null) => number;
@@ -98,7 +98,7 @@ export class Util extends Object {
     static isAarch64(): boolean;
     static isSymmetrical(paramwidth: number, paramheight: number, paramingredients: (Object | null)[]): boolean;
     static join(paramfirst: (Object | null)[], paramsecond: (Object | null)[]): (Object | null)[];
-    static join(paramlists: Object | null): (Object | null)[];
+    static join(...paramlists: Object | null): (Object | null)[];
     static localizedDateFormatter(paramformatStyle: FormatStyle): DateTimeFormatter;
     static logAndPauseIfInIde(parammessage: string): void;
     static logAndPauseIfInIde(parammessage: string, paramthrowable: Throwable): void;
@@ -121,7 +121,7 @@ export class Util extends Object {
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>): Typed<Object>;
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>, paramacceptPartial: boolean): Typed<Object>;
     static runNamed(paramrunnable: () => void, paramname: string): void;
-    static safeMoveFile(paramfromPath: Path[][], paramtoPath: Path[][], paramoptions: (Object | null)[]): boolean;
+    static safeMoveFile(paramfromPath: Path[][], paramtoPath: Path[][], ...paramoptions: (Object | null)[]): boolean;
     static safeReplaceFile(paramtargetPath: Path[][], paramnewPath: Path[][], parambackupPath: Path[][]): void;
     static safeReplaceOrMoveFile(paramtargetPath: Path[][], paramnewPath: Path[][], parambackupPath: Path[][], paramnoRollback: boolean): boolean;
     static sanitizeName(paramvalue: string, paramisAllowedChar: (param0: string) => boolean): string;

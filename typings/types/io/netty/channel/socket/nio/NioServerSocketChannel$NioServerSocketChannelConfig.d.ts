@@ -9,7 +9,7 @@ export class NioServerSocketChannel$NioServerSocketChannelConfig extends Default
     autoReadCleared(): void;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     // private jdkChannel(): ServerSocketChannel;
     setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;
 }

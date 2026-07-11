@@ -14,8 +14,8 @@ export abstract class Kernel32Util extends Object implements WinDef {
     static QueryFullProcessImageName(paramarg0: number, paramarg1: number): string;
     static closeHandle(paramarg0: WinNT$HANDLE): void;
     static closeHandleRef(paramarg0: WinNT$HANDLEByReference): void;
-    static closeHandleRefs(paramarg0: (Object | null)[]): void;
-    static closeHandles(paramarg0: (Object | null)[]): void;
+    static closeHandleRefs(...paramarg0: (Object | null)[]): void;
+    static closeHandles(...paramarg0: (Object | null)[]): void;
     static deleteFile(paramarg0: string): void;
     static expandEnvironmentStrings(paramarg0: string): string;
     static extractVolumeGUID(paramarg0: string): string;

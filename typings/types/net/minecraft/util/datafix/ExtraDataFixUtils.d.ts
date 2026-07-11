@@ -11,7 +11,7 @@ export class ExtraDataFixUtils extends Object {
     static blockState(paramid: string, paramproperties: { [key: string]: string }): Dynamic<Object>;
     static cast(paramtype: Type<Object>, paramtyped: Typed<Object>): Typed<Object>;
     static cast(paramtype: Type<Object>, paramvalue: Object, paramops: DynamicOps<Object>): Typed<Object>;
-    static chainAllFilters(paramfixers: Object | null): (param0: Typed<Object>) => Typed<Object>;
+    static chainAllFilters(...paramfixers: Object | null): (param0: Typed<Object>) => Typed<Object>;
     static createBlockPos(paramdynamic: Dynamic<Object>, paramx: number, paramy: number, paramz: number): Dynamic<Object>;
     static dyeColorIdToName(paramid: number): string;
     static fixBlockPos(parampos: Dynamic<Object>): Dynamic<Object>;

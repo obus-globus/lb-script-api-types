@@ -22,7 +22,7 @@ export class Equippable$Builder extends Object {
     // private slot: EquipmentSlot;
     // private swappable: boolean;
     build(): Equippable;
-    setAllowedEntities(allowedEntities: EntityType<any>[]): Equippable$Builder;
+    setAllowedEntities(...allowedEntities: EntityType<any>[]): Equippable$Builder;
     setAllowedEntities(allowedEntities: Holder<EntityType<any>>[]): Equippable$Builder;
     setAsset(assetId: ResourceKey<EquipmentAsset>): Equippable$Builder;
     setCameraOverlay(cameraOverlay: Identifier): Equippable$Builder;

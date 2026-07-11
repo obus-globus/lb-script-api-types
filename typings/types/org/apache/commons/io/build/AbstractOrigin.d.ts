@@ -18,13 +18,13 @@ export abstract class AbstractOrigin<T extends unknown, B extends AbstractOrigin
     getByteArray(arg0: number, arg1: number): number[];
     getCharSequence(arg0: Charset): CharSequence;
     getFile(): File;
-    getInputStream(arg0: OpenOption[]): InputStream;
-    getOutputStream(arg0: OpenOption[]): OutputStream;
+    getInputStream(...arg0: OpenOption[]): InputStream;
+    getOutputStream(...arg0: OpenOption[]): OutputStream;
     getPath(): Path[];
-    getRandomAccessFile(arg0: OpenOption[]): RandomAccessFile;
+    getRandomAccessFile(...arg0: OpenOption[]): RandomAccessFile;
     getReader(arg0: Charset): Reader;
     // private getSimpleClassName(): string;
-    getWriter(arg0: Charset, arg1: OpenOption[]): Writer;
+    getWriter(arg0: Charset, ...arg1: OpenOption[]): Writer;
     size(): number;
     toString(): string;
 }

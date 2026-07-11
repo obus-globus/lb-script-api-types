@@ -8,8 +8,8 @@ export class Scope extends Object {
     clearFrameValues(): void;
     // private ensureCapacity(additionalEntryCount: number): void;
     get<T extends unknown>(name: Atom<T>): T;
-    getAny<T extends unknown>(names: Atom<T>[]): T;
-    getAnyOrThrow<T extends unknown>(names: Atom<T>[]): T;
+    getAny<T extends unknown>(...names: Atom<T>[]): T;
+    getAnyOrThrow<T extends unknown>(...names: Atom<T>[]): T;
     getOrDefault<T extends unknown>(name: Atom<T>, fallback: T): T;
     getOrThrow<T extends unknown>(name: Atom<T>): T;
     // private getPreviousMarkerIndex(markerKeyIndex: number): number;
@@ -24,5 +24,5 @@ export class Scope extends Object {
     toString(): string;
     // private validateStructure(): boolean;
     // private valueIndex(atom: Atom<Object>): number;
-    valueIndexForAny(atoms: Atom<Object>[]): number;
+    valueIndexForAny(...atoms: Atom<Object>[]): number;
 }

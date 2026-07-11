@@ -10,7 +10,7 @@ export class LoggerAdapterConsole extends LoggerAdapterAbstract {
     catching(arg0: Level, arg1: Throwable): void;
     // private getOutputStream(arg0: Level): PrintStream;
     getType(): string;
-    log(arg0: Level, arg1: string, arg2: Object[]): void;
+    log(arg0: Level, arg1: string, ...arg2: Object[]): void;
     log(arg0: Level, arg1: string, arg2: Throwable): void;
     setDebugStream(arg0: PrintStream): LoggerAdapterConsole;
     throwing<T extends Throwable>(arg0: T): T;

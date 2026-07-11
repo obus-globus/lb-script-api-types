@@ -16,7 +16,7 @@ export class EntryGroup extends CompositeEntryBase {
     static MAP_CODEC: MapCodec<EntryGroup>;
     static NO_CHILDREN_PROBLEM: ProblemReporter$Problem;
     static createCodec(paramconstructor: (param0: LootPoolEntryContainer[], param1: LootItemCondition[]) => CompositeEntryBase | null): MapCodec<CompositeEntryBase>;
-    static list(paramentries: Object | null): EntryGroup$Builder;
+    static list(...paramentries: Object | null): EntryGroup$Builder;
     constructor(children: LootPoolEntryContainer[], conditions: LootItemCondition[])
     codec(): MapCodec<EntryGroup>;
     compose(entries: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean[]): (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;

@@ -6,7 +6,7 @@ export class MarkerManager$Log4jMarker extends Object implements Marker, StringB
     constructor(name: string)
     readonly name: string;
     readonly parents: Marker[];
-    addParents(parentMarkers: Marker[]): Marker;
+    addParents(...parentMarkers: Marker[]): Marker;
     equals(o: Object | null): boolean;
     formatTo(sb: StringBuilder): void;
     getName(): string;
@@ -16,6 +16,6 @@ export class MarkerManager$Log4jMarker extends Object implements Marker, StringB
     isInstanceOf(markerName: string): boolean;
     isInstanceOf(marker: Marker): boolean;
     remove(parent: Marker): boolean;
-    setParents(markers: Marker[]): Marker;
+    setParents(...markers: Marker[]): Marker;
     toString(): string;
 }

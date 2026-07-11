@@ -15,7 +15,7 @@ export class KQueueChannelConfig extends DefaultChannelConfig {
     getMaxBytesPerGatheringWrite(): number;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getRcvAllocTransportProvidesGuess(): boolean;
     setAllocator(arg0: ByteBufAllocator): KQueueChannelConfig;
     setAutoRead(arg0: boolean): KQueueChannelConfig;

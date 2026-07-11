@@ -16,10 +16,10 @@ export interface JavaFileManager extends Closeable, Flushable, OptionChecker, Ob
     getClassLoader(arg0: JavaFileManager$Location): ClassLoader;
     getFileForInput(arg0: JavaFileManager$Location, arg1: string, arg2: string): FileObject;
     getFileForOutput(arg0: JavaFileManager$Location, arg1: string, arg2: string, arg3: FileObject): FileObject;
-    getFileForOutputForOriginatingFiles(arg0: JavaFileManager$Location, arg1: string, arg2: string, arg3: FileObject[]): FileObject;
+    getFileForOutputForOriginatingFiles(arg0: JavaFileManager$Location, arg1: string, arg2: string, ...arg3: FileObject[]): FileObject;
     getJavaFileForInput(arg0: JavaFileManager$Location, arg1: string, arg2: JavaFileObject$Kind): JavaFileObject;
     getJavaFileForOutput(arg0: JavaFileManager$Location, arg1: string, arg2: JavaFileObject$Kind, arg3: FileObject): JavaFileObject;
-    getJavaFileForOutputForOriginatingFiles(arg0: JavaFileManager$Location, arg1: string, arg2: JavaFileObject$Kind, arg3: FileObject[]): JavaFileObject;
+    getJavaFileForOutputForOriginatingFiles(arg0: JavaFileManager$Location, arg1: string, arg2: JavaFileObject$Kind, ...arg3: FileObject[]): JavaFileObject;
     getLocationForModule(arg0: JavaFileManager$Location, arg1: JavaFileObject): JavaFileManager$Location;
     getLocationForModule(arg0: JavaFileManager$Location, arg1: string): JavaFileManager$Location;
     getServiceLoader<S extends unknown>(arg0: JavaFileManager$Location, arg1: Class<S>): S[];

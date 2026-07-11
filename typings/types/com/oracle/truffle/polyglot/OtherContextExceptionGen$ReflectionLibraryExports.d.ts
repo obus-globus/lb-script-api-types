@@ -3,7 +3,7 @@ import type { ReflectionLibrary } from '../../../../com/oracle/truffle/api/libra
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OtherContextExceptionGen$ReflectionLibraryExports extends LibraryExport<ReflectionLibrary> {
-    static register(paramreceiverClass: Class<Object>, paramlibs: Object | null): void;
+    static register(paramreceiverClass: Class<Object>, ...paramlibs: Object | null): void;
     private constructor()
     createCached(receiver: Object): ReflectionLibrary;
     createUncached(receiver: Object): ReflectionLibrary;

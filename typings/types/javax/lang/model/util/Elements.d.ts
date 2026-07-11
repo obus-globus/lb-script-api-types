@@ -49,6 +49,6 @@ export interface Elements extends Object{
     isDeprecated(arg0: Element): boolean;
     isFunctionalInterface(arg0: TypeElement): boolean;
     overrides(arg0: ExecutableElement, arg1: ExecutableElement, arg2: TypeElement): boolean;
-    printElements(arg0: Writer, arg1: Element[]): void;
+    printElements(arg0: Writer, ...arg1: Element[]): void;
     recordComponentFor(arg0: ExecutableElement): RecordComponentElement;
 }

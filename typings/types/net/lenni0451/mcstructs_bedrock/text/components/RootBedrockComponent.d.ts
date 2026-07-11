@@ -3,7 +3,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { BedrockComponent } from '../../../../../net/lenni0451/mcstructs_bedrock/text/BedrockComponent.d.ts'
 export class RootBedrockComponent extends BedrockComponent {
     constructor()
-    constructor(arg0: BedrockComponent[])
+    constructor(...arg0: BedrockComponent[])
     constructor(arg0: BedrockComponent[])
     readonly components: BedrockComponent[];
     addComponent(arg0: BedrockComponent): RootBedrockComponent;

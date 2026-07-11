@@ -19,7 +19,7 @@ export class Preconditions extends Object {
     static checkArgument(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: Object, paramp2: Object, paramp3: Object): void;
     static checkArgument(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: Object, paramp2: Object, paramp3: Object, paramp4: Object): void;
     static checkArgument(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: Object, paramp2: number): void;
-    static checkArgument(paramexpression: boolean, paramerrorMessageTemplate: string, paramerrorMessageArgs: (Object | null)[]): void;
+    static checkArgument(paramexpression: boolean, paramerrorMessageTemplate: string, ...paramerrorMessageArgs: (Object | null)[]): void;
     static checkArgument(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: number): void;
     static checkArgument(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: number, paramp2: string): void;
     static checkArgument(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: number, paramp2: number): void;
@@ -46,7 +46,7 @@ export class Preconditions extends Object {
     static checkNotNull(paramreference: Object | null, paramerrorMessageTemplate: string, paramp1: Object, paramp2: Object, paramp3: Object): Object | null;
     static checkNotNull(paramreference: Object | null, paramerrorMessageTemplate: string, paramp1: Object, paramp2: Object, paramp3: Object, paramp4: Object): Object | null;
     static checkNotNull(paramreference: Object | null, paramerrorMessageTemplate: string, paramp1: Object, paramp2: number): Object | null;
-    static checkNotNull(paramreference: Object | null, paramerrorMessageTemplate: string, paramerrorMessageArgs: (Object | null)[]): Object | null;
+    static checkNotNull(paramreference: Object | null, paramerrorMessageTemplate: string, ...paramerrorMessageArgs: (Object | null)[]): Object | null;
     static checkNotNull(paramreference: Object | null, paramerrorMessageTemplate: string, paramp1: number): Object | null;
     static checkNotNull(paramreference: Object | null, paramerrorMessageTemplate: string, paramp1: number, paramp2: string): Object | null;
     static checkNotNull(paramreference: Object | null, paramerrorMessageTemplate: string, paramp1: number, paramp2: number): Object | null;
@@ -74,7 +74,7 @@ export class Preconditions extends Object {
     static checkState(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: Object, paramp2: Object, paramp3: Object): void;
     static checkState(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: Object, paramp2: Object, paramp3: Object, paramp4: Object): void;
     static checkState(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: Object, paramp2: number): void;
-    static checkState(paramexpression: boolean, paramerrorMessageTemplate: string, paramerrorMessageArgs: (Object | null)[]): void;
+    static checkState(paramexpression: boolean, paramerrorMessageTemplate: string, ...paramerrorMessageArgs: (Object | null)[]): void;
     static checkState(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: number): void;
     static checkState(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: number, paramp2: string): void;
     static checkState(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: number, paramp2: number): void;

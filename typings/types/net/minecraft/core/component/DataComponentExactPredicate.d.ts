@@ -17,7 +17,7 @@ export class DataComponentExactPredicate extends Object implements Predicate<Dat
     static expect(paramtype: DataComponentType<Object>, paramvalue: Object | null): DataComponentExactPredicate;
     static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
     static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static someOf(paramcomponents: TypedDataComponent<Object>[], paramtypes: Object | null): DataComponentExactPredicate;
+    static someOf(paramcomponents: TypedDataComponent<Object>[], ...paramtypes: Object | null): DataComponentExactPredicate;
     private constructor(expectedComponents: TypedDataComponent<Object>[])
     // private expectedComponents: TypedDataComponent<Object>[];
     alwaysMatches(): boolean;

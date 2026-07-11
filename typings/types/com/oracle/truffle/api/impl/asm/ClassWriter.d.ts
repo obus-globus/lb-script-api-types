@@ -61,11 +61,11 @@ export class ClassWriter extends ClassVisitor {
     hasFlags(flags: number): boolean;
     newClass(value: string): number;
     newConst(value: Object): number;
-    newConstantDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, bootstrapMethodArguments: Object[]): number;
+    newConstantDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, ...bootstrapMethodArguments: Object[]): number;
     newField(owner: string, name: string, descriptor: string): number;
     newHandle(tag: number, owner: string, name: string, descriptor: string): number;
     newHandle(tag: number, owner: string, name: string, descriptor: string, isInterface: boolean): number;
-    newInvokeDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, bootstrapMethodArguments: Object[]): number;
+    newInvokeDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, ...bootstrapMethodArguments: Object[]): number;
     newMethod(owner: string, name: string, descriptor: string, isInterface: boolean): number;
     newMethodType(methodDescriptor: string): number;
     newModule(moduleName: string): number;

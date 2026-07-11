@@ -87,14 +87,14 @@ export class InstructionAdapter extends MethodVisitor {
     store(varIndex: number, type: Type): void;
     sub(type: Type): void;
     swap(): void;
-    tableswitch(min: number, max: number, dflt: Label, labels: Label[]): void;
+    tableswitch(min: number, max: number, dflt: Label, ...labels: Label[]): void;
     tconst(type: Type): void;
     ushr(type: Type): void;
     visitFieldInsn(opcode: number, owner: string, name: string, descriptor: string): void;
     visitIincInsn(varIndex: number, increment: number): void;
     visitInsn(opcode: number): void;
     visitIntInsn(opcode: number, operand: number): void;
-    visitInvokeDynamicInsn(name: string, descriptor: string, bootstrapMethodHandle: Handle, bootstrapMethodArguments: Object[]): void;
+    visitInvokeDynamicInsn(name: string, descriptor: string, bootstrapMethodHandle: Handle, ...bootstrapMethodArguments: Object[]): void;
     visitJumpInsn(opcode: number, label: Label): void;
     visitLabel(label: Label): void;
     visitLdcInsn(value: Object): void;
@@ -102,7 +102,7 @@ export class InstructionAdapter extends MethodVisitor {
     visitMethodInsn(opcode: number, owner: string, name: string, descriptor: string): void;
     visitMethodInsn(opcodeAndSource: number, owner: string, name: string, descriptor: string, isInterface: boolean): void;
     visitMultiANewArrayInsn(descriptor: string, numDimensions: number): void;
-    visitTableSwitchInsn(min: number, max: number, dflt: Label, labels: Label[]): void;
+    visitTableSwitchInsn(min: number, max: number, dflt: Label, ...labels: Label[]): void;
     visitTypeInsn(opcode: number, type: string): void;
     visitVarInsn(opcode: number, varIndex: number): void;
     xor(type: Type): void;

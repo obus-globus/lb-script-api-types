@@ -8,7 +8,7 @@ import type { IOCase } from '../../../../../org/apache/commons/io/IOCase.d.ts'
 import type { AbstractFileFilter } from '../../../../../org/apache/commons/io/filefilter/AbstractFileFilter.d.ts'
 export class SuffixFileFilter extends AbstractFileFilter implements Serializable {
     static EMPTY_STRING_ARRAY: (Object | null)[];
-    constructor(arg0: string[])
+    constructor(...arg0: string[])
     constructor(arg0: string[], arg1: IOCase)
     constructor(arg0: string)
     constructor(arg0: string, arg1: IOCase)

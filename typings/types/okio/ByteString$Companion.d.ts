@@ -11,7 +11,7 @@ export class ByteString$Companion extends Object {
     encodeString(string: string, charset: Charset): ByteString;
     encodeUtf8(string: string): ByteString;
     of(buffer: ByteBuffer): ByteString;
-    of(data: number[]): ByteString;
+    of(...data: number[]): ByteString;
     of(array: number[], offset: number, byteCount: number): ByteString;
     read(inputstream: InputStream, byteCount: number): ByteString;
 }

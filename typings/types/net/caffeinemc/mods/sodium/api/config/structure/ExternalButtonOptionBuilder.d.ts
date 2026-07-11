@@ -8,7 +8,7 @@ import type { Component } from '../../../../../../../net/minecraft/network/chat/
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export interface ExternalButtonOptionBuilder extends Object, OptionBuilder {
     setEnabled(arg0: boolean): ExternalButtonOptionBuilder;
-    setEnabledProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): ExternalButtonOptionBuilder;
+    setEnabledProvider(arg0: (param0: ConfigState) => boolean, ...arg1: Identifier[]): ExternalButtonOptionBuilder;
     setName(arg0: Component): ExternalButtonOptionBuilder;
     setScreenConsumer(arg0: (param0: Screen) => void): ExternalButtonOptionBuilder;
     setTooltip(arg0: Component): ExternalButtonOptionBuilder;

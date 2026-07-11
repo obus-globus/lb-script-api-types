@@ -4,7 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 export class ObjectArrayMessage extends Object implements Message {
-    constructor(obj: Object[])
+    constructor(...obj: Object[])
     // private array: Object[];
     // private arrayString: string;
     // private equalObjectsOrStrings(left: Object[], right: Object[]): boolean;

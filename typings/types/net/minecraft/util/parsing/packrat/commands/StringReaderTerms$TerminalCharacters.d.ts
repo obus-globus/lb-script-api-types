@@ -10,7 +10,7 @@ import type { Scope } from '../../../../../../net/minecraft/util/parsing/packrat
 import type { SuggestionSupplier } from '../../../../../../net/minecraft/util/parsing/packrat/SuggestionSupplier.d.ts'
 import type { Term } from '../../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 export abstract class StringReaderTerms$TerminalCharacters extends Object implements Term<StringReader> {
-    static alternative(paramterms: Object | null): Term<Object>;
+    static alternative(...paramterms: Object | null): Term<Object>;
     static cut(): Term<Object>;
     static empty(): Term<Object>;
     static fail(parammessage: Object): Term<Object>;
@@ -24,7 +24,7 @@ export abstract class StringReaderTerms$TerminalCharacters extends Object implem
     static repeatedWithTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>): Term<Object>;
     static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
-    static sequence(paramterms: Object | null): Term<Object>;
+    static sequence(...paramterms: Object | null): Term<Object>;
     constructor(values: (Object | null)[])
     // private error: DelayedException<CommandSyntaxException>;
     // private suggestions: SuggestionSupplier<StringReader>;

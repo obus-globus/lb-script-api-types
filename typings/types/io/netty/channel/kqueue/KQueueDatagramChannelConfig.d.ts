@@ -17,7 +17,7 @@ export class KQueueDatagramChannelConfig extends KQueueChannelConfig implements 
     getNetworkInterface(): NetworkInterface;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getReceiveBufferSize(): number;
     getSendBufferSize(): number;
     getTimeToLive(): number;

@@ -19,7 +19,7 @@ export class BooleanSpliterators extends Object {
     static asSpliteratorFromSorted(paramarg0: BooleanIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: boolean, param1: boolean) => number): BooleanSpliterator;
     static asSpliteratorFromSortedUnknownSize(paramarg0: BooleanIterator, paramarg1: number, paramarg2: (param0: boolean, param1: boolean) => number): BooleanSpliterator;
     static asSpliteratorUnknownSize(paramarg0: BooleanIterator, paramarg1: number): BooleanSpliterator;
-    static concat(paramarg0: (Object | null)[]): BooleanSpliterator;
+    static concat(...paramarg0: (Object | null)[]): BooleanSpliterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): BooleanSpliterator;
     static onEachMatching(paramarg0: BooleanSpliterator, paramarg1: (param0: boolean) => boolean, paramarg2: (param0: boolean) => void): void;
     static singleton(paramarg0: boolean): BooleanSpliterator;

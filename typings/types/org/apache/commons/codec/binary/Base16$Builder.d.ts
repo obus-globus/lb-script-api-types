@@ -3,6 +3,6 @@ import type { BaseNCodec$AbstractBuilder } from '../../../../../org/apache/commo
 export class Base16$Builder extends BaseNCodec$AbstractBuilder<Base16, Base16$Builder> {
     constructor()
     get(): Base16;
-    setEncodeTable(arg0: number[]): Base16$Builder;
+    setEncodeTable(...arg0: number[]): Base16$Builder;
     setLowerCase(arg0: boolean): Base16$Builder;
 }

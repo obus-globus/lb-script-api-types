@@ -25,7 +25,7 @@ export class AnalyzerAdapter extends MethodVisitor {
     visitIincInsn(arg0: number, arg1: number): void;
     visitInsn(arg0: number): void;
     visitIntInsn(arg0: number, arg1: number): void;
-    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): void;
+    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): void;
     visitJumpInsn(arg0: number, arg1: Label): void;
     visitLabel(arg0: Label): void;
     visitLdcInsn(arg0: Object): void;
@@ -35,7 +35,7 @@ export class AnalyzerAdapter extends MethodVisitor {
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string, arg4: boolean): void;
     visitMultiANewArrayInsn(arg0: string, arg1: number): void;
-    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, arg3: Label[]): void;
+    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, ...arg3: Label[]): void;
     visitTypeInsn(arg0: number, arg1: string): void;
     visitVarInsn(arg0: number, arg1: number): void;
 }

@@ -7,10 +7,10 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class HostsFileEntriesProvider$ParserImpl extends Object implements HostsFileEntriesProvider$Parser {
     private constructor()
     parse(): HostsFileEntriesProvider;
-    parse(arg0: File, arg1: Charset[]): HostsFileEntriesProvider;
+    parse(arg0: File, ...arg1: Charset[]): HostsFileEntriesProvider;
     parse(arg0: Reader): HostsFileEntriesProvider;
-    parse(arg0: Charset[]): HostsFileEntriesProvider;
+    parse(...arg0: Charset[]): HostsFileEntriesProvider;
     parseSilently(): HostsFileEntriesProvider;
-    parseSilently(arg0: File, arg1: Charset[]): HostsFileEntriesProvider;
-    parseSilently(arg0: Charset[]): HostsFileEntriesProvider;
+    parseSilently(arg0: File, ...arg1: Charset[]): HostsFileEntriesProvider;
+    parseSilently(...arg0: Charset[]): HostsFileEntriesProvider;
 }

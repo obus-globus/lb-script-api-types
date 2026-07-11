@@ -18,6 +18,6 @@ export interface Feature$BeforeAnalysisAccess extends Object, Feature$FeatureAcc
     registerClassInitializerReachabilityHandler(callback: (param0: Feature$DuringAnalysisAccess) => void, clazz: Class<Object>): void;
     registerFieldValueTransformer(field: Field, transformer: FieldValueTransformer): void;
     registerMethodOverrideReachabilityHandler(callback: (param0: Feature$DuringAnalysisAccess, param1: Executable) => void, baseMethod: Executable): void;
-    registerReachabilityHandler(callback: (param0: Feature$DuringAnalysisAccess) => void, elements: Object[]): void;
+    registerReachabilityHandler(callback: (param0: Feature$DuringAnalysisAccess) => void, ...elements: Object[]): void;
     registerSubtypeReachabilityHandler(callback: (param0: Feature$DuringAnalysisAccess, param1: Class<Object>) => void, baseClass: Class<Object>): void;
 }

@@ -7,7 +7,7 @@ export class MetadataVersion extends BinaryVersion {
     static INSTANCE: MetadataVersion;
     static INSTANCE_NEXT: MetadataVersion;
     static INVALID_VERSION: MetadataVersion;
-    constructor(arg0: number[])
+    constructor(...arg0: number[])
     constructor(arg0: number[], arg1: boolean)
     // private isStrictSemantics: boolean;
     isCompatible(arg0: MetadataVersion): boolean;

@@ -6,7 +6,7 @@ export class UsingToStringOrdering extends Ordering<Object> implements Serializa
     static allEqual(): Ordering<Object>;
     static arbitrary(): Ordering<Object>;
     static compound(paramcomparators: (param0: Object) => boolean[]): Ordering<Object>;
-    static explicit(paramleastValue: Object | null, paramremainingValuesInOrder: Object | null): Ordering<Object>;
+    static explicit(paramleastValue: Object | null, ...paramremainingValuesInOrder: Object | null): Ordering<Object>;
     static explicit(paramvaluesInOrder: (Object | null)[]): Ordering<Object>;
     static from(paramordering: Ordering<Object>): Ordering<Object>;
     static from(paramcomparator: (param0: Object) => boolean): Ordering<Object>;

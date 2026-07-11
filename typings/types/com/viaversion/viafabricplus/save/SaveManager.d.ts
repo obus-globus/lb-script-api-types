@@ -8,7 +8,7 @@ export class SaveManager extends Object {
     readonly accountsSave: AccountsSave;
     // private saves: AbstractSave[];
     readonly settingsSave: SettingsSave;
-    add(arg0: AbstractSave[]): void;
+    add(...arg0: AbstractSave[]): void;
     getAccountsSave(): AccountsSave;
     getSettingsSave(): SettingsSave;
     init(): void;

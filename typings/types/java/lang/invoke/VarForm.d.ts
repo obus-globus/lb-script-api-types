@@ -3,7 +3,7 @@ import type { MemberName } from '../../../java/lang/invoke/MemberName.d.ts'
 import type { MethodType } from '../../../java/lang/invoke/MethodType.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class VarForm extends Object {
-    constructor(arg0: Class<Object>, arg1: Class<Object>, arg2: Class<Object>, arg3: Class<Object>[])
+    constructor(arg0: Class<Object>, arg1: Class<Object>, arg2: Class<Object>, ...arg3: Class<Object>[])
     constructor(arg0: Class<Object>, arg1: VarForm)
     constructor(arg0: Class<Object>, arg1: Class<Object>[])
     // private implClass: Class<Object>;
@@ -16,6 +16,6 @@ export class VarForm extends Object {
     getMethodType(arg0: number): MethodType;
     getMethodType_V(arg0: number): MethodType;
     getMethodType_V_init(): MethodType[];
-    initMethodTypes(arg0: Class<Object>, arg1: Class<Object>[]): void;
+    initMethodTypes(arg0: Class<Object>, ...arg1: Class<Object>[]): void;
     resolveMemberName(arg0: number): MemberName;
 }

@@ -6,7 +6,7 @@ export class HeapDump$ThreadBuilder extends Object {
     private constructor(null_: HeapDump, name: string)
     // private name: string;
     // private stacks: Object[][];
-    addStackFrame(clazz: HeapDump$ClassInstance, methodName: string, sourceFile: string, lineNumber: number, locals: HeapDump$ObjectInstance[]): HeapDump$ThreadBuilder;
+    addStackFrame(clazz: HeapDump$ClassInstance, methodName: string, sourceFile: string, lineNumber: number, ...locals: HeapDump$ObjectInstance[]): HeapDump$ThreadBuilder;
     dumpThread(): HeapDump$ObjectInstance;
     // private dumpThreadImpl(): HeapDump$ObjectInstance;
 }

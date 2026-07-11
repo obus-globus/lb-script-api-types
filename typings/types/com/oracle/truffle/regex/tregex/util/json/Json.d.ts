@@ -10,7 +10,7 @@ import type { JsonValue } from '../../../../../../../com/oracle/truffle/regex/tr
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class Json extends Object {
-    static array(paramvalues: (Object | null)[]): JsonArray;
+    static array(...paramvalues: (Object | null)[]): JsonArray;
     static array(paramvalues: JsonConvertible[]): JsonArray;
     static array(paramvalues: Stream<JsonConvertible>): JsonArray;
     static array(paramarray: string[]): JsonValue;
@@ -18,7 +18,7 @@ export class Json extends Object {
     static array(paramarray: number[]): JsonValue;
     static arrayUnsigned(paramarray: number[]): JsonArray;
     static nullValue(): JsonNull;
-    static obj(paramproperties: (Object | null)[]): JsonObject;
+    static obj(...paramproperties: (Object | null)[]): JsonObject;
     static prop(paramname: string, paramvalue: boolean): JsonObject$JsonObjectProperty;
     static prop(paramname: string, paramvalue: JsonConvertible): JsonObject$JsonObjectProperty;
     static prop(paramname: string, paramvalue: number): JsonObject$JsonObjectProperty;

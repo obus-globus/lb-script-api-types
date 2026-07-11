@@ -17,7 +17,7 @@ export class BlockColors extends Object implements BlockColorsExtension {
     getColoringProperties(block: Block): Property<any>[];
     getTintSource(state: BlockState, layer: number): BlockTintSource;
     getTintSources(state: BlockState): BlockTintSource[];
-    register(layers: BlockTintSource[], blocks: Block[]): void;
+    register(layers: BlockTintSource[], ...blocks: Block[]): void;
     sodium$getOverridenVanillaBlocks(): Object[];
     sodium$getProviders(): Map<Object, Object>;
 }

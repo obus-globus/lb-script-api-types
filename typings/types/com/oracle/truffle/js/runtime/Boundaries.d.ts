@@ -42,6 +42,6 @@ export class Boundaries extends Object {
     static mapRemove(parammap: Map<Object | null, Object | null>, paramkey: Object | null): Object | null;
     static queueAdd(paramqueue: Object[], paramrequest: Object | null): void;
     static setContains(paramset: Object[], paramelement: Object): boolean;
-    static stringFormat(paramformat: string, paramparams: (Object | null)[]): string;
+    static stringFormat(paramformat: string, ...paramparams: (Object | null)[]): string;
     private constructor()
 }

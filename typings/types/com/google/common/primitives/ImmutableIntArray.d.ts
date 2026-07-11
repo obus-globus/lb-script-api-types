@@ -18,7 +18,7 @@ export class ImmutableIntArray extends Object implements Serializable {
     static of(parame0: number, parame1: number, parame2: number, parame3: number): ImmutableIntArray;
     static of(parame0: number, parame1: number, parame2: number, parame3: number, parame4: number): ImmutableIntArray;
     static of(parame0: number, parame1: number, parame2: number, parame3: number, parame4: number, parame5: number): ImmutableIntArray;
-    static of(paramfirst: number, paramrest: number[]): ImmutableIntArray;
+    static of(paramfirst: number, ...paramrest: number[]): ImmutableIntArray;
     constructor(arg0: number[], arg1: number, arg2: number, arg3: any)
     // private array: number[];
     // private end: number;

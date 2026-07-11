@@ -12,7 +12,7 @@ export class ArrayBufferLibraryGen extends LibraryFactory<ArrayBufferLibrary> {
     private constructor()
     createDelegate(delegateLibrary: ArrayBufferLibrary): ArrayBufferLibrary;
     createDispatchImpl(limit: number): ArrayBufferLibrary;
-    createMessageBitSet(messages: Message[]): FinalBitSet;
+    createMessageBitSet(...messages: Message[]): FinalBitSet;
     createProxy(library: ReflectionLibrary): ArrayBufferLibrary;
     createUncachedDispatch(): ArrayBufferLibrary;
     genericDispatch(originalLib: Library, receiver: Object, message: Message, args: Object[], offset: number): Object;

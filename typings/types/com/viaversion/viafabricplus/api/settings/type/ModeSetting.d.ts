@@ -4,8 +4,8 @@ import type { SettingGroup } from '../../../../../../com/viaversion/viafabricplu
 import type { MutableComponent } from '../../../../../../net/minecraft/network/chat/MutableComponent.d.ts'
 export class ModeSetting extends AbstractSetting<MutableComponent> {
     static mapTranslationKey(paramarg0: string): string;
-    constructor(arg0: SettingGroup, arg1: MutableComponent, arg2: MutableComponent[])
-    constructor(arg0: SettingGroup, arg1: MutableComponent, arg2: number, arg3: MutableComponent[])
+    constructor(arg0: SettingGroup, arg1: MutableComponent, ...arg2: MutableComponent[])
+    constructor(arg0: SettingGroup, arg1: MutableComponent, arg2: number, ...arg3: MutableComponent[])
     readonly options: MutableComponent[];
     getIndex(): number;
     getOptions(): MutableComponent[];

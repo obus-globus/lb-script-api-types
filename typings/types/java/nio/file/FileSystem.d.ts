@@ -10,7 +10,7 @@ export abstract class FileSystem extends Object implements Closeable {
     constructor()
     close(): void;
     getFileStores(): FileStore[];
-    getPath(arg0: string, arg1: string[]): Path[];
+    getPath(arg0: string, ...arg1: string[]): Path[];
     getPathMatcher(arg0: string): (param0: Path[][]) => boolean;
     getRootDirectories(): Path[][];
     getSeparator(): string;

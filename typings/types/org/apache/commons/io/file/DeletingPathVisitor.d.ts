@@ -12,9 +12,9 @@ export class DeletingPathVisitor extends CountingPathVisitor {
     static withBigIntegerCounters(): DeletingPathVisitor;
     static withLongCounters(): CountingPathVisitor;
     static withLongCounters(): DeletingPathVisitor;
-    constructor(arg0: Counters$PathCounters, arg1: LinkOption[], arg2: DeleteOption[], arg3: string[])
-    constructor(arg0: Counters$PathCounters, arg1: string[])
-    constructor(arg0: Counters$PathCounters, arg1: DeleteOption[], arg2: string[])
+    constructor(arg0: Counters$PathCounters, arg1: LinkOption[], arg2: DeleteOption[], ...arg3: string[])
+    constructor(arg0: Counters$PathCounters, ...arg1: string[])
+    constructor(arg0: Counters$PathCounters, arg1: DeleteOption[], ...arg2: string[])
     // private linkOptions: LinkOption[];
     // private overrideReadOnly: boolean;
     // private skip: string[];

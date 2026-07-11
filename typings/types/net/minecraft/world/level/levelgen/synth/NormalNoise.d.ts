@@ -4,7 +4,7 @@ import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSo
 import type { NormalNoise$NoiseParameters } from '../../../../../../net/minecraft/world/level/levelgen/synth/NormalNoise$NoiseParameters.d.ts'
 import type { PerlinNoise } from '../../../../../../net/minecraft/world/level/levelgen/synth/PerlinNoise.d.ts'
 export class NormalNoise extends Object {
-    static create(paramrandom: RandomSource, paramfirstOctave: number, paramamplitudes: number[]): NormalNoise;
+    static create(paramrandom: RandomSource, paramfirstOctave: number, ...paramamplitudes: number[]): NormalNoise;
     static create(paramrandom: RandomSource, paramparameters: NormalNoise$NoiseParameters): NormalNoise;
     static createLegacyNetherBiome(paramrandom: RandomSource, paramparameters: NormalNoise$NoiseParameters): NormalNoise;
     private constructor(random: RandomSource, parameters: NormalNoise$NoiseParameters, useNewInitialization: boolean)

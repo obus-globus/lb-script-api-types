@@ -14,8 +14,8 @@ import type { OpenOption } from '../../../java/nio/file/OpenOption.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class FileChannel extends AbstractInterruptibleChannel implements GatheringByteChannel, ScatteringByteChannel, SeekableByteChannel {
-    static open(paramarg0: Path[][], paramarg1: (Object | null)[]): FileChannel;
-    static open(paramarg0: Path[][], paramarg1: OpenOption[], paramarg2: Object | null): FileChannel;
+    static open(paramarg0: Path[][], ...paramarg1: (Object | null)[]): FileChannel;
+    static open(paramarg0: Path[][], paramarg1: OpenOption[], ...paramarg2: Object | null): FileChannel;
     constructor()
     force(arg0: boolean): void;
     lock(): FileLock;

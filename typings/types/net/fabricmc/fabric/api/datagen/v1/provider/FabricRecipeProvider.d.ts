@@ -21,5 +21,5 @@ export abstract class FabricRecipeProvider extends RecipeProvider$Runner {
     createRecipeProvider(arg0: HolderLookup$Provider, arg1: RecipeOutput): RecipeProvider;
     getRecipeIdentifier(arg0: Identifier): Identifier;
     run(arg0: CachedOutput): CompletableFuture<Object>;
-    withConditions(arg0: RecipeOutput, arg1: ResourceCondition[]): RecipeOutput;
+    withConditions(arg0: RecipeOutput, ...arg1: ResourceCondition[]): RecipeOutput;
 }

@@ -11,7 +11,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AddFieldFix extends DataFix {
     static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
-    constructor(outputSchema: Schema, type: DSL$TypeReference, fieldName: string, fieldGenerator: (param0: Dynamic<Object>) => Dynamic<Object>, path: string[])
+    constructor(outputSchema: Schema, type: DSL$TypeReference, fieldName: string, fieldGenerator: (param0: Dynamic<Object>) => Dynamic<Object>, ...path: string[])
     // private fieldGenerator: (param0: Dynamic<Object>) => Dynamic<Object>;
     // private fieldName: string;
     // private name: string;

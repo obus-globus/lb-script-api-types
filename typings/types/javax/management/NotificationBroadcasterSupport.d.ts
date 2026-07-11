@@ -9,8 +9,8 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export class NotificationBroadcasterSupport extends Object implements NotificationEmitter {
     constructor()
     constructor(arg0: Executor)
-    constructor(arg0: Executor, arg1: MBeanNotificationInfo[])
-    constructor(arg0: MBeanNotificationInfo[])
+    constructor(arg0: Executor, ...arg1: MBeanNotificationInfo[])
+    constructor(...arg0: MBeanNotificationInfo[])
     // private executor: Executor;
     // private listenerList: NotificationBroadcasterSupport$ListenerInfo[];
     // private notifInfo: MBeanNotificationInfo[];

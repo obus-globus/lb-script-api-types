@@ -15,13 +15,13 @@ export class ConstructorWrapper extends Object {
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     modifier(): ModifierWrapper;
-    newInstance<T extends unknown>(arg0: Object[]): T;
+    newInstance<T extends unknown>(...arg0: Object[]): T;
     owner(): Class<Object>;
     parameterCount(): number;
     parameterTypes(): Class<Object>[];
     parent(): ConstructorStream;
     raw(): Constructor<Object>;
-    streamInstance(arg0: Class<Object>, arg1: Object[]): RStream;
-    streamInstance(arg0: Object[]): RStream;
+    streamInstance(arg0: Class<Object>, ...arg1: Object[]): RStream;
+    streamInstance(...arg0: Object[]): RStream;
     toString(): string;
 }

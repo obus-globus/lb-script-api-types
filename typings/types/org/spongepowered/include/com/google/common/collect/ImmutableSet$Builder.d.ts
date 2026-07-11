@@ -4,7 +4,7 @@ export class ImmutableSet$Builder<E extends unknown> extends ImmutableCollection
     constructor()
     constructor(arg0: number)
     add(arg0: E): ImmutableSet$Builder<E>;
-    add(arg0: E[]): ImmutableSet$Builder<E>;
+    add(...arg0: E[]): ImmutableSet$Builder<E>;
     addAll(arg0: E[]): ImmutableSet$Builder<E>;
     build(): E[];
 }

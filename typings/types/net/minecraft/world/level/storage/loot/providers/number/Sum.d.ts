@@ -6,7 +6,7 @@ import type { ValidationContext } from '../../../../../../../../net/minecraft/wo
 import type { NumberProvider } from '../../../../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class Sum extends Record implements NumberProvider {
     static MAP_CODEC: MapCodec<Sum>;
-    static sum(paramsummands: (Object | null)[]): Sum;
+    static sum(...paramsummands: (Object | null)[]): Sum;
     constructor(summands: NumberProvider[])
     // private summands: NumberProvider[];
     codec(): MapCodec<Sum>;

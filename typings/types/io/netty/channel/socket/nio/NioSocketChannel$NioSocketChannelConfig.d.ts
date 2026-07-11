@@ -13,7 +13,7 @@ export class NioSocketChannel$NioSocketChannelConfig extends DefaultSocketChanne
     getMaxBytesPerGatheringWrite(): number;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     // private jdkChannel(): SocketChannel;
     setMaxBytesPerGatheringWrite(arg0: number): void;
     setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;

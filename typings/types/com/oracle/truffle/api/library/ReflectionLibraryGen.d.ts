@@ -11,7 +11,7 @@ export class ReflectionLibraryGen extends LibraryFactory<ReflectionLibrary> {
     private constructor()
     createDelegate(delegateLibrary: ReflectionLibrary): ReflectionLibrary;
     createDispatchImpl(limit: number): ReflectionLibrary;
-    createMessageBitSet(messages: Message[]): FinalBitSet;
+    createMessageBitSet(...messages: Message[]): FinalBitSet;
     createProxy(library: ReflectionLibrary): ReflectionLibrary;
     createUncachedDispatch(): ReflectionLibrary;
     genericDispatch(originalLib: Library, receiver: Object, message: Message, args: Object[], offset: number): Object;

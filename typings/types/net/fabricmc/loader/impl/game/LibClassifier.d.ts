@@ -21,11 +21,11 @@ export class LibClassifier<L extends Enum<L> & LibClassifier$LibraryType> extend
     getSystemLibraries(): Path[][];
     getUnmatchedOrigins(): Path[][];
     has(arg0: L): boolean;
-    is(arg0: Path[], arg1: L[]): boolean;
+    is(arg0: Path[], ...arg1: L[]): boolean;
     process(arg0: URL): void;
-    process(arg0: Path[], arg1: L[]): void;
+    process(arg0: Path[], ...arg1: L[]): void;
     // private process(arg0: Path[], arg1: L[]): void;
-    process(arg0: Path[][], arg1: L[]): void;
+    process(arg0: Path[][], ...arg1: L[]): void;
     // private processManifestClassPath(arg0: LoaderLibrary, arg1: EnvType, arg2: boolean): void;
     remove(arg0: Path[]): boolean;
 }

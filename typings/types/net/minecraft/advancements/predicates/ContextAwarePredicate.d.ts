@@ -12,7 +12,7 @@ import type { ValidationContext } from '../../../../net/minecraft/world/level/st
 import type { LootItemCondition } from '../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class ContextAwarePredicate extends Object implements Validatable {
     static CODEC: Codec<ContextAwarePredicate>;
-    static create(paramconditions: (Object | null)[]): ContextAwarePredicate;
+    static create(...paramconditions: (Object | null)[]): ContextAwarePredicate;
     static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
     static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;

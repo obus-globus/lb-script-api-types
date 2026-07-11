@@ -24,9 +24,9 @@ export class TypeUtils extends Object {
     static isAssignable(paramarg0: Type, paramarg1: Type): boolean;
     static isInstance(paramarg0: Object, paramarg1: Type): boolean;
     static normalizeUpperBounds(paramarg0: (Object | null)[]): (Object | null)[];
-    static parameterize(paramarg0: Class<Object>, paramarg1: (Object | null)[]): ParameterizedType;
+    static parameterize(paramarg0: Class<Object>, ...paramarg1: (Object | null)[]): ParameterizedType;
     static parameterize(paramarg0: Class<Object>, paramarg1: Map<TypeVariable<any>, Type>): ParameterizedType;
-    static parameterizeWithOwner(paramarg0: Type, paramarg1: Class<Object>, paramarg2: (Object | null)[]): ParameterizedType;
+    static parameterizeWithOwner(paramarg0: Type, paramarg1: Class<Object>, ...paramarg2: (Object | null)[]): ParameterizedType;
     static parameterizeWithOwner(paramarg0: Type, paramarg1: Class<Object>, paramarg2: Map<TypeVariable<any>, Type>): ParameterizedType;
     static toLongString(paramarg0: TypeVariable<any>): string;
     static toString(paramarg0: Type): string;

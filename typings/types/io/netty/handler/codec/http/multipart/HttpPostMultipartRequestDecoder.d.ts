@@ -45,7 +45,7 @@ export class HttpPostMultipartRequestDecoder extends Object implements Interface
     getBodyHttpData(arg0: string): InterfaceHttpData;
     getBodyHttpDatas(): InterfaceHttpData[];
     getBodyHttpDatas(arg0: string): InterfaceHttpData[];
-    // private getContentDispositionAttribute(arg0: string[]): Attribute;
+    // private getContentDispositionAttribute(...arg0: string[]): Attribute;
     getCurrentAllocatedCapacity(): number;
     getDiscardThreshold(): number;
     getFileUpload(arg0: string): InterfaceHttpData;

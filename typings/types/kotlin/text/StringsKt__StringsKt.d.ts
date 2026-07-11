@@ -14,9 +14,9 @@ import type { CharIterator } from '../../kotlin/collections/CharIterator.d.ts'
 import type { Sequence } from '../../kotlin/sequences/Sequence.d.ts'
 import type { StringsKt__StringsJVMKt } from '../../kotlin/text/StringsKt__StringsJVMKt.d.ts'
 export class StringsKt__StringsKt extends StringsKt__StringsJVMKt {
-    static append(paramarg0: Appendable | null, paramarg1: (Object | null)[]): Appendable | null;
-    static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
-    static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
+    static append(paramarg0: Appendable | null, ...paramarg1: (Object | null)[]): Appendable | null;
+    static append(paramarg0: StringBuilder, ...paramarg1: (Object | null)[]): StringBuilder;
+    static append(paramarg0: StringBuilder, ...paramarg1: (Object | null)[]): StringBuilder;
     static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object) => CharSequence): void;
     static appendRange(paramarg0: Appendable | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Appendable | null;
     static appendln(paramarg0: Appendable): Appendable;
@@ -140,20 +140,20 @@ export class StringsKt__StringsKt extends StringsKt__StringsJVMKt {
     static toShortOrNull(paramarg0: string): number;
     static toShortOrNull(paramarg0: string, paramarg1: number): number;
     static trim(paramarg0: CharSequence): CharSequence;
-    static trim(paramarg0: CharSequence, paramarg1: string[]): CharSequence;
+    static trim(paramarg0: CharSequence, ...paramarg1: string[]): CharSequence;
     static trim(paramarg0: CharSequence, paramarg1: (param0: Object) => boolean): CharSequence;
-    static trim(paramarg0: string, paramarg1: string[]): string;
+    static trim(paramarg0: string, ...paramarg1: string[]): string;
     static trim(paramarg0: string, paramarg1: (param0: Object) => boolean): string;
     static trimEnd(paramarg0: CharSequence): CharSequence;
-    static trimEnd(paramarg0: CharSequence, paramarg1: string[]): CharSequence;
+    static trimEnd(paramarg0: CharSequence, ...paramarg1: string[]): CharSequence;
     static trimEnd(paramarg0: CharSequence, paramarg1: (param0: Object) => boolean): CharSequence;
-    static trimEnd(paramarg0: string, paramarg1: string[]): string;
+    static trimEnd(paramarg0: string, ...paramarg1: string[]): string;
     static trimEnd(paramarg0: string, paramarg1: (param0: Object) => boolean): string;
     static trimIndent(paramarg0: string): string;
     static trimMargin(paramarg0: string, paramarg1: string): string;
     static trimStart(paramarg0: CharSequence): CharSequence;
-    static trimStart(paramarg0: CharSequence, paramarg1: string[]): CharSequence;
+    static trimStart(paramarg0: CharSequence, ...paramarg1: string[]): CharSequence;
     static trimStart(paramarg0: CharSequence, paramarg1: (param0: Object) => boolean): CharSequence;
-    static trimStart(paramarg0: string, paramarg1: string[]): string;
+    static trimStart(paramarg0: string, ...paramarg1: string[]): string;
     static trimStart(paramarg0: string, paramarg1: (param0: Object) => boolean): string;
 }

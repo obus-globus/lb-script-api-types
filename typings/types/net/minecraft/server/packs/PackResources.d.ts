@@ -14,7 +14,7 @@ export interface PackResources extends AutoCloseable, Object {
     getMetadataSection<T extends unknown>(metadataSerializer: MetadataSectionType<T>): T;
     getNamespaces(type: PackType): string[];
     getResource(type: PackType, location: Identifier): () => InputStream;
-    getRootResource(path: string[]): () => InputStream;
+    getRootResource(...path: string[]): () => InputStream;
     knownPackInfo(): Optional<KnownPack>;
     listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
     location(): PackLocationInfo;

@@ -5,7 +5,7 @@ export interface Descriptor extends Serializable, Object, Cloneable{
     clone(): Object;
     getFieldNames(): string[];
     getFieldValue(arg0: string): Object;
-    getFieldValues(arg0: string[]): Object[];
+    getFieldValues(...arg0: string[]): Object[];
     getFields(): string[];
     isValid(): boolean;
     removeField(arg0: string): void;

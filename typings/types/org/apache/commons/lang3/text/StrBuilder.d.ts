@@ -37,11 +37,11 @@ export class StrBuilder extends Object implements Serializable, Appendable, Char
     append(arg0: CharSequence): StrBuilder;
     append(arg0: CharSequence, arg1: number, arg2: number): StrBuilder;
     append(arg0: number): StrBuilder;
-    append(arg0: string, arg1: Object[]): StrBuilder;
+    append(arg0: string, ...arg1: Object[]): StrBuilder;
     append(arg0: string, arg1: number, arg2: number): StrBuilder;
     append(arg0: StrBuilder): StrBuilder;
     append(arg0: StrBuilder, arg1: number, arg2: number): StrBuilder;
-    appendAll<T extends unknown>(arg0: T[]): StrBuilder;
+    appendAll<T extends unknown>(...arg0: T[]): StrBuilder;
     appendAll(arg0: (Object | null)[]): StrBuilder;
     appendAll(arg0: Iterator<Object>): StrBuilder;
     appendFixedWidthPadLeft(arg0: Object, arg1: number, arg2: string): StrBuilder;
@@ -68,7 +68,7 @@ export class StrBuilder extends Object implements Serializable, Appendable, Char
     appendln(arg0: string[]): StrBuilder;
     appendln(arg0: string[], arg1: number, arg2: number): StrBuilder;
     appendln(arg0: number): StrBuilder;
-    appendln(arg0: string, arg1: Object[]): StrBuilder;
+    appendln(arg0: string, ...arg1: Object[]): StrBuilder;
     appendln(arg0: string, arg1: number, arg2: number): StrBuilder;
     appendln(arg0: StrBuilder): StrBuilder;
     appendln(arg0: StrBuilder, arg1: number, arg2: number): StrBuilder;

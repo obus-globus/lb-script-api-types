@@ -11,8 +11,8 @@ export class Guid$CLSID extends Guid$GUID {
     static autoRead(paramarg0: (Object | null)[]): void;
     static autoWrite(paramarg0: (Object | null)[]): void;
     static createFieldsOrder(paramarg0: string): string[];
-    static createFieldsOrder(paramarg0: (Object | null)[]): string[];
-    static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
+    static createFieldsOrder(...paramarg0: (Object | null)[]): string[];
+    static createFieldsOrder(paramarg0: string[], ...paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static fromBinary(paramarg0: number[]): Guid$GUID;
     static fromString(paramarg0: string): Guid$GUID;

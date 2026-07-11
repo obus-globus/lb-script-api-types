@@ -8,12 +8,12 @@ export class PyTorchLibrary extends Object {
     conj(arg0: number): number;
     contentEqual(arg0: number, arg1: number): boolean;
     iValueFromBool(arg0: boolean): number;
-    iValueFromBoolList(arg0: (Object | null)[]): number;
+    iValueFromBoolList(...arg0: (Object | null)[]): number;
     iValueFromDouble(arg0: number): number;
-    iValueFromDoubleList(arg0: number[]): number;
+    iValueFromDoubleList(...arg0: number[]): number;
     iValueFromList(arg0: number[]): number;
     iValueFromLong(arg0: number): number;
-    iValueFromLongList(arg0: number[]): number;
+    iValueFromLongList(...arg0: number[]): number;
     iValueFromString(arg0: string): number;
     iValueFromStringIValueMap(arg0: string[], arg1: number[]): number;
     iValueFromStringMap(arg0: string[], arg1: number[]): number;

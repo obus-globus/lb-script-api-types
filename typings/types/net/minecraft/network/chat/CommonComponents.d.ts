@@ -30,9 +30,9 @@ export class CommonComponents extends Object {
     static days(paramvalue: number): MutableComponent;
     static disconnectButtonLabel(paramisLocalServer: boolean): Component;
     static hours(paramvalue: number): MutableComponent;
-    static joinForNarration(paramcomponents: (Object | null)[]): MutableComponent;
+    static joinForNarration(...paramcomponents: (Object | null)[]): MutableComponent;
     static joinLines(paramlines: Component[]): Component;
-    static joinLines(paramlines: (Object | null)[]): Component;
+    static joinLines(...paramlines: (Object | null)[]): Component;
     static minutes(paramvalue: number): MutableComponent;
     static optionNameValue(paramname: Component, paramvalue: Component): MutableComponent;
     static optionStatus(paramvalue: boolean): Component;

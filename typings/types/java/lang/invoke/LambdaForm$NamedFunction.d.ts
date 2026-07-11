@@ -21,7 +21,7 @@ export class LambdaForm$NamedFunction extends Object {
     hashCode(): number;
     intrinsicData(): Object;
     intrinsicName(): MethodHandleImpl$Intrinsic;
-    invokeWithArguments(arg0: Object[]): Object;
+    invokeWithArguments(...arg0: Object[]): Object;
     invokeWithArgumentsTracing(arg0: Object[]): Object;
     // private invoker(): MethodHandle;
     isIdentity(): boolean;

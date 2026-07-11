@@ -3,7 +3,7 @@ import type { ArrayBufferLibrary } from '../../../../../com/oracle/truffle/js/ap
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ArrayBufferLibraryGen$Default extends LibraryExport<ArrayBufferLibrary> {
-    static register(paramreceiverClass: Class<Object>, paramlibs: Object | null): void;
+    static register(paramreceiverClass: Class<Object>, ...paramlibs: Object | null): void;
     private constructor()
     createCached(receiver: Object): ArrayBufferLibrary;
     createUncached(receiver: Object): ArrayBufferLibrary;

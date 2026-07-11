@@ -19,7 +19,7 @@ export abstract class CompletableFuture$Completion extends ForkJoinTask<void> im
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: Object | null): void;
     constructor()
     // private next: CompletableFuture$Completion;
     exec(): boolean;

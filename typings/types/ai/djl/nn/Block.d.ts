@@ -27,7 +27,7 @@ export interface Block extends Object {
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     getParameters(): (Object | null)[];
-    initialize(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
+    initialize(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
     isInitialized(): boolean;
     loadParameters(arg0: NDManager, arg1: DataInputStream): void;
     saveParameters(arg0: DataOutputStream): void;

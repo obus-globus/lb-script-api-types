@@ -12,18 +12,18 @@ export class FileFilterUtils extends Object {
     static ageFileFilter(paramarg0: Date, paramarg1: boolean): IOFileFilter;
     static ageFileFilter(paramarg0: number): IOFileFilter;
     static ageFileFilter(paramarg0: number, paramarg1: boolean): IOFileFilter;
-    static and(paramarg0: (Object | null)[]): IOFileFilter;
+    static and(...paramarg0: (Object | null)[]): IOFileFilter;
     static andFileFilter(paramarg0: IOFileFilter, paramarg1: IOFileFilter): IOFileFilter;
     static asFileFilter(paramarg0: (param0: File) => boolean): IOFileFilter;
     static asFileFilter(paramarg0: (param0: File, param1: string) => boolean): IOFileFilter;
     static directoryFileFilter(): IOFileFilter;
     static falseFileFilter(): IOFileFilter;
     static fileFileFilter(): IOFileFilter;
-    static filter(paramarg0: IOFileFilter, paramarg1: (Object | null)[]): (Object | null)[];
+    static filter(paramarg0: IOFileFilter, ...paramarg1: (Object | null)[]): (Object | null)[];
     static filter(paramarg0: IOFileFilter, paramarg1: File[]): (Object | null)[];
-    static filterList(paramarg0: IOFileFilter, paramarg1: (Object | null)[]): File[];
+    static filterList(paramarg0: IOFileFilter, ...paramarg1: (Object | null)[]): File[];
     static filterList(paramarg0: IOFileFilter, paramarg1: File[]): File[];
-    static filterSet(paramarg0: IOFileFilter, paramarg1: (Object | null)[]): File[];
+    static filterSet(paramarg0: IOFileFilter, ...paramarg1: (Object | null)[]): File[];
     static filterSet(paramarg0: IOFileFilter, paramarg1: File[]): File[];
     static magicNumberFileFilter(paramarg0: number[]): IOFileFilter;
     static magicNumberFileFilter(paramarg0: number[], paramarg1: number): IOFileFilter;
@@ -36,7 +36,7 @@ export class FileFilterUtils extends Object {
     static nameFileFilter(paramarg0: string): IOFileFilter;
     static nameFileFilter(paramarg0: string, paramarg1: IOCase): IOFileFilter;
     static notFileFilter(paramarg0: IOFileFilter): IOFileFilter;
-    static or(paramarg0: (Object | null)[]): IOFileFilter;
+    static or(...paramarg0: (Object | null)[]): IOFileFilter;
     static orFileFilter(paramarg0: IOFileFilter, paramarg1: IOFileFilter): IOFileFilter;
     static prefixFileFilter(paramarg0: string): IOFileFilter;
     static prefixFileFilter(paramarg0: string, paramarg1: IOCase): IOFileFilter;
@@ -45,7 +45,7 @@ export class FileFilterUtils extends Object {
     static sizeRangeFileFilter(paramarg0: number, paramarg1: number): IOFileFilter;
     static suffixFileFilter(paramarg0: string): IOFileFilter;
     static suffixFileFilter(paramarg0: string, paramarg1: IOCase): IOFileFilter;
-    static toList(paramarg0: (Object | null)[]): IOFileFilter[];
+    static toList(...paramarg0: (Object | null)[]): IOFileFilter[];
     static trueFileFilter(): IOFileFilter;
     constructor()
 }

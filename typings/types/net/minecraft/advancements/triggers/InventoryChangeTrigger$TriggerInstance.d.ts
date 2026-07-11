@@ -11,9 +11,9 @@ import type { ItemStack } from '../../../../net/minecraft/world/item/ItemStack.d
 import type { ValidationContextSource } from '../../../../net/minecraft/world/level/storage/loot/ValidationContextSource.d.ts'
 export class InventoryChangeTrigger$TriggerInstance extends Record implements SimpleCriterionTrigger$SimpleInstance {
     static CODEC: Codec<InventoryChangeTrigger$TriggerInstance>;
-    static hasItems(paramitems: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
-    static hasItems(paramitems: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
-    static hasItems(paramitems: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static hasItems(...paramitems: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static hasItems(...paramitems: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static hasItems(...paramitems: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
     constructor(player: Optional<ContextAwarePredicate>, slots: InventoryChangeTrigger$TriggerInstance$Slots, items: ItemPredicate[])
     // private items: ItemPredicate[];
     // private player: Optional<ContextAwarePredicate>;

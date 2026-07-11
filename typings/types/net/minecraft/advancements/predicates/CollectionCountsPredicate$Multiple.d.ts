@@ -7,7 +7,7 @@ import type { CollectionCountsPredicate$Entry } from '../../../../net/minecraft/
 export class CollectionCountsPredicate$Multiple<T extends unknown, P extends Predicate<T>> extends Record implements CollectionCountsPredicate<T, P> {
     static codec(paramelementCodec: Codec<Object>): Codec<CollectionCountsPredicate<Object, any>>;
     static of(parampredicates: CollectionCountsPredicate$Entry<Object, any>[]): CollectionCountsPredicate<Object, any>;
-    static of(parampredicates: Object | null): CollectionCountsPredicate<Object, any>;
+    static of(...parampredicates: Object | null): CollectionCountsPredicate<Object, any>;
     constructor(entries: CollectionCountsPredicate$Entry<T, P>[])
     // private entries: CollectionCountsPredicate$Entry<T, P>[];
     entries(): CollectionCountsPredicate$Entry<T, P>[];

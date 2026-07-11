@@ -12,7 +12,7 @@ export class EntityPacketRewriter1_21_5 extends EntityRewriter<ClientboundPacket
     // private playShieldSound(arg0: PacketWrapper, arg1: number, arg2: number, arg3: number): void;
     registerPackets(): void;
     registerRewrites(): void;
-    // private sendEntityVariants(arg0: UserConnection, arg1: string, arg2: string, arg3: boolean, arg4: string[]): void;
+    // private sendEntityVariants(arg0: UserConnection, arg1: string, arg2: string, arg3: boolean, ...arg4: string[]): void;
     // private sendSaddleEquipment(arg0: EntityDataHandlerEvent, arg1: boolean): void;
     typeFromId(arg0: number): EntityType;
     typeFromId(arg0: string): EntityType;

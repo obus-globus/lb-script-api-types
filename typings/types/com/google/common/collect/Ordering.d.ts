@@ -17,7 +17,7 @@ export abstract class Ordering<T extends unknown> extends Object implements Comp
     static comparingInt(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
     static comparingLong(paramarg0: (param0: Object) => number): (param0: Object) => boolean;
     static compound(paramcomparators: (param0: Object) => boolean[]): Ordering<Object>;
-    static explicit(paramleastValue: Object | null, paramremainingValuesInOrder: Object | null): Ordering<Object>;
+    static explicit(paramleastValue: Object | null, ...paramremainingValuesInOrder: Object | null): Ordering<Object>;
     static explicit(paramvaluesInOrder: (Object | null)[]): Ordering<Object>;
     static from(paramordering: Ordering<Object>): Ordering<Object>;
     static from(paramcomparator: (param0: Object) => boolean): Ordering<Object>;
@@ -40,11 +40,11 @@ export abstract class Ordering<T extends unknown> extends Object implements Comp
     leastOf<E extends T>(iterator: Iterator<E>, k: number): E[];
     lexicographical<S extends T>(): Ordering<S[]>;
     max<E extends T>(a: E, b: E): E;
-    max<E extends T>(a: E, b: E, c: E, rest: E[]): E;
+    max<E extends T>(a: E, b: E, c: E, ...rest: E[]): E;
     max<E extends T>(iterable: E[]): E;
     max<E extends T>(iterator: Iterator<E>): E;
     min<E extends T>(a: E, b: E): E;
-    min<E extends T>(a: E, b: E, c: E, rest: E[]): E;
+    min<E extends T>(a: E, b: E, c: E, ...rest: E[]): E;
     min<E extends T>(iterable: E[]): E;
     min<E extends T>(iterator: Iterator<E>): E;
     nullsFirst<S extends T>(): Ordering<S>;

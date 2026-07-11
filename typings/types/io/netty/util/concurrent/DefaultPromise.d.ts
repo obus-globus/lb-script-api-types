@@ -19,7 +19,7 @@ export class DefaultPromise<V extends unknown> extends AbstractFuture<V> impleme
     // private waiters: number;
     addListener(arg0: GenericFutureListener<Future<V>>): Promise<V>;
     // private addListener0(arg0: GenericFutureListener<Future<V>>): void;
-    addListeners(arg0: GenericFutureListener<Future<V>>[]): Promise<V>;
+    addListeners(...arg0: GenericFutureListener<Future<V>>[]): Promise<V>;
     await(): Promise<V>;
     await(arg0: number): boolean;
     await(arg0: number, arg1: TimeUnit): boolean;
@@ -49,7 +49,7 @@ export class DefaultPromise<V extends unknown> extends AbstractFuture<V> impleme
     // private progressiveListeners(): Object;
     removeListener(arg0: GenericFutureListener<Future<V>>): Promise<V>;
     // private removeListener0(arg0: GenericFutureListener<Future<V>>): void;
-    removeListeners(arg0: GenericFutureListener<Future<V>>[]): Promise<V>;
+    removeListeners(...arg0: GenericFutureListener<Future<V>>[]): Promise<V>;
     // private rethrowIfFailed(): void;
     setFailure(arg0: Throwable): Promise<V>;
     // private setFailure0(arg0: Throwable): boolean;

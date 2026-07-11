@@ -4,7 +4,7 @@ import type { ApplicationProtocolConfig$SelectorFailureBehavior } from '../../..
 import type { OpenSslApplicationProtocolNegotiator } from '../../../../io/netty/handler/ssl/OpenSslApplicationProtocolNegotiator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OpenSslNpnApplicationProtocolNegotiator extends Object implements OpenSslApplicationProtocolNegotiator {
-    constructor(arg0: string[])
+    constructor(...arg0: string[])
     constructor(arg0: string[])
     // private protocols: string[];
     protocol(): ApplicationProtocolConfig$Protocol;

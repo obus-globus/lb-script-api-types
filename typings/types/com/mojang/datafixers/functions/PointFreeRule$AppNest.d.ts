@@ -9,13 +9,13 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PointFreeRule$AppNest extends Enum<PointFreeRule$AppNest> implements PointFreeRule {
     static INSTANCE: PointFreeRule$AppNest;
     static all(paramarg0: PointFreeRule): PointFreeRule;
-    static choice(paramarg0: (Object | null)[]): PointFreeRule;
+    static choice(...paramarg0: (Object | null)[]): PointFreeRule;
     static everywhere(paramarg0: PointFreeRule, paramarg1: PointFreeRule): PointFreeRule;
     static many(paramarg0: PointFreeRule): PointFreeRule;
     static nop(): PointFreeRule;
     static once(paramarg0: PointFreeRule): PointFreeRule;
     static one(paramarg0: PointFreeRule): PointFreeRule;
-    static seq(paramarg0: (Object | null)[]): PointFreeRule;
+    static seq(...paramarg0: (Object | null)[]): PointFreeRule;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PointFreeRule$AppNest;
     static values(): (Object | null)[];

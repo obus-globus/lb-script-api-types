@@ -37,7 +37,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * @param formatting Function to apply formatting to the text (default: regular)
      * @param hover Optional hover event (defaults to "Click to copy" tooltip)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L144 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:144}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L144 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:144}
      */
     printStyledComponent(key: string, textComponent: Component | null, copyContent: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null): void;
     /**
@@ -49,11 +49,11 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * @param hover Optional hover event (defaults to "Click to copy" tooltip)
      * @param click Optional click action type (defaults to {@link ClickEvent.CopyToClipboard})
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:122}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L122 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:122}
      */
     printStyledText(key: string, data: string | null, formatting: (param0: MutableComponent) => MutableComponent, hover: HoverEvent | null, click: ClickEvent | null): void;
-    result(key: string, args: Object[]): MutableComponent;
-    resultWithTree(key: string, args: Object[]): MutableComponent;
+    result(key: string, ...args: Object[]): MutableComponent;
+    resultWithTree(key: string, ...args: Object[]): MutableComponent;
     /**
      * Returns the formatted usage information of this command
      *
@@ -62,7 +62,7 @@ export class Command extends Object implements DebuggedOwner, MinecraftShortcuts
      * command_name subcommand_name <required_arg> [[<optional_vararg>]...
      * ```
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L179 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:179}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt#L179 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Command.kt:179}
      */
     usage(): Component[];
 }

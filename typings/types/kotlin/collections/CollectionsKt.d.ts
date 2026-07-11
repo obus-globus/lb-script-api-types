@@ -20,7 +20,7 @@ export class CollectionsKt extends CollectionsKt___CollectionsKt {
     static all(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): boolean;
     static any(paramarg0: (Object | null)[]): boolean;
     static any(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): boolean;
-    static arrayListOf(paramarg0: Object | null): (Object | null)[];
+    static arrayListOf(...paramarg0: Object | null): (Object | null)[];
     static asCollection(paramarg0: Object | null, paramarg1: boolean): (Object | null)[];
     static asReversed(paramarg0: (Object | null)[]): (Object | null)[];
     static asReversedMutable(paramarg0: (Object | null)[]): (Object | null)[];
@@ -131,9 +131,9 @@ export class CollectionsKt extends CollectionsKt___CollectionsKt {
     static lastOrNull(paramarg0: (Object | null)[]): Object | null;
     static lastOrNull(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): Object | null;
     static listOf(paramarg0: Object | null): (Object | null)[];
-    static listOf(paramarg0: Object | null): (Object | null)[];
+    static listOf(...paramarg0: Object | null): (Object | null)[];
     static listOfNotNull(paramarg0: Object | null): (Object | null)[];
-    static listOfNotNull(paramarg0: Object | null): (Object | null)[];
+    static listOfNotNull(...paramarg0: Object | null): (Object | null)[];
     static map(paramarg0: (Object | null)[], paramarg1: (param0: Object) => Object | null): (Object | null)[];
     static mapIndexed(paramarg0: (Object | null)[], paramarg1: (param0: Object, param1: Object) => Object | null): (Object | null)[];
     static mapIndexedNotNull(paramarg0: (Object | null)[], paramarg1: (param0: Object, param1: Object) => Object | null): (Object | null)[];
@@ -176,7 +176,7 @@ export class CollectionsKt extends CollectionsKt___CollectionsKt {
     static minus(paramarg0: (Object | null)[], paramarg1: Object | null): (Object | null)[];
     static minus(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): (Object | null)[];
     static minus(paramarg0: (Object | null)[], paramarg1: Sequence<Object>): (Object | null)[];
-    static mutableListOf(paramarg0: Object | null): (Object | null)[];
+    static mutableListOf(...paramarg0: Object | null): (Object | null)[];
     static none(paramarg0: (Object | null)[]): boolean;
     static none(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): boolean;
     static onEach(paramarg0: Object | null, paramarg1: (param0: Object) => void): Object | null;

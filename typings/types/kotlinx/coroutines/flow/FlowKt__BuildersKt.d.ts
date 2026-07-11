@@ -18,5 +18,5 @@ export class FlowKt__BuildersKt extends Object {
     static emptyFlow(): Flow<Object>;
     static flow(paramarg0: (param0: Object, param1: Object) => Object): Flow<Object>;
     static flowOf(paramarg0: Object | null): Flow<Object>;
-    static flowOf(paramarg0: Object | null): Flow<Object>;
+    static flowOf(...paramarg0: Object | null): Flow<Object>;
 }

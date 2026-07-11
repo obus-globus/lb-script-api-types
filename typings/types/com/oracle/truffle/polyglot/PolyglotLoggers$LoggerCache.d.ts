@@ -7,7 +7,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { AbstractPolyglotImpl$LogHandler } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$LogHandler.d.ts'
 export class PolyglotLoggers$LoggerCache extends Object {
-    private constructor(handler: AbstractPolyglotImpl$LogHandler, useCurrentContext: boolean, ownerLogLevelsProvider: (param0: PolyglotImpl$VMObject) => { [key: string]: Level }, rawLoggerIds: string[], implicitLevels: Level[])
+    private constructor(handler: AbstractPolyglotImpl$LogHandler, useCurrentContext: boolean, ownerLogLevelsProvider: (param0: PolyglotImpl$VMObject) => { [key: string]: Level }, rawLoggerIds: string[], ...implicitLevels: Level[])
     // private handler: AbstractPolyglotImpl$LogHandler;
     // private implicitLevels: Level[];
     // private ownerLogLevelsProvider: (param0: PolyglotImpl$VMObject) => { [key: string]: Level };

@@ -18,7 +18,7 @@ export class ObjectArrays$ForkJoinQuickSort2<K extends unknown> extends Recursiv
     static inForkJoinPool(): boolean;
     static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
-    static invokeAll(paramarg0: Object | null): void;
+    static invokeAll(...paramarg0: Object | null): void;
     constructor(arg0: K[], arg1: K[], arg2: number, arg3: number)
     // private from: number;
     // private to: number;

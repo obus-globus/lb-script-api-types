@@ -18,5 +18,5 @@ export class AFUNIXSocketChannel extends AFSocketChannel<AFUNIXSocketAddress> im
     getPeerCredentials(): AFUNIXSocketCredentials;
     getReceivedFileDescriptors(): FileDescriptor[];
     hasOutboundFileDescriptors(): boolean;
-    setOutboundFileDescriptors(arg0: FileDescriptor[]): void;
+    setOutboundFileDescriptors(...arg0: FileDescriptor[]): void;
 }

@@ -11,7 +11,7 @@ export class SearchRecipeBookCategory extends Enum<SearchRecipeBookCategory> imp
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SearchRecipeBookCategory;
     static values(): (Object | null)[];
-    private constructor(includedCategories: RecipeBookCategory[])
+    private constructor(...includedCategories: RecipeBookCategory[])
     // private includedCategories: RecipeBookCategory[];
     includedCategories(): RecipeBookCategory[];
     name(): "CRAFTING" | "FURNACE" | "BLAST_FURNACE" | "SMOKER";

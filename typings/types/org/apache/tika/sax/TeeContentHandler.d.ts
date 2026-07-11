@@ -3,7 +3,7 @@ import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts
 import type { Locator } from '../../../../org/xml/sax/Locator.d.ts'
 import type { DefaultHandler } from '../../../../org/xml/sax/helpers/DefaultHandler.d.ts'
 export class TeeContentHandler extends DefaultHandler {
-    constructor(arg0: ContentHandler[])
+    constructor(...arg0: ContentHandler[])
     // private handlers: ContentHandler[];
     characters(arg0: string[], arg1: number, arg2: number): void;
     endDocument(): void;

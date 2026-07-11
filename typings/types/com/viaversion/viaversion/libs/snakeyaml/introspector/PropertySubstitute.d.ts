@@ -5,8 +5,8 @@ import type { Method } from '../../../../../../java/lang/reflect/Method.d.ts'
 import type { Annotation } from '../../../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class PropertySubstitute extends Property {
-    constructor(arg0: string, arg1: Class<Object>, arg2: Class<Object>[])
-    constructor(arg0: string, arg1: Class<Object>, arg2: string, arg3: string, arg4: Class<Object>[])
+    constructor(arg0: string, arg1: Class<Object>, ...arg2: Class<Object>[])
+    constructor(arg0: string, arg1: Class<Object>, arg2: string, arg3: string, ...arg4: Class<Object>[])
     readonly delegate: Property;
     // private field: Field;
     // private filler: boolean;
@@ -16,7 +16,7 @@ export class PropertySubstitute extends Property {
     targetType: Class<Object>;
     // private write: Method;
     // private writeMethod: string;
-    // private discoverMethod(arg0: Class<Object>, arg1: string, arg2: Class<Object>[]): Method;
+    // private discoverMethod(arg0: Class<Object>, arg1: string, ...arg2: Class<Object>[]): Method;
     get(arg0: Object): Object;
     getActualTypeArguments(): Class<Object>[];
     getAnnotation<A extends Annotation>(arg0: Class<A>): A;
@@ -26,7 +26,7 @@ export class PropertySubstitute extends Property {
     isReadable(): boolean;
     isWritable(): boolean;
     set(arg0: Object, arg1: Object): void;
-    setActualTypeArguments(arg0: Class<Object>[]): void;
+    setActualTypeArguments(...arg0: Class<Object>[]): void;
     setDelegate(arg0: Property): void;
     setTargetType(arg0: Class<Object>): void;
 }

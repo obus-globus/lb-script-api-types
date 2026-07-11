@@ -65,7 +65,7 @@ export class ZipArchiveEntry extends ZipEntry implements ArchiveEntry, EntryStre
     static STORED: number;
     constructor()
     constructor(arg0: File, arg1: string)
-    constructor(arg0: Path[], arg1: string, arg2: LinkOption[])
+    constructor(arg0: Path[], arg1: string, ...arg2: LinkOption[])
     constructor(arg0: ZipEntry)
     constructor(arg0: string)
     constructor(arg0: ZipArchiveEntry)
@@ -148,7 +148,7 @@ export class ZipArchiveEntry extends ZipEntry implements ArchiveEntry, EntryStre
     // private requiresExtraTimeFields(): boolean;
     resolveIn(arg0: Path[]): Path[];
     setAlignment(arg0: number): void;
-    // private setAttributes(arg0: Path[], arg1: LinkOption[]): void;
+    // private setAttributes(arg0: Path[], ...arg1: LinkOption[]): void;
     setCentralDirectoryExtra(arg0: number[]): void;
     setCommentSource(arg0: ZipArchiveEntry$CommentSource): void;
     setCreationTime(arg0: FileTime): ZipEntry;

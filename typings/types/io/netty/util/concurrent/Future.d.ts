@@ -6,7 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export interface Future<V extends unknown> extends Future_2<V>, Object{
     addListener(arg0: GenericFutureListener<Future<V>>): Future<V>;
-    addListeners(arg0: GenericFutureListener<Future<V>>[]): Future<V>;
+    addListeners(...arg0: GenericFutureListener<Future<V>>[]): Future<V>;
     await(): Future<V>;
     await(arg0: number): boolean;
     await(arg0: number, arg1: TimeUnit): boolean;
@@ -20,7 +20,7 @@ export interface Future<V extends unknown> extends Future_2<V>, Object{
     isCancellable(): boolean;
     isSuccess(): boolean;
     removeListener(arg0: GenericFutureListener<Future<V>>): Future<V>;
-    removeListeners(arg0: GenericFutureListener<Future<V>>[]): Future<V>;
+    removeListeners(...arg0: GenericFutureListener<Future<V>>[]): Future<V>;
     resultNow(): V;
     state(): Future$State;
     sync(): Future<V>;

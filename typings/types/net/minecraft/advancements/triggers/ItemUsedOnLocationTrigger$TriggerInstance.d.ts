@@ -16,7 +16,7 @@ export class ItemUsedOnLocationTrigger$TriggerInstance extends Record implements
     static allayDropItemOnBlock(paramlocation: LocationPredicate$Builder, paramitem: ItemPredicate$Builder): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static itemUsedOnBlock(paramlocation: LocationPredicate$Builder, paramitem: ItemPredicate$Builder): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlock(paramblock: Block): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
-    static placedBlock(paramconditions: (Object | null)[]): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
+    static placedBlock(...paramconditions: (Object | null)[]): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlockWithProperties(paramblock: Block, paramproperties: Property<any>, parampropertyValue: Object | null): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlockWithProperties(paramblock: Block, paramproperty: Property<any>, parampropertyValue: string): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;
     static placedBlockWithProperties(paramblock: Block, paramproperty: Property<boolean>, parampropertyValue: boolean): Criterion<ItemUsedOnLocationTrigger$TriggerInstance>;

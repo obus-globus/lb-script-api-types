@@ -7,7 +7,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Comp<A extends unknown, B extends unknown> extends PointFree<(param0: A) => B> {
     static indent(paramarg0: number): string;
-    constructor(arg0: PointFree<(param0: Object | null) => Object | null>[])
+    constructor(...arg0: PointFree<(param0: Object | null) => Object | null>[])
     constructor(arg0: PointFree<(param0: Object | null) => Object | null>[], arg1: Type<(param0: A) => B>)
     // private functions: PointFree<(param0: Object | null) => Object | null>[];
     // private type: Type<(param0: A) => B>;

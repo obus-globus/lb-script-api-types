@@ -27,7 +27,7 @@ export abstract class AbstractInternalLogger extends Object implements InternalL
     log(arg0: InternalLogLevel, arg1: string): void;
     log(arg0: InternalLogLevel, arg1: string, arg2: Object): void;
     log(arg0: InternalLogLevel, arg1: string, arg2: Object, arg3: Object): void;
-    log(arg0: InternalLogLevel, arg1: string, arg2: Object[]): void;
+    log(arg0: InternalLogLevel, arg1: string, ...arg2: Object[]): void;
     log(arg0: InternalLogLevel, arg1: string, arg2: Throwable): void;
     log(arg0: InternalLogLevel, arg1: Throwable): void;
     name(): string;

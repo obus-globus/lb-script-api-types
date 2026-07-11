@@ -10,7 +10,7 @@ import type { ItemStack } from '../../../../../../../../../net/minecraft/world/i
 /**
  * @see ArmorMaterials
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt:83}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/2f6d19f3612ad2b226f28cf69d3c1606d4c2e8fa/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt:83}
  */
 export class CustomAntiBotMode$Armor$ArmorPredicate extends Enum<CustomAntiBotMode$Armor$ArmorPredicate> implements Tagged {
     static CHAIN: CustomAntiBotMode$Armor$ArmorPredicate;
@@ -32,7 +32,7 @@ export class CustomAntiBotMode$Armor$ArmorPredicate extends Enum<CustomAntiBotMo
     static valueOf(paramarg0: string): CustomAntiBotMode$Armor$ArmorPredicate;
     static values(): (Object | null)[];
     private constructor(tag: string, predicate: (param0: ItemStack) => boolean)
-    private constructor(choiceName: string, items: Item[])
+    private constructor(choiceName: string, ...items: Item[])
     private constructor(choiceName: string, tag: TagKey<Item>)
     private constructor(choiceName: string, item: Item)
     readonly predicate: (param0: ItemStack) => boolean;

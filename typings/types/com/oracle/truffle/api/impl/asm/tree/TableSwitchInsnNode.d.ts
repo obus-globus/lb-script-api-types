@@ -18,7 +18,7 @@ export class TableSwitchInsnNode extends AbstractInsnNode {
     static TABLESWITCH_INSN: number;
     static TYPE_INSN: number;
     static VAR_INSN: number;
-    constructor(min: number, max: number, dflt: LabelNode, labels: LabelNode[])
+    constructor(min: number, max: number, dflt: LabelNode, ...labels: LabelNode[])
     dflt: LabelNode;
     labels: LabelNode[];
     max: number;

@@ -12,29 +12,31 @@ export class MethodStream extends Object {
     constructor(arg0: RStream, arg1: boolean)
     // private methods: MethodWrapper[];
     // private parent: RStream;
-    by(arg0: Class<Object>[]): MethodWrapper;
+    by(...arg0: Class<Object>[]): MethodWrapper;
     by(arg0: number): MethodWrapper;
     by(arg0: string): MethodWrapper;
-    by(arg0: string, arg1: Class<Object>[]): MethodWrapper;
+    by(arg0: string, ...arg1: Class<Object>[]): MethodWrapper;
     copy(): MethodStream;
     filter(arg0: (param0: MethodWrapper) => boolean): MethodStream;
-    filter(arg0: Class<Object>[]): MethodStream;
-    filter(arg0: string[]): MethodStream;
+    filter(...arg0: Class<Object>[]): MethodStream;
+    filter(...arg0: string[]): MethodStream;
     filter(arg0: boolean): MethodStream;
     filter(arg0: string): MethodStream;
+    filter(arg0: string[]): MethodStream;
     filterAnnotation(arg0: Class<Object>): MethodStream;
     filterName(arg0: string): MethodStream;
+    filterNames(...arg0: string[]): MethodStream;
     filterNames(arg0: string[]): MethodStream;
-    filterParameters(arg0: Class<Object>[]): MethodStream;
+    filterParameters(...arg0: Class<Object>[]): MethodStream;
     filterStatic(arg0: boolean): MethodStream;
     forEach(arg0: (param0: MethodWrapper) => void): MethodStream;
     iterator(): Iterator<MethodWrapper>;
     jstream(): Stream<MethodWrapper>;
     map<T extends unknown>(arg0: (param0: MethodWrapper) => T): Stream<T>;
-    opt(arg0: Class<Object>[]): Optional<MethodWrapper>;
+    opt(...arg0: Class<Object>[]): Optional<MethodWrapper>;
     opt(arg0: number): Optional<MethodWrapper>;
     opt(arg0: string): Optional<MethodWrapper>;
-    opt(arg0: string, arg1: Class<Object>[]): Optional<MethodWrapper>;
+    opt(arg0: string, ...arg1: Class<Object>[]): Optional<MethodWrapper>;
     parent(): RStream;
     size(): number;
 }

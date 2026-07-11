@@ -4,7 +4,7 @@ import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { FilterCollectionWriter } from '../../../../../org/apache/commons/io/output/FilterCollectionWriter.d.ts'
 export class ProxyCollectionWriter extends FilterCollectionWriter {
     static nullWriter(): Writer;
-    constructor(arg0: Writer[])
+    constructor(...arg0: Writer[])
     constructor(arg0: Writer[])
     afterWrite(arg0: number): void;
     append(arg0: string): Writer;

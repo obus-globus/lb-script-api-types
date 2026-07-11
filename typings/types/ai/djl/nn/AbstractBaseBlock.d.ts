@@ -19,7 +19,7 @@ export abstract class AbstractBaseBlock extends Object implements Block {
     inputShapes: Shape[];
     outputDataTypes: DataType[];
     // private version: number;
-    beforeInitialize(arg0: Shape[]): void;
+    beforeInitialize(...arg0: Shape[]): void;
     cast(arg0: DataType): void;
     clear(): void;
     describeInput(): Pair<string, Shape>[];
@@ -35,8 +35,8 @@ export abstract class AbstractBaseBlock extends Object implements Block {
     getOutputDataTypes(): DataType[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     getParameters(): (Object | null)[];
-    initialize(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
-    initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
+    initialize(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
+    initializeChildBlocks(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
     isInitialized(): boolean;
     loadMetadata(arg0: number, arg1: DataInputStream): void;
     loadParameters(arg0: NDManager, arg1: DataInputStream): void;

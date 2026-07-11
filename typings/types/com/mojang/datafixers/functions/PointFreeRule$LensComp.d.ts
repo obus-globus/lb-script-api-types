@@ -8,7 +8,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PointFreeRule$LensComp extends Enum<PointFreeRule$LensComp> implements PointFreeRule$CompRewrite {
     static INSTANCE: PointFreeRule$LensComp;
-    static together(paramarg0: (Object | null)[]): PointFreeRule$CompRewrite;
+    static together(...paramarg0: (Object | null)[]): PointFreeRule$CompRewrite;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): PointFreeRule$LensComp;
     static values(): (Object | null)[];

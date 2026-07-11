@@ -9,10 +9,10 @@ export class VersionParser extends Object {
     // private buildIdentifier(): string;
     // private checkForEmptyIdentifier(): void;
     // private checkForLeadingZeroes(): void;
-    // private consumeNextCharacter(arg0: VersionParser$CharType[]): string;
+    // private consumeNextCharacter(...arg0: VersionParser$CharType[]): string;
     // private digits(): string;
-    // private ensureValidLookahead(arg0: VersionParser$CharType[]): void;
-    // private nearestCharType(arg0: VersionParser$CharType[]): VersionParser$CharType;
+    // private ensureValidLookahead(...arg0: VersionParser$CharType[]): void;
+    // private nearestCharType(...arg0: VersionParser$CharType[]): VersionParser$CharType;
     // private numericIdentifier(): number;
     // private parseBuild(): string[];
     // private parsePreRelease(): string[];

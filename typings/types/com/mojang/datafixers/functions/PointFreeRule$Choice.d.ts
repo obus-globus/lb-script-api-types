@@ -5,13 +5,13 @@ import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PointFreeRule$Choice extends Record implements PointFreeRule {
     static all(paramarg0: PointFreeRule): PointFreeRule;
-    static choice(paramarg0: (Object | null)[]): PointFreeRule;
+    static choice(...paramarg0: (Object | null)[]): PointFreeRule;
     static everywhere(paramarg0: PointFreeRule, paramarg1: PointFreeRule): PointFreeRule;
     static many(paramarg0: PointFreeRule): PointFreeRule;
     static nop(): PointFreeRule;
     static once(paramarg0: PointFreeRule): PointFreeRule;
     static one(paramarg0: PointFreeRule): PointFreeRule;
-    static seq(paramarg0: (Object | null)[]): PointFreeRule;
+    static seq(...paramarg0: (Object | null)[]): PointFreeRule;
     constructor(rules: PointFreeRule[])
     // private rules: PointFreeRule[];
     equals(arg0: Object | null): boolean;

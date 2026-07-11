@@ -22,7 +22,7 @@ export class Style extends Object implements MixinStyleAccessor {
     readonly strikethrough: boolean;
     readonly underlined: boolean;
     applyFormat(format: ChatFormatting): Style;
-    applyFormats(formats: ChatFormatting[]): Style;
+    applyFormats(...formats: ChatFormatting[]): Style;
     applyLegacyFormat(format: ChatFormatting): Style;
     applyTo(other: Style): Style;
     equals(o: Object | null): boolean;

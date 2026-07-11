@@ -20,9 +20,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class Files extends Object {
     static append(paramfrom: CharSequence, paramto: File, paramcharset: Charset): void;
-    static asByteSink(paramfile: File, parammodes: (Object | null)[]): ByteSink;
+    static asByteSink(paramfile: File, ...parammodes: (Object | null)[]): ByteSink;
     static asByteSource(paramfile: File): ByteSource;
-    static asCharSink(paramfile: File, paramcharset: Charset, parammodes: (Object | null)[]): CharSink;
+    static asCharSink(paramfile: File, paramcharset: Charset, ...parammodes: (Object | null)[]): CharSink;
     static asCharSource(paramfile: File, paramcharset: Charset): CharSource;
     static copy(paramfrom: File, paramto: File): void;
     static copy(paramfrom: File, paramto: OutputStream): void;

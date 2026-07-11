@@ -12,5 +12,5 @@ export class LocaleDisplayNamesImpl$Cache extends Object {
     // private nameLength: DisplayContext;
     // private substituteHandling: DisplayContext;
     get(arg0: ULocale, arg1: LocaleDisplayNames$DialectHandling): LocaleDisplayNames;
-    get(arg0: ULocale, arg1: DisplayContext[]): LocaleDisplayNames;
+    get(arg0: ULocale, ...arg1: DisplayContext[]): LocaleDisplayNames;
 }

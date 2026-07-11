@@ -23,7 +23,7 @@ export class DateTimeComponentsFormat$Builder extends Object implements Abstract
     addFormatStructureForDateTime(structure: FormatStructure<DateTimeFieldContainer>): void;
     addFormatStructureForOffset(structure: FormatStructure<UtcOffsetFieldContainer>): void;
     addFormatStructureForTime(structure: FormatStructure<TimeFieldContainer>): void;
-    appendAlternativeParsingImpl(otherFormats: (param0: DateTimeComponentsFormat$Builder) => void[], mainFormat: (param0: DateTimeComponentsFormat$Builder) => void): void;
+    appendAlternativeParsingImpl(...otherFormats: (param0: DateTimeComponentsFormat$Builder) => void[], mainFormat: (param0: DateTimeComponentsFormat$Builder) => void): void;
     appendOptionalImpl(onZero: string, format: (param0: DateTimeComponentsFormat$Builder) => void): void;
     build(): CachedFormatStructure<DateTimeComponentsContents>;
     chars(value: string): void;

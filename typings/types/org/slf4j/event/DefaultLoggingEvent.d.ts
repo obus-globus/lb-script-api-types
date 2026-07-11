@@ -18,7 +18,7 @@ export class DefaultLoggingEvent extends Object implements LoggingEvent {
     throwable: Throwable;
     timeStamp: number;
     addArgument(arg0: Object): void;
-    addArguments(arg0: Object[]): void;
+    addArguments(...arg0: Object[]): void;
     addKeyValue(arg0: string, arg1: Object): void;
     addMarker(arg0: Marker): void;
     getArgumentArray(): Object[];

@@ -5,7 +5,7 @@ import type { CollectToTag } from '../../../../net/minecraft/nbt/visitors/Collec
 import type { FieldSelector } from '../../../../net/minecraft/nbt/visitors/FieldSelector.d.ts'
 import type { FieldTree } from '../../../../net/minecraft/nbt/visitors/FieldTree.d.ts'
 export class SkipFields extends CollectToTag {
-    constructor(wantedFields: FieldSelector[])
+    constructor(...wantedFields: FieldSelector[])
     // private stack: FieldTree[];
     visitContainerEnd(): StreamTagVisitor$ValueResult;
     visitEntry(type: TagType<any>): StreamTagVisitor$EntryResult;

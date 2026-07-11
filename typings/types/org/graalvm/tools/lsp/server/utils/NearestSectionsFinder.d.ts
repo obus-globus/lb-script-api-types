@@ -7,6 +7,6 @@ import type { NearestSectionsFinder$NearestSections } from '../../../../../../or
 export class NearestSectionsFinder extends Object {
     static findExprNodeBeforePos(paramsource: Source, paramline: number, paramcolumn: number, paramenv: TruffleInstrument$Env): NearestNode;
     static findNearestNode(paramsource: Source, paramline: number, paramcharacter: number, paramenv: TruffleInstrument$Env, paramlogger: TruffleLogger): NearestNode;
-    static findNearestSections(paramsource: Source, paramenv: TruffleInstrument$Env, paramoneBasedLineNumber: number, paramcolumn: number, paraminstrumentableNodesOnly: boolean, paramtags: Object | null): NearestSectionsFinder$NearestSections;
+    static findNearestSections(paramsource: Source, paramenv: TruffleInstrument$Env, paramoneBasedLineNumber: number, paramcolumn: number, paraminstrumentableNodesOnly: boolean, ...paramtags: Object | null): NearestSectionsFinder$NearestSections;
     private constructor()
 }

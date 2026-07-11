@@ -7,7 +7,7 @@ export class FileRandomAccessOutputStream extends RandomAccessOutputStream {
     static nullOutputStream(): OutputStream;
     constructor(arg0: FileChannel)
     constructor(arg0: Path[])
-    constructor(arg0: Path[], arg1: OpenOption[])
+    constructor(arg0: Path[], ...arg1: OpenOption[])
     // private channel: FileChannel;
     // private position: number;
     channel(): FileChannel;

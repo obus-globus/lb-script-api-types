@@ -39,9 +39,10 @@ export class JavaConverter_v1_20_3 extends Object implements DataConverter<Objec
     emptyMap(): Object;
     fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<Object>;
+    mergeList(arg0: Object, ...arg1: Object[]): Result<Object>;
     mergeList(arg0: Object, arg1: Object[]): Result<Object>;
     mergeMap(arg0: Object, arg1: Object, arg2: Object): Result<Object>;
-    mergeMap(arg0: Object, arg1: Object[]): Result<Object>;
+    mergeMap(arg0: Object, ...arg1: Object[]): Result<Object>;
     mergeMap(arg0: Object, arg1: Map<Object, Object>): Result<Object>;
     toCodec(): Codec<Object>;
 }

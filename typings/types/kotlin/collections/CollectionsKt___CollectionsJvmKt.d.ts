@@ -14,7 +14,7 @@ export class CollectionsKt___CollectionsJvmKt extends CollectionsKt__ReversedVie
     static addAll(paramarg0: Object[], paramarg1: Object | null): boolean;
     static addAll(paramarg0: Object[], paramarg1: (Object | null)[]): boolean;
     static addAll(paramarg0: Object[], paramarg1: Sequence<Object>): boolean;
-    static arrayListOf(paramarg0: Object | null): (Object | null)[];
+    static arrayListOf(...paramarg0: Object | null): (Object | null)[];
     static asCollection(paramarg0: Object | null, paramarg1: boolean): (Object | null)[];
     static asReversed(paramarg0: (Object | null)[]): (Object | null)[];
     static asReversedMutable(paramarg0: (Object | null)[]): (Object | null)[];
@@ -40,9 +40,9 @@ export class CollectionsKt___CollectionsJvmKt extends CollectionsKt__ReversedVie
     static getLastIndex(paramarg0: (Object | null)[]): number;
     static iterator(paramarg0: Enumeration<Object>): Iterator<Object>;
     static listOf(paramarg0: Object | null): (Object | null)[];
-    static listOf(paramarg0: Object | null): (Object | null)[];
+    static listOf(...paramarg0: Object | null): (Object | null)[];
     static listOfNotNull(paramarg0: Object | null): (Object | null)[];
-    static listOfNotNull(paramarg0: Object | null): (Object | null)[];
+    static listOfNotNull(...paramarg0: Object | null): (Object | null)[];
     static max(paramarg0: (Object | null)[]): Comparable<Object>;
     static max(paramarg0: (Object | null)[]): number;
     static max(paramarg0: (Object | null)[]): number;
@@ -53,7 +53,7 @@ export class CollectionsKt___CollectionsJvmKt extends CollectionsKt__ReversedVie
     static min(paramarg0: (Object | null)[]): number;
     static minBy(paramarg0: (Object | null)[], paramarg1: (param0: Object) => Object | null): Object | null;
     static minWith(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): Object;
-    static mutableListOf(paramarg0: Object | null): (Object | null)[];
+    static mutableListOf(...paramarg0: Object | null): (Object | null)[];
     static optimizeReadOnlyList(paramarg0: (Object | null)[]): (Object | null)[];
     static removeAll(paramarg0: (Object | null)[], paramarg1: (param0: Object) => boolean): boolean;
     static removeAll(paramarg0: Object[], paramarg1: Object | null): boolean;

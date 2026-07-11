@@ -15,7 +15,7 @@ export class DefaultOioServerSocketChannelConfig extends DefaultServerSocketChan
     autoReadCleared(): void;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getSoTimeout(): number;
     setAllocator(arg0: ByteBufAllocator): OioServerSocketChannelConfig;
     setAutoClose(arg0: boolean): OioServerSocketChannelConfig;

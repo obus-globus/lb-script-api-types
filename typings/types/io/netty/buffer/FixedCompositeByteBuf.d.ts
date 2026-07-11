@@ -11,7 +11,7 @@ import type { GatheringByteChannel } from '../../../java/nio/channels/GatheringB
 import type { ScatteringByteChannel } from '../../../java/nio/channels/ScatteringByteChannel.d.ts'
 import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
 export class FixedCompositeByteBuf extends AbstractReferenceCountedByteBuf {
-    constructor(arg0: ByteBufAllocator, arg1: ByteBuf[])
+    constructor(arg0: ByteBufAllocator, ...arg1: ByteBuf[])
     // private allocator: ByteBufAllocator;
     // private buffers: ByteBuf[];
     // private capacity: number;

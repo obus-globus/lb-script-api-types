@@ -31,6 +31,7 @@ export class Preprocessor extends Object implements Closeable {
     readonly warnings: Warning[];
     // private _token(): Token;
     addFeature(arg0: Feature): void;
+    addFeatures(...arg0: Feature[]): void;
     addFeatures(arg0: Feature[]): void;
     addInput(arg0: File): void;
     addInput(arg0: Token[]): void;

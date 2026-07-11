@@ -18,7 +18,7 @@ export abstract class CommonJSRequireBuiltin extends GlobalBuiltins$JSFileLoadin
     static cloneUninitialized(paramnodeArray: Object | null, parammaterializedTags: Class<Tag>[]): Object | null;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static log(parammessage: (Object | null)[]): void;
+    static log(...parammessage: (Object | null)[]): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

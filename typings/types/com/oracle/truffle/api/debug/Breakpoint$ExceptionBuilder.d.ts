@@ -9,6 +9,6 @@ export class Breakpoint$ExceptionBuilder extends Object {
     // private suspensionFilter: SuspensionFilter;
     // private uncaught: boolean;
     build(): Breakpoint;
-    sourceElements(sourceElements: SourceElement[]): Breakpoint$ExceptionBuilder;
+    sourceElements(...sourceElements: SourceElement[]): Breakpoint$ExceptionBuilder;
     suspensionFilter(filter: SuspensionFilter): Breakpoint$ExceptionBuilder;
 }

@@ -17,6 +17,7 @@ export class ImmutableSetMultimap$Builder<K extends unknown, V extends unknown> 
     orderValuesBy(valueComparator: (param0: Object) => boolean): ImmutableSetMultimap$Builder<K, V>;
     put(entry: Map$Entry<K, V>): ImmutableSetMultimap$Builder<K, V>;
     put(key: K, value: V): ImmutableSetMultimap$Builder<K, V>;
+    putAll(key: K, ...values: V[]): ImmutableSetMultimap$Builder<K, V>;
     putAll(key: K, values: V[]): ImmutableSetMultimap$Builder<K, V>;
     putAll(multimap: Multimap<K, V>): ImmutableSetMultimap$Builder<K, V>;
     putAll(entries: Map$Entry<K, V>[]): ImmutableSetMultimap$Builder<K, V>;

@@ -14,7 +14,7 @@ export class SnbtGrammar$ArrayPrefix extends Enum<SnbtGrammar$ArrayPrefix> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): SnbtGrammar$ArrayPrefix;
     static values(): (Object | null)[];
-    private constructor(defaultType: SnbtGrammar$TypeSuffix, additionalTypes: SnbtGrammar$TypeSuffix[])
+    private constructor(defaultType: SnbtGrammar$TypeSuffix, ...additionalTypes: SnbtGrammar$TypeSuffix[])
     // private additionalTypes: SnbtGrammar$TypeSuffix[];
     // private defaultType: SnbtGrammar$TypeSuffix;
     buildNumber(entry: SnbtGrammar$IntegerLiteral, state: ParseState<Object>): Number;

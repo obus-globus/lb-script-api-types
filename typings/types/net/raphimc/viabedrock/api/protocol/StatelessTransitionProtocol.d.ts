@@ -7,6 +7,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { StatelessProtocol } from '../../../../../net/raphimc/viabedrock/api/protocol/StatelessProtocol.d.ts'
 export abstract class StatelessTransitionProtocol<CU extends ClientboundPacketType, CM extends ClientboundPacketType, SM extends ServerboundPacketType, SU extends ServerboundPacketType> extends StatelessProtocol<CU, CM, SM, SU> {
     constructor(arg0: Class<CU>, arg1: Class<CM>, arg2: Class<SM>, arg3: Class<SU>)
-    registerClientboundTransition(arg0: CU, arg1: Object[]): void;
+    registerClientboundTransition(arg0: CU, ...arg1: Object[]): void;
     registerServerboundTransition(arg0: ServerboundPacketType, arg1: SM, arg2: (param0: PacketWrapper) => void): void;
 }

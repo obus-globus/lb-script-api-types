@@ -25,7 +25,7 @@ export class DefaultLoggingEventBuilder extends Object implements CallerBoundary
     log(arg0: string): void;
     log(arg0: string, arg1: Object): void;
     log(arg0: string, arg1: Object, arg2: Object): void;
-    log(arg0: string, arg1: Object[]): void;
+    log(arg0: string, ...arg1: Object[]): void;
     log(arg0: LoggingEvent): void;
     // private logViaLocationAwareLoggerAPI(arg0: LocationAwareLogger, arg1: LoggingEvent): void;
     // private logViaPublicSLF4JLoggerAPI(arg0: LoggingEvent): void;

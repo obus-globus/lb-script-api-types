@@ -7,8 +7,8 @@ export class BooleanUtils extends Object {
     static ON: string;
     static TRUE: string;
     static YES: string;
-    static and(paramarg0: (Object | null)[]): boolean;
-    static and(paramarg0: (Object | null)[]): boolean;
+    static and(...paramarg0: (Object | null)[]): boolean;
+    static and(...paramarg0: (Object | null)[]): boolean;
     static booleanValues(): (Object | null)[];
     static compare(paramarg0: boolean, paramarg1: boolean): number;
     static forEach(paramarg0: (param0: boolean) => void): void;
@@ -17,10 +17,10 @@ export class BooleanUtils extends Object {
     static isNotTrue(paramarg0: boolean): boolean;
     static isTrue(paramarg0: boolean): boolean;
     static negate(paramarg0: boolean): boolean;
-    static oneHot(paramarg0: (Object | null)[]): boolean;
-    static oneHot(paramarg0: (Object | null)[]): boolean;
-    static or(paramarg0: (Object | null)[]): boolean;
-    static or(paramarg0: (Object | null)[]): boolean;
+    static oneHot(...paramarg0: (Object | null)[]): boolean;
+    static oneHot(...paramarg0: (Object | null)[]): boolean;
+    static or(...paramarg0: (Object | null)[]): boolean;
+    static or(...paramarg0: (Object | null)[]): boolean;
     static primitiveValues(): (Object | null)[];
     static toBoolean(paramarg0: number): boolean;
     static toBoolean(paramarg0: number, paramarg1: number, paramarg2: number): boolean;
@@ -51,7 +51,7 @@ export class BooleanUtils extends Object {
     static toStringYesNo(paramarg0: boolean): string;
     static toStringYesNo(paramarg0: boolean): string;
     static values(): boolean[];
-    static xor(paramarg0: (Object | null)[]): boolean;
-    static xor(paramarg0: (Object | null)[]): boolean;
+    static xor(...paramarg0: (Object | null)[]): boolean;
+    static xor(...paramarg0: (Object | null)[]): boolean;
     constructor()
 }

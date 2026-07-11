@@ -22,7 +22,7 @@ export abstract class MethodVisitor extends Object {
     visitInsn(opcode: number): void;
     visitInsnAnnotation(typeRef: number, typePath: TypePath, descriptor: string, visible: boolean): AnnotationVisitor;
     visitIntInsn(opcode: number, operand: number): void;
-    visitInvokeDynamicInsn(name: string, descriptor: string, bootstrapMethodHandle: Handle, bootstrapMethodArguments: Object[]): void;
+    visitInvokeDynamicInsn(name: string, descriptor: string, bootstrapMethodHandle: Handle, ...bootstrapMethodArguments: Object[]): void;
     visitJumpInsn(opcode: number, label: Label): void;
     visitLabel(label: Label): void;
     visitLdcInsn(value: Object): void;
@@ -36,7 +36,7 @@ export abstract class MethodVisitor extends Object {
     visitMultiANewArrayInsn(descriptor: string, numDimensions: number): void;
     visitParameter(name: string, access: number): void;
     visitParameterAnnotation(parameter: number, descriptor: string, visible: boolean): AnnotationVisitor;
-    visitTableSwitchInsn(min: number, max: number, dflt: Label, labels: Label[]): void;
+    visitTableSwitchInsn(min: number, max: number, dflt: Label, ...labels: Label[]): void;
     visitTryCatchAnnotation(typeRef: number, typePath: TypePath, descriptor: string, visible: boolean): AnnotationVisitor;
     visitTryCatchBlock(start: Label, end: Label, handler: Label, type: string): void;
     visitTypeAnnotation(typeRef: number, typePath: TypePath, descriptor: string, visible: boolean): AnnotationVisitor;

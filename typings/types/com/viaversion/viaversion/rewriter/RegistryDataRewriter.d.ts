@@ -18,7 +18,7 @@ export class RegistryDataRewriter extends Object implements RegistryDataRewriter
     // private toAdd: { [key: string]: RegistryEntry[] };
     // private toRemove: string[];
     addEnchantmentEffectRewriter(arg0: string, arg1: (param0: Map$Entry<string, Tag>[]) => void): void;
-    addEntries(arg0: string, arg1: RegistryEntry[]): void;
+    addEntries(arg0: string, ...arg1: RegistryEntry[]): void;
     addHandler(arg0: string, arg1: (param0: string, param1: Map$Entry<string, Tag>[]) => void): void;
     entriesFromTag(arg0: Map$Entry<string, Tag>[]): RegistryEntry[];
     handle(arg0: UserConnection, arg1: string, arg2: RegistryEntry[]): RegistryEntry[];
