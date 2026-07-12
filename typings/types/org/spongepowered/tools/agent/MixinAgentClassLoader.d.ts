@@ -12,7 +12,7 @@ export class MixinAgentClassLoader extends ClassLoader {
     static getSystemResource(paramarg0: string): URL;
     static getSystemResourceAsStream(paramarg0: string): InputStream;
     static getSystemResources(paramarg0: string): Enumeration<URL>;
-    static log(paramarg0: Level, paramarg1: string, paramarg2: (Object | null)[]): void;
+    static log(paramarg0: Level, paramarg1: string, ...paramarg2: (Object | null)[]): void;
     constructor()
     // private mixins: Map<Class<Object>, number[]>;
     // private targets: { [key: string]: number[] };

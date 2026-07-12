@@ -17,7 +17,7 @@ import type { Vector3fc } from '../../../../org/joml/Vector3fc.d.ts'
  *
  * @param renderTarget The render target framebuffer.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L82 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:82}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L82 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:82}
  */
 export class WorldRenderEnvironment extends Object {
     constructor(renderTarget: RenderTarget, poseStack: PoseStack, camera: Camera, batchCollector: BatchCollector)
@@ -28,7 +28,7 @@ export class WorldRenderEnvironment extends Object {
     /**
      * Converts a world-space position to the camera-relative coordinate system.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:91}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L91 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:91}
      */
     relativeToCamera(pos: Vec3f): Vec3;
     relativeToCamera(pos: Position): Vec3;
@@ -41,7 +41,7 @@ export class WorldRenderEnvironment extends Object {
      *
      * Prefer {@link net.ccbluex.liquidbounce.render.drawCustomMesh} for regular use.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L131 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:131}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L131 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:131}
      */
     start(pipeline: RenderPipeline, textures: { [key: string]: AbstractTexture }, uniforms: { [key: string]: GpuBufferSlice }): MeshBuildScope;
 }

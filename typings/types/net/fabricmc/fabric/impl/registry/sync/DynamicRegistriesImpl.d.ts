@@ -5,7 +5,7 @@ import type { ResourceKey } from '../../../../../../net/minecraft/resources/Reso
 export class DynamicRegistriesImpl extends Object {
     static FABRIC_DYNAMIC_REGISTRY_KEYS: ResourceKey<Object[]>[];
     static SKIP_EMPTY_SYNC_REGISTRIES: ResourceKey<Object[]>[];
-    static addSyncedRegistry(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Codec<Object>, paramarg2: (Object | null)[]): void;
+    static addSyncedRegistry(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Codec<Object>, ...paramarg2: (Object | null)[]): void;
     static getBootstrappingRegistries(): RegistryDataLoader$RegistryData<Object>[];
     static getWorldRegistries(): RegistryDataLoader$RegistryData<Object>[];
     static register(paramarg0: ResourceKey<(Object | null)[]>, paramarg1: Codec<Object>): RegistryDataLoader$RegistryData<Object>;

@@ -14,7 +14,7 @@ export class XCldrStub$Multimap<K extends unknown, V extends unknown> extends Ob
     hashCode(): number;
     keySet(): K[];
     put(key: K, value: V): void;
-    putAll(key: K, values: V[]): XCldrStub$Multimap<K, V>;
+    putAll(key: K, ...values: V[]): XCldrStub$Multimap<K, V>;
     putAll(key: K, values: V[]): void;
     putAll(keys: K[], value: V): void;
     putAll(source: XCldrStub$Multimap<K, V>): void;

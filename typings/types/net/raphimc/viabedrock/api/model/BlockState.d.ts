@@ -23,5 +23,5 @@ export class BlockState extends Object {
     withNamespacedIdentifier(arg0: string): BlockState;
     withProperties(arg0: { [key: string]: string }): BlockState;
     withProperty(arg0: string, arg1: string): BlockState;
-    withoutProperties(arg0: string[]): BlockState;
+    withoutProperties(...arg0: string[]): BlockState;
 }

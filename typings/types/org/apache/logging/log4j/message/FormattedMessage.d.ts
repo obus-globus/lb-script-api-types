@@ -7,11 +7,11 @@ import type { Message } from '../../../../../org/apache/logging/log4j/message/Me
 export class FormattedMessage extends Object implements Message {
     constructor(locale: Locale, messagePattern: string, arg: Object)
     constructor(locale: Locale, messagePattern: string, arg1: Object, arg2: Object)
-    constructor(locale: Locale, messagePattern: string, arguments: Object[])
+    constructor(locale: Locale, messagePattern: string, ...arguments: Object[])
     constructor(locale: Locale, messagePattern: string, arguments: Object[], throwable: Throwable)
     constructor(messagePattern: string, arg: Object)
     constructor(messagePattern: string, arg1: Object, arg2: Object)
-    constructor(messagePattern: string, arguments: Object[])
+    constructor(messagePattern: string, ...arguments: Object[])
     constructor(messagePattern: string, arguments: Object[], throwable: Throwable)
     // private argArray: Object[];
     readonly formattedMessage: string;

@@ -17,9 +17,9 @@ export class ReflectionToStringBuilder extends ToStringBuilder {
     static toString(paramarg0: Object, paramarg1: ToStringStyle): string;
     static toString(paramarg0: Object, paramarg1: ToStringStyle, paramarg2: boolean): string;
     static toString(paramarg0: Object, paramarg1: ToStringStyle, paramarg2: boolean, paramarg3: boolean): string;
-    static toStringExclude(paramarg0: Object, paramarg1: (Object | null)[]): string;
+    static toStringExclude(paramarg0: Object, ...paramarg1: (Object | null)[]): string;
     static toStringExclude(paramarg0: Object, paramarg1: string[]): string;
-    static toStringInclude(paramarg0: Object, paramarg1: (Object | null)[]): string;
+    static toStringInclude(paramarg0: Object, ...paramarg1: (Object | null)[]): string;
     static toStringInclude(paramarg0: Object, paramarg1: string[]): string;
     constructor(arg0: Object, arg1: ToStringStyle, arg2: StringBuffer, arg3: Class<Object>, arg4: boolean, arg5: boolean)
     constructor(arg0: Object, arg1: ToStringStyle, arg2: StringBuffer, arg3: Class<Object>, arg4: boolean, arg5: boolean, arg6: boolean)
@@ -44,9 +44,9 @@ export class ReflectionToStringBuilder extends ToStringBuilder {
     reflectionAppendArray(arg0: Object): ReflectionToStringBuilder;
     setAppendStatics(arg0: boolean): void;
     setAppendTransients(arg0: boolean): void;
-    setExcludeFieldNames(arg0: string[]): ReflectionToStringBuilder;
+    setExcludeFieldNames(...arg0: string[]): ReflectionToStringBuilder;
     setExcludeNullValues(arg0: boolean): void;
-    setIncludeFieldNames(arg0: string[]): ReflectionToStringBuilder;
+    setIncludeFieldNames(...arg0: string[]): ReflectionToStringBuilder;
     setUpToClass(arg0: Class<Object>): void;
     toString(): string;
     // private validate(): void;

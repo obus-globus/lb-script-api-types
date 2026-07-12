@@ -29,7 +29,7 @@ export class BuiltinHelpFormatter extends Object implements HelpFormatter {
     hasRequiredOption(arg0: OptionDescriptor[]): boolean;
     maybeAppendNonOptionsDescription(arg0: StringBuilder, arg1: OptionDescriptor): void;
     maybeAppendOptionInfo(arg0: StringBuilder, arg1: OptionDescriptor): void;
-    message(arg0: string, arg1: Object[]): string;
+    message(arg0: string, ...arg1: Object[]): string;
     nonOptionOutput(): string;
     optionLeader(arg0: string): string;
     optionOutput(): string;

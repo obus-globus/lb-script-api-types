@@ -14,7 +14,7 @@ export class ChatUtil extends Object {
     static removeUnusedColor(paramarg0: string, paramarg1: string, paramarg2: boolean): string;
     static split(paramarg0: Tag, paramarg1: string): (Object | null)[];
     static translate(paramarg0: string): Map$Entry<string, Tag>[];
-    static translate(paramarg0: string, paramarg1: (Object | null)[]): Tag;
-    static translate(paramarg0: string, paramarg1: (Object | null)[]): Tag;
+    static translate(paramarg0: string, ...paramarg1: (Object | null)[]): Tag;
+    static translate(paramarg0: string, ...paramarg1: (Object | null)[]): Tag;
     constructor()
 }

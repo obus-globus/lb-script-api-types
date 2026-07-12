@@ -6,11 +6,11 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export interface ProgressivePromise<V extends unknown> extends ProgressiveFuture<V>, Promise<V>, Object{
     addListener(arg0: GenericFutureListener<Future<V>>): ProgressivePromise<V>;
-    addListeners(arg0: GenericFutureListener<Future<V>>[]): ProgressivePromise<V>;
+    addListeners(...arg0: GenericFutureListener<Future<V>>[]): ProgressivePromise<V>;
     await(): ProgressivePromise<V>;
     awaitUninterruptibly(): ProgressivePromise<V>;
     removeListener(arg0: GenericFutureListener<Future<V>>): ProgressivePromise<V>;
-    removeListeners(arg0: GenericFutureListener<Future<V>>[]): ProgressivePromise<V>;
+    removeListeners(...arg0: GenericFutureListener<Future<V>>[]): ProgressivePromise<V>;
     setFailure(arg0: Throwable): ProgressivePromise<V>;
     setProgress(arg0: number, arg1: number): ProgressivePromise<V>;
     setSuccess(arg0: V): ProgressivePromise<V>;

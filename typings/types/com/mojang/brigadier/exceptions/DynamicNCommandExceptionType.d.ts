@@ -6,6 +6,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DynamicNCommandExceptionType extends Object implements CommandExceptionType {
     constructor(arg0: DynamicNCommandExceptionType$Function)
     // private function: DynamicNCommandExceptionType$Function;
-    create(arg0: Object, arg1: Object[]): CommandSyntaxException;
-    createWithContext(arg0: ImmutableStringReader, arg1: Object[]): CommandSyntaxException;
+    create(arg0: Object, ...arg1: Object[]): CommandSyntaxException;
+    createWithContext(arg0: ImmutableStringReader, ...arg1: Object[]): CommandSyntaxException;
 }

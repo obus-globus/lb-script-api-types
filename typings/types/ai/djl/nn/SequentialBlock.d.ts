@@ -19,6 +19,7 @@ export class SequentialBlock extends AbstractBlock implements StreamingBlock {
     add(arg0: Block): SequentialBlock;
     add(arg0: (param0: (Object | null)[]) => (Object | null)[]): SequentialBlock;
     add(arg0: (param0: (Object | null)[]) => (Object | null)[], arg1: string): SequentialBlock;
+    addAll(...arg0: Block[]): SequentialBlock;
     addAll(arg0: Block[]): SequentialBlock;
     addSingleton(arg0: (param0: NDArray) => NDArray): SequentialBlock;
     addSingleton(arg0: (param0: NDArray) => NDArray, arg1: string): SequentialBlock;
@@ -29,7 +30,7 @@ export class SequentialBlock extends AbstractBlock implements StreamingBlock {
     forwardStreamIter(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): Iterator<(Object | null)[]>;
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
-    initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
+    initializeChildBlocks(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
     isReturnIntermediate(): boolean;
     loadMetadata(arg0: number, arg1: DataInputStream): void;
     removeLastBlock(): void;

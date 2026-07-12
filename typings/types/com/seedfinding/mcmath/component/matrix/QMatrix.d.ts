@@ -10,8 +10,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class QMatrix extends Object {
     static identity(paramarg0: number): QMatrix;
     static zero(paramarg0: number, paramarg1: number): QMatrix;
-    constructor(arg0: QVector[])
-    constructor(arg0: Rational[][])
+    constructor(...arg0: QVector[])
+    constructor(...arg0: Rational[][])
     constructor(arg0: number, arg1: (param0: number, param1: number) => Rational)
     constructor(arg0: number, arg1: number)
     constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => Rational)

@@ -3,7 +3,7 @@ import type { ParameterizedType } from '../../../../java/lang/reflect/Parameteri
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class GsonTypes$ParameterizedTypeImpl extends Object implements ParameterizedType {
-    constructor(arg0: Type, arg1: Class<Object>, arg2: Type[])
+    constructor(arg0: Type, arg1: Class<Object>, ...arg2: Type[])
     readonly ownerType: Type;
     readonly rawType: Type;
     // private typeArguments: Type[];

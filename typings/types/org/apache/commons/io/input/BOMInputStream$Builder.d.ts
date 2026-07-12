@@ -6,6 +6,6 @@ export class BOMInputStream$Builder extends ProxyInputStream$AbstractBuilder<BOM
     // private byteOrderMarks: ByteOrderMark[];
     // private include: boolean;
     get(): BOMInputStream;
-    setByteOrderMarks(arg0: ByteOrderMark[]): BOMInputStream$Builder;
+    setByteOrderMarks(...arg0: ByteOrderMark[]): BOMInputStream$Builder;
     setInclude(arg0: boolean): BOMInputStream$Builder;
 }

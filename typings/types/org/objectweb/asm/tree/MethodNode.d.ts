@@ -61,7 +61,7 @@ export class MethodNode extends MethodVisitor {
     visitInsn(arg0: number): void;
     visitInsnAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): AnnotationVisitor;
     visitIntInsn(arg0: number, arg1: number): void;
-    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): void;
+    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): void;
     visitJumpInsn(arg0: number, arg1: Label): void;
     visitLabel(arg0: Label): void;
     visitLdcInsn(arg0: Object): void;
@@ -75,7 +75,7 @@ export class MethodNode extends MethodVisitor {
     visitMultiANewArrayInsn(arg0: string, arg1: number): void;
     visitParameter(arg0: string, arg1: number): void;
     visitParameterAnnotation(arg0: number, arg1: string, arg2: boolean): AnnotationVisitor;
-    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, arg3: Label[]): void;
+    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, ...arg3: Label[]): void;
     visitTryCatchAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): AnnotationVisitor;
     visitTryCatchBlock(arg0: Label, arg1: Label, arg2: Label, arg3: string): void;
     visitTypeAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): AnnotationVisitor;

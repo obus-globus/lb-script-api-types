@@ -5,6 +5,6 @@ export class MixinService$LogBuffer extends Object {
     constructor()
     // private buffer: MixinService$LogBuffer$LogEntry[];
     // private logger: ILogger;
-    debug(arg0: string, arg1: Object[]): void;
+    debug(arg0: string, ...arg1: Object[]): void;
     flush(arg0: ILogger): void;
 }

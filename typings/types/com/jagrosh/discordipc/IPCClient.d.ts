@@ -38,7 +38,7 @@ export class IPCClient extends Object implements Closeable {
     readonly verboseLogging: boolean;
     // private checkConnected(arg0: boolean): void;
     close(): void;
-    connect(arg0: DiscordBuild[]): void;
+    connect(...arg0: DiscordBuild[]): void;
     getApplicationId(): string;
     getClientID(): number;
     getCurrentLogger(arg0: Logger): Logger;

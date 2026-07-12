@@ -26,7 +26,7 @@ export class ShaderPackSelectionList extends IrisObjectSelectionList<ShaderPackS
     // private screen: ShaderPackScreen;
     readonly topButtonRow: ShaderPackSelectionList$TopButtonRowEntry;
     // private watcher: WatchService;
-    addLabelEntries(arg0: Component[]): void;
+    addLabelEntries(...arg0: Component[]): void;
     addPackEntry(arg0: number, arg1: string): void;
     close(): void;
     extractListBackground(arg0: GuiGraphicsExtractor): void;

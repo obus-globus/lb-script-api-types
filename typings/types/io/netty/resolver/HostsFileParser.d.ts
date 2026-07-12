@@ -5,9 +5,9 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export class HostsFileParser extends Object {
     static parse(): HostsFileEntries;
     static parse(paramarg0: File): HostsFileEntries;
-    static parse(paramarg0: File, paramarg1: (Object | null)[]): HostsFileEntries;
+    static parse(paramarg0: File, ...paramarg1: (Object | null)[]): HostsFileEntries;
     static parse(paramarg0: Reader): HostsFileEntries;
     static parseSilently(): HostsFileEntries;
-    static parseSilently(paramarg0: (Object | null)[]): HostsFileEntries;
+    static parseSilently(...paramarg0: (Object | null)[]): HostsFileEntries;
     private constructor()
 }

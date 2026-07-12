@@ -16,7 +16,7 @@ export abstract class AbstractRequestHandler extends Object {
     // private err: PrintWriter;
     // private logger: TruffleLogger;
     // private surrogateMap: TextDocumentSurrogateMap;
-    findNodeAtCaret(surrogate: TextDocumentSurrogate, line: number, character: number, tag: Class<Object>[]): InstrumentableNode;
+    findNodeAtCaret(surrogate: TextDocumentSurrogate, line: number, character: number, ...tag: Class<Object>[]): InstrumentableNode;
     getFutureResultOrHandleExceptions<T extends unknown>(future: Future<T>): T;
     newDefaultSourcePredicateBuilder(): SourcePredicateBuilder;
 }

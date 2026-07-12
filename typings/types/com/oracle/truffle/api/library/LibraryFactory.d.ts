@@ -33,7 +33,7 @@ export abstract class LibraryFactory<T extends Library> extends Object {
     createDelegate(original: T): T;
     createDispatchImpl(limit: number): T;
     createDispatched(limit: number): T;
-    createMessageBitSet(enabledMessages: Message[]): FinalBitSet;
+    createMessageBitSet(...enabledMessages: Message[]): FinalBitSet;
     createProxy(lib: ReflectionLibrary): T;
     createUncachedDispatch(): T;
     // private dispatch(receiver: Object): Class<Object>;

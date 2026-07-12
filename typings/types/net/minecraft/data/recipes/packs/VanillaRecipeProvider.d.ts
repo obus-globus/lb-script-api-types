@@ -17,8 +17,8 @@ export class VanillaRecipeProvider extends RecipeProvider {
     static getSimpleRecipeName(paramitemLike: ItemLike): string;
     static getSmeltingRecipeName(paramproduct: ItemLike): string;
     static insideOf(paramblock: Block): Criterion<EnterBlockTrigger$TriggerInstance>;
-    static inventoryTrigger(parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
-    static inventoryTrigger(parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static inventoryTrigger(...parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static inventoryTrigger(...parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
     static smithingTrims(): Stream<VanillaRecipeProvider$TrimTemplate>;
     private constructor(registries: HolderLookup$Provider, output: RecipeOutput)
     buildRecipes(): void;

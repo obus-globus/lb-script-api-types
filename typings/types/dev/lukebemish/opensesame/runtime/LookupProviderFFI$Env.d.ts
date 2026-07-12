@@ -21,8 +21,8 @@ export class LookupProviderFFI$Env extends Object implements AutoCloseable {
     // private arena: Arena;
     // private env: MemorySegment;
     // private globalRefs: MemorySegment[];
-    // private callObjectMethod(arg0: MemorySegment, arg1: MemorySegment, arg2: MemorySegment[]): MemorySegment;
-    // private callStaticMethod(arg0: MemorySegment, arg1: MemorySegment, arg2: MemorySegment[]): MemorySegment;
+    // private callObjectMethod(arg0: MemorySegment, arg1: MemorySegment, ...arg2: MemorySegment[]): MemorySegment;
+    // private callStaticMethod(arg0: MemorySegment, arg1: MemorySegment, ...arg2: MemorySegment[]): MemorySegment;
     close(): void;
     // private deleteGlobalRef(arg0: MemorySegment): void;
     // private getJavaVm(): MemorySegment;

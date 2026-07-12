@@ -40,9 +40,10 @@ export interface DataConverter<T extends unknown> extends ConsumerTracking, Obje
     fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): ConsumerTracking;
     forkIfDefault(): DataConverter<T>;
+    mergeList(arg0: T, ...arg1: T[]): Result<T>;
     mergeList(arg0: T, arg1: T[]): Result<T>;
     mergeMap(arg0: T, arg1: T, arg2: T): Result<T>;
-    mergeMap(arg0: T, arg1: T[]): Result<T>;
+    mergeMap(arg0: T, ...arg1: T[]): Result<T>;
     mergeMap(arg0: T, arg1: Map<T, T>): Result<T>;
     setCurrentConsumer(arg0: (param0: string) => void): void;
     toCodec(): Codec<T>;

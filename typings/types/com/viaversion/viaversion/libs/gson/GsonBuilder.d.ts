@@ -52,7 +52,7 @@ export class GsonBuilder extends Object {
     disableJdkUnsafe(): GsonBuilder;
     // private doubleAdapter(): TypeAdapter<Number>;
     enableComplexMapKeySerialization(): GsonBuilder;
-    excludeFieldsWithModifiers(arg0: number[]): GsonBuilder;
+    excludeFieldsWithModifiers(...arg0: number[]): GsonBuilder;
     excludeFieldsWithoutExposeAnnotation(): GsonBuilder;
     // private floatAdapter(): TypeAdapter<Number>;
     generateNonExecutableJson(): GsonBuilder;
@@ -64,7 +64,7 @@ export class GsonBuilder extends Object {
     setDateFormat(arg0: number): GsonBuilder;
     setDateFormat(arg0: number, arg1: number): GsonBuilder;
     setDateFormat(arg0: string): GsonBuilder;
-    setExclusionStrategies(arg0: ExclusionStrategy[]): GsonBuilder;
+    setExclusionStrategies(...arg0: ExclusionStrategy[]): GsonBuilder;
     setFieldNamingPolicy(arg0: FieldNamingPolicy): GsonBuilder;
     setFieldNamingStrategy(arg0: FieldNamingStrategy): GsonBuilder;
     setFormattingStyle(arg0: FormattingStyle): GsonBuilder;

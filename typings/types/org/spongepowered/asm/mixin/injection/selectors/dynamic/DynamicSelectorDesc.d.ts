@@ -29,7 +29,7 @@ export class DynamicSelectorDesc extends Object implements ITargetSelectorByName
     // private parseException: InvalidSelectorException;
     readonly returnType: Type;
     attach(arg0: ISelectorContext): ITargetSelector;
-    configure(arg0: ITargetSelector$Configure, arg1: string[]): ITargetSelector;
+    configure(arg0: ITargetSelector$Configure, ...arg1: string[]): ITargetSelector;
     getArgs(): Type[];
     getDesc(): string;
     getId(): string;

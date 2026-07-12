@@ -32,5 +32,5 @@ export class AFUNIXSocket extends AFSocket<AFUNIXSocketAddress> implements AFUNI
     getReceivedFileDescriptors(): FileDescriptor[];
     hasOutboundFileDescriptors(): boolean;
     newChannel(): AFUNIXSocketChannel;
-    setOutboundFileDescriptors(arg0: FileDescriptor[]): void;
+    setOutboundFileDescriptors(...arg0: FileDescriptor[]): void;
 }

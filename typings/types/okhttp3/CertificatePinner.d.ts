@@ -16,6 +16,7 @@ export class CertificatePinner extends Object {
     /*not mapped: */ getCertificateChainCleaner$okhttp(): CertificateChainCleaner | null;
     readonly pins: CertificatePinner$Pin[];
     check(hostname: string, cleanedPeerCertificatesFn: () => X509Certificate[]): void;
+    check(hostname: string, ...peerCertificates: Certificate[]): void;
     check(hostname: string, peerCertificates: Certificate[]): void;
     equals(other: Object | null): boolean;
     findMatchingPins(hostname: string): CertificatePinner$Pin[];

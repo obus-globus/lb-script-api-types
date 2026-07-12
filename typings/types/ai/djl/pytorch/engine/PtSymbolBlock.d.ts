@@ -29,7 +29,7 @@ export class PtSymbolBlock extends AbstractSymbolBlock implements AutoCloseable 
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean): (Object | null)[];
     forward(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
-    forward(arg0: IValue[]): IValue;
+    forward(...arg0: IValue[]): IValue;
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
     getDirectParameters(): (Object | null)[];

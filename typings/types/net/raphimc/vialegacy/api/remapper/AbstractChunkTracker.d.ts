@@ -6,7 +6,7 @@ import type { IdAndData } from '../../../../../com/viaversion/viaversion/util/Id
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ChunkCoord } from '../../../../../net/raphimc/vialegacy/api/model/ChunkCoord.d.ts'
 export abstract class AbstractChunkTracker extends Object implements StorableObject {
-    constructor(arg0: number[])
+    constructor(...arg0: number[])
     // private chunks: Map<ChunkCoord, Chunk>;
     // private replacements: { [key: string]: any };
     // private toTrack: (Object | null)[];

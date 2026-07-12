@@ -5,10 +5,10 @@ export class UnsignedInts extends Object {
     static compare(parama: number, paramb: number): number;
     static decode(paramstringValue: string): number;
     static divide(paramdividend: number, paramdivisor: number): number;
-    static join(paramseparator: string, paramarray: number[]): string;
+    static join(paramseparator: string, ...paramarray: number[]): string;
     static lexicographicalComparator(): (param0: Object) => boolean;
-    static max(paramarray: number[]): number;
-    static min(paramarray: number[]): number;
+    static max(...paramarray: number[]): number;
+    static min(...paramarray: number[]): number;
     static parseUnsignedInt(params: string): number;
     static parseUnsignedInt(paramstring: string, paramradix: number): number;
     static remainder(paramdividend: number, paramdivisor: number): number;

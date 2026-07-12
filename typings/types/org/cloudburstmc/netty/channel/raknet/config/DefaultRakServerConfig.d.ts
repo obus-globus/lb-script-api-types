@@ -33,7 +33,7 @@ export class DefaultRakServerConfig extends DefaultChannelConfig implements RakS
     getMinMtu(): number;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     getPacketLimit(): number;
     getSendCookie(): boolean;
     getSupportedProtocols(): number[];

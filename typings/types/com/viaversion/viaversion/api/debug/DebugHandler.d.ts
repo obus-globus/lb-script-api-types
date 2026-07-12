@@ -7,7 +7,7 @@ export interface DebugHandler extends Object{
     addPacketTypeNameToLog(arg0: string): void;
     addPacketTypeToLog(arg0: PacketType): void;
     clearPacketTypesToLog(): void;
-    enableAndLogTypes(arg0: PacketType[]): void;
+    enableAndLogTypes(...arg0: PacketType[]): void;
     enabled(): boolean;
     error(arg0: string, arg1: Throwable): void;
     logPostPacketTransform(): boolean;

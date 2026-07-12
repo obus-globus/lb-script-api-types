@@ -6,6 +6,6 @@ export class IntegerPatternConverter extends AbstractPatternConverter implements
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): IntegerPatternConverter;
     private constructor()
-    format(toAppendTo: StringBuilder, objects: Object[]): void;
+    format(toAppendTo: StringBuilder, ...objects: Object[]): void;
     format(obj: Object, toAppendTo: StringBuilder): void;
 }

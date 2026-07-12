@@ -20,7 +20,7 @@ export class LayerNorm extends AbstractBlock {
     // private gamma: Parameter;
     // private normalizedShape: Shape;
     // private scale: boolean;
-    beforeInitialize(arg0: Shape[]): void;
+    beforeInitialize(...arg0: Shape[]): void;
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: (Object | null)[], arg3: Pair<string, Object>[]): (Object | null)[];
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
     getOutputShapes(arg0: Shape[]): Shape[];

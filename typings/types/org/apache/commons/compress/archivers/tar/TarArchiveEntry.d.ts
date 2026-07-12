@@ -92,7 +92,7 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     constructor(arg0: File)
     constructor(arg0: File, arg1: string)
     constructor(arg0: Path[])
-    constructor(arg0: Path[], arg1: string, arg2: LinkOption[])
+    constructor(arg0: Path[], arg1: string, ...arg2: LinkOption[])
     constructor(arg0: number[])
     constructor(arg0: number[], arg1: ZipEncoding)
     constructor(arg0: number[], arg1: ZipEncoding, arg2: boolean)
@@ -204,8 +204,8 @@ export class TarArchiveEntry extends Object implements ArchiveEntry, EntryStream
     // private parseUstarHeaderBlock(arg0: { [key: string]: string }, arg1: number[], arg2: ZipEncoding, arg3: boolean, arg4: boolean): void;
     // private processPaxHeader(arg0: string, arg1: string): void;
     // private processPaxHeader(arg0: string, arg1: string, arg2: { [key: string]: string }): void;
-    // private readFileMode(arg0: Path[], arg1: string, arg2: LinkOption[]): void;
-    // private readOsSpecificProperties(arg0: Path[], arg1: LinkOption[]): void;
+    // private readFileMode(arg0: Path[], arg1: string, ...arg2: LinkOption[]): void;
+    // private readOsSpecificProperties(arg0: Path[], ...arg1: LinkOption[]): void;
     resolveIn(arg0: Path[]): Path[];
     setCreationTime(arg0: FileTime): void;
     setDataOffset(arg0: number): void;

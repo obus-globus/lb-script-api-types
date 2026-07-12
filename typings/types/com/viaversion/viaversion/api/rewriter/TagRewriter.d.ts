@@ -5,10 +5,10 @@ import type { MappingDataListener } from '../../../../../com/viaversion/viaversi
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export interface TagRewriter extends MappingDataListener, Object{
     addEmptyTag(arg0: RegistryType, arg1: string): void;
-    addEmptyTags(arg0: RegistryType, arg1: string[]): void;
-    addEntityTag(arg0: string, arg1: EntityType[]): void;
-    addTag(arg0: RegistryType, arg1: string, arg2: number[]): void;
-    addTagRaw(arg0: RegistryType, arg1: string, arg2: number[]): void;
+    addEmptyTags(arg0: RegistryType, ...arg1: string[]): void;
+    addEntityTag(arg0: string, ...arg1: EntityType[]): void;
+    addTag(arg0: RegistryType, arg1: string, ...arg2: number[]): void;
+    addTagRaw(arg0: RegistryType, arg1: string, ...arg2: number[]): void;
     getNewTags(arg0: RegistryType): TagData[];
     getOrComputeNewTags(arg0: RegistryType): TagData[];
     onMappingDataLoaded(): void;

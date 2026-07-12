@@ -10,5 +10,5 @@ export class ReflectionLibraryGen$Delegate extends ReflectionLibrary {
     // private delegateLibrary: ReflectionLibrary;
     accepts(receiver_: Object): boolean;
     isAdoptable(): boolean;
-    send(receiver_: Object, message: Message, args: Object[]): Object;
+    send(receiver_: Object, message: Message, ...args: Object[]): Object;
 }

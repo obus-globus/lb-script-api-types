@@ -9,15 +9,15 @@ export class Joiner extends Object {
     static on(paramseparator: string): Joiner;
     constructor(arg0: Joiner, arg1: Joiner)
     // private separator: string;
-    appendTo<A extends Appendable>(appendable: A, first: Object, second: Object, rest: Object[]): A;
+    appendTo<A extends Appendable>(appendable: A, first: Object, second: Object, ...rest: Object[]): A;
     appendTo<A extends Appendable>(appendable: A, parts: Object[]): A;
     appendTo<A extends Appendable>(appendable: A, parts: (Object | null)[]): A;
     appendTo<A extends Appendable>(appendable: A, parts: Iterator<Object>): A;
-    appendTo(builder: StringBuilder, first: Object, second: Object, rest: Object[]): StringBuilder;
+    appendTo(builder: StringBuilder, first: Object, second: Object, ...rest: Object[]): StringBuilder;
     appendTo(builder: StringBuilder, parts: Object[]): StringBuilder;
     appendTo(builder: StringBuilder, parts: (Object | null)[]): StringBuilder;
     appendTo(builder: StringBuilder, parts: Iterator<Object>): StringBuilder;
-    join(first: Object, second: Object, rest: Object[]): string;
+    join(first: Object, second: Object, ...rest: Object[]): string;
     join(parts: Object[]): string;
     join(parts: (Object | null)[]): string;
     join(parts: Iterator<Object>): string;

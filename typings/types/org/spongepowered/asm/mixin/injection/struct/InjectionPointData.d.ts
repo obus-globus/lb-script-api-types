@@ -41,7 +41,7 @@ export class InjectionPointData extends Object {
     getMixin(): IMixinContext;
     getOpcode(): number;
     getOpcode(arg0: number): number;
-    getOpcode(arg0: number, arg1: number[]): number;
+    getOpcode(arg0: number, ...arg1: number[]): number;
     getOpcodeList(arg0: string, arg1: number[]): number[];
     getOrdinal(): number;
     getParent(): AnnotationNode;

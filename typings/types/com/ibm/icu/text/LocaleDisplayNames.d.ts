@@ -8,10 +8,10 @@ import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class LocaleDisplayNames extends Object {
     static getInstance(paramarg0: ULocale): LocaleDisplayNames;
-    static getInstance(paramarg0: ULocale, paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: ULocale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
     static getInstance(paramarg0: ULocale, paramarg1: LocaleDisplayNames$DialectHandling): LocaleDisplayNames;
     static getInstance(paramarg0: Locale): LocaleDisplayNames;
-    static getInstance(paramarg0: Locale, paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: Locale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
     constructor()
     getContext(arg0: DisplayContext$Type): DisplayContext;
     getDialectHandling(): LocaleDisplayNames$DialectHandling;

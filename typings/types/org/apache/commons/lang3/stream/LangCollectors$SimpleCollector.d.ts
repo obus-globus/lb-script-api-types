@@ -6,8 +6,8 @@ import type { Collector } from '../../../../../java/util/stream/Collector.d.ts'
 import type { Collector$Characteristics } from '../../../../../java/util/stream/Collector$Characteristics.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LangCollectors$SimpleCollector<T extends unknown, A extends unknown, R extends unknown> extends Object implements Collector<T, A, R> {
-    static of(paramarg0: () => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => void, paramarg2: (param0: Object | null, param1: Object | null) => Object | null, paramarg3: (param0: Object | null) => Object | null, paramarg4: (Object | null)[]): Collector<Object, Object, Object>;
-    static of(paramarg0: () => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => void, paramarg2: (param0: Object | null, param1: Object | null) => Object | null, paramarg3: (Object | null)[]): Collector<Object, Object, Object>;
+    static of(paramarg0: () => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => void, paramarg2: (param0: Object | null, param1: Object | null) => Object | null, paramarg3: (param0: Object | null) => Object | null, ...paramarg4: (Object | null)[]): Collector<Object, Object, Object>;
+    static of(paramarg0: () => Object | null, paramarg1: (param0: Object | null, param1: Object | null) => void, paramarg2: (param0: Object | null, param1: Object | null) => Object | null, ...paramarg3: (Object | null)[]): Collector<Object, Object, Object>;
     constructor(arg0: () => Object, arg1: (param0: Object, param1: Object) => void, arg2: (param0: Object, param1: Object | null) => Object | null, arg3: (param0: Object) => Object, arg4: (Object | null)[], arg5: any)
     // private accumulator: (param0: A, param1: T) => void;
     // private characteristics: Collector$Characteristics[];

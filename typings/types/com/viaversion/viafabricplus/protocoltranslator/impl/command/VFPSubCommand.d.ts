@@ -9,6 +9,6 @@ export interface VFPSubCommand extends ViaSubCommand, Object{
     onTabComplete(arg0: ViaCommandSender, arg1: string[]): string[];
     permission(): string;
     sendMessage(arg0: ViaCommandSender, arg1: string): void;
-    sendMessage(arg0: ViaCommandSender, arg1: string, arg2: Object[]): void;
+    sendMessage(arg0: ViaCommandSender, arg1: string, ...arg2: Object[]): void;
     usage(): string;
 }

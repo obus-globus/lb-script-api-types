@@ -19,7 +19,7 @@ export class LCG extends Object {
     static RTL_UNIFORM: LCG;
     static VISUAL_BASIC: LCG;
     static XKCD: LCG;
-    static combine(paramarg0: (Object | null)[]): LCG;
+    static combine(...paramarg0: (Object | null)[]): LCG;
     constructor(arg0: number, arg1: number)
     constructor(arg0: number, arg1: number, arg2: number)
     addend: number;

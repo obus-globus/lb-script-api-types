@@ -9,11 +9,11 @@ import type { LocaleDisplayNames$UiListItem } from '../../../../../../../org/gra
 import type { ULocale } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class LocaleDisplayNames$LastResortLocaleDisplayNames extends LocaleDisplayNames {
     static getInstance(paramlocale: Locale): LocaleDisplayNames;
-    static getInstance(paramlocale: Locale, paramcontexts: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramlocale: Locale, ...paramcontexts: (Object | null)[]): LocaleDisplayNames;
     static getInstance(paramlocale: ULocale): LocaleDisplayNames;
-    static getInstance(paramlocale: ULocale, paramcontexts: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramlocale: ULocale, ...paramcontexts: (Object | null)[]): LocaleDisplayNames;
     static getInstance(paramlocale: ULocale, paramdialectHandling: LocaleDisplayNames$DialectHandling): LocaleDisplayNames;
-    private constructor(locale: ULocale, contexts: DisplayContext[])
+    private constructor(locale: ULocale, ...contexts: DisplayContext[])
     private constructor(locale: ULocale, dialectHandling: LocaleDisplayNames$DialectHandling)
     // private contexts: DisplayContext[];
     readonly locale: ULocale;

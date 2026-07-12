@@ -13,6 +13,6 @@ export class FileUtil extends Object {
     static normalizeResourcePath(paramfilename: string): string;
     static resolvePath(paramroot: Path[][], paramsegments: string[]): Path[][];
     static sanitizeName(parambaseName: string): string;
-    static validatePath(parampath: (Object | null)[]): void;
+    static validatePath(...parampath: (Object | null)[]): void;
     constructor()
 }

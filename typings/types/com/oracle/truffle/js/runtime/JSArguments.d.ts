@@ -6,13 +6,13 @@ export class JSArguments extends Object {
     static EMPTY_ARGUMENTS_ARRAY: (Object | null)[];
     static RUNTIME_ARGUMENT_COUNT: number;
     static arraycopy(paramsrc: (Object | null)[], paramsrcPos: number, paramdest: (Object | null)[], paramdestPos: number, paramlength: number): void;
-    static create(paramtarget: Object, paramfunction: Object, paramuserArguments: (Object | null)[]): (Object | null)[];
+    static create(paramtarget: Object, paramfunction: Object, ...paramuserArguments: (Object | null)[]): (Object | null)[];
     static createInitial(paramtarget: Object, paramfunction: Object, paramuserArgumentCount: number): (Object | null)[];
     static createInitialWithNewTarget(paramtarget: Object, paramfunction: Object, paramnewTarget: Object, paramuserArgumentCount: number): (Object | null)[];
     static createOneArg(paramtarget: Object, paramfunction: Object, paramuserArgument: Object): (Object | null)[];
     static createResumeArguments(paramexecutionContext: Object, paramgeneratorOrPromiseCapability: Object, paramcompletionType: Completion$Type, paramcompletionValue: Object): (Object | null)[];
     static createResumeArguments(paramexecutionContext: Object, paramgenerator: Object, paramcompletion: Completion): (Object | null)[];
-    static createWithNewTarget(paramtarget: Object, paramfunction: Object, paramnewTarget: Object, paramuserArguments: (Object | null)[]): (Object | null)[];
+    static createWithNewTarget(paramtarget: Object, paramfunction: Object, paramnewTarget: Object, ...paramuserArguments: (Object | null)[]): (Object | null)[];
     static createZeroArg(paramtarget: Object, paramfunction: Object): (Object | null)[];
     static extractUserArguments(paramarguments: (Object | null)[]): (Object | null)[];
     static extractUserArguments(paramarguments: (Object | null)[], paramskip: number): (Object | null)[];

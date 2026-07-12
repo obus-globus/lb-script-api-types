@@ -14,14 +14,14 @@ import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LocaleDisplayNamesImpl extends LocaleDisplayNames {
-    static getInstance(paramarg0: ULocale, paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: ULocale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
     static getInstance(paramarg0: ULocale, paramarg1: LocaleDisplayNames$DialectHandling): LocaleDisplayNames;
     static getInstance(paramarg0: ULocale): LocaleDisplayNames;
     static getInstance(paramarg0: Locale): LocaleDisplayNames;
-    static getInstance(paramarg0: Locale, paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: Locale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
     static haveData(paramarg0: LocaleDisplayNamesImpl$DataTableType): boolean;
     constructor(arg0: ULocale, arg1: LocaleDisplayNames$DialectHandling)
-    constructor(arg0: ULocale, arg1: DisplayContext[])
+    constructor(arg0: ULocale, ...arg1: DisplayContext[])
     // private capitalization: DisplayContext;
     // private capitalizationBrkIter: BreakIterator;
     // private capitalizationUsage: (Object | null)[];

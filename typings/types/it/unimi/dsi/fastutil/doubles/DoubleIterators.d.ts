@@ -17,7 +17,7 @@ export class DoubleIterators extends Object {
     static any(paramarg0: DoubleIterator, paramarg1: (param0: number) => boolean): boolean;
     static asDoubleIterator(paramarg0: Iterator<Object>): DoubleIterator;
     static asDoubleIterator(paramarg0: ListIterator<Object>): DoubleListIterator;
-    static concat(paramarg0: (Object | null)[]): DoubleIterator;
+    static concat(...paramarg0: (Object | null)[]): DoubleIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): DoubleIterator;
     static indexOf(paramarg0: DoubleIterator, paramarg1: (param0: number) => boolean): number;
     static pour(paramarg0: DoubleIterator, paramarg1: (Object | null)[]): number;

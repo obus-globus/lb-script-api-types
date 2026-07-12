@@ -3,7 +3,7 @@ import type { IntBiomeLayer } from '../../../../../com/seedfinding/mcbiome/layer
 import type { CrossLayer } from '../../../../../com/seedfinding/mcbiome/layer/composite/CrossLayer.d.ts'
 import type { MCVersion } from '../../../../../com/seedfinding/mccore/version/MCVersion.d.ts'
 export class EaseEdgeLayer extends CrossLayer {
-    static anyMatch(paramarg0: Biome, paramarg1: number[]): boolean;
+    static anyMatch(paramarg0: Biome, ...paramarg1: number[]): boolean;
     static getLayerSeed(paramarg0: number, paramarg1: number): number;
     static getLocalSeed(paramarg0: number, paramarg1: number, paramarg2: number): number;
     static getLocalSeed(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): number;

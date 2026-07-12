@@ -8,7 +8,7 @@ export class TimeZoneGenericNames$GenericNameType extends Enum<TimeZoneGenericNa
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): TimeZoneGenericNames$GenericNameType;
     static values(): (Object | null)[];
-    private constructor(fallbackTypeOf: string[])
+    private constructor(...fallbackTypeOf: string[])
     // private _fallbackTypeOf: string[];
     isFallbackTypeOf(type: TimeZoneGenericNames$GenericNameType): boolean;
     name(): "LOCATION" | "LONG" | "SHORT";

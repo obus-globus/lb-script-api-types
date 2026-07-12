@@ -16,7 +16,7 @@ import type { VirtualLanguageServerFileProvider } from '../../../../../org/graal
 export class LSPFileSystem extends Object implements FileSystem_2 {
     static allowInternalResourceAccess(paramfileSystem: FileSystem_2): FileSystem_2;
     static allowLanguageHomeAccess(paramfileSystem: FileSystem_2): FileSystem_2;
-    static newCompositeFileSystem(paramfallbackFileSystem: FileSystem_2, paramdelegates: (Object | null)[]): FileSystem_2;
+    static newCompositeFileSystem(paramfallbackFileSystem: FileSystem_2, ...paramdelegates: (Object | null)[]): FileSystem_2;
     static newDefaultFileSystem(): FileSystem_2;
     static newDenyIOFileSystem(): FileSystem_2;
     static newFileSystem(paramfileSystem: FileSystem): FileSystem_2;
@@ -25,11 +25,11 @@ export class LSPFileSystem extends Object implements FileSystem_2 {
     private constructor(fileSystemProvider: FileSystemProvider, fileProvider: VirtualLanguageServerFileProvider)
     // private delegate: FileSystemProvider;
     // private fileProvider: VirtualLanguageServerFileProvider;
-    checkAccess(path: Path[], modes: AccessMode[], linkOptions: LinkOption[]): void;
-    copy(source: Path[], target: Path[], options: CopyOption[]): void;
-    createDirectory(dir: Path[], attrs: FileAttribute<Object>[]): void;
+    checkAccess(path: Path[], modes: AccessMode[], ...linkOptions: LinkOption[]): void;
+    copy(source: Path[], target: Path[], ...options: CopyOption[]): void;
+    createDirectory(dir: Path[], ...attrs: FileAttribute<Object>[]): void;
     createLink(link: Path[], existing: Path[]): void;
-    createSymbolicLink(link: Path[], target: Path[], attrs: FileAttribute<Object>[]): void;
+    createSymbolicLink(link: Path[], target: Path[], ...attrs: FileAttribute<Object>[]): void;
     delete(path: Path[]): void;
     getEncoding(path: Path[]): Charset;
     getFileStoreBlockSize(path: Path[]): number;
@@ -41,16 +41,16 @@ export class LSPFileSystem extends Object implements FileSystem_2 {
     getSeparator(): string;
     getTempDirectory(): Path[];
     isFileStoreReadOnly(path: Path[]): boolean;
-    isSameFile(path1: Path[], path2: Path[], options: LinkOption[]): boolean;
-    move(source: Path[], target: Path[], options: CopyOption[]): void;
-    newByteChannel(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): SeekableByteChannel;
+    isSameFile(path1: Path[], path2: Path[], ...options: LinkOption[]): boolean;
+    move(source: Path[], target: Path[], ...options: CopyOption[]): void;
+    newByteChannel(path: Path[], options: OpenOption[], ...attrs: FileAttribute<Object>[]): SeekableByteChannel;
     newDirectoryStream(dir: Path[], filter: (param0: Path[]) => boolean): Path[][];
     parsePath(uri: URI): Path[];
     parsePath(path: string): Path[];
-    readAttributes(path: Path[], attributes: string, options: LinkOption[]): { [key: string]: Object };
+    readAttributes(path: Path[], attributes: string, ...options: LinkOption[]): { [key: string]: Object };
     readSymbolicLink(link: Path[]): Path[];
-    setAttribute(path: Path[], attribute: string, value: Object, options: LinkOption[]): void;
+    setAttribute(path: Path[], attribute: string, value: Object, ...options: LinkOption[]): void;
     setCurrentWorkingDirectory(currentWorkingDirectory: Path[]): void;
     toAbsolutePath(path: Path[]): Path[];
-    toRealPath(path: Path[], linkOptions: LinkOption[]): Path[];
+    toRealPath(path: Path[], ...linkOptions: LinkOption[]): Path[];
 }

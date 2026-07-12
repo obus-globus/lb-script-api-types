@@ -8,11 +8,11 @@ import type { JSClass } from '../../../../../../com/oracle/truffle/js/runtime/bu
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IsPristineObjectNodeGen extends IsPristineObjectNode {
-    static create(paramjsClass: JSClass, paraminitialPrototypeShape: Shape, parampropertyKeys: (Object | null)[]): IsPristineObjectNode;
+    static create(paramjsClass: JSClass, paraminitialPrototypeShape: Shape, ...parampropertyKeys: (Object | null)[]): IsPristineObjectNode;
     static createRegExpExecAndMatch(paramcontext: JSContext): IsPristineObjectNode;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
-    private constructor(jsClass: JSClass, initialPrototypeShape: Shape, propertyKeys: Object[])
+    private constructor(jsClass: JSClass, initialPrototypeShape: Shape, ...propertyKeys: Object[])
     // private cached_cache: IsPristineObjectNodeGen$CachedData;
     // private dynamic_assumption0_: Assumption[];
     // private state_0_: number;

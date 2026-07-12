@@ -3,7 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CFunctionPointer } from '../../../../org/graalvm/nativeimage/c/function/CFunctionPointer.d.ts'
 import type { ComparableWord } from '../../../../org/graalvm/word/ComparableWord.d.ts'
 export class CEntryPointLiteralCodePointer extends Object implements CFunctionPointer {
-    constructor(definingClass: Class<Object>, methodName: string, parameterTypes: Class<Object>[])
+    constructor(definingClass: Class<Object>, methodName: string, ...parameterTypes: Class<Object>[])
     definingClass: Class<Object>;
     methodName: string;
     parameterTypes: Class<Object>[];

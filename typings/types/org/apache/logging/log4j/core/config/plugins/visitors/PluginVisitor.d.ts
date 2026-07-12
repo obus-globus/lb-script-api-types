@@ -8,7 +8,7 @@ import type { Configuration } from '../../../../../../../../org/apache/logging/l
 import type { Node } from '../../../../../../../../org/apache/logging/log4j/core/config/Node.d.ts'
 import type { StrSubstitutor } from '../../../../../../../../org/apache/logging/log4j/core/lookup/StrSubstitutor.d.ts'
 export interface PluginVisitor<A extends Annotation> extends Object{
-    setAliases(aliases: string[]): PluginVisitor<A>;
+    setAliases(...aliases: string[]): PluginVisitor<A>;
     setAnnotation(annotation: Annotation): PluginVisitor<A>;
     setConversionType(conversionType: Class<Object>): PluginVisitor<A>;
     setMember(member: Member): PluginVisitor<A>;

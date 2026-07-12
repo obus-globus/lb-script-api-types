@@ -11,7 +11,7 @@ import type { ContentHandler } from '../../../../../org/xml/sax/ContentHandler.d
 export class SupplementingParser extends AbstractMultipleParser {
     static allowedPolicies: AbstractMultipleParser$MetadataPolicy[];
     constructor(arg0: MediaTypeRegistry, arg1: Parser[], arg2: { [key: string]: Param<Object> })
-    constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, arg2: Parser[])
+    constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, ...arg2: Parser[])
     constructor(arg0: MediaTypeRegistry, arg1: AbstractMultipleParser$MetadataPolicy, arg2: Parser[])
     parserCompleted(arg0: Parser, arg1: Metadata, arg2: ContentHandler, arg3: ParseContext, arg4: Exception): boolean;
 }

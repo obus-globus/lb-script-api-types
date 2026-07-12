@@ -11,7 +11,9 @@ export class AclEntry$Builder extends Object {
     // private type: AclEntryType;
     // private who: UserPrincipal;
     build(): AclEntry;
+    setFlags(...arg0: AclEntryFlag[]): AclEntry$Builder;
     setFlags(arg0: AclEntryFlag[]): AclEntry$Builder;
+    setPermissions(...arg0: AclEntryPermission[]): AclEntry$Builder;
     setPermissions(arg0: AclEntryPermission[]): AclEntry$Builder;
     setPrincipal(arg0: UserPrincipal): AclEntry$Builder;
     setType(arg0: AclEntryType): AclEntry$Builder;

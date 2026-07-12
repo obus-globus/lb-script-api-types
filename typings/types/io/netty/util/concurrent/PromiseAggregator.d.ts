@@ -8,6 +8,6 @@ export class PromiseAggregator<V extends unknown, F extends Future<V>> extends O
     // private aggregatePromise: Promise<Object>;
     // private failPending: boolean;
     // private pendingPromises: Promise<V>[];
-    add(arg0: Promise<V>[]): PromiseAggregator<V, F>;
+    add(...arg0: Promise<V>[]): PromiseAggregator<V, F>;
     operationComplete(arg0: F): void;
 }

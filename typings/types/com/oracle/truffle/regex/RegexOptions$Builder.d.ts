@@ -25,7 +25,7 @@ export class RegexOptions$Builder extends Object {
     encoding(encoding: Encodings$Encoding): RegexOptions$Builder;
     // private expectEncodingValue(enc: Encodings$Encoding): Encodings$Encoding;
     // private expectOptionName(key: string): void;
-    // private expectValue<T extends unknown>(returnValue: T, value: string, expected: string[]): T;
+    // private expectValue<T extends unknown>(returnValue: T, value: string, ...expected: string[]): T;
     // private findValueEndPos(errorMsg: string): number;
     flavor(flavor: RegexFlavor): RegexOptions$Builder;
     getEncoding(): Encodings$Encoding;
@@ -35,7 +35,7 @@ export class RegexOptions$Builder extends Object {
     // private lookAheadInKey(offset: number): string;
     // private optionsSyntaxError(msg: string): RegexSyntaxException;
     // private optionsSyntaxErrorUnexpectedKey(): RegexSyntaxException;
-    // private optionsSyntaxErrorUnexpectedValue(expected: string[]): RegexSyntaxException;
+    // private optionsSyntaxErrorUnexpectedValue(...expected: string[]): RegexSyntaxException;
     // private optionsSyntaxErrorUnexpectedValueMsg(msg: string): RegexSyntaxException;
     // private parseBooleanOption(key: string, flag: number): void;
     // private parseBooleanSrcOption(key: OptionKey<boolean>, flag: number): void;

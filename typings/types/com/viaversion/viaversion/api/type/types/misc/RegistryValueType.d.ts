@@ -6,7 +6,7 @@ import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 export class RegistryValueType extends VarIntType implements RegistryKey {
     static of(paramarg0: string): RegistryKey;
     static varIntLength(paramarg0: number): number;
-    constructor(arg0: Key, arg1: string[])
+    constructor(arg0: Key, ...arg1: string[])
     // private key: Key;
     // private names: string[];
     byId(arg0: number): string;

@@ -4,8 +4,8 @@ import type { VarIntType } from '../../../../../../com/viaversion/viaversion/api
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 export class EnumType extends VarIntType {
     static varIntLength(paramarg0: number): number;
-    constructor(arg0: EnumType$Fallback, arg1: string[])
-    constructor(arg0: string[])
+    constructor(arg0: EnumType$Fallback, ...arg1: string[])
+    constructor(...arg0: string[])
     // private fallback: EnumType$Fallback;
     // private names: string[];
     idFromName(arg0: string): number;

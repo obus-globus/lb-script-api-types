@@ -29,7 +29,7 @@ export class Log4jEventBuilder extends Object implements CallerBoundaryAware, Lo
     log(message: string): void;
     log(message: string, arg: Object): void;
     log(message: string, arg0: Object, arg1: Object): void;
-    log(message: string, args: Object[]): void;
+    log(message: string, ...args: Object[]): void;
     setCallerBoundary(fqcn: string): void;
     setCause(cause: Throwable): LoggingEventBuilder;
     setMessage(messageSupplier: () => string): LoggingEventBuilder;

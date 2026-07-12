@@ -61,7 +61,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     debug(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     debug(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     debug(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    debug(message: string, params: Object[]): void;
+    debug(message: string, ...params: Object[]): void;
     debug(message: string, paramSuppliers: () => Object | null[]): void;
     debug(message: string, throwable: Throwable): void;
     debug(marker: Marker, message: Object): void;
@@ -79,7 +79,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     debug(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     debug(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     debug(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    debug(marker: Marker, message: string, params: Object[]): void;
+    debug(marker: Marker, message: string, ...params: Object[]): void;
     debug(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     debug(marker: Marker, message: string, throwable: Throwable): void;
     debug(marker: Marker, message: Message): void;
@@ -94,15 +94,15 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     debug(messageSupplier: () => Message, throwable: Throwable): void;
     debug(messageSupplier: () => Object | null): void;
     debug(messageSupplier: () => Object | null, throwable: Throwable): void;
-    enter(fqcn: string, format: string, params: Object[]): EntryMessage;
+    enter(fqcn: string, format: string, ...params: Object[]): EntryMessage;
     enter(fqcn: string, format: string, paramSuppliers: () => Message[]): EntryMessage;
     enter(fqcn: string, format: string, paramSuppliers: () => Object | null[]): EntryMessage;
     enter(fqcn: string, message: Message): EntryMessage;
     enter(fqcn: string, messageSupplier: () => Message): EntryMessage;
     entry(): void;
-    entry(params: Object[]): void;
-    entry(fqcn: string, params: Object[]): void;
-    entryMsg(format: string, params: Object[]): EntryMessage;
+    entry(...params: Object[]): void;
+    entry(fqcn: string, ...params: Object[]): void;
+    entryMsg(format: string, ...params: Object[]): EntryMessage;
     entryMsg(format: string, paramSuppliers: () => Message[]): EntryMessage;
     entryMsg(format: string, paramSuppliers: () => Object | null[]): EntryMessage;
     error(message: Object): void;
@@ -120,7 +120,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     error(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     error(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     error(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    error(message: string, params: Object[]): void;
+    error(message: string, ...params: Object[]): void;
     error(message: string, paramSuppliers: () => Object | null[]): void;
     error(message: string, throwable: Throwable): void;
     error(marker: Marker, message: Object): void;
@@ -138,7 +138,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     error(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     error(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     error(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    error(marker: Marker, message: string, params: Object[]): void;
+    error(marker: Marker, message: string, ...params: Object[]): void;
     error(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     error(marker: Marker, message: string, throwable: Throwable): void;
     error(marker: Marker, message: Message): void;
@@ -173,7 +173,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     fatal(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     fatal(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     fatal(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    fatal(message: string, params: Object[]): void;
+    fatal(message: string, ...params: Object[]): void;
     fatal(message: string, paramSuppliers: () => Object | null[]): void;
     fatal(message: string, throwable: Throwable): void;
     fatal(marker: Marker, message: Object): void;
@@ -191,7 +191,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     fatal(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     fatal(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     fatal(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    fatal(marker: Marker, message: string, params: Object[]): void;
+    fatal(marker: Marker, message: string, ...params: Object[]): void;
     fatal(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     fatal(marker: Marker, message: string, throwable: Throwable): void;
     fatal(marker: Marker, message: Message): void;
@@ -228,7 +228,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     info(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     info(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     info(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    info(message: string, params: Object[]): void;
+    info(message: string, ...params: Object[]): void;
     info(message: string, paramSuppliers: () => Object | null[]): void;
     info(message: string, throwable: Throwable): void;
     info(marker: Marker, message: Object): void;
@@ -246,7 +246,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     info(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     info(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     info(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    info(marker: Marker, message: string, params: Object[]): void;
+    info(marker: Marker, message: string, ...params: Object[]): void;
     info(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     info(marker: Marker, message: string, throwable: Throwable): void;
     info(marker: Marker, message: Message): void;
@@ -305,7 +305,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    log(level: Level, message: string, params: Object[]): void;
+    log(level: Level, message: string, ...params: Object[]): void;
     log(level: Level, message: string, paramSuppliers: () => Object | null[]): void;
     log(level: Level, message: string, throwable: Throwable): void;
     log(level: Level, marker: Marker, message: Object): void;
@@ -324,7 +324,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    log(level: Level, marker: Marker, message: string, params: Object[]): void;
+    log(level: Level, marker: Marker, message: string, ...params: Object[]): void;
     log(level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     log(level: Level, marker: Marker, message: string, throwable: Throwable): void;
     log(level: Level, marker: Marker, message: Message): void;
@@ -352,7 +352,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, params: Object[]): void;
+    logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, ...params: Object[]): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, throwable: Throwable): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: Message, throwable: Throwable): void;
@@ -371,7 +371,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    logMessage(fqcn: string, level: Level, marker: Marker, message: string, params: Object[]): void;
+    logMessage(fqcn: string, level: Level, marker: Marker, message: string, ...params: Object[]): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     logMessage(fqcn: string, level: Level, marker: Marker, message: string, throwable: Throwable): void;
     logMessage(fqcn: string, level: Level, marker: Marker, messageSupplier: () => Message, throwable: Throwable): void;
@@ -379,8 +379,8 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     logMessage(level: Level, marker: Marker, fqcn: string, location: StackTraceElement, message: Message, throwable: Throwable): void;
     // private logMessageSafely(fqcn: string, level: Level, marker: Marker, message: Message, throwable: Throwable): void;
     // private logMessageTrackRecursion(fqcn: string, level: Level, marker: Marker, message: Message, throwable: Throwable): void;
-    printf(level: Level, format: string, params: Object[]): void;
-    printf(level: Level, marker: Marker, format: string, params: Object[]): void;
+    printf(level: Level, format: string, ...params: Object[]): void;
+    printf(level: Level, marker: Marker, format: string, ...params: Object[]): void;
     requiresLocation(): boolean;
     throwing<T extends Throwable>(throwable: T): T;
     throwing<T extends Throwable>(fqcn: string, level: Level, throwable: T): T;
@@ -401,7 +401,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     trace(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     trace(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     trace(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    trace(message: string, params: Object[]): void;
+    trace(message: string, ...params: Object[]): void;
     trace(message: string, paramSuppliers: () => Object | null[]): void;
     trace(message: string, throwable: Throwable): void;
     trace(marker: Marker, message: Object): void;
@@ -419,7 +419,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     trace(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     trace(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     trace(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    trace(marker: Marker, message: string, params: Object[]): void;
+    trace(marker: Marker, message: string, ...params: Object[]): void;
     trace(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     trace(marker: Marker, message: string, throwable: Throwable): void;
     trace(marker: Marker, message: Message): void;
@@ -436,7 +436,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     trace(messageSupplier: () => Object | null, throwable: Throwable): void;
     traceEntry(): EntryMessage;
     traceEntry(paramSuppliers: () => Object | null[]): EntryMessage;
-    traceEntry(format: string, params: Object[]): EntryMessage;
+    traceEntry(format: string, ...params: Object[]): EntryMessage;
     traceEntry(format: string, paramSuppliers: () => Object | null[]): EntryMessage;
     traceEntry(message: Message): EntryMessage;
     traceExit(): void;
@@ -461,7 +461,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     warn(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     warn(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     warn(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    warn(message: string, params: Object[]): void;
+    warn(message: string, ...params: Object[]): void;
     warn(message: string, paramSuppliers: () => Object | null[]): void;
     warn(message: string, throwable: Throwable): void;
     warn(marker: Marker, message: Object): void;
@@ -479,7 +479,7 @@ export abstract class AbstractLogger extends Object implements Serializable, Ext
     warn(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     warn(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     warn(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    warn(marker: Marker, message: string, params: Object[]): void;
+    warn(marker: Marker, message: string, ...params: Object[]): void;
     warn(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     warn(marker: Marker, message: string, throwable: Throwable): void;
     warn(marker: Marker, message: Message): void;

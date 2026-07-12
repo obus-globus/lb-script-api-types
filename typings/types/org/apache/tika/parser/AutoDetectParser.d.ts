@@ -11,10 +11,10 @@ import type { SecureContentHandler } from '../../../../org/apache/tika/sax/Secur
 import type { ContentHandler } from '../../../../org/xml/sax/ContentHandler.d.ts'
 export class AutoDetectParser extends CompositeParser {
     constructor()
-    constructor(arg0: Parser[])
+    constructor(...arg0: Parser[])
     constructor(arg0: TikaConfig)
     constructor(arg0: Detector)
-    constructor(arg0: Detector, arg1: Parser[])
+    constructor(arg0: Detector, ...arg1: Parser[])
     readonly autoDetectParserConfig: AutoDetectParserConfig;
     readonly detector: Detector;
     // private createSecureContentHandler(arg0: ContentHandler, arg1: TikaInputStream, arg2: AutoDetectParserConfig): SecureContentHandler;

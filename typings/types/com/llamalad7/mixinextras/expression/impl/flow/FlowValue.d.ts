@@ -5,7 +5,7 @@ import type { Type } from '../../../../../../org/objectweb/asm/Type.d.ts'
 import type { AbstractInsnNode } from '../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 import type { Value } from '../../../../../../org/objectweb/asm/tree/analysis/Value.d.ts'
 export class FlowValue extends Object implements Value {
-    constructor(arg0: Type, arg1: AbstractInsnNode, arg2: FlowValue[])
+    constructor(arg0: Type, arg1: AbstractInsnNode, ...arg2: FlowValue[])
     readonly decorations: { [key: string]: Object };
     readonly insn: AbstractInsnNode;
     readonly next: Pair<FlowValue, number>[];
@@ -33,6 +33,6 @@ export class FlowValue extends Object implements Value {
     removeParent(arg0: number): void;
     setInsn(arg0: AbstractInsnNode): void;
     setParent(arg0: number, arg1: FlowValue): void;
-    setParents(arg0: FlowValue[]): void;
+    setParents(...arg0: FlowValue[]): void;
     typeMatches(arg0: Type): boolean;
 }

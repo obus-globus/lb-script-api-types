@@ -69,7 +69,7 @@ export class MobEffect extends Object implements FabricMobEffect, FeatureElement
     onMobRemoved(level: ServerLevel, mob: LivingEntity, amplifier: number, reason: Entity$RemovalReason): void;
     removeAttributeModifiers(attributes: AttributeMap): void;
     requiredFeatures(): FeatureFlagSet;
-    requiredFeatures(flags: FeatureFlag[]): MobEffect;
+    requiredFeatures(...flags: FeatureFlag[]): MobEffect;
     setBlendDuration(ticks: number): MobEffect;
     setBlendDuration(inTicks: number, outTicks: number, outAdvanceTicks: number): MobEffect;
     shouldApplyEffectTickThisTick(tickCount: number, amplification: number): boolean;

@@ -26,7 +26,7 @@ export class FloatSpliterators extends Object {
     static asSpliteratorFromSorted(paramarg0: FloatIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): FloatSpliterator;
     static asSpliteratorFromSortedUnknownSize(paramarg0: FloatIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => number): FloatSpliterator;
     static asSpliteratorUnknownSize(paramarg0: FloatIterator, paramarg1: number): FloatSpliterator;
-    static concat(paramarg0: (Object | null)[]): FloatSpliterator;
+    static concat(...paramarg0: (Object | null)[]): FloatSpliterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): FloatSpliterator;
     static narrow(paramarg0: Spliterator$OfDouble): FloatSpliterator;
     static onEachMatching(paramarg0: FloatSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;

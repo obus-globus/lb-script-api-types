@@ -27,7 +27,7 @@ export class CustomSharedMinecraftScreen extends Screen {
     /**
      * Disable {@link Screen.extractBlurredBackground}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomSharedMinecraftScreen.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomSharedMinecraftScreen.kt:56}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomSharedMinecraftScreen.kt#L56 | src/main/kotlin/net/ccbluex/liquidbounce/integration/screen/impl/CustomSharedMinecraftScreen.kt:56}
      */
     isInGameUi(): boolean;
     isPauseScreen(): boolean;

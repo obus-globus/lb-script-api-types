@@ -8,5 +8,6 @@ export class ClientCookieEncoder extends CookieEncoder {
     encode(arg0: Cookie[]): string;
     encode(arg0: Cookie): string;
     // private encode(arg0: StringBuilder, arg1: Cookie): void;
+    encode(...arg0: Cookie[]): string;
     encode(arg0: string, arg1: string): string;
 }

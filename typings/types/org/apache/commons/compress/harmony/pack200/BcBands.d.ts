@@ -62,7 +62,7 @@ export class BcBands extends BandSet {
     visitLookupSwitchInsn(arg0: Label, arg1: number[], arg2: Label[]): void;
     visitMethodInsn(arg0: number, arg1: string, arg2: string, arg3: string): void;
     visitMultiANewArrayInsn(arg0: string, arg1: number): void;
-    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, arg3: Label[]): void;
+    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, ...arg3: Label[]): void;
     visitTypeInsn(arg0: number, arg1: string): void;
     visitVarInsn(arg0: number, arg1: number): void;
 }

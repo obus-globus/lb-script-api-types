@@ -33,10 +33,10 @@ export class Annotations extends Object {
     static merge(paramarg0: ClassNode, paramarg1: ClassNode): void;
     static merge(paramarg0: FieldNode, paramarg1: FieldNode): void;
     static merge(paramarg0: MethodNode, paramarg1: MethodNode): void;
-    static setInvisible(paramarg0: FieldNode, paramarg1: Class<Annotation>, paramarg2: (Object | null)[]): void;
-    static setInvisible(paramarg0: MethodNode, paramarg1: Class<Annotation>, paramarg2: (Object | null)[]): void;
+    static setInvisible(paramarg0: FieldNode, paramarg1: Class<Annotation>, ...paramarg2: (Object | null)[]): void;
+    static setInvisible(paramarg0: MethodNode, paramarg1: Class<Annotation>, ...paramarg2: (Object | null)[]): void;
     static setValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: Object): void;
-    static setVisible(paramarg0: FieldNode, paramarg1: Class<Annotation>, paramarg2: (Object | null)[]): void;
-    static setVisible(paramarg0: MethodNode, paramarg1: Class<Annotation>, paramarg2: (Object | null)[]): void;
+    static setVisible(paramarg0: FieldNode, paramarg1: Class<Annotation>, ...paramarg2: (Object | null)[]): void;
+    static setVisible(paramarg0: MethodNode, paramarg1: Class<Annotation>, ...paramarg2: (Object | null)[]): void;
     private constructor()
 }

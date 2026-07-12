@@ -35,7 +35,7 @@ export class MemberInfo extends Object implements ITargetSelectorConstructor, IT
     asMethodMapping(): MappingMethod;
     attach(arg0: ISelectorContext): ITargetSelector;
     // private compareMatches(arg0: ITargetSelectorByName): boolean;
-    configure(arg0: ITargetSelector$Configure, arg1: string[]): ITargetSelector;
+    configure(arg0: ITargetSelector$Configure, ...arg1: string[]): ITargetSelector;
     equals(arg0: Object | null): boolean;
     getDesc(): string;
     getMaxMatchCount(): number;

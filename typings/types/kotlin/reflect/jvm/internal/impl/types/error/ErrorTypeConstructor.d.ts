@@ -7,7 +7,7 @@ import type { TypeConstructor } from '../../../../../../../kotlin/reflect/jvm/in
 import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 import type { ErrorTypeKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/error/ErrorTypeKind.d.ts'
 export class ErrorTypeConstructor extends Object implements TypeConstructor {
-    constructor(arg0: ErrorTypeKind, arg1: string[])
+    constructor(arg0: ErrorTypeKind, ...arg1: string[])
     // private debugText: string;
     // private formatParams: string[];
     readonly kind: ErrorTypeKind;

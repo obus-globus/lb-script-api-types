@@ -15,7 +15,7 @@ export class FileSystems$ReadOnlyFileSystem extends FileSystems$DeniedIOFileSyst
     constructor(fileSystem: FileSystem, allowFileStoreInfo: boolean)
     // private allowFileStoreInfo: boolean;
     // private delegateFileSystem: FileSystem;
-    checkAccess(path: Path[], modes: AccessMode[], linkOptions: LinkOption[]): void;
+    checkAccess(path: Path[], modes: AccessMode[], ...linkOptions: LinkOption[]): void;
     getEncoding(path: Path[]): Charset;
     getFileStoreBlockSize(path: Path[]): number;
     getFileStoreTotalSpace(path: Path[]): number;
@@ -26,14 +26,14 @@ export class FileSystems$ReadOnlyFileSystem extends FileSystems$DeniedIOFileSyst
     isFileStoreReadOnly(path: Path[]): boolean;
     isHost(): boolean;
     isInternal(polyglot: AbstractPolyglotImpl): boolean;
-    isSameFile(path1: Path[], path2: Path[], options: LinkOption[]): boolean;
-    newByteChannel(inPath: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): SeekableByteChannel;
+    isSameFile(path1: Path[], path2: Path[], ...options: LinkOption[]): boolean;
+    newByteChannel(inPath: Path[], options: OpenOption[], ...attrs: FileAttribute<Object>[]): SeekableByteChannel;
     newDirectoryStream(dir: Path[], filter: (param0: Path[]) => boolean): Path[][];
     parsePath(uri: URI): Path[];
     parsePath(path: string): Path[];
-    readAttributes(path: Path[], attributes: string, options: LinkOption[]): { [key: string]: Object };
+    readAttributes(path: Path[], attributes: string, ...options: LinkOption[]): { [key: string]: Object };
     readSymbolicLink(link: Path[]): Path[];
     setCurrentWorkingDirectory(currentWorkingDirectory: Path[]): void;
     toAbsolutePath(path: Path[]): Path[];
-    toRealPath(path: Path[], linkOptions: LinkOption[]): Path[];
+    toRealPath(path: Path[], ...linkOptions: LinkOption[]): Path[];
 }

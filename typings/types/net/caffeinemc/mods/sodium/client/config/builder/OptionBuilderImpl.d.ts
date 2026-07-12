@@ -22,7 +22,7 @@ export abstract class OptionBuilderImpl<O extends Option> extends Object impleme
     getOptionClass(): Class<O>;
     prepareBuild(): void;
     setEnabled(arg0: boolean): OptionBuilder;
-    setEnabledProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): OptionBuilder;
+    setEnabledProvider(arg0: (param0: ConfigState) => boolean, ...arg1: Identifier[]): OptionBuilder;
     setName(arg0: Component): OptionBuilder;
     setTooltip(arg0: Component): OptionBuilder;
     validateData(): void;

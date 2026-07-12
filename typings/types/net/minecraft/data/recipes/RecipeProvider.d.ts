@@ -37,8 +37,8 @@ export abstract class RecipeProvider extends Object {
     static getSimpleRecipeName(paramitemLike: ItemLike): string;
     static getSmeltingRecipeName(paramproduct: ItemLike): string;
     static insideOf(paramblock: Block): Criterion<EnterBlockTrigger$TriggerInstance>;
-    static inventoryTrigger(parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
-    static inventoryTrigger(parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static inventoryTrigger(...parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
+    static inventoryTrigger(...parampredicates: (Object | null)[]): Criterion<InventoryChangeTrigger$TriggerInstance>;
     constructor(registries: HolderLookup$Provider, output: RecipeOutput)
     // private items: HolderGetter<Item>;
     // private output: RecipeOutput;

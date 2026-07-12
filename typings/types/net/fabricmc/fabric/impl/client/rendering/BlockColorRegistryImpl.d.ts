@@ -8,7 +8,7 @@ import type { BlockState } from '../../../../../../net/minecraft/world/level/blo
 export class BlockColorRegistryImpl extends Object {
     static getFactory(paramarg0: BlockState): (param0: BlockState, param1: BlockAndTintGetter, param2: BlockPos, param3: (Object | null)[]) => void;
     static initialize(paramarg0: BlockColors): void;
-    static register(paramarg0: BlockTintSource[], paramarg1: (Object | null)[]): void;
+    static register(paramarg0: BlockTintSource[], ...paramarg1: (Object | null)[]): void;
     static register(paramarg0: (param0: BlockState, param1: BlockAndTintGetter, param2: BlockPos, param3: (Object | null)[]) => void, paramarg1: (Object | null)[]): void;
     constructor()
 }

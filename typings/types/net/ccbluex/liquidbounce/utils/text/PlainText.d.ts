@@ -43,7 +43,7 @@ export class PlainText extends Record implements CharSequence, Component, Format
     static composite(paramparts: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static composite(parampart: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static composite(paramfirst: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean, paramsecond: (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
-    static composite(paramparts: (Object | null)[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
+    static composite(...paramparts: (Object | null)[]): (param0: (param0: number, param1: Style, param2: number) => boolean) => boolean;
     static decorateOutput(paramoutput: (param0: number, param1: Style, param2: number) => boolean, parammodifier: (param0: number) => number): (param0: number, param1: Style, param2: number) => boolean;
     static empty(): PlainText;
     static empty(): MutableComponent;
@@ -66,10 +66,10 @@ export class PlainText extends Record implements CharSequence, Component, Format
     static score(parampattern: CompilableString<EntitySelector>, paramobjective: string): MutableComponent;
     static selector(parampattern: CompilableString<EntitySelector>, paramseparator: Optional<Component>): MutableComponent;
     static translatable(paramkey: string): MutableComponent;
-    static translatable(paramkey: string, paramargs: (Object | null)[]): MutableComponent;
-    static translatableEscape(paramkey: string, paramargs: (Object | null)[]): MutableComponent;
+    static translatable(paramkey: string, ...paramargs: (Object | null)[]): MutableComponent;
+    static translatableEscape(paramkey: string, ...paramargs: (Object | null)[]): MutableComponent;
     static translatableWithFallback(paramkey: string, paramfallback: string): MutableComponent;
-    static translatableWithFallback(paramkey: string, paramfallback: string, paramargs: (Object | null)[]): MutableComponent;
+    static translatableWithFallback(paramkey: string, paramfallback: string, ...paramargs: (Object | null)[]): MutableComponent;
     static translationArg(parammessage: Message): Component;
     static translationArg(paramuri: URI): Component;
     static translationArg(paramdate: Date): Component;

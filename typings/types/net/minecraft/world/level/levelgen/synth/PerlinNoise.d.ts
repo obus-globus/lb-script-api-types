@@ -5,7 +5,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { RandomSource } from '../../../../../../net/minecraft/util/RandomSource.d.ts'
 import type { ImprovedNoise } from '../../../../../../net/minecraft/world/level/levelgen/synth/ImprovedNoise.d.ts'
 export class PerlinNoise extends Object {
-    static create(paramrandom: RandomSource, paramfirstOctave: number, paramfirstAmplitude: number, paramamplitudes: number[]): PerlinNoise;
+    static create(paramrandom: RandomSource, paramfirstOctave: number, paramfirstAmplitude: number, ...paramamplitudes: number[]): PerlinNoise;
     static create(paramrandom: RandomSource, paramfirstOctave: number, paramamplitudes: (Object | null)[]): PerlinNoise;
     static create(paramrandom: RandomSource, paramoctaveSet: number[]): PerlinNoise;
     static create(paramrandom: RandomSource, paramoctaves: IntStream): PerlinNoise;

@@ -5,8 +5,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 export class StringFormattedMessage extends Object implements Message {
-    constructor(locale: Locale, messagePattern: string, arguments: Object[])
-    constructor(messagePattern: string, arguments: Object[])
+    constructor(locale: Locale, messagePattern: string, ...arguments: Object[])
+    constructor(messagePattern: string, ...arguments: Object[])
     // private argArray: Object[];
     readonly formattedMessage: string;
     // private locale: Locale;
@@ -14,7 +14,7 @@ export class StringFormattedMessage extends Object implements Message {
     // private stringArgs: string[];
     readonly throwable: Throwable;
     equals(o: Object | null): boolean;
-    formatMessage(msgPattern: string, args: Object[]): string;
+    formatMessage(msgPattern: string, ...args: Object[]): string;
     getFormat(): string;
     getFormattedMessage(): string;
     getParameters(): Object[];

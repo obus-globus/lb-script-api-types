@@ -2308,7 +2308,7 @@ export class GL40 extends GL33 {
     static glSelectBuffer(paramarg0: IntBuffer): void;
     static glShadeModel(paramarg0: number): void;
     static glShaderSource(paramarg0: number, paramarg1: CharSequence): void;
-    static glShaderSource(paramarg0: number, paramarg1: (Object | null)[]): void;
+    static glShaderSource(paramarg0: number, ...paramarg1: (Object | null)[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glStencilFunc(paramarg0: number, paramarg1: number, paramarg2: number): void;

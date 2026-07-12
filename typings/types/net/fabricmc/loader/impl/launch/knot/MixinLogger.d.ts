@@ -9,7 +9,7 @@ export class MixinLogger extends LoggerAdapterAbstract {
     catching(arg0: Throwable): void;
     catching(arg0: Level, arg1: Throwable): void;
     getType(): string;
-    log(arg0: Level, arg1: string, arg2: Object[]): void;
+    log(arg0: Level, arg1: string, ...arg2: Object[]): void;
     log(arg0: Level, arg1: string, arg2: Throwable): void;
     throwing<T extends Throwable>(arg0: T): T;
 }

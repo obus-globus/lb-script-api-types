@@ -8,8 +8,8 @@ import type { DeleteOption } from '../../../../../org/apache/commons/io/file/Del
 export class CleaningPathVisitor extends CountingPathVisitor {
     static withBigIntegerCounters(): CountingPathVisitor;
     static withLongCounters(): CountingPathVisitor;
-    constructor(arg0: Counters$PathCounters, arg1: string[])
-    constructor(arg0: Counters$PathCounters, arg1: DeleteOption[], arg2: string[])
+    constructor(arg0: Counters$PathCounters, ...arg1: string[])
+    constructor(arg0: Counters$PathCounters, arg1: DeleteOption[], ...arg2: string[])
     // private overrideReadOnly: boolean;
     // private skip: string[];
     // private accept(arg0: Path[]): boolean;

@@ -12,7 +12,7 @@ import type { RotationsValueGroup } from '../../../../../../../net/ccbluex/liqui
  *
  * Sprints automatically.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSprint.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSprint.kt:49}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSprint.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleSprint.kt:49}
  */
 export class ModuleSprint extends ClientModule {
     static INSTANCE: ModuleSprint;

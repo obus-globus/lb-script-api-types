@@ -6,5 +6,5 @@ export class TextDefinitions extends Object {
     // private translations: { [key: string]: string };
     get(arg0: string): string;
     lookup(): (param0: string) => string;
-    translate(arg0: string, arg1: Object[]): string;
+    translate(arg0: string, ...arg1: Object[]): string;
 }

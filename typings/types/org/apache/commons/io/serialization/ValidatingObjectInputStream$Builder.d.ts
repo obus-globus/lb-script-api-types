@@ -9,14 +9,14 @@ export class ValidatingObjectInputStream$Builder extends AbstractStreamBuilder<V
     constructor()
     readonly predicate: ObjectStreamClassPredicate;
     accept(arg0: Pattern): ValidatingObjectInputStream$Builder;
-    accept(arg0: Class<Object>[]): ValidatingObjectInputStream$Builder;
-    accept(arg0: string[]): ValidatingObjectInputStream$Builder;
+    accept(...arg0: Class<Object>[]): ValidatingObjectInputStream$Builder;
+    accept(...arg0: string[]): ValidatingObjectInputStream$Builder;
     accept(arg0: (param0: string) => boolean): ValidatingObjectInputStream$Builder;
     get(): ValidatingObjectInputStream;
     getPredicate(): ObjectStreamClassPredicate;
     reject(arg0: Pattern): ValidatingObjectInputStream$Builder;
-    reject(arg0: Class<Object>[]): ValidatingObjectInputStream$Builder;
-    reject(arg0: string[]): ValidatingObjectInputStream$Builder;
+    reject(...arg0: Class<Object>[]): ValidatingObjectInputStream$Builder;
+    reject(...arg0: string[]): ValidatingObjectInputStream$Builder;
     reject(arg0: (param0: string) => boolean): ValidatingObjectInputStream$Builder;
     setPredicate(arg0: ObjectStreamClassPredicate): ValidatingObjectInputStream$Builder;
 }

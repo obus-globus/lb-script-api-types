@@ -31,7 +31,7 @@ export abstract class CallableReference extends Object implements Serializable, 
     readonly signature: string;
     readonly typeParameters: KTypeParameter[];
     readonly visibility: KVisibility | null;
-    call(arg0: (Object | null)[]): Object | null;
+    call(...arg0: (Object | null)[]): Object | null;
     callBy(arg0: Map<Object | null, Object | null>): Object | null;
     compute(): KCallable<Object>;
     computeReflected(): KCallable<Object>;

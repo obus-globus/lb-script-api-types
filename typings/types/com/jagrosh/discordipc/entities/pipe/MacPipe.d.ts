@@ -5,7 +5,7 @@ import type { UnixPipe } from '../../../../../com/jagrosh/discordipc/entities/pi
 import type { File } from '../../../../../java/io/File.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class MacPipe extends UnixPipe {
-    static openPipe(paramarg0: IPCClient, paramarg1: number, paramarg2: { [key: string]: Callback }, paramarg3: (Object | null)[]): Pipe;
+    static openPipe(paramarg0: IPCClient, paramarg1: number, paramarg2: { [key: string]: Callback }, ...paramarg3: (Object | null)[]): Pipe;
     constructor(arg0: IPCClient, arg1: { [key: string]: Callback }, arg2: File)
     registerApp(arg0: string, arg1: string): void;
     // private registerCommand(arg0: string, arg1: string): void;

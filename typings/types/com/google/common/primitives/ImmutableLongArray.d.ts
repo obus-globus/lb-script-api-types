@@ -18,7 +18,7 @@ export class ImmutableLongArray extends Object implements Serializable {
     static of(parame0: number, parame1: number, parame2: number, parame3: number): ImmutableLongArray;
     static of(parame0: number, parame1: number, parame2: number, parame3: number, parame4: number): ImmutableLongArray;
     static of(parame0: number, parame1: number, parame2: number, parame3: number, parame4: number, parame5: number): ImmutableLongArray;
-    static of(paramfirst: number, paramrest: number[]): ImmutableLongArray;
+    static of(paramfirst: number, ...paramrest: number[]): ImmutableLongArray;
     constructor(arg0: number[], arg1: number, arg2: number, arg3: any)
     // private array: number[];
     // private end: number;

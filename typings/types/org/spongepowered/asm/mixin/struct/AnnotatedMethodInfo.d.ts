@@ -16,7 +16,7 @@ export class AnnotatedMethodInfo extends Object implements IInjectionPointContex
     // private context: IMixinContext;
     readonly method: MethodNode;
     readonly methodName: string;
-    addMessage(arg0: string, arg1: Object[]): void;
+    addMessage(arg0: string, ...arg1: Object[]): void;
     getAnnotation(): IAnnotationHandle;
     getAnnotationNode(): AnnotationNode;
     getElementDescription(): string;

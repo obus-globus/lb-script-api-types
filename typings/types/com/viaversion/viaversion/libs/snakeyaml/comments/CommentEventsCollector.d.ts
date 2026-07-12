@@ -4,8 +4,8 @@ import type { Event } from '../../../../../../com/viaversion/viaversion/libs/sna
 import type { Parser } from '../../../../../../com/viaversion/viaversion/libs/snakeyaml/parser/Parser.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CommentEventsCollector extends Object {
-    constructor(arg0: Parser, arg1: CommentType[])
-    constructor(arg0: Event[], arg1: CommentType[])
+    constructor(arg0: Parser, ...arg1: CommentType[])
+    constructor(arg0: Event[], ...arg1: CommentType[])
     // private commentLineList: CommentLine[];
     // private eventSource: Event[];
     // private expectedCommentTypes: CommentType[];

@@ -16,7 +16,7 @@ export class CommonJSRequireBuiltinNodeGen extends CommonJSRequireBuiltin {
     static create(paramcontext: JSContext, parambuiltin: JSBuiltin, paramarguments: (Object | null)[]): CommonJSRequireBuiltin;
     static createBuiltin(paramctx: JSContext, parambuiltin: JSBuiltin, paramconstruct: boolean, paramnewTarget: boolean): JSBuiltinNode;
     static findBlockScopeNode(paramnode: Node): Node;
-    static log(parammessage: (Object | null)[]): void;
+    static log(...parammessage: (Object | null)[]): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     static transferSourceSection(paramfromNode: JavaScriptNode, paramtoNode: JavaScriptNode): void;

@@ -6,7 +6,7 @@ export class ImmutableMultiset$Builder<E extends unknown> extends ImmutableColle
     constructor(contents: E[])
     // private contents: E[];
     add(element: E): ImmutableMultiset$Builder<E>;
-    add(elements: E[]): ImmutableMultiset$Builder<E>;
+    add(...elements: E[]): ImmutableMultiset$Builder<E>;
     addAll(elements: E[]): ImmutableMultiset$Builder<E>;
     addAll(elements: Iterator<E>): ImmutableMultiset$Builder<E>;
     addCopies(element: E, occurrences: number): ImmutableMultiset$Builder<E>;

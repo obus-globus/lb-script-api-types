@@ -7,19 +7,19 @@ export abstract class LoggerAdapterAbstract extends Object implements ILogger {
     readonly id: string;
     catching(arg0: Level, arg1: Throwable): void;
     catching(arg0: Throwable): void;
-    debug(arg0: string, arg1: Object[]): void;
+    debug(arg0: string, ...arg1: Object[]): void;
     debug(arg0: string, arg1: Throwable): void;
-    error(arg0: string, arg1: Object[]): void;
+    error(arg0: string, ...arg1: Object[]): void;
     error(arg0: string, arg1: Throwable): void;
-    fatal(arg0: string, arg1: Object[]): void;
+    fatal(arg0: string, ...arg1: Object[]): void;
     fatal(arg0: string, arg1: Throwable): void;
     getId(): string;
     getType(): string;
-    info(arg0: string, arg1: Object[]): void;
+    info(arg0: string, ...arg1: Object[]): void;
     info(arg0: string, arg1: Throwable): void;
     log(arg0: Level, arg1: string, arg2: Throwable): void;
-    trace(arg0: string, arg1: Object[]): void;
+    trace(arg0: string, ...arg1: Object[]): void;
     trace(arg0: string, arg1: Throwable): void;
-    warn(arg0: string, arg1: Object[]): void;
+    warn(arg0: string, ...arg1: Object[]): void;
     warn(arg0: string, arg1: Throwable): void;
 }

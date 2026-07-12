@@ -58,7 +58,7 @@ export class ClassUtils extends Object {
     static isPublic(paramarg0: Class<Object>): boolean;
     static primitiveToWrapper(paramarg0: Class<Object>): Class<Object>;
     static primitivesToWrappers(paramarg0: Object | null): Object | null;
-    static toClass(paramarg0: (Object | null)[]): Object | null;
+    static toClass(...paramarg0: (Object | null)[]): Object | null;
     static wrapperToPrimitive(paramarg0: Class<Object>): Class<Object>;
     static wrappersToPrimitives(paramarg0: Object | null): Object | null;
     constructor()

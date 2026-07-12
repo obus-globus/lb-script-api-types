@@ -44,7 +44,7 @@ export class Trainer extends Object implements AutoCloseable {
     getMetrics(): Metrics;
     getModel(): Model;
     getTrainingResult(): TrainingResult;
-    initialize(arg0: Shape[]): void;
+    initialize(...arg0: Shape[]): void;
     iterateDataset(arg0: Dataset): Batch[];
     newGradientCollector(): GradientCollector;
     notifyListeners(arg0: (param0: TrainingListener) => void): void;

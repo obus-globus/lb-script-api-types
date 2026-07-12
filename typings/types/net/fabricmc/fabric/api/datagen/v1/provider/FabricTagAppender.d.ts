@@ -7,7 +7,7 @@ import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts
 export interface FabricTagAppender<T extends unknown> extends Object{
     forceAddTag(arg0: TagKey<T>): TagAppender<T>;
     getBuilder(): TagBuilder;
-    remove(arg0: ResourceKey<T>[]): TagAppender<T>;
+    remove(...arg0: ResourceKey<T>[]): TagAppender<T>;
     remove(arg0: ResourceKey<T>): TagAppender<T>;
     removeAll(arg0: Stream<ResourceKey<T>>): TagAppender<T>;
     removeAll(arg0: ResourceKey<T>[]): TagAppender<T>;

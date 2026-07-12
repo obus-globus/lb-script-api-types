@@ -9,5 +9,5 @@ export class ReflectionLibraryGen$UncachedDispatch extends ReflectionLibrary imp
     static getUncached(paramv: Object): ReflectionLibrary;
     private constructor()
     accepts(receiver_: Object): boolean;
-    send(receiver_: Object, message: Message, args: Object[]): Object;
+    send(receiver_: Object, message: Message, ...args: Object[]): Object;
 }

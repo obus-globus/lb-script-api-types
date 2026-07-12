@@ -10,8 +10,8 @@ export abstract class WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX extends Stru
     static autoRead(paramarg0: (Object | null)[]): void;
     static autoWrite(paramarg0: (Object | null)[]): void;
     static createFieldsOrder(paramarg0: string): string[];
-    static createFieldsOrder(paramarg0: (Object | null)[]): string[];
-    static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
+    static createFieldsOrder(...paramarg0: (Object | null)[]): string[];
+    static createFieldsOrder(paramarg0: string[], ...paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static fromPointer(paramarg0: Pointer): WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX;
     static newInstance(paramarg0: Class<Structure>): Structure | null;

@@ -16,9 +16,9 @@ export class ConnectionSpec$Builder extends Object {
     allEnabledCipherSuites(): ConnectionSpec$Builder;
     allEnabledTlsVersions(): ConnectionSpec$Builder;
     build(): ConnectionSpec;
-    cipherSuites(cipherSuites: string[]): ConnectionSpec$Builder;
-    cipherSuites(cipherSuites: CipherSuite[]): ConnectionSpec$Builder;
+    cipherSuites(...cipherSuites: string[]): ConnectionSpec$Builder;
+    cipherSuites(...cipherSuites: CipherSuite[]): ConnectionSpec$Builder;
     supportsTlsExtensions(supportsTlsExtensions: boolean): ConnectionSpec$Builder;
-    tlsVersions(tlsVersions: string[]): ConnectionSpec$Builder;
-    tlsVersions(tlsVersions: TlsVersion[]): ConnectionSpec$Builder;
+    tlsVersions(...tlsVersions: string[]): ConnectionSpec$Builder;
+    tlsVersions(...tlsVersions: TlsVersion[]): ConnectionSpec$Builder;
 }

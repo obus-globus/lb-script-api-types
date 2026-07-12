@@ -9,7 +9,7 @@ export class IntervalSet extends Object implements IntSet {
     static of(paramarg0: number, paramarg1: number): IntervalSet;
     static subtract(paramarg0: IntervalSet, paramarg1: IntervalSet): IntervalSet;
     constructor(arg0: IntervalSet)
-    constructor(arg0: number[])
+    constructor(...arg0: number[])
     // private intervals: Interval[];
     readonly: boolean;
     add(arg0: Interval): void;

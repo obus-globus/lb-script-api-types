@@ -17,8 +17,8 @@ export class UpgradeData$BlockFixers extends Enum<UpgradeData$BlockFixers> imple
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): UpgradeData$BlockFixers;
     static values(): (Object | null)[];
-    private constructor(blocks: Block[])
-    private constructor(chunky: boolean, blocks: Block[])
+    private constructor(...blocks: Block[])
+    private constructor(chunky: boolean, ...blocks: Block[])
     processChunk(level: LevelAccessor): void;
     updateShape(state: BlockState, direction: Direction, neighbour: BlockState, level: LevelAccessor, pos: BlockPos, neighbourPos: BlockPos): BlockState;
     name(): "BLACKLIST" | "DEFAULT" | "CHEST" | "LEAVES" | "STEM_BLOCK";

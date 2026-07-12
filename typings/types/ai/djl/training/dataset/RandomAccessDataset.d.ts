@@ -36,7 +36,7 @@ export abstract class RandomAccessDataset extends Object implements Dataset {
     newSubDataset(arg0: number[]): RandomAccessDataset;
     prepare(): void;
     prepare(arg0: Progress): void;
-    randomSplit(arg0: number[]): RandomAccessDataset[];
+    randomSplit(...arg0: number[]): RandomAccessDataset[];
     size(): number;
     subDataset(arg0: number, arg1: number): RandomAccessDataset;
     subDataset<K extends unknown>(arg0: K[], arg1: K[]): RandomAccessDataset;

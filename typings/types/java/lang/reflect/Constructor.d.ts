@@ -49,7 +49,7 @@ export class Constructor<T extends unknown> extends Executable {
     hashCode(): number;
     isSynthetic(): boolean;
     isVarArgs(): boolean;
-    newInstance(arg0: Object[]): T;
+    newInstance(...arg0: Object[]): T;
     newInstanceWithCaller(arg0: Object[], arg1: boolean, arg2: Class<Object>): T;
     newWithAccessor(arg0: ConstructorAccessor): Constructor<T>;
     setAccessible(arg0: boolean): void;

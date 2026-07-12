@@ -57,11 +57,11 @@ export class IOUtils extends Object {
     static byteArray(paramarg0: number): number[];
     static close(paramarg0: Closeable): void;
     static close(paramarg0: Closeable, paramarg1: (param0: IOException) => void): void;
-    static close(paramarg0: (Object | null)[]): void;
+    static close(...paramarg0: (Object | null)[]): void;
     static close(paramarg0: URLConnection): void;
     static closeQuietly(paramarg0: Closeable): void;
     static closeQuietly(paramarg0: Closeable, paramarg1: (param0: Exception) => void): void;
-    static closeQuietly(paramarg0: (Object | null)[]): void;
+    static closeQuietly(...paramarg0: (Object | null)[]): void;
     static closeQuietly(paramarg0: InputStream): void;
     static closeQuietly(paramarg0: OutputStream): void;
     static closeQuietly(paramarg0: Reader): void;

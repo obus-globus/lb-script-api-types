@@ -8,11 +8,11 @@ export class DelimiterBasedFrameDecoder extends ByteToMessageDecoder {
     static COMPOSITE_CUMULATOR: ByteToMessageDecoder$Cumulator;
     static MERGE_CUMULATOR: ByteToMessageDecoder$Cumulator;
     constructor(arg0: number, arg1: ByteBuf)
-    constructor(arg0: number, arg1: ByteBuf[])
+    constructor(arg0: number, ...arg1: ByteBuf[])
     constructor(arg0: number, arg1: boolean, arg2: ByteBuf)
-    constructor(arg0: number, arg1: boolean, arg2: ByteBuf[])
+    constructor(arg0: number, arg1: boolean, ...arg2: ByteBuf[])
     constructor(arg0: number, arg1: boolean, arg2: boolean, arg3: ByteBuf)
-    constructor(arg0: number, arg1: boolean, arg2: boolean, arg3: ByteBuf[])
+    constructor(arg0: number, arg1: boolean, arg2: boolean, ...arg3: ByteBuf[])
     // private delimiters: ByteBuf[];
     // private discardingTooLongFrame: boolean;
     // private failFast: boolean;

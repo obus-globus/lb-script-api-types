@@ -38,5 +38,5 @@ export class Debugger extends Object {
     removeBreakpointRemovedListener(listener: (param0: Breakpoint) => void): void;
     restoreStepping(): void;
     startSession(callback: SuspendedCallback): DebuggerSession;
-    startSession(callback: SuspendedCallback, defaultSourceElements: SourceElement[]): DebuggerSession;
+    startSession(callback: SuspendedCallback, ...defaultSourceElements: SourceElement[]): DebuggerSession;
 }

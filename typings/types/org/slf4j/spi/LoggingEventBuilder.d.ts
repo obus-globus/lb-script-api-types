@@ -13,7 +13,7 @@ export interface LoggingEventBuilder extends Object {
     log(arg0: string): void;
     log(arg0: string, arg1: Object): void;
     log(arg0: string, arg1: Object, arg2: Object): void;
-    log(arg0: string, arg1: Object[]): void;
+    log(arg0: string, ...arg1: Object[]): void;
     setCause(arg0: Throwable): LoggingEventBuilder;
     setMessage(arg0: () => string): LoggingEventBuilder;
     setMessage(arg0: string): LoggingEventBuilder;

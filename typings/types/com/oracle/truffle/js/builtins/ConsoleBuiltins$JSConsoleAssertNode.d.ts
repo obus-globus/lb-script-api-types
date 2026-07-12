@@ -27,5 +27,5 @@ export abstract class ConsoleBuiltins$JSConsoleAssertNode extends ConsoleBuiltin
     constructor(context: JSContext, builtin: JSBuiltin)
     // private printNode: GlobalBuiltins$JSGlobalPrintNode;
     // private toBooleanNode: JSToBooleanNode;
-    assertImpl(data: Object[]): JSDynamicObject;
+    assertImpl(...data: Object[]): JSDynamicObject;
 }

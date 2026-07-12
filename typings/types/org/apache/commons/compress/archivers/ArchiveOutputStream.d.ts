@@ -15,7 +15,7 @@ export abstract class ArchiveOutputStream<E extends ArchiveEntry> extends Compre
     closeArchiveEntry(): void;
     count(arg0: number): void;
     createArchiveEntry(arg0: File, arg1: string): E;
-    createArchiveEntry(arg0: Path[], arg1: string, arg2: LinkOption[]): E;
+    createArchiveEntry(arg0: Path[], arg1: string, ...arg2: LinkOption[]): E;
     getBytesWritten(): number;
     getCount(): number;
     putArchiveEntry(arg0: E): void;

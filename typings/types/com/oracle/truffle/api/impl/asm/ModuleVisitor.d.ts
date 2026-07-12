@@ -6,11 +6,11 @@ export abstract class ModuleVisitor extends Object {
     // private mv: ModuleVisitor;
     getDelegate(): ModuleVisitor;
     visitEnd(): void;
-    visitExport(packaze: string, access: number, modules: string[]): void;
+    visitExport(packaze: string, access: number, ...modules: string[]): void;
     visitMainClass(mainClass: string): void;
-    visitOpen(packaze: string, access: number, modules: string[]): void;
+    visitOpen(packaze: string, access: number, ...modules: string[]): void;
     visitPackage(packaze: string): void;
-    visitProvide(service: string, providers: string[]): void;
+    visitProvide(service: string, ...providers: string[]): void;
     visitRequire(module: string, access: number, version: string): void;
     visitUse(service: string): void;
 }

@@ -68,7 +68,7 @@ export class GeneratorAdapter extends LocalVariablesSorter {
     iinc(local: number, amount: number): void;
     instanceOf(type: Type): void;
     invokeConstructor(type: Type, method: Method): void;
-    invokeDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, bootstrapMethodArguments: Object[]): void;
+    invokeDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, ...bootstrapMethodArguments: Object[]): void;
     // private invokeInsn(opcode: number, type: Type, method: Method, isInterface: boolean): void;
     invokeInterface(owner: Type, method: Method): void;
     invokeStatic(owner: Type, method: Method): void;

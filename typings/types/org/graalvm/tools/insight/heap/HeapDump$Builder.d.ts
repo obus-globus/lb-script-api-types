@@ -26,6 +26,6 @@ export class HeapDump$Builder extends Object implements Closeable {
     writeDefaultStackTraceSerialNumber(os: DataOutputStream): void;
     writeLoadClass(className: string, classSerial: number): number;
     writeStackFrame(thiz: HeapDump, clazz: HeapDump$ClassInstance, rootName: string, sourceFile: string, lineNumber: number): number;
-    writeStackTrace(threadSerialId: number, frames: number[]): number;
+    writeStackTrace(threadSerialId: number, ...frames: number[]): number;
     writeString(text: string): number;
 }

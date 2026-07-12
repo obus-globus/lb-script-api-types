@@ -121,7 +121,7 @@ export class Util extends Object {
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>): Typed<Object>;
     static readTypedOrThrow(paramtype: Type<Object>, paramdynamic: Dynamic<Object>, paramacceptPartial: boolean): Typed<Object>;
     static runNamed(paramrunnable: () => void, paramname: string): void;
-    static safeMoveFile(paramfromPath: Path[][], paramtoPath: Path[][], paramoptions: (Object | null)[]): boolean;
+    static safeMoveFile(paramfromPath: Path[][], paramtoPath: Path[][], ...paramoptions: (Object | null)[]): boolean;
     static safeReplaceFile(paramtargetPath: Path[][], paramnewPath: Path[][], parambackupPath: Path[][]): void;
     static safeReplaceOrMoveFile(paramtargetPath: Path[][], paramnewPath: Path[][], parambackupPath: Path[][], paramnoRollback: boolean): boolean;
     static sanitizeName(paramvalue: string, paramisAllowedChar: (param0: string) => boolean): string;

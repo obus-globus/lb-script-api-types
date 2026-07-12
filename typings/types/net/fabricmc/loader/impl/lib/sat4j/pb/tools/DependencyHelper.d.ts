@@ -30,19 +30,19 @@ export class DependencyHelper<T extends unknown, C extends unknown> extends Obje
     readonly solver: IPBSolver;
     // private xplain: XplainPB;
     // private addProperly(arg0: T, arg1: BigInteger): void;
-    atMost(arg0: number, arg1: T[]): ImplicationNamer<T, C>;
-    clause(arg0: C, arg1: T[]): void;
+    atMost(arg0: number, ...arg1: T[]): ImplicationNamer<T, C>;
+    clause(arg0: C, ...arg1: T[]): void;
     // private createObjectivetiveFunctionIfNeeded(arg0: number): void;
     getASolution(): T[];
     getIntValue(arg0: T): number;
     getIntValue(arg0: T, arg1: boolean): number;
     getSolver(): IPBSolver;
     hasASolution(): boolean;
-    implication(arg0: T[]): ImplicationRHS<T, C>;
+    implication(...arg0: T[]): ImplicationRHS<T, C>;
     reset(): void;
     setFalse(arg0: T, arg1: C): void;
     setNegator(arg0: INegator): void;
-    setObjectiveFunction(arg0: WeightedObject<T>[]): void;
+    setObjectiveFunction(...arg0: WeightedObject<T>[]): void;
     setTrue(arg0: T, arg1: C): void;
     why(): C[];
 }

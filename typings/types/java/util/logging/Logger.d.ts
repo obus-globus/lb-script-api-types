@@ -85,9 +85,9 @@ export class Logger extends Object {
     logp(arg0: Level, arg1: string, arg2: string, arg3: string, arg4: Object[]): void;
     logp(arg0: Level, arg1: string, arg2: string, arg3: string, arg4: Throwable): void;
     logp(arg0: Level, arg1: string, arg2: string, arg3: Throwable, arg4: () => string): void;
-    logrb(arg0: Level, arg1: ResourceBundle, arg2: string, arg3: Object[]): void;
+    logrb(arg0: Level, arg1: ResourceBundle, arg2: string, ...arg3: Object[]): void;
     logrb(arg0: Level, arg1: ResourceBundle, arg2: string, arg3: Throwable): void;
-    logrb(arg0: Level, arg1: string, arg2: string, arg3: ResourceBundle, arg4: string, arg5: Object[]): void;
+    logrb(arg0: Level, arg1: string, arg2: string, arg3: ResourceBundle, arg4: string, ...arg5: Object[]): void;
     logrb(arg0: Level, arg1: string, arg2: string, arg3: ResourceBundle, arg4: string, arg5: Throwable): void;
     logrb(arg0: Level, arg1: string, arg2: string, arg3: string, arg4: string): void;
     logrb(arg0: Level, arg1: string, arg2: string, arg3: string, arg4: string, arg5: Object): void;

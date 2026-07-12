@@ -14,6 +14,6 @@ export interface KCallable<R extends unknown> extends Object, KAnnotatedElement{
     readonly returnType: KType;
     readonly typeParameters: KTypeParameter[];
     readonly visibility: KVisibility | null;
-    call(args: (Object | null)[]): R;
+    call(...args: (Object | null)[]): R;
     callBy(args: Map<KParameter, Object | null>): R;
 }

@@ -9,12 +9,12 @@ import type { Language } from '../../../org/graalvm/polyglot/Language.d.ts'
 import type { Source } from '../../../org/graalvm/polyglot/Source.d.ts'
 import type { AbstractPolyglotImpl$AbstractEngineDispatch } from '../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$AbstractEngineDispatch.d.ts'
 export class Engine extends Object implements AutoCloseable {
-    static copyResources(paramtargetFolder: Path[][], paramcomponents: (Object | null)[]): boolean;
+    static copyResources(paramtargetFolder: Path[][], ...paramcomponents: (Object | null)[]): boolean;
     static create(): Engine;
-    static create(parampermittedLanguages: (Object | null)[]): Engine;
+    static create(...parampermittedLanguages: (Object | null)[]): Engine;
     static findHome(): Path[][];
     static newBuilder(): Engine$Builder;
-    static newBuilder(parampermittedLanguages: (Object | null)[]): Engine$Builder;
+    static newBuilder(...parampermittedLanguages: (Object | null)[]): Engine$Builder;
     constructor(dispatch: AbstractPolyglotImpl$AbstractEngineDispatch, receiver: Object)
     // private creatorEngine: Engine;
     // private currentAPI: Engine;

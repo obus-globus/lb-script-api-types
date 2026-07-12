@@ -21,9 +21,9 @@ export class Objects extends Object {
     static isEmpty(paramarg0: Object): boolean;
     static isEmpty(paramarg0: (Object | null)[]): boolean;
     static nullSafeClassName(paramarg0: Object): string;
-    static nullSafeClose(paramarg0: (Object | null)[]): void;
+    static nullSafeClose(...paramarg0: (Object | null)[]): void;
     static nullSafeEquals(paramarg0: Object, paramarg1: Object): boolean;
-    static nullSafeFlush(paramarg0: (Object | null)[]): void;
+    static nullSafeFlush(...paramarg0: (Object | null)[]): void;
     static nullSafeHashCode(paramarg0: (Object | null)[]): number;
     static nullSafeHashCode(paramarg0: number[]): number;
     static nullSafeHashCode(paramarg0: string[]): number;
@@ -31,7 +31,7 @@ export class Objects extends Object {
     static nullSafeHashCode(paramarg0: number[]): number;
     static nullSafeHashCode(paramarg0: number[]): number;
     static nullSafeHashCode(paramarg0: Object): number;
-    static nullSafeHashCode(paramarg0: (Object | null)[]): number;
+    static nullSafeHashCode(...paramarg0: (Object | null)[]): number;
     static nullSafeHashCode(paramarg0: number[]): number;
     static nullSafeHashCode(paramarg0: number[]): number;
     static nullSafeToString(paramarg0: (Object | null)[]): string;

@@ -11,6 +11,6 @@ export abstract class ReflectionLibraryGen$CachedDispatch extends ReflectionLibr
     // private next: ReflectionLibraryGen$CachedDispatch;
     accepts(receiver_: Object): boolean;
     getLimit(): number;
-    send(receiver_: Object, message: Message, args: Object[]): Object;
+    send(receiver_: Object, message: Message, ...args: Object[]): Object;
     // private specialize(receiver_: Object): void;
 }

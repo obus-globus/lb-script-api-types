@@ -6,13 +6,13 @@ import type { ProgressiveFuture } from '../../../io/netty/util/concurrent/Progre
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface ChannelProgressiveFuture extends ChannelFuture, ProgressiveFuture<void>, Object{
     addListener(arg0: GenericFutureListener<Future<void>>): ChannelProgressiveFuture;
-    addListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelProgressiveFuture;
+    addListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelProgressiveFuture;
     await(): ChannelProgressiveFuture;
     awaitUninterruptibly(): ChannelProgressiveFuture;
     channel(): Channel;
     isVoid(): boolean;
     removeListener(arg0: GenericFutureListener<Future<void>>): ChannelProgressiveFuture;
-    removeListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelProgressiveFuture;
+    removeListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelProgressiveFuture;
     sync(): ChannelProgressiveFuture;
     syncUninterruptibly(): ChannelProgressiveFuture;
 }

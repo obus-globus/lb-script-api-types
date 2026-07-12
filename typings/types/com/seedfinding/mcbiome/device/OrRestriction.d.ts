@@ -6,7 +6,7 @@ import type { MCVersion } from '../../../../com/seedfinding/mccore/version/MCVer
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OrRestriction extends Restriction {
     static of(paramarg0: Object | null): (param0: MCVersion, param1: number, param2: number) => OrRestriction;
-    constructor(arg0: number, arg1: number, arg2: Restriction[])
+    constructor(arg0: number, arg1: number, ...arg2: Restriction[])
     // private restrictions: Restriction[];
     getBitPoints(): number[];
     testSeed(arg0: number, arg1: number): boolean;

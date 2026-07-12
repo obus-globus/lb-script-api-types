@@ -3,8 +3,7 @@ import type { GpuFence } from '../../../../com/mojang/blaze3d/buffers/GpuFence.d
 import type { AutoCloseable } from '../../../../java/lang/AutoCloseable.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { MappableRingBufferAddition } from '../../../../net/ccbluex/liquidbounce/additions/MappableRingBufferAddition.d.ts'
-export class MappableRingBuffer extends Object implements AutoCloseable, MappableRingBufferAddition {
+export class MappableRingBuffer extends Object implements AutoCloseable {
     constructor(label: () => string, usage: number, size: number)
     // private buffers: GpuBuffer[];
     // private current: number;
@@ -12,8 +11,6 @@ export class MappableRingBuffer extends Object implements AutoCloseable, Mappabl
     // private size: number;
     close(): void;
     currentBuffer(): GpuBuffer;
-    liquidBounce$awaitAndRotate(): void;
-    liquidBounce$isSafeForClose(): boolean;
     rotate(): void;
     size(): number;
 }

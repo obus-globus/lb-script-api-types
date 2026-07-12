@@ -2,7 +2,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { BinaryVersion$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/BinaryVersion$Companion.d.ts'
 export abstract class BinaryVersion extends Object {
     static Companion: BinaryVersion$Companion;
-    constructor(arg0: number[])
+    constructor(...arg0: number[])
     readonly major: number;
     readonly minor: number;
     // private numbers: number[];

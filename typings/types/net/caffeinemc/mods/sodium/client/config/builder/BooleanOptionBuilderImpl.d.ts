@@ -20,12 +20,12 @@ export class BooleanOptionBuilderImpl extends StatefulOptionBuilderImpl<BooleanO
     setBinding(arg0: (param0: boolean) => void, arg1: () => boolean): BooleanOptionBuilder;
     setBinding(arg0: OptionBinding<boolean>): BooleanOptionBuilder;
     setControlHiddenWhenDisabled(arg0: boolean): BooleanOptionBuilder;
-    setDefaultProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): BooleanOptionBuilder;
+    setDefaultProvider(arg0: (param0: ConfigState) => boolean, ...arg1: Identifier[]): BooleanOptionBuilder;
     setDefaultValue(arg0: boolean): BooleanOptionBuilder;
     setEnabled(arg0: boolean): BooleanOptionBuilder;
-    setEnabledProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): BooleanOptionBuilder;
-    setFlags(arg0: OptionFlag[]): BooleanOptionBuilder;
-    setFlags(arg0: Identifier[]): BooleanOptionBuilder;
+    setEnabledProvider(arg0: (param0: ConfigState) => boolean, ...arg1: Identifier[]): BooleanOptionBuilder;
+    setFlags(...arg0: OptionFlag[]): BooleanOptionBuilder;
+    setFlags(...arg0: Identifier[]): BooleanOptionBuilder;
     setImpact(arg0: OptionImpact): BooleanOptionBuilder;
     setName(arg0: Component): BooleanOptionBuilder;
     setStorageHandler(arg0: () => void): BooleanOptionBuilder;

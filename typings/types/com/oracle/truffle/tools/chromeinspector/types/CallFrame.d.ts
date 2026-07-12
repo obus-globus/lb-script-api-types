@@ -8,7 +8,7 @@ import type { Script } from '../../../../../../com/oracle/truffle/tools/chromein
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { JSONObject } from '../../../../../../org/graalvm/shadowed/org/json/JSONObject.d.ts'
 export class CallFrame extends Object {
-    constructor(frame: DebugStackFrame, depth: number, script: Script, sourceSection: SourceSection, anchor: SuspendAnchor, functionSourceSection: SourceSection, thisObject: RemoteObject, returnObject: RemoteObject, scopes: Scope[])
+    constructor(frame: DebugStackFrame, depth: number, script: Script, sourceSection: SourceSection, anchor: SuspendAnchor, functionSourceSection: SourceSection, thisObject: RemoteObject, returnObject: RemoteObject, ...scopes: Scope[])
     // private depth: number;
     readonly frame: DebugStackFrame;
     // private functionLocation: Location;

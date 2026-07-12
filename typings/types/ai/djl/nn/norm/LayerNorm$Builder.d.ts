@@ -6,7 +6,7 @@ export class LayerNorm$Builder extends Object {
     // private center: boolean;
     // private epsilon: number;
     // private scale: boolean;
-    axis(arg0: number[]): LayerNorm$Builder;
+    axis(...arg0: number[]): LayerNorm$Builder;
     build(): LayerNorm;
     optCenter(arg0: boolean): LayerNorm$Builder;
     optEpsilon(arg0: number): LayerNorm$Builder;

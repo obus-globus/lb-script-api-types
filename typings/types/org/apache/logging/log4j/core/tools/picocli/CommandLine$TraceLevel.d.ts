@@ -13,6 +13,6 @@ export class CommandLine$TraceLevel extends Enum<CommandLine$TraceLevel> {
     private constructor()
     isEnabled(other: CommandLine$TraceLevel): boolean;
     // private prefix(msg: string): string;
-    // private print(tracer: CommandLine$Tracer, msg: string, params: Object[]): void;
+    // private print(tracer: CommandLine$Tracer, msg: string, ...params: Object[]): void;
     name(): "OFF" | "WARN" | "INFO" | "DEBUG";
 }

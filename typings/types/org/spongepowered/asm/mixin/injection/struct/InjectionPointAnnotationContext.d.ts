@@ -8,7 +8,7 @@ export class InjectionPointAnnotationContext extends SelectorAnnotationContext i
     constructor(arg0: IInjectionPointContext, arg1: AnnotationNode, arg2: string)
     constructor(arg0: IInjectionPointContext, arg1: IAnnotationHandle, arg2: string)
     // private parentContext: IInjectionPointContext;
-    addMessage(arg0: string, arg1: Object[]): void;
+    addMessage(arg0: string, ...arg1: Object[]): void;
     getAnnotation(): IAnnotationHandle;
     getAnnotationNode(): AnnotationNode;
     getMethod(): MethodNode;

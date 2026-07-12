@@ -16,7 +16,7 @@ import type { Runnable } from '../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class ViaManagerImpl extends Object implements ViaManager {
     static builder(): ViaManagerImpl$ViaManagerBuilder;
-    static initAndLoad(paramarg0: ViaPlatform<Object>, paramarg1: ViaInjector, paramarg2: ViaCommandHandler, paramarg3: ViaPlatformLoader, paramarg4: (Object | null)[]): ViaManager;
+    static initAndLoad(paramarg0: ViaPlatform<Object>, paramarg1: ViaInjector, paramarg2: ViaCommandHandler, paramarg3: ViaPlatformLoader, ...paramarg4: (Object | null)[]): ViaManager;
     constructor(arg0: ViaPlatform<Object>, arg1: ViaInjector, arg2: ViaCommandHandler, arg3: ViaPlatformLoader)
     readonly commandHandler: ViaCommandHandler;
     readonly configurationProvider: ConfigurationProvider;

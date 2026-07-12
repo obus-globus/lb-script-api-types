@@ -22,7 +22,7 @@ export class IntSpliterators extends Object {
     static asSpliteratorFromSorted(paramarg0: IntIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: number, param1: number) => number): IntSpliterator;
     static asSpliteratorFromSortedUnknownSize(paramarg0: IntIterator, paramarg1: number, paramarg2: (param0: number, param1: number) => number): IntSpliterator;
     static asSpliteratorUnknownSize(paramarg0: IntIterator, paramarg1: number): IntSpliterator;
-    static concat(paramarg0: (Object | null)[]): IntSpliterator;
+    static concat(...paramarg0: (Object | null)[]): IntSpliterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): IntSpliterator;
     static fromTo(paramarg0: number, paramarg1: number): IntSpliterator;
     static onEachMatching(paramarg0: IntSpliterator, paramarg1: (param0: number) => boolean, paramarg2: (param0: number) => void): void;

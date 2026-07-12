@@ -6,9 +6,9 @@ export class BOMInputStream extends ProxyInputStream {
     static builder(): BOMInputStream$Builder;
     static nullInputStream(): InputStream;
     constructor(arg0: InputStream)
-    constructor(arg0: InputStream, arg1: ByteOrderMark[])
+    constructor(arg0: InputStream, ...arg1: ByteOrderMark[])
     constructor(arg0: InputStream, arg1: boolean)
-    constructor(arg0: InputStream, arg1: boolean, arg2: ByteOrderMark[])
+    constructor(arg0: InputStream, arg1: boolean, ...arg2: ByteOrderMark[])
     constructor(arg0: BOMInputStream$Builder, arg1: any)
     // private bomList: ByteOrderMark[];
     // private byteOrderMark: ByteOrderMark;

@@ -137,7 +137,7 @@ export class NodeFactoryProxyGen extends NodeFactory {
     createDual(arg0: JSContext, arg1: JavaScriptNode, arg2: JavaScriptNode): JavaScriptNode;
     createEmpty(): JavaScriptNode;
     createEnumerate(arg0: JSContext, arg1: JavaScriptNode, arg2: boolean): JavaScriptNode;
-    createExprBlock(arg0: JavaScriptNode[]): JavaScriptNode;
+    createExprBlock(...arg0: JavaScriptNode[]): JavaScriptNode;
     createFor(arg0: LoopNode): StatementNode;
     createForOfRepeatingNode(arg0: JavaScriptNode, arg1: JavaScriptNode, arg2: JSWriteFrameSlotNode): RepeatingNode;
     createForRepeatingNode(arg0: JavaScriptNode, arg1: JavaScriptNode, arg2: JavaScriptNode, arg3: FrameDescriptor, arg4: JavaScriptNode, arg5: JavaScriptNode, arg6: JSFrameSlot): RepeatingNode;
@@ -251,7 +251,7 @@ export class NodeFactoryProxyGen extends NodeFactory {
     createTypeofIdentical(arg0: JavaScriptNode, arg1: TruffleString): JavaScriptNode;
     createUnary(arg0: NodeFactory$UnaryOperation, arg1: JavaScriptNode): JavaScriptNode;
     createVirtualBlockScope(arg0: JavaScriptNode, arg1: number, arg2: number): JavaScriptNode;
-    createVoidBlock(arg0: JavaScriptNode[]): JavaScriptNode;
+    createVoidBlock(...arg0: JavaScriptNode[]): JavaScriptNode;
     createWhileDo(arg0: LoopNode): JavaScriptNode;
     createWhileDoRepeatingNode(arg0: JavaScriptNode, arg1: JavaScriptNode): RepeatingNode;
     createWith(arg0: JavaScriptNode, arg1: JavaScriptNode): JavaScriptNode;

@@ -2,7 +2,7 @@ import type { Stream$ElementType } from '../../../../../../com/llamalad7/mixinex
 import type { RuntimeException } from '../../../../../../java/lang/RuntimeException.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class UnexpectedElementException extends RuntimeException {
-    constructor(arg0: Object, arg1: number, arg2: Stream$ElementType<Object>[])
+    constructor(arg0: Object, arg1: number, ...arg2: Stream$ElementType<Object>[])
     // private expected: Stream$ElementType<Object>[];
     readonly position: number;
     // private unexpected: Object;

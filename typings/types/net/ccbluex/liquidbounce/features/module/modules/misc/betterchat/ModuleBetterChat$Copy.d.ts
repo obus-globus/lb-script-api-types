@@ -7,5 +7,5 @@ export class ModuleBetterChat$Copy extends ToggleableValueGroup {
     // private notify: boolean;
     // private /*not mapped: */ getNotify(): boolean;
     copyMessage(parts: GuiMessage$Line[], button: number): void;
-    // private isAnyPressed(keys: number[]): boolean;
+    // private isAnyPressed(...keys: number[]): boolean;
 }

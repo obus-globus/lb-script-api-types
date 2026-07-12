@@ -13,7 +13,7 @@ import type { DataComponentType } from '../../../../../../net/minecraft/core/com
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { Property } from '../../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class ItemModelUtils extends Object {
-    static composite(parammodels: (Object | null)[]): ItemModel$Unbaked;
+    static composite(...parammodels: (Object | null)[]): ItemModel$Unbaked;
     static conditional(paramtransformation: Transformation, paramproperty: ConditionalItemModelProperty, paramonTrue: ItemModel$Unbaked, paramonFalse: ItemModel$Unbaked): ItemModel$Unbaked;
     static conditional(paramtransformation: Optional<Transformation>, paramproperty: ConditionalItemModelProperty, paramonTrue: ItemModel$Unbaked, paramonFalse: ItemModel$Unbaked): ItemModel$Unbaked;
     static conditional(paramproperty: ConditionalItemModelProperty, paramonTrue: ItemModel$Unbaked, paramonFalse: ItemModel$Unbaked): ItemModel$Unbaked;
@@ -26,10 +26,10 @@ export class ItemModelUtils extends Object {
     static plainModel(paramid: Identifier): ItemModel$Unbaked;
     static plainModel(paramid: Identifier, paramtransformation: Transformation): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramscale: number, paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;
-    static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramscale: number, paramfallback: ItemModel$Unbaked, paramentries: (Object | null)[]): ItemModel$Unbaked;
+    static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramscale: number, paramfallback: ItemModel$Unbaked, ...paramentries: (Object | null)[]): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramfallback: ItemModel$Unbaked, paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;
-    static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramfallback: ItemModel$Unbaked, paramentries: (Object | null)[]): ItemModel$Unbaked;
+    static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramfallback: ItemModel$Unbaked, ...paramentries: (Object | null)[]): ItemModel$Unbaked;
     static select(paramtransformation: Transformation, paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
     static select(paramproperty: SelectItemModelProperty<Object>, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
     static select(paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
@@ -40,7 +40,7 @@ export class ItemModelUtils extends Object {
     static specialModel(parambase: Identifier, paramtransformation: Transformation, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, paramtransformation: Optional<Transformation>, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
-    static tintedModel(paramid: Identifier, paramtints: (Object | null)[]): ItemModel$Unbaked;
+    static tintedModel(paramid: Identifier, ...paramtints: (Object | null)[]): ItemModel$Unbaked;
     static when(paramvalue: Object | null, parammodel: ItemModel$Unbaked): SelectItemModel$SwitchCase<Object>;
     static when(paramvalues: (Object | null)[], parammodel: ItemModel$Unbaked): SelectItemModel$SwitchCase<Object>;
     constructor()

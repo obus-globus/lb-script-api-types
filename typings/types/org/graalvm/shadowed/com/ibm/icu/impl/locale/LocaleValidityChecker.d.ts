@@ -4,7 +4,7 @@ import type { ValidIdentifiers$Datatype } from '../../../../../../../../org/graa
 import type { LocaleValidityChecker$Where } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/locale/LocaleValidityChecker$Where.d.ts'
 import type { ULocale } from '../../../../../../../../org/graalvm/shadowed/com/ibm/icu/util/ULocale.d.ts'
 export class LocaleValidityChecker extends Object {
-    constructor(datasubtypes: ValidIdentifiers$Datasubtype[])
+    constructor(...datasubtypes: ValidIdentifiers$Datasubtype[])
     constructor(datasubtypes: ValidIdentifiers$Datasubtype[])
     // private allowsDeprecated: boolean;
     readonly datasubtypes: ValidIdentifiers$Datasubtype[];

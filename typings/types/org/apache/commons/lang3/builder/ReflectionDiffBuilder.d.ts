@@ -19,5 +19,5 @@ export class ReflectionDiffBuilder<T extends unknown> extends Object implements 
     // private getLeft(): T;
     // private getRight(): T;
     // private readField(arg0: Field, arg1: Object): Object;
-    setExcludeFieldNames(arg0: string[]): ReflectionDiffBuilder<T>;
+    setExcludeFieldNames(...arg0: string[]): ReflectionDiffBuilder<T>;
 }

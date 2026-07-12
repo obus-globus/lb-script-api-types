@@ -5,10 +5,10 @@ export class UnsignedBytes extends Object {
     static MAX_VALUE: number;
     static checkedCast(paramvalue: number): number;
     static compare(parama: number, paramb: number): number;
-    static join(paramseparator: string, paramarray: number[]): string;
+    static join(paramseparator: string, ...paramarray: number[]): string;
     static lexicographicalComparator(): (param0: Object) => boolean;
-    static max(paramarray: number[]): number;
-    static min(paramarray: number[]): number;
+    static max(...paramarray: number[]): number;
+    static min(...paramarray: number[]): number;
     static parseUnsignedByte(paramstring: string): number;
     static parseUnsignedByte(paramstring: string, paramradix: number): number;
     static saturatedCast(paramvalue: number): number;

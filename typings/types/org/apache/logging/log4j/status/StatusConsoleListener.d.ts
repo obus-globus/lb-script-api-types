@@ -15,7 +15,7 @@ export class StatusConsoleListener extends Object implements StatusListener {
     close(): void;
     getStatusLevel(): Level;
     log(data: StatusData): void;
-    setFilters(filters: string[]): void;
+    setFilters(...filters: string[]): void;
     setLevel(level: Level): void;
     setStream(stream: PrintStream): void;
 }

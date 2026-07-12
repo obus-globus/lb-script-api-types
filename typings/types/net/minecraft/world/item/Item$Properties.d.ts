@@ -73,7 +73,7 @@ export class Item$Properties extends Object implements FabricItem$Properties {
     rarity(rarity: Rarity): Item$Properties;
     repairable(repairItems: TagKey<Item>): Item$Properties;
     repairable(repairItem: Item): Item$Properties;
-    requiredFeatures(flags: FeatureFlag[]): Item$Properties;
+    requiredFeatures(...flags: FeatureFlag[]): Item$Properties;
     requiredFeatures(flags: FeatureFlagSet): Item$Properties;
     setId(id: ResourceKey<Item>): Item$Properties;
     shovel(material: ToolMaterial, attackDamageBaseline: number, attackSpeedBaseline: number): Item$Properties;

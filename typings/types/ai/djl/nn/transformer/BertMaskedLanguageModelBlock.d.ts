@@ -22,5 +22,5 @@ export class BertMaskedLanguageModelBlock extends AbstractBlock {
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
-    initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
+    initializeChildBlocks(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
 }

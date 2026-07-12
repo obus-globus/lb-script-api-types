@@ -42,6 +42,6 @@ export abstract class AbstractStreamBuilder<T extends unknown, B extends Abstrac
     setCharset(arg0: Charset): B;
     setCharset(arg0: string): B;
     setCharsetDefault(arg0: Charset): B;
-    setOpenOptions(arg0: OpenOption[]): B;
+    setOpenOptions(...arg0: OpenOption[]): B;
     // private throwIae(arg0: number, arg1: number): number;
 }

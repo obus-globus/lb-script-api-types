@@ -26,12 +26,12 @@ export class SymbolTable extends Object {
     // private typeCount: number;
     // private typeTable: SymbolTable$Entry[];
     // private add(entry: SymbolTable$Entry): void;
-    addBootstrapMethod(bootstrapMethodHandle: Handle, bootstrapMethodArguments: Object[]): Symbol;
+    addBootstrapMethod(bootstrapMethodHandle: Handle, ...bootstrapMethodArguments: Object[]): Symbol;
     // private addBootstrapMethod(offset: number, length: number, hashCode: number): Symbol;
     addConstant(value: Object): Symbol;
     addConstantClass(value: string): Symbol;
     addConstantDouble(value: number): Symbol;
-    addConstantDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, bootstrapMethodArguments: Object[]): Symbol;
+    addConstantDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, ...bootstrapMethodArguments: Object[]): Symbol;
     // private addConstantDynamicOrInvokeDynamicReference(tag: number, index: number, name: string, descriptor: string, bootstrapMethodIndex: number): void;
     // private addConstantDynamicOrInvokeDynamicReference(tag: number, name: string, descriptor: string, bootstrapMethodIndex: number): Symbol;
     addConstantFieldref(owner: string, name: string, descriptor: string): Symbol;
@@ -39,7 +39,7 @@ export class SymbolTable extends Object {
     addConstantInteger(value: number): Symbol;
     // private addConstantIntegerOrFloat(tag: number, value: number): Symbol;
     // private addConstantIntegerOrFloat(index: number, tag: number, value: number): void;
-    addConstantInvokeDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, bootstrapMethodArguments: Object[]): Symbol;
+    addConstantInvokeDynamic(name: string, descriptor: string, bootstrapMethodHandle: Handle, ...bootstrapMethodArguments: Object[]): Symbol;
     addConstantLong(value: number): Symbol;
     // private addConstantLongOrDouble(index: number, tag: number, value: number): void;
     // private addConstantLongOrDouble(tag: number, value: number): Symbol;

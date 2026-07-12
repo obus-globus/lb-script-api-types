@@ -47,7 +47,7 @@ export abstract class InjectionInfo extends SpecialMethodInfo implements ISliceC
     // private targetNodes: Map<AbstractInsnNode[], InjectionNodes$InjectionNode[]>;
     // private targets: TargetSelectors$SelectedMethod[];
     addCallbackInvocation(arg0: MethodNode): void;
-    addMessage(arg0: string, arg1: Object[]): void;
+    addMessage(arg0: string, ...arg1: Object[]): void;
     addMethod(arg0: number, arg1: string, arg2: string): MethodNode;
     getDescription(): string;
     getInjectedCallbackCount(): number;

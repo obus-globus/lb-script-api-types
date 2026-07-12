@@ -119,7 +119,7 @@ export class RuleBasedCollator extends Collator {
     setMaxVariable(group: number): RuleBasedCollator;
     setNumericCollation(flag: boolean): void;
     setNumericCollationDefault(): void;
-    setReorderCodes(order: number[]): void;
+    setReorderCodes(...order: number[]): void;
     setStrength(newStrength: number): void;
     setStrengthDefault(): void;
     setUpperCaseFirst(upperfirst: boolean): void;

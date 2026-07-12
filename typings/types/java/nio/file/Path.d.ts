@@ -23,13 +23,13 @@ export interface Path extends Watchable, Object, Comparable<Path[]>{
     isAbsolute(): boolean;
     iterator(): Iterator<Path[]>;
     normalize(): Path[];
-    register(arg0: WatchService, arg1: WatchEvent$Kind<Object>[]): WatchKey;
-    register(arg0: WatchService, arg1: WatchEvent$Kind<Object>[], arg2: WatchEvent$Modifier[]): WatchKey;
+    register(arg0: WatchService, ...arg1: WatchEvent$Kind<Object>[]): WatchKey;
+    register(arg0: WatchService, arg1: WatchEvent$Kind<Object>[], ...arg2: WatchEvent$Modifier[]): WatchKey;
     relativize(arg0: Path[]): Path[];
     resolve(arg0: Path[]): Path[];
-    resolve(arg0: Path[], arg1: Path[][]): Path[];
+    resolve(arg0: Path[], ...arg1: Path[][]): Path[];
     resolve(arg0: string): Path[];
-    resolve(arg0: string, arg1: string[]): Path[];
+    resolve(arg0: string, ...arg1: string[]): Path[];
     resolveSibling(arg0: Path[]): Path[];
     resolveSibling(arg0: string): Path[];
     startsWith(arg0: Path[]): boolean;
@@ -37,6 +37,6 @@ export interface Path extends Watchable, Object, Comparable<Path[]>{
     subpath(arg0: number, arg1: number): Path[];
     toAbsolutePath(): Path[];
     toFile(): File;
-    toRealPath(arg0: LinkOption[]): Path[];
+    toRealPath(...arg0: LinkOption[]): Path[];
     toUri(): URI;
 }

@@ -9,7 +9,7 @@ export class ImmutableSortedSet$Builder<E extends unknown> extends ImmutableSet$
     // private elements: E[];
     // private n: number;
     add(element: E): ImmutableSortedSet$Builder<E>;
-    add(elements: E[]): ImmutableSortedSet$Builder<E>;
+    add(...elements: E[]): ImmutableSortedSet$Builder<E>;
     addAll(elements: E[]): ImmutableSortedSet$Builder<E>;
     addAll(elements: Iterator<E>): ImmutableSortedSet$Builder<E>;
     build(): E[];

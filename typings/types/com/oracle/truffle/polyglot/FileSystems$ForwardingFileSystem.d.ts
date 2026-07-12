@@ -15,11 +15,11 @@ import type { FileSystem } from '../../../../org/graalvm/polyglot/io/FileSystem.
 export class FileSystems$ForwardingFileSystem extends Object implements FileSystems$PolyglotFileSystem {
     constructor(fileSystem: FileSystem)
     // private delegate: FileSystem;
-    checkAccess(path: Path[], modes: AccessMode[], linkOptions: LinkOption[]): void;
-    copy(source: Path[], target: Path[], options: CopyOption[]): void;
-    createDirectory(dir: Path[], attrs: FileAttribute<Object>[]): void;
+    checkAccess(path: Path[], modes: AccessMode[], ...linkOptions: LinkOption[]): void;
+    copy(source: Path[], target: Path[], ...options: CopyOption[]): void;
+    createDirectory(dir: Path[], ...attrs: FileAttribute<Object>[]): void;
     createLink(link: Path[], existing: Path[]): void;
-    createSymbolicLink(link: Path[], target: Path[], attrs: FileAttribute<Object>[]): void;
+    createSymbolicLink(link: Path[], target: Path[], ...attrs: FileAttribute<Object>[]): void;
     delete(path: Path[]): void;
     getEncoding(path: Path[]): Charset;
     getFileStoreBlockSize(path: Path[]): number;
@@ -34,16 +34,16 @@ export class FileSystems$ForwardingFileSystem extends Object implements FileSyst
     isFileStoreReadOnly(path: Path[]): boolean;
     isHost(): boolean;
     isInternal(polyglot: AbstractPolyglotImpl): boolean;
-    isSameFile(path1: Path[], path2: Path[], options: LinkOption[]): boolean;
-    move(source: Path[], target: Path[], options: CopyOption[]): void;
-    newByteChannel(path: Path[], options: OpenOption[], attrs: FileAttribute<Object>[]): SeekableByteChannel;
+    isSameFile(path1: Path[], path2: Path[], ...options: LinkOption[]): boolean;
+    move(source: Path[], target: Path[], ...options: CopyOption[]): void;
+    newByteChannel(path: Path[], options: OpenOption[], ...attrs: FileAttribute<Object>[]): SeekableByteChannel;
     newDirectoryStream(dir: Path[], filter: (param0: Path[]) => boolean): Path[][];
     parsePath(path: URI): Path[];
     parsePath(path: string): Path[];
-    readAttributes(path: Path[], attributes: string, options: LinkOption[]): { [key: string]: Object };
+    readAttributes(path: Path[], attributes: string, ...options: LinkOption[]): { [key: string]: Object };
     readSymbolicLink(link: Path[]): Path[];
-    setAttribute(path: Path[], attribute: string, value: Object, options: LinkOption[]): void;
+    setAttribute(path: Path[], attribute: string, value: Object, ...options: LinkOption[]): void;
     setCurrentWorkingDirectory(currentWorkingDirectory: Path[]): void;
     toAbsolutePath(path: Path[]): Path[];
-    toRealPath(path: Path[], linkOptions: LinkOption[]): Path[];
+    toRealPath(path: Path[], ...linkOptions: LinkOption[]): Path[];
 }

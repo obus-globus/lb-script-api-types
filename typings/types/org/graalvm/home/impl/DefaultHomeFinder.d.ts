@@ -17,5 +17,5 @@ export class DefaultHomeFinder extends HomeFinder {
     getVersion(): string;
     // private isVerbose(): boolean;
     // private searchHomeFolder(): Path[];
-    // private verbose(args: Object[]): void;
+    // private verbose(...args: Object[]): void;
 }

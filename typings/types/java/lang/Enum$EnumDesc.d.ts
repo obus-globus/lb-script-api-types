@@ -8,9 +8,9 @@ import type { Enum } from '../../java/lang/Enum.d.ts'
 export class Enum$EnumDesc<E extends Enum<E>> extends DynamicConstantDesc<E> {
     static of(paramarg0: ClassDesc, paramarg1: string): Enum$EnumDesc<any>;
     static of(paramarg0: DirectMethodHandleDesc): DynamicConstantDesc<Object>;
-    static of(paramarg0: DirectMethodHandleDesc, paramarg1: (Object | null)[]): DynamicConstantDesc<Object>;
+    static of(paramarg0: DirectMethodHandleDesc, ...paramarg1: (Object | null)[]): DynamicConstantDesc<Object>;
     static ofCanonical(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: (Object | null)[]): ConstantDesc;
-    static ofNamed(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: (Object | null)[]): DynamicConstantDesc<Object>;
+    static ofNamed(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, ...paramarg3: (Object | null)[]): DynamicConstantDesc<Object>;
     private constructor(arg0: ClassDesc, arg1: string)
     resolveConstantDesc(arg0: MethodHandles$Lookup): E;
     toString(): string;

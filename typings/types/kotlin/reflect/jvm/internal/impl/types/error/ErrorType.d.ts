@@ -8,7 +8,7 @@ import type { TypeProjection } from '../../../../../../../kotlin/reflect/jvm/int
 import type { KotlinTypeRefiner } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner.d.ts'
 import type { ErrorTypeKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/error/ErrorTypeKind.d.ts'
 export class ErrorType extends SimpleType {
-    constructor(arg0: TypeConstructor, arg1: MemberScope, arg2: ErrorTypeKind, arg3: TypeProjection[], arg4: boolean, arg5: string[])
+    constructor(arg0: TypeConstructor, arg1: MemberScope, arg2: ErrorTypeKind, arg3: TypeProjection[], arg4: boolean, ...arg5: string[])
     constructor(arg0: TypeConstructor, arg1: MemberScope, arg2: ErrorTypeKind, arg3: (Object | null)[], arg4: boolean, arg5: string[], arg6: number, arg7: DefaultConstructorMarker)
     readonly arguments: TypeProjection[];
     // inaccessible (TS-reserved member name): readonly constructor: TypeConstructor;

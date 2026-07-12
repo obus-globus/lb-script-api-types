@@ -37,9 +37,9 @@ export class Protocol1_21_11To26_1 extends AbstractProtocol<ClientboundPacket1_2
     readonly tagRewriter: TagRewriter<ClientboundPacket1_21_11>;
     // private addBabyAssetId(arg0: Map$Entry<string, Tag>[]): void;
     // private addEntityNamePrefix(arg0: string, arg1: Map$Entry<string, Tag>[]): void;
-    // private addJukeboxPlayables(arg0: string[]): void;
+    // private addJukeboxPlayables(...arg0: string[]): void;
     // private addRequiredRegistryEntries(): void;
-    // private addTrimMaterials(arg0: string[]): void;
+    // private addTrimMaterials(...arg0: string[]): void;
     createPacketTypesProvider(): PacketTypesProvider<ClientboundPacket1_21_11, ClientboundPacket26_1, ServerboundPacket1_21_9, ServerboundPacket26_1>;
     getBlockRewriter(): BlockRewriter<ClientboundPacket1_21_11>;
     getComponentRewriter(): NBTComponentRewriter<ClientboundPacket1_21_11>;

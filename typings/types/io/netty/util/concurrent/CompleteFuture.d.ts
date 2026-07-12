@@ -7,7 +7,7 @@ export abstract class CompleteFuture<V extends unknown> extends AbstractFuture<V
     constructor(arg0: (Object | null)[])
     // private executor: (Object | null)[];
     addListener(arg0: GenericFutureListener<Future<V>>): Future<V>;
-    addListeners(arg0: GenericFutureListener<Future<V>>[]): Future<V>;
+    addListeners(...arg0: GenericFutureListener<Future<V>>[]): Future<V>;
     await(): Future<V>;
     await(arg0: number): boolean;
     await(arg0: number, arg1: TimeUnit): boolean;
@@ -20,7 +20,7 @@ export abstract class CompleteFuture<V extends unknown> extends AbstractFuture<V
     isCancelled(): boolean;
     isDone(): boolean;
     removeListener(arg0: GenericFutureListener<Future<V>>): Future<V>;
-    removeListeners(arg0: GenericFutureListener<Future<V>>[]): Future<V>;
+    removeListeners(...arg0: GenericFutureListener<Future<V>>[]): Future<V>;
     sync(): Future<V>;
     syncUninterruptibly(): Future<V>;
 }

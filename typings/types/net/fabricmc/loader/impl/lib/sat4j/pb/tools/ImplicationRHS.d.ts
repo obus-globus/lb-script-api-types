@@ -10,6 +10,6 @@ export class ImplicationRHS<T extends unknown, C extends unknown> extends Object
     // private clause: IVecInt;
     // private helper: DependencyHelper<T, C>;
     // private toName: IVec<IConstr>;
-    implies(arg0: T[]): ImplicationNamer<T, C>;
+    implies(...arg0: T[]): ImplicationNamer<T, C>;
     impliesNot(arg0: T): ImplicationAnd<T, C>;
 }

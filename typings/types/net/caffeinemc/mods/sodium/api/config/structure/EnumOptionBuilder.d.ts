@@ -13,18 +13,18 @@ import type { Component } from '../../../../../../../net/minecraft/network/chat/
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export interface EnumOptionBuilder<E extends Enum<E>> extends Object, StatefulOptionBuilder<E> {
     setAllowedValues(arg0: E[]): EnumOptionBuilder<E>;
-    setAllowedValuesProvider(arg0: (param0: ConfigState) => E[], arg1: Identifier[]): EnumOptionBuilder<E>;
+    setAllowedValuesProvider(arg0: (param0: ConfigState) => E[], ...arg1: Identifier[]): EnumOptionBuilder<E>;
     setApplyHook(arg0: (param0: ConfigState) => void): EnumOptionBuilder<E>;
     setBinding(arg0: (param0: E) => void, arg1: () => E): EnumOptionBuilder<E>;
     setBinding(arg0: OptionBinding<E>): EnumOptionBuilder<E>;
     setControlHiddenWhenDisabled(arg0: boolean): EnumOptionBuilder<E>;
-    setDefaultProvider(arg0: (param0: ConfigState) => E, arg1: Identifier[]): EnumOptionBuilder<E>;
+    setDefaultProvider(arg0: (param0: ConfigState) => E, ...arg1: Identifier[]): EnumOptionBuilder<E>;
     setDefaultValue(arg0: E): EnumOptionBuilder<E>;
     setElementNameProvider(arg0: (param0: E) => Component): EnumOptionBuilder<E>;
     setEnabled(arg0: boolean): EnumOptionBuilder<E>;
-    setEnabledProvider(arg0: (param0: ConfigState) => boolean, arg1: Identifier[]): EnumOptionBuilder<E>;
-    setFlags(arg0: OptionFlag[]): EnumOptionBuilder<E>;
-    setFlags(arg0: Identifier[]): EnumOptionBuilder<E>;
+    setEnabledProvider(arg0: (param0: ConfigState) => boolean, ...arg1: Identifier[]): EnumOptionBuilder<E>;
+    setFlags(...arg0: OptionFlag[]): EnumOptionBuilder<E>;
+    setFlags(...arg0: Identifier[]): EnumOptionBuilder<E>;
     setImpact(arg0: OptionImpact): EnumOptionBuilder<E>;
     setName(arg0: Component): EnumOptionBuilder<E>;
     setStorageHandler(arg0: () => void): EnumOptionBuilder<E>;

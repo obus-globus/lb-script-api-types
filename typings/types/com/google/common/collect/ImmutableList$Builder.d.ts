@@ -9,7 +9,7 @@ export class ImmutableList$Builder<E extends unknown> extends ImmutableCollectio
     // private copyOnWrite: boolean;
     // private size: number;
     add(element: E): ImmutableList$Builder<E>;
-    add(elements: E[]): ImmutableList$Builder<E>;
+    add(...elements: E[]): ImmutableList$Builder<E>;
     // private add(elements: Object[], n: number): void;
     addAll(elements: E[]): ImmutableList$Builder<E>;
     addAll(elements: Iterator<E>): ImmutableList$Builder<E>;

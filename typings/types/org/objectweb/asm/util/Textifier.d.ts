@@ -64,8 +64,8 @@ export class Textifier extends Printer {
     visitCode(): void;
     // private visitDouble(arg0: number): void;
     visitEnum(arg0: string, arg1: string, arg2: string): void;
-    visitExport(arg0: string, arg1: number, arg2: string[]): void;
-    // private visitExportOrOpen(arg0: string, arg1: string, arg2: number, arg3: string[]): void;
+    visitExport(arg0: string, arg1: number, ...arg2: string[]): void;
+    // private visitExportOrOpen(arg0: string, arg1: string, arg2: number, ...arg3: string[]): void;
     visitField(arg0: number, arg1: string, arg2: string, arg3: string, arg4: Object): Textifier;
     visitFieldAnnotation(arg0: string, arg1: boolean): Textifier;
     visitFieldAttribute(arg0: Attribute): void;
@@ -80,7 +80,7 @@ export class Textifier extends Printer {
     visitInsnAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): Printer;
     // private visitInt(arg0: number): void;
     visitIntInsn(arg0: number, arg1: number): void;
-    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): void;
+    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): void;
     visitJumpInsn(arg0: number, arg1: Label): void;
     visitLabel(arg0: Label): void;
     visitLdcInsn(arg0: Object): void;
@@ -103,13 +103,13 @@ export class Textifier extends Printer {
     visitMultiANewArrayInsn(arg0: string, arg1: number): void;
     visitNestHost(arg0: string): void;
     visitNestMember(arg0: string): void;
-    visitOpen(arg0: string, arg1: number, arg2: string[]): void;
+    visitOpen(arg0: string, arg1: number, ...arg2: string[]): void;
     visitOuterClass(arg0: string, arg1: string, arg2: string): void;
     visitPackage(arg0: string): void;
     visitParameter(arg0: string, arg1: number): void;
     visitParameterAnnotation(arg0: number, arg1: string, arg2: boolean): Textifier;
     visitPermittedSubclass(arg0: string): void;
-    visitProvide(arg0: string, arg1: string[]): void;
+    visitProvide(arg0: string, ...arg1: string[]): void;
     visitRecordComponent(arg0: string, arg1: string, arg2: string): Printer;
     visitRecordComponentAnnotation(arg0: string, arg1: boolean): Textifier;
     visitRecordComponentAttribute(arg0: Attribute): void;
@@ -119,7 +119,7 @@ export class Textifier extends Printer {
     // private visitShort(arg0: number): void;
     visitSource(arg0: string, arg1: string): void;
     // private visitString(arg0: string): void;
-    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, arg3: Label[]): void;
+    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, ...arg3: Label[]): void;
     visitTryCatchAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): Printer;
     visitTryCatchBlock(arg0: Label, arg1: Label, arg2: Label, arg3: string): void;
     // private visitType(arg0: Type): void;

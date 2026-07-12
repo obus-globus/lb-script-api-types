@@ -11,7 +11,7 @@ export class FileSystemReference extends Object implements Closeable {
     // private closed: boolean;
     // private fileSystem: FileSystem;
     close(): void;
-    getPath(arg0: string, arg1: string[]): Path[];
+    getPath(arg0: string, ...arg1: string[]): Path[];
     isReadOnly(): boolean;
     toString(): string;
 }

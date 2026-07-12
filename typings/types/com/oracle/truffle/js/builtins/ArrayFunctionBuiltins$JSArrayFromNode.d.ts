@@ -41,7 +41,7 @@ export abstract class ArrayFunctionBuiltins$JSArrayFromNode extends ArrayFunctio
     arrayFromCommon(thisObj: Object, items: Object, mapFn: Object, thisArg: Object, setLength: boolean, getIteratorFromMethod: GetIteratorFromMethodNode, growProfile: InlinedBranchProfile): Object;
     arrayFromIterable(thisObj: Object, items: Object, usingIterator: Object, mapFn: Object, thisArg: Object, mapping: boolean, getIteratorFromMethod: GetIteratorFromMethodNode, growProfile: InlinedBranchProfile): Object;
     // private arrayFromIteratorRecord(obj: Object, iteratorRecord: IteratorRecord, mapFn: Object, thisArg: Object, mapping: boolean): Object;
-    callMapFn(target: Object, function_: Object, userArguments: Object[]): Object;
+    callMapFn(target: Object, function_: Object, ...userArguments: Object[]): Object;
     getIteratorValue(iteratorResult: Object): Object;
     getSourceLength(thisObject: Object): number;
     iteratorCloseAbrupt(iterator: Object): void;

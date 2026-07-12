@@ -12,7 +12,7 @@ export class ExtensionProtocolMetadataStorage extends Object implements IExtensi
     getExtensionCount(): number;
     getReceivedExtensions(): number;
     getServerSoftwareName(): string;
-    hasServerExtension(arg0: ClassicProtocolExtension, arg1: number[]): boolean;
+    hasServerExtension(arg0: ClassicProtocolExtension, ...arg1: number[]): boolean;
     incrementReceivedExtensions(): void;
     onRemove(): void;
     setExtensionCount(arg0: number): void;

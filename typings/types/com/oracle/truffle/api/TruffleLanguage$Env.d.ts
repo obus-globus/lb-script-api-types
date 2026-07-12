@@ -62,8 +62,8 @@ export class TruffleLanguage$Env extends Object {
     createHostAdapterWithClassOverrides(types: Object[], classOverrides: Object): Object;
     createSystemThread(runnable: () => void): Thread;
     createSystemThread(runnable: () => void, threadGroup: ThreadGroup): Thread;
-    createTempDirectory(dir: TruffleFile, prefix: string, attrs: FileAttribute<Object>[]): TruffleFile;
-    createTempFile(dir: TruffleFile, prefix: string, suffix: string, attrs: FileAttribute<Object>[]): TruffleFile;
+    createTempDirectory(dir: TruffleFile, prefix: string, ...attrs: FileAttribute<Object>[]): TruffleFile;
+    createTempFile(dir: TruffleFile, prefix: string, suffix: string, ...attrs: FileAttribute<Object>[]): TruffleFile;
     createThread(runnable: () => void): Thread;
     createThread(runnable: () => void, context: TruffleContext): Thread;
     createThread(runnable: () => void, context: TruffleContext, group: ThreadGroup): Thread;
@@ -134,12 +134,12 @@ export class TruffleLanguage$Env extends Object {
     lookup<T extends unknown>(type: Class<T>): T;
     lookupHostSymbol(symbolName: string): Object;
     newContextBuilder(): TruffleContext$Builder;
-    newInnerContextBuilder(permittedLanguages: string[]): TruffleContext$Builder;
-    newProcessBuilder(command: string[]): TruffleProcessBuilder;
+    newInnerContextBuilder(...permittedLanguages: string[]): TruffleContext$Builder;
+    newProcessBuilder(...command: string[]): TruffleProcessBuilder;
     newTruffleThreadBuilder(runnable: () => void): TruffleThreadBuilder;
     out(): OutputStream;
-    parseInternal(source: Source, argumentNames: string[]): CallTarget;
-    parsePublic(source: Source, argumentNames: string[]): CallTarget;
+    parseInternal(source: Source, ...argumentNames: string[]): CallTarget;
+    parsePublic(source: Source, ...argumentNames: string[]): CallTarget;
     postInit(): void;
     registerOnDispose(closeable: Closeable): void;
     registerService(service: Object): void;

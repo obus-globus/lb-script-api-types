@@ -45,7 +45,7 @@ export abstract class TruffleLanguage<C extends unknown> extends Object {
     isVisible(context: C, value: Object): boolean;
     parse(request: TruffleLanguage$InlineParsingRequest): ExecutableNode;
     parse(request: TruffleLanguage$ParsingRequest): CallTarget;
-    parse(source: Source, optionValues: OptionValues, argumentNames: string[]): CallTarget;
+    parse(source: Source, optionValues: OptionValues, ...argumentNames: string[]): CallTarget;
     parseInline(source: Source, optionValues: OptionValues, context: Node, frame: MaterializedFrame): ExecutableNode;
     patchContext(context: C, newEnv: TruffleLanguage$Env): boolean;
 }

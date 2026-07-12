@@ -13,8 +13,8 @@ export class AdvancementRendererRegistryImpl extends Object {
     static getBackgroundRenderer(paramarg0: Identifier): (param0: AdvancementRenderContext$Background) => void;
     static getFrameRenderer(paramarg0: Identifier): (param0: AdvancementRenderContext$Frame) => void;
     static getIconRenderer(paramarg0: Identifier): (param0: AdvancementRenderContext$Icon) => void;
-    static registerBackground(paramarg0: (param0: AdvancementRenderContext$Background) => void, paramarg1: (Object | null)[]): void;
-    static registerFrame(paramarg0: (param0: AdvancementRenderContext$Frame) => void, paramarg1: (Object | null)[]): void;
-    static registerIcon(paramarg0: (param0: AdvancementRenderContext$Icon) => void, paramarg1: (Object | null)[]): void;
+    static registerBackground(paramarg0: (param0: AdvancementRenderContext$Background) => void, ...paramarg1: (Object | null)[]): void;
+    static registerFrame(paramarg0: (param0: AdvancementRenderContext$Frame) => void, ...paramarg1: (Object | null)[]): void;
+    static registerIcon(paramarg0: (param0: AdvancementRenderContext$Icon) => void, ...paramarg1: (Object | null)[]): void;
     private constructor()
 }

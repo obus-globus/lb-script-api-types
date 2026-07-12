@@ -152,7 +152,7 @@ export class JNIUtil extends Object {
     static getInternalName(paramfqn: string): string;
     static getJVMCIClassLoader(paramenv: JNI$JNIEnv): JNI$JObject;
     static getSystemClassLoader(paramenv: JNI$JNIEnv): JNI$JObject;
-    static trace(paramlevel: number, paramformat: string, paramargs: (Object | null)[]): void;
+    static trace(paramlevel: number, paramformat: string, ...paramargs: (Object | null)[]): void;
     static trace(paramlevel: number, paramthrowable: Throwable): void;
     static tracingAt(paramlevel: number): boolean;
     private constructor()

@@ -46,7 +46,7 @@ export class SoundManager extends SimplePreparableReloadListener<SoundManager$Pr
     getSoundCacheDebugStats(output: SoundBufferLibrary$DebugOutput): void;
     getSoundEvent(location: Identifier): WeighedSoundEvents;
     isActive(instance: SoundInstance): boolean;
-    pauseAllExcept(ignoredSources: SoundSource[]): void;
+    pauseAllExcept(...ignoredSources: SoundSource[]): void;
     play(instance: SoundInstance): SoundEngine$PlayResult;
     playDelayed(instance: SoundInstance, delay: number): void;
     prepare(manager: ResourceManager, profiler: ProfilerFiller): SoundManager$Preparations;

@@ -5,7 +5,7 @@ export class Strings extends Object {
     static commonSuffix(parama: CharSequence, paramb: CharSequence): string;
     static emptyToNull(paramstring: string): string;
     static isNullOrEmpty(paramstring: string): boolean;
-    static lenientFormat(paramtemplate: string, paramargs: (Object | null)[]): string;
+    static lenientFormat(paramtemplate: string, ...paramargs: (Object | null)[]): string;
     static nullToEmpty(paramstring: string): string;
     static padEnd(paramstring: string, paramminLength: number, parampadChar: string): string;
     static padStart(paramstring: string, paramminLength: number, parampadChar: string): string;

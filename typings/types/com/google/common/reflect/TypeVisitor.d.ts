@@ -8,7 +8,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class TypeVisitor extends Object {
     constructor()
     // private visited: Type[];
-    visit(types: Type[]): void;
+    visit(...types: Type[]): void;
     visitClass(t: Class<Object>): void;
     visitGenericArrayType(t: GenericArrayType): void;
     visitParameterizedType(t: ParameterizedType): void;

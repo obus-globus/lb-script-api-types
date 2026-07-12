@@ -9,8 +9,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CMatrix extends Object {
     static identity(paramarg0: number): CMatrix;
     static zero(paramarg0: number, paramarg1: number): CMatrix;
-    constructor(arg0: CVector[])
-    constructor(arg0: Complex[][])
+    constructor(...arg0: CVector[])
+    constructor(...arg0: Complex[][])
     constructor(arg0: number, arg1: (param0: number, param1: number) => Complex)
     constructor(arg0: number, arg1: number)
     constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => Complex)

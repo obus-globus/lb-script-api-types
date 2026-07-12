@@ -39,13 +39,13 @@ export abstract class AbstractPolyglotImpl extends Object {
     buildEngine(permittedLanguages: string[], sandboxPolicy: SandboxPolicy, out: OutputStream, err: OutputStream, in_: InputStream, options: { [key: string]: string }, allowExperimentalOptions: boolean, boundEngine: boolean, messageInterceptor: MessageTransport, logHandler: Object, hostLanguage: Object, hostLanguageOnly: boolean, registerInActiveEngines: boolean, polyglotHostService: Object): Engine;
     buildLimits(statementLimit: number, statementLimitSourceFilter: (param0: Object) => boolean, onLimit: (param0: Object) => void): Object;
     buildSource(language: string, origin: Object, uri: URI, name: string, mimeType: string, content: Object, interactive: boolean, internal: boolean, cached: boolean, encoding: Charset, url: URL, path: string, options: { [key: string]: string }): Object;
-    copyResources(targetFolder: Path[], components: string[]): boolean;
+    copyResources(targetFolder: Path[], ...components: string[]): boolean;
     createAllEngineOptionDescriptors(): OptionDescriptor[];
     createEngineOptionDescriptors(): OptionDescriptor[];
     createHostAccess(): Object;
     createHostLanguage(access: Object): Object;
     createThreadScope(): AbstractPolyglotImpl$ThreadScope;
-    createUnionOptionDescriptors(optionDescriptors: OptionDescriptor[][]): OptionDescriptor[];
+    createUnionOptionDescriptors(...optionDescriptors: OptionDescriptor[][]): OptionDescriptor[];
     findLanguage(file: File): string;
     findLanguage(url: URL): string;
     findLanguage(mimeType: string): string;
@@ -68,7 +68,7 @@ export abstract class AbstractPolyglotImpl extends Object {
     isInCurrentEngineHostCallback(engine: Object): boolean;
     isInternalFileSystem(fileSystem: FileSystem_2): boolean;
     loadLanguageClass(className: string): Class<Object>;
-    newCompositeFileSystem(fallbackFileSystem: FileSystem_2, delegates: FileSystem$Selector[]): FileSystem_2;
+    newCompositeFileSystem(fallbackFileSystem: FileSystem_2, ...delegates: FileSystem$Selector[]): FileSystem_2;
     newDefaultFileSystem(hostTmpDir: string): FileSystem_2;
     newDefaultProcessHandler(): ProcessHandler;
     newDenyIOFileSystem(): FileSystem_2;

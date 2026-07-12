@@ -29,7 +29,7 @@ export abstract class Printer extends Object {
     visitClassTypeAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): Printer;
     visitCode(): void;
     visitEnum(arg0: string, arg1: string, arg2: string): void;
-    visitExport(arg0: string, arg1: number, arg2: string[]): void;
+    visitExport(arg0: string, arg1: number, ...arg2: string[]): void;
     visitField(arg0: number, arg1: string, arg2: string, arg3: string, arg4: Object): Printer;
     visitFieldAnnotation(arg0: string, arg1: boolean): Printer;
     visitFieldAttribute(arg0: Attribute): void;
@@ -42,7 +42,7 @@ export abstract class Printer extends Object {
     visitInsn(arg0: number): void;
     visitInsnAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): Printer;
     visitIntInsn(arg0: number, arg1: number): void;
-    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): void;
+    visitInvokeDynamicInsn(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): void;
     visitJumpInsn(arg0: number, arg1: Label): void;
     visitLabel(arg0: Label): void;
     visitLdcInsn(arg0: Object): void;
@@ -64,13 +64,13 @@ export abstract class Printer extends Object {
     visitMultiANewArrayInsn(arg0: string, arg1: number): void;
     visitNestHost(arg0: string): void;
     visitNestMember(arg0: string): void;
-    visitOpen(arg0: string, arg1: number, arg2: string[]): void;
+    visitOpen(arg0: string, arg1: number, ...arg2: string[]): void;
     visitOuterClass(arg0: string, arg1: string, arg2: string): void;
     visitPackage(arg0: string): void;
     visitParameter(arg0: string, arg1: number): void;
     visitParameterAnnotation(arg0: number, arg1: string, arg2: boolean): Printer;
     visitPermittedSubclass(arg0: string): void;
-    visitProvide(arg0: string, arg1: string[]): void;
+    visitProvide(arg0: string, ...arg1: string[]): void;
     visitRecordComponent(arg0: string, arg1: string, arg2: string): Printer;
     visitRecordComponentAnnotation(arg0: string, arg1: boolean): Printer;
     visitRecordComponentAttribute(arg0: Attribute): void;
@@ -78,7 +78,7 @@ export abstract class Printer extends Object {
     visitRecordComponentTypeAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): Printer;
     visitRequire(arg0: string, arg1: number, arg2: string): void;
     visitSource(arg0: string, arg1: string): void;
-    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, arg3: Label[]): void;
+    visitTableSwitchInsn(arg0: number, arg1: number, arg2: Label, ...arg3: Label[]): void;
     visitTryCatchAnnotation(arg0: number, arg1: TypePath, arg2: string, arg3: boolean): Printer;
     visitTryCatchBlock(arg0: Label, arg1: Label, arg2: Label, arg3: string): void;
     visitTypeInsn(arg0: number, arg1: string): void;

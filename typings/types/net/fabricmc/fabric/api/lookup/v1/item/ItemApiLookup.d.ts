@@ -12,6 +12,6 @@ export interface ItemApiLookup<A extends unknown, C extends unknown> extends Obj
     getId(): Identifier;
     getProvider(arg0: Item): (param0: ItemStack, param1: C) => A;
     registerFallback(arg0: (param0: ItemStack, param1: C) => A): void;
-    registerForItems(arg0: (param0: ItemStack, param1: C) => A, arg1: ItemLike[]): void;
-    registerSelf(arg0: ItemLike[]): void;
+    registerForItems(arg0: (param0: ItemStack, param1: C) => A, ...arg1: ItemLike[]): void;
+    registerSelf(...arg0: ItemLike[]): void;
 }

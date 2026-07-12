@@ -7,9 +7,9 @@ export class PolyglotAccess$Builder extends Object {
     // private evalAccess: EconomicMap<string, string[]>;
     allowBindingsAccess(language: string): PolyglotAccess$Builder;
     allowEval(from: string, to: string): PolyglotAccess$Builder;
-    allowEvalBetween(languages: string[]): PolyglotAccess$Builder;
+    allowEvalBetween(...languages: string[]): PolyglotAccess$Builder;
     build(): PolyglotAccess;
     denyBindingsAccess(language: string): PolyglotAccess$Builder;
     denyEval(from: string, to: string): PolyglotAccess$Builder;
-    denyEvalBetween(languages: string[]): PolyglotAccess$Builder;
+    denyEvalBetween(...languages: string[]): PolyglotAccess$Builder;
 }

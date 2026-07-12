@@ -39,7 +39,7 @@ export abstract class InteropLibrary extends Library {
     asTimeZone(receiver: Object): ZoneId;
     asTruffleString(receiver: Object): TruffleString;
     assertAdopted(): boolean;
-    execute(receiver: Object, arguments: Object[]): Object;
+    execute(receiver: Object, ...arguments: Object[]): Object;
     fitsInBigInteger(receiver: Object): boolean;
     fitsInByte(receiver: Object): boolean;
     fitsInDouble(receiver: Object): boolean;
@@ -91,8 +91,8 @@ export abstract class InteropLibrary extends Library {
     hasScopeParent(receiver: Object): boolean;
     hasSourceLocation(receiver: Object): boolean;
     identityHashCode(receiver: Object): number;
-    instantiate(receiver: Object, arguments: Object[]): Object;
-    invokeMember(receiver: Object, member: string, arguments: Object[]): Object;
+    instantiate(receiver: Object, ...arguments: Object[]): Object;
+    invokeMember(receiver: Object, member: string, ...arguments: Object[]): Object;
     isArrayElementExisting(receiver: Object, index: number): boolean;
     isArrayElementInsertable(receiver: Object, index: number): boolean;
     isArrayElementModifiable(receiver: Object, index: number): boolean;

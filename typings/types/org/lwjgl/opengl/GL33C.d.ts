@@ -1292,7 +1292,7 @@ export class GL33C extends GL32C {
     static glSamplerParameteriv(paramarg0: number, paramarg1: number, paramarg2: IntBuffer): void;
     static glScissor(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
     static glShaderSource(paramarg0: number, paramarg1: CharSequence): void;
-    static glShaderSource(paramarg0: number, paramarg1: (Object | null)[]): void;
+    static glShaderSource(paramarg0: number, ...paramarg1: (Object | null)[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glStencilFunc(paramarg0: number, paramarg1: number, paramarg2: number): void;

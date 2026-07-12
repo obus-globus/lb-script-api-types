@@ -12,7 +12,7 @@ export class Potion extends Object implements FeatureElement {
     static CODEC: Codec<Holder<Potion>>;
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Potion>>;
-    constructor(name: string, effects: MobEffectInstance[])
+    constructor(name: string, ...effects: MobEffectInstance[])
     readonly effects: MobEffectInstance[];
     // private name: string;
     // private requiredFeatures: FeatureFlagSet;
@@ -21,5 +21,5 @@ export class Potion extends Object implements FeatureElement {
     isEnabled(enabledFeatures: FeatureFlagSet): boolean;
     name(): string;
     requiredFeatures(): FeatureFlagSet;
-    requiredFeatures(flags: FeatureFlag[]): Potion;
+    requiredFeatures(...flags: FeatureFlag[]): Potion;
 }

@@ -10,7 +10,7 @@ import type { ErrorScope } from '../../../../../../../kotlin/reflect/jvm/interna
 import type { ErrorScopeKind } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/error/ErrorScopeKind.d.ts'
 export class ThrowingScope extends ErrorScope {
     static Companion: MemberScope$Companion;
-    constructor(arg0: ErrorScopeKind, arg1: string[])
+    constructor(arg0: ErrorScopeKind, ...arg1: string[])
     getClassifierNames(): Name[];
     getContributedClassifier(arg0: Name, arg1: LookupLocation): ClassifierDescriptor;
     getContributedDescriptors(arg0: DescriptorKindFilter, arg1: (param0: Name) => boolean): DeclarationDescriptor[];

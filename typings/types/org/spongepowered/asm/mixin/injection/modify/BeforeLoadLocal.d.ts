@@ -18,9 +18,9 @@ export class BeforeLoadLocal extends ModifyVariableInjector$LocalVariableInjecti
     static DEFAULT_ALLOWED_SHIFT_BY: number;
     static MAX_ALLOWED_SHIFT_BY: number;
     static after(paramarg0: InjectionPoint): InjectionPoint;
-    static and(paramarg0: (Object | null)[]): InjectionPoint;
+    static and(...paramarg0: (Object | null)[]): InjectionPoint;
     static before(paramarg0: InjectionPoint): InjectionPoint;
-    static or(paramarg0: (Object | null)[]): InjectionPoint;
+    static or(...paramarg0: (Object | null)[]): InjectionPoint;
     static parse(paramarg0: IInjectionPointContext, paramarg1: AnnotationNode[]): InjectionPoint[];
     static parse(paramarg0: IMixinContext, paramarg1: MethodNode, paramarg2: AnnotationNode, paramarg3: AnnotationNode[]): InjectionPoint[];
     static parse(paramarg0: IInjectionPointContext, paramarg1: string, paramarg2: At$Shift, paramarg3: number, paramarg4: string[], paramarg5: string, paramarg6: string, paramarg7: number, paramarg8: number, paramarg9: string, paramarg10: number): InjectionPoint;
@@ -39,7 +39,7 @@ export class BeforeLoadLocal extends ModifyVariableInjector$LocalVariableInjecti
     // private opcodeAfter: boolean;
     // private ordinal: number;
     // private returnType: Type;
-    addMessage(arg0: string, arg1: Object[]): void;
+    addMessage(arg0: string, ...arg1: Object[]): void;
     find(arg0: string, arg1: AbstractInsnNode[], arg2: AbstractInsnNode[]): boolean;
     find(arg0: InjectionInfo, arg1: AbstractInsnNode[], arg2: AbstractInsnNode[], arg3: AbstractInsnNode[]): boolean;
     toString(): string;

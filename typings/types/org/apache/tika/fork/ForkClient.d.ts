@@ -21,7 +21,7 @@ export class ForkClient extends Object {
     // private output: DataOutputStream;
     // private process: Process;
     // private resources: ForkResource[];
-    call(arg0: string, arg1: Object[]): Throwable;
+    call(arg0: string, ...arg1: Object[]): Throwable;
     close(): void;
     getFilesProcessed(): number;
     getId(): number;

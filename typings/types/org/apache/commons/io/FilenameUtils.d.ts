@@ -22,7 +22,7 @@ export class FilenameUtils extends Object {
     static indexOfExtension(paramarg0: string): number;
     static indexOfLastSeparator(paramarg0: string): number;
     static isExtension(paramarg0: string, paramarg1: string): boolean;
-    static isExtension(paramarg0: string, paramarg1: (Object | null)[]): boolean;
+    static isExtension(paramarg0: string, ...paramarg1: (Object | null)[]): boolean;
     static isExtension(paramarg0: string, paramarg1: string[]): boolean;
     static normalize(paramarg0: string): string;
     static normalize(paramarg0: string, paramarg1: boolean): string;

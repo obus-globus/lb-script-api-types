@@ -11,7 +11,7 @@ export class VoidChannelPromise extends AbstractFuture<void> implements ChannelP
     // private channel: Channel;
     // private fireExceptionListener: ChannelFutureListener;
     addListener(arg0: GenericFutureListener<Future<void>>): VoidChannelPromise;
-    addListeners(arg0: GenericFutureListener<Future<void>>[]): VoidChannelPromise;
+    addListeners(...arg0: GenericFutureListener<Future<void>>[]): VoidChannelPromise;
     await(): VoidChannelPromise;
     await(arg0: number): boolean;
     await(arg0: number, arg1: TimeUnit): boolean;
@@ -29,7 +29,7 @@ export class VoidChannelPromise extends AbstractFuture<void> implements ChannelP
     isSuccess(): boolean;
     isVoid(): boolean;
     removeListener(arg0: GenericFutureListener<Future<void>>): VoidChannelPromise;
-    removeListeners(arg0: GenericFutureListener<Future<void>>[]): VoidChannelPromise;
+    removeListeners(...arg0: GenericFutureListener<Future<void>>[]): VoidChannelPromise;
     setFailure(arg0: Throwable): VoidChannelPromise;
     setSuccess(): VoidChannelPromise;
     setSuccess(arg0: void): VoidChannelPromise;

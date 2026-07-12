@@ -34,7 +34,7 @@ export class TimeZoneGenericNames extends Object implements Freezable<TimeZoneGe
     // private findLocal(arg0: string, arg1: number, arg2: TimeZoneGenericNames$GenericNameType[]): TimeZoneGenericNames$GenericMatchInfo[];
     // private findTimeZoneNames(arg0: string, arg1: number, arg2: TimeZoneGenericNames$GenericNameType[]): TimeZoneNames$MatchInfo[];
     // private formatGenericNonLocationName(arg0: TimeZone, arg1: TimeZoneGenericNames$GenericNameType, arg2: number): string;
-    // private formatPattern(arg0: TimeZoneGenericNames$Pattern, arg1: string[]): string;
+    // private formatPattern(arg0: TimeZoneGenericNames$Pattern, ...arg1: string[]): string;
     freeze(): TimeZoneGenericNames;
     getDisplayName(arg0: TimeZone, arg1: TimeZoneGenericNames$GenericNameType, arg2: number): string;
     getGenericLocationName(arg0: string): string;

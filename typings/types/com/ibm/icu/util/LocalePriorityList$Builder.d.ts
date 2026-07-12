@@ -9,6 +9,7 @@ export class LocalePriorityList$Builder extends Object {
     add(arg0: ULocale[]): LocalePriorityList$Builder;
     add(arg0: ULocale): LocalePriorityList$Builder;
     add(arg0: ULocale, arg1: number): LocalePriorityList$Builder;
+    add(...arg0: ULocale[]): LocalePriorityList$Builder;
     add(arg0: string): LocalePriorityList$Builder;
     build(): ULocale[];
     build(arg0: boolean): ULocale[];

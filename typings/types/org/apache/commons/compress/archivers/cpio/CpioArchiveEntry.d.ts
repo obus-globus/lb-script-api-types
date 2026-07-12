@@ -43,10 +43,10 @@ export class CpioArchiveEntry extends Object implements ArchiveEntry, CpioConsta
     static SIZE_UNKNOWN: number;
     static S_IFMT: number;
     constructor(arg0: File, arg1: string)
-    constructor(arg0: Path[], arg1: string, arg2: LinkOption[])
+    constructor(arg0: Path[], arg1: string, ...arg2: LinkOption[])
     constructor(arg0: number)
     constructor(arg0: number, arg1: File, arg2: string)
-    constructor(arg0: number, arg1: Path[], arg2: string, arg3: LinkOption[])
+    constructor(arg0: number, arg1: Path[], arg2: string, ...arg3: LinkOption[])
     constructor(arg0: number, arg1: string)
     constructor(arg0: number, arg1: string, arg2: number)
     constructor(arg0: string)

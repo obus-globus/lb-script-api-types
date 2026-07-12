@@ -4,5 +4,5 @@ export abstract class FileUtils extends Object {
     static getInstance(): FileUtils;
     constructor()
     hasTrash(): boolean;
-    moveToTrash(arg0: File[]): void;
+    moveToTrash(...arg0: File[]): void;
 }

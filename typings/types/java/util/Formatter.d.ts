@@ -32,8 +32,8 @@ export class Formatter extends Object implements Closeable, Flushable {
     close(): void;
     // private ensureOpen(): void;
     flush(): void;
-    format(arg0: Locale, arg1: string, arg2: Object[]): Formatter;
-    format(arg0: string, arg1: Object[]): Formatter;
+    format(arg0: Locale, arg1: string, ...arg2: Object[]): Formatter;
+    format(arg0: string, ...arg1: Object[]): Formatter;
     ioException(): IOException;
     locale(): Locale;
     out(): Appendable;

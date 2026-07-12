@@ -11,13 +11,13 @@ export class ProgramSamplers$CustomTextureSamplerInterceptor extends Object impl
     // private customTextureIds: { [key: string]: TextureAccess };
     // private deactivatedOverrides: string[];
     // private samplerHolder: SamplerHolder;
-    addDefaultSampler(arg0: () => number, arg1: string[]): boolean;
-    addDefaultSampler(arg0: TextureType, arg1: () => number, arg2: ValueUpdateNotifier, arg3: () => GlSampler, arg4: string[]): boolean;
-    addDynamicSampler(arg0: () => number, arg1: GlSampler, arg2: string[]): boolean;
-    addDynamicSampler(arg0: () => number, arg1: GlSampler, arg2: ValueUpdateNotifier, arg3: string[]): boolean;
-    addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: () => GlSampler, arg3: string[]): boolean;
-    addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: ValueUpdateNotifier, arg3: () => GlSampler, arg4: string[]): boolean;
-    addExternalSampler(arg0: number, arg1: string[]): void;
-    // private getOverride(arg0: string[]): TextureAccess;
+    addDefaultSampler(arg0: () => number, ...arg1: string[]): boolean;
+    addDefaultSampler(arg0: TextureType, arg1: () => number, arg2: ValueUpdateNotifier, arg3: () => GlSampler, ...arg4: string[]): boolean;
+    addDynamicSampler(arg0: () => number, arg1: GlSampler, ...arg2: string[]): boolean;
+    addDynamicSampler(arg0: () => number, arg1: GlSampler, arg2: ValueUpdateNotifier, ...arg3: string[]): boolean;
+    addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: () => GlSampler, ...arg3: string[]): boolean;
+    addDynamicSampler(arg0: TextureType, arg1: () => number, arg2: ValueUpdateNotifier, arg3: () => GlSampler, ...arg4: string[]): boolean;
+    addExternalSampler(arg0: number, ...arg1: string[]): void;
+    // private getOverride(...arg0: string[]): TextureAccess;
     hasSampler(arg0: string): boolean;
 }

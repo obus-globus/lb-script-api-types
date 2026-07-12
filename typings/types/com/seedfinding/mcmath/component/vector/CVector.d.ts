@@ -12,7 +12,7 @@ export class CVector extends Object {
     static basis(paramarg0: number, paramarg1: number, paramarg2: BigInteger): CVector;
     static basis(paramarg0: number, paramarg1: number, paramarg2: number): CVector;
     static zero(paramarg0: number): CVector;
-    constructor(arg0: Complex[])
+    constructor(...arg0: Complex[])
     constructor(arg0: number)
     constructor(arg0: number, arg1: (param0: number) => Complex)
     readonly elements: Complex[];

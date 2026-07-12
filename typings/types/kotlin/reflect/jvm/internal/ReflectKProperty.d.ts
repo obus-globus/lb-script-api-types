@@ -8,7 +8,7 @@ import type { ReflectKCallable } from '../../../../kotlin/reflect/jvm/internal/R
 export interface ReflectKProperty<V extends unknown> extends Object, KotlinGenericDeclaration, KProperty<V>, ReflectKCallable<V>{
     readonly javaField: Field | null;
     readonly signature: string;
-    call(args: (Object | null)[]): V;
+    call(...args: (Object | null)[]): V;
     callBy(args: Map<KParameter, Object | null>): V;
     findJavaDeclaration(): GenericDeclaration | null;
 }

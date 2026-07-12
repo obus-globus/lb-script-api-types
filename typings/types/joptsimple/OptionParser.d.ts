@@ -47,12 +47,12 @@ export class OptionParser extends Object implements OptionDeclarer {
     isRecognized(arg0: string): boolean;
     looksLikeAnOption(arg0: string): boolean;
     // private missingRequiredOptions(arg0: OptionSet): AbstractOptionSpec<Object>[];
-    mutuallyExclusive(arg0: OptionSpecBuilder[]): void;
+    mutuallyExclusive(...arg0: OptionSpecBuilder[]): void;
     noMoreOptions(): void;
     nonOptions(): NonOptionArgumentSpec<string>;
     nonOptions(arg0: string): NonOptionArgumentSpec<string>;
     // private optionsHasAnyOf(arg0: OptionSet, arg1: OptionSpec<Object>[]): boolean;
-    parse(arg0: string[]): OptionSet;
+    parse(...arg0: string[]): OptionSet;
     posixlyCorrect(): boolean;
     posixlyCorrect(arg0: boolean): void;
     printHelpOn(arg0: OutputStream): void;

@@ -15,7 +15,7 @@ export class ItemPredicate$Builder extends Object {
     // private count: MinMaxBounds$Ints;
     // private items: Optional<Holder<Item>[]>;
     build(): ItemPredicate;
-    of(lookup: HolderGetter<Item>, items: ItemLike[]): ItemPredicate$Builder;
+    of(lookup: HolderGetter<Item>, ...items: ItemLike[]): ItemPredicate$Builder;
     of(lookup: HolderGetter<Item>, tag: TagKey<Item>): ItemPredicate$Builder;
     withComponents(components: DataComponentMatchers): ItemPredicate$Builder;
     withCount(count: MinMaxBounds$Ints): ItemPredicate$Builder;

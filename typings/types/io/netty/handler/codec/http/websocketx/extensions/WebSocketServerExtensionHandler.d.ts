@@ -7,7 +7,7 @@ import type { WebSocketServerExtension } from '../../../../../../../io/netty/han
 import type { WebSocketServerExtensionHandshaker } from '../../../../../../../io/netty/handler/codec/http/websocketx/extensions/WebSocketServerExtensionHandshaker.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class WebSocketServerExtensionHandler extends ChannelDuplexHandler {
-    constructor(arg0: WebSocketServerExtensionHandshaker[])
+    constructor(...arg0: WebSocketServerExtensionHandshaker[])
     // private extensionHandshakers: WebSocketServerExtensionHandshaker[];
     // private validExtensions: WebSocketServerExtension[][];
     channelRead(arg0: ChannelHandlerContext, arg1: Object): void;

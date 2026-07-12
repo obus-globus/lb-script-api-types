@@ -22,8 +22,8 @@ export class FlowInterpreter extends Interpreter<FlowValue> {
     naryOperation(arg0: AbstractInsnNode, arg1: FlowValue[]): FlowValue;
     newOperation(arg0: AbstractInsnNode): FlowValue;
     newValue(arg0: Type): FlowValue;
-    // private recordComputedFlow(arg0: number, arg1: (param0: FlowValue[]) => Type, arg2: AbstractInsnNode, arg3: FlowValue[]): FlowValue;
-    // private recordFlow(arg0: Type, arg1: AbstractInsnNode, arg2: FlowValue[]): FlowValue;
+    // private recordComputedFlow(arg0: number, arg1: (param0: FlowValue[]) => Type, arg2: AbstractInsnNode, ...arg3: FlowValue[]): FlowValue;
+    // private recordFlow(arg0: Type, arg1: AbstractInsnNode, ...arg2: FlowValue[]): FlowValue;
     returnOperation(arg0: AbstractInsnNode, arg1: FlowValue, arg2: FlowValue): void;
     ternaryOperation(arg0: AbstractInsnNode, arg1: FlowValue, arg2: FlowValue, arg3: FlowValue): FlowValue;
     unaryOperation(arg0: AbstractInsnNode, arg1: FlowValue): FlowValue;

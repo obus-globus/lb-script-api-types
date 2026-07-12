@@ -7,7 +7,7 @@ export class MapPatternConverter extends LogEventPatternConverter {
     static CATEGORY: string;
     static newInstance(paramoptions: (Object | null)[]): MapPatternConverter;
     static newInstance(paramoptions: (Object | null)[], paramformat: MapMessage$MapFormat): MapPatternConverter;
-    private constructor(options: string[], format: string[])
+    private constructor(options: string[], ...format: string[])
     // private format: string[];
     // private key: string;
     format(obj: Object, output: StringBuilder): void;

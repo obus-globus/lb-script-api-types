@@ -59,7 +59,7 @@ export class RealmsUploadScreen extends RealmsScreen implements RealmsWorldUploa
     // private onBack(): void;
     // private onCancel(): void;
     repositionElements(): void;
-    // private setErrorMessage(messages: Component[]): void;
+    // private setErrorMessage(...messages: Component[]): void;
     setUploading(): void;
     tick(): void;
     // private upload(): void;

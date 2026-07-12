@@ -30,6 +30,6 @@ export class PathsKt__PathUtilsKt extends PathsKt__PathRecursiveFunctionsKt {
     static relativeToOrSelf(paramarg0: Path[][], paramarg1: Path[][]): Path[][];
     static visitFileTree(paramarg0: Path[][], paramarg1: number, paramarg2: boolean, paramarg3: (param0: Object) => void): void;
     static visitFileTree(paramarg0: Path[][], paramarg1: FileVisitor<Path[][]>, paramarg2: number, paramarg3: boolean): void;
-    static walk(paramarg0: Path[][], paramarg1: (Object | null)[]): Sequence<Path[][]>;
-    static writeText(paramarg0: Path[][], paramarg1: CharSequence, paramarg2: Charset, paramarg3: (Object | null)[]): void;
+    static walk(paramarg0: Path[][], ...paramarg1: (Object | null)[]): Sequence<Path[][]>;
+    static writeText(paramarg0: Path[][], paramarg1: CharSequence, paramarg2: Charset, ...paramarg3: (Object | null)[]): void;
 }

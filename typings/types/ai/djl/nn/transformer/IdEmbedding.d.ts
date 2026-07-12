@@ -19,6 +19,6 @@ export class IdEmbedding extends AbstractBlock {
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
     getValue(arg0: ParameterStore, arg1: Device, arg2: boolean): NDArray;
-    initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
+    initializeChildBlocks(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
     probabilities(arg0: ParameterStore, arg1: NDArray, arg2: boolean): NDArray;
 }

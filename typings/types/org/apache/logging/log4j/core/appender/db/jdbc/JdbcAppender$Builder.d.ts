@@ -20,8 +20,8 @@ export class JdbcAppender$Builder<B extends JdbcAppender$Builder<B>> extends Abs
     isImmediateFail(): boolean;
     isValid(): boolean;
     setBufferSize(bufferSize: number): B;
-    setColumnConfigs(columnConfigs: ColumnConfig[]): B;
-    setColumnMappings(columnMappings: ColumnMapping[]): B;
+    setColumnConfigs(...columnConfigs: ColumnConfig[]): B;
+    setColumnMappings(...columnMappings: ColumnMapping[]): B;
     setConnectionSource(connectionSource: ConnectionSource): B;
     setImmediateFail(immediateFail: boolean): void;
     setReconnectIntervalMillis(reconnectIntervalMillis: number): void;

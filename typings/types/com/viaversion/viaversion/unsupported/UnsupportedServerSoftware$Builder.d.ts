@@ -9,7 +9,7 @@ export class UnsupportedServerSoftware$Builder extends Object {
     // private reason: string;
     addClassName(arg0: string): UnsupportedServerSoftware$Builder;
     addMethod(arg0: string, arg1: string): UnsupportedServerSoftware$Builder;
-    addMethods(arg0: string, arg1: string[]): UnsupportedServerSoftware$Builder;
+    addMethods(arg0: string, ...arg1: string[]): UnsupportedServerSoftware$Builder;
     build(): UnsupportedSoftware;
     name(arg0: string): UnsupportedServerSoftware$Builder;
     reason(arg0: string): UnsupportedServerSoftware$Builder;

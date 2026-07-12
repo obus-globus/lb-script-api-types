@@ -29,7 +29,7 @@ export class DefaultChannelConfig extends Object implements ChannelConfig {
     getMessageSizeEstimator(): MessageSizeEstimator;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     // private getPinEventExecutorPerGroup(): boolean;
     getRecvByteBufAllocator<T extends RecvByteBufAllocator>(): T;
     getWriteBufferHighWaterMark(): number;

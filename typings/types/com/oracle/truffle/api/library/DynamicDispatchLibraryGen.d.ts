@@ -12,7 +12,7 @@ export class DynamicDispatchLibraryGen extends LibraryFactory<DynamicDispatchLib
     private constructor()
     createDelegate(delegateLibrary: DynamicDispatchLibrary): DynamicDispatchLibrary;
     createDispatchImpl(limit: number): DynamicDispatchLibrary;
-    createMessageBitSet(messages: Message[]): FinalBitSet;
+    createMessageBitSet(...messages: Message[]): FinalBitSet;
     createProxy(library: ReflectionLibrary): DynamicDispatchLibrary;
     createUncachedDispatch(): DynamicDispatchLibrary;
     genericDispatch(originalLib: Library, receiver: Object, message: Message, args: Object[], offset: number): Object;

@@ -7,5 +7,5 @@ export class SlotsKt extends Object {
     static findClosestSlot(paramarg0: (HotbarItemSlot | null)[], paramarg1: (param0: Object) => boolean): HotbarItemSlot | null;
     static findClosestSlot(paramarg0: (HotbarItemSlot | null)[], paramarg1: TagKey<Item>): HotbarItemSlot | null;
     static findClosestSlot(paramarg0: (HotbarItemSlot | null)[], paramarg1: Item): HotbarItemSlot | null;
-    static findClosestSlot(paramarg0: (HotbarItemSlot | null)[], paramarg1: (Object | null)[]): HotbarItemSlot | null;
+    static findClosestSlot(paramarg0: (HotbarItemSlot | null)[], ...paramarg1: (Object | null)[]): HotbarItemSlot | null;
 }

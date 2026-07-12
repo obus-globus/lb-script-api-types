@@ -18,7 +18,7 @@ export class ARBSeparateShaderObjects extends Object {
     static glActiveShaderProgram(paramarg0: number, paramarg1: number): void;
     static glBindProgramPipeline(paramarg0: number): void;
     static glCreateShaderProgramv(paramarg0: number, paramarg1: CharSequence): number;
-    static glCreateShaderProgramv(paramarg0: number, paramarg1: (Object | null)[]): number;
+    static glCreateShaderProgramv(paramarg0: number, ...paramarg1: (Object | null)[]): number;
     static glCreateShaderProgramv(paramarg0: number, paramarg1: PointerBuffer): number;
     static glDeleteProgramPipelines(paramarg0: number): void;
     static glDeleteProgramPipelines(paramarg0: number[]): void;

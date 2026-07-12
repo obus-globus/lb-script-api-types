@@ -29,8 +29,8 @@ import type { OptionValues } from '../../../../../org/graalvm/options/OptionValu
 import type { SandboxPolicy } from '../../../../../org/graalvm/polyglot/SandboxPolicy.d.ts'
 export abstract class Accessor$RuntimeSupport extends Object {
     constructor(permission: Object)
-    callInlined(callNode: Node, target: CallTarget, arguments: Object[]): Object;
-    callProfiled(target: CallTarget, arguments: Object[]): Object;
+    callInlined(callNode: Node, target: CallTarget, ...arguments: Object[]): Object;
+    callProfiled(target: CallTarget, ...arguments: Object[]): Object;
     castArrayFixedLength(args: Object[], length: number): Object[];
     createAlwaysValidAssumption(): Assumption;
     createBlockNode<T extends Node>(elements: T[], executor: BlockNode$ElementExecutor<T>): BlockNode<T>;

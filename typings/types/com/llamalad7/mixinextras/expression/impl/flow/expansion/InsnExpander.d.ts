@@ -18,7 +18,7 @@ export abstract class InsnExpander extends Object implements FlowPostProcessor {
     constructor()
     // private expansions: Map<AbstractInsnNode, InsnExpander$Expansion>;
     expand(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode, arg2: InsnExpander$Expansion): void;
-    expandInsn(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode, arg2: AbstractInsnNode[]): void;
+    expandInsn(arg0: AbstractInsnNode[], arg1: InjectionNodes$InjectionNode, ...arg2: AbstractInsnNode[]): void;
     process(arg0: FlowValue, arg1: FlowPostProcessor$OutputSink): void;
     registerComponent(arg0: FlowValue, arg1: InsnExpander$InsnComponent, arg2: AbstractInsnNode): void;
 }

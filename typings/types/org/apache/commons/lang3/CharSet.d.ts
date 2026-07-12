@@ -6,8 +6,8 @@ export class CharSet extends Object implements Serializable {
     static ASCII_ALPHA_UPPER: CharSet;
     static ASCII_NUMERIC: CharSet;
     static EMPTY: CharSet;
-    static getInstance(paramarg0: (Object | null)[]): CharSet;
-    constructor(arg0: string[])
+    static getInstance(...paramarg0: (Object | null)[]): CharSet;
+    constructor(...arg0: string[])
     // private set: string[][];
     add(arg0: string): void;
     contains(arg0: string): boolean;

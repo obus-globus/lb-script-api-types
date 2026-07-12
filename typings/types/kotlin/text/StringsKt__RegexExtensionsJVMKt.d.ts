@@ -3,7 +3,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 import type { StringsKt__IndentKt } from '../../kotlin/text/StringsKt__IndentKt.d.ts'
 export class StringsKt__RegexExtensionsJVMKt extends StringsKt__IndentKt {
-    static append(paramarg0: Appendable | null, paramarg1: (Object | null)[]): Appendable | null;
+    static append(paramarg0: Appendable | null, ...paramarg1: (Object | null)[]): Appendable | null;
     static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object) => CharSequence): void;
     static appendRange(paramarg0: Appendable | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Appendable | null;
     static prependIndent(paramarg0: string, paramarg1: string): string;

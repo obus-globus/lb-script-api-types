@@ -8,14 +8,14 @@ export class IValue extends NativeResource<number> {
     static from(paramarg0: number): IValue;
     static from(paramarg0: string): IValue;
     static from(paramarg0: number): IValue;
-    static listFrom(paramarg0: (Object | null)[]): IValue;
-    static listFrom(paramarg0: (Object | null)[]): IValue;
-    static listFrom(paramarg0: (Object | null)[]): IValue;
-    static listFrom(paramarg0: number[]): IValue;
-    static listFrom(paramarg0: number[]): IValue;
+    static listFrom(...paramarg0: (Object | null)[]): IValue;
+    static listFrom(...paramarg0: (Object | null)[]): IValue;
+    static listFrom(...paramarg0: (Object | null)[]): IValue;
+    static listFrom(...paramarg0: number[]): IValue;
+    static listFrom(...paramarg0: number[]): IValue;
     static stringIValueMapFrom(paramarg0: { [key: string]: IValue }): IValue;
     static stringMapFrom(paramarg0: { [key: string]: PtNDArray }): IValue;
-    static tupleFrom(paramarg0: (Object | null)[]): IValue;
+    static tupleFrom(...paramarg0: (Object | null)[]): IValue;
     constructor(arg0: number)
     close(): void;
     getType(): string;

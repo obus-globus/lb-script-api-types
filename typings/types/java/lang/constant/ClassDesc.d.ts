@@ -13,7 +13,7 @@ export interface ClassDesc extends ConstantDesc, TypeDescriptor$OfField<ClassDes
     isClassOrInterface(): boolean;
     isPrimitive(): boolean;
     nested(arg0: string): ClassDesc;
-    nested(arg0: string, arg1: string[]): ClassDesc;
+    nested(arg0: string, ...arg1: string[]): ClassDesc;
     packageName(): string;
     resolveConstantDesc(arg0: MethodHandles$Lookup): Class<Object>;
 }

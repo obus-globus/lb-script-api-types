@@ -31,7 +31,7 @@ export abstract class SwingWorker<T extends unknown, V extends unknown> extends 
     isCancelled(): boolean;
     isDone(): boolean;
     process(arg0: V[]): void;
-    publish(arg0: V[]): void;
+    publish(...arg0: V[]): void;
     removePropertyChangeListener(arg0: PropertyChangeListener): void;
     run(): void;
     setProgress(arg0: number): void;

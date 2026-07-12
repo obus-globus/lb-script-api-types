@@ -51,5 +51,5 @@ export abstract class Injector extends Object {
     storeArgs(arg0: AbstractInsnNode[], arg1: Type[], arg2: AbstractInsnNode[], arg3: number[], arg4: number, arg5: number, arg6: LabelNode, arg7: LabelNode): void;
     throwException(arg0: AbstractInsnNode[], arg1: Target$Extension, arg2: string, arg3: string): void;
     toString(): string;
-    validateParams(arg0: Injector$InjectorData, arg1: Type, arg2: Type[]): void;
+    validateParams(arg0: Injector$InjectorData, arg1: Type, ...arg2: Type[]): void;
 }

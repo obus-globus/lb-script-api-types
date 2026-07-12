@@ -19,7 +19,7 @@ export class OptionsList extends ContainerObjectSelectionList<OptionsList$Abstra
     addBig(option: OptionInstance<Object>): void;
     addBig(widget: AbstractWidget): void;
     addHeader(text: Component): void;
-    addSmall(options: OptionInstance<Object>[]): void;
+    addSmall(...options: OptionInstance<Object>[]): void;
     addSmall(widgets: AbstractWidget[]): void;
     addSmall(firstOption: AbstractWidget, firstOptionInstance: OptionInstance<Object>, secondOption: AbstractWidget): void;
     addSmall(firstOption: AbstractWidget, secondOption: AbstractWidget): void;

@@ -19,7 +19,7 @@ export abstract class LazyKProperty<V extends unknown, D extends KProperty<V>> e
     readonly returnType: KType;
     readonly typeParameters: KTypeParameter[];
     readonly visibility: KVisibility | null;
-    call(args: (Object | null)[]): V;
+    call(...args: (Object | null)[]): V;
     callBy(args: Map<KParameter, Object | null>): V;
     equals(other: Object | null): boolean;
     hashCode(): number;

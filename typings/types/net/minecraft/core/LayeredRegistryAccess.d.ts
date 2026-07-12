@@ -11,5 +11,6 @@ export class LayeredRegistryAccess<T extends unknown> extends Object {
     // private getCompositeAccessForLayers(from: number, to: number): RegistryAccess$Frozen;
     getLayer(layer: T): RegistryAccess$Frozen;
     // private getLayerIndexOrThrow(layer: T): number;
+    replaceFrom(fromLayer: T, ...layers: RegistryAccess$Frozen[]): LayeredRegistryAccess<T>;
     replaceFrom(fromLayer: T, layers: RegistryAccess$Frozen[]): LayeredRegistryAccess<T>;
 }

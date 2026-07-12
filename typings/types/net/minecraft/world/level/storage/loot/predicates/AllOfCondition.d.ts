@@ -12,7 +12,7 @@ export class AllOfCondition extends CompositeLootItemCondition {
     static MAP_CODEC: MapCodec<AllOfCondition>;
     static TYPED_CODEC: Codec<LootItemCondition>;
     static allOf(paramterms: LootItemCondition[]): AllOfCondition;
-    static allOf(paramterms: (Object | null)[]): AllOfCondition$Builder;
+    static allOf(...paramterms: (Object | null)[]): AllOfCondition$Builder;
     private constructor(terms: LootItemCondition[])
     codec(): MapCodec<AllOfCondition>;
 }

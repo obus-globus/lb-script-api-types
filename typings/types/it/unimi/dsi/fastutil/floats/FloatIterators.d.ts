@@ -20,7 +20,7 @@ export class FloatIterators extends Object {
     static any(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): boolean;
     static asFloatIterator(paramarg0: Iterator<Object>): FloatIterator;
     static asFloatIterator(paramarg0: ListIterator<Object>): FloatListIterator;
-    static concat(paramarg0: (Object | null)[]): FloatIterator;
+    static concat(...paramarg0: (Object | null)[]): FloatIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): FloatIterator;
     static indexOf(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): number;
     static indexOf(paramarg0: FloatIterator, paramarg1: (param0: number) => boolean): number;

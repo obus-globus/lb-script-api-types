@@ -15,7 +15,7 @@ export interface ReflectKCallable<R extends unknown> extends Object, KCallable<R
     readonly modality: Modality;
     readonly overriddenStorage: KCallableOverriddenStorage;
     readonly rawBoundReceiver: Object | null;
-    call(args: (Object | null)[]): R;
+    call(...args: (Object | null)[]): R;
     callBy(args: Map<KParameter, Object | null>): R;
     getAbsentArguments(): (Object | null)[];
     shallowCopy(container: KDeclarationContainerImpl, overriddenStorage: KCallableOverriddenStorage): ReflectKCallable<R>;

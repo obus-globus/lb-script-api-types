@@ -23,7 +23,7 @@ export class PathPackResources extends AbstractPackResources {
     close(): void;
     getNamespaces(type: PackType): string[];
     getResource(type: PackType, location: Identifier): () => InputStream;
-    getRootResource(path: string[]): () => InputStream;
+    getRootResource(...path: string[]): () => InputStream;
     listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
     // private topPackDir(type: PackType): Path[];
 }

@@ -9,7 +9,7 @@ export class StateDefinition$Builder<O extends unknown, S extends StateHolder<O,
     constructor(owner: O)
     // private owner: O;
     // private properties: { [key: string]: Property<any> };
-    add(properties: Property<any>[]): StateDefinition$Builder<O, S>;
+    add(...properties: Property<any>[]): StateDefinition$Builder<O, S>;
     create(defaultState: (param0: O) => S, factory: StateDefinition$Factory<O, S>): StateDefinition<O, S>;
     // private validateProperty<T extends Comparable<T>>(property: Property<T>): void;
 }

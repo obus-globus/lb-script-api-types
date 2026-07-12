@@ -8387,7 +8387,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 143
+      "line": 144
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.compositeIfNeeded": {
@@ -8395,7 +8395,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 152
+      "line": 153
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.isHeldItemSubmit": {
@@ -8403,7 +8403,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 123
+      "line": 124
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.markHeldItemSubmitIfActive": {
@@ -8411,7 +8411,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 114
+      "line": 115
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapCurrentHeldItemRenderTypeIfNeeded": {
@@ -8419,7 +8419,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 137
+      "line": 138
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapHeldItemRenderTypeIfNeeded": {
@@ -8427,7 +8427,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 127
+      "line": 128
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.remapIfNeeded": {
@@ -8435,7 +8435,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 95
+      "line": 96
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleChams.withHeldItemContext": {
@@ -8443,7 +8443,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleChams.kt",
-      "line": 105
+      "line": 106
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleClickGui": {
@@ -8613,6 +8613,14 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt",
+      "line": 109
+    }
+  },
+  "net.ccbluex.liquidbounce.features.module.modules.render.ModuleHud.Blur.sigma": {
+    "doc": "Gaussian sigma controlling blur strength. Higher values produce stronger blur.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt",
       "line": 104
     }
   },
@@ -8621,7 +8629,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleHud.kt",
-      "line": 125
+      "line": 130
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleItemChams": {
@@ -11045,7 +11053,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 139
+      "line": 141
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.JCEF_COMPATIBLE_BLEND": {
@@ -11064,7 +11072,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 219
+      "line": 221
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.Outline": {
@@ -11076,7 +11084,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 407
+      "line": 409
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.OutlineQuads": {
@@ -11088,7 +11096,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 305
+      "line": 307
     }
   },
   "net.ccbluex.liquidbounce.render.ClientRenderPipelines.precompile": {
@@ -11096,7 +11104,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/ClientRenderPipelines.kt",
-      "line": 465
+      "line": 481
     }
   },
   "net.ccbluex.liquidbounce.render.ClientVertexFormats.GRADIENT_CIRCLE": {
@@ -11248,105 +11256,12 @@
       "line": 155
     }
   },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer": {
-    "doc": "A growable [GpuBuffer] wrapper for streaming GPU data (e.g. dynamic VBO/IBO uploads).\n\nThis class acts like a simple linear allocator on top of [MappableRingBuffer]:\nmultiple uploads can append to the current buffer until it runs out of space,\nthen it automatically rotates to the next backing buffer. If the requested\nupload is larger than the backing buffer size, the ring is grown.\n\nBehavior for each upload(data):\n1) If there is enough space after the last write, append to the current buffer.\n2) If the buffer is large enough but the remaining space is not, rotate() and write from offset 0.\n3) If the entire ring buffer is too small, grow it and write from offset 0.\n\n@author MukjepScarlet",
-    "kind": "class",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 50
-    }
-  },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer.BUFFERS_TO_CLOSE": {
-    "doc": "[MappableRingBuffer] to be closed.",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 193
-    }
-  },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer.GrowPolicy.DEFAULT": {
-    "doc": "128 bytes padding, minimum 0",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 177
-    }
-  },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer.GrowPolicy.getNewSize": {
-    "doc": "Calculate the new size of the ring buffer.",
-    "params": {
-      "requested": "The requested size for this upload.",
-      "current": "The current buffer size, or 0 if uninitialized."
-    },
-    "returns": "A new size, which should be >= [requested].",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 171
-    }
-  },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer.cleanup": {
-    "doc": "Checks and closes discarded [MappableRingBuffer] instances that are safe to release.\n\nThis method cleans up old backing buffers that were replaced when the ring buffer grew.\nIt should be called periodically (e.g. end of frame) to ensure GPU resources are released.",
-    "see": [
-      "net.ccbluex.liquidbounce.injection.mixins.blaze3d.MixinRenderSystem.onFlipFrame"
-    ],
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 204
-    }
-  },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer.clear": {
-    "doc": "Clear the ring buffer and release all GPU resources.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 157
-    }
-  },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer.currentOffset": {
-    "doc": "Current write offset (in bytes) into the *current* GPU buffer\nreturned by [MappableRingBuffer.currentBuffer].",
-    "kind": "property",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 62
-    }
-  },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer.ensureCapacityFor": {
-    "doc": "Ensure there is a ring buffer allocated that can hold at least [minSize] bytes\nin a single contiguous upload. If not, a new [MappableRingBuffer] is created\nwith a size determined by [growPolicy], and the old one is scheduled for\ndeferred close.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 70
-    }
-  },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer.rotate": {
-    "doc": "Manually rotate the ring buffer to the next backing buffer and reset the\ncurrent write offset. This is useful for per-frame usage patterns where\neach frame starts writing from a fresh buffer.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 149
-    }
-  },
-  "net.ccbluex.liquidbounce.render.GrowableMappableRingBuffer.upload": {
-    "doc": "Upload [data] into the ring buffer and return a slice covering the written region.\n\nUpload decision:\n1. Align the current write offset to [alignment].\n2. If the current buffer has enough remaining space, append at the aligned offset.\n3. Otherwise, if the buffer is large enough, rotate() and write from offset 0.\n4. If the buffer is still too small for this upload, grow the ring and write from 0.",
-    "params": {
-      "data": "The data to upload. Its remaining() bytes will be copied.",
-      "alignment": "Byte alignment for the returned slice offset."
-    },
-    "returns": "The uploaded [GpuBufferSlice]. Its lifetime is tied to the underlying ring buffer.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/GrowableMappableRingBuffer.kt",
-      "line": 102
-    }
-  },
   "net.ccbluex.liquidbounce.render.GuiGraphicsExtractor.drawHorizontalLine": {
     "doc": "Float version of [GuiGraphicsExtractor.drawHorizontalLine]",
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt",
-      "line": 258
+      "line": 259
     }
   },
   "net.ccbluex.liquidbounce.render.GuiGraphicsExtractor.drawVerticalLine": {
@@ -11354,13 +11269,13 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/Render2D.kt",
-      "line": 265
+      "line": 266
     }
   },
   "net.ccbluex.liquidbounce.render.GuiGraphicsExtractor.getBounds": {
     "doc": "",
     "see": [
-      "net.minecraft.client.gui.render.state.ColoredRectangleRenderState.getBounds"
+      "net.minecraft.client.renderer.state.gui.ColoredRectangleRenderState.getBounds"
     ],
     "kind": "function",
     "source": {
@@ -11371,7 +11286,7 @@
   "net.ccbluex.liquidbounce.render.GuiGraphicsExtractor.getBoundsXYWH": {
     "doc": "",
     "see": [
-      "net.minecraft.client.gui.render.state.ColoredRectangleRenderState.getBounds"
+      "net.minecraft.client.renderer.state.gui.ColoredRectangleRenderState.getBounds"
     ],
     "kind": "function",
     "source": {
@@ -11598,12 +11513,102 @@
       }
     }
   ],
+  "net.ccbluex.liquidbounce.render.buffers.CachedUniform": {
+    "doc": "Retains the last uniform slice across frames and uploads a new one only when [T] changes.\n\nThe backing ring buffer prevents an update from overwriting data still consumed by the GPU.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/CachedUniform.kt",
+      "line": 32
+    }
+  },
+  "net.ccbluex.liquidbounce.render.buffers.DynamicGpuBufferWriter": {
+    "doc": "Per-frame dynamic [com.mojang.blaze3d.buffers.GpuBuffer] writer for streaming VBO/IBO uploads.\n\nFollows vanilla's [net.minecraft.client.renderer.StagedVertexBuffer] pattern:\nCPU data is written to a properly-flagged GPU buffer via [com.mojang.blaze3d.systems.CommandEncoder.writeToBuffer],\nwhich performs an immediate DMA copy without mapping. Buffers are recycled via fence when the GPU\nhas finished consuming them.\n\nUnlike [net.minecraft.client.renderer.MappableRingBuffer],\nthis class does not use persistent mapping, avoiding the fence\nissue of wrapping within a single command encoder submit.\n\n## Lifecycle\n- [upload]: acquire/write data (auto-grows buffer as needed)\n- [endFrame]: fence the current buffer for recycling\n\n@author MukjepScarlet",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt",
+      "line": 49
+    }
+  },
+  "net.ccbluex.liquidbounce.render.buffers.DynamicGpuBufferWriter.GrowPolicy.DEFAULT": {
+    "doc": "128 bytes padding, minimum 0.",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt",
+      "line": 161
+    }
+  },
+  "net.ccbluex.liquidbounce.render.buffers.DynamicGpuBufferWriter.GrowPolicy.getNewSize": {
+    "doc": "Calculate the new buffer size.",
+    "params": {
+      "requested": "The required size for this upload.",
+      "current": "The current buffer size, or 0 if uninitialized."
+    },
+    "returns": "A new size, which should be >= [requested].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt",
+      "line": 155
+    }
+  },
+  "net.ccbluex.liquidbounce.render.buffers.DynamicGpuBufferWriter.endFrame": {
+    "doc": "End the current frame: fence all buffers used by this writer for deferred recycling.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt",
+      "line": 121
+    }
+  },
+  "net.ccbluex.liquidbounce.render.buffers.DynamicGpuBufferWriter.peakBytes": {
+    "doc": "Peak bytes written in the current frame (for adaptive sizing).",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt",
+      "line": 145
+    }
+  },
+  "net.ccbluex.liquidbounce.render.buffers.DynamicGpuBufferWriter.upload": {
+    "doc": "Upload [data] into the buffer and return a slice.",
+    "params": {
+      "data": "Byte data to upload. Its [java.nio.Buffer.remaining] bytes are copied.",
+      "alignment": "Byte alignment for the slice offset."
+    },
+    "returns": "A [com.mojang.blaze3d.buffers.GpuBufferSlice] covering the uploaded region.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/DynamicGpuBufferWriter.kt",
+      "line": 70
+    }
+  },
+  "net.ccbluex.liquidbounce.render.buffers.FrameGpuBufferPool": {
+    "doc": "Reuses dynamic GPU buffers after the frame that referenced them has completed on the GPU.\n\nA pool is owned by one [DynamicGpuBufferWriter]. All buffers retired during a frame share\none fence, which is created immediately before vanilla submits the frame command buffer.",
+    "kind": "class",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt",
+      "line": 32
+    }
+  },
+  "net.ccbluex.liquidbounce.render.buffers.FrameGpuBufferPool.endFrame": {
+    "doc": "Recycles completed frames and fences all buffers used by the current frame.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt",
+      "line": 67
+    }
+  },
+  "net.ccbluex.liquidbounce.render.engine.BlurEffectRenderer.writeKernel": {
+    "doc": "Precomputes normalized Gaussian kernel weights packed as vec4[23] into the kernel UBO.\nWeights are already normalized so the shader just sums weighted samples — no exp(), no division.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/BlurEffectRenderer.kt",
+      "line": 155
+    }
+  },
   "net.ccbluex.liquidbounce.render.engine.LazyRenderTargetHolder": {
     "doc": "A holder for a RenderTarget that initializes it lazily and handles resizing.",
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
-      "line": 32
+      "line": 33
     }
   },
   "net.ccbluex.liquidbounce.render.engine.LazyRenderTargetHolder.close": {
@@ -11611,17 +11616,27 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
-      "line": 42
+      "line": 51
     }
   },
-  "net.ccbluex.liquidbounce.render.engine.LazyRenderTargetHolder.initAndGet": {
-    "doc": "Initializes the RenderTarget if needed, or resizes/clears it if it already exists, then returns it.",
-    "kind": "function",
-    "source": {
-      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
-      "line": 50
+  "net.ccbluex.liquidbounce.render.engine.LazyRenderTargetHolder.initAndGet": [
+    {
+      "doc": "Initializes the RenderTarget if needed, or resizes/clears it if it already exists, then returns it.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
+        "line": 59
+      }
+    },
+    {
+      "doc": "Initializes the RenderTarget with the requested size.",
+      "kind": "function",
+      "source": {
+        "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/LazyRenderTargetHolder.kt",
+        "line": 64
+      }
     }
-  },
+  ],
   "net.ccbluex.liquidbounce.render.engine.OutlineShaderRenderer": {
     "doc": "For [net.ccbluex.liquidbounce.features.module.modules.render.ModuleBlockESP] outline mode.",
     "see": [
@@ -12120,7 +12135,15 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
-      "line": 45
+      "line": 42
+    }
+  },
+  "net.ccbluex.liquidbounce.render.mesh.MeshDraw.IndexUploader.upload": {
+    "doc": "Uploads index data.\n\nThe returned slice's byte offset must be aligned to [IndexType.bytes] for [type].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
+      "line": 93
     }
   },
   "net.ccbluex.liquidbounce.render.mesh.MeshDraw.MeshIndexBinding": {
@@ -12128,7 +12151,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
-      "line": 59
+      "line": 56
     }
   },
   "net.ccbluex.liquidbounce.render.mesh.MeshDraw.MeshIndexBinding.Sequential": {
@@ -12136,7 +12159,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
-      "line": 75
+      "line": 72
     }
   },
   "net.ccbluex.liquidbounce.render.mesh.MeshDraw.MeshIndexBinding.Uploaded": {
@@ -12144,7 +12167,15 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
-      "line": 63
+      "line": 60
+    }
+  },
+  "net.ccbluex.liquidbounce.render.mesh.MeshDraw.VertexUploader.upload": {
+    "doc": "Uploads vertex data.\n\nThe returned slice's byte offset must be aligned to [VertexFormat.vertexSize] for [format].",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
+      "line": 84
     }
   },
   "net.ccbluex.liquidbounce.render.mesh.MeshDraw.bindAndDraw": {
@@ -12152,23 +12183,39 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
-      "line": 182
+      "line": 203
     }
   },
-  "net.ccbluex.liquidbounce.render.mesh.MeshDraw.sharedIboGetter": {
-    "doc": "Shared dynamic IBO pool (keyed by [IndexType] for auto-alignment).\n\nThis is the default upload target for per-frame dynamic meshes.",
+  "net.ccbluex.liquidbounce.render.mesh.MeshDraw.close": {
+    "doc": "Release the shared per-frame upload buffers before the render device is shut down.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
+      "line": 143
+    }
+  },
+  "net.ccbluex.liquidbounce.render.mesh.MeshDraw.endFrame": {
+    "doc": "End the current frame for all shared writers. After this call, all active buffers\nare fenced for recycling.\n\nMust be called once per frame after all draw calls that reference uploaded slices\nhave been submitted.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
+      "line": 135
+    }
+  },
+  "net.ccbluex.liquidbounce.render.mesh.MeshDraw.sharedIbo": {
+    "doc": "Shared dynamic IBO writer for per-frame meshes.\n\nIndex uploads are aligned to their respective [IndexType.bytes].",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
-      "line": 110
+      "line": 114
     }
   },
-  "net.ccbluex.liquidbounce.render.mesh.MeshDraw.sharedVboGetter": {
-    "doc": "Shared dynamic VBO pool (keyed by [VertexFormat] for auto-alignment).\n\nThis is the default upload target for per-frame dynamic meshes.",
+  "net.ccbluex.liquidbounce.render.mesh.MeshDraw.sharedVbo": {
+    "doc": "Shared dynamic VBO writer for per-frame meshes.\n\nVertex uploads are aligned to their respective [VertexFormat.vertexSize].",
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
-      "line": 96
+      "line": 103
     }
   },
   "net.ccbluex.liquidbounce.render.mesh.MeshDraw.toMeshDraw": {
@@ -12177,7 +12224,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt",
-      "line": 142
+      "line": 163
     }
   },
   "net.ccbluex.liquidbounce.render.mesh.RenderPipeline.canConsolidateConsecutiveGeometry": {

@@ -7,7 +7,7 @@ import type { FixedDateFormat$FixedTimeZoneFormat } from '../../../../../../../o
 export class FixedDateFormat extends Object {
     static create(paramformat: FixedDateFormat$FixedFormat): FixedDateFormat;
     static create(paramformat: FixedDateFormat$FixedFormat, paramtz: TimeZone): FixedDateFormat;
-    static createIfSupported(paramoptions: (Object | null)[]): FixedDateFormat;
+    static createIfSupported(...paramoptions: (Object | null)[]): FixedDateFormat;
     constructor(fixedFormat: FixedDateFormat$FixedFormat, tz: TimeZone)
     constructor(fixedFormat: FixedDateFormat$FixedFormat, tz: TimeZone, secondFractionDigits: number)
     // private cachedDate: string[];

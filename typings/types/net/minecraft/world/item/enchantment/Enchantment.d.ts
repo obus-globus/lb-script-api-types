@@ -42,8 +42,8 @@ export class Enchantment extends Record {
     static blockHitContext(paramserverLevel: ServerLevel, paramenchantmentLevel: number, paramentity: Entity, paramposition: Vec3, paramhitBlock: BlockState): LootContext;
     static constantCost(parambase: number): Enchantment$Cost;
     static damageContext(paramserverLevel: ServerLevel, paramenchantmentLevel: number, paramvictim: Entity, paramsource: DamageSource): LootContext;
-    static definition(paramsupportedItems: Holder<Item>[], paramweight: number, parammaxLevel: number, paramminCost: Enchantment$Cost, parammaxCost: Enchantment$Cost, paramanvilCost: number, paramslots: (Object | null)[]): Enchantment$EnchantmentDefinition;
-    static definition(paramsupportedItems: Holder<Item>[], paramprimaryItems: Holder<Item>[], paramweight: number, parammaxLevel: number, paramminCost: Enchantment$Cost, parammaxCost: Enchantment$Cost, paramanvilCost: number, paramslots: (Object | null)[]): Enchantment$EnchantmentDefinition;
+    static definition(paramsupportedItems: Holder<Item>[], paramweight: number, parammaxLevel: number, paramminCost: Enchantment$Cost, parammaxCost: Enchantment$Cost, paramanvilCost: number, ...paramslots: (Object | null)[]): Enchantment$EnchantmentDefinition;
+    static definition(paramsupportedItems: Holder<Item>[], paramprimaryItems: Holder<Item>[], paramweight: number, parammaxLevel: number, paramminCost: Enchantment$Cost, parammaxCost: Enchantment$Cost, paramanvilCost: number, ...paramslots: (Object | null)[]): Enchantment$EnchantmentDefinition;
     static doPostAttack(parameffect: TargetedConditionalEffect<EnchantmentEntityEffect>, paramserverLevel: ServerLevel, paramenchantmentLevel: number, paramitem: EnchantedItemInUse, paramvictim: Entity, paramdamageSource: DamageSource): void;
     static dynamicCost(parambase: number, paramperLevel: number): Enchantment$Cost;
     static enchantment(paramdefinition: Enchantment$EnchantmentDefinition): Enchantment$Builder;

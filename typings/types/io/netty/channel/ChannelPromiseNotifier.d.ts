@@ -10,6 +10,6 @@ export class ChannelPromiseNotifier extends PromiseNotifier<void, ChannelFuture>
     static FIRE_EXCEPTION_ON_FAILURE: ChannelFutureListener;
     static cascade(paramarg0: Object | null, paramarg1: Promise<Object>): Object | null;
     static cascade(paramarg0: boolean, paramarg1: Object | null, paramarg2: Promise<Object>): Object | null;
-    constructor(arg0: ChannelPromise[])
-    constructor(arg0: boolean, arg1: ChannelPromise[])
+    constructor(...arg0: ChannelPromise[])
+    constructor(arg0: boolean, ...arg1: ChannelPromise[])
 }

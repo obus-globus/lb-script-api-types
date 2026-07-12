@@ -5,7 +5,7 @@ import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 export class SequenceReader extends Reader {
     static nullReader(): Reader;
     static of(paramarg0: CharSequence): Reader;
-    constructor(arg0: Reader[])
+    constructor(...arg0: Reader[])
     constructor(arg0: Reader[])
     // private reader: Reader;
     // private readers: Iterator<Reader>;

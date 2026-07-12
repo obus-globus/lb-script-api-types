@@ -17,7 +17,7 @@ export class TypeRewriteRule$Everywhere extends Object implements TypeRewriteRul
     static orElse(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
     static orElse(paramarg0: TypeRewriteRule, paramarg1: () => TypeRewriteRule): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
-    static seq(paramarg0: TypeRewriteRule, paramarg1: (Object | null)[]): TypeRewriteRule;
+    static seq(paramarg0: TypeRewriteRule, ...paramarg1: (Object | null)[]): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule[]): TypeRewriteRule;
     constructor(arg0: TypeRewriteRule, arg1: PointFreeRule, arg2: boolean, arg3: boolean)
     // private checkIndex: boolean;

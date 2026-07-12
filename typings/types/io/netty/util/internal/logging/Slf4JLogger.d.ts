@@ -8,19 +8,19 @@ export class Slf4JLogger extends AbstractInternalLogger {
     debug(arg0: string): void;
     debug(arg0: string, arg1: Object): void;
     debug(arg0: string, arg1: Object, arg2: Object): void;
-    debug(arg0: string, arg1: Object[]): void;
+    debug(arg0: string, ...arg1: Object[]): void;
     debug(arg0: string, arg1: Throwable): void;
     debug(arg0: Throwable): void;
     error(arg0: string): void;
     error(arg0: string, arg1: Object): void;
     error(arg0: string, arg1: Object, arg2: Object): void;
-    error(arg0: string, arg1: Object[]): void;
+    error(arg0: string, ...arg1: Object[]): void;
     error(arg0: string, arg1: Throwable): void;
     error(arg0: Throwable): void;
     info(arg0: string): void;
     info(arg0: string, arg1: Object): void;
     info(arg0: string, arg1: Object, arg2: Object): void;
-    info(arg0: string, arg1: Object[]): void;
+    info(arg0: string, ...arg1: Object[]): void;
     info(arg0: string, arg1: Throwable): void;
     info(arg0: Throwable): void;
     isDebugEnabled(): boolean;
@@ -31,13 +31,13 @@ export class Slf4JLogger extends AbstractInternalLogger {
     trace(arg0: string): void;
     trace(arg0: string, arg1: Object): void;
     trace(arg0: string, arg1: Object, arg2: Object): void;
-    trace(arg0: string, arg1: Object[]): void;
+    trace(arg0: string, ...arg1: Object[]): void;
     trace(arg0: string, arg1: Throwable): void;
     trace(arg0: Throwable): void;
     warn(arg0: string): void;
     warn(arg0: string, arg1: Object): void;
     warn(arg0: string, arg1: Object, arg2: Object): void;
-    warn(arg0: string, arg1: Object[]): void;
+    warn(arg0: string, ...arg1: Object[]): void;
     warn(arg0: string, arg1: Throwable): void;
     warn(arg0: Throwable): void;
 }

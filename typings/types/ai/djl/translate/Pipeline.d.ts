@@ -4,7 +4,7 @@ import type { Pair } from '../../../ai/djl/util/Pair.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Pipeline extends Object {
     constructor()
-    constructor(arg0: Transform[])
+    constructor(...arg0: Transform[])
     readonly transforms: Pair<Pipeline$IndexKey, Transform>[];
     add(arg0: Transform): Pipeline;
     add(arg0: number, arg1: Transform): Pipeline;

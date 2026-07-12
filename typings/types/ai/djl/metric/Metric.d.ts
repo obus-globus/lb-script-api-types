@@ -5,9 +5,9 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
 export class Metric extends Object {
     static parse(paramarg0: string): Metric;
-    constructor(arg0: string, arg1: MetricType, arg2: Number, arg3: Unit, arg4: Dimension[])
+    constructor(arg0: string, arg1: MetricType, arg2: Number, arg3: Unit, ...arg4: Dimension[])
     constructor(arg0: string, arg1: Number)
-    constructor(arg0: string, arg1: Number, arg2: Unit, arg3: Dimension[])
+    constructor(arg0: string, arg1: Number, arg2: Unit, ...arg3: Dimension[])
     readonly dimensions: Dimension[];
     readonly metricName: string;
     readonly metricType: MetricType;

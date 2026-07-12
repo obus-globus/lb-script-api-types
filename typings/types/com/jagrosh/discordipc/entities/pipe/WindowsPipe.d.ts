@@ -6,7 +6,7 @@ import type { File } from '../../../../../java/io/File.d.ts'
 import type { RandomAccessFile } from '../../../../../java/io/RandomAccessFile.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class WindowsPipe extends Pipe {
-    static openPipe(paramarg0: IPCClient, paramarg1: number, paramarg2: { [key: string]: Callback }, paramarg3: (Object | null)[]): Pipe;
+    static openPipe(paramarg0: IPCClient, paramarg1: number, paramarg2: { [key: string]: Callback }, ...paramarg3: (Object | null)[]): Pipe;
     constructor(arg0: IPCClient, arg1: { [key: string]: Callback }, arg2: File)
     file: RandomAccessFile;
     // private targetKey: number;

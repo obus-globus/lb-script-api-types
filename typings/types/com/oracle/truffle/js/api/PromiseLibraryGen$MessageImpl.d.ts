@@ -5,5 +5,5 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PromiseLibraryGen$MessageImpl extends Message {
     static resolve(paramlibraryClass: Class<Library>, parammessageName: string): Message;
     static resolve(paramlibraryClass: Class<Library>, parammessageName: string, paramfail: boolean): Message;
-    constructor(name: string, index: number, deprecated: boolean, returnType: Class<Object>, parameters: Class<Object>[])
+    constructor(name: string, index: number, deprecated: boolean, returnType: Class<Object>, ...parameters: Class<Object>[])
 }

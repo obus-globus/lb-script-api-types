@@ -16,7 +16,7 @@ import type { Accessor$StringsSupport } from '../../../../../com/oracle/truffle/
 import type { FrameWithoutBoxing } from '../../../../../com/oracle/truffle/api/impl/FrameWithoutBoxing.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Accessor extends Object {
-    static main(paramargs: (Object | null)[]): void;
+    static main(...paramargs: (Object | null)[]): void;
     constructor()
     engineSupport(): Accessor$EngineSupport;
     exceptionSupport(): Accessor$ExceptionSupport;

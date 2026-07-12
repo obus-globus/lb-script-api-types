@@ -24,5 +24,5 @@ export class AFUNIXSocketImpl extends AFSocketImpl<AFUNIXSocketAddress> {
     getReceivedFileDescriptors(): FileDescriptor[];
     hasOutboundFileDescriptors(): boolean;
     receiveFileDescriptors(arg0: number[]): void;
-    setOutboundFileDescriptors(arg0: FileDescriptor[]): void;
+    setOutboundFileDescriptors(...arg0: FileDescriptor[]): void;
 }

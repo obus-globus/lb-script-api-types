@@ -24,7 +24,7 @@ export class Knot extends FabricLauncherBase {
     // private properties: { [key: string]: Object };
     // private provider: GameProvider;
     // private unlocked: boolean;
-    addToClassPath(arg0: Path[], arg1: string[]): void;
+    addToClassPath(arg0: Path[], ...arg1: string[]): void;
     // private createGameProvider(arg0: string[]): GameProvider;
     getClassByteArray(arg0: string, arg1: boolean): number[];
     getClassPath(): Path[][];
@@ -36,6 +36,6 @@ export class Knot extends FabricLauncherBase {
     init(arg0: string[]): ClassLoader;
     isClassLoaded(arg0: string): boolean;
     loadIntoTarget(arg0: string): Class<Object>;
-    setAllowedPrefixes(arg0: Path[], arg1: string[]): void;
+    setAllowedPrefixes(arg0: Path[], ...arg1: string[]): void;
     setValidParentClassPath(arg0: Path[][]): void;
 }

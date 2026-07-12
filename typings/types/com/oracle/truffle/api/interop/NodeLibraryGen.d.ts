@@ -13,7 +13,7 @@ export class NodeLibraryGen extends LibraryFactory<NodeLibrary> {
     createAssertions(delegate: NodeLibrary): NodeLibrary;
     createDelegate(delegateLibrary: NodeLibrary): NodeLibrary;
     createDispatchImpl(limit: number): NodeLibrary;
-    createMessageBitSet(messages: Message[]): FinalBitSet;
+    createMessageBitSet(...messages: Message[]): FinalBitSet;
     createProxy(library: ReflectionLibrary): NodeLibrary;
     createUncachedDispatch(): NodeLibrary;
     genericDispatch(originalLib: Library, receiver: Object, message: Message, args: Object[], offset: number): Object;

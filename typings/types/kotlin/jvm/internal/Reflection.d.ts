@@ -40,7 +40,7 @@ export class Reflection extends Object {
     static nullableTypeOf(paramarg0: Class<Object>): KType;
     static nullableTypeOf(paramarg0: Class<Object>, paramarg1: KTypeProjection): KType;
     static nullableTypeOf(paramarg0: Class<Object>, paramarg1: KTypeProjection, paramarg2: KTypeProjection): KType;
-    static nullableTypeOf(paramarg0: Class<Object>, paramarg1: (Object | null)[]): KType;
+    static nullableTypeOf(paramarg0: Class<Object>, ...paramarg1: (Object | null)[]): KType;
     static nullableTypeOf(paramarg0: KClassifier): KType;
     static platformType(paramarg0: KType, paramarg1: KType): KType;
     static property0(paramarg0: PropertyReference0): KProperty0<Object>;
@@ -49,11 +49,11 @@ export class Reflection extends Object {
     static renderLambdaToString(paramarg0: FunctionBase<Object>): string;
     static renderLambdaToString(paramarg0: Lambda<Object>): string;
     static setUpperBounds(paramarg0: KTypeParameter, paramarg1: KType): void;
-    static setUpperBounds(paramarg0: KTypeParameter, paramarg1: (Object | null)[]): void;
+    static setUpperBounds(paramarg0: KTypeParameter, ...paramarg1: (Object | null)[]): void;
     static typeOf(paramarg0: Class<Object>): KType;
     static typeOf(paramarg0: Class<Object>, paramarg1: KTypeProjection): KType;
     static typeOf(paramarg0: Class<Object>, paramarg1: KTypeProjection, paramarg2: KTypeProjection): KType;
-    static typeOf(paramarg0: Class<Object>, paramarg1: (Object | null)[]): KType;
+    static typeOf(paramarg0: Class<Object>, ...paramarg1: (Object | null)[]): KType;
     static typeOf(paramarg0: KClassifier): KType;
     static typeParameter(paramarg0: Object, paramarg1: string, paramarg2: KVariance, paramarg3: boolean): KTypeParameter;
     constructor()

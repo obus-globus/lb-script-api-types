@@ -14,7 +14,7 @@ export class ArrayDataset extends RandomAccessDataset {
     // private labels: NDArray[];
     availableSize(): number;
     get(arg0: NDManager, arg1: number): Record;
-    getByIndices(arg0: NDManager, arg1: number[]): Batch;
+    getByIndices(arg0: NDManager, ...arg1: number[]): Batch;
     getByRange(arg0: NDManager, arg1: number, arg2: number): Batch;
     getData(arg0: NDManager): Batch[];
     getData(arg0: NDManager, arg1: Sampler): Batch[];

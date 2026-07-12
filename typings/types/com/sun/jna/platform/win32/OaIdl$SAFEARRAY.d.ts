@@ -17,11 +17,11 @@ export class OaIdl$SAFEARRAY extends Structure implements Closeable {
     static autoRead(paramarg0: (Object | null)[]): void;
     static autoWrite(paramarg0: (Object | null)[]): void;
     static createFieldsOrder(paramarg0: string): string[];
-    static createFieldsOrder(paramarg0: (Object | null)[]): string[];
-    static createFieldsOrder(paramarg0: string[], paramarg1: (Object | null)[]): string[];
+    static createFieldsOrder(...paramarg0: (Object | null)[]): string[];
+    static createFieldsOrder(paramarg0: string[], ...paramarg1: (Object | null)[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static createSafeArray(paramarg0: WTypes$VARTYPE, paramarg1: number[]): OaIdl$SAFEARRAY$ByReference;
-    static createSafeArray(paramarg0: number[]): OaIdl$SAFEARRAY$ByReference;
+    static createSafeArray(paramarg0: WTypes$VARTYPE, ...paramarg1: number[]): OaIdl$SAFEARRAY$ByReference;
+    static createSafeArray(...paramarg0: number[]): OaIdl$SAFEARRAY$ByReference;
     static newInstance(paramarg0: Class<Structure>): Structure | null;
     static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
     constructor()
@@ -36,14 +36,14 @@ export class OaIdl$SAFEARRAY extends Structure implements Closeable {
     close(): void;
     destroy(): void;
     getDimensionCount(): number;
-    getElement(arg0: number[]): Object;
+    getElement(...arg0: number[]): Object;
     getElemsize(): number;
     getLBound(arg0: number): number;
     getUBound(arg0: number): number;
     getVarType(): WTypes$VARTYPE;
     lock(): void;
-    ptrOfIndex(arg0: number[]): Pointer;
-    putElement(arg0: Object, arg1: number[]): void;
+    ptrOfIndex(...arg0: number[]): Pointer;
+    putElement(arg0: Object, ...arg1: number[]): void;
     read(): void;
     redim(arg0: number, arg1: number): void;
     unaccessData(): void;

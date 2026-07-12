@@ -10,12 +10,12 @@ export abstract class Remapper extends Object {
     createSignatureRemapper(arg0: SignatureVisitor): SignatureVisitor;
     map(arg0: string): string;
     mapAnnotationAttributeName(arg0: string, arg1: string): string;
-    mapBasicInvokeDynamicMethodName(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): string;
+    mapBasicInvokeDynamicMethodName(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): string;
     mapDesc(arg0: string): string;
     mapFieldName(arg0: string, arg1: string, arg2: string): string;
     mapInnerClassName(arg0: string, arg1: string, arg2: string): string;
     mapInvokeDynamicMethodName(arg0: string, arg1: string): string;
-    mapInvokeDynamicMethodName(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): string;
+    mapInvokeDynamicMethodName(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): string;
     mapMethodDesc(arg0: string): string;
     mapMethodName(arg0: string, arg1: string, arg2: string): string;
     mapModuleName(arg0: string): string;
@@ -26,5 +26,5 @@ export abstract class Remapper extends Object {
     // private mapType(arg0: Type): Type;
     mapTypes(arg0: string[]): string[];
     mapValue(arg0: Object): Object;
-    mapWellKnownInvokeDynamicMethodName(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): string;
+    mapWellKnownInvokeDynamicMethodName(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): string;
 }

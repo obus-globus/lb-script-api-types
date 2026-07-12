@@ -14,6 +14,6 @@ export class VarHandle$AccessType extends Enum<VarHandle$AccessType> {
     private constructor(arg2: Class<Object>)
     // private isMonomorphicInReturnType: boolean;
     // private returnType: Class<Object>;
-    accessModeType(arg0: Class<Object>, arg1: Class<Object>, arg2: Class<Object>[]): MethodType;
+    accessModeType(arg0: Class<Object>, arg1: Class<Object>, ...arg2: Class<Object>[]): MethodType;
     name(): "GET" | "SET" | "COMPARE_AND_SET" | "COMPARE_AND_EXCHANGE" | "GET_AND_UPDATE";
 }

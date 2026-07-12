@@ -5,5 +5,5 @@ export class AllocationEventFilter$Builder extends Object {
     constructor(null_: AllocationEventFilter)
     // private langs: LanguageInfo[];
     build(): AllocationEventFilter;
-    languages(languages: LanguageInfo[]): AllocationEventFilter$Builder;
+    languages(...languages: LanguageInfo[]): AllocationEventFilter$Builder;
 }

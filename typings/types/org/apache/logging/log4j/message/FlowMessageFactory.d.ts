@@ -3,7 +3,7 @@ import type { EntryMessage } from '../../../../../org/apache/logging/log4j/messa
 import type { ExitMessage } from '../../../../../org/apache/logging/log4j/message/ExitMessage.d.ts'
 import type { Message } from '../../../../../org/apache/logging/log4j/message/Message.d.ts'
 export interface FlowMessageFactory extends Object{
-    newEntryMessage(message: string, params: Object[]): EntryMessage;
+    newEntryMessage(message: string, ...params: Object[]): EntryMessage;
     newEntryMessage(message: Message): EntryMessage;
     newExitMessage(result: Object, message: EntryMessage): ExitMessage;
     newExitMessage(result: Object, message: Message): ExitMessage;

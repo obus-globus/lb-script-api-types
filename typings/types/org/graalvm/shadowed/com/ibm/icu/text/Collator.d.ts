@@ -78,7 +78,7 @@ export abstract class Collator extends Object implements Comparator<Object>, Clo
     setDecomposition(decomposition: number): void;
     setLocale(valid: ULocale, actual: ULocale): void;
     setMaxVariable(group: number): Collator;
-    setReorderCodes(order: number[]): void;
+    setReorderCodes(...order: number[]): void;
     setStrength(newStrength: number): void;
     setStrength2(newStrength: number): Collator;
     setVariableTop(varTop: number): void;

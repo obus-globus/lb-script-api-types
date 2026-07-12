@@ -6,11 +6,11 @@ export interface ScriptEngineFactory extends Object{
     getExtensions(): string[];
     getLanguageName(): string;
     getLanguageVersion(): string;
-    getMethodCallSyntax(arg0: string, arg1: string, arg2: string[]): string;
+    getMethodCallSyntax(arg0: string, arg1: string, ...arg2: string[]): string;
     getMimeTypes(): string[];
     getNames(): string[];
     getOutputStatement(arg0: string): string;
     getParameter(arg0: string): Object;
-    getProgram(arg0: string[]): string;
+    getProgram(...arg0: string[]): string;
     getScriptEngine(): ScriptEngine;
 }

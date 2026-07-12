@@ -42,7 +42,7 @@ import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class DebuggerSession extends Object implements Closeable {
-    constructor(debugger_: Debugger, callback: SuspendedCallback, sourceElements: SourceElement[])
+    constructor(debugger_: Debugger, callback: SuspendedCallback, ...sourceElements: SourceElement[])
     // private allBindings: EventBinding<ExecutionEventNodeFactory>[];
     // private alwaysHaltBreakpointsActive: DebuggerSession$StableBoolean;
     readonly breakpoints: Breakpoint[];
@@ -77,7 +77,7 @@ export class DebuggerSession extends Object implements Closeable {
     close(): void;
     // private collectDebuggerNodes(source: DebuggerNode, suspendAnchor: SuspendAnchor): DebuggerNode[];
     // private collectDebuggerNodes(iNode: Node, suspendAnchor: SuspendAnchor): DebuggerNode[];
-    // private createBinding(includeInternalCode: boolean, sFilter: (param0: Source) => boolean, factory: ExecutionEventNodeFactory, onInput: boolean, tags: Class<Object>[]): EventBinding<ExecutionEventNodeFactory>;
+    // private createBinding(includeInternalCode: boolean, sFilter: (param0: Source) => boolean, factory: ExecutionEventNodeFactory, onInput: boolean, ...tags: Class<Object>[]): EventBinding<ExecutionEventNodeFactory>;
     createPrimitiveValue(primitiveValue: Object, language: LanguageInfo): DebugValue;
     disposeBreakpoint(breakpoint: Breakpoint): void;
     // private doSuspend(context: SuspendedContext, suspendAnchor: SuspendAnchor, frame: MaterializedFrame, insertableNode: InsertableNode, inputValuesProvider: DebuggerNode$InputValuesProvider, returnValue: Object, exception: DebugException, breaks: Breakpoint[], conditionFailures: Map<Breakpoint, Throwable>, singleStepCompleted: boolean, isUnwind: boolean): Object;
@@ -126,7 +126,7 @@ export class DebuggerSession extends Object implements Closeable {
     suspendHere(node: Node): boolean;
     suspendNextExecution(): void;
     toString(): string;
-    // private trace(msg: string, parameters: Object[]): void;
+    // private trace(msg: string, ...parameters: Object[]): void;
     // private updateStepping(): void;
     visitBreakpoints(consumer: (param0: Breakpoint) => void): void;
 }

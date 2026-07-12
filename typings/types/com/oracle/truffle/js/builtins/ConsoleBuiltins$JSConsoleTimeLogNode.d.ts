@@ -24,5 +24,5 @@ export abstract class ConsoleBuiltins$JSConsoleTimeLogNode extends ConsoleBuilti
     constructor(context: JSContext, builtin: JSBuiltin)
     // private printNode: GlobalBuiltins$JSGlobalPrintNode;
     // private toStringNode: JSToStringNode;
-    timeLog(data: Object[]): JSDynamicObject;
+    timeLog(...data: Object[]): JSDynamicObject;
 }

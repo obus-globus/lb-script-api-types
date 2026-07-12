@@ -23,7 +23,7 @@ export class InsightInstrument extends TruffleInstrument {
     // private keys: BitSet;
     // private keysUnchanged: Assumption;
     // private perContextData: ContextLocal<InsightPerContext>;
-    closeKeys(noLongerNeededKeys: InsightInstrument$Key[]): void;
+    closeKeys(...noLongerNeededKeys: InsightInstrument$Key[]): void;
     collectGlobalSymbolsImpl(source: InsightPerSource, argNames: string[], args: Object[]): void;
     createInsightObject(source: InsightPerSource): AgentObject;
     env(): TruffleInstrument$Env;

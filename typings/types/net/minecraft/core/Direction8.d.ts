@@ -15,7 +15,7 @@ export class Direction8 extends Enum<Direction8> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): Direction8;
     static values(): (Object | null)[];
-    private constructor(directions: Direction[])
+    private constructor(...directions: Direction[])
     readonly directions: Direction[];
     // private step: Vec3i;
     getDirections(): Direction[];

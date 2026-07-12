@@ -5,7 +5,7 @@ import type { ITargetSelector$Configure } from '../../../../../../org/spongepowe
 import type { MatchResult } from '../../../../../../org/spongepowered/asm/mixin/injection/selectors/MatchResult.d.ts'
 export interface ITargetSelector extends Object{
     attach(arg0: ISelectorContext): ITargetSelector;
-    configure(arg0: ITargetSelector$Configure, arg1: string[]): ITargetSelector;
+    configure(arg0: ITargetSelector$Configure, ...arg1: string[]): ITargetSelector;
     getMaxMatchCount(): number;
     getMinMatchCount(): number;
     match<TNode extends unknown>(arg0: ElementNode<TNode>): MatchResult;

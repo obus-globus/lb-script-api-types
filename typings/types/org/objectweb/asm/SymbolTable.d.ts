@@ -27,11 +27,11 @@ export class SymbolTable extends Object {
     // private typeTable: SymbolTable$Entry[];
     // private add(arg0: SymbolTable$Entry): void;
     // private addBootstrapMethod(arg0: number, arg1: number, arg2: number): Symbol;
-    addBootstrapMethod(arg0: Handle, arg1: Object[]): Symbol;
+    addBootstrapMethod(arg0: Handle, ...arg1: Object[]): Symbol;
     addConstant(arg0: Object): Symbol;
     addConstantClass(arg0: string): Symbol;
     addConstantDouble(arg0: number): Symbol;
-    addConstantDynamic(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): Symbol;
+    addConstantDynamic(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): Symbol;
     // private addConstantDynamicOrInvokeDynamicReference(arg0: number, arg1: number, arg2: string, arg3: string, arg4: number): void;
     // private addConstantDynamicOrInvokeDynamicReference(arg0: number, arg1: string, arg2: string, arg3: number): Symbol;
     addConstantFieldref(arg0: string, arg1: string, arg2: string): Symbol;
@@ -39,7 +39,7 @@ export class SymbolTable extends Object {
     addConstantInteger(arg0: number): Symbol;
     // private addConstantIntegerOrFloat(arg0: number, arg1: number): Symbol;
     // private addConstantIntegerOrFloat(arg0: number, arg1: number, arg2: number): void;
-    addConstantInvokeDynamic(arg0: string, arg1: string, arg2: Handle, arg3: Object[]): Symbol;
+    addConstantInvokeDynamic(arg0: string, arg1: string, arg2: Handle, ...arg3: Object[]): Symbol;
     addConstantLong(arg0: number): Symbol;
     // private addConstantLongOrDouble(arg0: number, arg1: number, arg2: number): void;
     // private addConstantLongOrDouble(arg0: number, arg1: number): Symbol;

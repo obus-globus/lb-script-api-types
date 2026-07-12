@@ -27,5 +27,5 @@ export abstract class SetPrototypeBuiltins$JSSetNewOperation extends SetPrototyp
     // private iteratorCloseNode: IteratorCloseNode;
     // private iteratorStepNode: IteratorStepNode;
     // private iteratorValueNode: IteratorValueNode;
-    call(function_: Object, target: Object, userArguments: Object[]): Object;
+    call(function_: Object, target: Object, ...userArguments: Object[]): Object;
 }

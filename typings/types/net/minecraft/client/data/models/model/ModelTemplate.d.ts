@@ -9,7 +9,7 @@ import type { Identifier } from '../../../../../../net/minecraft/resources/Ident
 import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class ModelTemplate extends Object {
-    constructor(model: Optional<Identifier>, suffix: Optional<string>, requiredSlots: TextureSlot[])
+    constructor(model: Optional<Identifier>, suffix: Optional<string>, ...requiredSlots: TextureSlot[])
     // private model: Optional<Identifier>;
     // private requiredSlots: TextureSlot[];
     // private suffix: Optional<string>;

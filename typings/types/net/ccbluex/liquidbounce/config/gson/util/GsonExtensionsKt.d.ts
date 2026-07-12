@@ -13,13 +13,13 @@ export class GsonExtensionsKt extends Object {
     static deserialize(jsonDeserializationContext: JsonDeserializationContext, json: JsonElement): Object | null;
     static getOrNull(jsonArray: JsonElement[], index: number): JsonElement;
     static jsonArray(initialCapacity: number, builderAction: (param0: Object) => void): JsonElement[];
-    static jsonArrayOf(elements: (Object | null)[]): JsonElement[];
+    static jsonArrayOf(...elements: (Object | null)[]): JsonElement[];
     static jsonObject(builderAction: (param0: Object) => void): JsonObject;
     static parseTree(jsonReader: JsonReader): JsonElement;
     /**
      * Read JSON content
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
      */
     static readJson(paramarg0: File, paramarg1: Charset): Object | null;
     static readJson(paramarg0: InputStream, paramarg1: Charset): Object | null;

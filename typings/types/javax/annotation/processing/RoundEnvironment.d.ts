@@ -7,7 +7,7 @@ export interface RoundEnvironment extends Object{
     errorRaised(): boolean;
     getElementsAnnotatedWith(arg0: Class<Annotation>): Element[];
     getElementsAnnotatedWith(arg0: TypeElement): Element[];
-    getElementsAnnotatedWithAny(arg0: TypeElement[]): Element[];
+    getElementsAnnotatedWithAny(...arg0: TypeElement[]): Element[];
     getElementsAnnotatedWithAny(arg0: Class<Annotation>[]): Element[];
     getRootElements(): Element[];
     processingOver(): boolean;

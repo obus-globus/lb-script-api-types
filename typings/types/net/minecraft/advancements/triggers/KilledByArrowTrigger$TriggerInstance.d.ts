@@ -15,7 +15,7 @@ import type { ValidationContextSource } from '../../../../net/minecraft/world/le
 export class KilledByArrowTrigger$TriggerInstance extends Record implements SimpleCriterionTrigger$SimpleInstance {
     static CODEC: Codec<KilledByArrowTrigger$TriggerInstance>;
     static crossbowKilled(paramitems: HolderGetter<Item>, paramuniqueEntityTypes: MinMaxBounds$Ints): Criterion<KilledByArrowTrigger$TriggerInstance>;
-    static crossbowKilled(paramitems: HolderGetter<Item>, paramvictims: (Object | null)[]): Criterion<KilledByArrowTrigger$TriggerInstance>;
+    static crossbowKilled(paramitems: HolderGetter<Item>, ...paramvictims: (Object | null)[]): Criterion<KilledByArrowTrigger$TriggerInstance>;
     constructor(player: Optional<ContextAwarePredicate>, victims: ContextAwarePredicate[], uniqueEntityTypes: MinMaxBounds$Ints, firedFromWeapon: Optional<ItemPredicate>)
     // private firedFromWeapon: Optional<ItemPredicate>;
     // private player: Optional<ContextAwarePredicate>;

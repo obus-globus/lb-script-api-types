@@ -16,7 +16,7 @@ export class ByteString extends Object implements Serializable, Comparable<ByteS
     static decodeHex(paramarg0: string): ByteString;
     static encodeString(paramarg0: string, paramarg1: Charset): ByteString;
     static encodeUtf8(paramarg0: string): ByteString;
-    static of(paramarg0: number[]): ByteString;
+    static of(...paramarg0: number[]): ByteString;
     static of(paramarg0: number[], paramarg1: number, paramarg2: number): ByteString;
     static of(paramarg0: ByteBuffer): ByteString;
     static read(paramarg0: InputStream, paramarg1: number): ByteString;

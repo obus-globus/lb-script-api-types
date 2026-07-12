@@ -9,9 +9,9 @@ export class Constant$Condition extends Enum<Constant$Condition> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): Constant$Condition;
     static values(): (Object | null)[];
-    private constructor(arg2: number[])
+    private constructor(...arg2: number[])
     private constructor(arg2: Constant$Condition)
-    private constructor(arg2: Constant$Condition, arg3: number[])
+    private constructor(arg2: Constant$Condition, ...arg3: number[])
     // private equivalence: Constant$Condition;
     readonly opcodes: number[];
     getEquivalentCondition(): Constant$Condition;

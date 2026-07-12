@@ -23,9 +23,9 @@ export class McLibrary extends Enum<McLibrary> implements LibClassifier$LibraryT
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): McLibrary;
     static values(): (Object | null)[];
-    private constructor(arg2: string[])
+    private constructor(...arg2: string[])
     private constructor(arg2: string)
-    private constructor(arg2: EnvType, arg3: string[])
+    private constructor(arg2: EnvType, ...arg3: string[])
     // private env: EnvType;
     readonly paths: string[];
     getPaths(): string[];

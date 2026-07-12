@@ -21,10 +21,10 @@ export class ObjectUtils extends Object {
     static CONST(paramarg0: number): number;
     static CONST_BYTE(paramarg0: number): number;
     static CONST_SHORT(paramarg0: number): number;
-    static allNotNull(paramarg0: (Object | null)[]): boolean;
-    static allNull(paramarg0: (Object | null)[]): boolean;
-    static anyNotNull(paramarg0: (Object | null)[]): boolean;
-    static anyNull(paramarg0: (Object | null)[]): boolean;
+    static allNotNull(...paramarg0: (Object | null)[]): boolean;
+    static allNull(...paramarg0: (Object | null)[]): boolean;
+    static anyNotNull(...paramarg0: (Object | null)[]): boolean;
+    static anyNull(...paramarg0: (Object | null)[]): boolean;
     static clone(paramarg0: Object | null): Object | null;
     static cloneIfPossible(paramarg0: Object | null): Object | null;
     static compare(paramarg0: Object | null, paramarg1: Object | null): number;
@@ -38,7 +38,7 @@ export class ObjectUtils extends Object {
     static getIfNull(paramarg0: Object | null, paramarg1: () => Object | null): Object | null;
     static hashCode(paramarg0: Object): number;
     static hashCodeHex(paramarg0: Object): string;
-    static hashCodeMulti(paramarg0: (Object | null)[]): number;
+    static hashCodeMulti(...paramarg0: (Object | null)[]): number;
     static identityHashCodeHex(paramarg0: Object): string;
     static identityToString(paramarg0: Object): string;
     static identityToString(paramarg0: Appendable, paramarg1: Object): void;

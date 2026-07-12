@@ -13,6 +13,6 @@ export class ColorProviderRegistry extends Object {
     getColorProvider(arg0: Block): ColorProvider<BlockState>;
     getColorProvider(arg0: Fluid): ColorProvider<FluidState>;
     // private installOverrides(): void;
-    // private registerBlocks(arg0: ColorProvider<BlockState>, arg1: Block[]): void;
-    // private registerFluids(arg0: ColorProvider<FluidState>, arg1: Fluid[]): void;
+    // private registerBlocks(arg0: ColorProvider<BlockState>, ...arg1: Block[]): void;
+    // private registerFluids(arg0: ColorProvider<FluidState>, ...arg1: Fluid[]): void;
 }

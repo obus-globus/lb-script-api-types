@@ -15,6 +15,6 @@ export class FeatureFlagRegistry extends Object {
     fromNames(flagIds: Identifier[]): FeatureFlagSet;
     fromNames(flagIds: Identifier[], unknownFlags: (param0: Identifier) => void): FeatureFlagSet;
     isSubset(set: FeatureFlagSet): boolean;
-    subset(flags: FeatureFlag[]): FeatureFlagSet;
+    subset(...flags: FeatureFlag[]): FeatureFlagSet;
     toNames(set: FeatureFlagSet): Identifier[];
 }

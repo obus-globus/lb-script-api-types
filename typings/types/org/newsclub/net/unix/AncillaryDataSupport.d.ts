@@ -21,7 +21,7 @@ export class AncillaryDataSupport extends Object implements Closeable {
     receiveFileDescriptors(arg0: number[]): void;
     setAncillaryReceiveBufferSize(arg0: number): void;
     setAncillaryReceiveBufferSize0(arg0: number): void;
-    setOutboundFileDescriptors(arg0: FileDescriptor[]): void;
+    setOutboundFileDescriptors(...arg0: FileDescriptor[]): void;
     setOutboundFileDescriptors(arg0: number[]): void;
     setTipcDestName(arg0: number, arg1: number, arg2: number): void;
     setTipcErrorInfo(arg0: number, arg1: number): void;

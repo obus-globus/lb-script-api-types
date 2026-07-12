@@ -15,11 +15,11 @@ export class DynamicUniforms extends Object implements AutoCloseable {
     // private transforms: DynamicUniformStorage<DynamicUniforms$Transform>;
     close(): void;
     reset(): void;
-    writeChunkSections(infos: DynamicUniforms$ChunkSectionInfo[]): GpuBufferSlice[];
+    writeChunkSections(...infos: DynamicUniforms$ChunkSectionInfo[]): GpuBufferSlice[];
     writeTransform(uniform: DynamicUniforms$Transform): GpuBufferSlice;
     writeTransform(modelView: Matrix4f): GpuBufferSlice;
     writeTransform(modelView: Matrix4f, textureMatrix: Matrix4f): GpuBufferSlice;
     writeTransform(modelView: Matrix4f, colorModulator: Vector4f): GpuBufferSlice;
     writeTransform(modelView: Matrix4f, colorModulator: Vector4f, modelOffset: Vector3f, textureMatrix: Matrix4f): GpuBufferSlice;
-    writeTransforms(transforms: DynamicUniforms$Transform[]): GpuBufferSlice[];
+    writeTransforms(...transforms: DynamicUniforms$Transform[]): GpuBufferSlice[];
 }

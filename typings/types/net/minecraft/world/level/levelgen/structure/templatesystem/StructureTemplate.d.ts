@@ -61,8 +61,8 @@ export class StructureTemplate extends Object {
     getZeroPositionWithTransform(zeroPos: BlockPos, mirror: Mirror, rotation: Rotation): BlockPos;
     load(blockLookup: HolderGetter<Block>, tag: CompoundTag): void;
     // private loadPalette(blockLookup: HolderGetter<Block>, paletteList: (Object | null)[], blockList: (Object | null)[]): void;
-    // private newDoubleList(values: number[]): (Object | null)[];
-    // private newIntegerList(values: number[]): (Object | null)[];
+    // private newDoubleList(...values: number[]): (Object | null)[];
+    // private newIntegerList(...values: number[]): (Object | null)[];
     // private placeEntities(level: ServerLevelAccessor, position: BlockPos, mirror: Mirror, rotation: Rotation, pivot: BlockPos, boundingBox: BoundingBox, finalizeEntities: boolean, problemReporter: ProblemReporter): void;
     placeInWorld(level: ServerLevelAccessor, position: BlockPos, referencePos: BlockPos, settings: StructurePlaceSettings, random: RandomSource, updateMode: number): boolean;
     save(tag: CompoundTag): CompoundTag;

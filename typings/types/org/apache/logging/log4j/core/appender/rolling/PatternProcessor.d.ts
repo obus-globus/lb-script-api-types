@@ -25,7 +25,7 @@ export class PatternProcessor extends Object {
     // private createPatternParser(): PatternParser;
     // private debugGetNextTime(nextTime: number): number;
     // private format(time: number): string;
-    formatFileName(buf: StringBuilder, objects: Object[]): void;
+    formatFileName(buf: StringBuilder, ...objects: Object[]): void;
     formatFileName(buf: StringBuilder, useCurrentTime: boolean, obj: Object): void;
     formatFileName(subst: StrSubstitutor, buf: StringBuilder, obj: Object): void;
     formatFileName(subst: StrSubstitutor, buf: StringBuilder, useCurrentTime: boolean, obj: Object): void;
@@ -40,7 +40,7 @@ export class PatternProcessor extends Object {
     getPrevFileTime(): number;
     // private increment(cal: Calendar, type: number, increment: number, modulate: boolean): void;
     // private patternContains(pattern: string, character: string): boolean;
-    // private patternContains(pattern: string, chars: string[]): boolean;
+    // private patternContains(pattern: string, ...chars: string[]): boolean;
     setCurrentFileTime(currentFileTime: number): void;
     setPrevFileTime(prevFileTime: number): void;
     setTimeBased(isTimeBased: boolean): void;

@@ -5,7 +5,7 @@ export class HttpResponse extends Object implements IHttpResponse {
     // private body: string;
     // private headers: { [key: string]: string[] };
     // private statusCode: number;
-    addHeader(arg0: string, arg1: string[]): void;
+    addHeader(arg0: string, ...arg1: string[]): void;
     addHeaders(arg0: { [key: string]: string[] }): void;
     body(): string;
     body(arg0: string): HttpResponse;

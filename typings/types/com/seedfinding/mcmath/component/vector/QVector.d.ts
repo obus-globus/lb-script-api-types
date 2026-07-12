@@ -13,11 +13,11 @@ export class QVector extends Object {
     static basis(paramarg0: number, paramarg1: number, paramarg2: BigInteger): QVector;
     static basis(paramarg0: number, paramarg1: number, paramarg2: number): QVector;
     static zero(paramarg0: number): QVector;
-    constructor(arg0: Rational[])
-    constructor(arg0: BigInteger[])
+    constructor(...arg0: Rational[])
+    constructor(...arg0: BigInteger[])
     constructor(arg0: number)
     constructor(arg0: number, arg1: (param0: number) => Rational)
-    constructor(arg0: number[])
+    constructor(...arg0: number[])
     readonly elements: Rational[];
     add(arg0: QVector): QVector;
     addAndSet(arg0: QVector): QVector;

@@ -6,7 +6,7 @@ export class LocalePriorityList$Builder extends Object {
     // private built: ULocale[];
     // private hasWeights: boolean;
     // private languageToWeight: Map<ULocale, number>;
-    add(locales: ULocale[]): LocalePriorityList$Builder;
+    add(...locales: ULocale[]): LocalePriorityList$Builder;
     add(acceptLanguageList: string): LocalePriorityList$Builder;
     add(list: ULocale[]): LocalePriorityList$Builder;
     add(locale: ULocale): LocalePriorityList$Builder;

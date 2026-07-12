@@ -43,9 +43,10 @@ export class JsonConverter_v1_20_3 extends Object implements DataConverter<JsonE
     emptyMap(): JsonElement;
     fork<O extends unknown>(arg0: DataConverter<O>): DataConverter<O>;
     forkIfDefault(): DataConverter<JsonElement>;
+    mergeList(arg0: JsonElement, ...arg1: JsonElement[]): Result<JsonElement>;
     mergeList(arg0: JsonElement, arg1: JsonElement[]): Result<JsonElement>;
     mergeMap(arg0: JsonElement, arg1: JsonElement, arg2: JsonElement): Result<JsonElement>;
-    mergeMap(arg0: JsonElement, arg1: JsonElement[]): Result<JsonElement>;
+    mergeMap(arg0: JsonElement, ...arg1: JsonElement[]): Result<JsonElement>;
     mergeMap(arg0: JsonElement, arg1: Map<JsonElement, JsonElement>): Result<JsonElement>;
     setCurrentConsumer(arg0: (param0: string) => void): void;
     toCodec(): Codec<JsonElement>;

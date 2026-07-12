@@ -8,5 +8,5 @@ export class CsvOutput extends Object {
     // private columnCount: number;
     // private output: Writer;
     // private writeLine(values: Stream<Object>): void;
-    writeRow(values: Object[]): void;
+    writeRow(...values: Object[]): void;
 }

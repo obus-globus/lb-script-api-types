@@ -23,7 +23,7 @@ export class CharSpliterators extends Object {
     static asSpliteratorFromSorted(paramarg0: CharIterator, paramarg1: number, paramarg2: number, paramarg3: (param0: string, param1: string) => number): CharSpliterator;
     static asSpliteratorFromSortedUnknownSize(paramarg0: CharIterator, paramarg1: number, paramarg2: (param0: string, param1: string) => number): CharSpliterator;
     static asSpliteratorUnknownSize(paramarg0: CharIterator, paramarg1: number): CharSpliterator;
-    static concat(paramarg0: (Object | null)[]): CharSpliterator;
+    static concat(...paramarg0: (Object | null)[]): CharSpliterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): CharSpliterator;
     static fromTo(paramarg0: string, paramarg1: string): CharSpliterator;
     static narrow(paramarg0: Spliterator$OfInt): CharSpliterator;

@@ -72,9 +72,9 @@ export class EntityType$Builder<T extends Entity> extends Object implements Fabr
     noSave(): EntityType$Builder<T>;
     noSummon(): EntityType$Builder<T>;
     notInPeaceful(): EntityType$Builder<T>;
-    passengerAttachments(points: Vec3[]): EntityType$Builder<T>;
-    passengerAttachments(offsetYs: number[]): EntityType$Builder<T>;
-    requiredFeatures(flags: FeatureFlag[]): EntityType$Builder<T>;
+    passengerAttachments(...points: Vec3[]): EntityType$Builder<T>;
+    passengerAttachments(...offsetYs: number[]): EntityType$Builder<T>;
+    requiredFeatures(...flags: FeatureFlag[]): EntityType$Builder<T>;
     ridingOffset(ridingOffset: number): EntityType$Builder<T>;
     sized(width: number, height: number): EntityType$Builder<T>;
     spawnDimensionsScale(scale: number): EntityType$Builder<T>;

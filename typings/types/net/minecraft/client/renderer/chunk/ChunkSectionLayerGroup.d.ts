@@ -9,7 +9,7 @@ export class ChunkSectionLayerGroup extends Enum<ChunkSectionLayerGroup> {
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): ChunkSectionLayerGroup;
     static values(): (Object | null)[];
-    private constructor(layers: ChunkSectionLayer[])
+    private constructor(...layers: ChunkSectionLayer[])
     // private label: string;
     // private layers: ChunkSectionLayer[];
     label(): string;

@@ -23,6 +23,6 @@ export class DeserializerVersion extends Enum<DeserializerVersion> {
     static valueOf(paramarg0: string): DeserializerVersion;
     static values(): (Object | null)[];
     private constructor()
-    isIn(arg0: DeserializerVersion[]): boolean;
+    isIn(...arg0: DeserializerVersion[]): boolean;
     name(): "V1_6" | "V1_7" | "V1_8" | "V1_9" | "V1_12" | "V1_14" | "V1_15" | "V1_16" | "V1_17" | "V1_18" | "V1_19_4" | "V1_20_3" | "V1_20_5" | "V1_21_2" | "V1_21_4" | "V1_21_5";
 }

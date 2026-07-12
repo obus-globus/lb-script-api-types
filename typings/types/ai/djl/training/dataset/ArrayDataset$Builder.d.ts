@@ -6,7 +6,7 @@ export class ArrayDataset$Builder extends RandomAccessDataset$BaseBuilder<ArrayD
     // private data: NDArray[];
     // private labels: NDArray[];
     build(): ArrayDataset;
-    optLabels(arg0: NDArray[]): ArrayDataset$Builder;
+    optLabels(...arg0: NDArray[]): ArrayDataset$Builder;
     self(): ArrayDataset$Builder;
-    setData(arg0: NDArray[]): ArrayDataset$Builder;
+    setData(...arg0: NDArray[]): ArrayDataset$Builder;
 }

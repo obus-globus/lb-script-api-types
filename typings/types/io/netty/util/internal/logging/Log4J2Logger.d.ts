@@ -42,7 +42,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     debug(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     debug(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     debug(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    debug(message: string, params: Object[]): void;
+    debug(message: string, ...params: Object[]): void;
     debug(message: string, paramSuppliers: () => Object | null[]): void;
     debug(message: string, throwable: Throwable): void;
     debug(arg0: Throwable): void;
@@ -61,7 +61,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     debug(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     debug(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     debug(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    debug(marker: Marker, message: string, params: Object[]): void;
+    debug(marker: Marker, message: string, ...params: Object[]): void;
     debug(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     debug(marker: Marker, message: string, throwable: Throwable): void;
     debug(marker: Marker, message: Message): void;
@@ -91,7 +91,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     error(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     error(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     error(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    error(message: string, params: Object[]): void;
+    error(message: string, ...params: Object[]): void;
     error(message: string, paramSuppliers: () => Object | null[]): void;
     error(message: string, throwable: Throwable): void;
     error(arg0: Throwable): void;
@@ -110,7 +110,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     error(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     error(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     error(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    error(marker: Marker, message: string, params: Object[]): void;
+    error(marker: Marker, message: string, ...params: Object[]): void;
     error(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     error(marker: Marker, message: string, throwable: Throwable): void;
     error(marker: Marker, message: Message): void;
@@ -140,7 +140,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     info(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     info(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     info(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    info(message: string, params: Object[]): void;
+    info(message: string, ...params: Object[]): void;
     info(message: string, paramSuppliers: () => Object | null[]): void;
     info(message: string, throwable: Throwable): void;
     info(arg0: Throwable): void;
@@ -159,7 +159,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     info(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     info(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     info(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    info(marker: Marker, message: string, params: Object[]): void;
+    info(marker: Marker, message: string, ...params: Object[]): void;
     info(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     info(marker: Marker, message: string, throwable: Throwable): void;
     info(marker: Marker, message: Message): void;
@@ -190,13 +190,13 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     isEnabled(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): boolean;
     isEnabled(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): boolean;
     isEnabled(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): boolean;
-    isEnabled(level: Level, marker: Marker, message: string, params: Object[]): boolean;
+    isEnabled(level: Level, marker: Marker, message: string, ...params: Object[]): boolean;
     isEnabled(level: Level, marker: Marker, message: string, t: Throwable): boolean;
     isEnabled(level: Level, marker: Marker, message: Message, t: Throwable): boolean;
     log(arg0: InternalLogLevel, arg1: string): void;
     log(arg0: InternalLogLevel, arg1: string, arg2: Object): void;
     log(arg0: InternalLogLevel, arg1: string, arg2: Object, arg3: Object): void;
-    log(arg0: InternalLogLevel, arg1: string, arg2: Object[]): void;
+    log(arg0: InternalLogLevel, arg1: string, ...arg2: Object[]): void;
     log(arg0: InternalLogLevel, arg1: string, arg2: Throwable): void;
     log(arg0: InternalLogLevel, arg1: Throwable): void;
     log(level: Level, message: Object): void;
@@ -214,7 +214,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    log(level: Level, message: string, params: Object[]): void;
+    log(level: Level, message: string, ...params: Object[]): void;
     log(level: Level, message: string, paramSuppliers: () => Object | null[]): void;
     log(level: Level, message: string, throwable: Throwable): void;
     log(level: Level, marker: Marker, message: Object): void;
@@ -233,7 +233,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    log(level: Level, marker: Marker, message: string, params: Object[]): void;
+    log(level: Level, marker: Marker, message: string, ...params: Object[]): void;
     log(level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     log(level: Level, marker: Marker, message: string, throwable: Throwable): void;
     log(level: Level, marker: Marker, message: Message): void;
@@ -264,7 +264,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     trace(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     trace(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     trace(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    trace(message: string, params: Object[]): void;
+    trace(message: string, ...params: Object[]): void;
     trace(message: string, paramSuppliers: () => Object | null[]): void;
     trace(message: string, throwable: Throwable): void;
     trace(arg0: Throwable): void;
@@ -283,7 +283,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     trace(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     trace(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     trace(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    trace(marker: Marker, message: string, params: Object[]): void;
+    trace(marker: Marker, message: string, ...params: Object[]): void;
     trace(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     trace(marker: Marker, message: string, throwable: Throwable): void;
     trace(marker: Marker, message: Message): void;
@@ -313,7 +313,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     warn(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     warn(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     warn(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    warn(message: string, params: Object[]): void;
+    warn(message: string, ...params: Object[]): void;
     warn(message: string, paramSuppliers: () => Object | null[]): void;
     warn(message: string, throwable: Throwable): void;
     warn(arg0: Throwable): void;
@@ -332,7 +332,7 @@ export class Log4J2Logger extends ExtendedLoggerWrapper implements InternalLogge
     warn(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     warn(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     warn(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    warn(marker: Marker, message: string, params: Object[]): void;
+    warn(marker: Marker, message: string, ...params: Object[]): void;
     warn(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     warn(marker: Marker, message: string, throwable: Throwable): void;
     warn(marker: Marker, message: Message): void;

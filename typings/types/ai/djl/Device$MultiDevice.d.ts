@@ -8,7 +8,7 @@ export class Device$MultiDevice extends Device {
     static gpu(): Device;
     static gpu(paramarg0: number): Device;
     static of(paramarg0: string, paramarg1: number): Device;
-    constructor(arg0: Device[])
+    constructor(...arg0: Device[])
     constructor(arg0: string, arg1: number, arg2: number)
     constructor(arg0: Device[])
     devices: Device[];

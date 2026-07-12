@@ -16,6 +16,7 @@ export class ParallelBlock extends AbstractBlock {
     add(arg0: Block): ParallelBlock;
     add(arg0: (param0: (Object | null)[]) => (Object | null)[]): ParallelBlock;
     add(arg0: (param0: (Object | null)[]) => (Object | null)[], arg1: string): ParallelBlock;
+    addAll(...arg0: Block[]): ParallelBlock;
     addAll(arg0: Block[]): ParallelBlock;
     addSingleton(arg0: (param0: NDArray) => NDArray): ParallelBlock;
     addSingleton(arg0: (param0: NDArray) => NDArray, arg1: string): ParallelBlock;
@@ -23,6 +24,6 @@ export class ParallelBlock extends AbstractBlock {
     forwardInternal(arg0: ParameterStore, arg1: (Object | null)[], arg2: boolean, arg3: Pair<string, Object>[]): (Object | null)[];
     getOutputShapes(arg0: Shape[]): Shape[];
     getOutputShapes(arg0: Shape[], arg1: DataType[]): Shape[];
-    initializeChildBlocks(arg0: NDManager, arg1: DataType, arg2: Shape[]): void;
+    initializeChildBlocks(arg0: NDManager, arg1: DataType, ...arg2: Shape[]): void;
     loadMetadata(arg0: number, arg1: DataInputStream): void;
 }

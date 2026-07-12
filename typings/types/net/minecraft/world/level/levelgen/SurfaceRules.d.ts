@@ -25,7 +25,7 @@ export class SurfaceRules extends Object {
     static noiseCondition3d(paramnoise: ResourceKey<NormalNoise$NoiseParameters>, paramminRange: number): SurfaceRules$ConditionSource;
     static noiseCondition3d(paramnoise: ResourceKey<NormalNoise$NoiseParameters>, paramminRange: number, parammaxRange: number): SurfaceRules$ConditionSource;
     static not(paramtarget: SurfaceRules$ConditionSource): SurfaceRules$ConditionSource;
-    static sequence(paramrules: (Object | null)[]): SurfaceRules$RuleSource;
+    static sequence(...paramrules: (Object | null)[]): SurfaceRules$RuleSource;
     static state(paramstate: BlockState): SurfaceRules$RuleSource;
     static steep(): SurfaceRules$ConditionSource;
     static stoneDepthCheck(paramoffset: number, paramaddSurfaceDepth1: boolean, paramsecondaryDepthRange: number, paramsurfaceType: CaveSurface): SurfaceRules$ConditionSource;

@@ -10,7 +10,7 @@ export interface MethodTypeDesc extends ConstantDesc, TypeDescriptor$OfMethod<Cl
     descriptorString(): string;
     displayDescriptor(): string;
     dropParameterTypes(arg0: number, arg1: number): MethodTypeDesc;
-    insertParameterTypes(arg0: number, arg1: ClassDesc[]): MethodTypeDesc;
+    insertParameterTypes(arg0: number, ...arg1: ClassDesc[]): MethodTypeDesc;
     parameterArray(): ClassDesc[];
     parameterCount(): number;
     parameterList(): ClassDesc[];

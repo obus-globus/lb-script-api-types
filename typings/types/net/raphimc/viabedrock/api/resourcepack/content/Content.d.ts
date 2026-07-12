@@ -10,7 +10,7 @@ export abstract class Content extends Object {
     get(arg0: string): number[];
     getFilesDeep(arg0: string, arg1: string): string[];
     getFilesShallow(arg0: string, arg1: string): string[];
-    getFullPath(arg0: string, arg1: string[]): string;
+    getFullPath(arg0: string, ...arg1: string[]): string;
     getImage(arg0: string): Content$LazyImage;
     getJson(arg0: string): JsonObject;
     getLang(arg0: string): { [key: string]: string };

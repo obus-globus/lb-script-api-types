@@ -14,7 +14,7 @@ export class ResolverUtil extends Object {
     addIfMatching(test: ResolverUtil$Test, fqn: string): void;
     // private close(jarStream: JarInputStream, source: Object): void;
     extractPath(url: URL): string;
-    find(test: ResolverUtil$Test, packageNames: string[]): void;
+    find(test: ResolverUtil$Test, ...packageNames: string[]): void;
     findInPackage(test: ResolverUtil$Test, packageName: string): void;
     getClassLoader(): ClassLoader;
     getClasses(): Class<Object>[];

@@ -10,7 +10,7 @@ export class ShapedRecipePattern extends Object {
     static EMPTY_SLOT: string;
     static MAP_CODEC: MapCodec<ShapedRecipePattern>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ShapedRecipePattern>;
-    static of(paramkey: { [key: string]: Ingredient }, parampattern: (Object | null)[]): ShapedRecipePattern;
+    static of(paramkey: { [key: string]: Ingredient }, ...parampattern: (Object | null)[]): ShapedRecipePattern;
     static of(paramkey: { [key: string]: Ingredient }, parampattern: string[]): ShapedRecipePattern;
     constructor(width: number, height: number, ingredients: Optional<Ingredient>[], data: Optional<ShapedRecipePattern$Data>)
     // private data: Optional<ShapedRecipePattern$Data>;

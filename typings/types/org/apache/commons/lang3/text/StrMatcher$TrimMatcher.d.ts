@@ -1,7 +1,7 @@
 import type { StrMatcher } from '../../../../../org/apache/commons/lang3/text/StrMatcher.d.ts'
 export class StrMatcher$TrimMatcher extends StrMatcher {
     static charMatcher(paramarg0: string): StrMatcher;
-    static charSetMatcher(paramarg0: string[]): StrMatcher;
+    static charSetMatcher(...paramarg0: string[]): StrMatcher;
     static charSetMatcher(paramarg0: string): StrMatcher;
     static commaMatcher(): StrMatcher;
     static doubleQuoteMatcher(): StrMatcher;

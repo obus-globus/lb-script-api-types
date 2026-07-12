@@ -17,17 +17,17 @@ export class MethodUtils extends Object {
     static getMethodsWithAnnotation(paramarg0: Class<Object>, paramarg1: Class<Annotation>, paramarg2: boolean, paramarg3: boolean): (Object | null)[];
     static getOverrideHierarchy(paramarg0: Method, paramarg1: ClassUtils$Interfaces): Method[];
     static invokeExactMethod(paramarg0: Object, paramarg1: string): Object;
-    static invokeExactMethod(paramarg0: Object, paramarg1: string, paramarg2: (Object | null)[]): Object;
+    static invokeExactMethod(paramarg0: Object, paramarg1: string, ...paramarg2: (Object | null)[]): Object;
     static invokeExactMethod(paramarg0: Object, paramarg1: string, paramarg2: (Object | null)[], paramarg3: Object | null): Object;
-    static invokeExactStaticMethod(paramarg0: Class<Object>, paramarg1: string, paramarg2: (Object | null)[]): Object;
+    static invokeExactStaticMethod(paramarg0: Class<Object>, paramarg1: string, ...paramarg2: (Object | null)[]): Object;
     static invokeExactStaticMethod(paramarg0: Class<Object>, paramarg1: string, paramarg2: (Object | null)[], paramarg3: Object | null): Object;
     static invokeMethod(paramarg0: Object, paramarg1: boolean, paramarg2: string): Object;
-    static invokeMethod(paramarg0: Object, paramarg1: boolean, paramarg2: string, paramarg3: (Object | null)[]): Object;
+    static invokeMethod(paramarg0: Object, paramarg1: boolean, paramarg2: string, ...paramarg3: (Object | null)[]): Object;
     static invokeMethod(paramarg0: Object, paramarg1: boolean, paramarg2: string, paramarg3: (Object | null)[], paramarg4: Object | null): Object;
     static invokeMethod(paramarg0: Object, paramarg1: string): Object;
-    static invokeMethod(paramarg0: Object, paramarg1: string, paramarg2: (Object | null)[]): Object;
+    static invokeMethod(paramarg0: Object, paramarg1: string, ...paramarg2: (Object | null)[]): Object;
     static invokeMethod(paramarg0: Object, paramarg1: string, paramarg2: (Object | null)[], paramarg3: Object | null): Object;
-    static invokeStaticMethod(paramarg0: Class<Object>, paramarg1: string, paramarg2: (Object | null)[]): Object;
+    static invokeStaticMethod(paramarg0: Class<Object>, paramarg1: string, ...paramarg2: (Object | null)[]): Object;
     static invokeStaticMethod(paramarg0: Class<Object>, paramarg1: string, paramarg2: (Object | null)[], paramarg3: Object | null): Object;
     constructor()
 }

@@ -51,6 +51,7 @@ export abstract class ComponentRewriterBase<C extends ClientboundPacketType> ext
     registerSetScore1_20_3(arg0: C): void;
     registerTabList(arg0: C): void;
     // private removeDataComponent(arg0: Map$Entry<string, Tag>[], arg1: string): boolean;
+    removeDataComponents(arg0: Map$Entry<string, Tag>[], ...arg1: StructuredDataKey<Object>[]): void;
+    removeDataComponents(arg0: Map$Entry<string, Tag>[], ...arg1: string[]): void;
     removeDataComponents(arg0: Map$Entry<string, Tag>[], arg1: StructuredDataKey<Object>[]): void;
-    removeDataComponents(arg0: Map$Entry<string, Tag>[], arg1: string[]): void;
 }

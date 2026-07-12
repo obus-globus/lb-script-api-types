@@ -11,7 +11,7 @@ export class Parameter<T extends unknown> extends Object {
     /**
      * Default value if optional.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:53}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:53}
      */
     readonly default: T | null;
     readonly description: MutableComponent;
@@ -19,20 +19,20 @@ export class Parameter<T extends unknown> extends Object {
     /**
      * Name of the parameter.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:49}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L49 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:49}
      */
     readonly name: string;
     /**
      * Whether the parameter is required.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:51}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:51}
      */
     readonly required: boolean;
     // private /*not mapped: */ getTranslationBaseKey(): string;
     /**
      * Whether the parameter is a vararg. Parsed result will be an Array if true.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:55}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/Parameter.kt:55}
      */
     readonly vararg: boolean;
     readonly verifier: Parameter$Verificator<T> | null;

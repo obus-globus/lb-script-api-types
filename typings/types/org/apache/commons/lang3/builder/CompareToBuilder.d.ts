@@ -5,8 +5,8 @@ import type { Builder } from '../../../../../org/apache/commons/lang3/builder/Bu
 export class CompareToBuilder extends Object implements Builder<number> {
     static reflectionCompare(paramarg0: Object, paramarg1: Object): number;
     static reflectionCompare(paramarg0: Object, paramarg1: Object, paramarg2: boolean): number;
-    static reflectionCompare(paramarg0: Object, paramarg1: Object, paramarg2: boolean, paramarg3: Class<Object>, paramarg4: (Object | null)[]): number;
-    static reflectionCompare(paramarg0: Object, paramarg1: Object, paramarg2: (Object | null)[]): number;
+    static reflectionCompare(paramarg0: Object, paramarg1: Object, paramarg2: boolean, paramarg3: Class<Object>, ...paramarg4: (Object | null)[]): number;
+    static reflectionCompare(paramarg0: Object, paramarg1: Object, ...paramarg2: (Object | null)[]): number;
     static reflectionCompare(paramarg0: Object, paramarg1: Object, paramarg2: string[]): number;
     constructor()
     // private comparison: number;

@@ -14,7 +14,7 @@ export interface HttpRequest$Builder extends Object{
     copy(): HttpRequest$Builder;
     expectContinue(arg0: boolean): HttpRequest$Builder;
     header(arg0: string, arg1: string): HttpRequest$Builder;
-    headers(arg0: string[]): HttpRequest$Builder;
+    headers(...arg0: string[]): HttpRequest$Builder;
     method(arg0: string, arg1: HttpRequest$BodyPublisher): HttpRequest$Builder;
     setHeader(arg0: string, arg1: string): HttpRequest$Builder;
     timeout(arg0: Duration): HttpRequest$Builder;

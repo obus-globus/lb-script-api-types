@@ -13,9 +13,9 @@ import type { HttpContentEncoder$Result } from '../../../../../io/netty/handler/
 import type { HttpResponse } from '../../../../../io/netty/handler/codec/http/HttpResponse.d.ts'
 export class HttpContentCompressor extends HttpContentEncoder {
     constructor()
-    constructor(arg0: CompressionOptions[])
+    constructor(...arg0: CompressionOptions[])
     constructor(arg0: number)
-    constructor(arg0: number, arg1: CompressionOptions[])
+    constructor(arg0: number, ...arg1: CompressionOptions[])
     constructor(arg0: number, arg1: number, arg2: number)
     constructor(arg0: number, arg1: number, arg2: number, arg3: number)
     // private brotliOptions: BrotliOptions;

@@ -7,7 +7,7 @@ export class Classes extends Object {
     static byName(paramarg0: string, paramarg1: boolean, paramarg2: ClassLoader): Class<Object>;
     static byName(paramarg0: string, paramarg1: ClassLoader): Class<Object>;
     static ensureInitialized(paramarg0: Class<Object>): void;
-    static find(paramarg0: string, paramarg1: boolean, paramarg2: (Object | null)[]): Class<Object>;
+    static find(paramarg0: string, paramarg1: boolean, ...paramarg2: (Object | null)[]): Class<Object>;
     static find(paramarg0: string, paramarg1: boolean, paramarg2: ClassLoader[]): Class<Object>;
     static forName(paramarg0: string): Class<Object>;
     static forName(paramarg0: string, paramarg1: boolean): Class<Object>;

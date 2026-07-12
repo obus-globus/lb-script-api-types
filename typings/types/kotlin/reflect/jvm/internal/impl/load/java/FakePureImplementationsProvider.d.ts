@@ -4,7 +4,7 @@ import type { FqName } from '../../../../../../../kotlin/reflect/jvm/internal/im
 export class FakePureImplementationsProvider extends Object {
     static INSTANCE: FakePureImplementationsProvider;
     private constructor()
-    // private fqNameListOf(arg0: string[]): ClassId[];
+    // private fqNameListOf(...arg0: string[]): ClassId[];
     getPurelyImplementedInterface(arg0: ClassId): ClassId;
     getPurelyImplementedInterface(arg0: FqName): FqName;
     // private implementedWith(arg0: ClassId, arg1: ClassId[]): void;

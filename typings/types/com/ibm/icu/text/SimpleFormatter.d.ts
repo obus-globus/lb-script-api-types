@@ -6,9 +6,9 @@ export class SimpleFormatter extends Object {
     static compileMinMaxArguments(paramarg0: CharSequence, paramarg1: number, paramarg2: number): SimpleFormatter;
     private constructor(arg0: string)
     // private compiledPattern: string;
-    format(arg0: CharSequence[]): string;
-    formatAndAppend(arg0: StringBuilder, arg1: number[], arg2: CharSequence[]): StringBuilder;
-    formatAndReplace(arg0: StringBuilder, arg1: number[], arg2: CharSequence[]): StringBuilder;
+    format(...arg0: CharSequence[]): string;
+    formatAndAppend(arg0: StringBuilder, arg1: number[], ...arg2: CharSequence[]): StringBuilder;
+    formatAndReplace(arg0: StringBuilder, arg1: number[], ...arg2: CharSequence[]): StringBuilder;
     getArgumentLimit(): number;
     getTextWithNoArguments(): string;
     toString(): string;

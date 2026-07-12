@@ -10,7 +10,7 @@ export class NioServerDomainSocketChannel$NioDomainServerSocketChannelConfig ext
     // private getBacklog(): number;
     getOption<T extends unknown>(arg0: ChannelOption<T>): T;
     getOptions(): Map<ChannelOption<Object>, Object>;
-    getOptions(arg0: Map<ChannelOption<Object>, Object>, arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
+    getOptions(arg0: Map<ChannelOption<Object>, Object>, ...arg1: ChannelOption<Object>[]): Map<ChannelOption<Object>, Object>;
     // private jdkChannel(): ServerSocketChannel;
     // private setBacklog(arg0: number): NioServerDomainSocketChannel$NioDomainServerSocketChannelConfig;
     setOption<T extends unknown>(arg0: ChannelOption<T>, arg1: T): boolean;

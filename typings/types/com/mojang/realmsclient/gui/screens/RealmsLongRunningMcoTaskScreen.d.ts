@@ -20,7 +20,7 @@ export class RealmsLongRunningMcoTaskScreen extends RealmsScreen {
     static extractMenuBackgroundTexture(paramgraphics: GuiGraphicsExtractor, parammenuBackground: Identifier, paramx: number, paramy: number, paramu: number, paramv: number, paramwidth: number, paramheight: number): void;
     static findNarratableWidget(paramnarratableEntries: NarratableEntry[], paramlastNarratable: NarratableEntry): Screen$NarratableSearchResult;
     static getTooltipFromItem(paramminecraft: Minecraft, paramitemStack: ItemStack): Component[];
-    constructor(lastScreen: Screen, tasks: LongRunningTask[])
+    constructor(lastScreen: Screen, ...tasks: LongRunningTask[])
     // private lastScreen: Screen;
     // private layout: LinearLayout;
     // private loadingDotsWidget: LoadingDotsWidget;

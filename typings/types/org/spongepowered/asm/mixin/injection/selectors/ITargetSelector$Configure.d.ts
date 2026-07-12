@@ -14,6 +14,6 @@ export class ITargetSelector$Configure extends Enum<ITargetSelector$Configure> {
     static values(): (Object | null)[];
     private constructor(arg2: number)
     // private requiredArgs: number;
-    checkArgs(arg0: string[]): void;
+    checkArgs(...arg0: string[]): void;
     name(): "SELECT_MEMBER" | "SELECT_INSTRUCTION" | "MOVE" | "ORPHAN" | "TRANSFORM" | "PERMISSIVE" | "CLEAR_LIMITS";
 }

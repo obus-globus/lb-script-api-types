@@ -1,8 +1,8 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ArrayUtils extends Object {
-    static indexOf(paramarray: number[], paramfromIndex: number, parammaxIndex: number, paramvalues: number[]): number;
-    static indexOf(paramarray: string[], paramfromIndex: number, parammaxIndex: number, paramvalues: string[]): number;
-    static indexOf(paramstring: string, paramfromIndex: number, parammaxIndex: number, paramvalues: string[]): number;
+    static indexOf(paramarray: number[], paramfromIndex: number, parammaxIndex: number, ...paramvalues: number[]): number;
+    static indexOf(paramarray: string[], paramfromIndex: number, parammaxIndex: number, ...paramvalues: string[]): number;
+    static indexOf(paramstring: string, paramfromIndex: number, parammaxIndex: number, ...paramvalues: string[]): number;
     static indexOfWithOrMask(paramhaystack: number[], paramfromIndex: number, paramlength: number, paramneedle: number[], parammask: number[]): number;
     static indexOfWithOrMask(paramhaystack: string[], paramfromIndex: number, paramlength: number, paramneedle: string[], parammask: string[]): number;
     static indexOfWithOrMask(paramhaystack: string, paramfromIndex: number, paramlength: number, paramneedle: string, parammask: string): number;

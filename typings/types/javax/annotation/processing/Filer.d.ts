@@ -5,8 +5,8 @@ import type { JavaFileObject } from '../../../javax/tools/JavaFileObject.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 export interface Filer extends Object{
-    createClassFile(arg0: CharSequence, arg1: Element[]): JavaFileObject;
-    createResource(arg0: JavaFileManager$Location, arg1: CharSequence, arg2: CharSequence, arg3: Element[]): FileObject;
-    createSourceFile(arg0: CharSequence, arg1: Element[]): JavaFileObject;
+    createClassFile(arg0: CharSequence, ...arg1: Element[]): JavaFileObject;
+    createResource(arg0: JavaFileManager$Location, arg1: CharSequence, arg2: CharSequence, ...arg3: Element[]): FileObject;
+    createSourceFile(arg0: CharSequence, ...arg1: Element[]): JavaFileObject;
     getResource(arg0: JavaFileManager$Location, arg1: CharSequence, arg2: CharSequence): FileObject;
 }

@@ -14,13 +14,13 @@ export class BoxExtensionsKt extends Object {
      *
      * @see net.minecraft.world.phys.AABB.distanceToSqr
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt:120}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt:120}
      */
     static distanceToSqr(aABB: AABB, x: number, y: number, z: number): number;
     /**
      * Ray–AABB first hit point (entry or exit).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt#L101 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt:101}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt#L101 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt:101}
      */
     static firstHit(aABB: AABB, from: Vec3, to: Vec3): Vec3;
     static getCoordinate(aABB: AABB, direction: Direction): number;
@@ -28,7 +28,7 @@ export class BoxExtensionsKt extends Object {
     /**
      * Get the nearest point of a box. Very useful to calculate the distance of an enemy.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt:107}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt:107}
      */
     static getNearestPoint(aABB: AABB, from: Position): Vec3;
     static getNearestPointOnSide(aABB: AABB, from: Vec3, side: Direction): Vec3;
@@ -36,7 +36,7 @@ export class BoxExtensionsKt extends Object {
     /**
      * Tests if the infinite line resulting from {@link start} and the point {@link p} will intersect this box.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt:93}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/BoxExtensions.kt:93}
      */
     static isHitByLine(aABB: AABB, start: Vec3, p: Vec3): boolean;
     static iterateBlockPos(aABB: AABB, minYInclusive: number, maxYInclusive: number): BlockPos[];

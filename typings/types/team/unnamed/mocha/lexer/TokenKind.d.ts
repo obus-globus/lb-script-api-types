@@ -44,7 +44,7 @@ export class TokenKind extends Enum<TokenKind> {
     static valueOf(paramarg0: string): TokenKind;
     static values(): (Object | null)[];
     private constructor()
-    private constructor(arg2: TokenKind$Tag[])
+    private constructor(...arg2: TokenKind$Tag[])
     // private tags: TokenKind$Tag[];
     hasTag(arg0: TokenKind$Tag): boolean;
     name(): "EOF" | "ERROR" | "IDENTIFIER" | "STRING" | "FLOAT" | "TRUE" | "FALSE" | "BREAK" | "CONTINUE" | "RETURN" | "DOT" | "BANG" | "AMPAMP" | "BARBAR" | "LT" | "LTE" | "GT" | "GTE" | "EQ" | "EQEQ" | "BANGEQ" | "STAR" | "SLASH" | "PLUS" | "SUB" | "LPAREN" | "RPAREN" | "LBRACE" | "RBRACE" | "QUESQUES" | "QUES" | "COLON" | "ARROW" | "LBRACKET" | "RBRACKET" | "COMMA" | "SEMICOLON";

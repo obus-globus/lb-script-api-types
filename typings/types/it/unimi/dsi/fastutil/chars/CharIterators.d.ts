@@ -17,7 +17,7 @@ export class CharIterators extends Object {
     static any(paramarg0: CharIterator, paramarg1: (param0: number) => boolean): boolean;
     static asCharIterator(paramarg0: Iterator<Object>): CharIterator;
     static asCharIterator(paramarg0: ListIterator<Object>): CharListIterator;
-    static concat(paramarg0: (Object | null)[]): CharIterator;
+    static concat(...paramarg0: (Object | null)[]): CharIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): CharIterator;
     static fromTo(paramarg0: string, paramarg1: string): CharListIterator;
     static indexOf(paramarg0: CharIterator, paramarg1: (param0: string) => boolean): number;

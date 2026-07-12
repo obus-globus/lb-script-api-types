@@ -9,12 +9,12 @@ import type { Locale } from '../../../../java/util/Locale.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LocaleDisplayNames$LastResortLocaleDisplayNames extends LocaleDisplayNames {
     static getInstance(paramarg0: ULocale): LocaleDisplayNames;
-    static getInstance(paramarg0: ULocale, paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: ULocale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
     static getInstance(paramarg0: ULocale, paramarg1: LocaleDisplayNames$DialectHandling): LocaleDisplayNames;
     static getInstance(paramarg0: Locale): LocaleDisplayNames;
-    static getInstance(paramarg0: Locale, paramarg1: (Object | null)[]): LocaleDisplayNames;
+    static getInstance(paramarg0: Locale, ...paramarg1: (Object | null)[]): LocaleDisplayNames;
     private constructor(arg0: ULocale, arg1: LocaleDisplayNames$DialectHandling)
-    private constructor(arg0: ULocale, arg1: DisplayContext[])
+    private constructor(arg0: ULocale, ...arg1: DisplayContext[])
     // private contexts: DisplayContext[];
     readonly locale: ULocale;
     getContext(arg0: DisplayContext$Type): DisplayContext;

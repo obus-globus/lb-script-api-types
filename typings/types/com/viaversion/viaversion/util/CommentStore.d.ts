@@ -10,10 +10,10 @@ export class CommentStore extends Object {
     // private pathSeparatorQuoted: string;
     // private getIndents(arg0: string): number;
     header(arg0: string): string[];
-    header(arg0: string, arg1: string[]): void;
+    header(arg0: string, ...arg1: string[]): void;
     // private join(arg0: string[], arg1: number): string;
     mainHeader(): string[];
-    mainHeader(arg0: string[]): void;
+    mainHeader(...arg0: string[]): void;
     storeComments(arg0: InputStream): void;
     writeComments(arg0: string, arg1: File): void;
 }

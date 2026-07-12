@@ -12,7 +12,7 @@ export class TestEnvironmentDefinition$AllOf extends Record implements TestEnvir
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
     static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;
     static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
-    constructor(defs: TestEnvironmentDefinition<Object>[])
+    constructor(...defs: TestEnvironmentDefinition<Object>[])
     constructor(definitions: Holder<TestEnvironmentDefinition<Object>>[])
     // private definitions: Holder<TestEnvironmentDefinition<Object>>[];
     codec(): MapCodec<TestEnvironmentDefinition$AllOf>;

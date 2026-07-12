@@ -8,7 +8,7 @@ import type { ContainerInput } from '../../../../../../net/raphimc/viabedrock/pr
 import type { BedrockItem } from '../../../../../../net/raphimc/viabedrock/protocol/model/BedrockItem.d.ts'
 export abstract class Container extends Object {
     constructor(arg0: UserConnection, arg1: number, arg2: ContainerType, arg3: TextComponent, arg4: BlockPosition, arg5: BedrockItem[], arg6: string[])
-    constructor(arg0: UserConnection, arg1: number, arg2: ContainerType, arg3: TextComponent, arg4: BlockPosition, arg5: number, arg6: string[])
+    constructor(arg0: UserConnection, arg1: number, arg2: ContainerType, arg3: TextComponent, arg4: BlockPosition, arg5: number, ...arg6: string[])
     // private containerId: number;
     readonly items: BedrockItem[];
     // private position: BlockPosition;

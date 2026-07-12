@@ -10,7 +10,7 @@ import type { WildcardFileFilter$Builder } from '../../../../../org/apache/commo
 export class WildcardFileFilter extends AbstractFileFilter implements Serializable {
     static EMPTY_STRING_ARRAY: (Object | null)[];
     static builder(): WildcardFileFilter$Builder;
-    constructor(arg0: string[])
+    constructor(...arg0: string[])
     constructor(arg0: string[], arg1: IOCase)
     constructor(arg0: string)
     constructor(arg0: string, arg1: IOCase)

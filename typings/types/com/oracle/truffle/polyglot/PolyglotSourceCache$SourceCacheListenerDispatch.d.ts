@@ -6,7 +6,7 @@ import type { SourceCacheListener$CacheType } from '../../../../com/oracle/truff
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class PolyglotSourceCache$SourceCacheListenerDispatch extends Object implements SourceCacheListener {
-    constructor(listeners: SourceCacheListener[])
+    constructor(...listeners: SourceCacheListener[])
     // private listeners: SourceCacheListener[];
     onCacheEvict(source: Source, target: CallTarget, cacheType: SourceCacheListener$CacheType, hits: number): void;
     onCacheFail(sharingLayer: PolyglotSharingLayer, source: Source, cacheType: SourceCacheListener$CacheType, startTime: number, throwable: Throwable): void;

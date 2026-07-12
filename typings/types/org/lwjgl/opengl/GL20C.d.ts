@@ -704,7 +704,7 @@ export class GL20C extends GL15C {
     static glSampleCoverage(paramarg0: number, paramarg1: boolean): void;
     static glScissor(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number): void;
     static glShaderSource(paramarg0: number, paramarg1: CharSequence): void;
-    static glShaderSource(paramarg0: number, paramarg1: (Object | null)[]): void;
+    static glShaderSource(paramarg0: number, ...paramarg1: (Object | null)[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glStencilFunc(paramarg0: number, paramarg1: number, paramarg2: number): void;

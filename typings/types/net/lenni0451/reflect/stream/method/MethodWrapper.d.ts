@@ -15,8 +15,8 @@ export class MethodWrapper extends Object {
     equals(arg0: Object | null): boolean;
     hashCode(): number;
     invoke<T extends unknown>(): T;
-    invokeArgs<T extends unknown>(arg0: Object[]): T;
-    invokeInstance<T extends unknown>(arg0: Object, arg1: Object[]): T;
+    invokeArgs<T extends unknown>(...arg0: Object[]): T;
+    invokeInstance<T extends unknown>(arg0: Object, ...arg1: Object[]): T;
     modifier(): ModifierWrapper;
     name(): string;
     owner(): Class<Object>;
@@ -27,9 +27,9 @@ export class MethodWrapper extends Object {
     returnType(): Class<Object>;
     stream(): RStream;
     stream(arg0: Class<Object>): RStream;
-    streamArgs(arg0: Class<Object>, arg1: Object[]): RStream;
-    streamArgs(arg0: Object[]): RStream;
-    streamInstance(arg0: Class<Object>, arg1: Object, arg2: Object[]): RStream;
-    streamInstance(arg0: Object, arg1: Object[]): RStream;
+    streamArgs(arg0: Class<Object>, ...arg1: Object[]): RStream;
+    streamArgs(...arg0: Object[]): RStream;
+    streamInstance(arg0: Class<Object>, arg1: Object, ...arg2: Object[]): RStream;
+    streamInstance(arg0: Object, ...arg1: Object[]): RStream;
     toString(): string;
 }

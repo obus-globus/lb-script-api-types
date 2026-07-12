@@ -3,7 +3,7 @@ import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts
 import type { CharSequenceTranslator } from '../../../../../../org/apache/commons/lang3/text/translate/CharSequenceTranslator.d.ts'
 export class LookupTranslator extends CharSequenceTranslator {
     static hex(paramarg0: number): string;
-    constructor(arg0: CharSequence[][])
+    constructor(...arg0: CharSequence[][])
     // private longest: number;
     // private lookupMap: { [key: string]: string };
     // private prefixSet: string[];

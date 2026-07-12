@@ -19,11 +19,11 @@ export class ReverseOrdering<T extends unknown> extends Ordering<T> implements S
     equals(object: Object | null): boolean;
     hashCode(): number;
     max<E extends T>(a: E, b: E): E;
-    max<E extends T>(a: E, b: E, c: E, rest: E[]): E;
+    max<E extends T>(a: E, b: E, c: E, ...rest: E[]): E;
     max<E extends T>(iterable: E[]): E;
     max<E extends T>(iterator: Iterator<E>): E;
     min<E extends T>(a: E, b: E): E;
-    min<E extends T>(a: E, b: E, c: E, rest: E[]): E;
+    min<E extends T>(a: E, b: E, c: E, ...rest: E[]): E;
     min<E extends T>(iterable: E[]): E;
     min<E extends T>(iterator: Iterator<E>): E;
     reverse<S extends T>(): Ordering<S>;

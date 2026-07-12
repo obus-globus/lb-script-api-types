@@ -45,10 +45,10 @@ export class MeasureFormat extends UFormat {
     // private formatMeasure(measure: Measure): FormattedStringBuilder;
     // private formatMeasureInteger(measure: Measure): FormattedStringBuilder;
     formatMeasurePerUnit(measure: Measure, perUnit: MeasureUnit, appendTo: StringBuilder, pos: FieldPosition): StringBuilder;
-    formatMeasures(appendTo: StringBuilder, fpos: FieldPosition, measures: Measure[]): StringBuilder;
-    formatMeasures(measures: Measure[]): string;
-    // private formatMeasuresInternal(appendTo: Appendable, fieldPosition: FieldPosition, measures: Measure[]): void;
-    // private formatMeasuresSlowTrack(listFormatter: ListFormatter, appendTo: Appendable, fieldPosition: FieldPosition, measures: Measure[]): void;
+    formatMeasures(appendTo: StringBuilder, fpos: FieldPosition, ...measures: Measure[]): StringBuilder;
+    formatMeasures(...measures: Measure[]): string;
+    // private formatMeasuresInternal(appendTo: Appendable, fieldPosition: FieldPosition, ...measures: Measure[]): void;
+    // private formatMeasuresSlowTrack(listFormatter: ListFormatter, appendTo: Appendable, fieldPosition: FieldPosition, ...measures: Measure[]): void;
     // private formatNumeric(hms: Number[], appendable: Appendable): void;
     getLocale(): ULocale;
     getLocale(type: ULocale$Type): ULocale;

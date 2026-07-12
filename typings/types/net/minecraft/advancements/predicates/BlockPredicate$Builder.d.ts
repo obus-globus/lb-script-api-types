@@ -20,6 +20,7 @@ export class BlockPredicate$Builder extends Object {
     build(): BlockPredicate;
     components(components: DataComponentMatchers): BlockPredicate$Builder;
     hasNbt(nbt: CompoundTag): BlockPredicate$Builder;
+    of(lookup: HolderGetter<Block>, ...blocks: Block[]): BlockPredicate$Builder;
     of(lookup: HolderGetter<Block>, blocks: Block[]): BlockPredicate$Builder;
     of(lookup: HolderGetter<Block>, tag: TagKey<Block>): BlockPredicate$Builder;
     setProperties(properties: StatePropertiesPredicate$Builder): BlockPredicate$Builder;

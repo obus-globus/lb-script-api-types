@@ -5,7 +5,7 @@ import type { CEntryPointLiteral } from '../../../org/graalvm/nativeimage/c/func
 export class ProcessProperties extends Object {
     static destroy(paramprocessID: number): boolean;
     static destroyForcibly(paramprocessID: number): boolean;
-    static exec(paramexecutable: Path[][], paramargs: (Object | null)[]): void;
+    static exec(paramexecutable: Path[][], ...paramargs: (Object | null)[]): void;
     static exec(paramexecutable: Path[][], paramargs: (Object | null)[], paramenv: { [key: string]: string }): void;
     static getArgumentVectorBlockSize(): number;
     static getArgumentVectorProgramName(): string;

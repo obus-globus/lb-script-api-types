@@ -7,7 +7,7 @@ export class ByteOrderMark extends Object implements Serializable {
     static UTF_32LE: ByteOrderMark;
     static UTF_8: ByteOrderMark;
     static UTF_BOM: string;
-    constructor(arg0: string, arg1: number[])
+    constructor(arg0: string, ...arg1: number[])
     readonly bytes: number[];
     readonly charsetName: string;
     equals(arg0: Object | null): boolean;

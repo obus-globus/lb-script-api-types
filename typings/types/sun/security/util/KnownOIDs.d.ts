@@ -287,7 +287,7 @@ export class KnownOIDs extends Enum<KnownOIDs> {
     static valueOf(paramarg0: string): KnownOIDs;
     static values(): (Object | null)[];
     private constructor(arg2: string)
-    private constructor(arg2: string, arg3: string, arg4: string[])
+    private constructor(arg2: string, arg3: string, ...arg4: string[])
     private constructor(arg2: string, arg3: string, arg4: boolean)
     // private aliases: string[];
     // private oid: string;

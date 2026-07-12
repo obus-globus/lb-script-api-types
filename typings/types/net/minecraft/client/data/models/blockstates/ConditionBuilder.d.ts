@@ -13,5 +13,5 @@ export class ConditionBuilder extends Object {
     negatedTerm<T extends Comparable<T>>(property: Property<T>, value: T): ConditionBuilder;
     // private putValue<T extends Comparable<T>>(property: Property<T>, term: KeyValueCondition$Terms): void;
     term<T extends Comparable<T>>(property: Property<T>, value: T): ConditionBuilder;
-    term<T extends Comparable<T>>(property: Property<T>, value: T, values: T[]): ConditionBuilder;
+    term<T extends Comparable<T>>(property: Property<T>, value: T, ...values: T[]): ConditionBuilder;
 }

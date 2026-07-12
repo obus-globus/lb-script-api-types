@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CurrencyData$CurrencySpacingInfo extends Object {
     static DEFAULT: CurrencyData$CurrencySpacingInfo;
     constructor()
-    constructor(arg0: string[])
+    constructor(...arg0: string[])
     hasAfterCurrency: boolean;
     hasBeforeCurrency: boolean;
     // private symbols: string[][];

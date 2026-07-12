@@ -11,9 +11,9 @@ import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 import type { StringCompanionObject } from '../../kotlin/jvm/internal/StringCompanionObject.d.ts'
 import type { StringsKt__StringNumberConversionsKt } from '../../kotlin/text/StringsKt__StringNumberConversionsKt.d.ts'
 export class StringsKt__StringsJVMKt extends StringsKt__StringNumberConversionsKt {
-    static append(paramarg0: Appendable | null, paramarg1: (Object | null)[]): Appendable | null;
-    static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
-    static append(paramarg0: StringBuilder, paramarg1: (Object | null)[]): StringBuilder;
+    static append(paramarg0: Appendable | null, ...paramarg1: (Object | null)[]): Appendable | null;
+    static append(paramarg0: StringBuilder, ...paramarg1: (Object | null)[]): StringBuilder;
+    static append(paramarg0: StringBuilder, ...paramarg1: (Object | null)[]): StringBuilder;
     static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object) => CharSequence): void;
     static appendRange(paramarg0: Appendable | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Appendable | null;
     static appendln(paramarg0: Appendable): Appendable;

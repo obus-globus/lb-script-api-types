@@ -37,7 +37,7 @@ export interface Logger extends Object {
     debug(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     debug(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     debug(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    debug(message: string, params: Object[]): void;
+    debug(message: string, ...params: Object[]): void;
     debug(message: string, paramSuppliers: () => Object | null[]): void;
     debug(message: string, throwable: Throwable): void;
     debug(marker: Marker, message: Object): void;
@@ -55,7 +55,7 @@ export interface Logger extends Object {
     debug(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     debug(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     debug(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    debug(marker: Marker, message: string, params: Object[]): void;
+    debug(marker: Marker, message: string, ...params: Object[]): void;
     debug(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     debug(marker: Marker, message: string, throwable: Throwable): void;
     debug(marker: Marker, message: Message): void;
@@ -71,7 +71,7 @@ export interface Logger extends Object {
     debug(messageSupplier: () => Object | null): void;
     debug(messageSupplier: () => Object | null, throwable: Throwable): void;
     entry(): void;
-    entry(params: Object[]): void;
+    entry(...params: Object[]): void;
     error(message: Object): void;
     error(message: Object, throwable: Throwable): void;
     error(message: CharSequence): void;
@@ -87,7 +87,7 @@ export interface Logger extends Object {
     error(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     error(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     error(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    error(message: string, params: Object[]): void;
+    error(message: string, ...params: Object[]): void;
     error(message: string, paramSuppliers: () => Object | null[]): void;
     error(message: string, throwable: Throwable): void;
     error(marker: Marker, message: Object): void;
@@ -105,7 +105,7 @@ export interface Logger extends Object {
     error(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     error(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     error(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    error(marker: Marker, message: string, params: Object[]): void;
+    error(marker: Marker, message: string, ...params: Object[]): void;
     error(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     error(marker: Marker, message: string, throwable: Throwable): void;
     error(marker: Marker, message: Message): void;
@@ -137,7 +137,7 @@ export interface Logger extends Object {
     fatal(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     fatal(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     fatal(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    fatal(message: string, params: Object[]): void;
+    fatal(message: string, ...params: Object[]): void;
     fatal(message: string, paramSuppliers: () => Object | null[]): void;
     fatal(message: string, throwable: Throwable): void;
     fatal(marker: Marker, message: Object): void;
@@ -155,7 +155,7 @@ export interface Logger extends Object {
     fatal(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     fatal(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     fatal(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    fatal(marker: Marker, message: string, params: Object[]): void;
+    fatal(marker: Marker, message: string, ...params: Object[]): void;
     fatal(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     fatal(marker: Marker, message: string, throwable: Throwable): void;
     fatal(marker: Marker, message: Message): void;
@@ -189,7 +189,7 @@ export interface Logger extends Object {
     info(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     info(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     info(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    info(message: string, params: Object[]): void;
+    info(message: string, ...params: Object[]): void;
     info(message: string, paramSuppliers: () => Object | null[]): void;
     info(message: string, throwable: Throwable): void;
     info(marker: Marker, message: Object): void;
@@ -207,7 +207,7 @@ export interface Logger extends Object {
     info(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     info(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     info(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    info(marker: Marker, message: string, params: Object[]): void;
+    info(marker: Marker, message: string, ...params: Object[]): void;
     info(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     info(marker: Marker, message: string, throwable: Throwable): void;
     info(marker: Marker, message: Message): void;
@@ -251,7 +251,7 @@ export interface Logger extends Object {
     log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     log(level: Level, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    log(level: Level, message: string, params: Object[]): void;
+    log(level: Level, message: string, ...params: Object[]): void;
     log(level: Level, message: string, paramSuppliers: () => Object | null[]): void;
     log(level: Level, message: string, throwable: Throwable): void;
     log(level: Level, marker: Marker, message: Object): void;
@@ -269,7 +269,7 @@ export interface Logger extends Object {
     log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     log(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    log(level: Level, marker: Marker, message: string, params: Object[]): void;
+    log(level: Level, marker: Marker, message: string, ...params: Object[]): void;
     log(level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     log(level: Level, marker: Marker, message: string, throwable: Throwable): void;
     log(level: Level, marker: Marker, message: Message): void;
@@ -285,8 +285,8 @@ export interface Logger extends Object {
     log(level: Level, messageSupplier: () => Object | null): void;
     log(level: Level, messageSupplier: () => Object | null, throwable: Throwable): void;
     logMessage(level: Level, marker: Marker, fqcn: string, location: StackTraceElement, message: Message, throwable: Throwable): void;
-    printf(level: Level, format: string, params: Object[]): void;
-    printf(level: Level, marker: Marker, format: string, params: Object[]): void;
+    printf(level: Level, format: string, ...params: Object[]): void;
+    printf(level: Level, marker: Marker, format: string, ...params: Object[]): void;
     throwing<T extends Throwable>(throwable: T): T;
     throwing<T extends Throwable>(level: Level, throwable: T): T;
     trace(message: Object): void;
@@ -304,7 +304,7 @@ export interface Logger extends Object {
     trace(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     trace(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     trace(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    trace(message: string, params: Object[]): void;
+    trace(message: string, ...params: Object[]): void;
     trace(message: string, paramSuppliers: () => Object | null[]): void;
     trace(message: string, throwable: Throwable): void;
     trace(marker: Marker, message: Object): void;
@@ -322,7 +322,7 @@ export interface Logger extends Object {
     trace(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     trace(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     trace(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    trace(marker: Marker, message: string, params: Object[]): void;
+    trace(marker: Marker, message: string, ...params: Object[]): void;
     trace(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     trace(marker: Marker, message: string, throwable: Throwable): void;
     trace(marker: Marker, message: Message): void;
@@ -339,7 +339,7 @@ export interface Logger extends Object {
     trace(messageSupplier: () => Object | null, throwable: Throwable): void;
     traceEntry(): EntryMessage;
     traceEntry(paramSuppliers: () => Object | null[]): EntryMessage;
-    traceEntry(format: string, params: Object[]): EntryMessage;
+    traceEntry(format: string, ...params: Object[]): EntryMessage;
     traceEntry(format: string, paramSuppliers: () => Object | null[]): EntryMessage;
     traceEntry(message: Message): EntryMessage;
     traceExit(): void;
@@ -363,7 +363,7 @@ export interface Logger extends Object {
     warn(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     warn(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     warn(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    warn(message: string, params: Object[]): void;
+    warn(message: string, ...params: Object[]): void;
     warn(message: string, paramSuppliers: () => Object | null[]): void;
     warn(message: string, throwable: Throwable): void;
     warn(marker: Marker, message: Object): void;
@@ -381,7 +381,7 @@ export interface Logger extends Object {
     warn(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     warn(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     warn(marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    warn(marker: Marker, message: string, params: Object[]): void;
+    warn(marker: Marker, message: string, ...params: Object[]): void;
     warn(marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     warn(marker: Marker, message: string, throwable: Throwable): void;
     warn(marker: Marker, message: Message): void;

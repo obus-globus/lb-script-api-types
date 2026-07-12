@@ -40,11 +40,11 @@ export abstract class Ordering<T extends unknown> extends Object implements Comp
     leastOf<E extends T>(iterator: Iterator<E>, k: number): E[];
     lexicographical<S extends T>(): Ordering<S[]>;
     max<E extends T>(a: E, b: E): E;
-    max<E extends T>(a: E, b: E, c: E, rest: E[]): E;
+    max<E extends T>(a: E, b: E, c: E, ...rest: E[]): E;
     max<E extends T>(iterable: E[]): E;
     max<E extends T>(iterator: Iterator<E>): E;
     min<E extends T>(a: E, b: E): E;
-    min<E extends T>(a: E, b: E, c: E, rest: E[]): E;
+    min<E extends T>(a: E, b: E, c: E, ...rest: E[]): E;
     min<E extends T>(iterable: E[]): E;
     min<E extends T>(iterator: Iterator<E>): E;
     nullsFirst<S extends T>(): Ordering<S>;

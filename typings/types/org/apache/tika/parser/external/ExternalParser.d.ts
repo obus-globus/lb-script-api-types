@@ -14,8 +14,8 @@ import type { ContentHandler } from '../../../../../org/xml/sax/ContentHandler.d
 export class ExternalParser extends Object implements Parser {
     static INPUT_FILE_TOKEN: string;
     static OUTPUT_FILE_TOKEN: string;
-    static check(paramarg0: string, paramarg1: number[]): boolean;
-    static check(paramarg0: (Object | null)[], paramarg1: number[]): boolean;
+    static check(paramarg0: string, ...paramarg1: number[]): boolean;
+    static check(paramarg0: (Object | null)[], ...paramarg1: number[]): boolean;
     constructor()
     readonly command: string[];
     readonly ignoredLineConsumer: ExternalParser$LineConsumer;
@@ -32,7 +32,7 @@ export class ExternalParser extends Object implements Parser {
     parse(arg0: InputStream, arg1: ContentHandler, arg2: Metadata, arg3: ParseContext): void;
     // private parse(arg0: TikaInputStream, arg1: XHTMLContentHandler, arg2: Metadata, arg3: TemporaryResources): void;
     // private sendInput(arg0: Process, arg1: InputStream): void;
-    setCommand(arg0: string[]): void;
+    setCommand(...arg0: string[]): void;
     setIgnoredLineConsumer(arg0: ExternalParser$LineConsumer): void;
     setMetadataExtractionPatterns(arg0: Map<Pattern, string>): void;
     setSupportedTypes(arg0: MediaType[]): void;

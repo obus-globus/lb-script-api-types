@@ -21,7 +21,7 @@ export class EnumUtils extends Object {
     static isValidEnum(paramarg0: Class<Object>, paramarg1: string): boolean;
     static isValidEnumIgnoreCase(paramarg0: Class<Object>, paramarg1: string): boolean;
     static processBitVector(paramarg0: Class<Object>, paramarg1: number): (Object | null)[];
-    static processBitVectors(paramarg0: Class<Object>, paramarg1: number[]): (Object | null)[];
+    static processBitVectors(paramarg0: Class<Object>, ...paramarg1: number[]): (Object | null)[];
     static stream(paramarg0: Class<Object>): Stream<Object>;
     constructor()
 }

@@ -17,7 +17,7 @@ export class ByteIterators extends Object {
     static any(paramarg0: ByteIterator, paramarg1: (param0: number) => boolean): boolean;
     static asByteIterator(paramarg0: Iterator<Object>): ByteIterator;
     static asByteIterator(paramarg0: ListIterator<Object>): ByteListIterator;
-    static concat(paramarg0: (Object | null)[]): ByteIterator;
+    static concat(...paramarg0: (Object | null)[]): ByteIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): ByteIterator;
     static fromTo(paramarg0: number, paramarg1: number): ByteListIterator;
     static indexOf(paramarg0: ByteIterator, paramarg1: (param0: number) => boolean): number;

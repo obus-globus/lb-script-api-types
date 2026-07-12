@@ -2,11 +2,11 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Builder } from '../../../../../org/apache/commons/lang3/builder/Builder.d.ts'
 export class HashCodeBuilder extends Object implements Builder<number> {
-    static reflectionHashCode(paramarg0: number, paramarg1: number, paramarg2: Object | null, paramarg3: boolean, paramarg4: Class<Object>, paramarg5: (Object | null)[]): number;
+    static reflectionHashCode(paramarg0: number, paramarg1: number, paramarg2: Object | null, paramarg3: boolean, paramarg4: Class<Object>, ...paramarg5: (Object | null)[]): number;
     static reflectionHashCode(paramarg0: number, paramarg1: number, paramarg2: Object): number;
     static reflectionHashCode(paramarg0: number, paramarg1: number, paramarg2: Object, paramarg3: boolean): number;
     static reflectionHashCode(paramarg0: Object, paramarg1: boolean): number;
-    static reflectionHashCode(paramarg0: Object, paramarg1: (Object | null)[]): number;
+    static reflectionHashCode(paramarg0: Object, ...paramarg1: (Object | null)[]): number;
     static reflectionHashCode(paramarg0: Object, paramarg1: string[]): number;
     constructor()
     constructor(arg0: number, arg1: number)

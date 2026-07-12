@@ -10,8 +10,8 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RMatrix extends Object {
     static identity(paramarg0: number): RMatrix;
     static zero(paramarg0: number, paramarg1: number): RMatrix;
-    constructor(arg0: RVector[])
-    constructor(arg0: Real[][])
+    constructor(...arg0: RVector[])
+    constructor(...arg0: Real[][])
     constructor(arg0: number, arg1: (param0: number, param1: number) => Real)
     constructor(arg0: number, arg1: number)
     constructor(arg0: number, arg1: number, arg2: (param0: number, param1: number) => Real)

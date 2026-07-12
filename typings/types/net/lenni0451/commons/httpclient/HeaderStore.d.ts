@@ -6,8 +6,9 @@ export abstract class HeaderStore<T extends HeaderStore<T>> extends Object {
     constructor()
     constructor(arg0: { [key: string]: string[] })
     readonly headers: { [key: string]: string[] };
-    appendHeader(arg0: HttpHeader[]): T;
+    appendHeader(...arg0: HttpHeader[]): T;
     appendHeader(arg0: string, arg1: string): T;
+    appendHeader(arg0: HttpHeader[]): T;
     clearHeaders(): T;
     forEachHeader(arg0: (param0: string, param1: string) => void): T;
     getFirstHeader(arg0: string): Optional<string>;
@@ -18,6 +19,7 @@ export abstract class HeaderStore<T extends HeaderStore<T>> extends Object {
     hasHeader(arg0: string, arg1: string): boolean;
     hasHeader(arg0: HttpHeader): boolean;
     removeHeader(arg0: string): T;
-    setHeader(arg0: HttpHeader[]): T;
+    setHeader(...arg0: HttpHeader[]): T;
     setHeader(arg0: string, arg1: string): T;
+    setHeader(arg0: HttpHeader[]): T;
 }

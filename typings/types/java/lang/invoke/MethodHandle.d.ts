@@ -44,10 +44,10 @@ export class MethodHandle extends Object implements Constable {
     internalValues(arg0: number): Object;
     intrinsicData(): Object;
     intrinsicName(): MethodHandleImpl$Intrinsic;
-    invoke(arg0: Object[]): Object;
-    invokeBasic(arg0: Object[]): Object;
-    invokeExact(arg0: Object[]): Object;
-    invokeWithArguments(arg0: Object[]): Object;
+    invoke(...arg0: Object[]): Object;
+    invokeBasic(...arg0: Object[]): Object;
+    invokeExact(...arg0: Object[]): Object;
+    invokeWithArguments(...arg0: Object[]): Object;
     invokeWithArguments(arg0: (Object | null)[]): Object;
     isCrackable(): boolean;
     isInvokeSpecial(): boolean;

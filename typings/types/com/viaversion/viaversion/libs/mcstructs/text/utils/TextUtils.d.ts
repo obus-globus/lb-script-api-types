@@ -5,7 +5,7 @@ import type { Function } from '../../../../../../../java/util/function/Function.
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class TextUtils extends Object {
     static iterateAll(paramarg0: TextComponent, paramarg1: (param0: TextComponent) => void): void;
-    static join(paramarg0: TextComponent, paramarg1: (Object | null)[]): TextComponent;
+    static join(paramarg0: TextComponent, ...paramarg1: (Object | null)[]): TextComponent;
     static makeURLsClickable(paramarg0: TextComponent): TextComponent;
     static makeURLsClickable(paramarg0: TextComponent, paramarg1: boolean): TextComponent;
     static replace(paramarg0: TextComponent, paramarg1: string, paramarg2: (param0: TextComponent) => TextComponent): TextComponent;

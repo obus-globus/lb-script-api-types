@@ -11,7 +11,7 @@ export class ServicesCatalog extends Object {
     private constructor()
     // private map: { [key: string]: ServicesCatalog$ServiceProvider[] };
     addProvider(arg0: Module, arg1: Class<Object>, arg2: Class<Object>): void;
-    // private addProviders(arg0: string, arg1: ServicesCatalog$ServiceProvider[]): void;
+    // private addProviders(arg0: string, ...arg1: ServicesCatalog$ServiceProvider[]): void;
     findServices(arg0: string): ServicesCatalog$ServiceProvider[];
     register(arg0: Module): void;
 }

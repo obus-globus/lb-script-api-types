@@ -65,7 +65,7 @@ export class AnsiEscape extends Enum<AnsiEscape> {
     static YELLOW: AnsiEscape;
     static createMap(paramvalues: string, paramdontEscapeKeys: (Object | null)[]): { [key: string]: string };
     static createMap(paramvalues: (Object | null)[], paramdontEscapeKeys: (Object | null)[]): { [key: string]: string };
-    static createSequence(paramnames: (Object | null)[]): string;
+    static createSequence(...paramnames: (Object | null)[]): string;
     static getDefaultStyle(): string;
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramname: string): AnsiEscape;

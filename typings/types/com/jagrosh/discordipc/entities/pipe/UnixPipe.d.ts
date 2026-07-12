@@ -6,7 +6,7 @@ import type { File } from '../../../../../java/io/File.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AFUNIXSocket } from '../../../../../org/newsclub/net/unix/AFUNIXSocket.d.ts'
 export class UnixPipe extends Pipe {
-    static openPipe(paramarg0: IPCClient, paramarg1: number, paramarg2: { [key: string]: Callback }, paramarg3: (Object | null)[]): Pipe;
+    static openPipe(paramarg0: IPCClient, paramarg1: number, paramarg2: { [key: string]: Callback }, ...paramarg3: (Object | null)[]): Pipe;
     constructor(arg0: IPCClient, arg1: { [key: string]: Callback }, arg2: File)
     // private socket: AFUNIXSocket;
     close(): void;

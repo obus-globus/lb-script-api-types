@@ -18,6 +18,7 @@ export abstract class AbstractFileComparator extends Object implements Comparato
     static reverseOrder(): (param0: Object) => boolean;
     constructor()
     reversed(): (param0: Object) => boolean;
+    sort(...arg0: File[]): File[];
     sort(arg0: File[]): File[];
     thenComparing(arg0: (param0: Object) => boolean): (param0: Object) => boolean;
     thenComparing<U extends Comparable<U>>(arg0: (param0: File) => U): (param0: Object) => boolean;

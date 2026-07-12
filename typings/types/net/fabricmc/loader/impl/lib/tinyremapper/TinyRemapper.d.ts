@@ -68,7 +68,7 @@ export class TinyRemapper extends Object {
     // private threadCount: number;
     // private threadPool: ExecutorService;
     // private analyze(arg0: boolean, arg1: InputTag[], arg2: Path[], arg3: Path[]): ClassInstance;
-    apply(arg0: (param0: string, param1: number[]) => void, arg1: InputTag[]): void;
+    apply(arg0: (param0: string, param1: number[]) => void, ...arg1: InputTag[]): void;
     // private apply(arg0: ClassInstance): number[];
     // private checkClassMappings(): void;
     createInputTag(): InputTag;
@@ -85,8 +85,8 @@ export class TinyRemapper extends Object {
     // private read(arg0: Path[], arg1: boolean, arg2: InputTag[], arg3: Path[], arg4: boolean, arg5: FileSystemReference[]): CompletableFuture<ClassInstance[]>[];
     // private read(arg0: Path[], arg1: boolean, arg2: InputTag[], arg3: boolean, arg4: FileSystemReference[]): CompletableFuture<ClassInstance[]>[];
     // private read(arg0: Path[][], arg1: boolean, arg2: InputTag): CompletableFuture<ClassInstance[]>;
-    readClassPathAsync(arg0: Path[][]): CompletableFuture<Object>;
+    readClassPathAsync(...arg0: Path[][]): CompletableFuture<Object>;
     // private readFile(arg0: Path[], arg1: boolean, arg2: InputTag[], arg3: Path[], arg4: FileSystemReference[]): ClassInstance[];
-    readInputsAsync(arg0: InputTag, arg1: Path[][]): CompletableFuture<Object>;
+    readInputsAsync(arg0: InputTag, ...arg1: Path[][]): CompletableFuture<Object>;
     // private refresh(): void;
 }

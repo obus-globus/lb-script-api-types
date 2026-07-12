@@ -1655,7 +1655,7 @@ export class GL42 extends GL41 {
     static glCreateProgram(): number;
     static glCreateShader(paramarg0: number): number;
     static glCreateShaderProgramv(paramarg0: number, paramarg1: CharSequence): number;
-    static glCreateShaderProgramv(paramarg0: number, paramarg1: (Object | null)[]): number;
+    static glCreateShaderProgramv(paramarg0: number, ...paramarg1: (Object | null)[]): number;
     static glCreateShaderProgramv(paramarg0: number, paramarg1: PointerBuffer): number;
     static glCullFace(paramarg0: number): void;
     static glDeleteBuffers(paramarg0: number): void;
@@ -2607,7 +2607,7 @@ export class GL42 extends GL41 {
     static glShaderBinary(paramarg0: number[], paramarg1: number, paramarg2: ByteBuffer): void;
     static glShaderBinary(paramarg0: IntBuffer, paramarg1: number, paramarg2: ByteBuffer): void;
     static glShaderSource(paramarg0: number, paramarg1: CharSequence): void;
-    static glShaderSource(paramarg0: number, paramarg1: (Object | null)[]): void;
+    static glShaderSource(paramarg0: number, ...paramarg1: (Object | null)[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: number[]): void;
     static glShaderSource(paramarg0: number, paramarg1: PointerBuffer, paramarg2: IntBuffer): void;
     static glStencilFunc(paramarg0: number, paramarg1: number, paramarg2: number): void;

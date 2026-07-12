@@ -131,7 +131,7 @@ export class NodeFactory extends Object {
     createDual(context: JSContext, left: JavaScriptNode, right: JavaScriptNode): JavaScriptNode;
     createEmpty(): JavaScriptNode;
     createEnumerate(context: JSContext, iteratedObject: JavaScriptNode, values: boolean): JavaScriptNode;
-    createExprBlock(statements: JavaScriptNode[]): JavaScriptNode;
+    createExprBlock(...statements: JavaScriptNode[]): JavaScriptNode;
     createFor(loopNode: LoopNode): StatementNode;
     createForOfRepeatingNode(nextResultNode: JavaScriptNode, body: JavaScriptNode, writeNextValueNode: JSWriteFrameSlotNode): RepeatingNode;
     createForRepeatingNode(condition: JavaScriptNode, body: JavaScriptNode, modify: JavaScriptNode, frameDescriptor: FrameDescriptor, isFirstNode: JavaScriptNode, setNotFirstNode: JavaScriptNode, blockScopeSlot: JSFrameSlot): RepeatingNode;
@@ -245,7 +245,7 @@ export class NodeFactory extends Object {
     createTypeofIdentical(subject: JavaScriptNode, typeString: TruffleString): JavaScriptNode;
     createUnary(operation: NodeFactory$UnaryOperation, operand: JavaScriptNode): JavaScriptNode;
     createVirtualBlockScope(block: JavaScriptNode, start: number, end: number): JavaScriptNode;
-    createVoidBlock(statements: JavaScriptNode[]): JavaScriptNode;
+    createVoidBlock(...statements: JavaScriptNode[]): JavaScriptNode;
     createWhileDo(loopNode: LoopNode): JavaScriptNode;
     createWhileDoRepeatingNode(condition: JavaScriptNode, body: JavaScriptNode): RepeatingNode;
     createWith(expression: JavaScriptNode, statement: JavaScriptNode): JavaScriptNode;

@@ -110,8 +110,8 @@ export class GameTestHelper extends Object {
     assertValueEqual<N extends unknown>(value: N, expected: N, valueName: Component): void;
     assertValueInBetween<N extends Comparable<N>>(lowerBound: N, value: N, upperBound: N, valueName: string): void;
     assertValueInBetween<N extends Comparable<N>>(lowerBound: N, value: N, upperBound: N, valueName: Component): void;
-    assertionException(descriptionId: string, arguments: Object[]): GameTestAssertException;
-    assertionException(pos: BlockPos, descriptionId: string, arguments: Object[]): GameTestAssertPosException;
+    assertionException(descriptionId: string, ...arguments: Object[]): GameTestAssertException;
+    assertionException(pos: BlockPos, descriptionId: string, ...arguments: Object[]): GameTestAssertPosException;
     assertionException(pos: BlockPos, description: Component): GameTestAssertPosException;
     assertionException(description: Component): GameTestAssertException;
     despawnItem(pos: BlockPos, distance: number): void;

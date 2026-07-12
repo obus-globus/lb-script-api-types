@@ -18,7 +18,7 @@ export class ShortIterators extends Object {
     static any(paramarg0: ShortIterator, paramarg1: (param0: number) => boolean): boolean;
     static asShortIterator(paramarg0: Iterator<Object>): ShortIterator;
     static asShortIterator(paramarg0: ListIterator<Object>): ShortListIterator;
-    static concat(paramarg0: (Object | null)[]): ShortIterator;
+    static concat(...paramarg0: (Object | null)[]): ShortIterator;
     static concat(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): ShortIterator;
     static fromTo(paramarg0: number, paramarg1: number): ShortListIterator;
     static indexOf(paramarg0: ShortIterator, paramarg1: (param0: number) => boolean): number;

@@ -30,10 +30,10 @@ export class Okio__JvmOkioKt extends Object {
     static sink(paramarg0: File, paramarg1: boolean): Sink;
     static sink(paramarg0: OutputStream): Sink;
     static sink(paramarg0: Socket): Sink;
-    static sink(paramarg0: Path[][], paramarg1: (Object | null)[]): Sink;
+    static sink(paramarg0: Path[][], ...paramarg1: (Object | null)[]): Sink;
     static socket(paramarg0: Socket): Socket_2;
     static source(paramarg0: File): Source;
     static source(paramarg0: InputStream): Source;
     static source(paramarg0: Socket): Source;
-    static source(paramarg0: Path[][], paramarg1: (Object | null)[]): Source;
+    static source(paramarg0: Path[][], ...paramarg1: (Object | null)[]): Source;
 }

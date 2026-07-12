@@ -42,7 +42,7 @@ export abstract class PoolArena<T extends unknown> extends Object implements Poo
     // private allocateNormal(arg0: PooledByteBuf<T>, arg1: number, arg2: number, arg3: PoolThreadCache): void;
     chunkLists(): PoolChunkMetric[][];
     destroyChunk(arg0: PoolChunk<T>): void;
-    // private destroyPoolChunkLists(arg0: T[][]): void;
+    // private destroyPoolChunkLists(...arg0: T[][]): void;
     finalize(): void;
     free(arg0: PoolChunk<T>, arg1: ByteBuffer, arg2: number, arg3: number, arg4: PoolThreadCache): void;
     freeChunk(arg0: PoolChunk<T>, arg1: number, arg2: number, arg3: PoolArena$SizeClass, arg4: ByteBuffer, arg5: boolean): void;

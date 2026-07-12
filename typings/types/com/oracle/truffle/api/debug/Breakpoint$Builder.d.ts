@@ -25,6 +25,6 @@ export class Breakpoint$Builder extends Object {
     oneShot(): Breakpoint$Builder;
     resolveListener(resolveListener: Breakpoint$ResolveListener): Breakpoint$Builder;
     rootInstance(rootInstance: DebugValue): Breakpoint$Builder;
-    sourceElements(sourceElements: SourceElement[]): Breakpoint$Builder;
+    sourceElements(...sourceElements: SourceElement[]): Breakpoint$Builder;
     suspendAnchor(anchor: SuspendAnchor): Breakpoint$Builder;
 }

@@ -7,7 +7,7 @@ export class SimpleLiteralPatternConverter$StringValue extends SimpleLiteralPatt
     constructor(literal: string)
     // private literal: string;
     format(output: StringBuilder): void;
-    format(output: StringBuilder, args: Object[]): void;
+    format(output: StringBuilder, ...args: Object[]): void;
     format(ignored: Object, output: StringBuilder): void;
     format(ignored: LogEvent, output: StringBuilder): void;
 }

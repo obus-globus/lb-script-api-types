@@ -80,7 +80,7 @@ export class DFAGenerator extends Object implements JsonConvertible {
     // private createDFAExecutorStates(): DFAAbstractNode[];
     // private createInitialCGTransition(target: DFAStateNodeBuilder): DFACaptureGroupTransitionBuilder;
     // private createInitialState(transition: DFAStateTransitionBuilder): DFAStateNodeBuilder;
-    // private createInitialStateBackward(entries: NFAStateTransition[]): DFAStateNodeBuilder;
+    // private createInitialStateBackward(...entries: NFAStateTransition[]): DFAStateNodeBuilder;
     // private createInitialStatesBackward(): void;
     // private createInitialStatesForward(): void;
     // private createNFATransitionSet(initialTransition: NFAStateTransition): TransitionSet<NFA, NFAState, NFAStateTransition>;

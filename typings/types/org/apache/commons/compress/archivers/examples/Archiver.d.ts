@@ -20,7 +20,7 @@ export class Archiver extends Object {
     create(arg0: string, arg1: Path[], arg2: Path[]): void;
     create(arg0: ArchiveOutputStream<any>, arg1: File): void;
     create(arg0: ArchiveOutputStream<any>, arg1: Path[]): void;
-    create(arg0: ArchiveOutputStream<any>, arg1: Path[], arg2: FileVisitOption[], arg3: LinkOption[]): void;
+    create(arg0: ArchiveOutputStream<any>, arg1: Path[], arg2: FileVisitOption[], ...arg3: LinkOption[]): void;
     create(arg0: SevenZOutputFile, arg1: File): void;
     create(arg0: SevenZOutputFile, arg1: Path[]): void;
     // private prefersSeekableByteChannel(arg0: string): boolean;

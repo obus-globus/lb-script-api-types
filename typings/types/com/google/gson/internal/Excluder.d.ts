@@ -28,6 +28,6 @@ export class Excluder extends Object implements TypeAdapterFactory, Cloneable {
     // private isValidUntil(arg0: Until): boolean;
     // private isValidVersion(arg0: Since, arg1: Until): boolean;
     withExclusionStrategy(arg0: ExclusionStrategy, arg1: boolean, arg2: boolean): Excluder;
-    withModifiers(arg0: number[]): Excluder;
+    withModifiers(...arg0: number[]): Excluder;
     withVersion(arg0: number): Excluder;
 }

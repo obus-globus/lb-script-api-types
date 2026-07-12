@@ -3,5 +3,5 @@ import type { Message } from '../../../../../org/apache/logging/log4j/message/Me
 export interface MessageFactory extends Object{
     newMessage(message: Object): Message;
     newMessage(message: string): Message;
-    newMessage(message: string, params: Object[]): Message;
+    newMessage(message: string, ...params: Object[]): Message;
 }

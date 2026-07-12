@@ -9,5 +9,5 @@ export class NearestSectionFilter$Builder extends Object {
     // private theTags: Class<Object>[];
     anchorStart(start: boolean): NearestSectionFilter$Builder;
     build(): NearestSectionFilter;
-    tagIs(tags: Class<Object>[]): NearestSectionFilter$Builder;
+    tagIs(...tags: Class<Object>[]): NearestSectionFilter$Builder;
 }

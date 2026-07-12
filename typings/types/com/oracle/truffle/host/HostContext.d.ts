@@ -45,7 +45,7 @@ export class HostContext extends Object {
     getMutableTargetMappings(): HostAccess$MutableTargetMapping[];
     hostToGuestException<T extends Throwable>(e: T): RuntimeException;
     hostToGuestException<T extends Throwable>(e: T, location: Node): RuntimeException;
-    initialize(internalContext: Object, cl: ClassLoader, clFilter: (param0: string) => boolean, hostCLAllowed: boolean, hostLookupAllowed: boolean, mutableTargetMappings: HostAccess$MutableTargetMapping[]): void;
+    initialize(internalContext: Object, cl: ClassLoader, clFilter: (param0: string) => boolean, hostCLAllowed: boolean, hostLookupAllowed: boolean, ...mutableTargetMappings: HostAccess$MutableTargetMapping[]): void;
     // private loadClassViaClassLoader(className: string): Class<Object>;
     toGuestValue(node: Node, hostValue: Object): Object;
     toGuestValue(receiver: Class<Object>): Object;

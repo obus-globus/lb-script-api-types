@@ -7,7 +7,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractFileFilter } from '../../../../../org/apache/commons/io/filefilter/AbstractFileFilter.d.ts'
 export class WildcardFilter extends AbstractFileFilter implements Serializable {
     static EMPTY_STRING_ARRAY: (Object | null)[];
-    constructor(arg0: string[])
+    constructor(...arg0: string[])
     constructor(arg0: string)
     constructor(arg0: string[])
     // private wildcards: string[];

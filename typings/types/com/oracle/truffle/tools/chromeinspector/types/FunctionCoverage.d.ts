@@ -2,7 +2,7 @@ import type { CoverageRange } from '../../../../../../com/oracle/truffle/tools/c
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { JSONObject } from '../../../../../../org/graalvm/shadowed/org/json/JSONObject.d.ts'
 export class FunctionCoverage extends Object {
-    constructor(functionName: string, isBlockCoverage: boolean, ranges: CoverageRange[])
+    constructor(functionName: string, isBlockCoverage: boolean, ...ranges: CoverageRange[])
     readonly functionName: string;
     // private isBlockCoverage: boolean;
     readonly ranges: CoverageRange[];

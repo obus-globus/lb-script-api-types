@@ -14,8 +14,8 @@ export class PromiseCombiner extends Object {
     // private listener: GenericFutureListener<Future<Object>>;
     add(arg0: Future<Object>): void;
     add(arg0: Promise<Object>): void;
-    addAll(arg0: Future<Object>[]): void;
-    addAll(arg0: Promise<Object>[]): void;
+    addAll(...arg0: Future<Object>[]): void;
+    addAll(...arg0: Promise<Object>[]): void;
     // private checkAddAllowed(): void;
     // private checkInEventLoop(): void;
     finish(arg0: Promise<void>): void;

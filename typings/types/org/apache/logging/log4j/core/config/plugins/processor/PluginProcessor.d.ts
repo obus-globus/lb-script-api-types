@@ -21,5 +21,5 @@ export class PluginProcessor extends AbstractProcessor {
     process(annotations: TypeElement[], roundEnv: RoundEnvironment): boolean;
     // private processBuilderAttribute(element: VariableElement): void;
     // private processBuilderAttribute(elements: Element[]): void;
-    // private writeCacheFile(elements: Element[]): void;
+    // private writeCacheFile(...elements: Element[]): void;
 }

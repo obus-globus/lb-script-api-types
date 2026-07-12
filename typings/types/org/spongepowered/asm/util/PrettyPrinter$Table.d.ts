@@ -12,7 +12,7 @@ export class PrettyPrinter$Table extends Object implements PrettyPrinter$IVariab
     add(arg0: PrettyPrinter$Column): PrettyPrinter$Column;
     add(arg0: PrettyPrinter$Row): PrettyPrinter$Row;
     addColumn(arg0: string): PrettyPrinter$Column;
-    addRow(arg0: Object[]): PrettyPrinter$Row;
+    addRow(...arg0: Object[]): PrettyPrinter$Row;
     getWidth(): number;
     grow(arg0: number): PrettyPrinter$Table;
     headerAdded(): void;

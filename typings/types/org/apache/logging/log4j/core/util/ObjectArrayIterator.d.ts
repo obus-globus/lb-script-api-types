@@ -2,7 +2,7 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../../java/util/Iterator.d.ts'
 export class ObjectArrayIterator<E extends unknown> extends Object implements Iterator<E> {
-    constructor(array: E[])
+    constructor(...array: E[])
     constructor(array: E[], start: number)
     constructor(array: E[], start: number, end: number)
     readonly array: E[];

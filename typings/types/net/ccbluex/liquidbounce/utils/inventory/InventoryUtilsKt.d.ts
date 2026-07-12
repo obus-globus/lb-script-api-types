@@ -19,10 +19,10 @@ export class InventoryUtilsKt extends Object {
      * The result depends on current player context (e.g. creative state and durability filtering),
      * then ranks candidates by destroy speed and nearby-slot preference.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a70a63864fcba3b841f36d8b1ab0c71ea03e76f8/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:107}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt#L107 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryUtils.kt:107}
      */
     static findBestToolToMineBlock(iterable: (ItemSlot | null)[], blockState: BlockState, ignoreDurability: boolean, predicate: (param0: ItemStack, param1: BlockState) => boolean): ItemSlot | null;
-    static findBlocksEndingWith(targets: (Object | null)[]): Block[];
+    static findBlocksEndingWith(...targets: (Object | null)[]): Block[];
     static findEmptyStorageSlotsInInventory(): ItemSlot[];
     static findItemsInContainer(abstractContainerScreen: AbstractContainerScreen<any>): ContainerItemSlot[];
     static findNonEmptySlotsInInventory(): ItemSlot[];

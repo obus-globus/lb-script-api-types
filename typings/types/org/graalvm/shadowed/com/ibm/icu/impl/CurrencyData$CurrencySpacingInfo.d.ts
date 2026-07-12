@@ -4,7 +4,7 @@ import type { CurrencyData$CurrencySpacingInfo$SpacingType } from '../../../../.
 export class CurrencyData$CurrencySpacingInfo extends Object {
     static DEFAULT: CurrencyData$CurrencySpacingInfo;
     constructor()
-    constructor(strings: string[])
+    constructor(...strings: string[])
     hasAfterCurrency: boolean;
     hasBeforeCurrency: boolean;
     // private symbols: string[][];

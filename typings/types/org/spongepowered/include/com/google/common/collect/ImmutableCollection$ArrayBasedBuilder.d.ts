@@ -5,7 +5,7 @@ export abstract class ImmutableCollection$ArrayBasedBuilder<E extends unknown> e
     // private contents: Object[];
     // private size: number;
     add(arg0: E): ImmutableCollection$ArrayBasedBuilder<E>;
-    add(arg0: E[]): ImmutableCollection$Builder<E>;
+    add(...arg0: E[]): ImmutableCollection$Builder<E>;
     addAll(arg0: E[]): ImmutableCollection$Builder<E>;
     // private ensureCapacity(arg0: number): void;
 }

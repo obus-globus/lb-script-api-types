@@ -6,7 +6,7 @@ import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 export class JsonArray extends JsonValue {
     constructor(values: JsonConvertible[])
     constructor(values: Stream<JsonConvertible>)
-    constructor(values: JsonConvertible[])
+    constructor(...values: JsonConvertible[])
     constructor(values: JsonConvertible[])
     // private values: JsonConvertible[];
     append(value: JsonConvertible): JsonArray;

@@ -20,5 +20,5 @@ export class MessageFactory2Adapter extends Object implements MessageFactory2 {
     newMessage(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): Message;
     newMessage(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): Message;
     newMessage(message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): Message;
-    newMessage(message: string, params: Object[]): Message;
+    newMessage(message: string, ...params: Object[]): Message;
 }

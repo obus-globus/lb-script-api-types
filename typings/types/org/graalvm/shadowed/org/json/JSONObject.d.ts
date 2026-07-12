@@ -25,14 +25,14 @@ export class JSONObject extends Object {
     static wrap(paramobject: Object): Object;
     constructor()
     constructor(bean: Object)
-    constructor(object: Object, names: string[])
+    constructor(object: Object, ...names: string[])
     constructor(initialCapacity: number)
     constructor(source: string)
     constructor(baseName: string, locale: Locale)
     constructor(source: string, jsonParserConfiguration: JSONParserConfiguration)
     constructor(m: Map<Object | null, Object | null>)
     constructor(m: Map<Object | null, Object | null>, jsonParserConfiguration: JSONParserConfiguration)
-    constructor(jo: JSONObject, names: string[])
+    constructor(jo: JSONObject, ...names: string[])
     constructor(x: JSONTokener)
     constructor(x: JSONTokener, jsonParserConfiguration: JSONParserConfiguration)
     // private map: { [key: string]: Object };

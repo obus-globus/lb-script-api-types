@@ -6,7 +6,7 @@ export abstract class DirectCallNode extends Node {
     static create(paramtarget: CallTarget): DirectCallNode;
     constructor(callTarget: CallTarget)
     readonly callTarget: CallTarget;
-    call(arguments: Object[]): Object;
+    call(...arguments: Object[]): Object;
     cloneCallTarget(): boolean;
     forceInlining(): void;
     getCallTarget(): CallTarget;

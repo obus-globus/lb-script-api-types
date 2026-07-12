@@ -10,7 +10,7 @@ export class DefaultProgressivePromise<V extends unknown> extends DefaultPromise
     constructor()
     constructor(arg0: (Object | null)[])
     addListener(arg0: GenericFutureListener<Future<V>>): ProgressivePromise<V>;
-    addListeners(arg0: GenericFutureListener<Future<V>>[]): ProgressivePromise<V>;
+    addListeners(...arg0: GenericFutureListener<Future<V>>[]): ProgressivePromise<V>;
     await(): ProgressivePromise<V>;
     await(arg0: number): boolean;
     await(arg0: number, arg1: TimeUnit): boolean;
@@ -18,7 +18,7 @@ export class DefaultProgressivePromise<V extends unknown> extends DefaultPromise
     awaitUninterruptibly(arg0: number): boolean;
     awaitUninterruptibly(arg0: number, arg1: TimeUnit): boolean;
     removeListener(arg0: GenericFutureListener<Future<V>>): ProgressivePromise<V>;
-    removeListeners(arg0: GenericFutureListener<Future<V>>[]): ProgressivePromise<V>;
+    removeListeners(...arg0: GenericFutureListener<Future<V>>[]): ProgressivePromise<V>;
     setFailure(arg0: Throwable): ProgressivePromise<V>;
     setProgress(arg0: number, arg1: number): ProgressivePromise<V>;
     setSuccess(arg0: V): ProgressivePromise<V>;

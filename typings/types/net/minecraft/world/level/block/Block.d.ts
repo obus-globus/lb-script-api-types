@@ -108,7 +108,7 @@ export class Block extends BlockBehaviour implements FabricBlock, ItemLike {
     getJumpFactor(): number;
     getName(): MutableComponent;
     getShapeForEachState(shapeCalculator: (param0: BlockState) => VoxelShape): (param0: BlockState) => VoxelShape;
-    getShapeForEachState(shapeCalculator: (param0: BlockState) => VoxelShape, ignoredProperties: Property<any>[]): (param0: BlockState) => VoxelShape;
+    getShapeForEachState(shapeCalculator: (param0: BlockState) => VoxelShape, ...ignoredProperties: Property<any>[]): (param0: BlockState) => VoxelShape;
     getSpeedFactor(): number;
     getStateDefinition(): StateDefinition<Block, BlockState>;
     getStateForPlacement(context: BlockPlaceContext): BlockState;

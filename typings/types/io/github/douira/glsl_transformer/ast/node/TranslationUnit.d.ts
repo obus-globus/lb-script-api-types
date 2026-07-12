@@ -27,7 +27,7 @@ export class TranslationUnit extends ListASTNode<ExternalDeclaration> {
     appendFunctionBody(arg0: string, arg1: Statement): void;
     appendMainFunctionBody(arg0: Statement[]): void;
     appendMainFunctionBody(arg0: Statement): void;
-    appendMainFunctionBody(arg0: ASTParser, arg1: string[]): void;
+    appendMainFunctionBody(arg0: ASTParser, ...arg1: string[]): void;
     appendMainFunctionBody(arg0: ASTParser, arg1: string): void;
     clone(): TranslationUnit;
     cloneInto(arg0: Root): TranslationUnit;
@@ -43,12 +43,12 @@ export class TranslationUnit extends ListASTNode<ExternalDeclaration> {
     injectNodes(arg0: ASTInjectionPoint, arg1: Stream<ExternalDeclaration>): void;
     parseAndInjectNode(arg0: ASTParser, arg1: ASTInjectionPoint, arg2: string): void;
     parseAndInjectNodes(arg0: ASTParser, arg1: ASTInjectionPoint, arg2: Stream<string>): void;
-    parseAndInjectNodes(arg0: ASTParser, arg1: ASTInjectionPoint, arg2: string[]): void;
+    parseAndInjectNodes(arg0: ASTParser, arg1: ASTInjectionPoint, ...arg2: string[]): void;
     prependFunctionBody(arg0: string, arg1: Statement[]): void;
     prependFunctionBody(arg0: string, arg1: Statement): void;
     prependMainFunctionBody(arg0: Statement[]): void;
     prependMainFunctionBody(arg0: Statement): void;
-    prependMainFunctionBody(arg0: ASTParser, arg1: string[]): void;
+    prependMainFunctionBody(arg0: ASTParser, ...arg1: string[]): void;
     prependMainFunctionBody(arg0: ASTParser, arg1: string): void;
     setVersionStatement(arg0: VersionStatement): void;
 }

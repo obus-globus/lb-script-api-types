@@ -7,6 +7,6 @@ export class SpecializationStatistics$DisabledNodeStatistics extends Specializat
     constructor()
     acceptExecute(specializationIndex: number, arg0: Class<Object>): void;
     acceptExecute(specializationIndex: number, arg0: Class<Object>, arg1: Class<Object>): void;
-    acceptExecute(specializationIndex: number, args: Class<Object>[]): void;
+    acceptExecute(specializationIndex: number, ...args: Class<Object>[]): void;
     resolveValueClass(value: Object): Class<Object>;
 }

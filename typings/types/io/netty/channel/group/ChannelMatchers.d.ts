@@ -4,7 +4,7 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ChannelMatchers extends Object {
     static all(): ChannelMatcher;
-    static compose(paramarg0: (Object | null)[]): ChannelMatcher;
+    static compose(...paramarg0: (Object | null)[]): ChannelMatcher;
     static invert(paramarg0: ChannelMatcher): ChannelMatcher;
     static is(paramarg0: Channel): ChannelMatcher;
     static isInstanceOf(paramarg0: Class<Channel>): ChannelMatcher;

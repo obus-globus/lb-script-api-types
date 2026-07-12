@@ -12,5 +12,5 @@ export class CombatSample$Companion extends Object {
     TARGET_DIRECTION_VECTOR: string;
     T_DIFF: string;
     // private parse(file: File): CombatSample[];
-    parse(files: File[]): CombatSample[];
+    parse(...files: File[]): CombatSample[];
 }

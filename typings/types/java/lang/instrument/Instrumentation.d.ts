@@ -18,9 +18,9 @@ export interface Instrumentation extends Object{
     isNativeMethodPrefixSupported(): boolean;
     isRedefineClassesSupported(): boolean;
     isRetransformClassesSupported(): boolean;
-    redefineClasses(arg0: ClassDefinition[]): void;
+    redefineClasses(...arg0: ClassDefinition[]): void;
     redefineModule(arg0: Module, arg1: Module[], arg2: { [key: string]: Module[] }, arg3: { [key: string]: Module[] }, arg4: Class<Object>[], arg5: Map<Class<Object>, Class<Object>[]>): void;
     removeTransformer(arg0: ClassFileTransformer): boolean;
-    retransformClasses(arg0: Class<Object>[]): void;
+    retransformClasses(...arg0: Class<Object>[]): void;
     setNativeMethodPrefix(arg0: ClassFileTransformer, arg1: string): void;
 }

@@ -13,7 +13,7 @@ export class LSPLibraryGen extends LibraryFactory<LSPLibrary> {
     createAssertions(delegate: LSPLibrary): LSPLibrary;
     createDelegate(delegateLibrary: LSPLibrary): LSPLibrary;
     createDispatchImpl(limit: number): LSPLibrary;
-    createMessageBitSet(messages: Message[]): FinalBitSet;
+    createMessageBitSet(...messages: Message[]): FinalBitSet;
     createProxy(library: ReflectionLibrary): LSPLibrary;
     createUncachedDispatch(): LSPLibrary;
     genericDispatch(originalLib: Library, receiver: Object, message: Message, args: Object[], offset: number): Object;

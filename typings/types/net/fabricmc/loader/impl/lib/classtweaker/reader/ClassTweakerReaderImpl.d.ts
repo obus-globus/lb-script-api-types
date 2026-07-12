@@ -13,7 +13,7 @@ export class ClassTweakerReaderImpl extends Object implements ClassTweakerReader
     constructor(arg0: ClassTweakerVisitor)
     // private lineNumber: number;
     // private visitor: ClassTweakerVisitor;
-    // private error(arg0: string, arg1: Object[]): ClassTweakerFormatException;
+    // private error(arg0: string, ...arg1: Object[]): ClassTweakerFormatException;
     // private handleClass(arg0: string, arg1: string[], arg2: boolean, arg3: AccessWidenerVisitor$AccessType): void;
     // private handleComment(arg0: number, arg1: string): string;
     // private handleField(arg0: string, arg1: string[], arg2: boolean, arg3: AccessWidenerVisitor$AccessType): void;

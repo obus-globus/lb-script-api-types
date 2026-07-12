@@ -9,7 +9,7 @@ export abstract class CompleteChannelFuture extends CompleteFuture<void> impleme
     constructor(arg0: Channel, arg1: (Object | null)[])
     // private channel: Channel;
     addListener(arg0: GenericFutureListener<Future<void>>): ChannelFuture;
-    addListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelFuture;
+    addListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelFuture;
     await(): ChannelFuture;
     await(arg0: number): boolean;
     await(arg0: number, arg1: TimeUnit): boolean;
@@ -21,7 +21,7 @@ export abstract class CompleteChannelFuture extends CompleteFuture<void> impleme
     getNow(): void;
     isVoid(): boolean;
     removeListener(arg0: GenericFutureListener<Future<void>>): ChannelFuture;
-    removeListeners(arg0: GenericFutureListener<Future<void>>[]): ChannelFuture;
+    removeListeners(...arg0: GenericFutureListener<Future<void>>[]): ChannelFuture;
     sync(): ChannelFuture;
     syncUninterruptibly(): ChannelFuture;
 }

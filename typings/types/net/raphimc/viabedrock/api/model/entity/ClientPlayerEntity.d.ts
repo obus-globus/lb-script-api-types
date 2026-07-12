@@ -37,7 +37,7 @@ export class ClientPlayerEntity extends PlayerEntity {
     // private waitingForPositionSync: boolean;
     // private wasInsideUnloadedChunk: boolean;
     addAuthInputBlockAction(arg0: ClientPlayerEntity$AuthInputBlockAction): void;
-    addAuthInputData(arg0: PlayerAuthInputPacket_InputData[]): void;
+    addAuthInputData(...arg0: PlayerAuthInputPacket_InputData[]): void;
     addAuthInputData(arg0: PlayerAuthInputPacket_InputData): void;
     authInputBlockActions(): ClientPlayerEntity$AuthInputBlockAction[];
     authInputData(): PlayerAuthInputPacket_InputData[];

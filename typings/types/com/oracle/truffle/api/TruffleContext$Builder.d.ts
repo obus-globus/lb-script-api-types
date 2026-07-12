@@ -59,7 +59,7 @@ export class TruffleContext$Builder extends Object {
     option(key: string, value: string): TruffleContext$Builder;
     options(options: { [key: string]: string }): TruffleContext$Builder;
     out(out: OutputStream): TruffleContext$Builder;
-    permittedLanguages(permittedLanguages: string[]): TruffleContext$Builder;
+    permittedLanguages(...permittedLanguages: string[]): TruffleContext$Builder;
     threadAccessDeniedHandler(handler: (param0: string) => void): TruffleContext$Builder;
     timeZone(zone: ZoneId): TruffleContext$Builder;
 }

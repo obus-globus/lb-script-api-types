@@ -60,7 +60,7 @@ export class SoundEngine extends Object {
     getSoundCacheDebugStats(output: SoundBufferLibrary$DebugOutput): void;
     isActive(instance: SoundInstance): boolean;
     // private loadLibrary(): void;
-    pauseAllExcept(ignoredSources: SoundSource[]): void;
+    pauseAllExcept(...ignoredSources: SoundSource[]): void;
     play(instance: SoundInstance): SoundEngine$PlayResult;
     playDelayed(instance: SoundInstance, delay: number): void;
     queueTickingSound(tickableSoundInstance: TickableSoundInstance): void;

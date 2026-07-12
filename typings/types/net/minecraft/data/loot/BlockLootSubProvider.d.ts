@@ -50,14 +50,14 @@ export abstract class BlockLootSubProvider extends Object implements FabricBlock
     createDoublePlantWithSeedDrops(block: Block, drop: Block): LootTable$Builder;
     createGrassDrops(original: Block): LootTable$Builder;
     createLapisOreDrops(block: Block): LootTable$Builder;
-    createLeavesDrops(original: Block, sapling: Block, saplingChances: number[]): LootTable$Builder;
+    createLeavesDrops(original: Block, sapling: Block, ...saplingChances: number[]): LootTable$Builder;
     createMangroveLeavesDrops(block: Block): LootTable$Builder;
     createMossyCarpetBlockDrops(block: Block): LootTable$Builder;
     createMultifaceBlockDrops(block: Block): LootTable$Builder;
     createMultifaceBlockDrops(block: Block, condition: () => LootItemCondition): LootTable$Builder;
     createMushroomBlockDrop(original: Block, drop: ItemLike): LootTable$Builder;
     createNameableBlockEntityTable(drop: Block): LootTable$Builder;
-    createOakLeavesDrops(original: Block, sapling: Block, saplingChances: number[]): LootTable$Builder;
+    createOakLeavesDrops(original: Block, sapling: Block, ...saplingChances: number[]): LootTable$Builder;
     createOreDrop(original: Block, drop: Item): LootTable$Builder;
     createPotFlowerItemTable(flower: ItemLike): LootTable$Builder;
     createRedstoneOreDrops(block: Block): LootTable$Builder;
@@ -89,5 +89,5 @@ export abstract class BlockLootSubProvider extends Object implements FabricBlock
     hasShearsOrSilkTouch(): () => LootItemCondition;
     hasSilkTouch(): () => LootItemCondition;
     otherWhenSilkTouch(block: Block, other: Block): void;
-    withConditions(arg0: ResourceCondition[]): BlockLootSubProvider;
+    withConditions(...arg0: ResourceCondition[]): BlockLootSubProvider;
 }

@@ -1,7 +1,7 @@
 import type { Handle } from '../../../../../../com/oracle/truffle/api/impl/asm/Handle.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ConstantDynamic extends Object {
-    constructor(name: string, descriptor: string, bootstrapMethod: Handle, bootstrapMethodArguments: Object[])
+    constructor(name: string, descriptor: string, bootstrapMethod: Handle, ...bootstrapMethodArguments: Object[])
     readonly bootstrapMethod: Handle;
     // private bootstrapMethodArguments: Object[];
     readonly descriptor: string;

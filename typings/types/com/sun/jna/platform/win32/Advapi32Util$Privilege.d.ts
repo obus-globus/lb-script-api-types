@@ -3,7 +3,7 @@ import type { WinNT$LUID } from '../../../../../com/sun/jna/platform/win32/WinNT
 import type { Closeable } from '../../../../../java/io/Closeable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Advapi32Util$Privilege extends Object implements Closeable {
-    constructor(arg0: string[])
+    constructor(...arg0: string[])
     // private currentlyImpersonating: boolean;
     // private pLuids: WinNT$LUID[];
     // private privilegesEnabled: boolean;

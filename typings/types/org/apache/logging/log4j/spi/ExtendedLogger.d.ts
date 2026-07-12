@@ -204,7 +204,7 @@ export interface ExtendedLogger extends Object, Logger {
     isEnabled(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): boolean;
     isEnabled(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): boolean;
     isEnabled(level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): boolean;
-    isEnabled(level: Level, marker: Marker, message: string, params: Object[]): boolean;
+    isEnabled(level: Level, marker: Marker, message: string, ...params: Object[]): boolean;
     isEnabled(level: Level, marker: Marker, message: string, t: Throwable): boolean;
     isEnabled(level: Level, marker: Marker, message: Message, t: Throwable): boolean;
     isErrorEnabled(): boolean;
@@ -270,7 +270,7 @@ export interface ExtendedLogger extends Object, Logger {
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, p0: Object, p1: Object, p2: Object, p3: Object, p4: Object, p5: Object, p6: Object, p7: Object, p8: Object, p9: Object): void;
-    logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, params: Object[]): void;
+    logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, ...params: Object[]): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, paramSuppliers: () => Object | null[]): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: string, t: Throwable): void;
     logIfEnabled(fqcn: string, level: Level, marker: Marker, message: Message, t: Throwable): void;

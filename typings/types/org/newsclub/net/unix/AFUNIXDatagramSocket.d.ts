@@ -18,5 +18,5 @@ export class AFUNIXDatagramSocket extends AFDatagramSocket<AFUNIXSocketAddress> 
     hasOutboundFileDescriptors(): boolean;
     newChannel(): AFUNIXDatagramChannel;
     newDatagramSocketInstance(): AFDatagramSocket<AFUNIXSocketAddress>;
-    setOutboundFileDescriptors(arg0: FileDescriptor[]): void;
+    setOutboundFileDescriptors(...arg0: FileDescriptor[]): void;
 }

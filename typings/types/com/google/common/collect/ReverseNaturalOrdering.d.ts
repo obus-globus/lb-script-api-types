@@ -17,11 +17,11 @@ export class ReverseNaturalOrdering extends Ordering<Comparable<Object>> impleme
     private constructor()
     compare(left: Comparable<Object>, right: Comparable<Object>): number;
     max<E extends Comparable<Object>>(a: E, b: E): E;
-    max<E extends Comparable<Object>>(a: E, b: E, c: E, rest: E[]): E;
+    max<E extends Comparable<Object>>(a: E, b: E, c: E, ...rest: E[]): E;
     max<E extends Comparable<Object>>(iterable: E[]): E;
     max<E extends Comparable<Object>>(iterator: Iterator<E>): E;
     min<E extends Comparable<Object>>(a: E, b: E): E;
-    min<E extends Comparable<Object>>(a: E, b: E, c: E, rest: E[]): E;
+    min<E extends Comparable<Object>>(a: E, b: E, c: E, ...rest: E[]): E;
     min<E extends Comparable<Object>>(iterable: E[]): E;
     min<E extends Comparable<Object>>(iterator: Iterator<E>): E;
     // private readResolve(): Object;

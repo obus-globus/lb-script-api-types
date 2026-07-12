@@ -4,7 +4,7 @@ import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { IOConsumer } from '../../../../../org/apache/commons/io/function/IOConsumer.d.ts'
 export class FilterCollectionWriter extends Writer {
     static nullWriter(): Writer;
-    constructor(arg0: Writer[])
+    constructor(...arg0: Writer[])
     constructor(arg0: Writer[])
     // private EMPTY_WRITERS: Writer[];
     // private writers: Writer[];

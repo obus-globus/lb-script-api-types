@@ -30,6 +30,7 @@ export class VulkanRenderPass extends Object implements RenderPassBackend, Vulka
     // private encoder: VulkanCommandEncoder;
     // private hasDepth: boolean;
     readonly label: () => string;
+    // private liquid_bounce$previousPipeline: RenderPipeline;
     // private outputHeight: number;
     // private outputWidth: number;
     pipeline: VulkanRenderPipeline;
