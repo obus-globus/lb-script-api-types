@@ -3,7 +3,7 @@ import type { BlockPos } from '../../../../../../../../net/minecraft/core/BlockP
 /**
  * Switch to a totem on low health and back to the original item when the health goes up again.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/Totem.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/Totem.kt:62}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/Totem.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/offhand/Totem.kt:62}
  */
 export class Totem$Health extends ToggleableValueGroup {
     static INSTANCE: Totem$Health;

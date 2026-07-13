@@ -9,7 +9,7 @@ import type { GpuBufferDeferredCloser } from '../../../../../net/ccbluex/liquidb
  * A pool is owned by one {@link DynamicGpuBufferWriter}. All buffers retired during a frame share
  * one fence, which is created immediately before vanilla submits the frame command buffer.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt:32}
  */
 export class FrameGpuBufferPool extends Object implements AutoCloseable {
     constructor(label: string, usage: number, maxAvailableBuffers: number)
@@ -25,7 +25,7 @@ export class FrameGpuBufferPool extends Object implements AutoCloseable {
     /**
      * Recycles completed frames and fences all buffers used by the current frame.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt:67}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt#L67 | src/main/kotlin/net/ccbluex/liquidbounce/render/buffers/FrameGpuBufferPool.kt:67}
      */
     endFrame(minReusableCapacity: number): void;
     // private recycleCompleted(minReusableCapacity: number): void;

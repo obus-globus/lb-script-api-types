@@ -14,7 +14,7 @@ export class ScoreboardData extends Record {
      * @see net.minecraft.client.gui.Hud.extractScoreboardSidebar
      * @see net.minecraft.client.gui.Hud.displayScoreboardSidebar
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt:189}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/PlayerFunctions.kt:189}
      */
     static fromScoreboard(scoreboard: Scoreboard): ScoreboardData;
     constructor(header: Component, entries: (ScoreboardData$SidebarEntry | null)[])

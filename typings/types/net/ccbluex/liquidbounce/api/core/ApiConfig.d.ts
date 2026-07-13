@@ -5,7 +5,7 @@ export class ApiConfig extends Object {
      * This makes sense because we want forks to be able to use this API and not only the official client.
      * It also allows us to use API endpoints for legacy on other branches.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt:62}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt#L62 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt:62}
      */
     static API_BRANCH: string;
     static AUTH_AUTHORIZE_URL: string;

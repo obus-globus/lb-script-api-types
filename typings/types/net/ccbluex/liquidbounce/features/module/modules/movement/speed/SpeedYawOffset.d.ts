@@ -6,7 +6,7 @@ import type { RotationsValueGroup } from '../../../../../../../../net/ccbluex/li
 /**
  * Makes you go faster by strategically strafing
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedYawOffset.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedYawOffset.kt:33}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedYawOffset.kt#L33 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/speed/SpeedYawOffset.kt:33}
  */
 export class SpeedYawOffset extends ToggleableValueGroup {
     static INSTANCE: SpeedYawOffset;

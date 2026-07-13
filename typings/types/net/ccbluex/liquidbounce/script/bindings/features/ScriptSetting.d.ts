@@ -12,7 +12,7 @@ import type { Value as Value_2 } from '../../../../../../org/graalvm/polyglot/Va
 /**
  * Object used by the script API to provide an idiomatic way of creating module values.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt:39}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt#L39 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/features/ScriptSetting.kt:39}
  */
 export class ScriptSetting extends Object {
     static INSTANCE: ScriptSetting;

@@ -6,8 +6,10 @@ export class HttpClient$MediaTypes extends Object {
     static INSTANCE: HttpClient$MediaTypes;
     static JSON: MediaType;
     static OCTET_STREAM: MediaType;
+    static TEXT_PLAIN: MediaType;
     FORM: MediaType;
     IMAGE_PNG: MediaType;
     JSON: MediaType;
     OCTET_STREAM: MediaType;
+    TEXT_PLAIN: MediaType;
 }

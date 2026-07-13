@@ -10,6 +10,7 @@ export class HudComponentManager extends Object {
     readonly components: HudComponent[];
     readonly nativeComponents: MinimapHudComponent[];
     addComponent(id: string): HudComponent | null;
+    bringComponentToFront(component: HudComponent): number;
     getComponent(id: string): HudComponent | null;
     getComponentCatalog(id: string): Theme$ComponentCatalogEntry[];
     getComponentWithTweak(tweak: HudComponentTweak): HudComponent | null;

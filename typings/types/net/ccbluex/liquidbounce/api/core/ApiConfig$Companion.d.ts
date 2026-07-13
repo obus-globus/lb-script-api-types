@@ -14,7 +14,7 @@ export class ApiConfig$Companion extends Object {
      * Defines the API environment for LiquidBounce.
      * This should be initialized before the API is used through {@link net.ccbluex.liquidbounce.LiquidBounce}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt#L72 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt:72}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt#L72 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/ApiConfig.kt:72}
      */
     readonly config: ApiConfig;
     lookup(): ApiConfig;

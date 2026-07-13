@@ -6,7 +6,7 @@ import type { GameTickEvent } from '../../../../../net/ccbluex/liquidbounce/even
 /**
  * A rotation manager
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt:35}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt:35}
  */
 export class CombatManager extends Object implements EventListener {
     static INSTANCE: CombatManager;
@@ -31,7 +31,7 @@ export class CombatManager extends Object implements EventListener {
     /**
      * Update current rotation to new rotation step
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt:76}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatManager.kt:76}
      */
     update(): void;
     // private updateDuringCombat(): void;

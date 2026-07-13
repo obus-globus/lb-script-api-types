@@ -33,7 +33,7 @@ export class DynamicGlyphPage extends GlyphPage {
      *
      * @returns Removed chars
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt:113}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt:113}
      */
     optimizeAtlas(): Pair<GlyphIdentifier, GlyphRenderInfo>[];
     // private planCharacterPlacement(glyph: FontGlyph): Pair<GlyphPage$Companion$CharacterGenerationInfo, AtlasSliceHandle> | null;
@@ -42,7 +42,7 @@ export class DynamicGlyphPage extends GlyphPage {
      *
      * @returns A list of characters that could not be added
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt:61}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt:61}
      */
     tryAdd(c: FontGlyph[]): FontGlyph[];
     // private updateNativeTexture(generationInfo: GlyphPage$Companion$CharacterGenerationInfo, glyph: GlyphRenderInfo): void;

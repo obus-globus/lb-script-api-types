@@ -7,7 +7,7 @@ export class MapExtensionsKt extends Object {
      * Sums the values for matching keys from another map to this map.
      * Modifies the current collection.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/MapExtensions.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/MapExtensions.kt:36}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/MapExtensions.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/MapExtensions.kt:36}
      */
     static sumValues(object2IntOpenHashMap: { [key: string]: any }, anotherMap: { [key: string]: any }): { [key: string]: any };
 }

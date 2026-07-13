@@ -3,6 +3,7 @@ import type { CompletableFuture } from '../../../../../java/util/concurrent/Comp
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Pair } from '../../../../../kotlin/Pair.d.ts'
 import type { HttpMethod } from '../../../../../net/ccbluex/liquidbounce/api/core/HttpMethod.d.ts'
+import type { MojangApiClient } from '../../../../../net/ccbluex/liquidbounce/authlib/mojangapi/MojangApiClient.d.ts'
 import type { OkHttpProgressInterceptor$ProgressListener } from '../../../../../net/ccbluex/liquidbounce/mcef/listeners/OkHttpProgressInterceptor$ProgressListener.d.ts'
 import type { Call } from '../../../../../okhttp3/Call.d.ts'
 import type { Headers$Builder } from '../../../../../okhttp3/Headers$Builder.d.ts'
@@ -15,7 +16,7 @@ export class HttpClient extends Object {
     /**
      * Unfortunately, Lunar Client uses OkHttp 4.12.0 which does not have {@link Headers.EMPTY}
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L93 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:93}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L96 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:96}
      * @deprecated Use Headers.EMPTY instead when Lunar Client updates OkHttp to 5.10 or newer.
      */
     static EMPTY_HEADERS: Pair<string, string>[];
@@ -23,9 +24,10 @@ export class HttpClient extends Object {
     /**
      * API client
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L170 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:170}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L176 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:176}
      */
     static getClient(): OkHttpClient;
+    static getMojangApiClient(): MojangApiClient;
     static sendAsync(call: Call): CompletableFuture<Response>;
     DEFAULT_AGENT: string;
     EMPTY_HEADERS: Pair<string, string>[];
@@ -33,6 +35,8 @@ export class HttpClient extends Object {
     /*not mapped: */ getClient(): OkHttpClient;
     // private clientHttpApiInterceptor: Interceptor;
     // private defaultClient: OkHttpClient;
+    // private mojangApiClient: MojangApiClient;
+    /*not mapped: */ getMojangApiClient(): MojangApiClient;
     download(url: string, file: File, agent: string, progressListener: ((param0: number, param1: number, param2: boolean) => void) | null): number;
     request(url: string, method: HttpMethod, agent: string, headers: (param0: Headers$Builder) => void, body: RequestBody | null, progressListener: ((param0: number, param1: number, param2: boolean) => void) | null): Response;
 }

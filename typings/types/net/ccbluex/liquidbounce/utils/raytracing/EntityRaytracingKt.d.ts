@@ -13,7 +13,7 @@ export class EntityRaytracingKt extends Object {
      * @param range maximum ray-trace distance.
      * @param rotation yaw/pitch used to build the ray direction.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/EntityRaytracing.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/EntityRaytracing.kt:66}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/EntityRaytracing.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/EntityRaytracing.kt:66}
      */
     static isLookingAtEntity(toEntity: Entity, range: number, rotation: Rotation): EntityHitResult;
     static isLookingAtEntity(fromEntity: Entity, toEntity: Entity, rotation: Rotation, range: number, throughWallsRange: number): EntityHitResult;

@@ -13,7 +13,7 @@ import type { MessageMetadata$Companion } from '../../../../../net/ccbluex/liqui
  * from a command named `SomeCommand` with should have the
  * id `SomeCommand#notIngame`.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt:185}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt#L185 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientChat.kt:185}
  */
 export class MessageMetadata extends Record {
     static Companion: MessageMetadata$Companion;

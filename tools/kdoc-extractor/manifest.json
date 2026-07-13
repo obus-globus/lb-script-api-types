@@ -210,7 +210,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 260
+      "line": 273
     }
   },
   "net.ccbluex.liquidbounce.api.core.CoroutineScope.retrying": {
@@ -234,7 +234,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 93
+      "line": 96
     }
   },
   "net.ccbluex.liquidbounce.api.core.HttpClient.client": {
@@ -242,7 +242,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 170
+      "line": 176
     }
   },
   "net.ccbluex.liquidbounce.api.core.HttpClient.clientHttpApiInterceptor": {
@@ -250,7 +250,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 146
+      "line": 152
     }
   },
   "net.ccbluex.liquidbounce.api.core.Response.parse": {
@@ -258,7 +258,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 243
+      "line": 256
     }
   },
   "net.ccbluex.liquidbounce.api.core.Response.toFile": {
@@ -266,7 +266,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt",
-      "line": 276
+      "line": 289
     }
   },
   "net.ccbluex.liquidbounce.api.models.auth.ClientAccount": {
@@ -1647,7 +1647,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 372
+      "line": 373
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.ChannelHandler.channelInactive": {
@@ -1655,7 +1655,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 382
+      "line": 383
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.ChannelHandler.channelRead0": {
@@ -1667,7 +1667,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 414
+      "line": 415
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.ChannelHandler.exceptionCaught": {
@@ -1675,7 +1675,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 392
+      "line": 393
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.ChannelHandler.handlerAdded": {
@@ -1683,7 +1683,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 362
+      "line": 363
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.banUser": {
@@ -1691,7 +1691,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 228
+      "line": 229
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.connect": {
@@ -1699,7 +1699,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 127
+      "line": 128
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.handlePlainMessage": {
@@ -1707,7 +1707,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 348
+      "line": 349
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.loginViaJwt": {
@@ -1715,7 +1715,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 252
+      "line": 253
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.requestMojangLogin": {
@@ -1723,7 +1723,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 212
+      "line": 213
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.sendMessage": {
@@ -1731,7 +1731,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 217
+      "line": 218
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.sendPacket": {
@@ -1739,7 +1739,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 260
+      "line": 261
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.sendPrivateMessage": {
@@ -1747,7 +1747,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 222
+      "line": 223
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.toUUID": {
@@ -1755,7 +1755,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 238
+      "line": 239
     }
   },
   "net.ccbluex.liquidbounce.features.chat.AxochatClient.unbanUser": {
@@ -1763,7 +1763,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/chat/AxochatClient.kt",
-      "line": 233
+      "line": 234
     }
   },
   "net.ccbluex.liquidbounce.features.chat.packet.AxoUser": {
@@ -2861,7 +2861,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/global/GlobalSettingsClientChat.kt",
-      "line": 286
+      "line": 287
     }
   },
   "net.ccbluex.liquidbounce.features.global.GlobalSettingsRichPresence": {
@@ -8666,7 +8666,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleMobOwners.kt",
-      "line": 42
+      "line": 43
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleNewChunks": {
@@ -8762,7 +8762,7 @@
     "kind": "property",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleSkinChanger.kt",
-      "line": 74
+      "line": 78
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleSmoothCamera": {
@@ -10557,6 +10557,22 @@
       "line": 140
     }
   },
+  "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ActiveServerList.getLanServers": {
+    "doc": "Returns the list of currently detected LAN servers with full Server-compatible JSON fields.\nMirrors vanilla's updateNetworkServers pattern: takeDirtyServers returns full list → full replacement.\nUses negative IDs (sorted by address) to avoid collision with regular server IDs.",
+    "kind": "function",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
+      "line": 236
+    }
+  },
+  "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.ActiveServerList.lanServers": {
+    "doc": "Tracks ServerData for each LAN server (for ping info), keyed by address\nShould be accessed from main thread",
+    "kind": "property",
+    "source": {
+      "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/interop/protocol/rest/v1/game/ServerListFunctions.kt",
+      "line": 209
+    }
+  },
   "net.ccbluex.liquidbounce.integration.interop.protocol.rest.v1.game.Float.fixNaN": {
     "doc": "GSON is not happy with NaN values, so we fix them to be 0.",
     "kind": "function",
@@ -10814,7 +10830,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/Theme.kt",
-      "line": 308
+      "line": 314
     }
   },
   "net.ccbluex.liquidbounce.integration.theme.ThemeBackground.Image": {
@@ -16338,7 +16354,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/UuidExtensions.kt",
-      "line": 28
+      "line": 29
     }
   },
   "net.ccbluex.liquidbounce.utils.kotlin.UUID.toMD5": {
@@ -16346,7 +16362,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/UuidExtensions.kt",
-      "line": 41
+      "line": 42
     }
   },
   "net.ccbluex.liquidbounce.utils.kotlin.isNotRoot": {

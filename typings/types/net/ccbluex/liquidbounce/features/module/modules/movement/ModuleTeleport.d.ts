@@ -11,7 +11,7 @@ import type { Vec3 } from '../../../../../../../net/minecraft/world/phys/Vec3.d.
  *
  * Commands: {@link CommandVClip}, {@link CommandTeleport}, {@link CommandPlayerTeleport}
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTeleport.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTeleport.kt:50}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTeleport.kt#L50 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/ModuleTeleport.kt:50}
  */
 export class ModuleTeleport extends ClientModule {
     static INSTANCE: ModuleTeleport;

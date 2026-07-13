@@ -10,7 +10,7 @@ export class PacketRegistryKt extends Object {
      * Be aware that serverbound means packets sent from the client to the server (C2S),
      * and clientbound means packets sent from the server to the client (S2C).
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt:35}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt#L35 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketRegistry.kt:35}
      */
     static getPacketRegistry(): { [key in PacketFlow]: Identifier[] };
 }

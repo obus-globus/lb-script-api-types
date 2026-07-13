@@ -7,7 +7,7 @@ import type { SuspendHandlerBehavior$Parallel$Companion } from '../../../../net/
 /**
  * Starts a new job for each event.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlerBehavior.kt:46}
  */
 export class SuspendHandlerBehavior$Parallel extends Record implements SuspendHandlerBehavior {
     static Companion: SuspendHandlerBehavior$Parallel$Companion;

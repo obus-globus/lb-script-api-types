@@ -11,7 +11,7 @@ import type { Vec3 } from '../../../../../../../../../../net/minecraft/world/phy
  * @testedOn eu.loyisa.cn
  * @note Slow on high ping
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2859V.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2859V.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2859V.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/fly/modes/grim/FlyGrim2859V.kt:40}
  */
 export class FlyGrim2859V extends Mode {
     static Companion: Tagged$Companion;

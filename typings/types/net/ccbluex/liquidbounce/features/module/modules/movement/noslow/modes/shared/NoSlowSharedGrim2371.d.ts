@@ -8,7 +8,7 @@ import type { NoSlowSharedGrim2371$Companion } from '../../../../../../../../../
  * Bypassing Grim 2.3.71
  * @from https://github.com/GrimAnticheat/Grim/issues/2216
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowSharedGrim2371.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowSharedGrim2371.kt:32}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowSharedGrim2371.kt#L32 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowSharedGrim2371.kt:32}
  */
 export class NoSlowSharedGrim2371 extends Mode {
     static Companion: Tagged$Companion;

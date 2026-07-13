@@ -7,7 +7,7 @@ import type { TrainingListenerAdapter } from '../../../../../ai/djl/training/lis
  * Training Epoch 1/10 - Batch 45%
  * [███████████░░░░░░░░░░░░░░]
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/listener/OverlayTrainingListener.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/listener/OverlayTrainingListener.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/listener/OverlayTrainingListener.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/listener/OverlayTrainingListener.kt:37}
  */
 export class OverlayTrainingListener extends TrainingListenerAdapter {
     constructor(maxEpoch: number)

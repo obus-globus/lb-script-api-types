@@ -13,7 +13,7 @@ import type { Parameter } from '../../../../../net/ccbluex/liquidbounce/features
  *
  * @author superblaubeere27 (@team CCBlueX)
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L99 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:99}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt#L99 | src/main/kotlin/net/ccbluex/liquidbounce/features/command/CommandManager.kt:99}
  */
 export class CommandManager extends Object {
     static INSTANCE: CommandManager;

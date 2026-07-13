@@ -10,7 +10,7 @@ import type { ItemStack } from '../../../../../../../../../net/minecraft/world/i
 /**
  * @see ArmorMaterials
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt:83}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/misc/antibot/modes/CustomAntiBotMode.kt:83}
  */
 export class CustomAntiBotMode$Armor$ArmorPredicate extends Enum<CustomAntiBotMode$Armor$ArmorPredicate> implements Tagged {
     static CHAIN: CustomAntiBotMode$Armor$ArmorPredicate;

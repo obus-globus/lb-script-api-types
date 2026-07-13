@@ -10,7 +10,7 @@ import type { VelocityMode } from '../../../../../../../../../net/ccbluex/liquid
  * Lag mode. It delays some ticks of knockback.
  * It is equals to "delay velocity".
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityLag.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityLag.kt:40}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityLag.kt#L40 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/velocity/mode/VelocityLag.kt:40}
  */
 export class VelocityLag extends VelocityMode {
     static Companion: Tagged$Companion;

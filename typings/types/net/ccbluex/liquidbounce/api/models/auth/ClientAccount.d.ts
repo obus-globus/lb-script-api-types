@@ -8,7 +8,7 @@ import type { UserInformation } from '../../../../../../net/ccbluex/liquidbounce
  * Represents a client account that is used to authenticate with the LiquidBounce API.
  * It might hold additional information that can be obtained from the API.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/ClientAccount.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/ClientAccount.kt:36}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/ClientAccount.kt#L36 | src/main/kotlin/net/ccbluex/liquidbounce/api/models/auth/ClientAccount.kt:36}
  */
 export class ClientAccount extends Object {
     static Companion: ClientAccount$Companion;

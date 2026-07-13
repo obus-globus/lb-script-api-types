@@ -7,7 +7,7 @@ import type { ItemSlot } from '../../../../../../../../../net/ccbluex/liquidboun
  * Specialization of weapon type. Used in order to allow the user to specify that they want a sword and not an axe
  * or something.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/cd6fab2c64d4683279fb8734248e80c1cfb2b0f2/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/SwordItemFacet.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/SwordItemFacet.kt:30}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/SwordItemFacet.kt#L30 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/items/SwordItemFacet.kt:30}
  */
 export class SwordItemFacet extends WeaponItemFacet {
     static Companion: ItemFacet$Companion;
