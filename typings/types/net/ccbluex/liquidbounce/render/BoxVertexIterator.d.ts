@@ -15,13 +15,13 @@ export class BoxVertexIterator extends Enum<BoxVertexIterator> {
     /**
      * For Java and JS usage.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/render/BoxVertexIterator.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/render/BoxVertexIterator.kt:58}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/render/BoxVertexIterator.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/render/BoxVertexIterator.kt:58}
      */
     forEachVertex(box: AABB, consumer: BoxVertexIterator$BoxVertexConsumer): void;
     /**
      * For {@link drawBox}.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/render/BoxVertexIterator.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/render/BoxVertexIterator.kt:63}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/render/BoxVertexIterator.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/render/BoxVertexIterator.kt:63}
      */
     sideMask(sides: Direction[]): number;
     sideMask(side: Direction): number;

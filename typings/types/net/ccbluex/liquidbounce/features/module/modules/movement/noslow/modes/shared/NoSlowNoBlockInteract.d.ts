@@ -10,7 +10,7 @@ import type { ItemUseAnimation } from '../../../../../../../../../../net/minecra
  * Tested on Watchdog-AntiCheat (hypixel.net)
  * Confirmed to be working on 25th of May 2024
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowNoBlockInteract.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowNoBlockInteract.kt:37}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowNoBlockInteract.kt#L37 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noslow/modes/shared/NoSlowNoBlockInteract.kt:37}
  */
 export class NoSlowNoBlockInteract extends ToggleableValueGroup {
     constructor(parent: EventListener | null, actionFilter: (param0: ItemUseAnimation) => boolean)

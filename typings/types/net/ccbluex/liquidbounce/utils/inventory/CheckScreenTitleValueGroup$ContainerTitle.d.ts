@@ -9,6 +9,7 @@ export class CheckScreenTitleValueGroup$ContainerTitle extends Enum<CheckScreenT
     static BLAST_FURNACE: CheckScreenTitleValueGroup$ContainerTitle;
     static BREWING_STAND: CheckScreenTitleValueGroup$ContainerTitle;
     static CHEST: CheckScreenTitleValueGroup$ContainerTitle;
+    static CHEST_BOAT: CheckScreenTitleValueGroup$ContainerTitle;
     static CHEST_MINECART: CheckScreenTitleValueGroup$ContainerTitle;
     static Companion: Tagged$Companion;
     static DISPENSER: CheckScreenTitleValueGroup$ContainerTitle;
@@ -26,8 +27,9 @@ export class CheckScreenTitleValueGroup$ContainerTitle extends Enum<CheckScreenT
     static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
     static valueOf(paramarg0: string): CheckScreenTitleValueGroup$ContainerTitle;
     static values(): (Object | null)[];
-    private constructor(tag: string, translatableKey: string)
+    private constructor(tag: string, ...translatableKeys: string[])
     readonly tag: string;
-    readonly translatableKey: string;
-    name(): "BARREL" | "BEACON" | "BLAST_FURNACE" | "BREWING_STAND" | "CHEST" | "LARGE_CHEST" | "DISPENSER" | "DROPPER" | "ENDER_CHEST" | "FURNACE" | "HOPPER" | "SHULKER_BOX" | "SMOKER" | "CHEST_MINECART" | "HOPPER_MINECART";
+    // private translatableKeys: string[];
+    matches(title: string): boolean;
+    name(): "BARREL" | "BEACON" | "BLAST_FURNACE" | "BREWING_STAND" | "CHEST" | "LARGE_CHEST" | "DISPENSER" | "DROPPER" | "ENDER_CHEST" | "FURNACE" | "HOPPER" | "SHULKER_BOX" | "SMOKER" | "CHEST_MINECART" | "CHEST_BOAT" | "HOPPER_MINECART";
 }

@@ -34625,7 +34625,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/movement/noweb/modes/NoWebPlaceWater.kt",
-          "line": 336
+          "line": 335
         }
       }
     ],
@@ -43937,7 +43937,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 228
+          "line": 231
         }
       }
     ],
@@ -43947,7 +43947,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 177
+          "line": 180
         }
       }
     ],
@@ -43957,7 +43957,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 168
+          "line": 171
         }
       }
     ],
@@ -43967,7 +43967,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 162
+          "line": 165
         }
       }
     ],
@@ -43990,7 +43990,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 94
+          "line": 95
         }
       }
     ],
@@ -44013,7 +44013,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 98
+          "line": 99
         }
       },
       {
@@ -44034,7 +44034,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 104
+          "line": 105
         }
       }
     ],
@@ -44044,7 +44044,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 306
+          "line": 309
         }
       }
     ],
@@ -44054,7 +44054,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 301
+          "line": 304
         }
       }
     ],
@@ -44064,7 +44064,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 295
+          "line": 298
         }
       }
     ],
@@ -44087,7 +44087,7 @@
         "returns": "ChestType?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 458
+          "line": 462
         }
       }
     ],
@@ -44097,7 +44097,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 465
+          "line": 469
         }
       }
     ],
@@ -44107,7 +44107,7 @@
         "returns": "ChestType?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 386
+          "line": 389
         }
       },
       {
@@ -44115,7 +44115,7 @@
         "returns": "ChestType?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 399
+          "line": 402
         }
       }
     ],
@@ -44132,7 +44132,7 @@
         "returns": "List<PositionedVoxelShape<ChestType>>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 434
+          "line": 438
         }
       }
     ],
@@ -44155,7 +44155,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 417
+          "line": 421
         }
       }
     ],
@@ -44165,7 +44165,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 452
+          "line": 456
         }
       }
     ],
@@ -44175,7 +44175,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 149
+          "line": 152
         }
       }
     ],
@@ -44185,7 +44185,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 145
+          "line": 148
         }
       }
     ],
@@ -44195,7 +44195,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-          "line": 479
+          "line": 483
         }
       }
     ],
@@ -53070,7 +53070,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt",
-          "line": 171
+          "line": 189
         }
       }
     ],
@@ -53080,7 +53080,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt",
-          "line": 67
+          "line": 69
         }
       }
     ],
@@ -53090,7 +53090,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt",
-          "line": 63
+          "line": 65
         }
       }
     ],
@@ -53100,7 +53100,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt",
-          "line": 72
+          "line": 74
         }
       }
     ],
@@ -53117,7 +53117,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt",
-          "line": 159
+          "line": 168
         }
       }
     ],
@@ -53433,7 +53433,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/traps/TrapPlayerSimulation.kt",
-          "line": 135
+          "line": 140
         }
       }
     ],
@@ -86608,7 +86608,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 202
+          "line": 204
         }
       }
     ],
@@ -86618,7 +86618,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 208
+          "line": 210
         }
       }
     ],
@@ -88007,7 +88007,7 @@
         "returns": "SimulatedPlayerCache",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 98
+          "line": 100
         }
       }
     ],
@@ -88024,7 +88024,7 @@
         "returns": "SimulatedPlayerCache",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 87
+          "line": 89
         }
       }
     ],
@@ -88047,7 +88047,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 74
+          "line": 76
         }
       }
     ],
@@ -89173,7 +89173,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 117
+          "line": 119
         }
       }
     ],
@@ -89190,7 +89190,7 @@
         "returns": "SimulatedPlayerSnapshot",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 141
+          "line": 143
         }
       }
     ],
@@ -89207,17 +89207,17 @@
         "returns": "List<SimulatedPlayerSnapshot>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 159
+          "line": 161
         }
       }
     ],
     "net.ccbluex.liquidbounce.utils.entity.SimulatedPlayerCache.simulate": [
       {
         "params": [],
-        "returns": null,
+        "returns": "Sequence<SimulatedPlayerSnapshot>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 149
+          "line": 151
         }
       }
     ],
@@ -89234,7 +89234,7 @@
         "returns": "Sequence<SimulatedPlayerSnapshot>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 169
+          "line": 171
         }
       }
     ],
@@ -89251,7 +89251,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 124
+          "line": 126
         }
       }
     ],
@@ -89292,7 +89292,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 183
+          "line": 185
         }
       },
       {
@@ -89307,7 +89307,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-          "line": 190
+          "line": 192
         }
       }
     ],
@@ -90210,16 +90210,33 @@
             "vararg": false
           },
           {
-            "name": "translatableKey",
+            "name": "translatableKeys",
             "type": "String",
             "nullable": false,
-            "vararg": false
+            "vararg": true
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt",
-          "line": 179
+          "line": 177
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.inventory.CheckScreenTitleValueGroup.ContainerTitle.matches": [
+      {
+        "params": [
+          {
+            "name": "title",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt",
+          "line": 219
         }
       }
     ],
@@ -91436,7 +91453,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt",
-          "line": 215
+          "line": 242
         }
       }
     ],
@@ -91453,7 +91470,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt",
-          "line": 218
+          "line": 245
         }
       }
     ],
@@ -91470,7 +91487,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt",
-          "line": 205
+          "line": 232
         }
       }
     ],
@@ -91487,7 +91504,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt",
-          "line": 209
+          "line": 236
         }
       }
     ],
@@ -91510,7 +91527,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt",
-          "line": 198
+          "line": 225
         }
       }
     ],
@@ -91527,7 +91544,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/InventoryValueGroups.kt",
-          "line": 203
+          "line": 230
         }
       }
     ],

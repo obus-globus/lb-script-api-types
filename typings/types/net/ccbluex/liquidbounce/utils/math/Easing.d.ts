@@ -6,7 +6,7 @@ import type { Tagged$Companion } from '../../../../../net/ccbluex/liquidbounce/c
 /**
  * Functions from https://easings.net.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Easing.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Easing.kt:27}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Easing.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/Easing.kt:27}
  */
 export class Easing extends Enum<Easing> implements Tagged {
     static Companion: Tagged$Companion;

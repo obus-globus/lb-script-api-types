@@ -8778,7 +8778,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/render/ModuleStorageESP.kt",
-      "line": 90
+      "line": 91
     }
   },
   "net.ccbluex.liquidbounce.features.module.modules.render.ModuleTNTTimer": {
@@ -14864,7 +14864,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-      "line": 202
+      "line": 204
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.Entity.boxedDistanceTo": {
@@ -15043,7 +15043,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/PlayerSimulationCache.kt",
-      "line": 74
+      "line": 76
     }
   },
   "net.ccbluex.liquidbounce.utils.entity.PositionExtrapolation": {

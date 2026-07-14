@@ -23,7 +23,7 @@ export class DeepLearningEngine extends Object {
      * as we want to make sure that the libraries are downloaded
      * before we try to load any models.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/DeepLearningEngine.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/DeepLearningEngine.kt:78}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/DeepLearningEngine.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/deeplearn/DeepLearningEngine.kt:78}
      */
     init(task: Task): void;
 }

@@ -8,7 +8,7 @@ import type { PlayerModelPart } from '../../../../../../../net/minecraft/world/e
  *
  * Makes your skin blink (Requires multi-layer skin).
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleSkinDerp.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleSkinDerp.kt:34}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleSkinDerp.kt#L34 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/fun/ModuleSkinDerp.kt:34}
  */
 export class ModuleSkinDerp extends ClientModule {
     static INSTANCE: ModuleSkinDerp;

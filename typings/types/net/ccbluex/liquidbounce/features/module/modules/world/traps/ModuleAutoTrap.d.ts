@@ -16,7 +16,7 @@ import type { TargetTracker } from '../../../../../../../../net/ccbluex/liquidbo
  * Ignite: Automatically sets targets around you on fire.
  * AutoWeb: Automatically places cobwebs at targets around you.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt:48}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/world/traps/ModuleAutoTrap.kt:48}
  */
 export class ModuleAutoTrap extends ClientModule {
     static INSTANCE: ModuleAutoTrap;
@@ -26,6 +26,7 @@ export class ModuleAutoTrap extends ClientModule {
     // private ignitionTrapPlanner: IgnitionTrapPlanner;
     // private ignoreOpenInventory: boolean;
     // private /*not mapped: */ getIgnoreOpenInventory(): boolean;
+    // private pendingCombatWaitTicks: number;
     // private placementHandler: EventHook<GameTickEvent>;
     // private range: RangedValue<ClosedFloatingPointRange<number>>;
     // private rotationUpdateHandler: EventHook<RotationUpdateEvent>;

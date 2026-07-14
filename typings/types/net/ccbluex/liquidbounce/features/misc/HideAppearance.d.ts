@@ -10,7 +10,7 @@ import type { Chronometer } from '../../../../../net/ccbluex/liquidbounce/utils/
  *
  * using 2x CRTL + SHIFT to hide and unhide the client
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt:57}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt#L57 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt:57}
  */
 export class HideAppearance extends Object implements EventListener {
     static INSTANCE: HideAppearance;
@@ -25,7 +25,7 @@ export class HideAppearance extends Object implements EventListener {
     /**
      * Attempt to destruct the client
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/3bc82a3329f49d9150e48b299ce4a5e8571a038d/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt#L131 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt:131}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt#L131 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/HideAppearance.kt:131}
      */
     destructClient(): void;
     parent(): EventListener | null;
