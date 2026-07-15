@@ -7,7 +7,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-          "line": 532
+          "line": 533
         }
       }
     ],
@@ -42,7 +42,7 @@
         "returns": "CompletableFuture<Void>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/LiquidBounce.kt",
-          "line": 514
+          "line": 515
         }
       }
     ],
@@ -10666,7 +10666,7 @@
         "returns": "T",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 333
+          "line": 335
         }
       }
     ],
@@ -10683,7 +10683,7 @@
         "returns": "SharedFlow<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 379
+          "line": 381
         }
       }
     ],
@@ -10706,7 +10706,7 @@
         "returns": "EventHook<T>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 296
+          "line": 298
         }
       }
     ],
@@ -10716,7 +10716,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 322
+          "line": 324
         }
       }
     ],
@@ -10733,7 +10733,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 316
+          "line": 318
         }
       }
     ],
@@ -10756,7 +10756,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 311
+          "line": 313
         }
       }
     ],
@@ -10766,7 +10766,7 @@
         "returns": "SharedFlow<E>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/EventManager.kt",
-          "line": 275
+          "line": 277
         }
       }
     ],
@@ -11941,6 +11941,58 @@
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/UserInterfaceEvents.kt",
           "line": 49
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.event.events.ClosedCaptionEntry.constructor": [
+      {
+        "params": [
+          {
+            "name": "text",
+            "type": "Component",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "direction",
+            "type": "ClosedCaptionDirection",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "textColor",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "backgroundColor",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/UserInterfaceEvents.kt",
+          "line": 76
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.event.events.ClosedCaptionsEvent.constructor": [
+      {
+        "params": [
+          {
+            "name": "entries",
+            "type": "Array<ClosedCaptionEntry>",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/UserInterfaceEvents.kt",
+          "line": 70
         }
       }
     ],
@@ -22123,7 +22175,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/ModuleCriticals.kt",
-          "line": 196
+          "line": 198
         }
       }
     ],
@@ -60227,6 +60279,123 @@
         }
       }
     ],
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture.begin": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture.kt",
+          "line": 37
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture.captureBackground": [
+      {
+        "params": [
+          {
+            "name": "color",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture.kt",
+          "line": 47
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture.captureDirection": [
+      {
+        "params": [
+          {
+            "name": "text",
+            "type": "String",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture.kt",
+          "line": 53
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture.captureSubtitle": [
+      {
+        "params": [
+          {
+            "name": "text",
+            "type": "Component",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "textColor",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture.kt",
+          "line": 63
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture.checkActive": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture.kt",
+          "line": 93
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture.end": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture.kt",
+          "line": 85
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture.publish": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture.kt",
+          "line": 76
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture.resetEntryState": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture.kt",
+          "line": 97
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture.shouldRenderVanilla": [
+      {
+        "params": [],
+        "returns": "Boolean",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture.kt",
+          "line": 70
+        }
+      }
+    ],
     "net.ccbluex.liquidbounce.integration.theme.component.components.NativeHudComponent.constructor": [
       {
         "params": [
@@ -62577,8 +62746,26 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt",
-          "line": 87
+          "line": 114
         }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.FontFace.fillDerivedStyles": [
+      {
+        "params": [
+          {
+            "name": "baseFont",
+            "type": "Font",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt",
+          "line": 74
+        },
+        "suspend": true
       }
     ],
     "net.ccbluex.liquidbounce.render.FontFace.fillStyle": [
@@ -62600,7 +62787,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt",
-          "line": 72
+          "line": 84
         },
         "suspend": true
       }
@@ -62611,7 +62798,7 @@
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt",
-          "line": 102
+          "line": 129
         }
       }
     ],
@@ -62628,7 +62815,7 @@
         "returns": "FontId?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontFace.kt",
-          "line": 67
+          "line": 72
         }
       }
     ],
@@ -62645,9 +62832,19 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-          "line": 87
+          "line": 88
         },
         "suspend": true
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.FontManager.closeGlyphManager": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
+          "line": 128
+        }
       }
     ],
     "net.ccbluex.liquidbounce.render.FontManager.createGlyphManager": [
@@ -62656,7 +62853,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-          "line": 119
+          "line": 120
         }
       }
     ],
@@ -62673,7 +62870,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-          "line": 117
+          "line": 118
         }
       }
     ],
@@ -62690,7 +62887,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-          "line": 126
+          "line": 133
         },
         "suspend": true
       }
@@ -62708,7 +62905,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-          "line": 156
+          "line": 162
         },
         "suspend": true
       }
@@ -62726,7 +62923,7 @@
         "returns": "FontFace",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/FontManager.kt",
-          "line": 163
+          "line": 169
         },
         "suspend": true
       }
@@ -66916,7 +67113,7 @@
         "params": [
           {
             "name": "codepoint",
-            "type": "Char",
+            "type": "Int",
             "nullable": false,
             "vararg": false
           },
@@ -66930,30 +67127,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 242
+          "line": 256
         }
       }
     ],
-    "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManager.FontGlyphRegistry.constructor": [
+    "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManager.close": [
       {
-        "params": [
-          {
-            "name": "glyphs",
-            "type": "Array<Char2ObjectOpenHashMap<GlyphDescriptor>>",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "fallbackGlyph",
-            "type": "GlyphDescriptor",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
+        "params": [],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager.kt",
-          "line": 126
+          "line": 108
         }
       }
     ],
@@ -66967,8 +67151,8 @@
             "vararg": false
           },
           {
-            "name": "additionalFonts",
-            "type": "Collection<FontFace>",
+            "name": "fallbackFonts",
+            "type": "List<FontFace>",
             "nullable": false,
             "vararg": false
           }
@@ -66976,19 +67160,13 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager.kt",
-          "line": 35
+          "line": 34
         }
       }
     ],
-    "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManager.createGlyphRegistries": [
+    "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManager.createStaticGlyphRegistry": [
       {
         "params": [
-          {
-            "name": "baseFonts",
-            "type": "Collection<FontFace>",
-            "nullable": false,
-            "vararg": false
-          },
           {
             "name": "glyphPages",
             "type": "List<StaticGlyphPage>",
@@ -66996,7 +67174,7 @@
             "vararg": false
           }
         ],
-        "returns": "Map<FontFace, FontGlyphRegistry>",
+        "returns": "Map<FontId, Int2ObjectOpenHashMap<GlyphDescriptor>>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager.kt",
           "line": 76
@@ -67016,24 +67194,7 @@
         "returns": "GlyphDescriptor",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager.kt",
-          "line": 117
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManager.getFont": [
-      {
-        "params": [
-          {
-            "name": "font",
-            "type": "FontFace",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "FontGlyphRegistry",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager.kt",
-          "line": 97
+          "line": 104
         }
       }
     ],
@@ -67053,8 +67214,8 @@
             "vararg": false
           },
           {
-            "name": "ch",
-            "type": "Char",
+            "name": "codepoint",
+            "type": "Int",
             "nullable": false,
             "vararg": false
           }
@@ -67062,17 +67223,42 @@
         "returns": "GlyphDescriptor?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager.kt",
-          "line": 101
+          "line": 89
         }
       }
     ],
-    "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManager.unload": [
+    "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManagerKt.resolveFont": [
       {
-        "params": [],
-        "returns": null,
+        "params": [
+          {
+            "name": "requestedFace",
+            "type": "FontFace",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "fallbackFaces",
+            "type": "List<FontFace>",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "style",
+            "type": "@FontStyle Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "codepoint",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "FontId?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager.kt",
-          "line": 121
+          "line": 124
         }
       }
     ],
@@ -67099,6 +67285,30 @@
           },
           {
             "name": "ascent",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "underlineOffset",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "underlineThickness",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "strikethroughOffset",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "strikethroughThickness",
             "type": "Float",
             "nullable": false,
             "vararg": false
@@ -67159,7 +67369,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt",
-          "line": 98
+          "line": 103
         }
       }
     ],
@@ -67182,7 +67392,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt",
-          "line": 86
+          "line": 91
         }
       },
       {
@@ -67203,7 +67413,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt",
-          "line": 92
+          "line": 97
         }
       }
     ],
@@ -67250,7 +67460,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt",
-          "line": 274
+          "line": 278
         }
       }
     ],
@@ -67294,7 +67504,7 @@
             "vararg": false
           }
         ],
-        "returns": "Float",
+        "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt",
           "line": 149
@@ -67329,6 +67539,12 @@
             "vararg": false
           },
           {
+            "name": "scale",
+            "type": "Float",
+            "nullable": false,
+            "vararg": false
+          },
+          {
             "name": "color",
             "type": "Color4b",
             "nullable": false,
@@ -67344,7 +67560,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt",
-          "line": 250
+          "line": 248
         }
       }
     ],
@@ -67367,7 +67583,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt",
-          "line": 220
+          "line": 218
         }
       }
     ],
@@ -67390,7 +67606,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 61
+          "line": 62
         }
       }
     ],
@@ -67413,53 +67629,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager.kt",
-          "line": 133
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.engine.font.GlyphIdentifier.asLong": [
-      {
-        "params": [],
-        "returns": "Long",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.kt",
-          "line": 34
-        }
-      },
-      {
-        "params": [
-          {
-            "name": "codepoint",
-            "type": "Char",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "style",
-            "type": "@FontStyle Int",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.kt",
-          "line": 37
-        }
-      },
-      {
-        "params": [
-          {
-            "name": "fontGlyph",
-            "type": "FontGlyph",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.kt",
-          "line": 40
+          "line": 122
         }
       }
     ],
@@ -67468,13 +67638,13 @@
         "params": [
           {
             "name": "codepoint",
-            "type": "Char",
+            "type": "Int",
             "nullable": false,
             "vararg": false
           },
           {
-            "name": "style",
-            "type": "@FontStyle Int",
+            "name": "font",
+            "type": "FontId",
             "nullable": false,
             "vararg": false
           }
@@ -67482,7 +67652,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.kt",
-          "line": 27
+          "line": 23
         }
       },
       {
@@ -67497,56 +67667,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.kt",
-          "line": 28
-        }
-      },
-      {
-        "params": [
-          {
-            "name": "longValue",
-            "type": "Long",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.kt",
-          "line": 29
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.engine.font.GlyphIdentifier.unpackCodepoint": [
-      {
-        "params": [
-          {
-            "name": "longValue",
-            "type": "Long",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "Char",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.kt",
-          "line": 43
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.engine.font.GlyphIdentifier.unpackStyle": [
-      {
-        "params": [
-          {
-            "name": "longValue",
-            "type": "Long",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "@FontStyle Int",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.kt",
-          "line": 46
+          "line": 24
         }
       }
     ],
@@ -67575,7 +67696,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 83
+          "line": 84
         }
       }
     ],
@@ -67604,7 +67725,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 109
+          "line": 110
         }
       }
     ],
@@ -67621,7 +67742,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 133
+          "line": 142
         }
       }
     ],
@@ -67638,7 +67759,7 @@
         "returns": "CharacterGenerationInfo?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 222
+          "line": 236
         }
       }
     ],
@@ -67661,7 +67782,7 @@
         "returns": "GlyphRenderInfo",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 189
+          "line": 198
         }
       }
     ],
@@ -67671,7 +67792,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 129
+          "line": 138
         }
       }
     ],
@@ -67694,7 +67815,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 164
+          "line": 173
         }
       }
     ],
@@ -67717,7 +67838,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 137
+          "line": 146
         }
       }
     ],
@@ -67725,8 +67846,8 @@
       {
         "params": [
           {
-            "name": "char",
-            "type": "Char",
+            "name": "codepoint",
+            "type": "Int",
             "nullable": false,
             "vararg": false
           },
@@ -67752,7 +67873,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/GlyphPage.kt",
-          "line": 45
+          "line": 46
         }
       }
     ],
@@ -68012,8 +68133,8 @@
             "vararg": false
           },
           {
-            "name": "style",
-            "type": "@FontStyle Int",
+            "name": "font",
+            "type": "FontId",
             "nullable": false,
             "vararg": false
           },
@@ -68027,7 +68148,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 238
+          "line": 244
+        }
+      }
+    ],
+    "net.ccbluex.liquidbounce.render.engine.font.dynamic.DynamicFontCacheManager.close": [
+      {
+        "params": [],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
+          "line": 227
         }
       }
     ],
@@ -68039,35 +68170,12 @@
             "type": "DynamicGlyphPage",
             "nullable": false,
             "vararg": false
-          },
-          {
-            "name": "availableFonts",
-            "type": "Collection<FontFace>",
-            "nullable": false,
-            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 42
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.engine.font.dynamic.DynamicFontCacheManager.createAllocationRequests": [
-      {
-        "params": [
-          {
-            "name": "requestedGlyphs",
-            "type": "Iterable<GlyphIdentifier>",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "List<FontGlyph>",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 213
+          "line": 39
         }
       }
     ],
@@ -68084,34 +68192,17 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 159
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.engine.font.dynamic.DynamicFontCacheManager.findFontForGlyph": [
-      {
-        "params": [
-          {
-            "name": "ch",
-            "type": "GlyphIdentifier",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": "FontId?",
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 232
+          "line": 160
         }
       }
     ],
     "net.ccbluex.liquidbounce.render.engine.font.dynamic.DynamicFontCacheManager.freeSpace": [
       {
         "params": [],
-        "returns": null,
+        "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 163
+          "line": 164
         }
       }
     ],
@@ -68119,14 +68210,8 @@
       {
         "params": [
           {
-            "name": "ch",
-            "type": "Char",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "font",
-            "type": "@FontStyle Int",
+            "name": "fontGlyph",
+            "type": "FontGlyph",
             "nullable": false,
             "vararg": false
           }
@@ -68134,7 +68219,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 60
+          "line": 57
         }
       }
     ],
@@ -68144,7 +68229,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 112
+          "line": 107
         }
       }
     ],
@@ -68154,7 +68239,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 126
+          "line": 124
         }
       }
     ],
@@ -68171,7 +68256,7 @@
         "returns": "List<FontGlyph>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 190
+          "line": 204
         }
       }
     ],
@@ -68181,7 +68266,7 @@
         "returns": "List<ChangeOnAtlas>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.kt",
-          "line": 76
+          "line": 71
         }
       }
     ],
@@ -68204,48 +68289,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-          "line": 40
-        }
-      }
-    ],
-    "net.ccbluex.liquidbounce.render.engine.font.dynamic.DynamicGlyphPage.copyImageSection": [
-      {
-        "params": [
-          {
-            "name": "fromImage",
-            "type": "BufferedImage",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "toImage",
-            "type": "NativeImage",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "fromLocation",
-            "type": "Point",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "toLocation",
-            "type": "Point",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "patchSize",
-            "type": "Dimension",
-            "nullable": false,
-            "vararg": false
-          }
-        ],
-        "returns": null,
-        "source": {
-          "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-          "line": 132
+          "line": 37
         }
       }
     ],
@@ -68253,14 +68297,8 @@
       {
         "params": [
           {
-            "name": "ch",
-            "type": "Char",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "style",
-            "type": "@FontStyle Int",
+            "name": "glyphIdentifier",
+            "type": "GlyphIdentifier",
             "nullable": false,
             "vararg": false
           }
@@ -68268,7 +68306,7 @@
         "returns": "GlyphRenderInfo?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-          "line": 99
+          "line": 97
         }
       }
     ],
@@ -68276,14 +68314,8 @@
       {
         "params": [
           {
-            "name": "char",
-            "type": "Char",
-            "nullable": false,
-            "vararg": false
-          },
-          {
-            "name": "style",
-            "type": "@FontStyle Int",
+            "name": "fontGlyph",
+            "type": "FontGlyph",
             "nullable": false,
             "vararg": false
           }
@@ -68291,7 +68323,7 @@
         "returns": "GlyphRenderInfo?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-          "line": 52
+          "line": 49
         }
       }
     ],
@@ -68301,7 +68333,7 @@
         "returns": "List<Pair<GlyphIdentifier, GlyphRenderInfo>>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-          "line": 113
+          "line": 111
         }
       }
     ],
@@ -68318,7 +68350,7 @@
         "returns": "Pair<Companion.CharacterGenerationInfo, AtlasSliceHandle>?",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-          "line": 148
+          "line": 133
         }
       }
     ],
@@ -68335,7 +68367,7 @@
         "returns": "List<FontGlyph>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-          "line": 61
+          "line": 58
         }
       }
     ],
@@ -68347,18 +68379,12 @@
             "type": "Companion.CharacterGenerationInfo",
             "nullable": false,
             "vararg": false
-          },
-          {
-            "name": "glyph",
-            "type": "GlyphRenderInfo",
-            "nullable": false,
-            "vararg": false
           }
         ],
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt",
-          "line": 120
+          "line": 118
         }
       }
     ],
@@ -68453,8 +68479,8 @@
       {
         "params": [
           {
-            "name": "char",
-            "type": "Char",
+            "name": "codepoint",
+            "type": "Int",
             "nullable": false,
             "vararg": false
           },
@@ -68494,7 +68520,7 @@
             "vararg": false
           }
         ],
-        "returns": "Char",
+        "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/TextProcessor.kt",
           "line": 41
@@ -100851,7 +100877,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 416
+          "line": 502
         }
       }
     ],
@@ -100868,7 +100894,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 378
+          "line": 464
         }
       }
     ],
@@ -100878,7 +100904,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 424
+          "line": 510
         }
       }
     ],
@@ -100895,7 +100921,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 420
+          "line": 506
         },
         "isExtension": true,
         "receiver": "Unit"
@@ -100982,7 +101008,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 355
+          "line": 441
         },
         "isExtension": true,
         "receiver": "NativeImage"
@@ -100999,7 +101025,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 359
+          "line": 445
         },
         "isExtension": true,
         "receiver": "NativeImage"
@@ -101018,7 +101044,7 @@
         "returns": "TextureSetup",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 369
+          "line": 455
         },
         "isExtension": true,
         "receiver": "GpuTextureView"
@@ -101043,7 +101069,7 @@
         "returns": "GpuTextureView",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 115
+          "line": 119
         },
         "isExtension": true,
         "receiver": "GpuTexture"
@@ -101098,7 +101124,7 @@
         "returns": "CompletableFuture<*>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 166
+          "line": 170
         },
         "isExtension": true,
         "receiver": "GpuTexture"
@@ -101117,7 +101143,7 @@
         "returns": "BufferBuilder",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 68
+          "line": 72
         },
         "isExtension": true,
         "receiver": "ByteBufferBuilder"
@@ -101136,7 +101162,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 95
+          "line": 99
         },
         "isExtension": true,
         "receiver": "GpuTexture"
@@ -101161,7 +101187,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 101
+          "line": 105
         },
         "isExtension": true,
         "receiver": "RenderTarget"
@@ -101180,10 +101206,69 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 98
+          "line": 102
         },
         "isExtension": true,
         "receiver": "GpuTexture"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.render.RenderExtensionsKt.copyArgbRows": [
+      {
+        "params": [
+          {
+            "name": "source",
+            "type": "IntArray",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "sourceOffset",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "sourceStride",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "target",
+            "type": "IntBuffer",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "targetOffset",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "targetStride",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "width",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "height",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": null,
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
+          "line": 396
+        }
       }
     ],
     "net.ccbluex.liquidbounce.utils.render.RenderExtensionsKt.copyFrom": [
@@ -101199,7 +101284,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 127
+          "line": 131
         },
         "isExtension": true,
         "receiver": "GpuBufferSlice"
@@ -101258,7 +101343,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 200
+          "line": 204
         },
         "isExtension": true,
         "receiver": "GpuTexture"
@@ -101283,7 +101368,7 @@
         "returns": "GpuTexture",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 180
+          "line": 184
         },
         "isExtension": true,
         "receiver": "GpuTexture"
@@ -101344,10 +101429,71 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 152
+          "line": 156
         },
         "isExtension": true,
         "receiver": "GpuTexture"
+      }
+    ],
+    "net.ccbluex.liquidbounce.utils.render.RenderExtensionsKt.copyToNativeImage": [
+      {
+        "params": [
+          {
+            "name": "target",
+            "type": "NativeImage",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "sourceX",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "sourceY",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "targetX",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "targetY",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "width",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "height",
+            "type": "Int",
+            "nullable": false,
+            "vararg": false
+          },
+          {
+            "name": "scratchBuffer",
+            "type": "IntArray",
+            "nullable": false,
+            "vararg": false
+          }
+        ],
+        "returns": "IntArray",
+        "source": {
+          "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
+          "line": 335
+        },
+        "isExtension": true,
+        "receiver": "BufferedImage"
       }
     ],
     "net.ccbluex.liquidbounce.utils.render.RenderExtensionsKt.createUbo": [
@@ -101369,7 +101515,7 @@
         "returns": "GpuBuffer",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 430
+          "line": 516
         },
         "isExtension": true,
         "receiver": "GpuDevice"
@@ -101394,7 +101540,7 @@
         "returns": "GpuBufferSlice.MappedView",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 118
+          "line": 122
         },
         "isExtension": true,
         "receiver": "GpuBuffer"
@@ -101417,7 +101563,7 @@
         "returns": "GpuBufferSlice.MappedView",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 121
+          "line": 125
         },
         "isExtension": true,
         "receiver": "GpuBufferSlice"
@@ -101436,7 +101582,7 @@
         "returns": "Std140Builder",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 451
+          "line": 537
         },
         "isExtension": true,
         "receiver": "Std140Builder"
@@ -101448,7 +101594,7 @@
         "returns": "NativeImage",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 341
+          "line": 427
         },
         "isExtension": true,
         "receiver": "InputStream"
@@ -101458,7 +101604,7 @@
         "returns": "NativeImage",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 346
+          "line": 432
         },
         "isExtension": true,
         "receiver": "BufferedSource"
@@ -101468,7 +101614,7 @@
         "returns": "NativeImage",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 352
+          "line": 438
         },
         "isExtension": true,
         "receiver": "File"
@@ -101499,7 +101645,7 @@
         "returns": "NativeImage",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 220
+          "line": 224
         },
         "isExtension": true,
         "receiver": "GpuBufferSlice"
@@ -101518,7 +101664,7 @@
         "returns": "DynamicTexture",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 332
+          "line": 418
         },
         "isExtension": true,
         "receiver": "NativeImage"
@@ -101530,7 +101676,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 63
+          "line": 67
         },
         "isExtension": true,
         "receiver": "PoseStack"
@@ -101549,7 +101695,7 @@
         "returns": "CompletableFuture<*>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 214
+          "line": 218
         },
         "isExtension": true,
         "receiver": "GpuTexture"
@@ -101568,7 +101714,7 @@
         "returns": "Int",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 427
+          "line": 513
         }
       }
     ],
@@ -101585,7 +101731,7 @@
         "returns": "CompletableFuture<BufferedImage>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 260
+          "line": 264
         },
         "isExtension": true,
         "receiver": "GpuTexture"
@@ -101595,7 +101741,7 @@
         "returns": "BufferedImage",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 301
+          "line": 305
         },
         "isExtension": true,
         "receiver": "NativeImage"
@@ -101620,7 +101766,7 @@
         "returns": "GpuBuffer",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 372
+          "line": 458
         },
         "isExtension": true,
         "receiver": "ByteBuffer"
@@ -101639,7 +101785,7 @@
         "returns": "CompletableFuture<NativeImage>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 239
+          "line": 243
         },
         "isExtension": true,
         "receiver": "GpuTexture"
@@ -101649,7 +101795,7 @@
         "returns": "NativeImage",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 317
+          "line": 321
         },
         "isExtension": true,
         "receiver": "BufferedImage"
@@ -101692,7 +101838,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 289
+          "line": 293
         },
         "isExtension": true,
         "receiver": "DynamicTexture"
@@ -101723,7 +101869,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 77
+          "line": 81
         }
       }
     ],
@@ -101740,7 +101886,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 124
+          "line": 128
         },
         "isExtension": true,
         "receiver": "GpuBufferSlice"
@@ -101805,7 +101951,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 130
+          "line": 134
         },
         "isExtension": true,
         "receiver": "GpuTexture"
@@ -101824,7 +101970,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 440
+          "line": 526
         },
         "isExtension": true,
         "receiver": "ByteBuffer"
@@ -101841,7 +101987,7 @@
         "returns": "GpuBufferSlice",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/render/RenderExtensions.kt",
-          "line": 444
+          "line": 530
         },
         "isExtension": true,
         "receiver": "GpuBufferSlice"

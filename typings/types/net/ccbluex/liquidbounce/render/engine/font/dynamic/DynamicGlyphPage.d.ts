@@ -1,6 +1,4 @@
-import type { NativeImage } from '../../../../../../../com/mojang/blaze3d/platform/NativeImage.d.ts'
 import type { Dimension } from '../../../../../../../java/awt/Dimension.d.ts'
-import type { Point } from '../../../../../../../java/awt/Point.d.ts'
 import type { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.d.ts'
 import type { Pair } from '../../../../../../../kotlin/Pair.d.ts'
 import type { AtlasSliceHandle } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/font/AtlasSliceHandle.d.ts'
@@ -16,24 +14,22 @@ import type { DynamicTexture } from '../../../../../../../net/minecraft/client/r
 export class DynamicGlyphPage extends GlyphPage {
     static Companion: GlyphPage$Companion;
     static Companion: DynamicGlyphPage$Companion;
-    static DEFAULT_ATLAS_SIZE: Dimension;
     constructor(atlasSize: Dimension, fontHeight: number)
     // private allocator: DynamicAtlasAllocator;
     readonly atlasSize: Dimension;
-    readonly dirty: GlyphRenderInfo[];
-    // private glyphMap: { [key: string]: any };
+    // private copyScratchBuffer: number[];
+    // private glyphMap: Map<GlyphIdentifier, Pair<GlyphRenderInfo, AtlasSliceHandle>>;
     // private image: BufferedImage;
     readonly texture: DynamicTexture;
-    // private copyImageSection(fromImage: BufferedImage, toImage: NativeImage, fromLocation: Point, toLocation: Point, patchSize: Dimension): void;
-    free(ch: string, style: number): GlyphRenderInfo | null;
-    getGlyph(char: string, style: number): GlyphRenderInfo | null;
+    free(glyphIdentifier: GlyphIdentifier): GlyphRenderInfo | null;
+    getGlyph(fontGlyph: FontGlyph): GlyphRenderInfo | null;
     /**
      * Clears the allocator and uses optimized characters with optimized allocation order to reduce the amount of
      * fragmentation.
      *
      * @returns Removed chars
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt#L113 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt:113}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt:111}
      */
     optimizeAtlas(): Pair<GlyphIdentifier, GlyphRenderInfo>[];
     // private planCharacterPlacement(glyph: FontGlyph): Pair<GlyphPage$Companion$CharacterGenerationInfo, AtlasSliceHandle> | null;
@@ -42,8 +38,8 @@ export class DynamicGlyphPage extends GlyphPage {
      *
      * @returns A list of characters that could not be added
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt#L61 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt:61}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.kt:58}
      */
     tryAdd(c: FontGlyph[]): FontGlyph[];
-    // private updateNativeTexture(generationInfo: GlyphPage$Companion$CharacterGenerationInfo, glyph: GlyphRenderInfo): void;
+    // private updateNativeTexture(generationInfo: GlyphPage$Companion$CharacterGenerationInfo): void;
 }

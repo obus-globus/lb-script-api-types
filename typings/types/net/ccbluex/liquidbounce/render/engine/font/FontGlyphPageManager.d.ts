@@ -1,27 +1,32 @@
+import type { AutoCloseable } from '../../../../../../java/lang/AutoCloseable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { EventHook } from '../../../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
 import type { GameRenderEvent } from '../../../../../../net/ccbluex/liquidbounce/event/events/GameRenderEvent.d.ts'
 import type { FontFace } from '../../../../../../net/ccbluex/liquidbounce/render/FontFace.d.ts'
-import type { FontGlyphPageManager$FontGlyphRegistry } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager$FontGlyphRegistry.d.ts'
+import type { FontId } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/FontId.d.ts'
 import type { GlyphDescriptor } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphDescriptor.d.ts'
+import type { GlyphIdentifier } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier.d.ts'
 import type { StaticGlyphPage } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/StaticGlyphPage.d.ts'
 import type { DynamicFontCacheManager } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicFontCacheManager.d.ts'
 import type { DynamicGlyphPage } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/dynamic/DynamicGlyphPage.d.ts'
-export class FontGlyphPageManager extends Object implements EventListener {
-    constructor(baseFonts: FontFace[], additionalFonts: FontFace[])
-    // private availableFonts: Map<FontFace, FontGlyphPageManager$FontGlyphRegistry>;
+export class FontGlyphPageManager extends Object implements AutoCloseable, EventListener {
+    constructor(baseFonts: FontFace[], fallbackFonts: FontFace[])
+    // private closed: boolean;
     // private dynamicFontManager: DynamicFontCacheManager;
     // private dynamicPage: DynamicGlyphPage;
-    // private dynamicallyLoadedGlyphs: { [key: string]: any };
+    // private dynamicallyLoadedGlyphs: Map<GlyphIdentifier, GlyphDescriptor>;
+    // private fallbackFonts: FontFace[];
+    // private fallbackGlyphs: Map<FontFace, GlyphDescriptor>;
+    // private registeredFonts: FontFace[];
     // private renderHandler: EventHook<GameRenderEvent>;
+    // private staticGlyphs: Map<FontId, { [key: string]: any }>;
     // private staticPage: StaticGlyphPage[];
     children(): EventListener[];
-    // private createGlyphRegistries(baseFonts: FontFace[], glyphPages: StaticGlyphPage[]): Map<FontFace, FontGlyphPageManager$FontGlyphRegistry>;
+    close(): void;
+    // private createStaticGlyphRegistry(glyphPages: StaticGlyphPage[]): Map<FontId, { [key: string]: any }>;
     getFallbackGlyph(font: FontFace): GlyphDescriptor;
-    // private getFont(font: FontFace): FontGlyphPageManager$FontGlyphRegistry;
     parent(): EventListener | null;
-    requestGlyph(font: FontFace, style: number, ch: string): GlyphDescriptor | null;
-    unload(): void;
+    requestGlyph(font: FontFace, style: number, codepoint: number): GlyphDescriptor | null;
     unregister(): void;
 }

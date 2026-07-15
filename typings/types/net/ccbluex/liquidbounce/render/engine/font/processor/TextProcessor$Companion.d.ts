@@ -2,12 +2,12 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Random } from '../../../../../../../kotlin/random/Random.d.ts'
 import type { Color4b } from '../../../../../../../net/ccbluex/liquidbounce/render/engine/type/Color4b.d.ts'
 export class TextProcessor$Companion extends Object {
-    RANDOM_CHARS: string[];
+    RANDOM_CHARS: number[];
     readonly hexColors: Color4b[];
     /**
      * @param obfuscationRng The random for the obfuscation.      If null, obfuscated characters will be replaced with `_`
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/TextProcessor.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/TextProcessor.kt:41}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/TextProcessor.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/processor/TextProcessor.kt:41}
      */
-    protected generateObfuscatedChar(obfuscationRng: Random | null): string;
+    protected generateObfuscatedChar(obfuscationRng: Random | null): number;
 }

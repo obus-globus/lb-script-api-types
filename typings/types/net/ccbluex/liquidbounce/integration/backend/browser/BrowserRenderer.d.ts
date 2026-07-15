@@ -16,7 +16,7 @@ import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/clien
  *
  * This {@link EventListener} needs to be unregistered when the browser is closed.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserRenderer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserRenderer.kt:44}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserRenderer.kt#L44 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserRenderer.kt:44}
  */
 export class BrowserRenderer extends Object implements AutoCloseable, EventListener {
     constructor(browser: Browser)

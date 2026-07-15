@@ -12,7 +12,7 @@ import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity
  * rotationUtil.aimAtRotation(rotation, true)
  * ```
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt:46}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt#L46 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt:46}
  */
 export class ScriptRotationUtil extends Object {
     static INSTANCE: ScriptRotationUtil;
@@ -22,7 +22,7 @@ export class ScriptRotationUtil extends Object {
      * @param rotation The rotation to aim at.
      * @param fixVelocity Whether to fix the player's velocity.   This means bypassing anti-cheat checks for aim-related movement.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt:90}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt#L90 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt:90}
      */
     aimAtRotation(rotation: Rotation, fixVelocity: boolean): void;
     /**
@@ -31,7 +31,7 @@ export class ScriptRotationUtil extends Object {
      *
      * It has a performance impact, so it's recommended to use {@link newRotationEntity} if you don't need the best spot.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt:55}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt#L55 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt:55}
      */
     newRaytracedRotationEntity(entity: Entity, range: number, throughWallsRange: number): Rotation | null;
     /**
@@ -41,7 +41,7 @@ export class ScriptRotationUtil extends Object {
      *
      * It has almost zero performance impact, so it's recommended to use this if you don't need the best spot.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt:77}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt#L77 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptRotationUtil.kt:77}
      */
     newRotationEntity(entity: Entity): Rotation;
 }

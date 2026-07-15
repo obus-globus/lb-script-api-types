@@ -4,7 +4,7 @@ export class BrowserViewport$Companion extends Object {
     /**
      * Creates a fullscreen viewport matching the current window dimensions
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:74}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/integration/backend/browser/BrowserViewport.kt:74}
      */
     readonly FULLSCREEN: BrowserViewport;
 }

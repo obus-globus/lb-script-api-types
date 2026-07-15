@@ -341,6 +341,9 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.event.events.ClientPlayerInventoryEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/ClientPlayerInventoryEvent").ClientPlayerInventoryEvent;
     "net.ccbluex.liquidbounce.event.events.ClientShutdownEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/ClientShutdownEvent").ClientShutdownEvent;
     "net.ccbluex.liquidbounce.event.events.ClientStartEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/ClientStartEvent").ClientStartEvent;
+    "net.ccbluex.liquidbounce.event.events.ClosedCaptionDirection": typeof import("../types/net/ccbluex/liquidbounce/event/events/ClosedCaptionDirection").ClosedCaptionDirection;
+    "net.ccbluex.liquidbounce.event.events.ClosedCaptionEntry": typeof import("../types/net/ccbluex/liquidbounce/event/events/ClosedCaptionEntry").ClosedCaptionEntry;
+    "net.ccbluex.liquidbounce.event.events.ClosedCaptionsEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/ClosedCaptionsEvent").ClosedCaptionsEvent;
     "net.ccbluex.liquidbounce.event.events.ComponentsUpdateEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/ComponentsUpdateEvent").ComponentsUpdateEvent;
     "net.ccbluex.liquidbounce.event.events.ComponentsUpdateEvent$Source": typeof import("../types/net/ccbluex/liquidbounce/event/events/ComponentsUpdateEvent$Source").ComponentsUpdateEvent$Source;
     "net.ccbluex.liquidbounce.event.events.DeathEvent": typeof import("../types/net/ccbluex/liquidbounce/event/events/DeathEvent").DeathEvent;
@@ -1991,6 +1994,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.integration.theme.component.HudComponentFactory$NativeHudComponentFactory": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/HudComponentFactory$NativeHudComponentFactory").HudComponentFactory$NativeHudComponentFactory;
     "net.ccbluex.liquidbounce.integration.theme.component.HudComponentManager": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/HudComponentManager").HudComponentManager;
     "net.ccbluex.liquidbounce.integration.theme.component.HudComponentTweak": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak").HudComponentTweak;
+    "net.ccbluex.liquidbounce.integration.theme.component.SubtitleOverlayCapture": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/SubtitleOverlayCapture").SubtitleOverlayCapture;
     "net.ccbluex.liquidbounce.integration.theme.component.components.NativeHudComponent": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent").NativeHudComponent;
     "net.ccbluex.liquidbounce.integration.theme.component.components.NativeHudComponent$Companion": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/components/NativeHudComponent$Companion").NativeHudComponent$Companion;
     "net.ccbluex.liquidbounce.integration.theme.component.components.WebHudComponent": typeof import("../types/net/ccbluex/liquidbounce/integration/theme/component/components/WebHudComponent").WebHudComponent;
@@ -2101,14 +2105,12 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.render.engine.font.DynamicAtlasAllocator": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/DynamicAtlasAllocator").DynamicAtlasAllocator;
     "net.ccbluex.liquidbounce.render.engine.font.FontGlyph": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/FontGlyph").FontGlyph;
     "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManager": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager").FontGlyphPageManager;
-    "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManager$FontGlyphRegistry": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManager$FontGlyphRegistry").FontGlyphPageManager$FontGlyphRegistry;
     "net.ccbluex.liquidbounce.render.engine.font.FontGlyphPageManagerKt": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/FontGlyphPageManagerKt").FontGlyphPageManagerKt;
     "net.ccbluex.liquidbounce.render.engine.font.FontId": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/FontId").FontId;
     "net.ccbluex.liquidbounce.render.engine.font.FontRenderer": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/FontRenderer").FontRenderer;
     "net.ccbluex.liquidbounce.render.engine.font.GlyphAtlasLocation": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/GlyphAtlasLocation").GlyphAtlasLocation;
     "net.ccbluex.liquidbounce.render.engine.font.GlyphDescriptor": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/GlyphDescriptor").GlyphDescriptor;
     "net.ccbluex.liquidbounce.render.engine.font.GlyphIdentifier": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier").GlyphIdentifier;
-    "net.ccbluex.liquidbounce.render.engine.font.GlyphIdentifier$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier$Companion").GlyphIdentifier$Companion;
     "net.ccbluex.liquidbounce.render.engine.font.GlyphLayoutInfo": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/GlyphLayoutInfo").GlyphLayoutInfo;
     "net.ccbluex.liquidbounce.render.engine.font.GlyphPage": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/GlyphPage").GlyphPage;
     "net.ccbluex.liquidbounce.render.engine.font.GlyphPage$Companion": typeof import("../types/net/ccbluex/liquidbounce/render/engine/font/GlyphPage$Companion").GlyphPage$Companion;

@@ -20,6 +20,7 @@
     "types/net/ccbluex/liquidbounce/event/events/ClientPlayerDataEvent.d.ts:TS2420:ClientPlayerDataEvent#0",
     "types/net/ccbluex/liquidbounce/event/events/ClientPlayerEffectEvent.d.ts:TS2420:ClientPlayerEffectEvent#0",
     "types/net/ccbluex/liquidbounce/event/events/ClientPlayerInventoryEvent.d.ts:TS2420:ClientPlayerInventoryEvent#0",
+    "types/net/ccbluex/liquidbounce/event/events/ClosedCaptionsEvent.d.ts:TS2420:ClosedCaptionsEvent#0",
     "types/net/ccbluex/liquidbounce/event/events/ComponentsUpdateEvent.d.ts:TS2420:ComponentsUpdateEvent#0",
     "types/net/ccbluex/liquidbounce/event/events/DeathEvent.d.ts:TS2420:DeathEvent#0",
     "types/net/ccbluex/liquidbounce/event/events/DisconnectEvent.d.ts:TS2420:DisconnectEvent#0",
