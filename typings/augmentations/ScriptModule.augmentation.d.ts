@@ -38,6 +38,7 @@ import type { ClientPlayerEffectEvent } from '../types/net/ccbluex/liquidbounce/
 import type { ClientPlayerInventoryEvent } from '../types/net/ccbluex/liquidbounce/event/events/ClientPlayerInventoryEvent.d.ts'
 import type { ClientShutdownEvent } from '../types/net/ccbluex/liquidbounce/event/events/ClientShutdownEvent.d.ts'
 import type { ClientStartEvent } from '../types/net/ccbluex/liquidbounce/event/events/ClientStartEvent.d.ts'
+import type { ClosedCaptionsEvent } from '../types/net/ccbluex/liquidbounce/event/events/ClosedCaptionsEvent.d.ts'
 import type { ComponentsUpdateEvent } from '../types/net/ccbluex/liquidbounce/event/events/ComponentsUpdateEvent.d.ts'
 import type { DeathEvent } from '../types/net/ccbluex/liquidbounce/event/events/DeathEvent.d.ts'
 import type { DisconnectEvent } from '../types/net/ccbluex/liquidbounce/event/events/DisconnectEvent.d.ts'
@@ -310,6 +311,10 @@ on(eventName: "clientShutdown", handler: (clientShutdownEvent: ClientShutdownEve
  * @see {@link ClientStartEvent}
  */
 on(eventName: "clientStart", handler: (clientStartEvent: ClientStartEvent) => void): void;
+/**
+ * @see {@link ClosedCaptionsEvent}
+ */
+on(eventName: "closedCaptions", handler: (closedCaptionsEvent: ClosedCaptionsEvent) => void): void;
 /**
  * Fires when the HUD components are updated, exposing the updated component list.
  * @see {@link ComponentsUpdateEvent}

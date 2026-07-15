@@ -25,7 +25,7 @@ export class FontRenderer extends AbstractFontRenderer<MinecraftTextProcessor$Re
      *
      * {@link Font.BOLD} | {@link Font.ITALIC} -> 3 (Can be null)
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt:54}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/render/engine/font/FontRenderer.kt:54}
      */
     readonly font: FontFace;
     readonly glyphManager: FontGlyphPageManager;
@@ -33,6 +33,10 @@ export class FontRenderer extends AbstractFontRenderer<MinecraftTextProcessor$Re
     // private shadowColor: Color4b;
     readonly size: number;
     // private strikethroughIdxStack: (Object | null)[];
+    // private strikethroughOffset: number;
+    // private strikethroughThickness: number;
+    // private underlineOffset: number;
+    // private underlineThickness: number;
     // private underlinesIdxStack: (Object | null)[];
     // private commonDraw(ctx: Object, text: MinecraftTextProcessor$RecyclingProcessedText, parameters: AbstractFontRenderer$DrawParameters): number;
     draw(ctx: WorldRenderEnvironment, text: MinecraftTextProcessor$RecyclingProcessedText, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
@@ -42,8 +46,8 @@ export class FontRenderer extends AbstractFontRenderer<MinecraftTextProcessor$Re
     draw(ctx: GuiGraphicsExtractor, text: MinecraftTextProcessor$RecyclingProcessedText, parameters: AbstractFontRenderer$DrawParameters): number;
     draw(ctx: GuiGraphicsExtractor, text: Component, parameters: (param0: AbstractFontRenderer$DrawParameters) => void): number;
     // private drawChar(ctx: Object, glyph: GlyphDescriptor, x: number, y: number, z: number, scale: number, color: Color4b): void;
-    // private drawInternal(ctx: Object, text: ProcessedText, posX: number, posY: number, posZ: number, scale: number, overrideColor: Color4b | null): number;
-    // private drawLine(ctx: Object, x0: number, x1: number, y: number, z: number, color: Color4b, through: boolean): void;
+    // private drawInternal(ctx: Object, text: ProcessedText, posX: number, posY: number, posZ: number, scale: number, overrideColor: Color4b | null): void;
+    // private drawLine(ctx: Object, x0: number, x1: number, y: number, z: number, scale: number, color: Color4b, through: boolean): void;
     getStringWidth(text: ProcessedText, shadow: boolean): number;
     // private loadStrikethroughs(text: ProcessedText): IntStack;
     // private loadUnderlines(text: ProcessedText): IntStack;

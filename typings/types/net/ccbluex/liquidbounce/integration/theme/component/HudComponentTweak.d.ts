@@ -6,7 +6,7 @@ import type { Tagged$Companion } from '../../../../../../net/ccbluex/liquidbounc
 /**
  * A set of tweaks that can be applied to the Original HUD by the component
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt:27}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt#L27 | src/main/kotlin/net/ccbluex/liquidbounce/integration/theme/component/HudComponentTweak.kt:27}
  */
 export class HudComponentTweak extends Enum<HudComponentTweak> implements Tagged {
     static Companion: Tagged$Companion;
@@ -18,6 +18,7 @@ export class HudComponentTweak extends Enum<HudComponentTweak> implements Tagged
     static DISABLE_SCOREBOARD: HudComponentTweak;
     static DISABLE_STATUS_BAR: HudComponentTweak;
     static DISABLE_STATUS_EFFECT_OVERLAY: HudComponentTweak;
+    static DISABLE_SUBTITLE_OVERLAY: HudComponentTweak;
     static TWEAK_HOTBAR: HudComponentTweak;
     static getEntries(): HudComponentTweak[];
     static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
@@ -27,5 +28,5 @@ export class HudComponentTweak extends Enum<HudComponentTweak> implements Tagged
     static values(): (Object | null)[];
     private constructor(tag: string)
     readonly tag: string;
-    name(): "TWEAK_HOTBAR" | "DISABLE_CROSSHAIR" | "DISABLE_SCOREBOARD" | "DISABLE_STATUS_BAR" | "DISABLE_EXP_BAR" | "DISABLE_HELD_ITEM_TOOL_TIP" | "DISABLE_OVERLAY_MESSAGE" | "DISABLE_STATUS_EFFECT_OVERLAY" | "DISABLE_LOCATOR_BAR";
+    name(): "TWEAK_HOTBAR" | "DISABLE_CROSSHAIR" | "DISABLE_SCOREBOARD" | "DISABLE_STATUS_BAR" | "DISABLE_EXP_BAR" | "DISABLE_HELD_ITEM_TOOL_TIP" | "DISABLE_OVERLAY_MESSAGE" | "DISABLE_STATUS_EFFECT_OVERLAY" | "DISABLE_LOCATOR_BAR" | "DISABLE_SUBTITLE_OVERLAY";
 }

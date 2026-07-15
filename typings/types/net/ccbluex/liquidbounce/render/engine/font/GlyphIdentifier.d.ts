@@ -1,24 +1,17 @@
 import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { FontGlyph } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/FontGlyph.d.ts'
-import type { GlyphIdentifier$Companion } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/GlyphIdentifier$Companion.d.ts'
+import type { FontId } from '../../../../../../net/ccbluex/liquidbounce/render/engine/font/FontId.d.ts'
 export class GlyphIdentifier extends Record {
-    static Companion: GlyphIdentifier$Companion;
-    static asLong(codepoint: string, style: number): number;
-    static asLong(fontGlyph: FontGlyph): number;
-    static unpackCodepoint(longValue: number): string;
-    static unpackStyle(longValue: number): number;
-    constructor(codepoint: string, style: number)
-    constructor(longValue: number)
+    constructor(codepoint: number, font: FontId)
     constructor(fontGlyph: FontGlyph)
-    // private codepoint: string;
-    /*not mapped: */ codepoint(): string;
-    // private style: number;
-    /*not mapped: */ style(): number;
-    asLong(): number;
-    component1(): string;
-    component2(): number;
-    copy(codepoint: string, style: number): GlyphIdentifier;
+    // private codepoint: number;
+    /*not mapped: */ codepoint(): number;
+    // private font: FontId;
+    /*not mapped: */ font(): FontId;
+    component1(): number;
+    component2(): FontId;
+    copy(codepoint: number, font: FontId): GlyphIdentifier;
     equals(other: Object | null): boolean;
     hashCode(): number;
     toString(): string;

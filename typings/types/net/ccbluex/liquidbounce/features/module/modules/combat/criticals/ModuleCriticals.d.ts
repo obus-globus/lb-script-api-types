@@ -1,16 +1,19 @@
 import type { Mode } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/Mode.d.ts'
 import type { ModeValueGroup } from '../../../../../../../../net/ccbluex/liquidbounce/config/types/group/ModeValueGroup.d.ts'
 import type { ClientModule } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/ClientModule.d.ts'
+import type { Holder } from '../../../../../../../../net/minecraft/core/Holder.d.ts'
+import type { MobEffect } from '../../../../../../../../net/minecraft/world/effect/MobEffect.d.ts'
 import type { Entity } from '../../../../../../../../net/minecraft/world/entity/Entity.d.ts'
 /**
  * Criticals module
  *
  * Automatically crits every time you attack someone.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/ModuleCriticals.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/ModuleCriticals.kt:54}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/ModuleCriticals.kt#L54 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/criticals/ModuleCriticals.kt:54}
  */
 export class ModuleCriticals extends ClientModule {
     static INSTANCE: ModuleCriticals;
+    // private blockingEffects: Holder<MobEffect>[];
     readonly modes: ModeValueGroup<Mode>;
     allowsCriticalHit(ignoreOnGround: boolean): boolean;
     canDoCriticalHit(ignoreOnGround: boolean, ignoreSprint: boolean): boolean;

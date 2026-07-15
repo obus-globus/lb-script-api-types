@@ -4,7 +4,7 @@ import type { User } from '../../../../../net/minecraft/client/User.d.ts'
 /**
  * All events which are related to the minecraft client
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/26472f4415000921e37ac654ef9e544e7d3750c9/src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt:120}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt#L120 | src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt:120}
  */
 export class SessionEvent extends Event implements WebSocketEvent {
     constructor(session: User)

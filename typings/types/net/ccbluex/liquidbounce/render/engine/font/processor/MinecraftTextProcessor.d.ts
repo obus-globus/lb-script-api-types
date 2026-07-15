@@ -11,7 +11,7 @@ import type { Style } from '../../../../../../../net/minecraft/network/chat/Styl
 export class MinecraftTextProcessor extends TextProcessor<MinecraftTextProcessor$RecyclingProcessedText> {
     static Companion: TextProcessor$Companion;
     static INSTANCE: MinecraftTextProcessor;
-    static RANDOM_CHARS: string[];
+    static RANDOM_CHARS: number[];
     static TEXT_POOL: Pool<MinecraftTextProcessor$RecyclingProcessedText>;
     static getHexColors(): (Object | null)[];
     TEXT_POOL: Pool<MinecraftTextProcessor$RecyclingProcessedText>;
