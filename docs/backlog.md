@@ -29,14 +29,14 @@ W3 = deeper design, W4 = infra.
 
 ### Wave 1 - generator quick wins
 
-- **[ ] A1 - Comparator SAM mis-detected (wave 1).** `findSingleAbstractMethod`
+- **[x] A1 - Comparator SAM mis-detected (wave 1).** Fixed 2026-07-16 (lb-ts-generator@8bfbaf1). `findSingleAbstractMethod`
   picks the first abstract method; `java.util.Comparator` redeclares
   `equals(Object)` abstract, which wins over `compare(T,T)` - every comparator
   renders `(param0: Object) => boolean` instead of `(a, b) => number`.
   ~5-6k affected signatures (`Stream.sorted`, `Comparator.reversed`, LB's
   `asComparator`). Fix: exclude public-Object-method signatures per JLS 9.8.
   _Layer: generator._
-- **[ ] A2 - reflection-path array erasure (wave 1).** `javaTypeToKotlinType`
+- **[x] A2 - reflection-path array erasure (wave 1).** Fixed 2026-07-16. `javaTypeToKotlinType`
   has no `GenericArrayType` case (falls to `Any?` - >=350 sites, e.g.
   `Lists.newArrayList(paramelements: Object | null)`, also kills the `...`
   rest-param rendering); reference-array `Class` (`String[].class`) pads to
@@ -44,20 +44,20 @@ W3 = deeper design, W4 = infra.
   (`Main.main(paramargs)`); `BooleanArray` missing from `arrayFromKType`'s
   primitive table (`asBooleanArray(): (Object | null)[]`). Instance
   (kotlin-reflect) path is correct - statics/SAM path only. _Layer: generator._
-- **[ ] A3 - interface default properties never injected (wave 1).** The B-fix
+- **[x] A3 - interface default properties never injected (wave 1).** Fixed 2026-07-16; surface baseline 54 -> 6. The B-fix
   transitive closure exists for interface default *methods* (`functionsOf`) but
   `propertiesOf` reads only `declaredMemberProperties`, so implementers lack
   interface-default properties: `ChatSendEvent` misses `WebSocketEvent`'s
   `serializer`/`serializeAsync`, `ChatType` misses `Tagged.tagAliases`. This is
   the mechanism behind **51 of the 54 baselined surface TS2420s** - real
   runtime members that error in scripts. _Layer: generator._
-- **[ ] A4 - static-method duplicate emission (wave 1).** `staticMethodsOf` has
+- **[x] A4 - static-method duplicate emission (wave 1).** Fixed 2026-07-16; TS2300 90 -> 3 (shadowed statics now truthfully TS2417 in transitive files). `staticMethodsOf` has
   no `emittedSignatures` dedup (unlike `functionsOf`): 12,693 identical
   duplicate static-method lines across 5,448 files (int/long overloads both
   collapsing to `number`). Plus 706 files with duplicate static *fields*
   (inherited public constants re-listed next to shadowing redeclarations - the
   real TS2300 debt). _Layer: generator._
-- **[ ] A5 - `constructor()` emitted inside interfaces (wave 1).**
+- **[x] A5 - `constructor()` emitted inside interfaces (wave 1).** Fixed 2026-07-16.
   `generateInterface` calls `constructorsOf` unconditionally; annotation
   types get interface constructors (629 files; the TS7010/TS1093 baseline
   codes). Fix: skip for `isInterface`. _Layer: generator._
