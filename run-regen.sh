@@ -69,12 +69,20 @@ if [[ "$PROMOTE" == "1" ]]; then
       exit 1
     fi
   else
-    echo "WARN: $GEN_FROM_FILE missing (output predates provenance stamping); stamping from the live checkout." >&2
+    # .generated-from is written as the LAST step of regen-types.sh, after
+    # post-patches completed - its absence means the output tree is stale or
+    # only half-enriched (a post-patches crash), and the recommended recovery
+    # (`--no-regen` re-promote) would otherwise ship it: the gates catch type
+    # errors but not missing KDoc/param-name/deprecation enrichment.
+    echo "FAIL: $GEN_FROM_FILE missing - output is unstamped (interrupted regen or crashed post-patches). Re-run a full regen." >&2
+    exit 1
   fi
-  # All three synced dirs must exist up front - discovering one missing
-  # mid-loop would abort after --delete already ran on the earlier dirs,
-  # leaving typings/ a mixed old/new tree.
-  for d in ambient augmentations types; do
+  # ALL synced dirs must exist up front - discovering one missing mid-loop
+  # would abort after --delete already ran on the earlier dirs, leaving
+  # typings/ a mixed old/new tree. (Keep this list identical to the sync
+  # loop below: the registries are generated near the END of post-patches,
+  # so they are exactly what an interrupted run is missing.)
+  for d in ambient augmentations types registry-lb registry-full; do
     [[ -d "$OUT/$d" ]] || { echo "FAIL: $OUT/$d missing - refusing a partial promote" >&2; exit 1; }
   done
   # Surface anything the generator emits that the promote list would skip.
