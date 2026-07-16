@@ -1063,17 +1063,27 @@ if not target.is_file():
     sys.exit(0)
 
 text = target.read_text(encoding="utf-8")
-PAT = re.compile(r"^[ \t]*on\(eventName:\s*string,\s*handler:\s*Value\):\s*void;\s*$", re.MULTILINE)
+# The handler type is graalvm's Value, but the generator import-aliases it
+# (`Value_2`) whenever LB's config Value lands in the import list first -
+# match any local name. (An exact `handler: Value` regex no-op'd silently
+# for that reason while claiming the overload was already gone.)
+PAT = re.compile(r"^[ \t]*on\(eventName:\s*string,\s*handler:\s*\w+\):\s*void;\s*$", re.MULTILINE)
 new_text, n = PAT.subn(
     "    // T-10: base on() removed; see augmentations/ScriptModule.augmentation.d.ts",
     text,
 )
 
 if n == 0:
-    print("post-patches: T-10 no-op (no base on() found - augmentation may already be sole signature)")
+    # A genuine no-op (generator stopped emitting the base overload) is fine,
+    # but a generic overload the pattern failed to match means the emitted
+    # shape drifted - fail so the drift is fixed rather than shipped.
+    if re.search(r"^[ \t]*on\(eventName:\s*string,", text, re.MULTILINE):
+        print("post-patches: T-10 FAILED - generic on(eventName: string, ...) present but not matched by the strip pattern (emitted shape drifted?)", file=sys.stderr)
+        sys.exit(1)
+    print("post-patches: T-10 no-op (no base on() found - augmentation is already the sole signature)")
 elif n == 1:
     target.write_text(new_text, encoding="utf-8")
-    print("post-patches: T-10 stripped base ScriptModule.on(eventName: string, handler: Value)")
+    print("post-patches: T-10 stripped base ScriptModule.on(eventName: string, handler: <Value alias>)")
 else:
     print(f"post-patches: T-10 unexpected - matched {n} times; aborting to avoid corruption", file=sys.stderr)
     sys.exit(1)

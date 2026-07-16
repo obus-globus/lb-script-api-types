@@ -62,3 +62,17 @@ mc.on('attack', (event) => {
 // the generic overload has crept back in (regression).
 // @ts-expect-error - "definitely_not_a_real_event_xyz" is not a known event name
 mc.on('definitely_not_a_real_event_xyz', () => {});
+
+// Negative #4 (T-10 regression detector): same bogus name, but with an
+// `any`-typed handler. Negative #3 alone cannot detect the generic overload
+// creeping back: its inline arrow is not assignable to graalvm `Value`, so
+// that call errors (and the directive is consumed) with or without the
+// generic overload present. An `any` handler IS assignable to `Value` -
+// this call compiles if and only if a generic on(string, Value) overload
+// exists, which is exactly the regression T-10 must prevent. (This gap was
+// real: the strip regex missed the `Value_2` import alias, the overload
+// shipped, and this suite stayed green.)
+declare const anyHandler: any;
+// @ts-expect-error - only literal event names may resolve; if this stops
+// erroring, the generic on(eventName: string, ...) overload is back
+mc.on('definitely_not_a_real_event_xyz', anyHandler);
