@@ -19,9 +19,9 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TaggedChoiceTypeExtension } from '../../../../../net/fabricmc/fabric/impl/dimension/TaggedChoiceTypeExtension.d.ts'
 export class TaggedChoice$TaggedChoiceType<K extends unknown> extends Type<Pair<K, Object>> implements TaggedChoiceTypeExtension {
-    static elementResult(paramarg0: Object | null, paramarg1: TaggedChoice$TaggedChoiceType<Object>, paramarg2: RewriteResult<Object, Object>): RewriteResult<Pair<Object, Object>, Pair<Object, Object>>;
-    static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
-    static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
+    static elementResult<K extends unknown, FT extends unknown, FR extends unknown>(paramarg0: K, paramarg1: TaggedChoice$TaggedChoiceType<K>, paramarg2: RewriteResult<FT, FR>): RewriteResult<Pair<K, Object>, Pair<K, Object>>;
+    static opticView<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: Type<S>, paramarg1: RewriteResult<A, B>, paramarg2: TypedOptic<S, T, A, B>): RewriteResult<S, T>;
+    static unbox<A extends unknown>(paramarg0: App<Type$Mu, A>): Type<A>;
     constructor(arg0: string, arg1: Type<K>, arg2: Map<K, Type<Object>>)
     // private failSoft: boolean;
     // private hashCode: number;

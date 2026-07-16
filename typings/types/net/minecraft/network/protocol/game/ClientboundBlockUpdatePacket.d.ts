@@ -12,7 +12,7 @@ import type { BlockGetter } from '../../../../../net/minecraft/world/level/Block
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class ClientboundBlockUpdatePacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundBlockUpdatePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(pos: BlockPos, state: BlockState)
     constructor(level: BlockGetter, pos: BlockPos)
     readonly blockState: BlockState;

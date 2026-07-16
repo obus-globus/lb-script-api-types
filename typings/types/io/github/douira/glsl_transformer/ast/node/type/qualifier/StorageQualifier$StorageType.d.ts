@@ -1,6 +1,5 @@
 import type { TokenTyped } from '../../../../../../../../io/github/douira/glsl_transformer/ast/data/TokenTyped.d.ts'
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { Token } from '../../../../../../../../org/antlr/v4/runtime/Token.d.ts'
 export class StorageQualifier$StorageType extends Enum<StorageQualifier$StorageType> implements TokenTyped {
@@ -34,7 +33,7 @@ export class StorageQualifier$StorageType extends Enum<StorageQualifier$StorageT
     static WORKGROUPCOHERENT: StorageQualifier$StorageType;
     static WRITEONLY: StorageQualifier$StorageType;
     static fromToken(paramarg0: Token): StorageQualifier$StorageType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): StorageQualifier$StorageType;
     static values(): StorageQualifier$StorageType[];
     private constructor(arg2: number)

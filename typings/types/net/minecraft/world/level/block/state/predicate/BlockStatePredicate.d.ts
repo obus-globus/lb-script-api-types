@@ -8,8 +8,8 @@ import type { Property } from '../../../../../../../net/minecraft/world/level/bl
 export class BlockStatePredicate extends Object implements Predicate<BlockState> {
     static ANY: (param0: BlockState) => boolean;
     static forBlock(paramblock: Block): BlockStatePredicate;
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     private constructor(definition: StateDefinition<Block, BlockState>)
     // private definition: StateDefinition<Block, BlockState>;
     // private properties: Map<Property<any>, (param0: Object) => boolean>;

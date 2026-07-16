@@ -10,7 +10,7 @@ export class TypeRewriteRule$All extends Object implements TypeRewriteRule {
     static all(paramarg0: TypeRewriteRule, paramarg1: boolean, paramarg2: boolean): TypeRewriteRule;
     static checkOnce(paramarg0: TypeRewriteRule, paramarg1: (param0: Type<Object>) => void): TypeRewriteRule;
     static everywhere(paramarg0: TypeRewriteRule, paramarg1: PointFreeRule, paramarg2: boolean, paramarg3: boolean): TypeRewriteRule;
-    static ifSame(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>): TypeRewriteRule;
+    static ifSame<B extends unknown>(paramarg0: Type<B>, paramarg1: RewriteResult<B, Object>): TypeRewriteRule;
     static nop(): TypeRewriteRule;
     static once(paramarg0: TypeRewriteRule): TypeRewriteRule;
     static one(paramarg0: TypeRewriteRule): TypeRewriteRule;

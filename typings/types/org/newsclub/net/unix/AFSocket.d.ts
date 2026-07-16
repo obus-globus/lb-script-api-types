@@ -19,7 +19,7 @@ import type { AFUNIXSocketCapability } from '../../../../org/newsclub/net/unix/A
 import type { Closeables } from '../../../../org/newsclub/net/unix/Closeables.d.ts'
 import type { SocketAddressFilter } from '../../../../org/newsclub/net/unix/SocketAddressFilter.d.ts'
 export abstract class AFSocket<A extends AFSocketAddress> extends Socket implements AFSocketExtensions, AFSomeSocket {
-    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<any>;
+    static connectTo<A extends AFSocketAddress>(paramarg0: A): AFSocket<any>;
     static ensureSupported(): void;
     static ensureUnsafeSupported(): void;
     static getLoadedLibrary(): string;

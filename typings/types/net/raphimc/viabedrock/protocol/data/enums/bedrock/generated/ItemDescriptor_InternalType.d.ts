@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ItemDescriptor_InternalType extends Enum<ItemDescriptor_InternalType> {
     static ComplexAlias: ItemDescriptor_InternalType;
@@ -12,7 +11,7 @@ export class ItemDescriptor_InternalType extends Enum<ItemDescriptor_InternalTyp
     static getByName(paramarg0: string, paramarg1: ItemDescriptor_InternalType): ItemDescriptor_InternalType;
     static getByValue(paramarg0: number): ItemDescriptor_InternalType;
     static getByValue(paramarg0: number, paramarg1: ItemDescriptor_InternalType): ItemDescriptor_InternalType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ItemDescriptor_InternalType;
     static values(): ItemDescriptor_InternalType[];
     private constructor(arg2: number)

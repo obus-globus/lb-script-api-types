@@ -9,8 +9,8 @@ export class ResourceMetadata$MapBased extends Object implements ResourceMetadat
     static EMPTY: ResourceMetadata;
     static EMPTY_SUPPLIER: () => ResourceMetadata;
     static fromJsonStream(paraminputStream: InputStream): ResourceMetadata;
-    static of(paramk1: MetadataSectionType<Object>, paramv1: Object | null, paramk2: MetadataSectionType<Object>, paramv2: Object | null): ResourceMetadata;
-    static of(paramk: MetadataSectionType<Object>, paramv: Object | null): ResourceMetadata;
+    static of<T1 extends unknown, T2 extends unknown>(paramk1: MetadataSectionType<T1>, paramv1: T1, paramk2: MetadataSectionType<T2>, paramv2: T2): ResourceMetadata;
+    static of<T extends unknown>(paramk: MetadataSectionType<T>, paramv: T): ResourceMetadata;
     private constructor(values: Map<MetadataSectionType<Object>, Object | null>)
     // private values: Map<MetadataSectionType<Object>, Object | null>;
     getSection<T extends unknown>(serializer: MetadataSectionType<T>): Optional<T>;

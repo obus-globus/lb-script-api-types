@@ -8,14 +8,14 @@ import type { Source } from '../../../../../okio/Source.d.ts'
 export class OkHttpProgressInterceptor$ProgressResponseBody extends ResponseBody {
     static Companion: ResponseBody$Companion;
     static EMPTY: ResponseBody;
-    static create(paramarg0: number[], paramarg1: MediaType): ResponseBody;
-    static create(paramarg0: string, paramarg1: MediaType): ResponseBody;
-    static create(paramarg0: MediaType, paramarg1: number[]): ResponseBody;
-    static create(paramarg0: MediaType, paramarg1: string): ResponseBody;
-    static create(paramarg0: MediaType, paramarg1: number, paramarg2: BufferedSource): ResponseBody;
-    static create(paramarg0: MediaType, paramarg1: ByteString): ResponseBody;
-    static create(paramarg0: BufferedSource, paramarg1: MediaType, paramarg2: number): ResponseBody;
-    static create(paramarg0: ByteString, paramarg1: MediaType): ResponseBody;
+    static create(self: number[], contentType: MediaType | null): ResponseBody;
+    static create(self: string, contentType: MediaType | null): ResponseBody;
+    static create(contentType: MediaType | null, content: number[]): ResponseBody;
+    static create(contentType: MediaType | null, content: string): ResponseBody;
+    static create(contentType: MediaType | null, contentLength: number, content: BufferedSource): ResponseBody;
+    static create(contentType: MediaType | null, content: ByteString): ResponseBody;
+    static create(self: BufferedSource, contentType: MediaType | null, contentLength: number): ResponseBody;
+    static create(self: ByteString, contentType: MediaType | null): ResponseBody;
     constructor(arg0: ResponseBody, arg1: (param0: number, param1: number, param2: boolean) => void)
     // private bufferedSource: BufferedSource;
     // private progressListener: (param0: number, param1: number, param2: boolean) => void;

@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ListUtil extends Object {
-    static updateList(paramarg0: (Object | null)[], paramarg1: (Object | null)[], paramarg2: (Object | null)[]): void;
+    static updateList<T extends unknown>(paramarg0: T[], paramarg1: T[], paramarg2: T[]): void;
     constructor()
 }

@@ -1,5 +1,4 @@
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class Desktop$Action extends Enum<Desktop$Action> {
     static APP_ABOUT: Desktop$Action;
@@ -26,7 +25,7 @@ export class Desktop$Action extends Enum<Desktop$Action> {
     static MOVE_TO_TRASH: Desktop$Action;
     static OPEN: Desktop$Action;
     static PRINT: Desktop$Action;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Desktop$Action;
     static values(): Desktop$Action[];
     private constructor()

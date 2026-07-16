@@ -7,7 +7,7 @@ export class SpecialGenericSignatures$TypeSafeBarrierDescription extends Enum<Sp
     static INDEX: SpecialGenericSignatures$TypeSafeBarrierDescription;
     static MAP_GET_OR_DEFAULT: SpecialGenericSignatures$TypeSafeBarrierDescription;
     static NULL: SpecialGenericSignatures$TypeSafeBarrierDescription;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SpecialGenericSignatures$TypeSafeBarrierDescription;
     static values(): SpecialGenericSignatures$TypeSafeBarrierDescription[];
     constructor(arg2: Object, arg3: DefaultConstructorMarker)

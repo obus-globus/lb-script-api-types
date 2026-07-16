@@ -1,13 +1,14 @@
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class Range<T extends unknown> extends Object implements Serializable {
-    static between(paramarg0: Object | null, paramarg1: Object | null): Range<Object>;
-    static between(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object | null, param1: Object | null) => number): Range<Object>;
-    static is(paramarg0: Object | null): Range<Object>;
-    static is(paramarg0: Object | null, paramarg1: (param0: Object | null, param1: Object | null) => number): Range<Object>;
-    static of(paramarg0: Object | null, paramarg1: Object | null): Range<Object>;
-    static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: (param0: Object | null, param1: Object | null) => number): Range<Object>;
+    static between<T extends Comparable<Object>>(paramarg0: T, paramarg1: T): Range<T>;
+    static between<T extends unknown>(paramarg0: T, paramarg1: T, paramarg2: (param0: T, param1: T) => number): Range<T>;
+    static is<T extends Comparable<Object>>(paramarg0: T): Range<T>;
+    static is<T extends unknown>(paramarg0: T, paramarg1: (param0: T, param1: T) => number): Range<T>;
+    static of<T extends Comparable<Object>>(paramarg0: T, paramarg1: T): Range<T>;
+    static of<T extends unknown>(paramarg0: T, paramarg1: T, paramarg2: (param0: T, param1: T) => number): Range<T>;
     constructor(arg0: T, arg1: T, arg2: (param0: T, param1: T) => number)
     readonly comparator: (param0: T, param1: T) => number;
     // private hashCode: number;

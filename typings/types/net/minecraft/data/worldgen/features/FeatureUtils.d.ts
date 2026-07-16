@@ -8,7 +8,7 @@ import type { NoneFeatureConfiguration } from '../../../../../net/minecraft/worl
 export class FeatureUtils extends Object {
     static bootstrap(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>): void;
     static createKey(paramname: string): ResourceKey<ConfiguredFeature<any, any>>;
-    static register(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>, paramid: ResourceKey<ConfiguredFeature<any, any>>, paramfeature: Object | null, paramconfig: FeatureConfiguration | null): void;
+    static register<FC extends FeatureConfiguration, F extends Feature<FC>>(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>, paramid: ResourceKey<ConfiguredFeature<any, any>>, paramfeature: F, paramconfig: FC): void;
     static register(paramcontext: BootstrapContext<ConfiguredFeature<any, any>>, paramid: ResourceKey<ConfiguredFeature<any, any>>, paramfeature: Feature<NoneFeatureConfiguration>): void;
     constructor()
 }

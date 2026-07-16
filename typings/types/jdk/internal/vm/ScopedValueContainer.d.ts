@@ -6,9 +6,9 @@ import type { StackableScope } from '../../../jdk/internal/vm/StackableScope.d.t
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class ScopedValueContainer extends StackableScope {
-    static call(paramarg0: () => Object | null): Object | null;
+    static call<V extends unknown, X extends Throwable>(paramarg0: () => V): V;
     static captureBindings(): ScopedValueContainer$BindingsSnapshot;
-    static latest(paramarg0: Class<ScopedValueContainer>): ScopedValueContainer | null;
+    static latest<T extends ScopedValueContainer>(paramarg0: Class<T>): T;
     static latest(): ScopedValueContainer;
     static popAll(): void;
     static run(paramarg0: () => void): void;

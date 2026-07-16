@@ -1,5 +1,4 @@
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class Month extends Enum<Month> {
     static APRIL: Month;
@@ -15,8 +14,8 @@ export class Month extends Enum<Month> {
     static OCTOBER: Month;
     static SEPTEMBER: Month;
     static getEntries(): Month[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): Month;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): Month;
     static values(): Month[];
     private constructor()
     name(): "JANUARY" | "FEBRUARY" | "MARCH" | "APRIL" | "MAY" | "JUNE" | "JULY" | "AUGUST" | "SEPTEMBER" | "OCTOBER" | "NOVEMBER" | "DECEMBER";

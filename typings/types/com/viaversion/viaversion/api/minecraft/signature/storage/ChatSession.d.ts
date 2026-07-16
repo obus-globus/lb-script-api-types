@@ -15,5 +15,5 @@ export class ChatSession extends Object implements StorableObject {
     getProfileKey(): ProfileKey;
     getUuid(): UUID;
     onRemove(): void;
-    sign(arg0: (param0: (param0: Object | null) => void) => void): number[];
+    sign(arg0: (param0: (param0: number[]) => void) => void): number[];
 }

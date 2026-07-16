@@ -16,7 +16,7 @@ export abstract class EnchantmentsPredicate extends Object implements SingleComp
     static CODEC: Codec<Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
     static SINGLE_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentPredicate$Single<any>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Map<DataComponentPredicate$Type<any>, DataComponentPredicate>>;
-    static codec(paramconstructor: (param0: EnchantmentPredicate[]) => EnchantmentsPredicate | null): Codec<EnchantmentsPredicate>;
+    static codec<T extends EnchantmentsPredicate>(paramconstructor: (param0: EnchantmentPredicate[]) => T): Codec<T>;
     static enchantments(parampredicates: EnchantmentPredicate[]): EnchantmentsPredicate$Enchantments;
     static storedEnchantments(parampredicates: EnchantmentPredicate[]): EnchantmentsPredicate$StoredEnchantments;
     constructor(enchantments: EnchantmentPredicate[])

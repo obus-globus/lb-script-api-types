@@ -6,7 +6,6 @@ import type { TemporalField } from '../../../java/time/temporal/TemporalField.d.
 import type { TemporalUnit } from '../../../java/time/temporal/TemporalUnit.d.ts'
 import type { ValueRange } from '../../../java/time/temporal/ValueRange.d.ts'
 import type { Locale } from '../../../java/util/Locale.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class ChronoField extends Enum<ChronoField> implements TemporalField {
     static ALIGNED_DAY_OF_WEEK_IN_MONTH: ChronoField;
@@ -39,7 +38,7 @@ export class ChronoField extends Enum<ChronoField> implements TemporalField {
     static SECOND_OF_MINUTE: ChronoField;
     static YEAR: ChronoField;
     static YEAR_OF_ERA: ChronoField;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ChronoField;
     static values(): ChronoField[];
     private constructor(arg2: string, arg3: TemporalUnit, arg4: TemporalUnit, arg5: ValueRange)

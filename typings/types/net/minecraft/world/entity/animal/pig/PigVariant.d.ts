@@ -13,6 +13,7 @@ import type { PigVariant$ModelType } from '../../../../../../net/minecraft/world
 import type { ModelAndTexture } from '../../../../../../net/minecraft/world/entity/variant/ModelAndTexture.d.ts'
 import type { PriorityProvider } from '../../../../../../net/minecraft/world/entity/variant/PriorityProvider.d.ts'
 import type { PriorityProvider$Selector } from '../../../../../../net/minecraft/world/entity/variant/PriorityProvider$Selector.d.ts'
+import type { PriorityProvider$SelectorCondition } from '../../../../../../net/minecraft/world/entity/variant/PriorityProvider$SelectorCondition.d.ts'
 import type { SpawnCondition } from '../../../../../../net/minecraft/world/entity/variant/SpawnCondition.d.ts'
 import type { SpawnContext } from '../../../../../../net/minecraft/world/entity/variant/SpawnContext.d.ts'
 import type { SpawnPrioritySelectors } from '../../../../../../net/minecraft/world/entity/variant/SpawnPrioritySelectors.d.ts'
@@ -21,10 +22,10 @@ export class PigVariant extends Record implements PriorityProvider<SpawnContext,
     static DIRECT_CODEC: Codec<PigVariant>;
     static NETWORK_CODEC: Codec<PigVariant>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<PigVariant>>;
-    static alwaysTrue(parampriority: number): PriorityProvider$Selector<Object, any>[];
-    static pick(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramrandomSource: RandomSource, paramcontext: Object | null): Optional<Object>;
-    static select(paramentries: Stream<Object>, paramextractor: (param0: Object | null) => PriorityProvider<Object, any>, paramcontext: Object | null): Stream<Object>;
-    static single(paramcheck: Object | null, parampriority: number): PriorityProvider$Selector<Object, any>[];
+    static alwaysTrue<Context extends unknown, Condition extends PriorityProvider$SelectorCondition<Context>>(parampriority: number): PriorityProvider$Selector<Context, Condition>[];
+    static pick<C extends unknown, T extends unknown>(paramentries: Stream<T>, paramextractor: (param0: T) => PriorityProvider<C, any>, paramrandomSource: RandomSource, paramcontext: C): Optional<T>;
+    static select<C extends unknown, T extends unknown>(paramentries: Stream<T>, paramextractor: (param0: T) => PriorityProvider<C, any>, paramcontext: C): Stream<T>;
+    static single<Context extends unknown, Condition extends PriorityProvider$SelectorCondition<Context>>(paramcheck: Condition, parampriority: number): PriorityProvider$Selector<Context, Condition>[];
     constructor(modelAndTexture: ModelAndTexture<PigVariant$ModelType>, babyTexture: ClientAsset$ResourceTexture, spawnConditions: SpawnPrioritySelectors)
     // private babyTexture: ClientAsset$ResourceTexture;
     // private modelAndTexture: ModelAndTexture<PigVariant$ModelType>;

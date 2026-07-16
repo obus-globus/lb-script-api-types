@@ -42,7 +42,6 @@ export class AnchoredHotbarSwapController extends Object implements EventListene
      */
     clearRequestedSwap(): void;
     parent(): EventListener | null;
-    parent(): EventListener;
     /**
      * Request swapping {@link sourceSlot} into the anchored hotbar slot on next inventory scheduling pass.
      *

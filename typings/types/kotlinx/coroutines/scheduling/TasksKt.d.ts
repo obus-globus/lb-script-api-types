@@ -11,6 +11,6 @@ export class TasksKt extends Object {
     static NonBlockingContext: boolean;
     static WORK_STEALING_TIME_RESOLUTION_NS: number;
     static schedulerTimeSource: SchedulerTimeSource;
-    static asTask(paramarg0: () => void, paramarg1: number, paramarg2: boolean): Task;
+    static asTask(self: () => void, submissionTime: number, taskContext: boolean): Task;
     static isBlocking(paramarg0: Task): boolean;
 }

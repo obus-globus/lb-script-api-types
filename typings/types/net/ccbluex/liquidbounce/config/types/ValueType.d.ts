@@ -44,8 +44,8 @@ export class ValueType extends Enum<ValueType> {
     static VECTOR3_D: ValueType;
     static VECTOR3_I: ValueType;
     static getEntries(): ValueType[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ValueType;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ValueType;
     static values(): ValueType[];
     private constructor(deserializer: HumanInputDeserializer$StringDeserializer<Object> | null, completer: AutoCompletionProvider)
     readonly completer: AutoCompletionProvider;

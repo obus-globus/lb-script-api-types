@@ -19,8 +19,8 @@ export class ServerConfigurationNetworking extends Object {
     static getSender(paramarg0: ServerConfigurationPacketListenerImpl): PacketSender;
     static getServer(paramarg0: ServerConfigurationPacketListenerImpl): MinecraftServer;
     static isReconfiguring(paramarg0: ServerConfigurationPacketListenerImpl): boolean;
-    static registerGlobalReceiver(paramarg0: CustomPacketPayload$Type<CustomPacketPayload>, paramarg1: (param0: CustomPacketPayload | null, param1: ServerConfigurationNetworking$Context) => void): boolean;
-    static registerReceiver(paramarg0: ServerConfigurationPacketListenerImpl, paramarg1: CustomPacketPayload$Type<CustomPacketPayload>, paramarg2: (param0: CustomPacketPayload | null, param1: ServerConfigurationNetworking$Context) => void): boolean;
+    static registerGlobalReceiver<T extends CustomPacketPayload>(paramarg0: CustomPacketPayload$Type<T>, paramarg1: (param0: T, param1: ServerConfigurationNetworking$Context) => void): boolean;
+    static registerReceiver<T extends CustomPacketPayload>(paramarg0: ServerConfigurationPacketListenerImpl, paramarg1: CustomPacketPayload$Type<T>, paramarg2: (param0: T, param1: ServerConfigurationNetworking$Context) => void): boolean;
     static send(paramarg0: ServerConfigurationPacketListenerImpl, paramarg1: CustomPacketPayload): void;
     static unregisterGlobalReceiver(paramarg0: Identifier): (param0: Object, param1: ServerConfigurationNetworking$Context) => void;
     static unregisterReceiver(paramarg0: ServerConfigurationPacketListenerImpl, paramarg1: Identifier): (param0: Object, param1: ServerConfigurationNetworking$Context) => void;

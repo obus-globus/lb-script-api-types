@@ -14,9 +14,9 @@ export class SpvcErrorCallback$Container extends SpvcErrorCallback {
     static create(paramarg0: (param0: number, param1: number) => void): SpvcErrorCallback;
     static createSafe(paramarg0: number): SpvcErrorCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
     static getError(paramarg0: number): string;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor(arg0: number, arg1: (param0: number, param1: number) => void)
     // private delegate: (param0: number, param1: number) => void;
     invoke(arg0: number, arg1: number): void;

@@ -20,27 +20,27 @@ import type { TimeZone } from '../../kotlinx/datetime/TimeZone.d.ts'
 import type { UtcOffset } from '../../kotlinx/datetime/UtcOffset.d.ts'
 import type { YearMonth as YearMonth_2 } from '../../kotlinx/datetime/YearMonth.d.ts'
 export class ConvertersKt extends Object {
-    static toJavaDayOfWeek(paramarg0: DayOfWeek_2): DayOfWeek;
-    static toJavaLocalDate(paramarg0: LocalDate_2): LocalDate;
-    static toJavaLocalDate(paramarg0: LocalIsoWeekDate): LocalDate;
-    static toJavaLocalDateTime(paramarg0: LocalDateTime_2): LocalDateTime;
-    static toJavaLocalTime(paramarg0: LocalTime_2): LocalTime;
-    static toJavaMonth(paramarg0: Month_2): Month;
-    static toJavaPeriod(paramarg0: DatePeriod): Period;
-    static toJavaYearMonth(paramarg0: YearMonth_2): YearMonth;
-    static toJavaZoneId(paramarg0: TimeZone): ZoneId;
-    static toJavaZoneOffset(paramarg0: FixedOffsetTimeZone): ZoneOffset;
-    static toJavaZoneOffset(paramarg0: UtcOffset): ZoneOffset;
-    static toKotlinDatePeriod(paramarg0: Period): DatePeriod;
-    static toKotlinDayOfWeek(paramarg0: DayOfWeek): DayOfWeek_2;
-    static toKotlinFixedOffsetTimeZone(paramarg0: ZoneOffset): FixedOffsetTimeZone;
-    static toKotlinLocalDate(paramarg0: LocalDate): LocalDate_2;
-    static toKotlinLocalDateTime(paramarg0: LocalDateTime): LocalDateTime_2;
-    static toKotlinLocalIsoWeekDate(paramarg0: LocalDate): LocalIsoWeekDate;
-    static toKotlinLocalTime(paramarg0: LocalTime): LocalTime_2;
-    static toKotlinMonth(paramarg0: Month): Month_2;
-    static toKotlinTimeZone(paramarg0: ZoneId): TimeZone;
-    static toKotlinUtcOffset(paramarg0: ZoneOffset): UtcOffset;
-    static toKotlinYearMonth(paramarg0: YearMonth): YearMonth_2;
-    static toKotlinZoneOffset(paramarg0: ZoneOffset): FixedOffsetTimeZone;
+    static toJavaDayOfWeek(self: DayOfWeek_2): DayOfWeek;
+    static toJavaLocalDate(self: LocalDate_2): LocalDate;
+    static toJavaLocalDate(self: LocalIsoWeekDate): LocalDate;
+    static toJavaLocalDateTime(self: LocalDateTime_2): LocalDateTime;
+    static toJavaLocalTime(self: LocalTime_2): LocalTime;
+    static toJavaMonth(self: Month_2): Month;
+    static toJavaPeriod(self: DatePeriod): Period;
+    static toJavaYearMonth(self: YearMonth_2): YearMonth;
+    static toJavaZoneId(self: TimeZone): ZoneId;
+    static toJavaZoneOffset(self: FixedOffsetTimeZone): ZoneOffset;
+    static toJavaZoneOffset(self: UtcOffset): ZoneOffset;
+    static toKotlinDatePeriod(self: Period): DatePeriod;
+    static toKotlinDayOfWeek(self: DayOfWeek): DayOfWeek_2;
+    static toKotlinFixedOffsetTimeZone(self: ZoneOffset): FixedOffsetTimeZone;
+    static toKotlinLocalDate(self: LocalDate): LocalDate_2;
+    static toKotlinLocalDateTime(self: LocalDateTime): LocalDateTime_2;
+    static toKotlinLocalIsoWeekDate(self: LocalDate): LocalIsoWeekDate;
+    static toKotlinLocalTime(self: LocalTime): LocalTime_2;
+    static toKotlinMonth(self: Month): Month_2;
+    static toKotlinTimeZone(self: ZoneId): TimeZone;
+    static toKotlinUtcOffset(self: ZoneOffset): UtcOffset;
+    static toKotlinYearMonth(self: YearMonth): YearMonth_2;
+    static toKotlinZoneOffset(self: ZoneOffset): FixedOffsetTimeZone;
 }

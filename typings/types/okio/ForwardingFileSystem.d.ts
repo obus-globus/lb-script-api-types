@@ -12,7 +12,7 @@ export abstract class ForwardingFileSystem extends FileSystem_2 {
     static RESOURCES: FileSystem_2;
     static SYSTEM: FileSystem_2;
     static SYSTEM_TEMPORARY_DIRECTORY: Path;
-    static get(paramarg0: FileSystem): FileSystem_2;
+    static get(self: FileSystem): FileSystem_2;
     constructor(delegate: FileSystem_2)
     // private delegate: FileSystem_2;
     /*not mapped: */ delegate(): FileSystem_2;

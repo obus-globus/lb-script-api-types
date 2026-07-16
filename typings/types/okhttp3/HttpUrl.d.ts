@@ -5,11 +5,11 @@ import type { HttpUrl$Builder } from '../okhttp3/HttpUrl$Builder.d.ts'
 import type { HttpUrl$Companion } from '../okhttp3/HttpUrl$Companion.d.ts'
 export class HttpUrl extends Object {
     static Companion: HttpUrl$Companion;
-    static defaultPort(paramarg0: string): number;
-    static get(paramarg0: string): HttpUrl;
-    static get(paramarg0: URI): HttpUrl;
-    static get(paramarg0: URL): HttpUrl;
-    static parse(paramarg0: string): HttpUrl;
+    static defaultPort(scheme: string): number;
+    static get(self: string): HttpUrl;
+    static get(self: URI): HttpUrl | null;
+    static get(self: URL): HttpUrl | null;
+    static parse(self: string): HttpUrl | null;
     private constructor(scheme: string, username: string, password: string, host: string, port: number, pathSegments: string[], queryNamesAndValues: (string | null)[] | null, fragment: string | null, url: string)
     encodedFragment(): string | null;
     encodedPassword(): string;

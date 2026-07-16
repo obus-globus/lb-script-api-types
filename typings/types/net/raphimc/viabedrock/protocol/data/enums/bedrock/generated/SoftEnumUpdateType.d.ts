@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SoftEnumUpdateType extends Enum<SoftEnumUpdateType> {
     static Add: SoftEnumUpdateType;
@@ -9,7 +8,7 @@ export class SoftEnumUpdateType extends Enum<SoftEnumUpdateType> {
     static getByName(paramarg0: string, paramarg1: SoftEnumUpdateType): SoftEnumUpdateType;
     static getByValue(paramarg0: number): SoftEnumUpdateType;
     static getByValue(paramarg0: number, paramarg1: SoftEnumUpdateType): SoftEnumUpdateType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SoftEnumUpdateType;
     static values(): SoftEnumUpdateType[];
     private constructor(arg2: number)

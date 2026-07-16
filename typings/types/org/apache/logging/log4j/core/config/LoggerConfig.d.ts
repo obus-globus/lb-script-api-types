@@ -1,6 +1,5 @@
 import type { StackTraceElement } from '../../../../../../java/lang/StackTraceElement.d.ts'
 import type { TimeUnit } from '../../../../../../java/util/concurrent/TimeUnit.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.ts'
 import type { Marker } from '../../../../../../org/apache/logging/log4j/Marker.d.ts'
@@ -11,6 +10,7 @@ import type { AppenderControl } from '../../../../../../org/apache/logging/log4j
 import type { AppenderControlArraySet } from '../../../../../../org/apache/logging/log4j/core/config/AppenderControlArraySet.d.ts'
 import type { AppenderRef } from '../../../../../../org/apache/logging/log4j/core/config/AppenderRef.d.ts'
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
+import type { LoggerConfig$Builder } from '../../../../../../org/apache/logging/log4j/core/config/LoggerConfig$Builder.d.ts'
 import type { LoggerConfig$LoggerConfigPredicate } from '../../../../../../org/apache/logging/log4j/core/config/LoggerConfig$LoggerConfigPredicate.d.ts'
 import type { Property } from '../../../../../../org/apache/logging/log4j/core/config/Property.d.ts'
 import type { ReliabilityStrategy } from '../../../../../../org/apache/logging/log4j/core/config/ReliabilityStrategy.d.ts'
@@ -24,7 +24,7 @@ export class LoggerConfig extends AbstractFilterable implements LocationAware {
     static ROOT: string;
     static createLogger(paramadditivity: boolean, paramlevel: Level, paramloggerName: string, paramincludeLocation: string, paramrefs: AppenderRef[], paramproperties: Property[], paramconfig: Configuration, paramfilter: Filter): LoggerConfig;
     static createLogger(paramadditivity: string, paramlevel: Level, paramloggerName: string, paramincludeLocation: string, paramrefs: AppenderRef[], paramproperties: Property[], paramconfig: Configuration, paramfilter: Filter): LoggerConfig;
-    static newBuilder(): Object | null;
+    static newBuilder<B extends LoggerConfig$Builder<B>>(): B;
     constructor()
     constructor(name: string, appenders: AppenderRef[], filter: Filter, level: Level, additive: boolean, properties: Property[], config: Configuration, includeLocation: boolean)
     constructor(name: string, level: Level, additive: boolean)

@@ -10,6 +10,6 @@ export class ThrowableUtil extends Object {
     static haveSuppressed(): boolean;
     static interruptAndAttachAsyncStackTrace(paramarg0: Thread, paramarg1: Throwable): void;
     static stackTraceToString(paramarg0: Throwable): string;
-    static unknownStackTrace(paramarg0: Throwable | null, paramarg1: Class<Object>, paramarg2: string): Throwable | null;
+    static unknownStackTrace<T extends Throwable>(paramarg0: T, paramarg1: Class<Object>, paramarg2: string): T;
     private constructor()
 }

@@ -9,7 +9,7 @@ import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerL
 export class TestEnvironmentDefinition$Weather extends Record implements TestEnvironmentDefinition<TestEnvironmentDefinition$Weather$Type> {
     static CODEC: MapCodec<TestEnvironmentDefinition$Weather>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
-    static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;
+    static activate<T extends unknown>(paramenvironment: TestEnvironmentDefinition<T>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<T>;
     static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     constructor(weather: TestEnvironmentDefinition$Weather$Type)
     // private weather: TestEnvironmentDefinition$Weather$Type;

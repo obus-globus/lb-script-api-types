@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ContainerID extends Enum<ContainerID> {
     static CONTAINER_ID_ARMOR: ContainerID;
@@ -15,7 +14,7 @@ export class ContainerID extends Enum<ContainerID> {
     static getByName(paramarg0: string, paramarg1: ContainerID): ContainerID;
     static getByValue(paramarg0: number): ContainerID;
     static getByValue(paramarg0: number, paramarg1: ContainerID): ContainerID;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ContainerID;
     static values(): ContainerID[];
     private constructor(arg2: number)

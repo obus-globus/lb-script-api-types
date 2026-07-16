@@ -2,16 +2,16 @@ import type { Function } from '../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class Optionull extends Object {
-    static first(paramcollection: (Object | null)[]): Object | null;
-    static firstOrDefault(paramcollection: (Object | null)[], paramdefaultValue: Object | null): Object | null;
-    static firstOrElse(paramcollection: (Object | null)[], paramelseSupplier: () => Object | null): Object | null;
-    static isNullOrEmpty(paramt: (Object | null)[]): boolean;
+    static first<T extends unknown>(paramcollection: T[]): T;
+    static firstOrDefault<T extends unknown>(paramcollection: T[], paramdefaultValue: T): T;
+    static firstOrElse<T extends unknown>(paramcollection: T[], paramelseSupplier: () => T): T;
+    static isNullOrEmpty<T extends unknown>(paramt: T[]): boolean;
     static isNullOrEmpty(paramt: boolean[]): boolean;
     static isNullOrEmpty(paramt: number[]): boolean;
     static isNullOrEmpty(paramt: string[]): boolean;
-    static map(paramt: Object | null, parammap: (param0: Object | null) => Object | null): Object | null;
-    static mapOrDefault(paramt: Object | null, parammap: (param0: Object | null) => Object | null, paramdefaultValue: Object | null): Object | null;
-    static mapOrElse(paramt: Object | null, parammap: (param0: Object | null) => Object | null, paramelseSupplier: () => Object | null): Object | null;
-    static orElse(paramt: Object | null, paramdefaultValue: Object | null): Object | null;
+    static map<T extends unknown, R extends unknown>(paramt: T, parammap: (param0: T) => R): R;
+    static mapOrDefault<T extends unknown, R extends unknown>(paramt: T, parammap: (param0: T) => R, paramdefaultValue: R): R;
+    static mapOrElse<T extends unknown, R extends unknown>(paramt: T, parammap: (param0: T) => R, paramelseSupplier: () => R): R;
+    static orElse<T extends unknown>(paramt: T, paramdefaultValue: T): T;
     constructor()
 }

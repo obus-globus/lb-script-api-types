@@ -5,5 +5,5 @@ import type { DecodeSequenceMode } from '../../../../kotlinx/serialization/json/
 import type { Json } from '../../../../kotlinx/serialization/json/Json.d.ts'
 import type { ReaderJsonLexer } from '../../../../kotlinx/serialization/json/internal/ReaderJsonLexer.d.ts'
 export class JsonIteratorKt extends Object {
-    static JsonIterator(paramarg0: DecodeSequenceMode, paramarg1: Json, paramarg2: ReaderJsonLexer, paramarg3: DeserializationStrategy<Object>): Iterator<Object>;
+    static JsonIterator<T extends unknown>(mode: DecodeSequenceMode, json: Json, lexer: ReaderJsonLexer, deserializer: DeserializationStrategy<T>): Iterator<T>;
 }

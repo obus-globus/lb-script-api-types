@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class RelativeDateTimeFormatter$RelativeDateTimeUnit extends Enum<RelativeDateTimeFormatter$RelativeDateTimeUnit> {
     static DAY: RelativeDateTimeFormatter$RelativeDateTimeUnit;
@@ -17,7 +16,7 @@ export class RelativeDateTimeFormatter$RelativeDateTimeUnit extends Enum<Relativ
     static WEDNESDAY: RelativeDateTimeFormatter$RelativeDateTimeUnit;
     static WEEK: RelativeDateTimeFormatter$RelativeDateTimeUnit;
     static YEAR: RelativeDateTimeFormatter$RelativeDateTimeUnit;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RelativeDateTimeFormatter$RelativeDateTimeUnit;
     static values(): RelativeDateTimeFormatter$RelativeDateTimeUnit[];
     private constructor()

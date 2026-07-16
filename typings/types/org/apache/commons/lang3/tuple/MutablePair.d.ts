@@ -3,15 +3,15 @@ import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { Pair } from '../../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
 export class MutablePair<L extends unknown, R extends unknown> extends Pair<L, R> {
     static EMPTY_ARRAY: MutablePair<Object, Object>[];
-    static emptyArray(): MutablePair<Object, Object>[];
-    static emptyArray(): Pair<Object, Object>[];
-    static of(paramarg0: Object | null, paramarg1: Object | null): MutablePair<Object, Object>;
-    static of(paramarg0: Map$Entry<Object, Object>): MutablePair<Object, Object>;
-    static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
-    static of(paramarg0: Map$Entry<Object, Object>): Pair<Object, Object>;
-    static ofNonNull(paramarg0: Object | null, paramarg1: Object | null): MutablePair<Object, Object>;
-    static ofNonNull(paramarg0: Map$Entry<Object, Object>): MutablePair<Object, Object>;
-    static ofNonNull(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
+    static emptyArray<L extends unknown, R extends unknown>(): MutablePair<L, R>[];
+    static emptyArray<L extends unknown, R extends unknown>(): Pair<L, R>[];
+    static of<L extends unknown, R extends unknown>(paramarg0: L, paramarg1: R): MutablePair<L, R>;
+    static of<L extends unknown, R extends unknown>(paramarg0: Map$Entry<L, R>): MutablePair<L, R>;
+    static of<L extends unknown, R extends unknown>(paramarg0: L, paramarg1: R): Pair<L, R>;
+    static of<L extends unknown, R extends unknown>(paramarg0: Map$Entry<L, R>): Pair<L, R>;
+    static ofNonNull<L extends unknown, R extends unknown>(paramarg0: L, paramarg1: R): MutablePair<L, R>;
+    static ofNonNull<L extends unknown, R extends unknown>(paramarg0: Map$Entry<L, R>): MutablePair<L, R>;
+    static ofNonNull<L extends unknown, R extends unknown>(paramarg0: L, paramarg1: R): Pair<L, R>;
     constructor()
     constructor(arg0: L, arg1: R)
     left: L;

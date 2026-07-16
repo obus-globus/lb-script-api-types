@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class BossBarOverlay extends Enum<BossBarOverlay> {
     static NOTCHED_10: BossBarOverlay;
@@ -11,7 +10,7 @@ export class BossBarOverlay extends Enum<BossBarOverlay> {
     static getByName(paramarg0: string, paramarg1: BossBarOverlay): BossBarOverlay;
     static getByValue(paramarg0: number): BossBarOverlay;
     static getByValue(paramarg0: number, paramarg1: BossBarOverlay): BossBarOverlay;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BossBarOverlay;
     static values(): BossBarOverlay[];
     private constructor(arg2: number)

@@ -7,7 +7,7 @@ export class CompressedNbt$MissingSeverity extends Enum<CompressedNbt$MissingSev
     static IMPORTANT: CompressedNbt$MissingSeverity;
     static MINOR: CompressedNbt$MissingSeverity;
     static NEUTRAL: CompressedNbt$MissingSeverity;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CompressedNbt$MissingSeverity;
     static values(): CompressedNbt$MissingSeverity[];
     private constructor(logFunction: (param0: string, param1: Object) => void)

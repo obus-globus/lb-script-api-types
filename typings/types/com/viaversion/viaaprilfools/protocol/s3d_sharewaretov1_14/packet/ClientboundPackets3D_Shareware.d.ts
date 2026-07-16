@@ -2,7 +2,6 @@ import type { ClientboundPacketType } from '../../../../../../com/viaversion/via
 import type { Direction } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ClientboundPackets3D_Shareware extends Enum<ClientboundPackets3D_Shareware> implements ClientboundPacketType {
     static ADD_ENTITY: ClientboundPackets3D_Shareware;
@@ -96,7 +95,7 @@ export class ClientboundPackets3D_Shareware extends Enum<ClientboundPackets3D_Sh
     static UPDATE_MOB_EFFECT: ClientboundPackets3D_Shareware;
     static UPDATE_RECIPES: ClientboundPackets3D_Shareware;
     static UPDATE_TAGS: ClientboundPackets3D_Shareware;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ClientboundPackets3D_Shareware;
     static values(): ClientboundPackets3D_Shareware[];
     private constructor()

@@ -7,7 +7,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class MapMakerInternalMap$Strength extends Enum<MapMakerInternalMap$Strength> {
     static STRONG: MapMakerInternalMap$Strength;
     static WEAK: MapMakerInternalMap$Strength;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): MapMakerInternalMap$Strength;
     static values(): MapMakerInternalMap$Strength[];
     constructor(arg2: MapMakerInternalMap$WeakValueReference<Object, Object, MapMakerInternalMap$DummyInternalEntry>)

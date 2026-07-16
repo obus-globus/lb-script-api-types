@@ -9,7 +9,7 @@ import type { FailableConsumer } from '../../../../../org/apache/commons/lang3/f
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
 export class BackgroundInitializer<T extends unknown> extends AbstractConcurrentInitializer<T, Exception> {
     static NUL: () => Object | null;
-    static builder(): BackgroundInitializer$Builder<BackgroundInitializer<Object>, Object>;
+    static builder<T extends unknown>(): BackgroundInitializer$Builder<BackgroundInitializer<T>, T>;
     constructor()
     constructor(arg0: ExecutorService)
     constructor(arg0: () => Object, arg1: (param0: Object) => void, arg2: ExecutorService, arg3: any)

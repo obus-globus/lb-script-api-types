@@ -1,10 +1,9 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class TimeZoneGenericNames$Pattern extends Enum<TimeZoneGenericNames$Pattern> {
     static FALLBACK_FORMAT: TimeZoneGenericNames$Pattern;
     static REGION_FORMAT: TimeZoneGenericNames$Pattern;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TimeZoneGenericNames$Pattern;
     static values(): TimeZoneGenericNames$Pattern[];
     private constructor(arg2: string, arg3: string)

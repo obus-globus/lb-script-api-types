@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class Event$ID extends Enum<Event$ID> {
     static Alias: Event$ID;
@@ -13,7 +12,7 @@ export class Event$ID extends Enum<Event$ID> {
     static SequenceStart: Event$ID;
     static StreamEnd: Event$ID;
     static StreamStart: Event$ID;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Event$ID;
     static values(): Event$ID[];
     private constructor()

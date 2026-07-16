@@ -7,6 +7,6 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { TagKey } from '../../../../../net/minecraft/tags/TagKey.d.ts'
 export class TagAliasGenerator extends Object {
     static getDirectory(paramarg0: ResourceKey<Object[]>): string;
-    static writeTagAlias(paramarg0: CachedOutput, paramarg1: PackOutput$PathProvider, paramarg2: ResourceKey<(Object | null)[]>, paramarg3: Identifier, paramarg4: TagKey<Object>[]): CompletableFuture<Object>;
+    static writeTagAlias<T extends unknown>(paramarg0: CachedOutput, paramarg1: PackOutput$PathProvider, paramarg2: ResourceKey<T[]>, paramarg3: Identifier, paramarg4: TagKey<T>[]): CompletableFuture<Object>;
     constructor()
 }

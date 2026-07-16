@@ -4,26 +4,26 @@ import type { JsonObject } from '../../../../../com/google/gson/JsonObject.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../java/lang/Number.d.ts'
 export class GsonExtensionKt extends Object {
-    static array(paramarg0: JsonElement[], paramarg1: number): JsonElement[];
-    static array(paramarg0: JsonObject, paramarg1: string): JsonElement[];
-    static boolean(paramarg0: JsonElement[], paramarg1: number): boolean;
-    static boolean(paramarg0: JsonObject, paramarg1: string): boolean;
-    static decode(paramarg0: string): Object | null;
-    static double(paramarg0: JsonElement[], paramarg1: number): number;
-    static double(paramarg0: JsonObject, paramarg1: string): number;
+    static array(self: JsonElement[], index: number): JsonElement[] | null;
+    static array(self: JsonObject, key: string): JsonElement[] | null;
+    static boolean(self: JsonElement[], index: number): boolean | null;
+    static boolean(self: JsonObject, key: string): boolean | null;
+    static decode<T extends unknown>(stringJson: string): T;
+    static double(self: JsonElement[], index: number): number | null;
+    static double(self: JsonObject, key: string): number | null;
     static getGSON(): Gson;
     static getGSON_PRETTY(): Gson;
-    static int(paramarg0: JsonElement[], paramarg1: number): number;
-    static int(paramarg0: JsonObject, paramarg1: string): number;
-    static long(paramarg0: JsonElement[], paramarg1: number): number;
-    static long(paramarg0: JsonObject, paramarg1: string): number;
-    static obj(paramarg0: JsonElement[], paramarg1: number): JsonObject;
-    static obj(paramarg0: JsonObject, paramarg1: string): JsonObject;
-    static set(paramarg0: JsonObject, paramarg1: string, paramarg2: boolean): void;
-    static set(paramarg0: JsonObject, paramarg1: string, paramarg2: string): void;
-    static set(paramarg0: JsonObject, paramarg1: string, paramarg2: JsonElement): void;
-    static set(paramarg0: JsonObject, paramarg1: string, paramarg2: Number): void;
-    static string(paramarg0: JsonElement[], paramarg1: number): string;
-    static string(paramarg0: JsonObject, paramarg1: string): string;
-    static toJsonString(paramarg0: JsonElement, paramarg1: boolean): string;
+    static int(self: JsonElement[], index: number): number | null;
+    static int(self: JsonObject, key: string): number | null;
+    static long(self: JsonElement[], index: number): number | null;
+    static long(self: JsonObject, key: string): number | null;
+    static obj(self: JsonElement[], index: number): JsonObject | null;
+    static obj(self: JsonObject, key: string): JsonObject | null;
+    static set(self: JsonObject, key: string, value: boolean): void;
+    static set(self: JsonObject, key: string, value: string): void;
+    static set(self: JsonObject, key: string, value: JsonElement): void;
+    static set(self: JsonObject, key: string, value: Number): void;
+    static string(self: JsonElement[], index: number): string | null;
+    static string(self: JsonObject, key: string): string | null;
+    static toJsonString(self: JsonElement, prettyPrint: boolean): string;
 }

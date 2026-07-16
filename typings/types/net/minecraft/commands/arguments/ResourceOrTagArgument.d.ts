@@ -11,8 +11,8 @@ import type { ResourceOrTagArgument$Result } from '../../../../net/minecraft/com
 import type { HolderLookup } from '../../../../net/minecraft/core/HolderLookup.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 export class ResourceOrTagArgument<T extends unknown> extends Object implements ArgumentType<ResourceOrTagArgument$Result<T>> {
-    static getResourceOrTag(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<(Object | null)[]>): ResourceOrTagArgument$Result<Object>;
-    static resourceOrTag(paramcontext: CommandBuildContext, paramkey: ResourceKey<(Object | null)[]>): ResourceOrTagArgument<Object>;
+    static getResourceOrTag<T extends unknown>(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<T[]>): ResourceOrTagArgument$Result<T>;
+    static resourceOrTag<T extends unknown>(paramcontext: CommandBuildContext, paramkey: ResourceKey<T[]>): ResourceOrTagArgument<T>;
     constructor(context: CommandBuildContext, registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
     // private registryLookup: HolderLookup<T>;

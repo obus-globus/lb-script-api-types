@@ -8,10 +8,10 @@ export abstract class ElementNode<TNode extends unknown> extends Object {
     static dynamicInsnList(paramarg0: AbstractInsnNode[]): ElementNode<AbstractInsnNode>[];
     static fieldList(paramarg0: ClassNode): ElementNode<FieldNode>[];
     static insnList(paramarg0: AbstractInsnNode[]): ElementNode<AbstractInsnNode>[];
-    static listOf(paramarg0: ClassNode, paramarg1: (Object | null)[]): ElementNode<Object>[];
+    static listOf<TNode extends unknown>(paramarg0: ClassNode, paramarg1: TNode[]): ElementNode<TNode>[];
     static methodList(paramarg0: ClassNode): ElementNode<MethodNode>[];
-    static of(paramarg0: AbstractInsnNode | null): ElementNode<AbstractInsnNode>;
-    static of(paramarg0: ClassNode, paramarg1: Object | null): ElementNode<Object>;
+    static of<TNode extends AbstractInsnNode>(paramarg0: TNode): ElementNode<TNode>;
+    static of<TNode extends unknown>(paramarg0: ClassNode, paramarg1: TNode): ElementNode<TNode>;
     static of(paramarg0: ClassNode, paramarg1: FieldNode): ElementNode<FieldNode>;
     static of(paramarg0: ClassNode, paramarg1: MethodNode): ElementNode<MethodNode>;
     constructor()

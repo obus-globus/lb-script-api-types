@@ -6,5 +6,5 @@ import type { IOFunction } from '../../../../../org/apache/commons/io/function/I
 export interface IOBinaryOperator<T extends unknown> extends Object, IOBiFunction<T, T, T> {
     andThen<V extends unknown>(arg0: (param0: T) => V): (param0: T, param1: T) => V;
     asBiFunction(): (param0: T, param1: T) => T;
-    asBinaryOperator(): (param0: T, param1: Object | null) => Object | null;
+    asBinaryOperator(): (param0: T, param1: T) => T;
 }

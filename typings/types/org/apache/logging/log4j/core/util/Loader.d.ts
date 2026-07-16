@@ -15,8 +15,8 @@ export class Loader extends Object {
     static loadClass(paramclassName: string): Class<Object>;
     static loadClass(paramclassName: string, paramloader: ClassLoader): Class<Object>;
     static loadSystemClass(paramclassName: string): Class<Object>;
-    static newCheckedInstanceOf(paramclassName: string, paramclazz: Class<Object>): Object | null;
-    static newCheckedInstanceOfProperty(parampropertyName: string, paramclazz: Class<Object>): Object | null;
-    static newInstanceOf(paramclassName: string): Object | null;
+    static newCheckedInstanceOf<T extends unknown>(paramclassName: string, paramclazz: Class<T>): T;
+    static newCheckedInstanceOfProperty<T extends unknown>(parampropertyName: string, paramclazz: Class<T>): T;
+    static newInstanceOf<T extends unknown>(paramclassName: string): T;
     private constructor()
 }

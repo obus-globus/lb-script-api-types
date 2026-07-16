@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class ExternalDeclaration$ExternalDeclarationType extends Enum<ExternalDeclaration$ExternalDeclarationType> {
     static CUSTOM_DIRECTIVE: ExternalDeclaration$ExternalDeclarationType;
@@ -10,7 +9,7 @@ export class ExternalDeclaration$ExternalDeclarationType extends Enum<ExternalDe
     static INCLUDE_DIRECTIVE: ExternalDeclaration$ExternalDeclarationType;
     static LAYOUT_DEFAULTS: ExternalDeclaration$ExternalDeclarationType;
     static PRAGMA_DIRECTIVE: ExternalDeclaration$ExternalDeclarationType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ExternalDeclaration$ExternalDeclarationType;
     static values(): ExternalDeclaration$ExternalDeclarationType[];
     private constructor()

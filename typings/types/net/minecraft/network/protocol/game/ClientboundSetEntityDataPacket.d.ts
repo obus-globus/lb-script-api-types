@@ -12,7 +12,7 @@ import type { SynchedEntityData$DataValue } from '../../../../../net/minecraft/n
 export class ClientboundSetEntityDataPacket extends Record implements Packet<ClientGamePacketListener> {
     static EOF_MARKER: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetEntityDataPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(id: number, packedItems: SynchedEntityData$DataValue<Object>[])
     // private id: number;
     // private packedItems: SynchedEntityData$DataValue<Object>[];

@@ -9,8 +9,8 @@ import type { GameProfile } from '../../../../../net/ccbluex/liquidbounce/authli
 import type { Session } from '../../../../../net/ccbluex/liquidbounce/authlib/compat/Session.d.ts'
 export class MinecraftAccount extends Object {
     static Companion: MinecraftAccount$Companion;
-    static fromJson(paramarg0: JsonObject): MinecraftAccount;
-    static fromName(paramarg0: string): MinecraftAccount;
+    static fromJson(json: JsonObject): MinecraftAccount;
+    static fromName(name: string): MinecraftAccount;
     protected constructor(type: AccountType)
     bans: { [key: string]: Ban };
     profile: GameProfile | null;

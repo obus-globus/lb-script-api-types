@@ -18,13 +18,13 @@ import type { LootItemCondition } from '../../../../../net/minecraft/world/level
 import type { NumberProvider } from '../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class VillagerTrade extends Object implements Validatable {
     static CODEC: Codec<VillagerTrade>;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
+    static listValidatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T[]) => DataResult<T[]>;
     static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
     static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
+    static validateReference<T extends Validatable>(paramcontext: ValidationContext, paramid: ResourceKey<T>): void;
+    static validatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T) => DataResult<T>;
     constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[])
     constructor(wants: TradeCost, additionalWants: Optional<TradeCost>, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[], doubleTradePriceEnchantments: Holder<Enchantment>[])
     constructor(wants: TradeCost, gives: ItemStackTemplate, maxUses: number, xp: number, reputationDiscount: number, merchantPredicate: Optional<LootItemCondition>, givenItemModifiers: LootItemFunction[])

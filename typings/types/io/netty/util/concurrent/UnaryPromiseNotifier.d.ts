@@ -3,7 +3,7 @@ import type { FutureListener } from '../../../../io/netty/util/concurrent/Future
 import type { Promise } from '../../../../io/netty/util/concurrent/Promise.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class UnaryPromiseNotifier<T extends unknown> extends Object implements FutureListener<T> {
-    static cascadeTo(paramarg0: Future<Object>, paramarg1: Promise<Object>): void;
+    static cascadeTo<X extends unknown>(paramarg0: Future<X>, paramarg1: Promise<Object>): void;
     constructor(arg0: Promise<T>)
     // private promise: Promise<T>;
     operationComplete(arg0: Future<T>): void;

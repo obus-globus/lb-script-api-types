@@ -18,7 +18,7 @@ export class EventListenerScopeKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L74 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:74}
      */
-    static removeEventListenerScope(eventListener: EventListener): void;
+    static removeEventListenerScope(self: EventListener): void;
     /**
      * Wrap the {@link original} interceptor and make it auto-detect
      * the listener's running state at suspension
@@ -26,5 +26,5 @@ export class EventListenerScopeKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListenerScope.kt:83}
      */
-    static wrapContinuationInterceptor(eventListener: EventListener, original: ContinuationInterceptor): ContinuationInterceptor;
+    static wrapContinuationInterceptor(self: EventListener, original: ContinuationInterceptor | null): ContinuationInterceptor;
 }

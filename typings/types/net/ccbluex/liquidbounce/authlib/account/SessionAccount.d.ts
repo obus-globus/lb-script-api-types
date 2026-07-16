@@ -6,8 +6,8 @@ import type { SessionAccount$Companion } from '../../../../../net/ccbluex/liquid
 import type { Session } from '../../../../../net/ccbluex/liquidbounce/authlib/compat/Session.d.ts'
 export class SessionAccount extends MinecraftAccount {
     static Companion: SessionAccount$Companion;
-    static fromJson(paramarg0: JsonObject): MinecraftAccount;
-    static fromName(paramarg0: string): MinecraftAccount;
+    static fromJson(json: JsonObject): MinecraftAccount;
+    static fromName(name: string): MinecraftAccount;
     constructor()
     constructor(session: string)
     // private session: string;

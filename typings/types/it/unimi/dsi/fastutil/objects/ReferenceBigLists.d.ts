@@ -2,12 +2,12 @@ import type { Random } from '../../../../../java/util/Random.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ReferenceBigLists extends Object {
     static EMPTY_BIG_LIST: (Object | null)[];
-    static asBigList(paramarg0: (Object | null)[]): (Object | null)[];
-    static emptyList(): (Object | null)[];
-    static shuffle(paramarg0: (Object | null)[], paramarg1: Random): (Object | null)[];
-    static singleton(paramarg0: Object | null): (Object | null)[];
-    static synchronize(paramarg0: (Object | null)[]): (Object | null)[];
-    static synchronize(paramarg0: (Object | null)[], paramarg1: Object): (Object | null)[];
-    static unmodifiable(paramarg0: (Object | null)[]): (Object | null)[];
+    static asBigList<K extends unknown>(paramarg0: K[]): K[];
+    static emptyList<K extends unknown>(): K[];
+    static shuffle<K extends unknown>(paramarg0: K[], paramarg1: Random): K[];
+    static singleton<K extends unknown>(paramarg0: K): K[];
+    static synchronize<K extends unknown>(paramarg0: K[]): K[];
+    static synchronize<K extends unknown>(paramarg0: K[], paramarg1: Object): K[];
+    static unmodifiable<K extends unknown>(paramarg0: K[]): K[];
     private constructor()
 }

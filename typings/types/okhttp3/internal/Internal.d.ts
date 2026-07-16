@@ -16,16 +16,16 @@ import type { TaskRunner } from '../../okhttp3/internal/concurrent/TaskRunner.d.
 import type { ConnectionListener } from '../../okhttp3/internal/connection/ConnectionListener.d.ts'
 import type { RealConnection } from '../../okhttp3/internal/connection/RealConnection.d.ts'
 export class Internal extends Object {
-    static addHeaderLenient(paramarg0: Headers$Builder, paramarg1: string): Headers$Builder;
-    static addHeaderLenient(paramarg0: Headers$Builder, paramarg1: string, paramarg2: string): Headers$Builder;
-    static applyConnectionSpec(paramarg0: ConnectionSpec, paramarg1: SSLSocket, paramarg2: boolean): void;
-    static buildConnectionPool(paramarg0: ConnectionListener, paramarg1: TaskRunner): ConnectionPool;
-    static cacheGet(paramarg0: Cache, paramarg1: Request): Response;
-    static charsetOrUtf8(paramarg0: MediaType): Charset;
-    static chooseCharset(paramarg0: MediaType): Pair<Charset, MediaType>;
-    static cookieToString(paramarg0: Cookie, paramarg1: boolean): string;
-    static effectiveCipherSuites(paramarg0: ConnectionSpec, paramarg1: string[]): string[];
+    static addHeaderLenient(builder: Headers$Builder, line: string): Headers$Builder;
+    static addHeaderLenient(builder: Headers$Builder, name: string, value: string): Headers$Builder;
+    static applyConnectionSpec(connectionSpec: ConnectionSpec, sslSocket: SSLSocket, isFallback: boolean): void;
+    static buildConnectionPool(connectionListener: ConnectionListener, taskRunner: TaskRunner): ConnectionPool;
+    static cacheGet(cache: Cache, request: Request): Response | null;
+    static charsetOrUtf8(self: MediaType | null): Charset;
+    static chooseCharset(self: MediaType | null): Pair<Charset, MediaType>;
+    static cookieToString(cookie: Cookie, forObsoleteRfc2965: boolean): string;
+    static effectiveCipherSuites(self: ConnectionSpec, socketEnabledCipherSuites: string[]): string[];
     static getConnection(paramarg0: Response): RealConnection;
-    static parseCookie(paramarg0: number, paramarg1: HttpUrl, paramarg2: string): Cookie;
-    static taskRunnerInternal(paramarg0: OkHttpClient$Builder, paramarg1: TaskRunner): OkHttpClient$Builder;
+    static parseCookie(currentTimeMillis: number, url: HttpUrl, setCookie: string): Cookie | null;
+    static taskRunnerInternal(self: OkHttpClient$Builder, taskRunner: TaskRunner): OkHttpClient$Builder;
 }

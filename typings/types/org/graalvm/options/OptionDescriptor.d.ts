@@ -4,7 +4,7 @@ import type { OptionDescriptor$Builder } from '../../../org/graalvm/options/Opti
 import type { OptionKey } from '../../../org/graalvm/options/OptionKey.d.ts'
 import type { OptionStability } from '../../../org/graalvm/options/OptionStability.d.ts'
 export class OptionDescriptor extends Object {
-    static newBuilder(paramkey: OptionKey<Object>, paramname: string): OptionDescriptor$Builder;
+    static newBuilder<T extends unknown>(paramkey: OptionKey<T>, paramname: string): OptionDescriptor$Builder;
     constructor(key: OptionKey<Object>, name: string, help: string, category: OptionCategory, stability: OptionStability, deprecated: boolean, deprecationMessage: string, usageSyntax: string)
     readonly category: OptionCategory;
     readonly deprecated: boolean;

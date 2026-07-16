@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class RemoteFriendListUpdateHandler$State extends Enum<RemoteFriendListUpdateHandler$State> {
     static CONNECTION_ISSUE: RemoteFriendListUpdateHandler$State;
@@ -10,7 +9,7 @@ export class RemoteFriendListUpdateHandler$State extends Enum<RemoteFriendListUp
     static UNAUTHORIZED: RemoteFriendListUpdateHandler$State;
     static UPGRADE_NEEDED: RemoteFriendListUpdateHandler$State;
     static USER_MAY_LACK_ACTIVE_PROFILE: RemoteFriendListUpdateHandler$State;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RemoteFriendListUpdateHandler$State;
     static values(): RemoteFriendListUpdateHandler$State[];
     private constructor()

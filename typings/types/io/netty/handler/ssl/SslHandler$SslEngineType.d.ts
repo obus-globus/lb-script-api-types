@@ -6,13 +6,12 @@ import type { SslHandlerCoalescingBufferQueue } from '../../../../io/netty/handl
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { SSLEngine } from '../../../../javax/net/ssl/SSLEngine.d.ts'
 import type { SSLEngineResult } from '../../../../javax/net/ssl/SSLEngineResult.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class SslHandler$SslEngineType extends Enum<SslHandler$SslEngineType> {
     static CONSCRYPT: SslHandler$SslEngineType;
     static JDK: SslHandler$SslEngineType;
     static TCNATIVE: SslHandler$SslEngineType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SslHandler$SslEngineType;
     static values(): SslHandler$SslEngineType[];
     constructor(arg2: boolean, arg3: ByteToMessageDecoder$Cumulator, arg4: SslHandlerCoalescingBufferQueue)

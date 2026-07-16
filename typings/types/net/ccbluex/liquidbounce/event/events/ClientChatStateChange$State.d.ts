@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 /**
  * Client-chat connection states: CONNECTING, CONNECTED, LOGGING_IN, LOGGED_IN, DISCONNECTED, AUTHENTICATION_FAILED.
@@ -12,8 +11,8 @@ export class ClientChatStateChange$State extends Enum<ClientChatStateChange$Stat
     static LOGGED_IN: ClientChatStateChange$State;
     static LOGGING_IN: ClientChatStateChange$State;
     static getEntries(): ClientChatStateChange$State[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ClientChatStateChange$State;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ClientChatStateChange$State;
     static values(): ClientChatStateChange$State[];
     private constructor()
     name(): "CONNECTING" | "CONNECTED" | "LOGGING_IN" | "LOGGED_IN" | "DISCONNECTED" | "AUTHENTICATION_FAILED";

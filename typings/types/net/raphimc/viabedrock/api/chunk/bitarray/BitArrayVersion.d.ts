@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { BitArray } from '../../../../../../net/raphimc/viabedrock/api/chunk/bitarray/BitArray.d.ts'
 export class BitArrayVersion extends Enum<BitArrayVersion> {
@@ -14,7 +13,7 @@ export class BitArrayVersion extends Enum<BitArrayVersion> {
     static V8: BitArrayVersion;
     static forBitsCeil(paramarg0: number): BitArrayVersion;
     static get(paramarg0: number, paramarg1: boolean): BitArrayVersion;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BitArrayVersion;
     static values(): BitArrayVersion[];
     private constructor(arg2: number, arg3: number, arg4: BitArrayVersion)

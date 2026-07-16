@@ -32,7 +32,7 @@ export class VanillaPackResources extends Object implements PackResources {
     getRootResource(...path: string[]): () => InputStream;
     knownPackInfo(): Optional<KnownPack>;
     listRawPaths(type: PackType, resource: Identifier, output: (param0: Path) => void): void;
-    listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
+    listResources(type: PackType, namespace: string, directory: string, output: (param0: Identifier, param1: () => InputStream) => void): void;
     location(): PackLocationInfo;
     packId(): string;
 }

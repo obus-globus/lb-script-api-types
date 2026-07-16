@@ -12,7 +12,7 @@ export abstract class CompositeEntryBase extends LootPoolEntryContainer {
     static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     static NO_CHILDREN_PROBLEM: ProblemReporter$Problem;
-    static createCodec(paramconstructor: (param0: LootPoolEntryContainer[], param1: LootItemCondition[]) => CompositeEntryBase | null): MapCodec<CompositeEntryBase>;
+    static createCodec<T extends CompositeEntryBase>(paramconstructor: (param0: LootPoolEntryContainer[], param1: LootItemCondition[]) => T): MapCodec<T>;
     constructor(children: LootPoolEntryContainer[], conditions: LootItemCondition[])
     // private children: LootPoolEntryContainer[];
     // private composedChildren: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;

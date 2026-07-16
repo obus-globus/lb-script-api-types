@@ -8,8 +8,8 @@ import type { JSOverloadedBinaryNode } from '../../../../../../com/oracle/truffl
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSExponentiateNodeGen extends JSExponentiateNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramleft: JavaScriptNode, paramright: JavaScriptNode): JavaScriptNode;
     static create(): JSExponentiateNode;
     static create(paramleft: JavaScriptNode, paramright: JavaScriptNode): JSExponentiateNode;

@@ -3,6 +3,7 @@ import type { StringBuffer } from '../../../../../../../java/lang/StringBuffer.d
 import type { Pattern } from '../../../../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../../java/lang/CharSequence.d.ts'
+import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { Replaceable } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/Replaceable.d.ts'
 import type { UnicodeMatcher } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/text/UnicodeMatcher.d.ts'
 export class Utility extends Object {
@@ -12,8 +13,8 @@ export class Utility extends Object {
     static RLEStringToIntArray(params: string): number[];
     static RLEStringToShortArray(params: string): number[];
     static addExact(paramx: number, paramy: number): number;
-    static appendNumber(paramresult: Appendable | null, paramn: number, paramradix: number, paramminDigits: number): Appendable | null;
-    static appendTo(paramstring: CharSequence, paramappendable: Appendable | null): Appendable | null;
+    static appendNumber<T extends Appendable>(paramresult: T, paramn: number, paramradix: number, paramminDigits: number): T;
+    static appendTo<A extends Appendable>(paramstring: CharSequence, paramappendable: A): A;
     static appendToRule(paramrule: StringBuffer, paramc: number, paramisLiteral: boolean, paramescapeUnprintable: boolean, paramquoteBuf: StringBuffer): void;
     static appendToRule(paramrule: StringBuffer, paramtext: string, paramisLiteral: boolean, paramescapeUnprintable: boolean, paramquoteBuf: StringBuffer): void;
     static appendToRule(paramrule: StringBuffer, parammatcher: UnicodeMatcher, paramescapeUnprintable: boolean, paramquoteBuf: StringBuffer): void;
@@ -27,19 +28,19 @@ export class Utility extends Object {
     static arrayToRLEString(parama: string[]): string;
     static charSequenceEquals(parama: CharSequence, paramb: CharSequence): boolean;
     static charSequenceHashCode(paramvalue: CharSequence): number;
-    static checkCompare(parama: Object | null, paramb: Object | null): number;
+    static checkCompare<T extends Comparable<T>>(parama: T, paramb: T): number;
     static checkHash(parama: Object): number;
     static compareUnsigned(paramsource: number, paramtarget: number): number;
     static cpFromCodePointAndLength(paramcpAndLength: number): number;
-    static escape(paramresult: Appendable | null, paramc: number): Appendable | null;
+    static escape<T extends Appendable>(paramresult: T, paramc: number): T;
     static escape(params: string): string;
-    static escapeUnprintable(paramresult: Appendable | null, paramc: number): boolean;
+    static escapeUnprintable<T extends Appendable>(paramresult: T, paramc: number): boolean;
     static format1ForSource(params: string): string;
     static formatForSource(params: string): string;
     static fromHex(paramstring: string, paramminLength: number, paramseparator: string): string;
     static fromHex(paramstring: string, paramminLength: number, paramseparator: Pattern): string;
-    static hex(params: CharSequence | null, paramwidth: number, paramseparator: CharSequence | null, paramuseCodePoints: boolean, paramresult: Appendable | null): Appendable | null;
-    static hex(params: CharSequence | null, paramwidth: number, paramseparator: CharSequence | null): string;
+    static hex<S extends CharSequence, U extends CharSequence, T extends Appendable>(params: S, paramwidth: number, paramseparator: U, paramuseCodePoints: boolean, paramresult: T): T;
+    static hex<S extends CharSequence>(params: S, paramwidth: number, paramseparator: S): string;
     static hex(paramo: number[], paramstart: number, paramend: number, paramseparator: string): string;
     static hex(params: CharSequence): string;
     static hex(paramch: number): string;

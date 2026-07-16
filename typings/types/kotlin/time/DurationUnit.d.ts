@@ -1,7 +1,6 @@
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { TimeUnit } from '../../java/util/concurrent/TimeUnit.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class DurationUnit extends Enum<DurationUnit> implements Serializable {
     static DAYS: DurationUnit;
@@ -12,8 +11,8 @@ export class DurationUnit extends Enum<DurationUnit> implements Serializable {
     static NANOSECONDS: DurationUnit;
     static SECONDS: DurationUnit;
     static getEntries(): DurationUnit[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): DurationUnit;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): DurationUnit;
     static values(): DurationUnit[];
     private constructor(timeUnit: TimeUnit)
     // private timeUnit: TimeUnit;

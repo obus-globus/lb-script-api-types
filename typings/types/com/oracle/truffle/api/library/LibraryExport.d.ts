@@ -2,7 +2,7 @@ import type { Library } from '../../../../../com/oracle/truffle/api/library/Libr
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class LibraryExport<T extends Library> extends Object {
-    static register(paramreceiverClass: Class<Object>, ...paramlibs: LibraryExport<any>[]): void;
+    static register<T extends Library>(paramreceiverClass: Class<Object>, ...paramlibs: LibraryExport<any>[]): void;
     constructor(library: Class<T>, receiverClass: Class<Object>, defaultExport: boolean)
     constructor(library: Class<T>, receiverClass: Class<Object>, defaultExport: boolean, aot: boolean, aotPriority: number)
     // private aot: boolean;

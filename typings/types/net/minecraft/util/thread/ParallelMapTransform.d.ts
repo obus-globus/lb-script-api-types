@@ -3,7 +3,7 @@ import type { Executor } from '../../../../java/util/concurrent/Executor.d.ts'
 import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ParallelMapTransform extends Object {
-    static schedule(paraminput: Map<Object | null, Object | null>, paramoperation: (param0: Object | null, param1: Object | null) => Object | null, parammaxTaskCount: number, paramexecutor: Executor): CompletableFuture<Map<Object | null, Object | null>>;
-    static schedule(paraminput: Map<Object | null, Object | null>, paramoperation: (param0: Object | null, param1: Object | null) => Object | null, paramexecutor: Executor): CompletableFuture<Map<Object | null, Object | null>>;
+    static schedule<K extends unknown, U extends unknown, V extends unknown>(paraminput: Map<K, U>, paramoperation: (param0: K, param1: U) => V, parammaxTaskCount: number, paramexecutor: Executor): CompletableFuture<Map<K, V>>;
+    static schedule<K extends unknown, U extends unknown, V extends unknown>(paraminput: Map<K, U>, paramoperation: (param0: K, param1: U) => V, paramexecutor: Executor): CompletableFuture<Map<K, V>>;
     constructor()
 }

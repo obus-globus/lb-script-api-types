@@ -1,6 +1,5 @@
 import type { ByteBuf } from '../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class DebugEntityBlockIntersection extends Enum<DebugEntityBlockIntersection> {
@@ -8,7 +7,7 @@ export class DebugEntityBlockIntersection extends Enum<DebugEntityBlockIntersect
     static IN_BLOCK: DebugEntityBlockIntersection;
     static IN_FLUID: DebugEntityBlockIntersection;
     static STREAM_CODEC: StreamCodec<ByteBuf, DebugEntityBlockIntersection>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DebugEntityBlockIntersection;
     static values(): DebugEntityBlockIntersection[];
     private constructor(id: number, color: number)

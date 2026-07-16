@@ -7,9 +7,10 @@ import type { ThreadLocal } from '../../../../../java/lang/ThreadLocal.d.ts'
 import type { ReentrantLock } from '../../../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { ReentrantReadWriteLock } from '../../../../../java/util/concurrent/locks/ReentrantReadWriteLock.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class CycleDetectingLockFactory extends Object {
     static newInstance(parampolicy: CycleDetectingLockFactory$Policy): CycleDetectingLockFactory;
-    static newInstanceWithExplicitOrdering(paramenumClass: Class<Object>, parampolicy: CycleDetectingLockFactory$Policy): CycleDetectingLockFactory$WithExplicitOrdering<any>;
+    static newInstanceWithExplicitOrdering<E extends Enum<E>>(paramenumClass: Class<E>, parampolicy: CycleDetectingLockFactory$Policy): CycleDetectingLockFactory$WithExplicitOrdering<E>;
     constructor(arg0: CycleDetectingLockFactory$Policy, arg1: ThreadLocal<CycleDetectingLockFactory$LockGraphNode[]>)
     // private policy: CycleDetectingLockFactory$Policy;
     // private aboutToAcquire(lock: CycleDetectingLockFactory$CycleDetectingLock): void;

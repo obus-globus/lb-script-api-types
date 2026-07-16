@@ -11,7 +11,7 @@ import type { Unit } from '../../../../net/minecraft/util/Unit.d.ts'
 export class TestEnvironmentDefinition$Functions extends Record implements TestEnvironmentDefinition<Unit> {
     static CODEC: MapCodec<TestEnvironmentDefinition$Functions>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
-    static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;
+    static activate<T extends unknown>(paramenvironment: TestEnvironmentDefinition<T>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<T>;
     static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     constructor(setupFunction: Optional<Identifier>, teardownFunction: Optional<Identifier>)
     // private setupFunction: Optional<Identifier>;

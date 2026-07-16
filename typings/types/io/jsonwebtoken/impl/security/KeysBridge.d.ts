@@ -15,8 +15,8 @@ export class KeysBridge extends Object {
     static getEncoded(paramarg0: Key): number[];
     static isGenericSecret(paramarg0: Key): boolean;
     static password(paramarg0: string[]): Password;
-    static root(paramarg0: Key | null): Key | null;
-    static root(paramarg0: KeySupplier<Key>): Key | null;
+    static root<K extends Key>(paramarg0: K): K;
+    static root<K extends Key>(paramarg0: KeySupplier<K>): K;
     static toString(paramarg0: Key): string;
     private constructor()
 }

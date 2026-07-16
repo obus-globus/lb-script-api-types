@@ -5,7 +5,7 @@ import type { JRand$Debugger } from '../../../../com/seedfinding/mcseed/rand/JRa
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ChunkRand$Debugger extends ChunkRand {
     static getInt(paramarg0: ChunkRand, paramarg1: number, paramarg2: number): number;
-    static getRandom(paramarg0: (Object | null)[], paramarg1: ChunkRand): Object | null;
+    static getRandom<T extends unknown>(paramarg0: T[], paramarg1: ChunkRand): T;
     static nextBoolean(paramarg0: number): boolean;
     static nextDouble(paramarg0: number): number;
     static nextFloat(paramarg0: number): number;

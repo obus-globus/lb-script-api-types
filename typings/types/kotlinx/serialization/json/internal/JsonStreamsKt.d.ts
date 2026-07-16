@@ -7,8 +7,8 @@ import type { Json } from '../../../../kotlinx/serialization/json/Json.d.ts'
 import type { InternalJsonReader } from '../../../../kotlinx/serialization/json/internal/InternalJsonReader.d.ts'
 import type { InternalJsonWriter } from '../../../../kotlinx/serialization/json/internal/InternalJsonWriter.d.ts'
 export class JsonStreamsKt extends Object {
-    static decodeByReader(paramarg0: Json, paramarg1: DeserializationStrategy<Object>, paramarg2: InternalJsonReader): Object | null;
-    static decodeToSequenceByReader(paramarg0: Json, paramarg1: InternalJsonReader, paramarg2: DeserializationStrategy<Object>, paramarg3: DecodeSequenceMode): Sequence<Object>;
-    static decodeToSequenceByReader(paramarg0: Json, paramarg1: InternalJsonReader, paramarg2: DecodeSequenceMode): Sequence<Object>;
-    static encodeByWriter(paramarg0: Json, paramarg1: InternalJsonWriter, paramarg2: SerializationStrategy<Object>, paramarg3: Object | null): void;
+    static decodeByReader<T extends unknown>(json: Json, deserializer: DeserializationStrategy<T>, reader: InternalJsonReader): T;
+    static decodeToSequenceByReader<T extends unknown>(json: Json, reader: InternalJsonReader, deserializer: DeserializationStrategy<T>, format: DecodeSequenceMode): Sequence<T>;
+    static decodeToSequenceByReader<T extends unknown>(json: Json, reader: InternalJsonReader, format: DecodeSequenceMode): Sequence<T>;
+    static encodeByWriter<T extends unknown>(json: Json, writer: InternalJsonWriter, serializer: SerializationStrategy<T>, value: T): void;
 }

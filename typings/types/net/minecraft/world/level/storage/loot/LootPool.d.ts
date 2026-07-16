@@ -20,14 +20,14 @@ import type { LootItemCondition } from '../../../../../../net/minecraft/world/le
 import type { NumberProvider } from '../../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class LootPool extends Object implements LootPoolAccessor, Validatable {
     static CODEC: Codec<LootPool>;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
+    static listValidatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T[]) => DataResult<T[]>;
     static lootPool(): LootPool$Builder;
     static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
     static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
+    static validateReference<T extends Validatable>(paramcontext: ValidationContext, paramid: ResourceKey<T>): void;
+    static validatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T) => DataResult<T>;
     private constructor(entries: LootPoolEntryContainer[], conditions: LootItemCondition[], functions: LootItemFunction[], rolls: NumberProvider, bonusRolls: NumberProvider)
     bonusRolls: NumberProvider;
     // private compositeCondition: (param0: LootContext) => boolean;

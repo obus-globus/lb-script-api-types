@@ -1,10 +1,9 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class ChunkPalettedStorageFix$Direction$AxisDirection extends Enum<ChunkPalettedStorageFix$Direction$AxisDirection> {
     static NEGATIVE: ChunkPalettedStorageFix$Direction$AxisDirection;
     static POSITIVE: ChunkPalettedStorageFix$Direction$AxisDirection;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ChunkPalettedStorageFix$Direction$AxisDirection;
     static values(): ChunkPalettedStorageFix$Direction$AxisDirection[];
     private constructor(step: number)

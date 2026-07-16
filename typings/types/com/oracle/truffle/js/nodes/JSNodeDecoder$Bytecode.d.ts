@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class JSNodeDecoder$Bytecode extends Enum<JSNodeDecoder$Bytecode> {
     static ID_CALL_EXTRACTED: JSNodeDecoder$Bytecode;
@@ -29,7 +28,7 @@ export class JSNodeDecoder$Bytecode extends Enum<JSNodeDecoder$Bytecode> {
     static ID_NOP: JSNodeDecoder$Bytecode;
     static ID_RETURN: JSNodeDecoder$Bytecode;
     static ID_SOURCE_SECTION: JSNodeDecoder$Bytecode;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): JSNodeDecoder$Bytecode;
     static values(): JSNodeDecoder$Bytecode[];
     private constructor()

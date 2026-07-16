@@ -11,6 +11,6 @@ import type { BlockEntityType } from '../../../../../net/minecraft/world/level/b
 import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { Property } from '../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class DoubleBlockCombiner extends Object {
-    static combineWithNeigbour(paramentityType: BlockEntityType<BlockEntity>, paramtypeResolver: (param0: BlockState) => DoubleBlockCombiner$BlockType, paramconnectionResolver: (param0: BlockState) => Direction, paramfacingProperty: Property<Direction>, paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos, paramblockedChecker: (param0: LevelAccessor, param1: BlockPos) => boolean): DoubleBlockCombiner$NeighborCombineResult<BlockEntity>;
+    static combineWithNeigbour<S extends BlockEntity>(paramentityType: BlockEntityType<S>, paramtypeResolver: (param0: BlockState) => DoubleBlockCombiner$BlockType, paramconnectionResolver: (param0: BlockState) => Direction, paramfacingProperty: Property<Direction>, paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos, paramblockedChecker: (param0: LevelAccessor, param1: BlockPos) => boolean): DoubleBlockCombiner$NeighborCombineResult<S>;
     constructor()
 }

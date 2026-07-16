@@ -4,7 +4,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { DebugSubscription } from '../../../../net/minecraft/util/debug/DebugSubscription.d.ts'
 export class RemoteDebugSampleType extends Enum<RemoteDebugSampleType> {
     static TICK_TIME: RemoteDebugSampleType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RemoteDebugSampleType;
     static values(): RemoteDebugSampleType[];
     private constructor(subscription: DebugSubscription<Object>)

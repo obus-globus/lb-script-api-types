@@ -5,7 +5,7 @@ import type { ProtocolInfo } from '../../../net/minecraft/network/ProtocolInfo.d
 import type { UnconfiguredPipelineHandler$InboundConfigurationTask } from '../../../net/minecraft/network/UnconfiguredPipelineHandler$InboundConfigurationTask.d.ts'
 import type { UnconfiguredPipelineHandler$OutboundConfigurationTask } from '../../../net/minecraft/network/UnconfiguredPipelineHandler$OutboundConfigurationTask.d.ts'
 export class UnconfiguredPipelineHandler extends Object {
-    static setupInboundProtocol(paramprotocolInfo: ProtocolInfo<PacketListener>): (param0: ChannelHandlerContext) => void;
-    static setupOutboundProtocol(paramcodecData: ProtocolInfo<PacketListener>): (param0: ChannelHandlerContext) => void;
+    static setupInboundProtocol<T extends PacketListener>(paramprotocolInfo: ProtocolInfo<T>): (param0: ChannelHandlerContext) => void;
+    static setupOutboundProtocol<T extends PacketListener>(paramcodecData: ProtocolInfo<T>): (param0: ChannelHandlerContext) => void;
     constructor()
 }

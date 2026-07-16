@@ -29,11 +29,11 @@ export class ResourceArgument<T extends unknown> extends Object implements Argum
     static getEnchantment(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Enchantment>;
     static getEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<EntityType<any>>;
     static getMobEffect(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<MobEffect>;
-    static getResource(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<(Object | null)[]>): Holder$Reference<Object>;
+    static getResource<T extends unknown>(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<T[]>): Holder$Reference<T>;
     static getStructure(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Structure>;
     static getSummonableEntityType(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<EntityType<any>>;
     static getTimeline(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Timeline>;
-    static resource(paramcontext: CommandBuildContext, paramkey: ResourceKey<(Object | null)[]>): ResourceArgument<Object>;
+    static resource<T extends unknown>(paramcontext: CommandBuildContext, paramkey: ResourceKey<T[]>): ResourceArgument<T>;
     constructor(context: CommandBuildContext, registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
     // private registryLookup: HolderLookup<T>;

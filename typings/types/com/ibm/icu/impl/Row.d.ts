@@ -7,10 +7,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Cloneable } from '../../../../java/lang/Cloneable.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class Row<C0 extends unknown, C1 extends unknown, C2 extends unknown, C3 extends unknown, C4 extends unknown> extends Object implements Freezable<Row<C0, C1, C2, C3, C4>>, Cloneable, Comparable<Object> {
-    static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: Object | null, paramarg3: Object | null, paramarg4: Object | null): Row$R5<Object, Object, Object, Object, Object>;
-    static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: Object | null, paramarg3: Object | null): Row$R4<Object, Object, Object, Object>;
-    static of(paramarg0: Object | null, paramarg1: Object | null, paramarg2: Object | null): Row$R3<Object, Object, Object>;
-    static of(paramarg0: Object | null, paramarg1: Object | null): Row$R2<Object, Object>;
+    static of<C0 extends unknown, C1 extends unknown, C2 extends unknown, C3 extends unknown, C4 extends unknown>(paramarg0: C0, paramarg1: C1, paramarg2: C2, paramarg3: C3, paramarg4: C4): Row$R5<C0, C1, C2, C3, C4>;
+    static of<C0 extends unknown, C1 extends unknown, C2 extends unknown, C3 extends unknown>(paramarg0: C0, paramarg1: C1, paramarg2: C2, paramarg3: C3): Row$R4<C0, C1, C2, C3>;
+    static of<C0 extends unknown, C1 extends unknown, C2 extends unknown>(paramarg0: C0, paramarg1: C1, paramarg2: C2): Row$R3<C0, C1, C2>;
+    static of<C0 extends unknown, C1 extends unknown>(paramarg0: C0, paramarg1: C1): Row$R2<C0, C1>;
     constructor()
     frozen: boolean;
     // private items: Object[];

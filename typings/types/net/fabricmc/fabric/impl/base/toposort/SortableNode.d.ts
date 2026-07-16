@@ -1,6 +1,6 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class SortableNode<N extends SortableNode<N>> extends Object {
-    static link(paramarg0: Object | null, paramarg1: Object | null): void;
+    static link<N extends SortableNode<N>>(paramarg0: N, paramarg1: N): void;
     constructor()
     // private previousNodes: N[];
     // private subsequentNodes: N[];

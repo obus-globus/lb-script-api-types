@@ -4,5 +4,5 @@ import type { InternalJsonReader } from '../../../../kotlinx/serialization/json/
 import type { ReaderJsonLexer } from '../../../../kotlinx/serialization/json/internal/ReaderJsonLexer.d.ts'
 export class ReaderJsonLexerKt extends Object {
     static BATCH_SIZE: number;
-    static ReaderJsonLexer(paramarg0: Json, paramarg1: InternalJsonReader, paramarg2: string[]): ReaderJsonLexer;
+    static ReaderJsonLexer(json: Json, reader: InternalJsonReader, buffer: string[]): ReaderJsonLexer;
 }

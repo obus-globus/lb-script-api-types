@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { CrystalAuraDamageOptions$RequestingSubmodule } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/CrystalAuraDamageOptions$RequestingSubmodule.d.ts'
 import type { DamageProvider } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/combat/crystalaura/DamageProvider.d.ts'
@@ -11,8 +10,8 @@ export class CrystalAuraDamageOptions$CheckedEntity extends Enum<CrystalAuraDama
     static SELF: CrystalAuraDamageOptions$CheckedEntity;
     static TARGET: CrystalAuraDamageOptions$CheckedEntity;
     static getEntries(): CrystalAuraDamageOptions$CheckedEntity[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): CrystalAuraDamageOptions$CheckedEntity;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): CrystalAuraDamageOptions$CheckedEntity;
     static values(): CrystalAuraDamageOptions$CheckedEntity[];
     private constructor()
     getDamage(entity: LivingEntity, requestingSubmodule: CrystalAuraDamageOptions$RequestingSubmodule, crystal: Vec3, maxBlastResistance: number | null, include: BlockPos | null): DamageProvider;

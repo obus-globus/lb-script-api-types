@@ -1,5 +1,4 @@
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class CefApp$CefAppState extends Enum<CefApp$CefAppState> {
     static INITIALIZATION_FAILED: CefApp$CefAppState;
@@ -9,7 +8,7 @@ export class CefApp$CefAppState extends Enum<CefApp$CefAppState> {
     static NONE: CefApp$CefAppState;
     static SHUTTING_DOWN: CefApp$CefAppState;
     static TERMINATED: CefApp$CefAppState;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CefApp$CefAppState;
     static values(): CefApp$CefAppState[];
     private constructor()

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class DumpArchiveConstants$SEGMENT_TYPE extends Enum<DumpArchiveConstants$SEGMENT_TYPE> {
     static ADDR: DumpArchiveConstants$SEGMENT_TYPE;
@@ -9,7 +8,7 @@ export class DumpArchiveConstants$SEGMENT_TYPE extends Enum<DumpArchiveConstants
     static INODE: DumpArchiveConstants$SEGMENT_TYPE;
     static TAPE: DumpArchiveConstants$SEGMENT_TYPE;
     static find(paramarg0: number): DumpArchiveConstants$SEGMENT_TYPE;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DumpArchiveConstants$SEGMENT_TYPE;
     static values(): DumpArchiveConstants$SEGMENT_TYPE[];
     private constructor(arg2: number)

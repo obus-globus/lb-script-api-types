@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class PathType extends Enum<PathType> {
     static BIG_MOBS_CLOSE_TO_DANGER: PathType;
@@ -29,7 +28,7 @@ export class PathType extends Enum<PathType> {
     static WALKABLE_DOOR: PathType;
     static WATER: PathType;
     static WATER_BORDER: PathType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PathType;
     static values(): PathType[];
     private constructor(defaultCost: number)

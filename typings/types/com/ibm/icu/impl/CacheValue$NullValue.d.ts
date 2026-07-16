@@ -3,7 +3,7 @@ import type { CacheValue$Strength } from '../../../../com/ibm/icu/impl/CacheValu
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CacheValue$NullValue<V extends unknown> extends CacheValue<V> {
     static futureInstancesWillBeStrong(): boolean;
-    static getInstance(paramarg0: Object | null): CacheValue<Object>;
+    static getInstance<V extends unknown>(paramarg0: V): CacheValue<V>;
     static setStrength(paramarg0: CacheValue$Strength): void;
     private constructor()
     get(): V;

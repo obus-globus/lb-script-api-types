@@ -24,7 +24,7 @@ export class RegExpBuiltins$RegExpBuiltin extends Enum<RegExpBuiltins$RegExpBuil
     static rightContext: RegExpBuiltins$RegExpBuiltin;
     static set_input: RegExpBuiltins$RegExpBuiltin;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RegExpBuiltins$RegExpBuiltin;
     static values(): RegExpBuiltins$RegExpBuiltin[];
     private constructor(length: number)

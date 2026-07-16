@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { CommandLine$Help$Ansi$IStyle } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Help$Ansi$IStyle.d.ts'
 import type { CommandLine$Help$Ansi$Text } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Help$Ansi$Text.d.ts'
@@ -7,7 +6,7 @@ export class CommandLine$Help$Ansi extends Enum<CommandLine$Help$Ansi> {
     static AUTO: CommandLine$Help$Ansi;
     static OFF: CommandLine$Help$Ansi;
     static ON: CommandLine$Help$Ansi;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CommandLine$Help$Ansi;
     static values(): CommandLine$Help$Ansi[];
     private constructor()

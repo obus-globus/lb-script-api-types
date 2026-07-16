@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class SoundCategories1_8 extends Enum<SoundCategories1_8> {
     static AMBIENT: SoundCategories1_8;
@@ -12,7 +11,7 @@ export class SoundCategories1_8 extends Enum<SoundCategories1_8> {
     static RECORD: SoundCategories1_8;
     static VOICE: SoundCategories1_8;
     static WEATHER: SoundCategories1_8;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SoundCategories1_8;
     static values(): SoundCategories1_8[];
     private constructor(arg2: string, arg3: number)

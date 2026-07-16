@@ -14,17 +14,17 @@ import type { UniquelyIdentifyable } from '../../../../net/minecraft/world/level
 import type { ValueInput } from '../../../../net/minecraft/world/level/storage/ValueInput.d.ts'
 import type { ValueOutput } from '../../../../net/minecraft/world/level/storage/ValueOutput.d.ts'
 export class EntityReference<StoredEntityType extends UniquelyIdentifyable> extends Object {
-    static codec(): Codec<EntityReference<UniquelyIdentifyable>>;
-    static get(paramreference: EntityReference<UniquelyIdentifyable>, paramlevel: Level, paramclazz: Class<UniquelyIdentifyable>): UniquelyIdentifyable | null;
+    static codec<Type extends UniquelyIdentifyable>(): Codec<EntityReference<Type>>;
+    static get<StoredEntityType extends UniquelyIdentifyable>(paramreference: EntityReference<StoredEntityType>, paramlevel: Level, paramclazz: Class<StoredEntityType>): StoredEntityType;
     static getEntity(paramreference: EntityReference<Entity>, paramlevel: Level): Entity;
     static getLivingEntity(paramreference: EntityReference<LivingEntity>, paramlevel: Level): LivingEntity;
     static getPlayer(paramreference: EntityReference<Player>, paramlevel: Level): Player;
-    static of(paramentity: UniquelyIdentifyable | null): EntityReference<UniquelyIdentifyable>;
-    static of(paramuuid: UUID): EntityReference<UniquelyIdentifyable>;
-    static read(paraminput: ValueInput, paramkey: string): EntityReference<UniquelyIdentifyable>;
-    static readWithOldOwnerConversion(paraminput: ValueInput, paramkey: string, paramlevel: Level): EntityReference<UniquelyIdentifyable>;
+    static of<T extends UniquelyIdentifyable>(paramentity: T): EntityReference<T>;
+    static of<T extends UniquelyIdentifyable>(paramuuid: UUID): EntityReference<T>;
+    static read<StoredEntityType extends UniquelyIdentifyable>(paraminput: ValueInput, paramkey: string): EntityReference<StoredEntityType>;
+    static readWithOldOwnerConversion<StoredEntityType extends UniquelyIdentifyable>(paraminput: ValueInput, paramkey: string, paramlevel: Level): EntityReference<StoredEntityType>;
     static store(paramreference: EntityReference<any>, paramoutput: ValueOutput, paramkey: string): void;
-    static streamCodec(): StreamCodec<ByteBuf, EntityReference<UniquelyIdentifyable>>;
+    static streamCodec<Type extends UniquelyIdentifyable>(): StreamCodec<ByteBuf, EntityReference<Type>>;
     private constructor(entity: StoredEntityType)
     private constructor(uuid: UUID)
     // private entity: Either<UUID, StoredEntityType>;

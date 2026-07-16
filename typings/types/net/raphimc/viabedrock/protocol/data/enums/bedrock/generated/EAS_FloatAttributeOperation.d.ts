@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class EAS_FloatAttributeOperation extends Enum<EAS_FloatAttributeOperation> {
     static ADD: EAS_FloatAttributeOperation;
@@ -13,7 +12,7 @@ export class EAS_FloatAttributeOperation extends Enum<EAS_FloatAttributeOperatio
     static getByName(paramarg0: string, paramarg1: EAS_FloatAttributeOperation): EAS_FloatAttributeOperation;
     static getByValue(paramarg0: number): EAS_FloatAttributeOperation;
     static getByValue(paramarg0: number, paramarg1: EAS_FloatAttributeOperation): EAS_FloatAttributeOperation;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EAS_FloatAttributeOperation;
     static values(): EAS_FloatAttributeOperation[];
     private constructor(arg2: number)

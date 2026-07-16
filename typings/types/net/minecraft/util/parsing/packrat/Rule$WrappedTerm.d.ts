@@ -7,8 +7,8 @@ import type { Rule$SimpleRuleAction } from '../../../../../net/minecraft/util/pa
 import type { Scope } from '../../../../../net/minecraft/util/parsing/packrat/Scope.d.ts'
 import type { Term } from '../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 export class Rule$WrappedTerm<S extends unknown, T extends unknown> extends Record implements Rule<S, T> {
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: ParseState<Object>) => Object | null): Rule<Object, Object>;
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: Scope) => Object | null): Rule<Object, Object>;
+    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: ParseState<S>) => T): Rule<S, T>;
+    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: Scope) => T): Rule<S, T>;
     constructor(action: (param0: ParseState<S>) => T, child: Term<S>)
     // private action: (param0: ParseState<S>) => T;
     // private child: Term<S>;

@@ -7,8 +7,8 @@ import type { Player } from '../../../../../net/minecraft/world/entity/player/Pl
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class PlayerSimulationExtrapolation extends Object implements PositionExtrapolation {
     static Companion: PositionExtrapolation$Companion;
-    static constant(paramarg0: Vec3): PositionExtrapolation;
-    static getBestForEntity(paramarg0: Entity): PositionExtrapolation;
+    static constant(pos: Vec3): PositionExtrapolation;
+    static getBestForEntity(target: Entity): PositionExtrapolation;
     constructor(simulation: SimulatedPlayerCache)
     constructor(player: Player)
     // private simulation: SimulatedPlayerCache;

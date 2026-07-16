@@ -10,7 +10,7 @@ export class XPathEvaluationResult$XPathResultType extends Enum<XPathEvaluationR
     static NUMBER: XPathEvaluationResult$XPathResultType;
     static STRING: XPathEvaluationResult$XPathResultType;
     static getQNameType(paramarg0: Class<Object>): QName;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): XPathEvaluationResult$XPathResultType;
     static values(): XPathEvaluationResult$XPathResultType[];
     private constructor(arg2: QName, arg3: Class<Object>)

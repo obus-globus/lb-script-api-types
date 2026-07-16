@@ -10,8 +10,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class AbstractRepeatingNode extends JavaScriptNode implements RepeatingNode, ResumableNode {
     static BREAK_LOOP_STATUS: Object;
     static CONTINUE_LOOP_STATUS: Object;
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static createResumableNode(paramnode: ResumableNode, paramstateSlot: number): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;
     static reportLoopCount(paramnode: Node, paramcount: number): void;

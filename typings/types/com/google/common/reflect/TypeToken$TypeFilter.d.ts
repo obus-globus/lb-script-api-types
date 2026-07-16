@@ -7,7 +7,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class TypeToken$TypeFilter extends Enum<TypeToken$TypeFilter> implements Predicate<TypeToken<Object>> {
     static IGNORE_TYPE_VARIABLE_OR_WILDCARD: TypeToken$TypeFilter;
     static INTERFACE_ONLY: TypeToken$TypeFilter;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TypeToken$TypeFilter;
     static values(): TypeToken$TypeFilter[];
     constructor(arg2: Invokable$MethodInvokable<T>)

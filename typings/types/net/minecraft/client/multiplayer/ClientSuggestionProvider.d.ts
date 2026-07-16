@@ -32,17 +32,17 @@ import type { Vec2 } from '../../../../net/minecraft/world/phys/Vec2.d.ts'
 import type { Vec3 } from '../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientSuggestionProvider extends Object implements FabricClientCommandSource, ClientSuggestionProviderExtensions, SharedSuggestionProvider {
     static MATCH_SPLITTER: CharMatcher;
-    static filterResources(paramvalues: (Object | null)[], paramcontents: string, paramprefix: string, paramconverter: (param0: Object | null) => Identifier, paramconsumer: (param0: Object | null) => void): void;
-    static filterResources(paramvalues: (Object | null)[], paramcontents: string, paramconverter: (param0: Object | null) => Identifier, paramconsumer: (param0: Object | null) => void): void;
-    static listSuggestions(paramcontext: CommandContext<Object>, parambuilder: SuggestionsBuilder, paramregistryKey: ResourceKey<Object[]>, paramtype: SharedSuggestionProvider$ElementSuggestionType): CompletableFuture<Suggestions>;
+    static filterResources<T extends unknown>(paramvalues: T[], paramcontents: string, paramprefix: string, paramconverter: (param0: T) => Identifier, paramconsumer: (param0: T) => void): void;
+    static filterResources<T extends unknown>(paramvalues: T[], paramcontents: string, paramconverter: (param0: T) => Identifier, paramconsumer: (param0: T) => void): void;
+    static listSuggestions<S extends unknown>(paramcontext: CommandContext<S>, parambuilder: SuggestionsBuilder, paramregistryKey: ResourceKey<Object[]>, paramtype: SharedSuggestionProvider$ElementSuggestionType): CompletableFuture<Suggestions>;
     static matchesSubStr(parampattern: string, paraminput: string): boolean;
-    static suggest(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder, paramtoString: (param0: Object | null) => string, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
+    static suggest<T extends unknown>(paramvalues: T[], parambuilder: SuggestionsBuilder, paramtoString: (param0: T) => string, paramtooltip: (param0: T) => Message): CompletableFuture<Suggestions>;
     static suggest(paramvalues: string[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggest(paramvalues: Stream<string>, parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggest2DCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;
     static suggestCoordinates(paramcurrentInput: string, paramallSuggestions: SharedSuggestionProvider$TextCoordinates[], parambuilder: SuggestionsBuilder, paramvalidator: (param0: string) => boolean): CompletableFuture<Suggestions>;
-    static suggestResource(paramvalues: (Object | null)[], parambuilder: SuggestionsBuilder, paramid: (param0: Object | null) => Identifier, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
-    static suggestResource(paramvalues: Stream<Object>, parambuilder: SuggestionsBuilder, paramid: (param0: Object | null) => Identifier, paramtooltip: (param0: Object | null) => Message): CompletableFuture<Suggestions>;
+    static suggestResource<T extends unknown>(paramvalues: T[], parambuilder: SuggestionsBuilder, paramid: (param0: T) => Identifier, paramtooltip: (param0: T) => Message): CompletableFuture<Suggestions>;
+    static suggestResource<T extends unknown>(paramvalues: Stream<T>, parambuilder: SuggestionsBuilder, paramid: (param0: T) => Identifier, paramtooltip: (param0: T) => Message): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: Identifier[], parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: Identifier[], parambuilder: SuggestionsBuilder, paramprefix: string): CompletableFuture<Suggestions>;
     static suggestResource(paramvalues: Stream<Identifier>, parambuilder: SuggestionsBuilder): CompletableFuture<Suggestions>;

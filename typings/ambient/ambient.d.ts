@@ -182,6 +182,15 @@ declare global {
 
 
 // exports
+    /*
+     * A16: already runtime globals - every `export const` below (incl. the Yarn-era aliases
+     * Vec3d/MathHelper/Hand/RotationAxis) already exists in every script's
+     * scope. Do NOT redeclare them: `const Vec3d = Java.type(...)` at the
+     * top level of a NON-module script is a TS2451 collision with these
+     * declarations. Either use the global directly, pick another local
+     * name, or make your script a module (add `export {}`) so top-level
+     * consts become file-scoped. See typings/README.md.
+     */
     export const Setting: ScriptSetting_;
 
     export const mc: Minecraft_;

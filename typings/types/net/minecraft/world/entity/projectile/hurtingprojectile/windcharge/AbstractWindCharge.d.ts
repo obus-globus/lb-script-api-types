@@ -68,11 +68,11 @@ export abstract class AbstractWindCharge extends AbstractHurtingProjectile imple
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;
     static setViewScale(paramviewScale: number): void;
-    static spawnProjectile(paramprojectile: Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack): Projectile | null;
-    static spawnProjectile(paramprojectile: Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramshootFunction: (param0: Projectile | null) => void): Projectile | null;
-    static spawnProjectileFromRotation(paramcreator: (param0: ServerLevel, param1: LivingEntity, param2: ItemStack) => Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramyOffset: number, parampow: number, paramuncertainty: number): Projectile | null;
-    static spawnProjectileUsingShoot(paramprojectile: Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Projectile | null;
-    static spawnProjectileUsingShoot(paramcreator: (param0: ServerLevel, param1: LivingEntity, param2: ItemStack) => Projectile | null, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): Projectile | null;
+    static spawnProjectile<T extends Projectile>(paramprojectile: T, paramserverLevel: ServerLevel, paramitemStack: ItemStack): T;
+    static spawnProjectile<T extends Projectile>(paramprojectile: T, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramshootFunction: (param0: T) => void): T;
+    static spawnProjectileFromRotation<T extends Projectile>(paramcreator: (param0: ServerLevel, param1: LivingEntity, param2: ItemStack) => T, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramyOffset: number, parampow: number, paramuncertainty: number): T;
+    static spawnProjectileUsingShoot<T extends Projectile>(paramprojectile: T, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): T;
+    static spawnProjectileUsingShoot<T extends Projectile>(paramcreator: (param0: ServerLevel, param1: LivingEntity, param2: ItemStack) => T, paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramsource: LivingEntity, paramtargetX: number, paramtargetY: number, paramtargetZ: number, parampow: number, paramuncertainty: number): T;
     constructor(type: EntityType<AbstractWindCharge>, x: number, y: number, z: number, direction: Vec3, level: Level)
     constructor(type: EntityType<AbstractWindCharge>, level: Level)
     constructor(type: EntityType<AbstractWindCharge>, level: Level, owner: Entity, x: number, y: number, z: number)

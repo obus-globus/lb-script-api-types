@@ -46,7 +46,7 @@ export class TemporalPlainDateTimePrototypeBuiltins$TemporalPlainDateTimePrototy
     static year: TemporalPlainDateTimePrototypeBuiltins$TemporalPlainDateTimePrototype;
     static yearOfWeek: TemporalPlainDateTimePrototypeBuiltins$TemporalPlainDateTimePrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalPlainDateTimePrototypeBuiltins$TemporalPlainDateTimePrototype;
     static values(): TemporalPlainDateTimePrototypeBuiltins$TemporalPlainDateTimePrototype[];
     private constructor(length: number)

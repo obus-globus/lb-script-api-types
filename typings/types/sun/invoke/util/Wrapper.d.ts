@@ -14,8 +14,8 @@ export class Wrapper extends Enum<Wrapper> {
     static OBJECT: Wrapper;
     static SHORT: Wrapper;
     static VOID: Wrapper;
-    static asPrimitiveType(paramarg0: Class<Object>): Class<Object>;
-    static asWrapperType(paramarg0: Class<Object>): Class<Object>;
+    static asPrimitiveType<T extends unknown>(paramarg0: Class<T>): Class<T>;
+    static asWrapperType<T extends unknown>(paramarg0: Class<T>): Class<T>;
     static basicTypeChar(paramarg0: Class<Object>): string;
     static forBasicType(paramarg0: string): Wrapper;
     static forBasicType(paramarg0: Class<Object>): Wrapper;
@@ -24,7 +24,7 @@ export class Wrapper extends Enum<Wrapper> {
     static isPrimitiveType(paramarg0: Class<Object>): boolean;
     static isWrapperNumericOrBooleanType(paramarg0: Class<Object>): boolean;
     static isWrapperType(paramarg0: Class<Object>): boolean;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Wrapper;
     static values(): Wrapper[];
     private constructor(arg2: Class<Object>, arg3: string, arg4: Class<Object>, arg5: string, arg6: string, arg7: Object, arg8: number, arg9: number, arg10: number, arg11: ClassDesc, arg12: ClassDesc)

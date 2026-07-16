@@ -2,7 +2,6 @@ import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { StringBuilder } from '../../../../../../../../java/lang/StringBuilder.d.ts'
 import type { ChronoUnit } from '../../../../../../../../java/time/temporal/ChronoUnit.d.ts'
 import type { BiConsumer } from '../../../../../../../../java/util/function/BiConsumer.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { Instant } from '../../../../../../../../org/apache/logging/log4j/core/time/Instant.d.ts'
 import type { InstantFormatter } from '../../../../../../../../org/apache/logging/log4j/core/util/internal/instant/InstantFormatter.d.ts'
@@ -14,7 +13,7 @@ export class InstantNumberFormatter extends Enum<InstantNumberFormatter> impleme
     static EPOCH_SECONDS: InstantNumberFormatter;
     static EPOCH_SECONDS_NANOS: InstantNumberFormatter;
     static EPOCH_SECONDS_ROUNDED: InstantNumberFormatter;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): InstantNumberFormatter;
     static values(): InstantNumberFormatter[];
     private constructor(precision: ChronoUnit, formatter: (param0: Instant, param1: StringBuilder) => void)

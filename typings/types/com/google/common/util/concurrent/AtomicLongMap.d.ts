@@ -3,8 +3,8 @@ import type { LongBinaryOperator } from '../../../../../java/util/function/LongB
 import type { LongUnaryOperator } from '../../../../../java/util/function/LongUnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AtomicLongMap<K extends unknown> extends Object implements Serializable {
-    static create(): AtomicLongMap<Object>;
-    static create(paramm: Map<Object | null, number>): AtomicLongMap<Object>;
+    static create<K extends unknown>(): AtomicLongMap<K>;
+    static create<K extends unknown>(paramm: Map<K, number>): AtomicLongMap<K>;
     private constructor(map: Map<K, number>)
     // private asMap: Map<K, number>;
     // private map: Map<K, number>;

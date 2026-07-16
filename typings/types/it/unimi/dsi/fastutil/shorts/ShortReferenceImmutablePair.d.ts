@@ -3,8 +3,8 @@ import type { ShortReferencePair } from '../../../../../it/unimi/dsi/fastutil/sh
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ShortReferenceImmutablePair<V extends unknown> extends Object implements ShortReferencePair<V>, Serializable {
-    static of(paramarg0: number, paramarg1: Object | null): ShortReferenceImmutablePair<Object>;
-    static of(paramarg0: number, paramarg1: Object | null): ShortReferencePair<Object>;
+    static of<V extends unknown>(paramarg0: number, paramarg1: V): ShortReferenceImmutablePair<V>;
+    static of<V extends unknown>(paramarg0: number, paramarg1: V): ShortReferencePair<V>;
     constructor(arg0: number, arg1: V)
     // private left: number;
     // private right: V;

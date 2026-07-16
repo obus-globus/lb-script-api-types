@@ -107,7 +107,6 @@ export class BlockPlacer extends ValueGroup implements EventListener {
     // private isBlocked(posAsLong: number): boolean;
     isDone(): boolean;
     parent(): EventListener | null;
-    parent(): EventListener;
     // private raytraceTarget(pos: BlockPos, providedRotation: Rotation, direction: Direction): BlockHitResult | null;
     /**
      * Removes a block from the queue.

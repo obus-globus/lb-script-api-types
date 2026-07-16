@@ -9,5 +9,5 @@ export class Java8DateAdapterKt extends Object {
     static LocalDateAdapter: SimpleStringTypeAdapter<LocalDate>;
     static LocalDateTimeAdapter: SimpleStringTypeAdapter<LocalDateTime>;
     static OffsetDateTimeAdapter: SimpleStringTypeAdapter<OffsetDateTime>;
-    static toUnderlinedString(localDateTime: LocalDateTime): string;
+    static toUnderlinedString(self: LocalDateTime): string;
 }

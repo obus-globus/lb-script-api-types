@@ -6,9 +6,10 @@ import type { CharComparator } from '../../../../../it/unimi/dsi/fastutil/chars/
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 export class CharComparators$OppositeImplicitComparator extends Object implements CharComparator, Serializable {
-    static comparing(paramarg0: (param0: string) => Object | null): (param0: string, param1: string) => number;
-    static comparing(paramarg0: (param0: string) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: string, param1: string) => number;
+    static comparing<U extends Comparable<Object>>(paramarg0: (param0: string) => U): (param0: string, param1: string) => number;
+    static comparing<U extends Comparable<Object>>(paramarg0: (param0: string) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: string, param1: string) => number;
     static comparingDouble(paramarg0: (param0: string) => number): (param0: string, param1: string) => number;
     static comparingInt(paramarg0: (param0: string) => number): (param0: string, param1: string) => number;
     static comparingLong(paramarg0: (param0: string) => number): (param0: string, param1: string) => number;

@@ -1,6 +1,5 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Runtime$Version } from '../../../java/lang/Runtime$Version.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class ClassFileFormatVersion extends Enum<ClassFileFormatVersion> {
     static RELEASE_0: ClassFileFormatVersion;
@@ -31,7 +30,7 @@ export class ClassFileFormatVersion extends Enum<ClassFileFormatVersion> {
     static RELEASE_9: ClassFileFormatVersion;
     static fromMajor(paramarg0: number): ClassFileFormatVersion;
     static latest(): ClassFileFormatVersion;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: Runtime$Version): ClassFileFormatVersion;
     static valueOf(paramarg0: string): ClassFileFormatVersion;
     static values(): ClassFileFormatVersion[];

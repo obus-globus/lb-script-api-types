@@ -6,7 +6,7 @@ import type { MultiBackgroundInitializer$MultiBackgroundInitializerResults } fro
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
 export class MultiBackgroundInitializer extends BackgroundInitializer<MultiBackgroundInitializer$MultiBackgroundInitializerResults> {
     static NUL: () => Object | null;
-    static builder(): BackgroundInitializer$Builder<BackgroundInitializer<Object>, Object>;
+    static builder<T extends unknown>(): BackgroundInitializer$Builder<BackgroundInitializer<T>, T>;
     constructor()
     constructor(arg0: ExecutorService)
     // private childInitializers: { [key: string]: BackgroundInitializer<Object> };

@@ -1,7 +1,6 @@
 import type { TokenKind } from '../../../../com/oracle/js/parser/TokenKind.d.ts'
 import type { TruffleString } from '../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class TokenType extends Enum<TokenType> {
     static ACCESSOR: TokenType;
@@ -149,7 +148,7 @@ export class TokenType extends Enum<TokenType> {
     static WITH: TokenType;
     static YIELD: TokenType;
     static YIELD_STAR: TokenType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TokenType;
     static values(): TokenType[];
     private constructor(kind: TokenKind, name: string)

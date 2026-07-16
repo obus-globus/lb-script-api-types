@@ -14,9 +14,9 @@ export class DataComponentExactPredicate extends Object implements Predicate<Dat
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentExactPredicate>;
     static allOf(paramcomponents: TypedDataComponent<Object>[]): DataComponentExactPredicate;
     static builder(): DataComponentExactPredicate$Builder;
-    static expect(paramtype: DataComponentType<Object>, paramvalue: Object | null): DataComponentExactPredicate;
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static expect<T extends unknown>(paramtype: DataComponentType<T>, paramvalue: T): DataComponentExactPredicate;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     static someOf(paramcomponents: TypedDataComponent<Object>[], ...paramtypes: DataComponentType<Object>[]): DataComponentExactPredicate;
     private constructor(expectedComponents: TypedDataComponent<Object>[])
     // private expectedComponents: TypedDataComponent<Object>[];

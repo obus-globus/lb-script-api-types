@@ -7,7 +7,7 @@ import type { StreamMemberEncoder } from '../../../../net/minecraft/network/code
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { PacketType } from '../../../../net/minecraft/network/protocol/PacketType.d.ts'
 export abstract class BundleDelimiterPacket<T extends PacketListener> extends Object implements Packet<T> {
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor()
     handle(listener: T): void;
     isSkippable(): boolean;

@@ -7,7 +7,7 @@ import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Re
 import type { RecipeHolder } from '../../../../../net/minecraft/world/item/crafting/RecipeHolder.d.ts'
 import type { SlotDisplay } from '../../../../../net/minecraft/world/item/crafting/display/SlotDisplay.d.ts'
 export class SelectableRecipe<T extends Recipe<any>> extends Record {
-    static noRecipeCodec(): StreamCodec<RegistryFriendlyByteBuf, SelectableRecipe<any>>;
+    static noRecipeCodec<T extends Recipe<any>>(): StreamCodec<RegistryFriendlyByteBuf, SelectableRecipe<T>>;
     constructor(optionDisplay: SlotDisplay, recipe: Optional<RecipeHolder<T>>)
     // private optionDisplay: SlotDisplay;
     // private recipe: Optional<RecipeHolder<T>>;

@@ -9,7 +9,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractUUIDFix } from '../../../../../net/minecraft/util/datafix/fixes/AbstractUUIDFix.d.ts'
 export class ItemStackUUIDFix extends AbstractUUIDFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     constructor(outputSchema: Schema)
     makeRule(): TypeRewriteRule;
     // private updateAttributeModifiers(tag: Dynamic<Object>): Dynamic<Object>;

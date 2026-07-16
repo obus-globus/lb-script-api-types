@@ -4,6 +4,6 @@ import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/
 import type { BehaviorControl } from '../../../../../../net/minecraft/world/entity/ai/behavior/BehaviorControl.d.ts'
 import type { MemoryModuleType } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 export class EraseMemoryIf extends Object {
-    static create(parampredicate: (param0: LivingEntity | null) => boolean, parammemoryType: MemoryModuleType<Object>): BehaviorControl<LivingEntity>;
+    static create<E extends LivingEntity>(parampredicate: (param0: E) => boolean, parammemoryType: MemoryModuleType<Object>): BehaviorControl<E>;
     constructor()
 }

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { InputBind$BindAction$Companion } from '../../../../../net/ccbluex/liquidbounce/utils/input/InputBind$BindAction$Companion.d.ts'
@@ -16,11 +15,11 @@ export class InputBind$BindAction extends Enum<InputBind$BindAction> implements 
     static SMART: InputBind$BindAction;
     static TOGGLE: InputBind$BindAction;
     static getEntries(): InputBind$BindAction[];
-    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
-    static of(string: string): InputBind$BindAction;
-    static of(string: string): Tagged;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): InputBind$BindAction;
+    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
+    static of(string: string | null): InputBind$BindAction | null;
+    static of(self: string): Tagged;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): InputBind$BindAction;
     static values(): InputBind$BindAction[];
     private constructor(tag: string)
     readonly tag: string;

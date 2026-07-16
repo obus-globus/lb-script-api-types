@@ -71,7 +71,7 @@ export class HayBlock extends RotatedPillarBlock {
     static pushEntitiesUp(paramstate: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static rotatePillar(paramstate: BlockState, paramrotation: Rotation): BlockState;
     static shouldRenderFace(paramstate: BlockState, paramneighborState: BlockState, paramdirection: Direction): boolean;
-    static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Block | null): MapCodec<Block>;
+    static simpleCodec<B extends Block>(paramconstructor: (param0: BlockBehaviour$Properties) => B): MapCodec<B>;
     static stateById(paramidWithData: number): BlockState;
     static updateFromNeighbourShapes(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;
     static updateOrDestroy(paramblockState: BlockState, paramnewState: BlockState, paramlevel: LevelAccessor, paramblockPos: BlockPos, paramupdateFlags: number): void;

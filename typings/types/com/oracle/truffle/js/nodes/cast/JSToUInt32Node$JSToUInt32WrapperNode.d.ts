@@ -4,8 +4,8 @@ import type { JavaScriptNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { JSUnaryNode } from '../../../../../../com/oracle/truffle/js/nodes/unary/JSUnaryNode.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 export abstract class JSToUInt32Node$JSToUInt32WrapperNode extends JSUnaryNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramchild: JavaScriptNode): JavaScriptNode;
     static create(paramchild: JavaScriptNode, paramunsignedRightShift: boolean, paramshiftValue: number): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;

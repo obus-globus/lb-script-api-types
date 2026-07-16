@@ -15,7 +15,7 @@ export class SetPrototypeBuiltins$NewSetPrototypeBuiltins$NewSetPrototype extend
     static symmetricDifference: SetPrototypeBuiltins$NewSetPrototypeBuiltins$NewSetPrototype;
     static union: SetPrototypeBuiltins$NewSetPrototypeBuiltins$NewSetPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SetPrototypeBuiltins$NewSetPrototypeBuiltins$NewSetPrototype;
     static values(): SetPrototypeBuiltins$NewSetPrototypeBuiltins$NewSetPrototype[];
     private constructor(length: number)

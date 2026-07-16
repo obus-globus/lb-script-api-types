@@ -12,7 +12,7 @@ import type { PositionMoveRotation } from '../../../../../net/minecraft/world/en
 import type { Relative } from '../../../../../net/minecraft/world/entity/Relative.d.ts'
 export class ClientboundPlayerPositionPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundPlayerPositionPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static of(paramid: number, paramvalues: PositionMoveRotation, paramrelatives: Relative[]): ClientboundPlayerPositionPacket;
     constructor(id: number, change: PositionMoveRotation, relatives: Relative[])
     // private change: PositionMoveRotation;

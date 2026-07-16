@@ -9,10 +9,10 @@ import type { PrivilegedExceptionAction } from '../../../java/security/Privilege
 import type { Callable } from '../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Subject extends Object implements Serializable {
-    static callAs(paramarg0: Subject, paramarg1: () => Object | null): Object | null;
+    static callAs<T extends unknown>(paramarg0: Subject, paramarg1: () => T): T;
     static current(): Subject;
-    static doAs(paramarg0: Subject, paramarg1: () => Object | null): Object | null;
-    static doAsPrivileged(paramarg0: Subject, paramarg1: () => Object | null, paramarg2: AccessControlContext): Object | null;
+    static doAs<T extends unknown>(paramarg0: Subject, paramarg1: () => T): T;
+    static doAsPrivileged<T extends unknown>(paramarg0: Subject, paramarg1: () => T, paramarg2: AccessControlContext): T;
     static getSubject(paramarg0: AccessControlContext): Subject;
     constructor()
     constructor(arg0: boolean, arg1: Principal[], arg2: (Object | null)[], arg3: (Object | null)[])

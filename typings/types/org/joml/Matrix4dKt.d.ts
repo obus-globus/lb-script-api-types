@@ -11,29 +11,29 @@ import type { Quaternionfc } from '../../org/joml/Quaternionfc.d.ts'
 import type { Vector4d } from '../../org/joml/Vector4d.d.ts'
 import type { Vector4dc } from '../../org/joml/Vector4dc.d.ts'
 export class Matrix4dKt extends Object {
-    static getMatrix4d(paramarg0: ByteBuffer, paramarg1: Matrix4d): Matrix4d;
-    static getMatrix4d(paramarg0: DoubleBuffer): Matrix4d;
-    static getMatrix4d(paramarg0: DoubleBuffer, paramarg1: Matrix4d): Matrix4d;
-    static minus(paramarg0: Matrix4dc, paramarg1: Matrix4dc): Matrix4d;
-    static minusAssign(paramarg0: Matrix4d, paramarg1: Matrix4dc): void;
-    static mulComponentWise(paramarg0: Matrix4dc, paramarg1: Matrix4dc): Matrix4d;
-    static plus(paramarg0: Matrix4dc, paramarg1: Matrix4dc): Matrix4d;
-    static plusAssign(paramarg0: Matrix4d, paramarg1: Matrix4dc): void;
-    static putMatrix4d(paramarg0: ByteBuffer, paramarg1: number, paramarg2: Matrix4d): ByteBuffer;
-    static putMatrix4d(paramarg0: ByteBuffer, paramarg1: Matrix4d): ByteBuffer;
-    static putMatrix4d(paramarg0: DoubleBuffer, paramarg1: number, paramarg2: Matrix4d): DoubleBuffer;
-    static putMatrix4d(paramarg0: DoubleBuffer, paramarg1: Matrix4d): DoubleBuffer;
-    static times(paramarg0: Matrix4dc, paramarg1: AxisAngle4d): Matrix4d;
-    static times(paramarg0: Matrix4dc, paramarg1: AxisAngle4f): Matrix4d;
-    static times(paramarg0: Matrix4dc, paramarg1: Matrix4dc): Matrix4d;
-    static times(paramarg0: Matrix4dc, paramarg1: Matrix4fc): Matrix4d;
-    static times(paramarg0: Matrix4dc, paramarg1: Quaterniondc): Matrix4d;
-    static times(paramarg0: Matrix4dc, paramarg1: Quaternionfc): Matrix4d;
-    static times(paramarg0: Matrix4dc, paramarg1: Vector4dc): Vector4d;
-    static timesAssign(paramarg0: Matrix4d, paramarg1: AxisAngle4d): void;
-    static timesAssign(paramarg0: Matrix4d, paramarg1: AxisAngle4f): void;
-    static timesAssign(paramarg0: Matrix4d, paramarg1: Matrix4dc): void;
-    static timesAssign(paramarg0: Matrix4d, paramarg1: Matrix4fc): void;
-    static timesAssign(paramarg0: Matrix4d, paramarg1: Quaterniondc): void;
-    static timesAssign(paramarg0: Matrix4d, paramarg1: Quaternionfc): void;
+    static getMatrix4d(self: ByteBuffer, v: Matrix4d): Matrix4d;
+    static getMatrix4d(self: DoubleBuffer): Matrix4d;
+    static getMatrix4d(self: DoubleBuffer, v: Matrix4d): Matrix4d;
+    static minus(self: Matrix4dc, m: Matrix4dc): Matrix4d;
+    static minusAssign(self: Matrix4d, m: Matrix4dc): void;
+    static mulComponentWise(self: Matrix4dc, m: Matrix4dc): Matrix4d;
+    static plus(self: Matrix4dc, m: Matrix4dc): Matrix4d;
+    static plusAssign(self: Matrix4d, m: Matrix4dc): void;
+    static putMatrix4d(self: ByteBuffer, index: number, v: Matrix4d): ByteBuffer;
+    static putMatrix4d(self: ByteBuffer, v: Matrix4d): ByteBuffer;
+    static putMatrix4d(self: DoubleBuffer, index: number, v: Matrix4d): DoubleBuffer;
+    static putMatrix4d(self: DoubleBuffer, v: Matrix4d): DoubleBuffer;
+    static times(self: Matrix4dc, a: AxisAngle4d): Matrix4d;
+    static times(self: Matrix4dc, a: AxisAngle4f): Matrix4d;
+    static times(self: Matrix4dc, m: Matrix4dc): Matrix4d;
+    static times(self: Matrix4dc, m: Matrix4fc): Matrix4d;
+    static times(self: Matrix4dc, q: Quaterniondc): Matrix4d;
+    static times(self: Matrix4dc, q: Quaternionfc): Matrix4d;
+    static times(self: Matrix4dc, v: Vector4dc): Vector4d;
+    static timesAssign(self: Matrix4d, a: AxisAngle4d): void;
+    static timesAssign(self: Matrix4d, a: AxisAngle4f): void;
+    static timesAssign(self: Matrix4d, m: Matrix4dc): void;
+    static timesAssign(self: Matrix4d, m: Matrix4fc): void;
+    static timesAssign(self: Matrix4d, q: Quaterniondc): void;
+    static timesAssign(self: Matrix4d, q: Quaternionfc): void;
 }

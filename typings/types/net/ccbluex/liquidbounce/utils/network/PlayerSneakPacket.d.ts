@@ -2,7 +2,6 @@ import type { PacketWrapper } from '../../../../../com/viaversion/viaversion/api
 import type { ServerboundPackets1_21_5 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_4to1_21_5/packet/ServerboundPackets1_21_5.d.ts'
 import type { Protocol1_21_5To1_21_6 } from '../../../../../com/viaversion/viaversion/protocols/v1_21_5to1_21_6/Protocol1_21_5To1_21_6.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { LegacyPacket } from '../../../../../net/ccbluex/liquidbounce/utils/network/LegacyPacket.d.ts'
 /**
@@ -14,8 +13,8 @@ export class PlayerSneakPacket extends Enum<PlayerSneakPacket> implements Legacy
     static START: PlayerSneakPacket;
     static STOP: PlayerSneakPacket;
     static getEntries(): PlayerSneakPacket[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): PlayerSneakPacket;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): PlayerSneakPacket;
     static values(): PlayerSneakPacket[];
     private constructor(sneaking: boolean)
     readonly packetType: ServerboundPackets1_21_5;

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class DumpArchiveEntry$PERMISSION extends Enum<DumpArchiveEntry$PERMISSION> {
     static GROUP_EXEC: DumpArchiveEntry$PERMISSION;
@@ -15,7 +14,7 @@ export class DumpArchiveEntry$PERMISSION extends Enum<DumpArchiveEntry$PERMISSIO
     static WORLD_READ: DumpArchiveEntry$PERMISSION;
     static WORLD_WRITE: DumpArchiveEntry$PERMISSION;
     static find(paramarg0: number): DumpArchiveEntry$PERMISSION[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DumpArchiveEntry$PERMISSION;
     static values(): DumpArchiveEntry$PERMISSION[];
     private constructor(arg2: number)

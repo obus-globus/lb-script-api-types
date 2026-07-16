@@ -11,8 +11,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class ListBox$Instance extends Enum<ListBox$Instance> implements Traversable<ListBox$Mu, ListBox$Instance$Mu> {
     static INSTANCE: ListBox$Instance;
-    static unbox(paramarg0: App<Traversable$Mu, K1>): Traversable<K1, Traversable$Mu>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static unbox<F extends K1, Mu extends Traversable$Mu>(paramarg0: App<Mu, F>): Traversable<F, Mu>;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ListBox$Instance;
     static values(): ListBox$Instance[];
     private constructor()

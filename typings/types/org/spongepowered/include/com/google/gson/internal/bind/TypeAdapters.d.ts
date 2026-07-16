@@ -61,8 +61,8 @@ export class TypeAdapters extends Object {
     static UUID: TypeAdapter<UUID>;
     static UUID_FACTORY: TypeAdapterFactory;
     static newEnumTypeHierarchyFactory(): TypeAdapterFactory;
-    static newFactory(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: TypeAdapter<Object>): TypeAdapterFactory;
-    static newFactory(paramarg0: Class<Object>, paramarg1: TypeAdapter<Object>): TypeAdapterFactory;
-    static newFactoryForMultipleTypes(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: TypeAdapter<Object>): TypeAdapterFactory;
-    static newTypeHierarchyFactory(paramarg0: Class<Object>, paramarg1: TypeAdapter<Object>): TypeAdapterFactory;
+    static newFactory<TT extends unknown>(paramarg0: Class<TT>, paramarg1: Class<TT>, paramarg2: TypeAdapter<Object>): TypeAdapterFactory;
+    static newFactory<TT extends unknown>(paramarg0: Class<TT>, paramarg1: TypeAdapter<TT>): TypeAdapterFactory;
+    static newFactoryForMultipleTypes<TT extends unknown>(paramarg0: Class<TT>, paramarg1: Class<TT>, paramarg2: TypeAdapter<Object>): TypeAdapterFactory;
+    static newTypeHierarchyFactory<TT extends unknown>(paramarg0: Class<TT>, paramarg1: TypeAdapter<TT>): TypeAdapterFactory;
 }

@@ -9,7 +9,7 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class WebAssemblyInstancePrototypeBuiltins$WebAssemblyInstancePrototype extends Enum<WebAssemblyInstancePrototypeBuiltins$WebAssemblyInstancePrototype> implements BuiltinEnum<WebAssemblyInstancePrototypeBuiltins$WebAssemblyInstancePrototype> {
     static exports: WebAssemblyInstancePrototypeBuiltins$WebAssemblyInstancePrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WebAssemblyInstancePrototypeBuiltins$WebAssemblyInstancePrototype;
     static values(): WebAssemblyInstancePrototypeBuiltins$WebAssemblyInstancePrototype[];
     private constructor(length: number)

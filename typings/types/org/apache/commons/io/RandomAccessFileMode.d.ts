@@ -13,7 +13,7 @@ export class RandomAccessFileMode extends Enum<RandomAccessFileMode> {
     static READ_WRITE: RandomAccessFileMode;
     static READ_WRITE_SYNC_ALL: RandomAccessFileMode;
     static READ_WRITE_SYNC_CONTENT: RandomAccessFileMode;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RandomAccessFileMode;
     static valueOf(...paramarg0: OpenOption[]): RandomAccessFileMode;
     static valueOfMode(paramarg0: string): RandomAccessFileMode;

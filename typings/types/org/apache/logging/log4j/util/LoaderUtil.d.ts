@@ -12,13 +12,13 @@ export class LoaderUtil extends Object {
     static isClassAvailable(paramclassName: string): boolean;
     static loadClass(paramclassName: string): Class<Object>;
     static loadClassUnchecked(paramclassName: string): Class<Object>;
-    static newCheckedInstanceOf(paramclassName: string, paramclazz: Class<Object>): Object | null;
-    static newCheckedInstanceOfProperty(parampropertyName: string, paramclazz: Class<Object>): Object | null;
-    static newCheckedInstanceOfProperty(parampropertyName: string, paramclazz: Class<Object>, paramdefaultSupplier: () => Object | null): Object | null;
-    static newInstanceOf(paramclazz: Class<Object>): Object | null;
-    static newInstanceOf(paramclassName: string): Object | null;
-    static newInstanceOfUnchecked(paramclazz: Class<Object>): Object | null;
-    static newInstanceOfUnchecked(paramclassName: string): Object | null;
-    static newInstanceOfUnchecked(paramclassName: string, paramsupertype: Class<Object>): Object | null;
+    static newCheckedInstanceOf<T extends unknown>(paramclassName: string, paramclazz: Class<T>): T;
+    static newCheckedInstanceOfProperty<T extends unknown>(parampropertyName: string, paramclazz: Class<T>): T;
+    static newCheckedInstanceOfProperty<T extends unknown>(parampropertyName: string, paramclazz: Class<T>, paramdefaultSupplier: () => T): T;
+    static newInstanceOf<T extends unknown>(paramclazz: Class<T>): T;
+    static newInstanceOf<T extends unknown>(paramclassName: string): T;
+    static newInstanceOfUnchecked<T extends unknown>(paramclazz: Class<T>): T;
+    static newInstanceOfUnchecked<T extends unknown>(paramclassName: string): T;
+    static newInstanceOfUnchecked<T extends unknown>(paramclassName: string, paramsupertype: Class<T>): T;
     private constructor()
 }

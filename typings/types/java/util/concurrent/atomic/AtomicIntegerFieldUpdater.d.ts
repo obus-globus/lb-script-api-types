@@ -3,7 +3,7 @@ import type { IntBinaryOperator } from '../../../../java/util/function/IntBinary
 import type { IntUnaryOperator } from '../../../../java/util/function/IntUnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AtomicIntegerFieldUpdater<T extends unknown> extends Object {
-    static newUpdater(paramarg0: Class<Object>, paramarg1: string): AtomicIntegerFieldUpdater<Object>;
+    static newUpdater<U extends unknown>(paramarg0: Class<U>, paramarg1: string): AtomicIntegerFieldUpdater<U>;
     constructor()
     accumulateAndGet(arg0: T, arg1: number, arg2: (param0: number, param1: number) => number): number;
     addAndGet(arg0: T, arg1: number): number;

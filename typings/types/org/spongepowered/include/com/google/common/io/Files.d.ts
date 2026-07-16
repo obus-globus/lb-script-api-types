@@ -14,7 +14,7 @@ export class Files extends Object {
     static asByteSource(paramarg0: File): ByteSource;
     static asCharSink(paramarg0: File, paramarg1: Charset, ...paramarg2: FileWriteMode[]): CharSink;
     static asCharSource(paramarg0: File, paramarg1: Charset): CharSource;
-    static readLines(paramarg0: File, paramarg1: Charset, paramarg2: LineProcessor<Object>): Object | null;
+    static readLines<T extends unknown>(paramarg0: File, paramarg1: Charset, paramarg2: LineProcessor<T>): T;
     static readLines(paramarg0: File, paramarg1: Charset): string[];
     static write(paramarg0: number[], paramarg1: File): void;
     static write(paramarg0: CharSequence, paramarg1: File, paramarg2: Charset): void;

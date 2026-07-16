@@ -2,8 +2,8 @@ import type { ReferenceBooleanPair } from '../../../../../it/unimi/dsi/fastutil/
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ReferenceBooleanMutablePair<K extends unknown> extends Object implements ReferenceBooleanPair<K>, Serializable {
-    static of(paramarg0: Object | null, paramarg1: boolean): ReferenceBooleanMutablePair<Object>;
-    static of(paramarg0: Object | null, paramarg1: boolean): ReferenceBooleanPair<Object>;
+    static of<K extends unknown>(paramarg0: K, paramarg1: boolean): ReferenceBooleanMutablePair<K>;
+    static of<K extends unknown>(paramarg0: K, paramarg1: boolean): ReferenceBooleanPair<K>;
     constructor(arg0: K, arg1: boolean)
     // private left: K;
     // private right: boolean;

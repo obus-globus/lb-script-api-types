@@ -3,16 +3,16 @@ import type { AtomicLongArray } from '../../../java/util/concurrent/atomic/Atomi
 import type { AtomicReferenceArray } from '../../../java/util/concurrent/atomic/AtomicReferenceArray.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class AtomicArraysKt__AtomicArrays_commonKt extends Object {
-    static AtomicArray(paramarg0: number, paramarg1: (param0: Object) => Object | null): AtomicReferenceArray<Object>;
-    static AtomicIntArray(paramarg0: number, paramarg1: (param0: Object) => number): AtomicIntegerArray;
-    static AtomicLongArray(paramarg0: number, paramarg1: (param0: Object) => number): AtomicLongArray;
-    static atomicArrayOfNulls(paramarg0: number): AtomicReferenceArray<Object>;
-    static decrementAndFetchAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
-    static decrementAndFetchAt(paramarg0: AtomicLongArray, paramarg1: number): number;
-    static fetchAndDecrementAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
-    static fetchAndDecrementAt(paramarg0: AtomicLongArray, paramarg1: number): number;
-    static fetchAndIncrementAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
-    static fetchAndIncrementAt(paramarg0: AtomicLongArray, paramarg1: number): number;
-    static incrementAndFetchAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
-    static incrementAndFetchAt(paramarg0: AtomicLongArray, paramarg1: number): number;
+    static AtomicArray<T extends unknown>(size: number, init: (param0: number) => T): AtomicReferenceArray<T>;
+    static AtomicIntArray(size: number, init: (param0: number) => number): AtomicIntegerArray;
+    static AtomicLongArray(size: number, init: (param0: number) => number): AtomicLongArray;
+    static atomicArrayOfNulls<T extends unknown>(size: number): AtomicReferenceArray<T>;
+    static decrementAndFetchAt(self: AtomicIntegerArray, index: number): number;
+    static decrementAndFetchAt(self: AtomicLongArray, index: number): number;
+    static fetchAndDecrementAt(self: AtomicIntegerArray, index: number): number;
+    static fetchAndDecrementAt(self: AtomicLongArray, index: number): number;
+    static fetchAndIncrementAt(self: AtomicIntegerArray, index: number): number;
+    static fetchAndIncrementAt(self: AtomicLongArray, index: number): number;
+    static incrementAndFetchAt(self: AtomicIntegerArray, index: number): number;
+    static incrementAndFetchAt(self: AtomicLongArray, index: number): number;
 }

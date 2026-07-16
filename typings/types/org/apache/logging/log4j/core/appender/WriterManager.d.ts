@@ -5,8 +5,8 @@ import type { StringLayout } from '../../../../../../org/apache/logging/log4j/co
 import type { AbstractManager } from '../../../../../../org/apache/logging/log4j/core/appender/AbstractManager.d.ts'
 import type { ManagerFactory } from '../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 export class WriterManager extends AbstractManager {
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
-    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<WriterManager, Object>): WriterManager;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
+    static getManager<T extends unknown>(paramname: string, paramdata: T, paramfactory: ManagerFactory<WriterManager, T>): WriterManager;
     static hasManager(paramname: string): boolean;
     constructor(writer: Writer, streamName: string, layout: StringLayout, writeHeader: boolean)
     // private layout: StringLayout;

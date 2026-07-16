@@ -121,7 +121,7 @@ export class CipherSuite extends Object {
     static TLS_RSA_WITH_RC4_128_MD5: CipherSuite;
     static TLS_RSA_WITH_RC4_128_SHA: CipherSuite;
     static TLS_RSA_WITH_SEED_CBC_SHA: CipherSuite;
-    static forJavaName(paramarg0: string): CipherSuite;
+    static forJavaName(javaName: string): CipherSuite;
     private constructor(javaName: string)
     // private javaName: string;
     javaName(): string;

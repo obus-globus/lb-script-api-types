@@ -187,8 +187,8 @@ export class JSRuntime extends Object {
     static propertyNameToIntegerIndex(parampropertyName: TruffleString): number;
     static quote(paramvalue: TruffleString): TruffleString;
     static quote(paramvalue: string): string;
-    static requireObjectCoercible(paramargument: Object | null): Object | null;
-    static rethrow(paramex: Throwable): RuntimeException;
+    static requireObjectCoercible<T extends unknown>(paramargument: T): T;
+    static rethrow<E extends Throwable>(paramex: Throwable): RuntimeException;
     static safeToString(paramvalue: Object): TruffleString;
     static setBufferElementDirect(parambufferAccess: ByteBufferAccess, parambuffer: ByteBuffer, paramelementType: TypedArrayFactory, paramindex: number, paramvalue: Object): void;
     static stringToBigInt(params: TruffleString): BigInt;

@@ -7,7 +7,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { SimplestEntityRenameFix } from '../../../../../net/minecraft/util/datafix/fixes/SimplestEntityRenameFix.d.ts'
 export class EntityTippedArrowFix extends SimplestEntityRenameFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     constructor(outputSchema: Schema, changesType: boolean)
     rename(name: string): string;
 }

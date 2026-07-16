@@ -2,9 +2,10 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../java/lang/Runnable.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
-import type { Continuation } from '../../../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../../../kotlin/coroutines/CoroutineContext.d.ts'
+import type { Duration } from '../../../../kotlin/time/Duration.d.ts'
 import type { CoroutineDispatcher } from '../../../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
+import type { CoroutineScope } from '../../../../kotlinx/coroutines/CoroutineScope.d.ts'
 import type { Event } from '../../../../net/ccbluex/liquidbounce/event/Event.d.ts'
 import type { EventHook } from '../../../../net/ccbluex/liquidbounce/event/EventHook.d.ts'
 import type { EventListener } from '../../../../net/ccbluex/liquidbounce/event/EventListener.d.ts'
@@ -16,7 +17,7 @@ export class SuspendHandlersKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L42 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:42}
      */
-    static sequenceHandler(eventListener: EventListener, priority: number, dispatcher: CoroutineDispatcher, onCancellation: () => void, eventHandler: (param0: Object, param1: Object, param2: Object) => Object): EventHook<Event>;
+    static sequenceHandler<T extends Event>(self: EventListener, priority: number, dispatcher: CoroutineDispatcher | null, onCancellation: (() => void) | null, eventHandler: (param0: CoroutineScope, param1: T) => void): EventHook<T>;
     /**
      * Start a {@link Job} on event.
      *
@@ -28,13 +29,13 @@ export class SuspendHandlersKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L78 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:78}
      */
-    static suspendHandler(eventListener: EventListener, context: CoroutineContext, priority: number, behavior: SuspendHandlerBehavior, handler: (param0: Object, param1: Object, param2: Object) => Object): EventHook<Event>;
+    static suspendHandler<T extends Event>(self: EventListener, context: CoroutineContext, priority: number, behavior: SuspendHandlerBehavior, handler: (param0: CoroutineScope, param1: T) => void): EventHook<T>;
     /**
      * Registers a repeatable sequence which repeats the execution of code on {@link GameTickEvent}.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L58 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:58}
      */
-    static tickHandler(eventListener: EventListener, dispatcher: CoroutineDispatcher, onCancellation: () => void, eventHandler: (param0: Object, param1: Object) => Object): EventHook<GameTickEvent>;
+    static tickHandler(self: EventListener, dispatcher: CoroutineDispatcher | null, onCancellation: (() => void) | null, eventHandler: (param0: CoroutineScope) => void): EventHook<GameTickEvent>;
     /**
      * Wait an event of type {@link T} which matches given {@link predicate}.
      *
@@ -47,7 +48,7 @@ export class SuspendHandlersKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt#L136 | src/main/kotlin/net/ccbluex/liquidbounce/event/SuspendHandlers.kt:136}
      */
-    static waitMatches(paramarg0: EventListener, paramarg1: Class<Event>, paramarg2: number, paramarg3: (param0: Event | null) => boolean, paramarg4: Continuation<Object>): Object;
-    static waitMatches(paramarg0: EventListener, paramarg1: number, paramarg2: (param0: Event | null) => boolean, paramarg3: Continuation<Object>): Object;
-// (invalid TS: name contains '-')     static waitMatchesWithTimeout-WPwdCS8(paramarg0: EventListener, paramarg1: number, paramarg2: number, paramarg3: (param0: Event | null) => boolean, paramarg4: Continuation<Object>): Object;
+    static waitMatches<T extends Event>(self: EventListener, eventClass: Class<T>, priority: number, predicate: (param0: T) => boolean): T;
+    static waitMatches<T extends Event>(self: EventListener, priority: number, predicate: (param0: T) => boolean): T;
+// (invalid TS: name contains '-')     static waitMatchesWithTimeout-WPwdCS8<T extends Event>(self: EventListener, timeout: Duration, priority: number, predicate: (param0: T) => boolean): T | null;
 }

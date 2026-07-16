@@ -13,14 +13,14 @@ import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class MinMaxBounds$Bounds<T extends Number & Comparable<T>> extends Record {
-    static any(): MinMaxBounds$Bounds<Number>;
-    static atLeast(paramvalue: Number | null): MinMaxBounds$Bounds<Number>;
-    static atMost(paramvalue: Number | null): MinMaxBounds$Bounds<Number>;
-    static between(parammin: Number | null, parammax: Number | null): MinMaxBounds$Bounds<Number>;
-    static createCodec(paramnumberCodec: Codec<Number>): Codec<MinMaxBounds$Bounds<Number>>;
-    static createStreamCodec(paramnumberCodec: StreamCodec<ByteBuf, Number>): StreamCodec<ByteBuf, MinMaxBounds$Bounds<Number>>;
-    static exactly(paramvalue: Number | null): MinMaxBounds$Bounds<Number>;
-    static fromReader(paramreader: StringReader, paramconverter: (param0: string) => Number | null, paramparseExc: () => DynamicCommandExceptionType): MinMaxBounds$Bounds<Number>;
+    static any<T extends Number & Comparable<T>>(): MinMaxBounds$Bounds<T>;
+    static atLeast<T extends Number & Comparable<T>>(paramvalue: T): MinMaxBounds$Bounds<T>;
+    static atMost<T extends Number & Comparable<T>>(paramvalue: T): MinMaxBounds$Bounds<T>;
+    static between<T extends Number & Comparable<T>>(parammin: T, parammax: T): MinMaxBounds$Bounds<T>;
+    static createCodec<T extends Number & Comparable<T>>(paramnumberCodec: Codec<T>): Codec<MinMaxBounds$Bounds<T>>;
+    static createStreamCodec<B extends ByteBuf, T extends Number & Comparable<T>>(paramnumberCodec: StreamCodec<B, T>): StreamCodec<B, MinMaxBounds$Bounds<T>>;
+    static exactly<T extends Number & Comparable<T>>(paramvalue: T): MinMaxBounds$Bounds<T>;
+    static fromReader<T extends Number & Comparable<T>>(paramreader: StringReader, paramconverter: (param0: string) => T, paramparseExc: () => DynamicCommandExceptionType): MinMaxBounds$Bounds<T>;
     constructor(min: Optional<T>, max: Optional<T>)
     // private max: Optional<T>;
     // private min: Optional<T>;

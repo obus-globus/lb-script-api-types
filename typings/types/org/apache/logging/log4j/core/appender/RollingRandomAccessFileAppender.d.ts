@@ -7,6 +7,7 @@ import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Fil
 import type { Layout } from '../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { AbstractOutputStreamAppender } from '../../../../../../org/apache/logging/log4j/core/appender/AbstractOutputStreamAppender.d.ts'
+import type { RollingRandomAccessFileAppender$Builder } from '../../../../../../org/apache/logging/log4j/core/appender/RollingRandomAccessFileAppender$Builder.d.ts'
 import type { RollingRandomAccessFileManager } from '../../../../../../org/apache/logging/log4j/core/appender/rolling/RollingRandomAccessFileManager.d.ts'
 import type { RolloverStrategy } from '../../../../../../org/apache/logging/log4j/core/appender/rolling/RolloverStrategy.d.ts'
 import type { TriggeringPolicy } from '../../../../../../org/apache/logging/log4j/core/appender/rolling/TriggeringPolicy.d.ts'
@@ -18,8 +19,8 @@ export class RollingRandomAccessFileAppender extends AbstractOutputStreamAppende
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Appender[];
-    static createAppender(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignoreExceptions: string, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RollingRandomAccessFileAppender;
-    static newBuilder(): Object | null;
+    static createAppender<B extends RollingRandomAccessFileAppender$Builder<B>>(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignoreExceptions: string, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RollingRandomAccessFileAppender;
+    static newBuilder<B extends RollingRandomAccessFileAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: RollingRandomAccessFileManager, arg4: string, arg5: string, arg6: boolean, arg7: boolean, arg8: number, arg9: Advertiser, arg10: Property[], arg11: any)
     // private advertisement: Object;

@@ -7,8 +7,8 @@ import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts
 import type { RunnableFuture } from '../../../../../java/util/concurrent/RunnableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TrustedListenableFutureTask<V extends unknown> extends FluentFuture$TrustedFuture<V> implements RunnableFuture<V> {
-    static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
-    static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
+    static from<V extends unknown>(paramfuture: FluentFuture<V>): FluentFuture<V>;
+    static from<V extends unknown>(paramfuture: ListenableFuture<V>): FluentFuture<V>;
     constructor(callable: () => ListenableFuture<V>)
     constructor(callable: () => V)
     // private task: InterruptibleTask<Object>;

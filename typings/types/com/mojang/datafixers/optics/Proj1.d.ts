@@ -10,9 +10,9 @@ import type { Pair } from '../../../../com/mojang/datafixers/util/Pair.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Proj1<F extends unknown, G extends unknown, F2 extends unknown> extends Object implements Lens<Pair<F, G>, Pair<F2, G>, F, F2> {
     static INSTANCE: Proj1<Object, Object, Object>;
-    static box(paramarg0: Lens<Object, Object, Object, Object>): App2<Lens$Mu2<Object, Object>, Object, Object>;
-    static unbox(paramarg0: App2<Lens$Mu<Object, Object>, Object, Object>): Lens<Object, Object, Object, Object>;
-    static unbox2(paramarg0: App2<Lens$Mu2<Object, Object>, Object, Object>): Lens<Object, Object, Object, Object>;
+    static box<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: Lens<S, T, A, B>): App2<Lens$Mu2<S, T>, B, A>;
+    static unbox<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: App2<Lens$Mu<A, B>, S, T>): Lens<S, T, A, B>;
+    static unbox2<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: App2<Lens$Mu2<S, T>, B, A>): Lens<S, T, A, B>;
     private constructor()
     eval<P extends K2>(arg0: App<Cartesian$Mu, P>): FunctionType<App2<P, F, F2>, App2<P, Pair<F, G>, Pair<F2, G>>>;
     toString(): string;

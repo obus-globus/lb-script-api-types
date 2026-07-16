@@ -4,12 +4,12 @@ import type { DeserializationStrategy } from '../../kotlinx/serialization/Deseri
 import type { SerializationStrategy } from '../../kotlinx/serialization/SerializationStrategy.d.ts'
 import type { StringFormat } from '../../kotlinx/serialization/StringFormat.d.ts'
 export class SerialFormatKt extends Object {
-    static decodeFromByteArray(paramarg0: BinaryFormat, paramarg1: number[]): Object | null;
-    static decodeFromHexString(paramarg0: BinaryFormat, paramarg1: string): Object | null;
-    static decodeFromHexString(paramarg0: BinaryFormat, paramarg1: DeserializationStrategy<Object>, paramarg2: string): Object | null;
-    static decodeFromString(paramarg0: StringFormat, paramarg1: string): Object | null;
-    static encodeToByteArray(paramarg0: BinaryFormat, paramarg1: Object | null): number[];
-    static encodeToHexString(paramarg0: BinaryFormat, paramarg1: Object | null): string;
-    static encodeToHexString(paramarg0: BinaryFormat, paramarg1: SerializationStrategy<Object>, paramarg2: Object | null): string;
-    static encodeToString(paramarg0: StringFormat, paramarg1: Object | null): string;
+    static decodeFromByteArray<T extends unknown>(self: BinaryFormat, bytes: number[]): T;
+    static decodeFromHexString<T extends unknown>(self: BinaryFormat, hex: string): T;
+    static decodeFromHexString<T extends unknown>(self: BinaryFormat, deserializer: DeserializationStrategy<T>, hex: string): T;
+    static decodeFromString<T extends unknown>(self: StringFormat, string: string): T;
+    static encodeToByteArray<T extends unknown>(self: BinaryFormat, value: T): number[];
+    static encodeToHexString<T extends unknown>(self: BinaryFormat, value: T): string;
+    static encodeToHexString<T extends unknown>(self: BinaryFormat, serializer: SerializationStrategy<T>, value: T): string;
+    static encodeToString<T extends unknown>(self: StringFormat, value: T): string;
 }

@@ -22,27 +22,27 @@ import type { Functions$FailableRunnable } from '../../../../org/apache/commons/
 import type { Functions$FailableSupplier } from '../../../../org/apache/commons/lang3/Functions$FailableSupplier.d.ts'
 import type { Streams$FailableStream } from '../../../../org/apache/commons/lang3/Streams$FailableStream.d.ts'
 export class Functions extends Object {
-    static accept(paramarg0: (param0: Object | null) => void, paramarg1: Object | null): void;
-    static accept(paramarg0: (param0: Object | null, param1: Object | null) => void, paramarg1: Object | null, paramarg2: Object | null): void;
-    static apply(paramarg0: (param0: Object | null) => Object | null, paramarg1: Object | null): Object | null;
-    static apply(paramarg0: (param0: Object | null, param1: Object | null) => Object | null, paramarg1: Object | null, paramarg2: Object | null): Object | null;
-    static asBiConsumer(paramarg0: (param0: Object | null, param1: Object | null) => void): (param0: Object | null, param1: Object | null) => void;
-    static asBiFunction(paramarg0: (param0: Object | null, param1: Object | null) => Object | null): (param0: Object | null, param1: Object | null) => Object | null;
-    static asBiPredicate(paramarg0: (param0: Object | null, param1: Object | null) => boolean): (param0: Object | null, param1: Object | null) => boolean;
-    static asCallable(paramarg0: () => Object | null): () => Object | null;
-    static asConsumer(paramarg0: (param0: Object | null) => void): (param0: Object | null) => void;
-    static asFunction(paramarg0: (param0: Object | null) => Object | null): (param0: Object | null) => Object | null;
-    static asPredicate(paramarg0: (param0: Object | null) => boolean): (param0: Object | null) => boolean;
+    static accept<O extends unknown, T extends Throwable>(paramarg0: (param0: O) => void, paramarg1: O): void;
+    static accept<O1 extends unknown, O2 extends unknown, T extends Throwable>(paramarg0: (param0: O1, param1: O2) => void, paramarg1: O1, paramarg2: O2): void;
+    static apply<I extends unknown, O extends unknown, T extends Throwable>(paramarg0: (param0: I) => O, paramarg1: I): O;
+    static apply<O1 extends unknown, O2 extends unknown, O extends unknown, T extends Throwable>(paramarg0: (param0: O1, param1: O2) => O, paramarg1: O1, paramarg2: O2): O;
+    static asBiConsumer<O1 extends unknown, O2 extends unknown>(paramarg0: (param0: O1, param1: O2) => void): (param0: O1, param1: O2) => void;
+    static asBiFunction<O1 extends unknown, O2 extends unknown, O extends unknown>(paramarg0: (param0: O1, param1: O2) => O): (param0: O1, param1: O2) => O;
+    static asBiPredicate<O1 extends unknown, O2 extends unknown>(paramarg0: (param0: O1, param1: O2) => boolean): (param0: O1, param1: O2) => boolean;
+    static asCallable<O extends unknown>(paramarg0: () => O): () => O;
+    static asConsumer<I extends unknown>(paramarg0: (param0: I) => void): (param0: I) => void;
+    static asFunction<I extends unknown, O extends unknown>(paramarg0: (param0: I) => O): (param0: I) => O;
+    static asPredicate<I extends unknown>(paramarg0: (param0: I) => boolean): (param0: I) => boolean;
     static asRunnable(paramarg0: () => void): () => void;
-    static asSupplier(paramarg0: () => Object | null): () => Object | null;
-    static call(paramarg0: () => Object | null): Object | null;
-    static get(paramarg0: () => Object | null): Object | null;
+    static asSupplier<O extends unknown>(paramarg0: () => O): () => O;
+    static call<O extends unknown, T extends Throwable>(paramarg0: () => O): O;
+    static get<O extends unknown, T extends Throwable>(paramarg0: () => O): O;
     static rethrow(paramarg0: Throwable): RuntimeException;
-    static run(paramarg0: () => void): void;
-    static stream(paramarg0: (Object | null)[]): Streams$FailableStream<Object>;
-    static stream(paramarg0: Stream<Object>): Streams$FailableStream<Object>;
-    static test(paramarg0: (param0: Object | null) => boolean, paramarg1: Object | null): boolean;
-    static test(paramarg0: (param0: Object | null, param1: Object | null) => boolean, paramarg1: Object | null, paramarg2: Object | null): boolean;
+    static run<T extends Throwable>(paramarg0: () => void): void;
+    static stream<O extends unknown>(paramarg0: O[]): Streams$FailableStream<O>;
+    static stream<O extends unknown>(paramarg0: Stream<O>): Streams$FailableStream<O>;
+    static test<O extends unknown, T extends Throwable>(paramarg0: (param0: O) => boolean, paramarg1: O): boolean;
+    static test<O1 extends unknown, O2 extends unknown, T extends Throwable>(paramarg0: (param0: O1, param1: O2) => boolean, paramarg1: O1, paramarg2: O2): boolean;
     static tryWithResources(paramarg0: () => void, paramarg1: (param0: Throwable) => void, paramarg2: () => void[]): void;
     static tryWithResources(paramarg0: () => void, paramarg1: () => void[]): void;
     constructor()

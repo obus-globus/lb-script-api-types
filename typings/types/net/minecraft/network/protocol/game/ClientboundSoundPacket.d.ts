@@ -13,7 +13,7 @@ import type { SoundSource } from '../../../../../net/minecraft/sounds/SoundSourc
 export class ClientboundSoundPacket extends Object implements Packet<ClientGamePacketListener> {
     static LOCATION_ACCURACY: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSoundPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(sound: Holder<SoundEvent>, source: SoundSource, x: number, y: number, z: number, volume: number, pitch: number, seed: number)
     readonly pitch: number;
     readonly seed: number;

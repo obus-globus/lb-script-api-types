@@ -20,8 +20,8 @@ export abstract class SingleItemRecipe extends Object implements Recipe<SingleRe
     static CODEC: Codec<Recipe<any>>;
     static KEY_CODEC: Codec<ResourceKey<Recipe<any>>>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Recipe<any>>;
-    static simpleMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): MapCodec<SingleItemRecipe>;
-    static simpleStreamCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): StreamCodec<RegistryFriendlyByteBuf, SingleItemRecipe>;
+    static simpleMapCodec<T extends SingleItemRecipe>(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => T): MapCodec<T>;
+    static simpleStreamCodec<T extends SingleItemRecipe>(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => T): StreamCodec<RegistryFriendlyByteBuf, T>;
     constructor(commonInfo: Recipe$CommonInfo, input: Ingredient, result: ItemStackTemplate)
     // private commonInfo: Recipe$CommonInfo;
     // private input: Ingredient;

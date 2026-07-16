@@ -8,7 +8,7 @@ export class SortedLists$KeyPresentBehavior extends Enum<SortedLists$KeyPresentB
     static FIRST_PRESENT: SortedLists$KeyPresentBehavior;
     static LAST_BEFORE: SortedLists$KeyPresentBehavior;
     static LAST_PRESENT: SortedLists$KeyPresentBehavior;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SortedLists$KeyPresentBehavior;
     static values(): SortedLists$KeyPresentBehavior[];
     constructor(arg2: any)

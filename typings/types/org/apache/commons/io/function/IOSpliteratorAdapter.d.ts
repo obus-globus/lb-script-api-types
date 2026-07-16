@@ -4,7 +4,7 @@ import type { IOComparator } from '../../../../../org/apache/commons/io/function
 import type { IOConsumer } from '../../../../../org/apache/commons/io/function/IOConsumer.d.ts'
 import type { IOSpliterator } from '../../../../../org/apache/commons/io/function/IOSpliterator.d.ts'
 export class IOSpliteratorAdapter<T extends unknown> extends Object implements IOSpliterator<T> {
-    static adapt(paramarg0: Spliterator<Object>): IOSpliterator<Object>;
+    static adapt<E extends unknown>(paramarg0: Spliterator<E>): IOSpliterator<E>;
     constructor(arg0: Spliterator<T>)
     // private delegate: Spliterator<T>;
     asSpliterator(): Spliterator<T>;

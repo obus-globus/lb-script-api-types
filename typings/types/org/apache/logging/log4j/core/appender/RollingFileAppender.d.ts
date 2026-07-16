@@ -7,6 +7,7 @@ import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Fil
 import type { Layout } from '../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { AbstractOutputStreamAppender } from '../../../../../../org/apache/logging/log4j/core/appender/AbstractOutputStreamAppender.d.ts'
+import type { RollingFileAppender$Builder } from '../../../../../../org/apache/logging/log4j/core/appender/RollingFileAppender$Builder.d.ts'
 import type { RollingFileManager } from '../../../../../../org/apache/logging/log4j/core/appender/rolling/RollingFileManager.d.ts'
 import type { RolloverStrategy } from '../../../../../../org/apache/logging/log4j/core/appender/rolling/RolloverStrategy.d.ts'
 import type { TriggeringPolicy } from '../../../../../../org/apache/logging/log4j/core/appender/rolling/TriggeringPolicy.d.ts'
@@ -19,8 +20,8 @@ export class RollingFileAppender extends AbstractOutputStreamAppender<RollingFil
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Appender[];
     static PLUGIN_NAME: string;
-    static createAppender(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, parambufferedIO: string, parambufferSizeStr: string, paramimmediateFlush: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignore: string, paramadvertise: string, paramadvertiseUri: string, paramconfig: Configuration): RollingFileAppender;
-    static newBuilder(): Object | null;
+    static createAppender<B extends RollingFileAppender$Builder<B>>(paramfileName: string, paramfilePattern: string, paramappend: string, paramname: string, parambufferedIO: string, parambufferSizeStr: string, paramimmediateFlush: string, parampolicy: TriggeringPolicy, paramstrategy: RolloverStrategy, paramlayout: Layout<Serializable>, paramfilter: Filter, paramignore: string, paramadvertise: string, paramadvertiseUri: string, paramconfig: Configuration): RollingFileAppender;
+    static newBuilder<B extends RollingFileAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: RollingFileManager, arg4: string, arg5: string, arg6: boolean, arg7: boolean, arg8: Advertiser, arg9: Property[], arg10: any)
     // private advertisement: Object;

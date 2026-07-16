@@ -4,8 +4,8 @@ import type { ObjectListIterator } from '../../../../../it/unimi/dsi/fastutil/ob
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectBigListIterators extends Object {
     static EMPTY_BIG_LIST_ITERATOR: ObjectBigListIterators$EmptyBigListIterator<Object>;
-    static asBigListIterator(paramarg0: ObjectListIterator<Object>): ObjectBigListIterator<Object>;
-    static singleton(paramarg0: Object | null): ObjectBigListIterator<Object>;
-    static unmodifiable(paramarg0: ObjectBigListIterator<Object>): ObjectBigListIterator<Object>;
+    static asBigListIterator<K extends unknown>(paramarg0: ObjectListIterator<K>): ObjectBigListIterator<K>;
+    static singleton<K extends unknown>(paramarg0: K): ObjectBigListIterator<K>;
+    static unmodifiable<K extends unknown>(paramarg0: ObjectBigListIterator<K>): ObjectBigListIterator<K>;
     private constructor()
 }

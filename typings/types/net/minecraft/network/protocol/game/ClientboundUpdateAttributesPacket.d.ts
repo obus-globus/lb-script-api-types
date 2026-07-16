@@ -11,7 +11,7 @@ import type { ClientboundUpdateAttributesPacket$AttributeSnapshot } from '../../
 import type { AttributeInstance } from '../../../../../net/minecraft/world/entity/ai/attributes/AttributeInstance.d.ts'
 export class ClientboundUpdateAttributesPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundUpdateAttributesPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(entityId: number, values: AttributeInstance[])
     // private attributes: ClientboundUpdateAttributesPacket$AttributeSnapshot[];
     readonly entityId: number;

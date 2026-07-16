@@ -7,8 +7,8 @@ import type { CommandBuildContext } from '../../../../net/minecraft/commands/Com
 import type { SingletonArgumentInfo$Template } from '../../../../net/minecraft/commands/synchronization/SingletonArgumentInfo$Template.d.ts'
 import type { FriendlyByteBuf } from '../../../../net/minecraft/network/FriendlyByteBuf.d.ts'
 export class SingletonArgumentInfo<A extends ArgumentType<Object>> {
-    static contextAware(paramconstructor: (param0: CommandBuildContext) => Object | null): SingletonArgumentInfo<any>;
-    static contextFree(paramconstructor: () => Object | null): SingletonArgumentInfo<any>;
+    static contextAware<T extends ArgumentType<Object>>(paramconstructor: (param0: CommandBuildContext) => T): SingletonArgumentInfo<T>;
+    static contextFree<T extends ArgumentType<Object>>(paramconstructor: () => T): SingletonArgumentInfo<T>;
     private constructor(constructor: (param0: CommandBuildContext) => A)
     // private template: SingletonArgumentInfo$Template;
     deserializeFromNetwork(in_: FriendlyByteBuf): SingletonArgumentInfo$Template;

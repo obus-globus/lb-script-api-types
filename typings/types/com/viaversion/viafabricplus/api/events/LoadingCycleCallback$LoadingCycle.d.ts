@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class LoadingCycleCallback$LoadingCycle extends Enum<LoadingCycleCallback$LoadingCycle> {
     static FINAL_LOAD: LoadingCycleCallback$LoadingCycle;
@@ -10,7 +9,7 @@ export class LoadingCycleCallback$LoadingCycle extends Enum<LoadingCycleCallback
     static PRE_FILES_LOAD: LoadingCycleCallback$LoadingCycle;
     static PRE_SETTINGS_LOAD: LoadingCycleCallback$LoadingCycle;
     static PRE_VIAVERSION_LOAD: LoadingCycleCallback$LoadingCycle;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LoadingCycleCallback$LoadingCycle;
     static values(): LoadingCycleCallback$LoadingCycle[];
     private constructor()

@@ -13,7 +13,7 @@ export class EnvironmentAttributeCheck<Value extends unknown> extends Record imp
     static DIRECT_CODEC: Codec<LootItemCondition>;
     static MAP_CODEC: MapCodec<EnvironmentAttributeCheck<Object>>;
     static TYPED_CODEC: Codec<LootItemCondition>;
-    static environmentAttribute(paramattribute: EnvironmentAttribute<Object>, paramvalue: Object | null): () => LootItemCondition;
+    static environmentAttribute<Value extends unknown>(paramattribute: EnvironmentAttribute<Value>, paramvalue: Value): () => LootItemCondition;
     constructor(attribute: EnvironmentAttribute<Value>, value: Value)
     // private attribute: EnvironmentAttribute<Value>;
     // private value: Value;

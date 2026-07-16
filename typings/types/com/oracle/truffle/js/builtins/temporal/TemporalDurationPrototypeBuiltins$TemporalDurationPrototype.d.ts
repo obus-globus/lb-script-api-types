@@ -31,7 +31,7 @@ export class TemporalDurationPrototypeBuiltins$TemporalDurationPrototype extends
     static with: TemporalDurationPrototypeBuiltins$TemporalDurationPrototype;
     static years: TemporalDurationPrototypeBuiltins$TemporalDurationPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalDurationPrototypeBuiltins$TemporalDurationPrototype;
     static values(): TemporalDurationPrototypeBuiltins$TemporalDurationPrototype[];
     private constructor(length: number)

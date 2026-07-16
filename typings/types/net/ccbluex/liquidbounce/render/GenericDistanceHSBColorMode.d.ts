@@ -10,7 +10,7 @@ import type { Entity } from '../../../../net/minecraft/world/entity/Entity.d.ts'
 export class GenericDistanceHSBColorMode<T extends unknown> extends GenericColorMode<T> {
     static Companion: GenericDistanceHSBColorMode$Companion;
     static entity(paramarg0: ModeValueGroup<any>): GenericDistanceHSBColorMode<Entity>;
-    static entity(parent: ModeValueGroup<any>, fixedAlpha: number): GenericDistanceHSBColorMode<Entity>;
+    static entity(parent: ModeValueGroup<any>, fixedAlpha: number | null): GenericDistanceHSBColorMode<Entity>;
     constructor(parent: ModeValueGroup<any>, fixedAlpha: number | null, distanceGetter: (param0: T) => number)
     // private alphaValue: RangedValue<number> | null;
     // private brightness: number;

@@ -2,7 +2,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Flags$BooleanFlagField } from '../../../../../../../kotlin/reflect/jvm/internal/impl/metadata/deserialization/Flags$BooleanFlagField.d.ts'
 import type { Internal$EnumLite } from '../../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/Internal$EnumLite.d.ts'
 export abstract class Flags$FlagField<E extends unknown> extends Object {
-    static after(paramarg0: Flags$FlagField<Object>, paramarg1: (Internal$EnumLite | null)[]): Flags$FlagField<Internal$EnumLite>;
+    static after<E extends Internal$EnumLite>(paramarg0: Flags$FlagField<Object>, paramarg1: E[]): Flags$FlagField<E>;
     static booleanAfter(paramarg0: Flags$FlagField<Object>): Flags$BooleanFlagField;
     static booleanFirst(): Flags$BooleanFlagField;
     constructor(arg0: number, arg1: number, arg2: any)

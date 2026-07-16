@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class JsonParser$Feature extends Enum<JsonParser$Feature> {
     static ALLOW_BACKSLASH_ESCAPING_ANY_CHARACTER: JsonParser$Feature;
@@ -18,7 +17,7 @@ export class JsonParser$Feature extends Enum<JsonParser$Feature> {
     static INCLUDE_SOURCE_IN_LOCATION: JsonParser$Feature;
     static STRICT_DUPLICATE_DETECTION: JsonParser$Feature;
     static collectDefaults(): number;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): JsonParser$Feature;
     static values(): JsonParser$Feature[];
     private constructor(arg2: boolean)

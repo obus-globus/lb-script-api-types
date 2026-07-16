@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ServerboundLoadingScreenPacketType extends Enum<ServerboundLoadingScreenPacketType> {
     static EndLoadingScreen: ServerboundLoadingScreenPacketType;
@@ -9,7 +8,7 @@ export class ServerboundLoadingScreenPacketType extends Enum<ServerboundLoadingS
     static getByName(paramarg0: string, paramarg1: ServerboundLoadingScreenPacketType): ServerboundLoadingScreenPacketType;
     static getByValue(paramarg0: number): ServerboundLoadingScreenPacketType;
     static getByValue(paramarg0: number, paramarg1: ServerboundLoadingScreenPacketType): ServerboundLoadingScreenPacketType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundLoadingScreenPacketType;
     static values(): ServerboundLoadingScreenPacketType[];
     private constructor(arg2: number)

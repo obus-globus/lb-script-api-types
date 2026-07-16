@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class AccountType extends Enum<AccountType> {
     static CRACKED: AccountType;
@@ -7,8 +6,8 @@ export class AccountType extends Enum<AccountType> {
     static SESSION: AccountType;
     static THEALTENING: AccountType;
     static getEntries(): AccountType[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): AccountType;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): AccountType;
     static values(): AccountType[];
     private constructor(commonName: string, canJoinOnline: boolean)
     readonly canJoinOnline: boolean;

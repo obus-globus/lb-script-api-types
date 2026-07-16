@@ -18,7 +18,7 @@ export class TrajectoryInfoRenderer extends Object {
     static Companion: TrajectoryInfoRenderer$Companion;
     static getHypotheticalTrajectory(paramarg0: Entity, paramarg1: TrajectoryInfo, paramarg2: TrajectoryType, paramarg3: Rotation): TrajectoryInfoRenderer;
     static getHypotheticalTrajectory(paramarg0: Entity, paramarg1: TrajectoryInfo, paramarg2: TrajectoryType, paramarg3: Rotation, paramarg4: ItemStack): TrajectoryInfoRenderer;
-    static getHypotheticalTrajectory(paramarg0: Entity, paramarg1: TrajectoryInfo, paramarg2: TrajectoryType, paramarg3: Rotation, paramarg4: ItemStack, paramarg5: number): TrajectoryInfoRenderer;
+    static getHypotheticalTrajectory(simulationOwner: Entity, trajectoryInfo: TrajectoryInfo, trajectoryType: TrajectoryType, rotation: Rotation, icon: ItemStack, partialTicks: number): TrajectoryInfoRenderer;
     constructor(simulationOwner: Entity, displayOwner: Entity | null, icon: ItemStack, velocity: Vec3, pos: Vec3, trajectoryInfo: TrajectoryInfo, trajectoryType: TrajectoryType, type: TrajectoryInfoRenderer$Type, renderOffset: Vec3)
     readonly displayOwner: Entity | null;
     // private hitbox: AABB;

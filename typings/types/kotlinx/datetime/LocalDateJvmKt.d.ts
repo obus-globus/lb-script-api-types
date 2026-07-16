@@ -7,15 +7,15 @@ import type { LocalDate } from '../../kotlinx/datetime/LocalDate.d.ts'
 import type { LocalDate$Companion } from '../../kotlinx/datetime/LocalDate$Companion.d.ts'
 import type { DateTimeFormat } from '../../kotlinx/datetime/format/DateTimeFormat.d.ts'
 export class LocalDateJvmKt extends Object {
-    static LocalDate(paramarg0: number, paramarg1: Month, paramarg2: number): LocalDate;
-    static daysUntil(paramarg0: LocalDate, paramarg1: LocalDate): number;
-    static minus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
-    static monthsUntil(paramarg0: LocalDate, paramarg1: LocalDate): number;
-    static parseOrNull(paramarg0: LocalDate$Companion, paramarg1: CharSequence, paramarg2: DateTimeFormat<LocalDate>): LocalDate;
-    static periodUntil(paramarg0: LocalDate, paramarg1: LocalDate): DatePeriod;
-    static plus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
-    static plus(paramarg0: LocalDate, paramarg1: DatePeriod): LocalDate;
-    static plus(paramarg0: LocalDate, paramarg1: DateTimeUnit$DateBased): LocalDate;
-    static until(paramarg0: LocalDate, paramarg1: LocalDate, paramarg2: DateTimeUnit$DateBased): number;
-    static yearsUntil(paramarg0: LocalDate, paramarg1: LocalDate): number;
+    static LocalDate(year: number, month: Month, dayOfMonth: number): LocalDate;
+    static daysUntil(self: LocalDate, other: LocalDate): number;
+    static minus(self: LocalDate, value: number, unit: DateTimeUnit$DateBased): LocalDate;
+    static monthsUntil(self: LocalDate, other: LocalDate): number;
+    static parseOrNull(self: LocalDate$Companion, input: CharSequence, format: DateTimeFormat<LocalDate>): LocalDate | null;
+    static periodUntil(self: LocalDate, other: LocalDate): DatePeriod;
+    static plus(self: LocalDate, value: number, unit: DateTimeUnit$DateBased): LocalDate;
+    static plus(self: LocalDate, period: DatePeriod): LocalDate;
+    static plus(self: LocalDate, unit: DateTimeUnit$DateBased): LocalDate;
+    static until(self: LocalDate, other: LocalDate, unit: DateTimeUnit$DateBased): number;
+    static yearsUntil(self: LocalDate, other: LocalDate): number;
 }

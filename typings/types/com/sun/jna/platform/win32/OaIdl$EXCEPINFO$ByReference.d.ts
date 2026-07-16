@@ -14,7 +14,7 @@ export class OaIdl$EXCEPINFO$ByReference extends OaIdl$EXCEPINFO implements Stru
     static createFieldsOrder(...paramarg0: string[]): string[];
     static createFieldsOrder(paramarg0: string[], ...paramarg1: string[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Structure>): Structure | null;
-    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
+    static newInstance<T extends Structure>(paramarg0: Class<T>): T;
+    static newInstance<T extends Structure>(paramarg0: Class<T>, paramarg1: Pointer): T;
     constructor()
 }

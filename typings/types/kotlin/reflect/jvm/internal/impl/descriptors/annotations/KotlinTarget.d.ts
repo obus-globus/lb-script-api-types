@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 import type { KotlinTarget$Companion } from '../../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/annotations/KotlinTarget$Companion.d.ts'
@@ -53,7 +52,7 @@ export class KotlinTarget extends Enum<KotlinTarget> {
     static TYPE_PROJECTION: KotlinTarget;
     static VALUE_PARAMETER: KotlinTarget;
     static getEntries(): KotlinTarget[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): KotlinTarget;
     static values(): KotlinTarget[];
     constructor(arg2: string, arg3: boolean, arg4: number, arg5: DefaultConstructorMarker)

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class Token$Kind extends Enum<Token$Kind> {
     static A: Token$Kind;
@@ -28,7 +27,7 @@ export class Token$Kind extends Enum<Token$Kind> {
     static quantifier: Token$Kind;
     static wordBoundary: Token$Kind;
     static z: Token$Kind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Token$Kind;
     static values(): Token$Kind[];
     private constructor()

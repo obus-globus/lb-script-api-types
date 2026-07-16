@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class FriendsService$ResultCode extends Enum<FriendsService$ResultCode> {
     static CONNECTION_ISSUE: FriendsService$ResultCode;
@@ -13,7 +12,7 @@ export class FriendsService$ResultCode extends Enum<FriendsService$ResultCode> {
     static UNAUTHORIZED: FriendsService$ResultCode;
     static UNKNOWN_PROFILE: FriendsService$ResultCode;
     static UPGRADE_NEEDED: FriendsService$ResultCode;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): FriendsService$ResultCode;
     static values(): FriendsService$ResultCode[];
     private constructor()

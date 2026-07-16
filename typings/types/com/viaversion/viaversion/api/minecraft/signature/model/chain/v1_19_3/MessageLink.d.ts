@@ -8,5 +8,5 @@ export class MessageLink extends Object {
     // private sender: UUID;
     // private sessionId: UUID;
     next(): MessageLink;
-    update(arg0: (param0: Object | null) => void): void;
+    update(arg0: (param0: number[]) => void): void;
 }

@@ -2,6 +2,7 @@ import type { Class } from '../../java/lang/Class.d.ts'
 import type { OffsetDateTime } from '../../java/time/OffsetDateTime.d.ts'
 import type { Pattern } from '../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
+import type { Enum } from '../../java/lang/Enum.d.ts'
 import type { Pair } from '../../oshi/util/tuples/Pair.d.ts'
 import type { Triplet } from '../../oshi/util/tuples/Triplet.d.ts'
 export class ParseUtil extends Object {
@@ -65,7 +66,7 @@ export class ParseUtil extends Object {
     static removeLeadingDots(paramarg0: string): string;
     static removeMatchingString(paramarg0: string, paramarg1: string): string;
     static strToLong(paramarg0: string, paramarg1: number): number;
-    static stringToEnumMap(paramarg0: Class<Object>, paramarg1: string, paramarg2: string): Map<Object | null, string>;
+    static stringToEnumMap<K extends Enum<K>>(paramarg0: Class<K>, paramarg1: string, paramarg2: string): Map<K, string>;
     static unsignedIntToLong(paramarg0: number): number;
     static unsignedLongToSignedLong(paramarg0: number): number;
     private constructor()

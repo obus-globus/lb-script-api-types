@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PipesServer$STATUS extends Enum<PipesServer$STATUS> {
     static CALL: PipesServer$STATUS;
@@ -20,7 +19,7 @@ export class PipesServer$STATUS extends Enum<PipesServer$STATUS> {
     static READY: PipesServer$STATUS;
     static TIMEOUT: PipesServer$STATUS;
     static lookup(paramarg0: number): PipesServer$STATUS;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PipesServer$STATUS;
     static values(): PipesServer$STATUS[];
     private constructor()

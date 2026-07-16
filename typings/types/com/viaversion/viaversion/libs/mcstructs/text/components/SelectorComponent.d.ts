@@ -37,7 +37,7 @@ export class SelectorComponent extends TextComponent {
     readonly selector: string;
     readonly separator: TextComponent;
     asSingleString(): string;
-    asSingleString(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;
+    asSingleString(arg0: ConsumerTracking, arg1: (param0: string) => void): void;
     canEqual(arg0: Object): boolean;
     equals(arg0: Object | null): boolean;
     getSelector(): string;

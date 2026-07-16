@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class Memory_MemoryCategory extends Enum<Memory_MemoryCategory> {
     static Actor: Memory_MemoryCategory;
@@ -98,7 +97,7 @@ export class Memory_MemoryCategory extends Enum<Memory_MemoryCategory> {
     static getByName(paramarg0: string, paramarg1: Memory_MemoryCategory): Memory_MemoryCategory;
     static getByValue(paramarg0: number): Memory_MemoryCategory;
     static getByValue(paramarg0: number, paramarg1: Memory_MemoryCategory): Memory_MemoryCategory;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Memory_MemoryCategory;
     static values(): Memory_MemoryCategory[];
     private constructor(arg2: number)

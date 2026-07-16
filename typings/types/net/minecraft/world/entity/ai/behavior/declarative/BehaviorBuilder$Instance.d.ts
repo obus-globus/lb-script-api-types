@@ -33,7 +33,7 @@ import type { MemoryAccessor } from '../../../../../../../net/minecraft/world/en
 import type { Trigger } from '../../../../../../../net/minecraft/world/entity/ai/behavior/declarative/Trigger.d.ts'
 import type { MemoryModuleType } from '../../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 export class BehaviorBuilder$Instance<E extends LivingEntity> extends Object implements Applicative<BehaviorBuilder$Mu<E>, BehaviorBuilder$Instance$Mu<E>> {
-    static unbox(paramarg0: App<Applicative$Mu, K1>): Applicative<K1, Applicative$Mu>;
+    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
     constructor()
     absent<Value extends unknown>(memory: MemoryModuleType<Value>): BehaviorBuilder<E, MemoryAccessor<Const$Mu<Unit>, Value>>;
     ap<R extends unknown, A extends unknown>(arg0: App<BehaviorBuilder$Mu<E>, (param0: A) => R>, arg1: App<BehaviorBuilder$Mu<E>, A>): App<BehaviorBuilder$Mu<E>, R>;

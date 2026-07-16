@@ -8,9 +8,9 @@ import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/Schedu
 import type { TickPriority } from '../../../../net/minecraft/world/ticks/TickPriority.d.ts'
 export class SavedTick<T extends unknown> extends Record {
     static UNIQUE_TICK_HASH: Hash$Strategy<SavedTick<Object>>;
-    static codec(paramtypeCodec: Codec<Object>): Codec<SavedTick<Object>>;
-    static filterTickListForChunk(paramsavedTicks: SavedTick<Object>[], paramchunkPos: ChunkPos): SavedTick<Object>[];
-    static probe(paramtype: Object | null, parampos: BlockPos): SavedTick<Object>;
+    static codec<T extends unknown>(paramtypeCodec: Codec<T>): Codec<SavedTick<T>>;
+    static filterTickListForChunk<T extends unknown>(paramsavedTicks: SavedTick<T>[], paramchunkPos: ChunkPos): SavedTick<T>[];
+    static probe<T extends unknown>(paramtype: T, parampos: BlockPos): SavedTick<T>;
     constructor(type: T, pos: BlockPos, delay: number, priority: TickPriority)
     // private delay: number;
     // private pos: BlockPos;

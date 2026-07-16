@@ -12,8 +12,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SingleASTTransformer<J extends JobParameters> extends ASTTransformer<J, string> {
     static IDENTITY_TRANSFORMATION: (param0: TranslationUnit) => void;
     static _getInternalInstance(): ASTParser;
-    static wrapTransformation(paramarg0: ParameterizedTransformer<Object, Object>, paramarg1: (param0: TranslationUnit, param1: Root) => void): (param0: TranslationUnit) => void;
-    static wrapTransformation(paramarg0: ParameterizedTransformer<Object, Object>, paramarg1: (param0: TranslationUnit, param1: Root, param2: Object | null) => void): (param0: TranslationUnit) => void;
+    static wrapTransformation<R extends unknown>(paramarg0: ParameterizedTransformer<Object, R>, paramarg1: (param0: TranslationUnit, param1: Root) => void): (param0: TranslationUnit) => void;
+    static wrapTransformation<T extends unknown, R extends unknown>(paramarg0: ParameterizedTransformer<T, R>, paramarg1: (param0: TranslationUnit, param1: Root, param2: T) => void): (param0: TranslationUnit) => void;
     constructor()
     constructor(arg0: (param0: TranslationUnit, param1: Root, param2: J) => void)
     constructor(arg0: (param0: TranslationUnit, param1: Root) => void)

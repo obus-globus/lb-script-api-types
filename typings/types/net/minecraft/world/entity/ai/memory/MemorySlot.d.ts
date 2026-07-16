@@ -2,7 +2,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Brain$Visitor } from '../../../../../../net/minecraft/world/entity/ai/Brain$Visitor.d.ts'
 import type { MemoryModuleType } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 export class MemorySlot<T extends unknown> extends Object {
-    static create(): MemorySlot<Object>;
+    static create<T extends unknown>(): MemorySlot<T>;
     private constructor(value: T, timeToLive: number)
     // private timeToLive: number;
     // private value: T;

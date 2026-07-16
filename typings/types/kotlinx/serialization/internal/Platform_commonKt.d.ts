@@ -7,15 +7,15 @@ import type { KSerializer } from '../../../kotlinx/serialization/KSerializer.d.t
 import type { SerializationStrategy } from '../../../kotlinx/serialization/SerializationStrategy.d.ts'
 import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 export class Platform_commonKt extends Object {
-    static cachedSerialNames(paramarg0: SerialDescriptor): string[];
-    static cast(paramarg0: DeserializationStrategy<Object>): DeserializationStrategy<Object>;
-    static cast(paramarg0: KSerializer<Object>): KSerializer<Object>;
-    static cast(paramarg0: SerializationStrategy<Object>): SerializationStrategy<Object>;
-    static compactArray(paramarg0: SerialDescriptor[]): SerialDescriptor[];
-    static elementsHashCodeBy(paramarg0: (Object | null)[], paramarg1: (param0: Object) => Object | null): number;
-    static kclass(paramarg0: KType): KClass<Object>;
-    static notRegisteredMessage(paramarg0: string): string;
-    static notRegisteredMessage(paramarg0: KClass<Object>): string;
-    static serializerNotRegistered(paramarg0: KClass<Object>): void;
-    static typeOrThrow(paramarg0: KTypeProjection): KType;
+    static cachedSerialNames(self: SerialDescriptor): string[];
+    static cast<T extends unknown>(self: DeserializationStrategy<Object>): DeserializationStrategy<T>;
+    static cast<T extends unknown>(self: KSerializer<Object>): KSerializer<T>;
+    static cast<T extends unknown>(self: SerializationStrategy<Object>): SerializationStrategy<T>;
+    static compactArray(self: SerialDescriptor[] | null): SerialDescriptor[];
+    static elementsHashCodeBy<T extends unknown, K extends unknown>(self: T[], selector: (param0: T) => K): number;
+    static kclass(self: KType): KClass<Object>;
+    static notRegisteredMessage(className: string): string;
+    static notRegisteredMessage(self: KClass<Object>): string;
+    static serializerNotRegistered(self: KClass<Object>): void;
+    static typeOrThrow(self: KTypeProjection): KType;
 }

@@ -29,12 +29,12 @@ export class EncodingKt extends Object {
     static SINGLE_PRECISION_MAX_EXPONENT: number;
     static SINGLE_PRECISION_NORMALIZE_BASE: number;
     static TRUE: number;
-    static findAnnotation(paramarg0: SerialDescriptor, paramarg1: number): Annotation | null;
-    static getCborLabel(paramarg0: SerialDescriptor, paramarg1: number): number;
-    static getKeyTags(paramarg0: SerialDescriptor, paramarg1: number): number[];
-    static getObjectTags(paramarg0: SerialDescriptor): number[];
-    static getValueTags(paramarg0: SerialDescriptor, paramarg1: number): number[];
-    static hasArrayTag(paramarg0: SerialDescriptor): boolean;
-    static isByteString(paramarg0: SerialDescriptor, paramarg1: number): boolean;
-    static isInlineByteString(paramarg0: SerialDescriptor): boolean;
+    static findAnnotation<A extends Annotation>(self: SerialDescriptor, elementIndex: number): A | null;
+    static getCborLabel(self: SerialDescriptor, index: number): number | null;
+    static getKeyTags(self: SerialDescriptor, index: number): (Object | null)[] | null;
+    static getObjectTags(self: SerialDescriptor): (Object | null)[] | null;
+    static getValueTags(self: SerialDescriptor, index: number): (Object | null)[] | null;
+    static hasArrayTag(self: SerialDescriptor): boolean;
+    static isByteString(self: SerialDescriptor, index: number): boolean;
+    static isInlineByteString(self: SerialDescriptor): boolean;
 }

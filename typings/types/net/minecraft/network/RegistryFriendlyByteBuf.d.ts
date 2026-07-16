@@ -21,7 +21,7 @@ export class RegistryFriendlyByteBuf extends FriendlyByteBuf implements FabricRe
     static MAX_COMPONENT_STRING_LENGTH: number;
     static MAX_STRING_LENGTH: number;
     static decorator(paramregistryAccess: RegistryAccess): (param0: ByteBuf) => RegistryFriendlyByteBuf;
-    static limitValue(paramoriginal: (param0: number) => Object | null, paramlimit: number): (param0: number) => Object | null;
+    static limitValue<T extends unknown>(paramoriginal: (param0: number) => T, paramlimit: number): (param0: number) => T;
     static readBlockPos(paraminput: ByteBuf): BlockPos;
     static readByteArray(paraminput: ByteBuf): number[];
     static readByteArray(paraminput: ByteBuf, parammaxSize: number): number[];
@@ -31,7 +31,7 @@ export class RegistryFriendlyByteBuf extends FriendlyByteBuf implements FabricRe
     static readLongArray(paraminput: ByteBuf): number[];
     static readNbt(paraminput: ByteBuf): CompoundTag;
     static readNbt(paraminput: ByteBuf, paramaccounter: NbtAccounter): Tag;
-    static readNullable(paraminput: ByteBuf | null, paramvalueDecoder: (param0: Object) => Object | null): Object | null;
+    static readNullable<T extends unknown, B extends ByteBuf>(paraminput: B, paramvalueDecoder: (param0: Object) => T): T;
     static readQuaternion(paraminput: ByteBuf): Quaternionf;
     static readUUID(paraminput: ByteBuf): UUID;
     static readVector3f(paraminput: ByteBuf): Vector3f;
@@ -42,7 +42,7 @@ export class RegistryFriendlyByteBuf extends FriendlyByteBuf implements FabricRe
     static writeFixedSizeLongArray(paramoutput: ByteBuf, paramlongs: number[]): void;
     static writeLongArray(paramoutput: ByteBuf, paramlongs: number[]): void;
     static writeNbt(paramoutput: ByteBuf, paramtag: Tag): void;
-    static writeNullable(paramoutput: ByteBuf | null, paramvalue: Object | null, paramvalueEncoder: (param0: Object, param1: Object | null) => void): void;
+    static writeNullable<T extends unknown, B extends ByteBuf>(paramoutput: B, paramvalue: T, paramvalueEncoder: (param0: Object, param1: T) => void): void;
     static writeQuaternion(paramoutput: ByteBuf, paramvalue: Quaternionfc): void;
     static writeUUID(paramoutput: ByteBuf, paramuuid: UUID): void;
     static writeVector3f(paramoutput: ByteBuf, paramv: Vector3fc): void;

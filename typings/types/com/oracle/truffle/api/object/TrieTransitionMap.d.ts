@@ -6,7 +6,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class TrieTransitionMap<K extends unknown, V extends unknown> extends TransitionMap<K, V> implements BiFunction<Object, V, Map$Entry<Object, V>> {
-    static create(): TransitionMap<Object, Object>;
+    static create<K extends unknown, V extends unknown>(): TransitionMap<K, V>;
     constructor()
     // private map: Map<Object, V>;
     andThen(arg0: (param0: Map$Entry<Object, V>) => V): (param0: Object, param1: V) => V;

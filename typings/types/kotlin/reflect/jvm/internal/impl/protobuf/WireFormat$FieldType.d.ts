@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { WireFormat$JavaType } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/WireFormat$JavaType.d.ts'
 export class WireFormat$FieldType extends Enum<WireFormat$FieldType> {
@@ -21,7 +20,7 @@ export class WireFormat$FieldType extends Enum<WireFormat$FieldType> {
     static STRING: WireFormat$FieldType;
     static UINT32: WireFormat$FieldType;
     static UINT64: WireFormat$FieldType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): WireFormat$FieldType;
     static values(): WireFormat$FieldType[];
     constructor(arg2: WireFormat$JavaType, arg3: number, arg4: any)

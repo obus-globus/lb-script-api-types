@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 export class BlockModelLighter$AmbientVertexRemap extends Enum<BlockModelLighter$AmbientVertexRemap> {
@@ -10,7 +9,7 @@ export class BlockModelLighter$AmbientVertexRemap extends Enum<BlockModelLighter
     static UP: BlockModelLighter$AmbientVertexRemap;
     static WEST: BlockModelLighter$AmbientVertexRemap;
     static fromFacing(paramdirection: Direction): BlockModelLighter$AmbientVertexRemap;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): BlockModelLighter$AmbientVertexRemap;
     static values(): BlockModelLighter$AmbientVertexRemap[];
     private constructor(vert0: number, vert1: number, vert2: number, vert3: number)

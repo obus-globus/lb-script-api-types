@@ -11,7 +11,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class ClientboundBlockEventPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundBlockEventPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(pos: BlockPos, block: Block, b0: number, b1: number)
     readonly b0: number;
     readonly b1: number;

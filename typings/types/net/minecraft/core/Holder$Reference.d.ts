@@ -12,10 +12,10 @@ import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.t
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../net/minecraft/tags/TagKey.d.ts'
 export class Holder$Reference<T extends unknown> extends Object implements Holder<T> {
-    static createIntrusive(paramowner: HolderOwner<Object>, paramvalue: Object | null): Holder$Reference<Object>;
-    static createStandAlone(paramowner: HolderOwner<Object>, paramkey: ResourceKey<Object>): Holder$Reference<Object>;
-    static direct(paramvalue: Object | null): Holder<Object>;
-    static direct(paramvalue: Object | null, paramcomponents: TypedDataComponent<Object>[]): Holder<Object>;
+    static createIntrusive<T extends unknown>(paramowner: HolderOwner<T>, paramvalue: T): Holder$Reference<T>;
+    static createStandAlone<T extends unknown>(paramowner: HolderOwner<T>, paramkey: ResourceKey<T>): Holder$Reference<T>;
+    static direct<T extends unknown>(paramvalue: T): Holder<T>;
+    static direct<T extends unknown>(paramvalue: T, paramcomponents: TypedDataComponent<Object>[]): Holder<T>;
     constructor(type: Holder$Reference$Type, owner: HolderOwner<T>, key: ResourceKey<T>, value: T)
     // private components: TypedDataComponent<Object>[];
     // private key: ResourceKey<T>;

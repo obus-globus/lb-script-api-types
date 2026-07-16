@@ -23,7 +23,7 @@ import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Const$Instance<C extends unknown> extends Object implements Applicative<Const$Mu<C>, Const$Instance$Mu<C>> {
-    static unbox(paramarg0: App<Applicative$Mu, K1>): Applicative<K1, Applicative$Mu>;
+    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
     constructor(arg0: Monoid<C>)
     // private monoid: Monoid<C>;
     ap<R extends unknown, A extends unknown>(arg0: App<Const$Mu<C>, (param0: A) => R>, arg1: App<Const$Mu<C>, A>): App<Const$Mu<C>, R>;

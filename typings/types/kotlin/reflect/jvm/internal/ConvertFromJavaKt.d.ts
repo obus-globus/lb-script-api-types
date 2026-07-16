@@ -12,11 +12,11 @@ import type { KTypeParameterOwnerImpl } from '../../../../kotlin/reflect/jvm/int
 import type { TypeNullability } from '../../../../kotlin/reflect/jvm/internal/TypeNullability.d.ts'
 import type { TypeUsage } from '../../../../kotlin/reflect/jvm/internal/TypeUsage.d.ts'
 export class ConvertFromJavaKt extends Object {
-    static allTypeParameters(paramarg0: Class<Object>): TypeVariable<any>[];
-    static computeVisibilityForJavaModifiers(paramarg0: number): KVisibility;
-    static getPurelyImplementedSupertype(paramarg0: KClassImpl<Object>): KType;
-    static isEnumValuesValueOfMethod(paramarg0: Member): boolean;
+    static allTypeParameters(self: Class<Object>): TypeVariable<any>[];
+    static computeVisibilityForJavaModifiers(self: number): KVisibility | null;
+    static getPurelyImplementedSupertype(kClass: KClassImpl<Object>): KType | null;
+    static isEnumValuesValueOfMethod(self: Member): boolean;
     static isMappedBuiltin(paramarg0: KClass<Object>): boolean;
-    static toKType(paramarg0: Type, paramarg1: Map<TypeVariable<any>, KTypeParameter>, paramarg2: TypeNullability, paramarg3: boolean, paramarg4: boolean, paramarg5: TypeUsage): KType;
-    static toKTypeParameters(paramarg0: TypeVariable<any>[], paramarg1: KTypeParameterOwnerImpl): KTypeParameter[];
+    static toKType(self: Type, knownTypeParameters: Map<TypeVariable<any>, KTypeParameter>, nullability: TypeNullability, isForAnnotationParameter: boolean, replaceNonArrayArgumentsWithStarProjections: boolean, howThisTypeIsUsed: TypeUsage): KType;
+    static toKTypeParameters(self: TypeVariable<any>[], container: KTypeParameterOwnerImpl): KTypeParameter[];
 }

@@ -10,21 +10,21 @@ import type { Scope } from '../../../../../../net/minecraft/util/parsing/packrat
 import type { SuggestionSupplier } from '../../../../../../net/minecraft/util/parsing/packrat/SuggestionSupplier.d.ts'
 import type { Term } from '../../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 export abstract class StringReaderTerms$TerminalCharacters extends Object implements Term<StringReader> {
-    static alternative(...paramterms: Term<Object>[]): Term<Object>;
-    static cut(): Term<Object>;
-    static empty(): Term<Object>;
-    static fail(parammessage: Object): Term<Object>;
-    static marker(paramname: Atom<Object>, paramvalue: Object | null): Term<Object>;
-    static negativeLookahead(paramterm: Term<Object>): Term<Object>;
-    static optional(paramterm: Term<Object>): Term<Object>;
-    static positiveLookahead(paramterm: Term<Object>): Term<Object>;
-    static repeated(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>): Term<Object>;
-    static repeated(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramminRepetitions: number): Term<Object>;
-    static repeatedWithTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>): Term<Object>;
-    static repeatedWithTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
-    static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>): Term<Object>;
-    static repeatedWithoutTrailingSeparator(paramelement: NamedRule<Object, Object>, paramlistName: Atom<(Object | null)[]>, paramseparator: Term<Object>, paramminRepetitions: number): Term<Object>;
-    static sequence(...paramterms: Term<Object>[]): Term<Object>;
+    static alternative<S extends unknown>(...paramterms: Term<S>[]): Term<S>;
+    static cut<S extends unknown>(): Term<S>;
+    static empty<S extends unknown>(): Term<S>;
+    static fail<S extends unknown>(parammessage: Object): Term<S>;
+    static marker<S extends unknown, T extends unknown>(paramname: Atom<T>, paramvalue: T): Term<S>;
+    static negativeLookahead<S extends unknown>(paramterm: Term<S>): Term<S>;
+    static optional<S extends unknown>(paramterm: Term<S>): Term<S>;
+    static positiveLookahead<S extends unknown>(paramterm: Term<S>): Term<S>;
+    static repeated<S extends unknown, T extends unknown>(paramelement: NamedRule<S, T>, paramlistName: Atom<T[]>): Term<S>;
+    static repeated<S extends unknown, T extends unknown>(paramelement: NamedRule<S, T>, paramlistName: Atom<T[]>, paramminRepetitions: number): Term<S>;
+    static repeatedWithTrailingSeparator<S extends unknown, T extends unknown>(paramelement: NamedRule<S, T>, paramlistName: Atom<T[]>, paramseparator: Term<S>): Term<S>;
+    static repeatedWithTrailingSeparator<S extends unknown, T extends unknown>(paramelement: NamedRule<S, T>, paramlistName: Atom<T[]>, paramseparator: Term<S>, paramminRepetitions: number): Term<S>;
+    static repeatedWithoutTrailingSeparator<S extends unknown, T extends unknown>(paramelement: NamedRule<S, T>, paramlistName: Atom<T[]>, paramseparator: Term<S>): Term<S>;
+    static repeatedWithoutTrailingSeparator<S extends unknown, T extends unknown>(paramelement: NamedRule<S, T>, paramlistName: Atom<T[]>, paramseparator: Term<S>, paramminRepetitions: number): Term<S>;
+    static sequence<S extends unknown>(...paramterms: Term<S>[]): Term<S>;
     constructor(values: (Object | null)[])
     // private error: DelayedException<CommandSyntaxException>;
     // private suggestions: SuggestionSupplier<StringReader>;

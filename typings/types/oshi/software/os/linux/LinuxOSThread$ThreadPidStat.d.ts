@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class LinuxOSThread$ThreadPidStat extends Enum<LinuxOSThread$ThreadPidStat> {
     static KERNEL_TIME: LinuxOSThread$ThreadPidStat;
@@ -13,7 +12,7 @@ export class LinuxOSThread$ThreadPidStat extends Enum<LinuxOSThread$ThreadPidSta
     static THREAD_COUNT: LinuxOSThread$ThreadPidStat;
     static USER_TIME: LinuxOSThread$ThreadPidStat;
     static VSZ: LinuxOSThread$ThreadPidStat;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LinuxOSThread$ThreadPidStat;
     static values(): LinuxOSThread$ThreadPidStat[];
     private constructor(arg2: number)

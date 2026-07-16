@@ -9,7 +9,7 @@ export class CharStreams extends Object {
     static copy(paramfrom: Readable, paramto: Appendable): number;
     static exhaust(paramreadable: Readable): number;
     static nullWriter(): Writer;
-    static readLines(paramreadable: Readable, paramprocessor: LineProcessor<Object>): Object | null;
+    static readLines<T extends unknown>(paramreadable: Readable, paramprocessor: LineProcessor<T>): T;
     static readLines(paramr: Readable): string[];
     static skipFully(paramreader: Reader, paramn: number): void;
     static toString(paramr: Readable): string;

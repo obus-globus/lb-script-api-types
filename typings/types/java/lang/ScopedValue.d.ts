@@ -3,8 +3,8 @@ import type { Supplier } from '../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 export class ScopedValue<T extends unknown> extends Object {
-    static newInstance(): ScopedValue<Object>;
-    static where(paramarg0: ScopedValue<Object>, paramarg1: Object | null): ScopedValue$Carrier;
+    static newInstance<T extends unknown>(): ScopedValue<T>;
+    static where<T extends unknown>(paramarg0: ScopedValue<T>, paramarg1: T): ScopedValue$Carrier;
     private constructor()
     // private hash: number;
     bitmask(): number;

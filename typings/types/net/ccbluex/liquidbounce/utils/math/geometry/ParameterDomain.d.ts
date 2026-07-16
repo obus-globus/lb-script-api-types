@@ -1,13 +1,12 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ParameterDomain extends Enum<ParameterDomain> {
     static FORWARD: ParameterDomain;
     static SEGMENT_01: ParameterDomain;
     static UNBOUNDED: ParameterDomain;
     static getEntries(): ParameterDomain[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ParameterDomain;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ParameterDomain;
     static values(): ParameterDomain[];
     private constructor(lowerBound: number, upperBound: number)
     lowerBound: number;

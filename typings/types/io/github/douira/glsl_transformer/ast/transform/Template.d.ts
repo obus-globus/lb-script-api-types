@@ -7,7 +7,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Template<N extends ASTNode> extends Object {
-    static ofCloned(paramarg0: ASTNode | null): Template<ASTNode>;
+    static ofCloned<N extends ASTNode>(paramarg0: N): Template<N>;
     static withExpression(paramarg0: string): Template<Expression>;
     static withExternalDeclaration(paramarg0: string): Template<ExternalDeclaration>;
     static withStatement(paramarg0: string): Template<Statement>;

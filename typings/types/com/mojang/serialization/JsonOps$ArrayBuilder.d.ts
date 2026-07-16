@@ -14,7 +14,7 @@ export class JsonOps$ArrayBuilder extends Object implements ListBuilder<JsonElem
     addAll<E extends unknown>(arg0: E[], arg1: Encoder<E>): ListBuilder<JsonElement>;
     build(arg0: JsonElement): DataResult<JsonElement>;
     build(arg0: DataResult<JsonElement>): DataResult<JsonElement>;
-    mapError(arg0: (param0: string) => Object | null): ListBuilder<JsonElement>;
+    mapError(arg0: (param0: string) => string): ListBuilder<JsonElement>;
     ops(): DynamicOps<JsonElement>;
     withErrorsFrom(arg0: DataResult<Object>): ListBuilder<JsonElement>;
 }

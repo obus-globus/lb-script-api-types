@@ -2,22 +2,22 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { ByteString } from '../../../kotlinx/io/bytestring/ByteString.d.ts'
 export class ByteStringKt extends Object {
     static ByteString(): ByteString;
-    static ByteString(...paramarg0: number[]): ByteString;
-// (invalid TS: name contains '-')     static ByteString-GBYM_sE(...paramarg0: number[]): ByteString;
-    static contentEquals(paramarg0: ByteString, paramarg1: number[]): boolean;
-    static decodeToString(paramarg0: ByteString): string;
-    static encodeToByteString(paramarg0: string): ByteString;
-    static endsWith(paramarg0: ByteString, paramarg1: number[]): boolean;
-    static endsWith(paramarg0: ByteString, paramarg1: ByteString): boolean;
+    static ByteString(...bytes: number[]): ByteString;
+// (invalid TS: name contains '-')     static ByteString-GBYM_sE(...bytes: (Object | null)[]): ByteString;
+    static contentEquals(self: ByteString, array: number[]): boolean;
+    static decodeToString(self: ByteString): string;
+    static encodeToByteString(self: string): ByteString;
+    static endsWith(self: ByteString, byteArray: number[]): boolean;
+    static endsWith(self: ByteString, byteString: ByteString): boolean;
     static getIndices(paramarg0: ByteString): { start: number; endInclusive: number; step: number };
-    static indexOf(paramarg0: ByteString, paramarg1: number, paramarg2: number): number;
-    static indexOf(paramarg0: ByteString, paramarg1: number[], paramarg2: number): number;
-    static indexOf(paramarg0: ByteString, paramarg1: ByteString, paramarg2: number): number;
-    static isEmpty(paramarg0: ByteString): boolean;
-    static isNotEmpty(paramarg0: ByteString): boolean;
-    static lastIndexOf(paramarg0: ByteString, paramarg1: number, paramarg2: number): number;
-    static lastIndexOf(paramarg0: ByteString, paramarg1: number[], paramarg2: number): number;
-    static lastIndexOf(paramarg0: ByteString, paramarg1: ByteString, paramarg2: number): number;
-    static startsWith(paramarg0: ByteString, paramarg1: number[]): boolean;
-    static startsWith(paramarg0: ByteString, paramarg1: ByteString): boolean;
+    static indexOf(self: ByteString, byte: number, startIndex: number): number;
+    static indexOf(self: ByteString, byteArray: number[], startIndex: number): number;
+    static indexOf(self: ByteString, byteString: ByteString, startIndex: number): number;
+    static isEmpty(self: ByteString): boolean;
+    static isNotEmpty(self: ByteString): boolean;
+    static lastIndexOf(self: ByteString, byte: number, startIndex: number): number;
+    static lastIndexOf(self: ByteString, byteArray: number[], startIndex: number): number;
+    static lastIndexOf(self: ByteString, byteString: ByteString, startIndex: number): number;
+    static startsWith(self: ByteString, byteArray: number[]): boolean;
+    static startsWith(self: ByteString, byteString: ByteString): boolean;
 }

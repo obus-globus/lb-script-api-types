@@ -5,8 +5,8 @@ import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ForwardingFluentFuture<V extends unknown> extends FluentFuture<V> {
-    static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
-    static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
+    static from<V extends unknown>(paramfuture: FluentFuture<V>): FluentFuture<V>;
+    static from<V extends unknown>(paramfuture: ListenableFuture<V>): FluentFuture<V>;
     constructor(delegate: ListenableFuture<V>)
     // private delegate: ListenableFuture<V>;
     addListener(listener: () => void, executor: Executor): void;

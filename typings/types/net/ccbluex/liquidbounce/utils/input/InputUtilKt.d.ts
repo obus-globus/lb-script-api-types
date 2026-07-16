@@ -54,5 +54,5 @@ export class InputUtilKt extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt#L73 | src/main/kotlin/net/ccbluex/liquidbounce/utils/input/InputUtil.kt:73}
      */
     static reduceInputName(translationKey: string): string;
-    static toModifierOrNull(key: InputConstants$Key): InputBind$Modifier;
+    static toModifierOrNull(self: InputConstants$Key): InputBind$Modifier | null;
 }

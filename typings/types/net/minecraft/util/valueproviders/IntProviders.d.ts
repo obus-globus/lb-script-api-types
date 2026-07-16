@@ -8,6 +8,6 @@ export class IntProviders extends Object {
     static POSITIVE_CODEC: Codec<IntProvider>;
     static bootstrap(paramregistry: MapCodec<IntProvider>[]): MapCodec<IntProvider>;
     static codec(paramminValue: number, parammaxValue: number): Codec<IntProvider>;
-    static validateCodec(paramminValue: number, parammaxValue: number, paramcodec: Codec<IntProvider>): Codec<IntProvider>;
+    static validateCodec<T extends IntProvider>(paramminValue: number, parammaxValue: number, paramcodec: Codec<T>): Codec<T>;
     constructor()
 }

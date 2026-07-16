@@ -11,10 +11,10 @@ import type { LevelReader } from '../../../../net/minecraft/world/level/LevelRea
 import type { ServerLevelAccessor } from '../../../../net/minecraft/world/level/ServerLevelAccessor.d.ts'
 import type { Heightmap$Types } from '../../../../net/minecraft/world/level/levelgen/Heightmap$Types.d.ts'
 export class SpawnPlacements extends Object {
-    static checkSpawnRules(paramtype: EntityType<Entity>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
+    static checkSpawnRules<T extends Entity>(paramtype: EntityType<T>, paramlevel: ServerLevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static getHeightmapType(paramtype: EntityType<any>): Heightmap$Types;
     static getPlacementType(paramtype: EntityType<any>): SpawnPlacementType;
     static isSpawnPositionOk(paramtype: EntityType<any>, paramlevel: LevelReader, paramblockPos: BlockPos): boolean;
-    static register(paramtype: EntityType<Mob>, paramplacementType: SpawnPlacementType, paramheightmap: Heightmap$Types, paramspawnPredicate: (param0: EntityType<Mob>, param1: ServerLevelAccessor, param2: EntitySpawnReason, param3: BlockPos, param4: RandomSource) => boolean): void;
+    static register<T extends Mob>(paramtype: EntityType<T>, paramplacementType: SpawnPlacementType, paramheightmap: Heightmap$Types, paramspawnPredicate: (param0: EntityType<T>, param1: ServerLevelAccessor, param2: EntitySpawnReason, param3: BlockPos, param4: RandomSource) => boolean): void;
     constructor()
 }

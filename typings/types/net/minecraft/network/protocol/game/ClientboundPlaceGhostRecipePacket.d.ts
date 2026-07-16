@@ -11,7 +11,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { RecipeDisplay } from '../../../../../net/minecraft/world/item/crafting/display/RecipeDisplay.d.ts'
 export class ClientboundPlaceGhostRecipePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundPlaceGhostRecipePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(containerId: number, recipeDisplay: RecipeDisplay)
     // private containerId: number;
     // private recipeDisplay: RecipeDisplay;

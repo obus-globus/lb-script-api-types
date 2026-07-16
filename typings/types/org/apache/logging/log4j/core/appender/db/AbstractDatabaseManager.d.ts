@@ -8,7 +8,7 @@ import type { AbstractManager } from '../../../../../../../org/apache/logging/lo
 import type { ManagerFactory } from '../../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 import type { Configuration } from '../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 export abstract class AbstractDatabaseManager extends AbstractManager implements Flushable {
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
     static hasManager(paramname: string): boolean;
     constructor(name: string, bufferSize: number)
     constructor(name: string, bufferSize: number, layout: Layout<Serializable>)

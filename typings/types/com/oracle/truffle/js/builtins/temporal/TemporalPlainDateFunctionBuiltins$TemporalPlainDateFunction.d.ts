@@ -10,7 +10,7 @@ export class TemporalPlainDateFunctionBuiltins$TemporalPlainDateFunction extends
     static compare: TemporalPlainDateFunctionBuiltins$TemporalPlainDateFunction;
     static from: TemporalPlainDateFunctionBuiltins$TemporalPlainDateFunction;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalPlainDateFunctionBuiltins$TemporalPlainDateFunction;
     static values(): TemporalPlainDateFunctionBuiltins$TemporalPlainDateFunction[];
     private constructor(length: number)

@@ -5,8 +5,9 @@ import type { IntBuffer } from '../../../../java/nio/IntBuffer.d.ts'
 import type { LongBuffer } from '../../../../java/nio/LongBuffer.d.ts'
 import type { ShortBuffer } from '../../../../java/nio/ShortBuffer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { CustomBuffer } from '../../../../org/lwjgl/system/CustomBuffer.d.ts'
 export class LibCString extends Object {
-    static memcpy(paramarg0: Object | null, paramarg1: Object | null): number;
+    static memcpy<T extends CustomBuffer<T>>(paramarg0: T, paramarg1: T): number;
     static memcpy(paramarg0: number[], paramarg1: number[]): number;
     static memcpy(paramarg0: ByteBuffer, paramarg1: ByteBuffer): number;
     static memcpy(paramarg0: DoubleBuffer, paramarg1: DoubleBuffer): number;
@@ -14,7 +15,7 @@ export class LibCString extends Object {
     static memcpy(paramarg0: IntBuffer, paramarg1: IntBuffer): number;
     static memcpy(paramarg0: LongBuffer, paramarg1: LongBuffer): number;
     static memcpy(paramarg0: ShortBuffer, paramarg1: ShortBuffer): number;
-    static memmove(paramarg0: Object | null, paramarg1: Object | null): number;
+    static memmove<T extends CustomBuffer<T>>(paramarg0: T, paramarg1: T): number;
     static memmove(paramarg0: number[], paramarg1: number[]): number;
     static memmove(paramarg0: ByteBuffer, paramarg1: ByteBuffer): number;
     static memmove(paramarg0: DoubleBuffer, paramarg1: DoubleBuffer): number;
@@ -22,7 +23,7 @@ export class LibCString extends Object {
     static memmove(paramarg0: IntBuffer, paramarg1: IntBuffer): number;
     static memmove(paramarg0: LongBuffer, paramarg1: LongBuffer): number;
     static memmove(paramarg0: ShortBuffer, paramarg1: ShortBuffer): number;
-    static memset(paramarg0: Object | null, paramarg1: number): number;
+    static memset<T extends CustomBuffer<T>>(paramarg0: T, paramarg1: number): number;
     static memset(paramarg0: number[], paramarg1: number): number;
     static memset(paramarg0: ByteBuffer, paramarg1: number): number;
     static memset(paramarg0: DoubleBuffer, paramarg1: number): number;

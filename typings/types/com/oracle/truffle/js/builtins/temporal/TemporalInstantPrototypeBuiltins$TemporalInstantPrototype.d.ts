@@ -21,7 +21,7 @@ export class TemporalInstantPrototypeBuiltins$TemporalInstantPrototype extends E
     static until: TemporalInstantPrototypeBuiltins$TemporalInstantPrototype;
     static valueOf: TemporalInstantPrototypeBuiltins$TemporalInstantPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalInstantPrototypeBuiltins$TemporalInstantPrototype;
     static values(): TemporalInstantPrototypeBuiltins$TemporalInstantPrototype[];
     private constructor(length: number)

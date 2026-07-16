@@ -6,21 +6,21 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../../java/util/Iterator.d.ts'
 import type { Streams$FailableStream } from '../../../../../org/apache/commons/lang3/stream/Streams$FailableStream.d.ts'
 export class Streams extends Object {
-    static failableStream(paramarg0: Object | null): Streams$FailableStream<Object>;
-    static failableStream(...paramarg0: (Object | null)[]): Streams$FailableStream<Object>;
-    static failableStream(paramarg0: (Object | null)[]): Streams$FailableStream<Object>;
-    static failableStream(paramarg0: Stream<Object>): Streams$FailableStream<Object>;
-    static instancesOf(paramarg0: Class<Object>, paramarg1: Object[]): Stream<Object>;
-    static nonNull(paramarg0: Object | null): Stream<Object>;
-    static nonNull(...paramarg0: (Object | null)[]): Stream<Object>;
-    static nonNull(paramarg0: (Object | null)[]): Stream<Object>;
-    static nonNull(paramarg0: Stream<Object>): Stream<Object>;
-    static of(paramarg0: (Object | null)[]): Stream<Object>;
-    static of(paramarg0: Enumeration<Object>): Stream<Object>;
-    static of(paramarg0: Iterator<Object>): Stream<Object>;
-    static of(...paramarg0: (Object | null)[]): Stream<Object>;
-    static stream(paramarg0: (Object | null)[]): Streams$FailableStream<Object>;
-    static stream(paramarg0: Stream<Object>): Streams$FailableStream<Object>;
-    static toArray(paramarg0: Class<Object>): Collector<Object, (Object | null)[], (Object | null)[]>;
+    static failableStream<T extends unknown>(paramarg0: T): Streams$FailableStream<T>;
+    static failableStream<T extends unknown>(...paramarg0: T[]): Streams$FailableStream<T>;
+    static failableStream<T extends unknown>(paramarg0: T[]): Streams$FailableStream<T>;
+    static failableStream<T extends unknown>(paramarg0: Stream<T>): Streams$FailableStream<T>;
+    static instancesOf<E extends unknown>(paramarg0: Class<Object>, paramarg1: Object[]): Stream<E>;
+    static nonNull<E extends unknown>(paramarg0: E): Stream<E>;
+    static nonNull<E extends unknown>(...paramarg0: E[]): Stream<E>;
+    static nonNull<E extends unknown>(paramarg0: E[]): Stream<E>;
+    static nonNull<E extends unknown>(paramarg0: Stream<E>): Stream<E>;
+    static of<E extends unknown>(paramarg0: E[]): Stream<E>;
+    static of<E extends unknown>(paramarg0: Enumeration<E>): Stream<E>;
+    static of<E extends unknown>(paramarg0: Iterator<E>): Stream<E>;
+    static of<T extends unknown>(...paramarg0: T[]): Stream<T>;
+    static stream<E extends unknown>(paramarg0: E[]): Streams$FailableStream<E>;
+    static stream<T extends unknown>(paramarg0: Stream<T>): Streams$FailableStream<T>;
+    static toArray<T extends unknown>(paramarg0: Class<T>): Collector<T, T[], T[]>;
     constructor()
 }

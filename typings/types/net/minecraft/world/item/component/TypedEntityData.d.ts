@@ -13,9 +13,9 @@ import type { TooltipFlag } from '../../../../../net/minecraft/world/item/Toolti
 import type { TooltipProvider } from '../../../../../net/minecraft/world/item/component/TooltipProvider.d.ts'
 import type { BlockEntity } from '../../../../../net/minecraft/world/level/block/entity/BlockEntity.d.ts'
 export class TypedEntityData<IdType extends unknown> extends Object implements TooltipProvider {
-    static codec(paramtypeCodec: Codec<Object>): Codec<TypedEntityData<Object>>;
-    static of(paramtype: Object | null, paramdata: CompoundTag): TypedEntityData<Object>;
-    static streamCodec(paramtypeCodec: StreamCodec<ByteBuf, Object>): StreamCodec<ByteBuf, TypedEntityData<Object>>;
+    static codec<T extends unknown>(paramtypeCodec: Codec<T>): Codec<TypedEntityData<T>>;
+    static of<T extends unknown>(paramtype: T, paramdata: CompoundTag): TypedEntityData<T>;
+    static streamCodec<B extends ByteBuf, T extends unknown>(paramtypeCodec: StreamCodec<B, T>): StreamCodec<B, TypedEntityData<T>>;
     private constructor(type: IdType, data: CompoundTag)
     // private tag: CompoundTag;
     // private type: IdType;

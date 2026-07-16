@@ -18,7 +18,7 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
 import type { Logger } from '../../../../../org/apache/logging/log4j/Logger.d.ts'
 export class ScreenManager extends Object implements EventListener {
     static INSTANCE: ScreenManager;
-    static isClientScreen(paramarg0: Screen): boolean;
+    static isClientScreen(screen: Screen | null): boolean;
     readonly browserSettings: IntegrationBrowserSettings;
     readonly debugDisplayName: Component;
     // private effectUpdateHandler: EventHook<GameTickEvent>;

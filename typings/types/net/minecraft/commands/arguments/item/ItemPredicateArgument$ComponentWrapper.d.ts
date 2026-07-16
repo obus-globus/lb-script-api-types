@@ -8,7 +8,7 @@ import type { DataComponentType } from '../../../../../net/minecraft/core/compon
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ItemPredicateArgument$ComponentWrapper extends Record {
-    static create(paramreader: ImmutableStringReader, paramid: Identifier, paramtype: DataComponentType<Object>): ItemPredicateArgument$ComponentWrapper;
+    static create<T extends unknown>(paramreader: ImmutableStringReader, paramid: Identifier, paramtype: DataComponentType<T>): ItemPredicateArgument$ComponentWrapper;
     private constructor(id: Identifier, presenceChecker: (param0: ItemStack) => boolean, valueChecker: Decoder<(param0: ItemStack) => boolean>)
     // private id: Identifier;
     // private presenceChecker: (param0: ItemStack) => boolean;

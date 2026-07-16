@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class TransitionGuard$Kind extends Enum<TransitionGuard$Kind> {
     static checkGroupMatched: TransitionGuard$Kind;
@@ -15,7 +14,7 @@ export class TransitionGuard$Kind extends Enum<TransitionGuard$Kind> {
     static exitZeroWidth: TransitionGuard$Kind;
     static updateCG: TransitionGuard$Kind;
     static updateRecursiveBackrefPointer: TransitionGuard$Kind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TransitionGuard$Kind;
     static values(): TransitionGuard$Kind[];
     private constructor()

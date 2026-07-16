@@ -25,6 +25,7 @@ import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator
 import type { IntStream } from '../../../../java/util/stream/IntStream.d.ts'
 import type { LongStream } from '../../../../java/util/stream/LongStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 export class CompoundListCodec<K extends unknown, V extends unknown> extends Object implements Codec<Pair<K, V>[]> {
     static BOOL: PrimitiveCodec<boolean>;
@@ -40,33 +41,33 @@ export class CompoundListCodec<K extends unknown, V extends unknown> extends Obj
     static PASSTHROUGH: Codec<Dynamic<Object>>;
     static SHORT: PrimitiveCodec<number>;
     static STRING: PrimitiveCodec<string>;
-    static checkRange(paramarg0: Number | null, paramarg1: Number | null): (param0: Number | null) => DataResult<Number>;
-    static compoundList(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Pair<Object, Object>[]>;
-    static dispatchedMap(paramarg0: Codec<Object>, paramarg1: (param0: Object | null) => Codec<Object>): Codec<Map<Object | null, Object | null>>;
+    static checkRange<N extends Number & Comparable<N>>(paramarg0: N, paramarg1: N): (param0: N) => DataResult<N>;
+    static compoundList<K extends unknown, V extends unknown>(paramarg0: Codec<K>, paramarg1: Codec<V>): Codec<Pair<K, V>[]>;
+    static dispatchedMap<K extends unknown, V extends unknown>(paramarg0: Codec<K>, paramarg1: (param0: K) => Codec<V>): Codec<Map<K, V>>;
     static doubleRange(paramarg0: number, paramarg1: number): Codec<number>;
-    static either(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Either<Object, Object>>;
+    static either<F extends unknown, S extends unknown>(paramarg0: Codec<F>, paramarg1: Codec<S>): Codec<Either<F, S>>;
     static floatRange(paramarg0: number, paramarg1: number): Codec<number>;
     static intRange(paramarg0: number, paramarg1: number): Codec<number>;
-    static lazyInitialized(paramarg0: () => Codec<Object>): Codec<Object>;
-    static list(paramarg0: Codec<Object>): Codec<(Object | null)[]>;
-    static list(paramarg0: Codec<Object>, paramarg1: number, paramarg2: number): Codec<(Object | null)[]>;
-    static mapEither(paramarg0: MapCodec<Object>, paramarg1: MapCodec<Object>): MapCodec<Either<Object, Object>>;
-    static mapPair(paramarg0: MapCodec<Object>, paramarg1: MapCodec<Object>): MapCodec<Pair<Object, Object>>;
-    static of(paramarg0: Encoder<Object>, paramarg1: Decoder<Object>): Codec<Object>;
-    static of(paramarg0: Encoder<Object>, paramarg1: Decoder<Object>, paramarg2: string): Codec<Object>;
-    static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
-    static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
-    static optionalField(paramarg0: string, paramarg1: Codec<Object>, paramarg2: boolean): MapCodec<Optional<Object>>;
-    static pair(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Pair<Object, Object>>;
-    static recursive(paramarg0: string, paramarg1: (param0: Codec<Object>) => Codec<Object>): Codec<Object>;
-    static simpleMap(paramarg0: Codec<Object>, paramarg1: Codec<Object>, paramarg2: Keyable): SimpleMapCodec<Object, Object>;
+    static lazyInitialized<A extends unknown>(paramarg0: () => Codec<A>): Codec<A>;
+    static list<E extends unknown>(paramarg0: Codec<E>): Codec<E[]>;
+    static list<E extends unknown>(paramarg0: Codec<E>, paramarg1: number, paramarg2: number): Codec<E[]>;
+    static mapEither<F extends unknown, S extends unknown>(paramarg0: MapCodec<F>, paramarg1: MapCodec<S>): MapCodec<Either<F, S>>;
+    static mapPair<F extends unknown, S extends unknown>(paramarg0: MapCodec<F>, paramarg1: MapCodec<S>): MapCodec<Pair<F, S>>;
+    static of<A extends unknown>(paramarg0: Encoder<A>, paramarg1: Decoder<A>): Codec<A>;
+    static of<A extends unknown>(paramarg0: Encoder<A>, paramarg1: Decoder<A>, paramarg2: string): Codec<A>;
+    static of<A extends unknown>(paramarg0: MapEncoder<A>, paramarg1: MapDecoder<A>): MapCodec<A>;
+    static of<A extends unknown>(paramarg0: MapEncoder<A>, paramarg1: MapDecoder<A>, paramarg2: () => string): MapCodec<A>;
+    static optionalField<F extends unknown>(paramarg0: string, paramarg1: Codec<F>, paramarg2: boolean): MapCodec<Optional<F>>;
+    static pair<F extends unknown, S extends unknown>(paramarg0: Codec<F>, paramarg1: Codec<S>): Codec<Pair<F, S>>;
+    static recursive<A extends unknown>(paramarg0: string, paramarg1: (param0: Codec<A>) => Codec<A>): Codec<A>;
+    static simpleMap<K extends unknown, V extends unknown>(paramarg0: Codec<K>, paramarg1: Codec<V>, paramarg2: Keyable): SimpleMapCodec<K, V>;
     static sizeLimitedString(paramarg0: number): Codec<string>;
     static string(paramarg0: number, paramarg1: number): Codec<string>;
-    static stringResolver(paramarg0: (param0: Object | null) => string, paramarg1: (param0: string) => Object | null): Codec<Object>;
-    static unboundedMap(paramarg0: Codec<Object>, paramarg1: Codec<Object>): UnboundedMapCodec<Object, Object>;
-    static withAlternative(paramarg0: Codec<Object>, paramarg1: Codec<Object>, paramarg2: (param0: Object | null) => Object | null): Codec<Object>;
-    static withAlternative(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Object>;
-    static xor(paramarg0: Codec<Object>, paramarg1: Codec<Object>): Codec<Either<Object, Object>>;
+    static stringResolver<E extends unknown>(paramarg0: (param0: E) => string, paramarg1: (param0: string) => E): Codec<E>;
+    static unboundedMap<K extends unknown, V extends unknown>(paramarg0: Codec<K>, paramarg1: Codec<V>): UnboundedMapCodec<K, V>;
+    static withAlternative<T extends unknown, U extends unknown>(paramarg0: Codec<T>, paramarg1: Codec<U>, paramarg2: (param0: U) => T): Codec<T>;
+    static withAlternative<T extends unknown>(paramarg0: Codec<T>, paramarg1: Codec<T>): Codec<T>;
+    static xor<F extends unknown, S extends unknown>(paramarg0: Codec<F>, paramarg1: Codec<S>): Codec<Either<F, S>>;
     constructor(arg0: Codec<K>, arg1: Codec<V>)
     // private elementCodec: Codec<V>;
     // private keyCodec: Codec<K>;
@@ -100,10 +101,10 @@ export class CompoundListCodec<K extends unknown, V extends unknown> extends Obj
     // private optionalFieldOf(arg0: string, arg1: Lifecycle, arg2: Pair<K, V>[], arg3: Lifecycle, arg4: boolean): MapCodec<Pair<K, V>[]>;
     orElse(arg0: Pair<K, V>[]): Codec<Pair<K, V>[]>;
     orElse(arg0: (param0: string) => void, arg1: Pair<K, V>[]): Codec<Pair<K, V>[]>;
-    orElse(arg0: (param0: string) => Object | null, arg1: Pair<K, V>[]): Codec<Pair<K, V>[]>;
+    orElse(arg0: (param0: string) => string, arg1: Pair<K, V>[]): Codec<Pair<K, V>[]>;
     orElseGet(arg0: (param0: string) => void, arg1: () => Pair<K, V>[]): Codec<Pair<K, V>[]>;
     orElseGet(arg0: () => Pair<K, V>[]): Codec<Pair<K, V>[]>;
-    orElseGet(arg0: (param0: string) => Object | null, arg1: () => Pair<K, V>[]): Codec<Pair<K, V>[]>;
+    orElseGet(arg0: (param0: string) => string, arg1: () => Pair<K, V>[]): Codec<Pair<K, V>[]>;
     partialDispatch<E extends unknown>(arg0: string, arg1: (param0: E) => DataResult<Pair<K, V>[]>, arg2: (param0: Pair<K, V>[]) => DataResult<MapCodec<E>>): Codec<E>;
     promotePartial(arg0: (param0: string) => void): Codec<Pair<K, V>[]>;
     sizeLimitedListOf(arg0: number): Codec<Pair<K, V>[][]>;

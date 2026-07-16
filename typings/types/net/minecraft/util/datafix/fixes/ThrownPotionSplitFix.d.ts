@@ -10,7 +10,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EntityRenameFix } from '../../../../../net/minecraft/util/datafix/fixes/EntityRenameFix.d.ts'
 import type { ThrownPotionSplitFix$ItemIdFinder } from '../../../../../net/minecraft/util/datafix/fixes/ThrownPotionSplitFix$ItemIdFinder.d.ts'
 export class ThrownPotionSplitFix extends EntityRenameFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     constructor(outputSchema: Schema)
     // private itemIdFinder: () => ThrownPotionSplitFix$ItemIdFinder;
     fix(name: string, entity: Typed<Object>): Pair<string, Typed<Object>>;

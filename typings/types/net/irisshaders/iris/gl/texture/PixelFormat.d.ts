@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { GlVersion } from '../../../../../net/irisshaders/iris/gl/GlVersion.d.ts'
 export class PixelFormat extends Enum<PixelFormat> {
@@ -17,7 +16,7 @@ export class PixelFormat extends Enum<PixelFormat> {
     static RGB_INTEGER: PixelFormat;
     static RG_INTEGER: PixelFormat;
     static fromString(paramarg0: string): Optional<PixelFormat>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PixelFormat;
     static values(): PixelFormat[];
     private constructor(arg2: number, arg3: number, arg4: GlVersion, arg5: boolean)

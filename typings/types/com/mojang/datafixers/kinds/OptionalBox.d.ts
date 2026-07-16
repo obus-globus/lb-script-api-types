@@ -3,8 +3,8 @@ import type { OptionalBox$Mu } from '../../../../com/mojang/datafixers/kinds/Opt
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class OptionalBox<T extends unknown> extends Object implements App<OptionalBox$Mu, T> {
-    static create(paramarg0: Optional<Object>): OptionalBox<Object>;
-    static unbox(paramarg0: App<OptionalBox$Mu, Object>): Optional<Object>;
+    static create<T extends unknown>(paramarg0: Optional<T>): OptionalBox<T>;
+    static unbox<T extends unknown>(paramarg0: App<OptionalBox$Mu, T>): Optional<T>;
     private constructor(arg0: Optional<T>)
     // private value: Optional<T>;
 }

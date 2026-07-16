@@ -7,6 +7,7 @@ import type { SuggestionsBuilder } from '../../../../com/mojang/brigadier/sugges
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CommandSourceStack } from '../../../../net/minecraft/commands/CommandSourceStack.d.ts'
+import type { ExecutionCommandSource } from '../../../../net/minecraft/commands/ExecutionCommandSource.d.ts'
 import type { ChainModifiers } from '../../../../net/minecraft/commands/execution/ChainModifiers.d.ts'
 import type { ExecutionControl } from '../../../../net/minecraft/commands/execution/ExecutionControl.d.ts'
 import type { CommandFunction } from '../../../../net/minecraft/commands/functions/CommandFunction.d.ts'
@@ -16,7 +17,7 @@ export class FunctionCommand extends Object {
     static ERROR_FUNCTION_INSTANTATION_FAILURE: Dynamic2CommandExceptionType;
     static SUGGEST_FUNCTION: (param0: CommandContext<CommandSourceStack>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     static modifySenderForExecution(paramsender: CommandSourceStack): CommandSourceStack;
-    static queueFunctions(paramfunctions: CommandFunction<Object>[], paramarguments: CompoundTag, paramoriginalSource: Object | null, paramfunctionSource: Object | null, paramoutput: ExecutionControl<Object>, paramcallbacks: FunctionCommand$Callbacks<Object>, parammodifiers: ChainModifiers): void;
+    static queueFunctions<T extends ExecutionCommandSource<T>>(paramfunctions: CommandFunction<T>[], paramarguments: CompoundTag, paramoriginalSource: T, paramfunctionSource: T, paramoutput: ExecutionControl<T>, paramcallbacks: FunctionCommand$Callbacks<T>, parammodifiers: ChainModifiers): void;
     static register(paramdispatcher: CommandDispatcher<CommandSourceStack>): void;
     constructor()
 }

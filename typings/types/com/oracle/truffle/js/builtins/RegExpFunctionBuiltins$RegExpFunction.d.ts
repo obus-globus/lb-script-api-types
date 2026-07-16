@@ -9,7 +9,7 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class RegExpFunctionBuiltins$RegExpFunction extends Enum<RegExpFunctionBuiltins$RegExpFunction> implements BuiltinEnum<RegExpFunctionBuiltins$RegExpFunction> {
     static escape: RegExpFunctionBuiltins$RegExpFunction;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RegExpFunctionBuiltins$RegExpFunction;
     static values(): RegExpFunctionBuiltins$RegExpFunction[];
     private constructor()

@@ -5,9 +5,9 @@ import type { CommandNode } from '../../../../com/mojang/brigadier/tree/CommandN
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ArgumentUtils extends Object {
     static createNumberFlags(paramhasMin: boolean, paramhasMax: boolean): number;
-    static findUsedArgumentTypes(paramnode: CommandNode<Object>): ArgumentType<Object>[];
+    static findUsedArgumentTypes<T extends unknown>(paramnode: CommandNode<T>): ArgumentType<Object>[];
     static numberHasMax(paramflags: number): boolean;
     static numberHasMin(paramflags: number): boolean;
-    static serializeNodeToJson(paramdispatcher: CommandDispatcher<Object>, paramnode: CommandNode<Object>): JsonObject;
+    static serializeNodeToJson<S extends unknown>(paramdispatcher: CommandDispatcher<S>, paramnode: CommandNode<S>): JsonObject;
     constructor()
 }

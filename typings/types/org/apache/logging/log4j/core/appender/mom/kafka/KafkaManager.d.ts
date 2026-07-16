@@ -5,7 +5,7 @@ import type { ManagerFactory } from '../../../../../../../../org/apache/logging/
 import type { Property } from '../../../../../../../../org/apache/logging/log4j/core/config/Property.d.ts'
 export class KafkaManager extends AbstractManager {
     static DEFAULT_TIMEOUT_MILLIS: string;
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
     static getManager(paramloggerContext: LoggerContext, paramname: string, paramtopic: string, paramsyncSend: boolean, paramproperties: Property[], paramkey: string): KafkaManager;
     static hasManager(paramname: string): boolean;
     constructor(loggerContext: LoggerContext, name: string, topic: string, syncSend: boolean, properties: Property[], key: string)

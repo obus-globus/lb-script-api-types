@@ -21,7 +21,7 @@ export class DelegatingOps$DelegateRecordBuilder extends Object implements Recor
     build<T extends unknown>(arg0: DataResult<T>): DataResult<T>;
     build<T extends unknown>(prefix: T): DataResult<T>;
     build<T extends unknown>(prefix: DataResult<T>): DataResult<T>;
-    mapError<T extends unknown>(onError: (param0: string) => Object | null): RecordBuilder<T>;
+    mapError<T extends unknown>(onError: (param0: string) => string): RecordBuilder<T>;
     ops<T extends unknown>(): DynamicOps<T>;
     setLifecycle<T extends unknown>(lifecycle: Lifecycle): RecordBuilder<T>;
     withErrorsFrom<T extends unknown>(result: DataResult<Object>): RecordBuilder<T>;

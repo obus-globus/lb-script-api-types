@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class BlockModelLighter$SizeInfo extends Enum<BlockModelLighter$SizeInfo> {
     static COUNT: number;
@@ -15,7 +14,7 @@ export class BlockModelLighter$SizeInfo extends Enum<BlockModelLighter$SizeInfo>
     static SOUTH: BlockModelLighter$SizeInfo;
     static UP: BlockModelLighter$SizeInfo;
     static WEST: BlockModelLighter$SizeInfo;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): BlockModelLighter$SizeInfo;
     static values(): BlockModelLighter$SizeInfo[];
     private constructor(index: number)

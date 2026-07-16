@@ -27,9 +27,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class OptionalBox$Instance extends Enum<OptionalBox$Instance> implements Applicative<OptionalBox$Mu, OptionalBox$Instance$Mu>, Traversable<OptionalBox$Mu, OptionalBox$Instance$Mu> {
     static INSTANCE: OptionalBox$Instance;
-    static unbox(paramarg0: App<Applicative$Mu, K1>): Applicative<K1, Applicative$Mu>;
-    static unbox(paramarg0: App<Traversable$Mu, K1>): Traversable<K1, Traversable$Mu>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
+    static unbox<F extends K1, Mu extends Traversable$Mu>(paramarg0: App<Mu, F>): Traversable<F, Mu>;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): OptionalBox$Instance;
     static values(): OptionalBox$Instance[];
     private constructor()

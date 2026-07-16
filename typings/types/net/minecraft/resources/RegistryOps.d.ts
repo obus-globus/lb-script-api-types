@@ -12,11 +12,11 @@ import type { DelegatingOps } from '../../../net/minecraft/resources/DelegatingO
 import type { RegistryOps$RegistryInfoLookup } from '../../../net/minecraft/resources/RegistryOps$RegistryInfoLookup.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 export class RegistryOps<T extends unknown> extends DelegatingOps<T> implements RegistryOpsAccessor {
-    static create(paramparent: DynamicOps<Object>, paramlookupProvider: HolderLookup$Provider): RegistryOps<Object>;
-    static create(paramparent: DynamicOps<Object>, paramlookupProvider: RegistryOps$RegistryInfoLookup): RegistryOps<Object>;
-    static injectRegistryContext(paramdynamic: Dynamic<Object>, paramlookupProvider: HolderLookup$Provider): Dynamic<Object>;
-    static retrieveElement(paramkey: ResourceKey<Object>): RecordCodecBuilder<Object, Holder$Reference<Object>>;
-    static retrieveGetter(paramregistryKey: ResourceKey<(Object | null)[]>): RecordCodecBuilder<Object, HolderGetter<Object>>;
+    static create<T extends unknown>(paramparent: DynamicOps<T>, paramlookupProvider: HolderLookup$Provider): RegistryOps<T>;
+    static create<T extends unknown>(paramparent: DynamicOps<T>, paramlookupProvider: RegistryOps$RegistryInfoLookup): RegistryOps<T>;
+    static injectRegistryContext<T extends unknown>(paramdynamic: Dynamic<T>, paramlookupProvider: HolderLookup$Provider): Dynamic<T>;
+    static retrieveElement<E extends unknown, O extends unknown>(paramkey: ResourceKey<E>): RecordCodecBuilder<O, Holder$Reference<E>>;
+    static retrieveGetter<E extends unknown, O extends unknown>(paramregistryKey: ResourceKey<E[]>): RecordCodecBuilder<O, HolderGetter<E>>;
     private constructor(parent: DynamicOps<T>, lookupProvider: RegistryOps$RegistryInfoLookup)
     lookupProvider: RegistryOps$RegistryInfoLookup;
     equals(obj: Object | null): boolean;

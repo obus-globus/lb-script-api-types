@@ -13,7 +13,7 @@ import type { ClockNetworkState } from '../../../../../net/minecraft/world/clock
 import type { WorldClock } from '../../../../../net/minecraft/world/clock/WorldClock.d.ts'
 export class ClientboundSetTimePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetTimePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(gameTime: number, clockUpdates: Map<Holder<WorldClock>, ClockNetworkState>)
     // private clockUpdates: Map<Holder<WorldClock>, ClockNetworkState>;
     // private gameTime: number;

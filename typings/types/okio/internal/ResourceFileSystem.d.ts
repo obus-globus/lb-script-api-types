@@ -13,7 +13,7 @@ export class ResourceFileSystem extends FileSystem_2 {
     static RESOURCES: FileSystem_2;
     static SYSTEM: FileSystem_2;
     static SYSTEM_TEMPORARY_DIRECTORY: Path;
-    static get(paramarg0: FileSystem): FileSystem_2;
+    static get(self: FileSystem): FileSystem_2;
     constructor(classLoader: ClassLoader, indexEagerly: boolean, systemFileSystem: FileSystem_2)
     // private classLoader: ClassLoader;
     // private roots: Pair<FileSystem_2, Path>[];

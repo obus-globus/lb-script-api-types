@@ -1,6 +1,5 @@
 import type { DisplayContext$Type } from '../../../../com/ibm/icu/text/DisplayContext$Type.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class DisplayContext extends Enum<DisplayContext> {
     static CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE: DisplayContext;
@@ -14,7 +13,7 @@ export class DisplayContext extends Enum<DisplayContext> {
     static NO_SUBSTITUTE: DisplayContext;
     static STANDARD_NAMES: DisplayContext;
     static SUBSTITUTE: DisplayContext;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DisplayContext;
     static values(): DisplayContext[];
     private constructor(arg2: DisplayContext$Type, arg3: number)

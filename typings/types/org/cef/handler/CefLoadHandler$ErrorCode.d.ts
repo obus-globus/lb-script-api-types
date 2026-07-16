@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class CefLoadHandler$ErrorCode extends Enum<CefLoadHandler$ErrorCode> {
     static ERR_ABORTED: CefLoadHandler$ErrorCode;
@@ -223,7 +222,7 @@ export class CefLoadHandler$ErrorCode extends Enum<CefLoadHandler$ErrorCode> {
     static ERR_WS_THROTTLE_QUEUE_TOO_LARGE: CefLoadHandler$ErrorCode;
     static ERR_WS_UPGRADE: CefLoadHandler$ErrorCode;
     static findByCode(paramarg0: number): CefLoadHandler$ErrorCode;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CefLoadHandler$ErrorCode;
     static values(): CefLoadHandler$ErrorCode[];
     private constructor(arg2: number)

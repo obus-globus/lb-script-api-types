@@ -2,6 +2,7 @@ import type { ArgumentType } from '../../../../../../com/mojang/brigadier/argume
 import type { Codec } from '../../../../../../com/mojang/serialization/Codec.d.ts'
 import type { ToIntFunction } from '../../../../../../java/util/function/ToIntFunction.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { GameRuleBuilder$BooleanRuleBuilder } from '../../../../../../net/fabricmc/fabric/api/gamerule/v1/GameRuleBuilder$BooleanRuleBuilder.d.ts'
 import type { GameRuleBuilder$DoubleRuleBuilder } from '../../../../../../net/fabricmc/fabric/api/gamerule/v1/GameRuleBuilder$DoubleRuleBuilder.d.ts'
 import type { GameRuleBuilder$EnumRuleBuilder } from '../../../../../../net/fabricmc/fabric/api/gamerule/v1/GameRuleBuilder$EnumRuleBuilder.d.ts'
@@ -16,7 +17,7 @@ import type { GameRules$VisitorCaller } from '../../../../../../net/minecraft/wo
 export class GameRuleBuilder<T extends unknown> extends Object {
     static forBoolean(paramarg0: boolean): GameRuleBuilder$BooleanRuleBuilder;
     static forDouble(paramarg0: number): GameRuleBuilder$DoubleRuleBuilder;
-    static forEnum(paramarg0: Object | null): GameRuleBuilder$EnumRuleBuilder<any>;
+    static forEnum<E extends Enum<E>>(paramarg0: E): GameRuleBuilder$EnumRuleBuilder<E>;
     static forInteger(paramarg0: number): GameRuleBuilder$IntegerRuleBuilder;
     constructor(arg0: T)
     // private acceptor: GameRules$VisitorCaller<T>;

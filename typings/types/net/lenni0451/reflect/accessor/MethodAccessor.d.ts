@@ -4,9 +4,9 @@ import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MethodAccessor extends Object {
-    static makeArrayInvoker(paramarg0: Object, paramarg1: Method): (param0: Object[]) => Object | null;
-    static makeDynamicArrayInvoker(paramarg0: Method): (param0: Object | null, param1: Object[]) => Object | null;
-    static makeDynamicInvoker(paramarg0: Class<Object>, paramarg1: Method): Object | null;
-    static makeInvoker(paramarg0: Class<Object>, paramarg1: Object, paramarg2: Method): Object | null;
+    static makeArrayInvoker<R extends unknown>(paramarg0: Object, paramarg1: Method): (param0: Object[]) => R;
+    static makeDynamicArrayInvoker<I extends unknown, R extends unknown>(paramarg0: Method): (param0: I, param1: Object[]) => R;
+    static makeDynamicInvoker<I extends unknown>(paramarg0: Class<I>, paramarg1: Method): I;
+    static makeInvoker<I extends unknown>(paramarg0: Class<I>, paramarg1: Object, paramarg2: Method): I;
     constructor()
 }

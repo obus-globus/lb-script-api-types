@@ -7,9 +7,9 @@ import type { Stream } from '../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Throwable } from '../../java/lang/Throwable.d.ts'
 export class Optional<T extends unknown> extends Object {
-    static empty(): Optional<Object>;
-    static of(paramarg0: Object | null): Optional<Object>;
-    static ofNullable(paramarg0: Object | null): Optional<Object>;
+    static empty<T extends unknown>(): Optional<T>;
+    static of<T extends unknown>(paramarg0: T): Optional<T>;
+    static ofNullable<T extends unknown>(paramarg0: T): Optional<T>;
     private constructor(arg0: T)
     // private value: T;
     equals(arg0: Object | null): boolean;

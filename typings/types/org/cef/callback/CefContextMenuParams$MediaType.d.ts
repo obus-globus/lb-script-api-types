@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class CefContextMenuParams$MediaType extends Enum<CefContextMenuParams$MediaType> {
     static CM_MEDIATYPE_AUDIO: CefContextMenuParams$MediaType;
@@ -8,7 +7,7 @@ export class CefContextMenuParams$MediaType extends Enum<CefContextMenuParams$Me
     static CM_MEDIATYPE_NONE: CefContextMenuParams$MediaType;
     static CM_MEDIATYPE_PLUGIN: CefContextMenuParams$MediaType;
     static CM_MEDIATYPE_VIDEO: CefContextMenuParams$MediaType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CefContextMenuParams$MediaType;
     static values(): CefContextMenuParams$MediaType[];
     private constructor()

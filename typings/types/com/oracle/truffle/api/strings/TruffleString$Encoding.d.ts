@@ -1,6 +1,5 @@
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class TruffleString$Encoding extends Enum<TruffleString$Encoding> {
     static BYTES: TruffleString$Encoding;
@@ -107,7 +106,7 @@ export class TruffleString$Encoding extends Enum<TruffleString$Encoding> {
     static Windows_31J: TruffleString$Encoding;
     static Windows_874: TruffleString$Encoding;
     static fromJCodingName(paramname: string): TruffleString$Encoding;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TruffleString$Encoding;
     static values(): TruffleString$Encoding[];
     private constructor(id: number, jCodingName: string, fixedWidth: boolean)

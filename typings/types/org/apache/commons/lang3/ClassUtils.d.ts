@@ -24,7 +24,7 @@ export class ClassUtils extends Object {
     static getClass(paramarg0: ClassLoader, paramarg1: string, paramarg2: boolean): Class<Object>;
     static getClass(paramarg0: string): Class<Object>;
     static getClass(paramarg0: string, paramarg1: boolean): Class<Object>;
-    static getComponentType(paramarg0: Class<(Object | null)[]>): Class<Object>;
+    static getComponentType<T extends unknown>(paramarg0: Class<T[]>): Class<T>;
     static getName(paramarg0: Class<Object>): string;
     static getName(paramarg0: Class<Object>, paramarg1: string): string;
     static getName(paramarg0: Object): string;

@@ -8,5 +8,5 @@ export class MeshDefinition extends Object {
     readonly root: PartDefinition;
     apply(transformer: (param0: MeshDefinition) => MeshDefinition): MeshDefinition;
     getRoot(): PartDefinition;
-    transformed(function_: (param0: PartPose) => Object | null): MeshDefinition;
+    transformed(function_: (param0: PartPose) => PartPose): MeshDefinition;
 }

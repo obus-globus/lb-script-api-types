@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ActorEvent extends Enum<ActorEvent> {
     static ACTOR_GROW_UP: ActorEvent;
@@ -67,7 +66,7 @@ export class ActorEvent extends Enum<ActorEvent> {
     static getByName(paramarg0: string, paramarg1: ActorEvent): ActorEvent;
     static getByValue(paramarg0: number): ActorEvent;
     static getByValue(paramarg0: number, paramarg1: ActorEvent): ActorEvent;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ActorEvent;
     static values(): ActorEvent[];
     private constructor(arg2: number)

@@ -2,6 +2,7 @@ import type { Message } from '../../../../com/mojang/brigadier/Message.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Component } from '../../../../net/minecraft/network/chat/Component.d.ts'
 import type { MutableComponent } from '../../../../net/minecraft/network/chat/MutableComponent.d.ts'
 import type { ResolutionContext } from '../../../../net/minecraft/network/chat/ResolutionContext.d.ts'
@@ -11,10 +12,10 @@ export class ComponentUtils extends Object {
     static DEFAULT_SEPARATOR: Component;
     static DEFAULT_SEPARATOR_TEXT: string;
     static copyOnClickText(paramtext: string): MutableComponent;
-    static formatAndSortList(paramvalues: (Object | null)[], paramformatter: (param0: Object | null) => Component): Component;
-    static formatList(paramvalues: (Object | null)[], paramformatter: (param0: Object | null) => Component): Component;
-    static formatList(paramvalues: (Object | null)[], paramseparator: Optional<Component>, paramformatter: (param0: Object | null) => Component): MutableComponent;
-    static formatList(paramvalues: (Object | null)[], paramseparator: Component, paramformatter: (param0: Object | null) => Component): MutableComponent;
+    static formatAndSortList<T extends Comparable<T>>(paramvalues: T[], paramformatter: (param0: T) => Component): Component;
+    static formatList<T extends unknown>(paramvalues: T[], paramformatter: (param0: T) => Component): Component;
+    static formatList<T extends unknown>(paramvalues: T[], paramseparator: Optional<Component>, paramformatter: (param0: T) => Component): MutableComponent;
+    static formatList<T extends unknown>(paramvalues: T[], paramseparator: Component, paramformatter: (param0: T) => Component): MutableComponent;
     static formatList(paramvalues: Component[], paramseparator: Component): Component;
     static formatList(paramvalues: string[]): Component;
     static fromMessage(parammessage: Message): Component;

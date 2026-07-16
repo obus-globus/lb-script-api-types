@@ -13,13 +13,13 @@ export class ShadowDistanceOption<T extends unknown> extends OptionInstance<T> {
     static BOOLEAN_TO_STRING: (param0: Component, param1: boolean) => Component;
     static BOOLEAN_VALUES: OptionInstance$Enum<boolean>;
     static NO_ACTION: (param0: Object) => void;
-    static cachedConstantTooltip(paramtooltipComponent: Component): (param0: Object | null) => Tooltip;
+    static cachedConstantTooltip<T extends unknown>(paramtooltipComponent: Component): (param0: T) => Tooltip;
     static createBoolean(paramcaptionId: string, paraminitialValue: boolean): OptionInstance<boolean>;
     static createBoolean(paramcaptionId: string, paraminitialValue: boolean, paramonValueUpdate: (param0: Object) => void): OptionInstance<boolean>;
     static createBoolean(paramcaptionId: string, paramtooltip: (param0: boolean) => Tooltip, paraminitialValue: boolean): OptionInstance<boolean>;
     static createBoolean(paramcaptionId: string, paramtooltip: (param0: boolean) => Tooltip, paraminitialValue: boolean, paramonValueUpdate: (param0: Object) => void): OptionInstance<boolean>;
     static createBoolean(paramcaptionId: string, paramtooltip: (param0: boolean) => Tooltip, paramtoString: (param0: Component, param1: boolean) => Component, paraminitialValue: boolean, paramonValueUpdate: (param0: Object) => void): OptionInstance<boolean>;
-    static noTooltip(): (param0: Object | null) => Tooltip;
+    static noTooltip<T extends unknown>(): (param0: T) => Tooltip;
     constructor(arg0: string, arg1: (param0: T) => Tooltip, arg2: (param0: Component, param1: T) => Component, arg3: OptionInstance$ValueSet<T>, arg4: T, arg5: (param0: T) => void)
     createButton(options: Options): AbstractWidget;
     createButton(arg0: Options, arg1: number, arg2: number, arg3: number): AbstractWidget;

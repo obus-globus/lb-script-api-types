@@ -4,33 +4,33 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../java/util/Iterator.d.ts'
 export class Collections extends Object {
     static arrayToList(paramarg0: Object): (Object | null)[];
-    static asSet(paramarg0: (Object | null)[]): (Object | null)[];
-    static concat(paramarg0: (Object | null)[], ...paramarg1: (Object | null)[]): (Object | null)[];
+    static asSet<T extends unknown>(paramarg0: T[]): T[];
+    static concat<T extends unknown>(paramarg0: T[], ...paramarg1: T[]): T[];
     static contains(paramarg0: Enumeration<Object>, paramarg1: Object): boolean;
     static contains(paramarg0: Iterator<Object>, paramarg1: Object): boolean;
     static containsAny(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): boolean;
     static containsInstance(paramarg0: (Object | null)[], paramarg1: Object): boolean;
-    static emptyList(): (Object | null)[];
-    static emptyMap(): Map<Object | null, Object | null>;
-    static emptySet(): (Object | null)[];
+    static emptyList<T extends unknown>(): T[];
+    static emptyMap<K extends unknown, V extends unknown>(): Map<K, V>;
+    static emptySet<T extends unknown>(): T[];
     static findCommonElementType(paramarg0: (Object | null)[]): Class<Object>;
     static findFirstMatch(paramarg0: (Object | null)[], paramarg1: (Object | null)[]): Object;
-    static findValueOfType(paramarg0: Object[], paramarg1: Class<Object>): Object | null;
+    static findValueOfType<T extends unknown>(paramarg0: Object[], paramarg1: Class<T>): T;
     static findValueOfType(paramarg0: Object[], paramarg1: Class<Object>[]): Object;
     static hasUniqueObject(paramarg0: (Object | null)[]): boolean;
-    static immutable(paramarg0: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static immutable(paramarg0: Object | null): Object | null;
-    static immutable(paramarg0: (Object | null)[]): (Object | null)[];
+    static immutable<K extends unknown, V extends unknown>(paramarg0: Map<K, V>): Map<K, V>;
+    static immutable<T extends unknown, C extends T[]>(paramarg0: C): C;
+    static immutable<T extends unknown>(paramarg0: T[]): T[];
     static isEmpty(paramarg0: Object[]): boolean;
     static isEmpty(paramarg0: Map<Object, Object>): boolean;
     static mergeArrayIntoCollection(paramarg0: Object, paramarg1: (Object | null)[]): void;
     static mergePropertiesIntoMap(paramarg0: { [key: string]: any }, paramarg1: Map<Object | null, Object | null>): void;
-    static nullSafe(paramarg0: (Object | null)[]): (Object | null)[];
-    static of(...paramarg0: (Object | null)[]): (Object | null)[];
-    static setOf(...paramarg0: (Object | null)[]): (Object | null)[];
+    static nullSafe<T extends unknown>(paramarg0: T[]): T[];
+    static of<T extends unknown>(...paramarg0: T[]): T[];
+    static setOf<T extends unknown>(...paramarg0: T[]): T[];
     static size(paramarg0: Object[]): number;
     static size(paramarg0: Map<Object, Object>): number;
-    static toArray(paramarg0: Enumeration<Object>, paramarg1: (Object | null)[]): (Object | null)[];
-    static toIterator(paramarg0: Enumeration<Object>): Iterator<Object>;
+    static toArray<A extends unknown, E extends A>(paramarg0: Enumeration<E>, paramarg1: A[]): A[];
+    static toIterator<E extends unknown>(paramarg0: Enumeration<E>): Iterator<E>;
     private constructor()
 }

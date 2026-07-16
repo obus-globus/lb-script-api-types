@@ -7,8 +7,8 @@ import type { FieldSet$FieldDescriptorLite } from '../../../../../../kotlin/refl
 import type { WireFormat$FieldType } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/WireFormat$FieldType.d.ts'
 export class FieldSet<FieldDescriptorType extends FieldSet$FieldDescriptorLite<FieldDescriptorType>> extends Object {
     static computeFieldSize(paramarg0: FieldSet$FieldDescriptorLite<any>, paramarg1: Object): number;
-    static emptySet(): FieldSet<any>;
-    static newFieldSet(): FieldSet<any>;
+    static emptySet<T extends FieldSet$FieldDescriptorLite<T>>(): FieldSet<T>;
+    static newFieldSet<T extends FieldSet$FieldDescriptorLite<T>>(): FieldSet<T>;
     static readPrimitiveField(paramarg0: CodedInputStream, paramarg1: WireFormat$FieldType, paramarg2: boolean): Object;
     static writeField(paramarg0: FieldSet$FieldDescriptorLite<any>, paramarg1: Object, paramarg2: CodedOutputStream): void;
     private constructor()

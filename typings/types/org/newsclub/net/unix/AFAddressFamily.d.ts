@@ -20,8 +20,8 @@ import type { AFSocketImplExtensions } from '../../../../org/newsclub/net/unix/A
 import type { AncillaryDataSupport } from '../../../../org/newsclub/net/unix/AncillaryDataSupport.d.ts'
 import type { ObjectPool$Lease } from '../../../../org/newsclub/net/unix/pool/ObjectPool$Lease.d.ts'
 export class AFAddressFamily<A extends AFSocketAddress> extends Object {
-    static registerAddressFamily(paramarg0: string, paramarg1: Class<AFSocketAddress>, paramarg2: AFSocketAddressConfig<AFSocketAddress>): AFAddressFamily<AFSocketAddress>;
-    static registerAddressFamilyImpl(paramarg0: string, paramarg1: AFAddressFamily<AFSocketAddress>, paramarg2: AFAddressFamilyConfig<AFSocketAddress>): AFAddressFamily<AFSocketAddress>;
+    static registerAddressFamily<A extends AFSocketAddress>(paramarg0: string, paramarg1: Class<A>, paramarg2: AFSocketAddressConfig<A>): AFAddressFamily<A>;
+    static registerAddressFamilyImpl<A extends AFSocketAddress>(paramarg0: string, paramarg1: AFAddressFamily<A>, paramarg2: AFAddressFamilyConfig<A>): AFAddressFamily<A>;
     static uriSchemes(): string[];
     private constructor(arg0: string, arg1: number, arg2: string)
     // private addressClass: Class<A>;

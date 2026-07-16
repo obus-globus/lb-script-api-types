@@ -17,7 +17,7 @@ import type { TypeConstructor } from '../../../../../../kotlin/reflect/jvm/inter
 export class DescriptorUtils extends Object {
     static JVM_NAME: FqName;
     static areInSameModule(paramarg0: DeclarationDescriptor, paramarg1: DeclarationDescriptor): boolean;
-    static getAllOverriddenDescriptors(paramarg0: CallableDescriptor | null): (CallableDescriptor | null)[];
+    static getAllOverriddenDescriptors<D extends CallableDescriptor>(paramarg0: D): D[];
     static getClassDescriptorForType(paramarg0: KotlinType): ClassDescriptor;
     static getClassDescriptorForTypeConstructor(paramarg0: TypeConstructor): ClassDescriptor;
     static getContainingModule(paramarg0: DeclarationDescriptor): ModuleDescriptor;
@@ -28,8 +28,8 @@ export class DescriptorUtils extends Object {
     static getDispatchReceiverParameterIfNeeded(paramarg0: DeclarationDescriptor): ReceiverParameterDescriptor;
     static getFqName(paramarg0: DeclarationDescriptor): FqNameUnsafe;
     static getFqNameSafe(paramarg0: DeclarationDescriptor): FqName;
-    static getParentOfType(paramarg0: DeclarationDescriptor, paramarg1: Class<DeclarationDescriptor>): DeclarationDescriptor | null;
-    static getParentOfType(paramarg0: DeclarationDescriptor, paramarg1: Class<DeclarationDescriptor>, paramarg2: boolean): DeclarationDescriptor | null;
+    static getParentOfType<D extends DeclarationDescriptor>(paramarg0: DeclarationDescriptor, paramarg1: Class<D>): D;
+    static getParentOfType<D extends DeclarationDescriptor>(paramarg0: DeclarationDescriptor, paramarg1: Class<D>, paramarg2: boolean): D;
     static getSuperClassDescriptor(paramarg0: ClassDescriptor): ClassDescriptor;
     static isAnnotationClass(paramarg0: DeclarationDescriptor): boolean;
     static isAnonymousObject(paramarg0: DeclarationDescriptor): boolean;
@@ -47,7 +47,7 @@ export class DescriptorUtils extends Object {
     static isSubtypeOfClass(paramarg0: KotlinType, paramarg1: DeclarationDescriptor): boolean;
     static isTopLevelDeclaration(paramarg0: DeclarationDescriptor): boolean;
     static shouldRecordInitializerForProperty(paramarg0: VariableDescriptor, paramarg1: KotlinType): boolean;
-    static unwrapFakeOverride(paramarg0: CallableMemberDescriptor | null): CallableMemberDescriptor | null;
-    static unwrapFakeOverrideToAnyDeclaration(paramarg0: DeclarationDescriptorWithVisibility | null): DeclarationDescriptorWithVisibility | null;
+    static unwrapFakeOverride<D extends CallableMemberDescriptor>(paramarg0: D): D;
+    static unwrapFakeOverrideToAnyDeclaration<D extends DeclarationDescriptorWithVisibility>(paramarg0: D): D;
     private constructor()
 }

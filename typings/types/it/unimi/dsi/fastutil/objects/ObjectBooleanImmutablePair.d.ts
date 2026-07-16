@@ -4,9 +4,9 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ObjectBooleanImmutablePair<K extends unknown> extends Object implements ObjectBooleanPair<K>, Serializable {
-    static lexComparator(): (param0: ObjectBooleanPair<Object>, param1: ObjectBooleanPair<Object>) => number;
-    static of(paramarg0: Object | null, paramarg1: boolean): ObjectBooleanImmutablePair<Object>;
-    static of(paramarg0: Object | null, paramarg1: boolean): ObjectBooleanPair<Object>;
+    static lexComparator<K extends unknown>(): (param0: ObjectBooleanPair<K>, param1: ObjectBooleanPair<K>) => number;
+    static of<K extends unknown>(paramarg0: K, paramarg1: boolean): ObjectBooleanImmutablePair<K>;
+    static of<K extends unknown>(paramarg0: K, paramarg1: boolean): ObjectBooleanPair<K>;
     constructor(arg0: K, arg1: boolean)
     // private left: K;
     // private right: boolean;

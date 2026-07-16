@@ -7,7 +7,7 @@ import type { FormattedCharSequence } from '../../../../net/minecraft/util/Forma
 import type { FormattedCharSink } from '../../../../net/minecraft/util/FormattedCharSink.d.ts'
 export class SubStringSource extends Object {
     static create(paramtext: FormattedText): SubStringSource;
-    static create(paramtext: FormattedText, paramreverseCharModifier: (param0: number) => number, paramshaper: (param0: string) => Object | null): SubStringSource;
+    static create(paramtext: FormattedText, paramreverseCharModifier: (param0: number) => number, paramshaper: (param0: string) => string): SubStringSource;
     private constructor(plainText: string, charStyles: Style[], reverseCharModifier: (param0: number) => number)
     // private charStyles: Style[];
     readonly plainText: string;

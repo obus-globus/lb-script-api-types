@@ -10,8 +10,8 @@ import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/ru
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class GetTemplateObjectNodeGen extends GetTemplateObjectNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramcontext: JSContext, paramrawStrings: ArrayLiteralNode, paramcookedStrings: ArrayLiteralNode): GetTemplateObjectNode;
     static create(paramcontext: JSContext, paramrawStrings: ArrayLiteralNode, paramcookedStrings: ArrayLiteralNode, paramidentity: Object): GetTemplateObjectNode;
     static findBlockScopeNode(paramnode: Node): Node;

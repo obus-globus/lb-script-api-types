@@ -4,7 +4,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class CustomModelData1_21_4 extends Record implements Copyable {
     static TYPE: Type<CustomModelData1_21_4>;
-    static copy(paramarg0: Object | null): Object | null;
+    static copy<T extends unknown>(paramarg0: T): T;
     constructor(floats: number[], booleans: boolean[], strings: string[], colors: number[])
     // private booleans: boolean[];
     // private colors: number[];

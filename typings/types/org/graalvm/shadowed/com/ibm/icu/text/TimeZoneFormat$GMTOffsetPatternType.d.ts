@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class TimeZoneFormat$GMTOffsetPatternType extends Enum<TimeZoneFormat$GMTOffsetPatternType> {
     static NEGATIVE_H: TimeZoneFormat$GMTOffsetPatternType;
@@ -8,7 +7,7 @@ export class TimeZoneFormat$GMTOffsetPatternType extends Enum<TimeZoneFormat$GMT
     static POSITIVE_H: TimeZoneFormat$GMTOffsetPatternType;
     static POSITIVE_HM: TimeZoneFormat$GMTOffsetPatternType;
     static POSITIVE_HMS: TimeZoneFormat$GMTOffsetPatternType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TimeZoneFormat$GMTOffsetPatternType;
     static values(): TimeZoneFormat$GMTOffsetPatternType[];
     private constructor(defaultPattern: string, required: string, isPositive: boolean)

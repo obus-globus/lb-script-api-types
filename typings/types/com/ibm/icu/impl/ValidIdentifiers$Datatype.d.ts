@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class ValidIdentifiers$Datatype extends Enum<ValidIdentifiers$Datatype> {
     static currency: ValidIdentifiers$Datatype;
@@ -13,7 +12,7 @@ export class ValidIdentifiers$Datatype extends Enum<ValidIdentifiers$Datatype> {
     static unit: ValidIdentifiers$Datatype;
     static variant: ValidIdentifiers$Datatype;
     static x: ValidIdentifiers$Datatype;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ValidIdentifiers$Datatype;
     static values(): ValidIdentifiers$Datatype[];
     private constructor()

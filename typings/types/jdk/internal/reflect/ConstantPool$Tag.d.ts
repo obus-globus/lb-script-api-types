@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class ConstantPool$Tag extends Enum<ConstantPool$Tag> {
     static CLASS: ConstantPool$Tag;
@@ -17,7 +16,7 @@ export class ConstantPool$Tag extends Enum<ConstantPool$Tag> {
     static NAMEANDTYPE: ConstantPool$Tag;
     static STRING: ConstantPool$Tag;
     static UTF8: ConstantPool$Tag;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ConstantPool$Tag;
     static values(): ConstantPool$Tag[];
     private constructor(arg2: number)

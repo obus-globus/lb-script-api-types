@@ -14,8 +14,8 @@ export abstract class GLFWJoystickCallback extends Callback implements GLFWJoyst
     static create(paramarg0: (param0: number, param1: number) => void): GLFWJoystickCallback;
     static createSafe(paramarg0: number): GLFWJoystickCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor()
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;

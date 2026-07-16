@@ -17,8 +17,8 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Forget$Instance<R extends unknown> extends Object implements App<Forget$Instance$Mu<R>, Forget$Mu<R>>, Cartesian<Forget$Mu<R>, Forget$Instance$Mu<R>>, ReCocartesian<Forget$Mu<R>, Forget$Instance$Mu<R>> {
-    static unbox(paramarg0: App<Cartesian$Mu, K2>): Cartesian<K2, Cartesian$Mu>;
-    static unbox(paramarg0: App<ReCocartesian$Mu, K2>): ReCocartesian<K2, ReCocartesian$Mu>;
+    static unbox<P extends K2, Proof extends Cartesian$Mu>(paramarg0: App<Proof, P>): Cartesian<P, Proof>;
+    static unbox<P extends K2, Proof extends ReCocartesian$Mu>(paramarg0: App<Proof, P>): ReCocartesian<P, Proof>;
     constructor()
     dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<Forget$Mu<R>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Forget$Mu<R>, C, D>;
     dimap<A extends unknown, B extends unknown, C extends unknown, D extends unknown>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Forget$Mu<R>, A, B>, App2<Forget$Mu<R>, C, D>>;

@@ -4,7 +4,6 @@ import type { BindGroupLayout$Builder } from '../../../../com/mojang/blaze3d/pip
 import type { RenderPass } from '../../../../com/mojang/blaze3d/systems/RenderPass.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { MappableRingBuffer } from '../../../../net/minecraft/client/renderer/MappableRingBuffer.d.ts'
 export class ClientUniformDefine extends Enum<ClientUniformDefine> {
@@ -17,8 +16,8 @@ export class ClientUniformDefine extends Enum<ClientUniformDefine> {
     static ROUNDED_RECT: ClientUniformDefine;
     static THEME_BACKGROUND: ClientUniformDefine;
     static getEntries(): ClientUniformDefine[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ClientUniformDefine;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ClientUniformDefine;
     static values(): ClientUniformDefine[];
     private constructor(uboName: string, size: number)
     readonly bindGroupLayout: BindGroupLayout;

@@ -16,7 +16,7 @@ export class Verify extends Object {
     static verify(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: Object, paramp2: Object, paramp3: Object): void;
     static verify(paramexpression: boolean, paramerrorMessageTemplate: string, paramp1: Object, paramp2: Object, paramp3: Object, paramp4: Object): void;
     static verify(paramexpression: boolean, paramerrorMessageTemplate: string, ...paramerrorMessageArgs: Object[]): void;
-    static verifyNotNull(paramreference: Object | null): Object | null;
-    static verifyNotNull(paramreference: Object | null, paramerrorMessageTemplate: string, ...paramerrorMessageArgs: Object[]): Object | null;
+    static verifyNotNull<T extends unknown>(paramreference: T): T;
+    static verifyNotNull<T extends unknown>(paramreference: T, paramerrorMessageTemplate: string, ...paramerrorMessageArgs: Object[]): T;
     private constructor()
 }

@@ -18,7 +18,7 @@ export class PrimaryLevelData extends Object implements ServerLevelData, WorldDa
     static ANVIL_VERSION_ID: number;
     static LEVEL_NAME: string;
     static MCREGION_VERSION_ID: number;
-    static parse(paraminput: Dynamic<Object>, paramsettings: LevelSettings, paramspecialWorldProperty: PrimaryLevelData$SpecialWorldProperty, paramworldGenSettingsLifecycle: Lifecycle): PrimaryLevelData;
+    static parse<T extends unknown>(paraminput: Dynamic<T>, paramsettings: LevelSettings, paramspecialWorldProperty: PrimaryLevelData$SpecialWorldProperty, paramworldGenSettingsLifecycle: Lifecycle): PrimaryLevelData;
     static writeLastPlayed(paramtag: Dynamic<Object>): Dynamic<Object>;
     static writeLastPlayed(paramtag: CompoundTag): void;
     static writeVersionTag(paramtag: Dynamic<Object>): Dynamic<Object>;

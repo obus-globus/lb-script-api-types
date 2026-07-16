@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class TruffleCompilerRuntime$LoopExplosionKind extends Enum<TruffleCompilerRuntime$LoopExplosionKind> {
     static FULL_EXPLODE: TruffleCompilerRuntime$LoopExplosionKind;
@@ -8,7 +7,7 @@ export class TruffleCompilerRuntime$LoopExplosionKind extends Enum<TruffleCompil
     static FULL_UNROLL_UNTIL_RETURN: TruffleCompilerRuntime$LoopExplosionKind;
     static MERGE_EXPLODE: TruffleCompilerRuntime$LoopExplosionKind;
     static NONE: TruffleCompilerRuntime$LoopExplosionKind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TruffleCompilerRuntime$LoopExplosionKind;
     static values(): TruffleCompilerRuntime$LoopExplosionKind[];
     private constructor()

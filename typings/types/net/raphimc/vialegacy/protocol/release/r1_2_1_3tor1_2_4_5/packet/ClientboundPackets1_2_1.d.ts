@@ -5,7 +5,6 @@ import type { State } from '../../../../../../../com/viaversion/viaversion/api/p
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { PreNettyPacketType } from '../../../../../../../net/raphimc/vialegacy/api/splitter/PreNettyPacketType.d.ts'
 export class ClientboundPackets1_2_1 extends Enum<ClientboundPackets1_2_1> implements ClientboundPacketType, PreNettyPacketType {
@@ -69,7 +68,7 @@ export class ClientboundPackets1_2_1 extends Enum<ClientboundPackets1_2_1> imple
     static UPDATE_MOB_EFFECT: ClientboundPackets1_2_1;
     static UPDATE_SIGN: ClientboundPackets1_2_1;
     static getPacket(paramarg0: number): ClientboundPackets1_2_1;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ClientboundPackets1_2_1;
     static values(): ClientboundPackets1_2_1[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)

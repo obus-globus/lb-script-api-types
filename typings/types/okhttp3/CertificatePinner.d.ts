@@ -8,9 +8,9 @@ import type { ByteString } from '../okio/ByteString.d.ts'
 export class CertificatePinner extends Object {
     static Companion: CertificatePinner$Companion;
     static DEFAULT: CertificatePinner;
-    static pin(paramarg0: Certificate): string;
-    static sha1Hash(paramarg0: X509Certificate): ByteString;
-    static sha256Hash(paramarg0: X509Certificate): ByteString;
+    static pin(certificate: Certificate): string;
+    static sha1Hash(self: X509Certificate): ByteString;
+    static sha256Hash(self: X509Certificate): ByteString;
     constructor(pins: CertificatePinner$Pin[], certificateChainCleaner: CertificateChainCleaner | null)
     // private certificateChainCleaner: CertificateChainCleaner | null;
     /*not mapped: */ getCertificateChainCleaner$okhttp(): CertificateChainCleaner | null;

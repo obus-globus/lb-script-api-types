@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class BinaryExpression$Op extends Enum<BinaryExpression$Op> {
     static ADD: BinaryExpression$Op;
@@ -18,7 +17,7 @@ export class BinaryExpression$Op extends Enum<BinaryExpression$Op> {
     static NULL_COALESCE: BinaryExpression$Op;
     static OR: BinaryExpression$Op;
     static SUB: BinaryExpression$Op;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BinaryExpression$Op;
     static values(): BinaryExpression$Op[];
     private constructor(arg2: number)

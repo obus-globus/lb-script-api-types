@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class AssignmentOrigin extends Enum<AssignmentOrigin> {
     static BLANK: string;
@@ -10,7 +9,7 @@ export class AssignmentOrigin extends Enum<AssignmentOrigin> {
     static PROPAGATED_LEARNED: AssignmentOrigin;
     static PROPAGATED_ORIGINAL: AssignmentOrigin;
     static UNASSIGNED: AssignmentOrigin;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): AssignmentOrigin;
     static values(): AssignmentOrigin[];
     private constructor(arg2: string)

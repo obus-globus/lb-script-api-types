@@ -7,14 +7,14 @@ import type { JsonDecodingException } from '../../../../kotlinx/serialization/js
 import type { JsonEncodingException } from '../../../../kotlinx/serialization/json/JsonEncodingException.d.ts'
 import type { AbstractJsonLexer } from '../../../../kotlinx/serialization/json/internal/AbstractJsonLexer.d.ts'
 export class JsonExceptionsKt extends Object {
-    static InvalidFloatingPointDecoded(paramarg0: JsonDecoder, paramarg1: Number, paramarg2: string, paramarg3: () => CharSequence): JsonDecodingException;
-    static InvalidFloatingPointEncoded(paramarg0: Number, paramarg1: string): JsonEncodingException;
-    static InvalidKeyKindException(paramarg0: SerialDescriptor): JsonEncodingException;
-    static decodingExceptionOf(paramarg0: string): JsonDecodingException;
-    static decodingExceptionOf(paramarg0: JsonDecoder, paramarg1: string, paramarg2: string, paramarg3: string, paramarg4: () => CharSequence): JsonDecodingException;
-    static decodingExceptionOf(paramarg0: AbstractJsonLexer, paramarg1: string, paramarg2: number, paramarg3: string, paramarg4: string, paramarg5: CharSequence): JsonDecodingException;
-    static formatEncodingException(paramarg0: string, paramarg1: string): string;
-    static invalidTrailingComma(paramarg0: AbstractJsonLexer, paramarg1: string): void;
-    static minify(paramarg0: CharSequence, paramarg1: number): CharSequence;
-    static throwInvalidFloatingPointDecoded(paramarg0: AbstractJsonLexer, paramarg1: Number): void;
+    static InvalidFloatingPointDecoded(self: JsonDecoder, value: Number, key: string, input: () => CharSequence): JsonDecodingException;
+    static InvalidFloatingPointEncoded(value: Number, key: string | null): JsonEncodingException;
+    static InvalidKeyKindException(keyDescriptor: SerialDescriptor): JsonEncodingException;
+    static decodingExceptionOf(shortMessage: string): JsonDecodingException;
+    static decodingExceptionOf(self: JsonDecoder, shortMessage: string, path: string | null, hint: string | null, input: () => CharSequence): JsonDecodingException;
+    static decodingExceptionOf(self: AbstractJsonLexer, shortMessage: string, offset: number, path: string, hint: string | null, input: CharSequence): JsonDecodingException;
+    static formatEncodingException(shortMessage: string, hint: string | null): string;
+    static invalidTrailingComma(self: AbstractJsonLexer, entity: string): void;
+    static minify(self: CharSequence, offset: number): CharSequence;
+    static throwInvalidFloatingPointDecoded(self: AbstractJsonLexer, result: Number): void;
 }

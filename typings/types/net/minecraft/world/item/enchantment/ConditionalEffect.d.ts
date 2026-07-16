@@ -11,14 +11,14 @@ import type { Validatable } from '../../../../../net/minecraft/world/level/stora
 import type { ValidationContext } from '../../../../../net/minecraft/world/level/storage/loot/ValidationContext.d.ts'
 import type { LootItemCondition } from '../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class ConditionalEffect<T extends unknown> extends Record implements Validatable {
-    static codec(parameffectCodec: Codec<Object>): Codec<ConditionalEffect<Object>>;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
+    static codec<T extends unknown>(parameffectCodec: Codec<T>): Codec<ConditionalEffect<T>>;
+    static listValidatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T[]) => DataResult<T[]>;
     static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
     static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
+    static validateReference<T extends Validatable>(paramcontext: ValidationContext, paramid: ResourceKey<T>): void;
+    static validatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T) => DataResult<T>;
     constructor(effect: T, requirements: Optional<LootItemCondition>)
     // private effect: T;
     // private requirements: Optional<LootItemCondition>;

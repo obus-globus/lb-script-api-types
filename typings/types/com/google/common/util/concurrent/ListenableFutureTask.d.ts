@@ -7,8 +7,8 @@ import type { FutureTask } from '../../../../../java/util/concurrent/FutureTask.
 import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ListenableFutureTask<V extends unknown> extends FutureTask<V> implements ListenableFuture<V> {
-    static create(paramrunnable: () => void, paramresult: Object | null): ListenableFutureTask<Object>;
-    static create(paramcallable: () => Object | null): ListenableFutureTask<Object>;
+    static create<V extends unknown>(paramrunnable: () => void, paramresult: V): ListenableFutureTask<V>;
+    static create<V extends unknown>(paramcallable: () => V): ListenableFutureTask<V>;
     constructor(runnable: () => void, result: V)
     constructor(callable: () => V)
     // private executionList: ExecutionList;

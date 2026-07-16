@@ -12,7 +12,7 @@ export class BlockRaytracingKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/BlockRaytracing.kt#L76 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/BlockRaytracing.kt:76}
      */
-    static isFacingBlock(entity: Entity, eyes: Vec3, targetPoint: Vec3, blockPos: BlockPos, expectedSide: Direction, expectedMaxRange: number): boolean;
-    static rayTraceCollidingBlocks(start: Vec3, end: Vec3): BlockHitResult;
-    static raytraceBlock(range: number, rotation: Rotation, pos: BlockPos, state: BlockState): BlockHitResult;
+    static isFacingBlock(self: Entity, eyes: Vec3, targetPoint: Vec3, blockPos: BlockPos, expectedSide: Direction | null, expectedMaxRange: number | null): boolean;
+    static rayTraceCollidingBlocks(start: Vec3, end: Vec3): BlockHitResult | null;
+    static raytraceBlock(range: number, rotation: Rotation, pos: BlockPos, state: BlockState): BlockHitResult | null;
 }

@@ -4,10 +4,10 @@ import type { MultipartBody$Part$Companion } from '../okhttp3/MultipartBody$Part
 import type { RequestBody } from '../okhttp3/RequestBody.d.ts'
 export class MultipartBody$Part extends Object {
     static Companion: MultipartBody$Part$Companion;
-    static create(paramarg0: Pair<string, string>[], paramarg1: RequestBody): MultipartBody$Part;
-    static create(paramarg0: RequestBody): MultipartBody$Part;
-    static createFormData(paramarg0: string, paramarg1: string): MultipartBody$Part;
-    static createFormData(paramarg0: string, paramarg1: string, paramarg2: RequestBody): MultipartBody$Part;
+    static create(headers: Pair<string, string>[] | null, body: RequestBody): MultipartBody$Part;
+    static create(body: RequestBody): MultipartBody$Part;
+    static createFormData(name: string, value: string): MultipartBody$Part;
+    static createFormData(name: string, filename: string | null, body: RequestBody): MultipartBody$Part;
     private constructor(headers: Pair<string, string>[] | null, body: RequestBody)
     // private body: RequestBody;
     body(): RequestBody;

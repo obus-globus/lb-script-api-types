@@ -10,9 +10,9 @@ export class SuggestionProviders extends Object {
     static ASK_SERVER: (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     static AVAILABLE_SOUNDS: (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     static SUMMONABLE_ENTITIES: (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
-    static cast(paramprovider: (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>): (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
+    static cast<S extends SharedSuggestionProvider>(paramprovider: (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>): (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     static getName(paramprovider: (param0: CommandContext<Object>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>): Identifier;
-    static getProvider(paramname: Identifier): (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
-    static register(paramname: Identifier, paramprovider: (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>): (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
+    static getProvider<S extends SharedSuggestionProvider>(paramname: Identifier): (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
+    static register<S extends SharedSuggestionProvider>(paramname: Identifier, paramprovider: (param0: CommandContext<SharedSuggestionProvider>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>): (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;
     constructor()
 }

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SharedTypes_Legacy_LevelSoundEvent extends Enum<SharedTypes_Legacy_LevelSoundEvent> {
     static Absorb_block: SharedTypes_Legacy_LevelSoundEvent;
@@ -573,7 +572,7 @@ export class SharedTypes_Legacy_LevelSoundEvent extends Enum<SharedTypes_Legacy_
     static getByName(paramarg0: string, paramarg1: SharedTypes_Legacy_LevelSoundEvent): SharedTypes_Legacy_LevelSoundEvent;
     static getByValue(paramarg0: number): SharedTypes_Legacy_LevelSoundEvent;
     static getByValue(paramarg0: number, paramarg1: SharedTypes_Legacy_LevelSoundEvent): SharedTypes_Legacy_LevelSoundEvent;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SharedTypes_Legacy_LevelSoundEvent;
     static values(): SharedTypes_Legacy_LevelSoundEvent[];
     private constructor(arg2: number)

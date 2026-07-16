@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class RakReliability extends Enum<RakReliability> {
     static RELIABLE: RakReliability;
@@ -13,7 +12,7 @@ export class RakReliability extends Enum<RakReliability> {
     static UNRELIABLE_SEQUENCED_WITH_ACK_RECEIPT: RakReliability;
     static UNRELIABLE_WITH_ACK_RECEIPT: RakReliability;
     static fromId(paramarg0: number): RakReliability;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RakReliability;
     static values(): RakReliability[];
     private constructor(arg2: boolean, arg3: boolean, arg4: boolean, arg5: boolean)

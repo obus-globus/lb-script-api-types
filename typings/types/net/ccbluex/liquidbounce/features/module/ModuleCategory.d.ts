@@ -3,8 +3,8 @@ import type { Tagged } from '../../../../../net/ccbluex/liquidbounce/config/type
 import type { Tagged$Companion } from '../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
 export class ModuleCategory extends Object implements Tagged {
     static Companion: Tagged$Companion;
-    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
-    static of(paramarg0: string): Tagged;
+    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
+    static of(self: string): Tagged;
     constructor(tag: string)
     /**
      * @deprecated For script compatibility only. Use choiceName instead Use `choiceName`.

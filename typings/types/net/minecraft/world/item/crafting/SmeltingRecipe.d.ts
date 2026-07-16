@@ -22,10 +22,10 @@ export class SmeltingRecipe extends AbstractCookingRecipe {
     static MAP_CODEC: MapCodec<SmeltingRecipe>;
     static SERIALIZER: RecipeSerializer<SmeltingRecipe>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, SmeltingRecipe>;
-    static cookingMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null, paramdefaultCookingTime: number): MapCodec<AbstractCookingRecipe>;
-    static cookingStreamCodec(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null): StreamCodec<RegistryFriendlyByteBuf, AbstractCookingRecipe>;
-    static simpleMapCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): MapCodec<SingleItemRecipe>;
-    static simpleStreamCodec(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => SingleItemRecipe | null): StreamCodec<RegistryFriendlyByteBuf, SingleItemRecipe>;
+    static cookingMapCodec<T extends AbstractCookingRecipe>(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => T, paramdefaultCookingTime: number): MapCodec<T>;
+    static cookingStreamCodec<T extends AbstractCookingRecipe>(paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => T): StreamCodec<RegistryFriendlyByteBuf, T>;
+    static simpleMapCodec<T extends SingleItemRecipe>(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => T): MapCodec<T>;
+    static simpleStreamCodec<T extends SingleItemRecipe>(paramfactory: (param0: Recipe$CommonInfo, param1: Ingredient, param2: ItemStackTemplate) => T): StreamCodec<RegistryFriendlyByteBuf, T>;
     constructor(commonInfo: Recipe$CommonInfo, bookInfo: AbstractCookingRecipe$CookingBookInfo, ingredient: Ingredient, result: ItemStackTemplate, experience: number, cookingTime: number)
     furnaceIcon(): Item;
     getSerializer(): RecipeSerializer<SmeltingRecipe>;

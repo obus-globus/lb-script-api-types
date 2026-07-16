@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class PlayerInfoUpdateAction extends Enum<PlayerInfoUpdateAction> {
     static ADD_PLAYER: PlayerInfoUpdateAction;
@@ -10,7 +9,7 @@ export class PlayerInfoUpdateAction extends Enum<PlayerInfoUpdateAction> {
     static UPDATE_LATENCY: PlayerInfoUpdateAction;
     static UPDATE_LISTED: PlayerInfoUpdateAction;
     static UPDATE_LIST_ORDER: PlayerInfoUpdateAction;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PlayerInfoUpdateAction;
     static values(): PlayerInfoUpdateAction[];
     private constructor()

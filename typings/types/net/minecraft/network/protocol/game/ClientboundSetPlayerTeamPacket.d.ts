@@ -13,7 +13,7 @@ import type { ClientboundSetPlayerTeamPacket$Parameters } from '../../../../../n
 import type { PlayerTeam } from '../../../../../net/minecraft/world/scores/PlayerTeam.d.ts'
 export class ClientboundSetPlayerTeamPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetPlayerTeamPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static createAddOrModifyPacket(paramteam: PlayerTeam, paramcreateNew: boolean): ClientboundSetPlayerTeamPacket;
     static createPlayerPacket(paramteam: PlayerTeam, paramplayer: string, paramaction: ClientboundSetPlayerTeamPacket$Action): ClientboundSetPlayerTeamPacket;
     static createRemovePacket(paramteam: PlayerTeam): ClientboundSetPlayerTeamPacket;

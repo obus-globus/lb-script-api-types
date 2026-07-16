@@ -9,7 +9,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Invokable$MethodInvokable<T extends unknown> extends Invokable<T, Object> {
     static DECLARED: number;
     static PUBLIC: number;
-    static from(paramconstructor: Constructor<Object>): Invokable<Object, Object>;
+    static from<T extends unknown>(paramconstructor: Constructor<T>): Invokable<T, T>;
     static from(parammethod: Method): Invokable<Object, Object>;
     constructor(method: Method)
     // private method: Method;

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 /**
  * ## Vanilla use item packet sequence
@@ -24,8 +23,8 @@ export class StrictInteractionSource extends Enum<StrictInteractionSource> {
     static USE_ITEM: StrictInteractionSource;
     static USE_ITEM_ON: StrictInteractionSource;
     static getEntries(): StrictInteractionSource[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): StrictInteractionSource;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): StrictInteractionSource;
     static values(): StrictInteractionSource[];
     private constructor()
     name(): "INTERACT" | "USE_ITEM_ON" | "USE_ITEM";

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { LocationInfo } from '../../../../../../../kotlin/reflect/jvm/internal/impl/incremental/components/LocationInfo.d.ts'
 import type { LookupLocation } from '../../../../../../../kotlin/reflect/jvm/internal/impl/incremental/components/LookupLocation.d.ts'
@@ -27,7 +26,7 @@ export class NoLookupLocation extends Enum<NoLookupLocation> implements LookupLo
     static WHEN_RESOLVE_DECLARATION: NoLookupLocation;
     static WHEN_RESOLVING_DEFAULT_TYPE_ARGUMENTS: NoLookupLocation;
     static WHEN_TYPING: NoLookupLocation;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): NoLookupLocation;
     static values(): NoLookupLocation[];
     private constructor()

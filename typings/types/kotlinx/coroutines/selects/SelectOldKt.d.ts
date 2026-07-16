@@ -1,6 +1,6 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
-import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
+import type { SelectBuilder } from '../../../kotlinx/coroutines/selects/SelectBuilder.d.ts'
 export class SelectOldKt extends Object {
-    static selectOld(paramarg0: (param0: Object) => void, paramarg1: Continuation<Object>): Object;
-    static selectUnbiasedOld(paramarg0: (param0: Object) => void, paramarg1: Continuation<Object>): Object;
+    static selectOld<R extends unknown>(builder: (param0: SelectBuilder<R>) => void): R;
+    static selectUnbiasedOld<R extends unknown>(builder: (param0: SelectBuilder<R>) => void): R;
 }

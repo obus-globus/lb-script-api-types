@@ -7,8 +7,8 @@ import type { ConstructorResultNode } from '../../../../../../com/oracle/truffle
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ConstructorResultNodeGen extends ConstructorResultNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramderived: boolean, parambodyNode: JavaScriptNode, paramthisNode: JavaScriptNode): ConstructorResultNode;
     static createDerived(parambodyNode: JavaScriptNode, paramthisNode: JavaScriptNode): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;

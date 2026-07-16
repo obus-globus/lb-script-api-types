@@ -7,11 +7,11 @@ import type { AtomicReference } from '../../../java/util/concurrent/atomic/Atomi
 import type { AtomicReferenceArray } from '../../../java/util/concurrent/atomic/AtomicReferenceArray.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class AtomicIntrinsicsKt extends Object {
-    static compareAndExchange(paramarg0: AtomicReference<Object>, paramarg1: Object | null, paramarg2: Object | null): Object | null;
-    static compareAndExchange(paramarg0: AtomicReferenceArray<Object>, paramarg1: number, paramarg2: Object | null, paramarg3: Object | null): Object | null;
-    static compareAndExchange(paramarg0: AtomicBoolean, paramarg1: boolean, paramarg2: boolean): boolean;
-    static compareAndExchange(paramarg0: AtomicInteger, paramarg1: number, paramarg2: number): number;
-    static compareAndExchange(paramarg0: AtomicIntegerArray, paramarg1: number, paramarg2: number, paramarg3: number): number;
-    static compareAndExchange(paramarg0: AtomicLong, paramarg1: number, paramarg2: number): number;
-    static compareAndExchange(paramarg0: AtomicLongArray, paramarg1: number, paramarg2: number, paramarg3: number): number;
+    static compareAndExchange<T extends unknown>(self: AtomicReference<T>, expected: T, newValue: T): T;
+    static compareAndExchange<T extends unknown>(self: AtomicReferenceArray<T>, index: number, expected: T, newValue: T): T;
+    static compareAndExchange(self: AtomicBoolean, expected: boolean, newValue: boolean): boolean;
+    static compareAndExchange(self: AtomicInteger, expected: number, newValue: number): number;
+    static compareAndExchange(self: AtomicIntegerArray, index: number, expected: number, newValue: number): number;
+    static compareAndExchange(self: AtomicLong, expected: number, newValue: number): number;
+    static compareAndExchange(self: AtomicLongArray, index: number, expected: number, newValue: number): number;
 }

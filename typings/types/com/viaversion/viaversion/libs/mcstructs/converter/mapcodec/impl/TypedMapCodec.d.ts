@@ -11,14 +11,14 @@ import type { Supplier } from '../../../../../../../../java/util/function/Suppli
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class TypedMapCodec<K extends unknown, V extends unknown> extends Object implements MapCodec<V> {
     static UNIT: MapCodec<boolean>;
-    static either(paramarg0: MapCodec<Object>, paramarg1: MapCodec<Object>): MapCodec<Either<Object, Object>>;
-    static failing(paramarg0: string): MapCodec<Object>;
-    static lazyInit(paramarg0: () => MapCodec<Object>): MapCodec<Object>;
-    static optionalKey(paramarg0: Codec<Object>, paramarg1: string): MapCodec<Object>;
-    static optionalLenientKey(paramarg0: Codec<Object>, paramarg1: string): MapCodec<Object>;
-    static recursive(paramarg0: (param0: Codec<Object>) => MapCodec<Object>): MapCodec<Object>;
-    static requiredKey(paramarg0: Codec<Object>, paramarg1: string): MapCodec<Object>;
-    static unit(paramarg0: () => Object | null): MapCodec<Object>;
+    static either<L extends unknown, R extends unknown>(paramarg0: MapCodec<L>, paramarg1: MapCodec<R>): MapCodec<Either<L, R>>;
+    static failing<N extends unknown>(paramarg0: string): MapCodec<N>;
+    static lazyInit<T extends unknown>(paramarg0: () => MapCodec<T>): MapCodec<T>;
+    static optionalKey<N extends unknown>(paramarg0: Codec<N>, paramarg1: string): MapCodec<N>;
+    static optionalLenientKey<N extends unknown>(paramarg0: Codec<N>, paramarg1: string): MapCodec<N>;
+    static recursive<T extends unknown>(paramarg0: (param0: Codec<T>) => MapCodec<T>): MapCodec<T>;
+    static requiredKey<N extends unknown>(paramarg0: Codec<N>, paramarg1: string): MapCodec<N>;
+    static unit<N extends unknown>(paramarg0: () => N): MapCodec<N>;
     constructor(arg0: string, arg1: Codec<K>, arg2: (param0: V) => K, arg3: (param0: K) => MapCodec<V>)
     // private continuation: (param0: K) => MapCodec<V>;
     // private keyCodec: Codec<K>;

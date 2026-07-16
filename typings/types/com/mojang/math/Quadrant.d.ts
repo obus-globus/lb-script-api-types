@@ -1,7 +1,6 @@
 import type { OctahedralGroup } from '../../../com/mojang/math/OctahedralGroup.d.ts'
 import type { Codec } from '../../../com/mojang/serialization/Codec.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class Quadrant extends Enum<Quadrant> {
     static CODEC: Codec<Quadrant>;
@@ -12,7 +11,7 @@ export class Quadrant extends Enum<Quadrant> {
     static fromXYAngles(paramxRotation: Quadrant, paramyRotation: Quadrant): OctahedralGroup;
     static fromXYZAngles(paramxRotation: Quadrant, paramyRotation: Quadrant, paramzRotation: Quadrant): OctahedralGroup;
     static parseJson(paramdegrees: number): Quadrant;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Quadrant;
     static values(): Quadrant[];
     private constructor(shift: number, rotationX: OctahedralGroup, rotationY: OctahedralGroup, rotationZ: OctahedralGroup)

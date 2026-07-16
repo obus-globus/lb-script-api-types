@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class PKWareExtraHeader$HashAlgorithm extends Enum<PKWareExtraHeader$HashAlgorithm> {
     static CRC32: PKWareExtraHeader$HashAlgorithm;
@@ -11,7 +10,7 @@ export class PKWareExtraHeader$HashAlgorithm extends Enum<PKWareExtraHeader$Hash
     static SHA384: PKWareExtraHeader$HashAlgorithm;
     static SHA512: PKWareExtraHeader$HashAlgorithm;
     static getAlgorithmByCode(paramarg0: number): PKWareExtraHeader$HashAlgorithm;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PKWareExtraHeader$HashAlgorithm;
     static values(): PKWareExtraHeader$HashAlgorithm[];
     private constructor(arg2: number)

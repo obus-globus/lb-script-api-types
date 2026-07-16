@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class AttributeModifierOperation extends Enum<AttributeModifierOperation> {
     static OPERATION_ADDITION: AttributeModifierOperation;
@@ -11,7 +10,7 @@ export class AttributeModifierOperation extends Enum<AttributeModifierOperation>
     static getByName(paramarg0: string, paramarg1: AttributeModifierOperation): AttributeModifierOperation;
     static getByValue(paramarg0: number): AttributeModifierOperation;
     static getByValue(paramarg0: number, paramarg1: AttributeModifierOperation): AttributeModifierOperation;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): AttributeModifierOperation;
     static values(): AttributeModifierOperation[];
     private constructor(arg2: number)

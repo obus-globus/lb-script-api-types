@@ -17,7 +17,7 @@ export class DelegatingOps$DelegateListBuilder extends Object implements ListBui
     build<T extends unknown>(arg0: DataResult<T>): DataResult<T>;
     build<T extends unknown>(prefix: T): DataResult<T>;
     build<T extends unknown>(prefix: DataResult<T>): DataResult<T>;
-    mapError<T extends unknown>(onError: (param0: string) => Object | null): ListBuilder<T>;
+    mapError<T extends unknown>(onError: (param0: string) => string): ListBuilder<T>;
     ops<T extends unknown>(): DynamicOps<T>;
     withErrorsFrom<T extends unknown>(result: DataResult<Object>): ListBuilder<T>;
 }

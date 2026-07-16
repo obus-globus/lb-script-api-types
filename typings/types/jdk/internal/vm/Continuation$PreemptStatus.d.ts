@@ -1,6 +1,5 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Continuation$Pinned } from '../../../jdk/internal/vm/Continuation$Pinned.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class Continuation$PreemptStatus extends Enum<Continuation$PreemptStatus> {
     static PERM_FAIL_NOT_MOUNTED: Continuation$PreemptStatus;
@@ -10,7 +9,7 @@ export class Continuation$PreemptStatus extends Enum<Continuation$PreemptStatus>
     static TRANSIENT_FAIL_PINNED_CRITICAL_SECTION: Continuation$PreemptStatus;
     static TRANSIENT_FAIL_PINNED_MONITOR: Continuation$PreemptStatus;
     static TRANSIENT_FAIL_PINNED_NATIVE: Continuation$PreemptStatus;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Continuation$PreemptStatus;
     static values(): Continuation$PreemptStatus[];
     private constructor(arg2: Continuation$Pinned)

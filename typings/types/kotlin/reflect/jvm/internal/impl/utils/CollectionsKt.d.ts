@@ -1,9 +1,9 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class CollectionsKt extends Object {
-    static addIfNotNull(paramarg0: (Object | null)[], paramarg1: Object | null): void;
-    static compact(paramarg0: (Object | null)[]): (Object | null)[];
-    static mapToIndex(paramarg0: (Object | null)[]): Map<Object | null, number>;
-    static newHashMapWithExpectedSize(paramarg0: number): Map<Object | null, Object | null>;
-    static newHashSetWithExpectedSize(paramarg0: number): (Object | null)[];
-    static newLinkedHashSetWithExpectedSize(paramarg0: number): (Object | null)[];
+    static addIfNotNull<T extends unknown>(paramarg0: T[], paramarg1: T): void;
+    static compact<T extends unknown>(paramarg0: T[]): T[];
+    static mapToIndex<K extends unknown>(paramarg0: K[]): Map<K, number>;
+    static newHashMapWithExpectedSize<K extends unknown, V extends unknown>(paramarg0: number): Map<K, V>;
+    static newHashSetWithExpectedSize<E extends unknown>(paramarg0: number): E[];
+    static newLinkedHashSetWithExpectedSize<E extends unknown>(paramarg0: number): E[];
 }

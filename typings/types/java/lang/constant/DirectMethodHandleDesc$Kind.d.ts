@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class DirectMethodHandleDesc$Kind extends Enum<DirectMethodHandleDesc$Kind> {
     static CONSTRUCTOR: DirectMethodHandleDesc$Kind;
@@ -13,7 +12,7 @@ export class DirectMethodHandleDesc$Kind extends Enum<DirectMethodHandleDesc$Kin
     static STATIC_GETTER: DirectMethodHandleDesc$Kind;
     static STATIC_SETTER: DirectMethodHandleDesc$Kind;
     static VIRTUAL: DirectMethodHandleDesc$Kind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: number): DirectMethodHandleDesc$Kind;
     static valueOf(paramarg0: number, paramarg1: boolean): DirectMethodHandleDesc$Kind;
     static valueOf(paramarg0: string): DirectMethodHandleDesc$Kind;

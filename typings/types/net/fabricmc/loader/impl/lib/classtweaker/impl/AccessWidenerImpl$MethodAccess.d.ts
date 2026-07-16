@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { AccessWidenerImpl$AccessOperator } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/impl/AccessWidenerImpl$AccessOperator.d.ts'
 import type { AccessWidenerImpl$MutableAccess } from '../../../../../../../net/fabricmc/loader/impl/lib/classtweaker/impl/AccessWidenerImpl$MutableAccess.d.ts'
@@ -8,7 +7,7 @@ export class AccessWidenerImpl$MethodAccess extends Enum<AccessWidenerImpl$Metho
     static ACCESSIBLE_EXTENDABLE: AccessWidenerImpl$MethodAccess;
     static DEFAULT: AccessWidenerImpl$MethodAccess;
     static EXTENDABLE: AccessWidenerImpl$MethodAccess;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): AccessWidenerImpl$MethodAccess;
     static values(): AccessWidenerImpl$MethodAccess[];
     private constructor(arg2: (param0: number, param1: string, param2: number) => number)

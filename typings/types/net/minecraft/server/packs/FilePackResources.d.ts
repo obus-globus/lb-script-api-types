@@ -1,5 +1,4 @@
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { AbstractPackResources } from '../../../../net/minecraft/server/packs/AbstractPackResources.d.ts'
 import type { FilePackResources$SharedZipFileAccess } from '../../../../net/minecraft/server/packs/FilePackResources$SharedZipFileAccess.d.ts'
@@ -23,5 +22,5 @@ export class FilePackResources extends AbstractPackResources {
     // private getResource(path: string): () => InputStream;
     getResource(type: PackType, location: Identifier): () => InputStream;
     getRootResource(...path: string[]): () => InputStream;
-    listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
+    listResources(type: PackType, namespace: string, directory: string, output: (param0: Identifier, param1: () => InputStream) => void): void;
 }

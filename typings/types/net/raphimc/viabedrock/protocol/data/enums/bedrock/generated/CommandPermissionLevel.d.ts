@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class CommandPermissionLevel extends Enum<CommandPermissionLevel> {
     static Admin: CommandPermissionLevel;
@@ -12,7 +11,7 @@ export class CommandPermissionLevel extends Enum<CommandPermissionLevel> {
     static getByName(paramarg0: string, paramarg1: CommandPermissionLevel): CommandPermissionLevel;
     static getByValue(paramarg0: number): CommandPermissionLevel;
     static getByValue(paramarg0: number, paramarg1: CommandPermissionLevel): CommandPermissionLevel;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CommandPermissionLevel;
     static values(): CommandPermissionLevel[];
     private constructor(arg2: number)

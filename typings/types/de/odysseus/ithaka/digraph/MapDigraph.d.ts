@@ -9,8 +9,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class MapDigraph<V extends unknown> extends Object implements Digraph<V> {
     static UNIT_WEIGHT: OptionalInt;
     static UNIT_WEIGHTS: EdgeWeights<Object>;
-    static getDefaultDigraphFactory(): DigraphFactory<MapDigraph<Object>>;
-    static getMapDigraphFactory(paramarg0: MapDigraph$VertexMapFactory<Object>, paramarg1: MapDigraph$EdgeMapFactory<Object>): DigraphFactory<MapDigraph<Object>>;
+    static getDefaultDigraphFactory<V extends unknown>(): DigraphFactory<MapDigraph<V>>;
+    static getMapDigraphFactory<V extends unknown>(paramarg0: MapDigraph$VertexMapFactory<V>, paramarg1: MapDigraph$EdgeMapFactory<V>): DigraphFactory<MapDigraph<V>>;
     constructor()
     constructor(arg0: MapDigraph$VertexMapFactory<V>, arg1: MapDigraph$EdgeMapFactory<V>)
     constructor(arg0: (param0: V, param1: V) => number)

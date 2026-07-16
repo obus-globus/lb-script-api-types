@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Predicate } from '../../../../../../../java/util/function/Predicate.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -10,10 +9,10 @@ export class ModuleFastPlace$ApplyTo extends Enum<ModuleFastPlace$ApplyTo> imple
     static Companion: Tagged$Companion;
     static PROJECTILES: ModuleFastPlace$ApplyTo;
     static getEntries(): ModuleFastPlace$ApplyTo[];
-    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
-    static of(paramarg0: string): Tagged;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ModuleFastPlace$ApplyTo;
+    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
+    static of(self: string): Tagged;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ModuleFastPlace$ApplyTo;
     static values(): ModuleFastPlace$ApplyTo[];
     private constructor(tag: string, condition: (param0: Item) => boolean)
     readonly condition: (param0: Item) => boolean;

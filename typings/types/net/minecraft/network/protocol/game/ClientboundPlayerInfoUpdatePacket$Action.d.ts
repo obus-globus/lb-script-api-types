@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { ClientboundPlayerInfoUpdatePacket$Action$Reader } from '../../../../../net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action$Reader.d.ts'
 import type { ClientboundPlayerInfoUpdatePacket$Action$Writer } from '../../../../../net/minecraft/network/protocol/game/ClientboundPlayerInfoUpdatePacket$Action$Writer.d.ts'
@@ -12,7 +11,7 @@ export class ClientboundPlayerInfoUpdatePacket$Action extends Enum<ClientboundPl
     static UPDATE_LATENCY: ClientboundPlayerInfoUpdatePacket$Action;
     static UPDATE_LISTED: ClientboundPlayerInfoUpdatePacket$Action;
     static UPDATE_LIST_ORDER: ClientboundPlayerInfoUpdatePacket$Action;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ClientboundPlayerInfoUpdatePacket$Action;
     static values(): ClientboundPlayerInfoUpdatePacket$Action[];
     private constructor(reader: ClientboundPlayerInfoUpdatePacket$Action$Reader, writer: ClientboundPlayerInfoUpdatePacket$Action$Writer)

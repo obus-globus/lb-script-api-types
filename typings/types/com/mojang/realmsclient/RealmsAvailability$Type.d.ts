@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class RealmsAvailability$Type extends Enum<RealmsAvailability$Type> {
     static AUTHENTICATION_ERROR: RealmsAvailability$Type;
@@ -7,7 +6,7 @@ export class RealmsAvailability$Type extends Enum<RealmsAvailability$Type> {
     static NEEDS_PARENTAL_CONSENT: RealmsAvailability$Type;
     static SUCCESS: RealmsAvailability$Type;
     static UNEXPECTED_ERROR: RealmsAvailability$Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RealmsAvailability$Type;
     static values(): RealmsAvailability$Type[];
     private constructor()

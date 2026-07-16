@@ -2,7 +2,6 @@ import type { DataType$Format } from '../../../../ai/djl/ndarray/types/DataType$
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Buffer } from '../../../../java/nio/Buffer.d.ts'
 import type { ByteBuffer } from '../../../../java/nio/ByteBuffer.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class DataType extends Enum<DataType> {
     static BFLOAT16: DataType;
@@ -24,7 +23,7 @@ export class DataType extends Enum<DataType> {
     static fromBuffer(paramarg0: Buffer): DataType;
     static fromNumpy(paramarg0: string): DataType;
     static fromSafetensors(paramarg0: string): DataType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DataType;
     static values(): DataType[];
     private constructor(arg2: DataType$Format, arg3: number)

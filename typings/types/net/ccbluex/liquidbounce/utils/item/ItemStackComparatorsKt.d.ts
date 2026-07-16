@@ -6,6 +6,6 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 import type { Enchantment } from '../../../../../net/minecraft/world/item/enchantment/Enchantment.d.ts'
 export class ItemStackComparatorsKt extends Object {
     static COMPARING_DESCRIPTION_ID: (param0: ItemStack, param1: ItemStack) => number;
-    static asHolderComparator(comparator: (param0: ItemStack, param1: ItemStack) => number): (param0: ItemStackHolder, param1: ItemStackHolder) => number;
+    static asHolderComparator(self: (param0: ItemStack, param1: ItemStack) => number): (param0: ItemStackHolder, param1: ItemStackHolder) => number;
     static comparingEnchantmentLevel(key: ResourceKey<Enchantment>): (param0: ItemStack, param1: ItemStack) => number;
 }

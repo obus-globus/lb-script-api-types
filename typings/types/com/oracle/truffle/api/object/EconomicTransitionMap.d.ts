@@ -5,7 +5,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { EconomicMap } from '../../../../../org/graalvm/collections/EconomicMap.d.ts'
 export class EconomicTransitionMap<K extends unknown, V extends unknown> extends TransitionMap<K, V> {
-    static create(): TransitionMap<Object, Object>;
+    static create<K extends unknown, V extends unknown>(): TransitionMap<K, V>;
     constructor()
     // private map: EconomicMap<Object, StrongKeyWeakValueEntry<Object, V>>;
     expungeStaleEntry(entry: StrongKeyWeakValueEntry<Object, V>): void;

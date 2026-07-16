@@ -10,6 +10,7 @@
 // small (~1s).
 declare global {
 interface JavaTypeRegistry {
+    "net.ccbluex.fastutil.LfuCache": typeof import("../types/net/ccbluex/fastutil/LfuCache").LfuCache;
     "net.ccbluex.fastutil.LfuCache$Companion": typeof import("../types/net/ccbluex/fastutil/LfuCache$Companion").LfuCache$Companion;
     "net.ccbluex.fastutil.Pool$Companion": typeof import("../types/net/ccbluex/fastutil/Pool$Companion").Pool$Companion;
     "net.ccbluex.fastutil.Pool$ListBasedPool": typeof import("../types/net/ccbluex/fastutil/Pool$ListBasedPool").Pool$ListBasedPool;
@@ -2394,11 +2395,13 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.client.modmenu.ModMenuCompatibility": typeof import("../types/net/ccbluex/liquidbounce/utils/client/modmenu/ModMenuCompatibility").ModMenuCompatibility;
     "net.ccbluex.liquidbounce.utils.client.vfp.VfpCompatibility": typeof import("../types/net/ccbluex/liquidbounce/utils/client/vfp/VfpCompatibility").VfpCompatibility;
     "net.ccbluex.liquidbounce.utils.client.vfp.VfpCompatibility1_8": typeof import("../types/net/ccbluex/liquidbounce/utils/client/vfp/VfpCompatibility1_8").VfpCompatibility1_8;
+    "net.ccbluex.liquidbounce.utils.collection.ExpiringList": typeof import("../types/net/ccbluex/liquidbounce/utils/collection/ExpiringList").ExpiringList;
     "net.ccbluex.liquidbounce.utils.collection.ExpiringList$Companion": typeof import("../types/net/ccbluex/liquidbounce/utils/collection/ExpiringList$Companion").ExpiringList$Companion;
     "net.ccbluex.liquidbounce.utils.collection.ExpiringList$TickedValue": typeof import("../types/net/ccbluex/liquidbounce/utils/collection/ExpiringList$TickedValue").ExpiringList$TickedValue;
     "net.ccbluex.liquidbounce.utils.collection.Filter": typeof import("../types/net/ccbluex/liquidbounce/utils/collection/Filter").Filter;
     "net.ccbluex.liquidbounce.utils.collection.FilterKt": typeof import("../types/net/ccbluex/liquidbounce/utils/collection/FilterKt").FilterKt;
     "net.ccbluex.liquidbounce.utils.collection.GenericPools": typeof import("../types/net/ccbluex/liquidbounce/utils/collection/GenericPools").GenericPools;
+    "net.ccbluex.liquidbounce.utils.collection.LruCache": typeof import("../types/net/ccbluex/liquidbounce/utils/collection/LruCache").LruCache;
     "net.ccbluex.liquidbounce.utils.collection.Pools": typeof import("../types/net/ccbluex/liquidbounce/utils/collection/Pools").Pools;
     "net.ccbluex.liquidbounce.utils.collection.RegistryExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/collection/RegistryExtensionsKt").RegistryExtensionsKt;
     "net.ccbluex.liquidbounce.utils.combat.CombatExtensionsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/combat/CombatExtensionsKt").CombatExtensionsKt;
@@ -2481,6 +2484,7 @@ interface JavaTypeRegistry {
     "net.ccbluex.liquidbounce.utils.inventory.SingleItemStackPickMode": typeof import("../types/net/ccbluex/liquidbounce/utils/inventory/SingleItemStackPickMode").SingleItemStackPickMode;
     "net.ccbluex.liquidbounce.utils.inventory.SingleItemStackPickMode$ByItem": typeof import("../types/net/ccbluex/liquidbounce/utils/inventory/SingleItemStackPickMode$ByItem").SingleItemStackPickMode$ByItem;
     "net.ccbluex.liquidbounce.utils.inventory.SingleItemStackPickMode$ByName": typeof import("../types/net/ccbluex/liquidbounce/utils/inventory/SingleItemStackPickMode$ByName").SingleItemStackPickMode$ByName;
+    "net.ccbluex.liquidbounce.utils.inventory.Slots": typeof import("../types/net/ccbluex/liquidbounce/utils/inventory/Slots").Slots;
     "net.ccbluex.liquidbounce.utils.inventory.Slots$Companion": typeof import("../types/net/ccbluex/liquidbounce/utils/inventory/Slots$Companion").Slots$Companion;
     "net.ccbluex.liquidbounce.utils.inventory.SlotsKt": typeof import("../types/net/ccbluex/liquidbounce/utils/inventory/SlotsKt").SlotsKt;
     "net.ccbluex.liquidbounce.utils.inventory.ViewedInventoryScreen": typeof import("../types/net/ccbluex/liquidbounce/utils/inventory/ViewedInventoryScreen").ViewedInventoryScreen;

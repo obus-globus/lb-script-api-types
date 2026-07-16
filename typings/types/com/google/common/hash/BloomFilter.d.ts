@@ -9,11 +9,11 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class BloomFilter<T extends unknown> extends Object implements Predicate<T>, Serializable {
-    static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): BloomFilter<Object>;
-    static create(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): BloomFilter<Object>;
-    static readFrom(paramin: InputStream, paramfunnel: Funnel<Object>): BloomFilter<Object>;
-    static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): Collector<Object, Object, BloomFilter<Object>>;
-    static toBloomFilter(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): Collector<Object, Object, BloomFilter<Object>>;
+    static create<T extends unknown>(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): BloomFilter<T>;
+    static create<T extends unknown>(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): BloomFilter<T>;
+    static readFrom<T extends unknown>(paramin: InputStream, paramfunnel: Funnel<Object>): BloomFilter<T>;
+    static toBloomFilter<T extends unknown>(paramfunnel: Funnel<Object>, paramexpectedInsertions: number): Collector<T, Object, BloomFilter<T>>;
+    static toBloomFilter<T extends unknown>(paramfunnel: Funnel<Object>, paramexpectedInsertions: number, paramfpp: number): Collector<T, Object, BloomFilter<T>>;
     constructor(arg0: BloomFilterStrategies$LockFreeBitArray, arg1: number, arg2: Funnel<Object>, arg3: BloomFilter$Strategy, arg4: any)
     // private bits: BloomFilterStrategies$LockFreeBitArray;
     // private funnel: Funnel<T>;

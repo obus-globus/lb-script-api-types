@@ -6,6 +6,6 @@ import type { Action$ValueGetter } from '../../../../../../../net/minecraft/serv
 import type { InputControl } from '../../../../../../../net/minecraft/server/dialog/input/InputControl.d.ts'
 export class InputControlHandlers extends Object {
     static bootstrap(): void;
-    static createHandler(paraminputControl: InputControl | null, paramscreen: Screen, paramoutputConsumer: (param0: LayoutElement, param1: Action$ValueGetter) => void): void;
+    static createHandler<T extends InputControl>(paraminputControl: T, paramscreen: Screen, paramoutputConsumer: (param0: LayoutElement, param1: Action$ValueGetter) => void): void;
     constructor()
 }

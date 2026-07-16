@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class ErrorEntity extends Enum<ErrorEntity> {
     static ERROR_CLASS: ErrorEntity;
@@ -9,7 +8,7 @@ export class ErrorEntity extends Enum<ErrorEntity> {
     static ERROR_SCOPE: ErrorEntity;
     static ERROR_TYPE: ErrorEntity;
     static PARENT_OF_ERROR_SCOPE: ErrorEntity;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ErrorEntity;
     static values(): ErrorEntity[];
     private constructor(arg2: string)

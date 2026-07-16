@@ -4,7 +4,7 @@ import type { Segment } from '../../kotlinx/io/Segment.d.ts'
 import type { SegmentCopyTracker } from '../../kotlinx/io/SegmentCopyTracker.d.ts'
 export class SegmentPool extends Object {
     static INSTANCE: SegmentPool;
-    static recycle(paramarg0: Segment): void;
+    static recycle(segment: Segment): void;
     static take(): Segment;
     static tracker(): SegmentCopyTracker;
     // private DEFAULT_SECOND_LEVEL_POOL_TOTAL_SIZE: string;

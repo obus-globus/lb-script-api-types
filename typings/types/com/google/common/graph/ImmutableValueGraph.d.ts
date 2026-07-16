@@ -4,8 +4,8 @@ import type { StandardValueGraph } from '../../../../com/google/common/graph/Sta
 import type { ValueGraph } from '../../../../com/google/common/graph/ValueGraph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ImmutableValueGraph<N extends unknown, V extends unknown> extends StandardValueGraph<N, V> {
-    static copyOf(paramgraph: ImmutableValueGraph<Object, Object>): ImmutableValueGraph<Object, Object>;
-    static copyOf(paramgraph: ValueGraph<Object, Object>): ImmutableValueGraph<Object, Object>;
+    static copyOf<N extends unknown, V extends unknown>(paramgraph: ImmutableValueGraph<N, V>): ImmutableValueGraph<N, V>;
+    static copyOf<N extends unknown, V extends unknown>(paramgraph: ValueGraph<N, V>): ImmutableValueGraph<N, V>;
     private constructor(graph: ValueGraph<N, V>)
     asGraph(): ImmutableGraph<N>;
     incidentEdgeOrder(): ElementOrder<N>;

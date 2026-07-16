@@ -36,9 +36,9 @@ export class HotbarItemSlot extends Enum<HotbarItemSlot> implements ItemSlot {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt#L240 | src/main/kotlin/net/ccbluex/liquidbounce/utils/inventory/ItemSlot.kt:240}
      */
     static getMainHandSlots(): HotbarItemSlot[];
-    static of(paramarg0: number): HotbarItemSlot;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): HotbarItemSlot;
+    static of(hotbarIndex: number): HotbarItemSlot;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): HotbarItemSlot;
     static values(): HotbarItemSlot[];
     private constructor(hotbarIndex: number | null)
     readonly canBeSwapTarget: boolean;

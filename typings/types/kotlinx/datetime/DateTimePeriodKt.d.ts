@@ -1,12 +1,13 @@
 import type { Object } from '../../java/lang/Object.d.ts'
+import type { Duration } from '../../kotlin/time/Duration.d.ts'
 import type { DatePeriod } from '../../kotlinx/datetime/DatePeriod.d.ts'
 import type { DateTimePeriod } from '../../kotlinx/datetime/DateTimePeriod.d.ts'
 export class DateTimePeriodKt extends Object {
-    static DateTimePeriod(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): DateTimePeriod;
-    static buildDateTimePeriod(paramarg0: number, paramarg1: number, paramarg2: number): DateTimePeriod;
-    static plus(paramarg0: DatePeriod, paramarg1: DatePeriod): DatePeriod;
-    static plus(paramarg0: DateTimePeriod, paramarg1: DateTimePeriod): DateTimePeriod;
-    static toDatePeriod(paramarg0: string): DatePeriod;
-    static toDateTimePeriod(paramarg0: string): DateTimePeriod;
-// (invalid TS: name contains '-')     static toDateTimePeriod-LRDsOJo(paramarg0: number): DateTimePeriod;
+    static DateTimePeriod(years: number, months: number, days: number, hours: number, minutes: number, seconds: number, nanoseconds: number): DateTimePeriod;
+    static buildDateTimePeriod(totalMonths: number, days: number, totalNanoseconds: number): DateTimePeriod;
+    static plus(self: DatePeriod, other: DatePeriod): DatePeriod;
+    static plus(self: DateTimePeriod, other: DateTimePeriod): DateTimePeriod;
+    static toDatePeriod(self: string): DatePeriod;
+    static toDateTimePeriod(self: string): DateTimePeriod;
+// (invalid TS: name contains '-')     static toDateTimePeriod-LRDsOJo(self: Duration): DateTimePeriod;
 }

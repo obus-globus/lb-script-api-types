@@ -6,10 +6,10 @@ import type { DiffBuilder$SerializableSupplier } from '../../../../../org/apache
 import type { Pair } from '../../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
 export class DiffBuilder$SDiff<T extends unknown> extends Diff<T> {
     static EMPTY_ARRAY: Pair<Object, Object>[];
-    static emptyArray(): Pair<Object, Object>[];
-    static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
-    static of(paramarg0: Map$Entry<Object, Object>): Pair<Object, Object>;
-    static ofNonNull(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
+    static emptyArray<L extends unknown, R extends unknown>(): Pair<L, R>[];
+    static of<L extends unknown, R extends unknown>(paramarg0: L, paramarg1: R): Pair<L, R>;
+    static of<L extends unknown, R extends unknown>(paramarg0: Map$Entry<L, R>): Pair<L, R>;
+    static ofNonNull<L extends unknown, R extends unknown>(paramarg0: L, paramarg1: R): Pair<L, R>;
     constructor(arg0: string, arg1: DiffBuilder$SerializableSupplier<Object>, arg2: DiffBuilder$SerializableSupplier<Object>, arg3: Class<Object>, arg4: any)
     // private leftSupplier: DiffBuilder$SerializableSupplier<T>;
     // private rightSupplier: DiffBuilder$SerializableSupplier<T>;

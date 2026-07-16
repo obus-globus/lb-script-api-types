@@ -12,7 +12,7 @@ export class InjectorUtils extends Object {
     static coerceReturnType(paramarg0: Injector$InjectorData, paramarg1: AbstractInsnNode[], paramarg2: Type): void;
     static decorateInjectorSpecific(paramarg0: InjectionNodes$InjectionNode, paramarg1: InjectionInfo, paramarg2: string, paramarg3: Object): void;
     static findCoerce(paramarg0: InjectionNodes$InjectionNode, paramarg1: Type): AbstractInsnNode;
-    static getInjectorSpecificDecoration(paramarg0: InjectionNodes$InjectionNode, paramarg1: InjectionInfo, paramarg2: string): Object | null;
+    static getInjectorSpecificDecoration<T extends unknown>(paramarg0: InjectionNodes$InjectionNode, paramarg1: InjectionInfo, paramarg2: string): T;
     static getOrCreateLocalContext(paramarg0: AbstractInsnNode[], paramarg1: InjectionNodes$InjectionNode, paramarg2: InjectionInfo, paramarg3: Type, paramarg4: boolean): LocalVariableDiscriminator$Context;
     static handlerArgMap(paramarg0: AbstractInsnNode[], paramarg1: number[], paramarg2: Type[], paramarg3: boolean): number[];
     static hasInjectorSpecificDecoration(paramarg0: InjectionNodes$InjectionNode, paramarg1: InjectionInfo, paramarg2: string): boolean;

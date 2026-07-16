@@ -5,20 +5,20 @@ import type { YearMonth } from '../../kotlinx/datetime/YearMonth.d.ts'
 import type { YearMonth$Companion } from '../../kotlinx/datetime/YearMonth$Companion.d.ts'
 import type { DateTimeFormat } from '../../kotlinx/datetime/format/DateTimeFormat.d.ts'
 export class YearMonthKt extends Object {
-    static format(paramarg0: YearMonth, paramarg1: DateTimeFormat<YearMonth>): string;
-    static fromProlepticMonth(paramarg0: YearMonth$Companion, paramarg1: number): YearMonth;
+    static format(self: YearMonth, format: DateTimeFormat<YearMonth>): string;
+    static fromProlepticMonth(self: YearMonth$Companion, prolepticMonth: number): YearMonth;
     static getMAX(paramarg0: YearMonth$Companion): YearMonth;
     static getMIN(paramarg0: YearMonth$Companion): YearMonth;
     static getProlepticMonth(paramarg0: YearMonth): number;
     static getYearMonth(paramarg0: LocalDate): YearMonth;
-    static minus(paramarg0: YearMonth, paramarg1: number, paramarg2: DateTimeUnit$MonthBased): YearMonth;
-    static minusMonth(paramarg0: YearMonth): YearMonth;
-    static minusYear(paramarg0: YearMonth): YearMonth;
-    static monthsUntil(paramarg0: YearMonth, paramarg1: YearMonth): number;
-    static onDay(paramarg0: YearMonth, paramarg1: number): LocalDate;
-    static plus(paramarg0: YearMonth, paramarg1: number, paramarg2: DateTimeUnit$MonthBased): YearMonth;
-    static plusMonth(paramarg0: YearMonth): YearMonth;
-    static plusYear(paramarg0: YearMonth): YearMonth;
-    static until(paramarg0: YearMonth, paramarg1: YearMonth, paramarg2: DateTimeUnit$MonthBased): number;
-    static yearsUntil(paramarg0: YearMonth, paramarg1: YearMonth): number;
+    static minus(self: YearMonth, value: number, unit: DateTimeUnit$MonthBased): YearMonth;
+    static minusMonth(self: YearMonth): YearMonth;
+    static minusYear(self: YearMonth): YearMonth;
+    static monthsUntil(self: YearMonth, other: YearMonth): number;
+    static onDay(self: YearMonth, day: number): LocalDate;
+    static plus(self: YearMonth, value: number, unit: DateTimeUnit$MonthBased): YearMonth;
+    static plusMonth(self: YearMonth): YearMonth;
+    static plusYear(self: YearMonth): YearMonth;
+    static until(self: YearMonth, other: YearMonth, unit: DateTimeUnit$MonthBased): number;
+    static yearsUntil(self: YearMonth, other: YearMonth): number;
 }

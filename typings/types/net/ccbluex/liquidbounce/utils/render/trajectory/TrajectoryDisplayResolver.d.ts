@@ -7,7 +7,7 @@ import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemS
 export class TrajectoryDisplayResolver extends Object {
     static INSTANCE: TrajectoryDisplayResolver;
     static resolveEntityIcon(entity: Entity, activeArrows: boolean, activeOthers: boolean): ItemStack;
-    static resolveTrajectoryColor(trajectoryType: TrajectoryType, colorSource: DataComponentGetter, entity: Entity): Color4b;
+    static resolveTrajectoryColor(trajectoryType: TrajectoryType, colorSource: DataComponentGetter, entity: Entity | null): Color4b;
     // private POTION_ARROW_COLOR_NONE: number;
     // private resolveArrowColor(colorSource: DataComponentGetter, entity: Entity | null): Color4b;
     resolveEntityIcon(entity: Entity, activeArrows: boolean, activeOthers: boolean): ItemStack;

@@ -7,13 +7,13 @@ export class Utils extends Object {
     static count(paramarg0: string, paramarg1: string): number;
     static escapeWhitespace(paramarg0: string, paramarg1: boolean): string;
     static expandTabs(paramarg0: string, paramarg1: number): string;
-    static join(paramarg0: (Object | null)[], paramarg1: string): string;
-    static join(paramarg0: Iterator<Object>, paramarg1: string): string;
+    static join<T extends unknown>(paramarg0: T[], paramarg1: string): string;
+    static join<T extends unknown>(paramarg0: Iterator<T>, paramarg1: string): string;
     static newlines(paramarg0: number): string;
     static numNonnull(paramarg0: Object[]): number;
     static readFile(paramarg0: string): string[];
     static readFile(paramarg0: string, paramarg1: string): string[];
-    static removeAllElements(paramarg0: (Object | null)[], paramarg1: Object | null): void;
+    static removeAllElements<T extends unknown>(paramarg0: T[], paramarg1: T): void;
     static sequence(paramarg0: number, paramarg1: string): string;
     static spaces(paramarg0: number): string;
     static toCharArray(paramarg0: IntegerList): string[];

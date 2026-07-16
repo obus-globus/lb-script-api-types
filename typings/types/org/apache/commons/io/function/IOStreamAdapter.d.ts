@@ -23,12 +23,12 @@ import type { IOStream } from '../../../../../org/apache/commons/io/function/IOS
 import type { IOSupplier } from '../../../../../org/apache/commons/io/function/IOSupplier.d.ts'
 import type { IOUnaryOperator } from '../../../../../org/apache/commons/io/function/IOUnaryOperator.d.ts'
 export class IOStreamAdapter<T extends unknown> extends IOBaseStreamAdapter<T, IOStream<T>, Stream<T>> implements IOStream<T> {
-    static adapt(paramarg0: Stream<Object>): IOStream<Object>;
-    static empty(): IOStream<Object>;
-    static iterate(paramarg0: Object | null, paramarg1: (param0: Object | null) => Object | null): IOStream<Object>;
-    static of(paramarg0: Object | null): IOStream<Object>;
-    static of(...paramarg0: (Object | null)[]): IOStream<Object>;
-    static of(paramarg0: (Object | null)[]): IOStream<Object>;
+    static adapt<T extends unknown>(paramarg0: Stream<T>): IOStream<T>;
+    static empty<T extends unknown>(): IOStream<T>;
+    static iterate<T extends unknown>(paramarg0: T, paramarg1: (param0: T) => T): IOStream<T>;
+    static of<T extends unknown>(paramarg0: T): IOStream<T>;
+    static of<T extends unknown>(...paramarg0: T[]): IOStream<T>;
+    static of<T extends unknown>(paramarg0: T[]): IOStream<T>;
     private constructor(arg0: Stream<T>)
     allMatch(arg0: (param0: T) => boolean): boolean;
     anyMatch(arg0: (param0: T) => boolean): boolean;
@@ -56,9 +56,9 @@ export class IOStreamAdapter<T extends unknown> extends IOBaseStreamAdapter<T, I
     min(arg0: (param0: T, param1: T) => number): Optional<T>;
     noneMatch(arg0: (param0: T) => boolean): boolean;
     peek(arg0: (param0: T) => void): IOStream<T>;
-    reduce(arg0: T, arg1: (param0: T, param1: Object | null) => Object | null): T;
-    reduce<U extends unknown>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: Object | null) => Object | null): U;
-    reduce(arg0: (param0: T, param1: Object | null) => Object | null): Optional<T>;
+    reduce(arg0: T, arg1: (param0: T, param1: T) => T): T;
+    reduce<U extends unknown>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: U) => U): U;
+    reduce(arg0: (param0: T, param1: T) => T): Optional<T>;
     skip(arg0: number): IOStream<T>;
     sorted(): IOStream<T>;
     sorted(arg0: (param0: T, param1: T) => number): IOStream<T>;

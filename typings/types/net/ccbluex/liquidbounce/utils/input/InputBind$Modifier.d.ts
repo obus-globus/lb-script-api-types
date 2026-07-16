@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { InputBind$Modifier$Companion } from '../../../../../net/ccbluex/liquidbounce/utils/input/InputBind$Modifier$Companion.d.ts'
@@ -11,12 +10,12 @@ export class InputBind$Modifier extends Enum<InputBind$Modifier> implements Tagg
     static SUPER: InputBind$Modifier;
     static fromRawValue(modifiers: number): InputBind$Modifier[];
     static getEntries(): InputBind$Modifier[];
-    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
-    static of(paramarg0: number): InputBind$Modifier;
-    static of(paramarg0: string): InputBind$Modifier;
-    static of(paramarg0: string): Tagged;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): InputBind$Modifier;
+    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
+    static of(keyCode: number): InputBind$Modifier | null;
+    static of(string: string | null): InputBind$Modifier | null;
+    static of(self: string): Tagged;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): InputBind$Modifier;
     static values(): InputBind$Modifier[];
     private constructor(tag: string, bitMask: number, ...keyCodes: number[])
     readonly bitMask: number;

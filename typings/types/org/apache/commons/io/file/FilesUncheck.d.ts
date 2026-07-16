@@ -64,7 +64,7 @@ export class FilesUncheck extends Object {
     static readAllBytes(paramarg0: Path): number[];
     static readAllLines(paramarg0: Path): string[];
     static readAllLines(paramarg0: Path, paramarg1: Charset): string[];
-    static readAttributes(paramarg0: Path, paramarg1: Class<BasicFileAttributes>, ...paramarg2: LinkOption[]): BasicFileAttributes | null;
+    static readAttributes<A extends BasicFileAttributes>(paramarg0: Path, paramarg1: Class<A>, ...paramarg2: LinkOption[]): A;
     static readAttributes(paramarg0: Path, paramarg1: string, ...paramarg2: LinkOption[]): { [key: string]: Object };
     static readSymbolicLink(paramarg0: Path): Path;
     static setAttribute(paramarg0: Path, paramarg1: string, paramarg2: Object, ...paramarg3: LinkOption[]): Path;

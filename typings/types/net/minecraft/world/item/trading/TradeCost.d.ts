@@ -17,13 +17,13 @@ import type { ValidationContext } from '../../../../../net/minecraft/world/level
 import type { NumberProvider } from '../../../../../net/minecraft/world/level/storage/loot/providers/number/NumberProvider.d.ts'
 export class TradeCost extends Record implements Validatable {
     static CODEC: Codec<TradeCost>;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
+    static listValidatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T[]) => DataResult<T[]>;
     static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
     static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
+    static validateReference<T extends Validatable>(paramcontext: ValidationContext, paramid: ResourceKey<T>): void;
+    static validatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T) => DataResult<T>;
     constructor(item: Holder<Item>, count: NumberProvider, components: DataComponentExactPredicate)
     constructor(item: ItemLike, count: number)
     constructor(item: ItemLike, count: NumberProvider)

@@ -10,7 +10,7 @@ export class AsyncContextBuiltins$AsyncContext extends Enum<AsyncContextBuiltins
     static Snapshot: AsyncContextBuiltins$AsyncContext;
     static Variable: AsyncContextBuiltins$AsyncContext;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AsyncContextBuiltins$AsyncContext;
     static values(): AsyncContextBuiltins$AsyncContext[];
     private constructor(length: number)

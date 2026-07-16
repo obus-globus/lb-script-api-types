@@ -1,6 +1,5 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Runtime$Version } from '../../../java/lang/Runtime$Version.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class SourceVersion extends Enum<SourceVersion> {
@@ -37,7 +36,7 @@ export class SourceVersion extends Enum<SourceVersion> {
     static isName(paramarg0: CharSequence, paramarg1: SourceVersion): boolean;
     static latest(): SourceVersion;
     static latestSupported(): SourceVersion;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: Runtime$Version): SourceVersion;
     static valueOf(paramarg0: string): SourceVersion;
     static values(): SourceVersion[];

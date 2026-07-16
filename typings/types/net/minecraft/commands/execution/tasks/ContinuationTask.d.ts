@@ -5,7 +5,7 @@ import type { ExecutionContext } from '../../../../../net/minecraft/commands/exe
 import type { Frame } from '../../../../../net/minecraft/commands/execution/Frame.d.ts'
 import type { ContinuationTask$TaskProvider } from '../../../../../net/minecraft/commands/execution/tasks/ContinuationTask$TaskProvider.d.ts'
 export class ContinuationTask<T extends unknown, P extends unknown> extends Object implements EntryAction<T> {
-    static schedule(paramcontext: ExecutionContext<Object>, paramframe: Frame, paramarguments: (Object | null)[], paramtaskFactory: (param0: Frame, param1: Object | null) => CommandQueueEntry<Object>): void;
+    static schedule<T extends unknown, P extends unknown>(paramcontext: ExecutionContext<T>, paramframe: Frame, paramarguments: P[], paramtaskFactory: (param0: Frame, param1: P) => CommandQueueEntry<T>): void;
     private constructor(taskFactory: (param0: Frame, param1: P) => CommandQueueEntry<T>, arguments: P[], frame: Frame)
     // private arguments: P[];
     // private index: number;

@@ -10,7 +10,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { WorldBorder } from '../../../../../net/minecraft/world/level/border/WorldBorder.d.ts'
 export class ClientboundSetBorderSizePacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetBorderSizePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(border: WorldBorder)
     readonly size: number;
     getSize(): number;

@@ -11,7 +11,7 @@ export class ModelLoadingPluginManager extends Object {
     static PLUGINS_VIEW: (param0: ModelLoadingPlugin$Context) => void[];
     static PREPARABLE_PLUGINS_VIEW: PreparableModelLoadingPlugin$Holder<Object>[];
     static preparePlugins(paramarg0: PreparableReloadListener$SharedState, paramarg1: Executor): CompletableFuture<(param0: ModelLoadingPlugin$Context) => void[]>;
-    static registerPlugin(paramarg0: (param0: PreparableReloadListener$SharedState, param1: Executor) => CompletableFuture<Object>, paramarg1: (param0: Object | null, param1: ModelLoadingPlugin$Context) => void): void;
+    static registerPlugin<T extends unknown>(paramarg0: (param0: PreparableReloadListener$SharedState, param1: Executor) => CompletableFuture<T>, paramarg1: (param0: T, param1: ModelLoadingPlugin$Context) => void): void;
     static registerPlugin(paramarg0: (param0: ModelLoadingPlugin$Context) => void): void;
     private constructor()
 }

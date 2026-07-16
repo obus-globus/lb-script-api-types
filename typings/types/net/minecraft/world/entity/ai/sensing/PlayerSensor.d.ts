@@ -8,7 +8,7 @@ export class PlayerSensor extends Sensor<LivingEntity> {
     static isEntityAttackable(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static isEntityAttackableIgnoringLineOfSight(paramlevel: ServerLevel, parambody: LivingEntity, paramtarget: LivingEntity): boolean;
     static isEntityTargetable(paramlevel: ServerLevel, parambody: LivingEntity, paramentity: LivingEntity): boolean;
-    static rememberPositives(paraminvocations: number, parampredicate: (param0: Object | null, param1: Object | null) => boolean): (param0: Object | null, param1: Object | null) => boolean;
+    static rememberPositives<T extends unknown, U extends unknown>(paraminvocations: number, parampredicate: (param0: T, param1: U) => boolean): (param0: T, param1: U) => boolean;
     static wasEntityAttackableLastNTicks(parambody: LivingEntity, paramticks: number): (param0: ServerLevel, param1: LivingEntity) => boolean;
     constructor()
     doTick(level: ServerLevel, body: LivingEntity): void;

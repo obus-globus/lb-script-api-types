@@ -4,8 +4,8 @@ import type { ForwardingGraph } from '../../../../com/google/common/graph/Forwar
 import type { Graph } from '../../../../com/google/common/graph/Graph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ImmutableGraph<N extends unknown> extends ForwardingGraph<N> {
-    static copyOf(paramgraph: Graph<Object>): ImmutableGraph<Object>;
-    static copyOf(paramgraph: ImmutableGraph<Object>): ImmutableGraph<Object>;
+    static copyOf<N extends unknown>(paramgraph: Graph<N>): ImmutableGraph<N>;
+    static copyOf<N extends unknown>(paramgraph: ImmutableGraph<N>): ImmutableGraph<N>;
     constructor(backingGraph: BaseGraph<N>)
     // private backingGraph: BaseGraph<N>;
     delegate(): BaseGraph<N>;

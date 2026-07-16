@@ -3,7 +3,7 @@ import type { IndirectPriorityQueues$EmptyIndirectPriorityQueue } from '../../..
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class IndirectPriorityQueues extends Object {
     static EMPTY_QUEUE: IndirectPriorityQueues$EmptyIndirectPriorityQueue;
-    static synchronize(paramarg0: IndirectPriorityQueue<Object>): IndirectPriorityQueue<Object>;
-    static synchronize(paramarg0: IndirectPriorityQueue<Object>, paramarg1: Object): IndirectPriorityQueue<Object>;
+    static synchronize<K extends unknown>(paramarg0: IndirectPriorityQueue<K>): IndirectPriorityQueue<K>;
+    static synchronize<K extends unknown>(paramarg0: IndirectPriorityQueue<K>, paramarg1: Object): IndirectPriorityQueue<K>;
     private constructor()
 }

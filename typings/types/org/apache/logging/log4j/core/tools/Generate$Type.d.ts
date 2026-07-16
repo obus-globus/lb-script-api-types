@@ -4,7 +4,7 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class Generate$Type extends Enum<Generate$Type> {
     static CUSTOM: Generate$Type;
     static EXTEND: Generate$Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Generate$Type;
     static values(): Generate$Type[];
     constructor(arg2: any)

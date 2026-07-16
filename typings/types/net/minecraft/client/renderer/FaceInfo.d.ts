@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { FaceInfo$VertexInfo } from '../../../../net/minecraft/client/renderer/FaceInfo$VertexInfo.d.ts'
 import type { Direction } from '../../../../net/minecraft/core/Direction.d.ts'
@@ -11,7 +10,7 @@ export class FaceInfo extends Enum<FaceInfo> {
     static UP: FaceInfo;
     static WEST: FaceInfo;
     static fromFacing(paramdirection: Direction): FaceInfo;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FaceInfo;
     static values(): FaceInfo[];
     private constructor(...infos: FaceInfo$VertexInfo[])

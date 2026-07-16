@@ -1,4 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Base64Kt extends Object {
-    static isInMimeAlphabet(paramarg0: number): boolean;
+    static isInMimeAlphabet(symbol: number): boolean;
 }

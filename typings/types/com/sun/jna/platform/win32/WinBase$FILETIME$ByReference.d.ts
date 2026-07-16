@@ -17,8 +17,8 @@ export class WinBase$FILETIME$ByReference extends WinBase$FILETIME implements St
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static dateToFileTime(paramarg0: Date): number;
     static filetimeToDate(paramarg0: number, paramarg1: number): Date;
-    static newInstance(paramarg0: Class<Structure>): Structure | null;
-    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
+    static newInstance<T extends Structure>(paramarg0: Class<T>): T;
+    static newInstance<T extends Structure>(paramarg0: Class<T>, paramarg1: Pointer): T;
     constructor()
     constructor(arg0: Pointer)
 }

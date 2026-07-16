@@ -4,7 +4,7 @@ export class Primitives extends Object {
     static allPrimitiveTypes(): Class<Object>[];
     static allWrapperTypes(): Class<Object>[];
     static isWrapperType(paramtype: Class<Object>): boolean;
-    static unwrap(paramtype: Class<Object>): Class<Object>;
-    static wrap(paramtype: Class<Object>): Class<Object>;
+    static unwrap<T extends unknown>(paramtype: Class<T>): Class<T>;
+    static wrap<T extends unknown>(paramtype: Class<T>): Class<T>;
     private constructor()
 }

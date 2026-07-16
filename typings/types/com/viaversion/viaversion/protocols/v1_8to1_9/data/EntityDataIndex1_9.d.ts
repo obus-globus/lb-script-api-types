@@ -3,7 +3,6 @@ import type { EntityTypes1_9$EntityType } from '../../../../../../com/viaversion
 import type { EntityDataTypes1_8 } from '../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/types/EntityDataTypes1_8.d.ts'
 import type { EntityDataTypes1_9 } from '../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/types/EntityDataTypes1_9.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class EntityDataIndex1_9 extends Enum<EntityDataIndex1_9> {
     static ABSTRACT_AGEABLE_AGE: EntityDataIndex1_9;
@@ -88,7 +87,7 @@ export class EntityDataIndex1_9 extends Enum<EntityDataIndex1_9> {
     static ZOMBIE_IS_CONVERTING: EntityDataIndex1_9;
     static ZOMBIE_IS_VILLAGER: EntityDataIndex1_9;
     static searchIndex(paramarg0: EntityType, paramarg1: number): EntityDataIndex1_9;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityDataIndex1_9;
     static values(): EntityDataIndex1_9[];
     private constructor(arg2: EntityTypes1_9$EntityType, arg3: number, arg4: EntityDataTypes1_8, arg5: EntityDataTypes1_9)

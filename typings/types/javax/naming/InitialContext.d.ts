@@ -20,8 +20,8 @@ export class InitialContext extends Object implements Context {
     static SECURITY_PROTOCOL: string;
     static STATE_FACTORIES: string;
     static URL_PKG_PREFIXES: string;
-    static doLookup(paramarg0: string): Object | null;
-    static doLookup(paramarg0: Name): Object | null;
+    static doLookup<T extends unknown>(paramarg0: string): T;
+    static doLookup<T extends unknown>(paramarg0: Name): T;
     constructor()
     constructor(arg0: Map<Object | null, Object | null>)
     constructor(arg0: boolean)

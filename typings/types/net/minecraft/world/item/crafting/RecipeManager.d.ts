@@ -28,7 +28,7 @@ import type { RecipeDisplayEntry } from '../../../../../net/minecraft/world/item
 import type { RecipeDisplayId } from '../../../../../net/minecraft/world/item/crafting/display/RecipeDisplayId.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class RecipeManager extends SimplePreparableReloadListener<RecipeMap> implements FabricRecipeManager, FabricResourceReloader, RecipeManagerAccessor, RecipeAccess {
-    static createCheck(paramtype: RecipeType<any>): RecipeManager$CachedCheck<RecipeInput, any>;
+    static createCheck<I extends RecipeInput, T extends Recipe<I>>(paramtype: RecipeType<T>): RecipeManager$CachedCheck<I, T>;
     constructor(registries: HolderLookup$Provider)
     // private allDisplays: RecipeManager$ServerDisplayInfo[];
     // private id: Identifier;

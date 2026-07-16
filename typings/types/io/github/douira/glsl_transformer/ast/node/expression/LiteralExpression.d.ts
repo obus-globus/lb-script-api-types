@@ -11,8 +11,8 @@ import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Number } from '../../../../../../../java/lang/Number.d.ts'
 export class LiteralExpression extends TerminalExpression {
-    static clone(paramarg0: ASTNode | null): ASTNode | null;
-    static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
+    static clone<N extends ASTNode>(paramarg0: N): N;
+    static clone<N extends ASTNode>(paramarg0: N[]): Stream<N>;
     static getDefaultValue(paramarg0: Type$NumberType): LiteralExpression;
     static getDefaultValue(paramarg0: Type): LiteralExpression;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;

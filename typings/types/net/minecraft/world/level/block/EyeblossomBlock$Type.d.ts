@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
@@ -13,7 +12,7 @@ export class EyeblossomBlock$Type extends Enum<EyeblossomBlock$Type> {
     static CLOSED: EyeblossomBlock$Type;
     static OPEN: EyeblossomBlock$Type;
     static fromBoolean(paramopen: boolean): EyeblossomBlock$Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): EyeblossomBlock$Type;
     static values(): EyeblossomBlock$Type[];
     private constructor(open: boolean, effect: Holder<MobEffect>, duration: number, longSwitchSound: SoundEvent, shortSwitchSound: SoundEvent, particleColor: number)

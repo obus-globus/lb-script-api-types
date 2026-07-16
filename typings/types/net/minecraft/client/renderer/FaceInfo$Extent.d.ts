@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { Vector3fc } from '../../../../org/joml/Vector3fc.d.ts'
 export class FaceInfo$Extent extends Enum<FaceInfo$Extent> {
@@ -9,7 +8,7 @@ export class FaceInfo$Extent extends Enum<FaceInfo$Extent> {
     static MIN_X: FaceInfo$Extent;
     static MIN_Y: FaceInfo$Extent;
     static MIN_Z: FaceInfo$Extent;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FaceInfo$Extent;
     static values(): FaceInfo$Extent[];
     private constructor()

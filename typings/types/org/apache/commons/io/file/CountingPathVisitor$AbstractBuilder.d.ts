@@ -9,15 +9,15 @@ import type { SimplePathVisitor$AbstractBuilder } from '../../../../../org/apach
 export abstract class CountingPathVisitor$AbstractBuilder<T extends unknown, B extends CountingPathVisitor$AbstractBuilder<T, B>> extends SimplePathVisitor$AbstractBuilder<T, B> {
     constructor()
     // private directoryFilter: (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
-    // private directoryPostTransformer: (param0: Path) => Object | null;
+    // private directoryPostTransformer: (param0: Path) => Path;
     // private fileFilter: (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
     // private pathCounters: Counters$PathCounters;
     getDirectoryFilter(): (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
-    getDirectoryPostTransformer(): (param0: Path) => Object | null;
+    getDirectoryPostTransformer(): (param0: Path) => Path;
     getFileFilter(): (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
     getPathCounters(): Counters$PathCounters;
     setDirectoryFilter(arg0: (param0: Path, param1: BasicFileAttributes) => FileVisitResult): B;
-    setDirectoryPostTransformer(arg0: (param0: Path) => Object | null): B;
+    setDirectoryPostTransformer(arg0: (param0: Path) => Path): B;
     setFileFilter(arg0: (param0: Path, param1: BasicFileAttributes) => FileVisitResult): B;
     setPathCounters(arg0: Counters$PathCounters): B;
 }

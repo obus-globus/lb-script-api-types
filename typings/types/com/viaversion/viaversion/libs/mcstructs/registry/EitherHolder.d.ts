@@ -5,9 +5,9 @@ import type { Registry } from '../../../../../../com/viaversion/viaversion/libs/
 import type { ResourceKey } from '../../../../../../com/viaversion/viaversion/libs/mcstructs/registry/ResourceKey.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EitherHolder<T extends unknown> extends Object {
-    static codec(paramarg0: Registry, paramarg1: Codec<Holder<Object>>): Codec<EitherHolder<Object>>;
-    static fileCodec(paramarg0: Registry, paramarg1: Codec<Object>): Codec<EitherHolder<Object>>;
-    static fixedCodec(paramarg0: Registry): Codec<EitherHolder<Object>>;
+    static codec<T extends unknown>(paramarg0: Registry, paramarg1: Codec<Holder<T>>): Codec<EitherHolder<T>>;
+    static fileCodec<T extends unknown>(paramarg0: Registry, paramarg1: Codec<T>): Codec<EitherHolder<T>>;
+    static fixedCodec<T extends unknown>(paramarg0: Registry): Codec<EitherHolder<T>>;
     constructor(arg0: Either<Holder<T>, ResourceKey>)
     constructor(arg0: Holder<T>)
     constructor(arg0: ResourceKey)

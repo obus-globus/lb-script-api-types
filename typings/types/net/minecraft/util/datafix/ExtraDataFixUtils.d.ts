@@ -9,15 +9,15 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ExtraDataFixUtils extends Object {
     static blockState(paramid: string): Dynamic<Object>;
     static blockState(paramid: string, paramproperties: { [key: string]: string }): Dynamic<Object>;
-    static cast(paramtype: Type<Object>, paramtyped: Typed<Object>): Typed<Object>;
-    static cast(paramtype: Type<Object>, paramvalue: Object, paramops: DynamicOps<Object>): Typed<Object>;
-    static chainAllFilters(paramfixers: (param0: Typed<Object>) => Typed<Object>[]): (param0: Typed<Object>) => Typed<Object>;
+    static cast<T extends unknown, R extends unknown>(paramtype: Type<R>, paramtyped: Typed<T>): Typed<R>;
+    static cast<T extends unknown>(paramtype: Type<T>, paramvalue: Object, paramops: DynamicOps<Object>): Typed<T>;
+    static chainAllFilters<T extends unknown>(paramfixers: (param0: Typed<Object>) => Typed<Object>[]): (param0: Typed<Object>) => Typed<Object>;
     static createBlockPos(paramdynamic: Dynamic<Object>, paramx: number, paramy: number, paramz: number): Dynamic<Object>;
     static dyeColorIdToName(paramid: number): string;
     static fixBlockPos(parampos: Dynamic<Object>): Dynamic<Object>;
     static fixInlineBlockPos(paraminput: Dynamic<Object>, paramfieldX: string, paramfieldY: string, paramfieldZ: string, paramnewField: string): Dynamic<Object>;
-    static fixStringField(paramdynamic: Dynamic<Object>, paramfieldName: string, paramfix: (param0: string) => Object | null): Dynamic<Object>;
+    static fixStringField(paramdynamic: Dynamic<Object>, paramfieldName: string, paramfix: (param0: string) => string): Dynamic<Object>;
     static patchSubType(paramtype: Type<Object>, paramfind: Type<Object>, paramreplace: Type<Object>): Type<Object>;
-    static readAndSet(paramtarget: Typed<Object>, paramoptic: OpticFinder<Object>, paramvalue: Dynamic<Object>): Typed<Object>;
+    static readAndSet<T extends unknown>(paramtarget: Typed<Object>, paramoptic: OpticFinder<T>, paramvalue: Dynamic<Object>): Typed<Object>;
     constructor()
 }

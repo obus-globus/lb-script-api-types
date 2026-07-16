@@ -10,7 +10,7 @@ export class IteratorFunctionBuiltins$IteratorFunction extends Enum<IteratorFunc
     static concat: IteratorFunctionBuiltins$IteratorFunction;
     static from: IteratorFunctionBuiltins$IteratorFunction;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): IteratorFunctionBuiltins$IteratorFunction;
     static values(): IteratorFunctionBuiltins$IteratorFunction[];
     private constructor(length: number)

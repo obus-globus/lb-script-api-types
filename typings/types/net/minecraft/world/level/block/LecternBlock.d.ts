@@ -86,7 +86,7 @@ export class LecternBlock extends BaseEntityBlock {
     static resetBookState(paramsourceEntity: Entity, paramlevel: Level, parampos: BlockPos, paramstate: BlockState, paramhasBook: boolean): void;
     static shouldRenderFace(paramstate: BlockState, paramneighborState: BlockState, paramdirection: Direction): boolean;
     static signalPageChange(paramlevel: Level, parampos: BlockPos, paramstate: BlockState): void;
-    static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Block | null): MapCodec<Block>;
+    static simpleCodec<B extends Block>(paramconstructor: (param0: BlockBehaviour$Properties) => B): MapCodec<B>;
     static stateById(paramidWithData: number): BlockState;
     static tryPlaceBook(paramsourceEntity: LivingEntity, paramlevel: Level, parampos: BlockPos, paramstate: BlockState, paramitem: ItemStack): boolean;
     static updateFromNeighbourShapes(paramstate: BlockState, paramlevel: LevelAccessor, parampos: BlockPos): BlockState;

@@ -4,7 +4,7 @@ import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptor
 import type { SerializersModule } from '../../../kotlinx/serialization/modules/SerializersModule.d.ts'
 export class ContextAwareKt extends Object {
     static getCapturedKClass(paramarg0: SerialDescriptor): KClass<Object>;
-    static getContextualDescriptor(paramarg0: SerializersModule, paramarg1: SerialDescriptor): SerialDescriptor;
-    static getPolymorphicDescriptors(paramarg0: SerializersModule, paramarg1: SerialDescriptor): SerialDescriptor[];
-    static withContext(paramarg0: SerialDescriptor, paramarg1: KClass<Object>): SerialDescriptor;
+    static getContextualDescriptor(self: SerializersModule, descriptor: SerialDescriptor): SerialDescriptor | null;
+    static getPolymorphicDescriptors(self: SerializersModule, descriptor: SerialDescriptor): SerialDescriptor[];
+    static withContext(self: SerialDescriptor, context: KClass<Object>): SerialDescriptor;
 }

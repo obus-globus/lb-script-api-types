@@ -1,14 +1,13 @@
 import type { TypeVisitor } from '../../../../com/google/common/reflect/TypeVisitor.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Types$JavaVersion extends Enum<Types$JavaVersion> {
     static JAVA6: Types$JavaVersion;
     static JAVA7: Types$JavaVersion;
     static JAVA8: Types$JavaVersion;
     static JAVA9: Types$JavaVersion;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Types$JavaVersion;
     static values(): Types$JavaVersion[];
     constructor(arg2: TypeVisitor)

@@ -33,7 +33,7 @@ export class TypeUtils extends Object {
     static typesSatisfyVariables(paramarg0: Map<TypeVariable<any>, Type>): boolean;
     static unrollVariables(paramarg0: Map<TypeVariable<any>, Type>, paramarg1: Type): Type;
     static wildcardType(): TypeUtils$WildcardTypeBuilder;
-    static wrap(paramarg0: Class<Object>): () => Type;
-    static wrap(paramarg0: Type): () => Type;
+    static wrap<T extends unknown>(paramarg0: Class<T>): () => Type;
+    static wrap<T extends unknown>(paramarg0: Type): () => Type;
     constructor()
 }

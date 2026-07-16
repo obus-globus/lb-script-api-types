@@ -5,7 +5,7 @@ import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/
 import type { BehaviorControl } from '../../../../../../net/minecraft/world/entity/ai/behavior/BehaviorControl.d.ts'
 import type { MemoryModuleType } from '../../../../../../net/minecraft/world/entity/ai/memory/MemoryModuleType.d.ts'
 export class InteractWith extends Object {
-    static of(paramtype: EntityType<LivingEntity>, paraminteractionRange: number, paramselfFilter: (param0: LivingEntity | null) => boolean, paramtargetFilter: (param0: LivingEntity | null) => boolean, paraminteractionTarget: MemoryModuleType<LivingEntity>, paramspeedModifier: number, paramstopDistance: number): BehaviorControl<LivingEntity>;
-    static of(paramtype: EntityType<LivingEntity>, paraminteractionRange: number, paraminteractionTarget: MemoryModuleType<LivingEntity>, paramspeedModifier: number, paramstopDistance: number): BehaviorControl<LivingEntity>;
+    static of<E extends LivingEntity, T extends LivingEntity>(paramtype: EntityType<T>, paraminteractionRange: number, paramselfFilter: (param0: E) => boolean, paramtargetFilter: (param0: T) => boolean, paraminteractionTarget: MemoryModuleType<T>, paramspeedModifier: number, paramstopDistance: number): BehaviorControl<E>;
+    static of<T extends LivingEntity>(paramtype: EntityType<T>, paraminteractionRange: number, paraminteractionTarget: MemoryModuleType<T>, paramspeedModifier: number, paramstopDistance: number): BehaviorControl<LivingEntity>;
     constructor()
 }

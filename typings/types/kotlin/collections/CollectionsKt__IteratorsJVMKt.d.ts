@@ -2,41 +2,42 @@ import type { Comparator } from '../../java/util/Comparator.d.ts'
 import type { Enumeration } from '../../java/util/Enumeration.d.ts'
 import type { Random } from '../../java/util/Random.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
+import type { Comparable } from '../../java/lang/Comparable.d.ts'
 import type { Pair } from '../../kotlin/Pair.d.ts'
 import type { CollectionsKt__IterablesKt } from '../../kotlin/collections/CollectionsKt__IterablesKt.d.ts'
 import type { Iterator } from '../../java/util/Iterator.d.ts'
 import type { Random as Random_2 } from '../../kotlin/random/Random.d.ts'
 export class CollectionsKt__IteratorsJVMKt extends CollectionsKt__IterablesKt {
-    static arrayListOf(...paramarg0: (Object | null)[]): (Object | null)[];
-    static asCollection(paramarg0: (Object | null)[], paramarg1: boolean): (Object | null)[];
-    static binarySearch(paramarg0: (Object | null)[], paramarg1: Object | null, paramarg2: number, paramarg3: number): number;
-    static binarySearch(paramarg0: (Object | null)[], paramarg1: Object | null, paramarg2: (param0: Object, param1: Object) => number, paramarg3: number, paramarg4: number): number;
-    static binarySearch(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number, paramarg3: (param0: Object) => number): number;
-    static binarySearchBy(paramarg0: (Object | null)[], paramarg1: Object | null, paramarg2: number, paramarg3: number, paramarg4: (param0: Object) => Object | null): number;
-    static build(paramarg0: (Object | null)[]): (Object | null)[];
-    static collectionSizeOrDefault(paramarg0: (Object | null)[], paramarg1: number): number;
-    static collectionSizeOrNull(paramarg0: (Object | null)[]): number;
-    static collectionToArrayCommonImpl(paramarg0: Object[], paramarg1: (Object | null)[]): (Object | null)[];
-    static collectionToArrayCommonImpl(paramarg0: Object[]): Object[];
-    static copyToArrayOfAny(paramarg0: (Object | null)[], paramarg1: boolean): Object[];
-    static createListBuilder(): (Object | null)[];
-    static createListBuilder(paramarg0: number): (Object | null)[];
-    static emptyList(): (Object | null)[];
-    static flatten(paramarg0: (Object | null)[][]): (Object | null)[];
+    static arrayListOf<T extends unknown>(...elements: T[]): T[];
+    static asCollection<T extends unknown>(self: T[], isVarargs: boolean): T[];
+    static binarySearch<T extends Comparable<T>>(self: (T | null)[], element: T | null, fromIndex: number, toIndex: number): number;
+    static binarySearch<T extends unknown>(self: T[], element: T, comparator: (param0: T, param1: T) => number, fromIndex: number, toIndex: number): number;
+    static binarySearch<T extends unknown>(self: T[], fromIndex: number, toIndex: number, comparison: (param0: T) => number): number;
+    static binarySearchBy<T extends unknown, K extends Comparable<K>>(self: T[], key: K | null, fromIndex: number, toIndex: number, selector: (param0: T) => K | null): number;
+    static build<E extends unknown>(builder: E[]): E[];
+    static collectionSizeOrDefault<T extends unknown>(self: T[], default_: number): number;
+    static collectionSizeOrNull<T extends unknown>(self: T[]): number | null;
+    static collectionToArrayCommonImpl<T extends unknown>(collection: (Object | null)[], array: T[]): T[];
+    static collectionToArrayCommonImpl(collection: (Object | null)[]): (Object | null)[];
+    static copyToArrayOfAny<T extends unknown>(self: T[], isVarargs: boolean): (Object | null)[];
+    static createListBuilder<E extends unknown>(): E[];
+    static createListBuilder<E extends unknown>(capacity: number): E[];
+    static emptyList<T extends unknown>(): T[];
+    static flatten<T extends unknown>(self: T[][]): T[];
     static getIndices(paramarg0: Object[]): { start: number; endInclusive: number; step: number };
-    static getLastIndex(paramarg0: (Object | null)[]): number;
-    static iterator(paramarg0: Enumeration<Object>): Iterator<Object>;
-    static listOf(paramarg0: Object | null): (Object | null)[];
-    static listOf(...paramarg0: (Object | null)[]): (Object | null)[];
-    static listOfNotNull(paramarg0: Object | null): (Object | null)[];
-    static listOfNotNull(...paramarg0: (Object | null)[]): (Object | null)[];
-    static mutableListOf(...paramarg0: (Object | null)[]): (Object | null)[];
-    static optimizeReadOnlyList(paramarg0: (Object | null)[]): (Object | null)[];
-    static shuffled(paramarg0: (Object | null)[]): (Object | null)[];
-    static shuffled(paramarg0: (Object | null)[], paramarg1: Random): (Object | null)[];
-    static shuffled(paramarg0: (Object | null)[], paramarg1: Random_2): (Object | null)[];
-    static terminateCollectionToArray(paramarg0: number, paramarg1: (Object | null)[]): (Object | null)[];
+    static getLastIndex<T extends unknown>(paramarg0: T[]): number;
+    static iterator<T extends unknown>(self: Enumeration<T>): Iterator<T>;
+    static listOf<T extends unknown>(element: T): T[];
+    static listOf<T extends unknown>(...elements: T[]): T[];
+    static listOfNotNull<T extends unknown>(element: T | null): T[];
+    static listOfNotNull<T extends unknown>(...elements: (T | null)[]): T[];
+    static mutableListOf<T extends unknown>(...elements: T[]): T[];
+    static optimizeReadOnlyList<T extends unknown>(self: T[]): T[];
+    static shuffled<T extends unknown>(self: T[]): T[];
+    static shuffled<T extends unknown>(self: T[], random: Random): T[];
+    static shuffled<T extends unknown>(self: T[], random: Random_2): T[];
+    static terminateCollectionToArray<T extends unknown>(collectionSize: number, array: T[]): T[];
     static throwCountOverflow(): void;
     static throwIndexOverflow(): void;
-    static unzip(paramarg0: Pair<Object, Object>[]): Pair<(Object | null)[], (Object | null)[]>;
+    static unzip<T extends unknown, R extends unknown>(self: Pair<T, R>[]): Pair<T[], R[]>;
 }

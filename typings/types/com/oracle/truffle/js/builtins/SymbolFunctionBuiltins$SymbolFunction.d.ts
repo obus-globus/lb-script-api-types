@@ -10,7 +10,7 @@ export class SymbolFunctionBuiltins$SymbolFunction extends Enum<SymbolFunctionBu
     static for_: SymbolFunctionBuiltins$SymbolFunction;
     static keyFor: SymbolFunctionBuiltins$SymbolFunction;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SymbolFunctionBuiltins$SymbolFunction;
     static values(): SymbolFunctionBuiltins$SymbolFunction[];
     private constructor(length: number)

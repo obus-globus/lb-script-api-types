@@ -15,8 +15,8 @@ import type { SslConfiguration } from '../../../../../../org/apache/logging/log4
 export class SslSocketManager extends TcpSocketManager {
     static DEFAULT_PORT: number;
     static DEFAULT_RECONNECTION_DELAY_MILLIS: number;
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
-    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<OutputStreamManager, Object>): OutputStreamManager;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
+    static getManager<T extends unknown>(paramname: string, paramdata: T, paramfactory: ManagerFactory<OutputStreamManager, T>): OutputStreamManager;
     static getSocketManager(paramsslConfig: SslConfiguration, paramhost: string, paramport: number, paramconnectTimeoutMillis: number, paramreconnectDelayMillis: number, paramimmediateFail: boolean, paramlayout: Layout<Serializable>, parambufferSize: number): SslSocketManager;
     static getSocketManager(paramsslConfig: SslConfiguration, paramhost: string, paramport: number, paramconnectTimeoutMillis: number, paramreconnectDelayMillis: number, paramimmediateFail: boolean, paramlayout: Layout<Serializable>, parambufferSize: number, paramsocketOptions: SocketOptions): SslSocketManager;
     static getSocketManager(paramhost: string, paramport: number, paramconnectTimeoutMillis: number, paramreconnectDelayMillis: number, paramimmediateFail: boolean, paramlayout: Layout<Serializable>, parambufferSize: number): TcpSocketManager;

@@ -6,19 +6,19 @@ import type { Matrix2fc } from '../../org/joml/Matrix2fc.d.ts'
 import type { Vector2f } from '../../org/joml/Vector2f.d.ts'
 import type { Vector2fc } from '../../org/joml/Vector2fc.d.ts'
 export class Matrix2fKt extends Object {
-    static getMatrix2f(paramarg0: ByteBuffer, paramarg1: Matrix2f): Matrix2f;
-    static getMatrix2f(paramarg0: FloatBuffer): Matrix2f;
-    static getMatrix2f(paramarg0: FloatBuffer, paramarg1: Matrix2f): Matrix2f;
-    static minus(paramarg0: Matrix2fc, paramarg1: Matrix2fc): Matrix2f;
-    static minusAssign(paramarg0: Matrix2f, paramarg1: Matrix2fc): void;
-    static mulComponentWise(paramarg0: Matrix2fc, paramarg1: Matrix2fc): Matrix2f;
-    static plus(paramarg0: Matrix2fc, paramarg1: Matrix2fc): Matrix2f;
-    static plusAssign(paramarg0: Matrix2f, paramarg1: Matrix2fc): void;
-    static putMatrix2f(paramarg0: ByteBuffer, paramarg1: number, paramarg2: Matrix2f): ByteBuffer;
-    static putMatrix2f(paramarg0: ByteBuffer, paramarg1: Matrix2f): ByteBuffer;
-    static putMatrix2f(paramarg0: FloatBuffer, paramarg1: number, paramarg2: Matrix2f): FloatBuffer;
-    static putMatrix2f(paramarg0: FloatBuffer, paramarg1: Matrix2f): FloatBuffer;
-    static times(paramarg0: Matrix2fc, paramarg1: Matrix2fc): Matrix2f;
-    static times(paramarg0: Matrix2fc, paramarg1: Vector2fc): Vector2f;
-    static timesAssign(paramarg0: Matrix2f, paramarg1: Matrix2fc): void;
+    static getMatrix2f(self: ByteBuffer, v: Matrix2f): Matrix2f;
+    static getMatrix2f(self: FloatBuffer): Matrix2f;
+    static getMatrix2f(self: FloatBuffer, v: Matrix2f): Matrix2f;
+    static minus(self: Matrix2fc, m: Matrix2fc): Matrix2f;
+    static minusAssign(self: Matrix2f, m: Matrix2fc): void;
+    static mulComponentWise(self: Matrix2fc, m: Matrix2fc): Matrix2f;
+    static plus(self: Matrix2fc, m: Matrix2fc): Matrix2f;
+    static plusAssign(self: Matrix2f, m: Matrix2fc): void;
+    static putMatrix2f(self: ByteBuffer, index: number, v: Matrix2f): ByteBuffer;
+    static putMatrix2f(self: ByteBuffer, v: Matrix2f): ByteBuffer;
+    static putMatrix2f(self: FloatBuffer, index: number, v: Matrix2f): FloatBuffer;
+    static putMatrix2f(self: FloatBuffer, v: Matrix2f): FloatBuffer;
+    static times(self: Matrix2fc, m: Matrix2fc): Matrix2f;
+    static times(self: Matrix2fc, v: Vector2fc): Vector2f;
+    static timesAssign(self: Matrix2f, m: Matrix2fc): void;
 }

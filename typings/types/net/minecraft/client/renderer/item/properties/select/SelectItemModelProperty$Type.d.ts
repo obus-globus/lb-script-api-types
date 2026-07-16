@@ -6,8 +6,8 @@ import type { SelectItemModel$SwitchCase } from '../../../../../../../net/minecr
 import type { SelectItemModel$UnbakedSwitch } from '../../../../../../../net/minecraft/client/renderer/item/SelectItemModel$UnbakedSwitch.d.ts'
 import type { SelectItemModelProperty } from '../../../../../../../net/minecraft/client/renderer/item/properties/select/SelectItemModelProperty.d.ts'
 export class SelectItemModelProperty$Type<P extends SelectItemModelProperty<T>, T extends unknown> extends Record {
-    static create(parampropertyMapCodec: MapCodec<Object>, paramvalueCodec: Codec<Object>): SelectItemModelProperty$Type<any, Object>;
-    static createCasesFieldCodec(paramvalueCodec: Codec<Object>): MapCodec<SelectItemModel$SwitchCase<Object>[]>;
+    static create<P extends SelectItemModelProperty<T>, T extends unknown>(parampropertyMapCodec: MapCodec<P>, paramvalueCodec: Codec<T>): SelectItemModelProperty$Type<P, T>;
+    static createCasesFieldCodec<T extends unknown>(paramvalueCodec: Codec<T>): MapCodec<SelectItemModel$SwitchCase<T>[]>;
     constructor(switchCodec: MapCodec<SelectItemModel$UnbakedSwitch<P, T>>)
     // private switchCodec: MapCodec<SelectItemModel$UnbakedSwitch<P, T>>;
     equals(o: Object | null): boolean;

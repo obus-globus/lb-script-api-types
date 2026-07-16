@@ -7,10 +7,10 @@ import type { ZipEntry } from '../../okio/internal/ZipEntry.d.ts'
 export class ZipFilesKt extends Object {
     static COMPRESSION_METHOD_DEFLATED: number;
     static COMPRESSION_METHOD_STORED: number;
-    static dosDateTimeToEpochMillis(paramarg0: number, paramarg1: number): number;
-    static filetimeToEpochMillis(paramarg0: number): number;
-    static openZip(paramarg0: Path, paramarg1: FileSystem, paramarg2: (param0: Object) => boolean): ZipFileSystem;
-    static readCentralDirectoryZipEntry(paramarg0: BufferedSource): ZipEntry;
-    static readLocalHeader(paramarg0: BufferedSource, paramarg1: ZipEntry): ZipEntry;
-    static skipLocalHeader(paramarg0: BufferedSource): void;
+    static dosDateTimeToEpochMillis(date: number, time: number): number | null;
+    static filetimeToEpochMillis(filetime: number): number;
+    static openZip(zipPath: Path, fileSystem: FileSystem, predicate: (param0: ZipEntry) => boolean): ZipFileSystem;
+    static readCentralDirectoryZipEntry(self: BufferedSource): ZipEntry;
+    static readLocalHeader(self: BufferedSource, centralDirectoryZipEntry: ZipEntry): ZipEntry;
+    static skipLocalHeader(self: BufferedSource): void;
 }

@@ -2,16 +2,16 @@ import type { AtomicInteger } from '../../../java/util/concurrent/atomic/AtomicI
 import type { AtomicLong } from '../../../java/util/concurrent/atomic/AtomicLong.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class AtomicsKt__Atomics_commonKt extends Object {
-    static decrementAndFetch(paramarg0: AtomicInteger): number;
-    static decrementAndFetch(paramarg0: AtomicLong): number;
-    static fetchAndDecrement(paramarg0: AtomicInteger): number;
-    static fetchAndDecrement(paramarg0: AtomicLong): number;
-    static fetchAndIncrement(paramarg0: AtomicInteger): number;
-    static fetchAndIncrement(paramarg0: AtomicLong): number;
-    static incrementAndFetch(paramarg0: AtomicInteger): number;
-    static incrementAndFetch(paramarg0: AtomicLong): number;
-    static minusAssign(paramarg0: AtomicInteger, paramarg1: number): void;
-    static minusAssign(paramarg0: AtomicLong, paramarg1: number): void;
-    static plusAssign(paramarg0: AtomicInteger, paramarg1: number): void;
-    static plusAssign(paramarg0: AtomicLong, paramarg1: number): void;
+    static decrementAndFetch(self: AtomicInteger): number;
+    static decrementAndFetch(self: AtomicLong): number;
+    static fetchAndDecrement(self: AtomicInteger): number;
+    static fetchAndDecrement(self: AtomicLong): number;
+    static fetchAndIncrement(self: AtomicInteger): number;
+    static fetchAndIncrement(self: AtomicLong): number;
+    static incrementAndFetch(self: AtomicInteger): number;
+    static incrementAndFetch(self: AtomicLong): number;
+    static minusAssign(self: AtomicInteger, delta: number): void;
+    static minusAssign(self: AtomicLong, delta: number): void;
+    static plusAssign(self: AtomicInteger, delta: number): void;
+    static plusAssign(self: AtomicLong, delta: number): void;
 }

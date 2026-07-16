@@ -10,7 +10,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { InteractionHand } from '../../../../../net/minecraft/world/InteractionHand.d.ts'
 export class ClientboundOpenBookPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundOpenBookPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(hand: InteractionHand)
     readonly hand: InteractionHand;
     getHand(): InteractionHand;

@@ -6,7 +6,7 @@ import type { Gatherer$Integrator } from '../../../java/util/stream/Gatherer$Int
 import type { Object } from '../../../java/lang/Object.d.ts'
 export interface Gatherer<T extends unknown, A extends unknown, R extends unknown> extends Object {
     andThen<RR extends unknown>(arg0: Gatherer<R, Object, RR>): Gatherer<T, Object, RR>;
-    combiner(): (param0: A, param1: Object | null) => Object | null;
+    combiner(): (param0: A, param1: A) => A;
     finisher(): (param0: A, param1: (param0: R) => boolean) => void;
     initializer(): () => A;
     integrator(): (param0: A, param1: T, param2: (param0: Object) => boolean) => boolean;

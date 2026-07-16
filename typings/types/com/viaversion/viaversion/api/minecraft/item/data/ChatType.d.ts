@@ -5,7 +5,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ChatType extends Record implements Copyable {
     static TYPE: HolderType<ChatType>;
-    static copy(paramarg0: Object | null): Object | null;
+    static copy<T extends unknown>(paramarg0: T): T;
     constructor(chatDecoration: ChatType$ChatTypeDecoration, narrationDecoration: ChatType$ChatTypeDecoration)
     // private chatDecoration: ChatType$ChatTypeDecoration;
     // private narrationDecoration: ChatType$ChatTypeDecoration;

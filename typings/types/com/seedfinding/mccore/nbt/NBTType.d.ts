@@ -19,6 +19,6 @@ export class NBTType extends Object {
     static STRING: number;
     static createEmpty(paramarg0: number): NBTTag<Object>;
     static getTypeOf(paramarg0: Class<NBTTag<Object>>): number;
-    static register(paramarg0: Class<Object>, paramarg1: number, paramarg2: () => Object | null): void;
+    static register<T extends NBTTag<Object>>(paramarg0: Class<T>, paramarg1: number, paramarg2: () => T): void;
     constructor()
 }

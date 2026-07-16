@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class StaticUnicodeSets$Key extends Enum<StaticUnicodeSets$Key> {
     static ALL_SEPARATORS: StaticUnicodeSets$Key;
@@ -26,7 +25,7 @@ export class StaticUnicodeSets$Key extends Enum<StaticUnicodeSets$Key> {
     static STRICT_PERIOD: StaticUnicodeSets$Key;
     static WON_SIGN: StaticUnicodeSets$Key;
     static YEN_SIGN: StaticUnicodeSets$Key;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): StaticUnicodeSets$Key;
     static values(): StaticUnicodeSets$Key[];
     private constructor()

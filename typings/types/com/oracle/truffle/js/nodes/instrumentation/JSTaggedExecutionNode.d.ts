@@ -6,8 +6,8 @@ import type { NodeObjectDescriptor } from '../../../../../../com/oracle/truffle/
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSTaggedExecutionNode extends JavaScriptNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static createFor(paramoriginalNode: JavaScriptNode, paramexpectedTag: Class<Tag>, parammaterializedTags: Class<Tag>[]): JavaScriptNode;
     static createForInput(paramoriginalNode: JavaScriptNode, paramtransferSourcesFrom: JavaScriptNode, parammaterializedTags: Class<Tag>[]): JavaScriptNode;
     static createForInput(paramoriginalNode: JavaScriptNode, paramexpectedTag: Class<Tag>, paramdescriptor: NodeObjectDescriptor, parammaterializedTags: Class<Tag>[]): JavaScriptNode;

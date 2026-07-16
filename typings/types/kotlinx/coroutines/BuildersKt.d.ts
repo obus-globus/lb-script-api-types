@@ -1,5 +1,4 @@
 import type { Object } from '../../java/lang/Object.d.ts'
-import type { Continuation } from '../../kotlin/coroutines/Continuation.d.ts'
 import type { CoroutineContext } from '../../kotlin/coroutines/CoroutineContext.d.ts'
 import type { CoroutineDispatcher } from '../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
 import type { CoroutineScope } from '../../kotlinx/coroutines/CoroutineScope.d.ts'
@@ -8,11 +7,11 @@ import type { Deferred } from '../../kotlinx/coroutines/Deferred.d.ts'
 import type { EventLoop } from '../../kotlinx/coroutines/EventLoop.d.ts'
 import type { Job } from '../../kotlinx/coroutines/Job.d.ts'
 export class BuildersKt extends Object {
-    static async(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: CoroutineStart, paramarg3: (param0: Object, param1: Object) => Object): Deferred<Object>;
-    static invoke(paramarg0: CoroutineDispatcher, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
-    static launch(paramarg0: CoroutineScope, paramarg1: CoroutineContext, paramarg2: CoroutineStart, paramarg3: (param0: Object, param1: Object) => Object): Job;
-    static runBlocking(paramarg0: CoroutineContext, paramarg1: (param0: Object, param1: Object) => Object): Object | null;
-    static runBlockingImpl(paramarg0: CoroutineContext, paramarg1: EventLoop, paramarg2: (param0: Object, param1: Object) => Object): Object | null;
-    static runBlockingK(paramarg0: CoroutineContext, paramarg1: (param0: Object, param1: Object) => Object): Object | null;
-    static withContext(paramarg0: CoroutineContext, paramarg1: (param0: Object, param1: Object) => Object, paramarg2: Continuation<Object>): Object;
+    static async<T extends unknown>(self: CoroutineScope, context: CoroutineContext, start: CoroutineStart, block: (param0: CoroutineScope) => T): Deferred<T>;
+    static invoke<T extends unknown>(self: CoroutineDispatcher, block: (param0: CoroutineScope) => T): T;
+    static launch(self: CoroutineScope, context: CoroutineContext, start: CoroutineStart, block: (param0: CoroutineScope) => void): Job;
+    static runBlocking<T extends unknown>(context: CoroutineContext, block: (param0: CoroutineScope) => T): T;
+    static runBlockingImpl<T extends unknown>(newContext: CoroutineContext, eventLoop: EventLoop | null, block: (param0: CoroutineScope) => T): T;
+    static runBlockingK<T extends unknown>(context: CoroutineContext, block: (param0: CoroutineScope) => T): T;
+    static withContext<T extends unknown>(context: CoroutineContext, block: (param0: CoroutineScope) => T): T;
 }

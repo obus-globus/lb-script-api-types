@@ -7,7 +7,7 @@ import type { Climate$ParameterPoint } from '../../../../../net/minecraft/world/
 import type { Climate$RTree } from '../../../../../net/minecraft/world/level/biome/Climate$RTree.d.ts'
 import type { Climate$TargetPoint } from '../../../../../net/minecraft/world/level/biome/Climate$TargetPoint.d.ts'
 export class Climate$ParameterList<T extends unknown> extends Object {
-    static codec(paramvalueCodec: MapCodec<Object>): Codec<Climate$ParameterList<Object>>;
+    static codec<T extends unknown>(paramvalueCodec: MapCodec<T>): Codec<Climate$ParameterList<T>>;
     constructor(values: Pair<Climate$ParameterPoint, T>[])
     // private index: Climate$RTree<T>;
     // private values: Pair<Climate$ParameterPoint, T>[];

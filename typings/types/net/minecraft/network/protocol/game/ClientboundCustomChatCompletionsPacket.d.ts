@@ -11,7 +11,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { ClientboundCustomChatCompletionsPacket$Action } from '../../../../../net/minecraft/network/protocol/game/ClientboundCustomChatCompletionsPacket$Action.d.ts'
 export class ClientboundCustomChatCompletionsPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundCustomChatCompletionsPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(action: ClientboundCustomChatCompletionsPacket$Action, entries: string[])
     // private action: ClientboundCustomChatCompletionsPacket$Action;
     // private entries: string[];

@@ -11,10 +11,10 @@ export class PermissionNodeImpl<T extends unknown> extends Record implements Per
     static STRING: (param0: Object) => boolean;
     static of(paramarg0: string, paramarg1: string): PermissionNode<boolean>;
     static of(paramarg0: Identifier): PermissionNode<boolean>;
-    static ofCustom(paramarg0: string, paramarg1: string, paramarg2: Codec<Object>, paramarg3: Class<Object>): PermissionNode<Object>;
-    static ofCustom(paramarg0: string, paramarg1: string, paramarg2: Codec<Object>, paramarg3: (param0: Object) => boolean): PermissionNode<Object>;
-    static ofCustom(paramarg0: Identifier, paramarg1: Codec<Object>, paramarg2: Class<Object>): PermissionNode<Object>;
-    static ofCustom(paramarg0: Identifier, paramarg1: Codec<Object>, paramarg2: (param0: Object) => boolean): PermissionNode<Object>;
+    static ofCustom<T extends unknown>(paramarg0: string, paramarg1: string, paramarg2: Codec<T>, paramarg3: Class<T>): PermissionNode<T>;
+    static ofCustom<T extends unknown>(paramarg0: string, paramarg1: string, paramarg2: Codec<T>, paramarg3: (param0: Object) => boolean): PermissionNode<T>;
+    static ofCustom<T extends unknown>(paramarg0: Identifier, paramarg1: Codec<T>, paramarg2: Class<T>): PermissionNode<T>;
+    static ofCustom<T extends unknown>(paramarg0: Identifier, paramarg1: Codec<T>, paramarg2: (param0: Object) => boolean): PermissionNode<T>;
     static ofInteger(paramarg0: string, paramarg1: string): PermissionNode<number>;
     static ofInteger(paramarg0: Identifier): PermissionNode<number>;
     static ofString(paramarg0: string, paramarg1: string): PermissionNode<string>;

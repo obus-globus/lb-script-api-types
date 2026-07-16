@@ -4,7 +4,7 @@ import type { ListeningExecutorService } from '../../../../../com/google/common/
 import type { Callable } from '../../../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Callables extends Object {
-    static asAsyncCallable(paramcallable: () => Object | null, paramlisteningExecutorService: ListeningExecutorService): () => ListenableFuture<Object>;
-    static returning(paramvalue: Object | null): () => Object | null;
+    static asAsyncCallable<T extends unknown>(paramcallable: () => T, paramlisteningExecutorService: ListeningExecutorService): () => ListenableFuture<T>;
+    static returning<T extends unknown>(paramvalue: T): () => T;
     private constructor()
 }

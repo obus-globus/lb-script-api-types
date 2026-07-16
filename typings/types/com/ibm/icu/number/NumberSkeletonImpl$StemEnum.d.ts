@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class NumberSkeletonImpl$StemEnum extends Enum<NumberSkeletonImpl$StemEnum> {
     static STEM_BASE_UNIT: NumberSkeletonImpl$StemEnum;
@@ -57,7 +56,7 @@ export class NumberSkeletonImpl$StemEnum extends Enum<NumberSkeletonImpl$StemEnu
     static STEM_UNIT_WIDTH_NARROW: NumberSkeletonImpl$StemEnum;
     static STEM_UNIT_WIDTH_SHORT: NumberSkeletonImpl$StemEnum;
     static STEM_UNIT_WIDTH_VARIANT: NumberSkeletonImpl$StemEnum;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): NumberSkeletonImpl$StemEnum;
     static values(): NumberSkeletonImpl$StemEnum[];
     private constructor()

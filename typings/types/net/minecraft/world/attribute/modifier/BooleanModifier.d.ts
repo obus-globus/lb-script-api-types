@@ -18,8 +18,8 @@ export class BooleanModifier extends Enum<BooleanModifier> implements AttributeM
     static RGB_COLOR_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
     static XNOR: BooleanModifier;
     static XOR: BooleanModifier;
-    static override(): AttributeModifier<Object, Object>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static override<Value extends unknown>(): AttributeModifier<Value, Value>;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): BooleanModifier;
     static values(): BooleanModifier[];
     private constructor()

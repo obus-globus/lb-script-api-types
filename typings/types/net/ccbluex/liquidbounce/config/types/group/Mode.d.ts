@@ -14,8 +14,8 @@ import type { LocalPlayer } from '../../../../../../net/minecraft/client/player/
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
 export abstract class Mode extends ValueGroup implements Tagged, EventListener, MinecraftShortcuts {
     static Companion: Tagged$Companion;
-    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
-    static of(paramarg0: string): Tagged;
+    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
+    static of(self: string): Tagged;
     constructor(name: string, aliases: string[])
     readonly debugDisplayName: Component;
     readonly gpuDevice: GpuDevice;
@@ -42,7 +42,6 @@ export abstract class Mode extends ValueGroup implements Tagged, EventListener, 
     protected modes<T extends Mode>(eventListener: EventListener, name: string, active: T, modes: T[]): ModeValueGroup<T>;
     protected modes<T extends Mode>(eventListener: EventListener, name: string, activeCallback: (param0: T[]) => number, modesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
     protected modes<T extends Mode>(eventListener: EventListener, name: string, activeIndex: number, choicesCallback: (param0: ModeValueGroup<T>) => T[]): ModeValueGroup<T>;
-    parent(): EventListener;
     parent(): EventListener | null;
     unregister(): void;
 }

@@ -10,7 +10,7 @@ export class GlobalBuiltins$GlobalLoadBuiltins$GlobalLoad extends Enum<GlobalBui
     static load: GlobalBuiltins$GlobalLoadBuiltins$GlobalLoad;
     static loadWithNewGlobal: GlobalBuiltins$GlobalLoadBuiltins$GlobalLoad;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): GlobalBuiltins$GlobalLoadBuiltins$GlobalLoad;
     static values(): GlobalBuiltins$GlobalLoadBuiltins$GlobalLoad[];
     private constructor(length: number)

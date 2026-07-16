@@ -7,6 +7,6 @@ export class UtcOffsetFormatKt extends Object {
     static getFOUR_DIGIT_OFFSET(): UtcOffsetFormat;
     static getISO_OFFSET(): UtcOffsetFormat;
     static getISO_OFFSET_BASIC(): UtcOffsetFormat;
-    static isoOffset(paramarg0: DateTimeFormatBuilder$WithUtcOffset, paramarg1: boolean, paramarg2: boolean, paramarg3: WhenToOutput, paramarg4: WhenToOutput): void;
-    static outputIfNeeded(paramarg0: DateTimeFormatBuilder | null, paramarg1: WhenToOutput, paramarg2: (param0: Object) => void): void;
+    static isoOffset(self: DateTimeFormatBuilder$WithUtcOffset, zOnZero: boolean, useSeparator: boolean, outputMinute: WhenToOutput, outputSecond: WhenToOutput): void;
+    static outputIfNeeded<T extends DateTimeFormatBuilder>(self: T, whenToOutput: WhenToOutput, format: (param0: T) => void): void;
 }

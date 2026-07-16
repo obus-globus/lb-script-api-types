@@ -1,6 +1,5 @@
 import type { Statement$StatementType$StructureType } from '../../../../../../../io/github/douira/glsl_transformer/ast/node/statement/Statement$StatementType$StructureType.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class Statement$StatementType extends Enum<Statement$StatementType> {
     static BREAK: Statement$StatementType;
@@ -21,7 +20,7 @@ export class Statement$StatementType extends Enum<Statement$StatementType> {
     static SWITCH: Statement$StatementType;
     static TERMINATE_RAY: Statement$StatementType;
     static WHILE_LOOP: Statement$StatementType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Statement$StatementType;
     static values(): Statement$StatementType[];
     private constructor(arg2: Statement$StatementType$StructureType)

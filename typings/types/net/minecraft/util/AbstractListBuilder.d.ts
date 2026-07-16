@@ -17,7 +17,7 @@ export abstract class AbstractListBuilder<T extends unknown, B extends unknown> 
     build(builder: B, prefix: T): DataResult<T>;
     build(prefix: T): DataResult<T>;
     initBuilder(): B;
-    mapError(onError: (param0: string) => Object | null): ListBuilder<T>;
+    mapError(onError: (param0: string) => string): ListBuilder<T>;
     ops(): DynamicOps<T>;
     withErrorsFrom(result: DataResult<Object>): ListBuilder<T>;
 }

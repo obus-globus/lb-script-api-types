@@ -1,11 +1,12 @@
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class TopKSelector<T extends unknown> extends Object {
-    static greatest(paramk: number): TopKSelector<Object>;
-    static greatest(paramk: number, paramcomparator: (param0: Object, param1: Object) => number): TopKSelector<Object>;
-    static least(paramk: number): TopKSelector<Object>;
-    static least(paramk: number, paramcomparator: (param0: Object, param1: Object) => number): TopKSelector<Object>;
+    static greatest<T extends Comparable<Object>>(paramk: number): TopKSelector<T>;
+    static greatest<T extends unknown>(paramk: number, paramcomparator: (param0: Object, param1: Object) => number): TopKSelector<T>;
+    static least<T extends Comparable<Object>>(paramk: number): TopKSelector<T>;
+    static least<T extends unknown>(paramk: number, paramcomparator: (param0: Object, param1: Object) => number): TopKSelector<T>;
     private constructor(comparator: (param0: T, param1: T) => number, k: number)
     // private buffer: T[];
     // private bufferSize: number;

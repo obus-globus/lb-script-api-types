@@ -4,13 +4,13 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Object2CharMaps extends Object {
     static EMPTY_MAP: { [key: string]: any };
-    static emptyMap(): { [key: string]: any };
-    static fastForEach(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
-    static fastIterable(paramarg0: { [key: string]: any }): Object2CharMap$Entry<Object>[];
-    static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Object2CharMap$Entry<Object>>;
-    static singleton(paramarg0: Object | null, paramarg1: string): { [key: string]: any };
-    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
-    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
-    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static emptyMap<K extends unknown>(): { [key: string]: any };
+    static fastForEach<K extends unknown>(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
+    static fastIterable<K extends unknown>(paramarg0: { [key: string]: any }): Object2CharMap$Entry<K>[];
+    static fastIterator<K extends unknown>(paramarg0: { [key: string]: any }): ObjectIterator<Object2CharMap$Entry<K>>;
+    static singleton<K extends unknown>(paramarg0: K, paramarg1: string): { [key: string]: any };
+    static synchronize<K extends unknown>(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize<K extends unknown>(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable<K extends unknown>(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

@@ -1,11 +1,10 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class ServerboundClientCommandPacket$Action extends Enum<ServerboundClientCommandPacket$Action> {
     static PERFORM_RESPAWN: ServerboundClientCommandPacket$Action;
     static REQUEST_GAMERULE_VALUES: ServerboundClientCommandPacket$Action;
     static REQUEST_STATS: ServerboundClientCommandPacket$Action;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ServerboundClientCommandPacket$Action;
     static values(): ServerboundClientCommandPacket$Action[];
     private constructor()

@@ -7,10 +7,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { FilteredText } from '../../../../net/minecraft/server/network/FilteredText.d.ts'
 export class Filterable<T extends unknown> extends Record {
-    static codec(paramvalueCodec: Codec<Object>): Codec<Filterable<Object>>;
+    static codec<T extends unknown>(paramvalueCodec: Codec<T>): Codec<Filterable<T>>;
     static from(paramtext: FilteredText): Filterable<string>;
-    static passThrough(paramvalue: Object | null): Filterable<Object>;
-    static streamCodec(paramvalueCodec: StreamCodec<ByteBuf, Object>): StreamCodec<ByteBuf, Filterable<Object>>;
+    static passThrough<T extends unknown>(paramvalue: T): Filterable<T>;
+    static streamCodec<B extends ByteBuf, T extends unknown>(paramvalueCodec: StreamCodec<B, T>): StreamCodec<B, Filterable<T>>;
     constructor(raw: T, filtered: Optional<T>)
     // private filtered: Optional<T>;
     // private raw: T;

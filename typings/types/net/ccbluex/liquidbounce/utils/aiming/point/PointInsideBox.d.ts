@@ -6,7 +6,7 @@ import type { AABB } from '../../../../../../net/minecraft/world/phys/AABB.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class PointInsideBox extends Record implements Position {
     static Companion: PointInsideBox$Companion;
-    static of(paramarg0: Vec3, paramarg1: AABB): PointInsideBox;
+    static of(pos: Vec3, box: AABB): PointInsideBox;
     private constructor(pos: Vec3, box: AABB)
     // private box: AABB;
     /*not mapped: */ box(): AABB;

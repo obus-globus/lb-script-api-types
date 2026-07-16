@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { TemporalUnit } from '../../../../../java/time/temporal/TemporalUnit.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class PropertiesUtil$TimeUnit extends Enum<PropertiesUtil$TimeUnit> {
     static DAYS: PropertiesUtil$TimeUnit;
@@ -10,7 +9,7 @@ export class PropertiesUtil$TimeUnit extends Enum<PropertiesUtil$TimeUnit> {
     static MINUTES: PropertiesUtil$TimeUnit;
     static NANOS: PropertiesUtil$TimeUnit;
     static SECONDS: PropertiesUtil$TimeUnit;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PropertiesUtil$TimeUnit;
     static values(): PropertiesUtil$TimeUnit[];
     private constructor(descriptions: string[], timeUnit: TemporalUnit)

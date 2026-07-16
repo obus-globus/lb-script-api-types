@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class JavaVersion extends Enum<JavaVersion> {
     static JAVA_0_9: JavaVersion;
@@ -31,7 +30,7 @@ export class JavaVersion extends Enum<JavaVersion> {
     static JAVA_26: JavaVersion;
     static JAVA_9: JavaVersion;
     static JAVA_RECENT: JavaVersion;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): JavaVersion;
     static values(): JavaVersion[];
     private constructor(arg2: number, arg3: string)

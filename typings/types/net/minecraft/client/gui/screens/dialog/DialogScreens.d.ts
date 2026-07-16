@@ -5,6 +5,6 @@ import type { DialogScreen } from '../../../../../../net/minecraft/client/gui/sc
 import type { Dialog } from '../../../../../../net/minecraft/server/dialog/Dialog.d.ts'
 export class DialogScreens extends Object {
     static bootstrap(): void;
-    static createFromData(paramdialog: Dialog | null, parampreviousScreen: Screen, paramconnectionAccess: DialogConnectionAccess): DialogScreen<Dialog>;
+    static createFromData<T extends Dialog>(paramdialog: T, parampreviousScreen: Screen, paramconnectionAccess: DialogConnectionAccess): DialogScreen<T>;
     constructor()
 }

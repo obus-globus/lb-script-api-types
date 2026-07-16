@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class GzipParameters$OS extends Enum<GzipParameters$OS> {
     static ACORN_RISCOS: GzipParameters$OS;
@@ -18,7 +17,7 @@ export class GzipParameters$OS extends Enum<GzipParameters$OS> {
     static VM_CMS: GzipParameters$OS;
     static Z_SYSTEM: GzipParameters$OS;
     static from(paramarg0: number): GzipParameters$OS;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): GzipParameters$OS;
     static values(): GzipParameters$OS[];
     private constructor(arg2: number)

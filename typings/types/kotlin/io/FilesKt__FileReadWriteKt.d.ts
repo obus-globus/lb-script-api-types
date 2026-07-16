@@ -6,24 +6,25 @@ import type { CharsetEncoder } from '../../java/nio/charset/CharsetEncoder.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { FilePathComponents } from '../../kotlin/io/FilePathComponents.d.ts'
 import type { FilesKt__FilePathComponentsKt } from '../../kotlin/io/FilesKt__FilePathComponentsKt.d.ts'
+import type { Sequence } from '../../kotlin/sequences/Sequence.d.ts'
 export class FilesKt__FileReadWriteKt extends FilesKt__FilePathComponentsKt {
-    static appendBytes(paramarg0: File, paramarg1: number[]): void;
-    static appendText(paramarg0: File, paramarg1: string, paramarg2: Charset): void;
-    static byteBufferForEncoding(paramarg0: number, paramarg1: CharsetEncoder): ByteBuffer;
-    static forEachBlock(paramarg0: File, paramarg1: number, paramarg2: (param0: Object, param1: Object) => void): void;
-    static forEachBlock(paramarg0: File, paramarg1: (param0: Object, param1: Object) => void): void;
-    static forEachLine(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object) => void): void;
+    static appendBytes(self: File, array: number[]): void;
+    static appendText(self: File, text: string, charset: Charset): void;
+    static byteBufferForEncoding(chunkSize: number, encoder: CharsetEncoder): ByteBuffer;
+    static forEachBlock(self: File, blockSize: number, action: (param0: number[], param1: number) => void): void;
+    static forEachBlock(self: File, action: (param0: number[], param1: number) => void): void;
+    static forEachLine(self: File, charset: Charset, action: (param0: string) => void): void;
     static getRoot(paramarg0: File): File;
     static getRootName(paramarg0: File): string;
     static isRooted(paramarg0: File): boolean;
-    static newReplaceEncoder(paramarg0: Charset): CharsetEncoder;
-    static readBytes(paramarg0: File): number[];
-    static readLines(paramarg0: File, paramarg1: Charset): string[];
-    static readText(paramarg0: File, paramarg1: Charset): string;
-    static subPath(paramarg0: File, paramarg1: number, paramarg2: number): File;
-    static toComponents(paramarg0: File): FilePathComponents;
-    static useLines(paramarg0: File, paramarg1: Charset, paramarg2: (param0: Object) => Object | null): Object | null;
-    static writeBytes(paramarg0: File, paramarg1: number[]): void;
-    static writeText(paramarg0: File, paramarg1: string, paramarg2: Charset): void;
-    static writeTextImpl(paramarg0: OutputStream, paramarg1: string, paramarg2: Charset): void;
+    static newReplaceEncoder(self: Charset): CharsetEncoder;
+    static readBytes(self: File): number[];
+    static readLines(self: File, charset: Charset): string[];
+    static readText(self: File, charset: Charset): string;
+    static subPath(self: File, beginIndex: number, endIndex: number): File;
+    static toComponents(self: File): FilePathComponents;
+    static useLines<T extends unknown>(self: File, charset: Charset, block: (param0: Sequence<string>) => T): T;
+    static writeBytes(self: File, array: number[]): void;
+    static writeText(self: File, text: string, charset: Charset): void;
+    static writeTextImpl(self: OutputStream, text: string, charset: Charset): void;
 }

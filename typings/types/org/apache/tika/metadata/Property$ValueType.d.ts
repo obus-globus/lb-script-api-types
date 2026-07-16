@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Property$ValueType extends Enum<Property$ValueType> {
     static BOOLEAN: Property$ValueType;
@@ -17,7 +16,7 @@ export class Property$ValueType extends Enum<Property$ValueType> {
     static URI: Property$ValueType;
     static URL: Property$ValueType;
     static XPATH: Property$ValueType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Property$ValueType;
     static values(): Property$ValueType[];
     private constructor()

@@ -5,7 +5,7 @@ export class CacheControl extends Object {
     static Companion: CacheControl$Companion;
     static FORCE_CACHE: CacheControl;
     static FORCE_NETWORK: CacheControl;
-    static parse(paramarg0: Pair<string, string>[]): CacheControl;
+    static parse(headers: Pair<string, string>[]): CacheControl;
     constructor(noCache: boolean, noStore: boolean, maxAgeSeconds: number, sMaxAgeSeconds: number, isPrivate: boolean, isPublic: boolean, mustRevalidate: boolean, maxStaleSeconds: number, minFreshSeconds: number, onlyIfCached: boolean, noTransform: boolean, immutable: boolean, headerValue: string | null)
     // private headerValue: string | null;
     /*not mapped: */ getHeaderValue$okhttp(): string | null;

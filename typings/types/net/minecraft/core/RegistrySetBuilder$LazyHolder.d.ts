@@ -4,8 +4,8 @@ import type { Holder$Reference } from '../../../net/minecraft/core/Holder$Refere
 import type { HolderOwner } from '../../../net/minecraft/core/HolderOwner.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 export class RegistrySetBuilder$LazyHolder<T extends unknown> extends Holder$Reference<T> {
-    static createIntrusive(paramowner: HolderOwner<Object>, paramvalue: Object | null): Holder$Reference<Object>;
-    static createStandAlone(paramowner: HolderOwner<Object>, paramkey: ResourceKey<Object>): Holder$Reference<Object>;
+    static createIntrusive<T extends unknown>(paramowner: HolderOwner<T>, paramvalue: T): Holder$Reference<T>;
+    static createStandAlone<T extends unknown>(paramowner: HolderOwner<T>, paramkey: ResourceKey<T>): Holder$Reference<T>;
     constructor(owner: HolderOwner<T>, key: ResourceKey<T>)
     // private supplier: () => T;
     bindValue(value: T): void;

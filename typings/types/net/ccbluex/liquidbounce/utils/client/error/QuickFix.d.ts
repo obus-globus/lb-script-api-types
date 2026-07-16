@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { Instructions } from '../../../../../../net/ccbluex/liquidbounce/utils/client/error/Instructions.d.ts'
@@ -12,8 +11,8 @@ export class QuickFix extends Enum<QuickFix> {
     static JCEF_ISNT_COMPATIBLE_WITH_THAT_SYSTEM: QuickFix;
     static JCEF_UNSATISFIED_LINK: QuickFix;
     static getEntries(): QuickFix[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): QuickFix;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): QuickFix;
     static values(): QuickFix[];
     private constructor(description: string, testError: (param0: Throwable) => boolean, whatYouNeed: Instructions | null, whatToDo: Instructions | null)
     readonly description: string;

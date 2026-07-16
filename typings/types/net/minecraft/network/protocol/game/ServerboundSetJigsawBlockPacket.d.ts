@@ -12,7 +12,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 import type { JigsawBlockEntity$JointType } from '../../../../../net/minecraft/world/level/block/entity/JigsawBlockEntity$JointType.d.ts'
 export class ServerboundSetJigsawBlockPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetJigsawBlockPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(blockPos: BlockPos, name: Identifier, target: Identifier, pool: Identifier, finalState: string, joint: JigsawBlockEntity$JointType, selectionPriority: number, placementPriority: number)
     readonly finalState: string;
     readonly joint: JigsawBlockEntity$JointType;

@@ -18,7 +18,7 @@ export class ClientUtilsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt#L48 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ClientUtils.kt:48}
      */
-    static env(name: string, property: string): string;
+    static env(name: string, property: string): string | null;
     static getClientStartDurationMs(): number;
     static getInGame(): boolean;
     static getLogger(): Logger;

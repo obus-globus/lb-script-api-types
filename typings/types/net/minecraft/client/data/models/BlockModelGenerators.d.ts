@@ -6,6 +6,8 @@ import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
+import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { ItemTintSource } from '../../../../../net/minecraft/client/color/item/ItemTintSource.d.ts'
 import type { BlockModelGenerators$BlockFamilyProvider } from '../../../../../net/minecraft/client/data/models/BlockModelGenerators$BlockFamilyProvider.d.ts'
 import type { BlockModelGenerators$PlantType } from '../../../../../net/minecraft/client/data/models/BlockModelGenerators$PlantType.d.ts'
@@ -31,6 +33,7 @@ import type { Material } from '../../../../../net/minecraft/client/resources/mod
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
 import type { FrontAndTop } from '../../../../../net/minecraft/core/FrontAndTop.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
+import type { StringRepresentable } from '../../../../../net/minecraft/util/StringRepresentable.d.ts'
 import type { DyeColor } from '../../../../../net/minecraft/world/item/DyeColor.d.ts'
 import type { Item } from '../../../../../net/minecraft/world/item/Item.d.ts'
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
@@ -44,17 +47,17 @@ import type { Property } from '../../../../../net/minecraft/world/level/block/st
 import type { SideChainPart } from '../../../../../net/minecraft/world/level/block/state/properties/SideChainPart.d.ts'
 import type { SpeleothemThickness } from '../../../../../net/minecraft/world/level/block/state/properties/SpeleothemThickness.d.ts'
 export class BlockModelGenerators extends Object {
-    static NOP: (param0: Object | null) => Object | null;
-    static UV_LOCK: (param0: Object | null) => Object | null;
-    static X_ROT_180: (param0: Object | null) => Object | null;
-    static X_ROT_270: (param0: Object | null) => Object | null;
-    static X_ROT_90: (param0: Object | null) => Object | null;
-    static Y_ROT_180: (param0: Object | null) => Object | null;
-    static Y_ROT_270: (param0: Object | null) => Object | null;
-    static Y_ROT_90: (param0: Object | null) => Object | null;
+    static NOP: (param0: Variant) => Variant;
+    static UV_LOCK: (param0: Variant) => Variant;
+    static X_ROT_180: (param0: Variant) => Variant;
+    static X_ROT_270: (param0: Variant) => Variant;
+    static X_ROT_90: (param0: Variant) => Variant;
+    static Y_ROT_180: (param0: Variant) => Variant;
+    static Y_ROT_270: (param0: Variant) => Variant;
+    static Y_ROT_90: (param0: Variant) => Variant;
     static and(...paramterms: ConditionBuilder[]): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean;
-    static applyRotation(paramorientation: FrontAndTop): (param0: Object | null) => Object | null;
-    static condition(paramproperty: EnumProperty<any>, paramterm: Object | null, ...paramadditionalTerms: (Object | null)[]): ConditionBuilder;
+    static applyRotation(paramorientation: FrontAndTop): (param0: Variant) => Variant;
+    static condition<T extends Enum<T> & StringRepresentable>(paramproperty: EnumProperty<T>, paramterm: T, ...paramadditionalTerms: T[]): ConditionBuilder;
     static condition(): ConditionBuilder;
     static condition(paramproperty: BooleanProperty, paramterm: boolean): ConditionBuilder;
     static createAxisAlignedPillarBlock(paramblock: Block, parammodel: MultiVariant): BlockModelDefinitionGenerator;
@@ -65,7 +68,7 @@ export class BlockModelGenerators extends Object {
     static createCopperBulb(paramcopperBulb: Block, parambaseModel: MultiVariant, paramlitModel: MultiVariant, parambaseModelPowered: MultiVariant, paramlitModelPowered: MultiVariant): BlockModelDefinitionGenerator;
     static createCustomFence(paramblock: Block, parampost: MultiVariant, paramnorth: MultiVariant, parameast: MultiVariant, paramsouth: MultiVariant, paramwest: MultiVariant): BlockModelDefinitionGenerator;
     static createDoor(paramblock: Block, parambottomLeft: MultiVariant, parambottomLeftOpen: MultiVariant, parambottomRight: MultiVariant, parambottomRightOpen: MultiVariant, paramtopLeft: MultiVariant, paramtopLeftOpen: MultiVariant, paramtopRight: MultiVariant, paramtopRightOpen: MultiVariant): BlockModelDefinitionGenerator;
-    static createEmptyOrFullDispatch(paramproperty: Property<any>, paramthreshold: Object | null, paramfullModel: MultiVariant, paramemptyModel: MultiVariant): PropertyDispatch<MultiVariant>;
+    static createEmptyOrFullDispatch<T extends Comparable<T>>(paramproperty: Property<T>, paramthreshold: T, paramfullModel: MultiVariant, paramemptyModel: MultiVariant): PropertyDispatch<MultiVariant>;
     static createFence(paramblock: Block, parampost: MultiVariant, paramside: MultiVariant): BlockModelDefinitionGenerator;
     static createFenceGate(paramblock: Block, paramopen: MultiVariant, paramclosed: MultiVariant, paramopenWall: MultiVariant, paramclosedWall: MultiVariant, paramuvLock: boolean): BlockModelDefinitionGenerator;
     static createHangingSign(paramblock: Block, paramrot0: MultiVariant, paramrot1: MultiVariant, paramrot2: MultiVariant, paramrot3: MultiVariant, paramattachedRot0: MultiVariant, paramattachedRot1: MultiVariant, paramattachedRot2: MultiVariant, paramattachedRot3: MultiVariant): BlockModelDefinitionGenerator;
@@ -75,7 +78,7 @@ export class BlockModelGenerators extends Object {
     static createOrientableTrapdoor(paramblock: Block, paramtop: MultiVariant, parambottom: MultiVariant, paramopen: MultiVariant): BlockModelDefinitionGenerator;
     static createPillarBlockUVLocked(paramblock: Block, parammapping: TextureMapping, parammodelOutput: (param0: Identifier, param1: ModelInstance) => void): BlockModelDefinitionGenerator;
     static createPressurePlate(paramblock: Block, paramoff: MultiVariant, paramon: MultiVariant): BlockModelDefinitionGenerator;
-    static createRotatedPillar(): PropertyDispatch<(param0: Object | null) => Object | null>;
+    static createRotatedPillar(): PropertyDispatch<(param0: Variant) => Variant>;
     static createRotatedPillarWithHorizontalVariant(paramblock: Block, parammodel: MultiVariant, paramhorizontalModel: MultiVariant): BlockModelDefinitionGenerator;
     static createRotatedVariants(parambase: Variant): MultiVariant;
     static createRotatedVariants(paramnormal: Variant, parammirrored: Variant): MultiVariant;
@@ -85,11 +88,11 @@ export class BlockModelGenerators extends Object {
     static createStairs(paramblock: Block, paraminner: MultiVariant, paramstraight: MultiVariant, paramouter: MultiVariant): BlockModelDefinitionGenerator;
     static createTrapdoor(paramblock: Block, paramtop: MultiVariant, parambottom: MultiVariant, paramopen: MultiVariant): BlockModelDefinitionGenerator;
     static createWall(paramblock: Block, parampost: MultiVariant, paramlowSide: MultiVariant, paramtallSide: MultiVariant): BlockModelDefinitionGenerator;
-    static forEachHorizontalDirection(paramconsumer: (param0: Direction, param1: (param0: Object | null) => Object | null) => void): void;
+    static forEachHorizontalDirection(paramconsumer: (param0: Direction, param1: (param0: Variant) => Variant) => void): void;
     static or(...paramterms: ConditionBuilder[]): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean;
     static plainModel(parammodel: Identifier): Variant;
     static plainVariant(parammodel: Identifier): MultiVariant;
-    static selectMultifaceProperties(paramholder: StateHolder<Object, Object>, paramconverter: (param0: Direction) => Object | null): Map<Object | null, (param0: Object | null) => Object | null>;
+    static selectMultifaceProperties<T extends Property<any>>(paramholder: StateHolder<Object, Object>, paramconverter: (param0: Direction) => T): Map<T, (param0: Variant) => Variant>;
     static shelfCondition(paramdirection: Direction, paramisPowered: boolean, paramsideChainPart: SideChainPart): (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean;
     static variant(paramvariant: Variant): MultiVariant;
     static variants(...paramvariant: Variant[]): MultiVariant;
@@ -97,9 +100,9 @@ export class BlockModelGenerators extends Object {
     blockStateOutput: (param0: BlockModelDefinitionGenerator) => void;
     itemModelOutput: ItemModelOutput;
     modelOutput: (param0: Identifier, param1: ModelInstance) => void;
-    addBookSlotModel(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean, mutator: (param0: Object | null) => Object | null, stateProperty: BooleanProperty, template: ModelTemplate, isSlotOccupied: boolean): void;
+    addBookSlotModel(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean, mutator: (param0: Variant) => Variant, stateProperty: BooleanProperty, template: ModelTemplate, isSlotOccupied: boolean): void;
     addShelfPart(block: Block, mapping: TextureMapping, generator: MultiPartGenerator, template: ModelTemplate, isPowered: boolean, sideChainPart: SideChainPart): void;
-    addSlotStateAndRotationVariants(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean, mutator: (param0: Object | null) => Object | null): void;
+    addSlotStateAndRotationVariants(multiPartGenerator: MultiPartGenerator, facingCondition: (param0: StateDefinition<Object, any>) => (param0: Object | null) => boolean, mutator: (param0: Variant) => Variant): void;
     copyCopperBulbModel(donor: Block, acceptor: Block): void;
     copyDoorModel(donor: Block, acceptor: Block): void;
     copyModel(donor: Block, acceptor: Block): void;

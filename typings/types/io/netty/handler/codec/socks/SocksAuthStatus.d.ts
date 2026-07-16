@@ -1,11 +1,10 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class SocksAuthStatus extends Enum<SocksAuthStatus> {
     static FAILURE: SocksAuthStatus;
     static SUCCESS: SocksAuthStatus;
     static fromByte(paramarg0: number): SocksAuthStatus;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: number): SocksAuthStatus;
     static valueOf(paramarg0: string): SocksAuthStatus;
     static values(): SocksAuthStatus[];

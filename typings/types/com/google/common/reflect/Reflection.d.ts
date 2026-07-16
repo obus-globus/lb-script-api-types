@@ -5,6 +5,6 @@ export class Reflection extends Object {
     static getPackageName(paramclazz: Class<Object>): string;
     static getPackageName(paramclassFullName: string): string;
     static initialize(...paramclasses: Class<Object>[]): void;
-    static newProxy(paraminterfaceType: Class<Object>, paramhandler: InvocationHandler): Object | null;
+    static newProxy<T extends unknown>(paraminterfaceType: Class<T>, paramhandler: InvocationHandler): T;
     private constructor()
 }

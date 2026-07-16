@@ -8,7 +8,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { MethodHandles$Lookup } from '../../../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class InteropLibraryGen extends LibraryFactory<InteropLibrary> {
-    static resolve(paramlibrary: Class<Library>): LibraryFactory<Library>;
+    static resolve<T extends Library>(paramlibrary: Class<T>): LibraryFactory<T>;
     private constructor()
     createAssertions(delegate: InteropLibrary): InteropLibrary;
     createDelegate(delegateLibrary: InteropLibrary): InteropLibrary;

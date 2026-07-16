@@ -9,12 +9,12 @@ import type { UnaryOperator } from '../../../../../java/util/function/UnaryOpera
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractBlockPropertyFix } from '../../../../../net/minecraft/util/datafix/fixes/AbstractBlockPropertyFix.d.ts'
 export class BlockPropertyRenameAndFix extends AbstractBlockPropertyFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
-    constructor(outputSchema: Schema, name: string, blockId: string, oldPropertyName: string, newPropertyName: string, valueFixer: (param0: string) => Object | null)
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
+    constructor(outputSchema: Schema, name: string, blockId: string, oldPropertyName: string, newPropertyName: string, valueFixer: (param0: string) => string)
     // private blockId: string;
     // private newPropertyName: string;
     // private oldPropertyName: string;
-    // private valueFixer: (param0: string) => Object | null;
+    // private valueFixer: (param0: string) => string;
     fixProperties<T extends unknown>(blockId: string, properties: Dynamic<T>): Dynamic<T>;
     shouldFix(blockId: string): boolean;
 }

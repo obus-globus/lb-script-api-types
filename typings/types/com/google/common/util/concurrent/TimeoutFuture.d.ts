@@ -4,8 +4,8 @@ import type { ListenableFuture } from '../../../../../com/google/common/util/con
 import type { ScheduledFuture } from '../../../../../java/util/concurrent/ScheduledFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class TimeoutFuture<V extends unknown> extends FluentFuture$TrustedFuture<V> {
-    static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
-    static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
+    static from<V extends unknown>(paramfuture: FluentFuture<V>): FluentFuture<V>;
+    static from<V extends unknown>(paramfuture: ListenableFuture<V>): FluentFuture<V>;
     private constructor(delegate: ListenableFuture<V>)
     // private delegateRef: ListenableFuture<V>;
     // private timer: ScheduledFuture<Object>;

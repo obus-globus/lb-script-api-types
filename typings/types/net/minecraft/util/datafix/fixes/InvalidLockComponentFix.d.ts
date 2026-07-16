@@ -8,8 +8,8 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { DataComponentRemainderFix } from '../../../../../net/minecraft/util/datafix/fixes/DataComponentRemainderFix.d.ts'
 export class InvalidLockComponentFix extends DataComponentRemainderFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
-    static fixLock(paraminput: Dynamic<Object>): Dynamic<Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
+    static fixLock<T extends unknown>(paraminput: Dynamic<T>): Dynamic<T>;
     constructor(outputSchema: Schema)
     fixComponent<T extends unknown>(input: Dynamic<T>): Dynamic<T>;
 }

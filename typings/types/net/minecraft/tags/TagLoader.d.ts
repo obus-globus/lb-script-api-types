@@ -16,9 +16,9 @@ import type { TagNetworkSerialization$NetworkPayload } from '../../../net/minecr
 export class TagLoader<T extends unknown> extends Object {
     static buildUpdatedLookups(paramregistries: RegistryAccess$Frozen, paramtags: Registry$PendingTags<Object>[]): HolderLookup$RegistryLookup<Object>[];
     static loadTagsForExistingRegistries(parammanager: ResourceManager, paramlayer: RegistryAccess): Registry$PendingTags<Object>[];
-    static loadTagsForRegistry(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramlookup: TagLoader$ElementLookup<Holder<Object>>): Map<TagKey<Object>, Holder<Object>[]>;
-    static loadTagsForRegistry(parammanager: ResourceManager, paramregistry: (Object | null)[]): void;
-    static loadTagsFromNetwork(paramtags: TagNetworkSerialization$NetworkPayload, paramregistry: (Object | null)[]): Map<TagKey<Object>, Holder<Object>[]>;
+    static loadTagsForRegistry<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramlookup: TagLoader$ElementLookup<Holder<T>>): Map<TagKey<T>, Holder<T>[]>;
+    static loadTagsForRegistry<T extends unknown>(parammanager: ResourceManager, paramregistry: T[]): void;
+    static loadTagsFromNetwork<T extends unknown>(paramtags: TagNetworkSerialization$NetworkPayload, paramregistry: T[]): Map<TagKey<T>, Holder<T>[]>;
     constructor(elementLookup: TagLoader$ElementLookup<T>, directory: string)
     // private directory: string;
     // private elementLookup: TagLoader$ElementLookup<T>;

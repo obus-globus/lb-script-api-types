@@ -39,7 +39,7 @@ export class EntitySelectorParser extends Object implements FabricEntitySelector
     static SYNTAX_OPTIONS_KEY_VALUE_SEPARATOR: string;
     static SYNTAX_SELECTOR_START: string;
     static SYNTAX_TAG: string;
-    static allowSelectors(paramsource: Object | null): boolean;
+    static allowSelectors<S extends unknown>(paramsource: S): boolean;
     static allowSelectors(paramsource: PermissionSetSupplier): boolean;
     constructor(reader: StringReader, allowSelectors: boolean)
     // private advancementsOption: SetOnceOptionState;

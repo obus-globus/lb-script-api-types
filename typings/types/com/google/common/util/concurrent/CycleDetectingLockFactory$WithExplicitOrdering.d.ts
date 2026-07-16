@@ -4,11 +4,10 @@ import type { CycleDetectingLockFactory$Policy } from '../../../../../com/google
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ReentrantLock } from '../../../../../java/util/concurrent/locks/ReentrantLock.d.ts'
 import type { ReentrantReadWriteLock } from '../../../../../java/util/concurrent/locks/ReentrantReadWriteLock.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class CycleDetectingLockFactory$WithExplicitOrdering<E extends Enum<E>> extends CycleDetectingLockFactory {
     static newInstance(parampolicy: CycleDetectingLockFactory$Policy): CycleDetectingLockFactory;
-    static newInstanceWithExplicitOrdering(paramenumClass: Class<Object>, parampolicy: CycleDetectingLockFactory$Policy): CycleDetectingLockFactory$WithExplicitOrdering<any>;
+    static newInstanceWithExplicitOrdering<E extends Enum<E>>(paramenumClass: Class<E>, parampolicy: CycleDetectingLockFactory$Policy): CycleDetectingLockFactory$WithExplicitOrdering<E>;
     constructor(policy: CycleDetectingLockFactory$Policy, lockGraphNodes: Map<E, CycleDetectingLockFactory$LockGraphNode>)
     // private lockGraphNodes: Map<E, CycleDetectingLockFactory$LockGraphNode>;
     newReentrantLock(rank: E): ReentrantLock;

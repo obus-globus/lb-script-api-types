@@ -9,8 +9,8 @@ import type { Scope } from '../../../../../../net/minecraft/util/parsing/packrat
 import type { Term } from '../../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 export class IdentifierParseRule extends Object implements Rule<StringReader, Identifier> {
     static INSTANCE: Rule<StringReader, Identifier>;
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: ParseState<Object>) => Object | null): Rule<Object, Object>;
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: Scope) => Object | null): Rule<Object, Object>;
+    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: ParseState<S>) => T): Rule<S, T>;
+    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: Scope) => T): Rule<S, T>;
     private constructor()
     parse(state: ParseState<StringReader>): Identifier;
 }

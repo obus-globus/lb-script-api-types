@@ -6,7 +6,7 @@ export class FireworkExplosion extends Record implements Copyable {
     static ARRAY_TYPE: Type<FireworkExplosion[]>;
     static SHAPES: string[];
     static TYPE: Type<FireworkExplosion>;
-    static copy(paramarg0: Object | null): Object | null;
+    static copy<T extends unknown>(paramarg0: T): T;
     constructor(shape: number, colors: number[], fadeColors: number[], hasTrail: boolean, hasTwinkle: boolean)
     // private colors: number[];
     // private fadeColors: number[];

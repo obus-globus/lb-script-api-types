@@ -14,7 +14,7 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { LevelChunkSection } from '../../../../../net/minecraft/world/level/chunk/LevelChunkSection.d.ts'
 export class ClientboundSectionBlocksUpdatePacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSectionBlocksUpdatePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(sectionPos: SectionPos, changes: (Object | null)[], section: LevelChunkSection)
     // private positions: number[];
     sectionPos: SectionPos;

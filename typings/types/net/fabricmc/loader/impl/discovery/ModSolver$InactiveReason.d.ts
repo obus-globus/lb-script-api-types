@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class ModSolver$InactiveReason extends Enum<ModSolver$InactiveReason> {
     static INACTIVE_PARENT: ModSolver$InactiveReason;
@@ -10,7 +9,7 @@ export class ModSolver$InactiveReason extends Enum<ModSolver$InactiveReason> {
     static TO_REPLACE: ModSolver$InactiveReason;
     static UNKNOWN: ModSolver$InactiveReason;
     static WRONG_ENVIRONMENT: ModSolver$InactiveReason;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ModSolver$InactiveReason;
     static values(): ModSolver$InactiveReason[];
     private constructor(arg2: string)

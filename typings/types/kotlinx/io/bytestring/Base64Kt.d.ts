@@ -4,13 +4,13 @@ import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { Base64 } from '../../../kotlin/io/encoding/Base64.d.ts'
 import type { ByteString } from '../../../kotlinx/io/bytestring/ByteString.d.ts'
 export class Base64Kt extends Object {
-    static decode(paramarg0: Base64, paramarg1: ByteString, paramarg2: number, paramarg3: number): number[];
-    static decodeIntoByteArray(paramarg0: Base64, paramarg1: ByteString, paramarg2: number[], paramarg3: number, paramarg4: number, paramarg5: number): number;
-    static decodeToByteString(paramarg0: Base64, paramarg1: number[], paramarg2: number, paramarg3: number): ByteString;
-    static decodeToByteString(paramarg0: Base64, paramarg1: CharSequence, paramarg2: number, paramarg3: number): ByteString;
-    static decodeToByteString(paramarg0: Base64, paramarg1: ByteString, paramarg2: number, paramarg3: number): ByteString;
-    static encode(paramarg0: Base64, paramarg1: ByteString, paramarg2: number, paramarg3: number): string;
-    static encodeIntoByteArray(paramarg0: Base64, paramarg1: ByteString, paramarg2: number[], paramarg3: number, paramarg4: number, paramarg5: number): number;
-    static encodeToAppendable(paramarg0: Base64, paramarg1: ByteString, paramarg2: Appendable | null, paramarg3: number, paramarg4: number): Appendable | null;
-    static encodeToByteArray(paramarg0: Base64, paramarg1: ByteString, paramarg2: number, paramarg3: number): number[];
+    static decode(self: Base64, source: ByteString, startIndex: number, endIndex: number): number[];
+    static decodeIntoByteArray(self: Base64, source: ByteString, destination: number[], destinationOffset: number, startIndex: number, endIndex: number): number;
+    static decodeToByteString(self: Base64, source: number[], startIndex: number, endIndex: number): ByteString;
+    static decodeToByteString(self: Base64, source: CharSequence, startIndex: number, endIndex: number): ByteString;
+    static decodeToByteString(self: Base64, source: ByteString, startIndex: number, endIndex: number): ByteString;
+    static encode(self: Base64, source: ByteString, startIndex: number, endIndex: number): string;
+    static encodeIntoByteArray(self: Base64, source: ByteString, destination: number[], destinationOffset: number, startIndex: number, endIndex: number): number;
+    static encodeToAppendable<A extends Appendable>(self: Base64, source: ByteString, destination: A, startIndex: number, endIndex: number): A;
+    static encodeToByteArray(self: Base64, source: ByteString, startIndex: number, endIndex: number): number[];
 }

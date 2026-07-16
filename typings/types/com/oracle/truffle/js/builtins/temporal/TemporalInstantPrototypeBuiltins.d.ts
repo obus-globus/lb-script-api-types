@@ -4,11 +4,13 @@ import type { JSBuiltinsContainer$SwitchEnum } from '../../../../../../com/oracl
 import type { TemporalInstantPrototypeBuiltins$TemporalInstantPrototype } from '../../../../../../com/oracle/truffle/js/builtins/temporal/TemporalInstantPrototypeBuiltins$TemporalInstantPrototype.d.ts'
 import type { JSBuiltin } from '../../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { BuiltinEnum } from '../../../../../../com/oracle/truffle/js/runtime/builtins/BuiltinEnum.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class TemporalInstantPrototypeBuiltins extends JSBuiltinsContainer$SwitchEnum<TemporalInstantPrototypeBuiltins$TemporalInstantPrototype> {
     static BUILTINS: JSBuiltinsContainer;
-    static fromEnum(paramname: TruffleString, parambuiltinEnum: Class<Object>): JSBuiltinsContainer;
+    static fromEnum<E extends Enum<E> & BuiltinEnum<E>>(paramname: TruffleString, parambuiltinEnum: Class<E>): JSBuiltinsContainer;
     constructor()
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean, builtinEnum: TemporalInstantPrototypeBuiltins$TemporalInstantPrototype): Object;
 }

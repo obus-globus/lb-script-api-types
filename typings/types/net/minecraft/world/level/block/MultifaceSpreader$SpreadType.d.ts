@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Direction } from '../../../../../net/minecraft/core/Direction.d.ts'
@@ -8,7 +7,7 @@ export class MultifaceSpreader$SpreadType extends Enum<MultifaceSpreader$SpreadT
     static SAME_PLANE: MultifaceSpreader$SpreadType;
     static SAME_POSITION: MultifaceSpreader$SpreadType;
     static WRAP_AROUND: MultifaceSpreader$SpreadType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): MultifaceSpreader$SpreadType;
     static values(): MultifaceSpreader$SpreadType[];
     private constructor()

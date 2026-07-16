@@ -12,7 +12,7 @@ import type { ServerCommonPacketListener } from '../../../../../net/minecraft/ne
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ServerboundCustomClickActionPacket extends Record implements Packet<ServerCommonPacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundCustomClickActionPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(id: Identifier, payload: Optional<Tag>)
     // private id: Identifier;
     // private payload: Optional<Tag>;

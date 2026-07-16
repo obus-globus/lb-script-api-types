@@ -1,7 +1,6 @@
 import type { EntityTypes1_8$EntityType } from '../../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes1_8$EntityType.d.ts'
 import type { EntityDataTypes1_8 } from '../../../../../../../com/viaversion/viaversion/api/minecraft/entitydata/types/EntityDataTypes1_8.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { EntityDataTypes1_7_6 } from '../../../../../../../net/raphimc/vialegacy/protocol/release/r1_7_6_10tor1_8/types/EntityDataTypes1_7_6.d.ts'
 export class EntityDataIndex1_7_6 extends Enum<EntityDataIndex1_7_6> {
@@ -73,7 +72,7 @@ export class EntityDataIndex1_7_6 extends Enum<EntityDataIndex1_7_6> {
     static ZOMBIE_CONVERTING: EntityDataIndex1_7_6;
     static ZOMBIE_VILLAGER: EntityDataIndex1_7_6;
     static searchIndex(paramarg0: EntityTypes1_8$EntityType, paramarg1: number): EntityDataIndex1_7_6;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityDataIndex1_7_6;
     static values(): EntityDataIndex1_7_6[];
     private constructor(arg2: EntityTypes1_8$EntityType, arg3: number, arg4: EntityDataTypes1_7_6, arg5: EntityDataTypes1_8)

@@ -3,7 +3,7 @@ import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Token } from '../../../../../org/antlr/v4/runtime/Token.d.ts'
 export abstract class TokenFilter<J extends JobParameters> extends Object {
-    static join(paramarg0: TokenFilter<JobParameters>, paramarg1: TokenFilter<JobParameters>): TokenFilter<JobParameters>;
+    static join<J extends JobParameters>(paramarg0: TokenFilter<J>, paramarg1: TokenFilter<J>): TokenFilter<J>;
     constructor()
     readonly jobParametersSupplier: () => J;
     getJobParameters(): J;

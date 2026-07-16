@@ -101,8 +101,8 @@ import type { ASTListener } from '../../../../../../io/github/douira/glsl_transf
 import type { ASTWalker } from '../../../../../../io/github/douira/glsl_transformer/ast/traversal/ASTWalker.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ASTListenerVisitor<R extends unknown> extends ASTWalker<R> implements ASTListener {
-    static walk(paramarg0: ASTListener, paramarg1: ASTNode): Object | null;
-    static walkAndListen(paramarg0: ASTNode): Object | null;
+    static walk<R extends unknown>(paramarg0: ASTListener, paramarg1: ASTNode): R;
+    static walkAndListen<R extends unknown>(paramarg0: ASTNode): R;
     constructor()
     enterAdditionAssignmentExpression(arg0: AdditionAssignmentExpression): void;
     enterAdditionExpression(arg0: AdditionExpression): void;

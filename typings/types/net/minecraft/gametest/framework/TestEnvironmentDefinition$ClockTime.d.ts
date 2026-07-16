@@ -10,7 +10,7 @@ import type { WorldClock } from '../../../../net/minecraft/world/clock/WorldCloc
 export class TestEnvironmentDefinition$ClockTime extends Record implements TestEnvironmentDefinition<number> {
     static CODEC: MapCodec<TestEnvironmentDefinition$ClockTime>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
-    static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;
+    static activate<T extends unknown>(paramenvironment: TestEnvironmentDefinition<T>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<T>;
     static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     constructor(clock: Holder<WorldClock>, time: number)
     // private clock: Holder<WorldClock>;

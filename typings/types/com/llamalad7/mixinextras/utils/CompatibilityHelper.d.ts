@@ -10,7 +10,7 @@ import type { MemberInfo } from '../../../../org/spongepowered/asm/mixin/injecti
 import type { IMixinContext } from '../../../../org/spongepowered/asm/mixin/refmap/IMixinContext.d.ts'
 export class CompatibilityHelper extends Object {
     static getAnnotation(paramarg0: InjectionInfo): AnnotationNode;
-    static getDecoration(paramarg0: IMixinConfig, paramarg1: string, paramarg2: Object | null): Object | null;
+    static getDecoration<T extends unknown>(paramarg0: IMixinConfig, paramarg1: string, paramarg2: T): T;
     static getMixin(paramarg0: InjectionInfo): IMixinContext;
     static getOrder(paramarg0: InjectionInfo): number;
     static getTargets(paramarg0: InjectionInfo): AbstractInsnNode[][];

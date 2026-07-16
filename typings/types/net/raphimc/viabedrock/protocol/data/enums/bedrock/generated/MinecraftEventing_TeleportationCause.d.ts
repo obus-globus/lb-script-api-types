@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class MinecraftEventing_TeleportationCause extends Enum<MinecraftEventing_TeleportationCause> {
     static Behavior: MinecraftEventing_TeleportationCause;
@@ -12,7 +11,7 @@ export class MinecraftEventing_TeleportationCause extends Enum<MinecraftEventing
     static getByName(paramarg0: string, paramarg1: MinecraftEventing_TeleportationCause): MinecraftEventing_TeleportationCause;
     static getByValue(paramarg0: number): MinecraftEventing_TeleportationCause;
     static getByValue(paramarg0: number, paramarg1: MinecraftEventing_TeleportationCause): MinecraftEventing_TeleportationCause;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MinecraftEventing_TeleportationCause;
     static values(): MinecraftEventing_TeleportationCause[];
     private constructor(arg2: number)

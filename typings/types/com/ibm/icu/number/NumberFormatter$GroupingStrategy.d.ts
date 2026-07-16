@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class NumberFormatter$GroupingStrategy extends Enum<NumberFormatter$GroupingStrategy> {
     static AUTO: NumberFormatter$GroupingStrategy;
@@ -7,7 +6,7 @@ export class NumberFormatter$GroupingStrategy extends Enum<NumberFormatter$Group
     static OFF: NumberFormatter$GroupingStrategy;
     static ON_ALIGNED: NumberFormatter$GroupingStrategy;
     static THOUSANDS: NumberFormatter$GroupingStrategy;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): NumberFormatter$GroupingStrategy;
     static values(): NumberFormatter$GroupingStrategy[];
     private constructor()

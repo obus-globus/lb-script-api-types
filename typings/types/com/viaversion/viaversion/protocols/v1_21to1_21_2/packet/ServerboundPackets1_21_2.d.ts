@@ -2,7 +2,6 @@ import type { Direction } from '../../../../../../com/viaversion/viaversion/api/
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { ServerboundPacket1_21_2 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21to1_21_2/packet/ServerboundPacket1_21_2.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ServerboundPackets1_21_2 extends Enum<ServerboundPackets1_21_2> implements ServerboundPacket1_21_2 {
     static ACCEPT_TELEPORTATION: ServerboundPackets1_21_2;
@@ -65,7 +64,7 @@ export class ServerboundPackets1_21_2 extends Enum<ServerboundPackets1_21_2> imp
     static TELEPORT_TO_ENTITY: ServerboundPackets1_21_2;
     static USE_ITEM: ServerboundPackets1_21_2;
     static USE_ITEM_ON: ServerboundPackets1_21_2;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundPackets1_21_2;
     static values(): ServerboundPackets1_21_2[];
     private constructor()

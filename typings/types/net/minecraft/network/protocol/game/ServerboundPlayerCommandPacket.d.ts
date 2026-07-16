@@ -11,7 +11,7 @@ import type { ServerboundPlayerCommandPacket$Action } from '../../../../../net/m
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 export class ServerboundPlayerCommandPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundPlayerCommandPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(entity: Entity, action: ServerboundPlayerCommandPacket$Action)
     constructor(entity: Entity, action: ServerboundPlayerCommandPacket$Action, data: number)
     readonly action: ServerboundPlayerCommandPacket$Action;

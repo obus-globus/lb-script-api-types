@@ -15,7 +15,7 @@ export class OpenSslContextOption<T extends unknown> extends SslContextOption<T>
     static USE_JDK_PROVIDER_SIGNATURES: OpenSslContextOption<boolean>;
     static USE_TASKS: OpenSslContextOption<boolean>;
     static exists(paramarg0: string): boolean;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): SslContextOption<Object>;
-    static valueOf(paramarg0: string): SslContextOption<Object>;
+    static valueOf<T extends unknown>(paramarg0: Class<Object>, paramarg1: string): SslContextOption<T>;
+    static valueOf<T extends unknown>(paramarg0: string): SslContextOption<T>;
     private constructor(arg0: string)
 }

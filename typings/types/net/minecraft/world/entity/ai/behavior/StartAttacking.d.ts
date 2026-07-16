@@ -7,7 +7,7 @@ import type { BehaviorControl } from '../../../../../../net/minecraft/world/enti
 import type { StartAttacking$StartAttackingCondition } from '../../../../../../net/minecraft/world/entity/ai/behavior/StartAttacking$StartAttackingCondition.d.ts'
 import type { StartAttacking$TargetFinder } from '../../../../../../net/minecraft/world/entity/ai/behavior/StartAttacking$TargetFinder.d.ts'
 export class StartAttacking extends Object {
-    static create(paramcanAttackPredicate: (param0: ServerLevel, param1: Mob | null) => boolean, paramtargetFinderFunction: (param0: ServerLevel, param1: Mob | null) => Optional<LivingEntity>): BehaviorControl<Mob>;
-    static create(paramtargetFinderFunction: (param0: ServerLevel, param1: Mob | null) => Optional<LivingEntity>): BehaviorControl<Mob>;
+    static create<E extends Mob>(paramcanAttackPredicate: (param0: ServerLevel, param1: E) => boolean, paramtargetFinderFunction: (param0: ServerLevel, param1: E) => Optional<LivingEntity>): BehaviorControl<E>;
+    static create<E extends Mob>(paramtargetFinderFunction: (param0: ServerLevel, param1: E) => Optional<LivingEntity>): BehaviorControl<E>;
     constructor()
 }

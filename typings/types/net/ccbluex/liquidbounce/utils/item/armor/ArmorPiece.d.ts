@@ -9,7 +9,7 @@ import type { EquipmentSlot } from '../../../../../../net/minecraft/world/entity
 export class ArmorPiece extends Object {
 // (invalid TS: name contains '-')     static box-impl(paramarg0: ItemSlot): ArmorPiece;
 // (invalid TS: name contains '-')     static constructor-impl(paramarg0: ItemSlot): ItemSlot;
-// (invalid TS: name contains '-')     static equals-impl(paramarg0: ItemSlot, paramarg1: Object): boolean;
+// (invalid TS: name contains '-')     static equals-impl(other: Object | null): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: ItemSlot, paramarg1: ItemSlot): boolean;
 // (invalid TS: name contains '-')     static getDefensePoints-impl(paramarg0: ItemSlot): number;
 // (invalid TS: name contains '-')     static getEntitySlotId-impl(paramarg0: ItemSlot): number;
@@ -17,10 +17,10 @@ export class ArmorPiece extends Object {
 // (invalid TS: name contains '-')     static getKnockbackResistance-impl(paramarg0: ItemSlot): number;
 // (invalid TS: name contains '-')     static getSlotType-impl(paramarg0: ItemSlot): EquipmentSlot;
 // (invalid TS: name contains '-')     static getToughness-impl(paramarg0: ItemSlot): number;
-// (invalid TS: name contains '-')     static hashCode-impl(paramarg0: ItemSlot): number;
+// (invalid TS: name contains '-')     static hashCode-impl(): number;
 // (invalid TS: name contains '-')     static isAlreadyEquipped-impl(paramarg0: ItemSlot): boolean;
 // (invalid TS: name contains '-')     static isReachableByHand-impl(paramarg0: ItemSlot): boolean;
-// (invalid TS: name contains '-')     static toString-impl(paramarg0: ItemSlot): string;
+// (invalid TS: name contains '-')     static toString-impl(): string;
     constructor(itemSlot: ItemSlot)
 // (invalid TS: name contains '-')     /*not mapped: */ getDefensePoints-impl(): number;
 // (invalid TS: name contains '-')     /*not mapped: */ getEntitySlotId-impl(): number;

@@ -2,7 +2,6 @@ import type { Direction } from '../../../../../../com/viaversion/viaversion/api/
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { ClientboundPacket1_21_9 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_7to1_21_9/packet/ClientboundPacket1_21_9.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ClientboundPackets1_21_9 extends Enum<ClientboundPackets1_21_9> implements ClientboundPacket1_21_9 {
     static ADD_ENTITY: ClientboundPackets1_21_9;
@@ -144,7 +143,7 @@ export class ClientboundPackets1_21_9 extends Enum<ClientboundPackets1_21_9> imp
     static UPDATE_MOB_EFFECT: ClientboundPackets1_21_9;
     static UPDATE_RECIPES: ClientboundPackets1_21_9;
     static UPDATE_TAGS: ClientboundPackets1_21_9;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ClientboundPackets1_21_9;
     static values(): ClientboundPackets1_21_9[];
     private constructor()

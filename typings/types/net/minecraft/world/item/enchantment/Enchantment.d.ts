@@ -36,8 +36,8 @@ export class Enchantment extends Record {
     static DIRECT_CODEC: Codec<Enchantment>;
     static MAX_LEVEL: number;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Holder<Enchantment>>;
-    static applyEffects(parameffects: ConditionalEffect<Object>[], paramfilterData: LootContext, paramaction: (param0: Object | null) => void): void;
-    static applyEffects(parameffects: ConditionalEffect<Object>[], paramfilterData: LootContext, paramvalue: MutableFloat, paramaction: (param0: Object | null, param1: number) => number): void;
+    static applyEffects<T extends unknown>(parameffects: ConditionalEffect<T>[], paramfilterData: LootContext, paramaction: (param0: T) => void): void;
+    static applyEffects<T extends unknown>(parameffects: ConditionalEffect<T>[], paramfilterData: LootContext, paramvalue: MutableFloat, paramaction: (param0: T, param1: number) => number): void;
     static areCompatible(paramenchantment: Holder<Enchantment>, paramother: Holder<Enchantment>): boolean;
     static blockHitContext(paramserverLevel: ServerLevel, paramenchantmentLevel: number, paramentity: Entity, paramposition: Vec3, paramhitBlock: BlockState): LootContext;
     static constantCost(parambase: number): Enchantment$Cost;

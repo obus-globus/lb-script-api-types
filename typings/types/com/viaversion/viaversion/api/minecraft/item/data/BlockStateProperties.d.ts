@@ -4,7 +4,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class BlockStateProperties extends Record implements Copyable {
     static TYPE: Type<BlockStateProperties>;
-    static copy(paramarg0: Object | null): Object | null;
+    static copy<T extends unknown>(paramarg0: T): T;
     constructor(properties: { [key: string]: string })
     // private properties: { [key: string]: string };
     copy(): BlockStateProperties;

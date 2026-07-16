@@ -15,7 +15,7 @@ import type { MapItemSavedData } from '../../../../../net/minecraft/world/level/
 import type { MapItemSavedData$MapPatch } from '../../../../../net/minecraft/world/level/saveddata/maps/MapItemSavedData$MapPatch.d.ts'
 export class ClientboundMapItemDataPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundMapItemDataPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(mapId: MapId, scale: number, locked: boolean, decorations: Optional<MapDecoration[]>, colorPatch: Optional<MapItemSavedData$MapPatch>)
     constructor(mapId: MapId, scale: number, locked: boolean, decorations: MapDecoration[], colorPatch: MapItemSavedData$MapPatch)
     // private colorPatch: Optional<MapItemSavedData$MapPatch>;

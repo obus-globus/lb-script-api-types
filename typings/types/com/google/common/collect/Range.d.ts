@@ -6,20 +6,20 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class Range<C extends Comparable<Object>> extends Object implements Predicate<C>, Serializable {
-    static all(): Range<any>;
-    static atLeast(paramendpoint: Object | null): Range<any>;
-    static atMost(paramendpoint: Object | null): Range<any>;
-    static closed(paramlower: Object | null, paramupper: Object | null): Range<any>;
-    static closedOpen(paramlower: Object | null, paramupper: Object | null): Range<any>;
-    static downTo(paramendpoint: Object | null, paramboundType: BoundType): Range<any>;
-    static encloseAll(paramvalues: (Object | null)[]): Range<any>;
-    static greaterThan(paramendpoint: Object | null): Range<any>;
-    static lessThan(paramendpoint: Object | null): Range<any>;
-    static open(paramlower: Object | null, paramupper: Object | null): Range<any>;
-    static openClosed(paramlower: Object | null, paramupper: Object | null): Range<any>;
-    static range(paramlower: Object | null, paramlowerType: BoundType, paramupper: Object | null, paramupperType: BoundType): Range<any>;
-    static singleton(paramvalue: Object | null): Range<any>;
-    static upTo(paramendpoint: Object | null, paramboundType: BoundType): Range<any>;
+    static all<C extends Comparable<Object>>(): Range<C>;
+    static atLeast<C extends Comparable<Object>>(paramendpoint: C): Range<C>;
+    static atMost<C extends Comparable<Object>>(paramendpoint: C): Range<C>;
+    static closed<C extends Comparable<Object>>(paramlower: C, paramupper: C): Range<C>;
+    static closedOpen<C extends Comparable<Object>>(paramlower: C, paramupper: C): Range<C>;
+    static downTo<C extends Comparable<Object>>(paramendpoint: C, paramboundType: BoundType): Range<C>;
+    static encloseAll<C extends Comparable<Object>>(paramvalues: C[]): Range<C>;
+    static greaterThan<C extends Comparable<Object>>(paramendpoint: C): Range<C>;
+    static lessThan<C extends Comparable<Object>>(paramendpoint: C): Range<C>;
+    static open<C extends Comparable<Object>>(paramlower: C, paramupper: C): Range<C>;
+    static openClosed<C extends Comparable<Object>>(paramlower: C, paramupper: C): Range<C>;
+    static range<C extends Comparable<Object>>(paramlower: C, paramlowerType: BoundType, paramupper: C, paramupperType: BoundType): Range<C>;
+    static singleton<C extends Comparable<Object>>(paramvalue: C): Range<C>;
+    static upTo<C extends Comparable<Object>>(paramendpoint: C, paramboundType: BoundType): Range<C>;
     private constructor(lowerBound: Cut<C>, upperBound: Cut<C>)
     // private lowerBound: Cut<C>;
     // private upperBound: Cut<C>;

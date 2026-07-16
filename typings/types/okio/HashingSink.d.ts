@@ -7,13 +7,13 @@ import type { HashingSink$Companion } from '../okio/HashingSink$Companion.d.ts'
 import type { Sink } from '../okio/Sink.d.ts'
 export class HashingSink extends ForwardingSink implements Sink {
     static Companion: HashingSink$Companion;
-    static hmacSha1(paramarg0: Sink, paramarg1: ByteString): HashingSink;
-    static hmacSha256(paramarg0: Sink, paramarg1: ByteString): HashingSink;
-    static hmacSha512(paramarg0: Sink, paramarg1: ByteString): HashingSink;
-    static md5(paramarg0: Sink): HashingSink;
-    static sha1(paramarg0: Sink): HashingSink;
-    static sha256(paramarg0: Sink): HashingSink;
-    static sha512(paramarg0: Sink): HashingSink;
+    static hmacSha1(sink: Sink, key: ByteString): HashingSink;
+    static hmacSha256(sink: Sink, key: ByteString): HashingSink;
+    static hmacSha512(sink: Sink, key: ByteString): HashingSink;
+    static md5(sink: Sink): HashingSink;
+    static sha1(sink: Sink): HashingSink;
+    static sha256(sink: Sink): HashingSink;
+    static sha512(sink: Sink): HashingSink;
     constructor(sink: Sink, digest: MessageDigest)
     constructor(sink: Sink, mac: Mac)
     constructor(sink: Sink, algorithm: string)

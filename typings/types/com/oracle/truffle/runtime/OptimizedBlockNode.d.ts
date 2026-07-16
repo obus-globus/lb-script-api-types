@@ -9,7 +9,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class OptimizedBlockNode<T extends Node> extends BlockNode<T> implements ReplaceObserver {
     static NO_ARGUMENT: number;
-    static create(paramelements: (Node | null)[], paramexecutor: BlockNode$ElementExecutor<Node>): BlockNode<Node>;
+    static create<T extends Node>(paramelements: T[], paramexecutor: BlockNode$ElementExecutor<T>): BlockNode<T>;
     constructor(elements: T[], executor: BlockNode$ElementExecutor<T>)
     // private alwaysNoArgument: Assumption;
     // private executor: BlockNode$ElementExecutor<T>;

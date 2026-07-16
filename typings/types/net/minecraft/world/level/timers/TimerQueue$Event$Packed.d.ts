@@ -3,7 +3,7 @@ import type { Record } from '../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { TimerCallback } from '../../../../../net/minecraft/world/level/timers/TimerCallback.d.ts'
 export class TimerQueue$Event$Packed<T extends unknown> extends Record {
-    static codec(paramcallbackCodec: Codec<TimerCallback<Object>>): Codec<TimerQueue$Event$Packed<Object>>;
+    static codec<T extends unknown>(paramcallbackCodec: Codec<TimerCallback<T>>): Codec<TimerQueue$Event$Packed<T>>;
     constructor(triggerTime: number, id: string, callback: TimerCallback<T>)
     // private callback: TimerCallback<T>;
     // private id: string;

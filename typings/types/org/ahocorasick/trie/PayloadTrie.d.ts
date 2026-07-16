@@ -9,7 +9,7 @@ import type { TrieConfig } from '../../../org/ahocorasick/trie/TrieConfig.d.ts'
 import type { PayloadEmitHandler } from '../../../org/ahocorasick/trie/handler/PayloadEmitHandler.d.ts'
 import type { StatefulPayloadEmitHandler } from '../../../org/ahocorasick/trie/handler/StatefulPayloadEmitHandler.d.ts'
 export class PayloadTrie<T extends unknown> extends Object {
-    static builder(): PayloadTrie$PayloadTrieBuilder<Object>;
+    static builder<T extends unknown>(): PayloadTrie$PayloadTrieBuilder<T>;
     constructor(arg0: TrieConfig)
     // private rootState: PayloadState<T>;
     // private trieConfig: TrieConfig;

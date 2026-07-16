@@ -12,8 +12,8 @@ export class DataComponentMatchers extends Record implements Predicate<DataCompo
     static ANY: DataComponentMatchers;
     static CODEC: MapCodec<DataComponentMatchers>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, DataComponentMatchers>;
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(exact: DataComponentExactPredicate, partial: Map<DataComponentPredicate$Type<any>, DataComponentPredicate>)
     // private exact: DataComponentExactPredicate;
     // private partial: Map<DataComponentPredicate$Type<any>, DataComponentPredicate>;

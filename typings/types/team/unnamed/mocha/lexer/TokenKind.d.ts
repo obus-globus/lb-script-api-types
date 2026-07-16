@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { TokenKind$Tag } from '../../../../team/unnamed/mocha/lexer/TokenKind$Tag.d.ts'
 export class TokenKind extends Enum<TokenKind> {
@@ -40,7 +39,7 @@ export class TokenKind extends Enum<TokenKind> {
     static STRING: TokenKind;
     static SUB: TokenKind;
     static TRUE: TokenKind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TokenKind;
     static values(): TokenKind[];
     private constructor()

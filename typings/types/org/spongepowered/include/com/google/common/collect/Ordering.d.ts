@@ -7,16 +7,16 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../../../../java/lang/Comparable.d.ts'
 import type { Function as Function_2 } from '../../../../../../../org/spongepowered/include/com/google/common/base/Function.d.ts'
 export abstract class Ordering<T extends unknown> extends Object implements Comparator<T> {
-    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object | null, param1: Object | null) => number;
-    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static from(paramarg0: (param0: Object | null, param1: Object | null) => number): Ordering<Object>;
-    static naturalOrder(): (param0: Object | null, param1: Object | null) => number;
-    static nullsFirst(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static nullsLast(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static reverseOrder(): (param0: Object | null, param1: Object | null) => number;
+    static comparing<T extends unknown, U extends Comparable<Object>>(paramarg0: (param0: Object) => U): (param0: T, param1: T) => number;
+    static comparing<T extends unknown, U extends unknown>(paramarg0: (param0: Object) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
+    static comparingDouble<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
+    static comparingInt<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
+    static comparingLong<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
+    static from<T extends unknown>(paramarg0: (param0: T, param1: T) => number): Ordering<T>;
+    static naturalOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
+    static nullsFirst<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
+    static nullsLast<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
+    static reverseOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
     constructor()
     compare(arg0: T, arg1: T): number;
     onResultOf<F extends unknown>(arg0: (param0: F) => T): Ordering<F>;

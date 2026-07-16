@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class LockIconButton$Icon extends Enum<LockIconButton$Icon> {
@@ -9,7 +8,7 @@ export class LockIconButton$Icon extends Enum<LockIconButton$Icon> {
     static UNLOCKED: LockIconButton$Icon;
     static UNLOCKED_DISABLED: LockIconButton$Icon;
     static UNLOCKED_HOVER: LockIconButton$Icon;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LockIconButton$Icon;
     static values(): LockIconButton$Icon[];
     private constructor(sprite: Identifier)

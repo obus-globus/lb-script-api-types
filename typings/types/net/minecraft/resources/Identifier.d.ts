@@ -46,7 +46,7 @@ export class Identifier extends Object implements Comparable<Identifier> {
     toShortLanguageKey(): string;
     toShortString(): string;
     toString(): string;
-    withPath(modifier: (param0: string) => Object | null): Identifier;
+    withPath(modifier: (param0: string) => string): Identifier;
     withPath(newPath: string): Identifier;
     withPrefix(prefix: string): Identifier;
     withSuffix(suffix: string): Identifier;

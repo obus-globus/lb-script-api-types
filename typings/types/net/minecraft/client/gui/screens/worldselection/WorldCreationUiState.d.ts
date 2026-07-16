@@ -8,10 +8,12 @@ import type { WorldCreationContext } from '../../../../../../net/minecraft/clien
 import type { WorldCreationContext$DimensionsUpdater } from '../../../../../../net/minecraft/client/gui/screens/worldselection/WorldCreationContext$DimensionsUpdater.d.ts'
 import type { WorldCreationUiState$SelectedGameMode } from '../../../../../../net/minecraft/client/gui/screens/worldselection/WorldCreationUiState$SelectedGameMode.d.ts'
 import type { WorldCreationUiState$WorldTypeEntry } from '../../../../../../net/minecraft/client/gui/screens/worldselection/WorldCreationUiState$WorldTypeEntry.d.ts'
+import type { RegistryAccess$Frozen } from '../../../../../../net/minecraft/core/RegistryAccess$Frozen.d.ts'
 import type { ResourceKey } from '../../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { Difficulty } from '../../../../../../net/minecraft/world/Difficulty.d.ts'
 import type { WorldDataConfiguration } from '../../../../../../net/minecraft/world/level/WorldDataConfiguration.d.ts'
 import type { GameRules } from '../../../../../../net/minecraft/world/level/gamerules/GameRules.d.ts'
+import type { WorldDimensions } from '../../../../../../net/minecraft/world/level/levelgen/WorldDimensions.d.ts'
 import type { WorldPreset } from '../../../../../../net/minecraft/world/level/levelgen/presets/WorldPreset.d.ts'
 export class WorldCreationUiState extends Object {
     constructor(savesFolder: Path, settings: WorldCreationContext, preset: Optional<ResourceKey<WorldPreset>>, seed: OptionalLong)
@@ -60,6 +62,6 @@ export class WorldCreationUiState extends Object {
     setSettings(settings: WorldCreationContext): void;
     setWorldType(worldType: WorldCreationUiState$WorldTypeEntry): void;
     tryUpdateDataConfiguration(newConfig: WorldDataConfiguration): boolean;
-    updateDimensions(modifier: (param0: Object | null, param1: Object | null) => Object | null): void;
+    updateDimensions(modifier: (param0: RegistryAccess$Frozen, param1: WorldDimensions) => WorldDimensions): void;
     // private updatePresetLists(): void;
 }

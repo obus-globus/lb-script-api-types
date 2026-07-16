@@ -7,6 +7,7 @@ import type { IntPredicate } from '../../../../java/util/function/IntPredicate.d
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CommandBuildContext } from '../../../../net/minecraft/commands/CommandBuildContext.d.ts'
 import type { CommandSourceStack } from '../../../../net/minecraft/commands/CommandSourceStack.d.ts'
+import type { ExecutionCommandSource } from '../../../../net/minecraft/commands/ExecutionCommandSource.d.ts'
 import type { ChainModifiers } from '../../../../net/minecraft/commands/execution/ChainModifiers.d.ts'
 import type { ExecutionControl } from '../../../../net/minecraft/commands/execution/ExecutionControl.d.ts'
 import type { CommandFunction } from '../../../../net/minecraft/commands/functions/CommandFunction.d.ts'
@@ -15,6 +16,6 @@ import type { InCommandFunction } from '../../../../net/minecraft/server/command
 export class ExecuteCommand extends Object {
     static ERROR_FUNCTION_CONDITION_INSTANTATION_FAILURE: Dynamic2CommandExceptionType;
     static register(paramdispatcher: CommandDispatcher<CommandSourceStack>, paramcontext: CommandBuildContext): void;
-    static scheduleFunctionConditionsAndTest(paramoriginalSource: Object | null, paramcurrentSources: (Object | null)[], paramfunctionContextModifier: (param0: Object | null) => Object | null, paramcheck: (param0: number) => boolean, paramcurrentStep: ContextChain<Object>, paramparameters: CompoundTag, paramoutput: ExecutionControl<Object>, paramfunctionGetter: (param0: CommandContext<Object>) => CommandFunction<Object>[], parammodifiers: ChainModifiers): void;
+    static scheduleFunctionConditionsAndTest<T extends ExecutionCommandSource<T>>(paramoriginalSource: T, paramcurrentSources: T[], paramfunctionContextModifier: (param0: T) => T, paramcheck: (param0: number) => boolean, paramcurrentStep: ContextChain<T>, paramparameters: CompoundTag, paramoutput: ExecutionControl<T>, paramfunctionGetter: (param0: CommandContext<T>) => CommandFunction<T>[], parammodifiers: ChainModifiers): void;
     constructor()
 }

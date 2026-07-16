@@ -5,7 +5,7 @@ import type { RequiredArgumentBuilder } from '../../../../../../../com/mojang/br
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { FabricClientCommandSource } from '../../../../../../../net/fabricmc/fabric/api/client/command/v2/FabricClientCommandSource.d.ts'
 export class ClientCommands extends Object {
-    static argument(paramarg0: string, paramarg1: ArgumentType<Object>): RequiredArgumentBuilder<FabricClientCommandSource, Object>;
+    static argument<T extends unknown>(paramarg0: string, paramarg1: ArgumentType<T>): RequiredArgumentBuilder<FabricClientCommandSource, T>;
     static getActiveDispatcher(): CommandDispatcher<FabricClientCommandSource>;
     static literal(paramarg0: string): LiteralArgumentBuilder<FabricClientCommandSource>;
     static refreshCommandCompletions(): void;

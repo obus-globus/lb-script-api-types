@@ -7,17 +7,17 @@ import type { BoundedFloatFunction } from '../../../net/minecraft/util/BoundedFl
 import type { CubicSpline } from '../../../net/minecraft/util/CubicSpline.d.ts'
 import type { CubicSpline$Builder } from '../../../net/minecraft/util/CubicSpline$Builder.d.ts'
 export class CubicSpline$Constant<I extends unknown> extends Record implements CubicSpline<I> {
-    static asSampler(paramspline: CubicSpline<Object>): BoundedFloatFunction<Object>;
-    static builder(paramcoordinate: Object | null): CubicSpline$Builder<any>;
-    static builder(paramcoordinate: Object | null, paramvalueTransformer: (param0: number) => number): CubicSpline$Builder<any>;
-    static codec(paramcoordinateCodec: Codec<Object>): Codec<CubicSpline<Object>>;
-    static constant(paramvalue: number): CubicSpline<Object>;
-    static sample(paramspline: CubicSpline<Object>, paramcoordinate: Object | null): number;
+    static asSampler<C extends unknown, I extends BoundedFloatFunction<C>>(paramspline: CubicSpline<I>): BoundedFloatFunction<C>;
+    static builder<I extends BoundedFloatFunction<Object>>(paramcoordinate: I): CubicSpline$Builder<I>;
+    static builder<I extends BoundedFloatFunction<Object>>(paramcoordinate: I, paramvalueTransformer: (param0: number) => number): CubicSpline$Builder<I>;
+    static codec<I extends BoundedFloatFunction<Object>>(paramcoordinateCodec: Codec<I>): Codec<CubicSpline<I>>;
+    static constant<I extends unknown>(paramvalue: number): CubicSpline<I>;
+    static sample<C extends unknown, I extends BoundedFloatFunction<C>>(paramspline: CubicSpline<I>, paramcoordinate: C): number;
     constructor(value: number)
     // private value: number;
     equals(o: Object | null): boolean;
     hashCode(): number;
-    mapCoordinates(mapper: (param0: I) => Object | null): CubicSpline<I>;
+    mapCoordinates(mapper: (param0: I) => I): CubicSpline<I>;
     maxValue(): number;
     minValue(): number;
     parityString(): string;

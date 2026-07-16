@@ -2,7 +2,6 @@ import type { ServerboundPacket25w14craftmine } from '../../../../../../com/viav
 import type { Direction } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ServerboundPackets25w14craftmine extends Enum<ServerboundPackets25w14craftmine> implements ServerboundPacket25w14craftmine {
     static ACCEPT_TELEPORTATION: ServerboundPackets25w14craftmine;
@@ -72,7 +71,7 @@ export class ServerboundPackets25w14craftmine extends Enum<ServerboundPackets25w
     static TEST_INSTANCE_BLOCK_ACTION: ServerboundPackets25w14craftmine;
     static USE_ITEM: ServerboundPackets25w14craftmine;
     static USE_ITEM_ON: ServerboundPackets25w14craftmine;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundPackets25w14craftmine;
     static values(): ServerboundPackets25w14craftmine[];
     private constructor()

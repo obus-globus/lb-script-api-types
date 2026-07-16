@@ -23,7 +23,7 @@ export class EntityPermissionContext extends Object implements PermissionContext
     static POSITION: PermissionContext$Key<Vec3>;
     static SERVER: PermissionContext$Key<MinecraftServer>;
     static create(paramarg0: UUID, paramarg1: PermissionContext$Type, paramarg2: PermissionLevel): MutablePermissionContext;
-    static key(paramarg0: Identifier): PermissionContext$Key<Object>;
+    static key<T extends unknown>(paramarg0: Identifier): PermissionContext$Key<T>;
     static offlinePlayer(paramarg0: UUID, paramarg1: MinecraftServer): CompletableFuture<MutablePermissionContext>;
     static offlinePlayer(paramarg0: NameAndId, paramarg1: MinecraftServer): CompletableFuture<MutablePermissionContext>;
     constructor(arg0: Entity)

@@ -1,6 +1,5 @@
 import type { GpuFormat$ComponentType } from '../../../com/mojang/blaze3d/GpuFormat$ComponentType.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class GpuFormat extends Enum<GpuFormat> {
     static D16_UNORM: GpuFormat;
@@ -59,7 +58,7 @@ export class GpuFormat extends Enum<GpuFormat> {
     static RGBA8_UINT: GpuFormat;
     static RGBA8_UNORM: GpuFormat;
     static S8_UINT: GpuFormat;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): GpuFormat;
     static values(): GpuFormat[];
     private constructor(componentType: GpuFormat$ComponentType, componentCount: number)

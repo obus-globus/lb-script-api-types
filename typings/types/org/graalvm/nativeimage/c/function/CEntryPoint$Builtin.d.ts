@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class CEntryPoint$Builtin extends Enum<CEntryPoint$Builtin> {
     static ATTACH_THREAD: CEntryPoint$Builtin;
@@ -9,7 +8,7 @@ export class CEntryPoint$Builtin extends Enum<CEntryPoint$Builtin> {
     static GET_ISOLATE: CEntryPoint$Builtin;
     static NO_BUILTIN: CEntryPoint$Builtin;
     static TEAR_DOWN_ISOLATE: CEntryPoint$Builtin;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CEntryPoint$Builtin;
     static values(): CEntryPoint$Builtin[];
     private constructor()

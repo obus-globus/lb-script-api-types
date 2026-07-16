@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SortType extends Enum<SortType> {
     static DYNAMIC: SortType;
@@ -8,7 +7,7 @@ export class SortType extends Enum<SortType> {
     static NO_TRANSLUCENT: SortType;
     static STATIC_NORMAL_RELATIVE: SortType;
     static STATIC_TOPO: SortType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SortType;
     static values(): SortType[];
     private constructor(arg2: boolean, arg3: boolean)

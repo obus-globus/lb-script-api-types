@@ -13,7 +13,7 @@ import type { Type } from '../../../../java/lang/reflect/Type.d.ts'
 import type { TypeVariable } from '../../../../java/lang/reflect/TypeVariable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class TypeToken<T extends unknown> extends TypeCapture<T> implements Serializable {
-    static of(paramtype: Class<Object>): TypeToken<Object>;
+    static of<T extends unknown>(paramtype: Class<T>): TypeToken<T>;
     static of(paramtype: Type): TypeToken<Object>;
     constructor()
     constructor(declaringClass: Class<Object>)

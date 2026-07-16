@@ -1,6 +1,5 @@
 import type { UUID } from '../../../../../../java/util/UUID.d.ts'
 import type { UnaryOperator } from '../../../../../../java/util/function/UnaryOperator.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { HolderLookup$Provider } from '../../../../../../net/minecraft/core/HolderLookup$Provider.d.ts'
 import type { CompoundTag } from '../../../../../../net/minecraft/nbt/CompoundTag.d.ts'
@@ -59,5 +58,5 @@ export class SignBlockEntity extends BlockEntity {
     setText(text: SignText, isFrontText: boolean): boolean;
     setWaxed(isWaxed: boolean): boolean;
     updateSignText(player: Player, frontText: boolean, lines: FilteredText[]): void;
-    updateText(function_: (param0: SignText) => Object | null, isFrontText: boolean): boolean;
+    updateText(function_: (param0: SignText) => SignText, isFrontText: boolean): boolean;
 }

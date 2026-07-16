@@ -10,8 +10,8 @@ import type { OutputStreamManager } from '../../../../../../org/apache/logging/l
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 export class RandomAccessFileManager extends OutputStreamManager {
     static getFileManager(paramfileName: string, paramappend: boolean, paramimmediateFlush: boolean, parambufferSize: number, paramadvertiseURI: string, paramlayout: Layout<Serializable>, paramconfiguration: Configuration): RandomAccessFileManager;
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
-    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<OutputStreamManager, Object>): OutputStreamManager;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
+    static getManager<T extends unknown>(paramname: string, paramdata: T, paramfactory: ManagerFactory<OutputStreamManager, T>): OutputStreamManager;
     static hasManager(paramname: string): boolean;
     constructor(loggerContext: LoggerContext, file: RandomAccessFile, fileName: string, os: OutputStream, bufferSize: number, advertiseURI: string, layout: Layout<Serializable>, writeHeader: boolean)
     // private advertiseURI: string;

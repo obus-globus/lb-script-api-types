@@ -10,7 +10,7 @@ export class SslProvider extends Enum<SslProvider> {
     static isOptionSupported(paramarg0: SslProvider, paramarg1: SslContextOption<Object>): boolean;
     static isTlsv13Supported(paramarg0: SslProvider): boolean;
     static isTlsv13Supported(paramarg0: SslProvider, paramarg1: { [key: string]: any }): boolean;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SslProvider;
     static values(): SslProvider[];
     private constructor()

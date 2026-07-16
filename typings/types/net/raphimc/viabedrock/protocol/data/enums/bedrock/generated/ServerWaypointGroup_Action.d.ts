@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ServerWaypointGroup_Action extends Enum<ServerWaypointGroup_Action> {
     static Add: ServerWaypointGroup_Action;
@@ -10,7 +9,7 @@ export class ServerWaypointGroup_Action extends Enum<ServerWaypointGroup_Action>
     static getByName(paramarg0: string, paramarg1: ServerWaypointGroup_Action): ServerWaypointGroup_Action;
     static getByValue(paramarg0: number): ServerWaypointGroup_Action;
     static getByValue(paramarg0: number, paramarg1: ServerWaypointGroup_Action): ServerWaypointGroup_Action;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerWaypointGroup_Action;
     static values(): ServerWaypointGroup_Action[];
     private constructor(arg2: number)

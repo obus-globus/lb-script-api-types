@@ -25,7 +25,7 @@ import type { VoxelShape } from '../../../../../../../net/minecraft/world/phys/s
 export class SingleBlockBlockView extends Record implements BlockGetter, CollisionGetter {
     static forEachBlockIntersectedBetween(paramfrom: Vec3, paramto: Vec3, paramaabbAtTarget: AABB, paramvisitor: (param0: BlockPos, param1: number) => boolean): boolean;
     static of(paramarg0: BlockState, paramarg1: BlockPos): SingleBlockBlockView;
-    static traverseBlocks(paramfrom: Vec3, paramto: Vec3, paramcontext: Object | null, paramconsumer: (param0: Object | null, param1: BlockPos) => Object | null, parammissFactory: (param0: Object | null) => Object | null): Object | null;
+    static traverseBlocks<T extends unknown, C extends unknown>(paramfrom: Vec3, paramto: Vec3, paramcontext: C, paramconsumer: (param0: C, param1: BlockPos) => T, parammissFactory: (param0: C) => T): T;
     constructor(state: BlockState, blockPos: BlockPos)
     // private blockPos: BlockPos;
     // private state: BlockState;

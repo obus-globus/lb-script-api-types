@@ -5,6 +5,6 @@ import type { LivingEntity } from '../../../../../../../net/minecraft/world/enti
 import type { BehaviorControl } from '../../../../../../../net/minecraft/world/entity/ai/behavior/BehaviorControl.d.ts'
 import type { Warden } from '../../../../../../../net/minecraft/world/entity/monster/warden/Warden.d.ts'
 export class SetRoarTarget extends Object {
-    static create(paramtargetFinderFunction: (param0: Warden | null) => Optional<LivingEntity>): BehaviorControl<Warden>;
+    static create<E extends Warden>(paramtargetFinderFunction: (param0: E) => Optional<LivingEntity>): BehaviorControl<E>;
     constructor()
 }

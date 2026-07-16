@@ -1,6 +1,5 @@
 import type { PoseStack } from '../../../../com/mojang/blaze3d/vertex/PoseStack.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { ArmedEntityRenderState } from '../../../../net/minecraft/client/renderer/entity/state/ArmedEntityRenderState.d.ts'
 import type { HumanoidArm } from '../../../../net/minecraft/world/entity/HumanoidArm.d.ts'
@@ -17,7 +16,7 @@ export class HumanoidModel$ArmPose extends Enum<HumanoidModel$ArmPose> {
     static SPYGLASS: HumanoidModel$ArmPose;
     static THROW_TRIDENT: HumanoidModel$ArmPose;
     static TOOT_HORN: HumanoidModel$ArmPose;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): HumanoidModel$ArmPose;
     static values(): HumanoidModel$ArmPose[];
     private constructor(twoHanded: boolean, affectsOffhandPose: boolean)

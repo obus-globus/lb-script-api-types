@@ -14,7 +14,7 @@ export class OptionMenuConstructor extends Object {
     static constructAndApplyToScreen(paramarg0: OptionMenuContainer, paramarg1: ShaderPackScreen, paramarg2: ShaderPackOptionList, paramarg3: NavigationController): void;
     static createScreenData(paramarg0: OptionMenuElementScreen): ElementWidgetScreenData;
     static createWidget(paramarg0: OptionMenuElement): AbstractElementWidget<OptionMenuElement>;
-    static registerScreen(paramarg0: Class<OptionMenuElementScreen>, paramarg1: OptionMenuConstructor$ScreenDataProvider<OptionMenuElementScreen>): void;
-    static registerWidget(paramarg0: Class<OptionMenuElement>, paramarg1: OptionMenuConstructor$WidgetProvider<OptionMenuElement>): void;
+    static registerScreen<T extends OptionMenuElementScreen>(paramarg0: Class<T>, paramarg1: OptionMenuConstructor$ScreenDataProvider<T>): void;
+    static registerWidget<T extends OptionMenuElement>(paramarg0: Class<T>, paramarg1: OptionMenuConstructor$WidgetProvider<T>): void;
     private constructor()
 }

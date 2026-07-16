@@ -6,7 +6,7 @@ import type { Tag } from '../../../../../../net/minecraft/nbt/Tag.d.ts'
 import type { LevelHeightAccessor } from '../../../../../../net/minecraft/world/level/LevelHeightAccessor.d.ts'
 import type { SimpleRegionStorage } from '../../../../../../net/minecraft/world/level/chunk/storage/SimpleRegionStorage.d.ts'
 export class SectionStorage$PackedChunk<T extends unknown> extends Record {
-    static parse(paramcodec: Codec<Object>, paramops: DynamicOps<Tag>, paramtag: Tag, paramsimpleRegionStorage: SimpleRegionStorage, paramlevelHeightAccessor: LevelHeightAccessor): SectionStorage$PackedChunk<Object>;
+    static parse<T extends unknown>(paramcodec: Codec<T>, paramops: DynamicOps<Tag>, paramtag: Tag, paramsimpleRegionStorage: SimpleRegionStorage, paramlevelHeightAccessor: LevelHeightAccessor): SectionStorage$PackedChunk<T>;
     private constructor(sectionsByY: { [key: string]: any }, versionChanged: boolean)
     // private sectionsByY: { [key: string]: any };
     // private versionChanged: boolean;

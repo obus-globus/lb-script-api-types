@@ -6,6 +6,6 @@ export class PluginUtil extends Object {
     static collectPluginsByCategory(paramcategory: string): { [key: string]: PluginType<Object> };
     static collectPluginsByCategoryAndPackage(paramcategory: string, parampackages: string[]): { [key: string]: PluginType<Object> };
     static findPluginFactoryMethod(parampluginClass: Class<Object>): Method;
-    static instantiatePlugin(parampluginClass: Class<Object>): Object | null;
+    static instantiatePlugin<V extends unknown>(parampluginClass: Class<V>): V;
     private constructor()
 }

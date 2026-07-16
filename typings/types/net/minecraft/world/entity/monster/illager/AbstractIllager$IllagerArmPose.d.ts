@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class AbstractIllager$IllagerArmPose extends Enum<AbstractIllager$IllagerArmPose> {
     static ATTACKING: AbstractIllager$IllagerArmPose;
@@ -10,7 +9,7 @@ export class AbstractIllager$IllagerArmPose extends Enum<AbstractIllager$Illager
     static CROSSED: AbstractIllager$IllagerArmPose;
     static NEUTRAL: AbstractIllager$IllagerArmPose;
     static SPELLCASTING: AbstractIllager$IllagerArmPose;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AbstractIllager$IllagerArmPose;
     static values(): AbstractIllager$IllagerArmPose[];
     private constructor()

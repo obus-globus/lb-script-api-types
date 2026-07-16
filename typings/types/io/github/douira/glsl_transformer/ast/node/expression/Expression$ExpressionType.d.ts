@@ -1,7 +1,6 @@
 import type { Expression$ExpressionType$Associativity } from '../../../../../../../io/github/douira/glsl_transformer/ast/node/expression/Expression$ExpressionType$Associativity.d.ts'
 import type { Expression$ExpressionType$OperandStructure } from '../../../../../../../io/github/douira/glsl_transformer/ast/node/expression/Expression$ExpressionType$OperandStructure.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class Expression$ExpressionType extends Enum<Expression$ExpressionType> {
     static ADDITION: Expression$ExpressionType;
@@ -51,7 +50,7 @@ export class Expression$ExpressionType extends Enum<Expression$ExpressionType> {
     static SHIFT_RIGHT: Expression$ExpressionType;
     static SUBTRACTION: Expression$ExpressionType;
     static SUBTRACTION_ASSIGNMENT: Expression$ExpressionType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Expression$ExpressionType;
     static values(): Expression$ExpressionType[];
     private constructor(arg2: Expression$ExpressionType$OperandStructure)

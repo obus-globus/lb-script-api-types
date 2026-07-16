@@ -3,8 +3,8 @@ import type { PriorityQueues$EmptyPriorityQueue } from '../../../../../com/viave
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class PriorityQueues extends Object {
     static EMPTY_QUEUE: PriorityQueues$EmptyPriorityQueue;
-    static emptyQueue(): PriorityQueue<Object>;
-    static synchronize(paramarg0: PriorityQueue<Object>): PriorityQueue<Object>;
-    static synchronize(paramarg0: PriorityQueue<Object>, paramarg1: Object): PriorityQueue<Object>;
+    static emptyQueue<K extends unknown>(): PriorityQueue<K>;
+    static synchronize<K extends unknown>(paramarg0: PriorityQueue<K>): PriorityQueue<K>;
+    static synchronize<K extends unknown>(paramarg0: PriorityQueue<K>, paramarg1: Object): PriorityQueue<K>;
     private constructor()
 }

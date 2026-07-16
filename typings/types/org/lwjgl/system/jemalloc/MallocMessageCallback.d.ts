@@ -14,9 +14,9 @@ export abstract class MallocMessageCallback extends Callback implements MallocMe
     static create(paramarg0: (param0: number, param1: number) => void): MallocMessageCallback;
     static createSafe(paramarg0: number): MallocMessageCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
     static getMessage(paramarg0: number): string;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor()
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;

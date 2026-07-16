@@ -5,7 +5,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Traverser$InsertionOrder extends Enum<Traverser$InsertionOrder> {
     static BACK: Traverser$InsertionOrder;
     static FRONT: Traverser$InsertionOrder;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Traverser$InsertionOrder;
     static values(): Traverser$InsertionOrder[];
     constructor(arg2: Traverser<N>)

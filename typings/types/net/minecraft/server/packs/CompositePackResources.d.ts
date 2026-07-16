@@ -21,7 +21,7 @@ export class CompositePackResources extends Object implements PackResources {
     getResource(type: PackType, location: Identifier): () => InputStream;
     getRootResource(...path: string[]): () => InputStream;
     knownPackInfo(): Optional<KnownPack>;
-    listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
+    listResources(type: PackType, namespace: string, directory: string, output: (param0: Identifier, param1: () => InputStream) => void): void;
     location(): PackLocationInfo;
     packId(): string;
 }

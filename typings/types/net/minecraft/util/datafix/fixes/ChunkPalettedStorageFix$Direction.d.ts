@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { ChunkPalettedStorageFix$Direction$Axis } from '../../../../../net/minecraft/util/datafix/fixes/ChunkPalettedStorageFix$Direction$Axis.d.ts'
 import type { ChunkPalettedStorageFix$Direction$AxisDirection } from '../../../../../net/minecraft/util/datafix/fixes/ChunkPalettedStorageFix$Direction$AxisDirection.d.ts'
@@ -10,7 +9,7 @@ export class ChunkPalettedStorageFix$Direction extends Enum<ChunkPalettedStorage
     static SOUTH: ChunkPalettedStorageFix$Direction;
     static UP: ChunkPalettedStorageFix$Direction;
     static WEST: ChunkPalettedStorageFix$Direction;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ChunkPalettedStorageFix$Direction;
     static values(): ChunkPalettedStorageFix$Direction[];
     private constructor(axisDirection: ChunkPalettedStorageFix$Direction$AxisDirection, axis: ChunkPalettedStorageFix$Direction$Axis)

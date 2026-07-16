@@ -10,7 +10,7 @@ export class IteratorHelperPrototypeBuiltins$HelperIteratorPrototype extends Enu
     static next: IteratorHelperPrototypeBuiltins$HelperIteratorPrototype;
     static return_: IteratorHelperPrototypeBuiltins$HelperIteratorPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): IteratorHelperPrototypeBuiltins$HelperIteratorPrototype;
     static values(): IteratorHelperPrototypeBuiltins$HelperIteratorPrototype[];
     private constructor(length: number)

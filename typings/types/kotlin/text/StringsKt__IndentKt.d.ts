@@ -3,12 +3,12 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 import type { StringsKt__AppendableKt } from '../../kotlin/text/StringsKt__AppendableKt.d.ts'
 export class StringsKt__IndentKt extends StringsKt__AppendableKt {
-    static append(paramarg0: Appendable | null, ...paramarg1: CharSequence[]): Appendable | null;
-    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object) => CharSequence): void;
-    static appendRange(paramarg0: Appendable | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Appendable | null;
-    static prependIndent(paramarg0: string, paramarg1: string): string;
-    static replaceIndent(paramarg0: string, paramarg1: string): string;
-    static replaceIndentByMargin(paramarg0: string, paramarg1: string, paramarg2: string): string;
-    static trimIndent(paramarg0: string): string;
-    static trimMargin(paramarg0: string, paramarg1: string): string;
+    static append<T extends Appendable>(self: T, ...value: (CharSequence | null)[]): T;
+    static appendElement<T extends unknown>(self: Appendable, element: T, transform: ((param0: T) => CharSequence) | null): void;
+    static appendRange<T extends Appendable>(self: T, value: CharSequence, startIndex: number, endIndex: number): T;
+    static prependIndent(self: string, indent: string): string;
+    static replaceIndent(self: string, newIndent: string): string;
+    static replaceIndentByMargin(self: string, newIndent: string, marginPrefix: string): string;
+    static trimIndent(self: string): string;
+    static trimMargin(self: string, marginPrefix: string): string;
 }

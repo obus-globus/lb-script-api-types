@@ -41,10 +41,10 @@ export interface PrimitiveCodec<A extends unknown> extends Codec<A>, Object {
     // private optionalFieldOf(arg0: string, arg1: Lifecycle, arg2: A, arg3: Lifecycle, arg4: boolean): MapCodec<A>;
     orElse(arg0: A): Codec<A>;
     orElse(arg0: (param0: string) => void, arg1: A): Codec<A>;
-    orElse(arg0: (param0: string) => Object | null, arg1: A): Codec<A>;
+    orElse(arg0: (param0: string) => string, arg1: A): Codec<A>;
     orElseGet(arg0: (param0: string) => void, arg1: () => A): Codec<A>;
     orElseGet(arg0: () => A): Codec<A>;
-    orElseGet(arg0: (param0: string) => Object | null, arg1: () => A): Codec<A>;
+    orElseGet(arg0: (param0: string) => string, arg1: () => A): Codec<A>;
     partialDispatch<E extends unknown>(arg0: string, arg1: (param0: E) => DataResult<A>, arg2: (param0: A) => DataResult<MapCodec<E>>): Codec<E>;
     promotePartial(arg0: (param0: string) => void): Codec<A>;
     read<T extends unknown>(arg0: DynamicOps<T>, arg1: T): DataResult<A>;

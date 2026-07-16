@@ -13,9 +13,9 @@ import type { HolderLookup } from '../../../../net/minecraft/core/HolderLookup.d
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
 export class ResourceSelectorArgument<T extends unknown> extends Object implements ArgumentType<Holder$Reference<T>[]> {
     static ERROR_NO_MATCHES: Dynamic2CommandExceptionType;
-    static getSelectedResources(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Object>[];
-    static parse(paramreader: StringReader, paramregistry: HolderLookup<Object>): Holder$Reference<Object>[];
-    static resourceSelector(paramcontext: CommandBuildContext, paramregistry: ResourceKey<(Object | null)[]>): ResourceSelectorArgument<Object>;
+    static getSelectedResources<T extends unknown>(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<T>[];
+    static parse<T extends unknown>(paramreader: StringReader, paramregistry: HolderLookup<T>): Holder$Reference<T>[];
+    static resourceSelector<T extends unknown>(paramcontext: CommandBuildContext, paramregistry: ResourceKey<T[]>): ResourceSelectorArgument<T>;
     private constructor(context: CommandBuildContext, registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
     // private registryLookup: HolderLookup<T>;

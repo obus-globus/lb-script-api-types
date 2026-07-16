@@ -1,4 +1,6 @@
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Result } from '../../../../../../kotlin/Result.d.ts'
+import type { Throwable } from '../../../../../../java/lang/Throwable.d.ts'
 import type { Proxy } from '../../../../../../net/ccbluex/liquidbounce/features/misc/proxy/Proxy.d.ts'
 export class ProxyValidatorKt extends Object {
     /**
@@ -7,5 +9,5 @@ export class ProxyValidatorKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyValidator.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/features/misc/proxy/ProxyValidator.kt:83}
      */
-    static check(proxy: Proxy, success: (param0: Object) => void, failure: (param0: Object) => void): Object;
+    static check(self: Proxy, success: (param0: Proxy) => void, failure: (param0: Throwable) => void): Result<void>;
 }

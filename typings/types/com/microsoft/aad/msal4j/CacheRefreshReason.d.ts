@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class CacheRefreshReason extends Enum<CacheRefreshReason> {
     static CLAIMS: CacheRefreshReason;
@@ -8,7 +7,7 @@ export class CacheRefreshReason extends Enum<CacheRefreshReason> {
     static NOT_APPLICABLE: CacheRefreshReason;
     static NO_CACHED_ACCESS_TOKEN: CacheRefreshReason;
     static PROACTIVE_REFRESH: CacheRefreshReason;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CacheRefreshReason;
     static values(): CacheRefreshReason[];
     private constructor(arg2: number)

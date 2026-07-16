@@ -3,21 +3,21 @@ import type { DigraphFactory } from '../../../../de/odysseus/ithaka/digraph/Digr
 import type { DoubledDigraph } from '../../../../de/odysseus/ithaka/digraph/DoubledDigraph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Digraphs extends Object {
-    static closure(paramarg0: Digraph<Object>, paramarg1: Object | null): (Object | null)[];
-    static copy(paramarg0: Digraph<Object>, paramarg1: DigraphFactory<any>): Object | null;
-    static dfs(paramarg0: Digraph<Object>, paramarg1: Object | null, paramarg2: Object[], paramarg3: Object[]): void;
-    static dfs2(paramarg0: Digraph<Object>, paramarg1: Object | null, paramarg2: Object[], paramarg3: Object[]): void;
-    static emptyDigraph(): DoubledDigraph<Object>;
-    static isAcyclic(paramarg0: Digraph<Object>): boolean;
-    static isEquivalent(paramarg0: Digraph<Object>, paramarg1: Digraph<Object>, paramarg2: boolean): boolean;
-    static isReachable(paramarg0: Digraph<Object>, paramarg1: Object | null, paramarg2: Object | null): boolean;
-    static isStronglyConnected(paramarg0: Digraph<Object>): boolean;
-    static isTriviallyAcyclic(paramarg0: Digraph<Object>): boolean;
-    static reverse(paramarg0: Digraph<Object>, paramarg1: DigraphFactory<any>): Object | null;
-    static scc(paramarg0: Digraph<Object>): (Object | null)[][];
-    static subgraph(paramarg0: Digraph<Object>, paramarg1: (Object | null)[], paramarg2: DigraphFactory<any>): Object | null;
-    static toposort(paramarg0: Digraph<Object>, paramarg1: boolean): (Object | null)[];
-    static unmodifiableDigraph(paramarg0: Digraph<Object>): Digraph<Object>;
-    static wcc(paramarg0: Digraph<Object>): (Object | null)[][];
+    static closure<V extends unknown>(paramarg0: Digraph<V>, paramarg1: V): V[];
+    static copy<V extends unknown, G extends Digraph<V>>(paramarg0: Digraph<V>, paramarg1: DigraphFactory<G>): G;
+    static dfs<V extends unknown>(paramarg0: Digraph<V>, paramarg1: V, paramarg2: Object[], paramarg3: Object[]): void;
+    static dfs2<V extends unknown>(paramarg0: Digraph<V>, paramarg1: V, paramarg2: Object[], paramarg3: Object[]): void;
+    static emptyDigraph<V extends unknown>(): DoubledDigraph<V>;
+    static isAcyclic<V extends unknown>(paramarg0: Digraph<V>): boolean;
+    static isEquivalent<V extends unknown>(paramarg0: Digraph<V>, paramarg1: Digraph<V>, paramarg2: boolean): boolean;
+    static isReachable<V extends unknown>(paramarg0: Digraph<V>, paramarg1: V, paramarg2: V): boolean;
+    static isStronglyConnected<V extends unknown>(paramarg0: Digraph<V>): boolean;
+    static isTriviallyAcyclic<V extends unknown>(paramarg0: Digraph<V>): boolean;
+    static reverse<V extends unknown, G extends Digraph<V>>(paramarg0: Digraph<V>, paramarg1: DigraphFactory<G>): G;
+    static scc<V extends unknown>(paramarg0: Digraph<V>): V[][];
+    static subgraph<V extends unknown, G extends Digraph<V>>(paramarg0: Digraph<V>, paramarg1: V[], paramarg2: DigraphFactory<G>): G;
+    static toposort<V extends unknown>(paramarg0: Digraph<V>, paramarg1: boolean): V[];
+    static unmodifiableDigraph<V extends unknown>(paramarg0: Digraph<V>): Digraph<V>;
+    static wcc<V extends unknown>(paramarg0: Digraph<V>): V[][];
     constructor()
 }

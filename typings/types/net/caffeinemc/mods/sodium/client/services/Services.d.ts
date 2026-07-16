@@ -2,7 +2,7 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Supplier } from '../../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Services extends Object {
-    static load(paramarg0: Class<Object>): Object | null;
-    static loadOr(paramarg0: Class<Object>, paramarg1: () => Object | null): Object | null;
+    static load<T extends unknown>(paramarg0: Class<T>): T;
+    static loadOr<T extends unknown>(paramarg0: Class<T>, paramarg1: () => T): T;
     constructor()
 }

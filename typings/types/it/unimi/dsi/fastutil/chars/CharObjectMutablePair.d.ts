@@ -3,9 +3,9 @@ import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharObjectMutablePair<V extends unknown> extends Object implements CharObjectPair<V>, Serializable {
-    static lexComparator(): (param0: CharObjectPair<Object>, param1: CharObjectPair<Object>) => number;
-    static of(paramarg0: string, paramarg1: Object | null): CharObjectMutablePair<Object>;
-    static of(paramarg0: string, paramarg1: Object | null): CharObjectPair<Object>;
+    static lexComparator<V extends unknown>(): (param0: CharObjectPair<V>, param1: CharObjectPair<V>) => number;
+    static of<V extends unknown>(paramarg0: string, paramarg1: V): CharObjectMutablePair<V>;
+    static of<V extends unknown>(paramarg0: string, paramarg1: V): CharObjectPair<V>;
     constructor(arg0: string, arg1: V)
     // private left: string;
     // private right: V;

@@ -38,7 +38,7 @@ export class ScoreComponent extends TextComponent {
     readonly objective: string;
     readonly value: string;
     asSingleString(): string;
-    asSingleString(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;
+    asSingleString(arg0: ConsumerTracking, arg1: (param0: string) => void): void;
     canEqual(arg0: Object): boolean;
     equals(arg0: Object | null): boolean;
     getName(): string;

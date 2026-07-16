@@ -7,8 +7,8 @@ import type { Session } from '../../../../../net/ccbluex/liquidbounce/authlib/co
 import type { YggdrasilUserAuthentication } from '../../../../../net/ccbluex/liquidbounce/authlib/yggdrasil/YggdrasilUserAuthentication.d.ts'
 export class AlteningAccount extends MinecraftAccount {
     static Companion: AlteningAccount$Companion;
-    static fromJson(paramarg0: JsonObject): MinecraftAccount;
-    static fromName(paramarg0: string): MinecraftAccount;
+    static fromJson(json: JsonObject): MinecraftAccount;
+    static fromName(name: string): MinecraftAccount;
     constructor()
     constructor(accountToken: string)
     readonly accessToken: string;

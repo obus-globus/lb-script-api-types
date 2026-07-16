@@ -14,7 +14,7 @@ export class BeaconRenderer<T extends BlockEntity & BeaconBeamOwner> extends Obj
     static BEAM_LOCATION: Identifier;
     static MAX_RENDER_Y: number;
     static SOLID_BEAM_RADIUS: number;
-    static extract(paramblockEntity: BlockEntity | null, paramstate: BeaconRenderState, parampartialTicks: number, paramcameraPosition: Vec3): void;
+    static extract<T extends BlockEntity & BeaconBeamOwner>(paramblockEntity: T, paramstate: BeaconRenderState, parampartialTicks: number, paramcameraPosition: Vec3): void;
     static submitBeaconBeam(paramposeStack: PoseStack, paramsubmitNodeCollector: SubmitNodeCollector, parambeamLocation: Identifier, paramscale: number, paramanimationTime: number, parambeamStart: number, paramheight: number, paramcolor: number, paramsolidBeamRadius: number, parambeamGlowRadius: number): void;
     constructor()
     createRenderState(): BeaconRenderState;

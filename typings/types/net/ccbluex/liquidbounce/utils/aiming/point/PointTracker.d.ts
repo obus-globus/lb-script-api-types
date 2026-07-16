@@ -33,6 +33,5 @@ export class PointTracker extends ValueGroup implements EventListener {
      */
     findPoint(eyes: Vec3, entity: Entity, ticks: number): PointInsideBox;
     parent(): EventListener | null;
-    parent(): EventListener;
     unregister(): void;
 }

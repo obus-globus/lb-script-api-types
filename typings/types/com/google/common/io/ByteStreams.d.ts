@@ -21,7 +21,7 @@ export class ByteStreams extends Object {
     static newDataOutput(parambyteArrayOutputStream: ByteArrayOutputStream): ByteArrayDataOutput;
     static nullOutputStream(): OutputStream;
     static read(paramin: InputStream, paramb: number[], paramoff: number, paramlen: number): number;
-    static readBytes(paraminput: InputStream, paramprocessor: ByteProcessor<Object>): Object | null;
+    static readBytes<T extends unknown>(paraminput: InputStream, paramprocessor: ByteProcessor<T>): T;
     static readFully(paramin: InputStream, paramb: number[]): void;
     static readFully(paramin: InputStream, paramb: number[], paramoff: number, paramlen: number): void;
     static skipFully(paramin: InputStream, paramn: number): void;

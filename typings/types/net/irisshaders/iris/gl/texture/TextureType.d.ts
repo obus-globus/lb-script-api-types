@@ -1,7 +1,6 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { ByteBuffer } from '../../../../../java/nio/ByteBuffer.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class TextureType extends Enum<TextureType> {
     static TEXTURE_1D: TextureType;
@@ -9,7 +8,7 @@ export class TextureType extends Enum<TextureType> {
     static TEXTURE_3D: TextureType;
     static TEXTURE_RECTANGLE: TextureType;
     static fromString(paramarg0: string): Optional<TextureType>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TextureType;
     static values(): TextureType[];
     private constructor(arg2: number)

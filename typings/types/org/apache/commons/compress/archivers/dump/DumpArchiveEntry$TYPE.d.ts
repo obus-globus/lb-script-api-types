@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class DumpArchiveEntry$TYPE extends Enum<DumpArchiveEntry$TYPE> {
     static BLKDEV: DumpArchiveEntry$TYPE;
@@ -12,7 +11,7 @@ export class DumpArchiveEntry$TYPE extends Enum<DumpArchiveEntry$TYPE> {
     static UNKNOWN: DumpArchiveEntry$TYPE;
     static WHITEOUT: DumpArchiveEntry$TYPE;
     static find(paramarg0: number): DumpArchiveEntry$TYPE;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DumpArchiveEntry$TYPE;
     static values(): DumpArchiveEntry$TYPE[];
     private constructor(arg2: number)

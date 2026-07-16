@@ -8,8 +8,8 @@ import type { Codec } from '../../../../com/mojang/serialization/Codec.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Func<A extends unknown, B extends unknown> extends Type<(param0: A) => B> {
-    static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
-    static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
+    static opticView<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: Type<S>, paramarg1: RewriteResult<A, B>, paramarg2: TypedOptic<S, T, A, B>): RewriteResult<S, T>;
+    static unbox<A extends unknown>(paramarg0: App<Type$Mu, A>): Type<A>;
     constructor(arg0: Type<A>, arg1: Type<B>)
     // private first: Type<A>;
     // private second: Type<B>;

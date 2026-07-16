@@ -12,7 +12,7 @@ import type { ClientboundPlayerInfoUpdatePacket$Entry } from '../../../../../net
 import type { ServerPlayer } from '../../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 export class ClientboundPlayerInfoUpdatePacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundPlayerInfoUpdatePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static createPlayerInitializing(paramplayers: ServerPlayer[]): ClientboundPlayerInfoUpdatePacket;
     constructor(actions: ClientboundPlayerInfoUpdatePacket$Action[], players: ServerPlayer[])
     constructor(action: ClientboundPlayerInfoUpdatePacket$Action, player: ServerPlayer)

@@ -9,7 +9,7 @@ import type { ClientCommonPacketListener } from '../../../../../net/minecraft/ne
 export class ClientboundClearDialogPacket extends Object implements Packet<ClientCommonPacketListener> {
     static INSTANCE: ClientboundClearDialogPacket;
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundClearDialogPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     private constructor()
     handle(listener: ClientCommonPacketListener): void;
     isSkippable(): boolean;

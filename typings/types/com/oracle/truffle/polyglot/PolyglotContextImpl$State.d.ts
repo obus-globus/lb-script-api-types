@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PolyglotContextImpl$State extends Enum<PolyglotContextImpl$State> {
     static CANCELLING: PolyglotContextImpl$State;
@@ -18,7 +17,7 @@ export class PolyglotContextImpl$State extends Enum<PolyglotContextImpl$State> {
     static EXITING: PolyglotContextImpl$State;
     static INTERRUPTING: PolyglotContextImpl$State;
     static PENDING_EXIT: PolyglotContextImpl$State;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PolyglotContextImpl$State;
     static values(): PolyglotContextImpl$State[];
     private constructor()

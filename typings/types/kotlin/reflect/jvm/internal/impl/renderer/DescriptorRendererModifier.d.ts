@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { DescriptorRendererModifier$Companion } from '../../../../../../kotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererModifier$Companion.d.ts'
 export class DescriptorRendererModifier extends Enum<DescriptorRendererModifier> {
@@ -20,7 +19,7 @@ export class DescriptorRendererModifier extends Enum<DescriptorRendererModifier>
     static OVERRIDE: DescriptorRendererModifier;
     static VALUE: DescriptorRendererModifier;
     static VISIBILITY: DescriptorRendererModifier;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DescriptorRendererModifier;
     static values(): DescriptorRendererModifier[];
     private constructor(arg2: boolean)

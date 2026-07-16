@@ -19,7 +19,7 @@ export class AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype extends Enum<
     static take: AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
     static toArray: AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype;
     static values(): AsyncIteratorPrototypeBuiltins$AsyncIteratorPrototype[];
     private constructor(length: number)

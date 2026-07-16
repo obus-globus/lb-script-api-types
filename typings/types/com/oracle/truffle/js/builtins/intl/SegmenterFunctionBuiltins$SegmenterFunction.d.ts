@@ -9,7 +9,7 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class SegmenterFunctionBuiltins$SegmenterFunction extends Enum<SegmenterFunctionBuiltins$SegmenterFunction> implements BuiltinEnum<SegmenterFunctionBuiltins$SegmenterFunction> {
     static supportedLocalesOf: SegmenterFunctionBuiltins$SegmenterFunction;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SegmenterFunctionBuiltins$SegmenterFunction;
     static values(): SegmenterFunctionBuiltins$SegmenterFunction[];
     private constructor(length: number)

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class TextProcessingEventOrigin extends Enum<TextProcessingEventOrigin> {
     static AnvilText: TextProcessingEventOrigin;
@@ -23,7 +22,7 @@ export class TextProcessingEventOrigin extends Enum<TextProcessingEventOrigin> {
     static getByName(paramarg0: string, paramarg1: TextProcessingEventOrigin): TextProcessingEventOrigin;
     static getByValue(paramarg0: number): TextProcessingEventOrigin;
     static getByValue(paramarg0: number, paramarg1: TextProcessingEventOrigin): TextProcessingEventOrigin;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TextProcessingEventOrigin;
     static values(): TextProcessingEventOrigin[];
     private constructor(arg2: number)

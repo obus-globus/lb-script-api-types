@@ -7,8 +7,8 @@ import type { JSContext } from '../../../../../../com/oracle/truffle/js/runtime/
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReplaceStringParser<T extends unknown> extends Object {
     static parse(paramcontext: JSContext, paramreplaceStr: TruffleString, parammaxGroupNumber: number, paramparseNamedCaptureGroups: boolean): ReplaceStringParser$Token[];
-    static process(paramcontext: JSContext, paramreplaceStr: TruffleString, parammaxGroupNumber: number, paramparseNamedCaptureGroups: boolean, paramconsumer: ReplaceStringParser$Consumer<Object, Object>, paramnode: Object | null, paramprofileNode: Node, paramhasDollarBranch: InlinedBranchProfile): Object | null;
-    static processParsed(paramtokens: ReplaceStringParser$Token[], paramconsumer: ReplaceStringParser$Consumer<Object, Object>, paramnode: Object | null): Object | null;
+    static process<T extends unknown, R extends unknown>(paramcontext: JSContext, paramreplaceStr: TruffleString, parammaxGroupNumber: number, paramparseNamedCaptureGroups: boolean, paramconsumer: ReplaceStringParser$Consumer<T, R>, paramnode: T, paramprofileNode: Node, paramhasDollarBranch: InlinedBranchProfile): R;
+    static processParsed<T extends unknown, R extends unknown>(paramtokens: ReplaceStringParser$Token[], paramconsumer: ReplaceStringParser$Consumer<T, R>, paramnode: T): R;
     private constructor(replaceStr: TruffleString, maxGroupNumber: number, parseNamedCaptureGroups: boolean)
     // private index: number;
     // private maxGroupNumber: number;

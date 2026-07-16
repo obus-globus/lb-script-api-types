@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Logging$Severity extends Enum<Logging$Severity> {
     static ERROR: Logging$Severity;
@@ -7,7 +6,7 @@ export class Logging$Severity extends Enum<Logging$Severity> {
     static NONE: Logging$Severity;
     static VERBOSE: Logging$Severity;
     static WARNING: Logging$Severity;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Logging$Severity;
     static values(): Logging$Severity[];
     private constructor()

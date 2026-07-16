@@ -1,7 +1,6 @@
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { IntFunction } from '../../../../../../java/util/function/IntFunction.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { StreamCodec } from '../../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class Sniffer$State extends Enum<Sniffer$State> {
@@ -14,7 +13,7 @@ export class Sniffer$State extends Enum<Sniffer$State> {
     static SEARCHING: Sniffer$State;
     static SNIFFING: Sniffer$State;
     static STREAM_CODEC: StreamCodec<ByteBuf, Sniffer$State>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Sniffer$State;
     static values(): Sniffer$State[];
     private constructor(id: number)

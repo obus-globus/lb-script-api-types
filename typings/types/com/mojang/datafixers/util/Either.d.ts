@@ -5,10 +5,10 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Either<L extends unknown, R extends unknown> extends Object implements App<Either$Mu<R>, L> {
-    static left(paramarg0: Object | null): Either<Object, Object>;
-    static right(paramarg0: Object | null): Either<Object, Object>;
-    static unbox(paramarg0: App<Either$Mu<Object>, Object>): Either<Object, Object>;
-    static unwrap(paramarg0: Either<Object, Object>): Object | null;
+    static left<L extends unknown, R extends unknown>(paramarg0: L): Either<L, R>;
+    static right<L extends unknown, R extends unknown>(paramarg0: R): Either<L, R>;
+    static unbox<L extends unknown, R extends unknown>(paramarg0: App<Either$Mu<R>, L>): Either<L, R>;
+    static unwrap<U extends unknown>(paramarg0: Either<U, U>): U;
     private constructor()
     flatMap<L2 extends unknown>(arg0: (param0: L) => Either<L2, R>): Either<L2, R>;
     ifLeft(arg0: (param0: L) => void): Either<L, R>;

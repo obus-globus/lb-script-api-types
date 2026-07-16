@@ -4,5 +4,5 @@ import type { HotbarItemSlot } from '../../../../../../net/ccbluex/liquidbounce/
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class LiquidPlacementHelperKt extends Object {
-    static planPlacementAtPos(pos: BlockPos, slot: HotbarItemSlot, placementPlayerPos: Vec3): PlacementPlan;
+    static planPlacementAtPos(pos: BlockPos, slot: HotbarItemSlot, placementPlayerPos: Vec3): PlacementPlan | null;
 }

@@ -14,7 +14,7 @@ import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/
 import type { LevelLightEngine } from '../../../../../net/minecraft/world/level/lighting/LevelLightEngine.d.ts'
 export class ClientboundLevelChunkWithLightPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundLevelChunkWithLightPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(levelChunk: LevelChunk, lightEngine: LevelLightEngine, skyChangedLightSectionFilter: BitSet, blockChangedLightSectionFilter: BitSet)
     readonly chunkData: ClientboundLevelChunkPacketData;
     readonly lightData: ClientboundLightUpdatePacketData;

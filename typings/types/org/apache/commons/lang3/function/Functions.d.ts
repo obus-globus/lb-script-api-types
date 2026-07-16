@@ -1,10 +1,10 @@
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Functions extends Object {
-    static apply(paramarg0: (param0: Object | null) => Object | null, paramarg1: Object | null): Object | null;
-    static applyNonNull(paramarg0: Object | null, paramarg1: (param0: Object) => Object | null): Object | null;
-    static applyNonNull(paramarg0: Object | null, paramarg1: (param0: Object) => Object | null, paramarg2: (param0: Object) => Object | null): Object | null;
-    static applyNonNull(paramarg0: Object | null, paramarg1: (param0: Object) => Object | null, paramarg2: (param0: Object) => Object | null, paramarg3: (param0: Object) => Object | null): Object | null;
-    static function(paramarg0: (param0: Object | null) => Object | null): (param0: Object | null) => Object | null;
+    static apply<T extends unknown, R extends unknown>(paramarg0: (param0: T) => R, paramarg1: T): R;
+    static applyNonNull<T extends unknown, R extends unknown>(paramarg0: T, paramarg1: (param0: Object) => R): R;
+    static applyNonNull<T extends unknown, U extends unknown, R extends unknown>(paramarg0: T, paramarg1: (param0: Object) => U, paramarg2: (param0: Object) => R): R;
+    static applyNonNull<T extends unknown, U extends unknown, V extends unknown, R extends unknown>(paramarg0: T, paramarg1: (param0: Object) => U, paramarg2: (param0: Object) => V, paramarg3: (param0: Object) => R): R;
+    static function<T extends unknown, R extends unknown>(paramarg0: (param0: T) => R): (param0: T) => R;
     private constructor()
 }

@@ -9,10 +9,10 @@ export class DispatchedTaskKt extends Object {
     static MODE_CANCELLABLE_REUSABLE: number;
     static MODE_UNDISPATCHED: number;
     static MODE_UNINITIALIZED: number;
-    static dispatch(paramarg0: DispatchedTask<Object>, paramarg1: number): void;
+    static dispatch<T extends unknown>(self: DispatchedTask<T>, mode: number): void;
     static isCancellableMode(paramarg0: number): boolean;
     static isReusableMode(paramarg0: number): boolean;
-    static resume(paramarg0: DispatchedTask<Object>, paramarg1: Continuation<Object>, paramarg2: boolean): void;
-    static resumeWithStackTrace(paramarg0: Continuation<Object>, paramarg1: Throwable): void;
-    static runUnconfinedEventLoop(paramarg0: DispatchedTask<Object>, paramarg1: EventLoop, paramarg2: () => void): void;
+    static resume<T extends unknown>(self: DispatchedTask<T>, delegate: Continuation<T>, undispatched: boolean): void;
+    static resumeWithStackTrace(self: Continuation<Object>, exception: Throwable): void;
+    static runUnconfinedEventLoop(self: DispatchedTask<Object>, eventLoop: EventLoop, block: () => void): void;
 }

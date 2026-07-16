@@ -1,6 +1,5 @@
 import type { File } from '../../../../../../../java/io/File.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { Action } from '../../../../../../../org/apache/logging/log4j/core/appender/rolling/action/Action.d.ts'
 export class FileExtension extends Enum<FileExtension> {
@@ -13,7 +12,7 @@ export class FileExtension extends Enum<FileExtension> {
     static ZSTD: FileExtension;
     static lookup(paramfileExtension: string): FileExtension;
     static lookupForFile(paramfileName: string): FileExtension;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FileExtension;
     static values(): FileExtension[];
     constructor(arg2: string, arg3: FileExtension)

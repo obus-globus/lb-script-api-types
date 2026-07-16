@@ -13,18 +13,18 @@ export abstract class RequestBody extends Object {
     static create(paramarg0: number[]): RequestBody;
     static create(paramarg0: number[], paramarg1: MediaType): RequestBody;
     static create(paramarg0: number[], paramarg1: MediaType, paramarg2: number): RequestBody;
-    static create(paramarg0: number[], paramarg1: MediaType, paramarg2: number, paramarg3: number): RequestBody;
-    static create(paramarg0: File, paramarg1: MediaType): RequestBody;
-    static create(paramarg0: FileDescriptor, paramarg1: MediaType): RequestBody;
-    static create(paramarg0: string, paramarg1: MediaType): RequestBody;
+    static create(self: number[], contentType: MediaType | null, offset: number, byteCount: number): RequestBody;
+    static create(self: File, contentType: MediaType | null): RequestBody;
+    static create(self: FileDescriptor, contentType: MediaType | null): RequestBody;
+    static create(self: string, contentType: MediaType | null): RequestBody;
     static create(paramarg0: MediaType, paramarg1: number[]): RequestBody;
     static create(paramarg0: MediaType, paramarg1: number[], paramarg2: number): RequestBody;
-    static create(paramarg0: MediaType, paramarg1: number[], paramarg2: number, paramarg3: number): RequestBody;
-    static create(paramarg0: MediaType, paramarg1: File): RequestBody;
-    static create(paramarg0: MediaType, paramarg1: string): RequestBody;
-    static create(paramarg0: MediaType, paramarg1: ByteString): RequestBody;
-    static create(paramarg0: ByteString, paramarg1: MediaType): RequestBody;
-    static create(paramarg0: Path, paramarg1: FileSystem, paramarg2: MediaType): RequestBody;
+    static create(contentType: MediaType | null, content: number[], offset: number, byteCount: number): RequestBody;
+    static create(contentType: MediaType | null, file: File): RequestBody;
+    static create(contentType: MediaType | null, content: string): RequestBody;
+    static create(contentType: MediaType | null, content: ByteString): RequestBody;
+    static create(self: ByteString, contentType: MediaType | null): RequestBody;
+    static create(self: Path, fileSystem: FileSystem, contentType: MediaType | null): RequestBody;
     constructor()
     contentLength(): number;
     contentType(): MediaType | null;

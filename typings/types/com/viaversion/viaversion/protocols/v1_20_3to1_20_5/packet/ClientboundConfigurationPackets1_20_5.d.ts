@@ -2,7 +2,6 @@ import type { Direction } from '../../../../../../com/viaversion/viaversion/api/
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { ClientboundPacket1_20_5 } from '../../../../../../com/viaversion/viaversion/protocols/v1_20_3to1_20_5/packet/ClientboundPacket1_20_5.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ClientboundConfigurationPackets1_20_5 extends Enum<ClientboundConfigurationPackets1_20_5> implements ClientboundPacket1_20_5 {
     static COOKIE_REQUEST: ClientboundConfigurationPackets1_20_5;
@@ -20,7 +19,7 @@ export class ClientboundConfigurationPackets1_20_5 extends Enum<ClientboundConfi
     static TRANSFER: ClientboundConfigurationPackets1_20_5;
     static UPDATE_ENABLED_FEATURES: ClientboundConfigurationPackets1_20_5;
     static UPDATE_TAGS: ClientboundConfigurationPackets1_20_5;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ClientboundConfigurationPackets1_20_5;
     static values(): ClientboundConfigurationPackets1_20_5[];
     private constructor()

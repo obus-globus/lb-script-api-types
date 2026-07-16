@@ -43,7 +43,7 @@ export class NbtComponent extends TextComponent {
     readonly resolve: boolean;
     readonly separator: TextComponent;
     asSingleString(): string;
-    asSingleString(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;
+    asSingleString(arg0: ConsumerTracking, arg1: (param0: string) => void): void;
     canEqual(arg0: Object): boolean;
     equals(arg0: Object | null): boolean;
     getComponent(): string;

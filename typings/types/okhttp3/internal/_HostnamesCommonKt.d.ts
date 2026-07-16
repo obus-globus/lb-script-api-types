@@ -1,13 +1,13 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 export class _HostnamesCommonKt extends Object {
-    static canParseAsIpAddress(paramarg0: string): boolean;
-    static canonicalizeInetAddress(paramarg0: number[]): number[];
-    static containsInvalidHostnameAsciiCodes(paramarg0: string): boolean;
-    static containsInvalidLabelLengths(paramarg0: string): boolean;
-    static decodeIpv4Suffix(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: number[], paramarg4: number): boolean;
-    static decodeIpv6(paramarg0: string, paramarg1: number, paramarg2: number): number[];
-    static idnToAscii(paramarg0: string): string;
-    static inet4AddressToAscii(paramarg0: number[]): string;
-    static inet6AddressToAscii(paramarg0: number[]): string;
-    static toCanonicalHost(paramarg0: string): string;
+    static canParseAsIpAddress(self: string): boolean;
+    static canonicalizeInetAddress(address: number[]): number[];
+    static containsInvalidHostnameAsciiCodes(self: string): boolean;
+    static containsInvalidLabelLengths(self: string): boolean;
+    static decodeIpv4Suffix(input: string, pos: number, limit: number, address: number[], addressOffset: number): boolean;
+    static decodeIpv6(input: string, pos: number, limit: number): number[] | null;
+    static idnToAscii(host: string): string | null;
+    static inet4AddressToAscii(address: number[]): string;
+    static inet6AddressToAscii(address: number[]): string;
+    static toCanonicalHost(self: string): string | null;
 }

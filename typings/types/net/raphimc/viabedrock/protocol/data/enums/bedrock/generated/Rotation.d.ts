@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class Rotation extends Enum<Rotation> {
     static Clockwise180: Rotation;
@@ -13,7 +12,7 @@ export class Rotation extends Enum<Rotation> {
     static getByName(paramarg0: string, paramarg1: Rotation): Rotation;
     static getByValue(paramarg0: number): Rotation;
     static getByValue(paramarg0: number, paramarg1: Rotation): Rotation;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Rotation;
     static values(): Rotation[];
     private constructor(arg2: number)

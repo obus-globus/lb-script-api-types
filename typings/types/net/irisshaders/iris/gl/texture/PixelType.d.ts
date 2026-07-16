@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { GlVersion } from '../../../../../net/irisshaders/iris/gl/GlVersion.d.ts'
 export class PixelType extends Enum<PixelType> {
@@ -27,7 +26,7 @@ export class PixelType extends Enum<PixelType> {
     static UNSIGNED_SHORT_5_6_5: PixelType;
     static UNSIGNED_SHORT_5_6_5_REV: PixelType;
     static fromString(paramarg0: string): Optional<PixelType>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PixelType;
     static values(): PixelType[];
     private constructor(arg2: number, arg3: number, arg4: GlVersion)

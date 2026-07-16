@@ -7,7 +7,7 @@ export class CommandLine$TraceLevel extends Enum<CommandLine$TraceLevel> {
     static INFO: CommandLine$TraceLevel;
     static OFF: CommandLine$TraceLevel;
     static WARN: CommandLine$TraceLevel;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CommandLine$TraceLevel;
     static values(): CommandLine$TraceLevel[];
     private constructor()

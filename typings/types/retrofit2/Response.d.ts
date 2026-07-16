@@ -3,12 +3,12 @@ import type { Pair } from '../kotlin/Pair.d.ts'
 import type { Response as Response_2 } from '../okhttp3/Response.d.ts'
 import type { ResponseBody } from '../okhttp3/ResponseBody.d.ts'
 export class Response<T extends unknown> extends Object {
-    static error(paramarg0: number, paramarg1: ResponseBody): Response<Object>;
-    static error(paramarg0: ResponseBody, paramarg1: Response_2): Response<Object>;
-    static success(paramarg0: Object | null): Response<Object>;
-    static success(paramarg0: Object | null, paramarg1: Pair<string, string>[]): Response<Object>;
-    static success(paramarg0: Object | null, paramarg1: Response_2): Response<Object>;
-    static success(paramarg0: number, paramarg1: Object | null): Response<Object>;
+    static error<T extends unknown>(paramarg0: number, paramarg1: ResponseBody): Response<T>;
+    static error<T extends unknown>(paramarg0: ResponseBody, paramarg1: Response_2): Response<T>;
+    static success<T extends unknown>(paramarg0: T): Response<T>;
+    static success<T extends unknown>(paramarg0: T, paramarg1: Pair<string, string>[]): Response<T>;
+    static success<T extends unknown>(paramarg0: T, paramarg1: Response_2): Response<T>;
+    static success<T extends unknown>(paramarg0: number, paramarg1: T): Response<T>;
     private constructor(arg0: Response_2, arg1: T, arg2: ResponseBody)
     // private body: T;
     // private errorBody: ResponseBody;

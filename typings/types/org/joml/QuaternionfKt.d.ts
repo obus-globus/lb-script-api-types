@@ -6,19 +6,19 @@ import type { Vector3fc } from '../../org/joml/Vector3fc.d.ts'
 import type { Vector4f } from '../../org/joml/Vector4f.d.ts'
 import type { Vector4fc } from '../../org/joml/Vector4fc.d.ts'
 export class QuaternionfKt extends Object {
-    static difference(paramarg0: Quaternionfc, paramarg1: Quaternionfc): Quaternionf;
-    static div(paramarg0: Quaternionfc, paramarg1: number): Quaternionf;
-    static div(paramarg0: Quaternionfc, paramarg1: Quaternionfc): Quaternionf;
-    static divAssign(paramarg0: Quaternionf, paramarg1: number): void;
-    static divAssign(paramarg0: Quaternionf, paramarg1: Quaternionfc): void;
-    static minus(paramarg0: Quaternionfc, paramarg1: Quaternionfc): Quaternionf;
-    static minusAssign(paramarg0: Quaternionf, paramarg1: Quaternionfc): void;
-    static plus(paramarg0: Quaternionfc, paramarg1: Quaternionfc): Quaternionf;
-    static plusAssign(paramarg0: Quaternionf, paramarg1: Quaternionfc): void;
-    static times(paramarg0: Quaternionfc, paramarg1: number): Quaternionf;
-    static times(paramarg0: Quaternionfc, paramarg1: Quaternionfc): Quaternionf;
-    static times(paramarg0: Quaternionfc, paramarg1: Vector3fc): Vector3f;
-    static times(paramarg0: Quaternionfc, paramarg1: Vector4fc): Vector4f;
-    static timesAssign(paramarg0: Quaternionf, paramarg1: number): void;
-    static timesAssign(paramarg0: Quaternionf, paramarg1: Quaternionfc): void;
+    static difference(self: Quaternionfc, q: Quaternionfc): Quaternionf;
+    static div(self: Quaternionfc, s: number): Quaternionf;
+    static div(self: Quaternionfc, q: Quaternionfc): Quaternionf;
+    static divAssign(self: Quaternionf, s: number): void;
+    static divAssign(self: Quaternionf, q: Quaternionfc): void;
+    static minus(self: Quaternionfc, q: Quaternionfc): Quaternionf;
+    static minusAssign(self: Quaternionf, q: Quaternionfc): void;
+    static plus(self: Quaternionfc, q: Quaternionfc): Quaternionf;
+    static plusAssign(self: Quaternionf, q: Quaternionfc): void;
+    static times(self: Quaternionfc, s: number): Quaternionf;
+    static times(self: Quaternionfc, q: Quaternionfc): Quaternionf;
+    static times(self: Quaternionfc, v: Vector3fc): Vector3f;
+    static times(self: Quaternionfc, v: Vector4fc): Vector4f;
+    static timesAssign(self: Quaternionf, s: number): void;
+    static timesAssign(self: Quaternionf, q: Quaternionfc): void;
 }

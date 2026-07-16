@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ScriptModuleMinecraft_ScriptPrimitiveShapeType extends Enum<ScriptModuleMinecraft_ScriptPrimitiveShapeType> {
     static Arrow: ScriptModuleMinecraft_ScriptPrimitiveShapeType;
@@ -16,7 +15,7 @@ export class ScriptModuleMinecraft_ScriptPrimitiveShapeType extends Enum<ScriptM
     static getByName(paramarg0: string, paramarg1: ScriptModuleMinecraft_ScriptPrimitiveShapeType): ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static getByValue(paramarg0: number): ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static getByValue(paramarg0: number, paramarg1: ScriptModuleMinecraft_ScriptPrimitiveShapeType): ScriptModuleMinecraft_ScriptPrimitiveShapeType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ScriptModuleMinecraft_ScriptPrimitiveShapeType;
     static values(): ScriptModuleMinecraft_ScriptPrimitiveShapeType[];
     private constructor(arg2: number)

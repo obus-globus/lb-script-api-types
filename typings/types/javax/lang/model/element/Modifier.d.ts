@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Modifier extends Enum<Modifier> {
     static ABSTRACT: Modifier;
@@ -16,7 +15,7 @@ export class Modifier extends Enum<Modifier> {
     static SYNCHRONIZED: Modifier;
     static TRANSIENT: Modifier;
     static VOLATILE: Modifier;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Modifier;
     static values(): Modifier[];
     private constructor()

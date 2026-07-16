@@ -6,8 +6,8 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class AbstractCatchingFuture$CatchingFuture<V extends unknown, X extends Throwable> extends AbstractCatchingFuture<V, X, (param0: X) => V, V> {
-    static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
-    static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
+    static from<V extends unknown>(paramfuture: FluentFuture<V>): FluentFuture<V>;
+    static from<V extends unknown>(paramfuture: ListenableFuture<V>): FluentFuture<V>;
     constructor(input: ListenableFuture<V>, exceptionType: Class<X>, fallback: (param0: X) => V)
     doFallback(fallback: (param0: X) => V, cause: X): V;
     setResult(result: V): void;

@@ -1,6 +1,5 @@
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 import type { CharCategory$Companion } from '../../kotlin/text/CharCategory$Companion.d.ts'
 export class CharCategory extends Enum<CharCategory> implements Serializable {
@@ -36,8 +35,8 @@ export class CharCategory extends Enum<CharCategory> implements Serializable {
     static UNASSIGNED: CharCategory;
     static UPPERCASE_LETTER: CharCategory;
     static getEntries(): CharCategory[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): CharCategory;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): CharCategory;
     static values(): CharCategory[];
     private constructor(value: number, code: string)
     readonly code: string;

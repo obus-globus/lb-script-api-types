@@ -13,7 +13,7 @@ export class FunctionPrototypeBuiltins$FunctionPrototype extends Enum<FunctionPr
     static call: FunctionPrototypeBuiltins$FunctionPrototype;
     static toString: FunctionPrototypeBuiltins$FunctionPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FunctionPrototypeBuiltins$FunctionPrototype;
     static values(): FunctionPrototypeBuiltins$FunctionPrototype[];
     private constructor(length: number)

@@ -20,6 +20,6 @@ export class Streams$FailableStream<T extends unknown> extends Object {
     forEach(arg0: (param0: T) => void): void;
     makeTerminated(): void;
     map<R extends unknown>(arg0: (param0: T) => R): Streams$FailableStream<R>;
-    reduce(arg0: T, arg1: (param0: T, param1: Object | null) => Object | null): T;
+    reduce(arg0: T, arg1: (param0: T, param1: T) => T): T;
     stream(): Stream<T>;
 }

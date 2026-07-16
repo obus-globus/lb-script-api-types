@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Open$Type extends Enum<Open$Type> {
     static ARRAY: Open$Type;
@@ -11,7 +10,7 @@ export class Open$Type extends Enum<Open$Type> {
     static SPECIAL: Open$Type;
     static STATIC: Open$Type;
     static VIRTUAL: Open$Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Open$Type;
     static values(): Open$Type[];
     private constructor()

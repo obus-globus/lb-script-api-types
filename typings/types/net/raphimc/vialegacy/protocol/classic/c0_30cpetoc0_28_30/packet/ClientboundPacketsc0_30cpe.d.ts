@@ -5,7 +5,6 @@ import type { State } from '../../../../../../../com/viaversion/viaversion/api/p
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { PreNettyPacketType } from '../../../../../../../net/raphimc/vialegacy/api/splitter/PreNettyPacketType.d.ts'
 export class ClientboundPacketsc0_30cpe extends Enum<ClientboundPacketsc0_30cpe> implements ClientboundPacketType, PreNettyPacketType {
@@ -32,7 +31,7 @@ export class ClientboundPacketsc0_30cpe extends Enum<ClientboundPacketsc0_30cpe>
     static REMOVE_ENTITIES: ClientboundPacketsc0_30cpe;
     static TELEPORT_ENTITY: ClientboundPacketsc0_30cpe;
     static getPacket(paramarg0: number): ClientboundPacketsc0_30cpe;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ClientboundPacketsc0_30cpe;
     static values(): ClientboundPacketsc0_30cpe[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)

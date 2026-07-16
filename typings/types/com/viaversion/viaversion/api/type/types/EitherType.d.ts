@@ -4,8 +4,8 @@ import type { Either } from '../../../../../../com/viaversion/viaversion/util/Ei
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EitherType<T extends unknown, V extends unknown> extends Type<Either<T, V>> {
-    static read(paramarg0: ByteBuf, paramarg1: Type<Object>, paramarg2: Type<Object>): Either<Object, Object>;
-    static write(paramarg0: ByteBuf, paramarg1: Either<Object, Object>, paramarg2: Type<Object>, paramarg3: Type<Object>): void;
+    static read<X extends unknown, Y extends unknown>(paramarg0: ByteBuf, paramarg1: Type<X>, paramarg2: Type<Y>): Either<X, Y>;
+    static write<X extends unknown, Y extends unknown>(paramarg0: ByteBuf, paramarg1: Either<X, Y>, paramarg2: Type<X>, paramarg3: Type<Y>): void;
     constructor(arg0: Type<T>, arg1: Type<V>)
     // private leftType: Type<T>;
     // private rightType: Type<V>;

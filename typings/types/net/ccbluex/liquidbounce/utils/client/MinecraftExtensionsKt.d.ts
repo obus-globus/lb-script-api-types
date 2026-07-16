@@ -22,5 +22,5 @@ export class MinecraftExtensionsKt extends Object {
     static getScaledDimension(paramarg0: Window): number;
     static getWorld(): ClientLevel;
     static isSingleplayer(paramarg0: Minecraft): boolean;
-    static with(services: Services, sessionService: MinecraftSessionService, servicesKeySet: ServicesKeySet, profileRepository: GameProfileRepository, nameToIdCache: UserNameToIdResolver, profileResolver: ProfileResolver): Services;
+    static with(self: Services, sessionService: MinecraftSessionService, servicesKeySet: ServicesKeySet, profileRepository: GameProfileRepository, nameToIdCache: UserNameToIdResolver, profileResolver: ProfileResolver): Services;
 }

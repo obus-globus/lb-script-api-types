@@ -86,7 +86,7 @@ export class ConstructorBuiltins$Constructor extends Enum<ConstructorBuiltins$Co
     static Worker: ConstructorBuiltins$Constructor;
     static ZonedDateTime: ConstructorBuiltins$Constructor;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ConstructorBuiltins$Constructor;
     static values(): ConstructorBuiltins$Constructor[];
     private constructor(length: number)

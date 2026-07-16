@@ -10,7 +10,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 import type { Difficulty } from '../../../../../net/minecraft/world/Difficulty.d.ts'
 export class ServerboundChangeDifficultyPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundChangeDifficultyPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(difficulty: Difficulty)
     // private difficulty: Difficulty;
     difficulty(): Difficulty;

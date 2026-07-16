@@ -17,9 +17,9 @@ export class NativeImage$WriteCallback extends STBIWriteCallback {
     static create(paramarg0: (param0: number, param1: number, param2: number) => void): STBIWriteCallback;
     static createSafe(paramarg0: number): STBIWriteCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
     static getData(paramarg0: number, paramarg1: number): ByteBuffer;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     private constructor(output: WritableByteChannel)
     // private exception: IOException;
     // private output: WritableByteChannel;

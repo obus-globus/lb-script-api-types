@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class InteractionRequiredExceptionReason extends Enum<InteractionRequiredExceptionReason> {
     static ADDITIONAL_ACTION: InteractionRequiredExceptionReason;
@@ -8,7 +7,7 @@ export class InteractionRequiredExceptionReason extends Enum<InteractionRequired
     static MESSAGE_ONLY: InteractionRequiredExceptionReason;
     static NONE: InteractionRequiredExceptionReason;
     static USER_PASSWORD_EXPIRED: InteractionRequiredExceptionReason;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): InteractionRequiredExceptionReason;
     static values(): InteractionRequiredExceptionReason[];
     private constructor(arg2: string)

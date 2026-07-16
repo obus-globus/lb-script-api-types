@@ -9,8 +9,8 @@ import type { JSToInt32Node } from '../../../../../../com/oracle/truffle/js/node
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSLeftShiftConstantNodeGen extends JSLeftShiftConstantNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramleft: JavaScriptNode, paramright: JavaScriptNode): JavaScriptNode;
     static create(paramoperand: JavaScriptNode, paramshiftValue: number): JSLeftShiftConstantNode;
     static findBlockScopeNode(paramnode: Node): Node;

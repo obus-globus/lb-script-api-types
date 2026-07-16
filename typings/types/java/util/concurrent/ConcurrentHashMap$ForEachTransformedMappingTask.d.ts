@@ -8,18 +8,18 @@ import type { BiFunction } from '../../../java/util/function/BiFunction.d.ts'
 import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class ConcurrentHashMap$ForEachTransformedMappingTask<K extends unknown, V extends unknown, U extends unknown> extends ConcurrentHashMap$BulkTask<K, V, void> {
-    static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
-    static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
+    static adapt<T extends unknown>(paramarg0: () => void, paramarg1: T): ForkJoinTask<T>;
+    static adapt<T extends unknown>(paramarg0: () => T): ForkJoinTask<T>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;
-    static adaptInterruptible(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
-    static adaptInterruptible(paramarg0: () => Object | null): ForkJoinTask<Object>;
+    static adaptInterruptible<T extends unknown>(paramarg0: () => void, paramarg1: T): ForkJoinTask<T>;
+    static adaptInterruptible<T extends unknown>(paramarg0: () => T): ForkJoinTask<T>;
     static adaptInterruptible(paramarg0: () => void): ForkJoinTask<Object>;
     static getPool(): ForkJoinPool;
     static getQueuedTaskCount(): number;
     static getSurplusQueuedTaskCount(): number;
     static helpQuiesce(): void;
     static inForkJoinPool(): boolean;
-    static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
+    static invokeAll<T extends ForkJoinTask<Object>>(paramarg0: T[]): T[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
     constructor(arg0: ConcurrentHashMap$BulkTask<K, V, Object>, arg1: number, arg2: number, arg3: number, arg4: ConcurrentHashMap$Node<K, V>[], arg5: (param0: K, param1: V) => U, arg6: (param0: U) => void)

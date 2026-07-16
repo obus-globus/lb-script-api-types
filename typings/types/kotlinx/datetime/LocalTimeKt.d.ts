@@ -8,15 +8,15 @@ import type { LocalTime$Companion } from '../../kotlinx/datetime/LocalTime$Compa
 import type { Month as Month_2 } from '../../kotlinx/datetime/Month.d.ts'
 import type { DateTimeFormat } from '../../kotlinx/datetime/format/DateTimeFormat.d.ts'
 export class LocalTimeKt extends Object {
-    static atDate(paramarg0: LocalTime, paramarg1: number, paramarg2: number, paramarg3: number): LocalDateTime;
-    static atDate(paramarg0: LocalTime, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: void): LocalDateTime;
-    static atDate(paramarg0: LocalTime, paramarg1: number, paramarg2: Month, paramarg3: number): LocalDateTime;
-    static atDate(paramarg0: LocalTime, paramarg1: number, paramarg2: Month, paramarg3: number, paramarg4: void): LocalDateTime;
-    static atDate(paramarg0: LocalTime, paramarg1: number, paramarg2: Month_2, paramarg3: number): LocalDateTime;
-    static atDate(paramarg0: LocalTime, paramarg1: number, paramarg2: Month_2, paramarg3: number, paramarg4: void): LocalDateTime;
-    static atDate(paramarg0: LocalTime, paramarg1: LocalDate): LocalDateTime;
-    static format(paramarg0: LocalTime, paramarg1: DateTimeFormat<LocalTime>): string;
+    static atDate(self: LocalTime, year: number, month: number, day: number): LocalDateTime;
+    static atDate(self: LocalTime, year: number, monthNumber: number, dayOfMonth: number, fakeArgument: void): LocalDateTime;
+    static atDate(self: LocalTime, year: number, month: Month, dayOfMonth: number): LocalDateTime;
+    static atDate(self: LocalTime, year: number, month: Month, dayOfMonth: number, fakeArgument: void): LocalDateTime;
+    static atDate(self: LocalTime, year: number, month: Month_2, day: number): LocalDateTime;
+    static atDate(self: LocalTime, year: number, month: Month_2, dayOfMonth: number, fakeArgument: void): LocalDateTime;
+    static atDate(self: LocalTime, date: LocalDate): LocalDateTime;
+    static format(self: LocalTime, format: DateTimeFormat<LocalTime>): string;
     static getIsoTimeFormat(): DateTimeFormat<LocalTime>;
-    static parseOrNull(paramarg0: LocalTime$Companion, paramarg1: CharSequence, paramarg2: DateTimeFormat<LocalTime>): LocalTime;
-    static toLocalTime(paramarg0: string): LocalTime;
+    static parseOrNull(self: LocalTime$Companion, input: CharSequence, format: DateTimeFormat<LocalTime>): LocalTime | null;
+    static toLocalTime(self: string): LocalTime;
 }

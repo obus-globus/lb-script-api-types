@@ -17,7 +17,7 @@ export class CountingPathVisitor extends SimplePathVisitor {
     constructor(arg0: Counters$PathCounters, arg1: (param0: Path, param1: BasicFileAttributes) => FileVisitResult, arg2: (param0: Path, param1: BasicFileAttributes) => FileVisitResult, arg3: (param0: Path, param1: IOException) => FileVisitResult)
     constructor(arg0: CountingPathVisitor$AbstractBuilder<Object, any>)
     // private directoryFilter: (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
-    // private directoryPostTransformer: (param0: Path) => Object | null;
+    // private directoryPostTransformer: (param0: Path) => Path;
     // private fileFilter: (param0: Path, param1: BasicFileAttributes) => FileVisitResult;
     readonly pathCounters: Counters$PathCounters;
     accept(arg0: Path, arg1: BasicFileAttributes): boolean;

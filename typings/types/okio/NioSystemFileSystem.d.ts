@@ -9,7 +9,7 @@ export class NioSystemFileSystem extends JvmSystemFileSystem {
     static RESOURCES: FileSystem_2;
     static SYSTEM: FileSystem_2;
     static SYSTEM_TEMPORARY_DIRECTORY: Path;
-    static get(paramarg0: FileSystem): FileSystem_2;
+    static get(self: FileSystem): FileSystem_2;
     constructor()
     atomicMove(source: Path, target: Path): void;
     createSymlink(source: Path, target: Path): void;

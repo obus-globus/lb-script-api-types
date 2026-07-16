@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class ShlObj$KNOWN_FOLDER_FLAG extends Enum<ShlObj$KNOWN_FOLDER_FLAG> {
     static ALIAS_ONLY: ShlObj$KNOWN_FOLDER_FLAG;
@@ -13,7 +12,7 @@ export class ShlObj$KNOWN_FOLDER_FLAG extends Enum<ShlObj$KNOWN_FOLDER_FLAG> {
     static NO_ALIAS: ShlObj$KNOWN_FOLDER_FLAG;
     static NO_APPCONTAINER_REDIRECTION: ShlObj$KNOWN_FOLDER_FLAG;
     static SIMPLE_IDLIST: ShlObj$KNOWN_FOLDER_FLAG;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ShlObj$KNOWN_FOLDER_FLAG;
     static values(): ShlObj$KNOWN_FOLDER_FLAG[];
     private constructor(arg2: number)

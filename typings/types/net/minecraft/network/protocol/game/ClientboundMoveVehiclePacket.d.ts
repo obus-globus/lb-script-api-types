@@ -12,7 +12,7 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientboundMoveVehiclePacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundMoveVehiclePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static fromEntity(paramentity: Entity): ClientboundMoveVehiclePacket;
     constructor(position: Vec3, yRot: number, xRot: number)
     // private position: Vec3;

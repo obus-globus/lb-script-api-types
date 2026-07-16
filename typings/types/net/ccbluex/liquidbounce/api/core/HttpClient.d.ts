@@ -28,7 +28,7 @@ export class HttpClient extends Object {
      */
     static getClient(): OkHttpClient;
     static getMojangApiClient(): MojangApiClient;
-    static sendAsync(call: Call): CompletableFuture<Response>;
+    static sendAsync(self: Call): CompletableFuture<Response>;
     DEFAULT_AGENT: string;
     EMPTY_HEADERS: Pair<string, string>[];
     // private client: OkHttpClient;

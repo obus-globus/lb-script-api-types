@@ -14,9 +14,9 @@ import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d
 import type { Resource } from '../../../net/minecraft/server/packs/resources/Resource.d.ts'
 import type { ResourceProvider } from '../../../net/minecraft/server/packs/resources/ResourceProvider.d.ts'
 export class RegistryLoadTask$PendingRegistration<T extends unknown> extends Record {
-    static findAndLoadFromResource(paramelementDecoder: Decoder<Object>, paramops: RegistryOps<JsonElement>, paramelementKey: ResourceKey<Object>, paramconverter: FileToIdConverter, paramresourceProvider: (param0: Identifier) => Optional<Resource>): Either<Object, Exception>;
-    static loadFromNetwork(paramelementDecoder: Decoder<Object>, paramops: RegistryOps<Tag>, paramelementKey: ResourceKey<Object>, paramcontents: Tag): Either<Object, Exception>;
-    static loadFromResource(paramelementDecoder: Decoder<Object>, paramops: RegistryOps<JsonElement>, paramelementKey: ResourceKey<Object>, paramthunk: Resource): Either<Object, Exception>;
+    static findAndLoadFromResource<T extends unknown>(paramelementDecoder: Decoder<T>, paramops: RegistryOps<JsonElement>, paramelementKey: ResourceKey<T>, paramconverter: FileToIdConverter, paramresourceProvider: (param0: Identifier) => Optional<Resource>): Either<T, Exception>;
+    static loadFromNetwork<T extends unknown>(paramelementDecoder: Decoder<T>, paramops: RegistryOps<Tag>, paramelementKey: ResourceKey<T>, paramcontents: Tag): Either<T, Exception>;
+    static loadFromResource<T extends unknown>(paramelementDecoder: Decoder<T>, paramops: RegistryOps<JsonElement>, paramelementKey: ResourceKey<T>, paramthunk: Resource): Either<T, Exception>;
     constructor(key: ResourceKey<T>, value: Either<T, Exception>, registrationInfo: RegistrationInfo)
     // private key: ResourceKey<T>;
     // private registrationInfo: RegistrationInfo;

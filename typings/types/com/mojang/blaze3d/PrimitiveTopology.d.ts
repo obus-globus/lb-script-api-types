@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class PrimitiveTopology extends Enum<PrimitiveTopology> {
     static DEBUG_LINES: PrimitiveTopology;
@@ -10,7 +9,7 @@ export class PrimitiveTopology extends Enum<PrimitiveTopology> {
     static TRIANGLES: PrimitiveTopology;
     static TRIANGLE_FAN: PrimitiveTopology;
     static TRIANGLE_STRIP: PrimitiveTopology;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PrimitiveTopology;
     static values(): PrimitiveTopology[];
     private constructor(primitiveLength: number, primitiveStride: number, connectedPrimitives: boolean)

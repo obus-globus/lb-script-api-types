@@ -16,7 +16,7 @@ import type { FileSystem } from '../okio/FileSystem.d.ts'
 import type { Path } from '../okio/Path.d.ts'
 export class Cache extends Object implements Closeable, Flushable {
     static Companion: Cache$Companion;
-    static key(paramarg0: HttpUrl): string;
+    static key(url: HttpUrl): string;
     constructor(directory: File, maxSize: number)
     constructor(fileSystem: FileSystem, directory: Path, maxSize: number)
     constructor(directory: Path, maxSize: number, fileSystem: FileSystem, taskRunner: TaskRunner)

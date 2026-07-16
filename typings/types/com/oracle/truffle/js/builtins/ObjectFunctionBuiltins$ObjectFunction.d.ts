@@ -31,7 +31,7 @@ export class ObjectFunctionBuiltins$ObjectFunction extends Enum<ObjectFunctionBu
     static setPrototypeOf: ObjectFunctionBuiltins$ObjectFunction;
     static values: ObjectFunctionBuiltins$ObjectFunction;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ObjectFunctionBuiltins$ObjectFunction;
     static values(): ObjectFunctionBuiltins$ObjectFunction[];
     private constructor(length: number)

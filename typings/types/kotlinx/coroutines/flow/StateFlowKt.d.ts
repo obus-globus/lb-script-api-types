@@ -5,9 +5,9 @@ import type { Flow } from '../../../kotlinx/coroutines/flow/Flow.d.ts'
 import type { MutableStateFlow } from '../../../kotlinx/coroutines/flow/MutableStateFlow.d.ts'
 import type { StateFlow } from '../../../kotlinx/coroutines/flow/StateFlow.d.ts'
 export class StateFlowKt extends Object {
-    static MutableStateFlow(paramarg0: Object | null): MutableStateFlow<Object>;
-    static fuseStateFlow(paramarg0: StateFlow<Object>, paramarg1: CoroutineContext, paramarg2: number, paramarg3: BufferOverflow): Flow<Object>;
-    static getAndUpdate(paramarg0: MutableStateFlow<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
-    static update(paramarg0: MutableStateFlow<Object>, paramarg1: (param0: Object) => Object | null): void;
-    static updateAndGet(paramarg0: MutableStateFlow<Object>, paramarg1: (param0: Object) => Object | null): Object | null;
+    static MutableStateFlow<T extends unknown>(value: T): MutableStateFlow<T>;
+    static fuseStateFlow<T extends unknown>(self: StateFlow<T>, context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): Flow<T>;
+    static getAndUpdate<T extends unknown>(self: MutableStateFlow<T>, function_: (param0: T) => T): T;
+    static update<T extends unknown>(self: MutableStateFlow<T>, function_: (param0: T) => T): void;
+    static updateAndGet<T extends unknown>(self: MutableStateFlow<T>, function_: (param0: T) => T): T;
 }

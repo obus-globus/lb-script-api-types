@@ -2,5 +2,5 @@ import type { Consumer } from '../../../../../../java/util/function/Consumer.d.t
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export interface TextComponent$ComponentConsumer extends Consumer<string>, Object {
     andThen(arg0: (param0: string) => void): (param0: string) => void;
-    withConsumer(arg0: (param0: Object | null) => void): (param0: Object | null) => void;
+    withConsumer(arg0: (param0: string) => void): (param0: string) => void;
 }

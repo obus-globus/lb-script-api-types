@@ -18,8 +18,8 @@ export class MicrosoftAccount extends MinecraftAccount {
     static XBOX_XBL_URL: string;
     static XBOX_XSTS_DATA: string;
     static XBOX_XSTS_URL: string;
-    static fromJson(paramarg0: JsonObject): MinecraftAccount;
-    static fromName(paramarg0: string): MinecraftAccount;
+    static fromJson(json: JsonObject): MinecraftAccount;
+    static fromName(name: string): MinecraftAccount;
     constructor()
     // private accessToken: string;
     // private authMethod: MicrosoftAccount$AuthMethod;

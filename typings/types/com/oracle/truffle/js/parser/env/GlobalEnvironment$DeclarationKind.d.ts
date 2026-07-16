@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class GlobalEnvironment$DeclarationKind extends Enum<GlobalEnvironment$DeclarationKind> {
     static Const: GlobalEnvironment$DeclarationKind;
@@ -7,7 +6,7 @@ export class GlobalEnvironment$DeclarationKind extends Enum<GlobalEnvironment$De
     static Let: GlobalEnvironment$DeclarationKind;
     static LetDeclared: GlobalEnvironment$DeclarationKind;
     static Var: GlobalEnvironment$DeclarationKind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): GlobalEnvironment$DeclarationKind;
     static values(): GlobalEnvironment$DeclarationKind[];
     private constructor(isLexical: boolean, isConst: boolean, isDeclared: boolean)

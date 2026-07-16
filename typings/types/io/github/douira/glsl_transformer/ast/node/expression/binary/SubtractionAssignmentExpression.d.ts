@@ -8,8 +8,8 @@ import type { ASTVisitor } from '../../../../../../../../io/github/douira/glsl_t
 import type { Stream } from '../../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class SubtractionAssignmentExpression extends BinaryExpression {
-    static clone(paramarg0: ASTNode | null): ASTNode | null;
-    static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
+    static clone<N extends ASTNode>(paramarg0: N): N;
+    static clone<N extends ASTNode>(paramarg0: N[]): Stream<N>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: Expression, arg1: Expression)
     clone(): SubtractionAssignmentExpression;

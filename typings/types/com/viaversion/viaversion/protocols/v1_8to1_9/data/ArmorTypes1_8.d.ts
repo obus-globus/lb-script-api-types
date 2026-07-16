@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ArmorTypes1_8 extends Enum<ArmorTypes1_8> {
     static CHAINMAIL_BOOTS: ArmorTypes1_8;
@@ -27,7 +26,7 @@ export class ArmorTypes1_8 extends Enum<ArmorTypes1_8> {
     static findByType(paramarg0: string): ArmorTypes1_8;
     static isArmor(paramarg0: number): boolean;
     static isArmor(paramarg0: string): boolean;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ArmorTypes1_8;
     static values(): ArmorTypes1_8[];
     private constructor(arg2: number, arg3: number, arg4: string)

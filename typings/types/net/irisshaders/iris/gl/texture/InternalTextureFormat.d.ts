@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { GlVersion } from '../../../../../net/irisshaders/iris/gl/GlVersion.d.ts'
 import type { PixelFormat } from '../../../../../net/irisshaders/iris/gl/texture/PixelFormat.d.ts'
@@ -65,7 +64,7 @@ export class InternalTextureFormat extends Enum<InternalTextureFormat> {
     static RGBA8UI: InternalTextureFormat;
     static RGBA8_SNORM: InternalTextureFormat;
     static fromString(paramarg0: string): Optional<InternalTextureFormat>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): InternalTextureFormat;
     static values(): InternalTextureFormat[];
     private constructor(arg2: number, arg3: GlVersion, arg4: PixelFormat, arg5: ShaderDataType)

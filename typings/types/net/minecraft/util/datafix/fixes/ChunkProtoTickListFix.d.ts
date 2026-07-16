@@ -11,7 +11,7 @@ import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ChunkProtoTickListFix$PoorMansPalettedContainer } from '../../../../../net/minecraft/util/datafix/fixes/ChunkProtoTickListFix$PoorMansPalettedContainer.d.ts'
 export class ChunkProtoTickListFix extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     constructor(outputSchema: Schema)
     // private createTick(tag: Dynamic<Object>, container: () => ChunkProtoTickListFix$PoorMansPalettedContainer, sectionX: number, sectionY: number, sectionZ: number, pos: number, typeGetter: (param0: Dynamic<Object>) => string): Dynamic<Object>;
     makeRule(): TypeRewriteRule;

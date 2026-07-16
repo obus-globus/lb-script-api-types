@@ -6,13 +6,13 @@ import type { ToStringBuilder } from '../../../../../org/apache/commons/lang3/bu
 import type { ToStringStyle } from '../../../../../org/apache/commons/lang3/builder/ToStringStyle.d.ts'
 export class ReflectionToStringBuilder extends ToStringBuilder {
     static getDefaultStyle(): ToStringStyle;
-    static reflectionToString(paramarg0: Object | null, paramarg1: ToStringStyle, paramarg2: boolean, paramarg3: Class<Object>): string;
+    static reflectionToString<T extends unknown>(paramarg0: T, paramarg1: ToStringStyle, paramarg2: boolean, paramarg3: Class<Object>): string;
     static reflectionToString(paramarg0: Object): string;
     static reflectionToString(paramarg0: Object, paramarg1: ToStringStyle): string;
     static reflectionToString(paramarg0: Object, paramarg1: ToStringStyle, paramarg2: boolean): string;
     static setDefaultStyle(paramarg0: ToStringStyle): void;
-    static toString(paramarg0: Object | null, paramarg1: ToStringStyle, paramarg2: boolean, paramarg3: boolean, paramarg4: boolean, paramarg5: Class<Object>): string;
-    static toString(paramarg0: Object | null, paramarg1: ToStringStyle, paramarg2: boolean, paramarg3: boolean, paramarg4: Class<Object>): string;
+    static toString<T extends unknown>(paramarg0: T, paramarg1: ToStringStyle, paramarg2: boolean, paramarg3: boolean, paramarg4: boolean, paramarg5: Class<Object>): string;
+    static toString<T extends unknown>(paramarg0: T, paramarg1: ToStringStyle, paramarg2: boolean, paramarg3: boolean, paramarg4: Class<Object>): string;
     static toString(paramarg0: Object): string;
     static toString(paramarg0: Object, paramarg1: ToStringStyle): string;
     static toString(paramarg0: Object, paramarg1: ToStringStyle, paramarg2: boolean): string;

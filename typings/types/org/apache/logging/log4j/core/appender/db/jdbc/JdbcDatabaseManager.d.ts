@@ -18,7 +18,7 @@ import type { JdbcDatabaseManager$ResultSetColumnMetaData } from '../../../../..
 import type { MapMessage } from '../../../../../../../../org/apache/logging/log4j/message/MapMessage.d.ts'
 export class JdbcDatabaseManager extends AbstractDatabaseManager {
     static getJDBCDatabaseManager(paramname: string, parambufferSize: number, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[]): JdbcDatabaseManager;
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
     static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[], paramcolumnMappings: ColumnMapping[]): JdbcDatabaseManager;
     static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[], paramcolumnMappings: ColumnMapping[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number): JdbcDatabaseManager;
     static getManager(paramname: string, parambufferSize: number, paramlayout: Layout<Serializable>, paramconnectionSource: ConnectionSource, paramtableName: string, paramcolumnConfigs: ColumnConfig[], paramcolumnMappings: ColumnMapping[], paramimmediateFail: boolean, paramreconnectIntervalMillis: number, paramtruncateStrings: boolean): JdbcDatabaseManager;

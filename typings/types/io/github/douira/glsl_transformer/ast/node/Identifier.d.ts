@@ -5,8 +5,8 @@ import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Token } from '../../../../../../org/antlr/v4/runtime/Token.d.ts'
 export class Identifier extends ASTNode {
-    static clone(paramarg0: ASTNode | null): ASTNode | null;
-    static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
+    static clone<N extends ASTNode>(paramarg0: N): N;
+    static clone<N extends ASTNode>(paramarg0: N[]): Stream<N>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     static validateContents(paramarg0: string): void;
     constructor(arg0: string)

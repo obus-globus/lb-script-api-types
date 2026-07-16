@@ -46,7 +46,7 @@ export class ArrayPrototypeBuiltins$ArrayPrototype extends Enum<ArrayPrototypeBu
     static values: ArrayPrototypeBuiltins$ArrayPrototype;
     static with: ArrayPrototypeBuiltins$ArrayPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ArrayPrototypeBuiltins$ArrayPrototype;
     static values(): ArrayPrototypeBuiltins$ArrayPrototype[];
     private constructor(length: number)

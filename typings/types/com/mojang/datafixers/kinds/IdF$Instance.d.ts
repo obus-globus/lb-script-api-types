@@ -27,9 +27,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class IdF$Instance extends Enum<IdF$Instance> implements Applicative<IdF$Mu, IdF$Instance$Mu>, Functor<IdF$Mu, IdF$Instance$Mu> {
     static INSTANCE: IdF$Instance;
-    static unbox(paramarg0: App<Applicative$Mu, K1>): Applicative<K1, Applicative$Mu>;
-    static unbox(paramarg0: App<Functor$Mu, K1>): Functor<K1, Functor$Mu>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
+    static unbox<F extends K1, Mu extends Functor$Mu>(paramarg0: App<Mu, F>): Functor<F, Mu>;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): IdF$Instance;
     static values(): IdF$Instance[];
     private constructor()

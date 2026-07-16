@@ -2,7 +2,7 @@ import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { StaticCache2D$Initializer } from '../../../net/minecraft/util/StaticCache2D$Initializer.d.ts'
 export class StaticCache2D<T extends unknown> extends Object {
-    static create(paramcenterX: number, paramcenterZ: number, paramrange: number, paraminitializer: (param0: number, param1: number) => Object | null): StaticCache2D<Object>;
+    static create<T extends unknown>(paramcenterX: number, paramcenterZ: number, paramrange: number, paraminitializer: (param0: number, param1: number) => T): StaticCache2D<T>;
     private constructor(minX: number, minZ: number, sizeX: number, sizeZ: number, initializer: (param0: number, param1: number) => T)
     // private cache: Object[];
     // private minX: number;

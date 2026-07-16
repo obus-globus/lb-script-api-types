@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class CacheBuilder$NullListener extends Enum<CacheBuilder$NullListener> implements RemovalListener<Object, Object> {
     static INSTANCE: CacheBuilder$NullListener;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CacheBuilder$NullListener;
     static values(): CacheBuilder$NullListener[];
     private constructor()

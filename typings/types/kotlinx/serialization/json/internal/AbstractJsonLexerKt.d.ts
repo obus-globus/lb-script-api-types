@@ -29,7 +29,7 @@ export class AbstractJsonLexerKt extends Object {
     static ignoreUnknownKeysHint: string;
     static lenientHint: string;
     static specialFlowingValuesHint: string;
-    static charToTokenClass(paramarg0: string): number;
-    static escapeToChar(paramarg0: number): string;
-    static tokenDescription(paramarg0: number): string;
+    static charToTokenClass(c: string): number;
+    static escapeToChar(c: number): string;
+    static tokenDescription(token: number): string;
 }

@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { BiPredicate } from '../../../../../../../java/util/function/BiPredicate.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { Regex } from '../../../../../../../kotlin/text/Regex.d.ts'
 import type { Tagged } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
@@ -11,10 +10,10 @@ export class ModuleGUICloser$Mode extends Enum<ModuleGUICloser$Mode> implements 
     static Companion: Tagged$Companion;
     static MATCHES: ModuleGUICloser$Mode;
     static getEntries(): ModuleGUICloser$Mode[];
-    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
-    static of(paramarg0: string): Tagged;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ModuleGUICloser$Mode;
+    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
+    static of(self: string): Tagged;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ModuleGUICloser$Mode;
     static values(): ModuleGUICloser$Mode[];
     private constructor(tag: string)
     readonly tag: string;

@@ -1,13 +1,12 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { AbstractInsnNode } from '../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 export class PreviousInjectorInsns extends Enum<PreviousInjectorInsns> {
     static COMPARISON_WRAPPER: PreviousInjectorInsns;
     static DUPED_FACTORY_REDIRECT: PreviousInjectorInsns;
     static DYNAMIC_INSTANCEOF_REDIRECT: PreviousInjectorInsns;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PreviousInjectorInsns;
     static values(): PreviousInjectorInsns[];
     constructor(arg2: string, arg3: PreviousInjectorInsns)

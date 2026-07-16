@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { AbstractListMultimap } from '../../../../../../../org/spongepowered/include/com/google/common/collect/AbstractListMultimap.d.ts'
 export class ArrayListMultimap<K extends unknown, V extends unknown> extends AbstractListMultimap<K, V> {
-    static create(): ArrayListMultimap<Object, Object>;
+    static create<K extends unknown, V extends unknown>(): ArrayListMultimap<K, V>;
     private constructor()
     // private expectedValuesPerKey: number;
     createCollection(): V[];

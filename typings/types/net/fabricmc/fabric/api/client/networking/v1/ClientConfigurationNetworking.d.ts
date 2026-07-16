@@ -12,8 +12,8 @@ export class ClientConfigurationNetworking extends Object {
     static getReceived(): Identifier[];
     static getSendable(): Identifier[];
     static getSender(): PacketSender;
-    static registerGlobalReceiver(paramarg0: CustomPacketPayload$Type<CustomPacketPayload>, paramarg1: (param0: CustomPacketPayload | null, param1: ClientConfigurationNetworking$Context) => void): boolean;
-    static registerReceiver(paramarg0: CustomPacketPayload$Type<CustomPacketPayload>, paramarg1: (param0: CustomPacketPayload | null, param1: ClientConfigurationNetworking$Context) => void): boolean;
+    static registerGlobalReceiver<T extends CustomPacketPayload>(paramarg0: CustomPacketPayload$Type<T>, paramarg1: (param0: T, param1: ClientConfigurationNetworking$Context) => void): boolean;
+    static registerReceiver<T extends CustomPacketPayload>(paramarg0: CustomPacketPayload$Type<T>, paramarg1: (param0: T, param1: ClientConfigurationNetworking$Context) => void): boolean;
     static send(paramarg0: CustomPacketPayload): void;
     static unregisterGlobalReceiver(paramarg0: CustomPacketPayload$Type<any>): (param0: Object, param1: ClientConfigurationNetworking$Context) => void;
     static unregisterReceiver(paramarg0: Identifier): (param0: Object, param1: ClientConfigurationNetworking$Context) => void;

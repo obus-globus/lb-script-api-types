@@ -3,6 +3,6 @@ import type { ByteBufInputStream } from '../../../../../io/netty/buffer/ByteBufI
 import type { ByteBufOutputStream } from '../../../../../io/netty/buffer/ByteBufOutputStream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ByteBufExtensionsKt extends Object {
-    static inputStream(paramarg0: ByteBuf): ByteBufInputStream;
-    static outputStream(paramarg0: ByteBuf): ByteBufOutputStream;
+    static inputStream(self: ByteBuf): ByteBufInputStream;
+    static outputStream(self: ByteBuf): ByteBufOutputStream;
 }

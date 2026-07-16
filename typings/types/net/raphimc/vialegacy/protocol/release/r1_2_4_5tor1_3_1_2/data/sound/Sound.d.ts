@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class Sound extends Enum<Sound> {
     static CHEST_CLOSE: Sound;
@@ -65,7 +64,7 @@ export class Sound extends Enum<Sound> {
     static RANDOM_BOW: Sound;
     static RANDOM_EXPLODE: Sound;
     static RANDOM_FUSE: Sound;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Sound;
     static values(): Sound[];
     private constructor(arg2: string)

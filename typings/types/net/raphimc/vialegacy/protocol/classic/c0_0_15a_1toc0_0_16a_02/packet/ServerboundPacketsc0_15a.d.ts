@@ -5,7 +5,6 @@ import type { State } from '../../../../../../../com/viaversion/viaversion/api/p
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { PreNettyPacketType } from '../../../../../../../net/raphimc/vialegacy/api/splitter/PreNettyPacketType.d.ts'
 export class ServerboundPacketsc0_15a extends Enum<ServerboundPacketsc0_15a> implements ServerboundPacketType, PreNettyPacketType {
@@ -13,7 +12,7 @@ export class ServerboundPacketsc0_15a extends Enum<ServerboundPacketsc0_15a> imp
     static MOVE_PLAYER_POS_ROT: ServerboundPacketsc0_15a;
     static USE_ITEM_ON: ServerboundPacketsc0_15a;
     static getPacket(paramarg0: number): ServerboundPacketsc0_15a;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundPacketsc0_15a;
     static values(): ServerboundPacketsc0_15a[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)

@@ -6,6 +6,6 @@ import type { DebugRenderer$SimpleDebugRenderer } from '../../../../../../../net
 import type { DebugSubscription } from '../../../../../../../net/minecraft/util/debug/DebugSubscription.d.ts'
 export class DebugRendererRegistryImpl extends Object {
     static RENDERERS: DebugRendererRegistryImpl$Entry[];
-    static register(paramarg0: DebugSubscription<Object>, paramarg1: (param0: Minecraft) => DebugRenderer$SimpleDebugRenderer): void;
+    static register<T extends unknown>(paramarg0: DebugSubscription<T>, paramarg1: (param0: Minecraft) => DebugRenderer$SimpleDebugRenderer): void;
     constructor()
 }

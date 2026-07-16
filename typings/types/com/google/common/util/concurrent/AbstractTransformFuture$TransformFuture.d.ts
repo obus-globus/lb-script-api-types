@@ -4,8 +4,8 @@ import type { FluentFuture } from '../../../../../com/google/common/util/concurr
 import type { ListenableFuture } from '../../../../../com/google/common/util/concurrent/ListenableFuture.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AbstractTransformFuture$TransformFuture<I extends unknown, O extends unknown> extends AbstractTransformFuture<I, O, (param0: I) => O, O> {
-    static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
-    static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
+    static from<V extends unknown>(paramfuture: FluentFuture<V>): FluentFuture<V>;
+    static from<V extends unknown>(paramfuture: ListenableFuture<V>): FluentFuture<V>;
     constructor(inputFuture: ListenableFuture<I>, function_: (param0: I) => O)
     doTransform(function_: (param0: I) => O, input: I): O;
     setResult(result: O): void;

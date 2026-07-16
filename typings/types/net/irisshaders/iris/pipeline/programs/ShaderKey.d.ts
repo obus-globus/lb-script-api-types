@@ -1,7 +1,6 @@
 import type { RenderPipeline } from '../../../../../com/mojang/blaze3d/pipeline/RenderPipeline.d.ts'
 import type { VertexFormat } from '../../../../../com/mojang/blaze3d/vertex/VertexFormat.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { AlphaTest } from '../../../../../net/irisshaders/iris/gl/blending/AlphaTest.d.ts'
 import type { FogMode } from '../../../../../net/irisshaders/iris/gl/state/FogMode.d.ts'
@@ -86,7 +85,7 @@ export class ShaderKey extends Enum<ShaderKey> {
     static TEXT_INTENSITY_BE: ShaderKey;
     static WEATHER: ShaderKey;
     static findBestMatch(paramarg0: RenderPipeline, paramarg1: ProgramId): ShaderKey;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ShaderKey;
     static values(): ShaderKey[];
     private constructor(arg2: ProgramId, arg3: AlphaTest, arg4: VertexFormat, arg5: FogMode, arg6: ShaderKey$LightingModel, arg7: Patch)

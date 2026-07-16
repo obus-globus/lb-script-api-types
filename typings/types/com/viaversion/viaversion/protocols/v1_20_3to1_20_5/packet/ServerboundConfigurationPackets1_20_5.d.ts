@@ -5,7 +5,6 @@ import type { ServerboundPacket1_21_4 } from '../../../../../../com/viaversion/v
 import type { ServerboundPacket1_21_5 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_4to1_21_5/packet/ServerboundPacket1_21_5.d.ts'
 import type { ServerboundPacket1_21_2 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21to1_21_2/packet/ServerboundPacket1_21_2.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ServerboundConfigurationPackets1_20_5 extends Enum<ServerboundConfigurationPackets1_20_5> implements ServerboundPacket1_20_5, ServerboundPacket1_21_4, ServerboundPacket1_21_5, ServerboundPacket1_21_2 {
     static CLIENT_INFORMATION: ServerboundConfigurationPackets1_20_5;
@@ -16,7 +15,7 @@ export class ServerboundConfigurationPackets1_20_5 extends Enum<ServerboundConfi
     static PONG: ServerboundConfigurationPackets1_20_5;
     static RESOURCE_PACK: ServerboundConfigurationPackets1_20_5;
     static SELECT_KNOWN_PACKS: ServerboundConfigurationPackets1_20_5;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundConfigurationPackets1_20_5;
     static values(): ServerboundConfigurationPackets1_20_5[];
     private constructor()

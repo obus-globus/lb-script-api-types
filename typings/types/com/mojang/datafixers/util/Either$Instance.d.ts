@@ -26,9 +26,9 @@ import type { BiFunction } from '../../../../java/util/function/BiFunction.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Either$Instance<R2 extends unknown> extends Object implements Applicative<Either$Mu<R2>, Either$Instance$Mu<R2>>, CocartesianLike<Either$Mu<R2>, R2, Either$Instance$Mu<R2>>, Traversable<Either$Mu<R2>, Either$Instance$Mu<R2>> {
-    static unbox(paramarg0: App<CocartesianLike$Mu, K1>): CocartesianLike<K1, Object, CocartesianLike$Mu>;
-    static unbox(paramarg0: App<Applicative$Mu, K1>): Applicative<K1, Applicative$Mu>;
-    static unbox(paramarg0: App<Traversable$Mu, K1>): Traversable<K1, Traversable$Mu>;
+    static unbox<F extends K1, C extends unknown, Mu extends CocartesianLike$Mu>(paramarg0: App<Mu, F>): CocartesianLike<F, C, Mu>;
+    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
+    static unbox<F extends K1, Mu extends Traversable$Mu>(paramarg0: App<Mu, F>): Traversable<F, Mu>;
     constructor()
     ap<R extends unknown, A extends unknown>(arg0: App<Either$Mu<R2>, (param0: A) => R>, arg1: App<Either$Mu<R2>, A>): App<Either$Mu<R2>, R>;
     ap<R extends unknown, A extends unknown>(arg0: (param0: A) => R, arg1: App<Either$Mu<R2>, A>): App<Either$Mu<R2>, R>;

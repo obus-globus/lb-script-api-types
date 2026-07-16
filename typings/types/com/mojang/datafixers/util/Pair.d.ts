@@ -4,9 +4,9 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Pair<F extends unknown, S extends unknown> extends Object implements App<Pair$Mu<S>, F> {
-    static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
-    static toMap(): Collector<Pair<Object, Object>, Object, Map<Object | null, Object | null>>;
-    static unbox(paramarg0: App<Pair$Mu<Object>, Object>): Pair<Object, Object>;
+    static of<F extends unknown, S extends unknown>(paramarg0: F, paramarg1: S): Pair<F, S>;
+    static toMap<F extends unknown, S extends unknown>(): Collector<Pair<F, S>, Object, Map<F, S>>;
+    static unbox<F extends unknown, S extends unknown>(paramarg0: App<Pair$Mu<S>, F>): Pair<F, S>;
     constructor(arg0: F, arg1: S)
     readonly first: F;
     readonly second: S;

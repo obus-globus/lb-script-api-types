@@ -5,7 +5,7 @@ import type { GameRulesService$GameRuleUpdate } from '../../../../../net/minecra
 import type { GameRule } from '../../../../../net/minecraft/world/level/gamerules/GameRule.d.ts'
 export class GameRulesService extends Object {
     static get(paramminecraftApi: MinecraftApi): GameRulesService$GameRuleUpdate<Object>[];
-    static getTypedRule(paramminecraftApi: MinecraftApi, paramgameRule: GameRule<Object>, paramvalue: Object | null): GameRulesService$GameRuleUpdate<Object>;
-    static update(paramminecraftApi: MinecraftApi, paramupdate: GameRulesService$GameRuleUpdate<Object>, paramclientInfo: ClientInfo): GameRulesService$GameRuleUpdate<Object>;
+    static getTypedRule<T extends unknown>(paramminecraftApi: MinecraftApi, paramgameRule: GameRule<T>, paramvalue: T): GameRulesService$GameRuleUpdate<T>;
+    static update<T extends unknown>(paramminecraftApi: MinecraftApi, paramupdate: GameRulesService$GameRuleUpdate<T>, paramclientInfo: ClientInfo): GameRulesService$GameRuleUpdate<T>;
     constructor()
 }

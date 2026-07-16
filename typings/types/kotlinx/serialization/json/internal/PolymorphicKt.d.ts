@@ -8,9 +8,9 @@ import type { JsonDecoder } from '../../../../kotlinx/serialization/json/JsonDec
 import type { JsonElement } from '../../../../kotlinx/serialization/json/JsonElement.d.ts'
 import type { JsonEncoder } from '../../../../kotlinx/serialization/json/JsonEncoder.d.ts'
 export class PolymorphicKt extends Object {
-    static checkKind(paramarg0: SerialKind): void;
-    static classDiscriminator(paramarg0: SerialDescriptor, paramarg1: Json): string;
-    static decodeSerializableValuePolymorphic(paramarg0: JsonDecoder, paramarg1: DeserializationStrategy<Object>, paramarg2: () => string): Object | null;
-    static encodePolymorphically(paramarg0: JsonEncoder, paramarg1: SerializationStrategy<Object>, paramarg2: Object | null, paramarg3: (param0: Object, param1: Object) => void): void;
-    static throwJsonElementPolymorphicException(paramarg0: string, paramarg1: JsonElement): void;
+    static checkKind(kind: SerialKind): void;
+    static classDiscriminator(self: SerialDescriptor, json: Json): string;
+    static decodeSerializableValuePolymorphic<T extends unknown>(self: JsonDecoder, deserializer: DeserializationStrategy<T>, path: () => string): T;
+    static encodePolymorphically<T extends unknown>(self: JsonEncoder, serializer: SerializationStrategy<T>, value: T, ifPolymorphic: (param0: string, param1: string) => void): void;
+    static throwJsonElementPolymorphicException(serialName: string | null, element: JsonElement): void;
 }

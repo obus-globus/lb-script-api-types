@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class InventoryLeftTabPocketIndex extends Enum<InventoryLeftTabPocketIndex> {
     static None: InventoryLeftTabPocketIndex;
@@ -13,7 +12,7 @@ export class InventoryLeftTabPocketIndex extends Enum<InventoryLeftTabPocketInde
     static getByName(paramarg0: string, paramarg1: InventoryLeftTabPocketIndex): InventoryLeftTabPocketIndex;
     static getByValue(paramarg0: number): InventoryLeftTabPocketIndex;
     static getByValue(paramarg0: number, paramarg1: InventoryLeftTabPocketIndex): InventoryLeftTabPocketIndex;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): InventoryLeftTabPocketIndex;
     static values(): InventoryLeftTabPocketIndex[];
     private constructor(arg2: number)

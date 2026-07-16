@@ -2,7 +2,6 @@ import type { Direction } from '../../../../com/viaversion/viaversion/api/protoc
 import type { ServerboundPacketType } from '../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
 import type { State } from '../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class ServerboundBedrockPackets extends Enum<ServerboundBedrockPackets> implements ServerboundPacketType {
     static ANIMATE: ServerboundBedrockPackets;
@@ -91,7 +90,7 @@ export class ServerboundBedrockPackets extends Enum<ServerboundBedrockPackets> i
     static TOGGLE_CRAFTER_SLOT_REQUEST: ServerboundBedrockPackets;
     static UPDATE_CLIENT_OPTIONS: ServerboundBedrockPackets;
     static getPacket(paramarg0: number): ServerboundBedrockPackets;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundBedrockPackets;
     static values(): ServerboundBedrockPackets[];
     private constructor(arg2: number)

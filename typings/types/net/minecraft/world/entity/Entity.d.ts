@@ -646,7 +646,7 @@ export abstract class Entity extends Object implements IEntity, FeetBlockCaching
     mayInteract(level: ServerLevel, pos: BlockPos): boolean;
     maybeBackOffFromEdge(delta: Vec3, moverType: MoverType): Vec3;
     mirror(mirror: Mirror): number;
-    modifyAttached<A extends unknown>(arg0: AttachmentType<A>, arg1: (param0: A) => Object | null): A;
+    modifyAttached<A extends unknown>(arg0: AttachmentType<A>, arg1: (param0: A) => A): A;
     modifyPassengerFluidInteractionBox(passengerBox: AABB): AABB;
     move(moverType: MoverType, delta: Vec3): void;
     moveOrInterpolateTo(position: Optional<Vec3>, yRot: Optional<number>, xRot: Optional<number>): void;

@@ -19,8 +19,8 @@ export class ThreadLocalHandshake$TruffleSafepointImpl extends TruffleSafepoint 
     static getCurrent(): TruffleSafepoint;
     static poll(paramlocation: Node): void;
     static pollHere(paramlocation: Node): void;
-    static setBlockedThreadInterruptible(paramlocation: Node, paraminterruptible: (param0: Object | null) => void, paramobject: Object | null): void;
-    static setBlockedThreadInterruptibleFunction(paramlocation: Node, paraminterruptible: (param0: Object | null) => Object | null, paramobject: Object | null): Object | null;
+    static setBlockedThreadInterruptible<T extends unknown>(paramlocation: Node, paraminterruptible: (param0: T) => void, paramobject: T): void;
+    static setBlockedThreadInterruptibleFunction<T extends unknown, R extends unknown>(paramlocation: Node, paraminterruptible: (param0: T) => R, paramobject: T): R;
     constructor(handshake: ThreadLocalHandshake)
     // private blockedAction: TruffleSafepoint$Interrupter;
     // private changeAllowActionsAllowed: boolean;

@@ -8,7 +8,7 @@ import type { PreparableReloadListener } from '../../../../../net/minecraft/serv
 import type { PreparableReloadListener$PreparationBarrier } from '../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$PreparationBarrier.d.ts'
 import type { PreparableReloadListener$SharedState } from '../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
 export class ResourceReloaderPhaseData extends SortableNode<ResourceReloaderPhaseData> {
-    static link(paramarg0: Object | null, paramarg1: Object | null): void;
+    static link<N extends SortableNode<N>>(paramarg0: N, paramarg1: N): void;
     constructor(arg0: Identifier, arg1: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>)
     // private id: Identifier;
     // private resourceReloader: (param0: PreparableReloadListener$SharedState, param1: Executor, param2: (param0: Object | null) => CompletableFuture<Object>, param3: Executor) => CompletableFuture<void>;

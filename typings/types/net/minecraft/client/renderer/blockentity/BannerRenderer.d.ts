@@ -23,7 +23,7 @@ import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { Vector3fc } from '../../../../../org/joml/Vector3fc.d.ts'
 export class BannerRenderer extends Object implements BlockEntityRenderer<BannerBlockEntity, BannerRenderState> {
     static TRANSFORMATIONS: WallAndGroundTransformations<Transformation>;
-    static submitPatterns(paramsprites: SpriteGetter, paramposeStack: PoseStack, paramsubmitNodeCollector: SubmitNodeCollector, paramlightCoords: number, paramoverlayCoords: number, parammodel: Model<Object>, paramstate: Object | null, parambanner: boolean, parambaseColor: DyeColor, parampatterns: BannerPatternLayers, parambreakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
+    static submitPatterns<S extends unknown>(paramsprites: SpriteGetter, paramposeStack: PoseStack, paramsubmitNodeCollector: SubmitNodeCollector, paramlightCoords: number, paramoverlayCoords: number, parammodel: Model<S>, paramstate: S, parambanner: boolean, parambaseColor: DyeColor, parampatterns: BannerPatternLayers, parambreakProgress: ModelFeatureRenderer$CrumblingOverlay): void;
     constructor(modelSet: EntityModelSet, sprites: SpriteGetter)
     constructor(context: BlockEntityRendererProvider$Context)
     constructor(context: SpecialModelRenderer$BakingContext)

@@ -14,8 +14,8 @@ export class VkDebugReportCallbackEXT$Container extends VkDebugReportCallbackEXT
     static create(paramarg0: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number, param6: number, param7: number) => number): VkDebugReportCallbackEXT;
     static createSafe(paramarg0: number): VkDebugReportCallbackEXT;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     static getString(paramarg0: number): string;
     constructor(arg0: number, arg1: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number, param6: number, param7: number) => number)
     // private delegate: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number, param6: number, param7: number) => number;

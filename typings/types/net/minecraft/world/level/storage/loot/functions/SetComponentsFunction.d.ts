@@ -9,7 +9,7 @@ import type { LootItemConditionalFunction$Builder } from '../../../../../../../n
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class SetComponentsFunction extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<SetComponentsFunction>;
-    static setComponent(paramtype: DataComponentType<Object>, paramvalue: Object | null): LootItemConditionalFunction$Builder<any>;
+    static setComponent<T extends unknown>(paramtype: DataComponentType<T>, paramvalue: T): LootItemConditionalFunction$Builder<any>;
     private constructor(predicates: LootItemCondition[], components: DataComponentPatch)
     // private components: DataComponentPatch;
     codec(): MapCodec<SetComponentsFunction>;

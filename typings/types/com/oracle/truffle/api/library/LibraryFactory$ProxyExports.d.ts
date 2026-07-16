@@ -4,7 +4,7 @@ import type { LibraryFactory } from '../../../../../com/oracle/truffle/api/libra
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class LibraryFactory$ProxyExports extends LibraryExport<T> {
-    static register(paramreceiverClass: Class<Object>, ...paramlibs: LibraryExport<any>[]): void;
+    static register<T extends Library>(paramreceiverClass: Class<Object>, ...paramlibs: LibraryExport<any>[]): void;
     constructor(null_: LibraryFactory<Library>)
     createCached<T extends Library>(receiver: Object): T;
     createUncached<T extends Library>(receiver: Object): T;

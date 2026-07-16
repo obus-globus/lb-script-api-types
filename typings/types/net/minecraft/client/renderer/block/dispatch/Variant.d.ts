@@ -24,7 +24,7 @@ export class Variant extends Record implements BlockStateModelPart$Unbaked {
     modelState(): Variant$SimpleModelState;
     resolveDependencies(resolver: ResolvableModel$Resolver): void;
     toString(): string;
-    with(mutator: (param0: Object | null) => Object | null): Variant;
+    with(mutator: (param0: Variant) => Variant): Variant;
     withModel(modelLocation: Identifier): Variant;
     withState(modelState: Variant$SimpleModelState): Variant;
     withUvLock(uvLock: boolean): Variant;

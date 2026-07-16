@@ -1,11 +1,10 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class Variance extends Enum<Variance> {
     static INVARIANT: Variance;
     static IN_VARIANCE: Variance;
     static OUT_VARIANCE: Variance;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Variance;
     static values(): Variance[];
     private constructor(arg2: string, arg3: boolean, arg4: boolean, arg5: number)

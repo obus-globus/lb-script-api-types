@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class NodeFactory$BinaryOperation extends Enum<NodeFactory$BinaryOperation> {
     static ADD: NodeFactory$BinaryOperation;
@@ -30,7 +29,7 @@ export class NodeFactory$BinaryOperation extends Enum<NodeFactory$BinaryOperatio
     static NOT_IDENTICAL: NodeFactory$BinaryOperation;
     static NULLISH_COALESCING: NodeFactory$BinaryOperation;
     static SUBTRACT: NodeFactory$BinaryOperation;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): NodeFactory$BinaryOperation;
     static values(): NodeFactory$BinaryOperation[];
     private constructor()

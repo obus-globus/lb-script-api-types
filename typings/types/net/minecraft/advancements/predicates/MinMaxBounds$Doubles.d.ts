@@ -7,6 +7,7 @@ import type { Record } from '../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../java/util/Optional.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Number } from '../../../../java/lang/Number.d.ts'
 import type { MinMaxBounds } from '../../../../net/minecraft/advancements/predicates/MinMaxBounds.d.ts'
 import type { MinMaxBounds$Bounds } from '../../../../net/minecraft/advancements/predicates/MinMaxBounds$Bounds.d.ts'
@@ -22,7 +23,7 @@ export class MinMaxBounds$Doubles extends Record implements MinMaxBounds<number>
     static between(parammin: number, parammax: number): MinMaxBounds$Doubles;
     static exactly(paramvalue: number): MinMaxBounds$Doubles;
     static fromReader(paramreader: StringReader): MinMaxBounds$Doubles;
-    static validateContainedInRange(paramallowed: MinMaxBounds<Number>): (param0: Object | null) => DataResult<Object>;
+    static validateContainedInRange<V extends Number & Comparable<V>, B extends MinMaxBounds<V>>(paramallowed: MinMaxBounds<V>): (param0: B) => DataResult<B>;
     constructor(bounds: MinMaxBounds$Bounds<number>, boundsSqr: MinMaxBounds$Bounds<number>)
     // private bounds: MinMaxBounds$Bounds<number>;
     // private boundsSqr: MinMaxBounds$Bounds<number>;

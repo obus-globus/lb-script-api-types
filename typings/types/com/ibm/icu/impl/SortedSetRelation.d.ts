@@ -1,4 +1,5 @@
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class SortedSetRelation extends Object {
     static A: number;
     static ADDALL: number;
@@ -18,7 +19,7 @@ export class SortedSetRelation extends Object {
     static NO_B: number;
     static REMOVEALL: number;
     static RETAINALL: number;
-    static doOperation(paramarg0: (Object | null)[], paramarg1: number, paramarg2: (Object | null)[]): (Object | null)[];
-    static hasRelation(paramarg0: (Object | null)[], paramarg1: number, paramarg2: (Object | null)[]): boolean;
+    static doOperation<T extends unknown & Comparable<Object>>(paramarg0: T[], paramarg1: number, paramarg2: T[]): T[];
+    static hasRelation<T extends unknown & Comparable<Object>>(paramarg0: T[], paramarg1: number, paramarg2: T[]): boolean;
     constructor()
 }

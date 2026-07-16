@@ -3,6 +3,6 @@ import type { DeclarationDescriptor } from '../../../../../../kotlin/reflect/jvm
 import type { DeclarationDescriptorVisitor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/DeclarationDescriptorVisitor.d.ts'
 import type { ModuleDescriptor } from '../../../../../../kotlin/reflect/jvm/internal/impl/descriptors/ModuleDescriptor.d.ts'
 export class ModuleDescriptor$DefaultImpls extends Object {
-    static accept(paramarg0: ModuleDescriptor, paramarg1: DeclarationDescriptorVisitor<Object, Object>, paramarg2: Object | null): Object | null;
+    static accept<R extends unknown, D extends unknown>(paramarg0: ModuleDescriptor, paramarg1: DeclarationDescriptorVisitor<R, D>, paramarg2: D): R;
     static getContainingDeclaration(paramarg0: ModuleDescriptor): DeclarationDescriptor;
 }

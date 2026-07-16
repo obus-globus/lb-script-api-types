@@ -6,8 +6,8 @@ import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemS
 import type { ChargedProjectiles } from '../../../../../../net/minecraft/world/item/component/ChargedProjectiles.d.ts'
 export class HeldItemTrajectoryResolver extends Object {
     static INSTANCE: HeldItemTrajectoryResolver;
-    static resolveHeldItemPrimaryShot(player: Player, stack: ItemStack, alwaysShowBow: boolean): TrajectoryDescriptor;
-    static resolveHeldItemShots(player: Player, stack: ItemStack, alwaysShowBow: boolean, includeMultiShot: boolean): TrajectoryShotDescriptor[];
+    static resolveHeldItemPrimaryShot(player: Player, stack: ItemStack, alwaysShowBow: boolean): TrajectoryDescriptor | null;
+    static resolveHeldItemShots(player: Player, stack: ItemStack, alwaysShowBow: boolean, includeMultiShot: boolean): TrajectoryShotDescriptor[] | null;
     // private getShotYawOffsets(shotCount: number): number[];
     // private isCrossbowFirework(chargedProjectiles: ChargedProjectiles | null): boolean;
     resolveHeldItemPrimaryShot(player: Player, stack: ItemStack, alwaysShowBow: boolean): TrajectoryDescriptor | null;

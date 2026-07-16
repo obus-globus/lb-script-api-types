@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class SpdyFrameDecoder$State extends Enum<SpdyFrameDecoder$State> {
     static DISCARD_FRAME: SpdyFrameDecoder$State;
@@ -17,7 +16,7 @@ export class SpdyFrameDecoder$State extends Enum<SpdyFrameDecoder$State> {
     static READ_SYN_STREAM_FRAME: SpdyFrameDecoder$State;
     static READ_UNKNOWN_FRAME: SpdyFrameDecoder$State;
     static READ_WINDOW_UPDATE_FRAME: SpdyFrameDecoder$State;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SpdyFrameDecoder$State;
     static values(): SpdyFrameDecoder$State[];
     private constructor()

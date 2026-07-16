@@ -7,6 +7,7 @@ import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Fil
 import type { Layout } from '../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { AbstractAppender } from '../../../../../../org/apache/logging/log4j/core/appender/AbstractAppender.d.ts'
+import type { HttpAppender$Builder } from '../../../../../../org/apache/logging/log4j/core/appender/HttpAppender$Builder.d.ts'
 import type { HttpManager } from '../../../../../../org/apache/logging/log4j/core/appender/HttpManager.d.ts'
 import type { Property } from '../../../../../../org/apache/logging/log4j/core/config/Property.d.ts'
 export class HttpAppender extends AbstractAppender {
@@ -14,7 +15,7 @@ export class HttpAppender extends AbstractAppender {
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Appender[];
-    static newBuilder(): Object | null;
+    static newBuilder<B extends HttpAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: boolean, arg4: HttpManager, arg5: Property[], arg6: any)
     // private manager: HttpManager;

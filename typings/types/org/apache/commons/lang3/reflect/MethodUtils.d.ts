@@ -7,7 +7,7 @@ export class MethodUtils extends Object {
     static getAccessibleMethod(paramarg0: Class<Object>, paramarg1: string, ...paramarg2: Class<Object>[]): Method;
     static getAccessibleMethod(paramarg0: Class<Object>, paramarg1: Method): Method;
     static getAccessibleMethod(paramarg0: Method): Method;
-    static getAnnotation(paramarg0: Method, paramarg1: Class<Annotation>, paramarg2: boolean, paramarg3: boolean): Annotation | null;
+    static getAnnotation<A extends Annotation>(paramarg0: Method, paramarg1: Class<A>, paramarg2: boolean, paramarg3: boolean): A;
     static getMatchingAccessibleMethod(paramarg0: Class<Object>, paramarg1: string, ...paramarg2: Class<Object>[]): Method;
     static getMatchingMethod(paramarg0: Class<Object>, paramarg1: string, ...paramarg2: Class<Object>[]): Method;
     static getMethodObject(paramarg0: Class<Object>, paramarg1: string, ...paramarg2: Class<Object>[]): Method;

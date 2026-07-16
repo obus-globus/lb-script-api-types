@@ -8,12 +8,12 @@ import type { IntIterator } from '../../../kotlin/collections/IntIterator.d.ts'
 import type { LongIterator } from '../../../kotlin/collections/LongIterator.d.ts'
 import type { ShortIterator } from '../../../kotlin/collections/ShortIterator.d.ts'
 export class ArrayIteratorsKt extends Object {
-    static iterator(paramarg0: boolean[]): BooleanIterator;
-    static iterator(paramarg0: number[]): ByteIterator;
-    static iterator(paramarg0: string[]): CharIterator;
-    static iterator(paramarg0: number[]): DoubleIterator;
-    static iterator(paramarg0: number[]): FloatIterator;
-    static iterator(paramarg0: number[]): IntIterator;
-    static iterator(paramarg0: number[]): LongIterator;
-    static iterator(paramarg0: number[]): ShortIterator;
+    static iterator(array: boolean[]): BooleanIterator;
+    static iterator(array: number[]): ByteIterator;
+    static iterator(array: string[]): CharIterator;
+    static iterator(array: number[]): DoubleIterator;
+    static iterator(array: number[]): FloatIterator;
+    static iterator(array: number[]): IntIterator;
+    static iterator(array: number[]): LongIterator;
+    static iterator(array: number[]): ShortIterator;
 }

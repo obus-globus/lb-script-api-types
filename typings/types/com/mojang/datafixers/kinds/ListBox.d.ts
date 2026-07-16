@@ -5,10 +5,10 @@ import type { ListBox$Mu } from '../../../../com/mojang/datafixers/kinds/ListBox
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ListBox<T extends unknown> extends Object implements App<ListBox$Mu, T> {
-    static create(paramarg0: (Object | null)[]): ListBox<Object>;
-    static flip(paramarg0: Applicative<K1, any>, paramarg1: App<K1, Object>[]): App<K1, (Object | null)[]>;
-    static traverse(paramarg0: Applicative<K1, any>, paramarg1: (param0: Object | null) => App<K1, Object>, paramarg2: (Object | null)[]): App<K1, (Object | null)[]>;
-    static unbox(paramarg0: App<ListBox$Mu, Object>): (Object | null)[];
+    static create<T extends unknown>(paramarg0: T[]): ListBox<T>;
+    static flip<F extends K1, A extends unknown>(paramarg0: Applicative<F, any>, paramarg1: App<F, A>[]): App<F, A[]>;
+    static traverse<F extends K1, A extends unknown, B extends unknown>(paramarg0: Applicative<F, any>, paramarg1: (param0: A) => App<F, B>, paramarg2: A[]): App<F, B[]>;
+    static unbox<T extends unknown>(paramarg0: App<ListBox$Mu, T>): T[];
     private constructor(arg0: T[])
     // private value: T[];
 }

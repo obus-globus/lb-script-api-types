@@ -14,8 +14,8 @@ import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
 export class Dynamic<T extends unknown> extends DynamicLike<T> {
-    static convert(paramarg0: DynamicOps<Object>, paramarg1: DynamicOps<Object>, paramarg2: Object | null): Object | null;
-    static copyAndFixField(paramarg0: Dynamic<Object>, paramarg1: string, paramarg2: Dynamic<Object>, paramarg3: string, paramarg4: (param0: Dynamic<Object>) => Object | null): Dynamic<Object>;
+    static convert<S extends unknown, T extends unknown>(paramarg0: DynamicOps<S>, paramarg1: DynamicOps<T>, paramarg2: S): T;
+    static copyAndFixField<T extends unknown>(paramarg0: Dynamic<T>, paramarg1: string, paramarg2: Dynamic<Object>, paramarg3: string, paramarg4: (param0: Dynamic<T>) => Dynamic<T>): Dynamic<Object>;
     static copyField(paramarg0: Dynamic<Object>, paramarg1: string, paramarg2: Dynamic<Object>, paramarg3: string): Dynamic<Object>;
     constructor(arg0: DynamicOps<T>)
     constructor(arg0: DynamicOps<T>, arg1: T)
@@ -51,7 +51,7 @@ export class Dynamic<T extends unknown> extends DynamicLike<T> {
     merge(arg0: Dynamic<Object>): OptionalDynamic<T>;
     merge(arg0: Dynamic<Object>, arg1: Dynamic<Object>): OptionalDynamic<T>;
     remove(arg0: string): Dynamic<T>;
-    renameAndFixField(arg0: string, arg1: string, arg2: (param0: Dynamic<Object>) => Object | null): Dynamic<T>;
+    renameAndFixField(arg0: string, arg1: string, arg2: (param0: Dynamic<Object>) => Dynamic<Object>): Dynamic<T>;
     renameField(arg0: string, arg1: string): Dynamic<T>;
     replaceField(arg0: string, arg1: string, arg2: Optional<Dynamic<Object>>): Dynamic<T>;
     set(arg0: string, arg1: Dynamic<Object>): Dynamic<T>;

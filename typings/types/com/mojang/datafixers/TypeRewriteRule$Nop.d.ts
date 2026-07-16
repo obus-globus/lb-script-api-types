@@ -13,7 +13,7 @@ export class TypeRewriteRule$Nop extends Enum<TypeRewriteRule$Nop> implements Ty
     static all(paramarg0: TypeRewriteRule, paramarg1: boolean, paramarg2: boolean): TypeRewriteRule;
     static checkOnce(paramarg0: TypeRewriteRule, paramarg1: (param0: Type<Object>) => void): TypeRewriteRule;
     static everywhere(paramarg0: TypeRewriteRule, paramarg1: PointFreeRule, paramarg2: boolean, paramarg3: boolean): TypeRewriteRule;
-    static ifSame(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>): TypeRewriteRule;
+    static ifSame<B extends unknown>(paramarg0: Type<B>, paramarg1: RewriteResult<B, Object>): TypeRewriteRule;
     static nop(): TypeRewriteRule;
     static once(paramarg0: TypeRewriteRule): TypeRewriteRule;
     static one(paramarg0: TypeRewriteRule): TypeRewriteRule;
@@ -22,7 +22,7 @@ export class TypeRewriteRule$Nop extends Enum<TypeRewriteRule$Nop> implements Ty
     static seq(paramarg0: TypeRewriteRule, paramarg1: TypeRewriteRule): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule, ...paramarg1: TypeRewriteRule[]): TypeRewriteRule;
     static seq(paramarg0: TypeRewriteRule[]): TypeRewriteRule;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TypeRewriteRule$Nop;
     static values(): TypeRewriteRule$Nop[];
     private constructor()

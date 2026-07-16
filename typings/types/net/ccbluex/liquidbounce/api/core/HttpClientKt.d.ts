@@ -7,7 +7,7 @@ import type { RequestBody } from '../../../../../okhttp3/RequestBody.d.ts'
 import type { Response } from '../../../../../okhttp3/Response.d.ts'
 import type { BufferedSource } from '../../../../../okio/BufferedSource.d.ts'
 export class HttpClientKt extends Object {
-    static asForm(string: string): RequestBody;
+    static asForm(self: string): RequestBody;
     static getIoScope(): CoroutineScope;
     static getRenderScope(): CoroutineScope;
     /**
@@ -18,13 +18,13 @@ export class HttpClientKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L256 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:256}
      */
-    static parse(response: Response): Object | null;
+    static parse<T extends unknown>(self: Response): T;
     /**
      * Save response body to file.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L289 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:289}
      */
-    static toFile(response: Response, file: File): number;
+    static toFile(self: Response, file: File): number;
     /**
      * Read all UTF-8 lines from {@link BufferedSource} as an {@link Iterator}.
      *
@@ -32,6 +32,6 @@ export class HttpClientKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt#L273 | src/main/kotlin/net/ccbluex/liquidbounce/api/core/HttpClient.kt:273}
      */
-    static utf8Lines(bufferedSource: BufferedSource): Iterator<string>;
-    static withScope(block: (param0: Object, param1: Object) => Object): Job;
+    static utf8Lines(self: BufferedSource): Iterator<string>;
+    static withScope(block: (param0: CoroutineScope) => void): Job;
 }

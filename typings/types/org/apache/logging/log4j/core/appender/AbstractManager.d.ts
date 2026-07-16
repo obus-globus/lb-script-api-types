@@ -7,7 +7,7 @@ import type { LoggerContext } from '../../../../../../org/apache/logging/log4j/c
 import type { ManagerFactory } from '../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 import type { StrSubstitutor } from '../../../../../../org/apache/logging/log4j/core/lookup/StrSubstitutor.d.ts'
 export abstract class AbstractManager extends Object implements AutoCloseable {
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
     static hasManager(paramname: string): boolean;
     constructor(loggerContext: LoggerContext, name: string)
     // private count: number;

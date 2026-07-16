@@ -11,7 +11,7 @@ export class JvmSystemFileSystem extends FileSystem_2 {
     static RESOURCES: FileSystem_2;
     static SYSTEM: FileSystem_2;
     static SYSTEM_TEMPORARY_DIRECTORY: Path;
-    static get(paramarg0: FileSystem): FileSystem_2;
+    static get(self: FileSystem): FileSystem_2;
     constructor()
     appendingSink(file: Path): Sink;
     appendingSink(file: Path, mustExist: boolean): Sink;

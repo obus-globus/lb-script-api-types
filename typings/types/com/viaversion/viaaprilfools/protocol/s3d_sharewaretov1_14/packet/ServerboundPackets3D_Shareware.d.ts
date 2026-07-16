@@ -2,7 +2,6 @@ import type { Direction } from '../../../../../../com/viaversion/viaversion/api/
 import type { ServerboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ServerboundPackets3D_Shareware extends Enum<ServerboundPackets3D_Shareware> implements ServerboundPacketType {
     static ACCEPT_TELEPORTATION: ServerboundPackets3D_Shareware;
@@ -51,7 +50,7 @@ export class ServerboundPackets3D_Shareware extends Enum<ServerboundPackets3D_Sh
     static TELEPORT_TO_ENTITY: ServerboundPackets3D_Shareware;
     static USE_ITEM: ServerboundPackets3D_Shareware;
     static USE_ITEM_ON: ServerboundPackets3D_Shareware;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundPackets3D_Shareware;
     static values(): ServerboundPackets3D_Shareware[];
     private constructor()

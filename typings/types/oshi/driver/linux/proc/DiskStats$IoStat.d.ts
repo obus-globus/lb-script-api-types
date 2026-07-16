@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class DiskStats$IoStat extends Enum<DiskStats$IoStat> {
     static DISCARDS: DiskStats$IoStat;
@@ -22,7 +21,7 @@ export class DiskStats$IoStat extends Enum<DiskStats$IoStat> {
     static WRITES_MERGED: DiskStats$IoStat;
     static WRITES_MS: DiskStats$IoStat;
     static WRITES_SECTOR: DiskStats$IoStat;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DiskStats$IoStat;
     static values(): DiskStats$IoStat[];
     private constructor()

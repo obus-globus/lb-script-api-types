@@ -3,7 +3,6 @@ import type { State } from '../../../../../../com/viaversion/viaversion/api/prot
 import type { ServerboundPacket1_21_6 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_5to1_21_6/packet/ServerboundPacket1_21_6.d.ts'
 import type { ServerboundPacket1_21_9 } from '../../../../../../com/viaversion/viaversion/protocols/v1_21_7to1_21_9/packet/ServerboundPacket1_21_9.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ServerboundPackets1_21_6 extends Enum<ServerboundPackets1_21_6> implements ServerboundPacket1_21_6, ServerboundPacket1_21_9 {
     static ACCEPT_TELEPORTATION: ServerboundPackets1_21_6;
@@ -72,7 +71,7 @@ export class ServerboundPackets1_21_6 extends Enum<ServerboundPackets1_21_6> imp
     static TEST_INSTANCE_BLOCK_ACTION: ServerboundPackets1_21_6;
     static USE_ITEM: ServerboundPackets1_21_6;
     static USE_ITEM_ON: ServerboundPackets1_21_6;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundPackets1_21_6;
     static values(): ServerboundPackets1_21_6[];
     private constructor()

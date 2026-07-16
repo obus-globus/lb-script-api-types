@@ -5,9 +5,9 @@ import type { KVariance } from '../../kotlin/reflect/KVariance.d.ts'
 export class KTypeProjection extends Object {
     static Companion: KTypeProjection$Companion;
     static star: KTypeProjection;
-    static contravariant(paramarg0: KType): KTypeProjection;
-    static covariant(paramarg0: KType): KTypeProjection;
-    static invariant(paramarg0: KType): KTypeProjection;
+    static contravariant(type: KType): KTypeProjection;
+    static covariant(type: KType): KTypeProjection;
+    static invariant(type: KType): KTypeProjection;
     constructor(variance: KVariance | null, type: KType | null)
     readonly type: KType | null;
     readonly variance: KVariance | null;

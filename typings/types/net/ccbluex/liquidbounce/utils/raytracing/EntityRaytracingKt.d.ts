@@ -4,8 +4,8 @@ import type { Rotation } from '../../../../../net/ccbluex/liquidbounce/utils/aim
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityHitResult } from '../../../../../net/minecraft/world/phys/EntityHitResult.d.ts'
 export class EntityRaytracingKt extends Object {
-    static findEntityInCrosshair(range: number, rotation: Rotation, predicate: (param0: Entity) => boolean): EntityHitResult;
-    static findEntityInCrosshair(entity: Entity, range: number, rotation: Rotation, predicate: (param0: Entity) => boolean): EntityHitResult;
+    static findEntityInCrosshair(range: number, rotation: Rotation, predicate: ((param0: Entity) => boolean) | null): EntityHitResult | null;
+    static findEntityInCrosshair(self: Entity, range: number, rotation: Rotation, predicate: ((param0: Entity) => boolean) | null): EntityHitResult | null;
     /**
      * Ray-traces from the current camera entity and returns a hit result when the traced entity equals {@link toEntity}.
      *
@@ -15,6 +15,6 @@ export class EntityRaytracingKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/EntityRaytracing.kt#L66 | src/main/kotlin/net/ccbluex/liquidbounce/utils/raytracing/EntityRaytracing.kt:66}
      */
-    static isLookingAtEntity(toEntity: Entity, range: number, rotation: Rotation): EntityHitResult;
-    static isLookingAtEntity(fromEntity: Entity, toEntity: Entity, rotation: Rotation, range: number, throughWallsRange: number): EntityHitResult;
+    static isLookingAtEntity(toEntity: Entity, range: number, rotation: Rotation): EntityHitResult | null;
+    static isLookingAtEntity(fromEntity: Entity, toEntity: Entity, rotation: Rotation, range: number, throughWallsRange: number): EntityHitResult | null;
 }

@@ -9,8 +9,8 @@ import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BlockEntityCustomNameToComponentFix extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
-    static fixTagCustomName(paramtag: Dynamic<Object>): Dynamic<Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
+    static fixTagCustomName<T extends unknown>(paramtag: Dynamic<T>): Dynamic<T>;
     constructor(outputSchema: Schema)
     makeRule(): TypeRewriteRule;
 }

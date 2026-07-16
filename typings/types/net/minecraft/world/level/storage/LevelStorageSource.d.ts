@@ -28,7 +28,7 @@ export class LevelStorageSource extends Object {
     static getPackConfig(paramlevelDataTag: Dynamic<Object>, parampackRepository: PackRepository, paramsafeMode: boolean): WorldLoader$PackConfig;
     static parseValidator(paramconfigPath: Path): DirectoryValidator;
     static readDataConfig(paramlevelData: Dynamic<Object>): WorldDataConfiguration;
-    static readExistingSavedData(paramaccess: LevelStorageSource$LevelStorageAccess, paramregistryAccess: HolderLookup$Provider, paramsavedDataType: SavedDataType<SavedData>): DataResult<SavedData>;
+    static readExistingSavedData<T extends SavedData>(paramaccess: LevelStorageSource$LevelStorageAccess, paramregistryAccess: HolderLookup$Provider, paramsavedDataType: SavedDataType<T>): DataResult<T>;
     static writeGameRules(paramworldData: WorldData, paramworldFolder: Path, paramgameRules: GameRules): void;
     static writeWorldGenSettings(paramregistryAccess: RegistryAccess, paramworldFolder: Path, paramworldGenSettings: WorldGenSettings): void;
     constructor(baseDir: Path, backupDir: Path, worldDirValidator: DirectoryValidator, fixerUpper: DataFixer)

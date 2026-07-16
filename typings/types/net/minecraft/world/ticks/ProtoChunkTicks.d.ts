@@ -5,7 +5,7 @@ import type { ScheduledTick } from '../../../../net/minecraft/world/ticks/Schedu
 import type { SerializableTickContainer } from '../../../../net/minecraft/world/ticks/SerializableTickContainer.d.ts'
 import type { TickContainerAccess } from '../../../../net/minecraft/world/ticks/TickContainerAccess.d.ts'
 export class ProtoChunkTicks<T extends unknown> extends Object implements SerializableTickContainer<T>, TickContainerAccess<T> {
-    static load(paramticks: SavedTick<Object>[]): ProtoChunkTicks<Object>;
+    static load<T extends unknown>(paramticks: SavedTick<T>[]): ProtoChunkTicks<T>;
     constructor()
     // private ticks: SavedTick<T>[];
     // private ticksPerPosition: SavedTick<Object>[];

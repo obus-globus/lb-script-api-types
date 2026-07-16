@@ -25,8 +25,8 @@ export class ThreadingImpl extends Object {
     static enterPhase(paramarg0: number): void;
     static getCurrentPhase(): number;
     static isGameCrashed(): boolean;
-    static runOnClient(paramarg0: () => void): void;
-    static runOnServer(paramarg0: () => void): void;
+    static runOnClient<E extends Throwable>(paramarg0: () => void): void;
+    static runOnServer<E extends Throwable>(paramarg0: () => void): void;
     static runTestThread(paramarg0: () => void): void;
     static runTick(): void;
     static setGameCrashed(): void;

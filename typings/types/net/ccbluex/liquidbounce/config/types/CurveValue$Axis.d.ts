@@ -4,7 +4,7 @@ import type { ClosedFloatingPointRange } from '../../../../../kotlin/ranges/Clos
 import type { CurveValue$Axis$Companion } from '../../../../../net/ccbluex/liquidbounce/config/types/CurveValue$Axis$Companion.d.ts'
 export class CurveValue$Axis extends Record {
     static Companion: CurveValue$Axis$Companion;
-    static axis(string: string, range: ClosedFloatingPointRange<number>): CurveValue$Axis;
+    static axis(self: string, range: ClosedFloatingPointRange<number>): CurveValue$Axis;
     constructor(label: string, range: ClosedFloatingPointRange<number>)
     // private label: string;
     /*not mapped: */ label(): string;

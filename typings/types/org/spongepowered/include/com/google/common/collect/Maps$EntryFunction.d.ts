@@ -6,7 +6,7 @@ import type { Function } from '../../../../../../../org/spongepowered/include/co
 export class Maps$EntryFunction extends Enum<Maps$EntryFunction> implements Function<Map$Entry<Object, Object>, Object> {
     static KEY: Maps$EntryFunction;
     static VALUE: Maps$EntryFunction;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Maps$EntryFunction;
     static values(): Maps$EntryFunction[];
     constructor(arg2: Maps$1)

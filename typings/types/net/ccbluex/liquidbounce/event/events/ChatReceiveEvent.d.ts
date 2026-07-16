@@ -1,6 +1,5 @@
 import type { Gson } from '../../../../../com/google/gson/Gson.d.ts'
 import type { UnaryOperator } from '../../../../../java/util/function/UnaryOperator.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CancellableEvent } from '../../../../../net/ccbluex/liquidbounce/event/CancellableEvent.d.ts'
 import type { ChatReceiveEvent$ChatType } from '../../../../../net/ccbluex/liquidbounce/event/events/ChatReceiveEvent$ChatType.d.ts'
 import type { WebSocketEvent } from '../../../../../net/ccbluex/liquidbounce/integration/interop/protocol/event/WebSocketEvent.d.ts'
@@ -9,8 +8,8 @@ import type { Component } from '../../../../../net/minecraft/network/chat/Compon
  * Fires when a chat or system message is received, exposing the raw message string and its component form. Cancellable - cancelling hides the message.
  */
 export class ChatReceiveEvent extends CancellableEvent implements WebSocketEvent {
-    constructor(message: string, textData: Component, type: ChatReceiveEvent$ChatType, applyChatDecoration: (param0: Component) => Object | null)
-    readonly applyChatDecoration: (param0: Component) => Object | null;
+    constructor(message: string, textData: Component, type: ChatReceiveEvent$ChatType, applyChatDecoration: (param0: Component) => Component)
+    readonly applyChatDecoration: (param0: Component) => Component;
     readonly message: string;
     readonly serializeAsync: boolean;
     readonly serializer: Gson;

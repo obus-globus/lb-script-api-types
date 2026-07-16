@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class PacketViolationSeverity extends Enum<PacketViolationSeverity> {
     static FinalWarning: PacketViolationSeverity;
@@ -10,7 +9,7 @@ export class PacketViolationSeverity extends Enum<PacketViolationSeverity> {
     static getByName(paramarg0: string, paramarg1: PacketViolationSeverity): PacketViolationSeverity;
     static getByValue(paramarg0: number): PacketViolationSeverity;
     static getByValue(paramarg0: number, paramarg1: PacketViolationSeverity): PacketViolationSeverity;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PacketViolationSeverity;
     static values(): PacketViolationSeverity[];
     private constructor(arg2: number)

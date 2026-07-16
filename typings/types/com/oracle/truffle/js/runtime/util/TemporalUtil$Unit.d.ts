@@ -1,6 +1,5 @@
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class TemporalUtil$Unit extends Enum<TemporalUtil$Unit> {
     static AUTO: TemporalUtil$Unit;
@@ -17,7 +16,7 @@ export class TemporalUtil$Unit extends Enum<TemporalUtil$Unit> {
     static VALUES: TemporalUtil$Unit[];
     static WEEK: TemporalUtil$Unit;
     static YEAR: TemporalUtil$Unit;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TemporalUtil$Unit;
     static values(): TemporalUtil$Unit[];
     private constructor(name: TruffleString)

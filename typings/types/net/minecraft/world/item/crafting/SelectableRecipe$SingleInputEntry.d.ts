@@ -6,7 +6,7 @@ import type { Ingredient } from '../../../../../net/minecraft/world/item/craftin
 import type { Recipe } from '../../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
 import type { SelectableRecipe } from '../../../../../net/minecraft/world/item/crafting/SelectableRecipe.d.ts'
 export class SelectableRecipe$SingleInputEntry<T extends Recipe<any>> extends Record {
-    static noRecipeCodec(): StreamCodec<RegistryFriendlyByteBuf, SelectableRecipe$SingleInputEntry<any>>;
+    static noRecipeCodec<T extends Recipe<any>>(): StreamCodec<RegistryFriendlyByteBuf, SelectableRecipe$SingleInputEntry<T>>;
     constructor(input: Ingredient, recipe: SelectableRecipe<T>)
     // private input: Ingredient;
     // private recipe: SelectableRecipe<T>;

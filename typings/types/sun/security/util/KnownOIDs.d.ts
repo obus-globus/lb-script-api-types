@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class KnownOIDs extends Enum<KnownOIDs> {
     static AD_TimeStamping: KnownOIDs;
@@ -283,7 +282,7 @@ export class KnownOIDs extends Enum<KnownOIDs> {
     static sect571r1: KnownOIDs;
     static serverAuth: KnownOIDs;
     static findMatch(paramarg0: string): KnownOIDs;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): KnownOIDs;
     static values(): KnownOIDs[];
     private constructor(arg2: string)

@@ -1,11 +1,10 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class IdleState extends Enum<IdleState> {
     static ALL_IDLE: IdleState;
     static READER_IDLE: IdleState;
     static WRITER_IDLE: IdleState;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): IdleState;
     static values(): IdleState[];
     private constructor()

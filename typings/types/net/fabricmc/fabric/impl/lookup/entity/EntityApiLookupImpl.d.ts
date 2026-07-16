@@ -10,7 +10,7 @@ import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity
 import type { EntityType } from '../../../../../../net/minecraft/world/entity/EntityType.d.ts'
 export class EntityApiLookupImpl<A extends unknown, C extends unknown> extends Object implements EntityApiLookup<A, C> {
     static checkSelfImplementingTypes(paramarg0: MinecraftServer): void;
-    static get(paramarg0: Identifier, paramarg1: Class<Object>, paramarg2: Class<Object>): EntityApiLookup<Object, Object>;
+    static get<A extends unknown, C extends unknown>(paramarg0: Identifier, paramarg1: Class<A>, paramarg2: Class<C>): EntityApiLookup<A, C>;
     private constructor(arg0: Identifier, arg1: Class<A>, arg2: Class<C>)
     // private apiClass: Class<A>;
     // private contextClass: Class<C>;

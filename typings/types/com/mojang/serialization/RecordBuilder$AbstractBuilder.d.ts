@@ -16,7 +16,7 @@ export abstract class RecordBuilder$AbstractBuilder<T extends unknown, R extends
     build(arg0: T): DataResult<T>;
     build(arg0: DataResult<T>): DataResult<T>;
     initBuilder(): R;
-    mapError(arg0: (param0: string) => Object | null): RecordBuilder<T>;
+    mapError(arg0: (param0: string) => string): RecordBuilder<T>;
     ops(): DynamicOps<T>;
     setLifecycle(arg0: Lifecycle): RecordBuilder<T>;
     withErrorsFrom(arg0: DataResult<Object>): RecordBuilder<T>;

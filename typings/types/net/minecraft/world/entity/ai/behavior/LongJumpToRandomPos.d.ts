@@ -11,7 +11,7 @@ import type { LongJumpToRandomPos$PossibleJump } from '../../../../../../net/min
 import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class LongJumpToRandomPos<E extends Mob> extends Behavior<E> {
     static DEFAULT_DURATION: number;
-    static defaultAcceptableLandingSpot(parambody: Mob | null, paramtargetPos: BlockPos): boolean;
+    static defaultAcceptableLandingSpot<E extends Mob>(parambody: E, paramtargetPos: BlockPos): boolean;
     constructor(timeBetweenLongJumps: UniformInt, maxLongJumpHeight: number, maxLongJumpWidth: number, maxJumpVelocityMultiplier: number, getJumpSound: (param0: E) => SoundEvent)
     constructor(timeBetweenLongJumps: UniformInt, maxLongJumpHeight: number, maxLongJumpWidth: number, maxJumpVelocityMultiplier: number, getJumpSound: (param0: E) => SoundEvent, acceptableLandingSpot: (param0: E, param1: BlockPos) => boolean)
     // private acceptableLandingSpot: (param0: E, param1: BlockPos) => boolean;

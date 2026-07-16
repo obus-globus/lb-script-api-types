@@ -1,7 +1,7 @@
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Optional } from '../../../../../../../org/spongepowered/include/com/google/common/base/Optional.d.ts'
 export class Absent<T extends unknown> extends Optional<T> {
-    static absent(): Optional<Object>;
+    static absent<T extends unknown>(): Optional<T>;
     private constructor()
     equals(arg0: Object | null): boolean;
     hashCode(): number;

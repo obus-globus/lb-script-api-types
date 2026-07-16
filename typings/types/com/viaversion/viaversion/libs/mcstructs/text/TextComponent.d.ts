@@ -46,7 +46,7 @@ export abstract class TextComponent extends Object implements Copyable<TextCompo
     append(arg0: TextComponent[]): TextComponent;
     asLegacyFormatString(): string;
     asSingleString(): string;
-    asSingleString(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;
+    asSingleString(arg0: ConsumerTracking, arg1: (param0: string) => void): void;
     asUnformattedString(): string;
     asUnformattedString(arg0: ConsumerTracking): string;
     canEqual(arg0: Object): boolean;
@@ -66,5 +66,5 @@ export abstract class TextComponent extends Object implements Copyable<TextCompo
     shallowCopy(): TextComponent;
     styled(arg0: (param0: Style) => void): TextComponent;
     toString(): string;
-    visit(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;
+    visit(arg0: ConsumerTracking, arg1: (param0: string) => void): void;
 }

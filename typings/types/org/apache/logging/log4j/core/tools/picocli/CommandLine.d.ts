@@ -1,6 +1,7 @@
 import type { PrintStream } from '../../../../../../../java/io/PrintStream.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../../../../java/lang/Runnable.d.ts'
+import type { Callable } from '../../../../../../../java/util/concurrent/Callable.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { CommandLine$Help$Ansi } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Help$Ansi.d.ts'
 import type { CommandLine$Help$ColorScheme } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Help$ColorScheme.d.ts'
@@ -11,12 +12,12 @@ import type { CommandLine$Interpreter } from '../../../../../../../org/apache/lo
 import type { CommandLine$Tracer } from '../../../../../../../org/apache/logging/log4j/core/tools/picocli/CommandLine$Tracer.d.ts'
 export class CommandLine extends Object {
     static VERSION: string;
-    static call(paramcallable: Object | null, paramout: PrintStream, ...paramargs: string[]): Object | null;
-    static call(paramcallable: Object | null, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, ...paramargs: string[]): Object | null;
-    static populateCommand(paramcommand: Object | null, ...paramargs: string[]): Object | null;
+    static call<C extends Callable<T>, T extends unknown>(paramcallable: C, paramout: PrintStream, ...paramargs: string[]): T;
+    static call<C extends Callable<T>, T extends unknown>(paramcallable: C, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, ...paramargs: string[]): T;
+    static populateCommand<T extends unknown>(paramcommand: T, ...paramargs: string[]): T;
     static printHelpIfRequested(paramparsedCommands: CommandLine[], paramout: PrintStream, paramansi: CommandLine$Help$Ansi): boolean;
-    static run(paramrunnable: (() => void) | null, paramout: PrintStream, ...paramargs: string[]): void;
-    static run(paramrunnable: (() => void) | null, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, ...paramargs: string[]): void;
+    static run<R extends Runnable>(paramrunnable: R, paramout: PrintStream, ...paramargs: string[]): void;
+    static run<R extends Runnable>(paramrunnable: R, paramout: PrintStream, paramansi: CommandLine$Help$Ansi, ...paramargs: string[]): void;
     static usage(paramcommand: Object, paramout: PrintStream): void;
     static usage(paramcommand: Object, paramout: PrintStream, paramansi: CommandLine$Help$Ansi): void;
     static usage(paramcommand: Object, paramout: PrintStream, paramcolorScheme: CommandLine$Help$ColorScheme): void;

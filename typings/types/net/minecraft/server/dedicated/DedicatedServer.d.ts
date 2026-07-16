@@ -57,7 +57,7 @@ export class DedicatedServer extends MinecraftServer implements ServerInterface 
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
-    static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
+    static spin<S extends MinecraftServer>(paramfactory: (param0: Thread) => S): S;
     constructor(serverThread: Thread, levelStorageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, settings: DedicatedServerSettings, fixerUpper: DataFixer, services: Services, jsonRpcServer: ManagementServer, notificationManager: NotificationManager)
     // private codeOfConductTexts: { [key: string]: string };
     // private consoleInput: ConsoleInput[];

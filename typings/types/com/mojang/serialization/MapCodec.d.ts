@@ -20,15 +20,15 @@ import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.
 import type { Stream } from '../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class MapCodec<A extends unknown> extends CompressorHolder implements MapDecoder<A>, MapEncoder<A> {
-    static assumeMapUnsafe(paramarg0: Codec<Object>): MapCodec<Object>;
-    static makeCompressedBuilder(paramarg0: DynamicOps<Object>, paramarg1: KeyCompressor<Object>): RecordBuilder<Object>;
-    static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>): MapCodec<Object>;
-    static of(paramarg0: MapEncoder<Object>, paramarg1: MapDecoder<Object>, paramarg2: () => string): MapCodec<Object>;
-    static recursive(paramarg0: string, paramarg1: (param0: Codec<Object>) => MapCodec<Object>): MapCodec<Object>;
-    static unit(paramarg0: Object | null): MapCodec<Object>;
-    static unit(paramarg0: () => Object | null): MapCodec<Object>;
-    static unitCodec(paramarg0: Object | null): Codec<Object>;
-    static unitCodec(paramarg0: () => Object | null): Codec<Object>;
+    static assumeMapUnsafe<A extends unknown>(paramarg0: Codec<A>): MapCodec<A>;
+    static makeCompressedBuilder<T extends unknown>(paramarg0: DynamicOps<T>, paramarg1: KeyCompressor<T>): RecordBuilder<T>;
+    static of<A extends unknown>(paramarg0: MapEncoder<A>, paramarg1: MapDecoder<A>): MapCodec<A>;
+    static of<A extends unknown>(paramarg0: MapEncoder<A>, paramarg1: MapDecoder<A>, paramarg2: () => string): MapCodec<A>;
+    static recursive<A extends unknown>(paramarg0: string, paramarg1: (param0: Codec<A>) => MapCodec<A>): MapCodec<A>;
+    static unit<A extends unknown>(paramarg0: A): MapCodec<A>;
+    static unit<A extends unknown>(paramarg0: () => A): MapCodec<A>;
+    static unitCodec<A extends unknown>(paramarg0: A): Codec<A>;
+    static unitCodec<A extends unknown>(paramarg0: () => A): Codec<A>;
     constructor()
     ap<E extends unknown>(arg0: MapDecoder<(param0: A) => E>): MapDecoder<E>;
     codec(): Codec<A>;
@@ -52,10 +52,10 @@ export abstract class MapCodec<A extends unknown> extends CompressorHolder imple
     mapResult(arg0: MapCodec$ResultFunction<A>): MapCodec<A>;
     orElse(arg0: A): MapCodec<A>;
     orElse(arg0: (param0: string) => void, arg1: A): MapCodec<A>;
-    orElse(arg0: (param0: string) => Object | null, arg1: A): MapCodec<A>;
+    orElse(arg0: (param0: string) => string, arg1: A): MapCodec<A>;
     orElseGet(arg0: (param0: string) => void, arg1: () => A): MapCodec<A>;
     orElseGet(arg0: () => A): MapCodec<A>;
-    orElseGet(arg0: (param0: string) => Object | null, arg1: () => A): MapCodec<A>;
+    orElseGet(arg0: (param0: string) => string, arg1: () => A): MapCodec<A>;
     partialDispatch<E extends unknown>(arg0: (param0: E) => DataResult<A>, arg1: (param0: A) => DataResult<MapCodec<E>>): Codec<E>;
     setPartial(arg0: () => A): MapCodec<A>;
     stable(): MapCodec<A>;

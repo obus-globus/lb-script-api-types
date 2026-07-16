@@ -1,7 +1,6 @@
 import type { EntityType } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityType.d.ts'
 import type { Protocol } from '../../../../../../com/viaversion/viaversion/api/protocol/Protocol.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class EntityTypes25w14craftmine extends Enum<EntityTypes25w14craftmine> implements EntityType {
     static ABSTRACT_AGEABLE: EntityTypes25w14craftmine;
@@ -209,7 +208,7 @@ export class EntityTypes25w14craftmine extends Enum<EntityTypes25w14craftmine> i
     static ZOMBIFIED_PIGLIN: EntityTypes25w14craftmine;
     static getTypeFromId(paramarg0: number): EntityType;
     static initialize(paramarg0: Protocol<any, any, any, any>): void;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityTypes25w14craftmine;
     static values(): EntityTypes25w14craftmine[];
     private constructor(arg2: EntityType)

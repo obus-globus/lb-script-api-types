@@ -3,9 +3,9 @@ import type { Sink } from '../../../kotlinx/io/Sink.d.ts'
 import type { Source } from '../../../kotlinx/io/Source.d.ts'
 import type { Path } from '../../../kotlinx/io/files/Path.d.ts'
 export class PathsKt extends Object {
-    static Path(paramarg0: string, ...paramarg1: string[]): Path;
-    static Path(paramarg0: Path, ...paramarg1: string[]): Path;
-    static removeTrailingSeparators(paramarg0: string, paramarg1: boolean): string;
-    static sinkDeprecated(paramarg0: Path): Sink;
-    static sourceDeprecated(paramarg0: Path): Source;
+    static Path(base: string, ...parts: string[]): Path;
+    static Path(base: Path, ...parts: string[]): Path;
+    static removeTrailingSeparators(path: string, isWindows_: boolean): string;
+    static sinkDeprecated(self: Path): Sink;
+    static sourceDeprecated(self: Path): Source;
 }

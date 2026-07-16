@@ -3,16 +3,15 @@ import type { IdentifierIndex } from '../../../../../../../io/github/douira/glsl
 import type { PrefixQueryable } from '../../../../../../../io/github/douira/glsl_transformer/ast/query/index/PrefixQueryable.d.ts'
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class PrefixIdentifierIndex<S extends Identifier[], I extends { [key: string]: any }> extends IdentifierIndex<S, I> implements PrefixQueryable<S, Identifier> {
-    static withOnlyExact(paramarg0: () => Object | null): IdentifierIndex<any, { [key: string]: Object | null }>;
+    static withOnlyExact<R extends Identifier[]>(paramarg0: () => R): IdentifierIndex<R, { [key: string]: R }>;
     static withOnlyExact(): IdentifierIndex<Identifier[], { [key: string]: Identifier[] }>;
     static withOnlyExactOrdered(): IdentifierIndex<Identifier[], { [key: string]: Identifier[] }>;
-    static withPermuterm(paramarg0: () => Object | null): PrefixIdentifierIndex<any, Map<Object | null, Identifier>>;
+    static withPermuterm<R extends Identifier[]>(paramarg0: () => R): PrefixIdentifierIndex<R, Map<R, Identifier>>;
     static withPermuterm(): PrefixIdentifierIndex<Identifier[], Map<Identifier[], Identifier>>;
-    static withPrefix(paramarg0: () => Object | null): PrefixIdentifierIndex<any, Map<Object | null, Identifier>>;
+    static withPrefix<R extends Identifier[]>(paramarg0: () => R): PrefixIdentifierIndex<R, Map<R, Identifier>>;
     static withPrefix(): PrefixIdentifierIndex<Identifier[], Map<Identifier[], Identifier>>;
-    static withPrefixSuffix(paramarg0: () => Object | null): PrefixIdentifierIndex<any, Map<Object | null, Identifier>>;
+    static withPrefixSuffix<R extends Identifier[]>(paramarg0: () => R): PrefixIdentifierIndex<R, Map<R, Identifier>>;
     static withPrefixSuffix(): PrefixIdentifierIndex<Identifier[], Map<Identifier[], Identifier>>;
     constructor(arg0: I, arg1: () => S)
     prefixMap(arg0: string): { [key: string]: S };

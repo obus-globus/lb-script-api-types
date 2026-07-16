@@ -3,7 +3,7 @@ import type { ObjectPool } from '../../../../io/netty/util/internal/ObjectPool.d
 import type { ObjectPool$ObjectCreator } from '../../../../io/netty/util/internal/ObjectPool$ObjectCreator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ObjectPool$RecyclerObjectPool<T extends unknown> extends ObjectPool<T> {
-    static newPool(paramarg0: ObjectPool$ObjectCreator<Object>): ObjectPool<Object>;
+    static newPool<T extends unknown>(paramarg0: ObjectPool$ObjectCreator<T>): ObjectPool<T>;
     constructor(arg0: ObjectPool$ObjectCreator<T>)
     // private recycler: Recycler<T>;
     get(): T;

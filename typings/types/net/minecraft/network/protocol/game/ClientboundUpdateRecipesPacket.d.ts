@@ -14,7 +14,7 @@ import type { SelectableRecipe$SingleInputSet } from '../../../../../net/minecra
 import type { StonecutterRecipe } from '../../../../../net/minecraft/world/item/crafting/StonecutterRecipe.d.ts'
 export class ClientboundUpdateRecipesPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundUpdateRecipesPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(itemSets: Map<ResourceKey<RecipePropertySet>, RecipePropertySet>, stonecutterRecipes: SelectableRecipe$SingleInputSet<StonecutterRecipe>)
     // private itemSets: Map<ResourceKey<RecipePropertySet>, RecipePropertySet>;
     // private stonecutterRecipes: SelectableRecipe$SingleInputSet<StonecutterRecipe>;

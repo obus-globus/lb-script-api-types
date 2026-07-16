@@ -12,8 +12,8 @@ import type { AttributeModifier$Operation } from '../../../../../net/minecraft/w
 import type { ItemAttributeModifiers$Entry } from '../../../../../net/minecraft/world/item/component/ItemAttributeModifiers$Entry.d.ts'
 export class AttributeModifiersPredicate$EntryPredicate extends Record implements Predicate<ItemAttributeModifiers$Entry> {
     static CODEC: Codec<AttributeModifiersPredicate$EntryPredicate>;
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(attribute: Optional<Holder<Attribute>[]>, id: Optional<Identifier>, amount: MinMaxBounds$Doubles, operation: Optional<AttributeModifier$Operation>, slot: Optional<EquipmentSlot[]>)
     // private amount: MinMaxBounds$Doubles;
     // private attribute: Optional<Holder<Attribute>[]>;

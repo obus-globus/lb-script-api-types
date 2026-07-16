@@ -16,13 +16,13 @@ import type { LootItemCondition } from '../../../../../../../net/minecraft/world
 export abstract class LootPoolEntryContainer extends Object implements Validatable, ComposableEntryContainer {
     static ALWAYS_FALSE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
+    static listValidatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T[]) => DataResult<T[]>;
     static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
     static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
+    static validateReference<T extends Validatable>(paramcontext: ValidationContext, paramid: ResourceKey<T>): void;
+    static validatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T) => DataResult<T>;
     constructor(conditions: LootItemCondition[])
     // private compositeCondition: (param0: LootContext) => boolean;
     // private conditions: LootItemCondition[];

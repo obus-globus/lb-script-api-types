@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class DateFormat$BooleanAttribute extends Enum<DateFormat$BooleanAttribute> {
     static PARSE_ALLOW_NUMERIC: DateFormat$BooleanAttribute;
@@ -7,7 +6,7 @@ export class DateFormat$BooleanAttribute extends Enum<DateFormat$BooleanAttribut
     static PARSE_MULTIPLE_PATTERNS_FOR_MATCH: DateFormat$BooleanAttribute;
     static PARSE_PARTIAL_LITERAL_MATCH: DateFormat$BooleanAttribute;
     static PARSE_PARTIAL_MATCH: DateFormat$BooleanAttribute;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DateFormat$BooleanAttribute;
     static values(): DateFormat$BooleanAttribute[];
     private constructor()

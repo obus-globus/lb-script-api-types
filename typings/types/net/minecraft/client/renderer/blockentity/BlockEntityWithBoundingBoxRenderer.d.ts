@@ -12,7 +12,7 @@ import type { BoundingBoxRenderable } from '../../../../../net/minecraft/world/l
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class BlockEntityWithBoundingBoxRenderer<T extends BlockEntity & BoundingBoxRenderable> extends Object implements BlockEntityRenderer<T, BlockEntityWithBoundingBoxRenderState> {
     static STRUCTURE_VOIDS_COLOR: number;
-    static extract(paramblockEntity: BlockEntity | null, paramstate: BlockEntityWithBoundingBoxRenderState): void;
+    static extract<T extends BlockEntity & BoundingBoxRenderable>(paramblockEntity: T, paramstate: BlockEntityWithBoundingBoxRenderState): void;
     constructor()
     createRenderState(): BlockEntityWithBoundingBoxRenderState;
     extractRenderState(blockEntity: T, state: BlockEntityWithBoundingBoxRenderState, partialTicks: number, cameraPosition: Vec3, breakProgress: ModelFeatureRenderer$CrumblingOverlay): void;

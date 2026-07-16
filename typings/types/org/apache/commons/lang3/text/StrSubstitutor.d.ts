@@ -10,8 +10,8 @@ export class StrSubstitutor extends Object {
     static DEFAULT_PREFIX: StrMatcher;
     static DEFAULT_SUFFIX: StrMatcher;
     static DEFAULT_VALUE_DELIMITER: StrMatcher;
-    static replace(paramarg0: Object, paramarg1: { [key: string]: Object | null }): string;
-    static replace(paramarg0: Object, paramarg1: { [key: string]: Object | null }, paramarg2: string, paramarg3: string): string;
+    static replace<V extends unknown>(paramarg0: Object, paramarg1: { [key: string]: V }): string;
+    static replace<V extends unknown>(paramarg0: Object, paramarg1: { [key: string]: V }, paramarg2: string, paramarg3: string): string;
     static replace(paramarg0: Object, paramarg1: { [key: string]: any }): string;
     static replaceSystemProperties(paramarg0: Object): string;
     constructor()

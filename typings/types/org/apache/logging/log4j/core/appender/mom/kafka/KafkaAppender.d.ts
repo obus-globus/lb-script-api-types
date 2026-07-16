@@ -7,6 +7,7 @@ import type { Filter } from '../../../../../../../../org/apache/logging/log4j/co
 import type { Layout } from '../../../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { LogEvent } from '../../../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
 import type { AbstractAppender } from '../../../../../../../../org/apache/logging/log4j/core/appender/AbstractAppender.d.ts'
+import type { KafkaAppender$Builder } from '../../../../../../../../org/apache/logging/log4j/core/appender/mom/kafka/KafkaAppender$Builder.d.ts'
 import type { KafkaManager } from '../../../../../../../../org/apache/logging/log4j/core/appender/mom/kafka/KafkaManager.d.ts'
 import type { Configuration } from '../../../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { Property } from '../../../../../../../../org/apache/logging/log4j/core/config/Property.d.ts'
@@ -16,7 +17,7 @@ export class KafkaAppender extends AbstractAppender {
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Appender[];
     static createAppender(paramlayout: Layout<Serializable>, paramfilter: Filter, paramname: string, paramignoreExceptions: boolean, paramtopic: string, paramproperties: Property[], paramconfiguration: Configuration, paramkey: string): KafkaAppender;
-    static newBuilder(): Object | null;
+    static newBuilder<B extends KafkaAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: boolean, arg4: KafkaManager, arg5: Property[], arg6: number, arg7: any)
     // private manager: KafkaManager;

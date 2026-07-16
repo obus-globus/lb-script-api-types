@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Win32Process$ProcessXPProperty extends Enum<Win32Process$ProcessXPProperty> {
     static EXECUTABLEPATH: Win32Process$ProcessXPProperty;
@@ -10,7 +9,7 @@ export class Win32Process$ProcessXPProperty extends Enum<Win32Process$ProcessXPP
     static PROCESSID: Win32Process$ProcessXPProperty;
     static THREADCOUNT: Win32Process$ProcessXPProperty;
     static USERMODETIME: Win32Process$ProcessXPProperty;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Win32Process$ProcessXPProperty;
     static values(): Win32Process$ProcessXPProperty[];
     private constructor()

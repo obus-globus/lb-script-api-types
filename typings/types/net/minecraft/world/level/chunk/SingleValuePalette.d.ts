@@ -4,7 +4,7 @@ import type { FriendlyByteBuf } from '../../../../../net/minecraft/network/Frien
 import type { Palette } from '../../../../../net/minecraft/world/level/chunk/Palette.d.ts'
 import type { PaletteResize } from '../../../../../net/minecraft/world/level/chunk/PaletteResize.d.ts'
 export class SingleValuePalette<T extends unknown> extends Object implements Palette<T> {
-    static create(parambits: number, parampaletteEntries: (Object | null)[]): Palette<Object>;
+    static create<A extends unknown>(parambits: number, parampaletteEntries: A[]): Palette<A>;
     constructor(paletteEntries: T[])
     // private value: T;
     copy(): Palette<T>;

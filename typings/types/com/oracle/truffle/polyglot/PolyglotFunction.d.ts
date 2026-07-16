@@ -9,12 +9,12 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 export class PolyglotFunction<T extends unknown, R extends unknown> extends Object implements PolyglotWrapper, Function<T, R> {
     static asInstance(paramv: Object): PolyglotWrapper;
-    static create(paramlanguageContext: PolyglotLanguageContext, paramfunction: Object, paramreturnClass: Class<Object>, paramreturnType: Type, paramparamClass: Class<Object>, paramparamType: Type): PolyglotFunction<Object, Object>;
+    static create<T extends unknown>(paramlanguageContext: PolyglotLanguageContext, paramfunction: Object, paramreturnClass: Class<Object>, paramreturnType: Type, paramparamClass: Class<Object>, paramparamType: Type): PolyglotFunction<Object, Object>;
     static equals(paramcontext: Object, paramreceiver: Object, paramobj: Object): boolean;
     static equalsProxy(paramwrapper: PolyglotWrapper, paramother: Object): boolean;
     static getHostProxy(paramv: Object): PolyglotWrapper;
     static hashCode(paramcontext: Object, paramreceiver: Object): number;
-    static identity(): (param0: Object | null) => Object | null;
+    static identity<T extends unknown>(): (param0: T) => T;
     static isHostProxy(paramv: Object): boolean;
     static isInstance(paramv: Object): boolean;
     static toString(paramthisObj: PolyglotWrapper): string;

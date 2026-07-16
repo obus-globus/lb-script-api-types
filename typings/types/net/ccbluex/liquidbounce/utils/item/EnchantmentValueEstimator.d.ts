@@ -8,15 +8,15 @@ import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 import type { EnchantmentValueEstimator$WeightedEnchantment } from '../../../../../net/ccbluex/liquidbounce/utils/item/EnchantmentValueEstimator$WeightedEnchantment.d.ts'
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class EnchantmentValueEstimator extends Object implements Comparator<ItemStack> {
-    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object | null, param1: Object | null) => number;
-    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static naturalOrder(): (param0: Object | null, param1: Object | null) => number;
-    static nullsFirst(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static nullsLast(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static reverseOrder(): (param0: Object | null, param1: Object | null) => number;
+    static comparing<T extends unknown, U extends Comparable<Object>>(paramarg0: (param0: Object) => U): (param0: T, param1: T) => number;
+    static comparing<T extends unknown, U extends unknown>(paramarg0: (param0: Object) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
+    static comparingDouble<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
+    static comparingInt<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
+    static comparingLong<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
+    static naturalOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
+    static nullsFirst<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
+    static nullsLast<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
+    static reverseOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
     constructor(...weightedEnchantments: EnchantmentValueEstimator$WeightedEnchantment[])
     // private weightedEnchantments: EnchantmentValueEstimator$WeightedEnchantment[];
     compare(o1: ItemStack, o2: ItemStack): number;

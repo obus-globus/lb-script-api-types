@@ -8,11 +8,11 @@ export class Path extends Object implements Comparable<Path> {
     static Companion: Path$Companion;
     static DIRECTORY_SEPARATOR: string;
     static get(paramarg0: File): Path;
-    static get(paramarg0: File, paramarg1: boolean): Path;
+    static get(self: File, normalize: boolean): Path;
     static get(paramarg0: string): Path;
-    static get(paramarg0: string, paramarg1: boolean): Path;
+    static get(self: string, normalize: boolean): Path;
     static get(paramarg0: Path_2): Path;
-    static get(paramarg0: Path_2, paramarg1: boolean): Path;
+    static get(self: Path_2, normalize: boolean): Path;
     constructor(bytes: ByteString)
     // private bytes: ByteString;
     /*not mapped: */ getBytes$okio(): ByteString;

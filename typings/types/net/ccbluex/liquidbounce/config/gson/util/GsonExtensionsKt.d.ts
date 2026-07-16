@@ -9,20 +9,22 @@ import type { Reader } from '../../../../../../java/io/Reader.d.ts'
 import type { Charset } from '../../../../../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../../java/lang/CharSequence.d.ts'
+import type { JsonArrayBuilder } from '../../../../../../net/ccbluex/liquidbounce/config/gson/util/JsonArrayBuilder.d.ts'
+import type { JsonObjectBuilder } from '../../../../../../net/ccbluex/liquidbounce/config/gson/util/JsonObjectBuilder.d.ts'
 export class GsonExtensionsKt extends Object {
-    static deserialize(jsonDeserializationContext: JsonDeserializationContext, json: JsonElement): Object | null;
-    static getOrNull(jsonArray: JsonElement[], index: number): JsonElement;
-    static jsonArray(initialCapacity: number, builderAction: (param0: Object) => void): JsonElement[];
+    static deserialize<T extends unknown>(self: JsonDeserializationContext, json: JsonElement): T;
+    static getOrNull(self: JsonElement[], index: number): JsonElement | null;
+    static jsonArray(initialCapacity: number, builderAction: (param0: JsonArrayBuilder) => void): JsonElement[];
     static jsonArrayOf(...elements: JsonElement[]): JsonElement[];
-    static jsonObject(builderAction: (param0: Object) => void): JsonObject;
-    static parseTree(jsonReader: JsonReader): JsonElement;
+    static jsonObject(builderAction: (param0: JsonObjectBuilder) => void): JsonObject;
+    static parseTree(self: JsonReader): JsonElement;
     /**
      * Read JSON content
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt#L43 | src/main/kotlin/net/ccbluex/liquidbounce/config/gson/util/GsonExtensions.kt:43}
      */
-    static readJson(paramarg0: File, paramarg1: Charset): Object | null;
-    static readJson(paramarg0: InputStream, paramarg1: Charset): Object | null;
-    static readJson(paramarg0: Reader, paramarg1: Gson): Object | null;
-    static readJson(charSequence: CharSequence): Object | null;
+    static readJson<T extends unknown>(self: File, charset: Charset): T;
+    static readJson<T extends unknown>(self: InputStream, charset: Charset): T;
+    static readJson<T extends unknown>(self: Reader, gson: Gson): T;
+    static readJson<T extends unknown>(self: CharSequence): T;
 }

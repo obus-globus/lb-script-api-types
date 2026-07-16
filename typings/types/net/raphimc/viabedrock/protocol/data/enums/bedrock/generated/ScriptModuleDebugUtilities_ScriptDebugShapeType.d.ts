@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ScriptModuleDebugUtilities_ScriptDebugShapeType extends Enum<ScriptModuleDebugUtilities_ScriptDebugShapeType> {
     static Arrow: ScriptModuleDebugUtilities_ScriptDebugShapeType;
@@ -12,7 +11,7 @@ export class ScriptModuleDebugUtilities_ScriptDebugShapeType extends Enum<Script
     static getByName(paramarg0: string, paramarg1: ScriptModuleDebugUtilities_ScriptDebugShapeType): ScriptModuleDebugUtilities_ScriptDebugShapeType;
     static getByValue(paramarg0: number): ScriptModuleDebugUtilities_ScriptDebugShapeType;
     static getByValue(paramarg0: number, paramarg1: ScriptModuleDebugUtilities_ScriptDebugShapeType): ScriptModuleDebugUtilities_ScriptDebugShapeType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ScriptModuleDebugUtilities_ScriptDebugShapeType;
     static values(): ScriptModuleDebugUtilities_ScriptDebugShapeType[];
     private constructor(arg2: number)

@@ -8,7 +8,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class DoubledDigraphAdapter<V extends unknown> extends DigraphAdapter<V> implements DoubledDigraph<V> {
     static UNIT_WEIGHT: OptionalInt;
     static UNIT_WEIGHTS: EdgeWeights<Object>;
-    static getAdapterFactory(paramarg0: DigraphFactory<Digraph<Object>>): DigraphFactory<DoubledDigraphAdapter<Object>>;
+    static getAdapterFactory<V extends unknown>(paramarg0: DigraphFactory<Digraph<V>>): DigraphFactory<DoubledDigraphAdapter<V>>;
     constructor()
     constructor(arg0: DigraphFactory<Digraph<V>>)
     constructor(arg0: DigraphFactory<Digraph<V>>, arg1: DoubledDigraphAdapter<V>)

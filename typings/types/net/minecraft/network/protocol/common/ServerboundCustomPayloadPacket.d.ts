@@ -19,7 +19,7 @@ import type { CustomPacketPayload } from '../../../../../net/minecraft/network/p
 export class ServerboundCustomPayloadPacket extends Record implements GenericPayloadAccessor, SplittablePacket, Packet<ServerCommonPacketListener> {
     static MAX_PAYLOAD_SIZE: number;
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundCustomPayloadPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(payload: CustomPacketPayload)
     // private payload: CustomPacketPayload;
     equals(o: Object | null): boolean;

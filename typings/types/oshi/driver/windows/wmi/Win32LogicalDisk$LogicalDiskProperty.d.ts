@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Win32LogicalDisk$LogicalDiskProperty extends Enum<Win32LogicalDisk$LogicalDiskProperty> {
     static ACCESS: Win32LogicalDisk$LogicalDiskProperty;
@@ -11,7 +10,7 @@ export class Win32LogicalDisk$LogicalDiskProperty extends Enum<Win32LogicalDisk$
     static PROVIDERNAME: Win32LogicalDisk$LogicalDiskProperty;
     static SIZE: Win32LogicalDisk$LogicalDiskProperty;
     static VOLUMENAME: Win32LogicalDisk$LogicalDiskProperty;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Win32LogicalDisk$LogicalDiskProperty;
     static values(): Win32LogicalDisk$LogicalDiskProperty[];
     private constructor()

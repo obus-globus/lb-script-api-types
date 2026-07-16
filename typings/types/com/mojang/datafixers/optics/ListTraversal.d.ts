@@ -9,7 +9,7 @@ import type { Traversal$Mu } from '../../../../com/mojang/datafixers/optics/Trav
 import type { TraversalP$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/TraversalP$Mu.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ListTraversal<A extends unknown, B extends unknown> extends Object implements Traversal<A[], B[], A, B> {
-    static unbox(paramarg0: App2<Traversal$Mu<Object, Object>, Object, Object>): Traversal<Object, Object, Object, Object>;
+    static unbox<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: App2<Traversal$Mu<A, B>, S, T>): Traversal<S, T, A, B>;
     private constructor()
     eval<P extends K2>(arg0: App<TraversalP$Mu, P>): FunctionType<App2<P, A, B>, App2<P, A[], B[]>>;
     toString(): string;

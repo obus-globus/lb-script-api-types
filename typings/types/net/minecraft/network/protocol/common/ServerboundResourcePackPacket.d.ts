@@ -12,7 +12,7 @@ import type { ServerCommonPacketListener } from '../../../../../net/minecraft/ne
 import type { ServerboundResourcePackPacket$Action } from '../../../../../net/minecraft/network/protocol/common/ServerboundResourcePackPacket$Action.d.ts'
 export class ServerboundResourcePackPacket extends Record implements Packet<ServerCommonPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundResourcePackPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(id: UUID, action: ServerboundResourcePackPacket$Action)
     action: ServerboundResourcePackPacket$Action;
     // private id: UUID;

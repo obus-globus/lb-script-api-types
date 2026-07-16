@@ -6,14 +6,14 @@ import type { Matrix3x2dc } from '../../org/joml/Matrix3x2dc.d.ts'
 import type { Vector3d } from '../../org/joml/Vector3d.d.ts'
 import type { Vector3dc } from '../../org/joml/Vector3dc.d.ts'
 export class Matrix3x2dKt extends Object {
-    static getMatrix3x2d(paramarg0: ByteBuffer, paramarg1: Matrix3x2d): Matrix3x2d;
-    static getMatrix3x2d(paramarg0: DoubleBuffer): Matrix3x2d;
-    static getMatrix3x2d(paramarg0: DoubleBuffer, paramarg1: Matrix3x2d): Matrix3x2d;
-    static putMatrix3x2d(paramarg0: ByteBuffer, paramarg1: number, paramarg2: Matrix3x2d): ByteBuffer;
-    static putMatrix3x2d(paramarg0: ByteBuffer, paramarg1: Matrix3x2d): ByteBuffer;
-    static putMatrix3x2d(paramarg0: DoubleBuffer, paramarg1: number, paramarg2: Matrix3x2d): DoubleBuffer;
-    static putMatrix3x2d(paramarg0: DoubleBuffer, paramarg1: Matrix3x2d): DoubleBuffer;
-    static times(paramarg0: Matrix3x2dc, paramarg1: Matrix3x2dc): Matrix3x2d;
-    static times(paramarg0: Matrix3x2dc, paramarg1: Vector3dc): Vector3d;
-    static timesAssign(paramarg0: Matrix3x2d, paramarg1: Matrix3x2dc): void;
+    static getMatrix3x2d(self: ByteBuffer, v: Matrix3x2d): Matrix3x2d;
+    static getMatrix3x2d(self: DoubleBuffer): Matrix3x2d;
+    static getMatrix3x2d(self: DoubleBuffer, v: Matrix3x2d): Matrix3x2d;
+    static putMatrix3x2d(self: ByteBuffer, index: number, v: Matrix3x2d): ByteBuffer;
+    static putMatrix3x2d(self: ByteBuffer, v: Matrix3x2d): ByteBuffer;
+    static putMatrix3x2d(self: DoubleBuffer, index: number, v: Matrix3x2d): DoubleBuffer;
+    static putMatrix3x2d(self: DoubleBuffer, v: Matrix3x2d): DoubleBuffer;
+    static times(self: Matrix3x2dc, m: Matrix3x2dc): Matrix3x2d;
+    static times(self: Matrix3x2dc, v: Vector3dc): Vector3d;
+    static timesAssign(self: Matrix3x2d, m: Matrix3x2dc): void;
 }

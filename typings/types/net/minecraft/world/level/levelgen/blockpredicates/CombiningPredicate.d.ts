@@ -22,7 +22,7 @@ export abstract class CombiningPredicate extends Object implements BlockPredicat
     static anyOf(parampredicates: BlockPredicate[]): BlockPredicate;
     static anyOf(parama: BlockPredicate, paramb: BlockPredicate): BlockPredicate;
     static anyOf(...parampredicates: BlockPredicate[]): BlockPredicate;
-    static codec(paramconstructor: (param0: BlockPredicate[]) => CombiningPredicate | null): MapCodec<CombiningPredicate>;
+    static codec<T extends CombiningPredicate>(paramconstructor: (param0: BlockPredicate[]) => T): MapCodec<T>;
     static hasSturdyFace(paramdirection: Direction): BlockPredicate;
     static hasSturdyFace(paramoffset: Vec3i, paramdirection: Direction): BlockPredicate;
     static insideWorld(paramoffset: Vec3i): BlockPredicate;

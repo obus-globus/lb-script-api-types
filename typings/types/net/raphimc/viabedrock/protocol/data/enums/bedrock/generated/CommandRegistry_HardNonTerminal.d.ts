@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class CommandRegistry_HardNonTerminal extends Enum<CommandRegistry_HardNonTerminal> {
     static Arg: CommandRegistry_HardNonTerminal;
@@ -99,7 +98,7 @@ export class CommandRegistry_HardNonTerminal extends Enum<CommandRegistry_HardNo
     static getByName(paramarg0: string, paramarg1: CommandRegistry_HardNonTerminal): CommandRegistry_HardNonTerminal;
     static getByValue(paramarg0: number): CommandRegistry_HardNonTerminal;
     static getByValue(paramarg0: number, paramarg1: CommandRegistry_HardNonTerminal): CommandRegistry_HardNonTerminal;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CommandRegistry_HardNonTerminal;
     static values(): CommandRegistry_HardNonTerminal[];
     private constructor(arg2: number)

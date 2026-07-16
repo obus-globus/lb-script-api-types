@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class LocalCache$NullEntry extends Enum<LocalCache$NullEntry> implements ReferenceEntry<Object, Object> {
     static INSTANCE: LocalCache$NullEntry;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LocalCache$NullEntry;
     static values(): LocalCache$NullEntry[];
     private constructor()

@@ -1,5 +1,5 @@
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 export class XCldrStub$ImmutableSet extends Object {
-    static copyOf(paramvalues: (Object | null)[]): (Object | null)[];
+    static copyOf<T extends unknown>(paramvalues: T[]): T[];
     constructor()
 }

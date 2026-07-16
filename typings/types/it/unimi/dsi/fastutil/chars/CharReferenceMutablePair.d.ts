@@ -2,8 +2,8 @@ import type { CharReferencePair } from '../../../../../it/unimi/dsi/fastutil/cha
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class CharReferenceMutablePair<V extends unknown> extends Object implements CharReferencePair<V>, Serializable {
-    static of(paramarg0: string, paramarg1: Object | null): CharReferenceMutablePair<Object>;
-    static of(paramarg0: string, paramarg1: Object | null): CharReferencePair<Object>;
+    static of<V extends unknown>(paramarg0: string, paramarg1: V): CharReferenceMutablePair<V>;
+    static of<V extends unknown>(paramarg0: string, paramarg1: V): CharReferencePair<V>;
     constructor(arg0: string, arg1: V)
     // private left: string;
     // private right: V;

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { GuiGraphicsExtractor } from '../../../../../../net/minecraft/client/gui/GuiGraphicsExtractor.d.ts'
 import type { AdvancementTabType$Sprites } from '../../../../../../net/minecraft/client/gui/screens/advancements/AdvancementTabType$Sprites.d.ts'
@@ -9,7 +8,7 @@ export class AdvancementTabType extends Enum<AdvancementTabType> {
     static BELOW: AdvancementTabType;
     static LEFT: AdvancementTabType;
     static RIGHT: AdvancementTabType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AdvancementTabType;
     static values(): AdvancementTabType[];
     private constructor(selectedSprites: AdvancementTabType$Sprites, unselectedSprites: AdvancementTabType$Sprites, width: number, height: number, max: number)

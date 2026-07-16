@@ -3,7 +3,7 @@ import type { Node } from '../../../../../../../../../net/ccbluex/netty/http/res
 import type { ServerData } from '../../../../../../../../../net/minecraft/client/multiplayer/ServerData.d.ts'
 import type { ServerList } from '../../../../../../../../../net/minecraft/client/multiplayer/ServerList.d.ts'
 export class ServerListFunctionsKt extends Object {
-    static getByAddress(serverList: ServerList, address: string): ServerData;
+    static getByAddress(self: ServerList, address: string): ServerData | null;
     static getServers(routing: ServerList): ServerData[];
-    static serverListRoutes(routing: Node): Node;
+    static serverListRoutes(self: Node): Node;
 }

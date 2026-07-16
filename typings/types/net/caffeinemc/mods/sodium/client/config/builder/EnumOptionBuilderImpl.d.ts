@@ -2,7 +2,6 @@ import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { Consumer } from '../../../../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../../../../java/util/function/Supplier.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { ConfigState } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/ConfigState.d.ts'
 import type { StorageEventHandler } from '../../../../../../../net/caffeinemc/mods/sodium/api/config/StorageEventHandler.d.ts'
@@ -17,7 +16,7 @@ import type { EnumOptionBuilderImplAccessor } from '../../../../../../../net/iri
 import type { Component } from '../../../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { Identifier } from '../../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class EnumOptionBuilderImpl<E extends Enum<E>> extends StatefulOptionBuilderImpl<EnumOption<E>, E> implements EnumOptionBuilder<E>, EnumOptionBuilderImplAccessor<Enum<any>> {
-    static nameProviderFrom(...paramarg0: Component[]): (param0: Object | null) => Component;
+    static nameProviderFrom<E extends Enum<E>>(...paramarg0: Component[]): (param0: E) => Component;
     constructor(arg0: Identifier, arg1: Class<E>)
     // private allowedValues: DependentValue<E[]>;
     // private elementNameProvider: (param0: E) => Component;

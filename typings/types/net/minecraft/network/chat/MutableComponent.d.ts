@@ -77,7 +77,7 @@ export class MutableComponent extends Object implements Component {
     visit<T extends unknown>(output: FormattedText$StyledContentConsumer<T>, parentStyle: Style): Optional<T>;
     withColor(color: number): MutableComponent;
     withColor(color: TextColor): MutableComponent;
-    withStyle(updater: (param0: Style) => Object | null): MutableComponent;
+    withStyle(updater: (param0: Style) => Style): MutableComponent;
     withStyle(...formats: ChatFormatting[]): MutableComponent;
     withStyle(format: ChatFormatting): MutableComponent;
     withStyle(patch: Style): MutableComponent;

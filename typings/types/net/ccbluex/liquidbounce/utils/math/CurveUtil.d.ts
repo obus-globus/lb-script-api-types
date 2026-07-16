@@ -23,7 +23,7 @@ export class CurveUtil extends Object {
      */
     static transform(paramarg0: Vector2fc[], paramarg1: number, paramarg2: number): number;
     static transform(data: Vector2fc[], xPos: number, tension: number, onOutOfBounds: CurveUtil$OnOutOfBounds): number;
-    static transformNormalized$net_ccbluex_liquidbounce(paramarg0: Vector2fc[], paramarg1: number, paramarg2: number, paramarg3: CurveUtil$OnOutOfBounds): number;
+    static transformNormalized$net_ccbluex_liquidbounce(data: Vector2fc[], xPos: number, tension: number, onOutOfBounds: CurveUtil$OnOutOfBounds): number;
     // private calculateBezierY(t: number, p0: Vector2fc, p1: Vector2fc, p2: Vector2fc, p3: Vector2fc): number;
     // private calculateT(xPos: number, leftX: number, rightX: number): number;
     // private createSplineCurve(prev: Vector2fc, point: Vector2fc, next: Vector2fc, tension: number): Pair<Vector2f, Vector2f>;

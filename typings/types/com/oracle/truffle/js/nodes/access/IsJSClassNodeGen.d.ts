@@ -8,8 +8,8 @@ import type { JSClass } from '../../../../../../com/oracle/truffle/js/runtime/bu
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IsJSClassNodeGen extends IsJSClassNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramclazz: JSClass): IsJSClassNode;
     static create(paramjsclass: JSClass, paramoperand: JavaScriptNode): IsJSClassNode;
     static findBlockScopeNode(paramnode: Node): Node;

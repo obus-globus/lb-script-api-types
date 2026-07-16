@@ -6,10 +6,10 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { ChunkResult } from '../../../../net/minecraft/server/level/ChunkResult.d.ts'
 export class ChunkResult$Fail<T extends unknown> extends Record implements ChunkResult<T> {
-    static error(paramerror: string): ChunkResult<Object>;
-    static error(paramerrorSupplier: () => string): ChunkResult<Object>;
-    static of(paramvalue: Object | null): ChunkResult<Object>;
-    static orElse(paramchunkResult: ChunkResult<Object>, paramorElse: Object | null): Object | null;
+    static error<T extends unknown>(paramerror: string): ChunkResult<T>;
+    static error<T extends unknown>(paramerrorSupplier: () => string): ChunkResult<T>;
+    static of<T extends unknown>(paramvalue: T): ChunkResult<T>;
+    static orElse<R extends unknown>(paramchunkResult: ChunkResult<R>, paramorElse: R): R;
     constructor(error: () => string)
     equals(o: Object | null): boolean;
     error(): () => string;

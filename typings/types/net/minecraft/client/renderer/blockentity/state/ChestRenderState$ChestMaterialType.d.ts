@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ChestRenderState$ChestMaterialType extends Enum<ChestRenderState$ChestMaterialType> {
     static CHRISTMAS: ChestRenderState$ChestMaterialType;
@@ -10,7 +9,7 @@ export class ChestRenderState$ChestMaterialType extends Enum<ChestRenderState$Ch
     static ENDER_CHEST: ChestRenderState$ChestMaterialType;
     static REGULAR: ChestRenderState$ChestMaterialType;
     static TRAPPED: ChestRenderState$ChestMaterialType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ChestRenderState$ChestMaterialType;
     static values(): ChestRenderState$ChestMaterialType[];
     private constructor()

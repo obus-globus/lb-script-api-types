@@ -7,6 +7,6 @@ import type { OverridingUtil } from '../../../../../../../../kotlin/reflect/jvm/
 import type { ErrorReporter } from '../../../../../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/ErrorReporter.d.ts'
 export class DescriptorResolverUtils extends Object {
     static getAnnotationParameterByName(paramarg0: Name, paramarg1: ClassDescriptor): ValueParameterDescriptor;
-    static resolveOverridesForNonStaticMembers(paramarg0: Name, paramarg1: (CallableMemberDescriptor | null)[], paramarg2: (CallableMemberDescriptor | null)[], paramarg3: ClassDescriptor, paramarg4: ErrorReporter, paramarg5: OverridingUtil): (CallableMemberDescriptor | null)[];
-    static resolveOverridesForStaticMembers(paramarg0: Name, paramarg1: (CallableMemberDescriptor | null)[], paramarg2: (CallableMemberDescriptor | null)[], paramarg3: ClassDescriptor, paramarg4: ErrorReporter, paramarg5: OverridingUtil): (CallableMemberDescriptor | null)[];
+    static resolveOverridesForNonStaticMembers<D extends CallableMemberDescriptor>(paramarg0: Name, paramarg1: D[], paramarg2: D[], paramarg3: ClassDescriptor, paramarg4: ErrorReporter, paramarg5: OverridingUtil): D[];
+    static resolveOverridesForStaticMembers<D extends CallableMemberDescriptor>(paramarg0: Name, paramarg1: D[], paramarg2: D[], paramarg3: ClassDescriptor, paramarg4: ErrorReporter, paramarg5: OverridingUtil): D[];
 }

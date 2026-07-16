@@ -25,7 +25,7 @@ export class SimpleCookingRecipeBuilder extends Object implements RecipeBuilder 
     static createCraftingBookInfo(paramcategory: RecipeCategory, paramgroup: string): CraftingRecipe$CraftingBookInfo;
     static createCraftingCommonInfo(paramshowNotification: boolean): Recipe$CommonInfo;
     static determineCraftingBookCategory(paramcategory: RecipeCategory): CraftingBookCategory;
-    static generic(paramingredient: Ingredient, paramcraftingCategory: RecipeCategory, paramcookingCategory: CookingBookCategory, paramresult: ItemLike, paramexperience: number, paramcookingTime: number, paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => AbstractCookingRecipe | null): SimpleCookingRecipeBuilder;
+    static generic<T extends AbstractCookingRecipe>(paramingredient: Ingredient, paramcraftingCategory: RecipeCategory, paramcookingCategory: CookingBookCategory, paramresult: ItemLike, paramexperience: number, paramcookingTime: number, paramfactory: (param0: Recipe$CommonInfo, param1: AbstractCookingRecipe$CookingBookInfo, param2: Ingredient, param3: ItemStackTemplate, param4: number, param5: number) => T): SimpleCookingRecipeBuilder;
     static getDefaultRecipeId(paramresult: ItemInstance): ResourceKey<Recipe<any>>;
     static smelting(paramingredient: Ingredient, paramcraftingCategory: RecipeCategory, paramcookingCategory: CookingBookCategory, paramresult: ItemLike, paramexperience: number, paramcookingTime: number): SimpleCookingRecipeBuilder;
     static smoking(paramingredient: Ingredient, paramcraftingCategory: RecipeCategory, paramresult: ItemLike, paramexperience: number, paramcookingTime: number): SimpleCookingRecipeBuilder;

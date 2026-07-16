@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class JsonToken extends Enum<JsonToken> {
     static END_ARRAY: JsonToken;
@@ -15,7 +14,7 @@ export class JsonToken extends Enum<JsonToken> {
     static VALUE_NUMBER_INT: JsonToken;
     static VALUE_STRING: JsonToken;
     static VALUE_TRUE: JsonToken;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): JsonToken;
     static values(): JsonToken[];
     private constructor(arg2: string, arg3: number)

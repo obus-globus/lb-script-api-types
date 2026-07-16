@@ -10,10 +10,10 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { UnaryOperator } from '../../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AttributesRenameLegacy extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
-    constructor(outputSchema: Schema, name: string, renames: (param0: string) => Object | null)
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
+    constructor(outputSchema: Schema, name: string, renames: (param0: string) => string)
     // private name: string;
-    // private renames: (param0: string) => Object | null;
+    // private renames: (param0: string) => string;
     // private fixEntity(entity: Typed<Object>): Typed<Object>;
     // private fixItemStackTag(itemStack: Typed<Object>): Typed<Object>;
     // private fixName(name: Dynamic<Object>): Dynamic<Object>;

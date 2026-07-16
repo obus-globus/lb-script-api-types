@@ -9,7 +9,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Grate$Instance<A2 extends unknown, B2 extends unknown> extends Object implements Closed<Grate$Mu<A2, B2>, Closed$Mu> {
-    static unbox(paramarg0: App<Closed$Mu, K2>): Closed<K2, Closed$Mu>;
+    static unbox<P extends K2, Proof extends Closed$Mu>(paramarg0: App<Proof, P>): Closed<P, Proof>;
     constructor()
     closed<X extends unknown, A extends unknown, B extends unknown>(arg0: App2<Grate$Mu<A2, B2>, A, B>): App2<Grate$Mu<A2, B2>, FunctionType<X, A>, FunctionType<X, B>>;
     dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<Grate$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Grate$Mu<A2, B2>, C, D>;

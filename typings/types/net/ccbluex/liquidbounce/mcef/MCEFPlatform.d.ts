@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class MCEFPlatform extends Enum<MCEFPlatform> {
     static LINUX_AMD64: MCEFPlatform;
@@ -9,7 +8,7 @@ export class MCEFPlatform extends Enum<MCEFPlatform> {
     static WINDOWS_AMD64: MCEFPlatform;
     static WINDOWS_ARM64: MCEFPlatform;
     static getPlatform(): MCEFPlatform;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MCEFPlatform;
     static values(): MCEFPlatform[];
     private constructor()

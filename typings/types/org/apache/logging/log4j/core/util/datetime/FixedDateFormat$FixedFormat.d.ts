@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { TimeZone } from '../../../../../../../java/util/TimeZone.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { FastDateFormat } from '../../../../../../../org/apache/logging/log4j/core/util/datetime/FastDateFormat.d.ts'
 import type { FixedDateFormat$FixedTimeZoneFormat } from '../../../../../../../org/apache/logging/log4j/core/util/datetime/FixedDateFormat$FixedTimeZoneFormat.d.ts'
@@ -27,7 +26,7 @@ export class FixedDateFormat$FixedFormat extends Enum<FixedDateFormat$FixedForma
     static US_MONTH_DAY_YEAR2_TIME: FixedDateFormat$FixedFormat;
     static US_MONTH_DAY_YEAR4_TIME: FixedDateFormat$FixedFormat;
     static lookup(paramnameOrPattern: string): FixedDateFormat$FixedFormat;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FixedDateFormat$FixedFormat;
     static values(): FixedDateFormat$FixedFormat[];
     private constructor(pattern: string, datePattern: string, escapeCount: number, timeSeparator: string, timeSepLength: number, millisSeparator: string, millisSepLength: number, secondFractionDigits: number, timeZoneFormat: FixedDateFormat$FixedTimeZoneFormat)

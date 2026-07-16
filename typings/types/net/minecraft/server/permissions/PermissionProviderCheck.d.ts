@@ -4,8 +4,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { PermissionCheck } from '../../../../net/minecraft/server/permissions/PermissionCheck.d.ts'
 import type { PermissionSetSupplier } from '../../../../net/minecraft/server/permissions/PermissionSetSupplier.d.ts'
 export class PermissionProviderCheck<T extends PermissionSetSupplier> extends Record implements Predicate<T> {
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(test: PermissionCheck)
     // private test: PermissionCheck;
     and(arg0: (param0: T) => boolean): (param0: T) => boolean;

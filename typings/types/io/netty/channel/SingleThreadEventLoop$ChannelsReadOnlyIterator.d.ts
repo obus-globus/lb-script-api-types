@@ -3,7 +3,7 @@ import type { Consumer } from '../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../java/util/Iterator.d.ts'
 export class SingleThreadEventLoop$ChannelsReadOnlyIterator<T extends Channel> extends Object implements Iterator<Channel> {
-    static empty(): Iterator<Object>;
+    static empty<T extends unknown>(): Iterator<T>;
     constructor(arg0: T[])
     // private channelIterator: Iterator<T>;
     forEachRemaining(arg0: (param0: Channel) => void): void;

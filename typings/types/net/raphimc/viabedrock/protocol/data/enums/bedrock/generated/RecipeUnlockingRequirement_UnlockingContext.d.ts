@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class RecipeUnlockingRequirement_UnlockingContext extends Enum<RecipeUnlockingRequirement_UnlockingContext> {
     static AlwaysUnlocked: RecipeUnlockingRequirement_UnlockingContext;
@@ -10,7 +9,7 @@ export class RecipeUnlockingRequirement_UnlockingContext extends Enum<RecipeUnlo
     static getByName(paramarg0: string, paramarg1: RecipeUnlockingRequirement_UnlockingContext): RecipeUnlockingRequirement_UnlockingContext;
     static getByValue(paramarg0: number): RecipeUnlockingRequirement_UnlockingContext;
     static getByValue(paramarg0: number, paramarg1: RecipeUnlockingRequirement_UnlockingContext): RecipeUnlockingRequirement_UnlockingContext;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RecipeUnlockingRequirement_UnlockingContext;
     static values(): RecipeUnlockingRequirement_UnlockingContext[];
     private constructor(arg2: number)

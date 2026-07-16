@@ -13,15 +13,15 @@ export class PacketExtensionsKt extends Object {
      */
     static getEntityIdC2SInteractOrAttack(paramarg0: Packet<any>): number;
     static getPosition(paramarg0: ServerboundMovePlayerPacket): Vec3;
-    static isC2SContainerPacket(paramarg0: Packet<any>): boolean;
+    static isC2SContainerPacket(self: Packet<any> | null): boolean;
     /**
      * @see net.minecraft.world.entity.LivingEntity.checkTotemDeathProtection
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt#L86 | src/main/kotlin/net/ccbluex/liquidbounce/utils/network/PacketExtensions.kt:86}
      */
     static isDeathProtection(paramarg0: ClientboundEntityEventPacket): boolean;
-    static isLocalPlayerDamage(paramarg0: Packet<any>): boolean;
+    static isLocalPlayerDamage(self: Packet<any> | null): boolean;
     static isLocalPlayerVelocity(considerExplosion: Packet<any>): boolean;
-    static isLocalPlayerVelocity(paramarg0: Packet<any>, paramarg1: boolean): boolean;
-    static isMovementYFallDamage(clientboundSetEntityMotionPacket: ClientboundSetEntityMotionPacket): boolean;
+    static isLocalPlayerVelocity(self: Packet<any> | null, considerExplosion: boolean): boolean;
+    static isMovementYFallDamage(self: ClientboundSetEntityMotionPacket): boolean;
 }

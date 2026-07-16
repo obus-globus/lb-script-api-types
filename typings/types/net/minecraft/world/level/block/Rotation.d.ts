@@ -23,15 +23,15 @@ export class Rotation extends Enum<Rotation> implements StringRepresentable {
     static NONE: Rotation;
     static PRE_BUILT_MAP_THRESHOLD: number;
     static STREAM_CODEC: StreamCodec<ByteBuf, Rotation>;
-    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
-    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
-    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
+    static createNameLookup<T extends StringRepresentable>(paramvalueArray: T[]): (param0: string) => T;
+    static createNameLookup<T extends unknown>(paramvalueArray: T[], paramconverter: (param0: T) => string): (param0: string) => T;
+    static fromEnum<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[]): StringRepresentable$EnumCodec<E>;
+    static fromEnumWithMapping<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<E>;
+    static fromValues<T extends StringRepresentable>(paramvalues: () => T[]): Codec<T>;
     static getRandom(paramrandom: RandomSource): Rotation;
     static getShuffled(paramrandom: RandomSource): Rotation[];
     static keys(paramvalues: StringRepresentable[]): Keyable;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Rotation;
     static values(): Rotation[];
     private constructor(index: number, id: string, rotation: OctahedralGroup)

@@ -20,7 +20,7 @@ export abstract class ConfigurationFactory extends ConfigurationBuilderFactory {
     static authorizationProvider(paramprops: PropertiesUtil): AuthorizationProvider;
     static getAuthorizationProvider(): AuthorizationProvider;
     static getInstance(): ConfigurationFactory;
-    static newConfigurationBuilder(paramclazz: Class<BuiltConfiguration>): ConfigurationBuilder<BuiltConfiguration>;
+    static newConfigurationBuilder<T extends BuiltConfiguration>(paramclazz: Class<T>): ConfigurationBuilder<T>;
     static newConfigurationBuilder(): ConfigurationBuilder<BuiltConfiguration>;
     static removeConfigurationFactory(paramfactory: ConfigurationFactory): void;
     static resetConfigurationFactory(): void;

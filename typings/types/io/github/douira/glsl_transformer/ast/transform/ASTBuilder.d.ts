@@ -158,9 +158,9 @@ import type { BufferedTokenStream } from '../../../../../../org/antlr/v4/runtime
 import type { ParseTree } from '../../../../../../org/antlr/v4/runtime/tree/ParseTree.d.ts'
 import type { TerminalNode } from '../../../../../../org/antlr/v4/runtime/tree/TerminalNode.d.ts'
 export class ASTBuilder extends GLSLParserBaseVisitor<ASTNode> {
-    static build(paramarg0: Root, paramarg1: ParseTree | null, paramarg2: (param0: ASTBuilder, param1: ParseTree | null) => ASTNode | null): ASTNode | null;
+    static build<T extends ParseTree, N extends ASTNode>(paramarg0: Root, paramarg1: T, paramarg2: (param0: ASTBuilder, param1: T) => N): N;
     static build(paramarg0: Root, paramarg1: ParseTree): ASTNode;
-    static buildSubtree(paramarg0: Root, paramarg1: ParseTree | null, paramarg2: (param0: ASTBuilder, param1: ParseTree | null) => ASTNode | null): ASTNode | null;
+    static buildSubtree<T extends ParseTree, N extends ASTNode>(paramarg0: Root, paramarg1: T, paramarg2: (param0: ASTBuilder, param1: T) => N): N;
     static buildSubtree(paramarg0: Root, paramarg1: ParseTree): ASTNode;
     static setTokenStream(paramarg0: BufferedTokenStream): void;
     static unsetTokenStream(): void;

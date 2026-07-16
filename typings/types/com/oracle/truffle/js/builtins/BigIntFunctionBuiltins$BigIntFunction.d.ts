@@ -10,7 +10,7 @@ export class BigIntFunctionBuiltins$BigIntFunction extends Enum<BigIntFunctionBu
     static asIntN: BigIntFunctionBuiltins$BigIntFunction;
     static asUintN: BigIntFunctionBuiltins$BigIntFunction;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): BigIntFunctionBuiltins$BigIntFunction;
     static values(): BigIntFunctionBuiltins$BigIntFunction[];
     private constructor(length: number)

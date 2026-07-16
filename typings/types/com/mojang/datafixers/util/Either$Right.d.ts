@@ -6,10 +6,10 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Either$Right<L extends unknown, R extends unknown> extends Either<L, R> {
-    static left(paramarg0: Object | null): Either<Object, Object>;
-    static right(paramarg0: Object | null): Either<Object, Object>;
-    static unbox(paramarg0: App<Either$Mu<Object>, Object>): Either<Object, Object>;
-    static unwrap(paramarg0: Either<Object, Object>): Object | null;
+    static left<L extends unknown, R extends unknown>(paramarg0: L): Either<L, R>;
+    static right<L extends unknown, R extends unknown>(paramarg0: R): Either<L, R>;
+    static unbox<L extends unknown, R extends unknown>(paramarg0: App<Either$Mu<R>, L>): Either<L, R>;
+    static unwrap<U extends unknown>(paramarg0: Either<U, U>): U;
     constructor(arg0: R)
     // private value: R;
     equals(arg0: Object | null): boolean;

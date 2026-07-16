@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { HttpClient } from '../../../../../net/lenni0451/commons/httpclient/HttpClient.d.ts'
 import type { RequestExecutor } from '../../../../../net/lenni0451/commons/httpclient/executor/RequestExecutor.d.ts'
@@ -8,7 +7,7 @@ export class ExecutorType extends Enum<ExecutorType> {
     static HTTP_CLIENT: ExecutorType;
     static REACTOR_NETTY: ExecutorType;
     static URL_CONNECTION: ExecutorType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ExecutorType;
     static values(): ExecutorType[];
     constructor(arg2: ExecutorType)

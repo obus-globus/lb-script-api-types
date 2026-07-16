@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Diagnostic$Kind } from '../../../../../javax/tools/Diagnostic$Kind.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../../java/lang/CharSequence.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { IMixinAnnotationProcessor$CompilerEnvironment } from '../../../../../org/spongepowered/tools/obfuscation/interfaces/IMixinAnnotationProcessor$CompilerEnvironment.d.ts'
@@ -67,7 +66,7 @@ export class IMessagerEx$MessageType extends Enum<IMessagerEx$MessageType> {
     static getSupportedOptions(): string[];
     static setDecoration(paramarg0: boolean): void;
     static setPrefix(paramarg0: string): void;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): IMessagerEx$MessageType;
     static values(): IMessagerEx$MessageType[];
     private constructor(arg2: Diagnostic$Kind)

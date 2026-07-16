@@ -11,7 +11,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ClientboundSetPlayerInventoryPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundSetPlayerInventoryPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(slot: number, contents: ItemStack)
     // private contents: ItemStack;
     // private slot: number;

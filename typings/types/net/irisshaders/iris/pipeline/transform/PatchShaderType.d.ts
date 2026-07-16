@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { ShaderType } from '../../../../../net/irisshaders/iris/gl/shader/ShaderType.d.ts'
 export class PatchShaderType extends Enum<PatchShaderType> {
@@ -10,7 +9,7 @@ export class PatchShaderType extends Enum<PatchShaderType> {
     static TESS_EVAL: PatchShaderType;
     static VERTEX: PatchShaderType;
     static fromGlShaderType(paramarg0: ShaderType): PatchShaderType[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PatchShaderType;
     static values(): PatchShaderType[];
     private constructor(arg2: ShaderType, arg3: string)

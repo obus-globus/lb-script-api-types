@@ -6,9 +6,9 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class Weighted<T extends unknown> extends Record {
-    static codec(paramelementCodec: Codec<Object>): Codec<Weighted<Object>>;
-    static codec(paramelementCodec: MapCodec<Object>): Codec<Weighted<Object>>;
-    static streamCodec(paramvalueCodec: StreamCodec<ByteBuf, Object>): StreamCodec<ByteBuf, Weighted<Object>>;
+    static codec<E extends unknown>(paramelementCodec: Codec<E>): Codec<Weighted<E>>;
+    static codec<E extends unknown>(paramelementCodec: MapCodec<E>): Codec<Weighted<E>>;
+    static streamCodec<B extends ByteBuf, T extends unknown>(paramvalueCodec: StreamCodec<B, T>): StreamCodec<B, Weighted<T>>;
     constructor(value: T, weight: number)
     // private value: T;
     // private weight: number;

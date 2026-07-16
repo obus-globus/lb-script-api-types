@@ -7,6 +7,6 @@ import type { EntitySpawnReason } from '../../../net/minecraft/world/entity/Enti
 import type { EntityType } from '../../../net/minecraft/world/entity/EntityType.d.ts'
 import type { Mob } from '../../../net/minecraft/world/entity/Mob.d.ts'
 export class SpawnUtil extends Object {
-    static trySpawnMob(paramentityType: EntityType<Mob>, paramspawnReason: EntitySpawnReason, paramlevel: ServerLevel, paramstart: BlockPos, paramspawnAttempts: number, paramspawnRangeXZ: number, paramspawnRangeY: number, paramstrategy: SpawnUtil$Strategy, paramcheckCollisions: boolean): Optional<Mob>;
+    static trySpawnMob<T extends Mob>(paramentityType: EntityType<T>, paramspawnReason: EntitySpawnReason, paramlevel: ServerLevel, paramstart: BlockPos, paramspawnAttempts: number, paramspawnRangeXZ: number, paramspawnRangeY: number, paramstrategy: SpawnUtil$Strategy, paramcheckCollisions: boolean): Optional<T>;
     constructor()
 }

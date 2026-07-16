@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { ItemCategory } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemCategory.d.ts'
 import type { ItemFunction } from '../../../../../../../../net/ccbluex/liquidbounce/features/module/modules/player/invcleaner/ItemFunction.d.ts'
@@ -25,8 +24,8 @@ export class ItemType extends Enum<ItemType> {
     static TOOL: ItemType;
     static WEAPON: ItemType;
     static getEntries(): ItemType[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ItemType;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ItemType;
     static values(): ItemType[];
     private constructor(oneIsSufficient: boolean, allocationPriority: Priority, providedFunction: ItemFunction | null)
     /**

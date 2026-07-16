@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class TruffleString$CodeRange extends Enum<TruffleString$CodeRange> {
     static ASCII: TruffleString$CodeRange;
@@ -7,7 +6,7 @@ export class TruffleString$CodeRange extends Enum<TruffleString$CodeRange> {
     static BROKEN: TruffleString$CodeRange;
     static LATIN_1: TruffleString$CodeRange;
     static VALID: TruffleString$CodeRange;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TruffleString$CodeRange;
     static values(): TruffleString$CodeRange[];
     private constructor()

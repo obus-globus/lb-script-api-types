@@ -4,7 +4,6 @@ import type { TypedArray } from '../../../../../../com/oracle/truffle/js/runtime
 import type { PrototypeSupplier } from '../../../../../../com/oracle/truffle/js/runtime/builtins/PrototypeSupplier.d.ts'
 import type { JSDynamicObject } from '../../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class TypedArrayFactory extends Enum<TypedArrayFactory> implements PrototypeSupplier {
     static BigInt64Array: TypedArrayFactory;
@@ -20,7 +19,7 @@ export class TypedArrayFactory extends Enum<TypedArrayFactory> implements Protot
     static Uint32Array: TypedArrayFactory;
     static Uint8Array: TypedArrayFactory;
     static Uint8ClampedArray: TypedArrayFactory;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TypedArrayFactory;
     static values(): TypedArrayFactory[];
     private constructor(bytesPerElement: number)

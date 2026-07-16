@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class PKWareExtraHeader$EncryptionAlgorithm extends Enum<PKWareExtraHeader$EncryptionAlgorithm> {
     static AES128: PKWareExtraHeader$EncryptionAlgorithm;
@@ -13,7 +12,7 @@ export class PKWareExtraHeader$EncryptionAlgorithm extends Enum<PKWareExtraHeade
     static TripleDES192: PKWareExtraHeader$EncryptionAlgorithm;
     static UNKNOWN: PKWareExtraHeader$EncryptionAlgorithm;
     static getAlgorithmByCode(paramarg0: number): PKWareExtraHeader$EncryptionAlgorithm;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PKWareExtraHeader$EncryptionAlgorithm;
     static values(): PKWareExtraHeader$EncryptionAlgorithm[];
     private constructor(arg2: number)

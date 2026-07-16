@@ -4,10 +4,10 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { RuntimeException } from '../../../../java/lang/RuntimeException.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Functions extends Object {
-    static andThen(paramarg0: Function<Object, Object>, paramarg1: Function<Object, Object>): Function<Object, Object>;
-    static firstResult(...paramarg0: Function<Object, Object>[]): Function<Object, Object>;
-    static identity(): Function<Object, Object>;
-    static wrap(paramarg0: Function<Object, Object>, paramarg1: Class<RuntimeException>, paramarg2: string, ...paramarg3: Object[]): Function<Object, Object>;
-    static wrapFmt(paramarg0: CheckedFunction<Object, Object>, paramarg1: Class<RuntimeException>, paramarg2: string): Function<Object, Object>;
+    static andThen<T extends unknown, V extends unknown, R extends unknown>(paramarg0: Function<T, V>, paramarg1: Function<V, R>): Function<T, R>;
+    static firstResult<T extends unknown, R extends unknown>(...paramarg0: Function<T, R>[]): Function<T, R>;
+    static identity<T extends unknown>(): Function<T, T>;
+    static wrap<T extends unknown, R extends unknown, E extends RuntimeException>(paramarg0: Function<T, R>, paramarg1: Class<E>, paramarg2: string, ...paramarg3: Object[]): Function<T, R>;
+    static wrapFmt<T extends unknown, R extends unknown, E extends RuntimeException>(paramarg0: CheckedFunction<T, R>, paramarg1: Class<E>, paramarg2: string): Function<T, R>;
     private constructor()
 }

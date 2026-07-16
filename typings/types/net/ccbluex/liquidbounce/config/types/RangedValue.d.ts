@@ -7,7 +7,7 @@ import type { Value } from '../../../../../net/ccbluex/liquidbounce/config/types
 import type { ValueType } from '../../../../../net/ccbluex/liquidbounce/config/types/ValueType.d.ts'
 export class RangedValue<T extends unknown> extends Value<T> {
     static Companion: RangedValue$Companion;
-    static squared(paramarg0: RangedValue<ClosedFloatingPointRange<number>>): ReadOnlyProperty<Object, ClosedFloatingPointRange<number>>;
+    static squared(self: RangedValue<ClosedFloatingPointRange<number>>): ReadOnlyProperty<Object, ClosedFloatingPointRange<number>>;
     constructor(name: string, aliases: string[], defaultValue: T, range: ClosedRange<any>, suffix: string, valueType: ValueType)
     readonly range: ClosedRange<any>;
     readonly suffix: string;

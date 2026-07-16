@@ -15,7 +15,7 @@ export class DefaultModelZoo extends ModelZoo {
     static listModelZoo(): ModelZoo[];
     static listModels(): Map<Application, MRL[]>;
     static listModels(paramarg0: Criteria<Object, Object>): Map<Application, MRL[]>;
-    static loadModel(paramarg0: Criteria<Object, Object>): ZooModel<Object, Object>;
+    static loadModel<I extends unknown, O extends unknown>(paramarg0: Criteria<I, O>): ZooModel<I, O>;
     static registerModelZoo(paramarg0: ZooProvider): void;
     static setModelZooResolver(paramarg0: ModelZooResolver): void;
     constructor()

@@ -11,8 +11,8 @@ export abstract class Settings<T extends Settings<T>> extends Object {
     cloneProperties(): { [key: string]: any };
     get<V extends unknown>(key: string, deserializer: (param0: string) => V, defaultValue: V): V;
     get<V extends unknown>(key: string, deserializer: (param0: string) => V, serializer: (param0: V) => string, defaultValue: V): V;
-    get<V extends unknown>(key: string, deserializer: (param0: string) => V, validator: (param0: V) => Object | null, serializer: (param0: V) => string, defaultValue: V): V;
-    get(key: string, validator: (param0: number) => Object | null, defaultValue: number): number;
+    get<V extends unknown>(key: string, deserializer: (param0: string) => V, validator: (param0: V) => V, serializer: (param0: V) => string, defaultValue: V): V;
+    get(key: string, validator: (param0: number) => number, defaultValue: number): number;
     get(key: string, defaultValue: boolean): boolean;
     get(key: string, defaultValue: number): number;
     get(key: string, defaultValue: string): string;

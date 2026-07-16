@@ -6,9 +6,9 @@ import type { BehaviorControl } from '../../../../../../net/minecraft/world/enti
 import type { StopAttackingIfTargetInvalid$StopAttackCondition } from '../../../../../../net/minecraft/world/entity/ai/behavior/StopAttackingIfTargetInvalid$StopAttackCondition.d.ts'
 import type { StopAttackingIfTargetInvalid$TargetErasedCallback } from '../../../../../../net/minecraft/world/entity/ai/behavior/StopAttackingIfTargetInvalid$TargetErasedCallback.d.ts'
 export class StopAttackingIfTargetInvalid extends Object {
-    static create(): BehaviorControl<Mob>;
-    static create(paramstopAttackingWhen: (param0: ServerLevel, param1: LivingEntity) => boolean): BehaviorControl<Mob>;
-    static create(paramstopAttackingWhen: (param0: ServerLevel, param1: LivingEntity) => boolean, paramonTargetErased: (param0: ServerLevel, param1: Mob | null, param2: LivingEntity) => void, paramcanGrowTiredOfTryingToReachTarget: boolean): BehaviorControl<Mob>;
-    static create(paramonTargetErased: (param0: ServerLevel, param1: Mob | null, param2: LivingEntity) => void): BehaviorControl<Mob>;
+    static create<E extends Mob>(): BehaviorControl<E>;
+    static create<E extends Mob>(paramstopAttackingWhen: (param0: ServerLevel, param1: LivingEntity) => boolean): BehaviorControl<E>;
+    static create<E extends Mob>(paramstopAttackingWhen: (param0: ServerLevel, param1: LivingEntity) => boolean, paramonTargetErased: (param0: ServerLevel, param1: E, param2: LivingEntity) => void, paramcanGrowTiredOfTryingToReachTarget: boolean): BehaviorControl<E>;
+    static create<E extends Mob>(paramonTargetErased: (param0: ServerLevel, param1: E, param2: LivingEntity) => void): BehaviorControl<E>;
     constructor()
 }

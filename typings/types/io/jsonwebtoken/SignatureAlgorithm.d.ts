@@ -1,6 +1,5 @@
 import type { Class } from '../../java/lang/Class.d.ts'
 import type { Key } from '../../java/security/Key.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class SignatureAlgorithm extends Enum<SignatureAlgorithm> {
     static ES256: SignatureAlgorithm;
@@ -18,7 +17,7 @@ export class SignatureAlgorithm extends Enum<SignatureAlgorithm> {
     static RS512: SignatureAlgorithm;
     static forName(paramarg0: string): SignatureAlgorithm;
     static forSigningKey(paramarg0: Key): SignatureAlgorithm;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SignatureAlgorithm;
     static values(): SignatureAlgorithm[];
     private constructor(arg2: string, arg3: string, arg4: string, arg5: string, arg6: boolean, arg7: number, arg8: number)

@@ -1,36 +1,37 @@
 import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 import type { ClosedFloatingPointRange } from '../../../../../kotlin/ranges/ClosedFloatingPointRange.d.ts'
 export class ArrayExtensionsKt extends Object {
-    static contains(intRange: { start: number; endInclusive: number; step: number }, range: { start: number; endInclusive: number; step: number }): boolean;
+    static contains(self: { start: number; endInclusive: number; step: number }, range: { start: number; endInclusive: number; step: number }): boolean;
     /**
      * A JavaScript-styled forEach
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L115 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:115}
      */
-    static forEachWithSelf(c: Object | null, action: (param0: Object, param1: Object, param2: Object) => void): void;
+    static forEachWithSelf<C extends T[], T extends unknown>(self: C, action: (param0: T, param1: number, param2: C) => void): void;
     /**
      * Transform a Collection to a String with by given {@link transform}
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L142 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:142}
      */
-    static mapString(paramarg0: (Object | null)[], paramarg1: (param0: Object) => string): string;
-    static mapString(paramarg0: string, paramarg1: (param0: Object) => string): string;
-    static proportionOfValue(closedFloatingPointRange: ClosedFloatingPointRange<number>, value: number): number;
-    static random(paramarg0: ClosedFloatingPointRange<number>): number;
-    static range(paramarg0: number[], paramarg1: number[], paramarg2: number[], paramarg3: (param0: Object, param1: Object, param2: Object) => void): void;
-    static range(iterable1: number[], iterable2: number[], operation: (param0: Object, param1: Object) => void): void;
-    static range(paramarg0: { first: number; last: number; step: number }, paramarg1: { first: number; last: number; step: number }, paramarg2: { first: number; last: number; step: number }, paramarg3: (param0: Object, param1: Object, param2: Object) => void): void;
-    static removeRange(mutableList: (Object | null)[], fromInclusive: number, endExclusive: number): void;
+    static mapString<T extends unknown>(self: T[], transform: (param0: T) => string): string;
+    static mapString(self: string, transform: (param0: string) => string): string;
+    static proportionOfValue(self: ClosedFloatingPointRange<number>, value: number): number;
+    static random(self: ClosedFloatingPointRange<number>): number;
+    static range(iterable1: number[], iterable2: number[], iterable3: number[], operation: (param0: number, param1: number, param2: number) => void): void;
+    static range(iterable1: number[], iterable2: number[], operation: (param0: number, param1: number) => void): void;
+    static range(iterable1: { first: number; last: number; step: number }, iterable2: { first: number; last: number; step: number }, iterable3: { first: number; last: number; step: number }, operation: (param0: number, param1: number, param2: number) => void): void;
+    static removeRange<T extends unknown>(self: T[], fromInclusive: number, endExclusive: number): void;
     /**
      * Inserts a new element into a sorted list while maintaining the order.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/utils/kotlin/ArrayExtensions.kt:124}
      */
-    static sortedInsert(mutableList: (Object | null)[], item: Object | null, selector: (param0: Object) => Object | null): void;
-    static subList(list: (Object | null)[], fromIndex: number): (Object | null)[];
-    static toDouble(closedFloatingPointRange: ClosedFloatingPointRange<number>): ClosedFloatingPointRange<number>;
-    static toTypedArray(stream: Stream<Object>): (Object | null)[];
-    static unaryMinus(closedFloatingPointRange: ClosedFloatingPointRange<number>): ClosedFloatingPointRange<number>;
-    static valueAtProportion(closedFloatingPointRange: ClosedFloatingPointRange<number>, proportion: number): number;
+    static sortedInsert<T extends unknown, K extends Comparable<K>>(self: T[], item: T, selector: (param0: T) => K | null): void;
+    static subList<T extends unknown>(self: T[], fromIndex: number): T[];
+    static toDouble(self: ClosedFloatingPointRange<number>): ClosedFloatingPointRange<number>;
+    static toTypedArray<T extends unknown>(self: Stream<T>): T[];
+    static unaryMinus(self: ClosedFloatingPointRange<number>): ClosedFloatingPointRange<number>;
+    static valueAtProportion(self: ClosedFloatingPointRange<number>, proportion: number): number;
 }

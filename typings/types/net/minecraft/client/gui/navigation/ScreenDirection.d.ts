@@ -1,6 +1,5 @@
 import type { IntComparator } from '../../../../../it/unimi/dsi/fastutil/ints/IntComparator.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { ScreenAxis } from '../../../../../net/minecraft/client/gui/navigation/ScreenAxis.d.ts'
 export class ScreenDirection extends Enum<ScreenDirection> {
@@ -8,7 +7,7 @@ export class ScreenDirection extends Enum<ScreenDirection> {
     static LEFT: ScreenDirection;
     static RIGHT: ScreenDirection;
     static UP: ScreenDirection;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ScreenDirection;
     static values(): ScreenDirection[];
     private constructor()

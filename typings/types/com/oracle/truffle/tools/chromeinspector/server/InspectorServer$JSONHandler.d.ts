@@ -4,7 +4,7 @@ import type { InspectorServer$HttpResponse } from '../../../../../../com/oracle/
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class InspectorServer$JSONHandler extends Object implements Function<InspectorServer$HttpRequest, InspectorServer$HttpResponse> {
-    static identity(): (param0: Object | null) => Object | null;
+    static identity<T extends unknown>(): (param0: T) => T;
     private constructor(null_: InspectorServer)
     andThen<V extends unknown>(arg0: (param0: InspectorServer$HttpResponse) => V): (param0: InspectorServer$HttpRequest) => V;
     apply(request: InspectorServer$HttpRequest): InspectorServer$HttpResponse;

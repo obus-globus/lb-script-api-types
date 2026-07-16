@@ -10,20 +10,20 @@ import type { DateTimeFormat } from '../../kotlinx/datetime/format/DateTimeForma
 export class LocalDateKt extends Object {
     static YEAR_MAX: number;
     static YEAR_MIN: number;
-    static LocalDate(paramarg0: number, paramarg1: number, paramarg2: number): LocalDate;
-    static LocalDate(paramarg0: number, paramarg1: Month, paramarg2: number): LocalDate;
-    static atTime(paramarg0: LocalDate, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number): LocalDateTime;
-    static atTime(paramarg0: LocalDate, paramarg1: LocalTime): LocalDateTime;
-    static format(paramarg0: LocalDate, paramarg1: DateTimeFormat<LocalDate>): string;
+    static LocalDate(year: number, monthNumber: number, dayOfMonth: number): LocalDate;
+    static LocalDate(year: number, month: Month, dayOfMonth: number): LocalDate;
+    static atTime(self: LocalDate, hour: number, minute: number, second: number, nanosecond: number): LocalDateTime;
+    static atTime(self: LocalDate, time: LocalTime): LocalDateTime;
+    static format(self: LocalDate, format: DateTimeFormat<LocalDate>): string;
     static getIsoDateFormat(): DateTimeFormat<LocalDate>;
-    static minus(paramarg0: LocalDate, paramarg1: LocalDate): DatePeriod;
-    static minus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
-    static minus(paramarg0: LocalDate, paramarg1: DatePeriod): LocalDate;
-    static minus(paramarg0: LocalDate, paramarg1: DateTimeUnit$DateBased): LocalDate;
-    static next(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
-    static nextOrSame(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
-    static plus(paramarg0: LocalDate, paramarg1: number, paramarg2: DateTimeUnit$DateBased): LocalDate;
-    static previous(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
-    static previousOrSame(paramarg0: LocalDate, paramarg1: DayOfWeek): LocalDate;
-    static toLocalDate(paramarg0: string): LocalDate;
+    static minus(self: LocalDate, other: LocalDate): DatePeriod;
+    static minus(self: LocalDate, value: number, unit: DateTimeUnit$DateBased): LocalDate;
+    static minus(self: LocalDate, period: DatePeriod): LocalDate;
+    static minus(self: LocalDate, unit: DateTimeUnit$DateBased): LocalDate;
+    static next(self: LocalDate, dayOfWeek: DayOfWeek): LocalDate;
+    static nextOrSame(self: LocalDate, dayOfWeek: DayOfWeek): LocalDate;
+    static plus(self: LocalDate, value: number, unit: DateTimeUnit$DateBased): LocalDate;
+    static previous(self: LocalDate, dayOfWeek: DayOfWeek): LocalDate;
+    static previousOrSame(self: LocalDate, dayOfWeek: DayOfWeek): LocalDate;
+    static toLocalDate(self: string): LocalDate;
 }

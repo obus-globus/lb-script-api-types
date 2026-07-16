@@ -8,5 +8,5 @@ export class MessageBody extends Object {
     // private lastSeenMessages: PlayerMessageSignature[];
     // private salt: number;
     // private timestamp: Instant;
-    update(arg0: (param0: Object | null) => void): void;
+    update(arg0: (param0: number[]) => void): void;
 }

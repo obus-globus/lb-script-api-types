@@ -4,22 +4,22 @@ import type { AtomicReferenceArray } from '../../../java/util/concurrent/atomic/
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { AtomicArraysKt__AtomicArrays_jvmKt } from '../../../kotlin/concurrent/atomics/AtomicArraysKt__AtomicArrays_jvmKt.d.ts'
 export class AtomicArraysKt extends AtomicArraysKt__AtomicArrays_jvmKt {
-    static AtomicArray(paramarg0: number, paramarg1: (param0: Object) => Object | null): AtomicReferenceArray<Object>;
-    static AtomicIntArray(paramarg0: number, paramarg1: (param0: Object) => number): AtomicIntegerArray;
-    static AtomicLongArray(paramarg0: number, paramarg1: (param0: Object) => number): AtomicLongArray;
-    static asJavaAtomicArray(paramarg0: AtomicReferenceArray<Object>): AtomicReferenceArray<Object>;
-    static asJavaAtomicArray(paramarg0: AtomicIntegerArray): AtomicIntegerArray;
-    static asJavaAtomicArray(paramarg0: AtomicLongArray): AtomicLongArray;
-    static asKotlinAtomicArray(paramarg0: AtomicReferenceArray<Object>): AtomicReferenceArray<Object>;
-    static asKotlinAtomicArray(paramarg0: AtomicIntegerArray): AtomicIntegerArray;
-    static asKotlinAtomicArray(paramarg0: AtomicLongArray): AtomicLongArray;
-    static atomicArrayOfNulls(paramarg0: number): AtomicReferenceArray<Object>;
-    static decrementAndFetchAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
-    static decrementAndFetchAt(paramarg0: AtomicLongArray, paramarg1: number): number;
-    static fetchAndDecrementAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
-    static fetchAndDecrementAt(paramarg0: AtomicLongArray, paramarg1: number): number;
-    static fetchAndIncrementAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
-    static fetchAndIncrementAt(paramarg0: AtomicLongArray, paramarg1: number): number;
-    static incrementAndFetchAt(paramarg0: AtomicIntegerArray, paramarg1: number): number;
-    static incrementAndFetchAt(paramarg0: AtomicLongArray, paramarg1: number): number;
+    static AtomicArray<T extends unknown>(size: number, init: (param0: number) => T): AtomicReferenceArray<T>;
+    static AtomicIntArray(size: number, init: (param0: number) => number): AtomicIntegerArray;
+    static AtomicLongArray(size: number, init: (param0: number) => number): AtomicLongArray;
+    static asJavaAtomicArray<T extends unknown>(self: AtomicReferenceArray<T>): AtomicReferenceArray<T>;
+    static asJavaAtomicArray(self: AtomicIntegerArray): AtomicIntegerArray;
+    static asJavaAtomicArray(self: AtomicLongArray): AtomicLongArray;
+    static asKotlinAtomicArray<T extends unknown>(self: AtomicReferenceArray<T>): AtomicReferenceArray<T>;
+    static asKotlinAtomicArray(self: AtomicIntegerArray): AtomicIntegerArray;
+    static asKotlinAtomicArray(self: AtomicLongArray): AtomicLongArray;
+    static atomicArrayOfNulls<T extends unknown>(size: number): AtomicReferenceArray<T>;
+    static decrementAndFetchAt(self: AtomicIntegerArray, index: number): number;
+    static decrementAndFetchAt(self: AtomicLongArray, index: number): number;
+    static fetchAndDecrementAt(self: AtomicIntegerArray, index: number): number;
+    static fetchAndDecrementAt(self: AtomicLongArray, index: number): number;
+    static fetchAndIncrementAt(self: AtomicIntegerArray, index: number): number;
+    static fetchAndIncrementAt(self: AtomicLongArray, index: number): number;
+    static incrementAndFetchAt(self: AtomicIntegerArray, index: number): number;
+    static incrementAndFetchAt(self: AtomicLongArray, index: number): number;
 }

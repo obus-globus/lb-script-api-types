@@ -19,10 +19,10 @@ import type { SimpleUnboundProtocol } from '../../../../net/minecraft/network/pr
 import type { UnboundProtocol } from '../../../../net/minecraft/network/protocol/UnboundProtocol.d.ts'
 import type { Unit } from '../../../../net/minecraft/util/Unit.d.ts'
 export class ProtocolInfoBuilder<T extends PacketListener, B extends ByteBuf, C extends unknown> extends Object {
-    static clientboundProtocol(paramid: ConnectionProtocol, paramconfig: (param0: ProtocolInfoBuilder<ClientboundPacketListener, ByteBuf, Unit>) => void): SimpleUnboundProtocol<ClientboundPacketListener, ByteBuf>;
-    static contextClientboundProtocol(paramid: ConnectionProtocol, paramconfig: (param0: ProtocolInfoBuilder<ClientboundPacketListener, ByteBuf, Object>) => void): UnboundProtocol<ClientboundPacketListener, ByteBuf, Object>;
-    static contextServerboundProtocol(paramid: ConnectionProtocol, paramconfig: (param0: ProtocolInfoBuilder<ServerboundPacketListener, ByteBuf, Object>) => void): UnboundProtocol<ServerboundPacketListener, ByteBuf, Object>;
-    static serverboundProtocol(paramid: ConnectionProtocol, paramconfig: (param0: ProtocolInfoBuilder<ServerboundPacketListener, ByteBuf, Unit>) => void): SimpleUnboundProtocol<ServerboundPacketListener, ByteBuf>;
+    static clientboundProtocol<T extends ClientboundPacketListener, B extends ByteBuf>(paramid: ConnectionProtocol, paramconfig: (param0: ProtocolInfoBuilder<T, B, Unit>) => void): SimpleUnboundProtocol<T, B>;
+    static contextClientboundProtocol<T extends ClientboundPacketListener, B extends ByteBuf, C extends unknown>(paramid: ConnectionProtocol, paramconfig: (param0: ProtocolInfoBuilder<T, B, C>) => void): UnboundProtocol<T, B, C>;
+    static contextServerboundProtocol<T extends ServerboundPacketListener, B extends ByteBuf, C extends unknown>(paramid: ConnectionProtocol, paramconfig: (param0: ProtocolInfoBuilder<T, B, C>) => void): UnboundProtocol<T, B, C>;
+    static serverboundProtocol<T extends ServerboundPacketListener, B extends ByteBuf>(paramid: ConnectionProtocol, paramconfig: (param0: ProtocolInfoBuilder<T, B, Unit>) => void): SimpleUnboundProtocol<T, B>;
     constructor(protocol: ConnectionProtocol, flow: PacketFlow)
     // private bundlerInfo: BundlerInfo;
     // private codecs: ProtocolInfoBuilder$CodecEntry<T, any, B, C>[];

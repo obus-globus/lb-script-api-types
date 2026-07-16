@@ -5,21 +5,21 @@ import type { Pattern } from '../../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 export class Predicates extends Object {
-    static alwaysFalse(): (param0: Object | null) => boolean;
-    static alwaysTrue(): (param0: Object | null) => boolean;
-    static and(paramfirst: (param0: Object) => boolean, paramsecond: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static and(paramcomponents: (param0: Object) => boolean[]): (param0: Object | null) => boolean;
-    static compose(parampredicate: (param0: Object | null) => boolean, paramfunction: (param0: Object | null) => Object | null): (param0: Object | null) => boolean;
+    static alwaysFalse<T extends unknown>(): (param0: T) => boolean;
+    static alwaysTrue<T extends unknown>(): (param0: T) => boolean;
+    static and<T extends unknown>(paramfirst: (param0: Object) => boolean, paramsecond: (param0: Object) => boolean): (param0: T) => boolean;
+    static and<T extends unknown>(paramcomponents: (param0: Object) => boolean[]): (param0: T) => boolean;
+    static compose<A extends unknown, B extends unknown>(parampredicate: (param0: B) => boolean, paramfunction: (param0: A) => B): (param0: A) => boolean;
     static contains(parampattern: Pattern): (param0: CharSequence) => boolean;
     static containsPattern(parampattern: string): (param0: CharSequence) => boolean;
-    static equalTo(paramtarget: Object | null): (param0: Object | null) => boolean;
-    static in(paramtarget: (Object | null)[]): (param0: Object | null) => boolean;
-    static instanceOf(paramclazz: Class<Object>): (param0: Object | null) => boolean;
-    static isNull(): (param0: Object | null) => boolean;
-    static not(parampredicate: (param0: Object | null) => boolean): (param0: Object | null) => boolean;
-    static notNull(): (param0: Object | null) => boolean;
-    static or(paramfirst: (param0: Object) => boolean, paramsecond: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static or(paramcomponents: (param0: Object) => boolean[]): (param0: Object | null) => boolean;
+    static equalTo<T extends unknown>(paramtarget: T): (param0: T) => boolean;
+    static in<T extends unknown>(paramtarget: T[]): (param0: T) => boolean;
+    static instanceOf<T extends unknown>(paramclazz: Class<Object>): (param0: T) => boolean;
+    static isNull<T extends unknown>(): (param0: T) => boolean;
+    static not<T extends unknown>(parampredicate: (param0: T) => boolean): (param0: T) => boolean;
+    static notNull<T extends unknown>(): (param0: T) => boolean;
+    static or<T extends unknown>(paramfirst: (param0: Object) => boolean, paramsecond: (param0: Object) => boolean): (param0: T) => boolean;
+    static or<T extends unknown>(paramcomponents: (param0: Object) => boolean[]): (param0: T) => boolean;
     static subtypeOf(paramclazz: Class<Object>): (param0: Class<Object>) => boolean;
     private constructor()
 }

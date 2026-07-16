@@ -4,9 +4,9 @@ import type { ClientTagsLoader$LoadedTag } from '../../../../../../net/fabricmc/
 import type { Holder } from '../../../../../../net/minecraft/core/Holder.d.ts'
 import type { TagKey } from '../../../../../../net/minecraft/tags/TagKey.d.ts'
 export class ClientTagsImpl extends Object {
-    static getHolder(paramarg0: TagKey<Object>, paramarg1: Object | null): Optional<Holder<Object>>;
+    static getHolder<T extends unknown>(paramarg0: TagKey<T>, paramarg1: T): Optional<Holder<T>>;
     static getOrCreatePartiallySyncedTag(paramarg0: TagKey<Object>): ClientTagsLoader$LoadedTag;
-    static getRegistry(paramarg0: TagKey<Object>): Optional<(Object | null)[]>;
-    static isInWithLocalFallback(paramarg0: TagKey<Object>, paramarg1: Holder<Object>): boolean;
+    static getRegistry<T extends unknown>(paramarg0: TagKey<T>): Optional<T[]>;
+    static isInWithLocalFallback<T extends unknown>(paramarg0: TagKey<T>, paramarg1: Holder<T>): boolean;
     constructor()
 }

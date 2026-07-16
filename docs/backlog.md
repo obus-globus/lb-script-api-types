@@ -108,44 +108,74 @@ W3 = deeper design, W4 = infra.
 
 ### Wave 3 - deeper design
 
-- **[ ] A12 - statics lose Kotlin nullability wholesale.** `staticMethodsOf`
-  resolves via java.lang.reflect, never Kotlin metadata: verified
-  `WorldToScreen.calculateScreenPos` returns `Vec3f?` in Kotlin, emitted
-  non-null (instance dual is correct). Also 12 return-nullability-
-  contradictory overload pairs in 10 hot LB utils (W19 re-emission keys on
-  params only). _Layer: generator._
-- **[ ] A13 - Map renderings don't match GraalJS reality.** JS-global
-  `Map<K,V>` (5,345 refs, no import - names a real-but-wrong runtime type),
-  `{ [key: string]: any }` fastutil fallback (8,429), and string/number index
-  signatures all misrepresent a host `java.util.Map` (`get/put/containsKey`
-  methods, no bracket indexing, no `set/delete`). Consider a structural
-  `JavaMap<K,V>` ambient type. _Layer: generator design._
-- **[ ] A14 - skipped collection classes lose their statics.**
-  `shouldIgnoreSuperclass` classes (`ImmutableList`, `List`, `TreeMap`...)
-  get no module, so `ImmutableList.of/copyOf/builder`, `List.of` are untyped
-  for `Java.type` users. Emit statics-only modules. _Layer: generator._
-- **[ ] A15 - Nashorn dual surface half-typed.** Kotlin classes emit
-  property-only (`Client.getEventManager()` errors though runtime + own KDoc
-  support it); Java classes emit method-only (`mc.connection` untyped).
-  Either emit both forms or document the convention prominently.
-  _Layer: generator design._
-- **[ ] A16 - ambient global collisions in non-module scripts.**
-  `const Vec3d = Java.type(...)` at top level of a non-module script collides
-  with the ambient global (TS2451) - bites two shipped example scripts; the
-  Yarn alias set (Vec3d/MathHelper/Hand/RotationAxis) doubles the trap for
-  zero coverage. Consider dropping the aliases + documenting `export {}`.
-  _Layer: ambient + docs._
-- **[ ] A17 - misc emission nits.** `ChatReceiveEvent.applyChatDecoration`
-  should be `(Component) => Component` (UnaryOperator erasure);
-  `TagEntityEvent.color` property shadowed by the `color(col, priority)`
-  method; suspend fns emitted as plain `(): void` (misleading - JS callers
-  need a Continuation); static generics dead code
-  (`filterIsInstance<KTypeParameter>` over KTypes, statics erase to Object);
-  interface statics wrongly merged into implementing classes; enum
-  `values(): (Object | null)[]` / `valueOf(Class<Object>, string)` could be
-  precisely typed; 4 residual anonymous-class dangling refs
-  (`ExecutionSequencer$1` x2, `Maps$1`, `BestCandidateSampling$1`,
-  `BoundMethodHandle$Specializer`). _Layer: generator._
+- **[x] A12 - statics lose Kotlin nullability wholesale.** Fixed 2026-07-16
+  (wave 3, generator; pending regen verify): `staticMethodsOf` resolves the
+  Kotlin dual of a static (`Method.kotlinFunction`, gated on the declaring
+  class carrying `@kotlin.Metadata` so pure-Java statics are byte-identical)
+  and renders from its KTypes - declared return AND parameter nullability
+  survive, real Kotlin param names replace `paramargN`, and @JvmStatic
+  object/companion bridges, file-facade top-level functions and extension
+  functions (receiver = first param, named `self`) all resolve. Also
+  collapsed the W19 return-nullability-contradictory overload PAIRS to the
+  NULLABLE form in `functionsOf` (same name/params, returns differ only by
+  `| null` -> keep nullable: a spurious null check beats a masked null).
+  Tests: wave3RegressionTests.
+- **[~] A13 - Map renderings don't match GraalJS reality - DEFERRED (wave 3).**
+  A structural `JavaMap<K,V>` ambient type is the right shape but flips ~14k
+  renderings (5.3k JS-global `Map<K,V>` refs + 8.4k index-signature
+  fallbacks) - a near-total semantic-baseline rewrite whose impact can't be
+  bounded or verified without a full regen + consumer-simulation pass, and
+  landing it blind alongside A12/A14/A15 would mask their regressions. Do it
+  as its own change: add the ambient `JavaMap<K,V>` first, then switch
+  `mapFromKType` + the fastutil fallback in one commit with a dedicated
+  baseline review. _Layer: generator design._
+- **[x] A14 - skipped collection classes lose their statics.** Fixed
+  2026-07-16 (wave 3, generator): `visitClass` now gives
+  `shouldIgnoreSuperclass` classes a statics-only module - `class X<T...>`
+  with static fields/methods only, no heritage/ctors/instance members;
+  classes without statics still emit nothing; arrays still skipped. The class
+  declares its own type parameters so self-references inside static
+  signatures (`Map.of(...): Map<K, V>`, where the local declaration shadows
+  JS-global Map) stay generic (TS2315 otherwise). Instance references keep
+  the structural array/map rendering and never import these modules; they
+  exist for `Java.type`/registry consumers. Tests: wave3RegressionTests.
+- **[~] A15 - Nashorn dual surface half-typed - Java dual DEFERRED (wave 3).** Attempted 2026-07-16 then reverted: injecting Java bean properties (`mc.connection`) cascaded +84 TS2344 + TS2416 across generic-bound Minecraft hierarchies (a bean property on `Entity`, used as `<T extends Entity>` everywhere, breaks structurally). Per-class guards can't see it; needs whole-hierarchy analysis (leaf classes only, never a generic-bound type). Kotlin property-first side shipped as documentation only. Fixed 2026-07-16 (wave 3,
+  conservative split; pending regen verify): JAVA classes now also emit the
+  bean-property form for declared public field-less getters (`mc.connection`
+  next to `getConnection()`; writable when a public setter exists), guarded
+  against each identified collision class: bean name taken by any hierarchy
+  method (TS2416 / F7), by a field/property/base property/A3-injected
+  interface property (TS2300), interfaces excluded (TS2420 on implementers),
+  `getClass` excluded (would drag java.lang.Class into every module). KOTLIN
+  classes stay property-only - emitting `getX()` for every Kotlin property
+  would add a redundant alias tree-wide for a legacy calling convention;
+  documented prominently in typings/README.md + README.md instead. Tests:
+  wave3RegressionTests.
+- **[x] A16 - ambient global collisions in non-module scripts.** Fixed
+  2026-07-16 (wave 3, docs/ambient): the aliases are REAL runtime bindings
+  (`ScriptContextProvider.putMember("Vec3d", ...)`) so they stay;
+  fix-binding-types.py injects an idempotent A16 note above the ambient
+  `export const` list, and both READMEs document the TS2451 trap + the
+  escape hatches (use the global / rename / `export {}`).
+- **[~] A17 - misc emission nits.** Partially fixed 2026-07-16 (wave 3).
+  **Done:** static-generics dead code replaced with REAL method-level
+  generics on the Java-reflect path (`make<T>(param: Class<T>): T` via a
+  SyntheticKType / JavaTypeVariableParameter bridge - kotlin-reflect's
+  createType rejects foreign type args, so these carry the shape; F-bounded
+  bounds like `T extends Enum<T>` now render legally instead of the
+  TS2344-prone `Enum<Object>` erasure); enum statics precise (own
+  `valueOf(value: string): X` via the A12 Kotlin dual; inherited
+  `Enum.valueOf` now `valueOf<T extends Enum<T>>(Class<T>, string): T`;
+  `values(): X[]` was already correct - the audit note was stale);
+  `applyChatDecoration`-class UnaryOperator erasure fixed GENERALLY (the SAM
+  substitution is composed onto the SAM's DECLARING class through the generic
+  supertype chain, so `UnaryOperator<Component>` renders
+  `(Component) => Component`). **Still open:** `TagEntityEvent.color`
+  field/method shadow (F7 post-patch domain); suspend fns emitted as plain
+  `(): void`; interface statics merged into implementing classes; 4 residual
+  anonymous-class dangling refs (`ExecutionSequencer$1` x2, `Maps$1`,
+  `BestCandidateSampling$1`, `BoundMethodHandle$Specializer`).
+  _Layer: generator._
 
 ### Wave 4 - infra / docs
 

@@ -4,15 +4,15 @@ import type { Json } from '../../../../kotlinx/serialization/json/Json.d.ts'
 import type { JsonNamingStrategy } from '../../../../kotlinx/serialization/json/JsonNamingStrategy.d.ts'
 import type { DescriptorSchemaCache$Key } from '../../../../kotlinx/serialization/json/internal/DescriptorSchemaCache$Key.d.ts'
 export class JsonNamesMapKt extends Object {
-    static deserializationNamesMap(paramarg0: Json, paramarg1: SerialDescriptor): { [key: string]: number };
+    static deserializationNamesMap(self: Json, descriptor: SerialDescriptor): { [key: string]: number };
     static getJsonDeserializationNamesKey(): DescriptorSchemaCache$Key<{ [key: string]: number }>;
-    static getJsonElementName(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: number): string;
-    static getJsonEncodedNames(paramarg0: SerialDescriptor, paramarg1: Json): string[];
-    static getJsonNameIndex(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: string): number;
-    static getJsonNameIndexOrThrow(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: string, paramarg3: string): number;
+    static getJsonElementName(self: SerialDescriptor, json: Json, index: number): string;
+    static getJsonEncodedNames(self: SerialDescriptor, json: Json): string[];
+    static getJsonNameIndex(self: SerialDescriptor, json: Json, name: string): number;
+    static getJsonNameIndexOrThrow(self: SerialDescriptor, json: Json, name: string, suffix: string): number;
     static getJsonSerializationNamesKey(): DescriptorSchemaCache$Key<string[]>;
-    static ignoreUnknownKeys(paramarg0: SerialDescriptor, paramarg1: Json): boolean;
-    static namingStrategy(paramarg0: SerialDescriptor, paramarg1: Json): JsonNamingStrategy;
-    static serializationNamesIndices(paramarg0: SerialDescriptor, paramarg1: Json, paramarg2: JsonNamingStrategy): string[];
-    static tryCoerceValue(paramarg0: Json, paramarg1: SerialDescriptor, paramarg2: number, paramarg3: (param0: Object) => boolean, paramarg4: () => string, paramarg5: () => void): boolean;
+    static ignoreUnknownKeys(self: SerialDescriptor, json: Json): boolean;
+    static namingStrategy(self: SerialDescriptor, json: Json): JsonNamingStrategy | null;
+    static serializationNamesIndices(self: SerialDescriptor, json: Json, strategy: JsonNamingStrategy): string[];
+    static tryCoerceValue(self: Json, descriptor: SerialDescriptor, index: number, peekNull: (param0: boolean) => boolean, peekString: () => string | null, onEnumCoercing: () => void): boolean;
 }

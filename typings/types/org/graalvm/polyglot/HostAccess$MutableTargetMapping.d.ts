@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class HostAccess$MutableTargetMapping extends Enum<HostAccess$MutableTargetMapping> {
     static ARRAY_TO_JAVA_LIST: HostAccess$MutableTargetMapping;
@@ -9,7 +8,7 @@ export class HostAccess$MutableTargetMapping extends Enum<HostAccess$MutableTarg
     static ITERATOR_TO_JAVA_ITERATOR: HostAccess$MutableTargetMapping;
     static MEMBERS_TO_JAVA_INTERFACE: HostAccess$MutableTargetMapping;
     static MEMBERS_TO_JAVA_MAP: HostAccess$MutableTargetMapping;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): HostAccess$MutableTargetMapping;
     static values(): HostAccess$MutableTargetMapping[];
     private constructor()

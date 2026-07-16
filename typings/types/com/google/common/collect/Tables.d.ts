@@ -9,14 +9,14 @@ import type { Supplier as Supplier_2 } from '../../../../java/util/function/Supp
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Tables extends Object {
-    static immutableCell(paramrowKey: Object | null, paramcolumnKey: Object | null, paramvalue: Object | null): Table$Cell<Object, Object, Object>;
-    static newCustomTable(parambackingMap: Map<Object | null, Map<Object | null, Object | null>>, paramfactory: () => Map<Object | null, Object | null>): Table<Object, Object, Object>;
-    static synchronizedTable(paramtable: Table<Object, Object, Object>): Table<Object, Object, Object>;
-    static toTable(paramrowFunction: (param0: Object) => Object | null, paramcolumnFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null, parammergeFunction: (param0: Object | null, param1: Object | null) => Object | null, paramtableSupplier: () => Object | null): Collector<Object, Object, Object>;
-    static toTable(paramrowFunction: (param0: Object) => Object | null, paramcolumnFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null, paramtableSupplier: () => Object | null): Collector<Object, Object, Object>;
-    static transformValues(paramfromTable: Table<Object, Object, Object>, paramfunction: (param0: Object) => Object | null): Table<Object, Object, Object>;
-    static transpose(paramtable: Table<Object, Object, Object>): Table<Object, Object, Object>;
-    static unmodifiableRowSortedTable(paramtable: RowSortedTable<Object, Object, Object>): RowSortedTable<Object, Object, Object>;
-    static unmodifiableTable(paramtable: Table<Object, Object, Object>): Table<Object, Object, Object>;
+    static immutableCell<R extends unknown, C extends unknown, V extends unknown>(paramrowKey: R, paramcolumnKey: C, paramvalue: V): Table$Cell<R, C, V>;
+    static newCustomTable<R extends unknown, C extends unknown, V extends unknown>(parambackingMap: Map<R, Map<C, V>>, paramfactory: () => Map<C, V>): Table<R, C, V>;
+    static synchronizedTable<R extends unknown, C extends unknown, V extends unknown>(paramtable: Table<R, C, V>): Table<R, C, V>;
+    static toTable<T extends unknown, R extends unknown, C extends unknown, V extends unknown, I extends Table<R, C, V>>(paramrowFunction: (param0: Object) => R, paramcolumnFunction: (param0: Object) => C, paramvalueFunction: (param0: Object) => V, parammergeFunction: (param0: V, param1: V) => V, paramtableSupplier: () => I): Collector<T, Object, I>;
+    static toTable<T extends unknown, R extends unknown, C extends unknown, V extends unknown, I extends Table<R, C, V>>(paramrowFunction: (param0: Object) => R, paramcolumnFunction: (param0: Object) => C, paramvalueFunction: (param0: Object) => V, paramtableSupplier: () => I): Collector<T, Object, I>;
+    static transformValues<R extends unknown, C extends unknown, V1 extends unknown, V2 extends unknown>(paramfromTable: Table<R, C, V1>, paramfunction: (param0: Object) => V2): Table<R, C, V2>;
+    static transpose<R extends unknown, C extends unknown, V extends unknown>(paramtable: Table<R, C, V>): Table<C, R, V>;
+    static unmodifiableRowSortedTable<R extends unknown, C extends unknown, V extends unknown>(paramtable: RowSortedTable<R, C, V>): RowSortedTable<R, C, V>;
+    static unmodifiableTable<R extends unknown, C extends unknown, V extends unknown>(paramtable: Table<R, C, V>): Table<R, C, V>;
     private constructor()
 }

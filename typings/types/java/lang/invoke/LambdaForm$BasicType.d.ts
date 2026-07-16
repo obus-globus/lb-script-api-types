@@ -10,7 +10,7 @@ export class LambdaForm$BasicType extends Enum<LambdaForm$BasicType> {
     static J_TYPE: LambdaForm$BasicType;
     static L_TYPE: LambdaForm$BasicType;
     static V_TYPE: LambdaForm$BasicType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LambdaForm$BasicType;
     static values(): LambdaForm$BasicType[];
     private constructor(arg2: string, arg3: Class<Object>, arg4: Wrapper, arg5: TypeKind)

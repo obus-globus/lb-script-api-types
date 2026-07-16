@@ -2,7 +2,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Segment } from '../../../kotlinx/coroutines/internal/Segment.d.ts'
 export class SegmentOrClosed<S extends Segment<S>> extends Object {
 // (invalid TS: name contains '-')     static box-impl(paramarg0: Object): SegmentOrClosed<any>;
-// (invalid TS: name contains '-')     static constructor-impl(paramarg0: Object): Object;
+// (invalid TS: name contains '-')     static constructor-impl<S extends Segment<S>>(paramarg0: Object): Object;
 // (invalid TS: name contains '-')     static equals-impl(paramarg0: Object, paramarg1: Object): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: Object, paramarg1: Object): boolean;
 // (invalid TS: name contains '-')     static getSegment-impl(paramarg0: Object): Object | null;

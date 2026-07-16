@@ -4,9 +4,9 @@ import type { TreeRangeSet } from '../../../../com/google/common/collect/TreeRan
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class TreeRangeSet$Complement extends TreeRangeSet<C> {
-    static create(): TreeRangeSet<any>;
-    static create(paramrangeSet: RangeSet<any>): TreeRangeSet<any>;
-    static create(paramranges: Range<any>[]): TreeRangeSet<any>;
+    static create<C extends Comparable<Object>>(): TreeRangeSet<C>;
+    static create<C extends Comparable<Object>>(paramrangeSet: RangeSet<C>): TreeRangeSet<C>;
+    static create<C extends Comparable<Object>>(paramranges: Range<C>[]): TreeRangeSet<C>;
     constructor(null_: TreeRangeSet<Comparable<Object>>)
     add<C extends Comparable<Object>>(rangeToAdd: Range<C>): void;
     complement<C extends Comparable<Object>>(): RangeSet<C>;

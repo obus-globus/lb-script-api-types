@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { MCEFDownloadManager } from '../../../../net/ccbluex/liquidbounce/mcef/MCEFDownloadManager.d.ts'
 import type { MCEFSettings } from '../../../../net/ccbluex/liquidbounce/mcef/MCEFSettings.d.ts'
@@ -12,7 +11,7 @@ import type { Logger } from '../../../../org/slf4j/Logger.d.ts'
 export class MCEF extends Enum<MCEF> {
     static INSTANCE: MCEF;
     static mc: Minecraft;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MCEF;
     static values(): MCEF[];
     private constructor()

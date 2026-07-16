@@ -14,12 +14,12 @@ import type { PalettedContainerRO } from '../../../../../net/minecraft/world/lev
 import type { PalettedContainerRO$PackedData } from '../../../../../net/minecraft/world/level/chunk/PalettedContainerRO$PackedData.d.ts'
 import type { Strategy } from '../../../../../net/minecraft/world/level/chunk/Strategy.d.ts'
 export class PalettedContainer<T extends unknown> extends Object implements PalettedContainerROExtension<Object>, PaletteResize<T>, PalettedContainerRO<T> {
-    static clone(paramarg0: PalettedContainerRO<Object>): PalettedContainerRO<Object>;
-    static codecRO(paramelementCodec: Codec<Object>, paramstrategy: Strategy<Object>, paramdefaultValue: Object | null): Codec<PalettedContainerRO<Object>>;
-    static codecRW(paramelementCodec: Codec<Object>, paramstrategy: Strategy<Object>, paramdefaultValue: Object | null): Codec<PalettedContainer<Object>>;
-    static noResizeExpected(): PaletteResize<Object>;
-    static of(paramarg0: PalettedContainerRO<Object>): PalettedContainerROExtension<Object>;
-    static unpack(paramstrategy: Strategy<Object>, paramdiscData: PalettedContainerRO$PackedData<Object>): DataResult<PalettedContainer<Object>>;
+    static clone<T extends unknown>(paramarg0: PalettedContainerRO<T>): PalettedContainerRO<T>;
+    static codecRO<T extends unknown>(paramelementCodec: Codec<T>, paramstrategy: Strategy<T>, paramdefaultValue: T): Codec<PalettedContainerRO<T>>;
+    static codecRW<T extends unknown>(paramelementCodec: Codec<T>, paramstrategy: Strategy<T>, paramdefaultValue: T): Codec<PalettedContainer<T>>;
+    static noResizeExpected<T extends unknown>(): PaletteResize<T>;
+    static of<T extends unknown>(paramarg0: PalettedContainerRO<T>): PalettedContainerROExtension<T>;
+    static unpack<T extends unknown>(paramstrategy: Strategy<T>, paramdiscData: PalettedContainerRO$PackedData<T>): DataResult<PalettedContainer<T>>;
     constructor(initialValue: T, strategy: Strategy<T>)
     // private data: PalettedContainer$Data<T>;
     // private strategy: Strategy<T>;

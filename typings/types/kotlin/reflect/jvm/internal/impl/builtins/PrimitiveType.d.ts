@@ -16,7 +16,7 @@ export class PrimitiveType extends Enum<PrimitiveType> {
     static LONG: PrimitiveType;
     static NUMBER_TYPES: PrimitiveType[];
     static SHORT: PrimitiveType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PrimitiveType;
     static values(): PrimitiveType[];
     private constructor(arg2: string)

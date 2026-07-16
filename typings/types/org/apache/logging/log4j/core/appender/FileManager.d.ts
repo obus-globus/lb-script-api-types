@@ -13,8 +13,8 @@ import type { OutputStreamManager } from '../../../../../../org/apache/logging/l
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 export class FileManager extends OutputStreamManager {
     static getFileManager(paramfileName: string, paramappend: boolean, paramlocking: boolean, parambufferedIo: boolean, paramcreateOnDemand: boolean, paramadvertiseURI: string, paramlayout: Layout<Serializable>, parambufferSize: number, paramfilePermissions: string, paramfileOwner: string, paramfileGroup: string, paramconfiguration: Configuration): FileManager;
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
-    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<OutputStreamManager, Object>): OutputStreamManager;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
+    static getManager<T extends unknown>(paramname: string, paramdata: T, paramfactory: ManagerFactory<OutputStreamManager, T>): OutputStreamManager;
     static hasManager(paramname: string): boolean;
     constructor(fileName: string, os: OutputStream, append: boolean, locking: boolean, advertiseURI: string, layout: Layout<Serializable>, writeHeader: boolean, buffer: ByteBuffer)
     constructor(fileName: string, os: OutputStream, append: boolean, locking: boolean, advertiseURI: string, layout: Layout<Serializable>, bufferSize: number, writeHeader: boolean)

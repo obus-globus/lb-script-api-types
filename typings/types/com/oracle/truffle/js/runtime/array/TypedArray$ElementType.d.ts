@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class TypedArray$ElementType extends Enum<TypedArray$ElementType> {
     static BigInt64: TypedArray$ElementType;
@@ -14,7 +13,7 @@ export class TypedArray$ElementType extends Enum<TypedArray$ElementType> {
     static Uint32: TypedArray$ElementType;
     static Uint8: TypedArray$ElementType;
     static Uint8Clamped: TypedArray$ElementType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TypedArray$ElementType;
     static values(): TypedArray$ElementType[];
     private constructor()

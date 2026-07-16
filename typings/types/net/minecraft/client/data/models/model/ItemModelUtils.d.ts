@@ -1,6 +1,7 @@
 import type { Transformation } from '../../../../../../com/mojang/math/Transformation.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../../../java/lang/Comparable.d.ts'
 import type { ItemTintSource } from '../../../../../../net/minecraft/client/color/item/ItemTintSource.d.ts'
 import type { ItemModel$Unbaked } from '../../../../../../net/minecraft/client/renderer/item/ItemModel$Unbaked.d.ts'
 import type { RangeSelectItemModel$Entry } from '../../../../../../net/minecraft/client/renderer/item/RangeSelectItemModel$Entry.d.ts'
@@ -30,18 +31,18 @@ export class ItemModelUtils extends Object {
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramfallback: ItemModel$Unbaked, paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;
     static rangeSelect(paramproperty: RangeSelectItemModelProperty, paramfallback: ItemModel$Unbaked, ...paramentries: RangeSelectItemModel$Entry[]): ItemModel$Unbaked;
-    static select(paramtransformation: Transformation, paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
-    static select(paramproperty: SelectItemModelProperty<Object>, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
-    static select(paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
-    static select(paramproperty: SelectItemModelProperty<Object>, paramfallback: ItemModel$Unbaked, ...paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
-    static select(paramproperty: SelectItemModelProperty<Object>, ...paramcases: SelectItemModel$SwitchCase<Object>[]): ItemModel$Unbaked;
-    static selectBlockItemProperty(paramtransformation: Transformation, paramproperty: Property<any>, paramfallback: ItemModel$Unbaked, paramcases: Map<Object | null, ItemModel$Unbaked>): ItemModel$Unbaked;
-    static selectBlockItemProperty(paramproperty: Property<any>, paramfallback: ItemModel$Unbaked, paramcases: Map<Object | null, ItemModel$Unbaked>): ItemModel$Unbaked;
+    static select<T extends unknown>(paramtransformation: Transformation, paramproperty: SelectItemModelProperty<T>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<T>[]): ItemModel$Unbaked;
+    static select<T extends unknown>(paramproperty: SelectItemModelProperty<T>, paramcases: SelectItemModel$SwitchCase<T>[]): ItemModel$Unbaked;
+    static select<T extends unknown>(paramproperty: SelectItemModelProperty<T>, paramfallback: ItemModel$Unbaked, paramcases: SelectItemModel$SwitchCase<T>[]): ItemModel$Unbaked;
+    static select<T extends unknown>(paramproperty: SelectItemModelProperty<T>, paramfallback: ItemModel$Unbaked, ...paramcases: SelectItemModel$SwitchCase<T>[]): ItemModel$Unbaked;
+    static select<T extends unknown>(paramproperty: SelectItemModelProperty<T>, ...paramcases: SelectItemModel$SwitchCase<T>[]): ItemModel$Unbaked;
+    static selectBlockItemProperty<T extends Comparable<T>>(paramtransformation: Transformation, paramproperty: Property<T>, paramfallback: ItemModel$Unbaked, paramcases: Map<T, ItemModel$Unbaked>): ItemModel$Unbaked;
+    static selectBlockItemProperty<T extends Comparable<T>>(paramproperty: Property<T>, paramfallback: ItemModel$Unbaked, paramcases: Map<T, ItemModel$Unbaked>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, paramtransformation: Transformation, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, paramtransformation: Optional<Transformation>, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
     static specialModel(parambase: Identifier, parammodel: SpecialModelRenderer$Unbaked<Object>): ItemModel$Unbaked;
     static tintedModel(paramid: Identifier, ...paramtints: ItemTintSource[]): ItemModel$Unbaked;
-    static when(paramvalue: Object | null, parammodel: ItemModel$Unbaked): SelectItemModel$SwitchCase<Object>;
-    static when(paramvalues: (Object | null)[], parammodel: ItemModel$Unbaked): SelectItemModel$SwitchCase<Object>;
+    static when<T extends unknown>(paramvalue: T, parammodel: ItemModel$Unbaked): SelectItemModel$SwitchCase<T>;
+    static when<T extends unknown>(paramvalues: T[], parammodel: ItemModel$Unbaked): SelectItemModel$SwitchCase<T>;
     constructor()
 }

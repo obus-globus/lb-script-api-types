@@ -3,7 +3,7 @@ import type { DynamicOps } from '../../../../../../../com/mojang/serialization/D
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { StructureTemplatePool$Projection } from '../../../../../../../net/minecraft/world/level/levelgen/structure/pools/StructureTemplatePool$Projection.d.ts'
 export class JigsawJunction extends Object {
-    static deserialize(paraminput: Dynamic<Object>): JigsawJunction;
+    static deserialize<T extends unknown>(paraminput: Dynamic<T>): JigsawJunction;
     constructor(sourceX: number, sourceGroundY: number, sourceZ: number, deltaY: number, destProjection: StructureTemplatePool$Projection)
     readonly deltaY: number;
     readonly destProjection: StructureTemplatePool$Projection;

@@ -5,7 +5,7 @@ export class CharSequences extends Object {
     static compare(paramarg0: number, paramarg1: CharSequence): number;
     static compare(paramarg0: CharSequence, paramarg1: number): number;
     static compare(paramarg0: CharSequence, paramarg1: CharSequence): number;
-    static equals(paramarg0: Object | null, paramarg1: Object | null): boolean;
+    static equals<T extends unknown>(paramarg0: T, paramarg1: T): boolean;
     static equals(paramarg0: number, paramarg1: CharSequence): boolean;
     static equals(paramarg0: CharSequence, paramarg1: number): boolean;
     static equalsChars(paramarg0: CharSequence, paramarg1: CharSequence): boolean;

@@ -1,6 +1,5 @@
 import type { FlagEnum } from '../../../../../com/sun/jna/platform/win32/FlagEnum.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class HighLevelMonitorConfigurationAPI$MC_CAPS extends Enum<HighLevelMonitorConfigurationAPI$MC_CAPS> implements FlagEnum {
     static MC_CAPS_BRIGHTNESS: HighLevelMonitorConfigurationAPI$MC_CAPS;
@@ -16,7 +15,7 @@ export class HighLevelMonitorConfigurationAPI$MC_CAPS extends Enum<HighLevelMoni
     static MC_CAPS_RESTORE_FACTORY_COLOR_DEFAULTS: HighLevelMonitorConfigurationAPI$MC_CAPS;
     static MC_CAPS_RESTORE_FACTORY_DEFAULTS: HighLevelMonitorConfigurationAPI$MC_CAPS;
     static MC_RESTORE_FACTORY_DEFAULTS_ENABLES_MONITOR_SETTINGS: HighLevelMonitorConfigurationAPI$MC_CAPS;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): HighLevelMonitorConfigurationAPI$MC_CAPS;
     static values(): HighLevelMonitorConfigurationAPI$MC_CAPS[];
     private constructor(arg2: number)

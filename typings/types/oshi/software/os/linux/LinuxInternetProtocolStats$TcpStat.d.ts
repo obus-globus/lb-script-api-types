@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class LinuxInternetProtocolStats$TcpStat extends Enum<LinuxInternetProtocolStats$TcpStat> {
     static ActiveOpens: LinuxInternetProtocolStats$TcpStat;
@@ -17,7 +16,7 @@ export class LinuxInternetProtocolStats$TcpStat extends Enum<LinuxInternetProtoc
     static RtoAlgorithm: LinuxInternetProtocolStats$TcpStat;
     static RtoMax: LinuxInternetProtocolStats$TcpStat;
     static RtoMin: LinuxInternetProtocolStats$TcpStat;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LinuxInternetProtocolStats$TcpStat;
     static values(): LinuxInternetProtocolStats$TcpStat[];
     private constructor()

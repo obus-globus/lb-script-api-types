@@ -4,14 +4,14 @@ import type { Buffer } from '../../kotlinx/io/Buffer.d.ts'
 import type { Sink } from '../../kotlinx/io/Sink.d.ts'
 import type { Source } from '../../kotlinx/io/Source.d.ts'
 export class Utf8Kt extends Object {
-    static readCodePointValue(paramarg0: Source): number;
-    static readLine(paramarg0: Source): string;
-    static readLineStrict(paramarg0: Source, paramarg1: number): string;
-    static readString(paramarg0: Buffer): string;
-    static readString(paramarg0: Source): string;
-    static readString(paramarg0: Source, paramarg1: number): string;
-    static utf8Size(paramarg0: string, paramarg1: number, paramarg2: number): number;
-    static writeCodePointValue(paramarg0: Sink, paramarg1: number): void;
-    static writeString(paramarg0: Sink, paramarg1: CharSequence, paramarg2: number, paramarg3: number): void;
-    static writeString(paramarg0: Sink, paramarg1: string, paramarg2: number, paramarg3: number): void;
+    static readCodePointValue(self: Source): number;
+    static readLine(self: Source): string | null;
+    static readLineStrict(self: Source, limit: number): string;
+    static readString(self: Buffer): string;
+    static readString(self: Source): string;
+    static readString(self: Source, byteCount: number): string;
+    static utf8Size(self: string, startIndex: number, endIndex: number): number;
+    static writeCodePointValue(self: Sink, codePoint: number): void;
+    static writeString(self: Sink, chars: CharSequence, startIndex: number, endIndex: number): void;
+    static writeString(self: Sink, string: string, startIndex: number, endIndex: number): void;
 }

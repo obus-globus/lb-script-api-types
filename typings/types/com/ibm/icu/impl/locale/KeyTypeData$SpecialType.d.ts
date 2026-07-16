@@ -1,6 +1,5 @@
 import type { KeyTypeData$SpecialTypeHandler } from '../../../../../com/ibm/icu/impl/locale/KeyTypeData$SpecialTypeHandler.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class KeyTypeData$SpecialType extends Enum<KeyTypeData$SpecialType> {
     static CODEPOINTS: KeyTypeData$SpecialType;
@@ -9,7 +8,7 @@ export class KeyTypeData$SpecialType extends Enum<KeyTypeData$SpecialType> {
     static RG_KEY_VALUE: KeyTypeData$SpecialType;
     static SCRIPT_CODE: KeyTypeData$SpecialType;
     static SUBDIVISION_CODE: KeyTypeData$SpecialType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): KeyTypeData$SpecialType;
     static values(): KeyTypeData$SpecialType[];
     private constructor(arg2: KeyTypeData$SpecialTypeHandler)

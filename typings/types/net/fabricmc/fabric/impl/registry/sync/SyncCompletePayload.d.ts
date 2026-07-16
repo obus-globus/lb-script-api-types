@@ -12,9 +12,9 @@ export class SyncCompletePayload extends Object implements CustomPacketPayload {
     static CODEC: StreamCodec<FriendlyByteBuf, SyncCompletePayload>;
     static ID: CustomPacketPayload$Type<SyncCompletePayload>;
     static INSTANCE: SyncCompletePayload;
-    static codec(paramwriter: (param0: CustomPacketPayload | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => CustomPacketPayload | null): StreamCodec<ByteBuf, CustomPacketPayload>;
-    static codec(paramfallback: CustomPacketPayload$FallbackProvider<FriendlyByteBuf>, paramtypes: CustomPacketPayload$TypeAndCodec<any, any>[]): StreamCodec<FriendlyByteBuf, CustomPacketPayload>;
-    static createType(paramid: string): CustomPacketPayload$Type<CustomPacketPayload>;
+    static codec<B extends ByteBuf, T extends CustomPacketPayload>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
+    static codec<B extends FriendlyByteBuf>(paramfallback: CustomPacketPayload$FallbackProvider<B>, paramtypes: CustomPacketPayload$TypeAndCodec<any, any>[]): StreamCodec<B, CustomPacketPayload>;
+    static createType<T extends CustomPacketPayload>(paramid: string): CustomPacketPayload$Type<T>;
     private constructor()
     type(): CustomPacketPayload$Type<CustomPacketPayload>;
 }

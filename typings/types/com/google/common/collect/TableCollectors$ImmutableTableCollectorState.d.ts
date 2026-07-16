@@ -7,7 +7,7 @@ export class TableCollectors$ImmutableTableCollectorState<R extends unknown, C e
     constructor(arg0: any)
     // private insertionOrder: TableCollectors$MutableCell<R, C, V>[];
     // private table: Table<R, C, TableCollectors$MutableCell<R, C, V>>;
-    combine(other: TableCollectors$ImmutableTableCollectorState<R, C, V>, merger: (param0: V, param1: Object | null) => Object | null): TableCollectors$ImmutableTableCollectorState<R, C, V>;
-    put(row: R, column: C, value: V, merger: (param0: V, param1: Object | null) => Object | null): void;
+    combine(other: TableCollectors$ImmutableTableCollectorState<R, C, V>, merger: (param0: V, param1: V) => V): TableCollectors$ImmutableTableCollectorState<R, C, V>;
+    put(row: R, column: C, value: V, merger: (param0: V, param1: V) => V): void;
     toTable(): ImmutableTable<R, C, V>;
 }

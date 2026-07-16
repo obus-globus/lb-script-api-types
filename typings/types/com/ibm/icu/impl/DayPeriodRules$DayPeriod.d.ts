@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class DayPeriodRules$DayPeriod extends Enum<DayPeriodRules$DayPeriod> {
     static AFTERNOON1: DayPeriodRules$DayPeriod;
@@ -15,7 +14,7 @@ export class DayPeriodRules$DayPeriod extends Enum<DayPeriodRules$DayPeriod> {
     static NOON: DayPeriodRules$DayPeriod;
     static PM: DayPeriodRules$DayPeriod;
     static VALUES: DayPeriodRules$DayPeriod[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DayPeriodRules$DayPeriod;
     static values(): DayPeriodRules$DayPeriod[];
     private constructor()

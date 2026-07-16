@@ -5,8 +5,8 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class Objects extends Object {
-    static addObjectToArray(paramarg0: (Object | null)[], paramarg1: Object | null): (Object | null)[];
-    static caseInsensitiveValueOf(paramarg0: (Object | null)[], paramarg1: string): Object | null;
+    static addObjectToArray<A extends unknown, O extends A>(paramarg0: A[], paramarg1: O): A[];
+    static caseInsensitiveValueOf<E extends Enum<any>>(paramarg0: E[], paramarg1: string): E;
     static containsConstant(paramarg0: Enum<any>[], paramarg1: string): boolean;
     static containsConstant(paramarg0: Enum<any>[], paramarg1: string, paramarg2: boolean): boolean;
     static containsElement(paramarg0: Object[], paramarg1: Object): boolean;

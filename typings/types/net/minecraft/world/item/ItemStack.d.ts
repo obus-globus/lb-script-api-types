@@ -79,11 +79,11 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     static OPTIONAL_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemStack>;
     static OPTIONAL_UNTRUSTED_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemStack>;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ItemStack>;
-    static combine(paramarg0: ChangeSubscriber<Object>, paramarg1: number, paramarg2: ChangeSubscriber<Object>, paramarg3: number): ChangeSubscriber<Object>;
+    static combine<T extends unknown>(paramarg0: ChangeSubscriber<T>, paramarg1: number, paramarg2: ChangeSubscriber<T>, paramarg3: number): ChangeSubscriber<T>;
     static containsSubscriber(paramarg0: ChangeSubscriber<ItemStack>, paramarg1: number, paramarg2: ChangeSubscriber<ItemStack>, paramarg3: number): boolean;
     static dataOf(paramarg0: ChangeSubscriber<Object>, paramarg1: ChangeSubscriber<Object>, paramarg2: number): number;
-    static dataWithout(paramarg0: ChangeSubscriber<Object>, paramarg1: ChangeSubscriber<Object>, paramarg2: number): number;
-    static dataWithout(paramarg0: ChangeSubscriber<Object>, paramarg1: ChangeSubscriber<Object>, paramarg2: number, paramarg3: number, paramarg4: boolean): number;
+    static dataWithout<T extends unknown>(paramarg0: ChangeSubscriber<T>, paramarg1: ChangeSubscriber<T>, paramarg2: number): number;
+    static dataWithout<T extends unknown>(paramarg0: ChangeSubscriber<T>, paramarg1: ChangeSubscriber<T>, paramarg2: number, paramarg3: number, paramarg4: boolean): number;
     static hashItemAndComponents(paramitem: ItemStack): number;
     static hashStackList(paramitems: ItemStack[]): number;
     static isSameItem(parama: ItemStack, paramb: ItemStack): boolean;
@@ -95,8 +95,8 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     static validateComponents(paramarg0: TypedDataComponent<Object>[]): DataResult<Object>;
     static validateStrict(paramitemStack: ItemStack): DataResult<ItemStack>;
     static validatedStreamCodec(paramcodec: StreamCodec<RegistryFriendlyByteBuf, ItemStack>): StreamCodec<RegistryFriendlyByteBuf, ItemStack>;
-    static without(paramarg0: ChangeSubscriber<Object>, paramarg1: ChangeSubscriber<Object>): ChangeSubscriber<Object>;
-    static without(paramarg0: ChangeSubscriber<Object>, paramarg1: ChangeSubscriber<Object>, paramarg2: number, paramarg3: boolean): ChangeSubscriber<Object>;
+    static without<T extends unknown>(paramarg0: ChangeSubscriber<T>, paramarg1: ChangeSubscriber<T>): ChangeSubscriber<T>;
+    static without<T extends unknown>(paramarg0: ChangeSubscriber<T>, paramarg1: ChangeSubscriber<T>, paramarg2: number, paramarg3: boolean): ChangeSubscriber<T>;
     constructor(item: Holder<Item>)
     constructor(item: Holder<Item>, count: number)
     constructor(item: Holder<Item>, count: number, components: DataComponentPatch)
@@ -228,7 +228,7 @@ export class ItemStack extends Object implements ChangePublisher<Object>, Change
     // private transmuteCopyIgnoreEmpty(newItem: ItemLike, newCount: number): ItemStack;
     typeHolder(): Holder<Item>;
     update<T extends unknown, U extends unknown>(type: DataComponentType<T>, defaultValue: T, value: U, combiner: (param0: T, param1: U) => T): T;
-    update<T extends unknown>(type: DataComponentType<T>, defaultValue: T, function_: (param0: T) => Object | null): T;
+    update<T extends unknown>(type: DataComponentType<T>, defaultValue: T, function_: (param0: T) => T): T;
     use(level: Level, player: Player, hand: InteractionHand): InteractionResult;
     useOn(context: UseOnContext): InteractionResult;
     useOnRelease(): boolean;

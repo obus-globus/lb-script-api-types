@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../../java/lang/Enum.d.ts'
 export class VelocityReduce$ReleaseReason extends Enum<VelocityReduce$ReleaseReason> {
     static FLAG: VelocityReduce$ReleaseReason;
@@ -8,8 +7,8 @@ export class VelocityReduce$ReleaseReason extends Enum<VelocityReduce$ReleaseRea
     static SPECTATOR: VelocityReduce$ReleaseReason;
     static TARGET_REACHED: VelocityReduce$ReleaseReason;
     static getEntries(): VelocityReduce$ReleaseReason[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): VelocityReduce$ReleaseReason;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): VelocityReduce$ReleaseReason;
     static values(): VelocityReduce$ReleaseReason[];
     private constructor(debugSuffix: string | null)
     readonly debugSuffix: string | null;

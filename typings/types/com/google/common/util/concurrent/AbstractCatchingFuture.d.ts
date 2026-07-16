@@ -6,8 +6,8 @@ import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export abstract class AbstractCatchingFuture<V extends unknown, X extends Throwable, F extends unknown, T extends unknown> extends FluentFuture$TrustedFuture<V> implements Runnable {
-    static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
-    static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
+    static from<V extends unknown>(paramfuture: FluentFuture<V>): FluentFuture<V>;
+    static from<V extends unknown>(paramfuture: ListenableFuture<V>): FluentFuture<V>;
     constructor(inputFuture: ListenableFuture<V>, exceptionType: Class<X>, fallback: F)
     // private exceptionType: Class<X>;
     // private fallback: F;

@@ -19,7 +19,7 @@ export class GlobalBuiltins$Global extends Enum<GlobalBuiltins$Global> implement
     static parseInt: GlobalBuiltins$Global;
     static unescape: GlobalBuiltins$Global;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): GlobalBuiltins$Global;
     static values(): GlobalBuiltins$Global[];
     private constructor(length: number)

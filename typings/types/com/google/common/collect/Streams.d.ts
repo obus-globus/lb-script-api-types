@@ -16,27 +16,27 @@ import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class Streams extends Object {
-    static concat(...paramstreams: Stream<Object>[]): Stream<Object>;
+    static concat<T extends unknown>(...paramstreams: Stream<T>[]): Stream<T>;
     static concat(...paramstreams: DoubleStream[]): DoubleStream;
     static concat(...paramstreams: IntStream[]): IntStream;
     static concat(...paramstreams: LongStream[]): LongStream;
-    static findLast(paramstream: Stream<Object>): Optional_2<Object>;
+    static findLast<T extends unknown>(paramstream: Stream<T>): Optional_2<T>;
     static findLast(paramstream: DoubleStream): OptionalDouble;
     static findLast(paramstream: IntStream): OptionalInt;
     static findLast(paramstream: LongStream): OptionalLong;
-    static forEachPair(paramstreamA: Stream<Object>, paramstreamB: Stream<Object>, paramconsumer: (param0: Object, param1: Object) => void): void;
-    static mapWithIndex(paramstream: DoubleStream, paramfunction: Streams$DoubleFunctionWithIndex<Object>): Stream<Object>;
-    static mapWithIndex(paramstream: IntStream, paramfunction: Streams$IntFunctionWithIndex<Object>): Stream<Object>;
-    static mapWithIndex(paramstream: LongStream, paramfunction: Streams$LongFunctionWithIndex<Object>): Stream<Object>;
-    static mapWithIndex(paramstream: Stream<Object>, paramfunction: Streams$FunctionWithIndex<Object, Object>): Stream<Object>;
-    static stream(paramoptional: Optional<Object>): Stream<Object>;
-    static stream(paramiterable: (Object | null)[]): Stream<Object>;
-    static stream(paramcollection: (Object | null)[]): Stream<Object>;
-    static stream(paramiterator: Iterator<Object>): Stream<Object>;
-    static stream(paramoptional: Optional_2<Object>): Stream<Object>;
+    static forEachPair<A extends unknown, B extends unknown>(paramstreamA: Stream<A>, paramstreamB: Stream<B>, paramconsumer: (param0: Object, param1: Object) => void): void;
+    static mapWithIndex<R extends unknown>(paramstream: DoubleStream, paramfunction: Streams$DoubleFunctionWithIndex<R>): Stream<R>;
+    static mapWithIndex<R extends unknown>(paramstream: IntStream, paramfunction: Streams$IntFunctionWithIndex<R>): Stream<R>;
+    static mapWithIndex<R extends unknown>(paramstream: LongStream, paramfunction: Streams$LongFunctionWithIndex<R>): Stream<R>;
+    static mapWithIndex<T extends unknown, R extends unknown>(paramstream: Stream<T>, paramfunction: Streams$FunctionWithIndex<Object, R>): Stream<R>;
+    static stream<T extends unknown>(paramoptional: Optional<T>): Stream<T>;
+    static stream<T extends unknown>(paramiterable: T[]): Stream<T>;
+    static stream<T extends unknown>(paramcollection: T[]): Stream<T>;
+    static stream<T extends unknown>(paramiterator: Iterator<T>): Stream<T>;
+    static stream<T extends unknown>(paramoptional: Optional_2<T>): Stream<T>;
     static stream(paramoptional: OptionalDouble): DoubleStream;
     static stream(paramoptional: OptionalInt): IntStream;
     static stream(paramoptional: OptionalLong): LongStream;
-    static zip(paramstreamA: Stream<Object>, paramstreamB: Stream<Object>, paramfunction: (param0: Object, param1: Object) => Object | null): Stream<Object>;
+    static zip<A extends unknown, B extends unknown, R extends unknown>(paramstreamA: Stream<A>, paramstreamB: Stream<B>, paramfunction: (param0: Object, param1: Object) => R): Stream<R>;
     private constructor()
 }

@@ -23,8 +23,8 @@ export class MeshDraw extends Record {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt#L203 | src/main/kotlin/net/ccbluex/liquidbounce/render/mesh/MeshDraw.kt:203}
      */
-    static bindAndDraw(renderPass: RenderPass, meshDraw: MeshDraw): void;
-    static create(paramarg0: MeshData, paramarg1: RenderPipeline, paramarg2: MeshDraw$VertexUploader, paramarg3: MeshDraw$IndexUploader): MeshDraw;
+    static bindAndDraw(self: RenderPass, meshDraw: MeshDraw): void;
+    static create(self: MeshData, pipeline: RenderPipeline, vertexUploader: MeshDraw$VertexUploader, indexUploader: MeshDraw$IndexUploader): MeshDraw;
     constructor(vertexSlice: GpuBufferSlice, indexBinding: MeshDraw$MeshIndexBinding, indexCount: number)
     // private indexBinding: MeshDraw$MeshIndexBinding;
     /*not mapped: */ indexBinding(): MeshDraw$MeshIndexBinding;

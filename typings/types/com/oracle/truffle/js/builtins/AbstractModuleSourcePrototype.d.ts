@@ -12,7 +12,7 @@ export class AbstractModuleSourcePrototype extends Enum<AbstractModuleSourceProt
     static BUILTINS: JSBuiltinsContainer;
     static _toStringTag: AbstractModuleSourcePrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AbstractModuleSourcePrototype;
     static values(): AbstractModuleSourcePrototype[];
     private constructor(length: number)

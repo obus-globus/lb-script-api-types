@@ -4,17 +4,17 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../java/lang/CharSequence.d.ts'
 import type { StringsKt__StringBuilderJVMKt } from '../../kotlin/text/StringsKt__StringBuilderJVMKt.d.ts'
 export class StringsKt__StringBuilderKt extends StringsKt__StringBuilderJVMKt {
-    static append(paramarg0: Appendable | null, ...paramarg1: CharSequence[]): Appendable | null;
-    static append(paramarg0: StringBuilder, ...paramarg1: Object[]): StringBuilder;
-    static append(paramarg0: StringBuilder, ...paramarg1: string[]): StringBuilder;
-    static appendElement(paramarg0: Appendable, paramarg1: Object | null, paramarg2: (param0: Object) => CharSequence): void;
-    static appendRange(paramarg0: Appendable | null, paramarg1: CharSequence, paramarg2: number, paramarg3: number): Appendable | null;
-    static appendln(paramarg0: Appendable): Appendable;
-    static appendln(paramarg0: StringBuilder): StringBuilder;
-    static clear(paramarg0: StringBuilder): StringBuilder;
-    static prependIndent(paramarg0: string, paramarg1: string): string;
-    static replaceIndent(paramarg0: string, paramarg1: string): string;
-    static replaceIndentByMargin(paramarg0: string, paramarg1: string, paramarg2: string): string;
-    static trimIndent(paramarg0: string): string;
-    static trimMargin(paramarg0: string, paramarg1: string): string;
+    static append<T extends Appendable>(self: T, ...value: (CharSequence | null)[]): T;
+    static append(self: StringBuilder, ...value: (Object | null)[]): StringBuilder;
+    static append(self: StringBuilder, ...value: (string | null)[]): StringBuilder;
+    static appendElement<T extends unknown>(self: Appendable, element: T, transform: ((param0: T) => CharSequence) | null): void;
+    static appendRange<T extends Appendable>(self: T, value: CharSequence, startIndex: number, endIndex: number): T;
+    static appendln(self: Appendable): Appendable;
+    static appendln(self: StringBuilder): StringBuilder;
+    static clear(self: StringBuilder): StringBuilder;
+    static prependIndent(self: string, indent: string): string;
+    static replaceIndent(self: string, newIndent: string): string;
+    static replaceIndentByMargin(self: string, newIndent: string, marginPrefix: string): string;
+    static trimIndent(self: string): string;
+    static trimMargin(self: string, marginPrefix: string): string;
 }

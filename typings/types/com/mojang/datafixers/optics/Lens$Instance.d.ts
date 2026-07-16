@@ -13,7 +13,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Lens$Instance<A2 extends unknown, B2 extends unknown> extends Object implements Cartesian<Lens$Mu<A2, B2>, Cartesian$Mu> {
-    static unbox(paramarg0: App<Cartesian$Mu, K2>): Cartesian<K2, Cartesian$Mu>;
+    static unbox<P extends K2, Proof extends Cartesian$Mu>(paramarg0: App<Proof, P>): Cartesian<P, Proof>;
     constructor()
     dimap<C extends unknown, D extends unknown, A extends unknown, B extends unknown>(arg0: App2<Lens$Mu<A2, B2>, A, B>, arg1: (param0: C) => A, arg2: (param0: B) => D): App2<Lens$Mu<A2, B2>, C, D>;
     dimap<A extends unknown, B extends unknown, C extends unknown, D extends unknown>(arg0: (param0: C) => A, arg1: (param0: B) => D): FunctionType<App2<Lens$Mu<A2, B2>, A, B>, App2<Lens$Mu<A2, B2>, C, D>>;

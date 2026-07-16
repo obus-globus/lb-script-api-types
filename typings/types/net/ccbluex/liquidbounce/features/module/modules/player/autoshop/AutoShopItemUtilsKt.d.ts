@@ -17,8 +17,8 @@ export class AutoShopItemUtilsKt extends Object {
     static TERRACOTTA_ID: string;
     static TIER_ID: string;
     static WOOL_ID: string;
-    static isArmorItem(string: string): boolean;
-    static isConcrete(item: Item): boolean;
-    static isStainedGlass(item: Item): boolean;
-    static stacks(containerScreen: ContainerScreen): string[];
+    static isArmorItem(self: string): boolean;
+    static isConcrete(self: Item): boolean;
+    static isStainedGlass(self: Item): boolean;
+    static stacks(self: ContainerScreen): string[];
 }

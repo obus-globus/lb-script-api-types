@@ -11,7 +11,7 @@ import type { ClientConfigurationPacketListener } from '../../../../../net/minec
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ClientboundUpdateEnabledFeaturesPacket extends Record implements Packet<ClientConfigurationPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundUpdateEnabledFeaturesPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(features: Identifier[])
     // private features: Identifier[];
     equals(o: Object | null): boolean;

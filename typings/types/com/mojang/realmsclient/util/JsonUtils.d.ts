@@ -8,8 +8,8 @@ export class JsonUtils extends Object {
     static getDateOr(paramkey: string, paramnode: JsonObject): Instant;
     static getIntOr(paramkey: string, paramnode: JsonObject, paramdefaultValue: number): number;
     static getLongOr(paramkey: string, paramnode: JsonObject, paramdefaultValue: number): number;
-    static getOptional(paramkey: string, paramnode: JsonObject, paramparser: (param0: JsonObject) => Object | null): Object | null;
-    static getRequired(paramkey: string, paramnode: JsonObject, paramparser: (param0: JsonObject) => Object | null): Object | null;
+    static getOptional<T extends unknown>(paramkey: string, paramnode: JsonObject, paramparser: (param0: JsonObject) => T): T;
+    static getRequired<T extends unknown>(paramkey: string, paramnode: JsonObject, paramparser: (param0: JsonObject) => T): T;
     static getRequiredString(paramkey: string, paramnode: JsonObject): string;
     static getStringOr(paramkey: string, paramnode: JsonObject, paramdefaultValue: string): string;
     static getUuidOr(paramkey: string, paramnode: JsonObject, paramdefaultValue: UUID): UUID;

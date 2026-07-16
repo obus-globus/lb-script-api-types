@@ -5,7 +5,7 @@ import type { Consumer } from '../../../../java/util/function/Consumer.d.ts'
 import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Filter extends Object {
-    static adaptRequest(paramarg0: string, paramarg1: (param0: Request) => Object | null): Filter;
+    static adaptRequest(paramarg0: string, paramarg1: (param0: Request) => Request): Filter;
     static afterHandler(paramarg0: string, paramarg1: (param0: HttpExchange) => void): Filter;
     static beforeHandler(paramarg0: string, paramarg1: (param0: HttpExchange) => void): Filter;
     constructor()

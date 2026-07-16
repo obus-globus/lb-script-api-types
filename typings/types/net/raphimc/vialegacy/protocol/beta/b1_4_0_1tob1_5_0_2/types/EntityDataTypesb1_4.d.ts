@@ -13,7 +13,7 @@ export class EntityDataTypesb1_4 extends Enum<EntityDataTypesb1_4> implements En
     static STRING: EntityDataTypesb1_4;
     static byId(paramarg0: number): EntityDataTypesb1_4;
     static create(paramarg0: number, paramarg1: Type<Object>): EntityDataType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityDataTypesb1_4;
     static values(): EntityDataTypesb1_4[];
     private constructor(arg2: number, arg3: Type<Object>)

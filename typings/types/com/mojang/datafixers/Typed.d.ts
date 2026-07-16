@@ -10,7 +10,7 @@ import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Typed<A extends unknown> extends Object {
-    static pair(paramarg0: Typed<Object>, paramarg1: Typed<Object>): Typed<Pair<Object, Object>>;
+    static pair<A extends unknown, B extends unknown>(paramarg0: Typed<A>, paramarg1: Typed<B>): Typed<Pair<A, B>>;
     constructor(arg0: Type<A>, arg1: DynamicOps<Object>, arg2: A)
     readonly ops: DynamicOps<Object>;
     readonly type: Type<A>;

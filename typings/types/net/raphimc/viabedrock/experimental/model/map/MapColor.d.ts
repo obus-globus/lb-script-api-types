@@ -1,6 +1,5 @@
 import type { Color } from '../../../../../../java/awt/Color.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class MapColor extends Enum<MapColor> {
     static COLOR_0: MapColor;
@@ -251,7 +250,7 @@ export class MapColor extends Enum<MapColor> {
     static COLOR_97: MapColor;
     static COLOR_98: MapColor;
     static COLOR_99: MapColor;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MapColor;
     static values(): MapColor[];
     private constructor(arg2: number, arg3: number, arg4: number)

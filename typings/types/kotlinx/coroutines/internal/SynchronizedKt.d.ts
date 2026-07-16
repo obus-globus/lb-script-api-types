@@ -1,4 +1,4 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class SynchronizedKt extends Object {
-    static synchronizedImpl(paramarg0: Object, paramarg1: () => Object | null): Object | null;
+    static synchronizedImpl<T extends unknown>(lock: Object, block: () => T): T;
 }

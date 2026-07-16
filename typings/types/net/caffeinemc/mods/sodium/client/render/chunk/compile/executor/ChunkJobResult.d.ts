@@ -5,9 +5,9 @@ import type { JobEffort } from '../../../../../../../../../net/caffeinemc/mods/s
 import type { ChunkJob } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/executor/ChunkJob.d.ts'
 import type { ChunkBuilderTask } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/compile/tasks/ChunkBuilderTask.d.ts'
 export class ChunkJobResult<OUTPUT extends unknown> extends Object {
-    static exceptionally(paramarg0: Throwable): ChunkJobResult<Object>;
-    static successfully(paramarg0: Object | null): ChunkJobResult<Object>;
-    static successfully(paramarg0: Object | null, paramarg1: JobEffort): ChunkJobResult<Object>;
+    static exceptionally<OUTPUT extends unknown>(paramarg0: Throwable): ChunkJobResult<OUTPUT>;
+    static successfully<OUTPUT extends unknown>(paramarg0: OUTPUT): ChunkJobResult<OUTPUT>;
+    static successfully<OUTPUT extends unknown>(paramarg0: OUTPUT, paramarg1: JobEffort): ChunkJobResult<OUTPUT>;
     private constructor(arg0: OUTPUT, arg1: Throwable, arg2: JobEffort)
     // private associatedJob: ChunkJob;
     readonly jobEffort: JobEffort;

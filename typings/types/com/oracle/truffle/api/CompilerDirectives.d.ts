@@ -14,8 +14,8 @@ export class CompilerDirectives extends Object {
     static blackhole(paramvalue: number): void;
     static blackhole(paramvalue: string): void;
     static blackhole(paramvalue: Object): void;
-    static castExact(paramobject: Object, paramclazz: Class<Object>): Object | null;
-    static ensureAllocatedHere(paramobject: Object | null): Object | null;
+    static castExact<T extends unknown>(paramobject: Object, paramclazz: Class<T>): T;
+    static ensureAllocatedHere<T extends unknown>(paramobject: T): T;
     static ensureVirtualized(paramobject: Object): void;
     static ensureVirtualizedHere(paramobject: Object): void;
     static hasNextTier(): boolean;
@@ -23,7 +23,7 @@ export class CompilerDirectives extends Object {
     static inCompiledCode(): boolean;
     static inInterpreter(): boolean;
     static injectBranchProbability(paramprobability: number, paramcondition: boolean): boolean;
-    static interpreterOnly(paramcallable: () => Object | null): Object | null;
+    static interpreterOnly<T extends unknown>(paramcallable: () => T): T;
     static interpreterOnly(paramrunnable: () => void): void;
     static isCompilationConstant(paramvalue: Object): boolean;
     static isExact(paramobject: Object, paramclazz: Class<Object>): boolean;

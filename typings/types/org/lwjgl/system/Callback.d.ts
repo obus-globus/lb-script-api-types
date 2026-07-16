@@ -11,8 +11,8 @@ export abstract class Callback extends Object implements NativeResource, Pointer
     static POINTER_SHIFT: number;
     static POINTER_SIZE: number;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor(arg0: number)
     constructor(arg0: Callback$Descriptor)
     // private address: number;

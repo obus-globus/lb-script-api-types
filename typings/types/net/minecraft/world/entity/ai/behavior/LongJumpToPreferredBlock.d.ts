@@ -12,7 +12,7 @@ import type { LongJumpToRandomPos$PossibleJump } from '../../../../../../net/min
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class LongJumpToPreferredBlock<E extends Mob> extends LongJumpToRandomPos<E> {
     static DEFAULT_DURATION: number;
-    static defaultAcceptableLandingSpot(parambody: Mob | null, paramtargetPos: BlockPos): boolean;
+    static defaultAcceptableLandingSpot<E extends Mob>(parambody: E, paramtargetPos: BlockPos): boolean;
     constructor(timeBetweenLongJumps: UniformInt, maxLongJumpHeight: number, maxLongJumpWidth: number, maxJumpVelocity: number, getJumpSound: (param0: E) => SoundEvent, preferredBlockTag: TagKey<Block>, preferredBlocksChance: number, acceptableLandingSpot: (param0: E, param1: BlockPos) => boolean)
     // private currentlyWantingPreferredOnes: boolean;
     // private notPrefferedJumpCandidates: LongJumpToRandomPos$PossibleJump[];

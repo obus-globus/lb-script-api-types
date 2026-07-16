@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class Feature extends Enum<Feature> {
     static CSYNTAX: Feature;
@@ -12,7 +11,7 @@ export class Feature extends Enum<Feature> {
     static OBJCSYNTAX: Feature;
     static PRAGMA_ONCE: Feature;
     static TRIGRAPHS: Feature;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Feature;
     static values(): Feature[];
     private constructor()

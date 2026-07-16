@@ -5,7 +5,7 @@ import type { AbstractFunctionArgumentsNode } from '../../../../../../com/oracle
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSFunctionZeroArgumentsNode extends AbstractFunctionArgumentsNode {
-    static cloneUninitialized(paramnode: AbstractFunctionArgumentsNode | null, parammaterializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode | null;
+    static cloneUninitialized<T extends AbstractFunctionArgumentsNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
     static reportLoopCount(paramnode: Node, paramcount: number): void;
     constructor()
     copyUninitialized(materializedTags: Class<Tag>[]): AbstractFunctionArgumentsNode;

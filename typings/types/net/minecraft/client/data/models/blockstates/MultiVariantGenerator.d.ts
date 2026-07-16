@@ -5,6 +5,7 @@ import type { MultiVariantGenerator$Empty } from '../../../../../../net/minecraf
 import type { MultiVariantGenerator$Entry } from '../../../../../../net/minecraft/client/data/models/blockstates/MultiVariantGenerator$Entry.d.ts'
 import type { PropertyDispatch } from '../../../../../../net/minecraft/client/data/models/blockstates/PropertyDispatch.d.ts'
 import type { BlockStateModelDispatcher } from '../../../../../../net/minecraft/client/renderer/block/dispatch/BlockStateModelDispatcher.d.ts'
+import type { Variant } from '../../../../../../net/minecraft/client/renderer/block/dispatch/Variant.d.ts'
 import type { VariantMutator } from '../../../../../../net/minecraft/client/renderer/block/dispatch/VariantMutator.d.ts'
 import type { Block } from '../../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { Property } from '../../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
@@ -17,6 +18,6 @@ export class MultiVariantGenerator extends Object implements BlockModelDefinitio
     // private seenProperties: Property<any>[];
     block(): Block;
     create(): BlockStateModelDispatcher;
-    with(newStage: PropertyDispatch<(param0: Object | null) => Object | null>): MultiVariantGenerator;
-    with(singleMutator: (param0: Object | null) => Object | null): MultiVariantGenerator;
+    with(newStage: PropertyDispatch<(param0: Variant) => Variant>): MultiVariantGenerator;
+    with(singleMutator: (param0: Variant) => Variant): MultiVariantGenerator;
 }

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class NpcRequestPacketPayload_RequestType extends Enum<NpcRequestPacketPayload_RequestType> {
     static ExecuteAction: NpcRequestPacketPayload_RequestType;
@@ -13,7 +12,7 @@ export class NpcRequestPacketPayload_RequestType extends Enum<NpcRequestPacketPa
     static getByName(paramarg0: string, paramarg1: NpcRequestPacketPayload_RequestType): NpcRequestPacketPayload_RequestType;
     static getByValue(paramarg0: number): NpcRequestPacketPayload_RequestType;
     static getByValue(paramarg0: number, paramarg1: NpcRequestPacketPayload_RequestType): NpcRequestPacketPayload_RequestType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): NpcRequestPacketPayload_RequestType;
     static values(): NpcRequestPacketPayload_RequestType[];
     private constructor(arg2: number)

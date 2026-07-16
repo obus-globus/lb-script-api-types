@@ -8,9 +8,9 @@ import type { MethodInfo } from '../../../../net/minecraft/server/jsonrpc/api/Me
 export class OutgoingRpcMethod$Method<Params extends unknown, Result extends unknown> extends Record implements OutgoingRpcMethod<Params, Result> {
     static NOTIFICATION_PREFIX: string;
     static notification(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<void, void>;
-    static notificationWithParams(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<Object, void>;
-    static request(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<void, Object>;
-    static requestWithParams(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<Object, Object>;
+    static notificationWithParams<Params extends unknown>(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<Params, void>;
+    static request<Result extends unknown>(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<void, Result>;
+    static requestWithParams<Params extends unknown, Result extends unknown>(): OutgoingRpcMethod$OutgoingRpcMethodBuilder<Params, Result>;
     constructor(info: MethodInfo<Params, Result>, attributes: OutgoingRpcMethod$Attributes)
     // private attributes: OutgoingRpcMethod$Attributes;
     // private info: MethodInfo<Params, Result>;

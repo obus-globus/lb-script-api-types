@@ -4,12 +4,12 @@ import type { UInt } from '../../kotlin/UInt.d.ts'
 import type { ULong } from '../../kotlin/ULong.d.ts'
 import type { UShort } from '../../kotlin/UShort.d.ts'
 export class UCollectionsKt___UCollectionsKt extends Object {
-    static sumOfUByte(paramarg0: UByte[]): number;
-    static sumOfUInt(paramarg0: UInt[]): number;
-    static sumOfULong(paramarg0: ULong[]): number;
-    static sumOfUShort(paramarg0: UShort[]): number;
-    static toUByteArray(paramarg0: UByte[]): number[];
-    static toUIntArray(paramarg0: UInt[]): number[];
-    static toULongArray(paramarg0: ULong[]): number[];
-    static toUShortArray(paramarg0: UShort[]): number[];
+    static sumOfUByte(self: UByte[]): UInt;
+    static sumOfUInt(self: UInt[]): UInt;
+    static sumOfULong(self: ULong[]): ULong;
+    static sumOfUShort(self: UShort[]): UInt;
+    static toUByteArray(self: UByte[]): (Object | null)[];
+    static toUIntArray(self: UInt[]): (Object | null)[];
+    static toULongArray(self: ULong[]): (Object | null)[];
+    static toUShortArray(self: UShort[]): (Object | null)[];
 }

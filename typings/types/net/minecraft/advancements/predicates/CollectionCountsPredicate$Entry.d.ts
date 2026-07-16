@@ -4,7 +4,7 @@ import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { MinMaxBounds$Ints } from '../../../../net/minecraft/advancements/predicates/MinMaxBounds$Ints.d.ts'
 export class CollectionCountsPredicate$Entry<T extends unknown, P extends Predicate<T>> extends Record {
-    static codec(paramelementCodec: Codec<Object>): Codec<CollectionCountsPredicate$Entry<Object, any>>;
+    static codec<T extends unknown, P extends Predicate<T>>(paramelementCodec: Codec<P>): Codec<CollectionCountsPredicate$Entry<T, P>>;
     constructor(test: P, count: MinMaxBounds$Ints)
     // private count: MinMaxBounds$Ints;
     // private test: P;

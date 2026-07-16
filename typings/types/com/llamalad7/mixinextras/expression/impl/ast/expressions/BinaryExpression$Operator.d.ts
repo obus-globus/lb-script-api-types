@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { AbstractInsnNode } from '../../../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 export class BinaryExpression$Operator extends Enum<BinaryExpression$Operator> {
@@ -14,7 +13,7 @@ export class BinaryExpression$Operator extends Enum<BinaryExpression$Operator> {
     static SHL: BinaryExpression$Operator;
     static SHR: BinaryExpression$Operator;
     static USHR: BinaryExpression$Operator;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BinaryExpression$Operator;
     static values(): BinaryExpression$Operator[];
     private constructor(...arg2: number[])

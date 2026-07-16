@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class Winevt$EVT_VARIANT_TYPE extends Enum<Winevt$EVT_VARIANT_TYPE> {
     static EvtVarTypeAnsiString: Winevt$EVT_VARIANT_TYPE;
@@ -26,7 +25,7 @@ export class Winevt$EVT_VARIANT_TYPE extends Enum<Winevt$EVT_VARIANT_TYPE> {
     static EvtVarTypeUInt16: Winevt$EVT_VARIANT_TYPE;
     static EvtVarTypeUInt32: Winevt$EVT_VARIANT_TYPE;
     static EvtVarTypeUInt64: Winevt$EVT_VARIANT_TYPE;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Winevt$EVT_VARIANT_TYPE;
     static values(): Winevt$EVT_VARIANT_TYPE[];
     private constructor(arg2: string)

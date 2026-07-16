@@ -116,8 +116,8 @@ export class ASTPrinter extends ASTPrinterBase {
     static printIndented(paramarg0: ASTNode): string;
     static printIndentedAnnotated(paramarg0: ASTNode): string;
     static printSimple(paramarg0: ASTNode): string;
-    static walk(paramarg0: ASTListener, paramarg1: ASTNode): Object | null;
-    static walkAndListen(paramarg0: ASTNode): Object | null;
+    static walk<R extends unknown>(paramarg0: ASTListener, paramarg1: ASTNode): R;
+    static walkAndListen<R extends unknown>(paramarg0: ASTNode): R;
     constructor(arg0: TokenProcessor)
     // private precedenceWrapped: Expression[];
     enterBitwiseNotExpression(arg0: BitwiseNotExpression): void;

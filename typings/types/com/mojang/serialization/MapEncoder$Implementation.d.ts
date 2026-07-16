@@ -9,7 +9,7 @@ import type { RecordBuilder } from '../../../com/mojang/serialization/RecordBuil
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class MapEncoder$Implementation<A extends unknown> extends CompressorHolder implements MapEncoder<A> {
-    static makeCompressedBuilder(paramarg0: DynamicOps<Object>, paramarg1: KeyCompressor<Object>): RecordBuilder<Object>;
+    static makeCompressedBuilder<T extends unknown>(paramarg0: DynamicOps<T>, paramarg1: KeyCompressor<T>): RecordBuilder<T>;
     constructor()
     comap<B extends unknown>(arg0: (param0: B) => A): MapEncoder<B>;
     compressedBuilder<T extends unknown>(arg0: DynamicOps<T>): RecordBuilder<T>;

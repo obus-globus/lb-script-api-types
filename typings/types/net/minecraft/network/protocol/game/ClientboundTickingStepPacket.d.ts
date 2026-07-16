@@ -11,7 +11,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { TickRateManager } from '../../../../../net/minecraft/world/TickRateManager.d.ts'
 export class ClientboundTickingStepPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundTickingStepPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static from(parammanager: TickRateManager): ClientboundTickingStepPacket;
     constructor(tickSteps: number)
     // private tickSteps: number;

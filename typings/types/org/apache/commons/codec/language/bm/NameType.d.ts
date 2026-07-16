@@ -1,11 +1,10 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class NameType extends Enum<NameType> {
     static ASHKENAZI: NameType;
     static GENERIC: NameType;
     static SEPHARDIC: NameType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): NameType;
     static values(): NameType[];
     private constructor(arg2: string)

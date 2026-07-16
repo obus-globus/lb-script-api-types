@@ -11,21 +11,21 @@ import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export abstract class Ordering<T extends unknown> extends Object implements Comparator<T> {
     static allEqual(): Ordering<Object>;
     static arbitrary(): Ordering<Object>;
-    static comparing(paramarg0: (param0: Object) => Object | null): (param0: Object | null, param1: Object | null) => number;
-    static comparing(paramarg0: (param0: Object) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static comparingDouble(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static comparingInt(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static comparingLong(paramarg0: (param0: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static compound(paramcomparators: (param0: Object, param1: Object) => number[]): Ordering<Object>;
-    static explicit(paramleastValue: Object | null, ...paramremainingValuesInOrder: (Object | null)[]): Ordering<Object>;
-    static explicit(paramvaluesInOrder: (Object | null)[]): Ordering<Object>;
-    static from(paramordering: Ordering<Object>): Ordering<Object>;
-    static from(paramcomparator: (param0: Object | null, param1: Object | null) => number): Ordering<Object>;
-    static natural(): Ordering<Object>;
-    static naturalOrder(): (param0: Object | null, param1: Object | null) => number;
-    static nullsFirst(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static nullsLast(paramarg0: (param0: Object, param1: Object) => number): (param0: Object | null, param1: Object | null) => number;
-    static reverseOrder(): (param0: Object | null, param1: Object | null) => number;
+    static comparing<T extends unknown, U extends Comparable<Object>>(paramarg0: (param0: Object) => U): (param0: T, param1: T) => number;
+    static comparing<T extends unknown, U extends unknown>(paramarg0: (param0: Object) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
+    static comparingDouble<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
+    static comparingInt<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
+    static comparingLong<T extends unknown>(paramarg0: (param0: Object) => number): (param0: T, param1: T) => number;
+    static compound<T extends unknown>(paramcomparators: (param0: Object, param1: Object) => number[]): Ordering<T>;
+    static explicit<T extends unknown>(paramleastValue: T, ...paramremainingValuesInOrder: T[]): Ordering<T>;
+    static explicit<T extends unknown>(paramvaluesInOrder: T[]): Ordering<T>;
+    static from<T extends unknown>(paramordering: Ordering<T>): Ordering<T>;
+    static from<T extends unknown>(paramcomparator: (param0: T, param1: T) => number): Ordering<T>;
+    static natural<C extends Comparable<Object>>(): Ordering<C>;
+    static naturalOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
+    static nullsFirst<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
+    static nullsLast<T extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: T, param1: T) => number;
+    static reverseOrder<T extends Comparable<Object>>(): (param0: T, param1: T) => number;
     static usingToString(): Ordering<Object>;
     constructor()
     binarySearch(sortedList: T[], key: T): number;

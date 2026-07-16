@@ -7,7 +7,7 @@ export class ParseResult extends Object {
 // (invalid TS: name contains '-')     static equals-impl(paramarg0: Object, paramarg1: Object): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: Object, paramarg1: Object): boolean;
 // (invalid TS: name contains '-')     static hashCode-impl(paramarg0: Object): number;
-// (invalid TS: name contains '-')     static match-impl(paramarg0: Object, paramarg1: (param0: Object) => Object | null, paramarg2: (param0: Object) => Object | null): Object | null;
+// (invalid TS: name contains '-')     static match-impl<T extends unknown>(onSuccess: (param0: number) => T, onFailure: (param0: ParseError) => T): T;
 // (invalid TS: name contains '-')     static toString-impl(paramarg0: Object): string;
     private constructor(value: Object)
     readonly value: Object;

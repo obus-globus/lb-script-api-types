@@ -16,9 +16,9 @@ import type { DynamicOps } from '../../../../../com/mojang/serialization/Dynamic
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Hook$HookType<A extends unknown> extends Type<A> {
-    static fix(paramarg0: Hook$HookType<Object>, paramarg1: RewriteResult<Object, Object>): RewriteResult<Object, Object>;
-    static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
-    static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
+    static fix<A extends unknown, B extends unknown>(paramarg0: Hook$HookType<A>, paramarg1: RewriteResult<A, B>): RewriteResult<A, Object>;
+    static opticView<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: Type<S>, paramarg1: RewriteResult<A, B>, paramarg2: TypedOptic<S, T, A, B>): RewriteResult<S, T>;
+    static unbox<A extends unknown>(paramarg0: App<Type$Mu, A>): Type<A>;
     constructor(arg0: Type<A>, arg1: Hook$HookFunction, arg2: Hook$HookFunction)
     // private delegate: Type<A>;
     // private postWrite: Hook$HookFunction;

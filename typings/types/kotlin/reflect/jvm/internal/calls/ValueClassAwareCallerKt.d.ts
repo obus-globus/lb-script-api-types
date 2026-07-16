@@ -7,8 +7,8 @@ import type { ReflectKCallable } from '../../../../../kotlin/reflect/jvm/interna
 import type { ReflectKProperty } from '../../../../../kotlin/reflect/jvm/internal/ReflectKProperty.d.ts'
 import type { Caller } from '../../../../../kotlin/reflect/jvm/internal/calls/Caller.d.ts'
 export class ValueClassAwareCallerKt extends Object {
-    static createValueClassAwareCallerIfNeeded(paramarg0: Caller<Member>, paramarg1: ReflectKCallable<Object>, paramarg2: boolean, paramarg3: number[]): Caller<Member>;
-    static getInlineClassUnboxMethod(paramarg0: Class<Object>, paramarg1: ReflectKCallable<Object>): Method;
-    static isUnderlyingPropertyOfValueClass(paramarg0: ReflectKProperty<Object>): boolean;
-    static toInlineClass(paramarg0: KType): Class<Object>;
+    static createValueClassAwareCallerIfNeeded<M extends Member>(self: Caller<M>, callable: ReflectKCallable<Object>, isDefault: boolean, forbidUnboxingForIndices: number[]): Caller<M>;
+    static getInlineClassUnboxMethod(self: Class<Object>, callable: ReflectKCallable<Object>): Method;
+    static isUnderlyingPropertyOfValueClass(self: ReflectKProperty<Object>): boolean;
+    static toInlineClass(self: KType | null): Class<Object> | null;
 }

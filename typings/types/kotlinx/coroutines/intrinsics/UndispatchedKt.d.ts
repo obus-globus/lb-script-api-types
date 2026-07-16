@@ -2,7 +2,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 import type { ScopeCoroutine } from '../../../kotlinx/coroutines/internal/ScopeCoroutine.d.ts'
 export class UndispatchedKt extends Object {
-    static startCoroutineUndispatched(paramarg0: (param0: Object, param1: Object) => Object, paramarg1: Object | null, paramarg2: Continuation<Object>): void;
-    static startUndispatchedOrReturn(paramarg0: ScopeCoroutine<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object) => Object): Object;
-    static startUndispatchedOrReturnIgnoreTimeout(paramarg0: ScopeCoroutine<Object>, paramarg1: Object | null, paramarg2: (param0: Object, param1: Object) => Object): Object;
+    static startCoroutineUndispatched<R extends unknown, T extends unknown>(self: (param0: R) => T, receiver: R, completion: Continuation<T>): void;
+    static startUndispatchedOrReturn<T extends unknown, R extends unknown>(self: ScopeCoroutine<T>, receiver: R, block: (param0: R) => T): Object | null;
+    static startUndispatchedOrReturnIgnoreTimeout<T extends unknown, R extends unknown>(self: ScopeCoroutine<T>, receiver: R, block: (param0: R) => T): Object | null;
 }

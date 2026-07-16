@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class SocksAuthScheme extends Enum<SocksAuthScheme> {
     static AUTH_GSSAPI: SocksAuthScheme;
@@ -7,7 +6,7 @@ export class SocksAuthScheme extends Enum<SocksAuthScheme> {
     static NO_AUTH: SocksAuthScheme;
     static UNKNOWN: SocksAuthScheme;
     static fromByte(paramarg0: number): SocksAuthScheme;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: number): SocksAuthScheme;
     static valueOf(paramarg0: string): SocksAuthScheme;
     static values(): SocksAuthScheme[];

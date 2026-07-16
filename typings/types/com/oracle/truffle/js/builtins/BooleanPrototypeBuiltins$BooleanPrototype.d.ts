@@ -10,7 +10,7 @@ export class BooleanPrototypeBuiltins$BooleanPrototype extends Enum<BooleanProto
     static toString: BooleanPrototypeBuiltins$BooleanPrototype;
     static valueOf: BooleanPrototypeBuiltins$BooleanPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): BooleanPrototypeBuiltins$BooleanPrototype;
     static values(): BooleanPrototypeBuiltins$BooleanPrototype[];
     private constructor(length: number)

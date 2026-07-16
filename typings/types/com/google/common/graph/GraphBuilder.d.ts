@@ -6,7 +6,7 @@ import type { MutableGraph } from '../../../../com/google/common/graph/MutableGr
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class GraphBuilder<N extends unknown> extends AbstractGraphBuilder<N> {
     static directed(): GraphBuilder<Object>;
-    static from(paramgraph: Graph<Object>): GraphBuilder<Object>;
+    static from<N extends unknown>(paramgraph: Graph<N>): GraphBuilder<N>;
     static undirected(): GraphBuilder<Object>;
     private constructor(directed: boolean)
     allowsSelfLoops(allowsSelfLoops: boolean): GraphBuilder<N>;

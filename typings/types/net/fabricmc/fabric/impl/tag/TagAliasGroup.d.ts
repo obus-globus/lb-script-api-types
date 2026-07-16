@@ -4,7 +4,7 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ResourceKey } from '../../../../../net/minecraft/resources/ResourceKey.d.ts'
 import type { TagKey } from '../../../../../net/minecraft/tags/TagKey.d.ts'
 export class TagAliasGroup<T extends unknown> extends Record {
-    static codec(paramarg0: ResourceKey<(Object | null)[]>): Codec<TagAliasGroup<Object>>;
+    static codec<T extends unknown>(paramarg0: ResourceKey<T[]>): Codec<TagAliasGroup<T>>;
     constructor(tags: TagKey<T>[])
     // private tags: TagKey<T>[];
     equals(arg0: Object | null): boolean;

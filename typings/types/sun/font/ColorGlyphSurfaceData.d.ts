@@ -17,7 +17,7 @@ export class ColorGlyphSurfaceData extends SurfaceData {
     static lcdTextRenderer: TextPipe;
     static outlineTextRenderer: TextPipe;
     static solidTextRenderer: TextPipe;
-    static convertTo(paramarg0: Class<Object>, paramarg1: SurfaceData): Object | null;
+    static convertTo<T extends unknown>(paramarg0: Class<T>, paramarg1: SurfaceData): T;
     static getPrimarySurfaceData(paramarg0: Image): SurfaceData;
     static isNull(paramarg0: SurfaceData): boolean;
     static makeRenderLoops(paramarg0: SurfaceType, paramarg1: CompositeType, paramarg2: SurfaceType): RenderLoops;

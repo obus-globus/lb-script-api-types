@@ -6,16 +6,16 @@ import type { UnaryOperator } from '../../../java/util/function/UnaryOperator.d.
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class DataFixUtils extends Object {
     static ceillog2(paramarg0: number): number;
-    static consumerToFunction(paramarg0: (param0: Object | null) => void): (param0: Object | null) => Object | null;
+    static consumerToFunction<T extends unknown>(paramarg0: (param0: T) => void): (param0: T) => T;
     static getSubVersion(paramarg0: number): number;
     static getVersion(paramarg0: number): number;
-    static make(paramarg0: Object | null, paramarg1: (param0: Object | null) => void): Object | null;
-    static make(paramarg0: () => Object | null): Object | null;
+    static make<T extends unknown>(paramarg0: T, paramarg1: (param0: T) => void): T;
+    static make<T extends unknown>(paramarg0: () => T): T;
     static makeKey(paramarg0: number): number;
     static makeKey(paramarg0: number, paramarg1: number): number;
-    static or(paramarg0: Optional<Object>, paramarg1: () => Optional<Object>): Optional<Object>;
-    static orElse(paramarg0: Optional<Object>, paramarg1: Object | null): Object | null;
-    static orElseGet(paramarg0: Optional<Object>, paramarg1: () => Object | null): Object | null;
+    static or<U extends unknown>(paramarg0: Optional<U>, paramarg1: () => Optional<U>): Optional<U>;
+    static orElse<U extends unknown>(paramarg0: Optional<U>, paramarg1: U): U;
+    static orElseGet<U extends unknown>(paramarg0: Optional<U>, paramarg1: () => U): U;
     static smallestEncompassingPowerOfTwo(paramarg0: number): number;
     static toArray(paramarg0: ByteBuffer): number[];
     private constructor()

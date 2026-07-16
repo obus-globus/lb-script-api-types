@@ -12,7 +12,7 @@ import type { ServerLevel } from '../../../../../net/minecraft/server/level/Serv
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 export class ServerboundTeleportToEntityPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundTeleportToEntityPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(uuid: UUID)
     // private uuid: UUID;
     getEntity(level: ServerLevel): Entity;

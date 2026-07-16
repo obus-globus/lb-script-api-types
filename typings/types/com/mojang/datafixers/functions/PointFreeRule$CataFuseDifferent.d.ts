@@ -8,7 +8,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PointFreeRule$CataFuseDifferent extends Enum<PointFreeRule$CataFuseDifferent> implements PointFreeRule$CompRewrite {
     static INSTANCE: PointFreeRule$CataFuseDifferent;
     static together(...paramarg0: PointFreeRule$CompRewrite[]): PointFreeRule$CompRewrite;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PointFreeRule$CataFuseDifferent;
     static values(): PointFreeRule$CataFuseDifferent[];
     private constructor()

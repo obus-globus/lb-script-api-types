@@ -196,7 +196,7 @@ export class BuiltInRegistries extends Object implements BuiltInRegistriesAccess
     static TRUNK_PLACER_TYPE: TrunkPlacerType<any>[];
     static VILLAGER_PROFESSION: VillagerProfession[];
     static VILLAGER_TYPE: VillagerType[];
-    static acquireBootstrapRegistrationLookup(paramregistry: (Object | null)[]): HolderGetter<Object>;
+    static acquireBootstrapRegistrationLookup<T extends unknown>(paramregistry: T[]): HolderGetter<T>;
     static bootStrap(): void;
     static createContents(): void;
     static getWRITABLE_REGISTRY(): Object[][];

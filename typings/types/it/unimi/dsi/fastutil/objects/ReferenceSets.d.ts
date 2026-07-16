@@ -1,10 +1,10 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ReferenceSets extends Object {
     static EMPTY_SET: (Object | null)[];
-    static emptySet(): (Object | null)[];
-    static singleton(paramarg0: Object | null): (Object | null)[];
-    static synchronize(paramarg0: (Object | null)[]): (Object | null)[];
-    static synchronize(paramarg0: (Object | null)[], paramarg1: Object): (Object | null)[];
-    static unmodifiable(paramarg0: (Object | null)[]): (Object | null)[];
+    static emptySet<K extends unknown>(): K[];
+    static singleton<K extends unknown>(paramarg0: K): K[];
+    static synchronize<K extends unknown>(paramarg0: K[]): K[];
+    static synchronize<K extends unknown>(paramarg0: K[], paramarg1: Object): K[];
+    static unmodifiable<K extends unknown>(paramarg0: K[]): K[];
     private constructor()
 }

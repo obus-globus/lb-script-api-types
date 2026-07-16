@@ -5,7 +5,7 @@ import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { AppendableJoiner$Builder } from '../../../../org/apache/commons/lang3/AppendableJoiner$Builder.d.ts'
 import type { FailableBiConsumer } from '../../../../org/apache/commons/lang3/function/FailableBiConsumer.d.ts'
 export class AppendableJoiner<T extends unknown> extends Object {
-    static builder(): AppendableJoiner$Builder<Object>;
+    static builder<T extends unknown>(): AppendableJoiner$Builder<T>;
     constructor(arg0: CharSequence, arg1: CharSequence, arg2: CharSequence, arg3: (param0: Object, param1: Object) => void, arg4: any)
     // private appender: (param0: Appendable, param1: T) => void;
     // private delimiter: CharSequence;

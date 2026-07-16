@@ -3,13 +3,13 @@ import type { Predicate } from '../../../../com/google/common/base/Predicate.d.t
 import type { Supplier } from '../../../../com/google/common/base/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Functions extends Object {
-    static compose(paramg: (param0: Object | null) => Object | null, paramf: (param0: Object | null) => Object | null): (param0: Object | null) => Object | null;
-    static constant(paramvalue: Object | null): (param0: Object) => Object | null;
-    static forMap(parammap: Map<Object | null, Object | null>, paramdefaultValue: Object | null): (param0: Object | null) => Object | null;
-    static forMap(parammap: Map<Object | null, Object | null>): (param0: Object | null) => Object | null;
-    static forPredicate(parampredicate: (param0: Object | null) => boolean): (param0: Object | null) => boolean;
-    static forSupplier(paramsupplier: () => Object | null): (param0: Object | null) => Object | null;
-    static identity(): (param0: Object | null) => Object | null;
+    static compose<A extends unknown, B extends unknown, C extends unknown>(paramg: (param0: B) => C, paramf: (param0: A) => B): (param0: A) => C;
+    static constant<E extends unknown>(paramvalue: E): (param0: Object) => E;
+    static forMap<K extends unknown, V extends unknown>(parammap: Map<K, V>, paramdefaultValue: V): (param0: K) => V;
+    static forMap<K extends unknown, V extends unknown>(parammap: Map<K, V>): (param0: K) => V;
+    static forPredicate<T extends unknown>(parampredicate: (param0: T) => boolean): (param0: T) => boolean;
+    static forSupplier<F extends unknown, T extends unknown>(paramsupplier: () => T): (param0: F) => T;
+    static identity<E extends unknown>(): (param0: E) => E;
     static toStringFunction(): (param0: Object) => string;
     private constructor()
 }

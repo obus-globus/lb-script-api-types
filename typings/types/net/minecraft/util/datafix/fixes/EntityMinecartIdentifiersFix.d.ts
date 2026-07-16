@@ -8,7 +8,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EntityRenameFix } from '../../../../../net/minecraft/util/datafix/fixes/EntityRenameFix.d.ts'
 export class EntityMinecartIdentifiersFix extends EntityRenameFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     constructor(outputSchema: Schema)
     fix(name: string, entity: Typed<Object>): Pair<string, Typed<Object>>;
 }

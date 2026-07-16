@@ -6,9 +6,9 @@ import type { ThrowingConsumer } from '../../../../net/lenni0451/commons/uncheck
 import type { ThrowingFunction } from '../../../../net/lenni0451/commons/unchecked/function/ThrowingFunction.d.ts'
 import type { ThrowingSupplier } from '../../../../net/lenni0451/commons/unchecked/function/ThrowingSupplier.d.ts'
 export class FieldInitializer<T extends unknown> extends Object {
-    static attempt(paramarg0: () => Object | null): FieldInitializer<Object>;
-    static firstOf(paramarg0: () => Object | null[]): FieldInitializer<Object>;
-    static of(paramarg0: Object | null): FieldInitializer<Object>;
+    static attempt<T extends unknown>(paramarg0: () => T): FieldInitializer<T>;
+    static firstOf<T extends unknown>(paramarg0: () => T[]): FieldInitializer<T>;
+    static of<T extends unknown>(paramarg0: T): FieldInitializer<T>;
     private constructor(arg0: () => T)
     // private supplier: () => T;
     ensure(arg0: () => Throwable): FieldInitializer<T>;

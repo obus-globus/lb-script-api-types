@@ -10,6 +10,7 @@ import type { CopyOption } from '../../../../../java/nio/file/CopyOption.d.ts'
 import type { FileSystem } from '../../../../../java/nio/file/FileSystem.d.ts'
 import type { FileVisitOption } from '../../../../../java/nio/file/FileVisitOption.d.ts'
 import type { FileVisitResult } from '../../../../../java/nio/file/FileVisitResult.d.ts'
+import type { FileVisitor } from '../../../../../java/nio/file/FileVisitor.d.ts'
 import type { LinkOption } from '../../../../../java/nio/file/LinkOption.d.ts'
 import type { OpenOption } from '../../../../../java/nio/file/OpenOption.d.ts'
 import type { Path } from '../../../../../java/nio/file/Path.d.ts'
@@ -77,7 +78,7 @@ export class PathUtils extends Object {
     static getBaseName(paramarg0: Path): string;
     static getDosFileAttributeView(paramarg0: Path, ...paramarg1: LinkOption[]): DosFileAttributeView;
     static getExtension(paramarg0: Path): string;
-    static getFileName(paramarg0: Path, paramarg1: (param0: Path) => Object | null): Object | null;
+    static getFileName<R extends unknown>(paramarg0: Path, paramarg1: (param0: Path) => R): R;
     static getFileNameString(paramarg0: Path): string;
     static getLastModifiedFileTime(paramarg0: File): FileTime;
     static getLastModifiedFileTime(paramarg0: URI): FileTime;
@@ -104,7 +105,7 @@ export class PathUtils extends Object {
     static newDirectoryStream(paramarg0: Path, paramarg1: (param0: Path, param1: BasicFileAttributes) => FileVisitResult): Path[];
     static newOutputStream(paramarg0: Path, paramarg1: boolean): OutputStream;
     static noFollowLinkOptionArray(): LinkOption[];
-    static readAttributes(paramarg0: Path, paramarg1: Class<BasicFileAttributes>, ...paramarg2: LinkOption[]): BasicFileAttributes | null;
+    static readAttributes<A extends BasicFileAttributes>(paramarg0: Path, paramarg1: Class<A>, ...paramarg2: LinkOption[]): A;
     static readBasicFileAttributes(paramarg0: Path): BasicFileAttributes;
     static readBasicFileAttributes(paramarg0: Path, ...paramarg1: LinkOption[]): BasicFileAttributes;
     static readBasicFileAttributesUnchecked(paramarg0: Path): BasicFileAttributes;
@@ -119,10 +120,10 @@ export class PathUtils extends Object {
     static sizeOfDirectory(paramarg0: Path): number;
     static sizeOfDirectoryAsBigInteger(paramarg0: Path): BigInteger;
     static touch(paramarg0: Path): Path;
-    static visitFileTree(paramarg0: Object | null, paramarg1: string, ...paramarg2: string[]): Object | null;
-    static visitFileTree(paramarg0: Object | null, paramarg1: URI): Object | null;
-    static visitFileTree(paramarg0: Object | null, paramarg1: Path): Object | null;
-    static visitFileTree(paramarg0: Object | null, paramarg1: Path, paramarg2: FileVisitOption[], paramarg3: number): Object | null;
+    static visitFileTree<T extends FileVisitor<Object>>(paramarg0: T, paramarg1: string, ...paramarg2: string[]): T;
+    static visitFileTree<T extends FileVisitor<Object>>(paramarg0: T, paramarg1: URI): T;
+    static visitFileTree<T extends FileVisitor<Object>>(paramarg0: T, paramarg1: Path): T;
+    static visitFileTree<T extends FileVisitor<Object>>(paramarg0: T, paramarg1: Path, paramarg2: FileVisitOption[], paramarg3: number): T;
     static waitFor(paramarg0: Path, paramarg1: Duration, ...paramarg2: LinkOption[]): boolean;
     static walk(paramarg0: Path, paramarg1: (param0: Path, param1: BasicFileAttributes) => FileVisitResult, paramarg2: number, paramarg3: boolean, ...paramarg4: FileVisitOption[]): Stream<Path>;
     static writeString(paramarg0: Path, paramarg1: CharSequence, paramarg2: Charset, ...paramarg3: OpenOption[]): Path;

@@ -15,7 +15,7 @@ export class SequentialEntry extends CompositeEntryBase {
     static ALWAYS_TRUE: (param0: LootContext, param1: (param0: LootPoolEntry) => void) => boolean;
     static MAP_CODEC: MapCodec<SequentialEntry>;
     static NO_CHILDREN_PROBLEM: ProblemReporter$Problem;
-    static createCodec(paramconstructor: (param0: LootPoolEntryContainer[], param1: LootItemCondition[]) => CompositeEntryBase | null): MapCodec<CompositeEntryBase>;
+    static createCodec<T extends CompositeEntryBase>(paramconstructor: (param0: LootPoolEntryContainer[], param1: LootItemCondition[]) => T): MapCodec<T>;
     static sequential(...paramentries: LootPoolEntryContainer$Builder<any>[]): SequentialEntry$Builder;
     constructor(children: LootPoolEntryContainer[], conditions: LootItemCondition[])
     codec(): MapCodec<SequentialEntry>;

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { Internal$EnumLite } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/Internal$EnumLite.d.ts'
 export class ProtoBuf$Visibility extends Enum<ProtoBuf$Visibility> implements Internal$EnumLite {
@@ -9,7 +8,7 @@ export class ProtoBuf$Visibility extends Enum<ProtoBuf$Visibility> implements In
     static PRIVATE_TO_THIS: ProtoBuf$Visibility;
     static PROTECTED: ProtoBuf$Visibility;
     static PUBLIC: ProtoBuf$Visibility;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: number): ProtoBuf$Visibility;
     static valueOf(paramarg0: string): ProtoBuf$Visibility;
     static values(): ProtoBuf$Visibility[];

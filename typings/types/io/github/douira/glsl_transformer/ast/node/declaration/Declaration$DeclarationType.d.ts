@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class Declaration$DeclarationType extends Enum<Declaration$DeclarationType> {
     static FUNCTION: Declaration$DeclarationType;
@@ -7,7 +6,7 @@ export class Declaration$DeclarationType extends Enum<Declaration$DeclarationTyp
     static PRECISION: Declaration$DeclarationType;
     static TYPE_AND_INIT: Declaration$DeclarationType;
     static VARIABLE: Declaration$DeclarationType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Declaration$DeclarationType;
     static values(): Declaration$DeclarationType[];
     private constructor()

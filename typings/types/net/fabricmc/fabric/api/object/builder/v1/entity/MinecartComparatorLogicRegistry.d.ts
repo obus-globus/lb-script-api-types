@@ -6,6 +6,6 @@ import type { AbstractMinecart } from '../../../../../../../../net/minecraft/wor
 import type { BlockState } from '../../../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class MinecartComparatorLogicRegistry extends Object {
     static getCustomComparatorLogic(paramarg0: EntityType<any>): (param0: AbstractMinecart, param1: BlockState, param2: BlockPos) => number;
-    static register(paramarg0: EntityType<AbstractMinecart>, paramarg1: (param0: Object, param1: BlockState, param2: BlockPos) => number): void;
+    static register<T extends AbstractMinecart>(paramarg0: EntityType<T>, paramarg1: (param0: Object, param1: BlockState, param2: BlockPos) => number): void;
     private constructor()
 }

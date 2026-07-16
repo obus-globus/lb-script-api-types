@@ -40,7 +40,7 @@ export class ClassicProtocolExtension extends Enum<ClassicProtocolExtension> {
     static VELOCITY_CONTROL: ClassicProtocolExtension;
     static byName(paramarg0: string): ClassicProtocolExtension;
     static byNameAndVersion(paramarg0: string, paramarg1: number): ClassicProtocolExtension;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ClassicProtocolExtension;
     static values(): ClassicProtocolExtension[];
     private constructor(arg2: string, ...arg3: number[])

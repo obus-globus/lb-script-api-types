@@ -5,7 +5,6 @@ import type { State } from '../../../../../../../com/viaversion/viaversion/api/p
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../../../java/util/function/BiConsumer.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { PreNettyPacketType } from '../../../../../../../net/raphimc/vialegacy/api/splitter/PreNettyPacketType.d.ts'
 export class ServerboundPacketsb1_7 extends Enum<ServerboundPacketsb1_7> implements ServerboundPacketType, PreNettyPacketType {
@@ -31,7 +30,7 @@ export class ServerboundPacketsb1_7 extends Enum<ServerboundPacketsb1_7> impleme
     static SWING: ServerboundPacketsb1_7;
     static USE_ITEM_ON: ServerboundPacketsb1_7;
     static getPacket(paramarg0: number): ServerboundPacketsb1_7;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundPacketsb1_7;
     static values(): ServerboundPacketsb1_7[];
     private constructor(arg2: number, arg3: (param0: UserConnection, param1: ByteBuf) => void)

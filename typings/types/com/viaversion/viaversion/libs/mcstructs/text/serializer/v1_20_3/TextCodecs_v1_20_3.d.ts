@@ -20,8 +20,8 @@ export class TextCodecs_v1_20_3 extends Object {
     static STRING_COMPONENT: MapCodec<StringComponent>;
     static TEXT: Codec<TextComponent>;
     static TRANSLATION_COMPONENT: MapCodec<TranslationComponent>;
-    static createCodec(paramarg0: Codec<TextComponent>, paramarg1: MapCodec<Style>, paramarg2: (TextCodecs_v1_20_3$TextComponentType | null)[], paramarg3: (param0: TextComponent) => TextCodecs_v1_20_3$TextComponentType | null): Codec<TextComponent>;
-    static createLegacyComponentMatcher(paramarg0: (NamedType | null)[], paramarg1: (param0: NamedType | null) => MapCodec<Object>, paramarg2: (param0: Object | null) => NamedType | null, paramarg3: string): MapCodec<Object>;
+    static createCodec<T extends TextCodecs_v1_20_3$TextComponentType>(paramarg0: Codec<TextComponent>, paramarg1: MapCodec<Style>, paramarg2: T[], paramarg3: (param0: TextComponent) => T): Codec<TextComponent>;
+    static createLegacyComponentMatcher<T extends NamedType, E extends unknown>(paramarg0: T[], paramarg1: (param0: T) => MapCodec<E>, paramarg2: (param0: E) => T, paramarg3: string): MapCodec<E>;
     static tryCollapse(paramarg0: TextComponent): string;
     constructor()
 }

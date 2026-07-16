@@ -12,14 +12,14 @@ import type { ByteString$Companion } from '../okio/ByteString$Companion.d.ts'
 export class ByteString extends Object implements Serializable, Comparable<ByteString> {
     static Companion: ByteString$Companion;
     static EMPTY: ByteString;
-    static decodeBase64(paramarg0: string): ByteString;
-    static decodeHex(paramarg0: string): ByteString;
-    static encodeString(paramarg0: string, paramarg1: Charset): ByteString;
-    static encodeUtf8(paramarg0: string): ByteString;
-    static of(...paramarg0: number[]): ByteString;
-    static of(paramarg0: number[], paramarg1: number, paramarg2: number): ByteString;
-    static of(paramarg0: ByteBuffer): ByteString;
-    static read(paramarg0: InputStream, paramarg1: number): ByteString;
+    static decodeBase64(self: string): ByteString | null;
+    static decodeHex(self: string): ByteString;
+    static encodeString(self: string, charset: Charset): ByteString;
+    static encodeUtf8(self: string): ByteString;
+    static of(...data: number[]): ByteString;
+    static of(self: number[], offset: number, byteCount: number): ByteString;
+    static of(self: ByteBuffer): ByteString;
+    static read(self: InputStream, byteCount: number): ByteString;
     constructor(data: number[])
     // private data: number[];
     /*not mapped: */ getData$okio(): number[];

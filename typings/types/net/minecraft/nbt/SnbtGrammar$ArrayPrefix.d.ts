@@ -11,7 +11,7 @@ export class SnbtGrammar$ArrayPrefix extends Enum<SnbtGrammar$ArrayPrefix> {
     static BYTE: SnbtGrammar$ArrayPrefix;
     static INT: SnbtGrammar$ArrayPrefix;
     static LONG: SnbtGrammar$ArrayPrefix;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SnbtGrammar$ArrayPrefix;
     static values(): SnbtGrammar$ArrayPrefix[];
     private constructor(defaultType: SnbtGrammar$TypeSuffix, ...additionalTypes: SnbtGrammar$TypeSuffix[])

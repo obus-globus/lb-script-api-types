@@ -1,7 +1,6 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { ClassDesc } from '../../../java/lang/constant/ClassDesc.d.ts'
 import type { TypeDescriptor$OfField } from '../../../java/lang/invoke/TypeDescriptor$OfField.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class TypeKind extends Enum<TypeKind> {
@@ -18,7 +17,7 @@ export class TypeKind extends Enum<TypeKind> {
     static from(paramarg0: TypeDescriptor$OfField<any>): TypeKind;
     static fromDescriptor(paramarg0: CharSequence): TypeKind;
     static fromNewarrayCode(paramarg0: number): TypeKind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TypeKind;
     static values(): TypeKind[];
     private constructor(arg2: number, arg3: number)

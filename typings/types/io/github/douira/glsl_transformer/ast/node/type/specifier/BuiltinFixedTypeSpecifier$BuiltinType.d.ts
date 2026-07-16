@@ -2,7 +2,6 @@ import type { TokenTyped } from '../../../../../../../../io/github/douira/glsl_t
 import type { BuiltinFixedTypeSpecifier$BuiltinType$TypeKind } from '../../../../../../../../io/github/douira/glsl_transformer/ast/node/type/specifier/BuiltinFixedTypeSpecifier$BuiltinType$TypeKind.d.ts'
 import type { BuiltinFixedTypeSpecifier$BuiltinType$ValueFormat } from '../../../../../../../../io/github/douira/glsl_transformer/ast/node/type/specifier/BuiltinFixedTypeSpecifier$BuiltinType$ValueFormat.d.ts'
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { Token } from '../../../../../../../../org/antlr/v4/runtime/Token.d.ts'
 export class BuiltinFixedTypeSpecifier$BuiltinType extends Enum<BuiltinFixedTypeSpecifier$BuiltinType> implements TokenTyped {
@@ -83,7 +82,7 @@ export class BuiltinFixedTypeSpecifier$BuiltinType extends Enum<BuiltinFixedType
     static USAMPLERCUBEARRAY: BuiltinFixedTypeSpecifier$BuiltinType;
     static VOID: BuiltinFixedTypeSpecifier$BuiltinType;
     static fromToken(paramarg0: Token): BuiltinFixedTypeSpecifier$BuiltinType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BuiltinFixedTypeSpecifier$BuiltinType;
     static values(): BuiltinFixedTypeSpecifier$BuiltinType[];
     private constructor(arg2: number, arg3: BuiltinFixedTypeSpecifier$BuiltinType$TypeKind)

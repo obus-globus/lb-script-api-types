@@ -3,8 +3,8 @@ import type { ReferenceCharPair } from '../../../../../it/unimi/dsi/fastutil/obj
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ReferenceCharImmutablePair<K extends unknown> extends Object implements ReferenceCharPair<K>, Serializable {
-    static of(paramarg0: Object | null, paramarg1: string): ReferenceCharImmutablePair<Object>;
-    static of(paramarg0: Object | null, paramarg1: string): ReferenceCharPair<Object>;
+    static of<K extends unknown>(paramarg0: K, paramarg1: string): ReferenceCharImmutablePair<K>;
+    static of<K extends unknown>(paramarg0: K, paramarg1: string): ReferenceCharPair<K>;
     constructor(arg0: K, arg1: string)
     // private left: K;
     // private right: string;

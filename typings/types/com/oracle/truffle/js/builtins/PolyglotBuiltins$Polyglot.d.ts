@@ -12,7 +12,7 @@ export class PolyglotBuiltins$Polyglot extends Enum<PolyglotBuiltins$Polyglot> i
     static export: PolyglotBuiltins$Polyglot;
     static import_: PolyglotBuiltins$Polyglot;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PolyglotBuiltins$Polyglot;
     static values(): PolyglotBuiltins$Polyglot[];
     private constructor(length: number)

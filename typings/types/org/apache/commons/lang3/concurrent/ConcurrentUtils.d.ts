@@ -5,15 +5,15 @@ import type { ConcurrentException } from '../../../../../org/apache/commons/lang
 import type { ConcurrentInitializer } from '../../../../../org/apache/commons/lang3/concurrent/ConcurrentInitializer.d.ts'
 import type { ConcurrentRuntimeException } from '../../../../../org/apache/commons/lang3/concurrent/ConcurrentRuntimeException.d.ts'
 export class ConcurrentUtils extends Object {
-    static constantFuture(paramarg0: Object | null): Future<Object>;
-    static createIfAbsent(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: ConcurrentInitializer<Object>): Object | null;
-    static createIfAbsentUnchecked(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: ConcurrentInitializer<Object>): Object | null;
+    static constantFuture<T extends unknown>(paramarg0: T): Future<T>;
+    static createIfAbsent<K extends unknown, V extends unknown>(paramarg0: Map<K, V>, paramarg1: K, paramarg2: ConcurrentInitializer<V>): V;
+    static createIfAbsentUnchecked<K extends unknown, V extends unknown>(paramarg0: Map<K, V>, paramarg1: K, paramarg2: ConcurrentInitializer<V>): V;
     static extractCause(paramarg0: ExecutionException): ConcurrentException;
     static extractCauseUnchecked(paramarg0: ExecutionException): ConcurrentRuntimeException;
     static handleCause(paramarg0: ExecutionException): void;
     static handleCauseUnchecked(paramarg0: ExecutionException): void;
-    static initialize(paramarg0: ConcurrentInitializer<Object>): Object | null;
-    static initializeUnchecked(paramarg0: ConcurrentInitializer<Object>): Object | null;
-    static putIfAbsent(paramarg0: Map<Object | null, Object | null>, paramarg1: Object | null, paramarg2: Object | null): Object | null;
+    static initialize<T extends unknown>(paramarg0: ConcurrentInitializer<T>): T;
+    static initializeUnchecked<T extends unknown>(paramarg0: ConcurrentInitializer<T>): T;
+    static putIfAbsent<K extends unknown, V extends unknown>(paramarg0: Map<K, V>, paramarg1: K, paramarg2: V): V;
     private constructor()
 }

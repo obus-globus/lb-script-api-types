@@ -3,10 +3,10 @@ import type { OutputStream } from '../../../../java/io/OutputStream.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class SerializationUtils extends Object {
-    static clone(paramarg0: Serializable | null): Serializable | null;
-    static deserialize(paramarg0: number[]): Object | null;
-    static deserialize(paramarg0: InputStream): Object | null;
-    static roundtrip(paramarg0: Serializable | null): Serializable | null;
+    static clone<T extends Serializable>(paramarg0: T): T;
+    static deserialize<T extends unknown>(paramarg0: number[]): T;
+    static deserialize<T extends unknown>(paramarg0: InputStream): T;
+    static roundtrip<T extends Serializable>(paramarg0: T): T;
     static serialize(paramarg0: Serializable): number[];
     static serialize(paramarg0: Serializable, paramarg1: OutputStream): void;
     constructor()

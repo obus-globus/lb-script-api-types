@@ -8,5 +8,5 @@ export class DedicatedServerSettings extends Object {
     // private source: Path;
     forceSave(): void;
     getProperties(): DedicatedServerProperties;
-    update(mutator: (param0: DedicatedServerProperties) => Object | null): DedicatedServerSettings;
+    update(mutator: (param0: DedicatedServerProperties) => DedicatedServerProperties): DedicatedServerSettings;
 }

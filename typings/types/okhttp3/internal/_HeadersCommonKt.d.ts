@@ -4,24 +4,24 @@ import type { Iterator } from '../../java/util/Iterator.d.ts'
 import type { Headers$Builder } from '../../okhttp3/Headers$Builder.d.ts'
 export class _HeadersCommonKt extends Object {
     static HEADER_LIMIT: number;
-    static commonAdd(paramarg0: Headers$Builder, paramarg1: string, paramarg2: string): Headers$Builder;
-    static commonAddAll(paramarg0: Headers$Builder, paramarg1: Pair<string, string>[]): Headers$Builder;
-    static commonAddLenient(paramarg0: Headers$Builder, paramarg1: string, paramarg2: string): Headers$Builder;
-    static commonBuild(paramarg0: Headers$Builder): Pair<string, string>[];
-    static commonEquals(paramarg0: Pair<string, string>[], paramarg1: Object): boolean;
-    static commonGet(paramarg0: Headers$Builder, paramarg1: string): string;
-    static commonHashCode(paramarg0: Pair<string, string>[]): number;
-    static commonHeadersGet(paramarg0: string[], paramarg1: string): string;
-    static commonHeadersOf(...paramarg0: string[]): Pair<string, string>[];
-    static commonIterator(paramarg0: Pair<string, string>[]): Iterator<Pair<string, string>>;
-    static commonName(paramarg0: Pair<string, string>[], paramarg1: number): string;
-    static commonNewBuilder(paramarg0: Pair<string, string>[]): Headers$Builder;
-    static commonRemoveAll(paramarg0: Headers$Builder, paramarg1: string): Headers$Builder;
-    static commonSet(paramarg0: Headers$Builder, paramarg1: string, paramarg2: string): Headers$Builder;
-    static commonToHeaders(paramarg0: { [key: string]: string }): Pair<string, string>[];
-    static commonToString(paramarg0: Pair<string, string>[]): string;
-    static commonValue(paramarg0: Pair<string, string>[], paramarg1: number): string;
-    static commonValues(paramarg0: Pair<string, string>[], paramarg1: string): string[];
-    static headersCheckName(paramarg0: string): void;
-    static headersCheckValue(paramarg0: string, paramarg1: string): void;
+    static commonAdd(self: Headers$Builder, name: string, value: string): Headers$Builder;
+    static commonAddAll(self: Headers$Builder, headers: Pair<string, string>[]): Headers$Builder;
+    static commonAddLenient(self: Headers$Builder, name: string, value: string): Headers$Builder;
+    static commonBuild(self: Headers$Builder): Pair<string, string>[];
+    static commonEquals(self: Pair<string, string>[], other: Object | null): boolean;
+    static commonGet(self: Headers$Builder, name: string): string | null;
+    static commonHashCode(self: Pair<string, string>[]): number;
+    static commonHeadersGet(namesAndValues: string[], name: string): string | null;
+    static commonHeadersOf(...inputNamesAndValues: string[]): Pair<string, string>[];
+    static commonIterator(self: Pair<string, string>[]): Iterator<Pair<string, string>>;
+    static commonName(self: Pair<string, string>[], index: number): string;
+    static commonNewBuilder(self: Pair<string, string>[]): Headers$Builder;
+    static commonRemoveAll(self: Headers$Builder, name: string): Headers$Builder;
+    static commonSet(self: Headers$Builder, name: string, value: string): Headers$Builder;
+    static commonToHeaders(self: { [key: string]: string }): Pair<string, string>[];
+    static commonToString(self: Pair<string, string>[]): string;
+    static commonValue(self: Pair<string, string>[], index: number): string;
+    static commonValues(self: Pair<string, string>[], name: string): string[];
+    static headersCheckName(name: string): void;
+    static headersCheckValue(value: string, name: string): void;
 }

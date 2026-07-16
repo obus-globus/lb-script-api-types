@@ -8,7 +8,7 @@ export class VarHandle$AccessType extends Enum<VarHandle$AccessType> {
     static GET: VarHandle$AccessType;
     static GET_AND_UPDATE: VarHandle$AccessType;
     static SET: VarHandle$AccessType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): VarHandle$AccessType;
     static values(): VarHandle$AccessType[];
     private constructor(arg2: Class<Object>)

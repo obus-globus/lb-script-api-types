@@ -25,8 +25,8 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class DataResult$Instance extends Enum<DataResult$Instance> implements Applicative<DataResult$Mu, DataResult$Instance$Mu> {
     static INSTANCE: DataResult$Instance;
-    static unbox(paramarg0: App<Applicative$Mu, K1>): Applicative<K1, Applicative$Mu>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static unbox<F extends K1, Mu extends Applicative$Mu>(paramarg0: App<Mu, F>): Applicative<F, Mu>;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DataResult$Instance;
     static values(): DataResult$Instance[];
     private constructor()

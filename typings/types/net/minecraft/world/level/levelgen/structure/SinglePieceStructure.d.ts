@@ -17,8 +17,8 @@ export abstract class SinglePieceStructure extends Structure {
     static CODEC: Codec<Holder<Structure>>;
     static DIRECT_CODEC: Codec<Structure>;
     static getMeanFirstOccupiedHeight(paramcontext: Structure$GenerationContext, paramminX: number, paramsizeX: number, paramminZ: number, paramsizeZ: number): number;
-    static settingsCodec(parami: RecordCodecBuilder$Instance<Structure>): RecordCodecBuilder<Structure, Structure$StructureSettings>;
-    static simpleCodec(paramconstructor: (param0: Structure$StructureSettings) => Structure | null): MapCodec<Structure>;
+    static settingsCodec<S extends Structure>(parami: RecordCodecBuilder$Instance<S>): RecordCodecBuilder<S, Structure$StructureSettings>;
+    static simpleCodec<S extends Structure>(paramconstructor: (param0: Structure$StructureSettings) => S): MapCodec<S>;
     constructor(constructor: (param0: WorldgenRandom, param1: number, param2: number) => StructurePiece, width: number, depth: number, settings: Structure$StructureSettings)
     // private constructor: (param0: WorldgenRandom, param1: number, param2: number) => StructurePiece;
     // private depth: number;

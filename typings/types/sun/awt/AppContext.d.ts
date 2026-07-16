@@ -14,7 +14,7 @@ export class AppContext extends Object {
     static GUI_DISPOSED: string;
     static getAppContext(): AppContext;
     static getAppContexts(): AppContext[];
-    static getSoftReferenceValue(paramarg0: Object, paramarg1: () => Object | null): Object | null;
+    static getSoftReferenceValue<T extends unknown>(paramarg0: Object, paramarg1: () => T): T;
     static isMainContext(paramarg0: AppContext): boolean;
     constructor(arg0: ThreadGroup)
     // private DISPOSAL_TIMEOUT: number;

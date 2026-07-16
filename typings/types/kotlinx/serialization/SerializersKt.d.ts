@@ -6,25 +6,25 @@ import type { KType } from '../../kotlin/reflect/KType.d.ts'
 import type { KSerializer } from '../../kotlinx/serialization/KSerializer.d.ts'
 import type { SerializersModule } from '../../kotlinx/serialization/modules/SerializersModule.d.ts'
 export class SerializersKt extends Object {
-    static moduleThenPolymorphic(paramarg0: SerializersModule, paramarg1: KClass<Object>): KSerializer<Object>;
-    static moduleThenPolymorphic(paramarg0: SerializersModule, paramarg1: KClass<Object>, paramarg2: KSerializer<Object>[]): KSerializer<Object>;
-    static noCompiledSerializer(paramarg0: string): KSerializer<Object>;
-    static noCompiledSerializer(paramarg0: SerializersModule, paramarg1: KClass<Object>): KSerializer<Object>;
-    static noCompiledSerializer(paramarg0: SerializersModule, paramarg1: KClass<Object>, paramarg2: KSerializer<Object>[]): KSerializer<Object>;
-    static parametrizedSerializerOrNull(paramarg0: KClass<Object>, paramarg1: KSerializer<Object>[], paramarg2: () => KClassifier): KSerializer<Object>;
-    static serializer(): KSerializer<Object>;
-    static serializer(paramarg0: KClass<Object>): KSerializer<Object>;
-    static serializer(paramarg0: SerializersModule): KSerializer<Object>;
-    static serializer(paramarg0: Type): KSerializer<Object>;
-    static serializer(paramarg0: KClass<Object>, paramarg1: KSerializer<Object>[], paramarg2: boolean): KSerializer<Object>;
-    static serializer(paramarg0: KType): KSerializer<Object>;
-    static serializer(paramarg0: SerializersModule, paramarg1: Type): KSerializer<Object>;
-    static serializer(paramarg0: SerializersModule, paramarg1: KClass<Object>, paramarg2: KSerializer<Object>[], paramarg3: boolean): KSerializer<Object>;
-    static serializer(paramarg0: SerializersModule, paramarg1: KType): KSerializer<Object>;
-    static serializerOrNull(paramarg0: KClass<Object>): KSerializer<Object>;
-    static serializerOrNull(paramarg0: Type): KSerializer<Object>;
-    static serializerOrNull(paramarg0: KType): KSerializer<Object>;
-    static serializerOrNull(paramarg0: SerializersModule, paramarg1: Type): KSerializer<Object>;
-    static serializerOrNull(paramarg0: SerializersModule, paramarg1: KType): KSerializer<Object>;
-    static serializersForParameters(paramarg0: SerializersModule, paramarg1: KType[], paramarg2: boolean): KSerializer<Object>[];
+    static moduleThenPolymorphic(module: SerializersModule, kClass: KClass<Object>): KSerializer<Object>;
+    static moduleThenPolymorphic(module: SerializersModule, kClass: KClass<Object>, argSerializers: KSerializer<Object>[]): KSerializer<Object>;
+    static noCompiledSerializer(forClass: string): KSerializer<Object>;
+    static noCompiledSerializer(module: SerializersModule, kClass: KClass<Object>): KSerializer<Object>;
+    static noCompiledSerializer(module: SerializersModule, kClass: KClass<Object>, argSerializers: KSerializer<Object>[]): KSerializer<Object>;
+    static parametrizedSerializerOrNull(self: KClass<Object>, serializers: KSerializer<Object>[], elementClassifierIfArray: () => KClassifier | null): KSerializer<Object> | null;
+    static serializer<T extends unknown>(): KSerializer<T>;
+    static serializer<T extends unknown>(self: KClass<T>): KSerializer<T>;
+    static serializer<T extends unknown>(self: SerializersModule): KSerializer<T>;
+    static serializer(type: Type): KSerializer<Object>;
+    static serializer(kClass: KClass<Object>, typeArgumentsSerializers: KSerializer<Object>[], isNullable: boolean): KSerializer<Object>;
+    static serializer(type: KType): KSerializer<Object>;
+    static serializer(self: SerializersModule, type: Type): KSerializer<Object>;
+    static serializer(self: SerializersModule, kClass: KClass<Object>, typeArgumentsSerializers: KSerializer<Object>[], isNullable: boolean): KSerializer<Object>;
+    static serializer(self: SerializersModule, type: KType): KSerializer<Object>;
+    static serializerOrNull<T extends unknown>(self: KClass<T>): KSerializer<T> | null;
+    static serializerOrNull(type: Type): KSerializer<Object> | null;
+    static serializerOrNull(type: KType): KSerializer<Object> | null;
+    static serializerOrNull(self: SerializersModule, type: Type): KSerializer<Object> | null;
+    static serializerOrNull(self: SerializersModule, type: KType): KSerializer<Object> | null;
+    static serializersForParameters(self: SerializersModule, typeArguments: KType[], failOnMissingTypeArgSerializer: boolean): KSerializer<Object>[] | null;
 }

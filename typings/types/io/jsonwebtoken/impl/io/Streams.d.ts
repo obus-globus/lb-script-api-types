@@ -17,7 +17,7 @@ export class Streams extends Object {
     static reader(paramarg0: InputStream): Reader;
     static reader(paramarg0: CharSequence): Reader;
     static reset(paramarg0: InputStream): void;
-    static run(paramarg0: () => Object | null, paramarg1: string): Object | null;
+    static run<V extends unknown>(paramarg0: () => V, paramarg1: string): V;
     static write(paramarg0: OutputStream, paramarg1: number[], paramarg2: number, paramarg3: number, paramarg4: string): void;
     static write(paramarg0: OutputStream, paramarg1: number[], paramarg2: string): void;
     static writeAndClose(paramarg0: OutputStream, paramarg1: number[], paramarg2: string): void;

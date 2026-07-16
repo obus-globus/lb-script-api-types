@@ -7,10 +7,10 @@ export class TimedPickupTracker$PickupFilter extends Enum<TimedPickupTracker$Pic
     static LAVA: TimedPickupTracker$PickupFilter;
     static WATER: TimedPickupTracker$PickupFilter;
     static getEntries(): TimedPickupTracker$PickupFilter[];
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): TimedPickupTracker$PickupFilter;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): TimedPickupTracker$PickupFilter;
     static values(): TimedPickupTracker$PickupFilter[];
     private constructor()
     and(arg0: (param0: BlockPos) => boolean): (param0: BlockPos) => boolean;

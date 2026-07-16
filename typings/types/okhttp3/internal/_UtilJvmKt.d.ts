@@ -7,6 +7,7 @@ import type { ThreadFactory } from '../../java/util/concurrent/ThreadFactory.d.t
 import type { TimeUnit } from '../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Pair } from '../../kotlin/Pair.d.ts'
+import type { Duration } from '../../kotlin/time/Duration.d.ts'
 import type { Dispatcher } from '../../okhttp3/Dispatcher.d.ts'
 import type { EventListener } from '../../okhttp3/EventListener.d.ts'
 import type { EventListener$Factory } from '../../okhttp3/EventListener$Factory.d.ts'
@@ -19,29 +20,30 @@ export class _UtilJvmKt extends Object {
     static UTC: TimeZone;
     static assertionsEnabled: boolean;
     static okHttpName: string;
-    static asFactory(paramarg0: EventListener): EventListener$Factory;
-    static assertLockNotHeld(paramarg0: Dispatcher): void;
-    static canReuseConnectionFor(paramarg0: HttpUrl, paramarg1: HttpUrl): boolean;
-    static checkDuration(paramarg0: string, paramarg1: number, paramarg2: TimeUnit): number;
-// (invalid TS: name contains '-')     static checkDuration-HG0u8IE(paramarg0: string, paramarg1: number): number;
-    static closeQuietly(paramarg0: ServerSocket): void;
-    static closeQuietly(paramarg0: Socket): void;
-    static discard(paramarg0: Source, paramarg1: number, paramarg2: TimeUnit): boolean;
-    static format(paramarg0: string, ...paramarg1: Object[]): string;
-    static headersContentLength(paramarg0: Response): number;
-    static immutableListOf(...paramarg0: (Object | null)[]): (Object | null)[];
-    static isHealthy(paramarg0: Socket, paramarg1: BufferedSource): boolean;
-    static readBomAsCharset(paramarg0: BufferedSource, paramarg1: Charset): Charset;
-    static readFieldOrNull(paramarg0: Object, paramarg1: Class<Object>, paramarg2: string): Object | null;
-    static skipAll(paramarg0: Source, paramarg1: number, paramarg2: TimeUnit): boolean;
-    static skipAll(paramarg0: BufferedSource): void;
-    static threadFactory(paramarg0: string, paramarg1: boolean): ThreadFactory;
-    static threadName(paramarg0: string, paramarg1: () => void): void;
-    static toHeaderList(paramarg0: Pair<string, string>[]): Header[];
-    static toHeaders(paramarg0: Header[]): Pair<string, string>[];
-    static toHexString(paramarg0: number): string;
-    static toHostHeader(paramarg0: HttpUrl, paramarg1: boolean): string;
-    static toImmutableList(paramarg0: (Object | null)[]): (Object | null)[];
-    static unmodifiable(paramarg0: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static unmodifiable(paramarg0: (Object | null)[]): (Object | null)[];
+    static asFactory(self: EventListener): EventListener$Factory;
+    static assertLockNotHeld(self: Dispatcher): void;
+    static canReuseConnectionFor(self: HttpUrl, other: HttpUrl): boolean;
+    static checkDuration(name: string, duration: number, unit: TimeUnit): number;
+// (invalid TS: name contains '-')     static checkDuration-HG0u8IE(name: string, duration: Duration): number;
+    static closeQuietly(self: ServerSocket): void;
+    static closeQuietly(self: Socket): void;
+    static discard(self: Source, timeout: number, timeUnit: TimeUnit): boolean;
+    static format(format: string, ...args: Object[]): string;
+    static headersContentLength(self: Response): number;
+    static immutableListOf<T extends unknown>(...elements: T[]): T[];
+    static isHealthy(self: Socket, source: BufferedSource): boolean;
+    static readBomAsCharset(self: BufferedSource, default_: Charset): Charset;
+    static readFieldOrNull<T extends unknown>(instance: Object, fieldType: Class<T>, fieldName: string): T | null;
+    static skipAll(self: Source, duration: number, timeUnit: TimeUnit): boolean;
+    static skipAll(self: BufferedSource): void;
+    static threadFactory(name: string, daemon: boolean): ThreadFactory;
+    static threadName(name: string, block: () => void): void;
+    static toHeaderList(self: Pair<string, string>[]): Header[];
+    static toHeaders(self: Header[]): Pair<string, string>[];
+    static toHexString(self: number): string;
+    static toHostHeader(self: HttpUrl, includeDefaultPort: boolean): string;
+    static toImmutableList<T extends unknown>(self: T[] | null): T[];
+    static toImmutableList<T extends unknown>(self: T[]): T[];
+    static unmodifiable<K extends unknown, V extends unknown>(self: Map<K, V>): Map<K, V>;
+    static unmodifiable<T extends unknown>(self: T[]): T[];
 }

@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../../../../../java/lang/Class.d.ts'
 import type { BooleanSupplier } from '../../../../../../../../../java/util/function/BooleanSupplier.d.ts'
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../../java/lang/Enum.d.ts'
 import type { Tagged } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
 import type { Tagged$Companion } from '../../../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged$Companion.d.ts'
@@ -10,10 +9,10 @@ export class VelocityModify$VelocityTriggerFilter extends Enum<VelocityModify$Ve
     static IN_AIR: VelocityModify$VelocityTriggerFilter;
     static ON_GROUND: VelocityModify$VelocityTriggerFilter;
     static getEntries(): VelocityModify$VelocityTriggerFilter[];
-    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
-    static of(paramarg0: string): Tagged;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): VelocityModify$VelocityTriggerFilter;
+    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
+    static of(self: string): Tagged;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): VelocityModify$VelocityTriggerFilter;
     static values(): VelocityModify$VelocityTriggerFilter[];
     private constructor(tag: string, condition: () => boolean)
     readonly condition: () => boolean;

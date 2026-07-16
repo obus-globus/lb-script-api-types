@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class MeasureUnit$MeasurePrefix extends Enum<MeasureUnit$MeasurePrefix> {
     static ATTO: MeasureUnit$MeasurePrefix;
@@ -35,7 +34,7 @@ export class MeasureUnit$MeasurePrefix extends Enum<MeasureUnit$MeasurePrefix> {
     static ZEBI: MeasureUnit$MeasurePrefix;
     static ZEPTO: MeasureUnit$MeasurePrefix;
     static ZETTA: MeasureUnit$MeasurePrefix;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): MeasureUnit$MeasurePrefix;
     static values(): MeasureUnit$MeasurePrefix[];
     private constructor(power: number, identifier: string, base: number)

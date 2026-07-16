@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class InteropLibrary$Asserts$Type extends Enum<InteropLibrary$Asserts$Type> {
     static BOOLEAN: InteropLibrary$Asserts$Type;
@@ -11,7 +10,7 @@ export class InteropLibrary$Asserts$Type extends Enum<InteropLibrary$Asserts$Typ
     static NUMBER: InteropLibrary$Asserts$Type;
     static POINTER: InteropLibrary$Asserts$Type;
     static STRING: InteropLibrary$Asserts$Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): InteropLibrary$Asserts$Type;
     static values(): InteropLibrary$Asserts$Type[];
     private constructor()

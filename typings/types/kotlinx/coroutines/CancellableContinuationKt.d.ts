@@ -5,9 +5,9 @@ import type { CancellableContinuation } from '../../kotlinx/coroutines/Cancellab
 import type { CancellableContinuationImpl } from '../../kotlinx/coroutines/CancellableContinuationImpl.d.ts'
 import type { DisposableHandle } from '../../kotlinx/coroutines/DisposableHandle.d.ts'
 export class CancellableContinuationKt extends Object {
-    static disposeOnCancellation(paramarg0: CancellableContinuation<Object>, paramarg1: DisposableHandle): void;
-    static getOrCreateCancellableContinuation(paramarg0: Continuation<Object>): CancellableContinuationImpl<Object>;
-    static invokeOnCancellation(paramarg0: CancellableContinuation<Object>, paramarg1: CancelHandler): void;
-    static suspendCancellableCoroutine(paramarg0: (param0: Object) => void, paramarg1: Continuation<Object>): Object;
-    static suspendCancellableCoroutineReusable(paramarg0: (param0: Object) => void, paramarg1: Continuation<Object>): Object;
+    static disposeOnCancellation(self: CancellableContinuation<Object>, handle: DisposableHandle): void;
+    static getOrCreateCancellableContinuation<T extends unknown>(delegate: Continuation<T>): CancellableContinuationImpl<T>;
+    static invokeOnCancellation<T extends unknown>(self: CancellableContinuation<T>, handler: CancelHandler): void;
+    static suspendCancellableCoroutine<T extends unknown>(block: (param0: CancellableContinuation<T>) => void): T;
+    static suspendCancellableCoroutineReusable<T extends unknown>(block: (param0: CancellableContinuationImpl<T>) => void): T;
 }

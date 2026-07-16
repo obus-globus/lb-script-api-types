@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class Platform$Architecture extends Enum<Platform$Architecture> {
     static ARM32: Platform$Architecture;
@@ -8,7 +7,7 @@ export class Platform$Architecture extends Enum<Platform$Architecture> {
     static RISCV64: Platform$Architecture;
     static X64: Platform$Architecture;
     static X86: Platform$Architecture;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Platform$Architecture;
     static values(): Platform$Architecture[];
     private constructor(arg2: boolean)

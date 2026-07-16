@@ -5,7 +5,7 @@ import type { BitSet } from '../../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class FrameGraphBuilder$Handle<T extends unknown> extends Object implements ResourceHandle<T> {
     static INVALID_HANDLE: ResourceHandle<Object>;
-    static invalid(): ResourceHandle<Object>;
+    static invalid<T extends unknown>(): ResourceHandle<T>;
     private constructor(holder: FrameGraphBuilder$VirtualResource<T>, version: number, createdBy: FrameGraphBuilder$Pass)
     // private aliasedBy: FrameGraphBuilder$Handle<T>;
     // private createdBy: FrameGraphBuilder$Pass;

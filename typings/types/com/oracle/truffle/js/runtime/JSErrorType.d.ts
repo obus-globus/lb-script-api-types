@@ -2,7 +2,6 @@ import type { JSRealm } from '../../../../../com/oracle/truffle/js/runtime/JSRea
 import type { PrototypeSupplier } from '../../../../../com/oracle/truffle/js/runtime/builtins/PrototypeSupplier.d.ts'
 import type { JSDynamicObject } from '../../../../../com/oracle/truffle/js/runtime/objects/JSDynamicObject.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class JSErrorType extends Enum<JSErrorType> implements PrototypeSupplier {
     static AggregateError: JSErrorType;
@@ -17,7 +16,7 @@ export class JSErrorType extends Enum<JSErrorType> implements PrototypeSupplier 
     static TypeError: JSErrorType;
     static URIError: JSErrorType;
     static errorTypes(): JSErrorType[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): JSErrorType;
     static values(): JSErrorType[];
     private constructor()

@@ -16,15 +16,15 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class DataResult$Success<R extends unknown> extends Record implements DataResult<R> {
     static appendMessages(paramarg0: string, paramarg1: string): string;
-    static error(paramarg0: () => string): DataResult<Object>;
-    static error(paramarg0: () => string, paramarg1: Object | null): DataResult<Object>;
-    static error(paramarg0: () => string, paramarg1: Object | null, paramarg2: Lifecycle): DataResult<Object>;
-    static error(paramarg0: () => string, paramarg1: Lifecycle): DataResult<Object>;
+    static error<R extends unknown>(paramarg0: () => string): DataResult<R>;
+    static error<R extends unknown>(paramarg0: () => string, paramarg1: R): DataResult<R>;
+    static error<R extends unknown>(paramarg0: () => string, paramarg1: R, paramarg2: Lifecycle): DataResult<R>;
+    static error<R extends unknown>(paramarg0: () => string, paramarg1: Lifecycle): DataResult<R>;
     static instance(): DataResult$Instance;
-    static partialGet(paramarg0: (param0: Object | null) => Object | null, paramarg1: () => string): (param0: Object | null) => DataResult<Object>;
-    static success(paramarg0: Object | null): DataResult<Object>;
-    static success(paramarg0: Object | null, paramarg1: Lifecycle): DataResult<Object>;
-    static unbox(paramarg0: App<DataResult$Mu, Object>): DataResult<Object>;
+    static partialGet<K extends unknown, V extends unknown>(paramarg0: (param0: K) => V, paramarg1: () => string): (param0: K) => DataResult<V>;
+    static success<R extends unknown>(paramarg0: R): DataResult<R>;
+    static success<R extends unknown>(paramarg0: R, paramarg1: Lifecycle): DataResult<R>;
+    static unbox<R extends unknown>(paramarg0: App<DataResult$Mu, R>): DataResult<R>;
     constructor(value: R, lifecycle: Lifecycle)
     // private lifecycle: Lifecycle;
     // private value: R;
@@ -48,7 +48,7 @@ export class DataResult$Success<R extends unknown> extends Record implements Dat
     isSuccess(): boolean;
     lifecycle(): Lifecycle;
     map<T extends unknown>(arg0: (param0: R) => T): DataResult<T>;
-    mapError(arg0: (param0: string) => Object | null): DataResult<R>;
+    mapError(arg0: (param0: string) => string): DataResult<R>;
     mapOrElse<T extends unknown>(arg0: (param0: R) => T, arg1: (param0: DataResult$Error<R>) => T): T;
     promotePartial(arg0: (param0: string) => void): DataResult<R>;
     result(): Optional<R>;

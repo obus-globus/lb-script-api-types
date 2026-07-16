@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class MessagePattern$Part$Type extends Enum<MessagePattern$Part$Type> {
     static ARG_DOUBLE: MessagePattern$Part$Type;
@@ -16,7 +15,7 @@ export class MessagePattern$Part$Type extends Enum<MessagePattern$Part$Type> {
     static MSG_START: MessagePattern$Part$Type;
     static REPLACE_NUMBER: MessagePattern$Part$Type;
     static SKIP_SYNTAX: MessagePattern$Part$Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MessagePattern$Part$Type;
     static values(): MessagePattern$Part$Type[];
     private constructor()

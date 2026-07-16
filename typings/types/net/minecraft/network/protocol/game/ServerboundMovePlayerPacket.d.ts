@@ -7,7 +7,7 @@ import type { Packet } from '../../../../../net/minecraft/network/protocol/Packe
 import type { PacketType } from '../../../../../net/minecraft/network/protocol/PacketType.d.ts'
 import type { ServerGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ServerGamePacketListener.d.ts'
 export abstract class ServerboundMovePlayerPacket extends Object implements Packet<ServerGamePacketListener> {
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(x: number, y: number, z: number, yRot: number, xRot: number, onGround: boolean, horizontalCollision: boolean, hasPos: boolean, hasRot: boolean)
     hasPos: boolean;
     hasRot: boolean;

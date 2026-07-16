@@ -9,7 +9,7 @@ import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ForeignIterablePrototypeBuiltins$ForeignIterablePrototype extends Enum<ForeignIterablePrototypeBuiltins$ForeignIterablePrototype> implements BuiltinEnum<ForeignIterablePrototypeBuiltins$ForeignIterablePrototype> {
     static _iterator: ForeignIterablePrototypeBuiltins$ForeignIterablePrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ForeignIterablePrototypeBuiltins$ForeignIterablePrototype;
     static values(): ForeignIterablePrototypeBuiltins$ForeignIterablePrototype[];
     private constructor(length: number)

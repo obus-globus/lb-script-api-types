@@ -1,7 +1,6 @@
 import type { BidiTransform } from '../../../../com/ibm/icu/text/BidiTransform.d.ts'
 import type { BidiTransform$Order } from '../../../../com/ibm/icu/text/BidiTransform$Order.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class BidiTransform$ReorderingScheme extends Enum<BidiTransform$ReorderingScheme> {
     static LOG_LTR_TO_LOG_LTR: BidiTransform$ReorderingScheme;
@@ -20,7 +19,7 @@ export class BidiTransform$ReorderingScheme extends Enum<BidiTransform$Reorderin
     static VIS_RTL_TO_LOG_RTL: BidiTransform$ReorderingScheme;
     static VIS_RTL_TO_VIS_LTR: BidiTransform$ReorderingScheme;
     static VIS_RTL_TO_VIS_RTL: BidiTransform$ReorderingScheme;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BidiTransform$ReorderingScheme;
     static values(): BidiTransform$ReorderingScheme[];
     private constructor()

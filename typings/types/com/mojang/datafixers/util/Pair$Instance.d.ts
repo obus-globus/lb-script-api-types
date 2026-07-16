@@ -10,8 +10,8 @@ import type { Pair$Mu } from '../../../../com/mojang/datafixers/util/Pair$Mu.d.t
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Pair$Instance<S2 extends unknown> extends Object implements CartesianLike<Pair$Mu<S2>, S2, Pair$Instance$Mu<S2>>, Traversable<Pair$Mu<S2>, Pair$Instance$Mu<S2>> {
-    static unbox(paramarg0: App<CartesianLike$Mu, K1>): CartesianLike<K1, Object, CartesianLike$Mu>;
-    static unbox(paramarg0: App<Traversable$Mu, K1>): Traversable<K1, Traversable$Mu>;
+    static unbox<F extends K1, C extends unknown, Mu extends CartesianLike$Mu>(paramarg0: App<Mu, F>): CartesianLike<F, C, Mu>;
+    static unbox<F extends K1, Mu extends Traversable$Mu>(paramarg0: App<Mu, F>): Traversable<F, Mu>;
     constructor()
     flip<F extends K1, A extends unknown>(arg0: Applicative<F, any>, arg1: App<Pair$Mu<S2>, App<F, A>>): App<F, App<Pair$Mu<S2>, A>>;
     from<A extends unknown>(arg0: App<Pair$Mu<S2>, A>): App<Pair$Mu<S2>, A>;

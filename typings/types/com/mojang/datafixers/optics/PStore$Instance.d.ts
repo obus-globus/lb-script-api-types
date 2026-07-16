@@ -7,7 +7,7 @@ import type { PStore$Mu } from '../../../../com/mojang/datafixers/optics/PStore$
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class PStore$Instance<I extends unknown, J extends unknown> extends Object implements Functor<PStore$Mu<I, J>, PStore$Instance$Mu<I, J>> {
-    static unbox(paramarg0: App<Functor$Mu, K1>): Functor<K1, Functor$Mu>;
+    static unbox<F extends K1, Mu extends Functor$Mu>(paramarg0: App<Mu, F>): Functor<F, Mu>;
     constructor()
     map<R extends unknown, T extends unknown>(arg0: (param0: T) => R, arg1: App<PStore$Mu<I, J>, T>): App<PStore$Mu<I, J>, R>;
 }

@@ -164,7 +164,7 @@ export abstract class ChunkAccess extends Object implements AttachmentTarget, At
     isYSpaceEmpty(yStartInclusive: number, yEndInclusive: number): boolean;
     markPosForPostProcessing(blockPos: BlockPos): void;
     markUnsaved(): void;
-    modifyAttached<A extends unknown>(arg0: AttachmentType<A>, arg1: (param0: A) => Object | null): A;
+    modifyAttached<A extends unknown>(arg0: AttachmentType<A>, arg1: (param0: A) => A): A;
     onAttachedSet<A extends unknown>(arg0: AttachmentType<A>): Event<(param0: A, param1: A) => void>;
     onAttachedSet(arg0: AttachmentType<Object>): Event<Object>;
     problemPath(): () => string;

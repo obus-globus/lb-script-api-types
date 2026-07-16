@@ -5,6 +5,6 @@ import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class JsonUtil extends Object {
     static getValue(paramarg0: JsonElement): Object;
     static merge(paramarg0: JsonObject, paramarg1: JsonObject): void;
-    static sort(paramarg0: JsonElement | null, paramarg1: (param0: string, param1: string) => number): JsonElement | null;
+    static sort<T extends JsonElement>(paramarg0: T, paramarg1: (param0: string, param1: string) => number): T;
     constructor()
 }

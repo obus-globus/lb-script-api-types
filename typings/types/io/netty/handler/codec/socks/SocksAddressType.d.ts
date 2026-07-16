@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class SocksAddressType extends Enum<SocksAddressType> {
     static DOMAIN: SocksAddressType;
@@ -7,7 +6,7 @@ export class SocksAddressType extends Enum<SocksAddressType> {
     static IPv6: SocksAddressType;
     static UNKNOWN: SocksAddressType;
     static fromByte(paramarg0: number): SocksAddressType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: number): SocksAddressType;
     static valueOf(paramarg0: string): SocksAddressType;
     static values(): SocksAddressType[];

@@ -1,17 +1,18 @@
+import type { Exception } from '../../../java/lang/Exception.d.ts'
 import type { Charset } from '../../../java/nio/charset/Charset.d.ts'
 import type { OpenOption } from '../../../java/nio/file/OpenOption.d.ts'
 import type { Path } from '../../../java/nio/file/Path.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../java/lang/CharSequence.d.ts'
+import type { CopyActionContext } from '../../../kotlin/io/path/CopyActionContext.d.ts'
 import type { CopyActionResult } from '../../../kotlin/io/path/CopyActionResult.d.ts'
 import type { OnErrorResult } from '../../../kotlin/io/path/OnErrorResult.d.ts'
 import type { PathsKt__PathReadWriteKt } from '../../../kotlin/io/path/PathsKt__PathReadWriteKt.d.ts'
 export class PathsKt__PathRecursiveFunctionsKt extends PathsKt__PathReadWriteKt {
-    static appendText(paramarg0: Path, paramarg1: CharSequence, paramarg2: Charset): void;
-    static checkFileName(paramarg0: Path): void;
-    static copyToRecursively(paramarg0: Path, paramarg1: Path, paramarg2: (param0: Object, param1: Object, param2: Object) => OnErrorResult, paramarg3: boolean, paramarg4: boolean): Path;
-    static copyToRecursively(paramarg0: Path, paramarg1: Path, paramarg2: (param0: Object, param1: Object, param2: Object) => OnErrorResult, paramarg3: boolean, paramarg4: (param0: Object, param1: Object, param2: Object) => CopyActionResult): Path;
-    static deleteRecursively(paramarg0: Path): void;
-    static readText(paramarg0: Path, paramarg1: Charset): string;
-    static writeText(paramarg0: Path, paramarg1: CharSequence, paramarg2: Charset, ...paramarg3: OpenOption[]): void;
+    static appendText(self: Path, text: CharSequence, charset: Charset): void;
+    static checkFileName(self: Path): void;
+    static copyToRecursively(self: Path, target: Path, onError: (param0: Path, param1: Path, param2: Exception) => OnErrorResult, followLinks: boolean, overwrite: boolean): Path;
+    static copyToRecursively(self: Path, target: Path, onError: (param0: Path, param1: Path, param2: Exception) => OnErrorResult, followLinks: boolean, copyAction: (param0: CopyActionContext, param1: Path, param2: Path) => CopyActionResult): Path;
+    static deleteRecursively(self: Path): void;
+    static readText(self: Path, charset: Charset): string;
+    static writeText(self: Path, text: CharSequence, charset: Charset, ...options: OpenOption[]): void;
 }

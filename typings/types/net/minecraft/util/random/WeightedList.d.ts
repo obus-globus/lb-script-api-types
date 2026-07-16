@@ -10,17 +10,17 @@ import type { Weighted } from '../../../../net/minecraft/util/random/Weighted.d.
 import type { WeightedList$Builder } from '../../../../net/minecraft/util/random/WeightedList$Builder.d.ts'
 import type { WeightedList$Selector } from '../../../../net/minecraft/util/random/WeightedList$Selector.d.ts'
 export class WeightedList<E extends unknown> extends Object {
-    static builder(): WeightedList$Builder<Object>;
-    static codec(paramelementCodec: Codec<Object>): Codec<WeightedList<Object>>;
-    static codec(paramelementCodec: MapCodec<Object>): Codec<WeightedList<Object>>;
-    static nonEmptyCodec(paramelementCodec: Codec<Object>): Codec<WeightedList<Object>>;
-    static nonEmptyCodec(paramelementCodec: MapCodec<Object>): Codec<WeightedList<Object>>;
-    static of(): WeightedList<Object>;
-    static of(paramvalue: Object | null): WeightedList<Object>;
-    static of(...paramitems: (Object | null)[]): WeightedList<Object>;
-    static of(paramitems: Weighted<Object>[]): WeightedList<Object>;
-    static of(...paramitems: Weighted<Object>[]): WeightedList<Object>;
-    static streamCodec(paramelementCodec: StreamCodec<ByteBuf, Object>): StreamCodec<ByteBuf, WeightedList<Object>>;
+    static builder<E extends unknown>(): WeightedList$Builder<E>;
+    static codec<E extends unknown>(paramelementCodec: Codec<E>): Codec<WeightedList<E>>;
+    static codec<E extends unknown>(paramelementCodec: MapCodec<E>): Codec<WeightedList<E>>;
+    static nonEmptyCodec<E extends unknown>(paramelementCodec: Codec<E>): Codec<WeightedList<E>>;
+    static nonEmptyCodec<E extends unknown>(paramelementCodec: MapCodec<E>): Codec<WeightedList<E>>;
+    static of<E extends unknown>(): WeightedList<E>;
+    static of<E extends unknown>(paramvalue: E): WeightedList<E>;
+    static of<E extends unknown>(...paramitems: E[]): WeightedList<E>;
+    static of<E extends unknown>(paramitems: Weighted<E>[]): WeightedList<E>;
+    static of<E extends unknown>(...paramitems: Weighted<E>[]): WeightedList<E>;
+    static streamCodec<E extends unknown, B extends ByteBuf>(paramelementCodec: StreamCodec<B, E>): StreamCodec<B, WeightedList<E>>;
     private constructor(items: Weighted<E>[])
     // private items: Weighted<E>[];
     // private selector: WeightedList$Selector<E>;

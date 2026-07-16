@@ -1,5 +1,4 @@
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class ChatFormatting extends Enum<ChatFormatting> {
     static AQUA: ChatFormatting;
@@ -27,7 +26,7 @@ export class ChatFormatting extends Enum<ChatFormatting> {
     static YELLOW: ChatFormatting;
     static getByCode(paramcode: string): ChatFormatting;
     static stripFormatting(paraminput: string): string;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ChatFormatting;
     static values(): ChatFormatting[];
     private constructor(code: string)

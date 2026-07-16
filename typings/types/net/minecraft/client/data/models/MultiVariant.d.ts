@@ -12,5 +12,5 @@ export class MultiVariant extends Record {
     toString(): string;
     toUnbaked(): BlockStateModel$Unbaked;
     variants(): WeightedList<Variant>;
-    with(mutator: (param0: Object | null) => Object | null): MultiVariant;
+    with(mutator: (param0: Variant) => Variant): MultiVariant;
 }

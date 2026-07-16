@@ -3,9 +3,9 @@ import type { Tag } from '../../../../com/viaversion/nbt/tag/Tag.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ConverterRegistry extends Object {
-    static convertToTag(paramarg0: Object | null): Tag | null;
-    static convertToValue(paramarg0: Tag | null): Object | null;
-    static register(paramarg0: Class<Tag>, paramarg1: Class<Object>, paramarg2: TagConverter<Tag, Object>): void;
-    static unregister(paramarg0: Class<Tag>, paramarg1: Class<Object>): void;
+    static convertToTag<V extends unknown, T extends Tag>(paramarg0: V): T;
+    static convertToValue<T extends Tag, V extends unknown>(paramarg0: T): V;
+    static register<T extends Tag, V extends unknown>(paramarg0: Class<T>, paramarg1: Class<V>, paramarg2: TagConverter<T, V>): void;
+    static unregister<T extends Tag, V extends unknown>(paramarg0: Class<T>, paramarg1: Class<V>): void;
     constructor()
 }

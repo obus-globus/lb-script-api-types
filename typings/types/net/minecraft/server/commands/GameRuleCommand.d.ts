@@ -5,7 +5,7 @@ import type { CommandBuildContext } from '../../../../net/minecraft/commands/Com
 import type { CommandSourceStack } from '../../../../net/minecraft/commands/CommandSourceStack.d.ts'
 import type { GameRule } from '../../../../net/minecraft/world/level/gamerules/GameRule.d.ts'
 export class GameRuleCommand extends Object implements GameRuleCommandAccessor {
-    static callQueryRule(paramarg0: CommandSourceStack, paramarg1: GameRule<Object>): number;
+    static callQueryRule<T extends unknown>(paramarg0: CommandSourceStack, paramarg1: GameRule<T>): number;
     static register(paramdispatcher: CommandDispatcher<CommandSourceStack>, paramcontext: CommandBuildContext): void;
     constructor()
 }

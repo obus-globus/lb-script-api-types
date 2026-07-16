@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SubChunkPacket_SubChunkRequestResult extends Enum<SubChunkPacket_SubChunkRequestResult> {
     static IndexOutOfBounds: SubChunkPacket_SubChunkRequestResult;
@@ -13,7 +12,7 @@ export class SubChunkPacket_SubChunkRequestResult extends Enum<SubChunkPacket_Su
     static getByName(paramarg0: string, paramarg1: SubChunkPacket_SubChunkRequestResult): SubChunkPacket_SubChunkRequestResult;
     static getByValue(paramarg0: number): SubChunkPacket_SubChunkRequestResult;
     static getByValue(paramarg0: number, paramarg1: SubChunkPacket_SubChunkRequestResult): SubChunkPacket_SubChunkRequestResult;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SubChunkPacket_SubChunkRequestResult;
     static values(): SubChunkPacket_SubChunkRequestResult[];
     private constructor(arg2: number)

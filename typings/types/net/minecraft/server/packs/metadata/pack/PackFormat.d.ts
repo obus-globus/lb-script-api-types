@@ -15,7 +15,7 @@ export class PackFormat extends Record implements Comparable<PackFormat> {
     static of(parammajor: number): PackFormat;
     static of(parammajor: number, paramminor: number): PackFormat;
     static packCodec(paramtype: PackType): MapCodec<InclusiveRange<PackFormat>>;
-    static validateHolderList(paramlist: (PackFormat$IntermediaryFormatHolder | null)[], paramlastPreMinorVersion: number, paramconstructor: (param0: PackFormat$IntermediaryFormatHolder | null, param1: InclusiveRange<PackFormat>) => Object | null): DataResult<(Object | null)[]>;
+    static validateHolderList<ResultType extends unknown, HolderType extends PackFormat$IntermediaryFormatHolder>(paramlist: HolderType[], paramlastPreMinorVersion: number, paramconstructor: (param0: HolderType, param1: InclusiveRange<PackFormat>) => ResultType): DataResult<ResultType[]>;
     constructor(major: number, minor: number)
     // private major: number;
     // private minor: number;

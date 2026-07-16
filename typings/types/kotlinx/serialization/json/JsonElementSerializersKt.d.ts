@@ -4,6 +4,6 @@ import type { Encoder } from '../../../kotlinx/serialization/encoding/Encoder.d.
 import type { JsonDecoder } from '../../../kotlinx/serialization/json/JsonDecoder.d.ts'
 import type { JsonEncoder } from '../../../kotlinx/serialization/json/JsonEncoder.d.ts'
 export class JsonElementSerializersKt extends Object {
-    static asJsonDecoder(paramarg0: Decoder): JsonDecoder;
-    static asJsonEncoder(paramarg0: Encoder): JsonEncoder;
+    static asJsonDecoder(self: Decoder): JsonDecoder;
+    static asJsonEncoder(self: Encoder): JsonEncoder;
 }

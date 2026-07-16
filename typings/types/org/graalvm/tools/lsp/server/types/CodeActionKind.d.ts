@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class CodeActionKind extends Enum<CodeActionKind> {
     static Empty: CodeActionKind;
@@ -12,7 +11,7 @@ export class CodeActionKind extends Enum<CodeActionKind> {
     static SourceFixAll: CodeActionKind;
     static SourceOrganizeImports: CodeActionKind;
     static get(paramstringValue: string): CodeActionKind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CodeActionKind;
     static values(): CodeActionKind[];
     private constructor(stringValue: string)

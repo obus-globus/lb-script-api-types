@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ClassElementDefinitionRecord$Kind extends Enum<ClassElementDefinitionRecord$Kind> {
     static AccessorPair: ClassElementDefinitionRecord$Kind;
@@ -9,7 +8,7 @@ export class ClassElementDefinitionRecord$Kind extends Enum<ClassElementDefiniti
     static Method: ClassElementDefinitionRecord$Kind;
     static Setter: ClassElementDefinitionRecord$Kind;
     static StaticBlock: ClassElementDefinitionRecord$Kind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ClassElementDefinitionRecord$Kind;
     static values(): ClassElementDefinitionRecord$Kind[];
     private constructor()

@@ -13,7 +13,7 @@ export class TimeUnit extends Enum<TimeUnit> {
     static NANOSECONDS: TimeUnit;
     static SECONDS: TimeUnit;
     static of(paramarg0: ChronoUnit): TimeUnit;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TimeUnit;
     static values(): TimeUnit[];
     private constructor(arg2: number)

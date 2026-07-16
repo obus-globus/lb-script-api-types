@@ -7,9 +7,9 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
 export class RenderStateExtensionsKt extends Object {
     static getEntity(paramarg0: EntityRenderState): Entity;
     static isCustom(paramarg0: EntityRenderState): boolean;
-    static scaleLightCoords(entityRenderState: EntityRenderState, scale: number): void;
+    static scaleLightCoords(self: EntityRenderState, scale: number): void;
     static setCustom(paramarg0: EntityRenderState, paramarg1: boolean): void;
-    static setPosition(entityRenderState: EntityRenderState, position: Position): void;
-    static setRotation(livingEntityRenderState: LivingEntityRenderState, xRot: number, yRot: number): void;
-    static setRotation(livingEntityRenderState: LivingEntityRenderState, rotation: Rotation): void;
+    static setPosition(self: EntityRenderState, position: Position): void;
+    static setRotation(self: LivingEntityRenderState, xRot: number, yRot: number): void;
+    static setRotation(self: LivingEntityRenderState, rotation: Rotation): void;
 }

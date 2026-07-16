@@ -15,7 +15,7 @@ export abstract class FileSystem extends Object implements Closeable {
     static RESOURCES: FileSystem;
     static SYSTEM: FileSystem;
     static SYSTEM_TEMPORARY_DIRECTORY: Path;
-    static get(paramarg0: FileSystem_2): FileSystem;
+    static get(self: FileSystem_2): FileSystem;
     constructor()
     appendingSink(file: Path): Sink;
     appendingSink(file: Path, mustExist: boolean): Sink;

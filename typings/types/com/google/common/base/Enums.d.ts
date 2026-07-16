@@ -6,7 +6,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Enums extends Object {
     static getField(paramenumValue: Enum<any>): Field;
-    static getIfPresent(paramenumClass: Class<Object>, paramvalue: string): Optional<Object>;
-    static stringConverter(paramenumClass: Class<Object>): Converter<string, Object>;
+    static getIfPresent<T extends Enum<T>>(paramenumClass: Class<T>, paramvalue: string): Optional<T>;
+    static stringConverter<T extends Enum<T>>(paramenumClass: Class<T>): Converter<string, T>;
     private constructor()
 }

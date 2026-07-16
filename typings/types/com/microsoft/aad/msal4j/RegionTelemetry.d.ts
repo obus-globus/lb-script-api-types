@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class RegionTelemetry extends Enum<RegionTelemetry> {
     static REGION_OUTCOME_AUTODETECT_FAILED: RegionTelemetry;
@@ -11,7 +10,7 @@ export class RegionTelemetry extends Enum<RegionTelemetry> {
     static REGION_SOURCE_ENV_VARIABLE: RegionTelemetry;
     static REGION_SOURCE_FAILED_AUTODETECT: RegionTelemetry;
     static REGION_SOURCE_IMDS: RegionTelemetry;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RegionTelemetry;
     static values(): RegionTelemetry[];
     private constructor(arg2: number)

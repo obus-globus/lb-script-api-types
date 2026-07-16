@@ -12,7 +12,7 @@ export class TagParser<T extends unknown> extends Object {
     static FLATTENED_CODEC: Codec<CompoundTag>;
     static LENIENT_CODEC: Codec<CompoundTag>;
     static NAME_VALUE_SEPARATOR: string;
-    static create(paramops: DynamicOps<Object>): TagParser<Object>;
+    static create<T extends unknown>(paramops: DynamicOps<T>): TagParser<T>;
     static parseCompoundAsArgument(paramreader: StringReader): CompoundTag;
     static parseCompoundFully(paraminput: string): CompoundTag;
     private constructor(ops: DynamicOps<T>, grammar: Grammar<T>)

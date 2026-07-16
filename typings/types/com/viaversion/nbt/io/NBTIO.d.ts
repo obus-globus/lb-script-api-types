@@ -7,8 +7,8 @@ import type { DataOutput } from '../../../../java/io/DataOutput.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class NBTIO extends Object {
-    static readTag(paramarg0: DataInput, paramarg1: TagLimiter, paramarg2: boolean, paramarg3: Class<Tag>): Tag | null;
-    static reader(paramarg0: Class<Tag>): TagReader<Tag>;
+    static readTag<T extends Tag>(paramarg0: DataInput, paramarg1: TagLimiter, paramarg2: boolean, paramarg3: Class<T>): T;
+    static reader<T extends Tag>(paramarg0: Class<T>): TagReader<T>;
     static reader(): TagReader<Tag>;
     static writeTag(paramarg0: DataOutput, paramarg1: Tag, paramarg2: boolean): void;
     static writer(): TagWriter;

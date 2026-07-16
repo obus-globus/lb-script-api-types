@@ -1,7 +1,7 @@
 import type { ValueConverter } from '../../../../io/netty/handler/codec/ValueConverter.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class UnsupportedValueConverter<V extends unknown> extends Object implements ValueConverter<V> {
-    static instance(): UnsupportedValueConverter<Object>;
+    static instance<V extends unknown>(): UnsupportedValueConverter<V>;
     private constructor()
     convertBoolean(arg0: boolean): V;
     convertByte(arg0: number): V;

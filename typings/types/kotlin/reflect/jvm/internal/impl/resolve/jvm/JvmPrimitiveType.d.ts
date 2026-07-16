@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { PrimitiveType } from '../../../../../../../kotlin/reflect/jvm/internal/impl/builtins/PrimitiveType.d.ts'
 import type { FqName } from '../../../../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
@@ -14,7 +13,7 @@ export class JvmPrimitiveType extends Enum<JvmPrimitiveType> {
     static SHORT: JvmPrimitiveType;
     static get(paramarg0: string): JvmPrimitiveType;
     static get(paramarg0: PrimitiveType): JvmPrimitiveType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): JvmPrimitiveType;
     static values(): JvmPrimitiveType[];
     private constructor(arg2: PrimitiveType, arg3: string, arg4: string, arg5: string)

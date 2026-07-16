@@ -1,5 +1,4 @@
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class MessageFormat$FormatType extends Enum<MessageFormat$FormatType> {
     static BASIC_ISO_DATE: MessageFormat$FormatType;
@@ -25,7 +24,7 @@ export class MessageFormat$FormatType extends Enum<MessageFormat$FormatType> {
     static NUMBER: MessageFormat$FormatType;
     static RFC_1123_DATE_TIME: MessageFormat$FormatType;
     static TIME: MessageFormat$FormatType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MessageFormat$FormatType;
     static values(): MessageFormat$FormatType[];
     private constructor()

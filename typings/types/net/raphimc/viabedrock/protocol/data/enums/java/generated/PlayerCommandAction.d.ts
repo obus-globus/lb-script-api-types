@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class PlayerCommandAction extends Enum<PlayerCommandAction> {
     static OPEN_INVENTORY: PlayerCommandAction;
@@ -9,7 +8,7 @@ export class PlayerCommandAction extends Enum<PlayerCommandAction> {
     static STOP_RIDING_JUMP: PlayerCommandAction;
     static STOP_SLEEPING: PlayerCommandAction;
     static STOP_SPRINTING: PlayerCommandAction;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PlayerCommandAction;
     static values(): PlayerCommandAction[];
     private constructor()

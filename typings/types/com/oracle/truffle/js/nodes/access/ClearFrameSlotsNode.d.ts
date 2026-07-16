@@ -6,8 +6,8 @@ import type { ScopeFrameNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ClearFrameSlotsNode extends JavaScriptNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramscopeFrameNode: ScopeFrameNode, paramslots: number[]): JavaScriptNode;
     static createRange(paramscopeFrameNode: ScopeFrameNode, paramstart: number, paramend: number): JavaScriptNode;
     static findBlockScopeNode(paramnode: Node): Node;

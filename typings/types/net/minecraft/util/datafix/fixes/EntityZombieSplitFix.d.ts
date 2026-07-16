@@ -9,7 +9,7 @@ import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { EntityRenameFix } from '../../../../../net/minecraft/util/datafix/fixes/EntityRenameFix.d.ts'
 export class EntityZombieSplitFix extends EntityRenameFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     constructor(outputSchema: Schema)
     // private zombieVillagerType: () => Type<Object>;
     // private changeSchemaToZombieVillager(entity: Typed<Object>, profession: number): Typed<Object>;

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { TestScreenshotComparisonAlgorithm } from '../../../../../../../net/fabricmc/fabric/api/client/gametest/v1/screenshot/TestScreenshotComparisonAlgorithm.d.ts'
 import type { TestScreenshotComparisonAlgorithm$RawImage } from '../../../../../../../net/fabricmc/fabric/api/client/gametest/v1/screenshot/TestScreenshotComparisonAlgorithm$RawImage.d.ts'
@@ -9,7 +8,7 @@ export class TestScreenshotComparisonAlgorithms$Exact extends Enum<TestScreensho
     static defaultAlgorithm(): TestScreenshotComparisonAlgorithm;
     static exact(): TestScreenshotComparisonAlgorithm;
     static meanSquaredDifference(paramarg0: number): TestScreenshotComparisonAlgorithm;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TestScreenshotComparisonAlgorithms$Exact;
     static values(): TestScreenshotComparisonAlgorithms$Exact[];
     private constructor()

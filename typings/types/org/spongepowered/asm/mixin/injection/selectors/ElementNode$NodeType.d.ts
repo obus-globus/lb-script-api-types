@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ElementNode$NodeType extends Enum<ElementNode$NodeType> {
     static FIELD: ElementNode$NodeType;
@@ -8,7 +7,7 @@ export class ElementNode$NodeType extends Enum<ElementNode$NodeType> {
     static METHOD: ElementNode$NodeType;
     static METHOD_INSN: ElementNode$NodeType;
     static UNDEFINED: ElementNode$NodeType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ElementNode$NodeType;
     static values(): ElementNode$NodeType[];
     private constructor(arg2: boolean, arg3: boolean, arg4: boolean)

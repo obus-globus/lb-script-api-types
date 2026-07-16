@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class LayoutType extends Enum<LayoutType> {
     static BATCH: LayoutType;
@@ -12,7 +11,7 @@ export class LayoutType extends Enum<LayoutType> {
     static fromValue(paramarg0: string): LayoutType;
     static fromValue(paramarg0: string): LayoutType[];
     static toString(paramarg0: LayoutType[]): string;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LayoutType;
     static values(): LayoutType[];
     private constructor(arg2: string)

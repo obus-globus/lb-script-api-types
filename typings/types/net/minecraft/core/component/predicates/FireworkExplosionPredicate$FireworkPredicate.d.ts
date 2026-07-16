@@ -7,8 +7,8 @@ import type { FireworkExplosion } from '../../../../../net/minecraft/world/item/
 import type { FireworkExplosion$Shape } from '../../../../../net/minecraft/world/item/component/FireworkExplosion$Shape.d.ts'
 export class FireworkExplosionPredicate$FireworkPredicate extends Record implements Predicate<FireworkExplosion> {
     static CODEC: Codec<FireworkExplosionPredicate$FireworkPredicate>;
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(shape: Optional<FireworkExplosion$Shape>, twinkle: Optional<boolean>, trail: Optional<boolean>)
     // private shape: Optional<FireworkExplosion$Shape>;
     // private trail: Optional<boolean>;

@@ -88,7 +88,7 @@ export abstract class AbstractBoat extends VehicleEntity implements IAbstractBoa
     static TOTAL_AIR_SUPPLY: number;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static angularFriction(paramentity: Entity | null): number;
+    static angularFriction<E extends Entity & Leashable>(paramentity: E): number;
     static canVehicleCollide(paramvehicle: Entity, paramentity: Entity): boolean;
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
@@ -100,7 +100,7 @@ export abstract class AbstractBoat extends VehicleEntity implements IAbstractBoa
     static leashableInArea(paramlevel: Level, parampos: Vec3, paramtest: (param0: Leashable) => boolean): Leashable[];
     static leashableLeashedTo(paramentity: Entity): Leashable[];
     static setViewScale(paramviewScale: number): void;
-    static tickLeash(paramlevel: ServerLevel, paramentity: Entity | null): void;
+    static tickLeash<E extends Entity & Leashable>(paramlevel: ServerLevel, paramentity: E): void;
     constructor(type: EntityType<AbstractBoat>, level: Level, dropItem: () => Item)
     // private bubbleAngle: number;
     // private bubbleAngleO: number;

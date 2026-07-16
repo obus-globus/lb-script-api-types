@@ -24,11 +24,11 @@ export class EventListenerKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt#L151 | src/main/kotlin/net/ccbluex/liquidbounce/event/EventListener.kt:151}
      */
-    static computedOn(eventListener: EventListener, initialValue: Object | null, priority: number, accumulator: (param0: Object, param1: Object) => Object | null): ReadWriteProperty<EventListener, Object>;
-    static handler(eventListener: EventListener, eventClass: Class<Event>, priority: number, handler: (param0: Event | null) => void): EventHook<Event>;
-    static handler(eventListener: EventListener, priority: number, handler: (param0: Event | null) => void): EventHook<Event>;
-    static newEventHook(eventListener: EventListener, priority: number, handler: (param0: Event | null) => void): EventHook<Event>;
-    static once(eventListener: EventListener, priority: number, handler: (param0: Object) => void): EventHook<Event>;
-    static repeated(eventListener: EventListener, times: number, priority: number, handler: (param0: Object) => void): EventHook<Event>;
-    static until(eventListener: EventListener, priority: number, handler: (param0: Object) => boolean): EventHook<Event>;
+    static computedOn<V extends unknown, E extends Event>(self: EventListener, initialValue: V, priority: number, accumulator: (param0: E, param1: V) => V): ReadWriteProperty<EventListener, V>;
+    static handler<T extends Event>(self: EventListener, eventClass: Class<T>, priority: number, handler: (param0: T) => void): EventHook<T>;
+    static handler<T extends Event>(self: EventListener, priority: number, handler: (param0: T) => void): EventHook<T>;
+    static newEventHook<E extends Event>(self: EventListener, priority: number, handler: (param0: E) => void): EventHook<E>;
+    static once<T extends Event>(self: EventListener, priority: number, handler: (param0: T) => void): EventHook<T>;
+    static repeated<T extends Event>(self: EventListener, times: number, priority: number, handler: (param0: T) => void): EventHook<T>;
+    static until<T extends Event>(self: EventListener, priority: number, handler: (param0: T) => boolean): EventHook<T>;
 }

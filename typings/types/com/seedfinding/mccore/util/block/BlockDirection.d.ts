@@ -3,7 +3,6 @@ import type { BlockRotation } from '../../../../../com/seedfinding/mccore/util/b
 import type { Vec3i } from '../../../../../com/seedfinding/mccore/util/math/Vec3i.d.ts'
 import type { JRand } from '../../../../../com/seedfinding/mcseed/rand/JRand.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class BlockDirection extends Enum<BlockDirection> {
     static DOWN: BlockDirection;
@@ -19,7 +18,7 @@ export class BlockDirection extends Enum<BlockDirection> {
     static getShuffled(paramarg0: JRand): BlockDirection[];
     static random2D(paramarg0: JRand): BlockDirection;
     static randomHorizontal(paramarg0: JRand): BlockDirection;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BlockDirection;
     static values(): BlockDirection[];
     private constructor(arg2: BlockDirection$Axis, arg3: Vec3i)

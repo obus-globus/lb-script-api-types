@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class TimeZoneFormat$Style extends Enum<TimeZoneFormat$Style> {
     static EXEMPLAR_LOCATION: TimeZoneFormat$Style;
@@ -22,7 +21,7 @@ export class TimeZoneFormat$Style extends Enum<TimeZoneFormat$Style> {
     static SPECIFIC_SHORT: TimeZoneFormat$Style;
     static ZONE_ID: TimeZoneFormat$Style;
     static ZONE_ID_SHORT: TimeZoneFormat$Style;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): TimeZoneFormat$Style;
     static values(): TimeZoneFormat$Style[];
     private constructor(flag: number)

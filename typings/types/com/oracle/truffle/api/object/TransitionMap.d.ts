@@ -4,7 +4,7 @@ import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class TransitionMap<K extends unknown, V extends unknown> extends Object {
-    static create(): TransitionMap<Object, Object>;
+    static create<K extends unknown, V extends unknown>(): TransitionMap<K, V>;
     constructor()
     // private queue: ReferenceQueue<V>;
     containsKey(key: Object): boolean;

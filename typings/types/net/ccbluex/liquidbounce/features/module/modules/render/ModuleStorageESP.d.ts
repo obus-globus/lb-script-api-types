@@ -20,8 +20,8 @@ import type { VoxelShape } from '../../../../../../../net/minecraft/world/phys/s
  */
 export class ModuleStorageESP extends ClientModule {
     static INSTANCE: ModuleStorageESP;
-    static categorize(paramarg0: Entity): ModuleStorageESP$ChestType;
-    static categorize(paramarg0: BlockEntity): ModuleStorageESP$ChestType;
+    static categorize(self: Entity | null): ModuleStorageESP$ChestType | null;
+    static categorize(self: BlockEntity | null): ModuleStorageESP$ChestType | null;
     // private allTypes: ModuleStorageESP$ChestType[];
     // private distanceFade: DistanceFadeUniformValueGroup;
     // private mergeAdjacent: boolean;

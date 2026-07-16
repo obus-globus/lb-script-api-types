@@ -9,11 +9,11 @@ export class ChatHudExtensionKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ChatHudExtension.kt#L51 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ChatHudExtension.kt:51}
      */
-    static addMessage(chatComponent: ChatComponent, message: Component, id: string, count: number): void;
+    static addMessage(self: ChatComponent, message: Component, id: string | null, count: number): void;
     /**
      * Removes all messages with the given ID.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ChatHudExtension.kt#L63 | src/main/kotlin/net/ccbluex/liquidbounce/utils/client/ChatHudExtension.kt:63}
      */
-    static removeMessage(chatComponent: ChatComponent, id: string): void;
+    static removeMessage(self: ChatComponent, id: string | null): void;
 }

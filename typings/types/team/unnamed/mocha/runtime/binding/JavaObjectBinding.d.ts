@@ -8,7 +8,7 @@ import type { ObjectValue$DoubleFunction2 } from '../../../../../team/unnamed/mo
 import type { ObjectValue$DoubleFunction3 } from '../../../../../team/unnamed/mocha/runtime/value/ObjectValue$DoubleFunction3.d.ts'
 import type { Value } from '../../../../../team/unnamed/mocha/runtime/value/Value.d.ts'
 export class JavaObjectBinding extends Object implements ObjectValue {
-    static of(paramarg0: Class<Object>, paramarg1: Object | null, paramarg2: ObjectValue): JavaObjectBinding;
+    static of<T extends unknown>(paramarg0: Class<T>, paramarg1: T, paramarg2: ObjectValue): JavaObjectBinding;
     constructor()
     constructor(arg0: string[])
     // private entries: { [key: string]: Object };

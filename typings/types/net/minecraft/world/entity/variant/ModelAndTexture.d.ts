@@ -7,8 +7,8 @@ import type { RegistryFriendlyByteBuf } from '../../../../../net/minecraft/netwo
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class ModelAndTexture<T extends unknown> extends Record {
-    static codec(parammodelCodec: Codec<Object>, paramdefaultModel: Object | null): MapCodec<ModelAndTexture<Object>>;
-    static streamCodec(parammodelCodec: StreamCodec<Object, Object>): StreamCodec<RegistryFriendlyByteBuf, ModelAndTexture<Object>>;
+    static codec<T extends unknown>(parammodelCodec: Codec<T>, paramdefaultModel: T): MapCodec<ModelAndTexture<T>>;
+    static streamCodec<T extends unknown>(parammodelCodec: StreamCodec<Object, T>): StreamCodec<RegistryFriendlyByteBuf, ModelAndTexture<T>>;
     constructor(model: T, asset: ClientAsset$ResourceTexture)
     constructor(model: T, assetId: Identifier)
     // private asset: ClientAsset$ResourceTexture;

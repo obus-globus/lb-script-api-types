@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class SVGSamplerOutput$GraphColorMap extends Enum<SVGSamplerOutput$GraphColorMap> {
     static AQUA: SVGSamplerOutput$GraphColorMap;
@@ -11,7 +10,7 @@ export class SVGSamplerOutput$GraphColorMap extends Enum<SVGSamplerOutput$GraphC
     static PURPLE: SVGSamplerOutput$GraphColorMap;
     static RED: SVGSamplerOutput$GraphColorMap;
     static YELLOW: SVGSamplerOutput$GraphColorMap;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SVGSamplerOutput$GraphColorMap;
     static values(): SVGSamplerOutput$GraphColorMap[];
     private constructor()

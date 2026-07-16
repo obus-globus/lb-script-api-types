@@ -6,7 +6,7 @@ import type { ClassLoader } from '../../../../../java/lang/ClassLoader.d.ts'
 import type { InvocationHandler } from '../../../../../java/lang/reflect/InvocationHandler.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class EventListenerSupport<L extends unknown> extends Object implements Serializable {
-    static create(paramarg0: Class<Object>): EventListenerSupport<Object>;
+    static create<T extends unknown>(paramarg0: Class<T>): EventListenerSupport<T>;
     constructor(arg0: Class<L>)
     constructor(arg0: Class<L>, arg1: ClassLoader)
     readonly listeners: L[];

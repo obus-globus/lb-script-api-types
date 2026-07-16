@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { AbstractInsnNode } from '../../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 export class SyntheticBridgeException$Problem extends Enum<SyntheticBridgeException$Problem> {
@@ -9,7 +8,7 @@ export class SyntheticBridgeException$Problem extends Enum<SyntheticBridgeExcept
     static BAD_INVOKE_NAME: SyntheticBridgeException$Problem;
     static BAD_LENGTH: SyntheticBridgeException$Problem;
     static BAD_LOAD: SyntheticBridgeException$Problem;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SyntheticBridgeException$Problem;
     static values(): SyntheticBridgeException$Problem[];
     private constructor(arg2: string)

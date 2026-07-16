@@ -6,19 +6,19 @@ import type { PrimitiveKind } from '../../../kotlinx/serialization/descriptors/P
 import type { SerialDescriptor } from '../../../kotlinx/serialization/descriptors/SerialDescriptor.d.ts'
 import type { SerialKind } from '../../../kotlinx/serialization/descriptors/SerialKind.d.ts'
 export class SerialDescriptorsKt extends Object {
-    static PrimitiveSerialDescriptor(paramarg0: string, paramarg1: PrimitiveKind): SerialDescriptor;
-    static SerialDescriptor(paramarg0: string, paramarg1: SerialDescriptor): SerialDescriptor;
-    static buildClassSerialDescriptor(paramarg0: string, paramarg1: SerialDescriptor[], paramarg2: (param0: Object) => void): SerialDescriptor;
-    static buildSerialDescriptor(paramarg0: string, paramarg1: SerialKind, paramarg2: SerialDescriptor[], paramarg3: (param0: Object) => void): SerialDescriptor;
-    static element(paramarg0: ClassSerialDescriptorBuilder, paramarg1: string, paramarg2: Annotation[], paramarg3: boolean): void;
+    static PrimitiveSerialDescriptor(serialName: string, kind: PrimitiveKind): SerialDescriptor;
+    static SerialDescriptor(serialName: string, original: SerialDescriptor): SerialDescriptor;
+    static buildClassSerialDescriptor(serialName: string, typeParameters: SerialDescriptor[], builderAction: (param0: ClassSerialDescriptorBuilder) => void): SerialDescriptor;
+    static buildSerialDescriptor(serialName: string, kind: SerialKind, typeParameters: SerialDescriptor[], builder: (param0: ClassSerialDescriptorBuilder) => void): SerialDescriptor;
+    static element(self: ClassSerialDescriptorBuilder, elementName: string, annotations: Annotation[], isOptional: boolean): void;
     static getNonNullOriginal(paramarg0: SerialDescriptor): SerialDescriptor;
     static getNullable(paramarg0: SerialDescriptor): SerialDescriptor;
     static listSerialDescriptor(): SerialDescriptor;
-    static listSerialDescriptor(paramarg0: SerialDescriptor): SerialDescriptor;
+    static listSerialDescriptor(elementDescriptor: SerialDescriptor): SerialDescriptor;
     static mapSerialDescriptor(): SerialDescriptor;
-    static mapSerialDescriptor(paramarg0: SerialDescriptor, paramarg1: SerialDescriptor): SerialDescriptor;
+    static mapSerialDescriptor(keyDescriptor: SerialDescriptor, valueDescriptor: SerialDescriptor): SerialDescriptor;
     static serialDescriptor(): SerialDescriptor;
-    static serialDescriptor(paramarg0: KType): SerialDescriptor;
+    static serialDescriptor(type: KType): SerialDescriptor;
     static setSerialDescriptor(): SerialDescriptor;
-    static setSerialDescriptor(paramarg0: SerialDescriptor): SerialDescriptor;
+    static setSerialDescriptor(elementDescriptor: SerialDescriptor): SerialDescriptor;
 }

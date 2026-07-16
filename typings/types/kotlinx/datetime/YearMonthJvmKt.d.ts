@@ -4,7 +4,7 @@ import type { YearMonth } from '../../kotlinx/datetime/YearMonth.d.ts'
 import type { YearMonth$Companion } from '../../kotlinx/datetime/YearMonth$Companion.d.ts'
 import type { DateTimeFormat } from '../../kotlinx/datetime/format/DateTimeFormat.d.ts'
 export class YearMonthJvmKt extends Object {
-    static fromEpochMonths(paramarg0: YearMonth$Companion, paramarg1: number): YearMonth;
-    static parseOrNull(paramarg0: YearMonth$Companion, paramarg1: CharSequence, paramarg2: DateTimeFormat<YearMonth>): YearMonth;
-    static toEpochMonths(paramarg0: YearMonth): number;
+    static fromEpochMonths(self: YearMonth$Companion, months: number): YearMonth;
+    static parseOrNull(self: YearMonth$Companion, input: CharSequence, format: DateTimeFormat<YearMonth>): YearMonth | null;
+    static toEpochMonths(self: YearMonth): number;
 }

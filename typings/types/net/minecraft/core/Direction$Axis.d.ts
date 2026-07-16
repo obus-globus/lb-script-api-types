@@ -18,16 +18,16 @@ export class Direction$Axis extends Enum<Direction$Axis> implements Predicate<Di
     static Y: Direction$Axis;
     static Z: Direction$Axis;
     static byName(paramname: string): Direction$Axis;
-    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
-    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
-    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
+    static createNameLookup<T extends StringRepresentable>(paramvalueArray: T[]): (param0: string) => T;
+    static createNameLookup<T extends unknown>(paramvalueArray: T[], paramconverter: (param0: T) => string): (param0: string) => T;
+    static fromEnum<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[]): StringRepresentable$EnumCodec<E>;
+    static fromEnumWithMapping<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<E>;
+    static fromValues<T extends StringRepresentable>(paramvalues: () => T[]): Codec<T>;
     static getRandom(paramrandom: RandomSource): Direction$Axis;
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
     static keys(paramvalues: StringRepresentable[]): Keyable;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Direction$Axis;
     static values(): Direction$Axis[];
     private constructor(name: string)

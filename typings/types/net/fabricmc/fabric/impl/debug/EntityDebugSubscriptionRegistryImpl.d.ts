@@ -8,6 +8,6 @@ import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.
 export class EntityDebugSubscriptionRegistryImpl extends Object {
     static ENTITY_DEBUG_SUBSCRIPTIONS: EntityDebugSubscriptionRegistryImpl$Entry[];
     static addDebugValues(paramarg0: Object, paramarg1: DebugValueSource$Registration): void;
-    static register(paramarg0: DebugSubscription<Object>, paramarg1: (param0: Entity) => boolean, paramarg2: (param0: Entity | null) => Object | null): void;
+    static register<T extends unknown, E extends Entity>(paramarg0: DebugSubscription<T>, paramarg1: (param0: Entity) => boolean, paramarg2: (param0: E) => T): void;
     constructor()
 }

@@ -1,17 +1,17 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Flow } from '../../../kotlinx/coroutines/flow/Flow.d.ts'
 export class FlowKt__ZipKt extends Object {
-    static combine(paramarg0: Flow<Object>[], paramarg1: (param0: Object, param1: Object) => Object): Flow<Object>;
-    static combine(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: (param0: Object, param1: Object, param2: Object) => Object): Flow<Object>;
-    static combine(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: (param0: Object, param1: Object, param2: Object, param3: Object) => Object): Flow<Object>;
-    static combine(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: Flow<Object>, paramarg4: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object) => Object): Flow<Object>;
-    static combine(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: Flow<Object>, paramarg4: Flow<Object>, paramarg5: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: Object) => Object): Flow<Object>;
-    static combineTransform(paramarg0: Flow<Object>[], paramarg1: (param0: Object, param1: Object, param2: Object) => Object): Flow<Object>;
-    static combineTransform(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: (param0: Object, param1: Object, param2: Object, param3: Object) => Object): Flow<Object>;
-    static combineTransform(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object) => Object): Flow<Object>;
-    static combineTransform(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: Flow<Object>, paramarg4: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: Object) => Object): Flow<Object>;
-    static combineTransform(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: Flow<Object>, paramarg3: Flow<Object>, paramarg4: Flow<Object>, paramarg5: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: Object, param6: Object) => Object): Flow<Object>;
-    static flowCombine(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: (param0: Object, param1: Object, param2: Object) => Object): Flow<Object>;
-    static flowCombineTransform(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: (param0: Object, param1: Object, param2: Object, param3: Object) => Object): Flow<Object>;
-    static zip(paramarg0: Flow<Object>, paramarg1: Flow<Object>, paramarg2: (param0: Object, param1: Object, param2: Object) => Object): Flow<Object>;
+    static combine<T extends unknown, R extends unknown>(paramarg0: Flow<T>[], paramarg1: (param0: Object, param1: Object) => Object): Flow<R>;
+    static combine<T1 extends unknown, T2 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: (param0: Object, param1: Object, param2: Object) => Object): Flow<R>;
+    static combine<T1 extends unknown, T2 extends unknown, T3 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: Flow<T3>, paramarg3: (param0: Object, param1: Object, param2: Object, param3: Object) => Object): Flow<R>;
+    static combine<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: Flow<T3>, paramarg3: Flow<T4>, paramarg4: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object) => Object): Flow<R>;
+    static combine<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: Flow<T3>, paramarg3: Flow<T4>, paramarg4: Flow<T5>, paramarg5: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: Object) => Object): Flow<R>;
+    static combineTransform<T extends unknown, R extends unknown>(paramarg0: Flow<T>[], paramarg1: (param0: Object, param1: Object, param2: Object) => Object): Flow<R>;
+    static combineTransform<T1 extends unknown, T2 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: (param0: Object, param1: Object, param2: Object, param3: Object) => Object): Flow<R>;
+    static combineTransform<T1 extends unknown, T2 extends unknown, T3 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: Flow<T3>, paramarg3: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object) => Object): Flow<R>;
+    static combineTransform<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: Flow<T3>, paramarg3: Flow<T4>, paramarg4: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: Object) => Object): Flow<R>;
+    static combineTransform<T1 extends unknown, T2 extends unknown, T3 extends unknown, T4 extends unknown, T5 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: Flow<T3>, paramarg3: Flow<T4>, paramarg4: Flow<T5>, paramarg5: (param0: Object, param1: Object, param2: Object, param3: Object, param4: Object, param5: Object, param6: Object) => Object): Flow<R>;
+    static flowCombine<T1 extends unknown, T2 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: (param0: Object, param1: Object, param2: Object) => Object): Flow<R>;
+    static flowCombineTransform<T1 extends unknown, T2 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: (param0: Object, param1: Object, param2: Object, param3: Object) => Object): Flow<R>;
+    static zip<T1 extends unknown, T2 extends unknown, R extends unknown>(paramarg0: Flow<T1>, paramarg1: Flow<T2>, paramarg2: (param0: Object, param1: Object, param2: Object) => Object): Flow<R>;
 }

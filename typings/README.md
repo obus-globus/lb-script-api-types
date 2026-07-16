@@ -60,14 +60,35 @@ live behind `.static`** (`Hand.static.MAIN_HAND`,
 against older typings but is `undefined` at runtime; these types model the
 real reachable surface (verified in a live client).
 
-Scripts run under GraalJS with full host access, so Java **getters are also
-readable as bare properties** at runtime: `entity.getHealth()` also works as
-`entity.health`, and `entity.isOnGround()` as `entity.onGround`. The types only
-carry the method form, so use `getHealth()` for typed access; the shorthand
-`.health` runs but is not typed (there are ~48k getters, and generating every
-alias would collide with same-named fields). Java collections and arrays likewise
+Scripts run under GraalJS with full host access (nashorn-compat), so **every
+Java getter is also readable as a bean property** at runtime and vice versa:
+`entity.getHealth()` also works as `entity.health`, and `entity.isOnGround()`
+as `entity.onGround`. The types carry ONE form per class (the other still runs,
+untyped), chosen by the class's origin:
+
+- **Java classes** are typed with the **getter method**: use
+  `mc.getConnection()`, `entity.getHealth()`. The bean-property shorthand
+  (`mc.connection`, `entity.health`) works at runtime but isn't typed - emitting
+  it broke generic-bound hierarchies (a bean property on `Entity`, a `<T extends
+  Entity>` bound, cascades into hundreds of constraint errors), so it's off
+  until a whole-hierarchy-safe approach lands (see `docs/backlog.md` A15).
+- **Kotlin classes** (all of `net.ccbluex.*`) are typed **property-first**:
+  use `client.eventManager`, not `client.getEventManager()`. The getter-method
+  form exists at runtime (nashorn-compat synthesizes it) but is intentionally
+  not typed - it would add a redundant alias for every Kotlin property
+  tree-wide for a legacy calling convention.
+
+Java collections and arrays likewise
 support JS indexing at runtime (`list[0]`, `list.length`, `for (const x of list)`)
 while the types expose the Java surface (`list.get(0)`, `list.size()`).
+
+**Don't shadow the ambient globals.** Every binding above (and the Yarn-era
+aliases `Vec3d`, `MathHelper`, `Hand`, `RotationAxis`) is already a global. A
+top-level `const Vec3d = Java.type("net.minecraft.world.phys.Vec3")` in a
+plain (non-module) script is a `TS2451: Cannot redeclare block-scoped
+variable` collision with the ambient declaration. Either use the global
+directly, pick a different local name, or add `export {}` to make the file a
+module so your top-level `const`s become file-scoped.
 
 Now `mc`, `Client`, `RotationUtil`, `Setting`, `Java.type`, and the rest are
 globally typed. Event handlers are typed per event, since `ScriptModule.on()` has

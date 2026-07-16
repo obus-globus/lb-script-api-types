@@ -2,8 +2,8 @@ import type { SuccessorsFunction } from '../../../../com/google/common/graph/Suc
 import type { Traverser$Traversal } from '../../../../com/google/common/graph/Traverser$Traversal.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Traverser<N extends unknown> extends Object {
-    static forGraph(paramgraph: SuccessorsFunction<Object>): Traverser<Object>;
-    static forTree(paramtree: SuccessorsFunction<Object>): Traverser<Object>;
+    static forGraph<N extends unknown>(paramgraph: SuccessorsFunction<N>): Traverser<N>;
+    static forTree<N extends unknown>(paramtree: SuccessorsFunction<N>): Traverser<N>;
     constructor(arg0: SuccessorsFunction<Object>, arg1: Traverser<N>)
     // private successorFunction: SuccessorsFunction<N>;
     breadthFirst(startNode: N): N[];

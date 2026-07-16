@@ -2,8 +2,8 @@ import type { Node } from '../../../../../../com/oracle/truffle/api/nodes/Node.d
 import type { InlinedBranchProfile } from '../../../../../../com/oracle/truffle/api/profiles/InlinedBranchProfile.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class SimpleArrayList<E extends unknown> extends Object {
-    static create(parammaxAssumedLength: number): SimpleArrayList<Object>;
-    static createEmpty(): SimpleArrayList<Object>;
+    static create<E extends unknown>(parammaxAssumedLength: number): SimpleArrayList<E>;
+    static createEmpty<E extends unknown>(): SimpleArrayList<E>;
     constructor()
     constructor(capacity: number)
     // private elements: Object[];

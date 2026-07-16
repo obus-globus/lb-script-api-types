@@ -7,7 +7,7 @@ import type { RegistryFriendlyByteBuf } from '../../../../net/minecraft/network/
 import type { StreamCodec } from '../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 export class TypedDataComponent<T extends unknown> extends Record {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, TypedDataComponent<Object>>;
-    static createUnchecked(paramtype: DataComponentType<Object>, paramvalue: Object): TypedDataComponent<Object>;
+    static createUnchecked<T extends unknown>(paramtype: DataComponentType<T>, paramvalue: Object): TypedDataComponent<T>;
     constructor(type: DataComponentType<T>, value: T)
     // private type: DataComponentType<T>;
     // private value: T;

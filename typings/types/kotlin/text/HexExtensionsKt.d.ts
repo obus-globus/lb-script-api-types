@@ -1,19 +1,19 @@
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { HexFormat } from '../../kotlin/text/HexFormat.d.ts'
 export class HexExtensionsKt extends Object {
-    static formattedStringLength(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): number;
+    static formattedStringLength(numberOfBytes: number, bytesPerLine: number, bytesPerGroup: number, groupSeparatorLength: number, byteSeparatorLength: number, bytePrefixLength: number, byteSuffixLength: number): number;
     static getBYTE_TO_LOWER_CASE_HEX_DIGITS(): number[];
-    static hexToByte(paramarg0: string, paramarg1: HexFormat): number;
-    static hexToByteArray(paramarg0: string, paramarg1: HexFormat): number[];
-    static hexToInt(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: HexFormat): number;
-    static hexToInt(paramarg0: string, paramarg1: HexFormat): number;
-    static hexToLong(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: HexFormat): number;
-    static hexToLong(paramarg0: string, paramarg1: HexFormat): number;
-    static hexToShort(paramarg0: string, paramarg1: HexFormat): number;
-    static parseHexToInt(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null, param1: Object | null) => Object | null): number;
-    static parseHexToLong(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: (param0: Object | null, param1: Object | null) => Object | null): number;
-    static parsedByteArrayMaxSize(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): number;
-    static toHexString(paramarg0: number, paramarg1: HexFormat): string;
-    static toHexString(paramarg0: number[], paramarg1: number, paramarg2: number, paramarg3: HexFormat): string;
-    static toHexString(paramarg0: number[], paramarg1: HexFormat): string;
+    static hexToByte(self: string, format: HexFormat): number;
+    static hexToByteArray(self: string, format: HexFormat): number[];
+    static hexToInt(self: string, startIndex: number, endIndex: number, format: HexFormat): number;
+    static hexToInt(self: string, format: HexFormat): number;
+    static hexToLong(self: string, startIndex: number, endIndex: number, format: HexFormat): number;
+    static hexToLong(self: string, format: HexFormat): number;
+    static hexToShort(self: string, format: HexFormat): number;
+    static parseHexToInt(self: string, startIndex: number, endIndex: number, onError: (param0: string, param1: number) => void): number;
+    static parseHexToLong(self: string, startIndex: number, endIndex: number, onError: (param0: string, param1: number) => void): number;
+    static parsedByteArrayMaxSize(stringLength: number, bytesPerLine: number, bytesPerGroup: number, groupSeparatorLength: number, byteSeparatorLength: number, bytePrefixLength: number, byteSuffixLength: number): number;
+    static toHexString(self: number, format: HexFormat): string;
+    static toHexString(self: number[], startIndex: number, endIndex: number, format: HexFormat): string;
+    static toHexString(self: number[], format: HexFormat): string;
 }

@@ -5,8 +5,8 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { RawSink } from '../../kotlinx/io/RawSink.d.ts'
 import type { RawSource } from '../../kotlinx/io/RawSource.d.ts'
 export class JvmCoreKt extends Object {
-    static asSink(paramarg0: OutputStream): RawSink;
-    static asSource(paramarg0: InputStream): RawSource;
+    static asSink(self: OutputStream): RawSink;
+    static asSource(self: InputStream): RawSource;
     static getSystemLineSeparator(): string;
     static isAndroidGetsocknameError(paramarg0: AssertionError): boolean;
 }

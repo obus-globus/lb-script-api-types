@@ -8,7 +8,7 @@ export class IOCase extends Enum<IOCase> {
     static forName(paramarg0: string): IOCase;
     static isCaseSensitive(paramarg0: IOCase): boolean;
     static value(paramarg0: IOCase, paramarg1: IOCase): IOCase;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): IOCase;
     static values(): IOCase[];
     private constructor(arg2: string, arg3: boolean)

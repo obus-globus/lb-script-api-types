@@ -8,7 +8,7 @@ import type { ArgumentCommandNode } from '../../../../com/mojang/brigadier/tree/
 import type { CompletableFuture } from '../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RequiredArgumentBuilder<S extends unknown, T extends unknown> extends ArgumentBuilder<S, RequiredArgumentBuilder<S, T>> {
-    static argument(paramarg0: string, paramarg1: ArgumentType<Object>): RequiredArgumentBuilder<Object, Object>;
+    static argument<S extends unknown, T extends unknown>(paramarg0: string, paramarg1: ArgumentType<T>): RequiredArgumentBuilder<S, T>;
     private constructor(arg0: string, arg1: ArgumentType<T>)
     readonly name: string;
     readonly suggestionsProvider: (param0: CommandContext<S>, param1: SuggestionsBuilder) => CompletableFuture<Suggestions>;

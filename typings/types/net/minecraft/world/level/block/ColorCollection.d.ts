@@ -12,13 +12,13 @@ import type { TriFunction } from '../../../../../org/apache/commons/lang3/functi
 export class ColorCollection<T extends unknown> extends Record {
     static NAMES: ColorCollection<string>;
     static VALUES: ColorCollection<DyeColor>;
-    static create(paramvalue: Object | null): ColorCollection<Object>;
+    static create<T extends unknown>(paramvalue: T): ColorCollection<T>;
     static prefixWithColor(paramids: ColorCollection<string>): ColorCollection<string>;
-    static registerBlockItems(paramids: ColorCollection<Object>, paramblocks: ColorCollection<Block>, paramitemFactory: (param0: Object | null, param1: Block, param2: DyeColor) => Item): ColorCollection<Item>;
-    static registerBlocks(paramids: ColorCollection<Object>, paramregister: (param0: Object | null, param1: (param0: BlockBehaviour$Properties) => Block, param2: BlockBehaviour$Properties) => Block, paramcolorBlockFactory: (param0: DyeColor, param1: BlockBehaviour$Properties) => Block | null, parampropertiesSupplier: (param0: DyeColor) => BlockBehaviour$Properties): ColorCollection<Block>;
-    static registerItems(paramids: ColorCollection<Object>, paramitemFactory: (param0: Object | null, param1: DyeColor) => Item): ColorCollection<Item>;
-    static zipApply(paramfirst: ColorCollection<Object>, paramsecond: ColorCollection<Object>, paramconsumer: (param0: Object | null, param1: Object | null) => void): void;
-    static zipMap(paramfirst: ColorCollection<Object>, paramsecond: ColorCollection<Object>, paramoperation: (param0: Object | null, param1: Object | null) => Object | null): ColorCollection<Object>;
+    static registerBlockItems<Id extends unknown>(paramids: ColorCollection<Id>, paramblocks: ColorCollection<Block>, paramitemFactory: (param0: Id, param1: Block, param2: DyeColor) => Item): ColorCollection<Item>;
+    static registerBlocks<B extends Block, Id extends unknown>(paramids: ColorCollection<Id>, paramregister: (param0: Id, param1: (param0: BlockBehaviour$Properties) => Block, param2: BlockBehaviour$Properties) => Block, paramcolorBlockFactory: (param0: DyeColor, param1: BlockBehaviour$Properties) => B, parampropertiesSupplier: (param0: DyeColor) => BlockBehaviour$Properties): ColorCollection<Block>;
+    static registerItems<Id extends unknown>(paramids: ColorCollection<Id>, paramitemFactory: (param0: Id, param1: DyeColor) => Item): ColorCollection<Item>;
+    static zipApply<T extends unknown, U extends unknown>(paramfirst: ColorCollection<T>, paramsecond: ColorCollection<U>, paramconsumer: (param0: T, param1: U) => void): void;
+    static zipMap<T extends unknown, U extends unknown, R extends unknown>(paramfirst: ColorCollection<T>, paramsecond: ColorCollection<U>, paramoperation: (param0: T, param1: U) => R): ColorCollection<R>;
     constructor(white: T, orange: T, magenta: T, lightBlue: T, yellow: T, lime: T, pink: T, gray: T, lightGray: T, cyan: T, purple: T, blue: T, brown: T, green: T, red: T, black: T)
     // private black: T;
     // private blue: T;

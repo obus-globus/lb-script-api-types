@@ -3,7 +3,7 @@ import type { ModeValueGroup } from '../../../../../net/ccbluex/liquidbounce/con
 import type { ItemStackListRenderer$BackgroundMode$Companion } from '../../../../../net/ccbluex/liquidbounce/render/gui/ItemStackListRenderer$BackgroundMode$Companion.d.ts'
 export class ItemStackListRenderer$BackgroundMode extends Mode {
     static Companion: ItemStackListRenderer$BackgroundMode$Companion;
-    static backgroundChoices$net_ccbluex_liquidbounce(paramarg0: ModeValueGroup<any>): ItemStackListRenderer$BackgroundMode[];
+    static backgroundChoices$net_ccbluex_liquidbounce(parent: ModeValueGroup<any>): ItemStackListRenderer$BackgroundMode[];
     protected constructor(name: string, parent: ModeValueGroup<any>)
     readonly parent: ModeValueGroup<any>;
 }

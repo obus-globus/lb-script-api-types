@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { ExtraFieldParsingBehavior } from '../../../../../../org/apache/commons/compress/archivers/zip/ExtraFieldParsingBehavior.d.ts'
 import type { ExtraFieldUtils$UnparseableExtraField } from '../../../../../../org/apache/commons/compress/archivers/zip/ExtraFieldUtils$UnparseableExtraField.d.ts'
@@ -11,7 +10,7 @@ export class ZipArchiveEntry$ExtraFieldParsingMode extends Enum<ZipArchiveEntry$
     static ONLY_PARSEABLE_LENIENT: ZipArchiveEntry$ExtraFieldParsingMode;
     static ONLY_PARSEABLE_STRICT: ZipArchiveEntry$ExtraFieldParsingMode;
     static STRICT_FOR_KNOW_EXTRA_FIELDS: ZipArchiveEntry$ExtraFieldParsingMode;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ZipArchiveEntry$ExtraFieldParsingMode;
     static values(): ZipArchiveEntry$ExtraFieldParsingMode[];
     constructor(arg2: ExtraFieldUtils$UnparseableExtraField, arg3: ExtraFieldParsingBehavior)

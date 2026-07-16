@@ -2,6 +2,7 @@ import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { StandardLevel } from '../../../../org/apache/logging/log4j/spi/StandardLevel.d.ts'
 export class Level extends Object implements Serializable, Comparable<Level> {
     static ALL: Level;
@@ -17,7 +18,7 @@ export class Level extends Object implements Serializable, Comparable<Level> {
     static getLevel(paramname: string): Level;
     static toLevel(paramlevel: string): Level;
     static toLevel(paramname: string, paramdefaultLevel: Level): Level;
-    static valueOf(paramenumType: Class<Object>, paramname: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramenumType: Class<T>, paramname: string): T;
     static valueOf(paramname: string): Level;
     static values(): Level[];
     private constructor(name: string, intLevel: number)

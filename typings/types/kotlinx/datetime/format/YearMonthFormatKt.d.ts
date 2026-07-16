@@ -5,7 +5,7 @@ import type { DateTimeFormatBuilder$WithYearMonth } from '../../../kotlinx/datet
 import type { Padding } from '../../../kotlinx/datetime/format/Padding.d.ts'
 export class YearMonthFormatKt extends Object {
     static getISO_YEAR_MONTH(): DateTimeFormat<YearMonth>;
-    static requireParsedField(paramarg0: Object | null, paramarg1: string): Object | null;
-    static yearOfEra(paramarg0: DateTimeFormatBuilder$WithYearMonth, paramarg1: Padding): void;
-    static yearOfEraTwoDigits(paramarg0: DateTimeFormatBuilder$WithYearMonth, paramarg1: number): void;
+    static requireParsedField<T extends unknown>(field: T | null, name: string): T;
+    static yearOfEra(self: DateTimeFormatBuilder$WithYearMonth, padding: Padding): void;
+    static yearOfEraTwoDigits(self: DateTimeFormatBuilder$WithYearMonth, baseYear: number): void;
 }

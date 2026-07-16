@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SharedTypes_Legacy_ContainerType extends Enum<SharedTypes_Legacy_ContainerType> {
     static ANVIL: SharedTypes_Legacy_ContainerType;
@@ -45,7 +44,7 @@ export class SharedTypes_Legacy_ContainerType extends Enum<SharedTypes_Legacy_Co
     static getByName(paramarg0: string, paramarg1: SharedTypes_Legacy_ContainerType): SharedTypes_Legacy_ContainerType;
     static getByValue(paramarg0: number): SharedTypes_Legacy_ContainerType;
     static getByValue(paramarg0: number, paramarg1: SharedTypes_Legacy_ContainerType): SharedTypes_Legacy_ContainerType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SharedTypes_Legacy_ContainerType;
     static values(): SharedTypes_Legacy_ContainerType[];
     private constructor(arg2: number)

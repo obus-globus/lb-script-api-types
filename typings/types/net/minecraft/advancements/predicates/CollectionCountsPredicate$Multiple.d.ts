@@ -5,9 +5,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CollectionCountsPredicate } from '../../../../net/minecraft/advancements/predicates/CollectionCountsPredicate.d.ts'
 import type { CollectionCountsPredicate$Entry } from '../../../../net/minecraft/advancements/predicates/CollectionCountsPredicate$Entry.d.ts'
 export class CollectionCountsPredicate$Multiple<T extends unknown, P extends Predicate<T>> extends Record implements CollectionCountsPredicate<T, P> {
-    static codec(paramelementCodec: Codec<Object>): Codec<CollectionCountsPredicate<Object, any>>;
-    static of(parampredicates: CollectionCountsPredicate$Entry<Object, any>[]): CollectionCountsPredicate<Object, any>;
-    static of(...parampredicates: CollectionCountsPredicate$Entry<Object, any>[]): CollectionCountsPredicate<Object, any>;
+    static codec<T extends unknown, P extends Predicate<T>>(paramelementCodec: Codec<P>): Codec<CollectionCountsPredicate<T, P>>;
+    static of<T extends unknown, P extends Predicate<T>>(parampredicates: CollectionCountsPredicate$Entry<T, P>[]): CollectionCountsPredicate<T, P>;
+    static of<T extends unknown, P extends Predicate<T>>(...parampredicates: CollectionCountsPredicate$Entry<T, P>[]): CollectionCountsPredicate<T, P>;
     constructor(entries: CollectionCountsPredicate$Entry<T, P>[])
     // private entries: CollectionCountsPredicate$Entry<T, P>[];
     entries(): CollectionCountsPredicate$Entry<T, P>[];

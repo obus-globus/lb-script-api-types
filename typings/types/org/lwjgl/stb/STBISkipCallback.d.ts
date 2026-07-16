@@ -14,8 +14,8 @@ export abstract class STBISkipCallback extends Callback implements STBISkipCallb
     static create(paramarg0: (param0: number, param1: number) => void): STBISkipCallback;
     static createSafe(paramarg0: number): STBISkipCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor()
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;

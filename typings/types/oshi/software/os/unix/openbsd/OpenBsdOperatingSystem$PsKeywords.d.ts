@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class OpenBsdOperatingSystem$PsKeywords extends Enum<OpenBsdOperatingSystem$PsKeywords> {
     static ARGS: OpenBsdOperatingSystem$PsKeywords;
@@ -20,7 +19,7 @@ export class OpenBsdOperatingSystem$PsKeywords extends Enum<OpenBsdOperatingSyst
     static UID: OpenBsdOperatingSystem$PsKeywords;
     static USER: OpenBsdOperatingSystem$PsKeywords;
     static VSZ: OpenBsdOperatingSystem$PsKeywords;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): OpenBsdOperatingSystem$PsKeywords;
     static values(): OpenBsdOperatingSystem$PsKeywords[];
     private constructor()

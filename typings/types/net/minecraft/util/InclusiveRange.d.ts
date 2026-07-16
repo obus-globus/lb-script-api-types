@@ -6,9 +6,9 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../java/lang/Comparable.d.ts'
 export class InclusiveRange<T extends Comparable<T>> extends Record {
     static INT: Codec<InclusiveRange<number>>;
-    static codec(paramelementCodec: Codec<Object>): Codec<InclusiveRange<any>>;
-    static codec(paramelementCodec: Codec<Object>, paramminAllowedInclusive: Object | null, parammaxAllowedInclusive: Object | null): Codec<InclusiveRange<any>>;
-    static create(paramminInclusive: Object | null, parammaxInclusive: Object | null): DataResult<InclusiveRange<any>>;
+    static codec<T extends Comparable<T>>(paramelementCodec: Codec<T>): Codec<InclusiveRange<T>>;
+    static codec<T extends Comparable<T>>(paramelementCodec: Codec<T>, paramminAllowedInclusive: T, parammaxAllowedInclusive: T): Codec<InclusiveRange<T>>;
+    static create<T extends Comparable<T>>(paramminInclusive: T, parammaxInclusive: T): DataResult<InclusiveRange<T>>;
     constructor(value: T)
     constructor(minInclusive: T, maxInclusive: T)
     // private maxInclusive: T;

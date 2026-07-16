@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class StandardSystemProperty extends Enum<StandardSystemProperty> {
     static FILE_SEPARATOR: StandardSystemProperty;
@@ -30,7 +29,7 @@ export class StandardSystemProperty extends Enum<StandardSystemProperty> {
     static USER_DIR: StandardSystemProperty;
     static USER_HOME: StandardSystemProperty;
     static USER_NAME: StandardSystemProperty;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): StandardSystemProperty;
     static values(): StandardSystemProperty[];
     private constructor(key: string)

@@ -3,7 +3,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Tag } from '../../../../net/minecraft/nbt/Tag.d.ts'
 import type { ParserBasedArgument } from '../../../../net/minecraft/util/parsing/packrat/commands/ParserBasedArgument.d.ts'
 export class NbtTagArgument extends ParserBasedArgument<Tag> {
-    static getNbtTag(paramcontext: CommandContext<Object>, paramname: string): Tag;
+    static getNbtTag<S extends unknown>(paramcontext: CommandContext<S>, paramname: string): Tag;
     static nbtTag(): NbtTagArgument;
     private constructor()
     getExamples(): string[];

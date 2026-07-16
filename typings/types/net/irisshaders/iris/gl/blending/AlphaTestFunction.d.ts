@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class AlphaTestFunction extends Enum<AlphaTestFunction> {
     static ALWAYS: AlphaTestFunction;
@@ -13,7 +12,7 @@ export class AlphaTestFunction extends Enum<AlphaTestFunction> {
     static NOTEQUAL: AlphaTestFunction;
     static fromGlId(paramarg0: number): Optional<AlphaTestFunction>;
     static fromString(paramarg0: string): Optional<AlphaTestFunction>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): AlphaTestFunction;
     static values(): AlphaTestFunction[];
     private constructor(arg2: number, arg3: string)

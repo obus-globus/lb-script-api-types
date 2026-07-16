@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class DyeColor extends Enum<DyeColor> {
     static BLACK: DyeColor;
@@ -23,7 +22,7 @@ export class DyeColor extends Enum<DyeColor> {
     static getByJavaId(paramarg0: number): DyeColor;
     static getByJavaId(paramarg0: number, paramarg1: DyeColor): DyeColor;
     static getClosestDyeColor(paramarg0: number): DyeColor;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DyeColor;
     static values(): DyeColor[];
     private constructor(arg2: number)

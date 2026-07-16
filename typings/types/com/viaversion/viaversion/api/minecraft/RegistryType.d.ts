@@ -1,7 +1,6 @@
 import type { RegistryKey } from '../../../../../com/viaversion/viaversion/api/minecraft/RegistryKey.d.ts'
 import type { Key } from '../../../../../com/viaversion/viaversion/util/Key.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class RegistryType extends Enum<RegistryType> implements RegistryKey {
     static BANNER_PATTERN: RegistryType;
@@ -15,7 +14,7 @@ export class RegistryType extends Enum<RegistryType> implements RegistryKey {
     static getByKey(paramarg0: string): RegistryType;
     static getValues(): RegistryType[];
     static of(paramarg0: string): RegistryKey;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RegistryType;
     static values(): RegistryType[];
     private constructor(arg2: string)

@@ -12,8 +12,8 @@ import type { BigInt } from '../../../../../../com/oracle/truffle/js/runtime/Big
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class JSAddNode extends JSBinaryNode implements Truncatable {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramleft: JavaScriptNode, paramright: JavaScriptNode): JavaScriptNode;
     static create(paramleft: JavaScriptNode, paramright: JavaScriptNode, paramtruncate: boolean): JavaScriptNode;
     static createUnoptimized(paramleft: JavaScriptNode, paramright: JavaScriptNode, paramtruncate: boolean): JavaScriptNode;

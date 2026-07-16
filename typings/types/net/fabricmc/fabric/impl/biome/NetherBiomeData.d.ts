@@ -7,6 +7,6 @@ import type { Climate$ParameterPoint } from '../../../../../net/minecraft/world/
 export class NetherBiomeData extends Object {
     static addNetherBiome(paramarg0: ResourceKey<Biome>, paramarg1: Climate$ParameterPoint): void;
     static canGenerateInNether(paramarg0: ResourceKey<Biome>): boolean;
-    static withModdedBiomeEntries(paramarg0: Climate$ParameterList<Object>, paramarg1: (param0: ResourceKey<Biome>) => Object | null): Climate$ParameterList<Object>;
+    static withModdedBiomeEntries<T extends unknown>(paramarg0: Climate$ParameterList<T>, paramarg1: (param0: ResourceKey<Biome>) => T): Climate$ParameterList<T>;
     private constructor()
 }

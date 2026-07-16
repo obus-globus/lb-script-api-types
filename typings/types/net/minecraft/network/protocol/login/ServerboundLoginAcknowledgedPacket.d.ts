@@ -9,7 +9,7 @@ import type { ServerLoginPacketListener } from '../../../../../net/minecraft/net
 export class ServerboundLoginAcknowledgedPacket extends Object implements Packet<ServerLoginPacketListener> {
     static INSTANCE: ServerboundLoginAcknowledgedPacket;
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerboundLoginAcknowledgedPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     private constructor()
     handle(listener: ServerLoginPacketListener): void;
     isSkippable(): boolean;

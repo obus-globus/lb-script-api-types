@@ -5,6 +5,7 @@ import type { Appender } from '../../../../../../../org/apache/logging/log4j/cor
 import type { Filter } from '../../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Layout } from '../../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { AbstractDatabaseAppender } from '../../../../../../../org/apache/logging/log4j/core/appender/db/AbstractDatabaseAppender.d.ts'
+import type { NoSqlAppender$Builder } from '../../../../../../../org/apache/logging/log4j/core/appender/nosql/NoSqlAppender$Builder.d.ts'
 import type { NoSqlDatabaseManager } from '../../../../../../../org/apache/logging/log4j/core/appender/nosql/NoSqlDatabaseManager.d.ts'
 import type { NoSqlProvider } from '../../../../../../../org/apache/logging/log4j/core/appender/nosql/NoSqlProvider.d.ts'
 import type { Property } from '../../../../../../../org/apache/logging/log4j/core/config/Property.d.ts'
@@ -15,7 +16,7 @@ export class NoSqlAppender extends AbstractDatabaseAppender<NoSqlDatabaseManager
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Appender[];
     static createAppender(paramname: string, paramignore: string, paramfilter: Filter, parambufferSize: string, paramprovider: NoSqlProvider<any>): NoSqlAppender;
-    static newBuilder(): Object | null;
+    static newBuilder<B extends NoSqlAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(arg0: string, arg1: Filter, arg2: Layout<Serializable>, arg3: boolean, arg4: Property[], arg5: NoSqlDatabaseManager<Object>, arg6: any)
     // private description: string;

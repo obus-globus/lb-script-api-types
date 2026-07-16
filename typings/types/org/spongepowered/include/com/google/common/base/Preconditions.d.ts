@@ -6,8 +6,8 @@ export class Preconditions extends Object {
     static checkArgument(paramarg0: boolean, paramarg1: string, paramarg2: Object): void;
     static checkElementIndex(paramarg0: number, paramarg1: number): number;
     static checkElementIndex(paramarg0: number, paramarg1: number, paramarg2: string): number;
-    static checkNotNull(paramarg0: Object | null): Object | null;
-    static checkNotNull(paramarg0: Object | null, paramarg1: Object): Object | null;
+    static checkNotNull<T extends unknown>(paramarg0: T): T;
+    static checkNotNull<T extends unknown>(paramarg0: T, paramarg1: Object): T;
     static checkPositionIndex(paramarg0: number, paramarg1: number): number;
     static checkPositionIndex(paramarg0: number, paramarg1: number, paramarg2: string): number;
     static checkPositionIndexes(paramarg0: number, paramarg1: number, paramarg2: number): void;

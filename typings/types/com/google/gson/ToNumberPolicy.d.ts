@@ -1,7 +1,6 @@
 import type { ToNumberStrategy } from '../../../com/google/gson/ToNumberStrategy.d.ts'
 import type { JsonReader } from '../../../com/google/gson/stream/JsonReader.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 import type { Number } from '../../../java/lang/Number.d.ts'
 export class ToNumberPolicy extends Enum<ToNumberPolicy> implements ToNumberStrategy {
@@ -9,7 +8,7 @@ export class ToNumberPolicy extends Enum<ToNumberPolicy> implements ToNumberStra
     static DOUBLE: ToNumberPolicy;
     static LAZILY_PARSED_NUMBER: ToNumberPolicy;
     static LONG_OR_DOUBLE: ToNumberPolicy;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ToNumberPolicy;
     static values(): ToNumberPolicy[];
     constructor(arg2: ToNumberPolicy)

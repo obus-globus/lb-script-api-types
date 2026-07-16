@@ -2,7 +2,6 @@ import type { MapCodec } from '../../../../../../../../com/viaversion/viaversion
 import type { TextComponent } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/TextComponent.d.ts'
 import type { TextCodecs_v1_20_3$TextComponentType } from '../../../../../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/v1_20_3/TextCodecs_v1_20_3$TextComponentType.d.ts'
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class TextCodecs_v1_21_2$ComponentType extends Enum<TextCodecs_v1_21_2$ComponentType> implements TextCodecs_v1_20_3$TextComponentType {
     static KEYBIND: TextCodecs_v1_21_2$ComponentType;
@@ -12,7 +11,7 @@ export class TextCodecs_v1_21_2$ComponentType extends Enum<TextCodecs_v1_21_2$Co
     static STRING: TextCodecs_v1_21_2$ComponentType;
     static TRANSLATION: TextCodecs_v1_21_2$ComponentType;
     static forComponent(paramarg0: TextComponent): TextCodecs_v1_21_2$ComponentType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TextCodecs_v1_21_2$ComponentType;
     static values(): TextCodecs_v1_21_2$ComponentType[];
     private constructor(arg2: string, arg3: MapCodec<TextComponent>)

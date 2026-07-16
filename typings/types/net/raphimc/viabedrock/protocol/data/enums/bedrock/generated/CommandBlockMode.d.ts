@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class CommandBlockMode extends Enum<CommandBlockMode> {
     static Chain: CommandBlockMode;
@@ -9,7 +8,7 @@ export class CommandBlockMode extends Enum<CommandBlockMode> {
     static getByName(paramarg0: string, paramarg1: CommandBlockMode): CommandBlockMode;
     static getByValue(paramarg0: number): CommandBlockMode;
     static getByValue(paramarg0: number, paramarg1: CommandBlockMode): CommandBlockMode;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CommandBlockMode;
     static values(): CommandBlockMode[];
     private constructor(arg2: number)

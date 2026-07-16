@@ -15,7 +15,7 @@ export class ComponentSerialization extends Object {
     static TRUSTED_CONTEXT_FREE_STREAM_CODEC: StreamCodec<ByteBuf, Component>;
     static TRUSTED_OPTIONAL_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Optional<Component>>;
     static TRUSTED_STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Component>;
-    static createLegacyComponentMatcher(paramtypes: ExtraCodecs$LateBoundIdMapper<string, MapCodec<Object>>, paramcodecGetter: (param0: Object | null) => MapCodec<Object>, paramtypeFieldName: string): MapCodec<Object>;
+    static createLegacyComponentMatcher<T extends unknown>(paramtypes: ExtraCodecs$LateBoundIdMapper<string, MapCodec<T>>, paramcodecGetter: (param0: T) => MapCodec<T>, paramtypeFieldName: string): MapCodec<T>;
     static flatRestrictedCodec(parammaxFlatSize: number): Codec<Component>;
     constructor()
 }

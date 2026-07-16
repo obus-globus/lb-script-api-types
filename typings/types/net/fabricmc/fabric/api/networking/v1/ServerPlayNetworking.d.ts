@@ -14,7 +14,7 @@ export class ServerPlayNetworking extends Object {
     static canSend(paramarg0: ServerPlayer, paramarg1: Identifier): boolean;
     static canSend(paramarg0: ServerGamePacketListenerImpl, paramarg1: CustomPacketPayload$Type<any>): boolean;
     static canSend(paramarg0: ServerGamePacketListenerImpl, paramarg1: Identifier): boolean;
-    static createClientboundPacket(paramarg0: CustomPacketPayload | null): Packet<ClientCommonPacketListener>;
+    static createClientboundPacket<T extends CustomPacketPayload>(paramarg0: T): Packet<ClientCommonPacketListener>;
     static getGlobalReceivers(): Identifier[];
     static getReceived(paramarg0: ServerPlayer): Identifier[];
     static getReceived(paramarg0: ServerGamePacketListenerImpl): Identifier[];
@@ -24,8 +24,8 @@ export class ServerPlayNetworking extends Object {
     static getSender(paramarg0: ServerGamePacketListenerImpl): PacketSender;
     static reconfigure(paramarg0: ServerPlayer): void;
     static reconfigure(paramarg0: ServerGamePacketListenerImpl): void;
-    static registerGlobalReceiver(paramarg0: CustomPacketPayload$Type<CustomPacketPayload>, paramarg1: (param0: CustomPacketPayload | null, param1: ServerPlayNetworking$Context) => void): boolean;
-    static registerReceiver(paramarg0: ServerGamePacketListenerImpl, paramarg1: CustomPacketPayload$Type<CustomPacketPayload>, paramarg2: (param0: CustomPacketPayload | null, param1: ServerPlayNetworking$Context) => void): boolean;
+    static registerGlobalReceiver<T extends CustomPacketPayload>(paramarg0: CustomPacketPayload$Type<T>, paramarg1: (param0: T, param1: ServerPlayNetworking$Context) => void): boolean;
+    static registerReceiver<T extends CustomPacketPayload>(paramarg0: ServerGamePacketListenerImpl, paramarg1: CustomPacketPayload$Type<T>, paramarg2: (param0: T, param1: ServerPlayNetworking$Context) => void): boolean;
     static send(paramarg0: ServerPlayer, paramarg1: CustomPacketPayload): void;
     static unregisterGlobalReceiver(paramarg0: Identifier): (param0: Object, param1: ServerPlayNetworking$Context) => void;
     static unregisterReceiver(paramarg0: ServerGamePacketListenerImpl, paramarg1: Identifier): (param0: Object, param1: ServerPlayNetworking$Context) => void;

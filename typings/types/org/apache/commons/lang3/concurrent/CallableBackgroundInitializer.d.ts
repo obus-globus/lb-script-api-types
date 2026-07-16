@@ -7,7 +7,7 @@ import type { BackgroundInitializer$Builder } from '../../../../../org/apache/co
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
 export class CallableBackgroundInitializer<T extends unknown> extends BackgroundInitializer<T> {
     static NUL: () => Object | null;
-    static builder(): BackgroundInitializer$Builder<BackgroundInitializer<Object>, Object>;
+    static builder<T extends unknown>(): BackgroundInitializer$Builder<BackgroundInitializer<T>, T>;
     constructor(arg0: () => T)
     constructor(arg0: () => T, arg1: ExecutorService)
     // private callable: () => T;

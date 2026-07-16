@@ -12,8 +12,8 @@ import type { TestInstanceFinder } from '../../../../net/minecraft/gametest/fram
 import type { TestPosFinder } from '../../../../net/minecraft/gametest/framework/TestPosFinder.d.ts'
 export class TestFinder$Builder extends Object {
     constructor()
-    // private structureBlockPosFinderWrapper: (param0: () => Stream<BlockPos>) => Object | null;
-    // private testFinderWrapper: (param0: () => Stream<Holder$Reference<GameTestInstance>>) => Object | null;
+    // private structureBlockPosFinderWrapper: (param0: () => Stream<BlockPos>) => () => Stream<BlockPos>;
+    // private testFinderWrapper: (param0: () => Stream<Holder$Reference<GameTestInstance>>) => () => Stream<Holder$Reference<GameTestInstance>>;
     allNearby(sourceStack: CommandContext<CommandSourceStack>): TestFinder;
     // private build(source: CommandSourceStack, testInstanceFinder: () => Stream<Holder$Reference<GameTestInstance>>, testPosFinder: () => Stream<BlockPos>): TestFinder;
     byResourceSelection(sourceStack: CommandContext<CommandSourceStack>, holders: Holder$Reference<GameTestInstance>[]): TestFinder;

@@ -5,8 +5,8 @@ import type { ResourceKey } from '../../../../../../../net/minecraft/resources/R
 import type { TagKey } from '../../../../../../../net/minecraft/tags/TagKey.d.ts'
 export class ClientTags extends Object {
     static getOrCreateLocalTag(paramarg0: TagKey<Object>): Identifier[];
-    static isInLocal(paramarg0: TagKey<Object>, paramarg1: ResourceKey<Object>): boolean;
-    static isInWithLocalFallback(paramarg0: TagKey<Object>, paramarg1: Object | null): boolean;
-    static isInWithLocalFallback(paramarg0: TagKey<Object>, paramarg1: Holder<Object>): boolean;
+    static isInLocal<T extends unknown>(paramarg0: TagKey<T>, paramarg1: ResourceKey<T>): boolean;
+    static isInWithLocalFallback<T extends unknown>(paramarg0: TagKey<T>, paramarg1: T): boolean;
+    static isInWithLocalFallback<T extends unknown>(paramarg0: TagKey<T>, paramarg1: Holder<T>): boolean;
     private constructor()
 }

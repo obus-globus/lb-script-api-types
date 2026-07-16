@@ -23,7 +23,7 @@ export class InteractionUtilsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L219 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:219}
      */
-    static interactBlockLikeVanilla(hitResult: BlockHitResult, swingMode: SwingMode, rotation: Rotation): StrictInteractionResult;
+    static interactBlockLikeVanilla(hitResult: BlockHitResult, swingMode: SwingMode, rotation: Rotation): StrictInteractionResult | null;
     /**
      * Simulated {@link net.minecraft.world.phys.HitResult.Type.ENTITY} branch in vanilla
      * No fallback {@link MultiPlayerGameMode.useItem} call
@@ -33,17 +33,17 @@ export class InteractionUtilsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L124 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:124}
      */
-    static interactEntity(entity: Entity, hitResult: EntityHitResult, hand: InteractionHand, swingMode: SwingMode): InteractionResult;
+    static interactEntity(entity: Entity, hitResult: EntityHitResult, hand: InteractionHand, swingMode: SwingMode): InteractionResult | null;
     /**
      * @returns Cannot interact -> null; else -> {@link MultiPlayerGameMode.interact} or {@link MultiPlayerGameMode.useItem} result
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt#L150 | src/main/kotlin/net/ccbluex/liquidbounce/utils/entity/InteractionUtils.kt:150}
      */
-    static interactEntityLikeVanilla(entity: Entity, hitResult: EntityHitResult, swingMode: SwingMode, rotation: Rotation): StrictInteractionResult;
-    static shouldSwingHand(interactionResult: InteractionResult): boolean;
+    static interactEntityLikeVanilla(entity: Entity, hitResult: EntityHitResult, swingMode: SwingMode, rotation: Rotation): StrictInteractionResult | null;
+    static shouldSwingHand(self: InteractionResult): boolean;
     static useItem(paramarg0: InteractionHand): InteractionResult;
     static useItem(paramarg0: InteractionHand, paramarg1: number): InteractionResult;
     static useItem(paramarg0: InteractionHand, paramarg1: number, paramarg2: number): InteractionResult;
     static useItem(hand: InteractionHand, yRot: number, xRot: number, swingMode: SwingMode): InteractionResult;
-    static useItemStrict(yRot: number, xRot: number, swingMode: SwingMode): StrictInteractionResult;
+    static useItemStrict(yRot: number, xRot: number, swingMode: SwingMode): StrictInteractionResult | null;
 }

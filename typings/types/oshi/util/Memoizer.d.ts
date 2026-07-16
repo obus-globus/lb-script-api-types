@@ -3,7 +3,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 export class Memoizer extends Object {
     static defaultExpiration(): number;
     static installedAppsExpiration(): number;
-    static memoize(paramarg0: () => Object | null): () => Object | null;
-    static memoize(paramarg0: () => Object | null, paramarg1: number): () => Object | null;
+    static memoize<T extends unknown>(paramarg0: () => T): () => T;
+    static memoize<T extends unknown>(paramarg0: () => T, paramarg1: number): () => T;
     private constructor()
 }

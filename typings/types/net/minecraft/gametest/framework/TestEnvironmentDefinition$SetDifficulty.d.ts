@@ -9,7 +9,7 @@ import type { Difficulty } from '../../../../net/minecraft/world/Difficulty.d.ts
 export class TestEnvironmentDefinition$SetDifficulty extends Record implements TestEnvironmentDefinition<Difficulty> {
     static CODEC: MapCodec<TestEnvironmentDefinition$SetDifficulty>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
-    static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;
+    static activate<T extends unknown>(paramenvironment: TestEnvironmentDefinition<T>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<T>;
     static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     constructor(difficulty: Difficulty)
     // private difficulty: Difficulty;

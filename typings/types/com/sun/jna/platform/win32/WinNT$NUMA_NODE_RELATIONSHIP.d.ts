@@ -16,8 +16,8 @@ export class WinNT$NUMA_NODE_RELATIONSHIP extends WinNT$SYSTEM_LOGICAL_PROCESSOR
     static createFieldsOrder(paramarg0: string[], ...paramarg1: string[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static fromPointer(paramarg0: Pointer): WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX;
-    static newInstance(paramarg0: Class<Structure>): Structure | null;
-    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
+    static newInstance<T extends Structure>(paramarg0: Class<T>): T;
+    static newInstance<T extends Structure>(paramarg0: Class<T>, paramarg1: Pointer): T;
     constructor()
     constructor(arg0: Pointer)
     groupCount: number;

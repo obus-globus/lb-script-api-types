@@ -6,8 +6,8 @@ import type { Either } from '../../../../../../../com/viaversion/viaversion/util
 import type { ByteBuf } from '../../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class SynchronizedRegistryEitherType extends EitherType<number, string> {
-    static read(paramarg0: ByteBuf, paramarg1: Type<Object>, paramarg2: Type<Object>): Either<Object, Object>;
-    static write(paramarg0: ByteBuf, paramarg1: Either<Object, Object>, paramarg2: Type<Object>, paramarg3: Type<Object>): void;
+    static read<X extends unknown, Y extends unknown>(paramarg0: ByteBuf, paramarg1: Type<X>, paramarg2: Type<Y>): Either<X, Y>;
+    static write<X extends unknown, Y extends unknown>(paramarg0: ByteBuf, paramarg1: Either<X, Y>, paramarg2: Type<X>, paramarg3: Type<Y>): void;
     constructor(arg0: RegistryKey)
     // private registryKey: RegistryKey;
     write(arg0: Ops, arg1: Either<number, string>): void;

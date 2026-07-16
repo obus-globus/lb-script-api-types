@@ -20,14 +20,14 @@ export class WeatheringCopper$WeatherState extends Enum<WeatheringCopper$Weather
     static STREAM_CODEC: StreamCodec<ByteBuf, WeatheringCopper$WeatherState>;
     static UNAFFECTED: WeatheringCopper$WeatherState;
     static WEATHERED: WeatheringCopper$WeatherState;
-    static createNameLookup(paramvalueArray: (StringRepresentable | null)[]): (param0: string) => StringRepresentable | null;
-    static createNameLookup(paramvalueArray: (Object | null)[], paramconverter: (param0: Object | null) => string): (param0: string) => Object | null;
+    static createNameLookup<T extends StringRepresentable>(paramvalueArray: T[]): (param0: string) => T;
+    static createNameLookup<T extends unknown>(paramvalueArray: T[], paramconverter: (param0: T) => string): (param0: string) => T;
     static forEach(paramconsumer: (param0: WeatheringCopper$WeatherState) => void): void;
-    static fromEnum(paramvalues: () => (Object | null)[]): StringRepresentable$EnumCodec<any>;
-    static fromEnumWithMapping(paramvalues: () => (Object | null)[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<any>;
-    static fromValues(paramvalues: () => (StringRepresentable | null)[]): Codec<StringRepresentable>;
+    static fromEnum<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[]): StringRepresentable$EnumCodec<E>;
+    static fromEnumWithMapping<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[], paramconverter: (param0: string) => string): StringRepresentable$EnumCodec<E>;
+    static fromValues<T extends StringRepresentable>(paramvalues: () => T[]): Codec<T>;
     static keys(paramvalues: StringRepresentable[]): Keyable;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WeatheringCopper$WeatherState;
     static values(): WeatheringCopper$WeatherState[];
     private constructor(name: string)

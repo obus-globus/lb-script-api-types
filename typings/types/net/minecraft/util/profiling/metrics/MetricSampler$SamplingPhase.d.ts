@@ -1,10 +1,9 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class MetricSampler$SamplingPhase extends Enum<MetricSampler$SamplingPhase> {
     static END_TICK: MetricSampler$SamplingPhase;
     static EXTRACT: MetricSampler$SamplingPhase;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): MetricSampler$SamplingPhase;
     static values(): MetricSampler$SamplingPhase[];
     private constructor()

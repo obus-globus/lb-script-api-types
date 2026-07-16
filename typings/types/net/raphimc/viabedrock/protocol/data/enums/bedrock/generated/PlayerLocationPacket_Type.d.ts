@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class PlayerLocationPacket_Type extends Enum<PlayerLocationPacket_Type> {
     static PLAYER_LOCATION_COORDINATES: PlayerLocationPacket_Type;
@@ -8,7 +7,7 @@ export class PlayerLocationPacket_Type extends Enum<PlayerLocationPacket_Type> {
     static getByName(paramarg0: string, paramarg1: PlayerLocationPacket_Type): PlayerLocationPacket_Type;
     static getByValue(paramarg0: number): PlayerLocationPacket_Type;
     static getByValue(paramarg0: number, paramarg1: PlayerLocationPacket_Type): PlayerLocationPacket_Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PlayerLocationPacket_Type;
     static values(): PlayerLocationPacket_Type[];
     private constructor(arg2: number)

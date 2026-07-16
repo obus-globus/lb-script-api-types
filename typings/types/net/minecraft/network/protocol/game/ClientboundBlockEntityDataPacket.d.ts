@@ -15,7 +15,7 @@ import type { BlockEntity } from '../../../../../net/minecraft/world/level/block
 import type { BlockEntityType } from '../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 export class ClientboundBlockEntityDataPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundBlockEntityDataPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static create(paramblockEntity: BlockEntity): ClientboundBlockEntityDataPacket;
     static create(paramblockEntity: BlockEntity, paramupdateTagSaver: (param0: BlockEntity, param1: RegistryAccess) => CompoundTag): ClientboundBlockEntityDataPacket;
     private constructor(pos: BlockPos, type: BlockEntityType<any>, tag: CompoundTag)

@@ -14,8 +14,8 @@ import type { DynamicOps } from '../../../../../com/mojang/serialization/Dynamic
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class List$ListType<A extends unknown> extends Type<A[]> {
-    static opticView(paramarg0: Type<Object>, paramarg1: RewriteResult<Object, Object>, paramarg2: TypedOptic<Object, Object, Object, Object>): RewriteResult<Object, Object>;
-    static unbox(paramarg0: App<Type$Mu, Object>): Type<Object>;
+    static opticView<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: Type<S>, paramarg1: RewriteResult<A, B>, paramarg2: TypedOptic<S, T, A, B>): RewriteResult<S, T>;
+    static unbox<A extends unknown>(paramarg0: App<Type$Mu, A>): Type<A>;
     constructor(arg0: Type<A>)
     readonly element: Type<A>;
     all(arg0: TypeRewriteRule, arg1: boolean, arg2: boolean): RewriteResult<A[], Object>;

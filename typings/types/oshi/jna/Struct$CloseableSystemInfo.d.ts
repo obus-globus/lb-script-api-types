@@ -14,8 +14,8 @@ export class Struct$CloseableSystemInfo extends WinBase$SYSTEM_INFO implements A
     static createFieldsOrder(...paramarg0: string[]): string[];
     static createFieldsOrder(paramarg0: string[], ...paramarg1: string[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Structure>): Structure | null;
-    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
+    static newInstance<T extends Structure>(paramarg0: Class<T>): T;
+    static newInstance<T extends Structure>(paramarg0: Class<T>, paramarg1: Pointer): T;
     constructor()
     close(): void;
 }

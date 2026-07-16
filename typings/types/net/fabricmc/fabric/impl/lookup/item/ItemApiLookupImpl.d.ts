@@ -8,7 +8,7 @@ import type { Item } from '../../../../../../net/minecraft/world/item/Item.d.ts'
 import type { ItemStack } from '../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 import type { ItemLike } from '../../../../../../net/minecraft/world/level/ItemLike.d.ts'
 export class ItemApiLookupImpl<A extends unknown, C extends unknown> extends Object implements ItemApiLookup<A, C> {
-    static get(paramarg0: Identifier, paramarg1: Class<Object>, paramarg2: Class<Object>): ItemApiLookup<Object, Object>;
+    static get<A extends unknown, C extends unknown>(paramarg0: Identifier, paramarg1: Class<A>, paramarg2: Class<C>): ItemApiLookup<A, C>;
     private constructor(arg0: Identifier, arg1: Class<Object>, arg2: Class<Object>)
     // private apiClass: Class<A>;
     // private contextClass: Class<C>;

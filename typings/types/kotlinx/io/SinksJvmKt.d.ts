@@ -5,8 +5,8 @@ import type { Charset } from '../../java/nio/charset/Charset.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Sink } from '../../kotlinx/io/Sink.d.ts'
 export class SinksJvmKt extends Object {
-    static asByteChannel(paramarg0: Sink): WritableByteChannel;
-    static asOutputStream(paramarg0: Sink): OutputStream;
-    static write(paramarg0: Sink, paramarg1: ByteBuffer): number;
-    static writeString(paramarg0: Sink, paramarg1: string, paramarg2: Charset, paramarg3: number, paramarg4: number): void;
+    static asByteChannel(self: Sink): WritableByteChannel;
+    static asOutputStream(self: Sink): OutputStream;
+    static write(self: Sink, source: ByteBuffer): number;
+    static writeString(self: Sink, string: string, charset: Charset, startIndex: number, endIndex: number): void;
 }

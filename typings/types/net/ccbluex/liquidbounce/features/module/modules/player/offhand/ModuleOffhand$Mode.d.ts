@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
 import type { Predicate } from '../../../../../../../../java/util/function/Predicate.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { ItemSlot } from '../../../../../../../../net/ccbluex/liquidbounce/utils/inventory/ItemSlot.d.ts'
 import type { Item } from '../../../../../../../../net/minecraft/world/item/Item.d.ts'
@@ -14,8 +13,8 @@ export class ModuleOffhand$Mode extends Enum<ModuleOffhand$Mode> {
     static STRENGTH: ModuleOffhand$Mode;
     static TOTEM: ModuleOffhand$Mode;
     static getEntries(): ModuleOffhand$Mode[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ModuleOffhand$Mode;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ModuleOffhand$Mode;
     static values(): ModuleOffhand$Mode[];
     private constructor(modeName: string, item: ((param0: ItemStack) => boolean) | null, fallBackItem: ((param0: ItemStack) => boolean) | null)
     private constructor(modeName: string, item: Item, fallBackItem: Item | null)

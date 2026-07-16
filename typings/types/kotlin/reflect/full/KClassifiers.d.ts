@@ -5,8 +5,8 @@ import type { KClassifier } from '../../../kotlin/reflect/KClassifier.d.ts'
 import type { KType } from '../../../kotlin/reflect/KType.d.ts'
 import type { KTypeProjection } from '../../../kotlin/reflect/KTypeProjection.d.ts'
 export class KClassifiers extends Object {
-    static checkArgumentsSize(paramarg0: number, paramarg1: number): void;
-    static createType(paramarg0: KClassifier, paramarg1: KTypeProjection[], paramarg2: boolean, paramarg3: Annotation[]): KType;
-    static createTypeImpl(paramarg0: KClassifier, paramarg1: KTypeProjection[], paramarg2: boolean, paramarg3: Annotation[], paramarg4: KClass<Object>): KType;
+    static checkArgumentsSize(parametersSize: number, argumentsSize: number): void;
+    static createType(self: KClassifier, arguments: KTypeProjection[], nullable: boolean, annotations: Annotation[]): KType;
+    static createTypeImpl(self: KClassifier, arguments: KTypeProjection[], nullable: boolean, annotations: Annotation[], mutableCollectionClass: KClass<Object> | null): KType;
     static getStarProjectedType(paramarg0: KClassifier): KType;
 }

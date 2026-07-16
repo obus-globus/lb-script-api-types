@@ -7,7 +7,7 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { PreparableReloadListener$SharedState } from '../../../../../net/minecraft/server/packs/resources/PreparableReloadListener$SharedState.d.ts'
 export class TagAliasLoader extends SimpleReloadListener<Map<ResourceKey<(Object | null)[]>, TagAliasLoader$Data[]>> {
     static ID: Identifier;
-    static applyToDynamicRegistries(paramarg0: LayeredRegistryAccess<Object>, paramarg1: Object | null): void;
+    static applyToDynamicRegistries<T extends unknown>(paramarg0: LayeredRegistryAccess<T>, paramarg1: T): void;
     constructor()
     apply(arg0: Map<ResourceKey<(Object | null)[]>, TagAliasLoader$Data[]>, arg1: PreparableReloadListener$SharedState): void;
     prepare(arg0: PreparableReloadListener$SharedState): Map<ResourceKey<(Object | null)[]>, TagAliasLoader$Data[]>;

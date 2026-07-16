@@ -6,7 +6,7 @@ import type { KTypeProjection } from '../../../../kotlin/reflect/KTypeProjection
 import type { KClassImpl } from '../../../../kotlin/reflect/jvm/internal/KClassImpl.d.ts'
 export class CachesKt extends Object {
     static clearCaches(): void;
-    static getOrCreateKType(paramarg0: Class<Object>, paramarg1: KTypeProjection[], paramarg2: boolean): KType;
-    static getOrCreateKotlinClass(paramarg0: Class<Object>): KClassImpl<Object>;
-    static getOrCreateKotlinPackage(paramarg0: Class<Object>): KDeclarationContainer;
+    static getOrCreateKType<T extends unknown>(jClass: Class<T>, arguments: KTypeProjection[], isMarkedNullable: boolean): KType;
+    static getOrCreateKotlinClass<T extends unknown>(jClass: Class<T>): KClassImpl<T>;
+    static getOrCreateKotlinPackage<T extends unknown>(jClass: Class<T>): KDeclarationContainer;
 }

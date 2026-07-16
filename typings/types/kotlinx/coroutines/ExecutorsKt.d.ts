@@ -4,7 +4,7 @@ import type { Object } from '../../java/lang/Object.d.ts'
 import type { CoroutineDispatcher } from '../../kotlinx/coroutines/CoroutineDispatcher.d.ts'
 import type { ExecutorCoroutineDispatcher } from '../../kotlinx/coroutines/ExecutorCoroutineDispatcher.d.ts'
 export class ExecutorsKt extends Object {
-    static asExecutor(paramarg0: CoroutineDispatcher): Executor;
-    static from(paramarg0: Executor): CoroutineDispatcher;
-    static from(paramarg0: ExecutorService): ExecutorCoroutineDispatcher;
+    static asExecutor(self: CoroutineDispatcher): Executor;
+    static from(self: Executor): CoroutineDispatcher;
+    static from(self: ExecutorService): ExecutorCoroutineDispatcher;
 }

@@ -15,7 +15,7 @@ import type { StructureBlockEntity$UpdateType } from '../../../../../net/minecra
 import type { StructureMode } from '../../../../../net/minecraft/world/level/block/state/properties/StructureMode.d.ts'
 export class ServerboundSetStructureBlockPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetStructureBlockPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(pos: BlockPos, updateType: StructureBlockEntity$UpdateType, mode: StructureMode, name: string, offset: BlockPos, size: Vec3i, mirror: Mirror, rotation: Rotation, data: string, ignoreEntities: boolean, strict: boolean, showAir: boolean, showBoundingBox: boolean, integrity: number, seed: number)
     readonly data: string;
     readonly ignoreEntities: boolean;

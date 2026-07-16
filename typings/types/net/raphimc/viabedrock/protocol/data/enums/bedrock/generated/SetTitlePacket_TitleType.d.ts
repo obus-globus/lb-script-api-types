@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SetTitlePacket_TitleType extends Enum<SetTitlePacket_TitleType> {
     static Actionbar: SetTitlePacket_TitleType;
@@ -15,7 +14,7 @@ export class SetTitlePacket_TitleType extends Enum<SetTitlePacket_TitleType> {
     static getByName(paramarg0: string, paramarg1: SetTitlePacket_TitleType): SetTitlePacket_TitleType;
     static getByValue(paramarg0: number): SetTitlePacket_TitleType;
     static getByValue(paramarg0: number, paramarg1: SetTitlePacket_TitleType): SetTitlePacket_TitleType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SetTitlePacket_TitleType;
     static values(): SetTitlePacket_TitleType[];
     private constructor(arg2: number)

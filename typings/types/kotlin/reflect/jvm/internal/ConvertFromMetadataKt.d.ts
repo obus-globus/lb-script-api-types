@@ -19,16 +19,16 @@ import type { Visibility } from '../../../../kotlin/reflect/jvm/internal/impl/km
 import type { ClassId } from '../../../../kotlin/reflect/jvm/internal/impl/name/ClassId.d.ts'
 import type { AbstractKType } from '../../../../kotlin/reflect/jvm/internal/types/AbstractKType.d.ts'
 export class ConvertFromMetadataKt extends Object {
-    static computeJvmSignature(paramarg0: KmProperty, paramarg1: KDeclarationContainerImpl): string;
-    static convertTypeArgumentToJavaType(paramarg0: () => AbstractKType, paramarg1: number): () => Type;
-    static createUnboundConstructor(paramarg0: KmConstructor, paramarg1: KDeclarationContainerImpl): KotlinKFunction;
-    static createUnboundFunction(paramarg0: KmFunction, paramarg1: KDeclarationContainerImpl): KotlinKFunction;
-    static createUnboundProperty(paramarg0: KmProperty, paramarg1: KDeclarationContainerImpl): KotlinKProperty<Object>;
-    static loadKClass(paramarg0: ClassLoader, paramarg1: string, paramarg2: boolean): KClass<Object>;
-    static toAnnotation(paramarg0: KmAnnotation, paramarg1: ClassLoader): Annotation;
-    static toClassId(paramarg0: string): ClassId;
-    static toKType(paramarg0: KmType, paramarg1: ClassLoader, paramarg2: TypeParameterTable, paramarg3: boolean, paramarg4: () => Type): AbstractKType;
-    static toKVariance(paramarg0: KmVariance): KVariance;
-    static toKVisibility(paramarg0: Visibility): KVisibility;
-    static toNonLocalSimpleName(paramarg0: string): string;
+    static computeJvmSignature(self: KmProperty, container: KDeclarationContainerImpl): string | null;
+    static convertTypeArgumentToJavaType(computeType: () => AbstractKType, index: number): () => Type;
+    static createUnboundConstructor(constructor: KmConstructor, container: KDeclarationContainerImpl): KotlinKFunction;
+    static createUnboundFunction(function_: KmFunction, container: KDeclarationContainerImpl): KotlinKFunction;
+    static createUnboundProperty(property: KmProperty, container: KDeclarationContainerImpl): KotlinKProperty<Object>;
+    static loadKClass(self: ClassLoader, name: string, forceWrapperClass: boolean): KClass<Object> | null;
+    static toAnnotation(self: KmAnnotation, classLoader: ClassLoader): Annotation;
+    static toClassId(self: string): ClassId;
+    static toKType(self: KmType, classLoader: ClassLoader, typeParameterTable: TypeParameterTable, forceWrapperClass: boolean, computeJavaType: (() => Type) | null): AbstractKType;
+    static toKVariance(self: KmVariance): KVariance;
+    static toKVisibility(self: Visibility): KVisibility | null;
+    static toNonLocalSimpleName(self: string): string;
 }

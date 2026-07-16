@@ -29,10 +29,10 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class FunctionType$Instance extends Enum<FunctionType$Instance> implements App<FunctionType$Instance$Mu, FunctionType$Mu>, Mapping<FunctionType$Mu, FunctionType$Instance$Mu>, MonoidProfunctor<FunctionType$Mu, FunctionType$Instance$Mu>, Monoidal<FunctionType$Mu, FunctionType$Instance$Mu>, TraversalP<FunctionType$Mu, FunctionType$Instance$Mu> {
     static INSTANCE: FunctionType$Instance;
-    static unbox(paramarg0: App<Mapping$Mu, K2>): Mapping<K2, Mapping$Mu>;
-    static unbox(paramarg0: App<Monoidal$Mu, K2>): Monoidal<K2, Monoidal$Mu>;
-    static unbox(paramarg0: App<TraversalP$Mu, K2>): TraversalP<K2, TraversalP$Mu>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static unbox<P extends K2, Proof extends Mapping$Mu>(paramarg0: App<Proof, P>): Mapping<P, Proof>;
+    static unbox<P extends K2, Proof extends Monoidal$Mu>(paramarg0: App<Proof, P>): Monoidal<P, Proof>;
+    static unbox<P extends K2, Proof extends TraversalP$Mu>(paramarg0: App<Proof, P>): TraversalP<P, Proof>;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): FunctionType$Instance;
     static values(): FunctionType$Instance[];
     private constructor()

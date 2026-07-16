@@ -13,7 +13,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 export class ServerboundSeenAdvancementsPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSeenAdvancementsPacket>;
     static closedScreen(): ServerboundSeenAdvancementsPacket;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static openedTab(paramtab: AdvancementHolder): ServerboundSeenAdvancementsPacket;
     constructor(action: ServerboundSeenAdvancementsPacket$Action, tab: Identifier)
     readonly action: ServerboundSeenAdvancementsPacket$Action;

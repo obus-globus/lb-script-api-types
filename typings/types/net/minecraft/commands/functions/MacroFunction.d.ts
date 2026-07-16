@@ -13,8 +13,8 @@ import type { CompoundTag } from '../../../../net/minecraft/nbt/CompoundTag.d.ts
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 export class MacroFunction<T extends ExecutionCommandSource<T>> extends Object implements CommandFunction<T> {
     static checkCommandLineLength(paramline: CharSequence): void;
-    static fromLines(paramid: Identifier, paramdispatcher: CommandDispatcher<Object>, paramcompilationContext: Object | null, paramlines: string[]): CommandFunction<Object>;
-    static parseCommand(paramdispatcher: CommandDispatcher<Object>, paramcompilationContext: Object | null, paraminput: StringReader): (param0: Object | null, param1: ExecutionContext<Object>, param2: Frame) => void;
+    static fromLines<T extends ExecutionCommandSource<T>>(paramid: Identifier, paramdispatcher: CommandDispatcher<T>, paramcompilationContext: T, paramlines: string[]): CommandFunction<T>;
+    static parseCommand<T extends ExecutionCommandSource<T>>(paramdispatcher: CommandDispatcher<T>, paramcompilationContext: T, paraminput: StringReader): (param0: T, param1: ExecutionContext<T>, param2: Frame) => void;
     constructor(id: Identifier, entries: MacroFunction$Entry<T>[], parameters: string[])
     // private cache: Map<string[], InstantiatedFunction<T>>;
     // private entries: MacroFunction$Entry<T>[];

@@ -1,6 +1,5 @@
 import type { InputStream } from '../../../../java/io/InputStream.d.ts'
 import type { Path } from '../../../../java/nio/file/Path.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Identifier } from '../../../../net/minecraft/resources/Identifier.d.ts'
 import type { AbstractPackResources } from '../../../../net/minecraft/server/packs/AbstractPackResources.d.ts'
 import type { PackLocationInfo } from '../../../../net/minecraft/server/packs/PackLocationInfo.d.ts'
@@ -14,8 +13,8 @@ export class PathPackResources extends AbstractPackResources {
     static PACK_META: string;
     static getNamespaces(paramrootDir: Path): string[];
     static getResource(paramtopDir: Path, paramlocation: Identifier): () => InputStream;
-    static listPath(paramnamespace: string, paramtopDir: Path, paramdecomposedPrefixPath: string[], paramoutput: (param0: Object | null, param1: Object | null) => void): void;
-    static listResources(paramtopPath: Path, paramnamespace: string, paramdirectory: string, paramoutput: (param0: Object | null, param1: Object | null) => void): void;
+    static listPath(paramnamespace: string, paramtopDir: Path, paramdecomposedPrefixPath: string[], paramoutput: (param0: Identifier, param1: () => InputStream) => void): void;
+    static listResources(paramtopPath: Path, paramnamespace: string, paramdirectory: string, paramoutput: (param0: Identifier, param1: () => InputStream) => void): void;
     static loadMetadata(parampackResources: PackResources): ResourceMetadata;
     static validatePath(parampath: Path): boolean;
     constructor(location: PackLocationInfo, root: Path)
@@ -24,6 +23,6 @@ export class PathPackResources extends AbstractPackResources {
     getNamespaces(type: PackType): string[];
     getResource(type: PackType, location: Identifier): () => InputStream;
     getRootResource(...path: string[]): () => InputStream;
-    listResources(type: PackType, namespace: string, directory: string, output: (param0: Object | null, param1: Object | null) => void): void;
+    listResources(type: PackType, namespace: string, directory: string, output: (param0: Identifier, param1: () => InputStream) => void): void;
     // private topPackDir(type: PackType): Path;
 }

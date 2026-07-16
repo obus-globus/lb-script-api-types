@@ -1,6 +1,5 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Optional } from '../../../../../java/util/Optional.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class TextureStage extends Enum<TextureStage> {
     static BEGIN: TextureStage;
@@ -11,7 +10,7 @@ export class TextureStage extends Enum<TextureStage> {
     static SETUP: TextureStage;
     static SHADOWCOMP: TextureStage;
     static parse(paramarg0: string): Optional<TextureStage>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TextureStage;
     static values(): TextureStage[];
     private constructor()

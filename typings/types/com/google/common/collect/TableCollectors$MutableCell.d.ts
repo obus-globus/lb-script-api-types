@@ -9,5 +9,5 @@ export class TableCollectors$MutableCell<R extends unknown, C extends unknown, V
     getColumnKey(): C;
     getRowKey(): R;
     getValue(): V;
-    merge(value: V, mergeFunction: (param0: V, param1: Object | null) => Object | null): void;
+    merge(value: V, mergeFunction: (param0: V, param1: V) => V): void;
 }

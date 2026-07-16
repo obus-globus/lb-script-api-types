@@ -11,7 +11,7 @@ export class WireFormat$JavaType extends Enum<WireFormat$JavaType> {
     static LONG: WireFormat$JavaType;
     static MESSAGE: WireFormat$JavaType;
     static STRING: WireFormat$JavaType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): WireFormat$JavaType;
     static values(): WireFormat$JavaType[];
     private constructor(arg2: Object)

@@ -22,8 +22,8 @@ import type { VoxelShape } from '../../../../net/minecraft/world/phys/shapes/Vox
 export class EmptyBlockGetter extends Enum<EmptyBlockGetter> implements BlockGetter {
     static INSTANCE: EmptyBlockGetter;
     static forEachBlockIntersectedBetween(paramfrom: Vec3, paramto: Vec3, paramaabbAtTarget: AABB, paramvisitor: (param0: BlockPos, param1: number) => boolean): boolean;
-    static traverseBlocks(paramfrom: Vec3, paramto: Vec3, paramcontext: Object | null, paramconsumer: (param0: Object | null, param1: BlockPos) => Object | null, parammissFactory: (param0: Object | null) => Object | null): Object | null;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static traverseBlocks<T extends unknown, C extends unknown>(paramfrom: Vec3, paramto: Vec3, paramcontext: C, paramconsumer: (param0: C, param1: BlockPos) => T, parammissFactory: (param0: C) => T): T;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): EmptyBlockGetter;
     static values(): EmptyBlockGetter[];
     private constructor()

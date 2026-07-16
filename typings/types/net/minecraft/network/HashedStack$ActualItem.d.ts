@@ -1,6 +1,7 @@
 import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Holder } from '../../../net/minecraft/core/Holder.d.ts'
+import type { TypedDataComponent } from '../../../net/minecraft/core/component/TypedDataComponent.d.ts'
 import type { HashedPatchMap } from '../../../net/minecraft/network/HashedPatchMap.d.ts'
 import type { HashedPatchMap$HashGenerator } from '../../../net/minecraft/network/HashedPatchMap$HashGenerator.d.ts'
 import type { HashedStack } from '../../../net/minecraft/network/HashedStack.d.ts'
@@ -11,7 +12,7 @@ import type { ItemStack } from '../../../net/minecraft/world/item/ItemStack.d.ts
 export class HashedStack$ActualItem extends Record implements HashedStack {
     static EMPTY: HashedStack;
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, HashedStack$ActualItem>;
-    static create(paramitemStack: ItemStack, paramhasher: (param0: Object | null) => Object | null): HashedStack;
+    static create(paramitemStack: ItemStack, paramhasher: (param0: TypedDataComponent<Object>) => number): HashedStack;
     constructor(item: Holder<Item>, count: number, components: HashedPatchMap)
     // private components: HashedPatchMap;
     // private count: number;
@@ -21,6 +22,6 @@ export class HashedStack$ActualItem extends Record implements HashedStack {
     equals(o: Object | null): boolean;
     hashCode(): number;
     item(): Holder<Item>;
-    matches(itemStack: ItemStack, hasher: (param0: Object | null) => Object | null): boolean;
+    matches(itemStack: ItemStack, hasher: (param0: TypedDataComponent<Object>) => number): boolean;
     toString(): string;
 }

@@ -5,7 +5,7 @@ import type { Record } from '../../../../../../../java/lang/Record.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class ChatType$ChatTypeDecoration extends Record implements Copyable {
     static TYPE: Type<ChatType$ChatTypeDecoration>;
-    static copy(paramarg0: Object | null): Object | null;
+    static copy<T extends unknown>(paramarg0: T): T;
     constructor(translationKey: string, parameters: number[], style: Tag)
     // private parameters: number[];
     // private style: Tag;

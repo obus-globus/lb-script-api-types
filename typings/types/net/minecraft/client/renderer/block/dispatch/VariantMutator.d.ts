@@ -2,5 +2,5 @@ import type { UnaryOperator } from '../../../../../../java/util/function/UnaryOp
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Variant } from '../../../../../../net/minecraft/client/renderer/block/dispatch/Variant.d.ts'
 export interface VariantMutator extends UnaryOperator<Variant>, Object {
-    then(other: (param0: Object | null) => Object | null): (param0: Object | null) => Object | null;
+    then(other: (param0: Variant) => Variant): (param0: Variant) => Variant;
 }

@@ -12,7 +12,7 @@ import type { MobEffect } from '../../../../../net/minecraft/world/effect/MobEff
 import type { MobEffectInstance } from '../../../../../net/minecraft/world/effect/MobEffectInstance.d.ts'
 export class ClientboundUpdateMobEffectPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundUpdateMobEffectPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(entityId: number, effect: MobEffectInstance, blend: boolean)
     readonly effect: Holder<MobEffect>;
     readonly effectAmplifier: number;

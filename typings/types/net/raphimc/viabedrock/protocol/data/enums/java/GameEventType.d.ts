@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class GameEventType extends Enum<GameEventType> {
     static ARROW_HIT_PLAYER: GameEventType;
@@ -16,7 +15,7 @@ export class GameEventType extends Enum<GameEventType> {
     static STOP_RAINING: GameEventType;
     static THUNDER_LEVEL_CHANGE: GameEventType;
     static WIN_GAME: GameEventType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): GameEventType;
     static values(): GameEventType[];
     private constructor()

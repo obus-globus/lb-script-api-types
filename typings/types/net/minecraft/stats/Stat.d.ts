@@ -23,7 +23,7 @@ export class Stat<T extends unknown> extends ObjectiveCriteria {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, Stat<Object>>;
     static TEAM_KILL: Map<TeamColor, ObjectiveCriteria>;
     static TRIGGER: ObjectiveCriteria;
-    static buildName(paramtype: Stat<Object>[], paramvalue: Object | null): string;
+    static buildName<T extends unknown>(paramtype: Stat<T>[], paramvalue: T): string;
     static byName(paramname: string): Optional<ObjectiveCriteria>;
     static getCustomCriteriaNames(): string[];
     static registerCustom(paramname: string): ObjectiveCriteria;

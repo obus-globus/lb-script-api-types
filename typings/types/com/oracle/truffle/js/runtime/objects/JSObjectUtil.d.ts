@@ -15,8 +15,8 @@ import type { PropertyProxy } from '../../../../../../com/oracle/truffle/js/runt
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSObjectUtil extends Object {
     static changePropertyFlags(paramthisObj: JSDynamicObject, paramkey: Object, paramflags: number): void;
-    static checkForNoSuchPropertyOrMethod(paramcontext: JSContext, paramkey: Object | null): Object | null;
-    static copyProperties(paramtarget: JSDynamicObject | null, paramsource: JSDynamicObject): JSDynamicObject | null;
+    static checkForNoSuchPropertyOrMethod<T extends unknown>(paramcontext: JSContext, paramkey: T): T;
+    static copyProperties<T extends JSDynamicObject>(paramtarget: T, paramsource: JSDynamicObject): T;
     static createCached(paramkey: Object, paramobj: JSDynamicObject): DynamicObjectLibrary;
     static createDispatched(paramkey: Object): DynamicObjectLibrary;
     static createDispatched(paramkey: Object, paramlimit: number): DynamicObjectLibrary;

@@ -4,9 +4,9 @@ import type { ObjectInputStream } from '../../../../java/io/ObjectInputStream.d.
 import type { ObjectOutputStream } from '../../../../java/io/ObjectOutputStream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ArrayListMultimap<K extends unknown, V extends unknown> extends AbstractListMultimap<K, V> {
-    static create(): ArrayListMultimap<Object, Object>;
-    static create(parammultimap: Multimap<Object, Object>): ArrayListMultimap<Object, Object>;
-    static create(paramexpectedKeys: number, paramexpectedValuesPerKey: number): ArrayListMultimap<Object, Object>;
+    static create<K extends unknown, V extends unknown>(): ArrayListMultimap<K, V>;
+    static create<K extends unknown, V extends unknown>(parammultimap: Multimap<K, V>): ArrayListMultimap<K, V>;
+    static create<K extends unknown, V extends unknown>(paramexpectedKeys: number, paramexpectedValuesPerKey: number): ArrayListMultimap<K, V>;
     private constructor()
     private constructor(multimap: Multimap<K, V>)
     private constructor(expectedKeys: number, expectedValuesPerKey: number)

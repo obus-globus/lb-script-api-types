@@ -14,19 +14,19 @@ export class CombatExtensionsKt extends Object {
      */
     static attackEntity(entity: Entity, swing: SwingMode, keepSprint: boolean): void;
     static findEnemies(paramarg0: ClientLevel, paramarg1: number, paramarg2: number): ObjectDoublePair<Entity>[];
-    static findEnemies(clientLevel: ClientLevel, minRange: number, maxRange: number, enemyConf: Targets[]): ObjectDoublePair<Entity>[];
+    static findEnemies(self: ClientLevel, minRange: number, maxRange: number, enemyConf: Targets[]): ObjectDoublePair<Entity>[];
     /**
      * Find the best enemy in the current world in a specific range.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt#L189 | src/main/kotlin/net/ccbluex/liquidbounce/utils/combat/CombatExtensions.kt:189}
      */
     static findEnemy(clientLevel: ClientLevel, range: number, enemyConf: number): Entity;
-    static findEnemy(clientLevel: ClientLevel, minRange: number, maxRange: number, enemyConf: Targets[]): Entity;
+    static findEnemy(self: ClientLevel, minRange: number, maxRange: number, enemyConf: Targets[]): Entity | null;
     static findEnemy(paramarg0: ClientLevel, paramarg1: ClosedFloatingPointRange<number>): Entity;
-    static findEnemy(clientLevel: ClientLevel, range: ClosedFloatingPointRange<number>, enemyConf: Targets[]): Entity;
-    static getEntitiesBoxInRange(clientLevel: ClientLevel, midPos: Vec3, range: number, predicate: (param0: Object) => boolean): Entity[];
+    static findEnemy(self: ClientLevel, range: ClosedFloatingPointRange<number>, enemyConf: Targets[]): Entity | null;
+    static getEntitiesBoxInRange(self: ClientLevel, midPos: Vec3, range: number, predicate: (param0: Entity) => boolean): Entity[];
     static shouldBeAttacked(enemyConf: Entity): boolean;
-    static shouldBeAttacked(paramarg0: Entity, paramarg1: Targets[]): boolean;
+    static shouldBeAttacked(self: Entity | null, enemyConf: Targets[]): boolean;
     static shouldBeShown(enemyConf: Entity): boolean;
-    static shouldBeShown(paramarg0: Entity, paramarg1: Targets[]): boolean;
+    static shouldBeShown(self: Entity | null, enemyConf: Targets[]): boolean;
 }

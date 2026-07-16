@@ -10,8 +10,8 @@ import type { UnaryOperator } from '../../../../../java/util/function/UnaryOpera
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { ItemStackTagFix } from '../../../../../net/minecraft/util/datafix/fixes/ItemStackTagFix.d.ts'
 export abstract class ItemStackTagRemainderFix extends ItemStackTagFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
-    static createFixer(paramitemStackType: Type<Object>, paramidFilter: (param0: string) => boolean, paramfixer: (param0: Typed<Object>) => Object | null): (param0: Typed<Object>) => Object | null;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
+    static createFixer(paramitemStackType: Type<Object>, paramidFilter: (param0: string) => boolean, paramfixer: (param0: Typed<Object>) => Typed<Object>): (param0: Typed<Object>) => Typed<Object>;
     constructor(outputSchema: Schema, name: string, idFilter: (param0: string) => boolean)
     fixItemStackTag(tag: Typed<Object>): Typed<Object>;
     fixItemStackTag<T extends unknown>(tag: Dynamic<T>): Dynamic<T>;

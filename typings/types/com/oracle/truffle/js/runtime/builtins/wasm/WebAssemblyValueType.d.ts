@@ -11,7 +11,7 @@ export class WebAssemblyValueType extends Enum<WebAssemblyValueType> {
     static i64: WebAssemblyValueType;
     static v128: WebAssemblyValueType;
     static lookupType(paramtype: string): WebAssemblyValueType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WebAssemblyValueType;
     static values(): WebAssemblyValueType[];
     private constructor(reference: boolean)

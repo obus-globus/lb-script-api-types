@@ -2,14 +2,15 @@ import type { Float2ReferenceMap$Entry } from '../../../../../it/unimi/dsi/fastu
 import type { FloatReferencePair } from '../../../../../it/unimi/dsi/fastutil/floats/FloatReferencePair.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 export class Float2ReferenceArrayMap$MapEntry extends Object implements Float2ReferenceMap$Entry<V>, FloatReferencePair<V>, Map$Entry<number, V> {
-    static comparingByKey(): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
-    static comparingByKey(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
-    static comparingByValue(): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
-    static comparingByValue(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<Object, Object>, param1: Map$Entry<Object, Object>) => number;
-    static copyOf(paramarg0: Map$Entry<Object, Object>): Map$Entry<Object, Object>;
-    static of(paramarg0: number, paramarg1: Object | null): FloatReferencePair<Object>;
+    static comparingByKey<K extends Comparable<Object>, V extends unknown>(): (param0: Map$Entry<K, V>, param1: Map$Entry<K, V>) => number;
+    static comparingByKey<K extends unknown, V extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<K, V>, param1: Map$Entry<K, V>) => number;
+    static comparingByValue<K extends unknown, V extends Comparable<Object>>(): (param0: Map$Entry<K, V>, param1: Map$Entry<K, V>) => number;
+    static comparingByValue<K extends unknown, V extends unknown>(paramarg0: (param0: Object, param1: Object) => number): (param0: Map$Entry<K, V>, param1: Map$Entry<K, V>) => number;
+    static copyOf<K extends unknown, V extends unknown>(paramarg0: Map$Entry<K, V>): Map$Entry<K, V>;
+    static of<V extends unknown>(paramarg0: number, paramarg1: V): FloatReferencePair<V>;
     constructor(null_: { [key: string]: any })
     constructor(null_: { [key: string]: any }, arg1: number)
     // private index: number;

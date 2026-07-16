@@ -2,7 +2,7 @@ import type { StackTraceElement } from '../../../../java/lang/StackTraceElement.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { BaseContinuationImpl } from '../../../../kotlin/coroutines/jvm/internal/BaseContinuationImpl.d.ts'
 export class DebugMetadataKt extends Object {
-    static getNextLineNumber(paramarg0: BaseContinuationImpl): number;
-    static getSpilledVariableFieldMapping(paramarg0: BaseContinuationImpl): string[];
-    static getStackTraceElement(paramarg0: BaseContinuationImpl): StackTraceElement;
+    static getNextLineNumber(self: BaseContinuationImpl): number;
+    static getSpilledVariableFieldMapping(self: BaseContinuationImpl): string[] | null;
+    static getStackTraceElement(self: BaseContinuationImpl): StackTraceElement | null;
 }

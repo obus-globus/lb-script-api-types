@@ -16,7 +16,7 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export abstract class Invokable<T extends unknown, R extends unknown> extends Object implements AnnotatedElement, Member {
     static DECLARED: number;
     static PUBLIC: number;
-    static from(paramconstructor: Constructor<Object>): Invokable<Object, Object>;
+    static from<T extends unknown>(paramconstructor: Constructor<T>): Invokable<T, T>;
     static from(parammethod: Method): Invokable<Object, Object>;
     constructor(member: AccessibleObject)
     // private accessibleObject: AccessibleObject;

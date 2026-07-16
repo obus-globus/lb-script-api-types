@@ -3,7 +3,6 @@ import type { BiConsumer } from '../../../../../../java/util/function/BiConsumer
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Predicate } from '../../../../../../java/util/function/Predicate.d.ts'
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { BlockPos } from '../../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { GlobalPos } from '../../../../../../net/minecraft/core/GlobalPos.d.ts'
 import type { ServerLevel } from '../../../../../../net/minecraft/server/level/ServerLevel.d.ts'
@@ -23,12 +22,12 @@ import type { Vec3 } from '../../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class TransportItemsBetweenContainers extends Behavior<PathfinderMob> {
     static DEFAULT_DURATION: number;
     static TARGET_INTERACTION_TIME: number;
-    constructor(speedModifier: number, sourceBlockType: (param0: BlockState) => boolean, destinationBlockType: (param0: BlockState) => boolean, horizontalSearchDistance: number, verticalSearchDistance: number, onTargetInteractionActions: Map<TransportItemsBetweenContainers$ContainerInteractionState, (param0: Object | null, param1: Object | null, param2: Object | null) => void>, onStartTravelling: (param0: PathfinderMob) => void, shouldQueueForTarget: (param0: TransportItemsBetweenContainers$TransportItemTarget) => boolean)
+    constructor(speedModifier: number, sourceBlockType: (param0: BlockState) => boolean, destinationBlockType: (param0: BlockState) => boolean, horizontalSearchDistance: number, verticalSearchDistance: number, onTargetInteractionActions: Map<TransportItemsBetweenContainers$ContainerInteractionState, (param0: PathfinderMob, param1: TransportItemsBetweenContainers$TransportItemTarget, param2: number) => void>, onStartTravelling: (param0: PathfinderMob) => void, shouldQueueForTarget: (param0: TransportItemsBetweenContainers$TransportItemTarget) => boolean)
     // private destinationBlockType: (param0: BlockState) => boolean;
     // private horizontalSearchDistance: number;
     // private interactionState: TransportItemsBetweenContainers$ContainerInteractionState;
     // private onStartTravelling: (param0: PathfinderMob) => void;
-    // private onTargetInteractionActions: Map<TransportItemsBetweenContainers$ContainerInteractionState, (param0: Object | null, param1: Object | null, param2: Object | null) => void>;
+    // private onTargetInteractionActions: Map<TransportItemsBetweenContainers$ContainerInteractionState, (param0: PathfinderMob, param1: TransportItemsBetweenContainers$TransportItemTarget, param2: number) => void>;
     // private shouldQueueForTarget: (param0: TransportItemsBetweenContainers$TransportItemTarget) => boolean;
     // private sourceBlockType: (param0: BlockState) => boolean;
     // private speedModifier: number;

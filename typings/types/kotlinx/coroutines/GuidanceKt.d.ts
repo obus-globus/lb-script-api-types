@@ -6,10 +6,10 @@ import type { Deferred } from '../../kotlinx/coroutines/Deferred.d.ts'
 import type { Job } from '../../kotlinx/coroutines/Job.d.ts'
 import type { NonCancellable } from '../../kotlinx/coroutines/NonCancellable.d.ts'
 export class GuidanceKt extends Object {
-    static async(paramarg0: CoroutineContext, paramarg1: CoroutineStart, paramarg2: (param0: Object, param1: Object) => Object): Deferred<Object>;
-    static async(paramarg0: CoroutineScope, paramarg1: Job, paramarg2: CoroutineStart, paramarg3: (param0: Object, param1: Object) => Object): Deferred<Object>;
-    static async(paramarg0: CoroutineScope, paramarg1: NonCancellable, paramarg2: CoroutineStart, paramarg3: (param0: Object, param1: Object) => Object): Deferred<Object>;
-    static launch(paramarg0: CoroutineContext, paramarg1: CoroutineStart, paramarg2: (param0: Object, param1: Object) => Object): Job;
-    static launch(paramarg0: CoroutineScope, paramarg1: Job, paramarg2: CoroutineStart, paramarg3: (param0: Object, param1: Object) => Object): Job;
-    static launch(paramarg0: CoroutineScope, paramarg1: NonCancellable, paramarg2: CoroutineStart, paramarg3: (param0: Object, param1: Object) => Object): Job;
+    static async<T extends unknown>(context: CoroutineContext, start: CoroutineStart, block: (param0: CoroutineScope) => T): Deferred<T>;
+    static async<T extends unknown>(self: CoroutineScope, context: Job, start: CoroutineStart, block: (param0: CoroutineScope) => T): Deferred<T>;
+    static async<T extends unknown>(self: CoroutineScope, context: NonCancellable, start: CoroutineStart, block: (param0: CoroutineScope) => T): Deferred<T>;
+    static launch(context: CoroutineContext, start: CoroutineStart, block: (param0: CoroutineScope) => void): Job;
+    static launch(self: CoroutineScope, context: Job, start: CoroutineStart, block: (param0: CoroutineScope) => void): Job;
+    static launch(self: CoroutineScope, context: NonCancellable, start: CoroutineStart, block: (param0: CoroutineScope) => void): Job;
 }

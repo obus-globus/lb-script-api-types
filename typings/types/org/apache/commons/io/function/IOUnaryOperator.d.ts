@@ -10,7 +10,7 @@ export interface IOUnaryOperator<T extends unknown> extends Object, IOFunction<T
     andThen(arg0: (param0: T) => void): (param0: T) => void;
     andThen<V extends unknown>(arg0: (param0: T) => V): (param0: T) => V;
     asFunction(): (param0: T) => T;
-    asUnaryOperator(): (param0: T) => Object | null;
+    asUnaryOperator(): (param0: T) => T;
     compose<V extends unknown>(arg0: (param0: V) => T): (param0: V) => T;
     compose(arg0: () => T): () => T;
 }

@@ -10,11 +10,11 @@ import type { Writer } from '../../../../java/io/Writer.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ClaimsRequest extends Object implements JsonSerializable<ClaimsRequest> {
     static formatAsClaimsRequest(paramarg0: string): ClaimsRequest;
-    static fromJson(paramarg0: number[]): Object | null;
-    static fromJson(paramarg0: JsonReader): Object | null;
-    static fromJson(paramarg0: InputStream): Object | null;
-    static fromJson(paramarg0: Reader): Object | null;
-    static fromJson(paramarg0: string): Object | null;
+    static fromJson<T extends JsonSerializable<T>>(paramarg0: number[]): T;
+    static fromJson<T extends JsonSerializable<T>>(paramarg0: JsonReader): T;
+    static fromJson<T extends JsonSerializable<T>>(paramarg0: InputStream): T;
+    static fromJson<T extends JsonSerializable<T>>(paramarg0: Reader): T;
+    static fromJson<T extends JsonSerializable<T>>(paramarg0: string): T;
     constructor()
     // private accessTokenRequestedClaims: RequestedClaim[];
     idTokenRequestedClaims: RequestedClaim[];

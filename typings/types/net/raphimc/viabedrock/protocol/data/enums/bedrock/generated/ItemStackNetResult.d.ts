@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ItemStackNetResult extends Enum<ItemStackNetResult> {
     static ActionRequestNotAllowed: ItemStackNetResult;
@@ -74,7 +73,7 @@ export class ItemStackNetResult extends Enum<ItemStackNetResult> {
     static getByName(paramarg0: string, paramarg1: ItemStackNetResult): ItemStackNetResult;
     static getByValue(paramarg0: number): ItemStackNetResult;
     static getByValue(paramarg0: number, paramarg1: ItemStackNetResult): ItemStackNetResult;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ItemStackNetResult;
     static values(): ItemStackNetResult[];
     private constructor(arg2: number)

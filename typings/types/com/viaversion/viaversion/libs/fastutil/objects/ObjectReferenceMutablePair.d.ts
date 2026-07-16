@@ -2,8 +2,8 @@ import type { ObjectReferencePair } from '../../../../../../com/viaversion/viave
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectReferenceMutablePair<K extends unknown, V extends unknown> extends Object implements ObjectReferencePair<K, V>, Serializable {
-    static of(paramarg0: Object | null, paramarg1: Object | null): ObjectReferenceMutablePair<Object, Object>;
-    static of(paramarg0: Object | null, paramarg1: Object | null): ObjectReferencePair<Object, Object>;
+    static of<K extends unknown, V extends unknown>(paramarg0: K, paramarg1: V): ObjectReferenceMutablePair<K, V>;
+    static of<K extends unknown, V extends unknown>(paramarg0: K, paramarg1: V): ObjectReferencePair<K, V>;
     constructor(arg0: K, arg1: V)
     // private left: K;
     // private right: V;

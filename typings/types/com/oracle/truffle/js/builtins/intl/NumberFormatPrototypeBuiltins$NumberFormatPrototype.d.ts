@@ -13,7 +13,7 @@ export class NumberFormatPrototypeBuiltins$NumberFormatPrototype extends Enum<Nu
     static formatToParts: NumberFormatPrototypeBuiltins$NumberFormatPrototype;
     static resolvedOptions: NumberFormatPrototypeBuiltins$NumberFormatPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): NumberFormatPrototypeBuiltins$NumberFormatPrototype;
     static values(): NumberFormatPrototypeBuiltins$NumberFormatPrototype[];
     private constructor(length: number)

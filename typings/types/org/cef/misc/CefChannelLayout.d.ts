@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class CefChannelLayout extends Enum<CefChannelLayout> {
     static CEF_CHANNEL_LAYOUT_2POINT1: CefChannelLayout;
@@ -38,7 +37,7 @@ export class CefChannelLayout extends Enum<CefChannelLayout> {
     static CEF_CHANNEL_LAYOUT_SURROUND: CefChannelLayout;
     static CEF_CHANNEL_LAYOUT_UNSUPPORTED: CefChannelLayout;
     static forId(paramarg0: number): CefChannelLayout;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CefChannelLayout;
     static values(): CefChannelLayout[];
     private constructor(arg2: number)

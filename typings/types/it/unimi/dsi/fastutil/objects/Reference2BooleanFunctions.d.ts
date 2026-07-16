@@ -4,10 +4,10 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Reference2BooleanFunctions extends Object {
     static EMPTY_FUNCTION: Reference2BooleanFunctions$EmptyFunction<Object>;
-    static primitive(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static singleton(paramarg0: Object | null, paramarg1: boolean): (param0: Object) => boolean;
-    static synchronize(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
-    static synchronize(paramarg0: (param0: Object) => boolean, paramarg1: Object): (param0: Object) => boolean;
-    static unmodifiable(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static primitive<K extends unknown>(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static singleton<K extends unknown>(paramarg0: K, paramarg1: boolean): (param0: Object) => boolean;
+    static synchronize<K extends unknown>(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
+    static synchronize<K extends unknown>(paramarg0: (param0: Object) => boolean, paramarg1: Object): (param0: Object) => boolean;
+    static unmodifiable<K extends unknown>(paramarg0: (param0: Object) => boolean): (param0: Object) => boolean;
     private constructor()
 }

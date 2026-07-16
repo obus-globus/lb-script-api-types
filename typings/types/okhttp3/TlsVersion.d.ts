@@ -1,5 +1,4 @@
 import type { Class } from '../java/lang/Class.d.ts'
-import type { Object } from '../java/lang/Object.d.ts'
 import type { Enum } from '../java/lang/Enum.d.ts'
 import type { TlsVersion$Companion } from '../okhttp3/TlsVersion$Companion.d.ts'
 export class TlsVersion extends Enum<TlsVersion> {
@@ -9,10 +8,10 @@ export class TlsVersion extends Enum<TlsVersion> {
     static TLS_1_1: TlsVersion;
     static TLS_1_2: TlsVersion;
     static TLS_1_3: TlsVersion;
-    static forJavaName(paramarg0: string): TlsVersion;
+    static forJavaName(javaName: string): TlsVersion;
     static getEntries(): TlsVersion[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): TlsVersion;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): TlsVersion;
     static values(): TlsVersion[];
     private constructor(javaName: string)
     // private javaName: string;

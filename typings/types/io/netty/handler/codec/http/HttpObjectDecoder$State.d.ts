@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class HttpObjectDecoder$State extends Enum<HttpObjectDecoder$State> {
     static BAD_MESSAGE: HttpObjectDecoder$State;
@@ -14,7 +13,7 @@ export class HttpObjectDecoder$State extends Enum<HttpObjectDecoder$State> {
     static SKIP_CONTROL_CHARS: HttpObjectDecoder$State;
     static SKIP_INITIAL_LINE_CHARS: HttpObjectDecoder$State;
     static UPGRADED: HttpObjectDecoder$State;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): HttpObjectDecoder$State;
     static values(): HttpObjectDecoder$State[];
     private constructor()

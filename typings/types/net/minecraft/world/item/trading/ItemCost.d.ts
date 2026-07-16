@@ -31,5 +31,5 @@ export class ItemCost extends Record {
     itemStack(): ItemStack;
     test(itemStack: ItemStack): boolean;
     toString(): string;
-    withComponents(components: (param0: DataComponentExactPredicate$Builder) => Object | null): ItemCost;
+    withComponents(components: (param0: DataComponentExactPredicate$Builder) => DataComponentExactPredicate$Builder): ItemCost;
 }

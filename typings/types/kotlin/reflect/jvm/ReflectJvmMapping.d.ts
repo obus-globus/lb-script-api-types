@@ -8,13 +8,13 @@ import type { KMutableProperty } from '../../../kotlin/reflect/KMutableProperty.
 import type { KProperty } from '../../../kotlin/reflect/KProperty.d.ts'
 import type { KType } from '../../../kotlin/reflect/KType.d.ts'
 export class ReflectJvmMapping extends Object {
-    static getJavaConstructor(paramarg0: KFunction<Object>): Constructor<Object>;
+    static getJavaConstructor<T extends unknown>(paramarg0: KFunction<T>): Constructor<T>;
     static getJavaField(paramarg0: KProperty<Object>): Field;
     static getJavaGetter(paramarg0: KProperty<Object>): Method;
     static getJavaMethod(paramarg0: KFunction<Object>): Method;
     static getJavaSetter(paramarg0: KMutableProperty<Object>): Method;
     static getJavaType(paramarg0: KType): Type;
-    static getKotlinFunction(paramarg0: Constructor<Object>): KFunction<Object>;
+    static getKotlinFunction<T extends unknown>(paramarg0: Constructor<T>): KFunction<T>;
     static getKotlinFunction(paramarg0: Method): KFunction<Object>;
     static getKotlinProperty(paramarg0: Field): KProperty<Object>;
 }

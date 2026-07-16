@@ -39,7 +39,7 @@ export class DataFixTypes extends Enum<DataFixTypes> {
     static STRUCTURE: DataFixTypes;
     static TYPES_FOR_LEVEL_LIST: DSL$TypeReference[];
     static WORLD_GEN_SETTINGS: DataFixTypes;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DataFixTypes;
     static values(): DataFixTypes[];
     private constructor(type: DSL$TypeReference)

@@ -1,6 +1,5 @@
 import type { TruffleString } from '../../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class GetDurationUnitOptionsNode$Unit extends Enum<GetDurationUnitOptionsNode$Unit> {
     static DAYS: GetDurationUnitOptionsNode$Unit;
@@ -13,7 +12,7 @@ export class GetDurationUnitOptionsNode$Unit extends Enum<GetDurationUnitOptions
     static SECONDS: GetDurationUnitOptionsNode$Unit;
     static WEEKS: GetDurationUnitOptionsNode$Unit;
     static YEARS: GetDurationUnitOptionsNode$Unit;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): GetDurationUnitOptionsNode$Unit;
     static values(): GetDurationUnitOptionsNode$Unit[];
     private constructor(styleKey: TruffleString, displayKey: TruffleString)

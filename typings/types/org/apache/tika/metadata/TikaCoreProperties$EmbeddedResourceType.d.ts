@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class TikaCoreProperties$EmbeddedResourceType extends Enum<TikaCoreProperties$EmbeddedResourceType> {
     static ALTERNATE_FORMAT_CHUNK: TikaCoreProperties$EmbeddedResourceType;
@@ -11,7 +10,7 @@ export class TikaCoreProperties$EmbeddedResourceType extends Enum<TikaCoreProper
     static RENDERING: TikaCoreProperties$EmbeddedResourceType;
     static THUMBNAIL: TikaCoreProperties$EmbeddedResourceType;
     static VERSION: TikaCoreProperties$EmbeddedResourceType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TikaCoreProperties$EmbeddedResourceType;
     static values(): TikaCoreProperties$EmbeddedResourceType[];
     private constructor()

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class CheckMethodAdapter$Method extends Enum<CheckMethodAdapter$Method> {
     static VISIT_FIELD_INSN: CheckMethodAdapter$Method;
@@ -9,7 +8,7 @@ export class CheckMethodAdapter$Method extends Enum<CheckMethodAdapter$Method> {
     static VISIT_METHOD_INSN: CheckMethodAdapter$Method;
     static VISIT_TYPE_INSN: CheckMethodAdapter$Method;
     static VISIT_VAR_INSN: CheckMethodAdapter$Method;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CheckMethodAdapter$Method;
     static values(): CheckMethodAdapter$Method[];
     private constructor()

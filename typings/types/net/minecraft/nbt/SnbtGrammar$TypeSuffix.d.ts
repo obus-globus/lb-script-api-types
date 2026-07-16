@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class SnbtGrammar$TypeSuffix extends Enum<SnbtGrammar$TypeSuffix> {
     static BYTE: SnbtGrammar$TypeSuffix;
@@ -8,7 +7,7 @@ export class SnbtGrammar$TypeSuffix extends Enum<SnbtGrammar$TypeSuffix> {
     static INT: SnbtGrammar$TypeSuffix;
     static LONG: SnbtGrammar$TypeSuffix;
     static SHORT: SnbtGrammar$TypeSuffix;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SnbtGrammar$TypeSuffix;
     static values(): SnbtGrammar$TypeSuffix[];
     private constructor()

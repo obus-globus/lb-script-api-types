@@ -4,7 +4,7 @@ import type { Source } from '../../../kotlinx/io/Source.d.ts'
 import type { Path } from '../../../kotlinx/io/files/Path.d.ts'
 export class PathsJvmKt extends Object {
     static SystemPathSeparator: string;
-    static Path(paramarg0: string): Path;
-    static sink(paramarg0: Path): Sink;
-    static source(paramarg0: Path): Source;
+    static Path(path: string): Path;
+    static sink(self: Path): Sink;
+    static source(self: Path): Source;
 }

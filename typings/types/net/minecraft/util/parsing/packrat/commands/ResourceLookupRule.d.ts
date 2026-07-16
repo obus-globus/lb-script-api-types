@@ -14,8 +14,8 @@ import type { Scope } from '../../../../../../net/minecraft/util/parsing/packrat
 import type { Term } from '../../../../../../net/minecraft/util/parsing/packrat/Term.d.ts'
 import type { ResourceSuggestion } from '../../../../../../net/minecraft/util/parsing/packrat/commands/ResourceSuggestion.d.ts'
 export abstract class ResourceLookupRule<C extends unknown, V extends unknown> extends Object implements Rule<StringReader, V>, ResourceSuggestion {
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: ParseState<Object>) => Object | null): Rule<Object, Object>;
-    static fromTerm(paramchild: Term<Object>, paramaction: (param0: Scope) => Object | null): Rule<Object, Object>;
+    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: ParseState<S>) => T): Rule<S, T>;
+    static fromTerm<S extends unknown, T extends unknown>(paramchild: Term<S>, paramaction: (param0: Scope) => T): Rule<S, T>;
     constructor(idParser: NamedRule<StringReader, Identifier>, context: C)
     // private context: C;
     // private error: DelayedException<CommandSyntaxException>;

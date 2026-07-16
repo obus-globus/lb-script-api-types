@@ -7,7 +7,7 @@ import type { ChannelIterator } from '../../../kotlinx/coroutines/channels/Chann
 import type { ChannelSegment } from '../../../kotlinx/coroutines/channels/ChannelSegment.d.ts'
 import type { Segment } from '../../../kotlinx/coroutines/internal/Segment.d.ts'
 export class BufferedChannel$BufferedChannelIterator extends Object implements Waiter, ChannelIterator<E> {
-    static next(paramarg0: ChannelIterator<Object>, paramarg1: Continuation<Object>): Object;
+    static next<E extends unknown>(paramarg0: ChannelIterator<E>, paramarg1: Continuation<Object>): Object;
     constructor(null_: BufferedChannel<Object>)
     // private continuation: CancellableContinuationImpl<boolean> | null;
     // private receiveResult: Object | null;

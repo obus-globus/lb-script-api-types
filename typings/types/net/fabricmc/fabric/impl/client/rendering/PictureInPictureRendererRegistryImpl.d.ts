@@ -6,7 +6,7 @@ import type { Minecraft } from '../../../../../../net/minecraft/client/Minecraft
 import type { PictureInPictureRenderer } from '../../../../../../net/minecraft/client/gui/render/pip/PictureInPictureRenderer.d.ts'
 import type { PictureInPictureRenderState } from '../../../../../../net/minecraft/client/renderer/state/gui/pip/PictureInPictureRenderState.d.ts'
 export class PictureInPictureRendererRegistryImpl extends Object {
-    static createNewRenderer(paramarg0: PictureInPictureRenderState | null, paramarg1: Minecraft): PictureInPictureRenderer<PictureInPictureRenderState>;
+    static createNewRenderer<S extends PictureInPictureRenderState>(paramarg0: S, paramarg1: Minecraft): PictureInPictureRenderer<S>;
     static getRegisteredFactoryStateClasses(): Class<PictureInPictureRenderState>[];
     static onReady(paramarg0: Minecraft, paramarg1: Map<Class<PictureInPictureRenderState>, PictureInPictureRenderer<any>>): void;
     static register(paramarg0: (param0: PictureInPictureRendererRegistry$Context) => PictureInPictureRenderer<any>): void;

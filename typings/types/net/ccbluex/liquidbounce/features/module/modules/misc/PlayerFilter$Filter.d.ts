@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { Regex } from '../../../../../../../kotlin/text/Regex.d.ts'
 import type { Tagged } from '../../../../../../../net/ccbluex/liquidbounce/config/types/list/Tagged.d.ts'
@@ -10,10 +9,10 @@ export class PlayerFilter$Filter extends Enum<PlayerFilter$Filter> implements Ta
     static DISPLAY_NAME: PlayerFilter$Filter;
     static PLAYER_NAME: PlayerFilter$Filter;
     static getEntries(): PlayerFilter$Filter[];
-    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
-    static of(paramarg0: string): Tagged;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): PlayerFilter$Filter;
+    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
+    static of(self: string): Tagged;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): PlayerFilter$Filter;
     static values(): PlayerFilter$Filter[];
     private constructor(tag: string, matches: (param0: PlayerInfo, param1: Regex) => boolean)
     readonly matches: (param0: PlayerInfo, param1: Regex) => boolean;

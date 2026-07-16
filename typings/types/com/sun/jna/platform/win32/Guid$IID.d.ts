@@ -16,8 +16,8 @@ export class Guid$IID extends Guid$GUID {
     static fromBinary(paramarg0: number[]): Guid$GUID;
     static fromString(paramarg0: string): Guid$GUID;
     static newGuid(): Guid$GUID;
-    static newInstance(paramarg0: Class<Structure>): Structure | null;
-    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
+    static newInstance<T extends Structure>(paramarg0: Class<T>): T;
+    static newInstance<T extends Structure>(paramarg0: Class<T>, paramarg1: Pointer): T;
     constructor()
     constructor(arg0: Pointer)
     constructor(arg0: Guid$GUID)

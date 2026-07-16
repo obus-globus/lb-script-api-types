@@ -15,7 +15,7 @@ import type { EntityType } from '../../../../../net/minecraft/world/entity/Entit
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientboundAddEntityPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundAddEntityPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(id: number, uuid: UUID, x: number, y: number, z: number, xRot: number, yRot: number, type: EntityType<any>, data: number, movement: Vec3, yHeadRot: number)
     constructor(entity: Entity, data: number, pos: BlockPos)
     constructor(entity: Entity, serverEntity: ServerEntity)

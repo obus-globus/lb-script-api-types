@@ -13,8 +13,8 @@ import type { ProfilerFiller } from '../../../../../net/minecraft/util/profiling
 import type { EquipmentAsset } from '../../../../../net/minecraft/world/item/equipment/EquipmentAsset.d.ts'
 export class EquipmentAssetManager extends SimpleJsonResourceReloadListener<EquipmentClientInfo> implements FabricResourceReloader {
     static MISSING: EquipmentClientInfo;
-    static scanDirectory(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
-    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
     constructor()
     // private equipmentAssets: Map<ResourceKey<EquipmentAsset>, EquipmentClientInfo>;
     // private fabric$id: Identifier;

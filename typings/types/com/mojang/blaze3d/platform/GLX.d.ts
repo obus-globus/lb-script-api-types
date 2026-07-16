@@ -12,6 +12,6 @@ export class GLX extends Object {
     static _shouldClose(paramwindow: Window): boolean;
     static getGlfwPlatform(): number;
     static glfwBool(paramvalue: boolean): number;
-    static make(paramfactory: () => Object | null): Object | null;
+    static make<T extends unknown>(paramfactory: () => T): T;
     constructor()
 }

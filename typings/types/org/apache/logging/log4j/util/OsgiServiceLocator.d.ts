@@ -4,7 +4,7 @@ import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class OsgiServiceLocator extends Object {
     static isAvailable(): boolean;
-    static loadServices(paramserviceType: Class<Object>, paramlookup: MethodHandles$Lookup): Stream<Object>;
-    static loadServices(paramserviceType: Class<Object>, paramlookup: MethodHandles$Lookup, paramverbose: boolean): Stream<Object>;
+    static loadServices<T extends unknown>(paramserviceType: Class<T>, paramlookup: MethodHandles$Lookup): Stream<T>;
+    static loadServices<T extends unknown>(paramserviceType: Class<T>, paramlookup: MethodHandles$Lookup, paramverbose: boolean): Stream<T>;
     constructor()
 }

@@ -53,9 +53,9 @@ export interface Stream<T extends unknown> extends BaseStream<T, Stream<T>>, Obj
     min(arg0: (param0: T, param1: T) => number): Optional<T>;
     noneMatch(arg0: (param0: T) => boolean): boolean;
     peek(arg0: (param0: T) => void): Stream<T>;
-    reduce(arg0: T, arg1: (param0: T, param1: Object | null) => Object | null): T;
-    reduce<U extends unknown>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: Object | null) => Object | null): U;
-    reduce(arg0: (param0: T, param1: Object | null) => Object | null): Optional<T>;
+    reduce(arg0: T, arg1: (param0: T, param1: T) => T): T;
+    reduce<U extends unknown>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: U) => U): U;
+    reduce(arg0: (param0: T, param1: T) => T): Optional<T>;
     skip(arg0: number): Stream<T>;
     sorted(): Stream<T>;
     sorted(arg0: (param0: T, param1: T) => number): Stream<T>;

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class UnlockedRecipesPacketPayload_PacketType extends Enum<UnlockedRecipesPacketPayload_PacketType> {
     static Empty: UnlockedRecipesPacketPayload_PacketType;
@@ -11,7 +10,7 @@ export class UnlockedRecipesPacketPayload_PacketType extends Enum<UnlockedRecipe
     static getByName(paramarg0: string, paramarg1: UnlockedRecipesPacketPayload_PacketType): UnlockedRecipesPacketPayload_PacketType;
     static getByValue(paramarg0: number): UnlockedRecipesPacketPayload_PacketType;
     static getByValue(paramarg0: number, paramarg1: UnlockedRecipesPacketPayload_PacketType): UnlockedRecipesPacketPayload_PacketType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): UnlockedRecipesPacketPayload_PacketType;
     static values(): UnlockedRecipesPacketPayload_PacketType[];
     private constructor(arg2: number)

@@ -9,6 +9,7 @@ import type { RewritePolicy } from '../../../../../../../org/apache/logging/log4
 import type { PurgePolicy } from '../../../../../../../org/apache/logging/log4j/core/appender/routing/PurgePolicy.d.ts'
 import type { Route } from '../../../../../../../org/apache/logging/log4j/core/appender/routing/Route.d.ts'
 import type { Routes } from '../../../../../../../org/apache/logging/log4j/core/appender/routing/Routes.d.ts'
+import type { RoutingAppender$Builder } from '../../../../../../../org/apache/logging/log4j/core/appender/routing/RoutingAppender$Builder.d.ts'
 import type { RoutingAppender$CreatedRouteAppenderControl } from '../../../../../../../org/apache/logging/log4j/core/appender/routing/RoutingAppender$CreatedRouteAppenderControl.d.ts'
 import type { RoutingAppender$RouteAppenderControl } from '../../../../../../../org/apache/logging/log4j/core/appender/routing/RoutingAppender$RouteAppenderControl.d.ts'
 import type { AppenderControl } from '../../../../../../../org/apache/logging/log4j/core/config/AppenderControl.d.ts'
@@ -22,7 +23,7 @@ export class RoutingAppender extends AbstractAppender {
     static EMPTY_ARRAY: Appender[];
     static STATIC_VARIABLES_KEY: string;
     static createAppender(paramname: string, paramignore: string, paramroutes: Routes, paramconfig: Configuration, paramrewritePolicy: RewritePolicy, parampurgePolicy: PurgePolicy, paramfilter: Filter): RoutingAppender;
-    static newBuilder(): Object | null;
+    static newBuilder<B extends RoutingAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(arg0: string, arg1: Filter, arg2: boolean, arg3: Routes, arg4: RewritePolicy, arg5: Configuration, arg6: PurgePolicy, arg7: AbstractScript, arg8: Property[], arg9: any)
     readonly configuration: Configuration;

@@ -10,8 +10,8 @@ import type { Predicate } from '../../../../../../../java/util/function/Predicat
 import type { Stream } from '../../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export abstract class ASTNode extends Object {
-    static clone(paramarg0: ASTNode | null): ASTNode | null;
-    static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
+    static clone<N extends ASTNode>(paramarg0: N): N;
+    static clone<N extends ASTNode>(paramarg0: N[]): Stream<N>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor()
     readonly lastParent: ASTNode;

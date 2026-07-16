@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class TCPPacket$TCPFlag extends Enum<TCPPacket$TCPFlag> {
     static ACK: TCPPacket$TCPFlag;
@@ -10,7 +9,7 @@ export class TCPPacket$TCPFlag extends Enum<TCPPacket$TCPFlag> {
     static RST: TCPPacket$TCPFlag;
     static SYN: TCPPacket$TCPFlag;
     static URG: TCPPacket$TCPFlag;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TCPPacket$TCPFlag;
     static values(): TCPPacket$TCPFlag[];
     private constructor(arg2: number)

@@ -9,7 +9,7 @@ import type { BitSet } from '../../../../../java/util/BitSet.d.ts'
 import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class BlockRenameFix extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     static create(paramoutputSchema: Schema, paramname: string, paramrenamer: (param0: string) => string): DataFix;
     constructor(outputSchema: Schema, name: string)
     // private name: string;

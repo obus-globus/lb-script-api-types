@@ -14,7 +14,7 @@ import type { ClientboundCommandsPacket$NodeBuilder } from '../../../../../net/m
 import type { ClientboundCommandsPacket$NodeInspector } from '../../../../../net/minecraft/network/protocol/game/ClientboundCommandsPacket$NodeInspector.d.ts'
 export class ClientboundCommandsPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundCommandsPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(root: RootCommandNode<Object>, inspector: ClientboundCommandsPacket$NodeInspector<Object>)
     // private entries: ClientboundCommandsPacket$Entry[];
     // private rootIndex: number;

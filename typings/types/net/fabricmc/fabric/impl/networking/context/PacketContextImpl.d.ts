@@ -19,12 +19,12 @@ export class PacketContextImpl extends Object implements PacketContext {
     static SERVER_INSTANCE: PacketContext$Key<MinecraftServer>;
     static VALUE: ScopedValue<PacketContext>;
     static get(): PacketContext;
-    static key(paramarg0: Identifier): PacketContext$Key<Object>;
+    static key<T extends unknown>(paramarg0: Identifier): PacketContext$Key<T>;
     static orElseThrow(): PacketContext;
     static runWithContext(paramarg0: PacketContextProvider, paramarg1: () => void): void;
     static runWithoutContext(paramarg0: () => void): void;
-    static supplyWithContext(paramarg0: PacketContextProvider, paramarg1: () => Object | null): Object | null;
-    static supplyWithoutContext(paramarg0: () => Object | null): Object | null;
+    static supplyWithContext<T extends unknown>(paramarg0: PacketContextProvider, paramarg1: () => T): T;
+    static supplyWithoutContext<T extends unknown>(paramarg0: () => T): T;
     constructor(arg0: Connection)
     // private contextMap: Map<PacketContext$Key<Object>, Object>;
     // private lock: ReadWriteLock;

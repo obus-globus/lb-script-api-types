@@ -1,7 +1,6 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { AccessFlag } from '../../../java/lang/reflect/AccessFlag.d.ts'
 import type { ClassFileFormatVersion } from '../../../java/lang/reflect/ClassFileFormatVersion.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 import type { Map$Entry } from '../../../java/util/Map$Entry.d.ts'
 export class AccessFlag$Location extends Enum<AccessFlag$Location> {
@@ -14,7 +13,7 @@ export class AccessFlag$Location extends Enum<AccessFlag$Location> {
     static MODULE_EXPORTS: AccessFlag$Location;
     static MODULE_OPENS: AccessFlag$Location;
     static MODULE_REQUIRES: AccessFlag$Location;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): AccessFlag$Location;
     static values(): AccessFlag$Location[];
     private constructor(arg2: number, arg3: Map$Entry<ClassFileFormatVersion, number>[])

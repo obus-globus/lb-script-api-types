@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class MappingFlag extends Enum<MappingFlag> {
     static NEEDS_DST_FIELD_DESC: MappingFlag;
@@ -11,7 +10,7 @@ export class MappingFlag extends Enum<MappingFlag> {
     static NEEDS_SRC_FIELD_DESC: MappingFlag;
     static NEEDS_SRC_METHOD_DESC: MappingFlag;
     static NONE: MappingFlag[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MappingFlag;
     static values(): MappingFlag[];
     private constructor()

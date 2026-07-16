@@ -11,7 +11,7 @@ export class InventoryItemSlot extends Object implements ItemSlot {
     static PREFER_FEWER_ITEM: (param0: Object, param1: Object) => number;
     static PREFER_MORE_ITEM: (param0: Object, param1: Object) => number;
     static PREFER_NEARBY: (param0: ItemSlot, param1: ItemSlot) => number;
-    static of(paramarg0: number): InventoryItemSlot;
+    static of(inventorySlot: number): InventoryItemSlot;
     private constructor(inventorySlot: number)
     // private inventorySlot: number;
     readonly itemStack: ItemStack;

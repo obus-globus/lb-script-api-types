@@ -126,7 +126,7 @@ export abstract class MinecraftServer extends ReentrantBlockableEventLoop<TickTa
     static createMisplacedChunkReport(paramstoredPos: ChunkPos, paramrequestedPos: ChunkPos): ReportedException;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
-    static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
+    static spin<S extends MinecraftServer>(paramfactory: (param0: Thread) => S): S;
     constructor(serverThread: Thread, storageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, proxy: Proxy, fixerUpper: DataFixer, services: Services, levelLoadListener: LevelLoadListener, propagatesCrashes: boolean, notificationManager: NotificationManager)
     // private aggregatedTickTimesNanos: number;
     // private clockManager: ServerClockManager;

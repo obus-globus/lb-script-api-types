@@ -46,7 +46,7 @@ export class IntegratedServer extends MinecraftServer {
     static configurePackRepository(parampackRepository: PackRepository, paraminitialDataConfig: WorldDataConfiguration, paraminitMode: boolean, paramsafeMode: boolean): WorldDataConfiguration;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
-    static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
+    static spin<S extends MinecraftServer>(paramfactory: (param0: Thread) => S): S;
     constructor(serverThread: Thread, minecraft: Minecraft, levelStorageAccess: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, gameRules: Optional<GameRules>, services: Services, levelLoadListener: LevelLoadListener)
     readonly gameTypeForOtherPlayers: GameType;
     // private gizmoCollector: SimpleGizmoCollector;

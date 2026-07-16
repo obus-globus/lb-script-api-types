@@ -16,7 +16,7 @@ export class TargetSelector extends Object {
     static parseAndValidate(paramarg0: IAnnotationHandle, paramarg1: ISelectorContext): ITargetSelector;
     static parseName(paramarg0: string, paramarg1: ISelectorContext): string;
     static register(paramarg0: Class<ITargetSelectorDynamic>, paramarg1: string): void;
-    static run(paramarg0: ITargetSelector[], paramarg1: ElementNode<Object>[]): TargetSelector$Result<Object>;
-    static run(paramarg0: ITargetSelector, paramarg1: ElementNode<Object>[]): TargetSelector$Result<Object>;
+    static run<TNode extends unknown>(paramarg0: ITargetSelector[], paramarg1: ElementNode<TNode>[]): TargetSelector$Result<TNode>;
+    static run<TNode extends unknown>(paramarg0: ITargetSelector, paramarg1: ElementNode<TNode>[]): TargetSelector$Result<TNode>;
     private constructor()
 }

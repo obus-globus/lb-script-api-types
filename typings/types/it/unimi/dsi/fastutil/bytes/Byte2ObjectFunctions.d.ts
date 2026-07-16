@@ -4,10 +4,10 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Byte2ObjectFunctions extends Object {
     static EMPTY_FUNCTION: Byte2ObjectFunctions$EmptyFunction<Object>;
-    static primitive(paramarg0: (param0: Object) => Object | null): (param0: number) => Object | null;
-    static singleton(paramarg0: number, paramarg1: Object | null): (param0: number) => Object | null;
-    static synchronize(paramarg0: (param0: number) => Object | null): (param0: number) => Object | null;
-    static synchronize(paramarg0: (param0: number) => Object | null, paramarg1: Object): (param0: number) => Object | null;
-    static unmodifiable(paramarg0: (param0: number) => Object | null): (param0: number) => Object | null;
+    static primitive<V extends unknown>(paramarg0: (param0: Object) => V): (param0: number) => V;
+    static singleton<V extends unknown>(paramarg0: number, paramarg1: V): (param0: number) => V;
+    static synchronize<V extends unknown>(paramarg0: (param0: number) => V): (param0: number) => V;
+    static synchronize<V extends unknown>(paramarg0: (param0: number) => V, paramarg1: Object): (param0: number) => V;
+    static unmodifiable<V extends unknown>(paramarg0: (param0: number) => V): (param0: number) => V;
     private constructor()
 }

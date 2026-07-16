@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class MetricCategory extends Enum<MetricCategory> {
     static CHUNK_RENDERING: MetricCategory;
@@ -11,7 +10,7 @@ export class MetricCategory extends Enum<MetricCategory> {
     static JVM: MetricCategory;
     static PATH_FINDING: MetricCategory;
     static TICK_LOOP: MetricCategory;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): MetricCategory;
     static values(): MetricCategory[];
     private constructor(description: string)

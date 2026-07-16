@@ -6,7 +6,7 @@ import type { SyncedDataHolder } from '../../../../net/minecraft/network/syncher
 import type { SynchedEntityData$DataItem } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataItem.d.ts'
 import type { SynchedEntityData$DataValue } from '../../../../net/minecraft/network/syncher/SynchedEntityData$DataValue.d.ts'
 export class SynchedEntityData extends Object {
-    static defineId(paramclazz: Class<SyncedDataHolder>, paramtype: EntityDataSerializer<Object>): EntityDataAccessor<Object>;
+    static defineId<T extends unknown>(paramclazz: Class<SyncedDataHolder>, paramtype: EntityDataSerializer<T>): EntityDataAccessor<T>;
     private constructor(entity: SyncedDataHolder, itemsById: SynchedEntityData$DataItem<Object>[])
     // private entity: SyncedDataHolder;
     // private isDirty: boolean;

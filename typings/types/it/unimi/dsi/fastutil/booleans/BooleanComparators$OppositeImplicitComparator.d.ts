@@ -6,9 +6,10 @@ import type { BooleanComparator } from '../../../../../it/unimi/dsi/fastutil/boo
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../../java/lang/Comparable.d.ts'
 export class BooleanComparators$OppositeImplicitComparator extends Object implements BooleanComparator, Serializable {
-    static comparing(paramarg0: (param0: boolean) => Object | null): (param0: boolean, param1: boolean) => number;
-    static comparing(paramarg0: (param0: boolean) => Object | null, paramarg1: (param0: Object, param1: Object) => number): (param0: boolean, param1: boolean) => number;
+    static comparing<U extends Comparable<Object>>(paramarg0: (param0: boolean) => U): (param0: boolean, param1: boolean) => number;
+    static comparing<U extends Comparable<Object>>(paramarg0: (param0: boolean) => U, paramarg1: (param0: Object, param1: Object) => number): (param0: boolean, param1: boolean) => number;
     static comparingDouble(paramarg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
     static comparingInt(paramarg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;
     static comparingLong(paramarg0: (param0: boolean) => number): (param0: boolean, param1: boolean) => number;

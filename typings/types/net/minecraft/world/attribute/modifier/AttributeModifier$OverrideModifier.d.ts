@@ -11,7 +11,7 @@ export class AttributeModifier$OverrideModifier<Value extends unknown> extends R
     static FLOAT_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
     static INTEGER_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
     static RGB_COLOR_LIBRARY: Map<AttributeModifier$OperationId, AttributeModifier<number, Object>>;
-    static override(): AttributeModifier<Object, Object>;
+    static override<Value extends unknown>(): AttributeModifier<Value, Value>;
     constructor()
     apply(subject: Value, argument: Value): Value;
     argumentCodec(attribute: EnvironmentAttribute<Value>): Codec<Value>;

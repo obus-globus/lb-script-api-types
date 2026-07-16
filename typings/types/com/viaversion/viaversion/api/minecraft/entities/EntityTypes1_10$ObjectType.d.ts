@@ -1,7 +1,6 @@
 import type { EntityTypes1_10$EntityType } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityTypes1_10$EntityType.d.ts'
 import type { ObjectType } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/ObjectType.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class EntityTypes1_10$ObjectType extends Enum<EntityTypes1_10$ObjectType> implements ObjectType {
     static AREA_EFFECT_CLOUD: EntityTypes1_10$ObjectType;
@@ -37,7 +36,7 @@ export class EntityTypes1_10$ObjectType extends Enum<EntityTypes1_10$ObjectType>
     static WITHER_SKULL: EntityTypes1_10$ObjectType;
     static findById(paramarg0: number, paramarg1: number): EntityTypes1_10$ObjectType;
     static getEntityType(paramarg0: number, paramarg1: number): EntityTypes1_10$EntityType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityTypes1_10$ObjectType;
     static values(): EntityTypes1_10$ObjectType[];
     private constructor(arg2: number, arg3: EntityTypes1_10$EntityType)

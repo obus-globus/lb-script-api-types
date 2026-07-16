@@ -1,10 +1,12 @@
 import type { Predicate } from '../../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { BlockPos } from '../../../../../net/minecraft/core/BlockPos.d.ts'
 import type { BlockPos$MutableBlockPos } from '../../../../../net/minecraft/core/BlockPos$MutableBlockPos.d.ts'
 import type { BedRule } from '../../../../../net/minecraft/world/attribute/BedRule.d.ts'
 import type { Entity } from '../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { EntityGetter } from '../../../../../net/minecraft/world/level/EntityGetter.d.ts'
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
+import type { BlockState } from '../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 import type { ChunkAccess } from '../../../../../net/minecraft/world/level/chunk/ChunkAccess.d.ts'
 import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 import type { LevelChunkSection } from '../../../../../net/minecraft/world/level/chunk/LevelChunkSection.d.ts'
@@ -17,7 +19,7 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L83 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:83}
      */
-    static forEachBlock(levelChunkSection: LevelChunkSection, action: (param0: Object, param1: Object, param2: Object, param3: Object) => void): void;
+    static forEachBlock(self: LevelChunkSection, action: (param0: number, param1: number, param2: number, param3: BlockState) => void): void;
     /**
      * Iterates all blocks in a specific section index and exposes world-space block positions.
      *
@@ -27,10 +29,10 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L64 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:64}
      */
-    static forEachSectionBlock(levelChunk: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: (param0: Object, param1: Object) => void): void;
+    static forEachSectionBlock(self: LevelChunk, sectionIndex: number, mutable: BlockPos$MutableBlockPos, action: (param0: BlockPos, param1: BlockState) => void): void;
     static getBedRule(paramarg0: Level): BedRule;
-    static getEntitiesInCube(entityGetter: EntityGetter, midPos: Vec3, range: number, predicate: (param0: Entity | null) => boolean): (Entity | null)[];
-    static getEntitiesInCube(entityGetter: EntityGetter, midPos: Vec3, range: number, exclusion: Entity, predicate: (param0: Entity) => boolean): Entity[];
+    static getEntitiesInCube<T extends Entity>(self: EntityGetter, midPos: Vec3, range: number, predicate: (param0: T) => boolean): T[];
+    static getEntitiesInCube(self: EntityGetter, midPos: Vec3, range: number, exclusion: Entity | null, predicate: (param0: Entity) => boolean): Entity[];
     /**
      * Returns the loaded section slice from section 0 through {@link ChunkAccess.highestFilledSectionIndex}.
      *
@@ -51,5 +53,5 @@ export class WorldExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt#L99 | src/main/kotlin/net/ccbluex/liquidbounce/utils/world/WorldExtensions.kt:99}
      */
-    static sectionBottomY(chunkAccess: ChunkAccess, index: number): number;
+    static sectionBottomY(self: ChunkAccess, index: number): number;
 }

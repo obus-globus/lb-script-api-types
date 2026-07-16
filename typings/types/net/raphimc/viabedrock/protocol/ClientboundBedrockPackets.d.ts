@@ -2,7 +2,6 @@ import type { ClientboundPacketType } from '../../../../com/viaversion/viaversio
 import type { Direction } from '../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { State } from '../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class ClientboundBedrockPackets extends Enum<ClientboundBedrockPackets> implements ClientboundPacketType {
     static ADD_BEHAVIOR_TREE: ClientboundBedrockPackets;
@@ -184,7 +183,7 @@ export class ClientboundBedrockPackets extends Enum<ClientboundBedrockPackets> i
     static UPDATE_TRADE: ClientboundBedrockPackets;
     static VOXEL_SHAPES: ClientboundBedrockPackets;
     static getPacket(paramarg0: number): ClientboundBedrockPackets;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ClientboundBedrockPackets;
     static values(): ClientboundBedrockPackets[];
     private constructor(arg2: number)

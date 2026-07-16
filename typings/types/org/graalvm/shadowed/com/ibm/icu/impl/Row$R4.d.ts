@@ -4,9 +4,9 @@ import type { Row$R2 } from '../../../../../../../org/graalvm/shadowed/com/ibm/i
 import type { Row$R3 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/Row$R3.d.ts'
 import type { Row$R5 } from '../../../../../../../org/graalvm/shadowed/com/ibm/icu/impl/Row$R5.d.ts'
 export class Row$R4<C0 extends unknown, C1 extends unknown, C2 extends unknown, C3 extends unknown> extends Row<C0, C1, C2, C3, C3> {
-    static of(paramp0: Object | null, paramp1: Object | null, paramp2: Object | null, paramp3: Object | null, paramp4: Object | null): Row$R5<Object, Object, Object, Object, Object>;
-    static of(paramp0: Object | null, paramp1: Object | null, paramp2: Object | null, paramp3: Object | null): Row$R4<Object, Object, Object, Object>;
-    static of(paramp0: Object | null, paramp1: Object | null, paramp2: Object | null): Row$R3<Object, Object, Object>;
-    static of(paramp0: Object | null, paramp1: Object | null): Row$R2<Object, Object>;
+    static of<C0 extends unknown, C1 extends unknown, C2 extends unknown, C3 extends unknown, C4 extends unknown>(paramp0: C0, paramp1: C1, paramp2: C2, paramp3: C3, paramp4: C4): Row$R5<C0, C1, C2, C3, C4>;
+    static of<C0 extends unknown, C1 extends unknown, C2 extends unknown, C3 extends unknown>(paramp0: C0, paramp1: C1, paramp2: C2, paramp3: C3): Row$R4<C0, C1, C2, C3>;
+    static of<C0 extends unknown, C1 extends unknown, C2 extends unknown>(paramp0: C0, paramp1: C1, paramp2: C2): Row$R3<C0, C1, C2>;
+    static of<C0 extends unknown, C1 extends unknown>(paramp0: C0, paramp1: C1): Row$R2<C0, C1>;
     constructor(a: C0, b: C1, c: C2, d: C3)
 }

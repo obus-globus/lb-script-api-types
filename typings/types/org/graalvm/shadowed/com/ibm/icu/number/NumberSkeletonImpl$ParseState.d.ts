@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class NumberSkeletonImpl$ParseState extends Enum<NumberSkeletonImpl$ParseState> {
     static STATE_CURRENCY_UNIT: NumberSkeletonImpl$ParseState;
@@ -15,7 +14,7 @@ export class NumberSkeletonImpl$ParseState extends Enum<NumberSkeletonImpl$Parse
     static STATE_SCALE: NumberSkeletonImpl$ParseState;
     static STATE_SCIENTIFIC: NumberSkeletonImpl$ParseState;
     static STATE_UNIT_USAGE: NumberSkeletonImpl$ParseState;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): NumberSkeletonImpl$ParseState;
     static values(): NumberSkeletonImpl$ParseState[];
     private constructor()

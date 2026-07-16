@@ -11,7 +11,7 @@ import type { DisplaySlot } from '../../../../../net/minecraft/world/scores/Disp
 import type { Objective } from '../../../../../net/minecraft/world/scores/Objective.d.ts'
 export class ClientboundSetDisplayObjectivePacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundSetDisplayObjectivePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(slot: DisplaySlot, objective: Objective)
     readonly objectiveName: string;
     readonly slot: DisplaySlot;

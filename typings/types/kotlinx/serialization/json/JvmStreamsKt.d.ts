@@ -7,10 +7,10 @@ import type { SerializationStrategy } from '../../../kotlinx/serialization/Seria
 import type { DecodeSequenceMode } from '../../../kotlinx/serialization/json/DecodeSequenceMode.d.ts'
 import type { Json } from '../../../kotlinx/serialization/json/Json.d.ts'
 export class JvmStreamsKt extends Object {
-    static decodeFromStream(paramarg0: Json, paramarg1: InputStream): Object | null;
-    static decodeFromStream(paramarg0: Json, paramarg1: DeserializationStrategy<Object>, paramarg2: InputStream): Object | null;
-    static decodeToSequence(paramarg0: Json, paramarg1: InputStream, paramarg2: DeserializationStrategy<Object>, paramarg3: DecodeSequenceMode): Sequence<Object>;
-    static decodeToSequence(paramarg0: Json, paramarg1: InputStream, paramarg2: DecodeSequenceMode): Sequence<Object>;
-    static encodeToStream(paramarg0: Json, paramarg1: Object | null, paramarg2: OutputStream): void;
-    static encodeToStream(paramarg0: Json, paramarg1: SerializationStrategy<Object>, paramarg2: Object | null, paramarg3: OutputStream): void;
+    static decodeFromStream<T extends unknown>(self: Json, stream: InputStream): T;
+    static decodeFromStream<T extends unknown>(self: Json, deserializer: DeserializationStrategy<T>, stream: InputStream): T;
+    static decodeToSequence<T extends unknown>(self: Json, stream: InputStream, deserializer: DeserializationStrategy<T>, format: DecodeSequenceMode): Sequence<T>;
+    static decodeToSequence<T extends unknown>(self: Json, stream: InputStream, format: DecodeSequenceMode): Sequence<T>;
+    static encodeToStream<T extends unknown>(self: Json, value: T, stream: OutputStream): void;
+    static encodeToStream<T extends unknown>(self: Json, serializer: SerializationStrategy<T>, value: T, stream: OutputStream): void;
 }

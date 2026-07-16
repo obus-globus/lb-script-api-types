@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class VisitTrackingClassRemapper$VisitKind extends Enum<VisitTrackingClassRemapper$VisitKind> {
     static ANNOTATION: VisitTrackingClassRemapper$VisitKind;
@@ -17,7 +16,7 @@ export class VisitTrackingClassRemapper$VisitKind extends Enum<VisitTrackingClas
     static RECORD_COMPONENT: VisitTrackingClassRemapper$VisitKind;
     static SOURCE: VisitTrackingClassRemapper$VisitKind;
     static TYPE_ANNOTATION: VisitTrackingClassRemapper$VisitKind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): VisitTrackingClassRemapper$VisitKind;
     static values(): VisitTrackingClassRemapper$VisitKind[];
     private constructor()

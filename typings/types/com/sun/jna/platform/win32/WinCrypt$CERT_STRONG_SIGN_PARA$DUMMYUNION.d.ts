@@ -16,8 +16,8 @@ export class WinCrypt$CERT_STRONG_SIGN_PARA$DUMMYUNION extends Union {
     static createFieldsOrder(...paramarg0: string[]): string[];
     static createFieldsOrder(paramarg0: string[], ...paramarg1: string[]): string[];
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
-    static newInstance(paramarg0: Class<Structure>): Structure | null;
-    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
+    static newInstance<T extends Structure>(paramarg0: Class<T>): T;
+    static newInstance<T extends Structure>(paramarg0: Class<T>, paramarg1: Pointer): T;
     constructor(null_: WinCrypt$CERT_STRONG_SIGN_PARA)
     // private pSerializedInfo: WinCrypt$CERT_STRONG_SIGN_SERIALIZED_INFO$ByReference;
     // private pszOID: WTypes$LPSTR;

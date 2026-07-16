@@ -3,8 +3,8 @@ import type { Object } from '../java/lang/Object.d.ts'
 import type { MediaType$Companion } from '../okhttp3/MediaType$Companion.d.ts'
 export class MediaType extends Object {
     static Companion: MediaType$Companion;
-    static get(paramarg0: string): MediaType;
-    static parse(paramarg0: string): MediaType;
+    static get(self: string): MediaType;
+    static parse(self: string): MediaType | null;
     constructor(mediaType: string, type: string, subtype: string, parameterNamesAndValues: string[])
     // private mediaType: string;
     /*not mapped: */ getMediaType$okhttp(): string;

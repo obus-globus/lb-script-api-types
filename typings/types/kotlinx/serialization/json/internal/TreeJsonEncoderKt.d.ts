@@ -5,6 +5,6 @@ import type { JsonDecoder } from '../../../../kotlinx/serialization/json/JsonDec
 import type { JsonElement } from '../../../../kotlinx/serialization/json/JsonElement.d.ts'
 export class TreeJsonEncoderKt extends Object {
     static PRIMITIVE_TAG: string;
-    static cast(paramarg0: JsonDecoder, paramarg1: JsonElement, paramarg2: string, paramarg3: () => string): JsonElement | null;
-    static writeJson(paramarg0: Json, paramarg1: Object | null, paramarg2: SerializationStrategy<Object>): JsonElement;
+    static cast<T extends JsonElement>(self: JsonDecoder, value: JsonElement, serialName: string, path: () => string): T;
+    static writeJson<T extends unknown>(json: Json, value: T, serializer: SerializationStrategy<T>): JsonElement;
 }

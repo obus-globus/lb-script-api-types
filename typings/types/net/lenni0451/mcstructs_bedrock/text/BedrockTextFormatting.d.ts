@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { BedrockTextFormatting$Type } from '../../../../net/lenni0451/mcstructs_bedrock/text/BedrockTextFormatting$Type.d.ts'
 export class BedrockTextFormatting extends Enum<BedrockTextFormatting> {
@@ -43,7 +42,7 @@ export class BedrockTextFormatting extends Enum<BedrockTextFormatting> {
     static getByName(paramarg0: string): BedrockTextFormatting;
     static getByOrdinal(paramarg0: number): BedrockTextFormatting;
     static getClosestFormattingColor(paramarg0: number): BedrockTextFormatting;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BedrockTextFormatting;
     static values(): BedrockTextFormatting[];
     private constructor(arg2: string, arg3: string)

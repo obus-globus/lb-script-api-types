@@ -13,7 +13,7 @@ export class NbtUtils extends Object {
     static SNBT_DATA_TAG: string;
     static addCurrentDataVersion(paramtag: CompoundTag): CompoundTag;
     static addCurrentDataVersion(paramoutput: ValueOutput): void;
-    static addDataVersion(paramtag: Dynamic<Object>, paramversion: number): Dynamic<Object>;
+    static addDataVersion<T extends unknown>(paramtag: Dynamic<T>, paramversion: number): Dynamic<T>;
     static addDataVersion(paramtag: CompoundTag, paramversion: number): CompoundTag;
     static addDataVersion(paramoutput: ValueOutput, paramversion: number): void;
     static compareNbt(paramexpected: Tag, paramactual: Tag, parampartialListMatches: boolean): boolean;

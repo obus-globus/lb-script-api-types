@@ -18,9 +18,9 @@ export class ArmorItemSlot extends Enum<ArmorItemSlot> implements ItemSlot {
     static PREFER_MORE_ITEM: (param0: Object, param1: Object) => number;
     static PREFER_NEARBY: (param0: ItemSlot, param1: ItemSlot) => number;
     static getEntries(): ArmorItemSlot[];
-    static of(paramarg0: EquipmentSlot): ArmorItemSlot;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ArmorItemSlot;
+    static of(equipmentSlot: EquipmentSlot): ArmorItemSlot;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ArmorItemSlot;
     static values(): ArmorItemSlot[];
     private constructor(equipmentSlot: EquipmentSlot)
     equipmentSlot: EquipmentSlot;

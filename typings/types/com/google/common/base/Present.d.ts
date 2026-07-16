@@ -4,12 +4,12 @@ import type { Supplier } from '../../../../com/google/common/base/Supplier.d.ts'
 import type { Optional as Optional_2 } from '../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Present<T extends unknown> extends Optional<T> {
-    static absent(): Optional<Object>;
-    static fromJavaUtil(paramjavaUtilOptional: Optional_2<Object>): Optional<Object>;
-    static fromNullable(paramnullableReference: Object | null): Optional<Object>;
-    static of(paramreference: Object | null): Optional<Object>;
-    static presentInstances(paramoptionals: Optional<Object>[]): (Object | null)[];
-    static toJavaUtil(paramgoogleOptional: Optional<Object>): Optional_2<Object>;
+    static absent<T extends unknown>(): Optional<T>;
+    static fromJavaUtil<T extends unknown>(paramjavaUtilOptional: Optional_2<T>): Optional<T>;
+    static fromNullable<T extends unknown>(paramnullableReference: T): Optional<T>;
+    static of<T extends unknown>(paramreference: T): Optional<T>;
+    static presentInstances<T extends unknown>(paramoptionals: Optional<T>[]): T[];
+    static toJavaUtil<T extends unknown>(paramgoogleOptional: Optional<T>): Optional_2<T>;
     constructor(reference: T)
     // private reference: T;
     asSet(): T[];

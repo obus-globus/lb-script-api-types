@@ -8,8 +8,8 @@ import type { JSIsNullOrUndefinedNodeGen$JSValueOrForeign0Data } from '../../../
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSIsNullOrUndefinedNodeGen extends JSIsNullOrUndefinedNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(): JSIsNullOrUndefinedNode;
     static create(paramoperand: JavaScriptNode, paramisUndefined: boolean, paramisLeft: boolean): JSIsNullOrUndefinedNode;
     static createFromEquals(paramleft: JavaScriptNode, paramright: JavaScriptNode): JSIsNullOrUndefinedNode;

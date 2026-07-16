@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class CefPrintSettings$ColorModel extends Enum<CefPrintSettings$ColorModel> {
     static COLOR_MODEL_BLACK: CefPrintSettings$ColorModel;
@@ -23,7 +22,7 @@ export class CefPrintSettings$ColorModel extends Enum<CefPrintSettings$ColorMode
     static COLOR_MODEL_RGB16: CefPrintSettings$ColorModel;
     static COLOR_MODEL_RGBA: CefPrintSettings$ColorModel;
     static COLOR_MODEL_UNKNOWN: CefPrintSettings$ColorModel;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CefPrintSettings$ColorModel;
     static values(): CefPrintSettings$ColorModel[];
     private constructor()

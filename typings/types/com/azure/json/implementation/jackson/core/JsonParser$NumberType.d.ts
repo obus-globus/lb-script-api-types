@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class JsonParser$NumberType extends Enum<JsonParser$NumberType> {
     static BIG_DECIMAL: JsonParser$NumberType;
@@ -8,7 +7,7 @@ export class JsonParser$NumberType extends Enum<JsonParser$NumberType> {
     static FLOAT: JsonParser$NumberType;
     static INT: JsonParser$NumberType;
     static LONG: JsonParser$NumberType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): JsonParser$NumberType;
     static values(): JsonParser$NumberType[];
     private constructor()

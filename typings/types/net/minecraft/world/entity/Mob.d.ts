@@ -164,7 +164,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     static WEARING_ARMOR_UPGRADE_MATERIAL_CHANCE: number;
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
-    static angularFriction(paramentity: Entity | null): number;
+    static angularFriction<E extends Entity & Leashable>(paramentity: E): number;
     static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
@@ -182,7 +182,7 @@ export abstract class Mob extends LivingEntity implements NavigatingEntity, Equi
     static leashableLeashedTo(paramentity: Entity): Leashable[];
     static resetForwardDirectionOfRelativePortalPosition(paramoffsets: Vec3): Vec3;
     static setViewScale(paramviewScale: number): void;
-    static tickLeash(paramlevel: ServerLevel, paramentity: Entity | null): void;
+    static tickLeash<E extends Entity & Leashable>(paramlevel: ServerLevel, paramentity: E): void;
     constructor(type: EntityType<Mob>, level: Level)
     ambientSoundTime: number;
     // private bodyRotationControl: BodyRotationControl;

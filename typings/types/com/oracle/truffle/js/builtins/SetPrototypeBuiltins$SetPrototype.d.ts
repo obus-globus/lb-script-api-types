@@ -16,7 +16,7 @@ export class SetPrototypeBuiltins$SetPrototype extends Enum<SetPrototypeBuiltins
     static size: SetPrototypeBuiltins$SetPrototype;
     static values: SetPrototypeBuiltins$SetPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): SetPrototypeBuiltins$SetPrototype;
     static values(): SetPrototypeBuiltins$SetPrototype[];
     private constructor(length: number)

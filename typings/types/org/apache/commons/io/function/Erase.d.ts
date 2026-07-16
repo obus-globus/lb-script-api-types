@@ -2,6 +2,6 @@ import type { RuntimeException } from '../../../../../java/lang/RuntimeException
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class Erase extends Object {
-    static rethrow(paramarg0: Throwable): RuntimeException;
+    static rethrow<T extends Throwable>(paramarg0: Throwable): RuntimeException;
     private constructor()
 }

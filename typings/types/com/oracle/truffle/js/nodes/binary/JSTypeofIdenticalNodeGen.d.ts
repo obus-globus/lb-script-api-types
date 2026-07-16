@@ -11,8 +11,8 @@ import type { IsCallableNode } from '../../../../../../com/oracle/truffle/js/nod
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSTypeofIdenticalNodeGen extends JSTypeofIdenticalNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramchildNode: JavaScriptNode, paramstring: TruffleString): JSTypeofIdenticalNode;
     static create(paramchildNode: JavaScriptNode, paramconstStringNode: JSConstantNode$JSConstantStringNode): JSTypeofIdenticalNode;
     static create(paramchildNode: JavaScriptNode, paramtype: JSTypeofIdenticalNode$Type): JSTypeofIdenticalNode;

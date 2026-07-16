@@ -8,8 +8,8 @@ import type { RealConnection } from '../../okhttp3/internal/connection/RealConne
 import type { FileSystem } from '../../okio/FileSystem.d.ts'
 import type { Path } from '../../okio/Path.d.ts'
 export class NativeImageTestsAccessorsKt extends Object {
-    static buildCache(paramarg0: Path, paramarg1: number, paramarg2: FileSystem): Cache;
-    static finishedAccessor(paramarg0: Dispatcher, paramarg1: RealCall$AsyncCall): void;
+    static buildCache(file: Path, maxSize: number, fileSystem: FileSystem): Cache;
+    static finishedAccessor(self: Dispatcher, call: RealCall$AsyncCall): void;
     static getConnectionAccessor(paramarg0: Exchange): RealConnection;
     static getExchangeAccessor(paramarg0: Response): Exchange;
     static getIdleAtNsAccessor(paramarg0: RealConnection): number;

@@ -30,7 +30,7 @@ export interface DataResult<R extends unknown> extends App<DataResult$Mu, R>, Ob
     isSuccess(): boolean;
     lifecycle(): Lifecycle;
     map<T extends unknown>(arg0: (param0: R) => T): DataResult<T>;
-    mapError(arg0: (param0: string) => Object | null): DataResult<R>;
+    mapError(arg0: (param0: string) => string): DataResult<R>;
     mapOrElse<T extends unknown>(arg0: (param0: R) => T, arg1: (param0: DataResult$Error<R>) => T): T;
     promotePartial(arg0: (param0: string) => void): DataResult<R>;
     result(): Optional<R>;

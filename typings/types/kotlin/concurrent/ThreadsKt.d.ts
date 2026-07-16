@@ -2,5 +2,5 @@ import type { ClassLoader } from '../../java/lang/ClassLoader.d.ts'
 import type { Thread } from '../../java/lang/Thread.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class ThreadsKt extends Object {
-    static thread(paramarg0: boolean, paramarg1: boolean, paramarg2: ClassLoader, paramarg3: string, paramarg4: number, paramarg5: () => void): Thread;
+    static thread(start: boolean, isDaemon: boolean, contextClassLoader: ClassLoader | null, name: string | null, priority: number, block: () => void): Thread;
 }

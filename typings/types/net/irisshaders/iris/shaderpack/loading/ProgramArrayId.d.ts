@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { ProgramGroup } from '../../../../../net/irisshaders/iris/shaderpack/loading/ProgramGroup.d.ts'
 export class ProgramArrayId extends Enum<ProgramArrayId> {
@@ -9,7 +8,7 @@ export class ProgramArrayId extends Enum<ProgramArrayId> {
     static Prepare: ProgramArrayId;
     static Setup: ProgramArrayId;
     static ShadowComposite: ProgramArrayId;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ProgramArrayId;
     static values(): ProgramArrayId[];
     private constructor(arg2: ProgramGroup, arg3: number)

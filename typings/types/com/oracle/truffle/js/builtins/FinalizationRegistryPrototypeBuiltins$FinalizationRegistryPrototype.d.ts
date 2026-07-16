@@ -11,7 +11,7 @@ export class FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype
     static register: FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype;
     static unregister: FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype;
     static values(): FinalizationRegistryPrototypeBuiltins$FinalizationRegistryPrototype[];
     private constructor(length: number)

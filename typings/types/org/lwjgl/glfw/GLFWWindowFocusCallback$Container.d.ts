@@ -14,8 +14,8 @@ export class GLFWWindowFocusCallback$Container extends GLFWWindowFocusCallback {
     static create(paramarg0: (param0: number, param1: boolean) => void): GLFWWindowFocusCallback;
     static createSafe(paramarg0: number): GLFWWindowFocusCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor(arg0: number, arg1: (param0: number, param1: boolean) => void)
     // private delegate: (param0: number, param1: boolean) => void;
     invoke(arg0: number, arg1: boolean): void;

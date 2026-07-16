@@ -10,7 +10,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 import type { RecipeBookType } from '../../../../../net/minecraft/world/inventory/RecipeBookType.d.ts'
 export class ServerboundRecipeBookChangeSettingsPacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundRecipeBookChangeSettingsPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(bookType: RecipeBookType, isOpen: boolean, isFiltering: boolean)
     readonly bookType: RecipeBookType;
     // private isFiltering: boolean;

@@ -11,7 +11,7 @@ import type { Timeline } from '../../../../net/minecraft/world/timeline/Timeline
 export class TestEnvironmentDefinition$Timelines extends Record implements TestEnvironmentDefinition<EnvironmentAttributeSystem> {
     static CODEC: MapCodec<TestEnvironmentDefinition$Timelines>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
-    static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;
+    static activate<T extends unknown>(paramenvironment: TestEnvironmentDefinition<T>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<T>;
     static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     constructor(timelines: Holder<Timeline>[])
     // private timelines: Holder<Timeline>[];

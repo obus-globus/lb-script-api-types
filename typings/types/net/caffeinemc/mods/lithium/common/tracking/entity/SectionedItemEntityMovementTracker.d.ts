@@ -5,7 +5,7 @@ import type { ServerLevel } from '../../../../../../../net/minecraft/server/leve
 import type { Entity } from '../../../../../../../net/minecraft/world/entity/Entity.d.ts'
 import type { AABB } from '../../../../../../../net/minecraft/world/phys/AABB.d.ts'
 export class SectionedItemEntityMovementTracker<S extends Entity> extends SectionedEntityMovementTracker<Entity> {
-    static registerAt(paramarg0: ServerLevel, paramarg1: AABB, paramarg2: Class<Entity>): SectionedItemEntityMovementTracker<Entity>;
+    static registerAt<S extends Entity>(paramarg0: ServerLevel, paramarg1: AABB, paramarg2: Class<S>): SectionedItemEntityMovementTracker<S>;
     constructor(arg0: WorldSectionBox, arg1: Class<S>)
     getEntities(arg0: AABB): S[];
 }

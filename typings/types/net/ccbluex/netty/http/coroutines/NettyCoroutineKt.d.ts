@@ -1,6 +1,6 @@
+import type { Future } from '../../../../../io/netty/util/concurrent/Future.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 export class NettyCoroutineKt extends Object {
-    static awaitSuspend(paramarg0: Object | null, paramarg1: Continuation<Object>): Object;
-    static syncSuspend(paramarg0: Object | null, paramarg1: Continuation<Object>): Object;
+    static awaitSuspend<F extends Future<Object>>(self: F): F;
+    static syncSuspend<F extends Future<V>>(self: F): F;
 }

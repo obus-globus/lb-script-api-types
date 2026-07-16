@@ -3,7 +3,7 @@ export class UnitCircle extends Object {
     static CIRCLE_RES: number;
     static INSTANCE: UnitCircle;
     static POINTS: number[];
-    static forEach(radius: number, consumer: (param0: Object, param1: Object) => void): void;
+    static forEach(radius: number, consumer: (param0: number, param1: number) => void): void;
     CIRCLE_RES: number;
     POINTS: number[];
     forEach(radius: number, consumer: (param0: number, param1: number) => void): void;

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CharSequence } from '../../../../java/lang/CharSequence.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class FileSystem extends Enum<FileSystem> {
@@ -8,7 +7,7 @@ export class FileSystem extends Enum<FileSystem> {
     static MAC_OSX: FileSystem;
     static WINDOWS: FileSystem;
     static getCurrent(): FileSystem;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): FileSystem;
     static values(): FileSystem[];
     private constructor(arg2: number, arg3: boolean, arg4: boolean, arg5: number, arg6: number, arg7: number[], arg8: string[], arg9: boolean, arg10: boolean, arg11: string)

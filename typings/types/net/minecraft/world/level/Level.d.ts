@@ -311,7 +311,7 @@ export abstract class Level extends Object implements AutoCloseable, ChunkRandom
     loadedAndEntityCanStandOn(pos: BlockPos, entity: Entity): boolean;
     loadedAndEntityCanStandOnFace(pos: BlockPos, entity: Entity, faceDirection: Direction): boolean;
     mayInteract(entity: Entity, pos: BlockPos): boolean;
-    modifyAttached<A extends unknown>(arg0: AttachmentType<A>, arg1: (param0: A) => Object | null): A;
+    modifyAttached<A extends unknown>(arg0: AttachmentType<A>, arg1: (param0: A) => A): A;
     neighborChanged(pos: BlockPos, changedBlock: Block, orientation: Orientation): void;
     neighborChanged(state: BlockState, pos: BlockPos, changedBlock: Block, orientation: Orientation, movedByPiston: boolean): void;
     neighborShapeChanged(direction: Direction, pos: BlockPos, neighborPos: BlockPos, neighborState: BlockState, updateFlags: number, updateLimit: number): void;

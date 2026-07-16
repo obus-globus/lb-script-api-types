@@ -1,5 +1,4 @@
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class ProcessBuilder$Redirect$Type extends Enum<ProcessBuilder$Redirect$Type> {
     static APPEND: ProcessBuilder$Redirect$Type;
@@ -7,7 +6,7 @@ export class ProcessBuilder$Redirect$Type extends Enum<ProcessBuilder$Redirect$T
     static PIPE: ProcessBuilder$Redirect$Type;
     static READ: ProcessBuilder$Redirect$Type;
     static WRITE: ProcessBuilder$Redirect$Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ProcessBuilder$Redirect$Type;
     static values(): ProcessBuilder$Redirect$Type[];
     private constructor()

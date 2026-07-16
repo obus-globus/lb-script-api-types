@@ -9,7 +9,7 @@ import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PointFreeRule$LensComp extends Enum<PointFreeRule$LensComp> implements PointFreeRule$CompRewrite {
     static INSTANCE: PointFreeRule$LensComp;
     static together(...paramarg0: PointFreeRule$CompRewrite[]): PointFreeRule$CompRewrite;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PointFreeRule$LensComp;
     static values(): PointFreeRule$LensComp[];
     private constructor()

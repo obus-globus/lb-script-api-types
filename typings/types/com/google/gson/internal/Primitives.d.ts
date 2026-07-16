@@ -4,7 +4,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Primitives extends Object {
     static isPrimitive(paramarg0: Type): boolean;
     static isWrapperType(paramarg0: Type): boolean;
-    static unwrap(paramarg0: Class<Object>): Class<Object>;
-    static wrap(paramarg0: Class<Object>): Class<Object>;
+    static unwrap<T extends unknown>(paramarg0: Class<T>): Class<T>;
+    static wrap<T extends unknown>(paramarg0: Class<T>): Class<T>;
     private constructor()
 }

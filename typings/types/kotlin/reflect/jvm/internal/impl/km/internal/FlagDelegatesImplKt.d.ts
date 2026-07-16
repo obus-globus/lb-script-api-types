@@ -21,13 +21,13 @@ export class FlagDelegatesImplKt extends Object {
     static classBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmClass>;
     static constructorBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmConstructor>;
     static functionBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmFunction>;
-    static memberKindDelegate(paramarg0: KMutableProperty1<Object, number>): EnumFlagDelegate<Object, MemberKind>;
-    static modalityDelegate(paramarg0: KMutableProperty1<Object, number>): EnumFlagDelegate<Object, Modality>;
+    static memberKindDelegate<Node extends unknown>(paramarg0: KMutableProperty1<Node, number>): EnumFlagDelegate<Node, MemberKind>;
+    static modalityDelegate<Node extends unknown>(paramarg0: KMutableProperty1<Node, number>): EnumFlagDelegate<Node, Modality>;
     static propertyAccessorBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmPropertyAccessorAttributes>;
     static propertyBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmProperty>;
-    static returnValueStatusDelegate(paramarg0: KMutableProperty1<Object, number>, paramarg1: Flags$FlagField<Internal$EnumLite>): EnumFlagDelegate<Object, ReturnValueStatus>;
+    static returnValueStatusDelegate<Node extends unknown>(paramarg0: KMutableProperty1<Node, number>, paramarg1: Flags$FlagField<Internal$EnumLite>): EnumFlagDelegate<Node, ReturnValueStatus>;
     static typeAliasBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmTypeAlias>;
     static typeBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmType>;
     static valueParameterBooleanFlag(paramarg0: FlagImpl): BooleanFlagDelegate<KmValueParameter>;
-    static visibilityDelegate(paramarg0: KMutableProperty1<Object, number>): EnumFlagDelegate<Object, Visibility>;
+    static visibilityDelegate<Node extends unknown>(paramarg0: KMutableProperty1<Node, number>): EnumFlagDelegate<Node, Visibility>;
 }

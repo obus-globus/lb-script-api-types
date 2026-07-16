@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class MixinEnvironment$CompatibilityLevel extends Enum<MixinEnvironment$CompatibilityLevel> {
     static DEFAULT: MixinEnvironment$CompatibilityLevel;
@@ -27,7 +26,7 @@ export class MixinEnvironment$CompatibilityLevel extends Enum<MixinEnvironment$C
     static forClassVersion(paramarg0: number): MixinEnvironment$CompatibilityLevel;
     static getMaxEffective(): MixinEnvironment$CompatibilityLevel;
     static requiredFor(paramarg0: number): MixinEnvironment$CompatibilityLevel;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MixinEnvironment$CompatibilityLevel;
     static values(): MixinEnvironment$CompatibilityLevel[];
     constructor(arg2: number, arg3: number, arg4: number, arg5: any)

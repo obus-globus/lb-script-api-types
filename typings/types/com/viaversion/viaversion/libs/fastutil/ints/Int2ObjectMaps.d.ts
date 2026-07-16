@@ -3,13 +3,13 @@ import type { ObjectIterator } from '../../../../../../com/viaversion/viaversion
 import type { Consumer } from '../../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class Int2ObjectMaps extends Object {
-    static emptyMap(): { [key: string]: any };
-    static fastForEach(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
-    static fastIterable(paramarg0: { [key: string]: any }): Int2ObjectMap$Entry<Object>[];
-    static fastIterator(paramarg0: { [key: string]: any }): ObjectIterator<Int2ObjectMap$Entry<Object>>;
-    static singleton(paramarg0: number, paramarg1: Object | null): { [key: string]: any };
-    static synchronize(paramarg0: { [key: string]: any }): { [key: string]: any };
-    static synchronize(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
-    static unmodifiable(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static emptyMap<V extends unknown>(): { [key: string]: any };
+    static fastForEach<V extends unknown>(paramarg0: { [key: string]: any }, paramarg1: (param0: Object) => void): void;
+    static fastIterable<V extends unknown>(paramarg0: { [key: string]: any }): Int2ObjectMap$Entry<V>[];
+    static fastIterator<V extends unknown>(paramarg0: { [key: string]: any }): ObjectIterator<Int2ObjectMap$Entry<V>>;
+    static singleton<V extends unknown>(paramarg0: number, paramarg1: V): { [key: string]: any };
+    static synchronize<V extends unknown>(paramarg0: { [key: string]: any }): { [key: string]: any };
+    static synchronize<V extends unknown>(paramarg0: { [key: string]: any }, paramarg1: Object): { [key: string]: any };
+    static unmodifiable<V extends unknown>(paramarg0: { [key: string]: any }): { [key: string]: any };
     private constructor()
 }

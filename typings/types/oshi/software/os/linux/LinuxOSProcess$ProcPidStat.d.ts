@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class LinuxOSProcess$ProcPidStat extends Enum<LinuxOSProcess$ProcPidStat> {
     static KERNEL_TIME: LinuxOSProcess$ProcPidStat;
@@ -12,7 +11,7 @@ export class LinuxOSProcess$ProcPidStat extends Enum<LinuxOSProcess$ProcPidStat>
     static THREAD_COUNT: LinuxOSProcess$ProcPidStat;
     static USER_TIME: LinuxOSProcess$ProcPidStat;
     static VSZ: LinuxOSProcess$ProcPidStat;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LinuxOSProcess$ProcPidStat;
     static values(): LinuxOSProcess$ProcPidStat[];
     private constructor(arg2: number)

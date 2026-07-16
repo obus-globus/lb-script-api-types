@@ -3,9 +3,9 @@ import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Comparator } from '../../../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ObjectLongMutablePair<K extends unknown> extends Object implements ObjectLongPair<K>, Serializable {
-    static lexComparator(): (param0: ObjectLongPair<Object>, param1: ObjectLongPair<Object>) => number;
-    static of(paramarg0: Object | null, paramarg1: number): ObjectLongMutablePair<Object>;
-    static of(paramarg0: Object | null, paramarg1: number): ObjectLongPair<Object>;
+    static lexComparator<K extends unknown>(): (param0: ObjectLongPair<K>, param1: ObjectLongPair<K>) => number;
+    static of<K extends unknown>(paramarg0: K, paramarg1: number): ObjectLongMutablePair<K>;
+    static of<K extends unknown>(paramarg0: K, paramarg1: number): ObjectLongPair<K>;
     constructor(arg0: K, arg1: number)
     // private left: K;
     // private right: number;

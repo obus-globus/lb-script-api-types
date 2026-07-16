@@ -8,8 +8,8 @@ import type { ExportResolution } from '../../../../../../com/oracle/truffle/js/r
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ReadImportBindingNodeGen extends ReadImportBindingNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramresolutionNode: JavaScriptNode): JavaScriptNode;
     static create(): ReadImportBindingNode;
     static create(paramresolutionNode: JavaScriptNode): ReadImportBindingNode;

@@ -1,6 +1,5 @@
 import type { HttpChunkLineValidatingByteProcessor$Match } from '../../../../../io/netty/handler/codec/http/HttpChunkLineValidatingByteProcessor$Match.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class HttpChunkLineValidatingByteProcessor$State extends Enum<HttpChunkLineValidatingByteProcessor$State> {
     static ChunkExtName: HttpChunkLineValidatingByteProcessor$State;
@@ -10,7 +9,7 @@ export class HttpChunkLineValidatingByteProcessor$State extends Enum<HttpChunkLi
     static ChunkExtValStart: HttpChunkLineValidatingByteProcessor$State;
     static ChunkExtValToken: HttpChunkLineValidatingByteProcessor$State;
     static Size: HttpChunkLineValidatingByteProcessor$State;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): HttpChunkLineValidatingByteProcessor$State;
     static values(): HttpChunkLineValidatingByteProcessor$State[];
     private constructor(...arg2: HttpChunkLineValidatingByteProcessor$Match[])

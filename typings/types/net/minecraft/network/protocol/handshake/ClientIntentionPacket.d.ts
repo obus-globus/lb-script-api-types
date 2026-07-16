@@ -11,7 +11,7 @@ import type { ClientIntent } from '../../../../../net/minecraft/network/protocol
 import type { ServerHandshakePacketListener } from '../../../../../net/minecraft/network/protocol/handshake/ServerHandshakePacketListener.d.ts'
 export class ClientIntentionPacket extends Record implements Packet<ServerHandshakePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientIntentionPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(protocolVersion: number, hostName: string, port: number, intention: ClientIntent)
     // private hostName: string;
     // private intention: ClientIntent;

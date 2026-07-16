@@ -24,16 +24,16 @@ import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export class CompletableFuture<T extends unknown> extends Object implements CompletionStage<T>, Future<T> {
     static allOf(...paramarg0: CompletableFuture<Object>[]): CompletableFuture<void>;
     static anyOf(...paramarg0: CompletableFuture<Object>[]): CompletableFuture<Object>;
-    static completedFuture(paramarg0: Object | null): CompletableFuture<Object>;
-    static completedStage(paramarg0: Object | null): CompletionStage<Object>;
+    static completedFuture<U extends unknown>(paramarg0: U): CompletableFuture<U>;
+    static completedStage<U extends unknown>(paramarg0: U): CompletionStage<U>;
     static delayedExecutor(paramarg0: number, paramarg1: TimeUnit): Executor;
     static delayedExecutor(paramarg0: number, paramarg1: TimeUnit, paramarg2: Executor): Executor;
-    static failedFuture(paramarg0: Throwable): CompletableFuture<Object>;
-    static failedStage(paramarg0: Throwable): CompletionStage<Object>;
+    static failedFuture<U extends unknown>(paramarg0: Throwable): CompletableFuture<U>;
+    static failedStage<U extends unknown>(paramarg0: Throwable): CompletionStage<U>;
     static runAsync(paramarg0: () => void): CompletableFuture<void>;
     static runAsync(paramarg0: () => void, paramarg1: Executor): CompletableFuture<void>;
-    static supplyAsync(paramarg0: () => Object | null): CompletableFuture<Object>;
-    static supplyAsync(paramarg0: () => Object | null, paramarg1: Executor): CompletableFuture<Object>;
+    static supplyAsync<U extends unknown>(paramarg0: () => U): CompletableFuture<U>;
+    static supplyAsync<U extends unknown>(paramarg0: () => U, paramarg1: Executor): CompletableFuture<U>;
     constructor()
     constructor(arg0: Object)
     // private result: Object;

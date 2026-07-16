@@ -2,8 +2,8 @@ import type { IntReferencePair } from '../../../../../it/unimi/dsi/fastutil/ints
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class IntReferenceMutablePair<V extends unknown> extends Object implements IntReferencePair<V>, Serializable {
-    static of(paramarg0: number, paramarg1: Object | null): IntReferenceMutablePair<Object>;
-    static of(paramarg0: number, paramarg1: Object | null): IntReferencePair<Object>;
+    static of<V extends unknown>(paramarg0: number, paramarg1: V): IntReferenceMutablePair<V>;
+    static of<V extends unknown>(paramarg0: number, paramarg1: V): IntReferencePair<V>;
     constructor(arg0: number, arg1: V)
     // private left: number;
     // private right: V;

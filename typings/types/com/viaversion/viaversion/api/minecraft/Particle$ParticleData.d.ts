@@ -4,7 +4,7 @@ import type { Copyable } from '../../../../../com/viaversion/viaversion/util/Cop
 import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class Particle$ParticleData<T extends unknown> extends Object implements Copyable {
-    static copy(paramarg0: Object | null): Object | null;
+    static copy<T extends unknown>(paramarg0: T): T;
     constructor(arg0: Type<T>, arg1: T)
     readonly type: Type<T>;
     readonly value: T;

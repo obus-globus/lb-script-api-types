@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class Markings extends Enum<Markings> {
     static BLACK_DOTS: Markings;
@@ -8,7 +7,7 @@ export class Markings extends Enum<Markings> {
     static WHITE_DOTS: Markings;
     static WHITE_FIELD: Markings;
     static byId(paramid: number): Markings;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Markings;
     static values(): Markings[];
     private constructor(id: number)

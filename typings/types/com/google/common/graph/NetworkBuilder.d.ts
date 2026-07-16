@@ -6,7 +6,7 @@ import type { Network } from '../../../../com/google/common/graph/Network.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class NetworkBuilder<N extends unknown, E extends unknown> extends AbstractGraphBuilder<N> {
     static directed(): NetworkBuilder<Object, Object>;
-    static from(paramnetwork: Network<Object, Object>): NetworkBuilder<Object, Object>;
+    static from<N extends unknown, E extends unknown>(paramnetwork: Network<N, E>): NetworkBuilder<N, E>;
     static undirected(): NetworkBuilder<Object, Object>;
     private constructor(directed: boolean)
     // private allowsParallelEdges: boolean;

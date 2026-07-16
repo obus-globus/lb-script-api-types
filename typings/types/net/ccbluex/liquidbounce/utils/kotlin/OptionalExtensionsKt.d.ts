@@ -4,13 +4,13 @@ import type { OptionalInt } from '../../../../../java/util/OptionalInt.d.ts'
 import type { OptionalLong } from '../../../../../java/util/OptionalLong.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class OptionalExtensionsKt extends Object {
-    static optional(): Optional<Object>;
-    static optional(paramarg0: Object | null): Optional<Object>;
-    static optional(paramarg0: () => Object | null): Optional<Object>;
-    static optional(paramarg0: number): OptionalDouble;
-    static optional(paramarg0: number): OptionalInt;
-    static optional(paramarg0: number): OptionalLong;
-    static toNullable(paramarg0: OptionalDouble): number;
-    static toNullable(paramarg0: OptionalInt): number;
-    static toNullable(paramarg0: OptionalLong): number;
+    static optional<T extends unknown>(): Optional<T>;
+    static optional<T extends unknown>(value: T | null): Optional<T>;
+    static optional<T extends unknown>(block: () => T | null): Optional<T>;
+    static optional(value: number): OptionalDouble;
+    static optional(value: number): OptionalInt;
+    static optional(value: number): OptionalLong;
+    static toNullable(self: OptionalDouble): number | null;
+    static toNullable(self: OptionalInt): number | null;
+    static toNullable(self: OptionalLong): number | null;
 }

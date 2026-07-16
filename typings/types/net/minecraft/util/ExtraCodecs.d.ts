@@ -21,6 +21,7 @@ import type { IntFunction } from '../../../java/util/function/IntFunction.d.ts'
 import type { ToIntFunction } from '../../../java/util/function/ToIntFunction.d.ts'
 import type { Pattern } from '../../../java/util/regex/Pattern.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../java/lang/Enum.d.ts'
 import type { Holder } from '../../../net/minecraft/core/Holder.d.ts'
 import type { Tag } from '../../../net/minecraft/nbt/Tag.d.ts'
 import type { ExtraCodecs$StrictUnboundedMapCodec } from '../../../net/minecraft/util/ExtraCodecs$StrictUnboundedMapCodec.d.ts'
@@ -77,37 +78,37 @@ export class ExtraCodecs extends Object {
     static fromOptionalLong: (param0: OptionalLong) => Optional<number>;
     static toOptionalLong: (param0: Optional<number>) => OptionalLong;
     static asOptionalLong(paramfieldCodec: MapCodec<Optional<number>>): MapCodec<OptionalLong>;
-    static catchDecoderException(paramcodec: Codec<Object>): Codec<Object>;
-    static compactListCodec(paramelementCodec: Codec<Object>): Codec<(Object | null)[]>;
-    static compactListCodec(paramelementCodec: Codec<Object>, paramlistCodec: Codec<(Object | null)[]>): Codec<(Object | null)[]>;
-    static converter(paramops: DynamicOps<Object>): Codec<Object>;
-    static dispatchOptionalValue(paramtypeKey: string, paramvalueKey: string, paramtypeCodec: Codec<Object>, paramtypeGetter: (param0: Object) => Object | null, paramvalueCodec: (param0: Object) => Codec<Object>): MapCodec<Object>;
-    static ensureHomogenous(paramtypeGetter: (param0: Object | null) => Object | null): (param0: Object | null) => DataResult<Object>;
+    static catchDecoderException<A extends unknown>(paramcodec: Codec<A>): Codec<A>;
+    static compactListCodec<E extends unknown>(paramelementCodec: Codec<E>): Codec<E[]>;
+    static compactListCodec<E extends unknown>(paramelementCodec: Codec<E>, paramlistCodec: Codec<E[]>): Codec<E[]>;
+    static converter<T extends unknown>(paramops: DynamicOps<T>): Codec<T>;
+    static dispatchOptionalValue<K extends unknown, V extends unknown>(paramtypeKey: string, paramvalueKey: string, paramtypeCodec: Codec<K>, paramtypeGetter: (param0: Object) => K, paramvalueCodec: (param0: Object) => Codec<V>): MapCodec<V>;
+    static ensureHomogenous<E extends unknown, L extends E[], T extends unknown>(paramtypeGetter: (param0: E) => T): (param0: L) => DataResult<L>;
     static floatRange(paramminInclusive: number, parammaxInclusive: number): Codec<number>;
     static guardedPathCodec(parambaseFolder: Path): Codec<Path>;
-    static idResolverCodec(paramtoInt: (param0: Object | null) => number, paramfromInt: (param0: number) => Object | null, paramunknownId: number): Codec<Object>;
-    static idResolverCodec(paramvalue: Codec<Object>, paramfromId: (param0: Object | null) => Object | null, paramtoId: (param0: Object | null) => Object | null): Codec<Object>;
+    static idResolverCodec<E extends unknown>(paramtoInt: (param0: E) => number, paramfromInt: (param0: number) => E, paramunknownId: number): Codec<E>;
+    static idResolverCodec<I extends unknown, E extends unknown>(paramvalue: Codec<I>, paramfromId: (param0: I) => E, paramtoId: (param0: E) => I): Codec<E>;
     static intRange(paramminInclusive: number, parammaxInclusive: number): Codec<number>;
-    static intervalCodec(parampointCodec: Codec<Object>, paramlowerBoundName: string, paramupperBoundName: string, parammakeInterval: (param0: Object | null, param1: Object | null) => DataResult<Object>, paramgetMin: (param0: Object | null) => Object | null, paramgetMax: (param0: Object | null) => Object | null): Codec<Object>;
-    static legacyEnum(paramvalueOf: (param0: string) => Object | null): Codec<Object>;
+    static intervalCodec<P extends unknown, I extends unknown>(parampointCodec: Codec<P>, paramlowerBoundName: string, paramupperBoundName: string, parammakeInterval: (param0: P, param1: P) => DataResult<I>, paramgetMin: (param0: I) => P, paramgetMax: (param0: I) => P): Codec<I>;
+    static legacyEnum<E extends Enum<E>>(paramvalueOf: (param0: string) => E): Codec<E>;
     static longRange(paramminInclusive: number, parammaxInclusive: number): Codec<number>;
-    static nonEmptyHolderSet(paramlistCodec: Codec<Holder<Object>[]>): Codec<Holder<Object>[]>;
-    static nonEmptyList(paramlistCodec: Codec<(Object | null)[]>): Codec<(Object | null)[]>;
-    static nonEmptyMap(parammapCodec: Codec<Object>): Codec<Object>;
-    static object2BooleanMap(paramkeyCodec: Codec<Object>): Codec<{ [key: string]: any }>;
-    static optionalAlwaysPresentFieldOf(paramelementCodec: Codec<Object>, paramname: string, paramdefaultValue: Object | null): MapCodec<Object>;
-    static optionalAlwaysPresentFieldOf(paramelementCodec: Codec<Object>, paramname: string, paramdefaultValue: Object | null, paramlenient: boolean): MapCodec<Object>;
-    static optionalEmptyMap(paramcodec: Codec<Object>): Codec<Optional<Object>>;
-    static orCompressed(paramnormal: Codec<Object>, paramcompressed: Codec<Object>): Codec<Object>;
-    static orCompressed(paramnormal: MapCodec<Object>, paramcompressed: MapCodec<Object>): MapCodec<Object>;
-    static orElsePartial(paramvalue: Object | null): Codec$ResultFunction<Object>;
-    static overrideLifecycle(paramcodec: Codec<Object>, paramlifecycleGetter: (param0: Object | null) => Lifecycle): Codec<Object>;
-    static overrideLifecycle(paramcodec: Codec<Object>, paramdecodeLifecycle: (param0: Object | null) => Lifecycle, paramencodeLifecycle: (param0: Object | null) => Lifecycle): Codec<Object>;
+    static nonEmptyHolderSet<T extends unknown>(paramlistCodec: Codec<Holder<T>[]>): Codec<Holder<T>[]>;
+    static nonEmptyList<T extends unknown>(paramlistCodec: Codec<T[]>): Codec<T[]>;
+    static nonEmptyMap<M extends Map<Object, Object>>(parammapCodec: Codec<M>): Codec<M>;
+    static object2BooleanMap<T extends unknown>(paramkeyCodec: Codec<T>): Codec<{ [key: string]: any }>;
+    static optionalAlwaysPresentFieldOf<A extends unknown>(paramelementCodec: Codec<A>, paramname: string, paramdefaultValue: A): MapCodec<A>;
+    static optionalAlwaysPresentFieldOf<A extends unknown>(paramelementCodec: Codec<A>, paramname: string, paramdefaultValue: A, paramlenient: boolean): MapCodec<A>;
+    static optionalEmptyMap<A extends unknown>(paramcodec: Codec<A>): Codec<Optional<A>>;
+    static orCompressed<E extends unknown>(paramnormal: Codec<E>, paramcompressed: Codec<E>): Codec<E>;
+    static orCompressed<E extends unknown>(paramnormal: MapCodec<E>, paramcompressed: MapCodec<E>): MapCodec<E>;
+    static orElsePartial<A extends unknown>(paramvalue: A): Codec$ResultFunction<A>;
+    static overrideLifecycle<E extends unknown>(paramcodec: Codec<E>, paramlifecycleGetter: (param0: E) => Lifecycle): Codec<E>;
+    static overrideLifecycle<E extends unknown>(paramcodec: Codec<E>, paramdecodeLifecycle: (param0: E) => Lifecycle, paramencodeLifecycle: (param0: E) => Lifecycle): Codec<E>;
     static pathCodec(parampathFactory: (param0: string) => Path): Codec<Path>;
     static relaiveNormalizedSubPathCodec(parampathFactory: (param0: string) => Path): Codec<Path>;
-    static retrieveContext(paramgetter: (param0: DynamicOps<Object>) => DataResult<Object>): MapCodec<Object>;
-    static sizeLimitedMap(paramcodec: Codec<Map<Object | null, Object | null>>, parammaxSizeInclusive: number): Codec<Map<Object | null, Object | null>>;
-    static strictUnboundedMap(paramkeyCodec: Codec<Object>, paramelementCodec: Codec<Object>): ExtraCodecs$StrictUnboundedMapCodec<Object, Object>;
+    static retrieveContext<E extends unknown>(paramgetter: (param0: DynamicOps<Object>) => DataResult<E>): MapCodec<E>;
+    static sizeLimitedMap<K extends unknown, V extends unknown>(paramcodec: Codec<Map<K, V>>, parammaxSizeInclusive: number): Codec<Map<K, V>>;
+    static strictUnboundedMap<K extends unknown, V extends unknown>(paramkeyCodec: Codec<K>, paramelementCodec: Codec<V>): ExtraCodecs$StrictUnboundedMapCodec<K, V>;
     static temporalCodec(paramformatter: DateTimeFormatter): Codec<TemporalAccessor>;
     constructor()
 }

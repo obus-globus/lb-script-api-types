@@ -354,6 +354,31 @@ if A11_MARK not in amb_text:
         amb_text = amb_text.replace("declare global {\n", "declare global {\n" + block, 1)
     changed.append("A11 require + console globals")
 
+# --- A16: shadowing-trap note next to the class-handle globals ---------------
+# `const Vec3d = Java.type("net.minecraft.world.phys.Vec3")` at the TOP LEVEL
+# of a non-module script collides with the same-named ambient global (TS2451),
+# and the Yarn-era alias set (Vec3d / MathHelper / Hand / RotationAxis) makes
+# that a common copy-paste trap. The aliases are REAL runtime bindings
+# (ScriptContextProvider.putMember), so they must stay - document the trap
+# inline where autocomplete/hover surfaces it. Idempotent via the A16 marker.
+A16_MARK = "A16: already runtime globals"
+if A16_MARK not in amb_text:
+    note = (
+        "    /*\n"
+        "     * %s - every `export const` below (incl. the Yarn-era aliases\n"
+        "     * Vec3d/MathHelper/Hand/RotationAxis) already exists in every script's\n"
+        "     * scope. Do NOT redeclare them: `const Vec3d = Java.type(...)` at the\n"
+        "     * top level of a NON-module script is a TS2451 collision with these\n"
+        "     * declarations. Either use the global directly, pick another local\n"
+        "     * name, or make your script a module (add `export {}`) so top-level\n"
+        "     * consts become file-scoped. See typings/README.md.\n"
+        "     */\n" % A16_MARK
+    )
+    m = re.search(r"^([ \t]*)export const ", amb_text, flags=re.M)
+    if m:
+        amb_text = amb_text[:m.start()] + note + amb_text[m.start():]
+        changed.append("A16 shadowing-trap note")
+
 amb.write_text(amb_text)
 
 # --- F2: drop the bogus "Client" category from PolyglotScript JSDoc ---

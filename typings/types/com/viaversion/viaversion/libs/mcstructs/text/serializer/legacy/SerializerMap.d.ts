@@ -6,7 +6,7 @@ import type { Function } from '../../../../../../../../java/util/function/Functi
 import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SerializerMap<R extends unknown, A extends Enum<A>, IO extends unknown> extends Object {
-    static create(paramarg0: SNbt<any>): SerializerMap$Builder<Object, any, Object>;
+    static create<R extends unknown, A extends Enum<A>, IO extends unknown>(paramarg0: SNbt<any>): SerializerMap$Builder<R, A, IO>;
     constructor(arg0: SNbt<Tag>, arg1: (Object | null)[], arg2: (param0: Object) => Object, arg3: any)
     // private sNbt: SNbt<any>;
     // private serializers: Map<A, EventSerializer<R, R, A, IO>[]>;

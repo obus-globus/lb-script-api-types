@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class BackendCreationException$Reason extends Enum<BackendCreationException$Reason> {
     static GLFW_ERROR: BackendCreationException$Reason;
@@ -12,7 +11,7 @@ export class BackendCreationException$Reason extends Enum<BackendCreationExcepti
     static VULKAN_MISSING_FEATURE: BackendCreationException$Reason;
     static VULKAN_NO_DEVICE: BackendCreationException$Reason;
     static VULKAN_NO_GRAPHICS_QUEUE: BackendCreationException$Reason;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): BackendCreationException$Reason;
     static values(): BackendCreationException$Reason[];
     private constructor(key: string)

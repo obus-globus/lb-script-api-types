@@ -18,10 +18,10 @@ export class ResourceKeyArgument<T extends unknown> extends Object implements Ar
     static getAdvancement(paramcontext: CommandContext<CommandSourceStack>, paramname: string): AdvancementHolder;
     static getConfiguredFeature(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<ConfiguredFeature<any, any>>;
     static getRecipe(paramcontext: CommandContext<CommandSourceStack>, paramname: string): RecipeHolder<any>;
-    static getRegistryKey(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<(Object | null)[]>, paramexceptionType: DynamicCommandExceptionType): ResourceKey<Object>;
+    static getRegistryKey<T extends unknown>(paramcontext: CommandContext<CommandSourceStack>, paramname: string, paramregistryKey: ResourceKey<T[]>, paramexceptionType: DynamicCommandExceptionType): ResourceKey<T>;
     static getStructure(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<Structure>;
     static getStructureTemplatePool(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder$Reference<StructureTemplatePool>;
-    static key(paramkey: ResourceKey<(Object | null)[]>): ResourceKeyArgument<Object>;
+    static key<T extends unknown>(paramkey: ResourceKey<T[]>): ResourceKeyArgument<T>;
     constructor(registryKey: ResourceKey<T[]>)
     // private registryKey: ResourceKey<T[]>;
     getExamples(): string[];

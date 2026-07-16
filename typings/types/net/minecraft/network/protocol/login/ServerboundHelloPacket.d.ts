@@ -11,7 +11,7 @@ import type { PacketType } from '../../../../../net/minecraft/network/protocol/P
 import type { ServerLoginPacketListener } from '../../../../../net/minecraft/network/protocol/login/ServerLoginPacketListener.d.ts'
 export class ServerboundHelloPacket extends Record implements Packet<ServerLoginPacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundHelloPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(name: string, profileId: UUID)
     // private name: string;
     // private profileId: UUID;

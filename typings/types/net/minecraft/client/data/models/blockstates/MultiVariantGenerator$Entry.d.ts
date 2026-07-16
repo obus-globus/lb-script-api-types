@@ -4,13 +4,14 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { MultiVariant } from '../../../../../../net/minecraft/client/data/models/MultiVariant.d.ts'
 import type { PropertyDispatch } from '../../../../../../net/minecraft/client/data/models/blockstates/PropertyDispatch.d.ts'
 import type { PropertyValueList } from '../../../../../../net/minecraft/client/data/models/blockstates/PropertyValueList.d.ts'
+import type { Variant } from '../../../../../../net/minecraft/client/renderer/block/dispatch/Variant.d.ts'
 import type { VariantMutator } from '../../../../../../net/minecraft/client/renderer/block/dispatch/VariantMutator.d.ts'
 export class MultiVariantGenerator$Entry extends Record {
     private constructor(properties: PropertyValueList, variant: MultiVariant)
     // private properties: PropertyValueList;
     // private variant: MultiVariant;
-    apply(stage: PropertyDispatch<(param0: Object | null) => Object | null>): Stream<MultiVariantGenerator$Entry>;
-    apply(mutator: (param0: Object | null) => Object | null): Stream<MultiVariantGenerator$Entry>;
+    apply(stage: PropertyDispatch<(param0: Variant) => Variant>): Stream<MultiVariantGenerator$Entry>;
+    apply(mutator: (param0: Variant) => Variant): Stream<MultiVariantGenerator$Entry>;
     equals(o: Object | null): boolean;
     hashCode(): number;
     properties(): PropertyValueList;

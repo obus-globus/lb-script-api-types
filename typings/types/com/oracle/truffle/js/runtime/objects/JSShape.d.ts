@@ -31,7 +31,7 @@ export class JSShape extends Object {
     static getPropertiesIfHasEnumerablePropertyNames(paramshape: Shape): Property[];
     static getPropertyAssumption(paramshape: Shape, paramkey: Object): Assumption;
     static getPropertyAssumption(paramshape: Shape, paramkey: Object, paramprototype: boolean): Assumption;
-    static getPropertyKeyList(paramshape: Shape, paramstrings: boolean, paramsymbols: boolean): (Object | null)[];
+    static getPropertyKeyList<T extends unknown>(paramshape: Shape, paramstrings: boolean, paramsymbols: boolean): T[];
     static getProtoChildTree(paramprototype: JSDynamicObject, paramjsclass: JSClass): Shape;
     static getPrototypeAssumption(paramshape: Shape): Assumption;
     static getPrototypeProperty(paramshape: Shape): Property;

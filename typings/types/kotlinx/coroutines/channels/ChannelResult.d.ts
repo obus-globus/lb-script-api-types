@@ -4,17 +4,17 @@ import type { ChannelResult$Companion } from '../../../kotlinx/coroutines/channe
 export class ChannelResult<T extends unknown> extends Object {
     static Companion: ChannelResult$Companion;
 // (invalid TS: name contains '-')     static box-impl(paramarg0: Object): ChannelResult<Object>;
-// (invalid TS: name contains '-')     static constructor-impl(paramarg0: Object): Object;
+// (invalid TS: name contains '-')     static constructor-impl<T extends unknown>(paramarg0: Object): Object;
 // (invalid TS: name contains '-')     static equals-impl(paramarg0: Object, paramarg1: Object): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: Object, paramarg1: Object): boolean;
-// (invalid TS: name contains '-')     static exceptionOrNull-impl(paramarg0: Object): Throwable;
-// (invalid TS: name contains '-')     static getOrNull-impl(paramarg0: Object): Object | null;
-// (invalid TS: name contains '-')     static getOrThrow-impl(paramarg0: Object): Object | null;
+// (invalid TS: name contains '-')     static exceptionOrNull-impl(): Throwable | null;
+// (invalid TS: name contains '-')     static getOrNull-impl<T extends unknown>(): T | null;
+// (invalid TS: name contains '-')     static getOrThrow-impl<T extends unknown>(): T;
 // (invalid TS: name contains '-')     static hashCode-impl(paramarg0: Object): number;
 // (invalid TS: name contains '-')     static isClosed-impl(paramarg0: Object): boolean;
 // (invalid TS: name contains '-')     static isFailure-impl(paramarg0: Object): boolean;
 // (invalid TS: name contains '-')     static isSuccess-impl(paramarg0: Object): boolean;
-// (invalid TS: name contains '-')     static toString-impl(paramarg0: Object): string;
+// (invalid TS: name contains '-')     static toString-impl(): string;
     constructor(holder: Object | null)
     // private holder: Object | null;
 // (invalid TS: name contains '-')     /*not mapped: */ isClosed-impl(): boolean;

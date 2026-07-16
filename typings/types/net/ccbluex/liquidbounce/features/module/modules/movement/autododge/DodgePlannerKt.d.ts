@@ -7,5 +7,5 @@ import type { Vec3 } from '../../../../../../../../net/minecraft/world/phys/Vec3
 export class DodgePlannerKt extends Object {
     static findOptimalDodgePosition(baseLine: Line): Vec3;
     static getWalkableDistance(basePos: Vec3, dodgePos: Vec3): number;
-    static planEvasion(config: DodgePlannerConfig, inflictedHit: ModuleAutoDodge$HitInfo): DodgePlan;
+    static planEvasion(config: DodgePlannerConfig, inflictedHit: ModuleAutoDodge$HitInfo): DodgePlan | null;
 }

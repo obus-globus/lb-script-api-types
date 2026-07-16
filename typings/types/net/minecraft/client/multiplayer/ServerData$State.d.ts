@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class ServerData$State extends Enum<ServerData$State> {
     static INCOMPATIBLE: ServerData$State;
@@ -7,7 +6,7 @@ export class ServerData$State extends Enum<ServerData$State> {
     static PINGING: ServerData$State;
     static SUCCESSFUL: ServerData$State;
     static UNREACHABLE: ServerData$State;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ServerData$State;
     static values(): ServerData$State[];
     private constructor()

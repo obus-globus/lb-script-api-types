@@ -13,7 +13,7 @@ import type { SetNameFunction$Target } from '../../../../../../../net/minecraft/
 import type { LootItemCondition } from '../../../../../../../net/minecraft/world/level/storage/loot/predicates/LootItemCondition.d.ts'
 export class SetNameFunction extends LootItemConditionalFunction {
     static MAP_CODEC: MapCodec<SetNameFunction>;
-    static createResolver(paramcontext: LootContext, paramentityTarget: LootContext$EntityTarget): (param0: Component) => Object | null;
+    static createResolver(paramcontext: LootContext, paramentityTarget: LootContext$EntityTarget): (param0: Component) => Component;
     static setName(paramvalue: Component, paramtarget: SetNameFunction$Target): LootItemConditionalFunction$Builder<any>;
     static setName(paramvalue: Component, paramtarget: SetNameFunction$Target, paramresolutionContext: LootContext$EntityTarget): LootItemConditionalFunction$Builder<any>;
     private constructor(predicates: LootItemCondition[], name: Optional<Component>, resolutionContext: Optional<LootContext$EntityTarget>, target: SetNameFunction$Target)

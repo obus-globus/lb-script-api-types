@@ -3,8 +3,8 @@ import type { Predicate } from '../../../../../../../java/util/function/Predicat
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Entity } from '../../../../../../../net/minecraft/world/entity/Entity.d.ts'
 export class ProjectileCanHitEntityPredicate extends Record implements Predicate<Entity> {
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(originalPredicate: (param0: Entity) => boolean)
     // private originalPredicate: (param0: Entity) => boolean;
     and(arg0: (param0: Entity) => boolean): (param0: Entity) => boolean;

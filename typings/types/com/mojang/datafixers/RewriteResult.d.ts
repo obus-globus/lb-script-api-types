@@ -4,8 +4,8 @@ import type { Record } from '../../../java/lang/Record.d.ts'
 import type { BitSet } from '../../../java/util/BitSet.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class RewriteResult<A extends unknown, B extends unknown> extends Record {
-    static create(paramarg0: View<Object, Object>, paramarg1: BitSet): RewriteResult<Object, Object>;
-    static nop(paramarg0: Type<Object>): RewriteResult<Object, Object>;
+    static create<A extends unknown, B extends unknown>(paramarg0: View<A, B>, paramarg1: BitSet): RewriteResult<A, B>;
+    static nop<A extends unknown>(paramarg0: Type<A>): RewriteResult<A, A>;
     constructor(view: View<A, B>, recData: BitSet)
     // private recData: BitSet;
     // private view: View<A, B>;

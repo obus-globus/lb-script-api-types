@@ -9,8 +9,8 @@ import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export abstract class ASTPrinterBase extends ASTListenerVisitor<void> {
-    static walk(paramarg0: ASTListener, paramarg1: ASTNode): Object | null;
-    static walkAndListen(paramarg0: ASTNode): Object | null;
+    static walk<R extends unknown>(paramarg0: ASTListener, paramarg1: ASTNode): R;
+    static walkAndListen<R extends unknown>(paramarg0: ASTNode): R;
     constructor(arg0: TokenProcessor)
     // private currentNode: ASTNode;
     // private lastToken: PrintToken;

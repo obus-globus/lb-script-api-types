@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class CefMenuModel$MenuItemType extends Enum<CefMenuModel$MenuItemType> {
     static MENUITEMTYPE_CHECK: CefMenuModel$MenuItemType;
@@ -8,7 +7,7 @@ export class CefMenuModel$MenuItemType extends Enum<CefMenuModel$MenuItemType> {
     static MENUITEMTYPE_RADIO: CefMenuModel$MenuItemType;
     static MENUITEMTYPE_SEPARATOR: CefMenuModel$MenuItemType;
     static MENUITEMTYPE_SUBMENU: CefMenuModel$MenuItemType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CefMenuModel$MenuItemType;
     static values(): CefMenuModel$MenuItemType[];
     private constructor()

@@ -18,7 +18,7 @@ import type { BuiltConfiguration } from '../../../../../../../org/apache/logging
 import type { PropertiesConfiguration } from '../../../../../../../org/apache/logging/log4j/core/config/properties/PropertiesConfiguration.d.ts'
 import type { Builder } from '../../../../../../../org/apache/logging/log4j/core/util/Builder.d.ts'
 export class PropertiesConfigurationBuilder extends ConfigurationBuilderFactory implements Builder<PropertiesConfiguration> {
-    static newConfigurationBuilder(paramclazz: Class<BuiltConfiguration>): ConfigurationBuilder<BuiltConfiguration>;
+    static newConfigurationBuilder<T extends BuiltConfiguration>(paramclazz: Class<T>): ConfigurationBuilder<T>;
     static newConfigurationBuilder(): ConfigurationBuilder<BuiltConfiguration>;
     constructor()
     // private builder: ConfigurationBuilder<PropertiesConfiguration>;

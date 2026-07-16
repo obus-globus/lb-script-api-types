@@ -2,7 +2,6 @@ import type { BlockDirection } from '../../../../../com/seedfinding/mccore/util/
 import type { BPos } from '../../../../../com/seedfinding/mccore/util/pos/BPos.d.ts'
 import type { JRand } from '../../../../../com/seedfinding/mcseed/rand/JRand.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class BlockRotation extends Enum<BlockRotation> {
     static CLOCKWISE_180: BlockRotation;
@@ -11,7 +10,7 @@ export class BlockRotation extends Enum<BlockRotation> {
     static NONE: BlockRotation;
     static getRandom(paramarg0: JRand): BlockRotation;
     static getShuffled(paramarg0: JRand): BlockRotation[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BlockRotation;
     static values(): BlockRotation[];
     private constructor(arg2: BlockDirection)

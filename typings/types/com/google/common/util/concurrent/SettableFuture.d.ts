@@ -3,7 +3,7 @@ import type { ListenableFuture } from '../../../../../com/google/common/util/con
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export class SettableFuture<V extends unknown> extends AbstractFuture$TrustedFuture<V> {
-    static create(): SettableFuture<Object>;
+    static create<V extends unknown>(): SettableFuture<V>;
     private constructor()
     set(value: V): boolean;
     setException(throwable: Throwable): boolean;

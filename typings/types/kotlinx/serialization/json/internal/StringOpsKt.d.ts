@@ -3,6 +3,6 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class StringOpsKt extends Object {
     static getESCAPE_MARKERS(): number[];
     static getESCAPE_STRINGS(): string[];
-    static printQuoted(paramarg0: StringBuilder, paramarg1: string): void;
-    static toBooleanStrictOrNull(paramarg0: string): boolean;
+    static printQuoted(self: StringBuilder, value: string): void;
+    static toBooleanStrictOrNull(self: string): boolean | null;
 }

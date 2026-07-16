@@ -14,7 +14,7 @@ export class ParameterBuilder<T extends unknown> extends Object {
     static POSITIVE_FLOAT_VALIDATOR: Parameter$Verificator<number>;
     static POSITIVE_INTEGER_VALIDATOR: Parameter$Verificator<number>;
     static STRING_VALIDATOR: Parameter$Verificator<string>;
-    static begin(name: string): ParameterBuilder<Object>;
+    static begin<T extends unknown>(name: string): ParameterBuilder<T>;
     static floatRange(min: number, max: number): Parameter$Verificator<number>;
     static intRange(min: number, max: number): Parameter$Verificator<number>;
     private constructor(name: string)

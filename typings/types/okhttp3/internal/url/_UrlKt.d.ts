@@ -13,11 +13,11 @@ export class _UrlKt extends Object {
     static QUERY_COMPONENT_REENCODE_SET: string;
     static QUERY_ENCODE_SET: string;
     static USERNAME_ENCODE_SET: string;
-    static canonicalize(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: string, paramarg4: boolean, paramarg5: boolean, paramarg6: boolean, paramarg7: boolean): string;
-    static canonicalizeWithCharset(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: string, paramarg4: boolean, paramarg5: boolean, paramarg6: boolean, paramarg7: boolean, paramarg8: Charset): string;
+    static canonicalize(self: string, pos: number, limit: number, encodeSet: string, alreadyEncoded: boolean, strict: boolean, plusIsSpace: boolean, unicodeAllowed: boolean): string;
+    static canonicalizeWithCharset(self: string, pos: number, limit: number, encodeSet: string, alreadyEncoded: boolean, strict: boolean, plusIsSpace: boolean, unicodeAllowed: boolean, charset: Charset | null): string;
     static getHEX_DIGITS(): string[];
-    static isPercentEncoded(paramarg0: string, paramarg1: number, paramarg2: number): boolean;
-    static percentDecode(paramarg0: string, paramarg1: number, paramarg2: number, paramarg3: boolean): string;
-    static writeCanonicalized(paramarg0: Buffer, paramarg1: string, paramarg2: number, paramarg3: number, paramarg4: string, paramarg5: boolean, paramarg6: boolean, paramarg7: boolean, paramarg8: boolean, paramarg9: Charset): void;
-    static writePercentDecoded(paramarg0: Buffer, paramarg1: string, paramarg2: number, paramarg3: number, paramarg4: boolean): void;
+    static isPercentEncoded(self: string, pos: number, limit: number): boolean;
+    static percentDecode(self: string, pos: number, limit: number, plusIsSpace: boolean): string;
+    static writeCanonicalized(self: Buffer, input: string, pos: number, limit: number, encodeSet: string, alreadyEncoded: boolean, strict: boolean, plusIsSpace: boolean, unicodeAllowed: boolean, charset: Charset | null): void;
+    static writePercentDecoded(self: Buffer, encoded: string, pos: number, limit: number, plusIsSpace: boolean): void;
 }

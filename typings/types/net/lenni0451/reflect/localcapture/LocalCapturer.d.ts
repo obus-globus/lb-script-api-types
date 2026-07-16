@@ -6,6 +6,6 @@ import type { LocalStackFrame } from '../../../../net/lenni0451/reflect/localcap
 export class LocalCapturer extends Object {
     static forEach(paramarg0: (param0: LocalStackFrame) => void): void;
     static getStackFrames(): LocalStackFrame[];
-    static walk(paramarg0: (param0: Stream<LocalStackFrame>) => Object | null): Object | null;
+    static walk<T extends unknown>(paramarg0: (param0: Stream<LocalStackFrame>) => T): T;
     constructor()
 }

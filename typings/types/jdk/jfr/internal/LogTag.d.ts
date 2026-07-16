@@ -1,6 +1,5 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { LogLevel } from '../../../jdk/jfr/internal/LogLevel.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class LogTag extends Enum<LogTag> {
     static JFR: LogTag;
@@ -21,7 +20,7 @@ export class LogTag extends Enum<LogTag> {
     static JFR_SYSTEM_SETTING: LogTag;
     static JFR_SYSTEM_STREAMING: LogTag;
     static JFR_SYSTEM_THROTTLE: LogTag;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LogTag;
     static values(): LogTag[];
     private constructor(arg2: number)

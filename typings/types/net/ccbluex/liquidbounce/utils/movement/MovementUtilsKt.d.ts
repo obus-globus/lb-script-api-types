@@ -3,7 +3,7 @@ import type { DirectionalInput } from '../../../../../net/ccbluex/liquidbounce/u
 import type { LocalPlayer } from '../../../../../net/minecraft/client/player/LocalPlayer.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class MovementUtilsKt extends Object {
-    static findEdgeCollision(from: Vec3, to: Vec3, allowedDropDown: number): Vec3;
+    static findEdgeCollision(from: Vec3, to: Vec3, allowedDropDown: number): Vec3 | null;
     /**
      * Returns the yaw difference the position is from the player position
      *
@@ -13,6 +13,6 @@ export class MovementUtilsKt extends Object {
      */
     static getDegreesRelativeToView(positionRelativeToPlayer: Vec3, yaw: number): number;
     static getDirectionalInputForDegrees(directionalInput: DirectionalInput, dgs: number, deadAngle: number): DirectionalInput;
-    static setDeltaMovement(localPlayer: LocalPlayer, block: (param0: Object) => Vec3): void;
-    static stopXZVelocity(localPlayer: LocalPlayer): void;
+    static setDeltaMovement(self: LocalPlayer, block: (param0: Vec3) => Vec3): void;
+    static stopXZVelocity(self: LocalPlayer): void;
 }

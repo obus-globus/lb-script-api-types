@@ -11,18 +11,18 @@ import type { TimeUnit } from '../../../java/util/concurrent/TimeUnit.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 export abstract class ForkJoinTask<V extends unknown> extends Object implements Serializable, Future<V> {
-    static adapt(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
-    static adapt(paramarg0: () => Object | null): ForkJoinTask<Object>;
+    static adapt<T extends unknown>(paramarg0: () => void, paramarg1: T): ForkJoinTask<T>;
+    static adapt<T extends unknown>(paramarg0: () => T): ForkJoinTask<T>;
     static adapt(paramarg0: () => void): ForkJoinTask<Object>;
-    static adaptInterruptible(paramarg0: () => void, paramarg1: Object | null): ForkJoinTask<Object>;
-    static adaptInterruptible(paramarg0: () => Object | null): ForkJoinTask<Object>;
+    static adaptInterruptible<T extends unknown>(paramarg0: () => void, paramarg1: T): ForkJoinTask<T>;
+    static adaptInterruptible<T extends unknown>(paramarg0: () => T): ForkJoinTask<T>;
     static adaptInterruptible(paramarg0: () => void): ForkJoinTask<Object>;
     static getPool(): ForkJoinPool;
     static getQueuedTaskCount(): number;
     static getSurplusQueuedTaskCount(): number;
     static helpQuiesce(): void;
     static inForkJoinPool(): boolean;
-    static invokeAll(paramarg0: (Object | null)[]): (Object | null)[];
+    static invokeAll<T extends ForkJoinTask<Object>>(paramarg0: T[]): T[];
     static invokeAll(paramarg0: ForkJoinTask<Object>, paramarg1: ForkJoinTask<Object>): void;
     static invokeAll(...paramarg0: ForkJoinTask<Object>[]): void;
     constructor()

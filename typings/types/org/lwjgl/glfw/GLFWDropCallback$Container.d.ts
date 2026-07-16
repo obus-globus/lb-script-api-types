@@ -14,9 +14,9 @@ export class GLFWDropCallback$Container extends GLFWDropCallback {
     static create(paramarg0: (param0: number, param1: number, param2: number) => void): GLFWDropCallback;
     static createSafe(paramarg0: number): GLFWDropCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
     static getName(paramarg0: number, paramarg1: number): string;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor(arg0: number, arg1: (param0: number, param1: number, param2: number) => void)
     // private delegate: (param0: number, param1: number, param2: number) => void;
     invoke(arg0: number, arg1: number, arg2: number): void;

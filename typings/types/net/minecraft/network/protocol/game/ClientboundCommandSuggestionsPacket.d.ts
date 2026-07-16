@@ -12,7 +12,7 @@ import type { ClientGamePacketListener } from '../../../../../net/minecraft/netw
 import type { ClientboundCommandSuggestionsPacket$Entry } from '../../../../../net/minecraft/network/protocol/game/ClientboundCommandSuggestionsPacket$Entry.d.ts'
 export class ClientboundCommandSuggestionsPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundCommandSuggestionsPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(id: number, suggestions: Suggestions)
     constructor(id: number, start: number, length: number, suggestions: ClientboundCommandSuggestionsPacket$Entry[])
     // private id: number;

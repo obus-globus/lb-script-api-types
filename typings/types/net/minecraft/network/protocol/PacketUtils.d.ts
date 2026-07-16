@@ -7,9 +7,9 @@ import type { PacketProcessor } from '../../../../net/minecraft/network/PacketPr
 import type { Packet } from '../../../../net/minecraft/network/protocol/Packet.d.ts'
 import type { ServerLevel } from '../../../../net/minecraft/server/level/ServerLevel.d.ts'
 export class PacketUtils extends Object {
-    static ensureRunningOnSameThread(parampacket: Packet<PacketListener>, paramlistener: PacketListener | null, parampacketProcessor: PacketProcessor): void;
-    static ensureRunningOnSameThread(parampacket: Packet<PacketListener>, paramlistener: PacketListener | null, paramlevel: ServerLevel): void;
-    static fillCrashReport(paramreport: CrashReport, paramlistener: PacketListener | null, parampacket: Packet<PacketListener>): void;
-    static makeReportedException(paramcause: Exception, parampacket: Packet<PacketListener>, paramlistener: PacketListener | null): ReportedException;
+    static ensureRunningOnSameThread<T extends PacketListener>(parampacket: Packet<T>, paramlistener: T, parampacketProcessor: PacketProcessor): void;
+    static ensureRunningOnSameThread<T extends PacketListener>(parampacket: Packet<T>, paramlistener: T, paramlevel: ServerLevel): void;
+    static fillCrashReport<T extends PacketListener>(paramreport: CrashReport, paramlistener: T, parampacket: Packet<T>): void;
+    static makeReportedException<T extends PacketListener>(paramcause: Exception, parampacket: Packet<T>, paramlistener: T): ReportedException;
     constructor()
 }

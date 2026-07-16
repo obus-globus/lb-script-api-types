@@ -27,18 +27,18 @@ export class Commands extends Object {
     static LEVEL_GAMEMASTERS: PermissionCheck;
     static LEVEL_MODERATORS: PermissionCheck;
     static LEVEL_OWNERS: PermissionCheck;
-    static argument(paramname: string, paramtype: ArgumentType<Object>): RequiredArgumentBuilder<CommandSourceStack, Object>;
+    static argument<T extends unknown>(paramname: string, paramtype: ArgumentType<T>): RequiredArgumentBuilder<CommandSourceStack, T>;
     static createCompilationContext(paramcompilationPermissions: PermissionSet): CommandSourceStack;
     static createValidationContext(paramregistries: HolderLookup$Provider): CommandBuildContext;
     static createValidator(paramparser: (param0: StringReader) => void): (param0: string) => boolean;
     static executeCommandInContext(paramcontext: CommandSourceStack, paramconfig: (param0: ExecutionContext<CommandSourceStack>) => void): void;
-    static getParseException(paramparse: ParseResults<Object>): CommandSyntaxException;
-    static hasPermission(parampermission: PermissionCheck): PermissionProviderCheck<PermissionSetSupplier>;
+    static getParseException<S extends unknown>(paramparse: ParseResults<S>): CommandSyntaxException;
+    static hasPermission<T extends PermissionSetSupplier>(parampermission: PermissionCheck): PermissionProviderCheck<T>;
     static literal(paramliteral: string): LiteralArgumentBuilder<CommandSourceStack>;
-    static mapSource(paramparse: ParseResults<Object>, paramsourceOperator: (param0: Object | null) => Object | null): ParseResults<Object>;
+    static mapSource<S extends unknown>(paramparse: ParseResults<S>, paramsourceOperator: (param0: S) => S): ParseResults<S>;
     static trimOptionalPrefix(paramcommand: string): string;
     static validate(): void;
-    static validateParseResults(paramcommand: ParseResults<Object>): void;
+    static validateParseResults<S extends unknown>(paramcommand: ParseResults<S>): void;
     constructor(commandSelection: Commands$CommandSelection, context: CommandBuildContext)
     readonly dispatcher: CommandDispatcher<CommandSourceStack>;
     getDispatcher(): CommandDispatcher<CommandSourceStack>;

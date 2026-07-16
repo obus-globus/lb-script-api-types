@@ -10,8 +10,8 @@ import type { ResourceManager } from '../../../../../net/minecraft/server/packs/
 import type { SimplePreparableReloadListener } from '../../../../../net/minecraft/server/packs/resources/SimplePreparableReloadListener.d.ts'
 import type { ProfilerFiller } from '../../../../../net/minecraft/util/profiling/ProfilerFiller.d.ts'
 export abstract class SimpleJsonResourceReloadListener<T extends unknown> extends SimplePreparableReloadListener<Map<Identifier, T>> {
-    static scanDirectory(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
-    static scanDirectory(parammanager: ResourceManager, paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<Object>, paramresult: Map<Identifier, Object | null>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramlister: FileToIdConverter, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
+    static scanDirectory<T extends unknown>(parammanager: ResourceManager, paramregistryKey: ResourceKey<T[]>, paramops: DynamicOps<JsonElement>, paramcodec: Codec<T>, paramresult: Map<Identifier, T>): void;
     constructor(codec: Codec<T>, lister: FileToIdConverter)
     constructor(registries: HolderLookup$Provider, codec: Codec<T>, registryKey: ResourceKey<T[]>)
     // private codec: Codec<T>;

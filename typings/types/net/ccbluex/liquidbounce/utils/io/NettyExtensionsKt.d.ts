@@ -8,5 +8,5 @@ export class NettyExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/io/NettyExtensions.kt#L29 | src/main/kotlin/net/ccbluex/liquidbounce/utils/io/NettyExtensions.kt:29}
      */
-    static clientChannelAndGroup(abstractBootstrap: AbstractBootstrap<any, Channel>, useEpoll: boolean): Object | null;
+    static clientChannelAndGroup<B extends AbstractBootstrap<B, Channel>>(self: AbstractBootstrap<B, Channel>, useEpoll: boolean): B;
 }

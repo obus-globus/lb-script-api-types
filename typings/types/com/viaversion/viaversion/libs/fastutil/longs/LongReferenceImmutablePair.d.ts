@@ -3,8 +3,8 @@ import type { LongReferencePair } from '../../../../../../com/viaversion/viavers
 import type { Serializable } from '../../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class LongReferenceImmutablePair<V extends unknown> extends Object implements LongReferencePair<V>, Serializable {
-    static of(paramarg0: number, paramarg1: Object | null): LongReferenceImmutablePair<Object>;
-    static of(paramarg0: number, paramarg1: Object | null): LongReferencePair<Object>;
+    static of<V extends unknown>(paramarg0: number, paramarg1: V): LongReferenceImmutablePair<V>;
+    static of<V extends unknown>(paramarg0: number, paramarg1: V): LongReferencePair<V>;
     constructor(arg0: number, arg1: V)
     // private left: number;
     // private right: V;

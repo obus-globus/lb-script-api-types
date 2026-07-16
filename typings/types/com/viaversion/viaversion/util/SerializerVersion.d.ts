@@ -5,7 +5,6 @@ import type { TextComponent } from '../../../../com/viaversion/viaversion/libs/m
 import type { TextComponentCodec } from '../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/TextComponentCodec.d.ts'
 import type { TextComponentSerializer } from '../../../../com/viaversion/viaversion/libs/mcstructs/text/serializer/TextComponentSerializer.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class SerializerVersion extends Enum<SerializerVersion> {
     static V1_12: SerializerVersion;
@@ -24,7 +23,7 @@ export class SerializerVersion extends Enum<SerializerVersion> {
     static V1_7: SerializerVersion;
     static V1_8: SerializerVersion;
     static V1_9: SerializerVersion;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SerializerVersion;
     static values(): SerializerVersion[];
     private constructor(arg2: TextComponentCodec, arg3: SNbt<Tag>)

@@ -7,7 +7,7 @@ import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { MethodHandles$Lookup } from '../../../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class ReflectionLibraryGen extends LibraryFactory<ReflectionLibrary> {
-    static resolve(paramlibrary: Class<Library>): LibraryFactory<Library>;
+    static resolve<T extends Library>(paramlibrary: Class<T>): LibraryFactory<T>;
     private constructor()
     createDelegate(delegateLibrary: ReflectionLibrary): ReflectionLibrary;
     createDispatchImpl(limit: number): ReflectionLibrary;

@@ -4,12 +4,14 @@ import type { JSBuiltinsContainer } from '../../../../../com/oracle/truffle/js/b
 import type { JSBuiltinsContainer$SwitchEnum } from '../../../../../com/oracle/truffle/js/builtins/JSBuiltinsContainer$SwitchEnum.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { BuiltinEnum } from '../../../../../com/oracle/truffle/js/runtime/builtins/BuiltinEnum.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class FunctionPrototypeBuiltins extends JSBuiltinsContainer$SwitchEnum<FunctionPrototypeBuiltins$FunctionPrototype> {
     static BUILTINS: JSBuiltinsContainer;
     static BUILTINS_NASHORN_COMPAT: JSBuiltinsContainer;
-    static fromEnum(paramname: TruffleString, parambuiltinEnum: Class<Object>): JSBuiltinsContainer;
+    static fromEnum<E extends Enum<E> & BuiltinEnum<E>>(paramname: TruffleString, parambuiltinEnum: Class<E>): JSBuiltinsContainer;
     constructor()
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean, builtinEnum: FunctionPrototypeBuiltins$FunctionPrototype): Object;
 }

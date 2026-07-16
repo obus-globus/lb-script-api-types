@@ -72,7 +72,7 @@ export abstract class AbstractMinecart extends VehicleEntity {
     static collectAllColliders(paramsource: Entity, paramlevel: Level, paramboundingBox: AABB): VoxelShape[];
     static collideBoundingBox(paramarg0: Entity, paramarg1: Vec3, paramarg2: AABB, paramarg3: Level, paramarg4: (Object | null)[]): Vec3;
     static collideBoundingBox(paramsource: CollisionContext, parammovement: Vec3, paramboundingBox: AABB, paramlevel: Level, paramentityColliders: VoxelShape[]): Vec3;
-    static createMinecart(paramlevel: Level, paramx: number, paramy: number, paramz: number, paramtype: EntityType<AbstractMinecart>, paramreason: EntitySpawnReason, paramitemStack: ItemStack, paramplayer: Player): AbstractMinecart | null;
+    static createMinecart<T extends AbstractMinecart>(paramlevel: Level, paramx: number, paramy: number, paramz: number, paramtype: EntityType<T>, paramreason: EntitySpawnReason, paramitemStack: ItemStack, paramplayer: Player): T;
     static exits(paramshape: RailShape): Pair<Vec3i, Vec3i>;
     static getInputVector(paraminput: Vec3, paramspeed: number, paramyRot: number): Vec3;
     static getViewScale(): number;

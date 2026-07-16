@@ -15,8 +15,8 @@ export class OceanRuinStructure extends Structure {
     static CODEC: MapCodec<OceanRuinStructure>;
     static DIRECT_CODEC: Codec<Structure>;
     static getMeanFirstOccupiedHeight(paramcontext: Structure$GenerationContext, paramminX: number, paramsizeX: number, paramminZ: number, paramsizeZ: number): number;
-    static settingsCodec(parami: RecordCodecBuilder$Instance<Structure>): RecordCodecBuilder<Structure, Structure$StructureSettings>;
-    static simpleCodec(paramconstructor: (param0: Structure$StructureSettings) => Structure | null): MapCodec<Structure>;
+    static settingsCodec<S extends Structure>(parami: RecordCodecBuilder$Instance<S>): RecordCodecBuilder<S, Structure$StructureSettings>;
+    static simpleCodec<S extends Structure>(paramconstructor: (param0: Structure$StructureSettings) => S): MapCodec<S>;
     constructor(settings: Structure$StructureSettings, biomeTemp: OceanRuinStructure$Type, largeProbability: number, clusterProbability: number)
     biomeTemp: OceanRuinStructure$Type;
     clusterProbability: number;

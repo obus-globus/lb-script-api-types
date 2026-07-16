@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { Internal$EnumLite } from '../../../../../../kotlin/reflect/jvm/internal/impl/protobuf/Internal$EnumLite.d.ts'
 export class ProtoBuf$Class$Kind extends Enum<ProtoBuf$Class$Kind> implements Internal$EnumLite {
@@ -10,7 +9,7 @@ export class ProtoBuf$Class$Kind extends Enum<ProtoBuf$Class$Kind> implements In
     static ENUM_ENTRY: ProtoBuf$Class$Kind;
     static INTERFACE: ProtoBuf$Class$Kind;
     static OBJECT: ProtoBuf$Class$Kind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: number): ProtoBuf$Class$Kind;
     static valueOf(paramarg0: string): ProtoBuf$Class$Kind;
     static values(): ProtoBuf$Class$Kind[];

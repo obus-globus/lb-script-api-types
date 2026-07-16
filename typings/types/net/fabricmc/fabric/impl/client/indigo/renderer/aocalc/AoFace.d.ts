@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { QuadViewImpl } from '../../../../../../../../net/fabricmc/fabric/impl/client/indigo/renderer/mesh/QuadViewImpl.d.ts'
 import type { Direction } from '../../../../../../../../net/minecraft/core/Direction.d.ts'
@@ -10,7 +9,7 @@ export class AoFace extends Enum<AoFace> {
     static SOUTH: AoFace;
     static UP: AoFace;
     static WEST: AoFace;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): AoFace;
     static values(): AoFace[];
     private constructor(arg2: Direction[], arg3: number[])

@@ -11,12 +11,12 @@ export class ModuleTeams$Matches extends Enum<ModuleTeams$Matches> implements Pr
     static PREFIX: ModuleTeams$Matches;
     static SCOREBOARD_TEAM: ModuleTeams$Matches;
     static getEntries(): ModuleTeams$Matches[];
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static makeLookupTable(paramarg0: (Tagged | null)[]): { [key: string]: Tagged | null };
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
-    static of(paramarg0: string): Tagged;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): ModuleTeams$Matches;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static makeLookupTable<T extends Tagged>(self: T[]): { [key: string]: T };
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
+    static of(self: string): Tagged;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): ModuleTeams$Matches;
     static values(): ModuleTeams$Matches[];
     private constructor(tag: string, testMatches: (param0: LivingEntity) => boolean)
     readonly tag: string;

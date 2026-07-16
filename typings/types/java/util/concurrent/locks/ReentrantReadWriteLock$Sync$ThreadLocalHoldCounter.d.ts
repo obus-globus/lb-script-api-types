@@ -3,7 +3,7 @@ import type { ReentrantReadWriteLock$Sync$HoldCounter } from '../../../../java/u
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ReentrantReadWriteLock$Sync$ThreadLocalHoldCounter extends ThreadLocal<ReentrantReadWriteLock$Sync$HoldCounter> {
-    static withInitial(paramarg0: () => Object | null): ThreadLocal<Object>;
+    static withInitial<S extends unknown>(paramarg0: () => S): ThreadLocal<S>;
     constructor()
     initialValue(): ReentrantReadWriteLock$Sync$HoldCounter;
 }

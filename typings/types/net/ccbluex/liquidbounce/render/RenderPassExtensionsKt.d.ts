@@ -20,15 +20,15 @@ export class RenderPassExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt#L94 | src/main/kotlin/net/ccbluex/liquidbounce/render/RenderPassExtensions.kt:94}
      */
-    static bindAndDraw(renderPass: RenderPass, vertexSlice: GpuBufferSlice, indexSlice: GpuBufferSlice, indexType: IndexType, indexCount: number): void;
-    static bindDefaultUniforms(renderPass: RenderPass): void;
-    static bindDynamicTransformsUniform(renderPass: RenderPass, gpuBufferSlice: GpuBufferSlice): void;
-    static bindFogUniform(renderPass: RenderPass): void;
-    static bindGlobalsUniform(renderPass: RenderPass): void;
-    static bindLightingUniform(renderPass: RenderPass): void;
-    static bindProjectionUniform(renderPass: RenderPass): void;
-    static bindTexture(renderPass: RenderPass, name: string, texture: AbstractTexture): void;
-    static bindTextures(renderPass: RenderPass, textures: { [key: string]: AbstractTexture }): void;
+    static bindAndDraw(self: RenderPass, vertexSlice: GpuBufferSlice, indexSlice: GpuBufferSlice, indexType: IndexType, indexCount: number): void;
+    static bindDefaultUniforms(self: RenderPass): void;
+    static bindDynamicTransformsUniform(self: RenderPass, gpuBufferSlice: GpuBufferSlice): void;
+    static bindFogUniform(self: RenderPass): void;
+    static bindGlobalsUniform(self: RenderPass): void;
+    static bindLightingUniform(self: RenderPass): void;
+    static bindProjectionUniform(self: RenderPass): void;
+    static bindTexture(self: RenderPass, name: string, texture: AbstractTexture | null): void;
+    static bindTextures(self: RenderPass, textures: { [key: string]: AbstractTexture | null }): void;
     /**
      * Color-only RenderPass.
      *
@@ -39,16 +39,16 @@ export class RenderPassExtensionsKt extends Object {
     static createRenderPass(paramarg0: RenderTarget, paramarg1: () => string, paramarg2: Optional<Vector4fc>): RenderPass;
     static createRenderPass(gpuTextureView: RenderTarget, labelGetter: () => string, clearColor: Optional<Vector4fc>, allowOverride: OptionalDouble): RenderPass;
     static createRenderPass(paramarg0: RenderTarget, paramarg1: () => string, paramarg2: Optional<Vector4fc>, paramarg3: OptionalDouble, paramarg4: boolean): RenderPass;
-    static createRenderPass(renderTarget: RenderTarget, labelGetter: () => string, clearColor: Optional<Vector4fc>, clearDepth: OptionalDouble, useDepthAttachment: boolean, allowOverride: boolean): RenderPass;
+    static createRenderPass(self: RenderTarget, labelGetter: () => string, clearColor: Optional<Vector4fc>, clearDepth: OptionalDouble, useDepthAttachment: boolean, allowOverride: boolean): RenderPass;
     static createRenderPass(paramarg0: GpuTextureView): RenderPass;
     static createRenderPass(paramarg0: GpuTextureView, paramarg1: () => string): RenderPass;
     static createRenderPass(paramarg0: GpuTextureView, paramarg1: () => string, paramarg2: Optional<Vector4fc>): RenderPass;
-    static createRenderPass(gpuTextureView: GpuTextureView, labelGetter: () => string, clearColor: Optional<Vector4fc>, allowOverride: boolean): RenderPass;
+    static createRenderPass(self: GpuTextureView, labelGetter: () => string, clearColor: Optional<Vector4fc>, allowOverride: boolean): RenderPass;
     static getDynamicTransformsUniform(): GpuBufferSlice;
     static getDynamicTransformsUniform(paramarg0: Matrix4f): GpuBufferSlice;
     static getDynamicTransformsUniform(paramarg0: Matrix4f, paramarg1: Color4b): GpuBufferSlice;
-    static getDynamicTransformsUniform(modelView: Matrix4f, colorModulator: Color4b, modelOffset: Vector3f): GpuBufferSlice;
-    static setUniforms(renderPass: RenderPass, uniforms: { [key: string]: GpuBufferSlice }): void;
-    static setupRenderTypeScissor(renderPass: RenderPass): void;
-    static unbindTexture(renderPass: RenderPass, name: string): void;
+    static getDynamicTransformsUniform(modelView: Matrix4f | null, colorModulator: Color4b, modelOffset: Vector3f | null): GpuBufferSlice;
+    static setUniforms(self: RenderPass, uniforms: { [key: string]: GpuBufferSlice }): void;
+    static setupRenderTypeScissor(self: RenderPass): void;
+    static unbindTexture(self: RenderPass, name: string): void;
 }

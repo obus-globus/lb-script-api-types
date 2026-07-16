@@ -2,7 +2,6 @@ import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Duration } from '../../../java/time/Duration.d.ts'
 import type { Temporal } from '../../../java/time/temporal/Temporal.d.ts'
 import type { TemporalUnit } from '../../../java/time/temporal/TemporalUnit.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class ChronoUnit extends Enum<ChronoUnit> implements TemporalUnit {
     static CENTURIES: ChronoUnit;
@@ -21,7 +20,7 @@ export class ChronoUnit extends Enum<ChronoUnit> implements TemporalUnit {
     static SECONDS: ChronoUnit;
     static WEEKS: ChronoUnit;
     static YEARS: ChronoUnit;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ChronoUnit;
     static values(): ChronoUnit[];
     private constructor(arg2: string, arg3: Duration)

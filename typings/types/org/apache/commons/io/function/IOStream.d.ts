@@ -57,9 +57,9 @@ export interface IOStream<T extends unknown> extends Object, IOBaseStream<T, IOS
     onClose(arg0: () => void): IOStream<T>;
     parallel(): IOStream<T>;
     peek(arg0: (param0: T) => void): IOStream<T>;
-    reduce(arg0: T, arg1: (param0: T, param1: Object | null) => Object | null): T;
-    reduce<U extends unknown>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: Object | null) => Object | null): U;
-    reduce(arg0: (param0: T, param1: Object | null) => Object | null): Optional<T>;
+    reduce(arg0: T, arg1: (param0: T, param1: T) => T): T;
+    reduce<U extends unknown>(arg0: U, arg1: (param0: U, param1: T) => U, arg2: (param0: U, param1: U) => U): U;
+    reduce(arg0: (param0: T, param1: T) => T): Optional<T>;
     sequential(): IOStream<T>;
     skip(arg0: number): IOStream<T>;
     sorted(): IOStream<T>;

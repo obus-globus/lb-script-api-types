@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class TextPacketType extends Enum<TextPacketType> {
     static Announcement: TextPacketType;
@@ -18,7 +17,7 @@ export class TextPacketType extends Enum<TextPacketType> {
     static getByName(paramarg0: string, paramarg1: TextPacketType): TextPacketType;
     static getByValue(paramarg0: number): TextPacketType;
     static getByValue(paramarg0: number, paramarg1: TextPacketType): TextPacketType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TextPacketType;
     static values(): TextPacketType[];
     private constructor(arg2: number)

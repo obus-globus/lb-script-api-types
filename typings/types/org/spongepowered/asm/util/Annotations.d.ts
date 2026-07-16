@@ -1,6 +1,7 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Annotation } from '../../../../java/lang/annotation/Annotation.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { AnnotationNode } from '../../../../org/objectweb/asm/tree/AnnotationNode.d.ts'
 import type { ClassNode } from '../../../../org/objectweb/asm/tree/ClassNode.d.ts'
 import type { FieldNode } from '../../../../org/objectweb/asm/tree/FieldNode.d.ts'
@@ -18,13 +19,13 @@ export class Annotations extends Object {
     static getSimpleName(paramarg0: AnnotationNode): string;
     static getSingleInvisible(paramarg0: MethodNode, ...paramarg1: Class<Annotation>[]): AnnotationNode;
     static getSingleVisible(paramarg0: MethodNode, ...paramarg1: Class<Annotation>[]): AnnotationNode;
-    static getValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: Class<Object>, paramarg3: Object | null): Object | null;
-    static getValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: boolean, paramarg3: Class<Object>): (Object | null)[];
-    static getValue(paramarg0: AnnotationNode): Object | null;
-    static getValue(paramarg0: AnnotationNode, paramarg1: string): Object | null;
-    static getValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: Object | null): Object | null;
-    static getValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: Class<Object>): Object | null;
-    static getValue(paramarg0: AnnotationNode, paramarg1: string, paramarg2: boolean): (Object | null)[];
+    static getValue<T extends Enum<T>>(paramarg0: AnnotationNode, paramarg1: string, paramarg2: Class<T>, paramarg3: T): T;
+    static getValue<T extends Enum<T>>(paramarg0: AnnotationNode, paramarg1: string, paramarg2: boolean, paramarg3: Class<T>): T[];
+    static getValue<T extends unknown>(paramarg0: AnnotationNode): T;
+    static getValue<T extends unknown>(paramarg0: AnnotationNode, paramarg1: string): T;
+    static getValue<T extends unknown>(paramarg0: AnnotationNode, paramarg1: string, paramarg2: T): T;
+    static getValue<T extends unknown>(paramarg0: AnnotationNode, paramarg1: string, paramarg2: Class<Object>): T;
+    static getValue<T extends unknown>(paramarg0: AnnotationNode, paramarg1: string, paramarg2: boolean): T[];
     static getVisible(paramarg0: ClassNode, paramarg1: Class<Annotation>): AnnotationNode;
     static getVisible(paramarg0: FieldNode, paramarg1: Class<Annotation>): AnnotationNode;
     static getVisible(paramarg0: MethodNode, paramarg1: Class<Annotation>): AnnotationNode;

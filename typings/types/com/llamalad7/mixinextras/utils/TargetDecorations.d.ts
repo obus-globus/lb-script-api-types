@@ -3,10 +3,10 @@ import type { UnaryOperator } from '../../../../java/util/function/UnaryOperator
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AbstractInsnNode } from '../../../../org/objectweb/asm/tree/AbstractInsnNode.d.ts'
 export class TargetDecorations extends Object {
-    static get(paramarg0: AbstractInsnNode[], paramarg1: string): Object | null;
-    static getOrPut(paramarg0: AbstractInsnNode[], paramarg1: string, paramarg2: () => Object | null): Object | null;
+    static get<T extends unknown>(paramarg0: AbstractInsnNode[], paramarg1: string): T;
+    static getOrPut<T extends unknown>(paramarg0: AbstractInsnNode[], paramarg1: string, paramarg2: () => T): T;
     static has(paramarg0: AbstractInsnNode[], paramarg1: string): boolean;
-    static modify(paramarg0: AbstractInsnNode[], paramarg1: string, paramarg2: (param0: Object | null) => Object | null): void;
+    static modify<T extends unknown>(paramarg0: AbstractInsnNode[], paramarg1: string, paramarg2: (param0: T) => T): void;
     static put(paramarg0: AbstractInsnNode[], paramarg1: string, paramarg2: Object): void;
     static remove(paramarg0: AbstractInsnNode[], paramarg1: string): void;
     constructor()

@@ -4,7 +4,7 @@ import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 export class AttributeModifiers1_21$Display extends Object implements Copyable {
     static DEFAULT: AttributeModifiers1_21$Display;
     static DISPLAY_TYPES: string[];
-    static copy(paramarg0: Object | null): Object | null;
+    static copy<T extends unknown>(paramarg0: T): T;
     constructor(arg0: number)
     // private id: number;
     copy(): AttributeModifiers1_21$Display;

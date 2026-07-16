@@ -1,7 +1,6 @@
 import type { ByteBuf } from '../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { URI } from '../../../java/net/URI.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 import type { Component } from '../../../net/minecraft/network/chat/Component.d.ts'
 import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCodec.d.ts'
@@ -18,7 +17,7 @@ export class ServerLinks$KnownLinkType extends Enum<ServerLinks$KnownLinkType> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ServerLinks$KnownLinkType>;
     static SUPPORT: ServerLinks$KnownLinkType;
     static WEBSITE: ServerLinks$KnownLinkType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ServerLinks$KnownLinkType;
     static values(): ServerLinks$KnownLinkType[];
     private constructor(id: number, name: string)

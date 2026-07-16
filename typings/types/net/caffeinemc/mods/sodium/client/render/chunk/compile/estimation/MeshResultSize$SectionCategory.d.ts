@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../../java/lang/Enum.d.ts'
 import type { RenderSection } from '../../../../../../../../../net/caffeinemc/mods/sodium/client/render/chunk/RenderSection.d.ts'
 export class MeshResultSize$SectionCategory extends Enum<MeshResultSize$SectionCategory> {
@@ -9,7 +8,7 @@ export class MeshResultSize$SectionCategory extends Enum<MeshResultSize$SectionC
     static UNDERGROUND: MeshResultSize$SectionCategory;
     static WATER_LEVEL: MeshResultSize$SectionCategory;
     static forSection(paramarg0: RenderSection, paramarg1: number): MeshResultSize$SectionCategory;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MeshResultSize$SectionCategory;
     static values(): MeshResultSize$SectionCategory[];
     private constructor()

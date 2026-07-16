@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class StructureTemplateResponseType extends Enum<StructureTemplateResponseType> {
     static Export: StructureTemplateResponseType;
@@ -9,7 +8,7 @@ export class StructureTemplateResponseType extends Enum<StructureTemplateRespons
     static getByName(paramarg0: string, paramarg1: StructureTemplateResponseType): StructureTemplateResponseType;
     static getByValue(paramarg0: number): StructureTemplateResponseType;
     static getByValue(paramarg0: number, paramarg1: StructureTemplateResponseType): StructureTemplateResponseType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): StructureTemplateResponseType;
     static values(): StructureTemplateResponseType[];
     private constructor(arg2: number)

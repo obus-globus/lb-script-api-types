@@ -2,8 +2,8 @@ import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Function as Function_2 } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Converter<A extends unknown, B extends unknown> extends Object implements Function<A, B> {
-    static from(paramforwardFunction: (param0: Object) => Object | null, parambackwardFunction: (param0: Object) => Object | null): Converter<Object, Object>;
-    static identity(): Converter<Object, Object>;
+    static from<A extends unknown, B extends unknown>(paramforwardFunction: (param0: Object) => B, parambackwardFunction: (param0: Object) => A): Converter<A, B>;
+    static identity<T extends unknown>(): Converter<T, T>;
     constructor()
     constructor(handleNullAutomatically: boolean)
     // private handleNullAutomatically: boolean;

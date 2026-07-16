@@ -24,7 +24,7 @@ export class ConsoleBuiltins$Console extends Enum<ConsoleBuiltins$Console> imple
     static timeLog: ConsoleBuiltins$Console;
     static warn: ConsoleBuiltins$Console;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ConsoleBuiltins$Console;
     static values(): ConsoleBuiltins$Console[];
     private constructor(length: number)

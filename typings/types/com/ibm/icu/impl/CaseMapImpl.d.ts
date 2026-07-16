@@ -12,15 +12,15 @@ export class CaseMapImpl extends Object {
     static TITLECASE_WHOLE_STRING: number;
     static addTitleAdjustmentOption(paramarg0: number, paramarg1: number): number;
     static addTitleIteratorOption(paramarg0: number, paramarg1: number): number;
-    static fold(paramarg0: number, paramarg1: CharSequence, paramarg2: Appendable | null, paramarg3: Edits): Appendable | null;
+    static fold<A extends Appendable>(paramarg0: number, paramarg1: CharSequence, paramarg2: A, paramarg3: Edits): A;
     static fold(paramarg0: number, paramarg1: CharSequence): string;
     static getTitleBreakIterator(paramarg0: ULocale, paramarg1: number, paramarg2: BreakIterator): BreakIterator;
     static getTitleBreakIterator(paramarg0: Locale, paramarg1: number, paramarg2: BreakIterator): BreakIterator;
-    static toLower(paramarg0: number, paramarg1: number, paramarg2: CharSequence, paramarg3: Appendable | null, paramarg4: Edits): Appendable | null;
+    static toLower<A extends Appendable>(paramarg0: number, paramarg1: number, paramarg2: CharSequence, paramarg3: A, paramarg4: Edits): A;
     static toLower(paramarg0: number, paramarg1: number, paramarg2: CharSequence): string;
-    static toTitle(paramarg0: number, paramarg1: number, paramarg2: BreakIterator, paramarg3: CharSequence, paramarg4: Appendable | null, paramarg5: Edits): Appendable | null;
+    static toTitle<A extends Appendable>(paramarg0: number, paramarg1: number, paramarg2: BreakIterator, paramarg3: CharSequence, paramarg4: A, paramarg5: Edits): A;
     static toTitle(paramarg0: number, paramarg1: number, paramarg2: BreakIterator, paramarg3: CharSequence): string;
-    static toUpper(paramarg0: number, paramarg1: number, paramarg2: CharSequence, paramarg3: Appendable | null, paramarg4: Edits): Appendable | null;
+    static toUpper<A extends Appendable>(paramarg0: number, paramarg1: number, paramarg2: CharSequence, paramarg3: A, paramarg4: Edits): A;
     static toUpper(paramarg0: number, paramarg1: number, paramarg2: CharSequence): string;
     constructor()
 }

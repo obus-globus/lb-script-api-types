@@ -8,7 +8,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CompoundTag } from '../../../../net/minecraft/nbt/CompoundTag.d.ts'
 export class CompoundTagArgument extends Object implements ArgumentType<CompoundTag> {
     static compoundTag(): CompoundTagArgument;
-    static getCompoundTag(paramcontext: CommandContext<Object>, paramname: string): CompoundTag;
+    static getCompoundTag<S extends unknown>(paramcontext: CommandContext<S>, paramname: string): CompoundTag;
     private constructor()
     getExamples(): string[];
     listSuggestions<S extends unknown>(arg0: CommandContext<S>, arg1: SuggestionsBuilder): CompletableFuture<Suggestions>;

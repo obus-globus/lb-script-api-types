@@ -21,8 +21,8 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 export class CycleButton<T extends unknown> extends AbstractButton implements ResettableOptionWidget {
     static DEFAULT_ALT_LIST_SELECTOR: () => boolean;
     static booleanBuilder(paramtrueText: Component, paramfalseText: Component, paramdefaultValue: boolean): CycleButton$Builder<boolean>;
-    static builder(paramvalueStringifier: (param0: Object | null) => Component, paramdefaultValue: Object | null): CycleButton$Builder<Object>;
-    static builder(paramvalueStringifier: (param0: Object | null) => Component, paramdefaultValueSupplier: () => Object | null): CycleButton$Builder<Object>;
+    static builder<T extends unknown>(paramvalueStringifier: (param0: T) => Component, paramdefaultValue: T): CycleButton$Builder<T>;
+    static builder<T extends unknown>(paramvalueStringifier: (param0: T) => Component, paramdefaultValueSupplier: () => T): CycleButton$Builder<T>;
     static defaultInactiveMessage(paramactiveMessage: Component): Component;
     static onOffBuilder(paraminitialValue: boolean): CycleButton$Builder<boolean>;
     static playButtonClickSound(paramsoundManager: SoundManager): void;

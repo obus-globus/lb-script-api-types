@@ -12,7 +12,7 @@ export class Resources extends Object {
     static copy(paramfrom: URL, paramto: OutputStream): void;
     static getResource(paramcontextClass: Class<Object>, paramresourceName: string): URL;
     static getResource(paramresourceName: string): URL;
-    static readLines(paramurl: URL, paramcharset: Charset, paramcallback: LineProcessor<Object>): Object | null;
+    static readLines<T extends unknown>(paramurl: URL, paramcharset: Charset, paramcallback: LineProcessor<T>): T;
     static readLines(paramurl: URL, paramcharset: Charset): string[];
     static toByteArray(paramurl: URL): number[];
     static toString(paramurl: URL, paramcharset: Charset): string;

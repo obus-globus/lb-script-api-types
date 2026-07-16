@@ -4,18 +4,18 @@ import type { Function } from '../../../../../../../org/spongepowered/include/co
 import type { Predicate } from '../../../../../../../org/spongepowered/include/com/google/common/base/Predicate.d.ts'
 import type { UnmodifiableIterator } from '../../../../../../../org/spongepowered/include/com/google/common/collect/UnmodifiableIterator.d.ts'
 export class Iterators extends Object {
-    static any(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): boolean;
-    static concat(paramarg0: Iterator<Iterator<Object>>): Iterator<Object>;
+    static any<T extends unknown>(paramarg0: Iterator<T>, paramarg1: (param0: Object) => boolean): boolean;
+    static concat<T extends unknown>(paramarg0: Iterator<Iterator<T>>): Iterator<T>;
     static contains(paramarg0: Iterator<Object>, paramarg1: Object): boolean;
     static elementsEqual(paramarg0: Iterator<Object>, paramarg1: Iterator<Object>): boolean;
-    static filter(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): UnmodifiableIterator<Object>;
-    static forArray(...paramarg0: (Object | null)[]): UnmodifiableIterator<Object>;
-    static getNext(paramarg0: Iterator<Object>, paramarg1: Object | null): Object | null;
-    static indexOf(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): number;
+    static filter<T extends unknown>(paramarg0: Iterator<T>, paramarg1: (param0: Object) => boolean): UnmodifiableIterator<T>;
+    static forArray<T extends unknown>(...paramarg0: T[]): UnmodifiableIterator<T>;
+    static getNext<T extends unknown>(paramarg0: Iterator<T>, paramarg1: T): T;
+    static indexOf<T extends unknown>(paramarg0: Iterator<T>, paramarg1: (param0: Object) => boolean): number;
     static removeAll(paramarg0: Iterator<Object>, paramarg1: Object[]): boolean;
-    static removeIf(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => boolean): boolean;
-    static singletonIterator(paramarg0: Object | null): UnmodifiableIterator<Object>;
+    static removeIf<T extends unknown>(paramarg0: Iterator<T>, paramarg1: (param0: Object) => boolean): boolean;
+    static singletonIterator<T extends unknown>(paramarg0: T): UnmodifiableIterator<T>;
     static toString(paramarg0: Iterator<Object>): string;
-    static transform(paramarg0: Iterator<Object>, paramarg1: (param0: Object) => Object | null): Iterator<Object>;
-    static unmodifiableIterator(paramarg0: Iterator<Object>): UnmodifiableIterator<Object>;
+    static transform<F extends unknown, T extends unknown>(paramarg0: Iterator<F>, paramarg1: (param0: Object) => T): Iterator<T>;
+    static unmodifiableIterator<T extends unknown>(paramarg0: Iterator<T>): UnmodifiableIterator<T>;
 }

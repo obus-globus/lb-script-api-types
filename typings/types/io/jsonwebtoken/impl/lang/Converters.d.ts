@@ -11,10 +11,10 @@ export class Converters extends Object {
     static BIGINT_UBYTES: Converter<BigInteger, number[]>;
     static URI: Converter<URI, Object>;
     static X509_CERTIFICATE: Converter<X509Certificate, Object>;
-    static compound(paramarg0: Converter<Object, Object>, paramarg1: Converter<Object, Object>): Converter<Object, Object>;
-    static forEncoded(paramarg0: Class<Object>, paramarg1: Converter<Object, CharSequence>): Converter<Object, Object>;
-    static forList(paramarg0: Converter<Object, Object>): Converter<(Object | null)[], Object>;
-    static forSet(paramarg0: Converter<Object, Object>): Converter<(Object | null)[], Object>;
-    static forType(paramarg0: Class<Object>): Converter<Object, Object>;
+    static compound<A extends unknown, B extends unknown, C extends unknown>(paramarg0: Converter<A, B>, paramarg1: Converter<B, C>): Converter<A, C>;
+    static forEncoded<T extends unknown>(paramarg0: Class<T>, paramarg1: Converter<T, CharSequence>): Converter<T, Object>;
+    static forList<T extends unknown>(paramarg0: Converter<T, Object>): Converter<T[], Object>;
+    static forSet<T extends unknown>(paramarg0: Converter<T, Object>): Converter<T[], Object>;
+    static forType<T extends unknown>(paramarg0: Class<T>): Converter<T, Object>;
     private constructor()
 }

@@ -3,7 +3,7 @@ import type { LongBinaryOperator } from '../../../../java/util/function/LongBina
 import type { LongUnaryOperator } from '../../../../java/util/function/LongUnaryOperator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class AtomicLongFieldUpdater<T extends unknown> extends Object {
-    static newUpdater(paramarg0: Class<Object>, paramarg1: string): AtomicLongFieldUpdater<Object>;
+    static newUpdater<U extends unknown>(paramarg0: Class<U>, paramarg1: string): AtomicLongFieldUpdater<U>;
     constructor()
     accumulateAndGet(arg0: T, arg1: number, arg2: (param0: number, param1: number) => number): number;
     addAndGet(arg0: T, arg1: number): number;

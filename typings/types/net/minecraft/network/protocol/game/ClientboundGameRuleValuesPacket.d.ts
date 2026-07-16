@@ -12,7 +12,7 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { GameRule } from '../../../../../net/minecraft/world/level/gamerules/GameRule.d.ts'
 export class ClientboundGameRuleValuesPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundGameRuleValuesPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(values: Map<ResourceKey<GameRule<Object>>, string>)
     // private values: Map<ResourceKey<GameRule<Object>>, string>;
     equals(o: Object | null): boolean;

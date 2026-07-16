@@ -48,7 +48,7 @@ export class TelemetryProperty<T extends unknown> extends Record {
     static WORLD_LOAD_TIME_MS: TelemetryProperty<number>;
     static WORLD_SESSION_ID: TelemetryProperty<UUID>;
     static bool(paramid: string, paramexportKey: string): TelemetryProperty<boolean>;
-    static create(paramid: string, paramexportKey: string, paramcodec: Codec<Object>, paramexporter: TelemetryProperty$Exporter<Object>): TelemetryProperty<Object>;
+    static create<T extends unknown>(paramid: string, paramexportKey: string, paramcodec: Codec<T>, paramexporter: TelemetryProperty$Exporter<T>): TelemetryProperty<T>;
     static gameLoadMeasurement(paramid: string, paramexportKey: string): TelemetryProperty<GameLoadTimesEvent$Measurement>;
     static integer(paramid: string, paramexportKey: string): TelemetryProperty<number>;
     static longSamples(paramid: string, paramexportKey: string): TelemetryProperty<(Object | null)[]>;

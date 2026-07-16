@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class ErrorScopeKind extends Enum<ErrorScopeKind> {
     static CAPTURED_TYPE_SCOPE: ErrorScopeKind;
@@ -12,7 +11,7 @@ export class ErrorScopeKind extends Enum<ErrorScopeKind> {
     static SCOPE_FOR_ERROR_RESOLUTION_CANDIDATE: ErrorScopeKind;
     static STUB_TYPE_SCOPE: ErrorScopeKind;
     static UNSUPPORTED_TYPE_SCOPE: ErrorScopeKind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ErrorScopeKind;
     static values(): ErrorScopeKind[];
     private constructor(arg2: string)

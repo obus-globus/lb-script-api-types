@@ -4,6 +4,6 @@ import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity
 import type { LivingEntity } from '../../../../../../net/minecraft/world/entity/LivingEntity.d.ts'
 import type { BehaviorControl } from '../../../../../../net/minecraft/world/entity/ai/behavior/BehaviorControl.d.ts'
 export class DismountOrSkipMounting extends Object {
-    static create(parammaxWalkDistToRideTarget: number, paramdontRideIf: (param0: LivingEntity | null, param1: Entity) => boolean): BehaviorControl<LivingEntity>;
+    static create<E extends LivingEntity>(parammaxWalkDistToRideTarget: number, paramdontRideIf: (param0: E, param1: Entity) => boolean): BehaviorControl<E>;
     constructor()
 }

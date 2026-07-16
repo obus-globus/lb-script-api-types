@@ -5,7 +5,7 @@ import type { Builder } from '../../../../../org/apache/commons/lang3/builder/Bu
 import type { ToStringStyle } from '../../../../../org/apache/commons/lang3/builder/ToStringStyle.d.ts'
 export class ToStringBuilder extends Object implements Builder<string> {
     static getDefaultStyle(): ToStringStyle;
-    static reflectionToString(paramarg0: Object | null, paramarg1: ToStringStyle, paramarg2: boolean, paramarg3: Class<Object>): string;
+    static reflectionToString<T extends unknown>(paramarg0: T, paramarg1: ToStringStyle, paramarg2: boolean, paramarg3: Class<Object>): string;
     static reflectionToString(paramarg0: Object): string;
     static reflectionToString(paramarg0: Object, paramarg1: ToStringStyle): string;
     static reflectionToString(paramarg0: Object, paramarg1: ToStringStyle, paramarg2: boolean): string;

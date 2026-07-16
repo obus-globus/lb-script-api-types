@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class CefRequest$ResourceType extends Enum<CefRequest$ResourceType> {
     static RT_CSP_REPORT: CefRequest$ResourceType;
@@ -23,7 +22,7 @@ export class CefRequest$ResourceType extends Enum<CefRequest$ResourceType> {
     static RT_SUB_RESOURCE: CefRequest$ResourceType;
     static RT_WORKER: CefRequest$ResourceType;
     static RT_XHR: CefRequest$ResourceType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CefRequest$ResourceType;
     static values(): CefRequest$ResourceType[];
     private constructor()

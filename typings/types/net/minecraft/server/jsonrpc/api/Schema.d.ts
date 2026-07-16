@@ -6,6 +6,7 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { UUID } from '../../../../../java/util/UUID.d.ts'
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { PlayerDto } from '../../../../../net/minecraft/server/jsonrpc/api/PlayerDto.d.ts'
 import type { SchemaComponent } from '../../../../../net/minecraft/server/jsonrpc/api/SchemaComponent.d.ts'
 import type { BanlistService$UserBanDto } from '../../../../../net/minecraft/server/jsonrpc/methods/BanlistService$UserBanDto.d.ts'
@@ -20,6 +21,7 @@ import type { PlayerService$KickDto } from '../../../../../net/minecraft/server/
 import type { ServerStateService$ServerState } from '../../../../../net/minecraft/server/jsonrpc/methods/ServerStateService$ServerState.d.ts'
 import type { ServerStateService$SystemMessage } from '../../../../../net/minecraft/server/jsonrpc/methods/ServerStateService$SystemMessage.d.ts'
 import type { PermissionLevel } from '../../../../../net/minecraft/server/permissions/PermissionLevel.d.ts'
+import type { StringRepresentable } from '../../../../../net/minecraft/util/StringRepresentable.d.ts'
 import type { Difficulty } from '../../../../../net/minecraft/world/Difficulty.d.ts'
 import type { GameType } from '../../../../../net/minecraft/world/level/GameType.d.ts'
 import type { GameRuleType } from '../../../../../net/minecraft/world/level/gamerules/GameRuleType.d.ts'
@@ -48,16 +50,16 @@ export class Schema<T extends unknown> extends Record {
     static UNTYPED_GAME_RULE_SCHEMA: SchemaComponent<GameRulesService$GameRuleUpdate<Object>>;
     static UUID_SCHEMA: Schema<UUID>;
     static VERSION_SCHEMA: SchemaComponent<DiscoveryService$DiscoverInfo>;
-    static arrayOf(paramitem: Schema<Object>, paramcodec: Codec<Object>): Schema<(Object | null)[]>;
+    static arrayOf<T extends unknown>(paramitem: Schema<Object>, paramcodec: Codec<T>): Schema<T[]>;
     static getSchemaRegistry(): SchemaComponent<Object>[];
-    static ofEnum(paramvalues: () => (Object | null)[]): Schema<Object>;
-    static ofEnum(paramvalues: () => (Object | null)[], paramcodec: Codec<Object>): Schema<Object>;
-    static ofEnum(paramenumValues: string[], paramcodec: Codec<Object>): Schema<Object>;
-    static ofRef(paramref: URI, paramcodec: Codec<Object>): Schema<Object>;
-    static ofType(paramtype: string, paramcodec: Codec<Object>): Schema<Object>;
-    static ofTypes(paramtypes: string[], paramcodec: Codec<Object>): Schema<Object>;
-    static record(paramcodec: Codec<Object>): Schema<Object>;
-    static typedCodec(): Codec<Schema<Object>>;
+    static ofEnum<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[]): Schema<E>;
+    static ofEnum<E extends Enum<E> & StringRepresentable>(paramvalues: () => E[], paramcodec: Codec<E>): Schema<E>;
+    static ofEnum<T extends unknown>(paramenumValues: string[], paramcodec: Codec<T>): Schema<T>;
+    static ofRef<T extends unknown>(paramref: URI, paramcodec: Codec<T>): Schema<T>;
+    static ofType<T extends unknown>(paramtype: string, paramcodec: Codec<T>): Schema<T>;
+    static ofTypes<T extends unknown>(paramtypes: string[], paramcodec: Codec<T>): Schema<T>;
+    static record<T extends unknown>(paramcodec: Codec<T>): Schema<T>;
+    static typedCodec<T extends unknown>(): Codec<Schema<T>>;
     constructor(reference: Optional<URI>, type: string[], items: Optional<Schema<Object>>, properties: { [key: string]: Schema<Object> }, enumValues: string[], codec: Codec<T>)
     // private codec: Codec<T>;
     // private enumValues: string[];

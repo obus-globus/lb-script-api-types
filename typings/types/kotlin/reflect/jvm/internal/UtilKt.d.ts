@@ -26,33 +26,34 @@ import type { TypeTable } from '../../../../kotlin/reflect/jvm/internal/impl/met
 import type { ClassId } from '../../../../kotlin/reflect/jvm/internal/impl/name/ClassId.d.ts'
 import type { FqName } from '../../../../kotlin/reflect/jvm/internal/impl/name/FqName.d.ts'
 import type { MessageLite } from '../../../../kotlin/reflect/jvm/internal/impl/protobuf/MessageLite.d.ts'
+import type { MemberDeserializer } from '../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/MemberDeserializer.d.ts'
 import type { DeserializedContainerSource } from '../../../../kotlin/reflect/jvm/internal/impl/serialization/deserialization/descriptors/DeserializedContainerSource.d.ts'
 export class UtilKt extends Object {
-    static asReflectCallable(paramarg0: Object): ReflectKCallable<Object>;
-    static asReflectFunction(paramarg0: Object): ReflectKFunction;
-    static asReflectProperty(paramarg0: Object): ReflectKProperty<Object>;
-    static computeAnnotations(paramarg0: Annotated): Annotation[];
-    static createArrayType(paramarg0: Class<Object>): Class<Object>;
-    static defaultPrimitiveValue(paramarg0: Type): Object;
-    static deserializeToDescriptor(paramarg0: Class<Object>, paramarg1: DeserializedContainerSource, paramarg2: MessageLite | null, paramarg3: NameResolver, paramarg4: TypeTable, paramarg5: BinaryVersion, paramarg6: (param0: Object, param1: Object) => CallableDescriptor | null): CallableDescriptor | null;
-    static getDeclaredFieldOrNull(paramarg0: Class<Object>, paramarg1: string): Field;
-    static getDeclaredMethodOrNull(paramarg0: Class<Object>, paramarg1: string, ...paramarg2: Class<Object>[]): Method;
+    static asReflectCallable(self: Object | null): ReflectKCallable<Object> | null;
+    static asReflectFunction(self: Object | null): ReflectKFunction | null;
+    static asReflectProperty(self: Object | null): ReflectKProperty<Object> | null;
+    static computeAnnotations(self: Annotated): Annotation[];
+    static createArrayType(self: Class<Object>): Class<Object>;
+    static defaultPrimitiveValue(type: Type): Object | null;
+    static deserializeToDescriptor<D extends CallableDescriptor, M extends MessageLite>(moduleAnchor: Class<Object>, containerSource: DeserializedContainerSource | null, proto: M, nameResolver: NameResolver, typeTable: TypeTable, metadataVersion: BinaryVersion, createDescriptor: (param0: MemberDeserializer, param1: M) => D): D;
+    static getDeclaredFieldOrNull(self: Class<Object>, name: string): Field | null;
+    static getDeclaredMethodOrNull(self: Class<Object>, name: string, ...parameterTypes: Class<Object>[]): Method | null;
     static getInstanceReceiverParameter(paramarg0: DescriptorKCallable<Object>): ReceiverParameterDescriptor;
     static getJVM_STATIC(): FqName;
     static getStdlibClassLoader(): ClassLoader;
     static getUnwrappedAnnotationClass(paramarg0: Annotation): KClass<Annotation>;
-    static hasInherited(paramarg0: Annotation): boolean;
+    static hasInherited(self: Annotation): boolean;
     static isAlwaysBoxedByCompiler(paramarg0: KParameter): boolean;
     static isInlineClassType(paramarg0: KType): boolean;
-    static isNullableType(paramarg0: KType): boolean;
+    static isNullableType(self: KType): boolean;
     static isPackagePrivate(paramarg0: number): boolean;
-    static isRepeatableContainerForNonInheritedAnnotation(paramarg0: Annotation): boolean;
-    static loadClass(paramarg0: ClassLoader, paramarg1: ClassId, paramarg2: number): Class<Object>;
-    static parseAndLoadDescriptor(paramarg0: ClassLoader, paramarg1: string, paramarg2: boolean): FunctionJvmDescriptorLoaded;
-    static parseJvmDescriptor(paramarg0: string): FunctionJvmDescriptor;
-    static toJavaClass(paramarg0: ClassDescriptor): Class<Object>;
-    static toJvmDescriptor(paramarg0: KClass<Object>): string;
-    static toKVisibility(paramarg0: DescriptorVisibility): KVisibility;
-    static unsubstitutedUnderlyingType(paramarg0: KType): KType;
-    static unwrapKotlinRepeatableAnnotations(paramarg0: Annotation[]): Annotation[];
+    static isRepeatableContainerForNonInheritedAnnotation(self: Annotation): boolean;
+    static loadClass(self: ClassLoader, kotlinClassId: ClassId, arrayDimensions: number): Class<Object> | null;
+    static parseAndLoadDescriptor(self: ClassLoader, desc: string, loadReturnType: boolean): FunctionJvmDescriptorLoaded;
+    static parseJvmDescriptor(desc: string): FunctionJvmDescriptor;
+    static toJavaClass(self: ClassDescriptor): Class<Object> | null;
+    static toJvmDescriptor(self: KClass<Object>): string;
+    static toKVisibility(self: DescriptorVisibility): KVisibility | null;
+    static unsubstitutedUnderlyingType(self: KType): KType | null;
+    static unwrapKotlinRepeatableAnnotations(self: Annotation[]): Annotation[];
 }

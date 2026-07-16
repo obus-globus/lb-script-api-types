@@ -83,10 +83,10 @@ export class TypeAdapters extends Object {
     static atomicLongAdapter(paramarg0: TypeAdapter<Number>): TypeAdapter<AtomicLong>;
     static atomicLongArrayAdapter(paramarg0: TypeAdapter<Number>): TypeAdapter<AtomicLongArray>;
     static javaTimeTypeAdapterFactory(): TypeAdapterFactory;
-    static newFactory(paramarg0: TypeToken<Object>, paramarg1: TypeAdapter<Object>): TypeAdapterFactory;
-    static newFactory(paramarg0: Class<Object>, paramarg1: TypeAdapter<Object>): TypeAdapterFactory;
-    static newFactory(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: TypeAdapter<Object>): TypeAdapterFactory;
-    static newFactoryForMultipleTypes(paramarg0: Class<Object>, paramarg1: Class<Object>, paramarg2: TypeAdapter<Object>): TypeAdapterFactory;
-    static newTypeHierarchyFactory(paramarg0: Class<Object>, paramarg1: TypeAdapter<Object>): TypeAdapterFactory;
+    static newFactory<TT extends unknown>(paramarg0: TypeToken<TT>, paramarg1: TypeAdapter<TT>): TypeAdapterFactory;
+    static newFactory<TT extends unknown>(paramarg0: Class<TT>, paramarg1: TypeAdapter<TT>): TypeAdapterFactory;
+    static newFactory<TT extends unknown>(paramarg0: Class<TT>, paramarg1: Class<TT>, paramarg2: TypeAdapter<Object>): TypeAdapterFactory;
+    static newFactoryForMultipleTypes<TT extends unknown>(paramarg0: Class<TT>, paramarg1: Class<TT>, paramarg2: TypeAdapter<Object>): TypeAdapterFactory;
+    static newTypeHierarchyFactory<T1 extends unknown>(paramarg0: Class<T1>, paramarg1: TypeAdapter<T1>): TypeAdapterFactory;
     private constructor()
 }

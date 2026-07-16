@@ -9,7 +9,7 @@ import type { LivingEntity } from '../../../../../../../net/minecraft/world/enti
 import type { ItemDisplayContext } from '../../../../../../../net/minecraft/world/item/ItemDisplayContext.d.ts'
 import type { ItemStack } from '../../../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class ComponentContents<T extends unknown> extends Record implements SelectItemModelProperty<T> {
-    static castType(): SelectItemModelProperty$Type<ComponentContents<Object>, Object>;
+    static castType<T extends unknown>(): SelectItemModelProperty$Type<ComponentContents<T>, T>;
     constructor(componentType: DataComponentType<T>)
     // private componentType: DataComponentType<T>;
     componentType(): DataComponentType<T>;

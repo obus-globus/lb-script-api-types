@@ -5,6 +5,6 @@ import type { CompositeDecoder } from '../../kotlinx/serialization/encoding/Comp
 import type { Encoder } from '../../kotlinx/serialization/encoding/Encoder.d.ts'
 import type { AbstractPolymorphicSerializer } from '../../kotlinx/serialization/internal/AbstractPolymorphicSerializer.d.ts'
 export class PolymorphicSerializerKt extends Object {
-    static findPolymorphicSerializer(paramarg0: AbstractPolymorphicSerializer<Object>, paramarg1: CompositeDecoder, paramarg2: string): DeserializationStrategy<Object>;
-    static findPolymorphicSerializer(paramarg0: AbstractPolymorphicSerializer<Object>, paramarg1: Encoder, paramarg2: Object | null): SerializationStrategy<Object>;
+    static findPolymorphicSerializer<T extends unknown>(self: AbstractPolymorphicSerializer<T>, decoder: CompositeDecoder, klassName: string | null): DeserializationStrategy<T>;
+    static findPolymorphicSerializer<T extends unknown>(self: AbstractPolymorphicSerializer<T>, encoder: Encoder, value: T): SerializationStrategy<T>;
 }

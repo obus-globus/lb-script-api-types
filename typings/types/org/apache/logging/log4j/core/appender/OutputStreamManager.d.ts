@@ -9,8 +9,8 @@ import type { AbstractManager } from '../../../../../../org/apache/logging/log4j
 import type { ManagerFactory } from '../../../../../../org/apache/logging/log4j/core/appender/ManagerFactory.d.ts'
 import type { ByteBufferDestination } from '../../../../../../org/apache/logging/log4j/core/layout/ByteBufferDestination.d.ts'
 export class OutputStreamManager extends AbstractManager implements ByteBufferDestination {
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
-    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<OutputStreamManager, Object>): OutputStreamManager;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
+    static getManager<T extends unknown>(paramname: string, paramdata: T, paramfactory: ManagerFactory<OutputStreamManager, T>): OutputStreamManager;
     static hasManager(paramname: string): boolean;
     constructor(os: OutputStream, streamName: string, layout: Layout<any>, writeHeader: boolean)
     constructor(os: OutputStream, streamName: string, layout: Layout<any>, writeHeader: boolean, byteBuffer: ByteBuffer)

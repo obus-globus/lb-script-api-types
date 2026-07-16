@@ -8,8 +8,8 @@ export class TransferApiImpl extends Object {
     static EMPTY_STORAGE: StorageView<Object>[];
     static LOGGER: Logger;
     static version: AtomicLong;
-    static makeListView(paramarg0: (Object | null)[]): (Object | null)[][];
+    static makeListView<T extends unknown>(paramarg0: T[]): T[][];
     static mergePatches(paramarg0: DataComponentPatch, paramarg1: DataComponentPatch): DataComponentPatch;
-    static singletonIterator(paramarg0: Object | null): Iterator<Object>;
+    static singletonIterator<T extends unknown>(paramarg0: T): Iterator<T>;
     constructor()
 }

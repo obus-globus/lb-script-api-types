@@ -9,13 +9,13 @@ import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 export class ImmutableRangeSet<C extends Comparable<Object>> extends AbstractRangeSet<C> implements Serializable {
-    static builder(): ImmutableRangeSet$Builder<any>;
-    static copyOf(paramranges: Range<any>[]): ImmutableRangeSet<any>;
-    static copyOf(paramrangeSet: RangeSet<any>): ImmutableRangeSet<any>;
-    static of(): ImmutableRangeSet<any>;
-    static of(paramrange: Range<any>): ImmutableRangeSet<any>;
-    static toImmutableRangeSet(): Collector<Range<any>, Object, ImmutableRangeSet<any>>;
-    static unionOf(paramranges: Range<any>[]): ImmutableRangeSet<any>;
+    static builder<C extends Comparable<Object>>(): ImmutableRangeSet$Builder<C>;
+    static copyOf<C extends Comparable<Object>>(paramranges: Range<C>[]): ImmutableRangeSet<C>;
+    static copyOf<C extends Comparable<Object>>(paramrangeSet: RangeSet<C>): ImmutableRangeSet<C>;
+    static of<C extends Comparable<Object>>(): ImmutableRangeSet<C>;
+    static of<C extends Comparable<Object>>(paramrange: Range<C>): ImmutableRangeSet<C>;
+    static toImmutableRangeSet<E extends Comparable<Object>>(): Collector<Range<E>, Object, ImmutableRangeSet<E>>;
+    static unionOf<C extends Comparable<Object>>(paramranges: Range<C>[]): ImmutableRangeSet<C>;
     constructor(ranges: Range<C>[])
     // private complement: ImmutableRangeSet<C>;
     // private lazyComplement: ImmutableRangeSet<C>;

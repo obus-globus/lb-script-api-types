@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class LocaleValidityChecker$SpecialCase extends Enum<LocaleValidityChecker$SpecialCase> {
     static anything: LocaleValidityChecker$SpecialCase;
@@ -8,7 +7,7 @@ export class LocaleValidityChecker$SpecialCase extends Enum<LocaleValidityChecke
     static reorder: LocaleValidityChecker$SpecialCase;
     static rgKey: LocaleValidityChecker$SpecialCase;
     static subdivision: LocaleValidityChecker$SpecialCase;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LocaleValidityChecker$SpecialCase;
     static values(): LocaleValidityChecker$SpecialCase[];
     private constructor()

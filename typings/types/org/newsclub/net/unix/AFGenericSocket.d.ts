@@ -9,7 +9,7 @@ import type { AFSocketCapability } from '../../../../org/newsclub/net/unix/AFSoc
 import type { AFSocketFactory } from '../../../../org/newsclub/net/unix/AFSocketFactory.d.ts'
 import type { AFUNIXSocketCapability } from '../../../../org/newsclub/net/unix/AFUNIXSocketCapability.d.ts'
 export class AFGenericSocket extends AFSocket<AFGenericSocketAddress> implements AFGenericSocketExtensions {
-    static connectTo(paramarg0: AFSocketAddress | null): AFSocket<any>;
+    static connectTo<A extends AFSocketAddress>(paramarg0: A): AFSocket<any>;
     static connectTo(paramarg0: AFGenericSocketAddress): AFGenericSocket;
     static ensureSupported(): void;
     static ensureUnsafeSupported(): void;

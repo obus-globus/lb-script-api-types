@@ -5,8 +5,8 @@ import type { ClassValue } from '../../../../java/lang/ClassValue.d.ts'
 import type { WeakReference } from '../../../../java/lang/ref/WeakReference.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class LayeredServiceLoader<T extends unknown> extends Object {
-    static of(paramarg0: Class<Object>): LayeredServiceLoader<Object>;
-    static unique(...paramarg0: LayeredServiceLoader$SingleImplementation<Object>[]): (Object | null)[];
+    static of<T extends unknown>(paramarg0: Class<T>): LayeredServiceLoader<T>;
+    static unique<T extends unknown>(...paramarg0: LayeredServiceLoader$SingleImplementation<T>[]): T[];
     private constructor(arg0: Class<T>)
     // private cache: Map<ClassLoader, WeakReference<LayeredServiceLoader$SingleImplementation<T>>>;
     // private providersValue: ClassValue<LayeredServiceLoader$SingleImplementation<T>>;

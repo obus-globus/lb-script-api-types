@@ -10,7 +10,7 @@ export class IntlBuiltins$Intl extends Enum<IntlBuiltins$Intl> implements Builti
     static getCanonicalLocales: IntlBuiltins$Intl;
     static supportedValuesOf: IntlBuiltins$Intl;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): IntlBuiltins$Intl;
     static values(): IntlBuiltins$Intl[];
     private constructor(length: number)

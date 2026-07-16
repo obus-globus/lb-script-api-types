@@ -13,8 +13,8 @@ import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStac
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class ItemStackListRenderer extends Object implements EventListener {
     static INSTANCE: ItemStackListRenderer;
-    static create(paramarg0: GuiGraphicsExtractor, paramarg1: ItemStack[]): ItemStackListRenderState;
-    static createItemStackForRendering(block: Block, count: number): ItemStack;
+    static create(self: GuiGraphicsExtractor, stacks: ItemStack[]): ItemStackListRenderState;
+    static createItemStackForRendering(self: Block, count: number): ItemStack;
     // private block2Item: Map<Block, Item>;
     readonly debugDisplayName: Component;
     // private overlapRearranger: GuiOverlapRearranger;

@@ -10,7 +10,7 @@ export class WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncItera
     static next: WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator;
     static return_: WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator;
     static values(): WrapForValidAsyncIteratorPrototypeBuiltins$WrapForWrapForAsyncIterator[];
     private constructor(length: number)

@@ -13,7 +13,7 @@ export interface RecordBuilder<T extends unknown> extends Object {
     add(arg0: string, arg1: DataResult<T>): RecordBuilder<T>;
     build(arg0: T): DataResult<T>;
     build(arg0: DataResult<T>): DataResult<T>;
-    mapError(arg0: (param0: string) => Object | null): RecordBuilder<T>;
+    mapError(arg0: (param0: string) => string): RecordBuilder<T>;
     ops(): DynamicOps<T>;
     setLifecycle(arg0: Lifecycle): RecordBuilder<T>;
     withErrorsFrom(arg0: DataResult<Object>): RecordBuilder<T>;

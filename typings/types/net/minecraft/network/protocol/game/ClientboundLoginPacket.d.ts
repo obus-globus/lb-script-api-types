@@ -13,7 +13,7 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 export class ClientboundLoginPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundLoginPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(playerId: number, hardcore: boolean, levels: ResourceKey<Level>[], maxPlayers: number, chunkRadius: number, simulationDistance: number, reducedDebugInfo: boolean, showDeathScreen: boolean, doLimitedCrafting: boolean, commonPlayerSpawnInfo: CommonPlayerSpawnInfo, onlineMode: boolean, enforcesSecureChat: boolean)
     // private chunkRadius: number;
     // private commonPlayerSpawnInfo: CommonPlayerSpawnInfo;

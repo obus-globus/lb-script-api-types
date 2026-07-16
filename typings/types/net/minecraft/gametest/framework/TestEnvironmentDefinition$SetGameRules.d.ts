@@ -9,7 +9,7 @@ import type { GameRuleMap } from '../../../../net/minecraft/world/level/gamerule
 export class TestEnvironmentDefinition$SetGameRules extends Record implements TestEnvironmentDefinition<GameRuleMap> {
     static CODEC: MapCodec<TestEnvironmentDefinition$SetGameRules>;
     static DIRECT_CODEC: Codec<TestEnvironmentDefinition<Object>>;
-    static activate(paramenvironment: TestEnvironmentDefinition<Object>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<Object>;
+    static activate<T extends unknown>(paramenvironment: TestEnvironmentDefinition<T>, paramlevel: ServerLevel): TestEnvironmentDefinition$Activation<T>;
     static bootstrap(paramregistry: MapCodec<TestEnvironmentDefinition<Object>>[]): MapCodec<TestEnvironmentDefinition<Object>>;
     constructor(gameRulesMap: GameRuleMap)
     // private gameRulesMap: GameRuleMap;

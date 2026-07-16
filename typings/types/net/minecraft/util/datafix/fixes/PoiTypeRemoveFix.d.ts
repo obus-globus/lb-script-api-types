@@ -10,7 +10,7 @@ import type { Stream } from '../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { AbstractPoiSectionFix } from '../../../../../net/minecraft/util/datafix/fixes/AbstractPoiSectionFix.d.ts'
 export class PoiTypeRemoveFix extends AbstractPoiSectionFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     constructor(outputSchema: Schema, name: string, typesToRemove: (param0: string) => boolean)
     // private typesToKeep: (param0: string) => boolean;
     processRecords<T extends unknown>(records: Stream<Dynamic<T>>): Stream<Dynamic<T>>;

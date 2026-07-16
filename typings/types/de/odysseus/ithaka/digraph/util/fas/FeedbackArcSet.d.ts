@@ -7,7 +7,7 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class FeedbackArcSet<V extends unknown> extends UnmodifiableDigraph<V> {
     static UNIT_WEIGHT: OptionalInt;
     static UNIT_WEIGHTS: EdgeWeights<Object>;
-    static empty(paramarg0: FeedbackArcSetPolicy): FeedbackArcSet<Object>;
+    static empty<V extends unknown>(paramarg0: FeedbackArcSetPolicy): FeedbackArcSet<V>;
     constructor(arg0: Digraph<V>, arg1: number, arg2: FeedbackArcSetPolicy, arg3: boolean)
     readonly exact: boolean;
     readonly policy: FeedbackArcSetPolicy;

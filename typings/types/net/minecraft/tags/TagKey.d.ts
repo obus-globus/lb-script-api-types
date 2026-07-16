@@ -10,10 +10,10 @@ import type { StreamCodec } from '../../../net/minecraft/network/codec/StreamCod
 import type { Identifier } from '../../../net/minecraft/resources/Identifier.d.ts'
 import type { ResourceKey } from '../../../net/minecraft/resources/ResourceKey.d.ts'
 export class TagKey<T extends unknown> extends Record implements FabricTagKey, TagKeyMixin {
-    static codec(paramregistryName: ResourceKey<(Object | null)[]>): Codec<TagKey<Object>>;
-    static create(paramregistry: ResourceKey<(Object | null)[]>, paramlocation: Identifier): TagKey<Object>;
-    static hashedCodec(paramregistryName: ResourceKey<(Object | null)[]>): Codec<TagKey<Object>>;
-    static streamCodec(paramregistryName: ResourceKey<(Object | null)[]>): StreamCodec<ByteBuf, TagKey<Object>>;
+    static codec<T extends unknown>(paramregistryName: ResourceKey<T[]>): Codec<TagKey<T>>;
+    static create<T extends unknown>(paramregistry: ResourceKey<T[]>, paramlocation: Identifier): TagKey<T>;
+    static hashedCodec<T extends unknown>(paramregistryName: ResourceKey<T[]>): Codec<TagKey<T>>;
+    static streamCodec<T extends unknown>(paramregistryName: ResourceKey<T[]>): StreamCodec<ByteBuf, TagKey<T>>;
     constructor(registry: ResourceKey<T[]>, location: Identifier)
     // private location: Identifier;
     // private registry: ResourceKey<T[]>;

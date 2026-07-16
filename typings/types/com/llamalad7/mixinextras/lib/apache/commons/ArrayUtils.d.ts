@@ -20,15 +20,15 @@ export class ArrayUtils extends Object {
     static EMPTY_SHORT_ARRAY: number[];
     static EMPTY_SHORT_OBJECT_ARRAY: number[];
     static EMPTY_STRING_ARRAY: string[];
-    static add(paramarg0: (Object | null)[], paramarg1: Object | null): (Object | null)[];
-    static add(paramarg0: (Object | null)[], paramarg1: number, paramarg2: Object | null): (Object | null)[];
-    static addAll(paramarg0: (Object | null)[], ...paramarg1: (Object | null)[]): (Object | null)[];
+    static add<T extends unknown>(paramarg0: T[], paramarg1: T): T[];
+    static add<T extends unknown>(paramarg0: T[], paramarg1: number, paramarg2: T): T[];
+    static addAll<T extends unknown>(paramarg0: T[], ...paramarg1: T[]): T[];
     static addAll(paramarg0: number[], ...paramarg1: number[]): number[];
-    static clone(paramarg0: (Object | null)[]): (Object | null)[];
+    static clone<T extends unknown>(paramarg0: T[]): T[];
     static clone(paramarg0: number[]): number[];
     static getLength(paramarg0: Object): number;
-    static remove(paramarg0: (Object | null)[], paramarg1: number): (Object | null)[];
+    static remove<T extends unknown>(paramarg0: T[], paramarg1: number): T[];
     static remove(paramarg0: number[], paramarg1: number): number[];
-    static subarray(paramarg0: (Object | null)[], paramarg1: number, paramarg2: number): (Object | null)[];
+    static subarray<T extends unknown>(paramarg0: T[], paramarg1: number, paramarg2: number): T[];
     static subarray(paramarg0: number[], paramarg1: number, paramarg2: number): number[];
 }

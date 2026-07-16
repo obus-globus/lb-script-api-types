@@ -13,7 +13,7 @@ export class PipelineUtil extends Object {
     static callDecode(paramarg0: MessageToMessageDecoder<Object>, paramarg1: ChannelHandlerContext, paramarg2: Object): Object[];
     static callEncode(paramarg0: MessageToByteEncoder<Object>, paramarg1: ChannelHandlerContext, paramarg2: Object, paramarg3: ByteBuf): void;
     static containsCause(paramarg0: Throwable, paramarg1: Class<Object>): boolean;
-    static getCause(paramarg0: Throwable, paramarg1: Class<Object>): Object | null;
+    static getCause<T extends unknown>(paramarg0: Throwable, paramarg1: Class<T>): T;
     static getContextBefore(paramarg0: string, paramarg1: Map$Entry<string, ChannelHandler>[]): ChannelHandlerContext;
     static getPreviousContext(paramarg0: string, paramarg1: Map$Entry<string, ChannelHandler>[]): ChannelHandlerContext;
     constructor()

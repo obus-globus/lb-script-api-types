@@ -7,13 +7,13 @@ import type { HashingSource$Companion } from '../okio/HashingSource$Companion.d.
 import type { Source } from '../okio/Source.d.ts'
 export class HashingSource extends ForwardingSource implements Source {
     static Companion: HashingSource$Companion;
-    static hmacSha1(paramarg0: Source, paramarg1: ByteString): HashingSource;
-    static hmacSha256(paramarg0: Source, paramarg1: ByteString): HashingSource;
-    static hmacSha512(paramarg0: Source, paramarg1: ByteString): HashingSource;
-    static md5(paramarg0: Source): HashingSource;
-    static sha1(paramarg0: Source): HashingSource;
-    static sha256(paramarg0: Source): HashingSource;
-    static sha512(paramarg0: Source): HashingSource;
+    static hmacSha1(source: Source, key: ByteString): HashingSource;
+    static hmacSha256(source: Source, key: ByteString): HashingSource;
+    static hmacSha512(source: Source, key: ByteString): HashingSource;
+    static md5(source: Source): HashingSource;
+    static sha1(source: Source): HashingSource;
+    static sha256(source: Source): HashingSource;
+    static sha512(source: Source): HashingSource;
     constructor(source: Source, digest: MessageDigest)
     constructor(source: Source, mac: Mac)
     constructor(source: Source, algorithm: string)

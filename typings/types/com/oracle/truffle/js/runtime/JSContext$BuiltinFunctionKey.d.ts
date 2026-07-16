@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class JSContext$BuiltinFunctionKey extends Enum<JSContext$BuiltinFunctionKey> {
     static ArrayFlattenIntoArray: JSContext$BuiltinFunctionKey;
@@ -117,7 +116,7 @@ export class JSContext$BuiltinFunctionKey extends Enum<JSContext$BuiltinFunction
     static TopLevelAwaitResolve: JSContext$BuiltinFunctionKey;
     static WebAssemblySourceInstantiation: JSContext$BuiltinFunctionKey;
     static WorkerProcessMessage: JSContext$BuiltinFunctionKey;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): JSContext$BuiltinFunctionKey;
     static values(): JSContext$BuiltinFunctionKey[];
     private constructor()

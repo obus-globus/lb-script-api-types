@@ -24,7 +24,7 @@ export class Month extends Enum<Month> implements TemporalAccessor, TemporalAdju
     static SEPTEMBER: Month;
     static from(paramarg0: TemporalAccessor): Month;
     static of(paramarg0: number): Month;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Month;
     static values(): Month[];
     private constructor()

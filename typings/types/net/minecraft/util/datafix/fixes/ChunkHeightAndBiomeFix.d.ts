@@ -13,7 +13,7 @@ export class ChunkHeightAndBiomeFix extends DataFix {
     static DATAFIXER_CONTEXT_TAG: string;
     static DEFAULT_BIOME: string;
     static ceillog2(paraminput: number): number;
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     constructor(outputSchema: Schema)
     makeRule(): TypeRewriteRule;
     // private predictChunkStatusBeforeSurface(chunkTag: Dynamic<Object>, blocksInChunk: string[]): Dynamic<Object>;

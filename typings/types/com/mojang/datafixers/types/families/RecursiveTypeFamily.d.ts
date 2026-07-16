@@ -15,7 +15,7 @@ import type { Optional } from '../../../../../java/util/Optional.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class RecursiveTypeFamily extends Object implements TypeFamily {
-    static familyOptic(paramarg0: (param0: number) => TypedOptic<Object, Object, Object, Object>): FamilyOptic<Object, Object>;
+    static familyOptic<A extends unknown, B extends unknown>(paramarg0: (param0: number) => TypedOptic<Object, Object, A, B>): FamilyOptic<A, B>;
     constructor(arg0: string, arg1: TypeTemplate)
     // private hashCode: number;
     // private name: string;

@@ -5,7 +5,7 @@ import type { FriendlyByteBuf } from '../../../../../../../net/minecraft/network
 import type { Palette } from '../../../../../../../net/minecraft/world/level/chunk/Palette.d.ts'
 import type { PaletteResize } from '../../../../../../../net/minecraft/world/level/chunk/PaletteResize.d.ts'
 export class LithiumHashPalette<T extends unknown> extends Object implements Palette<T> {
-    static create(paramarg0: number, paramarg1: (Object | null)[]): Palette<Object>;
+    static create<A extends unknown>(paramarg0: number, paramarg1: A[]): Palette<A>;
     constructor(arg0: number)
     constructor(arg0: number, arg1: T[])
     // private entries: T[];

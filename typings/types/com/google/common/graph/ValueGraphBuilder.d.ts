@@ -6,7 +6,7 @@ import type { ValueGraph } from '../../../../com/google/common/graph/ValueGraph.
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ValueGraphBuilder<N extends unknown, V extends unknown> extends AbstractGraphBuilder<N> {
     static directed(): ValueGraphBuilder<Object, Object>;
-    static from(paramgraph: ValueGraph<Object, Object>): ValueGraphBuilder<Object, Object>;
+    static from<N extends unknown, V extends unknown>(paramgraph: ValueGraph<N, V>): ValueGraphBuilder<N, V>;
     static undirected(): ValueGraphBuilder<Object, Object>;
     private constructor(directed: boolean)
     allowsSelfLoops(allowsSelfLoops: boolean): ValueGraphBuilder<N, V>;

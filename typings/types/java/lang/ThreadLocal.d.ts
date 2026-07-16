@@ -3,7 +3,7 @@ import type { ThreadLocal$ThreadLocalMap } from '../../java/lang/ThreadLocal$Thr
 import type { Supplier } from '../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 export class ThreadLocal<T extends unknown> extends Object {
-    static withInitial(paramarg0: () => Object | null): ThreadLocal<Object>;
+    static withInitial<S extends unknown>(paramarg0: () => S): ThreadLocal<S>;
     constructor()
     // private threadLocalHashCode: number;
     childValue(arg0: T): T;

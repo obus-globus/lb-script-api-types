@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class PatternParser$ParserState extends Enum<PatternParser$ParserState> {
     static CONVERTER_STATE: PatternParser$ParserState;
@@ -7,7 +6,7 @@ export class PatternParser$ParserState extends Enum<PatternParser$ParserState> {
     static LITERAL_STATE: PatternParser$ParserState;
     static MAX_STATE: PatternParser$ParserState;
     static MIN_STATE: PatternParser$ParserState;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PatternParser$ParserState;
     static values(): PatternParser$ParserState[];
     private constructor()

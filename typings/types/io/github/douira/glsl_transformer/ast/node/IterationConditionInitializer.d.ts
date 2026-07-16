@@ -9,8 +9,8 @@ import type { ASTVisitor } from '../../../../../../io/github/douira/glsl_transfo
 import type { Stream } from '../../../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class IterationConditionInitializer extends InnerASTNode {
-    static clone(paramarg0: ASTNode | null): ASTNode | null;
-    static clone(paramarg0: (ASTNode | null)[]): Stream<ASTNode>;
+    static clone<N extends ASTNode>(paramarg0: N): N;
+    static clone<N extends ASTNode>(paramarg0: N[]): Stream<N>;
     static swap(paramarg0: ASTNode, paramarg1: ASTNode): boolean;
     constructor(arg0: FullySpecifiedType, arg1: Identifier, arg2: Initializer)
     initializer: Initializer;

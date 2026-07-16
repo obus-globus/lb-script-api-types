@@ -4,7 +4,7 @@ import type { Reference } from '../../../../java/lang/ref/Reference.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class CacheValue$SoftValue<V extends unknown> extends CacheValue<V> {
     static futureInstancesWillBeStrong(): boolean;
-    static getInstance(paramarg0: Object | null): CacheValue<Object>;
+    static getInstance<V extends unknown>(paramarg0: V): CacheValue<V>;
     static setStrength(paramarg0: CacheValue$Strength): void;
     constructor(arg0: V)
     // private ref: Reference<V>;

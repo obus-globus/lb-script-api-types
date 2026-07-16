@@ -5,7 +5,7 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 export class EntityTypeUtil extends Object {
     static createSizedArray(paramarg0: EntityType[]): EntityType[];
     static getTypeFromId(paramarg0: EntityType[], paramarg1: number, paramarg2: EntityType): EntityType;
-    static initialize(paramarg0: (EntityType | null)[], paramarg1: EntityType[], paramarg2: Protocol<any, any, any, any>, paramarg3: (param0: EntityType | null, param1: number) => void): void;
+    static initialize<T extends EntityType>(paramarg0: T[], paramarg1: EntityType[], paramarg2: Protocol<any, any, any, any>, paramarg3: (param0: T, param1: number) => void): void;
     static toOrderedArray(paramarg0: EntityType[]): EntityType[];
     constructor()
 }

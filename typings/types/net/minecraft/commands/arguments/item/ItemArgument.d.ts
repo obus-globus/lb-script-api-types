@@ -9,7 +9,7 @@ import type { CommandBuildContext } from '../../../../../net/minecraft/commands/
 import type { ItemInput } from '../../../../../net/minecraft/commands/arguments/item/ItemInput.d.ts'
 import type { ItemParser } from '../../../../../net/minecraft/commands/arguments/item/ItemParser.d.ts'
 export class ItemArgument extends Object implements ArgumentType<ItemInput> {
-    static getItem(paramcontext: CommandContext<Object>, paramname: string): ItemInput;
+    static getItem<S extends unknown>(paramcontext: CommandContext<S>, paramname: string): ItemInput;
     static item(paramcontext: CommandBuildContext): ItemArgument;
     constructor(context: CommandBuildContext)
     // private parser: ItemParser;

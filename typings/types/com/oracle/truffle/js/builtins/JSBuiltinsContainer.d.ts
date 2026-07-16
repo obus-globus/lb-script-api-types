@@ -1,13 +1,15 @@
 import type { TruffleString } from '../../../../../com/oracle/truffle/api/strings/TruffleString.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
+import type { BuiltinEnum } from '../../../../../com/oracle/truffle/js/runtime/builtins/BuiltinEnum.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { Consumer } from '../../../../../java/util/function/Consumer.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { EconomicMap } from '../../../../../org/graalvm/collections/EconomicMap.d.ts'
 import type { Pair } from '../../../../../org/graalvm/collections/Pair.d.ts'
 export class JSBuiltinsContainer extends Object {
-    static fromEnum(paramname: TruffleString, parambuiltinEnum: Class<Object>): JSBuiltinsContainer;
+    static fromEnum<E extends Enum<E> & BuiltinEnum<E>>(paramname: TruffleString, parambuiltinEnum: Class<E>): JSBuiltinsContainer;
     constructor(name: TruffleString)
     // private accessors: EconomicMap<Object, Pair<JSBuiltin, JSBuiltin>>;
     // private functions: EconomicMap<Object, JSBuiltin>;

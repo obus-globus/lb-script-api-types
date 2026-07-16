@@ -11,8 +11,8 @@ import type { TimeUnit } from '../../../../../java/util/concurrent/TimeUnit.d.ts
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../java/lang/Throwable.d.ts'
 export abstract class FluentFuture<V extends unknown> extends GwtFluentFutureCatchingSpecialization<V> {
-    static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
-    static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
+    static from<V extends unknown>(paramfuture: FluentFuture<V>): FluentFuture<V>;
+    static from<V extends unknown>(paramfuture: ListenableFuture<V>): FluentFuture<V>;
     constructor()
     addCallback(callback: FutureCallback<V>, executor: Executor): void;
     catching<X extends Throwable>(exceptionType: Class<X>, fallback: (param0: X) => V, executor: Executor): FluentFuture<V>;

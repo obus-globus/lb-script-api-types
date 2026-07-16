@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class PipesResult$STATUS extends Enum<PipesResult$STATUS> {
     static CLIENT_UNAVAILABLE_WITHIN_MS: PipesResult$STATUS;
@@ -20,7 +19,7 @@ export class PipesResult$STATUS extends Enum<PipesResult$STATUS> {
     static PARSE_SUCCESS_WITH_EXCEPTION: PipesResult$STATUS;
     static TIMEOUT: PipesResult$STATUS;
     static UNSPECIFIED_CRASH: PipesResult$STATUS;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PipesResult$STATUS;
     static values(): PipesResult$STATUS[];
     private constructor()

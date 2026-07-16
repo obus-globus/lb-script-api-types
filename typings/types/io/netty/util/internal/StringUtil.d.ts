@@ -11,9 +11,9 @@ export class StringUtil extends Object {
     static NEWLINE: string;
     static SPACE: string;
     static TAB: string;
-    static byteToHexString(paramarg0: Appendable | null, paramarg1: number): Appendable | null;
+    static byteToHexString<T extends Appendable>(paramarg0: T, paramarg1: number): T;
     static byteToHexString(paramarg0: number): string;
-    static byteToHexStringPadded(paramarg0: Appendable | null, paramarg1: number): Appendable | null;
+    static byteToHexStringPadded<T extends Appendable>(paramarg0: T, paramarg1: number): T;
     static byteToHexStringPadded(paramarg0: number): string;
     static className(paramarg0: Object): string;
     static commonSuffixOfLength(paramarg0: string, paramarg1: string, paramarg2: number): boolean;
@@ -35,12 +35,12 @@ export class StringUtil extends Object {
     static simpleClassName(paramarg0: Object): string;
     static substringAfter(paramarg0: string, paramarg1: string): string;
     static substringBefore(paramarg0: string, paramarg1: string): string;
-    static toHexString(paramarg0: Appendable | null, paramarg1: number[]): Appendable | null;
-    static toHexString(paramarg0: Appendable | null, paramarg1: number[], paramarg2: number, paramarg3: number): Appendable | null;
+    static toHexString<T extends Appendable>(paramarg0: T, paramarg1: number[]): T;
+    static toHexString<T extends Appendable>(paramarg0: T, paramarg1: number[], paramarg2: number, paramarg3: number): T;
     static toHexString(paramarg0: number[]): string;
     static toHexString(paramarg0: number[], paramarg1: number, paramarg2: number): string;
-    static toHexStringPadded(paramarg0: Appendable | null, paramarg1: number[]): Appendable | null;
-    static toHexStringPadded(paramarg0: Appendable | null, paramarg1: number[], paramarg2: number, paramarg3: number): Appendable | null;
+    static toHexStringPadded<T extends Appendable>(paramarg0: T, paramarg1: number[]): T;
+    static toHexStringPadded<T extends Appendable>(paramarg0: T, paramarg1: number[], paramarg2: number, paramarg3: number): T;
     static toHexStringPadded(paramarg0: number[]): string;
     static toHexStringPadded(paramarg0: number[], paramarg1: number, paramarg2: number): string;
     static trimOws(paramarg0: CharSequence): CharSequence;

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class CommandParameterOption extends Enum<CommandParameterOption> {
     static EnumAsChainedCommand: CommandParameterOption;
@@ -10,7 +9,7 @@ export class CommandParameterOption extends Enum<CommandParameterOption> {
     static getByName(paramarg0: string, paramarg1: CommandParameterOption): CommandParameterOption;
     static getByValue(paramarg0: number): CommandParameterOption;
     static getByValue(paramarg0: number, paramarg1: CommandParameterOption): CommandParameterOption;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CommandParameterOption;
     static values(): CommandParameterOption[];
     private constructor(arg2: number)

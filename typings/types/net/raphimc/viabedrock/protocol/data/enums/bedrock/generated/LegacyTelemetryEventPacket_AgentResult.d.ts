@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class LegacyTelemetryEventPacket_AgentResult extends Enum<LegacyTelemetryEventPacket_AgentResult> {
     static ActionFail: LegacyTelemetryEventPacket_AgentResult;
@@ -10,7 +9,7 @@ export class LegacyTelemetryEventPacket_AgentResult extends Enum<LegacyTelemetry
     static getByName(paramarg0: string, paramarg1: LegacyTelemetryEventPacket_AgentResult): LegacyTelemetryEventPacket_AgentResult;
     static getByValue(paramarg0: number): LegacyTelemetryEventPacket_AgentResult;
     static getByValue(paramarg0: number, paramarg1: LegacyTelemetryEventPacket_AgentResult): LegacyTelemetryEventPacket_AgentResult;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LegacyTelemetryEventPacket_AgentResult;
     static values(): LegacyTelemetryEventPacket_AgentResult[];
     private constructor(arg2: number)

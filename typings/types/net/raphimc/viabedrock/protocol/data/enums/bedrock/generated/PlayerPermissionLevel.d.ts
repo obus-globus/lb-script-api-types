@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class PlayerPermissionLevel extends Enum<PlayerPermissionLevel> {
     static Custom: PlayerPermissionLevel;
@@ -10,7 +9,7 @@ export class PlayerPermissionLevel extends Enum<PlayerPermissionLevel> {
     static getByName(paramarg0: string, paramarg1: PlayerPermissionLevel): PlayerPermissionLevel;
     static getByValue(paramarg0: number): PlayerPermissionLevel;
     static getByValue(paramarg0: number, paramarg1: PlayerPermissionLevel): PlayerPermissionLevel;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PlayerPermissionLevel;
     static values(): PlayerPermissionLevel[];
     private constructor(arg2: number)

@@ -10,7 +10,7 @@ export class CollatorPrototypeBuiltins$CollatorPrototype extends Enum<CollatorPr
     static compare: CollatorPrototypeBuiltins$CollatorPrototype;
     static resolvedOptions: CollatorPrototypeBuiltins$CollatorPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): CollatorPrototypeBuiltins$CollatorPrototype;
     static values(): CollatorPrototypeBuiltins$CollatorPrototype[];
     private constructor(length: number)

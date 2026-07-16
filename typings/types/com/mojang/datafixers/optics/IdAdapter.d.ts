@@ -7,7 +7,7 @@ import type { Adapter$Mu } from '../../../../com/mojang/datafixers/optics/Adapte
 import type { Profunctor$Mu } from '../../../../com/mojang/datafixers/optics/profunctors/Profunctor$Mu.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class IdAdapter<S extends unknown, T extends unknown> extends Object implements Adapter<S, T, S, T> {
-    static unbox(paramarg0: App2<Adapter$Mu<Object, Object>, Object, Object>): Adapter<Object, Object, Object, Object>;
+    static unbox<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: App2<Adapter$Mu<A, B>, S, T>): Adapter<S, T, A, B>;
     private constructor()
     eval<P extends K2>(arg0: App<Profunctor$Mu, P>): FunctionType<App2<P, S, T>, App2<P, S, T>>;
     from(arg0: S): S;

@@ -11,14 +11,14 @@ export class SerializersKt__SerializersKt extends Object {
     static noCompiledSerializer(paramarg0: SerializersModule, paramarg1: KClass<Object>): KSerializer<Object>;
     static noCompiledSerializer(paramarg0: SerializersModule, paramarg1: KClass<Object>, paramarg2: KSerializer<Object>[]): KSerializer<Object>;
     static parametrizedSerializerOrNull(paramarg0: KClass<Object>, paramarg1: KSerializer<Object>[], paramarg2: () => KClassifier): KSerializer<Object>;
-    static serializer(): KSerializer<Object>;
-    static serializer(paramarg0: KClass<Object>): KSerializer<Object>;
-    static serializer(paramarg0: SerializersModule): KSerializer<Object>;
+    static serializer<T extends unknown>(): KSerializer<T>;
+    static serializer<T extends unknown>(paramarg0: KClass<T>): KSerializer<T>;
+    static serializer<T extends unknown>(paramarg0: SerializersModule): KSerializer<T>;
     static serializer(paramarg0: KClass<Object>, paramarg1: KSerializer<Object>[], paramarg2: boolean): KSerializer<Object>;
     static serializer(paramarg0: KType): KSerializer<Object>;
     static serializer(paramarg0: SerializersModule, paramarg1: KClass<Object>, paramarg2: KSerializer<Object>[], paramarg3: boolean): KSerializer<Object>;
     static serializer(paramarg0: SerializersModule, paramarg1: KType): KSerializer<Object>;
-    static serializerOrNull(paramarg0: KClass<Object>): KSerializer<Object>;
+    static serializerOrNull<T extends unknown>(paramarg0: KClass<T>): KSerializer<T>;
     static serializerOrNull(paramarg0: KType): KSerializer<Object>;
     static serializerOrNull(paramarg0: SerializersModule, paramarg1: KType): KSerializer<Object>;
     static serializersForParameters(paramarg0: SerializersModule, paramarg1: KType[], paramarg2: boolean): KSerializer<Object>[];

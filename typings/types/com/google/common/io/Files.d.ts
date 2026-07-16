@@ -43,9 +43,9 @@ export class Files extends Object {
     static move(paramfrom: File, paramto: File): void;
     static newReader(paramfile: File, paramcharset: Charset): BufferedReader;
     static newWriter(paramfile: File, paramcharset: Charset): BufferedWriter;
-    static readBytes(paramfile: File, paramprocessor: ByteProcessor<Object>): Object | null;
+    static readBytes<T extends unknown>(paramfile: File, paramprocessor: ByteProcessor<T>): T;
     static readFirstLine(paramfile: File, paramcharset: Charset): string;
-    static readLines(paramfile: File, paramcharset: Charset, paramcallback: LineProcessor<Object>): Object | null;
+    static readLines<T extends unknown>(paramfile: File, paramcharset: Charset, paramcallback: LineProcessor<T>): T;
     static readLines(paramfile: File, paramcharset: Charset): string[];
     static simplifyPath(parampathname: string): string;
     static toByteArray(paramfile: File): number[];

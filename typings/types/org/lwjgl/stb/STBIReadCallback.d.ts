@@ -15,9 +15,9 @@ export abstract class STBIReadCallback extends Callback implements STBIReadCallb
     static create(paramarg0: (param0: number, param1: number, param2: number) => number): STBIReadCallback;
     static createSafe(paramarg0: number): STBIReadCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
     static getData(paramarg0: number, paramarg1: number): ByteBuffer;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor()
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;

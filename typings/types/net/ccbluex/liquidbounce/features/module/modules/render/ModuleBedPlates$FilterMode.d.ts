@@ -6,8 +6,8 @@ import type { Tagged$Companion } from '../../../../../../../net/ccbluex/liquidbo
 import type { Block } from '../../../../../../../net/minecraft/world/level/block/Block.d.ts'
 export class ModuleBedPlates$FilterMode extends Mode implements Predicate<Block> {
     static Companion: Tagged$Companion;
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     protected constructor(name: string)
     readonly parent: ModeValueGroup<any>;
     and(arg0: (param0: Block) => boolean): (param0: Block) => boolean;

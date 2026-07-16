@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { GridLayout } from '../../../../../net/minecraft/client/gui/layouts/GridLayout.d.ts'
 import type { LayoutElement } from '../../../../../net/minecraft/client/gui/layouts/LayoutElement.d.ts'
@@ -7,7 +6,7 @@ import type { LayoutSettings } from '../../../../../net/minecraft/client/gui/lay
 export class LinearLayout$Orientation extends Enum<LinearLayout$Orientation> {
     static HORIZONTAL: LinearLayout$Orientation;
     static VERTICAL: LinearLayout$Orientation;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): LinearLayout$Orientation;
     static values(): LinearLayout$Orientation[];
     private constructor()

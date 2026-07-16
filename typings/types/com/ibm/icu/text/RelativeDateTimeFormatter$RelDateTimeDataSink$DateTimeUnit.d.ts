@@ -1,7 +1,6 @@
 import type { RelativeDateTimeFormatter$AbsoluteUnit } from '../../../../com/ibm/icu/text/RelativeDateTimeFormatter$AbsoluteUnit.d.ts'
 import type { RelativeDateTimeFormatter$RelativeUnit } from '../../../../com/ibm/icu/text/RelativeDateTimeFormatter$RelativeUnit.d.ts'
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit extends Enum<RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit> {
     static DAY: RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit;
@@ -19,7 +18,7 @@ export class RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit extends 
     static WEDNESDAY: RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit;
     static WEEK: RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit;
     static YEAR: RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit;
     static values(): RelativeDateTimeFormatter$RelDateTimeDataSink$DateTimeUnit[];
     private constructor(arg2: RelativeDateTimeFormatter$RelativeUnit, arg3: RelativeDateTimeFormatter$AbsoluteUnit)

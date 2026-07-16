@@ -1,6 +1,5 @@
 import type { EntityType } from '../../../../../../com/viaversion/viaversion/api/minecraft/entities/EntityType.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class EntityTypes1_10$EntityType extends Enum<EntityTypes1_10$EntityType> implements EntityType {
     static ABSTRACT_AGEABLE: EntityTypes1_10$EntityType;
@@ -91,7 +90,7 @@ export class EntityTypes1_10$EntityType extends Enum<EntityTypes1_10$EntityType>
     static ZOMBIE: EntityTypes1_10$EntityType;
     static ZOMBIE_PIGMEN: EntityTypes1_10$EntityType;
     static findById(paramarg0: number): EntityTypes1_10$EntityType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): EntityTypes1_10$EntityType;
     static values(): EntityTypes1_10$EntityType[];
     private constructor()

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class Editor_WorldType extends Enum<Editor_WorldType> {
     static EditorProject: Editor_WorldType;
@@ -10,7 +9,7 @@ export class Editor_WorldType extends Enum<Editor_WorldType> {
     static getByName(paramarg0: string, paramarg1: Editor_WorldType): Editor_WorldType;
     static getByValue(paramarg0: number): Editor_WorldType;
     static getByValue(paramarg0: number, paramarg1: Editor_WorldType): Editor_WorldType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Editor_WorldType;
     static values(): Editor_WorldType[];
     private constructor(arg2: number)

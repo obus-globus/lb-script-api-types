@@ -4,11 +4,11 @@ import type { Direction } from '../../../../../../net/minecraft/core/Direction.d
 export class BlockCuller extends Object {
 // (invalid TS: name contains '-')     static box-impl(paramarg0: BlockCuller$Owner): BlockCuller;
 // (invalid TS: name contains '-')     static constructor-impl(paramarg0: BlockCuller$Owner): BlockCuller$Owner;
-// (invalid TS: name contains '-')     static equals-impl(paramarg0: BlockCuller$Owner, paramarg1: Object): boolean;
+// (invalid TS: name contains '-')     static equals-impl(other: Object | null): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: BlockCuller$Owner, paramarg1: BlockCuller$Owner): boolean;
-// (invalid TS: name contains '-')     static getCullData-impl(paramarg0: BlockCuller$Owner, paramarg1: number): number;
-// (invalid TS: name contains '-')     static hashCode-impl(paramarg0: BlockCuller$Owner): number;
-// (invalid TS: name contains '-')     static toString-impl(paramarg0: BlockCuller$Owner): string;
+// (invalid TS: name contains '-')     static getCullData-impl(pos: number): number;
+// (invalid TS: name contains '-')     static hashCode-impl(): number;
+// (invalid TS: name contains '-')     static toString-impl(): string;
     constructor(owner: BlockCuller$Owner)
     readonly owner: BlockCuller$Owner;
     // private contains(pos: number, direction: Direction): boolean;

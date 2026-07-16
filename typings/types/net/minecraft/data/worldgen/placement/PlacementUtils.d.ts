@@ -5,6 +5,7 @@ import type { ResourceKey } from '../../../../../net/minecraft/resources/Resourc
 import type { Block } from '../../../../../net/minecraft/world/level/block/Block.d.ts'
 import type { BlockPredicate } from '../../../../../net/minecraft/world/level/levelgen/blockpredicates/BlockPredicate.d.ts'
 import type { ConfiguredFeature } from '../../../../../net/minecraft/world/level/levelgen/feature/ConfiguredFeature.d.ts'
+import type { Feature } from '../../../../../net/minecraft/world/level/levelgen/feature/Feature.d.ts'
 import type { FeatureConfiguration } from '../../../../../net/minecraft/world/level/levelgen/feature/configurations/FeatureConfiguration.d.ts'
 import type { BlockPredicateFilter } from '../../../../../net/minecraft/world/level/levelgen/placement/BlockPredicateFilter.d.ts'
 import type { PlacedFeature } from '../../../../../net/minecraft/world/level/levelgen/placement/PlacedFeature.d.ts'
@@ -24,12 +25,12 @@ export class PlacementUtils extends Object {
     static bootstrap(paramcontext: BootstrapContext<PlacedFeature>): void;
     static countExtra(paramcount: number, paramchance: number, paramextra: number): PlacementModifier;
     static createKey(paramname: string): ResourceKey<PlacedFeature>;
-    static filtered(paramfeature: Object | null, paramconfig: FeatureConfiguration | null, parampredicate: BlockPredicate): Holder<PlacedFeature>;
+    static filtered<FC extends FeatureConfiguration, F extends Feature<FC>>(paramfeature: F, paramconfig: FC, parampredicate: BlockPredicate): Holder<PlacedFeature>;
     static filteredByBlockSurvival(paramblock: Block): BlockPredicateFilter;
-    static inlinePlaced(paramfeature: Object | null, paramconfig: FeatureConfiguration | null, ...paramplacedFeatures: PlacementModifier[]): Holder<PlacedFeature>;
+    static inlinePlaced<FC extends FeatureConfiguration, F extends Feature<FC>>(paramfeature: F, paramconfig: FC, ...paramplacedFeatures: PlacementModifier[]): Holder<PlacedFeature>;
     static inlinePlaced(paramconfiguredFeature: Holder<ConfiguredFeature<any, any>>, ...paramplacedFeatures: PlacementModifier[]): Holder<PlacedFeature>;
     static isEmpty(): PlacementFilter;
-    static onlyWhenEmpty(paramfeature: Object | null, paramconfig: FeatureConfiguration | null): Holder<PlacedFeature>;
+    static onlyWhenEmpty<FC extends FeatureConfiguration, F extends Feature<FC>>(paramfeature: F, paramconfig: FC): Holder<PlacedFeature>;
     static register(paramcontext: BootstrapContext<PlacedFeature>, paramid: ResourceKey<PlacedFeature>, paramfeature: Holder<ConfiguredFeature<any, any>>, paramplacementModifiers: PlacementModifier[]): void;
     static register(paramcontext: BootstrapContext<PlacedFeature>, paramid: ResourceKey<PlacedFeature>, paramfeature: Holder<ConfiguredFeature<any, any>>, ...paramplacementModifiers: PlacementModifier[]): void;
     constructor()

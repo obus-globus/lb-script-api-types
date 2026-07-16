@@ -4,10 +4,10 @@ import type { DirectMethodHandleDesc } from '../../../java/lang/constant/DirectM
 import type { MethodHandles$Lookup } from '../../../java/lang/invoke/MethodHandles$Lookup.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export abstract class DynamicConstantDesc<T extends unknown> extends Object implements ConstantDesc {
-    static of(paramarg0: DirectMethodHandleDesc): DynamicConstantDesc<Object>;
-    static of(paramarg0: DirectMethodHandleDesc, ...paramarg1: ConstantDesc[]): DynamicConstantDesc<Object>;
-    static ofCanonical(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: ConstantDesc[]): ConstantDesc;
-    static ofNamed(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, ...paramarg3: ConstantDesc[]): DynamicConstantDesc<Object>;
+    static of<T extends unknown>(paramarg0: DirectMethodHandleDesc): DynamicConstantDesc<T>;
+    static of<T extends unknown>(paramarg0: DirectMethodHandleDesc, ...paramarg1: ConstantDesc[]): DynamicConstantDesc<T>;
+    static ofCanonical<T extends unknown>(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: ConstantDesc[]): ConstantDesc;
+    static ofNamed<T extends unknown>(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, ...paramarg3: ConstantDesc[]): DynamicConstantDesc<T>;
     constructor(arg0: DirectMethodHandleDesc, arg1: string, arg2: ClassDesc, ...arg3: ConstantDesc[])
     // private bootstrapArgs: ConstantDesc[];
     // private bootstrapMethod: DirectMethodHandleDesc;

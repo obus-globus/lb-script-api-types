@@ -8,8 +8,8 @@ import type { BlockHitResult } from '../../../../../net/minecraft/world/phys/Blo
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 import type { CollisionContext } from '../../../../../net/minecraft/world/phys/shapes/CollisionContext.d.ts'
 export class RaytracingKt extends Object {
-    static clip(paramarg0: BlockGetter, paramarg1: Vec3, paramarg2: Vec3, paramarg3: ClipContext$Block, paramarg4: ClipContext$Fluid, paramarg5: Entity): BlockHitResult;
-    static clip(paramarg0: BlockGetter, paramarg1: Vec3, paramarg2: Vec3, paramarg3: ClipContext$Block, paramarg4: ClipContext$Fluid, paramarg5: CollisionContext): BlockHitResult;
+    static clip(self: BlockGetter, from: Vec3, to: Vec3, block: ClipContext$Block, fluid: ClipContext$Fluid, entity: Entity): BlockHitResult;
+    static clip(self: BlockGetter, from: Vec3, to: Vec3, block: ClipContext$Block, fluid: ClipContext$Fluid, collisionContext: CollisionContext): BlockHitResult;
     /**
      * Allows you to check if a point is behind a wall
      *

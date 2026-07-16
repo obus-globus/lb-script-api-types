@@ -1,6 +1,7 @@
 import type { Object } from '../../../java/lang/Object.d.ts'
+import type { Duration } from '../../../kotlin/time/Duration.d.ts'
 import type { SelectBuilder } from '../../../kotlinx/coroutines/selects/SelectBuilder.d.ts'
 export class OnTimeoutKt extends Object {
-    static onTimeout(paramarg0: SelectBuilder<Object>, paramarg1: number, paramarg2: (param0: Object) => Object): void;
-// (invalid TS: name contains '-')     static onTimeout-8Mi8wO0(paramarg0: SelectBuilder<Object>, paramarg1: number, paramarg2: (param0: Object) => Object): void;
+    static onTimeout<R extends unknown>(self: SelectBuilder<R>, timeMillis: number, block: () => R): void;
+// (invalid TS: name contains '-')     static onTimeout-8Mi8wO0<R extends unknown>(self: SelectBuilder<R>, timeout: Duration, block: () => R): void;
 }

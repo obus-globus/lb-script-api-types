@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class Persona_AnimationExpression extends Enum<Persona_AnimationExpression> {
     static Blinking: Persona_AnimationExpression;
@@ -8,7 +7,7 @@ export class Persona_AnimationExpression extends Enum<Persona_AnimationExpressio
     static getByName(paramarg0: string, paramarg1: Persona_AnimationExpression): Persona_AnimationExpression;
     static getByValue(paramarg0: number): Persona_AnimationExpression;
     static getByValue(paramarg0: number, paramarg1: Persona_AnimationExpression): Persona_AnimationExpression;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Persona_AnimationExpression;
     static values(): Persona_AnimationExpression[];
     private constructor(arg2: number)

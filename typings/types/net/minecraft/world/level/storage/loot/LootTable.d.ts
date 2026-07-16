@@ -29,14 +29,14 @@ export class LootTable extends Object implements FabricLootTable, LootTableAcces
     static KEY_CODEC: Codec<ResourceKey<LootTable>>;
     static RANDOMIZE_SEED: number;
     static createStackSplitter(paramlevel: ServerLevel, paramoutput: (param0: ItemStack) => void): (param0: ItemStack) => void;
-    static listValidatorForContext(paramparams: ContextKeySet): (param0: (Validatable | null)[]) => DataResult<(Validatable | null)[]>;
+    static listValidatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T[]) => DataResult<T[]>;
     static lootTable(): LootTable$Builder;
     static validate(paramcontext: ValidationContext, paramname: string, paramlist: Validatable[]): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramoptional: Optional<Validatable>): void;
     static validate(paramcontext: ValidationContext, paramname: string, paramv: Validatable): void;
     static validate(paramcontext: ValidationContext, paramlist: Validatable[]): void;
-    static validateReference(paramcontext: ValidationContext, paramid: ResourceKey<Validatable>): void;
-    static validatorForContext(paramparams: ContextKeySet): (param0: Validatable | null) => DataResult<Validatable>;
+    static validateReference<T extends Validatable>(paramcontext: ValidationContext, paramid: ResourceKey<T>): void;
+    static validatorForContext<T extends Validatable>(paramparams: ContextKeySet): (param0: T) => DataResult<T>;
     private constructor(paramSet: ContextKeySet, randomSequence: Optional<Identifier>, pools: LootPool[], functions: LootItemFunction[])
     // private compositeFunction: (param0: ItemStack, param1: LootContext) => ItemStack;
     // private functions: LootItemFunction[];

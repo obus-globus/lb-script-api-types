@@ -14,8 +14,8 @@ export abstract class FT_Module_Requester extends Callback implements FT_Module_
     static create(paramarg0: (param0: number, param1: number) => number): FT_Module_Requester;
     static createSafe(paramarg0: number): FT_Module_Requester;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor()
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;

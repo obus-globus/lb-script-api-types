@@ -7,8 +7,8 @@ import type { JSToUInt32Node$JSToUInt32WrapperNode } from '../../../../../../com
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSToUInt32NodeGen$JSToUInt32WrapperNodeGen extends JSToUInt32Node$JSToUInt32WrapperNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(paramchild: JavaScriptNode): JavaScriptNode;
     static create(paramchild: JavaScriptNode, paramunsignedRightShift: boolean, paramshiftValue: number): JavaScriptNode;
     static create(paramoperand: JavaScriptNode, paramunsignedRightShift: boolean, paramshiftValue: number): JSToUInt32Node$JSToUInt32WrapperNode;

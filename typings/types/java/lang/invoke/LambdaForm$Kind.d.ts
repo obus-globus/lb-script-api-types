@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class LambdaForm$Kind extends Enum<LambdaForm$Kind> {
     static BOUND_REINVOKER: LambdaForm$Kind;
@@ -54,7 +53,7 @@ export class LambdaForm$Kind extends Enum<LambdaForm$Kind> {
     static VOLATILE_FIELD_ACCESS_INIT_Z: LambdaForm$Kind;
     static VOLATILE_FIELD_ACCESS_S: LambdaForm$Kind;
     static VOLATILE_FIELD_ACCESS_Z: LambdaForm$Kind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LambdaForm$Kind;
     static values(): LambdaForm$Kind[];
     private constructor(arg2: string)

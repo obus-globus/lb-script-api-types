@@ -22,7 +22,7 @@ export class PredictionMode extends Enum<PredictionMode> {
     static hasSLLConflictTerminatingPrediction(paramarg0: PredictionMode, paramarg1: (Object | null)[]): boolean;
     static hasStateAssociatedWithOneAlt(paramarg0: (Object | null)[]): boolean;
     static resolvesToJustOneViableAlt(paramarg0: BitSet[]): number;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PredictionMode;
     static values(): PredictionMode[];
     private constructor()

@@ -47,7 +47,7 @@ import type { CollisionContext } from '../../../../../../net/minecraft/world/phy
 import type { VoxelShape } from '../../../../../../net/minecraft/world/phys/shapes/VoxelShape.d.ts'
 export abstract class BlockBehaviour extends Object implements ShapeUpdateHandlingBlockBehaviour, BlockBehaviourAccessor, FeatureElement {
     static FILTERED_REGISTRIES: ResourceKey<FeatureElement[]>[];
-    static simpleCodec(paramconstructor: (param0: BlockBehaviour$Properties) => Block | null): MapCodec<Block>;
+    static simpleCodec<B extends Block>(paramconstructor: (param0: BlockBehaviour$Properties) => B): MapCodec<B>;
     constructor(properties: BlockBehaviour$Properties)
     // private bounceRestitution: number;
     readonly descriptionId: string;

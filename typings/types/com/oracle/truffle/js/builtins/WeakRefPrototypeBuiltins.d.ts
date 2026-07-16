@@ -4,11 +4,13 @@ import type { JSBuiltinsContainer$SwitchEnum } from '../../../../../com/oracle/t
 import type { WeakRefPrototypeBuiltins$WeakRefPrototype } from '../../../../../com/oracle/truffle/js/builtins/WeakRefPrototypeBuiltins$WeakRefPrototype.d.ts'
 import type { JSBuiltin } from '../../../../../com/oracle/truffle/js/nodes/function/JSBuiltin.d.ts'
 import type { JSContext } from '../../../../../com/oracle/truffle/js/runtime/JSContext.d.ts'
+import type { BuiltinEnum } from '../../../../../com/oracle/truffle/js/runtime/builtins/BuiltinEnum.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
+import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class WeakRefPrototypeBuiltins extends JSBuiltinsContainer$SwitchEnum<WeakRefPrototypeBuiltins$WeakRefPrototype> {
     static BUILTINS: JSBuiltinsContainer;
-    static fromEnum(paramname: TruffleString, parambuiltinEnum: Class<Object>): JSBuiltinsContainer;
+    static fromEnum<E extends Enum<E> & BuiltinEnum<E>>(paramname: TruffleString, parambuiltinEnum: Class<E>): JSBuiltinsContainer;
     constructor()
     createNode(context: JSContext, builtin: JSBuiltin, construct: boolean, newTarget: boolean, builtinEnum: WeakRefPrototypeBuiltins$WeakRefPrototype): Object;
 }

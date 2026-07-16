@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ActorFlags extends Enum<ActorFlags> {
     static ADMIRING: ActorFlags;
@@ -136,7 +135,7 @@ export class ActorFlags extends Enum<ActorFlags> {
     static getByName(paramarg0: string, paramarg1: ActorFlags): ActorFlags;
     static getByValue(paramarg0: number): ActorFlags;
     static getByValue(paramarg0: number, paramarg1: ActorFlags): ActorFlags;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ActorFlags;
     static values(): ActorFlags[];
     private constructor(arg2: number)

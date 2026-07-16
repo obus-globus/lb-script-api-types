@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class Relative extends Enum<Relative> {
     static DELTA_X: Relative;
@@ -15,7 +14,7 @@ export class Relative extends Enum<Relative> {
     static Y_ROT: Relative;
     static Z: Relative;
     static union(...paramarg0: Relative[][]): Relative[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Relative;
     static values(): Relative[];
     private constructor()

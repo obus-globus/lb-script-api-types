@@ -12,7 +12,7 @@ export class ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError e
     static name: ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError;
     static stack: ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError;
     static values(): ErrorPrototypeBuiltins$ForeignErrorPrototypeBuiltins$ForeignError[];
     private constructor(length: number)

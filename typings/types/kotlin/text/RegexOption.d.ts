@@ -1,6 +1,5 @@
 import type { Serializable } from '../../java/io/Serializable.d.ts'
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 import type { FlagEnum } from '../../kotlin/text/FlagEnum.d.ts'
 export class RegexOption extends Enum<RegexOption> implements Serializable, FlagEnum {
@@ -12,8 +11,8 @@ export class RegexOption extends Enum<RegexOption> implements Serializable, Flag
     static MULTILINE: RegexOption;
     static UNIX_LINES: RegexOption;
     static getEntries(): RegexOption[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): RegexOption;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): RegexOption;
     static values(): RegexOption[];
     private constructor(value: number, mask: number)
     readonly mask: number;

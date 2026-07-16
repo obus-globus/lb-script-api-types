@@ -3,7 +3,7 @@ import type { TokenFilter } from '../../../../../io/github/douira/glsl_transform
 import type { Supplier } from '../../../../../java/util/function/Supplier.d.ts'
 import type { Token } from '../../../../../org/antlr/v4/runtime/Token.d.ts'
 export class MultiFilter<J extends JobParameters> extends TokenFilter<J> {
-    static join(paramarg0: TokenFilter<JobParameters>, paramarg1: TokenFilter<JobParameters>): TokenFilter<JobParameters>;
+    static join<J extends JobParameters>(paramarg0: TokenFilter<J>, paramarg1: TokenFilter<J>): TokenFilter<J>;
     constructor()
     constructor(arg0: boolean, arg1: boolean)
     constructor(arg0: number)

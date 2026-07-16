@@ -5,5 +5,5 @@ export class MessageHeader extends Object {
     constructor(arg0: number[], arg1: UUID)
     // private precedingSignature: number[];
     // private sender: UUID;
-    update(arg0: (param0: Object | null) => void): void;
+    update(arg0: (param0: number[]) => void): void;
 }

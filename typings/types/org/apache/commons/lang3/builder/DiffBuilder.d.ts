@@ -6,7 +6,7 @@ import type { DiffBuilder$Builder } from '../../../../../org/apache/commons/lang
 import type { DiffBuilder$SerializableSupplier } from '../../../../../org/apache/commons/lang3/builder/DiffBuilder$SerializableSupplier.d.ts'
 import type { ToStringStyle } from '../../../../../org/apache/commons/lang3/builder/ToStringStyle.d.ts'
 export class DiffBuilder<T extends unknown> extends Object implements Builder<Diff<Object>[]> {
-    static builder(): DiffBuilder$Builder<Object>;
+    static builder<T extends unknown>(): DiffBuilder$Builder<T>;
     constructor(arg0: T, arg1: T, arg2: ToStringStyle)
     constructor(arg0: T, arg1: T, arg2: ToStringStyle, arg3: boolean)
     constructor(arg0: Object, arg1: Object, arg2: ToStringStyle, arg3: boolean, arg4: string, arg5: any)

@@ -8,14 +8,14 @@ import type { CubicSpline } from '../../../net/minecraft/util/CubicSpline.d.ts'
 import type { CubicSpline$Builder } from '../../../net/minecraft/util/CubicSpline$Builder.d.ts'
 import type { CubicSpline$Multipoint$Point } from '../../../net/minecraft/util/CubicSpline$Multipoint$Point.d.ts'
 export class CubicSpline$Multipoint<I extends BoundedFloatFunction<Object>> extends Record implements CubicSpline<I> {
-    static asSampler(paramspline: CubicSpline<Object>): BoundedFloatFunction<Object>;
-    static builder(paramcoordinate: Object | null): CubicSpline$Builder<any>;
-    static builder(paramcoordinate: Object | null, paramvalueTransformer: (param0: number) => number): CubicSpline$Builder<any>;
-    static codec(paramcoordinateCodec: Codec<Object>, paramsubSplineCodec: Codec<CubicSpline<Object>>): Codec<CubicSpline$Multipoint<any>>;
-    static codec(paramcoordinateCodec: Codec<Object>): Codec<CubicSpline<Object>>;
-    static constant(paramvalue: number): CubicSpline<Object>;
-    static sample(paramsampler: CubicSpline$Multipoint<any>, paramc: Object | null): number;
-    static sample(paramspline: CubicSpline<Object>, paramcoordinate: Object | null): number;
+    static asSampler<C extends unknown, I extends BoundedFloatFunction<C>>(paramspline: CubicSpline<I>): BoundedFloatFunction<C>;
+    static builder<I extends BoundedFloatFunction<Object>>(paramcoordinate: I): CubicSpline$Builder<I>;
+    static builder<I extends BoundedFloatFunction<Object>>(paramcoordinate: I, paramvalueTransformer: (param0: number) => number): CubicSpline$Builder<I>;
+    static codec<I extends BoundedFloatFunction<Object>>(paramcoordinateCodec: Codec<I>, paramsubSplineCodec: Codec<CubicSpline<I>>): Codec<CubicSpline$Multipoint<I>>;
+    static codec<I extends BoundedFloatFunction<Object>>(paramcoordinateCodec: Codec<I>): Codec<CubicSpline<I>>;
+    static constant<I extends unknown>(paramvalue: number): CubicSpline<I>;
+    static sample<C extends unknown, I extends BoundedFloatFunction<C>>(paramsampler: CubicSpline$Multipoint<I>, paramc: C): number;
+    static sample<C extends unknown, I extends BoundedFloatFunction<C>>(paramspline: CubicSpline<I>, paramcoordinate: C): number;
     constructor(coordinate: I, locations: number[], values: CubicSpline<I>[], derivatives: number[])
     constructor(coordinate: I, locations: number[], values: CubicSpline<I>[], derivatives: number[], minValue: number, maxValue: number)
     // private coordinate: I;
@@ -29,7 +29,7 @@ export class CubicSpline$Multipoint<I extends BoundedFloatFunction<Object>> exte
     equals(o: Object | null): boolean;
     hashCode(): number;
     locations(): number[];
-    mapCoordinates(mapper: (param0: I) => Object | null): CubicSpline<I>;
+    mapCoordinates(mapper: (param0: I) => I): CubicSpline<I>;
     maxValue(): number;
     minValue(): number;
     // private packToPoints(): CubicSpline$Multipoint$Point<I>[];

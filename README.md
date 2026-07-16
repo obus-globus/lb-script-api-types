@@ -73,6 +73,18 @@ live behind `.static`** (`Hand.static.MAIN_HAND`,
 typings but is `undefined` at runtime; these types model the real reachable
 surface (verified in a live client).
 
+Two conventions worth knowing (details in [typings/README.md](typings/README.md)):
+
+- **Don't shadow the ambient globals** (A16): `const Vec3d = Java.type(...)`
+  at the top level of a non-module script collides with the ambient `Vec3d`
+  global (TS2451) - use the global, rename the local, or add `export {}`.
+- **Getter/property duality** (A15): nashorn-compat lets you read a Java
+  getter as a bean property (`mc.connection`) and a Kotlin property as a
+  getter (`client.getEventManager()`) at runtime. The types expose ONE form
+  each: Java classes are typed with the getter method (`mc.getConnection()`);
+  Kotlin classes are typed property-first (`client.eventManager`). The other
+  form still works at runtime, it just isn't type-checked.
+
 ### Typed `Java.type` (opt-in registry)
 
 By default `Java.type(...)` returns `any` (or takes an explicit generic).

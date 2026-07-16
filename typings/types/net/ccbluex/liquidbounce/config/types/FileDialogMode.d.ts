@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { FileDialogMode$Companion } from '../../../../../net/ccbluex/liquidbounce/config/types/FileDialogMode$Companion.d.ts'
 /**
@@ -19,8 +18,8 @@ export class FileDialogMode extends Enum<FileDialogMode> {
     static OPEN_FILE: FileDialogMode;
     static SAVE_FILE: FileDialogMode;
     static getEntries(): FileDialogMode[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
-    static valueOf(paramarg0: string): FileDialogMode;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
+    static valueOf(value: string): FileDialogMode;
     static values(): FileDialogMode[];
     private constructor(translationKey: string, fallbackTitle: string)
     // private fallbackTitle: string;

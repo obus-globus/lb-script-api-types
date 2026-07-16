@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Octree$AxisSorting extends Enum<Octree$AxisSorting> {
     static XYZ: Octree$AxisSorting;
@@ -9,7 +8,7 @@ export class Octree$AxisSorting extends Enum<Octree$AxisSorting> {
     static ZXY: Octree$AxisSorting;
     static ZYX: Octree$AxisSorting;
     static getAxisSorting(paramabsXDiff: number, paramabsYDiff: number, paramabsZDiff: number): Octree$AxisSorting;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Octree$AxisSorting;
     static values(): Octree$AxisSorting[];
     private constructor(xShift: number, yShift: number, zShift: number)

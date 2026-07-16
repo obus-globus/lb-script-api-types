@@ -9,5 +9,5 @@ import type { KotlinType } from '../../../../../../../kotlin/reflect/jvm/interna
 export class DescriptorBasedTypeSignatureMappingKt extends Object {
     static computeInternalName(paramarg0: ClassDescriptor, paramarg1: TypeMappingConfiguration<Object>): string;
     static hasVoidReturnType(paramarg0: CallableDescriptor): boolean;
-    static mapType(paramarg0: KotlinType, paramarg1: JvmTypeFactory<Object>, paramarg2: TypeMappingMode, paramarg3: TypeMappingConfiguration<Object>, paramarg4: JvmDescriptorTypeWriter<Object>, paramarg5: (param0: Object, param1: Object, param2: Object) => void): Object | null;
+    static mapType<T extends unknown>(paramarg0: KotlinType, paramarg1: JvmTypeFactory<T>, paramarg2: TypeMappingMode, paramarg3: TypeMappingConfiguration<T>, paramarg4: JvmDescriptorTypeWriter<T>, paramarg5: (param0: Object, param1: Object, param2: Object) => void): T;
 }

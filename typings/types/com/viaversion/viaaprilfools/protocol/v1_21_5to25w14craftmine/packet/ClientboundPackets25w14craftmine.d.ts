@@ -2,7 +2,6 @@ import type { ClientboundPacket25w14craftmine } from '../../../../../../com/viav
 import type { Direction } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/Direction.d.ts'
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ClientboundPackets25w14craftmine extends Enum<ClientboundPackets25w14craftmine> implements ClientboundPacket25w14craftmine {
     static ADD_ENTITY: ClientboundPackets25w14craftmine;
@@ -141,7 +140,7 @@ export class ClientboundPackets25w14craftmine extends Enum<ClientboundPackets25w
     static UPDATE_SCREEN: ClientboundPackets25w14craftmine;
     static UPDATE_TAGS: ClientboundPackets25w14craftmine;
     static UPDATE_UNLOCKED_EFFECTS: ClientboundPackets25w14craftmine;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ClientboundPackets25w14craftmine;
     static values(): ClientboundPackets25w14craftmine[];
     private constructor()

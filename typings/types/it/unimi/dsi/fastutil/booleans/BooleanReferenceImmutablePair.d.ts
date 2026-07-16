@@ -3,8 +3,8 @@ import type { BooleanReferencePair } from '../../../../../it/unimi/dsi/fastutil/
 import type { Serializable } from '../../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class BooleanReferenceImmutablePair<V extends unknown> extends Object implements BooleanReferencePair<V>, Serializable {
-    static of(paramarg0: boolean, paramarg1: Object | null): BooleanReferenceImmutablePair<Object>;
-    static of(paramarg0: boolean, paramarg1: Object | null): BooleanReferencePair<Object>;
+    static of<V extends unknown>(paramarg0: boolean, paramarg1: V): BooleanReferenceImmutablePair<V>;
+    static of<V extends unknown>(paramarg0: boolean, paramarg1: V): BooleanReferencePair<V>;
     constructor(arg0: boolean, arg1: V)
     // private left: boolean;
     // private right: V;

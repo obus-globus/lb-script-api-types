@@ -19,7 +19,7 @@ export class RotationFindingKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L457 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:457}
      */
-    static canSeeBox(eyes: Vec3, box: AABB, range: number, wallsRange: number, expectedTarget: BlockPos): boolean;
+    static canSeeBox(eyes: Vec3, box: AABB, range: number, wallsRange: number, expectedTarget: BlockPos | null): boolean;
     /**
      * Find the best spot of the upper side of the block
      *
@@ -38,9 +38,9 @@ export class RotationFindingKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L572 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:572}
      */
-    static findClosestPointOnBlockInLineWithCrystal(eyes: Vec3, range: number, wallsRange: number, expectedTarget: BlockPos, notFacingAway: boolean, rotationsNotToMatch: Rotation[]): Pair<RotationWithVector, Direction>;
-    static raytraceBlockRotation(eyes: Vec3, pos: BlockPos, state: BlockState, range: number, wallsRange: number): RotationWithVector;
-    static raytraceBlockSide(side: Direction, pos: BlockPos, eyes: Vec3, rangeSquared: number, wallsRangeSquared: number, collisionContext: CollisionContext): RotationWithVector;
+    static findClosestPointOnBlockInLineWithCrystal(eyes: Vec3, range: number, wallsRange: number, expectedTarget: BlockPos, notFacingAway: boolean, rotationsNotToMatch: Rotation[] | null): Pair<RotationWithVector, Direction> | null;
+    static raytraceBlockRotation(eyes: Vec3, pos: BlockPos, state: BlockState, range: number, wallsRange: number): RotationWithVector | null;
+    static raytraceBlockSide(side: Direction, pos: BlockPos, eyes: Vec3, rangeSquared: number, wallsRangeSquared: number, collisionContext: CollisionContext): RotationWithVector | null;
     /**
      * Samples one block face across every box in a voxel shape and returns the globally best rotation.
      *
@@ -49,23 +49,23 @@ export class RotationFindingKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L274 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:274}
      */
-    static raytraceBlockSideBoxes(side: Direction, boxes: AABB[], offset: BlockPos, eyes: Vec3, rangeSquared: number, wallsRangeSquared: number, rotationPreference: (param0: Rotation, param1: Rotation) => number, visibilityPredicate: VisibilityPredicate): RotationWithVector;
+    static raytraceBlockSideBoxes(side: Direction, boxes: AABB[], offset: BlockPos, eyes: Vec3, rangeSquared: number, wallsRangeSquared: number, rotationPreference: (param0: Rotation, param1: Rotation) => number, visibilityPredicate: VisibilityPredicate): RotationWithVector | null;
     /**
      * Find the best spot of a box to aim at.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L374 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:374}
      */
-    static raytraceBox(eyes: Vec3, box: AABB, range: number, wallsRange: number, visibilityPredicate: VisibilityPredicate, rotationPreference: RotationPreference, futureTarget: AABB, prioritizeVisible: boolean): RotationWithVector;
+    static raytraceBox(eyes: Vec3, box: AABB, range: number, wallsRange: number, visibilityPredicate: VisibilityPredicate, rotationPreference: RotationPreference, futureTarget: AABB | null, prioritizeVisible: boolean): RotationWithVector | null;
     /**
      * Samples all boxes that make up a shape and returns the globally best rotation across them.
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L314 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:314}
      */
-    static raytraceBoxes(eyes: Vec3, boxes: AABB[], range: number, wallsRange: number, visibilityPredicate: VisibilityPredicate, rotationPreference: RotationPreference, futureTarget: AABB, prioritizeVisible: boolean): RotationWithVector;
+    static raytraceBoxes(eyes: Vec3, boxes: AABB[], range: number, wallsRange: number, visibilityPredicate: VisibilityPredicate, rotationPreference: RotationPreference, futureTarget: AABB | null, prioritizeVisible: boolean): RotationWithVector | null;
     /**
      * Find the best spot of the upper block side
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt#L515 | src/main/kotlin/net/ccbluex/liquidbounce/utils/aiming/utils/RotationFinding.kt:515}
      */
-    static raytraceUpperBlockSide(eyes: Vec3, range: number, wallsRange: number, expectedTarget: BlockPos, rotationPreference: RotationPreference, rotationsNotToMatch: Rotation[]): RotationWithVector;
+    static raytraceUpperBlockSide(eyes: Vec3, range: number, wallsRange: number, expectedTarget: BlockPos, rotationPreference: RotationPreference, rotationsNotToMatch: Rotation[] | null): RotationWithVector | null;
 }

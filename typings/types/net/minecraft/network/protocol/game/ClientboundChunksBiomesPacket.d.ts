@@ -12,7 +12,7 @@ import type { ClientboundChunksBiomesPacket$ChunkBiomeData } from '../../../../.
 import type { LevelChunk } from '../../../../../net/minecraft/world/level/chunk/LevelChunk.d.ts'
 export class ClientboundChunksBiomesPacket extends Record implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundChunksBiomesPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static forChunks(paramchunks: LevelChunk[]): ClientboundChunksBiomesPacket;
     constructor(chunkBiomeData: ClientboundChunksBiomesPacket$ChunkBiomeData[])
     // private chunkBiomeData: ClientboundChunksBiomesPacket$ChunkBiomeData[];

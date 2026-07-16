@@ -3,9 +3,9 @@ import type { Record } from '../../../../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../../../../java/util/Optional.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class ExpirableValue<T extends unknown> extends Record {
-    static codec(paramvalueCodec: Codec<Object>): Codec<ExpirableValue<Object>>;
-    static of(paramvalue: Object | null): ExpirableValue<Object>;
-    static of(paramvalue: Object | null, paramticksUntilExpiry: number): ExpirableValue<Object>;
+    static codec<T extends unknown>(paramvalueCodec: Codec<T>): Codec<ExpirableValue<T>>;
+    static of<T extends unknown>(paramvalue: T): ExpirableValue<T>;
+    static of<T extends unknown>(paramvalue: T, paramticksUntilExpiry: number): ExpirableValue<T>;
     constructor(value: T, timeToLive: Optional<number>)
     // private timeToLive: Optional<number>;
     // private value: T;

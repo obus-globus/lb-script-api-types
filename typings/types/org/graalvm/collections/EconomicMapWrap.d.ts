@@ -5,17 +5,17 @@ import type { Equivalence } from '../../../org/graalvm/collections/Equivalence.d
 import type { MapCursor } from '../../../org/graalvm/collections/MapCursor.d.ts'
 import type { UnmodifiableEconomicMap } from '../../../org/graalvm/collections/UnmodifiableEconomicMap.d.ts'
 export class EconomicMapWrap<K extends unknown, V extends unknown> extends Object implements EconomicMap<K, V> {
-    static create(): EconomicMap<Object, Object>;
-    static create(paraminitialCapacity: number): EconomicMap<Object, Object>;
-    static create(paramstrategy: Equivalence): EconomicMap<Object, Object>;
-    static create(paramstrategy: Equivalence, paraminitialCapacity: number): EconomicMap<Object, Object>;
-    static create(paramstrategy: Equivalence, paramm: UnmodifiableEconomicMap<Object, Object>): EconomicMap<Object, Object>;
-    static create(paramm: UnmodifiableEconomicMap<Object, Object>): EconomicMap<Object, Object>;
-    static emptyCursor(): MapCursor<Object, Object>;
-    static emptyMap(): EconomicMap<Object, Object>;
-    static of(paramkey1: Object | null, paramvalue1: Object | null): EconomicMap<Object, Object>;
-    static of(paramkey1: Object | null, paramvalue1: Object | null, paramkey2: Object | null, paramvalue2: Object | null): EconomicMap<Object, Object>;
-    static wrapMap(parammap: Map<Object | null, Object | null>): EconomicMap<Object, Object>;
+    static create<K extends unknown, V extends unknown>(): EconomicMap<K, V>;
+    static create<K extends unknown, V extends unknown>(paraminitialCapacity: number): EconomicMap<K, V>;
+    static create<K extends unknown, V extends unknown>(paramstrategy: Equivalence): EconomicMap<K, V>;
+    static create<K extends unknown, V extends unknown>(paramstrategy: Equivalence, paraminitialCapacity: number): EconomicMap<K, V>;
+    static create<K extends unknown, V extends unknown>(paramstrategy: Equivalence, paramm: UnmodifiableEconomicMap<K, V>): EconomicMap<K, V>;
+    static create<K extends unknown, V extends unknown>(paramm: UnmodifiableEconomicMap<K, V>): EconomicMap<K, V>;
+    static emptyCursor<K extends unknown, V extends unknown>(): MapCursor<K, V>;
+    static emptyMap<K extends unknown, V extends unknown>(): EconomicMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramkey1: K, paramvalue1: V): EconomicMap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramkey1: K, paramvalue1: V, paramkey2: K, paramvalue2: V): EconomicMap<K, V>;
+    static wrapMap<K extends unknown, V extends unknown>(parammap: Map<K, V>): EconomicMap<K, V>;
     constructor(map: Map<K, V>)
     // private map: Map<K, V>;
     clear(): void;

@@ -10,14 +10,14 @@ import type { FailableBiFunction } from '../../../../../org/apache/commons/lang3
 import type { FailableFunction } from '../../../../../org/apache/commons/lang3/function/FailableFunction.d.ts'
 import type { FailableSupplier } from '../../../../../org/apache/commons/lang3/function/FailableSupplier.d.ts'
 export class MethodInvokers extends Object {
-    static asBiConsumer(paramarg0: Method): (param0: Object | null, param1: Object | null) => void;
-    static asBiFunction(paramarg0: Method): (param0: Object | null, param1: Object | null) => Object | null;
-    static asFailableBiConsumer(paramarg0: Method): (param0: Object | null, param1: Object | null) => void;
-    static asFailableBiFunction(paramarg0: Method): (param0: Object | null, param1: Object | null) => Object | null;
-    static asFailableFunction(paramarg0: Method): (param0: Object | null) => Object | null;
-    static asFailableSupplier(paramarg0: Method): () => Object | null;
-    static asFunction(paramarg0: Method): (param0: Object | null) => Object | null;
-    static asInterfaceInstance(paramarg0: Class<Object>, paramarg1: Method): Object | null;
-    static asSupplier(paramarg0: Method): () => Object | null;
+    static asBiConsumer<T extends unknown, U extends unknown>(paramarg0: Method): (param0: T, param1: U) => void;
+    static asBiFunction<T extends unknown, U extends unknown, R extends unknown>(paramarg0: Method): (param0: T, param1: U) => R;
+    static asFailableBiConsumer<T extends unknown, U extends unknown>(paramarg0: Method): (param0: T, param1: U) => void;
+    static asFailableBiFunction<T extends unknown, U extends unknown, R extends unknown>(paramarg0: Method): (param0: T, param1: U) => R;
+    static asFailableFunction<T extends unknown, R extends unknown>(paramarg0: Method): (param0: T) => R;
+    static asFailableSupplier<R extends unknown>(paramarg0: Method): () => R;
+    static asFunction<T extends unknown, R extends unknown>(paramarg0: Method): (param0: T) => R;
+    static asInterfaceInstance<T extends unknown>(paramarg0: Class<T>, paramarg1: Method): T;
+    static asSupplier<R extends unknown>(paramarg0: Method): () => R;
     private constructor()
 }

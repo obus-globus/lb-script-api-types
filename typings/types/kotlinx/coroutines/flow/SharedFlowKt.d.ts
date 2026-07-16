@@ -7,6 +7,6 @@ import type { SharedFlow } from '../../../kotlinx/coroutines/flow/SharedFlow.d.t
 import type { Symbol } from '../../../kotlinx/coroutines/internal/Symbol.d.ts'
 export class SharedFlowKt extends Object {
     static NO_VALUE: Symbol;
-    static MutableSharedFlow(paramarg0: number, paramarg1: number, paramarg2: BufferOverflow): MutableSharedFlow<Object>;
-    static fuseSharedFlow(paramarg0: SharedFlow<Object>, paramarg1: CoroutineContext, paramarg2: number, paramarg3: BufferOverflow): Flow<Object>;
+    static MutableSharedFlow<T extends unknown>(replay: number, extraBufferCapacity: number, onBufferOverflow: BufferOverflow): MutableSharedFlow<T>;
+    static fuseSharedFlow<T extends unknown>(self: SharedFlow<T>, context: CoroutineContext, capacity: number, onBufferOverflow: BufferOverflow): Flow<T>;
 }

@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class RTCStatsType extends Enum<RTCStatsType> {
     static CANDIDATE_PAIR: RTCStatsType;
@@ -21,7 +20,7 @@ export class RTCStatsType extends Enum<RTCStatsType> {
     static STREAM: RTCStatsType;
     static TRACK: RTCStatsType;
     static TRANSPORT: RTCStatsType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): RTCStatsType;
     static values(): RTCStatsType[];
     private constructor()

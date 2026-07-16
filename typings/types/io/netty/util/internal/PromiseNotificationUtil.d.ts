@@ -5,6 +5,6 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 export class PromiseNotificationUtil extends Object {
     static tryCancel(paramarg0: Promise<Object>, paramarg1: InternalLogger): void;
     static tryFailure(paramarg0: Promise<Object>, paramarg1: Throwable, paramarg2: InternalLogger): void;
-    static trySuccess(paramarg0: Promise<Object>, paramarg1: Object | null, paramarg2: InternalLogger): void;
+    static trySuccess<V extends unknown>(paramarg0: Promise<Object>, paramarg1: V, paramarg2: InternalLogger): void;
     private constructor()
 }

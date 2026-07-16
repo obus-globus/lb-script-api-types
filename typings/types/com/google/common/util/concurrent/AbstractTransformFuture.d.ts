@@ -4,8 +4,8 @@ import type { ListenableFuture } from '../../../../../com/google/common/util/con
 import type { Runnable } from '../../../../../java/lang/Runnable.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class AbstractTransformFuture<I extends unknown, O extends unknown, F extends unknown, T extends unknown> extends FluentFuture$TrustedFuture<O> implements Runnable {
-    static from(paramfuture: FluentFuture<Object>): FluentFuture<Object>;
-    static from(paramfuture: ListenableFuture<Object>): FluentFuture<Object>;
+    static from<V extends unknown>(paramfuture: FluentFuture<V>): FluentFuture<V>;
+    static from<V extends unknown>(paramfuture: ListenableFuture<V>): FluentFuture<V>;
     constructor(inputFuture: ListenableFuture<I>, function_: F)
     // private function: F;
     // private inputFuture: ListenableFuture<I>;

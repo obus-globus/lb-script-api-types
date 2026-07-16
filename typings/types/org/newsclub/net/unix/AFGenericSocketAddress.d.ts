@@ -15,7 +15,7 @@ export class AFGenericSocketAddress extends AFSocketAddress {
     static createUnresolved(paramarg0: string, paramarg1: number): InetSocketAddress;
     static isSupportedAddress(paramarg0: InetAddress): boolean;
     static isSupportedAddress(paramarg0: SocketAddress): boolean;
-    static mapOrFail(paramarg0: SocketAddress, paramarg1: Class<AFSocketAddress>): AFSocketAddress | null;
+    static mapOrFail<A extends AFSocketAddress>(paramarg0: SocketAddress, paramarg1: Class<A>): A;
     static mapOrFail(paramarg0: SocketAddress): AFSocketAddress;
     static of(paramarg0: URI): AFGenericSocketAddress;
     static of(paramarg0: URI, paramarg1: number): AFGenericSocketAddress;

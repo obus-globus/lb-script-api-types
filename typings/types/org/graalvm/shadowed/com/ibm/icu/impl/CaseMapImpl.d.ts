@@ -12,15 +12,15 @@ export class CaseMapImpl extends Object {
     static TITLECASE_WHOLE_STRING: number;
     static addTitleAdjustmentOption(paramoptions: number, paramnewOption: number): number;
     static addTitleIteratorOption(paramoptions: number, paramnewOption: number): number;
-    static fold(paramoptions: number, paramsrc: CharSequence, paramdest: Appendable | null, paramedits: Edits): Appendable | null;
+    static fold<A extends Appendable>(paramoptions: number, paramsrc: CharSequence, paramdest: A, paramedits: Edits): A;
     static fold(paramoptions: number, paramsrc: CharSequence): string;
     static getTitleBreakIterator(paramlocale: Locale, paramoptions: number, paramiter: BreakIterator): BreakIterator;
     static getTitleBreakIterator(paramlocale: ULocale, paramoptions: number, paramiter: BreakIterator): BreakIterator;
-    static toLower(paramcaseLocale: number, paramoptions: number, paramsrc: CharSequence, paramdest: Appendable | null, paramedits: Edits): Appendable | null;
+    static toLower<A extends Appendable>(paramcaseLocale: number, paramoptions: number, paramsrc: CharSequence, paramdest: A, paramedits: Edits): A;
     static toLower(paramcaseLocale: number, paramoptions: number, paramsrc: CharSequence): string;
-    static toTitle(paramcaseLocale: number, paramoptions: number, paramtitleIter: BreakIterator, paramsrc: CharSequence, paramdest: Appendable | null, paramedits: Edits): Appendable | null;
+    static toTitle<A extends Appendable>(paramcaseLocale: number, paramoptions: number, paramtitleIter: BreakIterator, paramsrc: CharSequence, paramdest: A, paramedits: Edits): A;
     static toTitle(paramcaseLocale: number, paramoptions: number, paramiter: BreakIterator, paramsrc: CharSequence): string;
-    static toUpper(paramcaseLocale: number, paramoptions: number, paramsrc: CharSequence, paramdest: Appendable | null, paramedits: Edits): Appendable | null;
+    static toUpper<A extends Appendable>(paramcaseLocale: number, paramoptions: number, paramsrc: CharSequence, paramdest: A, paramedits: Edits): A;
     static toUpper(paramcaseLocale: number, paramoptions: number, paramsrc: CharSequence): string;
     constructor()
 }

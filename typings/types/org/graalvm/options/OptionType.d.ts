@@ -4,8 +4,8 @@ import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 import type { OptionType$Converter } from '../../../org/graalvm/options/OptionType$Converter.d.ts'
 export class OptionType<T extends unknown> extends Object {
-    static defaultType(paramvalue: Object | null): OptionType<Object>;
-    static defaultType(paramclazz: Class<Object>): OptionType<Object>;
+    static defaultType<T extends unknown>(paramvalue: T): OptionType<T>;
+    static defaultType<T extends unknown>(paramclazz: Class<T>): OptionType<T>;
     constructor(name: string, defaultValue: T, stringConverter: (param0: string) => T)
     constructor(name: string, defaultValue: T, stringConverter: (param0: string) => T, validator: (param0: T) => void)
     constructor(name: string, stringConverter: (param0: string) => T)

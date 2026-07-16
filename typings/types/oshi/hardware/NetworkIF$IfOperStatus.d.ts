@@ -1,5 +1,4 @@
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class NetworkIF$IfOperStatus extends Enum<NetworkIF$IfOperStatus> {
     static DORMANT: NetworkIF$IfOperStatus;
@@ -10,7 +9,7 @@ export class NetworkIF$IfOperStatus extends Enum<NetworkIF$IfOperStatus> {
     static UNKNOWN: NetworkIF$IfOperStatus;
     static UP: NetworkIF$IfOperStatus;
     static byValue(paramarg0: number): NetworkIF$IfOperStatus;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): NetworkIF$IfOperStatus;
     static values(): NetworkIF$IfOperStatus[];
     private constructor(arg2: number)

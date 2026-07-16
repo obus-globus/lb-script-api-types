@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class GameMode extends Enum<GameMode> {
     static ADVENTURE: GameMode;
@@ -8,7 +7,7 @@ export class GameMode extends Enum<GameMode> {
     static SPECTATOR: GameMode;
     static SURVIVAL: GameMode;
     static getById(paramarg0: number): GameMode;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): GameMode;
     static values(): GameMode[];
     private constructor(arg2: string, arg3: number)

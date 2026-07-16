@@ -10,7 +10,7 @@ import type { PacketType } from '../../../../../net/minecraft/network/protocol/P
 import type { ServerGamePacketListener } from '../../../../../net/minecraft/network/protocol/game/ServerGamePacketListener.d.ts'
 export class ServerboundSignUpdatePacket extends Object implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSignUpdatePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(pos: BlockPos, isFrontText: boolean, line0: string, line1: string, line2: string, line3: string)
     // private isFrontText: boolean;
     readonly lines: string[];

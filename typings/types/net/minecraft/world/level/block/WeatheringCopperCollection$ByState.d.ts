@@ -5,7 +5,7 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { WeatheringCopper$WeatherState } from '../../../../../net/minecraft/world/level/block/WeatheringCopper$WeatherState.d.ts'
 export class WeatheringCopperCollection$ByState<T extends unknown> extends Record {
-    static create(paramvalue: Object | null): WeatheringCopperCollection$ByState<Object>;
+    static create<T extends unknown>(paramvalue: T): WeatheringCopperCollection$ByState<T>;
     constructor(unaffected: T, exposed: T, weathered: T, oxidized: T)
     // private exposed: T;
     // private oxidized: T;

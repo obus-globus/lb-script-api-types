@@ -6,8 +6,8 @@ import type { TimeSource$WithComparableMarks } from '../../kotlin/time/TimeSourc
 import type { LocalDate } from '../../kotlinx/datetime/LocalDate.d.ts'
 import type { TimeZone } from '../../kotlinx/datetime/TimeZone.d.ts'
 export class ClockKt extends Object {
-    static asClock(paramarg0: TimeSource, paramarg1: Instant): Clock;
-    static asTimeSource(paramarg0: Clock): TimeSource$WithComparableMarks;
-    static todayAt(paramarg0: Clock, paramarg1: TimeZone): LocalDate;
-    static todayIn(paramarg0: Clock, paramarg1: TimeZone): LocalDate;
+    static asClock(self: TimeSource, origin: Instant): Clock;
+    static asTimeSource(self: Clock): TimeSource$WithComparableMarks;
+    static todayAt(self: Clock, timeZone: TimeZone): LocalDate;
+    static todayIn(self: Clock, timeZone: TimeZone): LocalDate;
 }

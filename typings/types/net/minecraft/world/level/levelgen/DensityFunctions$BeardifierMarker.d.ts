@@ -1,6 +1,5 @@
 import type { Codec } from '../../../../../com/mojang/serialization/Codec.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { KeyDispatchDataCodec } from '../../../../../net/minecraft/util/KeyDispatchDataCodec.d.ts'
 import type { DensityFunction } from '../../../../../net/minecraft/world/level/levelgen/DensityFunction.d.ts'
@@ -11,7 +10,7 @@ import type { DensityFunctions$BeardifierOrMarker } from '../../../../../net/min
 export class DensityFunctions$BeardifierMarker extends Enum<DensityFunctions$BeardifierMarker> implements DensityFunctions$BeardifierOrMarker {
     static CODEC: Codec<DensityFunction>;
     static INSTANCE: DensityFunctions$BeardifierMarker;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DensityFunctions$BeardifierMarker;
     static values(): DensityFunctions$BeardifierMarker[];
     private constructor()

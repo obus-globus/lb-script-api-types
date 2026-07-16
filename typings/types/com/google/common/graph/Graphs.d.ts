@@ -9,20 +9,20 @@ import type { Network } from '../../../../com/google/common/graph/Network.d.ts'
 import type { ValueGraph } from '../../../../com/google/common/graph/ValueGraph.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Graphs extends GraphsBridgeMethods {
-    static copyOf(paramnetwork: Network<Object, Object>): MutableNetwork<Object, Object>;
-    static copyOf(paramgraph: ValueGraph<Object, Object>): MutableValueGraph<Object, Object>;
-    static copyOf(paramgraph: Graph<Object>): MutableGraph<Object>;
-    static hasCycle(paramgraph: Graph<Object>): boolean;
+    static copyOf<N extends unknown, E extends unknown>(paramnetwork: Network<N, E>): MutableNetwork<N, E>;
+    static copyOf<N extends unknown, V extends unknown>(paramgraph: ValueGraph<N, V>): MutableValueGraph<N, V>;
+    static copyOf<N extends unknown>(paramgraph: Graph<N>): MutableGraph<N>;
+    static hasCycle<N extends unknown>(paramgraph: Graph<N>): boolean;
     static hasCycle(paramnetwork: Network<Object, Object>): boolean;
-    static inducedSubgraph(paramnetwork: Network<Object, Object>, paramnodes: (Object | null)[]): MutableNetwork<Object, Object>;
-    static inducedSubgraph(paramgraph: ValueGraph<Object, Object>, paramnodes: (Object | null)[]): MutableValueGraph<Object, Object>;
-    static inducedSubgraph(paramgraph: Graph<Object>, paramnodes: (Object | null)[]): MutableGraph<Object>;
-    static reachableNodes(paramgraph: Graph<Object>, paramnode: Object | null): (Object | null)[];
-    static transitiveClosure(paramgraph: Graph<Object>): Graph<Object>;
-    static transitiveClosure(paramgraph: Graph<Object>): ImmutableGraph<Object>;
-    static transitiveClosure(paramgraph: Graph<Object>, paramstrategy: Graphs$TransitiveClosureSelfLoopStrategy): ImmutableGraph<Object>;
-    static transpose(paramnetwork: Network<Object, Object>): Network<Object, Object>;
-    static transpose(paramgraph: ValueGraph<Object, Object>): ValueGraph<Object, Object>;
-    static transpose(paramgraph: Graph<Object>): Graph<Object>;
+    static inducedSubgraph<N extends unknown, E extends unknown>(paramnetwork: Network<N, E>, paramnodes: N[]): MutableNetwork<N, E>;
+    static inducedSubgraph<N extends unknown, V extends unknown>(paramgraph: ValueGraph<N, V>, paramnodes: N[]): MutableValueGraph<N, V>;
+    static inducedSubgraph<N extends unknown>(paramgraph: Graph<N>, paramnodes: N[]): MutableGraph<N>;
+    static reachableNodes<N extends unknown>(paramgraph: Graph<N>, paramnode: N): N[];
+    static transitiveClosure<N extends unknown>(paramgraph: Graph<N>): Graph<N>;
+    static transitiveClosure<N extends unknown>(paramgraph: Graph<N>): ImmutableGraph<N>;
+    static transitiveClosure<N extends unknown>(paramgraph: Graph<N>, paramstrategy: Graphs$TransitiveClosureSelfLoopStrategy): ImmutableGraph<N>;
+    static transpose<N extends unknown, E extends unknown>(paramnetwork: Network<N, E>): Network<N, E>;
+    static transpose<N extends unknown, V extends unknown>(paramgraph: ValueGraph<N, V>): ValueGraph<N, V>;
+    static transpose<N extends unknown>(paramgraph: Graph<N>): Graph<N>;
     private constructor()
 }

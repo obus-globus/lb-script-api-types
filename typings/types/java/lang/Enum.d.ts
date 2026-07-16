@@ -5,7 +5,7 @@ import type { Optional } from '../../java/util/Optional.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Comparable } from '../../java/lang/Comparable.d.ts'
 export abstract class Enum<E extends Enum<E>> extends Object implements Serializable, Comparable<E> {
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     constructor(name: string, ordinal: number)
     /*not mapped: */ name(): string;
     /*not mapped: */ ordinal(): number;

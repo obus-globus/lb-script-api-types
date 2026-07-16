@@ -4,7 +4,7 @@ import type { Minecraft } from '../../../../../../../../net/minecraft/client/Min
 import type { DebugRenderer$SimpleDebugRenderer } from '../../../../../../../../net/minecraft/client/renderer/debug/DebugRenderer$SimpleDebugRenderer.d.ts'
 import type { DebugSubscription } from '../../../../../../../../net/minecraft/util/debug/DebugSubscription.d.ts'
 export class DebugRendererRegistry extends Object {
-    static register(paramarg0: DebugSubscription<Object>, paramarg1: (param0: Minecraft) => DebugRenderer$SimpleDebugRenderer): void;
-    static register(paramarg0: DebugSubscription<Object>, paramarg1: (param0: Minecraft) => DebugRenderer$SimpleDebugRenderer, paramarg2: boolean): void;
+    static register<T extends unknown>(paramarg0: DebugSubscription<T>, paramarg1: (param0: Minecraft) => DebugRenderer$SimpleDebugRenderer): void;
+    static register<T extends unknown>(paramarg0: DebugSubscription<T>, paramarg1: (param0: Minecraft) => DebugRenderer$SimpleDebugRenderer, paramarg2: boolean): void;
     constructor()
 }

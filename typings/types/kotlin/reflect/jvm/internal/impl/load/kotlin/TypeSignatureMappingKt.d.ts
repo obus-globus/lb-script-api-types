@@ -4,6 +4,6 @@ import type { TypeMappingMode } from '../../../../../../../kotlin/reflect/jvm/in
 import type { TypeSystemCommonBackendContext } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/TypeSystemCommonBackendContext.d.ts'
 import type { KotlinTypeMarker } from '../../../../../../../kotlin/reflect/jvm/internal/impl/types/model/KotlinTypeMarker.d.ts'
 export class TypeSignatureMappingKt extends Object {
-    static boxTypeIfNeeded(paramarg0: JvmTypeFactory<Object>, paramarg1: Object | null, paramarg2: boolean): Object | null;
-    static mapBuiltInType(paramarg0: TypeSystemCommonBackendContext, paramarg1: KotlinTypeMarker, paramarg2: JvmTypeFactory<Object>, paramarg3: TypeMappingMode): Object | null;
+    static boxTypeIfNeeded<T extends unknown>(paramarg0: JvmTypeFactory<T>, paramarg1: T, paramarg2: boolean): T;
+    static mapBuiltInType<T extends unknown>(paramarg0: TypeSystemCommonBackendContext, paramarg1: KotlinTypeMarker, paramarg2: JvmTypeFactory<T>, paramarg3: TypeMappingMode): T;
 }

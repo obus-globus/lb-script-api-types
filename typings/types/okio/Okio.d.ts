@@ -22,28 +22,28 @@ import type { Sink } from '../okio/Sink.d.ts'
 import type { Socket as Socket_2 } from '../okio/Socket.d.ts'
 import type { Source } from '../okio/Source.d.ts'
 export class Okio extends Object {
-    static appendingSink(paramarg0: File): Sink;
-    static asResourceFileSystem(paramarg0: ClassLoader): FileSystem;
+    static appendingSink(self: File): Sink;
+    static asResourceFileSystem(self: ClassLoader): FileSystem;
     static blackhole(): Sink;
-    static buffer(paramarg0: Sink): BufferedSink;
-    static buffer(paramarg0: Source): BufferedSource;
-    static cipherSink(paramarg0: Sink, paramarg1: Cipher): CipherSink;
-    static cipherSource(paramarg0: Source, paramarg1: Cipher): CipherSource;
-    static hashingSink(paramarg0: Sink, paramarg1: MessageDigest): HashingSink;
-    static hashingSink(paramarg0: Sink, paramarg1: Mac): HashingSink;
-    static hashingSource(paramarg0: Source, paramarg1: MessageDigest): HashingSource;
-    static hashingSource(paramarg0: Source, paramarg1: Mac): HashingSource;
-    static inMemorySocketPair(paramarg0: number): Socket_2[];
-    static openZip(paramarg0: FileSystem, paramarg1: Path_2): FileSystem;
+    static buffer(self: Sink): BufferedSink;
+    static buffer(self: Source): BufferedSource;
+    static cipherSink(self: Sink, cipher: Cipher): CipherSink;
+    static cipherSource(self: Source, cipher: Cipher): CipherSource;
+    static hashingSink(self: Sink, digest: MessageDigest): HashingSink;
+    static hashingSink(self: Sink, mac: Mac): HashingSink;
+    static hashingSource(self: Source, digest: MessageDigest): HashingSource;
+    static hashingSource(self: Source, mac: Mac): HashingSource;
+    static inMemorySocketPair(maxBufferSize: number): Socket_2[];
+    static openZip(self: FileSystem, zipPath: Path_2): FileSystem;
     static sink(paramarg0: File): Sink;
-    static sink(paramarg0: File, paramarg1: boolean): Sink;
-    static sink(paramarg0: OutputStream): Sink;
-    static sink(paramarg0: Socket): Sink;
-    static sink(paramarg0: Path, ...paramarg1: OpenOption[]): Sink;
-    static socket(paramarg0: Socket): Socket_2;
-    static source(paramarg0: File): Source;
-    static source(paramarg0: InputStream): Source;
-    static source(paramarg0: Socket): Source;
-    static source(paramarg0: Path, ...paramarg1: OpenOption[]): Source;
-    static use(paramarg0: Closeable | null, paramarg1: (param0: Object) => Object | null): Object | null;
+    static sink(self: File, append: boolean): Sink;
+    static sink(self: OutputStream): Sink;
+    static sink(self: Socket): Sink;
+    static sink(self: Path, ...options: OpenOption[]): Sink;
+    static socket(self: Socket): Socket_2;
+    static source(self: File): Source;
+    static source(self: InputStream): Source;
+    static source(self: Socket): Source;
+    static source(self: Path, ...options: OpenOption[]): Source;
+    static use<R extends unknown, T extends Closeable>(self: T, block: (param0: T) => R): R;
 }

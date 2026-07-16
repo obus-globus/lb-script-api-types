@@ -12,7 +12,7 @@ import type { ServerGamePacketListener } from '../../../../../net/minecraft/netw
 import type { TestBlockMode } from '../../../../../net/minecraft/world/level/block/state/properties/TestBlockMode.d.ts'
 export class ServerboundSetTestBlockPacket extends Record implements Packet<ServerGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ServerboundSetTestBlockPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(position: BlockPos, mode: TestBlockMode, message: string)
     // private message: string;
     // private mode: TestBlockMode;

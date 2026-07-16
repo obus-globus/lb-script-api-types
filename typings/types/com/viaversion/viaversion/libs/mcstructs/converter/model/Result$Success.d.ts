@@ -5,12 +5,12 @@ import type { Function } from '../../../../../../../java/util/function/Function.
 import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../../../../../java/lang/Throwable.d.ts'
 export class Result$Success<T extends unknown> extends Object implements Result<T> {
-    static error(paramarg0: string): Result<Object>;
-    static error(paramarg0: Throwable): Result<Object>;
-    static mergeErrors(paramarg0: string, paramarg1: Result<Object>[]): Result<Object>;
-    static success(paramarg0: Object | null): Result<Object>;
-    static unexpected(paramarg0: Object, ...paramarg1: Class<Object>[]): Result<Object>;
-    static unexpected(paramarg0: Object, ...paramarg1: string[]): Result<Object>;
+    static error<T extends unknown>(paramarg0: string): Result<T>;
+    static error<T extends unknown>(paramarg0: Throwable): Result<T>;
+    static mergeErrors<T extends unknown>(paramarg0: string, paramarg1: Result<Object>[]): Result<T>;
+    static success<T extends unknown>(paramarg0: T): Result<T>;
+    static unexpected<T extends unknown>(paramarg0: Object, ...paramarg1: Class<Object>[]): Result<T>;
+    static unexpected<T extends unknown>(paramarg0: Object, ...paramarg1: string[]): Result<T>;
     constructor(arg0: Object, arg1: any)
     // private result: T;
     canEqual(arg0: Object): boolean;

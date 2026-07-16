@@ -9,10 +9,10 @@ import type { Date } from '../../../../java/util/Date.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Parameters extends Object {
     static bigInt(paramarg0: string, paramarg1: string): ParameterBuilder<BigInteger>;
-    static builder(paramarg0: Class<Object>): ParameterBuilder<Object>;
+    static builder<T extends unknown>(paramarg0: Class<T>): ParameterBuilder<T>;
     static bytes(paramarg0: string, paramarg1: string): ParameterBuilder<number[]>;
     static bytesEquals(paramarg0: BigInteger, paramarg1: BigInteger): boolean;
-    static equals(paramarg0: ParameterReadable, paramarg1: Object, paramarg2: Parameter<Object>): boolean;
+    static equals<T extends unknown>(paramarg0: ParameterReadable, paramarg1: Object, paramarg2: Parameter<T>): boolean;
     static registry(...paramarg0: Parameter<Object>[]): { [key: string]: Parameter<Object> };
     static registry(paramarg0: { [key: string]: Parameter<Object> }, ...paramarg1: Parameter<Object>[]): { [key: string]: Parameter<Object> };
     static registry(paramarg0: Parameter<Object>[]): { [key: string]: Parameter<Object> };

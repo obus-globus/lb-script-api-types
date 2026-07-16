@@ -43,7 +43,7 @@ export class GameTestServer extends MinecraftServer {
     static getTestsForSelection(paramregistries: RegistryAccess, paramselection: string): Stream<Holder$Reference<GameTestInstance>>;
     static isNonRecoverable(paramt: Throwable): boolean;
     static relayDelayCrash(paramcrashReport: CrashReport): void;
-    static spin(paramfactory: (param0: Thread) => MinecraftServer | null): MinecraftServer | null;
+    static spin<S extends MinecraftServer>(paramfactory: (param0: Thread) => S): S;
     private constructor(serverThread: Thread, levelStorageSource: LevelStorageSource$LevelStorageAccess, packRepository: PackRepository, worldStem: WorldStem, testSelection: Optional<string>, verify: boolean, repeatCount: number)
     // private repeatCount: number;
     // private sampleLogger: LocalSampleLogger;

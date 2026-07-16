@@ -4,42 +4,44 @@ import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class Sets extends Object {
-    static cartesianProduct(paramsets: (Object | null)[][]): (Object | null)[][];
-    static cartesianProduct(...paramsets: (Object | null)[][]): (Object | null)[][];
-    static combinations(paramset: (Object | null)[], paramsize: number): (Object | null)[][];
-    static complementOf(paramcollection: (Object | null)[]): (Object | null)[];
-    static complementOf(paramcollection: (Object | null)[], paramtype: Class<Object>): (Object | null)[];
-    static difference(paramset1: (Object | null)[], paramset2: Object[]): (Object | null)[];
-    static filter(paramunfiltered: (Object | null)[], parampredicate: (param0: Object) => boolean): (Object | null)[];
-    static immutableEnumSet(paramanElement: Object | null, ...paramotherElements: (Object | null)[]): (Object | null)[];
-    static immutableEnumSet(paramelements: (Object | null)[]): (Object | null)[];
-    static intersection(paramset1: (Object | null)[], paramset2: Object[]): (Object | null)[];
-    static newConcurrentHashSet(): (Object | null)[];
-    static newConcurrentHashSet(paramelements: (Object | null)[]): (Object | null)[];
-    static newCopyOnWriteArraySet(): (Object | null)[];
-    static newCopyOnWriteArraySet(paramelements: (Object | null)[]): (Object | null)[];
-    static newEnumSet(paramiterable: (Object | null)[], paramelementType: Class<Object>): (Object | null)[];
-    static newHashSet(): (Object | null)[];
-    static newHashSet(...paramelements: (Object | null)[]): (Object | null)[];
-    static newHashSet(paramelements: (Object | null)[]): (Object | null)[];
-    static newHashSet(paramelements: Iterator<Object>): (Object | null)[];
-    static newHashSetWithExpectedSize(paramexpectedSize: number): (Object | null)[];
-    static newIdentityHashSet(): (Object | null)[];
-    static newLinkedHashSet(): (Object | null)[];
-    static newLinkedHashSet(paramelements: (Object | null)[]): (Object | null)[];
-    static newLinkedHashSetWithExpectedSize(paramexpectedSize: number): (Object | null)[];
-    static newSetFromMap(parammap: Map<Object | null, boolean>): (Object | null)[];
-    static newTreeSet(): (Object | null)[];
-    static newTreeSet(paramelements: (Object | null)[]): (Object | null)[];
-    static newTreeSet(paramcomparator: (param0: Object, param1: Object) => number): (Object | null)[];
-    static powerSet(paramset: (Object | null)[]): (Object | null)[][];
-    static subSet(paramset: (Object | null)[], paramrange: Range<any>): (Object | null)[];
-    static symmetricDifference(paramset1: (Object | null)[], paramset2: (Object | null)[]): (Object | null)[];
-    static synchronizedNavigableSet(paramnavigableSet: (Object | null)[]): (Object | null)[];
-    static toImmutableEnumSet(): Collector<Object, Object, (Object | null)[]>;
-    static union(paramset1: (Object | null)[], paramset2: (Object | null)[]): (Object | null)[];
-    static unmodifiableNavigableSet(paramset: (Object | null)[]): (Object | null)[];
+    static cartesianProduct<B extends unknown>(paramsets: B[][]): B[][];
+    static cartesianProduct<B extends unknown>(...paramsets: B[][]): B[][];
+    static combinations<E extends unknown>(paramset: E[], paramsize: number): E[][];
+    static complementOf<E extends Enum<E>>(paramcollection: E[]): E[];
+    static complementOf<E extends Enum<E>>(paramcollection: E[], paramtype: Class<E>): E[];
+    static difference<E extends unknown>(paramset1: E[], paramset2: Object[]): E[];
+    static filter<E extends unknown>(paramunfiltered: E[], parampredicate: (param0: Object) => boolean): E[];
+    static immutableEnumSet<E extends Enum<E>>(paramanElement: E, ...paramotherElements: E[]): E[];
+    static immutableEnumSet<E extends Enum<E>>(paramelements: E[]): E[];
+    static intersection<E extends unknown>(paramset1: E[], paramset2: Object[]): E[];
+    static newConcurrentHashSet<E extends unknown>(): E[];
+    static newConcurrentHashSet<E extends unknown>(paramelements: E[]): E[];
+    static newCopyOnWriteArraySet<E extends unknown>(): E[];
+    static newCopyOnWriteArraySet<E extends unknown>(paramelements: E[]): E[];
+    static newEnumSet<E extends Enum<E>>(paramiterable: E[], paramelementType: Class<E>): E[];
+    static newHashSet<E extends unknown>(): E[];
+    static newHashSet<E extends unknown>(...paramelements: E[]): E[];
+    static newHashSet<E extends unknown>(paramelements: E[]): E[];
+    static newHashSet<E extends unknown>(paramelements: Iterator<E>): E[];
+    static newHashSetWithExpectedSize<E extends unknown>(paramexpectedSize: number): E[];
+    static newIdentityHashSet<E extends unknown>(): E[];
+    static newLinkedHashSet<E extends unknown>(): E[];
+    static newLinkedHashSet<E extends unknown>(paramelements: E[]): E[];
+    static newLinkedHashSetWithExpectedSize<E extends unknown>(paramexpectedSize: number): E[];
+    static newSetFromMap<E extends unknown>(parammap: Map<E, boolean>): E[];
+    static newTreeSet<E extends Comparable<Object>>(): E[];
+    static newTreeSet<E extends Comparable<Object>>(paramelements: E[]): E[];
+    static newTreeSet<E extends unknown>(paramcomparator: (param0: Object, param1: Object) => number): E[];
+    static powerSet<E extends unknown>(paramset: E[]): E[][];
+    static subSet<K extends Comparable<Object>>(paramset: K[], paramrange: Range<K>): K[];
+    static symmetricDifference<E extends unknown>(paramset1: E[], paramset2: E[]): E[];
+    static synchronizedNavigableSet<E extends unknown>(paramnavigableSet: E[]): E[];
+    static toImmutableEnumSet<E extends Enum<E>>(): Collector<E, Object, E[]>;
+    static union<E extends unknown>(paramset1: E[], paramset2: E[]): E[];
+    static unmodifiableNavigableSet<E extends unknown>(paramset: E[]): E[];
     private constructor()
 }

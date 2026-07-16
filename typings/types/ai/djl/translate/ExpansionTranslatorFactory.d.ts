@@ -15,7 +15,7 @@ export abstract class ExpansionTranslatorFactory<IbaseT extends unknown, ObaseT 
     buildBaseTranslator(arg0: Model, arg1: { [key: string]: Object | null }): Translator<IbaseT, ObaseT>;
     getBaseInputType(): Class<IbaseT>;
     getBaseOutputType(): Class<ObaseT>;
-    getExpansions(): Map<Pair<Type, Type>, (param0: Object | null) => Object | null>;
+    getExpansions(): Map<Pair<Type, Type>, (param0: Translator<IbaseT, ObaseT>) => Translator<Object, Object>>;
     getPostprocessorExpansions(): Map<Type, (param0: PostProcessor<ObaseT>) => PostProcessor<Object>>;
     getPreprocessorExpansions(): Map<Type, (param0: PreProcessor<IbaseT>) => PreProcessor<Object>>;
     getSupportedTypes(): Pair<Type, Type>[];

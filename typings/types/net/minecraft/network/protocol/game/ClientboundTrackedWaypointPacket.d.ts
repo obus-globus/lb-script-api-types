@@ -20,7 +20,7 @@ export class ClientboundTrackedWaypointPacket extends Record implements Packet<C
     static addWaypointAzimuth(paramidentifier: UUID, paramicon: Waypoint$Icon, paramangle: number): ClientboundTrackedWaypointPacket;
     static addWaypointChunk(paramidentifier: UUID, paramicon: Waypoint$Icon, paramchunk: ChunkPos): ClientboundTrackedWaypointPacket;
     static addWaypointPosition(paramidentifier: UUID, paramicon: Waypoint$Icon, paramposition: Vec3i): ClientboundTrackedWaypointPacket;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static removeWaypoint(paramidentifier: UUID): ClientboundTrackedWaypointPacket;
     static updateWaypointAzimuth(paramidentifier: UUID, paramicon: Waypoint$Icon, paramangle: number): ClientboundTrackedWaypointPacket;
     static updateWaypointChunk(paramidentifier: UUID, paramicon: Waypoint$Icon, paramchunk: ChunkPos): ClientboundTrackedWaypointPacket;

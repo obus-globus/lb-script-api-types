@@ -3,8 +3,8 @@ import type { DFS$Neighbors } from '../../../../../../kotlin/reflect/jvm/interna
 import type { DFS$NodeHandler } from '../../../../../../kotlin/reflect/jvm/internal/impl/utils/DFS$NodeHandler.d.ts'
 import type { DFS$Visited } from '../../../../../../kotlin/reflect/jvm/internal/impl/utils/DFS$Visited.d.ts'
 export class DFS extends Object {
-    static dfs(paramarg0: (Object | null)[], paramarg1: DFS$Neighbors<Object>, paramarg2: DFS$NodeHandler<Object, Object>): Object | null;
-    static dfs(paramarg0: (Object | null)[], paramarg1: DFS$Neighbors<Object>, paramarg2: DFS$Visited<Object>, paramarg3: DFS$NodeHandler<Object, Object>): Object | null;
-    static doDfs(paramarg0: Object | null, paramarg1: DFS$Neighbors<Object>, paramarg2: DFS$Visited<Object>, paramarg3: DFS$NodeHandler<Object, Object>): void;
-    static ifAny(paramarg0: (Object | null)[], paramarg1: DFS$Neighbors<Object>, paramarg2: (param0: Object | null) => boolean): boolean;
+    static dfs<N extends unknown, R extends unknown>(paramarg0: N[], paramarg1: DFS$Neighbors<N>, paramarg2: DFS$NodeHandler<N, R>): R;
+    static dfs<N extends unknown, R extends unknown>(paramarg0: N[], paramarg1: DFS$Neighbors<N>, paramarg2: DFS$Visited<N>, paramarg3: DFS$NodeHandler<N, R>): R;
+    static doDfs<N extends unknown>(paramarg0: N, paramarg1: DFS$Neighbors<N>, paramarg2: DFS$Visited<N>, paramarg3: DFS$NodeHandler<N, Object>): void;
+    static ifAny<N extends unknown>(paramarg0: N[], paramarg1: DFS$Neighbors<N>, paramarg2: (param0: N) => boolean): boolean;
 }

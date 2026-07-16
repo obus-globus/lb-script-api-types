@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class MinecraftEventing_POIBlockInteractionType extends Enum<MinecraftEventing_POIBlockInteractionType> {
     static AddDye: MinecraftEventing_POIBlockInteractionType;
@@ -32,7 +31,7 @@ export class MinecraftEventing_POIBlockInteractionType extends Enum<MinecraftEve
     static getByName(paramarg0: string, paramarg1: MinecraftEventing_POIBlockInteractionType): MinecraftEventing_POIBlockInteractionType;
     static getByValue(paramarg0: number): MinecraftEventing_POIBlockInteractionType;
     static getByValue(paramarg0: number, paramarg1: MinecraftEventing_POIBlockInteractionType): MinecraftEventing_POIBlockInteractionType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MinecraftEventing_POIBlockInteractionType;
     static values(): MinecraftEventing_POIBlockInteractionType[];
     private constructor(arg2: number)

@@ -4,7 +4,7 @@ import type { Level } from '../../../../java/util/logging/Level.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { AbstractPolyglotImpl$LogHandler } from '../../../../org/graalvm/polyglot/impl/AbstractPolyglotImpl$LogHandler.d.ts'
 export class PolyglotLoggers$EngineLoggerProvider extends Object implements Function<string, TruffleLogger> {
-    static identity(): (param0: Object | null) => Object | null;
+    static identity<T extends unknown>(): (param0: T) => T;
     constructor(logHandler: AbstractPolyglotImpl$LogHandler, logLevels: { [key: string]: Level })
     // private logHandler: AbstractPolyglotImpl$LogHandler;
     // private logLevels: { [key: string]: Level };

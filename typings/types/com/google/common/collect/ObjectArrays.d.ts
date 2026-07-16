@@ -1,10 +1,10 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class ObjectArrays extends Object {
-    static concat(paramelement: Object | null, paramarray: (Object | null)[]): (Object | null)[];
-    static concat(paramarray: (Object | null)[], paramelement: Object | null): (Object | null)[];
-    static concat(paramfirst: (Object | null)[], paramsecond: (Object | null)[], paramtype: Class<Object>): (Object | null)[];
-    static newArray(paramreference: (Object | null)[], paramlength: number): (Object | null)[];
-    static newArray(paramtype: Class<Object>, paramlength: number): (Object | null)[];
+    static concat<T extends unknown>(paramelement: T, paramarray: T[]): T[];
+    static concat<T extends unknown>(paramarray: T[], paramelement: T): T[];
+    static concat<T extends unknown>(paramfirst: T[], paramsecond: T[], paramtype: Class<T>): T[];
+    static newArray<T extends unknown>(paramreference: T[], paramlength: number): T[];
+    static newArray<T extends unknown>(paramtype: Class<T>, paramlength: number): T[];
     private constructor()
 }

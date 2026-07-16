@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ItemUseInventoryTransaction_PredictedResult extends Enum<ItemUseInventoryTransaction_PredictedResult> {
     static Failure: ItemUseInventoryTransaction_PredictedResult;
@@ -8,7 +7,7 @@ export class ItemUseInventoryTransaction_PredictedResult extends Enum<ItemUseInv
     static getByName(paramarg0: string, paramarg1: ItemUseInventoryTransaction_PredictedResult): ItemUseInventoryTransaction_PredictedResult;
     static getByValue(paramarg0: number): ItemUseInventoryTransaction_PredictedResult;
     static getByValue(paramarg0: number, paramarg1: ItemUseInventoryTransaction_PredictedResult): ItemUseInventoryTransaction_PredictedResult;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ItemUseInventoryTransaction_PredictedResult;
     static values(): ItemUseInventoryTransaction_PredictedResult[];
     private constructor(arg2: number)

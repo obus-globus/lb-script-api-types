@@ -1,12 +1,11 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class NativeImage$Format extends Enum<NativeImage$Format> {
     static LUMINANCE: NativeImage$Format;
     static LUMINANCE_ALPHA: NativeImage$Format;
     static RGB: NativeImage$Format;
     static RGBA: NativeImage$Format;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): NativeImage$Format;
     static values(): NativeImage$Format[];
     private constructor(components: number, hasRed: boolean, hasGreen: boolean, hasBlue: boolean, hasLuminance: boolean, hasAlpha: boolean, redOffset: number, greenOffset: number, blueOffset: number, luminanceOffset: number, alphaOffset: number, supportedByStb: boolean)

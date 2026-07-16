@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ControlScheme_Scheme extends Enum<ControlScheme_Scheme> {
     static Camera_relative: ControlScheme_Scheme;
@@ -11,7 +10,7 @@ export class ControlScheme_Scheme extends Enum<ControlScheme_Scheme> {
     static getByName(paramarg0: string, paramarg1: ControlScheme_Scheme): ControlScheme_Scheme;
     static getByValue(paramarg0: number): ControlScheme_Scheme;
     static getByValue(paramarg0: number, paramarg1: ControlScheme_Scheme): ControlScheme_Scheme;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ControlScheme_Scheme;
     static values(): ControlScheme_Scheme[];
     private constructor(arg2: number)

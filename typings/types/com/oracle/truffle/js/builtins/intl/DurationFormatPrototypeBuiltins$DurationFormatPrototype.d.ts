@@ -11,7 +11,7 @@ export class DurationFormatPrototypeBuiltins$DurationFormatPrototype extends Enu
     static formatToParts: DurationFormatPrototypeBuiltins$DurationFormatPrototype;
     static resolvedOptions: DurationFormatPrototypeBuiltins$DurationFormatPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DurationFormatPrototypeBuiltins$DurationFormatPrototype;
     static values(): DurationFormatPrototypeBuiltins$DurationFormatPrototype[];
     private constructor(length: number)

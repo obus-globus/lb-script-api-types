@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class BossStyle extends Enum<BossStyle> {
     static SEGMENTED_10: BossStyle;
@@ -7,7 +6,7 @@ export class BossStyle extends Enum<BossStyle> {
     static SEGMENTED_20: BossStyle;
     static SEGMENTED_6: BossStyle;
     static SOLID: BossStyle;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BossStyle;
     static values(): BossStyle[];
     private constructor(arg2: number)

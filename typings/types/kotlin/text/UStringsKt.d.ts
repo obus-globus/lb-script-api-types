@@ -4,24 +4,24 @@ import type { UInt } from '../../kotlin/UInt.d.ts'
 import type { ULong } from '../../kotlin/ULong.d.ts'
 import type { UShort } from '../../kotlin/UShort.d.ts'
 export class UStringsKt extends Object {
-// (invalid TS: name contains '-')     static toString-JSWoG40(paramarg0: number, paramarg1: number): string;
-// (invalid TS: name contains '-')     static toString-LxnNnR4(paramarg0: number, paramarg1: number): string;
-// (invalid TS: name contains '-')     static toString-V7xB4Y4(paramarg0: number, paramarg1: number): string;
-// (invalid TS: name contains '-')     static toString-olVBNx4(paramarg0: number, paramarg1: number): string;
-    static toUByte(paramarg0: string): number;
-    static toUByte(paramarg0: string, paramarg1: number): number;
-    static toUByteOrNull(paramarg0: string): UByte;
-    static toUByteOrNull(paramarg0: string, paramarg1: number): UByte;
-    static toUInt(paramarg0: string): number;
-    static toUInt(paramarg0: string, paramarg1: number): number;
-    static toUIntOrNull(paramarg0: string): UInt;
-    static toUIntOrNull(paramarg0: string, paramarg1: number): UInt;
-    static toULong(paramarg0: string): number;
-    static toULong(paramarg0: string, paramarg1: number): number;
-    static toULongOrNull(paramarg0: string): ULong;
-    static toULongOrNull(paramarg0: string, paramarg1: number): ULong;
-    static toUShort(paramarg0: string): number;
-    static toUShort(paramarg0: string, paramarg1: number): number;
-    static toUShortOrNull(paramarg0: string): UShort;
-    static toUShortOrNull(paramarg0: string, paramarg1: number): UShort;
+// (invalid TS: name contains '-')     static toString-JSWoG40(self: ULong, radix: number): string;
+// (invalid TS: name contains '-')     static toString-LxnNnR4(self: UByte, radix: number): string;
+// (invalid TS: name contains '-')     static toString-V7xB4Y4(self: UInt, radix: number): string;
+// (invalid TS: name contains '-')     static toString-olVBNx4(self: UShort, radix: number): string;
+    static toUByte(self: string): UByte;
+    static toUByte(self: string, radix: number): UByte;
+    static toUByteOrNull(self: string): UByte | null;
+    static toUByteOrNull(self: string, radix: number): UByte | null;
+    static toUInt(self: string): UInt;
+    static toUInt(self: string, radix: number): UInt;
+    static toUIntOrNull(self: string): UInt | null;
+    static toUIntOrNull(self: string, radix: number): UInt | null;
+    static toULong(self: string): ULong;
+    static toULong(self: string, radix: number): ULong;
+    static toULongOrNull(self: string): ULong | null;
+    static toULongOrNull(self: string, radix: number): ULong | null;
+    static toUShort(self: string): UShort;
+    static toUShort(self: string, radix: number): UShort;
+    static toUShortOrNull(self: string): UShort | null;
+    static toUShortOrNull(self: string, radix: number): UShort | null;
 }

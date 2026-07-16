@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { EnvType } from '../../../../../../net/fabricmc/api/EnvType.d.ts'
 import type { LibClassifier$LibraryType } from '../../../../../../net/fabricmc/loader/impl/game/LibClassifier$LibraryType.d.ts'
@@ -20,7 +19,7 @@ export class McLibrary extends Enum<McLibrary> implements LibClassifier$LibraryT
     static REALMS: McLibrary;
     static SLF4J_API: McLibrary;
     static SLF4J_CORE: McLibrary;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): McLibrary;
     static values(): McLibrary[];
     private constructor(...arg2: string[])

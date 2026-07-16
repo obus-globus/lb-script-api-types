@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { InteractionHand } from '../../../../net/minecraft/world/InteractionHand.d.ts'
 export class ItemInHandRenderer$HandRenderSelection extends Enum<ItemInHandRenderer$HandRenderSelection> {
@@ -7,7 +6,7 @@ export class ItemInHandRenderer$HandRenderSelection extends Enum<ItemInHandRende
     static RENDER_MAIN_HAND_ONLY: ItemInHandRenderer$HandRenderSelection;
     static RENDER_OFF_HAND_ONLY: ItemInHandRenderer$HandRenderSelection;
     static onlyForHand(paramhand: InteractionHand): ItemInHandRenderer$HandRenderSelection;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ItemInHandRenderer$HandRenderSelection;
     static values(): ItemInHandRenderer$HandRenderSelection[];
     private constructor(renderMainHand: boolean, renderOffHand: boolean)

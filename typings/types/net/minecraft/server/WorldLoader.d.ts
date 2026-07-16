@@ -11,6 +11,6 @@ import type { WorldLoader$ResultFactory } from '../../../net/minecraft/server/Wo
 import type { WorldLoader$WorldDataSupplier } from '../../../net/minecraft/server/WorldLoader$WorldDataSupplier.d.ts'
 import type { CloseableResourceManager } from '../../../net/minecraft/server/packs/resources/CloseableResourceManager.d.ts'
 export class WorldLoader extends Object {
-    static load(paramconfig: WorldLoader$InitConfig, paramworldDataSupplier: (param0: WorldLoader$DataLoadContext) => WorldLoader$DataLoadOutput<Object>, paramresultFactory: (param0: CloseableResourceManager, param1: ReloadableServerResources, param2: LayeredRegistryAccess<RegistryLayer>, param3: Object | null) => Object | null, parambackgroundExecutor: Executor, parammainThreadExecutor: Executor): CompletableFuture<Object>;
+    static load<D extends unknown, R extends unknown>(paramconfig: WorldLoader$InitConfig, paramworldDataSupplier: (param0: WorldLoader$DataLoadContext) => WorldLoader$DataLoadOutput<D>, paramresultFactory: (param0: CloseableResourceManager, param1: ReloadableServerResources, param2: LayeredRegistryAccess<RegistryLayer>, param3: D) => R, parambackgroundExecutor: Executor, parammainThreadExecutor: Executor): CompletableFuture<R>;
     constructor()
 }

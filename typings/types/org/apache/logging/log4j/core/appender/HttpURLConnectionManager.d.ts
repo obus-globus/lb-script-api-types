@@ -10,7 +10,7 @@ import type { Configuration } from '../../../../../../org/apache/logging/log4j/c
 import type { Property } from '../../../../../../org/apache/logging/log4j/core/config/Property.d.ts'
 import type { SslConfiguration } from '../../../../../../org/apache/logging/log4j/core/net/ssl/SslConfiguration.d.ts'
 export class HttpURLConnectionManager extends HttpManager {
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
     static hasManager(paramname: string): boolean;
     constructor(configuration: Configuration, loggerContext: LoggerContext, name: string, url: URL, method: string, connectTimeoutMillis: number, readTimeoutMillis: number, headers: Property[], sslConfiguration: SslConfiguration, verifyHostname: boolean)
     // private connectTimeoutMillis: number;

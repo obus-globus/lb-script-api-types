@@ -1,6 +1,5 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { VarHandle$AccessType } from '../../../java/lang/invoke/VarHandle$AccessType.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class VarHandle$AccessMode extends Enum<VarHandle$AccessMode> {
     static COMPARE_AND_EXCHANGE: VarHandle$AccessMode;
@@ -35,7 +34,7 @@ export class VarHandle$AccessMode extends Enum<VarHandle$AccessMode> {
     static WEAK_COMPARE_AND_SET_PLAIN: VarHandle$AccessMode;
     static WEAK_COMPARE_AND_SET_RELEASE: VarHandle$AccessMode;
     static valueFromMethodName(paramarg0: string): VarHandle$AccessMode;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): VarHandle$AccessMode;
     static values(): VarHandle$AccessMode[];
     private constructor(arg2: string, arg3: VarHandle$AccessType)

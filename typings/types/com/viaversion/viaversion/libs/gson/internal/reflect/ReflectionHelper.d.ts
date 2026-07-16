@@ -12,7 +12,7 @@ export class ReflectionHelper extends Object {
     static fieldToString(paramarg0: Field): string;
     static getAccessibleObjectDescription(paramarg0: AccessibleObject, paramarg1: boolean): string;
     static getAccessor(paramarg0: Class<Object>, paramarg1: Field): Method;
-    static getCanonicalRecordConstructor(paramarg0: Class<Object>): Constructor<Object>;
+    static getCanonicalRecordConstructor<T extends unknown>(paramarg0: Class<T>): Constructor<T>;
     static getRecordComponentNames(paramarg0: Class<Object>): string[];
     static isAnonymousOrNonStaticLocal(paramarg0: Class<Object>): boolean;
     static isRecord(paramarg0: Class<Object>): boolean;

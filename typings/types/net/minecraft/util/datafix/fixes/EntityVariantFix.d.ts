@@ -9,7 +9,7 @@ import type { IntFunction } from '../../../../../java/util/function/IntFunction.
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { NamedEntityFix } from '../../../../../net/minecraft/util/datafix/fixes/NamedEntityFix.d.ts'
 export class EntityVariantFix extends NamedEntityFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
     constructor(outputSchema: Schema, name: string, type: DSL$TypeReference, entityName: string, fieldName: string, idConversions: (param0: number) => string)
     // private fieldName: string;
     // private idConversions: (param0: number) => string;

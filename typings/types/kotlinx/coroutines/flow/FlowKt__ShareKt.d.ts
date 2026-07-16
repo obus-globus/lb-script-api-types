@@ -8,12 +8,12 @@ import type { SharedFlow } from '../../../kotlinx/coroutines/flow/SharedFlow.d.t
 import type { SharingStarted } from '../../../kotlinx/coroutines/flow/SharingStarted.d.ts'
 import type { StateFlow } from '../../../kotlinx/coroutines/flow/StateFlow.d.ts'
 export class FlowKt__ShareKt extends Object {
-    static asFlow(paramarg0: SharedFlow<Object>): Flow<Object>;
-    static asSharedFlow(paramarg0: MutableSharedFlow<Object>): SharedFlow<Object>;
-    static asStateFlow(paramarg0: MutableStateFlow<Object>): StateFlow<Object>;
-    static onSubscription(paramarg0: SharedFlow<Object>, paramarg1: (param0: Object, param1: Object) => Object): SharedFlow<Object>;
-    static onSubscription(paramarg0: StateFlow<Object>, paramarg1: (param0: Object, param1: Object) => Object): StateFlow<Object>;
-    static shareIn(paramarg0: Flow<Object>, paramarg1: CoroutineScope, paramarg2: SharingStarted, paramarg3: number): SharedFlow<Object>;
-    static stateIn(paramarg0: Flow<Object>, paramarg1: CoroutineScope, paramarg2: Continuation<Object>): Object;
-    static stateIn(paramarg0: Flow<Object>, paramarg1: CoroutineScope, paramarg2: SharingStarted, paramarg3: Object | null): StateFlow<Object>;
+    static asFlow<T extends unknown>(paramarg0: SharedFlow<T>): Flow<T>;
+    static asSharedFlow<T extends unknown>(paramarg0: MutableSharedFlow<T>): SharedFlow<T>;
+    static asStateFlow<T extends unknown>(paramarg0: MutableStateFlow<T>): StateFlow<T>;
+    static onSubscription<T extends unknown>(paramarg0: SharedFlow<T>, paramarg1: (param0: Object, param1: Object) => Object): SharedFlow<T>;
+    static onSubscription<T extends unknown>(paramarg0: StateFlow<T>, paramarg1: (param0: Object, param1: Object) => Object): StateFlow<T>;
+    static shareIn<T extends unknown>(paramarg0: Flow<T>, paramarg1: CoroutineScope, paramarg2: SharingStarted, paramarg3: number): SharedFlow<T>;
+    static stateIn<T extends unknown>(paramarg0: Flow<T>, paramarg1: CoroutineScope, paramarg2: Continuation<Object>): Object;
+    static stateIn<T extends unknown>(paramarg0: Flow<T>, paramarg1: CoroutineScope, paramarg2: SharingStarted, paramarg3: T): StateFlow<T>;
 }

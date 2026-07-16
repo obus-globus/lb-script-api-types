@@ -13,7 +13,7 @@ import type { BlockEntity } from '../../../../../../net/minecraft/world/level/bl
 import type { BlockEntityType } from '../../../../../../net/minecraft/world/level/block/entity/BlockEntityType.d.ts'
 import type { BlockState } from '../../../../../../net/minecraft/world/level/block/state/BlockState.d.ts'
 export class BlockApiLookupImpl<A extends unknown, C extends unknown> extends Object implements BlockApiLookup<A, C> {
-    static get(paramarg0: Identifier, paramarg1: Class<Object>, paramarg2: Class<Object>): BlockApiLookup<Object, Object>;
+    static get<A extends unknown, C extends unknown>(paramarg0: Identifier, paramarg1: Class<A>, paramarg2: Class<C>): BlockApiLookup<A, C>;
     private constructor(arg0: Identifier, arg1: Class<Object>, arg2: Class<Object>)
     // private apiClass: Class<A>;
     // private contextClass: Class<C>;

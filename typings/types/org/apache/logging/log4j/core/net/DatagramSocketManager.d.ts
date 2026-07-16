@@ -8,8 +8,8 @@ import type { ManagerFactory } from '../../../../../../org/apache/logging/log4j/
 import type { OutputStreamManager } from '../../../../../../org/apache/logging/log4j/core/appender/OutputStreamManager.d.ts'
 import type { AbstractSocketManager } from '../../../../../../org/apache/logging/log4j/core/net/AbstractSocketManager.d.ts'
 export class DatagramSocketManager extends AbstractSocketManager {
-    static getManager(paramname: string, paramfactory: ManagerFactory<AbstractManager, Object>, paramdata: Object | null): AbstractManager | null;
-    static getManager(paramname: string, paramdata: Object | null, paramfactory: ManagerFactory<OutputStreamManager, Object>): OutputStreamManager;
+    static getManager<M extends AbstractManager, T extends unknown>(paramname: string, paramfactory: ManagerFactory<M, T>, paramdata: T): M;
+    static getManager<T extends unknown>(paramname: string, paramdata: T, paramfactory: ManagerFactory<OutputStreamManager, T>): OutputStreamManager;
     static getSocketManager(paramhost: string, paramport: number, paramlayout: Layout<Serializable>, parambufferSize: number): DatagramSocketManager;
     static hasManager(paramname: string): boolean;
     constructor(name: string, os: OutputStream, inetAddress: InetAddress, host: string, port: number, layout: Layout<Serializable>, bufferSize: number)

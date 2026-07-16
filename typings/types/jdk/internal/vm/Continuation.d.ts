@@ -14,7 +14,7 @@ export class Continuation extends Object {
     static isPinned(paramarg0: ContinuationScope): boolean;
     static pin(): void;
     static unpin(): void;
-    static wrapWalk(paramarg0: Continuation, paramarg1: ContinuationScope, paramarg2: () => Object | null): Object | null;
+    static wrapWalk<R extends unknown>(paramarg0: Continuation, paramarg1: ContinuationScope, paramarg2: () => R): R;
     static yield(paramarg0: ContinuationScope): boolean;
     constructor(arg0: ContinuationScope, arg1: () => void)
     // private child: Continuation;

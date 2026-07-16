@@ -5,7 +5,7 @@ import type { HudComponentTweak } from '../../../../../../net/ccbluex/liquidboun
 import type { MinimapHudComponent } from '../../../../../../net/ccbluex/liquidbounce/integration/theme/component/components/minimap/MinimapHudComponent.d.ts'
 export class HudComponentManager extends Object {
     static INSTANCE: HudComponentManager;
-    static getComponentWithTweak(tweak: HudComponentTweak): HudComponent;
+    static getComponentWithTweak(tweak: HudComponentTweak): HudComponent | null;
     static isTweakEnabled(tweak: HudComponentTweak): boolean;
     readonly components: HudComponent[];
     readonly nativeComponents: MinimapHudComponent[];

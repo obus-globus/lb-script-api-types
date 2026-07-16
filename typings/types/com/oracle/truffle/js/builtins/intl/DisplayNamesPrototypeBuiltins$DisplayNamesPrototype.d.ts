@@ -10,7 +10,7 @@ export class DisplayNamesPrototypeBuiltins$DisplayNamesPrototype extends Enum<Di
     static of: DisplayNamesPrototypeBuiltins$DisplayNamesPrototype;
     static resolvedOptions: DisplayNamesPrototypeBuiltins$DisplayNamesPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DisplayNamesPrototypeBuiltins$DisplayNamesPrototype;
     static values(): DisplayNamesPrototypeBuiltins$DisplayNamesPrototype[];
     private constructor(length: number)

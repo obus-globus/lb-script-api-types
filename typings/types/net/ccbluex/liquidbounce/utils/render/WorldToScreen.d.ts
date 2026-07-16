@@ -24,9 +24,9 @@ export class WorldToScreen extends Object {
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt#L60 | src/main/kotlin/net/ccbluex/liquidbounce/utils/render/WorldToScreen.kt:60}
      */
     static calculateScreenPos(paramarg0: Vec3): Vec3f;
-    static calculateScreenPos(pos: Vec3, cameraPos: Vec3): Vec3f;
+    static calculateScreenPos(pos: Vec3, cameraPos: Vec3): Vec3f | null;
     static calculateScreenRect(paramarg0: AABB): Rect;
-    static calculateScreenRect(box: AABB, cameraPos: Vec3): Rect;
+    static calculateScreenRect(box: AABB, cameraPos: Vec3): Rect | null;
     static setMatrices(projectionMatrix: Matrix4fc, modelViewMatrix: Matrix4fc, cameraPos: Vec3): void;
     // private cacheMat4f: Matrix4f;
     // private cacheVec3f: Vector3f;

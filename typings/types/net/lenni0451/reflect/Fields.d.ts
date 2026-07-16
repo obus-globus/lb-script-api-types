@@ -2,7 +2,7 @@ import type { Class } from '../../../java/lang/Class.d.ts'
 import type { Field } from '../../../java/lang/reflect/Field.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class Fields extends Object {
-    static copy(paramarg0: Object, paramarg1: Object, paramarg2: Field): void;
+    static copy<T extends unknown>(paramarg0: Object, paramarg1: Object, paramarg2: Field): void;
     static copyBoolean(paramarg0: Object, paramarg1: Object, paramarg2: Field): void;
     static copyByte(paramarg0: Object, paramarg1: Object, paramarg2: Field): void;
     static copyChar(paramarg0: Object, paramarg1: Object, paramarg2: Field): void;
@@ -12,7 +12,7 @@ export class Fields extends Object {
     static copyLong(paramarg0: Object, paramarg1: Object, paramarg2: Field): void;
     static copyObject(paramarg0: Object, paramarg1: Object, paramarg2: Field): void;
     static copyShort(paramarg0: Object, paramarg1: Object, paramarg2: Field): void;
-    static get(paramarg0: Object, paramarg1: Field): Object | null;
+    static get<T extends unknown>(paramarg0: Object, paramarg1: Field): T;
     static getBoolean(paramarg0: Object, paramarg1: Field): boolean;
     static getByte(paramarg0: Object, paramarg1: Field): number;
     static getChar(paramarg0: Object, paramarg1: Field): string;
@@ -22,11 +22,11 @@ export class Fields extends Object {
     static getFloat(paramarg0: Object, paramarg1: Field): number;
     static getInt(paramarg0: Object, paramarg1: Field): number;
     static getLong(paramarg0: Object, paramarg1: Field): number;
-    static getObject(paramarg0: Object, paramarg1: Field): Object | null;
+    static getObject<T extends unknown>(paramarg0: Object, paramarg1: Field): T;
     static getShort(paramarg0: Object, paramarg1: Field): number;
     static instance(paramarg0: Object, paramarg1: Field): Object;
     static offset(paramarg0: Field): number;
-    static set(paramarg0: Object, paramarg1: Field, paramarg2: Object | null): void;
+    static set<T extends unknown>(paramarg0: Object, paramarg1: Field, paramarg2: T): void;
     static setBoolean(paramarg0: Object, paramarg1: Field, paramarg2: boolean): void;
     static setByte(paramarg0: Object, paramarg1: Field, paramarg2: number): void;
     static setChar(paramarg0: Object, paramarg1: Field, paramarg2: string): void;

@@ -5,10 +5,10 @@ import type { LockingVisitors$ReadWriteLockVisitor } from '../../../../../../org
 import type { LockingVisitors$ReentrantLockVisitor } from '../../../../../../org/apache/commons/lang3/concurrent/locks/LockingVisitors$ReentrantLockVisitor.d.ts'
 import type { LockingVisitors$StampedLockVisitor } from '../../../../../../org/apache/commons/lang3/concurrent/locks/LockingVisitors$StampedLockVisitor.d.ts'
 export class LockingVisitors extends Object {
-    static create(paramarg0: Object | null, paramarg1: ReadWriteLock): LockingVisitors$ReadWriteLockVisitor<Object>;
-    static create(paramarg0: Object | null, paramarg1: ReentrantLock): LockingVisitors$ReentrantLockVisitor<Object>;
-    static reentrantLockVisitor(paramarg0: Object | null): LockingVisitors$ReentrantLockVisitor<Object>;
-    static reentrantReadWriteLockVisitor(paramarg0: Object | null): LockingVisitors$ReadWriteLockVisitor<Object>;
-    static stampedLockVisitor(paramarg0: Object | null): LockingVisitors$StampedLockVisitor<Object>;
+    static create<O extends unknown>(paramarg0: O, paramarg1: ReadWriteLock): LockingVisitors$ReadWriteLockVisitor<O>;
+    static create<O extends unknown>(paramarg0: O, paramarg1: ReentrantLock): LockingVisitors$ReentrantLockVisitor<O>;
+    static reentrantLockVisitor<O extends unknown>(paramarg0: O): LockingVisitors$ReentrantLockVisitor<O>;
+    static reentrantReadWriteLockVisitor<O extends unknown>(paramarg0: O): LockingVisitors$ReadWriteLockVisitor<O>;
+    static stampedLockVisitor<O extends unknown>(paramarg0: O): LockingVisitors$StampedLockVisitor<O>;
     constructor()
 }

@@ -8,15 +8,15 @@ import type { DynamicOps } from '../../../../com/mojang/serialization/DynamicOps
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export abstract class Functions extends Object {
-    static app(paramarg0: PointFree<(param0: Object | null) => Object | null>, paramarg1: PointFree<Object>): PointFree<Object>;
-    static bang(paramarg0: Type<Object>): Bang<Object>;
-    static comp(paramarg0: PointFree<(param0: Object | null) => Object | null>, paramarg1: PointFree<(param0: Object | null) => Object | null>): PointFree<(param0: Object | null) => Object | null>;
-    static fold(paramarg0: RecursivePoint$RecursivePointType<Object>, paramarg1: RecursivePoint$RecursivePointType<Object>, paramarg2: Algebra, paramarg3: number): PointFree<(param0: Object | null) => Object | null>;
-    static fun(paramarg0: string, paramarg1: (param0: DynamicOps<Object>) => Function<Object, Object>, paramarg2: Type<Object>, paramarg3: Type<Object>): PointFree<(param0: Object | null) => Object | null>;
-    static id(paramarg0: Type<Object>): PointFree<(param0: Object | null) => Object | null>;
-    static in(paramarg0: RecursivePoint$RecursivePointType<Object>): PointFree<(param0: Object | null) => Object | null>;
+    static app<A extends unknown, B extends unknown>(paramarg0: PointFree<(param0: A) => B>, paramarg1: PointFree<A>): PointFree<B>;
+    static bang<A extends unknown>(paramarg0: Type<A>): Bang<A>;
+    static comp<A extends unknown, B extends unknown, C extends unknown>(paramarg0: PointFree<(param0: B) => C>, paramarg1: PointFree<(param0: A) => B>): PointFree<(param0: A) => C>;
+    static fold<A extends unknown, B extends unknown>(paramarg0: RecursivePoint$RecursivePointType<A>, paramarg1: RecursivePoint$RecursivePointType<B>, paramarg2: Algebra, paramarg3: number): PointFree<(param0: A) => B>;
+    static fun<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: (param0: DynamicOps<Object>) => Function<A, B>, paramarg2: Type<A>, paramarg3: Type<B>): PointFree<(param0: A) => B>;
+    static id<A extends unknown>(paramarg0: Type<A>): PointFree<(param0: A) => A>;
+    static in<A extends unknown>(paramarg0: RecursivePoint$RecursivePointType<A>): PointFree<(param0: A) => A>;
     static isId(paramarg0: PointFree<Object>): boolean;
-    static out(paramarg0: RecursivePoint$RecursivePointType<Object>): PointFree<(param0: Object | null) => Object | null>;
-    static profunctorTransformer(paramarg0: TypedOptic<Object, Object, Object, Object>): PointFree<(param0: Function<Object, Object>) => Function<Object, Object>>;
+    static out<A extends unknown>(paramarg0: RecursivePoint$RecursivePointType<A>): PointFree<(param0: A) => A>;
+    static profunctorTransformer<S extends unknown, T extends unknown, A extends unknown, B extends unknown>(paramarg0: TypedOptic<S, T, A, B>): PointFree<(param0: Function<A, B>) => Function<S, T>>;
     constructor()
 }

@@ -11,12 +11,12 @@ import type { BlockRewriter } from '../../../../../../com/viaversion/viaversion/
 import type { BlockRewriter$ChunkTypeSupplier } from '../../../../../../com/viaversion/viaversion/rewriter/BlockRewriter$ChunkTypeSupplier.d.ts'
 import type { Map$Entry } from '../../../../../../java/util/Map$Entry.d.ts'
 export class BlockPacketRewriter1_20 extends BlockRewriter<ClientboundPackets1_19_4> {
-    static for1_14(paramarg0: Protocol<ClientboundPacketType, any, any, any>): BlockRewriter<ClientboundPacketType>;
-    static for1_18(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static for1_18(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static for1_20_2(paramarg0: Protocol<ClientboundPacketType, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<ClientboundPacketType>;
-    static legacy(paramarg0: Protocol<ClientboundPacketType, any, any, any>): BlockRewriter<ClientboundPacketType>;
+    static for1_14<C extends ClientboundPacketType>(paramarg0: Protocol<C, any, any, any>): BlockRewriter<C>;
+    static for1_18<C extends ClientboundPacketType>(paramarg0: Protocol<C, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<C>;
+    static for1_18<C extends ClientboundPacketType>(paramarg0: Protocol<C, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<C>;
+    static for1_20_2<C extends ClientboundPacketType>(paramarg0: Protocol<C, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<C>;
+    static for1_20_2<C extends ClientboundPacketType>(paramarg0: Protocol<C, any, any, any>, paramarg1: (param0: number, param1: number, param2: number) => Type<Chunk>, paramarg2: (param0: number, param1: number, param2: number) => Type<Chunk>): BlockRewriter<C>;
+    static legacy<C extends ClientboundPacketType>(paramarg0: Protocol<C, any, any, any>): BlockRewriter<C>;
     constructor(arg0: Protocol1_20To1_19_4)
     handleBlockEntity(arg0: UserConnection, arg1: BlockEntity): void;
     // private writeMessages(arg0: Map$Entry<string, Tag>[], arg1: Map$Entry<string, Tag>[], arg2: boolean): void;

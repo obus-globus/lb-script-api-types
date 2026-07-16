@@ -12,7 +12,7 @@ export class ZipFileSystem extends FileSystem_2 {
     static RESOURCES: FileSystem_2;
     static SYSTEM: FileSystem_2;
     static SYSTEM_TEMPORARY_DIRECTORY: Path;
-    static get(paramarg0: FileSystem): FileSystem_2;
+    static get(self: FileSystem): FileSystem_2;
     constructor(zipPath: Path, fileSystem: FileSystem_2, entries: Map<Path, ZipEntry>, comment: string | null)
     // private comment: string | null;
     // private entries: Map<Path, ZipEntry>;

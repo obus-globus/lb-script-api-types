@@ -9,7 +9,7 @@ export class AllOfPredicate extends CombiningPredicate {
     static CODEC: MapCodec<AllOfPredicate>;
     static ONLY_IN_AIR_OR_WATER_PREDICATE: BlockPredicate;
     static ONLY_IN_AIR_PREDICATE: BlockPredicate;
-    static codec(paramconstructor: (param0: BlockPredicate[]) => CombiningPredicate | null): MapCodec<CombiningPredicate>;
+    static codec<T extends CombiningPredicate>(paramconstructor: (param0: BlockPredicate[]) => T): MapCodec<T>;
     constructor(predicates: BlockPredicate[])
     test(level: WorldGenLevel, origin: BlockPos): boolean;
     type(): BlockPredicateType<any>;

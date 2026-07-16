@@ -5,7 +5,7 @@ import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { Holder } from '../../../../../net/minecraft/core/Holder.d.ts'
 export class TheEndBiomeData$ResourceKeyHashStrategy extends Enum<TheEndBiomeData$ResourceKeyHashStrategy> implements Hash$Strategy<Holder<Object>> {
     static INSTANCE: TheEndBiomeData$ResourceKeyHashStrategy;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): TheEndBiomeData$ResourceKeyHashStrategy;
     static values(): TheEndBiomeData$ResourceKeyHashStrategy[];
     private constructor()

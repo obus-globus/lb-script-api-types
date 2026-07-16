@@ -14,13 +14,13 @@ export class OptionInstance<T extends unknown> extends Object {
     static BOOLEAN_TO_STRING: (param0: Component, param1: boolean) => Component;
     static BOOLEAN_VALUES: OptionInstance$Enum<boolean>;
     static NO_ACTION: (param0: Object) => void;
-    static cachedConstantTooltip(paramtooltipComponent: Component): (param0: Object | null) => Tooltip;
+    static cachedConstantTooltip<T extends unknown>(paramtooltipComponent: Component): (param0: T) => Tooltip;
     static createBoolean(paramcaptionId: string, paraminitialValue: boolean): OptionInstance<boolean>;
     static createBoolean(paramcaptionId: string, paraminitialValue: boolean, paramonValueUpdate: (param0: Object) => void): OptionInstance<boolean>;
     static createBoolean(paramcaptionId: string, paramtooltip: (param0: boolean) => Tooltip, paraminitialValue: boolean): OptionInstance<boolean>;
     static createBoolean(paramcaptionId: string, paramtooltip: (param0: boolean) => Tooltip, paraminitialValue: boolean, paramonValueUpdate: (param0: Object) => void): OptionInstance<boolean>;
     static createBoolean(paramcaptionId: string, paramtooltip: (param0: boolean) => Tooltip, paramtoString: (param0: Component, param1: boolean) => Component, paraminitialValue: boolean, paramonValueUpdate: (param0: Object) => void): OptionInstance<boolean>;
-    static noTooltip(): (param0: Object | null) => Tooltip;
+    static noTooltip<T extends unknown>(): (param0: T) => Tooltip;
     constructor(captionId: string, tooltip: (param0: T) => Tooltip, toString: (param0: Component, param1: T) => Component, values: OptionInstance$ValueSet<T>, initialValue: T, onValueUpdate: (param0: T) => void)
     constructor(captionId: string, tooltip: (param0: T) => Tooltip, toString: (param0: Component, param1: T) => Component, values: OptionInstance$ValueSet<T>, codec: Codec<T>, initialValue: T, onValueUpdate: (param0: T) => void)
     // private caption: Component;

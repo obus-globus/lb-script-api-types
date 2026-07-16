@@ -2,7 +2,6 @@ import type { Direction } from '../../../../../../com/viaversion/viaversion/api/
 import type { ServerboundPacketType } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/ServerboundPacketType.d.ts'
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ServerboundPackets1_8 extends Enum<ServerboundPackets1_8> implements ServerboundPacketType {
     static CHAT: ServerboundPackets1_8;
@@ -31,7 +30,7 @@ export class ServerboundPackets1_8 extends Enum<ServerboundPackets1_8> implement
     static SWING: ServerboundPackets1_8;
     static TELEPORT_TO_ENTITY: ServerboundPackets1_8;
     static USE_ITEM_ON: ServerboundPackets1_8;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ServerboundPackets1_8;
     static values(): ServerboundPackets1_8[];
     private constructor()

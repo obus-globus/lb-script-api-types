@@ -17,7 +17,7 @@ export class ZeroBasedJSObjectArray extends AbstractJSObjectArray {
     static createZeroBasedJSObjectArray(): ZeroBasedJSObjectArray;
     static isSupportedZeroBased(paramobject: JSDynamicObject, paramindex: number): boolean;
     static makeRangeList(paramrangeStart: number, paramrangeEnd: number): Object[];
-    static makeZeroBasedJSObjectArray(paramobject: JSDynamicObject, paramlength: number, paramusedLength: number, paramarray: (Object | null)[], paramintegrityLevel: number): ZeroBasedJSObjectArray;
+    static makeZeroBasedJSObjectArray<T extends unknown>(paramobject: JSDynamicObject, paramlength: number, paramusedLength: number, paramarray: T[], paramintegrityLevel: number): ZeroBasedJSObjectArray;
     static valueIsByte(paramvalue: number): boolean;
     private constructor(integrityLevel: number, cache: DynamicArray$DynamicArrayCache)
     addRangeImpl(object: JSDynamicObject, offset: number, size: number): ScriptArray;

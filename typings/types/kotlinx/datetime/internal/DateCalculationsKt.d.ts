@@ -13,6 +13,6 @@ export class DateCalculationsKt extends Object {
     static SECONDS_PER_DAY: number;
     static SECONDS_PER_HOUR: number;
     static SECONDS_PER_MINUTE: number;
-    static isLeapYear(paramarg0: number): boolean;
-    static monthLength(paramarg0: number, paramarg1: boolean): number;
+    static isLeapYear(year: number): boolean;
+    static monthLength(self: number, isLeapYear: boolean): number;
 }

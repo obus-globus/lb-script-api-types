@@ -10,7 +10,7 @@ import type { ClientStatusPacketListener } from '../../../../../net/minecraft/ne
 import type { ServerStatus } from '../../../../../net/minecraft/network/protocol/status/ServerStatus.d.ts'
 export class ClientboundStatusResponsePacket extends Record implements Packet<ClientStatusPacketListener> {
     static STREAM_CODEC: StreamCodec<ByteBuf, ClientboundStatusResponsePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(status: ServerStatus)
     // private status: ServerStatus;
     equals(o: Object | null): boolean;

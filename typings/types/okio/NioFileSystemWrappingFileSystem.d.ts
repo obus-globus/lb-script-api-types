@@ -12,7 +12,7 @@ export class NioFileSystemWrappingFileSystem extends NioSystemFileSystem {
     static RESOURCES: FileSystem_2;
     static SYSTEM: FileSystem_2;
     static SYSTEM_TEMPORARY_DIRECTORY: Path;
-    static get(paramarg0: FileSystem): FileSystem_2;
+    static get(self: FileSystem): FileSystem_2;
     constructor(nioFileSystem: FileSystem)
     // private nioFileSystem: FileSystem;
     appendingSink(file: Path): Sink;

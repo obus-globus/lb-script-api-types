@@ -6,18 +6,18 @@ import type { Throwable } from '../../../../java/lang/Throwable.d.ts'
 import type { FieldInitializer$ThrowingFunction } from '../../../../net/lenni0451/reflect/utils/FieldInitializer$ThrowingFunction.d.ts'
 import type { FieldInitializer$ThrowingSupplier } from '../../../../net/lenni0451/reflect/utils/FieldInitializer$ThrowingSupplier.d.ts'
 export class FieldInitializer extends Object {
-    static condInit(paramarg0: boolean, paramarg1: () => Object | null, paramarg2: (param0: Object | null) => Object | null): Object | null;
-    static condInit(paramarg0: boolean, paramarg1: () => Object | null): Object | null;
-    static condReqInit(paramarg0: () => Object | null, paramarg1: (param0: Object | null) => Object | null, paramarg2: () => Throwable): Object | null;
-    static init(paramarg0: () => Object | null, paramarg1: (param0: Object | null) => Object | null): Object | null;
-    static init(paramarg0: Object | null, paramarg1: (param0: Object | null) => void): Object | null;
-    static init(paramarg0: () => Object | null): Object | null;
-    static optInit(paramarg0: () => Object | null, paramarg1: (param0: Object | null) => Object | null): Object | null;
-    static optInit(paramarg0: () => Object | null): Object | null;
-    static process(paramarg0: () => Object | null, paramarg1: (param0: Throwable) => Throwable): Object | null;
-    static reqInit(paramarg0: () => Object | null, paramarg1: (param0: Object | null) => Object | null, paramarg2: () => Throwable): Object | null;
-    static reqInit(paramarg0: () => Object | null, paramarg1: () => Throwable): Object | null;
-    static reqOptInit(paramarg0: boolean, paramarg1: () => Object | null, paramarg2: (param0: Object | null) => Object | null, paramarg3: () => Throwable): Object | null;
-    static reqOptInit(paramarg0: boolean, paramarg1: () => Object | null, paramarg2: () => Throwable): Object | null;
+    static condInit<T extends unknown, R extends unknown>(paramarg0: boolean, paramarg1: () => T, paramarg2: (param0: T) => R): R;
+    static condInit<T extends unknown>(paramarg0: boolean, paramarg1: () => T): T;
+    static condReqInit<C extends unknown, T extends unknown>(paramarg0: () => C, paramarg1: (param0: C) => T, paramarg2: () => Throwable): T;
+    static init<T extends unknown, R extends unknown>(paramarg0: () => T, paramarg1: (param0: T) => R): R;
+    static init<T extends unknown>(paramarg0: T, paramarg1: (param0: T) => void): T;
+    static init<T extends unknown>(paramarg0: () => T): T;
+    static optInit<T extends unknown, R extends unknown>(paramarg0: () => T, paramarg1: (param0: T) => R): R;
+    static optInit<T extends unknown>(paramarg0: () => T): T;
+    static process<T extends unknown>(paramarg0: () => T, paramarg1: (param0: Throwable) => Throwable): T;
+    static reqInit<T extends unknown, R extends unknown>(paramarg0: () => T, paramarg1: (param0: T) => R, paramarg2: () => Throwable): R;
+    static reqInit<T extends unknown>(paramarg0: () => T, paramarg1: () => Throwable): T;
+    static reqOptInit<T extends unknown, R extends unknown>(paramarg0: boolean, paramarg1: () => T, paramarg2: (param0: T) => R, paramarg3: () => Throwable): R;
+    static reqOptInit<T extends unknown>(paramarg0: boolean, paramarg1: () => T, paramarg2: () => Throwable): T;
     constructor()
 }

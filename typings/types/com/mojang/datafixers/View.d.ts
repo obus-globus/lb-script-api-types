@@ -9,9 +9,9 @@ import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Function } from '../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class View<A extends unknown, B extends unknown> extends Record implements App2<View$Mu, A, B> {
-    static create(paramarg0: PointFree<(param0: Object | null) => Object | null>): View<Object, Object>;
-    static create(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: DynamicOps<Object>) => Function<Object, Object>): View<Object, Object>;
-    static nopView(paramarg0: Type<Object>): View<Object, Object>;
+    static create<A extends unknown, B extends unknown>(paramarg0: PointFree<(param0: A) => B>): View<A, B>;
+    static create<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: DynamicOps<Object>) => Function<A, B>): View<A, B>;
+    static nopView<A extends unknown>(paramarg0: Type<A>): View<A, A>;
     constructor(function_: PointFree<(param0: A) => B>)
     // private function: PointFree<(param0: A) => B>;
     compose<C extends unknown>(arg0: View<C, A>): View<C, B>;

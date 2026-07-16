@@ -13,16 +13,16 @@ import type { Record } from '../../../java/lang/Record.d.ts'
 import type { Optional } from '../../../java/util/Optional.d.ts'
 import type { Object } from '../../../java/lang/Object.d.ts'
 export class TypedOptic<S extends unknown, T extends unknown, A extends unknown, B extends unknown> extends Record {
-    static adapter(paramarg0: Type<Object>, paramarg1: Type<Object>): TypedOptic<Object, Object, Object, Object>;
-    static compoundListElements(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Pair<Object, Object>[], Pair<Object, Object>[], Object, Object>;
-    static compoundListKeys(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Pair<Object, Object>[], Pair<Object, Object>[], Object, Object>;
-    static inj1(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Either<Object, Object>, Either<Object, Object>, Object, Object>;
-    static inj2(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Either<Object, Object>, Either<Object, Object>, Object, Object>;
-    static instanceOf(paramarg0: TypeToken<K1>[], paramarg1: TypeToken<K1>): boolean;
-    static list(paramarg0: Type<Object>, paramarg1: Type<Object>): TypedOptic<(Object | null)[], (Object | null)[], Object, Object>;
-    static proj1(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Pair<Object, Object>, Pair<Object, Object>, Object, Object>;
-    static proj2(paramarg0: Type<Object>, paramarg1: Type<Object>, paramarg2: Type<Object>): TypedOptic<Pair<Object, Object>, Pair<Object, Object>, Object, Object>;
-    static tagged(paramarg0: TaggedChoice$TaggedChoiceType<Object>, paramarg1: Object | null, paramarg2: Type<Object>, paramarg3: Type<Object>): TypedOptic<Pair<Object, Object>, Pair<Object, Object>, Object, Object>;
+    static adapter<S extends unknown, T extends unknown>(paramarg0: Type<S>, paramarg1: Type<T>): TypedOptic<S, T, S, T>;
+    static compoundListElements<K extends unknown, V extends unknown, V2 extends unknown>(paramarg0: Type<K>, paramarg1: Type<V>, paramarg2: Type<V2>): TypedOptic<Pair<K, V>[], Pair<K, V2>[], V, V2>;
+    static compoundListKeys<K extends unknown, V extends unknown, K2 extends unknown>(paramarg0: Type<K>, paramarg1: Type<K2>, paramarg2: Type<V>): TypedOptic<Pair<K, V>[], Pair<K2, V>[], K, K2>;
+    static inj1<F extends unknown, G extends unknown, F2 extends unknown>(paramarg0: Type<F>, paramarg1: Type<G>, paramarg2: Type<F2>): TypedOptic<Either<F, G>, Either<F2, G>, F, F2>;
+    static inj2<F extends unknown, G extends unknown, G2 extends unknown>(paramarg0: Type<F>, paramarg1: Type<G>, paramarg2: Type<G2>): TypedOptic<Either<F, G>, Either<F, G2>, G, G2>;
+    static instanceOf<Proof2 extends K1>(paramarg0: TypeToken<K1>[], paramarg1: TypeToken<Proof2>): boolean;
+    static list<A extends unknown, B extends unknown>(paramarg0: Type<A>, paramarg1: Type<B>): TypedOptic<A[], B[], A, B>;
+    static proj1<F extends unknown, G extends unknown, F2 extends unknown>(paramarg0: Type<F>, paramarg1: Type<G>, paramarg2: Type<F2>): TypedOptic<Pair<F, G>, Pair<F2, G>, F, F2>;
+    static proj2<F extends unknown, G extends unknown, G2 extends unknown>(paramarg0: Type<F>, paramarg1: Type<G>, paramarg2: Type<G2>): TypedOptic<Pair<F, G>, Pair<F, G2>, G, G2>;
+    static tagged<K extends unknown, A extends unknown, B extends unknown>(paramarg0: TaggedChoice$TaggedChoiceType<K>, paramarg1: K, paramarg2: Type<A>, paramarg3: Type<B>): TypedOptic<Pair<K, Object>, Pair<K, Object>, A, B>;
     constructor(arg0: TypeToken<K1>, arg1: Type<S>, arg2: Type<T>, arg3: Type<A>, arg4: Type<B>, arg5: Optic<any, S, T, A, B>)
     constructor(arg0: TypeToken<K1>[], arg1: Type<S>, arg2: Type<T>, arg3: Type<A>, arg4: Type<B>, arg5: Optic<any, S, T, A, B>)
     constructor(bounds: TypeToken<K1>[], elements: TypedOptic$Element<Object, Object, Object, Object>[])

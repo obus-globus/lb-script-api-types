@@ -3,11 +3,11 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Throwable } from '../../../java/lang/Throwable.d.ts'
 import type { Continuation } from '../../../kotlin/coroutines/Continuation.d.ts'
 export class StackTraceRecoveryKt extends Object {
-    static initCause(paramarg0: Throwable, paramarg1: Throwable): void;
-    static isArtificial(paramarg0: StackTraceElement): boolean;
-    static recoverAndThrow(paramarg0: Throwable, paramarg1: Continuation<Object>): Object;
-    static recoverStackTrace(paramarg0: Throwable | null): Throwable | null;
-    static recoverStackTrace(paramarg0: Throwable | null, paramarg1: Continuation<Object>): Throwable | null;
-    static unwrap(paramarg0: Throwable | null): Throwable | null;
-    static unwrapImpl(paramarg0: Throwable | null): Throwable | null;
+    static initCause(self: Throwable, cause: Throwable): void;
+    static isArtificial(self: StackTraceElement): boolean;
+    static recoverAndThrow(exception: Throwable): void;
+    static recoverStackTrace<E extends Throwable>(exception: E): E;
+    static recoverStackTrace<E extends Throwable>(exception: E, continuation: Continuation<Object>): E;
+    static unwrap<E extends Throwable>(exception: E): E;
+    static unwrapImpl<E extends Throwable>(exception: E): E;
 }

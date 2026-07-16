@@ -39,7 +39,7 @@ export class ModNioPackResources extends Object implements ModPackResources, Pac
     getRootResource(...arg0: string[]): () => InputStream;
     // private hasAbsentNs(arg0: string): boolean;
     knownPackInfo(): Optional<KnownPack>;
-    listResources(arg0: PackType, arg1: string, arg2: string, arg3: (param0: Object | null, param1: Object | null) => void): void;
+    listResources(arg0: PackType, arg1: string, arg2: string, arg3: (param0: Identifier, param1: () => InputStream) => void): void;
     location(): PackLocationInfo;
     // private openFile(arg0: string): () => InputStream;
     packId(): string;

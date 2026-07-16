@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 import type { Direction } from '../../../../../../../../net/minecraft/core/Direction.d.ts'
 import type { Vector3fc } from '../../../../../../../../org/joml/Vector3fc.d.ts'
@@ -29,7 +28,7 @@ export class ModelQuadFacing extends Enum<ModelQuadFacing> {
     static fromNormal(paramarg0: number, paramarg1: number, paramarg2: number): ModelQuadFacing;
     static fromNormal(paramarg0: Vector3fc): ModelQuadFacing;
     static fromPackedNormal(paramarg0: number): ModelQuadFacing;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ModelQuadFacing;
     static values(): ModelQuadFacing[];
     private constructor()

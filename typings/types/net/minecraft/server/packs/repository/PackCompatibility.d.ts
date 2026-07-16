@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { Component } from '../../../../../net/minecraft/network/chat/Component.d.ts'
 import type { PackFormat } from '../../../../../net/minecraft/server/packs/metadata/pack/PackFormat.d.ts'
@@ -11,7 +10,7 @@ export class PackCompatibility extends Enum<PackCompatibility> {
     static UNKNOWN: PackCompatibility;
     static UNKNOWN_VERSION: number;
     static forVersion(parampackDeclaredVersions: InclusiveRange<PackFormat>, paramgameSupportedVersion: PackFormat): PackCompatibility;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): PackCompatibility;
     static values(): PackCompatibility[];
     private constructor(key: string)

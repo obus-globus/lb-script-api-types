@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class BossEventUpdateType extends Enum<BossEventUpdateType> {
     static Add: BossEventUpdateType;
@@ -15,7 +14,7 @@ export class BossEventUpdateType extends Enum<BossEventUpdateType> {
     static getByName(paramarg0: string, paramarg1: BossEventUpdateType): BossEventUpdateType;
     static getByValue(paramarg0: number): BossEventUpdateType;
     static getByValue(paramarg0: number, paramarg1: BossEventUpdateType): BossEventUpdateType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): BossEventUpdateType;
     static values(): BossEventUpdateType[];
     private constructor(arg2: number)

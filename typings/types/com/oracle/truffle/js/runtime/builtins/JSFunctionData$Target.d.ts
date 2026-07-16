@@ -2,13 +2,12 @@ import type { CallTarget } from '../../../../../../com/oracle/truffle/api/CallTa
 import type { JSFunctionData } from '../../../../../../com/oracle/truffle/js/runtime/builtins/JSFunctionData.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { AtomicReferenceFieldUpdater } from '../../../../../../java/util/concurrent/atomic/AtomicReferenceFieldUpdater.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class JSFunctionData$Target extends Enum<JSFunctionData$Target> {
     static Call: JSFunctionData$Target;
     static Construct: JSFunctionData$Target;
     static ConstructNewTarget: JSFunctionData$Target;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): JSFunctionData$Target;
     static values(): JSFunctionData$Target[];
     private constructor(updater: AtomicReferenceFieldUpdater<JSFunctionData, CallTarget>)

@@ -9,9 +9,9 @@ export class Render3DKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt#L69 | src/main/kotlin/net/ccbluex/liquidbounce/render/Render3D.kt:69}
      */
-    static translate(poseStack: PoseStack, x: number, y: number, z: number): void;
-    static translate(poseStack: PoseStack, blockPos: number, origin: BlockPos): void;
-    static translate(poseStack: PoseStack, vec3i: Vec3i): void;
-    static usePoseStack(block: (param0: Object) => Object | null): Object | null;
-    static withPush(poseStack: PoseStack, block: (param0: Object) => void): void;
+    static translate(self: PoseStack, x: number, y: number, z: number): void;
+    static translate(self: PoseStack, blockPos: number, origin: BlockPos): void;
+    static translate(self: PoseStack, vec3i: Vec3i): void;
+    static usePoseStack<T extends unknown>(block: (param0: PoseStack) => T): T;
+    static withPush(self: PoseStack, block: (param0: PoseStack) => void): void;
 }

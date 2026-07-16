@@ -15,6 +15,7 @@ import type { MemoryUtil$MemoryAllocationReport } from '../../../org/lwjgl/syste
 import type { MemoryUtil$MemoryAllocationReport$Aggregate } from '../../../org/lwjgl/system/MemoryUtil$MemoryAllocationReport$Aggregate.d.ts'
 import type { MemoryUtil$MemoryAllocator } from '../../../org/lwjgl/system/MemoryUtil$MemoryAllocator.d.ts'
 import type { Pointer } from '../../../org/lwjgl/system/Pointer.d.ts'
+import type { Struct } from '../../../org/lwjgl/system/Struct.d.ts'
 export class MemoryUtil extends Object {
     static CACHE_LINE_SIZE: number;
     static NULL: number;
@@ -78,7 +79,7 @@ export class MemoryUtil extends Object {
     static memAllocLong(paramarg0: number): LongBuffer;
     static memAllocPointer(paramarg0: number): PointerBuffer;
     static memAllocShort(paramarg0: number): ShortBuffer;
-    static memByteBuffer(paramarg0: Object | null): ByteBuffer;
+    static memByteBuffer<T extends Struct<T>>(paramarg0: T): ByteBuffer;
     static memByteBuffer(paramarg0: CharBuffer): ByteBuffer;
     static memByteBuffer(paramarg0: DoubleBuffer): ByteBuffer;
     static memByteBuffer(paramarg0: FloatBuffer): ByteBuffer;
@@ -109,7 +110,8 @@ export class MemoryUtil extends Object {
     static memCallocShort(paramarg0: number): ShortBuffer;
     static memCharBuffer(paramarg0: number, paramarg1: number): CharBuffer;
     static memCharBufferSafe(paramarg0: number, paramarg1: number): CharBuffer;
-    static memCopy(paramarg0: Object | null, paramarg1: Object | null): void;
+    static memCopy<T extends CustomBuffer<T>>(paramarg0: T, paramarg1: T): void;
+    static memCopy<T extends Struct<T>>(paramarg0: T, paramarg1: T): void;
     static memCopy(paramarg0: number[], paramarg1: ByteBuffer): void;
     static memCopy(paramarg0: number[], paramarg1: ByteBuffer, paramarg2: number, paramarg3: number): void;
     static memCopy(paramarg0: number[], paramarg1: number): void;
@@ -175,7 +177,7 @@ export class MemoryUtil extends Object {
     static memGetInt(paramarg0: number): number;
     static memGetLong(paramarg0: number): number;
     static memGetShort(paramarg0: number): number;
-    static memGlobalRefToObject(paramarg0: number): Object | null;
+    static memGlobalRefToObject<T extends unknown>(paramarg0: number): T;
     static memIntBuffer(paramarg0: number, paramarg1: number): IntBuffer;
     static memIntBufferSafe(paramarg0: number, paramarg1: number): IntBuffer;
     static memLengthASCII(paramarg0: CharSequence, paramarg1: boolean): number;
@@ -205,7 +207,8 @@ export class MemoryUtil extends Object {
     static memRealloc(paramarg0: PointerBuffer, paramarg1: number): PointerBuffer;
     static memReport(paramarg0: MemoryUtil$MemoryAllocationReport): void;
     static memReport(paramarg0: MemoryUtil$MemoryAllocationReport, paramarg1: MemoryUtil$MemoryAllocationReport$Aggregate, paramarg2: boolean): void;
-    static memSet(paramarg0: Object | null, paramarg1: number): void;
+    static memSet<T extends CustomBuffer<T>>(paramarg0: T, paramarg1: number): void;
+    static memSet<T extends Struct<T>>(paramarg0: T, paramarg1: number): void;
     static memSet(paramarg0: ByteBuffer, paramarg1: number): void;
     static memSet(paramarg0: CharBuffer, paramarg1: number): void;
     static memSet(paramarg0: DoubleBuffer, paramarg1: number): void;
@@ -216,7 +219,7 @@ export class MemoryUtil extends Object {
     static memSet(paramarg0: number, paramarg1: number, paramarg2: number): void;
     static memShortBuffer(paramarg0: number, paramarg1: number): ShortBuffer;
     static memShortBufferSafe(paramarg0: number, paramarg1: number): ShortBuffer;
-    static memSlice(paramarg0: Object | null, paramarg1: number, paramarg2: number): Object | null;
+    static memSlice<T extends CustomBuffer<T>>(paramarg0: T, paramarg1: number, paramarg2: number): T;
     static memSlice(paramarg0: ByteBuffer): ByteBuffer;
     static memSlice(paramarg0: ByteBuffer, paramarg1: number, paramarg2: number): ByteBuffer;
     static memSlice(paramarg0: CharBuffer): CharBuffer;

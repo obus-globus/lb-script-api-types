@@ -14,8 +14,8 @@ export class ExtentPurge$Container extends ExtentPurge {
     static create(paramarg0: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number) => boolean): ExtentPurge;
     static createSafe(paramarg0: number): ExtentPurge;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor(arg0: number, arg1: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number) => boolean)
     // private delegate: (param0: number, param1: number, param2: number, param3: number, param4: number, param5: number) => boolean;
     invoke(arg0: number, arg1: number, arg2: number, arg3: number, arg4: number, arg5: number): boolean;

@@ -3,10 +3,10 @@ import type { AttachmentRegistry$Builder } from '../../../../../net/fabricmc/fab
 import type { AttachmentType } from '../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
 import type { Identifier } from '../../../../../net/minecraft/resources/Identifier.d.ts'
 export class AttachmentRegistryImpl extends Object {
-    static builder(): AttachmentRegistry$Builder<Object>;
+    static builder<A extends unknown>(): AttachmentRegistry$Builder<A>;
     static get(paramarg0: Identifier): AttachmentType<Object>;
     static getMaxSyncPacketSize(): number;
     static getSyncableAttachments(): Identifier[];
-    static register(paramarg0: Identifier, paramarg1: AttachmentType<Object>): void;
+    static register<A extends unknown>(paramarg0: Identifier, paramarg1: AttachmentType<A>): void;
     constructor()
 }

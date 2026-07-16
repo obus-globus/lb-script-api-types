@@ -10,8 +10,8 @@ import type { JSStringToNumberNode } from '../../../../../../com/oracle/truffle/
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class JSLessOrEqualNodeGen extends JSLessOrEqualNode {
-    static cloneUninitialized(paramnode: JavaScriptNode | null, parammaterializedTags: Class<Tag>[]): JavaScriptNode | null;
-    static cloneUninitialized(paramnodeArray: (JavaScriptNode | null)[], parammaterializedTags: Class<Tag>[]): (JavaScriptNode | null)[];
+    static cloneUninitialized<T extends JavaScriptNode>(paramnode: T, parammaterializedTags: Class<Tag>[]): T;
+    static cloneUninitialized<T extends JavaScriptNode>(paramnodeArray: T[], parammaterializedTags: Class<Tag>[]): T[];
     static create(): JSLessOrEqualNode;
     static create(paramleft: JavaScriptNode, paramright: JavaScriptNode): JSLessOrEqualNode;
     static findBlockScopeNode(paramnode: Node): Node;

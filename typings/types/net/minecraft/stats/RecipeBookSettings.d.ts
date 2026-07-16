@@ -20,5 +20,5 @@ export class RecipeBookSettings extends Object {
     replaceFrom(other: RecipeBookSettings): void;
     setFiltering(type: RecipeBookType, filtering: boolean): void;
     setOpen(type: RecipeBookType, open: boolean): void;
-    // private updateSettings(recipeBookType: RecipeBookType, operator: (param0: RecipeBookSettings$TypeSettings) => Object | null): void;
+    // private updateSettings(recipeBookType: RecipeBookType, operator: (param0: RecipeBookSettings$TypeSettings) => RecipeBookSettings$TypeSettings): void;
 }

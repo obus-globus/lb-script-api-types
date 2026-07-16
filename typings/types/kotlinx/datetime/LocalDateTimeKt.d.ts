@@ -6,11 +6,11 @@ import type { LocalDateTime$Companion } from '../../kotlinx/datetime/LocalDateTi
 import type { Month as Month_2 } from '../../kotlinx/datetime/Month.d.ts'
 import type { DateTimeFormat } from '../../kotlinx/datetime/format/DateTimeFormat.d.ts'
 export class LocalDateTimeKt extends Object {
-    static LocalDateTime(paramarg0: number, paramarg1: number, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): LocalDateTime;
-    static LocalDateTime(paramarg0: number, paramarg1: Month, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): LocalDateTime;
-    static LocalDateTime(paramarg0: number, paramarg1: Month_2, paramarg2: number, paramarg3: number, paramarg4: number, paramarg5: number, paramarg6: number): LocalDateTime;
-    static format(paramarg0: LocalDateTime, paramarg1: DateTimeFormat<LocalDateTime>): string;
+    static LocalDateTime(year: number, monthNumber: number, dayOfMonth: number, hour: number, minute: number, second: number, nanosecond: number): LocalDateTime;
+    static LocalDateTime(year: number, month: Month, dayOfMonth: number, hour: number, minute: number, second: number, nanosecond: number): LocalDateTime;
+    static LocalDateTime(year: number, month: Month_2, dayOfMonth: number, hour: number, minute: number, second: number, nanosecond: number): LocalDateTime;
+    static format(self: LocalDateTime, format: DateTimeFormat<LocalDateTime>): string;
     static getIsoDateTimeFormat(): DateTimeFormat<LocalDateTime>;
-    static parseOrNull(paramarg0: LocalDateTime$Companion, paramarg1: CharSequence, paramarg2: DateTimeFormat<LocalDateTime>): LocalDateTime;
-    static toLocalDateTime(paramarg0: string): LocalDateTime;
+    static parseOrNull(self: LocalDateTime$Companion, input: CharSequence, format: DateTimeFormat<LocalDateTime>): LocalDateTime | null;
+    static toLocalDateTime(self: string): LocalDateTime;
 }

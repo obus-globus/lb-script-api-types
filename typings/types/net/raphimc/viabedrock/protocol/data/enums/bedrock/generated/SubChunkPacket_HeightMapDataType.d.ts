@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class SubChunkPacket_HeightMapDataType extends Enum<SubChunkPacket_HeightMapDataType> {
     static AllCopied: SubChunkPacket_HeightMapDataType;
@@ -11,7 +10,7 @@ export class SubChunkPacket_HeightMapDataType extends Enum<SubChunkPacket_Height
     static getByName(paramarg0: string, paramarg1: SubChunkPacket_HeightMapDataType): SubChunkPacket_HeightMapDataType;
     static getByValue(paramarg0: number): SubChunkPacket_HeightMapDataType;
     static getByValue(paramarg0: number, paramarg1: SubChunkPacket_HeightMapDataType): SubChunkPacket_HeightMapDataType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SubChunkPacket_HeightMapDataType;
     static values(): SubChunkPacket_HeightMapDataType[];
     private constructor(arg2: number)

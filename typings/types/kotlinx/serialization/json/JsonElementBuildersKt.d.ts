@@ -4,21 +4,21 @@ import type { JsonArrayBuilder } from '../../../kotlinx/serialization/json/JsonA
 import type { JsonElement } from '../../../kotlinx/serialization/json/JsonElement.d.ts'
 import type { JsonObjectBuilder } from '../../../kotlinx/serialization/json/JsonObjectBuilder.d.ts'
 export class JsonElementBuildersKt extends Object {
-    static add(paramarg0: JsonArrayBuilder, paramarg1: boolean): boolean;
-    static add(paramarg0: JsonArrayBuilder, paramarg1: Number): boolean;
-    static add(paramarg0: JsonArrayBuilder, paramarg1: string): boolean;
-    static add(paramarg0: JsonArrayBuilder, paramarg1: void): boolean;
-    static addAllBooleans(paramarg0: JsonArrayBuilder, paramarg1: boolean[]): boolean;
-    static addAllNumbers(paramarg0: JsonArrayBuilder, paramarg1: Number[]): boolean;
-    static addAllStrings(paramarg0: JsonArrayBuilder, paramarg1: string[]): boolean;
-    static addJsonArray(paramarg0: JsonArrayBuilder, paramarg1: (param0: Object) => void): boolean;
-    static addJsonObject(paramarg0: JsonArrayBuilder, paramarg1: (param0: Object) => void): boolean;
-    static buildJsonArray(paramarg0: (param0: Object) => void): (Object | null)[];
-    static buildJsonObject(paramarg0: (param0: Object) => void): { [key: string]: any };
-    static put(paramarg0: JsonObjectBuilder, paramarg1: string, paramarg2: boolean): JsonElement;
-    static put(paramarg0: JsonObjectBuilder, paramarg1: string, paramarg2: Number): JsonElement;
-    static put(paramarg0: JsonObjectBuilder, paramarg1: string, paramarg2: string): JsonElement;
-    static put(paramarg0: JsonObjectBuilder, paramarg1: string, paramarg2: void): JsonElement;
-    static putJsonArray(paramarg0: JsonObjectBuilder, paramarg1: string, paramarg2: (param0: Object) => void): JsonElement;
-    static putJsonObject(paramarg0: JsonObjectBuilder, paramarg1: string, paramarg2: (param0: Object) => void): JsonElement;
+    static add(self: JsonArrayBuilder, value: boolean | null): boolean;
+    static add(self: JsonArrayBuilder, value: Number | null): boolean;
+    static add(self: JsonArrayBuilder, value: string | null): boolean;
+    static add(self: JsonArrayBuilder, value: void | null): boolean;
+    static addAllBooleans(self: JsonArrayBuilder, values: (boolean | null)[]): boolean;
+    static addAllNumbers(self: JsonArrayBuilder, values: (Number | null)[]): boolean;
+    static addAllStrings(self: JsonArrayBuilder, values: (string | null)[]): boolean;
+    static addJsonArray(self: JsonArrayBuilder, builderAction: (param0: JsonArrayBuilder) => void): boolean;
+    static addJsonObject(self: JsonArrayBuilder, builderAction: (param0: JsonObjectBuilder) => void): boolean;
+    static buildJsonArray(builderAction: (param0: JsonArrayBuilder) => void): (Object | null)[];
+    static buildJsonObject(builderAction: (param0: JsonObjectBuilder) => void): { [key: string]: any };
+    static put(self: JsonObjectBuilder, key: string, value: boolean | null): JsonElement | null;
+    static put(self: JsonObjectBuilder, key: string, value: Number | null): JsonElement | null;
+    static put(self: JsonObjectBuilder, key: string, value: string | null): JsonElement | null;
+    static put(self: JsonObjectBuilder, key: string, value: void | null): JsonElement | null;
+    static putJsonArray(self: JsonObjectBuilder, key: string, builderAction: (param0: JsonArrayBuilder) => void): JsonElement | null;
+    static putJsonObject(self: JsonObjectBuilder, key: string, builderAction: (param0: JsonObjectBuilder) => void): JsonElement | null;
 }

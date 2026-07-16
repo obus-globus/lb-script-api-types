@@ -8,7 +8,7 @@ import type { AbstractContainerMenu } from '../../../../../net/minecraft/world/i
 export class Networking extends Object implements ModInitializer {
     static CODEC_BY_ID: Map<Identifier, StreamCodec<Object, Object>>;
     static OPEN_ID: Identifier;
-    static sendOpenPacket(paramarg0: ServerPlayer, paramarg1: ExtendedMenuProvider<Object>, paramarg2: AbstractContainerMenu, paramarg3: number): void;
+    static sendOpenPacket<D extends unknown>(paramarg0: ServerPlayer, paramarg1: ExtendedMenuProvider<D>, paramarg2: AbstractContainerMenu, paramarg3: number): void;
     constructor()
     onInitialize(): void;
 }

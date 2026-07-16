@@ -2,7 +2,6 @@ import type { Direction } from '../../../../../../com/viaversion/viaversion/api/
 import type { State } from '../../../../../../com/viaversion/viaversion/api/protocol/packet/State.d.ts'
 import type { ClientboundPacket1_20_3 } from '../../../../../../com/viaversion/viaversion/protocols/v1_20_2to1_20_3/packet/ClientboundPacket1_20_3.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class ClientboundConfigurationPackets1_20_3 extends Enum<ClientboundConfigurationPackets1_20_3> implements ClientboundPacket1_20_3 {
     static CUSTOM_PAYLOAD: ClientboundConfigurationPackets1_20_3;
@@ -15,7 +14,7 @@ export class ClientboundConfigurationPackets1_20_3 extends Enum<ClientboundConfi
     static RESOURCE_PACK_PUSH: ClientboundConfigurationPackets1_20_3;
     static UPDATE_ENABLED_FEATURES: ClientboundConfigurationPackets1_20_3;
     static UPDATE_TAGS: ClientboundConfigurationPackets1_20_3;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ClientboundConfigurationPackets1_20_3;
     static values(): ClientboundConfigurationPackets1_20_3[];
     private constructor()

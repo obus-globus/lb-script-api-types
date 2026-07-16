@@ -1,5 +1,4 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class InternetProtocolStats$TcpState extends Enum<InternetProtocolStats$TcpState> {
     static CLOSED: InternetProtocolStats$TcpState;
@@ -15,7 +14,7 @@ export class InternetProtocolStats$TcpState extends Enum<InternetProtocolStats$T
     static SYN_SENT: InternetProtocolStats$TcpState;
     static TIME_WAIT: InternetProtocolStats$TcpState;
     static UNKNOWN: InternetProtocolStats$TcpState;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): InternetProtocolStats$TcpState;
     static values(): InternetProtocolStats$TcpState[];
     private constructor()

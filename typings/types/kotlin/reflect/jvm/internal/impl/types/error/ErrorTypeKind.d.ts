@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 import type { DefaultConstructorMarker } from '../../../../../../../kotlin/jvm/internal/DefaultConstructorMarker.d.ts'
 export class ErrorTypeKind extends Enum<ErrorTypeKind> {
@@ -86,7 +85,7 @@ export class ErrorTypeKind extends Enum<ErrorTypeKind> {
     static UNRESOLVED_TYPE_ALIAS: ErrorTypeKind;
     static UNRESOLVED_TYPE_PARAMETER_TYPE: ErrorTypeKind;
     static UNSUPPORTED_CALLABLE_REFERENCE_TYPE: ErrorTypeKind;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ErrorTypeKind;
     static values(): ErrorTypeKind[];
     constructor(arg2: string, arg3: boolean, arg4: number, arg5: DefaultConstructorMarker)

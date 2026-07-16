@@ -6,10 +6,10 @@ import type { CoroutineScope } from '../../kotlinx/coroutines/CoroutineScope.d.t
 import type { UndispatchedCoroutine } from '../../kotlinx/coroutines/UndispatchedCoroutine.d.ts'
 export class CoroutineContextKt extends Object {
     static getCoroutineName(paramarg0: CoroutineContext): string;
-    static newCoroutineContext(paramarg0: CoroutineContext, paramarg1: CoroutineContext): CoroutineContext;
-    static newCoroutineContext(paramarg0: CoroutineScope, paramarg1: CoroutineContext): CoroutineContext;
-    static undispatchedCompletion(paramarg0: CoroutineStackFrame): UndispatchedCoroutine<Object>;
-    static updateUndispatchedCompletion(paramarg0: Continuation<Object>, paramarg1: CoroutineContext, paramarg2: Object): UndispatchedCoroutine<Object>;
-    static withContinuationContext(paramarg0: Continuation<Object>, paramarg1: Object, paramarg2: () => Object | null): Object | null;
-    static withCoroutineContext(paramarg0: CoroutineContext, paramarg1: Object, paramarg2: () => Object | null): Object | null;
+    static newCoroutineContext(self: CoroutineContext, addedContext: CoroutineContext): CoroutineContext;
+    static newCoroutineContext(self: CoroutineScope, context: CoroutineContext): CoroutineContext;
+    static undispatchedCompletion(self: CoroutineStackFrame): UndispatchedCoroutine<Object> | null;
+    static updateUndispatchedCompletion(self: Continuation<Object>, context: CoroutineContext, oldValue: Object | null): UndispatchedCoroutine<Object> | null;
+    static withContinuationContext<T extends unknown>(continuation: Continuation<Object>, countOrElement: Object | null, block: () => T): T;
+    static withCoroutineContext<T extends unknown>(context: CoroutineContext, countOrElement: Object | null, block: () => T): T;
 }

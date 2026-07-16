@@ -7,8 +7,8 @@ import type { Spliterator } from '../../../../java/util/Spliterator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 export class ArrayTable<R extends unknown, C extends unknown, V extends unknown> extends AbstractTable<R, C, V> implements Table<R, C, V>, Serializable {
-    static create(paramtable: Table<Object, Object, Object>): ArrayTable<Object, Object, Object>;
-    static create(paramrowKeys: (Object | null)[], paramcolumnKeys: (Object | null)[]): ArrayTable<Object, Object, Object>;
+    static create<R extends unknown, C extends unknown, V extends unknown>(paramtable: Table<R, C, V>): ArrayTable<R, C, V>;
+    static create<R extends unknown, C extends unknown, V extends unknown>(paramrowKeys: R[], paramcolumnKeys: C[]): ArrayTable<R, C, V>;
     private constructor(table: ArrayTable<R, C, V>)
     private constructor(table: Table<R, C, V>)
     private constructor(rowKeys: R[], columnKeys: C[])

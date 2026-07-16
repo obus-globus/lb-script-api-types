@@ -8,9 +8,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class LinkedHashMultimap<K extends unknown, V extends unknown> extends AbstractSetMultimap<K, V> {
-    static create(): LinkedHashMultimap<Object, Object>;
-    static create(parammultimap: Multimap<Object, Object>): LinkedHashMultimap<Object, Object>;
-    static create(paramexpectedKeys: number, paramexpectedValuesPerKey: number): LinkedHashMultimap<Object, Object>;
+    static create<K extends unknown, V extends unknown>(): LinkedHashMultimap<K, V>;
+    static create<K extends unknown, V extends unknown>(parammultimap: Multimap<K, V>): LinkedHashMultimap<K, V>;
+    static create<K extends unknown, V extends unknown>(paramexpectedKeys: number, paramexpectedValuesPerKey: number): LinkedHashMultimap<K, V>;
     private constructor(keyCapacity: number, valueSetCapacity: number)
     // private multimapIterationChain: LinkedHashMultimap$MultimapIterationChain<K, V>;
     // private valueSetCapacity: number;

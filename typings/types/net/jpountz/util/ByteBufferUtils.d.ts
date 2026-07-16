@@ -1,6 +1,5 @@
 import type { Class } from '../../../java/lang/Class.d.ts'
 import type { ByteBuffer } from '../../../java/nio/ByteBuffer.d.ts'
-import type { Object } from '../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../java/lang/Enum.d.ts'
 export class ByteBufferUtils extends Enum<ByteBufferUtils> {
     static checkNotReadOnly(paramarg0: ByteBuffer): void;
@@ -14,7 +13,7 @@ export class ByteBufferUtils extends Enum<ByteBufferUtils> {
     static readLong(paramarg0: ByteBuffer, paramarg1: number): number;
     static readLongLE(paramarg0: ByteBuffer, paramarg1: number): number;
     static readShortLE(paramarg0: ByteBuffer, paramarg1: number): number;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ByteBufferUtils;
     static values(): ByteBufferUtils[];
     static writeByte(paramarg0: ByteBuffer, paramarg1: number, paramarg2: number): void;

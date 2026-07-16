@@ -7,7 +7,7 @@ export class ASTInjectionPoint extends Enum<ASTInjectionPoint> {
     static BEFORE_DECLARATIONS: ASTInjectionPoint;
     static BEFORE_FUNCTIONS: ASTInjectionPoint;
     static END: ASTInjectionPoint;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ASTInjectionPoint;
     static values(): ASTInjectionPoint[];
     private constructor()

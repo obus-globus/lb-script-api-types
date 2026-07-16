@@ -8,6 +8,7 @@ import type { ShortBuffer } from '../../java/nio/ShortBuffer.d.ts'
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { CLongBuffer } from '../../org/lwjgl/CLongBuffer.d.ts'
 import type { PointerBuffer } from '../../org/lwjgl/PointerBuffer.d.ts'
+import type { CustomBuffer } from '../../org/lwjgl/system/CustomBuffer.d.ts'
 export class BufferUtils extends Object {
     static createByteBuffer(paramarg0: number): ByteBuffer;
     static createCLongBuffer(paramarg0: number): CLongBuffer;
@@ -18,7 +19,7 @@ export class BufferUtils extends Object {
     static createLongBuffer(paramarg0: number): LongBuffer;
     static createPointerBuffer(paramarg0: number): PointerBuffer;
     static createShortBuffer(paramarg0: number): ShortBuffer;
-    static zeroBuffer(paramarg0: Object | null): void;
+    static zeroBuffer<T extends CustomBuffer<T>>(paramarg0: T): void;
     static zeroBuffer(paramarg0: ByteBuffer): void;
     static zeroBuffer(paramarg0: CharBuffer): void;
     static zeroBuffer(paramarg0: DoubleBuffer): void;

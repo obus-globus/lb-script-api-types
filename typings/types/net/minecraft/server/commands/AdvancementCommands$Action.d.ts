@@ -1,12 +1,11 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { AdvancementHolder } from '../../../../net/minecraft/advancements/AdvancementHolder.d.ts'
 import type { ServerPlayer } from '../../../../net/minecraft/server/level/ServerPlayer.d.ts'
 export class AdvancementCommands$Action extends Enum<AdvancementCommands$Action> {
     static GRANT: AdvancementCommands$Action;
     static REVOKE: AdvancementCommands$Action;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): AdvancementCommands$Action;
     static values(): AdvancementCommands$Action[];
     private constructor(key: string)

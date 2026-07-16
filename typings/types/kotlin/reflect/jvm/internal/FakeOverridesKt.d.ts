@@ -6,10 +6,10 @@ import type { KClassImpl } from '../../../../kotlin/reflect/jvm/internal/KClassI
 import type { ReflectKCallable } from '../../../../kotlin/reflect/jvm/internal/ReflectKCallable.d.ts'
 import type { KTypeSubstitutor } from '../../../../kotlin/reflect/jvm/internal/types/KTypeSubstitutor.d.ts'
 export class FakeOverridesKt extends Object {
-    static computeFakeOverrideMembers(paramarg0: KClassImpl<Object>): FakeOverrideMembers;
-    static getAllMembers(paramarg0: KClassImpl<Object>): ReflectKCallable<Object>[];
+    static computeFakeOverrideMembers(kClass: KClassImpl<Object>): FakeOverrideMembers;
+    static getAllMembers(kClass: KClassImpl<Object>): ReflectKCallable<Object>[];
     static isKotlin(paramarg0: Class<Object>): boolean;
     static isStatic(paramarg0: ReflectKCallable<Object>): boolean;
-    static starProjectionInTopLevelTypeIsNotPossible(paramarg0: string): void;
-    static substitutedWith(paramarg0: KTypeParameter[], paramarg1: KTypeParameter[]): KTypeSubstitutor;
+    static starProjectionInTopLevelTypeIsNotPossible(containerNameForDebug: string): void;
+    static substitutedWith(self: KTypeParameter[], arguments: KTypeParameter[]): KTypeSubstitutor | null;
 }

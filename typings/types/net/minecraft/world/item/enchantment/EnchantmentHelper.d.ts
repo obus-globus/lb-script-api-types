@@ -54,7 +54,7 @@ export class EnchantmentHelper extends Object {
     static getEnchantmentsForCrafting(paramitemStack: ItemStack): ItemEnchantments;
     static getFishingLuckBonus(paramserverLevel: ServerLevel, paramrod: ItemStack, paramfisher: Entity): number;
     static getFishingTimeReduction(paramserverLevel: ServerLevel, paramrod: ItemStack, paramfisher: Entity): number;
-    static getHighestLevel(paramitem: ItemStack, parameffectType: DataComponentType<Object>): Pair<Object, number>;
+    static getHighestLevel<T extends unknown>(paramitem: ItemStack, parameffectType: DataComponentType<T>): Pair<T, number>;
     static getItemEnchantmentLevel(paramenchantment: Holder<Enchantment>, parampiece: ItemInstance): number;
     static getPiercingCount(paramserverLevel: ServerLevel, paramweapon: ItemStack, paramammo: ItemStack): number;
     static getRandomItemWith(paramcomponentType: DataComponentType<Object>, paramsource: LivingEntity, parampredicate: (param0: ItemStack) => boolean): Optional<EnchantedItemInUse>;
@@ -73,7 +73,7 @@ export class EnchantmentHelper extends Object {
     static modifyKnockback(paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramvictim: Entity, paramdamageSource: DamageSource, paramknockback: number): number;
     static onHitBlock(paramserverLevel: ServerLevel, paramweapon: ItemStack, paramowner: LivingEntity, paramentity: Entity, paramslot: EquipmentSlot, paramhitLocation: Vec3, paramhitBlock: BlockState, paramonBreak: (param0: Item) => void): void;
     static onProjectileSpawned(paramserverLevel: ServerLevel, paramweapon: ItemStack, paramprojectileEntity: Projectile, paramonBreak: (param0: Item) => void): void;
-    static pickHighestLevel(paramitemStack: ItemStack, paramcomponentType: DataComponentType<(Object | null)[]>): Optional<Object>;
+    static pickHighestLevel<T extends unknown>(paramitemStack: ItemStack, paramcomponentType: DataComponentType<T[]>): Optional<T>;
     static processAmmoUse(paramserverLevel: ServerLevel, paramweapon: ItemStack, paramammo: ItemStack, paramamount: number): number;
     static processBlockExperience(paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramamount: number): number;
     static processDurabilityChange(paramserverLevel: ServerLevel, paramitemStack: ItemStack, paramamount: number): number;

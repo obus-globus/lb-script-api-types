@@ -3,8 +3,8 @@ import type { StructuredDataKey } from '../../../../../../com/viaversion/viavers
 import type { ByteBuf } from '../../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class EmptyStructuredData<T extends unknown> extends Object implements StructuredData<T> {
-    static empty(paramarg0: StructuredDataKey<Object>, paramarg1: number): StructuredData<Object>;
-    static of(paramarg0: StructuredDataKey<Object>, paramarg1: Object | null, paramarg2: number): StructuredData<Object>;
+    static empty<T extends unknown>(paramarg0: StructuredDataKey<T>, paramarg1: number): StructuredData<T>;
+    static of<T extends unknown>(paramarg0: StructuredDataKey<T>, paramarg1: T, paramarg2: number): StructuredData<T>;
     constructor(arg0: StructuredDataKey<T>, arg1: number)
     // private key: StructuredDataKey<T>;
     copy(): StructuredData<T>;

@@ -42,10 +42,10 @@ export class NioChannelOption<T extends unknown> extends ChannelOption<T> {
     static WRITE_BUFFER_WATER_MARK: ChannelOption<WriteBufferWaterMark>;
     static WRITE_SPIN_COUNT: ChannelOption<number>;
     static exists(paramarg0: string): boolean;
-    static newInstance(paramarg0: string): ChannelOption<Object>;
-    static of(paramarg0: SocketOption<Object>): ChannelOption<Object>;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): ChannelOption<Object>;
-    static valueOf(paramarg0: string): ChannelOption<Object>;
+    static newInstance<T extends unknown>(paramarg0: string): ChannelOption<T>;
+    static of<T extends unknown>(paramarg0: SocketOption<T>): ChannelOption<T>;
+    static valueOf<T extends unknown>(paramarg0: Class<Object>, paramarg1: string): ChannelOption<T>;
+    static valueOf<T extends unknown>(paramarg0: string): ChannelOption<T>;
     private constructor(arg0: SocketOption<T>)
     // private option: SocketOption<T>;
 }

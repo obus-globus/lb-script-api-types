@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class ContainerEnumName extends Enum<ContainerEnumName> {
     static AnvilInputContainer: ContainerEnumName;
@@ -73,7 +72,7 @@ export class ContainerEnumName extends Enum<ContainerEnumName> {
     static getByName(paramarg0: string, paramarg1: ContainerEnumName): ContainerEnumName;
     static getByValue(paramarg0: number): ContainerEnumName;
     static getByValue(paramarg0: number, paramarg1: ContainerEnumName): ContainerEnumName;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ContainerEnumName;
     static values(): ContainerEnumName[];
     private constructor(arg2: number)

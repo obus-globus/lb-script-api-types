@@ -5,5 +5,5 @@ import type { TypeParameterTable } from '../../../../kotlin/reflect/jvm/internal
 import type { KmType } from '../../../../kotlin/reflect/jvm/internal/impl/km/KmType.d.ts'
 import type { KmValueParameter } from '../../../../kotlin/reflect/jvm/internal/impl/km/KmValueParameter.d.ts'
 export class KotlinKCallableKt extends Object {
-    static computeParameters(paramarg0: KotlinKCallable<Object>, paramarg1: KmValueParameter[], paramarg2: KmType, paramarg3: KmValueParameter[], paramarg4: TypeParameterTable, paramarg5: boolean): KParameter[];
+    static computeParameters(self: KotlinKCallable<Object>, contextParameters: KmValueParameter[], receiverParameterType: KmType | null, valueParameters: KmValueParameter[], typeParameterTable: TypeParameterTable, includeReceivers: boolean): KParameter[];
 }

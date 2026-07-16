@@ -7,7 +7,7 @@ export class Predicates$ObjectPredicate extends Enum<Predicates$ObjectPredicate>
     static ALWAYS_TRUE: Predicates$ObjectPredicate;
     static IS_NULL: Predicates$ObjectPredicate;
     static NOT_NULL: Predicates$ObjectPredicate;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Predicates$ObjectPredicate;
     static values(): Predicates$ObjectPredicate[];
     constructor(arg2: any)

@@ -18,7 +18,7 @@ export abstract class AFSocketAddress extends InetSocketAddress {
     static canMap(paramarg0: SocketAddress): boolean;
     static canMap(paramarg0: SocketAddress, paramarg1: Class<AFSocketAddress>): boolean;
     static createUnresolved(paramarg0: string, paramarg1: number): InetSocketAddress;
-    static mapOrFail(paramarg0: SocketAddress, paramarg1: Class<AFSocketAddress>): AFSocketAddress | null;
+    static mapOrFail<A extends AFSocketAddress>(paramarg0: SocketAddress, paramarg1: Class<A>): A;
     static mapOrFail(paramarg0: SocketAddress): AFSocketAddress;
     static of(paramarg0: URI): AFSocketAddress;
     static of(paramarg0: URI, paramarg1: number): AFSocketAddress;

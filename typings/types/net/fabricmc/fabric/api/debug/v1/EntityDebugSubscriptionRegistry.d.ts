@@ -4,7 +4,7 @@ import type { DebugValueFactory } from '../../../../../../net/fabricmc/fabric/ap
 import type { DebugSubscription } from '../../../../../../net/minecraft/util/debug/DebugSubscription.d.ts'
 import type { Entity } from '../../../../../../net/minecraft/world/entity/Entity.d.ts'
 export class EntityDebugSubscriptionRegistry extends Object {
-    static register(paramarg0: DebugSubscription<Object>, paramarg1: (param0: Entity) => boolean, paramarg2: (param0: Entity | null) => Object | null): void;
-    static register(paramarg0: DebugSubscription<Object>, paramarg1: (param0: Entity) => boolean, paramarg2: (param0: Entity | null) => Object | null, paramarg3: boolean): void;
+    static register<T extends unknown, E extends Entity>(paramarg0: DebugSubscription<T>, paramarg1: (param0: Entity) => boolean, paramarg2: (param0: E) => T): void;
+    static register<T extends unknown, E extends Entity>(paramarg0: DebugSubscription<T>, paramarg1: (param0: Entity) => boolean, paramarg2: (param0: E) => T, paramarg3: boolean): void;
     constructor()
 }

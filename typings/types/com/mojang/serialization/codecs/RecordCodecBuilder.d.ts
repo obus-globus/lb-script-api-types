@@ -9,17 +9,17 @@ import type { RecordCodecBuilder$Mu } from '../../../../com/mojang/serialization
 import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class RecordCodecBuilder<O extends unknown, F extends unknown> extends Object implements App<RecordCodecBuilder$Mu<O>, F> {
-    static build(paramarg0: App<RecordCodecBuilder$Mu<Object>, Object>): MapCodec<Object>;
-    static create(paramarg0: (param0: RecordCodecBuilder$Instance<Object>) => App<RecordCodecBuilder$Mu<Object>, Object>): Codec<Object>;
-    static deprecated(paramarg0: Object | null, paramarg1: number): RecordCodecBuilder<Object, Object>;
-    static instance(): RecordCodecBuilder$Instance<Object>;
-    static mapCodec(paramarg0: (param0: RecordCodecBuilder$Instance<Object>) => App<RecordCodecBuilder$Mu<Object>, Object>): MapCodec<Object>;
-    static of(paramarg0: (param0: Object | null) => Object | null, paramarg1: MapCodec<Object>): RecordCodecBuilder<Object, Object>;
-    static of(paramarg0: (param0: Object | null) => Object | null, paramarg1: string, paramarg2: Codec<Object>): RecordCodecBuilder<Object, Object>;
-    static point(paramarg0: Object | null): RecordCodecBuilder<Object, Object>;
-    static point(paramarg0: Object | null, paramarg1: Lifecycle): RecordCodecBuilder<Object, Object>;
-    static stable(paramarg0: Object | null): RecordCodecBuilder<Object, Object>;
-    static unbox(paramarg0: App<RecordCodecBuilder$Mu<Object>, Object>): RecordCodecBuilder<Object, Object>;
+    static build<O extends unknown>(paramarg0: App<RecordCodecBuilder$Mu<O>, O>): MapCodec<O>;
+    static create<O extends unknown>(paramarg0: (param0: RecordCodecBuilder$Instance<O>) => App<RecordCodecBuilder$Mu<O>, O>): Codec<O>;
+    static deprecated<O extends unknown, F extends unknown>(paramarg0: F, paramarg1: number): RecordCodecBuilder<O, F>;
+    static instance<O extends unknown>(): RecordCodecBuilder$Instance<O>;
+    static mapCodec<O extends unknown>(paramarg0: (param0: RecordCodecBuilder$Instance<O>) => App<RecordCodecBuilder$Mu<O>, O>): MapCodec<O>;
+    static of<O extends unknown, F extends unknown>(paramarg0: (param0: O) => F, paramarg1: MapCodec<F>): RecordCodecBuilder<O, F>;
+    static of<O extends unknown, F extends unknown>(paramarg0: (param0: O) => F, paramarg1: string, paramarg2: Codec<F>): RecordCodecBuilder<O, F>;
+    static point<O extends unknown, F extends unknown>(paramarg0: F): RecordCodecBuilder<O, F>;
+    static point<O extends unknown, F extends unknown>(paramarg0: F, paramarg1: Lifecycle): RecordCodecBuilder<O, F>;
+    static stable<O extends unknown, F extends unknown>(paramarg0: F): RecordCodecBuilder<O, F>;
+    static unbox<O extends unknown, F extends unknown>(paramarg0: App<RecordCodecBuilder$Mu<O>, F>): RecordCodecBuilder<O, F>;
     private constructor(arg0: (param0: O) => F, arg1: (param0: O) => MapEncoder<F>, arg2: MapDecoder<F>)
     // private decoder: MapDecoder<F>;
     // private encoder: (param0: O) => MapEncoder<F>;

@@ -6,8 +6,8 @@ import type { Tagged$Companion } from '../../../../../net/ccbluex/liquidbounce/c
 import type { ItemStack } from '../../../../../net/minecraft/world/item/ItemStack.d.ts'
 export class SingleItemStackPickMode extends Mode implements Predicate<ItemStack> {
     static Companion: Tagged$Companion;
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     protected constructor(parent: ModeValueGroup<any>, name: string)
     readonly parent: ModeValueGroup<any>;
     and(arg0: (param0: ItemStack) => boolean): (param0: ItemStack) => boolean;

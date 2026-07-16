@@ -12,45 +12,47 @@ import type { BinaryOperator } from '../../../../java/util/function/BinaryOperat
 import type { Function as Function_2 } from '../../../../java/util/function/Function.d.ts'
 import type { Collector } from '../../../../java/util/stream/Collector.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
+import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
+import type { Enum } from '../../../../java/lang/Enum.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class Maps extends Object {
-    static asConverter(parambimap: Map<Object | null, Object | null>): Converter<Object, Object>;
-    static asMap(paramset: (Object | null)[], paramfunction: (param0: Object) => Object | null): Map<Object | null, Object | null>;
-    static difference(paramleft: Map<Object | null, Object | null>, paramright: Map<Object | null, Object | null>): MapDifference<Object, Object>;
-    static difference(paramleft: Map<Object | null, Object | null>, paramright: Map<Object | null, Object | null>, paramvalueEquivalence: Equivalence<Object>): MapDifference<Object, Object>;
-    static difference(paramleft: Map<Object | null, Object | null>, paramright: Map<Object | null, Object | null>): SortedMapDifference<Object, Object>;
-    static filterEntries(paramunfiltered: Map<Object | null, Object | null>, paramentryPredicate: (param0: Object) => boolean): Map<Object | null, Object | null>;
-    static filterKeys(paramunfiltered: Map<Object | null, Object | null>, paramkeyPredicate: (param0: Object) => boolean): Map<Object | null, Object | null>;
-    static filterValues(paramunfiltered: Map<Object | null, Object | null>, paramvaluePredicate: (param0: Object) => boolean): Map<Object | null, Object | null>;
+    static asConverter<A extends unknown, B extends unknown>(parambimap: Map<A, B>): Converter<A, B>;
+    static asMap<K extends unknown, V extends unknown>(paramset: K[], paramfunction: (param0: Object) => V): Map<K, V>;
+    static difference<K extends unknown, V extends unknown>(paramleft: Map<K, V>, paramright: Map<K, V>): MapDifference<K, V>;
+    static difference<K extends unknown, V extends unknown>(paramleft: Map<K, V>, paramright: Map<K, V>, paramvalueEquivalence: Equivalence<Object>): MapDifference<K, V>;
+    static difference<K extends unknown, V extends unknown>(paramleft: Map<K, V>, paramright: Map<K, V>): SortedMapDifference<K, V>;
+    static filterEntries<K extends unknown, V extends unknown>(paramunfiltered: Map<K, V>, paramentryPredicate: (param0: Object) => boolean): Map<K, V>;
+    static filterKeys<K extends unknown, V extends unknown>(paramunfiltered: Map<K, V>, paramkeyPredicate: (param0: Object) => boolean): Map<K, V>;
+    static filterValues<K extends unknown, V extends unknown>(paramunfiltered: Map<K, V>, paramvaluePredicate: (param0: Object) => boolean): Map<K, V>;
     static fromProperties(paramproperties: { [key: string]: any }): { [key: string]: string };
-    static immutableEntry(paramkey: Object | null, paramvalue: Object | null): Map$Entry<Object, Object>;
-    static immutableEnumMap(parammap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static newConcurrentMap(): Map<Object | null, Object | null>;
-    static newEnumMap(paramtype: Class<Object>): Map<Object | null, Object | null>;
-    static newEnumMap(parammap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static newHashMap(): Map<Object | null, Object | null>;
-    static newHashMap(parammap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static newHashMapWithExpectedSize(paramexpectedSize: number): Map<Object | null, Object | null>;
-    static newIdentityHashMap(): Map<Object | null, Object | null>;
-    static newLinkedHashMap(): Map<Object | null, Object | null>;
-    static newLinkedHashMap(parammap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static newLinkedHashMapWithExpectedSize(paramexpectedSize: number): Map<Object | null, Object | null>;
-    static newTreeMap(paramcomparator: (param0: Object | null, param1: Object | null) => number): Map<Object | null, Object | null>;
-    static newTreeMap(): Map<Object | null, Object | null>;
-    static newTreeMap(parammap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static subMap(parammap: Map<Object | null, Object | null>, paramrange: Range<any>): Map<Object | null, Object | null>;
-    static synchronizedBiMap(parambimap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static synchronizedNavigableMap(paramnavigableMap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static toImmutableEnumMap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, Map<Object | null, Object | null>>;
-    static toImmutableEnumMap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null, parammergeFunction: (param0: Object | null, param1: Object | null) => Object | null): Collector<Object, Object, Map<Object | null, Object | null>>;
-    static toMap(paramkeys: (Object | null)[], paramvalueFunction: (param0: Object) => Object | null): Map<Object | null, Object | null>;
-    static toMap(paramkeys: Iterator<Object>, paramvalueFunction: (param0: Object) => Object | null): Map<Object | null, Object | null>;
-    static transformEntries(paramfromMap: Map<Object | null, Object | null>, paramtransformer: (param0: Object, param1: Object) => Object | null): Map<Object | null, Object | null>;
-    static transformValues(paramfromMap: Map<Object | null, Object | null>, paramfunction: (param0: Object) => Object | null): Map<Object | null, Object | null>;
-    static uniqueIndex(paramvalues: (Object | null)[], paramkeyFunction: (param0: Object) => Object | null): Map<Object | null, Object | null>;
-    static uniqueIndex(paramvalues: Iterator<Object>, paramkeyFunction: (param0: Object) => Object | null): Map<Object | null, Object | null>;
-    static unmodifiableBiMap(parambimap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
-    static unmodifiableNavigableMap(parammap: Map<Object | null, Object | null>): Map<Object | null, Object | null>;
+    static immutableEntry<K extends unknown, V extends unknown>(paramkey: K, paramvalue: V): Map$Entry<K, V>;
+    static immutableEnumMap<K extends Enum<K>, V extends unknown>(parammap: Map<K, V>): Map<K, V>;
+    static newConcurrentMap<K extends unknown, V extends unknown>(): Map<K, V>;
+    static newEnumMap<K extends Enum<K>, V extends unknown>(paramtype: Class<K>): Map<K, V>;
+    static newEnumMap<K extends Enum<K>, V extends unknown>(parammap: Map<K, V>): Map<K, V>;
+    static newHashMap<K extends unknown, V extends unknown>(): Map<K, V>;
+    static newHashMap<K extends unknown, V extends unknown>(parammap: Map<K, V>): Map<K, V>;
+    static newHashMapWithExpectedSize<K extends unknown, V extends unknown>(paramexpectedSize: number): Map<K, V>;
+    static newIdentityHashMap<K extends unknown, V extends unknown>(): Map<K, V>;
+    static newLinkedHashMap<K extends unknown, V extends unknown>(): Map<K, V>;
+    static newLinkedHashMap<K extends unknown, V extends unknown>(parammap: Map<K, V>): Map<K, V>;
+    static newLinkedHashMapWithExpectedSize<K extends unknown, V extends unknown>(paramexpectedSize: number): Map<K, V>;
+    static newTreeMap<C extends unknown, K extends C, V extends unknown>(paramcomparator: (param0: C, param1: C) => number): Map<K, V>;
+    static newTreeMap<K extends Comparable<Object>, V extends unknown>(): Map<K, V>;
+    static newTreeMap<K extends unknown, V extends unknown>(parammap: Map<K, V>): Map<K, V>;
+    static subMap<K extends Comparable<Object>, V extends unknown>(parammap: Map<K, V>, paramrange: Range<K>): Map<K, V>;
+    static synchronizedBiMap<K extends unknown, V extends unknown>(parambimap: Map<K, V>): Map<K, V>;
+    static synchronizedNavigableMap<K extends unknown, V extends unknown>(paramnavigableMap: Map<K, V>): Map<K, V>;
+    static toImmutableEnumMap<T extends unknown, K extends Enum<K>, V extends unknown>(paramkeyFunction: (param0: Object) => K, paramvalueFunction: (param0: Object) => V): Collector<T, Object, Map<K, V>>;
+    static toImmutableEnumMap<T extends unknown, K extends Enum<K>, V extends unknown>(paramkeyFunction: (param0: Object) => K, paramvalueFunction: (param0: Object) => V, parammergeFunction: (param0: V, param1: V) => V): Collector<T, Object, Map<K, V>>;
+    static toMap<K extends unknown, V extends unknown>(paramkeys: K[], paramvalueFunction: (param0: Object) => V): Map<K, V>;
+    static toMap<K extends unknown, V extends unknown>(paramkeys: Iterator<K>, paramvalueFunction: (param0: Object) => V): Map<K, V>;
+    static transformEntries<K extends unknown, V1 extends unknown, V2 extends unknown>(paramfromMap: Map<K, V1>, paramtransformer: (param0: Object, param1: Object) => V2): Map<K, V2>;
+    static transformValues<K extends unknown, V1 extends unknown, V2 extends unknown>(paramfromMap: Map<K, V1>, paramfunction: (param0: Object) => V2): Map<K, V2>;
+    static uniqueIndex<K extends unknown, V extends unknown>(paramvalues: V[], paramkeyFunction: (param0: Object) => K): Map<K, V>;
+    static uniqueIndex<K extends unknown, V extends unknown>(paramvalues: Iterator<V>, paramkeyFunction: (param0: Object) => K): Map<K, V>;
+    static unmodifiableBiMap<K extends unknown, V extends unknown>(parambimap: Map<K, V>): Map<K, V>;
+    static unmodifiableNavigableMap<K extends unknown, V extends unknown>(parammap: Map<K, V>): Map<K, V>;
     private constructor()
 }

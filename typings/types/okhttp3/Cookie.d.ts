@@ -5,8 +5,8 @@ import type { Cookie$Companion } from '../okhttp3/Cookie$Companion.d.ts'
 import type { HttpUrl } from '../okhttp3/HttpUrl.d.ts'
 export class Cookie extends Object {
     static Companion: Cookie$Companion;
-    static parse(paramarg0: HttpUrl, paramarg1: string): Cookie;
-    static parseAll(paramarg0: HttpUrl, paramarg1: Pair<string, string>[]): Cookie[];
+    static parse(url: HttpUrl, setCookie: string): Cookie | null;
+    static parseAll(url: HttpUrl, headers: Pair<string, string>[]): Cookie[];
     private constructor(name: string, value: string, expiresAt: number, domain: string, path: string, secure: boolean, httpOnly: boolean, persistent: boolean, hostOnly: boolean, sameSite: string | null)
     // private domain: string;
     domain(): string;

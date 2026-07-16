@@ -1,6 +1,5 @@
 import type { SoundCategories1_8 } from '../../../../../../com/viaversion/viaversion/protocols/v1_8to1_9/data/SoundCategories1_8.d.ts'
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class SoundEffectMappings1_9 extends Enum<SoundEffectMappings1_9> {
     static AMBIENT_CAVE_CAVE: SoundEffectMappings1_9;
@@ -250,7 +249,7 @@ export class SoundEffectMappings1_9 extends Enum<SoundEffectMappings1_9> {
     static TILE_PISTON_IN: SoundEffectMappings1_9;
     static TILE_PISTON_OUT: SoundEffectMappings1_9;
     static getByName(paramarg0: string): SoundEffectMappings1_9;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): SoundEffectMappings1_9;
     static values(): SoundEffectMappings1_9[];
     private constructor(arg2: string, arg3: string, arg4: SoundCategories1_8)

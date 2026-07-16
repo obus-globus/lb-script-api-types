@@ -7,8 +7,8 @@ import type { BlockState } from '../../../../../net/minecraft/world/level/block/
 import type { BlockInWorld } from '../../../../../net/minecraft/world/level/block/state/pattern/BlockInWorld.d.ts'
 import type { Property } from '../../../../../net/minecraft/world/level/block/state/properties/Property.d.ts'
 export class BlockInput extends Object implements Predicate<BlockInWorld> {
-    static isEqual(paramarg0: Object): (param0: Object | null) => boolean;
-    static not(paramarg0: (param0: Object) => boolean): (param0: Object | null) => boolean;
+    static isEqual<T extends unknown>(paramarg0: Object): (param0: T) => boolean;
+    static not<T extends unknown>(paramarg0: (param0: Object) => boolean): (param0: T) => boolean;
     constructor(state: BlockState, properties: Property<any>[], tag: CompoundTag)
     // private properties: Property<any>[];
     readonly state: BlockState;

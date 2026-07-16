@@ -2,7 +2,6 @@ import type { ByteBuf } from '../../../../../io/netty/buffer/ByteBuf.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
 import type { BiConsumer } from '../../../../../java/util/function/BiConsumer.d.ts'
 import type { IntFunction } from '../../../../../java/util/function/IntFunction.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { StreamCodec } from '../../../../../net/minecraft/network/codec/StreamCodec.d.ts'
 import type { TrackedWaypoint } from '../../../../../net/minecraft/world/waypoints/TrackedWaypoint.d.ts'
@@ -13,7 +12,7 @@ export class ClientboundTrackedWaypointPacket$Operation extends Enum<Clientbound
     static TRACK: ClientboundTrackedWaypointPacket$Operation;
     static UNTRACK: ClientboundTrackedWaypointPacket$Operation;
     static UPDATE: ClientboundTrackedWaypointPacket$Operation;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ClientboundTrackedWaypointPacket$Operation;
     static values(): ClientboundTrackedWaypointPacket$Operation[];
     private constructor(action: (param0: TrackedWaypointManager, param1: TrackedWaypoint) => void)

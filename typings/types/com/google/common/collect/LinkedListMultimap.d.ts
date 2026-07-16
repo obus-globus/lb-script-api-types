@@ -10,9 +10,9 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Iterator } from '../../../../java/util/Iterator.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class LinkedListMultimap<K extends unknown, V extends unknown> extends AbstractMultimap<K, V> implements ListMultimap<K, V>, Serializable {
-    static create(): LinkedListMultimap<Object, Object>;
-    static create(parammultimap: Multimap<Object, Object>): LinkedListMultimap<Object, Object>;
-    static create(paramexpectedKeys: number): LinkedListMultimap<Object, Object>;
+    static create<K extends unknown, V extends unknown>(): LinkedListMultimap<K, V>;
+    static create<K extends unknown, V extends unknown>(parammultimap: Multimap<K, V>): LinkedListMultimap<K, V>;
+    static create<K extends unknown, V extends unknown>(paramexpectedKeys: number): LinkedListMultimap<K, V>;
     constructor()
     // private head: LinkedListMultimap$Node<K, V>;
     // private keyToKeyList: Map<K, LinkedListMultimap$KeyList<K, V>>;

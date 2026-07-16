@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 import type { ReportType } from '../../../../../../net/minecraft/client/multiplayer/chat/report/ReportType.d.ts'
 import type { Component } from '../../../../../../net/minecraft/network/chat/Component.d.ts'
@@ -16,7 +15,7 @@ export class ReportReason extends Enum<ReportReason> {
     static SEXUALLY_INAPPROPRIATE: ReportReason;
     static TERRORISM_OR_VIOLENT_EXTREMISM: ReportReason;
     static getIncompatibleCategories(paramreportType: ReportType): ReportReason[];
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): ReportReason;
     static values(): ReportReason[];
     private constructor(name: string)

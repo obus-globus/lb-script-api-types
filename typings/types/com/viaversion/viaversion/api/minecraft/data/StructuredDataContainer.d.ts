@@ -9,7 +9,7 @@ import type { Runnable } from '../../../../../../java/lang/Runnable.d.ts'
 import type { Function } from '../../../../../../java/util/function/Function.d.ts'
 import type { Object } from '../../../../../../java/lang/Object.d.ts'
 export class StructuredDataContainer extends Object implements Copyable {
-    static copy(paramarg0: Object | null): Object | null;
+    static copy<T extends unknown>(paramarg0: T): T;
     constructor()
     constructor(arg0: StructuredData<Object>[])
     constructor(arg0: Map<StructuredDataKey<Object>, StructuredData<Object>>)

@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class IdentityDefinition_Type extends Enum<IdentityDefinition_Type> {
     static Entity: IdentityDefinition_Type;
@@ -10,7 +9,7 @@ export class IdentityDefinition_Type extends Enum<IdentityDefinition_Type> {
     static getByName(paramarg0: string, paramarg1: IdentityDefinition_Type): IdentityDefinition_Type;
     static getByValue(paramarg0: number): IdentityDefinition_Type;
     static getByValue(paramarg0: number, paramarg1: IdentityDefinition_Type): IdentityDefinition_Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): IdentityDefinition_Type;
     static values(): IdentityDefinition_Type[];
     private constructor(arg2: number)

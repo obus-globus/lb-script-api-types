@@ -4,20 +4,20 @@ import type { StorageView } from '../../../../../../../net/fabricmc/fabric/api/t
 import type { ResourceAmount } from '../../../../../../../net/fabricmc/fabric/api/transfer/v1/storage/base/ResourceAmount.d.ts'
 import type { TransactionContext } from '../../../../../../../net/fabricmc/fabric/api/transfer/v1/transaction/TransactionContext.d.ts'
 export class StorageUtil extends Object {
-    static extractAny(paramarg0: StorageView<Object>[], paramarg1: number, paramarg2: TransactionContext): ResourceAmount<Object>;
-    static findExtractableContent(paramarg0: StorageView<Object>[], paramarg1: (param0: Object | null) => boolean, paramarg2: TransactionContext): ResourceAmount<Object>;
-    static findExtractableContent(paramarg0: StorageView<Object>[], paramarg1: TransactionContext): ResourceAmount<Object>;
-    static findExtractableResource(paramarg0: StorageView<Object>[], paramarg1: (param0: Object | null) => boolean, paramarg2: TransactionContext): Object | null;
-    static findExtractableResource(paramarg0: StorageView<Object>[], paramarg1: TransactionContext): Object | null;
-    static findStoredResource(paramarg0: StorageView<Object>[]): Object | null;
-    static findStoredResource(paramarg0: StorageView<Object>[], paramarg1: (param0: Object | null) => boolean): Object | null;
-    static getRedstoneSignal(paramarg0: StorageView<Object>[]): number;
-    static insertStacking(paramarg0: (Object | null)[][], paramarg1: Object | null, paramarg2: number, paramarg3: TransactionContext): number;
-    static move(paramarg0: StorageView<Object>[], paramarg1: StorageView<Object>[], paramarg2: (param0: Object | null) => boolean, paramarg3: number, paramarg4: TransactionContext): number;
-    static simulateExtract(paramarg0: Object | null, paramarg1: Object | null, paramarg2: number, paramarg3: TransactionContext): number;
-    static simulateExtract(paramarg0: StorageView<Object>[], paramarg1: Object | null, paramarg2: number, paramarg3: TransactionContext): number;
-    static simulateExtract(paramarg0: StorageView<Object>, paramarg1: Object | null, paramarg2: number, paramarg3: TransactionContext): number;
-    static simulateInsert(paramarg0: StorageView<Object>[], paramarg1: Object | null, paramarg2: number, paramarg3: TransactionContext): number;
-    static tryInsertStacking(paramarg0: StorageView<Object>[], paramarg1: Object | null, paramarg2: number, paramarg3: TransactionContext): number;
+    static extractAny<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: number, paramarg2: TransactionContext): ResourceAmount<T>;
+    static findExtractableContent<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: (param0: T) => boolean, paramarg2: TransactionContext): ResourceAmount<T>;
+    static findExtractableContent<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: TransactionContext): ResourceAmount<T>;
+    static findExtractableResource<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: (param0: T) => boolean, paramarg2: TransactionContext): T;
+    static findExtractableResource<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: TransactionContext): T;
+    static findStoredResource<T extends unknown>(paramarg0: StorageView<T>[]): T;
+    static findStoredResource<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: (param0: T) => boolean): T;
+    static getRedstoneSignal<T extends unknown>(paramarg0: StorageView<T>[]): number;
+    static insertStacking<T extends unknown>(paramarg0: T[][], paramarg1: T, paramarg2: number, paramarg3: TransactionContext): number;
+    static move<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: StorageView<T>[], paramarg2: (param0: T) => boolean, paramarg3: number, paramarg4: TransactionContext): number;
+    static simulateExtract<T extends unknown, S extends unknown & StorageView<T>[] & StorageView<T>>(paramarg0: S, paramarg1: T, paramarg2: number, paramarg3: TransactionContext): number;
+    static simulateExtract<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: T, paramarg2: number, paramarg3: TransactionContext): number;
+    static simulateExtract<T extends unknown>(paramarg0: StorageView<T>, paramarg1: T, paramarg2: number, paramarg3: TransactionContext): number;
+    static simulateInsert<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: T, paramarg2: number, paramarg3: TransactionContext): number;
+    static tryInsertStacking<T extends unknown>(paramarg0: StorageView<T>[], paramarg1: T, paramarg2: number, paramarg3: TransactionContext): number;
     private constructor()
 }

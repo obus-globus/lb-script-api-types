@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../java/lang/Enum.d.ts'
 export class HttpPostRequestDecoder$MultiPartStatus extends Enum<HttpPostRequestDecoder$MultiPartStatus> {
     static CLOSEDELIMITER: HttpPostRequestDecoder$MultiPartStatus;
@@ -16,7 +15,7 @@ export class HttpPostRequestDecoder$MultiPartStatus extends Enum<HttpPostRequest
     static NOTSTARTED: HttpPostRequestDecoder$MultiPartStatus;
     static PREAMBLE: HttpPostRequestDecoder$MultiPartStatus;
     static PREEPILOGUE: HttpPostRequestDecoder$MultiPartStatus;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): HttpPostRequestDecoder$MultiPartStatus;
     static values(): HttpPostRequestDecoder$MultiPartStatus[];
     private constructor()

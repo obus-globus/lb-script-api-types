@@ -13,7 +13,7 @@ import type { Level } from '../../../../../net/minecraft/world/level/Level.d.ts'
 import type { Vec3 } from '../../../../../net/minecraft/world/phys/Vec3.d.ts'
 export class ClientboundPlayerLookAtPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundPlayerLookAtPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(fromAnchor: EntityAnchorArgument$Anchor, x: number, y: number, z: number)
     constructor(fromAnchor: EntityAnchorArgument$Anchor, entity: Entity, toAnchor: EntityAnchorArgument$Anchor)
     // private atEntity: boolean;

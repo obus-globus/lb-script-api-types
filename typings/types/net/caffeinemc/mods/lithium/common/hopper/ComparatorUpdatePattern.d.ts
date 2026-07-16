@@ -7,7 +7,7 @@ export class ComparatorUpdatePattern extends Enum<ComparatorUpdatePattern> {
     static NO_UPDATE: ComparatorUpdatePattern;
     static UPDATE: ComparatorUpdatePattern;
     static UPDATE_DECREMENT_UPDATE_INCREMENT_UPDATE: ComparatorUpdatePattern;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): ComparatorUpdatePattern;
     static values(): ComparatorUpdatePattern[];
     private constructor()

@@ -5,7 +5,7 @@ import type { Lock } from '../../../../../java/util/concurrent/locks/Lock.d.ts'
 import type { ReadWriteLock } from '../../../../../java/util/concurrent/locks/ReadWriteLock.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export abstract class Striped$PowerOfTwoStriped<L extends unknown> extends Striped<L> {
-    static custom(paramstripes: number, paramsupplier: () => Object | null): Striped<Object>;
+    static custom<L extends unknown>(paramstripes: number, paramsupplier: () => L): Striped<L>;
     static lazyWeakLock(paramstripes: number): Striped<Lock>;
     static lazyWeakReadWriteLock(paramstripes: number): Striped<ReadWriteLock>;
     static lazyWeakSemaphore(paramstripes: number, parampermits: number): Striped<Semaphore>;

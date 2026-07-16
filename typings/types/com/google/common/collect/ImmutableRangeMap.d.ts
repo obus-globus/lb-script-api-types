@@ -10,11 +10,11 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Comparable } from '../../../../java/lang/Comparable.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class ImmutableRangeMap<K extends Comparable<Object>, V extends unknown> extends Object implements RangeMap<K, V>, Serializable {
-    static builder(): ImmutableRangeMap$Builder<any, Object>;
-    static copyOf(paramrangeMap: RangeMap<any, Object>): ImmutableRangeMap<any, Object>;
-    static of(): ImmutableRangeMap<any, Object>;
-    static of(paramrange: Range<any>, paramvalue: Object | null): ImmutableRangeMap<any, Object>;
-    static toImmutableRangeMap(paramkeyFunction: (param0: Object) => Range<any>, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, ImmutableRangeMap<any, Object>>;
+    static builder<K extends Comparable<Object>, V extends unknown>(): ImmutableRangeMap$Builder<K, V>;
+    static copyOf<K extends Comparable<Object>, V extends unknown>(paramrangeMap: RangeMap<K, V>): ImmutableRangeMap<K, V>;
+    static of<K extends Comparable<Object>, V extends unknown>(): ImmutableRangeMap<K, V>;
+    static of<K extends Comparable<Object>, V extends unknown>(paramrange: Range<K>, paramvalue: V): ImmutableRangeMap<K, V>;
+    static toImmutableRangeMap<T extends unknown, K extends Comparable<Object>, V extends unknown>(paramkeyFunction: (param0: Object) => Range<K>, paramvalueFunction: (param0: Object) => V): Collector<T, Object, ImmutableRangeMap<K, V>>;
     constructor(ranges: Range<K>[], values: V[])
     // private ranges: Range<K>[];
     // private values: V[];

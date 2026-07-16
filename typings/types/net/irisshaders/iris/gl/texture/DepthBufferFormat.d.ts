@@ -1,6 +1,5 @@
 import type { GpuFormat } from '../../../../../com/mojang/blaze3d/GpuFormat.d.ts'
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class DepthBufferFormat extends Enum<DepthBufferFormat> {
     static DEPTH16: DepthBufferFormat;
@@ -9,7 +8,7 @@ export class DepthBufferFormat extends Enum<DepthBufferFormat> {
     static DEPTH32F_STENCIL8: DepthBufferFormat;
     static fromGlEnum(paramarg0: number): DepthBufferFormat;
     static fromGlEnumOrDefault(paramarg0: number): DepthBufferFormat;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): DepthBufferFormat;
     static values(): DepthBufferFormat[];
     private constructor(arg2: boolean)

@@ -5,8 +5,8 @@ import type { Pool } from '../../../net/ccbluex/fastutil/Pool.d.ts'
 import type { Pool$Companion } from '../../../net/ccbluex/fastutil/Pool$Companion.d.ts'
 export class Pool$ListBasedPool<E extends unknown> extends Object implements Pool<E> {
     static Companion: Pool$Companion;
-    static create(paramarg0: () => Object | null): Pool<Object>;
-    static create(paramarg0: () => Object | null, paramarg1: (param0: Object) => void): Pool<Object>;
+    static create<E extends unknown>(initializer: () => E): Pool<E>;
+    static create<E extends unknown>(initializer: () => E, finalizer: (param0: E) => void): Pool<E>;
     constructor(initializer: () => E, finalizer: (param0: E) => void)
     // private batchBorrowBuffer: E[] | null;
     // private finalizer: (param0: E) => void;

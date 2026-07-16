@@ -7,10 +7,12 @@ import type { Level } from '../../../../../../org/apache/logging/log4j/Level.d.t
 import type { Marker } from '../../../../../../org/apache/logging/log4j/Marker.d.ts'
 import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { LogEvent } from '../../../../../../org/apache/logging/log4j/core/LogEvent.d.ts'
+import type { AsyncLoggerConfig$Builder } from '../../../../../../org/apache/logging/log4j/core/async/AsyncLoggerConfig$Builder.d.ts'
 import type { AsyncLoggerConfigDelegate } from '../../../../../../org/apache/logging/log4j/core/async/AsyncLoggerConfigDelegate.d.ts'
 import type { AppenderRef } from '../../../../../../org/apache/logging/log4j/core/config/AppenderRef.d.ts'
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { LoggerConfig } from '../../../../../../org/apache/logging/log4j/core/config/LoggerConfig.d.ts'
+import type { LoggerConfig$Builder } from '../../../../../../org/apache/logging/log4j/core/config/LoggerConfig$Builder.d.ts'
 import type { LoggerConfig$LoggerConfigPredicate } from '../../../../../../org/apache/logging/log4j/core/config/LoggerConfig$LoggerConfigPredicate.d.ts'
 import type { Property } from '../../../../../../org/apache/logging/log4j/core/config/Property.d.ts'
 import type { RingBufferAdmin } from '../../../../../../org/apache/logging/log4j/core/jmx/RingBufferAdmin.d.ts'
@@ -22,8 +24,8 @@ export class AsyncLoggerConfig extends LoggerConfig {
     static createLogger(paramadditivity: boolean, paramlevel: Level, paramloggerName: string, paramincludeLocation: string, paramrefs: AppenderRef[], paramproperties: Property[], paramconfig: Configuration, paramfilter: Filter): LoggerConfig;
     static createLogger(paramadditivity: string, paramlevelName: string, paramloggerName: string, paramincludeLocation: string, paramrefs: AppenderRef[], paramproperties: Property[], paramconfig: Configuration, paramfilter: Filter): LoggerConfig;
     static createLogger(paramadditivity: string, paramlevel: Level, paramloggerName: string, paramincludeLocation: string, paramrefs: AppenderRef[], paramproperties: Property[], paramconfig: Configuration, paramfilter: Filter): LoggerConfig;
-    static newAsyncBuilder(): Object | null;
-    static newBuilder(): Object | null;
+    static newAsyncBuilder<B extends AsyncLoggerConfig$Builder<B>>(): B;
+    static newBuilder<B extends LoggerConfig$Builder<B>>(): B;
     constructor(name: string, appenders: AppenderRef[], filter: Filter, level: Level, additive: boolean, properties: Property[], config: Configuration, includeLocation: boolean)
     // private delegate: AsyncLoggerConfigDelegate;
     callAppenders(event: LogEvent): void;

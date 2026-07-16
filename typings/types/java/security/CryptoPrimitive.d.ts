@@ -1,5 +1,4 @@
 import type { Class } from '../../java/lang/Class.d.ts'
-import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class CryptoPrimitive extends Enum<CryptoPrimitive> {
     static BLOCK_CIPHER: CryptoPrimitive;
@@ -12,7 +11,7 @@ export class CryptoPrimitive extends Enum<CryptoPrimitive> {
     static SECURE_RANDOM: CryptoPrimitive;
     static SIGNATURE: CryptoPrimitive;
     static STREAM_CIPHER: CryptoPrimitive;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CryptoPrimitive;
     static values(): CryptoPrimitive[];
     private constructor()

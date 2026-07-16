@@ -1,11 +1,10 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class MsaEnvironment extends Enum<MsaEnvironment> {
     static LIVE: MsaEnvironment;
     static MICROSOFT_ONLINE_COMMON: MsaEnvironment;
     static MICROSOFT_ONLINE_CONSUMERS: MsaEnvironment;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MsaEnvironment;
     static values(): MsaEnvironment[];
     private constructor(arg2: string, arg3: string, arg4: string, arg5: string, arg6: string)

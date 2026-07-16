@@ -1,4 +1,5 @@
 import type { Object } from '../../java/lang/Object.d.ts'
+import type { Duration } from '../../kotlin/time/Duration.d.ts'
 import type { DurationUnit } from '../../kotlin/time/DurationUnit.d.ts'
 export class DurationKt extends Object {
     static MAX_MILLIS: number;
@@ -10,5 +11,5 @@ export class DurationKt extends Object {
     static MILLIS_IN_SECOND: number;
     static NANOS_IN_MICROS: number;
     static NANOS_IN_MILLIS: number;
-    static toDuration(paramarg0: number, paramarg1: DurationUnit): number;
+    static toDuration(self: number, unit: DurationUnit): Duration;
 }

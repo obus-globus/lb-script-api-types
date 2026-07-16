@@ -132,7 +132,7 @@ export abstract class AbstractFish extends WaterAnimal implements Bucketable {
     static WILDCARD: ScoreHolder;
     static WILDCARD_NAME: string;
     static areAllEffectsAmbient(parameffects: MobEffectInstance[]): boolean;
-    static bucketMobPickup(paramplayer: Player, paramhand: InteractionHand, parampickupEntity: LivingEntity | null): Optional<InteractionResult>;
+    static bucketMobPickup<T extends LivingEntity & Bucketable>(paramplayer: Player, paramhand: InteractionHand, parampickupEntity: T): Optional<InteractionResult>;
     static canGlideUsing(paramitemStack: ItemStack, paramslot: EquipmentSlot): boolean;
     static checkMobSpawnRules(paramtype: EntityType<Mob>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;
     static checkSurfaceWaterAnimalSpawnRules(paramtype: EntityType<WaterAnimal>, paramlevel: LevelAccessor, paramspawnReason: EntitySpawnReason, parampos: BlockPos, paramrandom: RandomSource): boolean;

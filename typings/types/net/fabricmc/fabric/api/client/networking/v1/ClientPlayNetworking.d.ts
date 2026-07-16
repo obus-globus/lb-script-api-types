@@ -10,13 +10,13 @@ import type { Identifier } from '../../../../../../../net/minecraft/resources/Id
 export class ClientPlayNetworking extends Object {
     static canSend(paramarg0: CustomPacketPayload$Type<any>): boolean;
     static canSend(paramarg0: Identifier): boolean;
-    static createServerboundPacket(paramarg0: CustomPacketPayload | null): Packet<ServerCommonPacketListener>;
+    static createServerboundPacket<T extends CustomPacketPayload>(paramarg0: T): Packet<ServerCommonPacketListener>;
     static getGlobalReceivers(): Identifier[];
     static getReceived(): Identifier[];
     static getSendable(): Identifier[];
     static getSender(): PacketSender;
-    static registerGlobalReceiver(paramarg0: CustomPacketPayload$Type<CustomPacketPayload>, paramarg1: (param0: CustomPacketPayload | null, param1: ClientPlayNetworking$Context) => void): boolean;
-    static registerReceiver(paramarg0: CustomPacketPayload$Type<CustomPacketPayload>, paramarg1: (param0: CustomPacketPayload | null, param1: ClientPlayNetworking$Context) => void): boolean;
+    static registerGlobalReceiver<T extends CustomPacketPayload>(paramarg0: CustomPacketPayload$Type<T>, paramarg1: (param0: T, param1: ClientPlayNetworking$Context) => void): boolean;
+    static registerReceiver<T extends CustomPacketPayload>(paramarg0: CustomPacketPayload$Type<T>, paramarg1: (param0: T, param1: ClientPlayNetworking$Context) => void): boolean;
     static send(paramarg0: CustomPacketPayload): void;
     static unregisterGlobalReceiver(paramarg0: Identifier): (param0: Object, param1: ClientPlayNetworking$Context) => void;
     static unregisterReceiver(paramarg0: Identifier): (param0: Object, param1: ClientPlayNetworking$Context) => void;

@@ -3,6 +3,6 @@ import type { FabricTagAppender } from '../../../../net/fabricmc/fabric/api/data
 import type { TagAppender } from '../../../../net/minecraft/data/tags/TagAppender.d.ts'
 import type { TagBuilder } from '../../../../net/minecraft/tags/TagBuilder.d.ts'
 export abstract class BlockItemTagAppender<Element extends unknown> extends Object implements FabricTagAppender<Object>, TagAppender<Element> {
-    static forBuilder(parambuilder: TagBuilder): TagAppender<Object>;
+    static forBuilder<T extends unknown>(parambuilder: TagBuilder): TagAppender<T>;
     constructor(original: TagAppender<Element>)
 }

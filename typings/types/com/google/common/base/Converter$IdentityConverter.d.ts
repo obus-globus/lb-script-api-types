@@ -3,8 +3,8 @@ import type { Function } from '../../../../com/google/common/base/Function.d.ts'
 import type { Serializable } from '../../../../java/io/Serializable.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Converter$IdentityConverter<T extends unknown> extends Converter<T, T> implements Serializable {
-    static from(paramforwardFunction: (param0: Object) => Object | null, parambackwardFunction: (param0: Object) => Object | null): Converter<Object, Object>;
-    static identity(): Converter<Object, Object>;
+    static from<A extends unknown, B extends unknown>(paramforwardFunction: (param0: Object) => B, parambackwardFunction: (param0: Object) => A): Converter<A, B>;
+    static identity<T extends unknown>(): Converter<T, T>;
     private constructor()
     doAndThen<S extends unknown>(otherConverter: Converter<T, S>): Converter<T, S>;
     doBackward(t: T): T;

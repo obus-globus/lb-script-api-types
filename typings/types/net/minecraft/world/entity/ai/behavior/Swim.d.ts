@@ -3,7 +3,7 @@ import type { Mob } from '../../../../../../net/minecraft/world/entity/Mob.d.ts'
 import type { Behavior } from '../../../../../../net/minecraft/world/entity/ai/behavior/Behavior.d.ts'
 export class Swim<T extends Mob> extends Behavior<T> {
     static DEFAULT_DURATION: number;
-    static shouldSwim(parammob: Mob | null): boolean;
+    static shouldSwim<T extends Mob>(parammob: T): boolean;
     constructor(chance: number)
     // private chance: number;
     canStillUse(level: ServerLevel, body: Mob, timestamp: number): boolean;

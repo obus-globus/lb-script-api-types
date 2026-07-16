@@ -7,5 +7,5 @@ export class UnsafeBufferOperationsKt extends Object {
     static getBufferIterationContextImpl(): BufferIterationContext;
     static getSegmentReadContextImpl(): SegmentReadContext;
     static getSegmentWriteContextImpl(): SegmentWriteContext;
-    static withData(paramarg0: SegmentReadContext, paramarg1: Segment, paramarg2: (param0: Object, param1: Object, param2: Object) => void): void;
+    static withData(self: SegmentReadContext, segment: Segment, readAction: (param0: number[], param1: number, param2: number) => void): void;
 }

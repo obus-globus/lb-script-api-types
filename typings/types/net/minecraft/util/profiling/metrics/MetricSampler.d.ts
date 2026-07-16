@@ -9,7 +9,7 @@ import type { MetricSampler$SamplerResult } from '../../../../../net/minecraft/u
 import type { MetricSampler$SamplingPhase } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler$SamplingPhase.d.ts'
 import type { MetricSampler$ThresholdTest } from '../../../../../net/minecraft/util/profiling/metrics/MetricSampler$ThresholdTest.d.ts'
 export class MetricSampler extends Object {
-    static builder(parammetricName: string, paramcategory: MetricCategory, paramsampler: (param0: Object | null) => number, paramcontext: Object | null): MetricSampler$MetricSamplerBuilder<Object>;
+    static builder<T extends unknown>(parammetricName: string, paramcategory: MetricCategory, paramsampler: (param0: T) => number, paramcontext: T): MetricSampler$MetricSamplerBuilder<T>;
     static create(paramname: string, paramcategory: MetricCategory, paramsampler: () => number): MetricSampler;
     static createExtractSampler(paramname: string, paramcategory: MetricCategory, paramsampler: () => number): MetricSampler;
     constructor(name: string, samplingPhase: MetricSampler$SamplingPhase, category: MetricCategory, sampler: () => number, beforeTick: () => void, thresholdTest: MetricSampler$ThresholdTest)

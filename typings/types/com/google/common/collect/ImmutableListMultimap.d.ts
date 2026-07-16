@@ -11,28 +11,28 @@ import type { Stream } from '../../../../java/util/stream/Stream.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class ImmutableListMultimap<K extends unknown, V extends unknown> extends ImmutableMultimap<K, V> implements ListMultimap<K, V> {
-    static builder(): ImmutableListMultimap$Builder<Object, Object>;
-    static builder(): ImmutableMultimap$Builder<Object, Object>;
-    static builderWithExpectedKeys(paramexpectedKeys: number): ImmutableListMultimap$Builder<Object, Object>;
-    static builderWithExpectedKeys(paramexpectedKeys: number): ImmutableMultimap$Builder<Object, Object>;
-    static copyOf(parammultimap: Multimap<Object, Object>): ImmutableListMultimap<Object, Object>;
-    static copyOf(paramentries: Map$Entry<Object, Object>[]): ImmutableListMultimap<Object, Object>;
-    static copyOf(parammultimap: Multimap<Object, Object>): ImmutableMultimap<Object, Object>;
-    static copyOf(paramentries: Map$Entry<Object, Object>[]): ImmutableMultimap<Object, Object>;
-    static flatteningToImmutableListMultimap(paramkeyFunction: (param0: Object) => Object | null, paramvaluesFunction: (param0: Object) => Stream<Object>): Collector<Object, Object, ImmutableListMultimap<Object, Object>>;
-    static of(): ImmutableListMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null): ImmutableListMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null): ImmutableListMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null): ImmutableListMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null, paramk4: Object | null, paramv4: Object | null): ImmutableListMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null, paramk4: Object | null, paramv4: Object | null, paramk5: Object | null, paramv5: Object | null): ImmutableListMultimap<Object, Object>;
-    static of(): ImmutableMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null): ImmutableMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null): ImmutableMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null): ImmutableMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null, paramk4: Object | null, paramv4: Object | null): ImmutableMultimap<Object, Object>;
-    static of(paramk1: Object | null, paramv1: Object | null, paramk2: Object | null, paramv2: Object | null, paramk3: Object | null, paramv3: Object | null, paramk4: Object | null, paramv4: Object | null, paramk5: Object | null, paramv5: Object | null): ImmutableMultimap<Object, Object>;
-    static toImmutableListMultimap(paramkeyFunction: (param0: Object) => Object | null, paramvalueFunction: (param0: Object) => Object | null): Collector<Object, Object, ImmutableListMultimap<Object, Object>>;
+    static builder<K extends unknown, V extends unknown>(): ImmutableListMultimap$Builder<K, V>;
+    static builder<K extends unknown, V extends unknown>(): ImmutableMultimap$Builder<K, V>;
+    static builderWithExpectedKeys<K extends unknown, V extends unknown>(paramexpectedKeys: number): ImmutableListMultimap$Builder<K, V>;
+    static builderWithExpectedKeys<K extends unknown, V extends unknown>(paramexpectedKeys: number): ImmutableMultimap$Builder<K, V>;
+    static copyOf<K extends unknown, V extends unknown>(parammultimap: Multimap<K, V>): ImmutableListMultimap<K, V>;
+    static copyOf<K extends unknown, V extends unknown>(paramentries: Map$Entry<K, V>[]): ImmutableListMultimap<K, V>;
+    static copyOf<K extends unknown, V extends unknown>(parammultimap: Multimap<K, V>): ImmutableMultimap<K, V>;
+    static copyOf<K extends unknown, V extends unknown>(paramentries: Map$Entry<K, V>[]): ImmutableMultimap<K, V>;
+    static flatteningToImmutableListMultimap<T extends unknown, K extends unknown, V extends unknown>(paramkeyFunction: (param0: Object) => K, paramvaluesFunction: (param0: Object) => Stream<V>): Collector<T, Object, ImmutableListMultimap<K, V>>;
+    static of<K extends unknown, V extends unknown>(): ImmutableListMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V): ImmutableListMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V): ImmutableListMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V): ImmutableListMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V): ImmutableListMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V): ImmutableListMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(): ImmutableMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V): ImmutableMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V): ImmutableMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V): ImmutableMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V): ImmutableMultimap<K, V>;
+    static of<K extends unknown, V extends unknown>(paramk1: K, paramv1: V, paramk2: K, paramv2: V, paramk3: K, paramv3: V, paramk4: K, paramv4: V, paramk5: K, paramv5: V): ImmutableMultimap<K, V>;
+    static toImmutableListMultimap<T extends unknown, K extends unknown, V extends unknown>(paramkeyFunction: (param0: Object) => K, paramvalueFunction: (param0: Object) => V): Collector<T, Object, ImmutableListMultimap<K, V>>;
     constructor(map: Map<K, V[]>, size: number)
     // private deserializationReplacement: ImmutableListMultimap<Object, Object>;
     // private inverse: ImmutableListMultimap<V, K>;

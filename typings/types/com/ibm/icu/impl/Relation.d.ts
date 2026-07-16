@@ -5,8 +5,8 @@ import type { Comparator } from '../../../../java/util/Comparator.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Map$Entry } from '../../../../java/util/Map$Entry.d.ts'
 export class Relation<K extends unknown, V extends unknown> extends Object implements Freezable<Relation<K, V>> {
-    static of(paramarg0: Map<Object | null, (Object | null)[]>, paramarg1: Class<Object>): Relation<Object, Object>;
-    static of(paramarg0: Map<Object | null, (Object | null)[]>, paramarg1: Class<Object>, paramarg2: (param0: Object | null, param1: Object | null) => number): Relation<Object, Object>;
+    static of<K extends unknown, V extends unknown>(paramarg0: Map<K, V[]>, paramarg1: Class<Object>): Relation<K, V>;
+    static of<K extends unknown, V extends unknown>(paramarg0: Map<K, V[]>, paramarg1: Class<Object>, paramarg2: (param0: V, param1: V) => number): Relation<K, V>;
     constructor(arg0: Map<K, V[]>, arg1: Class<Object>)
     constructor(arg0: Map<K, V[]>, arg1: Class<Object>, arg2: (param0: V, param1: V) => number)
     // private data: Map<K, V[]>;

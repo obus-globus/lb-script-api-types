@@ -4,9 +4,9 @@ import type { Predicate } from '../../../../java/util/function/Predicate.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { CollectionContentsPredicate } from '../../../../net/minecraft/advancements/predicates/CollectionContentsPredicate.d.ts'
 export class CollectionContentsPredicate$Multiple<T extends unknown, P extends Predicate<T>> extends Record implements CollectionContentsPredicate<T, P> {
-    static codec(paramelementCodec: Codec<Object>): Codec<CollectionContentsPredicate<Object, any>>;
-    static of(...parampredicates: (Object | null)[]): CollectionContentsPredicate<Object, any>;
-    static of(parampredicates: (Object | null)[]): CollectionContentsPredicate<Object, any>;
+    static codec<T extends unknown, P extends Predicate<T>>(paramelementCodec: Codec<P>): Codec<CollectionContentsPredicate<T, P>>;
+    static of<T extends unknown, P extends Predicate<T>>(...parampredicates: P[]): CollectionContentsPredicate<T, P>;
+    static of<T extends unknown, P extends Predicate<T>>(parampredicates: P[]): CollectionContentsPredicate<T, P>;
     constructor(tests: P[])
     // private tests: P[];
     equals(o: Object | null): boolean;

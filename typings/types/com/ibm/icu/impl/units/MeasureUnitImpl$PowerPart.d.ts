@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class MeasureUnitImpl$PowerPart extends Enum<MeasureUnitImpl$PowerPart> {
     static P10: MeasureUnitImpl$PowerPart;
@@ -17,7 +16,7 @@ export class MeasureUnitImpl$PowerPart extends Enum<MeasureUnitImpl$PowerPart> {
     static P8: MeasureUnitImpl$PowerPart;
     static P9: MeasureUnitImpl$PowerPart;
     static getPowerFromTrieIndex(paramarg0: number): number;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): MeasureUnitImpl$PowerPart;
     static values(): MeasureUnitImpl$PowerPart[];
     private constructor(arg2: number)

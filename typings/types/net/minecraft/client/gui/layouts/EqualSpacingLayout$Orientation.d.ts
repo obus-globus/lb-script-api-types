@@ -1,12 +1,11 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 import type { EqualSpacingLayout$ChildContainer } from '../../../../../net/minecraft/client/gui/layouts/EqualSpacingLayout$ChildContainer.d.ts'
 import type { LayoutElement } from '../../../../../net/minecraft/client/gui/layouts/LayoutElement.d.ts'
 export class EqualSpacingLayout$Orientation extends Enum<EqualSpacingLayout$Orientation> {
     static HORIZONTAL: EqualSpacingLayout$Orientation;
     static VERTICAL: EqualSpacingLayout$Orientation;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): EqualSpacingLayout$Orientation;
     static values(): EqualSpacingLayout$Orientation[];
     private constructor()

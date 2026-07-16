@@ -6,10 +6,10 @@ import type { AttachmentRegistry$Builder } from '../../../../../../net/fabricmc/
 import type { AttachmentType } from '../../../../../../net/fabricmc/fabric/api/attachment/v1/AttachmentType.d.ts'
 import type { Identifier } from '../../../../../../net/minecraft/resources/Identifier.d.ts'
 export class AttachmentRegistry extends Object {
-    static builder(): AttachmentRegistry$Builder<Object>;
-    static create(paramarg0: Identifier): AttachmentType<Object>;
-    static create(paramarg0: Identifier, paramarg1: (param0: AttachmentRegistry$Builder<Object>) => void): AttachmentType<Object>;
-    static createDefaulted(paramarg0: Identifier, paramarg1: () => Object | null): AttachmentType<Object>;
-    static createPersistent(paramarg0: Identifier, paramarg1: Codec<Object>): AttachmentType<Object>;
+    static builder<A extends unknown>(): AttachmentRegistry$Builder<A>;
+    static create<A extends unknown>(paramarg0: Identifier): AttachmentType<A>;
+    static create<A extends unknown>(paramarg0: Identifier, paramarg1: (param0: AttachmentRegistry$Builder<A>) => void): AttachmentType<A>;
+    static createDefaulted<A extends unknown>(paramarg0: Identifier, paramarg1: () => A): AttachmentType<A>;
+    static createPersistent<A extends unknown>(paramarg0: Identifier, paramarg1: Codec<A>): AttachmentType<A>;
     private constructor()
 }

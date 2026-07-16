@@ -10,12 +10,12 @@ import type { Function } from '../../../../../java/util/function/Function.d.ts'
 import type { UnaryOperator } from '../../../../../java/util/function/UnaryOperator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class AttributesRenameFix extends DataFix {
-    static checked(paramarg0: string, paramarg1: Type<Object>, paramarg2: Type<Object>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<Object, Object>;
-    constructor(outputSchema: Schema, name: string, renames: (param0: string) => Object | null)
-    constructor(outputSchema: Schema, name: string, renames: (param0: string) => Object | null, oldDataComponentFormat: boolean)
+    static checked<A extends unknown, B extends unknown>(paramarg0: string, paramarg1: Type<A>, paramarg2: Type<B>, paramarg3: (param0: Typed<Object>) => Typed<Object>, paramarg4: BitSet): RewriteResult<A, B>;
+    constructor(outputSchema: Schema, name: string, renames: (param0: string) => string)
+    constructor(outputSchema: Schema, name: string, renames: (param0: string) => string, oldDataComponentFormat: boolean)
     // private name: string;
     // private oldDataComponentFormat: boolean;
-    // private renames: (param0: string) => Object | null;
+    // private renames: (param0: string) => string;
     // private fixDataComponents(components: Typed<Object>): Typed<Object>;
     // private fixDataComponentsOld(components: Typed<Object>): Typed<Object>;
     // private fixEntity(entity: Typed<Object>): Typed<Object>;

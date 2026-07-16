@@ -18,9 +18,9 @@ export abstract class GLFWErrorCallback extends Callback implements GLFWErrorCal
     static createSafe(paramarg0: number): GLFWErrorCallback;
     static createThrow(): GLFWErrorCallback;
     static free(paramarg0: number): void;
-    static get(paramarg0: number): CallbackI | null;
+    static get<T extends CallbackI>(paramarg0: number): T;
     static getDescription(paramarg0: number): string;
-    static getSafe(paramarg0: number): CallbackI | null;
+    static getSafe<T extends CallbackI>(paramarg0: number): T;
     constructor()
     constructor(arg0: number)
     callback(arg0: number, arg1: number): void;

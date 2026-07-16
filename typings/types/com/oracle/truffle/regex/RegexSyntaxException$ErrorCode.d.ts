@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class RegexSyntaxException$ErrorCode extends Enum<RegexSyntaxException$ErrorCode> {
     static InvalidBackReference: RegexSyntaxException$ErrorCode;
@@ -17,7 +16,7 @@ export class RegexSyntaxException$ErrorCode extends Enum<RegexSyntaxException$Er
     static UnfinishedSequence: RegexSyntaxException$ErrorCode;
     static UnmatchedBracket: RegexSyntaxException$ErrorCode;
     static UnmatchedParenthesis: RegexSyntaxException$ErrorCode;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): RegexSyntaxException$ErrorCode;
     static values(): RegexSyntaxException$ErrorCode[];
     private constructor()

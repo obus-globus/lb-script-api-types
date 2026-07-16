@@ -7,7 +7,7 @@ import type { Object } from '../../../java/lang/Object.d.ts'
 export interface Collector<T extends unknown, A extends unknown, R extends unknown> extends Object {
     accumulator(): (param0: A, param1: T) => void;
     characteristics(): Collector$Characteristics[];
-    combiner(): (param0: A, param1: Object | null) => Object | null;
+    combiner(): (param0: A, param1: A) => A;
     finisher(): (param0: A) => R;
     supplier(): () => A;
 }

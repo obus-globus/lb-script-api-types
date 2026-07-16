@@ -1,5 +1,4 @@
 import type { Class } from '../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../java/lang/Enum.d.ts'
 export class Biome$Category extends Enum<Biome$Category> {
     static BADLANDS_PLATEAU: Biome$Category;
@@ -20,7 +19,7 @@ export class Biome$Category extends Enum<Biome$Category> {
     static SWAMP: Biome$Category;
     static TAIGA: Biome$Category;
     static THE_END: Biome$Category;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): Biome$Category;
     static values(): Biome$Category[];
     private constructor(arg2: string)

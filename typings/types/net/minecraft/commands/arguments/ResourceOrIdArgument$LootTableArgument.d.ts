@@ -22,7 +22,7 @@ export class ResourceOrIdArgument$LootTableArgument extends ResourceOrIdArgument
     static ERROR_FAILED_TO_PARSE: DynamicCommandExceptionType;
     static ERROR_NO_SUCH_ELEMENT: Dynamic2CommandExceptionType;
     static OPS: DynamicOps<Tag>;
-    static createGrammar(paramregistryKey: ResourceKey<(Object | null)[]>, paramops: DynamicOps<Object>): Grammar<ResourceOrIdArgument$Result<Object, Object>>;
+    static createGrammar<T extends unknown, O extends unknown>(paramregistryKey: ResourceKey<T[]>, paramops: DynamicOps<O>): Grammar<ResourceOrIdArgument$Result<T, O>>;
     static dialog(paramcontext: CommandBuildContext): ResourceOrIdArgument$DialogArgument;
     static getDialog(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder<Dialog>;
     static getLootModifier(paramcontext: CommandContext<CommandSourceStack>, paramname: string): Holder<LootItemFunction>;

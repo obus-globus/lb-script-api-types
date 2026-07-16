@@ -3,7 +3,6 @@ import type { File } from '../../../../../java/io/File.d.ts'
 import type { CompletableFuture } from '../../../../../java/util/concurrent/CompletableFuture.d.ts'
 import type { Executor } from '../../../../../java/util/concurrent/Executor.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
-import type { Continuation } from '../../../../../kotlin/coroutines/Continuation.d.ts'
 import type { Mutex } from '../../../../../kotlinx/coroutines/sync/Mutex.d.ts'
 import type { BaseApi } from '../../../../../net/ccbluex/liquidbounce/api/core/BaseApi.d.ts'
 import type { ValueGroup } from '../../../../../net/ccbluex/liquidbounce/config/types/group/ValueGroup.d.ts'
@@ -27,8 +26,8 @@ import type { ResourceManagerReloadListener } from '../../../../../net/minecraft
  */
 export class Theme extends BaseApi implements Closeable, ResourceManagerReloadListener {
     static Companion: Theme$Companion;
-    static load(paramarg0: string, paramarg1: Continuation<Object>): Object;
-    static load(paramarg0: Theme$Origin, paramarg1: File, paramarg2: Continuation<Object>): Object;
+    static load(url: string): Theme;
+    static load(origin: Theme$Origin, file: File): Theme;
     private constructor(origin: Theme$Origin, url: string)
     // private _colors: ValueGroup | null;
     // private _metadata: ThemeMetadata | null;

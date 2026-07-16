@@ -27,8 +27,8 @@ export class JigsawStructure extends Structure {
     static MAX_TOTAL_STRUCTURE_RANGE: number;
     static MIN_DEPTH: number;
     static getMeanFirstOccupiedHeight(paramcontext: Structure$GenerationContext, paramminX: number, paramsizeX: number, paramminZ: number, paramsizeZ: number): number;
-    static settingsCodec(parami: RecordCodecBuilder$Instance<Structure>): RecordCodecBuilder<Structure, Structure$StructureSettings>;
-    static simpleCodec(paramconstructor: (param0: Structure$StructureSettings) => Structure | null): MapCodec<Structure>;
+    static settingsCodec<S extends Structure>(parami: RecordCodecBuilder$Instance<S>): RecordCodecBuilder<S, Structure$StructureSettings>;
+    static simpleCodec<S extends Structure>(paramconstructor: (param0: Structure$StructureSettings) => S): MapCodec<S>;
     constructor(settings: Structure$StructureSettings, startPool: Holder<StructureTemplatePool>, startJigsawName: Optional<Identifier>, maxDepth: number, startHeight: HeightProvider, useExpansionHack: boolean, projectStartToHeightmap: Optional<Heightmap$Types>, maxDistanceFromCenter: JigsawStructure$MaxDistance, poolAliases: PoolAliasBinding[], dimensionPadding: DimensionPadding, liquidSettings: LiquidSettings)
     constructor(settings: Structure$StructureSettings, startPool: Holder<StructureTemplatePool>, maxDepth: number, startHeight: HeightProvider, useExpansionHack: boolean)
     constructor(settings: Structure$StructureSettings, startPool: Holder<StructureTemplatePool>, maxDepth: number, startHeight: HeightProvider, useExpansionHack: boolean, projectStartToHeightmap: Heightmap$Types)

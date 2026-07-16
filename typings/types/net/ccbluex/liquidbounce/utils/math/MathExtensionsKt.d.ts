@@ -1,13 +1,13 @@
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Vector2f } from '../../../../../org/joml/Vector2f.d.ts'
 export class MathExtensionsKt extends Object {
-    static ceilToInt(paramarg0: number): number;
-    static fastCos(paramarg0: number): number;
-    static fastSin(paramarg0: number): number;
-    static floorToInt(paramarg0: number): number;
-    static high32(long: number): number;
+    static ceilToInt(self: number): number;
+    static fastCos(self: number): number;
+    static fastSin(self: number): number;
+    static floorToInt(self: number): number;
+    static high32(self: number): number;
     static longFrom32(high: number, low: number): number;
-    static low32(long: number): number;
+    static low32(self: number): number;
     /**
      * Rounds the given number to the specified decimal place (the first by default).
      * For additional info see [RoundingMode#HALF_UP].
@@ -20,8 +20,8 @@ export class MathExtensionsKt extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MathExtensions.kt#L53 | src/main/kotlin/net/ccbluex/liquidbounce/utils/math/MathExtensions.kt:53}
      */
-    static roundToDecimalPlaces(paramarg0: number, paramarg1: number): number;
-    static toDegrees(paramarg0: number): number;
-    static toRadians(paramarg0: number): number;
-    static vector2f(float: number, other: number): Vector2f;
+    static roundToDecimalPlaces(self: number, decimalPlaces: number): number;
+    static toDegrees(self: number): number;
+    static toRadians(self: number): number;
+    static vector2f(self: number, other: number): Vector2f;
 }

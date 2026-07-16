@@ -36,7 +36,7 @@ export class StringComponent extends TextComponent {
     constructor(arg0: string)
     readonly text: string;
     asSingleString(): string;
-    asSingleString(arg0: ConsumerTracking, arg1: (param0: Object | null) => void): void;
+    asSingleString(arg0: ConsumerTracking, arg1: (param0: string) => void): void;
     canEqual(arg0: Object): boolean;
     equals(arg0: Object | null): boolean;
     getText(): string;

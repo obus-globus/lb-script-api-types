@@ -15,7 +15,7 @@ import type { AbstractWidget } from '../../../net/minecraft/client/gui/component
 import type { Tooltip } from '../../../net/minecraft/client/gui/components/Tooltip.d.ts'
 export class OptionInstance$UnitDouble extends Enum<OptionInstance$UnitDouble> implements OptionInstance$SliderableValueSet<number> {
     static INSTANCE: OptionInstance$UnitDouble;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): OptionInstance$UnitDouble;
     static values(): OptionInstance$UnitDouble[];
     private constructor()

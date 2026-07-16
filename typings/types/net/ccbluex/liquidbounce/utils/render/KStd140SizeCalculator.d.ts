@@ -1,12 +1,12 @@
 import type { Std140SizeCalculator } from '../../../../../com/mojang/blaze3d/buffers/Std140SizeCalculator.d.ts'
 import type { Object } from '../../../../../java/lang/Object.d.ts'
 export class KStd140SizeCalculator extends Object {
-// (invalid TS: name contains '-')     static align-impl(paramarg0: Std140SizeCalculator, paramarg1: number): void;
+// (invalid TS: name contains '-')     static align-impl(alignedSize: number): void;
 // (invalid TS: name contains '-')     static box-impl(paramarg0: Std140SizeCalculator): KStd140SizeCalculator;
 // (invalid TS: name contains '-')     static constructor-impl(paramarg0: Std140SizeCalculator): Std140SizeCalculator;
-// (invalid TS: name contains '-')     static equals-impl(paramarg0: Std140SizeCalculator, paramarg1: Object): boolean;
+// (invalid TS: name contains '-')     static equals-impl(other: Object | null): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: Std140SizeCalculator, paramarg1: Std140SizeCalculator): boolean;
-// (invalid TS: name contains '-')     static get-impl(paramarg0: Std140SizeCalculator): number;
+// (invalid TS: name contains '-')     static get-impl(): number;
 // (invalid TS: name contains '-')     static getFloat-impl(paramarg0: Std140SizeCalculator): void;
 // (invalid TS: name contains '-')     static getInt-impl(paramarg0: Std140SizeCalculator): void;
 // (invalid TS: name contains '-')     static getIvec2-impl(paramarg0: Std140SizeCalculator): void;
@@ -16,9 +16,9 @@ export class KStd140SizeCalculator extends Object {
 // (invalid TS: name contains '-')     static getVec2-impl(paramarg0: Std140SizeCalculator): void;
 // (invalid TS: name contains '-')     static getVec3-impl(paramarg0: Std140SizeCalculator): void;
 // (invalid TS: name contains '-')     static getVec4-impl(paramarg0: Std140SizeCalculator): void;
-// (invalid TS: name contains '-')     static hashCode-impl(paramarg0: Std140SizeCalculator): number;
-// (invalid TS: name contains '-')     static plus-impl(paramarg0: Std140SizeCalculator, paramarg1: void, paramarg2: void): void;
-// (invalid TS: name contains '-')     static toString-impl(paramarg0: Std140SizeCalculator): string;
+// (invalid TS: name contains '-')     static hashCode-impl(): number;
+// (invalid TS: name contains '-')     static plus-impl(self: void, other: void): void;
+// (invalid TS: name contains '-')     static toString-impl(): string;
     constructor(j: Std140SizeCalculator)
 // (invalid TS: name contains '-')     /*not mapped: */ getFloat-impl(): void;
 // (invalid TS: name contains '-')     /*not mapped: */ getInt-impl(): void;

@@ -13,7 +13,7 @@ import type { ClientboundBossEventPacket$Operation } from '../../../../../net/mi
 import type { BossEvent } from '../../../../../net/minecraft/world/BossEvent.d.ts'
 export class ClientboundBossEventPacket extends Object implements Packet<ClientGamePacketListener> {
     static STREAM_CODEC: StreamCodec<RegistryFriendlyByteBuf, ClientboundBossEventPacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     static createAddPacket(paramevent: BossEvent): ClientboundBossEventPacket;
     static createRemovePacket(paramid: UUID): ClientboundBossEventPacket;
     static createUpdateNamePacket(paramevent: BossEvent): ClientboundBossEventPacket;

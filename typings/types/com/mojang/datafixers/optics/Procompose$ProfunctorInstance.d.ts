@@ -10,7 +10,7 @@ import type { Function } from '../../../../java/util/function/Function.d.ts'
 import type { Supplier } from '../../../../java/util/function/Supplier.d.ts'
 import type { Object } from '../../../../java/lang/Object.d.ts'
 export class Procompose$ProfunctorInstance<F extends K2, G extends K2> extends Object implements Profunctor<Procompose$Mu<F, G>, Profunctor$Mu> {
-    static unbox(paramarg0: App<Profunctor$Mu, K2>): Profunctor<K2, Profunctor$Mu>;
+    static unbox<P extends K2, Proof extends Profunctor$Mu>(paramarg0: App<Proof, P>): Profunctor<P, Proof>;
     constructor(arg0: Profunctor<F, Profunctor$Mu>, arg1: Profunctor<G, Profunctor$Mu>)
     // private p1: Profunctor<F, Profunctor$Mu>;
     // private p2: Profunctor<G, Profunctor$Mu>;

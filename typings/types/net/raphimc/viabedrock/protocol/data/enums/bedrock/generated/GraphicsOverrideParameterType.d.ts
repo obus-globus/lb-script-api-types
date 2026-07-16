@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class GraphicsOverrideParameterType extends Enum<GraphicsOverrideParameterType> {
     static AmbientColor: GraphicsOverrideParameterType;
@@ -58,7 +57,7 @@ export class GraphicsOverrideParameterType extends Enum<GraphicsOverrideParamete
     static getByName(paramarg0: string, paramarg1: GraphicsOverrideParameterType): GraphicsOverrideParameterType;
     static getByValue(paramarg0: number): GraphicsOverrideParameterType;
     static getByValue(paramarg0: number, paramarg1: GraphicsOverrideParameterType): GraphicsOverrideParameterType;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): GraphicsOverrideParameterType;
     static values(): GraphicsOverrideParameterType[];
     private constructor(arg2: number)

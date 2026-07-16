@@ -6,8 +6,8 @@ import type { Object } from '../../../../java/lang/Object.d.ts'
 import type { Document } from '../../../../org/w3c/dom/Document.d.ts'
 import type { Node } from '../../../../org/w3c/dom/Node.d.ts'
 export class Param<T extends unknown> extends Object implements Serializable {
-    static load(paramarg0: InputStream): Param<Object>;
-    static load(paramarg0: Node): Param<Object>;
+    static load<T extends unknown>(paramarg0: InputStream): Param<T>;
+    static load<T extends unknown>(paramarg0: Node): Param<T>;
     constructor()
     constructor(arg0: string, arg1: T)
     constructor(arg0: string, arg1: Class<T>, arg2: T)

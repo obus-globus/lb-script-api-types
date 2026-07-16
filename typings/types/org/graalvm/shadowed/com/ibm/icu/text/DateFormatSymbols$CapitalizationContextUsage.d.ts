@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../java/lang/Enum.d.ts'
 export class DateFormatSymbols$CapitalizationContextUsage extends Enum<DateFormatSymbols$CapitalizationContextUsage> {
     static DAY_FORMAT: DateFormatSymbols$CapitalizationContextUsage;
@@ -16,7 +15,7 @@ export class DateFormatSymbols$CapitalizationContextUsage extends Enum<DateForma
     static OTHER: DateFormatSymbols$CapitalizationContextUsage;
     static ZONE_LONG: DateFormatSymbols$CapitalizationContextUsage;
     static ZONE_SHORT: DateFormatSymbols$CapitalizationContextUsage;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): DateFormatSymbols$CapitalizationContextUsage;
     static values(): DateFormatSymbols$CapitalizationContextUsage[];
     private constructor()

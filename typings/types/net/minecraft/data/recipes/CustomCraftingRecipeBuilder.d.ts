@@ -5,13 +5,15 @@ import type { RecipeCategory } from '../../../../net/minecraft/data/recipes/Reci
 import type { RecipeOutput } from '../../../../net/minecraft/data/recipes/RecipeOutput.d.ts'
 import type { RecipeUnlockAdvancementBuilder } from '../../../../net/minecraft/data/recipes/RecipeUnlockAdvancementBuilder.d.ts'
 import type { ResourceKey } from '../../../../net/minecraft/resources/ResourceKey.d.ts'
+import type { CraftingRecipe$CraftingBookInfo } from '../../../../net/minecraft/world/item/crafting/CraftingRecipe$CraftingBookInfo.d.ts'
 import type { Recipe } from '../../../../net/minecraft/world/item/crafting/Recipe.d.ts'
+import type { Recipe$CommonInfo } from '../../../../net/minecraft/world/item/crafting/Recipe$CommonInfo.d.ts'
 export class CustomCraftingRecipeBuilder extends Object {
-    static customCrafting(paramcategory: RecipeCategory, paramfactory: (param0: Object | null, param1: Object | null) => Object | null): CustomCraftingRecipeBuilder;
-    constructor(category: RecipeCategory, factory: (param0: Object | null, param1: Object | null) => Object | null)
+    static customCrafting(paramcategory: RecipeCategory, paramfactory: (param0: Recipe$CommonInfo, param1: CraftingRecipe$CraftingBookInfo) => Recipe<any>): CustomCraftingRecipeBuilder;
+    constructor(category: RecipeCategory, factory: (param0: Recipe$CommonInfo, param1: CraftingRecipe$CraftingBookInfo) => Recipe<any>)
     // private advancementBuilder: RecipeUnlockAdvancementBuilder;
     // private category: RecipeCategory;
-    // private factory: (param0: Object | null, param1: Object | null) => Object | null;
+    // private factory: (param0: Recipe$CommonInfo, param1: CraftingRecipe$CraftingBookInfo) => Recipe<any>;
     // private group: string;
     group(group: string): CustomCraftingRecipeBuilder;
     save(output: RecipeOutput, name: string): void;

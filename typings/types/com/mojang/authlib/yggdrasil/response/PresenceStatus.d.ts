@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../java/lang/Enum.d.ts'
 export class PresenceStatus extends Enum<PresenceStatus> {
     static OFFLINE: PresenceStatus;
@@ -8,7 +7,7 @@ export class PresenceStatus extends Enum<PresenceStatus> {
     static PLAYING_OFFLINE: PresenceStatus;
     static PLAYING_REALMS: PresenceStatus;
     static PLAYING_SERVER: PresenceStatus;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PresenceStatus;
     static values(): PresenceStatus[];
     private constructor()

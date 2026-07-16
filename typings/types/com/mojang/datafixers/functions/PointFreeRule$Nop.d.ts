@@ -15,7 +15,7 @@ export class PointFreeRule$Nop extends Enum<PointFreeRule$Nop> implements PointF
     static once(paramarg0: PointFreeRule): PointFreeRule;
     static one(paramarg0: PointFreeRule): PointFreeRule;
     static seq(...paramarg0: PointFreeRule[]): PointFreeRule;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): PointFreeRule$Nop;
     static values(): PointFreeRule$Nop[];
     private constructor()

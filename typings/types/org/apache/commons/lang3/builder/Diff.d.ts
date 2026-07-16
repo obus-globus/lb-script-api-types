@@ -4,10 +4,10 @@ import type { Map$Entry } from '../../../../../java/util/Map$Entry.d.ts'
 import type { Pair } from '../../../../../org/apache/commons/lang3/tuple/Pair.d.ts'
 export abstract class Diff<T extends unknown> extends Pair<T, T> {
     static EMPTY_ARRAY: Pair<Object, Object>[];
-    static emptyArray(): Pair<Object, Object>[];
-    static of(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
-    static of(paramarg0: Map$Entry<Object, Object>): Pair<Object, Object>;
-    static ofNonNull(paramarg0: Object | null, paramarg1: Object | null): Pair<Object, Object>;
+    static emptyArray<L extends unknown, R extends unknown>(): Pair<L, R>[];
+    static of<L extends unknown, R extends unknown>(paramarg0: L, paramarg1: R): Pair<L, R>;
+    static of<L extends unknown, R extends unknown>(paramarg0: Map$Entry<L, R>): Pair<L, R>;
+    static ofNonNull<L extends unknown, R extends unknown>(paramarg0: L, paramarg1: R): Pair<L, R>;
     constructor(arg0: string)
     constructor(arg0: string, arg1: Type)
     readonly fieldName: string;

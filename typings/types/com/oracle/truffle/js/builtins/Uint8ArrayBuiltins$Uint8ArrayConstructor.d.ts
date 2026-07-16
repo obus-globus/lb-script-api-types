@@ -10,7 +10,7 @@ export class Uint8ArrayBuiltins$Uint8ArrayConstructor extends Enum<Uint8ArrayBui
     static fromBase64: Uint8ArrayBuiltins$Uint8ArrayConstructor;
     static fromHex: Uint8ArrayBuiltins$Uint8ArrayConstructor;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): Uint8ArrayBuiltins$Uint8ArrayConstructor;
     static values(): Uint8ArrayBuiltins$Uint8ArrayConstructor[];
     private constructor(length: number)

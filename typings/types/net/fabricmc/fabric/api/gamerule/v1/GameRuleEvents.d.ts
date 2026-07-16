@@ -4,6 +4,6 @@ import type { GameRuleEvents$ValueUpdate } from '../../../../../../net/fabricmc/
 import type { MinecraftServer } from '../../../../../../net/minecraft/server/MinecraftServer.d.ts'
 import type { GameRule } from '../../../../../../net/minecraft/world/level/gamerules/GameRule.d.ts'
 export class GameRuleEvents extends Object {
-    static changeCallback(paramarg0: GameRule<Object>): Event<(param0: Object | null, param1: MinecraftServer) => void>;
+    static changeCallback<T extends unknown>(paramarg0: GameRule<T>): Event<(param0: T, param1: MinecraftServer) => void>;
     private constructor()
 }

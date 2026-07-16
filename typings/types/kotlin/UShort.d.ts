@@ -15,7 +15,7 @@ export class UShort extends Object implements Comparable<UShort> {
 // (invalid TS: name contains '-')     static equals-impl(paramarg0: number, paramarg1: Object): boolean;
 // (invalid TS: name contains '-')     static equals-impl0(paramarg0: number, paramarg1: number): boolean;
 // (invalid TS: name contains '-')     static hashCode-impl(paramarg0: number): number;
-// (invalid TS: name contains '-')     static toString-impl(paramarg0: number): string;
+// (invalid TS: name contains '-')     static toString-impl(): string;
     constructor(data: number)
     // private data: number;
     and(other: UShort): UShort;

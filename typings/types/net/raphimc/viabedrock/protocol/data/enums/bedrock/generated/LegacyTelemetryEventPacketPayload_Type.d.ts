@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class LegacyTelemetryEventPacketPayload_Type extends Enum<LegacyTelemetryEventPacketPayload_Type> {
     static Achievement: LegacyTelemetryEventPacketPayload_Type;
@@ -38,7 +37,7 @@ export class LegacyTelemetryEventPacketPayload_Type extends Enum<LegacyTelemetry
     static getByName(paramarg0: string, paramarg1: LegacyTelemetryEventPacketPayload_Type): LegacyTelemetryEventPacketPayload_Type;
     static getByValue(paramarg0: number): LegacyTelemetryEventPacketPayload_Type;
     static getByValue(paramarg0: number, paramarg1: LegacyTelemetryEventPacketPayload_Type): LegacyTelemetryEventPacketPayload_Type;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): LegacyTelemetryEventPacketPayload_Type;
     static values(): LegacyTelemetryEventPacketPayload_Type[];
     private constructor(arg2: number)

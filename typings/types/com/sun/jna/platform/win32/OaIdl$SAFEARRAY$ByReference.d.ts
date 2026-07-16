@@ -17,7 +17,7 @@ export class OaIdl$SAFEARRAY$ByReference extends OaIdl$SAFEARRAY implements Stru
     static createFieldsOrder(paramarg0: string[], paramarg1: string[]): string[];
     static createSafeArray(paramarg0: WTypes$VARTYPE, ...paramarg1: number[]): OaIdl$SAFEARRAY$ByReference;
     static createSafeArray(...paramarg0: number[]): OaIdl$SAFEARRAY$ByReference;
-    static newInstance(paramarg0: Class<Structure>): Structure | null;
-    static newInstance(paramarg0: Class<Structure>, paramarg1: Pointer): Structure | null;
+    static newInstance<T extends Structure>(paramarg0: Class<T>): T;
+    static newInstance<T extends Structure>(paramarg0: Class<T>, paramarg1: Pointer): T;
     constructor()
 }

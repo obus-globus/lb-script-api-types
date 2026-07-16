@@ -12,7 +12,7 @@ import type { Identifier } from '../../../../../net/minecraft/resources/Identifi
 export class ClientboundStoreCookiePacket extends Record implements Packet<ClientCommonPacketListener> {
     static PAYLOAD_STREAM_CODEC: StreamCodec<ByteBuf, number[]>;
     static STREAM_CODEC: StreamCodec<FriendlyByteBuf, ClientboundStoreCookiePacket>;
-    static codec(paramwriter: (param0: Object | null, param1: ByteBuf | null) => void, paramreader: (param0: ByteBuf | null) => Object | null): StreamCodec<ByteBuf, Object>;
+    static codec<B extends ByteBuf, T extends Packet<any>>(paramwriter: (param0: T, param1: B) => void, paramreader: (param0: B) => T): StreamCodec<B, T>;
     constructor(key: Identifier, payload: number[])
     // private key: Identifier;
     // private payload: number[];

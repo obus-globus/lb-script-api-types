@@ -14,7 +14,7 @@ export class NumberPrototypeBuiltins$NumberPrototype extends Enum<NumberPrototyp
     static toString: NumberPrototypeBuiltins$NumberPrototype;
     static valueOf: NumberPrototypeBuiltins$NumberPrototype;
     static stripName(paramname: TruffleString): TruffleString;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramname: string): NumberPrototypeBuiltins$NumberPrototype;
     static values(): NumberPrototypeBuiltins$NumberPrototype[];
     private constructor(length: number)

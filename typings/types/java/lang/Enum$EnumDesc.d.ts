@@ -6,11 +6,11 @@ import type { MethodHandles$Lookup } from '../../java/lang/invoke/MethodHandles$
 import type { Object } from '../../java/lang/Object.d.ts'
 import type { Enum } from '../../java/lang/Enum.d.ts'
 export class Enum$EnumDesc<E extends Enum<E>> extends DynamicConstantDesc<E> {
-    static of(paramarg0: ClassDesc, paramarg1: string): Enum$EnumDesc<any>;
-    static of(paramarg0: DirectMethodHandleDesc): DynamicConstantDesc<Object>;
-    static of(paramarg0: DirectMethodHandleDesc, ...paramarg1: ConstantDesc[]): DynamicConstantDesc<Object>;
-    static ofCanonical(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: ConstantDesc[]): ConstantDesc;
-    static ofNamed(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, ...paramarg3: ConstantDesc[]): DynamicConstantDesc<Object>;
+    static of<E extends Enum<E>>(paramarg0: ClassDesc, paramarg1: string): Enum$EnumDesc<E>;
+    static of<T extends unknown>(paramarg0: DirectMethodHandleDesc): DynamicConstantDesc<T>;
+    static of<T extends unknown>(paramarg0: DirectMethodHandleDesc, ...paramarg1: ConstantDesc[]): DynamicConstantDesc<T>;
+    static ofCanonical<T extends unknown>(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, paramarg3: ConstantDesc[]): ConstantDesc;
+    static ofNamed<T extends unknown>(paramarg0: DirectMethodHandleDesc, paramarg1: string, paramarg2: ClassDesc, ...paramarg3: ConstantDesc[]): DynamicConstantDesc<T>;
     private constructor(arg0: ClassDesc, arg1: string)
     resolveConstantDesc(arg0: MethodHandles$Lookup): E;
     toString(): string;

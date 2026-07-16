@@ -1,5 +1,4 @@
 import type { Class } from '../../../../../../../../java/lang/Class.d.ts'
-import type { Object } from '../../../../../../../../java/lang/Object.d.ts'
 import type { Enum } from '../../../../../../../../java/lang/Enum.d.ts'
 export class CurrentCmdVersion extends Enum<CurrentCmdVersion> {
     static AgentSweepingBlockTest: CurrentCmdVersion;
@@ -54,7 +53,7 @@ export class CurrentCmdVersion extends Enum<CurrentCmdVersion> {
     static getByName(paramarg0: string, paramarg1: CurrentCmdVersion): CurrentCmdVersion;
     static getByValue(paramarg0: number): CurrentCmdVersion;
     static getByValue(paramarg0: number, paramarg1: CurrentCmdVersion): CurrentCmdVersion;
-    static valueOf(paramarg0: Class<Object>, paramarg1: string): Object | null;
+    static valueOf<T extends Enum<T>>(paramarg0: Class<T>, paramarg1: string): T;
     static valueOf(paramarg0: string): CurrentCmdVersion;
     static values(): CurrentCmdVersion[];
     private constructor(arg2: number)

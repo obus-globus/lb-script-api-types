@@ -6,6 +6,7 @@ import type { Appender } from '../../../../../../org/apache/logging/log4j/core/A
 import type { Filter } from '../../../../../../org/apache/logging/log4j/core/Filter.d.ts'
 import type { Layout } from '../../../../../../org/apache/logging/log4j/core/Layout.d.ts'
 import type { AbstractOutputStreamAppender } from '../../../../../../org/apache/logging/log4j/core/appender/AbstractOutputStreamAppender.d.ts'
+import type { RandomAccessFileAppender$Builder } from '../../../../../../org/apache/logging/log4j/core/appender/RandomAccessFileAppender$Builder.d.ts'
 import type { RandomAccessFileManager } from '../../../../../../org/apache/logging/log4j/core/appender/RandomAccessFileManager.d.ts'
 import type { Configuration } from '../../../../../../org/apache/logging/log4j/core/config/Configuration.d.ts'
 import type { Property } from '../../../../../../org/apache/logging/log4j/core/config/Property.d.ts'
@@ -15,8 +16,8 @@ export class RandomAccessFileAppender extends AbstractOutputStreamAppender<Rando
     static DEFAULT_STOP_TIMEUNIT: TimeUnit;
     static ELEMENT_TYPE: string;
     static EMPTY_ARRAY: Appender[];
-    static createAppender(paramfileName: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, paramignore: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RandomAccessFileAppender;
-    static newBuilder(): Object | null;
+    static createAppender<B extends RandomAccessFileAppender$Builder<B>>(paramfileName: string, paramappend: string, paramname: string, paramimmediateFlush: string, parambufferSizeStr: string, paramignore: string, paramlayout: Layout<Serializable>, paramfilter: Filter, paramadvertise: string, paramadvertiseURI: string, paramconfiguration: Configuration): RandomAccessFileAppender;
+    static newBuilder<B extends RandomAccessFileAppender$Builder<B>>(): B;
     static parseInt(params: string, paramdefaultValue: number): number;
     constructor(arg0: string, arg1: Layout<Serializable>, arg2: Filter, arg3: RandomAccessFileManager, arg4: string, arg5: boolean, arg6: boolean, arg7: Advertiser, arg8: Property[], arg9: any)
     // private advertisement: Object;

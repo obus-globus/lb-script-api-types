@@ -3,5 +3,5 @@ import type { DeserializationStrategy } from '../../../../kotlinx/serialization/
 import type { Json } from '../../../../kotlinx/serialization/json/Json.d.ts'
 import type { JsonElement } from '../../../../kotlinx/serialization/json/JsonElement.d.ts'
 export class StreamingJsonDecoderKt extends Object {
-    static decodeStringToJsonTree(paramarg0: Json, paramarg1: DeserializationStrategy<Object>, paramarg2: string): JsonElement;
+    static decodeStringToJsonTree<T extends unknown>(json: Json, deserializer: DeserializationStrategy<T>, source: string): JsonElement;
 }

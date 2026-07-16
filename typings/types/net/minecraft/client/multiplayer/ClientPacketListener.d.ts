@@ -46,6 +46,7 @@ import type { LocalPlayer } from '../../../../net/minecraft/client/player/LocalP
 import type { ClientWaypointManager } from '../../../../net/minecraft/client/waypoints/ClientWaypointManager.d.ts'
 import type { Registry$PendingTags } from '../../../../net/minecraft/core/Registry$PendingTags.d.ts'
 import type { RegistryAccess$Frozen } from '../../../../net/minecraft/core/RegistryAccess$Frozen.d.ts'
+import type { TypedDataComponent } from '../../../../net/minecraft/core/component/TypedDataComponent.d.ts'
 import type { Connection } from '../../../../net/minecraft/network/Connection.d.ts'
 import type { ConnectionProtocol } from '../../../../net/minecraft/network/ConnectionProtocol.d.ts'
 import type { HashedPatchMap$HashGenerator } from '../../../../net/minecraft/network/HashedPatchMap$HashGenerator.d.ts'
@@ -223,7 +224,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     readonly commands: CommandDispatcher<ClientSuggestionProvider>;
     readonly debugQueryHandler: DebugQueryHandler;
     // private debugSubscriber: ClientDebugSubscriber;
-    // private decoratedHashOpsGenerator: (param0: Object | null) => Object | null;
+    // private decoratedHashOpsGenerator: (param0: TypedDataComponent<Object>) => number;
     // private enabledFeatures: FeatureFlagSet;
     // private fuelValues: FuelValues;
     // private globalAttachments: GlobalAttachmentsImpl;
@@ -268,7 +269,7 @@ export class ClientPacketListener extends ClientCommonPacketListenerImpl impleme
     createDebugValueAccess(): DebugValueAccess;
     createDialogAccess(): DialogConnectionAccess;
     // private createEntityFromPacket(packet: ClientboundAddEntityPacket): Entity;
-    decoratedHashOpsGenenerator(): (param0: Object | null) => Object | null;
+    decoratedHashOpsGenenerator(): (param0: TypedDataComponent<Object>) => number;
     // private determineLevelLoadingReason(playerDied: boolean, dimensionKey: ResourceKey<Level>, oldDimensionKey: ResourceKey<Level>): LevelLoadingScreen$Reason;
     // private enableChunkLight(chunk: LevelChunk, x: number, z: number): void;
     enabledFeatures(): FeatureFlagSet;
