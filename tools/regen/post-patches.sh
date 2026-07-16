@@ -79,7 +79,7 @@ if import_old in src:
 #     narrow shape.
 export_new = (
     'export const registerScript: (scriptObject: { name: string; version: string; '
-    'authors: string[] }) => PolyglotScript_;'
+    'authors: string | string[] }) => PolyglotScript_;'
 )
 patterns = [
     # T-1 indexed-access form
@@ -95,6 +95,14 @@ if not applied:
             src = new
             applied = True
             break
+
+# A11: upgrade a previously-narrowed `authors: string[]` to `string | string[]`
+# (runtime accepts a single author string; PolyglotScript.kt:198-204).
+if not applied:
+    src = src.replace(
+        'export const registerScript: (scriptObject: { name: string; version: string; '
+        'authors: string[] }) => PolyglotScript_;',
+        export_new, 1)
 
 if src == orig:
     print(f"post-patches: no-op on {path.name} (already refined or pattern missing)")
@@ -1110,6 +1118,38 @@ else:
     sys.exit(1)
 PY
 
+# A7 (T-10b): same strip for ScriptMode - registerMode's receiver hooks the
+# identical event table, and ScriptMode.augmentation.d.ts supplies the typed
+# per-event overloads, so the generic base on() must go the same way.
+python3 - "$PKG_ROOT/types/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode.d.ts" <<'PY'
+import re
+import sys
+from pathlib import Path
+
+target = Path(sys.argv[1])
+if not target.is_file():
+    print(f"post-patches: T-10b skip - {target} not found", file=sys.stderr)
+    sys.exit(0)
+
+text = target.read_text(encoding="utf-8")
+PAT = re.compile(r"^[ \t]*on\(eventName:\s*string,\s*handler:\s*\w+\):\s*void;\s*$", re.MULTILINE)
+new_text, n = PAT.subn(
+    "    // T-10b: base on() removed; see augmentations/ScriptMode.augmentation.d.ts",
+    text,
+)
+if n == 0:
+    if re.search(r"^[ \t]*on\(eventName:\s*string,", text, re.MULTILINE):
+        print("post-patches: T-10b FAILED - generic ScriptMode.on(...) present but not matched (drift?)", file=sys.stderr)
+        sys.exit(1)
+    print("post-patches: T-10b no-op (no base on() found)")
+elif n == 1:
+    target.write_text(new_text, encoding="utf-8")
+    print("post-patches: T-10b stripped base ScriptMode.on(eventName: string, handler: <Value alias>)")
+else:
+    print(f"post-patches: T-10b unexpected - matched {n} times; aborting", file=sys.stderr)
+    sys.exit(1)
+PY
+
 # ----------------------------------------------------------------------
 # T-#7 augmentation barrel sanity - keep augmentations/index.d.ts
 # loading the ScriptModule augmentation as a side effect. Without this,
@@ -1124,11 +1164,16 @@ if [[ -d "$PKG_ROOT/augmentations" ]]; then
 // ScriptModule interface. Keep as side-effect imports (not re-exports);
 // the augmentation files have no values to re-export.
 import './ScriptModule.augmentation';
+import './ScriptMode.augmentation';
 import './ClientLevel.augmentation';
 import './ScriptReflectionUtil.augmentation';
 AUG
         echo "post-patches: T-#7 wrote augmentations/index.d.ts"
     else
+        if ! grep -q "ScriptMode.augmentation" "$AUG_INDEX"; then
+            printf "import './ScriptMode.augmentation';\n" >> "$AUG_INDEX"
+            echo "post-patches: A7 appended ScriptMode.augmentation to barrel"
+        fi
         if ! grep -q "ClientLevel.augmentation" "$AUG_INDEX"; then
             printf "import './ClientLevel.augmentation';\n" >> "$AUG_INDEX"
             echo "post-patches: W-#18 appended ClientLevel.augmentation to barrel"
@@ -1298,6 +1343,13 @@ fi
 # ---------------------------------------------------------------------------
 python3 "$(dirname "$0")/fix-binding-types.py" "$PKG_ROOT" || \
   { echo "post-patches: ERROR - fix-binding-types.py CRASHED" >&2; POSTPATCH_FAILED=1; }
+
+# ---------------------------------------------------------------------------
+# Wave-2 script-API surface refinements (A6 registerCommand, A8 hot nullability,
+# A9 AsyncUtil promises) - see apply-wave2.py. Idempotent.
+# ---------------------------------------------------------------------------
+python3 "$(dirname "$0")/apply-wave2.py" "$PKG_ROOT" || \
+  { echo "post-patches: ERROR - apply-wave2.py CRASHED" >&2; POSTPATCH_FAILED=1; }
 
 # ---------------------------------------------------------------------------
 # F7 - field/method name collisions. Java lets a field and a method share a

@@ -6,6 +6,8 @@ import type { Object } from '../../../../../../java/lang/Object.d.ts'
 import type { ScriptAsyncUtil$TickScheduler } from '../../../../../../net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil$TickScheduler.d.ts'
 import type { Request$Builder } from '../../../../../../okhttp3/Request$Builder.d.ts'
 import type { Value } from '../../../../../../org/graalvm/polyglot/Value.d.ts'
+import type { Response } from '../../../../../../okhttp3/Response.d.ts'
+import type { CompletableFuture } from '../../../../../../java/util/concurrent/CompletableFuture.d.ts'
 /**
  * Async utils including game-based tick scheduling and network requests.
  * JavaScript-only.
@@ -26,7 +28,12 @@ export class ScriptAsyncUtil extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L156 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:156}
      */
-    conditional(ticks: number, breakLoop: () => boolean): Value;
+    /**
+     * Bridges a Java {@link CompletableFuture} to a JS `Promise`, resolved
+     * or rejected on the render thread. (Runtime: @JvmName extension.)
+     */
+    completableFutureToPromise<T>(future: CompletableFuture<T>): Promise<T>;
+    conditional(ticks: number, breakLoop: () => boolean): Promise<number>;
     /**
      * Starts an async task on {@link executor}, returns a `Promise`.
      * JS `Promise` result will be resolved or rejected on Render thread.
@@ -36,8 +43,8 @@ export class ScriptAsyncUtil extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L192 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:192}
      */
-    launch<T extends unknown>(executor: Executor, block: () => T): Value;
-    launch<T extends unknown>(block: () => T): Value;
+    launch<T extends unknown>(executor: Executor, block: () => T): Promise<T>;
+    launch<T extends unknown>(block: () => T): Promise<T>;
     /**
      * Sends an HTTP request or websocket request asynchronously. (based on {@link okhttp3})
      * JS `Promise` result will be resolved or rejected on Render thread.
@@ -48,7 +55,7 @@ export class ScriptAsyncUtil extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L177 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:177}
      */
-    request(block: (param0: Request$Builder) => void): Value;
+    request(block: (param0: Request$Builder) => void): Promise<Response>;
     /**
      * Example: `await ticks(10)`
      *
@@ -56,7 +63,7 @@ export class ScriptAsyncUtil extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L111 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:111}
      */
-    ticks(n: number): Value;
+    ticks(n: number): Promise<number>;
     /**
      * Example: `const duration = await until(() => mc.player.isOnGround())`
      *
@@ -64,5 +71,5 @@ export class ScriptAsyncUtil extends Object {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt#L126 | src/main/kotlin/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil.kt:126}
      */
-    until(condition: () => boolean): Value;
+    until(condition: () => boolean): Promise<number>;
 }

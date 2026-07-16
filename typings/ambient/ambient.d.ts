@@ -26,6 +26,7 @@ import { ScriptUnsafeThread as ScriptUnsafeThread_ } from "../types/net/ccbluex/
 import { ScriptPrimitives as ScriptPrimitives_ } from "../types/net/ccbluex/liquidbounce/script/bindings/api/ScriptPrimitives";
 import { ScriptAsyncUtil as ScriptAsyncUtil_ } from "../types/net/ccbluex/liquidbounce/script/bindings/api/ScriptAsyncUtil";
 import { PolyglotScript as PolyglotScript_ } from "../types/net/ccbluex/liquidbounce/script/PolyglotScript";
+import { Class as Class_ } from "../types/java/lang/Class";
 declare global {
     // T-4: GraalVM intrinsics begin
     // Truffle/GraalVM host-provided globals - exposed to every polyglot
@@ -89,6 +90,19 @@ declare global {
     const Workers: any;
     // T-4: GraalVM intrinsics end
 
+    // A11: require + console begin
+    /** CommonJS `require` (GraalJS `js.commonjs-require` is enabled). */
+    function require(id: string): any;
+    /** Console object provided by GraalJS (`js.console`, on by default). */
+    const console: {
+        log(...args: unknown[]): void;
+        info(...args: unknown[]): void;
+        warn(...args: unknown[]): void;
+        error(...args: unknown[]): void;
+        debug(...args: unknown[]): void;
+    };
+    // A11: require + console end
+
     // F10: JavaClassBinding helper begin
     /**
      * A raw `java.lang.Class` value bound into the script context. Under
@@ -98,9 +112,19 @@ declare global {
      * Direct static access returns `undefined` at runtime. `.static` also
      * carries the full constructor-overload set: `new (BlockPos.static)(...)`.
      */
+    // F10: JavaClassBinding helper begin
+    /**
+     * A raw `java.lang.Class` value bound into the script context. Under
+     * GraalJS nashorn-compat it constructs directly (`new BlockPos(1, 2, 3)`),
+     * but STATIC members - including enum constants - are only reachable via
+     * `.static`: `Hand.static.MAIN_HAND`, `MathHelper.static.clamp(...)`.
+     * Direct static access returns `undefined` at runtime. `.static` also
+     * carries the full constructor-overload set: `new (BlockPos.static)(...)`.
+     * `.class` is the underlying `java.lang.Class` (for reflection APIs).
+     */
     type JavaClassBinding<T> = (T extends abstract new (...args: infer A) => infer R
-        ? { new (...args: A): R }
-        : unknown) & { readonly static: T };
+        ? { new (...args: A): R; readonly class: Class_<R> }
+        : { readonly class: Class_<any> }) & { readonly static: T };
     // F10: JavaClassBinding helper end
 
     // F9: Axis class-handle facade begin
@@ -124,7 +148,7 @@ declare global {
     }
     // F9: Axis class-handle facade end
 
-    // F8: ScriptLocalStorage facade begin
+        // F8: ScriptLocalStorage facade begin
     /**
      * The shared script storage - at runtime a Java
      * `ConcurrentHashMap<String, Any>` bound by `ScriptContextProvider`
@@ -146,6 +170,22 @@ declare global {
         clear(): void;
         size(): number;
         isEmpty(): boolean;
+        /** Computes a value for `key` (creating it if absent). */
+        compute(key: string, remap: (key: string, value: any) => any): any;
+        /** Computes and stores a value only if `key` is absent. */
+        computeIfAbsent(key: string, mapping: (key: string) => any): any;
+        /** Merges `value` into the existing value for `key`. */
+        merge(key: string, value: any, remap: (oldValue: any, value: any) => any): any;
+        /** Replaces the value for `key` only if it is currently present. */
+        replace(key: string, value: any): any;
+        /** Runs `action` for every entry. */
+        forEach(action: (key: string, value: any) => void): void;
+        /** The key set (a live Java Set view). */
+        keySet(): any;
+        /** The entry set (a live Java Set view). */
+        entrySet(): any;
+        /** The values collection (a live Java Collection view). */
+        values(): any;
     }
     // F8: ScriptLocalStorage facade end
 
@@ -205,7 +245,7 @@ declare global {
      *
      * Source: `PolyglotScript.kt` - `RegisterScript.apply`, KDoc.
      */
-    export const registerScript: (scriptObject: { name: string; version: string; authors: string[] }) => PolyglotScript_;
+    export const registerScript: (scriptObject: { name: string; version: string; authors: string | string[] }) => PolyglotScript_;
 
     export const Vec3i: JavaClassBinding<typeof Vec3i_>;
 

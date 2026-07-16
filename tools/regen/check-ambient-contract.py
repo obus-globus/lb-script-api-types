@@ -34,7 +34,9 @@ SIDECAR = PKG / "ambient" / "runtime-bindings.json"
 
 AXIS_FACADE = {"XN", "XP", "YN", "YP", "ZN", "ZP", "of"}
 LOCALSTORAGE_FACADE = {"get", "put", "putIfAbsent", "getOrDefault", "remove",
-                       "containsKey", "clear", "size", "isEmpty"}
+                       "containsKey", "clear", "size", "isEmpty",
+                       "compute", "computeIfAbsent", "merge", "replace",
+                       "forEach", "keySet", "entrySet", "values"}
 
 
 def main() -> int:

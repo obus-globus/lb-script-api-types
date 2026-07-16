@@ -12,6 +12,39 @@ import type { ScriptMode } from './bindings/features/ScriptMode.d.ts'
 import type { ScriptDebugOptions } from '../../../../net/ccbluex/liquidbounce/script/ScriptDebugOptions.d.ts'
 import type { Context } from '../../../../org/graalvm/polyglot/Context.d.ts'
 import type { Value } from '../../../../org/graalvm/polyglot/Value.d.ts'
+// A6: ScriptCommandObject begin
+/**
+ * The plain object passed to `registerScript(...).registerCommand(...)`.
+ * Mirrors what `ScriptCommandBuilder` reads off the value at runtime.
+ */
+export interface ScriptCommandParameter {
+    /** Parameter name shown in usage/autocomplete. */
+    name: string;
+    /** Defaults to optional; set true to require the parameter. */
+    required?: boolean;
+    /** Consumes the rest of the input as one vararg parameter. */
+    vararg?: boolean;
+    /** Autocomplete provider: return the candidate completions. */
+    getCompletions?: (begin: string, args: string[]) => string[];
+    /** Validator: accept + parsed value, or reject with an error message. */
+    validate?: (input: string) => { accept: boolean; value?: unknown; error?: string };
+}
+export interface ScriptCommandObject {
+    /** Primary command name (what the user types after the prefix). */
+    name: string;
+    /** Alternative names for the command. */
+    aliases?: string[];
+    /** Positional parameters, in order. */
+    parameters?: ScriptCommandParameter[];
+    /** Nested subcommands (same shape, recursively). */
+    subcommands?: ScriptCommandObject[];
+    /** Handler invoked with the parsed argument values. */
+    onExecute?: (...args: unknown[]) => void;
+    /** Marks this as a hub command (dispatches only to subcommands). */
+    hub?: boolean;
+}
+// A6: ScriptCommandObject end
+
 export class PolyglotScript extends Object implements AutoCloseable {
     constructor(language: string, file: File, debugOptions: ScriptDebugOptions)
     // private context: Context;
@@ -110,7 +143,7 @@ export class PolyglotScript extends Object implements AutoCloseable {
      *
      * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt#L230 | src/main/kotlin/net/ccbluex/liquidbounce/script/PolyglotScript.kt:230}
      */
-    registerCommand(commandObject: Value): void;
+    registerCommand(commandObject: ScriptCommandObject): void;
     /**
      * Registers a new script mode to an existing mode value group which can be obtained
      * from existing modules.

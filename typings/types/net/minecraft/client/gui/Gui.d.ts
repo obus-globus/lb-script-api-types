@@ -39,14 +39,14 @@ export class Gui extends Object implements GuiExtensions {
     isPausing(): boolean;
     openChatAndAddText(chatMethod: ChatComponent$ChatMethod, text: string): void;
     openChatScreen(chatMethod: ChatComponent$ChatMethod): void;
-    overlay(): Overlay;
+    overlay(): Overlay | null;
     registerReloadListeners(resourceManager: ReloadableResourceManager): void;
     // private renderActiveTextDebug(): void;
-    screen(): Screen;
+    screen(): Screen | null;
     setClientLevelTeardownInProgress(clientLevelTeardownInProgress: boolean): void;
     setOverlay(overlay: Overlay): void;
     setPauseScreen(suppressPauseMenuIfWeReallyArePausing: boolean, canGameReallyBePaused: boolean): void;
-    setScreen(screen: Screen): void;
+    setScreen(screen: Screen | null): void;
     setTickingScreen(arg0: Screen): void;
     splashManager(): SplashManager;
     tick(): void;

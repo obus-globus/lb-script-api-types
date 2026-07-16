@@ -388,9 +388,33 @@ declare module '../types/net/ccbluex/liquidbounce/script/bindings/features/Scrip
         Files.writeString(augmentationFilePath, augmentationContent,
             // @ts-expect-error
             Java.type("java.nio.charset.StandardCharsets").UTF_8);
+        // Write the ScriptMode augmentation - the SAME per-event on() overloads,
+        // retargeted at ScriptMode (registerMode's callback receiver). ScriptMode
+        // hooks the identical EVENT_NAME_TO_CLASS table at runtime (ScriptMode.kt),
+        // so its typed surface must match ScriptModule's.
+        const modeAugmentationContent = `// ScriptMode augmentation - adds event handler interfaces
+
+// Event type imports
+${importsForScriptEventPatch}
+
+// Augment ScriptMode with specific event handler overloads
+declare module '../types/net/ccbluex/liquidbounce/script/bindings/features/ScriptMode' {
+    interface ScriptMode {
+        on(eventName: "enable" | "disable", handler: () => void): void;
+
+        // on events with specific event types
+        ${onEventsForScriptPatch}
+    }
+}
+`;
+        // @ts-expect-error
+        const modeAugmentationFilePath = Paths_1.Paths.get(`${path}/${packageName}/augmentations/ScriptMode.augmentation.d.ts`);
+        Files.writeString(modeAugmentationFilePath, modeAugmentationContent,
+            // @ts-expect-error
+            Java.type("java.nio.charset.StandardCharsets").UTF_8);
         // @ts-expect-error
         const augmentationIndexPath = Paths_1.Paths.get(`${path}/${packageName}/augmentations/index.d.ts`);
-        Files.writeString(augmentationIndexPath, `export * from './ScriptModule.augmentation';\n`,
+        Files.writeString(augmentationIndexPath, `export * from './ScriptModule.augmentation';\nimport './ScriptMode.augmentation';\n`,
             // @ts-expect-error
             Java.type("java.nio.charset.StandardCharsets").UTF_8);
         console.log(importsForScriptEventPatch);

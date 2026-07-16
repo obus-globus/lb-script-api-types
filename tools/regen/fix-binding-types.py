@@ -116,7 +116,8 @@ amb_text = re.sub(
     r'\n?import \{ ConcurrentHashMap as ConcurrentHashMap_ \} from\s*'
     r'"\.\./types/java/util/concurrent/ConcurrentHashMap";',
     "", amb_text)
-if F8_BEGIN not in amb_text:
+_facade_present = F8_BEGIN in amb_text
+if True:
     facade = f"""    {F8_BEGIN}
     /**
      * The shared script storage - at runtime a Java
@@ -139,14 +140,36 @@ if F8_BEGIN not in amb_text:
         clear(): void;
         size(): number;
         isEmpty(): boolean;
+        /** Computes a value for `key` (creating it if absent). */
+        compute(key: string, remap: (key: string, value: any) => any): any;
+        /** Computes and stores a value only if `key` is absent. */
+        computeIfAbsent(key: string, mapping: (key: string) => any): any;
+        /** Merges `value` into the existing value for `key`. */
+        merge(key: string, value: any, remap: (oldValue: any, value: any) => any): any;
+        /** Replaces the value for `key` only if it is currently present. */
+        replace(key: string, value: any): any;
+        /** Runs `action` for every entry. */
+        forEach(action: (key: string, value: any) => void): void;
+        /** The key set (a live Java Set view). */
+        keySet(): any;
+        /** The entry set (a live Java Set view). */
+        entrySet(): any;
+        /** The values collection (a live Java Collection view). */
+        values(): any;
     }}
     {F8_END}
 """
-    intrinsics_end = "    // T-4: GraalVM intrinsics end\n"
-    if intrinsics_end in amb_text:
-        amb_text = amb_text.replace(intrinsics_end, intrinsics_end + "\n" + facade, 1)
+    if _facade_present:
+        # Upgrade the existing block in place (adds the extended Map members).
+        amb_text = re.sub(
+            re.escape(F8_BEGIN) + r".*?" + re.escape(F8_END) + r"\n",
+            facade, amb_text, count=1, flags=re.S)
     else:
-        amb_text = amb_text.replace("declare global {\n", "declare global {\n" + facade, 1)
+        intrinsics_end = "    // T-4: GraalVM intrinsics end\n"
+        if intrinsics_end in amb_text:
+            amb_text = amb_text.replace(intrinsics_end, intrinsics_end + "\n" + facade, 1)
+        else:
+            amb_text = amb_text.replace("declare global {\n", "declare global {\n" + facade, 1)
 amb_text = amb_text.replace(
     "export const localStorage: ConcurrentHashMap_;",
     "export const localStorage: ScriptLocalStorage;", 1)
@@ -227,7 +250,9 @@ if bindings_sidecar.exists():
     _bindings = _json.loads(bindings_sidecar.read_text())
     class_binding_names = sorted(
         n for n, b in _bindings.items() if b.get("kind") == "class-handle")
-    if F10_HELPER_MARK not in amb_text and class_binding_names:
+    _helper_present = F10_HELPER_MARK in amb_text
+    _helper_current = "readonly class: Class_<" in amb_text
+    if (not _helper_present or not _helper_current) and class_binding_names:
         helper = """    // F10: JavaClassBinding helper begin
     /**
      * A raw `java.lang.Class` value bound into the script context. Under
@@ -236,17 +261,25 @@ if bindings_sidecar.exists():
      * `.static`: `Hand.static.MAIN_HAND`, `MathHelper.static.clamp(...)`.
      * Direct static access returns `undefined` at runtime. `.static` also
      * carries the full constructor-overload set: `new (BlockPos.static)(...)`.
+     * `.class` is the underlying `java.lang.Class` (for reflection APIs).
      */
     type JavaClassBinding<T> = (T extends abstract new (...args: infer A) => infer R
-        ? { new (...args: A): R }
-        : unknown) & { readonly static: T };
+        ? { new (...args: A): R; readonly class: Class_<R> }
+        : { readonly class: Class_<any> }) & { readonly static: T };
     // F10: JavaClassBinding helper end
 """
-        intrinsics_end = "    // T-4: GraalVM intrinsics end\n"
-        if intrinsics_end in amb_text:
-            amb_text = amb_text.replace(intrinsics_end, intrinsics_end + "\n" + helper, 1)
+        F10_END = "    // F10: JavaClassBinding helper end\n"
+        if _helper_present:
+            # Upgrade the existing helper block in place (adds `.class`).
+            amb_text = re.sub(
+                r"    " + re.escape(F10_HELPER_MARK) + r".*?" + re.escape(F10_END),
+                helper, amb_text, count=1, flags=re.S)
         else:
-            amb_text = amb_text.replace("declare global {\n", "declare global {\n" + helper, 1)
+            intrinsics_end = "    // T-4: GraalVM intrinsics end\n"
+            if intrinsics_end in amb_text:
+                amb_text = amb_text.replace(intrinsics_end, intrinsics_end + "\n" + helper, 1)
+            else:
+                amb_text = amb_text.replace("declare global {\n", "declare global {\n" + helper, 1)
     for name in class_binding_names:
         amb_text = re.sub(
             rf"export const {re.escape(name)}: typeof (\w+)_;",
@@ -282,6 +315,41 @@ if "type<K extends keyof JavaTypeRegistry>" not in amb_text:
         "        type<T = any>(className: string): T;", 1)
 if amb_text != _before:
     changed.append("F11 Java.type registry overload")
+
+# --- A10: import java.lang.Class for JavaClassBinding's `.class` member ------
+# The F10 helper references Class_<...>; ensure the import exists (idempotent).
+if "JavaClassBinding" in amb_text and "as Class_ }" not in amb_text:
+    class_import = 'import { Class as Class_ } from "../types/java/lang/Class";'
+    # Insert after the last top-level import (before `declare global {`).
+    amb_text = amb_text.replace("declare global {\n",
+                                class_import + "\ndeclare global {\n", 1)
+    changed.append("A10 Class import for .class")
+
+# --- A11: GraalJS provides `require` (commonjs-require=true) and `console` ---
+# (js.console default on); with lib es2023 (no DOM) neither is declared, so
+# console.log / CommonJS require are spurious type errors. Inject into the
+# intrinsics block. Idempotent via marker.
+A11_MARK = "// A11: require + console begin"
+if A11_MARK not in amb_text:
+    block = """    {mark}
+    /** CommonJS `require` (GraalJS `js.commonjs-require` is enabled). */
+    function require(id: string): any;
+    /** Console object provided by GraalJS (`js.console`, on by default). */
+    const console: {{
+        log(...args: unknown[]): void;
+        info(...args: unknown[]): void;
+        warn(...args: unknown[]): void;
+        error(...args: unknown[]): void;
+        debug(...args: unknown[]): void;
+    }};
+    // A11: require + console end
+""".format(mark=A11_MARK)
+    intrinsics_end = "    // T-4: GraalVM intrinsics end\n"
+    if intrinsics_end in amb_text:
+        amb_text = amb_text.replace(intrinsics_end, intrinsics_end + "\n" + block, 1)
+    else:
+        amb_text = amb_text.replace("declare global {\n", "declare global {\n" + block, 1)
+    changed.append("A11 require + console globals")
 
 amb.write_text(amb_text)
 

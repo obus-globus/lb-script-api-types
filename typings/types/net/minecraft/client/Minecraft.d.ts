@@ -143,7 +143,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     // private canary: number;
     clientStartTimeMs: number;
     // private clientTickCount: number;
-    crosshairPickEntity: Entity;
+    crosshairPickEntity: Entity | null;
     debugEntries: DebugScreenEntryList;
     readonly deltaTracker: DeltaTracker$Timer;
     readonly demo: boolean;
@@ -162,14 +162,14 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     // private frames: number;
     gameDirectory: File;
     readonly gameLoadFinished: boolean;
-    gameMode: MultiPlayerGameMode;
+    gameMode: MultiPlayerGameMode | null;
     gameRenderer: GameRenderer;
     // private gameThread: Thread;
     readonly gpuUtilization: number;
     readonly gpuWarnlistManager: GpuWarnlistManager;
     gui: Gui;
     // private guiExtensions: GuiExtensions;
-    hitResult: HitResult;
+    hitResult: HitResult | null;
     readonly hotbarManager: HotbarManager;
     // private isLocalServer: boolean;
     readonly itemModelResolver: ItemModelResolver;
@@ -180,7 +180,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     // private lastNanoTime: number;
     // private lastTime: number;
     readonly launchedVersion: string;
-    level: ClientLevel;
+    level: ClientLevel | null;
     levelExtractor: LevelExtractor;
     levelRenderer: LevelRenderer;
     readonly levelSource: LevelStorageSource;
@@ -201,7 +201,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     readonly pendingConnection: Connection;
     // private pendingReload: CompletableFuture<void>;
     readonly perTickGizmos: SimpleGizmoCollector;
-    player: LocalPlayer;
+    player: LocalPlayer | null;
     // private playerSkinRenderCache: PlayerSkinRenderCache;
     readonly playerSocialManager: PlayerSocialManager;
     // private profileFuture: CompletableFuture<ProfileResult>;
@@ -287,9 +287,9 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     getAtlasManager(): AtlasManager;
     getBlockColors(): BlockColors;
     getBlockEntityRenderDispatcher(): BlockEntityRenderDispatcher;
-    getCameraEntity(): Entity;
-    getConnection(): ClientPacketListener;
-    getCurrentServer(): ServerData;
+    getCameraEntity(): Entity | null;
+    getConnection(): ClientPacketListener | null;
+    getCurrentServer(): ServerData | null;
     getDebugOverlay(): DebugScreenOverlay;
     getDeltaTracker(): DeltaTracker;
     getDownloadedPackSource(): DownloadedPackSource;
@@ -328,7 +328,7 @@ export class Minecraft extends ReentrantBlockableEventLoop<() => void> implement
     getResourcePackRepository(): PackRepository;
     getRunningThread(): Thread;
     getShaderManager(): ShaderManager;
-    getSingleplayerServer(): IntegratedServer;
+    getSingleplayerServer(): IntegratedServer | null;
     getSituationalMusic(): Music;
     getSkinManager(): SkinManager;
     getSoundManager(): SoundManager;

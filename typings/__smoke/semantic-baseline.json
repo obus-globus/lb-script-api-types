@@ -1,5 +1,6 @@
 {
   "surface": [
+    "augmentations/ScriptMode.augmentation.d.ts:TS2430:ScriptMode#0",
     "types/net/ccbluex/liquidbounce/event/events/ChatReceiveEvent$ChatType.d.ts:TS2420:ChatReceiveEvent$ChatType#0",
     "types/net/ccbluex/liquidbounce/event/events/ClientChatMessageEvent$ChatGroup.d.ts:TS2420:ClientChatMessageEvent$ChatGroup#0",
     "types/net/ccbluex/liquidbounce/event/events/TransferOrigin.d.ts:TS2420:TransferOrigin#0",
@@ -13,8 +14,8 @@
     "TS2300": 3,
     "TS2304": 5,
     "TS2344": 146,
-    "TS2416": 351,
-    "TS2417": 50,
+    "TS2416": 353,
+    "TS2417": 51,
     "TS2420": 118,
     "TS2425": 4,
     "TS2430": 41,
