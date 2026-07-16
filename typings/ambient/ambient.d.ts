@@ -111,15 +111,6 @@ declare global {
      * `.static`: `Hand.static.MAIN_HAND`, `MathHelper.static.clamp(...)`.
      * Direct static access returns `undefined` at runtime. `.static` also
      * carries the full constructor-overload set: `new (BlockPos.static)(...)`.
-     */
-    // F10: JavaClassBinding helper begin
-    /**
-     * A raw `java.lang.Class` value bound into the script context. Under
-     * GraalJS nashorn-compat it constructs directly (`new BlockPos(1, 2, 3)`),
-     * but STATIC members - including enum constants - are only reachable via
-     * `.static`: `Hand.static.MAIN_HAND`, `MathHelper.static.clamp(...)`.
-     * Direct static access returns `undefined` at runtime. `.static` also
-     * carries the full constructor-overload set: `new (BlockPos.static)(...)`.
      * `.class` is the underlying `java.lang.Class` (for reflection APIs).
      */
     type JavaClassBinding<T> = (T extends abstract new (...args: infer A) => infer R
@@ -148,7 +139,7 @@ declare global {
     }
     // F9: Axis class-handle facade end
 
-        // F8: ScriptLocalStorage facade begin
+    // F8: ScriptLocalStorage facade begin
     /**
      * The shared script storage - at runtime a Java
      * `ConcurrentHashMap<String, Any>` bound by `ScriptContextProvider`
@@ -221,30 +212,6 @@ declare global {
 
     export const AsyncUtil: ScriptAsyncUtil_;
 
-    /**
-     * Registers a new script with LiquidBounce. **Must be called exactly once**
-     * at the top level of every script - the return value is your script
-     * handle (used to register modules, listen for lifecycle events, etc.).
-     *
-     * @param scriptObject Identity metadata for this script.
-     * @param scriptObject.name Display name. Shown in the script manager.
-     * @param scriptObject.version Semver-ish version string.
-     * @param scriptObject.authors One or more author names.
-     * @returns The script handle for chaining further registrations.
-     *
-     * @example
-     * ```ts
-     * const script = registerScript({
-     *     name: "MyScript",
-     *     version: "1.0.0",
-     *     authors: ["me"],
-     * });
-     *
-     * script.on("load", () => print("loaded"));
-     * ```
-     *
-     * Source: `PolyglotScript.kt` - `RegisterScript.apply`, KDoc.
-     */
     export const registerScript: (scriptObject: { name: string; version: string; authors: string | string[] }) => PolyglotScript_;
 
     export const Vec3i: JavaClassBinding<typeof Vec3i_>;

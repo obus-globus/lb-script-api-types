@@ -161,8 +161,10 @@ if True:
 """
     if _facade_present:
         # Upgrade the existing block in place (adds the extended Map members).
+        # Consume the begin line's own indentation so the replacement's indent
+        # isn't stacked on top of it (each re-run would otherwise add 4 spaces).
         amb_text = re.sub(
-            re.escape(F8_BEGIN) + r".*?" + re.escape(F8_END) + r"\n",
+            r"[ \t]*" + re.escape(F8_BEGIN) + r".*?" + re.escape(F8_END) + r"\n",
             facade, amb_text, count=1, flags=re.S)
     else:
         intrinsics_end = "    // T-4: GraalVM intrinsics end\n"
@@ -242,7 +244,7 @@ if amb_text != _before:
 # typechecked and silently passed undefined at runtime. Rewrite every
 # class-handle binding (kind per ambient/runtime-bindings.json) to
 # JavaClassBinding<typeof X_>. Skips when the sidecar is absent.
-F10_HELPER_MARK = "type JavaClassBinding"
+F10_HELPER_MARK = "// F10: JavaClassBinding helper begin"
 bindings_sidecar = PKG / "ambient/runtime-bindings.json"
 if bindings_sidecar.exists():
     import json as _json
@@ -271,8 +273,9 @@ if bindings_sidecar.exists():
         F10_END = "    // F10: JavaClassBinding helper end\n"
         if _helper_present:
             # Upgrade the existing helper block in place (adds `.class`).
+            # Consume the begin line's indentation (see the F8 note above).
             amb_text = re.sub(
-                r"    " + re.escape(F10_HELPER_MARK) + r".*?" + re.escape(F10_END),
+                r"[ \t]*" + re.escape(F10_HELPER_MARK) + r".*?" + re.escape(F10_END) + r"\n",
                 helper, amb_text, count=1, flags=re.S)
         else:
             intrinsics_end = "    // T-4: GraalVM intrinsics end\n"
