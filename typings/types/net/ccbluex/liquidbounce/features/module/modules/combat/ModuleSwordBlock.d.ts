@@ -6,7 +6,7 @@ import type { ItemStack } from '../../../../../../../net/minecraft/world/item/It
 /**
  * This module allows the user to block with swords. This makes sense to be used on servers with ViaVersion.
  *
- * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt:41}
+ * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt#L41 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt:41}
  */
 export class ModuleSwordBlock extends ClientModule {
     static INSTANCE: ModuleSwordBlock;
@@ -14,7 +14,7 @@ export class ModuleSwordBlock extends ClientModule {
      * Determines if the sword block animation should be applied no matter if we
      * are actually blocking.
      *
-     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/a5ddb940db67b41c2361cc2f2538fd3d365a625a/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt:65}
+     * Source: {@link https://github.com/CCBlueX/LiquidBounce/blob/650f694b6a7a35f7b117bc6958055e8b541fc43e/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt#L65 | src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/combat/ModuleSwordBlock.kt:65}
      */
     static shouldAnimateSwordBlock(paramarg0: LivingEntity): boolean;
     static shouldAnimateSwordBlock(entity: LivingEntity, mainHandItem: ItemStack): boolean;

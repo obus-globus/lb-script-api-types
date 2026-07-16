@@ -11397,7 +11397,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 112
+          "line": 113
         }
       }
     ],
@@ -11649,7 +11649,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 142
+          "line": 144
         }
       }
     ],
@@ -11684,7 +11684,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 136
+          "line": 137
         }
       }
     ],
@@ -11701,7 +11701,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 131
+          "line": 132
         }
       }
     ],
@@ -12279,7 +12279,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 186
+          "line": 188
         }
       }
     ],
@@ -12302,7 +12302,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 59
+          "line": 60
         }
       }
     ],
@@ -12325,7 +12325,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 98
+          "line": 99
         }
       }
     ],
@@ -12522,7 +12522,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 89
+          "line": 90
         }
       }
     ],
@@ -12591,7 +12591,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 69
+          "line": 70
         }
       }
     ],
@@ -12643,7 +12643,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 161
+          "line": 163
         }
       }
     ],
@@ -12718,7 +12718,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 175
+          "line": 177
         }
       }
     ],
@@ -13203,7 +13203,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 126
+          "line": 127
         }
       }
     ],
@@ -13284,7 +13284,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 150
+          "line": 152
         }
       }
     ],
@@ -13318,7 +13318,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 121
+          "line": 122
         }
       }
     ],
@@ -13364,7 +13364,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 76
+          "line": 77
         }
       }
     ],
@@ -13600,7 +13600,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-          "line": 104
+          "line": 105
         }
       }
     ],
@@ -78993,7 +78993,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 579
+          "line": 587
         }
       }
     ],
@@ -79034,7 +79034,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 514
+          "line": 518
         }
       }
     ],
@@ -79051,7 +79051,7 @@
         "returns": "Float",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 623
+          "line": 631
         }
       }
     ],
@@ -79092,7 +79092,7 @@
         "returns": "List<Entity>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 710
+          "line": 718
         },
         "isExtension": true,
         "receiver": "BlockPos"
@@ -79141,7 +79141,7 @@
         "returns": "BlockPos",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 651
+          "line": 659
         },
         "isExtension": true,
         "receiver": "BedBlock"
@@ -79203,7 +79203,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 556
+          "line": 564
         }
       }
     ],
@@ -79213,7 +79213,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 693
+          "line": 701
         },
         "isExtension": true,
         "receiver": "BlockPos"
@@ -79225,7 +79225,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 638
+          "line": 646
         },
         "isExtension": true,
         "receiver": "BlockPos"
@@ -79275,7 +79275,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 700
+          "line": 708
         },
         "isExtension": true,
         "receiver": "BlockPos"
@@ -79306,7 +79306,7 @@
         "returns": "BooleanObjectPair<EndCrystal?>",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 722
+          "line": 730
         },
         "isExtension": true,
         "receiver": "BlockPos"
@@ -79325,7 +79325,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 619
+          "line": 627
         },
         "isExtension": true,
         "receiver": "BlockState"
@@ -79344,7 +79344,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 643
+          "line": 651
         },
         "isExtension": true,
         "receiver": "RespawnAnchorBlock"
@@ -79363,7 +79363,7 @@
         "returns": "Boolean",
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 665
+          "line": 673
         }
       }
     ],
@@ -79380,7 +79380,7 @@
         "returns": null,
         "source": {
           "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-          "line": 617
+          "line": 625
         },
         "isExtension": true,
         "receiver": "BlockState"

@@ -1518,7 +1518,7 @@
     "kind": "object",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-      "line": 53
+      "line": 54
     }
   },
   "net.ccbluex.liquidbounce.event.events.PlayerInteractItemEvent": {
@@ -1534,7 +1534,7 @@
     "kind": "class",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/event/events/GameEvents.kt",
-      "line": 120
+      "line": 121
     }
   },
   "net.ccbluex.liquidbounce.event.events.TagEntityEvent.dontTarget": {
@@ -13594,7 +13594,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 651
+      "line": 659
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockGetter.raycast": {
@@ -13610,7 +13610,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 722
+      "line": 730
     }
   },
   "net.ccbluex.liquidbounce.utils.block.BlockPos.searchBedLayer": {
@@ -13790,18 +13790,18 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 579
+      "line": 587
     }
   },
   "net.ccbluex.liquidbounce.utils.block.doPlacement": {
-    "doc": "Simulated [net.minecraft.world.phys.HitResult.Type.BLOCK] branch in vanilla",
+    "doc": "Simulated [net.minecraft.world.phys.HitResult.Type.BLOCK] branch in vanilla\n\nThis function does not perform the surrounding checks from [net.minecraft.client.Minecraft.startUseItem],\nsuch as whether the game mode is destroying a block, the player's hands are busy, or the held item is enabled.\nCallers should perform the applicable checks before calling this function.",
     "see": [
       "net.minecraft.client.Minecraft.startUseItem"
     ],
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 514
+      "line": 518
     }
   },
   "net.ccbluex.liquidbounce.utils.block.handleActionsOnAccept": {
@@ -13813,7 +13813,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 556
+      "line": 564
     }
   },
   "net.ccbluex.liquidbounce.utils.block.hole.Hole.OneByOne": {
@@ -13861,7 +13861,7 @@
     "kind": "function",
     "source": {
       "file": "src/main/kotlin/net/ccbluex/liquidbounce/utils/block/BlockExtensions.kt",
-      "line": 665
+      "line": 673
     }
   },
   "net.ccbluex.liquidbounce.utils.block.liquid.TimedPickupTracker": {
